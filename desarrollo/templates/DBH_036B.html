@@ -19,49 +19,14 @@
             <img class="TITLE"  src= "../img/menu.PNG" alt="Botón de Menú ">
         </div>
     </header>
-    <nav>
-        <ul>
-            <li>
-                    <a href="../index.html" class="main-optionINICIO">INICIO</a>
-            </li>
-            <li>
-                <a href="NUH_INTB.html" class="main-optionINTRODUCCIÓN">INTRODUCCIÓN</a>
-            </li>
-            <li><a href="#" class="main-option">NUCLEO ▼</a>
-                <ul>
-                    <li><a href="NUH_000B.html">Config. Sistema</a></li>
-                    <li><a href="NUH_00B_N2.html">Parametros</a></li>
-                    <li><a href="NUH_00B_inicio.html">Inicio</a></li>
-                    <li><a href="NUH_00B_proceso.html">Procesos</a></li>
-                    <li><a href="NUH_00B_inf.html">Inf. Cliente</a></li>
-                    <li><a href="NUH_00B_conta.html">Contabilidad</a></li>
-                    <li style="visibility: hidden; display: none;"><a href="NUH_00B_audi.html">Auditoria</a></li>
-
-                </ul>
-            </li>
-            <li>
-             <a href="#" class="main-option">EMISOR  ▼</a>
-                <ul>
-                    <li><a href="EMH_000B.html">Productos</a></li>
-                    <li><a href="EMH_000Bsoli.html">Solicitudes</a></li>
-                    <li><a href="EMH_000Bmerca.html">Mercadeo</a></li>
-                    <li><a href="EMH_000Bservi.html">Servicio Al Cliente</a></li>
-                    <li><a href="EMH_000Bpendi.html">Pendientes</a></li>
-                    <li><a href="EMH_000Btrans.html">Transaccionabilidad</a></li>
-                    <li><a href="EMH_000Bauto.html">Autorizaciones</a></li>
-                    <li><a href="EMH_000Bplasti.html">Adm. Plasticos</a></li>
-                    <li><a href="EMH_000Brecla.html">Reclamos</a></li>
-                    <li><a href="MEH_032B.html">Lealtad</a></li>
-                    <li><a href="COH_064B.html">Cobranzas</a></li>
-                </ul>
-            </li>
- <li style="visibility: hidden">
-                <a href="ACH_000B.html" class="main-option">ADQUIRIENTE</a>
-            </li>
-            <li style="visibility: hidden">
-                <a href="DBH_000B.html" class="main-option">TARJETA DEBITO</a>
-            </li></ul>
-    </nav>
+   <div id="menuContainer"></div>
+    <script>
+      fetch('menu.html')
+        .then(response => response.text())
+        .then(html => {
+          document.getElementById('menuContainer').innerHTML = html;
+        });
+    </script>
 
     <section>
         <div> 
@@ -186,16 +151,12 @@
             </section>
     <script src="../js/menu.js"></script>
 </body>
-<footer>
-    <div>
-        <img class="TITLE"  src= "../img/logo.PNG">
-    </div>
-    <p>OpenCard SAS</p>
-    <p>Calle 77 Nº 11-19 Piso 4°,Bogotá D.C.</p>
-    <p>Tel (57) 601 - 313 37 75  <a href="http://www.OpenCard.com"
-            target="_blank">www.OpenCard.com</a></p>
-
-
-
-</footer>
+<div id="footerContainer"></div>
+<script>
+  fetch('footer.html')
+    .then(response => response.text())
+    .then(html => {
+      document.getElementById('footerContainer').innerHTML = html;
+    });
+</script>
 </html>

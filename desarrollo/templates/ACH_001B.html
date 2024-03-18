@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>BANKBU®</title>
+  <link rel="stylesheet" href="../css/pages.css">
+  <link rel="stylesheet" href="../css/style.css">
+  <link rel="icon" href="../img/ACQUIRER-logo.JPG" type="image/x-icon">
+</head>
+
+<body>
+  <header>
+    <img class="logo" src="../img/logoBankbu_.PNG" alt="Logo de Mi Empresa">
+    <div id="menuBtn">
+      <img class="TITLE" src="../img/menu.PNG" alt="Botón de Menú ">
+    </div>
+  </header>
+  <div id="menuContainer"></div>
+    <script>
+      fetch('menu.html')
+        .then(response => response.text())
+        .then(html => {
+          document.getElementById('menuContainer').innerHTML = html;
+        });
+    </script>
+  <section>
+    <div>
+      <table>
+        <p class="TITLE">Adquirente</p>
+      </table>
+      <center>
+        <p class="PARRAFO">Provee las funciones que se requieren para
+          actuar como adquirentes de tarjetas de cr&eacute;dito, est&aacute; dise&ntilde;ado
+          para operar de manera aut&oacute;noma junto con el N&uacute;cleo, cubriendo
+          los servicios de Adquirencia. La entidad financiera o comercial podr&aacute;
+          estudiar y aprobar solicitudes de establecimientos comerciales para asociarse
+          con la entidad y la franquicia, definir y montar estrategias de mercadeo con
+          los establecimientos en <span class="PARRAFO">Administraci&oacute;n de establecimientos</span> ,
+          permitir el ingreso de los comprobantes manuales de compras, avances y pagos,
+          incluyendo su proceso de liquidaci&oacute;n en <span class="PARRAFO">Administracion
+            manual de transacciones</span> , permite hacer gesti&oacute;n sobre los movimientos
+          del establecimiento que no se han aplicado a sus cuentas por presentar alg&uacute;n
+          inconveniente con Pendientes.</p>
+        <p>El men&uacute; se encuentra estructurado en
+          8 grupos que contienen las opciones que le permiten al usuario ingresar a
+          cada uno de los diferentes formularios de la siguiente manera:</p>
+      </center>
+      
+      
+      <p class="PARRAFO"><span class="SUBTITULO">Transacionalidad:</span> 
+      </p>
+      <ul>
+        <li style="visibility: hidden; display: none;"><a href="INH_026E.html" >Dep&oacute;sitos al cobro</a></li>
+        <li style="visibility: hidden; display: none;"><a href="INH_027B.html" >Contracargos</a></li>
+        <li><a href="INH_006B.html" >Consulta global</a></li>
+      </ul>
+     
+
+  </section>
+  <script src="../js/menu.js"></script>
+</body>
+<div id="footerContainer"></div>
+<script>
+  fetch('footer.html')
+    .then(response => response.text())
+    .then(html => {
+      document.getElementById('footerContainer').innerHTML = html;
+    });
+</script>
+</html>

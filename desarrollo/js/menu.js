@@ -17,6 +17,7 @@ function openMenu() {
     body.classList.add("menu-opened");
     footer.classList.add("menu-opened");
 }
+
 document.getElementById("menuBtn").addEventListener("click", function (e) {
     e.stopPropagation(); // Evita que el clic se propague al documento
     var nav = document.querySelector("nav");
@@ -27,21 +28,27 @@ document.getElementById("menuBtn").addEventListener("click", function (e) {
     }
 });
 
-const mainOptions = document.querySelectorAll('.main-option');
+// Agregar event listener al contenedor del menú
+document.getElementById("menuContainer").addEventListener("click", function (e) {
+    // Evitar la propagación del evento al documento
+    e.stopPropagation();
 
-mainOptions.forEach(function (option) {
-    option.addEventListener('click', function () {
-        const subMenu = this.nextElementSibling;
+    // Verificar si el clic ocurrió en una opción principal del menú
+    if (e.target.classList.contains('main-option')) {
+        // Obtener el menú desplegable asociado a esta opción principal
+        const subMenu = e.target.nextElementSibling;
+
+        // Alternar la clase 'active' para mostrar u ocultar el menú desplegable
         subMenu.classList.toggle('active');
-    });
+    }
 });
 
-// Cerrar el men� al hacer clic fuera de �l
+// Cerrar el menú al hacer clic fuera de él
 document.addEventListener("click", function () {
     closeMenu();
 });
 
-// Evitar que el clic se propague desde el men� al documento
+// Evitar que el clic se propague desde el menú al documento
 document.querySelector("nav").addEventListener("click", function (e) {
     e.stopPropagation();
 });
