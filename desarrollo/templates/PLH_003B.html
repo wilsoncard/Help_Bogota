@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>BANKBU®</title>
+  <link rel="stylesheet" href="../css/pages.css">
+  <link rel="stylesheet" href="../css/style.css">
+  <link rel="icon" href="../img/ACQUIRER-logo.JPG" type="image/x-icon">
+</head>
+
+<body>
+  <header>
+    <img class="logo" src="../img/logoBankbu_.PNG" alt="Logo de Mi Empresa">
+    <div id="menuBtn">
+      <img class="TITLE" src="../img/menu.PNG" alt="Botón de Menú ">
+    </div>
+  </header>
+  <nav>
+    <ul>
+      <li>
+        <a href="../index.html" class="main-optionINICIO">INICIO</a>
+      </li>
+      <li>
+        <a href="NUH_INTB.html" class="main-optionINTRODUCCIÓN">INTRODUCCIÓN</a>
+      </li>
+      <li><a href="#" class="main-option">NUCLEO ▼</a>
+        <ul>
+          <li><a href="NUH_000B.html">Config. Sistema</a></li>
+          <li><a href="NUH_00B_N2.html">Parametros</a></li>
+          <li><a href="NUH_00B_inicio.html">Inicio</a></li>
+          <li><a href="NUH_00B_proceso.html">Procesos</a></li>
+          <li><a href="NUH_00B_inf.html">Inf. Cliente</a></li>
+          <li><a href="NUH_00B_conta.html">Contabilidad</a></li>
+          <li style="visibility: hidden; display: none;"><a href="NUH_00B_audi.html">Auditoria</a></li>
+
+        </ul>
+      </li>
+      <li>
+        <a href="#" class="main-option">EMISOR ▼</a>
+        <ul>
+          <li><a href="EMH_000B.html">Productos</a></li>
+          <li><a href="EMH_000Bsoli.html">Solicitudes</a></li>
+          <li><a href="EMH_000Bmerca.html">Mercadeo</a></li>
+          <li><a href="EMH_000Bservi.html">Servicio Al Cliente</a></li>
+          <li><a href="EMH_000Bpendi.html">Pendientes</a></li>
+          <li><a href="EMH_000Btrans.html">Transaccionabilidad</a></li>
+          <li><a href="EMH_000Bauto.html">Autorizaciones</a></li>
+          <li><a href="EMH_000Bplasti.html">Adm. Plasticos</a></li>
+          <li><a href="EMH_000Brecla.html">Reclamos</a></li>
+                    <li><a href="MEH_032B.html">Lealtad</a></li>
+                    <li><a href="COH_064B.html">Cobranzas</a></li>
+        </ul>
+      </li>
+      <li style="visibility: hidden">
+        <a href="ACH_000B.html" class="main-option">ADQUIRIENTE</a>
+      </li>
+      <li style="visibility: hidden">
+        <a href="DBH_000B.html" class="main-option">TARJETA DEBITO</a>
+      </li>
+    </ul>
+  </nav>
+
+  <section>
+    <div>
+      <table>
+        <tr>
+          <td>
+            <div>
+
+              <p class="TITLE">Registro de entregas</p>
+            </div>
+          </td>
+        </tr>
+      </table>
+      <p class="PARRAFO">Mediante esta opción que se
+        invoca desde el formulario <a href="PLH_001B.html" >Inventario
+            de plásticos</a> se registran las entregas parciales o totales
+        de plásticos que los proveedores hacen a la entidad como resultado
+        de los <a href="PLH_002B.html" >pedidos generados</a>.</span></p>
+      <p class="PARRAFO">Al ingresar a la opción, se muestra
+        un filtro que le permite al usuario digitar el número del pedido para
+        el cual se van a registrar las entregas.</p>
+      <p class="TITLE"><img src="../img/PLF_003E.PNG" 230"></p>
+
+      <p class="PARRAFO">Por defecto, al ingresar al formulario se
+        muestran todos los registros existentes indicando para cada uno el número
+        del mismo, el proveedor a quien se le hizo, la cantidad solicitada y la cantidad
+        entregada.</p>
+      <p class="TITLE"><img src="../img/PLF_003E1.PNG" 681" height="135"></p>
+      <p class="PARRAFO">El formulario solo contiene el hipervínculo
+        Información pedido
+      </p>
+      <p class="PARRAFO"><b><span class="SUBTITULO">Información
+            pedido:</span></b> si el usuario selecciona un registro e invoca el hipervínculo
+        Información pedido se despliega un nuevo formulario en el
+        cual se muestran las entregas de plásticos que el proveedor haya hecho
+        a la entidad en cumplimiento del pedido efectuado, indicando la secuencia
+        de entrega, la fecha en que se registró y la cantidad entregada.
+      </p>
+      <p class="TITLE"><img src="../img/PLF_003E2.PNG" 729"></p>
+
+      <p class="PARRAFO">El formulario contiene el hipervínculo
+        <a href="PLH_003B.html#BL_DESGLOSE" >Desglose</a>, que
+        permite registrar el detalle de los plásticos entregados a la entidad
+        por parte del proveedor. Adicionalmente, cuenta con las opciones Eliminar
+        y Adicionar.
+      </p>
+      <p class="PARRAFO"><b><span class="SUBTITULO">Adicionar:</span></b>
+        si el usuario invoca la opción Adicionar, se despliega un nuevo formulario
+        en el cual se registran las entregas que sobre el pedido haya efectuado el
+        proveedor. Las entregas registradas afectan automáticamente el campo
+        Existencias contenido en el formulario <span class="PARRAFO"><a href="PLH_001B.html"
+            >Inventario
+              de plásticos</a>.</span> 
+      </p>
+
+      <p class="TITLE"><img src="../img/PLF_003E3.PNG" 272"></p>
+
+      <p class="TITLE">Descripción de campos</p>
+      <div>
+        <table>
+          <tr>
+            <td class="titletable">
+              <p class="SUBTITULO"><b><span>Fecha
+                    entrega </span></b></p>
+            </td>
+            <td>
+              <p class="PARRAFO">Campo
+                obligatorio en el que se registra en formato YYYY-MM-DD la fecha en
+                la que el proveedor hizo entrega de los plasticos pedidos a la entidad.</p>
+            </td>
+          </tr>
+          <tr>
+            <td class="titletable">
+              <p class="SUBTITULO"><b><span>Entregados</span></b></p>
+            </td>
+            <td>
+              <p class="PARRAFO">Este
+                campo obligatorio permite indicar la cantidad de plásticos
+                que el proveedor entregá a la entidad.</p>
+            </td>
+          </tr>
+        </table>
+
+      </div>
+
+      <p class="PARRAFO"><a name="BL_DESGLOSE"></a><span class="SUBTITULO"><span><b>Desglose</b>:</span> 
+          </span><span>
+          si desde el formulario Información de pedidos el usuario selecciona
+          un registro e invoca el hipervínculo Desglose, el sistema
+          despliega formulario en el cual se muestran </span><span>el desglose o detalle de las cajas y plasticos
+          registrados para cada una de las entregas efectuadas por el proveedor</span><span style"font-family:
+          Arial">.</span></p>
+      <p class="TITLE"><img src="../img/PLF_003E4.PNG" 710"></p>
+      <p class="TITLE">Descripción de campos</p>
+      <table>
+        <tr>
+          <td class="titletable">
+            <p class="SUBTITULO"><b><span>Caja</span></b></p>
+          </td>
+          <td>
+            <p class="PARRAFO">Indica el número asignado a cada una de las cajas con los plasticos entregados por el
+              proveedor.</p>
+          </td>
+        </tr>
+        <tr>
+          <td class="titletable">
+            <p class="SUBTITULO"><b><span>Número
+                  inicial</span></b></p>
+          </td>
+          <td>
+            <p class="PARRAFO">Muestra el consecutivo inicial
+              a partir del cual comienza el grupo de plásticos entregados
+              por el proveedor para cada caja.</p>
+          </td>
+        </tr>
+        <tr>
+          <td class="titletable">
+            <p class="SUBTITULO"><b><span>Número
+                  final</span></b></p>
+          </td>
+          <td>
+            <p class="PARRAFO">En
+              este campo numérico se despliega el consecutivo
+              final hasta donde va el grupo de plásticos de cada caja que fueron entregados por el proveedor.</p>
+          </td>
+        </tr>
+      </table>
+
+      <p class="PARRAFO">El formulario cuenta con las opciones adicionar y eliminar.</p>
+      <p class="PARRAFO"><span><b><span class="SUBTITULO">Adicionar:</span></b> si el actor invoca la opci</span> 
+        ><span>ón adicionar se despliega </span><span>un wizard de dos pasos en el cual la entidad puede registrar
+          de
+          manera detallada los números de cajas o lotes y los consecutivos de
+          los plásticos contenidos en ellos, que fueron entregados por el proveedor.
+          Esta información será utilizada posteriormente por el sistema
+          durante la etapa de <a href="PLH_020B.html" >control de inventario</a>.</span> 
+      </p>
+      <p class="PARRAFO"><span >En la primera
+          página del wizard, se ingresa la información de las diferentes
+          cajas y plásticos entregados para cada una de las entregas parciales
+          efectuadas por el proveedor.</span></p>
+      <p class="TITLE"><img src="../img/PLF_003E5.PNG"></p>
+      <p class="PARRAFO"><span >.</span></p>
+      <p class="TITLE"><img src="../img/PLF_003E6.PNG"></p>
+
+      <p class="TITLE">Descripción de campos</p>
+      <div>
+        <table>
+          <tr>
+            <td class="titletable">
+              <p class="SUBTITULO"><b><span>Tipo
+                    de registro</span></b></p>
+            </td>
+            <td>
+              <p class="PARRAFO">Campo
+                obligatorio tipo combo que contiene las opciones Caja nueva
+                o Caja existente, para indicar si los plásticos a
+                registras corresponden a alguno de los lotes ya ingresados o si es
+                un lote nuevo.</p>
+            </td>
+          </tr>
+          <tr>
+            <td class="titletable">
+              <p class="SUBTITULO"><b><span>Número
+                    de caja</span></b></p>
+            </td>
+            <td>
+              <p class="PARRAFO">En
+                este campo obligatorio, se registra el número de la caja a
+                la que pertenecen los plasticos entregados. Dependiendo de la opción
+                seleccionada en el campo anterior, este campo permite digitar información
+                directamente o habilita una lista de valores para seleccionar la caja
+                correspondiente. </p>
+            </td>
+          </tr>
+          <tr>
+            <td class="titletable">
+              <p class="SUBTITULO"><b><span>Número
+                    inicial</span></b></p>
+            </td>
+            <td>
+              <p class="PARRAFO">Campo
+                numérico obligatorio en el que se indica el consecutivo inicial
+                a partir del cual comienza el grupo de plásticos entregados
+                por el proveedor. Cuando en el campo Tipo de registro se
+                haya indicado Caja existente, este campo se llena automáticamente
+                con la secuencia inmediatamente siguiente a la última registrada
+                para la caja o lote.</p>
+            </td>
+          </tr>
+          <tr>
+            <td class="titletable">
+              <p class="SUBTITULO"><b><span>Número
+                    final</span></b></p>
+            </td>
+            <td>
+              <p class="PARRAFO">En
+                este campo numérico obligatorio, se registra el consecutivo
+                final hasta donde va el grupo de plásticos entregados al proveedor.</p>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <p class="PARRAFO">Después de haber ingresado el desglose
+        para una secuencia de entrega, mediante el segundo botón del wizard
+        se van adicionando uno a uno los desgloses y luego al desplazarse a la segunda
+        página se muestra el resumen de todos desplegando para cada uno el
+        modelo, la caja, número inicial y número final. El formulario
+        cuenta con un check que permite marcar aquellos desgloses que ya no se desea
+        registrar en el sistema.</p>
+      <p class="TITLE"><img src="../img/PLF_003E7.PNG" 683" height="121"></p>
+
+      <p class="PARRAFO">El sistema controla que la cantidad total
+        de los plásticos ingresados en cada desglose para una misma secuencia
+        y pedido sea igual a la cantidad registrada como entregada para dicha secuencia.
+        De igual manera se controla que las secuencias de los plásticos dentro
+        de una misma caja y modelo no se sobrepongan entre si.</p>
+      <p class="PARRAFO"><b>Eliminar</span><span class="SUBTITULO">:</span></b> el sistema permite eliminar un
+        desglose siempre y cuando ninguno de los plásticos pertenecientes a la caja haya sido utilizado para <a
+          href="PLH_005B.html" >realce</a> o se encuentre registrado como <a href="PLH_005B.html"
+          >averiado</a></p>
+      <div>
+
+        <p><a href="NUH_INDB.html"><b><span>Índice General</span></b></a><span><b>| </b></span><a
+            href="EMH_000B.html"><b><span>Índice del Menú</span></b></a><b><span>
+              | </span></b><a href="NUH_INTB.html"><b><span >Ayuda
+                General</span></b></a></p>
+
+      </div>
+  </section>
+  <script src="../js/menu.js"></script>
+
+  <footer>
+    <div>
+      <img class="TITLE" src="../img/logo.PNG">
+    </div>
+    <p>OpenCard SAS</p>
+    <p>Calle 77 Nº 11-19 Piso 4°, Bogotá D.C.</p>
+    <p>Tel (57) 601 - 313 37 75 <a href="http://www.OpenCard.com" target="_blank">www.OpenCard.com</a></p>
+
+  </footer>
+</body>
+
+</html>

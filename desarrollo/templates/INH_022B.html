@@ -1,0 +1,770 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BANKBU®</title>
+
+    <link rel="stylesheet" href="../css/pages.css">
+    <link rel="stylesheet" href="../css/style.css">
+ <link rel="icon" href="../img/ACQUIRER-logo.JPG" type="image/x-icon">
+</head>
+
+<body>
+
+    <header>
+        <img class="logo" src="../img/logoBankbu_.PNG" alt="Logo de Mi Empresa">
+        <div id="menuBtn">
+            <img class="TITLE"  src= "../img/menu.PNG" alt="Botón de Menú ">
+        </div>
+    </header>
+    <nav>
+        <ul>
+            <li>
+                    <a href="../index.html" class="main-optionINICIO">INICIO</a>
+            </li>
+            <li>
+                <a href="NUH_INTB.html" class="main-optionINTRODUCCIÓN">INTRODUCCIÓN</a>
+            </li>
+            <li><a href="#" class="main-option">NUCLEO ▼</a>
+                <ul>
+                    <li><a href="NUH_000B.html">Config. Sistema</a></li>
+                    <li><a href="NUH_00B_N2.html">Parametros</a></li>
+                    <li><a href="NUH_00B_inicio.html">Inicio</a></li>
+                    <li><a href="NUH_00B_proceso.html">Procesos</a></li>
+                    <li><a href="NUH_00B_inf.html">Inf. Cliente</a></li>
+                    <li><a href="NUH_00B_conta.html">Contabilidad</a></li>
+                    <li style="visibility: hidden; display: none;"><a href="NUH_00B_audi.html">Auditoria</a></li>
+
+                </ul>
+            </li>
+            <li>
+             <a href="#" class="main-option">EMISOR  ▼</a>
+                <ul>
+                    <li><a href="EMH_000B.html">Productos</a></li>
+                    <li><a href="EMH_000Bsoli.html">Solicitudes</a></li>
+                    <li><a href="EMH_000Bmerca.html">Mercadeo</a></li>
+                    <li><a href="EMH_000Bservi.html">Servicio Al Cliente</a></li>
+                    <li><a href="EMH_000Bpendi.html">Pendientes</a></li>
+                    <li><a href="EMH_000Btrans.html">Transaccionabilidad</a></li>
+                    <li><a href="EMH_000Bauto.html">Autorizaciones</a></li>
+                    <li><a href="EMH_000Bplasti.html">Adm. Plasticos</a></li>
+                    <li><a href="EMH_000Brecla.html">Reclamos</a></li>
+                    <li><a href="MEH_032B.html">Lealtad</a></li>
+                    <li><a href="COH_064B.html">Cobranzas</a></li>
+                </ul>
+            </li>
+ <li style="visibility: hidden">
+                <a href="ACH_000B.html" class="main-option">ADQUIRIENTE</a>
+            </li>
+            <li style="visibility: hidden">
+                <a href="DBH_000B.html" class="main-option">TARJETA DEBITO</a>
+            </li></ul>
+    </nav>
+
+    <section>
+        <div> 
+            <table>
+              <tr> 
+                <td><div> 
+                    <p  class="TITLE">Fraudes</p>
+                    </div></td>
+              </tr>
+            </table>
+            <p class="PARRAFO">Mediante esta forma o pantalla se permite la gesti&oacute;n, 
+              desde su inicio hasta el final, del proceso mediante el que la entidad interact&uacute;a 
+              con la compa&ntilde;&iacute;a de seguros que ampara los fraudes cometidos 
+              contra los tarjetahabientes. A esta forma o pantalla arriban las transacciones 
+              realizadas con pl&aacute;sticos que han sido reportados como extraviados o 
+              hurtados, al igual que transacciones que se encuentran en etapas o instancias 
+              tales como <a href="INH_008B.html" >movimiento pendiente</a> o <a href="INH_029B.html" >efectos 
+              al cobro</a>, con el fin de procurar una &quot;soluci&oacute;n&quot; a las 
+              mismas.</p>
+            <p class="PARRAFO">El formulario contiene las opciones 
+              Actualizar y Detalle. Adicionalmente cuenta con un filtro de b&uacute;squeda.</p>
+            <p class="TITLE"><img src="../img/INF_022B.PNG"769" height="640"></p>
+            
+            <p><span class="SUBTITULO">Filtro:</span>  El formulario cuenta con un filtro 
+              inicial de b&uacute;squeda, necesario para la consulta de la informaci&oacute;n:</p>
+            <p class="TITLE"><img src="../img/INF_022B1.PNG"713" height="132"></p>
+            <table>
+              <tr> 
+                <td class="titletable"><p class="SUBTITULO"><b>N&uacute;mero 
+                    tarjeta </b></p></td>
+                <td><p class="PARRAFO">Permite 
+                    ingresar el n&uacute;mero por el cual se desea realizar la b&uacute;squeda 
+                    del fraude.</p></td>
+              </tr>
+              <tr> 
+                <td  class="titletable" ><p class="SUBTITULO">Origen</p></td>
+                <td><p class="PARRAFO">Campo 
+                    num&eacute;rico de 3 d&iacute;gitos con lista de valores que muestra 
+                    los or&iacute;genes de transacciones definidos por la entidad, tanto 
+                    externos (<a href="NUH_033B.html" >franquicias</a>, <a href="NUH_054B.html" >compensadores</a>), 
+                    como locales, internacionales, internos.</p></td>
+              </tr>
+              <tr> 
+                <td class="titletable"><p class="SUBTITULO">Transacci&oacute;n 
+                    original </p></td>
+                <td><p class="PARRAFO">Despliega 
+                    el c&oacute;digo de la transacci&oacute;n a gestionar como fraudulenta, 
+                    proveniente de otras instancias o etapas dentro del proceso de las transacciones. 
+                    La codificaci&oacute;n es determinada por las franquicias y parametrizada 
+                    mediante la opci&oacute;n <a href="NUH_027B.html" >Or&iacute;genes de 
+                    transacciones</a> del grupo de Tablas reservadas del N&uacute;cleo.</p></td>
+              </tr>
+              <tr> 
+                <td  class="titletable" ><p class="SUBTITULO">Estado 
+                    comprobante </p></td>
+                <td><p class="PARRAFO">Campo 
+                    que muestra la condici&oacute;n en que se encuentra actualmente el comprobante 
+                    y que puede ser Contracargos, Cargo al cliente, Pagado por la compa&ntilde;&iacute;a 
+                    de seguros, Negado por la compa&ntilde;&iacute;a de seguros, Comprobante 
+                    castigado o Enviado a la compa&ntilde;&iacute;a de seguros.</p></td>
+              </tr>
+              <tr> 
+                <td class="titletable"><p class="SUBTITULO">Fecha 
+                    comprobante</p></td>
+                <td><p class="PARRAFO">Muestra 
+                    la fecha f&iacute;sica del comprobante de consumo o utilizaci&oacute;n 
+                    fraudulento en formato YYYY-MM-AA.</p></td>
+              </tr>
+            </table>
+           
+            <p class="PARRAFO"><span class="PARRAFO"><span class="SUBTITULO">Actualizar:</span>  
+              Si el usuario invoca la opci&oacute;n Actualizar se despliega un nuevo formulario 
+              en el cual los &uacute;nicos campos modificables son: Nombre, Descripci&oacute;n, 
+              Rutina, y Motivos de negaci&oacute;n.</span></p>
+            <p class="TITLE"><img src="../img/INF_022B2.PNG"618" height="432"></p>
+           
+            <table>
+              <tr> 
+                <td class="titletable"><p class="SUBTITULO">Tipo 
+                    registro </p></td>
+                <td><p class="PARRAFO">(Pdte documentaci&oacute;n)</p></td>
+              </tr>
+              <tr> 
+                <td  class="titletable" ><p class="SUBTITULO">Terminal 
+                    servicio </p></td>
+                <td><p>En este campo se captura el c&oacute;digo de la   terminal por la cual lleg&oacute; la autorizaci&oacute;n y sobre la cual se desea hacer la   consulta.</p>      
+                </td>
+              </tr>
+              <tr> 
+                <td class="titletable"><p class="SUBTITULO">Origen</p></td>
+                <td><p>En este campo el origen por la cual lleg&oacute; la autorizaci&oacute;n y sobre la cual se desea hacer la   consulta.</p>      
+                </td>
+              </tr>
+              <tr> 
+                <td  class="titletable" ><p class="SUBTITULO">Transacci&oacute;n 
+                    origen </p></td>
+                <td><p class="PARRAFO">Despliega 
+                    el c&oacute;digo de la transacci&oacute;n a gestionar como fraudulenta, 
+                    proveniente de otras instancias o etapas dentro del proceso de las transacciones. 
+                    La codificaci&oacute;n es determinada por las franquicias y parametrizada 
+                    mediante la opci&oacute;n <a href="NUH_027B.html" >Or&iacute;genes de 
+                    transacciones</a>.</p></td>
+              </tr>
+              <tr> 
+                <td class="titletable"><p class="SUBTITULO">Fecha 
+                    - Hora transacci&oacute;n</p></td>
+                <td><p class="PARRAFO">Muestra la informaci&oacute;n de la fecha y la hora en la cual se realiz&oacute; la transacci&oacute;n del fraude. </p></td>
+              </tr>
+              <tr> 
+                <td class="titletable"><p class="SUBTITULO">Transacci&oacute;n 
+                    interna </p></td>
+                <td><p class="PARRAFO">Muestra el nombre de la transacci&oacute;n interna   asociado en la opci&oacute;n <A href="MEH_003B.html" >Transacciones por   empresa</A>.</p>      
+                </td>
+              </tr>
+              <tr> 
+                <td  class="titletable" ><p class="SUBTITULO">Nivel 
+                    activado TH</p></td>
+                <td><p class="PARRAFO">(Pdte documentaci&oacute;n)</p></td>
+              </tr>
+              <tr> 
+                <td class="titletable"><p class="SUBTITULO">Marca</p></td>
+                <td><p class="PARRAFO">Muestra la marca de la tarjeta a la cual pertenece la transacci&oacute;n del fraude. </p></td>
+              </tr>
+              <tr> 
+                <td  class="titletable" ><p class="SUBTITULO">Elimina 
+                    flag duplicado</p></td>
+                <td><p class="PARRAFO">(Pdte documentaci&oacute;n)</p></td>
+              </tr>
+              <tr> 
+                <td class="titletable"><p class="SUBTITULO">Valor 
+                    moneda patr&oacute;n</p></td>
+                <td><p class="PARRAFO">Muestra el dato equivalente al valor de la transacci&oacute;n en la moneda patr&oacute;n del sistema.</p></td>
+              </tr>
+              <tr> 
+                <td  class="titletable" ><p class="SUBTITULO">Indicador 
+                    terminal adquirente</p></td>
+                <td><p class="PARRAFO">(Pdte documentaci&oacute;n)</p></td>
+              </tr>
+              <tr> 
+                <td class="titletable"><p class="SUBTITULO">N&uacute;mero 
+                    tarjeta </p></td>
+                <td><p class="PARRAFO">Rese&ntilde;a 
+                    el n&uacute;mero de la tarjeta asociado inicialmente a la transacci&oacute;n.</p></td>
+              </tr>
+              <tr> 
+                <td  class="titletable" ><p class="SUBTITULO">C&oacute;digo 
+                    subfraude </p></td>
+                <td><p class="PARRAFO">(Pdte documentaci&oacute;n)</p></td>
+              </tr>
+              <tr> 
+                <td class="titletable"><p class="SUBTITULO">Tarjeta 
+                    aplicar </p></td>
+                <td><p class="PARRAFO">tarjeta que se puede modificar y a la cual se le puede aplicar la trx </p></td>
+              </tr>
+              <tr> 
+                <td class="titletable"><p class="SUBTITULO">Boleta 
+                    de ruta</p></td>
+                <td><p class="PARRAFO">Corresponde 
+                    al n&uacute;mero consecutivo de los comprobantes de control permitidos 
+                    por cada oficina en la captura del movimiento, producto de la operaci&oacute;n 
+                    diaria.</p></td>
+              </tr>
+              <tr> 
+                <td  class="titletable" ><p class="SUBTITULO">Estado 
+                    comprobante </p></td>
+                <td><p class="PARRAFO">Campo 
+                    que muestra la condici&oacute;n en que se encuentra actualmente el comprobante 
+                    y que puede ser Contracargos, Cargo al cliente, Pagado por la compa&ntilde;&iacute;a 
+                    de seguros, Negado por la compa&ntilde;&iacute;a de seguros, Comprobante 
+                    castigado o Enviado a la compa&ntilde;&iacute;a de seguros.</p></td>
+              </tr>
+              <tr> 
+                <td class="titletable"><p class="SUBTITULO">C&oacute;digo 
+                    respuesta </p></td>
+                <td><p class="PARRAFO">Muestra el c&oacute;digo de la autorizacion asignada a la transacci&oacute;n del fraude.</p></td>
+              </tr>
+              <tr> 
+                <td  class="titletable" ><p class="SUBTITULO">N&uacute;mero 
+                    paquete </p></td>
+                <td><p class="PARRAFO">Indica el n&uacute;mero utilizado por las entidades   para identificar el orden de ingreso o captura de varios paquetes de movimiento dentro del sistema.</p>      
+                </td>
+              </tr>
+              <tr> 
+                <td class="titletable"><p class="SUBTITULO">C&oacute;digo 
+                    actividad comercial</p></td>
+                <td><p class="PARRAFO">Indica el c&oacute;digo de la actividad a la cual pertenece el establecimiento en el cual se efectu&oacute; la transacci&oacute;n.</p></td>
+              </tr>
+              <tr> 
+                <td class="titletable"><p class="SUBTITULO">Tipo 
+                    tarjeta </p></td>
+                <td><p class="PARRAFO">Muestra si la transacci&oacute;n fue realizada con tarjeta Principal, Extendida, Amparada, o Adicional. </p></td>
+              </tr>
+              <tr> 
+                <td  class="titletable" ><p class="SUBTITULO">Indicador 
+                    contracargo </p></td>
+                <td><p class="PARRAFO">(Pdte documentaci&oacute;n)</p></td>
+              </tr>
+              <tr> 
+                <td class="titletable"><p class="SUBTITULO">Valor 
+                    moneda local</p></td>
+                <td><p class="PARRAFO">Muestra el nombre de la <A href="NUH_005B.html" >moneda</A> oficial del pa&iacute;s al cual pertenece la   entidad emisora de la tarjeta.</p>      
+                </td>
+              </tr>
+              <tr> 
+                <td  class="titletable" ><p class="SUBTITULO">Modo 
+                    entrada POS</p></td>
+                <td><p class="PARRAFO">(Pdte documentaci&oacute;n)</p></td>
+              </tr>
+              <tr> 
+                <td class="titletable"><p class="SUBTITULO">Valor 
+                    compra </p></td>
+                <td><p class="PARRAFO">Muestra 
+                    el monto de la transacci&oacute;n de utilizaci&oacute;n o consumo sin 
+                    incluir el monto de la propina concedida por el tarjetahabiente.</p></td>
+              </tr>
+              <tr> 
+                <td  class="titletable" ><p class="SUBTITULO">Secuencia 
+                    recepci&oacute;n </p></td>
+                <td><p>N&uacute;mero utilizado por las entidades para   identificar el orden de ingreso de movimiento de varios or&iacute;genes dentro del   sistema.</p>      
+                </td>
+              </tr>
+              <tr> 
+                <td class="titletable"><p class="SUBTITULO">Valor 
+                    propina </p></td>
+                <td><p class="PARRAFO">Refleja 
+                    el monto de la propina otorgada por el cliente.</p></td>
+              </tr>
+              <tr> 
+                <td class="titletable"><p class="SUBTITULO">Secuencia 
+                    entrada de datos</p></td>
+                <td><p class="PARRAFO">(Pdte documentaci&oacute;n)</p></td>
+              </tr>
+              <tr> 
+                <td  class="titletable" ><p class="SUBTITULO">Valor 
+                    intercambio </p></td>
+                <td><p class="PARRAFO">Muestra 
+                    el valor neto de la transacci&oacute;n, esto es, valor del consumo o 
+                    utilizaci&oacute;n m&aacute;s valor propina, m&aacute;s valor IVA menos 
+                    valor descuento.</p></td>
+              </tr>
+              <tr> 
+                <td class="titletable"><p class="SUBTITULO">C&oacute;digo 
+                    fraude </p></td>
+                <td><p class="PARRAFO">(Pdte documentaci&oacute;n)</p></td>
+              </tr>
+              <tr> 
+                <td  class="titletable" ><p class="SUBTITULO">Valor 
+                    descuento </p></td>
+                <td><p class="PARRAFO">Contiene 
+                    el valor deducido al establecimiento al liquidarle la comisi&oacute;n 
+                    o descuento sobre el valor del consumo realizado por el cliente.</p></td>
+              </tr>
+              <tr> 
+                <td class="titletable"><p class="SUBTITULO">Indicador 
+                    comercio electr&oacute;nico</p></td>
+                <td><p class="PARRAFO">(Pdte documentaci&oacute;n)</p></td>
+              </tr>
+              <tr> 
+                <td class="titletable"><p class="SUBTITULO">Valor 
+                    IVA </p></td>
+                <td><p class="PARRAFO">Refleja 
+                    el valor cancelado por el cliente por dicho concepto.</p></td>
+              </tr>
+              <tr> 
+                <td class="titletable"><p class="SUBTITULO">Elige 
+                    seguro falsificado</p></td>
+                <td><p class="PARRAFO">(Pdte documentaci&oacute;n) / nr</p></td>
+              </tr>
+              <tr> 
+                <td class="titletable"><p class="SUBTITULO">Valor 
+                    total </p></td>
+                <td><p class="PARRAFO">Despliega 
+                    la sumatoria del valor de la compra m&aacute;s el valor de la propina, 
+                    m&aacute;s el valor del IVA.</p></td>
+              </tr>
+              <tr> 
+                <td class="titletable"><p class="SUBTITULO">Indicador 
+                    presencia TH</p></td>
+                <td><p class="PARRAFO">(Pdte documentaci&oacute;n)</p></td>
+              </tr>
+              <tr> 
+                <td class="titletable"><p class="SUBTITULO">Moneda</p></td>
+                <td><p class="PARRAFO">Se&ntilde;ala el nombre oficial de la <A href="NUH_005B.html" >moneda</A> en que se efectu&oacute; la transacci&oacute;n.</p></td>
+              </tr>
+              <tr> 
+                <td class="titletable"><p class="SUBTITULO">Indicador 
+                    CVC inv&aacute;lido</p></td>
+                <td><p class="PARRAFO">(Pdte documentaci&oacute;n)</p></td>
+              </tr>
+              <tr> 
+                <td class="titletable"><p class="SUBTITULO">Causal 
+                    almacenada </p></td>
+                <td><p class="PARRAFO">Se&ntilde;ala 
+                    tanto el c&oacute;digo como el motivo o raz&oacute;n por el que la transacci&oacute;n 
+                    fue enviada a fraudes.</p></td>
+              </tr>
+           
+              <tr>
+                <td class="titletable"><p class="SUBTITULO">Indicador Emv </p></td>
+                <td><p class="PARRAFO"> Sigla que hace referencia a Europa, MasterCard y Visa. , corresponde al modo de ingreso de la transacci&oacute;n, tarjetas con chip EMV. </p></td>
+              </tr>
+            </table>
+           
+            <p class="TITLE"><img src="../img/INF_022B3.PNG"617" height="390"></p>
+            
+            <table>
+              <tr> 
+                <td class="titletable"><p class="SUBTITULO">N&uacute;mero 
+                    comprobante </p></td>
+                <td  class="PARRAFO"><p>Despliega el n&uacute;mero del comprobante, para   las transacciones que lo contengan y usualmente equivale al n&uacute;mero f&iacute;sico del   documento.</p>      </td>
+              </tr>
+              <tr> 
+                <td  class="titletable" ><p class="SUBTITULO">Bin 
+                    destino </p></td>
+                <td  class="PARRAFO" ><p class="PARRAFO">Se&ntilde;ala 
+                el prefijo o bin centro de proceso de la entidad emisora del pl&aacute;stico.</p></td>
+              </tr>
+              <tr> 
+                <td class="titletable"><p class="SUBTITULO">Bin 
+                    fuente </p></td>
+                <td  class="PARRAFO"><p>Contiene el bin   centro de proceso que identifica a una entidad dentro de cada entidad   compensadora.</p>      </td>
+              </tr>
+              <tr> 
+                <td  class="titletable" ><p class="SUBTITULO">Bin 
+                    receptor </p></td>
+                <td  class="PARRAFO" ><p class="PARRAFO">Contiene 
+                    el prefijo o bin centro de proceso de la entidad a trav&eacute;s de 
+                la que ingresa la transacci&oacute;n.</p></td>
+              </tr>
+              <tr> 
+                <td class="titletable"><p class="SUBTITULO">N&uacute;mero 
+                    lote </p></td>
+                <td  class="PARRAFO"><p>Registra el n&uacute;mero asignado al grupo de   transacciones similares, con el &aacute;nimo de identificarlos f&iacute;sicamente y dentro del   sistema.</p>      </td>
+              </tr>
+              <tr> 
+                <td class="titletable"><p class="SUBTITULO">D&iacute;gito 
+                    de chequeo</p></td>
+                <td  class="PARRAFO"><p>Contiene el &uacute;ltimo n&uacute;mero que compone la   referencia universal, obtenido mediante algoritmos y que permite verificar la   validez de dicha referencia.</p>      </td>
+              </tr>
+              <tr> 
+                <td  class="titletable" ><p class="SUBTITULO">Secuencia 
+                    lote </p></td>
+                <td  class="PARRAFO" ><p>Contiene el n&uacute;mero consecutivo asignado por   el sistema a cada transacci&oacute;n facilitando su identificaci&oacute;n dentro del mismo.</p>      </td>
+              </tr>
+              <tr> 
+                <td class="titletable"><p class="SUBTITULO">Tipo 
+                    captura </p></td>
+                <td  class="PARRAFO"><p class="PARRAFO">Se&ntilde;ala 
+                    el c&oacute;digo definido por la franquicia que identifica la manera 
+                como ingres&oacute;, por medio de su red, la transacci&oacute;n al sistema.</p></td>
+              </tr>
+              <tr> 
+                <td  class="titletable" ><p class="SUBTITULO">Autorizaci&oacute;n</p></td>
+                <td  class="PARRAFO" ><p class="PARRAFO">Muestra 
+                    el n&uacute;mero de la autorizaci&oacute;n asignado a la transacci&oacute;n 
+                por el procesador o la entidad.</p></td>
+              </tr>
+              <tr> 
+                <td class="titletable"><p class="SUBTITULO">Motivo 
+                    devoluci&oacute;n </p></td>
+                <td  class="PARRAFO"><p>Despliega la descripci&oacute;n del motivo por el   cual una transacci&oacute;n es rechazada o devuelta, con base en la definici&oacute;n de   motivos hecha por las   franquicias.</p>        </td>
+              </tr>
+              <tr> 
+                <td  class="titletable" ><p class="SUBTITULO">Transacci&oacute;n 
+                    anterior</p></td>
+                <td  class="PARRAFO" ><p class="PARRAFO">(Pdte documentaci&oacute;n) / nr</p> 
+                </td>
+              </tr>
+              <tr> 
+                <td class="titletable"><p class="SUBTITULO">Origen 
+                    inmediato </p></td>
+                <td  class="PARRAFO"><p class="PARRAFO">Aplica 
+                    para las transacciones que al ingresar al sistema no pasaron directamente 
+                    al movimiento diario, esto es, que han transitado por otras etapas o 
+                    destinos del movimiento, y permite identificar la procedencia de las 
+                mismas.</p></td>
+              </tr>
+              <tr> 
+                <td  class="titletable" ><p class="SUBTITULO">Referencia 
+                    universal </p></td>
+                <td  class="PARRAFO" ><p>N&uacute;mero construido y validado por el sistema   tanto para el canje enviado como para el recibido, identifica de manera   exclusiva a cada transacci&oacute;n dentro de todo el universo   transaccional.</p>        </td>
+              </tr>
+              <tr> 
+                <td class="titletable"><p class="SUBTITULO">Entidad 
+                    origen </p></td>
+                <td  class="PARRAFO"><p class="PARRAFO">Despliega el nombre de la entidad asociado al   bin fuente.</p></td>
+              </tr>
+              <tr> 
+                <td class="titletable"><p class="SUBTITULO">Sucursal 
+                    adquirente </p></td>
+                <td  class="PARRAFO"><p class="PARRAFO">C&oacute;digo que permite identificar la sucursal de   la entidad receptora del movimiento.</p></td>
+              </tr>
+              <tr> 
+                <td  class="titletable" ><p class="SUBTITULO">Entidad 
+                    destino </p></td>
+                <td  class="PARRAFO" ><p>Corresponde al c&oacute;digo de compensaci&oacute;n que   identifica a la entidad emisora del pl&aacute;stico, dentro del sistema financiero   local.</p>        </td>
+              </tr>
+              <tr> 
+                <td class="titletable"><p class="SUBTITULO">N&uacute;mero 
+                    terminal </p></td>
+                <td  class="PARRAFO"><p class="PARRAFO">Para las transacciones de avance, este campo   muestra el n&uacute;mero de la terminal &oacute; n&uacute;mero de identificaci&oacute;n del cajero en el   cual se llev&oacute; a cabo la transacci&oacute;n.</p></td>
+              </tr>
+              <tr> 
+                <td class="titletable"><p class="SUBTITULO">Plazo</p></td>
+                <td  class="PARRAFO" ><p class="PARRAFO">Contiene 
+                    el n&uacute;mero de periodos de 30 d&iacute;as, solicitado por el cliente 
+                    o asignado por defecto, para el pago de la transacci&oacute;n de consumo 
+                o utilizaci&oacute;n.</p></td>
+              </tr>
+              <tr> 
+                <td class="titletable"><p class="SUBTITULO">Identificaci&oacute;n 
+                    red </p></td>
+                <td  class="PARRAFO" ><p>N&uacute;mero que permite detectar a trav&eacute;s de cual   de las diferentes redes se realiz&oacute; la transacci&oacute;n.</p>        </td>
+              </tr>
+              <tr> 
+                <td class="titletable"><p class="SUBTITULO">Descripci&oacute;n 
+                    mercanc&iacute;a </p></td>
+                <td  class="PARRAFO" ><p class="PARRAFO">Este 
+                    campo puede mostrar informaci&oacute;n relativa al <a href="ESH_023B.html" >art&iacute;culo</a> 
+                    adquirido mediante la transacci&oacute;n considerada fraudulenta, cuando 
+                    esta mercanc&iacute;a en particular hace parte de una <a href="ESH_024B.html" >promoci&oacute;n 
+                especial</a>.</p></td>
+              </tr>
+            </table>
+            
+            <p class="TITLE"><img src="../img/INF_022B4.PNG"616" height="317"></p>
+            
+            <table>
+              <tr> 
+                <td class="titletable"><p class="SUBTITULO">Entidad</p></td>
+                <td><p class="PARRAFO">Nombre 
+                    de la entidad financiera asociada a la cuenta.</p></td>
+              </tr>
+              <tr> 
+                <td class="titletable"><p class="SUBTITULO">Tipo 
+                    cuenta</p></td>
+                <td><p>Despliega la clase de cuenta a la cual   pertenece el movimiento y que puede ser Corriente, Rotativo o Ahorros.</p>      </td>
+              </tr>
+              <tr> 
+                <td class="titletable"><p class="SUBTITULO">Origen 
+                    pago </p></td>
+                <td><p class="PARRAFO">Aplica para los pagos de tarjetas extendidas   tales como las empresariales ingresados al sistema mediante la captura de   oficinas, despliega por defecto Tarjeta.</p>
+                </td>
+              </tr>
+              <tr> 
+                <td class="titletable"><p class="SUBTITULO">Identificaci&oacute;n 
+                    origen </p></td>
+                <td><p>Despliega el n&uacute;mero de la tarjeta principal   o la empresarial bajo la que se encuentra una o m&aacute;s tarjetas extendidas a las   que se les aplicar&aacute; el pago.</p>      </td>
+              </tr>
+              <tr> 
+                <td class="titletable"><p class="SUBTITULO">Destino 
+                    pago </p></td>
+                <td><p class="PARRAFO">Si el pago fue dirigido a una L&iacute;nea,   Tarjeta o Transacci&oacute;n, despliega dicho valor. </p>
+                </td>
+              </tr>
+              <tr> 
+                <td class="titletable"><p class="SUBTITULO">Identificaci&oacute;n 
+                    destino </p></td>
+                <td><p class="PARRAFO">Contiene el n&uacute;mero asociado a la l&iacute;nea de   cr&eacute;dito, a la tarjeta o a la transacci&oacute;n hacia la que se dirige el pago.</p></td>
+              </tr>
+              <tr> 
+                <td class="titletable"><p class="SUBTITULO">Forma 
+                    pago </p></td>
+                <td><p class="PARRAFO">Indica si el pago se realiz&oacute; en efectivo o en   cheque.</p></td>
+              </tr>
+
+              <tr> 
+                <td class="titletable"><p class="SUBTITULO">Enviado 
+                    al seguro</p></td>
+                <td><p class="PARRAFO">Campo que al estar se&ntilde;alado indica que la   transacci&oacute;n efectivamente fue presentada la reclamaci&oacute;n ante la compa&ntilde;&iacute;a de   seguros.</p></td>
+              </tr>
+              <tr> 
+                <td class="titletable"><p class="SUBTITULO">Fecha 
+                    env&iacute;o </p></td>
+                <td><p class="PARRAFO">ampo con formato YYYY-MM-DD que muestra la   fecha en que se envi&oacute; a la compa&ntilde;&iacute;a de seguros la transacci&oacute;n   fraudulenta.</p>
+                </td>
+              </tr>
+              <tr> 
+                <td class="titletable"><p class="SUBTITULO">Fecha 
+                    respuesta seguro</p></td>
+                <td><p class="PARRAFO">Campo con formato YYYY-MM-DD que indica la   fecha en que la compa&ntilde;&iacute;a de seguros emiti&oacute; respuesta a la solicitud   presentada.</p>
+                </td>
+              </tr>
+              <tr> 
+                <td class="titletable"><p class="SUBTITULO">Valor 
+                    reconocido </p></td>
+                <td><p class="PARRAFO">Despliega el monto efectivamente cubierto o   reconocido por la compa&ntilde;&iacute;a de seguros para cancelar los saldos vigentes por la   transacci&oacute;n que motiva el pago.</p>
+                </td>
+              </tr>
+              <tr> 
+                <td class="titletable"><p class="SUBTITULO">Valor 
+                    fondo </p></td>
+                <td><p class="PARRAFO">Despliega el valor asumido  o   reconocido por la Entidad, deducido del fondo que ella tiene destinado para los diferentes casos de fraudes. </p>      </td>
+              </tr>
+              <tr> 
+                <td class="titletable"><p class="SUBTITULO">Valor 
+                    deducible </p></td>
+                <td><p class="PARRAFO">Contiene el valor deducido al   establecimiento al liquidarle la comisi&oacute;n o descuento sobre el valor del consumo   realizado por el cliente.</p></td>
+              </tr>
+              <tr> 
+                <td class="titletable"><p class="SUBTITULO">N&uacute;mero 
+                    de env&iacute;os</p></td>
+                <td><p class="PARRAFO">Contiene la cantidad de veces que se ha   presentado o enviado la misma transacci&oacute;n ante la compa&ntilde;&iacute;a de   seguros.</p>
+                </td>
+              </tr>
+              <tr> 
+                <td class="titletable"><p class="SUBTITULO">Observaciones</p></td>
+                <td><p>Campo que contiene la bit&aacute;cora o descripci&oacute;n   de los detalles que ilustran el proceso sufrido por el tr&aacute;mite de   reclamaci&oacute;n.</p>      </td>
+              </tr>
+            </table>
+            
+            <p class="TITLE"><img src="../img/INF_022B6.PNG"615" ></p>
+            <table>
+              <tr> 
+                <td class="titletable"><p class="SUBTITULO">Establecimiento</p></td>
+                <td><p class="PARRAFO">Campos 
+                    que ilustran tanto el c&oacute;digo &uacute;nico como el nombre comercial 
+                    que identifica el establecimiento en que se realiz&oacute; la transacci&oacute;n.</p></td>
+              </tr>
+              <tr> 
+                <td class="titletable"><p class="SUBTITULO">Pa&igrave;s 
+                    establecimiento </p></td>
+                <td><p class="PARRAFO">Muestra la descipcion completa del pa&iacute;s donde se ubica el establecimiento en que se realiz&oacute; la   transacci&oacute;n.</p>      </td>
+              </tr>
+              <tr> 
+                <td class="titletable"><p class="SUBTITULO">Tipo 
+                    servicio </p></td>
+                <td><p class="PARRAFO">Despliega 
+                    tanto el c&oacute;digo como el nombre del principal <a href="ESH_002B.html" >servicio</a> 
+                    ofrecido por el establecimiento de comercio.</p></td>
+              </tr>
+              <tr> 
+                <td class="titletable"><p class="SUBTITULO">C&oacute;digo 
+                    postal</p></td>
+                <td><p class="PARRAFO">Indica el c&oacute;digo de la zona postal del  municipio o ciudad   donde se ubica el establecimiento.</p></td>
+              </tr>
+              <tr> 
+                <td class="titletable"><p class="SUBTITULO">Ciudad</p></td>
+                <td><p class="PARRAFO">Despliega el nombre del municipio o ciudad   donde se ubica el establecimiento en que se realiz&oacute; la transacci&oacute;n.</p></td>
+              </tr>
+              <tr> 
+                <td class="titletable"><p class="SUBTITULO">Estado</p></td>
+                <td><p class="PARRAFO">Campo 
+                    que muestra la condici&oacute;n en que se encuentra actualmente el comprobante 
+                    y que puede ser Contracargos, Cargo al cliente, Pagado por la compa&ntilde;&iacute;a 
+                    de seguros, Negado por la compa&ntilde;&iacute;a de seguros, Comprobante 
+                    castigado o Enviado a la compa&ntilde;&iacute;a de seguros.</p></td>
+              </tr>
+              <tr> 
+                <td class="titletable"><p class="SUBTITULO">Porcentaje 
+                    descuento </p></td>
+                <td><p class="PARRAFO">Rese&ntilde;a 
+                    el valor del porcentaje aplicado a la compra o consumo fraudulento realizados 
+                    en ese establecimiento a manera de comisi&oacute;n o descuento.</p></td>
+              </tr>
+            </table>
+            
+            <p class="TITLE"><img src="../img/INF_022B7.PNG"616" height="107"></p>
+            
+            <table>
+              <tr> 
+                <td class="titletable"><p class="SUBTITULO">Fecha 
+                    consignaci&oacute;n </p></td>
+                <td><p class="PARRAFO">Contiene 
+                    la fecha en formato YYYY-MM-AA en que el establecimiento realiz&oacute; 
+                    la consignaci&oacute;n del movimiento dentro del que se encuentra la 
+                    transacci&oacute;n en disputa y aclaraci&oacute;n.</p></td>
+              </tr>
+              <tr> 
+                <td class="titletable"><p class="SUBTITULO">Fecha 
+                    soluci&oacute;n </p></td>
+                <td><p class="PARRAFO">Muestra 
+                    la fecha en formato YYYY-MM-AA en que efectivamente se da una soluci&oacute;n 
+                    definitiva al comprobante.</p></td>
+              </tr>
+              <tr> 
+                <td class="titletable"><p class="SUBTITULO">Fecha 
+                    proceso </p></td>
+                <td><p>Indica la fecha en que fue procesado el   movimiento dentro del que aparece la transacci&oacute;n.</p>      </td>
+              </tr>
+              <tr> 
+                <td class="titletable"><p class="SUBTITULO">Fecha 
+                    contabilizaci&oacute;n </p></td>
+                <td><p class="PARRAFO">Contiene 
+                    la fecha en formato YYYY-MM-AA en la cual se afect&oacute; contablemente 
+                    el saldo del tarjetahabiente, usualmente es la misma fecha de proceso 
+                    o canje.</p></td>
+              </tr>
+              <tr> 
+                <td class="titletable"><p class="SUBTITULO">Fecha 
+                    comprobante </p></td>
+                <td><p class="PARRAFO">Muestra 
+                    la fecha f&iacute;sica del comprobante de consumo o utilizaci&oacute;n 
+                    fraudulento en formato YYYY-MM-AA.</p></td>
+              </tr>
+              <tr> 
+                <td class="titletable"><p class="SUBTITULO">Fecha 
+                    canje</p></td>
+                <td><p>Se&ntilde;ala la fecha en que es reportado el   movimiento por medio del archivo de canje, generado desde y hacia las entidades   emisoras, mediado &eacute;ste por el <A href="NUH_054B.html" >compensador</A> correspondiente.</p>      </td>
+              </tr>
+            </table>
+            
+            <p><span class="SUBTITULO">Localizaci&oacute;n:</span>  El formulario 
+              cuenta con un globo de localizaci&oacute;n que conduce a la siguiente informaci&oacute;n: 
+              <span
+              ></span></p>
+            <p class="TITLE"><img src="../img/INF_022B8.PNG"260" height="128"></p>
+            
+            <table>
+              <tr> 
+                <td class="titletable"><p class="SUBTITULO">Valor 
+                    iva </p></td>
+                <td  class="PARRAFO" ><p class="PARRAFO">Contiene el monto pagado por el cliente por   concepto de dicho impuesto, si aplica.</p>
+                </td>
+              </tr>
+              <tr> 
+                <td class="titletable"><p class="SUBTITULO">Valor 
+                    reteiva </p></td>
+                <td  class="PARRAFO" ><p class="PARRAFO">Campo que despliega el monto retenido por la   entidad por este concepto para la transacci&oacute;n en fraude, lo que   no aplica para los establecimientos que son   autorretenedores.</p></td>
+              </tr>
+              <tr> 
+                <td class="titletable"><p class="SUBTITULO">Valor 
+                    retefuente </p></td>
+                <td  class="PARRAFO" ><p class="PARRAFO">Indica el monto descontado o valor en que es   disminuida la consignaci&oacute;n por concepto de la retenci&oacute;n en la fuente liquidada   sobre la base de retenci&oacute;n calculada para los consumos, lo que no aplica para   los establecimientos que son autorretenedores.</p>
+                </td>
+              </tr>
+              <tr> 
+                <td class="titletable"><p class="SUBTITULO">Valor 
+                    reteica </p></td>
+                <td  class="PARRAFO" ><p>Indica el monto descontado o valor en que es   disminuida la consignaci&oacute;n por concepto de la retenci&oacute;n por concepto del   impuesto de industria y comercio liquidado sobre la base de retenci&oacute;n calculada   sobre los consumos, lo que   no aplica para los establecimientos que son   autorretenedores.</p>      </td>
+              </tr>
+              <tr> 
+                <td class="titletable"><p class="SUBTITULO">Valor 
+                    base reintegro iva</p></td>
+                <td  class="PARRAFO" ><p class="PARRAFO">Este campo despliega el valor que sirve como   base para el calculo del reintegro de los 2 puntos de IVA sobre compras y que   corresponde al valor de los bienes y/o servicios gravados con una tarifa del   16%; a partir del 2005 tambi&eacute;n quedar&aacute;n incluidos aquellos que est&eacute;n gravados   con un IVA del 10%.</p></td>
+              </tr>
+            </table>
+            
+            <p><span class="SUBTITULO">Detalle:</span>  Si el usuario invoca 
+              la opci&oacute;n Detalle se despliega el siguiente formulario:<span
+              ></span></p>
+            <p class="TITLE"><img src="../img/INF_022B9.PNG"639" height="777"></p>
+            
+            <p>Adicionalmente, el formulario cuenta con botones en la parte inferior izquierda, 
+              a trav&eacute;s de los cuales se pueden tomar acciones de acuerdo a la soluci&oacute;n 
+              dada a la transacci&oacute;n en fraude.</p>
+            <table width=715   >
+              <tr> 
+                <td><p  class="SUBTITULO"><img src="../img/INF_022B%20-%20Aplicar%20mvto.PNG"41" ></p></td>
+                <td><p class="PARRAFO">Aplicar 
+                    movimiento, consiste en cargarle al cliente el comprobante para 
+                    generar el pago al establecimiento.</p></td>
+              </tr>
+              <tr> 
+                <td><p  class="SUBTITULO"><img src="../img/INF_022B%20-%20Enviar%20a%20castigo.PNG"41" ></p></td>
+                <td><p class="PARRAFO">Enviar 
+                    a <a href="CAH_008B.html" >castigo</a>, una de las formas de finiquitar 
+                    el proceso de comprobantes fraudulentos, consistente en desistir de 
+                    su reclamaci&oacute;n y afectar las utilidades de la entidad.</p></td>
+              </tr>
+              <tr> 
+                <td class="titletable"><p  class="SUBTITULO"><img src="../img/INF_022B%20-%20Enviar%20a%20contracargos.PNG"41" ></p></td>
+                <td><p class="PARRAFO">Enviar 
+                    a <a href="INH_027B.html" >Contracargos</a>, si es dable iniciar 
+                    el proceso de intercambio.</p></td>
+              </tr>
+            </table>
+            <table width=715   >
+              <tr> 
+                <td><p  class="SUBTITULO"><img src="../img/INF_022B%20-%20Enviar%20a%20seguro.PNG"41" ></p></td>
+                <td  class="PARRAFO" >Enviado 
+                  a seguro, una de las etapas dentro de la gesti&oacute;n destinada 
+                  a obtener el reconocimiento o pago por parte de la compa&ntilde;&iacute;a 
+                  de seguros.</td>
+              </tr>
+              <tr> 
+                <td><p  class="SUBTITULO"><img src="../img/INF_022B%20-%20Negado%20x%20seguro.PNG"42" ></p></td>
+                <td  class="PARRAFO" >Negado 
+                  por el seguro, ocurre cuando el comprobante no cumple bien sea con 
+                  los requisitos como con las condiciones para ser pagado. Es posible ajustar 
+                  la informaci&oacute;n y presentarla nuevamente.</td>
+              </tr>
+              <tr> 
+                <td><p  class="SUBTITULO"><img src="../img/INF_022B%20-%20Pagado%20x%20seguro.PNG"41" ></p></td>
+                <td  class="PARRAFO" >Pagado 
+                  por el seguro, ocurre cuando la compa&ntilde;&iacute;a de seguros 
+                  determina que el comprobante cumple con los requisitos y condiciones para 
+                  ser cubierto por la p&oacute;liza.</td>
+              </tr>
+            </table>
+        </section>
+    <script src="../js/menu.js"></script>
+</body>
+<footer>
+    <div>
+        <img class="TITLE"  src= "../img/logo.PNG">
+    </div>
+    <p>OpenCard SAS</p>
+    <p>Calle 77 Nº 11-19 Piso 4°,Bogotá D.C.</p>
+    <p>Tel (57) 601 - 313 37 75  <a href="http://www.OpenCard.com"
+            target="_blank">www.OpenCard.com</a></p>
+
+
+
+</footer>
+</html>

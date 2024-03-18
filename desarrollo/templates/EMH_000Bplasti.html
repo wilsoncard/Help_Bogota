@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BANKBU®</title>
+    <link rel="stylesheet" href="../css/pages.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="icon" href="../img/ACQUIRER-logo.JPG" type="image/x-icon">
+
+    <style>
+         .TITLE {
+            text-align: left;
+            align-items: left;
+        }
+
+        section div {
+            width: 670px;
+        }
+        section h1 {
+            cursor: pointer;
+        }
+
+        section ul {
+            display: none;
+        }
+  
+        section ul li a:hover {
+            color: #F26716
+        }
+        section div p{
+            width: 100%;
+            max-width: 100%;
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <img class="logo" src="../img/logoBankbu_.PNG" alt="Logo de Mi Empresa">
+        <div id="menuBtn">
+            <img class="TITLE" src="../img/menu.PNG" alt="Botón de Menú ">
+        </div>
+    </header>
+    <nav>
+        <ul>
+            <li>
+                <a href="../index.html" class="main-optionINICIO">INICIO</a>
+            </li>
+            <li>
+                <a href="NUH_INTB.html" class="main-optionINTRODUCCIÓN">INTRODUCCIÓN</a>
+            </li>
+            <li><a href="#" class="main-option">NUCLEO ▼</a>
+                <ul>
+                    <li><a href="NUH_000B.html">Config. Sistema</a></li>
+                    <li><a href="NUH_00B_N2.html">Parametros</a></li>
+                    <li><a href="NUH_00B_inicio.html">Inicio</a></li>
+                    <li><a href="NUH_00B_proceso.html">Procesos</a></li>
+                    <li><a href="NUH_00B_inf.html">Inf. Cliente</a></li>
+                    <li><a href="NUH_00B_conta.html">Contabilidad</a></li>
+                    <li style="visibility: hidden; display: none;"><a href="NUH_00B_audi.html">Auditoria</a></li>
+
+                </ul>
+            </li>
+            <li>
+                <a href="#" class="main-option">EMISOR ▼</a>
+                <ul>
+                    <li><a href="EMH_000B.html">Productos</a></li>
+                    <li><a href="EMH_000Bsoli.html">Solicitudes</a></li>
+                    <li><a href="EMH_000Bmerca.html">Mercadeo</a></li>
+                    <li><a href="EMH_000Bservi.html">Servicio Al Cliente</a></li>
+                    <li><a href="EMH_000Bpendi.html">Pendientes</a></li>
+                    <li><a href="EMH_000Btrans.html">Transaccionabilidad</a></li>
+                    <li><a href="EMH_000Bauto.html">Autorizaciones</a></li>
+                    <li><a href="EMH_000Bplasti.html">Adm. Plasticos</a></li>
+                    <li><a href="EMH_000Brecla.html">Reclamos</a></li>
+                    <li><a href="MEH_032B.html">Lealtad</a></li>
+                    <li><a href="COH_064B.html">Cobranzas</a></li>
+                </ul>
+            </li>
+            <li style="visibility: hidden">
+                <a href="ACH_000B.html" class="main-option">ADQUIRIENTE</a>
+            </li>
+            <li style="visibility: hidden">
+                <a href="DBH_000B.html" class="main-option">TARJETA DEBITO</a>
+            </li>
+        </ul>
+    </nav>
+    <section>
+        <div>
+             <p class="TITLE" style="font-size: 26px;">Administración de plásticos:</p>
+             <p class="PARRAFO" style="font-size: 26px;">Seleccione la opcion que desea consultar</p>
+            <p style="font-weight:bold;font-size: 24px; text-align: left;cursor: pointer; color:#341C8C;" onclick="toggleList('Realce')" onmouseover="this.style.color='#F26716'" onmouseout="this.style.color='#341C8C'">Realce</p>
+            <ul id="Realce">
+                <li><a href="PLH_008B.html">Plásticos a realzar</a></li>
+                <li><a href="PLH_005B.html">En realce y dañados</a></li>
+                <li><a href="PLH_009B.html">Plásticos realzados</a></li>
+                <li style="visibility: hidden; display: none;"><a href="PLH_011B.html">Plásticos en acuse de recibo</a></li>
+            </ul>
+            <p style="font-weight:bold;font-size: 24px; text-align: left;cursor: pointer; color:#341C8C;" onclick="toggleList('Sobreflex')" onmouseover="this.style.color='#F26716'" onmouseout="this.style.color='#341C8C'">Sobreflex</p>
+            <ul id="Sobreflex">
+                <li><a href="PLH_014B.html">Sobreflex de clave</a></li>
+                <li><a href="PLH_016B.html">Consulta de clave</a></li>
+                <li><a href="PLH_021B.html">Sobreflex de empaque</a></li>
+                <li><a href="PLH_022B.html">Consulta de empaque</a></li>
+                <li><a href="PLH_013B.html">Mensajería</a></li>
+                <li><a href="PLH_017B.html">Consulta de mensajería</a></li>
+            </ul>
+            <p style="font-weight:bold;font-size: 24px; text-align: left;cursor: pointer; color:#341C8C;" onclick="toggleList('Inventario')" onmouseover="this.style.color='#F26716'" onmouseout="this.style.color='#341C8C'">Inventario</p>
+            <ul id="Inventario">
+                <li><a href="PLH_001B.html">Inventario</a></li>
+                <li><a href="PLH_020B.html">Control de inventario</a></li>
+                <li><a href="PLH_031B.html">Carga de archivo de inventario</a></li>
+                <li><a href="PLH_015B.html">Consulta inventario</a></li>
+                <li><a href="PLH_032B.html">Consulta de plásticos remisionados y recibidos</a></li>
+            </ul>
+            <p  style="font-weight:bold;font-size: 24px; text-align: left;cursor: pointer; color:#341C8C;" onclick="toggleList('Entregas')" onmouseover="this.style.color='#F26716'" onmouseout="this.style.color='#341C8C'">Entregas</p>
+            <ul id="Entregas">
+                <li><a href="PLH_011B.html">Plásticos entregados</a></li>
+                <li style="visibility: hidden; display: none;"><a href="PLH_030B.html">Archivo entregas / rechazos</a></li>
+                <li><a href="PLH_018B.html">Consulta entregados</a></li>
+                <li><a href="PLH_019B.html">Consulta rechazados</a></li>
+            </ul>
+        </div>
+
+
+
+        <img class="ImagenBankbu" src="../img/bankbu-removebg-preview.PNG" alt="Imagen de la empresa">
+
+
+
+    </section>
+    <script src="../js/menu.js"></script>
+    <script src="../js/opciones.js"></script>
+</body>
+<footer>
+    <div>
+        <img class="TITLE" src="../img/logo.PNG">
+    </div>
+    <p>OpenCard SAS</p>
+    <p>Calle 77 Nº 11-19 Piso 4°,Bogotá D.C.</p>
+    <p>Tel (57) 601 - 313 37 75 <a href="http://www.OpenCard.com" target="_blank">www.OpenCard.com</a></p>
+
+
+
+</footer>
+
+</html>

@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BANKBU®</title>
+    <link rel="stylesheet" href="../css/pages.css">
+    <link rel="stylesheet" href="../css/style.css">
+ <link rel="icon" href="../img/ACQUIRER-logo.JPG" type="image/x-icon">
+</head>
+
+<body>
+    <header>
+        <img class="logo" src="../img/logoBankbu_.PNG" alt="Logo de Mi Empresa">
+        <div id="menuBtn">
+            <img class="TITLE"  src= "../img/menu.PNG" alt="Botón de Menú ">
+        </div>
+    </header>
+    <nav>
+        <ul>
+            <li>
+                    <a href="../index.html" class="main-optionINICIO">INICIO</a>
+            </li>
+            <li>
+                <a href="NUH_INTB.html" class="main-optionINTRODUCCIÓN">INTRODUCCIÓN</a>
+            </li>
+            <li><a href="#" class="main-option">NUCLEO ▼</a>
+                <ul>
+                    <li><a href="NUH_000B.html">Config. Sistema</a></li>
+                    <li><a href="NUH_00B_N2.html">Parametros</a></li>
+                    <li><a href="NUH_00B_inicio.html">Inicio</a></li>
+                    <li><a href="NUH_00B_proceso.html">Procesos</a></li>
+                    <li><a href="NUH_00B_inf.html">Inf. Cliente</a></li>
+                    <li><a href="NUH_00B_conta.html">Contabilidad</a></li>
+                    <li style="visibility: hidden; display: none;"><a href="NUH_00B_audi.html">Auditoria</a></li>
+
+                </ul>
+            </li>
+            <li>
+             <a href="#" class="main-option">EMISOR  ▼</a>
+                <ul>
+                    <li><a href="EMH_000B.html">Productos</a></li>
+                    <li><a href="EMH_000Bsoli.html">Solicitudes</a></li>
+                    <li><a href="EMH_000Bmerca.html">Mercadeo</a></li>
+                    <li><a href="EMH_000Bservi.html">Servicio Al Cliente</a></li>
+                    <li><a href="EMH_000Bpendi.html">Pendientes</a></li>
+                    <li><a href="EMH_000Btrans.html">Transaccionabilidad</a></li>
+                    <li><a href="EMH_000Bauto.html">Autorizaciones</a></li>
+                    <li><a href="EMH_000Bplasti.html">Adm. Plasticos</a></li>
+                    <li><a href="EMH_000Brecla.html">Reclamos</a></li>
+                    <li><a href="MEH_032B.html">Lealtad</a></li>
+                    <li><a href="COH_064B.html">Cobranzas</a></li>
+                </ul>
+            </li>
+ <li style="visibility: hidden">
+                <a href="ACH_000B.html" class="main-option">ADQUIRIENTE</a>
+            </li>
+            <li style="visibility: hidden">
+                <a href="DBH_000B.html" class="main-option">TARJETA DEBITO</a>
+            </li></ul>
+    </nav>
+
+    <section>
+        <div> 
+            <table>
+              <tr> 
+                <td><div> 
+                    <p  class="TITLE">Asociaci&oacute;n a  conexiones, llaves y archivos a grupos </p>
+                  </div></td>
+              </tr>
+            </table>
+            <p class="PARRAFO" >En &eacute;ste formulario confluyen varios de los par&aacute;metros definidos por la entidad en las dem&aacute;s opciones que componen &eacute;ste subm&oacute;dulo. Permite vincular: </span><a href="NUH_121E.html"><span >Par&aacute;metros Grupos Entrada Salida</span></a><span class="PARRAFO">, </span><a href="NUH_122E.html"><span >Par&aacute;metros Llaves de cifrado PGP</span></a><span class="PARRAFO">, </span><a href="NUH_123E.html"><span >Par&aacute;metros conexi&oacute;n al servidor</span></a><span class="PARRAFO"> y Definici&oacute;n grupos de procesos, lo que al final se obtiene es que al ejecutarse uno de los procesos  matriculados en &eacute;sta &uacute;ltima opci&oacute;n, si &eacute;ste requiere un archivo de entrada, debe tomarlo del servidor origen, copiarlo en la carpeta de entradas del aplicativo e iniciar la actividad que le corresponda a dicho proceso, mientras que si se trata de un proceso que deba generar un o m&aacute;s archivos de salida, debe surtir el proceso inverso, &eacute;sto es, copiarlo en la carpeta salidas del aplicativo y, finalmente ubicarlo en el servidor  destino, utilizando el correspondiente protocolo de transmisi&oacute;n  FTP o SSH, en claro o cifrado.  </span></p>
+            <p class="PARRAFO" >El formulario contiene los enlaces Actualizar</span> ,<span class="PARRAFO"> Eliminar y Adicionar. </span></p>
+            <p class="TITLE"><img src="../img/NUF_124E1.PNG"521" height="407"></p>
+           
+            <p class="PARRAFO" >Al activar el enlace Adicionar, el sistema despliega el  paso Conexiones y Llaves del  Wizard de dos momentos:</span></p>
+            <p class="TITLE"><img src="../img/NUF_124E2.PNG"716" height="396"></p>
+            <p  class="TITLE">Descripci&oacute;n de campos</p>
+            <table>
+              <tr>
+                <td class="titletable" ><p class="SUBTITULO"><b>Tipo de Grupo
+                </b></p></td>
+                <td><p  class="PARRAFO">Campo obligatorio que posee lista de valores tipo combo,  con los valores Entrada o Salida de la que la entidad debe seleccionar, para el grupo a asociar, a cual de ellas corresponde.</p></td>
+              </tr>
+              <tr>
+               <td class="titletable" ><p class="SUBTITULO"><b>Grupo
+                </b></p></td>
+                <td><p  class="PARRAFO">Campo obligatorio que posee lista de valores tipo combo,  la cual se actualiza de forma din&aacute;mica dependiendo de lo seleccionado en el campo Tipo de Grupo con los valores poblados en el formulario <a href="NUH_121E.html" >Par&aacute;metros Grupos Entrada y Salida</a>. </p></td>
+              </tr>
+              <tr>
+              <td class="titletable" ><p class="SUBTITULO"><b>Llave p&uacute;blica validar firma
+                </b></p></td>
+                <td><p  class="PARRAFO">Campo obligatorio que posee lista de valores tipo combo,  con los valores poblados en el formulario <a href="NUH_122E.html" >Par&aacute;metros Llaves de cifrado PGP </a>debe haber coherencia entre el tipo de grupo y la llave p&uacute;blica a utilizar, esto es, si se trata de un grupo de salida que requiera encripci&oacute;n se debe asociar la llave p&uacute;blica para tal fin. </p></td>
+              </tr>
+              <tr>
+                <td class="titletable" ><p class="SUBTITULO"><b>Ruta archivos de entrada
+                </b></p></td>
+                <td   class="PARRAFO" ><p  class="PARRAFO">Campo alfanum&eacute;rico de 250 posiciones, cuya obligatoriedad, depende de  que el valor del campo Tipo de Grupo corresponda a Entrada, de aplicar, debe contener la ruta completa, del Servidor origen, en la que se deben ubicar los archivos de entrada.</span></p></td>
+              </tr>
+              <tr>
+                <td class="titletable" ><p class="SUBTITULO"><b>Ruta archivos de salida
+                </b></p></td>
+               <td   class="PARRAFO" ><p  class="PARRAFO">Campo alfanum&eacute;rico de 250 posiciones, cuya obligatoriedad, depende de  que el valor del campo Tipo de Grupo corresponda a Salida, de aplicar, debe contener la ruta completa, del Servidor de destino, en la que se deben ubicar los archivos de salida.</p></td>
+              </tr>
+              <tr>
+                 <td class="titletable" ><p class="SUBTITULO"><b>Ruta archivos procesados
+                </b></p></td>
+               <td   class="PARRAFO" ><p  class="PARRAFO">Campo alfanum&eacute;rico de 250 posiciones, no  obligatorio, para uso futuro, solo se despliega cuando el tipo de grupo corresponde a Entrada, en el que quedan almacenados los archivos iniciales tomados del Servidor de origen. </p></td>
+              </tr>
+              <tr>
+                 <td class="titletable" ><p class="SUBTITULO"><b>Conexi&oacute;n
+                </b></p></td>
+              <td   class="PARRAFO" ><p  class="PARRAFO">Campo obligatorio que posee lista de valores tipo combo,  con los valores poblados en el formulario <a href="NUH_123E.html" >Par&aacute;metros conexi&oacute;n al servidor</a>, a trav&eacute;s del cual se determina el protocolo de transmisi&oacute;n a ser utilizado. </p></td>
+              </tr>
+              <tr>
+              <td class="titletable" ><p class="SUBTITULO"><b>Cifrar / Descifrar
+                </b></p></td>
+                <td   class="PARRAFO" ><p  class="PARRAFO">Campo obligatorio que posee lista de valores tipo combo con los valores Si y No, se activa Cifrar cuando se trata de archivos de Salida y Descifrar para cuando se habla de archivos de Entrada. </p></td>
+              </tr>
+              <tr>
+                <td class="titletable" ><p class="SUBTITULO"><b>Comando de invocaci&oacute;n
+                </b></p></td>
+                <td   class="PARRAFO" ><p  class="PARRAFO">Campo alfanum&eacute;rico de 20 posiciones, cuya obligatoriedad, depende de  que el valor del campo Cifrar / Descifrar corresponda a Si, en cuyo caso debe contener el comando del sistema operativo de invocaci&oacute;n  gpg (incluye un espacio a la derecha), para cuando se trata de un archivo de salida o el comando gpg --batch --no-tty --yes (incluye un espacio a la derecha), para cuando se trata de un archivo de entrada. </p></td>
+              </tr>
+              <tr>
+              <td class="titletable" ><p class="SUBTITULO"><b>Comando frase o recipiente
+                </b></p></td>
+                <td   class="PARRAFO" ><p  class="PARRAFO">Campo alfanum&eacute;rico de 50 posiciones, cuya obligatoriedad, depende de  que el valor del campo Cifrar / Descifrar corresponda a Si, en cuyo caso debe contener el comando del sistema operativo de la  clave --recipient para cuando se trata de un archivo de salida o el comando --passphrase, para cuando se trata de un archivo de entrada. </p></td>
+              </tr>
+              <tr>
+              <td class="titletable" ><p class="SUBTITULO"><b>Comando salida
+                </b></p></td>
+                <td   class="PARRAFO" ><p  class="PARRAFO">Campo alfanum&eacute;rico de 20 posiciones, cuya obligatoriedad, depende de  que el valor del campo Cifrar / Descifrar corresponda a Si, en cuyo caso debe contener el comando del sistema operativo de salida --output, indistintamente que se trate de un archivo de entrada o de salida. </p></td>
+              </tr>
+              <tr>
+                <td class="titletable" ><p class="SUBTITULO"><b>Comando ejecuci&oacute;n
+                </b></p></td>
+                <td   class="PARRAFO" ><p  class="PARRAFO">Campo alfanum&eacute;rico de 20 posiciones, cuya obligatoriedad, depende de  que el valor del campoCifrar / Descifrar corresponda a Si, en cuyo caso debe contener el comando del sistema operativo de ejecuci&oacute;n --encrypt para cuando se trata de un archivo de salida o el comando --decrypt, para cuando se trata de un archivo de entrada.</9></td>
+              </tr>
+            </table>
+            <p class="PARRAFO">En el segundo momento o paso del Wizard, Asociaci&oacute;n de Archivos, de la Adici&oacute;n, se despliega el siguiente formulario:</p>
+            <p class="TITLE"><img src="../img/NUF_124E3.PNG"443" height="348"></p>
+            <p  class="TITLE">Descripci&oacute;n de campos</p>
+            <table>
+              <tr>
+                <td class="titletable" ><p class="SUBTITULO"><b>Archivos sin asociar </b></p></td>
+                <td><p  class="PARRAFO">
+                  Campo que posee lista de valores tipo combo,  que contiene la relaci&oacute;n de los diferentes procesos u objetos l&oacute;gicos parametrizados en el formulario Definici&oacute;n grupos de procesos, en N&uacute;cleo / Procesos, que se actualiza din&aacute;micamente excluyendo aquellos procesos que fueron asociados a otras combinaciones de conexi&oacute;n / llave / archivos, en &eacute;ste mismo formulario y, de la cual se deben seleccionar todos aquellos procesos para los que coincidan  las siguientes dos condiciones: primera, ser de salida o de entrada y, segunda, transferirse en claro o cifrados.La relaci&oacute;n  muestra: Descripci&oacute;n del objeto l&oacute;gico, Secuencia dentro del Grupo y Nombre del Objeto l&oacute;gico. 
+                </p></td>
+              </tr>
+              <tr>
+              <td class="titletable" ><p class="SUBTITULO"><b>Archivos asociados al Grupo
+                </b></p></td>
+                <td><p  class="PARRAFO">Campo que inicialmente aparece en blanco y el cual, mediante los botones especiales ubicados entre ambos campos, permite mover uno o todos los registros de un campo hacia el otro, teniendo presente la pauta seg&uacute;n la cual, todos los procesos aqu&iacute; relacionados deben cumplir las dos condiciones indicadas en el campo Archivos sin asociar, para guardar dicha configuraci&oacute;n basta con activar el bot&oacute;n especial de la bandera ubicado en la parte inferior derecha. </p></td>
+              </tr>
+            </table>
+            
+            <p class="PARRAFO" ><span class="SUBTITULO"> Actualizar:</span>  Si el usuario selecciona un registro e invoca la opci&oacute;nActualizarse despliega el paso Conexiones y Llaves del  Wizard de dos momentos, en los cuales todos los  campos son modificables.</span></p>
+            <p class="TITLE"><img src="../img/NUF_124E2.PNG"></p>
+            
+             <p class="TITLE"><img src="../img/NUF_124E3.PNG"></p>
+            
+            <div>
+        </section>
+    <script src="../js/menu.js"></script>
+
+    <footer>
+        <div>
+            <img class="TITLE"  src= "../img/logo.PNG">
+        </div>
+        <p>OpenCard SAS</p>
+        <p>Calle 77 Nº 11-19 Piso 4°, Bogotá D.C.</p>
+        <p>Tel (57) 601 - 313 37 75  <a href="http://www.OpenCard.com"
+                target="_blank">www.OpenCard.com</a></p>
+
+    </footer>
+</body>
+
+</html>

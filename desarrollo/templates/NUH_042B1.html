@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>BANKBU®</title>
+  <link rel="stylesheet" href="../css/pages.css">
+  <link rel="stylesheet" href="../css/style.css">
+  <link rel="icon" href="../img/ACQUIRER-logo.JPG" type="image/x-icon">
+</head>
+
+<body>
+  <header>
+    <img class="logo" src="../img/logoBankbu_.PNG" alt="Logo de Mi Empresa">
+    <div id="menuBtn">
+      <img class="TITLE" src="../img/menu.PNG" alt="Botón de Menú ">
+    </div>
+  </header>
+  <nav>
+    <ul>
+      <li>
+        <a href="../index.html" class="main-optionINICIO">INICIO</a>
+      </li>
+      <li>
+        <a href="NUH_INTB.html" class="main-optionINTRODUCCIÓN">INTRODUCCIÓN</a>
+      </li>
+      <li><a href="#" class="main-option">NUCLEO ▼</a>
+        <ul>
+          <li><a href="NUH_000B.html">Config. Sistema</a></li>
+          <li><a href="NUH_00B_N2.html">Parametros</a></li>
+          <li><a href="NUH_00B_inicio.html">Inicio</a></li>
+          <li><a href="NUH_00B_proceso.html">Procesos</a></li>
+          <li><a href="NUH_00B_inf.html">Inf. Cliente</a></li>
+          <li><a href="NUH_00B_conta.html">Contabilidad</a></li>
+          <li style="visibility: hidden; display: none;"><a href="NUH_00B_audi.html">Auditoria</a></li>
+
+        </ul>
+      </li>
+      <li>
+        <a href="#" class="main-option">EMISOR ▼</a>
+        <ul>
+          <li><a href="EMH_000B.html">Productos</a></li>
+          <li><a href="EMH_000Bsoli.html">Solicitudes</a></li>
+          <li><a href="EMH_000Bmerca.html">Mercadeo</a></li>
+          <li><a href="EMH_000Bservi.html">Servicio Al Cliente</a></li>
+          <li><a href="EMH_000Bpendi.html">Pendientes</a></li>
+          <li><a href="EMH_000Btrans.html">Transaccionabilidad</a></li>
+          <li><a href="EMH_000Bauto.html">Autorizaciones</a></li>
+          <li><a href="EMH_000Bplasti.html">Adm. Plasticos</a></li>
+          <li><a href="EMH_000Brecla.html">Reclamos</a></li>
+          <li><a href="MEH_032B.html">Lealtad</a></li>
+          <li><a href="COH_064B.html">Cobranzas</a></li>
+        </ul>
+      </li>
+      <li style="visibility: hidden">
+        <a href="ACH_000B.html" class="main-option">ADQUIRIENTE</a>
+      </li>
+      <li style="visibility: hidden">
+        <a href="DBH_000B.html" class="main-option">TARJETA DEBITO</a>
+      </li>
+    </ul>
+  </nav>
+
+  <section>
+    <div>
+      <p class="TITLE">Tasas de cambio (entidad)</p>
+
+      <p>Mediante esta funcionalidad se habilita la consulta y mantenimiento de la data, del tipo de cambio (monto
+        equivalente en moneda oficial respecto de otra moneda) vigente para la fecha a éste asociada, y si lo requiere
+        puede también registrar otros valores relacionados con la tasa de cambio, algunos calculados por la propia
+        entidad y otros determinados por las autoridades monetarias. Desde esta opción se define para la entidad y
+        muestra consecuentemente el <a href="NUH_023B.html">calendario</a>, perteneciente a la corporación o entidad,
+        sobre el que es posible navegar hacia atrás mostrando las monedas definidas hasta esa fecha. La forma sólo
+        permite ingresar los valores de los tipos de cambio para la fecha actual (hoy), es decir, que impide ingresar
+        valores para días anteriores o posteriores a la fecha del sistema. Esta opción dispone de un botón especial que
+        permite copiar los valores de las tasas de cambio del día anterior, si existen, para modificar luego, únicamente
+        aquellos que hayan variado, facilitando de ésta manera su actualización; debe tenerse en cuenta que para el
+        correcto funcionamiento del sistema, es necesario realizar diariamente, a primera hora, la actualización de los
+        indicadores básicos.</p>
+      <p class="TITLE"><img src="../img/WWW_001.PNG"></p>
+
+      <p class="PARRAFO">El formulario contiene las opciones Actualizar,
+        Eliminar, Adicionar y Detalle. Adicionalmente, cuenta con un filtro de b&uacute;squeda
+        y el bot&oacute;n <a href="#Boton" title="Botón" target="_self">Copiar indicadores
+          del d&iacute;a anterior</a>.</span></p>
+      <p class="PARRAFO"><span class="SUBTITULO"> Filtro: </span><span> Se pueden
+          realizar consultas a trav&eacute;s de las siguientes opciones: </span> 
+      </p>
+      <p class="TITLE"><img src="../img/NUF_042B.2.PNG"></p>
+
+      <table>
+        <tr>
+          <td class="titletable">
+            <p class="SUBTITULO"><b><span>Fecha</span></span></b>
+              ingreso </p>
+          </td>
+          <td>
+            <p>Campo obligatorio que, mediante la funcionalidad de un calendario, permite definir la fecha a partir de la cual la entidad determinar el valor de asociado a dicha tasa. Por integridad de los cálculos solo permite definirle la misma fecha del día actual de proceso.</p>
+          </td>
+        </tr>
+      </table>
+
+      <p><span class="SUBTITULO"><b><span>Adicionar</span></b><span>:</span></span><span>Si el
+          usuario invoca la opci&oacute;n Adicionar se despliega un formulario con los
+          siguientes bloques:</span></p>
+      <p class="TITLE"><img src="../img/NUF_042B2.PNG"></p>
+      <table>
+        <tr>
+          <td class="titletable">
+            <p class="SUBTITULO"><b><span>Moneda</span></span></b></p>
+          </td>
+          <td>
+            <p class="PARRAFO">Campo en el que se puede digitar el código de la moneda o seleccionar de la lista
+              provista, aquella para la que se requiere realizar la consulta.</p>
+          </td>
+        </tr>
+        <tr>
+          <td class="titletable">
+            <p class="SUBTITULO"><b><span>Fecha</span></span></b> ingreso </p>
+          </td>
+          <td>
+            <p class="PARRAFO">Campo en el que mediante la funcionalidad de un calendario se selecciona la fecha para la
+              que se requiere realizar la consulta. Por defecto muestra la fecha actual del sistema.</p>
+          </td>
+        </tr>
+        <tr>
+          <td class="titletable">
+            <p class="SUBTITULO"><b><span>Valor </span></span></b>Trm</p>
+          </td>
+          <td>
+            <p class="PARRAFO">Vr. Tasa representativa del mercado. Campo num&eacute;rico obligatorio, que en un
+              m&aacute;ximo de siete enteros y dos decimales permite registrar el monto o valor en moneda oficial
+              equivalente a una unidad de la moneda con la que se est&aacute; relacionando.</p>
+          </td>
+        </tr>
+        <tr>
+          <td class="titletable">
+            <p class="SUBTITULO"><b><span>Valor </span></span></b>Tmr</p>
+          </td>
+          <td>
+            <p class="PARRAFO">Vr. Tasa m&aacute;s representativa del mercado. Campo num&eacute;rico no obligatorio, que
+              en un m&aacute;ximo de siete enteros y dos decimales permite registrar el monto o valor en moneda oficial
+              equivalente a una unidad de la moneda con la que se est&aacute; relacionando, el cual es calculado por la
+              entidad para uso espec&iacute;fico.</p>
+          </td>
+        </tr>
+        <tr>
+          <td class="titletable">
+            <p class="SUBTITULO"><b><span>Valor </span></span></b>Tmra</p>
+          </td>
+          <td>
+            <p class="PARRAFO">Vr. Tasa m&aacute;s representativa del mercado mes anterior. Campo num&eacute;rico no
+              obligatorio, que en un m&aacute;ximo de siete enteros y dos decimales permite registrar el monto o valor
+              en moneda oficial del mes anterior, equivalente a una unidad de la moneda con la que se est&aacute;
+              relacionando, el cual es calculado por la entidad para uso espec&iacute;fico.</p>
+          </td>
+        </tr>
+        <tr>
+          <td class="titletable">
+            <p class="SUBTITULO"><b><span>Valor </span></span></b>Tppc</p>
+          </td>
+          <td>
+            <p class="PARRAFO">Vr. Tasa promedio ponderada compra. Campo num&eacute;rico no obligatorio, que en un
+              m&aacute;ximo de siete enteros y dos decimales permite registrar el monto o valor en moneda oficial
+              equivalente a una unidad de la moneda con la que se est&aacute; relacionando, el cual es calculado por la
+              entidad para uso espec&iacute;fico.</p>
+          </td>
+        </tr>
+        <tr>
+          <td class="titletable">
+            <p class="SUBTITULO"><b><span>Valor </span></span></b>Tppv</p>
+          </td>
+          <td>
+            <p class="PARRAFO">Vr. Tasa promedio ponderada venta. Campo num&eacute;rico no obligatorio, que en un
+              m&aacute;ximo de siete enteros y dos decimales permite registrar el monto o valor en moneda oficial
+              equivalente a una unidad de la moneda con la que se est&aacute; relacionando, el cual es calculado por la
+              entidad para uso espec&iacute;fico.</p>
+          </td>
+        </tr>
+      </table>
+      <p><span class="SUBTITULO"><b>Actualizar</b>: </span>  Si el usuario invoca la opci&oacute;n Actualizar se despliega
+        un nuevo formulario
+        en el cual los &uacute;nicos campos modificables son: Valor Trm, Valor Tmr, Valor Tmra, Valor Tppc, y Valor
+        Tppv. </p>
+      <p class="TITLE"><img src="../img/NUF_042B3.PNG" alt="Editar" 340" height="259"></p>
+
+      <p class="PARRAFO"><span class="SUBTITULO"><a name="Boton"></a>Copiar tasas día anterior:</span>  Botón que permite
+        replicar los valores para las diferentes tasas de cambio definidos el día anterior, si existen, y solamente
+        modificar aquellos cuyos valores hayan variado. </p>
+      <p class="TITLE"><img src="../img/NUF_042B4.PNG"></p>
+
+  </section>
+  <script src="../js/menu.js"></script>
+
+  <footer>
+    <div>
+      <img class="TITLE" src="../img/logo.PNG">
+    </div>
+    <p>OpenCard SAS</p>
+    <p>Calle 77 Nº 11-19 Piso 4°, Bogotá D.C.</p>
+    <p>Tel (57) 601 - 313 37 75 <a href="http://www.OpenCard.com" target="_blank">www.OpenCard.com</a></p>
+
+  </footer>
+</body>
+
+</html>

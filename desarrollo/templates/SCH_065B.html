@@ -1,0 +1,585 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>BANKBU®</title>
+  <link rel="stylesheet" href="../css/pages.css">
+  <link rel="stylesheet" href="../css/style.css">
+  <link rel="icon" href="../img/ACQUIRER-logo.JPG" type="image/x-icon">
+</head>
+
+<body>
+  <header>
+    <img class="logo" src="../img/logoBankbu_.PNG" alt="Logo de Mi Empresa">
+    <div id="menuBtn">
+      <img class="TITLE" src="../img/menu.PNG" alt="Botón de Menú ">
+    </div>
+  </header>
+  <nav>
+    <ul>
+      <li>
+        <a href="../index.html" class="main-optionINICIO">INICIO</a>
+      </li>
+      <li>
+        <a href="NUH_INTB.html" class="main-optionINTRODUCCIÓN">INTRODUCCIÓN</a>
+      </li>
+      <li><a href="#" class="main-option">NUCLEO ▼</a>
+        <ul>
+          <li><a href="NUH_000B.html">Config. Sistema</a></li>
+          <li><a href="NUH_00B_N2.html">Parametros</a></li>
+          <li><a href="NUH_00B_inicio.html">Inicio</a></li>
+          <li><a href="NUH_00B_proceso.html">Procesos</a></li>
+          <li><a href="NUH_00B_inf.html">Inf. Cliente</a></li>
+          <li><a href="NUH_00B_conta.html">Contabilidad</a></li>
+          <li style="visibility: hidden; display: none;"><a href="NUH_00B_audi.html">Auditoria</a></li>
+
+        </ul>
+      </li>
+      <li>
+        <a href="#" class="main-option">EMISOR ▼</a>
+        <ul>
+          <li><a href="EMH_000B.html">Productos</a></li>
+          <li><a href="EMH_000Bsoli.html">Solicitudes</a></li>
+          <li><a href="EMH_000Bmerca.html">Mercadeo</a></li>
+          <li><a href="EMH_000Bservi.html">Servicio Al Cliente</a></li>
+          <li><a href="EMH_000Bpendi.html">Pendientes</a></li>
+          <li><a href="EMH_000Btrans.html">Transaccionabilidad</a></li>
+          <li><a href="EMH_000Bauto.html">Autorizaciones</a></li>
+          <li><a href="EMH_000Bplasti.html">Adm. Plasticos</a></li>
+          <li><a href="EMH_000Brecla.html">Reclamos</a></li>
+          <li><a href="MEH_032B.html">Lealtad</a></li>
+          <li><a href="COH_064B.html">Cobranzas</a></li>
+        </ul>
+      </li>
+      <li style="visibility: hidden">
+        <a href="ACH_000B.html" class="main-option">ADQUIRIENTE</a>
+      </li>
+      <li style="visibility: hidden">
+        <a href="DBH_000B.html" class="main-option">TARJETA DEBITO</a>
+      </li>
+    </ul>
+  </nav>
+
+  <section>
+    <div>
+      <table>
+        <tr>
+          <td>
+            <div>
+              <p class="TITLE">Puntajes</p>
+            </div>
+          </td>
+        </tr>
+      </table>
+      <p class="PARRAFO">En este formulario que se invoca desde el men&uacute; de Lealtad o desde el
+        <a href="SCH_060B.html">detalle consulta de la tarjeta</a>
+        en el hiperv&iacute;nculo informaci&oacute;n b&aacute;sica, se puede
+        consultar toda la informaci&oacute;n de la tarjeta o el cr&eacute;dito rotativo,
+        relacionada con la acumulaci&oacute;n de puntos a trav&eacute;s de los diferentes
+        programas asociados al producto.
+      </p>
+      <p class="PARRAFO">Toda la informaci&oacute;n desplegada es
+        s&oacute;lo de consulta por lo cual ninguno de los formularios de puntajes contiene
+        las opciones Adicionar, Actualizar ni Eliminar.</p>
+      <p class="PARRAFO">La opci&oacute;n cuenta con cuatro hiperv&iacute;nculos
+        desde los cuales se invocan los formularios en los cuales el usuario encuentra
+        agrupada la informaci&oacute;n de puntajes correspondiente la tarjeta que
+        se est&aacute; consultando: Puntajes, <a href="SCH_065B.html#BL_REDENCION">Redenciones</a>, <a
+          href="SCH_065B.html#BL_ADMINISTRACION">Administraci&oacute;n
+          sistema</a> e <a href="SCH_065B.html#BL_HISTORICO">Hist&oacute;rico</a>.
+        Por defecto, cuando se ingresa al formulario siempre se despliega en el hiperv&iacute;nculo
+        de Puntajes que se encuentra estructurado en dos bloques de
+        datos: Esquema actual y Totales.</p>
+      <p class="TITLE"><img src="../img/SCF_065B1.PNG"></p>
+
+      <p class="TITLE">Descripción de campos</p>
+      <table>
+        <tr>
+          <td>
+            <p class="SUBTITULO"><b>Nombre esquema</b></p>
+          </td>
+          <td>
+            <p class="PARRAFO">Campo
+              que muestra el nombre del esquema al que se encuentra asociado la tarjeta.</p>
+          </td>
+        </tr>
+        <tr>
+          <td class="titletable">
+            <p class="SUBTITULO"><b>Fecha
+                inicio</b></p>
+          </td>
+          <td>
+            <p class="PARRAFO">Este
+              campo despliega en formato YYYY-MM-DD la fecha desde la cual aplica
+              o tiene vigencia el esquema al que pertenece la tarjeta.</p>
+          </td>
+        </tr>
+        <tr>
+          <td class="titletable">
+            <p class="SUBTITULO"><b>Fecha
+                fin
+              </b></p>
+          </td>
+          <td>
+            <p class="PARRAFO">Campo
+              en formato YYYY-MM-DD que contien la fecha hasta la que tiene vigencia
+              el esquema al que pertence la tarjeta.</p>
+          </td>
+        </tr>
+
+        <tr>
+          <td class="titletable">
+            <p class="SUBTITULO"><b>Acumulados</b></p>
+          </td>
+          <td>
+            <p class="PARRAFO">Este
+              campo se&ntilde;ala la cantidad de puntos acumulados por la tarjeta
+              desde el inicio de la vigencia del esquema y de acuerdo con las condiciones
+              del mismo.
+            </p>
+          </td>
+        </tr>
+
+        <tr>
+          <td class="titletable">
+            <p class="SUBTITULO"><b>Acumulados
+                en el periodo
+              </b></p>
+          </td>
+          <td>
+            <p class="PARRAFO">Campo
+              en el que se muestra la cantidad de puntos ganados o acumulados por
+              la tarjeta durante el periodo actual.</p>
+          </td>
+        </tr>
+
+        <tr>
+          <td class="titletable">
+            <p class="SUBTITULO"><b>Utilizados
+              </b></p>
+          </td>
+          <td>
+            <p class="PARRAFO">Este
+              campo indica la cantidad de los puntos que fue utilizada por el tarjeta
+              habiente para redimir premios.</p>
+          </td>
+        </tr>
+
+        <tr>
+          <td class="titletable">
+            <p class="SUBTITULO"><b>Devoluciones
+              </b></p>
+          </td>
+          <td>
+            <p class="PARRAFO">Campo
+              que contiene la cantidad de puntos que le fueron reintegrados a la tarjeta
+              por procesos de ajustes.</p>
+          </td>
+        </tr>
+
+        <tr>
+          <td class="titletable">
+            <p class="SUBTITULO"><b>Disponible
+              </b></p>
+          </td>
+          <td>
+            <p class="PARRAFO">En
+              este campo se indica el total de puntos que la tarjeta tiene disponible
+              a la fecha para ser utilizados por el titular de la misma.</p>
+          </td>
+        </tr>
+      </table>
+      <div class="PARRAFO">
+        <p class="PARRAFO">
+        <p class="PARRAFO"><a name="BL_REDENCION"></a></p>
+        <p><span class="SUBTITULO"><span><b>Redenciones</b></span><span>:</span></span>
+          si el actor invoca el hiperv&iacute;nculo Redenciones, se despliega
+          un nuevo formulario con el detalle de las utilizaciones de puntos que el
+          tarjeta habiente ha hecho para obtener los premios ofrecidos por la entidad.</p>
+        <p class="TITLE"><img src="../img/SCF_065B2.PNG"></p>
+        <div class="PARRAFO">
+          <p class="TITLE">Descripción de campos</p>
+          <table>
+            <tr>
+              <td class="titletable">
+                <p class="SUBTITULO"><b>Fecha
+                  </b></p>
+              </td>
+              <td>
+                <p class="PARRAFO">Este
+                  campo indica en formato YYYY-MM-DD la fecha en la cual se hizo efectiva
+                  la redenci&oacute;n de puntos por parte del tarjeta habiente.</p>
+              </td>
+            </tr>
+            <tr>
+              <td class="titletable">
+                <p class="SUBTITULO"><b>Premio
+
+
+                  </b></p>
+              </td>
+              <td>
+                <p class="PARRAFO">Campo
+                  que se&ntilde;ala el premio que fue reclamado o redimido por el
+                  tarjeta habiente con los puntos acumulados en la tarjeta.</p>
+              </td>
+            </tr>
+            <tr>
+              <td class="titletable">
+                <p class="SUBTITULO"><b>Cantidad
+                  </b></p>
+              </td>
+              <td>
+                <p class="PARRAFO">Este
+                  campo contiene la cantidad de unidades de la misma mercanc&iacute;a
+                  o premio que el tarjeta habiente reclam&oacute; o redimi&oacute;.</p>
+              </td>
+            </tr>
+            <tr>
+              <td class="titletable">
+                <p class="SUBTITULO"><b>Puntos
+                  </b></p>
+              </td>
+              <td>
+                <p class="PARRAFO">Campo
+                  que contiene la cantidad de puntos utilizados por el tarjeta habiente
+                  para la redenci&oacute;n del premio correspondiente.</p>
+              </td>
+            </tr>
+            <tr>
+              <td class="titletable">
+                <p class="SUBTITULO"><b>Estado
+                  </b></p>
+              </td>
+              <td>
+                <p class="PARRAFO">En
+                  este campo se indica seg&uacute;n corresponda, el estado actual
+                  en que se encuentra la redenci&oacute;n del premio y que puede ser
+                  Redimido entregado o Devuelto no redimido.
+                </p>
+              </td>
+            </tr>
+          </table>
+          <p class="PARRAFO">
+          <p class="PARRAFO"><a name="BL_ADMINISTRACION"></a></p>
+          <p><span class="SUBTITULO"><span><b>Administraci&oacute;n
+                  sistema</b></span><span>:</span></span>
+            si el actor invoca el hiperv&iacute;nculo Administraci&oacute;n sistema,
+            se despliega un nuevo formulario estructurado en dos bloques de datos
+            y que muestra tanto el resumen de los puntos generados como el de los
+            puntos vencidos o por vencer en el caso de no ser utilizados oportunamente
+            por el tarjeta habiente.</p>
+          <p class="TITLE"><img src="../img/SCF_065B3.PNG"></p>
+          <div class="PARRAFO">
+            <p class="TITLE">Descripción de campos</p>
+            <table>
+              <tr>
+                <td class="titletable">
+                  <p class="SUBTITULO"><b>N&uacute;mero
+                      cuenta recompensa
+                    </b></p>
+                </td>
+                <td>
+                  <p class="PARRAFO">Este
+                    campo de uso exclusivo para el producto Platinum e Infinity, contiene
+                    el n&uacute;mero adicional, incluido en la tarjeta, que facilitara
+                    la administraci&oacute;n de los puntos de manera independiente
+                    a los valores monetarios.</p>
+                </td>
+              </tr>
+              <tr>
+                <td class="titletable">
+                  <p class="SUBTITULO"><b>Saldo
+                      de puntos al inicio
+
+
+                    </b></p>
+                </td>
+                <td>
+                  <p class="PARRAFO">Campo
+                    que se&ntilde;ala la cantidad de puntos que la tarjeta ten&iacute;a
+                    al comienzo y que aplica principalmente cuando se hacen migraciones
+                    de otros sistemas.</p>
+                </td>
+              </tr>
+              <tr>
+                <td class="titletable">
+                  <p class="SUBTITULO"><b>Puntos
+                      ganados por compras
+                    </b></p>
+                </td>
+                <td>
+                  <p class="PARRAFO">En
+                    este campo se muestra la cantidad acumulada de puntos que la tarjeta
+                    ha obtenido por las compras efectuadas de acuerdo con las condiciones
+                    del esquema al que pertenece.
+                  </p>
+                </td>
+              </tr>
+              <tr>
+                <td class="titletable">
+                  <p class="SUBTITULO"><b>Bonos
+                      de puntos promocionales
+                    </b></p>
+                </td>
+                <td>
+                  <p class="PARRAFO">Campo
+                    que contiene la cantidad de puntos ganados por la tarjeta a trav&eacute;s
+                    de las promociones definidas para el esquema.</p>
+                </td>
+              </tr>
+              <tr>
+                <td class="titletable">
+                  <p class="SUBTITULO"><b>Bonos
+                      de puntos referidos
+                    </b></p>
+                </td>
+                <td>
+                  <p class="PARRAFO">En
+                    este campo se indica la cantidad de puntos que se han generado
+                    para la tarjeta por los clientes referidos que el titular de la
+                    tarjeta ha presentado a la entidad.</p>
+                </td>
+              </tr>
+              <tr>
+                <td class="titletable">
+                  <p class="SUBTITULO"><b>Puntos
+                      redimidos </b></p>
+                </td>
+                <td>
+                  <p class="PARRAFO">Campo
+                    que despliega la cantidad total de puntos de la tarjeta que el
+                    cliente ha utilizado para redimir puntos y/o millas.</p>
+                </td>
+              </tr>
+              <tr>
+                <td class="titletable">
+                  <p class="SUBTITULO"><b>Ajuste
+                      de puntos</b></p>
+                </td>
+                <td>
+                  <p class="PARRAFO">Indica
+                    la cantidad de puntos que han sido reintegrados a la tarjeta por
+                    efecto de ajustes, devoluciones de premios, puntos abonados equivocadamente
+                    a la tarjeta entre otras posibles causas.</p>
+                </td>
+              </tr>
+              <tr>
+                <td class="titletable">
+                  <p class="SUBTITULO"><b>Saldo
+                      final de puntos
+                    </b></p>
+                </td>
+                <td>
+                  <p class="PARRAFO">En
+                    este campo se muestra la cantidad total de puntos de la tarjeta
+                    que est&aacute;n disponibles para ser utilizados por el titular.</p>
+                </td>
+              </tr>
+              <tr>
+                <td class="titletable">
+                  <p class="SUBTITULO"><b>Puntos
+                      expiraron a&ntilde;o anterior
+                    </b></p>
+                </td>
+                <td>
+                  <p class="PARRAFO">Campo
+                    que contiene la cantidad de puntos que vencieron durante el a&ntilde;o
+                    inmediatamente anterior por no haber sido utilizados o redimidos
+                    oportunamente.</p>
+                </td>
+              </tr>
+              <tr>
+                <td class="titletable">
+                  <p class="SUBTITULO"><b>Puntos
+                      expiran a&ntilde;o en curso
+                    </b></p>
+                </td>
+                <td>
+                  <p class="PARRAFO">En
+                    este campo se muestra la cantidad de puntos pr&oacute;ximos a
+                    vencer en el a&ntilde;o actual en caso que no sean utilizados
+                    por el tarjeta habiente, tomando en cuenta para el c&aacute;lculo
+                    la fecha de vigencia del esquema.</p>
+                </td>
+              </tr>
+              <tr>
+                <td class="titletable">
+                  <p class="SUBTITULO"><b>Puntos
+                      expiran a&ntilde;o pr&oacute;ximo / en dos a&ntilde;os / en tres
+                      a&ntilde;os
+                    </b></p>
+                </td>
+                <td>
+                  <p class="PARRAFO">Campos
+                    que se&ntilde;alan respectivamente, la cantidad de puntos que
+                    pueden vencerse durante el a&ntilde;o siguiente, los dos pr&oacute;ximos
+                    a&ntilde;os o dentro de tres a&ntilde;os en caso que el tarjeta
+                    habiente no haga uso de ellos. Al igual que en el caso anterior,
+                    para el c&aacute;lculo se toma en cuenta la fecha de vigencia
+                    del esquema</p>
+                </td>
+              </tr>
+            </table>
+
+            <a name="BL_HISTORICO"></a> <span
+              class="SUBTITULO"><span><b>Hist&oacute;rico</b></span><span>:</span></span>
+            si el actor invoca el hiperv&iacute;nculo Hist&oacute;rico,
+            se despliega un nuevo formulario con el detalle por a&ntilde;o y mes
+            de los puntos obtenidos, redimidos y expirados de la tarjeta ha tenido.
+            <p class="TITLE"><img src="../img/SCF_065B4.PNG"></p>
+            <div class="PARRAFO">
+
+              <p class="TITLE">Descripción de campos</p>
+              <table>
+                <tr>
+                  <td class="titletable">
+                    <p class="SUBTITULO"><b>A&ntilde;o
+                      </b></p>
+                  </td>
+                  <td>
+                    <p class="PARRAFO">Este
+                      campo indica el a&ntilde;o para el cual se est&aacute; mostrando
+                      el hist&oacute;rico de puntos.</p>
+                  </td>
+                </tr>
+                <tr>
+                  <td class="titletable">
+                    <p class="SUBTITULO"><b>Mes
+
+
+                      </b></p>
+                  </td>
+                  <td>
+                    <p class="PARRAFO">Campo
+                      que contiene el mes al que corresponde la informaci&oacute;n
+                      de hist&oacute;rico de puntos presentada.</p>
+                  </td>
+                </tr>
+
+                <tr>
+                  <td class="titletable">
+                    <p class="SUBTITULO"><b>Puntos
+                        otorgados
+                      </b></p>
+                  </td>
+                  <td>
+                    <p class="PARRAFO">En
+                      este campo se muestra el total de los puntos que se le otorgaron
+                      a la tarjeta en el mes y a&ntilde;o respectivo de acuerdo con
+                      las condiciones del esquema al cual pertenece.</p>
+                  </td>
+                </tr>
+
+                <tr>
+                  <td class="titletable">
+                    <p class="SUBTITULO"><b>Puntos
+                        cancelados por mora
+                      </b></p>
+                  </td>
+                  <td>
+                    <p class="PARRAFO">Campo
+                      que contiene la cantidad de puntos que le fueron cancelados
+                      a la tarjeta durante el mes y a&ntilde;o por haber ingresado
+                      en estado de mora y de acuerdo con las condiciones del esquema.</p>
+                  </td>
+                </tr>
+
+                <tr>
+                  <td class="titletable">
+                    <p class="SUBTITULO"><b>Puntos
+                        cancelados vigencia
+                      </b></p>
+                  </td>
+                  <td>
+                    <p class="PARRAFO">Este
+                      campo muestra la cantidad de puntos que le fueron cancelados
+                      a la tarjeta en el mes y a&ntilde;o respectivos por haberse
+                      vencido o expirado.
+                    </p>
+                  </td>
+                </tr>
+
+                <tr>
+                  <td class="titletable">
+                    <p class="SUBTITULO"><b>Puntos
+                        redimidos </b></p>
+                  </td>
+                  <td>
+                    <p class="PARRAFO">Campo
+                      que despliega la cantidad de puntos que el tarjeta habiente
+                      redimi&oacute; o utiliz&oacute; durante el mes y a&ntilde;o
+                      indicados.</p>
+                  </td>
+                </tr>
+
+                <tr>
+                  <td class="titletable">
+                    <p class="SUBTITULO"><b>Puntos
+                        reversados </b></p>
+                  </td>
+                  <td>
+                    <p class="PARRAFO">Indica
+                      para el mes y a&ntilde;o respectivos la cantidad de puntos que
+                      le fueron reversados a la tarjeta bien por ajustes efectuados
+                      o por reversi&oacute;n de las transacciones con las cuales se
+                      generaron dichos puntos.</p>
+                  </td>
+                </tr>
+                <tr>
+                  <td class="titletable">
+                    <p class="SUBTITULO"><b>Puntos
+                        sanci&oacute;n
+                      </b></p>
+                  </td>
+                  <td>
+                    <p class="PARRAFO">En
+                      este campo se muestra la cantidad de puntos que le fueron anulados
+                      a la tarjeta a manera de sanci&oacute;n en el a&ntilde;o y mes
+                      indicados, de acuerdo con las condiciones del esquema al que
+                      pertenece la misma.</p>
+                  </td>
+                </tr>
+            </div>
+            <tr>
+              <td class="titletable">
+                <p class="SUBTITULO"><b>Total
+                    otorgados
+                  </b></p>
+              </td>
+              <td>
+                <p class="PARRAFO">Campo
+                  que contiene la sumatoria de los puntos otorgados a la tarjeta
+                  de acuerdo con las condiciones del esquema asociado a la misma.</p>
+              </td>
+            </tr>
+            <tr>
+              <td class="titletable">
+                <p class="SUBTITULO"><b>Total
+                    cancelados por vigencia
+                  </b></p>
+              </td>
+              <td>
+                <p class="PARRAFO">Este
+                  campo despliega la sumatoria de los puntos que han expirado o
+                  se encuentran vencidos por no haber sido utilizados oportunamente.</p>
+              </td>
+            </tr>
+            </table>
+  </section>
+  <script src="../js/menu.js"></script>
+
+  <footer>
+    <div>
+      <img class="TITLE" src="../img/logo.PNG">
+    </div>
+    <p>OpenCard SAS</p>
+    <p>Calle 77 Nº 11-19 Piso 4°, Bogotá D.C.</p>
+    <p>Tel (57) 601 - 313 37 75 <a href="http://www.OpenCard.com" target="_blank">www.OpenCard.com</a></p>
+
+  </footer>
+</body>
+
+</html>

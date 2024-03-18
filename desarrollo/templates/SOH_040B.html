@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>BANKBU®</title>
+  <link rel="stylesheet" href="../css/pages.css">
+  <link rel="stylesheet" href="../css/style.css">
+  <link rel="icon" href="../img/ACQUIRER-logo.JPG" type="image/x-icon">
+</head>
+
+<body>
+  <header>
+    <img class="logo" src="../img/logoBankbu_.PNG" alt="Logo de Mi Empresa">
+    <div id="menuBtn">
+      <img class="TITLE" src="../img/menu.PNG" alt="Botón de Menú ">
+    </div>
+  </header>
+  <nav>
+    <ul>
+      <li>
+        <a href="../index.html" class="main-optionINICIO">INICIO</a>
+      </li>
+      <li>
+        <a href="NUH_INTB.html" class="main-optionINTRODUCCIÓN">INTRODUCCIÓN</a>
+      </li>
+      <li><a href="#" class="main-option">NUCLEO ▼</a>
+        <ul>
+          <li><a href="NUH_000B.html">Config. Sistema</a></li>
+          <li><a href="NUH_00B_N2.html">Parametros</a></li>
+          <li><a href="NUH_00B_inicio.html">Inicio</a></li>
+          <li><a href="NUH_00B_proceso.html">Procesos</a></li>
+          <li><a href="NUH_00B_inf.html">Inf. Cliente</a></li>
+          <li><a href="NUH_00B_conta.html">Contabilidad</a></li>
+          <li style="visibility: hidden; display: none;"><a href="NUH_00B_audi.html">Auditoria</a></li>
+
+        </ul>
+      </li>
+      <li>
+        <a href="#" class="main-option">EMISOR ▼</a>
+        <ul>
+          <li><a href="EMH_000B.html">Productos</a></li>
+          <li><a href="EMH_000Bsoli.html">Solicitudes</a></li>
+          <li><a href="EMH_000Bmerca.html">Mercadeo</a></li>
+          <li><a href="EMH_000Bservi.html">Servicio Al Cliente</a></li>
+          <li><a href="EMH_000Bpendi.html">Pendientes</a></li>
+          <li><a href="EMH_000Btrans.html">Transaccionabilidad</a></li>
+          <li><a href="EMH_000Bauto.html">Autorizaciones</a></li>
+          <li><a href="EMH_000Bplasti.html">Adm. Plasticos</a></li>
+          <li><a href="EMH_000Brecla.html">Reclamos</a></li>
+          <li><a href="MEH_032B.html">Lealtad</a></li>
+          <li><a href="COH_064B.html">Cobranzas</a></li>
+        </ul>
+      </li>
+      <li style="visibility: hidden">
+        <a href="ACH_000B.html" class="main-option">ADQUIRIENTE</a>
+      </li>
+      <li style="visibility: hidden">
+        <a href="DBH_000B.html" class="main-option">TARJETA DEBITO</a>
+      </li>
+    </ul>
+  </nav>
+
+  <section>
+    <div>
+      <table>
+        <tr>
+          <td>
+            <div>
+              <p class="TITLE">Solicitudes por etapa</p>
+            </div>
+          </td>
+        </tr>
+      </table>
+      <p class="PARRAFO">Mediante este wizard se ofrece una doble funcionalidad, esto es, para las Etapas de
+        <span style="color: #F26716;">GRABACION SOLICITUDES y APROBACION</span> (si aplica), se permite la gestión de las mismas hasta avanzarlas,
+        mientras que para el resto de Etapas que apliquen para la entidad, solamente se muestran las solicitudes
+        que se encuentran en cada una de ellas, así como ver el Detalle de cada registros y, mediante enlace en
+        el dato del campo Identificación solicitante, ir a conocer los datos del cliente.
+      </p>
+      <p class="PARRAFO">El wizard se compone de tres pasos: Etapas, Solicitudes y
+        Resumen.</p>
+      <p class="TITLE">Etapas</p>
+      <p class="TITLE"><img src="../img/SOF_040B.PNG"></p>
+
+      <table>
+        <tr>
+          <td class="titletable">
+            <p class="SUBTITULO"><b>Etapa</b></p>
+          </td>
+          <td>
+            <p class="PARRAFO">Campo que posee lista de valores tipo combo que ilustra los distintos pasos por
+              que pueda pasar una solicitud. </p>
+          </td>
+        </tr>
+        <tr>
+          <td class="titletable">
+            <p class="SUBTITULO"><b>Estado</b></p>
+          </td>
+          <td>
+            <p class="PARRAFO">Combo opcional desde el cual se podrá seleccionar en qué tipo de Estado se desea
+              filtrar la búsqueda. Las opciones son Nulo, Aprobada totalmente, Aprobada Parcialmente, Zona gris,
+              Negada parcialmente, y Negada totalmente. </p>
+          </td>
+        </tr>
+        <tr>
+          <td class="titletable">
+            <p class="SUBTITULO"><b><span>Tipo
+                  solicitud </span></b></p>
+          </td>
+          <td>
+            <p class="PARRAFO">Combo
+              opcional que incluye todos los tipos de solicitudes: Nulo, <a href="SOH_019B.html">Variaci&oacute;n cupo
+                cr&eacute;dito</a>,
+              <a href="SOH_014E.html">Renovaci&oacute;n cr&eacute;dito</a>,
+              <a href="SOH_015E.html">Reposici&oacute;n cr&eacute;dito</a>, <a href="SOH_014E.html">Reexpedici&oacute;n
+                cr&eacute;dito</a>, <a href="SOH_014E.html">Reactivaci&oacute;n cr&eacute;dito</a>, <a
+                href="SOH_020B.html">
+                L&iacute;nea cr&eacute;dito adicional</a> <a href="SOH_017B.html">.
+            </p>
+          </td>
+        </tr>
+        <tr>
+          <td class="titletable">
+            <p class="SUBTITULO"><b><span>Tipo
+                  identificaci&oacute;n </span></b></p>
+          </td>
+          <td>
+            <p class="PARRAFO">Combo
+              opcional con los tipos de identificaci&oacute;n parametrizados en el
+              sistema en la opci&oacute;n <a href="NUH_008B.html">Tipos documento
+                identificaci&oacute;n</a> y la opci&oacute;n Nulo. </p>
+          </td>
+        </tr>
+        <tr>
+          <td class="titletable">
+            <p class="SUBTITULO"><b><span>N&uacute;mero
+                  identificaci&oacute;n </span></b></p>
+          </td>
+          <td>
+            <p class="PARRAFO">Este
+              campo opcional acepta cualquier dato alfanum&eacute;rico de m&aacute;ximo
+              deciseis caracteres.</p>
+          </td>
+        </tr>
+      </table>
+      <p class="PARRAFO">Al invocar el botón especial en la parte inferior derecha, el sistema realiza la
+        búsqueda de acuerdo a los campos ingresados en el filtro. De esta forma se desplegará el segundo paso
+        del wizard, que variará dependiendo de qué tipo de etapa fue seleccionada: </p>
+      <p class="PARRAFO">Si corresponde a GRABACION SOLICITUDES y APROBACION (si aplica), se muestra </p>
+      <p class="TITLE"><img src="../img/SOF_040B1.PNG"></p>
+
+
+
+      <table>
+        <tr>
+          <td class="titletable">
+            <p class="SUBTITULO"><b>Fecha ingreso </b></p>
+          </td>
+          <td>
+            <p class="PARRAFO">Muestra la fecha en la cual se grabó la solicitud. </p>
+          </td>
+        </tr>
+        <tr>
+          <td class="titletable">
+            <p class="SUBTITULO"><b>Secuencia </b></p>
+          </td>
+          <td>
+            <p class="PARRAFO">Campo de salida que ilustra el número consecutivo asignado por el sistema
+              y que permite diferenciar e identificar las solicitudes. </p>
+          </td>
+        </tr>
+        <tr>
+          <td class="titletable">
+            <p class="SUBTITULO"><b><span>Tipo solicitud </span></b></p>
+          </td>
+          <td>
+            <p class="PARRAFO">Muestra el tipo de solicitud a tramitar en el formulario. </p>
+          </td>
+        </tr>
+        <tr>
+          <td class="titletable">
+            <p class="SUBTITULO"><b><span>Tipo crédito nuevo </span></b></p>
+          </td>
+          <td>
+            <p class="PARRAFO">Campo de salida que identifica qué tipo de cliente o clientes aplican para
+              la solicitud de Crédito nuevo. Puede ser Titular con adicional, Solo titular, o Solo Adicional.
+            </p>
+          </td>
+        </tr>
+        <tr>
+          <td class="titletable">
+            <p class="SUBTITULO"><b><span>Estado </span></b></p>
+          </td>
+          <td>
+            <p class="PARRAFO">Indica la condición en que se encuentra la solicitud al arribar a esta etapa,
+              las cuales pueden ser: En zona gris, Negada totalmente, Negada parcialmente, Aprobada totalmente o
+              Aprobada parcialmente.</p>
+          </td>
+        </tr>
+        <tr>
+          <td class="titletable">
+            <p class="SUBTITULO"><b><span>Identificación solicitante Estado </span></b></p>
+          </td>
+          <td>
+            <p class="PARRAFO">Contiene tanto el tipo de documento como el número del mismo, que identifica al
+              solicitante. </p>
+          </td>
+        </tr>
+        <tr>
+          <td class="titletable">
+            <p class="SUBTITULO"><b><span>Nombre </span></b></p>
+          </td>
+          <td>
+            <p class="PARRAFO">Despliega el nombre del solicitante. </p>
+          </td>
+        </tr>
+      </table>
+
+
+      <table>
+        <tr>
+          <td>
+            <p class="SUBTITULO"><b><img src="../img/INF_008B10-Aplicar.PNG"></b></p>
+          </td>
+          <td>
+            <p class="PARRAFO">Avanzar todas las solicitudes: Funcionalidad que permite pasar las solicitudes
+              a la siguiente etapa siempre y cuando cumplan con los requisitos necesarios acorde con los parámetros
+              definidos; en caso contrario la solicitud será negada. </p>
+          </td>
+        </tr>
+        <tr>
+          <td class="titletable">
+            <p class="SUBTITULO"><b><img src="../img/INF_008B11-Enviarfraudes.PNG"></b></p>
+          </td>
+          <td>
+            <p class="PARRAFO">Avanzar todas las solicitudes forzadamente: Funcionalidad que permite pasar las
+              solicitudes a la siguiente etapa de manera forzada, es decir, aunque no cumplan los requisitos
+              parametrizados para la etapa actual. </p>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <p class="SUBTITULO"><img src="../img/INF_008B12-Contracargos.PNG"></p>
+          </td>
+          <td>
+            <p class="PARRAFO">Negar todas las solicitudes: Funcionalidad que permite denegar totalmente, de forma
+              manual, todas las solicitudes. </p>
+          </td>
+        </tr>
+        <tr>
+          <td class="titletable">
+            <p class="SUBTITULO"><img src="../img/INF_008B13-Castigo.PNG"></p>
+          </td>
+          <td>
+            <p class="PARRAFO">Avanzar todas las solicitudes masivamente: Funcionalidad que permite avanzar
+              las solicitudes hasta la última etapa que tengan en los Parámetros de solicitudes por producto,
+              validando los requisitos necesarios acorde con los parámetros definidos, y negando a aquellas que
+              no los cumplen</p>
+          </td>
+        </tr>
+      </table>
+      <p class="PARRAFO">En ese momento el usuario, utilizando los botones especiales ubicados en la parte
+        inferior izquierda, realizar cualquiera de las siguientes acciones: Avanzar todas las solicitudes,
+        Avanzar todas las solicitudes forzadamente, Negar todas las solicitudes o Avanzar todas las solicitudes
+        masivamente, lo cual dependerá de si el sistema valida condiciones como filtros, autonomía para variar
+        los cupos de los productos, entre otros. </p>
+
+      <p class="PARRAFO">Así mismo, la funcionalidad permite gestionar uno o más registros, que marque el
+        usuario en la columna Seleccionar y luego activar el botón especial correspondiente a avanzar, pasando
+        esos registros a Resumen: </p>
+
+      <p class="TITLE"><img src="../img/SOF_040B12.PNG"></p>
+      <p class="PARRAFO">En ese punto, mediante los botones especiales ubicados en la parte inferior
+        izquierda, el sistema permite realizar cualquiera de las siguientes acciones: Avanzar solicitud,
+        Avanzar solicitud forzadamente o Negar solicitud, lo cual dependerá de si el sistema valida
+        condiciones como filtros, autonomía para variar los cupos de los productos, entre otros. </p>
+
+      <table>
+        <tr>
+          <td>
+            <p class="SUBTITULO"><b>Remover</b></p>
+          </td>
+          <td>
+            <p class="PARRAFO">Las solicitudes que sean seleccionadas con este campo, serán omitidas en
+              las acciones que se tomen en el formulario. </p>
+          </td>
+        </tr>
+        <tr>
+          <td class="titletable">
+            <p class="SUBTITULO"><b><img src="../img/INF_008B11-Enviarfraudes2.PNG"></b></p>
+          </td>
+          <td>
+            <p class="PARRAFO">Avanzar solicitud: Permite pasar las solicitudes a la siguiente etapa
+              siempre y cuando cumplan con los requisitos necesarios acorde con los parámetros definidos; en
+              caso contrario la solicitud será negada. </p>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <p class="SUBTITULO"><img src="../img/INF_008B12-Contracargos2.PNG"></p>
+          </td>
+          <td>
+            <p class="PARRAFO">Avanzar solicitud forzadamente: Permite pasar las solicitudes a la
+              siguiente etapa de manera forzada, es decir, aunque no cumplan los requisitos parametrizados
+              para la etapa actual.</p>
+          </td>
+        </tr>
+        <tr>
+          <td class="titletable">
+            <p class="SUBTITULO"><img src="../img/INF_008B13-Castigo2.PNG"></p>
+          </td>
+          <td>
+            <p class="PARRAFO">Negar solicitud: Permite denegar totalmente, de forma manual, todas las solicitudes.
+            </p>
+          </td>
+        </tr>
+      </table>
+      <p class="PARRAFO">Para los demás tipos solicitudes diferentes a GRABACION SOLICITUDES y APROBACION
+        (si aplica), la funcionalidad del wizard varía de manera dinámica, solo muestra dos pasos, en el
+        segundo de los cuales solamente despliega los datos ya antes ilustrados: </p>
+
+      <p class="TITLE"><img src="../img/SOF_040B13.PNG"></p>
+  </section>
+  <script src="../js/menu.js"></script>
+
+  <footer>
+    <div>
+      <img class="TITLE" src="../img/logo.PNG">
+    </div>
+    <p>OpenCard SAS</p>
+    <p>Calle 77 Nº 11-19 Piso 4°, Bogotá D.C.</p>
+    <p>Tel (57) 601 - 313 37 75 <a href="http://www.OpenCard.com" target="_blank">www.OpenCard.com</a></p>
+
+  </footer>
+</body>
+
+</html>

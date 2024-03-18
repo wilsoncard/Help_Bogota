@@ -1,0 +1,170 @@
+section {
+    line-height: 1 vw;
+    font-family: 'Arial';
+    text-align: justify ;
+    margin-top: 4vw;
+    margin-left: 6vw; /* Ajuste para hacerlo más adaptable */
+    margin-right: 5vw;
+}
+.divprincipal{
+    width: 100%;
+}
+li {
+    list-style: none;
+  }
+section div table {
+    border-spacing: -1000px; /* Ajusta el valor según desees */
+    width: 100%;
+    max-width: 100%;
+    align-items: left;
+  }
+  table tr{
+    height: 20px;
+  }
+  /* Estilo adicional para las celdas de las tablas, si es necesario */
+  table td, th{
+    font-family: 'Arial';
+    padding: 0.8vw; /* Espaciado interno de las celdas */
+    text-align: justify; /* Alineación del texto en las celdas */
+  }
+section h1 {
+    align-items: center;
+    font-weight: bold;
+    font-family: 'Arial';
+    color: #341C8C;
+    font-size: 24px; /* Tamaño de fuente relativo */
+}
+section h2, h3 {
+    font-size: 20px; 
+    font-weight: bold;
+    font-family: 'Arial';
+    color: #341C8C;
+}
+.ImagenBankbu {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 5vw;
+    margin-right: auto;
+    margin-left:0%; /* Ajusta este valor según sea necesario para separar la imagen del texto */
+    width: 70%;
+    height: auto;
+    max-width: 70%; /* Hace que la imagen sea responsive */
+}
+section img  {
+    display: inline-block;
+    margin-left: 5vw; /* Ajusta este valor según sea necesario para separar la imagen del texto */
+    width: auto;
+    max-width:1000px; /* Hace que la imagen sea responsive */
+    height: 100%;
+    max-height: auto;
+}
+section div li{
+    margin-bottom: 0.5em;
+}
+section div h1 {
+    text-align: center;
+    font-weight: bold;
+    font-family: 'Arial';
+    color: #341C8C;
+    font-size: 24px; /* Tamaño de fuente relativo */
+}
+section div ul{
+    font-family: 'Arial';
+    list-style: none;
+}
+.PARRAFO{
+    font-family: 'Arial';
+    font-size: 20px;
+    text-align: justify;
+}
+section p {
+    font-family: 'Arial';
+    text-align: justify;
+    margin-right:5vw;
+    font-size: 20px; /* Tamaño de fuente relativo */
+}
+section div p img{
+    text-align: center;
+}
+section li a{
+   color: #341C8C; 
+}
+section h3:hover,
+section li a:hover {
+    font-family: 'Arial';
+    list-style: none;
+    text-decoration: none;
+    font-size: 21px;
+    color: #F26716;
+}
+.titletable{
+    width: 200px;
+    max-width: 200px;
+    align-items: left;
+    text-align: left;
+}
+.TITLE {
+    text-align: center;
+    font-weight: bold;
+    font-family: 'Arial';
+    font-size: 24px; /* Tamaño de fuente relativo */
+    color: #341C8C !important;
+}
+.SUBTITULO,
+.SUBTTLO2 {
+    width: 205px;
+    max-width:205px;
+    align-items: left;
+    text-align: left;
+    font-weight: bold;
+    font-family: 'Arial';
+    color: #341C8C !important;
+    font-size: 22px; /* Tamaño de fuente relativo */
+}
+section a {
+    list-style: none;
+    text-decoration: none;
+    color: #F26716;
+    font-size: 20px;
+    font-family: "arial";
+}
+
+/* Estilo para los enlaces cuando se pasan por encima dentro de la sección */
+section a:hover {
+    font-family: 'Arial';
+    list-style: none;
+    color: #341C8C;
+  
+}
+body.menu-opened section {
+    margin-left: 20vw; /* Ajusta según el ancho de tu menú con unidades relativas */
+}
+
+@media (max-width: 950px) {
+    footer{
+        position: fixed;
+    }
+    .seccion div {
+        display: flex; /* Usamos flexbox para alinear los elementos en fila por defecto */
+        flex-direction: column; /* Alineamos los elementos en columna para pantallas más pequeñas */
+        align-items: center; /* Centramos los elementos horizontalmente */
+        text-align: center; /* Centramos el texto */
+    }
+    .ImagenBankbu {
+        position: absolute;
+     visibility: hidden;
+    }
+
+    section img  {
+        display: inline-block;
+        margin-left: 5vw; /* Ajusta este valor según sea necesario para separar la imagen del texto */
+        width: auto;
+        max-width:450px; /* Hace que la imagen sea responsive */
+        height: 80%;
+        max-height: auto;
+    }
+    section p {
+        width: auto;
+    }
+}

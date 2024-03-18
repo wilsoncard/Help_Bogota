@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BANKBU®</title>
+    <link rel="stylesheet" href="../css/pages.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="icon" href="../img/ACQUIRER-logo.JPG" type="image/x-icon">
+
+    <style>
+        section p {
+            width: 625px;
+        }
+
+        section div p {
+            width: 100%;
+        }
+
+        section ul {
+            display: none;
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <img class="logo" src="../img/logoBankbu_.PNG" alt="Logo de Mi Empresa">
+        <div id="menuBtn">
+            <img class="TITLE" src="../img/menu.PNG" alt="Botón de Menú ">
+        </div>
+    </header>
+    <nav>
+        <ul>
+            <li>
+                <a href="../index.html" class="main-optionINICIO">INICIO</a>
+            </li>
+            <li>
+                <a href="NUH_INTB.html" class="main-optionINTRODUCCIÓN">INTRODUCCIÓN</a>
+            </li>
+            <li><a href="#" class="main-option">NUCLEO ▼</a>
+                <ul>
+                    <li><a href="NUH_000B.html">Config. Sistema</a></li>
+                    <li><a href="NUH_00B_N2.html">Parametros</a></li>
+                    <li><a href="NUH_00B_inicio.html">Inicio</a></li>
+                    <li><a href="NUH_00B_proceso.html">Procesos</a></li>
+                    <li><a href="NUH_00B_inf.html">Inf. Cliente</a></li>
+                    <li><a href="NUH_00B_conta.html">Contabilidad</a></li>
+                    <li style="visibility: hidden; display: none;"><a href="NUH_00B_audi.html">Auditoria</a></li>
+
+                </ul>
+            </li>
+            <li>
+                <a href="#" class="main-option">EMISOR ▼</a>
+                <ul>
+                    <li><a href="EMH_000B.html">Productos</a></li>
+                    <li><a href="EMH_000Bsoli.html">Solicitudes</a></li>
+                    <li><a href="EMH_000Bmerca.html">Mercadeo</a></li>
+                    <li><a href="EMH_000Bservi.html">Servicio Al Cliente</a></li>
+                    <li><a href="EMH_000Bpendi.html">Pendientes</a></li>
+                    <li><a href="EMH_000Btrans.html">Transaccionabilidad</a></li>
+                    <li><a href="EMH_000Bauto.html">Autorizaciones</a></li>
+                    <li><a href="EMH_000Bplasti.html">Adm. Plasticos</a></li>
+                    <li><a href="EMH_000Brecla.html">Reclamos</a></li>
+                    <li><a href="MEH_032B.html">Lealtad</a></li>
+                    <li><a href="COH_064B.html">Cobranzas</a></li>
+                </ul>
+            </li>
+            <li style="visibility: hidden">
+                <a href="ACH_000B.html" class="main-option">ADQUIRIENTE</a>
+            </li>
+            <li style="visibility: hidden">
+                <a href="DBH_000B.html" class="main-option">TARJETA DEBITO</a>
+            </li>
+        </ul>
+    </nav>
+    <section>
+        <div>
+            <p class="TITLE">Núcleo
+            </p>
+            <p>En este menú se despliegan todas las opciones que permiten a la entidad efectuar la parametrización
+                requerida
+                por los diferentes servicios que componen la aplicación y que será utilizada posteriormente tanto en la
+                ejecución de
+                procedimientos invocados desde los botones contenidos en los diferentes formularios y como entrada para
+                alimentar las
+                listas de valores que permiten llenar información en diversos campos. Por lo general, estos parámetros
+                permanecen
+                relativamente estáticos en la línea de tiempo y se modifican eventualmente como resultado de cambios en
+                las políticas de
+                la entidad, por disposiciones de los entes gubernamentales que regulan la actividad financiera o las
+                franquicias.
+            </p>
+
+            <p><span class="aviso-importante">Parámetros configuración del sistema:
+                </span> En este bloque del menú se muestran las opciones que permiten parametrizar
+                la ubicación de los archivos de entrada y salida del sistema así como la definición de los usuarios.
+            </p>
+
+            <li><a href="NUH_001B.html">Administracion de casos de Uso</a></li>
+            <li><a href="NUH_002B.html">Ordenamiento de casos de uso</a></li>
+            <li><a href="NUH_010B.html">Administración de usuarios</a></li>
+            <li><a href="NUH_014B.html">Roles y Restricciones</a></li>
+            <li><a href="NUH_034B.html">Botones seguros</a></li>
+            <li><a href="NUH_024B.html">Mensajes</a></li>
+            <li><a href="NUH_053B.html">Ubicación de archivos</a></li>
+            <li><a href="NUH_076E.html">Definición de entidades</a></li>
+            <p style="text-align: left; cursor: pointer;color:#341C8C;" onclick="toggleList('ParámetrosPCI')" onmouseover="this.style.color='#F26716'" onmouseout="this.style.color='#341C8C'">Parámetros PCI </p>
+            <ul id="ParámetrosPCI">
+                <li><a href="NUH_120E.html">Parámetros PCI DSS</a></li>
+                <li><a href="NUH_121E.html">Parámetros Grupos Entrada y Salida</a></li>
+                <li><a href="NUH_122E.html">Parámetros Llaves de cifrado PGP</a></li>
+                <li><a href="NUH_123E.html">Parámetros conexión al Servidor</a></li>
+                <li><a href="NUH_124E.html">Asociaciones de conexiones, llaves y archivos a grupos</a></li>
+            </ul>
+            <li><a href="NUH_126E.html">Usuarios webservice</a></li>
+            
+
+        </div>
+
+        <img class="ImagenBankbu" class="ImagenBankbu" src="../img/bankbu-removebg-preview.PNG"
+            alt="Imagen de la empresa">
+
+    </section>
+    <script src="../js/menu.js"></script>
+    <script src="../js/opciones.js"></script>
+</body>
+<footer>
+    <div>
+        <img class="TITLE" src="../img/logo.PNG">
+    </div>
+    <p>OpenCard SAS</p>
+    <p>Calle 77 Nº 11-19 Piso 4°,Bogotá D.C.</p>
+    <p>Tel (57) 601 - 313 37 75 <a href="http://www.OpenCard.com" target="_blank">www.OpenCard.com</a></p>
+</footer>
+
+</html>

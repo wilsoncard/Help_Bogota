@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>BANKBU®</title>
+  <link rel="stylesheet" href="../css/pages.css">
+  <link rel="stylesheet" href="../css/style.css">
+  <link rel="icon" href="../img/ACQUIRER-logo.JPG" type="image/x-icon">
+</head>
+
+<body>
+
+  <header>
+    <img class="logo" src="../img/logoBankbu_.PNG" alt="Logo de Mi Empresa">
+    <div id="menuBtn">
+      <img class="TITLE" src="../img/menu.PNG" alt="Botón de Menú ">
+    </div>
+  </header>
+  <nav>
+    <ul>
+      <li>
+        <a href="../index.html" class="main-optionINICIO">INICIO</a>
+      </li>
+      <li>
+        <a href="NUH_INTB.html" class="main-optionINTRODUCCIÓN">INTRODUCCIÓN</a>
+      </li>
+      <li><a href="#" class="main-option">NUCLEO ▼</a>
+        <ul>
+          <li><a href="NUH_000B.html">Config. Sistema</a></li>
+          <li><a href="NUH_00B_N2.html">Parametros</a></li>
+          <li><a href="NUH_00B_inicio.html">Inicio</a></li>
+          <li><a href="NUH_00B_proceso.html">Procesos</a></li>
+          <li><a href="NUH_00B_inf.html">Inf. Cliente</a></li>
+          <li><a href="NUH_00B_conta.html">Contabilidad</a></li>
+          <li style="visibility: hidden; display: none;"><a href="NUH_00B_audi.html">Auditoria</a></li>
+
+        </ul>
+      </li>
+      <li>
+        <a href="#" class="main-option">EMISOR ▼</a>
+        <ul>
+          <li><a href="EMH_000B.html">Productos</a></li>
+          <li><a href="EMH_000Bsoli.html">Solicitudes</a></li>
+          <li><a href="EMH_000Bmerca.html">Mercadeo</a></li>
+          <li><a href="EMH_000Bservi.html">Servicio Al Cliente</a></li>
+          <li><a href="EMH_000Bpendi.html">Pendientes</a></li>
+          <li><a href="EMH_000Btrans.html">Transaccionabilidad</a></li>
+          <li><a href="EMH_000Bauto.html">Autorizaciones</a></li>
+          <li><a href="EMH_000Bplasti.html">Adm. Plasticos</a></li>
+          <li><a href="EMH_000Brecla.html">Reclamos</a></li>
+                    <li><a href="MEH_032B.html">Lealtad</a></li>
+                    <li><a href="COH_064B.html">Cobranzas</a></li>
+        </ul>
+      </li>
+      <li style="visibility: hidden">
+        <a href="ACH_000B.html" class="main-option">ADQUIRIENTE</a>
+      </li>
+      <li style="visibility: hidden">
+        <a href="DBH_000B.html" class="main-option">TARJETA DEBITO</a>
+      </li>
+    </ul>
+  </nav>
+
+  <section>
+    <div>
+      <table>
+        <tr>
+          <td>
+            <div>
+              <p class="TITLE">Reversi&oacute;n de autorizaciones</p>
+            </div>
+          </td>
+        </tr>
+      </table>
+      <p class="PARRAFO">Esta función permite reversar, únicamente, las autorizaciones que fueron
+        generadas a través de los formularios <a href="COH_009B.html"> Registro de autorizaciones</a> y <a
+          href="COH_011B.html"> Registro de autorizaciones
+          especiales</a>, siempre y cuando las mismas se encuentren vigentes, esto es, que aún no hayan
+        sido procesadas, las cuales pueden encontrarse o visualizarse en la <a href="COH_012B.html"> Consulta
+          autorizaciones</a>
+        o <a href="COH_013B.html"> Consulta bitácora autorizaciones</a>. Esta reversión se realiza con el fin de
+        restablecer
+        el cupo disponible de su tarjeta y que el cliente pueda hacer uso del mismo.</p>
+      <p class="PARRAFO"><span class="SUBTITULO">Datos reversión autorización:</span> El sistema verifica que todos los
+        campos contengan datos, por ser obligatorios, luego de lo cual, permite avanzar mediante el botón especial
+        Cargar información, siempre y cuando sea consistente con la almacenada en la base de datos.</p>
+      <p class="TITLE"><img src="../img/COF_010B.PNG"></p>
+      <table>
+        <tr>
+          <td class="titletable">
+            <p class="SUBTITULO"><b><span>N&uacute;mero
+                  tarjeta </span></b></p>
+          </td>
+          <td>
+            <p class="PARRAFO">Campo obligatorio en el que se debe ingresar el mismo número de la tarjeta del cliente a
+              la que se le generó la autorización que va a ser reversada.</p>
+          </td>
+        </tr>
+        <tr>
+          <td class="titletable">
+            <p class="SUBTITULO">Transacci&oacute;n<b><span>
+                </span></b></p>
+          </td>
+          <td>
+            <p class="PARRAFO">Campo obligatorio en el que se puede digitar o seleccionar de la lista de valores
+              provista, el código de la clase de transacción para la que se generó la autorización que va a ser
+              reversada.</p>
+          </td>
+        </tr>
+        <tr>
+          <td class="titletable">
+            <p class="SUBTITULO">N&uacute;mero
+              autorizaci&oacute;n</p>
+          </td>
+          <td>
+            <p class="PARRAFO">Campo obligatorio, que, en un máximo de seis decimales, debe contener el mismo número de
+              la autorización que va a ser reversada.</p>
+          </td>
+        </tr>
+        <tr>
+          <td class="titletable">
+            <p class="SUBTITULO"><b>Establecimiento</b></p>
+          </td>
+          <td>
+            <p class="PARRAFO">Campo obligatorio en el que se puede digitar o seleccionar de la lista de valores
+              provista, el código del comercio en el que se generó la autorización que va a ser reversada.</p>
+          </td>
+        </tr>
+      </table>
+
+      <p class="PARRAFO">Al cargar la información a través del botón especial, se muestra un formulario que contiene los
+        botones Reversar Autorización y Cancelar.</p>
+      <p class="TITLE"><img src="../img/COF_010B1.PNG"></p>
+
+      <table>
+        <tr>
+          <td class="titletable">
+            <p class="SUBTITULO"><b>N&uacute;mero
+                tarjeta </b></p>
+          </td>
+          <td>
+            <p class="PARRAFO">Muestra el número de tarjeta enmascarado (si aplica), para la que se está gestionando la
+              reversión de la autorización.</p>
+          </td>
+        </tr>
+        <tr>
+          <td class="titletable">
+            <p class="SUBTITULO"><b>Fecha
+                vencimiento </b></p>
+          </td>
+          <td>
+            <p class="PARRAFO">Muestra la fecha de vencimiento, enmascarada (si aplica), de la tarjeta para la que se
+              está gestionando la reversión de la autorización.</p>
+          </td>
+        </tr>
+        <tr>
+          <td class="titletable">
+            <p class="SUBTITULO"><b>
+                Transacci&oacute;n</b></p>
+          </td>
+          <td>
+            <p class="PARRAFO">Contiene el código y nombre de la transacción para la que se está gestionando la
+              reversión de la autorización.</p>
+          </td>
+        </tr>
+        <tr>
+          <td class="titletable">
+            <p class="SUBTITULO"><b>Establecimiento</b></p>
+          </td>
+          <td>
+            <p class="PARRAFO">Campo que muestra el código y nombre comercial del establecimiento en el que se efectuó
+              la transacción para la que se gestiona la reversión de la autorización.
+            <p>
+          </td>
+        </tr>
+        <tr>
+          <td class="titletable">
+            <p class="SUBTITULO">Número Autorización</p>
+          </td>
+          <td>
+            <p class="PARRAFO">Campo que muestra el dato ingresado en el formulario anterior correspondiente a la
+              autorización para la cual se gestiona su reversión.</p>
+          </td>
+        </tr>
+        <tr>
+          <td class="titletable">
+            <p class="SUBTITULO">Número identificación</p>
+          </td>
+          <td>
+            <p class="PARRAFO">Contiene el número del documento de identificación del tarjetahabiente.</p>
+          </td>
+        </tr>
+        <tr>
+          <td class="titletable">
+            <p class="SUBTITULO">Nombre plástico</p>
+          </td>
+          <td>
+            <p class="PARRAFO">Muestra el nombre del cliente como aparece en el plástico de la tarjeta.</p>
+          </td>
+        </tr>
+        <tr>
+          <td class="titletable">
+            <p class="SUBTITULO">Dirección</p>
+          </td>
+          <td>
+            <p class="PARRAFO">Campo que contiene la dirección de residencia que registra el tarjetahabiente.</p>
+          </td>
+        </tr>
+        <tr>
+          <td class="titletable">
+            <p class="SUBTITULO">Números Teléfonos</p>
+          </td>
+          <td>
+            <p class="PARRAFO">Campo contiene el número de teléfono que registra el tarjetahabiente.</p>
+          </td>
+        </tr>
+        <tr>
+          <td class="titletable">
+            <p class="SUBTITULO">Valor transacción</p>
+          </td>
+          <td>
+            <p class="PARRAFO">Campo que muestra el monto de la autorización para la que se gestiona su reversión.</p>
+          </td>
+        </tr>
+        <tr>
+          <td class="titletable">
+            <p class="SUBTITULO">Moneda</p>
+          </td>
+          <td>
+            <p class="PARRAFO">Contiene el código y nombre de la transacción en que se denominó la autorización para la
+              que se gestiona su reversión.</p>
+          </td>
+        </tr>
+        <tr>
+          <td class="titletable">
+            <p class="SUBTITULO">Número referencia</p>
+          </td>
+          <td>
+            <p class="PARRAFO">Despliega el código asignado por el sistema a la autorización que va a ser reversada, y
+              que la identifica para garantizar que sea única.</p>
+          </td>
+        </tr>
+        <tr>
+          <td class="titletable">
+            <p class="SUBTITULO">Número Auditoría</p>
+          </td>
+          <td>
+            <p class="PARRAFO">Contiene el código consecutivo que le fue asignado por el sistema, a la autorización a
+              reversar, para monitorear los códigos de autorización otorgados.</p>
+          </td>
+        </tr>
+        <tr>
+          <td class="titletable">
+            <p class="SUBTITULO">Fecha Hora Transacción</p>
+          </td>
+          <td>
+            <p class="PARRAFO">En formato YYYY-MM-DD HH:MM:SS ilustra el momento en que se otorgó la autorización cuya
+              reversión se está gestionando.</p>
+          </td>
+        </tr>
+
+      </table>
+      <p class="PARRAFO"><span class="SUBTITULO">Reversar Autorizaci&oacute;n:</span> 
+        Al activar este botón especial, el sistema efectúa el proceso de reversión de la autorización y genera la
+        respuesta a la misma.</p>
+      <p class="PARRAFO">En este bloque Información de la Autorización, se muestra la respuesta del sistema a la
+        solicitud de la autorización.</p>
+      <p class="TITLE"><img src="../img/COF_011B2.PNG"></p>
+
+      <table>
+        <tr>
+          <td class="titletable">
+            <p class="SUBTITULO"><b>C&oacute;digo
+                respuesta </b></p>
+          </td>
+          <td>
+            <p class="PARRAFO">Corresponde
+              al c&oacute;digo y descripci&oacute;n de la respuesta a la solicitud
+              de reversi&oacute;n.</p>
+          </td>
+        </tr>
+        <tr>
+          <td class="titletable">
+            <p class="SUBTITULO">N&uacute;mero
+              autorizaci&oacute;n</p>
+          </td>
+          <td>
+            <p class="PARRAFO">En
+              caso de que la solicitud de reversi&oacute;n haya sido exitosa, en este
+              campo aparece el n&uacute;mero que fue asignado como aprobaci&oacute;n
+              de la misma.</p>
+          </td>
+        </tr>
+      </table>
+
+  </section>
+  <script src="../js/menu.js"></script>
+</body>
+<footer>
+  <div>
+    <img class="TITLE" src="../img/logo.PNG">
+  </div>
+  <p>OpenCard SAS</p>
+  <p>Calle 77 Nº 11-19 Piso 4°,Bogotá D.C.</p>
+  <p>Tel (57) 601 - 313 37 75 <a href="http://www.OpenCard.com" target="_blank">www.OpenCard.com</a></p>
+
+</footer>
+
+</html>

@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BANKBU®</title>
+    <link rel="stylesheet" href="../css/pages.css">
+    <link rel="stylesheet" href="../css/style.css">
+ <link rel="icon" href="../img/ACQUIRER-logo.JPG" type="image/x-icon">
+</head>
+
+<body>
+    <header>
+        <img class="logo" src="../img/logoBankbu_.PNG" alt="Logo de Mi Empresa">
+        <div id="menuBtn">
+            <img class="TITLE"  src= "../img/menu.PNG" alt="Botón de Menú ">
+        </div>
+    </header>
+    <nav>
+        <ul>
+            <li>
+                    <a href="../index.html" class="main-optionINICIO">INICIO</a>
+            </li>
+            <li>
+                <a href="NUH_INTB.html" class="main-optionINTRODUCCIÓN">INTRODUCCIÓN</a>
+            </li>
+            <li><a href="#" class="main-option">NUCLEO ▼</a>
+                <ul>
+                    <li><a href="NUH_000B.html">Config. Sistema</a></li>
+                    <li><a href="NUH_00B_N2.html">Parametros</a></li>
+                    <li><a href="NUH_00B_inicio.html">Inicio</a></li>
+                    <li><a href="NUH_00B_proceso.html">Procesos</a></li>
+                    <li><a href="NUH_00B_inf.html">Inf. Cliente</a></li>
+                    <li><a href="NUH_00B_conta.html">Contabilidad</a></li>
+                    <li style="visibility: hidden; display: none;"><a href="NUH_00B_audi.html">Auditoria</a></li>
+
+                </ul>
+            </li>
+            <li>
+             <a href="#" class="main-option">EMISOR  ▼</a>
+                <ul>
+                    <li><a href="EMH_000B.html">Productos</a></li>
+                    <li><a href="EMH_000Bsoli.html">Solicitudes</a></li>
+                    <li><a href="EMH_000Bmerca.html">Mercadeo</a></li>
+                    <li><a href="EMH_000Bservi.html">Servicio Al Cliente</a></li>
+                    <li><a href="EMH_000Bpendi.html">Pendientes</a></li>
+                    <li><a href="EMH_000Btrans.html">Transaccionabilidad</a></li>
+                    <li><a href="EMH_000Bauto.html">Autorizaciones</a></li>
+                    <li><a href="EMH_000Bplasti.html">Adm. Plasticos</a></li>
+                    <li><a href="EMH_000Brecla.html">Reclamos</a></li>
+                    <li><a href="MEH_032B.html">Lealtad</a></li>
+                    <li><a href="COH_064B.html">Cobranzas</a></li>
+                </ul>
+            </li>
+ <li style="visibility: hidden">
+                <a href="ACH_000B.html" class="main-option">ADQUIRIENTE</a>
+            </li>
+            <li style="visibility: hidden">
+                <a href="DBH_000B.html" class="main-option">TARJETA DEBITO</a>
+            </li></ul>
+    </nav>
+
+    <section>
+        <div> 
+            <table>
+              <tr> 
+                <td><div> 
+                    <p  class="TITLE">Novedad tarjeta amparada/extendida/adicional 
+                      a principal</p>
+                    </div></td>
+              </tr>
+            </table>
+            <p  class="PARRAFO">En este formulario invocado desde la opci&oacute;n 
+              <a href="SCH_075B1.html" >ingreso de novedades</a>, 
+              (issuer) y que aplica exclusivamente para tarjetas que no sean principales, 
+              la entidad puede efectuar el cambio para convertir una tarjeta amparada, extendida 
+              o adicional en principal, rompiendo el v&iacute;nculo de dependencia existente 
+              actualmente con la tarjeta de la cual depende.
+            </p>
+            <p class="TITLE"><img src="../img/SCF_027E.PNG"323" height="138"></p>
+            <p  class="TITLE">Descripci&oacute;n de campos</p>
+            <table>
+              <tr> 
+                <td class="titletable"><p class="SUBTITULO"><b><span 
+        > 
+                    Tipo tarjeta</span></b></p></td>
+                <td><p  class="PARRAFO">Campo 
+                    obligatorio tipo combo, en el cual se muestra inicialmente el tipo de 
+                    tarjeta actual a la cual se le va a aplicar la novedad, y de la que 
+                    se selecciona la opci&oacute;n Principal para indicar la acci&oacute;n 
+                    a ejecutar. </p></td>
+              </tr>
+           
+              <tr> 
+                <td class="titletable"><p class="SUBTITULO"><b><span 
+        >N&uacute;mero 
+                    tarjeta principal</span></b></p>
+                  </td>
+                <td><p  class="PARRAFO">En 
+                    este campo de salida se despliega el n&uacute;mero actual de la tarjeta 
+                    del cliente principal al que se encuentra asociada la tarjeta que desea 
+                    &quot;independizarse&quot;. </p></td>
+              </tr>
+           
+              <tr> 
+                <td class="titletable"><p class="SUBTITULO"><b><span 
+        >Nombre 
+                    principal </span></b></p></td>
+                <td><p  class="PARRAFO">Campo 
+                    de salida en el que se muestra el nombre del cliente a quien pertenece 
+                    la tarjeta principal a la que se encuentra asociada la tarjeta que desea 
+                    &quot;independizarse&quot;. </p></td>
+              </tr>
+           
+              <tr> 
+                <td class="titletable"><p class="SUBTITULO"><b><span 
+        >Fecha 
+                    radicaci&oacute;n</span></b></p></td>
+                <td><p  class="PARRAFO">Campo 
+                    obligatorio en el que se registra en formato YYYY-MM-DD la fecha en 
+                    la cual se ingres&oacute; el cambio de tarjeta dependiente a principal 
+                    y que puede ser una fecha anterior a la actual del sistema, facilitando 
+                    el ingreso de novedades de fechas anteriores. </p></td>
+              </tr>
+            </table>
+        </section>
+    <script src="../js/menu.js"></script>
+
+    <footer>
+        <div>
+            <img class="TITLE"  src= "../img/logo.PNG">
+        </div>
+        <p>OpenCard SAS</p>
+        <p>Calle 77 Nº 11-19 Piso 4°, Bogotá D.C.</p>
+        <p>Tel (57) 601 - 313 37 75  <a href="http://www.OpenCard.com"
+                target="_blank">www.OpenCard.com</a></p>
+
+    </footer>
+</body>
+
+</html>

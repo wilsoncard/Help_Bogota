@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BANKBU®</title>
+
+    <link rel="stylesheet" href="../css/pages.css">
+    <link rel="stylesheet" href="../css/style.css">
+ <link rel="icon" href="../img/ACQUIRER-logo.JPG" type="image/x-icon">
+</head>
+
+<body>
+
+    <header>
+        <img class="logo" src="../img/logoBankbu_.PNG" alt="Logo de Mi Empresa">
+        <div id="menuBtn">
+            <img class="TITLE"  src= "../img/menu.PNG" alt="Botón de Menú ">
+        </div>
+    </header>
+    <nav>
+        <ul>
+            <li>
+                    <a href="../index.html" class="main-optionINICIO">INICIO</a>
+            </li>
+            <li>
+                <a href="NUH_INTB.html" class="main-optionINTRODUCCIÓN">INTRODUCCIÓN</a>
+            </li>
+            <li><a href="#" class="main-option">NUCLEO ▼</a>
+                <ul>
+                    <li><a href="NUH_000B.html">Config. Sistema</a></li>
+                    <li><a href="NUH_00B_N2.html">Parametros</a></li>
+                    <li><a href="NUH_00B_inicio.html">Inicio</a></li>
+                    <li><a href="NUH_00B_proceso.html">Procesos</a></li>
+                    <li><a href="NUH_00B_inf.html">Inf. Cliente</a></li>
+                    <li><a href="NUH_00B_conta.html">Contabilidad</a></li>
+                    <li style="visibility: hidden; display: none;"><a href="NUH_00B_audi.html">Auditoria</a></li>
+
+                </ul>
+            </li>
+            <li>
+             <a href="#" class="main-option">EMISOR  ▼</a>
+                <ul>
+                    <li><a href="EMH_000B.html">Productos</a></li>
+                    <li><a href="EMH_000Bsoli.html">Solicitudes</a></li>
+                    <li><a href="EMH_000Bmerca.html">Mercadeo</a></li>
+                    <li><a href="EMH_000Bservi.html">Servicio Al Cliente</a></li>
+                    <li><a href="EMH_000Bpendi.html">Pendientes</a></li>
+                    <li><a href="EMH_000Btrans.html">Transaccionabilidad</a></li>
+                    <li><a href="EMH_000Bauto.html">Autorizaciones</a></li>
+                    <li><a href="EMH_000Bplasti.html">Adm. Plasticos</a></li>
+                    <li><a href="EMH_000Brecla.html">Reclamos</a></li>
+                    <li><a href="MEH_032B.html">Lealtad</a></li>
+                    <li><a href="COH_064B.html">Cobranzas</a></li>
+                </ul>
+            </li>
+ <li style="visibility: hidden">
+                <a href="ACH_000B.html" class="main-option">ADQUIRIENTE</a>
+            </li>
+            <li style="visibility: hidden">
+                <a href="DBH_000B.html" class="main-option">TARJETA DEBITO</a>
+            </li></ul>
+    </nav>
+
+    <section>
+        <div> 
+            <table>
+              <tr> 
+                <td><div> 
+                    <p  class="TITLE">Captura de Movimientos oficina</p>
+                    </div></td>
+              </tr>
+            </table>
+            <p class="PARRAFO"><span class="SUBTITULO">Adicionar Pagos:</span>  Grupo de datos 
+              que contiene la informaci&oacute;n detallada de los abonos a las obligaciones 
+              (Tarjetas, L&iacute;neas de cr&eacute;dito o Transacciones) efectuadas por 
+              el cliente tanto en efectivo como en cheque. Los campos relacionados con la 
+              tapa deben capturarse como se hace en la captura de compras.</p>
+            <p class="PARRAFO">Si el usuario a seleccionado la Transacci&oacute;n Pagos 
+              e invoca la opci&oacute;n Adicionar, se despliega un formulario con 
+              los siguientes campos.</p>
+            <p class="TITLE"><img src="../img/INF_004B22.PNG"396" height="355"></p>
+            
+            <table>
+              <tr> 
+                <td  class="titletable" ><p class="SUBTITULO">Fecha 
+                    proceso</p></td>
+                <td><p class="PARRAFO">Campo 
+                    de salida o no ingresable, que contiene la fecha del sistema seleccionada 
+                    en el filtro inicial.</p></td>
+              </tr>
+              <tr> 
+                <td class="titletable"><p class="SUBTITULO"><b>Oficina</b></p></td>
+                <td><p class="PARRAFO">Campo 
+                    en el que se muestra el c&oacute;digo de la oficina y descripci&oacute;n 
+                    de la oficina para la cual se va a capturar.</p></td>
+              </tr>
+              <tr> 
+                <td class="titletable"><p class="SUBTITULO"><b>Marca</b></p></td>
+                <td><p class="PARRAFO">Campo 
+                    que posee lista de valores poblada mediante la opci&oacute;n <a href="NUH_033B.html" >Franquicias 
+                    </a>del N&uacute;cleo. Si la entidad requiere generar contabilidad por 
+                    marca o franquicia, no debe mezclar dentro del mismo lote o tapa movimiento 
+                    de diferentes franquicias.</p></td>
+              </tr>
+              <tr> 
+                <td  class="titletable" ><p class="SUBTITULO">N&uacute;mero 
+                    tarjeta</p></td>
+                <td><p class="PARRAFO">Campo 
+                    alfanum&eacute;rico de 23 d&iacute;gitos, no obligatorio, en el que 
+                    se digita el n&uacute;mero de la tarjeta mediante la cual se realiza 
+                    el Pago, el sistema valida la existencia de la misma dentro del sistema 
+                    y asigna los ceros a la izquierda hasta completar la longitud total 
+                    del campo.</p></td>
+              </tr>
+              <tr> 
+                <td class="titletable"><p class="SUBTITULO"><b>N&uacute;mero 
+                    comprobante</b></p></td>
+                <td><p class="PARRAFO">Campo 
+                    num&eacute;rico de 7 d&iacute;gitos, no obligatorio, en el que se registra 
+                    el n&uacute;mero del voucher o comprobante correspondiente el Pago.</p></td>
+              </tr>
+              <tr> 
+                <td class="titletable"><p class="SUBTITULO"><b>Fecha 
+                    comprobante</b></p></td>
+                <td><p class="PARRAFO">Campo 
+                    tipo fecha, en formato DDMMYYYY, debe contener la fecha f&iacute;sica 
+                    de cada uno de los comprobantes, es la base para determinar la antig&uuml;edad 
+                    de los mismos y verificar que no excedan el plazo m&aacute;ximo para 
+                    su consignaci&oacute;n determinada en <a href="NUH_055B.html" >Par&aacute;metros 
+                    operativos</a>.</p></td>
+              </tr>
+              <tr>
+                <td class="titletable"><p class="SUBTITULO">Forma de pago</p></td>
+                <td><p class="PARRAFO">Campo que posee lista de valores adjunta de la   cual se puede seleccionar entre Cheque o Efectivo, acorde con el   modo o medio de pago correspondiente.</p></td>
+              </tr>
+              <tr>
+                <td class="titletable"><p class="SUBTITULO">Dirigido a </p></td>
+                <td><p class="PARRAFO">Campo que contiene una lista de valores de   la que se selecciona la opci&oacute;n correspondiente para orientar o direccionar el   pago. Cuenta con las opciones Transacci&oacute;n, N&uacute;mero de tarjeta, Moneda, y L&iacute;nea de cr&eacute;dito. </p>
+                <p class="PARRAFO">Para que aplique esta   funcionalidad se debe tener en cuenta lo parametrizado en el campo Permite pago   dirigido? de la opci&oacute;n<A href="MEH_003B.html" > Transacciones por empresa</A> del N&uacute;cleo.</p>
+                </td>
+              </tr>
+              <tr> 
+                <td class="titletable"><p class="SUBTITULO"><b>Identificaci&oacute;n destino </b></p></td>
+                <td><p class="PARRAFO">Este campo se diligencia seg&uacute;n lo seleccionado en la lista de valores anterior: Cuando es Transacci&oacute;n, admite 12 caracteres num&eacute;ricos, los cuales deben corresponder a la secuencia de una transacci&oacute;n existente en el hist&oacute;rico de transacciones para la tarjeta seleccionada.</p>
+                  <p class="PARRAFO">Al seleccionar N&uacute;mero de tarjeta, el sistema coloca autom&aacute;ticamente el mismo n&uacute;mero ingresado y no permite modificarlo.</p>
+                  <p class="PARRAFO">Cuando se selecciona la opci&oacute;n L&iacute;nea de cr&eacute;dito, se despliega una lista de valores con todas las l&iacute;neas de cr&eacute;dito parametrizadas, pero valida que la seleccionada est&eacute; relacionada con la tarjeta ingresada. </p>
+                  <p class="PARRAFO">Con la opci&oacute;n Moneda,  el sistema alimenta este campo autom&aacute;ticamente con la misma moneda ingresada en el primer formulario del caso. </p>
+                  </td>
+              </tr>
+              <tr> 
+                <td class="titletable"><p class="SUBTITULO"><b>Valor total </b></p></td>
+                <td><p class="PARRAFO">Campo 
+                    num&eacute;rico con capacidad para una suma hasta de 16 d&iacute;gitos 
+                    incluidos dos decimales, no obligatorio, que contiene el monto total 
+                    del Pago.</p></td>
+              </tr>
+            </table>
+            
+            <p  class="PARRAFO"><span class="PARRAFO"><span class="SUBTITULO">Actualizar:</span>  
+              Si el usuario invoca la opci&oacute;n Actualizar se despliega un nuevo formulario 
+              en el cual los &uacute;nicos campos modificables son: Establecimiento, N&uacute;mero 
+              tarjeta, N&uacute;mero comprobante, Fecha comprobante, N&uacute;mero autorizaci&oacute;n, 
+              Plazo, y Causal.</span></p>
+            <p class="TITLE"><img src="../img/INF_004B23.PNG"405" height="356"></p>
+              
+                
+            <p><a href="INH_004B.html">Formulario principal</a><span
+              ><b> |</b></span>  <a href="INH_004B1.html">Compras</a><span
+              ><b> | </b></span><a href="INH_004B2.html">Avances</a><b><span > 
+              | </span></b><a href="INH_004B3.html">Impuestos</a></p>
+            
+        </section>
+    <script src="../js/menu.js"></script>
+</body>
+<footer>
+    <div>
+        <img class="TITLE"  src= "../img/logo.PNG">
+    </div>
+    <p>OpenCard SAS</p>
+    <p>Calle 77 Nº 11-19 Piso 4°,Bogotá D.C.</p>
+    <p>Tel (57) 601 - 313 37 75  <a href="http://www.OpenCard.com"
+            target="_blank">www.OpenCard.com</a></p>
+
+
+
+</footer>
+</html>

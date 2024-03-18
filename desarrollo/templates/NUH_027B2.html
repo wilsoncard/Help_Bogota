@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BANKBU®</title>
+    <link rel="stylesheet" href="../css/pages.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="icon" href="../img/ACQUIRER-logo.JPG" type="image/x-icon">
+</head>
+
+<body>
+
+    <header>
+        <img class="logo" src="../img/logoBankbu_.PNG" alt="Logo de Mi Empresa">
+        <div id="menuBtn">
+            <img class="TITLE" src="../img/menu.PNG" alt="Botón de Menú ">
+        </div>
+    </header>
+    <nav>
+        <ul>
+            <li>
+                <a href="../index.html" class="main-optionINICIO">INICIO</a>
+            </li>
+            <li>
+                <a href="NUH_INTB.html" class="main-optionINTRODUCCIÓN">INTRODUCCIÓN</a>
+            </li>
+            <li><a href="#" class="main-option">NUCLEO ▼</a>
+                <ul>
+                    <li><a href="NUH_000B.html">Config. Sistema</a></li>
+                    <li><a href="NUH_00B_N2.html">Parametros</a></li>
+                    <li><a href="NUH_00B_inicio.html">Inicio</a></li>
+                    <li><a href="NUH_00B_proceso.html">Procesos</a></li>
+                    <li><a href="NUH_00B_inf.html">Inf. Cliente</a></li>
+                    <li><a href="NUH_00B_conta.html">Contabilidad</a></li>
+                    <li style="visibility: hidden; display: none;"><a href="NUH_00B_audi.html">Auditoria</a></li>
+
+                </ul>
+            </li>
+            <li>
+                <a href="#" class="main-option">EMISOR ▼</a>
+                <ul>
+                    <li><a href="EMH_000B.html">Productos</a></li>
+                    <li><a href="EMH_000Bsoli.html">Solicitudes</a></li>
+                    <li><a href="EMH_000Bmerca.html">Mercadeo</a></li>
+                    <li><a href="EMH_000Bservi.html">Servicio Al Cliente</a></li>
+                    <li><a href="EMH_000Bpendi.html">Pendientes</a></li>
+                    <li><a href="EMH_000Btrans.html">Transaccionabilidad</a></li>
+                    <li><a href="EMH_000Bauto.html">Autorizaciones</a></li>
+                    <li><a href="EMH_000Bplasti.html">Adm. Plasticos</a></li>
+                    <li><a href="EMH_000Brecla.html">Reclamos</a></li>
+                    <li><a href="MEH_032B.html">Lealtad</a></li>
+                    <li><a href="COH_064B.html">Cobranzas</a></li>
+                </ul>
+            </li>
+            <li style="visibility: hidden">
+                <a href="ACH_000B.html" class="main-option">ADQUIRIENTE</a>
+            </li>
+            <li style="visibility: hidden">
+                <a href="DBH_000B.html" class="main-option">TARJETA DEBITO</a>
+            </li>
+        </ul>
+    </nav>
+
+    <section>
+        <div>
+            <table>
+                <tr>
+                    <td>
+                        <div>
+                            <p class="TITLE">Origen de transacciones - Par&aacute;metros
+                                de origen</p>
+                        </div>
+                    </td>
+                </tr>
+            </table>
+            <p class="PARRAFO">En este formulario que se invoca desde el
+                hiperv&iacute;nculo Par&aacute;metros de origen contenido en el formulario
+                <a href="NUH_027B.html">or&iacute;genes de transacciones</a>
+                se registran las condiciones particulares v&aacute;lidas para el origen seleccionado
+                por el usuario.
+            </p>
+            <p class="TITLE"><img src="../img/NUF_027E10.PNG"></p>
+
+            <p class="PARRAFO">El formulario contiene las opciones Actualizar,
+                Eliminar.</p>
+            <p class="PARRAFO"><span class="SUBTITULO"><b><span>Actualizar</span></b><span>:</span></span><span>
+                    Si el usuario invoca la opci&oacute;n Actualizar se despliega un nuevo formulario
+                    en el cual todos los campos son modificables.</span></p>
+            <p class="TITLE"><img src="../img/NUF_027E11.PNG"></p>
+            <p class="TITLE">Descripci&oacute;n de campos</p>
+            <table>
+                <tr>
+                    <td class="titletable">
+                        <p class="SUBTITULO"><b><span>Antig&uuml;edad
+                                    permitida procesamiento comprobantes</span></b></p>
+                    </td>
+                    <td>
+                        <p class="PARRAFO">En
+                            este campo num&eacute;rico de 3 d&iacute;gitos se registra el n&uacute;mero
+                            m&aacute;ximo de d&iacute;as calendario permitidos para recibir y procesar
+                            un comprobante, por cada origen. Por ejemplo en Canje nacional, si un
+                            comprobante supera una antig&uuml;edad de 90 d&iacute;as, puede ser
+                            devuelto autom&aacute;ticamente a la entidad que lo env&iacute;o, puesto
+                            que los plazos estipulados de intercambio no han sido respetados.</p>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td class="titletable">
+                        <p class="SUBTITULO"><b><span>Identificador
+                                    para la red 1 / 2 / 3</span></b></p>
+                    </td>
+                    <td>
+                        <p class="PARRAFO">Campos
+                            alfanum&eacute;ricos de 8 d&iacute;gitos, en los que se puede registrar
+                            el c&oacute;digo que identifica a la entidad financiera ante cada una
+                            de las respectivas Redes.</p>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td class="titletable">
+                        <p class="SUBTITULO"><b><span>Origen
+                                    afecta las cuentas de dep&oacute;sitos</span></b></p>
+                    </td>
+                    <td>
+                        <p class="PARRAFO">En
+                            este campo la entidad se&ntilde;ala si para el origen que se est&aacute;
+                            parametrizando se debe tener en consideraci&oacute;n o no la afectaci&oacute;n
+                            a las cuentas de dep&oacute;sitos de los establecimientos.</p>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td class="titletable">
+                        <p class="SUBTITULO"><b><span>Transacci&oacute;n
+                                    para aplicar abono a cuentas</span></b></p>
+                    </td>
+                    <td>
+                        <p class="PARRAFO">Campo
+                            alfanum&eacute;rico de diez d&iacute;gitos en el que se registra el
+                            c&oacute;digo de la transacci&oacute;n que identifica, en la interface
+                            de Dep&oacute;sitos el abono a cuenta.</p>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td class="titletable">
+                        <p class="SUBTITULO"><b><span>Transacci&oacute;n
+                                    para descuentos</span></b></p>
+                    </td>
+                    <td>
+                        <p class="PARRAFO">En
+                            este campo alfanum&eacute;rico de diez d&iacute;gitos se digita el c&oacute;digo
+                            de transacci&oacute;n que identifica, en la interface de afectaci&oacute;n
+                            a cuenta, el valor del descuento aplicado, el cual puede no aparecer
+                            y viajar en la interface en el valor neto del dep&oacute;sito.</p>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td class="titletable">
+                        <p class="SUBTITULO"><b><span>Transacci&oacute;n
+                                    para reversar abono a cuentas</span></b></p>
+                    </td>
+                    <td>
+                        <p class="PARRAFO">Campo
+                            alfanum&eacute;rico de diez d&iacute;gitos en el que se registra el
+                            c&oacute;digo de transacci&oacute;n que identifica, en la interface
+                            de Dep&oacute;sitos la reversi&oacute;n de un abono a cuenta</p>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td class="titletable">
+                        <p class="SUBTITULO"><b><span>Transacci&oacute;n
+                                    reversi&oacute;n descuento</span></b></p>
+                    </td>
+                    <td>
+                        <p class="PARRAFO">En
+                            este campo alfanum&eacute;rico de diez d&iacute;gitos se registra el
+                            c&oacute;digo de transacci&oacute;n que identifica, en la interface
+                            de afectaci&oacute;n a cuenta, el valor de la reversi&oacute;n del descuento
+                            aplicado.</p>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td class="titletable">
+                        <p class="SUBTITULO"><b><span>Transacci&oacute;n
+                                    para aplicar retenci&oacute;n en la fuente</span></b></p>
+                    </td>
+                    <td>
+                        <p class="PARRAFO">Campo
+                            alfanum&eacute;rico de diez d&iacute;gitos en el que se ingresa el c&oacute;digo
+                            de transacci&oacute;n que identifica, en la interface de Dep&oacute;sitos,
+                            la aplicaci&oacute;n de la retenci&oacute;n en la fuente.</p>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td class="titletable">
+                        <p class="SUBTITULO"><b><span>Transacci&oacute;n
+                                    retenci&oacute;n iva</span></b></p>
+                    </td>
+                    <td>
+                        <p class="PARRAFO">Campo
+                            num&eacute;rico de hasta 6 d&iacute;gitos en el cual se registra el
+                            c&oacute;digo que identifica la transacci&oacute;n original que se est&aacute;
+                            parametrizando y para la que se definen las dem&aacute;s condiciones
+                            del presente formulario.</p>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td class="titletable">
+                        <p class="SUBTITULO"><b><span>Transacci&oacute;n
+                                    para reversar retenci&oacute;n en la fuente</span></b></p>
+                    </td>
+                    <td>
+                        <p class="PARRAFO">Campo
+                            num&eacute;rico de hasta 6 d&iacute;gitos en el cual se registra el
+                            c&oacute;digo que identifica la transacci&oacute;n original que se est&aacute;
+                            parametrizando y para la que se definen las dem&aacute;s condiciones
+                            del presente formulario.</p>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td class="titletable">
+                        <p class="SUBTITULO"><b><span>Transacci&oacute;n
+                                    reversi&oacute;n iva</span></b></p>
+                    </td>
+                    <td>
+                        <p class="PARRAFO">Campo
+                            alfanum&eacute;rico de diez d&iacute;gitos en el cual se ingresa el
+                            c&oacute;digo de transacci&oacute;n que identifica, en la interface
+                            de afectaci&oacute;n a cuenta, el valor de la retenci&oacute;n del impuesto
+                            de IVA aplicado, el cual puede no aparecer y viajar en la interface
+                            en el valor neto del dep&oacute;sito.</p>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td class="titletable">
+                        <p class="SUBTITULO"><b><span>Se
+                                    requiere cargue de datos</span></b></p>
+                    </td>
+                    <td>
+                        <p class="PARRAFO">En
+                            este campo la entidad se&ntilde;ala si la fuente de recepci&oacute;n
+                            de movimiento corresponde a un archivo plano que debe ser cargado, &oacute;
+                            la entrada de movimiento se hace en l&iacute;nea.</p>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td class="titletable">
+                        <p class="SUBTITULO"><b><span>Se
+                                    requieren m&uacute;ltiples cargues</span></b></p>
+                    </td>
+                    <td>
+                        <p class="PARRAFO">Campo
+                            que se marca para indicar si para el origen es necesario efectuar mas
+                            de un cargue en la fecha de proceso.</p>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td class="titletable">
+                        <p class="SUBTITULO"><b><span>Validaci&oacute;n
+                                    cuenta </span></b></p>
+                    </td>
+                    <td>
+                        <p class="PARRAFO">En
+                            este campo tipo combo se puede seleccionar entre Pseudocuenta, Establecimiento
+                            o Cuenta, la ra&iacute;z o punto de partida de que se dispone,
+                            acorde con el origen o franquicia, para identificar la cuenta de dep&oacute;sitos
+                            que debe ser afectada con los mismos. La pseudocuenta es un
+                            c&oacute;digo de identificaci&oacute;n de la cuenta asignado por la
+                            red o franquicia, al seleccionar esta opci&oacute;n, en el momento del
+                            cargue, el proceso de validaci&oacute;n revisa que el establecimiento
+                            que est&aacute; viajando tenga asociado dicho c&oacute;digo. Al seleccionar
+                            establecimiento, el proceso de validaci&oacute;n toma el establecimiento
+                            y lo asocia a la cuenta correspondiente. Si el establecimiento tiene
+                            asociadas varias cuentas el proceso toma la primera que encuentre. La
+                            opci&oacute;n cuenta, permite que el proceso de validaci&oacute;n
+                            revise que la cuenta que trae el archivo est&eacute; relacionada con
+                            las cuentas del establecimiento.</p>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td class="titletable">
+                        <p class="SUBTITULO"><b><span>M&aacute;ximo
+                                    n&uacute;mero de duplicados</span></b></p>
+                    </td>
+                    <td>
+                        <p class="PARRAFO">Campo
+                            num&eacute;rico en el que se indica la m&aacute;xima cantidad de registros
+                            iguales que el sistema debe permitir antes de determinar que se trata
+                            de un archivo duplicado y se finalice el proceso de cargue del mismo,
+                            evitando as&iacute; que por error se cargue dos veces la misma transacci&oacute;n.</p>
+                    </td>
+                </tr>
+            </table>
+            <div>
+    </section>
+    <script src="../js/menu.js"></script>
+</body>
+<footer>
+    <div>
+        <img class="TITLE" src="../img/logo.PNG">
+    </div>
+    <p>OpenCard SAS</p>
+    <p>Calle 77 Nº 11-19 Piso 4°,Bogotá D.C.</p>
+    <p>Tel (57) 601 - 313 37 75 <a href="http://www.OpenCard.com" target="_blank">www.OpenCard.com</a></p>
+
+
+
+</footer>
+
+</html>

@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>BANKBU®</title>
+  <link rel="stylesheet" href="../css/pages.css">
+  <link rel="stylesheet" href="../css/style.css">
+  <link rel="icon" href="../img/ACQUIRER-logo.JPG" type="image/x-icon">
+</head>
+
+<body>
+  <header>
+    <img class="logo" src="../img/logoBankbu_.PNG" alt="Logo de Mi Empresa">
+    <div id="menuBtn">
+      <img class="TITLE" src="../img/menu.PNG" alt="Botón de Menú ">
+    </div>
+  </header>
+  <nav>
+    <ul>
+      <li>
+        <a href="../index.html" class="main-optionINICIO">INICIO</a>
+      </li>
+      <li>
+        <a href="NUH_INTB.html" class="main-optionINTRODUCCIÓN">INTRODUCCIÓN</a>
+      </li>
+      <li><a href="#" class="main-option">NUCLEO ▼</a>
+        <ul>
+          <li><a href="NUH_000B.html">Config. Sistema</a></li>
+          <li><a href="NUH_00B_N2.html">Parametros</a></li>
+          <li><a href="NUH_00B_inicio.html">Inicio</a></li>
+          <li><a href="NUH_00B_proceso.html">Procesos</a></li>
+          <li><a href="NUH_00B_inf.html">Inf. Cliente</a></li>
+          <li><a href="NUH_00B_conta.html">Contabilidad</a></li>
+          <li style="visibility: hidden; display: none;"><a href="NUH_00B_audi.html">Auditoria</a></li>
+
+        </ul>
+      </li>
+      <li>
+        <a href="#" class="main-option">EMISOR ▼</a>
+        <ul>
+          <li><a href="EMH_000B.html">Productos</a></li>
+          <li><a href="EMH_000Bsoli.html">Solicitudes</a></li>
+          <li><a href="EMH_000Bmerca.html">Mercadeo</a></li>
+          <li><a href="EMH_000Bservi.html">Servicio Al Cliente</a></li>
+          <li><a href="EMH_000Bpendi.html">Pendientes</a></li>
+          <li><a href="EMH_000Btrans.html">Transaccionabilidad</a></li>
+          <li><a href="EMH_000Bauto.html">Autorizaciones</a></li>
+          <li><a href="EMH_000Bplasti.html">Adm. Plasticos</a></li>
+          <li><a href="EMH_000Brecla.html">Reclamos</a></li>
+          <li><a href="MEH_032B.html">Lealtad</a></li>
+          <li><a href="COH_064B.html">Cobranzas</a></li>
+        </ul>
+      </li>
+      <li style="visibility: hidden">
+        <a href="ACH_000B.html" class="main-option">ADQUIRIENTE</a>
+      </li>
+      <li style="visibility: hidden">
+        <a href="DBH_000B.html" class="main-option">TARJETA DEBITO</a>
+      </li>
+    </ul>
+  </nav>
+
+  <section>
+    <div>
+      <table>
+        <tr>
+          <td>
+            <div>
+              <p class="TITLE">Par&aacute;metros de solicitudes</p>
+            </div>
+          </td>
+        </tr>
+      </table>
+      <p class="PARRAFO">Mediante esta funci&oacute;n se permite la consulta y mantenimiento
+        de las tablas que contienen los par&aacute;metros que determinan las diferentes
+        clases de solicitudes y las etapas que se deben cumplir.</p>
+      <p>El formulario inicial contiene dos bloques de ingreso de par&aacute;metros:
+        Etapas y <a href="#Documentos" title="Documentos" target="_self">Documentos</a>.
+        Cada uno con las opciones Actualizar, Eliminar, y Adicionar. Adicionalmente,
+        en la parte superior se ubican las otras opciones pertenecientes a los Par&aacute;metros
+        de solicitudes: <a href="SOH_001B1.html">Filtros negaci&oacute;n</a>, <a href="SOH_001B2.html">Funcionarios</a>,
+        <a href="SOH_001B3.html">Calificaci&oacute;n</a>, <a href="SOH_001B4.html">Negaci&oacute;n</a>,
+        <a href="SOH_001B5.html">Variables cupo</a>, y el <a href="SOH_001B6.html">Globo
+          de localizaci&oacute;n</a>.
+      </p>
+      <p><span class="SUBTITULO">Etapas:</span> Conjunto de campos en los que se codifican
+        las diversas etapas que deber&aacute;n surtir las solicitudes; cada etapa
+        se asocia a un prototipo interno de OpenCard, siendo factible que un mismo
+        prototipo pueda tener asociados dos o m&aacute;s etapas ya que se le ofrece
+        a la entidad la posibilidad de dar un nombre diferente a cada una de ellas,
+        dependiendo del tipo de producto.</p>
+      <p class="TITLE"><img src="../img/SOF_001B.PNG" 768" height="428"></p>
+
+      <p><span class="SUBTITULO">Adicionar:</span> Si el usuario invoca la opci&oacute;n
+        Adicionar se despliega un formulario con los siguientes campos<span>:</span></p>
+      <p class="TITLE"><img src="../img/SOF_001B1.PNG" 258" height="133"></p>
+      <table>
+        <tr>
+          <td class="titletable">
+            <p class="SUBTITULO"><b>C&oacute;digo</b></p>
+          </td>
+          <td>
+            <p class="PARRAFO">Campo
+              alfanum&eacute;rico de 4 posiciones, obligatorio, en el que se registra
+              el c&oacute;digo asignado a cada una de las diferentes etapas por las
+              que deben transitar las solicitudes.</p>
+          </td>
+        </tr>
+        <tr>
+          <td class="titletable">
+            <p class="SUBTITULO">Nombre</p>
+          </td>
+          <td>
+            <p class="PARRAFO">En
+              este campo alfanum&eacute;rico de 60 posiciones, obligatorio, se debe
+              registrar el nombre o breve descriptivo de cada etapa codificada.</p>
+          </td>
+        </tr>
+        <tr>
+          <td class="titletable">
+            <p class="SUBTITULO">Prototipo</p>
+          </td>
+          <td>
+            <p class="PARRAFO">Campo
+              obligatorio que posee lista de valores adjunta de la que debe seleccionarse el c&oacute;digo
+              interno con el que el sistema gestiona la correspondiente etapa. Como
+              ya se mencion&oacute;, un mismo prototipo puede tener asociadas dos
+              o m&aacute;s etapas, o lo que es lo mismo, diferentes etapas definidas
+              por la entidad pueden estar asociadas a un mismo prototipo.</p>
+          </td>
+        </tr>
+      </table>
+
+      <p class="PARRAFO"><span class="PARRAFO"><span class="SUBTITULO">Actualizar:</span>
+          Si el usuario invoca la opci&oacute;n Actualizar se despliega un nuevo formulario
+          en el cual los &uacute;nicos campos modificables son: Nombre, y Prototipo.</span></p>
+      <p class="TITLE"><img src="../img/SOF_001B2.PNG" 258" height="133"></p>
+
+      <p class="PARRAFO"><span class="SUBTITULO"><a name="Documentos"></a>Documentos:</span>
+        Conjunto de campos en los que se relacionan los diferentes documentos que
+        pueden ser requeridos a manera de soporte en proceso de evaluaci&oacute;n
+        de cada solicitud. En la opci&oacute;n Etapas de los Par&aacute;metros
+        solicitudes por producto, se define cu&aacute;les de estos documentos son
+        requeridos en cada una de las etapas.</p>
+      <p class="TITLE"><img src="../img/SOF_001B3.PNG" 603" height="392"></p>
+
+      <p><span class="SUBTITULO">Adicionar:</span> Si el usuario invoca la opci&oacute;n
+        Adicionar se despliega un formulario con los siguientes campos<span>:</span></p>
+      <p class="TITLE"><img src="../img/SOF_001B4.PNG" 214" height="99"></p>
+      <table>
+        <tr>
+          <td class="titletable">
+            <p class="SUBTITULO"><b>C&oacute;digo</b></p>
+          </td>
+          <td>
+            <p class="PARRAFO">Campo
+              num&eacute;rico de 3 d&iacute;gitos obligatorio en el que se registra
+              el c&oacute;digo de cada uno de los documentos potencialmente requeridos
+              a los clientes a manera de soporte.</p>
+          </td>
+        </tr>
+        <tr>
+          <td class="titletable">
+            <p class="SUBTITULO">Nombre</p>
+          </td>
+          <td>
+            <p class="PARRAFO">Es
+              este campo alfanum&eacute;rico de 60 posiciones, obligatorio, debe incluirse
+              el nombre o breve descriptivo de los documentos codificados.</p>
+          </td>
+        </tr>
+      </table>
+
+      <p class="PARRAFO"><span class="PARRAFO"><span class="SUBTITULO">Actualizar:</span>
+          Si el usuario invoca la opci&oacute;n Actualizar se despliega un nuevo formulario
+          en el cual el &uacute;nico campo modificable es: Nombre.</span></p>
+      <p class="TITLE"><img src="../img/SOF_001B5.PNG" 214" height="103"></p>
+
+      <p><span class="PARRAFO"><a href="SOH_001B1.html">Filtros</a>
+        <b> |</span></b></b><a href="SOH_001B2.html">Funcionarios</a> |<span>
+          <b></b></span><a href="SOH_005B4.html"><b><b><span class="PARRAFO"></span></b></b>
+        </a><a href="SOH_001B3.html">Calificaci&oacute;n</a><b><b><span class="PARRAFO">|</span></b></b>
+        <span class="PARRAFO"><a href="SOH_001B4.html">Negaci&oacute;n</a> |<span>
+            <b></b></span><a href="SOH_005B4.html"><b><b><span class="PARRAFO"></span></b></b>
+          </a><a href="SOH_001B5.html">Variables cupo</a><b><b><span class="PARRAFO">|</span></b></b>
+          <span class="PARRAFO"><a href="SOH_001B6.html">Globo de localizaci&oacute;n</a></span></span>
+      </p>
+
+  </section>
+  <script src="../js/menu.js"></script>
+
+  <footer>
+    <div>
+      <img class="TITLE" src="../img/logo.PNG">
+    </div>
+    <p>OpenCard SAS</p>
+    <p>Calle 77 Nº 11-19 Piso 4°, Bogotá D.C.</p>
+    <p>Tel (57) 601 - 313 37 75 <a href="http://www.OpenCard.com" target="_blank">www.OpenCard.com</a></p>
+
+  </footer>
+</body>
+
+</html>

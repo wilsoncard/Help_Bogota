@@ -1,0 +1,638 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>BANKBU®</title>
+  <link rel="stylesheet" href="../css/pages.css">
+  <link rel="stylesheet" href="../css/style.css">
+  <link rel="icon" href="../img/ACQUIRER-logo.JPG" type="image/x-icon">
+</head>
+
+<body>
+
+  <header>
+    <img class="logo" src="../img/logoBankbu_.PNG" alt="Logo de Mi Empresa">
+    <div id="menuBtn">
+      <img class="TITLE" src="../img/menu.PNG" alt="Botón de Menú ">
+    </div>
+  </header>
+  <nav>
+    <ul>
+      <li>
+        <a href="../index.html" class="main-optionINICIO">INICIO</a>
+      </li>
+      <li>
+        <a href="NUH_INTB.html" class="main-optionINTRODUCCIÓN">INTRODUCCIÓN</a>
+      </li>
+      <li><a href="#" class="main-option">NUCLEO ▼</a>
+        <ul>
+          <li><a href="NUH_000B.html">Config. Sistema</a></li>
+          <li><a href="NUH_00B_N2.html">Parametros</a></li>
+          <li><a href="NUH_00B_inicio.html">Inicio</a></li>
+          <li><a href="NUH_00B_proceso.html">Procesos</a></li>
+          <li><a href="NUH_00B_inf.html">Inf. Cliente</a></li>
+          <li><a href="NUH_00B_conta.html">Contabilidad</a></li>
+          <li style="visibility: hidden; display: none;"><a href="NUH_00B_audi.html">Auditoria</a></li>
+
+        </ul>
+      </li>
+      <li>
+        <a href="#" class="main-option">EMISOR ▼</a>
+        <ul>
+          <li><a href="EMH_000B.html">Productos</a></li>
+          <li><a href="EMH_000Bsoli.html">Solicitudes</a></li>
+          <li><a href="EMH_000Bmerca.html">Mercadeo</a></li>
+          <li><a href="EMH_000Bservi.html">Servicio Al Cliente</a></li>
+          <li><a href="EMH_000Bpendi.html">Pendientes</a></li>
+          <li><a href="EMH_000Btrans.html">Transaccionabilidad</a></li>
+          <li><a href="EMH_000Bauto.html">Autorizaciones</a></li>
+          <li><a href="EMH_000Bplasti.html">Adm. Plasticos</a></li>
+          <li><a href="EMH_000Brecla.html">Reclamos</a></li>
+          <li><a href="MEH_032B.html">Lealtad</a></li>
+          <li><a href="COH_064B.html">Cobranzas</a></li>
+        </ul>
+      </li>
+      <li style="visibility: hidden">
+        <a href="ACH_000B.html" class="main-option">ADQUIRIENTE</a>
+      </li>
+      <li style="visibility: hidden">
+        <a href="DBH_000B.html" class="main-option">TARJETA DEBITO</a>
+      </li>
+    </ul>
+  </nav>
+
+  <section>
+    <div>
+      <table>
+        <tr>
+          <td>
+            <div>
+              <p class=" TITLE">Origen de transacciones - Transacciones</p>
+            </div>
+          </td>
+        </tr>
+      </table>
+      <p class="PARRAFO">En este formulario que se invoca desde el
+        hiperv&iacute;nculo Transacciones contenido en el formulario <a href="NUH_027B.html">or&iacute;genes
+          de transacciones</a> se registra la codificaci&oacute;n y descripci&oacute;n
+        de las distintas transacciones v&aacute;lidas para cada uno de los or&iacute;genes,
+        relacionando para cada una, en caso de aplicar los costos asociados a la misma.</p>
+      <p class="TITLE"><img src="../img/NUF_027E4.PNG"></p>
+
+      <p class="PARRAFO">El formulario cuenta con un filtro mediante
+        el cual el usuario puede hacer consultas selectivas bien sea por el c&oacute;digo
+        de la transacci&oacute;n original o la descripci&oacute;n de la misma.</p>
+      <p class="TITLE"><img src="../img/NUF_027E1.PNG"></p>
+
+      <p class="PARRAFO">El formulario contiene las opciones Actualizar,
+        Eliminar, Adicionar y Detalle. El formulario tambi&eacute;n contiene los hiperv&iacute;nculos
+        <a href="NUH_027B1.html#BL_CONVENIOS"> Prevalidaciones convenio</a>,
+        <a href="NUH_027B1.html#BL_MOTIVOS"> Motivos de devoluci&oacute;n</a>
+        y <a href="NUH_027B1.html#BL_CONTRACARGOS">Transacciones
+          origen contracargos</a> que le permiten a la entidad definir las caracter&iacute;sticas
+        propias y los par&aacute;metros adicionales que aplican para cada transacci&oacute;n
+        en particular seleccionada por el usuairo, transacci&oacute;n que a su vez
+        se encuentra asociada siempre a un origen espec&iacute;fico.
+      </p>
+      <p class="PARRAFO"><span class="SUBTITULO">Adicionar:</span>
+        Si el usuario invoca la opci&oacute;n Adicionar se despliega un nuevo formulario
+        que se encuentra dividido en tres bloques de datos: Par&aacute;metros, Canje
+        internacional y Validaciones.</p>
+      <p class="PARRAFO">Al ingresar al formulario por defecto se despliega
+        siempre en el bloque Par&aacute;metros.</p>
+      <p class="TITLE"><img src="../img/NUF_027E5.PNG"></p>
+      <p class="TITLE">Descripci&oacute;n de campos</p>
+      <table>
+        <tr>
+          <td class="titletable">
+            <p class="SUBTITULO"><b><span>Transacci&oacute;n</span></b></p>
+          </td>
+          <td>
+            <p class="PARRAFO">Campo
+              num&eacute;rico de hasta 6 d&iacute;gitos en el cual se registra el
+              c&oacute;digo que identifica la transacci&oacute;n original que se est&aacute;
+              parametrizando y para la que se definen las dem&aacute;s condiciones
+              del presente formulario.</p>
+          </td>
+        </tr>
+
+        <tr>
+          <td class="titletable">
+            <p class="SUBTITULO"><b><span>Descripci&oacute;n</span></b></p>
+          </td>
+          <td>
+            <p class="PARRAFO">En
+              este campo alfanum&eacute;rico de 30 caracteres, se registra la descripci&oacute;n
+              o nombre asociada a cada transacci&oacute;n original.</p>
+          </td>
+        </tr>
+
+        <tr>
+          <td class="titletable">
+            <p class="SUBTITULO"><b><span>Plazo
+                  intercambio </span></b></p>
+          </td>
+          <td>
+            <p class="PARRAFO">En
+              este campo num&eacute;rico de 2 d&iacute;gitos, en el que se indica
+              el plazo est&aacute;ndar fijado por el operador, para que la entidad
+              genere la transacci&oacute;n de devoluci&oacute;n autom&aacute;tica
+              por no haber recibido respuesta oportuna a la solicitud de documentos.
+              Aplica cuando en <a href="NUH_055B.html">par&aacute;metros
+                operativos</a> se haya definido en el campo Plazo intercambio
+              la opci&oacute;n Transacci&oacute;n.</p>
+          </td>
+        </tr>
+
+        <tr>
+          <td class="titletable">
+            <p class="SUBTITULO"><b><span>Plazo
+                  recibido </span></b></p>
+          </td>
+          <td>
+            <p class="PARRAFO">Campo
+              num&eacute;rico de 2 d&iacute;gitos, que aplica para aquellas transacciones
+              relacionadas con la solicitud de documentos, y en el que se registra
+              el plazo de que dispone la entidad para presentar o enviar la solicitud
+              o reclamaci&oacute;n a la entidad contraparte.</p>
+          </td>
+        </tr>
+
+        <tr>
+          <td class="titletable">
+            <p class="SUBTITULO"><b><span>Liquida
+                  comisi&oacute;n nacional</span></b></p>
+          </td>
+          <td>
+            <p class="PARRAFO">Esta
+              campo tipo combo permite seleccionar entre Si o No la transacci&oacute;n
+              debe generar liquidaci&oacute;n de comisi&oacute;n dentro del canje
+              nacional.</p>
+          </td>
+        </tr>
+
+        <tr>
+          <td class="titletable">
+            <p class="SUBTITULO"><b><span>Liquida
+                  comisi&oacute;n internacional</span></b></p>
+          </td>
+          <td>
+            <p class="PARRAFO">Campo
+              que contiene un combo en el cual se slecciona Si o No la transacci&oacute;n
+              debe generar liquidaci&oacute;n de comisi&oacute;n dentro del canje
+              internacional.</p>
+          </td>
+        </tr>
+
+        <tr>
+          <td class="titletable">
+            <p class="SUBTITULO"><b><span>Tipo
+                  de documento</span></b></p>
+          </td>
+          <td>
+            <p class="PARRAFO">Este
+              campo tipo combo del cual se puede seleccionar entre Nota cr&eacute;dito,
+              Error de canje, Nota d&eacute;bito, Transacci&oacute;n no original
+              o Transacci&oacute;n origen el tipo de documento que soporta
+              la transacci&oacute;n.</p>
+          </td>
+        </tr>
+
+        <tr>
+          <td class="titletable">
+            <p class="SUBTITULO"><b><span>Acci&oacute;n
+                  para compensaci&oacute;n recibida</span></b></p>
+          </td>
+          <td>
+            <p class="PARRAFO">Campo
+              dise&ntilde;ado para uso futuro, que posee lista de valores de la que
+              se puede seleccionar entre Suma o Resta la implicaci&oacute;n que tiene
+              cada transacci&oacute;n dentro del canje enviado.</p>
+          </td>
+        </tr>
+
+        <tr>
+          <td class="titletable">
+            <p class="SUBTITULO"><b><span>Naturaleza</span></b></p>
+          </td>
+          <td>
+            <p class="PARRAFO">Esta
+              campo obligatorio contiene un combo con las opciones D&eacute;bito,
+              Cr&eacute;dito o No aplica para seleccionar la escencia
+              de la transacci&oacute;n seg&uacute;n corresponda.</p>
+          </td>
+        </tr>
+
+        <tr>
+          <td class="titletable">
+            <p class="SUBTITULO"><b><span>Concepto</span></b></p>
+          </td>
+          <td>
+            <p class="PARRAFO">Campo
+              con lista de valores en el cual se debe seleccionar el <a href="NUH_059B.html">concepto
+                de la transacci&oacute;n</a> de acuerdo con la forma en que &eacute;sta
+              afecta el saldo de la tarjeta.</p>
+          </td>
+        </tr>
+
+        <tr>
+          <td class="titletable">
+            <p class="SUBTITULO"><b><span>D&iacute;as
+                  aplica pago</span></b></p>
+          </td>
+          <td>
+            <p class="PARRAFO">En
+              este campo num&eacute;rico la entidad se&ntilde;ala el n&uacute;mero
+              de d&iacute;as que deben transcurrir para afectar la cuenta de los establecimientos
+              por los valores resultantes de los dep&oacute;sitos efectuados por &eacute;stos.</p>
+          </td>
+        </tr>
+
+        <tr>
+          <td class="titletable">
+            <p class="SUBTITULO"><b><span>Porcentaje
+                  m&aacute;ximo iva</span></b></p>
+          </td>
+          <td>
+            <p class="PARRAFO">En
+              este campo num&eacute;rico de 3 posiciones enteras y 2 decimales, la
+              entidad define el porcentaje de IVA que se autoriza liquidar como m&aacute;ximo
+              en los comprobantes de movimiento manual y electr&oacute;nico, en donde
+              si el movimiento supera dicho par&aacute;metro se genera una <a href="NUH_016B.html">causal
+                de rechazo</a> envi&aacute;ndolo al destino definido por la misma
+              entidad.</p>
+          </td>
+        </tr>
+      </table>
+      <p class="PARRAFO">El segundo bloque de datos del formulario adicionar
+        transacci&oacute;n se denomina Canje internacional y contiene los siguientes
+        campos</p>
+      <p class="TITLE"><img src="../img/NUF_027E6.PNG"></p>
+      <p class="TITLE">Descripci&oacute;n de campos</p>
+      <table>
+        <tr>
+          <td class="titletable">
+            <p class="SUBTITULO"><b><span>Costo
+                  de servicio de la transacci&oacute;n</span></b></p>
+          </td>
+          <td>
+            <p class="PARRAFO">Campo
+              num&eacute;rico de 14 enteros y dos decimales dentro del que se define
+              el valor que cobra el <a href="NUH_054B.html">compensador</a>
+              por cada transacci&oacute;n internacional que viaje tanto en el canje
+              recibido como en el enviado. Esto significa, que al valor total de la
+              compra se le aplica el porcentaje definido en este campo, y al resultado
+              obtenido se le aplica el indicador liquidaci&oacute;n costos trx determinado
+              en <a href="INH_034B.html">Par&aacute;metros franquicia</a>,
+              generando as&iacute; el valor correspondiente a los ingresos por proceso.</p>
+          </td>
+        </tr>
+
+        <tr>
+          <td class="titletable">
+            <p class="SUBTITULO"><b><span>Comisi&oacute;n
+                  proporcional para banco</span></b></p>
+          </td>
+          <td>
+            <p class="PARRAFO">Campo
+              num&eacute;rico de 3 enteros y 2 decimales, dentro del que se define
+              el valor porcentual a aplicar a la comisi&oacute;n sobre el monto de
+              la transacci&oacute;n y destinado a la entidad emisora de la tarjeta.
+              Esto es, al resultado calculado en el campo inmediatamente anterior,
+              se aplica el valor definido en este para determinar los ingresos por
+              servicio de red.</p>
+          </td>
+        </tr>
+      </table>
+      <p class="PARRAFO">El tercer bloque de datos del formulario adicionar
+        transacci&oacute;n se denomina Validaciones y contiene los siguientes campos</p>
+      <p class="TITLE"><img src="../img/NUF_027E7.PNG"></p>
+      <p class="TITLE">Descripci&oacute;n de campos</p>
+      <table>
+        <tr>
+          <td class="titletable">
+            <p class="SUBTITULO"><b><span>Procedimiento</span></b></p>
+          </td>
+          <td>
+            <p class="PARRAFO">Campo
+              con lista de valores en el cual se selecciona el programa que se va
+              a ejecutar como parte del proceso de validaciones a las que ser&aacute;
+              sometida la transacci&oacute;n original y de cuyo resultado depende
+              en &uacute;ltimas el destino de la misma. El sistema permite definir
+              hasta 20 validadores para una transacci&oacute;n los cuales ser&aacute;n
+              ejecutados exactamente en el mismo orden en el que son ingresados en
+              el formulario.</p>
+          </td>
+        </tr>
+
+        <tr>
+          <td class="titletable">
+            <p class="SUBTITULO"><b><span>Indicador</span></b></p>
+          </td>
+          <td>
+            <p class="PARRAFO">Este
+              campo tipo combo cuenta con las opciones Ejecutar y No
+              ejecutar para indicarle al sistema si en el momento de validar
+              la transacci&oacute;n original asociada al origen, se debe aplicar o
+              no el validador.</p>
+          </td>
+        </tr>
+      </table>
+      <div>
+        <p class="PARRAFO"><b><span class="SUBTITULO">
+              Actualizar</span></b>: Si el usuario selecciona un registro e invoca la
+          opci&oacute;n Actualizar se despliega un formulario en el cual el &uacute;nico
+          campo NO modificable es la Transacci&oacute;n.
+        </p>
+        <p class="TITLE"><img src="../img/NUF_027E8.PNG"></p>
+        .
+        <p class="PARRAFO"><b><span class="SUBTITULO">Detalle</span></b>:
+          Si el usuario selecciona un registro e invoca la opci&oacute;n Detalle se
+          despliega un formulario con todos los datos del registro y en el cual ninguno
+          de sus campos es modificable</p>
+        <p class="TITLE"><img src="../img/NUF_027E9.PNG"></p>
+        .
+        <p class="PARRAFO"><a name="BL_CONVENIOS"></a><b>Prevalidaciones
+            convenio </b>: En este formulario se registran los diferentes validadores
+          que aplican previamente a las transacciones de tarjetas que pertenecen a
+          productos asociados a convenios. Los validadores aqu&iacute; parametrizados
+          aplican exclusivamente para el origen y transacci&oacute;n original seleccionados
+          por el usuario al momento de invocar este formulario.correspondientes.</p>
+        <p class="TITLE"><img src="../img/NUF_027E12.PNG"></p>
+
+        <p class="PARRAFO">El formulario contiene las opciones Actualizar,
+          Eliminar y Adicionar.</p>
+        <p class="PARRAFO"><span class="SUBTITULO">Adicionar:</span>
+
+          si el usuario invoca la opci&oacute;n Adicionar se despliega un nuevo formulario.
+
+        </p>
+        <p class="TITLE"><img src="../img/NUF_027E13.PNG"></p>
+        <p class="TITLE">Descripci&oacute;n de campos</p>
+        <table>
+          <tr>
+            <td class="titletable">
+              <p class="SUBTITULO"><b><span>Procedimiento</span></b></p>
+            </td>
+            <td>
+              <p class="PARRAFO">Campo
+                con lista de valores en el cual se selecciona el programa que se va
+                a ejecutar como parte del proceso de validaciones a las que ser&aacute;
+                sometida la transacci&oacute;n original y de cuyo resultado depende
+                en &uacute;ltimas el destino de la misma.</p>
+            </td>
+          </tr>
+
+          <tr>
+            <td class="titletable">
+              <p class="SUBTITULO"><b><span>Indicador</span></b></p>
+            </td>
+            <td>
+              <p class="PARRAFO">Este
+                campo tipo combo cuenta con las opciones Si y No para indicarle al
+                sistema si en el momento de validar la transacci&oacute;n original
+                asociada al origen, se debe aplicar o no el pre validador de convenio.</p>
+            </td>
+          </tr>
+
+          <tr>
+            <td class="titletable">
+              <p class="SUBTITULO"><b><span>Causal</span></b></p>
+            </td>
+            <td>
+              <p class="PARRAFO">Campo
+                num&eacute;rico de 4 d&iacute;gitos, en el que se registra la <a href="NUH_095B.html">causal
+                  de rechazo de convenio</a> asociada con el validador y que se
+                le colocar&aacute; a la transacci&oacute;n en caso que &eacute;sta
+                no supere este paso.</p>
+            </td>
+          </tr>
+        </table>
+
+        <p class="PARRAFO"><span class="SUBTITULO"><b><span>Actualizar</span></b><span>:</span></span><span>
+            si el usuario selecciona un registro e invoca la opci&oacute;n Actualizar
+            se despliega un formulario en el cual los campos modificables son Indicador
+            y Causal. </span></p>
+        <p class="TITLE"><img src="../img/NUF_027E14.PNG"></p>
+
+
+        <p class="PARRAFO"><a name="BL_MOTIVOS"></a><SPAN class="SUBTITULO">Motivos
+            de devoluci&oacute;n</span> : En este formulario se permite asociar a cada transacci&oacute;n
+          los diversos conceptos o motivos que pueden argumentarse dentro de los archivos
+          en que viaje la informaci&oacute;n de una transacci&oacute;n en proceso
+          de intercambio o disputa. Estos motivos deben corresponder con los est&aacute;ndares
+          definidos por las franquicias.</p>
+        <p class="TITLE"><img src="../img/NUF_027E15.PNG"></p>
+
+        <p class="PARRAFO">El formulario contiene las opciones Actualizar,
+          Eliminar y Adicionar. Tambi&eacute;n contiene el hiperv&iacute;nculo <a
+            href="NUH_027B1.html#BL_MOTI_RANGO">Motivos
+            por rango y plazo</a>.</p>
+        <p class="PARRAFO"><span class="SUBTITULO">Adicionar:</span>
+          si el usuario invoca la opci&oacute;n Adicionar se despliega un nuevo formulario.
+        </p>
+        <p class="TITLE"><img src="../img/NUF_027E16.PNG"></p>
+        <p class="TITLE">Descripci&oacute;n de campos</p>
+        <table>
+          <tr>
+            <td class="titletable">
+              <p class="SUBTITULO"><b><span>Motivo</span></b></p>
+            </td>
+            <td>
+              <p class="PARRAFO">En
+                este campo num&eacute;rico de 3 d&iacute;gitos, obligatorio, se registra
+                el c&oacute;digo que identifica el motivo por el cual una transacci&oacute;n
+                puede ser devuelta o presentada a reclamaci&oacute;n (intercambio)
+                entre las entidades adquirente y emisora.</p>
+            </td>
+          </tr>
+
+          <tr>
+            <td class="titletable">
+              <p class="SUBTITULO"><b><span>Descripci&oacute;n</span></b></p>
+            </td>
+            <td>
+              <p class="PARRAFO">Campo
+                alfanum&eacute;rico, obligatorio, que contiene el nombre o breve descriptivo
+                del motivo o concepto asociado al c&oacute;digo anterior.</p>
+            </td>
+          </tr>
+        </table>
+        <p class="PARRAFO"><span class="SUBTITULO"><b><span>Actualizar</span></b><span>:</span></span><span>
+            si el usuario selecciona un registro e invoca la opci&oacute;n Actualizar
+            se despliega un formulario en el cual el &uacute;nico campo modificable
+            es la Descripci&oacute;n</span><span>.
+          </span></p>
+        <p class="TITLE"><img src="../img/NUF_027E17.PNG"></p>
+        <p class="PARRAFO"><a name="BL_MOTI_RANGO"></a><span class="SUBTITULO">Motivos
+            por rango y plazo</span> : En este formulario se definen las condiciones para
+          validar los plazos de intercambio de movimiento que ha sido asociado a alg&uacute;n
+          motivo de devoluci&oacute;n. Es importante tener presente que la informaci&oacute;n
+          ingresada en este formulario aplica para el origen, transacci&oacute;n
+          original y motivo devoluci&oacute;n seleccionados por el usuario.</p>
+        <p class="TITLE"><img src="../img/NUF_027E18.PNG"></p>
+
+        <p class="PARRAFO">El formulario contiene las opciones Actualizar,
+          Eliminar y Adicionar.</p>
+        <p class="PARRAFO"><span class="SUBTITULO"><b><span>Adicionar</span></b><span>:</span></span><span>
+            si el usuario invoca la opci&oacute;n Adicionar se despliega un nuevo formulario.
+          </span>
+        </p>
+        <p class="TITLE"><img src="../img/NUF_027E19.PNG"></p>
+        <p class="TITLE">Descripci&oacute;n de campos</p>
+        <table>
+          <tr>
+            <td class="titletable">
+              <p class="SUBTITULO"><b><span>Marca</span></b></p>
+            </td>
+            <td>
+              <p class="PARRAFO">Campo
+                obligatorio que contiene una lista de valores de la cual se selecciona
+                la <a href="NUH_033B.html">franquicia</a> sobre
+                la cual se definir&aacute;n las condiciones de validaci&oacute;n de
+                plazos para intercambio de acuerdo con el motivo de devoluci&oacute;n.</p>
+            </td>
+          </tr>
+
+          <tr>
+            <td class="titletable">
+              <p class="SUBTITULO"><b><span>Rango
+                    inicial </span></b></p>
+            </td>
+            <td>
+              <p class="PARRAFO">En
+                este campo num&eacute;rico de 14 posiciones enteras y 2 decimales,
+                obligatorio, se define el monto de la transacci&oacute;n a partir
+                del cual se validar&aacute; el plazo para intercambio.</p>
+            </td>
+          </tr>
+
+          <tr>
+            <td class="titletable">
+              <p class="SUBTITULO"><b><span>Rango
+                    final </span></b></p>
+            </td>
+            <td>
+              <p class="PARRAFO">Campo
+                num&eacute;rico de 16 posiciones enteras y 2 decimales, obligatorio,
+                en el cual se define el monto final de la transacci&oacute;n hasta
+                el cual se validar&aacute; el plazo para intercambio.</p>
+            </td>
+          </tr>
+
+          <tr>
+            <td class="titletable">
+              <p class="SUBTITULO"><b><span>Plazo</span></b></p>
+            </td>
+            <td>
+              <p class="PARRAFO">En
+                este campo obligatorio, se define el tiempo asignado al comprobante
+                para la validaci&oacute;n del plazo de intercambio. Este par&aacute;metro
+                aplica cuando en el campo Plazo intercambio de los <a href="NUH_055B.html">par&aacute;metros
+                  operativos</a> se ha seleccionado la opci&oacute;n Motivo.</p>
+            </td>
+          </tr>
+        </table>
+
+        <p class="PARRAFO"><span class="SUBTITULO"><b><span>Actualizar</span></b><span>:</span></span><span>
+            si el usuario selecciona un registro e invoca la opci&oacute;n Actualizar
+            se despliega un formulario en el cual los campos modificables son Rango
+            inicial, Rango final y Plazo</span></p>
+        <p class="TITLE"><img src="../img/NUF_027E20.PNG"></p>
+
+
+        <p class="PARRAFO"><a name="BL_CONTRACARGOS"></a><span class="SUBTITULO">Transacciones
+            origen contracargos</span> : en este formulario se registra la informaci&oacute;n
+          asociada con el proceso de contracargos, y en &eacute;l se parametrizan
+          las transacciones que es posible generar acorde con cada origen de movimiento
+          y considerando el rol desempe&ntilde;ado por la entidad bien sea como emisor
+          o adquirente.</p>
+        <p class="TITLE"><img src="../img/NUF_027E21.PNG"></p>
+
+        <p class="PARRAFO">El formulario contiene las opciones Actualizar,
+          Eliminar y Adicionar.</p>
+        <p class="PARRAFO"><span class="SUBTITULO"><b><span>Adicionar</span></b><span>:</span></span><span>
+            si el usuario invoca la opci&oacute;n Adicionar se despliega un nuevo formulario.
+          </span>
+        </p>
+        <p class="TITLE"><img src="../img/NUF_027E22.PNG"></p>
+        <p class="TITLE">Descripci&oacute;n de campos</p>
+        <table>
+          <tr>
+            <td class="titletable">
+              <p class="SUBTITULO"><b><span>Origen
+                    requiere </span></b></p>
+            </td>
+            <td>
+              <p class="PARRAFO">Este
+                campo obligatorio posee lista de valores de la cual debe seleccionarse
+                el <a href="NUH_027B.html">origen</a> o fuente
+                de movimiento a parametrizar.</p>
+            </td>
+          </tr>
+
+          <tr>
+            <td class="titletable">
+              <p class="SUBTITULO"><b><span>Transacci&oacute;n
+                    origen requiere</span></b></p>
+            </td>
+            <td>
+              <p class="PARRAFO">Campo
+                obligatorio con ista de valores que permite asociarle a cada origen
+                o fuente, las diferentes <a href="NUH_027B1.html">transacciones</a>
+                que pueden ser invocadas o argumentadas, de acuerdo con la etapa o
+                estado del proceso de contracargo.</p>
+            </td>
+          </tr>
+
+          <tr>
+            <td class="titletable">
+              <p class="SUBTITULO"><b><span>Destino
+                    movimiento </span></b></p>
+            </td>
+            <td>
+              <p class="PARRAFO">En
+                este campo obligatorio tipo combo que contiene las opciones Diario,
+                Intercambio o Ambas la entidad puede seleccionar el
+                destino que se le debe dar a las transacciones. </p>
+            </td>
+          </tr>
+
+          <tr>
+            <td class="titletable">
+              <p class="SUBTITULO"><b><span>Rol
+                    entidad </span></b></p>
+            </td>
+            <td>
+              <p class="PARRAFO">Campo
+                obligatorio que contiene las opciones Emisor o Adquirente
+                y en el cual se selecciona el rol o papel desempe&ntilde;ado por la
+                entidad respecto de cada transacci&oacute;n y origen de la misma,
+                el cual var&iacute;a dependiendo de la etapa o fase en que se encuentre
+                el proceso de contracargo.</p>
+            </td>
+          </tr>
+        </table>
+        <p class="PARRAFO"><span class="SUBTITULO"><b><span>Actualizar</span></b><span>:</span></span><span>
+            si el usuario selecciona un registro e invoca la opci&oacute;n Actualizar
+            se despliega un formulario en el cual los campos modificables son Destino
+            movimiento y Rol entidad. </span></p>
+        <p class="TITLE"><img src="../img/NUF_027E23.PNG"></p>
+  </section>
+  <script src="../js/menu.js"></script>
+</body>
+<footer>
+  <div>
+    <img class="TITLE" src="../img/logo.PNG">
+  </div>
+  <p>OpenCard SAS</p>
+  <p>Calle 77 Nº 11-19 Piso 4°,Bogotá D.C.</p>
+  <p>Tel (57) 601 - 313 37 75 <a href="http://www.OpenCard.com" target="_blank">www.OpenCard.com</a></p>
+
+
+
+</footer>
+
+</html>

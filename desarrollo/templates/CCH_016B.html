@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>BANKBU®</title>
+  <link rel="stylesheet" href="../css/pages.css">
+  <link rel="stylesheet" href="../css/style.css">
+  <link rel="icon" href="../img/ACQUIRER-logo.JPG" type="image/x-icon">
+</head>
+
+<body>
+
+  <header>
+    <img class="logo" src="../img/logoBankbu_.PNG" alt="Logo de Mi Empresa">
+    <div id="menuBtn">
+      <img class="TITLE" src="../img/menu.PNG" alt="Botón de Menú ">
+    </div>
+  </header>
+  <nav>
+    <ul>
+      <li>
+        <a href="../index.html" class="main-optionINICIO">INICIO</a>
+      </li>
+      <li>
+        <a href="NUH_INTB.html" class="main-optionINTRODUCCIÓN">INTRODUCCIÓN</a>
+      </li>
+      <li><a href="#" class="main-option">NUCLEO ▼</a>
+        <ul>
+          <li><a href="NUH_000B.html">Config. Sistema</a></li>
+          <li><a href="NUH_00B_N2.html">Parametros</a></li>
+          <li><a href="NUH_00B_inicio.html">Inicio</a></li>
+          <li><a href="NUH_00B_proceso.html">Procesos</a></li>
+          <li><a href="NUH_00B_inf.html">Inf. Cliente</a></li>
+          <li><a href="NUH_00B_conta.html">Contabilidad</a></li>
+          <li style="visibility: hidden; display: none;"><a href="NUH_00B_audi.html">Auditoria</a></li>
+
+        </ul>
+      </li>
+      <li>
+        <a href="#" class="main-option">EMISOR ▼</a>
+        <ul>
+          <li><a href="EMH_000B.html">Productos</a></li>
+          <li><a href="EMH_000Bsoli.html">Solicitudes</a></li>
+          <li><a href="EMH_000Bmerca.html">Mercadeo</a></li>
+          <li><a href="EMH_000Bservi.html">Servicio Al Cliente</a></li>
+          <li><a href="EMH_000Bpendi.html">Pendientes</a></li>
+          <li><a href="EMH_000Btrans.html">Transaccionabilidad</a></li>
+          <li><a href="EMH_000Bauto.html">Autorizaciones</a></li>
+          <li><a href="EMH_000Bplasti.html">Adm. Plasticos</a></li>
+          <li><a href="EMH_000Brecla.html">Reclamos</a></li>
+                    <li><a href="MEH_032B.html">Lealtad</a></li>
+                    <li><a href="COH_064B.html">Cobranzas</a></li>
+        </ul>
+      </li>
+      <li style="visibility: hidden">
+        <a href="ACH_000B.html" class="main-option">ADQUIRIENTE</a>
+      </li>
+      <li style="visibility: hidden">
+        <a href="DBH_000B.html" class="main-option">TARJETA DEBITO</a>
+      </li>
+    </ul>
+  </nav>
+
+  <section>
+    <div>
+      <table>
+        <tr>
+          <td>
+            <div>
+              <p class="TITLE">Actualizaci&oacute;n / Manejo de actividades</p>
+            </div>
+          </td>
+        </tr>
+      </table>
+      <p>Una vez se ha ejecutado el proceso de <A href="CCH_015B.html" target="_self">Actividades por agente de
+            cobro</A> se alimenta la mayor parte de los campos de la forma o pantalla, con la informaci&oacute;n
+        b&aacute;sica y necesaria para que cuando cada agente ingrese al sistema le sean reportadas las obligaciones que
+        se le han asignado. A partir de este punto, la forma permite la interacci&oacute;n con algunos de sus campos
+        para registrar la evoluci&oacute;n de cada una de las actividades.</p>
+      <p class="PARRAFO">La opci&oacute;n consta de un wizard de dos formularios:</p>
+      <p class="SUBTITULO">Actividades:</p>
+      <p class="TITLE"><img src="../img/CCF_016B.PNG"></p>
+
+      <p class="PARRAFO"><span class="SUBTITULO">Resumen:</span>  Si
+        el usuario invoca la opci&oacute;n Adicionar se despliega un formulario con
+        los siguientes campos<span>:</span></p>
+      <table>
+        <tr>
+          <td class="titletable">
+            <p class="SUBTITULO"><b><span><span>Actividad</span></span></b></p>
+          </td>
+          <td>
+            <p>Dupla de campos que despliegan el c&oacute;digo y nombre de la actividad asociada al cobro, de acuerdo
+              con lo parametrizado en la opci&oacute;n <A href="CCH_004B.html" target="_self">Actividades de
+                  cobro</A> de este mismo m&oacute;dulo.</p>
+          </td>
+        </tr>
+        <tr>
+          <td class="titletable">
+            <p class="SUBTITULO"><span>N&uacute;mero de obligaci&oacute;n </span></p>
+          </td>
+          <td>
+            <p class="PARRAFO">Campos de salida en los que son desplegados el c&oacute;digo que identifica el tipo
+                de obligaci&oacute;n y n&uacute;mero de la misma.</p>
+          </td>
+        </tr>
+        <tr>
+          <td class="titletable">
+            <p class="SUBTITULO"><b><span><span>Tipo de cobro </span></span></b></p>
+          </td>
+          <td>
+            <p>En estos campos de salida se presentan el c&oacute;digo del <A href="CCH_002B.html"
+                  target="_self">tipo de cobro</A>.</p>
+          </td>
+        </tr>
+        <tr>
+          <td class="titletable">
+            <p class="SUBTITULO"><b><span><span>N&uacute;mero de cobro </span></span></b></p>
+          </td>
+          <td>
+            <p>Muestra el n&uacute;mero de la cuota sobre la que se adelantan las gestiones de cobro, donde por defecto
+              aparecer&aacute; el n&uacute;mero 1; este valor podr&aacute; variar se&ntilde;alando el n&uacute;mero de
+              cada una de las cuotas de la misma obligaci&oacute;n, a las que se les est&eacute; adelantando proceso de
+              cobro. </p>
+          </td>
+        </tr>
+        <tr>
+          <td class="titletable">
+            <p class="SUBTITULO"><b><span><span>Prioridad</span></span></b></p>
+          </td>
+          <td>
+            <p>Campo que sirve como referente para determinar la jerarqu&iacute;a en que deben ser atendidas las
+              actividades.</p>
+          </td>
+        </tr>
+        <tr>
+          <td class="titletable">
+            <p class="SUBTITULO"><b><span><span>Punta</span></span></b>je</p>
+          </td>
+          <td>
+            <p>Indica el valor porcentual que junto con el campo Prioridad brindan elementos para la
+              jerarquizaci&oacute;n de la atenci&oacute;n de las actividades asignadas a cada agente de cobro. Dicho
+              valor porcentual corresponde a la parametrizaci&oacute;n efectuada en la opci&oacute;n <A
+                  href="CCH_005B.html" target="_self">Par&aacute;metros de calificaci&oacute;n</A> de este mismo
+              men&uacute;. </p>
+          </td>
+        </tr>
+      </table>
+
+      <p class="PARRAFO"><span class="SUBTITULO">Detalle:</span>  Si el usuario invoca
+        la opci&oacute;n Detalle se despliega el siguiente formulario.<span>
+
+        </span></p>
+      <p class="TITLE"><img src="../img/CCF_006B4.PNG"></p>
+
+  </section>
+  <script src="../js/menu.js"></script>
+</body>
+<footer>
+  <div>
+    <img class="TITLE" src="../img/logo.PNG">
+  </div>
+  <p>OpenCard SAS</p>
+  <p>Calle 77 Nº 11-19 Piso 4°,Bogotá D.C.</p>
+  <p>Tel (57) 601 - 313 37 75 <a href="http://www.OpenCard.com" target="_blank">www.OpenCard.com</a></p>
+
+
+</footer>
+
+</html>

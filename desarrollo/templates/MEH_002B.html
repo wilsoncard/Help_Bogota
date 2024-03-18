@@ -1,0 +1,2203 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>BANKBU®</title>
+  <link rel="stylesheet" href="../css/style.css">
+  <link rel="stylesheet" href="../css/pages.css">
+  <link rel="icon" href="../img/ACQUIRER-logo.JPG" type="image/x-icon">
+</head>
+
+<body>
+  <header>
+    <img class="logo" src="../img/logoBankbu_.PNG" alt="Logo de Mi Empresa">
+    <div id="menuBtn">
+      <img class="TITLE" src="../img/menu.PNG" alt="Botón de Menú ">
+    </div>
+  </header>
+    <nav>
+    <ul>
+      <li>
+        <a href="../index.html" class="main-optionINICIO">INICIO</a>
+      </li>
+      <li>
+        <a href="NUH_INTB.html" class="main-optionINTRODUCCIÓN">INTRODUCCIÓN</a>
+      </li>
+      <li><a href="#" class="main-option">NUCLEO ▼</a>
+        <ul>
+          <li><a href="NUH_000B.html">Config. Sistema</a></li>
+          <li><a href="NUH_00B_N2.html">Parametros</a></li>
+          <li><a href="NUH_00B_inicio.html">Inicio</a></li>
+          <li><a href="NUH_00B_proceso.html">Procesos</a></li>
+          <li><a href="NUH_00B_inf.html">Inf. Cliente</a></li>
+          <li><a href="NUH_00B_conta.html">Contabilidad</a></li>
+          <li style="visibility: hidden; display: none;"><a href="NUH_00B_audi.html">Auditoria</a></li>
+
+        </ul>
+      </li>
+      <li>
+        <a href="#" class="main-option">EMISOR ▼</a>
+        <ul>
+          <li><a href="EMH_000B.html">Productos</a></li>
+          <li><a href="EMH_000Bsoli.html">Solicitudes</a></li>
+          <li><a href="EMH_000Bmerca.html">Mercadeo</a></li>
+          <li><a href="EMH_000Bservi.html">Servicio Al Cliente</a></li>
+          <li><a href="EMH_000Bpendi.html">Pendientes</a></li>
+          <li><a href="EMH_000Btrans.html">Transaccionabilidad</a></li>
+          <li><a href="EMH_000Bauto.html">Autorizaciones</a></li>
+          <li><a href="EMH_000Bplasti.html">Adm. Plasticos</a></li>
+          <li><a href="EMH_000Brecla.html">Reclamos</a></li>
+                    <li><a href="MEH_032B.html">Lealtad</a></li>
+                    <li><a href="COH_064B.html">Cobranzas</a></li>
+        </ul>
+      </li>
+      <li style="visibility: hidden">
+        <a href="ACH_000B.html" class="main-option">ADQUIRIENTE</a>
+      </li>
+      <li style="visibility: hidden">
+        <a href="DBH_000B.html" class="main-option">TARJETA DEBITO</a>
+      </li>
+    </ul>
+  </nav>
+  <section>
+    <center>
+      <div>
+        <table>
+          <tr>
+            <td>
+              <div>
+                <p class="TITLE">Definici&oacute;n de productos</p>
+              </div>
+            </td>
+          </tr>
+        </table>
+        <p class="PARRAFO">Desde este formulario la entidad puede definir la combinación de bines,
+          segmentos y grupos de afinidad que van a conformar los diferentes productos a ofrecer a sus clientes. </p>
+        <p class="PARRAFO">El formulario contiene en la parte superior varios hipervínculos
+          que permiten invocar otros formularios en los cuales es posible adicionar, modificar, eliminar
+          caracter&igrave;sticas para los productos una vez que estos ya han sido creados en la base de datos: <a
+            href="MEH_002B1.html" >Líneas de crédito</a>, <a href="MEH_002B2.html" >Otros
+            cargos</a>, <a href="MEH_002B3.html" >Parámetros adicionales mora</a>, <a href="MEH_002B4.html"
+            >Otros plásticos,</a><a href="MEH_002B5.html" >Productos
+            amparados</a>, <a href="MEH_002B6.html" >Parámetros excepción</a>, <a href="MEH_002B7.html"
+            >Orden de aplicación de cuotas</a> y <a href="MEH_002B8.html" >Copia
+            productos</a>.</p>
+        <p class="TITLE"><img src="../img/MEF_002E1.PNG" 667" height="514"></p>
+        <p class="PARRAFO">El formulario contiene un filtro que le permite al usuario consultar la
+          información específica para los productos pertenecientes a un bin, un segmento o un grupo de afinidad, o un
+          producto en particular. Por defecto, al ingresar al formulario este trae todos los productos existentes en la
+          base de datos.</p>
+        <p class="TITLE"><img src="../img/MEF_002E.PNG"></p>
+
+        <p class="PARRAFO">El formulario contiene las opciones Actualizar, Eliminar, Adicionar y
+          Detalle.</p>
+        <p class="PARRAFO"><b><span class="SUBTITULO">Adicionar:</span></b> Si el usuario invoca la opción Adicionar se
+          despliega un wizard de
+          tres pasos.</p>
+        <p class="PARRAFO">La primera página del wizard se encuentra dividida en tres bloques de datos
+          (datos generales, saldo a favor y datos funcionales) y contiene los siguientes campos.</p>
+        <p class="TITLE"><img src="../img/MEF_002E2.PNG"></p>
+
+        <p class="TITLE">Descripción de campos</p>
+
+
+        <table width=736>
+          <tr>
+            <td class="titletable"><span class="SUBTITULO"><b>Bin</b></span> 
+            </td>
+            <td><span class="PARRAFO">
+                <p>Campo obligatorio con lista de
+                  valores de la cual se selecciona el <a href="MEH_001B.html" >bin</a> o prefijo con
+                  el cual se va a crear el nuevo producto.
+              </span></td>
+            </p>
+          </tr>
+          <tr>
+            <td><span class="SUBTITULO"><b>Producto</b></span></td>
+            <td><span class="PARRAFO">
+                <p>Este campo obligatorio contiene
+                  lista de valores de la cual se selecciona el producto o segmento que va a conformar el nuevo producto.
+              </span></td>
+            </p>
+          </tr>
+          <tr>
+            <td>
+              <p class="SUBTITULO"><b>Grupo de afinidad
+                </b></p>
+            </td>
+            <td>
+              <p class="PARRAFO">Campo obligatorio con lista de valores de la cual se selecciona el
+                grupo de afinidad que junto con el bin y el segmento van a conformar el nuevo producto.</p>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <p class="SUBTITULO"><b>Descripción</b></p>
+            </td>
+            <td>
+              <p class="PARRAFO">Este
+                campo alfanum&egrave;rico de hasta 30 caracteres, obligatorio, permite registrar el nombre o descripción
+                del nuevo producto a crear.
+              </p>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <p class="SUBTITULO"><b>Marca
+                </b></p>
+            </td>
+            <td>
+              <p class="PARRAFO">Campo
+                de salida que a partir del bin despliega la <a href="NUH_033B.html" >marca o
+                  franquicia</a> a la cual pertenece el producto a crear.
+              </p>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <p class="SUBTITULO"><b>Código medio de pago
+                </b></p>
+            </td>
+            <td>
+              <p class="PARRAFO">Este
+                campo obligatorio cuenta con lista de valores para seleccionar el tipo de medio de pago a que
+                corresponde el producto a crear.</p>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <p class="SUBTITULO"><b>Ciclo de facturación
+                </b></p>
+            </td>
+            <td>
+              <p class="PARRAFO">Campo
+                obligatorio con lista de valores de la cual se selecciona el ciclo de facturación que por defecto van a
+                tener todas las tarjetas asociadas con el nuevo producto.
+              </p>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <p class="SUBTITULO"><b>Vigencia
+                </b></p>
+            </td>
+            <td>
+              <p class="PARRAFO">En este campo numúrico de hasta dos dígitos, obligatorio, se registra
+                la cantidad de meses de vigencia que van a tener las tarjetas pertenecientes al nuevo producto.</p>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <p class="SUBTITULO"><b>Subserie número de tarjeta
+                </b></p>
+            </td>
+            <td>
+              <p class="PARRAFO">Campo obligatorio de hasta tres dígitos que permite registrar un valor
+                fijo que de acuerdo con lo definido por la entidad puede o no hacer parte del <a href="NUH_052B.html"
+                  >número de la tarjeta</a>.
+              </p>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <p class="SUBTITULO"><b>Moneda usada en parámetros
+                </b></p>
+            </td>
+            <td>
+              <p class="PARRAFO">Este
+                campo obligatorio contiene lista de valores para seleccionar la <a href="NUH_005B.html"
+                  >moneda</a> en la cual se expresar&agrave;n los sobrecupos, saldos de la deuda y
+                mora de las tarjetas pertenecientes al nuevo producto, as&igrave; como <a href="MEH_002B2.html"
+                  >Otros cargos</a> generados.</p>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <p class="SUBTITULO"><b>Cupo en múltiplos de
+                </b></p>
+            </td>
+            <td>
+              <p class="PARRAFO">Campo obligatorio tipo combo del cual se puede seleccionar la manera
+                como se calcular y otorgar el cupo del producto en el proceso de aumento masivo de cupos. </p>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <p class="SUBTITULO"><b>Ajuste cupos
+                </b></p>
+            </td>
+            <td>
+              <p class="PARRAFO">Este
+                campo obligatorio tipo combo permite seleccionar entre Truncar y Redondear, la acción
+                que debe tener en cuenta el sistema para ajustar los cupos calculados en el proceso de aumento masivo de
+                cupos, a partir del múltiplo seleccionado en el campo anterior.</p>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <p class="SUBTITULO"><b>Cupo máximo
+                </b></p>
+            </td>
+            <td>
+              <p class="PARRAFO">Campo numérico de hasta 14 enteros y 2 decimales en el cual se registra
+                el valor del cupo máximo que puede llegar a tener cualquier tarjeta perteneciente al nuevo producto.</p>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <p class="SUBTITULO"><b>D&igrave;as gracia abonos
+                </b></p>
+            </td>
+            <td>
+              <p class="PARRAFO">Este
+                campo num&egrave;rico obligatorio permite registrar la cantidad de d&igrave;as que tiene el cliente para
+                efectuar el pago mínimo de su producto sin que le sean liquidados intereses de mora.</p>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <p class="SUBTITULO"><b>Tipo producto
+                </b></p>
+            </td>
+            <td>
+              <p class="PARRAFO">Campo obligatorio que contiene un combo con las opciones
+                Personal y Empresarial para indicar el tipo de cliente al cual está dirigido el nuevo
+                producto (persona natural o jur&igrave;dica). Este campo permite por ejemplo que un mismo bin se puede
+                utilizar para crear productos empresariales y personales al mismo tiempo.</p>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <p class="SUBTITULO"><b>Manejo saldo a favor
+                </b></p>
+            </td>
+            <td>
+              <p class="PARRAFO">Campo obligatorio tipo combo, que contiene como única opción Crear
+                transacción de saldo a favor para indicarle al sistema que cada vez que se genere un saldo a
+                favor y este sea aplicado, se debe generar una transacción para mostrarle al cliente en el extracto y
+                formalizar as&igrave; dicho saldo.</p>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <p class="SUBTITULO"><b>Definición saldo a favor
+                </b></p>
+            </td>
+            <td>
+              <p class="PARRAFO">Este
+                campo obligatorio tipo combo permite seleccionar entre Exceso sobre el pago mínimo o Exceso
+                sobre el pago total la forma en que el sistema debe interpretar los pagos efectuados por el
+                cliente para determinar si se genera o no un saldo a favor. </p>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <p class="SUBTITULO"><b>Aplica para persona natural
+                </b></p>
+            </td>
+            <td>
+              <p class="PARRAFO">Campo obligatorio tipo combo, en el cual se puede seleccionar entre
+                Exclusivo empleado corporación, Exclusivo no empleado corporación o Todos el tipo de
+                cliente persona natural a quien va dirigido el producto, de acuerdo con la <a href="MEH_004B.html"
+                  >categoría</a> a la cual pertenece el cliente.</p>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <p class="SUBTITULO"><b>Exige avalista
+                </b></p>
+            </td>
+            <td>
+              <p class="PARRAFO">Campo obligatorio tipo combo del cual puede seleccionarse entre No
+                exige avalista, Avalista solo no raíz o vehículo o Exige avalista sin condiciones, la
+                condición que deben cumplir los solicitantes de este producto; la opción Avalista solo no raíz o
+                vehículo implica requerir avalista en el evento en que el solicitante no reporte información de
+                si posee o no bien raíz o vehículo.</p>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <p class="SUBTITULO"><b>Periodos dudoso recaudo
+                </b></p>
+            </td>
+            <td>
+              <p class="PARRAFO">Este
+                campo num&egrave;rico de hasta dos dígitos, obligatorio, permite registrar la altura de mora a partir de
+                la cual la obligación ya se considera de difícil cobro y se le debe aplicar el bloqueo correspondiente.
+              </p>
+            </td>
+          </tr>
+        </table>
+
+        <p class="PARRAFO">La primera página del wizard contiene los hipervínculos <a href="MEH_002B.html#BL_PARAMETROS"
+            >Parámetros</a>, <a href="MEH_002B.html#BL_CUOTAS" >Cuotas</a> y <a
+            href="MEH_002B.html#BL_EVENTOS" >Eventos</a> con los cuales se invocan otros formularios en los
+          que el usuario puede
+          adicionar más parámetros para el nuevo producto. Si el usuario lo desea y por comodidad también, se
+          sugiere adicionar inicialmente el producto diligenciando únicamente los campos obligatorios del
+          wizard (páginas 1, 2 y 3) y posteriormente, una vez que el producto haya sido creado agregar la información en
+          estos tres hipervínculos, invocando el botón <a href="MEH_002B.html#BL_ACTUALIZAR"
+            >actualizar</a>. De todas maneras se recomienda al usuario tener presente que
+          la información adicionada en los formularios parámetros, cuotas y eventos solo será guardada en la
+          base de datos cuando desde la tercera página del wizard de nuevo producto se utilice el botón finalizar. </p>
+        <p class="PARRAFO">Una vez que el actor ha diligenciado todos los datos de la primera página del wizard, se
+          puede desplazar a la segunda página denominada línea de crédito que contiene los siguientes campos.<b><span
+              class="SUBTITULO"></span></b></p>
+        <div class="PARRAFO">
+          <p class="TITLE"><img src="../img/MEF_002E3.PNG"></p>
+          <p class="TITLE">Descripción de campos</p>
+          <table>
+            <tr>
+              <td>
+                <p class="SUBTITULO"><b>Línea de crédito
+                  </b></p>
+              </td>
+              <td>
+                <p class="PARRAFO">Campo
+                  obligatorio con lista de valores de la cual se puede seleccionar la <a href="MEH_001B4.html"
+                    >línea de crédito</a> principal del producto.
+                </p>
+              </td>
+            </tr>
+
+            <tr>
+              <td>
+                <p class="SUBTITULO"><b>Moneda
+
+
+                  </b></p>
+              </td>
+              <td>
+                <p class="PARRAFO">Este
+                  campo obligatorio contiene lista de valores de la cual se selecciona la moneda en la cual se encuentra
+                  denominada la línea de crédito a adicionar al nuevo producto.</p>
+              </td>
+            </tr>
+
+            <tr>
+              <td>
+                <p class="SUBTITULO"><b>Modo de uso
+
+
+                  </b></p>
+              </td>
+              <td>
+                <p class="PARRAFO">Campo de salida que muestra como ínico valor 'Principal' teniendo en
+                  cuenta que para crear el producto se requiere siempre que este tenga una línea principal.</p>
+              </td>
+            </tr>
+
+            <tr>
+              <td>
+                <p class="SUBTITULO"><b>Tipo cartera
+
+                  </b></p>
+              </td>
+              <td>
+                <p class="PARRAFO">Este campo obligatorio contiene lista de valores de donde se puede
+                  seleccionar el <a href="NUH_015B.html" >tipo de cartera</a>al cual corresponde
+                  la línea de crédito asociada al nuevo producto, de acuerdo con las normas expedidas por el ente u
+                  organismo regulador.</p>
+              </td>
+            </tr>
+
+            <tr>
+              <td>
+                <p class="SUBTITULO"><b>Número de utilizaciones
+
+                  </b></p>
+              </td>
+              <td>
+                <p class="PARRAFO">Campo no obligatorio en el cual se registra el número de veces que la
+                  entidad permite utilizar la línea de crédito, en el lapso de tiempo específico definido en el
+                  siguiente campo.</p>
+              </td>
+            </tr>
+
+            <tr>
+              <td>
+                <p class="SUBTITULO"><b>Periodo utilizaciones
+
+                  </b></p>
+              </td>
+              <td>
+                <p class="PARRAFO">En este campo numérico no obligatorio se registra el número de
+                  periodos o facturaciones que se deben tener en cuenta al momento de validar el número de utilizaciones
+                  autorizadas por la entidad para la línea de crédito asociada al nuevo producto.</p>
+              </td>
+            </tr>
+
+            <tr>
+              <td>
+                <p class="SUBTITULO"><b>Prioridad aplicación de pagos
+
+                  </b></p>
+              </td>
+              <td>
+                <p class="PARRAFO">Campo numérico no obligatorio en el que se determina el orden o
+                  jerarquía asignado a la línea de crédito en caso de ser requerido de acuerdo con lo parametrizado por
+                  la entidad en la opción <a href="CAH_007B.html" >Prioridad aplicación de
+                    pagos</a>.</p>
+
+              </td>
+            </tr>
+
+            <tr>
+              <td>
+                <p class="SUBTITULO"><b>% Sobrecupo autorizado
+
+                  </b></p>
+              </td>
+              <td>
+                <p class="PARRAFO">Este campo no obligatorio permite registrar el porcentaje calculado
+                  sobre el cupo de la línea asociada al nuevo producto, en que pueden excederse los consumos o
+                  utilizaciones efectuados. Es excluyente con el campo Valor sobrecupo autorizado</p>
+              </td>
+            </tr>
+
+            <tr>
+              <td>
+                <p class="SUBTITULO"><b>Valor sobrecupo autorizado
+
+                  </b></p>
+              </td>
+              <td>
+                <p class="PARRAFO">Campo mutuamente excluyente con el anterior y en el cual se indica el
+                  valor máximo en que pueden excederse los consumos o utilizaciones efectuados para la línea. Es un
+                  campo numérico de hasta 14 enteros y 2 decimales.</p>
+              </td>
+            </tr>
+
+            <tr>
+              <td>
+                <p class="SUBTITULO"><b>Cupo en múltiplos de
+
+                  </b></p>
+              </td>
+              <td>
+                <p class="PARRAFO">En este campo obligatorio tipo combo se indica la manera como se
+                  calculará y otorgará el cupo para la línea en el proceso de solicitud o asignación de los cupos para
+                  la misma. Al momento de asignarle valor a este campo se debe tener en cuenta la moneda en la cual está
+                  expresada la línea asociada al al nuevo producto por cuanto no es lo mismo asignarle y/o aumentarle a
+                  un cupo $10.000.00 que U$10.000.00.</p>
+              </td>
+            </tr>
+
+            <tr>
+              <td>
+                <p class="SUBTITULO"><b>Ajuste cupos
+                  </b></p>
+              </td>
+              <td>
+                <p class="PARRAFO">Campo obligatorio tipo combo en el cual se selecciona entre
+                  Truncar o Redondear, la manera en que el sistema debe hacer el ajuste de los cupos
+                  solicitados / asignados de acuerdo con el múltiplo indicado en el campo anterior.que indica la
+                  calificaci&oacute;n externa de la tarjeta con la cual lleg&oacute; la informaci&oacute;n procesada y
+                  registrada en la cuenta contable.</p>
+              </td>
+            </tr>
+
+            <tr>
+              <td>
+                <p class="SUBTITULO"><b>Cupo máximo
+
+                  </b></p>
+              </td>
+              <td>
+                <p class="PARRAFO">En este campo obligatorio de hasta 14 enteros y 2 decimales se
+                  registra el monto máximo que se le puede asignar como cupo a la línea asociada al nuevo producto.</p>
+              </td>
+            </tr>
+
+            <tr>
+              <td>
+                <p class="SUBTITULO"><b>Cobertura
+
+                  </b></p>
+              </td>
+              <td>
+                <p class="PARRAFO">Campo obligatorio tipo combo en el cual se selecciona entre Local
+                  o Internacional el uso permitido para la línea de crédito asociada al nuevo producto.
+                </p>
+              </td>
+            </tr>
+
+            <tr>
+              <td>
+                <p class="SUBTITULO"><b>Reporta compensador
+
+                  </b></p>
+              </td>
+              <td>
+                <p class="PARRAFO">En este campo obligatorio tipo check se indica si dentro de los
+                  archivos de refresco enviados a las <A href="NUH_033B.html" >franquicias</A> o
+                  <A href="NUH_054B.html" >compensadores</A> se incluye o no el disponible de la
+                  línea; cuando no está marcado, significa que la entidad autoriza directamente las transacciones
+                  asociadas a la línea de crédito.
+                </p>
+              </td>
+            </tr>
+
+            <tr>
+              <td>
+                <p class="SUBTITULO"><b>Transacción afecta extracupo
+
+                  </b></p>
+              </td>
+              <td>
+                <p class="PARRAFO">Campo obligatorio que indica si las transacciones asociadas a la
+                  línea de crédito afectan el <a href="SCH_031B.html" >extracupo</a> de la
+                  tarjeta.</p>
+              </td>
+            </tr>
+          </table>
+          <p class="PARRAFO">
+          <p class="PARRAFO">Después de haber llenado todos los datos de la segunda página del wizard, se puede deplazar
+            a la tercera y última página denominada transacciones asociadas que contiene un único campo.<b><span
+                class="SUBTITULO"></span></b></p>
+          <div class="PARRAFO">
+            <p class="TITLE"><img src="../img/MEF_002E4.PNG"></p>
+          </div>
+          <p class="PARRAFO">
+
+          <p class="TITLE">Descripción de campos</p>
+          <table >
+            <tr>
+              <td>
+                <p class="SUBTITULO"><b>Transacción
+                  </b></p>
+              </td>
+              <td>
+                <p class="PARRAFO">Campo
+                  obligatorio con lista de valores de la cual se puede seleccionar la <a href="MEH_003B.html"
+                    >transacción interna</a> que va a ser asociada con la línea de crédito. Desde el
+                  punto de vista práctico, son las transacciones que están permitidas o autorizadas por la entidad para
+                  la línea de crédito asociada con el nuevo producto.
+                </p>
+              </td>
+            </tr>
+          </table>
+          <p class="PARRAFO">
+            <span class="PARRAFO">
+              <a name="BL_PARAMETROS"></a>
+              <p><span class="SUBTITULO"><span><b>Parámetros</b></span> 
+                  <span>:</span> 
+                </span> 
+                Si desde la primera página del wizard el usuario invoca el
+                hiperv&igrave;nculo Parámetros se despliega un nuevo formulario estructurado en 13 bloques
+                de datos que permiten complementar las características del nuevo producto creado.
+                Adicionalmente, si en el formulario <a href="NUH_055B.html" >parámetros
+                  operativos</a> en el campo Excepción geográfica se encuentra seleccionada una opción
+                diferente a No aplica, se despliega un hipervínculo denominado <a href="MEH_002B.html#BL_AMERICANOS"
+                  >Parámetros americanos</a>.
+              </p>
+              <p class="TITLE"><img src="../img/MEF_002E5.PNG"></p>
+              <div class="PARRAFO">
+
+                <p class="TITLE">Descripción de campos</p>
+                <table >
+                  <tr>
+                    <td>
+                      <p class="SUBTITULO"><b>Emite plástico
+                        </b></p>
+                    </td>
+                    <td>
+                      <p class="PARRAFO">En
+                        Este campo tipo check se indica si el producto debe emitir plástico como materialización de la
+                        tarjeta. Si este campo se deja sin marcar para indicar que NO emite plástico; al
+                        momento de definir los <a href="SOH_001B7.html" >parámetros de solicitudes
+                          por producto,</a> se debe tener la precaución de no asociar los tipos de solicitud
+                        Reposición crédito y Reexpedición crédito por cuanto éstas sólo aplican para
+                        productos que sí tengan asociado un plástico como materialización de la tarjeta. Así mismo,
+                        para los tipos de solicitud Nuevo crédito y Renovación crédito se debe tener
+                        en cuenta no asociar las etapas de plásticos (realce, sobreflex de empaque, sobreflex de
+                        clave, envío a mensajería, acuse recibo de entrega, control de inventario)que sólo
+                        tienen aplicabilidad para productos que SI emiten plástico.</p>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <p class="SUBTITULO"><b>Emite plástico principal
+
+
+                        </b></p>
+                    </td>
+                    <td>
+                      <p class="PARRAFO">Campo
+                        tipo check en el que se indica si el producto debe emitir plástico como materialización de la
+                        tarjeta, para el titular principal.
+                      </p>
+                    </td>
+                  </tr>
+
+                  <tr>
+                    <td>
+                      <p class="SUBTITULO"><b>Genera clave
+                        </b></p>
+                    </td>
+                    <td>
+                      <p class="PARRAFO">En este campo tipo check se señala si para el nuevo producto
+                        se debe generar clave.
+                      </p>
+                    </td>
+                  </tr>
+
+                  <tr>
+                    <td>
+                      <p class="SUBTITULO"><b>Activo
+                        </b></p>
+                    </td>
+                    <td>
+                      <p class="PARRAFO">Campo tipo check que indica si el producto se encuentra
+                        activo para la entidad de manera que al invocar desde cualquier campo configurado para tal fin
+                        la lista de productos solo se muestran aquellos que tengan la condición de activos.</p>
+                    </td>
+                  </tr>
+
+                  <tr>
+                    <td>
+                      <p class="SUBTITULO"><b>Mostrar por internet
+                        </b></p>
+                    </td>
+                    <td>
+                      <p class="PARRAFO">En este campo se indica si el nuevo producto puede ser
+                        accesado a través de internet.
+                      </p>
+                    </td>
+                  </tr>
+
+                  <tr>
+                    <td>
+                      <p class="SUBTITULO"><b>Modelo de plástico
+                        </b></p>
+                    </td>
+                    <td>
+                      <p class="PARRAFO">Si se ha indicado que el producto SI emite plástico, este
+                        campo se convierte en obligatorio y contiene una lista de valores de la cual se selecciona el
+                        modelo de plástico se va a utilizar durante el proceso de realce de las tarjetas
+                        pertenecientes al nuevo producto.</p>
+                    </td>
+                  </tr>
+
+                  <tr>
+                    <td>
+                      <p class="SUBTITULO"><b>Proveedor
+                        </b></p>
+                    </td>
+                    <td>
+                      <p class="PARRAFO">Campo
+                        de salida que despliega el código y nombre del proveedor que suministra los plásticos para el
+                        realce de las tarjetas.
+                      </p>
+                    </td>
+                  </tr>
+
+                  <tr>
+                    <td>
+                      <p class="SUBTITULO"><b>Generar número acción
+                        </b></p>
+                    </td>
+                    <td>
+                      <p class="PARRAFO">Este
+                        campo tipo check permite indicar si el nuevo producto requiere un número de acción. En caso de
+                        estar marcado, durante el proceso de ingreso de la solicitud de nuevo crédito se deberá
+                        indicar el número de acción asociado a la tarjeta.</p>
+                    </td>
+                  </tr>
+
+                  <tr>
+                    <td>
+                      <p class="SUBTITULO"><b>Aplica pago por cuotas
+                        </b></p>
+                    </td>
+                    <td>
+                      <p class="PARRAFO">Campo tipo check en el que se indica si para el producto se
+                        maneja aplicación de pago por cuotas, como en el caso de aquellos productos de créditos
+                        rotativos y tarjetas de retail.</p>
+                    </td>
+                  </tr>
+
+                  <tr>
+                    <td>
+                      <p class="SUBTITULO"><b>Liquida interés parcial
+                        </b></p>
+                    </td>
+                    <td>
+                      <p class="PARRAFO">Este
+                        campo tipo check le permite a la entidad determinar si el sistema debe liquidar los interes
+                        desde la fecha de facturación hasta el momento en que se efectúa el pago por parte del
+                        cliente, o si la liquidación de éstos se debe hacer hasta la siguiente facturación.</p>
+                    </td>
+                  </tr>
+
+                  <tr>
+                    <td>
+                      <p class="SUBTITULO"><b>% Tolerancia pagos
+                        </b></p>
+                    </td>
+                    <td>
+                      <p class="PARRAFO">Campo numérico que permite definir la relación entre el pago
+                        efectuado y el saldo total de la deuda para generar intereses sobre los saldos pendientes. Si
+                        el cliente efectúa un pago total y al aplicarlo queda pendiente de cubrir un porcentaje de
+                        deuda menor o igual al parametrizado en este campo, el sistema no le cobrará al cliente los
+                        intereses correspondientes a esa porción. Este campo es mutuamente excluyente con el de valor
+                        tolerancia pagos.</p>
+                    </td>
+                  </tr>
+
+                  <tr>
+                    <td>
+                      <p class="SUBTITULO"><b>Valor tolerancia pagos
+                        </b></p>
+                    </td>
+                    <td>
+                      <p class="PARRAFO">Este campo numérico de hasta 14 enteros y 2 decimales permite
+                        definir para el nuevo producto el monto por el cual no se le cobrarán al cliente los intereses
+                        correspondientes sobre la diferencia entre el saldo de la deuda y el pago total efectuado. Es
+                        mutuamente excluyente con el campo % Tolerancia pagos.</p>
+                    </td>
+                  </tr>
+
+                  <tr>
+                    <td>
+                      <p class="SUBTITULO"><b>Vigencia tarjetas de emergencia
+                        </b></p>
+                    </td>
+                    <td>
+                      <p class="PARRAFO">Campo numérico de 1 dígito en el cual se registra el número
+                        de periodos durante los cuales el sistema aceptará como válida una <a href="SOH_029B.html"
+                          >tarjeta de emergencia</a>para el nuevo producto.</p>
+                    </td>
+                  </tr>
+
+                  <tr>
+                    <td>
+                      <p class="SUBTITULO"><b>Permite facturación en dólares
+                        </b></p>
+                    </td>
+                    <td>
+                      <p class="PARRAFO">Este
+                        campo tipo check permite señalar si para el nuevo producto es permitido facturar en dólares.
+                      </p>
+                    </td>
+                  </tr>
+
+                  <tr>
+                    <td>
+                      <p class="SUBTITULO"><b>Plazo días formalizar extravío
+                        </b></p>
+                    </td>
+                    <td>
+                      <p class="PARRAFO">Campo numérico en el cual se registra el número de días que
+                        como máximo tiene un cliente para formalizar el extravío de su tarjeta.</p>
+                    </td>
+                  </tr>
+
+                  <tr>
+                    <td>
+                      <p class="SUBTITULO"><b>Periodo traslado saldo moneda
+                        </b></p>
+                    </td>
+                    <td>
+                      <p class="PARRAFO">Este
+                        campo permite registrar para el nuevo producto la altura de mora a partir de la cual los
+                        saldos en dólares o moneda extranjera que presenta la tarjeta serán convertidos en su
+                        totalidad a la moneda local.</p>
+                    </td>
+                  </tr>
+
+                  <tr>
+                    <td>
+                      <p class="SUBTITULO"><b>CPS
+                        </b></p>
+                    </td>
+                    <td>
+                      <p class="PARRAFO">Campo con lista de valores de la cual se puede seleccionar la
+                        <a href="NUH_094B.html" >categoría</a> o clasificación dada al nuevo
+                        producto y que servirá específicamente para la generación de reportes y estadísticas para las
+                        áreas comercial y de planeación.
+                      </p>
+                    </td>
+                  </tr>
+
+                  <tr>
+                    <td>
+                      <p class="SUBTITULO"><b>Programas comerciales
+                        </b></p>
+                    </td>
+                    <td>
+                      <p class="PARRAFO">Este
+                        campo contiene lista de valores de la cual se puede seleccionar el <a href="MEH_019B.html"
+                          >programa comercial</a> que de acuerdo con sus características se ajuste
+                        más al nuevo producto.</p>
+                    </td>
+                  </tr>
+
+                  <tr>
+                    <td>
+                      <p class="SUBTITULO"><b>Número máximo tarjetas extendidas
+                        </b></p>
+                    </td>
+                    <td>
+                      <p class="PARRAFO">Campo numérico de hasta 4 dígitos en el cual se registra el
+                        número máximo de tarjetas extendidas que pueden depender de una misma tarjeta principal
+                        perteneciente al nuevo producto.</p>
+                    </td>
+                  </tr>
+
+                  <tr>
+                    <td>
+                      <p class="SUBTITULO"><b>Cupo mínimo tarjetas extendidas
+                        </b></p>
+                    </td>
+                    <td>
+                      <p class="PARRAFO">Este
+                        campo de hasta 14 enteros y 2 decimales permite a la entidad determinar el cupo mínimo que se
+                        debe solicitar / asignar para cada una de las tarjetas dependientes que sean solicitadas.</p>
+                    </td>
+                  </tr>
+
+                  <tr>
+                    <td>
+                      <p class="SUBTITULO"><b>% Otros costos amparados
+                        </b></p>
+                    </td>
+                    <td>
+                      <p class="PARRAFO">Campo en el que se registra el porcentaje que la entidad
+                        cobrará a las tarjetas amparadas por concepto de cuota de manejo, seguro y afiliación,
+                        calculado sobre el valor liquidado al tarjetahabiente principal del cual dependen. </p>
+                    </td>
+                  </tr>
+
+                  <tr>
+                    <td>
+                      <p class="SUBTITULO"><b>Suma adicional influye cupo principal
+                        </b></p>
+                    </td>
+                    <td>
+                      <p class="PARRAFO">Este
+                        campo tipo combo permite seleccionar entre Si o No el cupo del nuevo
+                        producto será distribuido entre la tarjeta principal y todas las tarjetas que dependan de
+                        ella. Al elegir la opción Si, significa que el cupo total del producto será
+                        distribuido entre la tarjeta principal y sus dependientes, de forma que el cupo de cada
+                        tarjeta es independiente y no afecta el de las demás, por cuanto el monto límite a distribuir
+                        es el cupo global aprobado. Por el contrario, al seleccionar No, la tarjeta principal
+                        comparte el cupo con todos sus dependientes y cualquiera de ellos puede utilizar el cupo
+                        global disponible, afectando así el cupo que pueden usar las demás. Si este campo se encuentra
+                        en blanco, el sistema evaluará lo que se indique para el campo del mismo nombre en la opción
+                        <a href="NUH_055B.html" >parámetros operativos</a>
+                      </p>
+                    </td>
+                  </tr>
+
+                  <tr>
+                    <td>
+                      <p class="SUBTITULO"><b>Capitaliza intereses
+                        </b></p>
+                    </td>
+                    <td>
+                      <p class="PARRAFO">Campo tipo combo que permite seleccionar entre Corriente,
+                        Moratorio, Ambos o No que tipo de intereses van a ser capitalizados para el
+                        cálculo del pago mínimo de las tarjetas pertenecientes al nuevo producto.</p>
+                    </td>
+                  </tr>
+
+                  <tr>
+                    <td>
+                      <p class="SUBTITULO"><b>Transacción capitaliza intereses
+                        </b></p>
+                    </td>
+                    <td>
+                      <p class="PARRAFO">Si en el campo anterior se ha seleccionado una opción
+                        diferente a No, este campo se convierte en obligatorio y permite seleccionar de la
+                        lista de valores la <a href="MEH_003B.html" >transacción interna</a>
+                        mediante la cual se va formalizar la capitalización de los intereses.</p>
+                    </td>
+                  </tr>
+
+                  <tr>
+                    <td>
+                      <p class="SUBTITULO"><b>Cálculo pago mínimo
+                        </b></p>
+                    </td>
+                    <td>
+                      <p class="PARRAFO">Este
+                        campo tipo combo permite seleccionar entre Transacciones, Revolvente variable o
+                        Revolvente fijo el <a href="NUH_007B.html" >esquema de
+                          amortización</a> que se va a aplicar para las tarjetas del nuevo producto con el fin
+                        de poder calcular el pago mínimo. Si la elección es Transacciones o Nulo el
+                        sistema realizará dicho cálculo basado en la parametrización realizada, por transacción, en la
+                        opción <A href="MEH_003B.html" >Transacciones por empresa</A>. Si
+                        se señala un plan de cálculo diferente, éste prevalerecerá a lo señalado a nivel de
+                        transacción.</p>
+                    </td>
+                  </tr>
+
+                  <tr>
+                    <td>
+                      <p class="SUBTITULO"><b>Número cuotas revolventes
+                        </b></p>
+                    </td>
+                    <td>
+                      <p class="PARRAFO">Si en el campo anterior se ha seleccionado Revolvente
+                        fijo o Revolvente variable, este campo se convierte en obligatorio y en él se
+                        registra el número de cuotas en las que por defecto se va a diferir el saldo del cliente.</p>
+                    </td>
+                  </tr>
+
+                  <tr>
+                    <td>
+                      <p class="SUBTITULO"><b>Indicador económico
+                        </b></p>
+                    </td>
+                    <td>
+                      <p class="PARRAFO">Campo que se vuelve obligatorio cuando el tipo de
+                        amortización es Revolvente fijo o Revolvente variable y contiene una lista
+                        de valores de la cual se puede seleccionar el <a href="NUH_043B.html" >indicador
+                          económico</a> a utilizar por defecto para liquidar los
+                        intereses corrientes.</p>
+                    </td>
+                  </tr>
+
+                  <tr>
+                    <td>
+                      <p class="SUBTITULO"><b>Mensaje extracto
+                        </b></p>
+                    </td>
+                    <td>
+                      <p class="PARRAFO">Este
+                        campo contiene lista de valores de la cual se selecciona el <a href="NUH_062B.html"
+                          >mensaje</a> a incluir en los extractos de las tarjetas pertenecientes
+                        al nuevo producto.</p>
+                    </td>
+                  </tr>
+
+                  <tr>
+                    <td>
+                      <p class="SUBTITULO"><b># Líneas extracto
+                        </b></p>
+                    </td>
+                    <td>
+                      <p class="PARRAFO">Campo numérico de hasta dos dígitos en el cual se registra
+                        para el nuevo producto el número de líneas que se dispone por cada hoja para relacionar las
+                        transacciones a mostrar al cliente.</p>
+                    </td>
+                  </tr>
+
+                  <tr>
+                    <td>
+                      <p class="SUBTITULO"><b>Información extracto
+                        </b></p>
+                    </td>
+                    <td>
+                      <p class="PARRAFO">Este campo contiene una lista de valores de la cual se
+                        selecciona entre Sin transacciones, Transacciones del mes o Transacciones
+                        activas. La opción correspondiente al nivel de detalle que se presentará en el informe
+                        periódico del cliente.</p>
+                    </td>
+
+                  </tr>
+                </table>
+                <p>Los restantes bloques de datos del formulario de Parámetros contienen
+                  los siguientes campos:</p>
+                <div class="PARRAFO">
+                  <p class="TITLE"><img src="../img/MEF_002E6.PNG"></p>
+                  <p class="TITLE">Descripción de campos</p>
+                  <table>
+                    <tr>
+                      <td class="titletable">
+                        <p class="SUBTITULO"><b>Afecta disponible
+                          </b></p>
+                      </td>
+                      <td>
+                        <p class="PARRAFO">Campo que contiene una lista de valores de la cual se
+                          selecciona entre Aplicar afectando disponible o Aplicar sin afectar
+                          disponible la manera en que se verá afectado el disponible de la tarjeta por el saldo
+                          a favor generado.</p>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>
+                        <p class="SUBTITULO"><b>Porcentaje (Bloqueo por sobrecupo)
+
+                          </b></p>
+                      </td>
+                      <td>
+                        <p class="PARRAFO">En este campo se indica el porcentaje a partir del cual se
+                          bloqueará la tarjeta por efecto del uso del sobrecupo autorizado para el nuevo producto.</p>
+                      </td>
+                    </tr>
+
+                    <tr>
+                      <td>
+                        <p class="SUBTITULO"><b>Valor (Bloqueo por sobrecupo)
+                          </b></p>
+                      </td>
+                      <td>
+                        <p class="PARRAFO">Campo de hasta 14 enteros y 2 decimales en el cual se
+                          registra el valor del sobrecupo utilizado a partir del cual será bloqueada la tarjeta.
+                        </p>
+                      </td>
+                    </tr>
+
+                    <tr>
+                      <td>
+                        <p class="SUBTITULO"><b>Valor (Bloqueo por mora)
+                          </b></p>
+                      </td>
+                      <td>
+                        <p class="PARRAFO">En este campo numérico de 14 enteros y 2 decimales se
+                          indica el valor del capital en mora que presenta la tarjeta, a partir del cual será
+                          bloqueada.</p>
+                      </td>
+                    </tr>
+
+                    <tr>
+                      <td>
+                        <p class="SUBTITULO"><b>Periodos (Bloqueo por mora)
+                          </b></p>
+                      </td>
+                      <td>
+                        <p class="PARRAFO">Campo numérico de 3 dígitos en el cual se indica la altura
+                          de mora a partir de la cual la tarjeta será bloqueada por mora.
+                        </p>
+                      </td>
+                    </tr>
+
+                    <tr>
+                      <td>
+                        <p class="SUBTITULO"><b>Valor (Cancelación por mal manejo mora)
+                          </b></p>
+                      </td>
+                      <td>
+                        <p class="PARRAFO">En este campo numérico de 14 enteros y 2 decimales en el
+                          que se indica el valor mínimo del capital en mora que debe presentar la tarjeta en los
+                          periodos indicados en el campo siguientes para ser cancelada por mal manejo.</p>
+                      </td>
+                    </tr>
+
+                    <tr>
+                      <td>
+                        <p class="SUBTITULO"><b>Periodos </b><b>(Cancelación por mal manejo mora)
+                          </b></p>
+                      </td>
+                      <td>
+                        <p class="PARRAFO">Campo
+                          en el que se indica la cantidad de periodos en mora que como mínimo debe tener la tarjeta
+                          para que junto con el monto en mora indicado en el campo anterior sea cancelada por mal
+                          manejo.
+                        </p>
+                      </td>
+                    </tr>
+
+                    <tr>
+                      <td>
+                        <p class="SUBTITULO"><b>Valor mínimo
+                          </b></p>
+                      </td>
+                      <td>
+                        <p class="PARRAFO">En este
+                          campo de hasta 14 enteros y 2 decimales se registra el monto a partir del cual se aplicará
+                          un bloqueo preventivo a la tarjeta por no efectuar el pago oportunamente.</p>
+                      </td>
+                    </tr>
+
+                    <tr>
+                      <td>
+                        <p class="SUBTITULO"><b>Días después
+                          </b></p>
+                      </td>
+                      <td>
+                        <p class="PARRAFO">Campo en el que se indica el número máximo de días
+                          calendario que la entidad otorga, a manera de gracia, después de la fecha límite para que el
+                          cliente efectúe el pago y a partir de la cual se genera el bloqueo preventivo sobre la
+                          tarjeta.</p>
+                      </td>
+                    </tr>
+
+                    <tr>
+                      <td>
+                        <p class="SUBTITULO"><b>Días a vencer CDT
+                          </b></p>
+                      </td>
+                      <td>
+                        <p class="PARRAFO">Este
+                          campo permite registrar el número de días faltantes para el vencimiento del CDT que
+                          garantiza una tarjeta, a fin que el sistema aplique un bloqueo preventivo sobre la misma
+                          hasta tanto se haga la renovación del CDT.</p>
+                      </td>
+                    </tr>
+
+                    <tr>
+                      <td>
+                        <p class="SUBTITULO"><b>Valor aceleración deuda
+                          </b></p>
+                      </td>
+                      <td>
+                        <p class="PARRAFO">Campo numérico de hasta 14 enteros y dos decimales en el
+                          cual se define el monto de la deuda a partir de la cual ésta se hace exigible en su
+                          totalidad, siempre y cuando la obligación alcance también la cantidad de periodos en mora
+                          requeridos parametrizada en el siguiente campo.</p>
+                      </td>
+                    </tr>
+
+                    <tr>
+                      <td>
+                        <p class="SUBTITULO"><b>Periodos para acelerar deuda
+                          </b></p>
+                      </td>
+                      <td>
+                        <p class="PARRAFO">En este
+                          campo se registra el número de periodos en mora que debe alcanzar la tarjeta para que
+                          conjuntamente con el valor parametrizado en el campo anterior la obligación se haga exigible
+                          en su totalidad.</p>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>
+                        <p class="SUBTITULO"><b>Periodos de dudoso a castigo
+                          </b></p>
+                      </td>
+                      <td>
+                        <p class="PARRAFO">Campo numérico de 3 dígitos en el cual se registra el
+                          número de periodos que debe transcurrir desde el momento en que la deuda se considera de
+                          dudoso recaudo para que pase a ser una deuda incobrable y sea asumida por la entidad.</p>
+                      </td>
+                    </tr>
+
+                    <tr>
+                      <td>
+                        <p class="SUBTITULO"><b>Valor débito
+                          </b></p>
+                      </td>
+                      <td>
+                        <p class="PARRAFO">Este
+                          campo numérico de 14 enteros y 2 decimales permite registrar el valor máximo de los saldos
+                          de naturaleza débito que pueden ser trasladados contablemente para dejar los saldos de la
+                          tarjeta en ceros.</p>
+                      </td>
+                    </tr>
+
+                    <tr>
+                      <td>
+                        <p class="SUBTITULO"><b>Valor crédito
+                          </b></p>
+                      </td>
+                      <td>
+                        <p class="PARRAFO">Campo numérico de 14 enteros y 2 decimales que permite
+                          registrar el valor máximo de los saldos de naturaleza crédito que pueden ser trasladados
+                          contablemente para dejar los saldos de la tarjeta en ceros.</p>
+                      </td>
+                    </tr>
+
+                    <tr>
+                      <td>
+                        <p class="SUBTITULO"><b>Convenio
+                          </b></p>
+                      </td>
+                      <td>
+                        <p class="PARRAFO">Este campo contiene lista de valores de la cual se puede
+                          seleccionar el convenio que se desea asociar al producto de acuerdo con las características
+                          del nuevo producto.</p>
+                      </td>
+                    </tr>
+
+                    <tr>
+                      <td>
+                        <p class="SUBTITULO"><b>Altura mora aval
+                          </b></p>
+                      </td>
+                      <td>
+                        <p class="PARRAFO">Campo numérico de hasta 4 dígitos en el cual se indica la
+                          altura de mora a partir de la cual el convenio asume las obligaciones de las tarjetas
+                          avaladas por él con cargo a la cuenta corriente o de ahorro.</p>
+                      </td>
+                    </tr>
+
+                    <tr>
+                      <td>
+                        <p class="SUBTITULO"><b>CDT garantiza el crédito
+                          </b></p>
+                      </td>
+                      <td>
+                        <p class="PARRAFO">Este
+                          campo tipo check permite indicar si el producto requiere ser garantizado mediante un CDT
+                          como pre requisito para poder ser otorgado al cliente.</p>
+                      </td>
+                    </tr>
+
+                    <tr>
+                      <td>
+                        <p class="SUBTITULO"><b>% CDT para tarjeta principal
+                          </b></p>
+                      </td>
+                      <td>
+                        <p class="PARRAFO">Campo en el cual se indica el porcentaje que aplicado sobre
+                          el valor del CDT dado en garantía el sistema utilizará como base para calcular el cupo a
+                          asignar a la tarjeta.</p>
+                      </td>
+                    </tr>
+
+                    <tr>
+                      <td>
+                        <p class="SUBTITULO"><b>Valor mínimo CDT
+                          </b></p>
+                      </td>
+                      <td>
+                        <p class="PARRAFO">Este
+                          campo de hasta 14 enteros y 2 decimales permite a la entidad determinar el monto mínimo por
+                          el cual se debe expedir el CDT que garantiza la obligación para que éste sea aceptado como
+                          respaldo.</p>
+                      </td>
+                    </tr>
+                  </table>
+                </div>
+          </p>
+
+          <p>El formulario de Parámetros contiene el globo de localización
+            que invoca otro formulario desde el cual es posible diligenciar datos relativos al manejo de
+            centrales de riesgo para el nuevo producto.</p>
+          <p class="TITLE"><img src="../img/MEF_002E8.PNG"></p>
+          <p class="TITLE">Descripción de campos</p>
+          <table>
+            <tr>
+              <td>
+                <p class="SUBTITULO"><b>Periodos central de riesgos
+                  </b></p>
+              </td>
+              <td>
+                <p class="PARRAFO">Campo numérico de 1 dígito en el cual se registra la cantidad
+                  de periodos que el sistema debe tomar en cuenta hacia atrás para reportar la información sobre
+                  el comportamiento y la calificación del cliente a las diferentes centrales de riesgo.</p>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <p class="SUBTITULO"><b>Reporta Cifin
+
+
+                  </b></p>
+              </td>
+              <td>
+                <p class="PARRAFO">En este campo tipo combo se puede seleccionar entre
+                  Si o No la información de las tarjetas pertenecientes al nuevo producto se
+                  debe reportar a la central de riesgo Cifín en las interfaces correspondientes.</p>
+              </td>
+            </tr>
+
+            <tr>
+              <td>
+                <p class="SUBTITULO"><b>Reporta Datacrédito
+                  </b></p>
+              </td>
+              <td>
+                <p class="PARRAFO">Campo tipo combo que permite indicar Si o
+                  No la información de las tarjetas pertenecientes al nuevo producto se debe reportar a
+                  la central de riesgo Datacrédito en las interfaces correspondientes.
+                </p>
+              </td>
+            </tr>
+          </table>
+
+          <p class="PARRAFO"><a name="BL_CUOTAS"></a><span class="SUBTITULO"><span><b>Cuotas</b></span> 
+              <span>:</span> 
+            </span> 
+            Si desde la primera página del wizard de nuevo
+            producto el usuario invoca el hipervínculo Cuotas se despliega un nuevo
+            formulario que le permite a la entidad definir los parámetros necesarios para el cobro de las
+            cuotas de afiliación, manejo y seguro que se van a cobrar para el nuevo producto. Por
+            defecto, al ingresar a la opción se despliega en el formulario de cuota de manejo pero el
+            usuario se puede mover mediante las flechas de desplazamiento a cualquiera de los otros dos
+            formularios.</p>
+          <p> Los campos desplegados en cualquiera de estos formularios son los mismos por lo cual los campos se
+            explican una sola vez.</p>
+          <p class="TITLE"><img src="../img/MEF_002E7.PNG"></p>
+          <div class="PARRAFO">
+            <p class="TITLE">Descripción de campos</p>
+            <table>
+              <tr>
+                <td>
+                  <p class="SUBTITULO"><b>Tipo cuota
+                    </b></p>
+                </td>
+                <td>
+                  <p class="PARRAFO">Campo tipo combo en el cual se puede seleccionar entre
+                    Tradicional o Porcentual el tipo de cuota que se está parametrizando para
+                    el nuevo producto. Tradicional le indica al sistema que debe cobrar el monto
+                    definido en el campo Cuota, mientras que en Porcentualel sistema tendrá
+                    en cuenta lo definido en el campo No cobrar si, para aplicar o no el valor del
+                    indicador económico seleccionado en el siguiente campo.</p>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <p class="SUBTITULO"><b>Indicador económico
+
+
+                    </b></p>
+                </td>
+                <td>
+                  <p class="PARRAFO">Si el tipo cuota se define como porcentual, en este campo
+                    se determina el <a href="NUH_043B.html" >Indicador económico</a> que
+                    el sistema debe utilizar para calcular el valor de la cuota.
+                  </p>
+                </td>
+              </tr>
+          </div>
+
+          <tr>
+            <td>
+              <p class="SUBTITULO"><b>Cuota</b></p>
+            </td>
+            <td>
+              <p class="PARRAFO">Este campo de hasta 14 enteros y 2 decimales se registra el
+                valor a cobrar por concepto de cuota para las tarjetas pertenecientes al nuevo producto.</p>
+            </td>
+          </tr>
+
+          <tr>
+            <td>
+              <p class="SUBTITULO"><b>Porcentaje cuota
+                </b></p>
+            </td>
+            <td>
+              <p class="PARRAFO">Campo
+                numérico en el que se indica el porcentaje que aplicado sobre el concepto seleccionado en el
+                campo 'Base' servirá al sistema para calcular el valor de la cuota a cobrar. Este campo es
+                excluyente con el de 'Cuota' es decir que solo uno de los dos debe ser diligenciado.
+              </p>
+            </td>
+          </tr>
+
+          <tr>
+            <td>
+              <p class="SUBTITULO"><b>Base
+
+
+                </b></p>
+            </td>
+            <td>
+              <p class="PARRAFO">En este campo tipo combo se selecciona entre Cupo y
+                Promedio> (de los últimos doce meses) el concepto que servirá de base para aplicarle
+                el porcentaje definido en el campo anterior y calcular el valor de la cuota a cobrar. Solo se
+                debe diligenciar si el campo Porcentaje cuota tiene algún valor.
+              </p>
+            </td>
+          </tr>
+
+          <tr>
+            <td>
+              <p class="SUBTITULO"><b>Modalidad
+
+
+                </b></p>
+            </td>
+            <td>
+              <p class="PARRAFO">
+                Campo tipo combo que le permite a la entidad seleccionar entre anticipada o vencida la manera como será
+                cobrada la cuota para las tarjetas del nuevo producto.
+              </p>
+            </td>
+          </tr>
+
+          <td class="titletable">
+            <p class="SUBTITULO"><b>Periodos</b></p>
+          </td>
+          <td>
+            <p class="PARRAFO">En este campo numérico que admite valores entre 1 y 12, se indica la
+              cantidad de periodos que determina la frecuencia con la cual se va a efectuar el cobro de la cuota para
+              las tarjetas pertenecientes al nuevo producto.</p>
+          </td>
+          </tr>
+
+          <tr>
+            <td>
+              <p class="SUBTITULO"><b>Evento inicio</b></p>
+            </td>
+            <td>
+              <p class="PARRAFO">Campo tipo combo en el que se selecciona entre Facturación, Entrega
+                plástico o Utilización el evento que al producirse va a generar el inicio del cobro de la cuota para la
+                tarjeta.</p>
+            </td>
+          </tr>
+
+          <tr>
+            <td>
+              <p class="SUBTITULO"><b>Transacción</b></p>
+            </td>
+            <td>
+              <p class="PARRAFO">En este campo con lista de valores se selecciona la <a href="MEH_003B.html"
+                  >transacción interna</a> con la cual se va a registrar el cobro de
+                la cuota en caso que se cumplan las condiciones para generar dicha cuota.</p>
+            </td>
+          </tr>
+
+          <tr>
+            <td>
+              <p class="SUBTITULO"><b>Transacción alterna</b></p>
+            </td>
+            <td>
+              <p class="PARRAFO">Campo con lista de valores que permite seleccionar la <a href="MEH_003B.html"
+                  >transacción interna</a> que se va a generar para el cobro de la
+                cuota en caso de presentarse consumos en el exterior.</p>
+            </td>
+          </tr>
+
+          <tr>
+            <td>
+              <p class="SUBTITULO"><b>Transacción cargo</b></p>
+            </td>
+            <td>
+              <p class="PARRAFO">Si la modalidad se ha definido como Vencida y el producto es cancelado
+                o devuelto por el cliente antes de cumplir los periodos para el cobro de la cuota respectiva, en este
+                campo que contiene lista de valores se selecciona la <a href="MEH_003B.html" >transacción
+                  interna</a> mediante la cual se le va cargar al cliente el valor proporcional de la cuota liquidada
+                desde la fecha del último cobro hasta el momento de la cancelación.</p>
+            </td>
+          </tr>
+
+          <tr>
+            <td>
+              <p class="SUBTITULO"><b>Transacción alterna cargo</b></p>
+            </td>
+            <td>
+              <p class="PARRAFO">Campo con lista de valores que permite seleccionar la <a href="MEH_003B.html"
+                  >transacción interna</a> que se va a generar para el cobro
+                proporcional de la cuota vencida cuando la tarjeta sea cancelada antes de cumplirse los periodos para el
+                cobro de la cuota y se hayan presentado consumos en el exterior.</p>
+            </td>
+          </tr>
+
+          <tr>
+            <td>
+              <p class="SUBTITULO"><b>Transacción devolución</b></p>
+            </td>
+            <td>
+              <p class="PARRAFO">Si la modalidad se ha definido como Anticipada y el producto es
+                cancelado o devuelto por el cliente antes de que se causen los periodos cobrados, en este campo que
+                contiene lista de valores se selecciona la <a href="MEH_003B.html" >transacción interna</a>
+                mediante la cual se le va hacer reintegro o devolución al cliente del valor proporcional de la cuota
+                liquidada desde la fecha de la cancelación hasta el final del periodo ya cobrado.</p>
+            </td>
+          </tr>
+
+          <tr>
+            <td>
+              <p class="SUBTITULO"><b>Transacción alterna devolución</b></p>
+            </td>
+            <td>
+              <p class="PARRAFO">Campo con lista de valores que permite seleccionar la <a href="MEH_003B.html"
+                  >transacción interna</a> que se va a generar para la devolución
+                proporcional de la cuota anticipada cuando la tarjeta sea cancelada antes de haberse causado los
+                periodos cobrados y se hayan presentado consumos en el exterior.</p>
+            </td>
+          </tr>
+
+          <tr>
+            <td>
+              <p class="SUBTITULO"><b>No cobrar cuando tiene </b></p>
+            </td>
+            <td>
+              <p class="PARRAFO">En este campo tipo combo se puede seleccionar entre Menos o Mas para
+                indicarle al sistema de acuerdo con el valor ingresado en el campo Tarjetas dependientes y cumplirse la
+                condición, si debe o no cobrar cuota a la tarjeta principal.</p>
+            </td>
+          </tr>
+
+          <tr>
+            <td>
+              <p class="SUBTITULO"><b>Tarjetas dependientes</b></p>
+            </td>
+            <td>
+              <p class="PARRAFO">Campo complementario al anterior y en el cual se registra el número de
+                tarjetas que el sistema tomará como base junto con la condición señalada para determinar si debe generar
+                o no el cobro de la cuota para la tarjeta principal.</p>
+            </td>
+          </tr>
+
+          <tr>
+            <td>
+              <p class="SUBTITULO"><b>No cobrar si </b></p>
+            </td>
+            <td>
+              <p class="PARRAFO">Si el tipo de cuota es Porcentual, en este campo tipo combo se
+                selecciona entre Saldo &gt; a o Saldo &lt; a, la condición que debe cumplir la tarjeta para que
+                conjuntamente con el monto indicado en el campo adjunto y el número de periodos determinado en el campo
+                siguiente el sistema determine si debe generar el cobro de la cuota y aplicar el indicador económico
+                correspondiente para el cálculo de la misma.</p>
+            </td>
+          </tr>
+
+          <tr>
+            <td>
+              <p class="SUBTITULO"><b>Periodos</b></p>
+            </td>
+            <td>
+              <p class="PARRAFO">Este campo complementario del anterior permite indicar el número de
+                periodos que el sistema debe evaluar para determinar si la tarjeta cumple con las condiciones para ser
+                exonerada de cuota o si por el contrario se debe generar el cobro respectivo.</p>
+            </td>
+          </tr>
+
+          <tr>
+            <td>
+              <p class="SUBTITULO"><b>No cobra otro producto</b></p>
+            </td>
+            <td>
+              <p class="PARRAFO">Campo tipo check en el que se indica si en caso que el cliente posea
+                otros productos con la entidad se le debe cobrar o no la cuota por las tarjetas que le sean otorgadas y
+                pertenezcan al nuevo producto que se está parametrizando.</p>
+            </td>
+          </tr>
+          </table>
+
+          <p class="PARRAFO"><a name="BL_EVENTOS"></a><span class="SUBTITULO"><b>Eventos</b></span><span
+              class="SUBTITULO">
+              <span>:</span> 
+            </span> 
+            Si desde la primera página del wizard de nuevo producto el
+            usuario invoca el hipervínculo Eventos se despliega un nuevo formulario que le permite a la entidad
+            definir los parámetros necesarios para los diferentes eventos o tipos de solicitud que eventualmente es
+            posible gestionar para el nuevo producto.
+          </p>
+
+          <p>El formulario se encuentra estructurado en 8 bloques de datos, siendo los tres primeros Nuevos
+            créditos, Aumento de cupo y Reposición> con los siguientes campos:</p>
+          <p class="TITLE"><img src="../img/MEF_002E9.PNG"></p>
+          <div class="PARRAFO">
+            <p class="TITLE">Descripción de campos</p>
+            <table>
+              <tr>
+                <td>
+                  <p class="SUBTITULO"><b>Ingresos mínimos titular</b></p>
+                </td>
+                <td>
+                  <p class="PARRAFO">Campo numérico de hasta 14 enteros y 2 decimales en el que
+                    se registra el ingreso mínimo mensual que debe reportar el cliente para que su solicitud
+                    avance normalmente por las diferentes etapas parametrizadas y poderle otorgar una tarjeta
+                    perteneciente al nuevo producto.</p>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <p class="SUBTITULO"><b>Edad mínima titular</b></p>
+                </td>
+                <td>
+                  <p class="PARRAFO">En este campo numérico de 2 dígitos se registra la edad
+                    mínima que debe tener el cliente para poder solicitar una tarjeta perteneciente a este
+                    producto.</p>
+                </td>
+              </tr>
+          </div>
+          <tr>
+            <td>
+              <p class="SUBTITULO"><b>Edad máxima titular</b></p>
+            </td>
+            <td>
+              <p class="PARRAFO">Campo numérico de 2 dígitos en el que se indica la edad
+                máxima que puede tener el cliente para solicitar una tarjeta perteneciente a este producto.</p>
+            </td>
+          </tr>
+
+          <tr>
+            <td>
+              <p class="SUBTITULO"><b>Cupo mínimo tarjeta principal</b></p>
+            </td>
+            <td>
+              <p class="PARRAFO">En este campo numérico de 14 enteros y 2 decimales se
+                registra el valor mínimo a asignar como cupo a una tarjeta principal perteneciente al
+                producto.</p>
+            </td>
+          </tr>
+
+          <tr>
+            <td>
+              <p class="SUBTITULO"><b>% Principal para tarjeta virtual</b></p>
+            </td>
+            <td>
+              <p class="PARRAFO">Si el producto que se está creando corresponde al tipo virtual, en este
+                campo se registra el porcentaje máximo que sobre el cupo de la tarjeta principal de la cual va a
+                depender la virtual se debe tomar como base para calcular el cupo de la tarjeta virtual. Si el producto
+                no es virtual, este campo se debe dejar en blanco.</p>
+            </td>
+          </tr>
+
+          <tr>
+            <td>
+              <p class="SUBTITULO"><b>Edad máxima mora para aprobar</b></p>
+            </td>
+            <td>
+              <p class="PARRAFO">Campo numérico de hasta 2 dígitos en el cual se registra la máxima
+                altura de mora que el cliente puede presentar en la cantidad de períodos señalados en el campo
+                siguiente, con el fin de que la solicitud de nuevos productos pueda ser procesada y aprobada.</p>
+            </td>
+          </tr>
+
+          <tr>
+            <td>
+              <p class="SUBTITULO"><b>Periodos evaluación mora otros productos</b></p>
+            </td>
+            <td>
+              <p class="PARRAFO">En este campo numérico de hasta 2 dígitos se indica la cantidad de
+                períodos que el sistema debe tener en cuenta para evaluar la altura de mora del cliente indicada en el
+                campo anterior y poder aprobar las solicitudes de nuevos productos.</p>
+            </td>
+          </tr>
+
+          <tr>
+            <td>
+              <p class="SUBTITULO"><b>Producto con desembolsos
+                </b></p>
+            </td>
+            <td>
+              <p class="PARRAFO">Campo tipo check en el cual se señala si el producto maneja
+                desembolsos y en consecuencia requiere un número de cuenta al momento de ingresar la
+                solicitud.</p>
+            </td>
+          </tr>
+
+          <tr>
+            <td>
+              <p class="SUBTITULO"><b>Tarjeta con chip
+                </b></p>
+            </td>
+            <td>
+              <p class="PARRAFO">En este campo tipo check se indica si el plástico emitido
+                como materialización del producto incorpora un chip con la información pertinente.
+              </p>
+            </td>
+          </tr>
+
+          <tr>
+            <td>
+              <p class="SUBTITULO"><b>Tarjeta nueva activa
+                </b></p>
+            </td>
+            <td>
+              <p class="PARRAFO">Campo tipo check que indica si una vez emitida la tarjeta
+                esta sale sin ningún bloqueo y lista para su uso o si por el contrario debe salir con bloqueo
+                al despacho y esperar el proceso normal establecido por la entidad para el desbloqueo de la
+                misma.</p>
+            </td>
+          </tr>
+
+          <tr>
+            <td>
+              <p class="SUBTITULO"><b>Se respeta el producto solicitado
+                </b></p>
+            </td>
+            <td>
+              <p class="PARRAFO">En este campo se indica si durante el proceso de asignación
+                de los cupos y aprobación de la solicitud se debe respetar el producto que el cliente solicitó
+                inicialmente o si el sistema puede evaluar y modificar, con base en el cupo aprobado calculado
+                para la tarjeta, el producto que se le debe asignar al cliente.</p>
+            </td>
+          </tr>
+
+          <tr>
+            <td>
+              <p class="SUBTITULO"><b>Mínimo periodos de antigüedad de la tarjeta
+                </b></p>
+            </td>
+            <td>
+              <p class="PARRAFO">Campo numérico de 2 dígitos en el que se indica la cantidad
+                mínima de meses que la tarjeta debe tener de antigüedad para poder efectuar una solicitud de
+                aumento de cupo o incluirla dentro de un proceso de aumento masivo de cupos.</p>
+            </td>
+          </tr>
+
+          <tr>
+            <td>
+              <p class="SUBTITULO"><b>Periodos mínimos transcurridos desde anterior aumento
+                </b></p>
+            </td>
+            <td>
+              <p class="PARRAFO">En este campo numérico de 2 dígitos se indica la cantidad de
+                periodos (meses) que deben haber transcurrido desde el último aumento de cupo efectuado a la
+                tarjeta para poder hacer una solicitud individual de aumento de cupo o incluirla en un proceso
+                de aumento masivo de cupos. Si la tarjeta no ha tenido ningún aumento, se evalúa como última
+                fecha de incremento la de aprobación de la solicitud del nuevo crédito con la cual se creó la
+                tarjeta.</p>
+            </td>
+          </tr>
+
+          <td class="titletable">
+            <p class="SUBTITULO"><b>% Mínimo sobre el cupo actual
+              </b></p>
+          </td>
+          <td>
+            <p class="PARRAFO">Campo numérico de 3 enteros y 2 decimales que, permite a la
+              entidad registrar el valor porcentual calculado sobre el monto del cupo actual, que como
+              mínimo deberá incrementar el sistema al efectuarse el proceso de aumento masivo</p>
+          </td>
+          </tr>
+
+          <td class="titletable">
+            <p class="SUBTITULO"><b>Reposición
+                Primera vez / Segunda vez / Tercera vez / Mayor a tres veces
+              </b></p>
+          </td>
+          <td>
+            <p class="PARRAFO">En estos campos numéricos de 14 enteros y 2 decimales, se
+              registran respectivamente los montos que la entidad cobrará al cliente cada vez que se haga
+              una reposición de la tarjeta, acorde con la frecuencia o cantidad de veces que este evento se
+              haya presentado.</p>
+          </td>
+          </tr>
+
+          <tr>
+            <td>
+              <p class="SUBTITULO"><b>Transacción asociada
+                </b></p>
+            </td>
+            <td>
+              <p class="PARRAFO">Si cualquiera de los campos anteriores contiene un valor,
+                este campo se convierte en obligatorio y en él se selecciona de la lista de valores la <a
+                  href="MEH_003B.html" >transacción interna</a> que se va a generar cuando
+                se cumplan las condiciones para generar cobro por el evento.</p>
+            </td>
+          </tr>
+
+          <tr>
+            <td>
+              <p class="SUBTITULO"><b>Cambio de nombre / Banda magnética / Deterioro
+                </b></p>
+            </td>
+            <td>
+              <p class="PARRAFO">En estos campos tipo check se marcan aquellas causales por
+                los cuales la entidad va a generar cobro al cliente en caso de presentarse el evento de
+                reposición del plástico.</p>
+            </td>
+          </tr>
+
+          <tr>
+            <td>
+              <p class="SUBTITULO"><b>Calcula fecha de vencimiento
+                </b></p>
+            </td>
+            <td>
+              <p class="PARRAFO">Campo tipo check en el que se indica al sistema si dentro del
+                proceso de reposici&oacute;n se debe calcular una nueva fecha de vencimiento para la tarjeta,
+                teniendo en cuenta lo indicado en el par&aacute;metro <a href="MEH_002B.html#BL_PERIODOS"
+                  >n&uacute;mero periodos antes del vencimiento</a> contenido en este mismo
+                formulario. Si el campo n&uacute;mero de periodos es nulo, el sistema siempre calcular&aacute;
+                y actualizar&aacute; la nueva fecha de vencimiento para la tarjeta con base en la vigencia
+                definida para el producto. </p>
+            </td>
+          </tr>
+
+          <tr>
+            <td>
+              <p class="SUBTITULO"><b>Genera número de tarjeta
+                </b></p>
+            </td>
+            <td>
+              <p class="PARRAFO">En este campo se señala si como resultado del evento de
+                reposición se debe generar un nuevo número de tarjeta.</p>
+            </td>
+          </tr>
+          </table>
+
+              <p class="PARRAFO"><span class="SUBTITULO">Reposición activa:</span> Campo tipo check en el que se indica si como resultado de la
+                reposición del plástico este sale sin ningún bloqueo y listo para su uso o si por el
+                contrario debe salir con bloqueo al despacho y esperar el proceso normal establecido por la
+                entidad para el desbloqueo de la tarjeta.</p>
+   
+          <p>Los otros 5 bloques de datos del formulario Eventos contienen los siguientes campos:</p>
+          <p class="TITLE"><img src="../img/MEF_002E10.PNG"></p>
+          <div class="PARRAFO">
+            <p class="TITLE">Descripción de campos</p>
+            <table>
+              <tr>
+                <td>
+                  <p class="SUBTITULO"><b>Reexpedición
+                      Primera vez / Segunda vez / Tercera vez / Mayor a tres veces </b></p>
+                </td>
+                <td>
+                  <p class="PARRAFO">En estos campos numéricos de 14 enteros y 2 decimales, se
+                    registran respectivamente los montos que la entidad cobrará al cliente cada vez que se haga
+                    una reexpedición de la tarjeta, acorde con la frecuencia o cantidad de veces que este evento
+                    se haya presentado.</p>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <p class="SUBTITULO"><b>Transacción asociada
+                    </b></p>
+                </td>
+                <td>
+                  <p class="PARRAFO">Si cualquiera de los campos anteriores contiene un valor,
+                    este campo se convierte en obligatorio y en él se selecciona de la lista de valores la
+                    <a href="MEH_003B.html" >transacción interna</a> que se va a generar
+                    cuando se cumplan las condiciones para generar cobro por el evento de reexpedición.
+                  </p>
+                </td>
+              </tr>
+          </div>
+          <tr>
+            <td>
+              <p class="SUBTITULO"><b>Calcula fecha de vencimiento
+                </b></p>
+            </td>
+            <td>
+              <p class="PARRAFO">Campo tipo check en el que se indica al sistema si dentro del
+                proceso de reexpedición se debe calcular una nueva fecha de vencimiento para la tarjeta,
+                teniendo en cuenta lo indicado en el parámetro <a href="MEH_002B.html#BL_PERIODOS" >número
+                  periodos antes del vencimiento</a> contenido en este mismo
+                formulario. Si el campo número de periodos es nulo, el sistema siempre calculará
+                y actualizará la nueva fecha de vencimiento para la tarjeta con base en la vigencia
+                definida para el producto. </p>
+            </td>
+          </tr>
+
+          <tr>
+            <td>
+              <p class="SUBTITULO"><b>Porcentaje cuota
+
+
+                </b></p>
+            </td>
+            <td>
+              <p class="PARRAFO">Campo
+                numérico en el que se indica el porcentaje que aplicado sobre el concepto seleccionado en el
+                campo 'Base' servirá al sistema para calcular el valor de la cuota a cobrar. Este campo es
+                excluyente con el de 'Cuota' es decir que solo uno de los dos debe ser diligenciado.
+              </p>
+            </td>
+          </tr>
+
+          <tr>
+            <td>
+              <p class="SUBTITULO"><b>Renovación
+                  Primera vez / Segunda vez / Tercera vez / Mayor a tres veces </b></p>
+            </td>
+            <td>
+              <p class="PARRAFO">En estos campos numéricos de 14 enteros y 2 decimales, se
+                registran respectivamente los montos que la entidad cobrará al cliente cada vez que se haga
+                una renovación de la tarjeta, acorde con la frecuencia o cantidad de veces que este evento se
+                haya presentado.</p>
+            </td>
+          </tr>
+
+          <tr>
+            <td>
+              <p class="SUBTITULO"><b>Transacción asociada
+                </b></p>
+            </td>
+            <td>
+              <p class="PARRAFO">Si cualquiera de los campos anteriores contiene un valor,
+                este campo se convierte en obligatorio y en él se selecciona de la lista de valores la <a
+                  href="MEH_003B.html" >transacción interna</a> que se va a generar cuando
+                se cumplan las condiciones para generar cobro por el evento de renovación.</p>
+            </td>
+          </tr>
+
+          <tr>
+            <td>
+              <p class="SUBTITULO"><b>Genera número de tarjeta
+                </b></p>
+            </td>
+            <td>
+              <p class="PARRAFO">En este campo se señala si como resultado del evento de
+                renovación se debe generar un nuevo número de tarjeta.</p>
+            </td>
+          </tr>
+
+          <tr>
+            <td>
+              <p class="SUBTITULO"><b>Reposición activa
+                </b></p>
+            </td>
+            <td>
+              <p class="PARRAFO">Campo tipo check en el que se indica si como resultado de la
+                renovación de la tarjeta esta sale sin ningún bloqueo y lista para su uso o si por el
+                contrario debe salir con bloqueo al despacho y esperar el proceso normal establecido por la
+                entidad para el desbloqueo de la misma.</p>
+            </td>
+          </tr>
+
+          <tr>
+            <td>
+              <p class="SUBTITULO"><b>Permite renovación masiva
+                </b></p>
+            </td>
+            <td>
+              <p class="PARRAFO">En este campo tipo check se señala si las tarjetas
+                pertenecientes al producto pueden ser incluidas dentro de los procesos de <a href="CAH_005B.html"
+                  >renovación masiva</a> que eventualmente adelanta
+                la entidad.
+              </p>
+            </td>
+          </tr>
+
+          <tr>
+            <td>
+              <p class="SUBTITULO"><a name="BL_PERIODOS"></a><b>Número periodos antes del vencimiento
+                </b></p>
+            </td>
+            <td>
+              <p class="PARRAFO">Campo en el que se registra la cantidad de periodos que el
+                sistema debe evaluar con relación a la fecha actual de vencimiento de la tarjeta para
+                determinar si debe o no hacer renovación automática de la fecha de vencimiento,
+                específicamente cuando se están procesando solicitudes de reposición o reexpedición que tengan
+                marcado el parámetro Calcula fecha de vencimiento. Para esto, el sistema
+                determina la cantidad de periodos que le faltan a la tarjeta para su vencimiento con
+                relación a la fecha actual y si es menor o igual al valor registrado en este campo
+                calcula y actualiza la nueva fecha de vencimiento en el momento de aprobar la solicitud. </p>
+            </td>
+          </tr>
+
+          <tr>
+            <td>
+              <p class="SUBTITULO"><b>Permite reactivación
+                </b></p>
+            </td>
+            <td>
+              <p class="PARRAFO">En este campo se indica si para el producto se permite o no
+                el evento de reactivación de la tarjeta.</p>
+            </td>
+          </tr>
+
+          <tr>
+            <td>
+              <p class="SUBTITULO"><b>Costo reactivación
+                </b></p>
+            </td>
+            <td>
+              <p class="PARRAFO">Campo numérico de 14 enteros y 2 decimales en el que se
+                registra el costo a cobrar al cliente por concepto del evento de reactivación de la tarjeta.
+              </p>
+            </td>
+          </tr>
+
+          <tr>
+            <td>
+              <p class="SUBTITULO"><b>Transacción asociada
+                </b></p>
+            </td>
+            <td>
+              <p class="PARRAFO">Si el campo anterior contiene un valor, este campo se
+                convierte en obligatorio y en él se selecciona de la lista de valores la <a href="MEH_003B.html"
+                  >transacción interna</a> que se va a generar para
+                el cobro por el evento de reactivación.</p>
+            </td>
+          </tr>
+
+          <tr>
+            <td>
+              <p class="SUBTITULO"><b>Primera vez / Segunda vez / Tercera vez / Mayor a tres veces (Cambio de
+                  producto)
+                </b></p>
+            </td>
+            <td>
+              <p class="PARRAFO">En estos campos numéricos de 14 enteros y 2 decimales, se
+                registran respectivamente los montos que la entidad cobrará al cliente cada vez que se haga un
+                cambio de producto, acorde con la frecuencia o cantidad de veces que este evento se haya
+                presentado.</p>
+            </td>
+          </tr>
+
+          <tr>
+            <td>
+              <p class="SUBTITULO"><b>Transacción asociada
+                </b></p>
+            </td>
+            <td>
+              <p class="PARRAFO">Si cualquiera de los campos anteriores contiene un valor,
+                este campo se convierte en obligatorio y en él se selecciona de la lista de valores la <a
+                  href="MEH_003B.html" >transacción interna</a> que se va a generar cuando
+                se cumplan las condiciones para generar cobro por el evento de cambio de producto.</p>
+            </td>
+          </tr>
+
+          <tr>
+            <td>
+              <p class="SUBTITULO"><b>Genera plástico
+                </b></p>
+            </td>
+            <td>
+              <p class="PARRAFO">Campo en el que se indica si como resultado del proceso de
+                cambio de producto se debe emitir un nuevo plástico. </p>
+            </td>
+          </tr>
+          </table>
+          <p><span class="SUBTITULO"><span><b>Seguro</b></span> 
+              <span>:</span> 
+            </span> 
+            <span> el último bloque de
+              datos del formulario Eventos, contiene la información requerida por el sistema para determinar los
+              parámetros mediante los cuales se van a regir los cobros que la entidad debe hacer al cliente por
+              concepto de seguros sobre los créditos otorgados. Aplica especialmente para la legislación
+              norteamericana.
+          </p>
+          <div class="PARRAFO">
+            <table>
+              <tr>
+                <td>
+                  <p class="SUBTITULO"><b>Edad mínima seguro
+                    </b></p>
+                </td>
+                <td>
+                  <p class="PARRAFO">En este campo numérico de 2 dígitos se registra la edad
+                    mínima que el cliente debe tener para poder adquirir la póliza de seguro de deudores.</p>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <p class="SUBTITULO"><b>Edad máxima seguro
+                    </b></p>
+                </td>
+                <td>
+                  <p class="PARRAFO">Campo de 2 dígitos en el que se ingresa la edad máxima que
+                    el cliente debe tener para poder adquirir la póliza de seguro de deudores.</p>
+                </td>
+              </tr>
+          </div>
+
+          <tr>
+            <td>
+              <p class="SUBTITULO"><b>Altura mora seguro
+                </b></p>
+            </td>
+            <td>
+              <p class="PARRAFO">En este campo numérico de dos dígitos se indica la altura de
+                mora a partir de la cual se suspende el cobro de la cuota correspondiente
+                a la póliza de seguro de vida de deudores, quedando la obligación sin el amparo respectivo.
+              </p>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <p class="SUBTITULO"><b>Tipo contrato
+                </b></p>
+            </td>
+            <td>
+              <p class="PARRAFO">Campo
+                tipo combo en el cual se puede seleccionar entre Indefinido o Definido el
+                tipo de contrato de trabajo que debe tener el cliente para poder ser elegible y adquirir la
+                póliza de seguro
+                de vida de deudores.
+              </p>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <p class="SUBTITULO"><b>Antigüedad laboral seguro
+                </b></p>
+            </td>
+            <td>
+              <p class="PARRAFO">En este campo numérico de 2 dígitos se registra la cantidad
+                mínima de años de antigüedad laboral que el cliente debe tener para poder acceder al
+                cubrimiento
+                de la póliza de seguro de vida de deudores.</p>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <p class="SUBTITULO"><b>Monto máximo asegurar
+                </b></p>
+            </td>
+            <td>
+              <p class="PARRAFO">Campo numérico de 14 enteros y 2 decimales en el que se
+                registra el monto máximo cubierto por el seguro.</p>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <p class="SUBTITULO"><b>% Liquidación
+                </b></p>
+            </td>
+            <td>
+              <p class="PARRAFO">En este campo se indica el porcentaje que sobre el saldo de
+                la obligación se debe liquidar al cliente por concepto de la prima del seguro.</p>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <p class="SUBTITULO"><b>Transacción interna SPD
+                </b></p>
+            </td>
+            <td>
+              <p class="PARRAFO">Si el campo anterior contiene algún valor, este campo se
+                convierte en obligatorio y en él se selecciona de la lista de valores la <a href="MEH_003B.html"
+                  >transacción interna</a> que se va a generar por
+                concepto de la prima del seguro cobrada al cliente.</p>
+            </td>
+          </tr>
+          </table>
+          <p><b><span class="SUBTITULO">Actualizar:</span></b> si el usuario
+            selecciona un registro e invoca la opción Actualizar, se despliega un formulario en el cual los
+            únicos campos NO modificables son el Bin, Producto, Grupo de afinidad y Marca.</p>
+          <p class="TITLE"><img src="../img/MEF_002E11.PNG"></p>
+
+          <p class="PARRAFO">Este formulario, igual que sucede con el de adicionar, contiene los hipervínculos
+            <a href="MEH_002B.html#BL_PARAMETROS" >Parámetros</a>, <a href="MEH_002B.html#BL_CUOTAS"
+              >Cuotas</a>y <a href="MEH_002B.html#BL_EVENTOS" >Eventos</a> con los cuales se
+            invocan los
+            formularios que permiten actualizar cualquiera de los datos contenidos en estos
+            formularios y cuya descripción se señaló anteriormente.
+          </p>
+          <p class="PARRAFO"><span class="aviso-importante">NOTA IMPORTANTE PARA LA ACTUALIZACIÓN DE DATOS</span> : los
+            formularios parámetros, cuotas y eventos solo tienen el botón Salvar,
+            por lo cual una vez dentro del formulario las dos únicas maneras de salir son utilizando este
+            botón para regresar a la página principal de definición de productos o
+            invocando nuevamente la opción Definición de productos desde el menú.
+            Si el usuario desea guardar los cambios efectuados, debe utilizar el botón
+            Salvar para regresar a la página principal de Definición de productosy desde
+            allí invocar nuevamente el botón Salvar, con lo cual se
+            actualizarán en la base de datos todos los cambios hechos en cualquiera de los formularios.
+            <span class="#4">Si el usuario no desea guardar los cambios hechos en el formulario, al regresar a
+              la página principal de Definición de productos debe utilizar el botón
+              Cancelarcon lo que se perderán todos los datos que se hayan modificado en
+              cualquiera de los formularios. En resumen, los cambios se guardan o se rechazan en bloque para
+              todos los formularios y no para cada formulario en particular. </span> 
+          </p>
+          <p class="PARRAFO">Si el usuario tiene duda respecto de si ha modificado datos o no, o definitivamente
+            quiere tener la seguridad de no guardar ningún cambio efectuado se sugiere invocar nuevamente
+            la opción desde el menú con lo cual el sistema desplegará otra vez el
+            formulario de Definición de productos pero sin actualizar información en la base de
+            datos. </p>
+
+          <p class="TITLE"><b><span class="TITLE">Actualizar
+                parámetros</span></b></p>
+          <p class="TITLE"><img src="../img/MEF_002E12.PNG"></p>
+        </div>
+        <p class="TITLE"><b><span >Actualizar
+              cuotas</span></b></p>
+        <p class="TITLE"><img src="../img/MEF_002E13.PNG"></p>
+        <p class="TITLE"><b><span class="TITLE">Actualizar
+              eventos</span></b></p>
+        <p class="TITLE"><img src="../img/MEF_002E14.PNG"></p>
+        <p class="PARRAFO"><b><span class="SUBTITULO">Detalle:</span></b> si el usuario selecciona un registro e invoca
+          la opción
+          Detalle, se despliega un formulario en el cual ninguno de sus campos es modificable.</p>
+        <p class="TITLE"><img src="../img/MEF_002E15.PNG"></p>
+        <p>Este formulario contiene los hipervínculos cuotas y eventos que le permiten al usuario
+          invocar los formularios correspondientes en los cuales ninguno de sus campos es modificable.</p>
+
+        <p class="TITLE"><b><span >Detalle
+              cuotas:</span></b></p>
+        <p class="TITLE"><img src="../img/MEF_002E16.PNG"></p>
+
+        <p class="TITLE"><b><span>Detalle eventos</span></b>:
+        </p>
+        <p class="TITLE"><img src="../img/MEF_002E17.PNG"></p>
+      </div>
+    </center>
+  </section>
+  <script src="../js/menu.js"></script>
+
+  <footer>
+    <div>
+      <img class="TITLE" src="../img/logo.PNG">
+    </div>
+    <p>OpenCard SAS</p>
+    <p>Calle 77 Nº 11-19 Piso 4°,Bogotá D.C.</p>
+    <p>Tel (57) 601 - 313 37 75 <a href="http://www.OpenCard.com" target="_blank">www.OpenCard.com</a></p>
+
+  </footer>
+</body>
+
+</html>

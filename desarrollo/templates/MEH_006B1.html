@@ -1,0 +1,423 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>BANKBU®</title>
+
+  <link rel="stylesheet" href="../css/pages.css">
+  <link rel="stylesheet" href="../css/style.css">
+  <link rel="icon" href="../img/ACQUIRER-logo.JPG" type="image/x-icon">
+</head>
+
+<body>
+
+  <header>
+    <img class="logo" src="../img/logoBankbu_.PNG" alt="Logo de Mi Empresa">
+    <div id="menuBtn">
+      <img class="TITLE" src="../img/menu.PNG" alt="Botón de Menú ">
+    </div>
+  </header>
+  <nav>
+    <ul>
+      <li>
+        <a href="../index.html" class="main-optionINICIO">INICIO</a>
+      </li>
+      <li>
+        <a href="NUH_INTB.html" class="main-optionINTRODUCCIÓN">INTRODUCCIÓN</a>
+      </li>
+      <li><a href="#" class="main-option">NUCLEO ▼</a>
+        <ul>
+          <li><a href="NUH_000B.html">Config. Sistema</a></li>
+          <li><a href="NUH_00B_N2.html">Parametros</a></li>
+          <li><a href="NUH_00B_inicio.html">Inicio</a></li>
+          <li><a href="NUH_00B_proceso.html">Procesos</a></li>
+          <li><a href="NUH_00B_inf.html">Inf. Cliente</a></li>
+          <li><a href="NUH_00B_conta.html">Contabilidad</a></li>
+          <li style="visibility: hidden; display: none;"><a href="NUH_00B_audi.html">Auditoria</a></li>
+
+        </ul>
+      </li>
+      <li>
+        <a href="#" class="main-option">EMISOR ▼</a>
+        <ul>
+          <li><a href="EMH_000B.html">Productos</a></li>
+          <li><a href="EMH_000Bsoli.html">Solicitudes</a></li>
+          <li><a href="EMH_000Bmerca.html">Mercadeo</a></li>
+          <li><a href="EMH_000Bservi.html">Servicio Al Cliente</a></li>
+          <li><a href="EMH_000Bpendi.html">Pendientes</a></li>
+          <li><a href="EMH_000Btrans.html">Transaccionabilidad</a></li>
+          <li><a href="EMH_000Bauto.html">Autorizaciones</a></li>
+          <li><a href="EMH_000Bplasti.html">Adm. Plasticos</a></li>
+          <li><a href="EMH_000Brecla.html">Reclamos</a></li>
+                    <li><a href="MEH_032B.html">Lealtad</a></li>
+                    <li><a href="COH_064B.html">Cobranzas</a></li>
+        </ul>
+      </li>
+      <li style="visibility: hidden">
+        <a href="ACH_000B.html" class="main-option">ADQUIRIENTE</a>
+      </li>
+      <li style="visibility: hidden">
+        <a href="DBH_000B.html" class="main-option">TARJETA DEBITO</a>
+      </li>
+    </ul>
+  </nav>
+
+  <section>
+    <div>
+      <table>
+        <tr>
+          <td>
+            <div>
+              <p class="TITLE">Esquemas de puntajes - Par&aacute;metros </p>
+            </div>
+          </td>
+        </tr>
+      </table>
+      <p class="PARRAFO"><span class="SUBTITULO">Parametros:</span>  Grupo de campos en los que se definen los valores de los
+        par&aacute;metros que facilitan el control y administraci&oacute;n de los puntos de acuerdo con el esquema
+        dise&ntilde;ado por la entidad.</p>
+      <p class="PARRAFO">A trav&eacute;s de los botones Salvar o Cancelar, se regresa al formulario principal de <a
+          href="MEH_006B.html">Esquemas de puntajes</a>. </p>
+      <p class="TITLE"><img src="../img/MEF_006B4.PNG"></p>
+
+      <p class="PARRAFO"><span class="SUBTITULO"> Puntos:</span> En este bloque de informaci&oacute;n se deben ingresar los par&aacute;metros
+        correspondientes a los conceptos o eventos generadores de puntos a favor de los tarjetahabientes.</p>
+
+      <table>
+        <tr>
+          <td class="titletable">
+            <p class="SUBTITULO"><b><span>Por vinculaci&oacute;n </span></b></p>
+          </td>
+          <td>
+            <p class="PARRAFO">Campo en el que se define la cantidad de puntos que otorga el sistema al momento en que el cliente sea
+              ingresado en la entidad como cliente nuevo activo, siempre y cuando el producto a trav&eacute;s del cual
+              se vincula, se encuentre parametrizado en este esquema.</p>
+          </td>
+        </tr>
+        <tr>
+          <td class="titletable">
+            <p class="SUBTITULO">Por referido entregado </p>
+          </td>
+          <td>
+            <p class="PARRAFO">En este campo se registra la cantidad de puntos que el sistema otorga a cada cliente, cuando les sean
+              aprobados y entregados los productos a clientes potenciales cuya informaci&oacute;n haya sido
+              proporcionada a la entidad por el cliente activo. Tanto los <A href="MEH_002B.html">productos</A>
+              del nuevo cliente como del cliente activo que lo refiere deben pertenecer a esquemas vigentes.</p>
+          </td>
+        </tr>
+        <tr>
+          <td class="titletable">
+            <p class="SUBTITULO">Por pago m&iacute;nimo oportuno </p>
+          </td>
+          <td>
+            <p class="PARRAFO">Campo que permite definir la cantidad de puntos que acumula el cliente en el momento que realice los
+              pagos m&iacute;nimos correspondientes, dentro de la fecha l&iacute;mite establecida, de acuerdo con la
+              informaci&oacute;n contenida en la opci&oacute;n <A href="SCH_060B.html">Datos de la tarjeta</A>.
+            </p>
+          </td>
+        </tr>
+        <tr>
+          <td class="titletable">
+            <p class="SUBTITULO">Por pag superior m&iacute;nimo oportuno </p>
+          </td>
+          <td>
+            <p class="PARRAFO">En este campo se registra la cantidad de puntos que acumula el cliente en el momento que realice abonos
+              que excedan el pago m&iacute;nimo exigido por la entidad, siempre y cuando se realicen dentro de la fecha
+              l&iacute;mite establecida, informaci&oacute;n contenida en la opci&oacute;n <A
+                  href="SCH_060B.html">Datos de la tarjeta</A>.</p>
+          </td>
+        </tr>
+        <tr>
+          <td class="titletable">
+            <p class="SUBTITULO">Por pago total oportuno </p>
+          </td>
+          <td>
+            <p class="PARRAFO">Campo en el que se digita la cantidad de puntos que acumula el cliente, en el momento que efect&uacute;e
+              pagos correspondientes al saldo total de la deuda, siempre y cuando se realicen dentro de la fecha
+              l&iacute;mite estipulada, de acuerdo con lo parametrizado en la opci&oacute;n <A
+                  href="SCH_060B.html">Datos de la tarjeta</A>.</p>
+          </td>
+        </tr>
+      </table>
+
+      <p class="PARRAFO"><span class="SUBTITULO">Bonos por per&iacute;odo:</span> Este conjunto de campos
+        permite registrar los par&aacute;metros para otorgar puntos adicionales, independientes a los generados por
+        otros conceptos, y que se acumular&aacute;n al saldo de puntos que del cliente, siempre y cuando los consumos
+        efectuados dentro de cada per&iacute;odo superen los montos y/o cantidades de transacciones aqu&iacute;
+        se&ntilde;aladas. El sistema eval&uacute;a tanto la vigencia del esquema para acumular los puntos hasta el
+        momento de expiraci&oacute;n del mismo, como el otorgamiento de los mismos por monto, por valor o ambos.</p>
+
+      <table>
+        <tr>
+          <td class="titletable">
+            <p class="SUBTITULO">Meta (Nro. transacciones) </p>
+          </td>
+          <td>
+            <p class="PARRAFO">Campo que contiene la cantidad de utilizaciones o consumos que debe realizar el cliente durante cada
+              periodo para hacerse acreedor a los puntos indicados en el campo siguiente.</p>
+          </td>
+        </tr>
+        <tr>
+          <td class="titletable">
+            <p class="SUBTITULO"><b><span>Bono por cumplimiento </span></b></p>
+          </td>
+          <td>
+            <p class="PARRAFO">Este campo contiene la cantidad de puntos que se acumular&aacute;n, por periodo, una vez cumplida la meta
+              de n&uacute;mero de transacciones requeridas para su aplicaci&oacute;n.</p>
+          </td>
+        </tr>
+        <tr>
+          <td class="titletable">
+            <p class="SUBTITULO">Meta (Vr. transacciones) </p>
+          </td>
+          <td>
+            <p class="PARRAFO">Campo en el que se parametriza el valor o monto de los consumos que se deben realizar durante el periodo
+              para hacerse acreedor a los puntos indicados en el siguiente campo.</p>
+          </td>
+        </tr>
+        <tr>
+          <td class="titletable">
+            <p class="SUBTITULO"><b><span>Bono por cumplimiento </span></b></p>
+          </td>
+          <td>
+            <p class="PARRAFO">En este campo se registra la cantidad de puntos que se acumular&aacute;n una vez cumplida la meta de
+              valor de las transacciones requeridas para su aplicaci&oacute;n.</p>
+          </td>
+        </tr>
+      </table>
+
+      <p class="PARRAFO"><span class="SUBTITULO"> Bonos por promoci&oacute;n:</span> Espacio destinado para registrar los par&aacute;metros de puntos
+        adicionales respecto a los ya generados por otros conceptos, que se acumular&aacute;n por una s&oacute;la vez,
+        de acuerdo con los consumos realizados dentro de un per&iacute;odo de operaci&oacute;n, expresado en
+        t&eacute;rminos de la vigencia del esquema.</p>
+
+      <table>
+        <tr>
+          <td class="titletable">
+            <p class="SUBTITULO">Meta (Nro. transacciones) </p>
+          </td>
+          <td>
+            <p class="PARRAFO">Campo en el que se parametriza la cantidad de operaciones que se deben realizar durante la vigencia del
+              esquema para que aplique la acumulaci&oacute;n de puntos.</p>
+          </td>
+        </tr>
+        <tr>
+          <td class="titletable">
+            <p class="SUBTITULO"><b><span>Bono por cumplimiento </span></b></p>
+          </td>
+          <td>
+            <p class="PARRAFO">En este campo se debe registrar la cantidad de puntos que se acumular&aacute;n una vez cumplida la meta
+              de transacciones requeridas para su aplicaci&oacute;n.</p>
+          </td>
+        </tr>
+        <tr>
+          <td class="titletable">
+            <p class="SUBTITULO">Meta (Vr. transacciones) </p>
+          </td>
+          <td>
+            <p class="PARRAFO">Campo que permite parametrizar la sumatoria o el monto a acumular para las operaciones que se deben
+              realizar durante la vigencia del esquema para que aplique la acumulaci&oacute;n de puntos.</p>
+          </td>
+        </tr>
+        <tr>
+          <td class="titletable">
+            <p class="SUBTITULO"><b><span>Bono por cumplimiento </span></b></p>
+          </td>
+          <td>
+            <p class="PARRAFO">En este campo se debe registrar la cantidad de puntos que se acumular&aacute;n una vez cumplida la meta
+              de valor de las transacciones requeridas para su aplicaci&oacute;n.</p>
+          </td>
+        </tr>
+      </table>
+
+      <p class="TITLE"><img src="../img/MEF_006B5.PNG"></p>
+
+      <p class="PARRAFO"><A name="SANCIONES"></A><span class="SUBTITULO">Sanciones:</span> Conjunto de campos en los que la entidad parametriza
+        la cantidad de puntos a deducir del acumulado disponioble del cliente cada vez que el sistema, al d&iacute;a de
+        facturaci&oacute;n, detecte que el producto del cliente ha incurrido en cualquiera de los eventos relacionados.
+        Se debe tener especial cuidado en los valores aqu&iacute; parametrizados, dado que al igual que sucede con los
+        bonos por periodo, estas multas o sanciones en puntos se causar&aacute;n en cada proceso de facturaci&oacute;n,
+        independientemente que el evento haya ocurrido durante el periodo anterior o subsiguientes.</p>
+
+      <table>
+        <tr>
+          <td class="titletable">
+            <p class="SUBTITULO">Por pago no oportuno </p>
+          </td>
+          <td class="PARRAFO">
+            <p class="PARRAFO">Campo en el cual la entidad define los puntos a descontar cuando el cliente no cumpla con los abonos
+              m&iacute;nimos exigidos dentro de la fecha l&iacute;mite destinada para ello.</p>
+          </td>
+        </tr>
+        <tr>
+          <td class="titletable">
+            <p class="SUBTITULO">Por mora de un periodo </p>
+          </td>
+          <td>
+            <p class="PARRAFO">En este campo se registran los puntos a descontar cuando el cliente presenta mora de un periodo (30
+              d&iacute;as), es decir, que no cumpla con los pagps m&iacute;nimos exigidos por la entidad al momento de
+              la facturaci&oacute;n.</p>
+          </td>
+        </tr>
+        <tr>
+          <td class="titletable">
+            <p class="SUBTITULO">Por mora de 2 periodos o m&aacute;s </p>
+          </td>
+          <td>
+            <p class="PARRAFO">Campo en el cual se definen los puntos a descontar cuando el cliente presenta mora de dos o m&aacute;s
+              periodos (de 30 d&iacute;as cada uno) consecutivos, es decir, que no se hayan efectuado los abonos
+              m&iacute;nimos exigidos por la entidad al momento de la facturaci&oacute;n. </p>
+          </td>
+        </tr>
+        <tr>
+          <td class="titletable">
+            <p class="SUBTITULO">Por sobrecupo </p>
+          </td>
+          <td>
+            <p class="PARRAFO">En este campo se determinan los puntos a descontar al cliente, si al momento de ejecuci&oacute;n del
+              proceso, los consumos realizados por &eacute;l han excedido el cupo autorizado, generado el estado de
+              sobrecupo.</p>
+          </td>
+        </tr>
+        <tr>
+          <td class="titletable">
+            <p class="SUBTITULO"><b><span>Por no uso durante periodo </span></b></p>
+          </td>
+          <td>
+            <p class="PARRAFO">Campo en el cual la entidad define los puntos a descontar cuando el cliente no haya efectuado consumos
+              durante el periodo.</p>
+          </td>
+        </tr>
+      </table>
+
+      <p class="PARRAFO"><span class="SUBTITULO">Varios:</span> Conjunto de campos que contienen otros par&aacute;metros relacionados con la
+        cancelaci&oacute;n o p&eacute;rdida de los puntos bien sea por expiraci&oacute;n o por exceder una determinada
+        altura de mora, entre otros. Es importante tener en cuenta que en la opci&oacute;n <A
+            href="CAH_002B.html">Estados y bloqueos</A> del N&uacute;cleo, se han definido dos de los
+        par&aacute;metros aqu&iacute; contenidos prevaleciendo los all&iacute; se&ntilde;alados.</p>
+
+      <table>
+        <tr>
+          <td class="titletable">
+            <p class="SUBTITULO">Altura mora elimina puntos </p>
+          </td>
+          <td>
+            <p class="PARRAFO">En este campo se define la altura de mora o edad de vencimiento de la cartera (expresada en n&uacute;mero
+              de periodos) a partir de la cual se eliminar&aacute;n todos los puntos acumulados por el cliente, por esta
+              causal, y que toma en cuenta el par&aacute;metro ingresado previamente en el campo Por mora de 2
+                per&iacute;odos o m&aacute;s del bloque <A href="#SANCIONES">sanciones</A>, de manera que
+              si en &eacute;l se ha registrado alg&uacute;n valor, el par&aacute;metro para el presente campo debe estar
+              expresado para una altura de mora mayor a 2 periodos. </p>
+          </td>
+        </tr>
+        <tr>
+          <td class="titletable">
+            <p class="SUBTITULO">No redimir puntos mora mayor a </p>
+          </td>
+          <td>
+            <p class="PARRAFO">Campo en el cual se determina la edad de mora o vencimiento de la cartera (expresada en n&uacute;mero de
+              periodos) a partir de la cual el sistema suspende la acumulaci&oacute;n de puntos al cliente, hasta tanto
+              no se normalice el estado de la obligaci&oacute;n. Este campo est&aacute; expresado en t&eacute;rminos de
+              periodos de maduraci&oacute;n de la cartera del cliente.</p>
+          </td>
+        </tr>
+        <tr>
+          <td class="titletable">
+            <p class="SUBTITULO">Acumulan amparadas </p>
+          </td>
+          <td>
+            <p class="PARRAFO">Campo que cuenta con lista de valores de la que la entidad puede seleccionar la manera como se
+              acumular&aacute;n los puntos de las tarjetas amparadas y extendidas. Las opciones que presenta son:
+              S&oacute;lo principal, Independiente o Ambas. Cuando el par&aacute;metro indique
+              s&oacute;lo principal, significa que todas las transacciones que realicen los productos amparados (y
+              extendidos) acumular&aacute;n puntos al cliente principal exclusivamente, es decir quien ampara dicho
+              producto. Si la opci&oacute;n escogida es independiente indica que los puntos obtenidos a
+              trav&eacute;s de los productos amparados y extendidos, se acumular&aacute;n de manera separada para cada
+              tarjeta. Sin embargo, cuando el par&aacute;metro se defina como ambas, los puntos generados por
+              las transacciones que se realicen con los productos con caracter&iacute;sticas de amparados y extendidos
+              ser&aacute;n compartidos con el principal, en la proporci&oacute;n definida en el campo % puntos por
+              amparada de esta opci&oacute;n del men&uacute;.</p>
+          </td>
+        </tr>
+        <tr>
+          <td class="titletable">
+            <p class="SUBTITULO">Manejo fracciones </p>
+          </td>
+          <td>
+            <p class="PARRAFO">Campo en el que la entidad selecciona, de la lista de valores adjunta, entre Truncar o
+              Redondeo el tratamiento que le dar&aacute; a las fracciones resultantes de los c&aacute;lculos
+              porcentuales sobre los puntos y aplica igual cuando los productos amparados comparten puntos al principal
+              &oacute; para la liquidaci&oacute;n del total de puntos obtenidos por una transacci&oacute;n al pasar por
+              los conceptos o niveles activados, establecimiento, grupo, cadena y/o tipo de servicio.</p>
+          </td>
+        </tr>
+        <tr>
+          <td class="titletable">
+            <p class="SUBTITULO">No acumulan puntos mora mayor a</p>
+          </td>
+          <td>
+            <p class="PARRAFO">Campo en el cual se determina la edad de mora o vencimiento de la cartera (expresada en n&uacute;mero de
+              periodos) a partir de la cual el sistema suspende la acumulaci&oacute;n de puntos al cliente, hasta tanto
+              no se normalice el estado de la obligaci&oacute;n. Este campo est&aacute; expresado en t&eacute;rminos de
+              periodos de maduraci&oacute;n de la cartera del cliente.</p>
+          </td>
+        </tr>
+        <tr>
+          <td class="titletable">
+            <p class="SUBTITULO">Periodos vigencia puntos acumulados </p>
+          </td>
+          <td>
+            <p class="PARRAFO">Campo en el que se define la vigencia o cantidad de per&iacute;odos de los que dispone el tarjetahabiente
+              para redimir los puntos acumulados por el manejo de su producto; opera en combinaci&oacute;n con el valor
+              del campo Frecuencia cancela puntos.</p>
+          </td>
+        </tr>
+        <tr>
+          <td class="titletable">
+            <p class="SUBTITULO">Frecuencia cancela puntos </p>
+          </td>
+          <td>
+            <p class="PARRAFO">En este campo se determina la frecuencia con que se anular&aacute;n los puntos que no fueron utilizados
+              durante el lapso de tiempo aqu&iacute; se&ntilde;alado. Si la entidad selecciona de la lista de valores la
+              opci&oacute;n Todo, indica que el total de los puntos acumulados y no utilizados durante la
+              vigencia de los mismos, se&ntilde;alada en el campo Periodos vigencia puntos acumulados,
+              ser&aacute;n eliminados, es decir que esos puntos estar&aacute;n vigentes &uacute;nicamente por el lapso
+              de tiempo indicado en el campo anterior. La opci&oacute;n Periodo indica que eliminar&aacute; la
+              totalidad de los puntos acumulados durante el periodo uno y que no hayan sido utilizados, de igual manera,
+              si el par&aacute;metro se define como A&ntilde;o, significa que cancela los puntos acumulados
+              hasta el &uacute;ltimo d&iacute;a h&aacute;bil del a&ntilde;o uno que no hayan sido utilizados y
+              as&iacute; sucesivamente.</p>
+          </td>
+        </tr>
+        <tr>
+          <td class="titletable">
+            <p class="SUBTITULO">% Puntos por amparada </p>
+          </td>
+          <td>
+            <p class="PARRAFO">Este campo le permite a la entidad definir, en t&eacute;rminos de porcentaje, la proporci&oacute;n de
+              puntos que ser&aacute;n acumulados al cliente principal por concepto de las transacciones efectuadas por
+              los clientes amparados. Con base en lo anterior, el valor determinado en este campo, expresado en puntos
+              porcentuales, se asignar&aacute; al cliente principal; la diferencia con la cual se completa el 100%, si
+              llegare a existir, corresponder&aacute; a la porci&oacute;n de puntos que le pertenecen a la tarjeta
+              amparada o extendida con que se hizo el consumo.</p>
+          </td>
+        </tr>
+      </table>
+  </section>
+  <script src="../js/menu.js"></script>
+</body>
+<footer>
+  <div>
+    <img class="TITLE" src="../img/logo.PNG">
+  </div>
+  <p>OpenCard SAS</p>
+  <p>Calle 77 Nº 11-19 Piso 4°,Bogotá D.C.</p>
+  <p>Tel (57) 601 - 313 37 75 <a href="http://www.OpenCard.com" target="_blank">www.OpenCard.com</a></p>
+
+
+
+</footer>
+
+</html>

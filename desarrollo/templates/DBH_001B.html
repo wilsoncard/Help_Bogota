@@ -1,0 +1,616 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BANKBU®</title>
+    <link rel="stylesheet" href="../css/pages.css">
+    <link rel="stylesheet" href="../css/style.css">
+ <link rel="icon" href="../img/ACQUIRER-logo.JPG" type="image/x-icon">
+</head>
+
+<body>
+
+    <header>
+        <img class="logo" src="../img/logoBankbu_.PNG" alt="Logo de Mi Empresa">
+        <div id="menuBtn">
+            <img class="TITLE"  src= "../img/menu.PNG" alt="Botón de Menú ">
+        </div>
+    </header>
+    <nav>
+        <ul>
+            <li>
+                    <a href="../index.html" class="main-optionINICIO">INICIO</a>
+            </li>
+            <li>
+                <a href="NUH_INTB.html" class="main-optionINTRODUCCIÓN">INTRODUCCIÓN</a>
+            </li>
+            <li><a href="#" class="main-option">NUCLEO ▼</a>
+                <ul>
+                    <li><a href="NUH_000B.html">Config. Sistema</a></li>
+                    <li><a href="NUH_00B_N2.html">Parametros</a></li>
+                    <li><a href="NUH_00B_inicio.html">Inicio</a></li>
+                    <li><a href="NUH_00B_proceso.html">Procesos</a></li>
+                    <li><a href="NUH_00B_inf.html">Inf. Cliente</a></li>
+                    <li><a href="NUH_00B_conta.html">Contabilidad</a></li>
+                    <li style="visibility: hidden; display: none;"><a href="NUH_00B_audi.html">Auditoria</a></li>
+
+                </ul>
+            </li>
+            <li>
+             <a href="#" class="main-option">EMISOR  ▼</a>
+                <ul>
+                    <li><a href="EMH_000B.html">Productos</a></li>
+                    <li><a href="EMH_000Bsoli.html">Solicitudes</a></li>
+                    <li><a href="EMH_000Bmerca.html">Mercadeo</a></li>
+                    <li><a href="EMH_000Bservi.html">Servicio Al Cliente</a></li>
+                    <li><a href="EMH_000Bpendi.html">Pendientes</a></li>
+                    <li><a href="EMH_000Btrans.html">Transaccionabilidad</a></li>
+                    <li><a href="EMH_000Bauto.html">Autorizaciones</a></li>
+                    <li><a href="EMH_000Bplasti.html">Adm. Plasticos</a></li>
+                    <li><a href="EMH_000Brecla.html">Reclamos</a></li>
+                    <li><a href="MEH_032B.html">Lealtad</a></li>
+                    <li><a href="COH_064B.html">Cobranzas</a></li>
+                </ul>
+            </li>
+ <li style="visibility: hidden">
+                <a href="ACH_000B.html" class="main-option">ADQUIRIENTE</a>
+            </li>
+            <li style="visibility: hidden">
+                <a href="DBH_000B.html" class="main-option">TARJETA DEBITO</a>
+            </li></ul>
+    </nav>
+
+    <section>
+        <div> 
+            <table>
+              <tr> 
+                <td><div> 
+                    <p  class="TITLE">Detalle consulta tarjeta d&eacute;bito</p>
+                  </div></td>
+              </tr>
+            </table>
+            <p class="PARRAFO" >Mediante esta opci&oacute;n que se 
+              invoca mediante el hiperv&iacute;nculo N&uacute;mero de tarjeta contenido 
+              en la <a href="DBH_036B.html" >consulta de clientes</a>, la entidad 
+              tienen acceso a toda la informaci&oacute;n de cada una de las tarjetas d&eacute;bito 
+              de sus clientes como lo son cuentas asociadas, hist&oacute;rico de movimientos, 
+              estados de la misma entre otros datos.</span></p>
+            <p  class="PARRAFO">Al ingresar a la opci&oacute;n se despliega 
+              un formulario estructurado en cuatro tabs en los cuales se agrupa toda la 
+              informaci&oacute;n de la tarjeta: <a href="DBH_001B.html#BL_GENERAL" >Informaci&oacute;n 
+              general</a>, <a href="DBH_001B.html#BL_CUENTAS" >Cuentas</a>, 
+              <a href="DBH_001B.html#BL_MOVIMIENTO" >Movimiento</a> y <a href="DBH_001B.html#BL_NOVEDADES" >Novedades</a>. 
+              Por defecto el formulario siempre ingresa en el tab de informaci&oacute;n 
+              general. </p>
+
+            <p  class="PARRAFO"><a name="BL_GENERAL"></a><span class="SUBTITULO"><span >Informaci&oacute;n 
+              general</b>:</span></span><span > 
+              si el usuario invoca el tab Cuentas, se despliega un nuevo formulario 
+              que contiene la informaci&oacute;n principal de la tarjeta como son la identificaci&oacute;n 
+              del producto, bloqueos actuales y anteriores, fechas importantes. El formulario 
+              se encuentra estrucuturado en tres bloques de datos: Informaci&oacute;n 
+              principal, Generalidades y Bloqueos. </span></p>
+            
+            <p class="TITLE"><img src="../img/DBF_001E.PNG"706" height="451"></p>
+
+            <p  class="TITLE">Descripci&oacute;n de campos</p>
+            <div> 
+              <table>
+                <tr> 
+                  <td> 
+                    <p class="SUBTITULO"><b><span >Nombre </span></b></p></td>
+                  <td><p  class="PARRAFO">Campo 
+                      que despliega el nombre y apellidos del cliente titular de la tarjeta.</p></td>
+                </tr>
+                <tr> 
+                  <td class="titletable"> 
+                    <p class="SUBTITULO"><b><span >Empresa</span></b></p></td>
+                  <td><p  class="PARRAFO">En 
+                      este campo se muestra el nombre de la empresa o entidad emisora de 
+                      la tarjeta.</p></td>
+                </tr>
+                <tr> 
+                  <td  > 
+                    <p class="SUBTITULO"><b><span >Sucursal</span></b></p></td>
+                  <td><p  class="PARRAFO">Campo 
+                      que contiene la <a href="NUH_020B.html" >sucursal</a> 
+                      de radicaci&oacute;n de la tarjeta consultada.</p></td>
+                </tr>
+                <tr> 
+                  <td  > 
+                    <p class="SUBTITULO"><b><span >Tipo tarjeta</span></b></p></td>
+                  <td><p  class="PARRAFO">Este 
+                      campo indica si el tipo de tarjeta consultada corresponde a d&eacute;bito.</p></td>
+                </tr>
+                <tr> 
+                  <td class="titletable" > 
+                    <p class="SUBTITULO"><b><span >Agente</span></b></p></td>
+                  <td><p  class="PARRAFO">Campo 
+                      que muestra el nombre del agente responsable de la colocaci&oacute;n 
+                      de la tarjeta.</p></td>
+                </tr>
+                <tr> 
+                  <td class="titletable" > 
+                    <p class="SUBTITULO"><b><span >Producto</span></b></p></td>
+                  <td><p  class="PARRAFO">En 
+                      este campo se despliega el nombre del <a href="DBH_018B.html" >producto 
+                      d&eacute;bito</a> al que pertenece la tarjeta.</p></td>
+                </tr>
+                <tr> 
+                  <td class="titletable" > 
+                    <p class="SUBTITULO"><b><span >Ciclo</span></b></p></td>
+                  <td><p  class="PARRAFO">Campo 
+                      en el que se indica el <a href="CAH_003B.html" >ciclo 
+                      de facturaci&oacute;n</a> al que pertenece la tarjeta y que determina 
+                      la fecha de corte para el cobro de la cuota de manejo.</p></td>
+                </tr>
+                <tr> 
+                  <td class="titletable"><p class="SUBTITULO"><b><span >Codigo 
+                      producto (segmento)</span></b></p></td>
+                  <td><p  class="PARRAFO">Este 
+                      campo contiene el c&oacute;digo del <a href="DBH_034B1.html" >segmento</a> 
+                      al que pertenece la tarjeta de acuerdo con el producto d&eacute;bito.</p></td>
+                </tr>
+                <tr> 
+                  <td class="titletable"><p class="SUBTITULO"><b><span >Grupo 
+                      de afinidad</span></b></p></td>
+                  <td><p  class="PARRAFO">Campo 
+                      que muestra el <a href="DBH_034B2.html" >grupo de 
+                      afinidad</a> correspondiente al producto d&eacute;bito <span >al 
+                      que pertenece la tarjeta.</span></p></td>
+                </tr>
+                <tr> 
+                  <td class="titletable"><p class="SUBTITULO"><b><span >Tarjeta 
+                      anterior </span></b></p></td>
+                  <td><p  class="PARRAFO">En 
+                      este campo se muestra si es el caso el anterior n&uacute;mero que 
+                      ten&iacute;a la tarjeta cuando por ejemplo a causa de las reexpediciones, 
+                      reposiciones o renovaciones de la misma, &eacute;sta haya tenido un 
+                      cambio de n&uacute;mero.</p></td>
+                </tr>
+                <tr> 
+                  <td class="titletable"><p class="SUBTITULO"><b><span >Fecha 
+                      &uacute;ltima novedad</span></b></p></td>
+                  <td><p  class="PARRAFO">Campo 
+                      que muestra en formato YYYY-MM-DD la fecha en la cual se le aplic&oacute; 
+                      a la tarjeta la <a href="DBH_020B.html" >novedad</a> 
+                      m&aacute;s reciente, en caso de existir.</p></td>
+                </tr>
+                <tr> 
+                  <td class="titletable"><p class="SUBTITULO"><b><span >Fecha 
+                      vencimiento</span></b></p></td>
+                  <td><p  class="PARRAFO">Este 
+                      campo despliega en formato YYYY-MM-DD la fecha hasta la cual tiene 
+                      vigencia la tarjeta consultada.</p></td>
+                </tr>
+                <tr> 
+                  <td class="titletable"><p class="SUBTITULO"><b><span >Fecha 
+                      activaci&oacute;n</span></b></p></td>
+                  <td><p  class="PARRAFO">Campo 
+                      que muestra en formato YYYY-MM-DD la fecha en la cual se activ&oacute; 
+                      la tarjeta actual.</p></td>
+                </tr>
+                <tr> 
+                  <td class="titletable"><p class="SUBTITULO"><b><span >Fecha 
+                      cuota </span></b></p></td>
+                  <td><p  class="PARRAFO">Este 
+                      campo se&ntilde;ala en formato YYYY-MM-DD la pr&oacute;xima fecha 
+                      en la que se le debe generar el cobro de cuota de manejo a la tarjeta. 
+                    </p></td>
+                </tr>
+                <tr> 
+                  <td class="titletable"><p class="SUBTITULO"><b><span >Fecha 
+                      manejo anterior</span></b></p></td>
+                  <td><p  class="PARRAFO">Campo 
+                      en formato YYYY-MM-DD que indica la fecha en la cual se le hizo el 
+                      &uacute;ltimo cobro de cuota de manejo a la tarjeta.</p></td>
+                </tr>
+                <tr> 
+                  <td class="titletable"><p class="SUBTITULO"><b><span >Valor 
+                      manejo </span></b></p></td>
+                  <td><p  class="PARRAFO">En 
+                      este campo se muestra el monto a cobrar a la tarjeta por concepto 
+                      de cuota de manejo de acuerdo con lo parametrizado para el <a href="DBH_018B.html" >producto.</a></p></td>
+                </tr>
+                <tr> 
+                  <td class="titletable"><p class="SUBTITULO"><b><span >Bloqueo 
+                      persona / Fecha bloqueo persona</span></b></p></td>
+                  <td><p  class="PARRAFO">Campos 
+                      que muestran respectivamente en bloqueo actual que tenga el cliente 
+                      titular de la tarjeta y la fecha en la cual este fu&eacute; aplicado. 
+                      Si el campo Bloqueo est&aacute; en blanco y la Fecha si tiene dato 
+                      se debe interpretar como la fecha en que se levant&oacute; el bloqueo 
+                      al cliente.</p></td>
+                </tr>
+                <tr> 
+                  <td class="titletable"><p class="SUBTITULO"><b><span >Bloqueo 
+                      anterior persona / Fecha bloqueo anterior persona</span></b></p></td>
+                  <td><p  class="PARRAFO">Si 
+                      en alguna ocasi&oacute;n anterior el cliente tuvo alg&uacute;n bloqueo, 
+                      en estos campos se muestra el bloqueo y la fecha de aplicaci&oacute;n 
+                      / retiro del mismo.</p></td>
+                </tr>
+                <tr> 
+                  <td class="titletable"><p class="SUBTITULO"><b><span >Bloqueo 
+                      pl&aacute;stico / Fecha bloqueo pl&aacute;stico</span></b></p></td>
+                  <td><p  class="PARRAFO">Campos 
+                      que muestran respectivamente en bloqueo actual que tenga la tarjeta 
+                      consultada y la fecha en la cual este fu&eacute; aplicado. Si el campo 
+                      Bloqueo est&aacute; en blanco y la Fecha si tiene dato se debe interpretar 
+                      como la fecha en que se levant&oacute; el bloqueo a la tarjeta.</p></td>
+                </tr>
+                <tr> 
+                  <td class="titletable"><p class="SUBTITULO"><b><span >Bloqueo 
+                      anterior pl&aacute;stico / Fecha bloqueo anterior pl&aacute;stico</span></b></p></td>
+                  <td><p  class="PARRAFO">Si 
+                      en alguna ocasi&oacute;n anterior la tarjeta tuvo alg&uacute;n bloqueo, 
+                      en estos campos se muestra el bloqueo y la fecha de aplicaci&oacute;n 
+                      / retiro del mismo.</p></td>
+                </tr>
+                <tr> 
+                  <td class="titletable"><p class="SUBTITULO"><b><span >Motivo 
+                      cancelaci&oacute;n </span></b></p></td>
+                  <td><p  class="PARRAFO">En 
+                      caso que la tarjeta se encuentre con bloqueo de cancelaci&oacute;n 
+                      voluntaria, en este campo se muestra el c&oacute;digo y descripci&oacute;n 
+                      del <a href="NUH_009B.html" >motivo</a> presentado por 
+                      el cliente al momento de solicitar la cancelaci&oacute;n de la tarjeta.</p></td>
+                </tr>
+              </table>
+            </div>
+
+            <p  class="PARRAFO"><a name="BL_CUENTAS"></a><span class="SUBTITULO"><span >Cuentas</b>:</span></span><span > 
+              si el usuario invoca el tab Cuentas, se despliega un nuevo formulario 
+              que contiene la informaci&oacute;n relacionada con todas las cuentas asociadas 
+              a la tarjeta consultada.</span></p>
+            <p  class="PARRAFO">Este formulario contiene los hiperv&iacute;nculos 
+              <a href="DBH_022B.html" >Adicionar y eliminar cuenta</a>, 
+              <a href="DBH_022B2.html" >Cambio categor&iacute;a cuenta</a>, 
+              <a href="DBH_022B1.html" >Cambio de cuenta</a>,  que le 
+              permiten invocar las novedades correspondientes para modificar la informaci&oacute;n 
+              de las cuentas.</p>
+            <p class="TITLE"><img src="../img/DBF_001E1.PNG"742" ></p>
+
+            <p  class="TITLE">Descripci&oacute;n de campos</p>
+            <div> 
+              <table>
+                <tr> 
+                  <td>
+          <p class="SUBTITULO"><b><span >N&uacute;mero 
+                      de cuenta</span></b></p></td>
+                  <td><p  class="PARRAFO">Campo 
+                      que muestra el n&uacute;mero de cada una de las cuentas asociadas 
+                      a la tarjeta</p></td>
+                </tr>
+                <tr> 
+                  <td class="titletable"  >
+          <p class="SUBTITULO"><b><span >Tipo 
+                      de cuenta</span></b></p></td>
+                  <td><p  class="PARRAFO">En 
+                      este campo se indica si la cuenta es de Ahorros, Corriente 
+                      o Rotativo</p></td>
+                </tr>
+                <tr> 
+                  <td class="titletable"  >
+          <p class="SUBTITULO"><b><span >Moneda</span></b></p></td>
+                  <td><p  class="PARRAFO">Campo 
+                      que despliega la moneda en la cual se encuentra denominada cada una 
+                      de las cuentas asociadas a la tarjeta.</p></td>
+                </tr>
+                <tr> 
+                  <td class="titletable"><p class="SUBTITULO"><b><span >Secuencia 
+                      de cuenta</span></b></p></td>
+                  <td><p  class="PARRAFO">En 
+                      este campo se muetra la secuencia interna que el sistema le asigna 
+                      a cada una de las cuentas adicionadas a la tarjeta.</p></td>
+                </tr>
+                <tr> 
+                  <td class="titletable"  >
+          <p class="SUBTITULO"><b><span >C&oacute;digo 
+                      estado de cuenta</span></b></p></td>
+                  <td><p  class="PARRAFO">Campo 
+                      que indica si la cuenta se encuentra Activa o Inactiva</p></td>
+                </tr>
+                <tr> 
+                  <td class="titletable"  >
+          <p class="SUBTITULO"><b><span >Fecca estado cuenta</span></b></p></td>
+                  <td><p  class="PARRAFO">En 
+                      este campo se muestra en formato YYYY-MM-DD la fecha a la que corresponde 
+                      el estado actual de la cuenta.</p></td>
+                </tr>
+                <tr> 
+                  <td class="titletable"  >
+          <p class="SUBTITULO"><b><span >Categor&iacute;a 
+                      de cuenta</span></b></p></td>
+                  <td><p  class="PARRAFO">Campo 
+                      que indica si la cuenta el Primaria (principal) o Secundaria.</p></td>
+                </tr>
+              </table>
+            </div>
+            
+            <p  class="PARRAFO"><a name="BL_MOVIMIENTO"></a><span class="SUBTITULO"><span >Movimiento</b>:</span></span><span > 
+              si el usuario invoca el tab Movimiento, se despliega un nuevo formulario 
+              que contiene la informaci&oacute;n relacionada con todas las transacciones 
+              efectuadas con la tarjeta consultada, bien sea que las haya efectuado el cliente 
+              o que generadas de manera autom&aacute;tica por el sistema.</span></p>
+
+            <p class="TITLE"><img src="../img/DBF_001E2.PNG"721" ></p>
+
+            <p  class="TITLE">Descripci&oacute;n de campos</p>
+            <div> 
+              <table   >
+                <tr>
+                  <td class="titletable" ><p class="SUBTITULO"><b><span >Secuencia movimiento</span></b></p></td>
+                  <td><p  class="PARRAFO">N&uacute;mero 
+                    utilizado por las entidades para identificar el orden de ingreso de 
+                    movimiento de varios or&iacute;genes dentro del sistema</p></td>
+                </tr>
+                <tr> 
+                  <td> 
+                    <p class="SUBTITULO"><b><span ><span >Fecha Comprobante</span>  </span></b></p></td>
+                  <td><p  class="PARRAFO">En 
+                      este campo se indica la fecha que se realiz&oacute; la transacci&oacute;n.</p></td>
+                </tr>
+                <tr> 
+                  <td class="titletable"> 
+                    <p class="SUBTITULO"><b><span ><span >Numero Comprobante </span></span></b></p></td>
+                  <td><p  class="PARRAFO">En este campo muestra el numero asignado para el comprobante de la transacci&oacute;n. </p></td>
+                </tr>
+                <tr>
+                  <td class="titletable" ><p class="SUBTITULO"><b><span >Transacci&oacute;n 
+                    interna </span></b></p></td>
+                  <td><p  class="PARRAFO">En 
+                    este campo se indica la <a href="DBH_017B.html" >transacci&oacute;n 
+                      interna</a> generada por el sistema al momento de aplicar la transacci&oacute;n 
+                    al cliente.</p></td>
+                </tr>
+                <tr>
+                  <td  ><span class="SUBTITULO "><b>Establecimiento</b></span></td>
+                  <td><span class="PARRAFO">Campo 
+                  que contiene el codigo y el nombre del comercio donde se realiz&oacute; la transacci&oacute;n.</span></td>
+                </tr>
+                <tr>
+                  <td class="titletable" ><p class="SUBTITULO"><b><span >Valor total</span></b></p></td>
+                  <td><p  class="PARRAFO">Campo 
+                    que contiene el monto por el cual fue registrada y aplicada la transacci&oacute;n 
+                    en el sistema.</p></td>
+                </tr>
+              </table>
+            </div>
+
+            <p  class="PARRAFO">El formulario contiene la opci&oacute;n Detalle.</p>
+            <p  class="PARRAFO"><span class="SUBTITULO"><span >Detalle</b>:</span></span><span > 
+              si el usuario selecciona alguna transacci&oacute;n e invoca la opci&oacute;n 
+              detalle, se despliega un formulario que le muestra todos los datos de la transacci&oacute;n.</span></p>
+            <p class="TITLE"><img src="../img/DBF_001E3.PNG"801" height="460"></p>
+            
+            <p  class="TITLE">Descripci&oacute;n de campos</p>
+            <div> 
+              <table>
+                <tr>
+                  <td class="titletable"><p class="SUBTITULO"><span >Cliente</span></p></td>
+                  <td><p  class="PARRAFO">Campo 
+                    que despliega el nombre y apellidos del cliente titular de la tarjeta</p></td>
+                </tr>
+                <tr>
+                  <td class="titletable"><p class="SUBTITULO"><span >N&uacute;mero de tarjeta </span></p></td>
+                  <td><p  class="PARRAFO">Muestra la tarjeta que realiz&oacute; la transacci&oacute;n. </p></td>
+                </tr>
+                <tr>
+                  <td class="titletable" ><p class="SUBTITULO"><b><span >Secuencia movimiento</span></b></p></td>
+                  <td><p  class="PARRAFO">N&uacute;mero 
+                    utilizado por las entidades para identificar el orden de ingreso de 
+                    movimiento de varios or&iacute;genes dentro del sistema</p></td>
+                </tr>
+                <tr>
+                  <td class="titletable"><p class="SUBTITULO"><span >Pa&iacute;s </span></p></td>
+                  <td><p  class="PARRAFO">En este campo indica en que pa&iacute;s realiz&oacute; la transacci&oacute;n </p></td>
+                </tr>
+                <tr>
+                  <td class="titletable"><p class="SUBTITULO">Ciudad</p></td>
+                  <td><p  class="PARRAFO">En este campo indica en que pa&iacute;s realiz&oacute; la transacci&oacute;n </p></td>
+                </tr>
+                <tr>
+                  <td class="titletable"><p class="SUBTITULO"><span >Origen</span></p></td>
+                  <td><p  class="PARRAFO">Despliega el nombre de la fuente y origen del movimiento a trav&eacute;s del que   ingresa la transacci&oacute;n</p></td>
+                </tr>
+                <tr>
+                  <td class="titletable" ><p class="SUBTITULO"><b><span ><span >Numero Comprobante </span></span></b></p></td>
+                  <td><p  class="PARRAFO">En este campo muestra el numero asignado para el comprobante de la transacci&oacute;n. </p></td>
+                </tr>
+                <tr>
+                  <td class="titletable" ><p class="SUBTITULO"><b><span ><span >Fecha Comprobante</span>  </span></b></p></td>
+                  <td><p  class="PARRAFO">En 
+                    este campo se indica la fecha que se realiz&oacute; la transacci&oacute;n.</p></td>
+                </tr>
+                <tr>
+                  <td class="titletable" ><p class="SUBTITULO"><b><span >C&oacute;digo 
+                    autorizaci&oacute;n </span></b></p></td>
+                  <td><p  class="PARRAFO">Campo 
+                    que indica el n&uacute;mero de autorizaci&oacute;n otorgado poir el 
+                    sistema en el momento de aprobar la transacci&oacute;n.</p></td>
+                </tr>
+                <tr>
+                  <td class="titletable" ><p class="SUBTITULO"><b><span >Valor moneda local </span></b></p></td>
+                  <td><p  class="PARRAFO">Este 
+                    campo despliega el valor de la transaccion en el pa&iacute;s de origen.</p></td>
+                </tr>
+                <tr>
+                  <td class="titletable" ><p class="SUBTITULO"><b><span >Valor compra </span></b></p></td>
+                  <td><p  class="PARRAFO">Este 
+                    campo despliega el valor de la transaccion sin tener en cuenta propina e iva. </p></td>
+                </tr>
+                <tr>
+                  <td class="titletable" ><p class="SUBTITULO"><b><span >Valor propina </span></b></p></td>
+                  <td><p  class="PARRAFO">Este 
+                    campo despliega el valor de la propina dado por el tarjehabiente al establecimiento.</p></td>
+                </tr>
+                <tr>
+                  <td class="titletable"><p class="SUBTITULO">Valor iva </p></td>
+                  <td><p  class="PARRAFO">Este 
+                  campo despliega el valor del impuesto del valor agregado a las ventas </p></td>
+                </tr>
+                <tr>
+                  <td class="titletable"><p class="SUBTITULO">Valor total </p></td>
+                  <td><p  class="PARRAFO">Este 
+                  campo despliega el valor total de la transacci&oacute;n </p></td>
+                </tr>
+                <tr>
+                  <td class="titletable" ><p class="SUBTITULO"><b><span >Valor base reintegro 
+                    iva </span></b></p></td>
+                  <td><p  class="PARRAFO">Este 
+                    campo despliega el valor que sirve como base para el calculo del reintegro 
+                    de los 2 puntos de IVA sobre compras y que corresponde al valor de 
+                    los bienes y/o servicios gravados con este impuesto.</p></td>
+                </tr>
+                <tr>
+                  <td class="titletable" ><p class="SUBTITULO"><b><span >Establecimiento</span></b></p></td>
+                  <td><p  class="PARRAFO">En 
+                    este campo se muestra el c&oacute;digo del establecimiento en el que 
+                    se realiz&oacute; la transacci&oacute;n.</p></td>
+                </tr>
+                <tr>
+                  <td class="titletable" ><p class="SUBTITULO"><b><span >Transacci&oacute;n 
+                    interna </span></b></p></td>
+                  <td><p  class="PARRAFO">En 
+                    este campo se indica la <a href="DBH_017B.html" >transacci&oacute;n 
+                      interna</a> generada por el sistema al momento de aplicar la transacci&oacute;n 
+                    al cliente.</p></td>
+                </tr>
+                <tr>
+                  <td class="titletable" ><p class="SUBTITULO"><b><span >Moneda</span></b> original </p></td>
+                  <td><p  class="PARRAFO">Campo 
+                    que indica la moneda en la cual fue efectuada la transacci&oacute;n.</p></td>
+                </tr>
+                <tr>
+                  <td class="titletable" ><p class="SUBTITULO"><b><span >Moneda</span></b> local </p></td>
+                  <td><p  class="PARRAFO">Campo 
+                      que indica la moneda en la cual fue efectuada la transacci&oacute;n 
+                      y que corresponde a la misma en la cual est&aacute;n determinados 
+                      los saldos de la cuenta a afectar como resultado de las utilizaciones 
+                      de la tarjeta.</p></td>
+                </tr>
+                <tr>
+                  <td class="titletable"><p class="SUBTITULO"><b><span >Fecha 
+                    proceso </span></b></p></td>
+                  <td><p  class="PARRAFO">En 
+                    este campo se muetra en formato YYYY-MM-DD la fecha en que se proces&oacute; 
+                    el movimiento dentro del cual lleg&oacute; la transacci&oacute;n</p></td>
+                </tr>
+                <tr> 
+                  <td> 
+                    <p class="SUBTITULO"><b><span >Bin fuente</span></b></p></td>
+                  <td><p  class="PARRAFO">Campo 
+                      que contiene el bin que identifica a la entidad que emite la tarjeta.</p></td>
+                </tr>
+                <tr>
+                  <td class="titletable" ><p class="SUBTITULO"><b><span >Fecha contabilizaci&oacute;n</span></b></p></td>
+                  <td><p  class="PARRAFO">Este 
+                    campon en formato YYYY-MM-DD contiene la fecha en la que el movimiento 
+                    fue contabilizado.</p></td>
+                </tr>
+                <tr> 
+                  <td  > 
+                    <p class="SUBTITULO"><b><span >N&uacute;mero 
+                      paquete </span></b></p></td>
+                  <td><p  class="PARRAFO">Se&ntilde;ala 
+                      el n&uacute;mero utilizado por las entidades para identificar el orden 
+                      de ingreso o captura de varios paquetes de movimiento dentro del sistema.
+                    </p></td>
+                </tr>
+                <tr> 
+                  <td class="titletable"> 
+                    <p class="SUBTITULO"><b><span >Lote referencia</span></b></p></td>
+                  <td><p  class="PARRAFO">Este 
+                      campo muestra el n&uacute;mero del lote dentro del cual se encuentra 
+                      la transacci&oacute;n.</p></td>
+                </tr>
+                <tr> 
+                  <td class="titletable"> 
+                    <p class="SUBTITULO"><b><span >Secuencia referencia</span></b></p></td>
+                  <td><p  class="PARRAFO">Este 
+                      campo corresponde a un n&uacute;mero secuencial que hace parte de 
+                      la referencia universal que identifica cada transacci&oacute;n.
+                    </p></td>
+                </tr>
+                <tr>
+                  <td class="titletable" ><p class="SUBTITULO"><b><span >D&iacute;gito 
+                    de chequeo</span></b></p></td>
+                  <td><p  class="PARRAFO">Este 
+                    campo contiene el &uacute;ltimo n&uacute;mero que compone la referencia 
+                    universal, obtenido mediante algoritmos y que permite verificar la 
+                    validez de dicha referencia</p></td>
+                </tr>
+                <tr>
+                  <td class="titletable" ><p class="SUBTITULO"><b><span >Referencia 
+                    internacional </span></b></p></td>
+                  <td><p  class="PARRAFO">Campo 
+                    que contiene el n&uacute;mero de referencia universal asignado a la 
+                    transacci&oacute;n y que la identifica dentro de las dem&aacute;s 
+                    transacciones. </p></td>
+                </tr>
+                <tr>
+                  <td class="titletable" ><p class="SUBTITULO"><b><span >Tipo captura</span></b></p></td>
+                  <td><p  class="PARRAFO">En 
+                    este campo se indica la manera como la transacci&oacute;n ingres&oacute; 
+                    al sistema.</p></td>
+                </tr>
+              </table>
+            </div>
+            
+            <p  class="PARRAFO"><a name="BL_NOVEDADES"></a><span class="SUBTITULO"><span >Novedades</b>:</span></span><span > 
+              si el usuario invoca el tab Novedades, se despliega un nuevo formulario 
+              que contiene la informaci&oacute;n relacionada con todas las novedades que 
+              le han sido aplicadas a la tarjeta. Contiene la opci&oacute;n Detalle que 
+              permite invocar el formulario con la informaci&oacute;n completa de cada una 
+              de las novedades aplicadas a la tarjeta.</span></p>
+            <p class="TITLE"><img src="../img/DBF_001E4.PNG"797" ></p>
+            
+            <p  class="TITLE">Descripci&oacute;n de campos</p>
+            <div> 
+              <table>
+                <tr> 
+                  <td> 
+                    <p class="SUBTITULO"><b><span >Secuencia</span></b></p></td>
+                  <td><p  class="PARRAFO">Campo 
+                      que muestra el n&uacute;mero asignado internamente por el sistema 
+                      a cada una de las <a href="DBH_020B.html" >novedades</a> 
+                      generadas.</p></td>
+                </tr>
+                <tr>
+                  <td  ><span class="SUBTITULO">Fecha Novedad </span></td>
+                  <td><span class="PARRAFO">En 
+                    este campo se muetra en formato YYYY-MM-DD la fecha en que se proces&oacute; 
+                    la novedad. </span></td>
+                </tr>
+                <tr>
+                  <td class="titletable" ><p class="SUBTITULO"><b><span >Novedad adminsitrativa</span></b></p></td>
+                  <td><p  class="PARRAFO">En 
+                    este campo se despliega el c&oacute;digo y nombre de la <a href="NUH_017B.html" >novedades</a> que fue aplicada a la tarjeta.</p></td>
+                </tr>
+                <tr>
+                  <td class="titletable" ><p class="SUBTITULO"><b><span >Clase novedad</span></b></p></td>
+                  <td><p  class="PARRAFO">Campo 
+                    en el que se indica si la acci&oacute;n de la novedad fue Adici&oacute;n, 
+                      Modificaci&oacute;n o Eliminaci&oacute;n de datos.</p></td>
+                </tr>
+              </table>
+            </div>
+    </section>
+    <script src="../js/menu.js"></script>
+</body>
+<footer>
+    <div>
+        <img class="TITLE"  src= "../img/logo.PNG">
+    </div>
+    <p>OpenCard SAS</p>
+    <p>Calle 77 Nº 11-19 Piso 4°,Bogotá D.C.</p>
+    <p>Tel (57) 601 - 313 37 75  <a href="http://www.OpenCard.com"
+            target="_blank">www.OpenCard.com</a></p>
+
+
+
+</footer>
+</html>

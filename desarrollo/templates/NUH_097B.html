@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>BANKBU®</title>
+  <link rel="stylesheet" href="../css/pages.css">
+  <link rel="stylesheet" href="../css/style.css">
+  <link rel="icon" href="../img/ACQUIRER-logo.JPG" type="image/x-icon">
+</head>
+
+<body>
+  <header>
+    <img class="logo" src="../img/logoBankbu_.PNG" alt="Logo de Mi Empresa">
+    <div id="menuBtn">
+      <img class="TITLE" src="../img/menu.PNG" alt="Botón de Menú ">
+    </div>
+  </header>
+  <nav>
+    <ul>
+      <li>
+        <a href="../index.html" class="main-optionINICIO">INICIO</a>
+      </li>
+      <li>
+        <a href="NUH_INTB.html" class="main-optionINTRODUCCIÓN">INTRODUCCIÓN</a>
+      </li>
+      <li><a href="#" class="main-option">NUCLEO ▼</a>
+        <ul>
+          <li><a href="NUH_000B.html">Config. Sistema</a></li>
+          <li><a href="NUH_00B_N2.html">Parametros</a></li>
+          <li><a href="NUH_00B_inicio.html">Inicio</a></li>
+          <li><a href="NUH_00B_proceso.html">Procesos</a></li>
+          <li><a href="NUH_00B_inf.html">Inf. Cliente</a></li>
+          <li><a href="NUH_00B_conta.html">Contabilidad</a></li>
+          <li style="visibility: hidden; display: none;"><a href="NUH_00B_audi.html">Auditoria</a></li>
+
+        </ul>
+      </li>
+      <li>
+        <a href="#" class="main-option">EMISOR ▼</a>
+        <ul>
+          <li><a href="EMH_000B.html">Productos</a></li>
+          <li><a href="EMH_000Bsoli.html">Solicitudes</a></li>
+          <li><a href="EMH_000Bmerca.html">Mercadeo</a></li>
+          <li><a href="EMH_000Bservi.html">Servicio Al Cliente</a></li>
+          <li><a href="EMH_000Bpendi.html">Pendientes</a></li>
+          <li><a href="EMH_000Btrans.html">Transaccionabilidad</a></li>
+          <li><a href="EMH_000Bauto.html">Autorizaciones</a></li>
+          <li><a href="EMH_000Bplasti.html">Adm. Plasticos</a></li>
+          <li><a href="EMH_000Brecla.html">Reclamos</a></li>
+                    <li><a href="MEH_032B.html">Lealtad</a></li>
+                    <li><a href="COH_064B.html">Cobranzas</a></li>
+        </ul>
+      </li>
+      <li style="visibility: hidden">
+        <a href="ACH_000B.html" class="main-option">ADQUIRIENTE</a>
+      </li>
+      <li style="visibility: hidden">
+        <a href="DBH_000B.html" class="main-option">TARJETA DEBITO</a>
+      </li>
+    </ul>
+  </nav>
+
+  <section>
+    <div>
+      <table>
+        <tr>
+          <td>
+            <div>
+              <p class="TITLE">Par&aacute;metros generales</p>
+            </div>
+          </td>
+        </tr>
+      </table>
+      <p class="PARRAFO">Esta pantalla permite tanto la consulta como el mantenimiento,
+        a los funcionarios de OpenCard SAS, de la tabla que contiene la definici&oacute;n,
+        por m&oacute;dulos, de aquellas variables o par&aacute;metros gen&eacute;ricos
+        requeridos por algunos procesos asociados o relacionados con cada uno de dichos
+        m&oacute;dulos. La funcionalidad provista por esta opci&oacute;n, pretende,
+        de un lado evitar el mayor crecimiento de la tabla NU_PAR&Aacute;METROS_OPERATIVOS,
+        y del otro optimizar la organizaci&oacute;n de algunos par&aacute;metros al
+        concentrarlos por cada uno de los m&oacute;dulos del sistema. La parametrizaci&oacute;n
+        aqu&iacute; relacionada es independiente a la requerida por la automatizaci&oacute;n
+        de procesos. Dado que esta opci&oacute;n de men&uacute; corresponde al grupo
+        de Tablas reservadas del N&uacute;cleo, la cuales son altamente restrictivas,
+        mediante la opci&oacute;n <a href="NUH_055B.html">Par&aacute;metros
+          operativos</a> se provee el acceso para el usuario final, del campo Valor
+        que es esencial para &eacute;ste. La funcionalidad ofrecida se relaciona entre
+        otras, con las variables o par&aacute;metros de transacciones originales y
+        or&iacute;genes de transacciones que afecten los dep&oacute;sitos a establecimientos,
+        lo que para algunas entidades corresponde a Cuenta nacional.</p>
+      <p class="TITLE"><img src="../img/NUH_097B.PNG" 703" height="665"></p>
+
+      <p>El formulario contiene las opciones Actualizar, Eliminar, Adicionar
+        y Detalle. Adicionalmente tiene un filtro de b&uacute;squeda.</p>
+      <p class="TITLE"><img src="../img/NUH_097B1.PNG" 293"></p>
+
+      <table>
+        <tr>
+          <td class="titletable">
+            <p class="SUBTITULO">Proceso</p>
+          </td>
+          <td>
+            <p class="PARRAFO">Este campo posee lista de valores con las opciones Emisor, Captura, y
+              M&aacute;s de uno. </p>
+          </td>
+        </tr>
+        <tr>
+          <td class="titletable">
+            <p class="SUBTITULO"><b>Rol</b></p>
+          </td>
+          <td>
+            <p class="PARRAFO">Este campo posee lista de valores con las opciones Emisor, Adquirente,
+                D&eacute;bito , y M&aacute;s de uno. </p>
+          </td>
+        </tr>
+        <tr>
+          <td class="titletable">
+            <p class="SUBTITULO"><b><span>Tipo
+                  de par&aacute;metro</span></b></p>
+          </td>
+          <td>
+            <p class="PARRAFO">Despliega
+              las diferentes clases o tipos de par&aacute;metros definidos para cada
+              uno de los m&oacute;dulos parametrizados. Al cambiar de tipo de par&aacute;metro,
+              si hay m&aacute;s de uno, se despliegan los par&aacute;metros correspondientes
+              a cada uno de ellos.</p>
+          </td>
+        </tr>
+        <tr>
+          <td class="titletable">
+            <p class="SUBTITULO"><b><span>Etiqueta</span></b></p>
+          </td>
+          <td>
+            <p class="PARRAFO">Campo alfanum&eacute;rico de 30 campos.</p>
+          </td>
+        </tr>
+      </table>
+      <p><span class="SUBTITULO">Adicionar:</span><span class="PARRAFO"> Si el usuario
+          invoca la opci&oacute;n Adicionar se despliega un for</span> mulario con los
+        siguientes campos<span>:</span> 
+      </p>
+      <p class="TITLE"><img src="../img/NUH_097B2.PNG" 737" height="274"></p>
+      .
+      <table>
+        <tr>
+          <td class="titletable">
+            <p class="SUBTITULO">Proceso</p>
+          </td>
+          <td>
+            <p class="PARRAFO">Este campo posee lista de valores con las opciones Emisor, Captura, y
+              M&aacute;s de uno. </p>
+          </td>
+        </tr>
+        <tr>
+          <td class="titletable">
+            <p class="SUBTITULO"><b>Rol</b></p>
+          </td>
+          <td>
+            <p class="PARRAFO">Este campo posee lista de valores con las opciones Emisor, Adquirente,
+                D&eacute;bito , y M&aacute;s de uno. </p>
+          </td>
+        </tr>
+        <tr>
+          <td class="titletable">
+            <p class="SUBTITULO"><b><span>Tipo
+                  de par&aacute;metro</span></b></p>
+          </td>
+          <td>
+            <p class="PARRAFO">Despliega
+              las diferentes clases o tipos de par&aacute;metros definidos para cada
+              uno de los m&oacute;dulos parametrizados. Al cambiar de tipo de par&aacute;metro,
+              si hay m&aacute;s de uno, se despliegan los par&aacute;metros correspondientes
+              a cada uno de ellos.</p>
+          </td>
+        </tr>
+        <tr>
+          <td class="titletable">
+            <p class="SUBTITULO"><b><span>Etiqueta</span></b></p>
+          </td>
+          <td>
+            <p class="PARRAFO">El campo Etiqueta admite cualquier dato alfanum&eacute;rico de m&aacute;ximo 30
+              caracteres. Permite may&uacute;sculas y min&uacute;sculas</p>
+          </td>
+        </tr>
+        <tr>
+          <td class="titletable">
+            <p class="SUBTITULO">C&oacute;digo interno entidad </p>
+          </td>
+          <td>
+            <p class="PARRAFO">El campo c&oacute;digo interno de la entidad, solo debe habilitarse y volverse
+                obligatorio cuando el actor en el campo Tipo par&aacute;metro, selecciona Personalizado, de lo contrario
+                no debe permitir ser diligenciado</p>
+          </td>
+        </tr>
+        <tr>
+          <td class="titletable">
+            <p class="SUBTITULO">C&oacute;digo</p>
+          </td>
+          <td>
+            <p class="PARRAFO">Campo
+              num&eacute;rico de cuatro d&iacute;gitos, en el cual si el usuario no
+              digita valor alguno, el sistema asigna el entero inmediatamente siguiente
+              al mayor de los registrados con anterioridad, y que permite diferenciar
+              cada variable o par&aacute;metro por m&oacute;dulo del sistema. El dato
+              aqu&iacute; registrado junto con el del campo serie constituyen la llave
+              de esta tabla, raz&oacute;n por la cual cada m&oacute;dulo debe disponer
+              de un rango propio u otra manera que facilite el no cruce o tentativa
+              de repetici&oacute;n de valores, situaci&oacute;n que tampoco es permitida
+              por la forma.</p>
+          </td>
+        </tr>
+        <tr>
+          <td class="titletable">
+            <p class="SUBTITULO"><b>Serie</b></p>
+          </td>
+          <td>
+            <p class="PARRAFO">En
+              este campo num&eacute;rico de cuatro d&iacute;gitos, por defecto el
+              sistema le asigna el n&uacute;mero uno (1), aunque el usuario puede
+              digitar un valor distinto; permite un uso compuesto del mismo par&aacute;metro,
+              por ejemplo si el par&aacute;metro corresponde a transacciones, la secuencia
+              menor puede corresponder al origen mientras que la mayor puede diferenciar
+              cada transacci&oacute;n original.</p>
+          </td>
+        </tr>
+        <tr>
+          <td class="titletable">
+            <p class="SUBTITULO">Descripci&oacute;n</p>
+          </td>
+          <td>
+            <p class="PARRAFO">Despliega
+              el nombre o breve descriptivo de cada par&aacute;metro. Admite cualquier dato alfanum&eacute;rico de
+              m&aacute;ximo 60 caracteres. Permite may&uacute;sculas y min&uacute;sculas.</p>
+          </td>
+        </tr>
+        <tr>
+          <td class="titletable">
+            <p class="SUBTITULO"><b>Tipo
+                de dato</b></p>
+          </td>
+          <td>
+            <p class="PARRAFO">Este campo muestra un combo con las opciones Fecha, Decimal, Entero, y caracter. Los
+              campos que siguen se habilitan de acuerdo a la opci&oacute;n seleccionada en este campo as&iacute;: La
+              opci&oacute;n Fecha habilita el campo Valor. La opci&oacute;n 'Decimal' habilita los campos
+              Longitud, Presici&oacute;n y Valor. La opci&oacute;n 'Entero' habilita los campos Longitud y
+                Valor. La opci&oacute;n 'Caracter' habilita los campos Longitud y Valor.</p>
+          </td>
+        </tr>
+        <tr>
+          <td class="titletable">
+            <p class="SUBTITULO">Longitud</p>
+          </td>
+          <td>
+            <p class="PARRAFO">El campo Longitud admite cualquier dato num&eacute;rico de m&aacute;ximo 3 d&iacute;gitos
+              sin decimales.</p>
+          </td>
+        </tr>
+        <tr>
+          <td class="titletable">
+            <p class="SUBTITULO">Presici&oacute;n</p>
+          </td>
+          <td>
+            <p class="PARRAFO">El campo Precisi&oacute;n solo se habilita para ser diligenciado cuando el actor en el campo Tipo dato
+              selecciona Decimal, de lo contrario no debe permitir ser diligenciado. Admite cualquier dato
+              num&eacute;rico de m&aacute;ximo 2 d&iacute;gitos sin decimales
+          </td>
+        </tr>
+        </p>
+        <tr>
+          <td class="titletable">
+            <p class="SUBTITULO"><b>Valor</b></p>
+          </td>
+          <td>
+            <p class="PARRAFO">&Uacute;nico
+              campo de la pantalla que le permite al usuario modificar su contenido,
+              en el debe registrarse el nuevo dato o valor correspondiente a cada
+              variable o par&aacute;metro.</p>
+          </td>
+        </tr>
+      </table>
+      <p class="PARRAFO"><span class="SUBTITULO">Actualizar:</span> 
+        Si el usuario invoca la opci&oacute;n Actualizar se despliega un nuevo formulario
+        en el cual los &uacute;nicos campos modificables son: Longitud, Presici&oacute;n
+        y Valor.</p>
+      <p class="TITLE"><img src="../img/NUH_097B3.PNG" 707" height="253"></p>
+
+      <p class="PARRAFO"><span class="SUBTITULO">Detalle:</span>  Si el usuario invoca
+        la opci&oacute;n Detalle se despliega el siguiente formulario: <span></span></p>
+      <p class="TITLE"><img src="../img/NUH_097B4.PNG" 702"></p>
+
+  </section>
+  <script src="../js/menu.js"></script>
+
+  <footer>
+    <div>
+      <img class="TITLE" src="../img/logo.PNG">
+    </div>
+    <p>OpenCard SAS</p>
+    <p>Calle 77 Nº 11-19 Piso 4°, Bogotá D.C.</p>
+    <p>Tel (57) 601 - 313 37 75 <a href="http://www.OpenCard.com" target="_blank">www.OpenCard.com</a></p>
+
+  </footer>
+</body>
+
+</html>

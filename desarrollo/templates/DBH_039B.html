@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>BANKBU®</title>
+
+  <link rel="stylesheet" href="../css/pages.css">
+  <link rel="stylesheet" href="../css/style.css">
+  <link rel="icon" href="../img/ACQUIRER-logo.JPG" type="image/x-icon">
+</head>
+
+<body>
+
+  <header>
+    <img class="logo" src="../img/logoBankbu_.PNG" alt="Logo de Mi Empresa">
+    <div id="menuBtn">
+      <img class="TITLE" src="../img/menu.PNG" alt="Botón de Menú ">
+    </div>
+  </header>
+  <nav>
+    <ul>
+      <li>
+        <a href="../index.html" class="main-optionINICIO">INICIO</a>
+      </li>
+      <li>
+        <a href="NUH_INTB.html" class="main-optionINTRODUCCIÓN">INTRODUCCIÓN</a>
+      </li>
+      <li><a href="#" class="main-option">NUCLEO ▼</a>
+        <ul>
+          <li><a href="NUH_000B.html">Config. Sistema</a></li>
+          <li><a href="NUH_00B_N2.html">Parametros</a></li>
+          <li><a href="NUH_00B_inicio.html">Inicio</a></li>
+          <li><a href="NUH_00B_proceso.html">Procesos</a></li>
+          <li><a href="NUH_00B_inf.html">Inf. Cliente</a></li>
+          <li><a href="NUH_00B_conta.html">Contabilidad</a></li>
+          <li style="visibility: hidden; display: none;"><a href="NUH_00B_audi.html">Auditoria</a></li>
+
+        </ul>
+      </li>
+      <li>
+        <a href="#" class="main-option">EMISOR ▼</a>
+        <ul>
+          <li><a href="EMH_000B.html">Productos</a></li>
+          <li><a href="EMH_000Bsoli.html">Solicitudes</a></li>
+          <li><a href="EMH_000Bmerca.html">Mercadeo</a></li>
+          <li><a href="EMH_000Bservi.html">Servicio Al Cliente</a></li>
+          <li><a href="EMH_000Bpendi.html">Pendientes</a></li>
+          <li><a href="EMH_000Btrans.html">Transaccionabilidad</a></li>
+          <li><a href="EMH_000Bauto.html">Autorizaciones</a></li>
+          <li><a href="EMH_000Bplasti.html">Adm. Plasticos</a></li>
+          <li><a href="EMH_000Brecla.html">Reclamos</a></li>
+                    <li><a href="MEH_032B.html">Lealtad</a></li>
+                    <li><a href="COH_064B.html">Cobranzas</a></li>
+        </ul>
+      </li>
+      <li style="visibility: hidden">
+        <a href="ACH_000B.html" class="main-option">ADQUIRIENTE</a>
+      </li>
+      <li style="visibility: hidden">
+        <a href="DBH_000B.html" class="main-option">TARJETA DEBITO</a>
+      </li>
+    </ul>
+  </nav>
+
+  <section>
+    <div>
+      <table>
+        <tr>
+          <td>
+            <div>
+              <p class="TITLE">Programas comerciales</p>
+            </div>
+          </td>
+        </tr>
+      </table>
+      <p class="PARRAFO">Mediante esta opci&oacute;n se parametrizan
+        los diferentes programas comerciales que posteriormente ser&aacute;n asociados
+        a los <a href="DBH_018B.html">productos d&eacute;bito</a>
+        para otorgarles algunos beneficios adicionales relacionados con la disminuci&oacute;n
+        o exoneraci&oacute;n de la cuota de manejo.</span></p>
+      <p class="PARRAFO">Al ingresar a la opci&oacute;n se despliega
+        un filtro que le permite al actor consultar alg&uacute;n registro espec&iacute;fico
+        por el bin, la descripci&oacute;n del mismo o el tipo de bin. Por defecto,
+        al ingresar al formulario se muestran todos los bines parametrizados actualmente
+        por la entidad para productos d&eacute;bito.</p>
+
+      <p class="TITLE"><img src="../img/DBF_039E.PNG"></p>
+      <p class="PARRAFO">El formulario contiene las opciones Actualizar,
+        Eliminar, Adicionar y Detalle.</p>
+      <p class="PARRAFO"><b><span class="SUBTITULO">Adicionar:</span></b>
+        si el usuario invoca la opci&oacute;n Adicionar, se despliega un
+        nuevo formulario con los siguientes campos.</p>
+      <p class="TITLE"><img src="../img/DBF_039E1.PNG"></p>
+
+      <p class="TITLE"><img src="../img/DBF_039E2.PNG"></p>
+
+      <p class="TITLE">Descripci&oacute;n de campos</p>
+      <div>
+        <table>
+          <tr>
+            <td class="titletable">
+              <p class="SUBTITULO"><b><span>C&oacute;digo</span></b></p>
+            </td>
+            <td>
+              <p class="PARRAFO">Campo
+                num&eacute;rico de hasta 3 d&iacute;gitos, obligatorio, en el que
+                se ingresa el c&oacute;digo que identifica cada uno de los programas
+                comerciales.</p>
+            </td>
+          </tr>
+          <tr>
+            <td class="titletable">
+              <p class="SUBTITULO"><b><span>Descripci&oacute;n</span></b></p>
+            </td>
+            <td>
+              <p class="PARRAFO">Este
+                campo alfanum&eacute;rico obligatorio permite registrar el nombre
+                o descripci&oacute;n asociados con cada programa comercial.</p>
+            </td>
+          </tr>
+          <tr>
+            <td class="titletable">
+              <p class="SUBTITULO"><b><span>Identificador</span></b></p>
+            </td>
+            <td>
+              <p class="PARRAFO">Campo
+                obligatorio tipo combo en el que se selecciona entre Edad
+                o Antiguedad la caracter&iacute;stica o critero que se debe
+                tener en cuenta al momento de efectuar procesos de cambios masivos
+                de producto.</span></p>
+            </td>
+          </tr>
+          <tr>
+            <td class="titletable">
+              <p class="SUBTITULO"><b><span>Edad inicial
+                    / final</span></b></p>
+            </td>
+            <td>
+              <p class="PARRAFO">Esta
+                dupla de campos que se habilitan y convierten en obligatorios cuando
+                el identificador es Edad, permite registrar el rango de edad
+                entre los cuales debe estar el cliente titular de la tarjeta para
+                poder seguir perteneciendo al programa o para ingresar en &eacute;l.</p>
+            </td>
+          </tr>
+          <tr>
+            <td class="titletable">
+              <p class="SUBTITULO"><b><span>Antiguedad inicial
+                    / final</span></b></p>
+            </td>
+            <td>
+              <p class="PARRAFO">Dupla
+                de campos que se habilitan y convierten en obligatorios cuando el
+                identificador es Antiguedad, permite registrar el rango de
+                periodos de antiguedad entre los cuales debe estar la tarjeta para
+                poder seguir perteneciendo al programa o para ingresar en &eacute;l.</p>
+            </td>
+          </tr>
+          <tr>
+            <td class="titletable">
+              <p class="SUBTITULO"><b><span>% Manejo</span></b></p>
+            </td>
+            <td>
+              <p class="PARRAFO">Campo
+                num&eacute;rico obligatorio en el que se registra el porcentaje que
+                sobre la cuota de manejo definida para el <span class="PARRAFO"><a href="DBH_018B.html">productos
+                      d&eacute;bito</a></span> , se le va a cobrar al cliente por las
+                tarjetas que pertenecezcan a productos asociados con el programa comercial.
+                El sistema toma en cuenta la jerarqu&iacute;a establecida en la opci&oacute;n
+                Orden aplicaci&oacute;n cuotas. </p>
+            </td>
+          </tr>
+        </table>
+      </div>
+
+      <p class="PARRAFO"><b><span class="SUBTITULO">Actualizar:</span></b>
+        si el usuario selecciona un registro e invoca la opci&oacute;n Actualizar,
+        se despliega un formulario en el cual el &uacute;nico campo NO modificable
+        es el C&oacute;digo.</p>
+      <p class="TITLE"><img src="../img/DBF_039E3.PNG"></p>
+
+      <p class="PARRAFO"><b><span class="SUBTITULO">Detalle:</span></b>
+        si el usuario selecciona un registro e invoca la opci&oacute;n Detalle,
+        se despliega un formulario con la informaci&oacute;n completa del registro
+        y en el cual ninguno de sus campos es modificable.</p>
+      <p class="TITLE"><img src="../img/DBF_039E4.PNG"></p>
+
+      <div>
+  </section>
+  <script src="../js/menu.js"></script>
+</body>
+<footer>
+  <div>
+    <img class="TITLE" src="../img/logo.PNG">
+  </div>
+  <p>OpenCard SAS</p>
+  <p>Calle 77 Nº 11-19 Piso 4°,Bogotá D.C.</p>
+  <p>Tel (57) 601 - 313 37 75 <a href="http://www.OpenCard.com" target="_blank">www.OpenCard.com</a></p>
+
+
+
+</footer>
+
+</html>

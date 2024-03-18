@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BANKBU®</title>
+    <link rel="stylesheet" href="../css/pages.css">
+    <link rel="stylesheet" href="../css/style.css">
+ <link rel="icon" href="../img/ACQUIRER-logo.JPG" type="image/x-icon">
+</head>
+
+<body>
+    <header>
+        <img class="logo" src="../img/logoBankbu_.PNG" alt="Logo de Mi Empresa">
+        <div id="menuBtn">
+            <img class="TITLE"  src= "../img/menu.PNG" alt="Botón de Menú ">
+        </div>
+    </header>
+    <nav>
+        <ul>
+            <li>
+                    <a href="../index.html" class="main-optionINICIO">INICIO</a>
+            </li>
+            <li>
+                <a href="NUH_INTB.html" class="main-optionINTRODUCCIÓN">INTRODUCCIÓN</a>
+            </li>
+            <li><a href="#" class="main-option">NUCLEO ▼</a>
+                <ul>
+                    <li><a href="NUH_000B.html">Config. Sistema</a></li>
+                    <li><a href="NUH_00B_N2.html">Parametros</a></li>
+                    <li><a href="NUH_00B_inicio.html">Inicio</a></li>
+                    <li><a href="NUH_00B_proceso.html">Procesos</a></li>
+                    <li><a href="NUH_00B_inf.html">Inf. Cliente</a></li>
+                    <li><a href="NUH_00B_conta.html">Contabilidad</a></li>
+                    <li style="visibility: hidden; display: none;"><a href="NUH_00B_audi.html">Auditoria</a></li>
+
+                </ul>
+            </li>
+            <li>
+             <a href="#" class="main-option">EMISOR  ▼</a>
+                <ul>
+                    <li><a href="EMH_000B.html">Productos</a></li>
+                    <li><a href="EMH_000Bsoli.html">Solicitudes</a></li>
+                    <li><a href="EMH_000Bmerca.html">Mercadeo</a></li>
+                    <li><a href="EMH_000Bservi.html">Servicio Al Cliente</a></li>
+                    <li><a href="EMH_000Bpendi.html">Pendientes</a></li>
+                    <li><a href="EMH_000Btrans.html">Transaccionabilidad</a></li>
+                    <li><a href="EMH_000Bauto.html">Autorizaciones</a></li>
+                    <li><a href="EMH_000Bplasti.html">Adm. Plasticos</a></li>
+                    <li><a href="EMH_000Brecla.html">Reclamos</a></li>
+                    <li><a href="MEH_032B.html">Lealtad</a></li>
+                    <li><a href="COH_064B.html">Cobranzas</a></li>
+                </ul>
+            </li>
+ <li style="visibility: hidden">
+                <a href="ACH_000B.html" class="main-option">ADQUIRIENTE</a>
+            </li>
+            <li style="visibility: hidden">
+                <a href="DBH_000B.html" class="main-option">TARJETA DEBITO</a>
+            </li></ul>
+    </nav>
+
+    <section>
+        <div> 
+            <table>
+              <tr> 
+                <td><div> 
+                    <p  class="TITLE">Par&aacute;metros solicitudes por producto</p>
+                    </div></td>
+              </tr>
+            </table>
+            <p class="PARRAFO"><span class="SUBTITULO">Localizaci&oacute;n:</span>  <span class="PARRAFO">Este 
+              formulario de dos campos permite ingresar los par&aacute;metros de derogatorio 
+              de solicitudes. Adicionalmente, cuenta con un bot&oacute;n en la parte superior 
+              para volver al <a href="SOH_001B7.html">formulario principal</a>.</span></p>
+            <p class="PARRAFO">Estos campos permiten determinar si el sistema muestra un 
+              mensaje de advertencia al tratar de grabar una solicitud de un cliente en 
+              derogatorio, o si definitivamente el sistema debe mostrar error y no permitir 
+              grabar nada de la nueva solicitud.</p>
+           
+            <p class="TITLE"><img src="../img/SOF_001B31.PNG"279" height="79"></p>
+            
+            <table>
+              <tr> 
+                <td class="titletable"><p class="SUBTITULO">Consulta 
+                    Identificaci&oacute;n Clinton</p></td>
+                <td><p class="PARRAFO">Si 
+                    se selecciona este campo (hace referencia a la identificaci&oacute;n 
+                    del cliente en la lista de derogatorio de cedulas), el aplicativo presentar&aacute; 
+                    un mensaje en la opci&oacute;n de Ingreso de solicitudes que indica 
+                    que el documento esta en derogatorio de cedulas y por lo tanto no desplegar&aacute; 
+                    la opci&oacute;n de ingreso de solicitudes. Esta verificaci&oacute;n 
+                    la realiza independientemente que se haya marcado el par&aacute;metro 
+                    o no.</p>
+                  <p class="PARRAFO">En otras solicitudes donde la validaci&oacute;n no 
+                    se hace desde el ingreso de solicitudes el aplicativo desplegar&aacute; 
+                    un mensaje de error si se ha marcado error en el par&aacute;metro, el 
+                    cual no permite guardar la solicitud o por el contrario si se selecciona 
+                    un mensaje de advertencia el aplicativo informar&aacute; que el documento 
+                    del cliente se encuentra en derogatorio de c&eacute;dulas pero permitir&aacute; 
+                    seguir llenando la solicitud. </p>
+                  <p class="PARRAFO">Nota: El aplicativo realizar&aacute; la validaci&oacute;n 
+                    primero por el N&uacute;mero de identificaci&oacute;n y luego por el 
+                    Nombre. Adicionalmente se debe tener en cuenta que si no se ha marcado 
+                    ningun par&aacute;metro el aplicativo no realiza las validaciones.</p>
+                  </td>
+              </tr>
+              <tr> 
+                <td  class="titletable" ><p class="SUBTITULO">Consulta 
+                    Nombre Clinton</p></td>
+                <td><p class="PARRAFO">Si 
+                    se selecciona este campo (hace referencia al nombre del cliente que 
+                    se encuentra en la lista de derogatorio de cedulas), el aplicativo realizar&aacute; 
+                    la validaci&oacute;n al momento de ingresar al momento de ingresar informaci&oacute;n 
+                    en la solicitud (despu&eacute;s de haber realizado la validaci&oacute;n 
+                    por numero de documento de identificaci&oacute;n). Si se selecciona 
+                    Error, el aplicativo desplegar&aacute; un mensaje de error el cual no 
+                    permite guardar la solicitud o por el contrario si se selecciona un 
+                    mensaje de advertencia el aplicativo informar&aacute; que el cliente 
+                    se encuentra en derogatorio de cedulas pero permitir&aacute; seguir 
+                    llenando la solicitud.</p></td>
+              </tr>
+            </table>
+           
+           
+            <p><a href="SOH_001B7b.html">Etapas</a><span
+              ><b> | </b></span><a href="SOH_001B7c.html">Cupos 
+              extendidos</a><b><span > | </span></b><a href="SOH_001B7d.html">Relaciones 
+              laborales</a><span
+              ><b> | </b></span><a href="SOH_001B7e.html">Cupos 
+              m&iacute;n y m&aacute;x por rango</a><b><span > 
+              <b>|</b></span></b><span ></span><a href="SOH_001B7f.html">Copiar 
+              par&aacute;metros</a></p>
+            
+        </section>
+    <script src="../js/menu.js"></script>
+
+    <footer>
+        <div>
+            <img class="TITLE"  src= "../img/logo.PNG">
+        </div>
+        <p>OpenCard SAS</p>
+        <p>Calle 77 Nº 11-19 Piso 4°, Bogotá D.C.</p>
+        <p>Tel (57) 601 - 313 37 75  <a href="http://www.OpenCard.com"
+                target="_blank">www.OpenCard.com</a></p>
+
+    </footer>
+</body>
+
+</html>

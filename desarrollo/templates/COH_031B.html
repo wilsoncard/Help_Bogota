@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>BANKBU®</title>
+  <link rel="stylesheet" href="../css/pages.css">
+  <link rel="stylesheet" href="../css/style.css">
+  <link rel="icon" href="../img/ACQUIRER-logo.JPG" type="image/x-icon">
+</head>
+
+<body>
+
+  <header>
+    <img class="logo" src="../img/logoBankbu_.PNG" alt="Logo de Mi Empresa">
+    <div id="menuBtn">
+      <img class="TITLE" src="../img/menu.PNG" alt="Botón de Menú ">
+    </div>
+  </header>
+  <nav>
+    <ul>
+      <li>
+        <a href="../index.html" class="main-optionINICIO">INICIO</a>
+      </li>
+      <li>
+        <a href="NUH_INTB.html" class="main-optionINTRODUCCIÓN">INTRODUCCIÓN</a>
+      </li>
+      <li><a href="#" class="main-option">NUCLEO ▼</a>
+        <ul>
+          <li><a href="NUH_000B.html">Config. Sistema</a></li>
+          <li><a href="NUH_00B_N2.html">Parametros</a></li>
+          <li><a href="NUH_00B_inicio.html">Inicio</a></li>
+          <li><a href="NUH_00B_proceso.html">Procesos</a></li>
+          <li><a href="NUH_00B_inf.html">Inf. Cliente</a></li>
+          <li><a href="NUH_00B_conta.html">Contabilidad</a></li>
+          <li style="visibility: hidden; display: none;"><a href="NUH_00B_audi.html">Auditoria</a></li>
+
+        </ul>
+      </li>
+      <li>
+        <a href="#" class="main-option">EMISOR ▼</a>
+        <ul>
+          <li><a href="EMH_000B.html">Productos</a></li>
+          <li><a href="EMH_000Bsoli.html">Solicitudes</a></li>
+          <li><a href="EMH_000Bmerca.html">Mercadeo</a></li>
+          <li><a href="EMH_000Bservi.html">Servicio Al Cliente</a></li>
+          <li><a href="EMH_000Bpendi.html">Pendientes</a></li>
+          <li><a href="EMH_000Btrans.html">Transaccionabilidad</a></li>
+          <li><a href="EMH_000Bauto.html">Autorizaciones</a></li>
+          <li><a href="EMH_000Bplasti.html">Adm. Plasticos</a></li>
+          <li><a href="EMH_000Brecla.html">Reclamos</a></li>
+                    <li><a href="MEH_032B.html">Lealtad</a></li>
+                    <li><a href="COH_064B.html">Cobranzas</a></li>
+        </ul>
+      </li>
+      <li style="visibility: hidden">
+        <a href="ACH_000B.html" class="main-option">ADQUIRIENTE</a>
+      </li>
+      <li style="visibility: hidden">
+        <a href="DBH_000B.html" class="main-option">TARJETA DEBITO</a>
+      </li>
+    </ul>
+  </nav>
+
+  <section>
+    <div>
+      <table>
+        <tr>
+          <td>
+            <div>
+              <p class="TITLE">Reglas por producto </p>
+            </div>
+          </td>
+        </tr>
+      </table>
+      <p class="PARRAFO">Mediante esta opci&oacute;n, la entidad asocia a los diferentes productos cr&eacute;dito las <a
+          href="COH_030B.html">reglas</a> que deben ser evaluadas por el autorizador </p>
+      <p class="PARRAFO">El formulario contiene un filtro que le permite al usuario consultar la informaci&oacute;n
+        espec&iacute;fica para los productos pertenecientes a un bin, un segmento, un grupo de afinidad, o un producto
+        en particular. Por defecto, al ingresar al formulario este trae todos los productos que tengan por lo menos una
+        regla asociada.</p>
+      <p class="TITLE"><img src="../img/COF_031B.PNG"></p>
+      <p class="PARRAFO">Esta opci&oacute;n contiene los hiperv&iacute;nculos <a href="COH_031B.html#BL_ASOCIAR">Asociar
+          reglas</a> y <a href="COH_031B.html#BL_MASIVA">Asociar reglas masivamente</a>. </p>
+      <p class="TITLE"><img src="../img/COF_031B1.PNG"></p>
+      <p class="TITLE"><img src="../img/COF_031B4.PNG"></p>
+      <p class="PARRAFO"><a name="BL_ASOCIAR"><span class="SUBTITULO"><span><b>Asociar
+                reglas</b></span><span>:</span></span>  Si el usuario selecciona un producto e invoca
+          el hiperv&iacute;nculo Asociar reglas, se despliega un formulario con el mismo nombre, y el cual
+          contiene un filtro que le permite al usuario consultar si el producto tiene asociada una <a
+            href="COH_030B.html">regla</a> en particular.<span> El formulario muestra un resumen de las
+            caracter&iacute;sticas de cada una de las <a href="COH_030B.html">reglas</a> que tiene el producto como son
+            el estado, la acci&oacute;n, vigencia inicial y vigencia final. </span></p>
+      <p class="TITLE"><img src="../img/COF_031B2.PNG"></p>
+      <p>El formulario Asociar reglas contiene las opciones Actualizar, Eliminar y Adicionar.</p>
+      <p><span class="SUBTITULO">Adicionar:</span>  Si el usuario invoca la opci&oacute;n Adicionar, se
+        despliega un formulario con los siguientes campos: </p>
+      <p class="TITLE"><img src="../img/COF_031B3.PNG"></p>
+      <table>
+        <tr>
+          <td class="titletable">
+            <p class="SUBTITULO"><b>Regla</b></p>
+          </td>
+          <td>
+            <p class="PARRAFO">Campo obligatorio con lista de valores de donde se selecciona la <a
+                href="COH_030B.html">regla</a> que se va a asociar al producto. La lista solo muestra aquellas reglas
+              que tengan <a href="COH_030B1.html">definici&oacute;n</a> y se encuentren en estado activa </p>
+          </td>
+        </tr>
+        <tr>
+          <td class="titletable">
+            <p class="SUBTITULO">Prioridad</p>
+          </td>
+          <td>
+            <p class="PARRAFO">Este campo num&eacute;rico, obligatorio, permite indicar el orden en el autorizador debe
+              evaluar la regla en caso que el producto tenga varias reglas asociadas.</p>
+          </td>
+        </tr>
+      </table>
+      <p src="../img/MEF_002E5.PNG"></p>
+      <p><span class="SUBTITULO">Actualizar:</span>  Si el usuario invoca la opci&oacute;n Actualizar, se
+        despliega un formulario en el cual el &uacute;nico campo editable es la Prioridad.</p>
+      <p class="TITLE"><img src="../img/COF_031B4.PNG"></p>
+      <p class="PARRAFO"><a name="BL_MASIVA"><span class="SUBTITULO"><span><b>Asociar reglas
+                masivamente</b></span><span>:</span></span>  si el usuario invoca la opci&oacute;n Asociar reglas
+          masivamente se despliega un wizard de dos pasos y en la primera p&aacute;gina denominada productos se muestran
+          todos aquellos productos que el actor haya seleccionado previamente mediante el filtro contenido en el
+          formulario inicial<span class="PARRAFO"> 'Reglas por producto' .</span></p>
+      <p class="TITLE"><img src="../img/COF_031B5.PNG"></p>
+      <p src="../img/MEF_002E5.PNG">En este formulario el actor selecciona marcando en la casilla correspondiente, los
+        productos a los cuales les desea asociar reglas masivamente; por lo menos debe seleccionar un producto para
+        poder continuar con el proceso.</p>
+      <p src="../img/MEF_002E5.PNG">Una vez seleccionados los productos y mediante al bot&oacute;n 'Siguiente' el
+        sistema lo lleva a la seguna p&aacute;gina del wizard denominada 'Reglas' con los siguientes campos: </p>
+      <p src="../img/MEF_002E5.PNG"><img src="../img/COF_031B6.PNG"></p>
+      <table>
+        <tr>
+          <td class="titletable">
+            <p class="SUBTITULO"><b>Nombre</b></p>
+          </td>
+          <td>
+            <p class="PARRAFO">Este campo de salida muestra todas las <a href="COH_030B.html">reglas</a> parametrizadas
+              previamente, que tienen definici&oacute;n de reglas y se encuentran en estado activas.</p>
+          </td>
+        </tr>
+        <tr>
+          <td class="SUBTITULO">Acci&oacute;n</td>
+          <td>Campo de salida, que indica la acci&oacute;n definida para la regla </td>
+        </tr>
+        <tr>
+          <td class="titletable"><span class="SUBTITULO">Prioridad</span></td>
+          <td>Este campo num&eacute;rico, obligatorio, permite indicar el orden en el autorizador debe evaluar la regla
+            en caso que el producto tenga varias reglas asociadas.</td>
+        </tr>
+        <tr>
+          <td class="titletable">
+            <p class="SUBTITULO">Seleccionar</p>
+          </td>
+          <td>
+            <p class="PARRAFO">Campo en el cual se marcan aquellas reglas que se van a adicionar a los productos
+              seleccionados en la primera p&aacute;gina del wizard </p>
+          </td>
+        </tr>
+      </table>
+      <p src="../img/MEF_002E5.PNG">Una vez que el actor ha seleccionado las reglas a asociar y les ha asignado la
+        prioridad, mediante el bot&oacute;n finalizar, el sistema asocia las regals a los productos escogidos.</p>
+      <p src="../img/MEF_002E5.PNG">Si alguna de las reglas ya est&aacute; asociada con cualquiera de los productos
+        seleccionados, el sistema le informar&aacute; al usario y asociar&aacute; las dem&aacute;s reglas.</p>
+      <p src="../img/MEF_002E5.PNG"></p>
+  </section>
+  <script src="../js/menu.js"></script>
+</body>
+<footer>
+  <div>
+    <img class="TITLE" src="../img/logo.PNG">
+  </div>
+  <p>OpenCard SAS</p>
+  <p>Calle 77 Nº 11-19 Piso 4°,Bogotá D.C.</p>
+  <p>Tel (57) 601 - 313 37 75 <a href="http://www.OpenCard.com" target="_blank">www.OpenCard.com</a></p>
+
+
+
+</footer>
+
+</html>

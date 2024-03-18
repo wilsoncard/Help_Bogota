@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>BANKBU®</title>
+  <link rel="stylesheet" href="../css/pages.css">
+  <link rel="stylesheet" href="../css/style.css">
+  <link rel="icon" href="../img/ACQUIRER-logo.JPG" type="image/x-icon">
+</head>
+
+<body>
+
+  <header>
+    <img class="logo" src="../img/logoBankbu_.PNG" alt="Logo de Mi Empresa">
+    <div id="menuBtn">
+      <img class="TITLE" src="../img/menu.PNG" alt="Botón de Menú ">
+    </div>
+  </header>
+  <nav>
+    <ul>
+      <li>
+        <a href="../index.html" class="main-optionINICIO">INICIO</a>
+      </li>
+      <li>
+        <a href="NUH_INTB.html" class="main-optionINTRODUCCIÓN">INTRODUCCIÓN</a>
+      </li>
+      <li><a href="#" class="main-option">NUCLEO ▼</a>
+        <ul>
+          <li><a href="NUH_000B.html">Config. Sistema</a></li>
+          <li><a href="NUH_00B_N2.html">Parametros</a></li>
+          <li><a href="NUH_00B_inicio.html">Inicio</a></li>
+          <li><a href="NUH_00B_proceso.html">Procesos</a></li>
+          <li><a href="NUH_00B_inf.html">Inf. Cliente</a></li>
+          <li><a href="NUH_00B_conta.html">Contabilidad</a></li>
+          <li style="visibility: hidden; display: none;"><a href="NUH_00B_audi.html">Auditoria</a></li>
+
+        </ul>
+      </li>
+      <li>
+        <a href="#" class="main-option">EMISOR ▼</a>
+        <ul>
+          <li><a href="EMH_000B.html">Productos</a></li>
+          <li><a href="EMH_000Bsoli.html">Solicitudes</a></li>
+          <li><a href="EMH_000Bmerca.html">Mercadeo</a></li>
+          <li><a href="EMH_000Bservi.html">Servicio Al Cliente</a></li>
+          <li><a href="EMH_000Bpendi.html">Pendientes</a></li>
+          <li><a href="EMH_000Btrans.html">Transaccionabilidad</a></li>
+          <li><a href="EMH_000Bauto.html">Autorizaciones</a></li>
+          <li><a href="EMH_000Bplasti.html">Adm. Plasticos</a></li>
+          <li><a href="EMH_000Brecla.html">Reclamos</a></li>
+          <li><a href="MEH_032B.html">Lealtad</a></li>
+          <li><a href="COH_064B.html">Cobranzas</a></li>
+        </ul>
+      </li>
+      <li style="visibility: hidden">
+        <a href="ACH_000B.html" class="main-option">ADQUIRIENTE</a>
+      </li>
+      <li style="visibility: hidden">
+        <a href="DBH_000B.html" class="main-option">TARJETA DEBITO</a>
+      </li>
+    </ul>
+  </nav>
+
+  <section>
+    <div>
+      <p class="TITLE">Bines internacionales</p>
+      <p>Esta funci&oacute;n habilita la consulta y mantenimiento de la tabla que almacena toda la informaci&oacute;n
+        necesaria en la validaci&oacute;n de transacciones realizadas con tarjetas emitidas en el exterior (Bines
+        internacionales). El mantenimiento se realiza a trav&eacute;s del cargue de la cinta enviada
+        peri&oacute;dicamente por el operador (franquicia) y eventualmente de forma manual para resolver movimiento no
+        procesado por falta de actualizaci&oacute;n de la misma tabla.</p>
+      <p class="TITLE"><img src="../img/NUF_018E.PNG"></p>
+
+      <p class="PARRAFO">El
+        formulario contiene las opciones Actualizar, Eliminar, y Adicionar.</p>
+      <p class="PARRAFO"><span class="SUBTITULO">Adicionar:</span> Si el usuario invoca la opci&oacute;n Adicionar se
+        despliega un formulario con los siguientes campos<span>:</span></p>
+      <p class="TITLE"><img src="../img/NUF_018E1.PNG"></p>
+
+      <table>
+        <tr>
+          <td class="titletable">
+            <p><b><span class="SUBTITULO">Franquicia</span></b><span>
+
+              </span></p>
+          </td>
+          <td>
+            <p class="PARRAFO">Campo obligatorio, con lista
+              de valores de la cual se selecciona la <a href="NUH_033B.html">franquicia</a> para la que se define el
+              rango o bin internacional en particular,
+              desplegando el nombre de la misma.</p>
+          </td>
+        </tr>
+        <tr>
+          <td class="titletable">
+            <p><b><span class="SUBTITULO">Bin</span></b></p>
+          </td>
+          <td>
+            <p>Campo
+              num&eacute;rico obligatorio que almacena, en un m&aacute;ximo
+              de 8 caracteres, el Bank Identification Number BIN correspondiente
+              para cada rango de tarjetas.</p>
+          </td>
+        </tr>
+        <tr>
+          <td class="titletable">
+            <p><b><span class="SUBTITULO">Rango inferior</span></b><span>
+
+              </span></p>
+          </td>
+          <td>
+            <p><span>En
+                este campo alfanum&eacute;rico de 16 caracteres, obligatorio,
+                se registra el l&iacute;mite inferior o n&uacute;mero de tarjeta
+                a partir del cual se define el rango acorde a cada Bin.</span></p>
+          </td>
+        </tr>
+        <tr>
+          <td class="titletable">
+            <p><b><span class="SUBTITULO">Rango superior</span></b><span>
+
+              </span></p>
+          </td>
+          <td>
+            <p><span>Campo
+                alfanum&eacute;rico de 16 caracteres, obligatorio, en el que se
+                indica el l&iacute;mite superior o n&uacute;mero de tarjeta hasta
+                el cual se define el rango acorde a cada Bin.</span></p>
+          </td>
+        </tr>
+        <tr>
+          <td class="titletable">
+            <p><b><span class="SUBTITULO">Longitud bin</span></b><span>
+
+              </span></p>
+          </td>
+          <td>
+            <p><span>Campo
+                num&eacute;rico de una posici&oacute;n, obligatorio, que ilustra
+                la longitud del bin dentro del n&uacute;mero de la tarjeta.</span></p>
+          </td>
+        </tr>
+        <tr>
+          <td class="titletable">
+            <p><b><span class="SUBTITULO">Longitud tarjeta</span></b><span>
+
+              </span></p>
+          </td>
+          <td>
+            <p><span>En
+                este campo num&eacute;rico de dos d&iacute;gitos, obligatorio,
+                se almacena la cantidad m&aacute;xima de d&iacute;gitos que componen
+                la cuenta del tarjetahabiente, es decir, el n&uacute;mero de la
+                tarjeta.</span></p>
+          </td>
+        </tr>
+        <tr>
+          <td class="titletable">
+            <p><b><span class="SUBTITULO">Tipo</span></b><span>
+              </span></p>
+          </td>
+          <td>
+            <p><span>Campo
+                alfanum&eacute;rico de un d&iacute;gito, opcional, el cual contiene
+                un indicador asignado por la franquicia a cada bin para identificar
+                el tipo de producto.</span></p>
+          </td>
+        </tr>
+        <tr>
+          <td class="titletable">
+            <p><span class="SUBTITULO">D&iacute;gito
+                  de chequeo</span></p>
+          </td>
+          <td>
+            <p><span>Campo
+                que contiene lista de valores de la que se puede seleccionar el
+                algoritmo mediante el cual se realiza la verificaci&oacute;n del
+                d&iacute;gito de chequeo.</span></p>
+          </td>
+        </tr>
+      </table>
+      <p class="PARRAFO"><span class="PARRAFO"><span class="SUBTITULO">Actualizar:</span></span><span> Si el
+          usuario invoca la opci&oacute;n Actualizar se despliega un nuevo formulario
+          en el cual los &uacute;nicos campos modificables son: Franquicia, Rango
+          superior, Longitud bin, Longitud tarjeta, Tipo, D&iacute;gito
+          de chequeo.</span></p>
+      <p class="TITLE"><img src="../img/NUF_018E2.PNG"></p>
+
+  </section>
+  <script src="../js/menu.js"></script>
+</body>
+<footer>
+  <div>
+    <img class="TITLE" src="../img/logo.PNG">
+  </div>
+  <p>OpenCard SAS</p>
+  <p>Calle 77 Nº 11-19 Piso 4°,Bogotá D.C.</p>
+  <p>Tel (57) 601 - 313 37 75 <a href="http://www.OpenCard.com" target="_blank">www.OpenCard.com</a></p>
+
+
+
+</footer>
+
+</html>

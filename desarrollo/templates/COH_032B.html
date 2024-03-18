@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>BANKBU®</title>
+  <link rel="stylesheet" href="../css/pages.css">
+  <link rel="stylesheet" href="../css/style.css">
+  <link rel="icon" href="../img/ACQUIRER-logo.JPG" type="image/x-icon">
+</head>
+
+<body>
+
+  <header>
+    <img class="logo" src="../img/logoBankbu_.PNG" alt="Logo de Mi Empresa">
+    <div id="menuBtn">
+      <img class="TITLE" src="../img/menu.PNG" alt="Botón de Menú ">
+    </div>
+  </header>
+  <nav>
+    <ul>
+      <li>
+        <a href="../index.html" class="main-optionINICIO">INICIO</a>
+      </li>
+      <li>
+        <a href="NUH_INTB.html" class="main-optionINTRODUCCIÓN">INTRODUCCIÓN</a>
+      </li>
+      <li><a href="#" class="main-option">NUCLEO ▼</a>
+        <ul>
+          <li><a href="NUH_000B.html">Config. Sistema</a></li>
+          <li><a href="NUH_00B_N2.html">Parametros</a></li>
+          <li><a href="NUH_00B_inicio.html">Inicio</a></li>
+          <li><a href="NUH_00B_proceso.html">Procesos</a></li>
+          <li><a href="NUH_00B_inf.html">Inf. Cliente</a></li>
+          <li><a href="NUH_00B_conta.html">Contabilidad</a></li>
+          <li style="visibility: hidden; display: none;"><a href="NUH_00B_audi.html">Auditoria</a></li>
+
+        </ul>
+      </li>
+      <li>
+        <a href="#" class="main-option">EMISOR ▼</a>
+        <ul>
+          <li><a href="EMH_000B.html">Productos</a></li>
+          <li><a href="EMH_000Bsoli.html">Solicitudes</a></li>
+          <li><a href="EMH_000Bmerca.html">Mercadeo</a></li>
+          <li><a href="EMH_000Bservi.html">Servicio Al Cliente</a></li>
+          <li><a href="EMH_000Bpendi.html">Pendientes</a></li>
+          <li><a href="EMH_000Btrans.html">Transaccionabilidad</a></li>
+          <li><a href="EMH_000Bauto.html">Autorizaciones</a></li>
+          <li><a href="EMH_000Bplasti.html">Adm. Plasticos</a></li>
+          <li><a href="EMH_000Brecla.html">Reclamos</a></li>
+                    <li><a href="MEH_032B.html">Lealtad</a></li>
+                    <li><a href="COH_064B.html">Cobranzas</a></li>
+        </ul>
+      </li>
+      <li style="visibility: hidden">
+        <a href="ACH_000B.html" class="main-option">ADQUIRIENTE</a>
+      </li>
+      <li style="visibility: hidden">
+        <a href="DBH_000B.html" class="main-option">TARJETA DEBITO</a>
+      </li>
+    </ul>
+  </nav>
+
+  <section>
+    <div>
+      <table>
+        <tr>
+          <td>
+            <div>
+              <p class="TITLE">Consulta reglas por producto </p>
+            </div>
+          </td>
+        </tr>
+      </table>
+      <p class="PARRAFO">Mediante esta opci&oacute;n, la entidad puede consultar de manera global todos las reglas
+        asociadas con los diferentes productos cr&eacute;dito. </p>
+      <p class="PARRAFO">A diferencia de la opci&oacute;n reglas por producto, <a href="COH_031B.html">asociar
+          reglas</a> donde solo es posible consultar las reglas asociadas con un producto seleccionado previamente,
+        desde este formulario el actor puede consultar todos los productos que tienen asociada una regla en particular,
+        o ver a nivel general todos los productos con sus respectivas reglas.</p>
+      <p class="PARRAFO">El formulario contiene un filtro que le permite al usuario consultar la informaci&oacute;n
+        espec&iacute;fica para los productos pertenecientes a un bin, un segmento, un grupo de afinidad, un producto o
+        una regla particular. Por defecto, al ingresar al formulario este trae todos los productos que tengan por lo
+        menos una regla asociada.</p>
+
+      <p class="TITLE"><img src="../img/COF_032B.PNG"></p>
+      <p class="PARRAFO">El formulario muestra un registro por cada combinaci&oacute;n de producto y regla existentes,
+        es decir, que si un producto tiene asociadas 5 reglas, el formulario mostrar&aacute; 5 registros. </p>
+      <p class="TITLE"><img src="../img/COF_032B1.PNG"></p>
+
+      <p>El formulario Consulta reglas por producto por ser solamente de consulta no contiene opciones ni
+        hiperv&iacute;nculos adicionales. Los campos que contiene son los siguientes: </p>
+
+      <table>
+        <tr>
+          <td class="titletable">
+            <p class="SUBTITULO"><b>Bin</b></p>
+          </td>
+          <td>
+            <p class="PARRAFO">Campo de salida que muestra el bin correspondiente al producto</p>
+          </td>
+        </tr>
+        <tr>
+          <td class="titletable">
+            <p class="SUBTITULO">Producto </p>
+          </td>
+          <td>Despliega el segmento correspondiente al producto </td>
+        </tr>
+        <tr>
+          <td class="SUBTITULO">Grupo de afinidad </td>
+          <td>
+            <p class="PARRAFO">Campo de salida que muestra el grupo de afinidad correspondiente al producto</p>
+          </td>
+        </tr>
+        <tr>
+          <td class="titletable">
+            <p class="SUBTITULO">Regla</p>
+          </td>
+          <td>Muestra cada el nombre de la regla asociada al producto (bin + producto + grupo de afinidad)
+          </td>
+        </tr>
+        <tr>
+          <td class="titletable">
+            <p class="SUBTITULO">Prioridad </p>
+          </td>
+          <td>Indica la prioridad que se le asign&oacute; a la regla cuando fue <a href="COH_031B.html">asociada</a> con
+            el producto </td>
+        </tr>
+        <tr>
+          <td class="titletable">
+            <p class="SUBTITULO"> Estado</p>
+          </td>
+          <td>Muestra si la <a href="COH_030B.html">regla</a> se encuentra activa o inactiva </td>
+        </tr>
+        <tr>
+          <td class="titletable">
+            <p class="SUBTITULO"> Acci&oacute;n</p>
+          </td>
+          <td>Campo que se&ntilde;ala si la funci&oacute;n de la regla es aprobar, negar o referir la
+            autorizaci&oacute;n </td>
+        </tr>
+        <tr>
+          <td class="titletable">
+            <p class="SUBTITULO"> Vigencia incial </p>
+          </td>
+          <td>Despliega en en formato YYYY-MM-DD la fecha a partir de la cual la regla es aplicable. Puede no contener
+            informaci&oacute;n </td>
+        </tr>
+        <tr>
+          <td class="titletable">
+            <p class="SUBTITULO">Vigencia final </p>
+          </td>
+          <td>
+            <p class="PARRAFO">India en en formato YYYY-MM-DD la fecha hasta la cual la regla es aplicable. Puede no
+              contener informaci&oacute;n </p>
+          </td>
+        </tr>
+      </table>
+      <p src="../img/MEF_002E5.PNG"></p>
+  </section>
+  <script src="../js/menu.js"></script>
+</body>
+<footer>
+  <div>
+    <img class="TITLE" src="../img/logo.PNG">
+  </div>
+  <p>OpenCard SAS</p>
+  <p>Calle 77 Nº 11-19 Piso 4°,Bogotá D.C.</p>
+  <p>Tel (57) 601 - 313 37 75 <a href="http://www.OpenCard.com" target="_blank">www.OpenCard.com</a></p>
+
+
+
+</footer>
+
+</html>

@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BANKBU®</title>
+    <link rel="stylesheet" href="../css/pages.css">
+    <link rel="stylesheet" href="../css/style.css">
+ <link rel="icon" href="../img/ACQUIRER-logo.JPG" type="image/x-icon">
+</head>
+
+<body>
+    <header>
+        <img class="logo" src="../img/logoBankbu_.PNG" alt="Logo de Mi Empresa">
+        <div id="menuBtn">
+            <img class="TITLE"  src= "../img/menu.PNG" alt="Botón de Menú ">
+        </div>
+    </header>
+    <nav>
+        <ul>
+            <li>
+                    <a href="../index.html" class="main-optionINICIO">INICIO</a>
+            </li>
+            <li>
+                <a href="NUH_INTB.html" class="main-optionINTRODUCCIÓN">INTRODUCCIÓN</a>
+            </li>
+            <li><a href="#" class="main-option">NUCLEO ▼</a>
+                <ul>
+                    <li><a href="NUH_000B.html">Config. Sistema</a></li>
+                    <li><a href="NUH_00B_N2.html">Parametros</a></li>
+                    <li><a href="NUH_00B_inicio.html">Inicio</a></li>
+                    <li><a href="NUH_00B_proceso.html">Procesos</a></li>
+                    <li><a href="NUH_00B_inf.html">Inf. Cliente</a></li>
+                    <li><a href="NUH_00B_conta.html">Contabilidad</a></li>
+                    <li style="visibility: hidden; display: none;"><a href="NUH_00B_audi.html">Auditoria</a></li>
+
+                </ul>
+            </li>
+            <li>
+             <a href="#" class="main-option">EMISOR  ▼</a>
+                <ul>
+                    <li><a href="EMH_000B.html">Productos</a></li>
+                    <li><a href="EMH_000Bsoli.html">Solicitudes</a></li>
+                    <li><a href="EMH_000Bmerca.html">Mercadeo</a></li>
+                    <li><a href="EMH_000Bservi.html">Servicio Al Cliente</a></li>
+                    <li><a href="EMH_000Bpendi.html">Pendientes</a></li>
+                    <li><a href="EMH_000Btrans.html">Transaccionabilidad</a></li>
+                    <li><a href="EMH_000Bauto.html">Autorizaciones</a></li>
+                    <li><a href="EMH_000Bplasti.html">Adm. Plasticos</a></li>
+                    <li><a href="EMH_000Brecla.html">Reclamos</a></li>
+                    <li><a href="MEH_032B.html">Lealtad</a></li>
+                    <li><a href="COH_064B.html">Cobranzas</a></li>
+                </ul>
+            </li>
+ <li style="visibility: hidden">
+                <a href="ACH_000B.html" class="main-option">ADQUIRIENTE</a>
+            </li>
+            <li style="visibility: hidden">
+                <a href="DBH_000B.html" class="main-option">TARJETA DEBITO</a>
+            </li></ul>
+    </nav>
+
+    <section>
+        <div> 
+            <table>
+              <tr> 
+                <td><div> 
+                    <p  class="TITLE">Administraci&oacute;n de novedades</p>
+                  </div></td>
+              </tr>
+            </table>
+            <p  class="PARRAFO">Desde este formulario, se permite la aplicaci&oacute;n 
+              de aquellas novedades que no pudieron ser aplicadas correctamente por errores 
+              durante el proceso, o de aquellas que de acuerdo con lo definido en la opci&oacute;n 
+              <a href="NUH_017B.html" > Novedades administrativas</a> 
+              la entidad haya determinado que se aplican en batch y no en l&iacute;nea.</p>
+            <p  class="PARRAFO">Al ingresar al formulario se despliega inicialmente 
+              un filtro en el cual el usuario define los criterios de las novedades que 
+              quiere seleccionar para aplicaci&oacute;n.
+            </p>
+            <p class="TITLE"><img src="../img/SCF_009E.PNG"718" ></p>
+            <p  class="TITLE">Descripci&oacute;n de campos</p>
+            <table>
+              <tr> 
+                <td class="titletable"><p class="SUBTITULO"><b><span 
+        > 
+                    Estado</span></b></p></td>
+                <td><p  class="PARRAFO">Campo 
+                    obligatorio en el que se marca Aplicadas, Por aplicar o Todas 
+                    el estado de las novedades que se desea consultar.</p></td>
+              </tr>
+           
+              <tr> 
+                <td class="titletable"><p class="SUBTITULO"><b><span 
+        > 
+                    Novedad</span></b></p></td>
+                <td><p  class="PARRAFO">En 
+                    este campo tipo combo en el que se permite seleccionar la <a href="NUH_017B.html" >Novedad 
+                    administrativa</a> que se desea consultar. Dependiendo si el formulario se invoca desde el Core o Issuer, este campo muestra
+                    respectivamente las novedades tipo persona o las de tipo tarjeta.</p></td>
+              </tr>
+              <tr> 
+                <td  class="titletable" ><p class="SUBTITULO"><b><span 
+        > 
+                    Tipo de identificaci&oacute;n</span></b></p></td>
+                <td><p  class="PARRAFO">Campo 
+                    tipo combo en el cual se puede seleccionar el tipo de <a href="NUH_008B.html" >documento 
+                    de identificaci&oacute;n</a> asociado a los clientes para los cuales 
+                    se desea consultar novedades.</p></td>
+              </tr>
+              <tr> 
+                <td  class="titletable" ><p class="SUBTITULO"><b><span 
+        > 
+                    N&uacute;mero de identificaci&oacute;n</span></b></p></td>
+                <td><p  class="PARRAFO">En 
+                    este campo num&eacute;rico de hasta 16 caracteres se ingresa el n&uacute;mero 
+                    de identificaci&oacute;n del cliente para el cual se desea consultar 
+                    novedades. </p></td>
+              </tr>
+              <tr> 
+                <td  class="titletable" ><p class="SUBTITULO"><b><span 
+        > 
+                    Fecha de grabaci&oacute;n</span></b></p></td>
+                <td><p  class="PARRAFO">Campo 
+                    que permite ingresar en formato YYYY-MM-DD la fecha espec&iacute;fica 
+                    en la cual se grabaron las novedades que se desea consultar.</p></td>
+              </tr>
+              <tr> 
+                <td  class="titletable" ><p class="SUBTITULO"><b><span 
+        > 
+                    Indicador</span></b></p></td>
+                <td><p  class="PARRAFO">En 
+                    este campo tipo combo se puede seleccionar entre Error, No aplicar 
+                    o Aplicar el estado de las novedades que se desea consultar.</p></td>
+              </tr>
+            </table>
+
+            <p  class="PARRAFO">Una vez que se han ingresado los criterios 
+              a utilizar para seleccionar las novedades que se desea gestionar, mediante 
+              el bot&oacute;n buscar el sistema efect&uacute;a la consulta y despliega un 
+              formulario con los resultados
+            </p>
+            <p class="TITLE"><img src="../img/SCF_009E1.PNG"769" height="344"></p>
+            <p  class="TITLE">Descripci&oacute;n de campos</p>
+            <table>
+              <tr> 
+                <td class="titletable"><p class="SUBTITULO"><b><span 
+        > 
+                    Tipo novedad</span></b></p></td>
+                <td><p  class="PARRAFO">Despliega 
+                    la abreviatura asociada a cada tipo o clase de novedad, parametrizadas 
+                    mediante la opci&oacute;n <a href="NUH_017B.html" >Novedades 
+                    administrativas</a>.
+                  </p></td>
+              </tr>
+           
+              <tr> 
+                <td class="titletable"><p class="SUBTITULO"><b><span 
+        > 
+                    Cliente</span></b></p></td>
+                <td><p  class="PARRAFO">En 
+                    este campo se muestra el nombre del cliente a quien corresponde la novedad.</p></td>
+              </tr>
+              <tr> 
+                <td  class="titletable" ><p class="SUBTITULO"><b><span 
+        > 
+                    Clase</span></b></p></td>
+                <td><p  class="PARRAFO">Campo 
+                    de salida en el que se indica si la novedad es Nueva es decir que corresponde 
+                    a la inclusi&oacute;n de informaci&oacute;n, una Modificaci&oacute;n 
+                    o Eliminaci&oacute;n de datos previamente existentes, brindando un criterio 
+                    adicional para su evaluaci&oacute;n, en caso de ser necesario.
+                  </p></td>
+              </tr>
+              <tr> 
+                <td  class="titletable" ><p class="SUBTITULO"><b><span 
+        > 
+                    Fecha de grabaci&oacute;n</span></b></p></td>
+                <td><p  class="PARRAFO">En 
+                    este campo se muestra en formato YYYY-MM-DD la fecha espec&iacute;fica 
+                    en la cual se grab&oacute; la novedad.</p></td>
+              </tr>
+              <tr> 
+                <td  class="titletable" ><p class="SUBTITULO"><b><span 
+        > 
+                    Fecha de aplicaci&oacute;n </span></b></p></td>
+                <td><p  class="PARRAFO">Campo 
+                    que muestra en formato YYYY-MM-DD la fecha en que se aplic&oacute; exitosamente 
+                    la novedad en el sistema. Difiere de la fecha de grabaci&oacute;n para 
+                    las novedades que presentan errores de datos, o para las que no son 
+                    de aplicaci&oacute;n en l&iacute;nea.</p></td>
+              </tr>
+              <tr> 
+                <td  class="titletable" ><p class="SUBTITULO"><b><span 
+        > 
+                    Estado</span></b></p></td>
+                <td><p  class="PARRAFO">Muestra 
+                    las opciones Por aplicar o Aplicada, asociada a la 
+                    novedad, lo que permite diferenciar, posteriormente, las novedades ingresadas 
+                    al sistema.</p></td>
+              </tr>
+              <tr> 
+                <td  class="titletable" ><p class="SUBTITULO"><b><span 
+        > 
+                    Indicador</span></b></p></td>
+                <td><p  class="PARRAFO">En 
+                    este campo se muestra el indicador actual de la novedad y que puede 
+                    ser Aplicada, Por aplicar o Error.</p></td>
+              </tr>
+              <tr> 
+                <td  class="titletable" ><p class="SUBTITULO"><b><span 
+        > 
+                    Mensaje</span></b></p></td>
+                <td><p  class="PARRAFO">Si 
+                    durante el proceso de aplicaci&oacute;n de la novedad se present&oacute; 
+                    alg&uacute;n error que no permiti&oacute; su correcta aplicaci&oacute;n, 
+                    en este campo se despliega el mensaje en el cual se indica al usuario 
+                    la causa de tal evento.</p></td>
+              </tr>
+            </table>
+            <p  class="PARRAFO">El formulario contiene las opciones actualizar 
+              y Detalle</p>
+            <p  class="PARRAFO"><b ><span class="SUBTITULO">Actualizar</span></b>: 
+              Si el usuario selecciona un registro cuyo estado sea Por aplicar 
+              e invoca la opci&oacute;n Actualizar se despliega un nuevo formulario con 
+              un &uacute;nico campo modificable que es el Indicador. </p>
+            <p class="TITLE"><img src="../img/SCF_009E2.PNG"164" ></p>
+            <p  class="TITLE">Descripci&oacute;n de campos</p>
+            <table>
+              <tr> 
+                <td class="titletable"><p class="SUBTITULO"><b><span 
+        > 
+                    Indicador</span></b></p></td>
+                <td><p  class="PARRAFO">Campo 
+                    obligatorio tipo combo, en el cual se selecciona entre Aplicar 
+                    o No aplicar la acci&oacute;n que debe ejecutar el sistema 
+                    una vez se utilice el bot&oacute;n correspondiente para gestionar la 
+                    novedad. Para poder aplicar una novedad desde esta opci&oacute;n, el 
+                    valor de este campo debe ser 'Aplicar'</p></td>
+              </tr>
+            </table>
+            <p  class="PARRAFO"><b ><span class="SUBTITULO">Detalle</span></b>: 
+              Si el usuario selecciona un registro e invoca la opci&oacute;n Detalle se 
+              puede invocar el formulario a trav&eacute;s del cual se captur&oacute; la 
+              novedad.</p>
+            <p  class="TITLE"><img src="../img/SCF_009E3.PNG"358" height="299"></p>
+            <p  class="TITLE">Botones especiales</p>
+            <p  class="PARRAFO"><b ><span class="SUBTITULO">Aplicar 
+              novedad seleccionada</span></b>: una vez solucionada la causal por la que 
+              qued&oacute; pendiente por aplicar la novedad o &quot;forzar&quot; la aplicaci&oacute;n 
+              de una novedad de aplicaci&oacute;n mediante proceso en batch, se utiliza 
+              este bot&oacute;n, el que aplica de manera individual la novedad sobre la 
+              que se encuentre el cursor.</p>
+            <p class="TITLE"><img src="../img/APLICARNOVACTUAL.PNG"></p>
+           
+            <p  class="PARRAFO"><b ><span class="SUBTITULO">Aplicar 
+              todas las novedades</span></b>: aplica bajo el mismo principio o criterio 
+              que el definido para el bot&oacute;n anterior, pero a diferencia de este, 
+              lo realiza de manera masiva, para todas las novedades contenidas en la consulta 
+              hecha y que se encuentren por aplicar bien sea que est&eacute;n o no visibles 
+              para el actor.</p>
+            <p class="TITLE"><img src="../img/APLICARTODASNOV.PNG"></p>
+
+            <div>
+        </section>
+    <script src="../js/menu.js"></script>
+
+    <footer>
+        <div>
+            <img class="TITLE"  src= "../img/logo.PNG">
+        </div>
+        <p>OpenCard SAS</p>
+        <p>Calle 77 Nº 11-19 Piso 4°, Bogotá D.C.</p>
+        <p>Tel (57) 601 - 313 37 75  <a href="http://www.OpenCard.com"
+                target="_blank">www.OpenCard.com</a></p>
+
+    </footer>
+</body>
+
+</html>

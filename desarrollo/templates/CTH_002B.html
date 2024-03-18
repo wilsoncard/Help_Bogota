@@ -1,0 +1,772 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>BANKBU®</title>
+  <link rel="stylesheet" href="../css/pages.css">
+  <link rel="stylesheet" href="../css/style.css">
+  <link rel="icon" href="../img/ACQUIRER-logo.JPG" type="image/x-icon">
+</head>
+
+<body>
+
+  <header>
+    <img class="logo" src="../img/logoBankbu_.PNG" alt="Logo de Mi Empresa">
+    <div id="menuBtn">
+      <img class="TITLE" src="../img/menu.PNG" alt="Botón de Menú ">
+    </div>
+  </header>
+  <nav>
+    <ul>
+      <li>
+        <a href="../index.html" class="main-optionINICIO">INICIO</a>
+      </li>
+      <li>
+        <a href="NUH_INTB.html" class="main-optionINTRODUCCIÓN">INTRODUCCIÓN</a>
+      </li>
+      <li><a href="#" class="main-option">NUCLEO ▼</a>
+        <ul>
+          <li><a href="NUH_000B.html">Config. Sistema</a></li>
+          <li><a href="NUH_00B_N2.html">Parametros</a></li>
+          <li><a href="NUH_00B_inicio.html">Inicio</a></li>
+          <li><a href="NUH_00B_proceso.html">Procesos</a></li>
+          <li><a href="NUH_00B_inf.html">Inf. Cliente</a></li>
+          <li><a href="NUH_00B_conta.html">Contabilidad</a></li>
+          <li style="visibility: hidden; display: none;"><a href="NUH_00B_audi.html">Auditoria</a></li>
+
+        </ul>
+      </li>
+      <li>
+        <a href="#" class="main-option">EMISOR ▼</a>
+        <ul>
+          <li><a href="EMH_000B.html">Productos</a></li>
+          <li><a href="EMH_000Bsoli.html">Solicitudes</a></li>
+          <li><a href="EMH_000Bmerca.html">Mercadeo</a></li>
+          <li><a href="EMH_000Bservi.html">Servicio Al Cliente</a></li>
+          <li><a href="EMH_000Bpendi.html">Pendientes</a></li>
+          <li><a href="EMH_000Btrans.html">Transaccionabilidad</a></li>
+          <li><a href="EMH_000Bauto.html">Autorizaciones</a></li>
+          <li><a href="EMH_000Bplasti.html">Adm. Plasticos</a></li>
+          <li><a href="EMH_000Brecla.html">Reclamos</a></li>
+                    <li><a href="MEH_032B.html">Lealtad</a></li>
+                    <li><a href="COH_064B.html">Cobranzas</a></li>
+        </ul>
+      </li>
+      <li style="visibility: hidden">
+        <a href="ACH_000B.html" class="main-option">ADQUIRIENTE</a>
+      </li>
+      <li style="visibility: hidden">
+        <a href="DBH_000B.html" class="main-option">TARJETA DEBITO</a>
+      </li>
+    </ul>
+  </nav>
+
+  <section>
+    <div>
+      <table>
+        <tr>
+          <td>
+            <div>
+              <p class="TITLE">An&aacute;lisis contable</p>
+            </div>
+          </td>
+        </tr>
+      </table>
+      <p class="PARRAFO">En este formulario la entidad puede consultar
+        la informaci&oacute;n contable generada durante el proceso diario y la manera
+        como se hizo la afectaci&oacute;n de los diferentes registros. Debe tenerse
+        en cuenta el momento de ejecuci&oacute;n del proceso que agrupa el movimiento
+        contable para garantizar que la informaci&oacute;n consultada en este formulario
+        sea realmente la que corresponda al movimiento procesado.</p>
+      <p class="PARRAFO">El formulario contiene cinco hiperv&iacute;nculos
+        que permiten invocar otros formulario que muestran la <a
+            href="CTH_002B.html#BL_CONSOLIDA">Consolidaci&oacute;n
+            del movimiento</a>, <a href="CTH_002B.html#BL_MAYORIZA">Nivel
+            de mayorizaci&oacute;n 4</a>, <a href="CTH_002B.html#BL_MAYORIZA">Nivel
+            de mayorizaci&oacute;n 3</a>, <a href="CTH_002B.html#BL_MAYORIZA">Nivel
+            de mayorizaci&oacute;n 2</a> y <a href="CTH_002B.html#BL_MAYORIZA">Nivel
+            de mayorizaci&oacute;n 1</a>.</p>
+      <p class="PARRAFO">El formulario de an&aacute;lisis contable
+        solo contiene la opci&oacute;n Detalle.</p>
+      <p class="TITLE"><img src="../img/CTF_002E.PNG" 793" height="530"></p>
+
+      <p class="TITLE">Descripci&oacute;n de campos</p>
+      <table>
+        <tr>
+          <td class="titletable">
+            <p class="SUBTITULO"><b>C&oacute;digo
+                cuenta
+              </b></p>
+          </td>
+          <td>
+            <p class="PARRAFO">En
+              este campo se muestra el c&oacute;digo de la cuenta afectada contablemente
+              y a la cual corresponde la informaci&oacute;n desplegada. </p>
+          </td>
+        </tr>
+        <tr>
+          <td class="titletable">
+            <p class="SUBTITULO"><b>Moneda
+
+
+
+              </b></p>
+          </td>
+          <td>
+            <p class="PARRAFO">Campo
+              que muestra la <a href="NUH_005B.html">moneda</a>
+              en la cual lleg&oacute; el registro y su asociaci&oacute;n a la cuenta
+              contable de acuerdo con los atributos definidos en la parametrizaci&oacute;n.
+            </p>
+          </td>
+        </tr>
+        <tr>
+          <td class="titletable">
+            <p class="SUBTITULO"><b>Concepto
+                contable
+              </b></p>
+          </td>
+          <td>
+            <p class="PARRAFO">De
+              acuerdo con el tipo de movimiento, este campo muestra los conceptos
+              con los cuales lleg&oacute; la informaci&oacute;n para generar el registro
+              contable a la cuenta</p>
+          </td>
+        </tr>
+
+        <tr>
+          <td class="titletable">
+            <p class="SUBTITULO"><b>Identificador
+                contable </b></p>
+          </td>
+          <td>
+            <p class="PARRAFO">Este
+              campo contiene, de acuerdo con el movimiento regitrado, el<a href="NUH_078B.html">
+                identificador contable</a> con el que lleg&oacute; la informaci&oacute;n
+              para efectuar los respectivos registros contables a la cuenta.
+            </p>
+          </td>
+        </tr>
+
+        <tr>
+          <td class="titletable">
+            <p class="SUBTITULO"><b>Movimiento
+                d&eacute;bito
+              </b></p>
+          </td>
+          <td>
+            <p class="PARRAFO">Campo
+              que muestra el valor total de los registros de naturaleza d&eacute;bito
+              aplicados a la cuenta, moneda, concepto contable e identificador durante
+              el d&iacute;a.
+            </p>
+          </td>
+        </tr>
+
+        <tr>
+          <td class="titletable">
+            <p class="SUBTITULO"><b>Movimiento
+                cr&eacute;dito
+              </b></p>
+          </td>
+          <td>
+            <p class="PARRAFO">Este
+              campo despliega el valor total de los registros de naturaleza cr&eacute;dito
+              aplicados a la cuenta, moneda, concepto contable e identificador durante
+              el d&iacute;a.</p>
+          </td>
+        </tr>
+
+        <tr>
+          <td class="titletable">
+            <p class="SUBTITULO"><b>Total
+                consulta d&eacute;bito
+              </b></p>
+          </td>
+          <td>
+            <p class="PARRAFO">Campo
+              de resumen que muestra el monto total de los movimientos de naturaleza
+              d&eacute;bito registrados durante el d&iacute;a.
+            </p>
+          </td>
+        </tr>
+
+        <tr>
+          <td class="titletable">
+            <p class="SUBTITULO"><b>Total
+                consulta cr&eacute;dito
+              </b></p>
+          </td>
+          <td>
+            <p class="PARRAFO">Este
+              campo de resumen contiene el monto total de los movimientos de naturaleza
+              cr&eacute;dito registrados durante el d&iacute;a.</p>
+          </td>
+        </tr>
+
+        <tr>
+          <td class="titletable">
+            <p class="SUBTITULO"><b>Total
+                d&eacute;bito por p&aacute;gina
+              </b></p>
+          </td>
+          <td>
+            <p class="PARRAFO">Campo
+              que muestra el monto (sumatoria) de los movimientos de naturaleza d&eacute;bito
+              correspondientes a los registros que se encuentran desplegados en la
+              p&aacute;gina actual que est&aacute; consultando el usuario.
+            </p>
+          </td>
+        </tr>
+
+        <tr>
+          <td class="titletable">
+            <p class="SUBTITULO"><b>Total
+                cr&eacute;dito por p&aacute;gina
+              </b></p>
+          </td>
+          <td>
+            <p class="PARRAFO">Este
+              campo muestra el monto (sumatoria) de los movimientos de naturaleza
+              cr&eacute;dito correspondientes a los registros que se encuentran desplegados
+              en la p&aacute;gina actual que est&aacute; consultando el usuario.</p>
+          </td>
+        </tr>
+      </table>
+
+      <p class="PARRAFO">Si el usuario selecciona un registro e invoca la opci&oacute;n Detalle, se despliega un
+        formulario con la informaci&oacute;n completa del registro y en el cual ninguno de sus campos es
+        modificable.<b><span class="SUBTITULO"></span></b></p>
+      <div class="PARRAFO">
+        <p class="TITLE"><img src="../img/CTF_002E1.PNG"></p>
+        <p class="PARRAFO">Adem&agrave;s de algunos de los campos contenidos en el formulario inicial se muestran otros
+          que se explican a continuaci&oacute;n:</p>
+        <p class="TITLE">Descripci&oacute;n de campos</p>
+        <table>
+          <tr>
+            <td class="titletable">
+              <p class="SUBTITULO"><b>Bin
+                </b></p>
+            </td>
+            <td>
+              <p class="PARRAFO">Campo
+                que muestra el bin con el cual lleg&oacute; la informaci&oacute;n procesada y registrada en la cuenta
+                contable
+              </p>
+            </td>
+          </tr>
+
+          <tr>
+            <td class="titletable">
+              <p class="SUBTITULO"><b>Segmento
+
+
+                </b></p>
+            </td>
+            <td>
+              <p class="PARRAFO">Este
+                campo indica el segmento con el cual lleg&oacute; la informaci&oacute;n procesada y registrada en la
+                cuenta contable</p>
+            </td>
+          </tr>
+
+          <tr>
+            <td class="titletable">
+              <p class="SUBTITULO"><b>Grupo de afinidad
+
+
+                </b></p>
+            </td>
+            <td>
+              <p class="PARRAFO">Campo que contiene el grupo de afinidad con el que lleg&oacute; la informaci&oacute;n
+                procesada y registrada en la cuenta contable.</p>
+            </td>
+          </tr>
+
+          <tr>
+            <td class="titletable">
+              <p class="SUBTITULO"><b>Sucursal
+
+                </b></p>
+            </td>
+            <td>
+              <p class="PARRAFO">Este campo indica la sucursal correspondiente a los registros procesados e incluidos en
+                la cuenta contable.</p>
+            </td>
+          </tr>
+
+          <tr>
+            <td class="titletable">
+              <p class="SUBTITULO"><b>Oficina de radicaci&oacute;n
+
+                </b></p>
+            </td>
+            <td>
+              <p class="PARRAFO">Campo que contiene la <a href="NUH_020B.html">sucursal</a> correspondiente a
+                la oficina de radicaci&oacute;n de las tarjetas con que lleg&oacute; la informaci&oacute;n procesada y
+                registrada en la cuenta contable.</p>
+            </td>
+          </tr>
+
+          <tr>
+            <td class="titletable">
+              <p class="SUBTITULO"><b>Origen
+
+                </b></p>
+            </td>
+            <td>
+              <p class="PARRAFO">En este campo se muestra el <a href="NUH_027B.html">origen</a> por medio del
+                cual lleg&oacute; la informaci&oacute;n procesada y registrada en la cuenta contable.</p>
+            </td>
+          </tr>
+
+          <tr>
+            <td class="titletable">
+              <p class="SUBTITULO"><b>Tipo cartera
+
+                </b></p>
+            </td>
+            <td>
+              <p class="PARRAFO">Campo que indica el <a href="NUH_015B.html">tipo de cartera</a> asociado a la
+                tarjeta de cr&egrave;dito con la cual lleg&oacute; la informaci&oacute;n procesada y registrada en la
+                cuenta contable.</p>
+            </td>
+          </tr>
+
+          <tr>
+            <td class="titletable">
+              <p class="SUBTITULO"><b>Transacci&oacute;n interna
+
+                </b></p>
+            </td>
+            <td>
+              <p class="PARRAFO">Este campo muestra la <a href="MEH_003B.html">transacci&oacute;n interna</a>
+                con la cual lleg&oacute; el movimiento para ser registrado en la cuenta contable.</p>
+            </td>
+          </tr>
+
+          <tr>
+            <td class="titletable">
+              <p class="SUBTITULO"><b>L&igrave;nea de cr&egrave;dito
+
+                </b></p>
+            </td>
+            <td>
+              <p class="PARRAFO">Campo que contiene la l&igrave;nea de cr&egrave;dito a la cual pertenece la
+                transacci&oacute;n y con la cual llego la informaci&oacute;n procesada y registrada en la cuenta
+                contable.</p>
+            </td>
+          </tr>
+
+          <tr>
+            <td class="titletable">
+              <p class="SUBTITULO"><b>Edad mora
+
+                </b></p>
+            </td>
+            <td>
+              <p class="PARRAFO">En este campo se muestra la edad de mora de la tarjeta con la cual lleg&oacute; la
+                informaci&oacute;n procesada y registrada en la cuenta contable.</p>
+            </td>
+          </tr>
+
+          <tr>
+            <td class="titletable">
+              <p class="SUBTITULO"><b>Calificaci&oacute;n externa
+
+                </b></p>
+            </td>
+            <td>
+              <p class="PARRAFO">Campo que indica la calificaci&oacute;n externa de la tarjeta con la cual lleg&oacute;
+                la informaci&oacute;n procesada y registrada en la cuenta contable.</p>
+            </td>
+          </tr>
+
+          <tr>
+            <td class="titletable">
+              <p class="SUBTITULO"><b>Calificaci&oacute;n sistema
+
+                </b></p>
+            </td>
+            <td>
+              <p class="PARRAFO">En este campo se despliega la calificaci&oacute;n del sistema asociada a la tarjeta y
+                con la cual lleg&oacute; la informaci&oacute;n procesada y registrada en la cuenta contable.</p>
+            </td>
+          </tr>
+
+          <tr>
+            <td class="titletable">
+              <p class="SUBTITULO"><b>Calificaci&oacute;n provisi&oacute;n
+
+                </b></p>
+            </td>
+            <td>
+              <p class="PARRAFO">Campo que contiene la calificaci&oacute;n para provisi&oacute;n asociada a la tarjeta y
+                con la cual lleg&oacute; la informaci&oacute;n procesada y registrada en la cuenta contable.</p>
+            </td>
+          </tr>
+
+          <tr>
+            <td class="titletable">
+              <p class="SUBTITULO"><b>Identificaci&oacute;n tercero
+
+                </b></p>
+            </td>
+            <td>
+              <p class="PARRAFO">En este campo se muestra la indentificaci&oacute;n del tercero (para efectos de la
+                interfase contable) con el cual lleg&oacute; la informaci&oacute;n procesada y registrada en la cuenta
+                contable.</p>
+            </td>
+          </tr>
+
+          <tr>
+            <td class="titletable">
+              <p class="SUBTITULO"><b>Marca
+
+                </b></p>
+            </td>
+            <td>
+              <p class="PARRAFO">Campo en el que se indica la <a href="NUH_033B.html">marca</a> a la que
+                pertenece la tarjeta y con la cual lleg&oacute; la informaci&oacute;n procesada y registrada en la
+                cuenta contable.</p>
+            </td>
+          </tr>
+
+          <tr>
+            <td class="titletable">
+              <p class="SUBTITULO"><b>Tipo de garant&igrave;a
+
+                </b></p>
+            </td>
+            <td>
+              <p class="PARRAFO">En este campo se despliega el tipo de garant&igrave;a con el cual lleg&oacute; la
+                informaci&oacute;n procesada y registrada en la cuenta contable.</p>
+            </td>
+          </tr>
+
+          <tr>
+            <td class="titletable">
+              <p class="SUBTITULO"><b>Tipo cuenta
+
+                </b></p>
+            </td>
+            <td>
+              <p class="PARRAFO">Campo que muestra, de acuerdo con la informaci&oacute;n de los establecimientos, el
+                tipo de cuenta con el cual lleg&oacute; la informaci&oacute;n procesada y registrada en la cuenta
+                contable.</p>
+            </td>
+          </tr>
+
+          <tr>
+            <td class="titletable">
+              <p class="SUBTITULO"><b>Fecha contabilizaci&oacute;n
+
+                </b></p>
+            </td>
+            <td>
+              <p class="PARRAFO">Este campo indica en formato YYYY-MM-DD la fecha en la cual se registr&oacute; la
+                informaci&oacute;n contable.</p>
+            </td>
+          </tr>
+
+          <tr>
+            <td class="titletable">
+              <p class="SUBTITULO"><b>Modalidad de cr&egrave;dito
+
+                </b></p>
+            </td>
+            <td>
+              <p class="PARRAFO">Muestra de acuerdo con la informaci&oacute;n procesada y registrada en la cuenta
+                contable, la modalidad de cr&egrave;dito con la cual lleg&oacute; la informaci&oacute;n.</p>
+            </td>
+          </tr>
+        </table>
+        <p class="PARRAFO">
+          <span class="PARRAFO">
+            <a name="BL_CONSOLIDA"></a><span class="SUBTITULO"><span>Nivel de
+                consolidaci&oacute;n</b></span><span>:</span></span><span> Si el usuario invoca el hiperv&igrave;nculo
+              Nivel de consolidaci&oacute;n se despliega un nuevo formulario que muestra un resumen general,
+              acerca de las cuentas afectadas en el proceso diario; para facilitar la labor de consulta, esta
+              funci&oacute;n mostrar&aacute; dicha informaci&oacute;n en orden ascendente de acuerdo con el
+              c&oacute;digo de cuenta contable a nivel de las cuentas auxiliares (todas las posiciones de la cuenta). >
+              <div class="PARRAFO">
+                <p class="TITLE"><img src="../img/CTF_002E2.PNG" 800" height="356"></p>
+                <p class="TITLE">Descripci&oacute;n de campos</p>
+                <table>
+                  <tr>
+                    <td class="titletable">
+                      <p class="SUBTITULO"><b>C&oacute;digo
+                          cuenta
+                        </b></p>
+                    </td>
+                    <td>
+                      <p class="PARRAFO">En
+                        este campo se muestra el c&oacute;digo de la cuenta afectada contablemente
+                        y a la cual corresponde la informaci&oacute;n desplegada. </p>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td class="titletable">
+                      <p class="SUBTITULO"><b>Moneda
+
+
+                        </b></p>
+                    </td>
+                    <td>
+                      <p class="PARRAFO">Campo
+                        que muestra la <a href="NUH_005B.html">moneda</a> en la cual lleg&oacute; el registro y
+                        su asociaci&oacute;n a la cuenta
+                        contable de acuerdo con los atributos definidos en la parametrizaci&oacute;n.
+                      </p>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td class="titletable">
+                      <p class="SUBTITULO"><b>Movimiento
+                          d&eacute;bito
+                        </b></p>
+                    </td>
+                    <td>
+                      <p class="PARRAFO">Campo
+                        que muestra el valor total de los registros de naturaleza d&eacute;bito
+                        aplicados a la cuenta durante
+                        el d&iacute;a.
+                      </p>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td class="titletable">
+                      <p class="SUBTITULO"><b>Movimiento
+                          cr&eacute;dito
+                        </b></p>
+                    </td>
+                    <td>
+                      <p class="PARRAFO">Este
+                        campo despliega el valor total de los registros de naturaleza cr&eacute;dito
+                        aplicados a la cuenta durante
+                        el d&iacute;a.</p>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td class="titletable">
+                      <p class="SUBTITULO"><b>Total
+                          consulta d&eacute;bito
+                        </b></p>
+                    </td>
+                    <td>
+                      <p class="PARRAFO">Campo
+                        de resumen que muestra el monto total de los movimientos de naturaleza
+                        d&eacute;bito registrados durante el d&iacute;a.
+                      </p>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td class="titletable">
+                      <p class="SUBTITULO"><b>Total
+                          consulta cr&eacute;dito
+                        </b></p>
+                    </td>
+                    <td>
+                      <p class="PARRAFO">Este
+                        campo de resumen contiene el monto total de los movimientos de naturaleza
+                        cr&eacute;dito registrados durante el d&iacute;a.</p>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td class="titletable">
+                      <p class="SUBTITULO"><b>Total
+                          d&eacute;bito por p&aacute;gina
+                        </b></p>
+                    </td>
+                    <td>
+                      <p class="PARRAFO">Campo
+                        que muestra el monto (sumatoria) de los movimientos de naturaleza d&eacute;bito
+                        correspondientes a los registros que se encuentran desplegados en la
+                        p&aacute;gina actual que est&aacute; consultando el usuario.
+                      </p>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td class="titletable">
+                      <p class="SUBTITULO"><b>Total
+                          cr&eacute;dito por p&aacute;gina
+                        </b></p>
+                    </td>
+                    <td>
+                      <p class="PARRAFO">Este
+                        campo muestra el monto (sumatoria) de los movimientos de naturaleza
+                        cr&eacute;dito correspondientes a los registros que se encuentran desplegados
+                        en la p&aacute;gina actual que est&aacute; consultando el usuario.</p>
+                    </td>
+                  </tr>
+                </table>
+
+                <p class="PARRAFO"><a name="BL_MAYORIZA"></a><span class="SUBTITULO"><span>Nivel '1,2,3,4' de
+                      mayorizaci&oacute;n</b></span><span>:</span></span><span> Si el usuario invoca cualquiera de los
+                    hiperv&igrave;nculos Nivel 1,2,3 o 4 de mayorizaci&oacute;n se despliega un nuevo
+                    formulario que muestra de acuerdo con lo definido por la entidad en <a
+                        href="CTH_001B.html">Par&agrave;metros contables</a>, >las cuentas contables mayores en sus
+                    diferentes niveles. > Los campos desplegados en cualquiera de estos formularios son los mismos y lo
+                    &ugrave;nico que cambia es el la cantidad de d&igrave;gitos de la cuenta mayor que se muestran al
+                    usuario, dato que se muestra en el mismo formulario.</p>
+                <p>El formulario contiene un filtro que le permite al usuario consultar dentro de cada nivel de
+                  mayorizaci&oacute;n la informaci&oacute;n correspondiente a una cuenta determinada.</p>
+                <p class="TITLE"><img src="../img/CTF_002E3.PNG" 804" height="309"></p>
+                <div class="PARRAFO">
+                  <p class="TITLE">Descripci&oacute;n de campos</p>
+                  <table>
+                    <tr>
+                      <td class="titletable">
+                        <p class="SUBTITULO"><b>C&oacute;digo
+                            cuenta
+                          </b></p>
+                      </td>
+                      <td>
+                        <p class="PARRAFO">En
+                          este campo se muestra el c&oacute;digo de la cuenta afectada contablemente
+                          y a la cual corresponde la informaci&oacute;n desplegada, de acuerdo con la cantidad de
+                          d&igrave;gitos se&ntilde;alada para el nivel de mayorizaci&oacute;n en los <a
+                              href="CTH_001B.html">Par&agrave;metros contables</a>. </p>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td class="titletable">
+                        <p class="SUBTITULO"><b>Moneda
+
+
+                          </b></p>
+                      </td>
+                      <td>
+                        <p class="PARRAFO">Campo
+                          que muestra la <a href="NUH_005B.html">moneda</a> en la cual lleg&oacute; el registro
+                          y su asociaci&oacute;n a la cuenta
+                          contable de acuerdo con los atributos definidos en la parametrizaci&oacute;n.
+                        </p>
+                      </td>
+                    </tr>
+                </div>
+                <tr>
+                  <td class="titletable">
+                    <p class="SUBTITULO"><b>Saldo anterior
+
+
+                      </b></p>
+                  </td>
+                  <td>
+                    <p class="PARRAFO">Este campo contiene el saldo con el cual termin&oacute; la cuenta despu&egrave;s
+                      de la &ugrave;ltima afectaci&oacute;n contable efectuada sobre la misma.</p>
+                  </td>
+                </tr>
+                <tr>
+                  <td class="titletable">
+                    <p class="SUBTITULO"><b>Movimiento d&egrave;bito
+
+
+                      </b></p>
+                  </td>
+                  <td>
+                    <p class="PARRAFO">Campo
+                      que muestra la sumatoria de todos los registros tipo d&egrave;bito que tuvo la cuenta durante el
+                      d&igrave;a.
+                    </p>
+                  </td>
+                </tr>
+                <tr>
+                  <td class="titletable">
+                    <p class="SUBTITULO"><b>Movimiento cr&egrave;dito
+
+
+                      </b></p>
+                  </td>
+                  <td>
+                    <p class="PARRAFO">Este campo indica la sumatoria de todos los registros tipo cr&egrave;dito que
+                      tuvo la cuenta durante el d&igrave;a.
+                    </p>
+                  </td>
+                </tr>
+                <tr>
+                  <td class="titletable">
+                    <p class="SUBTITULO"><b>Saldo nuevo
+
+
+                      </b></p>
+                  </td>
+                  <td>
+                    <p class="PARRAFO">Campo
+                      que muestra a partir del saldo anterior y las afectaciones de los movimientos d&egrave;bito y
+                      cr&egrave;dito que se le aplicaron, el saldo final con el cual cierra la cuenta.
+                    </p>
+                  </td>
+                </tr>
+                <tr>
+                  <td class="titletable">
+                    <p class="SUBTITULO"><b>Total
+                        consulta d&eacute;bito
+                      </b></p>
+                  </td>
+                  <td>
+                    <p class="PARRAFO">Campo
+                      de resumen que muestra el monto total de los movimientos de naturaleza
+                      d&eacute;bito registrados durante el d&iacute;a.
+                    </p>
+                  </td>
+                </tr>
+                <tr>
+                  <td class="titletable">
+                    <p class="SUBTITULO"><b>Total
+                        consulta cr&eacute;dito
+                      </b></p>
+                  </td>
+                  <td>
+                    <p class="PARRAFO">Este
+                      campo de resumen contiene el monto total de los movimientos de naturaleza
+                      cr&eacute;dito registrados durante el d&iacute;a.</p>
+                  </td>
+                </tr>
+                <tr>
+                  <td class="titletable">
+                    <p class="SUBTITULO"><b>Total
+                        d&eacute;bito por p&aacute;gina
+                      </b></p>
+                  </td>
+                  <td>
+                    <p class="PARRAFO">Campo
+                      que muestra el monto (sumatoria) de los movimientos de naturaleza d&eacute;bito
+                      correspondientes a los registros que se encuentran desplegados en la
+                      p&aacute;gina actual que est&aacute; consultando el usuario.
+                    </p>
+                  </td>
+                </tr>
+                <tr>
+                  <td class="titletable">
+                    <p class="SUBTITULO"><b>Total
+                        cr&eacute;dito por p&aacute;gina
+                      </b></p>
+                  </td>
+                  <td>
+                    <p class="PARRAFO">Este
+                      campo muestra el monto (sumatoria) de los movimientos de naturaleza
+                      cr&eacute;dito correspondientes a los registros que se encuentran desplegados
+                      en la p&aacute;gina actual que est&aacute; consultando el usuario.</p>
+                  </td>
+                </tr>
+                </table>
+              </div>
+  </section>
+  <script src="../js/menu.js"></script>
+</body>
+<footer>
+  <div>
+    <img class="TITLE" src="../img/logo.PNG">
+  </div>
+  <p>OpenCard SAS</p>
+  <p>Calle 77 Nº 11-19 Piso 4°,Bogotá D.C.</p>
+  <p>Tel (57) 601 - 313 37 75 <a href="http://www.OpenCard.com" target="_blank">www.OpenCard.com</a></p>
+
+
+
+</footer>
+
+</html>

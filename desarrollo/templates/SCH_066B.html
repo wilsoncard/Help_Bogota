@@ -1,0 +1,611 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BANKBU®</title>
+    <link rel="stylesheet" href="../css/pages.css">
+    <link rel="stylesheet" href="../css/style.css">
+ <link rel="icon" href="../img/ACQUIRER-logo.JPG" type="image/x-icon">
+</head>
+
+<body>
+    <header>
+        <img class="logo" src="../img/logoBankbu_.PNG" alt="Logo de Mi Empresa">
+        <div id="menuBtn">
+            <img class="TITLE"  src= "../img/menu.PNG" alt="Botón de Menú ">
+        </div>
+    </header>
+    <nav>
+        <ul>
+            <li>
+                    <a href="../index.html" class="main-optionINICIO">INICIO</a>
+            </li>
+            <li>
+                <a href="NUH_INTB.html" class="main-optionINTRODUCCIÓN">INTRODUCCIÓN</a>
+            </li>
+            <li><a href="#" class="main-option">NUCLEO ▼</a>
+                <ul>
+                    <li><a href="NUH_000B.html">Config. Sistema</a></li>
+                    <li><a href="NUH_00B_N2.html">Parametros</a></li>
+                    <li><a href="NUH_00B_inicio.html">Inicio</a></li>
+                    <li><a href="NUH_00B_proceso.html">Procesos</a></li>
+                    <li><a href="NUH_00B_inf.html">Inf. Cliente</a></li>
+                    <li><a href="NUH_00B_conta.html">Contabilidad</a></li>
+                    <li style="visibility: hidden; display: none;"><a href="NUH_00B_audi.html">Auditoria</a></li>
+
+                </ul>
+            </li>
+            <li>
+             <a href="#" class="main-option">EMISOR  ▼</a>
+                <ul>
+                    <li><a href="EMH_000B.html">Productos</a></li>
+                    <li><a href="EMH_000Bsoli.html">Solicitudes</a></li>
+                    <li><a href="EMH_000Bmerca.html">Mercadeo</a></li>
+                    <li><a href="EMH_000Bservi.html">Servicio Al Cliente</a></li>
+                    <li><a href="EMH_000Bpendi.html">Pendientes</a></li>
+                    <li><a href="EMH_000Btrans.html">Transaccionabilidad</a></li>
+                    <li><a href="EMH_000Bauto.html">Autorizaciones</a></li>
+                    <li><a href="EMH_000Bplasti.html">Adm. Plasticos</a></li>
+                    <li><a href="EMH_000Brecla.html">Reclamos</a></li>
+                    <li><a href="MEH_032B.html">Lealtad</a></li>
+                    <li><a href="COH_064B.html">Cobranzas</a></li>
+                </ul>
+            </li>
+ <li style="visibility: hidden">
+                <a href="ACH_000B.html" class="main-option">ADQUIRIENTE</a>
+            </li>
+            <li style="visibility: hidden">
+                <a href="DBH_000B.html" class="main-option">TARJETA DEBITO</a>
+            </li></ul>
+    </nav>
+
+    <section>
+        <div> 
+            <table>
+              <tr> 
+                <td><div> 
+                    <p  class="TITLE">Tarjetas y pl&aacute;sticos</p>
+                  </div></td>
+              </tr>
+            </table>
+            <p class="PARRAFO" >Desde este formulario que se invoca 
+              desde el <a href="SCH_060B.html" >detalle consulta de la 
+              tarjeta</a>, en el hiperv&iacute;nculo informaci&oacute;n b&aacute;sica, 
+              se puede consultar toda la informaci&oacute;n de la tarjeta o el cr&eacute;dito 
+              rotativo, relacionada con las tarjetas <a href="SCH_066B.html#BL_DEPENDIENTES" >dependientes</a> 
+              de la actual, </span><a href="SCH_066B.html#BL_OTROS_PL" >otros 
+              pl&aacute;sticos</a><span class="PARRAFO"> adicionales entregados al 
+              cliente junto con la tarjeta de cr&eacute;dito, los datos de las <a href="SCH_066B.html#BL_ADICIONALES" >tarjetas 
+              adicionales</a> cubiertas, los n&uacute;meros de <a href="SCH_066B.html#BL_ANTERIORES" >tarjetas 
+              anteriores</a> que ha tenido la tarjeta como resultado de las diferentes 
+              solicitudes hechas sobre la misma, y finalmente la informaci&oacute;n sobre 
+              las <a href="SCH_066B.html#BL_RENOVACIONES" >renovaciones 
+              m&aacute;sivas</a> que ha presentado la tarjeta, </span></p>
+            <p  class="PARRAFO">Toda la informaci&oacute;n desplegada es 
+              solo de consulta por lo cual ninguno de los formularios de tarjetas y pl&aacute;sticos 
+              contiene las opciones Adicionar, Actualizar ni Eliminar.</p>
+            <p  class="PARRAFO">Por defecto, cuando el actor ingresa a la 
+              opci&oacute;n de tarjetas y pl&aacute;sticos el formulario se despliega en 
+              el tab dependientes.</p>
+            <p class="TITLE"><img src="../img/SCF_066E.PNG"695" ></p>
+
+            <p  class="TITLE">Descripción de campos</p>
+            <table>
+              <tr> 
+                <td    >
+          <p class="SUBTITULO"><b>N&uacute;mero tarjeta</b></p></td>
+                <td><p  class="PARRAFO">Campo 
+                    que muestra, en caso de existir, el n&uacute;mero asignado a las diferentes 
+                    tarjetas extendidas o amparadas que dependen de la tarjeta que se est&aacute; 
+                    consultando y aplica solo para tarjetas principales.</p></td>
+              </tr>
+              <tr> 
+                <td class="titletable"><p class="SUBTITULO"><b>Nombre 
+                    cliente </b></p></td>
+                <td><p  class="PARRAFO">Este 
+                    campo despliega el nombre del cliente titular de cada una de las tarjetas 
+                    dependientes. </p></td>
+              </tr>
+        
+              <tr> 
+                <td class="titletable" ><p class="SUBTITULO"><b>Producto
+                    </b></p></td>
+                <td><p  class="PARRAFO">Campo 
+                    que indica el producto (bin, segmento, grupo de afinidad) al que pertenece 
+                    la tarjeta dependiente.</p></td>
+              </tr>
+           
+              <tr> 
+                <td class="titletable" ><p class="SUBTITULO"><b>Fecha 
+                    vencimiento </b></p></td>
+                <td><p  class="PARRAFO">Este 
+                    campo contiene la fecha de vencimiento o validez de cada una de las 
+                    tarjetas dependientes.
+                  </p></td>
+              </tr>
+           
+              <tr> 
+                <td class="titletable" ><p class="SUBTITULO"><b>Cupo 
+                    asignado
+                    </b></p></td>
+                <td><p  class="PARRAFO">Campo 
+                    en el que se muestra el monto total del cupo asignado a cada una de 
+                    las tarjetas dependientes.</p></td>
+              </tr>
+           
+              <tr> 
+                <td class="titletable"><p class="SUBTITULO"><b>Disponible
+                    </b></p></td>
+                <td><p  class="PARRAFO">Este 
+                    campo indica el monto hasta por el cual puede hacer utilizaciones cada 
+                    tarjeta dependiente, teniendo en cuenta el cupo asignado y los consumos 
+                    efectuados por cada una de ellas.</p></td>
+              </tr>
+            </table>
+            <div  class="PARRAFO">
+          <p  class="PARRAFO"> 
+              <p class="PARRAFO"><a name="BL_OTROS_PL"></p>
+              <p><span class="SUBTITULO"><span 
+        ><b >Otros 
+                pl&aacute;sticos </b></span><span 
+        >:</span></span>  
+                si el actor invoca el hiperv&iacute;nculo Otros pl&aacute;sticos, 
+                se despliega un nuevo formulario con la informaci&oacute;n de aquellos pl&aacute;sticos 
+                que adicionalmente a la tarjeta de cr&eacute;dito propiamente dicha, le 
+                han sido entregados por la entidad al cliente titular de la tarjeta consultada, 
+                de acuerdo con los <a href="MEH_002B4.html" >par&aacute;metros 
+                del producto</a> la que pertenece la misma.</p>
+              <p  src="../img/MEF_002E5.PNG"><img src="../img/SCF_066E1.PNG"399" ></p>
+                .
+              <div  class="PARRAFO">
+                <p  class="TITLE">Descripción de campos</p>
+                <table>
+                  <tr>
+                    <td class="titletable"><p class="SUBTITULO"><b>C&oacute;digo
+                    </b></p></td>
+                    <td><p  class="PARRAFO">Este 
+                        campo contiene el c&oacute;digo que identifica cada uno de los <a href="MEH_030B.html" >otros 
+                        pl&aacute;sticos</a> entregados al titular de la tarjeta.</p></td>
+                  </tr>
+                  <tr>
+                    <td class="titletable"><p class="SUBTITULO"><b>Nombre
+                             
+                             
+                    </b></p></td>
+                    <td><p  class="PARRAFO">Campo 
+                        que indica el nombre o denominaci&oacute;n asociado con cada uno 
+                        de los pl&aacute;stico anteriores.</p></td>
+                  </tr>
+      
+                  <tr>
+                    <td class="titletable" ><p class="SUBTITULO"><b>Fecha 
+                        vencimiento
+                    </b></p></td>
+                    <td><p  class="PARRAFO">Este 
+                        campo contiene la fecha hasta la cual tiene validez cada uno de 
+                        los otros pl&aacute;sticos entregados al cliente.</p></td>
+                  </tr>
+                </table>
+                <p  class="PARRAFO"> 
+              <p class="PARRAFO"><a name="BL_ADICIONALES"></p>
+                <p><span class="SUBTITULO"><span 
+        ><b >Tarjetas 
+                  adicionales</b></span><span 
+        >:</span></span>  
+                  si el actor invoca el hiperv&iacute;nculo Tarjetas adicionales, 
+                  se despliega un nuevo formulario en el cual se muestra la informaci&oacute;n 
+                  de las tarjetas tipo adicional a cargo de la tarjeta consultada, y que 
+                  solo aplica para tarjetas principales.</p>
+                <p  src="../img/MEF_002E5.PNG"><img src="../img/SCF_066E2.PNG"657" height="112"></p>
+                <div  class="PARRAFO">
+          .
+                  <p  class="TITLE">Descripción de campos</p>
+                  <table>
+                    <tr> 
+                      <td    > 
+                        <p class="SUBTITULO"><b>N&uacute;mero tarjeta</b></p></td>
+                      <td><p  class="PARRAFO">Campo 
+                          que muestra, en caso de existir, el n&uacute;mero asignado a las 
+                          diferentes tarjetas adicionales cubiertas por la tarjeta que se 
+                          est&aacute; consultando y aplica solo para tarjetas principales.</p></td>
+                    </tr>
+                    <tr> 
+                      <td class="titletable"><p class="SUBTITULO"><b>Nombre 
+                          cliente </b></p></td>
+                      <td><p  class="PARRAFO">Este 
+                          campo despliega el nombre del cliente titular de cada una de las 
+                          tarjetas adicionales. </p></td>
+                    </tr>
+                  </table>
+                  <table width=736  >
+                    <tr> 
+                      <td class="titletable" ><p class="SUBTITULO"><b>Producto
+                          </b></p></td>
+                      <td><p  class="PARRAFO">Campo 
+                          que indica el producto (bin, segmento, grupo de afinidad) al que 
+                          pertenece la tarjeta adicional.</p></td>
+                    </tr>
+
+                    <tr> 
+                      <td class="titletable" ><p class="SUBTITULO"><b>Sucursal</b></p></td>
+                      <td><p  class="PARRAFO">Este 
+                          campo contiene la sucursal de radicaci&oacute;n asociada con cada 
+                          tarjeta adicional.
+                        </p></td>
+                    </tr>
+
+                    <tr> 
+                      <td class="titletable" ><p class="SUBTITULO"><b>Genera 
+                          resumen
+                          </b></p></td>
+                      <td><p  class="PARRAFO">Campo 
+                          en el que se muestra si para la tarjeta adicional se debe originar 
+                          o no un resumen con el movimiento de la tarjeta adicional, durante 
+                          el proceso de generaci&oacute;n de los extractos. </p></td>
+                    </tr>
+                  </table>
+                  .
+                  <p>El formulario contiene un bot&oacute;n que permite ver el detalle de 
+                    cualquiera de las tarjetas adicionales seleccionadas por el usuario, 
+                    mostrando la informaci&oacute;n agrupada en tres bloques de datos: cliente, 
+                    localizaci&oacute;n y bloqueos. 
+                    ></p>
+                  <p  src="../img/MEF_002E5.PNG"><img src="../img/SCF_066E3.PNG"673" height="338"></p>
+                  .
+                  <div  class="PARRAFO"> 
+                    <p  class="TITLE">Descripción de campos</p>
+                    <table>
+                      <tr> 
+                        <td    > 
+                          <p class="SUBTITULO"><b>N&uacute;mero tarjeta</b></p></td>
+                        <td><p  class="PARRAFO">Campo 
+                            que muestra, en caso de existir, el n&uacute;mero asignado a 
+                            las diferentes tarjetas adicionales cubiertas por la tarjeta 
+                            que se est&aacute; consultando y aplica solo para tarjetas principales.</p></td>
+                      </tr>
+                      <tr> 
+                        <td class="titletable"><p class="SUBTITULO"><b>Nombre 
+                            cliente </b></p></td>
+                        <td><p  class="PARRAFO">Este 
+                            campo despliega el nombre del cliente titular de cada una de 
+                            las tarjetas adicionales. </p></td>
+                      </tr>
+                    </table>
+                    <table width=736  >
+                      <tr> 
+                        <td class="titletable" ><p class="SUBTITULO"><b>Producto
+                            </b></p></td>
+                        <td><p  class="PARRAFO">Campo 
+                            que indica el producto (bin, segmento, grupo de afinidad) al 
+                            que pertenece la tarjeta adicional.</p></td>
+                      </tr>
+       
+                      <tr> 
+                        <td class="titletable" ><p class="SUBTITULO"><b>Sucursal</b></p></td>
+                        <td><p  class="PARRAFO">Este 
+                            campo contiene la sucursal de radicaci&oacute;n asociada con 
+                            cada tarjeta adicional.
+                          </p></td>
+                      </tr>
+       
+                      <tr> 
+                        <td class="titletable" ><p class="SUBTITULO"><b>Genera 
+                            resumen
+                            </b></p></td>
+                        <td><p  class="PARRAFO">Campo 
+                            en el que se muestra si para la tarjeta adicional se debe originar 
+                            o no un resumen con el movimiento de la tarjeta adicional, durante 
+                            el proceso de generaci&oacute;n de los extractos. </p></td>
+                      </tr>
+       
+                      <tr> 
+                        <td class="titletable"><p class="SUBTITULO"><b>Foto
+                            </b></p></td>
+                        <td><p  class="PARRAFO">Este 
+                            campo indica si el pl&aacute;stico de la tarjeta adicional entregada 
+                            al cliente lleva o no impresa la foto del mismo.</p></td>
+                      </tr>
+                      <tr> 
+                        <td class="titletable"><p class="SUBTITULO"><b>Direcci&oacute;n 
+                            correspondencia
+                            </b></p></td>
+                        <td><p  class="PARRAFO">Campo 
+                            que contiene la direcci&oacute;n del titular de la tarjeta adicional, 
+                            a donde es posible localizarlo o enviarle correspondencia comercial.</p></td>
+                      </tr>
+       
+                      <tr> 
+                        <td class="titletable" ><p class="SUBTITULO"><b>Ubicaci&oacute;n
+                            </b></p></td>
+                        <td><p  class="PARRAFO">En 
+                            este campo se muestra la ubicaci&oacute;n geogr&aacute;fica 
+                            a la que pertence la direcci&oacute;n anterior.</p></td>
+                      </tr>
+       
+                      <tr> 
+                        <td class="titletable"><p class="SUBTITULO"><b>Tel&eacute;fono 
+                            1 / 2
+                            </b></p></td>
+                        <td><p  class="PARRAFO">Campos 
+                            que contienen respectivamente los n&uacute;meros telef&oacute;nicos 
+                            en los que es posible localizar o contactar al cliente titular 
+                            de la tarjeta adicional.</p></td>
+                      </tr>
+       
+                      <tr> 
+                        <td class="titletable"><p class="SUBTITULO"><b>Extensi&oacute;n 
+                            1 / 2
+                            </b></p></td>
+                        <td><p  class="PARRAFO">En 
+                            estos campos se muestra si es el caso el n&uacute;mero de la 
+                            extensi&oacute;n asociada con cada uno de los tel&eacute;fonos 
+                            anteriores.
+                          </p></td>
+                      </tr>
+       
+                      <tr> 
+                        <td class="titletable" ><p class="SUBTITULO"><b>Fax</b></p></td>
+                        <td><p  class="PARRAFO">Campo 
+                            que despliega el n&uacute;mero del fax al cual es posible enviar 
+                            comunicaciones al cliente.</p></td>
+                      </tr>
+       
+                      <tr> 
+                        <td class="titletable"><p class="SUBTITULO"><b>Celular</b></p></td>
+                        <td><p  class="PARRAFO">Este 
+                            campo contiene el n&uacute;mero del tel&eacute;fono celular 
+                            del cliente titular de la tarjeta adicional consultada.</p></td>
+                      </tr>
+                      <tr> 
+                        <td class="titletable" ><p class="SUBTITULO"><b>Zona 
+                            postal
+                            </b></p></td>
+                        <td><p  class="PARRAFO">Campo 
+                            que muestra la zona postal a la cual pertenecen la direcci&oacute;n 
+                            y ubicaci&oacute;n del cliente titular de la tarjeta adicional.</p></td>
+                      </tr>
+                    </table>
+                  </div>
+                  <table>
+                    <tr> 
+                      <td class="titletable" ><p class="SUBTITULO"><b>Persona 
+                          / fecha
+                          </b></p></td>
+                      <td><p  class="PARRAFO">Esta 
+                          dupla de campos contiene en caso de existir, el m&aacute;s reciente 
+                          bloqueo aplicado sobre el cliente titular de la tarjeta adicional 
+                          y la fecha en la cual se registr&oacute; en el sistema</p></td>
+                    </tr>
+
+                    <tr> 
+                      <td class="titletable" ><p class="SUBTITULO"><b>Saldo 
+                          / fecha
+                          </b></p></td>
+                      <td><p  class="PARRAFO">Dupla 
+                          de campos que despliegan el mas reciente bloqueo aplicado sobre 
+                          el saldo de la tarjeta adicional y la fecha de su registro.</p></td>
+                    </tr>
+
+                    <tr> 
+                      <td class="titletable" ><p class="SUBTITULO"><b>Pl&aacute;stico 
+                          / fecha
+                          </b></p></td>
+                      <td><p  class="PARRAFO">En 
+                          esta dupla de campos se se&ntilde;ala el m&aacute;s reciente bloqueo 
+                          reportado sobre el pl&aacute;stico y la fecha en que se registr&oacute; 
+                          en el sistema.</p></td>
+                    </tr>
+
+                    <tr> 
+                      <td class="titletable" ><p class="SUBTITULO"><b>Sobrecupo 
+                          / fecha
+                          </b></p></td>
+                      <td><p  class="PARRAFO">Campos 
+                          que indican el m&aacute;s reciente bloqueo que se aplic&oacute; 
+                          a la tarjeta adicional por haber incurrido en sobre cupo y la 
+                          fecha en la cual se registr&oacute;. </p></td>
+                    </tr>
+
+                    <tr> 
+                      <td class="titletable" ><p class="SUBTITULO"><b>Reestructuraci&oacute;n 
+                          / fecha
+                          </b></p></td>
+                      <td><p  class="PARRAFO">Estos 
+                          campos despliegan el mas reciente bloqueo por reestructuraci&oacute;n 
+                          o refinanciaci&oacute;n que tuvo la tarjeta y la fecha de su aplicaci&oacute;n.</p></td>
+                    </tr>
+                  </table>
+                  <p><a name="BL_ANTERIORES"></a></p>
+                  <p><span class="SUBTITULO"><span 
+        ><b >Tarjetas 
+                    anteriores </b></span><span 
+        >:</span></span>  
+                    si el actor invoca el hiperv&iacute;nculo tarjetas anteriores, 
+                    se despliega un nuevo formulario que contiene la informaci&oacute;n 
+                    hist&oacute;rica de los distintos n&uacute;meros de tarjeta que la tarjeta 
+                    actual ha tenido desde el momento en que se aprob&oacute; al cliente 
+                    la solicitud del nuevo cr&eacute;dito y se le asign&oacute; un n&uacute;mero 
+                    a la tarjeta por primera vez.</p>
+                  <p  src="../img/MEF_002E5.PNG"><img src="../img/SCF_066E4.PNG"640" ></p>
+                  <div  class="PARRAFO"> 
+                    .
+                    <p  class="TITLE">Descripción de campos</p>
+                    <table>
+                      <tr> 
+                        <td class="titletable"><p class="SUBTITULO"><b>N&uacute;mero 
+                            tarjeta
+                            </b></p></td>
+                        <td><p  class="PARRAFO">Este 
+                            campo indica los diferentes n&uacute;meros de tarjeta que ha 
+                            tenido anteriormente la tarjeta que se est&aacute; consultando.</p></td>
+                      </tr>
+                      <tr> 
+                        <td class="titletable"><p class="SUBTITULO"><b>Nombre 
+                            pl&aacute;stico
+                           
+                           
+                            </b></p></td>
+                        <td><p  class="PARRAFO">Campo 
+                            que contiene el nombre realzado o asociado con cada una de las 
+                            tarjetas anteriores.</p></td>
+                      </tr>
+       
+                      <tr> 
+                        <td class="titletable" ><p class="SUBTITULO"><b>N&uacute;mero 
+                            tarjeta fraude
+                            </b></p></td>
+                        <td><p  class="PARRAFO">En 
+                            caso que el cliente haya reportado un fraude con su tarjeta 
+                            y por esta causa se le haya asignado una nueva tarjeta, en este 
+                            campo se muestra el n&uacute;mero de la tarjeta con la cual 
+                            se efectu&oacute; dicho fraude.</p></td>
+                      </tr>
+       
+                      <tr> 
+                        <td class="titletable"><p class="SUBTITULO"><b>Bloqueo
+                            </b></p></td>
+                        <td><p  class="PARRAFO">Campo 
+                            que contiene la &uacute;ltima causal de bloqueo que se le aplic&oacute; 
+                            a cada una de las tarjetas anteriores del cliente.</p></td>
+                      </tr>
+       
+                      <tr> 
+                        <td class="titletable"><p class="SUBTITULO"><b>Fecha 
+                            bloqueo
+                            </b></p></td>
+                        <td><p  class="PARRAFO">En 
+                            este campo se muestra la fecha en la cual se registr&oacute; 
+                            en el sistema el bloqueo a la tarjeta.</p></td>
+                      </tr>
+                    </table>
+                    
+                  </div>
+      
+                  <p  class="PARRAFO">Al igual que el formulario de tarjetas 
+                    adicionales, este tambi&eacute;n contiene un bot&oacute;n de detalle 
+                    que permite ver informaci&oacute;n m&aacute;s completa relacionada con 
+                    cada una de las tarjetas anteriores que adem&aacute;s de los campos 
+                    ya mencionados contiene el producto, fecha de vencimiento, fecha reexpedici&oacute;n, 
+                    fecha denundio y el tipo de fraude.</p>
+                  <p  src="../img/MEF_002E5.PNG"><img src="../img/SCF_066E5.PNG"672" height="128"></p>
+                  <div  class="PARRAFO"> 
+                    .
+                    <p  class="TITLE">Descripción de campos</p>
+                    <table>
+                      <tr> 
+                        <td class="titletable"><p class="SUBTITULO"><b>Producto
+                            </b></p></td>
+                        <td><p  class="PARRAFO">Este 
+                            campo muestra el bin, segmento y grupo de afinidad al cual pertenece 
+                            la tarjeta anterior.</p></td>
+                      </tr>
+                      <tr> 
+                        <td class="titletable"><p class="SUBTITULO"><b>Vencimiento
+                           
+                           
+                            </b></p></td>
+                        <td><p  class="PARRAFO">Campo 
+                            que contiene la fecha de vencimiento que ten&iacute;a la tarjeta 
+                            anterior al momento de haber sido bloqueada.</p></td>
+                      </tr>
+       
+                      <tr> 
+                        <td class="titletable" ><p class="SUBTITULO"><b>Reexpedici&oacute;n</b></p></td>
+                        <td><p  class="PARRAFO">En 
+                            caso que el motivo del cambio de n&uacute;mero hubiera sido 
+                            la p&eacute;rdida de la tarjeta o un fraude con la misma, en 
+                            este campo se muestra la fecha en la cual se hizo la reexpedici&oacute;n 
+                            de la nueva tarjeta entregada al cliente.</p></td>
+                      </tr>
+       
+                      <tr> 
+                        <td class="titletable"><p class="SUBTITULO"><b>Fecha 
+                            denuncio
+                            </b></p></td>
+                        <td><p  class="PARRAFO">Campo 
+                            que contiene la fecha en la cual el cliente present&oacute; 
+                            el denuncio por la p&eacute;rdida de la tarjeta o por el fraude 
+                            cometido con la misma.</p></td>
+                      </tr>
+       
+                      <tr> 
+                        <td class="titletable"><p class="SUBTITULO"><b>Fraude
+                            </b></p></td>
+                        <td><p  class="PARRAFO">En 
+                            este campo se muestra si el evento que origin&oacute; la reexpedici&oacute;n 
+                            fue p&eacute;rdida o robo de la tarjeta &oacute; un fraude.</p></td>
+                      </tr>
+                    </table>
+                  </div>
+      
+                  <p><a name="BL_RENOVACIONES"></a></p>
+                  <p><span class="SUBTITULO"><span 
+        ><b >Renovaciones</b></span><span 
+        > 
+                    masivas:</span></span>  
+                    si el actor invoca el hiperv&iacute;nculo renovaciones masivas, 
+                    se despliega un nuevo formulario que contiene la informaci&oacute;n 
+                    hist&oacute;rica de las diferentes ocasiones en las cuales la tarjeta 
+                    ha sido renovada en forma masiva por la entidad, de acuerdo con sus 
+                    pol&iacute;ticas internas.</p>
+                  <p  src="../img/MEF_002E5.PNG"><img src="../img/SCF_066E6.PNG"398" ></p>
+                  <div  class="PARRAFO"> 
+                    .
+                    <p  class="TITLE">Descripción de campos</p>
+                    <table>
+                      <tr> 
+                        <td class="titletable"><p class="SUBTITULO"><b>N&uacute;mero 
+                            tarjeta anterior
+                            </b></p></td>
+                        <td><p  class="PARRAFO">Este 
+                            campo indica el n&uacute;mero que ten&iacute;a asignado la tarjeta 
+                            antes de la renovaci&oacute;n.</p></td>
+                      </tr>
+                      <tr> 
+                        <td class="titletable"><p class="SUBTITULO"><b>Fecha 
+                            vencimiento
+                           
+                           
+                            </b></p></td>
+                        <td><p  class="PARRAFO">Campo 
+                            que contiene la fecha de vencimiento que ten&iacute;a la tarjeta 
+                            antes de ser renovada.</p></td>
+                      </tr>
+       
+                      <tr> 
+                        <td class="titletable" ><p class="SUBTITULO"><b>Lista
+                            </b></p></td>
+                        <td><p  class="PARRAFO">Este 
+                            campo muestra el nombr de la lista en la cual estaba contenida 
+                            la tarjeta y de donde fue seleccionada para aplicarle el proceso 
+                            de renovaci&oacute;n masiva.</p></td>
+                      </tr>
+       
+                      <tr> 
+                        <td class="titletable"><p class="SUBTITULO"><b>Motivo 
+                            rechazo
+                            </b></p></td>
+                        <td><p  class="PARRAFO">Si 
+                            la renovaci&oacute;n no se hace o se rechaza por el sistema, 
+                            en este campo se muestra la causal que origina este evento.</p></td>
+                      </tr>
+                    </table>
+                    
+                </section>
+    <script src="../js/menu.js"></script>
+
+    <footer>
+        <div>
+            <img class="TITLE"  src= "../img/logo.PNG">
+        </div>
+        <p>OpenCard SAS</p>
+        <p>Calle 77 Nº 11-19 Piso 4°, Bogotá D.C.</p>
+        <p>Tel (57) 601 - 313 37 75  <a href="http://www.OpenCard.com"
+                target="_blank">www.OpenCard.com</a></p>
+
+    </footer>
+</body>
+
+</html>

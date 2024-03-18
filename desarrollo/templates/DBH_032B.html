@@ -1,0 +1,394 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>BANKBU®</title>
+
+  <link rel="stylesheet" href="../css/pages.css">
+  <link rel="stylesheet" href="../css/style.css">
+  <link rel="icon" href="../img/ACQUIRER-logo.JPG" type="image/x-icon">
+</head>
+
+<body>
+
+  <header>
+    <img class="logo" src="../img/logoBankbu_.PNG" alt="Logo de Mi Empresa">
+    <div id="menuBtn">
+      <img class="TITLE" src="../img/menu.PNG" alt="Botón de Menú ">
+    </div>
+  </header>
+  <nav>
+    <ul>
+      <li>
+        <a href="../index.html" class="main-optionINICIO">INICIO</a>
+      </li>
+      <li>
+        <a href="NUH_INTB.html" class="main-optionINTRODUCCIÓN">INTRODUCCIÓN</a>
+      </li>
+      <li><a href="#" class="main-option">NUCLEO ▼</a>
+        <ul>
+          <li><a href="NUH_000B.html">Config. Sistema</a></li>
+          <li><a href="NUH_00B_N2.html">Parametros</a></li>
+          <li><a href="NUH_00B_inicio.html">Inicio</a></li>
+          <li><a href="NUH_00B_proceso.html">Procesos</a></li>
+          <li><a href="NUH_00B_inf.html">Inf. Cliente</a></li>
+          <li><a href="NUH_00B_conta.html">Contabilidad</a></li>
+          <li style="visibility: hidden; display: none;"><a href="NUH_00B_audi.html">Auditoria</a></li>
+        </ul>
+      </li>
+      <li>
+        <a href="#" class="main-option">EMISOR ▼</a>
+        <ul>
+          <li><a href="EMH_000B.html">Productos</a></li>
+          <li><a href="EMH_000Bsoli.html">Solicitudes</a></li>
+          <li><a href="EMH_000Bmerca.html">Mercadeo</a></li>
+          <li><a href="EMH_000Bservi.html">Servicio Al Cliente</a></li>
+          <li><a href="EMH_000Bpendi.html">Pendientes</a></li>
+          <li><a href="EMH_000Btrans.html">Transaccionabilidad</a></li>
+          <li><a href="EMH_000Bauto.html">Autorizaciones</a></li>
+          <li><a href="EMH_000Bplasti.html">Adm. Plasticos</a></li>
+          <li><a href="EMH_000Brecla.html">Reclamos</a></li>
+                    <li><a href="MEH_032B.html">Lealtad</a></li>
+                    <li><a href="COH_064B.html">Cobranzas</a></li>
+        </ul>
+      </li>
+      <li style="visibility: hidden">
+        <a href="ACH_000B.html" class="main-option">ADQUIRIENTE</a>
+      </li>
+      <li style="visibility: hidden">
+        <a href="DBH_000B.html" class="main-option">TARJETA DEBITO</a>
+      </li>
+    </ul>
+  </nav>
+
+  <section>
+    <div>
+      <table>
+        <tr>
+          <td>
+            <div>
+              <p class="TITLE">Ingreso de solicitudes nuevo d&eacute;bito</p>
+            </div>
+          </td>
+        </tr>
+      </table>
+      <p class="PARRAFO">Mediante esta opci&oacute;n se ingresan
+        en el sistema las solicitudes de nuevo d&eacute;bito.</span></p>
+      <p class="PARRAFO">Al ingresar a la opci&oacute;n se despliega
+        un formulario inicial en el cual se solicita al usuario digitar los datos
+        de identificaci&oacute;n del cliente para quien se desea ingresar la solicitud.</p>
+      <p class="TITLE"><img src="../img/DBF_032E.PNG" 355"></p>
+
+      <p class="TITLE">Descripci&oacute;n de campos</p>
+      <div>
+        <table>
+          <tr>
+            <td class="titletable">
+              <p class="SUBTITULO"><b><span>Tipo
+                    identificaci&oacute;n </span></b></p>
+            </td>
+            <td>
+              <p class="PARRAFO">Campo
+                tipo combo en el cual se puede seleccionar el <a href="NUH_008B.html">tipo
+                    de documento</a> de identificaci&oacute;n asociado con el cliente
+                a quien se desea ingresar la solicitud.</p>
+            </td>
+          </tr>
+          <tr>
+            <td class="titletable">
+              <p class="SUBTITULO"><b><span>N&uacute;mero
+                    identificaci&oacute;n </span></b></p>
+            </td>
+            <td>
+              <p class="PARRAFO">En
+                este campo alfanum&eacute;rico de hasta 16 caracteres, obligatorio,
+                se registra el n&uacute;mero de identificaci&oacute;n del cliente.</p>
+            </td>
+          </tr>
+        </table>
+      </div>
+
+      <p class="PARRAFO">Una vez ingresada la informaci&oacute;n se
+        despliega un nuevo formulario que contiene la informaci&oacute;n de todas
+        las solicitudes de nuevo d&eacute;bito que tenga el cliente. Si no existen
+        solicitudes a mostrar el formulario se despliega en blanco.</p>
+      <p class="TITLE"><img src="../img/DBF_032E1.PNG" 670"></p>
+
+      <p class="PARRAFO">El formulario contiene el hiperv&iacute;nculo
+        <a href="DBH_032B.html#BL_ETAPAS"> Consultar etapas</a>,
+        que permite ver el hist&oacute;rico de las etapas por las que ha pasado la
+        solicitud. Adicionalmente contiene las opciones Actualizar, Eliminar, Adicionar
+        y Detalle.
+      </p>
+      <p class="PARRAFO"><b><span class="SUBTITULO">Adicionar:</span></b>
+        si el usuario invoca la opci&oacute;n Adicionar, se despliega un
+        nuevo formulario con un &uacute;nico campo que contiene una lista de valores
+        en donde se selecciona el <a href="DBH_018B.html">producto
+            d&eacute;bito</a> solicitado por el cliente.</p>
+      <p class="TITLE"><img src="../img/DBF_032E2.PNG" 435"></p>
+
+      <p class="PARRAFO">Una vez hechas las validaciones respectivas,
+        el sistema despliega un wizard de dos pasos en el que se registran los datos
+        requeridos para el ingreso de la solicitud.</p>
+      <p class="TITLE"><img src="../img/DBF_032E3.PNG" 678"></p>
+
+      <p class="TITLE">Descripci&oacute;n de campos</p>
+      <div>
+        <table>
+          <tr>
+            <td class="titletable">
+              <p class="SUBTITULO"><b><span>Bin
+                    / Producto</span></b></p>
+            </td>
+            <td>
+              <p class="PARRAFO">Campo
+                de salida que muestra el bin, producto, grupo de afinidad y descripci&oacute;n
+                del <a href="DBH_018B.html">producto d&eacute;bito</a>
+                solicitado por el cliente.</p>
+            </td>
+          </tr>
+          <tr>
+            <td class="titletable">
+              <p class="SUBTITULO"><b><span>Emite
+                    pl&aacute;stico </span></b></p>
+            </td>
+            <td>
+              <p class="PARRAFO">Este campo es solo de salida y muestra por defecto la
+                opcion siempre en Si.</p>
+            </td>
+          </tr>
+          <tr>
+            <td class="titletable">
+              <p class="SUBTITULO"><b><span>Nombre
+                    realce </span></b></p>
+            </td>
+            <td>
+              <p class="PARRAFO">Campo
+                de salida que despliega el nombre del cliente y que va a ser impreso
+                o realzado en la tarjeta.</p>
+            </td>
+          </tr>
+          <tr>
+            <td class="titletable">
+              <p class="SUBTITULO"><b><span>Ciclo
+                    de facturaci&oacute;n</span></b></p>
+            </td>
+            <td>
+              <p class="PARRAFO">En
+                este campo de salida se muestra el ciclo de facturaci&oacute;n al
+                que pertenece la tarjeta y que ser&aacute; la base para determinar
+                las fechas para el cobro de los costos generados por cuota de manejo.</p>
+            </td>
+          </tr>
+          <tr>
+            <td class="titletable">
+              <p class="SUBTITULO"><b><span>Uso
+                    tarjeta </span></b></p>
+            </td>
+            <td>
+              <p class="PARRAFO">Este campo toma el valor 'Normal'
+                para se&ntilde;alar que la tarjeta no tiene restricciones para su
+                uso. </p>
+            </td>
+          </tr>
+          <tr>
+            <td class="titletable">
+              <p class="SUBTITULO"><b><span>Sucursal</span></b></p>
+            </td>
+            <td>
+              <p class="PARRAFO">En
+                este campo obligatorio y que contiene lista de valores, se selecciona
+                la <a href="NUH_020B.html">sucursal</a> de
+                radicaci&oacute;n de la tarjeta d&eacute;bito.</p>
+            </td>
+          </tr>
+          <tr>
+            <td class="titletable">
+              <p class="SUBTITULO"><b><span>Tipo
+                    de cuenta</span></b></p>
+            </td>
+            <td>
+              <p class="PARRAFO">Campo
+                obligatorio tipo combo en el que se selecciona entre Ahorros,
+                  Corriente o Rotativo el tipo de cuenta asociado a la
+                tarjeta d&eacute;bito.</p>
+            </td>
+          </tr>
+          <tr>
+            <td class="titletable">
+              <p class="SUBTITULO"><b><span>N&uacute;mero
+                    de cuenta a debitar</span></b></p>
+            </td>
+            <td>
+              <p class="PARRAFO">En
+                este campo obligatorio se registra el n&uacute;mero de cuenta asociado
+                con la tarjeta d&eacute;bito.</p>
+            </td>
+          </tr>
+          <tr>
+            <td class="titletable">
+              <p class="SUBTITULO"><b><span>Sucursal
+                    cuenta </span></b></p>
+            </td>
+            <td>
+              <p class="PARRAFO">Campo
+                en el que se digita el c&oacute;digo de la sucursal a la que pertenece
+                la cuenta a asociar con la tarjeta.</p>
+            </td>
+          </tr>
+          <tr>
+            <td class="titletable">
+              <p class="SUBTITULO"><b><span>Moneda</span></b></p>
+            </td>
+            <td>
+              <p class="PARRAFO">En
+                este campo obligatorio con lista de valores, se selecciona la moneda
+                en la cual se encuentra denominada la cuenta asociada con la tarjeta
+                d&eacute;bito. </p>
+            </td>
+          </tr>
+        </table>
+      </div>
+
+      <p class="PARRAFO">En la segunda p&aacute;gina del wizard, se
+        despliegan los diferentes documentos requeridos durante el ingreso de la solicitud
+        y el usuario puede marcar para cada tipo de persona si el documento fue entregado
+        o no.</p>
+      <p class="TITLE"><img src="../img/DBF_032E4.PNG" 646" height="317"></p>
+
+      <p class="PARRAFO"><b><span class="SUBTITULO">Actualizar:</span></b>
+        si el usuario selecciona un registro e invoca la opci&oacute;n Actualizar,
+        se invoca un nuevo formulario en el cual los &uacute;nicos campos modificables
+        son Sucursal, Tipo cuenta, N&uacute;mero cuenta y Sucursal cuenta.</p>
+      <p class="TITLE"><img src="../img/DBF_032E5.PNG" 708" height="383"></p>
+
+      <p class="PARRAFO">En la p&aacute;gina de documentos, el usuario
+        puede modificar para cada documento y para cada tipo de persona la indicaci&oacute;n
+        de Si o No el documento fue entregado.</p>
+      <p class="TITLE"><img src="../img/DBF_032E6.PNG" 429"></p>
+
+      <p class="PARRAFO"><b><span class="SUBTITULO">Detalle:</span></b>
+        si el usuario selecciona un registro e invoca la opci&oacute;n Detalle,
+        se despliega un wizard de dos pasos con la informaci&oacute;n completa de
+        la solicitud y en el cual ninguno de sus campos es modificable<span>.</span></p>
+      <p class="TITLE"><img src="../img/DBF_032E7.PNG" 739"></p>
+      <p class="TITLE"><img src="../img/DBF_032E8.PNG" 751" height="302"></p>
+
+      <p class="PARRAFO"><a name="BL_ETAPAS"></a><span class="SUBTITULO"><span><b>Consultar
+              etapas </b>:</span></span><span>
+          si el usuario selecciona una solicitud e invoca el hiperv&iacute;nculo Consultar
+            etapas, se despliega un nuevo formulario que le permite ver el detalle
+          de las diferentes etapas por las cuales ha avanzado la solicitud y el resultado
+          obtenido en cada una de ellas.</span> 
+      </p>
+      <p class="PARRAFO"><span>El formulario
+          contiene el hiperv&iacute;nculo <a href="DBH_032B.html#BL_DOCUMENTOS">Documentos
+              requeridos</a> que al ser invocado despliega otro formulario que le permite
+          ver al usuario cuales son los documentos que de acuerdo con lo parametrizados
+          para el tipo de solicitud y producto son requeridos en cada una de las etapas.</span></p>
+      <p class="TITLE"><img src="../img/DBF_032E9.PNG" 744" height="119"></p>
+
+      <p class="TITLE">Descripci&oacute;n de campos</p>
+      <div>
+        <table>
+          <tr>
+            <td class="titletable">
+              <p class="SUBTITULO"><b><span>Etapa</span></b></p>
+            </td>
+            <td>
+              <p class="PARRAFO">Campo
+                que muestra el c&oacute;digo y descripci&oacute;n de cada una de las
+                etapas por las cuales ha avanzado la solicitud.</p>
+            </td>
+          </tr>
+          <tr>
+            <td class="titletable">
+              <p class="SUBTITULO"><b><span>Forzada</span></b></p>
+            </td>
+            <td>
+              <p class="PARRAFO">En
+                este campo se indica si el avance de la solicitud en cada etapa fue
+                resultado del proceso normal o si por el contrario la solicitud se
+                avanz&oacute; de manera forzada pasando por alto las validaciones
+                propias de la etapa.</p>
+            </td>
+          </tr>
+          <tr>
+            <td class="titletable">
+              <p class="SUBTITULO"><b><span>Fecha
+                    hora inicio</span></b></p>
+            </td>
+            <td>
+              <p class="PARRAFO">Campo
+                que despliega la fecha y hora en la cual la solicitud arrib&oacute;
+                a cada una de las etapas.</p>
+            </td>
+          </tr>
+          <tr>
+            <td class="titletable">
+              <p class="SUBTITULO"><b><span>Fecha
+                    hora fin</span></b></p>
+            </td>
+            <td>
+              <p class="PARRAFO">En
+                este campo se muestra la fecha en la cual la solicitud fue avanzada
+                a una etapa siguiente o termin&oacute; su tr&aacute;mite en cada una
+                de las etapas.</p>
+            </td>
+          </tr>
+          <tr>
+            <td class="titletable">
+              <p class="SUBTITULO"><b><span>Motivo
+                    negaci&oacute;n </span></b></p>
+            </td>
+            <td>
+              <p class="PARRAFO">Si
+                durante el avance de la solicitud en la etapa debido a las validaciones
+                propias de la misma o a los filtros exitentes la solicitud fue negada,
+                en este campo se muestra el motivo que justifica dicha negaci&oacute;n.</p>
+            </td>
+          </tr>
+          <tr>
+            <td class="titletable">
+              <p class="SUBTITULO"><b><span>Fecha
+                    hora fin</span></b></p>
+            </td>
+            <td>
+              <p class="PARRAFO">En
+                este campo se muestran los comentarios u observaciones adiconales
+                que complementan la explicaci&oacute;n del motivo por el cual fue
+                negada la solicitud.</p>
+            </td>
+          </tr>
+        </table>
+      </div>
+
+      <p class="PARRAFO"><a name="BL_DOCUMENTOS"></a><span class="SUBTITULO"><span><b>Documentos
+              requeridos</b>:</span></span><span>
+          si desde el hist&oacute;rico de etapas el usuario selecciona un registro e
+          invoca el hiperv&iacute;nculo Documentos requeridos, se despliega
+          un formulario en el que se relacionan los documentos que de acuerdo con los
+          par&aacute;metros de solicitud por producto son requeridos en la etapa y as&iacute;
+          mismo se indica para cada documento si este fue o no entregado por el cliente.</span> 
+      </p>
+      <p class="TITLE"><img src="../img/DBF_032E10.PNG" 745" height="260"></p>
+
+      <div>
+  </section>
+  <script src="../js/menu.js"></script>
+</body>
+<footer>
+  <div>
+    <img class="TITLE" src="../img/logo.PNG">
+  </div>
+  <p>OpenCard SAS</p>
+  <p>Calle 77 Nº 11-19 Piso 4°,Bogotá D.C.</p>
+  <p>Tel (57) 601 - 313 37 75 <a href="http://www.OpenCard.com" target="_blank">www.OpenCard.com</a></p>
+
+
+
+</footer>
+
+</html>

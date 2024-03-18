@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BANKBU®</title>
+    <link rel="stylesheet" href="../css/pages.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="icon" href="../img/ACQUIRER-logo.JPG" type="image/x-icon">
+</head>
+
+<body>
+    <header>
+        <img class="logo" src="../img/logoBankbu_.PNG" alt="Logo de Mi Empresa">
+        <div id="menuBtn">
+            <img class="TITLE" src="../img/menu.PNG" alt="Botón de Menú ">
+        </div>
+    </header>
+    <nav>
+        <ul>
+            <li>
+                <a href="../index.html" class="main-optionINICIO">INICIO</a>
+            </li>
+            <li>
+                <a href="NUH_INTB.html" class="main-optionINTRODUCCIÓN">INTRODUCCIÓN</a>
+            </li>
+            <li><a href="#" class="main-option">NUCLEO ▼</a>
+                <ul>
+                    <li><a href="NUH_000B.html">Config. Sistema</a></li>
+                    <li><a href="NUH_00B_N2.html">Parametros</a></li>
+                    <li><a href="NUH_00B_inicio.html">Inicio</a></li>
+                    <li><a href="NUH_00B_proceso.html">Procesos</a></li>
+                    <li><a href="NUH_00B_inf.html">Inf. Cliente</a></li>
+                    <li><a href="NUH_00B_conta.html">Contabilidad</a></li>
+                    <li style="visibility: hidden; display: none;"><a href="NUH_00B_audi.html">Auditoria</a></li>
+
+                </ul>
+            </li>
+            <li>
+                <a href="#" class="main-option">EMISOR ▼</a>
+                <ul>
+                    <li><a href="EMH_000B.html">Productos</a></li>
+                    <li><a href="EMH_000Bsoli.html">Solicitudes</a></li>
+                    <li><a href="EMH_000Bmerca.html">Mercadeo</a></li>
+                    <li><a href="EMH_000Bservi.html">Servicio Al Cliente</a></li>
+                    <li><a href="EMH_000Bpendi.html">Pendientes</a></li>
+                    <li><a href="EMH_000Btrans.html">Transaccionabilidad</a></li>
+                    <li><a href="EMH_000Bauto.html">Autorizaciones</a></li>
+                    <li><a href="EMH_000Bplasti.html">Adm. Plasticos</a></li>
+                    <li><a href="EMH_000Brecla.html">Reclamos</a></li>
+                    <li><a href="MEH_032B.html">Lealtad</a></li>
+                    <li><a href="COH_064B.html">Cobranzas</a></li>
+                </ul>
+            </li>
+            <li style="visibility: hidden">
+                <a href="ACH_000B.html" class="main-option">ADQUIRIENTE</a>
+            </li>
+            <li style="visibility: hidden">
+                <a href="DBH_000B.html" class="main-option">TARJETA DEBITO</a>
+            </li>
+        </ul>
+    </nav>
+
+    <section>
+        <div id="layer">
+            <table>
+                <tr>
+                    <td>
+                        <div>
+                            <p class="TITLE">Ejecuci&oacute;n grupos en malla</p>
+                        </div>
+                    </td>
+                </tr>
+            </table>
+            <p class="PARRAFO">Esta opci&oacute;n muestra todos aquellos grupos que hayan sido marcados como Obligatorio
+                en la opci&oacute;n <a href="OPH_001B.html">Definici&oacute;n grupos de procesos</a>. De acuerdo a esto,
+                esta opci&oacute;n s&oacute;lo nos muestra los grupos de procesos a ejecutar autom&aacute;ticamente.</p>
+            <p class="PARRAFO">La pantalla principal se divide en dos partes en la cuales se encontrar&aacute;n los
+                Grupos de procesos a la izquierda, as&iacute; como se muestra en la siguiente imagen.</p>
+            <p class="PARRAFO">Por otro lado , la opci&oacute;n cuenta tambi&eacute;n con el v&iacute;nculo de <a
+                    href="#Procesos" target="_self">Procesos</a> que nos permitir&aacute; consultar el detalle de
+                algunos de los procesos pertenecientes al grupo que por alguna raz&oacute;n hayan presentado error en su
+                ejecuci&oacute;n. </p>
+            <p class="TITLE"><img src="../img/OPF_009E.PNG"></p>
+
+            <p class="PARRAFO">A la derecha de esta pantalla se ubica una ventana que funciona como log de operaciones,
+                describiendo las acciones y resultados de cada uno de los procesos que han sido ejecutados. </p>
+            <p class="TITLE"><img src="../img/OPF_009E1.PNG"></p>
+
+            <p class="PARRAFO">A trav&eacute;s de esta pantalla principal el usuario debe ejecutar todos los Grupos de
+                procesos a trav&eacute;s del bot&oacute;n Ejecutar. De esta forma el sistema tomar&aacute;
+                todos los procesos pertenecientes a estos Grupos, ejecut&aacute;ndolos de acuerdo a la
+                parametrizaci&oacute;n de precedentes realizada en la opci&oacute;n <a
+                    href="OPH_001B.html">Definici&oacute;n grupos de procesos</a>.</p>
+            <p class="PARRAFO">El sistema refrescar&aacute; la pantalla junto con el log de operaciones de acuerdo a los
+                rangos de tiempo definidos en la parte superior. Estos pueden establecerse entre 5, 15 &oacute; 30
+                segundos. Por defecto estos rangos est&aacute;n apagados y s&oacute;lo se
+                    activan al seleccionar uno de ellos y luego usar los botones Detener y luego Refrescar.</p>
+            <p class="TITLE"><img src="../img/OPF_009E2.PNG"></p>
+
+            <p class="PARRAFO">Antes de iniciar el cargue de un grupo en el d&iacute;a, el sistema los muestra con el
+                campo Estado proceso en blanco. Luego &eacute;ste varia de acuerdo al estado de los Procesos ejecutados
+                por cada Grupo.</p>
+            <p class="PARRAFO">Proceso en ejecuci&oacute;n: El sistema est&aacute; corriendo el paquete del proceso.
+            </p>
+            <p class="PARRAFO">Ejecuci&oacute;n parcial: El sistema ha presentado alg&uacute;n error que puede ser
+                consultado directamente en el log de operaciones o en el <a href="OPH_003B.html">Hist&oacute;rico de
+                    procesos</a>. </p>
+            <p class="PARRAFO">Ejecuci&oacute;n total: El proceso ha finalizado exitosamente. </p>
+            <p class="PARRAFO">Proceso pendiente o Proceso en cola: El sistema identifica estos procesos como pendientes
+                por procesar. </p>
+
+            <p class="PARRAFO"><span class="SUBTITULO"><span><b>Procesos<a
+                                name="Procesos"></a></b></span><span>:</span></span>  Este hiperv&iacute;nculo le permite
+                al usuario la consulta del detalle de la ejecuci&oacute;n de cada uno de los Procesos pertenecientes al
+                Grupo seleccionado en la pantalla principal. Se usa m&aacute;s con el prop&oacute;sito de consultar un
+                Proceso en el momento de haber presentado algun error, pues la descripci&oacute;n de &eacute;ste se
+                muestra a nivel del campo Mensaje. </p>
+            <p class="PARRAFO">Es importante tener en cuenta que a diferencia de la opci&oacute;n <a
+                    href="OPH_007E.html">Ejecuci&oacute;n grupos independientes</a>, esta opci&oacute;n no permite la
+                ejecuci&oacute;n de los procesos uno a uno, s&oacute;lo de todos los Grupos que hayan sido marcados como
+                Obligatorio en la opci&oacute;n <a href="OPH_001B.html">Definici&oacute;n grupos de procesos</a>.</p>
+            <p class="PARRAFO">Tal como aplica para la ejecuci&oacute;n de Grupos descrita arriba, esta pantalla permite
+                la actualizaci&oacute;n a trav&eacute;s de los mismos rangos de 5, 15 &oacute; 30 segundos, y mostrando
+                el estado de los procesos y su N&uacute;mero de ejecuciones. En caso de presentarse alg&uacute;n error,
+                ser&aacute; mostrado en el campo Mensaje de esta misma pantalla. </p>
+            <p class="TITLE"><img src="../img/OPF_009E3.PNG"></p>
+    </section>
+    <script src="../js/menu.js"></script>
+
+    <footer>
+        <div>
+            <img class="TITLE" src="../img/logo.PNG">
+        </div>
+        <p>OpenCard SAS</p>
+        <p>Calle 77 Nº 11-19 Piso 4°, Bogotá D.C.</p>
+        <p>Tel (57) 601 - 313 37 75 <a href="http://www.OpenCard.com" target="_blank">www.OpenCard.com</a></p>
+
+    </footer>
+</body>
+
+</html>

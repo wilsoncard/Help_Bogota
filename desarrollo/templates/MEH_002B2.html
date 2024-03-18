@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>BANKBU®</title>
+
+  <link rel="stylesheet" href="../css/pages.css">
+  <link rel="stylesheet" href="../css/style.css">
+  <link rel="icon" href="../img/ACQUIRER-logo.JPG" type="image/x-icon">
+</head>
+
+<body>
+
+  <header>
+    <img class="logo" src="../img/logoBankbu_.PNG" alt="Logo de Mi Empresa">
+    <div id="menuBtn">
+      <img class="TITLE" src="../img/menu.PNG" alt="Botón de Menú ">
+    </div>
+  </header>
+  <nav>
+    <ul>
+      <li>
+        <a href="../index.html" class="main-optionINICIO">INICIO</a>
+      </li>
+      <li>
+        <a href="NUH_INTB.html" class="main-optionINTRODUCCIÓN">INTRODUCCIÓN</a>
+      </li>
+      <li><a href="#" class="main-option">NUCLEO ▼</a>
+        <ul>
+          <li><a href="NUH_000B.html">Config. Sistema</a></li>
+          <li><a href="NUH_00B_N2.html">Parametros</a></li>
+          <li><a href="NUH_00B_inicio.html">Inicio</a></li>
+          <li><a href="NUH_00B_proceso.html">Procesos</a></li>
+          <li><a href="NUH_00B_inf.html">Inf. Cliente</a></li>
+          <li><a href="NUH_00B_conta.html">Contabilidad</a></li>
+          <li style="visibility: hidden; display: none;"><a href="NUH_00B_audi.html">Auditoria</a></li>
+
+        </ul>
+      </li>
+      <li>
+        <a href="#" class="main-option">EMISOR ▼</a>
+        <ul>
+          <li><a href="EMH_000B.html">Productos</a></li>
+          <li><a href="EMH_000Bsoli.html">Solicitudes</a></li>
+          <li><a href="EMH_000Bmerca.html">Mercadeo</a></li>
+          <li><a href="EMH_000Bservi.html">Servicio Al Cliente</a></li>
+          <li><a href="EMH_000Bpendi.html">Pendientes</a></li>
+          <li><a href="EMH_000Btrans.html">Transaccionabilidad</a></li>
+          <li><a href="EMH_000Bauto.html">Autorizaciones</a></li>
+          <li><a href="EMH_000Bplasti.html">Adm. Plasticos</a></li>
+          <li><a href="EMH_000Brecla.html">Reclamos</a></li>
+          <li><a href="MEH_032B.html">Lealtad</a></li>
+          <li><a href="COH_064B.html">Cobranzas</a></li>
+        </ul>
+      </li>
+      <li style="visibility: hidden">
+        <a href="ACH_000B.html" class="main-option">ADQUIRIENTE</a>
+      </li>
+      <li style="visibility: hidden">
+        <a href="DBH_000B.html" class="main-option">TARJETA DEBITO</a>
+      </li>
+    </ul>
+  </nav>
+
+  <section>
+    <div>
+      <table>
+        <tr>
+          <td>
+            <div>
+              <p class="TITLE">Definici&oacute;n de productos - Otros cargos</p>
+            </div>
+          </td>
+        </tr>
+      </table>
+
+      <p class="PARRAFO">Esta opci&oacute;n que se invoca desde el formulario <a href="MEH_002B.html">Definici&oacute;n
+          de productos</a>, le permite a la entidad adicionar o modificar la informaci&oacute;n correspondiente a los
+        cobros que se le deben hacer a un cliente por concepto de la atenci&oacute;n de los reclamos y/o novedades
+        presentadas sobre las tarjetas pertenecientes al producto.</p>
+      <p class="PARRAFO">El formulario se encuentra dividido en dos bloques: <a
+          href="MEH_002B2.html#BL_RECLAMOS">reclamos</a> y <a href="MEH_002B2.html#BL_NOVEDADES">novedades</a></p>
+      <p class="TITLE"><img src="../img/MEF_002E24.PNG"></p>
+
+      <div class="PARRAFO">
+        <p><span class="SUBTITULO"><a name="BL_RECLAMOS"></a> <span class="Estilo1">Reclamos</span><span>:</span></span><span> en este primer
+            bloque se registra la informaci&oacute;n de los cargos que por concepto de los reclamos efectuados por el
+            cliente, y correspondientes a tarjetas pertenecientes al producto, se le debe cobrar en caso que la entidad
+            as&iacute; lo decida. </p>
+      </div>
+      <p class="PARRAFO"><span class="SUBTITULO"><span class="Estilo1">Nota
+            importante</span><span>:</span></span><span>lo que se parametrice en esta opci&oacute;n solo tiene
+          aplicabilidad si la entidad maneja sus reclamos a trav&eacute;s del servicio de Reclamos provisto por <span
+            class="#3"><span>BANKBU<sup>&reg;</sup></span></span> . En caso
+          contrario, no tendr&aacute; ning&uacute;n efecto y no generar&aacute; cobros al cliente por los conceptos
+          aqu&iacute; definidos. </p>
+      <p class="PARRAFO">El formulario contiene las opciones Actualizar, Eliminar y Adicionar.</p>
+      <p class="PARRAFO"><b><span class="SUBTITULO">Adicionar:</span></b> si el usuario invoca la opci&oacute;n
+        Adicionar se despliega un nuevo formulario con los siguientes campos.</p>
+      <p class="TITLE"><img src="../img/MEF_002E25.PNG"></p>
+
+      <div class="PARRAFO">
+        <p class="TITLE">Descripci&oacute;n de campos</p>
+        <table>
+          <tr>
+            <td class="titletable">
+              <p class="SUBTITULO"><b>Reclamo
+                </b></p>
+            </td>
+            <td>
+              <p class="PARRAFO">Campo
+                obligatorio con lista de valores de la cual se puede seleccionar el reclamo por el cual la entidad va a
+                generar alg&uacute;n cobro al cliente en caso que este llegare a darse.
+              </p>
+            </td>
+          </tr>
+
+          <tr>
+            <td class="titletable">
+              <p class="SUBTITULO"><b>Transacci&oacute;n cargo
+                </b></p>
+            </td>
+            <td>
+              <p class="PARRAFO">Este
+                campo obligatorio contiene lista de valores de la cual se selecciona la <a
+                  href="MEH_003B.html">transacci&oacute;n interna</a> mediante la cual se va a cargar el cobro generado
+                al cliente a causa del reclamo presentado.</p>
+            </td>
+          </tr>
+
+          <tr>
+            <td class="titletable">
+              <p class="SUBTITULO"><b>Valor cargo
+                </b></p>
+            </td>
+            <td>
+              <p class="PARRAFO">Campo obligatorio de 14 enteros y 2 decimales en el que se registra el monto que la
+                entidad va a cobrar al cliente por el reclamo presentado.</p>
+            </td>
+          </tr>
+        </table>
+        <p class="PARRAFO">
+        <p><b><span class="SUBTITULO">Actualizar:</span></b> si el usuario selecciona un registro e invoca la
+          opci&oacute;n Actualizar, se despliega un formulario en el cual los &uacute;nicos campos modificables son
+          Transacci&oacute;n cargo y Valor cargo.</p>
+        <p class="TITLE"><img src="../img/MEF_002E26.PNG"></p>
+        <p class="PARRAFO">
+        <div class="PARRAFO">
+          <p class="PARRAFO"><a name="BL_NOVEDADES"></a><span class="SUBTITULO"><span
+                  class="Estilo1">Novedades</span><span>:</span></span><span class="#4"></span> en este segundo bloque
+              se registra la informaci&oacute;n de los cargos que por concepto de las <a
+                href="NUH_017B.html">novedades</a> solicitadas por el cliente sobre tarjetas pertenecientes al producto,
+              se le debe cobrar en caso que la entidad as&iacute; lo decida.</p>
+        </div>
+        <p class="PARRAFO">El formulario contiene las opciones Actualizar, Eliminar y Adicionar.</p>
+        <p class="PARRAFO"><b><span class="SUBTITULO">Adicionar:</span></b> si el usuario invoca la opci&oacute;n
+          Adicionar se despliega un nuevo formulario con los siguientes campos.</p>
+        <p class="TITLE"><img src="../img/MEF_002E27.PNG" 375" height="120"></p>
+
+        <div class="PARRAFO">
+          <p class="TITLE">Descripci&oacute;n de campos</p>
+          <table>
+            <tr>
+              <td class="titletable">
+                <p class="SUBTITULO"><b>Novedad
+                  </b></p>
+              </td>
+              <td>
+                <p class="PARRAFO">Campo
+                  obligatorio con lista de valores de la cual se puede seleccionar la <a href="NUH_017B.html">novedad
+                    administrativa</a> por la cual la entidad va a generar alg&uacute;n cobro al cliente en caso que
+                  esta llegare a darse.
+                </p>
+              </td>
+            </tr>
+
+            <tr>
+              <td class="titletable">
+                <p class="SUBTITULO"><b>Transacci&oacute;n cargo
+
+
+                  </b></p>
+              </td>
+              <td>
+                <p class="PARRAFO">Este
+                  campo obligatorio contiene lista de valores de la cual se selecciona la <a
+                    href="MEH_003B.html">transacci&oacute;n interna</a> mediante la cual se va a cargar el cobro
+                  generado al cliente a causa de la novedad aplicada a la tarjeta.</p>
+              </td>
+            </tr>
+
+            <tr>
+              <td class="titletable">
+                <p class="SUBTITULO"><b>Valor cargo
+
+
+                  </b></p>
+              </td>
+              <td>
+                <p class="PARRAFO">Campo obligatorio de 14 enteros y 2 decimales en el que se registra el monto que la
+                  entidad va a cobrar al cliente por la novedad aplicada.</p>
+              </td>
+            </tr>
+          </table>
+          <p class="PARRAFO">
+          <p><b><span class="SUBTITULO">Actualizar:</span></b> si el usuario selecciona un registro e invoca la
+            opci&oacute;n Actualizar, se despliega un formulario en el cual los &uacute;nicos campos modificables son
+            Transacci&oacute;n cargo y Valor cargo.</p>
+          <p class="TITLE"><img src="../img/MEF_002E28.PNG" 369"></p>
+        </div>
+        <p class="PARRAFO">
+  </section>
+  <script src="../js/menu.js"></script>
+</body>
+<footer>
+  <div>
+    <img class="TITLE" src="../img/logo.PNG">
+  </div>
+  <p>OpenCard SAS</p>
+  <p>Calle 77 Nº 11-19 Piso 4°,Bogotá D.C.</p>
+  <p>Tel (57) 601 - 313 37 75 <a href="http://www.OpenCard.com" target="_blank">www.OpenCard.com</a></p>
+
+</footer>
+
+</html>

@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BANKBU®</title>
+    <link rel="stylesheet" href="../css/pages.css">
+    <link rel="stylesheet" href="../css/style.css">
+ <link rel="icon" href="../img/ACQUIRER-logo.JPG" type="image/x-icon">
+</head>
+
+<body>
+
+    <header>
+        <img class="logo" src="../img/logoBankbu_.PNG" alt="Logo de Mi Empresa">
+        <div id="menuBtn">
+            <img class="TITLE"  src= "../img/menu.PNG" alt="Botón de Menú ">
+        </div>
+    </header>
+    <nav>
+        <ul>
+            <li>
+                    <a href="../index.html" class="main-optionINICIO">INICIO</a>
+            </li>
+            <li>
+                <a href="NUH_INTB.html" class="main-optionINTRODUCCIÓN">INTRODUCCIÓN</a>
+            </li>
+            <li><a href="#" class="main-option">NUCLEO ▼</a>
+                <ul>
+                    <li><a href="NUH_000B.html">Config. Sistema</a></li>
+                    <li><a href="NUH_00B_N2.html">Parametros</a></li>
+                    <li><a href="NUH_00B_inicio.html">Inicio</a></li>
+                    <li><a href="NUH_00B_proceso.html">Procesos</a></li>
+                    <li><a href="NUH_00B_inf.html">Inf. Cliente</a></li>
+                    <li><a href="NUH_00B_conta.html">Contabilidad</a></li>
+                    <li style="visibility: hidden; display: none;"><a href="NUH_00B_audi.html">Auditoria</a></li>
+
+                </ul>
+            </li>
+            <li>
+             <a href="#" class="main-option">EMISOR  ▼</a>
+                <ul>
+                    <li><a href="EMH_000B.html">Productos</a></li>
+                    <li><a href="EMH_000Bsoli.html">Solicitudes</a></li>
+                    <li><a href="EMH_000Bmerca.html">Mercadeo</a></li>
+                    <li><a href="EMH_000Bservi.html">Servicio Al Cliente</a></li>
+                    <li><a href="EMH_000Bpendi.html">Pendientes</a></li>
+                    <li><a href="EMH_000Btrans.html">Transaccionabilidad</a></li>
+                    <li><a href="EMH_000Bauto.html">Autorizaciones</a></li>
+                    <li><a href="EMH_000Bplasti.html">Adm. Plasticos</a></li>
+                    <li><a href="EMH_000Brecla.html">Reclamos</a></li>
+                    <li><a href="MEH_032B.html">Lealtad</a></li>
+                    <li><a href="COH_064B.html">Cobranzas</a></li>
+                </ul>
+            </li>
+ <li style="visibility: hidden">
+                <a href="ACH_000B.html" class="main-option">ADQUIRIENTE</a>
+            </li>
+            <li style="visibility: hidden">
+                <a href="DBH_000B.html" class="main-option">TARJETA DEBITO</a>
+            </li></ul>
+    </nav>
+
+    <section>
+        <div> 
+            <table>
+              <tr> 
+                <td><div> 
+                    <p  class="TITLE">Novedad adicionar / eliminar cuenta</p>
+                  </div></td>
+              </tr>
+            </table>
+            <p class="PARRAFO" >Mediante esta opci&oacute;n que se 
+              invoca desde <a href="DBH_020B.html" >Generaci&oacute;n de novedades 
+              d&eacute;bito</a> se registra la novedad mediante la cual se asocia una nueva 
+              cuenta a una tarjeta d&eacute;bito o se elimina una cuenta ya existente.</span></p>
+            <p  class="PARRAFO">Cuando la tarjeta seleccionada solo tiene 
+              asociada una cuenta y se intenta eliminar mediante esta novedad, el sistema 
+              valida la informaci&oacute;n y no permite ejecutar la acci&oacute;n con lo 
+              que se garantiza que la tarjeta siempre tiene como m&iacute;nimo una cuenta 
+              principal asociada.</p>
+           
+            <p class="TITLE"><img src="../img/DBF_022E.PNG"421" height="301"></p>
+
+            <p  class="PARRAFO">Eliminaci&oacute;n de cuenta:</p>
+            <p class="TITLE"><img src="../img/DBF_022E1.PNG"405" height="297"></p>
+            <p  class="TITLE">Descripci&oacute;n de campos</p>
+            <div> 
+              <table>
+                <tr> 
+                  <td class="titletable"  ><p class="SUBTITULO"><b><span >Cuenta 
+                      actual</span></b></p></td>
+                  <td><p  class="PARRAFO">En 
+                      este campo de salida se muestra el n&uacute;mero de la cuenta principal 
+                      asociada a la tarjeta actualmente.</p></td>
+                </tr>
+                <tr> 
+                  <td class="titletable"><p class="SUBTITULO"><b><span >Categor&iacute;a</span></b></p></td>
+                  <td><p  class="PARRAFO">Campo 
+                      tipo combo que indica la categor&iacute;a correspondiente a la cuenta 
+                      desplegada en el campo anterior.</p></td>
+                </tr>
+                <tr> 
+                  <td class="titletable"><p class="SUBTITULO"><b><span >Retirar 
+                      cuenta </span></b></p></td>
+                  <td><p  class="PARRAFO">En 
+                      este check se marca para indicarle al sistema que la acci&oacute;n 
+                      a ejecutar mediante la novedad es el retiro o eliminaci&oacute;n de 
+                      la cuenta.</p></td>
+                </tr>
+                <tr> 
+                  <td class="titletable"><p class="SUBTITULO"><b><span >Tipo 
+                      cuenta a debitar</span></b></p></td>
+                  <td><p  class="PARRAFO">Campo 
+                      obligatorio tipo combo que se habilita solamente si el campo retirar 
+                      cuenta se encuentra desmarcado y que permite seleccionar entre Ahorros, 
+                      Corriente o Rotativo el tipo de cuenta a asociar con 
+                      la tarjeta d&eacute;bito.</p></td>
+                </tr>
+                <tr> 
+                  <td class="titletable"><p class="SUBTITULO"><b><span >Moneda</span></b></p></td>
+                  <td><p  class="PARRAFO">En 
+                      este campo obligatorio que se habilita solamente si el campo retirar 
+                      cuenta se encuentra desmarcado y que cuenta con lista de valores, 
+                      se selecciona la moneda en la que se encuentra denominada la cuenta 
+                      que se va a asociar a la tarjeta.</p></td>
+                </tr>
+                <tr> 
+                  <td class="titletable"><p class="SUBTITULO"><b><span >N&uacute;mero 
+                      de cuenta</span></b></p></td>
+                  <td><p  class="PARRAFO">Campo 
+                      obligatorio que funciona de la siguiente manera. Si el campo Retirar 
+                      cuenta se encuentra marcado, habilita una lista de valores de 
+                      la cual el usuario selecciona la cuenta que desea eliminar. Cuando 
+                      el campo Retirar cuenta est&aacute; desmarcado, es decir, 
+                      la acci&oacute;n a ejecutar mediante la novedad es adicionar una nueva 
+                      cuenta, este campo es editable y permite digitar el n&uacute;mero 
+                      de la cuenta a asociar con la tarjeta d&eacute;bito.</p></td>
+                </tr>
+                <tr> 
+                  <td class="titletable"><p class="SUBTITULO"><b><span >Fecha 
+                      radicaci&oacute;n</span></b></p></td>
+                  <td><p  class="PARRAFO">En 
+                      este campo obligatorio se registra en formato YYYY-MM-DD la fecha 
+                      en la que se ingresa la novedad en el sistema.</p></td>
+                </tr>
+                <tr> 
+                  <td class="titletable"><p class="SUBTITULO"><b><span >Sucursal 
+                      cuenta </span></b></p></td>
+                  <td><p  class="PARRAFO">Campo 
+                      obligatorio que funciona de la siguiente manera. Si el campo Retirar 
+                      cuenta se encuentra marcado, este campo es de salida y despliega 
+                      la sucursal asociada con la cuenta seleccionada para ser eliminada. 
+                      Cuando el campo Retirar cuenta est&aacute; desmarcado, es 
+                      decir, la acci&oacute;n a ejecutar mediante la novedad es adicionar 
+                      una nueva cuenta, este campo es editable y permite digitar el c&oacute;digo 
+                      de la <a href="NUH_020B.html" >sucursal</a> 
+                      de la entidad a la que pertence la cuenta a asociar con la tarjeta 
+                      d&eacute;bito.</p></td>
+                </tr>
+              </table>
+            </div>
+
+            <div>
+            </section>
+    <script src="../js/menu.js"></script>
+</body>
+<footer>
+    <div>
+        <img class="TITLE"  src= "../img/logo.PNG">
+    </div>
+    <p>OpenCard SAS</p>
+    <p>Calle 77 Nº 11-19 Piso 4°,Bogotá D.C.</p>
+    <p>Tel (57) 601 - 313 37 75  <a href="http://www.OpenCard.com"
+            target="_blank">www.OpenCard.com</a></p>
+
+
+
+</footer>
+</html>

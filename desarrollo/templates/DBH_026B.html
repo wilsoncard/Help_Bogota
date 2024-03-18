@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BANKBU®</title>
+    <link rel="stylesheet" href="../css/pages.css">
+    <link rel="stylesheet" href="../css/style.css">
+ <link rel="icon" href="../img/ACQUIRER-logo.JPG" type="image/x-icon">
+</head>
+
+<body>
+
+    <header>
+        <img class="logo" src="../img/logoBankbu_.PNG" alt="Logo de Mi Empresa">
+        <div id="menuBtn">
+            <img class="TITLE"  src= "../img/menu.PNG" alt="Botón de Menú ">
+        </div>
+    </header>
+    <nav>
+        <ul>
+            <li>
+                    <a href="../index.html" class="main-optionINICIO">INICIO</a>
+            </li>
+            <li>
+                <a href="NUH_INTB.html" class="main-optionINTRODUCCIÓN">INTRODUCCIÓN</a>
+            </li>
+            <li><a href="#" class="main-option">NUCLEO ▼</a>
+                <ul>
+                    <li><a href="NUH_000B.html">Config. Sistema</a></li>
+                    <li><a href="NUH_00B_N2.html">Parametros</a></li>
+                    <li><a href="NUH_00B_inicio.html">Inicio</a></li>
+                    <li><a href="NUH_00B_proceso.html">Procesos</a></li>
+                    <li><a href="NUH_00B_inf.html">Inf. Cliente</a></li>
+                    <li><a href="NUH_00B_conta.html">Contabilidad</a></li>
+                    <li style="visibility: hidden; display: none;"><a href="NUH_00B_audi.html">Auditoria</a></li>
+
+                </ul>
+            </li>
+            <li>
+             <a href="#" class="main-option">EMISOR  ▼</a>
+                <ul>
+                    <li><a href="EMH_000B.html">Productos</a></li>
+                    <li><a href="EMH_000Bsoli.html">Solicitudes</a></li>
+                    <li><a href="EMH_000Bmerca.html">Mercadeo</a></li>
+                    <li><a href="EMH_000Bservi.html">Servicio Al Cliente</a></li>
+                    <li><a href="EMH_000Bpendi.html">Pendientes</a></li>
+                    <li><a href="EMH_000Btrans.html">Transaccionabilidad</a></li>
+                    <li><a href="EMH_000Bauto.html">Autorizaciones</a></li>
+                    <li><a href="EMH_000Bplasti.html">Adm. Plasticos</a></li>
+                    <li><a href="EMH_000Brecla.html">Reclamos</a></li>
+                    <li><a href="MEH_032B.html">Lealtad</a></li>
+                    <li><a href="COH_064B.html">Cobranzas</a></li>
+                </ul>
+            </li>
+ <li style="visibility: hidden">
+                <a href="ACH_000B.html" class="main-option">ADQUIRIENTE</a>
+            </li>
+            <li style="visibility: hidden">
+                <a href="DBH_000B.html" class="main-option">TARJETA DEBITO</a>
+            </li></ul>
+    </nav>
+
+    <section>
+        <div> 
+            <table>
+              <tr> 
+                <td  >
+          <div> 
+                    <p  class="TITLE">Par&aacute;metros de conciliaci&oacute;n</p>
+                  </div></td>
+              </tr>
+            </table>
+            <p class="PARRAFO" >Mediante esta opci&oacute;n se efect&uacute;a 
+              la parametrizaci&oacute;n por <a href="DBH_018B.html" >producto</a> 
+              y <a href="NUH_027B.html" >origen</a>, del plazo y margen de 
+              diferencia a tener en cuenta para el proceso de cruce del movimiento contra 
+              las <a href="DBH_025B.html" >autorizaciones</a>. Las combinatorias 
+              producto/origen no incluidas en esta opci&oacute;n, no permiten ning&uacute;n 
+              margen de diferencia en el cruce del movimiento.</span></p>
+            
+            <p class="TITLE"><img src="../img/DBF_026E.PNG"></p>
+
+            <p  class="PARRAFO">El formulario contiene las opciones Actualizar, 
+              Eliminar y Adicionar.</p>
+            <p  class="PARRAFO"><b ><span class="SUBTITULO">Adicionar:</span></b> 
+              si el usuario invoca la opci&oacute;n Adicionar, se despliega un 
+              nuevo formulario con los siguientes campos.</p>
+            <p class="TITLE"><img src="../img/DBF_026E1.PNG"></p>
+            
+            <p  class="TITLE">Descripci&oacute;n de campos</p>
+              <table>
+                <tr> 
+                  <td class="titletable"  ><p class="SUBTITULO"><b><span >Producto</span></b></p></td>
+                  <td><p  class="PARRAFO">Campo 
+                      obligatorio con lista de valores de la que se selecciona el <a href="DBH_018B.html" >producto 
+                      d&eacute;bito</a> para el que se van a definir los par&aacute;metros 
+                      de conciliaci&oacute;n.</p></td>
+                </tr>
+                <tr> 
+                  <td class="titletable"> 
+                    <p class="SUBTITULO"><b><span >Origen</span></b></p></td>
+                  <td><p  class="PARRAFO">Este 
+                      campo obligatorio con lista de valores, permite seleccionar el <span class="PARRAFO"><a href="NUH_027B.html" >origen</a></span>  
+                      a trav&eacute;s del cual debe ingresar la transacci&oacute;n efectuada 
+                      con el producto anterior, para que apliquen los par&aacute;metros 
+                      de conciliaci&oacute;n a definir.</p></td>
+                </tr>
+                <tr> 
+                  <td class="titletable" > 
+                    <p class="SUBTITULO"><b><span >Porcentaje</span></b></p></td>
+                  <td><p class="PARRAFO" >Campo 
+                      num&eacute;rico de 3 enteros y 2 decimales, obligatorio, en el cual 
+                      se define el porcentaje m&aacute;ximo de diferencia que puede existir 
+                      entre el movimiento cargado y las autorizaciones registradas para 
+                      que &eacute;ste sea aceptado; si el porcentaje de diferencia supera 
+                      este valor, el movimiento es marcado y eliminado. </span></p></td>
+                </tr>
+                <tr> 
+                  <td class="titletable" > 
+                    <p class="SUBTITULO"><b><span >Plazo cruce</span></b></p></td>
+                  <td><p  class="PARRAFO">En 
+                      este campo indica el n&uacute;mero m&aacute;ximo de d&iacute;as que 
+                      el sistema debe esperar desde el momento del ingreso de la transacci&oacute;n 
+                      para hacer el cruce de la misma.</p></td>
+                </tr>
+                <tr> 
+                  <td class="titletable" > 
+                    <p class="SUBTITULO"><b><span >Cr. acreedor</span></b></p></td>
+                  <td><p  class="PARRAFO">Campo 
+                      num&eacute;rico de 4 d&iacute;gitos obligatorio que permite registrar 
+                      el n&uacute;mero de d&iacute;as que las transacciones cr&eacute;dito 
+                      tienen de plazo para efectuar la conciliaci&oacute;n o cruce del movimiento 
+                      asociado a la combinatoria producto/origen seleccionados. Despu&eacute;s 
+                      de cumplido este plazo, el movimiento que no haya sido cruzado ser&aacute; 
+                      marcado y eliminado</p></td>
+                </tr>
+                <tr> 
+                  <td class="titletable" > 
+                    <p class="SUBTITULO"><b><span >Cr. deudor</span></b></p></td>
+                  <td><p  class="PARRAFO">En 
+                      este campo num&eacute;rico de 4 d&iacute;gitos se indica el n&uacute;mero 
+                      de d&iacute;as que las transacciones d&eacute;bito tienen de plazo 
+                      para efectuar la conciliaci&oacute;n o cruce del movimiento asociado 
+                      a la combinatoria producto/origen seleccionados. Despu&eacute;s de 
+                      cumplido este plazo, el movimiento que no haya sido cruzado ser&aacute; 
+                      marcado y eliminado.
+                    </p></td>
+                </tr>
+              <tr> 
+                <td  > 
+                  <p class="SUBTITULO"><b><span >Autorizaci&oacute;n</span></b></p></td>
+                <td><p  class="PARRAFO">Campo 
+                    tipo combo en el que se indica Si o No el n&uacute;mero 
+                    de autorizaci&oacute;n debe ser tenido en cuenta por el sistema al momento 
+                    de hacer el cruce y conciliaci&oacute;n de las transacciones.</p></td>
+              </tr>
+
+              <tr> 
+                <td  > 
+                  <p class="SUBTITULO"><b><span >Fecha comprobante</span></b></p></td>
+                <td><p  class="PARRAFO">En 
+                    este campo tipo combo se indica Si o No la fecha del 
+                    comprobante debe ser tenida en cuenta por el sistema al momento de hacer 
+                    el cruce y conciliaci&oacute;n de las transacciones.</p></td>
+              </tr>
+            </table>
+
+            <p  class="PARRAFO"><b ><span class="SUBTITULO">Actualizar:</span></b> 
+              si el usuario selecciona un registro e invoca la opci&oacute;n Actualizar, 
+              se despliega un formulario en el cual los &uacute;nicos campos NO modificable 
+              son Producto y Origen.</p>
+            <p class="TITLE"><img src="../img/DBF_026E2.PNG"></p>
+            
+            <div>
+            </section>
+    <script src="../js/menu.js"></script>
+</body>
+<footer>
+    <div>
+        <img class="TITLE"  src= "../img/logo.PNG">
+    </div>
+    <p>OpenCard SAS</p>
+    <p>Calle 77 Nº 11-19 Piso 4°,Bogotá D.C.</p>
+    <p>Tel (57) 601 - 313 37 75  <a href="http://www.OpenCard.com"
+            target="_blank">www.OpenCard.com</a></p>
+
+
+
+</footer>
+</html>

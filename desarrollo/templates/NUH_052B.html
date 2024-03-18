@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BANKBU®</title>
+    <link rel="stylesheet" href="../css/pages.css">
+    <link rel="stylesheet" href="../css/style.css">
+ <link rel="icon" href="../img/ACQUIRER-logo.JPG" type="image/x-icon">
+</head>
+
+<body>
+    <header>
+        <img class="logo" src="../img/logoBankbu_.PNG" alt="Logo de Mi Empresa">
+        <div id="menuBtn">
+            <img class="TITLE"  src= "../img/menu.PNG" alt="Botón de Menú ">
+        </div>
+    </header>
+    <nav>
+        <ul>
+            <li>
+                    <a href="../index.html" class="main-optionINICIO">INICIO</a>
+            </li>
+            <li>
+                <a href="NUH_INTB.html" class="main-optionINTRODUCCIÓN">INTRODUCCIÓN</a>
+            </li>
+            <li><a href="#" class="main-option">NUCLEO ▼</a>
+                <ul>
+                    <li><a href="NUH_000B.html">Config. Sistema</a></li>
+                    <li><a href="NUH_00B_N2.html">Parametros</a></li>
+                    <li><a href="NUH_00B_inicio.html">Inicio</a></li>
+                    <li><a href="NUH_00B_proceso.html">Procesos</a></li>
+                    <li><a href="NUH_00B_inf.html">Inf. Cliente</a></li>
+                    <li><a href="NUH_00B_conta.html">Contabilidad</a></li>
+                    <li style="visibility: hidden; display: none;"><a href="NUH_00B_audi.html">Auditoria</a></li>
+
+                </ul>
+            </li>
+            <li>
+             <a href="#" class="main-option">EMISOR  ▼</a>
+                <ul>
+                    <li><a href="EMH_000B.html">Productos</a></li>
+                    <li><a href="EMH_000Bsoli.html">Solicitudes</a></li>
+                    <li><a href="EMH_000Bmerca.html">Mercadeo</a></li>
+                    <li><a href="EMH_000Bservi.html">Servicio Al Cliente</a></li>
+                    <li><a href="EMH_000Bpendi.html">Pendientes</a></li>
+                    <li><a href="EMH_000Btrans.html">Transaccionabilidad</a></li>
+                    <li><a href="EMH_000Bauto.html">Autorizaciones</a></li>
+                    <li><a href="EMH_000Bplasti.html">Adm. Plasticos</a></li>
+                    <li><a href="EMH_000Brecla.html">Reclamos</a></li>
+                    <li><a href="MEH_032B.html">Lealtad</a></li>
+                    <li><a href="COH_064B.html">Cobranzas</a></li>
+                </ul>
+            </li>
+ <li style="visibility: hidden">
+                <a href="ACH_000B.html" class="main-option">ADQUIRIENTE</a>
+            </li>
+            <li style="visibility: hidden">
+                <a href="DBH_000B.html" class="main-option">TARJETA DEBITO</a>
+            </li></ul>
+    </nav>
+
+    <section>
+        <div> 
+            <table>
+              <tr> 
+                <td><div> 
+                    <p  class="TITLE">Par&aacute;metros n&uacute;mero de tarjeta</p>
+                  </div></td>
+              </tr>
+            </table>
+            <p class="PARRAFO" >Mediante esta funci&oacute;n se habilita 
+              el mantenimiento y consulta de la tabla que contiene las condiciones bajo 
+              las cuales se generan, de manera &uacute;nica, los n&uacute;meros de las tarjetas 
+              para cada <a href="MEH_002B.html" >producto</a> (Bin, 
+              segmento y grupo de afinidad), informaci&oacute;n que es almacenada en el 
+              evento en que dichas condiciones var&iacute;en.
+              </span></p>
+            <p class="TITLE"><img src="../img/NUF_052E.PNG"761" height="544"></p>
+            <p  class="PARRAFO">El formulario contiene las opciones Actualizar, 
+              Eliminar, Adicionar y Detalle. </p>
+            <p  class="PARRAFO"><span class="SUBTITULO"><span 
+        ><b ><span class="SUBTITULO">Adicionar</span></b>:</span><span 
+        ></span></span><span 
+        > 
+              Si el usuario invoca la opci&oacute;n Adicionar se despliega un nuevo formulario. 
+              </span></p>
+            <p class="TITLE"><img src="../img/NUF_052E1.PNG"480" height="340"></p>
+            <p  class="TITLE">Descripci&oacute;n de campos</p>
+            <table>
+              <tr> 
+                <td class="titletable"><p class="SUBTITULO"><b><span 
+        >Producto</span></span></b></p></td>
+                <td><p  class="PARRAFO">Campo 
+                    obligatorio con lista de valores de la cual se selecciona el <a href="MEH_002B.html" >producto</a> 
+                    (Bin, segmento, grupo de afinidad) para el cula se van a definir los 
+                    par&aacute;metros del n&uacute;mero de tarjeta.</p></td>
+              </tr>
+           
+              <tr> 
+                <td class="titletable"><p class="SUBTITULO"><b><span 
+        >Estado</span></b></p></td>
+                <td><p  class="PARRAFO">En 
+                    este campo se selecciona entre Nulo, Vigente o Hist&oacute;rico para determinar 
+                    por la relaci&oacute;n entre los diferentes registros para el mismo 
+                    producto.
+                  </p></td>
+              </tr>
+           
+              <tr> 
+                <td class="titletable"><p class="SUBTITULO"><b><span 
+        >Longitud 
+                    tarjeta </span></b></p></td>
+                <td><p  class="PARRAFO">Campo 
+                    de salida, que indica la cantidad m&aacute;xima de d&iacute;gitos que 
+                    contiene el n&uacute;mero de la tarjeta, incluidos, entre otros, el 
+                    bin y el d&iacute;gito de chequeo, de acuerdo con lo parametrizado en 
+                    la opci&oacute;n <a href="MEH_001B.html" >definici&oacute;n 
+                    de bines</a>.
+                  </p></td>
+              </tr>
+           
+              <tr> 
+                <td class="titletable"><p class="SUBTITULO"><b><span 
+        >Longitud 
+                    de la secuencia</span></b></p></td>
+                <td><p  class="PARRAFO">Campo 
+                    de salida, que indica la cantidad m&aacute;xima de d&iacute;gitos que 
+                    contiene la secuencia de la tarjeta, de acuerdo con lo parametrizado 
+                    en la opci&oacute;n <a href="MEH_001B.html" >definici&oacute;n 
+                    de bines</a>. </p></td>
+              </tr>
+           
+              <tr> 
+                <td class="titletable"><p class="SUBTITULO"><b><span 
+        >Longitu 
+                    bin </span></b></p></td>
+                <td><p  class="PARRAFO">Campo 
+                    de salida, que indica la cantidad m&aacute;xima de d&iacute;gitos que 
+                    contiene el bin, de acuerdo con lo parametrizado en la opci&oacute;n 
+                    <a href="MEH_001B.html" >definici&oacute;n de bines</a>. 
+                   
+                  </p></td>
+              </tr>
+           
+              <tr> 
+                <td class="titletable"><p class="SUBTITULO"><b><span 
+        >Longitud 
+                    d&iacute;gito chequeo</span></b></p></td>
+                <td><p  class="PARRAFO">Campo 
+                    de salida, que indica la cantidad de d&iacute;gitos que conforman el 
+                    d&iacute;gito de chequeo, de acuerdo con lo parametrizado en la opci&oacute;n 
+                    <a href="MEH_001B.html" >definici&oacute;n de bines</a>. 
+                   
+                  </p></td>
+              </tr>
+           
+              <tr> 
+                <td class="titletable"><p class="SUBTITULO"><b><span 
+        >Forma 
+                    asignaci&oacute;n n&uacute;mero</span></b></p></td>
+                <td><p  class="PARRAFO">Este 
+                    campo contiene un combo con las opciones Din&aacute;mico o 
+                    Secuencial, para seleccionar la manera como la entidad desea 
+                    que sean generados los n&uacute;meros de las tarjetas por producto. 
+                    Din&aacute;mico indica que se har&aacute; aletaoriamente y Secuencial 
+                    que se har&aacute; siguiendo un orden consecutivo.
+                  </p></td>
+              </tr>
+           
+              <tr> 
+                <td class="titletable"><p class="SUBTITULO"><b><span 
+        >Posici&oacute;n 
+                    del bin</span></b></p></td>
+                <td><p  class="PARRAFO">En 
+                    este campo se puede ingresar un n&uacute;mero del 1 al 5 para indicar 
+                    la posici&oacute;n que ocupar&aacute; el bin dentro del n&uacute;mero 
+                    de la tarjeta
+                  </p></td>
+              </tr>
+           
+              <tr> 
+                <td class="titletable"><p class="SUBTITULO"><b><span 
+        >Posici&oacute;n 
+                    de la oficina</span></b></p></td>
+                <td><p  class="PARRAFO">En 
+                    este campo se puede ingresar un n&uacute;mero del 1 al 5 para indicar 
+                    la posici&oacute;n que ocupar&aacute; el c&oacute;digo de la oficina 
+                    dentro del n&uacute;mero de la tarjeta. </p></td>
+              </tr>
+           
+              <tr> 
+                <td class="titletable"><p class="SUBTITULO"><b><span 
+        >Posici&oacute;n 
+                    de la serie</span></b></p></td>
+                <td><p  class="PARRAFO">En 
+                    este campo se puede ingresar un n&uacute;mero del 1 al 5 para indicar 
+                    la posici&oacute;n que ocupar&aacute; la serie definida para el producto 
+                    dentro del n&uacute;mero de la tarjeta.
+                  </p></td>
+              </tr>
+           
+              <tr> 
+                <td class="titletable"><p class="SUBTITULO"><b><span >Posici&oacute;n 
+                    de la secuencia</span></b></p></td>
+                <td><p  class="PARRAFO">En 
+                    este campo se puede ingresar un n&uacute;mero del 1 al 5 para indicar 
+                    la posici&oacute;n que ocupar&aacute; la secuencia dentro del n&uacute;mero 
+                    de la tarjeta. </p></td>
+              </tr>
+           
+              <tr> 
+                <td class="titletable"><p class="SUBTITULO"><b><span 
+        >Posici&oacute;n 
+                    del d&iacute;gito de chequeo</span></b></p></td>
+                <td><p  class="PARRAFO">En 
+                    este campo se puede ingresar un n&uacute;mero del 1 al 5 para indicar 
+                    la posici&oacute;n que ocupar&aacute; el d&iacute;gito de chequeo dentro 
+                    del n&uacute;mero de la tarjeta.
+                  </p></td>
+              </tr>
+           
+              <tr> 
+                <td class="titletable"><p class="SUBTITULO"><b><span 
+        >Posici&oacute;n 
+                    del c&oacute;digo alterno</span></b></p></td>
+                <td><p  class="PARRAFO">En 
+                    este campo se puede ingresar un n&uacute;mero del 1 al 5 para indicar 
+                    la posici&oacute;n que ocupar&aacute; el c&oacute;digo alterno dentro 
+                    del n&uacute;mero de la tarjeta.
+                  </p></td>
+              </tr>
+           
+              <tr> 
+                <td class="titletable"><p class="SUBTITULO"><b><span 
+        >N&uacute;mero 
+                    de tarjeta generado</span></b></p></td>
+                <td><p  class="PARRAFO">Campo 
+                    de salida que muestra la manera como quedar&aacute; conformado el n&uacute;mero 
+                    de tarjeta de acuerdo con los par&aacute;metros ingresados por el usuario.
+                  </p></td>
+              </tr>
+            </table>
+            <p  class="PARRAFO"><a name="BL_GENERAR"></a><span class="SUBTITULO"><span 
+        ><b >Generar 
+              n&uacute;mero de tarjeta </b>:</span><span 
+        ></span></span><span 
+        > 
+              Una vez ingresada la informaci&oacute;n requerida y mediante la utilizaci&oacute;n 
+              de esta opci&oacute;n, se mostrar&aacute; en el campo N&uacute;mero de 
+              tarjeta generado la manera como quedar&aacute; conformado el n&uacute;mero 
+              de la tarjeta.</span></p>
+            <p class="TITLE"><img src="../img/NUF_052E2.PNG"389" height="363"></p>
+            <p  class="PARRAFO"><span class="SUBTITULO"><span 
+        ><b ><span class="SUBTITULO">Actualizar</span></b>:</span></span><span 
+        > 
+              Si el usuario selecciona un registro e invoca la opci&oacute;n Actualizar 
+              se despliega un formulario en el cual los campos modificables son Estado, 
+              Forma asignaci&oacute;n n&uacute;mero, Posici&oacute;n del bin, Posici&oacute;n 
+              de la oficina, Posici&oacute;n de la serie, Posici&oacute;n de la secuencia, 
+              Posici&oacute;n del d&iacute;gito de chequeo y Posici&oacute;n del c&oacute;digo 
+              alterno.</span></p>
+            <p  class="PARRAFO"><span >Al igual que 
+              en el formulario adicionar, cuenta con una opci&oacute;n que permite <a href="NUH_052B.html#BL_GENERAR" >generar 
+              n&uacute;mero de tarjeta</a> de acuerdo con la modificaci&oacute;n hecha 
+              a los par&aacute;metros inciales.</span></p>
+            <p class="TITLE"><img src="../img/NUF_052E3.PNG"471" height="340"></p>
+            
+            <div>
+              <p  class="PARRAFO"><span class="SUBTITULO"><span 
+        ><b >Detalle</b>:</span></span><span 
+        > 
+                Si el usuario selecciona un registro e invoca la opci&oacute;n Detalle, 
+                se despliega un formulario con la informaci&oacute;n completa del registro 
+                y en el cual ning&uacute;no de sus campos es modificable.</span></p>
+              <p class="TITLE"><img src="../img/NUF_052E4.PNG"650" ></p>
+              <p  class="TITLE">
+        </section>
+    <script src="../js/menu.js"></script>
+
+    <footer>
+        <div>
+            <img class="TITLE"  src= "../img/logo.PNG">
+        </div>
+        <p>OpenCard SAS</p>
+        <p>Calle 77 Nº 11-19 Piso 4°, Bogotá D.C.</p>
+        <p>Tel (57) 601 - 313 37 75  <a href="http://www.OpenCard.com"
+                target="_blank">www.OpenCard.com</a></p>
+
+    </footer>
+</body>
+
+</html>

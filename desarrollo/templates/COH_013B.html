@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>BANKBU®</title>
+  <link rel="stylesheet" href="../css/pages.css">
+  <link rel="stylesheet" href="../css/style.css">
+  <link rel="icon" href="../img/ACQUIRER-logo.JPG" type="image/x-icon">
+</head>
+
+<body>
+
+  <header>
+    <img class="logo" src="../img/logoBankbu_.PNG" alt="Logo de Mi Empresa">
+    <div id="menuBtn">
+      <img class="TITLE" src="../img/menu.PNG" alt="Botón de Menú ">
+    </div>
+  </header>
+  <nav>
+    <ul>
+      <li>
+        <a href="../index.html" class="main-optionINICIO">INICIO</a>
+      </li>
+      <li>
+        <a href="NUH_INTB.html" class="main-optionINTRODUCCIÓN">INTRODUCCIÓN</a>
+      </li>
+      <li><a href="#" class="main-option">NUCLEO ▼</a>
+        <ul>
+          <li><a href="NUH_000B.html">Config. Sistema</a></li>
+          <li><a href="NUH_00B_N2.html">Parametros</a></li>
+          <li><a href="NUH_00B_inicio.html">Inicio</a></li>
+          <li><a href="NUH_00B_proceso.html">Procesos</a></li>
+          <li><a href="NUH_00B_inf.html">Inf. Cliente</a></li>
+          <li><a href="NUH_00B_conta.html">Contabilidad</a></li>
+          <li style="visibility: hidden; display: none;"><a href="NUH_00B_audi.html">Auditoria</a></li>
+
+        </ul>
+      </li>
+      <li>
+        <a href="#" class="main-option">EMISOR ▼</a>
+        <ul>
+          <li><a href="EMH_000B.html">Productos</a></li>
+          <li><a href="EMH_000Bsoli.html">Solicitudes</a></li>
+          <li><a href="EMH_000Bmerca.html">Mercadeo</a></li>
+          <li><a href="EMH_000Bservi.html">Servicio Al Cliente</a></li>
+          <li><a href="EMH_000Bpendi.html">Pendientes</a></li>
+          <li><a href="EMH_000Btrans.html">Transaccionabilidad</a></li>
+          <li><a href="EMH_000Bauto.html">Autorizaciones</a></li>
+          <li><a href="EMH_000Bplasti.html">Adm. Plasticos</a></li>
+          <li><a href="EMH_000Brecla.html">Reclamos</a></li>
+                    <li><a href="MEH_032B.html">Lealtad</a></li>
+                    <li><a href="COH_064B.html">Cobranzas</a></li>
+        </ul>
+      </li>
+      <li style="visibility: hidden">
+        <a href="ACH_000B.html" class="main-option">ADQUIRIENTE</a>
+      </li>
+      <li style="visibility: hidden">
+        <a href="DBH_000B.html" class="main-option">TARJETA DEBITO</a>
+      </li>
+    </ul>
+  </nav>
+
+  <section>
+    <div>
+      <table>
+        <tr>
+          <td>
+            <div>
+              <p class="TITLE">Consulta bitácora de autorizaciones</p>
+            </div>
+          </td>
+        </tr>
+      </table>
+      <p class="PARRAFO">Esta funcionalidad permite consultar en detalle, las autorizaciones que ya cruzaron con el
+        movimiento o aquellas que fueron eliminadas por el sistema al haber cumplido el tiempo de vigencia dado por
+        parámetro.</p>
+      <p class="PARRAFO"><span class="SUBTITULO">Filtro:</span>  El formulario cuenta con conjunto de campos o criterios
+        para realizar la búsqueda, mínimo debe contener un dato:</p>
+      <p class="TITLE"><img src="../img/COF_013B.PNG"></p>
+
+      <table>
+        <tr>
+          <td class="titletable">
+            <p class="SUBTITULO"><b><span>N&uacute;mero
+                  tarjeta </span></b></p>
+          </td>
+          <td>
+            <p class="PARRAFO">Campo en el que se digita el número de tarjeta por la que se desea efectuar la consulta.
+            <p>
+          </td>
+        </tr>
+        <tr>
+          <td class="titletable">
+            <p class="SUBTITULO"><b>Establecimiento</b></p>
+          </td>
+          <td>
+            <p class="PARRAFO">Campo en el que se puede digitar o seleccionar de la lista de valores provista el código
+              del comercio en el que se efectuó la transacción que se requiere consultar. Si el código existe, se
+              despliega el nombre del mismo.
+            <p>
+          </td>
+        </tr>
+        <tr>
+          <td class="titletable">
+            <p class="SUBTITULO"><b>N&uacute;mero
+                de autorizaci&oacute;n</b></p>
+          </td>
+          <td>
+            <p class="PARRAFO">Campo en el que se digita el número de autorización sobre el cual se desea realizar la
+              consulta.</p>
+          </td>
+        </tr>
+        <tr>
+          <td class="titletable">
+            <p class="SUBTITULO"><b>Monto transacción</b></p>
+          </td>
+          <td>
+            <p class="PARRAFO">Campo en el que se digita el monto o valor de la utilización sobre el cual se desea
+              realizar la consulta.</p>
+          </td>
+        </tr>
+        <tr>
+          <td class="titletable">
+            <p class="SUBTITULO">C&oacute;digo
+              respuesta</p>
+          </td>
+          <td>
+            <p class="PARRAFO">Campo en el que se puede digitar o seleccionar de la lista de valores provista, el código
+              de respuesta dado por el sistema sobre la autorización respecto de la cual se desea realizar la consulta.
+            </p>
+          </td>
+        </tr>
+        <tr>
+          <td class="titletable">
+            <p class="SUBTITULO">Transacción</p>
+          </td>
+          <td>
+            <p class="PARRAFO">Campo en el que se puede digitar o seleccionar de la lista de valores provista, el código
+              de la clase de transacción asociada a la utilización respecto de la cual se desea realizar la consulta. Si
+              el código digitado hace parte de la lista, se muestra la descripción o nombre de la misma, en caso
+              contrario, el sistema notifica que ese dato no se encuentra.</p>
+          </td>
+        </tr>
+        <tr>
+          <td class="titletable">
+            <p class="SUBTITULO">Fecha
+              transacci&oacute;n</p>
+          </td>
+          <td>
+            <p class="PARRAFO">Campo en el que el sistema permite seleccionar de un calendario, la fecha en la que se
+              realizó la utilización respecto de la cual se desea realizar la consulta.</p>
+          </td>
+        </tr>
+        <tr>
+          <td class="titletable">
+            <p class="SUBTITULO">Fecha
+              de proceso</p>
+          </td>
+          <td>
+            <p class="PARRAFO">Campo en el que se permite seleccionar de un calendario, la fecha en la que se generó la
+              autorización respecto de la cual se desea realizar la consulta.</p>
+          </td>
+        </tr>
+        <tr>
+          <td class="titletable">
+            <p class="SUBTITULO">Estado</p>
+          </td>
+          <td>
+            <p class="PARRAFO">Campo que ofrece una lista de valores tipo combo de la que se puede seleccionar el estado
+              de la autorización por el cual se desea realizar la consulta: Activa, Procesada o Reversada.</p>
+          </td>
+        </tr>
+      </table>
+
+      <p class="PARRAFO">A trav&eacute;s del bot&oacute;n Buscar, se muestra un formulario
+        que contiene la siguiente informaci&oacute;n, junto con la opci&oacute;n Detalle.</p>
+      <p class="TITLE"><img src="../img/COF_013B1.PNG"></p>
+
+      <p class="PARRAFO"><span class="PARRAFO"><span class="SUBTITULO">Detalle:</span> 
+          A trav&eacute;s de este bot&oacute;n el sistema muestra un formulario con
+          la siguiente informaci&oacute;n:</span></p>
+      <p class="TITLE"><img src="../img/COF_013B2.PNG"></p>
+
+  </section>
+  <script src="../js/menu.js"></script>
+</body>
+<footer>
+  <div>
+    <img class="TITLE" src="../img/logo.PNG">
+  </div>
+  <p>OpenCard SAS</p>
+  <p>Calle 77 Nº 11-19 Piso 4°,Bogotá D.C.</p>
+  <p>Tel (57) 601 - 313 37 75 <a href="http://www.OpenCard.com" target="_blank">www.OpenCard.com</a></p>
+
+</footer>
+
+</html>

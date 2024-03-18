@@ -1,0 +1,691 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BANKBU®</title>
+    <link rel="stylesheet" href="../css/pages.css">
+    <link rel="stylesheet" href="../css/style.css">
+ <link rel="icon" href="../img/ACQUIRER-logo.JPG" type="image/x-icon">
+</head>
+
+<body>
+    <header>
+        <img class="logo" src="../img/logoBankbu_.PNG" alt="Logo de Mi Empresa">
+        <div id="menuBtn">
+            <img class="TITLE"  src= "../img/menu.PNG" alt="Botón de Menú ">
+        </div>
+    </header>
+    <nav>
+        <ul>
+            <li>
+                    <a href="../index.html" class="main-optionINICIO">INICIO</a>
+            </li>
+            <li>
+                <a href="NUH_INTB.html" class="main-optionINTRODUCCIÓN">INTRODUCCIÓN</a>
+            </li>
+            <li><a href="#" class="main-option">NUCLEO ▼</a>
+                <ul>
+                    <li><a href="NUH_000B.html">Config. Sistema</a></li>
+                    <li><a href="NUH_00B_N2.html">Parametros</a></li>
+                    <li><a href="NUH_00B_inicio.html">Inicio</a></li>
+                    <li><a href="NUH_00B_proceso.html">Procesos</a></li>
+                    <li><a href="NUH_00B_inf.html">Inf. Cliente</a></li>
+                    <li><a href="NUH_00B_conta.html">Contabilidad</a></li>
+                    <li style="visibility: hidden; display: none;"><a href="NUH_00B_audi.html">Auditoria</a></li>
+
+                </ul>
+            </li>
+            <li>
+             <a href="#" class="main-option">EMISOR  ▼</a>
+                <ul>
+                    <li><a href="EMH_000B.html">Productos</a></li>
+                    <li><a href="EMH_000Bsoli.html">Solicitudes</a></li>
+                    <li><a href="EMH_000Bmerca.html">Mercadeo</a></li>
+                    <li><a href="EMH_000Bservi.html">Servicio Al Cliente</a></li>
+                    <li><a href="EMH_000Bpendi.html">Pendientes</a></li>
+                    <li><a href="EMH_000Btrans.html">Transaccionabilidad</a></li>
+                    <li><a href="EMH_000Bauto.html">Autorizaciones</a></li>
+                    <li><a href="EMH_000Bplasti.html">Adm. Plasticos</a></li>
+                    <li><a href="EMH_000Brecla.html">Reclamos</a></li>
+                    <li><a href="MEH_032B.html">Lealtad</a></li>
+                    <li><a href="COH_064B.html">Cobranzas</a></li>
+                </ul>
+            </li>
+ <li style="visibility: hidden">
+                <a href="ACH_000B.html" class="main-option">ADQUIRIENTE</a>
+            </li>
+            <li style="visibility: hidden">
+                <a href="DBH_000B.html" class="main-option">TARJETA DEBITO</a>
+            </li></ul>
+    </nav>
+
+    <section>
+        <div> 
+            <table>
+              <tr> 
+                <td><div> 
+                    <p  class="TITLE">Estados y bloqueos </p>
+                  </div></td>
+              </tr>
+            </table>
+            <p  class="PARRAFO">En este formulario se definen a partir de 
+              los <a href="NUH_012B.html" >c&oacute;digos de bloqueo</a> parametrizados, 
+              los diferentes bloqueos que la entidad puede asociar a las tarjetas y las 
+              transacciones o acciones que se pueden realizar en cada uno de ellos. El formulario 
+              no permite la adici&oacute;n, modificaci&oacute;n o eliminaci&oacute;n de 
+              ninguno de los registros desplegados.
+            </p>
+            <p class="TITLE"><img src="../img/CAF_002E.PNG"764" ></p>
+            <p  class="PARRAFO">El formulario contiene la opci&oacute;n Bloqueo 
+              seg&uacute;n empresa, y cuando el usuario marca cualquiera de los registros 
+              y utiliza esta funcionalidad se despliega un nuevo formulario</p>
+            <p class="TITLE"><img src="../img/CAF_002E1.PNG"485" ></p>
+
+            <p  class="PARRAFO">El formulario denominado Bloqueos seg&uacute;n 
+              empresa contiene las opciones Actualizar y Eliminar</p>
+            <p  class="PARRAFO"><a name="Actualizar"></a>Actualizar: 
+              Si el usuario invoca la opci&oacute;n Actualizar se despliega un nuevo formulario 
+              que se encuentra dividido en dos grandes bloques: Transacciones habilitadas 
+              y Herencia Bloqueos.</p>
+            <p  class="PARRAFO">En este primer bloque se marcan las casillas 
+              para indicar de todas las transacciones all&iacute; contenidas cuales est&aacute;n 
+              permitidas para el bloqueo</p>
+            <p  class="TITLE"><img src="../img/CAF_002E2.PNG"525" ></p>
+            <p  class="TITLE">Descripci&oacute;n de campos</p>
+            <table>
+              <tr> 
+                <td class="titletable"  ><p class="SUBTITULO"><b>Bloqueo 
+                    seg&uacute;n empresa
+                    </b></p></td>
+                <td><p  class="PARRAFO">En 
+                    este campo obligatorio se define el c&oacute;digo y nombre con los cuales 
+                    la entidad va a identificar internamente sus propios bloqueos para relacionarlos 
+                    con sus respectivos equivalentes que se encuentran definidos previamente 
+                    en los <a href="NUH_012B.html" >c&oacute;digos de bloqueo</a> 
+                    del n&uacute;cleo.
+                  </p></td>
+              </tr>
+              <tr> 
+                <td class="titletable"><p class="SUBTITULO"><b>Trx 
+                    forzada
+                    </b></p></td>
+                <td><p  class="PARRAFO">Una 
+                    transacci&oacute;n forzada es aquella transacci&oacute;n que no tiene 
+                    en cuenta las validaciones como por ejemplo el disponible para su aplicaci&oacute;n; 
+                    esta instrucci&oacute;n se sobrepone a la definida en la opci&oacute;n 
+                    <a href="MEH_003B.html" >transacciones por empresa</a>. 
+                    Este campo se debe marcar si la entidad define que el bloqueo permite 
+                    una transacci&oacute;n con dichas caracter&iacute;sticas.
+                  </p></td>
+              </tr>
+              <tr> 
+                <td class="titletable" ><p class="SUBTITULO"><b>Compra 
+                    normal
+                    </b></p></td>
+                <td><p  class="PARRAFO">Este 
+                    campo se debe marcar si la entidad define que el bloqueo permite una 
+                    transacci&oacute;n con dichas caracter&iacute;sticas, de acuerdo con 
+                    lo definido en <a href="MEH_003B.html" >transacciones por 
+                    empresa</a>.
+                  </p></td>
+              </tr>
+              <tr> 
+                <td class="titletable" ><p class="SUBTITULO"><b>Compra 
+                    especial</b></p></td>
+                <td><p  class="PARRAFO">Se 
+                    define como compra especial aquella transacci&oacute;n que se haya definido 
+                    con caracter&iacute;sticas propias de la entidad, ya sea por convenios 
+                    o por alguna caracter&iacute;stica particular que la difiere de una 
+                    compra normal. Este campo se debe marcar si la entidad define que el 
+                    bloqueo se permite realizar tal transacci&oacute;n.
+                  </p></td>
+              </tr>
+              <tr> 
+                <td class="titletable" ><p class="SUBTITULO"><b>Avance 
+                    efectivo
+                    </b></p></td>
+                <td><p  class="PARRAFO">Este 
+                    campo se debe marcar si la entidad define que el bloqueo se permite 
+                    una transacci&oacute;n con dichas caracter&iacute;sticas.
+                  </p></td>
+              </tr>
+              <tr> 
+                <td class="titletable"><p class="SUBTITULO"><b>Pago
+                    </b></p></td>
+                <td><p  class="PARRAFO">Campo 
+                    que se debe marcar si la entidad define que el bloqueo si permite una 
+                    transacci&oacute;n con dichas caracter&iacute;sticas.</p></td>
+              </tr>
+              <tr> 
+                <td class="titletable"><p class="SUBTITULO"><b>Ajuste 
+                    d&eacute;bito
+                    </b></p></td>
+                <td><p  class="PARRAFO">Un 
+                    ajuste d&eacute;bito es una transacci&oacute;n de consumo o cargo que 
+                    afecta directamente el disponible del cliente, realizada a trav&eacute;s 
+                    del centro de captura de la entidad. Este campo se debe marcar si la 
+                    entidad define que el bloqueo permite realizar una transacci&oacute;n 
+                    con dichas caracter&iacute;sticas.
+                  </p></td>
+              </tr>
+              <tr> 
+                <td class="titletable" ><p class="SUBTITULO"><b>Aumento 
+                    cupo
+                    </b></p></td>
+                <td><p  class="PARRAFO">Este 
+                    campo se debe marcar si la entidad determina que con el bloqueo, se 
+                    puede efectuar aumento de cupo a la tarjeta o cr&eacute;dito.
+                  </p></td>
+              </tr>
+              <tr> 
+                <td class="titletable" ><p class="SUBTITULO"><b>Redenci&oacute;n 
+                    puntos
+                    </b></p></td>
+                <td><p  class="PARRAFO">Si 
+                    el bloqueo permite la redenci&oacute;n de los puntos acumulados por 
+                    la tarjeta se debe marcar el campo.
+                  </p></td>
+              </tr>
+              <tr> 
+                <td class="titletable" ><p class="SUBTITULO"><b>Cambio 
+                    de ciclo
+                    </b></p></td>
+                <td><p  class="PARRAFO">Este 
+                    campo se marca si el bloqueo permite cambio de ciclo de facturaci&oacute;n 
+                    para la tarjeta. Para su aplicaci&oacute;n se debe tener en cuenta la 
+                    parametrizaci&oacute;n del <a href="SOH_001B.html" >filtro</a> 
+                    que evalua los bloqueos de la tarjeta en el tipo de solicitud correspondiente.</p></td>
+              </tr>
+              <tr> 
+                <td class="titletable" ><p class="SUBTITULO"><b>Cambio 
+                    producto
+                    </b></p></td>
+                <td><p  class="PARRAFO">Campo 
+                    que se marca si el bloqueo permite cambio de producto para la tarjeta. 
+                    Para su aplicaci&oacute;n se debe tener en cuenta la parametrizaci&oacute;n 
+                    del <a href="SOH_001B.html" >filtro</a> que evalua los 
+                    bloqueos de la tarjeta en el tipo de solicitud correspondiente.
+                  </p></td>
+              </tr>
+              <tr> 
+                <td class="titletable" ><p class="SUBTITULO"><b>Generaci&oacute;n 
+                    pl&aacute;stico
+                    </b></p></td>
+                <td><p  class="PARRAFO">Este 
+                    campo se marca si el bloqueo permite la generaci&oacute;n de pl&aacute;sticos 
+                    para las tarjetas o cr&eacute;dito sobre el cual est&aacute; aplicado, 
+                    cuando inicialmente este no posee pl&aacute;stico. Para su aplicaci&oacute;n 
+                    se debe tener en cuenta la parametrizaci&oacute;n del <a href="SOH_001B.html" >filtro</a> 
+                    que evalua los bloqueos de la tarjeta en el tipo de solicitud correspondiente.
+                  </p></td>
+              </tr>
+              <tr> 
+                <td class="titletable" ><p class="SUBTITULO"><b>Nuevas 
+                    solicitudes
+                    </b></p></td>
+                <td><p  class="PARRAFO">Campo 
+                    que en el que se indica si el bloqueo permite el ingreso de nuevas solicitudes 
+                    para el cliente que posee el producto sobre el cual est&aacute; aplicado. 
+                   
+                  </p></td>
+              </tr>
+              <tr> 
+                <td class="titletable" ><p class="SUBTITULO"><b>Cancela 
+                    saldos menores
+                    </b></p></td>
+                <td><p  class="PARRAFO">Este 
+                    campo se marca si el bloqueo permite la cancelaci&oacute;n de saldos, 
+                    de la tarjeta o cr&eacute;dito sobre la cual est&aacute; aplicado, cuyo 
+                    monto sea inferior al definido en el campo Valores traslados saldos 
+                    menores del formulario m&aacute;s par&aacute;metros de la opci&oacute;n 
+                    <a href="MEH_002B.html" >Definici&oacute;n de Productos</a>. 
+                  </p></td>
+              </tr>
+              <tr> 
+                <td class="titletable" ><p class="SUBTITULO"><b>Carta 
+                    Paz y Salvo</b></p></td>
+                <td><p  class="PARRAFO">Campo 
+                    que se marca si el bloqueo permite la generaci&oacute;n de paz y salvo. 
+                  </p></td>
+              </tr>
+              <tr> 
+                <td class="titletable"><p class="SUBTITULO"><b>Reportar 
+                    Negativos Redeban
+                    </b></p></td>
+                <td><p  class="PARRAFO">En 
+                    este campo se indica si el bloqueo debe hacer que se incluya la tarjeta 
+                    en el archivo de negativos de redeban.</p></td>
+              </tr>
+              <tr> 
+                <td class="titletable"><p class="SUBTITULO"><b>Ajuste 
+                    cr&eacute;dito
+                    </b></p></td>
+                <td><p  class="PARRAFO">Un 
+                    ajuste cr&eacute;dito es una transacci&oacute;n de abono para el cliente 
+                    realizada en el centro de captura de la entidad. A trav&eacute;s de 
+                    este campo se debe marcar si el bloqueo permite efectuar dicho ajuste. 
+                   
+                  </p></td>
+              </tr>
+              <tr> 
+                <td class="titletable"><p class="SUBTITULO"><b>Cuota 
+                    manejo
+                    </b></p></td>
+                <td><p  class="PARRAFO">En 
+                    el evento que se encuentre marcado este campo, significa que aunque 
+                    la tarjeta o cr&eacute;dito tenga aplicado el bloqueo, &eacute;ste permitir&aacute; 
+                    cargo al cliente por concepto de cuota de manejo. </p></td>
+              </tr>
+              <tr> 
+                <td class="titletable"><p class="SUBTITULO"><b>Cuota 
+                    seguro
+                    </b></p></td>
+                <td><p  class="PARRAFO">En 
+                    el evento que se encuentre marcado este campo, significa que aunque 
+                    la tarjeta o cr&eacute;dito tenga aplicado el bloqueo, &eacute;ste permitir&aacute; 
+                    cargo al cliente por concepto de cuota de seguro. </p></td>
+              </tr>
+              <tr> 
+                <td class="titletable"><p class="SUBTITULO"><b>Cuota 
+                    afiliaci&oacute;n
+                    </b></p></td>
+                <td><p  class="PARRAFO">En 
+                    el evento que se encuentre marcado este campo, significa que aunque 
+                    la tarjeta o cr&eacute;dito tenga aplicado el bloqueo, &eacute;ste permitir&aacute; 
+                    cargo al cliente por concepto de cuota de afiliaci&oacute;n.
+                  </p></td>
+              </tr>
+              <tr> 
+                <td class="titletable" ><p class="SUBTITULO"><b>Reexpedici&oacute;n
+                    </b></p></td>
+                <td><p  class="PARRAFO">Si 
+                    este campo se encuentra marcado, significa que el bloqueo permitir&aacute; 
+                    generar nuevo pl&aacute;stico por concepto de reexpedici&oacute;n. Para 
+                    su aplicaci&oacute;n se debe tener en cuenta la parametrizaci&oacute;n 
+                    del <a href="SOH_001B.html" >filtro</a> que evalua los 
+                    bloqueos de la tarjeta en el tipo de solicitud correspondiente.
+                  </p></td>
+              </tr>
+              <tr> 
+                <td class="titletable" ><p class="SUBTITULO"><b>Reposici&oacute;n
+                    </b></p></td>
+                <td><p  class="PARRAFO">En 
+                    el evento que se encuentre marcado este campo, significa que el bloqueo 
+                    permitir&aacute; generar nuevo pl&aacute;stico por concepto de reposici&oacute;n. 
+                    Para su aplicaci&oacute;n se debe tener en cuenta la parametrizaci&oacute;n 
+                    del <a href="SOH_001B.html" >filtro</a> que evalua los 
+                    bloqueos de la tarjeta en el tipo de solicitud correspondiente.
+                  </p></td>
+              </tr>
+              <tr> 
+                <td class="titletable" ><p class="SUBTITULO"><b>Facturar&aacute;
+                    </b></p></td>
+                <td><p  class="PARRAFO">Cuando 
+                    este campo se encuentra marcado significa que el bloqueo permitir&aacute; 
+                    que la tarjeta o cr&eacute;dito sea facturado. Estar&aacute; marcado 
+                    por defecto en el momento de homologar los bloqueos del sistema con 
+                    los de la entidad y no permitir&aacute; modificaciones, excepto para 
+                    el bloqueo castigo. </p></td>
+              </tr>
+              <tr> 
+                <td class="titletable" ><p class="SUBTITULO"><b>Exception 
+                    file </b></p></td>
+                <td><p  class="PARRAFO">Campo 
+                    en el cual se marca si el bloqueo permite reportar en el archivo de 
+                    excepci&oacute;n, base para las autorizaciones, aquellas tarjetas o 
+                    cr&eacute;ditos sobre los cuales se encuentra aplicado dicho bloqueo.
+                  </p></td>
+              </tr>
+              <tr> 
+                <td class="titletable" ><p class="SUBTITULO"><b>Tarjeta 
+                    activa
+                    </b></p></td>
+                <td><p  class="PARRAFO">Permite 
+                    definir si las tarjetas o cr&eacute;ditos que poseen dicho bloqueo se 
+                    consideran productos activos. </p></td>
+              </tr>
+              <tr> 
+                <td class="titletable" ><p class="SUBTITULO"><b>Permite 
+                    eliminaci&oacute;n
+                    </b></p></td>
+                <td><p  class="PARRAFO">Si 
+                    el bloqueo se encuentra marcado en este campo significa que el registro 
+                    del pl&aacute;stico podr&aacute; ser eliminado de la base de datos. 
+                   
+                  </p></td>
+              </tr>
+              <tr> 
+                <td class="titletable" ><p class="SUBTITULO"><b>Permite 
+                    refinanciaci&oacute;n
+                    </b></p></td>
+                <td><p  class="PARRAFO">Si 
+                    el bloqueo se encuentra marcado en este campo significa que el cr&eacute;dito 
+                    puede ser normalizado mediante la reestructuraci&oacute;n o refinanciaci&oacute;n.
+                  </p></td>
+              </tr>
+              <tr> 
+                <td class="titletable" ><p class="SUBTITULO"><b>D&eacute;bito 
+                    Autom&aacute;tico
+                    </b></p></td>
+                <td><p  class="PARRAFO">Campo 
+                    en el cual se marca si el bloqueo permite o no reportar en el archivo 
+                    de D&eacute;bitos autom&aacute;ticos, el valor correspondiente a la 
+                    obligaci&oacute;n de aquellas tarjetas o cr&eacute;ditos sobre los cuales 
+                    se encuentra aplicado dicho bloqueo.
+                  </p></td>
+              </tr>
+              <tr> 
+                <td class="titletable" ><p class="SUBTITULO"><b>Permite 
+                    Sucursal
+                    </b></p></td>
+                <td><p  class="PARRAFO">Indica 
+                    si el bloqueo permite efectuar cambio de sucursal.
+                  </p></td>
+              </tr>
+              <tr> 
+                <td class="titletable" ><p class="SUBTITULO"><b>Carta 
+                    Beneficios
+                    </b></p></td>
+                <td><p  class="PARRAFO">Este 
+                    campo se marca para indicar si el bloqueo permite la expedici&oacute;n 
+                    de la Carta de Beneficios. </p></td>
+              </tr>
+              <tr> 
+                <td class="titletable" ><p class="SUBTITULO"><b>Retira 
+                    Tarjeta
+                    </b></p></td>
+                <td><p  class="PARRAFO">Campo 
+                    en el cual se marca si el bloqueo debe incluir en el archivo de negativos 
+                    de redeban la solicitud de retenci&oacute;n de la tarjeta.
+                  </p></td>
+              </tr>
+              <tr> 
+                <td class="titletable" ><p class="SUBTITULO"><b>Masificaci&oacute;n
+                    </b></p></td>
+                <td><p  class="PARRAFO">Mediante 
+                    esta personalizaci&oacute;n, si el bloqueo se encuentra marcado en este 
+                    campo significa que el proceso del mismo nombre efect&uacute;a traslado 
+                    de los productos Gente U
+                  </p></td>
+              </tr>
+              <tr> 
+                <td class="titletable" ><p class="SUBTITULO"><b>Renovaci&oacute;n
+                    </b></p></td>
+                <td><p  class="PARRAFO">En 
+                    el evento que se encuentre marcado este campo, significa que aunque 
+                    la tarjeta o cr&eacute;dito tenga el bloqueo, &eacute;ste permitir&aacute; 
+                    generar nuevo pl&aacute;stico por concepto de renovaci&oacute;n. Para 
+                    su aplicaci&oacute;n se debe tener en cuenta la parametrizaci&oacute;n 
+                    del <a href="SOH_001B.html" >filtro</a> que evalua los 
+                    bloqueos de la tarjeta en el tipo de solicitud correspondiente. </p></td>
+              </tr>
+              <tr> 
+                <td class="titletable" ><p class="SUBTITULO"><b>Reactivaci&oacute;n
+                    </b></p></td>
+                <td><p  class="PARRAFO">Si 
+                    este campo se encuentra marcado, significa que aunque aplique determinado 
+                    bloqueo, &eacute;ste permitir&aacute; generar nuevo pl&aacute;stico 
+                    por concepto de reactivaci&oacute;n. Para su aplicaci&oacute;n se debe 
+                    tener en cuenta la parametrizaci&oacute;n del <a href="SOH_001B.html" >filtro</a> 
+                    que evalua los bloqueos de la tarjeta en el tipo de solicitud correspondiente. 
+                  </p></td>
+              </tr>
+              <tr> 
+                <td class="titletable" ><p class="SUBTITULO"><b>Costos 
+                    judiciales
+                    </b></p></td>
+                <td><p  class="PARRAFO">La 
+                    transacci&oacute;n de costos judiciales es aquella transacci&oacute;n 
+                    que se origina por un proceso de recaudo de cartera judicialmente, la 
+                    entidad debe marcar este campo si define que el bloqueo permite cargos 
+                    al cliente por dicho concepto.
+                  </p></td>
+              </tr>
+              <tr> 
+                <td class="titletable" ><p class="SUBTITULO"><b>Honorarios 
+                    abogado
+                    </b></p></td>
+                <td><p  class="PARRAFO">En 
+                    el momento en que se genere el recaudo de cartera a trav&eacute;s de 
+                    un cobro prejur&iacute;dico o jur&iacute;dico se pueden ocasionar honorarios, 
+                    los cuales ser&aacute;n cargados a la tarjeta o cr&eacute;dito del cliente 
+                    si la entidad marca este campo para el bloqueo.
+                  </p></td>
+              </tr>
+              <tr> 
+                <td class="titletable" ><p class="SUBTITULO"><b>Comisiones
+                    </b></p></td>
+                <td><p  class="PARRAFO">La 
+                    transacci&oacute;n de comisiones es aquella transacci&oacute;n que se 
+                    desprende de una transacci&oacute;n original por ejemplo el avance de 
+                    efectivo en cajeros, la transacci&oacute;n que se desprende de la original 
+                    es la comisi&oacute;n por la utilizaci&oacute;n del cajero, de tal manera 
+                    que si la entidad marca este campo significa que determinado bloqueo 
+                    permite cargar al cliente valores por dichos conceptos.
+                  </p></td>
+              </tr>
+              <tr> 
+                <td class="titletable" ><p class="SUBTITULO"><b>Desbloqueo
+                    </b></p></td>
+                <td><p  class="PARRAFO">Si 
+                    la entidad marca este campo, significa que determinado bloqueo se puede 
+                    levantar en un momento dado. En caso contrario, significa que el bloqueo 
+                    es definitivo.
+                  </p></td>
+              </tr>
+              <tr> 
+                <td class="titletable" ><p class="SUBTITULO"><b>Acumula 
+                    puntos
+                    </b></p></td>
+                <td><p  class="PARRAFO">Campo 
+                    en el que se indica si el bloqueo permite que la tarjeta o cr&eacute;dito 
+                    acumulen puntos de acuerdo con el esquema al que pertenezca la misma.
+                  </p></td>
+              </tr>
+              <tr> 
+                <td class="titletable" ><p class="SUBTITULO"><b>Consulta 
+                    saldo
+                    </b></p></td>
+                <td><p  class="PARRAFO">Permite 
+                    definir si el bloqueo permite al cliente la consulta de saldo del cr&eacute;dito.</p></td>
+              </tr>
+              <tr> 
+                <td class="titletable" ><p class="SUBTITULO"><b>Cancelaci&oacute;n
+                   
+                    </b></p></td>
+                <td><p  class="PARRAFO">Este 
+                    campo permite definir si el bloqueo permite la cancelaci&oacute;n de 
+                    la tarjeta o cr&eacute;dito, en el evento en que el cliente desee hacer 
+                    una devoluci&oacute;n / cancelaci&oacute;n voluntaria del mismo. Para 
+                    su aplicaci&oacute;n se debe tener en cuenta la parametrizaci&oacute;n 
+                    del <a href="SOH_001B.html" >filtro</a> que evalua los 
+                    bloqueos de la tarjeta en el tipo de solicitud correspondiente. </p></td>
+              </tr>
+              <tr> 
+                <td class="titletable" ><p class="SUBTITULO"><b>Castigo
+                   
+                    </b></p></td>
+                <td><p  class="PARRAFO">En 
+                    este campo se determina si el bloqueo permite efectuar el castigo del 
+                    saldo de la tarjeta o cr&eacute;dito, asumiendo la entidad el valor 
+                    de la deuda del cliente.
+                  </p></td>
+              </tr>
+              <tr> 
+                <td class="titletable" ><p class="SUBTITULO"><b>Genera 
+                    extracto
+                   
+                    </b></p></td>
+                <td><p  class="PARRAFO">Permite 
+                    definir si para las tarjetas o cr&eacute;ditos que poseen el bloqueo 
+                    se generar&aacute;n extracto o no.
+                  </p></td>
+              </tr>
+              <tr> 
+                <td class="titletable" ><p class="SUBTITULO"><b>Genera 
+                    contingentes
+                   
+                    </b></p></td>
+                <td><p  class="PARRAFO">En 
+                    este campo se define si los saldos de las obligaciones de las tarjetas 
+                    o cr&eacute;ditos que tengan el bloqueo suman o restan para el c&aacute;lculo 
+                    del disponible, lo que afecta la contabilidad de los contingentes.
+                  </p></td>
+              </tr>
+              <tr> 
+                <td class="titletable" ><p class="SUBTITULO"><b>Carta 
+                    Buen Manejo
+                   
+                    </b></p></td>
+                <td><p  class="PARRAFO">Este 
+                    campo se marca para indicar si el bloqueo permite o no la expedici&oacute;n 
+                    de Carta de Buen Manejo de la tarjeta.</p></td>
+              </tr>
+              <tr> 
+                <td class="titletable" ><p class="SUBTITULO"><b>Genera 
+                    Dian
+                    </b></p></td>
+                <td><p  class="PARRAFO">Campo 
+                    que indica si el bloqueo permite incluir o no la tarjeta o cr&eacute;dito 
+                    en los archivos con destino a la Dian.</p></td>
+              </tr>
+              <tr> 
+                <td class="titletable" ><p class="SUBTITULO"><b>Ajustar 
+                    cupos
+                    </b></p></td>
+                <td><p  class="PARRAFO">Combo 
+                    que contiene las opciones si o no, para indicar si el bloqueo origina 
+                    que el proceso de rec&aacute;lculo de cupos tome el saldo tanto de la 
+                    l&iacute;neas de cr&eacute;dito como de la tarjeta como cupo asignado, 
+                    esto con el objetivo de dejar el disponible igual a cero (0) y no mostrar 
+                    saldos en cuentas contables contingentes. </p></td>
+              </tr>
+              <tr> 
+                <td class="titletable" ><p class="SUBTITULO"><b>Medio 
+                    pago
+                    </b></p></td>
+                <td><p  class="PARRAFO">En 
+                    este combo se indica si el bloqueo aplica para los productos cr&eacute;dito 
+                    o d&eacute;bito. Es importante tener en cuenta que a los bloqueos a los cuales se les asocie el medio
+                    1 (tarjeta de crédito) serán los únicos habilitados para ser aplicados manualmente desde la opción <a href="SCH_025B.html" >Novedad bloqueo plástico</a>.
+                    </p></td>
+              </tr>
+            </table>
+            <p class="PARRAFO">En el bloque Herencia Bloqueos, se definen entre 
+              otros la jerarqu&iacute;a de los bloqueos respecto a los clientes principales 
+              de las tarjetas y sus productos extendidos o amparados y viceversa. </p>
+            <div>
+
+             <p class="TITLE"><img src="../img/CAF_002E3.PNG"567" ></p>
+              <p class="TITLE">Descripci&oacute;n de campos</p>
+              <table>
+                <tr> 
+                  <td class="titletable" ><p class="SUBTITULO"><b>Principal 
+                      bloquea extendida
+                      </b></p></td>
+                  <td><p  class="PARRAFO">Permite 
+                      definir si el bloqueo que se aplique sobre el cliente principal del 
+                      cr&eacute;dito o tarjeta afecta de igual manera a las tarjetas o cr&eacute;ditos 
+                      de sus clientes extendidos, coloc&aacute;ndoles a &eacute;stos un 
+                      bloqueo preventivo definido como preventivo por principal. </p></td>
+                </tr>
+                <tr> 
+                  <td class="titletable" ><p class="SUBTITULO"><b>Extendida 
+                      bloquea principal </b></p></td>
+                  <td><p  class="PARRAFO">Indica 
+                      si el bloqueo que se aplique sobre el cliente que tiene caracter&iacute;sticas 
+                      de extendido afecta de igual manera a la tarjeta o cr&eacute;dito 
+                      del cliente principal del cual depende, coloc&aacute;ndole a &eacute;ste 
+                      un bloqueo preventivo definido como preventivo por amparado o extendido.</p>
+                  </td>
+                </tr>
+                <tr> 
+                  <td class="titletable" ><p class="SUBTITULO"><b>Principal 
+                      bloquea amparada
+                      </b></p></td>
+                  <td><p  class="PARRAFO">Campo 
+                      en el que se define si ci cuando se aplique el bloqueosobre el cliente 
+                      principal del cr&eacute;dito o tarjeta afecta de igual manera a las 
+                      tarjetas o cr&eacute;ditos de sus clientes amparados, coloc&aacute;ndoles 
+                      a &eacute;stos un bloqueo preventivo definido como preventivo por 
+                      principal.
+                    </p></td>
+                </tr>
+                <tr> 
+                  <td class="titletable" ><p class="SUBTITULO"><b>Amparada 
+                      bloquea principal
+                      </b></p></td>
+                  <td><p  class="PARRAFO">Indica 
+                      si el bloqueo que se aplique sobre el cliente que tiene caracter&iacute;sticas 
+                      de amparado afecta de igual manera a la tarjeta o cr&eacute;dito del 
+                      cliente principal del cual depende, coloc&aacute;ndole a &eacute;ste 
+                      un bloqueo preventivo definido como preventivo por amparado o extendido.</p></td>
+                </tr>
+                <tr> 
+                  <td class="titletable" ><p class="SUBTITULO"><b>Bloqueo 
+                      switch
+                      </b></p></td>
+                  <td><p  class="PARRAFO">Corresponde 
+                      a la identificaci&oacute;n del bloqueo que maneja la entidad, homologado 
+                      hacia el c&oacute;digo de bloqueo que utiliza el autorizador.</p></td>
+                </tr>
+                <tr> 
+                  <td class="titletable" ><p class="SUBTITULO"><b>Per&iacute;odos 
+                      borrar
+                      </b></p></td>
+                  <td><p  class="PARRAFO">Campo 
+                      obligatorio en el cual se define el total de per&iacute;odos (expresado 
+                      en meses), despu&eacute;s de los cuales se puede borrar la informaci&oacute;n 
+                      de las tablas.
+                    </p></td>
+                </tr>
+                <tr> 
+                  <td class="titletable" ><p class="SUBTITULO"><b>Jerarqu&iacute;a 
+                      desbloqueo
+                     
+                     
+                      </b></p></td>
+                  <td><p  class="PARRAFO">Este 
+                      campo permite a la entidad asignar prioridad en el manejo de los bloqueos, 
+                      es decir, cu&aacute;l bloqueo puede ser eliminado o reemplazado por 
+                      otro y cu&aacute;l no. Aplica para aquellos <a href="NUH_012B.html" >bloqueos</a> 
+                      a los cuales se les ha asignado la condici&oacute;n de tipo 'Plastico'</p></td>
+                </tr>
+                <tr> 
+                  <td class="titletable" ><p class="SUBTITULO"><b>Jerarq. 
+                      Interfaces
+                     
+                     
+                      </b></p></td>
+                  <td><p  class="PARRAFO">A 
+                      trav&eacute;s de este campo , la entidad puede asignar la prioridad 
+                      en el manejo de los bloqueos que viajan hacia las interfases requeridas, 
+                      es decir, si un cr&eacute;dito o tarjeta tiene varios bloqueos, cu&aacute;l 
+                      prima de todos.</p></td>
+                </tr>
+                <tr> 
+                  <td class="titletable" ><p class="SUBTITULO"><b>Mensaje 
+                      extracto
+                     
+                      </b></p></td>
+                  <td><p  class="PARRAFO">Campo 
+                      obligatorio en el cual se permite definir a trav&eacute;s de una lista 
+                      de valores, el <a href="NUH_062B.html" >mensaje</a> que 
+                      aparecer&aacute; en el extracto del cliente de acuerdo con el bloqueo.</p></td>
+                </tr>
+              </table>
+        </section>
+    <script src="../js/menu.js"></script>
+</body>
+<footer>
+    <div>
+        <img class="TITLE"  src= "../img/logo.PNG">
+    </div>
+    <p>OpenCard SAS</p>
+    <p>Calle 77 Nº 11-19 Piso 4°,Bogotá D.C.</p>
+    <p>Tel (57) 601 - 313 37 75  <a href="http://www.OpenCard.com"
+            target="_blank">www.OpenCard.com</a></p>
+</footer>
+</html>

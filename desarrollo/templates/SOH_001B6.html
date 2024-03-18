@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BANKBU®</title>
+    <link rel="stylesheet" href="../css/pages.css">
+    <link rel="stylesheet" href="../css/style.css">
+ <link rel="icon" href="../img/ACQUIRER-logo.JPG" type="image/x-icon">
+</head>
+
+<body>
+    <header>
+        <img class="logo" src="../img/logoBankbu_.PNG" alt="Logo de Mi Empresa">
+        <div id="menuBtn">
+            <img class="TITLE"  src= "../img/menu.PNG" alt="Botón de Menú ">
+        </div>
+    </header>
+    <nav>
+        <ul>
+            <li>
+                    <a href="../index.html" class="main-optionINICIO">INICIO</a>
+            </li>
+            <li>
+                <a href="NUH_INTB.html" class="main-optionINTRODUCCIÓN">INTRODUCCIÓN</a>
+            </li>
+            <li><a href="#" class="main-option">NUCLEO ▼</a>
+                <ul>
+                    <li><a href="NUH_000B.html">Config. Sistema</a></li>
+                    <li><a href="NUH_00B_N2.html">Parametros</a></li>
+                    <li><a href="NUH_00B_inicio.html">Inicio</a></li>
+                    <li><a href="NUH_00B_proceso.html">Procesos</a></li>
+                    <li><a href="NUH_00B_inf.html">Inf. Cliente</a></li>
+                    <li><a href="NUH_00B_conta.html">Contabilidad</a></li>
+                    <li style="visibility: hidden; display: none;"><a href="NUH_00B_audi.html">Auditoria</a></li>
+
+                </ul>
+            </li>
+            <li>
+             <a href="#" class="main-option">EMISOR  ▼</a>
+                <ul>
+                    <li><a href="EMH_000B.html">Productos</a></li>
+                    <li><a href="EMH_000Bsoli.html">Solicitudes</a></li>
+                    <li><a href="EMH_000Bmerca.html">Mercadeo</a></li>
+                    <li><a href="EMH_000Bservi.html">Servicio Al Cliente</a></li>
+                    <li><a href="EMH_000Bpendi.html">Pendientes</a></li>
+                    <li><a href="EMH_000Btrans.html">Transaccionabilidad</a></li>
+                    <li><a href="EMH_000Bauto.html">Autorizaciones</a></li>
+                    <li><a href="EMH_000Bplasti.html">Adm. Plasticos</a></li>
+                    <li><a href="EMH_000Brecla.html">Reclamos</a></li>
+                    <li><a href="MEH_032B.html">Lealtad</a></li>
+                    <li><a href="COH_064B.html">Cobranzas</a></li>
+                </ul>
+            </li>
+ <li style="visibility: hidden">
+                <a href="ACH_000B.html" class="main-option">ADQUIRIENTE</a>
+            </li>
+            <li style="visibility: hidden">
+                <a href="DBH_000B.html" class="main-option">TARJETA DEBITO</a>
+            </li></ul>
+    </nav>
+
+    <section>
+        <div> 
+            <table>
+              <tr> 
+                <td><div> 
+                    <p  class="TITLE">Par&aacute;metros de solicitudes - Globo de localizaci&oacute;n </p>
+                    </div></td>
+              </tr>
+            </table>
+            <p class="PARRAFO"><span class="SUBTITULO">Localizaci&oacute;n:</span>  Este formulario 
+              cuenta con tres bloques de ingreso de registros: Tipos identificaci&oacute;n 
+              centrales riesgo, <a href="#VerificacionReferencias" title="Calificación verificación de referencias" target="_self" >Calificación 
+              verificación de referencias</a>, y <a href="#CalificacionCentrales" title="Calificación centrales riesgo" target="_self" >Calificación 
+              centrales riesgo</a>. <span class="PARRAFO">Cada uno de ellos tiene las las 
+              opciones Actualizar, Eliminar, y Adicionar. </span></p>
+            <p class="PARRAFO"><span class="PARRAFO">Adicionalmente, el formulario cuenta 
+              con un bot&oacute;n en la parte superior para volver al <a href="SOH_001B.html" >formulario 
+              principal</a>.</span></p>
+            <p class="PARRAFO"><span class="SUBTITULO">Tipos identificaci&oacute;n centrales 
+              riesgo:</span><span class="PARRAFO"></span>  Conjunto de campos en los que 
+              se relaciona la equivalencia de los c&oacute;digos internos de tipos de documentos 
+              de identificaci&oacute;n usados por <span >Bankb&uacute;&reg;</span>  
+              versus las Centrales de riesgo Cifin y Datacr&eacute;dito.</p>
+            <p class="TITLE"><img src="../img/SOF_001B25.PNG"667" height="395"></p>
+            
+            <p><span class="SUBTITULO">Adicionar:</span>  Si el usuario invoca la opci&oacute;n 
+              Adicionar se despliega un formulario con los siguientes campos<span >:</span></p>
+            <p class="TITLE"><img src="../img/SOF_001B25a.PNG"345" height="112"></p>
+            <table>
+              <tr> 
+                <td class="titletable"><p class="SUBTITULO"><b>Tipo</b></p></td>
+                <td><p class="PARRAFO">Campo obligatorio tipo Combo 
+                    con los tipos de identificaci&oacute;n existentes y acordes con lo parametrizado 
+                    en la opci&oacute;n <a href="NUH_008B.html" >Tipos de identificaci&oacute;n</a>.</p></td>
+              </tr>
+              <tr> 
+                <td  class="titletable" ><p class="SUBTITULO">CIFIN</p></td>
+                <td><p class="PARRAFO">El 
+                    campo obligatorio CIFIN acepta cualquier dato num&eacute;rico de m&aacute;ximo dos 
+                    (2) d&iacute;gitos sin decimales. No puede ser nulo.
+                  </p></td>
+              </tr>
+              <tr> 
+                <td class="titletable"><p class="SUBTITULO">DATACR&Eacute;DITO</p></td>
+                <td><p class="PARRAFO">El 
+                    campo obligatorio DATACR&Eacute;DITO acepta cualquier dato num&eacute;rico de m&aacute;ximo 
+                    dos (2) d&iacute;gitos sin decimales. No puede ser nulo.
+                  </p></td>
+              </tr>
+            </table>
+           
+            <p class="PARRAFO"><span class="PARRAFO"><span class="SUBTITULO">Actualizar:</span>  
+              Si el usuario invoca la opci&oacute;n Actualizar se despliega un nuevo formulario 
+              en el cual los &uacute;nicos campos modificables son: Nombre, y Prototipo.</span></p>
+            <p class="TITLE"><img src="../img/SOF_001B2.PNG"258" height="133"></p>
+           
+            <p class="PARRAFO"><span class="SUBTITULO"><a name="VerificacionReferencias"></a>Calificaci&oacute;n 
+              verificaci&oacute;n de referencias:</span>  Conjunto de campos en los que se 
+              define la implicaci&oacute;n de la calidad de las referencias obtenidas sobre 
+              el solicitante. </p>
+            <p class="TITLE"><img src="../img/SOF_001B26.PNG"662" height="321"></p>
+           
+           
+            <p><span class="SUBTITULO">Adicionar:</span>  Si el usuario invoca la opci&oacute;n 
+              Adicionar se despliega un formulario con los siguientes campos<span >:</span></p>
+            <p class="TITLE"><img src="../img/SOF_001B26a.PNG"284" ></p>
+            <table>
+              <tr> 
+                <td class="titletable"><p class="SUBTITULO"><b>Calificaci&oacute;n</b></p></td>
+                <td><p class="PARRAFO">Este 
+                    campo obligatorio acepta cualquier dato alfanum&eacute;rico de m&aacute;ximo dos 
+                    (2) caracteres, en may&uacute;sculas por defecto. No puede ser nulo.
+                  </p></td>
+              </tr>
+              <tr> 
+                <td  class="titletable" ><p class="SUBTITULO">Descripci&oacute;n</p></td>
+                <td><p class="PARRAFO">Campo obligatorio alfanum&eacute;rico de m&aacute;ximo sesenta (60) caracteres, permite 
+                    may&uacute;sculas y min&uacute;sculas. No puede ser nulo. En &eacute;l 
+                    se debe ingresar una descripci&oacute;n breve de tipo de Calificaci&oacute;n.
+                  </p></td>
+              </tr>
+              <tr> 
+                <td class="titletable"><p class="SUBTITULO"><b>Estado 
+                    solicitud </b></p></td>
+                <td><p class="PARRAFO">Campo obligatorio tipo Combo 
+                    con las opciones (En zona gris, Negar solicitud o Aprobar solicitud). 
+                    No puede ser nulo. Determina en qu&eacute; estado el sistema dejar&aacute; 
+                    la solicitud en caso de tener esta calificaci&oacute;n.
+                  </p></td>
+              </tr>
+              <tr> 
+                <td  class="titletable" ><p class="SUBTITULO">Observaci&oacute;n 
+                    requerida </p></td>
+                <td><p class="PARRAFO">El 
+                    campo permite ser marcado o desmarcado, determinando si son necesarias 
+                    observaciones adicionales para la Calificaci&oacute;n.
+                  </p></td>
+              </tr>
+            </table>
+           
+            <p  class="PARRAFO"><span class="PARRAFO"><span class="SUBTITULO">Actualizar:</span>  
+              Si el usuario invoca la opci&oacute;n Actualizar se despliega un nuevo formulario 
+              en el cual los &uacute;nicos campos modificables son: Descripci&oacute;n, 
+              Estado solicitud, y Observaci&oacute;n requerida.</span></p>
+            <p class="TITLE"><img src="../img/SOF_001B26b.PNG"285" ></p>
+           
+            <p class="PARRAFO"><span class="SUBTITULO"><a name="CalificacionCentrales"></a>Calificaci&oacute;n 
+              centrales riesgo:</span>  Conjunto de campos en los que deben sincronizarse 
+              la codificaci&oacute;n de la respuesta emanada por las centrales de riesgo 
+              y su significado, para con base en ello determinar el estado de la solicitud 
+              y si puede o no pasar a la siguiente etapa</p>
+            <p class="TITLE"><img src="../img/SOF_001B27.PNG"669" height="390"></p>
+           
+            <p><span class="SUBTITULO">Adicionar:</span>  Si el usuario invoca la opci&oacute;n 
+              Adicionar se despliega un formulario con los siguientes campos<span >:</span></p>
+            <p class="TITLE"><img src="../img/SOF_001B27a.PNG"242" ></p>
+            <table>
+              <tr> 
+                <td class="titletable"><p class="SUBTITULO"><b>Calificaci&oacute;n</b></p></td>
+                <td><p class="PARRAFO">Campo 
+                    obligatorio que acepta cualquier dato alfanum&eacute;rico de m&aacute;ximo 
+                    dos (2) caracteres, no puede ser nulo. Contiene may&uacute;sculas por 
+                    defecto
+                  </p></td>
+              </tr>
+              <tr> 
+                <td  class="titletable" ><p class="SUBTITULO">Central 
+                    riesgo</p></td>
+                <td><p class="PARRAFO">El 
+                    campo Central Riesgo es obligatorio, y contiene un combo con las opciones 
+                    (CIFIN &oacute; DATACR&Eacute;DITO)
+                  </p></td>
+              </tr>
+              <tr> 
+                <td class="titletable"><p class="SUBTITULO"><b>Estado 
+                    persona</b></p></td>
+                <td><p class="PARRAFO">Este 
+                    campo obligatorio contiene un combo con las opciones (Nit no registrado, 
+                    Rechazado, Sin informaci&oacute;n, En estudio o Aprobado)
+                  </p></td>
+              </tr>
+              <tr> 
+                <td  class="titletable" ><p class="SUBTITULO"><b>Estado 
+                    solicitud</b></p></td>
+                <td><p class="PARRAFO">El 
+                    campo contiene un combo con las opciones (En zona gris, Negar solicitud 
+                    o Aprobar solicitud). No puede ser nulo.
+                  </p></td>
+              </tr>
+            </table>
+           
+            <p  class="PARRAFO"><span class="PARRAFO"><span class="SUBTITULO">Actualizar:</span>  
+              Si el usuario invoca la opci&oacute;n Actualizar se despliega un nuevo formulario 
+              en el cual los &uacute;nicos campos modificables son: Estado persona, y Estado 
+              solicitud.</span></p>
+            <p class="TITLE"><img src="../img/SOF_001B27b.PNG"243" ></p>
+           
+            <p><b><b><b><span class="PARRAFO"><a href="SOH_001B.html" >Formulario 
+              principal</a> |</span></b><span class="PARRAFO"><a href="SOH_001B1.html" >Filtros</a> 
+              |</span></b></b><a href="SOH_001B2.html" >Funcionarios</a> |<span > 
+              <b></b></span><a href="SOH_005B4.html"><b><b><span class="PARRAFO"></span></b></b> 
+              </a><a href="SOH_001B3.html" >Calificaci&oacute;n</a><b><b><span class="PARRAFO">|</span></b></b> 
+              <span class="PARRAFO"><a href="SOH_001B4.html" >Negaci&oacute;n</a> |<span > 
+              <b></b></span><a href="SOH_005B4.html"><b><b><span class="PARRAFO"></span></b></b> 
+              </a><a href="SOH_001B5.html" >Variables cupo</a></span></p>
+            
+        </section>
+    <script src="../js/menu.js"></script>
+
+    <footer>
+        <div>
+            <img class="TITLE"  src= "../img/logo.PNG">
+        </div>
+        <p>OpenCard SAS</p>
+        <p>Calle 77 Nº 11-19 Piso 4°, Bogotá D.C.</p>
+        <p>Tel (57) 601 - 313 37 75  <a href="http://www.OpenCard.com"
+                target="_blank">www.OpenCard.com</a></p>
+
+    </footer>
+</body>
+
+</html>

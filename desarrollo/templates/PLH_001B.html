@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>BANKBU®</title>
+  <link rel="stylesheet" href="../css/pages.css">
+  <link rel="stylesheet" href="../css/style.css">
+  <link rel="icon" href="../img/ACQUIRER-logo.JPG" type="image/x-icon">
+</head>
+
+<body>
+  <header>
+    <img class="logo" src="../img/logoBankbu_.PNG" alt="Logo de Mi Empresa">
+    <div id="menuBtn">
+      <img class="TITLE" src="../img/menu.PNG" alt="Botón de Menú ">
+    </div>
+  </header>
+  <nav>
+    <ul>
+      <li>
+        <a href="../index.html" class="main-optionINICIO">INICIO</a>
+      </li>
+      <li>
+        <a href="NUH_INTB.html" class="main-optionINTRODUCCIÓN">INTRODUCCIÓN</a>
+      </li>
+      <li><a href="#" class="main-option">NUCLEO ▼</a>
+        <ul>
+          <li><a href="NUH_000B.html">Config. Sistema</a></li>
+          <li><a href="NUH_00B_N2.html">Parametros</a></li>
+          <li><a href="NUH_00B_inicio.html">Inicio</a></li>
+          <li><a href="NUH_00B_proceso.html">Procesos</a></li>
+          <li><a href="NUH_00B_inf.html">Inf. Cliente</a></li>
+          <li><a href="NUH_00B_conta.html">Contabilidad</a></li>
+          <li style="visibility: hidden; display: none;"><a href="NUH_00B_audi.html">Auditoria</a></li>
+
+        </ul>
+      </li>
+      <li>
+        <a href="#" class="main-option">EMISOR ▼</a>
+        <ul>
+          <li><a href="EMH_000B.html">Productos</a></li>
+          <li><a href="EMH_000Bsoli.html">Solicitudes</a></li>
+          <li><a href="EMH_000Bmerca.html">Mercadeo</a></li>
+          <li><a href="EMH_000Bservi.html">Servicio Al Cliente</a></li>
+          <li><a href="EMH_000Bpendi.html">Pendientes</a></li>
+          <li><a href="EMH_000Btrans.html">Transaccionabilidad</a></li>
+          <li><a href="EMH_000Bauto.html">Autorizaciones</a></li>
+          <li><a href="EMH_000Bplasti.html">Adm. Plasticos</a></li>
+          <li><a href="EMH_000Brecla.html">Reclamos</a></li>
+                    <li><a href="MEH_032B.html">Lealtad</a></li>
+                    <li><a href="COH_064B.html">Cobranzas</a></li>
+        </ul>
+      </li>
+      <li style="visibility: hidden">
+        <a href="ACH_000B.html" class="main-option">ADQUIRIENTE</a>
+      </li>
+      <li style="visibility: hidden">
+        <a href="DBH_000B.html" class="main-option">TARJETA DEBITO</a>
+      </li>
+    </ul>
+  </nav>
+
+  <section>
+    <div>
+      <table>
+        <tr>
+          <td>
+            <div>
+
+              <p class="TITLE">Inventario de plásticos </p>
+            </div>
+          </td>
+        </tr>
+      </table>
+      <p class="PARRAFO">Mediante esta opción, la entidad puede gestionar el control de los plásticos, tanto los nuevos
+        que ingresan como los entregados a los terceros para ser realzados (embosados).</span></p>
+      <p class="PARRAFO">El manejo del inventario de los plásticos requiere, entre otras condiciones que, el campo
+        Control de remisión de plásticos, contenido en la opción
+        <a href="NUH_055B.html">Parámetros operativos</a>
+        se encuentre marcado en "Sí", que se aplique <a href="PLH_020B.html">Control de inventario</a> a los
+        plásticos, bien sea de manera manual o mediante el proceso de <a href="PLH_031B.html">Cargue
+            de archivo de inventario</a></span> , y que se aplique <a href="PLH_011B.html">acuse de recibo</a> para
+        las diferentes tarjetas.</span> 
+      </p>
+      <p class="PARRAFO">Con el fin de poder aplicar masivamente el control de inventario y, el acuse de recibo mediante
+        los cargues contenidos en el aplicativo, se necesita que en la <a href="PLH_010B.html">estructura del archivo de
+          realce</a> , se parametrice la secuencia para todos los modelos de la entidad.</span></p>
+      <p class="PARRAFO">La opción cuenta con los enlaces
+        <a href="PLH_002B.html"> Generación pedidos</a>,
+        <a href="PLH_003B.html"> Registro de entrega</a> y
+        <a href="PLH_001B.html#BL_GENERAR"> Generación de
+            archivo</a> , que invocan otros formularios que complementan el proceso de inventario de los
+        plásticos.</span> 
+      </p>
+      <p class="PARRAFO">El formulario contiene un filtro que
+        le permite al usuario seleccionar por medio de una lista de valores el </span><span><a
+              href="NUH_057B.html">modelo
+              de plástico</a></span><span class="PARRAFO"> para el que se desea
+          consultar la información.</span></p>
+      <p class="TITLE"><img src="../img/PLF_001E.PNG"></p>
+      <p class="PARRAFO"><span class="PARRAFO">Si el usuario no selecciona
+          ningún registro para consutar, al ingresar al formulario inicial éste
+          por defecto despliega la totalidad de los registros existentes. El primer
+          campo del formulario, Revisar existencias, muestra un indicador para
+          aquellos modelos para los cuales el sistema detecta que las existencias actuales
+          se encuentran por debajo del punto de reorden y por lo tanto deben ser revisados
+          para generar el pedido correspondiente al proveedor.</span></p>
+      <p class="TITLE"><img src="../img/PLF_001E1.PNG"></p>
+      <p class="PARRAFO"><span class="PARRAFO">El formulario contiene
+          las opciones Actualizar, Eliminar y Adicionar.</span></p>
+      <p class="PARRAFO"><b><span class="SUBTITULO">Adicionar:</span></b>
+        si el usuario invoca la opción Adicionar se despliega un nuevo formulario
+        con los siguientes campos.</p>
+      <p class="TITLE"><img src="../img/PLF_001E2.PNG"></p>
+      <p class="TITLE">Descripción de campos</p>
+      <div>
+        <table>
+          <tr>
+            <td class="titletable">
+              <p class="SUBTITULO"><b><span>Modelo de plástico</span></b></p>
+            </td>
+            <td>
+              <p class="PARRAFO">Campo
+                obligatorio con lista de valores que permite seleccionar el <span><a href="NUH_057B.html">modelo
+                      de plástico</a></span>  para el que se desea llevar el
+                inventario a través de la presente opción.</p>
+            </td>
+          </tr>
+          <tr>
+            <td class="titletable">
+              <p class="SUBTITULO"><b><span>Pedido</span></b></p>
+            </td>
+            <td>
+              <p class="PARRAFO">Este
+                campo indica la cantidad de unidades del modelo que le han sido <a
+                  href="PLH_002B.html">solicitadas</a>
+                al proveedor del mismo. Por defecto al adicionar un registro se muestra
+                con el valor '0'</p>
+            </td>
+          </tr>
+
+          <tr>
+            <td class="titletable">
+              <p class="SUBTITULO"><b><span>Existencias</span></b></p>
+            </td>
+            <td>
+              <p class="PARRAFO">Campo
+                que muestra la cantidad de unidades del modelo plástico que
+                actualmente tiene disponible la entidad en su inventario y que resulta
+                de sumar las cantidades <a href="PLH_003B.html">recibidas</a> del proveedor como resultado de
+                los pedidos efectuados y restarle los plásticos que han sido
+                utilizados durante el proceso de <a href="PLH_008B.html">realce</a>. Por defecto al adicionar
+                un registro se muestra
+                con el valor '0'</p>
+            </td>
+          </tr>
+
+          <tr>
+            <td class="titletable">
+              <p class="SUBTITULO"><b><span>Realce</span></b></p>
+            </td>
+            <td>
+              <p class="PARRAFO">Este
+                campo indica la cantidad de unidades del modelo que le han sido entregadas
+                a los diferentes proveedores de realce como resultado de la generación de los archivos de <a
+                  href="PLH_008B.html">
+                    realce</a> de tarjetas que utilizan este modelo
+                de plástico. Por defecto al adicionar un registro se muestra
+                con el valor '0'</p>
+            </td>
+          </tr>
+
+          <tr>
+            <td class="titletable">
+              <p class="SUBTITULO"><b><span>Reorden</span></b></p>
+            </td>
+            <td>
+              <p class="PARRAFO">Campo
+                obligatorio en el cual se indica la cantidad mínima de existencias
+                que por modelo debe tener disponibles la entidad para atender sus
+                demandas de plásticos para el realce de las tarjetas, y que
+                constituye el punto en el cual se debe generar un nuevo pedido al
+                proveedor.</p>
+            </td>
+          </tr>
+
+          <tr>
+            <td class="titletable">
+              <p class="SUBTITULO"><b><span>Dañados</span></b></p>
+            </td>
+            <td>
+              <p class="PARRAFO">Este
+                campo indica la cantidad de unidades del modelo que se han <a href="PLH_005B.html">dañado o
+                    averiado</a>
+                durante los procesos de realce. Por defecto al adicionar un registro
+                se muestra con el valor '0'</p>
+            </td>
+          </tr>
+        </table>
+
+      </div>
+      <table>
+        <tr>
+          <td class="titletable">
+            <p class="SUBTITULO"><b><span>Entregados</span></b></p>
+          </td>
+          <td>
+            <p class="PARRAFO">Este
+              campo indica la cantidad de unidades del modelo que después de
+              haber sido realzadas han sido <a href="PLH_018B.html">entregadas</a>
+              efectivamente a los clientes titulares de las tarjetas. Por defecto
+              al adicionar un registro se muestra con el valor '0'</p>
+          </td>
+        </tr>
+
+        <tr>
+          <td class="titletable">
+            <p class="SUBTITULO"><b><span>Rechazados</span></b></p>
+          </td>
+          <td>
+            <p class="PARRAFO">Campo
+              que muestra la cantidad de unidades del modelo que después de
+              haber sido realzadas no pudieron ser entregadas o fueron <a href="PLH_019B.html">rechazadas</a>
+              por los clientes titulares de las tarjetas. Por defecto al adicionar
+              un registro se muestra con el valor '0'</p>
+          </td>
+        </tr>
+      </table>
+
+      <p class="PARRAFO"><b><span class="SUBTITULO">Actualizar:</span></b>
+        si el usuario selecciona un registro e invoca la opción Actualizar,
+        se despliega un formulario en el cual el único campo modificable es
+        Reorden para permitirle a la entidad modificar la cantidad mínima
+        de existencias que se requiere tener disponible.
+      </p>
+      <p class="TITLE"><img src="../img/PLF_001E3.PNG"></p>
+
+      <p class="PARRAFO"><a name="BL_GENERAR"></a><span class="SUBTITULO"><span><b>Generar
+              archivo de pedidos</b>:</span></span> 
+          si el usuario invoca el hipervínculo generar archivo, el sistema despliega
+          un nuevo formulario en el cual se registra el nombre del archivo de salida
+          que contiene la información de los pedidos generados para los diferentes
+          modelos plásticos.</p>
+      <p class="TITLE"><img src="../img/PLF_001E4.PNG"></p>
+
+      <p class="TITLE">Descripción de campos</p>
+      <div>
+        <table>
+          <tr>
+            <td class="titletable">
+              <p class="SUBTITULO"><b><span>Código</span></b></p>
+            </td>
+            <td>
+              <p class="PARRAFO">Campo
+                obligatorio con lista de valores de la que se selecciona el nombre
+                el archivo a generar con la información de los pedidos de plásticos
+                efectuados.</p>
+            </td>
+          </tr>
+          <tr>
+            <td class="titletable">
+              <p class="SUBTITULO"><b><span>Fecha
+                    generación </span></b></p>
+            </td>
+            <td>
+              <p class="PARRAFO">En
+                este campo obligatorio, se registra en formato YYYY-MM-DD la fecha
+                a la que corresponde el archivo generado.</p>
+            </td>
+          </tr>
+        </table>
+      </div>
+
+      <div>
+  </section>
+  <script src="../js/menu.js"></script>
+
+  <footer>
+    <div>
+      <img class="TITLE" src="../img/logo.PNG">
+    </div>
+    <p>OpenCard SAS</p>
+    <p>Calle 77 Nº 11-19 Piso 4°, Bogotá D.C.</p>
+    <p>Tel (57) 601 - 313 37 75 <a href="http://www.OpenCard.com" target="_blank">www.OpenCard.com</a></p>
+
+  </footer>
+</body>
+
+</html>

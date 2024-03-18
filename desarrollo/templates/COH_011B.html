@@ -1,0 +1,438 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>BANKBU®</title>
+  <link rel="stylesheet" href="../css/pages.css">
+  <link rel="stylesheet" href="../css/style.css">
+  <link rel="icon" href="../img/ACQUIRER-logo.JPG" type="image/x-icon">
+</head>
+
+<body>
+
+  <header>
+    <img class="logo" src="../img/logoBankbu_.PNG" alt="Logo de Mi Empresa">
+    <div id="menuBtn">
+      <img class="TITLE" src="../img/menu.PNG" alt="Botón de Menú ">
+    </div>
+  </header>
+  <nav>
+    <ul>
+      <li>
+        <a href="../index.html" class="main-optionINICIO">INICIO</a>
+      </li>
+      <li>
+        <a href="NUH_INTB.html" class="main-optionINTRODUCCIÓN">INTRODUCCIÓN</a>
+      </li>
+      <li><a href="#" class="main-option">NUCLEO ▼</a>
+        <ul>
+          <li><a href="NUH_000B.html">Config. Sistema</a></li>
+          <li><a href="NUH_00B_N2.html">Parametros</a></li>
+          <li><a href="NUH_00B_inicio.html">Inicio</a></li>
+          <li><a href="NUH_00B_proceso.html">Procesos</a></li>
+          <li><a href="NUH_00B_inf.html">Inf. Cliente</a></li>
+          <li><a href="NUH_00B_conta.html">Contabilidad</a></li>
+          <li style="visibility: hidden; display: none;"><a href="NUH_00B_audi.html">Auditoria</a></li>
+
+        </ul>
+      </li>
+      <li>
+        <a href="#" class="main-option">EMISOR ▼</a>
+        <ul>
+          <li><a href="EMH_000B.html">Productos</a></li>
+          <li><a href="EMH_000Bsoli.html">Solicitudes</a></li>
+          <li><a href="EMH_000Bmerca.html">Mercadeo</a></li>
+          <li><a href="EMH_000Bservi.html">Servicio Al Cliente</a></li>
+          <li><a href="EMH_000Bpendi.html">Pendientes</a></li>
+          <li><a href="EMH_000Btrans.html">Transaccionabilidad</a></li>
+          <li><a href="EMH_000Bauto.html">Autorizaciones</a></li>
+          <li><a href="EMH_000Bplasti.html">Adm. Plasticos</a></li>
+          <li><a href="EMH_000Brecla.html">Reclamos</a></li>
+                    <li><a href="MEH_032B.html">Lealtad</a></li>
+                    <li><a href="COH_064B.html">Cobranzas</a></li>
+        </ul>
+      </li>
+      <li style="visibility: hidden">
+        <a href="ACH_000B.html" class="main-option">ADQUIRIENTE</a>
+      </li>
+      <li style="visibility: hidden">
+        <a href="DBH_000B.html" class="main-option">TARJETA DEBITO</a>
+      </li>
+    </ul>
+  </nav>
+
+  <section>
+    <div>
+      <table>
+        <tr>
+          <td>
+            <div>
+              <p class="TITLE">Registro de autorizaciones especiales</p>
+            </div>
+          </td>
+        </tr>
+      </table>
+      <p class="PARRAFO">Mediante este formulario, el sistema le permite a la entidad autorizar utilizaciones a clientes
+        cuyo estado de cuenta no cumple las condiciones establecidas para dicha autorización.</p>
+      <p class="PARRAFO"><span class="SUBTITULO">Cargar Información Autorización Especial:</span>  El sistema verifica
+        que todos los campos contengan datos, por ser obligatorios, luego de lo cual, permite avanzar mediante el botón
+        especial Cargar información.</p>
+      <p class="TITLE"><img src="../img/COF_011B.PNG"></p>
+
+      <table>
+        <tr>
+          <td class="titletable">
+            <p class="SUBTITULO"><b><span>N&uacute;mero
+                  tarjeta </span></b></p>
+          </td>
+          <td>
+            <p class="PARRAFO">Campo obligatorio en el que se debe ingresar el número de la tarjeta del cliente para la
+              que se gestiona la autorización. Al momento de activar el botón especial Cargar información, el sistema
+              valida que el dato ingresado exista, si el número es errado, retorna el mensaje correspondiente.</p>
+          </td>
+        </tr>
+        <tr>
+          <td class="titletable">
+            <p class="SUBTITULO">Valor transacci&oacute;n</p>
+          </td>
+          <td>
+            <p class="PARRAFO">Campo obligatorio, que en un máximo de doce enteros y dos decimales, debe contener el
+              monto de la autorización que se está gestionando.</p>
+          </td>
+        </tr>
+        <tr>
+          <td class="titletable">
+            <p class="SUBTITULO">Transacci&oacute;n</p>
+          </td>
+          <td>
+            <p class="PARRAFO">Campo obligatorio en el que se puede digitar o seleccionar de la lista de valores
+              provista, y poblada previamente en la opción <a href="NUH_027B.html">or&iacute;genes
+                de transacciones,</a> para el origen 8 AUTORIZACIONES NORMALES, en la ruta Núcleo / Configuración de
+              parámetros / Parámetros de operación, el código de la clase de transacción para la que se gestiona la
+              autorización. Si el código digitado no hace parte de la lista, el sistema notifica que ese dato no se
+              encuentra.</p>
+          </td>
+        </tr>
+        <tr>
+          <td class="titletable">
+            <p class="SUBTITULO"><b>Establecimiento</b></p>
+          </td>
+          <td>
+            <p class="PARRAFO">Campo obligatorio en el que se puede digitar o seleccionar de la lista
+              de valores provista, y poblada previamente en la opción<a href="ESH_006B.html"> Información de
+                establecimientos</a>,
+              en la ruta Núcleo / Información cliente, el código del comercio en el que se va a efectuar
+              la transacción para la que se gestiona la autorización. Si el código digitado no hace
+              parte de la lista, el sistema notifica que ese dato no se encuentra. Si el código existe,
+              se despliega el nombre del mismo.</p>
+          </td>
+        </tr>
+        <tr>
+          <td class="titletable">
+            <p class="SUBTITULO"><b>Moneda</b></p>
+          </td>
+          <td>
+            <p class="PARRAFO">
+              Campo obligatorio en el que se puede digitar o seleccionar de la lista de valores provista, y poblada
+              previamente en la opción <a href="NUH_005B.html">monedas</a>
+              en la ruta Núcleo / Configuración de parámetros / Parámetros generales, el código de la moneda en que se
+              denomina la transacción para la que se gestiona la autorización. Si el código digitado no hace parte de la
+              lista, el sistema notifica que ese dato no se encuentra. Si el código existe, se despliega el nombre de la
+              misma.</p>
+          </td>
+        </tr>
+      </table>
+
+      <p class="PARRAFO">Al cargar la información a través del botón especial, se muestra un formulario que contiene un
+        enlace al formulario Estadísticas, tres bloques de datos, y los botones Proceso Autorización y Cancelar. </p>
+      <p class="TITLE"><img src="../img/COF_011B1.PNG"></p>
+
+      <table>
+        <tr>
+          <td class="titletable">
+            <p class="SUBTITULO"><b>N&uacute;mero
+                tarjeta </b></p>
+          </td>
+          <td>
+            <p class="PARRAFO">Muestra el número de tarjeta enmascarado (si aplica), para la que se está gestionando la
+              autorización.</p>
+          </td>
+        </tr>
+        <tr>
+          <td class="titletable">
+            <p class="SUBTITULO"><b>Nombre
+                pl&aacute;stico </b></p>
+          </td>
+          <td>
+            <p class="PARRAFO">Muestra el nombre del cliente como aparece en el plástico de la tarjeta.</p>
+          </td>
+        </tr>
+        <tr>
+          <td class="titletable">
+            <p class="SUBTITULO">Tipo
+              identificaci&oacute;n </p>
+          </td>
+          <td>
+            <p class="PARRAFO">Contiene la abreviatura y nombre del tipo de documento de identificación del
+              tarjetahabiente.</p>
+          </td>
+        </tr>
+        <tr>
+          <td class="titletable">
+            <p class="SUBTITULO">N&uacute;mero
+              identificaci&oacute;n </p>
+          </td>
+          <td>
+            <p class="PARRAFO">Contiene el número del documento de identificación del tarjetahabiente.</p>
+          </td>
+        </tr>
+        <tr>
+          <td class="titletable">
+            <p class="SUBTITULO"><b>Fecha
+                vencimiento </b></p>
+          </td>
+          <td>
+            <p class="PARRAFO">Muestra la fecha de vencimiento, enmascarada (si aplica), de la tarjeta para la que se
+              está gestionando la autorización.</p>
+          </td>
+        </tr>
+        <tr>
+          <td class="titletable">
+            <p class="SUBTITULO"><b>Transacci&oacute;n</b></p>
+          </td>
+          <td>
+            <p class="PARRAFO">Contiene el código y nombre de la transacción para la que se está gestionando la
+              autorización.</p>
+          </td>
+        </tr>
+        <tr>
+          <td class="titletable">
+            <p class="SUBTITULO"><b>Moneda</b></p>
+          </td>
+          <td>
+            <p class="PARRAFO">Contiene el código y nombre de la transacción en que se denomina la transacción para la
+              que se gestiona la autorización.</p>
+          </td>
+        </tr>
+        <tr>
+          <td class="titletable">
+            <p class="SUBTITULO"><b>Valor
+                transacci&oacute;n</b></p>
+          </td>
+          <td>
+            <p class="PARRAFO">Campo que muestra el monto de la autorización que se está gestionando.</p>
+          </td>
+        </tr>
+        <tr>
+          <td class="titletable">
+            <p class="SUBTITULO"><b>Establecimiento</b></p>
+          </td>
+          <td>
+            <p class="PARRAFO">Campo que muestra el código y nombre comercial del establecimiento en el que se va a
+              efectuar la transacción para la que se gestiona la autorización.</p>
+          </td>
+        </tr>
+        <tr>
+          <td class="titletable">
+            <p class="SUBTITULO"><b>Horario</b></p>
+          </td>
+          <td>
+            <p class="PARRAFO">Campo que contiene información del horario en que el establecimiento está autorizado para
+              operar normalmente; este dato ayuda a la entidad a detectar comportamientos fraudulentos con el uso de la
+              tarjeta.</p>
+          </td>
+        </tr>
+        <tr>
+          <td class="titletable">
+            <p class="SUBTITULO">N&uacute;mero
+              identificaci&oacute;n</p>
+          </td>
+          <td>
+            <p class="PARRAFO">Campo que ilustra el número de identificación del establecimiento en donde se está
+              realizando la transacción.</p>
+          </td>
+        </tr>
+        <tr>
+          <td class="titletable">
+            <p class="SUBTITULO"><b>Raz&oacute;n
+                social </b></p>
+          </td>
+          <td>
+            <p class="PARRAFO">Muestra el nombre con el cual se encuentra registrado el establecimiento ante la Cámara
+              de Comercio o la entidad que cumpla esa función.</p>
+          </td>
+        </tr>
+        <tr>
+          <td class="titletable">
+            <p class="SUBTITULO"><b>Servicio</b></p>
+          </td>
+          <td>
+            <p class="PARRAFO">Despliega el código y nombre del servicio asociado al comercio a través del cual se
+              realiza la utilización para la que se solicita la autorización.</p>
+          </td>
+        </tr>
+        <tr>
+          <td class="titletable">
+            <p class="SUBTITULO"><b>Convenio</b></p>
+          </td>
+          <td>
+            <p class="PARRAFO">Campo de salida que muestra el código y el nombre del convenio al que pertenece la
+              tarjeta, aplica para cuando la misma es de marca privada.</p>
+          </td>
+        </tr>
+      </table>
+      <p class="PARRAFO"><span class="PARRAFO"><span class="SUBTITULO">Proceso
+            autorizaci&oacute;n:</span>  Al activar este botón especial, el sistema genera la respuesta a la misma.
+          En este bloque Información de la Autorización, se muestra la respuesta del sistema a la solicitud de la
+          autorización.</p>
+      <p class="TITLE"><img src="../img/COF_011B2.PNG"></p>
+
+      <table>
+        <tr>
+          <td class="titletable">
+            <p class="SUBTITULO"><b>C&oacute;digo
+                respuesta </b></p>
+          </td>
+          <td>
+            <p class="PARRAFO">Muestra tanto el código como la descripción de la respuesta dada por el sistema a la
+              solicitud de autorización.</p>
+          </td>
+        </tr>
+        <tr>
+          <td class="titletable">
+            <p class="SUBTITULO">N&uacute;mero
+              autorizaci&oacute;n</p>
+          </td>
+          <td>
+            <p class="PARRAFO">En caso de que la solicitud de autorización haya sido exitosa, en este campo se muestra
+              el número, diferentes a ceros, que le fue asignado por el sistema. En otros casos se muestran solo ceros.
+            </p>
+          </td>
+        </tr>
+      </table>
+
+      <p class="PARRAFO"><span class="SUBTITULO">Estad&iacute;sticas:</span> 
+        Permite conocer las utilizaciones realizadas a trav&eacute;s de la l&iacute;nea
+        de cr&eacute;dito a una fecha determinada.</p>
+      <p class="TITLE"><img src="../img/COF_011B3.PNG"></p>
+
+      <p class="PARRAFO"><span class="PARRAFO"><span class="SUBTITULO">Detalle:</span> 
+          A trav&eacute;s de este bot&oacute;n el sistema inicia el proceso de generar
+          la autorizaci&oacute;n, y muestra el resultado en un nuevo bloque que se muestra
+          en la parte inferior del formulario: Informaci&oacute;n de la autorizaci&oacute;n.</span></p>
+      <p class="TITLE"><img src="../img/COF_011B4.PNG"></p>
+
+      <table>
+        <tr>
+          <td class="titletable">
+            <p class="SUBTITULO">L&iacute;nea
+              cr&eacute;dito
+            </p>
+          </td>
+          <td>
+            <p class="PARRAFO">Contiene
+              el nombre o descripci&oacute;n de la l&iacute;nea asociada al c&oacute;digo
+              anterior.</p>
+          </td>
+        </tr>
+        <tr>
+          <td class="titletable">
+            <p class="SUBTITULO">Moneda</p>
+          </td>
+          <td>
+            <p class="PARRAFO">Despliega
+              el nombre de la moneda en que se denomina la respectiva l&iacute;nea
+              de cr&eacute;dito.</p>
+          </td>
+        </tr>
+        <tr>
+          <td class="titletable">
+            <p class="SUBTITULO">Disponible
+              l&iacute;nea</p>
+          </td>
+          <td>
+            <p class="PARRAFO">Muestra
+              el cupo disponible de la l&iacute;nea de cr&eacute;dito de acuerdo con
+              el producto.</p>
+          </td>
+        </tr>
+        <tr>
+          <td class="titletable">
+            <p class="SUBTITULO">Cantidad</p>
+          </td>
+          <td>
+            <p class="PARRAFO">Indica
+              el n&uacute;mero de autorizaciones que a&uacute;n no han sido procesadas.</p>
+          </td>
+        </tr>
+        <tr>
+          <td class="titletable">
+            <p class="SUBTITULO">Valor</p>
+          </td>
+          <td>
+            <p class="PARRAFO">Se&ntilde;ala
+              el monto total de las autorizaciones que a&uacute;n no han sido procesadas.</p>
+          </td>
+        </tr>
+        <tr>
+          <td class="titletable">
+            <p class="SUBTITULO">Semana</p>
+          </td>
+          <td>
+            <p class="PARRAFO">A
+                trav&eacute;s de estos campos la entidad conoce la cantidad de autorizaciones
+                realizadas de acuerdo con la frecuencia que se muestra: Corresponde
+              al total de utilizaciones que han requerido de autorizaci&oacute;n durante
+              el d&iacute;a.</p>
+          </td>
+        </tr>
+        <tr>
+          <td class="titletable">
+            <p class="SUBTITULO">D&iacute;a</p>
+          </td>
+          <td>
+            <p class="PARRAFO">Despliega
+              el total de utilizaciones que han requerido de autorizaci&oacute;n durante
+              la semana.</p>
+          </td>
+        </tr>
+        <tr>
+          <td class="titletable">
+            <p class="SUBTITULO">D&iacute;a</p>
+          </td>
+          <td>
+            <p class="PARRAFO">En
+                este grupo de informaci&oacute;n la entidad conoce la veces en las cuales
+                se han solicitado autorizaciones y &eacute;stas no han sido procesadas:
+              Informa el monto total utilizado durante el d&iacute;a.</p>
+          </td>
+        </tr>
+        <tr>
+          <td class="titletable">
+            <p class="SUBTITULO">Semana</p>
+          </td>
+          <td>
+            <p class="PARRAFO">Registra
+              el monto total utilizado durante la semana.</p>
+          </td>
+        </tr>
+      </table>
+
+  </section>
+  <script src="../js/menu.js"></script>
+</body>
+<footer>
+  <div>
+    <img class="TITLE" src="../img/logo.PNG">
+  </div>
+  <p>OpenCard SAS</p>
+  <p>Calle 77 Nº 11-19 Piso 4°,Bogotá D.C.</p>
+  <p>Tel (57) 601 - 313 37 75 <a href="http://www.OpenCard.com" target="_blank">www.OpenCard.com</a></p>
+
+
+
+</footer>
+
+</html>

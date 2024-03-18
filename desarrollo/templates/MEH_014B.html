@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>BANKBU®</title>
+  <link rel="stylesheet" href="../css/pages.css">
+  <link rel="stylesheet" href="../css/style.css">
+  <link rel="icon" href="../img/ACQUIRER-logo.JPG" type="image/x-icon">
+</head>
+
+<body>
+
+  <header>
+    <img class="logo" src="../img/logoBankbu_.PNG" alt="Logo de Mi Empresa">
+    <div id="menuBtn">
+      <img class="TITLE" src="../img/menu.PNG" alt="Botón de Menú ">
+    </div>
+  </header>
+  <nav>
+    <ul>
+      <li>
+        <a href="../index.html" class="main-optionINICIO">INICIO</a>
+      </li>
+      <li>
+        <a href="NUH_INTB.html" class="main-optionINTRODUCCIÓN">INTRODUCCIÓN</a>
+      </li>
+      <li><a href="#" class="main-option">NUCLEO ▼</a>
+        <ul>
+          <li><a href="NUH_000B.html">Config. Sistema</a></li>
+          <li><a href="NUH_00B_N2.html">Parametros</a></li>
+          <li><a href="NUH_00B_inicio.html">Inicio</a></li>
+          <li><a href="NUH_00B_proceso.html">Procesos</a></li>
+          <li><a href="NUH_00B_inf.html">Inf. Cliente</a></li>
+          <li><a href="NUH_00B_conta.html">Contabilidad</a></li>
+          <li style="visibility: hidden; display: none;"><a href="NUH_00B_audi.html">Auditoria</a></li>
+
+        </ul>
+      </li>
+      <li>
+        <a href="#" class="main-option">EMISOR ▼</a>
+        <ul>
+          <li><a href="EMH_000B.html">Productos</a></li>
+          <li><a href="EMH_000Bsoli.html">Solicitudes</a></li>
+          <li><a href="EMH_000Bmerca.html">Mercadeo</a></li>
+          <li><a href="EMH_000Bservi.html">Servicio Al Cliente</a></li>
+          <li><a href="EMH_000Bpendi.html">Pendientes</a></li>
+          <li><a href="EMH_000Btrans.html">Transaccionabilidad</a></li>
+          <li><a href="EMH_000Bauto.html">Autorizaciones</a></li>
+          <li><a href="EMH_000Bplasti.html">Adm. Plasticos</a></li>
+          <li><a href="EMH_000Brecla.html">Reclamos</a></li>
+                    <li><a href="MEH_032B.html">Lealtad</a></li>
+                    <li><a href="COH_064B.html">Cobranzas</a></li>
+        </ul>
+      </li>
+      <li style="visibility: hidden">
+        <a href="ACH_000B.html" class="main-option">ADQUIRIENTE</a>
+      </li>
+      <li style="visibility: hidden">
+        <a href="DBH_000B.html" class="main-option">TARJETA DEBITO</a>
+      </li>
+    </ul>
+  </nav>
+
+  <section>
+    <div>
+      <table>
+        <tr>
+          <td>
+            <div>
+              <p class="TITLE">Redenci&oacute;n de puntos </p>
+            </div>
+          </td>
+        </tr>
+      </table>
+      <p>La presente forma o pantalla tiene una doble funcionalidad, de un lado permite consultar los puntos de que
+        dispone un cliente por tarjeta(s) y, de otro lado, la(s) clase(s) de premio(s) que puede redimir, si los puntos
+        disponibles lo permiten. Los bloques Millas y Premios despliegan datos de acuerdo con el
+        mecanismo de redenci&oacute;n asociado a cada una de las tarjetas que posea el cliente y que hagan parte de
+        alguno de los esquemas de puntaje. As&iacute; mismo, se dispone de un bot&oacute;n especial, descrito al final
+        del documento, que permite la generaci&oacute;n de archivos (interfaces) con informaci&oacute;n sobre las
+        redenciones, principalmente de millas, de forma masiva o individual.</p>
+      <p class="PARRAFO"><span class="SUBTITULO">Filtro:</span>  El formulario cuenta
+        con un filtro inicial de b&uacute;squeda, con los cuales se podr&aacute; realizar la consulta a trav&eacute;s de
+        los campos Tipo y N&uacute;mero de identificaci&oacute;n:</p>
+      <p class="TITLE"><img src="../img/MEF_014B.PNG"></p>
+
+      <table>
+        <tr>
+          <td class="titletable">
+            <p class="SUBTITULO">Mecanismo de redenci&oacute;n </span></p>
+          </td>
+          <td>
+            <p>Campo de salida que muestra el mecanismo asociado al producto en la opci&oacute;n <A
+                  href="MEH_006B.html#BL_MECANISMO">esquemas de puntaje</A> del mismo m&oacute;dulo, y que a
+              excepci&oacute;n del mecanismo de Abono, los datos correspondientes a Millas y
+              Premios son reflejados en los bloques subsiguientes.</p>
+          </td>
+        </tr>
+        <tr>
+          <td class="titletable">
+            <p class="SUBTITULO"><b><span>N&uacute;mero de tarjeta </span></b></p>
+          </td>
+          <td>
+            <p>Contiene el n&uacute;mero de cada una de las tarjetas que posea el cliente y cuyo producto asociado se
+              encuentre parametrizado en alguno de los <A href="MEH_006B.html">esquemas de puntaje</A>.</p>
+          </td>
+        </tr>
+        <tr>
+          <td class="titletable">
+            <p class="SUBTITULO"><b><span>Tipo de tarjeta </span></b></p>
+          </td>
+          <td>
+            <p>Indica la clase tarjeta, Principal o Extendida, asociada al n&uacute;mero anterior.
+            </p>
+          </td>
+        </tr>
+        <tr>
+          <td class="titletable">
+            <p class="SUBTITULO"><b><span>Devueltos </span></b></p>
+          </td>
+          <td>
+            <p>En este campo aparece la informaci&oacute;n concerniente a los puntos que se han devuelto al cliente por
+              concepto de <A href="MEH_015B.html">reversiones de premios</A> hechos por &eacute;ste bajo
+              cualquier circunstancia v&aacute;lida para tal evento.</p>
+          </td>
+        </tr>
+        <tr>
+          <td class="titletable">
+            <p class="SUBTITULO"><b><span>Acumulados</span></b></p>
+          </td>
+          <td>
+            <p>En este campo se muestran los puntos disponibles que el cliente posee a la fecha de la redenci&oacute;n
+              de puntos; una vez se grabe la redenci&oacute;n en curso (la que se est&aacute; registrando), la pantalla
+              actualiza el nuevo monto.</p>
+          </td>
+        </tr>
+        <tr>
+          <td class="titletable">
+            <p class="SUBTITULO"><b><span>Puntos</span></b></p>
+          </td>
+          <td>
+            <p>En este campo se refleja la sumatoria o el total de puntos que se har&aacute;n efectivos mediante la
+              redenci&oacute;n, en curso, del premio o las millas.</p>
+          </td>
+        </tr>
+      </table>
+
+      <p class="PARRAFO">El formulario contiene las opciones Actualizar, Millas y Premios.</p>
+      <p class="PARRAFO"><span class="SUBTITULO">Actualizar:</span>  Si el usuario
+        invoca la opci&oacute;n Actualizar se despliega un nuevo formulario en cual
+        el &uacute;nico campo modificable es Puntos:</p>
+      <p class="TITLE"><img src="../img/MEF_014B1.PNG"></p>
+
+      <table>
+        <tr>
+          <td class="titletable">
+            <p class="SUBTITULO"><b><span>Puntos</span></b></p>
+          </td>
+          <td>
+            <p>En este campo la pantalla permite digitar el n&uacute;mero de puntos a redimir por tarjeta, pudiendo
+              as&iacute; utilizar los puntos de otras tarjetas, a su nombre, siempre que el mecanismo de
+              redenci&oacute;n como el monto disponible lo permitan, para redimir un premio o millas en
+              particular. El sistema controla que los puntos a redimir por tarjeta no excedan el valor disponible
+              por cada una.</p>
+          </td>
+        </tr>
+      </table>
+
+      <p><span class="SUBTITULO">Millas:</span>  Conjunto de campos que adem&aacute;s de ilustrar los diferentes planes
+        de millas disponibles para su redenci&oacute;n, permiten seleccionar la cantidad de cada uno de ellos,
+        reflejando el subtotal por cada plan y el total por este tipo de mecanismo, en el &uacute;ltimo campo de la
+        columna Puntos.</p>
+      <p class="TITLE"><img src="../img/MEF_014B2.PNG"></p>
+
+      <p><span class="SUBTITULO">Actualizar:</span>  Si el usuario
+        invoca la opci&oacute;n Actualizar se despliega un nuevo formulario en cual
+        el &uacute;nico campo modificable es Cantidad:</p>
+      <p class="TITLE"><img src="../img/MEF_014B3.PNG"></p>
+
+      <table>
+        <tr>
+          <td class="titletable">
+            <p class="SUBTITULO"><b><span>Cantidad</span></span></b></p>
+          </td>
+          <td>
+            <p>En este campo la pantalla permite digitar el n&uacute;mero de puntos a redimir por tarjeta, pudiendo
+              as&iacute; utilizar los puntos de otras tarjetas, a su nombre, siempre que el mecanismo de
+              redenci&oacute;n como el monto disponible lo permitan, para redimir un premio o millas en
+              particular. El sistema controla que los puntos a redimir por tarjeta no excedan el valor disponible
+              por cada una.</p>
+          </td>
+        </tr>
+      </table>
+      <p><span class="SUBTITULO">Premios:</span> Conjunto de campos que adem&aacute;s de ilustrar los diferentes premios
+        (mercanc&iacute;as, electrodom&eacute;sticos, etc) disponibles para su redenci&oacute;n, permiten seleccionar la
+        cantidad de cada uno de ellos, reflejando el subtotal por cada premio y el total por este tipo de mecanismo, en
+        el &uacute;ltimo campo de la columna Puntos.</p>
+      <p class="TITLE"><img src="../img/MEF_014B4.PNG"></p>
+
+      <p><span class="SUBTITULO">Actualizar:</span>  Si el usuario
+        invoca la opci&oacute;n Actualizar se despliega un nuevo formulario en cual
+        el &uacute;nico campo modificable es Inventario:</p>
+      <p class="TITLE"><img src="../img/MEF_014B5.PNG"></p>
+
+      <table>
+        <tr>
+          <td class="titletable">
+            <p class="SUBTITULO"><b><span>Inventario</span></b></p>
+          </td>
+          <td>
+            <p>Campo que ilustra la cantidad de premios disponible al momento de la redenci&oacute;n, y se corresponde
+              con el campo Saldo inventario de la opci&oacute;n <A href="MEH_013B.html">Premios
+                  puntaje</A>.</p>
+          </td>
+        </tr>
+      </table>
+  </section>
+  <script src="../js/menu.js"></script>
+</body>
+<footer>
+  <div>
+    <img class="TITLE" src="../img/logo.PNG">
+  </div>
+  <p>OpenCard SAS</p>
+  <p>Calle 77 Nº 11-19 Piso 4°,Bogotá D.C.</p>
+  <p>Tel (57) 601 - 313 37 75 <a href="http://www.OpenCard.com" target="_blank">www.OpenCard.com</a></p>
+
+
+</footer>
+
+</html>

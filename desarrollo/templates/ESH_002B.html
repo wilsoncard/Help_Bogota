@@ -1,0 +1,414 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>BANKBU®</title>
+
+  <link rel="stylesheet" href="../css/pages.css">
+  <link rel="stylesheet" href="../css/style.css">
+  <link rel="icon" href="../img/ACQUIRER-logo.JPG" type="image/x-icon">
+</head>
+
+<body>
+
+  <header>
+    <img class="logo" src="../img/logoBankbu_.PNG" alt="Logo de Mi Empresa">
+    <div id="menuBtn">
+      <img class="TITLE" src="../img/menu.PNG" alt="Botón de Menú ">
+    </div>
+  </header>
+  <nav>
+    <ul>
+      <li>
+        <a href="../index.html" class="main-optionINICIO">INICIO</a>
+      </li>
+      <li>
+        <a href="NUH_INTB.html" class="main-optionINTRODUCCIÓN">INTRODUCCIÓN</a>
+      </li>
+      <li><a href="#" class="main-option">NUCLEO ▼</a>
+        <ul>
+          <li><a href="NUH_000B.html">Config. Sistema</a></li>
+          <li><a href="NUH_00B_N2.html">Parametros</a></li>
+          <li><a href="NUH_00B_inicio.html">Inicio</a></li>
+          <li><a href="NUH_00B_proceso.html">Procesos</a></li>
+          <li><a href="NUH_00B_inf.html">Inf. Cliente</a></li>
+          <li><a href="NUH_00B_conta.html">Contabilidad</a></li>
+          <li style="visibility: hidden; display: none;"><a href="NUH_00B_audi.html">Auditoria</a></li>
+
+        </ul>
+      </li>
+      <li>
+        <a href="#" class="main-option">EMISOR ▼</a>
+        <ul>
+          <li><a href="EMH_000B.html">Productos</a></li>
+          <li><a href="EMH_000Bsoli.html">Solicitudes</a></li>
+          <li><a href="EMH_000Bmerca.html">Mercadeo</a></li>
+          <li><a href="EMH_000Bservi.html">Servicio Al Cliente</a></li>
+          <li><a href="EMH_000Bpendi.html">Pendientes</a></li>
+          <li><a href="EMH_000Btrans.html">Transaccionabilidad</a></li>
+          <li><a href="EMH_000Bauto.html">Autorizaciones</a></li>
+          <li><a href="EMH_000Bplasti.html">Adm. Plasticos</a></li>
+          <li><a href="EMH_000Brecla.html">Reclamos</a></li>
+          <li><a href="MEH_032B.html">Lealtad</a></li>
+          <li><a href="COH_064B.html">Cobranzas</a></li>
+        </ul>
+      </li>
+      <li style="visibility: hidden">
+        <a href="ACH_000B.html" class="main-option">ADQUIRIENTE</a>
+      </li>
+      <li style="visibility: hidden">
+        <a href="DBH_000B.html" class="main-option">TARJETA DEBITO</a>
+      </li>
+    </ul>
+  </nav>
+
+  <section>
+    <div>
+      <table>
+        <tr>
+          <td>
+            <div>
+              <p class="TITLE">Tipos de servicio</p>
+            </div>
+          </td>
+        </tr>
+      </table>
+      <p class="PARRAFO">Mediante esta funci&oacute;n se permite
+        la consulta y mantenimiento de la tabla que contiene la codificaci&oacute;n
+        de los diferentes tipos de servicio que ofrecen los <a href="ESH_006B.html">establecimientos</a>
+        pertenecientes a la entidad financiera y para cada uno de estos, se definen
+        valores y condiciones espec&iacute;ficos.
+        </span></p>
+      <p class="TITLE"><img src="../img/ESF_002E.PNG"></p>
+
+      <p class="PARRAFO">El formulario contiene las opciones Actualizar,
+        Eliminar y Adicionar. Adicionalmente contiene el hiperv&iacute;nculo Marcas
+        en el cual se definen las condiciones que aplican para cada tipo de servicio.</p>
+      <p class="PARRAFO"><span class="SUBTITULO"><b><span>Adicionar</span></b><span>:</span></span><span>
+          Si el usuario invoca la opci&oacute;n Adicionar se despliega un nuevo formulario</span></p>
+      <p class="TITLE"><img src="../img/ESF_002E1.PNG"></p>
+
+      <p class="TITLE">Descripci&oacute;n de campos</p>
+      <table>
+        <tr>
+          <td class="titletable">
+            <p class="SUBTITULO"><b><span>C&oacute;digo</span></b></p>
+          </td>
+          <td>
+            <p class="PARRAFO">Campo
+              num&eacute;rico de 4 d&iacute;gitos, obligatorio, asignado a cada uno
+              de los tipos de servicio o bien ofrecidos por los establecimientos.
+            </p>
+          </td>
+        </tr>
+        <tr>
+          <td class="titletable">
+            <p class="SUBTITULO"><b><span>Descripci&oacute;n</span></b></p>
+          </td>
+          <td>
+            <p class="PARRAFO">En
+              este campo alfanum&eacute;rico de 30 posiciones, obligatorio, se registra
+              el nombre asociado a cada tipo de servicio.
+            </p>
+          </td>
+        </tr>
+      </table>
+      <p><b><span class="SUBTITULO">Actualizar</span></b>: <span class="PARRAFO">Si el usuario invoca la opci&oacute;n
+          Actualizar
+          se despliega un nuevo formulario en el cual el &uacute;nico campo modificable
+          es Descripci&oacute;n.</span></p>
+      <div>
+        <p class="TITLE"><img src="../img/ESF_002E2.PNG"></p>
+        <p class="PARRAFO"><b><span class="SUBTITULO">Marcas</span></b>: Bloque que permite conocer las marcas o
+          franquicias sobre las que tiene validez o aplica la codificaci&oacute;n desplegada en el bloque anterior.
+          Cuenta con las opciones Actualizar, Eliminar,Adicionar y Detalle. Asi mismo posee un boton que permite
+          regresar a la opci&oacute;n <a href="ESH_002B.html">Tipos de servicio.</a></p>
+        <p class="TITLE"><img src="../img/ESF_002E6.PNG"></p>
+        <p class="PARRAFO"><span class="SUBTITULO"><b><span>Adicionar</span></b><span>:</span></span><span> Si el
+            usuario invoca la opci&oacute;n Adicionar se despliega un nuevo formulario</span> .</p>
+        <p class="TITLE"><img src="../img/ESF_002E5.PNG"></p>
+        <p class="TITLE">Descripci&oacute;n de campos</p>
+        <table>
+          <tr>
+            <td class="titletable">
+              <p class="SUBTITULO"><b><span><span> C&oacute;digo Marca</span></span></b></p>
+            </td>
+            <td>
+              <p class="PARRAFO">Campo num&eacute;rico de 3 posiciones, obligatorio, en el cual se digita el
+                c&oacute;digo de cada una de las marcas o si se prefiere se puede seleccionar de la lista de valores las
+                <A href="NUH_033B.html">franquicias</A> a las cuales pertenece el establecimiento.</p>
+            </td>
+          </tr>
+          <tr>
+            <td class="titletable">
+              <p class="SUBTITULO">Descripci&oacute;n</p>
+            </td>
+            <td>
+              <p class="PARRAFO">Despliega el nombre de la marca o franquicia seleccionada.</p>
+            </td>
+          </tr>
+
+          <tr>
+            <td class="titletable">
+              <p class="SUBTITULO">Porcentaje Rete-fuente</p>
+            </td>
+            <td background="NUH_055B.html">
+              <p class="PARRAFO">Campo que permite registrar el valor porcentual de la tasa a aplicar por
+                retenci&oacute;n en la fuente, sobre el resultado del porcentaje base definido en el campo siguiente.
+                Cabe anotar que el sistema busca este par&aacute;metro en primer lugar a nivel de <A
+                  href="ESH_006E.html#BL_RETE">establecimiento</A>; si no est&aacute; definido all&iacute;, tiene en
+                cuenta el valor aqu&iacute; registrado, y de no estar aqu&iacute;, se remite a los <A
+                  href="NUH_055B.html">Par&aacute;metros operativos</A>; lo mismo aplica para los 3 campos siguientes.
+              </p>
+            </td>
+          </tr>
+
+          <tr>
+            <td class="titletable">
+              <p class="SUBTITULO">Porcentaje base Rete-fuente </p>
+            </td>
+            <td>
+              <p class="PARRAFO">Permite definir el valor porcentual a aplicar y calcular sobre los consumos (u otros
+                conceptos asimilables), sobre cuyo resultado se liquidar&aacute; el impuesto de retenci&oacute;n en la
+                fuente.</p>
+            </td>
+          </tr>
+
+          <tr>
+            <td class="titletable">
+              <p class="SUBTITULO">Porcentaje Retenci&oacute;n Iva </p>
+            </td>
+            <td>
+              <p class="PARRAFO">Campo en el que se registra el valor porcentual de la tasa a aplicar por dicho
+                impuesto, sobre el resultado del porcentaje base retenci&oacute;n IVA obtenido.</p>
+            </td>
+          </tr>
+
+          <tr>
+            <td class="titletable">
+              <p class="SUBTITULO">Porcentaje base Rete-Iva</p>
+            </td>
+            <td>
+              <p class="PARRAFO">En este campo se define el valor porcentual a aplicar y calcular sobre el valor del IVA
+                reportado por los establecimientos en las consignaciones, para establecer la base de c&aacute;lculo de
+                la Retenci&oacute;n a hacer por este concepto.</p>
+            </td>
+          </tr>
+
+          <tr>
+            <td class="titletable">
+              <p class="SUBTITULO">Límite Piso </p>
+            </td>
+            <td>
+              <p class="PARRAFO">En este campo num&eacute;rico de 18 posiciones, no obligatorio, se registra el valor
+                del l&iacute;mite de piso o valor a partir del cual se requiere solicitar autorizaci&oacute;n, que
+                regir&aacute; por defecto para los establecimientos que perteneciendo a cada tipo de servicio no lo
+                hayan definido para cada uno de &eacute;stos.</p>
+            </td>
+          </tr>
+
+          <tr>
+            <td class="titletable">
+              <p class="SUBTITULO">Especialidad</p>
+            </td>
+            <td>
+              <p class="PARRAFO">Campo que posee lista de valores de la cual se selecciona la especialidad asociada al
+                tipo de servicio. La especialidad corresponde a una clasificaci&oacute;n superior, que agrupa a varios
+                tipos de servicio.</p>
+            </td>
+          </tr>
+
+          <tr>
+            <td class="titletable">
+              <p class="SUBTITULO">Días eliminar Autorizaciones </p>
+            </td>
+            <td>
+              <p class="PARRAFO">En este campo se define la cantidad de d&iacute;as calendario que deben pasar entre la
+                solicitud de autorizaci&oacute;n y la eliminaci&oacute;n de la misma, liberando el disponible cuando el
+                movimiento no llega por canje. En caso de que este valor no est&eacute; definido aqu&iacute;, el sistema
+                lo busca en <A href="NUH_055B.html">Par&aacute;metros operativos</A>.</p>
+            </td>
+          </tr>
+
+          <tr>
+            <td class="titletable">
+              <p class="SUBTITULO">Tarjeta D&egrave;bito </p>
+            </td>
+            <td>
+              <p class="PARRAFO">Opci&oacute;n que permite definir de manera excluyente si la cifra relacionada en el
+                campo Valor ubicado a continuaci&oacute;n, corresponde a un porcentaje o un valor absoluto.</p>
+            </td>
+          </tr>
+
+          <tr>
+            <td class="titletable">
+              <p class="SUBTITULO">Valor</p>
+            </td>
+            <td>
+              <p class="PARRAFO">Campo num&eacute;rico de 18 d&iacute;gitos no obligatorio, en el que se registra acorde
+                a lo definido en el campo anterior, el valor absoluto o porcentual a descontar a manera de
+                comisi&oacute;n a los establecimientos por transacciones realizadas con productos d&eacute;bito y que
+                aplicar&aacute; por defecto a los comercios pertenecientes a cada tipo de servicio.</p>
+            </td>
+          </tr>
+
+          <tr>
+            <td class="titletable">
+              <p class="SUBTITULO">Tarjeta Cr&egrave;dito </p>
+            </td>
+            <td>
+              <p class="PARRAFO">Opci&oacute;n que permite definir de manera excluyente si la cifra relacionada en el
+                campo Valor ubicado a continuaci&oacute;n, corresponde a un porcentaje o un valor absoluto.</p>
+            </td>
+          </tr>
+
+          <tr>
+            <td class="titletable">
+              <p class="SUBTITULO">Valor</p>
+            </td>
+            <td>
+              <p class="PARRAFO">Campo num&eacute;rico de 18 d&iacute;gitos no obligatorio, en el que se registra acorde
+                a lo definido en el campo anterior, el valor absoluto o porcentual a descontar a manera de
+                comisi&oacute;n a los establecimientos por transacciones realizadas con tarjetas de cr&eacute;dito y que
+                aplicar&aacute; por defecto a los comercios pertenecientes a cada tipo de servicio.</p>
+            </td>
+          </tr>
+
+          <tr>
+            <td class="titletable">
+              <p class="SUBTITULO">Tarjeta Electr&oacute;n </p>
+            </td>
+            <td>
+              <p class="PARRAFO">Opci&oacute;n que permite definir de manera excluyente si la cifra relacionada en el
+                campo Valor ubicado a continuaci&oacute;n, corresponde a un porcentaje o un valor absoluto.</p>
+            </td>
+          </tr>
+
+          <tr>
+            <td class="titletable">
+              <p class="SUBTITULO">Visa Cash </p>
+            </td>
+            <td>
+              <p class="PARRAFO">Opci&oacute;n que permite definir de manera excluyente si la cifra relacionada en el
+                campo Valor ubicado a continuaci&oacute;n, corresponde a un porcentaje o un valor absoluto.</p>
+            </td>
+          </tr>
+
+          <tr>
+            <td class="titletable">
+              <p class="SUBTITULO">Valor</p>
+            </td>
+            <td>
+              <p class="PARRAFO">Campo num&eacute;rico de 18 d&iacute;gitos no obligatorio, en el que se registra acorde
+                a lo definido en el campo anterior, el valor absoluto o porcentual a descontar a manera de
+                comisi&oacute;n a los establecimientos por transacciones realizadas con productos Visa cash y que
+                aplicar&aacute; por defecto a los comercios pertenecientes a cada tipo de servicio.</p>
+            </td>
+          </tr>
+
+          <tr>
+            <td class="titletable">
+              <p class="SUBTITULO">Derecho propina </p>
+            </td>
+            <td>
+              <p class="PARRAFO">Indicador de si los establecimientos pertenecientes a cada tipo de servicio, tienen o
+                no derecho a la liquidaci&oacute;n y cobro de propina. Si este indicador esta inactivo, los campos %
+                m&aacute;ximo no comisionable y Tolerancia no comisionable, se desactivar&aacute;n.</p>
+            </td>
+          </tr>
+
+          <tr>
+            <td class="titletable">
+              <p class="SUBTITULO">Plazo m&agrave;ximo consignaci&oacute;n </p>
+            </td>
+            <td>
+              <p class="PARRAFO">Campo num&eacute;rico de 2 d&iacute;gitos, no obligatorio, que se&ntilde;ala la
+                cantidad m&aacute;xima de d&iacute;as h&aacute;biles que la entidad concede como plazo por defecto para
+                la captura de las consignaciones efectuadas por los establecimientos, en caso en que dicho dato no
+                aparezca dentro de la informaci&oacute;n de cada establecimiento. Si el plazo tampoco est&aacute;
+                definido en este campo, el sistema lo busca en <A href="NUH_055E.html">Par&aacute;metros
+                  operativos</A><a href="NUH_055B.html">.</a></p>
+            </td>
+          </tr>
+
+          <tr>
+            <td class="titletable">
+              <p class="SUBTITULO">Porcentaje m&agrave;ximo no comisionable </p>
+            </td>
+            <td>
+              <p class="PARRAFO">En este campo num&eacute;rico de 9 posiciones, no obligatorio, se registra el valor
+                porcentual m&aacute;ximo o tope para el cobro de propina acordado por la franquicia. Si no se define un
+                valor para el establecimiento, el sistema asigna el valor que por defecto presente el nivel de tipo de
+                servicio o en su ausencia el valor determinado por la franquicia.</p>
+            </td>
+          </tr>
+
+          <tr>
+            <td class="titletable">
+              <p class="SUBTITULO">Tolerancia no comisionable </p>
+            </td>
+            <td>
+              <p class="PARRAFO">Campo num&eacute;rico de 9 posiciones no obligatorio, en el que se registra el valor
+                absoluto m&aacute;ximo acordado entre el emisor y el operador (franquicia) en que puede excederse el
+                monto de comisi&oacute;n cobrado. Si no se define un valor para el establecimiento, el sistema asigna el
+                valor que por defecto presente el nivel de tipo de servicio o en su ausencia el valor determinado por la
+                franquicia.</p>
+            </td>
+          </tr>
+
+          <tr>
+            <td class="titletable">
+              <p class="SUBTITULO">Permite Ica </p>
+            </td>
+            <td>
+              <p class="PARRAFO">Esta casilla se marca para indicar si para cada tipo de servicio la norma autoriza o no
+                aplicar la retenci&oacute;n del impuesto de industria y comercio ICA, en principio se eximen aquellos
+                relacionados con el expendio de gasolina. Acorde con la manera de proceder de cada franquicia respecto
+                del control de la informaci&oacute;n sobre los establecimientos, debe tenerse cuidado respecto de la
+                marcaci&oacute;n de este indicador.</p>
+            </td>
+          </tr>
+
+          <tr>
+            <td class="titletable">
+              <p class="SUBTITULO">Aerolínea</p>
+            </td>
+            <td>
+              <p class="PARRAFO">Esta casilla se marca para indicar si el establecimiento corresponde a una
+                aerol&iacute;nea. </p>
+            </td>
+          </tr>
+        </table>
+
+        <p><b><span class="SUBTITULO">Actualizar</span></b>: <span class="PARRAFO">Si el usuario invoca la opci&oacute;n
+            Actualizar
+            se despliega un nuevo formulario en el cual los &uacute;nicos campos modificables son: Porcentaje
+            rete-fuente, Procentaje base rete-fuente, Porcentaje retenci&oacute;n iva, porcentaje base rete-iva,
+            límite piso, Especialidad, Días eliminar autorizaciones, Tarjeta débito, Valor, Tarjeta
+            crédito, Valor, Tarjeta electrón, valor, Visa cash, Valor, Derecho propina, plazo
+            máximo consignación, porcentaje máximo no comisionable, tolerancia no comisionable,
+            permite ica, Aerolínea. </span></p>
+        <p class="TITLE"><img src="../img/ESF_002E4.PNG"></p>
+        <p class="PARRAFO"><span class="SUBTITULO">Detalle:</span> Si el usuario invoca
+          la opci&oacute;n Detalle se despliega el siguiente formulario.<span>
+
+          </span></p>
+        <p class="TITLE"><img src="../img/ESF_002E7.PNG"></p>
+  </section>
+  <script src="../js/menu.js"></script>
+</body>
+<footer>
+  <div>
+    <img class="TITLE" src="../img/logo.PNG">
+  </div>
+  <p>OpenCard SAS</p>
+  <p>Calle 77 Nº 11-19 Piso 4°,Bogotá D.C.</p>
+  <p>Tel (57) 601 - 313 37 75 <a href="http://www.OpenCard.com" target="_blank">www.OpenCard.com</a></p>
+
+
+
+</footer>
+
+</html>
