@@ -29,13 +29,15 @@ document.getElementById("menuBtn").addEventListener("click", function (e) {
 });
 
 // Agregar event listener para las subopciones principales
-document.getElementById("menuContainer").addEventListener("click", function (e) {
-    e.stopPropagation(); // Evitar que el clic se propague al documento
+document.querySelectorAll('.main-option, .sub-option').forEach(function(option) {
+    option.addEventListener('click', function(e) {
+        e.stopPropagation(); // Evitar que el clic se propague al documento
 
-    if (e.target.classList.contains('main-option') || e.target.classList.contains('sub-option')) {
-        const subMenu = e.target.nextElementSibling;
-        subMenu.classList.toggle('active');
-    }
+        const subMenu = this.nextElementSibling;
+        if (subMenu) {
+            subMenu.classList.toggle('active');
+        }
+    });
 });
 
 // Cerrar el menú al hacer clic fuera de él

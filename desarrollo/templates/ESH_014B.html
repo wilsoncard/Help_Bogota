@@ -20,13 +20,13 @@
     </div>
   </header>
   <div id="menuContainer"></div>
-    <script>
-      fetch('menu.html')
-        .then(response => response.text())
-        .then(html => {
-          document.getElementById('menuContainer').innerHTML = html;
-        });
-    </script>
+  <script>
+    fetch('menu.html')
+      .then(response => response.text())
+      .then(html => {
+        document.getElementById('menuContainer').innerHTML = html;
+      });
+  </script>
 
   <section>
     <div>
@@ -45,10 +45,10 @@
         relaci&oacute;n o como destino las cuentas de dep&oacute;sito de los comercios.
       </p>
       <p class="PARRAFO">El formulario cuenta con un filtro de b&uacute;squeda inicial
-        y la opci&oacute;n <a href="#Detalle" >Detalle</a>.</p>
+        y la opci&oacute;n <a href="#Detalle">Detalle</a>.</p>
       <p class="TITLE"><img src="../img/ESF_014B1.PNG"></p>
 
-      <p><span class="SUBTITULO">Filtro:</span>  Se pueden realizar consultas a trav&eacute;s
+      <p><span class="SUBTITULO">Filtro:</span> Se pueden realizar consultas a trav&eacute;s
         de las siguientes opciones: </p>
       <p class="TITLE"><img src="../img/ESF_014B.PNG"></p>
 
@@ -72,7 +72,7 @@
           <td>
             <p class="PARRAFO">El
               campo tipo cuenta es un combo con los valores ahorros, corriente,
-                rotativo y en blanco, de donde el actor puede seleccionar aquel
+              rotativo y en blanco, de donde el actor puede seleccionar aquel
               que desea consultar.
             </p>
           </td>
@@ -116,23 +116,22 @@
         </tr>
       </table>
 
-      <p class="PARRAFO"><span class="SUBTITULO">Detalle<a name="Detalle"></a>:</span> 
+      <p class="PARRAFO"><span class="SUBTITULO">Detalle<a name="Detalle"></a>:</span>
         Mediante esta opci&oacute;n se posibilita la consulta de los dep&oacute;sitos
         efectuados en las cuentas de los establecimientos producto de las consignaciones
         efectuadas y cuyo movimiento supera las validaciones exitosamente.</p>
       <p class="PARRAFO">Si el usuario invoca la opci&oacute;n Detalle
-        se despliega un formulario con los siguiente <span>bloques: <a href="#Recepcion"
-            >Recepci&oacute;n</a>,
-          <a href="#Fechas" >Fechas y otros</a>, <a href="#Totales" >Totales
+        se despliega un formulario con los siguiente <span>bloques: <a href="#Recepcion">Recepci&oacute;n</a>,
+          <a href="#Fechas">Fechas y otros</a>, <a href="#Totales">Totales
             le&iacute;dos</a>,
-          <a href="#Totales" >Totales procesados</a>, y <a href="#Otros" >Otros valores</a>.
-          Adiiocnalmente, cuanto con el globo para acceder a la <a href="#Localizacion" >Informaci&oacute;n
+          <a href="#Totales">Totales procesados</a>, y <a href="#Otros">Otros valores</a>.
+          Adiiocnalmente, cuanto con el globo para acceder a la <a href="#Localizacion">Informaci&oacute;n
             de localizaci&oacute;n</a>. </span></p>
       <p class="TITLE"><img src="../img/ESF_014B2.PNG"></p>
 
-      <p class="SUBTITULO"><a name="Recepcion"></a>Recepci&oacute;n: <span class="PARRAFO">Grupo
-          de datos que ilustran la manera como ingres&oacute; la transacci&oacute;n
-          al sistema.</span></p>
+      <p class="PARRAFO"><a name="Recepcion"></a><span class="SUBTITULO">Recepci&oacute;n: </span>Grupo
+        de datos que ilustran la manera como ingres&oacute; la transacci&oacute;n
+        al sistema.</p>
       <table>
         <tr>
           <td class="titletable">
@@ -141,7 +140,7 @@
           <td>
             <p class="PARRAFO">Contiene
               el nombre que identifica el origen o fuente del movimiento definidos
-              en la opci&oacute;n <a href="NUH_027B.html" >Or&iacute;genes de transacciones</a>
+              en la opci&oacute;n <a href="NUH_027B.html">Or&iacute;genes de transacciones</a>
               del N&uacute;cleo.</p>
           </td>
         </tr>
@@ -186,7 +185,7 @@
           </td>
           <td>
             <p class="PARRAFO">Despliega
-              el nombre oficial de la <a href="NUH_005B.html" >Moneda</a> que identifica
+              el nombre oficial de la <a href="NUH_005B.html">Moneda</a> que identifica
               la moneda original de la transacci&oacute;n.</p>
           </td>
         </tr>
@@ -244,9 +243,9 @@
           </td>
         </tr>
       </table>
-      <p class="SUBTITULO"><span>Fechas<a name="Fechas"></a> y otros: </span><span class="PARRAFO">Grupo
+      <p class="PARRAFO"><span class="SUBTITULO">Fechas y otros:<a name="Fechas"></a></span>
           de datos asociados a las fechas de abono, cuenta en la que se efect&uacute;a
-          el dep&oacute;sito y estado de la consignaci&oacute;n entre otros.</span></p>
+          el dep&oacute;sito y estado de la consignaci&oacute;n entre otros.</p>
       <table>
         <tr>
           <td class="titletable">
@@ -351,12 +350,12 @@
           </td>
         </tr>
       </table>
-      <p class="SUBTITULO">Totales<a name="Totales"></a> le&iacute;dos, Totales procesados:<span class="PARRAFO">
+      <p class="PARRAFO"><span class="SUBTITULO">Totales <a name="Totales"></a> le&iacute;dos, Totales procesados:</span> 
           Grupo de campos que contienen informaci&oacute;n simult&aacute;neamente cuando
           corresponden a cargue de archivos o integraci&oacute;n de movimiento; en caso
           contrario &uacute;nicamente aparecer&aacute; informaci&oacute;n en uno de
           los dos, lo que permite mostrar de manera consolidada por concepto el movimiento
-          aplicado al diario que genera el dep&oacute;sito.</span></p>
+          aplicado al diario que genera el dep&oacute;sito.</p>
       <table>
         <tr>
           <td class="titletable">
@@ -412,8 +411,7 @@
             <p class="PARRAFO">Despliega
               el valor consignado al establecimiento; puede tener en cuenta o no el
               valor del descuento o comisi&oacute;n acorde con lo definido en el campo
-              Captura requiere ingreso descuento definido en la opci&oacute;n <a href="NUH_055B.html"
-                >Par&aacute;metros
+              Captura requiere ingreso descuento definido en la opci&oacute;n <a href="NUH_055B.html">Par&aacute;metros
                 operativos</a>.</p>
           </td>
         </tr>
@@ -429,10 +427,10 @@
           </td>
         </tr>
       </table>
-      <p class="SUBTITULO">Otros<a name="Otros"></a> valores:<span class="PARRAFO">
+      <p class="PARRAFO"><span class="SUBTITULO">Otros<a name="Otros"></a> valores:</span>
           Conjunto de informaci&oacute;n adicional sobre montos no contenidos o contemplados
           en los campos anteriores pero que afectan los saldos de las cuentas de los
-          establecimientos.</span></p>
+          establecimientos.</p>
       <table>
         <tr>
           <td class="titletable">
@@ -536,7 +534,7 @@
         </tr>
       </table>
       <p class="PARRAFO"><span class="PARRAFO"><span class="SUBTITULO">Informaci&oacute;n
-            de localizaci&oacute;n<a name="Localizacion"></a>:</span>  Si el usuario invoca
+            de localizaci&oacute;n<a name="Localizacion"></a>:</span> Si el usuario invoca
           el globo de localizaci&oacute;n ubicado en la parte superior derecha de la
           pantalla, se despliega un nuevo formulario con los siguientes campos:</span></p>
       <p class="TITLE"><img src="../img/ESF_014B3.PNG"></p>
@@ -585,9 +583,9 @@
             <p class="PARRAFO">Campo
               que despliega el monto retenido por la entidad adquirente por dicho
               concepto acorde con los par&aacute;metros correspondientes (%base retenci&oacute;n
-              y %rete-iva) definidos en <a href="ESH_006B.html" >Informaci&oacute;n
-                de establecimientos</a>, o en <a href="ESH_002B.html" >Tipos de servicio</a>
-              o en <a href="NUH_055B.html" >Par&aacute;metros operativos</a> lo que
+              y %rete-iva) definidos en <a href="ESH_006B.html">Informaci&oacute;n
+                de establecimientos</a>, o en <a href="ESH_002B.html">Tipos de servicio</a>
+              o en <a href="NUH_055B.html">Par&aacute;metros operativos</a> lo que
               no aplica para los establecimientos que son autorretenedores.</p>
           </td>
         </tr>
@@ -615,8 +613,7 @@
               por concepto de la retenci&oacute;n por concepto del impuesto de industria
               y comercio liquidado sobre la base de retenci&oacute;n calculada sobre
               los consumos, acorde con los par&aacute;metros correspondientes (%base
-              retenci&oacute;n ica y %rete-ica) definidos en la opci&oacute;n <a href="ESH_006B.html"
-                >Informaci&oacute;n
+              retenci&oacute;n ica y %rete-ica) definidos en la opci&oacute;n <a href="ESH_006B.html">Informaci&oacute;n
                 de establecimientos</a> lo que no aplica para los establecimientos que
               son autorretenedores.</p>
           </td>
