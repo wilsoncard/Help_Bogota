@@ -1,150 +1,159 @@
 <!DOCTYPE html>
 <html lang="es">
 
-<head>
+  <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>BANKBU®</title>
     <link rel="stylesheet" href="../css/pages.css">
     <link rel="stylesheet" href="../css/style.css">
- <link rel="icon" href="../img/ACQUIRER-logo.JPG" type="image/x-icon">
-</head>
+    <link rel="icon" href="../img/ACQUIRER-logo.JPG" type="image/x-icon">
+  </head>
 
-<body>
+  <body>
     <header>
-        <img class="logo" src="../img/logoBankbu_.PNG" alt="Logo de Mi Empresa">
-        <div id="menuBtn">
-            <img class="TITLE"  src= "../img/menu.PNG" alt="Botón de Menú ">
-        </div>
+      <img class="logo" src="../img/logoBankbu_.PNG" alt="Logo de Mi Empresa">
+      <div id="menuBtn">
+        <img class="TITLE" src="../img/menu.PNG" alt="Botón de Menú ">
+      </div>
     </header>
-   <div id="menuContainer"></div>
+    <div id="menuContainer"></div>
     <script>
-      fetch('menu.html')
-        .then(response => response.text())
-        .then(html => {
-          document.getElementById('menuContainer').innerHTML = html;
-        });
-    </script>
+    fetch('menu.html')
+      .then(response => response.text())
+      .then(html => {
+        document.getElementById('menuContainer').innerHTML = html;
+      });
+  </script>
 
     <section>
-        <div> 
-            <table>
-              <tr> 
-                <td><div> 
-                    <p  class="TITLE">Conceptos transacci&oacute;n</p>
-                  </div></td>
-              </tr>
-            </table>
-            <p class="PARRAFO" >Mediante esta opci&oacute;n reservada 
-              a funcionarios de OpenCard S. A. se facilita la consulta y/o mantenimiento 
-              de la tabla en la que se parametrizan caracter&iacute;sticas asociadas a los 
-              conceptos de las transacciones, acordes con el tipo de cada uno de &eacute;stos. 
-             
-             
-              </span></p>
-            <p class="TITLE"><img src="../img/NUF_059E.PNG"760" height="461"></p>
-            
-            <p  class="PARRAFO">El formulario contiene las opciones Actualizar, 
-              Eliminar y Adicionar. </p>
-            <p  class="PARRAFO"><span class="SUBTITULO"><b ><span            '>Adicionar</span></b><span 
-        >:</span><span 
-        ></span></span><span 
-        > 
-              Si el usuario invoca la opci&oacute;n Adicionar se despliega un nuevo formulario</span></p>
-            <p class="TITLE"><img src="../img/NUF_059E1.PNG"384" height="243"></p>
-            <p  class="TITLE">Descripci&oacute;n de campos</p>
-            <table>
-              <tr> 
-                <td class="titletable"><p class="SUBTITULO"><b><span 
-        >C&oacute;digo</span></b></p></td>
-                <td><p  class="PARRAFO">Campo 
-                    num&eacute;rico de 3 d&iacute;gitos, obligatorio, en el que se registra 
-                    el c&oacute;digo asociado a cada uno de los conceptos de transacci&oacute;n, 
-                    utilizados entre otros, al definir las Transacciones por empresa <a href="MEH_003B.html" >Cr&eacute;dito</a> 
-                    y <a href="DBH_017B.html" >Debito</a>, <span ><a href="NUH_027B.html" >Or&iacute;genes 
-                    de transacciones</a></span> , entre otras.
-                  </p></td>
-              </tr>
-              <tr> 
-                <td  class="titletable" ><p class="SUBTITULO"><b><span 
-        >Descripci&oacute;n</span></b></p></td>
-                <td><p  class="PARRAFO">En 
-                    este campo alfanum&eacute;rico de 30 d&iacute;gitos, obligatorio, se 
-                    registra el nombre asociado a cada uno de los c&oacute;digos de los 
-                    conceptos de transacci&oacute;n. </p></td>
-              </tr>
-              <tr> 
-                <td  class="titletable" ><p class="SUBTITULO"><b><span 
-        >Tipo</span></b></p></td>
-                <td><p  class="PARRAFO">Campo 
-                    obligatorio que posee un combo donde se selecciona entre Capital, 
-                    Inter&eacute;s o Comisiones, el tipo o clase de concepto 
-                    v&aacute;lido para cada item a parametrizar.
-                  </p></td>
-              </tr>
-              <tr> 
-                <td  class="titletable" ><p class="SUBTITULO"><b><span 
-        >D&iacute;as 
-                    gracia </span></b></p></td>
-                <td><p  class="PARRAFO">En 
-                    este campo num&eacute;rico de 3 d&iacute;gitos, no obligatorio, se ingresa 
-                    el n&uacute;mero de d&iacute;as de gracia; cuando ese valor es mayor 
-                    a cero significa que si dentro de ese lapso de tiempo ingresa una transacci&oacute;n 
-                    correspondiente a ese concepto, sobre esta transacci&oacute;n no ser&aacute; 
-                    liquidado ning&uacute;n tipo de cargo financiero.</p></td>
-              </tr>
-           
-              <tr> 
-                <td  class="titletable" ><p class="SUBTITULO"><b><span 
-        >Afecta 
-                    saldo </span></b></p></td>
-                <td><p  class="PARRAFO">Campo 
-                    tipo combo en el que se indica Si o No las transacciones 
-                    con ese concepto que ingresen, afectan el valor del saldo de la tarjeta 
-                    , que se puede consultar desde la opci&oacute;n <a href="SCH_060B.html" >detalle 
-                    de la consulta de la tarjeta</a>. </p></td>
-              </tr>
-           
-              <tr> 
-                <td  class="titletable" ><p class="SUBTITULO"><b><span 
-        >Afecta 
-                    capital</span></b></p></td>
-                <td><p  class="PARRAFO">Este 
-                    campo contiene un combo donde se puede seleccionar Si o No 
-                    las transacciones con ese concepto, al no ser cubiertas por el pago 
-                    m&iacute;nimo, pasan a conformar o incrementar el saldo del capital 
-                    en mora.</p></td>
-              </tr>
-           
-              <tr> 
-                <td  class="titletable" ><p class="SUBTITULO"><b><span 
-        >Indicador 
-                    econ&oacute;mico </span></b></p></td>
-                <td><p  class="PARRAFO">Campo 
-                    que posee lista de valores de la cual la entidad selecciona el <a href="NUH_043B.html" >Indicador 
-                    econ&oacute;mico</a> que ser&aacute; utilizado para liquidar los 
-                    cargos financieros a que haya lugar. </p></td>
-              </tr>
-            </table>
-            <div>
-              <p class="PARRAFO"><b ><span class="SUBTITULO"> 
-                Actualizar</span></b>: Si el usuario invoca la opci&oacute;n Actualizar 
-                se despliega un nuevo formulario en el cual los campos modificables son 
-                Descripci&oacute;n, Tipo, D&iacute;as gracia, Afecta saldo, Afecta capital 
-                e Indicador enoc&oacute;mico.
-              </p>
-             <p class="TITLE"><img src="../img/NUF_059E2.PNG"384" height="243"></p>
-              </section>
-    <script src="../js/menu.js"></script>
+      <div>
 
-    <div id="footerContainer"></div>
-<script>
+        <p class="TITLE">Conceptos transacci&oacute;n</p>
+
+        <p class="PARRAFO">Mediante esta opci&oacute;n reservada
+          a funcionarios de OpenCard S. A. se facilita la consulta y/o
+          mantenimiento
+          de la tabla en la que se parametrizan caracter&iacute;sticas asociadas
+          a los
+          conceptos de las transacciones, acordes con el tipo de cada uno de
+          &eacute;stos.
+
+        </span></p>
+      <p class="TITLE"><img src="../img/NUF_059E.PNG"></p>
+
+      <p class="PARRAFO">El formulario contiene las opciones Actualizar,
+        Eliminar y Adicionar. </p>
+      <p class="PARRAFO"><span class="SUBTITULO"><span
+            '>Adicionar</span><span>:</span><span></span></span><span>
+          Si el usuario invoca la opci&oacute;n Adicionar se despliega un nuevo
+          formulario</span></p>
+      <p class="TITLE"><img src="../img/NUF_059E1.PNG"></p>
+      <p class="TITLE">Descripci&oacute;n de campos</p>
+      <table>
+        <tr>
+          <td class="titletable"><p
+              class="SUBTITULO"><span>C&oacute;digo</span></p></td>
+          <td><p class="PARRAFO">Campo
+              num&eacute;rico de 3 d&iacute;gitos, obligatorio, en el que se
+              registra
+              el c&oacute;digo asociado a cada uno de los conceptos de
+              transacci&oacute;n,
+              utilizados entre otros, al definir las Transacciones por empresa
+              <a href="MEH_003B.html">Cr&eacute;dito</a>
+              y <a href="DBH_017B.html">Debito</a>, <span><a
+                  href="NUH_027B.html">Or&iacute;genes
+                  de transacciones</a></span> , entre otras.
+            </p></td>
+        </tr>
+        <tr>
+          <td class="titletable"><p
+              class="SUBTITULO"><span>Descripci&oacute;n</span></p></td>
+          <td><p class="PARRAFO">En
+              este campo alfanum&eacute;rico de 30 d&iacute;gitos, obligatorio,
+              se
+              registra el nombre asociado a cada uno de los c&oacute;digos de
+              los
+              conceptos de transacci&oacute;n. </p></td>
+        </tr>
+        <tr>
+          <td class="titletable"><p class="SUBTITULO"><span>Tipo</span></p></td>
+          <td><p class="PARRAFO">Campo
+              obligatorio que posee un combo donde se selecciona entre Capital,
+              Inter&eacute;s o Comisiones, el tipo o clase de concepto
+              v&aacute;lido para cada item a parametrizar.
+            </p></td>
+        </tr>
+        <tr>
+          <td class="titletable"><p class="SUBTITULO"><span>D&iacute;as
+                gracia </span></p></td>
+          <td><p class="PARRAFO">En
+              este campo num&eacute;rico de 3 d&iacute;gitos, no obligatorio, se
+              ingresa
+              el n&uacute;mero de d&iacute;as de gracia; cuando ese valor es
+              mayor
+              a cero significa que si dentro de ese lapso de tiempo ingresa una
+              transacci&oacute;n
+              correspondiente a ese concepto, sobre esta transacci&oacute;n no
+              ser&aacute;
+              liquidado ning&uacute;n tipo de cargo financiero.</p></td>
+        </tr>
+
+        <tr>
+          <td class="titletable"><p class="SUBTITULO"><span>Afecta
+                saldo </span></p></td>
+          <td><p class="PARRAFO">Campo
+              tipo combo en el que se indica Si o No las transacciones
+              con ese concepto que ingresen, afectan el valor del saldo de la
+              tarjeta
+              , que se puede consultar desde la opci&oacute;n <a
+                href="SCH_060B.html">detalle
+                de la consulta de la tarjeta</a>. </p></td>
+        </tr>
+
+        <tr>
+          <td class="titletable"><p class="SUBTITULO"><span>Afecta
+                capital</span></p></td>
+          <td><p class="PARRAFO">Este
+              campo contiene un combo donde se puede seleccionar Si o No
+              las transacciones con ese concepto, al no ser cubiertas por el
+              pago
+              m&iacute;nimo, pasan a conformar o incrementar el saldo del
+              capital
+              en mora.</p></td>
+        </tr>
+
+        <tr>
+          <td class="titletable"><p class="SUBTITULO"><span>Indicador
+                econ&oacute;mico </span></p></td>
+          <td><p class="PARRAFO">Campo
+              que posee lista de valores de la cual la entidad selecciona el <a
+                href="NUH_043B.html">Indicador
+                econ&oacute;mico</a> que ser&aacute; utilizado para liquidar los
+              cargos financieros a que haya lugar. </p></td>
+        </tr>
+      </table>
+      <div>
+        <p class="PARRAFO"><span class="SUBTITULO">
+            Actualizar</span>: Si el usuario invoca la opci&oacute;n Actualizar
+          se despliega un nuevo formulario en el cual los campos modificables
+          son
+          Descripci&oacute;n, Tipo, D&iacute;as gracia, Afecta saldo, Afecta
+          capital
+          e Indicador enoc&oacute;mico.
+        </p>
+        <p class="TITLE"><img src="../img/NUF_059E2.PNG"></p>
+      </section>
+      <script src="../js/menu.js"></script>
+
+      <div id="footerContainer"></div>
+      <script>
   fetch('footer.html')
     .then(response => response.text())
     .then(html => {
       document.getElementById('footerContainer').innerHTML = html;
     });
 </script>
-</body>
+    </body>
 
-</html>
+  </html>

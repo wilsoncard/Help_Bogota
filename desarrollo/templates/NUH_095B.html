@@ -17,26 +17,20 @@
       <img class="TITLE" src="../img/menu.PNG" alt="Botón de Menú ">
     </div>
   </header>
-  <div id="menuContainer"></div>
-    <script>
-      fetch('menu.html')
-        .then(response => response.text())
-        .then(html => {
-          document.getElementById('menuContainer').innerHTML = html;
-        });
-    </script>
+    <div id="menuContainer"></div>
+  <script>
+    fetch('menu.html')
+      .then(response => response.text())
+      .then(html => {
+        document.getElementById('menuContainer').innerHTML = html;
+      });
+  </script>
 
   <section>
     <div>
-      <table>
-        <tr>
-          <td>
-            <div>
+      
               <p class="TITLE">Causales de rechazo de convenios </p>
-            </div>
-          </td>
-        </tr>
-      </table>
+
       <p class="PARRAFO">Mediante esta opci&oacute;n la entidad
         puede consultar y/o hacerle mantenimiento a la tabla en la que define las
         causales de rechazo de movimiento asociado a los <a href="MEH_006B.html" >convenios</a>
@@ -48,7 +42,7 @@
 
       <p class="PARRAFO">El formulario contiene las opciones Actualizar,
         Eliminar y Adicionar. </p>
-      <p class="PARRAFO"><span class="SUBTITULO"><b><span>Adicionar</span></b><span 
+      <p class="PARRAFO"><span class="SUBTITULO">Adicionar</span><span 
         >:</span><span 
         ></span></span><span 
         > 
@@ -57,8 +51,8 @@
             <p  class="TITLE">Descripci&oacute;n de campos</p>
             <table>
               <tr> 
-                <td class="titletable"><p class="SUBTITULO"><b><span 
-        >C&oacute;digo</span></b></p></td>
+                <td class="titletable"><p class="SUBTITULO"><span 
+        >C&oacute;digo</span></p></td>
                 <td><p  class="PARRAFO">Campo 
                     num&eacute;rico de 4 posiciones, obligatorio, en el que se registra 
                     el n&uacute;mero que identifica cada una de las causales de rechazo 
@@ -67,8 +61,8 @@
                   </p></td>
               </tr>
               <tr> 
-                <td class="titletable"><p class="SUBTITULO"><b><span 
-        >Descripci&oacute;n</span></b></p></td>
+                <td class="titletable"><p class="SUBTITULO"><span 
+        >Descripci&oacute;n</span></p></td>
                 <td><p  class="PARRAFO">En 
                     este campo alfanum&eacute;rico de 30 posiciones, obligatorio, se digita 
                     el nombre o breve descriptivo de cada una de las causales de rechazo 
@@ -78,8 +72,8 @@
               </tr>
            
               <tr> 
-                <td class="titletable" ><p class="SUBTITULO"><b>Mensaje
-                    </b></p></td>
+                <td class="titletable" ><p class="SUBTITULO">Mensaje
+                    </p></td>
                 <td><p  class="PARRAFO">Campo 
                     obligatorio que posee lista de valores de la que debe seleccionarse 
                     el Mensaje que mejor describa 
@@ -91,8 +85,8 @@
               </tr>
             </table>
             <div> 
-              <p class="PARRAFO"><b ><span class="SUBTITULO"> 
-                Actualizar</span></b>: Si el usuario invoca la opci&oacute;n Actualizar 
+              <p class="PARRAFO"><span class="SUBTITULO"> 
+                Actualizar</span>: Si el usuario invoca la opci&oacute;n Actualizar 
                 se despliega un nuevo formulario en el cual los &uacute;nicos campos modificables 
                 son Descripci&oacute;n y Mensaje
               </p>

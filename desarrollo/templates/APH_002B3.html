@@ -17,25 +17,19 @@
       <img class="TITLE" src="../img/menu.PNG" alt="Botón de Menú ">
     </div>
   </header>
-  <div id="menuContainer"></div>
-    <script>
-      fetch('menu.html')
-        .then(response => response.text())
-        .then(html => {
-          document.getElementById('menuContainer').innerHTML = html;
-        });
-    </script>
+    <div id="menuContainer"></div>
+  <script>
+    fetch('menu.html')
+      .then(response => response.text())
+      .then(html => {
+        document.getElementById('menuContainer').innerHTML = html;
+      });
+  </script>
   <section>
     <div>
-      <table>
-        <tr>
-          <td>
-            <div>
+      
               <p class="TITLE">Comisiones y metas - Metas con promoci&oacute;n </p>
-            </div>
-          </td>
-        </tr>
-      </table>
+
       <p>Metas con promoci&oacute;n:En este espacio se registran los ingresos que devengar&aacute;n los
         promotores por cumplir la meta de finalizar las tareas asignadas durante un per&iacute;odo de tiempo esperado y
         sobre productos que pertenecen a alg&uacute;n programa de promoci&oacute;n de colocaci&oacute;n. Los
@@ -46,18 +40,18 @@
       </p>
       <p>El formulario contiene las opciones Eliminar,
         Adicionar y Bonificaciones.</p>
-      <p class="TITLE"><img src="../img/APF_002B16.PNG" alt="Filter" 718"></p>
+      <p class="TITLE"><img src="../img/APF_002B16.PNG"></p>
 
       <p><span class="SUBTITULO">Adicionar:</span>  Si
         el usuario invoca la opci&oacute;n Adicionar se despliega un formulario con
-        los siguientes campos<span>:</span> 
+        los siguientes campos:</span> 
       </p>
-      <p class="TITLE"><img src="../img/APF_002B17.PNG" alt="Filter" 364" ></p>
+      <p class="TITLE"><img src="../img/APF_002B17.PNG"></p>
 
       <table>
         <tr>
           <td class="titletable">
-            <p class="SUBTITULO"><b><span><span>Promoci&oacute;n</span></span></b></p>
+            <p class="SUBTITULO">Promoci&oacute;n</span></span></p>
           </td>
           <td>
             <p class="PARRAFO">Campo con lista de valores que contiene las <A href="MEH_005B.html">promociones para
@@ -68,7 +62,7 @@
         </tr>
         <tr>
           <td class="titletable">
-            <p class="SUBTITULO"><b><span>Fecha inicial </span></b></p>
+            <p class="SUBTITULO">Fecha inicial </span></p>
           </td>
           <td>
             <p class="PARRAFO">Campo en formato YYYY-MM-DD, obligatorio, en el que se define el momento de inicio del per&iacute;odo
@@ -77,7 +71,7 @@
         </tr>
         <tr>
           <td class="titletable">
-            <p class="SUBTITULO"><b><span>Fecha final </span></b></p>
+            <p class="SUBTITULO">Fecha final </span></p>
           </td>
           <td>
             <p class="PARRAFO">En este campo en formato YYYY-MM-DD, obligatorio, se define el momento de finalizaci&oacute;n del
@@ -87,20 +81,20 @@
       </table>
 
       <p><span class="SUBTITULO">Bonificaciones:</span></p>
-      <p class="TITLE"><img src="../img/APF_002B18.PNG" alt="Filter" 719" ></p>
+      <p class="TITLE"><img src="../img/APF_002B18.PNG"  719" ></p>
 
       <p>El formulario contiene las opciones Actualizar, Eliminar,
         Adicionar y Detalle.</p>
       <p class="PARRAFO"><span class="SUBTITULO">Adicionar:</span>  Si
         el usuario invoca la opci&oacute;n Adicionar se despliega un formulario con
-        los siguientes campos<span>:</span> 
+        los siguientes campos:</span> 
       </p>
-      <p class="TITLE"><img src="../img/APF_002B19.PNG" alt="Filter"></p>
+      <p class="TITLE"><img src="../img/APF_002B19.PNG" ></p>
 
       <table>
         <tr>
           <td class="titletable">
-            <p class="SUBTITULO"><b><span>Base bonificaci&oacute;n </span></b></p>
+            <p class="SUBTITULO">Base bonificaci&oacute;n </span></p>
           </td>
           <td>
             <p class="PARRAFO">Campo en el que se define cual ser&aacute; la base sobre la cual se liquidar&aacute; el incentivo a los
@@ -111,7 +105,7 @@
         </tr>
         <tr>
           <td class="titletable">
-            <p class="SUBTITULO"><span>Tipo bonificaci&oacute;n </span></p>
+            <p class="SUBTITULO">Tipo bonificaci&oacute;n </span></p>
           </td>
           <td class="PARRAFO">
             <p class="PARRAFO">Este campo le otorga la caracter&iacute;stica al registro, de permitir o no la
@@ -124,7 +118,7 @@
         </tr>
         <tr>
           <td class="titletable">
-            <p class="SUBTITULO"><b><span>Rango inicial </span></b></p>
+            <p class="SUBTITULO">Rango inicial </span></p>
           </td>
           <td>
             <p class="PARRAFO">Campo num&eacute;rico de 12 posiciones enteras y 2 decimales, obligatorio, en el que se registra el valor
@@ -134,7 +128,7 @@
         </tr>
         <tr>
           <td class="titletable">
-            <p class="SUBTITULO"><b><span>Rango final </span></b></p>
+            <p class="SUBTITULO">Rango final </span></p>
           </td>
           <td>
             <p class="PARRAFO">Si en Tipo Bonificaci&oacute;n se define que es un rango, entonces este campo num&eacute;rico de
@@ -146,7 +140,7 @@
         </tr>
         <tr>
           <td class="titletable">
-            <p class="SUBTITULO"><b><span>Modo bonificaci&oacute;n </span></b></p>
+            <p class="SUBTITULO">Modo bonificaci&oacute;n </span></p>
           </td>
           <td class="PARRAFO">
             <p class="PARRAFO">Campo con lista de valores de la cual la entidad selecciona la manera c&oacute;mo
@@ -156,7 +150,7 @@
         </tr>
         <tr>
           <td class="titletable">
-            <p class="SUBTITULO"><b><span>Valor bonificaci&oacute;n </span></b></p>
+            <p class="SUBTITULO">Valor bonificaci&oacute;n </span></p>
           </td>
           <td>
             <p class="PARRAFO">Este campo se activa cuando en el campo modo bonificaci&oacute;n se ha seleccionado la
@@ -166,7 +160,7 @@
         </tr>
         <tr>
           <td class="titletable">
-            <p class="SUBTITULO"><b><span>Moneda</span></b></p>
+            <p class="SUBTITULO">Moneda</span></p>
           </td>
           <td>
             <p class="PARRAFO">Al igual que el anterior, este campo se activa cuando en modo bonificaci&oacute;n se ha elegido
@@ -176,7 +170,7 @@
         </tr>
         <tr>
           <td class="titletable">
-            <p class="SUBTITULO"><b><span><span>Porcentaje</span></span></b></p>
+            <p class="SUBTITULO">Porcentaje</span></span></p>
           </td>
           <td>
             <p class="PARRAFO">Cuando en el campo modo comisi&oacute;n, se selecciona la opci&oacute;n porcentaje,
@@ -190,13 +184,13 @@
       <p><span class="SUBTITULO">Actualizar:</span>  Si el usuario
         invoca la opci&oacute;n Actualizar se despliega un nuevo formulario en cual
         los &uacute;nicos campos modificables son los siguientes:</p>
-      <p class="TITLE"><img src="../img/APF_002B20.PNG" alt="Filter"></p>
+      <p class="TITLE"><img src="../img/APF_002B20.PNG" ></p>
 
       <p class="PARRAFO"><span class="SUBTITULO">Detalle:</span>  Si el usuario invoca
-        la opci&oacute;n Detalle se despliega el siguiente formulario.<span>
+        la opci&oacute;n Detalle se despliega el siguiente formulario.
 
         </span></p>
-      <p class="TITLE"><img src="../img/APF_002B21.PNG" alt="Filter"></p>
+      <p class="TITLE"><img src="../img/APF_002B21.PNG" ></p>
 
   </section>
   <script src="../js/menu.js"></script>

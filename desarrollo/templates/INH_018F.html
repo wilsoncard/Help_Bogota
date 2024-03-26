@@ -1,118 +1,156 @@
 <!DOCTYPE html>
 <html lang="es">
 
-<head>
+  <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>BANKBU®</title>
 
     <link rel="stylesheet" href="../css/pages.css">
     <link rel="stylesheet" href="../css/style.css">
- <link rel="icon" href="../img/ACQUIRER-logo.JPG" type="image/x-icon">
-</head>
+    <link rel="icon" href="../img/ACQUIRER-logo.JPG" type="image/x-icon">
+  </head>
 
-<body>
+  <body>
 
     <header>
-        <img class="logo" src="../img/logoBankbu_.PNG" alt="Logo de Mi Empresa">
-        <div id="menuBtn">
-            <img class="TITLE"  src= "../img/menu.PNG" alt="Botón de Menú ">
-        </div>
+      <img class="logo" src="../img/logoBankbu_.PNG" alt="Logo de Mi Empresa">
+      <div id="menuBtn">
+        <img class="TITLE" src="../img/menu.PNG" alt="Botón de Menú ">
+      </div>
     </header>
-   <div id="menuContainer"></div>
+    <div id="menuContainer"></div>
     <script>
-      fetch('menu.html')
-        .then(response => response.text())
-        .then(html => {
-          document.getElementById('menuContainer').innerHTML = html;
-        });
-    </script>
+    fetch('menu.html')
+      .then(response => response.text())
+      .then(html => {
+        document.getElementById('menuContainer').innerHTML = html;
+      });
+  </script>
 
     <section>
-        <div>
-            <table>
-              <tr> 
-                <td><div> 
-                    <p  class="TITLE style6">Funcionarios por zonas</p>
-                    </div></td>
-              </tr>
+      <div>
+        
+                <p class="TITLE style6">Funcionarios por zonas</p>
+              </div></td>
+          </tr>
 
-            </table>
-            <p>Mediante este formulario se determina la zona correspondiente por cada regi&oacute;n, para las visitas de cada uno de los Agentes, especificando si est&aacute; activo o no y la fecha de asignaci&oacute;n.</p>
-            <p>El formulario contiene las opciones Actualizar, Eliminar, 
-            Adicionar y Detalle. Adicionalmente, cuenta con un filtro de b&uacute;squeda.</p>
-            <p class="TITLE"><img src="../img/INF_018f1.PNG"750" height="459"></p>
-            
-            <p class="PARRAFO"><span class="SUBTITULO">Filtro:</span>  Se pueden realizar consultas a trav&eacute;s 
-            de las siguientes opciones:</p>
- 
-              <p  class="center"><img src="../img/INF_018f.PNG"376" ></p>
- 
-            <p  class="center"></p>
-            <table>
-              <tr>
-                <td class="titletable"><p class="SUBTITULO"><b><span ><span >Regi&oacute;n</span></span></b></p></td>
-                <td><p>Lista de valores que permite seleccionar una de las regiones parametrizadas en la opci&oacute;n Zonas geogr&aacute;ficas.</p></td>
-              </tr>
-              <tr>
-                <td class="titletable"><p class="SUBTITULO"><b><span ><span >Agente</span></span></b></p></td>
-                <td><p>Lista de valores que permite filtrar a trav&eacute;s de los agentes parametrizados en la opci&oacute;n Funcionarios.</p></td>
-              </tr>
-              <tr>
-                <td class="titletable"><p class="SUBTITULO"><b><span ><span >Fecha de asignaci&oacute;n </span></span></b></p></td>
-                <td><p>Campo con formato YYYY-MM-DD, que permite filtrar a trav&eacute;s de la fecha en la cual fue asignada la visita al establecimiento.</p></td>
-              </tr>
-            </table>
-            <p><span class="SUBTITULO"><span >Adicionar</b>:</span></span><span > Si el usuario invoca la opci&oacute;n Adicionar se despliega un nuevo formulario.</span></p>
-            <p class="TITLE"><img src="../img/INF_018f2.PNG"577" height="269"></p>
-            
-            <table>
-              <tr>
-                <td class="titletable"><p class="SUBTITULO"><b><span ><span >Regi&oacute;n</span></span></b></p></td>
-                <td><p>Lista de valores que permite seleccionar una de las regiones parametrizadas en la opci&oacute;n Zonas geogr&aacute;ficas.</p></td>
-              </tr>
-              <tr>
-                <td class="titletable"><p class="SUBTITULO"><b><span >Sub divisi&oacute;n </span></b></p></td>
-                <td><p>Lista de valores que permite filtrar a trav&eacute;s de los agentes parametrizados en la opci&oacute;n Funcionarios.</p></td>
-              </tr>
-              <tr>
-                <td class="titletable"><p class="SUBTITULO"><b><span >Ubicaci&oacute;n</span></b></p></td>
-                <td><p>Campo de refresco autom&aacute;tico que muestra el lugar al que corresponde la Sub divisi&oacute;n de la Regi&oacute;n seleccionada. </p></td>
-              </tr>
-              <tr>
-                <td class="titletable"  ><p class="SUBTITULO">C&oacute;digo de zona </p></td>
-                <td><p>Lista de valores que muestra las zonas correspondientes a la Ubicaci&oacute;n seleccionada.</p>      </td>
-              </tr>
-              <tr>
-                <td class="titletable"><p class="SUBTITULO">Agente</p></td>
-                <td><p>Esta lista de valores muestra todos aquellos que han sido parametrizados en la opci&oacute;n Funcionarios del N&uacute;cleo. </p></td>
-              </tr>
-              <tr>
-                <td class="titletable"><p class="SUBTITULO">Fecha de asignaci&oacute;n </p></td>
-                <td><p>Campo con formato YYYY-MM-DD, que permite filtrar a trav&eacute;s de la fecha en la cual fue asignada la visita al establecimiento.</p></td>
-              </tr>
-              <tr>
-                <td class="titletable"><p class="SUBTITULO">Estado</p></td>
-                <td><p>Lista de valores que permite seleccionar entre las opciones Inactivo o Activo. </p></td>
-              </tr>
-            </table>
-            .
-            <span class="PARRAFO"><span class="SUBTITULO"><span >Actualizar</b>:</span></span><span > Si el usuario invoca la opci&oacute;n Actualizar se despliega un nuevo formulario 
-            en el cual </span><span >los </span><span > &uacute;nicos campos </span></span><span class="style7"><span >modificables</span></span>  <span >son:</span>  Fecha de asignaci&oacute;n y Estado.
-            <p class="TITLE"><img src="../img/INF_018f3.PNG"581" height="271"></p>
-            
-            <p><span class="SUBTITULO"><span >Detalle</b></span><span >:</span></span><span > El sistema muestra el siguiente formu</span><span >lario:</span></p>
-            <p class="TITLE"><img src="../img/INF_018f4.PNG"731" ></p>
-            
-        </section>
-    <script src="../js/menu.js"></script>
-</body>
-<div id="footerContainer"></div>
-<script>
+        </table>
+        <p>Mediante este formulario se determina la zona correspondiente por
+          cada regi&oacute;n, para las visitas de cada uno de los Agentes,
+          especificando si est&aacute; activo o no y la fecha de
+          asignaci&oacute;n.</p>
+        <p>El formulario contiene las opciones Actualizar, Eliminar,
+          Adicionar y Detalle. Adicionalmente, cuenta con un filtro de
+          b&uacute;squeda.</p>
+        <p class="TITLE"><img src="../img/INF_018f1.PNG"></p>
+
+        <p class="PARRAFO"><span class="SUBTITULO">Filtro:</span> Se pueden
+          realizar consultas a trav&eacute;s
+          de las siguientes opciones:</p>
+
+        <p class="center"><img src="../img/INF_018f.PNG"></p>
+
+        <p class="center"></p>
+        <table>
+          <tr>
+            <td class="titletable"><p
+                class="SUBTITULO">Regi&oacute;n</span></span></p></td>
+            <td><p>Lista de valores que permite seleccionar una de las regiones
+                parametrizadas en la opci&oacute;n Zonas
+                geogr&aacute;ficas.</p></td>
+          </tr>
+          <tr>
+            <td class="titletable"><p
+                class="SUBTITULO">Agente</span></span></p></td>
+            <td><p>Lista de valores que permite filtrar a trav&eacute;s de los
+                agentes parametrizados en la opci&oacute;n
+                Funcionarios.</p></td>
+          </tr>
+          <tr>
+            <td class="titletable"><p class="SUBTITULO">Fecha de
+                    asignaci&oacute;n </span></span></p></td>
+            <td><p>Campo con formato YYYY-MM-DD, que permite filtrar a
+                trav&eacute;s de la fecha en la cual fue asignada la visita al
+                establecimiento.</p></td>
+          </tr>
+        </table>
+        <p><span class="SUBTITULO">Adicionar:</span></span> Si el
+            usuario invoca la opci&oacute;n Adicionar se despliega un nuevo
+            formulario.</span></p>
+        <p class="TITLE"><img src="../img/INF_018f2.PNG"></p>
+
+        <table>
+          <tr>
+            <td class="titletable"><p
+                class="SUBTITULO">Regi&oacute;n</span></span></p></td>
+            <td><p>Lista de valores que permite seleccionar una de las regiones
+                parametrizadas en la opci&oacute;n Zonas
+                geogr&aacute;ficas.</p></td>
+          </tr>
+          <tr>
+            <td class="titletable"><p class="SUBTITULO">Sub
+                  divisi&oacute;n </span></p></td>
+            <td><p>Lista de valores que permite filtrar a trav&eacute;s de los
+                agentes parametrizados en la opci&oacute;n
+                Funcionarios.</p></td>
+          </tr>
+          <tr>
+            <td class="titletable"><p
+                class="SUBTITULO">Ubicaci&oacute;n</span></p></td>
+            <td><p>Campo de refresco autom&aacute;tico que muestra el lugar al
+                que corresponde la Sub divisi&oacute;n de la Regi&oacute;n
+                seleccionada. </p></td>
+          </tr>
+          <tr>
+            <td class="titletable"><p class="SUBTITULO">C&oacute;digo de zona
+              </p></td>
+            <td><p>Lista de valores que muestra las zonas correspondientes a la
+                Ubicaci&oacute;n seleccionada.</p> </td>
+          </tr>
+          <tr>
+            <td class="titletable"><p class="SUBTITULO">Agente</p></td>
+            <td><p>Esta lista de valores muestra todos aquellos que han sido
+                parametrizados en la opci&oacute;n Funcionarios del
+                N&uacute;cleo. </p></td>
+          </tr>
+          <tr>
+            <td class="titletable"><p class="SUBTITULO">Fecha de
+                asignaci&oacute;n </p></td>
+            <td><p>Campo con formato YYYY-MM-DD, que permite filtrar a
+                trav&eacute;s de la fecha en la cual fue asignada la visita al
+                establecimiento.</p></td>
+          </tr>
+          <tr>
+            <td class="titletable"><p class="SUBTITULO">Estado</p></td>
+            <td><p>Lista de valores que permite seleccionar entre las opciones
+                Inactivo o Activo. </p></td>
+          </tr>
+        </table>
+
+        <span class="PARRAFO"><span
+            class="SUBTITULO">Actualizar:</span></span> Si el
+            usuario invoca la opci&oacute;n Actualizar se despliega un nuevo
+            formulario
+            en el cual </span>los </span> &uacute;nicos campos
+          </span></span><span class="style7">modificables</span></span>
+        son:</span> Fecha de asignaci&oacute;n y Estado.
+        <p class="TITLE"><img src="../img/INF_018f3.PNG"></p>
+
+        <p><span
+            class="SUBTITULO">Detalle</span>:</span></span> El
+            sistema muestra el siguiente formu</span>lario:</span></p>
+        <p class="TITLE"><img src="../img/INF_018f4.PNG"></p>
+
+      </section>
+      <script src="../js/menu.js"></script>
+    </body>
+    <div id="footerContainer"></div>
+    <script>
   fetch('footer.html')
     .then(response => response.text())
     .then(html => {
       document.getElementById('footerContainer').innerHTML = html;
     });
 </script>
-</html>
+  </html>

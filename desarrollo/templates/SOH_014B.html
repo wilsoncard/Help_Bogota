@@ -17,24 +17,20 @@
             <img class="TITLE"  src= "../img/menu.PNG" alt="Botón de Menú ">
         </div>
     </header>
-   <div id="menuContainer"></div>
-    <script>
-      fetch('menu.html')
-        .then(response => response.text())
-        .then(html => {
-          document.getElementById('menuContainer').innerHTML = html;
-        });
-    </script>
+      <div id="menuContainer"></div>
+  <script>
+    fetch('menu.html')
+      .then(response => response.text())
+      .then(html => {
+        document.getElementById('menuContainer').innerHTML = html;
+      });
+  </script>
 
     <section>
         <div> 
-            <table>
-              <tr> 
-                <td><div> 
-                    <p  class="TITLE">Actualizaci&oacute;n de solicitudes</p>
-                    </div></td>
-              </tr>
-            </table>
+            
+            <p  class="TITLE">Actualizaci&oacute;n de solicitudes</p>
+                    
             <p class="PARRAFO">A trav&eacute;s de este formulario la entidad captura la 
               informaci&oacute;n referente a todos los tipos de solicitudes diferentes a <a href="SOH_003B.html" >Cr&eacute;dito nuevo</a>. Inicialmente, el formulario cuenta con un 
               filtro de b&uacute;squeda en la parte superior que traer&aacute; 
@@ -42,22 +38,22 @@
             el cliente consultado.</p>
             <p class="PARRAFO">Adicionalmente, el formulario contiene las opciones Actualizar, Eliminar, 
               Adicionar, Detalle, y <a href="SOH_012B.html" >Consultar etapa</a>.</p>
-            <p class="TITLE"><img src="../img/SOF_014B.PNG"363" height="129"></p>
+            <p class="TITLE"><img src="../img/SOF_014B.PNG"></p>
             
             <p><span class="SUBTITULO">Filtro:</span>  Se pueden realizar consultas a trav&eacute;s 
               de las siguientes opciones:</p>
             <table>
               <tr> 
-                <td  class="titletable" ><p class="SUBTITULO"><b><span 
-        >Tipo identificaci&oacute;n </span></span></b></p></td>
+                <td  class="titletable" ><p class="SUBTITULO"><span 
+        >Tipo identificaci&oacute;n </span></span></p></td>
                 <td><p class="PARRAFO">En 
                     este campo se selecciona de una lista de valores, el tipo de documento de identificaci&oacute;n 
                     del cliente.</p>
                 </td>
               </tr>
               <tr> 
-                <td class="titletable"><p class="SUBTITULO"><b><span 
-        >N&uacute;mero identificaci&oacute;n </span></span></b></p></td>
+                <td class="titletable"><p class="SUBTITULO"><span 
+        >N&uacute;mero identificaci&oacute;n </span></span></p></td>
                 <td><p class="PARRAFO">En 
                     este campo se debe capturar el n&uacute;mero del documento de identificaci&oacute;n 
                     del cliente para registrar o consultar una solicitud de cr&eacute;dito 
@@ -66,23 +62,23 @@
             </table>
             
             <p  class="PARRAFO">Al utilizar el bot&oacute;n Buscar, el sistema despliega todas las solicitudes diferentes a Cr&eacute;dito nuevo, que tenga el cliente consultado.</p>
-            <p class="TITLE"><img src="../img/SOF_014B1.PNG"631" height="299"></p>
+            <p class="TITLE"><img src="../img/SOF_014B1.PNG"></p>
             
             <p  class="PARRAFO"><span class="PARRAFO"><span class="SUBTITULO">Adicionar:</span>  
               Si el usuario invoca la opci&oacute;n Adicionar  se despliega un nuevo formulario 
               con los siguientes campos: </span></p>
-            <p class="TITLE"><img src="../img/SOF_014B2.PNG"446" height="110"></p>
+            <p class="TITLE"><img src="../img/SOF_014B2.PNG"></p>
            
             <table>
               <tr>
-                <td  class="titletable" ><p class="SUBTITULO"><b><span 
-        >Tipo</span></span></b></p></td>
+                <td  class="titletable" ><p class="SUBTITULO"><span 
+        >Tipo</span></span></p></td>
                 <td><p class="PARRAFO">En 
                   este campo obligatorio se selecciona de una lista de valores, el tipo solicitud que se desea grabar. </p></td>
               </tr>
               <tr>
-                <td class="titletable"><p class="SUBTITULO"><b><span 
-        >Tarjeta</span></b></p></td>
+                <td class="titletable"><p class="SUBTITULO"><span 
+        >Tarjeta</span></p></td>
                 <td><p class="PARRAFO">Campo obligatorio en el que a trav&eacute;s de esta lista de valores, el usuario debe seleccionar la tarjeta para la cual se ingresar&aacute; la solicitud. Esta lista se mostrar&aacute; en blanco en caso que el cliente no tenga tarjetas. </p></td>
               </tr>
             </table>

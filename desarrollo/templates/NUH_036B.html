@@ -17,24 +17,20 @@
             <img class="TITLE"  src= "../img/menu.PNG" alt="Botón de Menú ">
         </div>
     </header>
-   <div id="menuContainer"></div>
-    <script>
-      fetch('menu.html')
-        .then(response => response.text())
-        .then(html => {
-          document.getElementById('menuContainer').innerHTML = html;
-        });
-    </script>
+      <div id="menuContainer"></div>
+  <script>
+    fetch('menu.html')
+      .then(response => response.text())
+      .then(html => {
+        document.getElementById('menuContainer').innerHTML = html;
+      });
+  </script>
 
     <section>
         <div> 
-            <table>
-              <tr> 
-                <td><div> 
+            
                     <p  class="TITLE">Tipos de tasas e indicadores</p>
-                  </div></td>
-              </tr>
-            </table>
+                  
             <p class="PARRAFO" >Mediante esta funci&oacute;n se habilita 
               la consulta y mantenimiento de la tabla en la cual se almacena la codificaci&oacute;n 
               de los diferentes items o variables locales, conocidos como tipos de tasas 
@@ -46,7 +42,7 @@
             
             <p  class="PARRAFO">El formulario contiene las opciones Actualizar, 
               Eliminar y Adicionar. </p>
-            <p  class="PARRAFO"><span class="SUBTITULO"><b ><span            '>Adicionar</span></b><span 
+            <p  class="PARRAFO"><span class="SUBTITULO"><span            '>Adicionar</span><span 
         >:</span><span 
         ></span></span><span 
         > 
@@ -56,16 +52,16 @@
             <p  class="TITLE">Descripci&oacute;n de campos</p>
             <table>
               <tr> 
-                <td class="titletable"><p class="SUBTITULO"><b><span 
-        >C&oacute;digo</span></b></p></td>
+                <td class="titletable"><p class="SUBTITULO"><span 
+        >C&oacute;digo</span></p></td>
                 <td><p  class="PARRAFO">Campo 
                     num&eacute;rico de cuatro d&iacute;gitos, obligatorio, que corresponde 
                     al c&oacute;digo asignado a cada uno de los tipos de tasas e indicadores 
                     econ&oacute;micos definidos por la entidad.</p></td>
               </tr>
               <tr> 
-                <td  class="titletable" ><p class="SUBTITULO"><b><span 
-        >Descripci&oacute;n</span></b></p></td>
+                <td  class="titletable" ><p class="SUBTITULO"><span 
+        >Descripci&oacute;n</span></p></td>
                 <td><p  class="PARRAFO">En 
                     este campo alfanum&eacute;rico de 40 posiciones, obligatorio, se registra 
                     el nombre asociado al c&oacute;digo anterior.
@@ -73,9 +69,9 @@
               </tr>
            
               <tr> 
-                <td  class="titletable" ><p class="SUBTITULO"><b><span 
+                <td  class="titletable" ><p class="SUBTITULO"><span 
         >Tipo 
-                    tasa</span></b></p></td>
+                    tasa</span></p></td>
                 <td><p  class="PARRAFO">Campo 
                     tipo combo en el cual se selecciona entre Base (un valor absoluto) 
                     o F&oacute;rmula (un c&aacute;lculo a partir de otras variables) 
@@ -84,8 +80,8 @@
               </tr>
            
               <tr> 
-                <td  class="titletable" ><p class="SUBTITULO"><b><span 
-        >F&oacute;rmula</span></b></p></td>
+                <td  class="titletable" ><p class="SUBTITULO"><span 
+        >F&oacute;rmula</span></p></td>
                 <td><p  class="PARRAFO">Cuando 
                     en el campo anterior se ha seleccionado la opci&oacute;n f&oacute;rmula, 
                     este campo se habilita y se vuelve obligatorio, Aqu&iacute; se definen 
@@ -104,9 +100,9 @@
               </tr>
            
               <tr> 
-                <td  class="titletable" ><p class="SUBTITULO"><b><span 
+                <td  class="titletable" ><p class="SUBTITULO"><span 
         >Frecuencia 
-                    actualizaci&oacute;n </span></b></p></td>
+                    actualizaci&oacute;n </span></p></td>
                 <td><p  class="PARRAFO">Campo 
                     obligatorio tipo combo en el cual se selecciona la periodicidad con 
                     la que debe ser actualizado el valor del indicador econ&oacute;mico, 
@@ -117,8 +113,8 @@
               </tr>
            
               <tr> 
-                <td  class="titletable" ><p class="SUBTITULO"><b><span 
-        >Aplicaci&oacute;n</span></b></p></td>
+                <td  class="titletable" ><p class="SUBTITULO"><span 
+        >Aplicaci&oacute;n</span></p></td>
                 <td><p  class="PARRAFO">Dado 
                     que varios procesos tanto en l&iacute;nea como en batch requieren la 
                     definici&oacute;n previa de tasas e indicadores econ&oacute;micos, el 
@@ -131,8 +127,8 @@
               </tr>
             </table>
             <div>
-              <p class="PARRAFO"><b ><span class="SUBTITULO"> 
-                Actualizar</span></b>: Si el usuario selecciona un regitro e invoca la opci&oacute;n 
+              <p class="PARRAFO"><span class="SUBTITULO"> 
+                Actualizar</span>: Si el usuario selecciona un regitro e invoca la opci&oacute;n 
                 Actualizar se despliega un formulario en el cual los campos modificables 
                 son Descripci&oacute;n, Tipo tasa, F&oacute;rmula (si el tipo tasa es f&oacute;rmula), 
                 Frecuencia actualizaci&oacute;n (si el tipo tasa es base) y Aplicaci&oacute;n.

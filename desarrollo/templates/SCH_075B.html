@@ -1,98 +1,100 @@
 <!DOCTYPE html>
 <html lang="es">
 
-<head>
+  <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>BANKBU®</title>
     <link rel="stylesheet" href="../css/pages.css">
     <link rel="stylesheet" href="../css/style.css">
- <link rel="icon" href="../img/ACQUIRER-logo.JPG" type="image/x-icon">
-</head>
+    <link rel="icon" href="../img/ACQUIRER-logo.JPG" type="image/x-icon">
+  </head>
 
-<body>
+  <body>
     <header>
-        <img class="logo" src="../img/logoBankbu_.PNG" alt="Logo de Mi Empresa">
-        <div id="menuBtn">
-            <img class="TITLE"  src= "../img/menu.PNG" alt="Botón de Menú ">
-        </div>
+      <img class="logo" src="../img/logoBankbu_.PNG" alt="Logo de Mi Empresa">
+      <div id="menuBtn">
+        <img class="TITLE" src="../img/menu.PNG" alt="Botón de Menú ">
+      </div>
     </header>
-   <div id="menuContainer"></div>
+    <div id="menuContainer"></div>
     <script>
-      fetch('menu.html')
-        .then(response => response.text())
-        .then(html => {
-          document.getElementById('menuContainer').innerHTML = html;
-        });
-    </script>
+    fetch('menu.html')
+      .then(response => response.text())
+      .then(html => {
+        document.getElementById('menuContainer').innerHTML = html;
+      });
+  </script>
 
     <section>
-        <div> 
-            <table>
-              <tr> 
-                <td><div> 
-                    <p  class="TITLE">Generar novedad</p>
-                  </div></td>
-              </tr>
-            </table>
-            <p class="PARRAFO" >Esta opci&oacute;n invocada desde el 
-              rol de n&uacute;cleo (core) permite hacer el llamado a los diversos formularios 
-              desde los cuales se ingresan las modificaciones a la informaci&oacute;n relacionada 
-              con el cliente o tarjetahabiente, facilitando a la entidad mantener actualizados 
-              los datos de sus clientes.
-              </span></p>
-            <p class="TITLE"><img src="../img/SCF_075E.PNG"362" ></p>
-            <p  class="PARRAFO">A diferencia de la mayor&iacute;a de los formularios, 
-              este no contiene opciones adicionales y est&aacute; conformado por tres campos 
-              en los cuales se registran los datos requeridos por el sistema para el ingreso 
-              de la novedad.</p>
-            <p  class="TITLE">Descripci&oacute;n de campos</p>
-            <table>
-              <tr> 
-                <td class="titletable"><p class="SUBTITULO"><b><span 
-        > 
-                    Tipo de identificaci&oacute;n</span></b></p></td>
-                <td><p  class="PARRAFO">Campo 
-                    obligatorio tipo combo del cual se selecciona el <a href="NUH_008B.html" >tipo 
-                    de documento de identificaci&oacute;n</a> correspondiente al cliente 
-                    para el cual se desea generar la novedad.</p></td>
-              </tr>
-           
-              <tr> 
-                <td class="titletable"><p class="SUBTITULO"><b><span 
-        >N&uacute;mero 
-                    de identificaci&oacute;n</span></b></p></td>
-                <td><p  class="PARRAFO">Este 
-                    campo obligatorio de hasta 16 posiciones en el cual se ingresa el n&uacute;mero 
-                    del documento de identificaci&oacute;n del cliente.</p></td>
-              </tr>
-           
-              <tr> 
-                <td class="titletable"><p class="SUBTITULO"><b><span 
-        >Tipo 
-                    de actualizaci&oacute;n</span></b></p></td>
-                <td><p  class="PARRAFO">Campo 
-                    obligatorio tipo combo del cual se selecciona el <a href="NUH_017B.html" >tipo 
-                    de novedad</a> que se desea generar para el cliente.</p>
-                </td>
-              </tr>
-            </table>
-            <p  class="PARRAFO">Una vez ingresados los datos requeridos y mediante 
-              el bot&oacute;n buscar, el sistema invoca el formulario correspondiente de 
-              acuerdo con el tipo de novedad seleccionada por el usuario.</p>
-            <div>
-          .
-                </section>
-    <script src="../js/menu.js"></script>
+      <div>
 
-    <div id="footerContainer"></div>
-<script>
+        <p class="TITLE">Generar novedad</p>
+
+        <p class="PARRAFO">Esta opci&oacute;n invocada desde el
+          rol de n&uacute;cleo (core) permite hacer el llamado a los diversos
+          formularios
+          desde los cuales se ingresan las modificaciones a la
+          informaci&oacute;n relacionada
+          con el cliente o tarjetahabiente, facilitando a la entidad mantener
+          actualizados
+          los datos de sus clientes.
+        </span></p>
+      <p class="TITLE"><img src="../img/SCF_075E.PNG"></p>
+      <p class="PARRAFO">A diferencia de la mayor&iacute;a de los formularios,
+        este no contiene opciones adicionales y est&aacute; conformado por tres
+        campos
+        en los cuales se registran los datos requeridos por el sistema para el
+        ingreso
+        de la novedad.</p>
+      <p class="TITLE">Descripci&oacute;n de campos</p>
+      <table>
+        <tr>
+          <td class="titletable"><p class="SUBTITULO"><span>
+                Tipo de identificaci&oacute;n</span></p></td>
+          <td><p class="PARRAFO">Campo
+              obligatorio tipo combo del cual se selecciona el <a
+                href="NUH_008B.html">tipo
+                de documento de identificaci&oacute;n</a> correspondiente al
+              cliente
+              para el cual se desea generar la novedad.</p></td>
+        </tr>
+
+        <tr>
+          <td class="titletable"><p class="SUBTITULO"><span>N&uacute;mero
+                de identificaci&oacute;n</span></p></td>
+          <td><p class="PARRAFO">Este
+              campo obligatorio de hasta 16 posiciones en el cual se ingresa el
+              n&uacute;mero
+              del documento de identificaci&oacute;n del cliente.</p></td>
+        </tr>
+
+        <tr>
+          <td class="titletable"><p class="SUBTITULO"><span>Tipo
+                de actualizaci&oacute;n</span></p></td>
+          <td><p class="PARRAFO">Campo
+              obligatorio tipo combo del cual se selecciona el <a
+                href="NUH_017B.html">tipo
+                de novedad</a> que se desea generar para el cliente.</p>
+          </td>
+        </tr>
+      </table>
+      <p class="PARRAFO">Una vez ingresados los datos requeridos y mediante
+        el bot&oacute;n buscar, el sistema invoca el formulario correspondiente
+        de
+        acuerdo con el tipo de novedad seleccionada por el usuario.</p>
+      <div>
+      </section>
+      <script src="../js/menu.js"></script>
+
+      <div id="footerContainer"></div>
+      <script>
   fetch('footer.html')
     .then(response => response.text())
     .then(html => {
       document.getElementById('footerContainer').innerHTML = html;
     });
 </script>
-</body>
+    </body>
 
-</html>
+  </html>

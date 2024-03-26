@@ -1,115 +1,131 @@
 <!DOCTYPE html>
 <html lang="es">
 
-<head>
+  <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>BANKBU®</title>
     <link rel="stylesheet" href="../css/pages.css">
     <link rel="stylesheet" href="../css/style.css">
- <link rel="icon" href="../img/ACQUIRER-logo.JPG" type="image/x-icon">
-</head>
+    <link rel="icon" href="../img/ACQUIRER-logo.JPG" type="image/x-icon">
+  </head>
 
-<body>
+  <body>
     <header>
-        <img class="logo" src="../img/logoBankbu_.PNG" alt="Logo de Mi Empresa">
-        <div id="menuBtn">
-            <img class="TITLE"  src= "../img/menu.PNG" alt="Botón de Menú ">
-        </div>
+      <img class="logo" src="../img/logoBankbu_.PNG" alt="Logo de Mi Empresa">
+      <div id="menuBtn">
+        <img class="TITLE" src="../img/menu.PNG" alt="Botón de Menú ">
+      </div>
     </header>
-   <div id="menuContainer"></div>
+    <div id="menuContainer"></div>
     <script>
-      fetch('menu.html')
-        .then(response => response.text())
-        .then(html => {
-          document.getElementById('menuContainer').innerHTML = html;
-        });
-    </script>
+    fetch('menu.html')
+      .then(response => response.text())
+      .then(html => {
+        document.getElementById('menuContainer').innerHTML = html;
+      });
+  </script>
 
     <section>
-        <div> 
-            <table>
-              <tr> 
-                <td> 
-                    <p  class="TITLE">Novedad Bloqueo Pl&aacute;stico</p>
-                  </div></td>
-              </tr>
-            </table>
-            <p  class="PARRAFO">Este formulario invocado desde la opci&oacute;n 
-              <a href="SCH_075B1.html" >ingreso de novedades</a>, 
-              (issuer) le permite a la entidad asignar o modificar los diferentes bloqueos 
-              de pl&aacute;sticos generados para restringir el uso de un cr&eacute;dito 
-              o tarjeta por razones tales como mora en el pago, por posible duplicaci&oacute;n 
-              del pl&aacute;stico, u otro tipo de eventos y decisiones administrativas. 
-             
-            </p>
-            <p class="TITLE"><img src="../img/SCF_025E.PNG"385" ></p>
-            
-            <p class="TITLE"><img src="../img/SCF_025E1.PNG"385" ></p>
-            <p  class="TITLE">Descripci&oacute;n de campos</p>
-            <table>
-              <tr> 
-                <td class="titletable"><p class="SUBTITULO"><b><span 
-        > 
-                    Bloqueo actual</span></b></p></td>
-                <td><p  class="PARRAFO">En 
-                    este campo que contiene lista de valores, se puede seleccionar el bloqueo 
-                    tipo pl&aacute;stico que se requiere asociar a la tarjeta, y específicamente aquellos a los cuales se les asigná
-                    como medio de pago '1' en <a href="CAH_002B.html" >Estados y bloqueos</a>. Se exceptúan 
-                    aquellos bloqueos que son aplicados a la tarjeta de manera autom&aacute;tica 
-                    como resultado de los diferentes procesos ejecutados como es el caso de los bloqueos por robo (X), fraude (Y),
-                    cancelación por mal manejo (C), Sin plástico empresarial (W) y Preventivo por persona (O). En caso que la 
-                    tarjeta posea un bloqueo, este se muestra al ingresar al formulario.</p></td>
-              </tr>
-           
-              <tr> 
-                <td class="titletable"><p class="SUBTITULO"><b><span 
-        >Fecha 
-                    bloqueo actual </span></b></p>
-                </td>
-                <td><p  class="PARRAFO">Campo 
-                    de salida, se muestra en formato YYYY-MM-DD la fecha de proceso en que 
-                    se est&aacute; ingresando la novedad del bloqueo de pl&aacute;stico. 
-                    Para el caso de bloqueos ya existentes, muestra la fecha en la cual 
-                    se le aplic&oacute; a la tarjeta o cr&eacute;dito
-                  </p></td>
-              </tr>
-           
-              <tr> 
-                <td class="titletable"><p class="SUBTITULO"><b><span 
-        > 
-                    Motivo cancelaci&oacute;n</span></b></p></td>
-                <td><p  class="PARRAFO">Este 
-                    campo que aplica exclusivamente para cuando el Bloqueo actual es el 
-                    de Cancelaci&oacute;n, y que se convierte en obligatorio, posee lista 
-                    de valores de la cual se selecciona el <a href="NUH_009B.html" >Motivo 
-                    de devoluci&oacute;n voluntaria</a>, presentado por el cliente 
-                    al momento de cancelar su cr&eacute;dito.
-                  </p></td>
-              </tr>
-           
-              <tr> 
-                <td class="titletable"><p class="SUBTITULO"><b><span 
-        > 
-                    Fecha de radicaci&oacute;n</span></b></p></td>
-                <td><p  class="PARRAFO">Campo 
-                    obligatorio en el que se registra en formato YYYY-MM-DD la fecha en 
-                    la cual se aplic&oacute; o retir&oacute; el bloqueo pl&aacute;stico 
-                    a la tarjeta y que puede ser una fecha anterior a la actual del sistema, 
-                    facilitando el ingreso de novedades de fechas anteriores. </p></td>
-              </tr>
-            </table>
-        </section>
-    <script src="../js/menu.js"></script>
+      <div>
+        <table>
+          <tr>
+            <td>
+              <p class="TITLE">Novedad Bloqueo Pl&aacute;stico</p>
 
-    <div id="footerContainer"></div>
-<script>
+              <p class="PARRAFO">Este formulario invocado desde la opci&oacute;n
+                <a href="SCH_075B1.html">ingreso de novedades</a>,
+                (issuer) le permite a la entidad asignar o modificar los
+                diferentes bloqueos
+                de pl&aacute;sticos generados para restringir el uso de un
+                cr&eacute;dito
+                o tarjeta por razones tales como mora en el pago, por posible
+                duplicaci&oacute;n
+                del pl&aacute;stico, u otro tipo de eventos y decisiones
+                administrativas.
+
+              </p>
+              <p class="TITLE"><img src="../img/SCF_025E.PNG"></p>
+
+              <p class="TITLE"><img src="../img/SCF_025E1.PNG"></p>
+              <p class="TITLE">Descripci&oacute;n de campos</p>
+              <table>
+                <tr>
+                  <td class="titletable"><p class="SUBTITULO">
+                      Bloqueo actual</p></td>
+                  <td><p class="PARRAFO">En
+                      este campo que contiene lista de valores, se puede
+                      seleccionar el bloqueo
+                      tipo pl&aacute;stico que se requiere asociar a la tarjeta,
+                      y específicamente aquellos a los cuales se les asigná
+                      como medio de pago '1' en <a href="CAH_002B.html">Estados
+                        y bloqueos</a>. Se exceptúan
+                      aquellos bloqueos que son aplicados a la tarjeta de manera
+                      autom&aacute;tica
+                      como resultado de los diferentes procesos ejecutados como
+                      es el caso de los bloqueos por robo (X), fraude (Y),
+                      cancelación por mal manejo (C), Sin plástico empresarial
+                      (W) y Preventivo por persona (O). En caso que la
+                      tarjeta posea un bloqueo, este se muestra al ingresar al
+                      formulario.</p></td>
+                </tr>
+
+                <tr>
+                  <td class="titletable"><p class="SUBTITULO">Fecha
+                      bloqueo actual</p>
+                  </td>
+                  <td><p class="PARRAFO">Campo
+                      de salida, se muestra en formato YYYY-MM-DD la fecha de
+                      proceso en que
+                      se est&aacute; ingresando la novedad del bloqueo de
+                      pl&aacute;stico.
+                      Para el caso de bloqueos ya existentes, muestra la fecha
+                      en la cual
+                      se le aplic&oacute; a la tarjeta o cr&eacute;dito
+                    </p></td>
+                </tr>
+
+                <tr>
+                  <td class="titletable"><p class="SUBTITULO">
+                      Motivo cancelaci&oacute;n</p></td>
+                  <td><p class="PARRAFO">Este
+                      campo que aplica exclusivamente para cuando el Bloqueo
+                      actual es el
+                      de Cancelaci&oacute;n, y que se convierte en obligatorio,
+                      posee lista
+                      de valores de la cual se selecciona el <a
+                        href="NUH_009B.html">Motivo
+                        de devoluci&oacute;n voluntaria</a>, presentado por el
+                      cliente
+                      al momento de cancelar su cr&eacute;dito.
+                    </p></td>
+                </tr>
+
+                <tr>
+                  <td class="titletable"><p class="SUBTITULO">
+                      Fecha de radicaci&oacute;n</p></td>
+                  <td><p class="PARRAFO">Campo
+                      obligatorio en el que se registra en formato YYYY-MM-DD la
+                      fecha en
+                      la cual se aplic&oacute; o retir&oacute; el bloqueo
+                      pl&aacute;stico
+                      a la tarjeta y que puede ser una fecha anterior a la
+                      actual del sistema,
+                      facilitando el ingreso de novedades de fechas anteriores.
+                    </p></td>
+                </tr>
+              </table>
+            </section>
+            <script src="../js/menu.js"></script>
+
+            <div id="footerContainer"></div>
+            <script>
   fetch('footer.html')
     .then(response => response.text())
     .then(html => {
       document.getElementById('footerContainer').innerHTML = html;
     });
 </script>
-</body>
+          </body>
 
-</html>
+        </html>

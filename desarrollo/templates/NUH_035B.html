@@ -17,24 +17,20 @@
             <img class="TITLE"  src= "../img/menu.PNG" alt="Botón de Menú ">
         </div>
     </header>
-   <div id="menuContainer"></div>
-    <script>
-      fetch('menu.html')
-        .then(response => response.text())
-        .then(html => {
-          document.getElementById('menuContainer').innerHTML = html;
-        });
-    </script>
+      <div id="menuContainer"></div>
+  <script>
+    fetch('menu.html')
+      .then(response => response.text())
+      .then(html => {
+        document.getElementById('menuContainer').innerHTML = html;
+      });
+  </script>
 
     <section>
         <div> 
-            <table>
-              <tr> 
-                <td><div> 
+            
                     <p  class="TITLE">Estado de ingresos   y egresos</p>
-                    </div></td>
-              </tr>
-            </table>
+                    
             <p>Mediante esta funci&oacute;n se habilita la consulta y mantenimiento de   la tabla en la que la entidad financiera almacena los diferentes items o   conceptos monetarios, aplicables a los tipos de <a href="SOH_004B.html" >solicitudes</a> (personas naturales, peque&ntilde;as o grandes   empresas), permitiendo asociar parte de la informaci&oacute;n suministrada por el   cliente, a conceptos financieros similares a un estado de ganancias y p&eacute;rdidas,   lo que facilita conocer, entre otros, la capacidad de endeudamiento del cliente.   Adicionalmente, al asociarle la clase de prototipo es posible generar, mediante   interfaces espec&iacute;ficas, informaci&oacute;n relevante para la entidad.</p>
             <p class="TITLE"><img src="../img/NUF_035E.PNG"604" height="459"></p>
             
@@ -46,24 +42,24 @@
             
             <table>
               <tr>
-                <td class="titletable"><p class="SUBTITULO"><b><span 
-        >C&oacute;digo</span></b></p></td>
+                <td class="titletable"><p class="SUBTITULO"><span 
+        >C&oacute;digo</span></p></td>
                 <td><p class="PARRAFO">Campo num&eacute;rico de tres d&iacute;gitos,   obligatorio, que corresponde al c&oacute;digo asignado a cada uno de los conceptos de   ingreso o egreso.</p>        </td>
               </tr>
               <tr>
-                <td class="titletable"><p class="SUBTITULO"><b><span 
-        >Descripci&oacute;n</span></span></b></p></td>
+                <td class="titletable"><p class="SUBTITULO"><span 
+        >Descripci&oacute;n</span></span></p></td>
                 <td><p class="PARRAFO">En este campo alfanum&eacute;rico de 30 posiciones,   obligatorio, se registra el nombre o descriptivo asociado al c&oacute;digo de cada   concepto de ingreso o egreso.</p>      
                 </td>
               </tr>
               <tr>
-                <td  class="titletable" ><p class="SUBTITULO"><b><span 
-        >Acci&oacute;n</span></b></p></td>
+                <td  class="titletable" ><p class="SUBTITULO"><span 
+        >Acci&oacute;n</span></p></td>
                 <td><p class="PARRAFO">Campo que contiene lista de valores de la   cual se puede seleccionar entre sumar o restar el efecto o acci&oacute;n asociado a   cada concepto de ingreso o egreso, acorde con las pr&aacute;cticas contables tendientes   a la obtenci&oacute;n de un estado de ganancias y p&eacute;rdidas o a otros prop&oacute;sitos   deseados por la entidad.</p>        </td>
               </tr>
               <tr>
-                <td class="titletable"><p class="SUBTITULO"><b><span 
-        >Prototipo</span></b></p></td>
+                <td class="titletable"><p class="SUBTITULO"><span 
+        >Prototipo</span></p></td>
                 <td><p class="PARRAFO">En este campo con lista de valores adjunta   se debe seleccionar entre Utilidad neta, Patrimonio, Pasivos, Activos, Otros   gastos, Gastos, Otros ingresos o Ingresos, el c&oacute;digo interno con el cual el   sistema reconocer&aacute; cada uno de los conceptos definidos, con base en los cuales   procesar&aacute; dicha informaci&oacute;n, en caso que la entidad defina alguna interface   espec&iacute;fica para con ese fin.</p>        
                 </td>
               </tr>

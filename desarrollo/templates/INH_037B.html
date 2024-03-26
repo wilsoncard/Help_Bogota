@@ -1,126 +1,147 @@
 <!DOCTYPE html>
 <html lang="es">
 
-<head>
+  <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>BANKBU®</title>
 
     <link rel="stylesheet" href="../css/pages.css">
     <link rel="stylesheet" href="../css/style.css">
- <link rel="icon" href="../img/ACQUIRER-logo.JPG" type="image/x-icon">
-</head>
+    <link rel="icon" href="../img/ACQUIRER-logo.JPG" type="image/x-icon">
+  </head>
 
-<body>
+  <body>
 
     <header>
-        <img class="logo" src="../img/logoBankbu_.PNG" alt="Logo de Mi Empresa">
-        <div id="menuBtn">
-            <img class="TITLE"  src= "../img/menu.PNG" alt="Botón de Menú ">
-        </div>
+      <img class="logo" src="../img/logoBankbu_.PNG" alt="Logo de Mi Empresa">
+      <div id="menuBtn">
+        <img class="TITLE" src="../img/menu.PNG" alt="Botón de Menú ">
+      </div>
     </header>
-   <div id="menuContainer"></div>
+    <div id="menuContainer"></div>
     <script>
-      fetch('menu.html')
-        .then(response => response.text())
-        .then(html => {
-          document.getElementById('menuContainer').innerHTML = html;
-        });
-    </script>
+    fetch('menu.html')
+      .then(response => response.text())
+      .then(html => {
+        document.getElementById('menuContainer').innerHTML = html;
+      });
+  </script>
 
     <section>
-        <div> 
-            <table>
-              <tr> 
-                <td><div> 
-                    <p  class="TITLE">Boletas de ruta</p>
-                    </div></td>
-              </tr>
-            </table>
-            <p class="PARRAFO">A trav&eacute;s de esta opci&oacute;n se permite la definici&oacute;n 
-              de los n&uacute;meros consecutivos de los comprobantes de control permitidos 
-              por cada oficina en la captura del movimiento, producto de la operaci&oacute;n 
-              diaria. El sistema valida que los diferentes rangos asignados no se sobrepongan 
-              unos a otros para garantizar as&iacute; que una misma boleta no pueda ser 
-              asignada a dos o mas sucursales diferentes.</p>
-            <p class="PARRAFO">El formulario contiene las opciones Actualizar, Eliminar, 
-              y Adicionar. Adicionalmente, cuenta con un filtro de b&uacute;squeda.</p>
-            <p class="TITLE"><img src="../img/INF_037B.PNG"657" height="348"></p>
-            
-            <p><span class="SUBTITULO">Filtro:</span>  Se pueden realizar consultas a trav&eacute;s 
-              de las siguientes opciones: </p>
-            <p class="TITLE"><img src="../img/INF_037B1.PNG"325" ></p>
-            
-            <table>
-              <tr> 
-                <td  class="titletable" ><p class="SUBTITULO"><b>Sucursal</b></p></td>
-                <td><p class="PARRAFO">Campo 
-                    que contiene una lista de valores poblada previamente en la opci&oacute;n 
-                    <a href="NUH_020B.html" >Estructura org&aacute;nica</a> del N&uacute;cleo, 
-                    en la cual se digita una sucursal a consultar.</p></td>
-              </tr>
-              <tr> 
-                <td class="titletable"><p class="SUBTITULO"><b>Rango 
-                    inicial </b></p></td>
-                <td><p class="PARRAFO">Campo 
-                    num&eacute;rico de 8 posiciones, en el cual se registra la oficina o 
-                    sucursal a consultar</p></td>
-              </tr>
-              <tr> 
-                <td class="titletable"><p class="SUBTITULO"><b>Rango 
-                    final </b></p></td>
-                <td><p class="PARRAFO">Campo 
-                    num&eacute;rico de 8 posiciones, en el cual se registra la oficina o 
-                    sucursal a consultar</p></td>
-              </tr>
-            </table>
-            
-            <p  class="PARRAFO"><span class="SUBTITULO">Adicionar:</span>  Si el usuario invoca la opci&oacute;n Adicionar se despliega un formulario con los siguientes campos<span 
-        >:</span></p>
-            <p class="TITLE"><img src="../img/INF_037B2.PNG"346" height="120"></p>
-            
-            <table>
-              <tr> 
-                <td  class="titletable" ><p class="SUBTITULO"><b>Sucursal</b></p></td>
-                <td><p class="PARRAFO">Campo 
-                    obligatorio que contiene una lista de valores poblada previamente en la opci&oacute;n 
-                    <a href="NUH_020B.html" >Estructura org&aacute;nica</a> del N&uacute;cleo, 
-                    a trav&eacute;s de la cual la entidad selecciona a cu&aacute;l oficina 
-                    se le genera restricciones en el consecutivo de boletas de ruta (o comprobantes 
-                    de control) permitiendo o suspendiendo la captura de movimiento.</p></td>
-              </tr>
-              <tr> 
-                <td class="titletable"><p class="SUBTITULO"><b>Rango 
-                    inicial </b></p></td>
-                <td><p class="PARRAFO">Campo 
-                     num&eacute;rico de 8 posiciones, requerido, en el cual se registra valor 
-                    consecutivo inicial, que se permite a la oficina o sucursal en el momento 
-                    de capturar movimiento en los comprobantes de control. </p></td>
-              </tr>
-              <tr> 
-                <td class="titletable"><p class="SUBTITULO"><b>Rango 
-                    final </b></p></td>
-                <td><p class="PARRAFO">Campo 
-                    num&eacute;rico de 8 posiciones, requerido, en el cual se registra valor 
-                    consecutivo final, que se permite a la oficina o sucursal en el momento 
-                    de capturar movimiento en los comprobantes de control. </p></td>
-              </tr>
-            </table>
-            <p  class="PARRAFO"><span class="PARRAFO"><span class="SUBTITULO">Actualizar:</span>  
-              Si el usuario invoca la opci&oacute;n Actualizar se despliega un nuevo formulario 
-              en el cual los &uacute;nicos campos modificables son: Rango inicial y Rango 
-              final.</span></p>
-            <p class="TITLE"><img src="../img/INF_037B3.PNG"319" height="120"></p>
-           
-        </section>
-    <script src="../js/menu.js"></script>
-</body>
-<div id="footerContainer"></div>
-<script>
+      <div>
+        
+                <p class="TITLE">Boletas de ruta</p>
+              
+        <p class="PARRAFO">A trav&eacute;s de esta opci&oacute;n se permite la
+          definici&oacute;n
+          de los n&uacute;meros consecutivos de los comprobantes de control
+          permitidos
+          por cada oficina en la captura del movimiento, producto de la
+          operaci&oacute;n
+          diaria. El sistema valida que los diferentes rangos asignados no se
+          sobrepongan
+          unos a otros para garantizar as&iacute; que una misma boleta no pueda
+          ser
+          asignada a dos o mas sucursales diferentes.</p>
+        <p class="PARRAFO">El formulario contiene las opciones Actualizar,
+          Eliminar,
+          y Adicionar. Adicionalmente, cuenta con un filtro de
+          b&uacute;squeda.</p>
+        <p class="TITLE"><img src="../img/INF_037B.PNG"></p>
+
+        <p><span class="SUBTITULO">Filtro:</span> Se pueden realizar consultas a
+          trav&eacute;s
+          de las siguientes opciones: </p>
+        <p class="TITLE"><img src="../img/INF_037B1.PNG"></p>
+
+        <table>
+          <tr>
+            <td class="titletable"><p class="SUBTITULO">Sucursal</p></td>
+            <td><p class="PARRAFO">Campo
+                que contiene una lista de valores poblada previamente en la
+                opci&oacute;n
+                <a href="NUH_020B.html">Estructura org&aacute;nica</a> del
+                N&uacute;cleo,
+                en la cual se digita una sucursal a consultar.</p></td>
+          </tr>
+          <tr>
+            <td class="titletable"><p class="SUBTITULO">Rango
+                inicial </p></td>
+            <td><p class="PARRAFO">Campo
+                num&eacute;rico de 8 posiciones, en el cual se registra la
+                oficina o
+                sucursal a consultar</p></td>
+          </tr>
+          <tr>
+            <td class="titletable"><p class="SUBTITULO">Rango
+                final </p></td>
+            <td><p class="PARRAFO">Campo
+                num&eacute;rico de 8 posiciones, en el cual se registra la
+                oficina o
+                sucursal a consultar</p></td>
+          </tr>
+        </table>
+
+        <p class="PARRAFO"><span class="SUBTITULO">Adicionar:</span> Si el
+          usuario invoca la opci&oacute;n Adicionar se despliega un formulario
+          con los siguientes campos:</span></p>
+        <p class="TITLE"><img src="../img/INF_037B2.PNG"></p>
+
+        <table>
+          <tr>
+            <td class="titletable"><p class="SUBTITULO">Sucursal</p></td>
+            <td><p class="PARRAFO">Campo
+                obligatorio que contiene una lista de valores poblada
+                previamente en la opci&oacute;n
+                <a href="NUH_020B.html">Estructura org&aacute;nica</a> del
+                N&uacute;cleo,
+                a trav&eacute;s de la cual la entidad selecciona a cu&aacute;l
+                oficina
+                se le genera restricciones en el consecutivo de boletas de ruta
+                (o comprobantes
+                de control) permitiendo o suspendiendo la captura de
+                movimiento.</p></td>
+          </tr>
+          <tr>
+            <td class="titletable"><p class="SUBTITULO">Rango
+                inicial </p></td>
+            <td><p class="PARRAFO">Campo
+                num&eacute;rico de 8 posiciones, requerido, en el cual se
+                registra valor
+                consecutivo inicial, que se permite a la oficina o sucursal en
+                el momento
+                de capturar movimiento en los comprobantes de control. </p></td>
+          </tr>
+          <tr>
+            <td class="titletable"><p class="SUBTITULO">Rango
+                final </p></td>
+            <td><p class="PARRAFO">Campo
+                num&eacute;rico de 8 posiciones, requerido, en el cual se
+                registra valor
+                consecutivo final, que se permite a la oficina o sucursal en el
+                momento
+                de capturar movimiento en los comprobantes de control. </p></td>
+          </tr>
+        </table>
+        <p class="PARRAFO"><span class="PARRAFO"><span
+              class="SUBTITULO">Actualizar:</span>
+            Si el usuario invoca la opci&oacute;n Actualizar se despliega un
+            nuevo formulario
+            en el cual los &uacute;nicos campos modificables son: Rango inicial
+            y Rango
+            final.</span></p>
+        <p class="TITLE"><img src="../img/INF_037B3.PNG"></p>
+
+      </section>
+      <script src="../js/menu.js"></script>
+    </body>
+    <div id="footerContainer"></div>
+    <script>
   fetch('footer.html')
     .then(response => response.text())
     .then(html => {
       document.getElementById('footerContainer').innerHTML = html;
     });
 </script>
-</html>
+  </html>

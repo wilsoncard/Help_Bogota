@@ -19,26 +19,20 @@
       <img class="TITLE" src="../img/menu.PNG" alt="Botón de Menú ">
     </div>
   </header>
-  <div id="menuContainer"></div>
-    <script>
-      fetch('menu.html')
-        .then(response => response.text())
-        .then(html => {
-          document.getElementById('menuContainer').innerHTML = html;
-        });
-    </script>
+    <div id="menuContainer"></div>
+  <script>
+    fetch('menu.html')
+      .then(response => response.text())
+      .then(html => {
+        document.getElementById('menuContainer').innerHTML = html;
+      });
+  </script>
 
   <section>
     <div>
-      <table>
-        <tr>
-          <td>
-            <div>
+      
               <p class="TITLE">Consulta global de intercambio </p>
-            </div>
-          </td>
-        </tr>
-      </table>
+
       <p><span class="SUBTITULO">Movimiento diario</span> : En este formulario aparecen registradas todas las
         transacciones que han superado exitosamente las validaciones del sistema.</p>
       <p>El formulario contiene las opciones <A href="#Afectado_por" title="Afectado_por" target="_self"

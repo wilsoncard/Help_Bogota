@@ -17,24 +17,20 @@
             <img class="TITLE"  src= "../img/menu.PNG" alt="Botón de Menú ">
         </div>
     </header>
-    <div id="menuContainer"></div>
-    <script>
-      fetch('menu.html')
-        .then(response => response.text())
-        .then(html => {
-          document.getElementById('menuContainer').innerHTML = html;
-        });
-    </script>
+      <div id="menuContainer"></div>
+  <script>
+    fetch('menu.html')
+      .then(response => response.text())
+      .then(html => {
+        document.getElementById('menuContainer').innerHTML = html;
+      });
+  </script>
 
     <section>
         <div> 
-            <table>
-              <tr> 
-                <td><div> 
+            
                     <p  class="TITLE">Usuarios Webservice </p>
-                  </div></td>
-              </tr>
-            </table>
+                  
             <p class="PARRAFO">Se deben  parametrizar los usuarios que van a consumir los servicios web y sus  correspondientes contrase&ntilde;as (se guardan encriptadas en la base de datos con un  algoritmo triple des):.</p>
             <p class="PARRAFO">Para poder consumir el servicio web se debe tener en  cuenta enviar en la cabecera  (Add HTTP Header) el Username y el Password (encriptado), labor que  debe parametrizarse en cada uno de los m&eacute;todos.</p>
            
@@ -56,13 +52,13 @@
               </tr>
            
               <tr>
-              <td class="titletable"><p class="SUBTITULO"><b>Password
-              </b></p></td>
+              <td class="titletable"><p class="SUBTITULO">Password
+              </p></td>
                 <td><p class="PARRAFO">Campo obligatorio que permite seguridad al usuario al ingreso de una unica contrase&ntilde;a personal de ingreso seguro.</p></td>
               </tr>
               <tr>
-               <td class="titletable"><p class="SUBTITULO"><b>Confirmar password
-               </b></p></td>
+               <td class="titletable"><p class="SUBTITULO">Confirmar password
+               </p></td>
                 <td><p class="PARRAFO">Campo obligatorio de confirmaci&oacute;n del password de usuario.</p></td>
               </tr>
             </table>

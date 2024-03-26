@@ -11,172 +11,133 @@
 </head>
 
 <body>
-
   <header>
     <img class="logo" src="../img/logoBankbu_.PNG" alt="Logo de Mi Empresa">
     <div id="menuBtn">
       <img class="TITLE" src="../img/menu.PNG" alt="Botón de Menú ">
     </div>
   </header>
-  <div id="menuContainer"></div>
-    <script>
-      fetch('menu.html')
-        .then(response => response.text())
-        .then(html => {
-          document.getElementById('menuContainer').innerHTML = html;
-        });
-    </script>
+    <div id="menuContainer"></div>
+  <script>
+    fetch('menu.html')
+      .then(response => response.text())
+      .then(html => {
+        document.getElementById('menuContainer').innerHTML = html;
+      });
+  </script>
 
   <section>
     <div>
-      <table>
-        <tr>
-          <td>
-            <div>
-              <p class="TITLE">Redenci&oacute;n de puntos </p>
-            </div>
-          </td>
-        </tr>
-      </table>
-      <p>La presente forma o pantalla tiene una doble funcionalidad, de un lado permite consultar los puntos de que
-        dispone un cliente por tarjeta(s) y, de otro lado, la(s) clase(s) de premio(s) que puede redimir, si los puntos
-        disponibles lo permiten. Los bloques Millas y Premios despliegan datos de acuerdo con el
-        mecanismo de redenci&oacute;n asociado a cada una de las tarjetas que posea el cliente y que hagan parte de
-        alguno de los esquemas de puntaje. As&iacute; mismo, se dispone de un bot&oacute;n especial, descrito al final
-        del documento, que permite la generaci&oacute;n de archivos (interfaces) con informaci&oacute;n sobre las
-        redenciones, principalmente de millas, de forma masiva o individual.</p>
-      <p class="PARRAFO"><span class="SUBTITULO">Filtro:</span>  El formulario cuenta
-        con un filtro inicial de b&uacute;squeda, con los cuales se podr&aacute; realizar la consulta a trav&eacute;s de
-        los campos Tipo y N&uacute;mero de identificaci&oacute;n:</p>
-      <p class="TITLE"><img src="../img/MEF_014B.PNG"></p>
+      
+              <p class="TITLE"> Redención premios</p>
 
+      <p>Este formulario ofrece una doble funcionalidad, de un lado permite conocer la cantidad de puntos de que dispone un cliente por tarjeta(s) y, de otro lado, la(s) clase(s) de premio(s) que puede redimir, si los puntos disponibles lo permiten.</p>
+      <p class="PARRAFO"><span class="SUBTITULO">Filtro:</span>  Al invocarse se despliega en modo consulta o filtro, debiendo disponer de los datos de tipo y número de identificación del tarjetahabiente:</p>
+      <p class="TITLE"><img src="../img/MEF_014B.PNG"></p>
+      <p class="PARRAFO">Una vez activado el botón Buscar, se muestra información en el bloque inferior, además del enlace <a href="#premios">Premios</a>.</p>
+      <p class="TITLE"><img src="../img/MEF_014B6.PNG"></p>
+      <p class="TITLE">Descripción De Campos</p>
       <table>
         <tr>
           <td class="titletable">
             <p class="SUBTITULO">Mecanismo de redenci&oacute;n </span></p>
           </td>
           <td>
-            <p>Campo de salida que muestra el mecanismo asociado al producto en la opci&oacute;n <A
-                  href="MEH_006B.html#BL_MECANISMO">esquemas de puntaje</A> del mismo m&oacute;dulo, y que a
-              excepci&oacute;n del mecanismo de Abono, los datos correspondientes a Millas y
-              Premios son reflejados en los bloques subsiguientes.</p>
+            <p>Campo de salida que muestra el mecanismo asociado al producto en la opción <A
+                  href="MEH_006B.html#BL_MECANISMO">esquemas de puntaje</A> del mismo módulo, y que a excepción del mecanismo de Abono, los datos correspondientes a Millas y Premios son reflejados en los bloques subsiguientes.</p>
           </td>
         </tr>
         <tr>
           <td class="titletable">
-            <p class="SUBTITULO"><b><span>N&uacute;mero de tarjeta </span></b></p>
+            <p class="SUBTITULO">N&uacute;mero de tarjeta </span></p>
           </td>
           <td>
-            <p>Contiene el n&uacute;mero de cada una de las tarjetas que posea el cliente y cuyo producto asociado se
-              encuentre parametrizado en alguno de los <A href="MEH_006B.html">esquemas de puntaje</A>.</p>
+            <p>	
+              Contiene el número de cada una de las tarjetas que posea el cliente y cuyo producto asociado se encuentre parametrizado en alguno de los <A href="MEH_006B.html">esquemas de puntaje</A>.</p>
           </td>
         </tr>
         <tr>
           <td class="titletable">
-            <p class="SUBTITULO"><b><span>Tipo de tarjeta </span></b></p>
+            <p class="SUBTITULO">Tipo de tarjeta </span></p>
           </td>
           <td>
-            <p>Indica la clase tarjeta, Principal o Extendida, asociada al n&uacute;mero anterior.
+            <p>	
+              Indica la clase tarjeta: Principal o Extendida, asociada al número anterior.
             </p>
           </td>
         </tr>
         <tr>
           <td class="titletable">
-            <p class="SUBTITULO"><b><span>Devueltos </span></b></p>
+            <p class="SUBTITULO">Devueltos </span></p>
           </td>
           <td>
-            <p>En este campo aparece la informaci&oacute;n concerniente a los puntos que se han devuelto al cliente por
-              concepto de <A href="MEH_015B.html">reversiones de premios</A> hechos por &eacute;ste bajo
-              cualquier circunstancia v&aacute;lida para tal evento.</p>
+            <p>En este campo aparece la información concerniente a los puntos que se le han reintegrado al cliente por concepto de <A href="MEH_015B.html">reversiones de premios</A>.</p>
           </td>
         </tr>
         <tr>
           <td class="titletable">
-            <p class="SUBTITULO"><b><span>Acumulados</span></b></p>
+            <p class="SUBTITULO">Acumulados</span></p>
           </td>
           <td>
-            <p>En este campo se muestran los puntos disponibles que el cliente posee a la fecha de la redenci&oacute;n
-              de puntos; una vez se grabe la redenci&oacute;n en curso (la que se est&aacute; registrando), la pantalla
-              actualiza el nuevo monto.</p>
-          </td>
-        </tr>
-        <tr>
-          <td class="titletable">
-            <p class="SUBTITULO"><b><span>Puntos</span></b></p>
-          </td>
-          <td>
-            <p>En este campo se refleja la sumatoria o el total de puntos que se har&aacute;n efectivos mediante la
-              redenci&oacute;n, en curso, del premio o las millas.</p>
+            <p>	
+              En este campo se muestran los puntos disponibles que el cliente posee a la fecha de la redención de puntos; una vez se grabe la redención en curso (la que se está registrando), la pantalla actualiza el nuevo monto.</p>
           </td>
         </tr>
       </table>
+      <p class="PARRAFO"><span class="SUBTITULO">Premios:</span>  Al invocarse este enlace, se despliega un formulario en el que, además de ilustrar los diferentes premios (mercancías, electrodomésticos, etc.), u otros beneficios, disponibilidad de existencias para su redención, permitiendo indicar la cantidad de cada uno de ellos, y reflejando el total de puntos a utilizar o deducir, por cada premio. En adición, el formulario cuenta con el enlace Actualizar y con el botón especial Ejecutar redención.</p>
 
-      <p class="PARRAFO">El formulario contiene las opciones Actualizar, Millas y Premios.</p>
-      <p class="PARRAFO"><span class="SUBTITULO">Actualizar:</span>  Si el usuario
-        invoca la opci&oacute;n Actualizar se despliega un nuevo formulario en cual
-        el &uacute;nico campo modificable es Puntos:</p>
       <p class="TITLE"><img src="../img/MEF_014B1.PNG"></p>
 
       <table>
         <tr>
           <td class="titletable">
-            <p class="SUBTITULO"><b><span>Puntos</span></b></p>
+            <p class="SUBTITULO">Premio</span></p>
           </td>
           <td>
-            <p>En este campo la pantalla permite digitar el n&uacute;mero de puntos a redimir por tarjeta, pudiendo
-              as&iacute; utilizar los puntos de otras tarjetas, a su nombre, siempre que el mecanismo de
-              redenci&oacute;n como el monto disponible lo permitan, para redimir un premio o millas en
-              particular. El sistema controla que los puntos a redimir por tarjeta no excedan el valor disponible
-              por cada una.</p>
+            <p>	
+              En este campo, no editable, se muestran los distintos registros creados en la opción <a href="MEH_013B.html">Premios puntaje</a> para, que a partir de esa información el tarjetahabiente, tome la decisión de cómo redimir sus puntos disponibles.</p>
+          </td>
+        </tr>
+        <tr>
+          <td class="titletable">
+            <p class="SUBTITULO">Puntos requeridos</span></p>
+          </td>
+          <td>
+            <p>	
+              En este campo, no editable, se muestra, la cantidad de puntos que se deben restar o descontar del total de puntos disponibles del cliente, por cada unidad del mismo que éste redima, valor definido en la opción <a href="MEH_013B.html">Premios puntaje</a>. </p>
+          </td>
+        </tr>
+        <tr>
+          <td class="titletable">
+            <p class="SUBTITULO">
+              Cantidad</span></p>
+          </td>
+          <td>
+            <p>	
+              Campo numérico, en el que se digita la cantidad de unidades del premio que el cliente desea redimir. </p>
+          </td>
+        </tr>
+        <tr>
+          <td class="titletable">
+            <p class="SUBTITULO">Total puntos premios</span></p>
+          </td>
+          <td>
+            <p>	
+              Campo de salida o no editable, en el que se ilustra el resultado de la operación matemática, de multiplicar la cantidad de  puntos requeridos por el número de unidades del premio que el cliente desea redimir. </p>
           </td>
         </tr>
       </table>
 
-      <p><span class="SUBTITULO">Millas:</span>  Conjunto de campos que adem&aacute;s de ilustrar los diferentes planes
-        de millas disponibles para su redenci&oacute;n, permiten seleccionar la cantidad de cada uno de ellos,
-        reflejando el subtotal por cada plan y el total por este tipo de mecanismo, en el &uacute;ltimo campo de la
-        columna Puntos.</p>
+      <p><span class="SUBTITULO">Actualizar:</span> Al invocar ese enlace, el sistema despliega el siguiente formulario, con los datos del premio desde en cual fue activado, donde el único campo modificable es Inventario y lo que permite es actualizar el saldo de unidades de dicho producto.</p>
       <p class="TITLE"><img src="../img/MEF_014B2.PNG"></p>
 
-      <p><span class="SUBTITULO">Actualizar:</span>  Si el usuario
-        invoca la opci&oacute;n Actualizar se despliega un nuevo formulario en cual
-        el &uacute;nico campo modificable es Cantidad:</p>
-      <p class="TITLE"><img src="../img/MEF_014B3.PNG"></p>
-
       <table>
         <tr>
           <td class="titletable">
-            <p class="SUBTITULO"><b><span>Cantidad</span></span></b></p>
+            <p class="TITLE"><img src="../img/MEF_014B4.PNG"></p>
           </td>
           <td>
-            <p>En este campo la pantalla permite digitar el n&uacute;mero de puntos a redimir por tarjeta, pudiendo
-              as&iacute; utilizar los puntos de otras tarjetas, a su nombre, siempre que el mecanismo de
-              redenci&oacute;n como el monto disponible lo permitan, para redimir un premio o millas en
-              particular. El sistema controla que los puntos a redimir por tarjeta no excedan el valor disponible
-              por cada una.</p>
-          </td>
-        </tr>
-      </table>
-      <p><span class="SUBTITULO">Premios:</span> Conjunto de campos que adem&aacute;s de ilustrar los diferentes premios
-        (mercanc&iacute;as, electrodom&eacute;sticos, etc) disponibles para su redenci&oacute;n, permiten seleccionar la
-        cantidad de cada uno de ellos, reflejando el subtotal por cada premio y el total por este tipo de mecanismo, en
-        el &uacute;ltimo campo de la columna Puntos.</p>
-      <p class="TITLE"><img src="../img/MEF_014B4.PNG"></p>
-
-      <p><span class="SUBTITULO">Actualizar:</span>  Si el usuario
-        invoca la opci&oacute;n Actualizar se despliega un nuevo formulario en cual
-        el &uacute;nico campo modificable es Inventario:</p>
-      <p class="TITLE"><img src="../img/MEF_014B5.PNG"></p>
-
-      <table>
-        <tr>
-          <td class="titletable">
-            <p class="SUBTITULO"><b><span>Inventario</span></b></p>
-          </td>
-          <td>
-            <p>Campo que ilustra la cantidad de premios disponible al momento de la redenci&oacute;n, y se corresponde
-              con el campo Saldo inventario de la opci&oacute;n <A href="MEH_013B.html">Premios
-                  puntaje</A>.</p>
+            <p class="PARRAFO"><span class="SUBTITULO">Ejecutar redención:</span> Al activar este botón, el sistema realiza diferentes validaciones, tales como, que los posibles bloqueos de la tarjeta no sean impedimento, que la cantidad de puntos a redimir no supere el total de puntos disponibles, entre otras.</a></p>
           </td>
         </tr>
       </table>

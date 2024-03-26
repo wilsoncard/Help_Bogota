@@ -1,296 +1,349 @@
 <!DOCTYPE html>
 <html lang="es">
 
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>BANKBU®</title>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BANKBU®</title>
 
-  <link rel="stylesheet" href="../css/pages.css">
-  <link rel="stylesheet" href="../css/style.css">
-  <link rel="icon" href="../img/ACQUIRER-logo.JPG" type="image/x-icon">
-</head>
+    <link rel="stylesheet" href="../css/pages.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="icon" href="../img/ACQUIRER-logo.JPG" type="image/x-icon">
+  </head>
 
-<body>
+  <body>
 
-  <header>
-    <img class="logo" src="../img/logoBankbu_.PNG" alt="Logo de Mi Empresa">
-    <div id="menuBtn">
-      <img class="TITLE" src="../img/menu.PNG" alt="Botón de Menú ">
-    </div>
-  </header>
-  <div id="menuContainer"></div>
+    <header>
+      <img class="logo" src="../img/logoBankbu_.PNG" alt="Logo de Mi Empresa">
+      <div id="menuBtn">
+        <img class="TITLE" src="../img/menu.PNG" alt="Botón de Menú ">
+      </div>
+    </header>
+    <div id="menuContainer"></div>
     <script>
-      fetch('menu.html')
-        .then(response => response.text())
-        .then(html => {
-          document.getElementById('menuContainer').innerHTML = html;
-        });
-    </script>
+    fetch('menu.html')
+      .then(response => response.text())
+      .then(html => {
+        document.getElementById('menuContainer').innerHTML = html;
+      });
+  </script>
 
-  <section>
-    <div>
-      <table>
-        <tr>
-          <td>
-            <div>
-              <p class="TITLE">Segmentaci&oacute;n de establecimientos</p>
-            </div>
-          </td>
-        </tr>
-      </table>
-      <p class="PARRAFO">Mediante esta funci&oacute;n se provee una herramienta de
-        mercadeo que permite la segmentaci&oacute;n de los comercios, mediante la
-        creaci&oacute;n de grupos de informaci&oacute;n sobre los establecimientos
-        de acuerdo con los criterios de selecci&oacute;n que la entidad estime necesarios. </p>
-      <p class="PARRAFO">El formulario contiene las opciones Eliminar, Adicionar y
-        Detalle. Adicionalmente, cuenta con un filtro de b&uacute;squeda, la opci&oacute;n
-        <a href="MEH_007B1.html">Lista de resultados</a>, y un bot&oacute;n para la
-        opci&oacute;n Aplicar.
-      </p>
-      <p class="TITLE"><img src="../img/MEF_007B.PNG"></p>
+    <section>
+      <div>
+        <p class="TITLE">Segmentaci&oacute;n de establecimientos</p>
+              
+        <p class="PARRAFO">Mediante esta funci&oacute;n se provee una
+          herramienta de
+          mercadeo que permite la segmentaci&oacute;n de los comercios, mediante
+          la
+          creaci&oacute;n de grupos de informaci&oacute;n sobre los
+          establecimientos
+          de acuerdo con los criterios de selecci&oacute;n que la entidad estime
+          necesarios. </p>
+        <p class="PARRAFO">El formulario contiene las opciones Eliminar,
+          Adicionar y
+          Detalle. Adicionalmente, cuenta con un filtro de b&uacute;squeda, la
+          opci&oacute;n
+          <a href="MEH_007B1.html">Lista de resultados</a>, y un bot&oacute;n
+          para la
+          opci&oacute;n Aplicar.
+        </p>
+        <p class="TITLE"><img src="../img/MEF_007B.PNG"></p>
 
-      <p><span class="SUBTITULO">Filtro:</span>  Se pueden realizar consultas a trav&eacute;s
-        de la siguiente opci&oacute;n: </p>
-      <p class="TITLE"><img src="../img/MEF_007B1.PNG"></p>
+        <p><span class="SUBTITULO">Filtro:</span> Se pueden realizar consultas a
+          trav&eacute;s
+          de la siguiente opci&oacute;n: </p>
+        <p class="TITLE"><img src="../img/MEF_007B1.PNG"></p>
 
-      <table>
-        <tr>
-          <td class="titletable">
-            <p class="SUBTITULO"><b><span>Nombre
-                  criterio </span></b></p>
-          </td>
-          <td>
-            <p class="PARRAFO">Este
-              campo acepta hasta 4 d&iacute;gitos. El usuario tambi&eacute;n puede
-              seleccionar el criterio invocando la lista de valores contenida en el
-              campo.</p>
-          </td>
-        </tr>
-      </table>
+        <table>
+          <tr>
+            <td class="titletable">
+              <p class="SUBTITULO">Nombre
+                  criterio </span></p>
+            </td>
+            <td>
+              <p class="PARRAFO">Este
+                campo acepta hasta 4 d&iacute;gitos. El usuario tambi&eacute;n
+                puede
+                seleccionar el criterio invocando la lista de valores contenida
+                en el
+                campo.</p>
+            </td>
+          </tr>
+        </table>
 
-      <p class="PARRAFO"><span class="SUBTITULO">Adicionar:</span>  Si el usuario invoca la opci&oacute;n Adicionar se
-        despliega un formulario con los siguientes campos<span>:</span> 
-      </p>
-      <p class="TITLE"><img src="../img/MEF_007B2.PNG"></p>
+        <p class="PARRAFO"><span class="SUBTITULO">Adicionar:</span> Si el
+          usuario invoca la opci&oacute;n Adicionar se
+          despliega un formulario con los siguientes campos:</span>
+        </p>
+        <p class="TITLE"><img src="../img/MEF_007B2.PNG"></p>
 
-      <table>
-        <tr>
-          <td class="titletable">
-            <p class="SUBTITULO"><b>Criterio</b></p>
-          </td>
-          <td>
-            <p class="PARRAFO">La
-              entidad debe definir un nombre con el cual identificar&aacute; dicha
-              informaci&oacute;n cada vez que genere la consulta, si as&iacute; lo
-              requiere.</p>
-          </td>
-        </tr>
-        <tr>
-          <td class="titletable">
-            <p class="SUBTITULO"><b>Establecimiento</b></p>
-          </td>
-          <td>
-            <p class="PARRAFO">Campo
-              en el que se indica el c&oacute;digo del establecimiento que se desea
-              inclu&iacute;r o excluir de la segmentaci&oacute;n a efectuar.</p>
-          </td>
-        </tr>
-        <tr>
-          <td class="titletable">
-            <p class="SUBTITULO">Marca</p>
-          </td>
-          <td>
-            <p class="PARRAFO">Campo
-              con lista de valores de la que se selecciona la<a href="NUH_033B.html">
-                franquicia</a> que debe estar asociada a los establecimientos que se
-              desea inclu&iacute;r o exclu&iacute;r de la segmentaci&oacute;n a efectuar.</p>
-          </td>
-        </tr>
-        <tr>
-          <td class="titletable">
-            <p class="SUBTITULO">Cadena</p>
-          </td>
-          <td>
-            <p class="PARRAFO">En
-              este campo se selecciona de la lista de valores la <a href="ESH_005B.html">cadena</a>
-              a la que deben pertenecer los establecimientos para se inclu&iacute;dos
-              o excluidos de la segmentaci&oacute;n.</p>
-          </td>
-        </tr>
-        <tr>
-          <td class="titletable">
-            <p class="SUBTITULO"><b>Grupo</b></p>
-          </td>
-          <td>
-            <p class="PARRAFO">Campo
-              en el cual se selecciona el <a href="ESH_001B.html">Grupo</a> al que
-              deben pertenecer los establecimientos para ser inclu&iacute;dos o exclu&iacute;dos
-              de la lista.</p>
-          </td>
-        </tr>
-        <tr>
-          <td class="titletable">
-            <p class="SUBTITULO"><b>Servicio</b></p>
-          </td>
-          <td>
-            <p class="PARRAFO">En
-              este campo se determina es <a href="ESH_022B.html">Tipos de servicio</a>
-              al que deben pertenecer los establecimientos para ser inclu&iacute;dos
-              o exclu&iacute;dos de la lista.</p>
-          </td>
-        </tr>
-        <tr>
-          <td class="titletable">
-            <p class="SUBTITULO"><b>Departamento
-                / Ciudad</b></p>
-          </td>
-          <td>
-            <p class="PARRAFO">Este
-              campo permite mediante una lista de valores, poblada por medio de la
-              opci&oacute;n <a href="NUH_003B.html">Informaci&oacute;n geopol&iacute;tica</a>
-              seleccionar el municipio o departamento al que deben pertenecer los
-              establecimientos para ser inclu&iacute;dos o exclu&iacute;dos de la
-              lista.</p>
-          </td>
-        </tr>
-        <tr>
-          <td class="titletable">
-            <p class="SUBTITULO"><b>Fecha
-                de afiliaci&oacute;n</b></p>
-          </td>
-          <td>
-            <p class="PARRAFO">Campo
-              en formato YYYY-MM-DD en el que se indica la fecha de inicio de operaciones
-              del establecimiento con la entidad y permite especificar si la condici&oacute;n
-              a cumplir para ser inclu&iacute;do o exclu&iacute;do de la lista de
-              segmentaci&oacute;n es que la fecha de afiliaci&oacute;n sea igual,
+        <table>
+          <tr>
+            <td class="titletable">
+              <p class="SUBTITULO">Criterio</p>
+            </td>
+            <td>
+              <p class="PARRAFO">La
+                entidad debe definir un nombre con el cual identificar&aacute;
+                dicha
+                informaci&oacute;n cada vez que genere la consulta, si
+                as&iacute; lo
+                requiere.</p>
+            </td>
+          </tr>
+          <tr>
+            <td class="titletable">
+              <p class="SUBTITULO">Establecimiento</p>
+            </td>
+            <td>
+              <p class="PARRAFO">Campo
+                en el que se indica el c&oacute;digo del establecimiento que se
+                desea
+                inclu&iacute;r o excluir de la segmentaci&oacute;n a
+                efectuar.</p>
+            </td>
+          </tr>
+          <tr>
+            <td class="titletable">
+              <p class="SUBTITULO">Marca</p>
+            </td>
+            <td>
+              <p class="PARRAFO">Campo
+                con lista de valores de la que se selecciona la<a
+                  href="NUH_033B.html">
+                  franquicia</a> que debe estar asociada a los establecimientos
+                que se
+                desea inclu&iacute;r o exclu&iacute;r de la segmentaci&oacute;n
+                a efectuar.</p>
+            </td>
+          </tr>
+          <tr>
+            <td class="titletable">
+              <p class="SUBTITULO">Cadena</p>
+            </td>
+            <td>
+              <p class="PARRAFO">En
+                este campo se selecciona de la lista de valores la <a
+                  href="ESH_005B.html">cadena</a>
+                a la que deben pertenecer los establecimientos para se
+                inclu&iacute;dos
+                o excluidos de la segmentaci&oacute;n.</p>
+            </td>
+          </tr>
+          <tr>
+            <td class="titletable">
+              <p class="SUBTITULO">Grupo</p>
+            </td>
+            <td>
+              <p class="PARRAFO">Campo
+                en el cual se selecciona el <a href="ESH_001B.html">Grupo</a> al
+                que
+                deben pertenecer los establecimientos para ser inclu&iacute;dos
+                o exclu&iacute;dos
+                de la lista.</p>
+            </td>
+          </tr>
+          <tr>
+            <td class="titletable">
+              <p class="SUBTITULO">Servicio</p>
+            </td>
+            <td>
+              <p class="PARRAFO">En
+                este campo se determina es <a href="ESH_022B.html">Tipos de
+                  servicio</a>
+                al que deben pertenecer los establecimientos para ser
+                inclu&iacute;dos
+                o exclu&iacute;dos de la lista.</p>
+            </td>
+          </tr>
+          <tr>
+            <td class="titletable">
+              <p class="SUBTITULO">Departamento
+                / Ciudad</p>
+            </td>
+            <td>
+              <p class="PARRAFO">Este
+                campo permite mediante una lista de valores, poblada por medio
+                de la
+                opci&oacute;n <a href="NUH_003B.html">Informaci&oacute;n
+                  geopol&iacute;tica</a>
+                seleccionar el municipio o departamento al que deben pertenecer
+                los
+                establecimientos para ser inclu&iacute;dos o exclu&iacute;dos de
+                la
+                lista.</p>
+            </td>
+          </tr>
+          <tr>
+            <td class="titletable">
+              <p class="SUBTITULO">Fecha
+                de afiliaci&oacute;n</p>
+            </td>
+            <td>
+              <p class="PARRAFO">Campo
+                en formato YYYY-MM-DD en el que se indica la fecha de inicio de
+                operaciones
+                del establecimiento con la entidad y permite especificar si la
+                condici&oacute;n
+                a cumplir para ser inclu&iacute;do o exclu&iacute;do de la lista
+                de
+                segmentaci&oacute;n es que la fecha de afiliaci&oacute;n sea
+                igual,
                 diferente, anterior o posterior a la registrada en este
-              campo.</p>
-          </td>
-        </tr>
-        <tr>
-          <td class="titletable">
-            <p class="SUBTITULO"><b>Estado</b></p>
-          </td>
-          <td>
-            <p class="PARRAFO">En
-              este campo se selecciona de la lista de valores adjunta la condici&oacute;n
-              actual que debe tener el establecimiento (Desafiliado, Inactivo,
+                campo.</p>
+            </td>
+          </tr>
+          <tr>
+            <td class="titletable">
+              <p class="SUBTITULO">Estado</p>
+            </td>
+            <td>
+              <p class="PARRAFO">En
+                este campo se selecciona de la lista de valores adjunta la
+                condici&oacute;n
+                actual que debe tener el establecimiento (Desafiliado, Inactivo,
                 Activo o Nuevo) para ser inclu&iacute;do o exclu&iacute;do
-              de la segmentaci&oacute;n.</p>
-          </td>
-        </tr>
-        <tr>
-          <td class="titletable">
-            <p class="SUBTITULO"><b>Horario</b></p>
-          </td>
-          <td>
-            <p class="PARRAFO">Campo
-              que contiene una lista adjunta de valores de la cual la entidad podr&aacute;
-              definir el horario (Diurno, Nocturno o Ambos) que
-              debe tener el establecimiento para ser inclu&iacute;do o exclu&iacute;do
-              de la lista.</p>
-          </td>
-        </tr>
-        <tr>
-          <td class="titletable">
-            <p class="SUBTITULO">N&uacute;mero
-              promedio de ventas</p>
-          </td>
-          <td>
-            <p class="PARRAFO">En
-              este campo se indica una cantidad promedio de operaciones de consumo
-              como referencia y permite especificar si la condici&oacute;n a cumplir
-              para ser inclu&iacute;do o exclu&iacute;do de la lista de segmentaci&oacute;n
-              es que la cantidad promedio de operaciones del establecimiento sea igual,
+                de la segmentaci&oacute;n.</p>
+            </td>
+          </tr>
+          <tr>
+            <td class="titletable">
+              <p class="SUBTITULO">Horario</p>
+            </td>
+            <td>
+              <p class="PARRAFO">Campo
+                que contiene una lista adjunta de valores de la cual la entidad
+                podr&aacute;
+                definir el horario (Diurno, Nocturno o Ambos) que
+                debe tener el establecimiento para ser inclu&iacute;do o
+                exclu&iacute;do
+                de la lista.</p>
+            </td>
+          </tr>
+          <tr>
+            <td class="titletable">
+              <p class="SUBTITULO">N&uacute;mero
+                promedio de ventas</p>
+            </td>
+            <td>
+              <p class="PARRAFO">En
+                este campo se indica una cantidad promedio de operaciones de
+                consumo
+                como referencia y permite especificar si la condici&oacute;n a
+                cumplir
+                para ser inclu&iacute;do o exclu&iacute;do de la lista de
+                segmentaci&oacute;n
+                es que la cantidad promedio de operaciones del establecimiento
+                sea igual,
                 diferente, menor o mayor al registrado en este campo.</p>
-          </td>
-        </tr>
-        <tr>
-          <td class="titletable">
-            <p class="SUBTITULO"><b>Valor
-                promedio de ventas</b></p>
-          </td>
-          <td>
-            <p class="PARRAFO">Campo
-              en el cual la entidad define un monto de operaciones de consumo como
-              referencia y permite especificar si la condici&oacute;n a cumplir para
-              ser inclu&iacute;do o exclu&iacute;do de la lista de segmentaci&oacute;n
-              es que el promedio de operaciones de consumo del establecimiento sea
-              igual, diferente, menor o mayor al registrado en este
-              campo.
-            </p>
-          </td>
-        </tr>
-        <tr>
-          <td class="titletable">
-            <p class="SUBTITULO"><b>Terminal
-                pos </b></p>
-          </td>
-          <td>
-            <p class="PARRAFO">Este
-              campo indica que el criterio para ser inclu&iacute;do o exclu&iacute;do
-              de la lista es Si o No el establecimiento posee un
-              terminal p.o.s para realizar sus operaciones. Si se selecciona la opci&oacute;n
-              Sin valor significa que la consulta no tendr&aacute; en cuenta
-              este campo y solamente tomar&aacute; en consideraci&oacute;n los dem&aacute;s
-              criterios elegidos por la entidad.
-            </p>
-          </td>
-        </tr>
-        <tr>
-          <td class="titletable">
-            <p class="SUBTITULO">Derecho
-              a propinas</p>
-          </td>
-          <td>
-            <p class="PARRAFO">Este
-              campo indica que el criterio para ser inclu&iacute;do o exclu&iacute;do
-              de la lista es Si o No el establecimiento, dentro
-              de sus operaciones, est&aacute; autorizado para recibir propina. Si
-              se selecciona la opci&oacute;n Sin valor significa que la consulta
-              no tendr&aacute; en cuenta este campo y solamente tomar&aacute; en consideraci&oacute;n
-              los dem&aacute;s criterios elegidos por la entidad.</p>
-          </td>
-        </tr>
-        <tr>
-          <td class="titletable">
-            <p class="SUBTITULO"><b>Retenci&oacute;n</b></p>
-          </td>
-          <td>
-            <p class="PARRAFO">Este
-              campo indica que el criterio para ser inclu&iacute;do o exclu&iacute;do
-              de la lista es Si o No al establecimiento se le practica Retenci&oacute;n
-              en la fuente. Si se selecciona la opci&oacute;n Sin valor significa
-              que la consulta no tendr&aacute; en cuenta este campo y solamente tomar&aacute;
-              en consideraci&oacute;n los dem&aacute;s criterios elegidos por la entidad.</p>
-          </td>
-        </tr>
-      </table>
-      <p class="PARRAFO"><span class="SUBTITULO">Detalle:</span>  Si el usuario invoca la opci&oacute;n Detalle se
-        despliega el siguiente formulario: <span>
+            </td>
+          </tr>
+          <tr>
+            <td class="titletable">
+              <p class="SUBTITULO">Valor
+                promedio de ventas</p>
+            </td>
+            <td>
+              <p class="PARRAFO">Campo
+                en el cual la entidad define un monto de operaciones de consumo
+                como
+                referencia y permite especificar si la condici&oacute;n a
+                cumplir para
+                ser inclu&iacute;do o exclu&iacute;do de la lista de
+                segmentaci&oacute;n
+                es que el promedio de operaciones de consumo del establecimiento
+                sea
+                igual, diferente, menor o mayor al registrado en este
+                campo.
+              </p>
+            </td>
+          </tr>
+          <tr>
+            <td class="titletable">
+              <p class="SUBTITULO">Terminal
+                pos </p>
+            </td>
+            <td>
+              <p class="PARRAFO">Este
+                campo indica que el criterio para ser inclu&iacute;do o
+                exclu&iacute;do
+                de la lista es Si o No el establecimiento posee un
+                terminal p.o.s para realizar sus operaciones. Si se selecciona
+                la opci&oacute;n
+                Sin valor significa que la consulta no tendr&aacute; en cuenta
+                este campo y solamente tomar&aacute; en consideraci&oacute;n los
+                dem&aacute;s
+                criterios elegidos por la entidad.
+              </p>
+            </td>
+          </tr>
+          <tr>
+            <td class="titletable">
+              <p class="SUBTITULO">Derecho
+                a propinas</p>
+            </td>
+            <td>
+              <p class="PARRAFO">Este
+                campo indica que el criterio para ser inclu&iacute;do o
+                exclu&iacute;do
+                de la lista es Si o No el establecimiento, dentro
+                de sus operaciones, est&aacute; autorizado para recibir propina.
+                Si
+                se selecciona la opci&oacute;n Sin valor significa que la
+                consulta
+                no tendr&aacute; en cuenta este campo y solamente tomar&aacute;
+                en consideraci&oacute;n
+                los dem&aacute;s criterios elegidos por la entidad.</p>
+            </td>
+          </tr>
+          <tr>
+            <td class="titletable">
+              <p class="SUBTITULO">Retenci&oacute;n</p>
+            </td>
+            <td>
+              <p class="PARRAFO">Este
+                campo indica que el criterio para ser inclu&iacute;do o
+                exclu&iacute;do
+                de la lista es Si o No al establecimiento se le practica
+                Retenci&oacute;n
+                en la fuente. Si se selecciona la opci&oacute;n Sin valor
+                significa
+                que la consulta no tendr&aacute; en cuenta este campo y
+                solamente tomar&aacute;
+                en consideraci&oacute;n los dem&aacute;s criterios elegidos por
+                la entidad.</p>
+            </td>
+          </tr>
+        </table>
+        <p class="PARRAFO"><span class="SUBTITULO">Detalle:</span> Si el usuario
+          invoca la opci&oacute;n Detalle se
+          despliega el siguiente formulario: 
 
-        </span></p>
-      <p class="TITLE"><img src="../img/MEF_007B3.PNG"></p>
+          </span></p>
+        <p class="TITLE"><img src="../img/MEF_007B3.PNG"></p>
 
-      <p class="PARRAFO"><span class="SUBTITULO">Aplicar:</span>  Una vez
-        definidos los criterios sobre los cuales se evaluar&aacute; la informaci&oacute;n
-        se debe accionar este bot&oacute;n. Posteriormente, los datos obtenidos se
-        reflejar&aacute;n en la opci&oacute;n de resultados. Cada criterio de consulta
-        queda guardado incluyendo sus par&aacute;metros, para que el usuario los pueda
-        consultar, modificar o eliminar.</p>
-      <p class="TITLE"><img src="../img/MEF_007B4-Aplicar.PNG"></p>
-      <p class="TITLE"><img src="../img/MEF_007B5.PNG"></p>
-      <p class="TITLE"><img src="../img/MEF_007B6.PNG"></p>
-      <p class="TITLE"><img src="../img/MEF_007B7.PNG"></p>
-      <p class="TITLE"><img src="../img/MEF_007B8.PNG"></p>
+        <p class="PARRAFO"><span class="SUBTITULO">Aplicar:</span> Una vez
+          definidos los criterios sobre los cuales se evaluar&aacute; la
+          informaci&oacute;n
+          se debe accionar este bot&oacute;n. Posteriormente, los datos
+          obtenidos se
+          reflejar&aacute;n en la opci&oacute;n de resultados. Cada criterio de
+          consulta
+          queda guardado incluyendo sus par&aacute;metros, para que el usuario
+          los pueda
+          consultar, modificar o eliminar.</p>
+        <p class="TITLE"><img src="../img/MEF_007B4-Aplicar.PNG"></p>
+        <p class="TITLE"><img src="../img/MEF_007B5.PNG"></p>
+        <p class="TITLE"><img src="../img/MEF_007B6.PNG"></p>
+        <p class="TITLE"><img src="../img/MEF_007B7.PNG"></p>
+        <p class="TITLE"><img src="../img/MEF_007B8.PNG"></p>
 
-  </section>
-  <script src="../js/menu.js"></script>
-</body>
-<div id="footerContainer"></div>
-<script>
+      </section>
+      <script src="../js/menu.js"></script>
+    </body>
+    <div id="footerContainer"></div>
+    <script>
   fetch('footer.html')
     .then(response => response.text())
     .then(html => {
@@ -298,4 +351,4 @@
     });
 </script>
 
-</html>
+  </html>

@@ -18,26 +18,20 @@
       <img class="TITLE" src="../img/menu.PNG" alt="Botón de Menú ">
     </div>
   </header>
-  <div id="menuContainer"></div>
-    <script>
-      fetch('menu.html')
-        .then(response => response.text())
-        .then(html => {
-          document.getElementById('menuContainer').innerHTML = html;
-        });
-    </script>
+    <div id="menuContainer"></div>
+  <script>
+    fetch('menu.html')
+      .then(response => response.text())
+      .then(html => {
+        document.getElementById('menuContainer').innerHTML = html;
+      });
+  </script>
 
   <section>
     <div>
-      <table>
-        <tr>
-          <td>
-            <div>
+      
               <p class="TITLE">Ingreso / Consulta de cobros</p>
-            </div>
-          </td>
-        </tr>
-      </table>
+
       <p>Mediante esta opci&oacute;n se asigna t&aacute;citamente la gesti&oacute;n de cobro de la obligaci&oacute;n al
         agente que corresponda, toda vez que el sistema valida la parametrizaci&oacute;n previamente efectuada. Por tal
         raz&oacute;n, en caso de intentar ingresar un cobro y despliegue mensaje de error de "Obligaci&oacute;n no se le
@@ -49,13 +43,13 @@
 
       <p class="PARRAFO"><span class="SUBTITULO">Adicionar:</span>  Si
         el usuario invoca la opci&oacute;n Adicionar se despliega un formulario con
-        los siguientes campos<span>:</span></p>
+        los siguientes campos:</span></p>
       <p class="TITLE"><img src="../img/CCF_014B1.PNG"></p>
 
       <table>
         <tr>
           <td class="titletable">
-            <p class="SUBTITULO"><b><span>Tipo de cobro </span></b></p>
+            <p class="SUBTITULO">Tipo de cobro </span></p>
           </td>
           <td>
             <p>Este campo cuenta lista de valores de la que debe seleccionarse la <A href="CCH_002B.html">clase de
@@ -65,7 +59,7 @@
         </tr>
         <tr>
           <td class="titletable">
-            <p class="SUBTITULO"><span>Sucursal</span></p>
+            <p class="SUBTITULO">Sucursal</span></p>
           </td>
           <td>
             <p class="PARRAFO">Campo que posee lista de valores poblada en la opci&oacute;n <A
@@ -76,7 +70,7 @@
         </tr>
         <tr>
           <td class="titletable">
-            <p class="SUBTITULO"><b><span><span>Cliente deudor </span></span></b></p>
+            <p class="SUBTITULO">Cliente deudor </span></span></p>
           </td>
           <td>
             <p class="PARRAFO">Este campo cuenta con lista de valores poblada a trav&eacute;s de la opci&oacute;n <A
@@ -87,7 +81,7 @@
         </tr>
         <tr>
           <td class="titletable">
-            <p class="SUBTITULO"><b><span><span>Moneda obligaci&oacute;n </span></span></b></p>
+            <p class="SUBTITULO">Moneda obligaci&oacute;n </span></span></p>
           </td>
           <td>
             <p>Campo con lista de valores de la que debe seleccionarse el c&oacute;digo de la <A
@@ -98,7 +92,7 @@
         </tr>
         <tr>
           <td class="titletable">
-            <p class="SUBTITULO"><span>N&uacute;mero obligaci&oacute;n </span></p>
+            <p class="SUBTITULO">N&uacute;mero obligaci&oacute;n </span></p>
           </td>
           <td>
             <p class="PARRAFO">Este campo con lista de valores poblada a trav&eacute;s de la opci&oacute;n <A
@@ -109,7 +103,7 @@
         </tr>
         <tr>
           <td class="titletable">
-            <p class="SUBTITULO"><b><span><span>Valor cuota </span></span></b></p>
+            <p class="SUBTITULO">Valor cuota </span></span></p>
           </td>
           <td>
             <p>En este campo num&eacute;rico de 14 d&iacute;gitos m&aacute;s 2 decimales, obligatorio, se registra el
@@ -118,7 +112,7 @@
         </tr>
         <tr>
           <td class="titletable">
-            <p class="SUBTITULO"><b><span><span>Clase de cobro </span></span></b></p>
+            <p class="SUBTITULO">Clase de cobro </span></span></p>
           </td>
           <td>
             <p>Este campo contiene una lista de valores que permite indicar la clase de cobro, las posibles opciones
@@ -127,7 +121,7 @@
         </tr>
         <tr>
           <td class="titletable">
-            <p class="SUBTITULO"><b><span><span>D&iacute;as mora </span></span></b></p>
+            <p class="SUBTITULO">D&iacute;as mora </span></span></p>
           </td>
           <td>
             <p class="PARRAFO">Campo num&eacute;rico de 4 d&iacute;gitos, obligatorio, que permite indicar los
@@ -136,7 +130,7 @@
         </tr>
         <tr>
           <td class="titletable">
-            <p class="SUBTITULO"><b><span><span>Valor mora </span></span></b></p>
+            <p class="SUBTITULO">Valor mora </span></span></p>
           </td>
           <td>
             <p class="PARRAFO">Es este campo num&eacute;rico de 14 d&iacute;gitos contenidos 2 decimales, no
@@ -146,7 +140,7 @@
         </tr>
         <tr>
           <td class="titletable">
-            <p class="SUBTITULO"><b><span><span>Prioridad</span></span></b></p>
+            <p class="SUBTITULO">Prioridad</span></span></p>
           </td>
           <td>
             <p class="PARRAFO">Campo num&eacute;rico de 3 d&iacute;gitos, no obligatorio, en el que se registra el orden
@@ -155,7 +149,7 @@
         </tr>
         <tr>
           <td class="titletable">
-            <p class="SUBTITULO"><b><span><span>Estado cobro </span></span></b></p>
+            <p class="SUBTITULO">Estado cobro </span></span></p>
           </td>
           <td>
             <p>Este campo cuenta con lista de valores adjunta de la que se pueden seleccionar las opciones
@@ -165,7 +159,7 @@
         </tr>
         <tr>
           <td class="titletable">
-            <p class="SUBTITULO"><b><span><span>Fecha ingreso </span></span></b></p>
+            <p class="SUBTITULO">Fecha ingreso </span></span></p>
           </td>
           <td>
             <p class="PARRAFO">Campo en formato YYYY-MM-DD, en el que se registra la fecha en que se alimenta la forma o
@@ -174,7 +168,7 @@
         </tr>
         <tr>
           <td class="titletable">
-            <p class="SUBTITULO"><b><span>Fecha finalizaci&oacute;n </span></b></p>
+            <p class="SUBTITULO">Fecha finalizaci&oacute;n </span></p>
           </td>
           <td>
             <p>En este campo de salida, en formato YYYY-MM-DD, despliega la fecha en que el cobro concluye exitosamente
@@ -184,7 +178,7 @@
       </table>
 
       <p><span class="SUBTITULO">Detalle:</span>  Si el usuario invoca
-        la opci&oacute;n Detalle se despliega el siguiente formulario.<span>
+        la opci&oacute;n Detalle se despliega el siguiente formulario.
 
         </span></p>
       <p class="TITLE"><img src="../img/CCF_014B2.PNG"></p>

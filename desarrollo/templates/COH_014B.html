@@ -1,153 +1,190 @@
 <!DOCTYPE html>
 <html lang="es">
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>BANKBU®</title>
-    <link rel="stylesheet" href="../css/pages.css">
-    <link rel="stylesheet" href="../css/style.css">
-    <link rel="icon" href="../img/ACQUIRER-logo.JPG" type="image/x-icon">
-</head>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>BANKBU®</title>
+        <link rel="stylesheet" href="../css/pages.css">
+        <link rel="stylesheet" href="../css/style.css">
+        <link rel="icon" href="../img/ACQUIRER-logo.JPG" type="image/x-icon">
+    </head>
 
-<body>
+    <body>
 
-    <header>
-        <img class="logo" src="../img/logoBankbu_.PNG" alt="Logo de Mi Empresa">
-        <div id="menuBtn">
-            <img class="TITLE" src="../img/menu.PNG" alt="Botón de Menú ">
-        </div>
-    </header>
-   <div id="menuContainer"></div>
-    <script>
-      fetch('menu.html')
-        .then(response => response.text())
-        .then(html => {
-          document.getElementById('menuContainer').innerHTML = html;
-        });
-    </script>
+        <header>
+            <img class="logo" src="../img/logoBankbu_.PNG"
+                alt="Logo de Mi Empresa">
+            <div id="menuBtn">
+                <img class="TITLE" src="../img/menu.PNG" alt="Botón de Menú ">
+            </div>
+        </header>
+        <div id="menuContainer"></div>
+        <script>
+    fetch('menu.html')
+      .then(response => response.text())
+      .then(html => {
+        document.getElementById('menuContainer').innerHTML = html;
+      });
+  </script>
 
-    <section>
-        <div>
-            <table>
-                <tr>
-                    <td>
-                        <div>
-                            <p class="TITLE">C&oacute;digos de respuesta</p>
-                        </div>
-                    </td>
-                </tr>
-            </table>
-            <p class="PARRAFO">Esta funci&oacute;n se utiliza para definir los c&oacute;digos
-                de respuesta, que pueden ser asignados a las solicitudes de autorizaci&oacute;n
-                que se originen al efectuarse una transacci&oacute;n con tarjeta de cr&eacute;dito
-                (compras o avances en efectivo). El c&oacute;digo de respuesta emitido por
-                el centro de autorizaciones, ser&aacute; determinante en la aceptaci&oacute;n
-                o rechazo de una transacci&oacute;n, y depender&aacute; directamente del estado
-                actual de la tarjeta de cr&eacute;dito.</p>
-            <p class="PARRAFO">El formulario contiene las opciones Actualizar, Eliminar,
-                y Adicionar. Adicionalmente, cuenta con un filtro de b&uacute;squeda.</p>
-            <p class="TITLE"><img src="../img/COF_014B.PNG"></p>
+        <section>
+            <div>
+                <table>
+                    <tr>
+                        <td>
+                            <div>
+                                <p class="TITLE">C&oacute;digos de respuesta</p>
+                            </div>
+                        </td>
+                    </tr>
+                </table>
+                <p class="PARRAFO">Esta funci&oacute;n se utiliza para definir
+                    los c&oacute;digos
+                    de respuesta, que pueden ser asignados a las solicitudes de
+                    autorizaci&oacute;n
+                    que se originen al efectuarse una transacci&oacute;n con
+                    tarjeta de cr&eacute;dito
+                    (compras o avances en efectivo). El c&oacute;digo de
+                    respuesta emitido por
+                    el centro de autorizaciones, ser&aacute; determinante en la
+                    aceptaci&oacute;n
+                    o rechazo de una transacci&oacute;n, y depender&aacute;
+                    directamente del estado
+                    actual de la tarjeta de cr&eacute;dito.</p>
+                <p class="PARRAFO">El formulario contiene las opciones
+                    Actualizar, Eliminar,
+                    y Adicionar. Adicionalmente, cuenta con un filtro de
+                    b&uacute;squeda.</p>
+                <p class="TITLE"><img src="../img/COF_014B.PNG"></p>
 
-            <p><span class="SUBTITULO">Filtro:</span>  Se pueden realizar consultas a trav&eacute;s
-                de las siguientes opciones: </p>
-            <p class="TITLE"><img src="../img/COF_014B3.PNG"></p>
+                <p><span class="SUBTITULO">Filtro:</span> Se pueden realizar
+                    consultas a trav&eacute;s
+                    de las siguientes opciones: </p>
+                <p class="TITLE"><img src="../img/COF_014B3.PNG"></p>
 
-            <p><span class="SUBTITULO">Adicionar:</span>  Si el usuario invoca
-                la opci&oacute;n Adicionar se despliega un formulario con los siguientes campos<span>:</span></p>
-            <p class="TITLE"><img src="../img/COF_014B1.PNG"></p>
+                <p><span class="SUBTITULO">Adicionar:</span> Si el usuario
+                    invoca
+                    la opci&oacute;n Adicionar se despliega un formulario con
+                    los siguientes campos:</span></p>
+                <p class="TITLE"><img src="../img/COF_014B1.PNG"></p>
 
-            <table>
-                <tr>
-                    <td class="titletable">
-                        <p class="SUBTITULO"><b>Interno</b></p>
-                    </td>
-                    <td>
-                        <p class="PARRAFO">Campo
-                            alfanum&eacute;rico de 2 posiciones, obligatorio, el cual corresponde
-                            al c&oacute;digo &uacute;nico que identifica cada respuesta dentro del
-                            Sistema OpenCard. Estos c&oacute;digos no son modificables puesto que
-                            los programas de autorizaciones est&aacute;n dise&ntilde;ados para funcionar
-                            bajo esta codificaci&oacute;n, y cualquier alteraci&oacute;n impedir&aacute;
-                            su normal funcionamiento.</p>
-                    </td>
-                </tr>
-                <tr>
-                    <td class="titletable">
-                        <p class="SUBTITULO"><b>ISO</b></p>
-                    </td>
-                    <td>
-                        <p class="PARRAFO">En
-                            este campo alfanum&eacute;rico de 2 posiciones, obligatorio, se registra
-                            el c&oacute;digo del protocolo est&aacute;ndar universal ISO, dependiendo
-                            del equipo autorizador con quien se realice la operaci&oacute;n. Los
-                            protocolos est&aacute;ndar ISO y BASE24 son universales y la entidad
-                            tiene oportunidad de escoger bajo cu&aacute;l protocolo operar, de tal
-                            manera que es requerido que cualesquiera de los dos campos se encuentren
-                            diligenciados.</p>
-                    </td>
-                </tr>
-                <tr>
-                    <td class="titletable">
-                        <p class="SUBTITULO">Descripci&oacute;n<b><span>
-                                </span></b></p>
-                    </td>
-                    <td>
-                        <p class="PARRAFO">Permite
-                            registrar el detalle o descripci&oacute;n de la respuesta asociada a
-                            cada uno de los c&oacute;digos definidos.</p>
-                    </td>
-                </tr>
-                <tr>
-                    <td class="titletable">
-                        <p class="SUBTITULO">Propio<b><span>
-                                </span></b></p>
-                    </td>
-                    <td>
-                        <p class="PARRAFO">Campo
-                            alfanum&eacute;rico de 6 posiciones, no obligatorio, en el cual e registra
-                            el c&oacute;digo asignado por la entidad para identificar cada respuesta.</p>
-                    </td>
-                </tr>
-                <tr>
-                    <td class="titletable">
-                        <p class="SUBTITULO"><b>Base_24</b></p>
-                    </td>
-                    <td>
-                        <p class="PARRAFO">En
-                            este campo alfanum&eacute;rico de 3 posiciones, obligatorio, se registra
-                            el c&oacute;digo del protocolo est&aacute;ndar universal BASE24, dependiendo
-                            del equipo autorizador con quien se realice la operaci&oacute;n. Los
-                            protocolos est&aacute;ndar ISO y BASE24 son universales y la entidad
-                            tiene oportunidad de escoger bajo cu&aacute;l protocolo operar, de tal
-                            manera que es requerido que cualesquiera de los dos campos se encuentren
-                            diligenciados.</p>
-                    </td>
-                </tr>
-                <tr>
-                    <td class="titletable">
-                        <p class="SUBTITULO"><b>Descripci&oacute;n
-                                interna</b></p>
-                    </td>
-                    <td>
-                        <p class="PARRAFO">Campo
-                            alfanum&eacute;rico de 30 posiciones, no obligatorio, en el que se registra
-                            el significado o implicaci&oacute;n que tiene la codificaci&oacute;n
-                            parametrizada.</p>
-                    </td>
-                </tr>
-            </table>
-            <p class="PARRAFO"><span class="PARRAFO"><span class="SUBTITULO">Actualizar:</span> 
-                    Si el usuario invoca la opci&oacute;n Actualizar se despliega un nuevo formulario
-                    en el cual los &uacute;nicos campos modificables son: ISO, Descripci&oacute;n,
-                    Propio, Base 24, Descripci&oacute;n interna.</span></p>
-            <p class="TITLE"><img src="../img/COF_014B2.PNG"></p>
+                <table>
+                    <tr>
+                        <td class="titletable">
+                            <p class="SUBTITULO">Interno</p>
+                        </td>
+                        <td>
+                            <p class="PARRAFO">Campo
+                                alfanum&eacute;rico de 2 posiciones,
+                                obligatorio, el cual corresponde
+                                al c&oacute;digo &uacute;nico que identifica
+                                cada respuesta dentro del
+                                Sistema OpenCard. Estos c&oacute;digos no son
+                                modificables puesto que
+                                los programas de autorizaciones est&aacute;n
+                                dise&ntilde;ados para funcionar
+                                bajo esta codificaci&oacute;n, y cualquier
+                                alteraci&oacute;n impedir&aacute;
+                                su normal funcionamiento.</p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="titletable">
+                            <p class="SUBTITULO">ISO</p>
+                        </td>
+                        <td>
+                            <p class="PARRAFO">En
+                                este campo alfanum&eacute;rico de 2 posiciones,
+                                obligatorio, se registra
+                                el c&oacute;digo del protocolo est&aacute;ndar
+                                universal ISO, dependiendo
+                                del equipo autorizador con quien se realice la
+                                operaci&oacute;n. Los
+                                protocolos est&aacute;ndar ISO y BASE24 son
+                                universales y la entidad
+                                tiene oportunidad de escoger bajo cu&aacute;l
+                                protocolo operar, de tal
+                                manera que es requerido que cualesquiera de los
+                                dos campos se encuentren
+                                diligenciados.</p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="titletable">
+                            <p class="SUBTITULO">Descripci&oacute;n
+                                </span></p>
+                        </td>
+                        <td>
+                            <p class="PARRAFO">Permite
+                                registrar el detalle o descripci&oacute;n de la
+                                respuesta asociada a
+                                cada uno de los c&oacute;digos definidos.</p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="titletable">
+                            <p class="SUBTITULO">Propio
+                                </span></p>
+                        </td>
+                        <td>
+                            <p class="PARRAFO">Campo
+                                alfanum&eacute;rico de 6 posiciones, no
+                                obligatorio, en el cual e registra
+                                el c&oacute;digo asignado por la entidad para
+                                identificar cada respuesta.</p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="titletable">
+                            <p class="SUBTITULO">Base_24</p>
+                        </td>
+                        <td>
+                            <p class="PARRAFO">En
+                                este campo alfanum&eacute;rico de 3 posiciones,
+                                obligatorio, se registra
+                                el c&oacute;digo del protocolo est&aacute;ndar
+                                universal BASE24, dependiendo
+                                del equipo autorizador con quien se realice la
+                                operaci&oacute;n. Los
+                                protocolos est&aacute;ndar ISO y BASE24 son
+                                universales y la entidad
+                                tiene oportunidad de escoger bajo cu&aacute;l
+                                protocolo operar, de tal
+                                manera que es requerido que cualesquiera de los
+                                dos campos se encuentren
+                                diligenciados.</p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="titletable">
+                            <p class="SUBTITULO">Descripci&oacute;n
+                                interna</p>
+                        </td>
+                        <td>
+                            <p class="PARRAFO">Campo
+                                alfanum&eacute;rico de 30 posiciones, no
+                                obligatorio, en el que se registra
+                                el significado o implicaci&oacute;n que tiene la
+                                codificaci&oacute;n
+                                parametrizada.</p>
+                        </td>
+                    </tr>
+                </table>
+                <p class="PARRAFO"><span class="PARRAFO"><span
+                            class="SUBTITULO">Actualizar:</span>
+                        Si el usuario invoca la opci&oacute;n Actualizar se
+                        despliega un nuevo formulario
+                        en el cual los &uacute;nicos campos modificables son:
+                        ISO, Descripci&oacute;n,
+                        Propio, Base 24, Descripci&oacute;n interna.</span></p>
+                <p class="TITLE"><img src="../img/COF_014B2.PNG"></p>
 
-    </section>
-    <script src="../js/menu.js"></script>
-</body>
-<div id="footerContainer"></div>
-<script>
+            </section>
+            <script src="../js/menu.js"></script>
+        </body>
+        <div id="footerContainer"></div>
+        <script>
   fetch('footer.html')
     .then(response => response.text())
     .then(html => {
@@ -155,4 +192,4 @@
     });
 </script>
 
-</html>
+    </html>

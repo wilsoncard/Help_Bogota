@@ -17,27 +17,21 @@
       <img class="TITLE" src="../img/menu.PNG" alt="Botón de Menú ">
     </div>
   </header>
-  <div id="menuContainer"></div>
-    <script>
-      fetch('menu.html')
-        .then(response => response.text())
-        .then(html => {
-          document.getElementById('menuContainer').innerHTML = html;
-        });
-    </script>
+    <div id="menuContainer"></div>
+  <script>
+    fetch('menu.html')
+      .then(response => response.text())
+      .then(html => {
+        document.getElementById('menuContainer').innerHTML = html;
+      });
+  </script>
 
   <section>
     <div>
-      <table>
-        <tr>
-          <td>
-            <div>
+      
 
-              <p class="TITLE">Cargue de archivo para control de inventario</p>
-            </div>
-          </td>
-        </tr>
-      </table>
+      <p class="TITLE">Cargue de archivo para control de inventario</p>
+
       <p class="PARRAFO">Mediante esta función, se posibilita a la entidad efectuar el cargue del archivo que contiene la información sobre las tarjetas que se encuentran en la etapa de  <a href="PLH_020B.html">Control
             de inventario</a>, permitiendo registrar, masivamente, los números preimpresos de cada uno de los plásticos utilizados durante el realce (embosado), y asociarlos con el número de tarjeta correspondiente. El sistema también permite cargar, mediante este archivo, las tarjetas débito y de renovaciones masivas crédito, que no pasan por la etapa de control de inventario pero que, se deben descargar del <a
             href="PLH_001B.html">inventario</a>, cuando la entidad lleva el control de sus plásticos a través de esta funcionalidad provista por el aplicativo, actualizando para éstas el número de plástico.</p>
@@ -53,8 +47,8 @@
         <table>
           <tr>
             <td class="titletable">
-              <p class="SUBTITULO"><b><span>Nombre
-                    del archivo</span></b></p>
+              <p class="SUBTITULO">Nombre
+                    del archivo</span></p>
             </td>
             <td>
               <p class="PARRAFO">Campo
@@ -69,7 +63,7 @@
       <table>
         <tr>
           <td class="titletable">
-            <p class="SUBTITULO"><b><span>Proveedor</span></span></b></p>
+            <p class="SUBTITULO">Proveedor</span></span></p>
           </td>
           <td>
             <p class="PARRAFO">En este campo obligatorio con lista de valores se selecciona el <a

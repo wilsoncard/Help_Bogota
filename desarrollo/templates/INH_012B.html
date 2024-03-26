@@ -19,24 +19,20 @@
             <img class="TITLE"  src= "../img/menu.PNG" alt="Botón de Menú ">
         </div>
     </header>
-   <div id="menuContainer"></div>
-    <script>
-      fetch('menu.html')
-        .then(response => response.text())
-        .then(html => {
-          document.getElementById('menuContainer').innerHTML = html;
-        });
-    </script>
+      <div id="menuContainer"></div>
+  <script>
+    fetch('menu.html')
+      .then(response => response.text())
+      .then(html => {
+        document.getElementById('menuContainer').innerHTML = html;
+      });
+  </script>
 
     <section>
         <div> 
-            <table>
-              <tr> 
-                <td><div> 
+            
                     <p  class="TITLE">Par&aacute;metros de compensadores</p>
-                  </div></td>
-              </tr>
-            </table>
+                  
             <p  class="PARRAFO"><span class="PARRAFO">En este formulario 
               </span> la entidad puede efectuar el mantenimiento y consulta de la tabla que 
               contiene la parametrizaci&oacute;n de las condiciones de interacci&oacute;n 
@@ -52,8 +48,8 @@
             <p  class="PARRAFO"></p>
             <p  class="PARRAFO">El formulario contiene las opciones Actualizar, 
               Eliminar, Adicionar y Detalle. </p>
-            <p  class="PARRAFO"><span class="SUBTITULO"><b ><span #'font-family:Arial;
-              '>Adicionar</span></b><span >:</span></span><span > 
+            <p  class="PARRAFO"><span class="SUBTITULO"><span #'font-family:Arial;
+              '>Adicionar</span><span >:</span></span><span > 
               si el usuario invoca la opci&oacute;n Adicionar se despliega un formulario 
               con los siguientes campos:</span></p>
             <p class="TITLE"><img src="../img/INF_012E1.PNG"747" ></p>
@@ -61,8 +57,8 @@
             <p  class="TITLE">Descripci&oacute;n de campos</p>
             <table>
               <tr> 
-                <td class="titletable"  ><p class="SUBTITULO"><b><span > 
-                    Compensador</span></b></p></td>
+                <td class="titletable"  ><p class="SUBTITULO"><span > 
+                    Compensador</span></p></td>
                 <td><p  class="PARRAFO">Campo 
                     obligatorio tipo combo en el cual se selecciona el <a href="NUH_054B.html" >compensador</a> 
                     para el cual se est&aacute;n definiendo las condiciones de operaci&oacute;n</p>
@@ -70,8 +66,8 @@
               </tr>
 
               <tr> 
-                <td class="titletable"><p class="SUBTITULO"><b><span > 
-                    Destino movimiento propio</span></b></p></td>
+                <td class="titletable"><p class="SUBTITULO"><span > 
+                    Destino movimiento propio</span></p></td>
                 <td><p  class="PARRAFO">En 
                     este campo tipo combo, obligatorio, se selecciona entre Movimiento 
                     diario e Intercambio el destino del movimiento propio 
@@ -82,15 +78,15 @@
                   </p></td>
               </tr>
               <tr> 
-                <td class="titletable"><p class="SUBTITULO"><b><span > 
-                    Archivo de intercambio</span></b></p></td>
+                <td class="titletable"><p class="SUBTITULO"><span > 
+                    Archivo de intercambio</span></p></td>
                 <td><p  class="PARRAFO">Campo 
                     alfanum&eacute;rico de 30 posiciones, obligatorio, dentro del que se 
-                    registra el nombre del archivo que contiene el movimiento<b><span >.</span></b></p></td>
+                    registra el nombre del archivo que contiene el movimiento<span >.</span></p></td>
               </tr>
               <tr> 
-                <td class="titletable"><p class="SUBTITULO"><b><span > 
-                    Bin destino tarjeta internacional</span></b></p></td>
+                <td class="titletable"><p class="SUBTITULO"><span > 
+                    Bin destino tarjeta internacional</span></p></td>
                 <td><p  class="PARRAFO">Este 
                     campo contiene lista de valores de la que debe seleccionarse el <a href="MEH_001B.html" >prefijo</a> 
                     que centraliza el movimiento generado en el exterior por los tarjetahabientes 
@@ -98,8 +94,8 @@
                   </p></td>
               </tr>
               <tr> 
-                <td class="titletable"  ><p class="SUBTITULO"><b><span >Bin 
-                    centro de proceso</span></b></p></td>
+                <td class="titletable"  ><p class="SUBTITULO"><span >Bin 
+                    centro de proceso</span></p></td>
                 <td><p  class="PARRAFO">Campo 
                     obligatorio que contiene lista de valores de la cual se selecciona que 
                     debe seleccionarse el <a href="MEH_001B.html" >prefijo</a> 
@@ -110,8 +106,8 @@
               </tr>
 
               <tr> 
-                <td class="titletable"  ><p class="SUBTITULO"><b><span >Participa 
-                    conciliaci&oacute;n </span></b></p></td>
+                <td class="titletable"  ><p class="SUBTITULO"><span >Participa 
+                    conciliaci&oacute;n </span></p></td>
                 <td><p  class="PARRAFO">En 
                     este campo tipo combo, obligatorio, se selecciona entre Si o No el movimiento 
                     propio participa en la conciliaci&oacute;n entre el canje enviado y 
@@ -120,8 +116,8 @@
               </tr>
 
               <tr> 
-                <td class="titletable"  ><p class="SUBTITULO"><b><span >Valida 
-                    compra </span></b></p></td>
+                <td class="titletable"  ><p class="SUBTITULO"><span >Valida 
+                    compra </span></p></td>
                 <td><p  class="PARRAFO">Campo 
                     tipo combo donde se puede seleccionar entre Si o No el movimiento de 
                     compras debe ser validado desde el momento de la captura o se omite; 
@@ -133,8 +129,8 @@
               </tr>
 
               <tr> 
-                <td class="titletable"  ><p class="SUBTITULO"><b><span >C&oacute;digo 
-                    identificaci&oacute;n adquirente / emisor</span></b></p></td>
+                <td class="titletable"  ><p class="SUBTITULO"><span >C&oacute;digo 
+                    identificaci&oacute;n adquirente / emisor</span></p></td>
                 <td><p  class="PARRAFO">En 
                     este campo alfanum&eacute;rico de 11 posiciones, no obligatorio, se 
                     registra el c&oacute;digo asignado por American Express para identificar 
@@ -143,8 +139,8 @@
               </tr>
 
               <tr> 
-                <td class="titletable"  ><p class="SUBTITULO"><b><span >C&oacute;digo 
-                    procesador adquirente / emisor</span></b></p></td>
+                <td class="titletable"  ><p class="SUBTITULO"><span >C&oacute;digo 
+                    procesador adquirente / emisor</span></p></td>
                 <td><p  class="PARRAFO">Campo 
                     alfanum&eacute;rico, no obligatorio, de 11 posiciones en el que se registra 
                     el c&oacute;digo asignado por American Express para identificar a los 
@@ -153,7 +149,7 @@
               </tr>
             </table>
 
-            <p class="PARRAFO"><b ><span class="SUBTITULO">Actualizar</span></b>: 
+            <p class="PARRAFO"><span class="SUBTITULO">Actualizar</span>: 
               si el usuario selecciona un registro e invoca la opci&oacute;n Actualizar 
               se despliega un formulario en el cual los &uacute;nico campo NO modificable 
               es el Compensador. Si el destino del movimiento es 'Intercambio' y en en el 
@@ -162,7 +158,7 @@
               ser modificado, hasta tanto se eliminen los registros asociados.</p>
             <p class="TITLE"><img src="../img/INF_012E2.PNG"749" ></p>
             
-            <p class="PARRAFO"><b ><span class="SUBTITULO">Detalle</span></b>: 
+            <p class="PARRAFO"><span class="SUBTITULO">Detalle</span>: 
               si el usuario selecciona un registro e invoca la opci&oacute;n Detalle se 
               despliega un formulario con toda la informaci&oacute;n del registro y en el 
               cual ninguno de sus campos es modificable.</p>
@@ -170,7 +166,7 @@
             
             
             <p  class="PARRAFO"><a name="BL_AGRUPACION"></a><span class="SUBTITULO"><span >
-            Agrupaci&oacute;n</b>:</span></span><span > 
+            Agrupaci&oacute;n:</span></span><span > 
               si el actor invoca el hiperv&iacute;nculo del mismo nombre, se despliega un 
               formulario en el cual la entidad puede parametrizar los templates que permiten 
               identificar los bines a los cuales deben pertenecer las tarjetas para que 
@@ -179,16 +175,16 @@
             
             <p  class="PARRAFO">El formulario contiene las opciones Eliminar 
               y Adicionar </p>
-            <p  class="PARRAFO"><span class="SUBTITULO"><b ><span #'font-family:Arial;
-              '>Adicionar</span></b><span >:</span></span><span > 
+            <p  class="PARRAFO"><span class="SUBTITULO"><span #'font-family:Arial;
+              '>Adicionar</span><span >:</span></span><span > 
               si el usuario invoca la opci&oacute;n Adicionar se despliega un formulario 
               con un &uacute;nico campo:</span></p>
             <p class="TITLE"><img src="../img/INF_012E5.PNG"169" ></p>
             <p  class="TITLE">Descripci&oacute;n de campos</p>
             <table>
               <tr> 
-                <td class="titletable"  ><p class="SUBTITULO"><b><span > 
-                    Template fijo</span></b></p></td>
+                <td class="titletable"  ><p class="SUBTITULO"><span > 
+                    Template fijo</span></p></td>
                 <td><p  class="PARRAFO">Campo 
                     alfanum&eacute;rico de 8 posiciones, obligatorio, dentro del que se 
                     registra el comod&iacute;n que permite filtrar el n&uacute;mero de la 

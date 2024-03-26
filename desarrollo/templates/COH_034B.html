@@ -18,14 +18,14 @@
             <img class="TITLE" src="../img/menu.PNG" alt="Botón de Menú ">
         </div>
     </header>
-   <div id="menuContainer"></div>
-    <script>
-      fetch('menu.html')
-        .then(response => response.text())
-        .then(html => {
-          document.getElementById('menuContainer').innerHTML = html;
-        });
-    </script>
+      <div id="menuContainer"></div>
+  <script>
+    fetch('menu.html')
+      .then(response => response.text())
+      .then(html => {
+        document.getElementById('menuContainer').innerHTML = html;
+      });
+  </script>
 
     <section>
         <div>
@@ -55,7 +55,7 @@
             <table>
                 <tr>
                     <td class="titletable">
-                        <p class="SUBTITULO"><b>Nombre</b></p>
+                        <p class="SUBTITULO">Nombre</p>
                     </td>
                     <td>
                         <p class="PARRAFO">Campo que muestra el nombre de cada uno de los par&aacute;metro o variables
@@ -73,7 +73,6 @@
                     </td>
                 </tr>
             </table>
-            <p src="../img/MEF_002E5.PNG"></p>
     </section>
     <script src="../js/menu.js"></script>
 </body>

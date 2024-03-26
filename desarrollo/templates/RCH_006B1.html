@@ -17,28 +17,23 @@
             <img class="TITLE"  src= "../img/menu.PNG" alt="Botón de Menú ">
         </div>
     </header>
-   <div id="menuContainer"></div>
-    <script>
-      fetch('menu.html')
-        .then(response => response.text())
-        .then(html => {
-          document.getElementById('menuContainer').innerHTML = html;
-        });
-    </script>
+      <div id="menuContainer"></div>
+  <script>
+    fetch('menu.html')
+      .then(response => response.text())
+      .then(html => {
+        document.getElementById('menuContainer').innerHTML = html;
+      });
+  </script>
 
     <section>
         <div> 
-            <table>
-              <tr> 
-                <td><div> 
-                    <p  class="TITLE">Reclamos</p>
-                    </div></td>
-              </tr>
-            </table>
+             <p  class="TITLE">Reclamos</p>
+                    
             <p class="PARRAFO"><span class="SUBTITULO">Asignar reclamos:</span>  Mediante esta funci&oacute;n se asignan manualmente los gestores a los reclamos creados.</p>
             <p class="PARRAFO">Cuando se utiliza esta opci&oacute;n, se despliega el siguiente formulario con un bot&oacute;n para devolverse a la opci&oacute;n principal <a href="RCH_006B.html" >Reclamos</a>.</p>
             <p class="PARRAFO">En este formulario ninguno de los campos desplegados es modificable, excepto el campo Gestor a asignar.</p>
-            <p class="TITLE"><img src="../img/RCF_006B7.PNG"406" height="429"></p>
+            <p class="TITLE"><img src="../img/RCF_006B7.PNG"></p>
             <table>
               <tr> 
                 <td class="titletable"><p class="SUBTITULO">Gestor a asignar</p></td>

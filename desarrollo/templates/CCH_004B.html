@@ -18,24 +18,20 @@
             <img class="TITLE"  src= "../img/menu.PNG" alt="Botón de Menú ">
         </div>
     </header>
-   <div id="menuContainer"></div>
-    <script>
-      fetch('menu.html')
-        .then(response => response.text())
-        .then(html => {
-          document.getElementById('menuContainer').innerHTML = html;
-        });
-    </script>
+      <div id="menuContainer"></div>
+  <script>
+    fetch('menu.html')
+      .then(response => response.text())
+      .then(html => {
+        document.getElementById('menuContainer').innerHTML = html;
+      });
+  </script>
 
     <section>
         <div> 
-            <table>
-              <tr> 
-                <td><div> 
+            
                     <p  class="TITLE">Actividades de cobro </p>
-                    </div></td>
-              </tr>
-            </table>
+                    
             <p>Si la entidad   y/o la casa de cobranza requieren de una herramienta que sirva como mecanismo de   control de gesti&oacute;n y/o para efectuar el pago a los funcionarios por las labores   realizadas, debe parametrizar por medio de esta forma todo el proceso de   cobranza de principio a fin, tan desagregado como se desee. </p>
             <p>El formulario contiene las opciones Actualizar, Eliminar, 
             y Adicionar.</p>
@@ -48,7 +44,7 @@
             
             <table>
               <tr>
-                <td class="titletable"  ><p class="SUBTITULO"><b><span ><span >C&oacute;digo</span></span></b></p></td>
+                <td class="titletable"  ><p class="SUBTITULO"><span ><span >C&oacute;digo</span></span></p></td>
                 <td><p>Campo num&eacute;rico   de 3 d&iacute;gitos, obligatorio, que identifica a cada una de las etapas o pasos que   componen el proceso de una cobranza.</p>      
                 </td>
               </tr>

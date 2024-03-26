@@ -1,149 +1,163 @@
 <!DOCTYPE html>
 <html lang="es">
 
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>BANKBU®</title>
-  <link rel="stylesheet" href="../css/pages.css">
-  <link rel="stylesheet" href="../css/style.css">
-  <link rel="icon" href="../img/ACQUIRER-logo.JPG" type="image/x-icon">
-</head>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BANKBU®</title>
+    <link rel="stylesheet" href="../css/pages.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="icon" href="../img/ACQUIRER-logo.JPG" type="image/x-icon">
+  </head>
 
-<body>
+  <body>
 
-  <header>
-    <img class="logo" src="../img/logoBankbu_.PNG" alt="Logo de Mi Empresa">
-    <div id="menuBtn">
-      <img class="TITLE" src="../img/menu.PNG" alt="Botón de Menú ">
-    </div>
-  </header>
-  <div id="menuContainer"></div>
+    <header>
+      <img class="logo" src="../img/logoBankbu_.PNG" alt="Logo de Mi Empresa">
+      <div id="menuBtn">
+        <img class="TITLE" src="../img/menu.PNG" alt="Botón de Menú ">
+      </div>
+    </header>
+    <div id="menuContainer"></div>
     <script>
-      fetch('menu.html')
-        .then(response => response.text())
-        .then(html => {
-          document.getElementById('menuContainer').innerHTML = html;
-        });
-    </script>
+    fetch('menu.html')
+      .then(response => response.text())
+      .then(html => {
+        document.getElementById('menuContainer').innerHTML = html;
+      });
+  </script>
 
-  <section>
-    <div>
-      <table>
-        <tr>
-          <td>
-            <div>
-              <p class="TITLE">Puertos</p>
-            </div>
-          </td>
-        </tr>
-      </table>
-      <p class="PARRAFO"><span class="SUBTITULO">Direcciones por puerto:</span>  Esta
-        funci&oacute;n hace posible definir la conexi&oacute;n l&oacute;gica entre
-        el sistema operativo central y el enrutador (switch).</p>
-      <p class="PARRAFO">El formulario contiene las opciones Actualizar, Eliminar
-        y Adicionar. Adicionalmente, cuenta con un bot&oacute;n en la parte superior
-        para ir a la opci&oacute;n anterior: <a href="COH_007B.html">Puertos</a>.</p>
-      <p class="TITLE"><img src="../img/COF_007B23.PNG"></p>
+    <section>
+      <div>
+        <p class="TITLE">Puertos</p>
+              
+        <p class="PARRAFO"><span class="SUBTITULO">Direcciones por
+            puerto:</span> Esta
+          funci&oacute;n hace posible definir la conexi&oacute;n l&oacute;gica
+          entre
+          el sistema operativo central y el enrutador (switch).</p>
+        <p class="PARRAFO">El formulario contiene las opciones Actualizar,
+          Eliminar
+          y Adicionar. Adicionalmente, cuenta con un bot&oacute;n en la parte
+          superior
+          para ir a la opci&oacute;n anterior: <a
+            href="COH_007B.html">Puertos</a>.</p>
+        <p class="TITLE"><img src="../img/COF_007B23.PNG"></p>
 
-      <p><span class="SUBTITULO">Adicionar:</span>  Si el usuario invoca
-        la opci&oacute;n Adicionar se despliega un formulario con los siguientes campos<span>:</span> 
-      </p>
-      <p class="TITLE"><img src="../img/COF_007B9.PNG"></p>
+        <p><span class="SUBTITULO">Adicionar:</span> Si el usuario invoca
+          la opci&oacute;n Adicionar se despliega un formulario con los
+          siguientes campos:</span>
+        </p>
+        <p class="TITLE"><img src="../img/COF_007B9.PNG"></p>
 
-      <table>
-        <tr>
-          <td class="titletable"><span class="SUBTITULO">Marca</span></td>
-          <td class="PARRAFO">Campo
-            obligatorio que posee lista de valores poblada mediante la opci&oacute;n <a href="NUH_033B.html">Franquicias
-            </a>del N&uacute;cleo. </td>
-        </tr>
-        <tr>
-          <td class="titletable">
-            <p class="SUBTITULO"><b>Direcci&oacute;n</b></p>
-          </td>
-          <td>
-            <p class="PARRAFO">Campo
-              num&eacute;rico de 2 posiciones, obligatorio, que contiene la direcci&oacute;n
-              de la unidad l&oacute;gica (combinaci&oacute;n de caracteres) con la
-              cual se identificar&aacute; el equipo de la entidad para que se comunique
-              con el autorizador durante el proceso de autorizaciones. </p>
-          </td>
-        </tr>
-        <tr>
-          <td class="titletable">
-            <p class="SUBTITULO"><b>Perfil</b></p>
-          </td>
-          <td>
-            <p class="PARRAFO">Este
-              campo es complementario del anterior y en &eacute;l se determina el
-              perfil o rasgo del puerto.</p>
-          </td>
-        </tr>
-        <tr>
-          <td class="titletable">
-            <p class="SUBTITULO"><b>Direcci&oacute;n
-                host </b></p>
-          </td>
-          <td>
-            <p class="PARRAFO">Contiene
-              el n&uacute;mero de puerto al cual se asociar&aacute; su direcci&oacute;n
-              l&oacute;gica.</p>
-          </td>
-        </tr>
-        <tr>
-          <td class="titletable">
-            <p class="SUBTITULO"><b>Descripci&oacute;n</b></p>
-          </td>
-          <td>
-            <p class="PARRAFO">Este
-              campo contiene el nombre del puerto que se est&aacute; definiendo.</p>
-          </td>
-        </tr>
-        <tr>
-          <td class="titletable">
-            <p class="SUBTITULO"><b>Lectura</b></p>
-          </td>
-          <td>
-            <p class="PARRAFO">Campo
-              con lista de valores de la que se debe seleccionar si el puerto que
-              se est&aacute; definiendo permite lectura bloqueante &oacute; lectura
-              no bloqueante</p>
-          </td>
-        </tr>
-        <tr>
-          <td class="titletable">
-            <p class="SUBTITULO"><b>Tipo
-                de direcci&oacute;n</b></p>
-          </td>
-          <td>
-            <p class="PARRAFO">Este
-              campo indica el esquema entrada/salida que es permitido en la conexi&oacute;n
-              l&oacute;gica.</p>
-          </td>
-        </tr>
-      </table>
-      <p class="PARRAFO"><span class="PARRAFO"><span class="SUBTITULO">Actualizar:</span> 
-          Si el usuario invoca la opci&oacute;n Actualizar se despliega un nuevo formulario
-          en el cual los &uacute;nicos campos modificables son: Perfil, Direcci&oacute;n
-          host, Descripci&oacute;n, Lectura, y Tipo de direcci&oacute;n.</span></p>
-      <p class="TITLE"><img src="../img/COF_007B10.PNG"></p>
+        <table>
+          <tr>
+            <td class="titletable"><span class="SUBTITULO">Marca</span></td>
+            <td class="PARRAFO">Campo
+              obligatorio que posee lista de valores poblada mediante la
+              opci&oacute;n <a href="NUH_033B.html">Franquicias
+              </a>del N&uacute;cleo. </td>
+          </tr>
+          <tr>
+            <td class="titletable">
+              <p class="SUBTITULO">Direcci&oacute;n</p>
+            </td>
+            <td>
+              <p class="PARRAFO">Campo
+                num&eacute;rico de 2 posiciones, obligatorio, que contiene la
+                direcci&oacute;n
+                de la unidad l&oacute;gica (combinaci&oacute;n de caracteres)
+                con la
+                cual se identificar&aacute; el equipo de la entidad para que se
+                comunique
+                con el autorizador durante el proceso de autorizaciones. </p>
+            </td>
+          </tr>
+          <tr>
+            <td class="titletable">
+              <p class="SUBTITULO">Perfil</p>
+            </td>
+            <td>
+              <p class="PARRAFO">Este
+                campo es complementario del anterior y en &eacute;l se determina
+                el
+                perfil o rasgo del puerto.</p>
+            </td>
+          </tr>
+          <tr>
+            <td class="titletable">
+              <p class="SUBTITULO">Direcci&oacute;n
+                host </p>
+            </td>
+            <td>
+              <p class="PARRAFO">Contiene
+                el n&uacute;mero de puerto al cual se asociar&aacute; su
+                direcci&oacute;n
+                l&oacute;gica.</p>
+            </td>
+          </tr>
+          <tr>
+            <td class="titletable">
+              <p class="SUBTITULO">Descripci&oacute;n</p>
+            </td>
+            <td>
+              <p class="PARRAFO">Este
+                campo contiene el nombre del puerto que se est&aacute;
+                definiendo.</p>
+            </td>
+          </tr>
+          <tr>
+            <td class="titletable">
+              <p class="SUBTITULO">Lectura</p>
+            </td>
+            <td>
+              <p class="PARRAFO">Campo
+                con lista de valores de la que se debe seleccionar si el puerto
+                que
+                se est&aacute; definiendo permite lectura bloqueante &oacute;
+                lectura
+                no bloqueante</p>
+            </td>
+          </tr>
+          <tr>
+            <td class="titletable">
+              <p class="SUBTITULO">Tipo
+                de direcci&oacute;n</p>
+            </td>
+            <td>
+              <p class="PARRAFO">Este
+                campo indica el esquema entrada/salida que es permitido en la
+                conexi&oacute;n
+                l&oacute;gica.</p>
+            </td>
+          </tr>
+        </table>
+        <p class="PARRAFO"><span class="PARRAFO"><span
+              class="SUBTITULO">Actualizar:</span>
+            Si el usuario invoca la opci&oacute;n Actualizar se despliega un
+            nuevo formulario
+            en el cual los &uacute;nicos campos modificables son: Perfil,
+            Direcci&oacute;n
+            host, Descripci&oacute;n, Lectura, y Tipo de
+            direcci&oacute;n.</span></p>
+        <p class="TITLE"><img src="../img/COF_007B10.PNG"></p>
 
-      <p><a href="COH_007B.html">Puertos</a><span><b> | </b></span><a href="COH_007B1.html">Validaciones
-          por puerto</a><b><span> | </span></b><a href="COH_007B3.html">L&iacute;mite
-          de autorizaciones</a>
-        <span><b>|</b></span> 
-        <a href="COH_007B5.html">Límite de autorizaciones ContacLess</a>
-        <span><b> | </b></span><a href="COH_007B4.html">Par&aacute;metros
-          valida existencia autorizaci&oacute;n</a><span><b> |</b></span> 
-        <a href="COH_007B5.html">Límite de autorizaciones ContacLess</a>
-      </p>
+        <p><a href="COH_007B.html">Puertos</a> | </span><a
+            href="COH_007B1.html">Validaciones
+            por puerto</a> | </span><a href="COH_007B3.html">L&iacute;mite
+            de autorizaciones</a>
+          |</span>
+          <a href="COH_007B5.html">Límite de autorizaciones ContacLess</a>
+           | </span><a href="COH_007B4.html">Par&aacute;metros
+            valida existencia autorizaci&oacute;n</a> |</span>
+          <a href="COH_007B5.html">Límite de autorizaciones ContacLess</a>
+        </p>
 
-  </section>
-  <script src="../js/menu.js"></script>
-</body>
-<div id="footerContainer"></div>
-<script>
+      </section>
+      <script src="../js/menu.js"></script>
+    </body>
+    <div id="footerContainer"></div>
+    <script>
   fetch('footer.html')
     .then(response => response.text())
     .then(html => {
@@ -151,4 +165,4 @@
     });
 </script>
 
-</html>
+  </html>

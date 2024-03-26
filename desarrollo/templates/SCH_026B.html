@@ -1,153 +1,166 @@
 <!DOCTYPE html>
 <html lang="es">
 
-<head>
+  <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>BANKBU®</title>
     <link rel="stylesheet" href="../css/pages.css">
     <link rel="stylesheet" href="../css/style.css">
- <link rel="icon" href="../img/ACQUIRER-logo.JPG" type="image/x-icon">
-</head>
+    <link rel="icon" href="../img/ACQUIRER-logo.JPG" type="image/x-icon">
+  </head>
 
-<body>
+  <body>
     <header>
-        <img class="logo" src="../img/logoBankbu_.PNG" alt="Logo de Mi Empresa">
-        <div id="menuBtn">
-            <img class="TITLE"  src= "../img/menu.PNG" alt="Botón de Menú ">
-        </div>
+      <img class="logo" src="../img/logoBankbu_.PNG" alt="Logo de Mi Empresa">
+      <div id="menuBtn">
+        <img class="TITLE" src="../img/menu.PNG" alt="Botón de Menú ">
+      </div>
     </header>
-   <div id="menuContainer"></div>
+    <div id="menuContainer"></div>
     <script>
-      fetch('menu.html')
-        .then(response => response.text())
-        .then(html => {
-          document.getElementById('menuContainer').innerHTML = html;
-        });
-    </script>
+    fetch('menu.html')
+      .then(response => response.text())
+      .then(html => {
+        document.getElementById('menuContainer').innerHTML = html;
+      });
+  </script>
 
     <section>
-        <div> 
-            <table>
-              <tr> 
-                <td><div> 
-                    <p  class="TITLE">Novedad bloqueo persona</p>
-                  </div></td>
-              </tr>
-            </table>
-            <p  class="PARRAFO">En este formulario invocado desde la opci&oacute;n 
-              <a href="SCH_075B.html" >ingreso de novedades</a>, (core) 
-              y que aplica exclusivamente para clientes personas naturales, la entidad puede 
-              registrar el fallecimiento o incapacidad legal dictaminada que afecte a cualquiera 
-              de sus clientes.
-            </p>
-            <p class="TITLE"><img src="../img/SCF_026E.PNG"342" ></p>
-            <p  class="PARRAFO">Cuando el bloqueo es por fallecimiento, se 
-              habilitan los campos en los cuales se muestra la informaci&oacute;n adicional 
-              requerida como es la fecha, lugar, acta, entre otros, informaci&oacute;n que 
-              le servir&aacute; de soporte para efectuar las reclamaciones ante las aseguradoras 
-              seg&uacute;n corresponda.
-            </p>
-            <p class="TITLE"><img src="../img/SCF_026E1.PNG"483" ></p>
+      <div>
 
-            <p  class="TITLE">Descripci&oacute;n de campos</p>
-            <table>
-              <tr> 
-                <td class="titletable"><p class="SUBTITULO"><b><span 
-        > 
-                    Bloqueo actual</span></b></p></td>
-                <td><p  class="PARRAFO">En 
-                    este campo tipo combo, obligatorio, se puede seleccionar entre Incapacidad 
-                    total o parcial y Fallecido el <a href="CAH_002B.html" >bloqueo</a> 
-                    tipo persona que se requiere asociar al cliente.</p></td>
-              </tr>
-           
-              <tr> 
-                <td class="titletable"><p class="SUBTITULO"><b><span 
-        >Fecha 
-                    bloqueo actual </span></b></p>
-                  </td>
-                <td><p  class="PARRAFO">Campo 
-                    de salida, se muestra en formato YYYY-MM-DD la fecha de proceso en que 
-                    se est&aacute; ingresando la novedad del bloqueo de pl&aacute;stico. 
-                    Para el caso de bloqueos ya existentes, muestra la fecha en la cual 
-                    se le aplic&oacute; a la tarjeta o cr&eacute;dito
-                  </p></td>
-              </tr>
-           
-              <tr> 
-                <td class="titletable"><p class="SUBTITULO"><b><span 
-        >Fecha 
-                    defunci&oacute;n</span></b></p></td>
-                <td><p  class="PARRAFO">En 
-                    este campo obligatorio, que se habilita cuando el bloqueo es Fallecido, 
-                    se registra en formato YYYY-MM-DD la fecha en la cual se producto el 
-                    deceso del cliente.</p></td>
-              </tr>
-           
-              <tr> 
-                <td class="titletable"><p class="SUBTITULO"><b><span 
-        >N&uacute;mero 
-                    de acta</span></b></p></td>
-                <td><p  class="PARRAFO">Campo 
-                    alfanum&eacute;rico de 20 posiciones, obligatorio, en el cual se registra 
-                    el n&uacute;mero del acta en la que consta la defunci&oacute;n del cliente. 
-                   
-                  </p></td>
-              </tr>
-           
-              <tr> 
-                <td class="titletable"><p class="SUBTITULO"><b><span 
-        >Lugar 
-                    de fallecimiento</span></b></p></td>
-                <td><p  class="PARRAFO">En 
-                    este campo obligatorio con lista de valores, se selecciona la <a href="NUH_003B.html" >ubicaci&oacute;n</a> 
-                    correspondiente a la ciudad en la cual falleci&oacute; el cliente.</p></td>
-              </tr>
-           
-              <tr> 
-                <td class="titletable"><p class="SUBTITULO"><b><span 
-        >Fecha 
-                    env&iacute;o seguro</span></b></p></td>
-                <td><p  class="PARRAFO">Campo 
-                    no obligatorio en formato YYYY-MM-DD en el que se registra la fecha 
-                    en que la entidad inicia los tr&aacute;mites o gestiones ante la compa&ntilde;&iacute;a 
-                    de seguros tendientes a obtener el pago de los saldos insolutos de las 
-                    obligaciones que el cliente fallecido ten&iacute;a con la entidad. </p></td>
-              </tr>
-           
-              <tr> 
-                <td class="titletable"><p class="SUBTITULO"><b><span 
-        >Fecha 
-                    respuesta seguro</span></b></p></td>
-                <td><p  class="PARRAFO">En 
-                    este campo no obligatorio, con formato YYYY-MM-DD se registra la fecha 
-                    en que la compa&ntilde;&iacute;a de seguros emite alguna respuesta a 
-                    la reclamaci&oacute;n presentada por la entidad.</p></td>
-              </tr>
-           
-              <tr> 
-                <td class="titletable"><p class="SUBTITULO"><b><span 
-        >Fecha 
-                    bloqueo actual </span></b></p></td>
-                <td><p  class="PARRAFO">Campo 
-                    de salida, se muestra en formato YYYY-MM-DD la fecha de proceso en que 
-                    se est&aacute; ingresando la novedad del bloqueo del cliente. Para el 
-                    caso de bloqueos ya existentes, muestra la fecha en la cual se le aplic&oacute; 
-                    al cliente.</p></td>
-              </tr>
-            </table>
-        </section>
-    <script src="../js/menu.js"></script>
+        <p class="TITLE">Novedad bloqueo persona</p>
 
-    <div id="footerContainer"></div>
-<script>
+        <p class="PARRAFO">En este formulario invocado desde la opci&oacute;n
+          <a href="SCH_075B.html">ingreso de novedades</a>, (core)
+          y que aplica exclusivamente para clientes personas naturales, la
+          entidad puede
+          registrar el fallecimiento o incapacidad legal dictaminada que afecte
+          a cualquiera
+          de sus clientes.
+        </p>
+        <p class="TITLE"><img src="../img/SCF_026E.PNG"></p>
+        <p class="PARRAFO">Cuando el bloqueo es por fallecimiento, se
+          habilitan los campos en los cuales se muestra la informaci&oacute;n
+          adicional
+          requerida como es la fecha, lugar, acta, entre otros,
+          informaci&oacute;n que
+          le servir&aacute; de soporte para efectuar las reclamaciones ante las
+          aseguradoras
+          seg&uacute;n corresponda.
+        </p>
+        <p class="TITLE"><img src="../img/SCF_026E1.PNG"></p>
+
+        <p class="TITLE">Descripci&oacute;n de campos</p>
+        <table>
+          <tr>
+            <td class="titletable"><p class="SUBTITULO"><span>
+                  Bloqueo actual</span></p></td>
+            <td><p class="PARRAFO">En
+                este campo tipo combo, obligatorio, se puede seleccionar entre
+                Incapacidad
+                total o parcial y Fallecido el <a
+                  href="CAH_002B.html">bloqueo</a>
+                tipo persona que se requiere asociar al cliente.</p></td>
+          </tr>
+
+          <tr>
+            <td class="titletable"><p class="SUBTITULO"><span>Fecha
+                  bloqueo actual </span></p>
+            </td>
+            <td><p class="PARRAFO">Campo
+                de salida, se muestra en formato YYYY-MM-DD la fecha de proceso
+                en que
+                se est&aacute; ingresando la novedad del bloqueo de
+                pl&aacute;stico.
+                Para el caso de bloqueos ya existentes, muestra la fecha en la
+                cual
+                se le aplic&oacute; a la tarjeta o cr&eacute;dito
+              </p></td>
+          </tr>
+
+          <tr>
+            <td class="titletable"><p class="SUBTITULO"><span>Fecha
+                  defunci&oacute;n</span></p></td>
+            <td><p class="PARRAFO">En
+                este campo obligatorio, que se habilita cuando el bloqueo es
+                Fallecido,
+                se registra en formato YYYY-MM-DD la fecha en la cual se
+                producto el
+                deceso del cliente.</p></td>
+          </tr>
+
+          <tr>
+            <td class="titletable"><p class="SUBTITULO"><span>N&uacute;mero
+                  de acta</span></p></td>
+            <td><p class="PARRAFO">Campo
+                alfanum&eacute;rico de 20 posiciones, obligatorio, en el cual se
+                registra
+                el n&uacute;mero del acta en la que consta la defunci&oacute;n
+                del cliente.
+
+              </p></td>
+          </tr>
+
+          <tr>
+            <td class="titletable"><p class="SUBTITULO"><span>Lugar
+                  de fallecimiento</span></p></td>
+            <td><p class="PARRAFO">En
+                este campo obligatorio con lista de valores, se selecciona la <a
+                  href="NUH_003B.html">ubicaci&oacute;n</a>
+                correspondiente a la ciudad en la cual falleci&oacute; el
+                cliente.</p></td>
+          </tr>
+
+          <tr>
+            <td class="titletable"><p class="SUBTITULO"><span>Fecha
+                  env&iacute;o seguro</span></p></td>
+            <td><p class="PARRAFO">Campo
+                no obligatorio en formato YYYY-MM-DD en el que se registra la
+                fecha
+                en que la entidad inicia los tr&aacute;mites o gestiones ante la
+                compa&ntilde;&iacute;a
+                de seguros tendientes a obtener el pago de los saldos insolutos
+                de las
+                obligaciones que el cliente fallecido ten&iacute;a con la
+                entidad. </p></td>
+          </tr>
+
+          <tr>
+            <td class="titletable"><p class="SUBTITULO"><span>Fecha
+                  respuesta seguro</span></p></td>
+            <td><p class="PARRAFO">En
+                este campo no obligatorio, con formato YYYY-MM-DD se registra la
+                fecha
+                en que la compa&ntilde;&iacute;a de seguros emite alguna
+                respuesta a
+                la reclamaci&oacute;n presentada por la entidad.</p></td>
+          </tr>
+
+          <tr>
+            <td class="titletable"><p class="SUBTITULO"><span>Fecha
+                  bloqueo actual </span></p></td>
+            <td><p class="PARRAFO">Campo
+                de salida, se muestra en formato YYYY-MM-DD la fecha de proceso
+                en que
+                se est&aacute; ingresando la novedad del bloqueo del cliente.
+                Para el
+                caso de bloqueos ya existentes, muestra la fecha en la cual se
+                le aplic&oacute;
+                al cliente.</p></td>
+          </tr>
+        </table>
+      </section>
+      <script src="../js/menu.js"></script>
+
+      <div id="footerContainer"></div>
+      <script>
   fetch('footer.html')
     .then(response => response.text())
     .then(html => {
       document.getElementById('footerContainer').innerHTML = html;
     });
 </script>
-</body>
+    </body>
 
-</html>
+  </html>

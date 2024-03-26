@@ -1,123 +1,142 @@
 <!DOCTYPE html>
 <html lang="es">
 
-<head>
+  <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>BANKBU®</title>
     <link rel="stylesheet" href="../css/pages.css">
     <link rel="stylesheet" href="../css/style.css">
- <link rel="icon" href="../img/ACQUIRER-logo.JPG" type="image/x-icon">
-</head>
+    <link rel="icon" href="../img/ACQUIRER-logo.JPG" type="image/x-icon">
+  </head>
 
-<body>
+  <body>
     <header>
-        <img class="logo" src="../img/logoBankbu_.PNG" alt="Logo de Mi Empresa">
-        <div id="menuBtn">
-            <img class="TITLE"  src= "../img/menu.PNG" alt="Botón de Menú ">
-        </div>
+      <img class="logo" src="../img/logoBankbu_.PNG" alt="Logo de Mi Empresa">
+      <div id="menuBtn">
+        <img class="TITLE" src="../img/menu.PNG" alt="Botón de Menú ">
+      </div>
     </header>
-   <div id="menuContainer"></div>
+    <div id="menuContainer"></div>
     <script>
-      fetch('menu.html')
-        .then(response => response.text())
-        .then(html => {
-          document.getElementById('menuContainer').innerHTML = html;
-        });
-    </script>
+    fetch('menu.html')
+      .then(response => response.text())
+      .then(html => {
+        document.getElementById('menuContainer').innerHTML = html;
+      });
+  </script>
 
     <section>
-        <div> 
-            <table>
-              <tr> 
-                <td><div> 
-                    <p  class="TITLE">Par&aacute;metros solicitudes por producto</p>
-                    </div></td>
-              </tr>
-            </table>
-            <p class="PARRAFO"><span class="SUBTITULO">Documentos:</span>  Conjunto de campos 
-              en los que se determinan los documentos que pueden ser requeridos en cada 
-              una de las etapas parametrizadas y se les asigna la caracter&iacute;stica 
-              de obligatoriedad o no acorde al tipo de persona (natural, jur&iacute;dica, 
-              avalista) y su condici&oacute;n (empleado, sin ingresos, independiente); as&iacute; 
-              mismo se determina si su incumplimiento implica el poder pasar a la siguiente 
-              etapa o no, de lo cual queda rastro hist&oacute;rico.</p>
-            <p class="PARRAFO">El formulario contiene las opciones Actualizar, Eliminar, 
-              Adicionar, y Detalle. Adicionalmente, tiene un bot&oacute;n en la parte superior 
-              para volver al formulario anterior: <a href="SOH_001B7b.html">Etapas</a>.</p>
-            <p class="TITLE"><img src="../img/SOF_001B40.PNG"678" ></p>
-            
-            <p  class="PARRAFO"><span class="SUBTITULO">Adicionar:</span>  Si 
-              el usuario invoca la opci&oacute;n Adicionar se despliega un formulario con 
-              los siguientes campos<span 
-        >:</span></p>
-            <p class="TITLE"><img src="../img/SOF_001B41.PNG"531" height="498"></p>
-            
-            <table>
-              <tr> 
-                <td class="titletable"><p class="SUBTITULO">Documento</p></td>
-                <td><p class="PARRAFO">Campo 
-                    que posee lista de valores poblada en la opci&oacute;n Documentos de 
-                    los par&aacute;metros de solicitudes, de la que debe seleccionarse el 
-                    o los diferentes documentos que se requieren anexar a la solicitud.</p>
-                  </td>
-              </tr>
-              <tr> 
-                <td class="titletable"><p class="SUBTITULO">Permite 
-                    pasar siguente etapa
-                  </p></td>
-                <td><p class="PARRAFO">Campo 
-                    en el que se indica si el incumplimiento del requisito, (la no entrega 
-                    del documento respectivo a la entidad), impide pasar a la siguiente 
-                    etapa o no.</p>
-                  </td>
-              </tr>
-              <tr> 
-                <td  class="titletable" ><p class="SUBTITULO">Natural 
-                    empleado / Natural independiente / Natural sin ingresos / Avalista empleado 
-                    / Avalista independiente / Avalista sin ingresos / Representante legal 
-                    / Funcionarios / Empresa / Amparados</p></td>
-                <td><p class="PARRAFO">Este 
-                    conjunto de campos permiten indicar para cada uno de los tipos de documento 
-                    seleccionado en el campo anterior, la clase de restricci&oacute;n o 
-                    condici&oacute;n que debe cumplir en relaci&oacute;n directa al tipo 
-                    de persona y la situaci&oacute;n de la misma, asociadas a la solicitud. 
-                    Las opciones mostradas son No aplica, Obligatorio, y Opcional.</p></td>
-              </tr>
-              <tr> 
-                <td class="titletable"><p class="SUBTITULO">Observaciones</p></td>
-                <td><p class="PARRAFO">En 
-                    este campo se pueden registrar notas relevantes que le brinden elementos 
-                    de juicio a los usuarios del sistema en casos especiales.</p></td>
-              </tr>
-            </table>
+      <div>
 
-            <p  class="PARRAFO"><span class="PARRAFO"><span class="SUBTITULO">Actualizar:</span>  
-              Si el usuario invoca la opci&oacute;n Actualizar se despliega un nuevo formulario 
-              en el cual el &uacute;nico campo no modificable es Documento.</span></p>
-            <p class="TITLE"><img src="../img/SOF_001B42.PNG"531" height="496"></p>
-           
-           
-            <p><a href="SOH_001B7.html">Solicitudes</a><span
-              ><b> | </b></span><a href="SOH_001B7c.html">Cupos 
-              extendidos</a><b><span > | </span></b><a href="SOH_001B7d.html">Relaciones 
-              laborales</a><span
-              ><b> | </b></span><a href="SOH_001B7e.html">Cupos 
-              m&iacute;n y m&aacute;x por rango</a><b><span > 
-              <b>|</b></span></b><span ></span><a href="SOH_001B7f.html">Copiar 
-              par&aacute;metros</a><span ></span></p>
-            
-        </section>
-    <script src="../js/menu.js"></script>
+        <p class="TITLE">Par&aacute;metros solicitudes por producto</p>
 
-    <div id="footerContainer"></div>
-<script>
+        <p class="PARRAFO"><span class="SUBTITULO">Documentos:</span> Conjunto
+          de campos
+          en los que se determinan los documentos que pueden ser requeridos en
+          cada
+          una de las etapas parametrizadas y se les asigna la
+          caracter&iacute;stica
+          de obligatoriedad o no acorde al tipo de persona (natural,
+          jur&iacute;dica,
+          avalista) y su condici&oacute;n (empleado, sin ingresos,
+          independiente); as&iacute;
+          mismo se determina si su incumplimiento implica el poder pasar a la
+          siguiente
+          etapa o no, de lo cual queda rastro hist&oacute;rico.</p>
+        <p class="PARRAFO">El formulario contiene las opciones Actualizar,
+          Eliminar,
+          Adicionar, y Detalle. Adicionalmente, tiene un bot&oacute;n en la
+          parte superior
+          para volver al formulario anterior: <a
+            href="SOH_001B7b.html">Etapas</a>.</p>
+        <p class="TITLE"><img src="../img/SOF_001B40.PNG"></p>
+
+        <p class="PARRAFO"><span class="SUBTITULO">Adicionar:</span> Si
+          el usuario invoca la opci&oacute;n Adicionar se despliega un
+          formulario con
+          los siguientes campos<span>:</span></p>
+        <p class="TITLE"><img src="../img/SOF_001B41.PNG"></p>
+
+        <table>
+          <tr>
+            <td class="titletable"><p class="SUBTITULO">Documento</p></td>
+            <td><p class="PARRAFO">Campo
+                que posee lista de valores poblada en la opci&oacute;n
+                Documentos de
+                los par&aacute;metros de solicitudes, de la que debe
+                seleccionarse el
+                o los diferentes documentos que se requieren anexar a la
+                solicitud.</p>
+            </td>
+          </tr>
+          <tr>
+            <td class="titletable"><p class="SUBTITULO">Permite
+                pasar siguente etapa
+              </p></td>
+            <td><p class="PARRAFO">Campo
+                en el que se indica si el incumplimiento del requisito, (la no
+                entrega
+                del documento respectivo a la entidad), impide pasar a la
+                siguiente
+                etapa o no.</p>
+            </td>
+          </tr>
+          <tr>
+            <td class="titletable"><p class="SUBTITULO">Natural
+                empleado / Natural independiente / Natural sin ingresos /
+                Avalista empleado
+                / Avalista independiente / Avalista sin ingresos / Representante
+                legal
+                / Funcionarios / Empresa / Amparados</p></td>
+            <td><p class="PARRAFO">Este
+                conjunto de campos permiten indicar para cada uno de los tipos
+                de documento
+                seleccionado en el campo anterior, la clase de
+                restricci&oacute;n o
+                condici&oacute;n que debe cumplir en relaci&oacute;n directa al
+                tipo
+                de persona y la situaci&oacute;n de la misma, asociadas a la
+                solicitud.
+                Las opciones mostradas son No aplica, Obligatorio, y
+                Opcional.</p></td>
+          </tr>
+          <tr>
+            <td class="titletable"><p class="SUBTITULO">Observaciones</p></td>
+            <td><p class="PARRAFO">En
+                este campo se pueden registrar notas relevantes que le brinden
+                elementos
+                de juicio a los usuarios del sistema en casos
+                especiales.</p></td>
+          </tr>
+        </table>
+
+        <p class="PARRAFO"><span class="PARRAFO"><span
+              class="SUBTITULO">Actualizar:</span>
+            Si el usuario invoca la opci&oacute;n Actualizar se despliega un
+            nuevo formulario
+            en el cual el &uacute;nico campo no modificable es
+            Documento.</span></p>
+        <p class="TITLE"><img src="../img/SOF_001B42.PNG"></p>
+
+        <p><a href="SOH_001B7.html">Solicitudes</a><span> | </span><a
+            href="SOH_001B7c.html">Cupos
+            extendidos</a><span> | </span><a href="SOH_001B7d.html">Relaciones
+            laborales</a><span> | </span><a href="SOH_001B7e.html">Cupos
+            m&iacute;n y m&aacute;x por rango</a><span>
+            |</span><span></span><a href="SOH_001B7f.html">Copiar
+            par&aacute;metros</a><span></span></p>
+
+      </section>
+      <script src="../js/menu.js"></script>
+
+      <div id="footerContainer"></div>
+      <script>
   fetch('footer.html')
     .then(response => response.text())
     .then(html => {
       document.getElementById('footerContainer').innerHTML = html;
     });
 </script>
-</body>
-
-</html>
+    </body>
+  </html>

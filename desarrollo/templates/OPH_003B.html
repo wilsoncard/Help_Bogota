@@ -17,26 +17,20 @@
       <img class="TITLE" src="../img/menu.PNG" alt="Botón de Menú ">
     </div>
   </header>
-  <div id="menuContainer"></div>
-    <script>
-      fetch('menu.html')
-        .then(response => response.text())
-        .then(html => {
-          document.getElementById('menuContainer').innerHTML = html;
-        });
-    </script>
+    <div id="menuContainer"></div>
+  <script>
+    fetch('menu.html')
+      .then(response => response.text())
+      .then(html => {
+        document.getElementById('menuContainer').innerHTML = html;
+      });
+  </script>
 
   <section>
     <div>
-      <table>
-        <tr>
-          <td>
-            <div>
+      
               <p class="TITLE">Historia automatizaci&oacute;n de procesos</p>
-            </div>
-          </td>
-        </tr>
-      </table>
+
       <p class="PARRAFO">En este formulario la entidad puede consultar
         la informaci&oacute;n hist&oacute;rica de la ejecuci&oacute;n de los diferentes procesos <a
             href="OPH_002B.html" >automatizados.</a></p>
@@ -48,8 +42,8 @@
       <table width=769>
         <tr>
           <td class="SUBTITULO">
-            <p class="SUBTITULO #1"><b>Fecha ejecución
-              </b></p>
+            <p class="SUBTITULO #1">Fecha ejecución
+              </p>
           </td>
           <td class="PARRAFO">
             <p class="PARRAFO #1">Campo que ofrece la funcionalidad de un calendario en el que seleccionar la fecha a la que corresponden los procesos que se desea consultar.</p>
@@ -57,10 +51,10 @@
         </tr>
         <tr>
           <td class="SUBTITULO">
-            <p class="SUBTITULO #1"><b>Estado proceso
+            <p class="SUBTITULO #1">Estado proceso
 
 
-              </b></p>
+              </p>
           </td>
           <td class="PARRAFO">
             <p class="PARRAFO #1">En este campo con lista de valores tipo combo, de la cual es posible seleccionar entre: No ejecutado, Proceso en ejecución, Ejecución parcial, Ejecución total, Proceso pendiente, Ejecución total y en blanco, el estado de los procesos a consultar.
@@ -70,8 +64,8 @@
 
         <tr>
           <td class="titletable">
-            <p class="SUBTITULO"><b>Código grupo
-              </b></p>
+            <p class="SUBTITULO">Código grupo
+              </p>
           </td>
           <td>
             <p class="PARRAFO">Campo con lista de valores de la cual se puede seleccionar el <a href="OPH_001B.html"

@@ -18,26 +18,20 @@
       <img class="TITLE" src="../img/menu.PNG" alt="Botón de Menú ">
     </div>
   </header>
-  <div id="menuContainer"></div>
-    <script>
-      fetch('menu.html')
-        .then(response => response.text())
-        .then(html => {
-          document.getElementById('menuContainer').innerHTML = html;
-        });
-    </script>
+    <div id="menuContainer"></div>
+  <script>
+    fetch('menu.html')
+      .then(response => response.text())
+      .then(html => {
+        document.getElementById('menuContainer').innerHTML = html;
+      });
+  </script>
 
   <section>
     <div>
-      <table>
-        <tr>
-          <td>
-            <div>
+      
               <p class="TITLE">Plan de pago preferencial</p>
-            </div>
-          </td>
-        </tr>
-      </table>
+
       <p class="PARRAFO">Mediante esta función se habilita un centro de autorizaciones
         manual, con el fin de atender los establecimientos a los cuales les es permitido efectuar transacciones de pago
         preferencial.</p>
@@ -50,8 +44,8 @@
       <table>
         <tr>
           <td class="titletable">
-            <p class="SUBTITULO"><b><span>N&uacute;mero
-                  tarjeta </span></b></p>
+            <p class="SUBTITULO">N&uacute;mero
+                  tarjeta </span></p>
           </td>
           <td>
             <p class="PARRAFO">En
@@ -61,7 +55,7 @@
         </tr>
         <tr>
           <td class="titletable">
-            <p class="SUBTITULO"><b>C&oacute;digo alpha </b></p>
+            <p class="SUBTITULO">C&oacute;digo alpha </p>
           </td>
           <td>
             <p class="PARRAFO">Campo obligatorio en el que se registra el n&uacute;mero del c&oacute;digo alpha de la
@@ -70,8 +64,8 @@
         </tr>
         <tr>
           <td class="titletable">
-            <p class="SUBTITULO">Valor<b><span>
-                </span></b></p>
+            <p class="SUBTITULO">Valor
+                </span></p>
           </td>
           <td>
             <p class="PARRAFO">En
@@ -81,8 +75,8 @@
         </tr>
         <tr>
           <td class="titletable">
-            <p class="SUBTITULO">Transacci&oacute;n<b><span>
-                </span></b></p>
+            <p class="SUBTITULO">Transacci&oacute;n
+                </span></p>
           </td>
           <td>
             <p class="PARRAFO">Campo
@@ -93,7 +87,7 @@
         </tr>
         <tr>
           <td class="titletable">
-            <p class="SUBTITULO"><b>Establecimiento</b></p>
+            <p class="SUBTITULO">Establecimiento</p>
           </td>
           <td>
             <p class="PARRAFO">En este campo obligatorio se debe ingresar el c&oacute;digo del establecimiento que
@@ -104,7 +98,7 @@
         </tr>
         <tr>
           <td class="titletable">
-            <p class="SUBTITULO"><b>Moneda</b></p>
+            <p class="SUBTITULO">Moneda</p>
           </td>
           <td>
             <p class="PARRAFO">Campo
@@ -123,8 +117,8 @@
       <table>
         <tr>
           <td class="titletable">
-            <p class="SUBTITULO"><b>N&uacute;mero
-                tarjeta </b></p>
+            <p class="SUBTITULO">N&uacute;mero
+                tarjeta </p>
           </td>
           <td>
             <p class="PARRAFO">Muestra
@@ -134,8 +128,8 @@
         </tr>
         <tr>
           <td class="titletable">
-            <p class="SUBTITULO"><b>Nombre
-                pl&aacute;stico </b></p>
+            <p class="SUBTITULO">Nombre
+                pl&aacute;stico </p>
           </td>
           <td>
             <p class="PARRAFO">Despliega el nombre del cliente a quien pertenece la tarjeta.</p>
@@ -144,7 +138,7 @@
         <tr>
           <td class="titletable">
             <p class="SUBTITULO">Tipo
-              identificaci&oacute;n <b><span></span></b></p>
+              identificaci&oacute;n </p>
           </td>
           <td>
             <p class="PARRAFO">Contiene
@@ -154,7 +148,7 @@
         <tr>
           <td class="titletable">
             <p class="SUBTITULO">N&uacute;mero
-              identificaci&oacute;n <b><span></span></b></p>
+              identificaci&oacute;n </p>
           </td>
           <td>
             <p class="PARRAFO">Indica el n&uacute;mero de documento de identificaci&oacute;n del tarjetahabiente.</p>
@@ -162,8 +156,8 @@
         </tr>
         <tr>
           <td class="titletable">
-            <p class="SUBTITULO"><b>Fecha
-                vencimiento </b></p>
+            <p class="SUBTITULO">Fecha
+                vencimiento </p>
           </td>
           <td>
             <p class="PARRAFO">Muestra
@@ -172,7 +166,7 @@
         </tr>
         <tr>
           <td class="titletable">
-            <p class="SUBTITULO"><b>Transacci&oacute;n</b></p>
+            <p class="SUBTITULO">Transacci&oacute;n</p>
           </td>
           <td>
             <p class="PARRAFO">Despliega la transacci&oacute;n para la cual se est&aacute; solicitando la
@@ -181,7 +175,7 @@
         </tr>
         <tr>
           <td class="titletable">
-            <p class="SUBTITULO"><b>Moneda</b></p>
+            <p class="SUBTITULO">Moneda</p>
           </td>
           <td>
             <p class="PARRAFO">Contiene la moneda en la cual se denomina la transacci&oacute;n que se est&aacute;
@@ -190,8 +184,8 @@
         </tr>
         <tr>
           <td class="titletable">
-            <p class="SUBTITULO"><b>Valor
-                transacci&oacute;n</b></p>
+            <p class="SUBTITULO">Valor
+                transacci&oacute;n</p>
           </td>
           <td>
             <p class="PARRAFO">Indica el monto por el cual se solicita la autorizaci&oacute;n </p>
@@ -199,7 +193,7 @@
         </tr>
         <tr>
           <td class="titletable">
-            <p class="SUBTITULO"><b>Establecimiento</b></p>
+            <p class="SUBTITULO">Establecimiento</p>
           </td>
           <td>
             <p class="PARRAFO">Despliega el c&oacute;digo y nombre el establecimiento que solicita la
@@ -208,7 +202,7 @@
         </tr>
         <tr>
           <td class="titletable">
-            <p class="SUBTITULO"><b>Horario</b></p>
+            <p class="SUBTITULO">Horario</p>
           </td>
           <td>
             <p class="PARRAFO">Campo
@@ -230,8 +224,8 @@
         </tr>
         <tr>
           <td class="titletable">
-            <p class="SUBTITULO"><b>Raz&oacute;n
-                social </b></p>
+            <p class="SUBTITULO">Raz&oacute;n
+                social </p>
           </td>
           <td>
             <p class="PARRAFO">Muestra
@@ -241,7 +235,7 @@
         </tr>
         <tr>
           <td class="titletable">
-            <p class="SUBTITULO"><b>Servicio</b></p>
+            <p class="SUBTITULO">Servicio</p>
           </td>
           <td>
             <p class="PARRAFO">Despliega
@@ -252,7 +246,7 @@
         </tr>
         <tr>
           <td class="titletable">
-            <p class="SUBTITULO"><b>Convenio</b></p>
+            <p class="SUBTITULO">Convenio</p>
           </td>
           <td>
             <p class="PARRAFO">Campo
@@ -274,8 +268,8 @@
       <table>
         <tr>
           <td class="titletable">
-            <p class="SUBTITULO"><b>C&oacute;digo
-                respuesta </b></p>
+            <p class="SUBTITULO">C&oacute;digo
+                respuesta </p>
           </td>
           <td>
             <p class="PARRAFO">Corresponde

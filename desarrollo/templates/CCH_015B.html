@@ -18,26 +18,20 @@
       <img class="TITLE" src="../img/menu.PNG" alt="Botón de Menú ">
     </div>
   </header>
-  <div id="menuContainer"></div>
-    <script>
-      fetch('menu.html')
-        .then(response => response.text())
-        .then(html => {
-          document.getElementById('menuContainer').innerHTML = html;
-        });
-    </script>
+    <div id="menuContainer"></div>
+  <script>
+    fetch('menu.html')
+      .then(response => response.text())
+      .then(html => {
+        document.getElementById('menuContainer').innerHTML = html;
+      });
+  </script>
 
   <section>
     <div>
-      <table>
-        <tr>
-          <td>
-            <div>
+      
               <p class="TITLE">Actividades por agente de cobro</p>
-            </div>
-          </td>
-        </tr>
-      </table>
+
       <p>A trav&eacute;s de la ejecuci&oacute;n de esta opci&oacute;n el sistema asigna el agente de cobro a las
         diversas obligaciones que han sido registradas para tal fin. La asignaci&oacute;n se realiza teniendo en cuenta
         varios de los par&aacute;metros definidos en todo el men&uacute;. </p>
@@ -47,7 +41,7 @@
       <table>
         <tr>
           <td class="titletable">
-            <p class="SUBTITULO"><b><span><span>Tipo de asignaci&oacute;n </span></span></b></p>
+            <p class="SUBTITULO">Tipo de asignaci&oacute;n </span></span></p>
           </td>
           <td>
             <p>Lista de valores con las siguientes opciones: </p>
@@ -74,7 +68,7 @@
         </tr>
         <tr>
           <td class="titletable">
-            <p class="SUBTITULO"><b><span><span>Tipo de cobro </span></span></b></p>
+            <p class="SUBTITULO">Tipo de cobro </span></span></p>
           </td>
           <td>
             <p class="PARRAFO">Este campo cuenta con lista de valores poblada en la opci&oacute;n del mismo nombre y que
@@ -83,7 +77,7 @@
         </tr>
         <tr>
           <td class="titletable">
-            <p class="SUBTITULO"><b><span><span>Agente</span></span></b></p>
+            <p class="SUBTITULO">Agente</span></span></p>
           </td>
           <td>
             <p>Campo con lista de valores poblada en la opci&oacute;n <A href="CCH_001B.html">Agentes de

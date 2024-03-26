@@ -1,133 +1,152 @@
 <!DOCTYPE html>
 <html lang="es">
 
-<head>
+  <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>BANKBU®</title>
 
     <link rel="stylesheet" href="../css/pages.css">
     <link rel="stylesheet" href="../css/style.css">
- <link rel="icon" href="../img/ACQUIRER-logo.JPG" type="image/x-icon">
-</head>
+    <link rel="icon" href="../img/ACQUIRER-logo.JPG" type="image/x-icon">
+  </head>
 
-<body>
+  <body>
 
     <header>
-        <img class="logo" src="../img/logoBankbu_.PNG" alt="Logo de Mi Empresa">
-        <div id="menuBtn">
-            <img class="TITLE"  src= "../img/menu.PNG" alt="Botón de Menú ">
-        </div>
+      <img class="logo" src="../img/logoBankbu_.PNG" alt="Logo de Mi Empresa">
+      <div id="menuBtn">
+        <img class="TITLE" src="../img/menu.PNG" alt="Botón de Menú ">
+      </div>
     </header>
-   <div id="menuContainer"></div>
+    <div id="menuContainer"></div>
     <script>
-      fetch('menu.html')
-        .then(response => response.text())
-        .then(html => {
-          document.getElementById('menuContainer').innerHTML = html;
-        });
-    </script>
+    fetch('menu.html')
+      .then(response => response.text())
+      .then(html => {
+        document.getElementById('menuContainer').innerHTML = html;
+      });
+  </script>
 
     <section>
-        <div> 
-            <table>
-              <tr> 
-                <td><div> 
-                    <p  class="TITLE">Consulta de movimientos</p>
-                    </div></td>
-              </tr>
-            </table>
-            <p class="PARRAFO"><span class="PARRAFO"><span class="SUBTITULO">Intercambio:</span>  
-              </span> Contiene el movimiento de las transacciones tanto originales como no 
-              originales que ingresan al sistema y que luego hacen parte del Canje enviado.</p>
-            <p class="PARRAFO">El formulario cuenta con la opci&oacute;n Detalle, sumado 
-              a las siguientes opciones<span class="PARRAFO">:</span>  
-              <a href="INH_040B1.html"></a> 
-              <a href="INH_040B1.html">Movimiento diario</a>, <a href="INH_040B2.html">Fraudes</a>, 
-              <a href="INH_006B5.html"></a><a href="INH_040B3.html">Pendientes</a>, <a href="INH_006B6.html"></a><a href="INH_040B4.html">Rechazo 
-              cargue</a>, <a href="INH_040B5.html">Contracargos</a>, <a href="INH_040B6.html">Efectos 
-              al cobro</a>, <a href="INH_006B9.html"></a><a href="INH_040B8.html">Rechazo 
-              cargue convenios</a>, y <a href="INH_040B.html">Ver par&aacute;metros</a>.</p>
-            <p class="TITLE"><img src="../img/INF_040B7.PNG"799" height="513"></p>
-           
-            <table>
-              <tr> 
-                <td  class="titletable" ><p class="SUBTITULO">Bin</p></td>
-                <td><p class="PARRAFO">Contiene 
-                    el n&uacute;mero del prefijo o bin que identifica la entidad receptora 
-                    o destino de la transacci&oacute;n.</p></td>
-              </tr>
-              <tr> 
-                <td class="titletable"><p class="SUBTITULO">N&uacute;mero 
-                    tarjeta </p></td>
-                <td><p class="PARRAFO">Rese&ntilde;a 
-                    el n&uacute;mero de la tarjeta a trav&eacute;s de la que se realiz&oacute; 
-                    el consumo o utilizaci&oacute;n.</p></td>
-              </tr>
-              <tr> 
-                <td  class="titletable" ><p class="SUBTITULO">Moneda</p></td>
-                <td><p class="PARRAFO">Despliega 
-                    la abreviatura definida por la franquicia que identifica <a href="NUH_005B.html">Moneda</a> 
-                    original de la transacci&oacute;n.</p></td>
-              </tr>
-              <tr> 
-                <td class="titletable"> 
-                  <p class="SUBTITULO">Nombre establecimiento</p></td>
-                <td><p class="PARRAFO">Muestra 
-                    el c&oacute;digo &uacute;nico que identifica el establecimiento en que 
-                    se realiz&oacute; la utilizaci&oacute;n o consumo.</p></td>
-              </tr>
-              <tr> 
-                <td class="titletable"><p class="SUBTITULO">Valor 
-                    intercambio </p></td>
-                <td><p>Contiene el valor 
-                    neto (valor compra m&aacute;s valor IVA m&aacute;s propina menos valor 
-                    descuento o comisi&oacute;n) de la transacci&oacute;n.</p></td>
-              </tr>
-              <tr> 
-                <td class="titletable"><p class="SUBTITULO">Devoluci&oacute;n</p></td>
-                <td><p class="PARRAFO">Despliega 
-                    la descripci&oacute;n del motivo por el cual una transacci&oacute;n 
-                    es rechazada o devuelta, con base en la definici&oacute;n de motivos 
-                    hecha por las franquicias.</p></td>
-              </tr>
-            </table>
-            <p><span class="SUBTITULO">Detalle:</span>  Si el usuario invoca la opci&oacute;n 
-              Detalle se despliega un formulario con los bloques: Recepci&oacute;n, Valores, 
-              Datos transacci&oacute;n, Establecimiento, N&uacute;mero terminal, y Datos 
-              pago.</p>
-            <p>Este formulario permite la consulta de las transacciones tanto originales 
-              como no originales que ingresan al sistema y que luego hacen parte del Canje 
-              enviado o Canje recibido.</p>
-            <p class="TITLE"><img src="../img/INF_006B20.PNG"></p>
-            
-            <p><span class="SUBTITULO">Localizaci&oacute;n:</span>  Adicionalmente, 
-              cuenta con un globo de localizaci&oacute;n que muestra los siguientes campos:</p>
-            <p class="TITLE"><img src="../img/INF_006B14.PNG"></p>
-            
-            <p><a href="INH_040B1.html">Movimiento 
-              diario</a><b><span > 
-              | </span></b><a href="INH_006B3.html"></a><a href="INH_040B2.html">Fraudes</a><span
-              ><b> | </b></span><a href="INH_006B5.html"></a><a href="INH_040B3.html">Pendientes</a> 
-              <span
-              ><b>| </b></span><a href="INH_040B4.html">Rechazo 
-              cargue</a><span
-              ><b> | </b></span>  <a href="INH_040B5.html">Contracargos</a><a href="INH_040B6.html">Efectos 
-              al cobro</a><span
-              ><b> | </b></span><a href="INH_006B9.html"></a><a href="INH_040B8.html">Rechazo 
-              cargue convenios</a><span
-              ><b> | </b></span>  <a href="INH_040B5.html"></a> 
-              <a href="INH_040B.html">Ver par&aacute;metros</a></p>
-            
-        </section>
-    <script src="../js/menu.js"></script>
-</body>
-<div id="footerContainer"></div>
-<script>
+      <div>
+
+        <p class="TITLE">Consulta de movimientos</p>
+
+        <p class="PARRAFO"><span class="PARRAFO"><span
+              class="SUBTITULO">Intercambio:</span>
+          </span> Contiene el movimiento de las transacciones tanto originales
+          como no
+          originales que ingresan al sistema y que luego hacen parte del Canje
+          enviado.</p>
+        <p class="PARRAFO">El formulario cuenta con la opci&oacute;n Detalle,
+          sumado
+          a las siguientes opciones<span class="PARRAFO">:</span>
+          <a href="INH_040B1.html"></a>
+          <a href="INH_040B1.html">Movimiento diario</a>, <a
+            href="INH_040B2.html">Fraudes</a>,
+          <a href="INH_006B5.html"></a><a href="INH_040B3.html">Pendientes</a>,
+          <a href="INH_006B6.html"></a><a href="INH_040B4.html">Rechazo
+            cargue</a>, <a href="INH_040B5.html">Contracargos</a>, <a
+            href="INH_040B6.html">Efectos
+            al cobro</a>, <a href="INH_006B9.html"></a><a
+            href="INH_040B8.html">Rechazo
+            cargue convenios</a>, y <a href="INH_040B.html">Ver
+            par&aacute;metros</a>.</p>
+        <p class="TITLE"><img src="../img/INF_040B7.PNG"></p>
+
+        <table>
+          <tr>
+            <td class="titletable"><p class="SUBTITULO">Bin</p></td>
+            <td><p class="PARRAFO">Contiene
+                el n&uacute;mero del prefijo o bin que identifica la entidad
+                receptora
+                o destino de la transacci&oacute;n.</p></td>
+          </tr>
+          <tr>
+            <td class="titletable"><p class="SUBTITULO">N&uacute;mero
+                tarjeta </p></td>
+            <td><p class="PARRAFO">Rese&ntilde;a
+                el n&uacute;mero de la tarjeta a trav&eacute;s de la que se
+                realiz&oacute;
+                el consumo o utilizaci&oacute;n.</p></td>
+          </tr>
+          <tr>
+            <td class="titletable"><p class="SUBTITULO">Moneda</p></td>
+            <td><p class="PARRAFO">Despliega
+                la abreviatura definida por la franquicia que identifica <a
+                  href="NUH_005B.html">Moneda</a>
+                original de la transacci&oacute;n.</p></td>
+          </tr>
+          <tr>
+            <td class="titletable">
+              <p class="SUBTITULO">Nombre establecimiento</p></td>
+            <td><p class="PARRAFO">Muestra
+                el c&oacute;digo &uacute;nico que identifica el establecimiento
+                en que
+                se realiz&oacute; la utilizaci&oacute;n o consumo.</p></td>
+          </tr>
+          <tr>
+            <td class="titletable"><p class="SUBTITULO">Valor
+                intercambio </p></td>
+            <td><p>Contiene el valor
+                neto (valor compra m&aacute;s valor IVA m&aacute;s propina menos
+                valor
+                descuento o comisi&oacute;n) de la transacci&oacute;n.</p></td>
+          </tr>
+          <tr>
+            <td class="titletable"><p
+                class="SUBTITULO">Devoluci&oacute;n</p></td>
+            <td><p class="PARRAFO">Despliega
+                la descripci&oacute;n del motivo por el cual una
+                transacci&oacute;n
+                es rechazada o devuelta, con base en la definici&oacute;n de
+                motivos
+                hecha por las franquicias.</p></td>
+          </tr>
+        </table>
+        <p><span class="SUBTITULO">Detalle:</span> Si el usuario invoca la
+          opci&oacute;n
+          Detalle se despliega un formulario con los bloques: Recepci&oacute;n,
+          Valores,
+          Datos transacci&oacute;n, Establecimiento, N&uacute;mero terminal, y
+          Datos
+          pago.</p>
+        <p>Este formulario permite la consulta de las transacciones tanto
+          originales
+          como no originales que ingresan al sistema y que luego hacen parte del
+          Canje
+          enviado o Canje recibido.</p>
+        <p class="TITLE"><img src="../img/INF_006B20.PNG"></p>
+
+        <p><span class="SUBTITULO">Localizaci&oacute;n:</span> Adicionalmente,
+          cuenta con un globo de localizaci&oacute;n que muestra los siguientes
+          campos:</p>
+        <p class="TITLE"><img src="../img/INF_006B14.PNG"></p>
+
+        <p><a href="INH_040B1.html">Movimiento
+            diario</a><span>
+            | </span><a href="INH_006B3.html"></a><a
+            href="INH_040B2.html">Fraudes</a><span> | </span><a
+            href="INH_006B5.html"></a><a href="INH_040B3.html">Pendientes</a>
+          <span>| </span><a href="INH_040B4.html">Rechazo
+            cargue</a><span> | </span> <a
+            href="INH_040B5.html">Contracargos</a><a
+            href="INH_040B6.html">Efectos
+            al cobro</a><span> | </span><a href="INH_006B9.html"></a><a
+            href="INH_040B8.html">Rechazo
+            cargue convenios</a><span> | </span> <a href="INH_040B5.html"></a>
+          <a href="INH_040B.html">Ver par&aacute;metros</a></p>
+
+      </section>
+      <script src="../js/menu.js"></script>
+    </body>
+    <div id="footerContainer"></div>
+    <script>
   fetch('footer.html')
     .then(response => response.text())
     .then(html => {
       document.getElementById('footerContainer').innerHTML = html;
     });
 </script>
-</html>
+  </html>

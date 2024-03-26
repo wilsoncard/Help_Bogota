@@ -1,522 +1,537 @@
 <!DOCTYPE html>
 <html lang="es">
 
-<head>
+  <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>BANKBU®</title>
     <link rel="stylesheet" href="../css/pages.css">
     <link rel="stylesheet" href="../css/style.css">
- <link rel="icon" href="../img/ACQUIRER-logo.JPG" type="image/x-icon">
-</head>
+    <link rel="icon" href="../img/ACQUIRER-logo.JPG" type="image/x-icon">
+  </head>
 
-<body>
+  <body>
     <header>
-        <img class="logo" src="../img/logoBankbu_.PNG" alt="Logo de Mi Empresa">
-        <div id="menuBtn">
-            <img class="TITLE"  src= "../img/menu.PNG" alt="Botón de Menú ">
-        </div>
+      <img class="logo" src="../img/logoBankbu_.PNG" alt="Logo de Mi Empresa">
+      <div id="menuBtn">
+        <img class="TITLE" src="../img/menu.PNG" alt="Botón de Menú ">
+      </div>
     </header>
-   <div id="menuContainer"></div>
+    <div id="menuContainer"></div>
     <script>
-      fetch('menu.html')
-        .then(response => response.text())
-        .then(html => {
-          document.getElementById('menuContainer').innerHTML = html;
-        });
-    </script>
+    fetch('menu.html')
+      .then(response => response.text())
+      .then(html => {
+        document.getElementById('menuContainer').innerHTML = html;
+      });
+  </script>
 
     <section>
-        <div> 
-            <table>
-              <tr> 
-                <td><div> 
-                    <p  class="TITLE">M&aacute;s informaci&oacute;n</p>
-                  </div></td>
-              </tr>
-            </table>
-            <p  class="PARRAFO">En este formulario que se invoca desde el 
-              <a href="SCH_060B.html" >detalle consulta de la tarjeta</a>, 
-              la entidad puede consultar la informaci&oacute;n adicional de car&aacute;cter 
-              general para la tarjeta y relacionada con extractos, calificaciones, cuenta 
-              para d&eacute;bito autom&aacute;tico, informaci&oacute;n del cdt que garantiza 
-              el cr&eacute;dito entre otros datos.</p>
-            <p  class="PARRAFO">La opci&oacute;n est&aacute; estructurada 
-              en varios bloques que contienen en su mayor&iacute;a de 2 a 6 campos y que 
-              agrupan la informaci&oacute;n para facilitarle al usuario la consulta de los 
-              datos correspondientes.</p>
-            <p class="TITLE"><img src="../img/SCF_072E.PNG"420" height="951"></p>
-            <p  class="TITLE">Descripción de campos</p>
-            <table>
-              <tr> 
-                <td    > 
-                  <p class="SUBTITULO"><b>Nivel detalle extracto</b></p></td>
-                <td><p  class="PARRAFO">Campo 
-                    que indica la manera como se van a presentar las transacci&oacute;nes 
-                    en el extracto y que puede ser Todas las trx activas, Solamente 
-                    trx del mes o Sin transacciones.</p></td>
-              </tr>
-              <tr> 
-                <td class="titletable"><p class="SUBTITULO"><b>Tipo 
-                    extracto </b></p></td>
-                <td><p  class="PARRAFO">Este 
-                    campo muestra si el tipo de extracto asociado a la tarjeta corresponde 
-                    a Consolidado por cliente, Consolidado por tarjeta o Independiente.</p></td>
-              </tr>
-        
-              <tr> 
-                <td class="titletable" ><p class="SUBTITULO"><b>Entrega 
-                    extracto
-                    </b></p></td>
-                <td><p  class="PARRAFO">Campo 
-                    que se&ntilde;ala el lugar en donde se entrega el extracto al cliente, 
-                    de acuerdo con lo que se haya decidido al momento de ingresar la solicitud 
-                    del nuevo cr&eacute;dito para la tarjeta y puede ser Direcci&oacute;n, 
-                    Oficina o Punto que indica si el extracto es entregado en el mismo 
-                    punto de entrega del pl&aacute;stico.</p></td>
-              </tr>
-           
-              <tr> 
-                <td class="titletable" ><p class="SUBTITULO"><b>Punto 
-                    de entrega
-                    </b></p></td>
-                <td><p  class="PARRAFO">En 
-                    este campo se indica seg&uacute;n el caso, el punto de entrega seleccionado 
-                    por el cliente para que le fuera entregada su tarjeta una vez esta se 
-                    realz&oacute;.</p></td>
-              </tr>
-           
-              <tr> 
-                <td class="titletable"><p class="SUBTITULO"><b>Calificaci&oacute;n 
-                    externa asociada
-                    </b></p></td>
-                <td><p  class="PARRAFO">Campo 
-                    que contiene la calificaci&oacute;n externa asociada con el producto 
-                    al que pertenece la tarjeta y que permite determinar los porcentajes 
-                    de provisi&oacute;n correspondientes que debe efectuar la entidad de 
-                    acuerdo con sus pol&iacute;ticas internas y/o la normatividad existente 
-                    al respecto.</p></td>
-              </tr>
-           
-              <tr> 
-                <td class="titletable" ><p class="SUBTITULO"><b>Calificaci&oacute;n 
-                    provisi&oacute;n
-                    </b></p></td>
-                <td   ><p  class="PARRAFO">Registra 
-                    la calificaci&oacute;n actual de la tarjeta y que determina los porcentajes 
-                    de provisi&oacute;n correspondientes que debe efectuar la entidad de 
-                    acuerdo con el comportamiento de la obligaci&oacute;n.
-                  </p></td>
-              </tr>
-            </table>
-            <div  class="PARRAFO"> 
-              <table>
-                <tr> 
-                  <td class="titletable" ><p class="SUBTITULO"><b>Calificaci&oacute;n 
-                      sistema
-                      </b></p></td>
-                  <td><p  class="PARRAFO">Se&ntilde;ala 
-                      el c&oacute;digo y nombre de la categor&iacute;a o nivel de clasificaci&oacute;n 
-                      de cartera asociado actualmente con la tarjeta de acuerdo con lo definido 
-                      por la entidad para cada modalidad de cr&eacute;dito en particular.
-                    </p></td>
-                </tr>
-   
-                <tr> 
-                  <td class="titletable" ><p class="SUBTITULO"><b>Calificaci&oacute;n 
-                      externa
-                      </b></p></td>
-                  <td><p  class="PARRAFO">Campo 
-                      que contiene el c&oacute;digo y nombre de la calificaci&oacute;n actual 
-                      de la tarjeta de acuerdo con el grado de vencimiento de la cartera 
-                      definido por las entidades estatales.
-                    </p></td>
-                </tr>
-   
-                <tr> 
-                  <td class="titletable" ><p class="SUBTITULO"><b>Puntaje 
-                     
-                      </b></p></td>
-                  <td><p  class="PARRAFO">Campo 
-                      que indica el resultado de la &uacute;ltima calificaci&oacute;n obtenida 
-                      por el cliente titular de la tarjeta, en caso que la entidad la hubiere 
-                      efectuado.</p></td>
-                </tr>
-   
-                <tr> 
-                  <td class="titletable" ><p class="SUBTITULO"><b>Fecha 
-                      puntaje
-                      </b></p></td>
-                  <td><p  class="PARRAFO">Despliega 
-                      en fecha YYYY-MM-DD la fecha en la cual se hizo la calificaci&oacute;n 
-                      al cliente.</p></td>
-                </tr>
-   
-                <tr> 
-                  <td class="titletable" ><p class="SUBTITULO"><b>Convenio
-                      </b></p></td>
-                  <td><p  class="PARRAFO">En 
-                      este campo se indica si es el caso el convenio al cual se encuentra 
-                      asociado el producto al que pertenece la tarjeta del cliente y que 
-                      le confiere algunas condiciones particulares.</p></td>
-                </tr>
-   
-                <tr> 
-                  <td class="titletable" ><p class="SUBTITULO"><b>Comportamiento 
-                      12 meses
-                      </b></p></td>
-                  <td><p  class="PARRAFO">Campo 
-                      que contiene informaci&oacute;n acerca del comportamiento que ha tenido 
-                      la tarjeta en los &uacute;ltimos 12 meses, como resultado de los consumos 
-                      efectuados por el cliente.</p></td>
-                </tr>
-   
-                <tr> 
-                  <td class="titletable"><p class="SUBTITULO"><b>N&uacute;mero 
-                      de acci&oacute;n</b></p></td>
-                  <td><p  class="PARRAFO">En 
-                      caso que el <a href="MEH_002B.html" >producto</a> 
-                      al que pertenece la tarjeta tenga la condici&oacute;n de generar n&uacute;mero 
-                      de acci&oacute;n, en este campo se despliega el n&uacute;mero de la 
-                      misma y que se registra durante el proceso de ingreso la solicitud 
-                      de nuevo cr&eacute;dito.</p></td>
-                </tr>
-                <tr> 
-                  <td class="titletable" ><p class="SUBTITULO"><b>Valor 
-                      cupo anterior</b></p></td>
-                  <td><p  class="PARRAFO">Si 
-                      la tarjeta ha tenido variaciones en su cupo bien sea como resultado 
-                      de solicitudes individuales de aumento de cupo o mediante las variaciones 
-                      masivas de cupo que la entidad efect&uacute;a peri&oacute;dicamente 
-                      de acuerdo con sus pol&iacute;ticas, en este campo se despliega el 
-                      monto del cupo que ten&iacute;a asignado la tarjeta antes de sucederse 
-                      el mas reciente de los eventos mencionados.</p></td>
-                </tr>
-   
-                <tr> 
-                  <td class="titletable" ><p class="SUBTITULO"><b>Nivel 
-                      de consumo
-                      </b></p></td>
-                  <td><p  class="PARRAFO">Este 
-                      campo muestra con base en los consumos efectuados por la tarjeta el 
-                      porcentaje de utilizaci&oacute;n que ha tenido la misma en relaci&oacute;n 
-                      con el cupo que tiene asignado. El campo se muestra con valores de 
-                      una escala de 1 a10 siendo el mas alto el 10 (consumos entre el 90% 
-                      y el 100%) y el mas bajo el 1 (entre 0 y 10%).</p></td>
-                </tr>
-   
-                <tr> 
-                  <td class="titletable" ><p class="SUBTITULO"><b>Esquema 
-                      puntaje
-                      </b></p></td>
-                  <td><p  class="PARRAFO">Despliega 
-                      el esquema de puntajes al que se encuentra asociado el cliente de 
-                      acuerdo con los diferentes esquemas que la entidad ofrezca como millas, 
-                      premios, abonos a cuenta, etc.</p></td>
-                </tr>
-   
-                <tr> 
-                  <td><p class="SUBTITULO"><b>Tipo 
-                      d&eacute;bito
-                      </b></p></td>
-                  <td><p  class="PARRAFO">En 
-                      caso que el cliente haya registrado la opci&oacute;n de d&eacute;bito 
-                      autom&aacute;tico para el pago de su obligaci&oacute;n, en este campo 
-                      se indica si el valor que se debe debitar de la cuenta del cliente 
-                      es el correspondiente al Pago m&iacute;nimo o al Pago 
-                      total que presente el cr&eacute;dito.</p></td>
-                </tr>
-                <tr> 
-                  <td><p class="SUBTITULO"><b>Tipo 
-                      cuenta
-                      </b></p></td>
-                  <td><p  class="PARRAFO">Campo 
-                      en el que se indica si la cuenta registrada por el cliente para efectuarle 
-                      el d&eacute;bito autom&aacute;tico es de Ahorros o Corriente.</p></td>
-                </tr>
-                <tr> 
-                  <td><p class="SUBTITULO"><b>N&uacute;mero 
-                      de cuenta
-                      </b></p></td>
-                  <td><p  class="PARRAFO">En 
-                      este campo se muestra el n&uacute;mero de la cuenta a la cual se debe 
-                      efectuar el d&eacute;bito autom&aacute;tico.</p></td>
-                </tr>
-                <tr> 
-                  <td><p class="SUBTITULO"><b>Moneda
-                      </b></p></td>
-                  <td><p  class="PARRAFO">Campo 
-                      en el que se indica la moneda en la que se encuentra denominada la 
-                      cuenta registrada por el cliente para efectuarle el d&eacute;bito 
-                      autom&aacute;tico. </p></td>
-                </tr>
-                <tr> 
-                  <td><p class="SUBTITULO"><b>Tipo 
-                      cuenta desembolso
-                      </b></p></td>
-                  <td><p  class="PARRAFO">Si 
-                      de acuerdo con las caracter&iacute;sticas del <a href="MEH_002B.html" >producto</a> 
-                      al que pertenece la tarjeta, se ha determinado que este requiere una 
-                      cuenta de desembolso para su utilizaci&oacute;n, en este campo se 
-                      indica si la cuenta registrada por el cliente para tal fin es de Ahorros, 
-                      Corriente o Rotativo.</p></td>
-                </tr>
-                <tr> 
-                  <td><p class="SUBTITULO"><b>N&uacute;mero 
-                      cuenta desembolso
-                      </b></p></td>
-                  <td><p  class="PARRAFO">Campo 
-                      en el que se despliega el n&uacute;mero de la cuenta en la que se 
-                      van a afectuar los desembolsos requeridos de acuerdo con las utilizaciones 
-                      efectuadas por el cliente.</p></td>
-                </tr>
-                <tr> 
-                  <td><p class="SUBTITULO"><b>Plazo 
-                      compras nacionales / internacionales
-                      </b></p></td>
-                  <td><p  class="PARRAFO">Si 
-                      a la tarjeta se le ha aplicado la novedad cambio plazo diferidos, 
-                      en este campo se muestra el plazo asignado mediante la misma para 
-                      todas las transacciones de compras nacionales / internacionales vigentes 
-                      de la tarjeta.</p></td>
-                </tr>
-                <tr> 
-                  <td><p class="SUBTITULO"><b>Plazo 
-                      avances nacionales / internacionales
-                      </b></p></td>
-                  <td><p  class="PARRAFO">Campo 
-                      que contiene el plazo asignado para todas las transacciones de avances 
-                      nacionales / internacionales vigentes de la tarjeta cuando a &eacute;sta 
-                      se le ha aplicado la novedad cambio plazo diferidos.</p></td>
-                </tr>
-                <tr> 
-                  <td><p class="SUBTITULO"><b>Identificaci&oacute;n 
-                      (avalista)
-                      </b></p></td>
-                  <td><p  class="PARRAFO">En 
-                      caso que el <a href="MEH_002B.html" >producto</a> 
-                      al que pertenece la tarjeta tenga la condici&oacute;n de exigir avalista, 
-                      en este campo se despliega el tipo y n&uacute;mero de identificaci&oacute;n 
-                      del cliente que est&aacute; avalando la obligaci&oacute;n contra&iacute;da 
-                      por el tarjeta habiente.</p></td>
-                </tr>
-                <tr> 
-                  <td    > 
-                    <p class="SUBTITULO"><b>Nombre (avalista)
-                      </b></p></td>
-                  <td><p  class="PARRAFO">Campo 
-                      que muestra el nombre del cliente asociado con el tipo y n&uacute;mero 
-                      de identificaci&oacute;n anterior, quien es la persona que avala la 
-                      obligaci&oacute;n. </p></td>
-                </tr>
-              </table>
-              
-            </div>
-            <table>
-              <tr> 
-                <td    > 
-                  <p class="SUBTITULO"><b>Cancelaci&oacute;n</b></p></td>
-                <td><p  class="PARRAFO">Campo 
-                    que indica el motivo de cancelaci&oacute;n de la tarjeta, en caso que 
-                    este sea el estado actual de la misma.</p></td>
-              </tr>
-              <tr> 
-                <td class="titletable"><p class="SUBTITULO"><b>Bloqueo 
-                    pl&aacute;stico </b></p></td>
-                <td><p  class="PARRAFO">Este 
-                    campo muestra el bloqueo aplicado a la tarjeta como resultado de la 
-                    cancelaci&oacute;n de la misma</p></td>
-              </tr>
-        
-              <tr> 
-                <td class="titletable" ><p class="SUBTITULO"><b>N&uacute;mero 
-                    acta (castigo)
-                    </b></p></td>
-                <td><p  class="PARRAFO">Cuando 
-                    la tarjeta se encuentra castigada, en este campo se despliega el n&uacute;mero 
-                    de acta mediante la cual la entidad oficializa el castigo.</p></td>
-              </tr>
-           
-              <tr> 
-                <td class="titletable" ><p class="SUBTITULO"><b>Fecha 
-                    acta (castigo)
-                    </b></p></td>
-                <td><p  class="PARRAFO">En 
-                    este campo se indica la fecha en la que la entidad expidi&oacute; el 
-                    acta en la cual se formaliza el castigo de la obligaci&oacute;n.</p></td>
-              </tr>
-           
-              <tr> 
-                <td class="titletable" ><p class="SUBTITULO"><b>Renovaciones 
-                    / Reexpediciones / Reposiciones / Reactivaciones
-                    </b></p></td>
-                <td><p  class="PARRAFO">Campo 
-                    que contiene la informaci&oacute;n acerca del n&uacute;mero de veces 
-                    que la tarjeta ha presentado eventos de renovaci&oacute;n, reexpedici&oacute;n, 
-                    reposici&oacute;n o reactivaci&oacute;n como resultado de las solicitudes 
-                    presentadas por el cliente o generadas internamente por el sistema.</p></td>
-              </tr>
-           
-              <tr> 
-                <td class="titletable" ><p class="SUBTITULO"><b>Reestructuraciones 
-                    / Refinanciaciones
-                    </b></p></td>
-                <td><p  class="PARRAFO">En 
-                    caso que la tarjeta haya sido reestructurada o refinanciada para modificar 
-                    los plazos y tasas de inter&eacute;s con el fin de facilitarle al cliente 
-                    el pago de la obligaci&oacute;n, en estos campos e indica respectivamente 
-                    el n&uacute;mero de veces que cada evento se ha registrado.</p></td>
-              </tr>
-            </table>
-            <div  class="PARRAFO"> 
-              <table>
-                <tr> 
-                  <td class="titletable" ><p class="SUBTITULO"><b>Veces 
-                      mora
-                      </b></p></td>
-                  <td><p  class="PARRAFO">Se&ntilde;ala 
-                      la cantidad de periodos durante los cuales la tarjeta se ha encontrado 
-                      en mora por el no pago oportuno de la obligaci&oacute;n.
-                    </p></td>
-                </tr>
-   
-                <tr> 
-                  <td class="titletable" ><p class="SUBTITULO"><b>Autorizaciones
-                      </b></p></td>
-                  <td><p  class="PARRAFO">Campo 
-                      que dependiendo de si es la misma entidad quien efect&uacute;a las 
-                      autorizaciones directamente muestra en tiempo real el n&uacute;mero 
-                      de autorizaciones otorgadas y pendientes por cruzar. Si la entidad 
-                      no autoriza directamente, este campo muestra las autorizaciones otorgadas 
-                      y pendientes de cruzar que exist&iacute;an en el momento del &uacute;ltimo 
-                      proceso batch ejecutado, lo que puede implicar que no se muestre ning&uacute;n 
-                      valor en el evento que las autorizaciones se crucen dentro del mismo 
-                      proceso diario. </p></td>
-                </tr>
-   
-                <tr> 
-                  <td class="titletable" ><p class="SUBTITULO"><b>Cambio 
-                      de producto
-                      </b></p></td>
-                  <td><p  class="PARRAFO">Este 
-                      campo indica el n&uacute;mero de veces que se han efectuado cambios 
-                      de producto para la tarjeta.</p></td>
-                </tr>
-   
-                <tr> 
-                  <td class="titletable" ><p class="SUBTITULO"><b>Facturaciones
-                      </b></p></td>
-                  <td><p  class="PARRAFO">Despliega 
-                      el n&uacute;mero de veces que la tarjeta ha sido incluida en los procesos 
-                      de facturaci&oacute;n ejecutados por la entidad.</p></td>
-                </tr>
-   
-                <tr> 
-                  <td class="titletable" ><p class="SUBTITULO"><b>Veces 
-                      sobrecupo
-                      </b></p></td>
-                  <td><p  class="PARRAFO">En 
-                      este campo se indica el n&uacute;mero de periodos durante los cuales 
-                      la tarjeta se ha encontrado en sobrecupo como resultado de utilizaciones 
-                      efectuadas por valores que superan el cupo asignado.</p></td>
-                </tr>
-   
-                <tr> 
-                  <td class="titletable" ><p class="SUBTITULO"><b>CDT 
-                      n&uacute;mero
-                      </b></p></td>
-                  <td><p  class="PARRAFO">Si 
-                      de acuerdo con las caracter&iacute;sticas del <a href="MEH_002B.html" >producto</a> 
-                      al que pertenece la tarjeta se ha determinado que la obligaci&oacute;n 
-                      debe ser garantizada mediante un CDT, en este campo se despliega el 
-                      n&uacute;mero del misma y que se registra durante el proceso de ingreso 
-                      la solicitud de nuevo cr&eacute;dito.</p></td>
-                </tr>
-   
-                <tr> 
-                  <td class="titletable"><p class="SUBTITULO"><b>Monto</b></p></td>
-                  <td><p  class="PARRAFO">Campo 
-                      que contiene el monto por el cual se encuentra expedido el CDT que 
-                      garantiza la obligaci&oacute;n.</p></td>
-                </tr>
-                <tr> 
-                  <td class="titletable" ><p class="SUBTITULO"><b>Plazo</b></p></td>
-                  <td><p  class="PARRAFO">Indica 
-                      la cantidad de meses de vigencia que tiene el CDT que garantiza la 
-                      obligaci&oacute;n, para ser redimido o renovado.</p></td>
-                </tr>
-   
-                <tr> 
-                  <td class="titletable" ><p class="SUBTITULO"><b>Sucursal
-                      </b></p></td>
-                  <td><p  class="PARRAFO">Este 
-                      campo muestra la sucursal de la entidad en la cual fue expedido o 
-                      generado el CDT correspondiente.</p></td>
-                </tr>
-   
-                <tr> 
-                  <td class="titletable" ><p class="SUBTITULO"><b>Fecha 
-                      apertura
-                      </b></p></td>
-                  <td><p  class="PARRAFO">Campo 
-                      en formato YYYY-MM-DD que contiene la fecha en la cual se expide el 
-                      CDT que garantiza la obligaci&oacute;n.</p></td>
-                </tr>
-   
-                <tr> 
-                  <td class="titletable" ><p class="SUBTITULO"><b>Fecha 
-                      vence
-                      </b></p></td>
-                  <td><p  class="PARRAFO">En 
-                      este campo en formato YYYY-MM-DD se indica la fecha en la cual vence 
-                      el CDT que garantiza la obligaci&oacute;n.</p></td>
-                </tr>
-   
-                <tr> 
-                  <td class="titletable" ><p class="SUBTITULO"><b>Agente 
-                      de venta
-                      </b></p></td>
-                  <td><p  class="PARRAFO">Campo 
-                      en el que se indica el nombre del agente de venta a quien se le atribuye 
-                      la colocaci&oacute;n de la tarjeta.</p></td>
-                </tr>
-   
-                <tr> 
-                  <td class="titletable" ><p class="SUBTITULO"><b>Agente 
-                      promotor</b></p></td>
-                  <td><p  class="PARRAFO">En 
-                      este campo se muestra el nombre del agente promotor a quien se le 
-                      debe reconocer la labor de mercadeo para la colocaci&oacute;n de la 
-                      tarjeta.</p></td>
-                </tr>
-                <tr> 
-                  <td class="titletable"><p class="SUBTITULO"><b>Edad 
-                      mora </b></p></td>
-                  <td><p  class="PARRAFO">Campo 
-                      en el que se indica la altura de mora actual que presenta la tarjeta, 
-                      de acuerdo con el cumplimiento dado por el cliente a la obligaci&oacute;n.</p></td>
-                </tr>
-                <tr> 
-                  <td class="titletable"><p class="SUBTITULO"><b>C&oacute;digo 
-                      agente cobranza</b></p></td>
-                  <td><p  class="PARRAFO">Si 
-                      de acuerdo con la altura de mora de la tarjeta esta se encuentra en 
-                      proceso de cobro, en este campo se muestra el nombre del agente que 
-                      tiene actualmente a cargo la gesti&oacute;n de recuperaci&oacute;n 
-                      de la obligaci&oacute;n.</p></td>
-                </tr>
-              </table>
-                </section>
-    <script src="../js/menu.js"></script>
+      <div>
 
-    <div id="footerContainer"></div>
-<script>
+        <p class="TITLE">M&aacute;s informaci&oacute;n</p>
+
+        <p class="PARRAFO">En este formulario que se invoca desde la <a
+            href="SCH_060B.html">Consulta
+            centralizada de tarjeta</a>, la entidad puede conocer información
+          adicional, de carácter general para la tarjeta y relacionada con:
+          extractos, calificaciones, cuenta para débito automático, información
+          del cdt que garantiza el crédito (si aplica), entre otros datos.</p>
+
+        <p class="PARRAFO">La opción está estructurada en varios bloques que
+          contienen en su mayoría de 2 a 6 campos y que agrupan la información
+          para facilitarle al usuario la consulta de los datos
+          correspondientes.</p>
+        <p class="TITLE"><img src="../img/SCF_072E.PNG"></p>
+        <p class="TITLE"><img src="../img/SCF_072E2.PNG"></p>
+        <p class="TITLE">Descripción de campos</p>
+        <table>
+          <tr>
+            <td>
+              <p class="SUBTITULO">Nivel detalle extracto</p></td>
+            <td><p class="PARRAFO">Campo que indica la manera como se van a
+                presentar las transacciónes en el extracto y que puede ser Todas
+                las trx activas, Solamente trx del mes o Sin
+                transacciones.</p></td>
+          </tr>
+          <tr>
+            <td class="titletable"><p class="SUBTITULO">Tipo
+                extracto </p></td>
+            <td><p class="PARRAFO">Este campo muestra si el tipo de extracto
+                asociado a la tarjeta corresponde a Consolidado por cliente,
+                Consolidado por tarjeta o Independiente.</p></td>
+          </tr>
+
+          <tr>
+            <td class="titletable"><p class="SUBTITULO">Entrega
+                extracto
+              </p></td>
+            <td><p class="PARRAFO">Campo que señala el lugar en donde se entrega
+                el extracto al cliente, de acuerdo con lo que se haya decidido
+                al momento de ingresar la solicitud del nuevo crédito para la
+                tarjeta y puede ser Dirección, Oficina o Punto que indica si el
+                extracto es entregado en el mismo punto de entrega del
+                plástico.</p></td>
+          </tr>
+
+          <tr>
+            <td class="titletable"><p class="SUBTITULO">Punto
+                de entrega
+              </p></td>
+            <td><p class="PARRAFO">En este campo se indica según el caso, el
+                punto de entrega seleccionado por el cliente para que le fuera
+                entregada su tarjeta una vez esta se realzó.</p></td>
+          </tr>
+
+          <tr>
+            <td class="titletable"><p class="SUBTITULO">Calificaci&oacute;n
+                externa asociada
+              </p></td>
+            <td><p class="PARRAFO">Campo que contiene la calificación externa
+                asociada con el producto al que pertenece la tarjeta y que
+                permite determinar los porcentajes de provisión correspondientes
+                que debe efectuar la entidad de acuerdo con sus políticas
+                internas y/o la normatividad existente al respecto.</p></td>
+          </tr>
+
+          <tr>
+            <td class="titletable"><p class="SUBTITULO">Calificaci&oacute;n
+                provisi&oacute;n
+              </p></td>
+            <td><p class="PARRAFO">Registra la calificación actual de la tarjeta
+                y que determina los porcentajes de provisión correspondientes
+                que debe efectuar la entidad de acuerdo con el comportamiento de
+                la obligación.
+              </p></td>
+          </tr>
+        </table>
+        <div class="PARRAFO">
+          <table>
+            <tr>
+              <td class="titletable"><p class="SUBTITULO">Calificaci&oacute;n
+                  sistema
+                </p></td>
+              <td><p class="PARRAFO">Señala el código y nombre de la categoría o
+                  nivel de clasificación de cartera asociado actualmente con la
+                  tarjeta de acuerdo con lo definido por la entidad para cada
+                  modalidad de crédito en particular.
+                </p></td>
+            </tr>
+
+            <tr>
+              <td class="titletable"><p class="SUBTITULO">Calificaci&oacute;n
+                  externa
+                </p></td>
+              <td><p class="PARRAFO">Campo que contiene el código y nombre de la
+                  calificación actual de la tarjeta de acuerdo con el grado de
+                  vencimiento de la cartera definido por las entidades
+                  estatales.
+                </p></td>
+            </tr>
+
+            <tr>
+              <td class="titletable"><p class="SUBTITULO">Puntaje
+
+                </p></td>
+              <td><p class="PARRAFO">Campo que indica el resultado de la última
+                  calificación obtenida por el cliente titular de la tarjeta, en
+                  caso que la entidad la hubiere efectuado.</p></td>
+            </tr>
+
+            <tr>
+              <td class="titletable"><p class="SUBTITULO">Fecha
+                  puntaje
+                </p></td>
+              <td><p class="PARRAFO">Despliega
+                  en fecha YYYY-MM-DD la fecha en la cual se hizo la
+                  calificaci&oacute;n
+                  al cliente.</p></td>
+            </tr>
+
+            <tr>
+              <td class="titletable"><p class="SUBTITULO">Convenio
+                </p></td>
+              <td><p class="PARRAFO">
+                  En este campo se indica si es el caso el convenio al cual se
+                  encuentra asociado el producto al que pertenece la tarjeta del
+                  cliente y que le confiere algunas condiciones
+                  particulares.</p></td>
+            </tr>
+
+            <tr>
+              <td class="titletable"><p class="SUBTITULO">Comportamiento
+                  12 meses
+                </p></td>
+              <td><p class="PARRAFO">Campo que contiene información acerca del
+                  comportamiento que ha tenido la tarjeta en los últimos 12
+                  meses, como resultado de los consumos efectuados por el
+                  cliente.</p></td>
+            </tr>
+
+            <tr>
+              <td class="titletable"><p class="SUBTITULO">N&uacute;mero
+                  de acci&oacute;n</p></td>
+              <td><p class="PARRAFO">En
+                  caso que el <a href="MEH_002B.html">producto</a>
+                  al que pertenece la tarjeta tenga la condici&oacute;n de
+                  generar n&uacute;mero
+                  de acci&oacute;n, en este campo se despliega el n&uacute;mero
+                  de la
+                  misma y que se registra durante el proceso de ingreso la
+                  solicitud
+                  de nuevo cr&eacute;dito.</p></td>
+            </tr>
+            <tr>
+              <td class="titletable"><p class="SUBTITULO">Valor
+                  cupo anterior</p></td>
+              <td><p class="PARRAFO">Si la tarjeta ha tenido variaciones en su
+                  cupo bien sea como resultado de solicitudes individuales de
+                  aumento de cupo o mediante las variaciones masivas de cupo que
+                  la entidad efectúa periódicamente de acuerdo con sus
+                  políticas, en este campo se despliega el monto del cupo que
+                  tenía asignado la tarjeta antes de sucederse el mas reciente
+                  de los eventos mencionados.</p></td>
+            </tr>
+
+            <tr>
+              <td class="titletable"><p class="SUBTITULO">Nivel
+                  de consumo
+                </p></td>
+              <td><p class="PARRAFO">Este campo muestra con base en los consumos
+                  efectuados por la tarjeta el porcentaje de utilización que ha
+                  tenido la misma en relación con el cupo que tiene asignado. El
+                  campo se muestra con valores de una escala de 1 a10 siendo el
+                  mas alto el 10 (consumos entre el 90% y el 100%) y el mas bajo
+                  el 1 (entre 0 y 10%).</p></td>
+            </tr>
+
+            <tr>
+              <td class="titletable"><p class="SUBTITULO">Esquema
+                  puntaje
+                </p></td>
+              <td><p class="PARRAFO">Despliega el esquema de puntajes al que se
+                  encuentra asociado el cliente de acuerdo con los diferentes
+                  esquemas que la entidad ofrezca como millas, premios, abonos a
+                  cuenta, etc.</p></td>
+            </tr>
+
+            <tr>
+              <td><p class="SUBTITULO">Tipo
+                  d&eacute;bito
+                </p></td>
+              <td><p class="PARRAFO">En caso que el cliente haya registrado la
+                  opción de débito automático para el pago de su obligación, en
+                  este campo se indica si el valor que se debe debitar de la
+                  cuenta del cliente es el correspondiente al Pago mínimo o al
+                  Pago total que presente el crédito.</p></td>
+            </tr>
+            <tr>
+              <td><p class="SUBTITULO">Tipo
+                  cuenta
+                </p></td>
+              <td><p class="PARRAFO">Campo en el que se indica si la cuenta
+                  registrada por el cliente para efectuarle el débito automático
+                  es de Ahorros o Corriente.</p></td>
+            </tr>
+            <tr>
+              <td><p class="SUBTITULO">N&uacute;mero
+                  de cuenta
+                </p></td>
+              <td><p class="PARRAFO">
+                  En este campo se muestra el número de la cuenta a la cual se
+                  debe efectuar el débito automático.</p></td>
+            </tr>
+            <tr>
+              <td><p class="SUBTITULO">Moneda
+                </p></td>
+              <td><p class="PARRAFO">Campo en el que se indica la moneda en la
+                  que se encuentra denominada la cuenta registrada por el
+                  cliente para efectuarle el débito automático. </p></td>
+            </tr>
+            <tr>
+              <td><p class="SUBTITULO">Tipo
+                  cuenta desembolso
+                </p></td>
+              <td><p class="PARRAFO">Si
+                  de acuerdo con las caracter&iacute;sticas del <a
+                    href="MEH_002B.html">producto</a>
+                  al que pertenece la tarjeta, se ha determinado que este
+                  requiere una
+                  cuenta de desembolso para su utilizaci&oacute;n, en este campo
+                  se
+                  indica si la cuenta registrada por el cliente para tal fin es
+                  de Ahorros,
+                  Corriente o Rotativo.</p></td>
+            </tr>
+            <tr>
+              <td><p class="SUBTITULO">N&uacute;mero
+                  cuenta desembolso
+                </p></td>
+              <td><p class="PARRAFO">Campo en el que se despliega el número de
+                  la cuenta en la que se van a afectuar los desembolsos
+                  requeridos de acuerdo con las utilizaciones efectuadas por el
+                  cliente.</p></td>
+            </tr>
+            <tr>
+              <td><p class="SUBTITULO">Plazo
+                  compras nacionales / internacionales
+                </p></td>
+              <td><p class="PARRAFO">Si a la tarjeta se le ha aplicado la
+                  novedad cambio plazo diferidos, en este campo se muestra el
+                  plazo asignado mediante la misma para todas las transacciones
+                  de compras nacionales / internacionales vigentes de la
+                  tarjeta.</p></td>
+            </tr>
+            <tr>
+              <td><p class="SUBTITULO">Plazo
+                  avances nacionales / internacionales
+                </p></td>
+              <td><p class="PARRAFO">Campo que contiene el plazo asignado para
+                  todas las transacciones de avances nacionales /
+                  internacionales vigentes de la tarjeta cuando a ésta se le ha
+                  aplicado la novedad cambio plazo diferidos.</p></td>
+            </tr>
+            <tr>
+              <td><p class="SUBTITULO">Identificaci&oacute;n
+                  (avalista)
+                </p></td>
+              <td><p class="PARRAFO">En
+                  caso que el <a href="MEH_002B.html">producto</a>
+                  al que pertenece la tarjeta tenga la condici&oacute;n de
+                  exigir avalista,
+                  en este campo se despliega el tipo y n&uacute;mero de
+                  identificaci&oacute;n
+                  del cliente que est&aacute; avalando la obligaci&oacute;n
+                  contra&iacute;da
+                  por el tarjeta habiente.</p></td>
+            </tr>
+            <tr>
+              <td>
+                <p class="SUBTITULO">Nombre (avalista)
+                </p></td>
+              <td><p class="PARRAFO">Campo que muestra el nombre del cliente
+                  asociado con el tipo y número de identificación anterior,
+                  quien es la persona que avala la obligación. </p></td>
+            </tr>
+          </table>
+
+        </div>
+        <table>
+          <tr>
+            <td>
+              <p class="SUBTITULO">Cancelaci&oacute;n</p></td>
+            <td><p class="PARRAFO">Campo que indica el motivo de cancelación de
+                la tarjeta, en caso que este sea el estado actual de la
+                misma.</p></td>
+          </tr>
+          <tr>
+            <td class="titletable"><p class="SUBTITULO">Bloqueo
+                pl&aacute;stico </p></td>
+            <td><p class="PARRAFO">Este campo muestra el bloqueo aplicado a la
+                tarjeta como resultado de la cancelación de la misma.</p></td>
+          </tr>
+
+          <tr>
+            <td class="titletable"><p class="SUBTITULO">N&uacute;mero
+                acta (castigo)
+              </p></td>
+            <td><p class="PARRAFO">Cuando la tarjeta se encuentra castigada, en
+                este campo se despliega el número de acta mediante la cual la
+                entidad oficializa el castigo.</p></td>
+          </tr>
+
+          <tr>
+            <td class="titletable"><p class="SUBTITULO">Fecha
+                acta (castigo)
+              </p></td>
+            <td><p class="PARRAFO">En este campo se indica la fecha en la que la
+                entidad expidió el acta en la cual se formaliza el castigo de la
+                obligación.</p></td>
+          </tr>
+
+          <tr>
+            <td class="titletable"><p class="SUBTITULO">Renovaciones
+                / Reexpediciones / Reposiciones / Reactivaciones
+              </p></td>
+            <td><p class="PARRAFO">Campo que contiene la información acerca del
+                número de veces que la tarjeta ha presentado eventos de
+                renovación, reexpedición, reposición o reactivación como
+                resultado de las solicitudes presentadas por el cliente o
+                generadas internamente por el sistema.</p></td>
+          </tr>
+
+          <tr>
+            <td class="titletable"><p class="SUBTITULO">Reestructuraciones
+                / Refinanciaciones
+              </p></td>
+            <td><p class="PARRAFO">En caso que la tarjeta haya sido
+                reestructurada o refinanciada para modificar los plazos y tasas
+                de interés con el fin de facilitarle al cliente el pago de la
+                obligación, en estos campos e indica respectivamente el número
+                de veces que cada evento se ha registrado.</p></td>
+          </tr>
+        </table>
+        <div class="PARRAFO">
+          <table>
+            <tr>
+              <td class="titletable"><p class="SUBTITULO">Veces
+                  mora
+                </p></td>
+              <td><p class="PARRAFO">Señala la cantidad de periodos durante los
+                  cuales la tarjeta se ha encontrado en mora por el no pago
+                  oportuno de la obligación.
+                </p></td>
+            </tr>
+
+            <tr>
+              <td class="titletable"><p class="SUBTITULO">Autorizaciones
+                </p></td>
+              <td><p class="PARRAFO">Campo que dependiendo de si es la misma
+                  entidad quien efectúa las autorizaciones directamente muestra
+                  en tiempo real el número de autorizaciones otorgadas y
+                  pendientes por cruzar. Si la entidad no autoriza directamente,
+                  este campo muestra las autorizaciones otorgadas y pendientes
+                  de cruzar que existían en el momento del último proceso batch
+                  ejecutado, lo que puede implicar que no se muestre ningún
+                  valor en el evento que las autorizaciones se crucen dentro del
+                  mismo proceso diario.</p></td>
+            </tr>
+
+            <tr>
+              <td class="titletable"><p class="SUBTITULO">Cambio
+                  de producto
+                </p></td>
+              <td><p class="PARRAFO">Este campo indica el número de veces que se
+                  han efectuado cambios de producto para la tarjeta.</p></td>
+            </tr>
+
+            <tr>
+              <td class="titletable"><p class="SUBTITULO">Facturaciones
+                </p></td>
+              <td><p class="PARRAFO">Despliega el número de veces que la tarjeta
+                  ha sido incluida en los procesos de facturación ejecutados por
+                  la entidad.</p></td>
+            </tr>
+
+            <tr>
+              <td class="titletable"><p class="SUBTITULO">Veces
+                  sobrecupo
+                </p></td>
+              <td><p class="PARRAFO">En este campo se indica el número de
+                  periodos durante los cuales la tarjeta se ha encontrado en
+                  sobrecupo como resultado de utilizaciones efectuadas por
+                  valores que superan el cupo asignado.</p></td>
+            </tr>
+
+            <tr>
+              <td class="titletable"><p class="SUBTITULO">CDT
+                  n&uacute;mero
+                </p></td>
+              <td><p class="PARRAFO">Si
+                  de acuerdo con las caracter&iacute;sticas del <a
+                    href="MEH_002B.html">producto</a>
+                  al que pertenece la tarjeta se ha determinado que la
+                  obligaci&oacute;n
+                  debe ser garantizada mediante un CDT, en este campo se
+                  despliega el
+                  n&uacute;mero del misma y que se registra durante el proceso
+                  de ingreso
+                  la solicitud de nuevo cr&eacute;dito.</p></td>
+            </tr>
+
+            <tr>
+              <td class="titletable"><p class="SUBTITULO">Monto</p></td>
+              <td><p class="PARRAFO">Campo que contiene el monto por el cual se
+                  encuentra expedido el CDT que garantiza la
+                  obligación.</p></td>
+            </tr>
+            <tr>
+              <td class="titletable"><p class="SUBTITULO">Plazo</p></td>
+              <td><p class="PARRAFO">
+                  Indica la cantidad de meses de vigencia que tiene el CDT que
+                  garantiza la obligación, para ser redimido o
+                  renovado.</p></td>
+            </tr>
+
+            <tr>
+              <td class="titletable"><p class="SUBTITULO">Sucursal
+                </p></td>
+              <td><p class="PARRAFO">Este campo muestra la sucursal de la
+                  entidad en la cual fue expedido o generado el CDT
+                  correspondiente.</p></td>
+            </tr>
+
+            <tr>
+              <td class="titletable"><p class="SUBTITULO">Fecha
+                  apertura
+                </p></td>
+              <td><p class="PARRAFO">Campo en formato YYYY-MM-DD que contiene la
+                  fecha en la cual se expide el CDT que garantiza la
+                  obligación.</p></td>
+            </tr>
+
+            <tr>
+              <td class="titletable"><p class="SUBTITULO">Fecha
+                  vence
+                </p></td>
+              <td><p class="PARRAFO">En este campo en formato YYYY-MM-DD se
+                  indica la fecha en la cual vence el CDT que garantiza la
+                  obligación.</p></td>
+            </tr>
+
+            <tr>
+              <td class="titletable"><p class="SUBTITULO">Agente
+                  de venta
+                </p></td>
+              <td><p class="PARRAFO">Campo en el que se indica el nombre del
+                  agente de venta a quien se le atribuye la colocación de la
+                  tarjeta.</p></td>
+            </tr>
+
+            <tr>
+              <td class="titletable"><p class="SUBTITULO">Agente
+                  promotor</p></td>
+              <td><p class="PARRAFO">
+                  En este campo se muestra el nombre del agente promotor a quien
+                  se le debe reconocer la labor de mercadeo para la colocación
+                  de la tarjeta.</p></td>
+            </tr>
+            <tr>
+              <td class="titletable"><p class="SUBTITULO">Edad
+                  mora </p></td>
+              <td><p class="PARRAFO">
+                  Campo en el que se indica la altura de mora actual que
+                  presenta la tarjeta, de acuerdo con el cumplimiento dado por
+                  el cliente a la obligación.</p></td>
+            </tr>
+            <tr>
+              <td class="titletable"><p class="SUBTITULO">C&oacute;digo
+                  agente cobranza</p></td>
+              <td><p class="PARRAFO">Si de acuerdo con la altura de mora de la
+                  tarjeta esta se encuentra en proceso de cobro, en este campo
+                  se muestra el nombre del agente que tiene actualmente a cargo
+                  la gestión de recuperación de la obligación.</p></td>
+            </tr>
+            <tr>
+              <td class="titletable"><p class="SUBTITULO">Gastos administración
+                  cobranzas</p></td>
+              <td><p class="PARRAFO">En el evento en que por el no pago oportuno
+                  de la obligación se hayan generado los llamados GAC, dicho
+                  valor se vería reflejado en este campo. actualmente a cargo
+                  la gestión de recuperación de la obligación.</p></td>
+            </tr>
+          </table>
+        </section>
+        <script src="../js/menu.js"></script>
+
+        <div id="footerContainer"></div>
+        <script>
   fetch('footer.html')
     .then(response => response.text())
     .then(html => {
       document.getElementById('footerContainer').innerHTML = html;
     });
 </script>
-</body>
+      </body>
 
-</html>
+    </html>

@@ -19,24 +19,20 @@
             <img class="TITLE"  src= "../img/menu.PNG" alt="Botón de Menú ">
         </div>
     </header>
-   <div id="menuContainer"></div>
-    <script>
-      fetch('menu.html')
-        .then(response => response.text())
-        .then(html => {
-          document.getElementById('menuContainer').innerHTML = html;
-        });
-    </script>
+      <div id="menuContainer"></div>
+  <script>
+    fetch('menu.html')
+      .then(response => response.text())
+      .then(html => {
+        document.getElementById('menuContainer').innerHTML = html;
+      });
+  </script>
 
     <section>
         <div> 
-            <table>
-              <tr> 
-                <td><div> 
+            
                     <p  class="TITLE">Consulta global de intercambio d&eacute;bito </p>
-                    </div></td>
-              </tr>
-            </table>
+                    
             <p class="PARRAFO"><span class="SUBTITULO">Movimiento diario</span><span class="PARRAFO"><span class="SUBTITULO">:</span>  
               </span> En este formulario aparecen registradas todas las transacciones que 
               han superado exitosamente las validaciones del sistema.</p>
@@ -88,8 +84,8 @@
            <p class="TITLE"><img src="../img/DBF_043B8.PNG"736" height="504"></p>
             <p>	</p>
             <p><a href="DBH_043.html">Formulario principal</a><span
-              style='font-size:10.0pt;font-family:Arial'><b> | </b></span><a href="DBH_043B1.html">Tapa 
-              contable</a><b><span style='font-size:10.0pt;font-family:Arial'> |</span></b><a href="DBH_043B3.html">Pendientes</a></p>
+              style='font-size:10.0pt;font-family:Arial'> | </span><a href="DBH_043B1.html">Tapa 
+              contable</a><span style='font-size:10.0pt;font-family:Arial'> |</span><a href="DBH_043B3.html">Pendientes</a></p>
             
         </section>
     <script src="../js/menu.js"></script>

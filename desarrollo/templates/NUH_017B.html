@@ -18,24 +18,20 @@
             <img class="TITLE"  src= "../img/menu.PNG" alt="Botón de Menú ">
         </div>
     </header>
-   <div id="menuContainer"></div>
-    <script>
-      fetch('menu.html')
-        .then(response => response.text())
-        .then(html => {
-          document.getElementById('menuContainer').innerHTML = html;
-        });
-    </script>
+      <div id="menuContainer"></div>
+  <script>
+    fetch('menu.html')
+      .then(response => response.text())
+      .then(html => {
+        document.getElementById('menuContainer').innerHTML = html;
+      });
+  </script>
 
     <section>
         <div> 
-            <table>
-              <tr> 
-                <td><div> 
+            
                     <p  class="TITLE">Novedades administrativas</p>
-                  </div></td>
-              </tr>
-            </table>
+                  
             <p class="PARRAFO" >Esta funci&oacute;n habilita la consulta 
               y/o mantenimiento de la tabla que almacena los c&oacute;digos de las diferentes 
               modificaciones o cambios, no monetarios, que requieren ser actualizados a 
@@ -54,29 +50,29 @@
             
             <table>
               <tr>
-                <td  class="titletable" ><p class="SUBTITULO"><b><span 
-        >C&oacute;digo</span></b></p></td>
+                <td  class="titletable" ><p class="SUBTITULO"><span 
+        >C&oacute;digo</span></p></td>
                 <td><p class="PARRAFO">Campo 
                     num&eacute;rico de 4 posiciones en el que se registra 
                   el c&oacute;digo de la novedad que se desea buscar.</p></td>
               </tr>
               <tr>
-                <td  class="titletable" ><p class="SUBTITULO"><b><span 
-        >Descripci&oacute;n</span></span></b></p></td>
+                <td  class="titletable" ><p class="SUBTITULO"><span 
+        >Descripci&oacute;n</span></span></p></td>
                 <td><p class="PARRAFO">En 
                     este campo alfanum&eacute;rico de m&aacute;ximo 30 caracteres,  
                     se ingresa  el detalle o la definici&oacute;n asociada a cada c&oacute;digo 
                   de novedad buscada. </p></td>
               </tr>
               <tr>
-                <td class="titletable"><p class="SUBTITULO"><b><span 
-        >Tipo novedad </span></span></b></p></td>
+                <td class="titletable"><p class="SUBTITULO"><span 
+        >Tipo novedad </span></span></p></td>
                 <td><p class="PARRAFO">En 
                   este campo se selecciona entre Nulo, Cliente o Tarjeta para realizar la b&uacute;squeda deseada. </p></td>
               </tr>
             </table>
 
-            <p  class="PARRAFO"><span class="SUBTITULO"><b ><span            '>Adicionar</span></b><span 
+            <p  class="PARRAFO"><span class="SUBTITULO"><span            '>Adicionar</span><span 
         >:</span><span 
         ></span></span><span 
         > 
@@ -86,32 +82,32 @@
             <p  class="TITLE">Descripci&oacute;n de campos</p>
             <table>
               <tr> 
-                <td class="titletable"><p class="SUBTITULO"><b><span 
-        >C&oacute;digo</span></b></p></td>
+                <td class="titletable"><p class="SUBTITULO"><span 
+        >C&oacute;digo</span></p></td>
                 <td><p  class="PARRAFO">Campo 
                     num&eacute;rico de 4 posiciones, obligatorio, en el que se registra 
                     el c&oacute;digo asignado a cada una de las novedades habilitadas dentro 
                     del sistema.</p></td>
               </tr>
               <tr> 
-                <td  class="titletable" ><p class="SUBTITULO"><b><span 
-        >Descripci&oacute;n</span></b></p></td>
+                <td  class="titletable" ><p class="SUBTITULO"><span 
+        >Descripci&oacute;n</span></p></td>
                 <td><p  class="PARRAFO">En 
                     este campo alfanum&eacute;rico de m&aacute;ximo 30 caracteres, obligatorio, 
                     se registra el detalle o la definici&oacute;n asociada a cada c&oacute;digo 
                     de novedad. </p></td>
               </tr>
               <tr> 
-                <td  class="titletable" ><p class="SUBTITULO"><b><span 
-        >Abreviatura</span></b></p></td>
+                <td  class="titletable" ><p class="SUBTITULO"><span 
+        >Abreviatura</span></p></td>
                 <td><p  class="PARRAFO">Campo 
                     alfanum&eacute;rico no obligatorio que almacena, en un m&aacute;ximo 
                     de 10 caracteres, la representaci&oacute;n del nombre o nombre corto, 
                     utilizado para reportes impresos o consultas.</p></td>
               </tr>
               <tr> 
-                <td  class="titletable" ><p class="SUBTITULO"><b><span 
-        >Hist&oacute;rico</span></b></p></td>
+                <td  class="titletable" ><p class="SUBTITULO"><span 
+        >Hist&oacute;rico</span></p></td>
                 <td><p  class="PARRAFO">En 
                     este campo num&eacute;rico de 3 posiciones, obligatorio, la entidad 
                     financiera determina el n&uacute;mero m&aacute;ximo de periodos (meses) 
@@ -120,24 +116,24 @@
                     de la aplicaci&oacute;n.</p></td>
               </tr>
               <tr> 
-                <td  class="titletable" ><p class="SUBTITULO"><b><span 
-        >Modo</span></b></p></td>
+                <td  class="titletable" ><p class="SUBTITULO"><span 
+        >Modo</span></p></td>
                 <td><p  class="PARRAFO">Campo 
                     obligatorio tipo combo donde se selecciona entre Batch o L&iacute;nea 
                     (inmediato) la manera en que ser&aacute; aplicada la novedad.</p></td>
               </tr>
               <tr> 
-                <td  class="titletable" ><p class="SUBTITULO"><b><span 
+                <td  class="titletable" ><p class="SUBTITULO"><span 
         >Tipo 
-                    de novedad</span></b></p></td>
+                    de novedad</span></p></td>
                 <td><p  class="PARRAFO">En 
                     este campo obligatorio se selecciona entre Cliente o Tarjeta 
                     para indicar si la novedad recae sobre la informaci&oacute;n del 
                     cliente o sobre los datos de la tarjeta o cr&eacute;dito.</p></td>
               </tr>
               <tr> 
-                <td  class="titletable" ><p class="SUBTITULO"><b><span 
-        >Efecto</span></b></p></td>
+                <td  class="titletable" ><p class="SUBTITULO"><span 
+        >Efecto</span></p></td>
                 <td><p  class="PARRAFO">Campo 
                     alfanum&eacute;rico no obligatorio que almacena, en un m&aacute;ximo 
                     de 1000 caracteres, el efecto o impacto de cada c&oacute;digo de novedad. 
@@ -146,15 +142,15 @@
               </tr>
             </table>
             <div>
-              <p class="PARRAFO"><b ><span class="SUBTITULO"> 
-                Actualizar</span></b>: Si el usuario selecciona un registro e invoca la 
+              <p class="PARRAFO"><span class="SUBTITULO"> 
+                Actualizar</span>: Si el usuario selecciona un registro e invoca la 
                 opci&oacute;n Actualizar se despliega un formulario en el cual los campos 
                 modificables son Descripci&oacute;n, Abreviatura, Hist&oacute;rico, Modo, 
                 Tipo de novedad y Efecto
               </p>
              <p class="TITLE"><img src="../img/NUF_017E2.PNG"309" height="348"></p>
               .
-              <p class="PARRAFO"><b ><span class="SUBTITULO">Detalle</span></b>: 
+              <p class="PARRAFO"><span class="SUBTITULO">Detalle</span>: 
                 Si el usuario selecciona un registro e invoca la opci&oacute;n Detalle se 
                 despliega un formulario con toda la informaci&oacute;n del registro y en 
                 el cual ninguno de los campos es modificable</p>

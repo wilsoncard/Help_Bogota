@@ -17,26 +17,21 @@
       <img class="TITLE" src="../img/menu.PNG" alt="Botón de Menú ">
     </div>
   </header>
- <div id="menuContainer"></div>
-    <script>
-      fetch('menu.html')
-        .then(response => response.text())
-        .then(html => {
-          document.getElementById('menuContainer').innerHTML = html;
-        });
-    </script>
+    <div id="menuContainer"></div>
+  <script>
+    fetch('menu.html')
+      .then(response => response.text())
+      .then(html => {
+        document.getElementById('menuContainer').innerHTML = html;
+      });
+  </script>
 
   <section>
     <div>
-      <table>
-        <tr>
-          <td>
-            <div class="TITLE">
-              Tasas de cambio (corporativas)
-            </div>
-          </td>
-        </tr>
-      </table>
+      
+            <p class="TITLE">
+              Tasas de cambio (corporativas)</p>
+
       <p>Mediante esta funci&oacute;n se habilita la consulta y mantenimiento de la tabla en la que se almacena
         diariamente, el tipo de cambio (monto equivalente en moneda oficial respecto de otra moneda) vigente para la
         fecha a &eacute;ste asociada, y si lo requiere puede tambi&eacute;n registrar otros valores relacionados con la
@@ -57,7 +52,7 @@
         Eliminar, Adicionar y Detalle. Adicionalmente, cuenta con un filtro de b&uacute;squeda
         y el bot&oacute;n <a href="#Boton" title="Botón" target="_self">Copiar indicadores
           del d&iacute;a anterior</a>.</span></p>
-      <p class="PARRAFO"><span class="SUBTITULO"> Filtro: </span><span> Se pueden
+      <p class="PARRAFO"><span class="SUBTITULO"> Filtro: </span> Se pueden
           realizar consultas a trav&eacute;s de las siguientes opciones: </span> 
       </p>
       <p class="TITLE"><img src="../img/NUF_042B1.PNG"></p>
@@ -65,7 +60,7 @@
       <table>
         <tr>
           <td class="titletable">
-            <p class="SUBTITULO"><b><span>Fecha</span></span></b>
+            <p class="SUBTITULO">Fecha</span></span>
               ingreso </p>
           </td>
           <td>
@@ -75,7 +70,7 @@
           </td>
           <tr>
             <td class="titletable">
-              <p class="SUBTITULO"><b><span>Moneda</span></span></b></p>
+              <p class="SUBTITULO">Moneda</span></span></p>
             </td>
             <td>
               <p class="PARRAFO">Campo en el que se puede digitar el código de la moneda o seleccionar de la lista
@@ -93,7 +88,7 @@
       <table>
         <tr>
           <td class="titletable">
-            <p class="SUBTITULO"><b><span>Moneda</span></span></b></p>
+            <p class="SUBTITULO">Moneda</span></span></p>
           </td>
           <td>
             <p class="PARRAFO">Campo en el que se puede digitar el código de la moneda o seleccionar de la lista
@@ -102,7 +97,7 @@
         </tr>
         <tr>
           <td class="titletable">
-            <p class="SUBTITULO"><b><span>Fecha</span></span></b> ingreso </p>
+            <p class="SUBTITULO">Fecha</span></span> ingreso </p>
           </td>
           <td>
             <p class="PARRAFO">Campo en el que mediante la funcionalidad de un calendario se selecciona la fecha para la
@@ -111,7 +106,7 @@
         </tr>
         <tr>
           <td class="titletable">
-            <p class="SUBTITULO"><b><span>Valor </span></span></b>Trm</p>
+            <p class="SUBTITULO">Valor </span></span>Trm</p>
           </td>
           <td>
             <p class="PARRAFO">Vr. Tasa representativa del mercado. Campo num&eacute;rico obligatorio, que en un
@@ -121,7 +116,7 @@
         </tr>
         <tr>
           <td class="titletable">
-            <p class="SUBTITULO"><b><span>Valor </span></span></b>Tmr</p>
+            <p class="SUBTITULO">Valor </span></span>Tmr</p>
           </td>
           <td>
             <p class="PARRAFO">Vr. Tasa m&aacute;s representativa del mercado. Campo num&eacute;rico no obligatorio, que
@@ -132,7 +127,7 @@
         </tr>
         <tr>
           <td class="titletable">
-            <p class="SUBTITULO"><b><span>Valor </span></span></b>Tmra</p>
+            <p class="SUBTITULO">Valor </span></span>Tmra</p>
           </td>
           <td>
             <p class="PARRAFO">Vr. Tasa m&aacute;s representativa del mercado mes anterior. Campo num&eacute;rico no
@@ -143,7 +138,7 @@
         </tr>
         <tr>
           <td class="titletable">
-            <p class="SUBTITULO"><b><span>Valor </span></span></b>Tppc</p>
+            <p class="SUBTITULO">Valor </span></span>Tppc</p>
           </td>
           <td>
             <p class="PARRAFO">Vr. Tasa promedio ponderada compra. Campo num&eacute;rico no obligatorio, que en un
@@ -154,7 +149,7 @@
         </tr>
         <tr>
           <td class="titletable">
-            <p class="SUBTITULO"><b><span>Valor </span></span></b>Tppv</p>
+            <p class="SUBTITULO">Valor </span></span>Tppv</p>
           </td>
           <td>
             <p class="PARRAFO">Vr. Tasa promedio ponderada venta. Campo num&eacute;rico no obligatorio, que en un
@@ -164,7 +159,7 @@
           </td>
         </tr>
       </table>
-      <p><span class="SUBTITULO"><b>Actualizar</b>: </span>  Si el usuario invoca la opci&oacute;n Actualizar se despliega
+      <p><span class="SUBTITULO">Actualizar: </span>  Si el usuario invoca la opci&oacute;n Actualizar se despliega
         un nuevo formulario
         en el cual los &uacute;nicos campos modificables son: Valor Trm, Valor Tmr, Valor Tmra, Valor Tppc, y Valor
         Tppv. </p>

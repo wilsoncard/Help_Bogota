@@ -1,121 +1,144 @@
 <!DOCTYPE html>
 <html lang="es">
 
-<head>
+  <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>BANKBU®</title>
     <link rel="stylesheet" href="../css/pages.css">
     <link rel="stylesheet" href="../css/style.css">
- <link rel="icon" href="../img/ACQUIRER-logo.JPG" type="image/x-icon">
-</head>
+    <link rel="icon" href="../img/ACQUIRER-logo.JPG" type="image/x-icon">
+  </head>
 
-<body>
+  <body>
     <header>
-        <img class="logo" src="../img/logoBankbu_.PNG" alt="Logo de Mi Empresa">
-        <div id="menuBtn">
-            <img class="TITLE"  src= "../img/menu.PNG" alt="Botón de Menú ">
-        </div>
+      <img class="logo" src="../img/logoBankbu_.PNG" alt="Logo de Mi Empresa">
+      <div id="menuBtn">
+        <img class="TITLE" src="../img/menu.PNG" alt="Botón de Menú ">
+      </div>
     </header>
-   <div id="menuContainer"></div>
+    <div id="menuContainer"></div>
     <script>
-      fetch('menu.html')
-        .then(response => response.text())
-        .then(html => {
-          document.getElementById('menuContainer').innerHTML = html;
-        });
-    </script>
+    fetch('menu.html')
+      .then(response => response.text())
+      .then(html => {
+        document.getElementById('menuContainer').innerHTML = html;
+      });
+  </script>
 
     <section>
-        <div> 
-            <table>
-              <tr> 
-                <td><div> 
-                    <p  class="TITLE">Par&aacute;metros operativos</p>
-                    </div></td>
-              </tr>
-            </table>
-            <p><span class="SUBTITULO">Localizaci&oacute;n del Adquirente:</span>  El formulario 
-              inicial muestra el Detalle de los par&aacute;metros de localizaci&oacute;n, 
-              y tiene las opciones Actualizar y el bot&oacute;n para regresar al formulario 
-              principal <a href="NUH_055B2.html">Adquirente.</a></p>
-            <p class="TITLE"><img src="../img/NUF_055A3.PNG"303" ></p>
-            
-            <p  class="PARRAFO"><span class="PARRAFO"><span class="SUBTITULO">Actualizar:</span>  
-              Si el usuario invoca la opci&oacute;n Actualizar se despliega un formulario 
-              con los siguientes campos para modificar: Porcentaje base retenci&oacute;n, 
-              Porcentaje iva, % Retenci&oacute;n iva, % Base retenci&oacute;n establecimiento, 
-              y Retenci&oacute;n en la fuente.</span></p>
-            <p class="TITLE"><img src="../img/NUF_055A2.PNG"738" height="236"></p>
+      <div>
 
-            <table>
-              <tr> 
-                <td class="titletable"><p class="SUBTITULO">Porcentaje 
-                    base retenci&oacute;n</p></td>
-                <td><p class="PARRAFO">Campo 
-                    num&eacute;rico que en un m&aacute;ximo de 3 enteros y 2 decimales, 
-                    no obligatorio, permite definir el valor porcentual a aplicar y calcular 
-                    sobre los consumos (u otros conceptos asimilables) sobre cuyo resultado 
-                    se liquidar&aacute; el impuesto de retenci&oacute;n en la fuente. Este 
-                    par&aacute;metro es necesario para calcular dicho impuesto sobre las 
-                    consignaciones y dep&oacute;sitos de los establecimientos. Sin &eacute;l 
-                    no se puede generar el d&eacute;bito a la cuenta.</p></td>
-              </tr>
-              <tr> 
-                <td  class="titletable" ><p class="SUBTITULO"><b>Porcentaje 
-                    iva</b></p></td>
-                <td><p class="PARRAFO">Campo 
-                    num&eacute;rico de 3 d&iacute;gitos incluidos 2 decimales, no obligatorio, 
-                    dentro del que se registra el valor porcentual a aplicar tanto a los 
-                    diferentes conceptos en que sea requerido como tambi&eacute;n sobre 
-                    las transacciones internas, as&iacute; se&ntilde;aladas, que por su 
-                    esencia sean generadoras de este impuesto (IVA). </p>
-                </td>
-              </tr>
-              <tr> 
-                <td class="titletable"><p class="SUBTITULO"><b>%Retenci&oacute;n 
-                    iva</b></p></td>
-                <td><p class="PARRAFO">En 
-                    este campo num&eacute;rico de hasta 3 posiciones enteras y 2 decimales, 
-                    no obligatorio, se registra el valor porcentual de la tasa a aplicar 
-                    por dicho impuesto sobre el resultado del porcentaje base retenci&oacute;n 
-                    IVA obtenido. </p></td>
-              </tr>
-              <tr> 
-                <td  class="titletable" ><p class="SUBTITULO"><b>% 
-                    Base retenci&oacute;n establecimiento</b></p></td>
-                <td><p class="PARRAFO">En 
-                    este campo num&eacute;rico de hasta 3 enteros y 2 decimales, no obligatorio, 
-                    se define el valor porcentual a aplicar y calcular sobre los descuentos 
-                    efectuados a las consignaciones o dep&oacute;sitos de los establecimientos, 
-                    acorde con la norma correspondiente. </p></td>
-              </tr>
-              <tr> 
-                <td class="titletable"><p class="SUBTITULO"><b>Retenci&oacute;n 
-                    en la fuente</b></p></td>
-                <td><p class="PARRAFO">Este 
-                    campo num&eacute;rico de hasta 3 posiciones enteras y 2 decimales, no 
-                    obligatorio, permite registrar el valor porcentual de la tasa a aplicar 
-                    por dicho impuesto sobre el resultado del porcentaje base obtenido. 
-                  </p></td>
-              </tr>
-            </table>
+        <p class="TITLE">Par&aacute;metros operativos</p>
 
-            <p><a href="NUH_055B2.html" >Volver a Adquirente</a><b>| </b><a href="NUH_055B.html" >Ir 
-              a Emisor</a><b><span ><b>| </b> 
-              </span></b><a href="NUH_055B3.html" > Localizaci&oacute;n Emisor</a></p>
-            
-            </section>
-    <script src="../js/menu.js"></script>
+        <p><span class="SUBTITULO">Localizaci&oacute;n del Adquirente:</span> El
+          formulario
+          inicial muestra el Detalle de los par&aacute;metros de
+          localizaci&oacute;n,
+          y tiene las opciones Actualizar y el bot&oacute;n para regresar al
+          formulario
+          principal <a href="NUH_055B2.html">Adquirente.</a></p>
+        <p class="TITLE"><img src="../img/NUF_055A3.PNG"></p>
 
-    <div id="footerContainer"></div>
-<script>
+        <p class="PARRAFO"><span class="PARRAFO"><span
+              class="SUBTITULO">Actualizar:</span>
+            Si el usuario invoca la opci&oacute;n Actualizar se despliega un
+            formulario
+            con los siguientes campos para modificar: Porcentaje base
+            retenci&oacute;n,
+            Porcentaje iva, % Retenci&oacute;n iva, % Base retenci&oacute;n
+            establecimiento,
+            y Retenci&oacute;n en la fuente.</span></p>
+        <p class="TITLE"><img src="../img/NUF_055A2.PNG"></p>
+
+        <table>
+          <tr>
+            <td class="titletable"><p class="SUBTITULO">Porcentaje
+                base retenci&oacute;n</p></td>
+            <td><p class="PARRAFO">Campo
+                num&eacute;rico que en un m&aacute;ximo de 3 enteros y 2
+                decimales,
+                no obligatorio, permite definir el valor porcentual a aplicar y
+                calcular
+                sobre los consumos (u otros conceptos asimilables) sobre cuyo
+                resultado
+                se liquidar&aacute; el impuesto de retenci&oacute;n en la
+                fuente. Este
+                par&aacute;metro es necesario para calcular dicho impuesto sobre
+                las
+                consignaciones y dep&oacute;sitos de los establecimientos. Sin
+                &eacute;l
+                no se puede generar el d&eacute;bito a la cuenta.</p></td>
+          </tr>
+          <tr>
+            <td class="titletable"><p class="SUBTITULO">Porcentaje
+                iva</p></td>
+            <td><p class="PARRAFO">Campo
+                num&eacute;rico de 3 d&iacute;gitos incluidos 2 decimales, no
+                obligatorio,
+                dentro del que se registra el valor porcentual a aplicar tanto a
+                los
+                diferentes conceptos en que sea requerido como tambi&eacute;n
+                sobre
+                las transacciones internas, as&iacute; se&ntilde;aladas, que por
+                su
+                esencia sean generadoras de este impuesto (IVA). </p>
+            </td>
+          </tr>
+          <tr>
+            <td class="titletable"><p class="SUBTITULO">%Retenci&oacute;n
+                iva</p></td>
+            <td><p class="PARRAFO">En
+                este campo num&eacute;rico de hasta 3 posiciones enteras y 2
+                decimales,
+                no obligatorio, se registra el valor porcentual de la tasa a
+                aplicar
+                por dicho impuesto sobre el resultado del porcentaje base
+                retenci&oacute;n
+                IVA obtenido. </p></td>
+          </tr>
+          <tr>
+            <td class="titletable"><p class="SUBTITULO">%
+                Base retenci&oacute;n establecimiento</p></td>
+            <td><p class="PARRAFO">En
+                este campo num&eacute;rico de hasta 3 enteros y 2 decimales, no
+                obligatorio,
+                se define el valor porcentual a aplicar y calcular sobre los
+                descuentos
+                efectuados a las consignaciones o dep&oacute;sitos de los
+                establecimientos,
+                acorde con la norma correspondiente. </p></td>
+          </tr>
+          <tr>
+            <td class="titletable"><p class="SUBTITULO">Retenci&oacute;n
+                en la fuente</p></td>
+            <td><p class="PARRAFO">Este
+                campo num&eacute;rico de hasta 3 posiciones enteras y 2
+                decimales, no
+                obligatorio, permite registrar el valor porcentual de la tasa a
+                aplicar
+                por dicho impuesto sobre el resultado del porcentaje base
+                obtenido.
+              </p></td>
+          </tr>
+        </table>
+
+        <p><a href="NUH_055B2.html">Volver a Adquirente</a>| <a
+            href="NUH_055B.html">Ir
+            a Emisor</a><span>|
+          </span><a href="NUH_055B3.html"> Localizaci&oacute;n Emisor</a></p>
+
+      </section>
+      <script src="../js/menu.js"></script>
+
+      <div id="footerContainer"></div>
+      <script>
   fetch('footer.html')
     .then(response => response.text())
     .then(html => {
       document.getElementById('footerContainer').innerHTML = html;
     });
 </script>
-</body>
+    </body>
 
-</html>
+  </html>

@@ -18,14 +18,14 @@
             <img class="TITLE"  src= "../img/menu.PNG" alt="Botón de Menú ">
         </div>
     </header>
-   <div id="menuContainer"></div>
-    <script>
-      fetch('menu.html')
-        .then(response => response.text())
-        .then(html => {
-          document.getElementById('menuContainer').innerHTML = html;
-        });
-    </script>
+      <div id="menuContainer"></div>
+  <script>
+    fetch('menu.html')
+      .then(response => response.text())
+      .then(html => {
+        document.getElementById('menuContainer').innerHTML = html;
+      });
+  </script>
 
     <section>
         <div> 
@@ -34,9 +34,7 @@
                 <td  >
           <div> 
                     <p  class="TITLE">Transacciones por empresa d&eacute;bito</p>
-                  </div></td>
-              </tr>
-            </table>
+                  
             <p  class="PARRAFO">Mediante esta opci&oacute;n, la entidad puede 
               definir las principales caracter&iacute;sticas de las transacciones internas 
               y los conceptos bajo los cuales se efectuar&aacute;n los registros contables 
@@ -53,7 +51,7 @@
             <p  class="PARRAFO">El formulario cuenta con las opciones Actualizar, 
               Eliminar, Adicionar y Detalle.</p>
             
-            <p  class="PARRAFO"><b ><span class="SUBTITULO">Adicionar:</span></b> 
+            <p  class="PARRAFO"><span class="SUBTITULO">Adicionar:</span> 
               si el usuario invoca la opci&oacute;n Adicionar, se despliega un 
               nuevo formulario con los siguientes campos.</p>
             <p class="TITLE"><img src="../img/DBF_017E2.PNG"411" height="249"></p>
@@ -62,8 +60,8 @@
             <div> 
               <table>
                 <tr> 
-                  <td class="titletable"><p class="SUBTITULO"><b><span >C&oacute;digo 
-                      y nombre</span></b></p></td>
+                  <td class="titletable"><p class="SUBTITULO"><span >C&oacute;digo 
+                      y nombre</span></p></td>
                   <td><p  class="PARRAFO">Campo 
                       num&eacute;rico de hasta cuatro d&iacute;gitos, obligatorio, en el 
                       que se registra el c&oacute;digo de la transacci&oacute;n para productos 
@@ -73,7 +71,7 @@
                 </tr>
                 <tr> 
                   <td class="titletable" > 
-                    <p class="SUBTITULO"><b><span >Naturaleza</span></b></p></td>
+                    <p class="SUBTITULO"><span >Naturaleza</span></p></td>
                   <td><p  class="PARRAFO">Este 
                       campo obligatorio tipo combo permite seleccionar entre D&eacute;bito, 
                       Cr&eacute;dito o No aplica la clase o naturaleza contable del 
@@ -82,8 +80,8 @@
                 </tr>
                 <tr> 
                   <td class="titletable" > 
-                    <p class="SUBTITULO"><b><span >Abreviatura 
-                      </span></b></p></td>
+                    <p class="SUBTITULO"><span >Abreviatura 
+                      </span></p></td>
                   <td><p  class="PARRAFO">Campo 
                       alfanum&eacute;rico de hasta 10 caracteres, obligatorio, en el que 
                       se registra un nombre corto para identificar la transacci&oacute;n 
@@ -91,7 +89,7 @@
                 </tr>
                 <tr> 
                   <td class="titletable" > 
-                    <p class="SUBTITULO"><b><span >Tipo transacci&oacute;n</span></b></p></td>
+                    <p class="SUBTITULO"><span >Tipo transacci&oacute;n</span></p></td>
                   <td><p  class="PARRAFO">En 
                       este campo obligatorio tipo combo se puede seleccionar entre Transacci&oacute;n 
                       del sistema o Transacci&oacute;n del cliente para indicar 
@@ -99,7 +97,7 @@
                 </tr>
                 <tr> 
                   <td class="titletable" > 
-                    <p class="SUBTITULO"><b><span >Concepto transacci&oacute;n</span></b></p></td>
+                    <p class="SUBTITULO"><span >Concepto transacci&oacute;n</span></p></td>
                   <td><p  class="PARRAFO">Campo 
                       obligatorio con lista de valores de la que se selecciona el <a href="NUH_059B.html" >Concepto</a> 
                       asociado con la transacci&oacute;n y que le indica al sistema la manera 
@@ -108,7 +106,7 @@
                 </tr>
                 <tr> 
                   <td> 
-                    <p class="SUBTITULO"><b><span >Moneda transacci&oacute;n</span></b></p></td>
+                    <p class="SUBTITULO"><span >Moneda transacci&oacute;n</span></p></td>
                   <td><p  class="PARRAFO">En 
                       este campo obligatorio con lista de valores se selecciona la <a href="NUH_005B.html" >Moneda</a> 
                       en que se encuentra expresado el valor de las transacciones alternas. 
@@ -119,7 +117,7 @@
             </div>
             
             
-            <p  class="PARRAFO"><b ><span class="SUBTITULO">Actualizar:</span></b> 
+            <p  class="PARRAFO"><span class="SUBTITULO">Actualizar:</span> 
               si el usuario selecciona un registro e invoca la opci&oacute;n Actualizar, 
               se despliega un formulario en el cual el &uacute;nico campo NO modificable es el C&oacute;digo.</p>
             <p class="TITLE"><img src="../img/DBF_017E3.PNG"411" height="250"></p>

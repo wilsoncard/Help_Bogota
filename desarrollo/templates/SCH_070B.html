@@ -1,230 +1,250 @@
 <!DOCTYPE html>
 <html lang="es">
 
-<head>
+  <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>BANKBU®</title>
     <link rel="stylesheet" href="../css/pages.css">
     <link rel="stylesheet" href="../css/style.css">
- <link rel="icon" href="../img/ACQUIRER-logo.JPG" type="image/x-icon">
-</head>
+    <link rel="icon" href="../img/ACQUIRER-logo.JPG" type="image/x-icon">
+  </head>
 
-<body>
+  <body>
     <header>
-        <img class="logo" src="../img/logoBankbu_.PNG" alt="Logo de Mi Empresa">
-        <div id="menuBtn">
-            <img class="TITLE"  src= "../img/menu.PNG" alt="Botón de Menú ">
-        </div>
+      <img class="logo" src="../img/logoBankbu_.PNG" alt="Logo de Mi Empresa">
+      <div id="menuBtn">
+        <img class="TITLE" src="../img/menu.PNG" alt="Botón de Menú ">
+      </div>
     </header>
-   <div id="menuContainer"></div>
+    <div id="menuContainer"></div>
     <script>
-      fetch('menu.html')
-        .then(response => response.text())
-        .then(html => {
-          document.getElementById('menuContainer').innerHTML = html;
-        });
-    </script>
+    fetch('menu.html')
+      .then(response => response.text())
+      .then(html => {
+        document.getElementById('menuContainer').innerHTML = html;
+      });
+  </script>
 
     <section>
-        <div> 
-            <table>
-              <tr> 
-                <td><div> 
-                    <p  class="TITLE">Saldos a facturaci&oacute;n</p>
-                  </div></td>
-              </tr>
-            </table>
-            <p  class="PARRAFO">En este formulario que se invoca desde el 
-              <a href="SCH_060B.html" >detalle consulta de la tarjeta</a>, 
-              en el hiperv&iacute;nculo informaci&oacute;n b&aacute;sica, saldos 
-              la entidad puede consultar la informaci&oacute;n acerca de los saldos de la 
-              tarjeta presentados para cada una de las distintas fechas de corte o facturaci&oacute;n 
-              que ha tenido la tarjeta, reflejando as&iacute; el comportamiento del cr&eacute;dito 
-              a trav&eacute;s del tiempo.</p>
-            <p  class="PARRAFO">La opci&oacute;n muestra al ingresar al formulario, 
-              los saldos a la fecha y de las dos &uacute;ltimas facturaciones pero cuenta 
-              con el hiperv&iacute;nculo <a href="SCH_070B.html#BL_HISTORICO" >Consulta 
-              hist&oacute;rico de saldos </a> que le permite al usuario consultar la 
-              informaci&oacute;n de la tarjeta para fechas de facturaci&oacute;n anteriores 
-              a las presentadas inicialmente. El formulario contiene las columnas abonos/cargos 
-              que contienen las afectaciones que los diferentes conceptos tuvieron entre 
-              las diferentes fechas de corte o facturaci&oacute;n. </p>
-            <p class="TITLE"><img src="../img/SCF_070E.PNG"632" height="343"></p>
-            <p  class="TITLE">Descripción de campos</p>
-            <table>
-              <tr> 
-                <td><p class="SUBTITULO"><b>Fecha 
-                    </b></p></td>
-                <td><p  class="PARRAFO">Campo 
-                    que muestra las fechas a las cuales corresponde la informaci&oacute;n 
-                    desplegada en cada uno de los campos.</p></td>
-              </tr>
-              <tr> 
-                <td    > 
-                  <p class="SUBTITULO"><b>Edad mora</b></p></td>
-                <td><p  class="PARRAFO">Este 
-                    campo despliega la informaci&oacute;n de la edad o altura de mora que 
-                    ten&iacute;a la tarjeta para la fecha indicada.</p></td>
-              </tr>
-              <tr> 
-                <td class="titletable"><p class="SUBTITULO"><b>Capital 
-                    facturado</b></p></td>
-                <td><p  class="PARRAFO">Muestra 
-                    el valor correspondiente al capital diferido cobrado al cliente dentro 
-                    del pago m&iacute;nimo en cada una de las fechas.</p></td>
-              </tr>
-           
-              <tr> 
-                <td class="titletable" ><p class="SUBTITULO"><b>Capital 
-                    mora
-                    </b></p></td>
-                <td><p  class="PARRAFO">Campo 
-                    en el que se muestra el monto de capital no cubierto por el cliente 
-                    en las facturaciones anteriores para cada una de las fechas desplegadas.</p></td>
-              </tr>
-           
-              <tr> 
-                <td class="titletable" ><p class="SUBTITULO"><b>Inter&eacute;s 
-                    corriente
-                    </b></p></td>
-                <td><p  class="PARRAFO">En 
-                    este campo se indica el valor del inter&eacute;s de financiaci&oacute;n 
-                    que la entidad le cobra el cliente por los saldos pendientes en cada 
-                    fecha sobre los consumos efectuados y que se cobran dentro del pago 
-                    m&iacute;nimo.</p></td>
-              </tr>
-            </table>
-            <div  class="PARRAFO"> 
-              <table>
-                <tr> 
-                  <td class="titletable" ><p class="SUBTITULO"><b>Inter&eacute;s 
-                      mora
-                      </b></p></td>
-                  <td><p  class="PARRAFO">Campo 
-                      que muestra para cada fecha el monto de los intereses de sanci&oacute;n 
-                      generados por la entidad sobre las porciones de capital no cubiertas 
-                      por el cliente en facturaciones anteriores.</p></td>
-                </tr>
-   
-                <tr> 
-                  <td class="titletable"><p class="SUBTITULO"><b>Inter&eacute;s 
-                      extracontable
-                      </b></p></td>
-                  <td><p  class="PARRAFO">En 
-                      este campo se indica el monto de los intereses que de acuerdo con 
-                      la altura de mora o la calificaci&oacute;n de la tarjeta, se causan 
-                      sobre los saldos de la tarjeta en cada fecha o corte.</p></td>
-                </tr>
-                <tr> 
-                  <td class="titletable" ><p class="SUBTITULO"><b>Saldo 
-                      a favor
-                      </b></p></td>
-                  <td><p  class="PARRAFO">Despliega 
-                      el monto a favor del cliente en cada fecha o corte, resultante de 
-                      pagos hechos en exceso, reversiones de transacciones de consumos y 
-                      ajustes entre otras posibles causas.</p></td>
-                </tr>
-   
-                <tr> 
-                  <td class="titletable" ><p class="SUBTITULO"><b>Pago 
-                      m&iacute;nimo
-                      </b></p></td>
-                  <td><p  class="PARRAFO">Campo 
-                      que indica para cada fecha el monto que el actor debe cancelar para 
-                      cubrir la obligaci&oacute;n y no incurrir en mora.</p></td>
-                </tr>
-   
-                <tr> 
-                  <td class="titletable" ><p class="SUBTITULO"><b>Capital 
-                      no facturado
-                      </b></p></td>
-                  <td><p  class="PARRAFO">Muestra 
-                      el monto de los consumos diferidos pendientes de facturar en cada 
-                      corte y que no han sido incluidos a&uacute;n dentro del pago m&iacute;nimo.</p></td>
-                </tr>
-   
-                <tr> 
-                  <td class="titletable" ><p class="SUBTITULO"><b>Saldo 
-                      total
-                      </b></p></td>
-                  <td><p  class="PARRAFO">Este 
-                      campo contiene el valor total adeudado por el cliente a la entidad 
-                      en cada fecha o corte, como resultado de las utilizaciones y consumos 
-                      hechos con la tarjeta.</p></td>
-                </tr>
-   
-                <tr> 
-                  <td class="titletable" ><p class="SUBTITULO"><b>Inter&eacute;s 
-                      provisional
-                      </b></p></td>
-                  <td><p  class="PARRAFO">Despliega 
-                      para cada fecha el monto de los intereses calculados de manera provisional 
-                      sobre transacciones que tengan la condici&oacute;n de condonar intereses 
-                      el primer mes, de acuerdo con lo definido en <a href="MEH_003B.html" >transacciones 
-                      por empresa</a>.</p></td>
-                </tr>
-   
-                <tr> 
-                  <td class="titletable" ><p class="SUBTITULO"><b>Autorizaciones
-                      </b></p></td>
-                  <td><p  class="PARRAFO">Este 
-                      campo que aplica solo para la fecha actual y se&ntilde;ala 
-                      el monto de las autorizaciones o aprobaciones otorgadas por la entidad 
-                      y que se encuentran vigentes o sin cruzar.</p></td>
-                </tr>
-   
-                <tr> 
-                  <td class="titletable" ><p class="SUBTITULO"><b>Disponible
-                      </b></p></td>
-                  <td><p  class="PARRAFO">Campo 
-                      que aplica &uacute;nicamente para la fecha actual y en el 
-                      que se muestra el valor del cupo que puede ser utilizado por el cliente 
-                      para efectuar consumos con la tarjeta.</p></td>
-                </tr>
-   
-                <tr> 
-                  <td class="titletable" ><p class="SUBTITULO"><b>Cupo 
-                      asignado
-                      </b></p></td>
-                  <td><p  class="PARRAFO">En 
-                      este campo que aplica solo para la fecha actual se muestra el cupo 
-                      actual asignado a la tarjeta para la l&iacute;nea principal y las 
-                      l&iacute;neas independientes.</p></td>
-                </tr>
-              </table>
-            </div>
-            <p  class="PARRAFO"><a name="BL_HISTORICO"></a></p>
-            <p><span class="SUBTITULO"><span 
-        ><b >Consulta 
-              hist&oacute;rico de saldos</b></span><span 
-        >:</span></span>  
-              si el actor invoca el <span class="PARRAFO"> hiperv&iacute;nculo Consulta 
-              hist&oacute;rico de saldos, se despliega un nuevo formulario en el cual 
-              se muestra al usuario la informaci&oacute;n correspondiente a los saldos que 
-              ten&iacute;a la tarjeta en las fechas de facturaci&oacute;n anteriores a las 
-              presentadas en el formulario inicial y que contiene tambi&eacute;n una columna 
-              denominada abonos/caragos que muestra las afectaciones que tuvieron los diferentes 
-              conceptos entre cada una de las facturaciones.</span></p>
-            <p>Los &uacute;nicos 
-              campos adicionales que contiene este formulario son el Extracupo 
-              que indica los montos que por este concepto fueron utilizados por el cliente 
-              en cada fecha y Sobrecupo que despliega seg&uacute;n el caso los 
-              montos en los cuales la tarjeta se excedi&oacute; en los consumos o utilizaciones 
-              respecto del cupo asignado para cada fecha.</p>
-            <p  src="../img/MEF_002E5.PNG"><img src="../img/SCF_070E1.PNG"633" height="344"></p>
-                .<div>
-                </section>
-    <script src="../js/menu.js"></script>
+      <div>
 
-    <div id="footerContainer"></div>
-<script>
+        <p class="TITLE">Saldos a facturaci&oacute;n</p>
+
+        <p class="PARRAFO">En este formulario que se invoca desde la <a
+            href="SCH_060B.html">Consulta
+            centralizada de tarjeta</a> / Saldos, la entidad puede consultar la
+          información de los saldos de la tarjeta, presentados para cada una de
+          las distintas fechas de corte o facturación que ha tenido la tarjeta,
+          reflejando así el comportamiento del crédito a través del tiempo.</p>
+        <p class="PARRAFO">La opción muestra al ingresar al formulario, los
+          saldos a la fecha y de las dos últimas facturaciones, adicional a
+          ello, se dispone el enlace <a
+            href="SCH_070B.html#BL_HISTORICO">Consulta
+            hist&oacute;rico de saldos </a> que le permite
+          al usuario consultar la información de la tarjeta para fechas de
+          facturación anteriores a las presentadas inicialmente. El formulario
+          contiene las columnas abonos/cargos que contienen las afectaciones que
+          los diferentes conceptos tuvieron entre las diferentes fechas de corte
+          o facturación. </p>
+        <p class="TITLE"><img src="../img/SCF_070E.PNG"></p>
+        <p class="TITLE">Descripción de campos</p>
+        <table>
+          <tr>
+            <td><p class="SUBTITULO">Fecha
+              </p></td>
+            <td><p class="PARRAFO">Campo
+                que muestra las fechas a las cuales corresponde la
+                informaci&oacute;n
+                desplegada en cada uno de los campos.</p></td>
+          </tr>
+          <tr>
+            <td>
+              <p class="SUBTITULO">Edad mora</p></td>
+            <td><p class="PARRAFO">Este
+                campo despliega la informaci&oacute;n de la edad o altura de
+                mora que
+                ten&iacute;a la tarjeta para la fecha indicada.</p></td>
+          </tr>
+          <tr>
+            <td class="titletable"><p class="SUBTITULO">Capital
+                facturado</p></td>
+            <td><p class="PARRAFO">Muestra
+                el valor correspondiente al capital diferido cobrado al cliente
+                dentro
+                del pago m&iacute;nimo en cada una de las fechas.</p></td>
+          </tr>
+
+          <tr>
+            <td class="titletable"><p class="SUBTITULO">Capital
+                mora
+              </p></td>
+            <td><p class="PARRAFO">Campo
+                en el que se muestra el monto de capital no cubierto por el
+                cliente
+                en las facturaciones anteriores para cada una de las fechas
+                desplegadas.</p></td>
+          </tr>
+
+          <tr>
+            <td class="titletable"><p class="SUBTITULO">Inter&eacute;s
+                corriente
+              </p></td>
+            <td><p class="PARRAFO">En
+                este campo se indica el valor del inter&eacute;s de
+                financiaci&oacute;n
+                que la entidad le cobra el cliente por los saldos pendientes en
+                cada
+                fecha sobre los consumos efectuados y que se cobran dentro del
+                pago
+                m&iacute;nimo.</p></td>
+          </tr>
+        </table>
+        <div class="PARRAFO">
+          <table>
+            <tr>
+              <td class="titletable"><p class="SUBTITULO">Inter&eacute;s
+                  mora
+                </p></td>
+              <td><p class="PARRAFO">Campo
+                  que muestra para cada fecha el monto de los intereses de
+                  sanci&oacute;n
+                  generados por la entidad sobre las porciones de capital no
+                  cubiertas
+                  por el cliente en facturaciones anteriores.</p></td>
+            </tr>
+
+            <tr>
+              <td class="titletable"><p class="SUBTITULO">Inter&eacute;s
+                  extracontable
+                </p></td>
+              <td><p class="PARRAFO">En
+                  este campo se indica el monto de los intereses que de acuerdo
+                  con
+                  la altura de mora o la calificaci&oacute;n de la tarjeta, se
+                  causan
+                  sobre los saldos de la tarjeta en cada fecha o corte.</p></td>
+            </tr>
+            <tr>
+              <td class="titletable"><p class="SUBTITULO">Saldo
+                  a favor
+                </p></td>
+              <td><p class="PARRAFO">Despliega
+                  el monto a favor del cliente en cada fecha o corte, resultante
+                  de
+                  pagos hechos en exceso, reversiones de transacciones de
+                  consumos y
+                  ajustes entre otras posibles causas.</p></td>
+            </tr>
+
+            <tr>
+              <td class="titletable"><p class="SUBTITULO">Pago
+                  m&iacute;nimo
+                </p></td>
+              <td><p class="PARRAFO">Campo
+                  que indica para cada fecha el monto que el actor debe cancelar
+                  para
+                  cubrir la obligaci&oacute;n y no incurrir en mora.</p></td>
+            </tr>
+
+            <tr>
+              <td class="titletable"><p class="SUBTITULO">Capital
+                  no facturado
+                </p></td>
+              <td><p class="PARRAFO">Muestra
+                  el monto de los consumos diferidos pendientes de facturar en
+                  cada
+                  corte y que no han sido incluidos a&uacute;n dentro del pago
+                  m&iacute;nimo.</p></td>
+            </tr>
+
+            <tr>
+              <td class="titletable"><p class="SUBTITULO">Saldo
+                  total
+                </p></td>
+              <td><p class="PARRAFO">Este
+                  campo contiene el valor total adeudado por el cliente a la
+                  entidad
+                  en cada fecha o corte, como resultado de las utilizaciones y
+                  consumos
+                  hechos con la tarjeta.</p></td>
+            </tr>
+
+            <tr>
+              <td class="titletable"><p class="SUBTITULO">Inter&eacute;s
+                  provisional
+                </p></td>
+              <td><p class="PARRAFO">Despliega
+                  para cada fecha el monto de los intereses calculados de manera
+                  provisional
+                  sobre transacciones que tengan la condici&oacute;n de condonar
+                  intereses
+                  el primer mes, de acuerdo con lo definido en <a
+                    href="MEH_003B.html">transacciones
+                    por empresa</a>.</p></td>
+            </tr>
+
+            <tr>
+              <td class="titletable"><p class="SUBTITULO">Autorizaciones
+                </p></td>
+              <td><p class="PARRAFO">Este
+                  campo que aplica solo para la fecha actual y se&ntilde;ala
+                  el monto de las autorizaciones o aprobaciones otorgadas por la
+                  entidad
+                  y que se encuentran vigentes o sin cruzar.</p></td>
+            </tr>
+
+            <tr>
+              <td class="titletable"><p class="SUBTITULO">Disponible
+                </p></td>
+              <td><p class="PARRAFO">Campo
+                  que aplica &uacute;nicamente para la fecha actual y en el
+                  que se muestra el valor del cupo que puede ser utilizado por
+                  el cliente
+                  para efectuar consumos con la tarjeta.</p></td>
+            </tr>
+
+            <tr>
+              <td class="titletable"><p class="SUBTITULO">Cupo
+                  asignado
+                </p></td>
+              <td><p class="PARRAFO">En
+                  este campo que aplica solo para la fecha actual se muestra el
+                  cupo
+                  actual asignado a la tarjeta para la l&iacute;nea principal y
+                  las
+                  l&iacute;neas independientes.</p></td>
+            </tr>
+          </table>
+        </div>
+        <p class="PARRAFO"><a name="BL_HISTORICO"></a></p>
+        <p class="PARRAFO"><span class="SUBTITULO">Consulta
+            hist&oacute;rico de saldos:</span>
+          Al invocar este enlace, se despliega un nuevo formulario, en el cual
+          se muestra la información correspondiente a los saldos que tenía la
+          tarjeta, en las fechas de facturación anteriores a las presentadas en
+          el formulario inicial, y que contiene también una columna denominada
+          Cargos/Abonos, que muestra las afectaciones que tuvieron los
+          diferentes conceptos entre cada una de las facturaciones.</p>
+        <p class="PARRAFO">Los únicos campos adicionales que contiene este
+          formulario, respecto del de arriba ilustrados, son Extracupo que
+          indica los montos que por este concepto fueron utilizados por el
+          cliente en cada fecha, y Sobrecupo que despliega según el caso los
+          montos en los cuales la tarjeta se excedió en los consumos o
+          utilizaciones respecto del cupo asignado para cada fecha.</p>
+        <p class="TITLE"><img src="../img/SCF_070E1.PNG"></p>
+        <div>
+        </section>
+        <script src="../js/menu.js"></script>
+
+        <div id="footerContainer"></div>
+        <script>
   fetch('footer.html')
     .then(response => response.text())
     .then(html => {
       document.getElementById('footerContainer').innerHTML = html;
     });
 </script>
-</body>
+      </body>
 
-</html>
+    </html>

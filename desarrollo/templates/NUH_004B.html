@@ -18,26 +18,20 @@
       <img class="TITLE" src="../img/menu.PNG" alt="Botón de Menú ">
     </div>
   </header>
-  <div id="menuContainer"></div>
-    <script>
-      fetch('menu.html')
-        .then(response => response.text())
-        .then(html => {
-          document.getElementById('menuContainer').innerHTML = html;
-        });
-    </script>
+    <div id="menuContainer"></div>
+  <script>
+    fetch('menu.html')
+      .then(response => response.text())
+      .then(html => {
+        document.getElementById('menuContainer').innerHTML = html;
+      });
+  </script>
 
   <section>
     <div>
-      <table>
-        <tr>
-          <td>
-            <div>
+      
               <p class="TITLE">Tipos de Direcci&oacute;n</p>
-            </div>
-          </td>
-        </tr>
-      </table>
+
       <p class="PARRAFO">Mediante esta funci&oacute;n se habilita
         la consulta y mantenimiento de la tabla en la cual se almacenan los c&oacute;digos
         de los diferentes tipos de direcciones estandarizados y por ende m&aacute;s
@@ -47,7 +41,7 @@
 
       <p class="PARRAFO">El formulario contiene las opciones Actualizar,
         Eliminar y Adicionar. </p>
-      <p class="PARRAFO"><span class="SUBTITULO"><b><span>Adicionar</span></b><span 
+      <p class="PARRAFO"><span class="SUBTITULO">Adicionar</span><span 
         >:</span><span 
         ></span></span><span 
         > 
@@ -56,15 +50,15 @@
             <p  class="TITLE">Descripci&oacute;n de campos</p>
             <table>
               <tr> 
-                <td class="titletable"><p class="SUBTITULO"><b><span 
-        >C&oacute;digo</span></b></p></td>
+                <td class="titletable"><p class="SUBTITULO"><span 
+        >C&oacute;digo</span></p></td>
                 <td><p  class="PARRAFO">Campo 
                     num&eacute;rico de tres d&iacute;gitos, obligatorio, que corresponde 
                     al c&oacute;digo asignado a cada uno de los tipos de direcci&oacute;n.</p></td>
               </tr>
               <tr> 
-                <td  class="titletable" ><p class="SUBTITULO"><b><span 
-        >Abreviatura</span></b></p></td>
+                <td  class="titletable" ><p class="SUBTITULO"><span 
+        >Abreviatura</span></p></td>
                 <td><p  class="PARRAFO">Campo 
                     alfanum&eacute;rico de 10 posiciones, obligatorio, en el cual se registra 
                     el mnem&oacute;nico o representaci&oacute;n del nombre asociado al c&oacute;digo 
@@ -72,8 +66,8 @@
                     consultas. </p></td>
               </tr>
               <tr> 
-                <td  class="titletable" ><p class="SUBTITULO"><b><span 
-        >Descripci&oacute;n</span></b></p></td>
+                <td  class="titletable" ><p class="SUBTITULO"><span 
+        >Descripci&oacute;n</span></p></td>
                 <td><p  class="PARRAFO">En 
                     este campo alfanum&eacute;rico de 30 posiciones, obligatorio, se registra 
                     el nombre asociado al c&oacute;digo de cada tipo de direcci&oacute;n.
@@ -81,9 +75,9 @@
               </tr>
            
               <tr> 
-                <td  class="titletable" ><p class="SUBTITULO"><b><span 
+                <td  class="titletable" ><p class="SUBTITULO"><span 
         >C&oacute;digo 
-                    interno </span></b></p></td>
+                    interno </span></p></td>
                 <td><p  class="PARRAFO">Campo 
                     obligatorio tipo combo en el cual se selecciona la clase de direcci&oacute;n 
                     que el sistema (programa) reconocer&aacute;, independientemente de los 
@@ -94,8 +88,8 @@
               </tr>
             </table>
             <div>
-              <p class="PARRAFO"><b ><span class="SUBTITULO"> 
-                Actualizar</span></b>: Si el usuario invoca la opci&oacute;n Actualizar 
+              <p class="PARRAFO"><span class="SUBTITULO"> 
+                Actualizar</span>: Si el usuario invoca la opci&oacute;n Actualizar 
                 se despliega un nuevo formulario en el cual los &uacute;nicos campos modificables 
                 son Abreviatura, Descripci&oacute;n y C&oacute;digo interno.
               </p>

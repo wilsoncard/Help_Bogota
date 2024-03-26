@@ -1,111 +1,128 @@
 <!DOCTYPE html>
 <html lang="es">
 
-<head>
+  <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>BANKBU®</title>
     <link rel="stylesheet" href="../css/pages.css">
     <link rel="stylesheet" href="../css/style.css">
- <link rel="icon" href="../img/ACQUIRER-logo.JPG" type="image/x-icon">
-</head>
+    <link rel="icon" href="../img/ACQUIRER-logo.JPG" type="image/x-icon">
+  </head>
 
-<body>
+  <body>
     <header>
-        <img class="logo" src="../img/logoBankbu_.PNG" alt="Logo de Mi Empresa">
-        <div id="menuBtn">
-            <img class="TITLE"  src= "../img/menu.PNG" alt="Botón de Menú ">
-        </div>
+      <img class="logo" src="../img/logoBankbu_.PNG" alt="Logo de Mi Empresa">
+      <div id="menuBtn">
+        <img class="TITLE" src="../img/menu.PNG" alt="Botón de Menú ">
+      </div>
     </header>
-   <div id="menuContainer"></div>
+    <div id="menuContainer"></div>
     <script>
-      fetch('menu.html')
-        .then(response => response.text())
-        .then(html => {
-          document.getElementById('menuContainer').innerHTML = html;
-        });
-    </script>
+    fetch('menu.html')
+      .then(response => response.text())
+      .then(html => {
+        document.getElementById('menuContainer').innerHTML = html;
+      });
+  </script>
     <section>
-        <center>
-            <div> 
-                <table>
-                  
-                        <p  class="TITLE">L&iacute;neas de consumo </p>
-    
-                </table>
-                <p class="PARRAFO">A trav&eacute;s de esta opci&oacute;n se relacionan las distintas 
-                  l&iacute;neas de cr&eacute;dito ofrecidas por la entidad y que pueden ser 
-                  asignadas o no a cada producto.</p>
-                <p class="PARRAFO">El formulario contiene las opciones Actualizar, Eliminar 
-                  y Adicionar.</p>
-                <p class="TITLE"><img src="../img/MEF_001B.PNG"769" ></p>
-                
-                <p  class="PARRAFO"><span class="SUBTITULO">Adicionar:</span>  Si el usuario invoca la opci&oacute;n Adicionar se despliega un formulario con los siguientes campos<span 
-        >:</span></p>
-                <p class="TITLE"><img src="../img/MEF_001B1.PNG"313" height="138"></p>
-                
-                <table '>
-                  <tr> 
-                    <td class="titletable"><p class="SUBTITULO"><b><span 
-        >L&iacute;nea 
-                        de cr&eacute;dito</span></b></p></td>
-                    <td><p class="PARRAFO">Campo obligatorio alfanum&eacute;rico de dos d&iacute;gitos, que permite asignar una identificaci&oacute;n 
-                        a cada l&iacute;nea de cr&eacute;dito con las cuales operar&aacute; 
-                        el producto.</p></td>
-                  </tr>
-                  <tr> 
-                    <td class="titletable"><p class="SUBTITULO"><b><span 
-        >Nombre</span></b></p></td>
-                    <td><p class="PARRAFO">En 
-                        este campo obligatorio se registra el nombre de cada l&iacute;nea de cr&eacute;dito 
-                        una vez asignados sus correspondientes c&oacute;digos.</p></td>
-                  </tr>
-                  <tr> 
-                    <td  class="titletable" ><p class="SUBTITULO"><b><span 
-        >Concepto 
-                        </span></b></p></td>
-                    <td><p class="PARRAFO">Campo 
-                        obligatorio que permite asignar para cada l&iacute;nea de cr&eacute;dito definida 
-                        por la entidad, el uso de la misma seleccionado de la lista de valores 
-                        adjunta y que puede ser Compras, Avances en efectivo 
-                        u Otros; adicionalmente, &eacute;ste &uacute;ltimo puede ser 
-                        asociado a l&iacute;neas especiales tales como Salud, Turismo, Educaci&oacute;n, 
-                        etc. </p></td>
-                  </tr>
-                  <tr> 
-                    <td class="titletable"><p class="SUBTITULO"><b><span 
-        >Posici&oacute;n</span></b></p></td>
-                    <td><p class="PARRAFO">En 
-                        este campo num&eacute;rico de 3 d&iacute;gitos, obligatorio, se define 
-                        para cada una de las l&iacute;neas de cr&eacute;dito, el orden de prioridad 
-                        o importancia para establecer jerarqu&iacute;as entre ellas de acuerdo 
-                        con cada uno de los productos definidos.</p></td>
-                  </tr>
-                  <tr>
-                    <td class="titletable"><p class="SUBTITULO"><b><span 
-        >N&uacute;mero de cuotas revolventes </span></span></b></p></td>
-                    <td><p class="PARRAFO">Campo num&eacute;rico de 3 posiciones, no             obligatorio, en el cual se registra la cantidad de cuotas revolventes en             las que por defecto se difiere el saldo del cliente si el sistema de             c&aacute;lculo del pago m&iacute;nimo es revolvente.</p></td>
-                  </tr>
-                </table>
-                
-                <p  class="PARRAFO"><span class="PARRAFO"><span class="SUBTITULO">Actualizar:</span>  
-                  Si el usuario invoca la opci&oacute;n Actualizar se despliega un nuevo formulario 
-                  en el cual los &uacute;nicos campos modificables son: Nombre, Concepto y Posici&oacute;n.</span></p>
-    
-                <p class="TITLE"><img src="../img/MEF_001B2.PNG"310" height="135"></p>
-               
-        </center>
+
+      <div>
+        <table>
+
+          <p class="TITLE">L&iacute;neas de consumo </p>
+
+        </table>
+        <p class="PARRAFO">A trav&eacute;s de esta opci&oacute;n se relacionan
+          las distintas
+          l&iacute;neas de cr&eacute;dito ofrecidas por la entidad y que pueden
+          ser
+          asignadas o no a cada producto.</p>
+        <p class="PARRAFO">El formulario contiene las opciones Actualizar,
+          Eliminar
+          y Adicionar.</p>
+        <p class="TITLE"><img src="../img/MEF_001B.PNG"></p>
+
+        <p class="PARRAFO"><span class="SUBTITULO">Adicionar:</span> Si el
+          usuario invoca la opci&oacute;n Adicionar se despliega un formulario
+          con los siguientes campos<span>:</span></p>
+        <p class="TITLE"><img src="../img/MEF_001B1.PNG"></p>
+
+        <table '>
+          <tr>
+            <td class="titletable"><p class="SUBTITULO"><span>L&iacute;nea
+                  de cr&eacute;dito</span></p></td>
+            <td><p class="PARRAFO">Campo obligatorio alfanum&eacute;rico de dos
+                d&iacute;gitos, que permite asignar una identificaci&oacute;n
+                a cada l&iacute;nea de cr&eacute;dito con las cuales
+                operar&aacute;
+                el producto.</p></td>
+          </tr>
+          <tr>
+            <td class="titletable"><p
+                class="SUBTITULO"><span>Nombre</span></p></td>
+            <td><p class="PARRAFO">En
+                este campo obligatorio se registra el nombre de cada
+                l&iacute;nea de cr&eacute;dito
+                una vez asignados sus correspondientes c&oacute;digos.</p></td>
+          </tr>
+          <tr>
+            <td class="titletable"><p class="SUBTITULO"><span>Concepto
+                </span></p></td>
+            <td><p class="PARRAFO">Campo
+                obligatorio que permite asignar para cada l&iacute;nea de
+                cr&eacute;dito definida
+                por la entidad, el uso de la misma seleccionado de la lista de
+                valores
+                adjunta y que puede ser Compras, Avances en efectivo
+                u Otros; adicionalmente, &eacute;ste &uacute;ltimo puede ser
+                asociado a l&iacute;neas especiales tales como Salud, Turismo,
+                Educaci&oacute;n,
+                etc. </p></td>
+          </tr>
+          <tr>
+            <td class="titletable"><p
+                class="SUBTITULO"><span>Posici&oacute;n</span></p></td>
+            <td><p class="PARRAFO">En
+                este campo num&eacute;rico de 3 d&iacute;gitos, obligatorio, se
+                define
+                para cada una de las l&iacute;neas de cr&eacute;dito, el orden
+                de prioridad
+                o importancia para establecer jerarqu&iacute;as entre ellas de
+                acuerdo
+                con cada uno de los productos definidos.</p></td>
+          </tr>
+          <tr>
+            <td class="titletable"><p class="SUBTITULO"><span>N&uacute;mero de
+                  cuotas revolventes </span></span></p></td>
+          <td><p class="PARRAFO">Campo num&eacute;rico de 3 posiciones, no
+              obligatorio, en el cual se registra la cantidad de cuotas
+              revolventes en las que por defecto se difiere el saldo del cliente
+              si el sistema de c&aacute;lculo del pago m&iacute;nimo es
+              revolvente.</p></td>
+        </tr>
+      </table>
+
+      <p class="PARRAFO"><span class="PARRAFO"><span
+            class="SUBTITULO">Actualizar:</span>
+          Si el usuario invoca la opci&oacute;n Actualizar se despliega un nuevo
+          formulario
+          en el cual los &uacute;nicos campos modificables son: Nombre, Concepto
+          y Posici&oacute;n.</span></p>
+
+      <p class="TITLE"><img src="../img/MEF_001B2.PNG"></p>
+
     </section>
     <script src="../js/menu.js"></script>
 
     <div id="footerContainer"></div>
-<script>
+    <script>
   fetch('footer.html')
     .then(response => response.text())
     .then(html => {
       document.getElementById('footerContainer').innerHTML = html;
     });
 </script>
-</body>
+  </body>
 
 </html>

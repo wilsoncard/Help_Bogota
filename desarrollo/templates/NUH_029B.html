@@ -17,27 +17,27 @@
       <img class="TITLE" src="../img/menu.PNG" alt="Botón de Menú ">
     </div>
   </header>
-    <div id="menuContainer"></div>
-    <script>
-      fetch('menu.html')
-        .then(response => response.text())
-        .then(html => {
-          document.getElementById('menuContainer').innerHTML = html;
-        });
-    </script>  <section>
-    <center>
+      <div id="menuContainer"></div>
+  <script>
+    fetch('menu.html')
+      .then(response => response.text())
+      .then(html => {
+        document.getElementById('menuContainer').innerHTML = html;
+      });
+  </script>  <section>
+    
       <div>
         <table>
 
-          <center>
+          
             <p class="TITLE">Autorización y restricción </p>
-          </center>
+          
 
         </table>
         <p>Mediante esta funci&oacute;n se habilita la consulta de la tabla en la cual se almacenan los diferentes Roles
           de <A href="NUH_010B.html" >usuario</A> definidos en el LDAP, con el Horario establecido
           para cada uno: Diurno, Nocturno o Total, definiendo la totalidad de las URL's del
-          sistema para ser asociadas a cada rol, as&iacute; como las <span class="#4">Restricciones</span></span><span>
+          sistema para ser asociadas a cada rol, as&iacute; como las <span class="#4">Restricciones</span></span>
             que cada uno de &eacute;stos tendr&aacute; al interactuar con el sistema.</span></p>
         <p>El formulario contiene las opciones <a href="#Administracion" >Administraci&oacute;n de
             recursos</a>, <a href="NUH_029B1.html" >Asociaci&oacute;n rol y recursos</a>, y <a
@@ -45,39 +45,39 @@
           b&uacute;squeda.</p>
         <p class="TITLE"><img src="../img/NUF_029B1.PNG" 689" height="494"></p>
 
-        <p><span class="SUBTITULO"><b>Filtro:</b></span>  Se pueden realizar consultas a trav&eacute;s
+        <p><span class="SUBTITULO">Filtro:</span>  Se pueden realizar consultas a trav&eacute;s
           de las siguientes opciones:</p>
         <p class="TITLE"><img src="../img/NUF_029B.PNG" 457" height="102"></p>
 
         <table '>
                   <tr>
-                    <td  class="titletable" ><p class="SUBTITULO"><b><span 
-        >Rol</span></b></p></td>
+                    <td  class="titletable" ><p class="SUBTITULO"><span 
+        >Rol</span></p></td>
                     <td><p class="PARRAFO">Campo alfanum&eacute;rico de 30 posiciones,   obligatorio, en el que se ingresa el nombre del rol que se desea consultar. La b&uacute;squeda se puede realizar acompa&ntilde;ada del s&iacute;mbolo %. </p>
                     </td>
                   </tr>
                   <tr>
-                    <td class="titletable"><p class="SUBTITULO"><b><span 
-        >Tipo horario </span></b></p></td>
+                    <td class="titletable"><p class="SUBTITULO"><span 
+        >Tipo horario </span></p></td>
                     <td><p class="PARRAFO">Para poder filtrar por el Tipo horario, el usuario puede seleccionar las opciones Diurno, Nocturno o Total.</p></td>
                   </tr>
                 </table>
-                .
+                
                 <center >
                     <p id="administracion"><a name="Administracion"></a>Administración de recursos</p>
-                </center>
+                
                 <p class="PARRAFO">A trav&eacute;s de este formulario, el sistema permite ingresar todas las URL que ser&aacute;n utilizadas y asociadas a cada uno de los roles a trav&eacute;s de la opci&oacute;n de <a href="NUH_029B1.html" >Asociaci&oacute;n de rol y recursos</a></span> . Las opciones del men&uacute; y los v&iacute;nculos que haya dentro de ellas deben ser ingresados a trav&eacute;s de cada URL correspondiente. Si &eacute;stas no est&aacute;n parametrizadas el sistema no permitir&aacute; el ingreso a la opci&oacute;n.</p>
                 <p>El formulario contiene las opciones Administraci&oacute;n de recursos, Asociaci&oacute;n rol y recursos, y Restricciones. Adicionalmente cuenta con un filtro de b&uacute;squeda.</p>
                 <p class="TITLE"><img src="../img/NUF_029B3.PNG"689" height="461"></p>
                 
-                <p><span class="SUBTITULO"><b>Filtro:</b></span>  Se pueden realizar consultas a trav&eacute;s 
+                <p><span class="SUBTITULO">Filtro:</span>  Se pueden realizar consultas a trav&eacute;s 
                 de las siguientes opciones:</p>
                 <p class="TITLE"><img src="../img/NUF_029B2.PNG"688" height="95"></p>
                 
                 <table '>
           <tr>
             <td class="titletable">
-              <p class="SUBTITULO"><b>Caso de uso</b></p>
+              <p class="SUBTITULO">Caso de uso</p>
             </td>
             <td>
               <p class="PARRAFO">Campo que debe aceptar hasta 100 caracteres alfanum&eacute;ricos. Se muestra sin lista
@@ -86,7 +86,7 @@
           </tr>
           <tr>
             <td class="titletable">
-              <p class="SUBTITULO"><b>Rol de negocios</b></p>
+              <p class="SUBTITULO">Rol de negocios</p>
             </td>
             <td>
               <p class="PARRAFO">Para poder filtrar por el Rol de negocios, el campo debe mostrar un combo con las
@@ -95,7 +95,7 @@
           </tr>
           <tr>
             <td class="titletable">
-              <p class="SUBTITULO"><b>URL Menú</b></p>
+              <p class="SUBTITULO">URL Menú</p>
             </td>
             <td>
               <p class="PARRAFO">Para poder filtrar por el campo URL Men&uacute;, el campo debe mostrar un combo con las
@@ -104,26 +104,26 @@
           </tr>
         </table>
 
-        <p class="PARRAFO"><span class="SUBTITULO"><b>Adicionar:</b></span>  Si el usuario invoca la opci&oacute;n
-          Adicionar se despliega un formulario con los siguientes campos<span>:</span> 
+        <p class="PARRAFO"><span class="SUBTITULO">Adicionar:</span>  Si el usuario invoca la opci&oacute;n
+          Adicionar se despliega un formulario con los siguientes campos:</span> 
         </p>
         <p class="TITLE"><img src="../img/NUF_029B4.PNG" 727" height="253"></p>
 
         <table '>
                   <tr> 
-                    <td class="titletable"><p class="SUBTITULO"><b>URL</b></p></td>
+                    <td class="titletable"><p class="SUBTITULO">URL</p></td>
                     <td><p class="PARRAFO">Este campo permite ser diligenciado con cualquier dato alfanum&eacute;rico de m&aacute;ximo 250 caracteres y debe permitir may&uacute;sculas y min&uacute;sculas. En &eacute;l se indica la ubicaci&oacute;n de cada uno de los formularios. </p></td>
                   </tr>
                   <tr> 
-                    <td class="titletable"><p class="SUBTITULO"><b>URL menú</b></p></td>
+                    <td class="titletable"><p class="SUBTITULO">URL menú</p></td>
                     <td><p class="PARRAFO">El campo debe mostrar un combo con las siguientes opciones: S&iacute; y No. En &eacute;l se indica si el formulario de la URL se mostrar&aacute; directamente desde el men&uacute; principal. </p></td>
                   </tr>
                   <tr> 
-                    <td  class="titletable" ><p class="SUBTITULO"><b>Caso de uso nuevo </b></p></td>
+                    <td  class="titletable" ><p class="SUBTITULO">Caso de uso nuevo </p></td>
                     <td><p class="PARRAFO">A trav&eacute;s de esta lista de valores de S&iacute; y No, el sistema permite establecer si la URL ingresada corresponde o no a un nuevo caso de uso. </p></td>
                   </tr>
                   <tr> 
-                    <td class="titletable"><p class="SUBTITULO"><b>Caso de uso</b></p></td>
+                    <td class="titletable"><p class="SUBTITULO">Caso de uso</p></td>
                     <td><p class="PARRAFO">Este campo depende de lo seleccionado en la lista anterior. Cuando en el campo '
           Caso de uso nuevo' se selecciona 'No' , este campo muestra lista de valores con todas las URL ingresadas en
           este mismo caso. Cuando est&aacute; en 'S&iacute;' , acepta hasta 100 caracteres alfanum&eacute;ricos y no
@@ -132,7 +132,7 @@
           </tr>
           <tr>
             <td class="titletable">
-              <p class="SUBTITULO"><b>Tipo de URL</b></p>
+              <p class="SUBTITULO">Tipo de URL</p>
             </td>
             <td>
               <p class="PARRAFO">El campo muestra un combo con las siguientes opciones (JSP, JAVA, XML, WSL).</p>
@@ -140,7 +140,7 @@
           </tr>
           <tr>
             <td class="titletable">
-              <p class="SUBTITULO"><b>Rol de negocios</b></p>
+              <p class="SUBTITULO">Rol de negocios</p>
             </td>
             <td>
               <p class="PARRAFO">Este campo contiene lista de valores con las siguientes opciones (N&uacute;cleo,
@@ -149,7 +149,7 @@
           </tr>
           <tr>
             <td class="titletable">
-              <p class="SUBTITULO"><b>Afecta batch</b></p>
+              <p class="SUBTITULO">Afecta batch</p>
             </td>
             <td>
               <p class="PARRAFO">El campo 'Afecta batch' muestra un combo con las siguientes opciones (S&iacute; y No).
@@ -173,15 +173,15 @@
         <p class="TITLE"><img src="../img/NUF_029B5.PNG" 740" height="253"></p>
 
         <p><span class="SUBTITULO">Detalle:</span>  Si el usuario invoca la opci&oacute;n Detalle se despliega el
-          siguiente formulario: <span>
+          siguiente formulario: 
 
           </span></p>
         <p class="TITLE"><img src="../img/NUF_029B6.PNG" 658" height="132"></p>
 
-        <p><a href="NUH_029B1.html">Asociaci&oacute;n rol y recursos</a><span><b> | </b></span><a
+        <p><a href="NUH_029B1.html">Asociaci&oacute;n rol y recursos</a> | </span><a
             href="NUH_029B2.html">Restricciones</a></p>
 
-    </center>
+    
   </section>
   <script src="../js/menu.js"></script>
 

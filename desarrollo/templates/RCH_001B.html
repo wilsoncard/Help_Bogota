@@ -17,81 +17,77 @@
             <img class="TITLE"  src= "../img/menu.PNG" alt="Botón de Menú ">
         </div>
     </header>
-   <div id="menuContainer"></div>
-    <script>
-      fetch('menu.html')
-        .then(response => response.text())
-        .then(html => {
-          document.getElementById('menuContainer').innerHTML = html;
-        });
-    </script>
+      <div id="menuContainer"></div>
+  <script>
+    fetch('menu.html')
+      .then(response => response.text())
+      .then(html => {
+        document.getElementById('menuContainer').innerHTML = html;
+      });
+  </script>
 
     <section>
         <div> 
-            <table>
-              <tr> 
-                <td><div> 
-                    <p  class="TITLE">Tipos de reclamos</p>
-                    </div></td>
-              </tr>
-            </table>
+            
+            <p  class="TITLE">Tipos de reclamos</p>
+                    
             <p class="PARRAFO">Esta funci&oacute;n habilita la consulta y/o mantenimiento de la tabla que almacena los diferentes tipos de reclamos que se requiere sean aplicados a los clientes de la entidad,  clasific&aacute;ndolos en Normales, o que se requiera genere una transacci&oacute;n o novedad derivadas de dicho reclamo.</p>
             <p class="PARRAFO">El formulario contiene las opciones Actualizar, Eliminar y
               Adicionar. Adicionalmente, cuenta con un filtro de b&uacute;squeda</p>
-            <p class="TITLE"><img src="../img/RCF_001B1.PNG"663" height="433"></p>
+            <p class="TITLE"><img src="../img/RCF_001B1.PNG"></p>
             
             <p><span class="SUBTITULO">Filtro:</span>  Se pueden realizar consultas a trav&eacute;s 
               de las siguientes opciones:</p>
-            <p class="TITLE"><img src="../img/RCF_001B.PNG"261" ></p>
+            <p class="TITLE"><img src="../img/RCF_001B.PNG"></p>
             
             <table>
               <tr> 
-                <td  class="titletable" ><p class="SUBTITULO"><b><span 
-        >C&oacute;digo</span></b></p></td>
+                <td  class="titletable" ><p class="SUBTITULO"><span 
+        >C&oacute;digo</span></p></td>
                 <td><p class="PARRAFO">Campo 
                     alfanum&eacute;rico de tres caracteres, que contiene 
                     el c&oacute;digo del tipo de reclamo que se desea buscar</p>
                 </td>
               </tr>
               <tr> 
-                <td class="titletable"><p class="SUBTITULO"><b><span 
-        >Descripci&oacute;n</span></b></p></td>
+                <td class="titletable"><p class="SUBTITULO"><span 
+        >Descripci&oacute;n</span></p></td>
                 <td><p class="PARRAFO">En este campo alfanum&eacute;rico de m&aacute;ximo 30 caracteres, se ingresa la definici&oacute;n asociada a cada c&oacute;digo tipo de reclamo buscado</p></td>
               </tr>
             </table>
             
             <p  class="PARRAFO"><span class="SUBTITULO">Adicionar:</span>  Si el usuario invoca la opci&oacute;n Adicionar se despliega un formulario con los siguientes campos<span 
         >:</span></p>
-            <p class="TITLE"><img src="../img/RCF_001B2.PNG"353" ></p>
+            <p class="TITLE"><img src="../img/RCF_001B2.PNG"></p>
             
             <table>
               <tr> 
-                <td class="titletable"><p class="SUBTITULO"><b><span 
-        >C&oacute;digo</span></b></p></td>
+                <td class="titletable"><p class="SUBTITULO"><span 
+        >C&oacute;digo</span></p></td>
                 <td><p class="PARRAFO">Campo 
                     alfanum&eacute;rico de tres caracteres, obligatorio, que contiene 
                     el c&oacute;digo asignado a cada tipo de reclamo el cual lo identifica 
                     dentro del sistema.</p></td>
               </tr>
               <tr> 
-                <td class="titletable"><p class="SUBTITULO"><b><span 
-        >Descripci&oacute;n</span></span></b></p></td>
+                <td class="titletable"><p class="SUBTITULO"><span 
+        >Descripci&oacute;n</span></span></p></td>
                 <td><p class="PARRAFO">Campo 
                     alfanum&eacute;rico de 60 posiciones, obligatorio, en el cual se registra 
                     el nombre de cada tipo de reclamo asociado al respectivo c&oacute;digo.</p></td>
               </tr>
               <tr> 
-                <td  class="titletable" ><p class="SUBTITULO"><b><span 
-        >Periodo m&aacute;ximo de ejecuci&oacute;n</span></b></p></td>
+                <td  class="titletable" ><p class="SUBTITULO"><span 
+        >Periodo m&aacute;ximo de ejecuci&oacute;n</span></p></td>
                 <td><p class="PARRAFO">Campo 
                     num&eacute;rico de tres d&iacute;gitos, obligatorio, en el cual 
                     se registra el n&uacute;mero de horas en las cuales debe ser solucionado el reclamo para no estar con estado Vencido. Hay que tener en cuenta que para contar dichas horas, el sistema revisa el calendario parametrizado para la sucursal con c&oacute;digo 0 (cero) en la opci&oacute;n de <a href="NUH_020B.html" >Estructura org&aacute;nica</a>.</p></td>
               </tr>
               <tr> 
-                <td class="titletable"><p class="SUBTITULO"><b><span 
+                <td class="titletable"><p class="SUBTITULO"><span 
         >Acci&oacute;n</span><span 
         >
-                    </span></b></p></td>
+                    </span></p></td>
                 <td><p class="PARRAFO">Campo 
                     con lista de valores obligatorio de la cual se selecciona entre las opciones Normal, Novedad o Transacci&oacute;n, que indicar&aacute; si el reclamo debe generar manualmente una novedad al cliente o a la tarjeta, o una transacci&oacute;n a la tarjeta, o si es una inquietud del cliente que requiera de una soluci&oacute;n por parte de la entidad.</p>
                 </td>
@@ -100,7 +96,7 @@
             <p  class="PARRAFO"><span class="PARRAFO"><span class="SUBTITULO">Actualizar:</span>  
               Si el usuario invoca la opci&oacute;n Actualizar se despliega un nuevo formulario 
               en el cual los &uacute;nicos campos modificables son: Descripci&oacute;n y Periodo m&aacute;ximo de ejecuci&oacute;n.</span></p>
-            <p class="TITLE"><img src="../img/RCF_001B3.PNG"353" ></p>
+            <p class="TITLE"><img src="../img/RCF_001B3.PNG"></p>
            
         </section>
     <script src="../js/menu.js"></script>

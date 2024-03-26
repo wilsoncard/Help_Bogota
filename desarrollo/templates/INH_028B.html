@@ -1,197 +1,216 @@
 <!DOCTYPE html>
 <html lang="es">
 
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>BANKBU®</title>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BANKBU®</title>
 
-  <link rel="stylesheet" href="../css/pages.css">
-  <link rel="stylesheet" href="../css/style.css">
-  <link rel="icon" href="../img/ACQUIRER-logo.JPG" type="image/x-icon">
-</head>
+    <link rel="stylesheet" href="../css/pages.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="icon" href="../img/ACQUIRER-logo.JPG" type="image/x-icon">
+  </head>
 
-<body>
+  <body>
 
-  <header>
-    <img class="logo" src="../img/logoBankbu_.PNG" alt="Logo de Mi Empresa">
-    <div id="menuBtn">
-      <img class="TITLE" src="../img/menu.PNG" alt="Botón de Menú ">
-    </div>
-  </header>
- <div id="menuContainer"></div>
+    <header>
+      <img class="logo" src="../img/logoBankbu_.PNG" alt="Logo de Mi Empresa">
+      <div id="menuBtn">
+        <img class="TITLE" src="../img/menu.PNG" alt="Botón de Menú ">
+      </div>
+    </header>
+    <div id="menuContainer"></div>
     <script>
-      fetch('menu.html')
-        .then(response => response.text())
-        .then(html => {
-          document.getElementById('menuContainer').innerHTML = html;
-        });
-    </script>
+    fetch('menu.html')
+      .then(response => response.text())
+      .then(html => {
+        document.getElementById('menuContainer').innerHTML = html;
+      });
+  </script>
 
-  <section>
-    <div>
-      <table>
-        <tr>
-          <td>
-            <div>
-              <p class="TITLE">Fee Collection</p>
-            </div>
-          </td>
-        </tr>
-      </table>
-      <p class="PARRAFO">A trav&eacute;s de esta pantalla se ofrece la funcionalidad necesaria para que la entidad pueda
-        enviar transacciones de pagos o cobros, conocidos como miscelaneos o Feed Colletion, estas transacciones se
-        capturan aplicando el bot&oacute;n que aparece en la parte superior de la forma de contracargos MC, no es
-        necesario que este relacionado con un contracargo, es decir que se puede capturar sin que exista
-        informaci&oacute;n de contracargo, las transacciones capturadas se pueden ver en la consulta global de
-        intercambio en la pesta&ntilde;a de intercambio.</p>
-      <p class="TITLE"><img src="../img/INF_028B.PNG"></p>
-      <p><span class="SUBTITULO">Adicionar:</span> Se pueden realizar
-        consultas a trav&eacute;s de la siguiente lista de valores: </p>
-      <p class="TITLE"><img src="../img/INF_028B1.PNG"></p>
+    <section>
+      <div>
+        <p class="TITLE">Fee Collection</p>
+              
+        <p class="PARRAFO">A trav&eacute;s de esta pantalla se ofrece la
+          funcionalidad necesaria para que la entidad pueda
+          enviar transacciones de pagos o cobros, conocidos como miscelaneos o
+          Feed Colletion, estas transacciones se
+          capturan aplicando el bot&oacute;n que aparece en la parte superior de
+          la forma de contracargos MC, no es
+          necesario que este relacionado con un contracargo, es decir que se
+          puede capturar sin que exista
+          informaci&oacute;n de contracargo, las transacciones capturadas se
+          pueden ver en la consulta global de
+          intercambio en la pesta&ntilde;a de intercambio.</p>
+        <p class="TITLE"><img src="../img/INF_028B.PNG"></p>
+        <p><span class="SUBTITULO">Adicionar:</span> Se pueden realizar
+          consultas a trav&eacute;s de la siguiente lista de valores: </p>
+        <p class="TITLE"><img src="../img/INF_028B1.PNG"></p>
 
-      <table>
-        <tr>
-          <td class="titletable">
-            <p class="SUBTITULO">Transacci&oacute;n origen</p>
-          </td>
-          <td>
-            <p class="PARRAFO">Campo con lista de valores que permite seleccionar la transacci&oacute;n origen para el
-              pago o cobro que se va a enviar, en el campo siguiente aparece la descripci&oacute;n de la
-              transacci&oacute;n.</p>
-          </td>
-        </tr>
-        <tr>
-          <td class="titletable">
-            <p class="SUBTITULO">Motivo Devoluci&oacute;n</p>
-          </td>
-          <td>
-            <p class="PARRAFO">Campo que posee lista de valores adjunta de la que debe seleccionarse el c&oacute;digo de
-              raz&oacute;n o motivo de devoluci&oacute;n, en el campo adjunto aparecera la descripci&oacute;n del
-              motivo.</p>
-          </td>
-        </tr>
-        <tr>
-          <td class="titletable">
-            <p class="SUBTITULO">Bin Fuente</p>
-          </td>
-          <td>
-            <p class="PARRAFO">Campo en el que aparece el bin fuente o generador del cobro o pago, en este caso debe ser
-              el bin que utiliza la entidad como compensador.</p>
-          </td>
-        </tr>
-        <tr>
-          <td class="titletable">
-            <p class="SUBTITULO">Bin Destino</p>
-          </td>
-          <td>
-            <p class="PARRAFO">Campo en el que se debe digitar el bin del banco o entidad destino del cobro o pago.</p>
-          </td>
-        </tr>
-        <tr>
-          <td class="titletable">
-            <p class="SUBTITULO">Atrib. Rembolso </p>
-          </td>
-          <td>
-            <p class="PARRAFO">Campo que despliega lista de valores para algunas transacciones, muestra algunos
-              atributos especiales de la transacci&oacute;n.</p>
-          </td>
-        </tr>
+        <table>
+          <tr>
+            <td class="titletable">
+              <p class="SUBTITULO">Transacci&oacute;n origen</p>
+            </td>
+            <td>
+              <p class="PARRAFO">Campo con lista de valores que permite
+                seleccionar la transacci&oacute;n origen para el
+                pago o cobro que se va a enviar, en el campo siguiente aparece
+                la descripci&oacute;n de la
+                transacci&oacute;n.</p>
+            </td>
+          </tr>
+          <tr>
+            <td class="titletable">
+              <p class="SUBTITULO">Motivo Devoluci&oacute;n</p>
+            </td>
+            <td>
+              <p class="PARRAFO">Campo que posee lista de valores adjunta de la
+                que debe seleccionarse el c&oacute;digo de
+                raz&oacute;n o motivo de devoluci&oacute;n, en el campo adjunto
+                aparecera la descripci&oacute;n del
+                motivo.</p>
+            </td>
+          </tr>
+          <tr>
+            <td class="titletable">
+              <p class="SUBTITULO">Bin Fuente</p>
+            </td>
+            <td>
+              <p class="PARRAFO">Campo en el que aparece el bin fuente o
+                generador del cobro o pago, en este caso debe ser
+                el bin que utiliza la entidad como compensador.</p>
+            </td>
+          </tr>
+          <tr>
+            <td class="titletable">
+              <p class="SUBTITULO">Bin Destino</p>
+            </td>
+            <td>
+              <p class="PARRAFO">Campo en el que se debe digitar el bin del
+                banco o entidad destino del cobro o pago.</p>
+            </td>
+          </tr>
+          <tr>
+            <td class="titletable">
+              <p class="SUBTITULO">Atrib. Rembolso </p>
+            </td>
+            <td>
+              <p class="PARRAFO">Campo que despliega lista de valores para
+                algunas transacciones, muestra algunos
+                atributos especiales de la transacci&oacute;n.</p>
+            </td>
+          </tr>
 
-        <tr>
-          <td class="titletable">
-            <p class="SUBTITULO">Numero Tarjeta</p>
-          </td>
-          <td>
-            <p class="PARRAFO">Campo en el que se digita el numero de la tarjeta que genera o a la que se va a aplicar
-              el pago o cobro, este campo es obligatorio solo para algunas transacciones.</p>
-          </td>
-        </tr>
+          <tr>
+            <td class="titletable">
+              <p class="SUBTITULO">Numero Tarjeta</p>
+            </td>
+            <td>
+              <p class="PARRAFO">Campo en el que se digita el numero de la
+                tarjeta que genera o a la que se va a aplicar
+                el pago o cobro, este campo es obligatorio solo para algunas
+                transacciones.</p>
+            </td>
+          </tr>
 
-        <tr>
-          <td class="titletable">
-            <p class="SUBTITULO">Moneda</p>
-          </td>
-          <td>
-            <p class="PARRAFO">Campo con lista de valores que permite seleccionar el c&oacute;digo de moneda en el que
-              se va enviar el valor de la transacci&oacute;n, en el campo siguiente aparecera el nombre o
-              descripci&oacute;n de la moneda seleccionada.</p>
-          </td>
-        </tr>
+          <tr>
+            <td class="titletable">
+              <p class="SUBTITULO">Moneda</p>
+            </td>
+            <td>
+              <p class="PARRAFO">Campo con lista de valores que permite
+                seleccionar el c&oacute;digo de moneda en el que
+                se va enviar el valor de la transacci&oacute;n, en el campo
+                siguiente aparecera el nombre o
+                descripci&oacute;n de la moneda seleccionada.</p>
+            </td>
+          </tr>
 
-        <tr>
-          <td class="titletable">
-            <p class="SUBTITULO">Valor Total</p>
-          </td>
-          <td>
-            <p class="PARRAFO">Campo en el que se debe digitar el valor total del pago o cobro a enviar.</p>
-          </td>
-        </tr>
+          <tr>
+            <td class="titletable">
+              <p class="SUBTITULO">Valor Total</p>
+            </td>
+            <td>
+              <p class="PARRAFO">Campo en el que se debe digitar el valor total
+                del pago o cobro a enviar.</p>
+            </td>
+          </tr>
 
-        <tr>
-          <td class="titletable">
-            <p class="SUBTITULO">C&oacute;digo pa&iacute;s</p>
-          </td>
-          <td>
-            <p class="PARRAFO">Campo opcional con lista de valores, permite seleccionar el c&oacute;digo del
-              pa&iacute;s, en el campo siguiente aparecera el nombre del pa&iacute;s.</p>
-          </td>
-        </tr>
+          <tr>
+            <td class="titletable">
+              <p class="SUBTITULO">C&oacute;digo pa&iacute;s</p>
+            </td>
+            <td>
+              <p class="PARRAFO">Campo opcional con lista de valores, permite
+                seleccionar el c&oacute;digo del
+                pa&iacute;s, en el campo siguiente aparecera el nombre del
+                pa&iacute;s.</p>
+            </td>
+          </tr>
 
-        <tr>
-          <td class="titletable">
-            <p class="SUBTITULO">Atrib. Reembolso</p>
-          </td>
-          <td>
-            <p class="PARRAFO">Campo que despliega lista de valores para algunas transacciones, muestra algunos
-              atributos especiales de la transacci&oacute;n.</p>
-          </td>
-        </tr>
+          <tr>
+            <td class="titletable">
+              <p class="SUBTITULO">Atrib. Reembolso</p>
+            </td>
+            <td>
+              <p class="PARRAFO">Campo que despliega lista de valores para
+                algunas transacciones, muestra algunos
+                atributos especiales de la transacci&oacute;n.</p>
+            </td>
+          </tr>
 
-        <tr>
-          <td class="titletable">
-            <p class="SUBTITULO">Fecha Canje</p>
-          </td>
-          <td>
-            <p class="PARRAFO">Campo que despliega la fecha del sistema y que corresponde a la fecha de canje, este dato
-              se puede modificar, la fecha es en formato DD-MM-YYYY</p>
-          </td>
-        </tr>
+          <tr>
+            <td class="titletable">
+              <p class="SUBTITULO">Fecha Canje</p>
+            </td>
+            <td>
+              <p class="PARRAFO">Campo que despliega la fecha del sistema y que
+                corresponde a la fecha de canje, este dato
+                se puede modificar, la fecha es en formato DD-MM-YYYY</p>
+            </td>
+          </tr>
 
-        <tr>
-          <td class="titletable">
-            <p class="SUBTITULO">Fecha Ingreso</p>
-          </td>
-          <td>
-            <p class="PARRAFO">Campo de salida que se diligencia autom&aacute;ticamente con la fecha del sistema, en
-              formato DD-MM-YYYY, no permite modificaci&oacute;n.</p>
-          </td>
-        </tr>
+          <tr>
+            <td class="titletable">
+              <p class="SUBTITULO">Fecha Ingreso</p>
+            </td>
+            <td>
+              <p class="PARRAFO">Campo de salida que se diligencia
+                autom&aacute;ticamente con la fecha del sistema, en
+                formato DD-MM-YYYY, no permite modificaci&oacute;n.</p>
+            </td>
+          </tr>
 
-        <tr>
-          <td class="titletable">
-            <p class="SUBTITULO">Texto</p>
-          </td>
-          <td>
-            <p class="PARRAFO">Campo en el que se debe ingresar el texto que describa el motivo de cobro o pago de la
-              transacci&oacute;n, dependiendo de la transacci&oacute;n puede traer lista de valores.</p>
-          </td>
-        </tr>
-      </table>
+          <tr>
+            <td class="titletable">
+              <p class="SUBTITULO">Texto</p>
+            </td>
+            <td>
+              <p class="PARRAFO">Campo en el que se debe ingresar el texto que
+                describa el motivo de cobro o pago de la
+                transacci&oacute;n, dependiendo de la transacci&oacute;n puede
+                traer lista de valores.</p>
+            </td>
+          </tr>
+        </table>
 
-      <p class="PARRAFO"> </p>
+        <p class="PARRAFO"> </p>
 
-      <p><a href="INH_027Be1.html#ingresar">Ingresar</a><span><b> | </b></span><a href="INH_027Be1.html#datos">Datos
-          complementarios</a><b><span> |
-          </span></b><a href="INH_027Be1.html#notas">Adicionar notas d&eacute;bito</a><span><b> | </b></span><a
-          href="INH_027Be1.html#asociadas">Transacciones
-          asociadas</a></p>
+        <p><a href="INH_027Be1.html#ingresar">Ingresar</a> | </span><a
+            href="INH_027Be1.html#datos">Datos
+            complementarios</a> |
+          </span><a href="INH_027Be1.html#notas">Adicionar notas
+            d&eacute;bito</a> | </span><a
+            href="INH_027Be1.html#asociadas">Transacciones
+            asociadas</a></p>
 
-  </section>
-  <script src="../js/menu.js"></script>
-</body>
-<div id="footerContainer"></div>
-<script>
+      </section>
+      <script src="../js/menu.js"></script>
+    </body>
+    <div id="footerContainer"></div>
+    <script>
   fetch('footer.html')
     .then(response => response.text())
     .then(html => {
@@ -199,4 +218,4 @@
     });
 </script>
 
-</html>
+  </html>

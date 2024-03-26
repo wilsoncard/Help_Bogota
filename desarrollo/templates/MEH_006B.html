@@ -1,125 +1,137 @@
 <!DOCTYPE html>
 <html lang="es">
 
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>BANKBU®</title>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BANKBU®</title>
 
-  <link rel="stylesheet" href="../css/pages.css">
-  <link rel="stylesheet" href="../css/style.css">
-  <link rel="icon" href="../img/ACQUIRER-logo.JPG" type="image/x-icon">
-</head>
+    <link rel="stylesheet" href="../css/pages.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="icon" href="../img/ACQUIRER-logo.JPG" type="image/x-icon">
+  </head>
 
-<body>
+  <body>
 
-  <header>
-    <img class="logo" src="../img/logoBankbu_.PNG" alt="Logo de Mi Empresa">
-    <div id="menuBtn">
-      <img class="TITLE" src="../img/menu.PNG" alt="Botón de Menú ">
-    </div>
-  </header>
-  <div id="menuContainer"></div>
+    <header>
+      <img class="logo" src="../img/logoBankbu_.PNG" alt="Logo de Mi Empresa">
+      <div id="menuBtn">
+        <img class="TITLE" src="../img/menu.PNG" alt="Botón de Menú ">
+      </div>
+    </header>
+    <div id="menuContainer"></div>
     <script>
-      fetch('menu.html')
-        .then(response => response.text())
-        .then(html => {
-          document.getElementById('menuContainer').innerHTML = html;
-        });
-    </script>
+    fetch('menu.html')
+      .then(response => response.text())
+      .then(html => {
+        document.getElementById('menuContainer').innerHTML = html;
+      });
+  </script>
 
-  <section>
-    <div>
+    <section>
+      <div>
+        <p class="TITLE">Esquemas de puntaje</p>
+              
+        <p>Mediante esta función se definen los parámetros generales aplicables
+          al programa de incentivos al consumo diseñado por la entidad, y
+          específicamente, la administración de los puntos resultantes de dichos
+          consumos; la entidad podrá definir tantos esquemas de puntajes como
+          desee.</p>
+        <p class="PARRAFO"><span class="SUBTITULO">Filtro:</span> El formulario
+          cuenta con un filtro inicial de búsqueda:</p>
+        <p class="TITLE"><img src="../img/MEF_006B1.PNG"></p>
+
+        <table>
+          <tr>
+            <td class="titletable">
+              <p class="SUBTITULO">C&oacute;digo</p>
+            </td>
+            <td class="PARRAFO">
+              <p class="PARRAFO">
+                Campo numérico de máximo 3 dígitos, en el cual se puede ingresar
+                el número asignado o que identifica el esquema de puntos que se
+                desea consultar.</p>
+            </td>
+          </tr>
+          <tr>
+            <td class="SUBTITULO">Descripci&oacute;n</td>
+            <td class="PARRAFO">
+              <p class="PARRAFO">En este campo alfanumérico de hasta 30
+                posiciones, en el cual
+                se puede ingresar el nombre del esquema de puntos, o parte del
+                mismo, que se desea consultar. </p>
+            </td>
+          </tr>
+          <tr>
+            <td class="SUBTITULO">Moneda patr&oacute;n puntaje </td>
+            <td class="PARRAFO">
+              <p>Criterio de búsqueda que aplica si, dentro de las
+                compensaciones de los esquemas de puntaje se tiene el abono a la
+                tarjeta, en el cuál se dispone de una lista de valores de la que
+                debe puede seleccionarse la <a
+                  href="NUH_005B.html">Moneda</a>
+                de referencia para realizar la consulta. </p>
+            </td>
+          </tr>
+        </table>
+
+        <p class="PARRAFO">El formulario, además de poder invocar las opciones:
+          Actualizar, Eliminar, y Adicionar, ofrece enlaces a las siguientes
+          opciones: <a
+            href="MEH_006B1.html">Par&aacute;metros</a>, <a
+            href="MEH_006B2a.html">Par&aacute;metros adicionales</a>, <a
+            href="MEH_006B2.html">Par&aacute;metros
+            adicionales II </a>,<a href="MEH_006B5.html"
+            target="_self">Or&iacute;genes restringidos</a>, <a
+            href="MEH_006B3.html">Productos</a> y <a
+            href="MEH_006B4.html">Relaciones</a><a href="MEH_006B5.html"
+            target="_self"></a>.</p>
+        <p class="TITLE"><img src="../img/MEF_006B.PNG"></p>
+        <p class="PARRAFO"><span class="SUBTITULO">Adicionar:</span> Si el
+          usuario invoca este enlace se despliega un formulario con los
+          siguientes campos:</span>
+      </p>
+      <p class="TITLE"><img src="../img/MEF_006B2.PNG"></p>
       <table>
         <tr>
-          <td>
-            <div>
-              <p class="TITLE">Esquemas de puntaje</p>
-            </div>
+          <td class="titletable">
+            <p class="SUBTITULO">C&oacute;digo</p>
+          </td>
+          <td class="PARRAFO">
+            <p>Campo num&eacute;rico de 3 d&iacute;gitos, obligatorio, en el
+              que se registra el c&oacute;digo que
+              identifica el programa o esquema de puntaje.</p>
+          </td>
+        </tr>
+        <tr>
+          <td class="SUBTITULO">Descripci&oacute;n</td>
+          <td class="PARRAFO">
+            <p>En este campo alfanum&eacute;rico de m&aacute;ximo 30
+              posiciones, se digita el nombre o
+              descripci&oacute;n del esquema asociado al c&oacute;digo
+              anterior.</p>
+          </td>
+        </tr>
+        <tr>
+          <td class="SUBTITULO">Moneda patr&oacute;n puntaje </td>
+          <td class="PARRAFO">
+            <p>Campo con lista de valores de la que debe seleccionarse la <a
+                href="NUH_005B.html">Moneda</a>
+              de referencia para evaluar las metas fijadas, facilitando la
+              administraci&oacute;n de los puntos. </p>
           </td>
         </tr>
       </table>
-      <p>Mediante esta funci&oacute;n se definen los par&aacute;metros generales aplicables al programa de incentivos al
-        consumo dise&ntilde;ado por la entidad, y espec&iacute;ficamente la administraci&oacute;n de los puntos
-        resultantes de dichos consumos; la entidad podr&aacute; definir tantos esquemas de puntajes como desee.</p>
-      <p class="PARRAFO"><span class="SUBTITULO">Filtro:</span>  El formulario cuenta
-        con un filtro inicial de b&uacute;squeda, necesario para la consulta de la
-        informaci&oacute;n:</p>
-      <p class="TITLE"><img src="../img/MEF_006B1.PNG"></p>
 
-        <table>
-          <tr>
-            <td class="titletable">
-              <p class="SUBTITULO">C&oacute;digo</p>
-            </td>
-            <td class="PARRAFO">
-              <p>Campo num&eacute;rico de m&aacute;ximo 3 d&iacute;gitos, en el cual se ingresa el esquema de puntos que
-                se desee consultar.</p>
-            </td>
-          </tr>
-          <tr>
-            <td class="SUBTITULO">Descripci&oacute;n</td>
-            <td class="PARRAFO">
-              <p>En este campo alfanum&eacute;rico de hasta 30 posiciones, se puede realizar la b&uacute;squeda a
-                trav&eacute;s de la descripci&oacute;n del esquema. </p>
-            </td>
-          </tr>
-          <tr>
-            <td class="SUBTITULO">Moneda patr&oacute;n puntaje </td>
-            <td class="PARRAFO">
-              <p>Campo con lista de valores de la que debe seleccionarse la <A href="NUH_005B.html">Moneda</A>
-                de referencia realizar le filtro. </p>
-            </td>
-          </tr>
-        </table>
-
-        <p class="PARRAFO">El formulario contiene las opciones Actualizar, Eliminar,
-          y Adicionar. Y adicionalmente contiene las opsiones <a href="MEH_006B1.html">Par&aacute;metros</a>, <a
-            href="MEH_006B2a.html">Par&aacute;metros adicionales</a>, <a href="MEH_006B2.html">Par&aacute;metros
-            adicionales II </a>,<a href="MEH_006B5.html" target="_self">Or&iacute;genes restringidos</a>, <a
-            href="MEH_006B3.html">Productos</a> y <a href="MEH_006B4.html">Relaciones</a><a href="MEH_006B5.html"
-            target="_self"></a>.</p>
-        <p class="TITLE"><img src="../img/MEF_006B.PNG"></p>
-        <p class="PARRAFO"><span class="SUBTITULO">Adicionar:</span>  Si
-          el usuario invoca la opci&oacute;n Adicionar se despliega un formulario con
-          los siguientes campos<span>:</span> 
-        </p>
-        <p class="TITLE"><img src="../img/MEF_006B2.PNG"></p>
-        <table>
-          <tr>
-            <td class="titletable">
-              <p class="SUBTITULO">C&oacute;digo</p>
-            </td>
-            <td class="PARRAFO">
-              <p>Campo num&eacute;rico de 3 d&iacute;gitos, obligatorio, en el que se registra el c&oacute;digo que
-                identifica el programa o esquema de puntaje.</p>
-            </td>
-          </tr>
-          <tr>
-            <td class="SUBTITULO">Descripci&oacute;n</td>
-            <td class="PARRAFO">
-              <p>En este campo alfanum&eacute;rico de m&aacute;ximo 30 posiciones, se digita el nombre o
-                descripci&oacute;n del esquema asociado al c&oacute;digo anterior.</p>
-            </td>
-          </tr>
-          <tr>
-            <td class="SUBTITULO">Moneda patr&oacute;n puntaje </td>
-            <td class="PARRAFO">
-              <p>Campo con lista de valores de la que debe seleccionarse la <A href="NUH_005B.html">Moneda</A>
-                de referencia para evaluar las metas fijadas, facilitando la administraci&oacute;n de los puntos. </p>
-            </td>
-          </tr>
-        </table>
-
-        <p><span class="SUBTITULO">Actualizar:</span>  Si el usuario
-          invoca la opci&oacute;n Actualizar se despliega un nuevo formulario en cual
-          los &uacute;nicos campos modificables son los siguientes:</p>
-        <p class="TITLE"><img src="../img/MEF_006B3.PNG"></p>
-  </section>
-  <script src="../js/menu.js"></script>
-</body>
-<div id="footerContainer"></div>
-<script>
+      <p><span class="SUBTITULO">Actualizar:</span> Si el usuario invoca este
+        enlace se despliega un nuevo formulario en cual los únicos campos
+        modificables son Descripción y Moneda patrón puntaje:</p>
+      <p class="TITLE"><img src="../img/MEF_006B3.PNG"></p>
+    </section>
+    <script src="../js/menu.js"></script>
+  </body>
+  <div id="footerContainer"></div>
+  <script>
   fetch('footer.html')
     .then(response => response.text())
     .then(html => {

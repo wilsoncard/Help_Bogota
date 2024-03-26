@@ -18,24 +18,20 @@
             <img class="TITLE"  src= "../img/menu.PNG" alt="Botón de Menú ">
         </div>
     </header>
-   <div id="menuContainer"></div>
-    <script>
-      fetch('menu.html')
-        .then(response => response.text())
-        .then(html => {
-          document.getElementById('menuContainer').innerHTML = html;
-        });
-    </script>
+      <div id="menuContainer"></div>
+  <script>
+    fetch('menu.html')
+      .then(response => response.text())
+      .then(html => {
+        document.getElementById('menuContainer').innerHTML = html;
+      });
+  </script>
 
     <section>
         <div> 
-            <table>
-              <tr> 
-                <td><div> 
+            
                     <p  class="TITLE">Funcionarios</p>
-                  </div></td>
-              </tr>
-            </table>
+                  
             <p  class="PARRAFO">Mediante esta funci&oacute;n se habilita 
               la consulta y mantenimiento de la tabla en la cual la entidad financiera almacena 
               los principales datos b&aacute;sicos de todos sus colaboradores, sean o no 
@@ -57,21 +53,21 @@
 
             <table>
               <tr> 
-                <td class="titletable"><p class="SUBTITULO"><b><span 
-        >C&oacute;digo</span></b></p></td>
+                <td class="titletable"><p class="SUBTITULO"><span 
+        >C&oacute;digo</span></p></td>
                 <td><p  class="PARRAFO">Campo 
                     num&eacute;rico de cinco posiciones, obligatorio, en el cual se registra 
                     el c&oacute;digo que identifica a cada funcionario.</p></td>
               </tr>
               <tr> 
-                <td class="titletable"><p class="SUBTITULO"><b><span 
-        >Nombre</span></b></p></td>
+                <td class="titletable"><p class="SUBTITULO"><span 
+        >Nombre</span></p></td>
                 <td><p  class="PARRAFO">En 
                     este campo alfanum&eacute;rico de 30 posiciones, obligatorio, se registra 
                     el nombre del funcionario asociado a cada c&oacute;digo.</p></td>
               </tr>
             </table>
-            <p  class="PARRAFO"><span class="SUBTITULO"><b ><span            '>Adicionar</span></b><span 
+            <p  class="PARRAFO"><span class="SUBTITULO"><span            '>Adicionar</span><span 
         >:</span><span 
         ></span></span><span 
         > Si el 
@@ -81,15 +77,15 @@
             
             <table>
               <tr> 
-                <td class="titletable"><p class="SUBTITULO"><b><span 
-        >C&oacute;digo</span></b></p></td>
+                <td class="titletable"><p class="SUBTITULO"><span 
+        >C&oacute;digo</span></p></td>
                 <td><p  class="PARRAFO">Campo 
                     num&eacute;rico de cinco posiciones, obligatorio, en el cual se registra 
                     el c&oacute;digo que identifica a cada funcionario.</p></td>
               </tr>
               <tr> 
-                <td class="titletable"><p class="SUBTITULO"><b><span 
-        >Nombre</span></b></p></td>
+                <td class="titletable"><p class="SUBTITULO"><span 
+        >Nombre</span></p></td>
                 <td><p  class="PARRAFO">En 
                     este campo alfanum&eacute;rico de 30 posiciones, obligatorio, se registra 
                     el nombre del funcionario asociado a cada c&oacute;digo.</p></td>
@@ -101,7 +97,7 @@
             <div>
               <table>
                 <tr> 
-                  <td  class="titletable" ><p class="SUBTITULO"><b><span style'font-family'>G&eacute;nero</span></b></p></td>
+                  <td  class="titletable" ><p class="SUBTITULO"><span style'font-family'>G&eacute;nero</span></p></td>
                   <td><p  class="PARRAFO">Campo 
                       que posee lista de valores adjunta de la que se debe seleccionar entre 
                       Femenino o Masculino seg&uacute;n corresponda, puesto que con base 
@@ -110,16 +106,16 @@
                       es obligatorio &uacute;nicamente cuando el tipo de persona es natural.</p></td>
                 </tr>
                 <tr> 
-                  <td class="titletable"><p class="SUBTITULO"><b><span 
-        >Cargo</span></b></p></td>
+                  <td class="titletable"><p class="SUBTITULO"><span 
+        >Cargo</span></p></td>
                   <td><p  class="PARRAFO">Campo 
                       no obligatorio, que posee lista de valores, de la que se debe seleccionar 
                       el <span >cargo</span>  desempe&ntilde;ado por el funcionario.</p></td>
                 </tr>
                 <tr> 
-                  <td><p class="SUBTITULO"><b><span 
+                  <td><p class="SUBTITULO"><span 
         >Tipo 
-                      de documento</span></b><span
+                      de documento</span><span
               ></span></p></td>
                   <td><p  class="PARRAFO">Este 
                       campo cuenta con lista de valores de la que se selecciona el tipo 
@@ -127,9 +123,9 @@
                       del funcionario, despleg&aacute;ndose la abreviatura del mismo.</p></td>
                 </tr>
                 <tr> 
-                  <td  class="titletable" ><p class="SUBTITULO"><b><span 
+                  <td  class="titletable" ><p class="SUBTITULO"><span 
         >Agente 
-                      que depende</span></b></p></td>
+                      que depende</span></p></td>
                   <td><p  class="PARRAFO">Este 
                       campo no obligatorio, contiene lista de valores poblada a partir de 
                       esta misma tabla, de la cual se puede seleccionar el superior del 
@@ -139,16 +135,16 @@
                       un nivel de estructura estrictamente menor al agente de quien va depender.</p></td>
                 </tr>
                 <tr> 
-                  <td class="titletable"><p class="SUBTITULO"><b><span 
-        >Identificaci&oacute;n</span></b></p></td>
+                  <td class="titletable"><p class="SUBTITULO"><span 
+        >Identificaci&oacute;n</span></p></td>
                   <td><p  class="PARRAFO">Campo 
                       num&eacute;rico de 16 posiciones, obligatorio, dentro del cual se 
                       registra el n&uacute;mero del documento que identifica al funcionario.</p></td>
                 </tr>
                 <tr> 
-                  <td><p class="SUBTITULO"><b><span 
+                  <td><p class="SUBTITULO"><span 
         >Nivel 
-                      de estructura</span></b><span
+                      de estructura</span><span
               ></span></p></td>
                   <td><p  class="PARRAFO">Campo 
                       que posee lista de valores adjunta que permite asociar a cada funcionario 
@@ -158,24 +154,24 @@
                       haya diligenciado el campo anterior.</p></td>
                 </tr>
                 <tr> 
-                  <td  class="titletable" ><p class="SUBTITULO"><b><span 
-        >Tel&eacute;fono</span></b></p></td>
+                  <td  class="titletable" ><p class="SUBTITULO"><span 
+        >Tel&eacute;fono</span></p></td>
                   <td><p  class="PARRAFO">Este 
                       campo alfanum&eacute;rico de 15 posiciones, no obligatorio, permite 
                       registrar los n&uacute;meros telef&oacute;nicos en que puede ser contactado 
                       el funcionario.</p></td>
                 </tr>
                 <tr> 
-                  <td class="titletable"><p class="SUBTITULO"><b><span 
-        >Sueldo</span></b></p></td>
+                  <td class="titletable"><p class="SUBTITULO"><span 
+        >Sueldo</span></p></td>
                   <td><p  class="PARRAFO">En 
                       este campo num&eacute;rico de hasta 10 d&iacute;gitos, no obligatorio 
                       y de car&aacute;cter simplemente informativo, se puede ingresar el 
                       valor del sueldo b&aacute;sico mensual percibido por el funcionario.</p></td>
                 </tr>
                 <tr> 
-                  <td><p class="SUBTITULO"><b><span 
-        >Extensi&oacute;n</span></b><span
+                  <td><p class="SUBTITULO"><span 
+        >Extensi&oacute;n</span><span
               ></span></p></td>
                   <td><p  class="PARRAFO">Campo 
                       alfanum&eacute;rico de 5 posiciones, no obligatorio, en el cual se 
@@ -183,9 +179,9 @@
                       puede ubicarse al funcionario.</p></td>
                 </tr>
                 <tr> 
-                  <td  class="titletable" ><p class="SUBTITULO"><b><span 
+                  <td  class="titletable" ><p class="SUBTITULO"><span 
         >Agente 
-                      reemplazo </span></b></p></td>
+                      reemplazo </span></p></td>
                   <td><p  class="PARRAFO">Campo 
                       no obligatorio, que posee lista de valores, poblada a partir de esta 
                       misma tabla, invocando los nombres de los dem&aacute;s funcionarios, 
@@ -194,8 +190,8 @@
                       el nombre a &eacute;ste asociado.</p></td>
                 </tr>
                 <tr> 
-                  <td class="titletable"><p class="SUBTITULO"><b><span 
-        >Celular</span></b></p></td>
+                  <td class="titletable"><p class="SUBTITULO"><span 
+        >Celular</span></p></td>
                   <td><p  class="PARRAFO">Este 
                       campo alfanum&eacute;rico de 15 posiciones, no obligatorio, permite 
                       registrar el n&uacute;mero del tel&eacute;fono celular del funcionario, 
@@ -205,8 +201,8 @@
                       los <span >procesos de alertas.</span></p></td>
                 </tr>
                 <tr> 
-                  <td><p class="SUBTITULO"><b><span 
-        >Sucursal</span></b><span
+                  <td><p class="SUBTITULO"><span 
+        >Sucursal</span><span
               ></span></p></td>
                   <td><p  class="PARRAFO">Este 
                       campo que cuenta con lista de valores, poblada en la opci&oacute;n 
@@ -216,24 +212,24 @@
                       se puede digitar el c&oacute;digo de la misma.</p></td>
                 </tr>
                 <tr> 
-                  <td  class="titletable" ><p class="SUBTITULO"><b><span 
-        >Estado</span></b></p></td>
+                  <td  class="titletable" ><p class="SUBTITULO"><span 
+        >Estado</span></p></td>
                   <td><p  class="PARRAFO">Campo 
                       que posee lista de valores adjunta de la que se debe seleccionar si 
                       el funcionario est&aacute; Activo, Inactivo, Retirado o Suspendido.</p></td>
                 </tr>
                 <tr> 
-                  <td class="titletable"><p class="SUBTITULO"><b><span 
-        >Usuario</span></b></p></td>
+                  <td class="titletable"><p class="SUBTITULO"><span 
+        >Usuario</span></p></td>
                   <td><p  class="PARRAFO">Campo 
                       no obligatorio, que posee lista de valores de la que se puede seleccionar 
                       el usuario asignado al funcionario, y que le permite acceder o ingresar 
                       a la base de datos.</p></td>
                 </tr>
                 <tr> 
-                  <td><p class="SUBTITULO"><b><span 
+                  <td><p class="SUBTITULO"><span 
         >Tipo 
-                      de funcionario</span></b>
+                      de funcionario</span>
                       </p></td>
                   <td><p  class="PARRAFO">Este 
                       campo cuenta con lista de valores adjunta de la que se debe seleccionar 
@@ -241,25 +237,25 @@
                       funcionario con la entidad financiera.</p></td>
                 </tr>
                 <tr> 
-                  <td  class="titletable" ><p class="SUBTITULO"><b><span 
-        >Perfil</span></b></p></td>
+                  <td  class="titletable" ><p class="SUBTITULO"><span 
+        >Perfil</span></p></td>
                   <td><p  class="PARRAFO">Este 
                       campo obligatorio, posee lista de valores con los <span >Perfiles 
                       de promotor </span> de la que se selecciona el perfil al que pertenece 
                       el agente.</p></td>
                 </tr>
                 <tr> 
-                  <td class="titletable"><p class="SUBTITULO"><b><span 
+                  <td class="titletable"><p class="SUBTITULO"><span 
         >Fecha 
-                      de ingreso</span></b></p></td>
+                      de ingreso</span></p></td>
                   <td><p  class="PARRAFO">Campo 
                       en formato YYYY-MM-DD, obligatorio, en el cual se registra la fecha 
                       de ingreso del funcionario.</p></td>
                 </tr>
                 <tr> 
-                  <td><p class="SUBTITULO"><b><span 
+                  <td><p class="SUBTITULO"><span 
         >Grupo 
-                      de afinidad</span></b></p></td>
+                      de afinidad</span></p></td>
                   <td><p  class="PARRAFO">Este 
                       campo que cuenta con lista de valores, poblada en la opci&oacute;n 
                       Estructura org&aacute;nica dentro del grupo de Tablas de la entidad 
@@ -267,51 +263,51 @@
                       est&aacute; asociado un grupo de afinidad.</p></td>
                 </tr>
                 <tr> 
-                  <td  class="titletable" ><p class="SUBTITULO"><b><span 
+                  <td  class="titletable" ><p class="SUBTITULO"><span 
         >Fecha 
-                      de retiro</span></b></p></td>
+                      de retiro</span></p></td>
                   <td><p  class="PARRAFO">En 
                       este campo en formato YYYY-MM-DD, no obligatorio, se registra la fecha 
                       de retiro del funcionario.</p></td>
                 </tr>
                 <tr> 
-                  <td class="titletable"><p class="SUBTITULO"><b><span 
+                  <td class="titletable"><p class="SUBTITULO"><span 
         >Sucursal 
-                      grupo de afinidad</span></b></p></td>
+                      grupo de afinidad</span></p></td>
                   <td><p  class="PARRAFO">En 
                       este campo alfanum&eacute;rico de 80 posiciones, obligatorio, se registra 
                       el nombre asociado al c&oacute;digo de cada categor&iacute;a.</p></td>
                 </tr>
                 <tr> 
-                  <td><p class="SUBTITULO"><b><span 
+                  <td><p class="SUBTITULO"><span 
         >Empresa 
-                      externa </span></b>
+                      externa </span>
                       </p></td>
                   <td><p  class="PARRAFO">Campo 
                       no obligatorio, posee lista de valores de la que se selecciona la 
                       organizaci&oacute;n a la que pertenece el agente.</p></td>
                 </tr>
                 <tr> 
-                  <td class="titletable"><p class="SUBTITULO"><b><span 
+                  <td class="titletable"><p class="SUBTITULO"><span 
         >Tipo 
-                      de cuenta</span></b></p></td>
+                      de cuenta</span></p></td>
                   <td><p  class="PARRAFO">Si 
                       las comisiones que devengue el funcionario le deben ser abonadas en 
                       una cuenta Corriente Rotativo o de Ahorro, en este campo se selecciona 
                       el tipo o clase de cuenta a afectar.</p></td>
                 </tr>
                 <tr> 
-                  <td class="titletable"><p class="SUBTITULO"><b><span 
-        >Direcci&oacute;n</span></b></p></td>
+                  <td class="titletable"><p class="SUBTITULO"><span 
+        >Direcci&oacute;n</span></p></td>
                   <td><p  class="PARRAFO">En 
                       este campo alfanum&eacute;rico de 40 d&iacute;gitos, no obligatorio, 
                       se ingresan los datos de la ubicaci&oacute;n (nomenclatura) de la 
                       sede principal de la empresa para la que labora el agente externo.</p></td>
                 </tr>
                 <tr> 
-                  <td><p class="SUBTITULO"><b><span 
+                  <td><p class="SUBTITULO"><span 
         >N&uacute;mero 
-                      cuenta</span></b></p>        </td>
+                      cuenta</span></p>        </td>
                   <td><p  class="PARRAFO">Una 
                       vez seleccionado el tipo de cuenta debe registrarse en este campo 
                       el n&uacute;mero de la cuenta a afectar.</p></td>
@@ -323,9 +319,9 @@
                       se digita el n&uacute;mero(s) del fax de la empresa externa.</p></td>
                 </tr>
                 <tr> 
-                  <td><p class="SUBTITULO"><b><span 
+                  <td><p class="SUBTITULO"><span 
         >Puede 
-                      reestructurar directamente</span></b></p></td>
+                      reestructurar directamente</span></p></td>
                   <td><p  class="PARRAFO">Campo 
                       no obligatorio, permite determinar o se&ntilde;alar para cada funcionario 
                       si posee o no el atributo de realizar o gestionar reestructuraci&oacute;n 
@@ -333,8 +329,8 @@
                       establecidos para ese evento.</p></td>
                 </tr>
                 <tr> 
-                  <td  class="titletable" ><p class="SUBTITULO"><b><span 
-        >E-mail</span></b></p></td>
+                  <td  class="titletable" ><p class="SUBTITULO"><span 
+        >E-mail</span></p></td>
                   <td><p  class="PARRAFO">Este 
                       campo alfanum&eacute;rico de 30 posiciones, no obligatorio, permite 
                       registrar la direcci&oacute;n electr&oacute;nica del funcionario, 
@@ -345,9 +341,9 @@
                       de alertas</span> .</p></td>
                 </tr>
                 <tr> 
-                  <td class="titletable"><p class="SUBTITULO"><b><span 
+                  <td class="titletable"><p class="SUBTITULO"><span 
         >Pagar 
-                      a la empresa</span></b></p></td>
+                      a la empresa</span></p></td>
                   <td><p  class="PARRAFO">En 
                       este campo no obligatorio, que se activa &uacute;nicamente para los 
                       agentes externos, se indica de manera individual si las comisiones 
@@ -357,8 +353,8 @@
                 </tr>
               </table>
               .
-              <p class="PARRAFO"><b ><span class="SUBTITULO">
-              Actualizar</span></b>: 
+              <p class="PARRAFO"><span class="SUBTITULO">
+              Actualizar</span>: 
                 Si el usuario invoca la opci&oacute;n Actualizar se despliega un nuevo formulario 
                 en el cual los &uacute;nicos campos modificables son: Nombre, G&eacute;nero, 
                 Cargo, Tipo de documento, Agente que depende, Identificaci&oacute;n, Nivel 
@@ -368,7 +364,7 @@
                 Empresa externa, Tipo de cuenta, Direcci&oacute;n, N&uacute;mero de cuenta, 
                 Fax, Puede reestructurar directamente, E-mail, y Pagar a la empresa.</span></p>
               <p class="TITLE"><img src="../img/NUF_045E6.PNG"763" height="997"></p>
-              <p class="PARRAFO"><b ><span class="SUBTITULO">Detalle:</span></b>
+              <p class="PARRAFO"><span class="SUBTITULO">Detalle:</span>
                 <span 
         > Si el usuario invoca la opci&oacute;n Detalle se despliega el siguiente 
                 formulario:</span><span

@@ -18,26 +18,20 @@
       <img class="TITLE" src="../img/menu.PNG" alt="Botón de Menú ">
     </div>
   </header>
-  <div id="menuContainer"></div>
-    <script>
-      fetch('menu.html')
-        .then(response => response.text())
-        .then(html => {
-          document.getElementById('menuContainer').innerHTML = html;
-        });
-    </script>
+    <div id="menuContainer"></div>
+  <script>
+    fetch('menu.html')
+      .then(response => response.text())
+      .then(html => {
+        document.getElementById('menuContainer').innerHTML = html;
+      });
+  </script>
 
   <section>
     <div>
-      <table>
-        <tr>
-          <td>
-            <div>
+      
               <p class="TITLE">Agentes por zonas </p>
-            </div>
-          </td>
-        </tr>
-      </table>
+
       <p>Mediante esta forma o pantalla se vinculan los distintos agentes de cobro con las zonas geogr&aacute;ficas
         definidas por la entidad con el &aacute;nimo de se&ntilde;alar apropiadamente la cobertura para cada uno de
         estos; los campos restantes se diligencian con base en la parametrizaci&oacute;n efectuada en la
@@ -68,7 +62,7 @@
 
       <p class="PARRAFO"><span class="SUBTITULO">Adicionar:</span>  Si
         el usuario invoca la opci&oacute;n Adicionar se despliega un formulario con
-        los siguientes campos<span>:</span></p>
+        los siguientes campos:</span></p>
       <p class="TITLE"><img src="../img/CCF_012B2.PNG"></p>
 
       <table>

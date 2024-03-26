@@ -17,28 +17,20 @@
       <img class="TITLE" src="../img/menu.PNG" alt="Botón de Menú ">
     </div>
   </header>
-  <div id="menuContainer"></div>
-    <script>
-      fetch('menu.html')
-        .then(response => response.text())
-        .then(html => {
-          document.getElementById('menuContainer').innerHTML = html;
-        });
-    </script>
+    <div id="menuContainer"></div>
+  <script>
+    fetch('menu.html')
+      .then(response => response.text())
+      .then(html => {
+        document.getElementById('menuContainer').innerHTML = html;
+      });
+  </script>
 
   <section>
     <div>
-      <table>
-        <tr>
-          <td>
-            <div>
-
-              <p class="TITLE">Consulta de plásticos remisionados
+      <p class="TITLE">Consulta de plásticos remisionados
                 y recibidos</p>
-            </div>
-          </td>
-        </tr>
-      </table>
+
       <p class="PARRAFO">La funcionalidad del formulario invocado, solo tiene validez en el caso en que el valor del campo Control de remisión de plásticos, sea "Si", el cual se encuentra en la opción
           <a href="NUH_055B.html">Parámetros operativos,</a> la que le permite a la entidad, conocer a manera de resumen general, la cantidad de plásticos que le han sido entregados a los proveedores encargados de efectuar el realce (embosado) de las tarjetas, la cantidad de tarjetas ya realzadas que ellos han devuelto a la entidad y la cantidad pendiente de entrega. </p>
       <p class="PARRAFO">Para el fin anterior, el sistema utiliza la información proporcionada a partir de la generación del <a href="PLH_008B.html">archivo
@@ -53,13 +45,13 @@
         coincidan con la remisión. Si el actor no selecciona ningún
         valor de la lista, al ejecutar la consulta el sistema trae la información
         de todas las remisiones existentes en la base de datos<span class="PARRAFO">. </span>  </p>
-      <p class="TITLE"><img src="../img/PLF_032E1.PNG" 669"></p>
+      <p class="TITLE"><img src="../img/PLF_032E1.PNG"></p>
       <p class="TITLE">Descripción de campos</p>
       <div>
         <table>
           <tr>
             <td class="titletable">
-              <p class="SUBTITULO"><b><span>Remisión</span></b></p>
+              <p class="SUBTITULO">Remisión</span></p>
             </td>
             <td>
               <p class="PARRAFO">Campo
@@ -69,7 +61,7 @@
           </tr>
           <tr>
             <td class="titletable">
-              <p class="SUBTITULO"><b><span>Remisionadas</span></b></p>
+              <p class="SUBTITULO">Remisionadas</span></p>
             </td>
             <td>
               <p class="PARRAFO">En
@@ -80,7 +72,7 @@
 
           <tr>
             <td class="titletable">
-              <p class="SUBTITULO"><b><span>Recibidas</span></b></p>
+              <p class="SUBTITULO">Recibidas</span></p>
             </td>
             <td>
               <p class="PARRAFO">Campo

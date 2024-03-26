@@ -18,26 +18,20 @@
       <img class="TITLE" src="../img/menu.PNG" alt="Botón de Menú ">
     </div>
   </header>
-  <div id="menuContainer"></div>
-    <script>
-      fetch('menu.html')
-        .then(response => response.text())
-        .then(html => {
-          document.getElementById('menuContainer').innerHTML = html;
-        });
-    </script>
+    <div id="menuContainer"></div>
+  <script>
+    fetch('menu.html')
+      .then(response => response.text())
+      .then(html => {
+        document.getElementById('menuContainer').innerHTML = html;
+      });
+  </script>
 
   <section>
     <div>
-      <table>
-        <tr>
-          <td>
-            <div>
+      
               <p class="TITLE">Tipos documento identificaci&oacute;n</p>
-            </div>
-          </td>
-        </tr>
-      </table>
+
       <p>Mediante esta funci&oacute;n se habilita la consulta y mantenimiento de una tabla en la cual se almacenan los
         c&oacute;digos de los diferentes tipos de documentos de identificaci&oacute;n estandarizados por las entidades
         financieras; la forma permite asociarle a cada uno la clase de persona a la que corresponde, el c&oacute;digo
@@ -46,7 +40,7 @@
       <p class="PARRAFO">El
         formulario contiene las opciones Actualizar, Eliminar, y Adicionar.</p>
       <p class="PARRAFO"><span class="SUBTITULO">Adicionar:</span>  Si el usuario invoca la opci&oacute;n Adicionar se
-        despliega un formulario con los siguientes campos<span>:</span> 
+        despliega un formulario con los siguientes campos:</span> 
       </p>
       <p class="TITLE"><img src="../img/NUF_008E1.PNG"></p>
 

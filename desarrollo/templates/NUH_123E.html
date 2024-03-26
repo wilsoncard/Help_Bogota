@@ -17,24 +17,20 @@
             <img class="TITLE"  src= "../img/menu.PNG" alt="Botón de Menú ">
         </div>
     </header>
-   <div id="menuContainer"></div>
-    <script>
-      fetch('menu.html')
-        .then(response => response.text())
-        .then(html => {
-          document.getElementById('menuContainer').innerHTML = html;
-        });
-    </script>
+      <div id="menuContainer"></div>
+  <script>
+    fetch('menu.html')
+      .then(response => response.text())
+      .then(html => {
+        document.getElementById('menuContainer').innerHTML = html;
+      });
+  </script>
 
     <section>
         <div> 
-            <table>
-              <tr> 
-                <td><div> 
+            
                     <p  class="TITLE">Par&aacute;metros conexi&oacute;n al Servidor </p>
-                  </div></td>
-              </tr>
-            </table>
+                  
             <p class="PARRAFO" >A trav&eacute;s de &eacute;ste formulario la entidad puede definir los servidores origen / destino de los archivos en claro o cifrados, para cada uno de los protocolos de transmisi&oacute;n  FTP o SSH.</span>   <span class="PARRAFO">As&iacute; mismo y para cuando existen m&uacute;ltiples conexiones, el formulario ofrece el filtro de consulta.</span>  </p>
             <p class="PARRAFO" >El formulario contiene los enlaces Actualizar</span> ,<span class="PARRAFO"> Eliminar, Adicionar y Detalle. </span></p>
             <p class="TITLE"><img src="../img/NUF_123E1.PNG"621" ></p>
@@ -46,7 +42,7 @@
 
             <table>
               <tr>
-                <td class="titletable" ><p class="SUBTITULO"><b>Tipo de transferencia</b></p></td>
+                <td class="titletable" ><p class="SUBTITULO">Tipo de transferencia</p></td>
                 <td><p  class="PARRAFO">Campo obligatorio que posee lista de valores tipo combo, de la que debe seleccionarse entre FTP,  SSH o Ninguno, que le permite a la entidad indicar, simpre que aplique, cual es el protocolo de transferencia de archivos.</p></td>
               </tr>
               <tr>

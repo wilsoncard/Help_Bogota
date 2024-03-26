@@ -18,26 +18,20 @@
       <img class="TITLE" src="../img/menu.PNG" alt="Botón de Menú ">
     </div>
   </header>
-  <div id="menuContainer"></div>
-    <script>
-      fetch('menu.html')
-        .then(response => response.text())
-        .then(html => {
-          document.getElementById('menuContainer').innerHTML = html;
-        });
-    </script>
+    <div id="menuContainer"></div>
+  <script>
+    fetch('menu.html')
+      .then(response => response.text())
+      .then(html => {
+        document.getElementById('menuContainer').innerHTML = html;
+      });
+  </script>
 
   <section>
     <div>
-      <table>
-        <tr>
-          <td>
-            <div>
+      
               <p class="TITLE">Segmentaci&oacute;n de clientes</p>
-            </div>
-          </td>
-        </tr>
-      </table>
+
       <p class="PARRAFO">Mediante esta funci&oacute;n se provee una herramienta de
         mercadeo que permite la segmentaci&oacute;n de los clientes, mediante la creaci&oacute;n
         de grupos de informaci&oacute;n sobre los mismos de acuerdo con los criterios
@@ -50,8 +44,8 @@
       <table>
         <tr>
           <td class="titletable">
-            <p class="SUBTITULO"><b><span>Nombre
-                  criterio </span></b></p>
+            <p class="SUBTITULO">Nombre
+                  criterio </span></p>
           </td>
           <td>
             <p class="PARRAFO">Si
@@ -66,7 +60,7 @@
       <p class="TITLE"><img src="../img/MEF_012B.PNG"></p>
 
       <p class="PARRAFO"><span class="SUBTITULO">Adicionar:</span>  Si el usuario invoca
-        esta opci&oacute;n, se despliega un formulario con los siguientes campos<span>,
+        esta opci&oacute;n, se despliega un formulario con los siguientes campos,
           a trav&eacute;s del cual se ingresa un nuevo Criterio.</span></p>
       <p class="PARRAFO"><span class="SUBTITULO">Criterios:</span>  Mediante la combinatoria
         de este conjunto de campos la entidad define las condiciones que requiera
@@ -382,7 +376,7 @@
           </td>
         </tr>
       </table>
-      <p><a href="MEH_012B1.html">Lista de resultados</a><span><b> | </b></span><a href="MEH_012B2.html">
+      <p><a href="MEH_012B1.html">Lista de resultados</a> | </span><a href="MEH_012B2.html">
           Adicionar</a></p>
   </section>
   <script src="../js/menu.js"></script>

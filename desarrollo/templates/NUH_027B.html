@@ -18,24 +18,20 @@
             <img class="TITLE"  src= "../img/menu.PNG" alt="Botón de Menú ">
         </div>
     </header>
-   <div id="menuContainer"></div>
-    <script>
-      fetch('menu.html')
-        .then(response => response.text())
-        .then(html => {
-          document.getElementById('menuContainer').innerHTML = html;
-        });
-    </script>
+      <div id="menuContainer"></div>
+  <script>
+    fetch('menu.html')
+      .then(response => response.text())
+      .then(html => {
+        document.getElementById('menuContainer').innerHTML = html;
+      });
+  </script>
 
     <section>
         <div> 
-            <table>
-              <tr> 
-                <td><div> 
+            
                     <p  class="TITLE">Origen de transacciones</p>
-                  </div></td>
-              </tr>
-            </table>
+                  
             <p  class="PARRAFO">Esta funci&oacute;n habilita la consulta 
               y/o mantenimiento, reservado a funcionarios de OpenCard SAS, de la tabla 
               que almacena los c&oacute;digos de los diferentes or&iacute;genes o fuentes 
@@ -57,7 +53,7 @@
 
             <p  class="PARRAFO">El formulario contiene las opciones Actualizar, 
               Eliminar y Adicionar. </p>
-            <p  class="PARRAFO"><span class="SUBTITULO"><b ><span            '>Adicionar</span></b><span 
+            <p  class="PARRAFO"><span class="SUBTITULO"><span            '>Adicionar</span><span 
         >:</span><span 
         ></span></span><span 
         > 
@@ -67,8 +63,8 @@
             <p  class="TITLE">Descripci&oacute;n de campos</p>
             <table>
               <tr> 
-                <td class="titletable"><p class="SUBTITULO"><b><span 
-        >C&oacute;digo</span></b></p></td>
+                <td class="titletable"><p class="SUBTITULO"><span 
+        >C&oacute;digo</span></p></td>
                 <td><p  class="PARRAFO">Campo 
                     num&eacute;rico de 3 d&iacute;gitos, obligatorio, en el cual se registra 
                     el c&oacute;digo asignado a cada uno de los or&iacute;genes de transacciones 
@@ -78,8 +74,8 @@
               </tr>
            
               <tr> 
-                <td class="titletable"><p class="SUBTITULO"><b><span 
-        >Nombre</span></b></p></td>
+                <td class="titletable"><p class="SUBTITULO"><span 
+        >Nombre</span></p></td>
                 <td><p  class="PARRAFO">En 
                     este campo alfanum&eacute;rico de 30 caracteres, obligatorio, se registra 
                     la descripci&oacute;n o definici&oacute;n asociada a cada c&oacute;digo 
@@ -87,8 +83,8 @@
               </tr>
            
               <tr> 
-                <td class="titletable"><p class="SUBTITULO"><b><span 
-        >Abreviatura</span></b></p></td>
+                <td class="titletable"><p class="SUBTITULO"><span 
+        >Abreviatura</span></p></td>
                 <td><p  class="PARRAFO">Campo 
                     alfanum&eacute;rico de 10 caracteres, obligatorio, en el que se ingresa 
                     la abreviatura o nombre corto utilizado que identifica al origen y que 
@@ -96,8 +92,8 @@
               </tr>
            
               <tr> 
-                <td class="titletable"><p class="SUBTITULO"><b><span 
-        >Compensador</span></b></p></td>
+                <td class="titletable"><p class="SUBTITULO"><span 
+        >Compensador</span></p></td>
                 <td><p  class="PARRAFO">Este 
                     campo tipo combo permite seleccionar el <a href="NUH_054B.html" >compensadores</a> 
                     a trav&eacute;s del cual se va a procesar el movimiento que ingresa 
@@ -105,7 +101,7 @@
               </tr>
            
               <tr> 
-                <td class="titletable"><p class="SUBTITULO"><b><span >Tapa</span></b></p></td>
+                <td class="titletable"><p class="SUBTITULO"><span >Tapa</span></p></td>
                 <td><p  class="PARRAFO">Campo 
                     obligatorio que contiene un combo donde se selecciona entre Si o No 
                     el origen requiere que una vez se efect&uacute;e el cambio de calendario 
@@ -115,8 +111,8 @@
               </tr>
            
               <tr> 
-                <td class="titletable"><p class="SUBTITULO"><b><span 
-        >Reservado</span></b></p></td>
+                <td class="titletable"><p class="SUBTITULO"><span 
+        >Reservado</span></p></td>
                 <td><p  class="PARRAFO">En 
                     este campo tipo combo se selecciona entre Si o No el c&oacute;digo y 
                     origen han sido reservados para uso exclusivo de OpenCard, o corresponden 
@@ -128,8 +124,8 @@
               </tr>
             </table>
             <div>
-              <p class="PARRAFO"><b ><span class="SUBTITULO"> 
-                Actualizar</span></b>: Si el usuario selecciona un registro e invoca la 
+              <p class="PARRAFO"><span class="SUBTITULO"> 
+                Actualizar</span>: Si el usuario selecciona un registro e invoca la 
                 opci&oacute;n Actualizar se despliega un formulario en el cual los campos 
                 modificables son el Nombre, Abreviatura, Compensador, Tapa y Reservado.    </p>
              <p class="TITLE"><img src="../img/NUF_027E3.PNG"283" ></p>

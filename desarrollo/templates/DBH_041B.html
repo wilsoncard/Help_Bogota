@@ -19,26 +19,20 @@
       <img class="TITLE" src="../img/menu.PNG" alt="Botón de Menú ">
     </div>
   </header>
-  <div id="menuContainer"></div>
-    <script>
-      fetch('menu.html')
-        .then(response => response.text())
-        .then(html => {
-          document.getElementById('menuContainer').innerHTML = html;
-        });
-    </script>
+    <div id="menuContainer"></div>
+  <script>
+    fetch('menu.html')
+      .then(response => response.text())
+      .then(html => {
+        document.getElementById('menuContainer').innerHTML = html;
+      });
+  </script>
 
   <section>
     <div>
-      <table>
-        <tr>
-          <td>
-            <div>
+      
               <p class="TITLE">Consulta solicitudes</p>
-            </div>
-          </td>
-        </tr>
-      </table>
+
       <p class="PARRAFO">Esta opci&oacute;n permite consultar las diferentes solicitudes
         que se encuentran en cualquiera de las etapas definidas por la entidad. La
         forma filtra con base en el perfil del usuario el tipo de solicitudes que
@@ -65,7 +59,7 @@
         <tr>
           <td class="titletable">
             <p class="SUBTITULO">Tipo
-              solicitud <b><span></span></b></p>
+              solicitud </p>
           </td>
           <td>
             <p class="PARRAFO">Campo
@@ -76,8 +70,8 @@
         </tr>
         <tr>
           <td class="titletable">
-            <p class="SUBTITULO"><b>Fecha
-                ingreso</b></p>
+            <p class="SUBTITULO">Fecha
+                ingreso</p>
           </td>
           <td>
             <p class="PARRAFO">Corresponde
@@ -146,8 +140,8 @@
         </tr>
         <tr>
           <td class="titletable">
-            <p class="SUBTITULO"><b>Fecha
-                estado</b> actual </p>
+            <p class="SUBTITULO">Fecha
+                estado actual </p>
           </td>
           <td>
             <p class="PARRAFO">Campo
@@ -179,8 +173,8 @@
         </tr>
         <tr>
           <td class="titletable">
-            <p class="SUBTITULO">Nombre<b><span>
-                </span></b>solicitante</p>
+            <p class="SUBTITULO">Nombre
+                </span>solicitante</p>
           </td>
           <td>
             <p class="PARRAFO">Despliega
@@ -202,7 +196,7 @@
       <p><span class="SUBTITULO">Consultar etapas:</span>  Si el usuario invoca la opci&oacute;n la consulta de etapas se
         despliega el
         siguiente formulario, el cual se va alimentando a medida que la solicitud
-        avanza de etapa hasta ser Aprobada.<span>
+        avanza de etapa hasta ser Aprobada.
 
         </span></p>
 

@@ -1,168 +1,187 @@
 <!DOCTYPE html>
 <html lang="es">
 
-<head>
+  <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>BANKBU®</title>
     <link rel="stylesheet" href="../css/pages.css">
     <link rel="stylesheet" href="../css/style.css">
- <link rel="icon" href="../img/ACQUIRER-logo.JPG" type="image/x-icon">
-</head>
+    <link rel="icon" href="../img/ACQUIRER-logo.JPG" type="image/x-icon">
+  </head>
 
-<body>
+  <body>
     <header>
-        <img class="logo" src="../img/logoBankbu_.PNG" alt="Logo de Mi Empresa">
-        <div id="menuBtn">
-            <img class="TITLE"  src= "../img/menu.PNG" alt="Botón de Menú ">
-        </div>
+      <img class="logo" src="../img/logoBankbu_.PNG" alt="Logo de Mi Empresa">
+      <div id="menuBtn">
+        <img class="TITLE" src="../img/menu.PNG" alt="Botón de Menú ">
+      </div>
     </header>
-   <div id="menuContainer"></div>
+    <div id="menuContainer"></div>
     <script>
-      fetch('menu.html')
-        .then(response => response.text())
-        .then(html => {
-          document.getElementById('menuContainer').innerHTML = html;
-        });
-    </script>
+    fetch('menu.html')
+      .then(response => response.text())
+      .then(html => {
+        document.getElementById('menuContainer').innerHTML = html;
+      });
+  </script>
 
     <section>
-        <div> 
-            <table>
-              <tr> 
-                <td><div> 
-                    <p  class="TITLE">Novedad obligaciones financieras</p>
-                  </div></td>
-              </tr>
-            </table>
-            <p  class="PARRAFO"><span class="PARRAFO">En este formulario 
-              invocado desde la opci&oacute;n <a href="SCH_002B.html#BL_OBLIGACIONES" >consulta 
-              de clientes</a>, a trav&eacute;s del hiperv&iacute;nculo Financiera 
-              en el bloque Obligaciones financieras</span> , la entidad puede efectuar 
-              el ingreso o modificaci&oacute;n de los datos inherentes a las obligaciones 
-              o cr&eacute;ditos obtenidos del sector financiero, notificados por el cliente 
-              o a trav&eacute;s de las centrales de riesgo.</p>
-            <p  class="PARRAFO">Esta informaci&oacute;n puede ser de utilidad 
-              para la entidad por ejemplo al momento de evaluar o calificar al cliente respecto 
-              de la capacidad de endeudamiento para responder por las obligaciones adquiridas.</p>
-            
-            <p  class="PARRAFO">El formulario contiene las opciones Actualizar, 
-              Eliminar, Adicionar y Detalle. </p>
-            <p  class="PARRAFO"><span class="SUBTITULO"><b ><span            '>Adicionar</span></b><span 
-        >:</span><span 
-        ></span></span><span 
-        > 
-              si el usuario invoca la opci&oacute;n Adicionar se despliega un formulario 
-              con los siguientes campos:</span></p>
-            <p  class="PARRAFO"></p>
-            <p class="TITLE"><img src="../img/SCF_017E.PNG"372" height="361"></p>
+      <div>
 
-            <p  class="TITLE">Descripci&oacute;n de campos</p>
-            <table>
-              <tr> 
-                <td class="titletable"><p class="SUBTITULO"><b><span 
-        > 
-                    Entidad</span></b></p></td>
-                <td><p  class="PARRAFO">Campo 
-                    obligatorio que contiene lista de valores de la cual se selecciona la 
-                    <span ><a href="NUH_019B.html" >entidad 
-                    financiera</a></span> con la cual el cliente posee la obligaci&oacute;n.</p>
-                  </td>
-              </tr>
-           
-              <tr> 
-                <td  class="titletable" ><p class="SUBTITULO"><b><span 
-        > 
-                    Moneda</span></b></p></td>
-                <td><p  class="PARRAFO">En 
-                    este campo obligatorio que cuenta con lista de valores se selecciona 
-                    la <a href="NUH_005B.html" >moneda</a> en la cual 
-                    se encuentra expresada la obligaci&oacute;n contraida por el cliente 
-                    con la entidad relacionada.</p></td>
-              </tr>
-              <tr> 
-                <td  class="titletable" ><p class="SUBTITULO"><b><span 
-        > 
-                    Tipo de obligaci&oacute;n</span></b></p></td>
-                <td><p  class="PARRAFO">Campo 
-                    obligatorio tipo combo que permite seleccionar entre Pr&eacute;stamo 
-                    (ordinario o consumo), Hipotecario o Tarjeta el tipo de cr&eacute;dito 
-                    al que corresponde la obligaci&oacute;n adquirida por el cliente con 
-                    la entidad.</p></td>
-              </tr>
-              <tr> 
-                <td  class="titletable" ><p class="SUBTITULO"><b><span 
-        > 
-                    Saldo</span></b></p></td>
-                <td><p  class="PARRAFO">En 
-                    este campo obligatorio de hasta 14 enteros y 2 decimales se registra 
-                    el valor actual de la deuda adquirida con la entidad y que se encuentra 
-                    por cubrir.</p></td>
-              </tr>
-              <tr> 
-                <td class="titletable"><p class="SUBTITULO"><b><span 
-        >Cuenta</span></b></p></td>
-                <td><p  class="PARRAFO">Campo 
-                    alfanum&eacute;rico de 16 posiciones, obligatorio, en el cual se registra 
-                    el n&uacute;mero o referencia que identifica el cr&eacute;dito o producto 
-                    a trav&eacute;s de la cual se adquiri&oacute; la obligaci&oacute;n con 
-                    la entidad.
-                  </p></td>
-              </tr>
-           
-              <tr> 
-                <td  class="titletable" ><p class="SUBTITULO"><b><span 
-        >Cuota 
-                    mensual </span></b></p></td>
-                <td><p  class="PARRAFO">En 
-                    este campo de hasta 14 enteros y 2 decimales se registra el valor que 
-                    el cliente debe cancelar mensualmente por la obligaci&oacute;n contra&iacute;da 
-                    con la entidad.
-                  </p></td>
-              </tr>
-              <tr> 
-                <td  class="titletable" ><p class="SUBTITULO"><b><span 
-        >Valor 
-                    aprobado</span></b></p></td>
-                <td><p  class="PARRAFO">Campo 
-                    obligatorio de hasta 14 enteros y 2 decimales se registra el valor inicial 
-                    del cr&eacute;dito aprobado al cliente por la entidad relacionada.</p></td>
-              </tr>
-              <tr> 
-                <td  class="titletable" ><p class="SUBTITULO"><b><span 
-        >Observaciones</span></b></p></td>
-                <td><p  class="PARRAFO">En 
-                    este campo alfanum&eacute;rico de hasta 255 caracteres, no obligatorio, 
-                    se puede registrar una breve descripci&oacute;n o datos adicionales 
-                    esenciales sobre la obligaci&oacute;n, manejo, vencimiento, garantes, 
-                    garant&iacute;a, cupo u otros. </p></td>
-              </tr>
-            </table>
+        <p class="TITLE">Novedad obligaciones financieras</p>
 
-            <p class="PARRAFO"><b ><span class="SUBTITULO">Actualizar</span></b>: 
-              Si el usuario selecciona un registro e invoca la opci&oacute;n Actualizar 
-              se despliega un nuevo formulario en el cual todos los campos son modificables.</p>
-            <p  class="PARRAFO"></p>
-            <p class="TITLE"><img src="../img/SCF_017E1.PNG"372" height="362"></p>
-            .
-            <p class="PARRAFO"><b ><span class="SUBTITULO">Detalle</span></b>: 
-              Si el usuario selecciona un registro e invoca la opci&oacute;n Detalle se 
-              despliega un nuevo formulario con toda la informaci&oacute;n del registro 
-              y en el cual ninguno de sus campos es modificable.</p>
-           
-            <p class="TITLE"><img src="../img/SCF_017E2.PNG"709" height="114"></p>
-            <div>
+        <p class="PARRAFO"><span class="PARRAFO">En este formulario
+            invocado desde la opci&oacute;n <a
+              href="SCH_002B.html#BL_OBLIGACIONES">consulta
+              de clientes</a>, a trav&eacute;s del hiperv&iacute;nculo
+            Financiera
+            en el bloque Obligaciones financieras</span> , la entidad puede
+          efectuar
+          el ingreso o modificaci&oacute;n de los datos inherentes a las
+          obligaciones
+          o cr&eacute;ditos obtenidos del sector financiero, notificados por el
+          cliente
+          o a trav&eacute;s de las centrales de riesgo.</p>
+        <p class="PARRAFO">Esta informaci&oacute;n puede ser de utilidad
+          para la entidad por ejemplo al momento de evaluar o calificar al
+          cliente respecto
+          de la capacidad de endeudamiento para responder por las obligaciones
+          adquiridas.</p>
+
+        <p class="PARRAFO">El formulario contiene las opciones Actualizar,
+          Eliminar, Adicionar y Detalle. </p>
+        <p class="PARRAFO"><span class="SUBTITULO"><span
+              '>Adicionar</span><span>:</span><span></span></span><span>
+            si el usuario invoca la opci&oacute;n Adicionar se despliega un
+            formulario
+            con los siguientes campos:</span></p>
+        <p class="PARRAFO"></p>
+        <p class="TITLE"><img src="../img/SCF_017E.PNG"></p>
+
+        <p class="TITLE">Descripci&oacute;n de campos</p>
+        <table>
+          <tr>
+            <td class="titletable"><p class="SUBTITULO"><span>
+                  Entidad</span></p></td>
+            <td><p class="PARRAFO">Campo
+                obligatorio que contiene lista de valores de la cual se
+                selecciona la
+                <span><a href="NUH_019B.html">entidad
+                    financiera</a></span> con la cual el cliente posee la
+                obligaci&oacute;n.</p>
+            </td>
+          </tr>
+
+          <tr>
+            <td class="titletable"><p class="SUBTITULO"><span>
+                  Moneda</span></p></td>
+            <td><p class="PARRAFO">En
+                este campo obligatorio que cuenta con lista de valores se
+                selecciona
+                la <a href="NUH_005B.html">moneda</a> en la cual
+                se encuentra expresada la obligaci&oacute;n contraida por el
+                cliente
+                con la entidad relacionada.</p></td>
+          </tr>
+          <tr>
+            <td class="titletable"><p class="SUBTITULO"><span>
+                  Tipo de obligaci&oacute;n</span></p></td>
+            <td><p class="PARRAFO">Campo
+                obligatorio tipo combo que permite seleccionar entre
+                Pr&eacute;stamo
+                (ordinario o consumo), Hipotecario o Tarjeta el tipo de
+                cr&eacute;dito
+                al que corresponde la obligaci&oacute;n adquirida por el cliente
+                con
+                la entidad.</p></td>
+          </tr>
+          <tr>
+            <td class="titletable"><p class="SUBTITULO"><span>
+                  Saldo</span></p></td>
+            <td><p class="PARRAFO">En
+                este campo obligatorio de hasta 14 enteros y 2 decimales se
+                registra
+                el valor actual de la deuda adquirida con la entidad y que se
+                encuentra
+                por cubrir.</p></td>
+          </tr>
+          <tr>
+            <td class="titletable"><p
+                class="SUBTITULO"><span>Cuenta</span></p></td>
+            <td><p class="PARRAFO">Campo
+                alfanum&eacute;rico de 16 posiciones, obligatorio, en el cual se
+                registra
+                el n&uacute;mero o referencia que identifica el cr&eacute;dito o
+                producto
+                a trav&eacute;s de la cual se adquiri&oacute; la
+                obligaci&oacute;n con
+                la entidad.
+              </p></td>
+          </tr>
+
+          <tr>
+            <td class="titletable"><p class="SUBTITULO"><span>Cuota
+                  mensual </span></p></td>
+            <td><p class="PARRAFO">En
+                este campo de hasta 14 enteros y 2 decimales se registra el
+                valor que
+                el cliente debe cancelar mensualmente por la obligaci&oacute;n
+                contra&iacute;da
+                con la entidad.
+              </p></td>
+          </tr>
+          <tr>
+            <td class="titletable"><p class="SUBTITULO"><span>Valor
+                  aprobado</span></p></td>
+            <td><p class="PARRAFO">Campo
+                obligatorio de hasta 14 enteros y 2 decimales se registra el
+                valor inicial
+                del cr&eacute;dito aprobado al cliente por la entidad
+                relacionada.</p></td>
+          </tr>
+          <tr>
+            <td class="titletable"><p
+                class="SUBTITULO"><span>Observaciones</span></p></td>
+            <td><p class="PARRAFO">En
+                este campo alfanum&eacute;rico de hasta 255 caracteres, no
+                obligatorio,
+                se puede registrar una breve descripci&oacute;n o datos
+                adicionales
+                esenciales sobre la obligaci&oacute;n, manejo, vencimiento,
+                garantes,
+                garant&iacute;a, cupo u otros. </p></td>
+          </tr>
+        </table>
+
+        <p class="PARRAFO"><span class="SUBTITULO">Actualizar</span>:
+          Si el usuario selecciona un registro e invoca la opci&oacute;n
+          Actualizar
+          se despliega un nuevo formulario en el cual todos los campos son
+          modificables.</p>
+        <p class="PARRAFO"></p>
+        <p class="TITLE"><img src="../img/SCF_017E1.PNG"></p>
+        
+        <p class="PARRAFO"><span class="SUBTITULO">Detalle</span>:
+          Si el usuario selecciona un registro e invoca la opci&oacute;n Detalle
+          se
+          despliega un nuevo formulario con toda la informaci&oacute;n del
+          registro
+          y en el cual ninguno de sus campos es modificable.</p>
+
+        <p class="TITLE"><img src="../img/SCF_017E2.PNG"></p>
+        <div>
         </section>
-    <script src="../js/menu.js"></script>
+        <script src="../js/menu.js"></script>
 
-    <div id="footerContainer"></div>
-<script>
+        <div id="footerContainer"></div>
+        <script>
   fetch('footer.html')
     .then(response => response.text())
     .then(html => {
       document.getElementById('footerContainer').innerHTML = html;
     });
 </script>
-</body>
+      </body>
 
-</html>
+    </html>

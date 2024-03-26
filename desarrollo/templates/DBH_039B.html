@@ -19,26 +19,20 @@
       <img class="TITLE" src="../img/menu.PNG" alt="Botón de Menú ">
     </div>
   </header>
-  <div id="menuContainer"></div>
-    <script>
-      fetch('menu.html')
-        .then(response => response.text())
-        .then(html => {
-          document.getElementById('menuContainer').innerHTML = html;
-        });
-    </script>
+    <div id="menuContainer"></div>
+  <script>
+    fetch('menu.html')
+      .then(response => response.text())
+      .then(html => {
+        document.getElementById('menuContainer').innerHTML = html;
+      });
+  </script>
 
   <section>
     <div>
-      <table>
-        <tr>
-          <td>
-            <div>
+      
               <p class="TITLE">Programas comerciales</p>
-            </div>
-          </td>
-        </tr>
-      </table>
+
       <p class="PARRAFO">Mediante esta opci&oacute;n se parametrizan
         los diferentes programas comerciales que posteriormente ser&aacute;n asociados
         a los <a href="DBH_018B.html">productos d&eacute;bito</a>
@@ -53,7 +47,7 @@
       <p class="TITLE"><img src="../img/DBF_039E.PNG"></p>
       <p class="PARRAFO">El formulario contiene las opciones Actualizar,
         Eliminar, Adicionar y Detalle.</p>
-      <p class="PARRAFO"><b><span class="SUBTITULO">Adicionar:</span></b>
+      <p class="PARRAFO"><span class="SUBTITULO">Adicionar:</span>
         si el usuario invoca la opci&oacute;n Adicionar, se despliega un
         nuevo formulario con los siguientes campos.</p>
       <p class="TITLE"><img src="../img/DBF_039E1.PNG"></p>
@@ -65,7 +59,7 @@
         <table>
           <tr>
             <td class="titletable">
-              <p class="SUBTITULO"><b><span>C&oacute;digo</span></b></p>
+              <p class="SUBTITULO">C&oacute;digo</span></p>
             </td>
             <td>
               <p class="PARRAFO">Campo
@@ -76,7 +70,7 @@
           </tr>
           <tr>
             <td class="titletable">
-              <p class="SUBTITULO"><b><span>Descripci&oacute;n</span></b></p>
+              <p class="SUBTITULO">Descripci&oacute;n</span></p>
             </td>
             <td>
               <p class="PARRAFO">Este
@@ -86,7 +80,7 @@
           </tr>
           <tr>
             <td class="titletable">
-              <p class="SUBTITULO"><b><span>Identificador</span></b></p>
+              <p class="SUBTITULO">Identificador</span></p>
             </td>
             <td>
               <p class="PARRAFO">Campo
@@ -98,8 +92,8 @@
           </tr>
           <tr>
             <td class="titletable">
-              <p class="SUBTITULO"><b><span>Edad inicial
-                    / final</span></b></p>
+              <p class="SUBTITULO">Edad inicial
+                    / final</span></p>
             </td>
             <td>
               <p class="PARRAFO">Esta
@@ -111,8 +105,8 @@
           </tr>
           <tr>
             <td class="titletable">
-              <p class="SUBTITULO"><b><span>Antiguedad inicial
-                    / final</span></b></p>
+              <p class="SUBTITULO">Antiguedad inicial
+                    / final</span></p>
             </td>
             <td>
               <p class="PARRAFO">Dupla
@@ -124,7 +118,7 @@
           </tr>
           <tr>
             <td class="titletable">
-              <p class="SUBTITULO"><b><span>% Manejo</span></b></p>
+              <p class="SUBTITULO">% Manejo</span></p>
             </td>
             <td>
               <p class="PARRAFO">Campo
@@ -139,13 +133,13 @@
         </table>
       </div>
 
-      <p class="PARRAFO"><b><span class="SUBTITULO">Actualizar:</span></b>
+      <p class="PARRAFO"><span class="SUBTITULO">Actualizar:</span>
         si el usuario selecciona un registro e invoca la opci&oacute;n Actualizar,
         se despliega un formulario en el cual el &uacute;nico campo NO modificable
         es el C&oacute;digo.</p>
       <p class="TITLE"><img src="../img/DBF_039E3.PNG"></p>
 
-      <p class="PARRAFO"><b><span class="SUBTITULO">Detalle:</span></b>
+      <p class="PARRAFO"><span class="SUBTITULO">Detalle:</span>
         si el usuario selecciona un registro e invoca la opci&oacute;n Detalle,
         se despliega un formulario con la informaci&oacute;n completa del registro
         y en el cual ninguno de sus campos es modificable.</p>

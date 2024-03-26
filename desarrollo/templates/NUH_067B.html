@@ -17,26 +17,20 @@
       <img class="TITLE" src="../img/menu.PNG" alt="Botón de Menú ">
     </div>
   </header>
-  <div id="menuContainer"></div>
-    <script>
-      fetch('menu.html')
-        .then(response => response.text())
-        .then(html => {
-          document.getElementById('menuContainer').innerHTML = html;
-        });
-    </script>
+    <div id="menuContainer"></div>
+  <script>
+    fetch('menu.html')
+      .then(response => response.text())
+      .then(html => {
+        document.getElementById('menuContainer').innerHTML = html;
+      });
+  </script>
 
   <section>
     <div>
-      <table>
-        <tr>
-          <td>
-            <div>
+      
               <p class="TITLE">Programas afinidad </p>
-            </div>
-          </td>
-        </tr>
-      </table>
+
       <p class="PARRAFO">Mediante esta funci&oacute;n se consulta
         y realiza mantenimiento a la tabla que contiene una codificaci&oacute;n establecida
         por Credibanco-Visa para conocer estad&iacute;sticas de vol&uacute;menes de
@@ -49,7 +43,7 @@
 
       <p class="PARRAFO">El formulario contiene las opciones Actualizar,
         Eliminar y Adicionar. </p>
-      <p class="PARRAFO"><span class="SUBTITULO"><b><span>Adicionar</span></b><span 
+      <p class="PARRAFO"><span class="SUBTITULO">Adicionar</span><span 
         >:</span><span 
         ></span></span><span 
         > 
@@ -58,14 +52,14 @@
             <p  class="TITLE">Descripci&oacute;n de campos</p>
             <table>
               <tr> 
-                <td class="titletable"><p class="SUBTITULO"><b><span 
-        >C&oacute;digo</span></b></p></td>
+                <td class="titletable"><p class="SUBTITULO"><span 
+        >C&oacute;digo</span></p></td>
                 <td><p  class="PARRAFO">Campo obligatorio num&eacute;rico de tres d&iacute;gitos, obligatorio, que identifica 
                     cada uno de los programas definidos por Credibanco-Visa. </p></td>
               </tr>
               <tr> 
-                <td class="titletable"><p class="SUBTITULO"><b><span 
-        >Descripci&oacute;n</span></b></p></td>
+                <td class="titletable"><p class="SUBTITULO"><span 
+        >Descripci&oacute;n</span></p></td>
                 <td><p  class="PARRAFO">En 
                     este campo obligatorio alfanum&eacute;rico de 30 posiciones, obligatorio, se registra 
                     el nombre asociado al c&oacute;digo de cada programa.
@@ -73,8 +67,8 @@
               </tr>
            
               <tr> 
-                <td class="titletable"><p class="SUBTITULO"><b>Clase
-                </b></p></td>
+                <td class="titletable"><p class="SUBTITULO">Clase
+                </p></td>
                 <td><p  class="PARRAFO">Campo 
                     obligatorio que contiene lista de valores adjunta de la que se puede seleccionar 
                     entre Afinidad o (marca) Compartida, la caracter&iacute;stica de cada 
@@ -85,8 +79,8 @@
               </tr>
             </table>
             <div> 
-              <p class="PARRAFO"><b ><span class="SUBTITULO"> 
-                Actualizar</span></b>: Si el usuario invoca la opci&oacute;n Actualizar 
+              <p class="PARRAFO"><span class="SUBTITULO"> 
+                Actualizar</span>: Si el usuario invoca la opci&oacute;n Actualizar 
                 se despliega un nuevo formulario en el cual los &uacute;nicos campos modificables 
                 son Descripci&oacute;n y Clase
               </p>

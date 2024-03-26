@@ -1,112 +1,115 @@
 <!DOCTYPE html>
 <html lang="es">
 
-<head>
+  <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>BANKBU®</title>
     <link rel="stylesheet" href="../css/pages.css">
     <link rel="stylesheet" href="../css/style.css">
- <link rel="icon" href="../img/ACQUIRER-logo.JPG" type="image/x-icon">
-</head>
+    <link rel="icon" href="../img/ACQUIRER-logo.JPG" type="image/x-icon">
+  </head>
 
-<body>
+  <body>
     <header>
-        <img class="logo" src="../img/logoBankbu_.PNG" alt="Logo de Mi Empresa">
-        <div id="menuBtn">
-            <img class="TITLE"  src= "../img/menu.PNG" alt="Botón de Menú ">
-        </div>
+      <img class="logo" src="../img/logoBankbu_.PNG" alt="Logo de Mi Empresa">
+      <div id="menuBtn">
+        <img class="TITLE" src="../img/menu.PNG" alt="Botón de Menú ">
+      </div>
     </header>
-   <div id="menuContainer"></div>
+    <div id="menuContainer"></div>
     <script>
-      fetch('menu.html')
-        .then(response => response.text())
-        .then(html => {
-          document.getElementById('menuContainer').innerHTML = html;
-        });
-    </script>
+    fetch('menu.html')
+      .then(response => response.text())
+      .then(html => {
+        document.getElementById('menuContainer').innerHTML = html;
+      });
+  </script>
 
     <section>
-        <div> 
-            <table>
-              <tr> 
-                <td><div> 
-                    
-                    <p  class="TITLE">Generación de pedidos</p>
-                </div></td>
-              </tr>
-            </table>
-            <p class="PARRAFO" >Mediante esta opción que se 
-              invoca desde el formulario <a href="PLH_001B.html" >Inventario 
-              de plásticos</a> se generan los pedidos de plásticos a 
-              los proveedores, de acuerdo con la cantidad de reorden establecida y con las 
-              necesidades propias de la entidad.</span></p>
-            <p  class="PARRAFO">Al ingresar a la opción, se despliega 
-              un wizard de dos pasos que permite la generación de pedidos para los 
-              diferentes modelos de plásticos que hayan sido parametrizados por la 
-              entidad.</p>
-            <p class="TITLE"><img src="../img/PLF_002E.PNG"338" ></p>
+      <div>
+        <p class="TITLE">Generación de pedidos</p>
 
-            <p  class="TITLE">Descripción de campos</p>
-            <div> 
-              <table>
-                <tr> 
-                  <td  class="titletable" ><p class="SUBTITULO"><b><span 
-        >Modelo</span></b></p></td>
-                  <td><p  class="PARRAFO">Campo 
-                      obligatorio con lista de valores que permite seleccionar el <span ><a href="NUH_057B.html" >modelo 
-                      de plástico</a></span>  para el que se desea generar un 
-                      pedido al proveedor.</p></td>
-                </tr>
-                <tr> 
-                  <td class="titletable"><p class="SUBTITULO"><b><span 
-        >Proveedor</span></b></p></td>
-                  <td><p  class="PARRAFO">Este 
-                      campo obligatorio despliega el nombre del proveedor del plástico 
-                      y a quien se le va a generar el pedido.</p></td>
-                </tr>
+        <p class="PARRAFO">Mediante esta opción que se
+          invoca desde el formulario <a href="PLH_001B.html">Inventario
+            de plásticos</a> se generan los pedidos de plásticos a
+          los proveedores, de acuerdo con la cantidad de reorden establecida y
+          con las
+          necesidades propias de la entidad.</span></p>
+      <p class="PARRAFO">Al ingresar a la opción, se despliega
+        un wizard de dos pasos que permite la generación de pedidos para los
+        diferentes modelos de plásticos que hayan sido parametrizados por la
+        entidad.</p>
+      <p class="TITLE"><img src="../img/PLF_002E.PNG"></p>
 
-                <tr> 
-                  <td class="titletable"><p class="SUBTITULO"><b><span 
-        >Cantidad</span></b></p></td>
-                  <td><p  class="PARRAFO">Campo 
-                      obligatorio en el que se registra la cantidad de plásticos 
-                      a solicitarle al proveedor. Por defecto después de haber seleccionado 
-                      el modelo, este campo se llena automáticamente con la cantidad 
-                      de reorden parametrizada para el mismo pero puede ser modificada por 
-                      el usuario.</p></td>
-                </tr>
-              </table>
-              
-            </div>
+      <p class="TITLE">Descripción de campos</p>
+      <div>
+        <table>
+          <tr>
+            <td class="titletable"><p
+                class="SUBTITULO"><span>Modelo</span></p></td>
+            <td><p class="PARRAFO">Campo
+                obligatorio con lista de valores que permite seleccionar el
+                <span><a href="NUH_057B.html">modelo
+                    de plástico</a></span> para el que se desea generar un
+                pedido al proveedor.</p></td>
+          </tr>
+          <tr>
+            <td class="titletable"><p
+                class="SUBTITULO"><span>Proveedor</span></p></td>
+            <td><p class="PARRAFO">Este
+                campo obligatorio despliega el nombre del proveedor del plástico
+                y a quien se le va a generar el pedido.</p></td>
+          </tr>
 
-            <p  class="PARRAFO">Después de haber ingresado el pedido 
-              para un modelo de plástico, mediante el segundo botón del wizard 
-              se van adicionando uno a uno los pedidos y luego al desplazarse a la segunda 
-              página se muestra el resumen de todos desplegando para cada uno el 
-              modelo, el proveedor y la cantidad pedida. El formulario cuenta con un check 
-              que permite marcar aquellos pedidos que ya no se desea generar.</p>
-            <p class="TITLE"><img src="../img/PLF_002E1.PNG"760" height="132"></p>
-            <p  class="PARRAFO">Una vez grabados los registros el sistema 
-              le genera internamente a cada pedido una secuencia y actualiza automáticamente 
-              para cada modelo el campo 'Pedido' del formulario <span class="PARRAFO"><a href="PLH_001B.html" >Inventario 
-              de plásticos</a></span> .</p>
-            <p  class="PARRAFO">El sistema controla que para un mismo modelo 
-              no se pueda hacer más de un pedido a la vez y de igual manera que si 
-              el modelo ya tiene un pedido anterior este tenga registrada por lo menos alguna 
-              <a href="PLH_003B.html" >entrega</a> parcial.</p>
-            <div>
-        </section>
-    <script src="../js/menu.js"></script>
+          <tr>
+            <td class="titletable"><p
+                class="SUBTITULO"><span>Cantidad</span></p></td>
+            <td><p class="PARRAFO">Campo
+                obligatorio en el que se registra la cantidad de plásticos
+                a solicitarle al proveedor. Por defecto después de haber
+                seleccionado
+                el modelo, este campo se llena automáticamente con la cantidad
+                de reorden parametrizada para el mismo pero puede ser modificada
+                por
+                el usuario.</p></td>
+          </tr>
+        </table>
 
-    <div id="footerContainer"></div>
-<script>
+      </div>
+
+      <p class="PARRAFO">Después de haber ingresado el pedido
+        para un modelo de plástico, mediante el segundo botón del wizard
+        se van adicionando uno a uno los pedidos y luego al desplazarse a la
+        segunda
+        página se muestra el resumen de todos desplegando para cada uno el
+        modelo, el proveedor y la cantidad pedida. El formulario cuenta con un
+        check
+        que permite marcar aquellos pedidos que ya no se desea generar.</p>
+      <p class="TITLE"><img src="../img/PLF_002E1.PNG"></p>
+      <p class="PARRAFO">Una vez grabados los registros el sistema
+        le genera internamente a cada pedido una secuencia y actualiza
+        automáticamente
+        para cada modelo el campo 'Pedido' del formulario <span
+          class="PARRAFO"><a href="PLH_001B.html">Inventario
+            de plásticos</a></span> .</p>
+      <p class="PARRAFO">El sistema controla que para un mismo modelo
+        no se pueda hacer más de un pedido a la vez y de igual manera que si
+        el modelo ya tiene un pedido anterior este tenga registrada por lo menos
+        alguna
+        <a href="PLH_003B.html">entrega</a> parcial.</p>
+      <div>
+      </section>
+      <script src="../js/menu.js"></script>
+
+      <div id="footerContainer"></div>
+      <script>
   fetch('footer.html')
     .then(response => response.text())
     .then(html => {
       document.getElementById('footerContainer').innerHTML = html;
     });
 </script>
-</body>
+    </body>
 
-</html>
+  </html>

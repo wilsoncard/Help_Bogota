@@ -1,107 +1,111 @@
 <!DOCTYPE html>
 <html lang="es">
 
-<head>
+  <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>BANKBU®</title>
     <link rel="stylesheet" href="../css/pages.css">
     <link rel="stylesheet" href="../css/style.css">
- <link rel="icon" href="../img/ACQUIRER-logo.JPG" type="image/x-icon">
-</head>
+    <link rel="icon" href="../img/ACQUIRER-logo.JPG" type="image/x-icon">
+  </head>
 
-<body>
+  <body>
     <header>
-        <img class="logo" src="../img/logoBankbu_.PNG" alt="Logo de Mi Empresa">
-        <div id="menuBtn">
-            <img class="TITLE"  src= "../img/menu.PNG" alt="Botón de Menú ">
-        </div>
+      <img class="logo" src="../img/logoBankbu_.PNG" alt="Logo de Mi Empresa">
+      <div id="menuBtn">
+        <img class="TITLE" src="../img/menu.PNG" alt="Botón de Menú ">
+      </div>
     </header>
-   <div id="menuContainer"></div>
+    <div id="menuContainer"></div>
     <script>
-      fetch('menu.html')
-        .then(response => response.text())
-        .then(html => {
-          document.getElementById('menuContainer').innerHTML = html;
-        });
-    </script>
+    fetch('menu.html')
+      .then(response => response.text())
+      .then(html => {
+        document.getElementById('menuContainer').innerHTML = html;
+      });
+  </script>
 
     <section>
-        <div> 
-            <table>
-              <tr> 
-                <td><div> 
-                    <p  class="TITLE">Modelos pl&aacute;sticos </p>
-                  </div></td>
-              </tr>
-            </table>
-            <p class="PARRAFO" >Mediante esta opci&oacute;n se facilita 
-              la consulta y mantenimiento de la tabla que contiene la codificaci&oacute;n 
-              de todos los prototipos f&iacute;sicos de los pl&aacute;sticos utilizados 
-              por la entidad, los cuales son asociados a los productos mediante la opci&oacute;n 
-              de <a href="MEH_002B.html" >Definici&oacute;n de productos</a> 
-              del emisor.
-              </span></p>
-            <p class="TITLE"><img src="../img/NUF_057E.PNG"742" height="511"></p>
-            
-            <p  class="PARRAFO">El formulario contiene las opciones Actualizar, 
-              Eliminar y Adicionar. </p>
-            <p  class="PARRAFO"><span class="SUBTITULO"><b ><span            '>Adicionar</span></b><span 
-        >:</span><span 
-        ></span></span><span 
-        > 
-              Si el usuario invoca la opci&oacute;n Adicionar se despliega un nuevo formulario</span></p>
-            <p class="TITLE"><img src="../img/NUF_057E1.PNG"409" height="118"></p>
-            <p  class="TITLE">Descripci&oacute;n de campos</p>
-            <table>
-              <tr> 
-                <td class="titletable"><p class="SUBTITULO"><b><span 
-        >Modelo</span></b></p></td>
-                <td><p  class="PARRAFO">Campo 
-                    num&eacute;rico de tres d&iacute;gitos, obligatorio, identifica a cada 
-                    uno de los prototipos o modelos f&iacute;sicos de pl&aacute;sticos definidos 
-                    por la entidad, lo que permite diferenciar f&iacute;sicamente los productos. 
-                  </p></td>
-              </tr>
-              <tr> 
-                <td class="titletable"><p class="SUBTITULO"><b><span 
-        >Descripci&oacute;n</span></b></p></td>
-                <td><p  class="PARRAFO">En 
-                    este campo alfanum&eacute;rico de 30 posiciones, obligatorio, se registra 
-                    el nombre asociado al c&oacute;digo del modelo.
-                   
-                  </p></td>
-              </tr>
-           
-              <tr> 
-                <td class="titletable"><p class="SUBTITULO"><b>Proveedor
-                </b></p></td>
-                <td><p  class="PARRAFO">Campo 
-                    obligatorio que contiene lista de valores de la que se selecciona el 
-                    c&oacute;digo del <a href="NUH_063B.html" >proveedor</a> 
-                    correspondiente.
-                   
-                </p></td>
-              </tr>
-            </table>
-            <div> 
-              <p class="PARRAFO"><b ><span class="SUBTITULO"> 
-                Actualizar</span></b>: Si el usuario invoca la opci&oacute;n Actualizar 
-                se despliega un nuevo formulario en el cual los &uacute;nicos campos modificables 
-                son Descripci&oacute;n y Proveedor.
-              </p>
-             <p class="TITLE"><img src="../img/NUF_057E2.PNG"410" height="117"></p>
-              </section>
-    <script src="../js/menu.js"></script>
+      <div>
 
-    <div id="footerContainer"></div>
-<script>
+        <p class="TITLE">Modelos pl&aacute;sticos </p>
+
+        <p class="PARRAFO">Mediante esta opci&oacute;n se facilita
+          la consulta y mantenimiento de la tabla que contiene la
+          codificaci&oacute;n
+          de todos los prototipos f&iacute;sicos de los pl&aacute;sticos
+          utilizados
+          por la entidad, los cuales son asociados a los productos mediante la
+          opci&oacute;n
+          de <a href="MEH_002B.html">Definici&oacute;n de productos</a>
+          del emisor.
+        </span></p>
+      <p class="TITLE"><img src="../img/NUF_057E.PNG"></p>
+
+      <p class="PARRAFO">El formulario contiene las opciones Actualizar,
+        Eliminar y Adicionar. </p>
+      <p class="PARRAFO"><span class="SUBTITULO"><span
+            '>Adicionar</span><span>:</span><span></span></span><span>
+          Si el usuario invoca la opci&oacute;n Adicionar se despliega un nuevo
+          formulario</span></p>
+      <p class="TITLE"><img src="../img/NUF_057E1.PNG"></p>
+      <p class="TITLE">Descripci&oacute;n de campos</p>
+      <table>
+        <tr>
+          <td class="titletable"><p
+              class="SUBTITULO"><span>Modelo</span></p></td>
+          <td><p class="PARRAFO">Campo
+              num&eacute;rico de tres d&iacute;gitos, obligatorio, identifica a
+              cada
+              uno de los prototipos o modelos f&iacute;sicos de pl&aacute;sticos
+              definidos
+              por la entidad, lo que permite diferenciar f&iacute;sicamente los
+              productos.
+            </p></td>
+        </tr>
+        <tr>
+          <td class="titletable"><p
+              class="SUBTITULO"><span>Descripci&oacute;n</span></p></td>
+          <td><p class="PARRAFO">En
+              este campo alfanum&eacute;rico de 30 posiciones, obligatorio, se
+              registra
+              el nombre asociado al c&oacute;digo del modelo.
+
+            </p></td>
+        </tr>
+
+        <tr>
+          <td class="titletable"><p class="SUBTITULO">Proveedor
+            </p></td>
+          <td><p class="PARRAFO">Campo
+              obligatorio que contiene lista de valores de la que se selecciona
+              el
+              c&oacute;digo del <a href="NUH_063B.html">proveedor</a>
+              correspondiente.
+
+            </p></td>
+        </tr>
+      </table>
+      <div>
+        <p class="PARRAFO"><span class="SUBTITULO">
+            Actualizar</span>: Si el usuario invoca la opci&oacute;n Actualizar
+          se despliega un nuevo formulario en el cual los &uacute;nicos campos
+          modificables
+          son Descripci&oacute;n y Proveedor.
+        </p>
+        <p class="TITLE"><img src="../img/NUF_057E2.PNG"></p>
+      </section>
+      <script src="../js/menu.js"></script>
+
+      <div id="footerContainer"></div>
+      <script>
   fetch('footer.html')
     .then(response => response.text())
     .then(html => {
       document.getElementById('footerContainer').innerHTML = html;
     });
 </script>
-</body>
+    </body>
 
-</html>
+  </html>

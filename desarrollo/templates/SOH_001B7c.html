@@ -1,104 +1,117 @@
 <!DOCTYPE html>
 <html lang="es">
 
-<head>
+  <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>BANKBU®</title>
     <link rel="stylesheet" href="../css/pages.css">
     <link rel="stylesheet" href="../css/style.css">
- <link rel="icon" href="../img/ACQUIRER-logo.JPG" type="image/x-icon">
-</head>
+    <link rel="icon" href="../img/ACQUIRER-logo.JPG" type="image/x-icon">
+  </head>
 
-<body>
+  <body>
     <header>
-        <img class="logo" src="../img/logoBankbu_.PNG" alt="Logo de Mi Empresa">
-        <div id="menuBtn">
-            <img class="TITLE"  src= "../img/menu.PNG" alt="Botón de Menú ">
-        </div>
+      <img class="logo" src="../img/logoBankbu_.PNG" alt="Logo de Mi Empresa">
+      <div id="menuBtn">
+        <img class="TITLE" src="../img/menu.PNG" alt="Botón de Menú ">
+      </div>
     </header>
-   <div id="menuContainer"></div>
+    <div id="menuContainer"></div>
     <script>
-      fetch('menu.html')
-        .then(response => response.text())
-        .then(html => {
-          document.getElementById('menuContainer').innerHTML = html;
-        });
-    </script>
+    fetch('menu.html')
+      .then(response => response.text())
+      .then(html => {
+        document.getElementById('menuContainer').innerHTML = html;
+      });
+  </script>
 
     <section>
-        <div> 
-            <table>
-              <tr> 
-                <td><div> 
-                    <p  class="TITLE">Par&aacute;metros solicitudes por producto</p>
-                    </div></td>
-              </tr>
-            </table>
-            <p class="PARRAFO"><span class="SUBTITULO">Cupos extendidos:</span>  Conjunto 
-              de campos en los que se define la manera como el sistema permitir&aacute; 
-              la asignaci&oacute;n de cupos dependiendo del n&uacute;mero de tarjetas extendidas 
-              del producto.</p>
-            <p class="PARRAFO">El formulario contiene las opciones Actualizar, Eliminar, 
-              y Adicionar. Adicionalmente, cuenta con un bot&oacute;n en la parte superior 
-              para volver al formulario de <a href="SOH_001B7.html">Solicitudes</a>.</p>
-            <p class="TITLE"><img src="../img/SOF_001B44.PNG"203" height="124"></p>
-            
-            <p  class="PARRAFO"><span class="SUBTITULO">Adicionar:</span>  Si 
-              el usuario invoca la opci&oacute;n Adicionar se despliega un formulario con 
-              los siguientes campos<span 
-        >:</span></p>
-            <p class="TITLE"><img src="../img/SOF_001B45.PNG"179" ></p>
-            
-            <table>
-              <tr> 
-                <td class="titletable"><p class="SUBTITULO">N&uacute;mero 
-                    extendidas </p></td>
-                <td><p class="PARRAFO">Campo 
-                    num&eacute;rico de 2 d&iacute;gitos obligatorio en el que debe registrarse 
-                    la cantidad de tarjetas extendidas relacionadas con el producto que 
-                    se parametriza.</p></td>
-              </tr>
-              <tr> 
-                <td class="titletable"><p class="SUBTITULO">% 
-                    Titular </p></td>
-                <td><p class="PARRAFO">En 
-                    este campo num&eacute;rico de 2 enteros y 2 decimales, debe registrarse 
-                    el valor porcentual que debe deducirse del total del cupo del titular 
-                    y cuyo resultado debe dividirse entre el n&uacute;mero de extendidas 
-                    correspondiente. A manera de ejemplo, si se ingresa 20% y 4 extendidas 
-                    y el cupo del titular es de $10&#8217;000.000.oo , el valor porcentual 
-                    que puede asignarse es del 80% lo que corresponde a $8&#8217;000.000.oo 
-                    que al dividirse entre el n&uacute;mero de extendidas, 4 para el caso, 
-                    el sistema asignar&iacute;a $2&#8217;000.000.oo a cada una.</p></td>
-              </tr>
-            </table>
+      <div>
 
-            <p  class="PARRAFO"><span class="PARRAFO"><span class="SUBTITULO">Actualizar:</span>  
-              Si el usuario invoca la opci&oacute;n Actualizar se despliega un nuevo formulario 
-              en el cual el &uacute;nico campo modificable es: Titular.</span></p>
-            <p class="TITLE"><img src="../img/SOF_001B46.PNG"181" height="79"></p>
-           
-           
-            <p><a href="SOH_001B7.html">Solicitudes</a><span
-              ><b> | </b></span><a href="SOH_001B7b.html">Etapas</a><b><span > 
-              | </span></b><a href="SOH_001B7d.html">Relaciones laborales</a><span
-              ><b> | </b></span><a href="SOH_001B7e.html">Cupos 
-              m&iacute;n y m&aacute;x por rango</a><b><span > 
-              <b>|</b></span></b><span ></span><a href="SOH_001B7f.html">Copiar 
-              par&aacute;metros</a><span ></span></p>
-            
-        </section>
-    <script src="../js/menu.js"></script>
+        <p class="TITLE">Par&aacute;metros solicitudes por producto</p>
 
-    <div id="footerContainer"></div>
-<script>
+        <p class="PARRAFO"><span class="SUBTITULO">Cupos extendidos:</span>
+          Conjunto
+          de campos en los que se define la manera como el sistema
+          permitir&aacute;
+          la asignaci&oacute;n de cupos dependiendo del n&uacute;mero de
+          tarjetas extendidas
+          del producto.</p>
+        <p class="PARRAFO">El formulario contiene las opciones Actualizar,
+          Eliminar,
+          y Adicionar. Adicionalmente, cuenta con un bot&oacute;n en la parte
+          superior
+          para volver al formulario de <a
+            href="SOH_001B7.html">Solicitudes</a>.</p>
+        <p class="TITLE"><img src="../img/SOF_001B44.PNG"></p>
+
+        <p class="PARRAFO"><span class="SUBTITULO">Adicionar:</span> Si
+          el usuario invoca la opci&oacute;n Adicionar se despliega un
+          formulario con
+          los siguientes campos<span>:</span></p>
+        <p class="TITLE"><img src="../img/SOF_001B45.PNG"></p>
+
+        <table>
+          <tr>
+            <td class="titletable"><p class="SUBTITULO">N&uacute;mero
+                extendidas </p></td>
+            <td><p class="PARRAFO">Campo
+                num&eacute;rico de 2 d&iacute;gitos obligatorio en el que debe
+                registrarse
+                la cantidad de tarjetas extendidas relacionadas con el producto
+                que
+                se parametriza.</p></td>
+          </tr>
+          <tr>
+            <td class="titletable"><p class="SUBTITULO">%
+                Titular </p></td>
+            <td><p class="PARRAFO">En
+                este campo num&eacute;rico de 2 enteros y 2 decimales, debe
+                registrarse
+                el valor porcentual que debe deducirse del total del cupo del
+                titular
+                y cuyo resultado debe dividirse entre el n&uacute;mero de
+                extendidas
+                correspondiente. A manera de ejemplo, si se ingresa 20% y 4
+                extendidas
+                y el cupo del titular es de $10&#8217;000.000.oo , el valor
+                porcentual
+                que puede asignarse es del 80% lo que corresponde a
+                $8&#8217;000.000.oo
+                que al dividirse entre el n&uacute;mero de extendidas, 4 para el
+                caso,
+                el sistema asignar&iacute;a $2&#8217;000.000.oo a cada
+                una.</p></td>
+          </tr>
+        </table>
+
+        <p class="PARRAFO"><span class="PARRAFO"><span
+              class="SUBTITULO">Actualizar:</span>
+            Si el usuario invoca la opci&oacute;n Actualizar se despliega un
+            nuevo formulario
+            en el cual el &uacute;nico campo modificable es: Titular.</span></p>
+        <p class="TITLE"><img src="../img/SOF_001B46.PNG"></p>
+
+        <p><a href="SOH_001B7.html">Solicitudes</a><span> | </span><a
+            href="SOH_001B7b.html">Etapas</a><span>
+            | </span><a href="SOH_001B7d.html">Relaciones laborales</a><span> |
+          </span><a href="SOH_001B7e.html">Cupos
+            m&iacute;n y m&aacute;x por rango</a><span>
+            |</span><span></span><a href="SOH_001B7f.html">Copiar
+            par&aacute;metros</a><span></span></p>
+
+      </section>
+      <script src="../js/menu.js"></script>
+
+      <div id="footerContainer"></div>
+      <script>
   fetch('footer.html')
     .then(response => response.text())
     .then(html => {
       document.getElementById('footerContainer').innerHTML = html;
     });
 </script>
-</body>
+    </body>
 
-</html>
+  </html>

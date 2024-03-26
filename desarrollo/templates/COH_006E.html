@@ -1,160 +1,171 @@
 <!DOCTYPE html>
 <html lang="es">
 
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>BANKBU®</title>
-  <link rel="stylesheet" href="../css/pages.css">
-  <link rel="stylesheet" href="../css/style.css">
-  <link rel="icon" href="../img/ACQUIRER-logo.JPG" type="image/x-icon">
-</head>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BANKBU®</title>
+    <link rel="stylesheet" href="../css/pages.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="icon" href="../img/ACQUIRER-logo.JPG" type="image/x-icon">
+  </head>
 
-<body>
+  <body>
 
-  <header>
-    <img class="logo" src="../img/logoBankbu_.PNG" alt="Logo de Mi Empresa">
-    <div id="menuBtn">
-      <img class="TITLE" src="../img/menu.PNG" alt="Botón de Menú ">
-    </div>
-  </header>
-  <div id="menuContainer"></div>
+    <header>
+      <img class="logo" src="../img/logoBankbu_.PNG" alt="Logo de Mi Empresa">
+      <div id="menuBtn">
+        <img class="TITLE" src="../img/menu.PNG" alt="Botón de Menú ">
+      </div>
+    </header>
+    <div id="menuContainer"></div>
     <script>
-      fetch('menu.html')
-        .then(response => response.text())
-        .then(html => {
-          document.getElementById('menuContainer').innerHTML = html;
-        });
-    </script>
+    fetch('menu.html')
+      .then(response => response.text())
+      .then(html => {
+        document.getElementById('menuContainer').innerHTML = html;
+      });
+  </script>
 
-  <section>
-    <div>
-      <table>
-        <tr>
-          <td>
-            <div>
-              <p class="TITLE">Datos por tipo de mensaje</p>
-            </div>
-          </td>
-        </tr>
-      </table>
-      <p class="PARRAFO">Esta funci&oacute;n se utiliza para determinar los datos que componen cada uno de los tipos de
-        mensajes establecidos en el sistema, informaci&oacute;n que ser&aacute; utilizada en los procesos de
-        interpretaci&oacute;n y generaci&oacute;n de mensajes.</p>
+    <section>
+      <div>
+        <p class="TITLE">Datos por tipo de mensaje</p>
+              
+        <p class="PARRAFO">Esta funci&oacute;n se utiliza para determinar los
+          datos que componen cada uno de los tipos de
+          mensajes establecidos en el sistema, informaci&oacute;n que
+          ser&aacute; utilizada en los procesos de
+          interpretaci&oacute;n y generaci&oacute;n de mensajes.</p>
 
-      <p class="TITLE"><img src="../img/COF_006E.PNG"></p>
+        <p class="TITLE"><img src="../img/COF_006E.PNG"></p>
 
-      <p><span class="SUBTITULO">Filtro:</span>  El formulario cuenta
-        con un filtro inicial de b&uacute;squeda, necesario para la consulta de la
-        informaci&oacute;n:</p>
-      
-      <table>
-        <tr>
-          <td class="titletable">
-            <p class="SUBTITULO"><b><span><span>Marca</span></span></b></p>
-          </td>
-          <td>
-            <p class="PARRAFO">Campo
-              de salida que a partir del bin despliega la <a href="NUH_033B.html" >marca o
+        <p><span class="SUBTITULO">Filtro:</span> El formulario cuenta
+          con un filtro inicial de b&uacute;squeda, necesario para la consulta
+          de la
+          informaci&oacute;n:</p>
+
+        <table>
+          <tr>
+            <td class="titletable">
+              <p class="SUBTITULO">Marca</span></span></p>
+            </td>
+            <td>
+              <p class="PARRAFO">Campo
+                de salida que a partir del bin despliega la <a
+                  href="NUH_033B.html">marca o
                   franquicia</a> a la cual pertenece el producto.</p>
-          </td>
-        </tr>
-        <tr>
-          <td class="titletable">
-            <p class="SUBTITULO">Mensaje<b><span></span></b></p>
-          </td>
-          <td>
-            <p class="PARRAFO">Campo con lista de valores de la cual la entidad selecciona el <a
+            </td>
+          </tr>
+          <tr>
+            <td class="titletable">
+              <p class="SUBTITULO">Mensaje</p>
+            </td>
+            <td>
+              <p class="PARRAFO">Campo con lista de valores de la cual la
+                entidad selecciona el <a
                   href="COH_004B.html">tipo de mensaje</a> para el
-              proceso de decodificaci&oacute;n de los mensajes.</p>
-          </td>
-        </tr>
-      </table>
-      <p>El formulario contiene las opciones Actualizar, Eliminar y
-        Adicionar:</p>
-      <p class="TITLE"><img src="../img/COF_006E0.PNG"></p>
+                proceso de decodificaci&oacute;n de los mensajes.</p>
+            </td>
+          </tr>
+        </table>
+        <p>El formulario contiene las opciones Actualizar, Eliminar y
+          Adicionar:</p>
+        <p class="TITLE"><img src="../img/COF_006E0.PNG"></p>
 
-      <p><span class="SUBTITULO">Adicionar:</span>  Si el usuario invoca la opci&oacute;n Adicionar se despliega un
-        formulario con los siguiente campos:</p>
+        <p><span class="SUBTITULO">Adicionar:</span> Si el usuario invoca la
+          opci&oacute;n Adicionar se despliega un
+          formulario con los siguiente campos:</p>
 
-      <p class="TITLE"><img src="../img/COF_006E1.PNG"></p>
+        <p class="TITLE"><img src="../img/COF_006E1.PNG"></p>
 
-      <table>
-        <tr>
-          <td class="titletable">
-            <p class="SUBTITULO">Marca</p>
-          </td>
-          <td>
-            <p class="PARRAFO">Campo
-              de salida que a partir del bin despliega la <a href="NUH_033B.html" >marca o
+        <table>
+          <tr>
+            <td class="titletable">
+              <p class="SUBTITULO">Marca</p>
+            </td>
+            <td>
+              <p class="PARRAFO">Campo
+                de salida que a partir del bin despliega la <a
+                  href="NUH_033B.html">marca o
                   franquicia</a> a la cual pertenece el producto.</p>
-          </td>
-        </tr>
-        <tr>
-          <td class="titletable">
-            <p class="SUBTITULO">Mensaje</p>
-          </td>
-          <td>
-            <p class="PARRAFO">Campo con lista de valores de la cual la entidad selecciona el <a
+            </td>
+          </tr>
+          <tr>
+            <td class="titletable">
+              <p class="SUBTITULO">Mensaje</p>
+            </td>
+            <td>
+              <p class="PARRAFO">Campo con lista de valores de la cual la
+                entidad selecciona el <a
                   href="COH_004B.html">tipo de mensaje</a> para el
-              proceso de decodificaci&oacute;n de los mensajes.</p>
-          </td>
-        </tr>
-        <tr>
-          <td class="titletable">
-            <p class="SUBTITULO">Dato del Mensaje</p>
-          </td>
-          <td>
-            <p class="PARRAFO">Campo en el cual la entidad selecciona de la lista de valores el c&oacute;digo del <a
+                proceso de decodificaci&oacute;n de los mensajes.</p>
+            </td>
+          </tr>
+          <tr>
+            <td class="titletable">
+              <p class="SUBTITULO">Dato del Mensaje</p>
+            </td>
+            <td>
+              <p class="PARRAFO">Campo en el cual la entidad selecciona de la
+                lista de valores el c&oacute;digo del <a
                   href="COH_005E.html">dato del mensaje</a> que
-              identifica el dato que hace parte del mensaje.</p>
-          </td>
-        </tr>
-        <tr>
-          <td class="titletable">
-            <p class="SUBTITULO">Mandatario</p>
-          </td>
-          <td>
-            <p class="PARRAFO">Descripci&oacute;n del mensaje indica si es mandatario o no mandatario.</p>
-          </td>
-        </tr>
-        <tr>
-          <td class="titletable">
-            <p class="SUBTITULO">Terminal</p>
-          </td>
-          <td>
-            <p class="PARRAFO">Este campo contiene lista de valores de la cual la entidad selecciona el <a
+                identifica el dato que hace parte del mensaje.</p>
+            </td>
+          </tr>
+          <tr>
+            <td class="titletable">
+              <p class="SUBTITULO">Mandatario</p>
+            </td>
+            <td>
+              <p class="PARRAFO">Descripci&oacute;n del mensaje indica si es
+                mandatario o no mandatario.</p>
+            </td>
+          </tr>
+          <tr>
+            <td class="titletable">
+              <p class="SUBTITULO">Terminal</p>
+            </td>
+            <td>
+              <p class="PARRAFO">Este campo contiene lista de valores de la cual
+                la entidad selecciona el <a
                   href="COH_002B.html">tipo de terminal</a> que
-              interviene para el proceso de decodificaci&oacute;n de los mensajes.</p>
-          </td>
-        </tr>
-        <tr>
-          <td class="titletable">
-            <p class="SUBTITULO">Tipo Mensaje</p>
-          </td>
-          <td>
-            <p class="PARRAFO">Un mismo mensaje puede ser requerido por el autorizador cuando act&uacute;a como receptor
-              del mensaje pero no cuando lo env&iacute;a y viceversa; este campo contiene una lista de valores de la
-              cual se selecciona el tipo de dato de acuerdo con las caracter&iacute;sticas del mensaje, si &eacute;ste
-              es Enviado o Recibido y opera en conjunto con el par&aacute;metro definido en el campo
-              inmediatamente anterior.</p>
-          </td>
-        </tr>
-      </table>
-      <p><span class="SUBTITULO">Actualizar:</span>  Si el usuario invoca la opci&oacute;n Actualizar se despliega el
-        mismo formulario de adici&oacute;n, pero con con los campos marca, mensaje y dato del mensaje en segundo plano
-        porque no se pueden actualizar.</p>
+                interviene para el proceso de decodificaci&oacute;n de los
+                mensajes.</p>
+            </td>
+          </tr>
+          <tr>
+            <td class="titletable">
+              <p class="SUBTITULO">Tipo Mensaje</p>
+            </td>
+            <td>
+              <p class="PARRAFO">Un mismo mensaje puede ser requerido por el
+                autorizador cuando act&uacute;a como receptor
+                del mensaje pero no cuando lo env&iacute;a y viceversa; este
+                campo contiene una lista de valores de la
+                cual se selecciona el tipo de dato de acuerdo con las
+                caracter&iacute;sticas del mensaje, si &eacute;ste
+                es Enviado o Recibido y opera en conjunto con el
+                par&aacute;metro definido en el campo
+                inmediatamente anterior.</p>
+            </td>
+          </tr>
+        </table>
+        <p><span class="SUBTITULO">Actualizar:</span> Si el usuario invoca la
+          opci&oacute;n Actualizar se despliega el
+          mismo formulario de adici&oacute;n, pero con con los campos marca,
+          mensaje y dato del mensaje en segundo plano
+          porque no se pueden actualizar.</p>
 
-      <p class="TITLE"><img src="../img/COF_006E2.PNG"></p>
-  </section>
-  <script src="../js/menu.js"></script>
-</body>
-<div id="footerContainer"></div>
-<script>
+        <p class="TITLE"><img src="../img/COF_006E2.PNG"></p>
+      </section>
+      <script src="../js/menu.js"></script>
+    </body>
+    <div id="footerContainer"></div>
+    <script>
   fetch('footer.html')
     .then(response => response.text())
     .then(html => {
       document.getElementById('footerContainer').innerHTML = html;
     });
 </script>
-</html>
+  </html>

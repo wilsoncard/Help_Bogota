@@ -1,86 +1,90 @@
 <!DOCTYPE html>
 <html lang="es">
 
-<head>
+  <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>BANKBU®</title>
     <link rel="stylesheet" href="../css/pages.css">
     <link rel="stylesheet" href="../css/style.css">
- <link rel="icon" href="../img/ACQUIRER-logo.JPG" type="image/x-icon">
-</head>
+    <link rel="icon" href="../img/ACQUIRER-logo.JPG" type="image/x-icon">
+  </head>
 
-<body>
+  <body>
     <header>
-        <img class="logo" src="../img/logoBankbu_.PNG" alt="Logo de Mi Empresa">
-        <div id="menuBtn">
-            <img class="TITLE"  src= "../img/menu.PNG" alt="Botón de Menú ">
-        </div>
+      <img class="logo" src="../img/logoBankbu_.PNG" alt="Logo de Mi Empresa">
+      <div id="menuBtn">
+        <img class="TITLE" src="../img/menu.PNG" alt="Botón de Menú ">
+      </div>
     </header>
-   <div id="menuContainer"></div>
+    <div id="menuContainer"></div>
     <script>
-      fetch('menu.html')
-        .then(response => response.text())
-        .then(html => {
-          document.getElementById('menuContainer').innerHTML = html;
-        });
-    </script>
+    fetch('menu.html')
+      .then(response => response.text())
+      .then(html => {
+        document.getElementById('menuContainer').innerHTML = html;
+      });
+  </script>
 
     <section>
-        <div> 
-            <table>
-              <tr> 
-                <td><div> 
-                    <p  class="TITLE">Novedad calificaci&oacute;n y categor&iacute;a 
-                      cliente </p>
-                  </div></td>
-              </tr>
-            </table>
-            <p class="PARRAFO" >Este formulario invocado desde la opci&oacute;n 
-              <a href="SCH_075B.html" >ingreso de novedades</a>, (core) 
-              permite a la entidad modificar la </span><span ><a href="NUH_066B.html#BL_INTERNAS" >calificaci&oacute;n</a></span><span class="PARRAFO"> 
-              institucional del cliente u homologaci&oacute;n respecto del resto de obligaciones 
-              o productos otorgados al mismo; igualmente facilita asignarle diferentes <a href="MEH_004B.html" >categor&iacute;as</a> 
-              a cada cliente y con ello diferenciarlos u otorgarles un tratamiento preferencial. 
-              </span></p>
-            <p class="TITLE"><img src="../img/SCF_010E.PNG"396" height="79"></p>
-            
-            <p  class="TITLE">Descripci&oacute;n de campos</p>
-            <table>
-              <tr> 
-                <td class="titletable"><p class="SUBTITULO"><b><span 
-        > 
-                    Calificaci&oacute;n de la entidad</span></b></p></td>
-                <td><p  class="PARRAFO">Campo 
-                    tipo combo en el cual se puede seleccionar la <a href="NUH_066B.html#BL_INTERNAS" >calificaci&oacute;n 
-                    interna</a> que represente de manera m&aacute;s fiable el grado 
-                    de confianza que el cliente reporta a la entidad de acuerdo con el manejo 
-                    dado a las obligaciones por &eacute;l contra&iacute;das.</p></td>
-              </tr>
-           
-              <tr> 
-                <td class="titletable"><p class="SUBTITULO"><b><span 
-        >Categor&iacute;a 
-                    cliente </span></b></p>
-                  </td>
-                <td><p  class="PARRAFO">En 
-                    este campo obligatorio, la entidad puede seleccionar de la lista de 
-                    valores la <a href="MEH_004B.html" >categor&iacute;a</a> 
-                    a la cual desea cambiar el cliente con el fin de ofrecerle condiciones 
-                    preferenciales respecto del manejo de su obligaci&oacute;n</p></td>
-              </tr>
-            </table>
-        </section>
+      <div>
+
+        <p class="TITLE">Novedad calificaci&oacute;n y categor&iacute;a
+          cliente </p>
+
+        <p class="PARRAFO">Este formulario invocado desde la opci&oacute;n
+          <a href="SCH_075B.html">ingreso de novedades</a>, (core)
+          permite a la entidad modificar la </span><span><a
+            href="NUH_066B.html#BL_INTERNAS">calificaci&oacute;n</a></span><span
+          class="PARRAFO">
+          institucional del cliente u homologaci&oacute;n respecto del resto de
+          obligaciones
+          o productos otorgados al mismo; igualmente facilita asignarle
+          diferentes <a href="MEH_004B.html">categor&iacute;as</a>
+          a cada cliente y con ello diferenciarlos u otorgarles un tratamiento
+          preferencial.
+        </span></p>
+      <p class="TITLE"><img src="../img/SCF_010E.PNG"></p>
+
+      <p class="TITLE">Descripci&oacute;n de campos</p>
+      <table>
+        <tr>
+          <td class="titletable"><p class="SUBTITULO"><span>
+                Calificaci&oacute;n de la entidad</span></p></td>
+          <td><p class="PARRAFO">Campo
+              tipo combo en el cual se puede seleccionar la <a
+                href="NUH_066B.html#BL_INTERNAS">calificaci&oacute;n
+                interna</a> que represente de manera m&aacute;s fiable el grado
+              de confianza que el cliente reporta a la entidad de acuerdo con el
+              manejo
+              dado a las obligaciones por &eacute;l contra&iacute;das.</p></td>
+        </tr>
+
+        <tr>
+          <td class="titletable"><p class="SUBTITULO"><span>Categor&iacute;a
+                cliente </span></p>
+          </td>
+          <td><p class="PARRAFO">En
+              este campo obligatorio, la entidad puede seleccionar de la lista
+              de
+              valores la <a href="MEH_004B.html">categor&iacute;a</a>
+              a la cual desea cambiar el cliente con el fin de ofrecerle
+              condiciones
+              preferenciales respecto del manejo de su
+              obligaci&oacute;n</p></td>
+        </tr>
+      </table>
+    </section>
     <script src="../js/menu.js"></script>
 
     <div id="footerContainer"></div>
-<script>
+    <script>
   fetch('footer.html')
     .then(response => response.text())
     .then(html => {
       document.getElementById('footerContainer').innerHTML = html;
     });
 </script>
-</body>
+  </body>
 
 </html>

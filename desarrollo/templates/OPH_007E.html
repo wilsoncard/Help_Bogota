@@ -17,26 +17,20 @@
             <img class="TITLE" src="../img/menu.PNG" alt="Botón de Menú ">
         </div>
     </header>
-    <div id="menuContainer"></div>
-    <script>
-      fetch('menu.html')
-        .then(response => response.text())
-        .then(html => {
-          document.getElementById('menuContainer').innerHTML = html;
-        });
-    </script>
+      <div id="menuContainer"></div>
+  <script>
+    fetch('menu.html')
+      .then(response => response.text())
+      .then(html => {
+        document.getElementById('menuContainer').innerHTML = html;
+      });
+  </script>
 
     <section>
         <div >
-            <table>
-                <tr>
-                    <td>
-                        <div>
-                            <p  class="TITLE">Ejecuci&oacute;n grupos independientes</p>
-                        </div>
-                    </td>
-                </tr>
-            </table>
+            
+         <p  class="TITLE">Ejecuci&oacute;n grupos independientes</p>
+                       
             <p  class="PARRAFO">Esta opci&oacute;n muestra todos aquellos grupos que no hayan sido
                 marcados en el campo Obligatorio de la opci&oacute;n <span class="PARRAFO"><a
                         href="OPH_001B.html" >Definici&oacute;n grupos de procesos</a></span> . Esto
@@ -113,7 +107,7 @@
                     </td>
                 </tr>
             </table>
-            <p class="PARRAFO"><span class="SUBTITULO"><span><b>Procesos<a name="Procesos"></a></b></span><span>:</span> 
+            <p class="PARRAFO"><span class="SUBTITULO">Procesos<a name="Procesos"></a></span>:</span> 
                     </span>  Este enlace muestra un nuevo formulario desde el Grupo desde el cual se invocó, lo que le permite a la entidad, ejecutar algunos de los procesos de manera selectiva, sin necesidad de correrlos todos en conjunto. De igual forma permite la ejecución de estos tantas veces sea necesario, por ejemplo en el caso de los cargues de franquicias o de algunos convenios.</p>
             <p class="PARRAFO">Tal como aplica para la ejecución de Grupos antes descrita, este formulario permite la selección de uno o varios procesos a ejecutar, permitiendo su actualización a través de los mismos rangos de 5, 15 o 30 segundos, y mostrando el estado de los mismos y su Número de ejecuciones. En caso de presentarse algún error, será mostrado en el campo Mensaje de esta misma pantalla. </p>
             <p class="TITLE"><img src="../img/OPF_007E2.PNG" ></p>

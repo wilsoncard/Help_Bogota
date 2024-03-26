@@ -17,24 +17,20 @@
             <img class="TITLE"  src= "../img/menu.PNG" alt="Botón de Menú ">
         </div>
     </header>
-   <div id="menuContainer"></div>
-    <script>
-      fetch('menu.html')
-        .then(response => response.text())
-        .then(html => {
-          document.getElementById('menuContainer').innerHTML = html;
-        });
-    </script>
+      <div id="menuContainer"></div>
+  <script>
+    fetch('menu.html')
+      .then(response => response.text())
+      .then(html => {
+        document.getElementById('menuContainer').innerHTML = html;
+      });
+  </script>
 
     <section>
         <div> 
-            <table>
-              <tr> 
-                <td><div> 
+            
                     <p  class="TITLE">Par&aacute;metros Grupos Entrada y Salida </p>
-                  </div></td>
-              </tr>
-            </table>
+                  
             <p class="PARRAFO" >Este  formulario le permite a la entidad  consolidar o agrupar programas cuya funcionalidad es afin en cuanto a que o bien requieren el ingreso de archivos para procesar o bien, generan archivos de salida, acorde al protocolo de transferencia de archivos a utilizar, FTP o SSH, dichos grupos pueden ser   b&aacute;sicos de   entrada o de salidad, con o sin encripci&oacute;n, adicionalmente, &eacute;sta clasificaci&oacute;n constituye la base y es obligatoria para poder establecer cuales archivos son de salida y cuales de entrada y con ello definir las llaves que usaran para cifrar y descifrar, ver  </span><a href="NUH_124E.html"><span >asociaci&oacute;n con las llaves de encripci&oacute;n</span></a><span class="PARRAFO"> y con el tipo de protocolo. </span></p>
             <p class="PARRAFO" >El formulario contiene los enlaces Actualizar, Eliminar, Adicionar y Detalle. </span></p>
             <p class="TITLE"><img src="../img/NUF_121E1.PNG"589" height="301"></p>
@@ -45,8 +41,8 @@
             <p  class="TITLE">Descripci&oacute;n de campos</p>
             <table>
               <tr>
-                <td class="titletable" ><p class="SUBTITULO"><b>Tipo de Grupo
-                </b></p></td>
+                <td class="titletable" ><p class="SUBTITULO">Tipo de Grupo
+                </p></td>
                 <td><p  class="PARRAFO">Campo obligatorio que posee lista de valores tipo combo,  con los valores  Entrada o Salida de la que la entidad debe seleccionar, para el grupo a crear, a cual de ellas corresponde.</p></td>
               </tr>
               <tr>

@@ -17,26 +17,19 @@
       <img class="TITLE" src="../img/menu.PNG" alt="Botón de Menú ">
     </div>
   </header>
-    <div id="menuContainer"></div>
-    <script>
-      fetch('menu.html')
-        .then(response => response.text())
-        .then(html => {
-          document.getElementById('menuContainer').innerHTML = html;
-        });
-    </script>
+      <div id="menuContainer"></div>
+  <script>
+    fetch('menu.html')
+      .then(response => response.text())
+      .then(html => {
+        document.getElementById('menuContainer').innerHTML = html;
+      });
+  </script>
   <section>
-    <center>
+    
       <div>
-        <table>
-          <tr>
-            <td>
-              <div>
-                <p class="TITLE">Definici&oacute;n de productos</p>
-              </div>
-            </td>
-          </tr>
-        </table>
+        <p class="TITLE">Definici&oacute;n de productos</p>
+              
         <p class="PARRAFO">Desde este formulario la entidad puede definir la combinación de bines,
           segmentos y grupos de afinidad que van a conformar los diferentes productos a ofrecer a sus clientes. </p>
         <p class="PARRAFO">El formulario contiene en la parte superior varios hipervínculos
@@ -48,7 +41,7 @@
             amparados</a>, <a href="MEH_002B6.html" >Parámetros excepción</a>, <a href="MEH_002B7.html"
             >Orden de aplicación de cuotas</a> y <a href="MEH_002B8.html" >Copia
             productos</a>.</p>
-        <p class="TITLE"><img src="../img/MEF_002E1.PNG" 667" height="514"></p>
+        <p class="TITLE"><img src="../img/MEF_002E1.PNG" ></p>
         <p class="PARRAFO">El formulario contiene un filtro que le permite al usuario consultar la
           información específica para los productos pertenecientes a un bin, un segmento o un grupo de afinidad, o un
           producto en particular. Por defecto, al ingresar al formulario este trae todos los productos existentes en la
@@ -57,7 +50,7 @@
 
         <p class="PARRAFO">El formulario contiene las opciones Actualizar, Eliminar, Adicionar y
           Detalle.</p>
-        <p class="PARRAFO"><b><span class="SUBTITULO">Adicionar:</span></b> Si el usuario invoca la opción Adicionar se
+        <p class="PARRAFO"><span class="SUBTITULO">Adicionar:</span> Si el usuario invoca la opción Adicionar se
           despliega un wizard de
           tres pasos.</p>
         <p class="PARRAFO">La primera página del wizard se encuentra dividida en tres bloques de datos
@@ -69,7 +62,7 @@
 
         <table width=736>
           <tr>
-            <td class="titletable"><span class="SUBTITULO"><b>Bin</b></span> 
+            <td class="titletable"><span class="SUBTITULO">Bin</span> 
             </td>
             <td><span class="PARRAFO">
                 <p>Campo obligatorio con lista de
@@ -79,7 +72,7 @@
             </p>
           </tr>
           <tr>
-            <td><span class="SUBTITULO"><b>Producto</b></span></td>
+            <td><span class="SUBTITULO">Producto</span></td>
             <td><span class="PARRAFO">
                 <p>Este campo obligatorio contiene
                   lista de valores de la cual se selecciona el producto o segmento que va a conformar el nuevo producto.
@@ -88,8 +81,8 @@
           </tr>
           <tr>
             <td>
-              <p class="SUBTITULO"><b>Grupo de afinidad
-                </b></p>
+              <p class="SUBTITULO">Grupo de afinidad
+                </p>
             </td>
             <td>
               <p class="PARRAFO">Campo obligatorio con lista de valores de la cual se selecciona el
@@ -98,7 +91,7 @@
           </tr>
           <tr>
             <td>
-              <p class="SUBTITULO"><b>Descripción</b></p>
+              <p class="SUBTITULO">Descripción</p>
             </td>
             <td>
               <p class="PARRAFO">Este
@@ -109,8 +102,8 @@
           </tr>
           <tr>
             <td>
-              <p class="SUBTITULO"><b>Marca
-                </b></p>
+              <p class="SUBTITULO">Marca
+                </p>
             </td>
             <td>
               <p class="PARRAFO">Campo
@@ -121,8 +114,8 @@
           </tr>
           <tr>
             <td>
-              <p class="SUBTITULO"><b>Código medio de pago
-                </b></p>
+              <p class="SUBTITULO">Código medio de pago
+                </p>
             </td>
             <td>
               <p class="PARRAFO">Este
@@ -132,8 +125,8 @@
           </tr>
           <tr>
             <td>
-              <p class="SUBTITULO"><b>Ciclo de facturación
-                </b></p>
+              <p class="SUBTITULO">Ciclo de facturación
+                </p>
             </td>
             <td>
               <p class="PARRAFO">Campo
@@ -144,8 +137,8 @@
           </tr>
           <tr>
             <td>
-              <p class="SUBTITULO"><b>Vigencia
-                </b></p>
+              <p class="SUBTITULO">Vigencia
+                </p>
             </td>
             <td>
               <p class="PARRAFO">En este campo numúrico de hasta dos dígitos, obligatorio, se registra
@@ -154,8 +147,8 @@
           </tr>
           <tr>
             <td>
-              <p class="SUBTITULO"><b>Subserie número de tarjeta
-                </b></p>
+              <p class="SUBTITULO">Subserie número de tarjeta
+                </p>
             </td>
             <td>
               <p class="PARRAFO">Campo obligatorio de hasta tres dígitos que permite registrar un valor
@@ -166,8 +159,8 @@
           </tr>
           <tr>
             <td>
-              <p class="SUBTITULO"><b>Moneda usada en parámetros
-                </b></p>
+              <p class="SUBTITULO">Moneda usada en parámetros
+                </p>
             </td>
             <td>
               <p class="PARRAFO">Este
@@ -179,8 +172,8 @@
           </tr>
           <tr>
             <td>
-              <p class="SUBTITULO"><b>Cupo en múltiplos de
-                </b></p>
+              <p class="SUBTITULO">Cupo en múltiplos de
+                </p>
             </td>
             <td>
               <p class="PARRAFO">Campo obligatorio tipo combo del cual se puede seleccionar la manera
@@ -189,8 +182,8 @@
           </tr>
           <tr>
             <td>
-              <p class="SUBTITULO"><b>Ajuste cupos
-                </b></p>
+              <p class="SUBTITULO">Ajuste cupos
+                </p>
             </td>
             <td>
               <p class="PARRAFO">Este
@@ -201,8 +194,8 @@
           </tr>
           <tr>
             <td>
-              <p class="SUBTITULO"><b>Cupo máximo
-                </b></p>
+              <p class="SUBTITULO">Cupo máximo
+                </p>
             </td>
             <td>
               <p class="PARRAFO">Campo numérico de hasta 14 enteros y 2 decimales en el cual se registra
@@ -211,8 +204,8 @@
           </tr>
           <tr>
             <td>
-              <p class="SUBTITULO"><b>D&igrave;as gracia abonos
-                </b></p>
+              <p class="SUBTITULO">D&igrave;as gracia abonos
+                </p>
             </td>
             <td>
               <p class="PARRAFO">Este
@@ -222,8 +215,8 @@
           </tr>
           <tr>
             <td>
-              <p class="SUBTITULO"><b>Tipo producto
-                </b></p>
+              <p class="SUBTITULO">Tipo producto
+                </p>
             </td>
             <td>
               <p class="PARRAFO">Campo obligatorio que contiene un combo con las opciones
@@ -234,8 +227,8 @@
           </tr>
           <tr>
             <td>
-              <p class="SUBTITULO"><b>Manejo saldo a favor
-                </b></p>
+              <p class="SUBTITULO">Manejo saldo a favor
+                </p>
             </td>
             <td>
               <p class="PARRAFO">Campo obligatorio tipo combo, que contiene como única opción Crear
@@ -246,8 +239,8 @@
           </tr>
           <tr>
             <td>
-              <p class="SUBTITULO"><b>Definición saldo a favor
-                </b></p>
+              <p class="SUBTITULO">Definición saldo a favor
+                </p>
             </td>
             <td>
               <p class="PARRAFO">Este
@@ -258,8 +251,8 @@
           </tr>
           <tr>
             <td>
-              <p class="SUBTITULO"><b>Aplica para persona natural
-                </b></p>
+              <p class="SUBTITULO">Aplica para persona natural
+                </p>
             </td>
             <td>
               <p class="PARRAFO">Campo obligatorio tipo combo, en el cual se puede seleccionar entre
@@ -270,8 +263,8 @@
           </tr>
           <tr>
             <td>
-              <p class="SUBTITULO"><b>Exige avalista
-                </b></p>
+              <p class="SUBTITULO">Exige avalista
+                </p>
             </td>
             <td>
               <p class="PARRAFO">Campo obligatorio tipo combo del cual puede seleccionarse entre No
@@ -283,8 +276,8 @@
           </tr>
           <tr>
             <td>
-              <p class="SUBTITULO"><b>Periodos dudoso recaudo
-                </b></p>
+              <p class="SUBTITULO">Periodos dudoso recaudo
+                </p>
             </td>
             <td>
               <p class="PARRAFO">Este
@@ -307,16 +300,16 @@
           la información adicionada en los formularios parámetros, cuotas y eventos solo será guardada en la
           base de datos cuando desde la tercera página del wizard de nuevo producto se utilice el botón finalizar. </p>
         <p class="PARRAFO">Una vez que el actor ha diligenciado todos los datos de la primera página del wizard, se
-          puede desplazar a la segunda página denominada línea de crédito que contiene los siguientes campos.<b><span
-              class="SUBTITULO"></span></b></p>
+          puede desplazar a la segunda página denominada línea de crédito que contiene los siguientes campos.<span
+              class="SUBTITULO"></span></p>
         <div class="PARRAFO">
           <p class="TITLE"><img src="../img/MEF_002E3.PNG"></p>
           <p class="TITLE">Descripción de campos</p>
           <table>
             <tr>
               <td>
-                <p class="SUBTITULO"><b>Línea de crédito
-                  </b></p>
+                <p class="SUBTITULO">Línea de crédito
+                  </p>
               </td>
               <td>
                 <p class="PARRAFO">Campo
@@ -328,10 +321,10 @@
 
             <tr>
               <td>
-                <p class="SUBTITULO"><b>Moneda
+                <p class="SUBTITULO">Moneda
 
 
-                  </b></p>
+                  </p>
               </td>
               <td>
                 <p class="PARRAFO">Este
@@ -342,10 +335,10 @@
 
             <tr>
               <td>
-                <p class="SUBTITULO"><b>Modo de uso
+                <p class="SUBTITULO">Modo de uso
 
 
-                  </b></p>
+                  </p>
               </td>
               <td>
                 <p class="PARRAFO">Campo de salida que muestra como ínico valor 'Principal' teniendo en
@@ -355,9 +348,9 @@
 
             <tr>
               <td>
-                <p class="SUBTITULO"><b>Tipo cartera
+                <p class="SUBTITULO">Tipo cartera
 
-                  </b></p>
+                  </p>
               </td>
               <td>
                 <p class="PARRAFO">Este campo obligatorio contiene lista de valores de donde se puede
@@ -369,9 +362,9 @@
 
             <tr>
               <td>
-                <p class="SUBTITULO"><b>Número de utilizaciones
+                <p class="SUBTITULO">Número de utilizaciones
 
-                  </b></p>
+                  </p>
               </td>
               <td>
                 <p class="PARRAFO">Campo no obligatorio en el cual se registra el número de veces que la
@@ -382,9 +375,9 @@
 
             <tr>
               <td>
-                <p class="SUBTITULO"><b>Periodo utilizaciones
+                <p class="SUBTITULO">Periodo utilizaciones
 
-                  </b></p>
+                  </p>
               </td>
               <td>
                 <p class="PARRAFO">En este campo numérico no obligatorio se registra el número de
@@ -395,9 +388,9 @@
 
             <tr>
               <td>
-                <p class="SUBTITULO"><b>Prioridad aplicación de pagos
+                <p class="SUBTITULO">Prioridad aplicación de pagos
 
-                  </b></p>
+                  </p>
               </td>
               <td>
                 <p class="PARRAFO">Campo numérico no obligatorio en el que se determina el orden o
@@ -410,9 +403,9 @@
 
             <tr>
               <td>
-                <p class="SUBTITULO"><b>% Sobrecupo autorizado
+                <p class="SUBTITULO">% Sobrecupo autorizado
 
-                  </b></p>
+                  </p>
               </td>
               <td>
                 <p class="PARRAFO">Este campo no obligatorio permite registrar el porcentaje calculado
@@ -423,9 +416,9 @@
 
             <tr>
               <td>
-                <p class="SUBTITULO"><b>Valor sobrecupo autorizado
+                <p class="SUBTITULO">Valor sobrecupo autorizado
 
-                  </b></p>
+                  </p>
               </td>
               <td>
                 <p class="PARRAFO">Campo mutuamente excluyente con el anterior y en el cual se indica el
@@ -436,9 +429,9 @@
 
             <tr>
               <td>
-                <p class="SUBTITULO"><b>Cupo en múltiplos de
+                <p class="SUBTITULO">Cupo en múltiplos de
 
-                  </b></p>
+                  </p>
               </td>
               <td>
                 <p class="PARRAFO">En este campo obligatorio tipo combo se indica la manera como se
@@ -451,8 +444,8 @@
 
             <tr>
               <td>
-                <p class="SUBTITULO"><b>Ajuste cupos
-                  </b></p>
+                <p class="SUBTITULO">Ajuste cupos
+                  </p>
               </td>
               <td>
                 <p class="PARRAFO">Campo obligatorio tipo combo en el cual se selecciona entre
@@ -465,9 +458,9 @@
 
             <tr>
               <td>
-                <p class="SUBTITULO"><b>Cupo máximo
+                <p class="SUBTITULO">Cupo máximo
 
-                  </b></p>
+                  </p>
               </td>
               <td>
                 <p class="PARRAFO">En este campo obligatorio de hasta 14 enteros y 2 decimales se
@@ -477,9 +470,9 @@
 
             <tr>
               <td>
-                <p class="SUBTITULO"><b>Cobertura
+                <p class="SUBTITULO">Cobertura
 
-                  </b></p>
+                  </p>
               </td>
               <td>
                 <p class="PARRAFO">Campo obligatorio tipo combo en el cual se selecciona entre Local
@@ -490,9 +483,9 @@
 
             <tr>
               <td>
-                <p class="SUBTITULO"><b>Reporta compensador
+                <p class="SUBTITULO">Reporta compensador
 
-                  </b></p>
+                  </p>
               </td>
               <td>
                 <p class="PARRAFO">En este campo obligatorio tipo check se indica si dentro de los
@@ -506,9 +499,9 @@
 
             <tr>
               <td>
-                <p class="SUBTITULO"><b>Transacción afecta extracupo
+                <p class="SUBTITULO">Transacción afecta extracupo
 
-                  </b></p>
+                  </p>
               </td>
               <td>
                 <p class="PARRAFO">Campo obligatorio que indica si las transacciones asociadas a la
@@ -519,8 +512,8 @@
           </table>
           <p class="PARRAFO">
           <p class="PARRAFO">Después de haber llenado todos los datos de la segunda página del wizard, se puede deplazar
-            a la tercera y última página denominada transacciones asociadas que contiene un único campo.<b><span
-                class="SUBTITULO"></span></b></p>
+            a la tercera y última página denominada transacciones asociadas que contiene un único campo.<span
+                class="SUBTITULO"></span></p>
           <div class="PARRAFO">
             <p class="TITLE"><img src="../img/MEF_002E4.PNG"></p>
           </div>
@@ -530,8 +523,8 @@
           <table >
             <tr>
               <td>
-                <p class="SUBTITULO"><b>Transacción
-                  </b></p>
+                <p class="SUBTITULO">Transacción
+                  </p>
               </td>
               <td>
                 <p class="PARRAFO">Campo
@@ -546,8 +539,8 @@
           <p class="PARRAFO">
             <span class="PARRAFO">
               <a name="BL_PARAMETROS"></a>
-              <p><span class="SUBTITULO"><span><b>Parámetros</b></span> 
-                  <span>:</span> 
+              <p><span class="SUBTITULO">Parámetros</span> 
+                  :</span> 
                 </span> 
                 Si desde la primera página del wizard el usuario invoca el
                 hiperv&igrave;nculo Parámetros se despliega un nuevo formulario estructurado en 13 bloques
@@ -564,8 +557,8 @@
                 <table >
                   <tr>
                     <td>
-                      <p class="SUBTITULO"><b>Emite plástico
-                        </b></p>
+                      <p class="SUBTITULO">Emite plástico
+                        </p>
                     </td>
                     <td>
                       <p class="PARRAFO">En
@@ -583,10 +576,10 @@
                   </tr>
                   <tr>
                     <td>
-                      <p class="SUBTITULO"><b>Emite plástico principal
+                      <p class="SUBTITULO">Emite plástico principal
 
 
-                        </b></p>
+                        </p>
                     </td>
                     <td>
                       <p class="PARRAFO">Campo
@@ -598,8 +591,8 @@
 
                   <tr>
                     <td>
-                      <p class="SUBTITULO"><b>Genera clave
-                        </b></p>
+                      <p class="SUBTITULO">Genera clave
+                        </p>
                     </td>
                     <td>
                       <p class="PARRAFO">En este campo tipo check se señala si para el nuevo producto
@@ -610,8 +603,8 @@
 
                   <tr>
                     <td>
-                      <p class="SUBTITULO"><b>Activo
-                        </b></p>
+                      <p class="SUBTITULO">Activo
+                        </p>
                     </td>
                     <td>
                       <p class="PARRAFO">Campo tipo check que indica si el producto se encuentra
@@ -622,8 +615,8 @@
 
                   <tr>
                     <td>
-                      <p class="SUBTITULO"><b>Mostrar por internet
-                        </b></p>
+                      <p class="SUBTITULO">Mostrar por internet
+                        </p>
                     </td>
                     <td>
                       <p class="PARRAFO">En este campo se indica si el nuevo producto puede ser
@@ -634,8 +627,8 @@
 
                   <tr>
                     <td>
-                      <p class="SUBTITULO"><b>Modelo de plástico
-                        </b></p>
+                      <p class="SUBTITULO">Modelo de plástico
+                        </p>
                     </td>
                     <td>
                       <p class="PARRAFO">Si se ha indicado que el producto SI emite plástico, este
@@ -647,8 +640,8 @@
 
                   <tr>
                     <td>
-                      <p class="SUBTITULO"><b>Proveedor
-                        </b></p>
+                      <p class="SUBTITULO">Proveedor
+                        </p>
                     </td>
                     <td>
                       <p class="PARRAFO">Campo
@@ -660,8 +653,8 @@
 
                   <tr>
                     <td>
-                      <p class="SUBTITULO"><b>Generar número acción
-                        </b></p>
+                      <p class="SUBTITULO">Generar número acción
+                        </p>
                     </td>
                     <td>
                       <p class="PARRAFO">Este
@@ -673,8 +666,8 @@
 
                   <tr>
                     <td>
-                      <p class="SUBTITULO"><b>Aplica pago por cuotas
-                        </b></p>
+                      <p class="SUBTITULO">Aplica pago por cuotas
+                        </p>
                     </td>
                     <td>
                       <p class="PARRAFO">Campo tipo check en el que se indica si para el producto se
@@ -685,8 +678,8 @@
 
                   <tr>
                     <td>
-                      <p class="SUBTITULO"><b>Liquida interés parcial
-                        </b></p>
+                      <p class="SUBTITULO">Liquida interés parcial
+                        </p>
                     </td>
                     <td>
                       <p class="PARRAFO">Este
@@ -698,8 +691,8 @@
 
                   <tr>
                     <td>
-                      <p class="SUBTITULO"><b>% Tolerancia pagos
-                        </b></p>
+                      <p class="SUBTITULO">% Tolerancia pagos
+                        </p>
                     </td>
                     <td>
                       <p class="PARRAFO">Campo numérico que permite definir la relación entre el pago
@@ -713,8 +706,8 @@
 
                   <tr>
                     <td>
-                      <p class="SUBTITULO"><b>Valor tolerancia pagos
-                        </b></p>
+                      <p class="SUBTITULO">Valor tolerancia pagos
+                        </p>
                     </td>
                     <td>
                       <p class="PARRAFO">Este campo numérico de hasta 14 enteros y 2 decimales permite
@@ -726,8 +719,8 @@
 
                   <tr>
                     <td>
-                      <p class="SUBTITULO"><b>Vigencia tarjetas de emergencia
-                        </b></p>
+                      <p class="SUBTITULO">Vigencia tarjetas de emergencia
+                        </p>
                     </td>
                     <td>
                       <p class="PARRAFO">Campo numérico de 1 dígito en el cual se registra el número
@@ -738,8 +731,8 @@
 
                   <tr>
                     <td>
-                      <p class="SUBTITULO"><b>Permite facturación en dólares
-                        </b></p>
+                      <p class="SUBTITULO">Permite facturación en dólares
+                        </p>
                     </td>
                     <td>
                       <p class="PARRAFO">Este
@@ -750,8 +743,8 @@
 
                   <tr>
                     <td>
-                      <p class="SUBTITULO"><b>Plazo días formalizar extravío
-                        </b></p>
+                      <p class="SUBTITULO">Plazo días formalizar extravío
+                        </p>
                     </td>
                     <td>
                       <p class="PARRAFO">Campo numérico en el cual se registra el número de días que
@@ -761,8 +754,8 @@
 
                   <tr>
                     <td>
-                      <p class="SUBTITULO"><b>Periodo traslado saldo moneda
-                        </b></p>
+                      <p class="SUBTITULO">Periodo traslado saldo moneda
+                        </p>
                     </td>
                     <td>
                       <p class="PARRAFO">Este
@@ -774,8 +767,8 @@
 
                   <tr>
                     <td>
-                      <p class="SUBTITULO"><b>CPS
-                        </b></p>
+                      <p class="SUBTITULO">CPS
+                        </p>
                     </td>
                     <td>
                       <p class="PARRAFO">Campo con lista de valores de la cual se puede seleccionar la
@@ -788,8 +781,8 @@
 
                   <tr>
                     <td>
-                      <p class="SUBTITULO"><b>Programas comerciales
-                        </b></p>
+                      <p class="SUBTITULO">Programas comerciales
+                        </p>
                     </td>
                     <td>
                       <p class="PARRAFO">Este
@@ -801,8 +794,8 @@
 
                   <tr>
                     <td>
-                      <p class="SUBTITULO"><b>Número máximo tarjetas extendidas
-                        </b></p>
+                      <p class="SUBTITULO">Número máximo tarjetas extendidas
+                        </p>
                     </td>
                     <td>
                       <p class="PARRAFO">Campo numérico de hasta 4 dígitos en el cual se registra el
@@ -813,8 +806,8 @@
 
                   <tr>
                     <td>
-                      <p class="SUBTITULO"><b>Cupo mínimo tarjetas extendidas
-                        </b></p>
+                      <p class="SUBTITULO">Cupo mínimo tarjetas extendidas
+                        </p>
                     </td>
                     <td>
                       <p class="PARRAFO">Este
@@ -825,8 +818,8 @@
 
                   <tr>
                     <td>
-                      <p class="SUBTITULO"><b>% Otros costos amparados
-                        </b></p>
+                      <p class="SUBTITULO">% Otros costos amparados
+                        </p>
                     </td>
                     <td>
                       <p class="PARRAFO">Campo en el que se registra el porcentaje que la entidad
@@ -837,8 +830,8 @@
 
                   <tr>
                     <td>
-                      <p class="SUBTITULO"><b>Suma adicional influye cupo principal
-                        </b></p>
+                      <p class="SUBTITULO">Suma adicional influye cupo principal
+                        </p>
                     </td>
                     <td>
                       <p class="PARRAFO">Este
@@ -858,8 +851,8 @@
 
                   <tr>
                     <td>
-                      <p class="SUBTITULO"><b>Capitaliza intereses
-                        </b></p>
+                      <p class="SUBTITULO">Capitaliza intereses
+                        </p>
                     </td>
                     <td>
                       <p class="PARRAFO">Campo tipo combo que permite seleccionar entre Corriente,
@@ -870,8 +863,8 @@
 
                   <tr>
                     <td>
-                      <p class="SUBTITULO"><b>Transacción capitaliza intereses
-                        </b></p>
+                      <p class="SUBTITULO">Transacción capitaliza intereses
+                        </p>
                     </td>
                     <td>
                       <p class="PARRAFO">Si en el campo anterior se ha seleccionado una opción
@@ -883,8 +876,8 @@
 
                   <tr>
                     <td>
-                      <p class="SUBTITULO"><b>Cálculo pago mínimo
-                        </b></p>
+                      <p class="SUBTITULO">Cálculo pago mínimo
+                        </p>
                     </td>
                     <td>
                       <p class="PARRAFO">Este
@@ -901,8 +894,8 @@
 
                   <tr>
                     <td>
-                      <p class="SUBTITULO"><b>Número cuotas revolventes
-                        </b></p>
+                      <p class="SUBTITULO">Número cuotas revolventes
+                        </p>
                     </td>
                     <td>
                       <p class="PARRAFO">Si en el campo anterior se ha seleccionado Revolvente
@@ -913,8 +906,8 @@
 
                   <tr>
                     <td>
-                      <p class="SUBTITULO"><b>Indicador económico
-                        </b></p>
+                      <p class="SUBTITULO">Indicador económico
+                        </p>
                     </td>
                     <td>
                       <p class="PARRAFO">Campo que se vuelve obligatorio cuando el tipo de
@@ -927,8 +920,8 @@
 
                   <tr>
                     <td>
-                      <p class="SUBTITULO"><b>Mensaje extracto
-                        </b></p>
+                      <p class="SUBTITULO">Mensaje extracto
+                        </p>
                     </td>
                     <td>
                       <p class="PARRAFO">Este
@@ -940,8 +933,8 @@
 
                   <tr>
                     <td>
-                      <p class="SUBTITULO"><b># Líneas extracto
-                        </b></p>
+                      <p class="SUBTITULO"># Líneas extracto
+                        </p>
                     </td>
                     <td>
                       <p class="PARRAFO">Campo numérico de hasta dos dígitos en el cual se registra
@@ -952,8 +945,8 @@
 
                   <tr>
                     <td>
-                      <p class="SUBTITULO"><b>Información extracto
-                        </b></p>
+                      <p class="SUBTITULO">Información extracto
+                        </p>
                     </td>
                     <td>
                       <p class="PARRAFO">Este campo contiene una lista de valores de la cual se
@@ -972,8 +965,8 @@
                   <table>
                     <tr>
                       <td class="titletable">
-                        <p class="SUBTITULO"><b>Afecta disponible
-                          </b></p>
+                        <p class="SUBTITULO">Afecta disponible
+                          </p>
                       </td>
                       <td>
                         <p class="PARRAFO">Campo que contiene una lista de valores de la cual se
@@ -984,9 +977,9 @@
                     </tr>
                     <tr>
                       <td>
-                        <p class="SUBTITULO"><b>Porcentaje (Bloqueo por sobrecupo)
+                        <p class="SUBTITULO">Porcentaje (Bloqueo por sobrecupo)
 
-                          </b></p>
+                          </p>
                       </td>
                       <td>
                         <p class="PARRAFO">En este campo se indica el porcentaje a partir del cual se
@@ -996,8 +989,8 @@
 
                     <tr>
                       <td>
-                        <p class="SUBTITULO"><b>Valor (Bloqueo por sobrecupo)
-                          </b></p>
+                        <p class="SUBTITULO">Valor (Bloqueo por sobrecupo)
+                          </p>
                       </td>
                       <td>
                         <p class="PARRAFO">Campo de hasta 14 enteros y 2 decimales en el cual se
@@ -1008,8 +1001,8 @@
 
                     <tr>
                       <td>
-                        <p class="SUBTITULO"><b>Valor (Bloqueo por mora)
-                          </b></p>
+                        <p class="SUBTITULO">Valor (Bloqueo por mora)
+                          </p>
                       </td>
                       <td>
                         <p class="PARRAFO">En este campo numérico de 14 enteros y 2 decimales se
@@ -1020,8 +1013,8 @@
 
                     <tr>
                       <td>
-                        <p class="SUBTITULO"><b>Periodos (Bloqueo por mora)
-                          </b></p>
+                        <p class="SUBTITULO">Periodos (Bloqueo por mora)
+                          </p>
                       </td>
                       <td>
                         <p class="PARRAFO">Campo numérico de 3 dígitos en el cual se indica la altura
@@ -1032,8 +1025,8 @@
 
                     <tr>
                       <td>
-                        <p class="SUBTITULO"><b>Valor (Cancelación por mal manejo mora)
-                          </b></p>
+                        <p class="SUBTITULO">Valor (Cancelación por mal manejo mora)
+                          </p>
                       </td>
                       <td>
                         <p class="PARRAFO">En este campo numérico de 14 enteros y 2 decimales en el
@@ -1044,8 +1037,8 @@
 
                     <tr>
                       <td>
-                        <p class="SUBTITULO"><b>Periodos </b><b>(Cancelación por mal manejo mora)
-                          </b></p>
+                        <p class="SUBTITULO">Periodos (Cancelación por mal manejo mora)
+                          </p>
                       </td>
                       <td>
                         <p class="PARRAFO">Campo
@@ -1058,8 +1051,8 @@
 
                     <tr>
                       <td>
-                        <p class="SUBTITULO"><b>Valor mínimo
-                          </b></p>
+                        <p class="SUBTITULO">Valor mínimo
+                          </p>
                       </td>
                       <td>
                         <p class="PARRAFO">En este
@@ -1070,8 +1063,8 @@
 
                     <tr>
                       <td>
-                        <p class="SUBTITULO"><b>Días después
-                          </b></p>
+                        <p class="SUBTITULO">Días después
+                          </p>
                       </td>
                       <td>
                         <p class="PARRAFO">Campo en el que se indica el número máximo de días
@@ -1083,8 +1076,8 @@
 
                     <tr>
                       <td>
-                        <p class="SUBTITULO"><b>Días a vencer CDT
-                          </b></p>
+                        <p class="SUBTITULO">Días a vencer CDT
+                          </p>
                       </td>
                       <td>
                         <p class="PARRAFO">Este
@@ -1096,8 +1089,8 @@
 
                     <tr>
                       <td>
-                        <p class="SUBTITULO"><b>Valor aceleración deuda
-                          </b></p>
+                        <p class="SUBTITULO">Valor aceleración deuda
+                          </p>
                       </td>
                       <td>
                         <p class="PARRAFO">Campo numérico de hasta 14 enteros y dos decimales en el
@@ -1109,8 +1102,8 @@
 
                     <tr>
                       <td>
-                        <p class="SUBTITULO"><b>Periodos para acelerar deuda
-                          </b></p>
+                        <p class="SUBTITULO">Periodos para acelerar deuda
+                          </p>
                       </td>
                       <td>
                         <p class="PARRAFO">En este
@@ -1121,8 +1114,8 @@
                     </tr>
                     <tr>
                       <td>
-                        <p class="SUBTITULO"><b>Periodos de dudoso a castigo
-                          </b></p>
+                        <p class="SUBTITULO">Periodos de dudoso a castigo
+                          </p>
                       </td>
                       <td>
                         <p class="PARRAFO">Campo numérico de 3 dígitos en el cual se registra el
@@ -1133,8 +1126,8 @@
 
                     <tr>
                       <td>
-                        <p class="SUBTITULO"><b>Valor débito
-                          </b></p>
+                        <p class="SUBTITULO">Valor débito
+                          </p>
                       </td>
                       <td>
                         <p class="PARRAFO">Este
@@ -1146,8 +1139,8 @@
 
                     <tr>
                       <td>
-                        <p class="SUBTITULO"><b>Valor crédito
-                          </b></p>
+                        <p class="SUBTITULO">Valor crédito
+                          </p>
                       </td>
                       <td>
                         <p class="PARRAFO">Campo numérico de 14 enteros y 2 decimales que permite
@@ -1158,8 +1151,8 @@
 
                     <tr>
                       <td>
-                        <p class="SUBTITULO"><b>Convenio
-                          </b></p>
+                        <p class="SUBTITULO">Convenio
+                          </p>
                       </td>
                       <td>
                         <p class="PARRAFO">Este campo contiene lista de valores de la cual se puede
@@ -1170,8 +1163,8 @@
 
                     <tr>
                       <td>
-                        <p class="SUBTITULO"><b>Altura mora aval
-                          </b></p>
+                        <p class="SUBTITULO">Altura mora aval
+                          </p>
                       </td>
                       <td>
                         <p class="PARRAFO">Campo numérico de hasta 4 dígitos en el cual se indica la
@@ -1182,8 +1175,8 @@
 
                     <tr>
                       <td>
-                        <p class="SUBTITULO"><b>CDT garantiza el crédito
-                          </b></p>
+                        <p class="SUBTITULO">CDT garantiza el crédito
+                          </p>
                       </td>
                       <td>
                         <p class="PARRAFO">Este
@@ -1194,8 +1187,8 @@
 
                     <tr>
                       <td>
-                        <p class="SUBTITULO"><b>% CDT para tarjeta principal
-                          </b></p>
+                        <p class="SUBTITULO">% CDT para tarjeta principal
+                          </p>
                       </td>
                       <td>
                         <p class="PARRAFO">Campo en el cual se indica el porcentaje que aplicado sobre
@@ -1206,8 +1199,8 @@
 
                     <tr>
                       <td>
-                        <p class="SUBTITULO"><b>Valor mínimo CDT
-                          </b></p>
+                        <p class="SUBTITULO">Valor mínimo CDT
+                          </p>
                       </td>
                       <td>
                         <p class="PARRAFO">Este
@@ -1228,8 +1221,8 @@
           <table>
             <tr>
               <td>
-                <p class="SUBTITULO"><b>Periodos central de riesgos
-                  </b></p>
+                <p class="SUBTITULO">Periodos central de riesgos
+                  </p>
               </td>
               <td>
                 <p class="PARRAFO">Campo numérico de 1 dígito en el cual se registra la cantidad
@@ -1239,10 +1232,10 @@
             </tr>
             <tr>
               <td>
-                <p class="SUBTITULO"><b>Reporta Cifin
+                <p class="SUBTITULO">Reporta Cifin
 
 
-                  </b></p>
+                  </p>
               </td>
               <td>
                 <p class="PARRAFO">En este campo tipo combo se puede seleccionar entre
@@ -1253,8 +1246,8 @@
 
             <tr>
               <td>
-                <p class="SUBTITULO"><b>Reporta Datacrédito
-                  </b></p>
+                <p class="SUBTITULO">Reporta Datacrédito
+                  </p>
               </td>
               <td>
                 <p class="PARRAFO">Campo tipo combo que permite indicar Si o
@@ -1265,8 +1258,8 @@
             </tr>
           </table>
 
-          <p class="PARRAFO"><a name="BL_CUOTAS"></a><span class="SUBTITULO"><span><b>Cuotas</b></span> 
-              <span>:</span> 
+          <p class="PARRAFO"><a name="BL_CUOTAS"></a><span class="SUBTITULO">Cuotas</span> 
+              :</span> 
             </span> 
             Si desde la primera página del wizard de nuevo
             producto el usuario invoca el hipervínculo Cuotas se despliega un nuevo
@@ -1283,8 +1276,8 @@
             <table>
               <tr>
                 <td>
-                  <p class="SUBTITULO"><b>Tipo cuota
-                    </b></p>
+                  <p class="SUBTITULO">Tipo cuota
+                    </p>
                 </td>
                 <td>
                   <p class="PARRAFO">Campo tipo combo en el cual se puede seleccionar entre
@@ -1297,10 +1290,10 @@
               </tr>
               <tr>
                 <td>
-                  <p class="SUBTITULO"><b>Indicador económico
+                  <p class="SUBTITULO">Indicador económico
 
 
-                    </b></p>
+                    </p>
                 </td>
                 <td>
                   <p class="PARRAFO">Si el tipo cuota se define como porcentual, en este campo
@@ -1313,7 +1306,7 @@
 
           <tr>
             <td>
-              <p class="SUBTITULO"><b>Cuota</b></p>
+              <p class="SUBTITULO">Cuota</p>
             </td>
             <td>
               <p class="PARRAFO">Este campo de hasta 14 enteros y 2 decimales se registra el
@@ -1323,8 +1316,8 @@
 
           <tr>
             <td>
-              <p class="SUBTITULO"><b>Porcentaje cuota
-                </b></p>
+              <p class="SUBTITULO">Porcentaje cuota
+                </p>
             </td>
             <td>
               <p class="PARRAFO">Campo
@@ -1337,10 +1330,10 @@
 
           <tr>
             <td>
-              <p class="SUBTITULO"><b>Base
+              <p class="SUBTITULO">Base
 
 
-                </b></p>
+                </p>
             </td>
             <td>
               <p class="PARRAFO">En este campo tipo combo se selecciona entre Cupo y
@@ -1353,10 +1346,10 @@
 
           <tr>
             <td>
-              <p class="SUBTITULO"><b>Modalidad
+              <p class="SUBTITULO">Modalidad
 
 
-                </b></p>
+                </p>
             </td>
             <td>
               <p class="PARRAFO">
@@ -1367,7 +1360,7 @@
           </tr>
 
           <td class="titletable">
-            <p class="SUBTITULO"><b>Periodos</b></p>
+            <p class="SUBTITULO">Periodos</p>
           </td>
           <td>
             <p class="PARRAFO">En este campo numérico que admite valores entre 1 y 12, se indica la
@@ -1378,7 +1371,7 @@
 
           <tr>
             <td>
-              <p class="SUBTITULO"><b>Evento inicio</b></p>
+              <p class="SUBTITULO">Evento inicio</p>
             </td>
             <td>
               <p class="PARRAFO">Campo tipo combo en el que se selecciona entre Facturación, Entrega
@@ -1389,7 +1382,7 @@
 
           <tr>
             <td>
-              <p class="SUBTITULO"><b>Transacción</b></p>
+              <p class="SUBTITULO">Transacción</p>
             </td>
             <td>
               <p class="PARRAFO">En este campo con lista de valores se selecciona la <a href="MEH_003B.html"
@@ -1400,7 +1393,7 @@
 
           <tr>
             <td>
-              <p class="SUBTITULO"><b>Transacción alterna</b></p>
+              <p class="SUBTITULO">Transacción alterna</p>
             </td>
             <td>
               <p class="PARRAFO">Campo con lista de valores que permite seleccionar la <a href="MEH_003B.html"
@@ -1411,7 +1404,7 @@
 
           <tr>
             <td>
-              <p class="SUBTITULO"><b>Transacción cargo</b></p>
+              <p class="SUBTITULO">Transacción cargo</p>
             </td>
             <td>
               <p class="PARRAFO">Si la modalidad se ha definido como Vencida y el producto es cancelado
@@ -1424,7 +1417,7 @@
 
           <tr>
             <td>
-              <p class="SUBTITULO"><b>Transacción alterna cargo</b></p>
+              <p class="SUBTITULO">Transacción alterna cargo</p>
             </td>
             <td>
               <p class="PARRAFO">Campo con lista de valores que permite seleccionar la <a href="MEH_003B.html"
@@ -1436,7 +1429,7 @@
 
           <tr>
             <td>
-              <p class="SUBTITULO"><b>Transacción devolución</b></p>
+              <p class="SUBTITULO">Transacción devolución</p>
             </td>
             <td>
               <p class="PARRAFO">Si la modalidad se ha definido como Anticipada y el producto es
@@ -1449,7 +1442,7 @@
 
           <tr>
             <td>
-              <p class="SUBTITULO"><b>Transacción alterna devolución</b></p>
+              <p class="SUBTITULO">Transacción alterna devolución</p>
             </td>
             <td>
               <p class="PARRAFO">Campo con lista de valores que permite seleccionar la <a href="MEH_003B.html"
@@ -1461,7 +1454,7 @@
 
           <tr>
             <td>
-              <p class="SUBTITULO"><b>No cobrar cuando tiene </b></p>
+              <p class="SUBTITULO">No cobrar cuando tiene </p>
             </td>
             <td>
               <p class="PARRAFO">En este campo tipo combo se puede seleccionar entre Menos o Mas para
@@ -1472,7 +1465,7 @@
 
           <tr>
             <td>
-              <p class="SUBTITULO"><b>Tarjetas dependientes</b></p>
+              <p class="SUBTITULO">Tarjetas dependientes</p>
             </td>
             <td>
               <p class="PARRAFO">Campo complementario al anterior y en el cual se registra el número de
@@ -1483,7 +1476,7 @@
 
           <tr>
             <td>
-              <p class="SUBTITULO"><b>No cobrar si </b></p>
+              <p class="SUBTITULO">No cobrar si </p>
             </td>
             <td>
               <p class="PARRAFO">Si el tipo de cuota es Porcentual, en este campo tipo combo se
@@ -1496,7 +1489,7 @@
 
           <tr>
             <td>
-              <p class="SUBTITULO"><b>Periodos</b></p>
+              <p class="SUBTITULO">Periodos</p>
             </td>
             <td>
               <p class="PARRAFO">Este campo complementario del anterior permite indicar el número de
@@ -1507,7 +1500,7 @@
 
           <tr>
             <td>
-              <p class="SUBTITULO"><b>No cobra otro producto</b></p>
+              <p class="SUBTITULO">No cobra otro producto</p>
             </td>
             <td>
               <p class="PARRAFO">Campo tipo check en el que se indica si en caso que el cliente posea
@@ -1517,9 +1510,9 @@
           </tr>
           </table>
 
-          <p class="PARRAFO"><a name="BL_EVENTOS"></a><span class="SUBTITULO"><b>Eventos</b></span><span
+          <p class="PARRAFO"><a name="BL_EVENTOS"></a><span class="SUBTITULO">Eventos</span><span
               class="SUBTITULO">
-              <span>:</span> 
+              :</span> 
             </span> 
             Si desde la primera página del wizard de nuevo producto el
             usuario invoca el hipervínculo Eventos se despliega un nuevo formulario que le permite a la entidad
@@ -1535,7 +1528,7 @@
             <table>
               <tr>
                 <td>
-                  <p class="SUBTITULO"><b>Ingresos mínimos titular</b></p>
+                  <p class="SUBTITULO">Ingresos mínimos titular</p>
                 </td>
                 <td>
                   <p class="PARRAFO">Campo numérico de hasta 14 enteros y 2 decimales en el que
@@ -1546,7 +1539,7 @@
               </tr>
               <tr>
                 <td>
-                  <p class="SUBTITULO"><b>Edad mínima titular</b></p>
+                  <p class="SUBTITULO">Edad mínima titular</p>
                 </td>
                 <td>
                   <p class="PARRAFO">En este campo numérico de 2 dígitos se registra la edad
@@ -1557,7 +1550,7 @@
           </div>
           <tr>
             <td>
-              <p class="SUBTITULO"><b>Edad máxima titular</b></p>
+              <p class="SUBTITULO">Edad máxima titular</p>
             </td>
             <td>
               <p class="PARRAFO">Campo numérico de 2 dígitos en el que se indica la edad
@@ -1567,7 +1560,7 @@
 
           <tr>
             <td>
-              <p class="SUBTITULO"><b>Cupo mínimo tarjeta principal</b></p>
+              <p class="SUBTITULO">Cupo mínimo tarjeta principal</p>
             </td>
             <td>
               <p class="PARRAFO">En este campo numérico de 14 enteros y 2 decimales se
@@ -1578,7 +1571,7 @@
 
           <tr>
             <td>
-              <p class="SUBTITULO"><b>% Principal para tarjeta virtual</b></p>
+              <p class="SUBTITULO">% Principal para tarjeta virtual</p>
             </td>
             <td>
               <p class="PARRAFO">Si el producto que se está creando corresponde al tipo virtual, en este
@@ -1590,7 +1583,7 @@
 
           <tr>
             <td>
-              <p class="SUBTITULO"><b>Edad máxima mora para aprobar</b></p>
+              <p class="SUBTITULO">Edad máxima mora para aprobar</p>
             </td>
             <td>
               <p class="PARRAFO">Campo numérico de hasta 2 dígitos en el cual se registra la máxima
@@ -1601,7 +1594,7 @@
 
           <tr>
             <td>
-              <p class="SUBTITULO"><b>Periodos evaluación mora otros productos</b></p>
+              <p class="SUBTITULO">Periodos evaluación mora otros productos</p>
             </td>
             <td>
               <p class="PARRAFO">En este campo numérico de hasta 2 dígitos se indica la cantidad de
@@ -1612,8 +1605,8 @@
 
           <tr>
             <td>
-              <p class="SUBTITULO"><b>Producto con desembolsos
-                </b></p>
+              <p class="SUBTITULO">Producto con desembolsos
+                </p>
             </td>
             <td>
               <p class="PARRAFO">Campo tipo check en el cual se señala si el producto maneja
@@ -1624,8 +1617,8 @@
 
           <tr>
             <td>
-              <p class="SUBTITULO"><b>Tarjeta con chip
-                </b></p>
+              <p class="SUBTITULO">Tarjeta con chip
+                </p>
             </td>
             <td>
               <p class="PARRAFO">En este campo tipo check se indica si el plástico emitido
@@ -1636,8 +1629,8 @@
 
           <tr>
             <td>
-              <p class="SUBTITULO"><b>Tarjeta nueva activa
-                </b></p>
+              <p class="SUBTITULO">Tarjeta nueva activa
+                </p>
             </td>
             <td>
               <p class="PARRAFO">Campo tipo check que indica si una vez emitida la tarjeta
@@ -1649,8 +1642,8 @@
 
           <tr>
             <td>
-              <p class="SUBTITULO"><b>Se respeta el producto solicitado
-                </b></p>
+              <p class="SUBTITULO">Se respeta el producto solicitado
+                </p>
             </td>
             <td>
               <p class="PARRAFO">En este campo se indica si durante el proceso de asignación
@@ -1662,8 +1655,8 @@
 
           <tr>
             <td>
-              <p class="SUBTITULO"><b>Mínimo periodos de antigüedad de la tarjeta
-                </b></p>
+              <p class="SUBTITULO">Mínimo periodos de antigüedad de la tarjeta
+                </p>
             </td>
             <td>
               <p class="PARRAFO">Campo numérico de 2 dígitos en el que se indica la cantidad
@@ -1674,8 +1667,8 @@
 
           <tr>
             <td>
-              <p class="SUBTITULO"><b>Periodos mínimos transcurridos desde anterior aumento
-                </b></p>
+              <p class="SUBTITULO">Periodos mínimos transcurridos desde anterior aumento
+                </p>
             </td>
             <td>
               <p class="PARRAFO">En este campo numérico de 2 dígitos se indica la cantidad de
@@ -1688,8 +1681,8 @@
           </tr>
 
           <td class="titletable">
-            <p class="SUBTITULO"><b>% Mínimo sobre el cupo actual
-              </b></p>
+            <p class="SUBTITULO">% Mínimo sobre el cupo actual
+              </p>
           </td>
           <td>
             <p class="PARRAFO">Campo numérico de 3 enteros y 2 decimales que, permite a la
@@ -1699,9 +1692,9 @@
           </tr>
 
           <td class="titletable">
-            <p class="SUBTITULO"><b>Reposición
+            <p class="SUBTITULO">Reposición
                 Primera vez / Segunda vez / Tercera vez / Mayor a tres veces
-              </b></p>
+              </p>
           </td>
           <td>
             <p class="PARRAFO">En estos campos numéricos de 14 enteros y 2 decimales, se
@@ -1713,8 +1706,8 @@
 
           <tr>
             <td>
-              <p class="SUBTITULO"><b>Transacción asociada
-                </b></p>
+              <p class="SUBTITULO">Transacción asociada
+                </p>
             </td>
             <td>
               <p class="PARRAFO">Si cualquiera de los campos anteriores contiene un valor,
@@ -1726,8 +1719,8 @@
 
           <tr>
             <td>
-              <p class="SUBTITULO"><b>Cambio de nombre / Banda magnética / Deterioro
-                </b></p>
+              <p class="SUBTITULO">Cambio de nombre / Banda magnética / Deterioro
+                </p>
             </td>
             <td>
               <p class="PARRAFO">En estos campos tipo check se marcan aquellas causales por
@@ -1738,8 +1731,8 @@
 
           <tr>
             <td>
-              <p class="SUBTITULO"><b>Calcula fecha de vencimiento
-                </b></p>
+              <p class="SUBTITULO">Calcula fecha de vencimiento
+                </p>
             </td>
             <td>
               <p class="PARRAFO">Campo tipo check en el que se indica al sistema si dentro del
@@ -1754,8 +1747,8 @@
 
           <tr>
             <td>
-              <p class="SUBTITULO"><b>Genera número de tarjeta
-                </b></p>
+              <p class="SUBTITULO">Genera número de tarjeta
+                </p>
             </td>
             <td>
               <p class="PARRAFO">En este campo se señala si como resultado del evento de
@@ -1776,8 +1769,8 @@
             <table>
               <tr>
                 <td>
-                  <p class="SUBTITULO"><b>Reexpedición
-                      Primera vez / Segunda vez / Tercera vez / Mayor a tres veces </b></p>
+                  <p class="SUBTITULO">Reexpedición
+                      Primera vez / Segunda vez / Tercera vez / Mayor a tres veces </p>
                 </td>
                 <td>
                   <p class="PARRAFO">En estos campos numéricos de 14 enteros y 2 decimales, se
@@ -1788,8 +1781,8 @@
               </tr>
               <tr>
                 <td>
-                  <p class="SUBTITULO"><b>Transacción asociada
-                    </b></p>
+                  <p class="SUBTITULO">Transacción asociada
+                    </p>
                 </td>
                 <td>
                   <p class="PARRAFO">Si cualquiera de los campos anteriores contiene un valor,
@@ -1802,8 +1795,8 @@
           </div>
           <tr>
             <td>
-              <p class="SUBTITULO"><b>Calcula fecha de vencimiento
-                </b></p>
+              <p class="SUBTITULO">Calcula fecha de vencimiento
+                </p>
             </td>
             <td>
               <p class="PARRAFO">Campo tipo check en el que se indica al sistema si dentro del
@@ -1818,10 +1811,10 @@
 
           <tr>
             <td>
-              <p class="SUBTITULO"><b>Porcentaje cuota
+              <p class="SUBTITULO">Porcentaje cuota
 
 
-                </b></p>
+                </p>
             </td>
             <td>
               <p class="PARRAFO">Campo
@@ -1834,8 +1827,8 @@
 
           <tr>
             <td>
-              <p class="SUBTITULO"><b>Renovación
-                  Primera vez / Segunda vez / Tercera vez / Mayor a tres veces </b></p>
+              <p class="SUBTITULO">Renovación
+                  Primera vez / Segunda vez / Tercera vez / Mayor a tres veces </p>
             </td>
             <td>
               <p class="PARRAFO">En estos campos numéricos de 14 enteros y 2 decimales, se
@@ -1847,8 +1840,8 @@
 
           <tr>
             <td>
-              <p class="SUBTITULO"><b>Transacción asociada
-                </b></p>
+              <p class="SUBTITULO">Transacción asociada
+                </p>
             </td>
             <td>
               <p class="PARRAFO">Si cualquiera de los campos anteriores contiene un valor,
@@ -1860,8 +1853,8 @@
 
           <tr>
             <td>
-              <p class="SUBTITULO"><b>Genera número de tarjeta
-                </b></p>
+              <p class="SUBTITULO">Genera número de tarjeta
+                </p>
             </td>
             <td>
               <p class="PARRAFO">En este campo se señala si como resultado del evento de
@@ -1871,8 +1864,8 @@
 
           <tr>
             <td>
-              <p class="SUBTITULO"><b>Reposición activa
-                </b></p>
+              <p class="SUBTITULO">Reposición activa
+                </p>
             </td>
             <td>
               <p class="PARRAFO">Campo tipo check en el que se indica si como resultado de la
@@ -1884,8 +1877,8 @@
 
           <tr>
             <td>
-              <p class="SUBTITULO"><b>Permite renovación masiva
-                </b></p>
+              <p class="SUBTITULO">Permite renovación masiva
+                </p>
             </td>
             <td>
               <p class="PARRAFO">En este campo tipo check se señala si las tarjetas
@@ -1898,8 +1891,8 @@
 
           <tr>
             <td>
-              <p class="SUBTITULO"><a name="BL_PERIODOS"></a><b>Número periodos antes del vencimiento
-                </b></p>
+              <p class="SUBTITULO"><a name="BL_PERIODOS"></a>Número periodos antes del vencimiento
+                </p>
             </td>
             <td>
               <p class="PARRAFO">Campo en el que se registra la cantidad de periodos que el
@@ -1915,8 +1908,8 @@
 
           <tr>
             <td>
-              <p class="SUBTITULO"><b>Permite reactivación
-                </b></p>
+              <p class="SUBTITULO">Permite reactivación
+                </p>
             </td>
             <td>
               <p class="PARRAFO">En este campo se indica si para el producto se permite o no
@@ -1926,8 +1919,8 @@
 
           <tr>
             <td>
-              <p class="SUBTITULO"><b>Costo reactivación
-                </b></p>
+              <p class="SUBTITULO">Costo reactivación
+                </p>
             </td>
             <td>
               <p class="PARRAFO">Campo numérico de 14 enteros y 2 decimales en el que se
@@ -1938,8 +1931,8 @@
 
           <tr>
             <td>
-              <p class="SUBTITULO"><b>Transacción asociada
-                </b></p>
+              <p class="SUBTITULO">Transacción asociada
+                </p>
             </td>
             <td>
               <p class="PARRAFO">Si el campo anterior contiene un valor, este campo se
@@ -1951,9 +1944,9 @@
 
           <tr>
             <td>
-              <p class="SUBTITULO"><b>Primera vez / Segunda vez / Tercera vez / Mayor a tres veces (Cambio de
+              <p class="SUBTITULO">Primera vez / Segunda vez / Tercera vez / Mayor a tres veces (Cambio de
                   producto)
-                </b></p>
+                </p>
             </td>
             <td>
               <p class="PARRAFO">En estos campos numéricos de 14 enteros y 2 decimales, se
@@ -1965,8 +1958,8 @@
 
           <tr>
             <td>
-              <p class="SUBTITULO"><b>Transacción asociada
-                </b></p>
+              <p class="SUBTITULO">Transacción asociada
+                </p>
             </td>
             <td>
               <p class="PARRAFO">Si cualquiera de los campos anteriores contiene un valor,
@@ -1978,8 +1971,8 @@
 
           <tr>
             <td>
-              <p class="SUBTITULO"><b>Genera plástico
-                </b></p>
+              <p class="SUBTITULO">Genera plástico
+                </p>
             </td>
             <td>
               <p class="PARRAFO">Campo en el que se indica si como resultado del proceso de
@@ -1987,10 +1980,10 @@
             </td>
           </tr>
           </table>
-          <p><span class="SUBTITULO"><span><b>Seguro</b></span> 
-              <span>:</span> 
+          <p><span class="SUBTITULO">Seguro</span> 
+              :</span> 
             </span> 
-            <span> el último bloque de
+             el último bloque de
               datos del formulario Eventos, contiene la información requerida por el sistema para determinar los
               parámetros mediante los cuales se van a regir los cobros que la entidad debe hacer al cliente por
               concepto de seguros sobre los créditos otorgados. Aplica especialmente para la legislación
@@ -2000,8 +1993,8 @@
             <table>
               <tr>
                 <td>
-                  <p class="SUBTITULO"><b>Edad mínima seguro
-                    </b></p>
+                  <p class="SUBTITULO">Edad mínima seguro
+                    </p>
                 </td>
                 <td>
                   <p class="PARRAFO">En este campo numérico de 2 dígitos se registra la edad
@@ -2010,8 +2003,8 @@
               </tr>
               <tr>
                 <td>
-                  <p class="SUBTITULO"><b>Edad máxima seguro
-                    </b></p>
+                  <p class="SUBTITULO">Edad máxima seguro
+                    </p>
                 </td>
                 <td>
                   <p class="PARRAFO">Campo de 2 dígitos en el que se ingresa la edad máxima que
@@ -2022,8 +2015,8 @@
 
           <tr>
             <td>
-              <p class="SUBTITULO"><b>Altura mora seguro
-                </b></p>
+              <p class="SUBTITULO">Altura mora seguro
+                </p>
             </td>
             <td>
               <p class="PARRAFO">En este campo numérico de dos dígitos se indica la altura de
@@ -2034,8 +2027,8 @@
           </tr>
           <tr>
             <td>
-              <p class="SUBTITULO"><b>Tipo contrato
-                </b></p>
+              <p class="SUBTITULO">Tipo contrato
+                </p>
             </td>
             <td>
               <p class="PARRAFO">Campo
@@ -2048,8 +2041,8 @@
           </tr>
           <tr>
             <td>
-              <p class="SUBTITULO"><b>Antigüedad laboral seguro
-                </b></p>
+              <p class="SUBTITULO">Antigüedad laboral seguro
+                </p>
             </td>
             <td>
               <p class="PARRAFO">En este campo numérico de 2 dígitos se registra la cantidad
@@ -2060,8 +2053,8 @@
           </tr>
           <tr>
             <td>
-              <p class="SUBTITULO"><b>Monto máximo asegurar
-                </b></p>
+              <p class="SUBTITULO">Monto máximo asegurar
+                </p>
             </td>
             <td>
               <p class="PARRAFO">Campo numérico de 14 enteros y 2 decimales en el que se
@@ -2070,8 +2063,8 @@
           </tr>
           <tr>
             <td>
-              <p class="SUBTITULO"><b>% Liquidación
-                </b></p>
+              <p class="SUBTITULO">% Liquidación
+                </p>
             </td>
             <td>
               <p class="PARRAFO">En este campo se indica el porcentaje que sobre el saldo de
@@ -2080,8 +2073,8 @@
           </tr>
           <tr>
             <td>
-              <p class="SUBTITULO"><b>Transacción interna SPD
-                </b></p>
+              <p class="SUBTITULO">Transacción interna SPD
+                </p>
             </td>
             <td>
               <p class="PARRAFO">Si el campo anterior contiene algún valor, este campo se
@@ -2091,7 +2084,7 @@
             </td>
           </tr>
           </table>
-          <p><b><span class="SUBTITULO">Actualizar:</span></b> si el usuario
+          <p><span class="SUBTITULO">Actualizar:</span> si el usuario
             selecciona un registro e invoca la opción Actualizar, se despliega un formulario en el cual los
             únicos campos NO modificables son el Bin, Producto, Grupo de afinidad y Marca.</p>
           <p class="TITLE"><img src="../img/MEF_002E11.PNG"></p>
@@ -2124,32 +2117,32 @@
             formulario de Definición de productos pero sin actualizar información en la base de
             datos. </p>
 
-          <p class="TITLE"><b><span class="TITLE">Actualizar
-                parámetros</span></b></p>
+          <p class="TITLE"><span class="TITLE">Actualizar
+                parámetros</span></p>
           <p class="TITLE"><img src="../img/MEF_002E12.PNG"></p>
         </div>
-        <p class="TITLE"><b><span >Actualizar
-              cuotas</span></b></p>
+        <p class="TITLE"><span >Actualizar
+              cuotas</span></p>
         <p class="TITLE"><img src="../img/MEF_002E13.PNG"></p>
-        <p class="TITLE"><b><span class="TITLE">Actualizar
-              eventos</span></b></p>
+        <p class="TITLE"><span class="TITLE">Actualizar
+              eventos</span></p>
         <p class="TITLE"><img src="../img/MEF_002E14.PNG"></p>
-        <p class="PARRAFO"><b><span class="SUBTITULO">Detalle:</span></b> si el usuario selecciona un registro e invoca
+        <p class="PARRAFO"><span class="SUBTITULO">Detalle:</span> si el usuario selecciona un registro e invoca
           la opción
           Detalle, se despliega un formulario en el cual ninguno de sus campos es modificable.</p>
         <p class="TITLE"><img src="../img/MEF_002E15.PNG"></p>
         <p>Este formulario contiene los hipervínculos cuotas y eventos que le permiten al usuario
           invocar los formularios correspondientes en los cuales ninguno de sus campos es modificable.</p>
 
-        <p class="TITLE"><b><span >Detalle
-              cuotas:</span></b></p>
+        <p class="TITLE"><span >Detalle
+              cuotas:</span></p>
         <p class="TITLE"><img src="../img/MEF_002E16.PNG"></p>
 
-        <p class="TITLE"><b><span>Detalle eventos</span></b>:
+        <p class="TITLE">Detalle eventos</span>:
         </p>
         <p class="TITLE"><img src="../img/MEF_002E17.PNG"></p>
       </div>
-    </center>
+    
   </section>
   <script src="../js/menu.js"></script>
 

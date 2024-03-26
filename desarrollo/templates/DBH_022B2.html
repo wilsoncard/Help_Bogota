@@ -18,24 +18,20 @@
             <img class="TITLE"  src= "../img/menu.PNG" alt="Botón de Menú ">
         </div>
     </header>
-   <div id="menuContainer"></div>
-    <script>
-      fetch('menu.html')
-        .then(response => response.text())
-        .then(html => {
-          document.getElementById('menuContainer').innerHTML = html;
-        });
-    </script>
+      <div id="menuContainer"></div>
+  <script>
+    fetch('menu.html')
+      .then(response => response.text())
+      .then(html => {
+        document.getElementById('menuContainer').innerHTML = html;
+      });
+  </script>
 
     <section>
         <div> 
-            <table>
-              <tr> 
-                <td><div> 
+            
                     <p  class="TITLE">Novedad cambio categor&iacute;a cuenta</p>
-                  </div></td>
-              </tr>
-            </table>
+                  
             <p class="PARRAFO" >Mediante esta opci&oacute;n que se 
               invoca desde <a href="DBH_020B.html" >Generaci&oacute;n de novedades 
               d&eacute;bito</a> se registra la novedad mediante la cual se hace el cambio 
@@ -52,42 +48,42 @@
             <div> 
               <table>
                 <tr> 
-                  <td class="titletable"  ><p class="SUBTITULO"><b><span >Cuenta 
-                      actual</span></b></p></td>
+                  <td class="titletable"  ><p class="SUBTITULO"><span >Cuenta 
+                      actual</span></p></td>
                   <td><p  class="PARRAFO">Campo 
                       obligatorio con lista de valores de la que se selecciona la cuenta 
                       secundaria a la que se desea cambiar de categor&iacute;a a principal.</p></td>
                 </tr>
                 <tr> 
-                  <td class="titletable"><p class="SUBTITULO"><b><span >Categor&iacute;a</span></b></p></td>
+                  <td class="titletable"><p class="SUBTITULO"><span >Categor&iacute;a</span></p></td>
                   <td><p  class="PARRAFO">En 
                       este campo de salida se muestra como categor&iacute;a 'Principal' 
                       para indicar que es la categor&iacute;a que se le va a asignar a la 
                       cuenta seleccionada.</p></td>
                 </tr>
                 <tr> 
-                  <td class="titletable"><p class="SUBTITULO"><b><span >Tipo 
-                      cuenta a debitar</span></b></p></td>
+                  <td class="titletable"><p class="SUBTITULO"><span >Tipo 
+                      cuenta a debitar</span></p></td>
                   <td><p  class="PARRAFO">Campo 
                       de salida que muestra si la cuenta seleccionada para cambio de categor&iacute;a 
                       es de Ahorros, Corriente o Rotativo.</p></td>
                 </tr>
                 <tr> 
-                  <td class="titletable"><p class="SUBTITULO"><b><span >Moneda</span></b></p></td>
+                  <td class="titletable"><p class="SUBTITULO"><span >Moneda</span></p></td>
                   <td><p  class="PARRAFO">En 
                       este campo de salida se muestra la moneda en la que se encuentra denominada 
                       la cuenta a la que se va a cambiar la categor&iacute;a.</p></td>
                 </tr>
                 <tr> 
-                  <td class="titletable"><p class="SUBTITULO"><b><span >Fecha 
-                      radicaci&oacute;n</span></b></p></td>
+                  <td class="titletable"><p class="SUBTITULO"><span >Fecha 
+                      radicaci&oacute;n</span></p></td>
                   <td><p  class="PARRAFO">En 
                       este campo obligatorio se registra en formato YYYY-MM-DD la fecha 
                       en la que se ingresa la novedad en el sistema.</p></td>
                 </tr>
                 <tr> 
-                  <td class="titletable"><p class="SUBTITULO"><b><span >Sucursal 
-                      cuenta </span></b></p></td>
+                  <td class="titletable"><p class="SUBTITULO"><span >Sucursal 
+                      cuenta </span></p></td>
                   <td><p  class="PARRAFO">Campo 
                       de salida que muetra la <a href="NUH_020B.html" >sucursal</a> 
                       de la entidad a la que pertence la cuenta seleccionada para el cambio 

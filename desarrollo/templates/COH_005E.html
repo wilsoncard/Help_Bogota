@@ -18,26 +18,20 @@
       <img class="TITLE" src="../img/menu.PNG" alt="Botón de Menú ">
     </div>
   </header>
-  <div id="menuContainer"></div>
-    <script>
-      fetch('menu.html')
-        .then(response => response.text())
-        .then(html => {
-          document.getElementById('menuContainer').innerHTML = html;
-        });
-    </script>
+    <div id="menuContainer"></div>
+  <script>
+    fetch('menu.html')
+      .then(response => response.text())
+      .then(html => {
+        document.getElementById('menuContainer').innerHTML = html;
+      });
+  </script>
 
   <section>
     <div>
-      <table>
-        <tr>
-          <td>
-            <div>
+      
               <p class="TITLE">Datos del mensaje</p>
-            </div>
-          </td>
-        </tr>
-      </table>
+
       <p class="PARRAFO">Esta funci&oacute;n permite establecer los datos a incluir en los mensajes que se intercambian
         entre el equipo central autorizador y los adquirentes, que est&aacute;n definidos en el sistema.</p>
       <p class="PARRAFO"> Estos datos corresponden al est&aacute;ndar del protocolo universal BASE24 definido por las
@@ -52,7 +46,7 @@
       <table>
         <tr>
           <td class="titletable">
-            <p class="SUBTITULO"><b><span>Marca</span></span></b></p>
+            <p class="SUBTITULO">Marca</span></span></p>
           </td>
           <td>
             <p class="PARRAFO">Campo
@@ -62,7 +56,7 @@
         </tr>
         <tr>
           <td class="titletable">
-            <p class="SUBTITULO">C&oacute;digo<b><span></span></b></p>
+            <p class="SUBTITULO">C&oacute;digo</p>
           </td>
           <td>
             <p class="PARRAFO">Campo num&eacute;rico de 3 digitos, obligatorio en el que se registra el c&oacute;digo de
@@ -92,7 +86,7 @@
       <table>
         <tr>
           <td class="titletable">
-            <p class="SUBTITULO"><b><span>Marca</span></span></b></p>
+            <p class="SUBTITULO">Marca</span></span></p>
           </td>
           <td>
             <p class="PARRAFO">Campo

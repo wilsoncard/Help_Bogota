@@ -19,25 +19,21 @@
             <img class="TITLE"  src= "../img/menu.PNG" alt="Botón de Menú ">
         </div>
     </header>
-   <div id="menuContainer"></div>
-    <script>
-      fetch('menu.html')
-        .then(response => response.text())
-        .then(html => {
-          document.getElementById('menuContainer').innerHTML = html;
-        });
-    </script>
+      <div id="menuContainer"></div>
+  <script>
+    fetch('menu.html')
+      .then(response => response.text())
+      .then(html => {
+        document.getElementById('menuContainer').innerHTML = html;
+      });
+  </script>
 
     <section>
         <div> 
-            <table>
-              <tr> 
-                <td><div> 
+            
                     <p  class="TITLE">Motivos exoneraci&oacute;n de retenci&oacute;n 
                     </p>
-                  </div></td>
-              </tr>
-            </table>
+                  
             <p  class="PARRAFO">Mediante esta funci&oacute;n se permite la 
               consulta y mantenimiento de la tabla que contiene la codificaci&oacute;n de 
               los motivos o raz&oacute;n por la cual no se aplica retenci&oacute;n en la 
@@ -49,15 +45,15 @@
             
             <p  class="PARRAFO">El formulario contiene las opciones Actualizar, 
               Eliminar y Adicionar. </p>
-            <p  class="PARRAFO"><span class="SUBTITULO"><b ><span #'font-family:Arial;
-              '>Adicionar</span></b><span >:</span></span><span > 
+            <p  class="PARRAFO"><span class="SUBTITULO"><span #'font-family:Arial;
+              '>Adicionar</span><span >:</span></span><span > 
               Si el usuario invoca la opci&oacute;n Adicionar se despliega un formulario 
               con los siguientes campos</span></p>
             <p class="TITLE"><img src="../img/ESF_003E1.PNG"272" ></p>
             <p  class="TITLE">Descripci&oacute;n de campos</p>
             <table>
               <tr> 
-                <td class="titletable"  ><p class="SUBTITULO"><b><span >C&oacute;digo</span></b></p></td>
+                <td class="titletable"  ><p class="SUBTITULO"><span >C&oacute;digo</span></p></td>
                 <td><p  class="PARRAFO">Campo 
                     num&eacute;rico de 2 d&iacute;gitos, obligatorio, donde se registra 
                     el c&oacute;digo asignado a cada uno de los motivos o razones por los 
@@ -67,7 +63,7 @@
                   </p></td>
               </tr>
               <tr> 
-                <td class="titletable"><p class="SUBTITULO"><b><span >Descripci&oacute;n</span></b></p></td>
+                <td class="titletable"><p class="SUBTITULO"><span >Descripci&oacute;n</span></p></td>
                 <td><p  class="PARRAFO">En 
                     este campo alfanum&eacute;rico de 30 posiciones, obligatorio, se registra 
                     el concepto asociado a cada motivo.
@@ -76,8 +72,8 @@
             </table>
 
             <div>
-              <p  class="PARRAFO"><b ><span class="SUBTITULO"> 
-                Actualizar</span></b>: Si el usuario selecciona un registro e invoca la 
+              <p  class="PARRAFO"><span class="SUBTITULO"> 
+                Actualizar</span>: Si el usuario selecciona un registro e invoca la 
                 opci&oacute;n Actualizar se despliega un nuevo formulario en el cual el 
                 &uacute;nico campo modificable es la descripci&oacute;n<span
               >

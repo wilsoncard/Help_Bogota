@@ -18,25 +18,21 @@
             <img class="TITLE"  src= "../img/menu.PNG" alt="Botón de Menú ">
         </div>
     </header>
-   <div id="menuContainer"></div>
-    <script>
-      fetch('menu.html')
-        .then(response => response.text())
-        .then(html => {
-          document.getElementById('menuContainer').innerHTML = html;
-        });
-    </script>
+      <div id="menuContainer"></div>
+  <script>
+    fetch('menu.html')
+      .then(response => response.text())
+      .then(html => {
+        document.getElementById('menuContainer').innerHTML = html;
+      });
+  </script>
 
     <section>
         <div> 
-            <table>
-              <tr> 
-                <td><div> 
+            
                     <p  class="TITLE">Par&aacute;metros de solicitudes por 
                       producto </p>
-                  </div></td>
-              </tr>
-            </table>
+                  
             <p class="PARRAFO" >Mediante esta opci&oacute;n se parametriza 
               para cada uno de los <a href="DBH_018B.html" >productos d&eacute;bito</a> 
               definidos por la entidad los tipos de solicitud que es permitido efectuar, 
@@ -62,7 +58,7 @@
               que permite replicar los par&aacute;metros definidos para un producto a otro 
               diferente. Adicionalmente contiene las opciones Actualizar, Eliminar, Adicionar 
               y Detalle.</p>
-            <p  class="PARRAFO"><b ><span class="SUBTITULO">Adicionar:</span></b> 
+            <p  class="PARRAFO"><span class="SUBTITULO">Adicionar:</span> 
               si el usuario invoca la opci&oacute;n Adicionar, se despliega un 
               nuevo formulario con los siguientes campos.</p>
             <p class="TITLE"><img src="../img/DBF_019E8.PNG"500" height="241"></p>
@@ -73,8 +69,8 @@
             <div> 
               <table>
                 <tr> 
-                  <td class="titletable"><p class="SUBTITULO"><b><span >Tipo 
-                      solicitud </span></b></p></td>
+                  <td class="titletable"><p class="SUBTITULO"><span >Tipo 
+                      solicitud </span></p></td>
                   <td><p  class="PARRAFO">Campo 
                       obligatorio tipo combo en el que se selecciona entre Nuevo d&eacute;bito, 
                       Reposici&oacute;n d&eacute;bito, Reexpedici&oacute;n d&eacute;bito 
@@ -83,7 +79,7 @@
                 </tr>
                 <tr> 
                   <td class="titletable"  >
-          <p class="SUBTITULO"><b><span >Regional</span></b></p></td>
+          <p class="SUBTITULO"><span >Regional</span></p></td>
                   <td><p  class="PARRAFO">Este 
                       campo se habilita &uacute;nicamente cuando el tipo de solicitud corresponda 
                       a Nuevo d&eacute;bito y se marca para indicar si durante 
@@ -92,10 +88,10 @@
                       a una regional o depender de alguna regional. </p></td>
                 </tr>
                 <tr> 
-                  <td class="titletable"  ><p class="SUBTITULO"><b><span >Fecha 
+                  <td class="titletable"  ><p class="SUBTITULO"><span >Fecha 
                       nacimiento / Estado civil / Personas a cargo / Profesi&oacute;n titular 
                       / Tel&eacute;fono correspondencia / Tipo residencia / Relaci&oacute;n 
-                      laboral / Ingresos</span></b></p></td>
+                      laboral / Ingresos</span></p></td>
                   <td><p  class="PARRAFO">Conjunto 
                       de campos que se habilitan &uacute;nicamente para el tipo de solicitud 
                       nuevo d&eacute;bito y en los cuales se marca respectivamente para 
@@ -108,7 +104,7 @@
               </table>
             </div>
 
-            <p  class="PARRAFO"><b ><span class="SUBTITULO">Actualizar:</span></b> 
+            <p  class="PARRAFO"><span class="SUBTITULO">Actualizar:</span> 
               si el usuario selecciona un registro correspondiente a Tipo solicitud 
               'Nuevo d&eacute;bito' e invoca la opci&oacute;n Actualizar, 
               se despliega un formulario en el cual el &uacute;nico campo no modificable 
@@ -119,13 +115,13 @@
             
             <p class="TITLE"><img src="../img/DBF_019E11.PNG"500" height="240"></p>
 
-            <p  class="PARRAFO"><b ><span class="SUBTITULO">Detalle:</span></b> 
+            <p  class="PARRAFO"><span class="SUBTITULO">Detalle:</span> 
               si el usuario selecciona un registro e invoca la opci&oacute;n Detalle, 
               se despliega un formulario con la informaci&oacute;n completa del registro 
               y en el cual ninguno de sus campos es modificable.</p>
             <p class="TITLE"><img src="../img/DBF_019E12.PNG"288" ></p>
             
-            <p  class="PARRAFO"><a name="BL_ETAPAS"></a><span class="SUBTITULO"><span >Etapas</b>:</span></span><span > 
+            <p  class="PARRAFO"><a name="BL_ETAPAS"></a><span class="SUBTITULO"><span >Etapas:</span></span><span > 
               si el usuario selecciona un tipo de solicitud e invoca el hiperv&iacute;nculo 
               Etapas, se despliega un nuevo formulario en el que se muestran las 
               etapas por las cuales la entidad haya definido que debe pasar cada tipo de 
@@ -136,7 +132,7 @@
               opciones Eliminar y Adicionar, un hiperv&iacute;nculo a trav&eacute;s del 
               cual se asocian a cada etapa los <a href="DBH_019B1.html#BL_DOCUMENTOS" >documentos</a> 
               exigibles al cliente.</p>
-            <p  class="PARRAFO"><b ><span class="SUBTITULO">Adicionar:</span></b> 
+            <p  class="PARRAFO"><span class="SUBTITULO">Adicionar:</span> 
               si el usuario invoca la opci&oacute;n Adicionar, se despliega un 
               wizard de dos pasos en el cual se ingresan las diferentes etapas asociadas 
               con el producto y tipo de solicitud y se les asigna el orden secuencial en 
@@ -146,14 +142,14 @@
             <div> 
               <table>
                 <tr> 
-                  <td class="titletable"  ><p class="SUBTITULO"><b><span >Descripci&oacute;n 
-                      etapa </span></b></p></td>
+                  <td class="titletable"  ><p class="SUBTITULO"><span >Descripci&oacute;n 
+                      etapa </span></p></td>
                   <td><p  class="PARRAFO">Campo 
                       obligatorio con lista de valores que permite seleccionar la <a href="DBH_019B.html" >etapa</a> 
                       que se desea asociar al tipo de solicitud.</p></td>
                 </tr>
                 <tr> 
-                  <td class="titletable"><p class="SUBTITULO"><b><span >Orden</span></b></p></td>
+                  <td class="titletable"><p class="SUBTITULO"><span >Orden</span></p></td>
                   <td><p  class="PARRAFO">En 
                       este campo num&eacute;rico de hasta 2 d&iacute;gitos, obligatorio, 
                       se registra el orden en el que debe ir la etapa que se est&aacute; 
@@ -175,7 +171,7 @@
               la base de datos.</p>
             <p class="TITLE"><img src="../img/DBF_019E15.PNG"739" ></p>
 
-            <p  class="PARRAFO"><a name="BL_DOCUMENTOS"></a><span class="SUBTITULO"><span >Documentos</b>:</span></span><span > 
+            <p  class="PARRAFO"><a name="BL_DOCUMENTOS"></a><span class="SUBTITULO"><span >Documentos:</span></span><span > 
               si el usuario selecciona una etapa definida para un tipo de solicitud e invoca 
               el hiperv&iacute;nculo Documentos, se despliega un nuevo formulario 
               en el que se muestran los documentos que la entidad solicita al cliente para 
@@ -184,7 +180,7 @@
 
             <p  class="PARRAFO">El formulario contiene las opciones Actualizar, 
               Eliminar, Adicionar y Detalle.</p>
-            <p  class="PARRAFO"><b ><span class="SUBTITULO">Adicionar:</span></b> 
+            <p  class="PARRAFO"><span class="SUBTITULO">Adicionar:</span> 
               si el usuario invoca la opci&oacute;n Adicionar, se despliega un 
               nuevo formulario con los siguientes campos.</p>
             <p class="TITLE"><img src="../img/DBF_019E17.PNG"528" height="307"></p>
@@ -193,15 +189,15 @@
             <div> 
               <table>
                 <tr> 
-                  <td class="titletable"  ><p class="SUBTITULO"><b><span >Documento</span></b></p></td>
+                  <td class="titletable"  ><p class="SUBTITULO"><span >Documento</span></p></td>
                   <td><p  class="PARRAFO">Campo 
                       obligatorio con lista de valores que permite seleccionar el <a href="DBH_019B.html#BL_DOCUMENTOS" >documento 
                       </a> que se desea exigir al cliente en la etapa actual.</p></td>
                 </tr>
                 <tr> 
-                  <td class="titletable"><p class="SUBTITULO"><b><span >Natural 
+                  <td class="titletable"><p class="SUBTITULO"><span >Natural 
                       empleado / Natural independiente / Natural sin ingresos / Representante 
-                      legal / Funcionarios / Empresa</span></b></p></td>
+                      legal / Funcionarios / Empresa</span></p></td>
                   <td><p  class="PARRAFO">En 
                       este campo tipo combo se selecciona para cada una de las personas 
                       entre Opcional y No aplica para indicar 
@@ -210,7 +206,7 @@
                       documento no tiene ninguna implicaci&oacute;n para el tipo de solicitud.</p></td>
                 </tr>
                 <tr> 
-                  <td class="titletable"><p class="SUBTITULO"><b><span >Observaciones</span></b></p></td>
+                  <td class="titletable"><p class="SUBTITULO"><span >Observaciones</span></p></td>
                   <td><p  class="PARRAFO">Campo 
                       alfanum&eacute;rico que permite registrar informaci&oacute;n adicional 
                       o aclaratoria en relaci&oacute;n con cada uno de los documentos exigidos.</p></td>
@@ -218,20 +214,20 @@
               </table>
             </div>
             
-            <p  class="PARRAFO"><b ><span class="SUBTITULO">Actualizar:</span></b> 
+            <p  class="PARRAFO"><span class="SUBTITULO">Actualizar:</span> 
               si el usuario selecciona un registro e invoca la opci&oacute;n Actualizar, 
               se despliega un formulario en el cual el &uacute;nico campo NO modificable 
               es Documento.</p>
             <p class="TITLE"><img src="../img/DBF_019E18.PNG"532" height="301"></p>
             
-            <p  class="PARRAFO"><b ><span class="SUBTITULO">Detalle:</span></b> 
+            <p  class="PARRAFO"><span class="SUBTITULO">Detalle:</span> 
               si el usuario selecciona un registro e invoca la opci&oacute;n Detalle, 
               se despliega un formulario con la informaci&oacute;n completa del registro 
               y en el cual ninguno de sus campos es modificable.</p>
             <p class="TITLE"><img src="../img/DBF_019E19.PNG"361" height="280"></p>
             
             <p  class="PARRAFO"><a name="BL_COPIAR"></a><span class="SUBTITULO"><span >Copiar 
-              par&aacute;metros</b>:</span></span><span > 
+              par&aacute;metros:</span></span><span > 
               si el usuario selecciona un tipo de solicitud e invoca el hiperv&iacute;nculo 
               Copiar par&aacute;metros, se despliega un nuevo formulario que le permite 
               replicar los par&aacute;metros del producto actual a otro producto diferente, 
@@ -242,15 +238,15 @@
             <div> 
               <table>
                 <tr> 
-                  <td class="titletable"  ><p class="SUBTITULO"><b><span >Producto 
-                      origen </span></b></p></td>
+                  <td class="titletable"  ><p class="SUBTITULO"><span >Producto 
+                      origen </span></p></td>
                   <td><p  class="PARRAFO">Campo 
                       de salida que muestra el producto actual seleccionado por el usuario 
                       y que contiene los par&aacute;metros que se desea copiar o replicar.</p></td>
                 </tr>
                 <tr> 
-                  <td class="titletable"><p class="SUBTITULO"><b><span >Producto 
-                      destino </span></b></p></td>
+                  <td class="titletable"><p class="SUBTITULO"><span >Producto 
+                      destino </span></p></td>
                   <td><p  class="PARRAFO">En 
                       este campo obligatorio con lista de valores, se selecciona el <a href="DBH_018B.html" >producto 
                       d&eacute;bito</a> para el cual se desea copiar o replicar los 

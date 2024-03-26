@@ -18,26 +18,20 @@
       <img class="TITLE" src="../img/menu.PNG" alt="Botón de Menú ">
     </div>
   </header>
-  <div id="menuContainer"></div>
-    <script>
-      fetch('menu.html')
-        .then(response => response.text())
-        .then(html => {
-          document.getElementById('menuContainer').innerHTML = html;
-        });
-    </script>
+    <div id="menuContainer"></div>
+  <script>
+    fetch('menu.html')
+      .then(response => response.text())
+      .then(html => {
+        document.getElementById('menuContainer').innerHTML = html;
+      });
+  </script>
 
   <section>
     <div>
-      <table>
-        <tr>
-          <td>
-            <div>
+      
               <p class="TITLE">Reglas por producto </p>
-            </div>
-          </td>
-        </tr>
-      </table>
+
       <p class="PARRAFO">Mediante esta opci&oacute;n, la entidad asocia a los diferentes productos cr&eacute;dito las <a
           href="COH_030B.html">reglas</a> que deben ser evaluadas por el autorizador </p>
       <p class="PARRAFO">El formulario contiene un filtro que le permite al usuario consultar la informaci&oacute;n
@@ -49,11 +43,11 @@
           reglas</a> y <a href="COH_031B.html#BL_MASIVA">Asociar reglas masivamente</a>. </p>
       <p class="TITLE"><img src="../img/COF_031B1.PNG"></p>
       <p class="TITLE"><img src="../img/COF_031B4.PNG"></p>
-      <p class="PARRAFO"><a name="BL_ASOCIAR"><span class="SUBTITULO"><span><b>Asociar
-                reglas</b></span><span>:</span></span>  Si el usuario selecciona un producto e invoca
+      <p class="PARRAFO"><a name="BL_ASOCIAR"><span class="SUBTITULO">Asociar
+                reglas</span>:</span></span>  Si el usuario selecciona un producto e invoca
           el hiperv&iacute;nculo Asociar reglas, se despliega un formulario con el mismo nombre, y el cual
           contiene un filtro que le permite al usuario consultar si el producto tiene asociada una <a
-            href="COH_030B.html">regla</a> en particular.<span> El formulario muestra un resumen de las
+            href="COH_030B.html">regla</a> en particular. El formulario muestra un resumen de las
             caracter&iacute;sticas de cada una de las <a href="COH_030B.html">reglas</a> que tiene el producto como son
             el estado, la acci&oacute;n, vigencia inicial y vigencia final. </span></p>
       <p class="TITLE"><img src="../img/COF_031B2.PNG"></p>
@@ -64,7 +58,7 @@
       <table>
         <tr>
           <td class="titletable">
-            <p class="SUBTITULO"><b>Regla</b></p>
+            <p class="SUBTITULO">Regla</p>
           </td>
           <td>
             <p class="PARRAFO">Campo obligatorio con lista de valores de donde se selecciona la <a
@@ -82,26 +76,26 @@
           </td>
         </tr>
       </table>
-      <p src="../img/MEF_002E5.PNG"></p>
+      
       <p><span class="SUBTITULO">Actualizar:</span>  Si el usuario invoca la opci&oacute;n Actualizar, se
         despliega un formulario en el cual el &uacute;nico campo editable es la Prioridad.</p>
       <p class="TITLE"><img src="../img/COF_031B4.PNG"></p>
-      <p class="PARRAFO"><a name="BL_MASIVA"><span class="SUBTITULO"><span><b>Asociar reglas
-                masivamente</b></span><span>:</span></span>  si el usuario invoca la opci&oacute;n Asociar reglas
+      <p class="PARRAFO"><a name="BL_MASIVA"><span class="SUBTITULO">Asociar reglas
+                masivamente</span>:</span></span>  si el usuario invoca la opci&oacute;n Asociar reglas
           masivamente se despliega un wizard de dos pasos y en la primera p&aacute;gina denominada productos se muestran
           todos aquellos productos que el actor haya seleccionado previamente mediante el filtro contenido en el
           formulario inicial<span class="PARRAFO"> 'Reglas por producto' .</span></p>
       <p class="TITLE"><img src="../img/COF_031B5.PNG"></p>
-      <p src="../img/MEF_002E5.PNG">En este formulario el actor selecciona marcando en la casilla correspondiente, los
+      En este formulario el actor selecciona marcando en la casilla correspondiente, los
         productos a los cuales les desea asociar reglas masivamente; por lo menos debe seleccionar un producto para
         poder continuar con el proceso.</p>
-      <p src="../img/MEF_002E5.PNG">Una vez seleccionados los productos y mediante al bot&oacute;n 'Siguiente' el
+      Una vez seleccionados los productos y mediante al bot&oacute;n 'Siguiente' el
         sistema lo lleva a la seguna p&aacute;gina del wizard denominada 'Reglas' con los siguientes campos: </p>
-      <p src="../img/MEF_002E5.PNG"><img src="../img/COF_031B6.PNG"></p>
+      <p class="TITLE"><img src="../img/COF_031B6.PNG"></p>
       <table>
         <tr>
           <td class="titletable">
-            <p class="SUBTITULO"><b>Nombre</b></p>
+            <p class="SUBTITULO">Nombre</p>
           </td>
           <td>
             <p class="PARRAFO">Este campo de salida muestra todas las <a href="COH_030B.html">reglas</a> parametrizadas
@@ -127,11 +121,11 @@
           </td>
         </tr>
       </table>
-      <p src="../img/MEF_002E5.PNG">Una vez que el actor ha seleccionado las reglas a asociar y les ha asignado la
+      Una vez que el actor ha seleccionado las reglas a asociar y les ha asignado la
         prioridad, mediante el bot&oacute;n finalizar, el sistema asocia las regals a los productos escogidos.</p>
-      <p src="../img/MEF_002E5.PNG">Si alguna de las reglas ya est&aacute; asociada con cualquiera de los productos
+      Si alguna de las reglas ya est&aacute; asociada con cualquiera de los productos
         seleccionados, el sistema le informar&aacute; al usario y asociar&aacute; las dem&aacute;s reglas.</p>
-      <p src="../img/MEF_002E5.PNG"></p>
+      </p>
   </section>
   <script src="../js/menu.js"></script>
 </body>

@@ -1,222 +1,274 @@
 <!DOCTYPE html>
 <html lang="es">
 
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>BANKBU®</title>
-  <link rel="stylesheet" href="../css/pages.css">
-  <link rel="stylesheet" href="../css/style.css">
-  <link rel="icon" href="../img/ACQUIRER-logo.JPG" type="image/x-icon">
-</head>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BANKBU®</title>
+    <link rel="stylesheet" href="../css/pages.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="icon" href="../img/ACQUIRER-logo.JPG" type="image/x-icon">
+  </head>
 
-<body>
-  <header>
-    <img class="logo" src="../img/logoBankbu_.PNG" alt="Logo de Mi Empresa">
-    <div id="menuBtn">
-      <img class="TITLE" src="../img/menu.PNG" alt="Botón de Menú ">
-    </div>
-  </header>
-  <div id="menuContainer"></div>
+  <body>
+    <header>
+      <img class="logo" src="../img/logoBankbu_.PNG" alt="Logo de Mi Empresa">
+      <div id="menuBtn">
+        <img class="TITLE" src="../img/menu.PNG" alt="Botón de Menú ">
+      </div>
+    </header>
+    <div id="menuContainer"></div>
     <script>
-      fetch('menu.html')
-        .then(response => response.text())
-        .then(html => {
-          document.getElementById('menuContainer').innerHTML = html;
-        });
-    </script>
-  <section>
-    <div>
-      <table>
-        <p class="TITLE">Regiones por Entidad Territorial<a name="regionesporentidadterritorial"></a></p>
-      </table>
-      <p>Por medio de esta opci&oacute;n se pueden subdividir las Regiones parametrizadas, cuantas veces desee el
-        usuario de acuerdo con la informaci&oacute;n contenida en la tabla <span class="style2"><a
-            href="NUH_003B.html">Informaci&oacute;n geopolitica</a>. </span></p>
-      <p class="PARRAFO">El formulario contiene las opciones Actualizar, Eliminar,
-        y Adicionar. Adicionalmente, cuenta con un filtro de b&uacute;squeda</p>
-      <p class="TITLE"><img src="../img/AEF_001B4.PNG" ></p>
-      <p class="PARRAFO"><span class="SUBTITULO">Filtro:</span>  Se pueden realizar consultas a trav&eacute;s
-        de las siguientes opciones:</p>
-      <p class="center"><img src="../img/AEF_001B5.PNG" ></p>
-      <table>
-        <tr>
-          <td class="titletable">
-            <p class="SUBTITULO"><span>Regiones</span></p>
-          </td>
-          <td>
-            <p class="PARRAFO">Campo
-              alfanum&eacute;rico de tres d&iacute;gitos, que contiene
-              el c&oacute;digo asignado a cada Regi&oacute;n. Se puede diligenciar de forma manual o desplazando la
-              lista de valores. </p>
-          </td>
-        </tr>
+    fetch('menu.html')
+      .then(response => response.text())
+      .then(html => {
+        document.getElementById('menuContainer').innerHTML = html;
+      });
+  </script>
+    <section>
+      <div>
+        <table>
+          <p class="TITLE">Regiones por Entidad Territorial<a
+              name="regionesporentidadterritorial"></a></p>
+        </table>
+        <p>Por medio de esta opci&oacute;n se pueden subdividir las Regiones
+          parametrizadas, cuantas veces desee el
+          usuario de acuerdo con la informaci&oacute;n contenida en la tabla
+          <span class="style2"><a
+              href="NUH_003B.html">Informaci&oacute;n geopolitica</a>.
+          </span></p>
+        <p class="PARRAFO">El formulario contiene las opciones Actualizar,
+          Eliminar,
+          y Adicionar. Adicionalmente, cuenta con un filtro de
+          b&uacute;squeda</p>
+        <p class="TITLE"><img src="../img/AEF_001B4.PNG"></p>
+        <p class="PARRAFO"><span class="SUBTITULO">Filtro:</span> Se pueden
+          realizar consultas a trav&eacute;s
+          de las siguientes opciones:</p>
+        <p class="center"><img src="../img/AEF_001B5.PNG"></p>
+        <table>
+          <tr>
+            <td class="titletable">
+              <p class="SUBTITULO">Regiones</span></p>
+            </td>
+            <td>
+              <p class="PARRAFO">Campo
+                alfanum&eacute;rico de tres d&iacute;gitos, que contiene
+                el c&oacute;digo asignado a cada Regi&oacute;n. Se puede
+                diligenciar de forma manual o desplazando la
+                lista de valores. </p>
+            </td>
+          </tr>
 
-        <tr>
-          <td class="titletable">
-            <p class="SUBTITULO"><b><span><span>Ubicaci&oacute;n</span></span></b></p>
-          </td>
-          <td>
-            <p class="PARRAFO">Campo diligenciable por medio de lista de valores, en la cual se despliegan los datos
-              contenidos en la tabla <span class="style2"><a href="NUH_003B.html">Informaci&oacute;n geopolitica</a>.
-              </span></p>
-          </td>
-        </tr>
-      </table>
-      <p><span class="SUBTITULO"><span><b>Adicionar</b>:</span><span></span></span><span> Si el usuario invoca la
-          opci&oacute;n Adicionar se despliega un nuevo formulario. </span> 
-      </p>
-      <p class="TITLE"><img src="../img/AEF_001B6.PNG" 474" ></p>
-      <p class="TITLE">Descripci&oacute;n de campos</p>
-      <table>
-        <tr>
-          <td class="titletable">
-            <p class="SUBTITULO"><b><span>C&oacute;digo</span></b></p>
-          </td>
-          <td>
-            <p class="PARRAFO">Campo
-              alfanum&eacute;rico de 8 d&iacute;gitos, obligatorio, que contiene
-              el c&oacute;digo asignado a la subdivisi&oacute;n que se esta creando.
-            </p>
-          </td>
-        </tr>
-      </table>
-      <table>
-        <tr>
-          <td class="titletable">
-            <p class="SUBTITULO"><b><span>Descripci&oacute;n</span></b></p>
-          </td>
-          <td>
-            <p class="PARRAFO">En
-              este campo alfanum&eacute;rico de 30 posiciones, obligatorio, se registra
-              el nombre de la subdivisi&oacute;n asociada a cada c&oacute;digo.
-            </p>
-          </td>
-        </tr>
+          <tr>
+            <td class="titletable">
+              <p
+                class="SUBTITULO">Ubicaci&oacute;n</span></span></p>
+            </td>
+            <td>
+              <p class="PARRAFO">Campo diligenciable por medio de lista de
+                valores, en la cual se despliegan los datos
+                contenidos en la tabla <span class="style2"><a
+                    href="NUH_003B.html">Informaci&oacute;n geopolitica</a>.
+                </span></p>
+            </td>
+          </tr>
+        </table>
+        <p><span
+            class="SUBTITULO">Adicionar:</span></span>
+            Si el usuario invoca la
+            opci&oacute;n Adicionar se despliega un nuevo formulario. </span>
+        </p>
+        <p class="TITLE"><img src="../img/AEF_001B6.PNG" 474"></p>
+        <p class="TITLE">Descripci&oacute;n de campos</p>
+        <table>
+          <tr>
+            <td class="titletable">
+              <p class="SUBTITULO">C&oacute;digo</span></p>
+            </td>
+            <td>
+              <p class="PARRAFO">Campo
+                alfanum&eacute;rico de 8 d&iacute;gitos, obligatorio, que
+                contiene
+                el c&oacute;digo asignado a la subdivisi&oacute;n que se esta
+                creando.
+              </p>
+            </td>
+          </tr>
+        </table>
+        <table>
+          <tr>
+            <td class="titletable">
+              <p class="SUBTITULO">Descripci&oacute;n</span></p>
+            </td>
+            <td>
+              <p class="PARRAFO">En
+                este campo alfanum&eacute;rico de 30 posiciones, obligatorio, se
+                registra
+                el nombre de la subdivisi&oacute;n asociada a cada
+                c&oacute;digo.
+              </p>
+            </td>
+          </tr>
 
-        <tr>
-          <td class="titletable">
-            <p class="SUBTITULO"><b><span><span>Ubicaci&oacute;n </span></span></b></p>
-          </td>
-          <td>
-            <p class="PARRAFO">Campo obligatorio, diligenciable por medio de lista de valores, en la cual se despliegan
-              los datos contenidos en la tabla <span class="style2"><a href="NUH_003B.html">Informaci&oacute;n
-                  geopolitica</a>. </span></p>
-          </td>
-        </tr>
+          <tr>
+            <td class="titletable">
+              <p class="SUBTITULO">Ubicaci&oacute;n
+                  </span></span></p>
+            </td>
+            <td>
+              <p class="PARRAFO">Campo obligatorio, diligenciable por medio de
+                lista de valores, en la cual se despliegan
+                los datos contenidos en la tabla <span class="style2"><a
+                    href="NUH_003B.html">Informaci&oacute;n
+                    geopolitica</a>. </span></p>
+            </td>
+          </tr>
 
-        <tr>
-          <td class="titletable">
-            <p class="SUBTITULO"><b><span><span>Regiones</span></span></b></p>
-          </td>
-          <td>
-            <p class="PARRAFO">En
-              este campo alfanum&eacute;rico de 3 posiciones, obligatorio, se registra
-              el nombre de la regi&oacute;n asociada a cada subdivisi&oacute;n. Tambien es diligenciable por medio de
-              lista de valores.
-            </p>
-          </td>
-        </tr>
-      </table>
-      <p class="PARRAFO"><span class="SUBTITULO"><span><b>Actualizar</b>:</span><span></span></span><span> Si el
-          usuario invoca la opci&oacute;n Actualizar se despliega un nuevo formulario
-          en el cual el &uacute;nico campo modificable es Descripci&oacute;n.</span> 
-      </p>
-      <p class="TITLE"><img src="../img/AEF_001B7.PNG" 432"></p>
-      <p><span class="SUBTITULO"><span>Zonas de visita </span><span>:</span></span><span>De acuerdo con las
-          necesidades de la entidad, es posible que se requiera un mayor grado de divisi&oacute;n; por lo cual en esta
-          agrupaci&oacute;n de campos se pueden definir zonas espec&iacute;ficas para cada subdivisi&oacute;n</span> 
-        <span>.</span></p>
-      <p>El formulario contiene las opciones Actualizar, Eliminar,
-        y Adicionar. Adicionalmente, cuenta con un bot&oacute;n para retrocede a la opci&oacute;n <a
-          href="#">Regiones por entidad territorial.</a></p>
-      <p class="TITLE"><img src="../img/AEF_001B8.PNG" p>
-      <p><span class="SUBTITULO"><span><b>Adicionar</b>:</span><span></span></span><span> Si el usuario invoca la
-          opci&oacute;n Adicionar se despliega un nuevo formulario. </span> 
-      </p>
-      <p class="TITLE"><img src="../img/AEF_001B9.PNG" ></p>
-      <p class="TITLE">Descripci&oacute;n de campos</p>
-      <table>
-        <tr>
-          <td class="titletable">
-            <p class="SUBTITULO"><b><span>C&oacute;digo</span></b> de Zona </p>
-          </td>
-          <td>
-            <p>Campo num&eacute;rico de 2 d&iacute;gitos, obligatorio, en el cual se registra el c&oacute;digo asignado
-              por la entidad a cada una de las zonas que conforman las subdivisiones.</p>
-          </td>
-        </tr>
-      </table>
-      <table>
-        <tr>
-          <td class="titletable">
-            <p class="SUBTITULO"><b><span><span>Duraci&oacute;n promedio </span></span></b></p>
-          </td>
-          <td>
-            <p>Campo num&eacute;rico de 2 d&iacute;gitos,obligatorio, en el cual se indica el tiempo promedio estimado
-              para efectuar las visitas y actividades programadas por la entidad para cada una de las zonas definidas.
-            </p>
-          </td>
-        </tr>
-      </table>
-      <table>
-        <tr>
-          <td class="titletable">
-            <p class="SUBTITULO"><b><span>Tiempo del desplazamiento </span></b></p>
-          </td>
-          <td>
-            <p>Campo num&eacute;rico de 2 posiciones, obligatorio,en el que se registra el Tiempo de desplazamiento
-              estimado para cubrir la zona respectiva.</p>
-          </td>
-        </tr>
+          <tr>
+            <td class="titletable">
+              <p class="SUBTITULO">Regiones</span></span></p>
+            </td>
+            <td>
+              <p class="PARRAFO">En
+                este campo alfanum&eacute;rico de 3 posiciones, obligatorio, se
+                registra
+                el nombre de la regi&oacute;n asociada a cada
+                subdivisi&oacute;n. Tambien es diligenciable por medio de
+                lista de valores.
+              </p>
+            </td>
+          </tr>
+        </table>
+        <p class="PARRAFO"><span
+            class="SUBTITULO">Actualizar:</span></span>
+            Si el
+            usuario invoca la opci&oacute;n Actualizar se despliega un nuevo
+            formulario
+            en el cual el &uacute;nico campo modificable es
+            Descripci&oacute;n.</span>
+        </p>
+        <p class="TITLE"><img src="../img/AEF_001B7.PNG" 432"></p>
+        <p><span class="SUBTITULO">Zonas de visita
+            </span>:</span></span>De acuerdo con las
+            necesidades de la entidad, es posible que se requiera un mayor grado
+            de divisi&oacute;n; por lo cual en esta
+            agrupaci&oacute;n de campos se pueden definir zonas
+            espec&iacute;ficas para cada subdivisi&oacute;n</span>
+          .</span>
+        </p>
+        <p>El formulario contiene las opciones Actualizar, Eliminar,
+          y Adicionar. Adicionalmente, cuenta con un bot&oacute;n para retrocede
+          a la opci&oacute;n <a href="#">Regiones
+            por entidad territorial.</a></p>
+        <p class="TITLE"><img src="../img/AEF_001B8.PNG" p>
+          <p><span
+              class="SUBTITULO">Adicionar:</span></span>
+              Si el usuario invoca la
+              opci&oacute;n Adicionar se despliega un nuevo formulario. </span>
+          </p>
+          <p class="TITLE"><img src="../img/AEF_001B9.PNG"></p>
+          <p class="TITLE">Descripci&oacute;n de campos</p>
+          <table>
+            <tr>
+              <td class="titletable">
+                <p class="SUBTITULO">C&oacute;digo</span> de Zona </p>
+              </td>
+              <td>
+                <p>Campo num&eacute;rico de 2 d&iacute;gitos, obligatorio, en el
+                  cual se registra el c&oacute;digo asignado
+                  por la entidad a cada una de las zonas que conforman las
+                  subdivisiones.</p>
+              </td>
+            </tr>
+          </table>
+          <table>
+            <tr>
+              <td class="titletable">
+                <p class="SUBTITULO">Duraci&oacute;n promedio
+                    </span></span></p>
+              </td>
+              <td>
+                <p>Campo num&eacute;rico de 2 d&iacute;gitos,obligatorio, en el
+                  cual se indica el tiempo promedio estimado
+                  para efectuar las visitas y actividades programadas por la
+                  entidad para cada una de las zonas definidas.
+                </p>
+              </td>
+            </tr>
+          </table>
+          <table>
+            <tr>
+              <td class="titletable">
+                <p class="SUBTITULO">Tiempo del desplazamiento </span></p>
+              </td>
+              <td>
+                <p>Campo num&eacute;rico de 2 posiciones, obligatorio,en el que
+                  se registra el Tiempo de desplazamiento
+                  estimado para cubrir la zona respectiva.</p>
+              </td>
+            </tr>
 
-        <tr>
-          <td class="titletable">
-            <p class="SUBTITULO"><b><span>Horas laborales diarias </span></b></p>
-          </td>
-          <td>
-            <p>Este campo num&eacute;rico de 2 d&iacute;gitos, obligatorio, permite indicar la cantidad de horas de
-              trabajo por d&iacute;a estimadas para efectuar las visitas y actividades programadas por la entidad.</p>
-          </td>
-        </tr>
+            <tr>
+              <td class="titletable">
+                <p class="SUBTITULO">Horas laborales diarias </span></p>
+              </td>
+              <td>
+                <p>Este campo num&eacute;rico de 2 d&iacute;gitos, obligatorio,
+                  permite indicar la cantidad de horas de
+                  trabajo por d&iacute;a estimadas para efectuar las visitas y
+                  actividades programadas por la entidad.</p>
+              </td>
+            </tr>
 
-        <tr>
-          <td class="titletable">
-            <p class="SUBTITULO"><b><span>Dias laborales semanales </span></b></p>
-          </td>
-          <td>
-            <p>Campo num&eacute;rico de 2 d&iacute;gitos, obligatorio, en el que se determina cuantos d&iacute;as de
-              trabajo a la semana se estiman para la realizaci&oacute;n de las visitas y actividades programadas en cada
-              zona.</p>
-          </td>
-        </tr>
+            <tr>
+              <td class="titletable">
+                <p class="SUBTITULO">Dias laborales semanales </span></p>
+              </td>
+              <td>
+                <p>Campo num&eacute;rico de 2 d&iacute;gitos, obligatorio, en el
+                  que se determina cuantos d&iacute;as de
+                  trabajo a la semana se estiman para la realizaci&oacute;n de
+                  las visitas y actividades programadas en cada
+                  zona.</p>
+              </td>
+            </tr>
 
-        <tr>
-          <td class="titletable">
-            <p class="SUBTITULO"><b><span>C&oacute;digo de la pr&oacute;xima zona </span></b></p>
-          </td>
-          <td>
-            <p>Este campo cuenta con lista de valores, alimentada a partir de la informaci&oacute;n de esta misma
-              opci&oacute;n, de la cual se selecciona la zona que debe ser cubierta o con la cual se debe continuar una
-              vez se finalicen las visitas y actividades programadas para la zona actual.</p>
-          </td>
-        </tr>
-      </table>
-      <p><span class="SUBTITULO"><span><b>Actualizar</b>:</span></span><span> Si el usuario invoca la
-          opci&oacute;n Actualizar se despliega un nuevo formulario
-          en el cual </span><span>los </span><span>&uacute;nicos campos modificables </span><span>son:
-        </span><span> Descripci&oacute;n</span><span>, Duraci&oacute;n promedio, Tiempo del desplazamiento, Horas
-          laborales diarias, D&iacute;as laborales semanales y C&oacute;digo de la pr&oacute;xima zona. </span></p>
-      <p class="TITLE"><img src="../img/AEF_001B10.PNG"></p>
-    </section>
-    <script src=" ../js/menu.js"></script>
-</body>
-<div id="footerContainer"></div>
-<script>
+            <tr>
+              <td class="titletable">
+                <p class="SUBTITULO">C&oacute;digo de la pr&oacute;xima
+                    zona </span></p>
+              </td>
+              <td>
+                <p>Este campo cuenta con lista de valores, alimentada a partir
+                  de la informaci&oacute;n de esta misma
+                  opci&oacute;n, de la cual se selecciona la zona que debe ser
+                  cubierta o con la cual se debe continuar una
+                  vez se finalicen las visitas y actividades programadas para la
+                  zona actual.</p>
+              </td>
+            </tr>
+          </table>
+          <p><span class="SUBTITULO">Actualizar:</span></span> Si el
+              usuario invoca la
+              opci&oacute;n Actualizar se despliega un nuevo formulario
+              en el cual </span>los </span>&uacute;nicos campos
+              modificables </span>son:
+            </span> Descripci&oacute;n</span>, Duraci&oacute;n
+              promedio, Tiempo del desplazamiento, Horas
+              laborales diarias, D&iacute;as laborales semanales y C&oacute;digo
+              de la pr&oacute;xima zona. </span></p>
+          <p class="TITLE"><img src="../img/AEF_001B10.PNG"></p>
+        </section>
+        <script src=" ../js/menu.js"></script>
+      </body>
+      <div id="footerContainer"></div>
+      <script>
   fetch('footer.html')
     .then(response => response.text())
     .then(html => {
       document.getElementById('footerContainer').innerHTML = html;
     });
 </script>
-</html>
+
+    </html>

@@ -17,26 +17,20 @@
       <img class="TITLE" src="../img/menu.PNG" alt="Botón de Menú ">
     </div>
   </header>
-  <div id="menuContainer"></div>
-    <script>
-      fetch('menu.html')
-        .then(response => response.text())
-        .then(html => {
-          document.getElementById('menuContainer').innerHTML = html;
-        });
-    </script>
+    <div id="menuContainer"></div>
+  <script>
+    fetch('menu.html')
+      .then(response => response.text())
+      .then(html => {
+        document.getElementById('menuContainer').innerHTML = html;
+      });
+  </script>
 
   <section>
     <div>
-      <table>
-        <tr>
-          <td>
-            <div>
+      
               <p class="TITLE">Tipos Garant&iacute;a </p>
-            </div>
-          </td>
-        </tr>
-      </table>
+
       <p class="PARRAFO">Mediante este formulario se permite la actualizaci&oacute;n
         o consulta de las diferentes clases o tipos de garant&iacute;a ofrecidas o
         exigidas a los clientes y que pueden avalar las obligaciones por ellos contra&iacute;das.
@@ -46,7 +40,7 @@
 
       <p class="PARRAFO">El formulario contiene las opciones Actualizar,
         Eliminar y Adicionar. </p>
-      <p class="PARRAFO"><span class="SUBTITULO"><b><span>Adicionar</span></b><span 
+      <p class="PARRAFO"><span class="SUBTITULO">Adicionar</span><span 
         >:</span><span 
         ></span></span><span 
         > 
@@ -56,16 +50,16 @@
             <p  class="TITLE">Descripci&oacute;n de campos</p>
             <table>
               <tr> 
-                <td class="titletable"><p class="SUBTITULO"><b><span 
-        >Garant&iacute;a</span></b></p></td>
+                <td class="titletable"><p class="SUBTITULO"><span 
+        >Garant&iacute;a</span></p></td>
                 <td><p  class="PARRAFO">Campo 
                     num&eacute;rico de 3 d&iacute;gitos, obligatorio, asociado a cada clase 
                     o tipo de garant&iacute;a v&aacute;lida para la entidad.
                   </p></td>
               </tr>
               <tr> 
-                <td class="titletable"><p class="SUBTITULO"><b><span 
-        >Descripci&oacute;n</span></b></p></td>
+                <td class="titletable"><p class="SUBTITULO"><span 
+        >Descripci&oacute;n</span></p></td>
                 <td><p  class="PARRAFO">En 
                     este campo alfanum&eacute;rico obligatorio, se registra el nombre o 
                     breve descriptivo del tipo o clase de garant&iacute;a codificada.
@@ -73,8 +67,8 @@
               </tr>
             </table>
             <div>
-              <p class="PARRAFO"><b ><span class="SUBTITULO"> 
-                Actualizar</span></b>: Si el usuario invoca la opci&oacute;n Actualizar 
+              <p class="PARRAFO"><span class="SUBTITULO"> 
+                Actualizar</span>: Si el usuario invoca la opci&oacute;n Actualizar 
                 se despliega un nuevo formulario en el cual el &uacute;nico campo modificable 
                 es la descripci&oacute;n<span
               

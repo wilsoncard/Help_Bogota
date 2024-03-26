@@ -1,104 +1,121 @@
 <!DOCTYPE html>
 <html lang="es">
 
-<head>
+  <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>BANKBU®</title>
     <link rel="stylesheet" href="../css/pages.css">
     <link rel="stylesheet" href="../css/style.css">
- <link rel="icon" href="../img/ACQUIRER-logo.JPG" type="image/x-icon">
-</head>
+    <link rel="icon" href="../img/ACQUIRER-logo.JPG" type="image/x-icon">
+  </head>
 
-<body>
+  <body>
     <header>
-        <img class="logo" src="../img/logoBankbu_.PNG" alt="Logo de Mi Empresa">
-        <div id="menuBtn">
-            <img class="TITLE"  src= "../img/menu.PNG" alt="Botón de Menú ">
-        </div>
+      <img class="logo" src="../img/logoBankbu_.PNG" alt="Logo de Mi Empresa">
+      <div id="menuBtn">
+        <img class="TITLE" src="../img/menu.PNG" alt="Botón de Menú ">
+      </div>
     </header>
-   <div id="menuContainer"></div>
+    <div id="menuContainer"></div>
     <script>
-      fetch('menu.html')
-        .then(response => response.text())
-        .then(html => {
-          document.getElementById('menuContainer').innerHTML = html;
-        });
-    </script>
+    fetch('menu.html')
+      .then(response => response.text())
+      .then(html => {
+        document.getElementById('menuContainer').innerHTML = html;
+      });
+  </script>
 
     <section>
-        <div> 
-            <table>
-              <tr> 
-                <td><div> 
-                    <p  class="TITLE">Par&aacute;metros de solicitudes</p>
-                    </div></td>
-              </tr>
-            </table>
-            <p class="PARRAFO"><span class="SUBTITULO">Variables cupo:</span>  Conjunto de 
-              campos en los que la entidad codifica las diferentes variables que pueden 
-              ser tomadas en cuenta por el sistema, en la f&oacute;rmula que realiza el 
-              c&aacute;lculo de los cupos, definida en la plantilla Asignaci&oacute;n cupos.</p>
-            <p class="PARRAFO">El formulario contiene las opciones Actualizar, Eliminar, 
-              y Adicionar. Adicionalmente, cuenta con un bot&oacute;n en la parte superior 
-              para volver al <a href="SOH_001B.html" >formulario principal</a>.</p>
-            <p class="TITLE"><img src="../img/SOF_001B22.PNG"  ></p>
-           
-            <p><span class="SUBTITULO">Adicionar:</span>  Si el usuario invoca la opci&oacute;n 
-              Adicionar se despliega un formulario con los siguientes campos<span >:</span></p>
-            <p class="TITLE"><img src="../img/SOF_001B23.PNG"228" ></p>
-            
-            <table>
-              <tr> 
-                <td class="titletable"><p class="SUBTITULO"><b>C&oacute;digo</b></p></td>
-                <td><p class="PARRAFO">Campo obligatorio que acepta 
-                    cualquier dato num&eacute;rico de m&aacute;ximo dos (2) d&iacute;gitos 
-                    sin decimales. No puede ser nulo.
-                  </p></td>
-              </tr>
-              <tr> 
-                <td  class="titletable" ><p class="SUBTITULO">Nombre</p></td>
-                <td><p class="PARRAFO">Este 
-                    campo obligatorio acepta cualquier dato alfanum&eacute;rico de m&aacute;ximo treinta 
-                    (30) caracteres, permite may&uacute;sculas y min&uacute;sculas. No puede 
-                    ser nulo.
-                  </p></td>
-              </tr>
-              <tr> 
-                <td class="titletable"><p class="SUBTITULO">Descripci&oacute;n</p></td>
-                <td><p class="PARRAFO">El 
-                    campo Descripci&oacute;n acepta cualquier dato alfanum&eacute;rico de 
-                    m&aacute;ximo dos mil (2.000) caracteres en conjunto, permite may&uacute;sculas 
-                    y min&uacute;sculas. Puede ser nulo.
-                  </p></td>
-              </tr>
-            </table>
-           
-            <p class="PARRAFO"><span class="PARRAFO"><span class="SUBTITULO">Actualizar:</span>  
-              Si el usuario invoca la opci&oacute;n Actualizar se despliega un nuevo formulario 
-              en el cual el &uacute;nico campo modificable es: Descripci&oacute;n.</span></p>
-            <p class="TITLE"><img src="../img/SOF_001B24.PNG"229" ></p>
-           
-            <p><b><b><span class="PARRAFO"><a href="SOH_001B.html" >Formulario 
-              principal</a> |</span></b></b><span class="PARRAFO"><b><b><span class="PARRAFO"><a href="SOH_001B1.html" >Filtros</a> 
-              |</span></b></b><a href="SOH_001B2.html" >Funcionarios</a> |<span > 
-              <b></b></span><a href="SOH_005B4.html"><b><b><span class="PARRAFO"></span></b></b> 
-              </a><a href="SOH_001B3.html" >Calificaci&oacute;n</a><b><b><span class="PARRAFO">|</span></b></b> 
-              <span class="PARRAFO"><a href="SOH_001B4.html" >Negaci&oacute;n</a></span>  
-              <b><b><span class="PARRAFO">|</span></b></b><span class="PARRAFO"><a href="SOH_001B6.html" >Globo 
-              de localizaci&oacute;n</a></span></span></p>
-            
-        </section>
-    <script src="../js/menu.js"></script>
+      <div>
 
-    <div id="footerContainer"></div>
-<script>
+        <p class="TITLE">Par&aacute;metros de solicitudes</p>
+
+        <p class="PARRAFO"><span class="SUBTITULO">Variables cupo:</span>
+          Conjunto de
+          campos en los que la entidad codifica las diferentes variables que
+          pueden
+          ser tomadas en cuenta por el sistema, en la f&oacute;rmula que realiza
+          el
+          c&aacute;lculo de los cupos, definida en la plantilla
+          Asignaci&oacute;n cupos.</p>
+        <p class="PARRAFO">El formulario contiene las opciones Actualizar,
+          Eliminar,
+          y Adicionar. Adicionalmente, cuenta con un bot&oacute;n en la parte
+          superior
+          para volver al <a href="SOH_001B.html">formulario principal</a>.</p>
+        <p class="TITLE"><img src="../img/SOF_001B22.PNG"></p>
+
+        <p><span class="SUBTITULO">Adicionar:</span> Si el usuario invoca la
+          opci&oacute;n
+          Adicionar se despliega un formulario con los siguientes
+          campos<span>:</span></p>
+        <p class="TITLE"><img src="../img/SOF_001B23.PNG"></p>
+
+        <table>
+          <tr>
+            <td class="titletable"><p class="SUBTITULO">C&oacute;digo</p></td>
+            <td><p class="PARRAFO">Campo obligatorio que acepta
+                cualquier dato num&eacute;rico de m&aacute;ximo dos (2)
+                d&iacute;gitos
+                sin decimales. No puede ser nulo.
+              </p></td>
+          </tr>
+          <tr>
+            <td class="titletable"><p class="SUBTITULO">Nombre</p></td>
+            <td><p class="PARRAFO">Este
+                campo obligatorio acepta cualquier dato alfanum&eacute;rico de
+                m&aacute;ximo treinta
+                (30) caracteres, permite may&uacute;sculas y min&uacute;sculas.
+                No puede
+                ser nulo.
+              </p></td>
+          </tr>
+          <tr>
+            <td class="titletable"><p
+                class="SUBTITULO">Descripci&oacute;n</p></td>
+            <td><p class="PARRAFO">El
+                campo Descripci&oacute;n acepta cualquier dato
+                alfanum&eacute;rico de
+                m&aacute;ximo dos mil (2.000) caracteres en conjunto, permite
+                may&uacute;sculas
+                y min&uacute;sculas. Puede ser nulo.
+              </p></td>
+          </tr>
+        </table>
+
+        <p class="PARRAFO"><span class="PARRAFO"><span
+              class="SUBTITULO">Actualizar:</span>
+            Si el usuario invoca la opci&oacute;n Actualizar se despliega un
+            nuevo formulario
+            en el cual el &uacute;nico campo modificable es:
+            Descripci&oacute;n.</span></p>
+        <p class="TITLE"><img src="../img/SOF_001B24.PNG"></p>
+
+        <p><span class="PARRAFO"><a href="SOH_001B.html">Formulario
+              principal</a> |</span><span class="PARRAFO"><span
+              class="PARRAFO"><a href="SOH_001B1.html">Filtros</a>
+              |</span><a href="SOH_001B2.html">Funcionarios</a> |<span>
+            </span><a href="SOH_005B4.html"><span class="PARRAFO"></span>
+            </a><a href="SOH_001B3.html">Calificaci&oacute;n</a><span
+              class="PARRAFO">|</span>
+            <span class="PARRAFO"><a
+                href="SOH_001B4.html">Negaci&oacute;n</a></span>
+            <span class="PARRAFO">|</span><span class="PARRAFO"><a
+                href="SOH_001B6.html">Globo
+                de localizaci&oacute;n</a></span></span></p>
+
+      </section>
+      <script src="../js/menu.js"></script>
+
+      <div id="footerContainer"></div>
+      <script>
   fetch('footer.html')
     .then(response => response.text())
     .then(html => {
       document.getElementById('footerContainer').innerHTML = html;
     });
 </script>
-</body>
+    </body>
 
-</html>
+  </html>

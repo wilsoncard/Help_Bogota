@@ -18,24 +18,20 @@
             <img class="TITLE"  src= "../img/menu.PNG" alt="Botón de Menú ">
         </div>
     </header>
-   <div id="menuContainer"></div>
-    <script>
-      fetch('menu.html')
-        .then(response => response.text())
-        .then(html => {
-          document.getElementById('menuContainer').innerHTML = html;
-        });
-    </script>
+      <div id="menuContainer"></div>
+  <script>
+    fetch('menu.html')
+      .then(response => response.text())
+      .then(html => {
+        document.getElementById('menuContainer').innerHTML = html;
+      });
+  </script>
 
     <section>
         <div> 
-            <table>
-              <tr> 
-                <td><div> 
+            
                     <p  class="TITLE">Desbloqueo de tarjetas refinanciadas</p>
-                    </div></td>
-              </tr>
-            </table>
+                    
             <p class="PARRAFO">Mediante esta funci&oacute;n se facilita la labor de levantamiento 
               del bloqueo de refinanciada sobre aquellas tarjetas que han transitado por 
               dicho estado, acorde a las pol&iacute;ticas que sobre el particular posea 
@@ -47,8 +43,8 @@
            
             <table>
               <tr> 
-                <td class="titletable"><p class="SUBTITULO"><b><span >N&uacute;mero 
-                    tarjeta </span></b></p></td>
+                <td class="titletable"><p class="SUBTITULO"><span >N&uacute;mero 
+                    tarjeta </span></p></td>
                 <td><p class="PARRAFO">El 
                     campo n&uacute;mero tarjeta admite cualquier dato alfanum&eacute;rico 
                     de m&aacute;ximo 23 caracteres.</p></td>

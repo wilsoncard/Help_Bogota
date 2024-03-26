@@ -1,112 +1,129 @@
 <!DOCTYPE html>
 <html lang="es">
 
-<head>
+  <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>BANKBU®</title>
     <link rel="stylesheet" href="../css/pages.css">
     <link rel="stylesheet" href="../css/style.css">
- <link rel="icon" href="../img/ACQUIRER-logo.JPG" type="image/x-icon">
-</head>
+    <link rel="icon" href="../img/ACQUIRER-logo.JPG" type="image/x-icon">
+  </head>
 
-<body>
+  <body>
     <header>
-        <img class="logo" src="../img/logoBankbu_.PNG" alt="Logo de Mi Empresa">
-        <div id="menuBtn">
-            <img class="TITLE"  src= "../img/menu.PNG" alt="Botón de Menú ">
-        </div>
+      <img class="logo" src="../img/logoBankbu_.PNG" alt="Logo de Mi Empresa">
+      <div id="menuBtn">
+        <img class="TITLE" src="../img/menu.PNG" alt="Botón de Menú ">
+      </div>
     </header>
-   <div id="menuContainer"></div>
+    <div id="menuContainer"></div>
     <script>
-      fetch('menu.html')
-        .then(response => response.text())
-        .then(html => {
-          document.getElementById('menuContainer').innerHTML = html;
-        });
-    </script>
+    fetch('menu.html')
+      .then(response => response.text())
+      .then(html => {
+        document.getElementById('menuContainer').innerHTML = html;
+      });
+  </script>
 
     <section>
-        <div> 
-            <table>
-              <tr> 
-                <td><div> 
-                    <p  class="TITLE">Par&aacute;metros solicitudes por producto</p>
-                    </div></td>
-              </tr>
-            </table>
-            <p class="PARRAFO"><span class="SUBTITULO">Relaci&oacute;n laboral producto:</span>  
-              Conjunto de campos en los que el sistema eval&uacute;a el tipo de relaci&oacute;n 
-              laboral que detente el solicitante, para que de acuerdo con los otros par&aacute;metros, 
-              se facilite la asignaci&oacute;n del cupo a &eacute;stas solicitudes.</p>
-            <p class="PARRAFO">El formulario contiene las opciones Actualizar, Eliminar, 
-              y Adicionar. Adicionalmente, tiene un bot&oacute;n en la parte superior para 
-              volver al formulario anterior: <a href="SOH_001B7d.html">Relaciones laborales</a>.</p>
-            <p class="TITLE"><img src="../img/SOF_001B51.PNG"306" ></p>
-            
-            <p  class="PARRAFO"><span class="SUBTITULO">Adicionar:</span>  Si 
-              el usuario invoca la opci&oacute;n Adicionar se despliega un formulario con 
-              los siguientes campos<span 
-        >:</span></p>
-            <p class="TITLE"><img src="../img/SOF_001B52.PNG"549" ></p>
-            
-            <table>
-              <tr> 
-                <td class="titletable"><p class="SUBTITULO">Calificaci&oacute;n 
-                    inicial </p></td>
-                <td><p class="PARRAFO">Campo 
-                    num&eacute;rico de 6 d&iacute;gitos obligatorio en el que debe registrarse 
-                    la calificaci&oacute;n inicial del rango acorde con el tipo de relaci&oacute;n 
-                    laboral y para el que se determina una f&oacute;rmula espec&iacute;fica.</p></td>
-              </tr>
-              <tr> 
-                <td class="titletable"><p class="SUBTITULO">Calificaci&oacute;n 
-                    final </p></td>
-                <td><p class="PARRAFO">En 
-                    este campo num&eacute;rico de 6 d&iacute;gitos, obligatorio, debe registrarse 
-                    la calificaci&oacute;n final del rango acorde con el tipo de relaci&oacute;n 
-                    laboral y para el que se determina una f&oacute;rmula espec&iacute;fica.</p></td>
-              </tr>
-              <tr> 
-                <td class="titletable"><p class="SUBTITULO">F&oacute;rmula 
-                    cupo </p></td>
-                <td><p class="PARRAFO">Campo 
-                    en el que se define la combinatoria u operaciones que pueden darse entre 
-                    o con las variables del cupo, parametrizadas en el tab del mismo nombre, 
-                    antecedidas, cada una por la letra V, y establecer la f&oacute;rmula 
-                    mediante la que el sistema obtiene el valor del cupo a asignar de acuerdo 
-                    a los rango de calificaci&oacute;n dados a cada tipo de relaci&oacute;n 
-                    laboral y para el caso de Crediagil tambi&eacute;n se tiene en cuenta 
-                    los productos que posee con la entidad.</p></td>
-              </tr>
-            </table>
+      <div>
 
-            <p  class="PARRAFO"><span class="PARRAFO"><span class="SUBTITULO">Actualizar:</span>  
-              Si el usuario invoca la opci&oacute;n Actualizar se despliega un nuevo formulario 
-              en el cual los campos modificables son: Calificaci&oacute;n inicial, Calificaci&oacute;n 
-              final, y F&oacute;rmula cupo.</span></p>
-            <p class="TITLE"><img src="../img/SOF_001B53.PNG"549" ></p>
-           
-           
-            <p><a href="SOH_001B7.html">Solicitudes</a><span
-              ><b> | </b></span><a href="SOH_001B7b.html">Etapas</a><b><span > 
-              | </span></b><a href="SOH_001B7c.html">Cupos extendidos</a><span
-              ><b> | </b></span><a href="SOH_001B7e.html">Cupos 
-              m&iacute;n y m&aacute;x por rango</a><b><span > 
-              <b>|</b></span></b><span ></span><a href="SOH_001B7f.html">Copiar 
-              par&aacute;metros</a><span ></span></p>
-            
-        </section>
-    <script src="../js/menu.js"></script>
+        <p class="TITLE">Par&aacute;metros solicitudes por producto</p>
 
-    <div id="footerContainer"></div>
-<script>
+        <p class="PARRAFO"><span class="SUBTITULO">Relaci&oacute;n laboral
+            producto:</span>
+          Conjunto de campos en los que el sistema eval&uacute;a el tipo de
+          relaci&oacute;n
+          laboral que detente el solicitante, para que de acuerdo con los otros
+          par&aacute;metros,
+          se facilite la asignaci&oacute;n del cupo a &eacute;stas
+          solicitudes.</p>
+        <p class="PARRAFO">El formulario contiene las opciones Actualizar,
+          Eliminar,
+          y Adicionar. Adicionalmente, tiene un bot&oacute;n en la parte
+          superior para
+          volver al formulario anterior: <a href="SOH_001B7d.html">Relaciones
+            laborales</a>.</p>
+        <p class="TITLE"><img src="../img/SOF_001B51.PNG"></p>
+
+        <p class="PARRAFO"><span class="SUBTITULO">Adicionar:</span> Si
+          el usuario invoca la opci&oacute;n Adicionar se despliega un
+          formulario con
+          los siguientes campos<span>:</span></p>
+        <p class="TITLE"><img src="../img/SOF_001B52.PNG"></p>
+
+        <table>
+          <tr>
+            <td class="titletable"><p class="SUBTITULO">Calificaci&oacute;n
+                inicial </p></td>
+            <td><p class="PARRAFO">Campo
+                num&eacute;rico de 6 d&iacute;gitos obligatorio en el que debe
+                registrarse
+                la calificaci&oacute;n inicial del rango acorde con el tipo de
+                relaci&oacute;n
+                laboral y para el que se determina una f&oacute;rmula
+                espec&iacute;fica.</p></td>
+          </tr>
+          <tr>
+            <td class="titletable"><p class="SUBTITULO">Calificaci&oacute;n
+                final </p></td>
+            <td><p class="PARRAFO">En
+                este campo num&eacute;rico de 6 d&iacute;gitos, obligatorio,
+                debe registrarse
+                la calificaci&oacute;n final del rango acorde con el tipo de
+                relaci&oacute;n
+                laboral y para el que se determina una f&oacute;rmula
+                espec&iacute;fica.</p></td>
+          </tr>
+          <tr>
+            <td class="titletable"><p class="SUBTITULO">F&oacute;rmula
+                cupo </p></td>
+            <td><p class="PARRAFO">Campo
+                en el que se define la combinatoria u operaciones que pueden
+                darse entre
+                o con las variables del cupo, parametrizadas en el tab del mismo
+                nombre,
+                antecedidas, cada una por la letra V, y establecer la
+                f&oacute;rmula
+                mediante la que el sistema obtiene el valor del cupo a asignar
+                de acuerdo
+                a los rango de calificaci&oacute;n dados a cada tipo de
+                relaci&oacute;n
+                laboral y para el caso de Crediagil tambi&eacute;n se tiene en
+                cuenta
+                los productos que posee con la entidad.</p></td>
+          </tr>
+        </table>
+
+        <p class="PARRAFO"><span class="PARRAFO"><span
+              class="SUBTITULO">Actualizar:</span>
+            Si el usuario invoca la opci&oacute;n Actualizar se despliega un
+            nuevo formulario
+            en el cual los campos modificables son: Calificaci&oacute;n inicial,
+            Calificaci&oacute;n
+            final, y F&oacute;rmula cupo.</span></p>
+        <p class="TITLE"><img src="../img/SOF_001B53.PNG"></p>
+
+        <p><a href="SOH_001B7.html">Solicitudes</a><span> | </span><a
+            href="SOH_001B7b.html">Etapas</a><span>
+            | </span><a href="SOH_001B7c.html">Cupos extendidos</a><span> |
+          </span><a href="SOH_001B7e.html">Cupos
+            m&iacute;n y m&aacute;x por rango</a><span>
+            |</span><span></span><a href="SOH_001B7f.html">Copiar
+            par&aacute;metros</a><span></span></p>
+
+      </section>
+      <script src="../js/menu.js"></script>
+
+      <div id="footerContainer"></div>
+      <script>
   fetch('footer.html')
     .then(response => response.text())
     .then(html => {
       document.getElementById('footerContainer').innerHTML = html;
     });
 </script>
-</body>
+    </body>
 
-</html>
+  </html>

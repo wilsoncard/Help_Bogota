@@ -18,26 +18,20 @@
       <img class="TITLE" src="../img/menu.PNG" alt="Botón de Menú ">
     </div>
   </header>
-  <div id="menuContainer"></div>
-    <script>
-      fetch('menu.html')
-        .then(response => response.text())
-        .then(html => {
-          document.getElementById('menuContainer').innerHTML = html;
-        });
-    </script>
+    <div id="menuContainer"></div>
+  <script>
+    fetch('menu.html')
+      .then(response => response.text())
+      .then(html => {
+        document.getElementById('menuContainer').innerHTML = html;
+      });
+  </script>
 
   <section>
     <div>
-      <table>
-        <tr>
-          <td>
-            <div>
+      
               <p class="TITLE">Registro llaves encripci&oacute;n</p>
-            </div>
-          </td>
-        </tr>
-      </table>
+
       <p class="PARRAFO">Esta función registra en el sistema las llaves de PIN, CVV, CVV2, PVV y TRXFER. Estas llaves
         son compiladas y almacenadas en una librería especial, las cuales son tomadas por las rutinas que calculan PIN,
         CVV, CVV2, y PVV, utilizadas durante los procesos de emisión de nuevas tarjetas y sobreflex.</p>
@@ -52,7 +46,7 @@
       <table>
         <tr>
           <td class="titletable">
-            <p class="SUBTITULO"><b><span>Marca</span></b></p>
+            <p class="SUBTITULO">Marca</span></p>
           </td>
           <td>
             <p class="PARRAFO">Este
@@ -65,13 +59,13 @@
       </table>
 
       <p class="PARRAFO"><span class="SUBTITULO">Adicionar:</span>  Si el usuario invoca la opci&oacute;n Adicionar se
-        despliega un formulario con los siguientes campos<span>:</span></p>
+        despliega un formulario con los siguientes campos:</span></p>
       <p class="TITLE"><img src="../img/COF_021B2.PNG"></p>
 
       <table>
         <tr>
           <td class="titletable">
-            <p class="SUBTITULO"><b><span>Bin</span></b></p>
+            <p class="SUBTITULO">Bin</span></p>
           </td>
           <td>
             <p class="PARRAFO">Campo
@@ -81,7 +75,7 @@
         </tr>
         <tr>
           <td class="titletable">
-            <p class="SUBTITULO"><b>Llave</b></p>
+            <p class="SUBTITULO">Llave</p>
           </td>
           <td>
             <p class="PARRAFO">En
@@ -90,7 +84,7 @@
         </tr>
         <tr>
           <td class="titletable">
-            <p class="SUBTITULO"><b>Nombre llave</b></p>
+            <p class="SUBTITULO">Nombre llave</p>
           </td>
           <td>
             <p class="PARRAFO">En
@@ -99,8 +93,8 @@
         </tr>
         <tr>
           <td class="titletable">
-            <p class="SUBTITULO">Criptograma<b><span>
-                </span></b></p>
+            <p class="SUBTITULO">Criptograma
+                </span></p>
           </td>
           <td>
             <p class="PARRAFO">Campo
@@ -114,7 +108,7 @@
         <tr>
           <td class="titletable">
             <p class="SUBTITULO">Confirmar
-              criptograma <b><span></span></b></p>
+              criptograma </p>
           </td>
           <td>
             <p class="PARRAFO">Una
@@ -127,8 +121,8 @@
       </table>
       <p class="PARRAFO"><span class="PARRAFO"><span class="SUBTITULO">Actualizar:</span> 
           Si el usuario invoca la opci&oacute;n Actualizar se despliega un nuevo formulario
-          en el cual los &uacute;nicos campos modificables son: Bin, Criptograma <b><span>
-            </span></b>, y Confirmar criptograma.</span></p>
+          en el cual los &uacute;nicos campos modificables son: Bin, Criptograma 
+            </span>, y Confirmar criptograma.</span></p>
       <p class="TITLE"><img src="../img/COF_021B3.PNG"></p>
 
   </section>

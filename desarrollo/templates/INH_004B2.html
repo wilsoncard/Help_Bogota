@@ -19,24 +19,20 @@
             <img class="TITLE"  src= "../img/menu.PNG" alt="Botón de Menú ">
         </div>
     </header>
-   <div id="menuContainer"></div>
-    <script>
-      fetch('menu.html')
-        .then(response => response.text())
-        .then(html => {
-          document.getElementById('menuContainer').innerHTML = html;
-        });
-    </script>
+      <div id="menuContainer"></div>
+  <script>
+    fetch('menu.html')
+      .then(response => response.text())
+      .then(html => {
+        document.getElementById('menuContainer').innerHTML = html;
+      });
+  </script>
 
     <section>
         <div> 
-            <table>
-              <tr> 
-                <td><div> 
+            
                     <p  class="TITLE">Captura de Movimientos oficina</p>
-                    </div></td>
-              </tr>
-            </table>
+                    
             <p class="PARRAFO"><span class="SUBTITULO">Adicionar Avances:</span>  Grupo de 
               datos que contiene la informaci&oacute;n necesaria correspondiente a esta 
               clase de transacci&oacute;n. Los campos relacionados con la tapa deben capturarse 
@@ -55,13 +51,13 @@
                     en el filtro inicial.</p></td>
               </tr>
               <tr> 
-                <td class="titletable"><p class="SUBTITULO"><b>Oficina</b></p></td>
+                <td class="titletable"><p class="SUBTITULO">Oficina</p></td>
                 <td><p class="PARRAFO">Campo 
                     en el que se muestra el c&oacute;digo de la oficina y descripci&oacute;n 
                     de la oficina para la cual se va a capturar.</p></td>
               </tr>
               <tr> 
-                <td class="titletable"><p class="SUBTITULO"><b>Marca</b></p></td>
+                <td class="titletable"><p class="SUBTITULO">Marca</p></td>
                 <td><p class="PARRAFO">Campo 
                     que posee lista de valores poblada mediante la opci&oacute;n <a href="NUH_033B.html" >Franquicias 
                     </a>del N&uacute;cleo. Si la entidad requiere generar contabilidad por 
@@ -69,7 +65,7 @@
                     de diferentes franquicias.</p></td>
               </tr>
               <tr> 
-                <td class="titletable"><p class="SUBTITULO"><b>Establecimiento</b></p></td>
+                <td class="titletable"><p class="SUBTITULO">Establecimiento</p></td>
                 <td><p class="PARRAFO">Campo 
                     alfanum&eacute;rico de 11 d&iacute;gitos, obligatorio, en el que se 
                     registra el c&oacute;digo &uacute;nico que identifica, ante la franquicia, 
@@ -86,15 +82,15 @@
                     total del campo.</p></td>
               </tr>
               <tr> 
-                <td class="titletable"><p class="SUBTITULO"><b>N&uacute;mero 
-                    comprobante </b></p></td>
+                <td class="titletable"><p class="SUBTITULO">N&uacute;mero 
+                    comprobante </p></td>
                 <td><p class="PARRAFO">Campo 
                     num&eacute;rico de 7 d&iacute;gitos, no obligatorio, en el que se registra 
                     el n&uacute;mero del voucher o comprobante correspondiente el Avance.</p></td>
               </tr>
               <tr> 
-                <td class="titletable"><p class="SUBTITULO"><b>Fecha 
-                    comprobante </b></p></td>
+                <td class="titletable"><p class="SUBTITULO">Fecha 
+                    comprobante </p></td>
                 <td><p class="PARRAFO">Campo 
                     tipo fecha, en formato DDMMYYYY, debe contener la fecha f&iacute;sica 
                     de cada uno de los comprobantes, es la base para determinar la antig&uuml;edad 
@@ -103,15 +99,15 @@
                     operativos</a>.</p></td>
               </tr>
               <tr> 
-                <td class="titletable"><p class="SUBTITULO"><b>N&uacute;mero 
-                    de autorizaci&oacute;n</b></p></td>
+                <td class="titletable"><p class="SUBTITULO">N&uacute;mero 
+                    de autorizaci&oacute;n</p></td>
                 <td><p class="PARRAFO">Campo 
                     alfanum&eacute;rico de 6 d&iacute;gitos, no obligatorio, en el que se 
                     registra el n&uacute;mero de autorizaci&oacute;n del Avance 
                     asignado por el sistema o por la franquicia.</p></td>
               </tr>
               <tr> 
-                <td class="titletable"><p class="SUBTITULO"><b>Plazo</b></p></td>
+                <td class="titletable"><p class="SUBTITULO">Plazo</p></td>
                 <td><p class="PARRAFO">Campo 
                     num&eacute;rico de 2 d&iacute;gitos, no obligatorio, en el que se relaciona 
                     la cantidad de periodos solicitados por el tarjetahabiente en el voucher 
@@ -120,7 +116,7 @@
                     de <a href="MEH_003B.html" >Transacciones por empresa</a> del N&uacute;cleo.</p></td>
               </tr>
               <tr> 
-                <td class="titletable"><p class="SUBTITULO"><b>Causal</b></p></td>
+                <td class="titletable"><p class="SUBTITULO">Causal</p></td>
                 <td><p class="PARRAFO">En 
                     el momento de la captura del comprobante el usuario puede evidenciar 
                     inconsistencias en los comprobantes, tales como falta de firma, falta 
@@ -131,7 +127,7 @@
                     selecciona la que se ajusta al evento sucedido.</p></td>
               </tr>
               <tr> 
-                <td class="titletable"><p class="SUBTITULO"><b>Total</b></p></td>
+                <td class="titletable"><p class="SUBTITULO">Total</p></td>
                 <td><p class="PARRAFO">Campo 
                     num&eacute;rico con capacidad para una suma hasta de 16 d&iacute;gitos 
                     incluidos dos decimales, no obligatorio, que contiene el monto total 
@@ -149,10 +145,10 @@
             
                 
             <p><a href="INH_004B.html">Formulario principal</a><span
-              ><b> |</b></span>  <a href="INH_004B1.html">Compras</a><span
-              ></span><b><span > 
-              | </span></b><a href="INH_004B3.html">Impuestos</a><span
-              ><b> | </b></span><a href="INH_004B4.html">Pagos</a></p>
+              > |</span>  <a href="INH_004B1.html">Compras</a><span
+              ></span><span > 
+              | </span><a href="INH_004B3.html">Impuestos</a><span
+              > | </span><a href="INH_004B4.html">Pagos</a></p>
             
         </section>
     <script src="../js/menu.js"></script>

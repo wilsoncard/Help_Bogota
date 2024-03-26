@@ -18,27 +18,21 @@
       <img class="TITLE" src="../img/menu.PNG" alt="Botón de Menú ">
     </div>
   </header>
-  <div id="menuContainer"></div>
-    <script>
-      fetch('menu.html')
-        .then(response => response.text())
-        .then(html => {
-          document.getElementById('menuContainer').innerHTML = html;
-        });
-    </script>
+    <div id="menuContainer"></div>
+  <script>
+    fetch('menu.html')
+      .then(response => response.text())
+      .then(html => {
+        document.getElementById('menuContainer').innerHTML = html;
+      });
+  </script>
 
   <section>
     <div>
-      <table>
-        <tr>
-          <td>
-            <div>
+      
               <p class="TITLE">Motivos de devoluci&oacute;n voluntaria
               </p>
-            </div>
-          </td>
-        </tr>
-      </table>
+
       <p class="PARRAFO">Esta funci&oacute;n habilita la consulta
         y mantenimiento de la tabla que almacena los c&oacute;digos de los diversos
         motivos que puede argumentar un cliente para devolver el pl&aacute;stico de
@@ -52,7 +46,7 @@
 
       <p class="PARRAFO">El formulario contiene las opciones Actualizar,
         Eliminar y Adicionar. </p>
-      <p class="PARRAFO"><span class="SUBTITULO"><b><span>Adicionar</span></b><span 
+      <p class="PARRAFO"><span class="SUBTITULO">Adicionar</span><span 
         >:</span><span 
         ></span></span><span 
         > 
@@ -62,15 +56,15 @@
             <p  class="TITLE">Descripci&oacute;n de campos</p>
             <table>
               <tr> 
-                <td class="titletable"><p class="SUBTITULO"><b><span 
-        >C&oacute;digo</span></b></p></td>
+                <td class="titletable"><p class="SUBTITULO"><span 
+        >C&oacute;digo</span></p></td>
                 <td><p  class="PARRAFO">Campo 
                     num&eacute;rico de dos posiciones, obligatorio, asignado a cada uno 
                     de los motivos de devoluci&oacute;n de la tarjeta. </p></td>
               </tr>
               <tr> 
-                <td class="titletable"><p class="SUBTITULO"><b><span 
-        >Descripci&oacute;n</span></b></p></td>
+                <td class="titletable"><p class="SUBTITULO"><span 
+        >Descripci&oacute;n</span></p></td>
                 <td><p  class="PARRAFO">Campo 
                     alfanum&eacute;rico obligatorio, que almacena en un m&aacute;ximo de 
                     30 caracteres, el motivo o raz&oacute;n de la devoluci&oacute;n o cancelaci&oacute;n 
@@ -80,8 +74,8 @@
               </tr>
             </table>
             <div>
-              <p class="PARRAFO"><b ><span class="SUBTITULO"> 
-                Actualizar</span></b>: Si el usuario invoca la opci&oacute;n Actualizar 
+              <p class="PARRAFO"><span class="SUBTITULO"> 
+                Actualizar</span>: Si el usuario invoca la opci&oacute;n Actualizar 
                 se despliega un nuevo formulario en el cual el &uacute;nico campo modificable 
                 es la descripci&oacute;n<span
               

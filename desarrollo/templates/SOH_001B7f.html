@@ -1,88 +1,94 @@
 <!DOCTYPE html>
 <html lang="es">
 
-<head>
+  <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>BANKBU®</title>
     <link rel="stylesheet" href="../css/pages.css">
     <link rel="stylesheet" href="../css/style.css">
- <link rel="icon" href="../img/ACQUIRER-logo.JPG" type="image/x-icon">
-</head>
+    <link rel="icon" href="../img/ACQUIRER-logo.JPG" type="image/x-icon">
+  </head>
 
-<body>
+  <body>
     <header>
-        <img class="logo" src="../img/logoBankbu_.PNG" alt="Logo de Mi Empresa">
-        <div id="menuBtn">
-            <img class="TITLE"  src= "../img/menu.PNG" alt="Botón de Menú ">
-        </div>
+      <img class="logo" src="../img/logoBankbu_.PNG" alt="Logo de Mi Empresa">
+      <div id="menuBtn">
+        <img class="TITLE" src="../img/menu.PNG" alt="Botón de Menú ">
+      </div>
     </header>
-   <div id="menuContainer"></div>
+    <div id="menuContainer"></div>
     <script>
-      fetch('menu.html')
-        .then(response => response.text())
-        .then(html => {
-          document.getElementById('menuContainer').innerHTML = html;
-        });
-    </script>
+    fetch('menu.html')
+      .then(response => response.text())
+      .then(html => {
+        document.getElementById('menuContainer').innerHTML = html;
+      });
+  </script>
 
     <section>
-        <div> 
-            <table>
-              <tr> 
-                <td><div> 
-                    <p  class="TITLE">Par&aacute;metros solicitudes por producto</p>
-                    </div></td>
-              </tr>
-            </table>
-            <p class="PARRAFO"><span class="SUBTITULO">Copiar par&aacute;metros:</span>  funcionalidad 
-              de significativo valor al permitir replicar la parametrizaci&oacute;n realizada 
-              de todos los tipos de solicitud del producto seleccionado a otro producto. 
-            </p>
-            <p class="PARRAFO">El formulario contiene las opciones Actualizar, Eliminar, 
-              y Adicionar. Adicionalmente, cuenta con un bot&oacute;n en la parte superior 
-              para volver al formulario de <a href="SOH_001B7.html">Solicitudes</a>.</p>
-           
-            <p class="TITLE"><img src="../img/SOF_001B57.PNG"465" height="79"></p>
-            
-            <table>
-              <tr> 
-                <td class="titletable"><p class="SUBTITULO">Producto 
-                    origen </p></td>
-                <td><p class="PARRAFO">En 
-                    este campo se despliegan todos los Productos definidos por la entidad 
-                    y de la lista se debe seleccionar aquel del cual se desea copiar los 
-                    par&aacute;metros. </p></td>
-              </tr>
-              <tr> 
-                <td class="titletable"><p class="SUBTITULO">Producto 
-                    destino </p></td>
-                <td><p class="PARRAFO">En 
-                    este campo se despliegan todos los Productos definidos por la entidad 
-                    y de la lista se debe seleccionar aquel para el cual se desea copiar 
-                    los par&aacute;metros. </p></td>
-              </tr>
-            </table>
+      <div>
 
-           
-            <p><a href="SOH_001B7.html">Solicitudes</a><span
-              ><b> | </b></span><a href="SOH_001B7b.html">Etapas</a><b><span > 
-              | </span></b><a href="SOH_001B7c.html">Cupos extendidos</a><b></b><span
-              ><b> | </b></span><a href="SOH_001B7d.html">Relaciones 
-              laborales</a><b><span ><b>|</b></span></b><span > 
-              </span><a href="SOH_001B7e.html">Cupos m&iacute;n y m&aacute;x por rango</a><b></b><span > 
-              </span></p>
-        </section>
-    <script src="../js/menu.js"></script>
+        <p class="TITLE">Par&aacute;metros solicitudes por producto</p>
 
-    <div id="footerContainer"></div>
-<script>
+        <p class="PARRAFO"><span class="SUBTITULO">Copiar
+            par&aacute;metros:</span> funcionalidad
+          de significativo valor al permitir replicar la parametrizaci&oacute;n
+          realizada
+          de todos los tipos de solicitud del producto seleccionado a otro
+          producto.
+        </p>
+        <p class="PARRAFO">El formulario contiene las opciones Actualizar,
+          Eliminar,
+          y Adicionar. Adicionalmente, cuenta con un bot&oacute;n en la parte
+          superior
+          para volver al formulario de <a
+            href="SOH_001B7.html">Solicitudes</a>.</p>
+
+        <p class="TITLE"><img src="../img/SOF_001B57.PNG"></p>
+
+        <table>
+          <tr>
+            <td class="titletable"><p class="SUBTITULO">Producto
+                origen </p></td>
+            <td><p class="PARRAFO">En
+                este campo se despliegan todos los Productos definidos por la
+                entidad
+                y de la lista se debe seleccionar aquel del cual se desea copiar
+                los
+                par&aacute;metros. </p></td>
+          </tr>
+          <tr>
+            <td class="titletable"><p class="SUBTITULO">Producto
+                destino </p></td>
+            <td><p class="PARRAFO">En
+                este campo se despliegan todos los Productos definidos por la
+                entidad
+                y de la lista se debe seleccionar aquel para el cual se desea
+                copiar
+                los par&aacute;metros. </p></td>
+          </tr>
+        </table>
+
+        <p><a href="SOH_001B7.html">Solicitudes</a><span> | </span><a
+            href="SOH_001B7b.html">Etapas</a><span>
+            | </span><a href="SOH_001B7c.html">Cupos extendidos</a><span> |
+          </span><a href="SOH_001B7d.html">Relaciones
+            laborales</a><span>|</span><span>
+          </span><a href="SOH_001B7e.html">Cupos m&iacute;n y m&aacute;x por
+            rango</a><span>
+          </span></p>
+      </section>
+      <script src="../js/menu.js"></script>
+
+      <div id="footerContainer"></div>
+      <script>
   fetch('footer.html')
     .then(response => response.text())
     .then(html => {
       document.getElementById('footerContainer').innerHTML = html;
     });
 </script>
-</body>
+    </body>
 
-</html>
+  </html>

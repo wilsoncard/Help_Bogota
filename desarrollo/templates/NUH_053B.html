@@ -17,61 +17,52 @@
             <img class="TITLE"  src= "../img/menu.PNG" alt="Botón de Menú ">
         </div>
     </header>
-   <div id="menuContainer"></div>
-    <script>
-      fetch('menu.html')
-        .then(response => response.text())
-        .then(html => {
-          document.getElementById('menuContainer').innerHTML = html;
-        });
-    </script>
+      <div id="menuContainer"></div>
+  <script>
+    fetch('menu.html')
+      .then(response => response.text())
+      .then(html => {
+        document.getElementById('menuContainer').innerHTML = html;
+      });
+  </script>
 
     <section>
         <div> 
-            <table>
-              <tr> 
-                <td><div> 
+            
                     <p  class="TITLE">Ubicaci&oacute;n de archivos</p>
-                  </div></td>
-              </tr>
-            </table>
+                  
             <p class="PARRAFO" >Desde este formulario, se habilita 
               la consulta y mantenimiento de la tabla que contiene la informaci&oacute;n 
               de la ruta o localizaci&oacute;n de los distintos archivos de entrada principalmente 
               los cargues, los de salida e incluso los del log (auditoria) asociados a cada 
               uno de los diferentes roles del aplicativo.
               </span></p>
-            <p class="TITLE"><img src="../img/NUF_053E.PNG"760" height="396"></p>
+            <p class="TITLE"><img src="../img/NUF_053E.PNG"></p>
             
             <p  class="PARRAFO">El formulario contiene las opciones Actualizar, 
               Eliminar, Adicionar y Detalle. </p>
-            <p  class="PARRAFO"><span class="SUBTITULO"><b ><span            '>Adicionar</span></b><span 
-        >:</span><span 
-        ></span></span><span 
-        > 
+            <p  class="PARRAFO"><span class="SUBTITULO"><span>Adicionar</span><span>:</span><span 
+        ></span></span><span> 
               Si el usuario invoca la opci&oacute;n Adicionar se despliega un nuevo formulario</span></p>
-            <p class="TITLE"><img src="../img/NUF_053E1.PNG"436" height="507"></p>
+            <p class="TITLE"><img src="../img/NUF_053E1.PNG"></p>
             <p  class="TITLE">Descripci&oacute;n de campos</p>
             <table>
               <tr> 
-                <td class="titletable"><p class="SUBTITULO"><b><span 
-        >M&oacute;dulo</span></b></p></td>
+                <td class="titletable"><p class="SUBTITULO"><span>M&oacute;dulo</span></p></td>
                 <td><p  class="PARRAFO">Campo 
                     alfanum&eacute;rico, obligatorio, en el que se registra la abreviatura 
                     del m&oacute;dulo para el cual se va a definir la ubicaci&oacute;n de 
                     archivos. </p></td>
               </tr>
               <tr> 
-                <td  class="titletable" ><p class="SUBTITULO"><b><span 
-        >Ubicaci&oacute;n entrada</span></b> base datos </p></td>
+                <td  class="titletable" ><p class="SUBTITULO"><span>Ubicaci&oacute;n entrada</span> base datos </p></td>
                 <td><p  class="PARRAFO">Campo 
                     alfanum&eacute;rico de 250 d&iacute;gitos, no obligatorio, en el que 
                     se registra la direcci&oacute;n o ruta de los archivos externos que 
                     alimentan al sistema. </p></td>
               </tr>
               <tr> 
-                <td  class="titletable" ><p class="SUBTITULO"><b><span 
-        >Ubicaci&oacute;n salida</span></b> base datos </p></td>
+                <td  class="titletable" ><p class="SUBTITULO"><span>Ubicaci&oacute;n salida</span> base datos </p></td>
                 <td><p  class="PARRAFO">En 
                     este campo alfanum&eacute;rico de 250 d&iacute;gitos, no obligatorio, 
                     se registra la direcci&oacute;n o ruta en la que se sit&uacute;an los 
@@ -81,8 +72,7 @@
               </tr>
            
               <tr> 
-                <td  class="titletable" ><p class="SUBTITULO"><b><span 
-        >Ubicaci&oacute;n reportes </span></b>base datos</p></td>
+                <td  class="titletable" ><p class="SUBTITULO"><span>Ubicaci&oacute;n reportes </span>base datos</p></td>
                 <td><p  class="PARRAFO">Campo 
                     alfanum&eacute;rico de 250 d&iacute;gitos, no obligatorio, en el que 
                     se registra la direcci&oacute;n o ruta en la que se sit&uacute;an los 
@@ -92,18 +82,16 @@
               </tr>
            
               <tr> 
-                <td  class="titletable" ><p class="SUBTITULO"><b><span 
-        >Ubicaci&oacute;n 
-                     log</span></b> base datos </p></td>
+                <td  class="titletable" ><p class="SUBTITULO"><span>Ubicaci&oacute;n 
+                     log</span> base datos </p></td>
                 <td><p  class="PARRAFO">En 
                     este campo alfanum&eacute;rico de 250 d&iacute;gitos, no obligatorio, 
                     se registra la direcci&oacute;n o ruta en la cual se guardan los archivos 
                     log de auditoria generados.</p></td>
               </tr>
            
-                <td  class="titletable" ><p class="SUBTITULO"><b><span 
-        >Usa 
-                    log corto</span></b></p></td>
+                <td  class="titletable" ><p class="SUBTITULO"><span>Usa 
+                    log corto</span></p></td>
                 <td><p  class="PARRAFO">Campo 
                     obligatorio tipo combo con las opciones Si o No. Cuando est&aacute; 
                     marcado Si, el sistema genera un log muy breve, y si el valor es No 
@@ -112,9 +100,8 @@
               </tr>
            
               <tr>
-                <td  class="titletable" ><p class="SUBTITULO"><b><span 
-        >Adici&oacute;n 
-                  archivo log</span></b></p></td>
+                <td  class="titletable" ><p class="SUBTITULO"><span>Adici&oacute;n 
+                  archivo log</span></p></td>
                 <td><p  class="PARRAFO">En 
                   este campo tipo combo, obligatorio, la entidad puede establecer si el 
                   log es actualizado cada vez que se carga o genera un archivo o si se 
@@ -123,18 +110,18 @@
               </tr>
             </table>
             <div>
-              <p class="PARRAFO"><b ><span class="SUBTITULO"> 
-                Actualizar</span></b>: Si el usuario selecciona un registro e invoca la 
+              <p class="PARRAFO"><span class="SUBTITULO"> 
+                Actualizar</span>: Si el usuario selecciona un registro e invoca la 
                 opci&oacute;n Actualizar se despliega un formulario en el cual el &uacute;nico 
                 campo NO modificable es el M&oacute;dulo.
               </p>
-             <p class="TITLE"><img src="../img/NUF_053E2.PNG"366" height="503"></p>
-              .
-              <p class="PARRAFO" ><b ><span class="SUBTITULO">Detalle</span></b>: 
+             <p class="TITLE"><img src="../img/NUF_053E2.PNG"></p>
+              
+              <p class="PARRAFO" ><span class="SUBTITULO">Detalle</span>: 
               si el usuario selecciona un registro e invoca la opci&oacute;n Detalle se 
               despliega un formulario con toda la informaci&oacute;n del registro y en el 
               cual ninguno de sus campos es modificable</span> .</p>
-             <p class="TITLE"><img src="../img/NUF_053E3.PNG"748" height="232"></p>
+             <p class="TITLE"><img src="../img/NUF_053E3.PNG"></p>
               </section>
     <script src="../js/menu.js"></script>
 

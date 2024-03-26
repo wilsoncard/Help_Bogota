@@ -18,24 +18,20 @@
             <img class="TITLE"  src= "../img/menu.PNG" alt="Botón de Menú ">
         </div>
     </header>
-   <div id="menuContainer"></div>
-    <script>
-      fetch('menu.html')
-        .then(response => response.text())
-        .then(html => {
-          document.getElementById('menuContainer').innerHTML = html;
-        });
-    </script>
+      <div id="menuContainer"></div>
+  <script>
+    fetch('menu.html')
+      .then(response => response.text())
+      .then(html => {
+        document.getElementById('menuContainer').innerHTML = html;
+      });
+  </script>
 
     <section>
         <div> 
-            <table>
-              <tr> 
-                <td><div> 
+            
                     <p  class="TITLE">Entidades financieras </p>
-                    </div></td>
-              </tr>
-            </table>
+                    
             <p class="PARRAFO">Mediante esta funci&oacute;n se habilita la consulta y mantenimiento 
               de la tabla en la cual se almacenan los c&oacute;digos de compensaci&oacute;n 
               y nombres de las diferentes entidades financieras pertenecientes al sistema 
@@ -52,45 +48,45 @@
             
             <table>
               <tr>
-                <td  class="titletable" ><p class="SUBTITULO"><b><span 
-        >C&oacute;digo</span></b></p></td>
+                <td  class="titletable" ><p class="SUBTITULO"><span 
+        >C&oacute;digo</span></p></td>
                 <td><p class="PARRAFO">Campo num&eacute;rico de tres d&iacute;gitos, obligatorio,   correspondiente a los c&oacute;digos de compensaci&oacute;n asignados a cada entidad, mediante   el cual se identifican dentro del sistema financiero</p>      </td>
               </tr>
               <tr>
-                <td class="titletable"><p class="SUBTITULO"><b><span 
-        >Nombre</span></b></p></td>
+                <td class="titletable"><p class="SUBTITULO"><span 
+        >Nombre</span></p></td>
                 <td><p class="PARRAFO">En este campo alfanum&eacute;rico de 40 posiciones,   obligatorio, se registra el nombre o raz&oacute;n social de cada entidad   financiera.</p>      </td>
               </tr>
               <tr>
-                <td  class="titletable" ><p class="SUBTITULO"><b><span 
-        >Identificaci&oacute;n</span></span></b></p></td>
+                <td  class="titletable" ><p class="SUBTITULO"><span 
+        >Identificaci&oacute;n</span></span></p></td>
                 <td><p class="PARRAFO">Campo alfanum&eacute;rico de 12 posiciones, no   obligatorio, en el cual se registra el n&uacute;mero de identificaci&oacute;n tributaria   (N.I.T) de cada entidad financiera</p>        </td>
               </tr>
               <tr>
-                <td class="titletable"><p class="SUBTITULO"><b><span 
-        >Direcci&oacute;n</span></span></b></p></td>
+                <td class="titletable"><p class="SUBTITULO"><span 
+        >Direcci&oacute;n</span></span></p></td>
                 <td><p class="PARRAFO">En este campo alfanum&eacute;rico de 40 posiciones, no obligatorio, se registra la direcci&oacute;n de la sede de la entidad financiera o   del &aacute;rea de producci&oacute;n donde se ubica o reside la aplicaci&oacute;n.</p>        </td>
               </tr>
               <tr>
-                <td  class="titletable" ><p class="SUBTITULO"><b><span 
-        >Ciudad</span></b></p></td>
+                <td  class="titletable" ><p class="SUBTITULO"><span 
+        >Ciudad</span></p></td>
                 <td><p class="PARRAFO">Campo no obligatorio, en el cual se   selecciona, de la lista poblada a trav&eacute;s de la opci&oacute;n <a href="NUH_003B.html">Informaci&oacute;n geopol&iacute;tica</a>, el municipio o ciudad,   departamento y pa&iacute;s, sede de cada entidad financiera o del &aacute;rea de producci&oacute;n   donde se encuentra residente la aplicaci&oacute;n.</p>        </td>
               </tr>
               <tr>
-                <td class="titletable"><p class="SUBTITULO"><b><span 
-        >Tel&eacute;fono</span></span></b></p></td>
+                <td class="titletable"><p class="SUBTITULO"><span 
+        >Tel&eacute;fono</span></span></p></td>
                 <td><p class="PARRAFO">En este campo alfanum&eacute;rico de 20 posiciones,   no obligatorio, se indica el n&uacute;mero telef&oacute;nico de la sede de cada entidad   financiera o del &aacute;rea de producci&oacute;n donde se encuentra residente la   aplicaci&oacute;n.</p>        </td>
               </tr>
               <tr> 
-                <td class="titletable"><p class="SUBTITULO"><b><span 
+                <td class="titletable"><p class="SUBTITULO"><span 
         >E-mail</span></span> 
-                </b>
+                
                 </p>	  </td>
                 <td><p class="PARRAFO">Campo alfanum&eacute;rico de 30 posiciones, no   obligatorio, en el cual se registra la direcci&oacute;n para el env&iacute;o de correo   electr&oacute;nico a la sede de cada entidad financiera o al &aacute;rea de producci&oacute;n donde   se encuentra residente la aplicaci&oacute;n.</p>        </td>
               </tr>
               <tr> 
-                <td class="titletable"><p class="SUBTITULO"><b><span 
-        >WebServer</span></span></b></p>	  </td>
+                <td class="titletable"><p class="SUBTITULO"><span 
+        >WebServer</span></span></p>	  </td>
                 <td><p class="PARRAFO">En este campo alfanum&eacute;rico de 30 posiciones, no obligatorio, se registra la direcci&oacute;n del servidor para contactarse con el sitio web de la entidad financiera o del &aacute;rea de producci&oacute;n donde se encuentra residente la aplicaci&oacute;n</p>	  </td>
               </tr>
             </table>

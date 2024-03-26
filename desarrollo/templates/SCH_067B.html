@@ -1,136 +1,138 @@
 <!DOCTYPE html>
 <html lang="es">
 
-<head>
+  <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>BANKBU®</title>
     <link rel="stylesheet" href="../css/pages.css">
     <link rel="stylesheet" href="../css/style.css">
- <link rel="icon" href="../img/ACQUIRER-logo.JPG" type="image/x-icon">
-</head>
+    <link rel="icon" href="../img/ACQUIRER-logo.JPG" type="image/x-icon">
+  </head>
 
-<body>
+  <body>
     <header>
-        <img class="logo" src="../img/logoBankbu_.PNG" alt="Logo de Mi Empresa">
-        <div id="menuBtn">
-            <img class="TITLE"  src= "../img/menu.PNG" alt="Botón de Menú ">
-        </div>
+      <img class="logo" src="../img/logoBankbu_.PNG" alt="Logo de Mi Empresa">
+      <div id="menuBtn">
+        <img class="TITLE" src="../img/menu.PNG" alt="Botón de Menú ">
+      </div>
     </header>
-   <div id="menuContainer"></div>
+    <div id="menuContainer"></div>
     <script>
-      fetch('menu.html')
-        .then(response => response.text())
-        .then(html => {
-          document.getElementById('menuContainer').innerHTML = html;
-        });
-    </script>
+    fetch('menu.html')
+      .then(response => response.text())
+      .then(html => {
+        document.getElementById('menuContainer').innerHTML = html;
+      });
+  </script>
 
     <section>
-        <div> 
-            <table>
-              <tr> 
-                <td><div> 
-                    <p  class="TITLE">Novedades</p>
-                  </div></td>
-              </tr>
-            </table>
-            <p  class="PARRAFO">En este formulario que se invoca desde el 
-              <a href="SCH_060B.html" >detalle consulta de la tarjeta</a>, 
-              la entidad puede consultar la informaci&oacute;n acerca de las diferentes 
-              novedades que le han sido aplicadas a la tarjeta con el fin de adicionar o 
-              actualizar datos de la misma.</p>
-            <p  class="PARRAFO">El formulario contiene la opci&oacute;n detalle 
-              que permite invocar de acuerdo con cada tipo de novedad, el formulario con 
-              la informaci&oacute;n completa de la misma. Cuando el estado de la novedad 
-              sea 'Por aplicar' el detalle de la novedad mostrar&aacute; los datos 
-              que se est&aacute;n actualizando para la tarjeta; si el estado es 'Aplicada' 
-              el detalle desplegar&aacute; los datos que la tarjeta ten&iacute;a antes de 
-              aplicarle la novedad.</p>
-            <p class="TITLE"><img src="../img/SCF_067E.PNG"622" ></p>
-            <p  class="TITLE">Descripción de campos</p>
-            <table>
-              <tr> 
-                <td><p class="SUBTITULO"><b>Tipo 
-                    novedad</b></p></td>
-                <td><p  class="PARRAFO">Campo 
-                    que muestra la <a href="NUH_017B.html" >novedad administrativa</a> 
-                    que se le aplic&oacute; a la tarjeta.</p></td>
-              </tr>
-              <tr> 
-                <td    > 
-                  <p class="SUBTITULO"><b>Clase novedad</b></p></td>
-                <td><p  class="PARRAFO">Este 
-                    campo indica si la acci&oacute;n que se ejecut&oacute; sobre los datos 
-                    de la tarjeta mediante la novedad aplicada fue una Adici&oacute;n, 
-                    Modificaci&oacute;n o Eliminaci&oacute;n de informaci&oacute;n.</p></td>
-              </tr>
-              <tr> 
-                <td class="titletable"><p class="SUBTITULO"><b>Fecha 
-                    ingreso </b></p></td>
-                <td><p  class="PARRAFO">Campo 
-                    que muestra en formato YYYY-MM-DD la fecha en la cual se registr&oacute; 
-                    o ingres&oacute; la novedad en el sistema.</p></td>
-              </tr>
-           
-              <tr> 
-                <td class="titletable" ><p class="SUBTITULO"><b>Fecha 
-                    aplicaci&oacute;n
-                    </b></p></td>
-                <td><p  class="PARRAFO">Este 
-                    campo despliega en formato YYYY-MM-DD la fecha en la que efectivamente 
-                    se aplic&oacute; la novedad y se hizo la actualizaci&oacute;n de datos 
-                    a la tarjeta.</p></td>
-              </tr>
-           
-              <tr> 
-                <td class="titletable" ><p class="SUBTITULO"><b>Fecha 
-                    expiraci&oacute;n
-                    </b></p></td>
-                <td><p  class="PARRAFO">Campo 
-                    que muestra en formato YYYY-MM-DD la fecha en la cual ser&aacute; depurado 
-                    o eliminado del sistema el registr&oacute; correspondiente a la novedad 
-                    aplicada de acuerdo con lo definido para la misma en la opci&oacute;n 
-                    <a href="NUH_017B.html" >novedades administrativas</a>.</p></td>
-              </tr>
-            </table>
-            <div  class="PARRAFO"> 
-              <table>
-                <tr> 
-                  <td class="titletable" ><p class="SUBTITULO"><b>Estado 
-                     
-                      </b></p></td>
-                  <td><p  class="PARRAFO">Este 
-                      campo indica si la novedad ya se encuentra Aplicada o est&aacute; 
-                      pendiente Por aplicar lo que determina que al consultar el 
-                      detalle de la novedad se muestren al usuario los datos nuevos que 
-                      se est&aacute;n actualizando o los que tenia la tarjeta anteriormente.</p></td>
-                </tr>
-   
-                <tr> 
-                  <td class="titletable" ><p class="SUBTITULO"><b>Indicador
-                      </b></p></td>
-                  <td><p  class="PARRAFO">Campo 
-                      que muestra el resultado del proceso de aplicaci&oacute;n de la novedad 
-                      y que puede ser Aplicada (cuando termin&oacute; existosamente 
-                      la actualizaci&oacute;n de los datos), No aplicar (si se 
-                      ha determinado que la actualizaci&oacute;n de los datos no se debe 
-                      hacer) o Error (cuando durante el proceso de aplicaci&oacute;n 
-                      se ha presentado alg&uacute;n tipo de validaci&oacute;n o falla que 
-                      no ha permitido finalizar exitosamente la acci&oacute;n).</p></td>
-                </tr>
-              </table>
-                </section>
-    <script src="../js/menu.js"></script>
+      <div>
 
-    <div id="footerContainer"></div>
-<script>
+        <p class="TITLE">Novedades</p>
+
+        <p class="PARRAFO">En este formulario que se invoca desde la <a
+            href="SCH_060B.html">Consulta
+            centralizada de tarjeta</a>, la entidad puede visualizar la
+          información de
+          las diferentes novedades que le han sido aplicadas a la tarjeta. El
+          formulario dispone del enlace a la opción Detalle.</p>
+
+        <p class="TITLE"><img src="../img/SCF_067E.PNG"></p>
+
+        <p class="TITLE">Descripción de campos</p>
+        <table>
+          <tr>
+            <td><p class="SUBTITULO">Tipo
+                novedad</p></td>
+            <td><p class="PARRAFO">Campo
+                que muestra la <a href="NUH_017B.html">novedad
+                  administrativa</a>
+                que se le aplic&oacute; a la tarjeta.</p></td>
+          </tr>
+          <tr>
+            <td>
+              <p class="SUBTITULO">Clase novedad</p></td>
+            <td><p class="PARRAFO">Este campo indica si la acción ejecutada
+                sobre los datos de la tarjeta, mediante la novedad aplicada se
+                trató de: Adición, Modificación o Eliminación de
+                información.</p></td>
+          </tr>
+          <tr>
+            <td class="titletable"><p class="SUBTITULO">Fecha
+                ingreso </p></td>
+            <td><p class="PARRAFO">
+                Campo que muestra en formato YYYY-MM-DD, la fecha en la cual se
+                registró o ingresó la novedad en el sistema.</p></td>
+          </tr>
+
+          <tr>
+            <td class="titletable"><p class="SUBTITULO">Fecha
+                aplicaci&oacute;n
+              </p></td>
+            <td><p class="PARRAFO">Este campo despliega en formato YYYY-MM-DD,
+                la fecha en la que efectivamente se aplicó la novedad y se hizo
+                la actualización de datos a la tarjeta.</p></td>
+          </tr>
+
+          <tr>
+            <td class="titletable"><p class="SUBTITULO">Fecha
+                expiraci&oacute;n
+              </p></td>
+            <td><p class="PARRAFO">Campo que muestra en formato YYYY-MM-DD, la
+                fecha en la cual será depurado o eliminado del sistema, el
+                registró correspondiente a la novedad aplicada, de acuerdo con
+                lo definido para la misma en la opción
+                <a href="NUH_017B.html">novedades administrativas</a>.</p></td>
+          </tr>
+        </table>
+        <div class="PARRAFO">
+          <table>
+            <tr>
+              <td class="titletable"><p class="SUBTITULO">Estado
+
+                </p></td>
+              <td><p class="PARRAFO">Este campo indica si la novedad ya se
+                  encuentra Aplicada o está pendiente Por aplicar, lo que
+                  determina que, al consultar el detalle de la novedad, se
+                  muestren al usuario, los datos nuevos que se están
+                  actualizando o los que tenía la tarjeta
+                  anteriormente.</p></td>
+            </tr>
+
+            <tr>
+              <td class="titletable"><p class="SUBTITULO">Indicador
+                </p></td>
+              <td><p class="PARRAFO">Campo que muestra el resultado del proceso
+                  de aplicación de la novedad, y que puede ser Aplicada (cuando
+                  terminó existosamente la actualización de los datos), No
+                  aplicar (si se ha determinado que la actualización de los
+                  datos no se debe hacer) o Error (cuando durante el proceso de
+                  aplicación se ha presentado algún tipo de validación o falla
+                  que no ha permitido finalizar exitosamente la
+                  acción).</p></td>
+            </tr>
+          </table>
+          <p class="PARRAFO"><span class="SUBTITULO">Detalle:</span> Al invocar
+            ese enlace, de acuerdo con cada tipo de novedad,
+            el formulario muestra la información completa de la misma. Cuando el
+            estado de la novedad sea 'Por aplicar' el detalle de la novedad
+            mostrará los datos que se están actualizando para la tarjeta; si el
+            estado es 'Aplicada' el detalle desplegará los datos que la tarjeta
+            tenía antes de aplicarle la novedad.</p>
+          <p class="TITLE"><img src="../img/SCF_067E2.PNG"></p>
+          <p class="TITLE"><img src="../img/SCF_067E3.PNG"></p>
+        </section>
+        <script src="../js/menu.js"></script>
+
+        <div id="footerContainer"></div>
+        <script>
   fetch('footer.html')
     .then(response => response.text())
     .then(html => {
       document.getElementById('footerContainer').innerHTML = html;
     });
 </script>
-</body>
+      </body>
 
-</html>
+    </html>

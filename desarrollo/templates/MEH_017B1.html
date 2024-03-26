@@ -18,26 +18,20 @@
       <img class="TITLE" src="../img/menu.PNG" alt="Botón de Menú ">
     </div>
   </header>
-  <div id="menuContainer"></div>
-    <script>
-      fetch('menu.html')
-        .then(response => response.text())
-        .then(html => {
-          document.getElementById('menuContainer').innerHTML = html;
-        });
-    </script>
+    <div id="menuContainer"></div>
+  <script>
+    fetch('menu.html')
+      .then(response => response.text())
+      .then(html => {
+        document.getElementById('menuContainer').innerHTML = html;
+      });
+  </script>
 
   <section>
     <div>
-      <table>
-        <tr>
-          <td>
-            <div>
+      
               <p class="TITLE">Segmentaci&oacute;n de tarjetas</p>
-            </div>
-          </td>
-        </tr>
-      </table>
+
       <p class="PARRAFO"><span class="SUBTITULO">Lista de resultados: </span> Esta opci&oacute;n, adem&aacute;s de
         mostrar el resultado de la segmentaci&oacute;n obtenido con base en los criterios de evaluaci&oacute;n
         seleccionados, ofrece funcionalidades adicionales que permiten Eliminar un cliente de la lista, y
@@ -55,8 +49,8 @@
       <table>
         <tr>
           <td class="titletable">
-            <p class="SUBTITULO"><b><span>Nombre
-                  lista</span></b></p>
+            <p class="SUBTITULO">Nombre
+                  lista</span></p>
           </td>
           <td>
             <p class="PARRAFO">Si
@@ -84,7 +78,7 @@
           </td>
         </tr>
       </table>
-      <p><a href="MEH_017B.html">Segmentaci&oacute;n de tarjetas</a><span><b> | </b></span><a href="MEH_017B3.html">
+      <p><a href="MEH_017B.html">Segmentaci&oacute;n de tarjetas</a> | </span><a href="MEH_017B3.html">
           Adicionar</a></p>
 
   </section>

@@ -1,129 +1,146 @@
 <!DOCTYPE html>
 <html lang="es">
 
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>BANKBU®</title>
-  <link rel="stylesheet" href="../css/pages.css">
-  <link rel="stylesheet" href="../css/style.css">
-  <link rel="icon" href="../img/ACQUIRER-logo.JPG" type="image/x-icon">
-</head>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BANKBU®</title>
+    <link rel="stylesheet" href="../css/pages.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="icon" href="../img/ACQUIRER-logo.JPG" type="image/x-icon">
+  </head>
 
-<body>
-  <header>
-    <img class="logo" src="../img/logoBankbu_.PNG" alt="Logo de Mi Empresa">
-    <div id="menuBtn">
-      <img class="TITLE" src="../img/menu.PNG" alt="Botón de Menú ">
-    </div>
-  </header>
-  <div id="menuContainer"></div>
+  <body>
+    <header>
+      <img class="logo" src="../img/logoBankbu_.PNG" alt="Logo de Mi Empresa">
+      <div id="menuBtn">
+        <img class="TITLE" src="../img/menu.PNG" alt="Botón de Menú ">
+      </div>
+    </header>
+    <div id="menuContainer"></div>
     <script>
-      fetch('menu.html')
-        .then(response => response.text())
-        .then(html => {
-          document.getElementById('menuContainer').innerHTML = html;
-        });
-    </script>
-  <section>
-    <div>
-      <table>
-        <tr>
-          <td>
-            <div>
-              <p class="TITLE style6">Tipo de actividades</p>
-            </div>
-          </td>
-        </tr>
-      </table>
-      <p>Mediante esta funci&oacute;n se definen las diferentes actividades que se deben desarrollar en cada una de las
-        visitas programadas por la entidad. Adicionalmente, cuenta con un filtro de b&uacute;squeda.</p>
-      <p class="TITLE"><img src="../img/AEF_016B.PNG"></p>
-      <p class="PARRAFO"><span class="SUBTITULO">Filtro:</span>  Se pueden realizar consultas a trav&eacute;s
-        de las siguientes opciones:</p>
-      <p class="center"><img src="../img/AEF_016B1.PNG"></p>
-      <table>
-        <tr>
-          <td class="titletable">
-            <p class="SUBTITULO"><span>C&oacute;digo</span></p>
-          </td>
-          <td>
-            <p>Campo alfanum&eacute;rico de 3 d&iacute;gitos, que identifica cada una de las actividades a ejecutar.</p>
-          </td>
-        </tr>
+    fetch('menu.html')
+      .then(response => response.text())
+      .then(html => {
+        document.getElementById('menuContainer').innerHTML = html;
+      });
+  </script>
+    <section>
+      <div>
+        <table>
+          <tr>
+            <td>
+              <div>
+                <p class="TITLE style6">Tipo de actividades</p>
+              
+        <p>Mediante esta funci&oacute;n se definen las diferentes actividades
+          que se deben desarrollar en cada una de las
+          visitas programadas por la entidad. Adicionalmente, cuenta con un
+          filtro de b&uacute;squeda.</p>
+        <p class="TITLE"><img src="../img/AEF_016B.PNG"></p>
+        <p class="PARRAFO"><span class="SUBTITULO">Filtro:</span> Se pueden
+          realizar consultas a trav&eacute;s
+          de las siguientes opciones:</p>
+        <p class="center"><img src="../img/AEF_016B1.PNG"></p>
+        <table>
+          <tr>
+            <td class="titletable">
+              <p class="SUBTITULO">C&oacute;digo</span></p>
+            </td>
+            <td>
+              <p>Campo alfanum&eacute;rico de 3 d&iacute;gitos, que identifica
+                cada una de las actividades a ejecutar.</p>
+            </td>
+          </tr>
 
-        <tr>
-          <td class="titletable">
-            <p class="SUBTITULO"><b><span>Descripci&oacute;n</span></b></p>
-          </td>
-          <td>
-            <p>En este campo alfanum&eacute;rico de 30 posiciones, se registra una breve descriptiv&oacute;n de la
-              actividad asociada al c&oacute;digo anterior.</p>
-          </td>
-        </tr>
-      </table>
-      <p><span class="SUBTITULO"><span><b>Adicionar</b>:</span><span></span></span><span> Si el usuario invoca la
-          opci&oacute;n Adicionar se despliega un nuevo formulario. </span> Este a su vez cuenta con un boton de
-        localizaci&oacute;n. </p>
-      <p class="TITLE"><img src="../img/AEF_016B2.PNG"></p>
-      <p class="TITLE">Descripci&oacute;n de campos</p>
-      <table>
-        <tr>
-          <td class="titletable">
-            <p class="SUBTITULO"><b><span>C&oacute;digo</span></b></p>
-          </td>
-          <td>
-            <p>Campo alfanum&eacute;rico de 2 d&iacute;gitos, obligatorio, que identifica cada una de las actividades a
-              ejecutar.</p>
-          </td>
-        </tr>
+          <tr>
+            <td class="titletable">
+              <p class="SUBTITULO">Descripci&oacute;n</span></p>
+            </td>
+            <td>
+              <p>En este campo alfanum&eacute;rico de 30 posiciones, se registra
+                una breve descriptiv&oacute;n de la
+                actividad asociada al c&oacute;digo anterior.</p>
+            </td>
+          </tr>
+        </table>
+        <p><span
+            class="SUBTITULO">Adicionar:</span></span>
+            Si el usuario invoca la
+            opci&oacute;n Adicionar se despliega un nuevo formulario. </span>
+          Este a su vez cuenta con un boton de
+          localizaci&oacute;n. </p>
+        <p class="TITLE"><img src="../img/AEF_016B2.PNG"></p>
+        <p class="TITLE">Descripci&oacute;n de campos</p>
+        <table>
+          <tr>
+            <td class="titletable">
+              <p class="SUBTITULO">C&oacute;digo</span></p>
+            </td>
+            <td>
+              <p>Campo alfanum&eacute;rico de 2 d&iacute;gitos, obligatorio, que
+                identifica cada una de las actividades a
+                ejecutar.</p>
+            </td>
+          </tr>
 
-        <tr>
-          <td class="titletable">
-            <p class="SUBTITULO"><b><span>Descripci&oacute;n</span></b></p>
-          </td>
-          <td>
-            <p>En este campo alfanum&eacute;rico de 30 posiciones, obligatorio, se registra un breve descriptivo de la
-              actividad asociada al c&oacute;digo anterior. </p>
-          </td>
-        </tr>
+          <tr>
+            <td class="titletable">
+              <p class="SUBTITULO">Descripci&oacute;n</span></p>
+            </td>
+            <td>
+              <p>En este campo alfanum&eacute;rico de 30 posiciones,
+                obligatorio, se registra un breve descriptivo de la
+                actividad asociada al c&oacute;digo anterior. </p>
+            </td>
+          </tr>
 
-        <tr>
-          <td class="titletable">
-            <p class="SUBTITULO"><b><span><span>Aplicaci&oacute;n</span></span></b></p>
-          </td>
-          <td>
-            <p>Campo con lista de valores propias de la cual se selecciona si la actividad esta definida para un
-              Establecimiento, un Candidato o una Solicitud.</p>
-          </td>
-        </tr>
+          <tr>
+            <td class="titletable">
+              <p
+                class="SUBTITULO">Aplicaci&oacute;n</span></span></p>
+            </td>
+            <td>
+              <p>Campo con lista de valores propias de la cual se selecciona si
+                la actividad esta definida para un
+                Establecimiento, un Candidato o una Solicitud.</p>
+            </td>
+          </tr>
 
-        <tr>
-          <td class="titletable">
-            <p class="SUBTITULO"><b><span><span>Tiempo actividad</span></span></b></p>
-          </td>
-          <td>
-            <p>En este campo num&eacute;rico de m&aacute;ximo 3 d&iacute;gitos, obligatorio, se registra el tiempo
-              estimado para la ejecuci&oacute;n de cada actividad definida.</p>
-          </td>
-        </tr>
-      </table>
-      <p class="PARRAFO"><span class="SUBTITULO"><span><b>Actualizar</b>:</span><span><span> Si el usuario
-          invoca la opci&oacute;n Actualizar se despliega un nuevo formulario
-          en el cual </span><span>los </span><span> &uacute;nicos campos </span></span><span
-          class="style7"><span>modificables</span> span><span class="PARRAFO"><span>son:</span> 
-          Descripci&oacute;n, Aplicaci&oacute;n, Tiempo actividad. </span></p>
-      <p class="TITLE"><img src="../img/AEF_016B3.PNG" 313" ></p>
+          <tr>
+            <td class="titletable">
+              <p class="SUBTITULO">Tiempo
+                    actividad</span></span></p>
+            </td>
+            <td>
+              <p>En este campo num&eacute;rico de m&aacute;ximo 3
+                d&iacute;gitos, obligatorio, se registra el tiempo
+                estimado para la ejecuci&oacute;n de cada actividad
+                definida.</p>
+            </td>
+          </tr>
+        </table>
+        <p class="PARRAFO"><span
+            class="SUBTITULO">Actualizar:</span> Si el usuario
+                invoca la opci&oacute;n Actualizar se despliega un nuevo
+                formulario
+                en el cual </span>los </span> &uacute;nicos campos
+              </span></span><span
+              class="style7">modificables</span> span><span
+                class="PARRAFO">son:</span>
+                Descripci&oacute;n, Aplicaci&oacute;n, Tiempo actividad.
+              </span></p>
+            <p class="TITLE"><img src="../img/AEF_016B3.PNG"></p>
 
-  </section>
-  <script src="../js/menu.js"></script>
-</body>
-<div id="footerContainer"></div>
-<script>
+          </section>
+          <script src="../js/menu.js"></script>
+        </body>
+        <div id="footerContainer"></div>
+        <script>
   fetch('footer.html')
     .then(response => response.text())
     .then(html => {
       document.getElementById('footerContainer').innerHTML = html;
     });
 </script>
-</html>
+      </html>

@@ -18,29 +18,21 @@
             <img class="TITLE" src="../img/menu.PNG" alt="Botón de Menú ">
         </div>
     </header>
-    <div id="menuContainer"></div>
-    <script>
-      fetch('menu.html')
-        .then(response => response.text())
-        .then(html => {
-          document.getElementById('menuContainer').innerHTML = html;
-        });
-    </script>
+      <div id="menuContainer"></div>
+  <script>
+    fetch('menu.html')
+      .then(response => response.text())
+      .then(html => {
+        document.getElementById('menuContainer').innerHTML = html;
+      });
+  </script>
 
     <section>
-        <center>
+        
             <div>
-                <table>
-                    <tr>
-                        <td>
-                            <div>
-                                <center>
+              
                                     <p class="TITLE">Administración de Usuarios</p>
-                                </center>
-                            </div>
-                        </td>
-                    </tr>
-                </table>
+                              
                 <p  class="PARRAFO">Desde este formulario, se habilita la consulta
                     y mantenimiento de una tabla en la cual se almacena toda la informaci&oacute;n
                     relacionada con los usuarios nombrados para la corporaci&oacute;n o entidad
@@ -54,20 +46,20 @@
     
                 <p class="PARRAFO">El formulario contiene las opciones Actualizar,
                     Eliminar, Adicionar,Detalle y <a href="#restricciones">Restricciones</a></p>
-                <p class="PARRAFO"><b ><span class="SUBTITULO">Adicionar:</span></b>
+                <p class="PARRAFO"><span class="SUBTITULO">Adicionar:</span>
                     si el usuario invoca la opci&oacute;n Adicionar se despliega un nuevo formulario
                     dividido en cuatro bloques de datos (B&aacute;sicos, Informaci&oacute;n, Localizaci&oacute;n) con los siguientes campos.</p>
                 <p class="TITLE"><img src="../img/NUF_010E2.PNG"></p>
 
-                <center>
+                
                     <p class="TITLE">Descripción de Campos</p>
-                </center>
+                
 
                 <table>
                     <tr>
                         <td>
-                            <p class="SUBTITULO"><b><span>
-                                        C&oacute;digo</span></b></p>
+                            <p class="SUBTITULO">
+                                        C&oacute;digo</span></p>
                         </td>
                         <td  >
                             <p  class="PARRAFO">Campo
@@ -79,8 +71,8 @@
                     </tr>
                     <tr>
                         <td>
-                            <p class="SUBTITULO"><b><span>
-                                        Nombre</span></b></p>
+                            <p class="SUBTITULO">
+                                        Nombre</span></p>
                         </td>
                         <td  >
                             <p  class="PARRAFO">En
@@ -90,8 +82,8 @@
                     </tr>
                     <tr>
                         <td>
-                            <p class="SUBTITULO"><b><span>
-                                        Primer apellido</span></b></p>
+                            <p class="SUBTITULO">
+                                        Primer apellido</span></p>
                         </td>
                         <td>
                             <p  class="PARRAFO">Campo
@@ -102,8 +94,8 @@
                     </tr>
                     <tr>
                         <td>
-                            <p class="SUBTITULO"><b><span>
-                                        Segundo apellido</span></b></p>
+                            <p class="SUBTITULO">
+                                        Segundo apellido</span></p>
                         </td>
                         <td>
                             <p  class="PARRAFO">En
@@ -113,8 +105,8 @@
                     </tr>
                     <tr>
                         <td>
-                            <p class="SUBTITULO"><b><span>
-                                        Cargo</span></b></p>
+                            <p class="SUBTITULO">
+                                        Cargo</span></p>
                         </td>
                         <td>
                             <p  class="PARRAFO">Campo
@@ -125,8 +117,8 @@
                     </tr>
                     <tr>
                         <td>
-                            <p class="SUBTITULO"><b><span>
-                                        C&oacute;digo empleado</span></b></p>
+                            <p class="SUBTITULO">
+                                        C&oacute;digo empleado</span></p>
                         </td>
                         <td>
                             <p  class="PARRAFO">En
@@ -138,8 +130,8 @@
                     </tr>
                     <tr>
                         <td>
-                            <p class="SUBTITULO"><b><span>
-                                        Tel&eacute;fono</span></b></p>
+                            <p class="SUBTITULO">
+                                        Tel&eacute;fono</span></p>
                         </td>
                         <td>
                             <p  class="PARRAFO">En
@@ -150,8 +142,8 @@
                     </tr>
                     <tr>
                         <td>
-                            <p class="SUBTITULO"><b><span>
-                                        Extensi&oacute;n</span></b></p>
+                            <p class="SUBTITULO">
+                                        Extensi&oacute;n</span></p>
                         </td>
                         <td>
                             <p  class="PARRAFO">Campo
@@ -162,8 +154,8 @@
                     </tr>
                     <tr>
                         <td>
-                            <p class="SUBTITULO"><b><span>
-                                        Correo electr&oacute;nico</span></b></p>
+                            <p class="SUBTITULO">
+                                        Correo electr&oacute;nico</span></p>
                         </td>
                         <td>
                             <p  class="PARRAFO">En
@@ -179,13 +171,13 @@
                     </tr>
                 </table>
 
-                <p class="PARRAFO"><b ><span class="SUBTITULO">Actualizar</span></b>:
+                <p class="PARRAFO"><span class="SUBTITULO">Actualizar</span>:
                     si el usuario selecciona un registro e invoca la opci&oacute;n Actualizar
                     se despliega un formulario con un &uacute;nico campo NO modificable que es
                     el C&oacute;digo. </p>
                 <p class="TITLE"><img src="../img/NUF_010E3.PNG"></p>
 
-                <p class="PARRAFO"><b ><span class="SUBTITULO">Detalle</span></b>:
+                <p class="PARRAFO"><span class="SUBTITULO">Detalle</span>:
                     si el usuario selecciona un registro e invoca la opci&oacute;n Detalle se
                     despliega un formulario con toda la informaci&oacute;n del registro y en el
                     cual ninguno de sus campos es modificable. </p>
@@ -203,7 +195,7 @@
                           botón especial Salvar y segundo que el usuario afectado, reingrese al aplicativo.</p>
                         <p class="TITLE"><img src="../img/NUF_011E4.PNG"  ></p>
                
-        </center>
+        
     </section>
     <script src="../js/menu.js"></script>
 

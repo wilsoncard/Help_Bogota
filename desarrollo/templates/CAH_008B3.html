@@ -18,24 +18,20 @@
             <img class="TITLE"  src= "../img/menu.PNG" alt="Botón de Menú ">
         </div>
     </header>
-   <div id="menuContainer"></div>
-    <script>
-      fetch('menu.html')
-        .then(response => response.text())
-        .then(html => {
-          document.getElementById('menuContainer').innerHTML = html;
-        });
-    </script>
+      <div id="menuContainer"></div>
+  <script>
+    fetch('menu.html')
+      .then(response => response.text())
+      .then(html => {
+        document.getElementById('menuContainer').innerHTML = html;
+      });
+  </script>
 
     <section>
         <div> 
-            <table>
-              <tr> 
-                <td><div> 
+            
                     <p  class="TITLE">Castigo de cartera</p>
-                    </div></td>
-              </tr>
-            </table>
+                    
             <p class="PARRAFO"><span class="SUBTITULO">Hist&oacute;rico proceso:</span>  Este 
               formulario permite consultar las tarjetas castigadas de la Entidad. El sistema 
               consulta y muestra las tarjetas que no fueron castigadas y que est&aacute;n 
@@ -49,8 +45,8 @@
            
             <table>
               <tr> 
-                <td class="titletable"><p class="SUBTITULO"><b>Fecha 
-                    Histórico </b></p></td>
+                <td class="titletable"><p class="SUBTITULO">Fecha 
+                    Histórico </p></td>
                 <td><p class="PARRAFO">Permite a la entidad consultar a una fecha específica la información
                    correspondiente a los productos que pasaron al proceso de precastigo.</p></td>
               </tr>
@@ -101,9 +97,9 @@
             </table>
             
             <p><a href="CAH_008B.html" >Candidatas</a><span
-              '><b> | </b></span><a href="CAH_008B1.html" >Precastigadas</a><span
-              '><b> | </b></span><a href="CAH_008B2.html" >Castigadas</a><b><span> 
-              | </span></b><a href="CAH_008B4.html" >Consulta de par&aacute;metros</a></p>
+              '> | </span><a href="CAH_008B1.html" >Precastigadas</a><span
+              '> | </span><a href="CAH_008B2.html" >Castigadas</a> 
+              | </span><a href="CAH_008B4.html" >Consulta de par&aacute;metros</a></p>
             
         </section>
     <script src="../js/menu.js"></script>

@@ -17,26 +17,19 @@
       <img class="TITLE" src="../img/menu.PNG" alt="Botón de Menú ">
     </div>
   </header>
- <div id="menuContainer"></div>
-    <script>
-      fetch('menu.html')
-        .then(response => response.text())
-        .then(html => {
-          document.getElementById('menuContainer').innerHTML = html;
-        });
-    </script>
+    <div id="menuContainer"></div>
+  <script>
+    fetch('menu.html')
+      .then(response => response.text())
+      .then(html => {
+        document.getElementById('menuContainer').innerHTML = html;
+      });
+  </script>
 
   <section>
     <div>
-      <table>
-        <tr>
-          <td>
-            <div>
-              <p class="TITLE">Maestro de Reclamos</p>
-            </div>
-          </td>
-        </tr>
-      </table>
+      <p class="TITLE">Maestro de Reclamos</p>
+
       <p class="PARRAFO"><span class="SUBTITULO">Estado de actividades:</span> Cuando el actor
           invoque este formulario, el sistema mostrar&aacute; el flujo de actividades correspondientes al tipo de
           reclamo seleccionado seg&uacute;n lo parametrizado en la opci&oacute;n <a
@@ -84,7 +77,7 @@
         </tr>
         <tr>
           <td class="titletable">
-            <p class="SUBTITULO"><img src="../img/RCF_007B3-3.PNG" 59"></p>
+            <p class="SUBTITULO"><img src="../img/RCF_007B3-3.PNG"></p>
           </td>
           <td>
             <p class="PARRAFO"><span class="SUBTITULO">Canceladas: </span> Indica que el gestor ha cancelado la
@@ -104,10 +97,6 @@
         </tr>
       </table>
 
-
-
-
-
       <p class="PARRAFO">Cuando el usuario utiliza el click izquierdo del mouse sobre las actividades, se pueden
         desplegar tres opciones diferentes:</p>
       <p class="TITLE"><img src="../img/RCF_007B4.PNG"></p>
@@ -123,14 +112,14 @@
 
 
       <p><span class="SUBTITULO">Adicionar:</span> Si el usuario invoca la opci&oacute;n Adicionar se despliega un
-        formulario con el siguiente campo<span>:</span></p>
+        formulario con el siguiente campo:</span></p>
 
       <p class="TITLE"><img src="../img/RCF_008B5.PNG" ></p>
 
       <table>
         <tr>
           <td class="titletable">
-            <p class="SUBTITULO"><b><span>Observaci&oacute;n</span></b></p>
+            <p class="SUBTITULO">Observaci&oacute;n</span></p>
           </td>
           <td>
             <p class="PARRAFO">Campo alfanum&eacute;rico de 4000 posiciones, obligatorio, en el cual se registra la
@@ -141,23 +130,21 @@
         </tr>
       </table>
 
-      .
-
       <p class="PARRAFO">Cuando la actividad est&aacute; cancelada o terminada, se despliega el siguiente formulario, y
         cuenta con un bot&oacute;n para devolverse a la gr&aacute;fica completa de las actividades.</p>
       <p class="TITLE"><img src="../img/RCF_007B4B.PNG" 422"></p>
-      .
-      <p><span class="SUBTITULO">Actualizar:</span> <span>Si el usuario invoca la opci&oacute;n Actualizar se despliega
-          un nuevo formulario en el cual el &uacute;nico</span> <span>campo modificable es </span><span>el
-          Estado</span><span>.</span> Esta opci&oacute;n s&oacute;lo se muestra cuando la actividad est&aacute; asignada
+      
+      <p><span class="SUBTITULO">Actualizar:</span> Si el usuario invoca la opci&oacute;n Actualizar se despliega
+          un nuevo formulario en el cual el &uacute;nico</span> campo modificable es </span>el
+          Estado</span>.</span> Esta opci&oacute;n s&oacute;lo se muestra cuando la actividad est&aacute; asignada
         o reasignada, de lo contrario, no se refleja. </p>
 
-      <p class="TITLE"><img src="../img/RCF_008B6.PNG" 479" height="98"></p>
+      <p class="TITLE"><img src="../img/RCF_008B6.PNG"></p>
 
       <table>
         <tr>
           <td class="titletable">
-            <p class="SUBTITULO"><b><span>Actividad</span></span></b></p>
+            <p class="SUBTITULO">Actividad</span></span></p>
           </td>
           <td>
             <p class="PARRAFO">Campo de salida que contiene el c&oacute;digo y descripci&oacute;n de la actividad a la
@@ -167,18 +154,16 @@
         <tr>
           <td class="SUBTITULO">Estado</td>
           <td class="PARRAFO">Campo tipo combo obligatorio, en el cual el usuario puede seleccionar entre Cancelado o
-            Terminado seg&uacute;n la soluci&oacute;n que le vaya a dar a la actividad correspondiente. <span
-              class="PARRAFO" style"width:72.0%;padding:3.0pt 3.0pt 3.0pt 3.0pt">El sistema valida que las actividades
-              se cancelen o terminen en el mismo orden en el cual se crearon.</span></td>
+            Terminado seg&uacute;n la soluci&oacute;n que le vaya a dar a la actividad correspondiente. El sistema valida que las actividades
+              se cancelen o terminen en el mismo orden en el cual se crearon.</td>
         </tr>
       </table>
-      .
-
+    
       <p class="PARRAFO"><span class="PARRAFO"><span class="SUBTITULO">Detalle:</span> Si el usuario invoca la
           opci&oacute;n Detalle se despliega el siguiente formulario el cual contendr&aacute; la informaci&oacute;n
         </span> detallada de la actividad y su tr&aacute;mite. Esta opci&oacute;n se refleja para todas las actividades.
       </p>
-      <p class="TITLE"><img src="../img/RCF_008B7.PNG" 801"></p>
+      <p class="TITLE"><img src="../img/RCF_008B7.PNG" ></p>
 
   </section>
   <script src="../js/menu.js"></script>

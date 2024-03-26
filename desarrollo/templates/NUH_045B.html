@@ -17,26 +17,20 @@
       <img class="TITLE" src="../img/menu.PNG" alt="Botón de Menú ">
     </div>
   </header>
-  <div id="menuContainer"></div>
-    <script>
-      fetch('menu.html')
-        .then(response => response.text())
-        .then(html => {
-          document.getElementById('menuContainer').innerHTML = html;
-        });
-    </script>
+    <div id="menuContainer"></div>
+  <script>
+    fetch('menu.html')
+      .then(response => response.text())
+      .then(html => {
+        document.getElementById('menuContainer').innerHTML = html;
+      });
+  </script>
 
   <section>
     <div>
-      <table>
-        <tr>
-          <td>
-            <div>
+      
               <p class="TITLE">Funcionarios</p>
-            </div>
-          </td>
-        </tr>
-      </table>
+
       <p class="PARRAFO">Mediante esta funci&oacute;n se habilita
         la consulta y mantenimiento de la tabla en la cual la entidad financiera almacena
         los principales datos b&aacute;sicos de todos sus colaboradores, sean o no
@@ -49,7 +43,7 @@
         Adicionalmente, cuenta con un filtro de b&uacute;squeda.</span></p>
 
       <p class="TITLE"><img src="../img/NUF_045E1.PNG"></p>
-      <p class="PARRAFO"><span class="SUBTITULO">Filtro: </span><span> Se pueden
+      <p class="PARRAFO"><span class="SUBTITULO">Filtro: </span> Se pueden
           realizar consultas a trav&eacute;s de las siguientes opciones: </span> 
       </p>
 
@@ -57,7 +51,7 @@
       <table>
         <tr>
           <td class="titletable">
-            <p class="SUBTITULO"><b><span>C&oacute;digo</span></b></p>
+            <p class="SUBTITULO">C&oacute;digo</span></p>
           </td>
           <td>
             <p class="PARRAFO">Campo
@@ -66,7 +60,7 @@
           </td>
         </tr>
         <tr>
-          <td class="titletable"><span class="SUBTITULO"><b><span>Nombre</span></b></span></td>
+          <td class="titletable"><span class="SUBTITULO">Nombre</span></span></td>
           <td><span class="PARRAFO">En
               este campo alfanum&eacute;rico de 30 posiciones, se registra
               el nombre del funcionario asociado a cada c&oacute;digo.</span></td>
@@ -86,7 +80,7 @@
           </td>
         </tr>
       </table>
-      <p class="PARRAFO"><span class="SUBTITULO"><b><span>Adicionar</span></b><span 
+      <p class="PARRAFO"><span class="SUBTITULO">Adicionar</span><span 
         >:</span><span 
         ></span></span><span 
         > Si el 
@@ -95,15 +89,15 @@
             <p class="TITLE"><img src="../img/NUF_045E2.PNG"></p>
             <table>
               <tr>
-                <td class="titletable"><p class="SUBTITULO"><b><span 
-        >C&oacute;digo</span></b></p></td>
+                <td class="titletable"><p class="SUBTITULO"><span 
+        >C&oacute;digo</span></p></td>
                 <td><p  class="PARRAFO">Campo 
                   num&eacute;rico de cinco posiciones, obligatorio, en el cual se registra 
                   el c&oacute;digo que identifica a cada funcionario.</p></td>
               </tr>
               <tr>
-                <td class="titletable"><span class="SUBTITULO"><b><span 
-        >Nombre</span></b></span></td>
+                <td class="titletable"><span class="SUBTITULO"><span 
+        >Nombre</span></span></td>
                 <td><span class="PARRAFO">En 
                   este campo alfanum&eacute;rico de 30 posiciones, obligatorio, se registra 
                 el nombre del funcionario asociado a cada c&oacute;digo.</span></td>
@@ -126,7 +120,7 @@
             <div>
               <table>
                 <tr> 
-                  <td  class="titletable" ><p class="SUBTITULO"><b><span style' font-family'>G&eacute;nero</span></b>
+                  <td  class="titletable" ><p class="SUBTITULO"><span>G&eacute;nero</span>
       </p>
       </td>
       <td>
@@ -140,7 +134,7 @@
       </tr>
       <tr>
         <td class="titletable">
-          <p class="SUBTITULO"><b><span>Cargo</span></b></p>
+          <p class="SUBTITULO">Cargo</span></p>
         </td>
         <td>
           <p class="PARRAFO">Campo
@@ -150,8 +144,8 @@
       </tr>
       <tr>
         <td>
-          <p class="SUBTITULO"><b><span>Tipo
-                de documento</span></b><span></span></p>
+          <p class="SUBTITULO">Tipo
+                de documento</span></p>
         </td>
         <td>
           <p class="PARRAFO">Este
@@ -162,8 +156,8 @@
       </tr>
       <tr>
         <td class="titletable">
-          <p class="SUBTITULO"><b><span>Agente
-                que depende</span></b></p>
+          <p class="SUBTITULO">Agente
+                que depende</span></p>
         </td>
         <td>
           <p class="PARRAFO">Este
@@ -177,7 +171,7 @@
       </tr>
       <tr>
         <td class="titletable">
-          <p class="SUBTITULO"><b><span>Identificaci&oacute;n</span></b></p>
+          <p class="SUBTITULO">Identificaci&oacute;n</span></p>
         </td>
         <td>
           <p class="PARRAFO">Campo
@@ -187,8 +181,8 @@
       </tr>
       <tr>
         <td>
-          <p class="SUBTITULO"><b><span>Nivel
-                de estructura</span></b><span></span></p>
+          <p class="SUBTITULO">Nivel
+                de estructura</span></p>
         </td>
         <td>
           <p class="PARRAFO">Campo
@@ -201,7 +195,7 @@
       </tr>
       <tr>
         <td class="titletable">
-          <p class="SUBTITULO"><b><span>Tel&eacute;fono</span></b></p>
+          <p class="SUBTITULO">Tel&eacute;fono</span></p>
         </td>
         <td>
           <p class="PARRAFO">Este
@@ -212,7 +206,7 @@
       </tr>
       <tr>
         <td class="titletable">
-          <p class="SUBTITULO"><b><span>Sueldo</span></b></p>
+          <p class="SUBTITULO">Sueldo</span></p>
         </td>
         <td>
           <p class="PARRAFO">En
@@ -223,7 +217,7 @@
       </tr>
       <tr>
         <td>
-          <p class="SUBTITULO"><b><span>Extensi&oacute;n</span></b><span></span></p>
+          <p class="SUBTITULO">Extensi&oacute;n</span></p>
         </td>
         <td>
           <p class="PARRAFO">Campo
@@ -234,8 +228,8 @@
       </tr>
       <tr>
         <td class="titletable">
-          <p class="SUBTITULO"><b><span>Agente
-                reemplazo </span></b></p>
+          <p class="SUBTITULO">Agente
+                reemplazo </span></p>
         </td>
         <td>
           <p class="PARRAFO">Campo
@@ -248,7 +242,7 @@
       </tr>
       <tr>
         <td class="titletable">
-          <p class="SUBTITULO"><b><span>Celular</span></b></p>
+          <p class="SUBTITULO">Celular</span></p>
         </td>
         <td>
           <p class="PARRAFO">Este
@@ -257,12 +251,12 @@
             en caso que lo hubiere. Esta informaci&oacute;n cobra especial importancia
             en el caso de los funcionarios internos que atienden fraudes y deben
             ser informados oportunamente de los posibles fraudes detectados por
-            los <a href="CFH_002B.html">procesos de alertas.</a></p>
+            los procesos de alertas.</p>
         </td>
       </tr>
       <tr>
         <td>
-          <p class="SUBTITULO"><b><span>Sucursal</span></b><span></span></p>
+          <p class="SUBTITULO">Sucursal</span></p>
         </td>
         <td>
           <p class="PARRAFO">Este
@@ -275,7 +269,7 @@
       </tr>
       <tr>
         <td class="titletable">
-          <p class="SUBTITULO"><b><span>Estado</span></b></p>
+          <p class="SUBTITULO">Estado</span></p>
         </td>
         <td>
           <p class="PARRAFO">Campo
@@ -285,7 +279,7 @@
       </tr>
       <tr>
         <td class="titletable">
-          <p class="SUBTITULO"><b><span>Usuario</span></b></p>
+          <p class="SUBTITULO">Usuario</span></p>
         </td>
         <td>
           <p class="PARRAFO">Campo
@@ -296,8 +290,8 @@
       </tr>
       <tr>
         <td>
-          <p class="SUBTITULO"><b><span>Tipo
-                de funcionario</span></b>
+          <p class="SUBTITULO">Tipo
+                de funcionario</span>
           </p>
         </td>
         <td>
@@ -309,7 +303,7 @@
       </tr>
       <tr>
         <td class="titletable">
-          <p class="SUBTITULO"><b><span>Perfil</span></b></p>
+          <p class="SUBTITULO">Perfil</span></p>
         </td>
         <td>
           <p class="PARRAFO">Este
@@ -320,8 +314,8 @@
       </tr>
       <tr>
         <td class="titletable">
-          <p class="SUBTITULO"><b><span>Fecha
-                de ingreso</span></b></p>
+          <p class="SUBTITULO">Fecha
+                de ingreso</span></p>
         </td>
         <td>
           <p class="PARRAFO">Campo
@@ -331,8 +325,8 @@
       </tr>
       <tr>
         <td>
-          <p class="SUBTITULO"><b><span>Grupo
-                de afinidad</span></b></p>
+          <p class="SUBTITULO">Grupo
+                de afinidad</span></p>
         </td>
         <td>
           <p class="PARRAFO">Este
@@ -344,8 +338,8 @@
       </tr>
       <tr>
         <td class="titletable">
-          <p class="SUBTITULO"><b><span>Fecha
-                de retiro</span></b></p>
+          <p class="SUBTITULO">Fecha
+                de retiro</span></p>
         </td>
         <td>
           <p class="PARRAFO">En
@@ -355,8 +349,8 @@
       </tr>
       <tr>
         <td class="titletable">
-          <p class="SUBTITULO"><b><span>Sucursal
-                grupo de afinidad</span></b></p>
+          <p class="SUBTITULO">Sucursal
+                grupo de afinidad</span></p>
         </td>
         <td>
           <p class="PARRAFO">En
@@ -366,8 +360,8 @@
       </tr>
       <tr>
         <td>
-          <p class="SUBTITULO"><b><span>Empresa
-                externa </span></b>
+          <p class="SUBTITULO">Empresa
+                externa </span>
           </p>
         </td>
         <td>
@@ -378,8 +372,8 @@
       </tr>
       <tr>
         <td class="titletable">
-          <p class="SUBTITULO"><b><span>Tipo
-                de cuenta</span></b></p>
+          <p class="SUBTITULO">Tipo
+                de cuenta</span></p>
         </td>
         <td>
           <p class="PARRAFO">Si
@@ -390,7 +384,7 @@
       </tr>
       <tr>
         <td class="titletable">
-          <p class="SUBTITULO"><b><span>Direcci&oacute;n</span></b></p>
+          <p class="SUBTITULO">Direcci&oacute;n</span></p>
         </td>
         <td>
           <p class="PARRAFO">En
@@ -401,8 +395,8 @@
       </tr>
       <tr>
         <td>
-          <p class="SUBTITULO"><b><span>N&uacute;mero
-                cuenta</span></b></p>
+          <p class="SUBTITULO">N&uacute;mero
+                cuenta</span></p>
         </td>
         <td>
           <p class="PARRAFO">Una
@@ -422,8 +416,8 @@
       </tr>
       <tr>
         <td>
-          <p class="SUBTITULO"><b><span>Puede
-                reestructurar directamente</span></b></p>
+          <p class="SUBTITULO">Puede
+                reestructurar directamente</span></p>
         </td>
         <td>
           <p class="PARRAFO">Campo
@@ -435,7 +429,7 @@
       </tr>
       <tr>
         <td class="titletable">
-          <p class="SUBTITULO"><b><span>E-mail</span></b></p>
+          <p class="SUBTITULO">E-mail</span></p>
         </td>
         <td>
           <p class="PARRAFO">Este
@@ -443,15 +437,15 @@
             registrar la direcci&oacute;n electr&oacute;nica del funcionario,
             bien sea Interno o Externo a la entidad, informaci&oacute;n que es
             supremamente &uacute;til y necesaria en casos como el de los funcionarios
-            que atienden fraudes y deben ser <a href="CFH_005B.html">informados</a> oportunamente de los posibles
-            fraudes detectados por los <a href="CFH_002B.html">procesos
-              de alertas</a>.</p>
+            que atienden fraudes y deben ser informados oportunamente de los posibles
+            fraudes detectados por los procesos
+              de alertas.</p>
         </td>
       </tr>
       <tr>
         <td class="titletable">
-          <p class="SUBTITULO"><b><span>Pagar
-                a la empresa</span></b></p>
+          <p class="SUBTITULO">Pagar
+                a la empresa</span></p>
         </td>
         <td>
           <p class="PARRAFO">En
@@ -463,9 +457,8 @@
         </td>
       </tr>
       </table>
-      .
-      <p class="PARRAFO"><b><span class="SUBTITULO">
-            Actualizar</span></b>:
+      <p class="PARRAFO"><span class="SUBTITULO">
+            Actualizar</span>:
         Si el usuario invoca la opci&oacute;n Actualizar se despliega un nuevo formulario
         en el cual los &uacute;nicos campos modificables son: Nombre, G&eacute;nero,
         Cargo, Tipo de documento, Agente que depende, Identificaci&oacute;n, Nivel
@@ -475,15 +468,13 @@
         Empresa externa, Tipo de cuenta, Direcci&oacute;n, N&uacute;mero de cuenta,
         Fax, Puede reestructurar directamente, E-mail, y Pagar a la empresa.</span> 
       </p>
-      <p class="TITLE"><img src="../img/NUF_045E6.PNG" 763" height="997"></p>
-      <p class="PARRAFO"><b><span class="SUBTITULO">Detalle:</span></b>
-        <span> Si el usuario invoca la opci&oacute;n Detalle se despliega el siguiente
-          formulario:</span><span>
-
+      <p class="TITLE"><img src="../img/NUF_045E6.PNG"></p>
+      <p class="PARRAFO"><span class="SUBTITULO">Detalle:</span>
+         Si el usuario invoca la opci&oacute;n Detalle se despliega el siguiente
+          formulario:</span>
         </span> 
       </p>
-      <p class="TITLE"><img src="../img/NUF_045E7.PNG" 782" height="381"></p>
-      .
+      <p class="TITLE"><img src="../img/NUF_045E7.PNG"></p>
   </section>
   <script src="../js/menu.js"></script>
 

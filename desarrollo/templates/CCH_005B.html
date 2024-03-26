@@ -18,24 +18,20 @@
             <img class="TITLE"  src= "../img/menu.PNG" alt="Botón de Menú ">
         </div>
     </header>
-   <div id="menuContainer"></div>
-    <script>
-      fetch('menu.html')
-        .then(response => response.text())
-        .then(html => {
-          document.getElementById('menuContainer').innerHTML = html;
-        });
-    </script>
+      <div id="menuContainer"></div>
+  <script>
+    fetch('menu.html')
+      .then(response => response.text())
+      .then(html => {
+        document.getElementById('menuContainer').innerHTML = html;
+      });
+  </script>
 
     <section>
         <div> 
-            <table>
-              <tr> 
-                <td><div> 
+            
                     <p  class="TITLE">Par&aacute;metros de calificaci&oacute;n </p>
-                    </div></td>
-              </tr>
-            </table>
+                    
             <p>A trav&eacute;s de esta   forma o pantalla es posible parametrizar los puntajes asociados a las   combinaciones de los rangos tanto de d&iacute;as de mora como del saldo presentado por   la obligaci&oacute;n, cruz&aacute;ndolos con el tipo de obligaci&oacute;n y el tipo de cobro; la   finalidad es poder diferenciar o priorizar la atenci&oacute;n del cobro de las   obligaciones, acorde con las pol&iacute;ticas de la entidad o casa de cobranza. Debe   observarse especial cuidado al realizar las combinaciones de los valores de los   rangos de plazo y monto, puesto que no es l&oacute;gico asociar el mismo rango de plazo   y valor para una clase de obligaci&oacute;n en m&aacute;s de un tipo de cobro.</p>
             <p>El formulario contiene las opciones Actualizar, Eliminar, 
             y Adicionar.</p>
@@ -48,12 +44,12 @@
             
             <table>
               <tr>
-                <td class="titletable"  ><p class="SUBTITULO"><b><span >Secuencia</span></b></p></td>
+                <td class="titletable"  ><p class="SUBTITULO"><span >Secuencia</span></p></td>
                 <td><p>Campo obligatorio en el cual se debe ingresar las secuencias asignadas a cada uno de los par&aacute;metros de calificaci&oacute;n. </p>        
                 </td>
               </tr>
               <tr>
-                <td class="titletable"><p class="SUBTITULO"><b><span >Tipo cobro </span></b></p></td>
+                <td class="titletable"><p class="SUBTITULO"><span >Tipo cobro </span></p></td>
                 <td><p>Este campo   cuenta con lista de valores poblada mediante la opci&oacute;n de <A href="CCH_002B.html" >Tipos de cobro</A> del grupo de Par&aacute;metros de este   mismo m&oacute;dulo, de la que debe seleccionarse la clase de cobro a   parametrizar.</p>        
                 </td>
               </tr>
@@ -63,12 +59,12 @@
                 </td>
               </tr>
               <tr>
-                <td class="titletable"><p class="SUBTITULO"><b><span ><span >Rango final edad mora </span></span></b></p></td>
+                <td class="titletable"><p class="SUBTITULO"><span ><span >Rango final edad mora </span></span></p></td>
                 <td><p>En este campo   num&eacute;rico de 3 d&iacute;gitos, obligatorio, se indica el periodo del rango referido a la   altura de mora presentado por las obligaciones que se est&aacute;n   parametrizando.</p>        
                 </td>
               </tr>
               <tr>
-                <td class="titletable"><p class="SUBTITULO"><b><span >Valor inicial </span></b></p></td>
+                <td class="titletable"><p class="SUBTITULO"><span >Valor inicial </span></p></td>
                 <td><p>Campo num&eacute;rico   de 14 d&iacute;gitos incluidos 2 decimales, obligatorio, dentro del que se registra el   valor m&iacute;nimo del rango referido al monto del saldo presentado por las   obligaciones que se est&aacute;n parametrizando.</p>
                 </td>
               </tr>
@@ -78,7 +74,7 @@
                 </td>
               </tr>
               <tr>
-                <td class="titletable"><p class="SUBTITULO"><b><span ><span >Puntaje</span></span></b></p></td>
+                <td class="titletable"><p class="SUBTITULO"><span ><span >Puntaje</span></span></p></td>
                 <td><p>Campo num&eacute;rico   de 3 d&iacute;gitos con 2 decimales, obligatorio, que permite asignar una   calificaci&oacute;n o valor porcentual a cada una de las relaciones o combinaciones de tipo obligaci&oacute;n, tipo de cobro, rango altura mora y rango de montos, de   manera que permita diferenciarlas y facilitar as&iacute; una priorizaci&oacute;n para asignar   las gestiones de cobro.</p>        </td>
               </tr>
             </table>

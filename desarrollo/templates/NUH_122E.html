@@ -17,24 +17,20 @@
             <img class="TITLE"  src= "../img/menu.PNG" alt="Botón de Menú ">
         </div>
     </header>
-   <div id="menuContainer"></div>
-    <script>
-      fetch('menu.html')
-        .then(response => response.text())
-        .then(html => {
-          document.getElementById('menuContainer').innerHTML = html;
-        });
-    </script>
+      <div id="menuContainer"></div>
+  <script>
+    fetch('menu.html')
+      .then(response => response.text())
+      .then(html => {
+        document.getElementById('menuContainer').innerHTML = html;
+      });
+  </script>
 
     <section>
         <div> 
-            <table>
-              <tr> 
-                <td><div> 
+            
                     <p  class="TITLE">Par&aacute;metros Llaves de cifrado PGP</p>
-                  </div></td>
-              </tr>
-            </table>
+                  
             <p class="PARRAFO" >El proceso de encripci&oacute;n / desencripci&oacute;n de archivos cifrados con PGP (Pretty  Good Privacy - Privacidad  bastante buena), requiere que quien encripta, mediante el sistema operativo,  genere un juego de archivos conocidos como llave p&uacute;blica y llave privada, los cuales son indispensables para la desencripci&oacute;n de los archivos que viajan cifrados. El aplicativo, a trav&eacute;s de este  formulario le permite a la entidad  definir los datos esenciales para dicho prop&oacute;sito ya que parte de &eacute;stos sos utilizados en la </span><a href="NUH_124E.html"><span >asociaci&oacute;n con las llaves de encripci&oacute;n</span></a><span class="PARRAFO">. </span></p>
             <p  class="PARRAFO">El formulario contiene los enlaces Actualizar, Eliminar, Adicionar,  Detalle y Descargar Llave. </p>
             <p class="TITLE"><img src="../img/NUF_122E1.PNG"659" ></p>
@@ -45,8 +41,8 @@
             <p  class="TITLE">Descripci&oacute;n de campos</p>
             <table>
               <tr>
-                <td class="titletable" ><p class="SUBTITULO"><b>Nombre Llave
-                </b></p></td>
+                <td class="titletable" ><p class="SUBTITULO">Nombre Llave
+                </p></td>
                 <td><p  class="PARRAFO">Campo alfanum&eacute;rico de 30 posiciones, obligatorio, en el que la entidad registra el nombre con el que va a identificar cada una de las llaves creadas para cifras y descifrar los archivos encriptados.</p></td>
               </tr>
               <tr>

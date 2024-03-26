@@ -1,94 +1,109 @@
 <!DOCTYPE html>
 <html lang="es">
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>BANKBU®</title>
-    <link rel="stylesheet" href="../css/pages.css">
-    <link rel="stylesheet" href="../css/style.css">
-    <link rel="icon" href="../img/ACQUIRER-logo.JPG" type="image/x-icon">
-</head>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>BANKBU®</title>
+        <link rel="stylesheet" href="../css/pages.css">
+        <link rel="stylesheet" href="../css/style.css">
+        <link rel="icon" href="../img/ACQUIRER-logo.JPG" type="image/x-icon">
+    </head>
 
-<body>
+    <body>
 
-    <header>
-        <img class="logo" src="../img/logoBankbu_.PNG" alt="Logo de Mi Empresa">
-        <div id="menuBtn">
-            <img class="TITLE" src="../img/menu.PNG" alt="Botón de Menú ">
-        </div>
-    </header>
-   <div id="menuContainer"></div>
-    <script>
-      fetch('menu.html')
-        .then(response => response.text())
-        .then(html => {
-          document.getElementById('menuContainer').innerHTML = html;
-        });
-    </script>
+        <header>
+            <img class="logo" src="../img/logoBankbu_.PNG"
+                alt="Logo de Mi Empresa">
+            <div id="menuBtn">
+                <img class="TITLE" src="../img/menu.PNG" alt="Botón de Menú ">
+            </div>
+        </header>
+        <div id="menuContainer"></div>
+        <script>
+    fetch('menu.html')
+      .then(response => response.text())
+      .then(html => {
+        document.getElementById('menuContainer').innerHTML = html;
+      });
+  </script>
 
-    <section>
-        <div>
-            <table>
-                <tr>
-                    <td>
-                        <div>
-                            <p class="TITLE">Tipos De Mensajes</p>
-                        </div>
-                    </td>
-                </tr>
-            </table>
-            <p class="PARRAFO">A trav&eacute;s de esta funci&oacute;n, se realiza la definici&oacute;n
-                de los tipos de mensajes que pueden ser intercambiados entre el equipo central
-                autorizador y el adquiriente.</p>
-            <p>Cada tipo de mensaje estar&aacute; identificado por un c&oacute;digo preestablecido
-                por el protocolo BASE24, el cual debe ser incluido en los datos del mensaje,
-                para que el receptor pueda identificar la naturaleza de la transacci&oacute;n,
-                decodificar el mensaje y procesarlo. </p>
-            <p class="PARRAFO">El formulario contiene las opciones Actualizar, Eliminar,
-                y Adicionar.</p>
-            <p class="TITLE"><img src="../img/COF_004B.PNG"></p>
+        <section>
+            <div>
+                <table>
+                    <tr>
+                        <td>
+                            <div>
+                                <p class="TITLE">Tipos De Mensajes</p>
+                            </div>
+                        </td>
+                    </tr>
+                </table>
+                <p class="PARRAFO">A trav&eacute;s de esta funci&oacute;n, se
+                    realiza la definici&oacute;n
+                    de los tipos de mensajes que pueden ser intercambiados entre
+                    el equipo central
+                    autorizador y el adquiriente.</p>
+                <p>Cada tipo de mensaje estar&aacute; identificado por un
+                    c&oacute;digo preestablecido
+                    por el protocolo BASE24, el cual debe ser incluido en los
+                    datos del mensaje,
+                    para que el receptor pueda identificar la naturaleza de la
+                    transacci&oacute;n,
+                    decodificar el mensaje y procesarlo. </p>
+                <p class="PARRAFO">El formulario contiene las opciones
+                    Actualizar, Eliminar,
+                    y Adicionar.</p>
+                <p class="TITLE"><img src="../img/COF_004B.PNG"></p>
 
-            <p class="PARRAFO"><span class="SUBTITULO">Adicionar:</span>  Si el usuario invoca la opci&oacute;n Adicionar
-                se despliega un formulario con los siguientes campos<span>:</span> 
-            </p>
-            <p class="TITLE"><img src="../img/COF_004B1.PNG"></p>
+                <p class="PARRAFO"><span class="SUBTITULO">Adicionar:</span> Si
+                    el usuario invoca la opci&oacute;n Adicionar
+                    se despliega un formulario con los siguientes
+                    campos:</span>
+                </p>
+                <p class="TITLE"><img src="../img/COF_004B1.PNG"></p>
 
-            <table>
-                <tr>
-                    <td class="titletable">
-                        <p class="SUBTITULO"><b><span>C&oacute;digo</span></b></p>
-                    </td>
-                    <td>
-                        <p class="PARRAFO">Campo
-                            alfanum&eacute;rico de 4 posiciones, obligatorio, y el cual corresponde
-                            al c&oacute;digo &uacute;nico que identifica el mensaje.</p>
-                    </td>
-                </tr>
-                <tr>
-                    <td class="titletable">
-                        <p class="SUBTITULO">Descripci&oacute;n</p>
-                    </td>
-                    <td>
-                        <p class="PARRAFO">Corresponde
-                            al detalle del mensaje asociado al c&oacute;digo definido anteriormente.</p>
-                    </td>
-                </tr>
-            </table>
-            <p class="PARRAFO"><span class="PARRAFO"><span class="SUBTITULO">Actualizar:</span> 
-                    Si el usuario invoca la opci&oacute;n Actualizar se despliega un nuevo formulario
-                    en el cual el &uacute;nico campo modificable es: Descripci&oacute;n.</span></p>
-            <p class="TITLE"><img src="../img/COF_004B2.PNG"></p>
+                <table>
+                    <tr>
+                        <td class="titletable">
+                            <p class="SUBTITULO">C&oacute;digo</span></p>
+                        </td>
+                        <td>
+                            <p class="PARRAFO">Campo
+                                alfanum&eacute;rico de 4 posiciones,
+                                obligatorio, y el cual corresponde
+                                al c&oacute;digo &uacute;nico que identifica el
+                                mensaje.</p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="titletable">
+                            <p class="SUBTITULO">Descripci&oacute;n</p>
+                        </td>
+                        <td>
+                            <p class="PARRAFO">Corresponde
+                                al detalle del mensaje asociado al c&oacute;digo
+                                definido anteriormente.</p>
+                        </td>
+                    </tr>
+                </table>
+                <p class="PARRAFO"><span class="PARRAFO"><span
+                            class="SUBTITULO">Actualizar:</span>
+                        Si el usuario invoca la opci&oacute;n Actualizar se
+                        despliega un nuevo formulario
+                        en el cual el &uacute;nico campo modificable es:
+                        Descripci&oacute;n.</span></p>
+                <p class="TITLE"><img src="../img/COF_004B2.PNG"></p>
 
-    </section>
-    <script src="../js/menu.js"></script>
-</body>
-<div id="footerContainer"></div>
-<script>
+            </section>
+            <script src="../js/menu.js"></script>
+        </body>
+        <div id="footerContainer"></div>
+        <script>
   fetch('footer.html')
     .then(response => response.text())
     .then(html => {
       document.getElementById('footerContainer').innerHTML = html;
     });
 </script>
-</html>
+    </html>

@@ -1,114 +1,133 @@
 <!DOCTYPE html>
 <html lang="es">
 
-<head>
+  <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>BANKBU®</title>
     <link rel="stylesheet" href="../css/pages.css">
     <link rel="stylesheet" href="../css/style.css">
- <link rel="icon" href="../img/ACQUIRER-logo.JPG" type="image/x-icon">
-</head>
+    <link rel="icon" href="../img/ACQUIRER-logo.JPG" type="image/x-icon">
+  </head>
 
-<body>
+  <body>
     <header>
-        <img class="logo" src="../img/logoBankbu_.PNG" alt="Logo de Mi Empresa">
-        <div id="menuBtn">
-            <img class="TITLE"  src= "../img/menu.PNG" alt="Botón de Menú ">
-        </div>
+      <img class="logo" src="../img/logoBankbu_.PNG" alt="Logo de Mi Empresa">
+      <div id="menuBtn">
+        <img class="TITLE" src="../img/menu.PNG" alt="Botón de Menú ">
+      </div>
     </header>
-   <div id="menuContainer"></div>
+    <div id="menuContainer"></div>
     <script>
-      fetch('menu.html')
-        .then(response => response.text())
-        .then(html => {
-          document.getElementById('menuContainer').innerHTML = html;
-        });
-    </script>
+    fetch('menu.html')
+      .then(response => response.text())
+      .then(html => {
+        document.getElementById('menuContainer').innerHTML = html;
+      });
+  </script>
 
     <section>
-        <div> 
-            <table>
-              <tr> 
-                <td><div> 
-                    <p  class="TITLE">Par&aacute;metros de solicitudes</p>
-                    </div></td>
-              </tr>
-            </table>
-            <p class="PARRAFO"><span class="SUBTITULO">Filtros:</span>  Conjunto de campos 
-              que permiten determinar los filtros de negaci&oacute;n que efectivamente aplican 
-              para cada etapa de una solicitud, y a pesar de ser negadas o detectadas por 
-              el filtro, puede permitirse el paso a la siguiente etapa.</p>
-            <p class="PARRAFO">El formulario contiene las opciones Actualizar, Eliminar, 
-              y Adicionar. Adicionalmente, cuenta en la parte superior con un bot&oacute;n 
-              para volver al <a href="SOH_001B.html" >formulario principal</a>.</p>
-            <p class="TITLE"><img src="../img/SOF_001B6.PNG"704" height="456"></p>
-            
-            
-            <p><span class="SUBTITULO">Adicionar:</span>  Si el usuario invoca la opci&oacute;n 
-              Adicionar se despliega un formulario con los siguientes campos<span >:</span></p>
-            <p class="TITLE"><img src="../img/SOF_001B7.PNG"382" height="255"></p>
-            <table>
-              <tr> 
-                <td class="titletable"><p class="SUBTITULO"><b>C&oacute;digo</b></p></td>
-                <td><p class="PARRAFO">Campo 
-                    num&eacute;rico de 3 posiciones, obligatorio, en el que se registra 
-                    el c&oacute;digo asignado a cada una de los diferentes Filtros de negaci&oacute;n 
-                    al avanzar las solicitudes.</p></td>
-              </tr>
-              <tr> 
-                <td  class="titletable" ><p class="SUBTITULO">Nombre</p></td>
-                <td><p class="PARRAFO">En 
-                    este campo alfanum&eacute;rico de 60 posiciones, obligatorio, se debe 
-                    registrar el nombre o breve descriptivo de cada filtro.</p></td>
-              </tr>
-              <tr> 
-                <td class="titletable"><p class="SUBTITULO"><b>Descripci&oacute;n</b></p></td>
-                <td><p class="PARRAFO">Campo 
-                    alfanum&eacute;rico de 2000 caracteres, no obligatorio, en el cual se 
-                    pueden regsitrar datos relevantes del filtro de negaci&oacute;n.</p></td>
-              </tr>
-              <tr> 
-                <td  class="titletable" ><p class="SUBTITULO">Rutina</p></td>
-                <td><p class="PARRAFO">En 
-                    este campo alfanum&eacute;rico de 100 posiciones, obligatorio, se debe 
-                    regitrar la rutina con las validaciones que el filtro tendr&aacute; 
-                    en cuenta al avanzar las solicitudes.</p></td>
-              </tr>
-              <tr> 
-                <td class="titletable"><p class="SUBTITULO">Motivos 
-                    de negaci&oacute;n</p></td>
-                <td><p class="PARRAFO">Campo obligatorio que contiene una lista 
-                    de valores con los Motivos de negaci&oacute;n parametrizados en el n&uacute;cleo.</p></td>
-              </tr>
-            </table>
-           
-            <p class="PARRAFO"><span class="PARRAFO"><span class="SUBTITULO">Actualizar:</span>  
-              Si el usuario invoca la opci&oacute;n Actualizar se despliega un nuevo formulario 
-              en el cual los &uacute;nicos campos modificables son: Nombre, Descripci&oacute;n, 
-              Rutina, y Motivos de negaci&oacute;n.</span></p>
-            <p class="TITLE"><img src="../img/SOF_001B8.PNG"383" height="256"></p>
-           
-            <p><b><b><span class="PARRAFO"><a href="SOH_001B.html" >Formulario 
-              principal</a> |</span></b></b><a href="SOH_001B2.html" >Funcionarios</a> |<span > 
-              <b></b></span><a href="SOH_005B4.html"><b><b><span class="PARRAFO"></span></b></b> 
-              </a><a href="SOH_001B3.html" >Calificaci&oacute;n</a><b><b><span class="PARRAFO">|</span></b></b> 
-              <span class="PARRAFO"><a href="SOH_001B4.html" >Negaci&oacute;n</a> |<span > 
-              <b></b></span><a href="SOH_005B4.html"><b><b><span class="PARRAFO"></span></b></b> 
-              </a><a href="SOH_001B5.html" >Variables cupo</a><b><b><span class="PARRAFO">|</span></b></b> 
-              <span class="PARRAFO"><a href="SOH_001B6.html" >Globo de localizaci&oacute;n</a></span></span></p>
-            
-        </section>
-    <script src="../js/menu.js"></script>
+      <div>
 
-    <div id="footerContainer"></div>
-<script>
+        <p class="TITLE">Par&aacute;metros de solicitudes</p>
+
+        <p class="PARRAFO"><span class="SUBTITULO">Filtros:</span> Conjunto de
+          campos
+          que permiten determinar los filtros de negaci&oacute;n que
+          efectivamente aplican
+          para cada etapa de una solicitud, y a pesar de ser negadas o
+          detectadas por
+          el filtro, puede permitirse el paso a la siguiente etapa.</p>
+        <p class="PARRAFO">El formulario contiene las opciones Actualizar,
+          Eliminar,
+          y Adicionar. Adicionalmente, cuenta en la parte superior con un
+          bot&oacute;n
+          para volver al <a href="SOH_001B.html">formulario principal</a>.</p>
+        <p class="TITLE"><img src="../img/SOF_001B6.PNG"></p>
+
+        <p><span class="SUBTITULO">Adicionar:</span> Si el usuario invoca la
+          opci&oacute;n
+          Adicionar se despliega un formulario con los siguientes
+          campos<span>:</span></p>
+        <p class="TITLE"><img src="../img/SOF_001B7.PNG"></p>
+        <table>
+          <tr>
+            <td class="titletable"><p class="SUBTITULO">C&oacute;digo</p></td>
+            <td><p class="PARRAFO">Campo
+                num&eacute;rico de 3 posiciones, obligatorio, en el que se
+                registra
+                el c&oacute;digo asignado a cada una de los diferentes Filtros
+                de negaci&oacute;n
+                al avanzar las solicitudes.</p></td>
+          </tr>
+          <tr>
+            <td class="titletable"><p class="SUBTITULO">Nombre</p></td>
+            <td><p class="PARRAFO">En
+                este campo alfanum&eacute;rico de 60 posiciones, obligatorio, se
+                debe
+                registrar el nombre o breve descriptivo de cada filtro.</p></td>
+          </tr>
+          <tr>
+            <td class="titletable"><p
+                class="SUBTITULO">Descripci&oacute;n</p></td>
+            <td><p class="PARRAFO">Campo
+                alfanum&eacute;rico de 2000 caracteres, no obligatorio, en el
+                cual se
+                pueden regsitrar datos relevantes del filtro de
+                negaci&oacute;n.</p></td>
+          </tr>
+          <tr>
+            <td class="titletable"><p class="SUBTITULO">Rutina</p></td>
+            <td><p class="PARRAFO">En
+                este campo alfanum&eacute;rico de 100 posiciones, obligatorio,
+                se debe
+                regitrar la rutina con las validaciones que el filtro
+                tendr&aacute;
+                en cuenta al avanzar las solicitudes.</p></td>
+          </tr>
+          <tr>
+            <td class="titletable"><p class="SUBTITULO">Motivos
+                de negaci&oacute;n</p></td>
+            <td><p class="PARRAFO">Campo obligatorio que contiene una lista
+                de valores con los Motivos de negaci&oacute;n parametrizados en
+                el n&uacute;cleo.</p></td>
+          </tr>
+        </table>
+
+        <p class="PARRAFO"><span class="PARRAFO"><span
+              class="SUBTITULO">Actualizar:</span>
+            Si el usuario invoca la opci&oacute;n Actualizar se despliega un
+            nuevo formulario
+            en el cual los &uacute;nicos campos modificables son: Nombre,
+            Descripci&oacute;n,
+            Rutina, y Motivos de negaci&oacute;n.</span></p>
+        <p class="TITLE"><img src="../img/SOF_001B8.PNG"></p>
+
+        <p><span class="PARRAFO"><a href="SOH_001B.html">Formulario
+              principal</a> |</span><a href="SOH_001B2.html">Funcionarios</a>
+          |<span>
+          </span><a href="SOH_005B4.html"><span class="PARRAFO"></span>
+          </a><a href="SOH_001B3.html">Calificaci&oacute;n</a><span
+            class="PARRAFO">|</span>
+          <span class="PARRAFO"><a href="SOH_001B4.html">Negaci&oacute;n</a>
+            |<span>
+            </span><a href="SOH_005B4.html"><span class="PARRAFO"></span>
+            </a><a href="SOH_001B5.html">Variables cupo</a><span
+              class="PARRAFO">|</span>
+            <span class="PARRAFO"><a href="SOH_001B6.html">Globo de
+                localizaci&oacute;n</a></span></span></p>
+
+      </section>
+      <script src="../js/menu.js"></script>
+
+      <div id="footerContainer"></div>
+      <script>
   fetch('footer.html')
     .then(response => response.text())
     .then(html => {
       document.getElementById('footerContainer').innerHTML = html;
     });
 </script>
-</body>
+    </body>
 
-</html>
+  </html>

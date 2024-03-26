@@ -1,137 +1,155 @@
 <!DOCTYPE html>
 <html lang="es">
 
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>BANKBU®</title>
-  <link rel="stylesheet" href="../css/pages.css">
-  <link rel="stylesheet" href="../css/style.css">
-  <link rel="icon" href="../img/ACQUIRER-logo.JPG" type="image/x-icon">
-</head>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BANKBU®</title>
+    <link rel="stylesheet" href="../css/pages.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="icon" href="../img/ACQUIRER-logo.JPG" type="image/x-icon">
+  </head>
 
-<body>
+  <body>
 
-  <header>
-    <img class="logo" src="../img/logoBankbu_.PNG" alt="Logo de Mi Empresa">
-    <div id="menuBtn">
-      <img class="TITLE" src="../img/menu.PNG" alt="Botón de Menú ">
-    </div>
-  </header>
-  <div id="menuContainer"></div>
+    <header>
+      <img class="logo" src="../img/logoBankbu_.PNG" alt="Logo de Mi Empresa">
+      <div id="menuBtn">
+        <img class="TITLE" src="../img/menu.PNG" alt="Botón de Menú ">
+      </div>
+    </header>
+    <div id="menuContainer"></div>
     <script>
-      fetch('menu.html')
-        .then(response => response.text())
-        .then(html => {
-          document.getElementById('menuContainer').innerHTML = html;
-        });
-    </script>
+    fetch('menu.html')
+      .then(response => response.text())
+      .then(html => {
+        document.getElementById('menuContainer').innerHTML = html;
+      });
+  </script>
 
-  <section>
-    <div>
-      <table>
-        <tr>
-          <td>
-            <div>
-              <p class="TITLE">Puertos</p>
-            </div>
-          </td>
-        </tr>
-      </table>
-      <p class="PARRAFO"><span class="SUBTITULO">L&iacute;mite de autorizaciones:</span> 
-        Esta función permite definir por: Puerto, Producto, Línea de crédito y Moneda, los límites máximos que puede
-        efectuar un tarjetahabiente en utilizaciones de su tarjeta, durante un determinado período: diario, semanal o
-        mensual.</p>
-      <p class="PARRAFO">El formulario contiene las opciones Actualizar, Eliminar,
-        Adicionar y Detalle. Adicionalmente, cuenta con un bot&oacute;n en la parte
-        superior para ir a la opci&oacute;n anterior: <a href="COH_007B.html">Puertos</a>; tambi&eacute;n cuenta con un
-        filtro de b&uacute;squeda. </p>
-      <p class="TITLE"><img src="../img/COF_007B11.PNG"></p>
+    <section>
+      <div>
+        <p class="TITLE">Puertos</p>
+              
+        <p class="PARRAFO"><span class="SUBTITULO">L&iacute;mite de
+            autorizaciones:</span>
+          Esta función permite definir por: Puerto, Producto, Línea de crédito y
+          Moneda, los límites máximos que puede
+          efectuar un tarjetahabiente en utilizaciones de su tarjeta, durante un
+          determinado período: diario, semanal o
+          mensual.</p>
+        <p class="PARRAFO">El formulario contiene las opciones Actualizar,
+          Eliminar,
+          Adicionar y Detalle. Adicionalmente, cuenta con un bot&oacute;n en la
+          parte
+          superior para ir a la opci&oacute;n anterior: <a
+            href="COH_007B.html">Puertos</a>; tambi&eacute;n cuenta con un
+          filtro de b&uacute;squeda. </p>
+        <p class="TITLE"><img src="../img/COF_007B11.PNG"></p>
 
-      <p><span class="SUBTITULO">Filtro:</span>  Se pueden realizar consultas a trav&eacute;s
-        de las siguientes opciones:</p>
-      <p class="TITLE"><img src="../img/COF_007B8.PNG"></p>
-      <p><span class="SUBTITULO">Adicionar:</span>  Si el usuario invoca
-        la opci&oacute;n Adicionar se despliega un formulario con los siguientes campos<span>:</span> 
-      </p>
-      <p class="TITLE"><img src="../img/COF_007B12.PNG"></p>
+        <p><span class="SUBTITULO">Filtro:</span> Se pueden realizar consultas a
+          trav&eacute;s
+          de las siguientes opciones:</p>
+        <p class="TITLE"><img src="../img/COF_007B8.PNG"></p>
+        <p><span class="SUBTITULO">Adicionar:</span> Si el usuario invoca
+          la opci&oacute;n Adicionar se despliega un formulario con los
+          siguientes campos:</span>
+        </p>
+        <p class="TITLE"><img src="../img/COF_007B12.PNG"></p>
 
-      <table>
-        <tr>
-          <td class="titletable">
-            <p class="SUBTITULO"><b>Producto</b></p>
-          </td>
-          <td>
-            <p class="PARRAFO">A
-              trav&eacute;s de la lista de valores que la entidad selecciona el <a href="MEH_002B.html">producto</a>
-              (Bin, Segmento, Grupo de afinidad) sobre el cual se realizar&aacute;n las validaciones,
-              con su correspondiente descripci&oacute;n.</p>
-          </td>
-        </tr>
-        <tr>
-          <td class="titletable">
-            <p class="SUBTITULO">L&iacute;nea
-              de cr&eacute;dito</p>
-          </td>
-          <td>
-            <p class="PARRAFO">Campo obligatorio, se debe seleccionar de la lista de valores poblada previamente en las
-              Líneas de crédito de la opción Producto, sobre la cual se realizarán las validaciones.</p>
-          </td>
-        </tr>
-        <tr>
-          <td class="titletable">
-            <p class="SUBTITULO">Moneda</p>
-          </td>
-          <td>
-            <p class="PARRAFO">Campo obligatorio, el sistema de forma automática, le asocia la moneda en la que está
-              expresada la línea de crédito de acuerdo con la definición que la entidad haya hecho.</p>
-          </td>
-        </tr>
-        <tr>
-          <td class="titletable">
-            <p class="SUBTITULO">Máximo número de transacciones por día / semana / mes </p>
-          </td>
-          <td>
-            <p class="PARRAFO">Campo numérico de máximo seis dígitos, no obligatorio, el que la entidad define la
-              cantidad máxima de utilizaciones que puede hacer el tarjetahabiente en cada una de las tres
-              periodicidades.</p>
-          </td>
-        </tr>
-        <tr>
-          <td class="titletable">
-            <p class="SUBTITULO">Máximo valor transacciones por día / semana / mes</p>
-          </td>
-          <td>
-            <p class="PARRAFO">Campo numérico de máximo quince dígitos, no obligatorio, el que la entidad define el
-              monto máximo que pueden sumar las utilizaciones realizadas por el tarjetahabiente en cada una de las tres
-              periodicidades.</p>
-          </td>
-        </tr>
+        <table>
+          <tr>
+            <td class="titletable">
+              <p class="SUBTITULO">Producto</p>
+            </td>
+            <td>
+              <p class="PARRAFO">A
+                trav&eacute;s de la lista de valores que la entidad selecciona
+                el <a href="MEH_002B.html">producto</a>
+                (Bin, Segmento, Grupo de afinidad) sobre el cual se
+                realizar&aacute;n las validaciones,
+                con su correspondiente descripci&oacute;n.</p>
+            </td>
+          </tr>
+          <tr>
+            <td class="titletable">
+              <p class="SUBTITULO">L&iacute;nea
+                de cr&eacute;dito</p>
+            </td>
+            <td>
+              <p class="PARRAFO">Campo obligatorio, se debe seleccionar de la
+                lista de valores poblada previamente en las
+                Líneas de crédito de la opción Producto, sobre la cual se
+                realizarán las validaciones.</p>
+            </td>
+          </tr>
+          <tr>
+            <td class="titletable">
+              <p class="SUBTITULO">Moneda</p>
+            </td>
+            <td>
+              <p class="PARRAFO">Campo obligatorio, el sistema de forma
+                automática, le asocia la moneda en la que está
+                expresada la línea de crédito de acuerdo con la definición que
+                la entidad haya hecho.</p>
+            </td>
+          </tr>
+          <tr>
+            <td class="titletable">
+              <p class="SUBTITULO">Máximo número de transacciones por día /
+                semana / mes </p>
+            </td>
+            <td>
+              <p class="PARRAFO">Campo numérico de máximo seis dígitos, no
+                obligatorio, el que la entidad define la
+                cantidad máxima de utilizaciones que puede hacer el
+                tarjetahabiente en cada una de las tres
+                periodicidades.</p>
+            </td>
+          </tr>
+          <tr>
+            <td class="titletable">
+              <p class="SUBTITULO">Máximo valor transacciones por día / semana /
+                mes</p>
+            </td>
+            <td>
+              <p class="PARRAFO">Campo numérico de máximo quince dígitos, no
+                obligatorio, el que la entidad define el
+                monto máximo que pueden sumar las utilizaciones realizadas por
+                el tarjetahabiente en cada una de las tres
+                periodicidades.</p>
+            </td>
+          </tr>
 
-      </table>
-      <p class="PARRAFO"><span class="PARRAFO"><span class="SUBTITULO">Actualizar:</span> 
-          Si el usuario invoca la opción Actualizar, se despliega un nuevo formulario en el cual, los únicos campos
-          modificables son: Máximo número de transacciones por día / semana / mes y Máximo valor transacciones por día /
-          semana / mes.</span></p>
-      <p class="TITLE"><img src="../img/COF_007B13.PNG"></p>
+        </table>
+        <p class="PARRAFO"><span class="PARRAFO"><span
+              class="SUBTITULO">Actualizar:</span>
+            Si el usuario invoca la opción Actualizar, se despliega un nuevo
+            formulario en el cual, los únicos campos
+            modificables son: Máximo número de transacciones por día / semana /
+            mes y Máximo valor transacciones por día /
+            semana / mes.</span></p>
+        <p class="TITLE"><img src="../img/COF_007B13.PNG"></p>
 
-      <p class="PARRAFO"><span class="SUBTITULO">Detalle:</span>  Si el usuario invoca
-        la opci&oacute;n Detalle se despliega el siguiente formulario: <span></span></p>
-      <p class="TITLE"><img src="../img/COF_007B14.PNG"></p>
+        <p class="PARRAFO"><span class="SUBTITULO">Detalle:</span> Si el usuario
+          invoca
+          la opci&oacute;n Detalle se despliega el siguiente formulario:
+          </p>
+        <p class="TITLE"><img src="../img/COF_007B14.PNG"></p>
 
-      <a href="COH_007B.html">Puertos</a><span><b> | </b></span><a href="COH_007B1.html">Validaciones
-        por puerto</a><b><span> | </span></b><a href="COH_007B2.html">Direcciones</a>
-      <span><b>|</b></span> 
-      <a href="COH_007B5.html">Límite de autorizaciones ContacLess</a>
-      <span><b> | </b></span><a href="COH_007B4.html">Par&aacute;metros
-        valida existencia autorizaci&oacute;n</a>
+        <a href="COH_007B.html">Puertos</a> | </span><a
+          href="COH_007B1.html">Validaciones
+          por puerto</a> | </span><a href="COH_007B2.html">Direcciones</a>
+        |</span>
+        <a href="COH_007B5.html">Límite de autorizaciones ContacLess</a>
+         | </span><a href="COH_007B4.html">Par&aacute;metros
+          valida existencia autorizaci&oacute;n</a>
 
-
-  </section>
-  <script src="../js/menu.js"></script>
-</body>
-<div id="footerContainer"></div>
-<script>
+      </section>
+      <script src="../js/menu.js"></script>
+    </body>
+    <div id="footerContainer"></div>
+    <script>
   fetch('footer.html')
     .then(response => response.text())
     .then(html => {
@@ -139,4 +157,4 @@
     });
 </script>
 
-</html>
+  </html>

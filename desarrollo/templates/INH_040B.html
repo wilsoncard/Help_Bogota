@@ -1,219 +1,246 @@
 <!DOCTYPE html>
 <html lang="es">
 
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>BANKBU®</title>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BANKBU®</title>
 
-  <link rel="stylesheet" href="../css/pages.css">
-  <link rel="stylesheet" href="../css/style.css">
-  <link rel="icon" href="../img/ACQUIRER-logo.JPG" type="image/x-icon">
-</head>
+    <link rel="stylesheet" href="../css/pages.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="icon" href="../img/ACQUIRER-logo.JPG" type="image/x-icon">
+  </head>
 
-<body>
+  <body>
 
-  <header>
-    <img class="logo" src="../img/logoBankbu_.PNG" alt="Logo de Mi Empresa">
-    <div id="menuBtn">
-      <img class="TITLE" src="../img/menu.PNG" alt="Botón de Menú ">
-    </div>
-  </header>
- <div id="menuContainer"></div>
+    <header>
+      <img class="logo" src="../img/logoBankbu_.PNG" alt="Logo de Mi Empresa">
+      <div id="menuBtn">
+        <img class="TITLE" src="../img/menu.PNG" alt="Botón de Menú ">
+      </div>
+    </header>
+    <div id="menuContainer"></div>
     <script>
-      fetch('menu.html')
-        .then(response => response.text())
-        .then(html => {
-          document.getElementById('menuContainer').innerHTML = html;
-        });
-    </script>
+    fetch('menu.html')
+      .then(response => response.text())
+      .then(html => {
+        document.getElementById('menuContainer').innerHTML = html;
+      });
+  </script>
 
-  <section>
-    <div>
-      <table>
-        <tr>
-          <td>
-            <div>
-              <p class="TITLE">Consulta de movimientos</p>
-            </div>
-          </td>
-        </tr>
-      </table>
-      <p class="PARRAFO">A trav&eacute;s de esta pantalla se posibilita la consulta
-        por diferentes criterios, de la informaci&oacute;n del movimiento transaccional
-        que viaja hacia y desde los compensadores.</p>
-      <p class="PARRAFO"><span class="SUBTITULO">Ver par&aacute;metros (Filtro):</span>
-        Conjunto de campos que contiene las diferentes variables que pueden ser tomadas
-        individualmente o combinadas y una vez diligenciados y/o seleccionados basta
-        con presionar el bot&oacute;n Buscar para obtener la informaci&oacute;n
-        deseada. Es necesario ingresar al menos un grupo de las fechas para realizar la busqueda. </p>
-      <p class="PARRAFO">El formulario cuenta con las siguientes
-        opciones<span class="PARRAFO">:</span> <a href="INH_040B1.html">Movimiento
-          diario</a>, <a href="INH_040B2.html">Fraudes</a>, <a href="INH_006B5.html"></a><a
-          href="INH_040B3.html">Pendientes</a>,
-        <span class="LINK2 #1"><a href="INH_040B4.html">Rechazo</a></span><a href="INH_040B4.html"> cargue</a>,
-        <a href="INH_040B5.html">Contracargos</a>, <a href="INH_040B6.html">Efectos
-          al cobro</a>, <a href="INH_040B7.html">Intercambio</a>,
-        y <span></span><span><a href="INH_040B8.html">Rechazo cargue convenios</a></span><span>.</span>
-      </p>
-      <p class="TITLE"><img src="../img/INF_040B.PNG"></p>
+    <section>
+      <div>
+        <p class="TITLE">Consulta de movimientos</p>
+              
+        <p class="PARRAFO">A trav&eacute;s de esta pantalla se posibilita la
+          consulta
+          por diferentes criterios, de la informaci&oacute;n del movimiento
+          transaccional
+          que viaja hacia y desde los compensadores.</p>
+        <p class="PARRAFO"><span class="SUBTITULO">Ver par&aacute;metros
+            (Filtro):</span>
+          Conjunto de campos que contiene las diferentes variables que pueden
+          ser tomadas
+          individualmente o combinadas y una vez diligenciados y/o seleccionados
+          basta
+          con presionar el bot&oacute;n Buscar para obtener la
+          informaci&oacute;n
+          deseada. Es necesario ingresar al menos un grupo de las fechas para
+          realizar la busqueda. </p>
+        <p class="PARRAFO">El formulario cuenta con las siguientes
+          opciones<span class="PARRAFO">:</span> <a
+            href="INH_040B1.html">Movimiento
+            diario</a>, <a href="INH_040B2.html">Fraudes</a>, <a
+            href="INH_006B5.html"></a><a
+            href="INH_040B3.html">Pendientes</a>,
+          <span class="LINK2 #1"><a href="INH_040B4.html">Rechazo</a></span><a
+            href="INH_040B4.html"> cargue</a>,
+          <a href="INH_040B5.html">Contracargos</a>, <a
+            href="INH_040B6.html">Efectos
+            al cobro</a>, <a href="INH_040B7.html">Intercambio</a>,
+          y <a href="INH_040B8.html">Rechazo cargue
+              convenios</a></span>.</span>
+        </p>
+        <p class="TITLE"><img src="../img/INF_040B.PNG"></p>
 
-      <table>
-        <tr>
-          <td class="titletable">
-            <p class="SUBTITULO">Fecha
-              proceso desde</p>
-          </td>
-          <td>
-            <p class="PARRAFO">Este
-              campo permite ingresar cualquier dato v&aacute;lido con el formato YYYY-MM-DD.</p>
-          </td>
-        </tr>
-        <tr>
-          <td class="titletable">
-            <p class="SUBTITULO">Fecha
-              proceso hasta</p>
-          </td>
-          <td>
-            <p class="PARRAFO">Este
-              campo permite ingresar cualquier dato v&aacute;lido con el formato YYYY-MM-DD.</p>
-          </td>
-        </tr>
-        <tr>
-          <td class="titletable">
-            <p class="SUBTITULO">Fecha
-              transacci&oacute;n desde</p>
-          </td>
-          <td>
-            <p class="PARRAFO">Este
-              campo permite ingresar cualquier dato v&aacute;lido con el formato YYYY-MM-DD.</p>
-          </td>
-        </tr>
-        <tr>
-          <td class="titletable">
-            <p class="SUBTITULO">Fecha
-              transacci&oacute;n hasta</p>
-          </td>
-          <td>
-            <p class="PARRAFO">Este
-              campo permite ingresar cualquier dato v&aacute;lido con el formato YYYY-MM-DD.</p>
-          </td>
-        </tr>
-        <tr>
-          <td class="titletable">
-            <p class="SUBTITULO">Origen</p>
-          </td>
-          <td>
-            <p class="PARRAFO">Lista
-              de valores parametrizada mediante la opci&oacute;n <a href="NUH_027B.html">Or&iacute;genes
-                de transacciones</a> del N&uacute;cleo, que permite ingresar cualquier
-              valor num&eacute;rico de m&aacute;ximo 3 d&iacute;gitos.</p>
-          </td>
-        </tr>
-        <tr>
-          <td class="titletable">
-            <p class="SUBTITULO">Transacci&oacute;n
-              interna </p>
-          </td>
-          <td>
-            <p class="PARRAFO">El
-              campo Transacci&oacute;n interna admite cualquier valor num&eacute;rico
-              de m&aacute;ximo 3 d&iacute;gitos. La transacci&oacute;n interna tambi&eacute;n
-              se puede diligenciar por medio de lista de valores adjunta.</p>
-          </td>
-        </tr>
-        <tr>
-          <td class="titletable">
-            <p class="SUBTITULO">N&uacute;mero
-              de tarjeta</p>
-          </td>
-          <td>
-            <p class="PARRAFO">Este
-              campo permite ingresar cualquier valor alfanum&eacute;rico de 23 caracteres.</p>
-          </td>
-        </tr>
-        <tr>
-          <td>
-            <p class="SUBTITULO">Sucursal</p>
-          </td>
-          <td>
-            <p class="PARRAFO">Admite
-              cualquier valor num&eacute;rico de m&aacute;ximo 4 d&iacute;gitos. Posee
-              lista de valores poblada a trav&eacute;s de la opci&oacute;n <a href="NUH_020B.html">Estructura
-                org&aacute;nica</a> del N&uacute;cleo, de la que puede seleccionarse
-              la oficina a consultar.</p>
-          </td>
-        </tr>
-        <tr>
-          <td class="titletable">
-            <p class="SUBTITULO"><b>Establecimiento</b></p>
-          </td>
-          <td>
-            <p class="PARRAFO">El
-              campo Establecimiento admite cualquier valor num&eacute;rico de m&aacute;ximo
-              11 d&iacute;gitos. Posee lista de valores poblada por medio de la opci&oacute;n
-              <a href="NUH_027B.html">Or&iacute;genes de transacciones</a> del N&uacute;cleo,
-              de la que puede seleccionarse aquel para el cual se desee consultar
-              su movimiento de intercambio.
-            </p>
-          </td>
-        </tr>
-        <tr>
-          <td class="titletable">
-            <p class="SUBTITULO"><b>N&uacute;mero
-                autorizaci&oacute;n </b></p>
-          </td>
-          <td>
-            <p class="PARRAFO">El
-              campo n&uacute;mero de autorizaci&oacute;n es alfanum&eacute;rico de
-              hasta 6 posiciones
-            </p>
-          </td>
-        </tr>
-        <tr>
-          <td class="titletable">
-            <p class="SUBTITULO"><b>Boleta
-                de ruta</b></p>
-          </td>
-          <td>
-            <p class="PARRAFO">El
-              campo boleta de ruta es num&eacute;rico de hasta 12 d&iacute;gitos
-            </p>
-          </td>
-        </tr>
-        <tr>
-          <td class="titletable">
-            <p class="SUBTITULO"><b>Secuencia</b></p>
-          </td>
-          <td>
-            <p class="PARRAFO">El
-              campo secuencia es n&uacute;merico de hasta 8 d&iacute;gitos.
-            </p>
-          </td>
-        </tr>
-      </table>
+        <table>
+          <tr>
+            <td class="titletable">
+              <p class="SUBTITULO">Fecha
+                proceso desde</p>
+            </td>
+            <td>
+              <p class="PARRAFO">Este
+                campo permite ingresar cualquier dato v&aacute;lido con el
+                formato YYYY-MM-DD.</p>
+            </td>
+          </tr>
+          <tr>
+            <td class="titletable">
+              <p class="SUBTITULO">Fecha
+                proceso hasta</p>
+            </td>
+            <td>
+              <p class="PARRAFO">Este
+                campo permite ingresar cualquier dato v&aacute;lido con el
+                formato YYYY-MM-DD.</p>
+            </td>
+          </tr>
+          <tr>
+            <td class="titletable">
+              <p class="SUBTITULO">Fecha
+                transacci&oacute;n desde</p>
+            </td>
+            <td>
+              <p class="PARRAFO">Este
+                campo permite ingresar cualquier dato v&aacute;lido con el
+                formato YYYY-MM-DD.</p>
+            </td>
+          </tr>
+          <tr>
+            <td class="titletable">
+              <p class="SUBTITULO">Fecha
+                transacci&oacute;n hasta</p>
+            </td>
+            <td>
+              <p class="PARRAFO">Este
+                campo permite ingresar cualquier dato v&aacute;lido con el
+                formato YYYY-MM-DD.</p>
+            </td>
+          </tr>
+          <tr>
+            <td class="titletable">
+              <p class="SUBTITULO">Origen</p>
+            </td>
+            <td>
+              <p class="PARRAFO">Lista
+                de valores parametrizada mediante la opci&oacute;n <a
+                  href="NUH_027B.html">Or&iacute;genes
+                  de transacciones</a> del N&uacute;cleo, que permite ingresar
+                cualquier
+                valor num&eacute;rico de m&aacute;ximo 3 d&iacute;gitos.</p>
+            </td>
+          </tr>
+          <tr>
+            <td class="titletable">
+              <p class="SUBTITULO">Transacci&oacute;n
+                interna </p>
+            </td>
+            <td>
+              <p class="PARRAFO">El
+                campo Transacci&oacute;n interna admite cualquier valor
+                num&eacute;rico
+                de m&aacute;ximo 3 d&iacute;gitos. La transacci&oacute;n interna
+                tambi&eacute;n
+                se puede diligenciar por medio de lista de valores adjunta.</p>
+            </td>
+          </tr>
+          <tr>
+            <td class="titletable">
+              <p class="SUBTITULO">N&uacute;mero
+                de tarjeta</p>
+            </td>
+            <td>
+              <p class="PARRAFO">Este
+                campo permite ingresar cualquier valor alfanum&eacute;rico de 23
+                caracteres.</p>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <p class="SUBTITULO">Sucursal</p>
+            </td>
+            <td>
+              <p class="PARRAFO">Admite
+                cualquier valor num&eacute;rico de m&aacute;ximo 4
+                d&iacute;gitos. Posee
+                lista de valores poblada a trav&eacute;s de la opci&oacute;n <a
+                  href="NUH_020B.html">Estructura
+                  org&aacute;nica</a> del N&uacute;cleo, de la que puede
+                seleccionarse
+                la oficina a consultar.</p>
+            </td>
+          </tr>
+          <tr>
+            <td class="titletable">
+              <p class="SUBTITULO">Establecimiento</p>
+            </td>
+            <td>
+              <p class="PARRAFO">El
+                campo Establecimiento admite cualquier valor num&eacute;rico de
+                m&aacute;ximo
+                11 d&iacute;gitos. Posee lista de valores poblada por medio de
+                la opci&oacute;n
+                <a href="NUH_027B.html">Or&iacute;genes de transacciones</a> del
+                N&uacute;cleo,
+                de la que puede seleccionarse aquel para el cual se desee
+                consultar
+                su movimiento de intercambio.
+              </p>
+            </td>
+          </tr>
+          <tr>
+            <td class="titletable">
+              <p class="SUBTITULO">N&uacute;mero
+                autorizaci&oacute;n </p>
+            </td>
+            <td>
+              <p class="PARRAFO">El
+                campo n&uacute;mero de autorizaci&oacute;n es
+                alfanum&eacute;rico de
+                hasta 6 posiciones
+              </p>
+            </td>
+          </tr>
+          <tr>
+            <td class="titletable">
+              <p class="SUBTITULO">Boleta
+                de ruta</p>
+            </td>
+            <td>
+              <p class="PARRAFO">El
+                campo boleta de ruta es num&eacute;rico de hasta 12
+                d&iacute;gitos
+              </p>
+            </td>
+          </tr>
+          <tr>
+            <td class="titletable">
+              <p class="SUBTITULO">Secuencia</p>
+            </td>
+            <td>
+              <p class="PARRAFO">El
+                campo secuencia es n&uacute;merico de hasta 8 d&iacute;gitos.
+              </p>
+            </td>
+          </tr>
+        </table>
 
-      <p class="PARRAFO"> El sistema muestra por defecto el <span class="LINK2 #1"><a href="INH_040B1.html">Movimiento
-            diario</a></span> de acuerdo a los datos ingresados en el filtro.</p>
-      <p class="TITLE"><img src="../img/INF_040B1.PNG" 729" height="283"></p>
+        <p class="PARRAFO"> El sistema muestra por defecto el <span
+            class="LINK2 #1"><a href="INH_040B1.html">Movimiento
+              diario</a></span> de acuerdo a los datos ingresados en el
+          filtro.</p>
+        <p class="TITLE"><img src="../img/INF_040B1.PNG"></p>
 
-      <p><a href="INH_040B1.html">Movimiento
-          diario</a><b><span>
-            | </span></b><a href="INH_006B3.html"></a><a href="INH_040B2.html">Fraudes</a><span><b> | </b></span><a
-          href="INH_006B5.html"></a><a href="INH_040B3.html">Pendientes</a>
-        <span><b>| </b></span><a href="INH_040B4.html">Rechazo
-          cargue</a><span><b> | </b></span> <a href="INH_040B5.html">Contracargos</a>
-        <a href="INH_040B6.html">Efectos
-          al cobro</a><span><b> | </b></span><a href="INH_006B9.html"></a><a
-          href="INH_040B7.html">Intercambio</a><span><b> | </b></span><a href="INH_040B8.html">Rechazo
-          cargue convenios</a>
-      </p>
+        <p><a href="INH_040B1.html">Movimiento
+            diario</a>
+            | </span><a href="INH_006B3.html"></a><a
+            href="INH_040B2.html">Fraudes</a> | </span><a
+            href="INH_006B5.html"></a><a href="INH_040B3.html">Pendientes</a>
+          | </span><a href="INH_040B4.html">Rechazo
+            cargue</a> | </span> <a href="INH_040B5.html">Contracargos</a>
+          <a href="INH_040B6.html">Efectos
+            al cobro</a> | </span><a href="INH_006B9.html"></a><a
+            href="INH_040B7.html">Intercambio</a> | </span><a
+            href="INH_040B8.html">Rechazo
+            cargue convenios</a>
+        </p>
 
-  </section>
-  <script src="../js/menu.js"></script>
-</body>
-<div id="footerContainer"></div>
-<script>
+      </section>
+      <script src="../js/menu.js"></script>
+    </body>
+    <div id="footerContainer"></div>
+    <script>
   fetch('footer.html')
     .then(response => response.text())
     .then(html => {
@@ -221,4 +248,4 @@
     });
 </script>
 
-</html>
+  </html>

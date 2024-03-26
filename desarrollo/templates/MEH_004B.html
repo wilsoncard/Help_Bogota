@@ -1,68 +1,84 @@
 <!DOCTYPE html>
 <html lang="es">
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>BANKBU®</title>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>BANKBU®</title>
 
-    <link rel="stylesheet" href="../css/pages.css">
-    <link rel="stylesheet" href="../css/style.css">
-    <link rel="icon" href="../img/ACQUIRER-logo.JPG" type="image/x-icon">
-</head>
+        <link rel="stylesheet" href="../css/pages.css">
+        <link rel="stylesheet" href="../css/style.css">
+        <link rel="icon" href="../img/ACQUIRER-logo.JPG" type="image/x-icon">
+    </head>
 
-<body>
+    <body>
 
-    <header>
-        <img class="logo" src="../img/logoBankbu_.PNG" alt="Logo de Mi Empresa">
-        <div id="menuBtn">
-            <img class="TITLE" src="../img/menu.PNG" alt="Botón de Menú ">
-        </div>
-    </header>
-   <div id="menuContainer"></div>
-    <script>
-      fetch('menu.html')
-        .then(response => response.text())
-        .then(html => {
-          document.getElementById('menuContainer').innerHTML = html;
-        });
-    </script>
+        <header>
+            <img class="logo" src="../img/logoBankbu_.PNG"
+                alt="Logo de Mi Empresa">
+            <div id="menuBtn">
+                <img class="TITLE" src="../img/menu.PNG" alt="Botón de Menú ">
+            </div>
+        </header>
+        <div id="menuContainer"></div>
+        <script>
+    fetch('menu.html')
+      .then(response => response.text())
+      .then(html => {
+        document.getElementById('menuContainer').innerHTML = html;
+      });
+  </script>
 
-    <section>
-        <div>
-            <table>
-                <tr>
-                    <td>
-                        <div>
-                            <p class="TITLE">Categor&iacute;as clientes</p>
-                        </div>
-                    </td>
-                </tr>
-            </table>
-            <p class="PARRAFO">Mediante este formulario la entidad
-                puede definir las categor&iacute;as a partir de los cuales clasifica a sus
-                clientes haciendo posible determinar una serie de par&aacute;metros que se
-                sobreponen a los se&ntilde;alados para cada uno de los <a href="MEH_002B.html">productos</a>
-                que eventualmente pudiera tener un cliente con la entidad y cuyo objetivo
-                ofrecer a los clientes de cada categor&iacute;a un trato preferencial, seg&uacute;n
-                sea su clasificaci&oacute;n. La categor&iacute;a puede ser asociada durante
-                el <a href="SOH_004B.html">ingreso del cliente</a>
-                en la base de datos, mediante la novedad </span><span class="PARRAFO"><a href="SCH_010B.html">datos
-                        de calificaci&oacute;n</a> o desde la opci&oacute;n <a href="MEH_012B.html">segmentaci&oacute;n
-                        de clientes</a>. Adicionalmente cuenta con un filtro de b&uacute;squeda.
+        <section>
+            <div>
+                <table>
+                    <tr>
+                        <td>
+                            <div>
+                                <p class="TITLE">Categor&iacute;as clientes</p>
+                            </div>
+                        </td>
+                    </tr>
+                </table>
+                <p class="PARRAFO">Mediante este formulario, la entidad puede
+                    definir diferentes conjuntos de reglas de juego -parámetros-
+                    y/o costos, denominados categorías, a partir de las cuales
+                    clasifica a sus clientes, posibilitando el aplicar una serie
+                    de parámetros que se sobreponen a los señalados para cada
+                    uno de los <a href="MEH_002B.html">productos</a>, que
+                    eventualmente pudiera tener un cliente con la entidad y,
+                    cuyo objetivo es ofrecer a los clientes de cada categoría,
+                    un trato preferencial, según sea su clasificación. La
+                    categoría puede ser asociada durante el <a
+                        href="SOH_004B.html">ingreso del cliente</a>
+                    en la base de datos, mediante la novedad </span><span
+                    class="PARRAFO"><a href="SCH_010B.html">datos
+                        de calificaci&oacute;n</a> o desde la opci&oacute;n <a
+                        href="MEH_012B.html">segmentaci&oacute;n
+                        de clientes</a>.
                 </span></p>
+            <p class="PARRAFO"> Adicionalmente cuenta con un filtro de
+                b&uacute;squeda.</p>
             <p class="TITLE"><img src="../img/MEF_004E.PNG"></p>
 
-            <p><span class="SUBTITULO #2">Filtro:</span> <span class="PARRAFO">Se pueden realizar
-                    consultas a trav&eacute;s de las siguientes opciones:</span></p>
-            <p class="TITLE"><img src="../img/MEF_004E8.PNG" alt="MEF_004E8.PNG" longdesc="../img/MEF_004E8.PNG"></p>
-            <p class="PARRAFO #3">El formulario contiene las opciones Actualizar,
-                Eliminar y Adicionar. De igual manera, contiene un hiperv&iacute;nculo que
-                permite al usuario invocar el formulario en el que se parametrizan las condiciones
-                que aplican para cada <a href="MEH_004B.html#BL_MARCA">marca</a>.</p>
+            <p><span class="SUBTITULO #2">Filtro:</span> <span
+                    class="PARRAFO">Se pueden realizar consultas a través de los
+                    siguientes datos: Categoría, digitando el código que
+                    identifica a cada una de las categorías; si se tienen
+                    múltiples categorías, digitando parte del nombre o
+                    descriptivo de la categoría, entre los símbolos o comodines
+                    %nombr%, por ejemplo, y luego presionar Buscar, el sistema
+                    retornará todas aquellas categorías, cuya descripción
+                    coincida parcialmente con el texto indicado entre dichos
+                    símbolos.</span></p>
+            <p class="TITLE"><img src="../img/MEF_004E8.PNG"></p>
+            <p class="PARRAFO #3">El formulario contiene enlaces a las opciones:
+                Actualizar, Eliminar, Adicionar y <a
+                    href="MEH_004B.html#BL_MARCA">Marcas de categorias</a>, que
+                permite invocar el formulario en el que se parametrizan las
+                condiciones que aplican para cada franquicia.</p>
             <p class="PARRAFO"><span class="SUBTITULO">Adicionar:</span>
-                <span>
-                    Si el usuario invoca la opci&oacute;n Adicionar se despliega un nuevo formulario.
+                Al invocar ese enlace se despliega un nuevo formulario.
                 </span>
             </p>
             <p class="TITLE"><img src="../img/MEF_004E1.PNG"></p>
@@ -70,394 +86,422 @@
             <table>
                 <tr>
                     <td class="titletable">
-                        <p class="SUBTITULO"><b><span>
-                                    Categor&iacute;a</span></b></p>
+                        <p class="SUBTITULO">
+                                Categor&iacute;a</span></p>
                     </td>
                     <td>
-                        <p class="PARRAFO">Campo
-                            num&eacute;rico de hasta 4 d&iacute;gitos, obligatorio, en el que se
-                            registra el c&oacute;digo asignado por la entidad a cada una de las
-                            categor&iacute;as de cliente a definir.</p>
+                        <p class="PARRAFO">Campo numérico de hasta 4 dígitos,
+                            obligatorio, en el que se debe registrar el código
+                            asignado por la entidad, a cada una de las
+                            categorías de cliente que requiera definir.</p>
                     </td>
                 </tr>
 
                 <tr>
                     <td class="titletable">
-                        <p class="SUBTITULO"><span class="#4">Descripci&oacute;n</span></p>
+                        <p class="SUBTITULO"><span
+                                class="#4">Descripci&oacute;n</span></p>
                     </td>
                     <td>
-                        <p class="PARRAFO">En
-                            este campo alfanum&eacute;rico de m&aacute;ximo 30 posiciones, obligatorio,
-                            se registra la descripci&oacute;n o caracter&iacute;stica principal
-                            asociada al c&oacute;digo anterior.
+                        <p class="PARRAFO">Campo alfanumérico de máximo 30
+                            posiciones, obligatorio, en el que se debe registrar
+                            el nombre, descriptivo o característica principal,
+                            con el que se diferenciará cada categoría.
                         </p>
                     </td>
                 </tr>
             </table>
 
             <p class="PARRAFO"><span class="SUBTITULO">
-                    <span><b>Actualizar</b>:</span><span></span>
+                    Actualizar:</span>
                 </span>
-                <span>
-                    Si el usuario selecciona un registro e invoca la opci&oacute;n Actualizar
-                    se despliega un formulario en el cual el &uacute;nico campo modificable es
-                    el Nombre</span>
+                
+                    Si el usuario selecciona un registro e invoca el enlace
+                    Actualizar, se despliega un formulario en el cual el único
+                    campo modificable es Nombre:</span>
             </p>
             <p class="TITLE"><img src="../img/MEF_004E2.PNG"></p>
 
             <p class="PARRAFO"><a name='BL_MARCA'></a><span class="SUBTITULO">
-                    <span><b>Marcas
-                            de categor&iacute;as</b>:</span><span></span>
+                    Marcas
+                        de categor&iacute;as:</span>
                 </span>
-                <span>
-                    Si el usuario selecciona un registro e invoca la opci&oacute;n Marcas de categor&iacute;as,
-                    se despliega un formulario en el cual se muestran en caso de existir, todas
-                    las marcas o franquicias para las cuales se encuentran definidos par&aacute;metros
-                    asociados a la categor&iacute;a seleccionada.</span>
+                
+                    Si el usuario selecciona un registro e invoca este enlace,
+                    se despliega un formulario en el cual, la entidad puede
+                    definir para cada una de las marcas o franquicias para las
+                    que puede procesar movimiento y, para estas, definir los
+                    valores a dichos parámetros. El formulario contiene enlaces
+                    a las opciones: Actualizar, Eliminar, Adicionar y
+                    Detalle.</span>
             </p>
             <p class="TITLE"><img src="../img/MEF_004E3.PNG"></p>
-
-            <p class="PARRAFO">El formulario Categor&iacute;as por marcas,
-                contiene las opciones Actualizar, Eliminar, Adicionar y Detalle.</p>
             <p class="PARRAFO"><span class="SUBTITULO">Adicionar:</span>
-                <span>
-                    Si el usuario invoca la opci&oacute;n Adicionar se despliega un nuevo formulario
-                    dividido en dos bloques de datos: General y Cuota de manejo.</span>
+                
+                    Si el usuario invoca este enlace, se despliega un nuevo
+                    formulario dividido en dos bloques de datos: General y Cuota
+                    de manejo.</span>
             </p>
-            <p class="PARRAFO">Al ingresar al formulario por defecto se despliega
-                siempre en el bloque General.</p>
             <p class="TITLE"><img src="../img/MEF_004E4.PNG"></p>
 
-            <p class="TITLE">Descripci&oacute;n de campos </p>
+            <p class="TITLE">Descripción de campos - General </p>
             <table>
                 <tr>
                     <td class="titletable">
-                        <p class="SUBTITULO"><b><span>
-                                    Marca</span></b></p>
+                        <p class="SUBTITULO">
+                                Marca</span></p>
                     </td>
                     <td>
-                        <p class="PARRAFO">Campo
-                            obligatorio con lista de valores en el que se selecciona la <a
-                                href="NUH_033B.html">franquicia</a>
-                            que operar&aacute; para determinado tipo de cliente.
+                        <p class="PARRAFO">Campo obligatorio, con lista de
+                            valores, de la que debe seleccionarse la <a
+                                href="NUH_033B.html">franquicia</a>,
+                            asociada a la categoría, para la que aplicarán los
+                            valores aquí definidos.
                         </p>
                     </td>
                 </tr>
 
                 <tr>
                     <td class="titletable">
-                        <p class="SUBTITULO"><b><span>Meses
-                                    vigencia pl&aacute;stico</span></b></p>
+                        <p class="SUBTITULO">Meses
+                                vigencia pl&aacute;stico</span></p>
                     </td>
                     <td>
-                        <p class="PARRAFO">En
-                            este campo se define el n&uacute;mero de meses que el pl&aacute;stico
-                            del producto est&aacute; activo y de acuerdo con dicho par&aacute;metro
-                            se efectuar&aacute; el proceso de renovaci&oacute;n.
+                        <p class="PARRAFO">Si por parametrización el sistema
+                            debe tener en consideración, lo aquí definido,
+                            indica el número de meses sobre el que se proyecta
+                            la fecha de vencimiento del plástico y, así mismo,
+                            las renovaciones individuales o masivas de los
+                            plásticos de clientes que tengan esta misma
+                            categoría.
                         </p>
                     </td>
                 </tr>
 
                 <tr>
                     <td class="titletable">
-                        <p class="SUBTITULO"><b><span>Bloquea
-                                    por pago m&iacute;nimo</span></b></p>
+                        <p class="SUBTITULO">Bloquea
+                                por pago m&iacute;nimo</span></p>
                     </td>
                     <td>
-                        <p class="PARRAFO">Campo
-                            en el que se se&ntilde;ala si para los clientes pertenecientes a esta
-                            categor&iacute;a y que posean productos pertenecientes a la marca seleccionada,
-                            el sistema debe o no bloquear el pl&aacute;stico en caso de no realizar
-                            el pago m&iacute;nimo oportuno.</p>
+                        <p class="PARRAFO">Campo no obligatorio, en el que se
+                            señala si para los clientes pertenecientes a esta
+                            categoría y que posean productos pertenecientes a la
+                            marca seleccionada, el sistema debe o no bloquear el
+                            plástico en caso de no realizar el pago mínimo
+                            oportuno.</p>
                     </td>
                 </tr>
 
                 <tr>
                     <td class="titletable">
-                        <p class="SUBTITULO"><b><span>Ciclo
-                                    de facturaci&oacute;n </span></b></p>
+                        <p class="SUBTITULO">Ciclo
+                                de facturaci&oacute;n </span></p>
                     </td>
                     <td>
-                        <p class="PARRAFO">A
-                            trav&eacute;s de este campo, que contiene lista de valores, la entidad
-                            define el ciclo de facturaci&oacute;n a aplicar para los clientes que
-                            hagan parte de la categor&iacute;a y tengan productos pertenecientes
-                            a la marca seleccionada.
+                        <p class="PARRAFO">A través de este campo, que contiene
+                            lista de valores, la entidad define el ciclo de
+                            facturación a aplicar para los clientes que hagan
+                            parte de la categoría y tengan productos
+                            pertenecientes a la marca seleccionada.
                         </p>
                     </td>
                 </tr>
 
                 <tr>
                     <td class="titletable">
-                        <p class="SUBTITULO"><b><span>%
-                                    Sobrecupo autorizado</span></b></p>
+                        <p class="SUBTITULO">%
+                                Sobrecupo autorizado</span></p>
                     </td>
                     <td>
-                        <p class="PARRAFO">En
-                            este campo se define por categor&iacute;a la relaci&oacute;n entre el
-                            cupo del producto y el exceso sobre el mismo autorizado para el producto
-                            sin que sea bloqueada la tarjeta.
+                        <p class="PARRAFO">En este campo se define por categoría
+                            la relación entre el cupo del producto y el exceso
+                            sobre el mismo autorizado para el producto sin que
+                            sea bloqueada la tarjeta.
                         </p>
                     </td>
                 </tr>
 
                 <tr>
                     <td class="titletable">
-                        <p class="SUBTITULO"><b><span>%
-                                    Bloqueo sobrecupo</span></b></p>
+                        <p class="SUBTITULO">%
+                                Bloqueo sobrecupo</span></p>
                     </td>
                     <td>
-                        <p class="PARRAFO">Campo
-                            en el que la entidad determina en relaci&oacute;n con el porcentaje
-                            de sobrecupo autorizado, cual debe ser el porcentaje real utilizado
-                            por el cliente para que la tarjeta sea bloqueada.
+                        <p class="PARRAFO">Campo en el que la entidad determina
+                            en relación con el porcentaje de sobrecupo
+                            autorizado, cual debe ser el porcentaje real
+                            utilizado por el cliente para que la tarjeta sea
+                            bloqueada.
                         </p>
                     </td>
                 </tr>
 
                 <tr>
                     <td class="titletable">
-                        <p class="SUBTITULO"><b><span>Valor
-                                    bloqueo por mora</span></b></p>
+                        <p class="SUBTITULO">Valor
+                                bloqueo por mora</span></p>
                     </td>
                     <td>
-                        <p class="PARRAFO">En
-                            este campo se registra el monto a partir del cual ser&aacute; bloqueada
-                            la tarjeta en el evento de entrar en mora. </p>
+                        <p class="PARRAFO">En este campo se registra el monto a
+                            partir del cual será bloqueada la tarjeta en el
+                            evento de entrar en mora. </p>
                     </td>
                 </tr>
 
                 <tr>
                     <td class="titletable">
-                        <p class="SUBTITULO"><b><span>Bloqueo
-                                    edad mora</span></b></p>
+                        <p class="SUBTITULO">Bloqueo
+                                edad mora</span></p>
                     </td>
                     <td>
-                        <p class="PARRAFO">Campo
-                            en el que se define el momento a partir del cual ser&aacute; bloqueada
-                            la tarjeta en el evento de tener vencida su cartera. </p>
+                        <p class="PARRAFO">Campo en el que se define el momento
+                            a partir del cual será bloqueada la tarjeta en el
+                            evento de tener vencida su cartera.
+                        </p>
                     </td>
                 </tr>
 
                 <tr>
                     <td class="titletable">
-                        <p class="SUBTITULO"><b><span>N&uacute;mero
-                                    m&aacute;ximo refinanciaciones</span></b></p>
+                        <p class="SUBTITULO">N&uacute;mero
+                                m&aacute;ximo refinanciaciones</span></p>
                     </td>
                     <td>
-                        <p class="PARRAFO">En
-                            este campo se registra la cantidad de veces que un cr&eacute;dito puede
-                            ser refinanciado en el lapso de tiempo (expresado en n&uacute;mero periodos)
+                        <p class="PARRAFO">En este campo se registra la cantidad
+                            de veces que un crédito puede ser refinanciado en el
+                            lapso de tiempo (expresado en número periodos)
                             determinado en el campo siguiente.</p>
                     </td>
                 </tr>
 
                 <tr>
                     <td class="titletable">
-                        <p class="SUBTITULO"><b><span>En
-                                    ... meses</span></b></p>
+                        <p class="SUBTITULO">En
+                                ... meses</span></p>
                     </td>
                     <td>
-                        <p class="PARRAFO">En
-                            este campo se indica la cantidad de periodos que se deben tomar como
-                            referencia para determinar el n&uacute;mero de refinanciaciones permitidas.</p>
+                        <p class="PARRAFO">En este campo se indica la cantidad
+                            de periodos que se deben tomar como referencia para
+                            determinar el número de refinanciaciones
+                            permitidas.</p>
                     </td>
                 </tr>
 
                 <tr>
                     <td class="titletable">
-                        <p class="SUBTITULO"><b><span>%
-                                    Cuota afiliaci&oacute;n</span></b></p>
+                        <p class="SUBTITULO">%
+                                Cuota afiliaci&oacute;n</span></p>
                     </td>
                     <td>
-                        <p class="PARRAFO">Campo
-                            que permite a la entidad indicar el porcentaje a cobrar sobre el valor
-                            de la cuota de afiliaci&oacute;n definida para el <a href="MEH_002B.html">producto</a>,
-                            al cliente que pertenece a la categor&iacute;a y que tenga productos
+                        <p class="PARRAFO">Campo que permite a la entidad
+                            indicar el porcentaje a cobrar sobre el valor de la
+                            cuota de afiliación definida para el <a
+                                href="MEH_002B.html">producto</a>,
+                            al cliente que pertenece a la categor&iacute;a y que
+                            tenga productos
                             pertenecientes a la marca seleccionada.</p>
                     </td>
                 </tr>
 
                 <tr>
                     <td class="titletable">
-                        <p class="SUBTITULO"><b><span>Periodos
-                                    excenci&oacute;n </span></b></p>
+                        <p class="SUBTITULO">Periodos
+                                excenci&oacute;n </span></p>
                     </td>
                     <td>
-                        <p class="PARRAFO">En
-                            este campo se determina la cantidad de periodos durante los cuales se
-                            aplicar&aacute; el descuento indicado en el campo anterior. </p>
+                        <p class="PARRAFO">En este campo se determina la
+                            cantidad de periodos durante los cuales se aplicará
+                            el descuento indicado en el campo anterior. </p>
                     </td>
                 </tr>
 
                 <tr>
                     <td class="titletable">
-                        <p class="SUBTITULO"><b><span>%
-                                    Cuota seguro</span></b></p>
+                        <p class="SUBTITULO">%
+                                Cuota seguro</span></p>
                     </td>
                     <td>
-                        <p class="PARRAFO">Campo
-                            que permite a la entidad indicar el porcentaje a cobrar sobre el valor
-                            de la cuota de seguro definida para el <a href="MEH_002B.html">producto</a>,
-                            al cliente asociado a la categor&iacute;a y que tenga productos pertenecientes
-                            a la marca seleccionada.
+                        <p class="PARRAFO">
+                            Campo que permite a la entidad indicar el porcentaje
+                            a cobrar sobre el valor de la cuota de seguro
+                            definida para el <a
+                                href="MEH_002B.html">producto</a>,
+                            al cliente asociado a la categoría y que tenga
+                            productos pertenecientes a la marca seleccionada.
                         </p>
                     </td>
                 </tr>
 
                 <tr>
                     <td class="titletable">
-                        <p class="SUBTITULO"><b><span>Periodos
-                                    excenci&oacute;n </span></b></p>
+                        <p class="SUBTITULO">Periodos
+                                excenci&oacute;n </span></p>
                     </td>
                     <td>
-                        <p class="PARRAFO">En
-                            este campo se determina la cantidad de periodos durante los cuales se
-                            aplicar&aacute; el descuento indicado en el campo anterior. </p>
+                        <p class="PARRAFO">En este campo se determina la
+                            cantidad de periodos durante los cuales se aplicará
+                            el descuento indicado en el campo anterior. </p>
                     </td>
                 </tr>
 
                 <tr>
                     <td class="titletable">
-                        <p class="SUBTITULO"><b><span>%
-                                    Costos dependientes</span></b></p>
+                        <p class="SUBTITULO">%
+                                Costos dependientes</span></p>
                     </td>
                     <td>
-                        <p class="PARRAFO">Campo
-                            que permite definir la relaci&oacute;n a descontar al cliente perteneciente
-                            a la categor&iacute;a por concepto de cuota de afiliaci&oacute;n, manejo
-                            y seguro sobre las tarjetas amparadas que dependan del cliente.</p>
+                        <p class="PARRAFO">Campo que permite definir la relación
+                            a descontar al cliente perteneciente a la categoría
+                            por concepto de cuota de afiliación, manejo y seguro
+                            sobre las tarjetas amparadas que dependan del
+                            cliente.</p>
                     </td>
                 </tr>
 
                 <tr>
                     <td class="titletable">
-                        <p class="SUBTITULO"><b><span>%
-                                    Costo reposici&oacute;n</span></b></p>
+                        <p class="SUBTITULO">%
+                                Costo reposici&oacute;n</span></p>
                     </td>
                     <td>
-                        <p class="PARRAFO">En
-                            este campo se registra el porcentaje a descontar sobre el costo de reposici&oacute;n
-                            del pl&aacute;stico definido a nivel del producto para los clientes
-                            asociados a la categor&iacute;a y aplicable sobre los productos que
-                            posea y pertenezcan a la marca seleccionada.</p>
+                        <p class="PARRAFO">En este campo se registra el
+                            porcentaje a descontar sobre el costo de reposición
+                            del plástico definido a nivel del producto para los
+                            clientes asociados a la categoría y aplicable sobre
+                            los productos que posea y pertenezcan a la marca
+                            seleccionada.</p>
                     </td>
                 </tr>
 
                 <tr>
                     <td class="titletable">
-                        <p class="SUBTITULO"><b><span>%
-                                    Costo reexpedici&oacute;n</span></b></p>
+                        <p class="SUBTITULO">%
+                                Costo reexpedici&oacute;n</span></p>
                     </td>
                     <td>
-                        <p class="PARRAFO">Campo
-                            que permite definir la relaci&oacute;n a descontar entre el valor de
-                            costo de reexpedici&oacute;n del pl&aacute;stico y el valor a ser cobrado
-                            al cliente por pertenecer a determinada categor&iacute;a y cuyos productos
+                        <p class="PARRAFO">Campo que permite definir la relación
+                            a descontar entre el valor de costo de reexpedición
+                            del plástico y el valor a ser cobrado al cliente por
+                            pertenecer a determinada categoría y cuyos productos
                             correspondan a la marca seleccionada.</p>
                     </td>
                 </tr>
 
                 <tr>
                     <td class="titletable">
-                        <p class="SUBTITULO"><b><span>%
-                                    Costo renovaci&oacute;n</span></b></p>
+                        <p class="SUBTITULO">%
+                                Costo renovaci&oacute;n</span></p>
                     </td>
                     <td>
-                        <p class="PARRAFO">En
-                            este campo se registra el porcentaje a descontar sobre el costo de renovaci&oacute;n
-                            del pl&aacute;stico definido a nivel del producto para los clientes
-                            asociados a la categor&iacute;a y aplicable sobre los productos que
-                            posea y pertenezcan a la marca seleccionada.
+                        <p class="PARRAFO">En este campo se registra el
+                            porcentaje a descontar sobre el costo de renovación
+                            del plástico definido a nivel del producto para los
+                            clientes asociados a la categoría y aplicable sobre
+                            los productos que posea y pertenezcan a la marca
+                            seleccionada.
                         </p>
                     </td>
                 </tr>
 
                 <tr>
                     <td class="titletable">
-                        <p class="SUBTITULO"><b><span>Tasa
-                                    preferencial compras</span></b></p>
+                        <p class="SUBTITULO">Tasa
+                                preferencial compras</span></p>
                     </td>
                     <td>
                         <p class="PARRAFO">Campo
-                            con lista de valores en la cual se puede seleccionar el <a href="NUH_043B.html">indicador
-                                econ&oacute;mico</a> a utilizar como referente para liquidar los
-                            intereses sobre las compras efectuadas con productos pertenecientes
-                            a la marca seleccionada, para los clientes asociados a la categor&iacute;a.
+                            con lista de valores en la cual se puede seleccionar
+                            el <a href="NUH_043B.html">indicador
+                                econ&oacute;mico</a> a utilizar como referente
+                            para liquidar los
+                            intereses sobre las compras efectuadas con productos
+                            pertenecientes
+                            a la marca seleccionada, para los clientes asociados
+                            a la categor&iacute;a.
                         </p>
                     </td>
                 </tr>
 
                 <tr>
                     <td class="titletable">
-                        <p class="SUBTITULO"><b><span>Tasa
-                                    preferencial avances</span></b></p>
+                        <p class="SUBTITULO">Tasa
+                                preferencial avances</span></p>
                     </td>
                     <td>
                         <p class="PARRAFO">En
-                            este campo con lista de valores se selecciona el <a href="NUH_043B.html">indicador
-                                econ&oacute;mico</a> a utilizar como referente para liquidar los
-                            intereses sobre los avances efectuados con productos pertenecientes
-                            a la marca seleccionada, para los clientes asociados a la categor&iacute;a.
+                            este campo con lista de valores se selecciona el <a
+                                href="NUH_043B.html">indicador
+                                econ&oacute;mico</a> a utilizar como referente
+                            para liquidar los
+                            intereses sobre los avances efectuados con productos
+                            pertenecientes
+                            a la marca seleccionada, para los clientes asociados
+                            a la categor&iacute;a.
                         </p>
                     </td>
                 </tr>
 
                 <tr>
                     <td class="titletable">
-                        <p class="SUBTITULO"><b><span>D&eacute;bito
-                                    a empleados</span></b></p>
+                        <p class="SUBTITULO">D&eacute;bito
+                                a empleados</span></p>
                     </td>
                     <td>
-                        <p class="PARRAFO">Campo
-                            tipo combo con las opciones en Blanco, Rol de pagos y D&eacute;bito
-                            autom&aacute;tico, en el cual se selecciona la condici&oacute;n
-                            asociada con la categor&iacute;a para la marca. Cuando el valor escogido
-                            es Rol de pagos o D&eacute;bito autom&aacute;tico se
-                            le est&aacute; indicando al sistema que los clientes pertenecientes
-                            a esa categor&iacute;a y para la marca seleccionada tienen la condici&oacute;n
-                            de empleados de la corporaci&oacute;n.</p>
+                        <p class="PARRAFO">Campo tipo combo con las opciones en
+                            Blanco, Rol de pagos y Débito automático, en el cual
+                            se selecciona la condición asociada con la categoría
+                            para la marca. Cuando el valor escogido es Rol de
+                            pagos o Débito automático se le está indicando al
+                            sistema que los clientes pertenecientes a esa
+                            categoría y para la marca seleccionada tienen la
+                            condición de empleados de la corporación.</p>
                     </td>
                 </tr>
             </table>
 
-            <p class="PARRAFO">El segundo bloque de datos del formulario adicionar
-                marca se denomina Cuota de manejo y le permite a la entidad establecer cobros
-                porcentuales diferenciales sobre la cuota de manejo a lo largo del tiempo.
-                As&iacute;, es posible que al inicio la entidad decida incentivar al cliente
-                de la categor&iacute;a no cobr&aacute;ndole cuota de manejo durante el primer
-                a&ntilde;o, y gradualmente ir subiendo un determinado porcentaje a cobrar
-                a la cuota de manejo en los a&ntilde;os siguientes.</p>
+            <p class="PARRAFO">El segundo bloque de datos del formulario
+                adicionar marca se denomina Cuota de manejo y le permite a la
+                entidad establecer cobros porcentuales diferenciales sobre la
+                cuota de manejo a lo largo del tiempo. Así, es posible que al
+                inicio la entidad decida incentivar al cliente de la categoría
+                no cobrándole cuota de manejo durante el primer año, y
+                gradualmente ir subiendo un determinado porcentaje a cobrar a la
+                cuota de manejo en los años siguientes.</p>
             <p class="TITLE"><img src="../img/MEF_004E5.PNG"></p>
 
             <p class="TITLE">Descripci&oacute;n de campos </p>
             <table>
                 <tr>
                     <td class="titletable">
-                        <p class="SUBTITULO"><b><span>
-                                    Periodicidad</span></b></p>
+                        <p class="SUBTITULO">
+                                Periodicidad</span></p>
                     </td>
                     <td>
-                        <p class="PARRAFO">Campo
-                            tipo combo en el que la entidad determina la frecuencia con la cual
-                            se har&aacute; el cobro de la cuota de manejo para los clientes asociados
-                            a la categor&iacute;a y sobre los productos pertenecientes a la marca
-                            que se est&aacute; adicionando.
+                        <p class="PARRAFO">Campo no obligatorio, que posee lista
+                            de valores tipo combo, mediante la cual la entidad
+                            determina la frecuencia con la cual se hará el cobro
+                            de la cuota de manejo para los clientes asociados a
+                            la categoría y sobre los productos pertenecientes a
+                            la marca que se está adicionando.
                         </p>
                     </td>
                 </tr>
 
                 <tr>
                     <td class="titletable">
-                        <p class="SUBTITULO"><b><span>%
-                                    Cuota de manejo</span></b></p>
+                        <p class="SUBTITULO">%
+                                Cuota de manejo</span></p>
                     </td>
                     <td>
                         <p class="PARRAFO">En
-                            este campo se indica el porcentaje que sobre el valor definido a nivel
+                            este campo se indica el porcentaje que sobre el
+                            valor definido a nivel
                             del <a href="MEH_002B.html">producto</a> se le
-                            va a cobrar al cliente asociado a la categor&iacute;a por concepto de
-                            cuota de manejo por los productos que este posea y que pertenezcan a
+                            va a cobrar al cliente asociado a la
+                            categor&iacute;a por concepto de
+                            cuota de manejo por los productos que este posea y
+                            que pertenezcan a
                             la marca seleccionada.
                         </p>
                     </td>
@@ -465,30 +509,33 @@
 
                 <tr>
                     <td class="titletable">
-                        <p class="SUBTITULO"><b><span>%
-                                    Cuota de manejo periodo 2, 3, 4, 5, 6</span></b></p>
+                        <p class="SUBTITULO">%
+                                Cuota de manejo periodo 2, 3, 4, 5, 6</span></p>
                     </td>
                     <td>
                         <p class="PARRAFO">Campos
-                            en los que la entidad se&ntilde;ala respectivamente los porcentajes
+                            en los que la entidad se&ntilde;ala respectivamente
+                            los porcentajes
                             a cobrar por cuota de manejo en cada periodo. </p>
                     </td>
                 </tr>
 
                 <tr>
                     <td class="titletable">
-                        <p class="SUBTITULO"><b><span>Periodos
-                                    excenci&oacute;n </span></b></p>
+                        <p class="SUBTITULO">Periodos
+                                excenci&oacute;n </span></p>
                     </td>
                     <td>
-                        <p class="PARRAFO">En
-                            estos campos se determina para cada porcentaje de cuota de manejo definido
-                            en los campos anteriores, la cantidad de periodos durante los cuales
-                            aplica el cobro del porcentaje establecido. Es importante tener claro
-                            que los periodos se van a medir en la misma proporci&oacute;n definida
-                            por el usuario en el campo 'Periodicidad' de modo que si por ejemplo
-                            esta es trimestral y como periodos exenci&oacute;n se registra el valor
-                            6, se debe interpretar que el porcentaje aplicar&aacute; por 18 meses
+                        <p class="PARRAFO">En estos campos se determina para
+                            cada porcentaje de cuota de manejo definido en los
+                            campos anteriores, la cantidad de periodos durante
+                            los cuales aplica el cobro del porcentaje
+                            establecido. Es importante tener claro que los
+                            periodos se van a medir en la misma proporción
+                            definida por el usuario en el campo 'Periodicidad'
+                            de modo que si por ejemplo esta es trimestral y como
+                            periodos exención se registra el valor 6, se debe
+                            interpretar que el porcentaje aplicará por 18 meses
                             (6 periodos de 3 meses cada uno).
                         </p>
                     </td>
@@ -496,32 +543,34 @@
             </table>
 
             <p class="PARRAFO"><span class="SUBTITULO">
-                    <span><b>Actualizar</b>:</span><span></span>
+                    Actualizar:</span>
                 </span>
-                <span>
-                    Si desde el formulario Marcas de categor&iacute;a el usuario selecciona un
-                    registro e invoca la opci&oacute;n Actualizar se despliega un formulario en
-                    el cual el &uacute;nico campo NO modificable es la marca.</span>
+                
+                    Si desde el formulario Marcas de categoría, el usuario
+                    selecciona un registro e invoca este enlace, se despliega un
+                    formulario en el cual el único campo NO modificable es
+                    Marca.</span>
             </p>
             <p class="TITLE"><img src="../img/MEF_004E6.PNG"></p>
+            <p class="TITLE"><img src="../img/MEF_004E9.PNG"></p>
 
             <p class="PARRAFO"><span class="SUBTITULO">
-                    <span><b>Detalle</b>:</span><span></span>
+                    Detalle:</span>
                 </span>
-                <span>
-                    Si desde el formulario Marcas de categor&iacute;a el usuario selecciona un
-                    registro e invoca la opci&oacute;n Detalle se despliega un formulario con
-                    la informaci&oacute;n completa del registro y en el cual ninguno de sus campos
-                    es modificable.</span>
+                
+                    Si desde el formulario Marcas de categoría, el usuario
+                    selecciona un registro e invoca este enlace, se despliega un
+                    formulario con la información completa del registro y en el
+                    cual ninguno de sus campos es modificable.</span>
             </p>
             <p class="TITLE"><img src="../img/MEF_004E7.PNG"></p>
 
             <div>
-    </section>
-    <script src="../js/menu.js"></script>
-</body>
-<div id="footerContainer"></div>
-<script>
+            </section>
+            <script src="../js/menu.js"></script>
+        </body>
+        <div id="footerContainer"></div>
+        <script>
   fetch('footer.html')
     .then(response => response.text())
     .then(html => {
@@ -529,4 +578,4 @@
     });
 </script>
 
-</html>
+    </html>

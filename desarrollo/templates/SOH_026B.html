@@ -17,33 +17,29 @@
             <img class="TITLE"  src= "../img/menu.PNG" alt="Botón de Menú ">
         </div>
     </header>
-   <div id="menuContainer"></div>
-    <script>
-      fetch('menu.html')
-        .then(response => response.text())
-        .then(html => {
-          document.getElementById('menuContainer').innerHTML = html;
-        });
-    </script>
+      <div id="menuContainer"></div>
+  <script>
+    fetch('menu.html')
+      .then(response => response.text())
+      .then(html => {
+        document.getElementById('menuContainer').innerHTML = html;
+      });
+  </script>
 
     <section>
         <div> 
-            <table>
-              <tr> 
-                <td><div> 
+            
                     <p  class="TITLE">Generacion numeros de tarjeta masivos</p>
-                    </div></td>
-              </tr>
-            </table>
+                    
             <p>Proceso que  puede ser en batch o desde el formulario permitiendo generar una cantidad  espec&iacute;fica de n&uacute;meros de tarjeta v&aacute;lidos, asociados con un producto y con una  sucursal. Una vez que  los n&uacute;meros sean creados, se debe generar un archivo en formato .txt con la  informaci&oacute;n de &eacute;stos n&uacute;meros, con destino a TUP, para que ellos a su vez,  generen el archivo de realce que se necesita para la pre-elaboraci&oacute;n masiva, de  los pl&aacute;sticos correspondientes.</p>
            
             <p class="PARRAFO">El formulario cuenta con los siguientes registros: </p>
-            <p class="TITLE"><img src="../img/SOF_026B1.PNG"767" ></p>
-            <p>	</p>
+            <p class="TITLE"><img src="../img/SOF_026B1.PNG"></p>
+            
             <table>
               <tr> 
-                <td  class="titletable" ><p class="SUBTITULO"><b><span 
-        >Nombre Producto</span></b></p></td>
+                <td  class="titletable" ><p class="SUBTITULO"><span 
+        >Nombre Producto</span></p></td>
                 <td><p class="PARRAFO">Campo 
                     que contiene el &#8220;nombre&#8221; del producto o descriptivo que 
                     los identifica, de acuerdo con lo parametrizado en la opci&oacute;n 
@@ -52,8 +48,8 @@
               </tr>
            
               <tr>
-                <td  class="titletable" ><p class="SUBTITULO"><b><span 
-        >Sucursal</span></span></b></p></td>
+                <td  class="titletable" ><p class="SUBTITULO"><span 
+        >Sucursal</span></span></p></td>
                 <td><p class="PARRAFO">Campo 
                     que contiene la <a href="NUH_020B.html" >sucursal</a> de la entidad a la cual se le debe reconocer la gesti&oacute;n por la 
                     colocaci&oacute;n de la tarjeta, informaci&oacute;n que puede ser utilizada 
@@ -63,37 +59,34 @@
               </tr>
            
               <tr>
-                <td  class="titletable" ><p class="SUBTITULO"><b><span 
-        >Fecha de vencimiento</span></span></b></p></td>
+                <td  class="titletable" ><p class="SUBTITULO"><span 
+        >Fecha de vencimiento</span></span></p></td>
                 <td><p class="PARRAFO">En 
                     este campo se indica en formato YYYY-MM-DD la fecha en la cual vence 
                   o expira la tarjeta y debe ser renovada.</p></td>
               </tr>
            
               <tr>
-                <td  class="titletable" ><p class="SUBTITULO"><b><span 
-        >Cantidad de </span></span></b>tarjetas</p></td>
+                <td  class="titletable" ><p class="SUBTITULO"><span 
+        >Cantidad de </span></span>tarjetas</p></td>
                 <td><p>Campo don de se registra  la  cantidad de n&uacute;meros de tarjetas solicitados. </p>       </td>
               </tr>
             </table>
  
-              <p class="TITLE"><img src="../img/SOF_026B2.PNG"39" height="43"></p>
+              <p class="TITLE"><img src="../img/SOF_026B2.PNG"></p>
  
             <table>
               <tr> 
-                <td class="titletable"><p class="SUBTITULO"><b><span 
-        >Generaci&oacute;n n&uacute;meros de tarjeta masivos </span></span></b></p></td>
+                <td class="titletable"><p class="SUBTITULO"><span 
+        >Generaci&oacute;n n&uacute;meros de tarjeta masivos </span></span></p></td>
                 <td><p class="PARRAFO">Bot&oacute;n que permita al  usuario generar los numero de tarjetas masivos segun parametrizacion.</p></td>
               </tr>
             </table>
- 
-              .
-              <p class="TITLE"><img src="../img/SOF_026B3.PNG"39" ></p>
- 
+              <p class="TITLE"><img src="../img/SOF_026B3.PNG"></p>
             <table>
               <tr> 
-                <td class="titletable" ><p class="SUBTITULO"><b>Generar Archivo
-                    </b></p></td>
+                <td class="titletable" ><p class="SUBTITULO">Generar Archivo
+                    </p></td>
                 <td><p class="PARRAFO">bot&oacute;n que permita al  usuario generar un archivo con los n&uacute;meros de tarjeta generados y, dejarlo en  la ubicaci&oacute;n de salidas.</p></td>
               </tr>
             </table>

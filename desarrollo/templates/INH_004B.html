@@ -19,14 +19,14 @@
             <img src="../img/menu.PNG" alt="Botón de Menú ">
         </div>
     </header>
-   <div id="menuContainer"></div>
-    <script>
-      fetch('menu.html')
-        .then(response => response.text())
-        .then(html => {
-          document.getElementById('menuContainer').innerHTML = html;
-        });
-    </script>
+      <div id="menuContainer"></div>
+  <script>
+    fetch('menu.html')
+      .then(response => response.text())
+      .then(html => {
+        document.getElementById('menuContainer').innerHTML = html;
+      });
+  </script>
 
     <section>
         <div> 
@@ -34,9 +34,7 @@
               <tr> 
                 <td><div align="right"> 
                     <p  class="TITLE">Captura de Movimientos oficina</p>
-                    </div></td>
-              </tr>
-            </table>
+                    
             <p class="PARRAFO">A trav&eacute;s de esta opci&oacute;n el sistema permite 
               el ingreso manual del movimiento de transacciones de Pago, Avances, Pago de 
               impuestos y Compras o consumos realizados por los clientes en los establecimientos. 
@@ -67,7 +65,7 @@
                     cual se ingresa movimiento.</p></td>
               </tr>
               <tr> 
-                <td class="titletable"><p class="SUBTITULO"><b>Oficina</b></p></td>
+                <td class="titletable"><p class="SUBTITULO">Oficina</p></td>
                 <td><p class="PARRAFO">Campo 
                     obligatorio en el que se digita el c&oacute;digo de la oficina para la cual se va 
                     a capturar o supervisar (dependiendo de la opci&oacute;n dentro de men&uacute;) 
@@ -77,8 +75,8 @@
                     para proseguir con la captura.</p></td>
               </tr>
               <tr> 
-                <td  class="titletable" ><p class="SUBTITULO">Transacci&oacute;n<b><span > 
-                    </span></b></p></td>
+                <td  class="titletable" ><p class="SUBTITULO">Transacci&oacute;n<span > 
+                    </span></p></td>
                 <td><p class="PARRAFO">Campo obligatorio
                     que posee lista de valores poblada en la opci&oacute;n <a href="NUH_027B.html" >Origen 
                     de transacciones</a> del N&uacute;cleo de la cual se debe seleccionar 
@@ -87,8 +85,8 @@
                     con ceros a la izquierda. </p></td>
               </tr>
               <tr> 
-                <td class="titletable"><p class="SUBTITULO">Moneda<b><span > 
-                    </span></b></p></td>
+                <td class="titletable"><p class="SUBTITULO">Moneda<span > 
+                    </span></p></td>
                 <td><p class="PARRAFO">En 
                     este campoobligatorio con lista de valores se debe seleccionar la <a href="NUH_005B.html" >Moneda</a> 
                     que aplica para el movimiento a ingresar; el sistema despliega por defecto 
@@ -96,8 +94,8 @@
                     de licenciamiento</a>.</p></td>
               </tr>
               <tr> 
-                <td  class="titletable" ><p class="SUBTITULO"><b>Boleta 
-                    de ruta</b></p></td>
+                <td  class="titletable" ><p class="SUBTITULO">Boleta 
+                    de ruta</p></td>
                 <td><p class="PARRAFO">Campo 
                     num&eacute;rico de 3 d&iacute;gitos, obligatorio, corresponde a un segundo 
                     nivel de clasificaci&oacute;n o agrupaci&oacute;n del movimiento a capturar 
@@ -139,9 +137,9 @@
           
               
             <p><a href="INH_004B1.html">Compras</a><span
-              style='font-size:10.0pt;font-family:Arial'><b> | </b></span><a href="INH_004B2.html">Avances</a><b><span style='font-size:10.0pt;font-family:Arial'> 
-              | </span></b><a href="INH_004B3.html">Impuestos</a><span
-              style='font-size:10.0pt;font-family:Arial'><b> | </b></span><a href="INH_004B4.html">Pagos</a><b><span style='font-size:10.0pt;font-family:Arial'></span></b></p>
+              style='font-size:10.0pt;font-family:Arial'> | </span><a href="INH_004B2.html">Avances</a><span style='font-size:10.0pt;font-family:Arial'> 
+              | </span><a href="INH_004B3.html">Impuestos</a><span
+              style='font-size:10.0pt;font-family:Arial'> | </span><a href="INH_004B4.html">Pagos</a><span style='font-size:10.0pt;font-family:Arial'></span></p>
             
         </section>
     <script src="../js/menu.js"></script>

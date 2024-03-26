@@ -1,104 +1,110 @@
 <!DOCTYPE html>
 <html lang="es">
 
-<head>
+  <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>BANKBU®</title>
 
     <link rel="stylesheet" href="../css/pages.css">
     <link rel="stylesheet" href="../css/style.css">
- <link rel="icon" href="../img/ACQUIRER-logo.JPG" type="image/x-icon">
-</head>
+    <link rel="icon" href="../img/ACQUIRER-logo.JPG" type="image/x-icon">
+  </head>
 
-<body>
+  <body>
 
     <header>
-        <img class="logo" src="../img/logoBankbu_.PNG" alt="Logo de Mi Empresa">
-        <div id="menuBtn">
-            <img class="TITLE"  src= "../img/menu.PNG" alt="Botón de Menú ">
-        </div>
+      <img class="logo" src="../img/logoBankbu_.PNG" alt="Logo de Mi Empresa">
+      <div id="menuBtn">
+        <img class="TITLE" src="../img/menu.PNG" alt="Botón de Menú ">
+      </div>
     </header>
-   <div id="menuContainer"></div>
+    <div id="menuContainer"></div>
     <script>
-      fetch('menu.html')
-        .then(response => response.text())
-        .then(html => {
-          document.getElementById('menuContainer').innerHTML = html;
-        });
-    </script>
+    fetch('menu.html')
+      .then(response => response.text())
+      .then(html => {
+        document.getElementById('menuContainer').innerHTML = html;
+      });
+  </script>
 
     <section>
-        <div> 
-            <table>
-              <tr> 
-                <td><div> 
-                    <p  class="TITLE">Consulta global de intercambio</p>
-                    </div></td>
-              </tr>
-            </table>
-            <p class="PARRAFO"><span class="PARRAFO"><span class="SUBTITULO">Tapa contable:</span>  
-              </span> Grupo de campos que ilustran los datos m&iacute;nimos por cada transacci&oacute;n 
-              que compone el &iacute;tem del movimiento sobre el cual se realice la consulta.</p>
-            <p class="PARRAFO">El formulario contiene los siguientes campos, y cuenta en 
-              la parte superior con un bot&oacute;n para volver al <a href="INH_006B.html" >formulario 
-              principal</a> de la Consulta global de intercambio.</p>
-            <p class="TITLE"><img src="../img/INF_006B4.PNG"657" ></p>
-           
-            <table>
-              <tr> 
-                <td  class="titletable" ><p class="SUBTITULO">Transacci&oacute;n 
-                    interna </p></td>
-                <td><p class="PARRAFO">Muestra 
-                    el c&oacute;digo de la transacci&oacute;n interna asociada a la transacci&oacute;n 
-                    original, de acuerdo con la parametrizaci&oacute;n realizada en <a href="MEH_003B.html" >Transacciones 
-                    por empresa.</a></p></td>
-              </tr>
-              <tr> 
-                <td  class="titletable" ><p class="SUBTITULO">N&uacute;mero 
-                    transacciones </p></td>
-                <td><p class="PARRAFO">Campo 
-                    que ilustra la cantidad de transacciones originales realizadas por cada 
-                    registro del bloque central en que se encuentra el cursor.</p></td>
-              </tr>
-              <tr> 
-                <td class="titletable"><p class="SUBTITULO">Moneda 
-                    almacenada</p></td>
-                <td><p class="PARRAFO">Indica 
-                    la moneda en que es guardado el monto por tipo o clase de la transacci&oacute;n, 
-                    de acuerdo con la parametrizaci&oacute;n realizada en <a href="MEH_003B.html" >Transacciones 
-                    por empresa.</a></p></td>
-              </tr>
-              <tr> 
-                <td class="titletable"><p class="SUBTITULO">Valor</p></td>
-                <td><p class="PARRAFO">Campo 
-                    que ilustra la sumatoria o valor de la transacci&oacute;n realizada.</p></td>
-              </tr>
-            </table>
-            
-            <p><a href="INH_006B.html" >Formulario principal</a><span
-              ><b> | </b></span><span ><a href="INH_006B2.html" >Movimiento 
-              diario</a></span><b><span >| </span></b><a href="INH_006B3.html" >Rechazo 
-              cargue</a><span
-              ><b> | </b></span><a href="INH_006B4.html" >Fraudes</a><span
-              ><b> | </b></span><a href="INH_006B5.html" >Pendientes</a>
-            <a href="INH_006B6.html" >Contracargos</a><b><span > 
-              | </span></b><a href="INH_006B7.html" >Intercambio</a><span
-              ><b> | </b></span><span ><a href="INH_006B8.html" >Efectos 
-              al cobro</a><span
-              ></span></span><span
-              ><b>| </b></span><a href="INH_006B9.html" >Rechazo 
-              cargue convenios</a></p>
-            
-        </section>
-    <script src="../js/menu.js"></script>
-</body>
-<div id="footerContainer"></div>
-<script>
+      <div>
+
+        <p class="TITLE">Consulta global de intercambio</p>
+
+        <p class="PARRAFO"><span class="PARRAFO"><span class="SUBTITULO">Tapa
+              contable:</span>
+          </span> Grupo de campos que ilustran los datos m&iacute;nimos por cada
+          transacci&oacute;n
+          que compone el &iacute;tem del movimiento sobre el cual se realice la
+          consulta.</p>
+        <p class="PARRAFO">El formulario contiene los siguientes campos, y
+          cuenta en
+          la parte superior con un bot&oacute;n para volver al <a
+            href="INH_006B.html">formulario
+            principal</a> de la Consulta global de intercambio.</p>
+        <p class="TITLE"><img src="../img/INF_006B4.PNG"657"></p>
+
+        <table>
+          <tr>
+            <td class="titletable"><p class="SUBTITULO">Transacci&oacute;n
+                interna </p></td>
+            <td><p class="PARRAFO">Muestra
+                el c&oacute;digo de la transacci&oacute;n interna asociada a la
+                transacci&oacute;n
+                original, de acuerdo con la parametrizaci&oacute;n realizada en
+                <a href="MEH_003B.html">Transacciones
+                  por empresa.</a></p></td>
+          </tr>
+          <tr>
+            <td class="titletable"><p class="SUBTITULO">N&uacute;mero
+                transacciones </p></td>
+            <td><p class="PARRAFO">Campo
+                que ilustra la cantidad de transacciones originales realizadas
+                por cada
+                registro del bloque central en que se encuentra el
+                cursor.</p></td>
+          </tr>
+          <tr>
+            <td class="titletable"><p class="SUBTITULO">Moneda
+                almacenada</p></td>
+            <td><p class="PARRAFO">Indica
+                la moneda en que es guardado el monto por tipo o clase de la
+                transacci&oacute;n,
+                de acuerdo con la parametrizaci&oacute;n realizada en <a
+                  href="MEH_003B.html">Transacciones
+                  por empresa.</a></p></td>
+          </tr>
+          <tr>
+            <td class="titletable"><p class="SUBTITULO">Valor</p></td>
+            <td><p class="PARRAFO">Campo
+                que ilustra la sumatoria o valor de la transacci&oacute;n
+                realizada.</p></td>
+          </tr>
+        </table>
+
+        <p><a href="INH_006B.html">Formulario principal</a><span> |
+          </span><span><a href="INH_006B2.html">Movimiento
+              diario</a></span><span>| </span><a href="INH_006B3.html">Rechazo
+            cargue</a><span> | </span><a href="INH_006B4.html">Fraudes</a><span>
+            | </span><a href="INH_006B5.html">Pendientes</a>
+          <a href="INH_006B6.html">Contracargos</a><span>
+            | </span><a href="INH_006B7.html">Intercambio</a><span> |
+          </span><span><a href="INH_006B8.html">Efectos
+              al cobro</a><span></span></span><span>| </span><a
+            href="INH_006B9.html">Rechazo
+            cargue convenios</a></p>
+
+      </section>
+      <script src="../js/menu.js"></script>
+    </body>
+    <div id="footerContainer"></div>
+    <script>
   fetch('footer.html')
     .then(response => response.text())
     .then(html => {
       document.getElementById('footerContainer').innerHTML = html;
     });
 </script>
-</html>
+  </html>

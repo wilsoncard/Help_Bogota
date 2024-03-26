@@ -17,26 +17,20 @@
             <img class="TITLE" src="../img/menu.PNG" alt="Botón de Menú ">
         </div>
     </header>
-   <div id="menuContainer"></div>
-    <script>
-      fetch('menu.html')
-        .then(response => response.text())
-        .then(html => {
-          document.getElementById('menuContainer').innerHTML = html;
-        });
-    </script>
+      <div id="menuContainer"></div>
+  <script>
+    fetch('menu.html')
+      .then(response => response.text())
+      .then(html => {
+        document.getElementById('menuContainer').innerHTML = html;
+      });
+  </script>
 
     <section>
         <div>
-            <table width="100%">
-                <tr>
-                    <td>
-                        <div>
-                            <p class="TITLE">Actualizar estadísticas de solicitudes</p>
-                        </div>
-                    </td>
-                </tr>
-            </table>
+            
+            <p class="TITLE">Actualizar estadísticas de solicitudes</p>
+                    
             <p class="PARRAFO">Mediante esta funci&oacute;n la entidad actualiza la informaci&oacute;n
                 estad&iacute;stica tanto por franquicia como por tipo de solicitud y tipo
                 de producto, generando informaci&oacute;n correspondiente a la cantidad de
@@ -49,7 +43,7 @@
             <table>
                 <tr>
                     <td class="titletable">
-                        <p class="SUBTITULO"><b><span>Franquicia</span></b></p>
+                        <p class="SUBTITULO">Franquicia</span></p>
                     </td>
                     <td>
                         <p class="PARRAFO">Campo obligatorio que posee lista de valores poblada a trav&eacute;s de la
@@ -60,8 +54,8 @@
                 </tr>
                 <tr>
                     <td class="titletable">
-                        <p class="SUBTITULO"><b><span>Archivo
-                                    log </span></b></p>
+                        <p class="SUBTITULO">Archivo
+                                    log </span></p>
                     </td>
                     <td>
                         <p class="PARRAFO">Campo obligatorio en el que la

@@ -17,23 +17,19 @@
             <img class="TITLE"  src= "../img/menu.PNG" alt="Botón de Menú ">
         </div>
     </header>
-   <div id="menuContainer"></div>
-    <script>
-      fetch('menu.html')
-        .then(response => response.text())
-        .then(html => {
-          document.getElementById('menuContainer').innerHTML = html;
-        });
-    </script>
+      <div id="menuContainer"></div>
+  <script>
+    fetch('menu.html')
+      .then(response => response.text())
+      .then(html => {
+        document.getElementById('menuContainer').innerHTML = html;
+      });
+  </script>
     <section>
         <div> 
-            <table>
-              <tr> 
-                <td><div> 
+            
                     <p  class="TITLE">Reestructuraciones</p>
-                    </div></td>
-              </tr>
-            </table>
+                    
             <p class="PARRAFO">Mediante esta funci&oacute;n se registran aquellos clientes 
               que a trav&eacute;s del proceso de reestructuraci&oacute;n o refinanciaci&oacute;n 
               intentan normalizar su cr&eacute;dito. De acuerdo con el perfil del funcionario, 
@@ -55,21 +51,21 @@
             
             <table>
               <tr> 
-                <td class="titletable"><p class="SUBTITULO"><b><span >Tipo</span></b></p></td>
+                <td class="titletable"><p class="SUBTITULO"><span >Tipo</span></p></td>
                 <td><p class="PARRAFO">Cuando 
                     se ingresa a la opci&oacute;n, se despliega un filtro inicial en el 
                     que se selecciona de la lista de valores el <a href="NUH_008B.html" >tipo 
                     de documento de identificaci&oacute;n</a>.</p></td>
               </tr>
               <tr> 
-                <td class="titletable"><p class="SUBTITULO"><b><span >N&uacute;mero</span></b></p></td>
+                <td class="titletable"><p class="SUBTITULO"><span >N&uacute;mero</span></p></td>
                 <td><p class="PARRAFO">Este 
                     campo opcional acepta cualquier dato alfanum&eacute;rico de m&aacute;ximo 
                     deciseis caracteres.</p></td>
               </tr>
               <tr> 
-                <td class="titletable"><p class="SUBTITULO"><b><span >N&uacute;mero 
-                    tarjeta </span></b></p></td>
+                <td class="titletable"><p class="SUBTITULO"><span >N&uacute;mero 
+                    tarjeta </span></p></td>
                 <td><p class="PARRAFO">En 
                     este campo se captura el n&uacute;mero de tarjeta del cliente a quien 
                     se desea consultar, acepta m&aacute;ximo 23 caracteres.</p></td>
@@ -92,28 +88,28 @@
             
             <table>
               <tr> 
-                <td class="titletable"><p class="SUBTITULO"><b>Cliente</b></p></td>
+                <td class="titletable"><p class="SUBTITULO">Cliente</p></td>
                 <td><p class="PARRAFO">Corresponde 
                     al nombre del cliente titular del producto.</p></td>
               </tr>
               <tr> 
-                <td class="titletable"><p class="SUBTITULO"><b>Acci&oacute;n 
-                    a realizar</b></p></td>
+                <td class="titletable"><p class="SUBTITULO">Acci&oacute;n 
+                    a realizar</p></td>
                 <td><p class="PARRAFO">Se 
                     determina la acci&oacute;n a realizar (Reestructurar o Refinanciar) 
                     para que el sistema verifique y presente a continuaci&oacute;n la informaci&oacute;n 
                     del cliente al cual se le va a aplicar el procedimiento.</p></td>
               </tr>
               <tr> 
-                <td class="titletable"><p class="SUBTITULO">Tarjeta<b><span > 
-                    </span></b></p></td>
+                <td class="titletable"><p class="SUBTITULO">Tarjeta<span > 
+                    </span></p></td>
                 <td><p class="PARRAFO">Luego 
                     de capturados el tipo y n&uacute;mero de identificaci&oacute;n, en este 
                     campo se presenta el n&uacute;mero de la tarjeta asociado a dicha identificaci&oacute;n.</p></td>
               </tr>
               <tr> 
                 <td class="titletable"><p class="SUBTITULO">Modo 
-                    aplicaci&oacute;n<b><span ></span></b></p></td>
+                    aplicaci&oacute;n<span ></span></p></td>
                 <td><p class="PARRAFO">La 
                     forma ofrece la opci&oacute;n de efectuar el proceso de reestructuraci&oacute;n 
                     o refinanciaci&oacute;n en forma directa, o la formalizaci&oacute;n 
@@ -121,8 +117,8 @@
                     se permita la refinanciaci&oacute;n o reestructuraci&oacute;n.</p></td>
               </tr>
               <tr> 
-                <td class="titletable"><p class="SUBTITULO"><b>Tarjeta 
-                    refinancia </b></p></td>
+                <td class="titletable"><p class="SUBTITULO">Tarjeta 
+                    refinancia </p></td>
                 <td><p class="PARRAFO">En 
                     este campo se selecciona la tarjeta que consolida la reestructuraci&oacute;n, 
                     es decir, aquella a la cual le ser&aacute; aplicada la reestructuraci&oacute;n 
@@ -130,22 +126,22 @@
                     las tarjetas que posee el cliente.</p></td>
               </tr>
               <tr> 
-                <td class="titletable"><p class="SUBTITULO"><b>Aplica 
-                    en </b></p></td>
+                <td class="titletable"><p class="SUBTITULO">Aplica 
+                    en </p></td>
                 <td><p class="PARRAFO">El 
                     usuario selecciona si va a hacer la operaci&oacute;n l&iacute;nea y 
                     en tiempo real o en batch.
                   </p></td>
               </tr>
               <tr> 
-                <td class="titletable"><p class="SUBTITULO"><b>Tipo 
-                    reestructuraci&oacute;n </b></p></td>
+                <td class="titletable"><p class="SUBTITULO">Tipo 
+                    reestructuraci&oacute;n </p></td>
                 <td><p class="PARRAFO">Campo 
                     con lista propia de valores que permite seleccionar la clase de reestructuraci&oacute;n 
                     a efectuar.</p></td>
               </tr>
               <tr> 
-                <td class="titletable"><p class="SUBTITULO"><b>Estado</b></p></td>
+                <td class="titletable"><p class="SUBTITULO">Estado</p></td>
                 <td><p class="PARRAFO">Este 
                     campo informa acerca de la etapa en la cual se encuentra la tarjeta, 
                     dentro del proceso de reestructuraci&oacute;n o refinanciaci&oacute;n. 
@@ -162,8 +158,8 @@
                     en caso de que el cliente incumpla el acuerdo.</p></td>
               </tr>
               <tr> 
-                <td class="titletable"><p class="SUBTITULO"><b>Saldo 
-                    a reestructurar</b></p></td>
+                <td class="titletable"><p class="SUBTITULO">Saldo 
+                    a reestructurar</p></td>
                 <td><p class="PARRAFO">Campo 
                     en el cual se selecciona el valor a reestructurar o refinanciar. Los 
                     valores posibles son: Saldo Total, cuando el monto a reestructurar 
@@ -180,8 +176,8 @@
                   </p></td>
               </tr>
               <tr> 
-                <td class="titletable"><p class="SUBTITULO"><b>Valor 
-                    a reestructurar</b></p></td>
+                <td class="titletable"><p class="SUBTITULO">Valor 
+                    a reestructurar</p></td>
                 <td><p class="PARRAFO">Despliega 
                     el valor del saldo total de la deuda o del pago m&iacute;nimo, en caso 
                     de haber seleccionado las opciones Saldo Total o Pago M&iacute;nimo, 
@@ -205,8 +201,8 @@
                     que realiza el proceso autom&aacute;ticamente.</p></td>
               </tr>
               <tr> 
-                <td class="titletable"><p class="SUBTITULO"><b>Valor 
-                    a pagar</b></p></td>
+                <td class="titletable"><p class="SUBTITULO">Valor 
+                    a pagar</p></td>
                 <td><p class="PARRAFO">Campo 
                     en el cual se indica el valor que debe pagar el cliente, cuando se pretende 
                     formalizar un acuerdo de pago.</p></td>
@@ -274,7 +270,7 @@
               </tr>
               <tr> 
                 <td class="titletable"><p class="SUBTITULO">Capital 
-                    mora <b><span ></span></b></p></td>
+                    mora <span ></span></p></td>
                 <td><p class="PARRAFO">Se&ntilde;ala 
                     el monto acumulado de los diferidos no cubiertos en facturaciones anteriores.</p></td>
               </tr>
@@ -363,7 +359,7 @@
               </tr>
               <tr> 
                 <td class="titletable"><p class="SUBTITULO">Valor 
-                    capital <b><span ></span></b></p></td>
+                    capital <span ></span></p></td>
                 <td><p class="PARRAFO">Registra 
                     el valor por concepto de capital ( a pagar ) correspondiente a cada 
                     una de las cuotas de la refinanciaci&oacute;n.</p></td>

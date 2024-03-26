@@ -1,153 +1,164 @@
 <!DOCTYPE html>
 <html lang="es">
 
-<head>
+  <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>BANKBU®</title>
     <link rel="stylesheet" href="../css/pages.css">
     <link rel="stylesheet" href="../css/style.css">
- <link rel="icon" href="../img/ACQUIRER-logo.JPG" type="image/x-icon">
-</head>
+    <link rel="icon" href="../img/ACQUIRER-logo.JPG" type="image/x-icon">
+  </head>
 
-<body>
+  <body>
     <header>
-        <img class="logo" src="../img/logoBankbu_.PNG" alt="Logo de Mi Empresa">
-        <div id="menuBtn">
-            <img class="TITLE"  src= "../img/menu.PNG" alt="Botón de Menú ">
-        </div>
+      <img class="logo" src="../img/logoBankbu_.PNG" alt="Logo de Mi Empresa">
+      <div id="menuBtn">
+        <img class="TITLE" src="../img/menu.PNG" alt="Botón de Menú ">
+      </div>
     </header>
-   <div id="menuContainer"></div>
+    <div id="menuContainer"></div>
     <script>
-      fetch('menu.html')
-        .then(response => response.text())
-        .then(html => {
-          document.getElementById('menuContainer').innerHTML = html;
-        });
-    </script>
+    fetch('menu.html')
+      .then(response => response.text())
+      .then(html => {
+        document.getElementById('menuContainer').innerHTML = html;
+      });
+  </script>
 
     <section>
-        <div> 
-            <table>
-              <tr> 
-                <td><div> 
-                    <p  class="TITLE">Novedad datos b&aacute;sicos persona 
-                      jur&iacute;dica </p>
-                  </div></td>
-              </tr>
-            </table>
-            <p class="PARRAFO" >Este formulario invocado desde la <a href="SCH_002B.html" >consulta 
-              de clientes</a>, permite corregir, modificar o completar la informaci&oacute;n 
-              b&aacute;sica referida a condiciones econ&oacute;micas correspondientes a 
-              los clientes personas jur&iacute;dicas. Al ingresar al formulario por defecto 
-              despliega los datos actuales registrados para el cliente con el fin de modificar 
-              &uacute;nicamente aquellos datos que se requiera actualizar o registrar los 
-              que no hayan sido ingresados inicialmente.</span></p>
-            <p class="TITLE"><img src="../img/SCF_008E.PNG"561" height="254"></p>
-            
-            <p  class="TITLE">Descripci&oacute;n de campos</p>
-            <table>
-              <tr> 
-                <td class="titletable"><p class="SUBTITULO"><b><span 
-        > 
-                    Representante legal</span></b></p></td>
-                <td><p  class="PARRAFO">Campo 
-                    alfanum&eacute;rico de hasta 60 caracteres en el cual se registra el 
-                    nombre de la persona que cumple las funciones de representante legal 
-                    del cliente jur&iacute;dico.</p></td>
-              </tr>
-           
-              <tr> 
-                <td class="titletable"><p class="SUBTITULO"><b><span 
-        >Escritura</span></b></p>
-                  </td>
-                <td><p  class="PARRAFO">En 
-                    este campo alfanum&eacute;rico de 10 posiciones, no obligatorio, se 
-                    registra el n&uacute;mero o serial que identifica la escritura de constituci&oacute;n 
-                    de la sociedad.
-                  </p></td>
-              </tr>
-           
-              <tr> 
-                <td class="titletable"><p class="SUBTITULO"><b><span 
-        >Notar&iacute;a</span></b></p></td>
-                <td><p  class="PARRAFO">Campo 
-                    alfanum&eacute;rico de 10 posiciones, no obligatorio, dentro del que 
-                    se registra el n&uacute;mero que identifica a la notar&iacute;a en la 
-                    que se elev&oacute; la escritura de constituci&oacute;n de la sociedad.
-                  </p>
-                  </td>
-              </tr>
-           
-              <tr> 
-                <td class="titletable"><p class="SUBTITULO"><b><span 
-        > 
-                    Fecha de constituci&oacute;n</span></b></p></td>
-                <td><p  class="PARRAFO">En 
-                    este campo se registra en formato YYYY-MM-DD la fecha en la cual se 
-                    hizo la escritura de constituci&oacute;n de la sociedad.</p></td>
-              </tr>
-           
-              <tr> 
-                <td class="titletable"><p class="SUBTITULO"><b><span 
-        > 
-                    Capital</span></b></p></td>
-                <td><p  class="PARRAFO">Campo 
-                    num&eacute;rico de hasta 14 enteros y 2 decimales en el que se registra 
-                    el monto del capital de la sociedad.</p></td>
-              </tr>
-           
-              <tr> 
-                <td class="titletable"><p class="SUBTITULO"><b><span 
-        > 
-                    Ubicaci&oacute;n</span></b></p></td>
-                <td><p  class="PARRAFO">Este 
-                    campo cuenta con lista de valores en el cual se selecciona la <a href="NUH_003B.html" >ubicaci&oacute;n</a> 
-                    correspondiente a la ciudad de la sede u oficina principal de la sociedad.</p></td>
-              </tr>
-           
-              <tr> 
-                <td class="titletable"><p class="SUBTITULO"><b><span 
-        > 
-                    Actividad</span></b></p></td>
-                <td><p  class="PARRAFO">Campo 
-                    que cuenta con lista de valores de la cual se puede seleccionar la <a href="NUH_032B.html" >actividad 
-                    econ&oacute;mica</a> desarrollada por la sociedad.</p></td>
-              </tr>
-           
-              <tr> 
-                <td class="titletable"><p class="SUBTITULO"><b><span 
-        > 
-                    Tipo de sociedad </span></b></p></td>
-                <td><p  class="PARRAFO">En 
-                    este campo se puede seleccionar a trav&eacute;s de la lista de valores 
-                    la <a href="NUH_038B.html" >clase de sociedad</a> 
-                    correspondiente al cliente jur&iacute;dico.</p></td>
-              </tr>
-           
-              <tr> 
-                <td class="titletable"><p class="SUBTITULO"><b><span 
-        > 
-                    Fecha de radicaci&oacute;n</span></b></p></td>
-                <td><p  class="PARRAFO">Es 
-                    el &uacute;nico campo obligatorio del formulario y en el se registra 
-                    en formato YYYY-MM-DD la fecha en la cual el cliente notific&oacute; 
-                    la actualizaci&oacute;n de sus datos b&aacute;sicos y que puede ser 
-                    incluisve una fecha anterior a la actual del sistema, facilitando el 
-                    ingreso de novedades de fechas anteriores.</p></td>
-              </tr>
-            </table>
-        </section>
+      <div>
+
+        <p class="TITLE">Novedad datos b&aacute;sicos persona
+          jur&iacute;dica </p>
+
+        <p class="PARRAFO">Este formulario invocado desde la <a
+            href="SCH_002B.html">consulta
+            de clientes</a>, permite corregir, modificar o completar la
+          informaci&oacute;n
+          b&aacute;sica referida a condiciones econ&oacute;micas
+          correspondientes a
+          los clientes personas jur&iacute;dicas. Al ingresar al formulario por
+          defecto
+          despliega los datos actuales registrados para el cliente con el fin de
+          modificar
+          &uacute;nicamente aquellos datos que se requiera actualizar o
+          registrar los
+          que no hayan sido ingresados inicialmente.</span></p>
+      <p class="TITLE"><img src="../img/SCF_008E.PNG"></p>
+
+      <p class="TITLE">Descripci&oacute;n de campos</p>
+      <table>
+        <tr>
+          <td class="titletable"><p class="SUBTITULO"><span>
+                Representante legal</span></p></td>
+          <td><p class="PARRAFO">Campo
+              alfanum&eacute;rico de hasta 60 caracteres en el cual se registra
+              el
+              nombre de la persona que cumple las funciones de representante
+              legal
+              del cliente jur&iacute;dico.</p></td>
+        </tr>
+
+        <tr>
+          <td class="titletable"><p class="SUBTITULO"><span>Escritura</span></p>
+          </td>
+          <td><p class="PARRAFO">En
+              este campo alfanum&eacute;rico de 10 posiciones, no obligatorio,
+              se
+              registra el n&uacute;mero o serial que identifica la escritura de
+              constituci&oacute;n
+              de la sociedad.
+            </p></td>
+        </tr>
+
+        <tr>
+          <td class="titletable"><p
+              class="SUBTITULO"><span>Notar&iacute;a</span></p></td>
+          <td><p class="PARRAFO">Campo
+              alfanum&eacute;rico de 10 posiciones, no obligatorio, dentro del
+              que
+              se registra el n&uacute;mero que identifica a la notar&iacute;a en
+              la
+              que se elev&oacute; la escritura de constituci&oacute;n de la
+              sociedad.
+            </p>
+          </td>
+        </tr>
+
+        <tr>
+          <td class="titletable"><p class="SUBTITULO"><span>
+                Fecha de constituci&oacute;n</span></p></td>
+          <td><p class="PARRAFO">En
+              este campo se registra en formato YYYY-MM-DD la fecha en la cual
+              se
+              hizo la escritura de constituci&oacute;n de la sociedad.</p></td>
+        </tr>
+
+        <tr>
+          <td class="titletable"><p class="SUBTITULO"><span>
+                Capital</span></p></td>
+          <td><p class="PARRAFO">Campo
+              num&eacute;rico de hasta 14 enteros y 2 decimales en el que se
+              registra
+              el monto del capital de la sociedad.</p></td>
+        </tr>
+
+        <tr>
+          <td class="titletable"><p class="SUBTITULO"><span>
+                Ubicaci&oacute;n</span></p></td>
+          <td><p class="PARRAFO">Este
+              campo cuenta con lista de valores en el cual se selecciona la <a
+                href="NUH_003B.html">ubicaci&oacute;n</a>
+              correspondiente a la ciudad de la sede u oficina principal de la
+              sociedad.</p></td>
+        </tr>
+
+        <tr>
+          <td class="titletable"><p class="SUBTITULO"><span>
+                Actividad</span></p></td>
+          <td><p class="PARRAFO">Campo
+              que cuenta con lista de valores de la cual se puede seleccionar la
+              <a href="NUH_032B.html">actividad
+                econ&oacute;mica</a> desarrollada por la sociedad.</p></td>
+        </tr>
+
+        <tr>
+          <td class="titletable"><p class="SUBTITULO"><span>
+                Tipo de sociedad </span></p></td>
+          <td><p class="PARRAFO">En
+              este campo se puede seleccionar a trav&eacute;s de la lista de
+              valores
+              la <a href="NUH_038B.html">clase de sociedad</a>
+              correspondiente al cliente jur&iacute;dico.</p></td>
+        </tr>
+
+        <tr>
+          <td class="titletable"><p class="SUBTITULO"><span>
+                Fecha de radicaci&oacute;n</span></p></td>
+          <td><p class="PARRAFO">Es
+              el &uacute;nico campo obligatorio del formulario y en el se
+              registra
+              en formato YYYY-MM-DD la fecha en la cual el cliente
+              notific&oacute;
+              la actualizaci&oacute;n de sus datos b&aacute;sicos y que puede
+              ser
+              incluisve una fecha anterior a la actual del sistema, facilitando
+              el
+              ingreso de novedades de fechas anteriores.</p></td>
+        </tr>
+      </table>
+    </section>
     <script src="../js/menu.js"></script>
 
     <div id="footerContainer"></div>
-<script>
+    <script>
   fetch('footer.html')
     .then(response => response.text())
     .then(html => {
       document.getElementById('footerContainer').innerHTML = html;
     });
 </script>
-</body>
+  </body>
 
 </html>

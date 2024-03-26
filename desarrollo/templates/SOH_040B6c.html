@@ -17,24 +17,20 @@
             <img class="TITLE"  src= "../img/menu.PNG" alt="Botón de Menú ">
         </div>
     </header>
-   <div id="menuContainer"></div>
-    <script>
-      fetch('menu.html')
-        .then(response => response.text())
-        .then(html => {
-          document.getElementById('menuContainer').innerHTML = html;
-        });
-    </script>
+      <div id="menuContainer"></div>
+  <script>
+    fetch('menu.html')
+      .then(response => response.text())
+      .then(html => {
+        document.getElementById('menuContainer').innerHTML = html;
+      });
+  </script>
 
     <section>
         <div> 
-            <table>
-              <tr> 
-                <td><div> 
+            
                     <p  class="TITLE">Solicitudes por etapa - Verificaci&oacute;n referencias</p>
-                    </div></td>
-              </tr>
-            </table>
+                    
             <p class="PARRAFO"><span class="SUBTITULO">Detalle referencia:</span>  A trav&eacute;s 
               de esta opci&oacute;n se lleva control de las referencias que el cliente tiene 
               registradas en el sistema.</p>
@@ -53,32 +49,32 @@
                 <td><p class="PARRAFO">Campo de salida que muestra el tipo de referencia configurado en la consulta del cliente al cual pertenece la solicitud. </p></td>
               </tr>
               <tr> 
-                <td class="titletable"><p class="SUBTITULO"><b>Tel&eacute;fono</b></p></td>
+                <td class="titletable"><p class="SUBTITULO">Tel&eacute;fono</p></td>
                 <td><p class="PARRAFO">Campo de salida que muestra el tipo tel&eacute;fono de la referencia. </p></td>
               </tr>
               <tr> 
-                <td  class="titletable" ><p class="SUBTITULO"><b><span 
-        >Nombre</span></span></b></p></td>
+                <td  class="titletable" ><p class="SUBTITULO"><span 
+        >Nombre</span></span></p></td>
                 <td><p class="PARRAFO">Campo de salida que muestra el nombre de la referencia configurado en la consulta del cliente al cual pertenece la solicitud. </p></td>
               </tr>
               <tr> 
-                <td class="titletable"><p class="SUBTITULO"><b><span 
-        >Cargo</span></span></b></p></td>
+                <td class="titletable"><p class="SUBTITULO"><span 
+        >Cargo</span></span></p></td>
                 <td><p class="PARRAFO">Campo 
                     alfanum&eacute;rico opcional de 60 caracteres, en el cual se indica 
                     el tipo de cargo.</p></td>
               </tr>
               <tr> 
-                <td  class="titletable" ><p class="SUBTITULO"><b><span 
-        >Observaciones</span></span></b></p></td>
+                <td  class="titletable" ><p class="SUBTITULO"><span 
+        >Observaciones</span></span></p></td>
                 <td><p class="PARRAFO">Este 
                     campo permite ser actualizado y admite cualquier dato alfanum&eacute;rico 
                     de m&aacute;ximo 2000 caracteres, acepta may&uacute;sculas y min&uacute;sculas.
                   </p></td>
               </tr>
               <tr> 
-                <td class="titletable"><p class="SUBTITULO"><b><span 
-        >Referencia verificada </span></span></b></p></td>
+                <td class="titletable"><p class="SUBTITULO"><span 
+        >Referencia verificada </span></span></p></td>
                 <td><p class="PARRAFO">El 
                     campo Referencia verificada, debe proveer un combo con las opciones 
                     (S&iacute;, No).</p></td>

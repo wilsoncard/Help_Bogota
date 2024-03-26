@@ -18,24 +18,20 @@
             <img class="TITLE"  src= "../img/menu.PNG" alt="Botón de Menú ">
         </div>
     </header>
-   <div id="menuContainer"></div>
-    <script>
-      fetch('menu.html')
-        .then(response => response.text())
-        .then(html => {
-          document.getElementById('menuContainer').innerHTML = html;
-        });
-    </script>
+      <div id="menuContainer"></div>
+  <script>
+    fetch('menu.html')
+      .then(response => response.text())
+      .then(html => {
+        document.getElementById('menuContainer').innerHTML = html;
+      });
+  </script>
 
     <section>
         <div> 
-            <table>
-              <tr> 
-                <td><div> 
+            
                     <p  class="TITLE">Novedad adicionar / eliminar cuenta</p>
-                  </div></td>
-              </tr>
-            </table>
+                  
             <p class="PARRAFO" >Mediante esta opci&oacute;n que se 
               invoca desde <a href="DBH_020B.html" >Generaci&oacute;n de novedades 
               d&eacute;bito</a> se registra la novedad mediante la cual se asocia una nueva 
@@ -54,29 +50,29 @@
             <div> 
               <table>
                 <tr> 
-                  <td class="titletable"  ><p class="SUBTITULO"><b><span >Cuenta 
-                      actual</span></b></p></td>
+                  <td class="titletable"  ><p class="SUBTITULO"><span >Cuenta 
+                      actual</span></p></td>
                   <td><p  class="PARRAFO">En 
                       este campo de salida se muestra el n&uacute;mero de la cuenta principal 
                       asociada a la tarjeta actualmente.</p></td>
                 </tr>
                 <tr> 
-                  <td class="titletable"><p class="SUBTITULO"><b><span >Categor&iacute;a</span></b></p></td>
+                  <td class="titletable"><p class="SUBTITULO"><span >Categor&iacute;a</span></p></td>
                   <td><p  class="PARRAFO">Campo 
                       tipo combo que indica la categor&iacute;a correspondiente a la cuenta 
                       desplegada en el campo anterior.</p></td>
                 </tr>
                 <tr> 
-                  <td class="titletable"><p class="SUBTITULO"><b><span >Retirar 
-                      cuenta </span></b></p></td>
+                  <td class="titletable"><p class="SUBTITULO"><span >Retirar 
+                      cuenta </span></p></td>
                   <td><p  class="PARRAFO">En 
                       este check se marca para indicarle al sistema que la acci&oacute;n 
                       a ejecutar mediante la novedad es el retiro o eliminaci&oacute;n de 
                       la cuenta.</p></td>
                 </tr>
                 <tr> 
-                  <td class="titletable"><p class="SUBTITULO"><b><span >Tipo 
-                      cuenta a debitar</span></b></p></td>
+                  <td class="titletable"><p class="SUBTITULO"><span >Tipo 
+                      cuenta a debitar</span></p></td>
                   <td><p  class="PARRAFO">Campo 
                       obligatorio tipo combo que se habilita solamente si el campo retirar 
                       cuenta se encuentra desmarcado y que permite seleccionar entre Ahorros, 
@@ -84,7 +80,7 @@
                       la tarjeta d&eacute;bito.</p></td>
                 </tr>
                 <tr> 
-                  <td class="titletable"><p class="SUBTITULO"><b><span >Moneda</span></b></p></td>
+                  <td class="titletable"><p class="SUBTITULO"><span >Moneda</span></p></td>
                   <td><p  class="PARRAFO">En 
                       este campo obligatorio que se habilita solamente si el campo retirar 
                       cuenta se encuentra desmarcado y que cuenta con lista de valores, 
@@ -92,8 +88,8 @@
                       que se va a asociar a la tarjeta.</p></td>
                 </tr>
                 <tr> 
-                  <td class="titletable"><p class="SUBTITULO"><b><span >N&uacute;mero 
-                      de cuenta</span></b></p></td>
+                  <td class="titletable"><p class="SUBTITULO"><span >N&uacute;mero 
+                      de cuenta</span></p></td>
                   <td><p  class="PARRAFO">Campo 
                       obligatorio que funciona de la siguiente manera. Si el campo Retirar 
                       cuenta se encuentra marcado, habilita una lista de valores de 
@@ -104,15 +100,15 @@
                       de la cuenta a asociar con la tarjeta d&eacute;bito.</p></td>
                 </tr>
                 <tr> 
-                  <td class="titletable"><p class="SUBTITULO"><b><span >Fecha 
-                      radicaci&oacute;n</span></b></p></td>
+                  <td class="titletable"><p class="SUBTITULO"><span >Fecha 
+                      radicaci&oacute;n</span></p></td>
                   <td><p  class="PARRAFO">En 
                       este campo obligatorio se registra en formato YYYY-MM-DD la fecha 
                       en la que se ingresa la novedad en el sistema.</p></td>
                 </tr>
                 <tr> 
-                  <td class="titletable"><p class="SUBTITULO"><b><span >Sucursal 
-                      cuenta </span></b></p></td>
+                  <td class="titletable"><p class="SUBTITULO"><span >Sucursal 
+                      cuenta </span></p></td>
                   <td><p  class="PARRAFO">Campo 
                       obligatorio que funciona de la siguiente manera. Si el campo Retirar 
                       cuenta se encuentra marcado, este campo es de salida y despliega 

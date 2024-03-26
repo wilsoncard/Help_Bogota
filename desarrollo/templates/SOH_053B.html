@@ -17,14 +17,14 @@
             <img class="TITLE" src="../img/menu.PNG" alt="Botón de Menú ">
         </div>
     </header>
-   <div id="menuContainer"></div>
-    <script>
-      fetch('menu.html')
-        .then(response => response.text())
-        .then(html => {
-          document.getElementById('menuContainer').innerHTML = html;
-        });
-    </script>
+      <div id="menuContainer"></div>
+  <script>
+    fetch('menu.html')
+      .then(response => response.text())
+      .then(html => {
+        document.getElementById('menuContainer').innerHTML = html;
+      });
+  </script>
 
     <section>
         <div>
@@ -33,7 +33,7 @@
             <table>
                 <tr>
                     <td>
-                        <p><span>Mediante esta función se habilita el
+                        <p>Mediante esta función se habilita el
                                 mantenimiento y consulta de la tabla que contiene la parametrización requerida
                                 por el sistema, para el envío de la información del cliente a los entes de
                                 control a través de la interface correspondiente.</span></p>
@@ -41,7 +41,7 @@
                 </tr>
                 <tr>
                     <td>
-                        <p><b><span class="SUBTITULO">Centrales: </span></b><span>Parámetros
+                        <p><span class="SUBTITULO">Centrales: </span>Parámetros
                                 para definir las características del cliente para el envío en la interface de
                                 centrales de riesgo.</span></p>
                     </td>
@@ -53,16 +53,16 @@
                 </tr>
             </table>
 
-            <p class="TITLE"><a name="BL_ACCIONES_EXCEP_FILE"><b></a><span>
-                    Descripción de Campos Centrales</span></b></p>
+            <p class="TITLE"><a name="BL_ACCIONES_EXCEP_FILE"></a>
+                    Descripción de Campos Centrales</span></p>
 
             <table>
                 <tr>
                     <td>
-                        <p><b><span class="SUBTITULO">Categoría cliente</span></b></p>
+                        <p><span class="SUBTITULO">Categoría cliente</span></p>
                     </td>
                     <td>
-                        <p><span>Campo que contiene una lista de valores
+                        <p>Campo que contiene una lista de valores
                                 poblada previamente en la opción <i><a href="MEH_004B.html">Categoría
                                         clientes</a></i> del módulo Núcleo, de la cual la entidad selecciona el tipo
                                 del
@@ -71,10 +71,10 @@
                 </tr>
                 <tr>
                     <td>
-                        <p><b><span class="SUBTITULO">Inicio antigúedad</span></b></p>
+                        <p><span class="SUBTITULO">Inicio antigúedad</span></p>
                     </td>
                     <td>
-                        <p><span>Campo numérico de 3 posiciones,
+                        <p>Campo numérico de 3 posiciones,
                                 obligatorio, en el cual se define cuántos períodos (expresados en meses)
                                 deben transcurrir después de la activación, para enviar la información del cliente
                                 en la interface de centrales de riesgo.</span></p>
@@ -82,10 +82,10 @@
                 </tr>
                 <tr>
                     <td>
-                        <p><b><span class="SUBTITULO">Fin antigúedad</span></b></p>
+                        <p><span class="SUBTITULO">Fin antigúedad</span></p>
                     </td>
                     <td>
-                        <p><span>Campo numérico de 3 posiciones,
+                        <p>Campo numérico de 3 posiciones,
                                 obligatorio, en el cual se define hasta cuántos períodos de activación
                                 (expresado en meses) se toma el rango para enviar la información del cliente
                                 en la interface de centrales de riesgo.</span></p>
@@ -93,10 +93,10 @@
                 </tr>
                 <tr>
                     <td>
-                        <p><b><span class="SUBTITULO">Mora inicial</span></b></p>
+                        <p><span class="SUBTITULO">Mora inicial</span></p>
                     </td>
                     <td>
-                        <p><span>Campo numérico de 2 posiciones,
+                        <p>Campo numérico de 2 posiciones,
                                 obligatorio, en el cual se define a partir de cuántos períodos de mora
                                 (expresado en meses) deben componer el saldo del cliente para enviar la
                                 información en la interface de centrales de riesgo.</span></p>
@@ -104,10 +104,10 @@
                 </tr>
                 <tr>
                     <td>
-                        <p><b><span class="SUBTITULO">Mora final</span></b></p>
+                        <p><span class="SUBTITULO">Mora final</span></p>
                     </td>
                     <td>
-                        <p><span>Campo numérico de 2 posiciones,
+                        <p>Campo numérico de 2 posiciones,
                                 obligatorio, en el cual se define hasta cuántos períodos de mora (expresado
                                 en meses) deben componer el saldo del cliente para enviar la información en la
                                 interface de centrales de riesgo.</span></p>
@@ -115,10 +115,10 @@
                 </tr>
                 <tr>
                     <td>
-                        <p><b><span class="SUBTITULO">Inicio cupo</span></b></p>
+                        <p><span class="SUBTITULO">Inicio cupo</span></p>
                     </td>
                     <td>
-                        <p><span>Campo numérico de 16 posiciones enteras y
+                        <p>Campo numérico de 16 posiciones enteras y
                                 2 decimales, obligatorio, en el cual se define el cupo total asignado al
                                 cliente a partir del cual se debe
                                 enviar la información en la interface de centrales de riesgo.</span></p>
@@ -126,10 +126,10 @@
                 </tr>
                 <tr>
                     <td>
-                        <p><b><span class="SUBTITULO">Fin cupo</span></b></p>
+                        <p><span class="SUBTITULO">Fin cupo</span></p>
                     </td>
                     <td>
-                        <p><span>Campo numérico de 16 posiciones enteras y
+                        <p>Campo numérico de 16 posiciones enteras y
                                 2 decimales, obligatorio, en el cual se define el rango final del cupo total
                                 asignado al cliente que se debe tener
                                 en cuenta para enviar la información en la interface de centrales de riesgo.</span>
@@ -138,10 +138,10 @@
                 </tr>
                 <tr>
                     <td>
-                        <p><b><span class="SUBTITULO">Valor mora</span></b></p>
+                        <p><span class="SUBTITULO">Valor mora</span></p>
                     </td>
                     <td>
-                        <p><span>Corresponde al saldo en mora del cliente a
+                        <p>Corresponde al saldo en mora del cliente a
                                 partir del cual se envía la información en la interface de centrales de
                                 riesgo.</span></p>
                     </td>
@@ -152,7 +152,7 @@
             <table>
                 <tr>
                     <td>
-                        <p><b><span class="SUBTITULO">No reportar<span> :</span></span></b><span>En esta carpeta se
+                        <p><span class="SUBTITULO">No reportar :</span></span>En esta carpeta se
                                 registran las características de no envío en la interface de centrales de
                                 riesgo de acuerdo con lo definido para cada producto.</span></p>
                     </td>
@@ -162,16 +162,16 @@
                 </tr>
             </table>
 
-            <p class="TITLE"><a name="BL_ACC_EXCEP_FILE_X_BLOQU"></a><span>Descripción de Campos No
+            <p class="TITLE"><a name="BL_ACC_EXCEP_FILE_X_BLOQU"></a>Descripción de Campos No
                     reportar</span>
 
             <table>
                 <tr>
                     <td>
-                        <p><b><span class="SUBTITULO">Bin/ Segmento /Grupo </span></b><span></span></p>
+                        <p><span class="SUBTITULO">Bin/ Segmento /Grupo </span></p>
                     </td>
                     <td>
-                        <p class="PARRAFO"><span>Campos de
+                        <p class="PARRAFO">Campos de
                                 salida, que presenta todos los <i><a href="MEH_002E.html">productos</a></i>
                                 que han sido definidos por la entidad, sobre los cuales se determinará la
                                 manera como viajará la información de la interface de centrales de riesgo.</span>
@@ -180,20 +180,20 @@
                 </tr>
                 <tr>
                     <td>
-                        <p><b><span class="SUBTITULO">Descripción</span></b></p>
+                        <p><span class="SUBTITULO">Descripción</span></p>
                     </td>
                     <td>
-                        <p class="PARRAFO"><span>Despliega el
+                        <p class="PARRAFO">Despliega el
                                 nombre del producto asociado al bin, segmento y grupo de afinidad contenidos
                                 en el campo anterior.</span></p>
                     </td>
                 </tr>
                 <tr>
                     <td>
-                        <p><b><span class="SUBTITULO">No reporte C/R</span></b></p>
+                        <p><span class="SUBTITULO">No reporte C/R</span></p>
                     </td>
                     <td>
-                        <p class="PARRAFO"><span>Campo que
+                        <p class="PARRAFO">Campo que
                                 posee lista de valores adjunta con la cual se define qué tipo de tarjeta no
                                 se debe enviar en la interface de centrales de riesgo; al seleccionar
                                 <i>Extendidas/amparadas</i>,
@@ -230,16 +230,16 @@
                     </td>
                 </tr>
             </table>
-            <p class="TITLE"><b><span>Descripción de Campos Datacrédito</span></b></p>
+            <p class="TITLE">Descripción de Campos Datacrédito</span></p>
             </td>
 
             <table>
                 <tr>
                     <td>
-                        <p class="SUBTITULO"><b><span>Bin/ Segmento /Grupo</span></b></p>
+                        <p class="SUBTITULO">Bin/ Segmento /Grupo</span></p>
                     </td>
                     <td>
-                        <p class="PARRAFO"><span>Campos de
+                        <p class="PARRAFO">Campos de
                                 salida, que presenta todos los <i><a href=" MEH_002E.html">productos</a> q</i>ue
                                 han sido definidos por la entidad, sobre los cuales se determinará la manera
                                 como viajará la información de la interface de Datacrédito.</span></p>
@@ -247,20 +247,20 @@
                 </tr>
                 <tr>
                     <td>
-                        <p><b><span class="SUBTITULO">Descripción</span></b></p>
+                        <p><span class="SUBTITULO">Descripción</span></p>
                     </td>
                     <td>
-                        <p class="PARRAFO"><span>Despliega el
+                        <p class="PARRAFO">Despliega el
                                 nombre del producto asociado al bin, segmento y grupo de afinidad contenidos
                                 en el campo anterior.</span></p>
                     </td>
                 </tr>
                 <tr>
                     <td>
-                        <p><b><span class="SUBTITULO">E Ini</span></b></p>
+                        <p><span class="SUBTITULO">E Ini</span></p>
                     </td>
                     <td>
-                        <p class="PARRAFO"><span> Campo numérico de 5 dígitos, obligatorio, en el que debe indicarse
+                        <p class="PARRAFO"> Campo numérico de 5 dígitos, obligatorio, en el que debe indicarse
                                 la
                                 edad de mora inicial (expresada en número de periodos) a partir de la cual se
                                 reporta a Datacrédito las obligaciones identificadas con el producto y cuyo
@@ -269,10 +269,10 @@
                 </tr>
                 <tr>
                     <td>
-                        <p><b><span class="SUBTITULO">E fin</span></b></p>
+                        <p><span class="SUBTITULO">E fin</span></p>
                     </td>
                     <td>
-                        <p><span>Campo
+                        <p>Campo
                                 numérico de 5 dígitos, obligatorio, en el que debe indicarse la edad de mora
                                 final (expresada en número de periodos) hasta la cual se reporta a
                                 Datacrédito las obligaciones identificadas con el producto y cuyo monto está
@@ -281,10 +281,10 @@
                 </tr>
                 <tr>
                     <td>
-                        <p><b><span class="SUBTITULO">Saldo I</span></b></p>
+                        <p><span class="SUBTITULO">Saldo I</span></p>
                     </td>
                     <td>
-                        <p><span>Campo
+                        <p>Campo
                                 numérico de 7 enteros y 2 decimales obligatorio, el que se registra el monto
                                 que como mínimo deben tener las obligaciones, del producto, por concepto de
                                 saldo en mora para ser reportadas a Datacrédito.</span></p>
@@ -292,10 +292,10 @@
                 </tr>
                 <tr>
                     <td>
-                        <p><b><span class="SUBTITULO">Saldo final</span></b></p>
+                        <p><span class="SUBTITULO">Saldo final</span></p>
                     </td>
                     <td>
-                        <p><span>Campo
+                        <p>Campo
                                 numérico de 12 enteros y 2 decimales obligatorio, el que se registra el monto
                                 máximo que pueden tener las obligaciones, del producto, por concepto de saldo
                                 en mora para ser reportadas a Datacrédito.</span></p>

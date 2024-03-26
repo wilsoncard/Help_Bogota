@@ -1,480 +1,584 @@
 <!DOCTYPE html>
 <html lang="es">
 
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>BANKBU®</title>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BANKBU®</title>
 
-  <link rel="stylesheet" href="../css/pages.css">
-  <link rel="stylesheet" href="../css/style.css">
-  <link rel="icon" href="../img/ACQUIRER-logo.JPG" type="image/x-icon">
-</head>
+    <link rel="stylesheet" href="../css/pages.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="icon" href="../img/ACQUIRER-logo.JPG" type="image/x-icon">
+  </head>
 
-<body>
+  <body>
 
-  <header>
-    <img class="logo" src="../img/logoBankbu_.PNG" alt="Logo de Mi Empresa">
-    <div id="menuBtn">
-      <img class="TITLE" src="../img/menu.PNG" alt="Botón de Menú ">
-    </div>
-  </header>
-  <div id="menuContainer"></div>
+    <header>
+      <img class="logo" src="../img/logoBankbu_.PNG" alt="Logo de Mi Empresa">
+      <div id="menuBtn">
+        <img class="TITLE" src="../img/menu.PNG" alt="Botón de Menú ">
+      </div>
+    </header>
+    <div id="menuContainer"></div>
     <script>
-      fetch('menu.html')
-        .then(response => response.text())
-        .then(html => {
-          document.getElementById('menuContainer').innerHTML = html;
-        });
-    </script>
+    fetch('menu.html')
+      .then(response => response.text())
+      .then(html => {
+        document.getElementById('menuContainer').innerHTML = html;
+      });
+  </script>
 
-  <section>
-    <div>
-      <table>
-        <tr>
-          <td>
-            <div>
-              <p class="TITLE">Definici&oacute;n de convenios</p>
-            </div>
-          </td>
-        </tr>
-      </table>
-      <p><span class="SUBTITULO">Convenio tipo Empresa: </span>  Si el usuario selecciona este tipo de convenio, el
-        sistema desplegar&aacute; un wizard de dos pasos: Convenio y Caracter&iacute;sticas.</p>
-      <p class="TITLE"><img src="../img/MEF_009E3.PNG"></p>
+    <section>
+      <div>
+        <p class="TITLE">Definici&oacute;n de convenios</p>
+              
+        <p><span class="SUBTITULO">Convenio tipo Empresa: </span> Si el usuario
+          selecciona este tipo de convenio, el
+          sistema desplegar&aacute; un wizard de dos pasos: Convenio y
+          Caracter&iacute;sticas.</p>
+        <p class="TITLE"><img src="../img/MEF_009E3.PNG"></p>
 
-      <table>
-        <tr>
-          <td class="titletable">
-            <p class="SUBTITULO">Tipo convenio </p>
-          </td>
-          <td class="PARRAFO">
-            <p class="PARRAFO">Campo de salida que indica el tipo de convenio seleccionado para crear. </p>
-          </td>
-        </tr>
-        <tr>
-          <td class="titletable">
-            <p class="SUBTITULO"><b><span>C&oacute;digo</span></b></p>
-          </td>
-          <td class="PARRAFO">
-            <p class="PARRAFO">El campo del c&oacute;digo del convenio (campo obligatorio) admite cualquier valor
-              num&eacute;rico de m&aacute;ximo 6 d&iacute;gitos sin decimales.</p>
-          </td>
-        </tr>
-        <tr>
-          <td class="titletable">
-            <p class="SUBTITULO"><b><span>Nombre</span></b></p>
-          </td>
-          <td class="PARRAFO">
-            <p class="PARRAFO">En este campo obligatorio en el que se ingresa cualquier dato alfanum&eacute;rico de
-              m&aacute;ximo 30 caracteres, admite may&uacute;sculas y min&uacute;sculas. En &eacute;l la entidad define
-              cada uno de los convenios, acorde con sus pol&iacute;ticas y los pactos comerciales con las empresas o
-              establecimientos.</p>
-          </td>
-        </tr>
-        <tr>
-          <td class="titletable">
-            <p class="SUBTITULO">Vigencia desde </p>
-          </td>
-          <td class="PARRAFO">
-            <p class="PARRAFO">Campo obligatorio, en formato YYYY-MM-DD, en el cual se determina la fecha de inicio o
-              entrada en vigencia de cada convenio.</p>
-          </td>
-        </tr>
-        <tr>
-          <td class="titletable">
-            <p class="SUBTITULO">Vigencia hasta </p>
-          </td>
-          <td>
-            <p class="PARRAFO">Campo obligatorio, en formato YYYY-MM-DD, en el cual se determina la fecha de finalizaci&oacute;n o
-              terminaci&oacute;n de la vigencia de cada convenio.</p>
-          </td>
-        </tr>
-        <tr>
-          <td class="titletable">
-            <p class="SUBTITULO">Moneda</p>
-          </td>
-          <td class="PARRAFO">
-            <p class="PARRAFO">En este campo se selecciona de la lista de valores la <A
-                  href="NUH_005B.html">Moneda</A> en que se realizar&aacute;n las transacciones de abono tanto a
-              los establecimientos como a los clientes o a las empresas.</p>
-          </td>
-        </tr>
-        <tr>
-          <td class="titletable">
-            <p class="SUBTITULO">Estado convenio </p>
-          </td>
-          <td class="PARRAFO">
-            <p class="PARRAFO">Campo obligatorio en el que se debe marcar si el convenio se encuentra o no activo,
-              facilitando su desactivaci&oacute;n temporal.</p>
-          </td>
-        </tr>
-        <tr>
-          <td class="titletable">
-            <p class="SUBTITULO">Contacto</p>
-          </td>
-          <td>
-            <p class="PARRAFO">Campo alfanum&eacute;rico de 60 posiciones no obligatorio en el que se registra el nombre del funcionario
-              de la empresa del convenio, a quien es posible contactar en caso necesario.</p>
-          </td>
-        </tr>
-        <tr>
-          <td class="titletable">
-            <p class="SUBTITULO">Tel&eacute;fono</p>
-          </td>
-          <td>
-            <p class="PARRAFO">En este campo alfanum&eacute;rico de 20 posiciones, no obligatorio, se pueden registrar los
-              n&uacute;meros telef&oacute;nicos donde es posible localizar al funcionario de la empresa.</p>
-          </td>
-        </tr>
-        <tr>
-          <td class="titletable">
-            <p class="SUBTITULO">Extensi&oacute;n</p>
-          </td>
-          <td class="PARRAFO">
-            <p class="PARRAFO">Campo alfanum&eacute;rico de 10 posiciones no obligatorio en el que se registra el
-              n&uacute;mero de la extensi&oacute;n asociada al campo anterior.</p>
-          </td>
-        </tr>
-      </table>
-      <p class="PARRAFO">El segundo paso del wizard muestra los siguientes campos con las siguientes condiciones:</p>
-      <p class="TITLE"><img src="../img/MEF_009E4.PNG"></p>
+        <table>
+          <tr>
+            <td class="titletable">
+              <p class="SUBTITULO">Tipo convenio </p>
+            </td>
+            <td class="PARRAFO">
+              <p class="PARRAFO">Campo de salida que indica el tipo de convenio
+                seleccionado para crear. </p>
+            </td>
+          </tr>
+          <tr>
+            <td class="titletable">
+              <p class="SUBTITULO">C&oacute;digo</span></p>
+            </td>
+            <td class="PARRAFO">
+              <p class="PARRAFO">El campo del c&oacute;digo del convenio (campo
+                obligatorio) admite cualquier valor
+                num&eacute;rico de m&aacute;ximo 6 d&iacute;gitos sin
+                decimales.</p>
+            </td>
+          </tr>
+          <tr>
+            <td class="titletable">
+              <p class="SUBTITULO">Nombre</span></p>
+            </td>
+            <td class="PARRAFO">
+              <p class="PARRAFO">En este campo obligatorio en el que se ingresa
+                cualquier dato alfanum&eacute;rico de
+                m&aacute;ximo 30 caracteres, admite may&uacute;sculas y
+                min&uacute;sculas. En &eacute;l la entidad define
+                cada uno de los convenios, acorde con sus pol&iacute;ticas y los
+                pactos comerciales con las empresas o
+                establecimientos.</p>
+            </td>
+          </tr>
+          <tr>
+            <td class="titletable">
+              <p class="SUBTITULO">Vigencia desde </p>
+            </td>
+            <td class="PARRAFO">
+              <p class="PARRAFO">Campo obligatorio, en formato YYYY-MM-DD, en el
+                cual se determina la fecha de inicio o
+                entrada en vigencia de cada convenio.</p>
+            </td>
+          </tr>
+          <tr>
+            <td class="titletable">
+              <p class="SUBTITULO">Vigencia hasta </p>
+            </td>
+            <td>
+              <p class="PARRAFO">Campo obligatorio, en formato YYYY-MM-DD, en el
+                cual se determina la fecha de finalizaci&oacute;n o
+                terminaci&oacute;n de la vigencia de cada convenio.</p>
+            </td>
+          </tr>
+          <tr>
+            <td class="titletable">
+              <p class="SUBTITULO">Moneda</p>
+            </td>
+            <td class="PARRAFO">
+              <p class="PARRAFO">En este campo se selecciona de la lista de
+                valores la <a
+                  href="NUH_005B.html">Moneda</a> en que se realizar&aacute;n
+                las transacciones de abono tanto a
+                los establecimientos como a los clientes o a las empresas.</p>
+            </td>
+          </tr>
+          <tr>
+            <td class="titletable">
+              <p class="SUBTITULO">Estado convenio </p>
+            </td>
+            <td class="PARRAFO">
+              <p class="PARRAFO">Campo obligatorio en el que se debe marcar si
+                el convenio se encuentra o no activo,
+                facilitando su desactivaci&oacute;n temporal.</p>
+            </td>
+          </tr>
+          <tr>
+            <td class="titletable">
+              <p class="SUBTITULO">Contacto</p>
+            </td>
+            <td>
+              <p class="PARRAFO">Campo alfanum&eacute;rico de 60 posiciones no
+                obligatorio en el que se registra el nombre del funcionario
+                de la empresa del convenio, a quien es posible contactar en caso
+                necesario.</p>
+            </td>
+          </tr>
+          <tr>
+            <td class="titletable">
+              <p class="SUBTITULO">Tel&eacute;fono</p>
+            </td>
+            <td>
+              <p class="PARRAFO">En este campo alfanum&eacute;rico de 20
+                posiciones, no obligatorio, se pueden registrar los
+                n&uacute;meros telef&oacute;nicos donde es posible localizar al
+                funcionario de la empresa.</p>
+            </td>
+          </tr>
+          <tr>
+            <td class="titletable">
+              <p class="SUBTITULO">Extensi&oacute;n</p>
+            </td>
+            <td class="PARRAFO">
+              <p class="PARRAFO">Campo alfanum&eacute;rico de 10 posiciones no
+                obligatorio en el que se registra el
+                n&uacute;mero de la extensi&oacute;n asociada al campo
+                anterior.</p>
+            </td>
+          </tr>
+        </table>
+        <p class="PARRAFO">El segundo paso del wizard muestra los siguientes
+          campos con las siguientes condiciones:</p>
+        <p class="TITLE"><img src="../img/MEF_009E4.PNG"></p>
 
-      <table>
-        <tr>
-          <td class="titletable">
-            <p class="SUBTITULO">Esquema de puntos</p>
-          </td>
-          <td>
-            <p class="PARRAFO">Campo con lista de valores de la que se selecciona el <A href="MEH_006B.html">Esquema de
-                  puntaje</A> que m&aacute;s se ajuste a los objetivos del convenio, y en el cual se establecen los
-              par&aacute;metros de devoluci&oacute;n de beneficios.</p>
-          </td>
-        </tr>
-        <tr>
-          <td class="titletable">
-            <p class="SUBTITULO">Tipo cuenta acreditar </p>
-          </td>
-          <td>
-            <p class="PARRAFO">En este campo que posee lista de valores adjunta se selecciona entre Ahorro, Rotativo o
-              Corriente la clase de cuenta a afectar con el abono de beneficios por consumos de clientes
-              afiliados al convenio, pagos realizados o por colocaci&oacute;n de tarjetas.
-            </p>
-          </td>
-        </tr>
-        <tr>
-          <td class="titletable">
-            <p class="SUBTITULO"><a name="CUENTA_ACREDITAR"></a>N&uacute;mero cuenta acreditar </p>
-          </td>
-          <td class="PARRAFO">
-            <p class="PARRAFO">Dependiendo del tipo de cuenta seleccionado en el campo anterior, el sistema valida que
-              el dato ingresado cumpla con las validaciones parametrizadas en la opci&oacute;n <a
-                href="MEH_000B.html">Tipos de cuenta</a>, para aquellas cuyo C&oacute;digo de la cuenta sea
-              cero (0). Esta cuenta ser&aacute; afectada con el abono de beneficios por consumos de clientes afiliados
-              al convenio, pagos realizados o por colocaci&oacute;n de tarjetas.</p>
-          </td>
-        </tr>
-        <tr>
-          <td class="titletable">
-            <p class="SUBTITULO">Tipo identificaci&oacute;n convenio </p>
-          </td>
-          <td class="PARRAFO">
-            <p class="PARRAFO">Este campo provee un combo con todos los <a href="NUH_008B.html">tipos de documentos de
-                identificaci&oacute;n</a> parametrizados en el sistema.</p>
-          </td>
-        </tr>
-        <tr>
-          <td class="titletable">
-            <p class="SUBTITULO">N&uacute;mero identificaci&oacute;n convenio </p>
-          </td>
-          <td class="PARRAFO">
-            <p class="PARRAFO">Campo en el que se registra el n&uacute;mero del documento de identificaci&oacute;n
-              tributaria de la persona natural o jur&iacute;dica involucrada en el convenio. Acepta cualquier dato
-              alfanum&eacute;rico de m&aacute;ximo deciseis (16) caracteres.</p>
-          </td>
-        </tr>
-        <tr>
-          <td class="titletable">
-            <p class="SUBTITULO">Direcci&oacute;n</p>
-          </td>
-          <td>
-            <p class="PARRAFO">Campo alfanum&eacute;rico no obligatorio, en el que se digita la nomenclatura de la sede principal de la
-              empresa vinculada al convenio.</p>
-          </td>
-        </tr>
-        <tr>
-          <td class="titletable">
-            <p class="SUBTITULO">Ubicaci&oacute;n </p>
-          </td>
-          <td>
-            <p class="PARRAFO">Este campo contiene lista de valores de la que se selecciona la <A
-                  href="NUH_003B.html">Ubicaci&oacute;n geogr&aacute;fica</A> que mejor describa la
-              localizaci&oacute;n de la sede de la empresa del convenio.</p>
-          </td>
-        </tr>
-        <tr>
-          <td class="titletable">
-            <p class="SUBTITULO">Tel&eacute;fono 1 / 2 </p>
-          </td>
-          <td>
-            <p class="PARRAFO">Campos no obligatorios, en los que se registran los n&uacute;meros de tel&eacute;fono de la empresa
-              asociada al convenio.</p>
-          </td>
-        </tr>
-        <tr>
-          <td class="titletable">
-            <p class="SUBTITULO">Fax</p>
-          </td>
-          <td>
-            <p class="PARRAFO">En caso de aplicar, en este campo no obligatorio se digita el n&uacute;mero de fax de la empresa asociada
-              al convenio.</p>
-          </td>
-        </tr>
-        <tr>
-          <td class="titletable">
-            <p class="SUBTITULO">Correo electr&oacute;nico </p>
-          </td>
-          <td class="PARRAFO">
-            <p class="PARRAFO">Campo alfanum&eacute;rico de 60 posiciones no obligatorio, en el que puede registrarse la
-              direcci&oacute;n de correo electr&oacute;nico de la empresa asociada al convenio.</p>
-          </td>
-        </tr>
-        <tr>
-          <td class="titletable">
-            <p class="SUBTITULO">Cupo total convenio </p>
-          </td>
-          <td class="PARRAFO">
-            <p class="PARRAFO">Campo num&eacute;rico no obligatorio de 14 d&iacute;gitos y dos decimales, que puede
-              contener el monto global asignado al convenio y constituye el tope m&aacute;ximo a distribu&iacute;r entre
-              los distintos <A href="MEH_002B.html">productos</A> asociados al convenio.</p>
-          </td>
-        </tr>
-        <tr>
-          <td class="titletable">
-            <p class="SUBTITULO">Porcentaje participaci&oacute;n metas </p>
-          </td>
-          <td class="PARRAFO">
-            <p class="PARRAFO">Campo num&eacute;rico de 3 enteros y 2 decimales no obligatorio, que tiene
-              aplicaci&oacute;n en el proceso de definici&oacute;n de las metas de oficina. Por ejemplo si una tarjeta
-              colocada por la oficina pertenece a un convenio, su participaci&oacute;n en las metas de esa oficina de
-              venta no ser&aacute; "1", sino el valor equivalente al porcentaje aqu&iacute; establecido; si el
-              porcentaje es 60% indica que la tarjeta s&oacute;lo suma 0.6 a la meta.</p>
-          </td>
-        </tr>
-        <tr>
-          <td class="titletable">
-            <p class="SUBTITULO">Tipo liquidaci&oacute;n</p>
-          </td>
-          <td class="PARRAFO">
-            <p class="PARRAFO">Campo que posee lista de valores adjunta de la que debe seleccionarse entre Por
-                convenio o Por establecimiento el destinatario del abono resultante del movimiento
-              recibido de los convenios; si es por establecimiento los dep&oacute;sitos se generan para cada
-              uno de los establecimientos inclu&iacute;do en el archivo, y si es por convenio los
-              dep&oacute;sitos se generan al convenio, para lo cual se debe crear en el sistema un <A
-                  href="ESH_006B.html">establecimiento</A> que lo identifique, el cual tendr&aacute; la misma
-              cuenta que se parametriz&oacute; en <A href="#CUENTA_ACREDITAR">Cuenta a acreditar</A> y debe
-              marcarse como consolidador en la opci&oacute;n establecimientos, contenida en esta misma
-              opci&oacute;n.</p>
-          </td>
-        </tr>
-        <tr>
-          <td class="titletable">
-            <p class="SUBTITULO">Cupo bloqueo mora </p>
-          </td>
-          <td>
-            <p class="PARRAFO">Campo num&eacute;rico no obligatorio de 14 d&iacute;gitos y dos decimales, en el que es posible indicar
-              el monto del cupo asignado por producto a trav&eacute;s de este convenio, y que ser&aacute; la base para
-              determinar el momento de bloquearlo al caer en mora en un valor igual o superior al obtenido al aplicar el
-              porcentaje mora se&ntilde;alado a continuaci&oacute;n.
-            </p>
-          </td>
-        </tr>
-        <tr>
-          <td class="titletable">
-            <p class="SUBTITULO">Porcentaje bloqueo mora </p>
-          </td>
-          <td class="PARRAFO">
-            <p class="PARRAFO">En este campo num&eacute;rico de 3 enteros y 2 decimales, no obligatorio, se registra el
-              porcentaje a aplicar sobre el monto definido en el campo anterior, para determinar el valor de mora a
-              partir del cual el producto ser&aacute; bloqueado.</p>
-          </td>
-        </tr>
-        <tr>
-          <td class="titletable">
-            <p class="SUBTITULO">Avala cartera </p>
-          </td>
-          <td>
-            <p class="PARRAFO">Campo en el que se indica si la empresa del convenio avala la cartera cobijada por &eacute;l, la cual se
-              le cobrar&iacute;a a la empresa y no al cliente, de acuerdo con la altura de mora definida en la
-              opci&oacute;n Eventos  de la <A href="MEH_002B.html#BL_EVENTOS">Definici&oacute;n de
-                  productos</A>.</p>
-          </td>
-        </tr>
-        <tr>
-          <td class="titletable">
-            <p class="SUBTITULO">Tipo cuenta a debitar </p>
-          </td>
-          <td>
-            <p class="PARRAFO">Campo que posee lista de valores adjunta de la que debe seleccionarse entre Corriente, Rotativo
-              o Ahorro la clase de cuenta a afectar con los abonos a las obligaciones del convenio que superen
-              el valor de mora indicado anteriormente.</p>
-          </td>
-        </tr>
-        <tr>
-          <td class="titletable">
-            <p class="SUBTITULO">N&uacute;mero cuenta a debitar </p>
-          </td>
-          <td>
-            <p class="PARRAFO">En este campo se registra el n&uacute;mero correspondiente al tipo de cuenta indicado en el campo
-              anterior y que sera afectada con los abonos a las obligaciones del convenio que superen el valor de mora
-              indicado, acorde con los saldos reflejados una vez se efect&uacute;e cada facturaci&oacute;n.</p>
-          </td>
-        </tr>
-        <tr>
-          <td class="titletable">
-            <p class="SUBTITULO">Forma aplica d&eacute;bito </p>
-          </td>
-          <td>
-            <p class="PARRAFO">Campo con lista de valores adjunta de la que puede seleccionarse entre Individual o
-              Consolidado el modo como la empresa del convenio desea que se efect&uacute;e el d&eacute;bito a
-              la cuenta, es decir si se debe desagregar por cada producto en mora o si se debe hacer un d&eacute;bito
-              por el total en mora del periodo.
-            </p>
-          </td>
-        </tr>
-        <tr>
-          <td class="titletable">
-            <p class="SUBTITULO">Forma asignaci&oacute;n cupo cliente </p>
-          </td>
-          <td>
-            <p class="PARRAFO">Campo que posee lista de valores adjunta de la que debe seleccionarse entre Puntaje m&aacute;ximo,
-                Tope m&aacute;ximo, Solicitado o Cupo por puntaje, la manera como se har&aacute; el
-              proceso de asignaci&oacute;n de cupos para las solicitudes de los <A
-                  href="MEH_002B.html">productos</A> del convenio.</p>
-          </td>
-        </tr>
-        <tr>
-          <td class="titletable">
-            <p class="SUBTITULO">Cubre reposici&oacute;n / reexpedici&oacute;n / renovaci&oacute;n /cambio
-              producto</p>
-          </td>
-          <td>
-            <p class="PARRAFO">Campos en los que se indica para cada concepto, si la empresa del convenio asume o no, a nombre de los
-              credihabientes, los costos que pueden implicar cada uno de estos eventos.</p>
-          </td>
-        </tr>
-        <tr>
-          <td class="titletable">
-            <p class="SUBTITULO">Periodos exenci&oacute;n manejo</p>
-          </td>
-          <td>
-            <p class="PARRAFO">Conjunto de campos en los que se puede indicar el n&uacute;mero de periodos durante los cuales el sistema
-              debe considerar la reducci&oacute;n aplicada sobre las cuotas de manejo al momento de liquidar el
-              cobro de los mismos sobre los productos asociados al convenio.</p>
-          </td>
-        </tr>
-        <tr>
-          <td class="titletable">
-            <p class="SUBTITULO">Porcentaje cuota manejo </p>
-          </td>
-          <td class="PARRAFO">
-            <p class="PARRAFO">Indica el valor porcentual a cobrar sobre los montos definidos por concepto de Cuota de
-              manejo, como beneficio adicional para aquellos productos asociados al convenio.</p>
-          </td>
-        </tr>
-        <tr>
-          <td class="titletable">
-            <p class="SUBTITULO">Periodos exenci&oacute;n seguro</p>
-          </td>
-          <td>
-            <p class="PARRAFO">Conjunto de campos en los que se puede indicar el n&uacute;mero de periodos durante los cuales el sistema
-              debe considerar la reducci&oacute;n aplicada sobre las cuotas de seguro al momento de
-              liquidar el cobro de los mismos sobre los productos asociados al convenio.</p>
-          </td>
-        </tr>
-        <tr>
-          <td class="titletable">
-            <p class="SUBTITULO">Porcentaje cuota seguro</p>
-          </td>
-          <td class="PARRAFO">
-            <p class="PARRAFO">Indica el valor porcentual a cobrar sobre los montos definidos por concepto de Cuota de
-              seguro, como beneficio adicional para aquellos productos asociados al convenio.</p>
-          </td>
-        </tr>
-        <tr>
-          <td class="titletable">
-            <p class="SUBTITULO">Periodos exenci&oacute;n afiliaci&oacute;n</p>
-          </td>
-          <td>
-            <p class="PARRAFO">Conjunto de campos en los que se puede indicar el n&uacute;mero de periodos durante los cuales el sistema
-              debe considerar la reducci&oacute;n aplicada sobre las cuotas de afiliaci&oacute;n al momento de
-              liquidar el cobro de los mismos sobre los productos asociados al convenio.</p>
-          </td>
-        </tr>
-        <tr>
-          <td class="titletable">
-            <p class="SUBTITULO">Porcentaje cuota afiliaci&oacute;n</p>
-          </td>
-          <td class="PARRAFO">
-            <p class="PARRAFO">Indica el valor porcentual a cobrar sobre los montos definidos por concepto de Cuota de
-              afiliaci&oacute;n, como beneficio adicional para aquellos productos asociados al convenio.</p>
-          </td>
-        </tr>
-      </table>
-      <p><span class="SUBTITULO">Localizaci&oacute;n:</span>  Adicionalmente,
-        cuenta con un globo de localizaci&oacute;n que muestra los siguientes campos:</p>
-      <p class="TITLE"><img src="../img/MEF_009E4a.PNG"></p>
+        <table>
+          <tr>
+            <td class="titletable">
+              <p class="SUBTITULO">Esquema de puntos</p>
+            </td>
+            <td>
+              <p class="PARRAFO">Campo con lista de valores de la que se
+                selecciona el <a href="MEH_006B.html">Esquema de
+                  puntaje</a> que m&aacute;s se ajuste a los objetivos del
+                convenio, y en el cual se establecen los
+                par&aacute;metros de devoluci&oacute;n de beneficios.</p>
+            </td>
+          </tr>
+          <tr>
+            <td class="titletable">
+              <p class="SUBTITULO">Tipo cuenta acreditar </p>
+            </td>
+            <td>
+              <p class="PARRAFO">En este campo que posee lista de valores
+                adjunta se selecciona entre Ahorro, Rotativo o
+                Corriente la clase de cuenta a afectar con el abono de
+                beneficios por consumos de clientes
+                afiliados al convenio, pagos realizados o por colocaci&oacute;n
+                de tarjetas.
+              </p>
+            </td>
+          </tr>
+          <tr>
+            <td class="titletable">
+              <p class="SUBTITULO"><a name="CUENTA_ACREDITAR"></a>N&uacute;mero
+                cuenta acreditar </p>
+            </td>
+            <td class="PARRAFO">
+              <p class="PARRAFO">Dependiendo del tipo de cuenta seleccionado en
+                el campo anterior, el sistema valida que
+                el dato ingresado cumpla con las validaciones parametrizadas en
+                la opci&oacute;n <a
+                  href="MEH_000B.html">Tipos de cuenta</a>, para aquellas cuyo
+                C&oacute;digo de la cuenta sea
+                cero (0). Esta cuenta ser&aacute; afectada con el abono de
+                beneficios por consumos de clientes afiliados
+                al convenio, pagos realizados o por colocaci&oacute;n de
+                tarjetas.</p>
+            </td>
+          </tr>
+          <tr>
+            <td class="titletable">
+              <p class="SUBTITULO">Tipo identificaci&oacute;n convenio </p>
+            </td>
+            <td class="PARRAFO">
+              <p class="PARRAFO">Este campo provee un combo con todos los <a
+                  href="NUH_008B.html">tipos de documentos de
+                  identificaci&oacute;n</a> parametrizados en el sistema.</p>
+            </td>
+          </tr>
+          <tr>
+            <td class="titletable">
+              <p class="SUBTITULO">N&uacute;mero identificaci&oacute;n convenio
+              </p>
+            </td>
+            <td class="PARRAFO">
+              <p class="PARRAFO">Campo en el que se registra el n&uacute;mero
+                del documento de identificaci&oacute;n
+                tributaria de la persona natural o jur&iacute;dica involucrada
+                en el convenio. Acepta cualquier dato
+                alfanum&eacute;rico de m&aacute;ximo deciseis (16)
+                caracteres.</p>
+            </td>
+          </tr>
+          <tr>
+            <td class="titletable">
+              <p class="SUBTITULO">Direcci&oacute;n</p>
+            </td>
+            <td>
+              <p class="PARRAFO">Campo alfanum&eacute;rico no obligatorio, en el
+                que se digita la nomenclatura de la sede principal de la
+                empresa vinculada al convenio.</p>
+            </td>
+          </tr>
+          <tr>
+            <td class="titletable">
+              <p class="SUBTITULO">Ubicaci&oacute;n </p>
+            </td>
+            <td>
+              <p class="PARRAFO">Este campo contiene lista de valores de la que
+                se selecciona la <a
+                  href="NUH_003B.html">Ubicaci&oacute;n geogr&aacute;fica</a>
+                que mejor describa la
+                localizaci&oacute;n de la sede de la empresa del convenio.</p>
+            </td>
+          </tr>
+          <tr>
+            <td class="titletable">
+              <p class="SUBTITULO">Tel&eacute;fono 1 / 2 </p>
+            </td>
+            <td>
+              <p class="PARRAFO">Campos no obligatorios, en los que se registran
+                los n&uacute;meros de tel&eacute;fono de la empresa
+                asociada al convenio.</p>
+            </td>
+          </tr>
+          <tr>
+            <td class="titletable">
+              <p class="SUBTITULO">Fax</p>
+            </td>
+            <td>
+              <p class="PARRAFO">En caso de aplicar, en este campo no
+                obligatorio se digita el n&uacute;mero de fax de la empresa
+                asociada
+                al convenio.</p>
+            </td>
+          </tr>
+          <tr>
+            <td class="titletable">
+              <p class="SUBTITULO">Correo electr&oacute;nico </p>
+            </td>
+            <td class="PARRAFO">
+              <p class="PARRAFO">Campo alfanum&eacute;rico de 60 posiciones no
+                obligatorio, en el que puede registrarse la
+                direcci&oacute;n de correo electr&oacute;nico de la empresa
+                asociada al convenio.</p>
+            </td>
+          </tr>
+          <tr>
+            <td class="titletable">
+              <p class="SUBTITULO">Cupo total convenio </p>
+            </td>
+            <td class="PARRAFO">
+              <p class="PARRAFO">Campo num&eacute;rico no obligatorio de 14
+                d&iacute;gitos y dos decimales, que puede
+                contener el monto global asignado al convenio y constituye el
+                tope m&aacute;ximo a distribu&iacute;r entre
+                los distintos <a href="MEH_002B.html">productos</a> asociados al
+                convenio.</p>
+            </td>
+          </tr>
+          <tr>
+            <td class="titletable">
+              <p class="SUBTITULO">Porcentaje participaci&oacute;n metas </p>
+            </td>
+            <td class="PARRAFO">
+              <p class="PARRAFO">Campo num&eacute;rico de 3 enteros y 2
+                decimales no obligatorio, que tiene
+                aplicaci&oacute;n en el proceso de definici&oacute;n de las
+                metas de oficina. Por ejemplo si una tarjeta
+                colocada por la oficina pertenece a un convenio, su
+                participaci&oacute;n en las metas de esa oficina de
+                venta no ser&aacute; "1", sino el valor equivalente al
+                porcentaje aqu&iacute; establecido; si el
+                porcentaje es 60% indica que la tarjeta s&oacute;lo suma 0.6 a
+                la meta.</p>
+            </td>
+          </tr>
+          <tr>
+            <td class="titletable">
+              <p class="SUBTITULO">Tipo liquidaci&oacute;n</p>
+            </td>
+            <td class="PARRAFO">
+              <p class="PARRAFO">Campo que posee lista de valores adjunta de la
+                que debe seleccionarse entre Por
+                convenio o Por establecimiento el destinatario del abono
+                resultante del movimiento
+                recibido de los convenios; si es por establecimiento los
+                dep&oacute;sitos se generan para cada
+                uno de los establecimientos inclu&iacute;do en el archivo, y si
+                es por convenio los
+                dep&oacute;sitos se generan al convenio, para lo cual se debe
+                crear en el sistema un <a
+                  href="ESH_006B.html">establecimiento</a> que lo identifique,
+                el cual tendr&aacute; la misma
+                cuenta que se parametriz&oacute; en <a
+                  href="#CUENTA_ACREDITAR">Cuenta a acreditar</a> y debe
+                marcarse como consolidador en la opci&oacute;n establecimientos,
+                contenida en esta misma
+                opci&oacute;n.</p>
+            </td>
+          </tr>
+          <tr>
+            <td class="titletable">
+              <p class="SUBTITULO">Cupo bloqueo mora </p>
+            </td>
+            <td>
+              <p class="PARRAFO">Campo num&eacute;rico no obligatorio de 14
+                d&iacute;gitos y dos decimales, en el que es posible indicar
+                el monto del cupo asignado por producto a trav&eacute;s de este
+                convenio, y que ser&aacute; la base para
+                determinar el momento de bloquearlo al caer en mora en un valor
+                igual o superior al obtenido al aplicar el
+                porcentaje mora se&ntilde;alado a continuaci&oacute;n.
+              </p>
+            </td>
+          </tr>
+          <tr>
+            <td class="titletable">
+              <p class="SUBTITULO">Porcentaje bloqueo mora </p>
+            </td>
+            <td class="PARRAFO">
+              <p class="PARRAFO">En este campo num&eacute;rico de 3 enteros y 2
+                decimales, no obligatorio, se registra el
+                porcentaje a aplicar sobre el monto definido en el campo
+                anterior, para determinar el valor de mora a
+                partir del cual el producto ser&aacute; bloqueado.</p>
+            </td>
+          </tr>
+          <tr>
+            <td class="titletable">
+              <p class="SUBTITULO">Avala cartera </p>
+            </td>
+            <td>
+              <p class="PARRAFO">Campo en el que se indica si la empresa del
+                convenio avala la cartera cobijada por &eacute;l, la cual se
+                le cobrar&iacute;a a la empresa y no al cliente, de acuerdo con
+                la altura de mora definida en la
+                opci&oacute;n Eventos de la <a
+                  href="MEH_002B.html#BL_EVENTOS">Definici&oacute;n de
+                  productos</a>.</p>
+            </td>
+          </tr>
+          <tr>
+            <td class="titletable">
+              <p class="SUBTITULO">Tipo cuenta a debitar </p>
+            </td>
+            <td>
+              <p class="PARRAFO">Campo que posee lista de valores adjunta de la
+                que debe seleccionarse entre Corriente, Rotativo
+                o Ahorro la clase de cuenta a afectar con los abonos a las
+                obligaciones del convenio que superen
+                el valor de mora indicado anteriormente.</p>
+            </td>
+          </tr>
+          <tr>
+            <td class="titletable">
+              <p class="SUBTITULO">N&uacute;mero cuenta a debitar </p>
+            </td>
+            <td>
+              <p class="PARRAFO">En este campo se registra el n&uacute;mero
+                correspondiente al tipo de cuenta indicado en el campo
+                anterior y que sera afectada con los abonos a las obligaciones
+                del convenio que superen el valor de mora
+                indicado, acorde con los saldos reflejados una vez se
+                efect&uacute;e cada facturaci&oacute;n.</p>
+            </td>
+          </tr>
+          <tr>
+            <td class="titletable">
+              <p class="SUBTITULO">Forma aplica d&eacute;bito </p>
+            </td>
+            <td>
+              <p class="PARRAFO">Campo con lista de valores adjunta de la que
+                puede seleccionarse entre Individual o
+                Consolidado el modo como la empresa del convenio desea que se
+                efect&uacute;e el d&eacute;bito a
+                la cuenta, es decir si se debe desagregar por cada producto en
+                mora o si se debe hacer un d&eacute;bito
+                por el total en mora del periodo.
+              </p>
+            </td>
+          </tr>
+          <tr>
+            <td class="titletable">
+              <p class="SUBTITULO">Forma asignaci&oacute;n cupo cliente </p>
+            </td>
+            <td>
+              <p class="PARRAFO">Campo que posee lista de valores adjunta de la
+                que debe seleccionarse entre Puntaje m&aacute;ximo,
+                Tope m&aacute;ximo, Solicitado o Cupo por puntaje, la manera
+                como se har&aacute; el
+                proceso de asignaci&oacute;n de cupos para las solicitudes de
+                los <a
+                  href="MEH_002B.html">productos</a> del convenio.</p>
+            </td>
+          </tr>
+          <tr>
+            <td class="titletable">
+              <p class="SUBTITULO">Cubre reposici&oacute;n / reexpedici&oacute;n
+                / renovaci&oacute;n /cambio
+                producto</p>
+            </td>
+            <td>
+              <p class="PARRAFO">Campos en los que se indica para cada concepto,
+                si la empresa del convenio asume o no, a nombre de los
+                credihabientes, los costos que pueden implicar cada uno de estos
+                eventos.</p>
+            </td>
+          </tr>
+          <tr>
+            <td class="titletable">
+              <p class="SUBTITULO">Periodos exenci&oacute;n manejo</p>
+            </td>
+            <td>
+              <p class="PARRAFO">Conjunto de campos en los que se puede indicar
+                el n&uacute;mero de periodos durante los cuales el sistema
+                debe considerar la reducci&oacute;n aplicada sobre las cuotas de
+                manejo al momento de liquidar el
+                cobro de los mismos sobre los productos asociados al
+                convenio.</p>
+            </td>
+          </tr>
+          <tr>
+            <td class="titletable">
+              <p class="SUBTITULO">Porcentaje cuota manejo </p>
+            </td>
+            <td class="PARRAFO">
+              <p class="PARRAFO">Indica el valor porcentual a cobrar sobre los
+                montos definidos por concepto de Cuota de
+                manejo, como beneficio adicional para aquellos productos
+                asociados al convenio.</p>
+            </td>
+          </tr>
+          <tr>
+            <td class="titletable">
+              <p class="SUBTITULO">Periodos exenci&oacute;n seguro</p>
+            </td>
+            <td>
+              <p class="PARRAFO">Conjunto de campos en los que se puede indicar
+                el n&uacute;mero de periodos durante los cuales el sistema
+                debe considerar la reducci&oacute;n aplicada sobre las cuotas de
+                seguro al momento de
+                liquidar el cobro de los mismos sobre los productos asociados al
+                convenio.</p>
+            </td>
+          </tr>
+          <tr>
+            <td class="titletable">
+              <p class="SUBTITULO">Porcentaje cuota seguro</p>
+            </td>
+            <td class="PARRAFO">
+              <p class="PARRAFO">Indica el valor porcentual a cobrar sobre los
+                montos definidos por concepto de Cuota de
+                seguro, como beneficio adicional para aquellos productos
+                asociados al convenio.</p>
+            </td>
+          </tr>
+          <tr>
+            <td class="titletable">
+              <p class="SUBTITULO">Periodos exenci&oacute;n
+                afiliaci&oacute;n</p>
+            </td>
+            <td>
+              <p class="PARRAFO">Conjunto de campos en los que se puede indicar
+                el n&uacute;mero de periodos durante los cuales el sistema
+                debe considerar la reducci&oacute;n aplicada sobre las cuotas de
+                afiliaci&oacute;n al momento de
+                liquidar el cobro de los mismos sobre los productos asociados al
+                convenio.</p>
+            </td>
+          </tr>
+          <tr>
+            <td class="titletable">
+              <p class="SUBTITULO">Porcentaje cuota afiliaci&oacute;n</p>
+            </td>
+            <td class="PARRAFO">
+              <p class="PARRAFO">Indica el valor porcentual a cobrar sobre los
+                montos definidos por concepto de Cuota de
+                afiliaci&oacute;n, como beneficio adicional para aquellos
+                productos asociados al convenio.</p>
+            </td>
+          </tr>
+        </table>
+        <p><span class="SUBTITULO">Localizaci&oacute;n:</span> Adicionalmente,
+          cuenta con un globo de localizaci&oacute;n que muestra los siguientes
+          campos:</p>
+        <p class="TITLE"><img src="../img/MEF_009E4a.PNG"></p>
 
-      <table>
-        <tr>
-          <td class="titletable">
-            <p class="SUBTITULO">Monto impuesto timbre </p>
-          </td>
-          <td class="PARRAFO">
-            <p class="PARRAFO">En este campo num&eacute;rico de 14 d&iacute;gitos y 2 decimales, no obligatorio, se
-              registra el valor acumulado de las transacciones efectuadas con los productos asociados al convenio, y que
-              una vez alcanzado implica la generaci&oacute;n del pago del respectivo impuesto.</p>
-          </td>
-        </tr>
-        <tr>
-          <td class="titletable">
-            <p class="SUBTITULO">Porcentaje timbre </p>
-          </td>
-          <td>
-            <p class="PARRAFO">Campo num&eacute;rico no obligatorio de 3 d&iacute;gitos y dos decimales, en el que se registra el valor
-              porcentual a calcular sobre el monto acumulado de las transacciones efectuadas con los productos asociados
-              al convenio, para determinar el valor del impuesto de timbre a pagar.</p>
-          </td>
-        </tr>
-        <tr>
-          <td class="titletable">
-            <p class="SUBTITULO">Transacci&oacute;n timbre </p>
-          </td>
-          <td>
-            <p class="PARRAFO">En este campo se selecciona de la lista de valores la <A
-                  href="NUH_027B.html">transacci&oacute;n</A> a aplicar por este concepto.</p>
-          </td>
-        </tr>
-      </table>
-      <p><span class="SUBTITULO">Actualizar:</span>  Si el usuario invoca la opci&oacute;n Actualizar se despliega un
-        nuevo formulario
-        que consiste en un wizard de dos pasos en el cual todos los campos son modificables a exepci&oacute;n del
-        Tipo convenio y C&oacute;digo.
-      </p>
-      <p class="TITLE"><img src="../img/MEF_009E5.PNG"></p>
-      <p><span class="SUBTITULO">Detalle:</span>  Si el usuario invoca la opci&oacute;n Detalle se despliega el siguiente
-        wizard con dos formulario de consulta.: <span>
+        <table>
+          <tr>
+            <td class="titletable">
+              <p class="SUBTITULO">Monto impuesto timbre </p>
+            </td>
+            <td class="PARRAFO">
+              <p class="PARRAFO">En este campo num&eacute;rico de 14
+                d&iacute;gitos y 2 decimales, no obligatorio, se
+                registra el valor acumulado de las transacciones efectuadas con
+                los productos asociados al convenio, y que
+                una vez alcanzado implica la generaci&oacute;n del pago del
+                respectivo impuesto.</p>
+            </td>
+          </tr>
+          <tr>
+            <td class="titletable">
+              <p class="SUBTITULO">Porcentaje timbre </p>
+            </td>
+            <td>
+              <p class="PARRAFO">Campo num&eacute;rico no obligatorio de 3
+                d&iacute;gitos y dos decimales, en el que se registra el valor
+                porcentual a calcular sobre el monto acumulado de las
+                transacciones efectuadas con los productos asociados
+                al convenio, para determinar el valor del impuesto de timbre a
+                pagar.</p>
+            </td>
+          </tr>
+          <tr>
+            <td class="titletable">
+              <p class="SUBTITULO">Transacci&oacute;n timbre </p>
+            </td>
+            <td>
+              <p class="PARRAFO">En este campo se selecciona de la lista de
+                valores la <a
+                  href="NUH_027B.html">transacci&oacute;n</a> a aplicar por este
+                concepto.</p>
+            </td>
+          </tr>
+        </table>
+        <p><span class="SUBTITULO">Actualizar:</span> Si el usuario invoca la
+          opci&oacute;n Actualizar se despliega un
+          nuevo formulario
+          que consiste en un wizard de dos pasos en el cual todos los campos son
+          modificables a exepci&oacute;n del
+          Tipo convenio y C&oacute;digo.
+        </p>
+        <p class="TITLE"><img src="../img/MEF_009E5.PNG"></p>
+        <p><span class="SUBTITULO">Detalle:</span> Si el usuario invoca la
+          opci&oacute;n Detalle se despliega el siguiente
+          wizard con dos formulario de consulta.: 
 
-        </span></p>
-      <p class="TITLE"><img src="../img/MEF_009E6.PNG"></p>
-      <p><a href="MEH_009B.html">Formulario principal</a><span><b> | </b></span><a href="MEH_009B2.html">Convenio tipo
-          establecimiento</a></p>
+          </span></p>
+        <p class="TITLE"><img src="../img/MEF_009E6.PNG"></p>
+        <p><a href="MEH_009B.html">Formulario principal</a> | </span><a
+            href="MEH_009B2.html">Convenio tipo
+            establecimiento</a></p>
 
-  </section>
-  <script src="../js/menu.js"></script>
-</body>
-<div id="footerContainer"></div>
-<script>
+      </section>
+      <script src="../js/menu.js"></script>
+    </body>
+    <div id="footerContainer"></div>
+    <script>
   fetch('footer.html')
     .then(response => response.text())
     .then(html => {
@@ -482,4 +586,4 @@
     });
 </script>
 
-</html>
+  </html>

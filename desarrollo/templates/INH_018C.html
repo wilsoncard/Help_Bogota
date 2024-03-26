@@ -1,157 +1,234 @@
 <!DOCTYPE html>
 <html lang="es">
 
-<head>
+  <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>BANKBU®</title>
 
     <link rel="stylesheet" href="../css/pages.css">
     <link rel="stylesheet" href="../css/style.css">
- <link rel="icon" href="../img/ACQUIRER-logo.JPG" type="image/x-icon">
-</head>
+    <link rel="icon" href="../img/ACQUIRER-logo.JPG" type="image/x-icon">
+  </head>
 
-<body>
+  <body>
 
     <header>
-        <img class="logo" src="../img/logoBankbu_.PNG" alt="Logo de Mi Empresa">
-        <div id="menuBtn">
-            <img class="TITLE"  src= "../img/menu.PNG" alt="Botón de Menú ">
-        </div>
+      <img class="logo" src="../img/logoBankbu_.PNG" alt="Logo de Mi Empresa">
+      <div id="menuBtn">
+        <img class="TITLE" src="../img/menu.PNG" alt="Botón de Menú ">
+      </div>
     </header>
-   <div id="menuContainer"></div>
+    <div id="menuContainer"></div>
     <script>
-      fetch('menu.html')
-        .then(response => response.text())
-        .then(html => {
-          document.getElementById('menuContainer').innerHTML = html;
-        });
-    </script>
+    fetch('menu.html')
+      .then(response => response.text())
+      .then(html => {
+        document.getElementById('menuContainer').innerHTML = html;
+      });
+  </script>
 
     <section>
-        <div>
-            <table>
-              <tr> 
-                <td><div> 
-                    <p  class="TITLE style6"><a name="tipos"></a>Tipos de terminal</p>
-                    </div></td>
-              </tr>
+      <div>
+        
+                <p class="TITLE style6"><a name="tipos"></a>Tipos de
+                  terminal</p>
+              </div></td>
+          </tr>
 
-            </table>
-            <p>Mediante este formulario se definen las   diferentes terminales que se utilizar&aacute;n los distintos establecimientos.</p>
-            <p>El formulario contiene las opciones Actualizar, Eliminar, 
-            Adicionar y Detalle. Adicionalmente, cuenta con un filtro de b&uacute;squeda y los enlaces de <a href="#inventario" target="_self" >Inventario de terminal</a> y <a href="#estadisticas" target="_self" >Estadísticas</a>.</p>
-            <p class="TITLE"><img src="../img/INF_018c1.PNG"584" height="287"></p>
-            
-            <p class="PARRAFO"><span class="SUBTITULO">Filtro:</span>  Se pueden realizar consultas a trav&eacute;s 
-            de las siguientes opciones:</p>
-            <p  class="center"><img src="../img/INF_018c.PNG"335" height="101"></p>
-            <table>
-              <tr>
-                <td class="titletable"><p class="SUBTITULO"><span >C&oacute;digo</span></p></td>
-                <td><p>Campo num&eacute;rico de m&aacute;ximo 6 d&iacute;gitos, en el que   se registra el c&oacute;digo asignado a cada una de las terminales. </p>      
-                </td>
-              </tr>
+        </table>
+        <p>Mediante este formulario se definen las diferentes terminales que se
+          utilizar&aacute;n los distintos establecimientos.</p>
+        <p>El formulario contiene las opciones Actualizar, Eliminar,
+          Adicionar y Detalle. Adicionalmente, cuenta con un filtro de
+          b&uacute;squeda y los enlaces de <a href="#inventario"
+            target="_self">Inventario de terminal</a> y <a href="#estadisticas"
+            target="_self">Estadísticas</a>.</p>
+        <p class="TITLE"><img src="../img/INF_018c1.PNG"></p>
 
-              <tr>
-                <td class="titletable"><p class="SUBTITULO"><b><span >Descripci&oacute;n</span></b></p></td>
-                <td><p>Campo alfanum&eacute;rico de 40 caracteres,  en   el cual se registra el nombre de la terminal o una peque&ntilde;a descripci&oacute;n de &eacute;sta. </p></td>
-              </tr>
-            </table>
-            <p><span class="SUBTITULO"><span >Adicionar</b>:</span></span><span > Si el usuario invoca la opci&oacute;n Adicionar se despliega un nuevo formulario.</span></p>
-            <p class="TITLE"><img src="../img/INF_018c2.PNG"294" ></p>
-            
-            <table>
-              <tr>
-                <td class="titletable"  ><p class="SUBTITULO"><span >C&oacute;digo</span></p></td>
-                <td><p>Campo num&eacute;rico de m&aacute;ximo 6 d&iacute;gitos, en el que   se registra el c&oacute;digo asignado a cada una de las terminales. </p>      </td>
-              </tr>
-              <tr>
-                <td class="titletable"><p class="SUBTITULO"><b><span >Descripci&oacute;n</span></b></p></td>
-                <td><p>Campo alfanum&eacute;rico de 40 caracteres,  en   el cual se registra el nombre de la terminal o una peque&ntilde;a descripci&oacute;n de &eacute;sta. </p></td>
-              </tr>
-              <tr>
-                <td class="titletable"><p class="SUBTITULO">Total terminales </p></td>
-                <td><p>Campo num&eacute;rico de m&aacute;ximo 6 d&iacute;gitos, en el que   se registra este concepto. </p></td>
-              </tr>
-              <tr>
-                <td class="titletable"><p class="SUBTITULO">Valor unitario </p></td>
-                <td><p>Para 
-                    este campo el sistema admite cualquier dato num&eacute;rico de m&aacute;ximo 
-                    14 d&iacute;gitos, 12 enteros y dos decimales.</p></td>
-              </tr>
-            </table>
-            <p class="PARRAFO" ><span class="SUBTITULO"><span >Actualizar</b>:</span></span><span > Si el usuario invoca la opci&oacute;n Actualizar se despliega un nuevo formulario 
-              en el cual </span><span >los </span><span > &uacute;nicos campos </span></span><span class="style7"><span >modificables</span></span><span class="PARRAFO"><span >son:</span>  Descripci&oacute;n, Total terminales, y Valor unitario. </span></p>
-            <p class="TITLE"><img src="../img/INF_018c3.PNG"298" ></p>
-            
-            <p><span class="TITLE">Inventario de terminales<a name="inventario"></a></span></p>
-            <p>A trav&eacute;s de este formulario, el sistema permite registrar la identificaci&oacute;n y el estado de cada una de las terminales, as&iacute; como tambi&eacute;n los comentario correspondientes en caso de ser necesarios. </p>
-            <p>El formulario contiene las opciones Actualizar, Eliminar, 
-            Adicionar y Detalle. Adicionalmente, cuenta con un filtro de b&uacute;squeda y un enlace en la parte superior izquierda para ir al <a href="#tipos" target="_self" >menú anterior</a>.</p>
-            <p class="TITLE"><img src="../img/INF_018c5.PNG"586" ></p>
-            
-            <p class="PARRAFO"><span class="SUBTITULO">Filtro:</span>  Se pueden realizar consultas a trav&eacute;s 
-              de las siguientes opciones:</p>
-            <p  class="center"><img src="../img/INF_018c4.PNG"399" ></p>
-            <p  class="center"></p>
-            <table>
-              <tr>
-                <td class="titletable" ><p class="SUBTITULO"><span >N&uacute;mero de inventario </span></p></td>
-                <td   ><p>Campo alfanum&eacute;rico de 12 caracteres,  en   el cual se registra el c&oacute;digo asignado a cada una de las terminales del inventario. </p></td>
-              </tr>
-              <tr>
-                <td class="titletable"><p class="SUBTITULO"><b><span ><span >Establecimiento</span></span></b></p></td>
-                <td><p>Campo que permite el ingreso del c&oacute;digo del establecimiento, s&oacute;lo se habillita si en el campo Estado se encuentra seleccionada la opci&oacute;n Asignada o Activada. </p></td>
-              </tr>
-              <tr>
-                <td class="titletable"><p class="SUBTITULO">Estado</p></td>
-                <td><p>Lista de valores que permite seleccionar una de las siguientes opciones: En tr&aacute;nsito, Libre, Asignada, Activada, En reparaci&oacute;n, y Dada de baja. </p></td>
-              </tr>
-            </table>
-            <p><span class="SUBTITULO"><span >Adicionar</b>:</span></span><span > Si el usuario invoca la opci&oacute;n Adicionar se despliega un nuevo formulario.</span></p>
-            <p class="TITLE"><img src="../img/INF_018c6.PNG"401" ></p>
-            
-            <table>
-              <tr>
-                <td class="titletable" ><p class="SUBTITULO"><span >N&uacute;mero de inventario </span></p></td>
-                <td   ><p>Campo alfanum&eacute;rico de 12 caracteres,  en   el cual se registra el c&oacute;digo asignado a cada una de las terminales del inventario. </p></td>
-              </tr>
-              <tr>
-                <td class="titletable"><p class="SUBTITULO"><b><span ><span >Establecimiento</span></span></b></p></td>
-                <td><p>Campo que permite el ingreso del c&oacute;digo del establecimiento, s&oacute;lo se habillita si en el campo Estado se encuentra seleccionada la opci&oacute;n Asignada o Activada. </p></td>
-              </tr>
-              <tr>
-                <td class="titletable"><p class="SUBTITULO">Estado</p></td>
-                <td><p>Lista de valores que permite seleccionar una de las siguientes opciones: En tr&aacute;nsito, Libre, Asignada, Activada, En reparaci&oacute;n, y Dada de baja. </p></td>
-              </tr>
-              <tr>
-                <td class="titletable"><p class="SUBTITULO">Observaciones</p></td>
-                <td><p>Campo alfanum&eacute;rico que permite ingresar una breve descripci&oacute;n de cada uno de los elementos relacionados como inventario. </p></td>
-              </tr>
-            </table>
-            <p><span class="SUBTITULO"><span >Actualizar</b>:</span></span><span > Si el usuario invoca la opci&oacute;n Actualizar se despliega un nuevo formulario 
-              en el cual </span><span >los </span><span > &uacute;nicos campos </span><span class="style7"><span >modificables</span></span>  <span >son:</span>  Establecimiento, Estado y Observaciones. </p>
-            <p class="TITLE"><img src="../img/INF_018c7.PNG"403" ></p>
-            
-            <p><span class="TITLE"><a name="estadisticas"></a>Estad&iacute;sticas</span></p>
-            <p>A trav&eacute;s de este formulario, el sistema permite consultar los registros de estad&iacute;sticas por cada Terminal, a trav&eacute;s de dos tipos de graficos seg&uacute;n seleccione el usuario entre Barras o Pastel. </p>
-            <p>El formulario contiene la opci&oacute;n Estad&iacute;sticas y  un enlace en la parte superior izquierda para ir al <a href="#tipos" target="_self" >menú anterior</a>.</p>
-            <p class="TITLE"><img src="../img/INF_018c8.PNG"685" ></p>
-            
-            <p><span >Estad&iacute;sticas</span><span class="SUBTITULO"><span >:</span></span><span > Si el usuario invoca esta</span>  <span >opci&oacute;n se despliega un nuevo formulario 
-            en el cual se muestran las estad&iacute;sticas correspondientes a la terminal seleccionada, con un &uacute;nico campo llamado Tipo de gr&aacute;fico, a trav&eacute;s del </span><span >cual se podra seleccionar c&oacute;mo visualizar estos datos.</span></p>
-            <p class="TITLE"><img src="../img/INF_018c9.PNG"734" height="458"></p>
-            
-        </section>
-    <script src="../js/menu.js"></script>
-</body>
-<div id="footerContainer"></div>
-<script>
+        <p class="PARRAFO"><span class="SUBTITULO">Filtro:</span> Se pueden
+          realizar consultas a trav&eacute;s
+          de las siguientes opciones:</p>
+        <p class="center"><img src="../img/INF_018c.PNG"></p>
+        <table>
+          <tr>
+            <td class="titletable"><p
+                class="SUBTITULO">C&oacute;digo</span></p></td>
+            <td><p>Campo num&eacute;rico de m&aacute;ximo 6 d&iacute;gitos, en
+                el que se registra el c&oacute;digo asignado a cada una de las
+                terminales. </p>
+            </td>
+          </tr>
+
+          <tr>
+            <td class="titletable"><p
+                class="SUBTITULO">Descripci&oacute;n</span></p></td>
+            <td><p>Campo alfanum&eacute;rico de 40 caracteres, en el cual se
+                registra el nombre de la terminal o una peque&ntilde;a
+                descripci&oacute;n de &eacute;sta. </p></td>
+          </tr>
+        </table>
+        <p><span class="SUBTITULO">Adicionar:</span></span> Si el
+            usuario invoca la opci&oacute;n Adicionar se despliega un nuevo
+            formulario.</span></p>
+        <p class="TITLE"><img src="../img/INF_018c2.PNG"></p>
+
+        <table>
+          <tr>
+            <td class="titletable"><p
+                class="SUBTITULO">C&oacute;digo</span></p></td>
+            <td><p>Campo num&eacute;rico de m&aacute;ximo 6 d&iacute;gitos, en
+                el que se registra el c&oacute;digo asignado a cada una de las
+                terminales. </p> </td>
+          </tr>
+          <tr>
+            <td class="titletable"><p
+                class="SUBTITULO">Descripci&oacute;n</span></p></td>
+            <td><p>Campo alfanum&eacute;rico de 40 caracteres, en el cual se
+                registra el nombre de la terminal o una peque&ntilde;a
+                descripci&oacute;n de &eacute;sta. </p></td>
+          </tr>
+          <tr>
+            <td class="titletable"><p class="SUBTITULO">Total terminales
+              </p></td>
+            <td><p>Campo num&eacute;rico de m&aacute;ximo 6 d&iacute;gitos, en
+                el que se registra este concepto. </p></td>
+          </tr>
+          <tr>
+            <td class="titletable"><p class="SUBTITULO">Valor unitario </p></td>
+            <td><p>Para
+                este campo el sistema admite cualquier dato num&eacute;rico de
+                m&aacute;ximo
+                14 d&iacute;gitos, 12 enteros y dos decimales.</p></td>
+          </tr>
+        </table>
+        <p class="PARRAFO"><span
+            class="SUBTITULO">Actualizar:</span></span> Si el
+            usuario invoca la opci&oacute;n Actualizar se despliega un nuevo
+            formulario
+            en el cual </span>los </span> &uacute;nicos campos
+          </span></span><span
+          class="style7">modificables</span></span><span
+          class="PARRAFO">son:</span> Descripci&oacute;n, Total
+          terminales, y Valor unitario. </span></p>
+      <p class="TITLE"><img src="../img/INF_018c3.PNG"></p>
+
+      <p><span class="TITLE">Inventario de terminales<a
+            name="inventario"></a></span></p>
+      <p>A trav&eacute;s de este formulario, el sistema permite registrar la
+        identificaci&oacute;n y el estado de cada una de las terminales,
+        as&iacute; como tambi&eacute;n los comentario correspondientes en caso
+        de ser necesarios. </p>
+      <p>El formulario contiene las opciones Actualizar, Eliminar,
+        Adicionar y Detalle. Adicionalmente, cuenta con un filtro de
+        b&uacute;squeda y un enlace en la parte superior izquierda para ir al <a
+          href="#tipos" target="_self">menú anterior</a>.</p>
+      <p class="TITLE"><img src="../img/INF_018c5.PNG"></p>
+
+      <p class="PARRAFO"><span class="SUBTITULO">Filtro:</span> Se pueden
+        realizar consultas a trav&eacute;s
+        de las siguientes opciones:</p>
+      <p class="center"><img src="../img/INF_018c4.PNG"></p>
+      <p class="center"></p>
+      <table>
+        <tr>
+          <td class="titletable"><p class="SUBTITULO">N&uacute;mero de
+                inventario </span></p></td>
+          <td><p>Campo alfanum&eacute;rico de 12 caracteres, en el cual se
+              registra el c&oacute;digo asignado a cada una de las terminales
+              del inventario. </p></td>
+        </tr>
+        <tr>
+          <td class="titletable"><p
+              class="SUBTITULO">Establecimiento</span></span></p></td>
+          <td><p>Campo que permite el ingreso del c&oacute;digo del
+              establecimiento, s&oacute;lo se habillita si en el campo Estado se
+              encuentra seleccionada la opci&oacute;n Asignada o Activada.
+            </p></td>
+        </tr>
+        <tr>
+          <td class="titletable"><p class="SUBTITULO">Estado</p></td>
+          <td><p>Lista de valores que permite seleccionar una de las siguientes
+              opciones: En tr&aacute;nsito, Libre, Asignada, Activada, En
+              reparaci&oacute;n, y Dada de baja. </p></td>
+        </tr>
+      </table>
+      <p><span class="SUBTITULO">Adicionar:</span></span> Si el
+          usuario invoca la opci&oacute;n Adicionar se despliega un nuevo
+          formulario.</span></p>
+      <p class="TITLE"><img src="../img/INF_018c6.PNG"</p>
+
+        <table>
+          <tr>
+            <td class="titletable"><p class="SUBTITULO">N&uacute;mero de
+                  inventario </span></p></td>
+            <td><p>Campo alfanum&eacute;rico de 12 caracteres, en el cual se
+                registra el c&oacute;digo asignado a cada una de las terminales
+                del inventario. </p></td>
+          </tr>
+          <tr>
+            <td class="titletable"><p
+                class="SUBTITULO">Establecimiento</span></span></p></td>
+            <td><p>Campo que permite el ingreso del c&oacute;digo del
+                establecimiento, s&oacute;lo se habillita si en el campo Estado
+                se
+                encuentra seleccionada la opci&oacute;n Asignada o Activada.
+              </p></td>
+          </tr>
+          <tr>
+            <td class="titletable"><p class="SUBTITULO">Estado</p></td>
+            <td><p>Lista de valores que permite seleccionar una de las
+                siguientes
+                opciones: En tr&aacute;nsito, Libre, Asignada, Activada, En
+                reparaci&oacute;n, y Dada de baja. </p></td>
+          </tr>
+          <tr>
+            <td class="titletable"><p class="SUBTITULO">Observaciones</p></td>
+            <td><p>Campo alfanum&eacute;rico que permite ingresar una breve
+                descripci&oacute;n de cada uno de los elementos relacionados
+                como
+                inventario. </p></td>
+          </tr>
+        </table>
+        <p><span class="SUBTITULO">Actualizar:</span></span> Si el
+            usuario invoca la opci&oacute;n Actualizar se despliega un nuevo
+            formulario
+            en el cual </span>los </span> &uacute;nicos campos
+          </span><span class="style7">modificables</span></span>
+          son:</span> Establecimiento, Estado y Observaciones. </p>
+        <p class="TITLE"><img src="../img/INF_018c7.PNG"></p>
+
+        <p><span class="TITLE"><a
+              name="estadisticas"></a>Estad&iacute;sticas</span></p>
+        <p>A trav&eacute;s de este formulario, el sistema permite consultar los
+          registros de estad&iacute;sticas por cada Terminal, a trav&eacute;s de
+          dos tipos de graficos seg&uacute;n seleccione el usuario entre Barras
+          o
+          Pastel. </p>
+        <p>El formulario contiene la opci&oacute;n Estad&iacute;sticas y un
+          enlace
+          en la parte superior izquierda para ir al <a href="#tipos"
+            target="_self">menú anterior</a>.</p>
+        <p class="TITLE"><img src="../img/INF_018c8.PNG"></p>
+
+        <p>Estad&iacute;sticas</span><span
+            class="SUBTITULO">:</span></span> Si el usuario invoca
+            esta</span> opci&oacute;n se despliega un nuevo formulario
+            en el cual se muestran las estad&iacute;sticas correspondientes a la
+            terminal seleccionada, con un &uacute;nico campo llamado Tipo de
+            gr&aacute;fico, a trav&eacute;s del </span>cual se podra
+            seleccionar c&oacute;mo visualizar estos datos.</span></p>
+        <p class="TITLE"><img src="../img/INF_018c9.PNG"></p>
+
+      </section>
+      <script src="../js/menu.js"></script>
+    </body>
+    <div id="footerContainer"></div>
+    <script>
   fetch('footer.html')
     .then(response => response.text())
     .then(html => {
       document.getElementById('footerContainer').innerHTML = html;
     });
 </script>
-</html>
+  </html>

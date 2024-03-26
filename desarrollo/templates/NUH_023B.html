@@ -18,25 +18,20 @@
       <img class="TITLE" src="../img/menu.PNG" alt="Botón de Menú ">
     </div>
   </header>
-  <div id="menuContainer"></div>
-    <script>
-      fetch('menu.html')
-        .then(response => response.text())
-        .then(html => {
-          document.getElementById('menuContainer').innerHTML = html;
-        });
-    </script>
+    <div id="menuContainer"></div>
+  <script>
+    fetch('menu.html')
+      .then(response => response.text())
+      .then(html => {
+        document.getElementById('menuContainer').innerHTML = html;
+      });
+  </script>
 
   <section>
     <div> 
-            <table>
-              <tr> 
-                <td><div> 
+            
                     <p  class=" TITLE">Calendario</p>
-    </div>
-    </td>
-    </tr>
-    </table>
+    
     <p class="PARRAFO">Mediante las opciones corporativa y de la entidad, se permite definir cuáles fechas no son hábiles para la atención al público o el procesamiento de movimiento transaccional, en la entidad financiera. Al momento de realizarse la instalación del aplicativo, se debe actualizar la información relativa tanto a los días festivos nacionales, como a los días no hábiles comunes para todas las entidades financieras de la instalación.</p>
     <p class="PARRAFO"> Los
       d&iacute;as no h&aacute;biles de una oficina o sucursal se ingresan por la
@@ -62,7 +57,7 @@
       </tr>
       <tr>
         <td class="titletable">
-          <p class="SUBTITULO"><b>Mes</b></p>
+          <p class="SUBTITULO">Mes</p>
         </td>
         <td>
           <p class="PARRAFO">Campo que posee lista de valores tipo combo, no obligatorio, en el que se selecciona el mes del año, para el que se desea consultar, eliminar o modificar la data correspondiente.</p>
@@ -70,7 +65,7 @@
       </tr>
       <tr>
         <td class="titletable">
-          <p class="SUBTITULO"><b><span>A&ntilde;o</span></span></b></p>
+          <p class="SUBTITULO">A&ntilde;o</span></span></p>
         </td>
         <td>
           <p class="PARRAFO">Campo obligatorio en el que se debe ingresar el año para el que se desea consultar, eliminar o modificar la data correspondiente.
@@ -80,7 +75,7 @@
     </table>
 
     <p><span class="SUBTITULO">Adicionar:</span>  Si el usuario invoca la opci&oacute;n Adicionar se despliega un
-      formulario con los siguientes campos<span>:</span> 
+      formulario con los siguientes campos:</span> 
     </p>
     <p class="TITLE"><img src="../img/NUF_023B2.PNG"></p>
 
@@ -95,8 +90,8 @@
       </tr>
       <tr>
         <td class="titletable">
-          <p class="SUBTITULO"><b>Tipo
-              de d&iacute;a</b></p>
+          <p class="SUBTITULO">Tipo
+              de d&iacute;a</p>
         </td>
         <td>
           <p class="PARRAFO">Campo obligatorio que, mediante una lista de valores tipo combo, de la que se debe optar entre Festivo o Inhábil, la naturaleza del mismo.</p>
@@ -104,8 +99,8 @@
       </tr>
       <tr>
         <td class="titletable">
-          <p class="SUBTITULO"><b><span>No
-                h&aacute;bil para</span></b></p>
+          <p class="SUBTITULO">No
+                h&aacute;bil para</span></p>
         </td>
         <td>
           <p class="PARRAFO">Campo obligatorio que, mediante una lista de valores tipo combo, de la que se debe optar entre Banca, Procesamiento o Ambas, la primera se relaciona con atención al público, la segunda si la inhabilidad es para proceso de movimiento y la última para ambas situaciones.</p>
@@ -113,7 +108,7 @@
       </tr>
       <tr>
         <td class="titletable">
-          <p class="SUBTITULO"><b><span>Descripci&oacute;n</span></b></p>
+          <p class="SUBTITULO">Descripci&oacute;n</span></p>
         </td>
         <td>
           <p class="PARRAFO">Campo alfanumérico de 30 posiciones, no obligatorio, dentro del que es posible mencionar el motivo o la razón por la cual un día específico no es laborable o es festivo. </p>

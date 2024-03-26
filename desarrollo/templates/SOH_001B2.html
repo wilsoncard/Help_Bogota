@@ -1,177 +1,209 @@
 <!DOCTYPE html>
 <html lang="es">
 
-<head>
+  <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>BANKBU®</title>
     <link rel="stylesheet" href="../css/pages.css">
     <link rel="stylesheet" href="../css/style.css">
- <link rel="icon" href="../img/ACQUIRER-logo.JPG" type="image/x-icon">
-</head>
+    <link rel="icon" href="../img/ACQUIRER-logo.JPG" type="image/x-icon">
+  </head>
 
-<body>
+  <body>
     <header>
-        <img class="logo" src="../img/logoBankbu_.PNG" alt="Logo de Mi Empresa">
-        <div id="menuBtn">
-            <img class="TITLE"  src= "../img/menu.PNG" alt="Botón de Menú ">
-        </div>
+      <img class="logo" src="../img/logoBankbu_.PNG" alt="Logo de Mi Empresa">
+      <div id="menuBtn">
+        <img class="TITLE" src="../img/menu.PNG" alt="Botón de Menú ">
+      </div>
     </header>
-   <div id="menuContainer"></div>
+    <div id="menuContainer"></div>
     <script>
-      fetch('menu.html')
-        .then(response => response.text())
-        .then(html => {
-          document.getElementById('menuContainer').innerHTML = html;
-        });
-    </script>
+    fetch('menu.html')
+      .then(response => response.text())
+      .then(html => {
+        document.getElementById('menuContainer').innerHTML = html;
+      });
+  </script>
 
     <section>
-        <div> 
-            <table>
-              <tr> 
-                <td><div> 
-                    <p  class="TITLE">Par&aacute;metros de solicitudes - Funcionarios </p>
-                    </div></td>
-              </tr>
-            </table>
-            <p class="PARRAFO"><span class="SUBTITULO">Funcionarios:</span>  Formulario que 
-              permite determinar a qu&eacute; productos de la entidad puede cada <a href="NUH_045B.html" >Funcionario</a> 
-              asignar manualmente cupos o modificar el asignado autom&aacute;ticamente por 
-              el sistema.</p>
-            <p class="PARRAFO">El formulario contiene la opci&oacute;n Par&aacute;metros 
-              producto. Adicionalmente, cuenta con un filtro de b&uacute;squeda y un bot&oacute;n 
-              en la parte superior para volver al <a href="SOH_001B.html" >formulario principal</a>.</p>
-            <p class="TITLE"><img src="../img/SOF_001B10.PNG"699" ></p>
-           
-            <p><span class="SUBTITULO">Filtro:</span>  Se pueden realizar consultas a trav&eacute;s 
-              de los siguientes campos: </p>
-            <p class="TITLE"><img src="../img/SOF_001B9.PNG"246" ></p>
-            
-            <table>
-              <tr> 
-                <td  class="titletable" ><p class="SUBTITULO"><b><span 
-        >C&oacute;digo</span></b></p></td>
-                <td><p  class="PARRAFO">Campo 
-                    num&eacute;rico de cinco posiciones, en el cual se registra el c&oacute;digo 
-                    que identifica a cada funcionario.</p></td>
-              </tr>
-              <tr> 
-                <td class="titletable"><p class="SUBTITULO"><b><span 
-        >Nombre</span></b></p></td>
-                <td><p  class="PARRAFO">En 
-                    este campo alfanum&eacute;rico de 30 posiciones, se registra el nombre 
-                    del funcionario a buscar.</p></td>
-              </tr>
-              <tr> 
-                <td class="titletable"><p class="SUBTITULO"><b><span 
-        >Usuario</span></b></p></td>
-                <td><p  class="PARRAFO">Campo 
-                    en el que se puede digitar el usuario asignado al funcionario a ser 
-                    buscado. </p></td>
-              </tr>
-              <tr> 
-                <td class="titletable"><p class="SUBTITULO"><b><span 
-        >Estado</span></b></p></td>
-                <td><p  class="PARRAFO">Campo 
-                    que posee lista de valores adjunta en la que se debe seleccionar si se deja el campo Nulo, si 
-                    el funcionario est&aacute; Activo, Inactivo, Retirado o Suspendido.</p></td>
-              </tr>
-            </table>
-           
-            <p><span class="SUBTITULO">Par&aacute;metros producto:</span>  Formulario que 
-              despliega todos los Productos para los cuales el <a href="NUH_045B.html" >Funcionario</a> 
-              tiene atribuciones.</p>
-            <p>El formulario contiene las opciones Actualizar, Eliminar, y Adicionar. Adicionalmente, 
-              cuenta con un filtro de b&uacute;squeda y un bot&oacute;n en la parte superior 
-              para volver al formulario anterior.</p>
-            <p class="TITLE"><img src="../img/SOF_001B12.PNG"551" height="255"></p>
-            <p><span class="SUBTITULO">Filtro:</span>  Se pueden realizar consultas a trav&eacute;s 
-              de los siguientes campos: </p>
-            <p class="TITLE"><img src="../img/SOF_001B11.PNG"250" ></p>
-            
-            <table>
-              <tr> 
-                <td  class="titletable" ><p class="SUBTITULO"><b><span 
-        >Bin</span></b></p></td>
-                <td><p  class="PARRAFO">Campo 
-                    num&eacute;rico de ocho d&iacute;gitos que permite realizar b&uacute;squeda 
-                    por Bin.</p></td>
-              </tr>
-              <tr> 
-                <td class="titletable"><p class="SUBTITULO"><b><span 
-        >Producto</span></b></p></td>
-                <td><p  class="PARRAFO">Campo 
-                    num&eacute;rico de tres d&iacute;gitos que permite realizar b&uacute;squeda 
-                    por Producto.</p></td>
-              </tr>
-              <tr> 
-                <td class="titletable"><p class="SUBTITULO"><b><span 
-        >Grupo</span></b></p></td>
-                <td><p  class="PARRAFO">Campo 
-                    num&eacute;rico de ocho d&iacute;gitos que permite realizar b&uacute;squeda 
-                    por Grupo de afinidad.</p></td>
-              </tr>
-            </table>
-            .<p><span class="SUBTITULO">Adicionar:</span>  Si el usuario invoca la opci&oacute;n 
-              Adicionar se despliega un formulario con los siguientes campos<span >:</span></p>
-            <p class="TITLE"><img src="../img/SOF_001B13.PNG"533" ></p>
-            <table>
-              <tr> 
-                <td class="titletable"><p class="SUBTITULO"><b>Producto</b></p></td>
-                <td><p class="PARRAFO">Campo obligatorio que contiene una lista 
-                    de valores que muestra los datos parametrizados en la Definici&oacute;n 
-                    de productos.</p></td>
-              </tr>
-              <tr> 
-                <td  class="titletable" ><p class="SUBTITULO">Cupo 
-                    autorizado </p></td>
-                <td><p class="PARRAFO">Campo 
-                    num&eacute;rico obligatorio de m&aacute;ximo doce (12) enteros y dos 
-                    (2) decimales, que determina el m&agrave;ximo de cupo asignado que el 
-                    funcionario puede ingresar o modificar en las solicitudes.
-                  </p></td>
-              </tr>
-              <tr> 
-                <td class="titletable"><p class="SUBTITULO"><b>Permite 
-                    forzar cupo por encima</b></p></td>
-                <td><p class="PARRAFO">Campo 
-                    de marca que determina si el funcionario est&aacute; autorizado para 
-                    forzar cupos con esta condici&oacute;n.</p></td>
-              </tr>
-              <tr> 
-                <td  class="titletable" ><p class="SUBTITULO"><b>Permite 
-                    forzar cupo por debajo</b></p></td>
-                <td><p class="PARRAFO">Campo 
-                    de marca que determina si el funcionario est&aacute; autorizado para 
-                    forzar cupos con esta condici&oacute;n.</p></td>
-              </tr>
-            </table>
-           
-            <p class="PARRAFO"><span class="PARRAFO"><span class="SUBTITULO">Actualizar:</span>  
-              Si el usuario invoca la opci&oacute;n Actualizar se despliega un nuevo formulario 
-              en el cual los &uacute;nicos campos modificables son: Cupo autorizado, Permite 
-              forzar cupo por encima, y Permite forzar cupo por debajo.</span></p>
-            <p class="TITLE"><img src="../img/SOF_001B14.PNG"514" ></p>
-           
-            <p><b><b><span class="PARRAFO"><a href="SOH_001B.html" >Formulario 
-              principal</a> |</span></b></b><b><b><span class="PARRAFO"><a href="SOH_001B1.html" >Filtros</a></span></b></b> 
-              |<span ><b></b></span><a href="SOH_005B4.html"><b><b><span class="PARRAFO"></span></b></b> 
-              </a><a href="SOH_001B3.html" >Calificaci&oacute;n</a><b><b><span class="PARRAFO">|</span></b></b> 
-              <span class="PARRAFO"><a href="SOH_001B4.html" >Negaci&oacute;n</a> |    <a href="SOH_001B5.html" >Variables cupo</a><b><b><span class="PARRAFO">|</span></b></b> 
-              <span class="PARRAFO"><a href="SOH_001B6.html" >Globo de loc</a></span></span><a href="SOH_001B6.html" >alizaci&oacute;n</a></span></p>
-            
-        </section>
+      <div>
+
+        <p class="TITLE">Par&aacute;metros de solicitudes - Funcionarios </p>
+
+        <p class="PARRAFO"><span class="SUBTITULO">Funcionarios:</span>
+          Formulario que
+          permite determinar a qu&eacute; productos de la entidad puede cada <a
+            href="NUH_045B.html">Funcionario</a>
+          asignar manualmente cupos o modificar el asignado
+          autom&aacute;ticamente por
+          el sistema.</p>
+        <p class="PARRAFO">El formulario contiene la opci&oacute;n
+          Par&aacute;metros
+          producto. Adicionalmente, cuenta con un filtro de b&uacute;squeda y un
+          bot&oacute;n
+          en la parte superior para volver al <a href="SOH_001B.html">formulario
+            principal</a>.</p>
+        <p class="TITLE"><img src="../img/SOF_001B10.PNG"></p>
+
+        <p><span class="SUBTITULO">Filtro:</span> Se pueden realizar consultas a
+          trav&eacute;s
+          de los siguientes campos: </p>
+        <p class="TITLE"><img src="../img/SOF_001B9.PNG"></p>
+
+        <table>
+          <tr>
+            <td class="titletable"><p
+                class="SUBTITULO"><span>C&oacute;digo</span></p></td>
+            <td><p class="PARRAFO">Campo
+                num&eacute;rico de cinco posiciones, en el cual se registra el
+                c&oacute;digo
+                que identifica a cada funcionario.</p></td>
+          </tr>
+          <tr>
+            <td class="titletable"><p
+                class="SUBTITULO"><span>Nombre</span></p></td>
+            <td><p class="PARRAFO">En
+                este campo alfanum&eacute;rico de 30 posiciones, se registra el
+                nombre
+                del funcionario a buscar.</p></td>
+          </tr>
+          <tr>
+            <td class="titletable"><p
+                class="SUBTITULO"><span>Usuario</span></p></td>
+            <td><p class="PARRAFO">Campo
+                en el que se puede digitar el usuario asignado al funcionario a
+                ser
+                buscado. </p></td>
+          </tr>
+          <tr>
+            <td class="titletable"><p
+                class="SUBTITULO"><span>Estado</span></p></td>
+            <td><p class="PARRAFO">Campo
+                que posee lista de valores adjunta en la que se debe seleccionar
+                si se deja el campo Nulo, si
+                el funcionario est&aacute; Activo, Inactivo, Retirado o
+                Suspendido.</p></td>
+          </tr>
+        </table>
+
+        <p><span class="SUBTITULO">Par&aacute;metros producto:</span> Formulario
+          que
+          despliega todos los Productos para los cuales el <a
+            href="NUH_045B.html">Funcionario</a>
+          tiene atribuciones.</p>
+        <p>El formulario contiene las opciones Actualizar, Eliminar, y
+          Adicionar. Adicionalmente,
+          cuenta con un filtro de b&uacute;squeda y un bot&oacute;n en la parte
+          superior
+          para volver al formulario anterior.</p>
+        <p class="TITLE"><img src="../img/SOF_001B12.PNG"></p>
+        <p><span class="SUBTITULO">Filtro:</span> Se pueden realizar consultas a
+          trav&eacute;s
+          de los siguientes campos: </p>
+        <p class="TITLE"><img src="../img/SOF_001B11.PNG"></p>
+
+        <table>
+          <tr>
+            <td class="titletable"><p
+                class="SUBTITULO"><span>Bin</span></p></td>
+            <td><p class="PARRAFO">Campo
+                num&eacute;rico de ocho d&iacute;gitos que permite realizar
+                b&uacute;squeda
+                por Bin.</p></td>
+          </tr>
+          <tr>
+            <td class="titletable"><p
+                class="SUBTITULO"><span>Producto</span></p></td>
+            <td><p class="PARRAFO">Campo
+                num&eacute;rico de tres d&iacute;gitos que permite realizar
+                b&uacute;squeda
+                por Producto.</p></td>
+          </tr>
+          <tr>
+            <td class="titletable"><p
+                class="SUBTITULO"><span>Grupo</span></p></td>
+            <td><p class="PARRAFO">Campo
+                num&eacute;rico de ocho d&iacute;gitos que permite realizar
+                b&uacute;squeda
+                por Grupo de afinidad.</p></td>
+          </tr>
+        </table>
+        .<p><span class="SUBTITULO">Adicionar:</span> Si el usuario invoca la
+          opci&oacute;n
+          Adicionar se despliega un formulario con los siguientes
+          campos<span>:</span></p>
+        <p class="TITLE"><img src="../img/SOF_001B13.PNG"></p>
+        <table>
+          <tr>
+            <td class="titletable"><p class="SUBTITULO">Producto</p></td>
+            <td><p class="PARRAFO">Campo obligatorio que contiene una lista
+                de valores que muestra los datos parametrizados en la
+                Definici&oacute;n
+                de productos.</p></td>
+          </tr>
+          <tr>
+            <td class="titletable"><p class="SUBTITULO">Cupo
+                autorizado </p></td>
+            <td><p class="PARRAFO">Campo
+                num&eacute;rico obligatorio de m&aacute;ximo doce (12) enteros y
+                dos
+                (2) decimales, que determina el m&agrave;ximo de cupo asignado
+                que el
+                funcionario puede ingresar o modificar en las solicitudes.
+              </p></td>
+          </tr>
+          <tr>
+            <td class="titletable"><p class="SUBTITULO">Permite
+                forzar cupo por encima</p></td>
+            <td><p class="PARRAFO">Campo
+                de marca que determina si el funcionario est&aacute; autorizado
+                para
+                forzar cupos con esta condici&oacute;n.</p></td>
+          </tr>
+          <tr>
+            <td class="titletable"><p class="SUBTITULO">Permite
+                forzar cupo por debajo</p></td>
+            <td><p class="PARRAFO">Campo
+                de marca que determina si el funcionario est&aacute; autorizado
+                para
+                forzar cupos con esta condici&oacute;n.</p></td>
+          </tr>
+        </table>
+
+        <p class="PARRAFO"><span class="PARRAFO"><span
+              class="SUBTITULO">Actualizar:</span>
+            Si el usuario invoca la opci&oacute;n Actualizar se despliega un
+            nuevo formulario
+            en el cual los &uacute;nicos campos modificables son: Cupo
+            autorizado, Permite
+            forzar cupo por encima, y Permite forzar cupo por debajo.</span></p>
+        <p class="TITLE"><img src="../img/SOF_001B14.PNG"></p>
+
+        <p><span class="PARRAFO"><a href="SOH_001B.html">Formulario
+              principal</a> |</span><span class="PARRAFO"><a
+              href="SOH_001B1.html">Filtros</a></span>
+          |<span></span><a href="SOH_005B4.html"><span class="PARRAFO"></span>
+          </a><a href="SOH_001B3.html">Calificaci&oacute;n</a><span
+            class="PARRAFO">|</span>
+          <span class="PARRAFO"><a href="SOH_001B4.html">Negaci&oacute;n</a> |
+            <a href="SOH_001B5.html">Variables cupo</a><span
+              class="PARRAFO">|</span>
+            <span class="PARRAFO"><a href="SOH_001B6.html">Globo de
+                loc</a></span></span><a
+            href="SOH_001B6.html">alizaci&oacute;n</a></span></p>
+
+    </section>
     <script src="../js/menu.js"></script>
 
     <div id="footerContainer"></div>
-<script>
+    <script>
   fetch('footer.html')
     .then(response => response.text())
     .then(html => {
       document.getElementById('footerContainer').innerHTML = html;
     });
 </script>
-</body>
+  </body>
 
 </html>

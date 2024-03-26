@@ -1,173 +1,216 @@
 <!DOCTYPE html>
 <html lang="es">
 
-<head>
+  <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>BANKBU®</title>
     <link rel="stylesheet" href="../css/pages.css">
     <link rel="stylesheet" href="../css/style.css">
- <link rel="icon" href="../img/ACQUIRER-logo.JPG" type="image/x-icon">
-</head>
+    <link rel="icon" href="../img/ACQUIRER-logo.JPG" type="image/x-icon">
+  </head>
 
-<body>
+  <body>
     <header>
-        <img class="logo" src="../img/logoBankbu_.PNG" alt="Logo de Mi Empresa">
-        <div id="menuBtn">
-            <img class="TITLE"  src= "../img/menu.PNG" alt="Botón de Menú ">
-        </div>
+      <img class="logo" src="../img/logoBankbu_.PNG" alt="Logo de Mi Empresa">
+      <div id="menuBtn">
+        <img class="TITLE" src="../img/menu.PNG" alt="Botón de Menú ">
+      </div>
     </header>
-   <div id="menuContainer"></div>
+    <div id="menuContainer"></div>
     <script>
-      fetch('menu.html')
-        .then(response => response.text())
-        .then(html => {
-          document.getElementById('menuContainer').innerHTML = html;
-        });
-    </script>
+    fetch('menu.html')
+      .then(response => response.text())
+      .then(html => {
+        document.getElementById('menuContainer').innerHTML = html;
+      });
+  </script>
 
     <section>
-        <div> 
-          
-                    <p class="TITLE">Cancelaci&oacute;n voluntaria del cr&eacute;dito</p>
-                    
-            <p>A trav&eacute;s de este formualrio se posibilita el registrar la solicitud 
-              de cancelaci&oacute;n voluntaria de la tarjeta y el correspondiente <a href="NUH_009B.html">motivo</a> 
-              o causa, informaci&oacute;n de gran importancia para las entidades que se 
-              preocupan por mantener y/o ampliar su base de clientes. El Sistema controla 
-              que los bloqueos que pueda tener el pl&aacute;stico, el cliente o la tarjeta, 
-              permitan registrar la solicitud de cancelaci&oacute;n voluntaria, de acuerdo 
-              con lo parametrizado en la opci&oacute;n <a href="CAH_002B.html">Estados y 
-              bloqueos</a>.</p>
-            <p>En el formulario de Ingreso de solicitudes se selecciona la opci&oacute;n 
-               Cancelaci&oacute;n voluntaria cr&eacute;dito y la tarjeta a la cual 
-              se le ingresar&aacute; la solicitud.</p>
-            <p class="TITLE"><img src="../img/SOF_016B.PNG"473" ></p>
-            
-            <table>
-              <tr>
-                <td class="titletable" ><p class="SUBTITULO">Tarjeta </p></td>
-                <td><p class="PARRAFO">Campo 
-                    con lista de valores que contiene los diferentes n&uacute;meros de tarjeta 
-                    del cliente. El usuario debe seleccionar aquella para la cual se desea 
-                    solicitar la Cancelaci&oacute;n voluntaria.</p></td>
-              </tr>
-            </table>
-            
-            <p><span class="SUBTITULO">Adicionar:</span>  una vez se han seleccionado los datos anteriores, se deplegar&aacute; un wizard de dos pasos. El primero de ellos contiene los bloques Informaci&oacute;n general y <a href="#Negacion" title="Motivos de negación" target="_self">Motivos de negación</a><span 
-        >:</span></p>
+      <div>
+
+        <p class="TITLE">Cancelaci&oacute;n voluntaria del cr&eacute;dito</p>
+
+        <p>A trav&eacute;s de este formualrio se posibilita el registrar la
+          solicitud
+          de cancelaci&oacute;n voluntaria de la tarjeta y el correspondiente <a
+            href="NUH_009B.html">motivo</a>
+          o causa, informaci&oacute;n de gran importancia para las entidades que
+          se
+          preocupan por mantener y/o ampliar su base de clientes. El Sistema
+          controla
+          que los bloqueos que pueda tener el pl&aacute;stico, el cliente o la
+          tarjeta,
+          permitan registrar la solicitud de cancelaci&oacute;n voluntaria, de
+          acuerdo
+          con lo parametrizado en la opci&oacute;n <a
+            href="CAH_002B.html">Estados y
+            bloqueos</a>.</p>
+        <p>En el formulario de Ingreso de solicitudes se selecciona la
+          opci&oacute;n
+          Cancelaci&oacute;n voluntaria cr&eacute;dito y la tarjeta a la cual
+          se le ingresar&aacute; la solicitud.</p>
+        <p class="TITLE"><img src="../img/SOF_016B.PNG"></p>
+
+        <table>
+          <tr>
+            <td class="titletable"><p class="SUBTITULO">Tarjeta </p></td>
+            <td><p class="PARRAFO">Campo
+                con lista de valores que contiene los diferentes n&uacute;meros
+                de tarjeta
+                del cliente. El usuario debe seleccionar aquella para la cual se
+                desea
+                solicitar la Cancelaci&oacute;n voluntaria.</p></td>
+          </tr>
+        </table>
+
+        <p><span class="SUBTITULO">Adicionar:</span> una vez se han seleccionado
+          los datos anteriores, se deplegar&aacute; un wizard de dos pasos. El
+          primero de ellos contiene los bloques Informaci&oacute;n general y <a
+            href="#Negacion" title="Motivos de negación" target="_self">Motivos
+            de negación</a><span>:</span></p>
         <p class="TITLE"><img src="../img/SOF_016E1.PNG"></p>
-            
-            <table>
-              <tr> 
-                <td class="titletable"><p class="SUBTITULO">Cliente</p></td>
-                <td><p class="PARRAFO">Campo 
-                    de salida desde el cual se podr&aacute; invocar la consulta del cliente 
-                    al cual se le est&aacute; ingresando la solicitud. </p></td>
-              </tr>
-              <tr> 
-                <td class="titletable"><p class="SUBTITULO">N&uacute;mero 
-                    tarjeta </p></td>
-                <td><p class="PARRAFO">Campo 
-                    de salida desde el cual se podr&aacute; invocar la consulta de tarjeta 
-                    del cliente al cual se le est&aacute; ingresando la solicitud. </p></td>
-              </tr>
-              <tr> 
-                <td  class="titletable" ><p class="SUBTITULO">Tipo 
-                    tarjeta </p></td>
-                <td><p class="PARRAFO">Campo 
-                    de salida que muestra qu&eacute; tipo de tarjeta posee el cliente de 
-                    la solicitud, puede ser Principal, Extendida, Amparada, o Adicional.</p></td>
-              </tr>
-              <tr> 
-                <td  class="titletable" ><p class="SUBTITULO">Producto</p></td>
-                <td><p class="PARRAFO">Estos 
-                    campos se llenan autom&aacute;ticamente una vez ingresado el n&uacute;mero 
-                    de tarjeta asociado a la solicitud, permitiendo conocer el Segmento, 
-                    Grupo de afinidad y Descripci&oacute;n que junto con 
-                    el Bin conforman el producto <A href="DBH_018E.html"></A><A href="MEH_002B.html">cr&eacute;dito</A> 
-                    a reponer.</p></td>
-              </tr>
-              <tr> 
-                <td class="titletable"><p class="SUBTITULO">Marca</p></td>
-                <td><p class="PARRAFO"><SPAN >Campo 
-                    de salida que ilustra la <A href="NUH_033B.html">franquicia</A> 
-                    asociada al producto en la Definici&oacute;n del producto.</span></p></td>
-              </tr>
-              <tr> 
-                <td  class="titletable" ><p class="SUBTITULO">Fecha 
-                    Vencimiento</p></td>
-                <td><p class="PARRAFO"><SPAN >Campo 
-                    de salida en formato YYYY-MM-DD, que indica la fecha en que expirar&aacute; 
-                    el nuevo pl&aacute;stico de la tarjeta, cuando se ha parametrizado que 
-                    el sistema deba calcular una nueva fecha de vencimiento.</span></p></td>
-              </tr>
-              <tr> 
-                <td class="titletable"><p class="SUBTITULO">Motivo 
-                    cancelaci&oacute;n </p></td>
-                <td><p class="PARRAFO">Campo 
-                    que posee lista de valores poblada a trav&eacute;s de la opci&oacute;n 
-                    <a href="NUH_009B.html">Motivos de devoluci&oacute;n voluntaria</a> 
-                    de la que debe seleccionarse la causa o raz&oacute;n por la que el cliente 
-                    desea devolver su pl&aacute;stico.</p></td>
-              </tr>
-              <tr> 
-                <td class="titletable"><p class="SUBTITULO">Estado 
-                    solicitd </p></td>
-                <td><p class="PARRAFO">Este 
-                    campo ilustra la condici&oacute;n en que se encuentra la solicitud en 
-                    cada momento, y que puede ser <em class="PARRAFO">En zona gris, Negada 
-                    totalmente, Negada parcialmente, Aprobada totalmente o Aprobada 
-                    parcialmente.</p></td>
-              </tr>
-              <tr> 
-                <td class="SUBTITULO" >Anexos</td>
-                <td><p class="PARRAFO">Campo 
-                    que permite ingresar informaci&oacute;n relacionada con la solicitud, 
-                    referente a documentos suministrados por el cliente u otros datos.</p></td>
-              </tr>
-            </table>
-            <p><a name="Negacion"></a></p>
-            <p class="TITLE"><img src="../img/SOF_015B2.PNG"669" height="134"></p>
-            
-            <table>
-              <tr>
-                <td class="titletable" ><p class="SUBTITULO">Motivo negaci&oacute;n </p></td>
-                <td   ><p class="PARRAFO">Si   aplica, contiene el c&oacute;digo y la descripci&oacute;n de la causal de negaci&oacute;n de la   solicitud.</p>        </td>
-              </tr>
-              <tr>
-                <td class="SUBTITULO" >Observaciones negaci&oacute;n </td>
-                <td><p class="PARRAFO">Campo que   puede contener notas que ilustren las razones por las cuales fue denegada la   solicitud.</p>      </td>
-              </tr>
-            </table>
-            
-            <p  class="PARRAFO"><span class="PARRAFO">A trav&eacute;s de los 
-              botones de la parte inferior derecha, se podr&aacute; cancelar el proceso 
-              o ir al segundo paso del wizard: <a href="SOH_016B1.html">Documentos</a></span> .</p>
 
-            <p  class="PARRAFO"><span class="SUBTITULO">Actualizar:</span>  
-              Si en formulario del ingreso de solicitudes el usuario invoca la opci&oacute;n 
-              Actualizar, se despliega el siguiente formulario.</p>
-            <p class="TITLE"><img src="../img/SOF_016B4.PNG"804" height="398"></p>
-            
-            <p><span class="SUBTITULO">Detalle:</span><span class="PARRAFO"> De igual forma, si </span> en formulario del ingreso de solicitudes el usuario invoca la opci&oacute;n Detalle, se despliega el siguiente formulario. <span
-              
-        >
-            
+        <table>
+          <tr>
+            <td class="titletable"><p class="SUBTITULO">Cliente</p></td>
+            <td><p class="PARRAFO">Campo
+                de salida desde el cual se podr&aacute; invocar la consulta del
+                cliente
+                al cual se le est&aacute; ingresando la solicitud. </p></td>
+          </tr>
+          <tr>
+            <td class="titletable"><p class="SUBTITULO">N&uacute;mero
+                tarjeta </p></td>
+            <td><p class="PARRAFO">Campo
+                de salida desde el cual se podr&aacute; invocar la consulta de
+                tarjeta
+                del cliente al cual se le est&aacute; ingresando la solicitud.
+              </p></td>
+          </tr>
+          <tr>
+            <td class="titletable"><p class="SUBTITULO">Tipo
+                tarjeta </p></td>
+            <td><p class="PARRAFO">Campo
+                de salida que muestra qu&eacute; tipo de tarjeta posee el
+                cliente de
+                la solicitud, puede ser Principal, Extendida, Amparada, o
+                Adicional.</p></td>
+          </tr>
+          <tr>
+            <td class="titletable"><p class="SUBTITULO">Producto</p></td>
+            <td><p class="PARRAFO">Estos
+                campos se llenan autom&aacute;ticamente una vez ingresado el
+                n&uacute;mero
+                de tarjeta asociado a la solicitud, permitiendo conocer el
+                Segmento,
+                Grupo de afinidad y Descripci&oacute;n que junto con
+                el Bin conforman el producto <a href="DBH_018E.html"></a><a
+                  href="MEH_002B.html">cr&eacute;dito</a>
+                a reponer.</p></td>
+          </tr>
+          <tr>
+            <td class="titletable"><p class="SUBTITULO">Marca</p></td>
+            <td><p class="PARRAFO"><span>Campo
+                  de salida que ilustra la <a
+                    href="NUH_033B.html">franquicia</a>
+                  asociada al producto en la Definici&oacute;n del
+                  producto.</span></p></td>
+          </tr>
+          <tr>
+            <td class="titletable"><p class="SUBTITULO">Fecha
+                Vencimiento</p></td>
+            <td><p class="PARRAFO"><span>Campo
+                  de salida en formato YYYY-MM-DD, que indica la fecha en que
+                  expirar&aacute;
+                  el nuevo pl&aacute;stico de la tarjeta, cuando se ha
+                  parametrizado que
+                  el sistema deba calcular una nueva fecha de
+                  vencimiento.</span></p></td>
+          </tr>
+          <tr>
+            <td class="titletable"><p class="SUBTITULO">Motivo
+                cancelaci&oacute;n </p></td>
+            <td><p class="PARRAFO">Campo
+                que posee lista de valores poblada a trav&eacute;s de la
+                opci&oacute;n
+                <a href="NUH_009B.html">Motivos de devoluci&oacute;n
+                  voluntaria</a>
+                de la que debe seleccionarse la causa o raz&oacute;n por la que
+                el cliente
+                desea devolver su pl&aacute;stico.</p></td>
+          </tr>
+          <tr>
+            <td class="titletable"><p class="SUBTITULO">Estado
+                solicitd </p></td>
+            <td><p class="PARRAFO">Este
+                campo ilustra la condici&oacute;n en que se encuentra la
+                solicitud en
+                cada momento, y que puede ser <em class="PARRAFO">En zona gris,
+                  Negada
+                  totalmente, Negada parcialmente, Aprobada totalmente o
+                  Aprobada
+                  parcialmente.</p></td>
+            </tr>
+            <tr>
+              <td class="SUBTITULO">Anexos</td>
+              <td><p class="PARRAFO">Campo
+                  que permite ingresar informaci&oacute;n relacionada con la
+                  solicitud,
+                  referente a documentos suministrados por el cliente u otros
+                  datos.</p></td>
+            </tr>
+          </table>
+          <p><a name="Negacion"></a></p>
+          <p class="TITLE"><img src="../img/SOF_015B2.PNG"></p>
+
+          <table>
+            <tr>
+              <td class="titletable"><p class="SUBTITULO">Motivo negaci&oacute;n
+                </p></td>
+              <td><p class="PARRAFO">Si aplica, contiene el c&oacute;digo y la
+                  descripci&oacute;n de la causal de negaci&oacute;n de la
+                  solicitud.</p> </td>
+            </tr>
+            <tr>
+              <td class="SUBTITULO">Observaciones negaci&oacute;n </td>
+              <td><p class="PARRAFO">Campo que puede contener notas que ilustren
+                  las razones por las cuales fue denegada la solicitud.</p>
+              </td>
+            </tr>
+          </table>
+
+          <p class="PARRAFO"><span class="PARRAFO">A trav&eacute;s de los
+              botones de la parte inferior derecha, se podr&aacute; cancelar el
+              proceso
+              o ir al segundo paso del wizard: <a
+                href="SOH_016B1.html">Documentos</a></span> .</p>
+
+          <p class="PARRAFO"><span class="SUBTITULO">Actualizar:</span>
+            Si en formulario del ingreso de solicitudes el usuario invoca la
+            opci&oacute;n
+            Actualizar, se despliega el siguiente formulario.</p>
+          <p class="TITLE"><img src="../img/SOF_016B4.PNG"></p>
+
+          <p><span class="SUBTITULO">Detalle:</span><span class="PARRAFO"> De
+              igual forma, si </span> en formulario del ingreso de solicitudes
+            el usuario invoca la opci&oacute;n Detalle, se despliega el
+            siguiente formulario. <span>
+
             </span></p>
-            <p class="TITLE"><img src="../img/SOF_016B5.PNG"777" height="261"></p>
-            
-            </section>
-    <script src="../js/menu.js"></script>
+          <p class="TITLE"><img src="../img/SOF_016B5.PNG"></p>
 
-    <div id="footerContainer"></div>
-<script>
+        </section>
+        <script src="../js/menu.js"></script>
+
+        <div id="footerContainer"></div>
+        <script>
   fetch('footer.html')
     .then(response => response.text())
     .then(html => {
       document.getElementById('footerContainer').innerHTML = html;
     });
 </script>
-</body>
+      </body>
 
-</html>
+    </html>

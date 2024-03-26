@@ -19,24 +19,20 @@
             <img class="TITLE"  src= "../img/menu.PNG" alt="Botón de Menú ">
         </div>
     </header>
-   <div id="menuContainer"></div>
-    <script>
-      fetch('menu.html')
-        .then(response => response.text())
-        .then(html => {
-          document.getElementById('menuContainer').innerHTML = html;
-        });
-    </script>
+      <div id="menuContainer"></div>
+  <script>
+    fetch('menu.html')
+      .then(response => response.text())
+      .then(html => {
+        document.getElementById('menuContainer').innerHTML = html;
+      });
+  </script>
 
     <section>
         <div> 
-            <table>
-              <tr> 
-                <td><div> 
+            
                     <p  class="TITLE">Traductor de transacciones</p>
-                    </div></td>
-              </tr>
-            </table>
+                    
             <p>Mediante esta opci&oacute;n se permite la consulta y/o mantenimiento de la 
               tabla en la que se relacionan todas las posibles fuentes u <span >or&iacute;genes 
               de transacciones</span>  y las transacciones originales con las <span >transacciones 
@@ -80,9 +76,9 @@
                     y enlazar con una transacci&oacute;n interna.</p></td>
               </tr>
               <tr> 
-                <td class="titletable"><p class="SUBTITULO"><b>Transacci&oacute;n 
+                <td class="titletable"><p class="SUBTITULO">Transacci&oacute;n 
                     interna
-                    </b></p></td>
+                    </p></td>
                 <td><p class="PARRAFO">Campo 
                     que posee lista de valores poblada mediante la opci&oacute;n <span >Transacciones 
                     internas por empresa</span>  y cuya Naturaleza y Concepto coincidan con 
@@ -91,7 +87,7 @@
                     la transacci&oacute;n interna a enlazar con la transacci&oacute;n original.</p></td>
               </tr>
               <tr> 
-                <td class="titletable"><p class="SUBTITULO"><b>Moneda</b></p></td>
+                <td class="titletable"><p class="SUBTITULO">Moneda</p></td>
                 <td><p class="PARRAFO">Campo 
                     que posee lista de valores de la cual se puede seleccionar o no el c&oacute;digo 
                     de la <span >Moneda</span>  asociada a la transacci&oacute;n 
@@ -120,9 +116,9 @@
                     el c&oacute;digo como el nombre de la transacci&oacute;n original.</p></td>
               </tr>
               <tr> 
-                <td class="titletable"><p class="SUBTITULO"><b>Transacci&oacute;n 
+                <td class="titletable"><p class="SUBTITULO">Transacci&oacute;n 
                     interna
-                    </b></p></td>
+                    </p></td>
                 <td><p class="PARRAFO">Campo 
                     que posee lista de valores poblada mediante la opci&oacute;n <span >Transacciones 
                     internas por empresa</span>  y cuya Naturaleza y Concepto coincidan con 
@@ -133,8 +129,8 @@
                     interna.</p></td>
               </tr>
               <tr> 
-                <td class="titletable"><p class="SUBTITULO"><b>Valor 
-                    inicial</b></p></td>
+                <td class="titletable"><p class="SUBTITULO">Valor 
+                    inicial</p></td>
                 <td><p class="PARRAFO">Campo 
                     num&eacute;rico de 16 d&iacute;gitos incluidos 2 decimales, obligatorio, 
                     en el que la entidad determina el valor m&iacute;nimo de un rango, si 
@@ -142,8 +138,8 @@
                     su defecto asignar el valor m&iacute;nimo permitido de 1.</p></td>
               </tr>
               <tr> 
-                <td class="titletable"><p class="SUBTITULO"><b>Valor 
-                    final</b></p></td>
+                <td class="titletable"><p class="SUBTITULO">Valor 
+                    final</p></td>
                 <td><p class="PARRAFO">Campo 
                     num&eacute;rico de 16 d&iacute;gitos incluidos 2 decimales, obligatorio, 
                     en el que la entidad determina el valor m&aacute;ximo de un rango, si 
@@ -151,14 +147,14 @@
                     su defecto asignar el valor m&aacute;ximo permitido de 9.</p></td>
               </tr>
               <tr> 
-                <td class="titletable"><p class="SUBTITULO"><b>Moneda</b></p></td>
+                <td class="titletable"><p class="SUBTITULO">Moneda</p></td>
                 <td><p class="PARRAFO">Campo 
                     que posee lista de valores de la cual se puede seleccionar o no el c&oacute;digo 
                     de la <span >Moneda</span>  asociada a la transacci&oacute;n 
                     y efectuar un filtro por este concepto.</p></td>
               </tr>
               <tr> 
-                <td class="titletable"><p class="SUBTITULO"><b>Servicio</b></p></td>
+                <td class="titletable"><p class="SUBTITULO">Servicio</p></td>
                 <td><p class="PARRAFO">Campo 
                     que posee lista de valores poblada mediante la opci&oacute;n <span >Tipos 
                     de servicios</span>  del m&oacute;dulo de Establecimientos, de la cual 
@@ -177,7 +173,7 @@
                     o de comprobantes de buena fe y efectuar un filtro por este concepto.</p></td>
               </tr>
               <tr> 
-                <td class="titletable"><p class="SUBTITULO"><b>Sub-transacciones/Red</b></p></td>
+                <td class="titletable"><p class="SUBTITULO">Sub-transacciones/Red</p></td>
                 <td><p class="PARRAFO">Campo 
                     que posee lista de valores poblada mediante la opci&oacute;n Sub transacciones/identificador 
                     Red del grupo de Tablas reservadas del N&uacute;cleo, de la cual se 
@@ -186,15 +182,15 @@
                     un filtro por este concepto.</p></td>
               </tr>
               <tr> 
-                <td class="titletable"><p class="SUBTITULO"><b>Tipo 
-                    captura</b></p></td>
+                <td class="titletable"><p class="SUBTITULO">Tipo 
+                    captura</p></td>
                 <td><p class="PARRAFO">Campo 
                     que posee lista de valores adjunta de la cual se puede seleccionar o 
                     no el medio a trav&eacute;s del que ingresa la transacci&oacute;n al 
                     sistema y efectuar un filtro por este concepto.</p></td>
               </tr>
               <tr> 
-                <td class="titletable"><p class="SUBTITULO"><b>Establecimiento</b></p></td>
+                <td class="titletable"><p class="SUBTITULO">Establecimiento</p></td>
                 <td><p class="PARRAFO">Campo 
                     alfanum&eacute;rico de 11 posiciones, no obligatorio, permite registrar 
                     el c&oacute;digo &uacute;nico de un establecimiento en particular, en 

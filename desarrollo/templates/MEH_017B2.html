@@ -18,26 +18,20 @@
       <img class="TITLE" src="../img/menu.PNG" alt="Botón de Menú ">
     </div>
   </header>
-  <div id="menuContainer"></div>
-    <script>
-      fetch('menu.html')
-        .then(response => response.text())
-        .then(html => {
-          document.getElementById('menuContainer').innerHTML = html;
-        });
-    </script>
+    <div id="menuContainer"></div>
+  <script>
+    fetch('menu.html')
+      .then(response => response.text())
+      .then(html => {
+        document.getElementById('menuContainer').innerHTML = html;
+      });
+  </script>
 
   <section>
     <div>
-      <table>
-        <tr>
-          <td>
-            <div>
+      
               <p class="TITLE">Segmentaci&oacute;n de tarjetas</p>
-            </div>
-          </td>
-        </tr>
-      </table>
+
       <p class="PARRAFO"><span class="SUBTITULO">Extracupo: </span> Invoca una pantalla que posibilita incrementar un
         valor o un porcentaje al valor del extracupo de las tarjetas o cr&eacute;ditos que hagan parte de la lista,
         definiendo adem&aacute;s, la fecha de autorizaci&oacute;n y grado de aproximaci&oacute;n al valor de la
@@ -96,7 +90,7 @@
         que hayan presentado alg&uacute;n error en el momento de aumentar el extracupo.</p>
       <p class="TITLE"><img src="../img/MEF_017B7f.PNG"></p>
 
-      <p><a href="MEH_017B.html">Segmentaci&oacute;n de tarjetas</a><span><b> | </b></span><a href="MEH_017B3.html">
+      <p><a href="MEH_017B.html">Segmentaci&oacute;n de tarjetas</a> | </span><a href="MEH_017B3.html">
           Adicionar</a></p>
 
   </section>

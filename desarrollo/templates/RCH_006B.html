@@ -17,42 +17,35 @@
       <img class="TITLE" src="../img/menu.PNG" alt="Botón de Menú ">
     </div>
   </header>
- <div id="menuContainer"></div>
-    <script>
-      fetch('menu.html')
-        .then(response => response.text())
-        .then(html => {
-          document.getElementById('menuContainer').innerHTML = html;
-        });
-    </script>
+    <div id="menuContainer"></div>
+  <script>
+    fetch('menu.html')
+      .then(response => response.text())
+      .then(html => {
+        document.getElementById('menuContainer').innerHTML = html;
+      });
+  </script>
 
   <section>
     <div>
-      <table>
-        <tr>
-          <td>
-            <div>
-              <p class="TITLE">Reclamos</p>
-            </div>
-          </td>
-        </tr>
-      </table>
+       <p class="TITLE">Reclamos</p>
+
       <p class="PARRAFO">Mediante esta funci&oacute;n se habilita el mantenimiento
         de la tabla en la cual se crean, actualizan y consultan los reclamos generados para los clientes, as&iacute;
         como la asignaci&oacute;n manual o autom&aacute;tica de &eacute;stos al gestor correspondiente.</p>
       <p class="PARRAFO">El formulario contiene las opciones Actualizar, Eliminar,
         Adicionar y Detalle. Adicionalmente, cuenta con un filtro de b&uacute;squeda
         y la opci&oacute;n <a href="RCH_006B1.html">Asignar reclamos</a>.</p>
-      <p class="TITLE"><img src="../img/RCF_006B1.PNG" 751"></p>
+      <p class="TITLE"><img src="../img/RCF_006B1.PNG"></p>
 
       <p><span class="SUBTITULO">Filtro:</span> Se pueden realizar consultas a trav&eacute;s
         de las siguientes opciones:</p>
-      <p class="TITLE"><img src="../img/RCF_006B.PNG" 356"></p>
+      <p class="TITLE"><img src="../img/RCF_006B.PNG"></p>
 
       <table>
         <tr>
           <td class="titletable">
-            <p class="SUBTITULO"><b><span>C&oacute;digo</span></b> reclamo</p>
+            <p class="SUBTITULO">C&oacute;digo</span> reclamo</p>
           </td>
           <td>
             <p class="PARRAFO">Campo
@@ -62,7 +55,7 @@
         </tr>
         <tr>
           <td>
-            <p class="SUBTITULO "><b>Tipo de identificaci&oacute;n</p></b>
+            <p class="SUBTITULO ">Tipo de identificaci&oacute;n</p>
           </td>
           <td>
             <p>En este campo tipo combo, el usuario puede seleccionar el <A href="NUH_008B.html">tipo de documento</A>
@@ -70,7 +63,7 @@
           </td>
         </tr>
         <tr>
-          <td><span class="SUBTITULO #1"><b>N&uacute;mero de identificaci&oacute;n </b></span></td>
+          <td><span class="SUBTITULO #1">N&uacute;mero de identificaci&oacute;n </span></td>
           <td>
             <p class="PARRAFO">Campo num&eacute;rico de 16 posiciones, en el que se ingresa el n&uacute;mero de identificaci&oacute;n
               del cliente asociado con el reclamo que se quiere consultar
@@ -80,8 +73,8 @@
       </table>
 
       <p class="PARRAFO"><span class="SUBTITULO">Adicionar:</span> Si el usuario invoca la opci&oacute;n Adicionar se
-        despliega un wizard de dos pasos<span>.</span></p>
-      <p class="PARRAFO"><span>El primer paso del wizard se llama Reclamos y despliega el siguiente formulario:</span>
+        despliega un wizard de dos pasos.</span></p>
+      <p class="PARRAFO">El primer paso del wizard se llama Reclamos y despliega el siguiente formulario:</span>
       </p>
 
       <p class="TITLE "><img src="../img/RCF_006B2.PNG"></p>
@@ -90,7 +83,7 @@
       <table>
         <tr>
           <td class="titletable">
-            <p class="SUBTITULO"><b><span>Tipo reclamo </span></span></b></p>
+            <p class="SUBTITULO">Tipo reclamo </span></span></p>
           </td>
           <td>
             <p class="PARRAFO">En este campo obligatorio, se selecciona de la lista de valores adjunta, el tipo de
@@ -99,7 +92,7 @@
         </tr>
         <tr>
           <td class="titletable">
-            <p class="SUBTITULO"><b><span>Tipo de identificaci&oacute;n</span></b></p>
+            <p class="SUBTITULO">Tipo de identificaci&oacute;n</span></p>
           </td>
           <td>
             <p class="PARRAFO">En este campo campo tipo combo obligatorio, el usuario puede seleccionar el <A
@@ -108,15 +101,15 @@
           </p>
         </tr>
         <tr>
-          <td class="titletable"><span class="SUBTITULO"><b><span>N&uacute;mero de
-                  identificaci&oacute;n</span></b></span></td>
+          <td class="titletable"><span class="SUBTITULO">N&uacute;mero de
+                  identificaci&oacute;n</span></span></td>
           <td>
             <p class="PARRAFO">Campo num&eacute;rico de 16 d&iacute;gitos obligatorio, en el que se ingresa el n&uacute;mero de
               identificaci&oacute;n del cliente al cual se le radicar&aacute; el reclamo.</span></p>
           </td>
         </tr>
         <tr>
-          <td class="titletable"><span class="SUBTITULO"><b><span>N&uacute;mero tarjeta</span></b></span></td>
+          <td class="titletable"><span class="SUBTITULO">N&uacute;mero tarjeta</span></span></td>
           <td>
             <p class="PARRAFO">Campo que contiene lista de valores con las tarjetas o cr&eacute;ditos que posea el cliente seleccionado
               por el usuario y en el cual se registra el n&uacute;mero de tarjeta sobre la cual se est&aacute;
@@ -126,7 +119,7 @@
           </p>
         </tr>
         <tr>
-          <td><span class="SUBTITULO #1"><b>Fecha registro </b></span></td>
+          <td><span class="SUBTITULO #1">Fecha registro </span></td>
           <td>
             <p class="PARRAFO">Campo que se diligencia autom&aacute;ticamente por el sistema con la fecha sysdate y no permite ser
               actualizado por el usuario.
@@ -143,7 +136,7 @@
         </tr>
         </p>
         <tr>
-          <td><span class="SUBTITULO #1"><b>Informaci&oacute;n de contacto</b></span></td>
+          <td><span class="SUBTITULO #1">Informaci&oacute;n de contacto</span></td>
           <td>
             <p class="PARRAFO">Campo alfanum&eacute;rico de 60 posiciones, obligatorio, en el cual se registra la informaci&oacute;n del
               cliente o de la persona a trav&eacute;s de la cual se dar&aacute; soluci&oacute;n al reclamo radicado.
@@ -167,13 +160,13 @@
         </tr>
         </p>
       </table>
-      <p><span>El segundo paso del wizard se llama Requisitos y contiene informaci&oacute;n cuando se han parametrizado
+      <p>El segundo paso del wizard se llama Requisitos y contiene informaci&oacute;n cuando se han parametrizado
           requisitos para el reclamo seleccionado, de lo contrario, despliega el formulario en blanco:</span></p>
-      <p class="TITLE"><img src="../img/RCF_006B3.PNG" 815"></p>
+      <p class="TITLE"><img src="../img/RCF_006B3.PNG"></p>
       <table>
         <tr>
           <td class="titletable">
-            <p class="SUBTITULO"><b><span>Entregado</span></span></b></p>
+            <p class="SUBTITULO">Entregado</span></span></p>
           </td>
           <td>
             <p class="PARRAFO">En este campo, el usuario puede seleccionar si el requisito fue entregado o no, en el
@@ -212,16 +205,16 @@
       <p class="PARRAFO">El primer paso del wizard se llama Reclamos, en el cual los &uacute;nicos campos modificables
         son: N&uacute;mero de tarjeta, Medio de recepci&oacute;n, Informaci&oacute;n de contacto, Descripci&oacute;n
         reclamo y Texto reclamo.</span></p>
-      <p class="TITLE"><img src="../img/RCF_006B4.PNG" 787" height="290"></p>
+      <p class="TITLE"><img src="../img/RCF_006B4.PNG"></p>
 
       <p class="PARRAFO">El segundo paso del wizard se llama Requisitos y el &uacute;nico campo modificable es el que
         permite seleccionar si el requisito fue entregado o no.</p>
-      <p class="TITLE"><img src="../img/RCF_006B5.PNG" 818"></p>
+      <p class="TITLE"><img src="../img/RCF_006B5.PNG"></p>
 
       <p class="PARRAFO"><span class="SUBTITULO">Detalle:</span> Si el usuario invoca la opci&oacute;n Detalle se
         despliega el siguiente formulario:</p>
 
-      <p class="TITLE"><img src="../img/RCF_006B6.PNG" 800" height="287"></p>
+      <p class="TITLE"><img src="../img/RCF_006B6.PNG"></p>
 
       <p><span class="SUBTITULO">Asignaci&oacute;n autom&aacute;tica de reclamos</span></p>
       <table>

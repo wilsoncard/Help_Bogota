@@ -1,86 +1,90 @@
 <!DOCTYPE html>
 <html lang="es">
 
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>BANKBU®</title>
-  <link rel="stylesheet" href="../css/pages.css">
-  <link rel="stylesheet" href="../css/style.css">
-  <link rel="icon" href="../img/ACQUIRER-logo.JPG" type="image/x-icon">
-</head>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BANKBU®</title>
+    <link rel="stylesheet" href="../css/pages.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="icon" href="../img/ACQUIRER-logo.JPG" type="image/x-icon">
+  </head>
 
-<body>
+  <body>
 
-  <header>
-    <img class="logo" src="../img/logoBankbu_.PNG" alt="Logo de Mi Empresa">
-    <div id="menuBtn">
-      <img class="TITLE" src="../img/menu.PNG" alt="Botón de Menú ">
-    </div>
-  </header>
-  <div id="menuContainer"></div>
+    <header>
+      <img class="logo" src="../img/logoBankbu_.PNG" alt="Logo de Mi Empresa">
+      <div id="menuBtn">
+        <img class="TITLE" src="../img/menu.PNG" alt="Botón de Menú ">
+      </div>
+    </header>
+    <div id="menuContainer"></div>
     <script>
-      fetch('menu.html')
-        .then(response => response.text())
-        .then(html => {
-          document.getElementById('menuContainer').innerHTML = html;
-        });
-    </script>
+    fetch('menu.html')
+      .then(response => response.text())
+      .then(html => {
+        document.getElementById('menuContainer').innerHTML = html;
+      });
+  </script>
 
-  <section>
-    <div>
-      <table>
-        <tr>
-          <td>
-            <div>
-              <p class="TITLE">Configuraciones</p>
-            </div>
-          </td>
-        </tr>
-      </table>
-      <p class="PARRAFO">Mediante esta funci&oacute;n se definen los par&aacute;metros
-        que configurar&aacute;n la comunicaci&oacute;n, utilizando como protocolo
-        BASE24.</p>
-      <p class="PARRAFO">El formulario contiene las opciones Actualizar y Eliminar;
-        y la opci&oacute;n Adicionar se muestra cuando se elimina la configuraci&oacute;n
-        actual. </p>
-      <p class="TITLE"><img src="../img/COF_015B.PNG"></p>
+    <section>
+      <div>
+        <p class="TITLE">Configuraciones</p>
+              
+        <p class="PARRAFO">Mediante esta funci&oacute;n se definen los
+          par&aacute;metros
+          que configurar&aacute;n la comunicaci&oacute;n, utilizando como
+          protocolo
+          BASE24.</p>
+        <p class="PARRAFO">El formulario contiene las opciones Actualizar y
+          Eliminar;
+          y la opci&oacute;n Adicionar se muestra cuando se elimina la
+          configuraci&oacute;n
+          actual. </p>
+        <p class="TITLE"><img src="../img/COF_015B.PNG"></p>
 
-      <p class="PARRAFO"><span class="SUBTITULO">Adicionar:</span>  Si el usuario invoca la opci&oacute;n Adicionar se
-        despliega un formulario con los siguientes campos<span>:</span></p>
-      <p class="TITLE"><img src="../img/COF_015B1.PNG"></p>
+        <p class="PARRAFO"><span class="SUBTITULO">Adicionar:</span> Si el
+          usuario invoca la opci&oacute;n Adicionar se
+          despliega un formulario con los siguientes campos:</span></p>
+        <p class="TITLE"><img src="../img/COF_015B1.PNG"></p>
 
-      <table>
-        <tr>
-          <td class="titletable">
-            <p class="SUBTITULO">Segundos para duplicados</p>
-          </td>
-          <td>
-            <p class="PARRAFO">Campo que indica la cantidad máxima de segundos que deben transcurrir entre dos
-              solicitudes de autorización con idénticos datos y valores para considerar transacciones como duplicadas.
-            </p>
-          </td>
-        </tr>
-        <tr>
-          <td class="titletable">
-            <p class="SUBTITULO">Intentos por d&iacute;a</p>
-          </td>
-          <td>
-            <p class="PARRAFO">Este campo contiene el número máximo de intentos de PIN o clave errados por día.</p>
-          </td>
-        </tr>
-      </table>
-      <p class="PARRAFO"><span class="PARRAFO"><span class="SUBTITULO">Actualizar:</span> 
-          Si el usuario invoca la opci&oacute;n Actualizar se despliega un nuevo formulario
-          en el cual los &uacute;nicos campos modificables son: Segundos para duplicados
-          e Intentos por d&iacute;a.</span></p>
-      <p class="TITLE"><img src="../img/COF_015B2.PNG"></p>
+        <table>
+          <tr>
+            <td class="titletable">
+              <p class="SUBTITULO">Segundos para duplicados</p>
+            </td>
+            <td>
+              <p class="PARRAFO">Campo que indica la cantidad máxima de segundos
+                que deben transcurrir entre dos
+                solicitudes de autorización con idénticos datos y valores para
+                considerar transacciones como duplicadas.
+              </p>
+            </td>
+          </tr>
+          <tr>
+            <td class="titletable">
+              <p class="SUBTITULO">Intentos por d&iacute;a</p>
+            </td>
+            <td>
+              <p class="PARRAFO">Este campo contiene el número máximo de
+                intentos de PIN o clave errados por día.</p>
+            </td>
+          </tr>
+        </table>
+        <p class="PARRAFO"><span class="PARRAFO"><span
+              class="SUBTITULO">Actualizar:</span>
+            Si el usuario invoca la opci&oacute;n Actualizar se despliega un
+            nuevo formulario
+            en el cual los &uacute;nicos campos modificables son: Segundos para
+            duplicados
+            e Intentos por d&iacute;a.</span></p>
+        <p class="TITLE"><img src="../img/COF_015B2.PNG"></p>
 
-  </section>
-  <script src="../js/menu.js"></script>
-</body>
-<div id="footerContainer"></div>
-<script>
+      </section>
+      <script src="../js/menu.js"></script>
+    </body>
+    <div id="footerContainer"></div>
+    <script>
   fetch('footer.html')
     .then(response => response.text())
     .then(html => {
@@ -88,4 +92,4 @@
     });
 </script>
 
-</html>
+  </html>

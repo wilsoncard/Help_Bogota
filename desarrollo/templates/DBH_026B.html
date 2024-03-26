@@ -18,14 +18,14 @@
             <img class="TITLE"  src= "../img/menu.PNG" alt="Botón de Menú ">
         </div>
     </header>
-   <div id="menuContainer"></div>
-    <script>
-      fetch('menu.html')
-        .then(response => response.text())
-        .then(html => {
-          document.getElementById('menuContainer').innerHTML = html;
-        });
-    </script>
+      <div id="menuContainer"></div>
+  <script>
+    fetch('menu.html')
+      .then(response => response.text())
+      .then(html => {
+        document.getElementById('menuContainer').innerHTML = html;
+      });
+  </script>
 
     <section>
         <div> 
@@ -34,9 +34,7 @@
                 <td  >
           <div> 
                     <p  class="TITLE">Par&aacute;metros de conciliaci&oacute;n</p>
-                  </div></td>
-              </tr>
-            </table>
+                  
             <p class="PARRAFO" >Mediante esta opci&oacute;n se efect&uacute;a 
               la parametrizaci&oacute;n por <a href="DBH_018B.html" >producto</a> 
               y <a href="NUH_027B.html" >origen</a>, del plazo y margen de 
@@ -49,7 +47,7 @@
 
             <p  class="PARRAFO">El formulario contiene las opciones Actualizar, 
               Eliminar y Adicionar.</p>
-            <p  class="PARRAFO"><b ><span class="SUBTITULO">Adicionar:</span></b> 
+            <p  class="PARRAFO"><span class="SUBTITULO">Adicionar:</span> 
               si el usuario invoca la opci&oacute;n Adicionar, se despliega un 
               nuevo formulario con los siguientes campos.</p>
             <p class="TITLE"><img src="../img/DBF_026E1.PNG"></p>
@@ -57,7 +55,7 @@
             <p  class="TITLE">Descripci&oacute;n de campos</p>
               <table>
                 <tr> 
-                  <td class="titletable"  ><p class="SUBTITULO"><b><span >Producto</span></b></p></td>
+                  <td class="titletable"  ><p class="SUBTITULO"><span >Producto</span></p></td>
                   <td><p  class="PARRAFO">Campo 
                       obligatorio con lista de valores de la que se selecciona el <a href="DBH_018B.html" >producto 
                       d&eacute;bito</a> para el que se van a definir los par&aacute;metros 
@@ -65,7 +63,7 @@
                 </tr>
                 <tr> 
                   <td class="titletable"> 
-                    <p class="SUBTITULO"><b><span >Origen</span></b></p></td>
+                    <p class="SUBTITULO"><span >Origen</span></p></td>
                   <td><p  class="PARRAFO">Este 
                       campo obligatorio con lista de valores, permite seleccionar el <span class="PARRAFO"><a href="NUH_027B.html" >origen</a></span>  
                       a trav&eacute;s del cual debe ingresar la transacci&oacute;n efectuada 
@@ -74,7 +72,7 @@
                 </tr>
                 <tr> 
                   <td class="titletable" > 
-                    <p class="SUBTITULO"><b><span >Porcentaje</span></b></p></td>
+                    <p class="SUBTITULO"><span >Porcentaje</span></p></td>
                   <td><p class="PARRAFO" >Campo 
                       num&eacute;rico de 3 enteros y 2 decimales, obligatorio, en el cual 
                       se define el porcentaje m&aacute;ximo de diferencia que puede existir 
@@ -84,7 +82,7 @@
                 </tr>
                 <tr> 
                   <td class="titletable" > 
-                    <p class="SUBTITULO"><b><span >Plazo cruce</span></b></p></td>
+                    <p class="SUBTITULO"><span >Plazo cruce</span></p></td>
                   <td><p  class="PARRAFO">En 
                       este campo indica el n&uacute;mero m&aacute;ximo de d&iacute;as que 
                       el sistema debe esperar desde el momento del ingreso de la transacci&oacute;n 
@@ -92,7 +90,7 @@
                 </tr>
                 <tr> 
                   <td class="titletable" > 
-                    <p class="SUBTITULO"><b><span >Cr. acreedor</span></b></p></td>
+                    <p class="SUBTITULO"><span >Cr. acreedor</span></p></td>
                   <td><p  class="PARRAFO">Campo 
                       num&eacute;rico de 4 d&iacute;gitos obligatorio que permite registrar 
                       el n&uacute;mero de d&iacute;as que las transacciones cr&eacute;dito 
@@ -103,7 +101,7 @@
                 </tr>
                 <tr> 
                   <td class="titletable" > 
-                    <p class="SUBTITULO"><b><span >Cr. deudor</span></b></p></td>
+                    <p class="SUBTITULO"><span >Cr. deudor</span></p></td>
                   <td><p  class="PARRAFO">En 
                       este campo num&eacute;rico de 4 d&iacute;gitos se indica el n&uacute;mero 
                       de d&iacute;as que las transacciones d&eacute;bito tienen de plazo 
@@ -115,7 +113,7 @@
                 </tr>
               <tr> 
                 <td  > 
-                  <p class="SUBTITULO"><b><span >Autorizaci&oacute;n</span></b></p></td>
+                  <p class="SUBTITULO"><span >Autorizaci&oacute;n</span></p></td>
                 <td><p  class="PARRAFO">Campo 
                     tipo combo en el que se indica Si o No el n&uacute;mero 
                     de autorizaci&oacute;n debe ser tenido en cuenta por el sistema al momento 
@@ -124,7 +122,7 @@
 
               <tr> 
                 <td  > 
-                  <p class="SUBTITULO"><b><span >Fecha comprobante</span></b></p></td>
+                  <p class="SUBTITULO"><span >Fecha comprobante</span></p></td>
                 <td><p  class="PARRAFO">En 
                     este campo tipo combo se indica Si o No la fecha del 
                     comprobante debe ser tenida en cuenta por el sistema al momento de hacer 
@@ -132,7 +130,7 @@
               </tr>
             </table>
 
-            <p  class="PARRAFO"><b ><span class="SUBTITULO">Actualizar:</span></b> 
+            <p  class="PARRAFO"><span class="SUBTITULO">Actualizar:</span> 
               si el usuario selecciona un registro e invoca la opci&oacute;n Actualizar, 
               se despliega un formulario en el cual los &uacute;nicos campos NO modificable 
               son Producto y Origen.</p>

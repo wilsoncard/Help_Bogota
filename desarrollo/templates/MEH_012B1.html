@@ -18,26 +18,20 @@
       <img class="TITLE" src="../img/menu.PNG" alt="Botón de Menú ">
     </div>
   </header>
-  <div id="menuContainer"></div>
-    <script>
-      fetch('menu.html')
-        .then(response => response.text())
-        .then(html => {
-          document.getElementById('menuContainer').innerHTML = html;
-        });
-    </script>
+    <div id="menuContainer"></div>
+  <script>
+    fetch('menu.html')
+      .then(response => response.text())
+      .then(html => {
+        document.getElementById('menuContainer').innerHTML = html;
+      });
+  </script>
 
   <section>
     <div>
-      <table>
-        <tr>
-          <td>
-            <div>
+      
               <p class="TITLE">Segmentaci&oacute;n de clientes</p>
-            </div>
-          </td>
-        </tr>
-      </table>
+
       <p class="PARRAFO"><span class="SUBTITULO">Lista de resultados: </span> Esta opci&oacute;n, adem&aacute;s de
         mostrar el resultado de la segmentaci&oacute;n obtenido con base en los criterios de evaluaci&oacute;n
         seleccionados, ofrece funcionalidades adicionales que pertmiten Cambiar de categor&iacute;a (o mejor,
@@ -105,7 +99,7 @@
         </tr>
       </table>
 
-      <p><a href="MEH_012B.html">Segmentaci&oacute;n de clientes</a><span><b> | </b></span><a href="MEH_012B2.html">
+      <p><a href="MEH_012B.html">Segmentaci&oacute;n de clientes</a> | </span><a href="MEH_012B2.html">
           Adicionar</a></p>
 
   </section>

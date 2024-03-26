@@ -1,96 +1,100 @@
 <!DOCTYPE html>
 <html lang="es">
 
-<head>
+  <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>BANKBU®</title>
     <link rel="stylesheet" href="../css/pages.css">
     <link rel="stylesheet" href="../css/style.css">
- <link rel="icon" href="../img/ACQUIRER-logo.JPG" type="image/x-icon">
-</head>
+    <link rel="icon" href="../img/ACQUIRER-logo.JPG" type="image/x-icon">
+  </head>
 
-<body>
+  <body>
     <header>
-        <img class="logo" src="../img/logoBankbu_.PNG" alt="Logo de Mi Empresa">
-        <div id="menuBtn">
-            <img class="TITLE"  src= "../img/menu.PNG" alt="Botón de Menú ">
-        </div>
+      <img class="logo" src="../img/logoBankbu_.PNG" alt="Logo de Mi Empresa">
+      <div id="menuBtn">
+        <img class="TITLE" src="../img/menu.PNG" alt="Botón de Menú ">
+      </div>
     </header>
-   <div id="menuContainer"></div>
+    <div id="menuContainer"></div>
     <script>
-      fetch('menu.html')
-        .then(response => response.text())
-        .then(html => {
-          document.getElementById('menuContainer').innerHTML = html;
-        });
-    </script>
+    fetch('menu.html')
+      .then(response => response.text())
+      .then(html => {
+        document.getElementById('menuContainer').innerHTML = html;
+      });
+  </script>
 
     <section>
-        <div> 
-            <table>
-              <tr> 
-                <td><div> 
-                    <p  class="TITLE">Sub transacciones/Identificador Red 
-                    </p>
-                  </div></td>
-              </tr>
-            </table>
-            <p class="PARRAFO" >Mediante esta opci&oacute;n se facilita 
-              la consulta y/o mantenimiento, reservado a funcionarios de OpenCard SAS, 
-              de la tabla en la que se parametriza un atributo m&aacute;s de las transacciones, 
-              que permite diferenciarlas o puede ser utilizado para identificar la red a 
-              trav&eacute;s de la cual se realiz&oacute; la transacci&oacute;n o el medio 
-              por el cual se efectu&oacute;, tal como audio, etc. Esta informaci&oacute;n 
-              puede ser utilizada entre otras opciones para dirigir el movimiento a una 
-              transacci&oacute;n determinada en el <a href="INH_031B.html" >traductor 
-              de transacciones</a>.
-              </span></p>
-            <p class="TITLE"><img src="../img/NUF_061E.PNG"536" height="389"></p>
-            <p  class="PARRAFO">El formulario contiene las opciones Actualizar, 
-              Eliminar y Adicionar. </p>
-            <p  class="PARRAFO"><span class="SUBTITULO"><b ><span            '>Adicionar</span></b><span 
-        >:</span><span 
-        ></span></span><span 
-        > 
-              Si el usuario invoca la opci&oacute;n Adicionar se despliega un nuevo formulario</span></p>
-            <p class="TITLE"><img src="../img/NUF_061E1.PNG"260" ></p>
-            <p  class="TITLE">Descripci&oacute;n de campos</p>
-            <table>
-              <tr> 
-                <td class="titletable"><p class="SUBTITULO"><b><span 
-        >C&oacute;digo</span></b></p></td>
-                <td><p  class="PARRAFO">Campo 
-                    num&eacute;rico de 5 d&iacute;gitos, obligatorio, asociado a cada uno 
-                    de los diversos identificadores de red.</p></td>
-              </tr>
-              <tr> 
-                <td  class="titletable" ><p class="SUBTITULO"><b><span 
-        >Descripci&oacute;n</span></b></p></td>
-                <td><p  class="PARRAFO">En 
-                    este campo alfanum&eacute;rico, obligatorio, se registra el nombre asociado 
-                    a cada c&oacute;digo. </p></td>
-              </tr>
-            </table>
-            <div>
-          <p class="PARRAFO"><b ><span class="SUBTITULO"> 
-                Actualizar</span></b>: Si el usuario invoca la opci&oacute;n Actualizar 
-                se despliega un nuevo formulario en el cual el &uacute;nico campo modificable 
-                es Descripci&oacute;n.
-              </p>
-             <p class="TITLE"><img src="../img/NUF_061E2.PNG"260" ></p>
-             
-            </section>
-    <script src="../js/menu.js"></script>
+      <div>
 
-    <div id="footerContainer"></div>
-<script>
+        <p class="TITLE">Sub transacciones/Identificador Red
+        </p>
+
+        <p class="PARRAFO">Mediante esta opci&oacute;n se facilita
+          la consulta y/o mantenimiento, reservado a funcionarios de OpenCard
+          SAS,
+          de la tabla en la que se parametriza un atributo m&aacute;s de las
+          transacciones,
+          que permite diferenciarlas o puede ser utilizado para identificar la
+          red a
+          trav&eacute;s de la cual se realiz&oacute; la transacci&oacute;n o el
+          medio
+          por el cual se efectu&oacute;, tal como audio, etc. Esta
+          informaci&oacute;n
+          puede ser utilizada entre otras opciones para dirigir el movimiento a
+          una
+          transacci&oacute;n determinada en el <a href="INH_031B.html">traductor
+            de transacciones</a>.
+        </span></p>
+      <p class="TITLE"><img src="../img/NUF_061E.PNG"></p>
+      <p class="PARRAFO">El formulario contiene las opciones Actualizar,
+        Eliminar y Adicionar. </p>
+      <p class="PARRAFO"><span class="SUBTITULO"><span
+            '>Adicionar</span><span>:</span><span></span></span><span>
+          Si el usuario invoca la opci&oacute;n Adicionar se despliega un nuevo
+          formulario</span></p>
+      <p class="TITLE"><img src="../img/NUF_061E1.PNG"></p>
+      <p class="TITLE">Descripci&oacute;n de campos</p>
+      <table>
+        <tr>
+          <td class="titletable"><p
+              class="SUBTITULO"><span>C&oacute;digo</span></p></td>
+          <td><p class="PARRAFO">Campo
+              num&eacute;rico de 5 d&iacute;gitos, obligatorio, asociado a cada
+              uno
+              de los diversos identificadores de red.</p></td>
+        </tr>
+        <tr>
+          <td class="titletable"><p
+              class="SUBTITULO"><span>Descripci&oacute;n</span></p></td>
+          <td><p class="PARRAFO">En
+              este campo alfanum&eacute;rico, obligatorio, se registra el nombre
+              asociado
+              a cada c&oacute;digo. </p></td>
+        </tr>
+      </table>
+      <div>
+        <p class="PARRAFO"><span class="SUBTITULO">
+            Actualizar</span>: Si el usuario invoca la opci&oacute;n Actualizar
+          se despliega un nuevo formulario en el cual el &uacute;nico campo
+          modificable
+          es Descripci&oacute;n.
+        </p>
+        <p class="TITLE"><img src="../img/NUF_061E2.PNG"></p>
+
+      </section>
+      <script src="../js/menu.js"></script>
+
+      <div id="footerContainer"></div>
+      <script>
   fetch('footer.html')
     .then(response => response.text())
     .then(html => {
       document.getElementById('footerContainer').innerHTML = html;
     });
 </script>
-</body>
+    </body>
 
-</html>
+  </html>

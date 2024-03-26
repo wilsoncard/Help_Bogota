@@ -1,134 +1,144 @@
 <!DOCTYPE html>
 <html lang="es">
 
-<head>
+  <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>BANKBU®</title>
     <link rel="stylesheet" href="../css/pages.css">
     <link rel="stylesheet" href="../css/style.css">
- <link rel="icon" href="../img/ACQUIRER-logo.JPG" type="image/x-icon">
-</head>
+    <link rel="icon" href="../img/ACQUIRER-logo.JPG" type="image/x-icon">
+  </head>
 
-<body>
+  <body>
     <header>
-        <img class="logo" src="../img/logoBankbu_.PNG" alt="Logo de Mi Empresa">
-        <div id="menuBtn">
-            <img class="TITLE"  src= "../img/menu.PNG" alt="Botón de Menú ">
-        </div>
+      <img class="logo" src="../img/logoBankbu_.PNG" alt="Logo de Mi Empresa">
+      <div id="menuBtn">
+        <img class="TITLE" src="../img/menu.PNG" alt="Botón de Menú ">
+      </div>
     </header>
-   <div id="menuContainer"></div>
+    <div id="menuContainer"></div>
     <script>
-      fetch('menu.html')
-        .then(response => response.text())
-        .then(html => {
-          document.getElementById('menuContainer').innerHTML = html;
-        });
-    </script>
+    fetch('menu.html')
+      .then(response => response.text())
+      .then(html => {
+        document.getElementById('menuContainer').innerHTML = html;
+      });
+  </script>
 
     <section>
-        <div> 
-            <table>
-              <tr> 
-                <td><div> 
-                    <p  class="TITLE">Novedad cambio informaci&oacute;n CDT</p>
-                  </div></td>
-              </tr>
-            </table>
-            <p  class="PARRAFO">Este formulario invocado desde la opci&oacute;n 
-              <a href="SCH_075B1.html" >ingreso de novedades</a>, 
-              (issuer) y que aplica solo para aquellas tarjetas que en definici&oacute;n 
-              de productos se les haya parametrizado la condici&oacute;n de ser garantizadas 
-              con CDT, le permit a la entidad modificar o actualizaar la informaci&oacute;n 
-              correspondiente al CDT con el cual se est&aacute; garantizando la obligaci&oacute;n 
-              adquirida por el cliente.</p>
-            <p class="TITLE"><img src="../img/SCF_046E.PNG"361" height="250"></p>
-            <p  class="TITLE">Descripci&oacute;n de campos</p>
-            <table>
-              <tr> 
-                <td class="titletable"><p class="SUBTITULO"><b><span 
-        > 
-                    N&uacute;mero CDT</span></b></p></td>
-                <td><p  class="PARRAFO">Campo 
-                    alfanum&eacute;rico de 15 posiciones, obligatorio, en el que se registra 
-                    la combinatoria de letras y/o n&uacute;meros que identifica cada C.D.T 
-                    que garantiza la obligaci&oacute;n del cliente.
-                  </p>
-                  </td>
-              </tr>
-           
-              <tr> 
-                <td class="titletable"><p class="SUBTITULO"><b><span 
-        > 
-                    Sucursal</span></b></p></td>
-                <td><p  class="PARRAFO">En 
-                    este campo obligatorio con lista de valores se selecciona la <a href="NUH_020B.html" >sucursal</a> 
-                    u oficina de la entidad en la que se dio apertura o se renueva el C.D.T 
-                    que garantiza la obligaci&oacute;n.</p></td>
-              </tr>
-           
-              <tr> 
-                <td class="titletable"><p class="SUBTITULO"><b><span 
-        > 
-                    Monto</span></b></p></td>
-                <td><p  class="PARRAFO">Campo 
-                    num&eacute;rico de hasta 14 enteros y 2 decimales, obligatorio, en el 
-                    que se registra el monto del CDT que garantiza la obligaci&oacute;n.</p></td>
-              </tr>
-           
-              <tr> 
-                <td class="titletable"><p class="SUBTITULO"><b><span 
-        > 
-                    Plazo</span></b></p></td>
-                <td><p  class="PARRAFO">En 
-                    este campo num&eacute;rico de hasta 4 d&iacute;gitos, obligatorio, se 
-                    registra el n&uacute;mero de meses a los cuales se pacta el vencimiento 
-                    o renovaci&oacute;n del C.D.T que garantiza la obligaci&oacute;n del 
-                    cliente. </p></td>
-              </tr>
-           
-              <tr> 
-                <td class="titletable"><p class="SUBTITULO"><b><span 
-        > 
-                    Fecha de apertura</span></b></p></td>
-                <td><p  class="PARRAFO">Campo 
-                    obligatorio en el que se registra en formato YYYY-MM-DD la fecha en 
-                    la cual se abri&oacute; o renov&oacute; el CDT con el cual se est&aacute; 
-                    garantizando la obligaci&oacute;n.</p></td>
-              </tr>
-           
-              <tr> 
-                <td class="titletable"><p class="SUBTITULO"><b><span 
-        > 
-                    Fecha de vencimiento</span></b></p></td>
-                <td><p  class="PARRAFO">En 
-                    este campo obligatorio se registra en formato YYYY-MM-DD la fecha en 
-                    la cual vence el CDT con el cual se est&aacute; garantizando la obligaci&oacute;n.</p></td>
-              </tr>
-           
-              <tr> 
-                <td class="titletable"><p class="SUBTITULO"><b><span 
-        > 
-                    Fecha de radicaci&oacute;n</span></b></p></td>
-                <td><p  class="PARRAFO">Campo 
-                    obligatorio en el que se registra en formato YYYY-MM-DD la fecha en 
-                    la cual se solicit&oacute; la actualizaci&oacute;n de informaci&oacute;n 
-                    del CDT para la tarjeta y que puede ser una fecha anterior a la actual 
-                    del sistema, facilitando el ingreso de novedades de fechas anteriores. 
-                  </p></td>
-              </tr>
-            </table>
-        </section>
-    <script src="../js/menu.js"></script>
+      <div>
 
-    <div id="footerContainer"></div>
-<script>
+        <p class="TITLE">Novedad cambio informaci&oacute;n CDT</p>
+
+        <p class="PARRAFO">Este formulario invocado desde la opci&oacute;n
+          <a href="SCH_075B1.html">ingreso de novedades</a>,
+          (issuer) y que aplica solo para aquellas tarjetas que en
+          definici&oacute;n
+          de productos se les haya parametrizado la condici&oacute;n de ser
+          garantizadas
+          con CDT, le permit a la entidad modificar o actualizaar la
+          informaci&oacute;n
+          correspondiente al CDT con el cual se est&aacute; garantizando la
+          obligaci&oacute;n
+          adquirida por el cliente.</p>
+        <p class="TITLE"><img src="../img/SCF_046E.PNG"></p>
+        <p class="TITLE">Descripci&oacute;n de campos</p>
+        <table>
+          <tr>
+            <td class="titletable"><p class="SUBTITULO"><span>
+                  N&uacute;mero CDT</span></p></td>
+            <td><p class="PARRAFO">Campo
+                alfanum&eacute;rico de 15 posiciones, obligatorio, en el que se
+                registra
+                la combinatoria de letras y/o n&uacute;meros que identifica cada
+                C.D.T
+                que garantiza la obligaci&oacute;n del cliente.
+              </p>
+            </td>
+          </tr>
+
+          <tr>
+            <td class="titletable"><p class="SUBTITULO"><span>
+                  Sucursal</span></p></td>
+            <td><p class="PARRAFO">En
+                este campo obligatorio con lista de valores se selecciona la <a
+                  href="NUH_020B.html">sucursal</a>
+                u oficina de la entidad en la que se dio apertura o se renueva
+                el C.D.T
+                que garantiza la obligaci&oacute;n.</p></td>
+          </tr>
+
+          <tr>
+            <td class="titletable"><p class="SUBTITULO"><span>
+                  Monto</span></p></td>
+            <td><p class="PARRAFO">Campo
+                num&eacute;rico de hasta 14 enteros y 2 decimales, obligatorio,
+                en el
+                que se registra el monto del CDT que garantiza la
+                obligaci&oacute;n.</p></td>
+          </tr>
+
+          <tr>
+            <td class="titletable"><p class="SUBTITULO"><span>
+                  Plazo</span></p></td>
+            <td><p class="PARRAFO">En
+                este campo num&eacute;rico de hasta 4 d&iacute;gitos,
+                obligatorio, se
+                registra el n&uacute;mero de meses a los cuales se pacta el
+                vencimiento
+                o renovaci&oacute;n del C.D.T que garantiza la obligaci&oacute;n
+                del
+                cliente. </p></td>
+          </tr>
+
+          <tr>
+            <td class="titletable"><p class="SUBTITULO"><span>
+                  Fecha de apertura</span></p></td>
+            <td><p class="PARRAFO">Campo
+                obligatorio en el que se registra en formato YYYY-MM-DD la fecha
+                en
+                la cual se abri&oacute; o renov&oacute; el CDT con el cual se
+                est&aacute;
+                garantizando la obligaci&oacute;n.</p></td>
+          </tr>
+
+          <tr>
+            <td class="titletable"><p class="SUBTITULO"><span>
+                  Fecha de vencimiento</span></p></td>
+            <td><p class="PARRAFO">En
+                este campo obligatorio se registra en formato YYYY-MM-DD la
+                fecha en
+                la cual vence el CDT con el cual se est&aacute; garantizando la
+                obligaci&oacute;n.</p></td>
+          </tr>
+
+          <tr>
+            <td class="titletable"><p class="SUBTITULO"><span>
+                  Fecha de radicaci&oacute;n</span></p></td>
+            <td><p class="PARRAFO">Campo
+                obligatorio en el que se registra en formato YYYY-MM-DD la fecha
+                en
+                la cual se solicit&oacute; la actualizaci&oacute;n de
+                informaci&oacute;n
+                del CDT para la tarjeta y que puede ser una fecha anterior a la
+                actual
+                del sistema, facilitando el ingreso de novedades de fechas
+                anteriores.
+              </p></td>
+          </tr>
+        </table>
+      </section>
+      <script src="../js/menu.js"></script>
+
+      <div id="footerContainer"></div>
+      <script>
   fetch('footer.html')
     .then(response => response.text())
     .then(html => {
       document.getElementById('footerContainer').innerHTML = html;
     });
 </script>
-</body>
+    </body>
 
-</html>
+  </html>

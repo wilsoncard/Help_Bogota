@@ -1,250 +1,319 @@
 <!DOCTYPE html>
 <html lang="es">
 
-<head>
+  <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>BANKBU®</title>
     <link rel="stylesheet" href="../css/pages.css">
     <link rel="stylesheet" href="../css/style.css">
- <link rel="icon" href="../img/ACQUIRER-logo.JPG" type="image/x-icon">
-</head>
+    <link rel="icon" href="../img/ACQUIRER-logo.JPG" type="image/x-icon">
+  </head>
 
-<body>
+  <body>
     <header>
-        <img class="logo" src="../img/logoBankbu_.PNG" alt="Logo de Mi Empresa">
-        <div id="menuBtn">
-            <img class="TITLE"  src= "../img/menu.PNG" alt="Botón de Menú ">
-        </div>
+      <img class="logo" src="../img/logoBankbu_.PNG" alt="Logo de Mi Empresa">
+      <div id="menuBtn">
+        <img class="TITLE" src="../img/menu.PNG" alt="Botón de Menú ">
+      </div>
     </header>
-   <div id="menuContainer"></div>
+    <div id="menuContainer"></div>
     <script>
-      fetch('menu.html')
-        .then(response => response.text())
-        .then(html => {
-          document.getElementById('menuContainer').innerHTML = html;
-        });
-    </script>
+    fetch('menu.html')
+      .then(response => response.text())
+      .then(html => {
+        document.getElementById('menuContainer').innerHTML = html;
+      });
+  </script>
 
     <section>
-        <div> 
-            
-                    <p class="TITLE">Variaci&oacute;n de cupo de cr&eacute;dito</p>
-                  
-            <p>A trav&eacute;s de este wizard se registra la solicitud de incremento del 
-              cupo de la tarjeta, conformado por los cupos de las distintas l&iacute;neas 
-              de cr&eacute;dito. La entidad, si lo desea, puede utilizar esta funcionalidad 
-              para reducir el valor del saldo de las Cuentas contingentes de su 
-              balance, asign&aacute;ndole el valor m&iacute;nimo de una unidad monetaria, 
-              a cada l&iacute;nea de cr&eacute;dito, siempre y cuando los saldos y/o bloqueos 
-              asociados a la tarjeta lo permitan; as&iacute; mismo puede gestionar el decremento 
-              del cupo actual, a manera de minimizar el riesgo, para con aquellos clientes 
-              cuyas obligaciones han debido ser reestructuradas. Las variaciones aqu&iacute; 
-              se&ntilde;aladas, por ser referidas a un &uacute;nico cliente son individuales, 
-              para otros casos el Sistema provee la opci&oacute;n <a href="CAH_006B.html">Variaci&oacute;n 
-              masiva de cupos</a>, en el m&oacute;dulo de Cartera y contabilidad. </p>
-            <p>Cuando el tipo cr&eacute;dito es Titular y adicionales, el sistema 
-              muestra un formulario en el cual se muestran los clientes que dependen de 
-              la tarjeta principal.</p>
-            <p>En el formulario de otras solicitudes  se selecciona la opci&oacute;n 
-               Variaci&oacute;n de cupo de cr&eacute;dito y la tarjeta a la cual 
-              se le ingresar&aacute; la solicitud.</p>
-            <p class="TITLE"><img src="../img/SOF_019B.PNG"478" height="110"></p>
-            
-            <table>
-              <tr>
-                <td class="titletable" ><p class="SUBTITULO">Tarjeta </p></td>
-                <td><p class="PARRAFO">Campo 
-                    con lista de valores que contiene los diferentes n&uacute;meros de tarjeta 
-                    del cliente. El usuario debe seleccionar aquella para la cual se desea 
-                    solicitar la Variaci&oacute;n de cupo cr&eacute;dito.</p></td>
-              </tr>
-            </table>
-            
-            <p><span class="SUBTITULO">Adicionar:</span>  una vez se han seleccionado 
-              los datos anteriores, se deplegar&aacute; un wizard de dos pasos. El primero 
-              de ellos contiene los bloques Informaci&oacute;n general y <a href="#Negacion" title="Motivos de negación" target="_self">Motivos 
-              de negación</a><span 
-        >:</span></p>
+      <div>
+
+        <p class="TITLE">Variaci&oacute;n de cupo de cr&eacute;dito</p>
+
+        <p>A trav&eacute;s de este wizard se registra la solicitud de incremento
+          del
+          cupo de la tarjeta, conformado por los cupos de las distintas
+          l&iacute;neas
+          de cr&eacute;dito. La entidad, si lo desea, puede utilizar esta
+          funcionalidad
+          para reducir el valor del saldo de las Cuentas contingentes de su
+          balance, asign&aacute;ndole el valor m&iacute;nimo de una unidad
+          monetaria,
+          a cada l&iacute;nea de cr&eacute;dito, siempre y cuando los saldos y/o
+          bloqueos
+          asociados a la tarjeta lo permitan; as&iacute; mismo puede gestionar
+          el decremento
+          del cupo actual, a manera de minimizar el riesgo, para con aquellos
+          clientes
+          cuyas obligaciones han debido ser reestructuradas. Las variaciones
+          aqu&iacute;
+          se&ntilde;aladas, por ser referidas a un &uacute;nico cliente son
+          individuales,
+          para otros casos el Sistema provee la opci&oacute;n <a
+            href="CAH_006B.html">Variaci&oacute;n
+            masiva de cupos</a>, en el m&oacute;dulo de Cartera y contabilidad.
+        </p>
+        <p>Cuando el tipo cr&eacute;dito es Titular y adicionales, el sistema
+          muestra un formulario en el cual se muestran los clientes que dependen
+          de
+          la tarjeta principal.</p>
+        <p>En el formulario de otras solicitudes se selecciona la opci&oacute;n
+          Variaci&oacute;n de cupo de cr&eacute;dito y la tarjeta a la cual
+          se le ingresar&aacute; la solicitud.</p>
+        <p class="TITLE"><img src="../img/SOF_019B.PNG"></p>
+
+        <table>
+          <tr>
+            <td class="titletable"><p class="SUBTITULO">Tarjeta </p></td>
+            <td><p class="PARRAFO">Campo
+                con lista de valores que contiene los diferentes n&uacute;meros
+                de tarjeta
+                del cliente. El usuario debe seleccionar aquella para la cual se
+                desea
+                solicitar la Variaci&oacute;n de cupo cr&eacute;dito.</p></td>
+          </tr>
+        </table>
+
+        <p><span class="SUBTITULO">Adicionar:</span> una vez se han seleccionado
+          los datos anteriores, se deplegar&aacute; un wizard de dos pasos. El
+          primero
+          de ellos contiene los bloques Informaci&oacute;n general y <a
+            href="#Negacion" title="Motivos de negación" target="_self">Motivos
+            de negación</a><span>:</span></p>
         <p class="TITLE"><img src="../img/SOF_019E1.PNG"></p>
-            
-            <table>
-              <tr> 
-                <td class="titletable"><p class="SUBTITULO">Cliente</p></td>
-                <td><p class="PARRAFO">Campo 
-                    de salida desde el cual se podr&aacute; invocar la consulta del cliente 
-                    al cual se le est&aacute; ingresando la solicitud. </p></td>
-              </tr>
-              <tr> 
-                <td class="titletable"><p class="SUBTITULO">N&uacute;mero 
-                    tarjeta </p></td>
-                <td><p class="PARRAFO">Campo 
-                    de salida desde el cual se podr&aacute; invocar la consulta de tarjeta 
-                    del cliente al cual se le est&aacute; ingresando la solicitud. </p></td>
-              </tr>
-              <tr> 
-                <td  class="titletable" ><p class="SUBTITULO">Tipo 
-                    tarjeta </p></td>
-                <td><p class="PARRAFO">Campo 
-                    de salida que muestra qu&eacute; tipo de tarjeta posee el cliente de 
-                    la solicitud ingresada; puede ser Principal, Extendida, Amparada, o 
-                    Adicional.</p></td>
-              </tr>
-              <tr> 
-                <td  class="titletable" ><p class="SUBTITULO">Producto</p></td>
-                <td><p class="PARRAFO">Estos 
-                    campos se llenan autom&aacute;ticamente una vez ingresado el n&uacute;mero 
-                    de tarjeta asociado a la solicitud, permitiendo conocer el Segmento, 
-                    Grupo de afinidad y Descripci&oacute;n que junto con 
-                    el Bin conforman el producto <A href="DBH_018E.html"></A><A href="MEH_002B.html">cr&eacute;dito</A> 
-                    a reponer.</p></td>
-              </tr>
-              <tr> 
-                <td class="titletable"><p class="SUBTITULO">Marca</p></td>
-                <td><p class="PARRAFO"><SPAN >Campo 
-                    de salida que ilustra la <A href="NUH_033B.html">franquicia</A> 
-                    asociada al producto en la Definici&oacute;n del producto.</span></p></td>
-              </tr>
-              <tr> 
-                <td  class="titletable" ><p class="SUBTITULO">Fecha 
-                    Vencimiento</p></td>
-                <td><p class="PARRAFO"><SPAN >Campo 
-                    de salida en formato YYYY-MM-DD, que indica la fecha en que expirar&aacute; 
-                    el nuevo pl&aacute;stico de la tarjeta, cuando se ha parametrizado que 
-                    el sistema deba calcular una nueva fecha de vencimiento.</span></p></td>
-              </tr>
-              <tr> 
-                <td class="titletable"><p class="SUBTITULO">Estado 
-                    solicitd </p></td>
-                <td><p class="PARRAFO">Este 
-                    campo ilustra la condici&oacute;n en que se encuentra la solicitud en 
-                    cada momento, y que puede ser <em class="PARRAFO">En zona gris, Negada 
-                    totalmente, Negada parcialmente, Aprobada totalmente o Aprobada 
-                    parcialmente.</p></td>
-              </tr>
-              <tr> 
-                <td class="SUBTITULO" >Anexos</td>
-                <td><p class="PARRAFO">Campo 
-                    que permite ingresar informaci&oacute;n relacionada con la solicitud, 
-                    referente a documentos suministrados por el cliente u otros datos.</p></td>
-              </tr>
-            </table>
-            <p><a name="Negacion"></a></p>
-            <p class="TITLE"><img src="../img/SOF_019E2.PNG"></p>
-            
-            <table>
-              <tr>
-                <td class="titletable" ><p class="SUBTITULO">Motivo negaci&oacute;n </p></td>
-                <td   ><p class="PARRAFO">Si   aplica, contiene el c&oacute;digo y la descripci&oacute;n de la causal de negaci&oacute;n de la   solicitud.</p>        </td>
-              </tr>
-              <tr>
-                <td class="SUBTITULO" >Observaciones negaci&oacute;n </td>
-                <td><p class="PARRAFO">Campo que   puede contener notas que ilustren las razones por las cuales fue denegada la   solicitud.</p>      </td>
-              </tr>
-            </table>
-            
-            <p  class="PARRAFO"><span class="PARRAFO">A trav&eacute;s de los 
-              botones de la parte inferior derecha, se podr&aacute; cancelar el proceso 
-              o ir al segundo paso del wizard: L&iacute;neas de 
+
+        <table>
+          <tr>
+            <td class="titletable"><p class="SUBTITULO">Cliente</p></td>
+            <td><p class="PARRAFO">Campo
+                de salida desde el cual se podr&aacute; invocar la consulta del
+                cliente
+                al cual se le est&aacute; ingresando la solicitud. </p></td>
+          </tr>
+          <tr>
+            <td class="titletable"><p class="SUBTITULO">N&uacute;mero
+                tarjeta </p></td>
+            <td><p class="PARRAFO">Campo
+                de salida desde el cual se podr&aacute; invocar la consulta de
+                tarjeta
+                del cliente al cual se le est&aacute; ingresando la solicitud.
+              </p></td>
+          </tr>
+          <tr>
+            <td class="titletable"><p class="SUBTITULO">Tipo
+                tarjeta </p></td>
+            <td><p class="PARRAFO">Campo
+                de salida que muestra qu&eacute; tipo de tarjeta posee el
+                cliente de
+                la solicitud ingresada; puede ser Principal, Extendida,
+                Amparada, o
+                Adicional.</p></td>
+          </tr>
+          <tr>
+            <td class="titletable"><p class="SUBTITULO">Producto</p></td>
+            <td><p class="PARRAFO">Estos
+                campos se llenan autom&aacute;ticamente una vez ingresado el
+                n&uacute;mero
+                de tarjeta asociado a la solicitud, permitiendo conocer el
+                Segmento,
+                Grupo de afinidad y Descripci&oacute;n que junto con
+                el Bin conforman el producto <a href="DBH_018E.html"></a><a
+                  href="MEH_002B.html">cr&eacute;dito</a>
+                a reponer.</p></td>
+          </tr>
+          <tr>
+            <td class="titletable"><p class="SUBTITULO">Marca</p></td>
+            <td><p class="PARRAFO"><span>Campo
+                  de salida que ilustra la <a
+                    href="NUH_033B.html">franquicia</a>
+                  asociada al producto en la Definici&oacute;n del
+                  producto.</span></p></td>
+          </tr>
+          <tr>
+            <td class="titletable"><p class="SUBTITULO">Fecha
+                Vencimiento</p></td>
+            <td><p class="PARRAFO"><span>Campo
+                  de salida en formato YYYY-MM-DD, que indica la fecha en que
+                  expirar&aacute;
+                  el nuevo pl&aacute;stico de la tarjeta, cuando se ha
+                  parametrizado que
+                  el sistema deba calcular una nueva fecha de
+                  vencimiento.</span></p></td>
+          </tr>
+          <tr>
+            <td class="titletable"><p class="SUBTITULO">Estado
+                solicitd </p></td>
+            <td><p class="PARRAFO">Este
+                campo ilustra la condici&oacute;n en que se encuentra la
+                solicitud en
+                cada momento, y que puede ser <em class="PARRAFO">En zona gris,
+                  Negada
+                  totalmente, Negada parcialmente, Aprobada totalmente o
+                  Aprobada
+                  parcialmente.</p></td>
+            </tr>
+            <tr>
+              <td class="SUBTITULO">Anexos</td>
+              <td><p class="PARRAFO">Campo
+                  que permite ingresar informaci&oacute;n relacionada con la
+                  solicitud,
+                  referente a documentos suministrados por el cliente u otros
+                  datos.</p></td>
+            </tr>
+          </table>
+          <p><a name="Negacion"></a></p>
+          <p class="TITLE"><img src="../img/SOF_019E2.PNG"></p>
+
+          <table>
+            <tr>
+              <td class="titletable"><p class="SUBTITULO">Motivo negaci&oacute;n
+                </p></td>
+              <td><p class="PARRAFO">Si aplica, contiene el c&oacute;digo y la
+                  descripci&oacute;n de la causal de negaci&oacute;n de la
+                  solicitud.</p> </td>
+            </tr>
+            <tr>
+              <td class="SUBTITULO">Observaciones negaci&oacute;n </td>
+              <td><p class="PARRAFO">Campo que puede contener notas que ilustren
+                  las razones por las cuales fue denegada la solicitud.</p>
+              </td>
+            </tr>
+          </table>
+
+          <p class="PARRAFO"><span class="PARRAFO">A trav&eacute;s de los
+              botones de la parte inferior derecha, se podr&aacute; cancelar el
+              proceso
+              o ir al segundo paso del wizard: L&iacute;neas de
               cr&eacute;dito</span> .</p>
 
-              <p class="PARRAFO"><span class="SUBTITULO">L&iacute;neas de cr&eacute;dito:</span>  
-                Segundo paso del wizard que contiene los siguientes campos a diligenciar:</p>
-                <p class="TITLE"><img src="../img/SOF_019B12.PNG" ></p>
-                <p class="TITLE"><img src="../img/SOF_019B2.PNG" ></p>
-             
-              <table>
-                <tr> 
-                  <td  class="titletable" ><p class="SUBTITULO">L&iacute;nea 
-                      de cr&eacute;dito
-                    </p></td>
-                  <td><p class="PARRAFO">Campo 
-                      que despliega las l&iacute;neas de cr&eacute;dito parametrizadas en 
-                      la <a href="MEH_002B.html">Definici&oacute;n de productos</a>.</p></td>
-                </tr>
-                <tr> 
-                  <td class="titletable"><p class="SUBTITULO">Moneda<b> 
-                      </b></p></td>
-                  <td><p class="PARRAFO">Campo 
-                      de salida que ilustra la moneda en la que se expresan los saldos de 
-                      cada una de las l&iacute;neas de cr&eacute;dito.</p></td>
-                </tr>
-                <tr> 
-                  <td  class="titletable" ><p class="SUBTITULO">Modo 
-                      uso</p></td>
-                  <td><p class="PARRAFO">Campo 
-                      de salida que indica si la l&iacute;nea de cr&eacute;dito es Principal, 
-                      Dependiente, Independiente o Especial, lo que determina si se puede 
-                      borrar o no en la solicitud, as&iacute; como la relaci&oacute;n entre 
-                      los cupos a estas asignado.</p></td>
-                </tr>
-                <tr> 
-                  <td  class="titletable" ><p class="SUBTITULO">Cupo 
-                      total actual</p></td>
-                  <td><p class="PARRAFO">Campo 
-                      de salida que ilustra el monto global que posee actualmente el cliente 
-                      empresarial o principal que tiene tarjetas amparadas.</p></td>
-                </tr>
-                <tr> 
-                  <td class="titletable"><p class="SUBTITULO">Cupo 
-                      asignado<b></b></p></td>
-                  <td><p class="PARRAFO">Este 
-                      campo es alimentado autom&aacute;ticamente por el sistema con el mismo 
-                      monto del valor solicitado, cuando los <a href="SOH_001B.html">par&aacute;metros</a> 
-                      de la solicitud indican que &eacute;sta no pasar&aacute; por la etapa 
-                      de evaluaci&oacute;n. Si se ha marcado que no se solicita la l&iacute;nea 
-                      y si se ingresa alg&uacute;n valor para lineas de credito en cupo asignado, 
-                      el sistema asignar&aacute; cero por defecto. Por otro lado si la linea 
-                      se ha marcado como solicitada el aplicativo exige que por lo menos se 
-                      diligencie el valor del cupo de la l&iacute;nea principal.</p>
-                    </td>
-                </tr>
-                <tr> 
-                  <td  class="titletable" ><p class="SUBTITULO">Cupo 
-                      solicitado</p></td>
-                  <td><p class="PARRAFO">Campo 
-                      que contiene el monto solicitado por cada l&iacute;nea. El sistema controla 
-                      que dicho cupo no supere el valor m&aacute;ximo parametrizado en las 
-                      L&iacute;neas cr&eacute;dito de la <a href="MEH_002B.html">Definici&oacute;n 
-                      de productos</a> y que la sumatoria de estas tampoco exceda el cupo 
-                      m&aacute;ximo por producto. Si se ha marcado que no se solicita la l&iacute;nea 
-                      y si se ingresa alg&uacute;n valor para lineas de credito en cupo solicitado, 
-                      el sistema asignar&aacute; cero por defecto. Por otro lado si la l&iacute;nea 
-                      se ha marcado como solicitada, el sistema permite que tanto la l&iacute;nea 
-                      principal como las dem&aacute;s queden en cero si el usuario asi lo 
-                      prefiere, en este caso el aplicativo exigir&aacute; que la l&iacute;nea 
-                      principal tenga alg&uacute;n valor as&iacute; sea cero.</p></td>
-                </tr>
-              </table>
-              <p class="PARRAFO" >A trav&eacute;s de los botones de la parte inferior 
-                derecha, se podr&aacute; <a href="SOH_019B.html">regresar</a>, cancelar el 
-                proceso, o avanzar al tercer paso del wizard: <a href="SOH_019B2.html">Documentos</a>.</span></p>
+          <p class="PARRAFO"><span class="SUBTITULO">L&iacute;neas de
+              cr&eacute;dito:</span>
+            Segundo paso del wizard que contiene los siguientes campos a
+            diligenciar:</p>
+          <p class="TITLE"><img src="../img/SOF_019B12.PNG"></p>
+          <p class="TITLE"><img src="../img/SOF_019B2.PNG"></p>
 
+          <table>
+            <tr>
+              <td class="titletable"><p class="SUBTITULO">L&iacute;nea
+                  de cr&eacute;dito
+                </p></td>
+              <td><p class="PARRAFO">Campo
+                  que despliega las l&iacute;neas de cr&eacute;dito
+                  parametrizadas en
+                  la <a href="MEH_002B.html">Definici&oacute;n de
+                    productos</a>.</p></td>
+            </tr>
+            <tr>
+              <td class="titletable"><p class="SUBTITULO">Moneda
+                </p></td>
+              <td><p class="PARRAFO">Campo
+                  de salida que ilustra la moneda en la que se expresan los
+                  saldos de
+                  cada una de las l&iacute;neas de cr&eacute;dito.</p></td>
+            </tr>
+            <tr>
+              <td class="titletable"><p class="SUBTITULO">Modo
+                  uso</p></td>
+              <td><p class="PARRAFO">Campo
+                  de salida que indica si la l&iacute;nea de cr&eacute;dito es
+                  Principal,
+                  Dependiente, Independiente o Especial, lo que determina si se
+                  puede
+                  borrar o no en la solicitud, as&iacute; como la
+                  relaci&oacute;n entre
+                  los cupos a estas asignado.</p></td>
+            </tr>
+            <tr>
+              <td class="titletable"><p class="SUBTITULO">Cupo
+                  total actual</p></td>
+              <td><p class="PARRAFO">Campo
+                  de salida que ilustra el monto global que posee actualmente el
+                  cliente
+                  empresarial o principal que tiene tarjetas amparadas.</p></td>
+            </tr>
+            <tr>
+              <td class="titletable"><p class="SUBTITULO">Cupo
+                  asignado</p></td>
+              <td><p class="PARRAFO">Este
+                  campo es alimentado autom&aacute;ticamente por el sistema con
+                  el mismo
+                  monto del valor solicitado, cuando los <a
+                    href="SOH_001B.html">par&aacute;metros</a>
+                  de la solicitud indican que &eacute;sta no pasar&aacute; por
+                  la etapa
+                  de evaluaci&oacute;n. Si se ha marcado que no se solicita la
+                  l&iacute;nea
+                  y si se ingresa alg&uacute;n valor para lineas de credito en
+                  cupo asignado,
+                  el sistema asignar&aacute; cero por defecto. Por otro lado si
+                  la linea
+                  se ha marcado como solicitada el aplicativo exige que por lo
+                  menos se
+                  diligencie el valor del cupo de la l&iacute;nea principal.</p>
+              </td>
+            </tr>
+            <tr>
+              <td class="titletable"><p class="SUBTITULO">Cupo
+                  solicitado</p></td>
+              <td><p class="PARRAFO">Campo
+                  que contiene el monto solicitado por cada l&iacute;nea. El
+                  sistema controla
+                  que dicho cupo no supere el valor m&aacute;ximo parametrizado
+                  en las
+                  L&iacute;neas cr&eacute;dito de la <a
+                    href="MEH_002B.html">Definici&oacute;n
+                    de productos</a> y que la sumatoria de estas tampoco exceda
+                  el cupo
+                  m&aacute;ximo por producto. Si se ha marcado que no se
+                  solicita la l&iacute;nea
+                  y si se ingresa alg&uacute;n valor para lineas de credito en
+                  cupo solicitado,
+                  el sistema asignar&aacute; cero por defecto. Por otro lado si
+                  la l&iacute;nea
+                  se ha marcado como solicitada, el sistema permite que tanto la
+                  l&iacute;nea
+                  principal como las dem&aacute;s queden en cero si el usuario
+                  asi lo
+                  prefiere, en este caso el aplicativo exigir&aacute; que la
+                  l&iacute;nea
+                  principal tenga alg&uacute;n valor as&iacute; sea
+                  cero.</p></td>
+            </tr>
+          </table>
+          <p class="PARRAFO">A trav&eacute;s de los botones de la parte inferior
+            derecha, se podr&aacute; <a href="SOH_019B.html">regresar</a>,
+            cancelar el
+            proceso, o avanzar al tercer paso del wizard: <a
+              href="SOH_019B2.html">Documentos</a>.</span></p>
 
-            <p  class="PARRAFO"><span class="SUBTITULO">Actualizar:</span>  
-              Si en formulario del otras solicitudes  el usuario invoca la opci&oacute;n 
-              Actualizar, se despliega el siguiente formulario.</p>
+        <p class="PARRAFO"><span class="SUBTITULO">Actualizar:</span>
+          Si en formulario del otras solicitudes el usuario invoca la
+          opci&oacute;n
+          Actualizar, se despliega el siguiente formulario.</p>
 
-            <p class="TITLE"><img src="../img/SOF_019B4.PNG"></p>
-            <p class="TITLE"><img src="../img/SOF_019B14.PNG"></p>
-            <p><span class="SUBTITULO">Detalle:</span><span class="PARRAFO"> De igual forma, si </span> en formulario del otras solicitudes  el usuario invoca la opci&oacute;n Detalle, se despliega el siguiente formulario. <span
-              
-        >
-            
-            </span></p>
-            <p class="TITLE"><img src="../img/SOF_019B5.PNG"></p>
-            <p class="TITLE"><img src="../img/SOF_019B15.PNG"></p>
-            </section>
-    <script src="../js/menu.js"></script>
+        <p class="TITLE"><img src="../img/SOF_019B4.PNG"></p>
+        <p class="TITLE"><img src="../img/SOF_019B14.PNG"></p>
+        <p><span class="SUBTITULO">Detalle:</span><span class="PARRAFO"> De
+            igual forma, si </span> en formulario del otras solicitudes el
+          usuario invoca la opci&oacute;n Detalle, se despliega el siguiente
+          formulario. <span>
 
-    <div id="footerContainer"></div>
-<script>
+          </span></p>
+        <p class="TITLE"><img src="../img/SOF_019B5.PNG"></p>
+        <p class="TITLE"><img src="../img/SOF_019B15.PNG"></p>
+      </section>
+      <script src="../js/menu.js"></script>
+
+      <div id="footerContainer"></div>
+      <script>
   fetch('footer.html')
     .then(response => response.text())
     .then(html => {
       document.getElementById('footerContainer').innerHTML = html;
     });
 </script>
-</body>
+    </body>
 
-</html>
+  </html>

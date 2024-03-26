@@ -19,24 +19,20 @@
             <img class="TITLE"  src= "../img/menu.PNG" alt="Botón de Menú ">
         </div>
     </header>
-   <div id="menuContainer"></div>
-    <script>
-      fetch('menu.html')
-        .then(response => response.text())
-        .then(html => {
-          document.getElementById('menuContainer').innerHTML = html;
-        });
-    </script>
+      <div id="menuContainer"></div>
+  <script>
+    fetch('menu.html')
+      .then(response => response.text())
+      .then(html => {
+        document.getElementById('menuContainer').innerHTML = html;
+      });
+  </script>
 
     <section>
         <div> 
-            <table>
-              <tr> 
-                <td><div> 
+            
                     <p  class="TITLE">Transacciones por empresa</p>
-                  </div></td>
-              </tr>
-            </table>
+                  
             <p class="PARRAFO">Mediante esta funci&oacute;n se definen las principales caracter&iacute;sticas 
               de las transacciones internas y los conceptos bajo los cuales se efectuar&aacute;n 
               los registros contables y la informaci&oacute;n general para el cliente acerca 
@@ -52,24 +48,24 @@
 
             <table>
               <tr> 
-                <td class="titletable"><p class="SUBTITULO"><b><span 
+                <td class="titletable"><p class="SUBTITULO"><span 
         >Concepto 
-                    transacci&oacute;n</span></b></p></td>
+                    transacci&oacute;n</span></p></td>
                 <td><p  class="PARRAFO">Campo 
                     num&eacute;rico de tres posiciones, en el cual se registra 
                     el c&oacute;digo que identifica a cada concepto de transacci&oacute;n.</p></td>
               </tr>
               <tr> 
-                <td class="titletable"><p class="SUBTITULO"><b><span 
+                <td class="titletable"><p class="SUBTITULO"><span 
         >Transacci&oacute;n 
-                    interna</span></b></p></td>
+                    interna</span></p></td>
                 <td><p  class="PARRAFO">Campo 
                     num&eacute;rico de <span class="PARRAFO">tres</span>  posiciones, 
                     en el cual se registra el c&oacute;digo que identifica a cada transacci&oacute;n.</p></td>
               </tr>
               <tr> 
-                <td class="titletable"><p class="SUBTITULO"><b><span 
-        >Naturaleza</span></b></p></td>
+                <td class="titletable"><p class="SUBTITULO"><span 
+        >Naturaleza</span></p></td>
                 <td><p  class="PARRAFO">Campo 
                     que posee lista de valores adjunta de la que debe seleccionarse entre 
                     Nulo, D&eacute;bito o Cr&eacute;dito la clase o naturaleza contable del registro 
@@ -82,14 +78,14 @@
               la opci&oacute;n Adicionar se despliega un wizard de dos pasos con los siguientes 
               campos.</p>
             
-            <p><b><span class="SUBTITULO">Primer paso del wizard:</span></b></p>
+            <p><span class="SUBTITULO">Primer paso del wizard:</span></p>
             
             <p class="TITLE"><img src="../img/MEF_003E2.PNG"></p>
             <table>
               <tr> 
-                <td  class="titletable" ><p class="SUBTITULO"><b><span 
+                <td  class="titletable" ><p class="SUBTITULO"><span 
         >Nombre 
-                    transacci&oacute;n interna</span></b></p></td>
+                    transacci&oacute;n interna</span></p></td>
                 <td><p>Campo 
                     alfanum&eacute;rico de tres d&iacute;gitos, obligatorio, destinado para 
                     identificar a trav&eacute;s de un c&oacute;digo y una breve descripci&oacute;n 
@@ -97,16 +93,16 @@
                 </td>
               </tr>
               <tr> 
-                <td class="titletable"><p class="SUBTITULO"><b><span 
-        >Abreviatura</span></b></p></td>
+                <td class="titletable"><p class="SUBTITULO"><span 
+        >Abreviatura</span></p></td>
                 <td><p class="PARRAFO">En 
                     este campo obligatorio se define un nombre corto o mnem&oacute;nico que permita 
                     identificar cada transacci&oacute;n interna especialmente en las consultas 
                     o reportes impresos.</p></td>
               </tr>
               <tr> 
-                <td  class="titletable" ><p class="SUBTITULO"><b><span 
-        >Naturaleza</span></b></p></td>
+                <td  class="titletable" ><p class="SUBTITULO"><span 
+        >Naturaleza</span></p></td>
                 <td><p class="PARRAFO"> 
                     Campo obligatorio que posee lista de valores adjunta de la que debe seleccionarse 
                     entre d&eacute;bito o cr&eacute;dito la clase o naturaleza contable 
@@ -115,9 +111,9 @@
                 </td>
               </tr>
               <tr> 
-                <td class="titletable"><p class="SUBTITULO"><b><span 
+                <td class="titletable"><p class="SUBTITULO"><span 
         >Presentaci&oacute;n 
-                    extracto </span></b></p></td>
+                    extracto </span></p></td>
                 <td><p class="PARRAFO">A 
                     trav&eacute;s de este campo obligatorio, la entidad podr&aacute; parametrizar la 
                     manera como ser&aacute; presentada la informaci&oacute;n en el informe 
@@ -125,18 +121,18 @@
                     derivada de otra o a trav&eacute;s del establecimiento donde se realiz&oacute;.</p></td>
               </tr>
               <tr> 
-                <td  class="titletable" ><p class="SUBTITULO"><b><span 
+                <td  class="titletable" ><p class="SUBTITULO"><span 
         >Reversar 
-                    antes de (d&iacute;as)</span></b></p></td>
+                    antes de (d&iacute;as)</span></p></td>
                 <td><p class="PARRAFO">Este 
                     par&aacute;metro permite determinar, el plazo m&aacute;ximo (en d&iacute;as) 
                     para reversar una transacci&oacute;n a trav&eacute;s de una transacci&oacute;n 
                     de ajuste.</p></td>
               </tr>
               <tr> 
-                <td class="titletable"><p class="SUBTITULO"><b><span 
+                <td class="titletable"><p class="SUBTITULO"><span 
         >Consolidaci&oacute;n 
-                    periodo</span></b></p></td>
+                    periodo</span></p></td>
                 <td><p class="PARRAFO">Campo 
                     obligatorio que posee lista de valores adjunta y permite definir, la manera como 
                     conservar&aacute; la informaci&oacute;n al corte del per&iacute;odo 
@@ -146,9 +142,9 @@
                     periodo.</p></td>
               </tr>
               <tr> 
-                <td class="titletable"><p class="SUBTITULO"><b><span 
+                <td class="titletable"><p class="SUBTITULO"><span 
         >Concepto 
-                    transacci&oacute;n </span></b></p></td>
+                    transacci&oacute;n </span></p></td>
                 <td><p>Campo obligatorio en el que una 
                     vez, descrita la forma de presentaci&oacute;n en el extracto, la entidad 
                     define de igual manera, c&oacute;mo aparecer&aacute; la descripci&oacute;n 
@@ -158,26 +154,26 @@
                 </td>
               </tr>
               <tr> 
-                <td class="titletable"><p class="SUBTITULO"><b><span 
+                <td class="titletable"><p class="SUBTITULO"><span 
         >Genera 
-                    iva</span></b></p></td>
+                    iva</span></p></td>
                 <td><p class="PARRAFO">Campo 
                     que permite definir si la transacci&oacute;n es generadora o no del 
                     impuesto del IVA.</p></td>
               </tr>
               <tr> 
-                <td  class="titletable" ><p class="SUBTITULO"><b><span 
+                <td  class="titletable" ><p class="SUBTITULO"><span 
         >Tipo 
-                    transacci&oacute;n</span></b></p></td>
+                    transacci&oacute;n</span></p></td>
                 <td><p>En 
                     este campo se identifica el medio por el cual se gener&oacute; la transacci&oacute;n, 
                     es decir, si corresponde a una transacci&oacute;n original del cliente 
                     o a una transacci&oacute;n generada por el sistema.</p></td>
               </tr>
               <tr> 
-                <td class="titletable"><p class="SUBTITULO"><b><span 
+                <td class="titletable"><p class="SUBTITULO"><span 
         >Valor 
-                    transacci&oacute;n derivada</span></b></p></td>
+                    transacci&oacute;n derivada</span></p></td>
                 <td><p class="PARRAFO">Cuando 
                     una transacci&oacute;n original genera una segunda o derivada, &eacute;sta 
                     puede implicar un costo adicional para el cliente y en este campo se 
@@ -218,14 +214,14 @@
             <p>El usuario tiene la opci&oacute;n de Cancelar o Avanzar al segundo paso del 
               wizard a trav&eacute;s de los botones ubicados en la parte inferior derecha 
               del formulario.</p>
-            <p><b><span class="SUBTITULO" 
-        >Segundo paso del wizard:</span></b></p>
+            <p><span class="SUBTITULO" 
+        >Segundo paso del wizard:</span></p>
            <p class="TITLE"><img src="../img/MEF_003E3.PNG"721" ></p>
             <table>
               <tr> 
-                <td  class="titletable" ><p class="SUBTITULO"><b><span 
+                <td  class="titletable" ><p class="SUBTITULO"><span 
         >% 
-                    Sobre transacci&oacute;n original</span></b></p></td>
+                    Sobre transacci&oacute;n original</span></p></td>
                 <td><p>Si 
                     una transacci&oacute;n original genera una segunda o derivada, &eacute;sta 
                     puede generar un costo adicional que est&aacute; expresado por un porcentaje 
@@ -235,9 +231,9 @@
                     derivada.</p></td>
               </tr>
               <tr> 
-                <td class="titletable"><p class="SUBTITULO"><b><span 
+                <td class="titletable"><p class="SUBTITULO"><span 
         >Transacci&oacute;n 
-                    derivada </span></b></p></td>
+                    derivada </span></p></td>
                 <td><p class="PARRAFO">Cuando 
                     una transacci&oacute;n original genera una segunda, &eacute;sta debe 
                     ser definida para efectos de liquidaci&oacute;n y registro, seleccion&aacute;ndola 
@@ -245,17 +241,17 @@
                     pantalla.</p></td>
               </tr>
               <tr> 
-                <td  class="titletable" ><p class="SUBTITULO"><b><span 
+                <td  class="titletable" ><p class="SUBTITULO"><span 
         >M&iacute;nima 
-                    para derivada</span></b></p></td>
+                    para derivada</span></p></td>
                 <td><p class="PARRAFO">En 
                     este campo se expresa el monto m&iacute;nimo que debe tener una transacci&oacute;n 
                     original para poder generar una transacci&oacute;n derivada.</p></td>
               </tr>
               <tr> 
-                <td class="titletable"><p class="SUBTITULO"><b><span 
+                <td class="titletable"><p class="SUBTITULO"><span 
         >Afecta 
-                    en l&iacute;nea transacci&oacute;n</span></b></p></td>
+                    en l&iacute;nea transacci&oacute;n</span></p></td>
                 <td><p class="PARRAFO">Conjunto 
                     de informaci&oacute;n que muestra la manera c&oacute;mo ser&aacute; 
                     afectado el saldo del producto directamente, objeto de alguna de las 
@@ -267,9 +263,9 @@
                 </td>
               </tr>
               <tr> 
-                <td  class="titletable" ><p class="SUBTITULO"><b><span 
+                <td  class="titletable" ><p class="SUBTITULO"><span 
         >Permite 
-                    pago dirigido</span></b></p></td>
+                    pago dirigido</span></p></td>
                 <td><p class="PARRAFO">Este 
                     campo es obligatorio para las transacciones de naturaleza Cr&eacute;dito 
                     y <a href="NUH_059B.html" >concepto de transacci&oacute;n</a> Pago, permite 
@@ -286,15 +282,15 @@
                     en el momento de generar el pago m&iacute;nimo.</p></td>
               </tr>
               <tr> 
-                <td class="titletable"><p class="SUBTITULO"><b><span 
-        >Inter&eacute;s</span></b></p></td>
+                <td class="titletable"><p class="SUBTITULO"><span 
+        >Inter&eacute;s</span></p></td>
                 <td><p class="PARRAFO">Campo 
                     destinado para definir, cu&aacute;ntos periodos hacen parte de los tiempos 
                     muertos para liquidar intereses a un consumo.</p></td>
               </tr>
               <tr> 
-                <td class="titletable"><p class="SUBTITULO"><b><span 
-        >Facturaci&oacute;n</span></b> 
+                <td class="titletable"><p class="SUBTITULO"><span 
+        >Facturaci&oacute;n</span> 
                   </p></td>
                 <td><p>Campo 
                     destinado para definir, cu&aacute;ntas facturaciones hacen parte de 

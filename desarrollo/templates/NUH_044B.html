@@ -1,171 +1,175 @@
 <!DOCTYPE html>
 <html lang="es">
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>BANKBU®</title>
-    <link rel="stylesheet" href="../css/pages.css">
-    <link rel="stylesheet" href="../css/style.css">
-    <link rel="icon" href="../img/ACQUIRER-logo.JPG" type="image/x-icon">
-</head>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>BANKBU®</title>
+        <link rel="stylesheet" href="../css/pages.css">
+        <link rel="stylesheet" href="../css/style.css">
+        <link rel="icon" href="../img/ACQUIRER-logo.JPG" type="image/x-icon">
+    </head>
 
-<body>
-    <header>
-        <img class="logo" src="../img/logoBankbu_.PNG" alt="Logo de Mi Empresa">
-        <div id="menuBtn">
-            <img class="TITLE" src="../img/menu.PNG" alt="Botón de Menú ">
-        </div>
-    </header>
-   <div id="menuContainer"></div>
-    <script>
-      fetch('menu.html')
-        .then(response => response.text())
-        .then(html => {
-          document.getElementById('menuContainer').innerHTML = html;
-        });
-    </script>
+    <body>
+        <header>
+            <img class="logo" src="../img/logoBankbu_.PNG"
+                alt="Logo de Mi Empresa">
+            <div id="menuBtn">
+                <img class="TITLE" src="../img/menu.PNG" alt="Botón de Menú ">
+            </div>
+        </header>
+        <div id="menuContainer"></div>
+        <script>
+    fetch('menu.html')
+      .then(response => response.text())
+      .then(html => {
+        document.getElementById('menuContainer').innerHTML = html;
+      });
+  </script>
 
-    <section>
-        <div>
-            <table>
-                <tr>
-                    <td>
-                        <div>
-                            <p class="TITLE">Derogatorio de c&eacute;dulas</p>
-                        </div>
-                    </td>
-                </tr>
-            </table>
-            <p class="PARRAFO">A trav&eacute;s de este formulario
-                se habilita la consulta y mantenimiento de la tabla que contiene la relaci&oacute;n
-                de todos los documentos y nombres de sus titulares que por diversos motivos
-                son considerados clientes no deseables para la corporaci&oacute;n. Mediante
-                el campo g&eacute;nero se valida por rangos el n&uacute;mero del documento,
-                puesto que para algunas zonas geogr&aacute;ficas existe una relaci&oacute;n
-                directa entre ambos. En la opci&oacute;n <a href="SOH_001B1.html"
-                    >Par&aacute;metros</a>
-                de solicitudes la entidad puede determinar la manera como utilizar&aacute;
-                la informaci&oacute;n ingresada en este formulario. Adicionalmente cuenta con un filtro de
-                b&uacute;squeda por Tipo documento, Identificaci&oacute;n y Nombres.
+        <section>
+            <div>
+                
+                 <p class="TITLE">Derogatorio de c&eacute;dulas</p>
+                            
+                <p class="PARRAFO">A través de este formulario, se habilita la
+                    consulta y mantenimiento de la data de los documentos y
+                    nombres de sus titulares que, por diversos motivos son
+                    considerados clientes no deseables para la entidad. En la
+                    opción <a href="SOH_001B1.html">Par&aacute;metros</a>
+                    de solicitudes la entidad puede determinar la manera como
+                    utilizará la información ingresada en este formulario.
+                    Adicionalmente cuenta con un filtro de búsqueda por Tipo
+                    documento, Identificación y Nombres.
+                    El formulario cuenta con enlaces a las opciones: Actualizar,
+                    Eliminar y Adicionar
                 </span></p>
-            <p class="TITLE"><img src="../img/NUF_044E.PNG" 768" height="327"></p>
+            <p class="TITLE"><img src="../img/NUF_044E.PNG"></p>
 
             <p class="PARRAFO">El formulario contiene las opciones Actualizar,
                 Eliminar y Adicionar</p>
-            <p class="PARRAFO"><span class="SUBTITULO"><span><b><span
-                                class="SUBTITULO">Adicionar</span></b>:</span><span></span></span><span>
-                    Si el usuario invoca la opci&oacute;n Adicionar se despliega un nuevo formulario.
-                </span> 
+            <p class="PARRAFO"><span class="SUBTITULO"><span
+                            class="SUBTITULO">Adicionar</span>:</span></span>
+                    Si el usuario invoca la opci&oacute;n Adicionar se despliega
+                    un nuevo formulario.
+                </span>
             </p>
-            <p class="TITLE"><img src="../img/NUF_044E1.PNG" 487" height="309"></p>
+            <p class="TITLE"><img src="../img/NUF_044E1.PNG"></p>
             <p class="TITLE">Descripci&oacute;n de campos</p>
             <table>
                 <tr>
                     <td class="titletable">
-                        <p class="SUBTITULO"><b><span>
-                                    Tipo de documento</span></b></p>
+                        <p class="SUBTITULO">
+                                Tipo de documento</span></p>
                     </td>
                     <td>
-                        <p class="PARRAFO">Campo
-                            obligatorio tipo combo del cual se selecciona el <a href="NUH_008B.html"
-                                >tipo
-                                    de documento de identificaci&oacute;n</a> correspondiente al cliente
-                            que se desea ingresar en derogatorio.</p>
+                        <p class="PARRAFO">Campo obligatorio, que posee lista de
+                            valores tipo combo, de la cual se debe seleccionar
+                            el <a
+                                href="NUH_008B.html">tipo
+                                de documento de identificaci&oacute;n</a>
+                            correspondiente al cliente que se desea incluir
+                            dentro del derogatorio</p>
                     </td>
                 </tr>
 
                 <tr>
                     <td class="titletable">
-                        <p class="SUBTITULO"><b><span>Genero</span></b></p>
+                        <p class="SUBTITULO">Genero</span></p>
                     </td>
                     <td>
-                        <p class="PARRAFO">Este
-                            campo tipo combo permite seleccionar entre Femenino y Masculino
-                            el sexo o g&eacute;nero del cliente ingresado a derogatorio</p>
+                        <p class="PARRAFO">Este campo tipo combo permite
+                            seleccionar entre Femenino y Masculino el sexo o
+                            género del cliente ingresado a derogatorio</p>
                     </td>
                 </tr>
 
                 <tr>
                     <td class="titletable">
-                        <p class="SUBTITULO"><b><span>I</span><span>dentificaci&oacute;n</span></b></p>
+                        <p
+                            class="SUBTITULO">I</span>dentificaci&oacute;n</span></p>
                     </td>
                     <td>
-                        <p class="PARRAFO">Campo
-                            obligatorio de hasta 16 posiciones en el cual se ingresa el n&uacute;mero
-                            del documento de identificaci&oacute;n del cliente en derogatorio</p>
+                        <p class="PARRAFO">Campo obligatorio de hasta 16
+                            posiciones, en el cual se debe ingresar el número
+                            del documento de identificación del cliente a
+                            incluir dentro del derogatorio.</p>
                     </td>
                 </tr>
 
                 <tr>
                     <td class="titletable">
-                        <p class="SUBTITULO"><b><span> Nombres</span></b></p>
+                        <p class="SUBTITULO"> Nombres</span></p>
                     </td>
                     <td>
-                        <p class="PARRAFO">En
-                            este campo de hasta 60 posiciones se registra el nombre del cliente
-                            a quien pertenece el tipo y n&uacute;mero de identificaci&oacute;n ingresado
-                            en los campos anteriores.</p>
+                        <p class="PARRAFO">
+                            En este campo, no obligatorio, de hasta 60
+                            posiciones se registra el nombre del cliente, a
+                            quien pertenece el tipo y número de identificación
+                            ingresado en los campos anteriores.</p>
                     </td>
                 </tr>
                 <tr>
                     <td class="titletable">
-                        <p class="SUBTITULO"><b><span>Direcci&oacute;n</span> 
-                                </span></b></p>
-                    </td>
-                    <td>
-                        <p class="PARRAFO">En
-                            este campo de hasta 60 posiciones se registra el nombre del cliente
-                            a quien pertenece el tipo y n&uacute;mero de identificaci&oacute;n ingresado
-                            en los campos anteriores.</p>
-                    </td>
-                </tr>
+                        <p class="SUBTITULO">Descripción</span>
+                        </span></p>
+                </td>
+                <td>
+                    <p class="PARRAFO">En este campo obligatorio, de hasta 60
+                        posiciones, se debe registrar el motivo o breve
+                        descripción de la causal por la que se desea incluir
+                        dentro del derogatorio.</p>
+                </td>
+            </tr>
+            <tr>
+                <td class="titletable">
+                    <p class="SUBTITULO">Telefono</span>
+                    </span></p>
+            </td>
+            <td>
+                <p class="PARRAFO">En este campo, no obligatorio, alfanumérico, de hasta 20 posiciones, se registra el número del teléfono del cliente, a quien pertenece el tipo y número de identificación ingresado en los campos anteriores.</p>
+            </td>
+        </tr>
 
-                <tr>
-                    <td class="titletable">
-                        <p class="SUBTITULO"><b><span>
-                                    Fecha de reporte</span></b></p>
-                    </td>
-                    <td>
-                        <p class="PARRAFO">Campo
-                            en el que se registra en formato yyyy-mm-dd la fecha en la cual se hizo
-                            el reporte o inclusi&oacute;n del cliente en el derogatorio.</p>
-                    </td>
-                </tr>
+            <tr>
+                <td class="titletable">
+                    <p class="SUBTITULO">
+                            Fecha de reporte</span></p>
+                </td>
+                <td>
+                    <p class="PARRAFO">Campo no obligatorio, en el que, mediante la funcionalidad de calendario, se debe registrar la fecha en la cual se efectúa el reporte o inclusión del cliente en el derogatorio.</p>
+                </td>
+            </tr>
 
-                <tr>
-                    <td class="titletable">
-                        <p class="SUBTITULO"><b><span>
-                                    Observaciones</span></b></p>
-                    </td>
-                    <td>
-                        <p class="PARRAFO">En
-                            este campo alfanum&eacute;rico la entidad puede registrar el motivo
-                            o las razones por las que el cliente es reportado en el derogatorio.</p>
-                    </td>
-                </tr>
-            </table>
+            <tr>
+                <td class="titletable">
+                    <p class="SUBTITULO">
+                            Observaciones</span></p>
+                </td>
+                <td>
+                    <p class="PARRAFO">En este campo alfanumérico, la entidad puede ampliar o detallar el motivo o las razones por las que el cliente es reportado en el derogatorio.</p>
+                </td>
+            </tr>
+        </table>
 
-            <p class="PARRAFO"><span class="SUBTITULO"><span><b><span
-                                class="SUBTITULO">Actualizar</span></b>:</span><span></span></span><span>
-                    Si el usuario selecciona un registro e invoca la opci&oacute;n Actualizar
-                    se despliega un formulario en el cual los campos modificables son G&eacute;nero,
-                    Identificacion, Nombres, Fecha de reporte y Observaciones. </span> 
-            </p>
-            <p class="TITLE"><img src="../img/NUF_044E2.PNG" 490" height="308"></p>
+        <p class="PARRAFO"><span class="SUBTITULO">Actualizar</span>:
+                            Si el usuario selecciona un registro e invoca este enlace, se despliega un formulario en el cual, los campos modificables son: Género, Nombres, Fecha de reporte y Observaciones.
+            </span>
+        </p>
+        <p class="TITLE"><img src="../img/NUF_044E2.PNG"></p>
 
-            <div>
-    </section>
-    <script src="../js/menu.js"></script>
+        <div>
+        </section>
+        <script src="../js/menu.js"></script>
 
-    <div id="footerContainer"></div>
-<script>
+        <div id="footerContainer"></div>
+        <script>
   fetch('footer.html')
     .then(response => response.text())
     .then(html => {
       document.getElementById('footerContainer').innerHTML = html;
     });
 </script>
-</body>
+    </body>
 
 </html>

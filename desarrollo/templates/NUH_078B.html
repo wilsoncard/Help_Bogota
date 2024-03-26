@@ -17,26 +17,20 @@
       <img class="TITLE" src="../img/menu.PNG" alt="Botón de Menú ">
     </div>
   </header>
-  <div id="menuContainer"></div>
-    <script>
-      fetch('menu.html')
-        .then(response => response.text())
-        .then(html => {
-          document.getElementById('menuContainer').innerHTML = html;
-        });
-    </script>
+    <div id="menuContainer"></div>
+  <script>
+    fetch('menu.html')
+      .then(response => response.text())
+      .then(html => {
+        document.getElementById('menuContainer').innerHTML = html;
+      });
+  </script>
 
   <section>
     <div>
-      <table>
-        <tr>
-          <td>
-            <div>
+      
               <p class="TITLE">Identificadores contables</p>
-            </div>
-          </td>
-        </tr>
-      </table>
+
       <p class="PARRAFO">Desde este formulario, se habilita la consulta
         y mantenimiento de una tabla en la cual se almacena la informaci&oacute;n
         de los identificadores que permiten clasificar el movimiento generado en la
@@ -49,7 +43,7 @@
 
       <p class="PARRAFO">El formulario contiene las opciones Actualizar,
         Eliminar y Adicionar</p>
-      <p class="PARRAFO"><b><span class="SUBTITULO">Adicionar:</span></b>
+      <p class="PARRAFO"><span class="SUBTITULO">Adicionar:</span>
         si el usuario invoca la opci&oacute;n Adicionar se despliega un nuevo formulario
         con los siguientes campos:</p>
       <p class="TITLE"><img src="../img/NUF_078E2.PNG" 352"></p>
@@ -58,7 +52,7 @@
       <table>
         <tr>
           <td class="titletable">
-            <p class="SUBTITULO"><b><span> Identificador</span></b></p>
+            <p class="SUBTITULO"> Identificador</span></p>
           </td>
           <td>
             <p class="PARRAFO">Campo
@@ -72,8 +66,8 @@
 
         <tr>
           <td class="titletable">
-            <p class="SUBTITULO"><b><span>
-                  Descripci&oacute;n</span></b></p>
+            <p class="SUBTITULO">
+                  Descripci&oacute;n</span></p>
           </td>
           <td>
             <p class="PARRAFO">Campo
@@ -83,8 +77,8 @@
         </tr>
         <tr>
           <td class="titletable">
-            <p class="SUBTITULO"><b><span>
-                  C&oacute;digo</span></b></p>
+            <p class="SUBTITULO">
+                  C&oacute;digo</span></p>
           </td>
           <td>
             <p class="PARRAFO">En
@@ -97,8 +91,8 @@
         </tr>
         <tr>
           <td class="titletable">
-            <p class="SUBTITULO"><b><span>
-                  Or&iacute;gen</span></b>es</p>
+            <p class="SUBTITULO">
+                  Or&iacute;gen</span>es</p>
           </td>
           <td>
             <p class="PARRAFO">Campo
@@ -111,7 +105,7 @@
         </tr>
       </table>
 
-      <p class="PARRAFO"><b><span class="SUBTITULO">Actualizar</span></b>:
+      <p class="PARRAFO"><span class="SUBTITULO">Actualizar</span>:
         si el usuario selecciona un registro e invoca la opci&oacute;n Actualizar
         se despliega un formulario en el cual los campos modificables son Descripci&oacute;n, C&oacute;digo y
         Or&iacute;genes. </p>

@@ -1,152 +1,187 @@
 <!DOCTYPE html>
 <html lang="es">
 
-<head>
+  <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>BANKBU®</title>
     <link rel="stylesheet" href="../css/pages.css">
     <link rel="stylesheet" href="../css/style.css">
- <link rel="icon" href="../img/ACQUIRER-logo.JPG" type="image/x-icon">
-</head>
+    <link rel="icon" href="../img/ACQUIRER-logo.JPG" type="image/x-icon">
+  </head>
 
-<body>
+  <body>
     <header>
-        <img class="logo" src="../img/logoBankbu_.PNG" alt="Logo de Mi Empresa">
-        <div id="menuBtn">
-            <img class="TITLE"  src= "../img/menu.PNG" alt="Botón de Menú ">
-        </div>
+      <img class="logo" src="../img/logoBankbu_.PNG" alt="Logo de Mi Empresa">
+      <div id="menuBtn">
+        <img class="TITLE" src="../img/menu.PNG" alt="Botón de Menú ">
+      </div>
     </header>
-   <div id="menuContainer"></div>
+    <div id="menuContainer"></div>
     <script>
-      fetch('menu.html')
-        .then(response => response.text())
-        .then(html => {
-          document.getElementById('menuContainer').innerHTML = html;
-        });
-    </script>
+    fetch('menu.html')
+      .then(response => response.text())
+      .then(html => {
+        document.getElementById('menuContainer').innerHTML = html;
+      });
+  </script>
 
     <section>
-        <div> 
-            <table>
-              <tr> 
-                <td><div> 
-                    <p  class="TITLE">Par&aacute;metros solicitudes por producto</p>
-                    </div></td>
-              </tr>
-            </table>
-            <p class="PARRAFO"><span class="SUBTITULO">Etapas:</span>  En esta opci&oacute;n 
-              se definen condiciones espec&iacute;ficas para cada combinatoria producto 
-              / tipo de solicitud, sobre las etapas que debe surtir, los filtros a aplicar 
-              en cada una de ellas y los documentos que se deben anexar. En el t&iacute;tulo 
-              del formulario se despliega la informaci&oacute;n correspondiente al tipo 
-              de solicitud y el producto para los cuales se est&aacute;n definiendo par&aacute;metros, 
-              y que corresponden al registro seleccionado en la opci&oacute;n Solicitudes.</p>
-            <p class="PARRAFO">El formulario contiene las opciones Actualizar, Eliminar, 
-              y Adicionar. Adicionalmente, cuenta con las opciones adicionales: <a href="SOH_001B7b1.html">Filtros 
-              negaci&oacute;n</a>, y <a href="SOH_001B7b2.html">Documentos</a>, y un bot&oacute;n 
-              en la parte superior para volver al formulario de <a href="SOH_001B7.html">Solicitudes</a>.</p>
-            <p class="TITLE"><img src="../img/SOF_001B34.PNG"542" height="483"></p>
-            
-            <p  class="PARRAFO"><span class="SUBTITULO">Adicionar:</span>  Si 
-              el usuario invoca la opci&oacute;n Adicionar se despliega un formulario con 
-              los siguientes bloques<span 
-        >:</span></p>
-            <p class="TITLE"><img src="../img/SOF_001B35.PNG"559" height="253"></p>
-            
-            <table>
-              <tr> 
-                <td class="titletable"><p class="SUBTITULO">Descripci&oacute;n 
-                    etapa </p></td>
-                <td><p class="PARRAFO">Campo 
-                    que posee lista de valores poblada en la opci&oacute;n <a href="SOH_001B.html">Etapas</a> 
-                    de los par&aacute;metros de solicitudes, de la que se selecciona cada 
-                    una de las etapas que deber&aacute; surtir cada combinatoria producto 
-                    / tipo de solicitud. Debe tenerse en cuenta que cuando para el producto 
-                    se ha definido que NO emite pl&aacute;stico, no se deben seleccionar 
-                    en este campo las etapas de realce, sobreflex de clave y empaque, env&iacute;o 
-                    a mensajer&iacute;a y acuse recibo de entrega ni aquellas otras que 
-                    s&oacute;lo aplican para productos que SI emiten pl&aacute;stico como 
-                    materializaci&oacute;n de la tarjeta.</p></td>
-              </tr>
-              <tr> 
-                <td class="titletable"><p class="SUBTITULO">Orden</p></td>
-                <td><p class="PARRAFO">En 
-                    este campo num&eacute;rico de 2 d&iacute;gitos, obligatorio, se registra 
-                    la secuencia en la que las etapas deber&aacute;n surtirse.</p></td>
-              </tr>
-              <tr> 
-                <td  class="titletable" ><p class="SUBTITULO">Cupos 
-                    preaprobados</p></td>
-                <td><p class="PARRAFO">Campo 
-                    en el que se indica si para esa combinatoria tipo de solicitud / producto, 
-                    los cupos entran preaprobados o no, y s&oacute;lo aplica para la etapa 
-                    de Grabaci&oacute;n.</p></td>
-              </tr>
-              <tr> 
-                <td class="titletable"><p class="SUBTITULO">Scoring 
-                    aplicar</p></td>
-                <td><p class="PARRAFO">En 
-                    este campo con lista de valores debe seleccionarse entre Rutina personalizada 
-                    o Propio OpenCard, el procedimiento a utilizar en el proceso de scoring 
-                    y s&oacute;lo se activa para la etapa de Calificaci&oacute;n.</p></td>
-              </tr>
-              <tr> 
-                <td  class="titletable" ><p class="SUBTITULO">Rutina 
-                    scoring</p></td>
-                <td><p class="PARRAFO">Campo 
-                    en el que debe registrarse el nombre del procedimiento asociado y solo 
-                    aplica para cuando se ha se&ntilde;alado Rutina personalizada en el 
-                    campo Scoring aplicar.</p></td>
-              </tr>
-              <tr> 
-                <td class="titletable"><p class="SUBTITULO">Ruta 
-                    rutina</p></td>
-                <td><p class="PARRAFO">Si 
-                    el scoring a aplicar a las solicitudes corresponde a aplicaciones propias 
-                    de la entidad, dentro de este campo se registra la ruta o path en la 
-                    que se ubican los programas requeridos.</p></td>
-              </tr>
-            </table>
+      <div>
 
-            <p  class="PARRAFO">Despu&eacute;s de haber ingresado los datos 
-              de cada etapa, se van adicionando 
-              una a una mediante el segundo bot&oacute;n del wizard, para luego  desplazarse a la segunda p&aacute;gina donde se muestra el 
-              resumen de todas, desplegando para cada una los campos C&oacute;digo  etapa, Descripci&oacute;n, Orden, Rutina Scoring, Ruta rutina, Scoring aplicar, y Cupos preaprobados. El formulario cuenta con un check que permite 
-            marcar aquellas etapas que  se deseen Remover.</p>
-            <p  class="PARRAFO">Es importante para el usuario tener en cuenta, 
-              que en este proceso inicial de adici&oacute;n el sistema requiere que las 
-              etapas sean ingresadas de manera que tengan un orden estrictamente secuencial, 
-              puesto que de lo contrario no se permitir&aacute; guardar los registros en 
-              la base de datos.</p>
-            <p class="TITLE"><img src="../img/SOF_001B35a.PNG"661" height="135"></p>
+        <p class="TITLE">Par&aacute;metros solicitudes por producto</p>
 
-            <p  class="PARRAFO"><span class="PARRAFO"><span class="SUBTITULO">Actualizar:</span>  
-              Si el usuario invoca la opci&oacute;n Actualizar se despliega un nuevo formulario 
-              en el cual los &uacute;nicos campos modificables son: Cupos preaprobados, 
-              Rutina scoring, y Ruta rutina.</span></p>
-            <p class="TITLE"><img src="../img/SOF_001B36.PNG"559" height="245"></p>
-           
-            <p><a href="SOH_001B7.html">Solicitudes</a><span
-              ><b> | </b></span><a href="SOH_001B7c.html">Cupos 
-              extendidos</a><b><span > | </span></b><a href="SOH_001B7d.html">Relaciones 
-              laborales</a><span
-              ><b> | </b></span><a href="SOH_001B7e.html">Cupos 
-              m&iacute;n y m&aacute;x por rango</a><b><span > 
-              <b>|</b></span></b><span ></span><a href="SOH_001B7f.html">Copiar 
-              par&aacute;metros</a><span ></span></p>
-            
-        </section>
-    <script src="../js/menu.js"></script>
+        <p class="PARRAFO"><span class="SUBTITULO">Etapas:</span> En esta
+          opci&oacute;n
+          se definen condiciones espec&iacute;ficas para cada combinatoria
+          producto
+          / tipo de solicitud, sobre las etapas que debe surtir, los filtros a
+          aplicar
+          en cada una de ellas y los documentos que se deben anexar. En el
+          t&iacute;tulo
+          del formulario se despliega la informaci&oacute;n correspondiente al
+          tipo
+          de solicitud y el producto para los cuales se est&aacute;n definiendo
+          par&aacute;metros,
+          y que corresponden al registro seleccionado en la opci&oacute;n
+          Solicitudes.</p>
+        <p class="PARRAFO">El formulario contiene las opciones Actualizar,
+          Eliminar,
+          y Adicionar. Adicionalmente, cuenta con las opciones adicionales: <a
+            href="SOH_001B7b1.html">Filtros
+            negaci&oacute;n</a>, y <a href="SOH_001B7b2.html">Documentos</a>, y
+          un bot&oacute;n
+          en la parte superior para volver al formulario de <a
+            href="SOH_001B7.html">Solicitudes</a>.</p>
+        <p class="TITLE"><img src="../img/SOF_001B34.PNG"></p>
 
-    <div id="footerContainer"></div>
-<script>
+        <p class="PARRAFO"><span class="SUBTITULO">Adicionar:</span> Si
+          el usuario invoca la opci&oacute;n Adicionar se despliega un
+          formulario con
+          los siguientes bloques<span>:</span></p>
+        <p class="TITLE"><img src="../img/SOF_001B35.PNG"></p>
+
+        <table>
+          <tr>
+            <td class="titletable"><p class="SUBTITULO">Descripci&oacute;n
+                etapa </p></td>
+            <td><p class="PARRAFO">Campo
+                que posee lista de valores poblada en la opci&oacute;n <a
+                  href="SOH_001B.html">Etapas</a>
+                de los par&aacute;metros de solicitudes, de la que se selecciona
+                cada
+                una de las etapas que deber&aacute; surtir cada combinatoria
+                producto
+                / tipo de solicitud. Debe tenerse en cuenta que cuando para el
+                producto
+                se ha definido que NO emite pl&aacute;stico, no se deben
+                seleccionar
+                en este campo las etapas de realce, sobreflex de clave y
+                empaque, env&iacute;o
+                a mensajer&iacute;a y acuse recibo de entrega ni aquellas otras
+                que
+                s&oacute;lo aplican para productos que SI emiten pl&aacute;stico
+                como
+                materializaci&oacute;n de la tarjeta.</p></td>
+          </tr>
+          <tr>
+            <td class="titletable"><p class="SUBTITULO">Orden</p></td>
+            <td><p class="PARRAFO">En
+                este campo num&eacute;rico de 2 d&iacute;gitos, obligatorio, se
+                registra
+                la secuencia en la que las etapas deber&aacute;n
+                surtirse.</p></td>
+          </tr>
+          <tr>
+            <td class="titletable"><p class="SUBTITULO">Cupos
+                preaprobados</p></td>
+            <td><p class="PARRAFO">Campo
+                en el que se indica si para esa combinatoria tipo de solicitud /
+                producto,
+                los cupos entran preaprobados o no, y s&oacute;lo aplica para la
+                etapa
+                de Grabaci&oacute;n.</p></td>
+          </tr>
+          <tr>
+            <td class="titletable"><p class="SUBTITULO">Scoring
+                aplicar</p></td>
+            <td><p class="PARRAFO">En
+                este campo con lista de valores debe seleccionarse entre Rutina
+                personalizada
+                o Propio OpenCard, el procedimiento a utilizar en el proceso de
+                scoring
+                y s&oacute;lo se activa para la etapa de
+                Calificaci&oacute;n.</p></td>
+          </tr>
+          <tr>
+            <td class="titletable"><p class="SUBTITULO">Rutina
+                scoring</p></td>
+            <td><p class="PARRAFO">Campo
+                en el que debe registrarse el nombre del procedimiento asociado
+                y solo
+                aplica para cuando se ha se&ntilde;alado Rutina personalizada en
+                el
+                campo Scoring aplicar.</p></td>
+          </tr>
+          <tr>
+            <td class="titletable"><p class="SUBTITULO">Ruta
+                rutina</p></td>
+            <td><p class="PARRAFO">Si
+                el scoring a aplicar a las solicitudes corresponde a
+                aplicaciones propias
+                de la entidad, dentro de este campo se registra la ruta o path
+                en la
+                que se ubican los programas requeridos.</p></td>
+          </tr>
+        </table>
+
+        <p class="PARRAFO">Despu&eacute;s de haber ingresado los datos
+          de cada etapa, se van adicionando
+          una a una mediante el segundo bot&oacute;n del wizard, para luego
+          desplazarse a la segunda p&aacute;gina donde se muestra el
+          resumen de todas, desplegando para cada una los campos C&oacute;digo
+          etapa, Descripci&oacute;n, Orden, Rutina Scoring, Ruta rutina, Scoring
+          aplicar, y Cupos preaprobados. El formulario cuenta con un check que
+          permite
+          marcar aquellas etapas que se deseen Remover.</p>
+        <p class="PARRAFO">Es importante para el usuario tener en cuenta,
+          que en este proceso inicial de adici&oacute;n el sistema requiere que
+          las
+          etapas sean ingresadas de manera que tengan un orden estrictamente
+          secuencial,
+          puesto que de lo contrario no se permitir&aacute; guardar los
+          registros en
+          la base de datos.</p>
+        <p class="TITLE"><img src="../img/SOF_001B35a.PNG"></p>
+
+        <p class="PARRAFO"><span class="PARRAFO"><span
+              class="SUBTITULO">Actualizar:</span>
+            Si el usuario invoca la opci&oacute;n Actualizar se despliega un
+            nuevo formulario
+            en el cual los &uacute;nicos campos modificables son: Cupos
+            preaprobados,
+            Rutina scoring, y Ruta rutina.</span></p>
+        <p class="TITLE"><img src="../img/SOF_001B36.PNG"></p>
+
+        <p><a href="SOH_001B7.html">Solicitudes</a><span> | </span><a
+            href="SOH_001B7c.html">Cupos
+            extendidos</a><span> | </span><a href="SOH_001B7d.html">Relaciones
+            laborales</a><span> | </span><a href="SOH_001B7e.html">Cupos
+            m&iacute;n y m&aacute;x por rango</a><span>
+            |</span><span></span><a href="SOH_001B7f.html">Copiar
+            par&aacute;metros</a><span></span></p>
+
+      </section>
+      <script src="../js/menu.js"></script>
+
+      <div id="footerContainer"></div>
+      <script>
   fetch('footer.html')
     .then(response => response.text())
     .then(html => {
       document.getElementById('footerContainer').innerHTML = html;
     });
 </script>
-</body>
+    </body>
 
-</html>
+  </html>

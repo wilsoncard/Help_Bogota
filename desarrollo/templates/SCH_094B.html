@@ -1,116 +1,127 @@
 <!DOCTYPE html>
 <html lang="es">
 
-<head>
+  <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>BANKBU®</title>
     <link rel="stylesheet" href="../css/pages.css">
     <link rel="stylesheet" href="../css/style.css">
- <link rel="icon" href="../img/ACQUIRER-logo.JPG" type="image/x-icon">
-</head>
+    <link rel="icon" href="../img/ACQUIRER-logo.JPG" type="image/x-icon">
+  </head>
 
-<body>
+  <body>
     <header>
-        <img class="logo" src="../img/logoBankbu_.PNG" alt="Logo de Mi Empresa">
-        <div id="menuBtn">
-            <img class="TITLE"  src= "../img/menu.PNG" alt="Botón de Menú ">
-        </div>
+      <img class="logo" src="../img/logoBankbu_.PNG" alt="Logo de Mi Empresa">
+      <div id="menuBtn">
+        <img class="TITLE" src="../img/menu.PNG" alt="Botón de Menú ">
+      </div>
     </header>
-   <div id="menuContainer"></div>
+    <div id="menuContainer"></div>
     <script>
-      fetch('menu.html')
-        .then(response => response.text())
-        .then(html => {
-          document.getElementById('menuContainer').innerHTML = html;
-        });
-    </script>
+    fetch('menu.html')
+      .then(response => response.text())
+      .then(html => {
+        document.getElementById('menuContainer').innerHTML = html;
+      });
+  </script>
 
     <section>
-        <div> 
-            <table>
-              <tr> 
-                <td><div> 
-                    <p  class="TITLE">Saldos por concepto</p>
-                  </div></td>
-              </tr>
-            </table>
-            <p  class="PARRAFO">En este formulario que se invoca desde el 
-              <a href="SCH_060B.html" >detalle consulta de la tarjeta</a>, 
-              en el hiperv&iacute;nculo informaci&oacute;n b&aacute;sica, saldos 
-              la entidad puede consultar para una fecha en particular la manera como se 
-              afectaron los saldos de la tarjeta, de acuerdo con el concepto de la transacci&oacute;n.</p>
-            <p  class="PARRAFO">Una vez que el actor ingresa la fecha en 
-              formato YYYY-MM-DD mediante el bot&oacute;n Consultar el sistema 
-              trae los registros que coincidan con la b&uacute;squeda y los muestra en el 
-              formulario.</p>
-            <p class="TITLE"><img src="../img/SCF_094E.PNG"157" ></p>
-            
-            <p class="TITLE"><img src="../img/SCF_094E1.PNG"643" height="132"></p>
-            <p  class="TITLE">Descripción de campos</p>
-            <table>
-              <tr> 
-                <td><p class="SUBTITULO"><b>Concepto 
-                    transacci&oacute;n </b></p></td>
-                <td><p  class="PARRAFO">Campo 
-                    que muestra los <a href="NUH_059B.html" >conceptos 
-                    de transacci&oacute;n</a> que tuvieron afectaci&oacute;n en la 
-                    fecha indicada.</p></td>
-              </tr>
-              <tr> 
-                <td    > 
-                  <p class="SUBTITULO"><b>Indicador econ&oacute;mico</b></p></td>
-                <td><p  class="PARRAFO">Si 
-                    para el <a href="NUH_059B.html" >concepto</a> 
-                    se ha definido alg&uacute;n <a href="NUH_043B.html" >indicador 
-                    econ&oacute;mico</a>, en este campo se muestra el c&oacute;digo 
-                    y descripci&oacute;n del mismo.</p></td>
-              </tr>
-              <tr> 
-                <td class="titletable"><p class="SUBTITULO"><b>Saldo 
-                    afecta promedio</b></p></td>
-                <td><p  class="PARRAFO">En 
-                    caso que el concepto afecte el saldo promedio de la tarjeta, en este 
-                    campo se muestra el monto de las transacciones efectuadas en la fecha 
-                    indicada. Este campo es mutuamente excluyente con el siguiente.</p></td>
-              </tr>
-           
-              <tr> 
-                <td class="titletable"><p class="SUBTITULO"><b>Saldo 
-                    no afecta promedio
-                    </b></p></td>
-                <td><p  class="PARRAFO">Cuando 
-                    el concepto no afecta el saldo promedio de la tarjeta, en este campo 
-                    se muestra el monto de las transacciones efectuadas en la fecha indicada. 
-                    Este campo es mutuamente excluyente con el anterior.</p></td>
-              </tr>
-           
-              <tr> 
-                <td class="titletable"><p class="SUBTITULO"><b>Saldo 
-                    promedio
-                    </b></p></td>
-                <td><p  class="PARRAFO">Este 
-                    campo despliega el valor del saldo promedio para la fecha de consulta 
-                    y el respectivo concepto de la transacci&oacute;n. El saldo promedio 
-                    se incrementa con los nuevos consumos y se disminuye con los pagos realizados; 
-                    de igual manera otras transacciones tambi&eacute;n lo pueden afectar 
-                    aument&aacute;ndolo o disminuy&eacute;ndolo de acuerdo con la manera 
-                    en que se hayan parametrizado los <a href="NUH_059B.html" >conceptos 
-                    de transacci&oacute;n</a>.
-                  </p></td>
-              </tr>
-            </table>
-        </section>
-    <script src="../js/menu.js"></script>
+      <div>
 
-    <div id="footerContainer"></div>
-<script>
+        <p class="TITLE">Saldos por concepto</p>
+
+        <p class="PARRAFO">En este formulario que se invoca desde el
+          <a href="SCH_060B.html">detalle consulta de la tarjeta</a>,
+          en el hiperv&iacute;nculo informaci&oacute;n b&aacute;sica, saldos
+          la entidad puede consultar para una fecha en particular la manera como
+          se
+          afectaron los saldos de la tarjeta, de acuerdo con el concepto de la
+          transacci&oacute;n.</p>
+        <p class="PARRAFO">Una vez que el actor ingresa la fecha en
+          formato YYYY-MM-DD mediante el bot&oacute;n Consultar el sistema
+          trae los registros que coincidan con la b&uacute;squeda y los muestra
+          en el
+          formulario.</p>
+        <p class="TITLE"><img src="../img/SCF_094E.PNG"></p>
+
+        <p class="TITLE"><img src="../img/SCF_094E1.PNG"></p>
+        <p class="TITLE">Descripción de campos</p>
+        <table>
+          <tr>
+            <td><p class="SUBTITULO">Concepto
+                transacci&oacute;n </p></td>
+            <td><p class="PARRAFO">Campo
+                que muestra los <a href="NUH_059B.html">conceptos
+                  de transacci&oacute;n</a> que tuvieron afectaci&oacute;n en la
+                fecha indicada.</p></td>
+          </tr>
+          <tr>
+            <td>
+              <p class="SUBTITULO">Indicador econ&oacute;mico</p></td>
+            <td><p class="PARRAFO">Si
+                para el <a href="NUH_059B.html">concepto</a>
+                se ha definido alg&uacute;n <a href="NUH_043B.html">indicador
+                  econ&oacute;mico</a>, en este campo se muestra el
+                c&oacute;digo
+                y descripci&oacute;n del mismo.</p></td>
+          </tr>
+          <tr>
+            <td class="titletable"><p class="SUBTITULO">Saldo
+                afecta promedio</p></td>
+            <td><p class="PARRAFO">En
+                caso que el concepto afecte el saldo promedio de la tarjeta, en
+                este
+                campo se muestra el monto de las transacciones efectuadas en la
+                fecha
+                indicada. Este campo es mutuamente excluyente con el
+                siguiente.</p></td>
+          </tr>
+
+          <tr>
+            <td class="titletable"><p class="SUBTITULO">Saldo
+                no afecta promedio
+              </p></td>
+            <td><p class="PARRAFO">Cuando
+                el concepto no afecta el saldo promedio de la tarjeta, en este
+                campo
+                se muestra el monto de las transacciones efectuadas en la fecha
+                indicada.
+                Este campo es mutuamente excluyente con el anterior.</p></td>
+          </tr>
+
+          <tr>
+            <td class="titletable"><p class="SUBTITULO">Saldo
+                promedio
+              </p></td>
+            <td><p class="PARRAFO">Este
+                campo despliega el valor del saldo promedio para la fecha de
+                consulta
+                y el respectivo concepto de la transacci&oacute;n. El saldo
+                promedio
+                se incrementa con los nuevos consumos y se disminuye con los
+                pagos realizados;
+                de igual manera otras transacciones tambi&eacute;n lo pueden
+                afectar
+                aument&aacute;ndolo o disminuy&eacute;ndolo de acuerdo con la
+                manera
+                en que se hayan parametrizado los <a
+                  href="NUH_059B.html">conceptos
+                  de transacci&oacute;n</a>.
+              </p></td>
+          </tr>
+        </table>
+      </section>
+      <script src="../js/menu.js"></script>
+
+      <div id="footerContainer"></div>
+      <script>
   fetch('footer.html')
     .then(response => response.text())
     .then(html => {
       document.getElementById('footerContainer').innerHTML = html;
     });
 </script>
-</body>
+    </body>
 
-</html>
+  </html>

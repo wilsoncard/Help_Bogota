@@ -18,26 +18,20 @@
       <img class="TITLE" src="../img/menu.PNG" alt="Botón de Menú ">
     </div>
   </header>
-  <div id="menuContainer"></div>
-    <script>
-      fetch('menu.html')
-        .then(response => response.text())
-        .then(html => {
-          document.getElementById('menuContainer').innerHTML = html;
-        });
-    </script>
+    <div id="menuContainer"></div>
+  <script>
+    fetch('menu.html')
+      .then(response => response.text())
+      .then(html => {
+        document.getElementById('menuContainer').innerHTML = html;
+      });
+  </script>
 
   <section>
     <div>
-      <table>
-        <tr>
-          <td>
-            <div>
+      
               <p class="TITLE">Comisiones</p>
-            </div>
-          </td>
-        </tr>
-      </table>
+
       <p>A trav&eacute;s de esta opci&oacute;n se parametrizan las comisiones que devengan los agentes de cobro; de
         igual manera este formulario permite relacionar por rangos de saldos de las obligaciones montos diferentes
         de comisiones, al igual que determinar si &eacute;stas benefician a niveles jer&aacute;rquicos superiores. </p>
@@ -91,13 +85,13 @@
 
       <p class="PARRAFO"><span class="SUBTITULO">Adicionar:</span>  Si
         el usuario invoca la opci&oacute;n Adicionar se despliega un formulario con
-        los siguientes campos<span>:</span></p>
+        los siguientes campos:</span></p>
       <p class="TITLE"><img src="../img/CCF_009B2.PNG"></p>
 
       <table>
         <tr>
           <td class="titletable">
-            <p class="SUBTITULO"><b><span>Tipo de cobro </span></b></p>
+            <p class="SUBTITULO">Tipo de cobro </span></p>
           </td>
           <td>
             <p>Campo con lista de valores de la cual debe seleccionarse la <A href="CCH_002B.html"
@@ -106,7 +100,7 @@
         </tr>
         <tr>
           <td class="titletable">
-            <p class="SUBTITULO"><span>Actividad</span></p>
+            <p class="SUBTITULO">Actividad</span></p>
           </td>
           <td>
             <p>Este campo cuenta con lista de valores poblada a trav&eacute;s de la opci&oacute;n <A
@@ -117,7 +111,7 @@
         </tr>
         <tr>
           <td class="titletable">
-            <p class="SUBTITULO"><b><span><span>Valor inicial </span></span></b></p>
+            <p class="SUBTITULO">Valor inicial </span></span></p>
           </td>
           <td>
             <p class="PARRAFO">En este campo num&eacute;rico de 14 d&iacute;gitos con 2 decimales, obligatorio, se
@@ -128,7 +122,7 @@
         </tr>
         <tr>
           <td class="titletable">
-            <p class="SUBTITULO"><b><span><span>Valor final </span></span></b></p>
+            <p class="SUBTITULO">Valor final </span></span></p>
           </td>
           <td>
             <p>Campo num&eacute;rico de 14 d&iacute;gitos con 2 decimales, obligatorio, dentro del que se registra el
@@ -138,7 +132,7 @@
         </tr>
         <tr>
           <td class="titletable">
-            <p class="SUBTITULO"><b><span>Moneda</span></b></p>
+            <p class="SUBTITULO">Moneda</span></p>
           </td>
           <td>
             <p class="PARRAFO">Despliega el c&oacute;digo de la <A href="NUH_005B.html">moneda</A> en que se
@@ -147,7 +141,7 @@
         </tr>
         <tr>
           <td class="titletable">
-            <p class="SUBTITULO"><b><span><span>Valor comisi&oacute;n </span></span></b></p>
+            <p class="SUBTITULO">Valor comisi&oacute;n </span></span></p>
           </td>
           <td>
             <p>Campo num&eacute;rico de 14 d&iacute;gitos con 2 decimales, obligatorio, en el que se registra el valor a
@@ -156,7 +150,7 @@
         </tr>
         <tr>
           <td class="titletable">
-            <p class="SUBTITULO"><b><span><span>Aplicar</span></span></b></p>
+            <p class="SUBTITULO">Aplicar</span></span></p>
           </td>
           <td>
             <p>Campo con lista de valores entre los que se puede seleccionar Valor comisionado, Valor recuperado o
@@ -166,7 +160,7 @@
         </tr>
         <tr>
           <td class="titletable">
-            <p class="SUBTITULO"><b><span><span>Porcentaje comisi&oacute;n </span></span></b></p>
+            <p class="SUBTITULO">Porcentaje comisi&oacute;n </span></span></p>
           </td>
           <td>
             <p class="PARRAFO">En este campo num&eacute;rico de 3 d&iacute;gitos con 2 decimales, no obligatorio, se
@@ -174,15 +168,10 @@
               sobre el valor que se determine en el campo anterior.</p>
           </td>
         </tr>
-      </table>
 
-      <p>Comisi&oacute;n por refinanciaci&oacute;nEn caso que el resutlado de la gesti&oacute;n de cobro sea
-        la refinanciaci&oacute;n de la obligaci&oacute;n, en los dos campos de esta agrupaci&oacute;n se registran los
-        valores de comisi&oacute;n que genera para el agente.</p>
-      <table>
         <tr>
           <td class="titletable">
-            <p class="SUBTITULO"><b><span><span>Porcentaje refinanciaci&oacute;n </span></span></b></p>
+            <p class="SUBTITULO">Porcentaje refinanciaci&oacute;n </span></span></p>
           </td>
           <td>
             <p class="PARRAFO">Campo en el que se registra el valor del porcentaje a aplicar para calcular la
@@ -191,7 +180,7 @@
         </tr>
         <tr>
           <td class="titletable">
-            <p class="SUBTITULO"><b><span><span>Valor refinanciaci&oacute;n </span></span></b></p>
+            <p class="SUBTITULO">Valor refinanciaci&oacute;n </span></span></p>
           </td>
           <td>
             <p class="PARRAFO">Este campo contiene el valor sobre el cual se aplicar&aacute; el porcentaje definido en

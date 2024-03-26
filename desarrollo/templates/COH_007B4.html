@@ -1,171 +1,197 @@
 <!DOCTYPE html>
 <html lang="es">
 
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>BANKBU®</title>
-  <link rel="stylesheet" href="../css/pages.css">
-  <link rel="stylesheet" href="../css/style.css">
-  <link rel="icon" href="../img/ACQUIRER-logo.JPG" type="image/x-icon">
-</head>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BANKBU®</title>
+    <link rel="stylesheet" href="../css/pages.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="icon" href="../img/ACQUIRER-logo.JPG" type="image/x-icon">
+  </head>
 
-<body>
+  <body>
 
-  <header>
-    <img class="logo" src="../img/logoBankbu_.PNG" alt="Logo de Mi Empresa">
-    <div id="menuBtn">
-      <img class="TITLE" src="../img/menu.PNG" alt="Botón de Menú ">
-    </div>
-  </header>
-  <div id="menuContainer"></div>
+    <header>
+      <img class="logo" src="../img/logoBankbu_.PNG" alt="Logo de Mi Empresa">
+      <div id="menuBtn">
+        <img class="TITLE" src="../img/menu.PNG" alt="Botón de Menú ">
+      </div>
+    </header>
+    <div id="menuContainer"></div>
     <script>
-      fetch('menu.html')
-        .then(response => response.text())
-        .then(html => {
-          document.getElementById('menuContainer').innerHTML = html;
-        });
-    </script>
+    fetch('menu.html')
+      .then(response => response.text())
+      .then(html => {
+        document.getElementById('menuContainer').innerHTML = html;
+      });
+  </script>
 
-  <section>
-    <div>
-      <table>
-        <tr>
-          <td>
-            <div>
-              <p class="TITLE">Puertos</p>
-            </div>
-          </td>
-        </tr>
-      </table>
-      <p class="PARRAFO"><span class="SUBTITULO">Par&aacute;metros valida existencia
-          autorizaci&oacute;n:</span>  Esta opci&oacute;n permite parametrizar, para
-        cada uno de los procesos definidos en la opci&oacute;n <a href="COH_016B.html">Validaci&oacute;n
-          de procesos</a>, los campos a considerar en las validaciones. Tambi&eacute;n
-        se tienen en cuenta, para cada proceso, el puerto de conexi&oacute;n y la
-        franquicia a la cual se asocia el registro.</p>
-      <p class="PARRAFO">El formulario contiene las opciones Actualizar, Eliminar,
-        y Adicionar. Adicionalmente, cuenta con la opci&oacute;n Validaciones y un bot&oacute;n en la parte
-        superior para ir a la opci&oacute;n anterior: <a href="COH_007B.html">Puertos</a>.</p>
-      <p class="TITLE"><img src="../img/COF_007B16.PNG"></p>
+    <section>
+      <div>
+        <p class="TITLE">Puertos</p>
+              
+        <p class="PARRAFO"><span class="SUBTITULO">Par&aacute;metros valida
+            existencia
+            autorizaci&oacute;n:</span> Esta opci&oacute;n permite parametrizar,
+          para
+          cada uno de los procesos definidos en la opci&oacute;n <a
+            href="COH_016B.html">Validaci&oacute;n
+            de procesos</a>, los campos a considerar en las validaciones.
+          Tambi&eacute;n
+          se tienen en cuenta, para cada proceso, el puerto de conexi&oacute;n y
+          la
+          franquicia a la cual se asocia el registro.</p>
+        <p class="PARRAFO">El formulario contiene las opciones Actualizar,
+          Eliminar,
+          y Adicionar. Adicionalmente, cuenta con la opci&oacute;n Validaciones
+          y un bot&oacute;n en la parte
+          superior para ir a la opci&oacute;n anterior: <a
+            href="COH_007B.html">Puertos</a>.</p>
+        <p class="TITLE"><img src="../img/COF_007B16.PNG"></p>
 
-      <p><span class="SUBTITULO">Filtro:</span>  Se pueden realizar consultas a trav&eacute;s
-        de las siguientes opciones: </p>
-      <p class="TITLE"><img src="../img/COF_007B15.PNG"></p>
+        <p><span class="SUBTITULO">Filtro:</span> Se pueden realizar consultas a
+          trav&eacute;s
+          de las siguientes opciones: </p>
+        <p class="TITLE"><img src="../img/COF_007B15.PNG"></p>
 
-      <table>
-        <tr>
-          <td class="titletable">
-            <p class="SUBTITULO"><b>Marca
-              </b></p>
-          </td>
-          <td>
-            <p class="PARRAFO">Campo
-              obligatorio, en el cual se selecciona de la lista de valores la <a href="NUH_033B.html">Franquicia</a>
-              o marca para la que se est&aacute;n definiendo los par&aacute;metros
-              de validaci&oacute;n.</p>
-          </td>
-        </tr>
-      </table>
+        <table>
+          <tr>
+            <td class="titletable">
+              <p class="SUBTITULO">Marca
+              </p>
+            </td>
+            <td>
+              <p class="PARRAFO">Campo
+                obligatorio, en el cual se selecciona de la lista de valores la
+                <a href="NUH_033B.html">Franquicia</a>
+                o marca para la que se est&aacute;n definiendo los
+                par&aacute;metros
+                de validaci&oacute;n.</p>
+            </td>
+          </tr>
+        </table>
 
-      <p><span class="SUBTITULO">Adicionar:</span>  Si el usuario invoca
-        la opci&oacute;n Adicionar se despliega un formulario con los siguientes campos<span>:</span></p>
-      <p class="TITLE"><img src="../img/COF_007B17.PNG"></p>
+        <p><span class="SUBTITULO">Adicionar:</span> Si el usuario invoca
+          la opci&oacute;n Adicionar se despliega un formulario con los
+          siguientes campos:</span></p>
+        <p class="TITLE"><img src="../img/COF_007B17.PNG"></p>
 
-      <table>
-        <tr>
-          <td class="titletable">
-            <p class="SUBTITULO"><b>Proceso
+        <table>
+          <tr>
+            <td class="titletable">
+              <p class="SUBTITULO">Proceso
                 a validar
-              </b></p>
-          </td>
-          <td>
-            <p class="PARRAFO">Este
-              campo obligatorio, cuenta con lista de valores poblada a trav&eacute;s
-              de la opci&oacute;n <a href="COH_016B.html">C&oacute;digos de procesos a validar</a>, de la cual se
-              selecciona el proceso para el cual se definen
-              los campos a validar.</p>
-          </td>
-        </tr>
-        <tr>
-          <td class="titletable">
-            <p class="SUBTITULO"><b>Porcentaje cantidad de variaci&oacute;n </b></p>
-          </td>
-          <td>
-            <p class="PARRAFO">Diferencia permitida, en t&eacute;rminos porcentuales, entre el monto de la compra
-              registrado en el comprobante y el valor de la autorizaci&oacute;n. Si no se establece el par&aacute;metro,
-              los valores a comparar deben ser iguales.</p>
-          </td>
-        </tr>
-        <tr>
-          <td class="titletable">
-            <p class="SUBTITULO"><b>D&iacute;as fecha de variaci&oacute;n </b></p>
-          </td>
-          <td>
-            <p>En este campo se define un n&uacute;mero de d&iacute;as permitidos como diferencia entre la fecha de la
-              autorizaci&oacute;n y la fecha registrada en el comprobante. Si no se establece el par&aacute;metro, las
-              fechas que se comparan deben ser iguales.</p>
-          </td>
-        </tr>
-      </table>
+              </p>
+            </td>
+            <td>
+              <p class="PARRAFO">Este
+                campo obligatorio, cuenta con lista de valores poblada a
+                trav&eacute;s
+                de la opci&oacute;n <a href="COH_016B.html">C&oacute;digos de
+                  procesos a validar</a>, de la cual se
+                selecciona el proceso para el cual se definen
+                los campos a validar.</p>
+            </td>
+          </tr>
+          <tr>
+            <td class="titletable">
+              <p class="SUBTITULO">Porcentaje cantidad de variaci&oacute;n </p>
+            </td>
+            <td>
+              <p class="PARRAFO">Diferencia permitida, en t&eacute;rminos
+                porcentuales, entre el monto de la compra
+                registrado en el comprobante y el valor de la
+                autorizaci&oacute;n. Si no se establece el par&aacute;metro,
+                los valores a comparar deben ser iguales.</p>
+            </td>
+          </tr>
+          <tr>
+            <td class="titletable">
+              <p class="SUBTITULO">D&iacute;as fecha de variaci&oacute;n </p>
+            </td>
+            <td>
+              <p>En este campo se define un n&uacute;mero de d&iacute;as
+                permitidos como diferencia entre la fecha de la
+                autorizaci&oacute;n y la fecha registrada en el comprobante. Si
+                no se establece el par&aacute;metro, las
+                fechas que se comparan deben ser iguales.</p>
+            </td>
+          </tr>
+        </table>
 
-      <p class="PARRAFO"><span class="PARRAFO"><span class="SUBTITULO">Actualizar:</span> 
-          Si el usuario invoca la opci&oacute;n Actualizar se despliega un nuevo formulario
-          en el cual los &uacute;nicos campos modificables son: </span></p>
-      <p class="TITLE"><img src="../img/COF_007B18.PNG"></p>
+        <p class="PARRAFO"><span class="PARRAFO"><span
+              class="SUBTITULO">Actualizar:</span>
+            Si el usuario invoca la opci&oacute;n Actualizar se despliega un
+            nuevo formulario
+            en el cual los &uacute;nicos campos modificables son: </span></p>
+        <p class="TITLE"><img src="../img/COF_007B18.PNG"></p>
 
-      <p><span class="SUBTITULO">Validaciones:</span>  En este grupo de datos se seleccionan, entre
-        una serie de opciones posibles, los campos que se van a validar; las diferentes
-        opciones se activan o no dependiendo de la combinaci&oacute;n puerto &#8211;
-        proceso a validar de cada registro, tal y como se puede apreciar en las pantallas
-        mostradas en este documento. A continuaci&oacute;n se describen todos los
-        posibles campos que se despliegan:</p>
-      <p class="TITLE"><img src="../img/COF_007B19.PNG"></p>
+        <p><span class="SUBTITULO">Validaciones:</span> En este grupo de datos
+          se seleccionan, entre
+          una serie de opciones posibles, los campos que se van a validar; las
+          diferentes
+          opciones se activan o no dependiendo de la combinaci&oacute;n puerto
+          &#8211;
+          proceso a validar de cada registro, tal y como se puede apreciar en
+          las pantallas
+          mostradas en este documento. A continuaci&oacute;n se describen todos
+          los
+          posibles campos que se despliegan:</p>
+        <p class="TITLE"><img src="../img/COF_007B19.PNG"></p>
 
+        <p><span class="SUBTITULO">Adicionar:</span> Si el usuario invoca
+          la opci&oacute;n Adicionar se despliega un formulario con los
+          siguientes campos:</span></p>
+        <p class="TITLE"><img src="../img/COF_007B20.PNG"></p>
 
-      <p><span class="SUBTITULO">Adicionar:</span>  Si el usuario invoca
-        la opci&oacute;n Adicionar se despliega un formulario con los siguientes campos<span>:</span></p>
-      <p class="TITLE"><img src="../img/COF_007B20.PNG"></p>
+        <table>
+          <tr>
+            <td class="titletable">
+              <p class="SUBTITULO">Validaci&oacute;n</p>
+            </td>
+            <td>
+              <p class="PARRAFO">Campo obligatorio que posee lista de valores
+                poblada en la opción Validaciones, de la que debe seleccionarse
+                el código de la validación a adicionar.e campo.</p>
+            </td>
+          </tr>
+          <tr>
+            <td class="titletable">
+              <p class="SUBTITULO">Habilitado</p>
+            </td>
+            <td>
+              <p class="PARRAFO">Campo que posee lista de valores tipo combo con
+                las opciones Si / No, lo cual le indica al proceso que realiza
+                las validaciones de si la debe tener en consideración o no.</p>
+            </td>
+          </tr>
+        </table>
 
-      <table>
-        <tr>
-          <td class="titletable">
-            <p class="SUBTITULO"><b>Validaci&oacute;n</b></p>
-          </td>
-          <td>
-            <p class="PARRAFO">Campo obligatorio que posee lista de valores poblada en la opción Validaciones, de la que debe seleccionarse el código de la validación a adicionar.e campo.</p>
-          </td>
-        </tr>
-        <tr>
-          <td class="titletable">
-            <p class="SUBTITULO"><b>Habilitado</b></p>
-          </td>
-          <td>
-            <p class="PARRAFO">Campo que posee lista de valores tipo combo con las opciones Si / No, lo cual le indica al proceso que realiza las validaciones de si la debe tener en consideración o no.</p>
-          </td>
-        </tr>
-      </table>
+        <p class="PARRAFO"><span class="SUBTITULO">Actualizar:</span> Si el
+          usuario invoca la opci&oacute;n Actualizar se
+          despliega un nuevo formulario
+          y el &uacute;nico campo modificable es Habilitado. </p>
+        <p class="TITLE"><img src="../img/COF_007B21.PNG"></p>
 
-      <p class="PARRAFO"><span class="SUBTITULO">Actualizar:</span>  Si el usuario invoca la opci&oacute;n Actualizar se
-        despliega un nuevo formulario
-        y el &uacute;nico campo modificable es Habilitado. </p>
-      <p class="TITLE"><img src="../img/COF_007B21.PNG"></p>
+        <p><a href="COH_007B.html">Puertos</a> | </span><a
+            href="COH_007B1.html">Validaciones
+            por puerto</a> | </span><a
+            href="COH_007B2.html">Direcciones</a> | </span><a
+            href="COH_007B3.html">L&iacute;mite
+            de autorizaciones</a>
+          |</span>
+          <a href="COH_007B5.html">Límite de autorizaciones ContacLess</a></p>
 
-      <p><a href="COH_007B.html">Puertos</a><span><b> | </b></span><a href="COH_007B1.html">Validaciones
-          por puerto</a><b><span> | </span></b><a href="COH_007B2.html">Direcciones</a><span><b> | </b></span><a href="COH_007B3.html">L&iacute;mite 
-              de autorizaciones</a>
-              <span><b>|</b></span>   
-            <a href="COH_007B5.html">Límite de autorizaciones ContacLess</a></p>
-            
-        </section>
-    <script src="../js/menu.js"></script>
-</body>
-<div id="footerContainer"></div>
-<script>
+      </section>
+      <script src="../js/menu.js"></script>
+    </body>
+    <div id="footerContainer"></div>
+    <script>
   fetch('footer.html')
     .then(response => response.text())
     .then(html => {
       document.getElementById('footerContainer').innerHTML = html;
     });
 </script>
-</html>
+  </html>

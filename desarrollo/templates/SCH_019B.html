@@ -1,117 +1,124 @@
 <!DOCTYPE html>
 <html lang="es">
 
-<head>
+  <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>BANKBU®</title>
     <link rel="stylesheet" href="../css/pages.css">
     <link rel="stylesheet" href="../css/style.css">
- <link rel="icon" href="../img/ACQUIRER-logo.JPG" type="image/x-icon">
-</head>
+    <link rel="icon" href="../img/ACQUIRER-logo.JPG" type="image/x-icon">
+  </head>
 
-<body>
+  <body>
     <header>
-        <img class="logo" src="../img/logoBankbu_.PNG" alt="Logo de Mi Empresa">
-        <div id="menuBtn">
-            <img class="TITLE"  src= "../img/menu.PNG" alt="Botón de Menú ">
-        </div>
+      <img class="logo" src="../img/logoBankbu_.PNG" alt="Logo de Mi Empresa">
+      <div id="menuBtn">
+        <img class="TITLE" src="../img/menu.PNG" alt="Botón de Menú ">
+      </div>
     </header>
-   <div id="menuContainer"></div>
+    <div id="menuContainer"></div>
     <script>
-      fetch('menu.html')
-        .then(response => response.text())
-        .then(html => {
-          document.getElementById('menuContainer').innerHTML = html;
-        });
-    </script>
+    fetch('menu.html')
+      .then(response => response.text())
+      .then(html => {
+        document.getElementById('menuContainer').innerHTML = html;
+      });
+  </script>
 
     <section>
-        <div> 
-            <table>
-              <tr> 
-                <td><div> 
-                    <p  class="TITLE">Novedad cuenta debitar</p>
-                  </div></td>
-              </tr>
-            </table>
-            <p  class="PARRAFO">En este formulario invocado desde la opci&oacute;n 
-              <a href="SCH_075B1.html" >ingreso de novedades</a>, 
-              (issuer) se permite a la entidad asociar o modificar la cuenta corriente o 
-              de ahorros registrada por el cliente para efectuarle el d&eacute;bito autom&aacute;tica 
-              y cubrir el pago m&iacute;nimo o el pago total de la tarjeta de cr&eacute;dito. 
-             
-            </p>
-            <p class="TITLE"><img src="../img/SCF_019E.PNG"369" ></p>
-            <p  class="TITLE">Descripci&oacute;n de campos</p>
-            <table>
-              <tr> 
-                <td class="titletable"><p class="SUBTITULO"><b><span 
-        > 
-                    D&eacute;bito cubre</span></b></p></td>
-                <td><p  class="PARRAFO">Campo 
-                    tipo combo en el que se selecciona entre Pago m&iacute;nimo o Pago total 
-                    el valor que se debe enviar para el d&eacute;bito autom&aacute;tico.</p></td>
-              </tr>
-           
-              <tr> 
-                <td  class="titletable" ><p class="SUBTITULO"><b><span 
-        > 
-                    Clase cuenta</span></b></p></td>
-                <td><p  class="PARRAFO">En 
-                    este campo tipo combo se selecciona entre Ahorros, Corriente o Rotativo 
-                    la clase de cuenta que se desea registrar para el d&eacute;bito autom&aacute;tico.</p></td>
-              </tr>
-              <tr> 
-                <td  class="titletable" ><p class="SUBTITULO"><b><span 
-        > 
-                    Moneda</span></b></p></td>
-                <td><p  class="PARRAFO">Campo 
-                    con lista de valores de la cual se puede seleccionar la <a href="NUH_005B.html" >Moneda</a> 
-                    en la cual se encuentra denominada la cuenta para el d&eacute;bito.</p></td>
-              </tr>
-              <tr> 
-                <td  class="titletable" ><p class="SUBTITULO"><b><span 
-        > 
-                    Cuenta debitar</span></b></p></td>
-                <td><p  class="PARRAFO">En 
-                    este campo se registra el n&uacute;mero de cuenta que el cliente desea 
-                    registrar para que se le efect&uacute;e el d&eacute;bito autom&aacute;tico.</p></td>
-              </tr>
-              <tr> 
-                <td class="titletable"><p class="SUBTITULO"><b><span 
-        >Fecha 
-                    de radicaci&oacute;n</span></b></p></td>
-                <td><p  class="PARRAFO">Campo 
-                    obligatorio en el que se registra en formato YYYY-MM-DD la fecha en 
-                    la cual se solicit&oacute; el cambio o adici&oacute;n de la cuenta a 
-                    debitar y que puede ser una fecha anterior a la actual del sistema, 
-                    facilitando el ingreso de novedades de fechas anteriores. </p></td>
-              </tr>
-           
-              <tr> 
-                <td  class="titletable" ><p class="SUBTITULO"><b><span 
-        > 
-                    Sucursal cuenta</span></b></p></td>
-                <td><p  class="PARRAFO">En 
-                    este campo con lista de valores se puede seleccionar la <a href="NUH_020B.html" >sucursal</a> 
-                    a la cual pertenece la cuenta que se est&aacute; registrando para d&eacute;bito 
-                    autom&aacute;tico. </p></td>
-              </tr>
-            </table>
+      <div>
 
-            <div>
+        <p class="TITLE">Novedad cuenta debitar</p>
+
+        <p class="PARRAFO">En este formulario invocado desde la opci&oacute;n
+          <a href="SCH_075B1.html">ingreso de novedades</a>,
+          (issuer) se permite a la entidad asociar o modificar la cuenta
+          corriente o
+          de ahorros registrada por el cliente para efectuarle el d&eacute;bito
+          autom&aacute;tica
+          y cubrir el pago m&iacute;nimo o el pago total de la tarjeta de
+          cr&eacute;dito.
+
+        </p>
+        <p class="TITLE"><img src="../img/SCF_019E.PNG"></p>
+        <p class="TITLE">Descripci&oacute;n de campos</p>
+        <table>
+          <tr>
+            <td class="titletable"><p class="SUBTITULO"><span>
+                  D&eacute;bito cubre</span></p></td>
+            <td><p class="PARRAFO">Campo
+                tipo combo en el que se selecciona entre Pago m&iacute;nimo o
+                Pago total
+                el valor que se debe enviar para el d&eacute;bito
+                autom&aacute;tico.</p></td>
+          </tr>
+
+          <tr>
+            <td class="titletable"><p class="SUBTITULO"><span>
+                  Clase cuenta</span></p></td>
+            <td><p class="PARRAFO">En
+                este campo tipo combo se selecciona entre Ahorros, Corriente o
+                Rotativo
+                la clase de cuenta que se desea registrar para el d&eacute;bito
+                autom&aacute;tico.</p></td>
+          </tr>
+          <tr>
+            <td class="titletable"><p class="SUBTITULO"><span>
+                  Moneda</span></p></td>
+            <td><p class="PARRAFO">Campo
+                con lista de valores de la cual se puede seleccionar la <a
+                  href="NUH_005B.html">Moneda</a>
+                en la cual se encuentra denominada la cuenta para el
+                d&eacute;bito.</p></td>
+          </tr>
+          <tr>
+            <td class="titletable"><p class="SUBTITULO"><span>
+                  Cuenta debitar</span></p></td>
+            <td><p class="PARRAFO">En
+                este campo se registra el n&uacute;mero de cuenta que el cliente
+                desea
+                registrar para que se le efect&uacute;e el d&eacute;bito
+                autom&aacute;tico.</p></td>
+          </tr>
+          <tr>
+            <td class="titletable"><p class="SUBTITULO"><span>Fecha
+                  de radicaci&oacute;n</span></p></td>
+            <td><p class="PARRAFO">Campo
+                obligatorio en el que se registra en formato YYYY-MM-DD la fecha
+                en
+                la cual se solicit&oacute; el cambio o adici&oacute;n de la
+                cuenta a
+                debitar y que puede ser una fecha anterior a la actual del
+                sistema,
+                facilitando el ingreso de novedades de fechas anteriores.
+              </p></td>
+          </tr>
+
+          <tr>
+            <td class="titletable"><p class="SUBTITULO"><span>
+                  Sucursal cuenta</span></p></td>
+            <td><p class="PARRAFO">En
+                este campo con lista de valores se puede seleccionar la <a
+                  href="NUH_020B.html">sucursal</a>
+                a la cual pertenece la cuenta que se est&aacute; registrando
+                para d&eacute;bito
+                autom&aacute;tico. </p></td>
+          </tr>
+        </table>
+
+        <div>
         </section>
-    <script src="../js/menu.js"></script>
+        <script src="../js/menu.js"></script>
 
-    <div id="footerContainer"></div>
-<script>
+        <div id="footerContainer"></div>
+        <script>
   fetch('footer.html')
     .then(response => response.text())
     .then(html => {
       document.getElementById('footerContainer').innerHTML = html;
     });
 </script>
-</body>
+      </body>
 
-</html>
+    </html>

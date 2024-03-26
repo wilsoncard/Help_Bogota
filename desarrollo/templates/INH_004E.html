@@ -19,24 +19,20 @@
             <img class="TITLE"  src= "../img/menu.PNG" alt="Botón de Menú ">
         </div>
     </header>
-   <div id="menuContainer"></div>
-    <script>
-      fetch('menu.html')
-        .then(response => response.text())
-        .then(html => {
-          document.getElementById('menuContainer').innerHTML = html;
-        });
-    </script>
+      <div id="menuContainer"></div>
+  <script>
+    fetch('menu.html')
+      .then(response => response.text())
+      .then(html => {
+        document.getElementById('menuContainer').innerHTML = html;
+      });
+  </script>
 
     <section>
         <div> 
-            <table>
-              <tr> 
-                <td><div> 
+            
                     <p  class="TITLE">Supervisor captura movimento oficina</p>
-                    </div></td>
-              </tr>
-            </table>
+                    
             <p class="PARRAFO">A trav&eacute;s de esta opci&oacute;n el sistema permite 
               el ingreso manual del movimiento de transacciones de Pago, Avances, Pago de 
               impuestos y Compras o consumos realizados por los clientes en los establecimientos. 
@@ -66,7 +62,7 @@
                     cual se ingresa movimiento.</p></td>
               </tr>
               <tr> 
-                <td class="titletable"><p class="SUBTITULO"><b>Oficina</b></p></td>
+                <td class="titletable"><p class="SUBTITULO">Oficina</p></td>
                 <td><p class="PARRAFO">Campo 
                     obligatorio en el que se digita el c&oacute;digo de la oficina para la cual se va 
                     a capturar o supervisar (dependiendo de la opci&oacute;n dentro de men&uacute;) 
@@ -93,8 +89,8 @@
                     de licenciamiento</a>.</p></td>
               </tr>
               <tr> 
-                <td  class="titletable" ><p class="SUBTITULO"><b>Boleta 
-                    de ruta</b></p></td>
+                <td  class="titletable" ><p class="SUBTITULO">Boleta 
+                    de ruta</p></td>
                 <td><p class="PARRAFO">Campo 
                     num&eacute;rico de 3 d&iacute;gitos, obligatorio, corresponde a un segundo 
                     nivel de clasificaci&oacute;n o agrupaci&oacute;n del movimiento a capturar 
@@ -135,9 +131,9 @@
             <p class="TITLE"><span ><img src="../img/INF_004B14.PNG"></span></p>
               
             <p><a href="INH_004B1.html">Compras</a><span
-              ><b> | </b></span><a href="INH_004B2.html">Avances</a><b><span > 
-              | </span></b><a href="INH_004B3.html">Impuestos</a><span
-              ><b> | </b></span><a href="INH_004B4.html">Pagos</a><b></b></p>
+              > | </span><a href="INH_004B2.html">Avances</a><span > 
+              | </span><a href="INH_004B3.html">Impuestos</a><span
+              > | </span><a href="INH_004B4.html">Pagos</a></p>
           </div>  
         </section>
     <script src="../js/menu.js"></script>

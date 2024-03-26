@@ -18,26 +18,20 @@
       <img class="TITLE" src="../img/menu.PNG" alt="Botón de Menú ">
     </div>
   </header>
-  <div id="menuContainer"></div>
-    <script>
-      fetch('menu.html')
-        .then(response => response.text())
-        .then(html => {
-          document.getElementById('menuContainer').innerHTML = html;
-        });
-    </script>
+    <div id="menuContainer"></div>
+  <script>
+    fetch('menu.html')
+      .then(response => response.text())
+      .then(html => {
+        document.getElementById('menuContainer').innerHTML = html;
+      });
+  </script>
 
   <section>
     <div>
-      <table>
-        <tr>
-          <td>
-            <div>
+      
               <p class="TITLE">Definici&oacute;n de reglas</p>
-            </div>
-          </td>
-        </tr>
-      </table>
+
       <p class="PARRAFO">Mediante este hiperv&iacute;nculo que se invoca desde el formulario principal de <a
           href="COH_030B.html">reglas</a>, la entidad configura la conformaci&oacute;n o estructura de la regla que debe
         ser evaluada por el autorizador y poder determinar si la tarjeta cumple o no con la misma. </p>
@@ -50,13 +44,13 @@
       <p class="TITLE"><img src="../img/COF_030B5.PNG"></p>
 
       <p class="PARRAFO"><span class="SUBTITULO">Adicionar:</span>  Si el actor invoca
-        la opci&oacute;n Adicionar se despliega un nuevo formulario con los siguientes campos<span>:</span></p>
+        la opci&oacute;n Adicionar se despliega un nuevo formulario con los siguientes campos:</span></p>
       <p class="TITLE"><img src="../img/COF_030B6.PNG"></p>
 
       <table>
         <tr>
           <td class="titletable">
-            <p class="SUBTITULO"><b>Par&aacute;metros</b></p>
+            <p class="SUBTITULO">Par&aacute;metros</p>
           </td>
           <td>
             <p class="PARRAFO">Campo con lista de valores del cual se selecciona una a una las variables a utilizar para
@@ -110,7 +104,7 @@
           </td>
         </tr>
       </table>
-      <p src="../img/MEF_002E5.PNG"></p>
+      
       <p>Los campos par&aacute;metros, operadores l&oacute;gicos, valor y operadores
           matem&aacute;ticos van precedidos de un radio button en el cual el actor debe marcar cual de ellos desea
         utilizar; una vez que el actor selecciona alguno de ellos el campo se habilita quedando los dem&aacute;s
@@ -163,11 +157,10 @@
       <p class="TITLE"><img src="../img/DESHACER.PNG"></p>
       <p>Deshacer: bot&oacute;n que permite eliminar uno a uno los diferentes componentes agregados a la regla,
         iniciando por el &uacute;ltimo. </p>
-      <p src="../img/MEF_002E5.PNG"><img src="../img/BORRAR TODO.PNG"></p>
-      <p src="../img/MEF_002E5.PNG">Borrar todo: bot&oacute;n que permite eliminar simult&aacute;neamente todos
+      <p class="TITLE"><img src="../img/BORRAR TODO.PNG"></p>
+      Borrar todo: bot&oacute;n que permite eliminar simult&aacute;neamente todos
         los componentes agregados a la regla, para que el actor pueda comenzar nuevamente el proceso de
         definici&oacute;n de la regla.</p>
-      <p src="../img/MEF_002E5.PNG"></p>
   </section>
   <script src="../js/menu.js"></script>
 </body>

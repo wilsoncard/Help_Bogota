@@ -17,24 +17,20 @@
             <img class="TITLE"  src= "../img/menu.PNG" alt="Botón de Menú ">
         </div>
     </header>
-   <div id="menuContainer"></div>
-    <script>
-      fetch('menu.html')
-        .then(response => response.text())
-        .then(html => {
-          document.getElementById('menuContainer').innerHTML = html;
-        });
-    </script>
+      <div id="menuContainer"></div>
+  <script>
+    fetch('menu.html')
+      .then(response => response.text())
+      .then(html => {
+        document.getElementById('menuContainer').innerHTML = html;
+      });
+  </script>
 
     <section>
         <div> 
-            <table>
-              <tr> 
-                <td><div> 
+            
                     <p  class="TITLE">Solicitudes por etapa - Verificaci&oacute;n referencias</p>
-                    </div></td>
-              </tr>
-            </table>
+                    
             <p class="PARRAFO"><span class="SUBTITULO">Ingresar calificaci&oacute;n:</span>  
               De acuerdo a las Calificaciones de los Par&aacute;metros de solicitudes por 
               producto, esta opci&oacute;n permite que la solicitud avance a la siguiente 
@@ -59,8 +55,8 @@
                     de solicitudes por producto.</p></td>
               </tr>
               <tr> 
-                <td  class="titletable" ><p class="SUBTITULO"><b><span 
-        >Observaciones</span></b></p></td>
+                <td  class="titletable" ><p class="SUBTITULO"><span 
+        >Observaciones</span></p></td>
                 <td><p class="PARRAFO">Este 
                     campo acepte caracteres alfanum&eacute;ricos de 2000 posiciones. Puede 
                     ser obligatorio o no, de acuerdo a lo parametrizado para el producto 

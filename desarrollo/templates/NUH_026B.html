@@ -18,26 +18,20 @@
       <img class="TITLE" src="../img/menu.PNG" alt="Botón de Menú ">
     </div>
   </header>
- <div id="menuContainer"></div>
-    <script>
-      fetch('menu.html')
-        .then(response => response.text())
-        .then(html => {
-          document.getElementById('menuContainer').innerHTML = html;
-        });
-    </script>
+    <div id="menuContainer"></div>
+  <script>
+    fetch('menu.html')
+      .then(response => response.text())
+      .then(html => {
+        document.getElementById('menuContainer').innerHTML = html;
+      });
+  </script>
 
   <section>
     <div>
-      <table>
-        <tr>
-          <td>
-            <div>
-              <p class="TITLE"><span><b><span>Bines Nacionales</span></b><span></span></span></p>
-            </div>
-          </td>
-        </tr>
-      </table>
+      
+              <p class="TITLE">Bines Nacionales</span></span></p>
+
       <p class="PARRAFO">Esta
         funci&oacute;n habilita la consulta y mantenimiento de la tabla
         que almacena toda la informaci&oacute;n necesaria en la validaci&oacute;n
@@ -55,13 +49,13 @@
       <p>El
         formulario contiene las opciones Actualizar, Eliminar, Adicionar, Detalle y la opci&oacute;n Ir a Filtro. </p>
       <p>Adicionar: Si el usuario invoca la opci&oacute;n Adicionar se despliega un formulario con los siguientes
-        campos<span>:</span></p>
+        campos:</span></p>
       <p class="TITLE"><img src="../img//NUF_026E1.PNG"></p>
 
       <table>
         <tr>
           <td class="titletable">
-            <p><b><span class="SUBTITULO">Bin</span></b></p>
+            <p><span class="SUBTITULO">Bin</span></p>
           </td>
           <td>
             <p class="PARRAFO">Campo
@@ -72,10 +66,10 @@
         </tr>
         <tr>
           <td class="titletable">
-            <p><b><span class="SUBTITULO">Descripci&oacute;n</span></b></p>
+            <p><span class="SUBTITULO">Descripci&oacute;n</span></p>
           </td>
           <td>
-            <p class="PARRAFO"><span>En
+            <p class="PARRAFO">En
                 este campo alfanum&eacute;rico de m&aacute;ximo 30 caracteres,
                 obligatorio, se registra el tipo o nombre del producto de la entidad
                 financiera asociado a cada Bin. </span></p>
@@ -83,7 +77,7 @@
         </tr>
         <tr>
           <td class="titletable">
-            <p><b><span class="SUBTITULO">Entidad</span></b></p>
+            <p><span class="SUBTITULO">Entidad</span></p>
           </td>
           <td>
             <p class="PARRAFO">En
@@ -94,22 +88,22 @@
         </tr>
         <tr>
           <td class="titletable">
-            <p><b><span class="SUBTITULO">Tipo tarjeta</span></b></p>
+            <p><span class="SUBTITULO">Tipo tarjeta</span></p>
           </td>
           <td>
             <p class="PARRAFO"><span class="PARRAFO">En
                 este campo se selecciona de la lista de valores adjunta, el tipo
-                o clase de tarjeta correspondiente al bin y que puede ser <span><em class="PARRAFO">D&eacute;bito,
+                o clase de tarjeta correspondiente al bin y que puede ser <em class="PARRAFO">D&eacute;bito,
                     Cr&eacute;dito, Electron/Maestro<em class="PARRAFO">, D&eacute;bito propia, Cr&eacute;dito
-                      propia</span></span><span>.</span></p>
+                      propia</span></span>.</span></p>
           </td>
         </tr>
         <tr>
           <td class="titletable">
-            <p><b><span class="SUBTITULO">Franquicia</span></b></p>
+            <p><span class="SUBTITULO">Franquicia</span></p>
           </td>
           <td>
-            <p class="PARRAFO"><span>Campo
+            <p class="PARRAFO">Campo
                 que posee lista de valores de la que se selecciona la <a
                   href="NUH_033B.html">franquicia</a>
                 a la que pertenece el bin en particular.</span></p>
@@ -117,20 +111,20 @@
         </tr>
         <tr>
           <td class="titletable">
-            <p><b><span class="SUBTITULO">Longitud bin</span></b></p>
+            <p><span class="SUBTITULO">Longitud bin</span></p>
           </td>
           <td>
-            <p class="PARRAFO"><span>Campo
+            <p class="PARRAFO">Campo
                 num&eacute;rico de una posici&oacute;n, obligatorio, que ilustra
                 la longitud m&aacute;xima del bin o prefijo.</span></p>
           </td>
         </tr>
         <tr>
           <td class="titletable">
-            <p><b><span class="SUBTITULO">Longitud tarjeta</span></b></p>
+            <p><span class="SUBTITULO">Longitud tarjeta</span></p>
           </td>
           <td>
-            <p class="PARRAFO"><span>En
+            <p class="PARRAFO">En
                 este campo num&eacute;rico de 2 posiciones, obligatorio, se almacena
                 la cantidad m&aacute;xima de d&iacute;gitos que componen el n&uacute;mero
                 de la tarjeta, usualmente contiene el bin o prefijo.</span></p>
@@ -138,11 +132,11 @@
         </tr>
         <tr>
           <td class="titletable">
-            <p><b><span class="SUBTITULO">D&iacute;gito
-                  chequeo</span></b></p>
+            <p><span class="SUBTITULO">D&iacute;gito
+                  chequeo</span></p>
           </td>
           <td>
-            <p class="PARRAFO"><span>Campo
+            <p class="PARRAFO">Campo
                 que posee lista de valores sobre la cual se puede seleccionar
                 el algoritmo mediante el cual se realiza la verificaci&oacute;n
                 del d&iacute;gito de chequeo.</span></p>
@@ -150,10 +144,10 @@
         </tr>
         <tr>
           <td class="titletable">
-            <p><b><span class="SUBTITULO">Comod&iacute;n</span></b></p>
+            <p><span class="SUBTITULO">Comod&iacute;n</span></p>
           </td>
           <td>
-            <p class="PARRAFO"><span>Campo
+            <p class="PARRAFO">Campo
                 alfanum&eacute;rico de 23 d&iacute;gitos, obligatorio, que facilita
                 la captura de movimiento del canje manual cuando el n&uacute;mero
                 de la tarjeta no es legible y permite al sistema validar su d&iacute;gito
@@ -166,15 +160,15 @@
           </td>
         </tr>
       </table>
-      <p class="PARRAFO"><b><span class="SUBTITULO">Actualizar</span></b><span>: Si el
+      <p class="PARRAFO"><span class="SUBTITULO">Actualizar</span>: Si el
           usuario invoca la opci&oacute;n Actualizar se despliega un nuevo formulario
           en el cual los &uacute;nicos campos modificables son: Descrici&oacute;n,
-          Entidad, Tipo tarjeta, </span><span>Franquicia,
+          Entidad, Tipo tarjeta, </span>Franquicia,
           Longitud bin, Longitud tarjeta, D&iacute;gito de chequeo, y Comod&iacute;n.</span></p>
       <p class="TITLE"><img src="../img/NUF_026E2.PNG"></p>
 
       <p class="PARRAFO"><span class="SUBTITULO">Detalle:</span> Si el usuario invoca la opci&oacute;n Detalle se
-        despliega el siguiente formulario. <span>
+        despliega el siguiente formulario. 
 
         </span></p>
       <p class="TITLE"><img src="../img/NUF_026E3.PNG"></p>

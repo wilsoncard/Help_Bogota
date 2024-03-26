@@ -1,134 +1,155 @@
 <!DOCTYPE html>
 <html lang="es">
 
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>BANKBU®</title>
-  <link rel="stylesheet" href="../css/pages.css">
-  <link rel="stylesheet" href="../css/style.css">
-  <link rel="icon" href="../img/ACQUIRER-logo.JPG" type="image/x-icon">
-</head>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BANKBU®</title>
+    <link rel="stylesheet" href="../css/pages.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="icon" href="../img/ACQUIRER-logo.JPG" type="image/x-icon">
+  </head>
 
-<body>
-  <header>
-    <img class="logo" src="../img/logoBankbu_.PNG" alt="Logo de Mi Empresa">
-    <div id="menuBtn">
-      <img class="TITLE" src="../img/menu.PNG" alt="Botón de Menú ">
-    </div>
-  </header>
-  <div id="menuContainer"></div>
+  <body>
+    <header>
+      <img class="logo" src="../img/logoBankbu_.PNG" alt="Logo de Mi Empresa">
+      <div id="menuBtn">
+        <img class="TITLE" src="../img/menu.PNG" alt="Botón de Menú ">
+      </div>
+    </header>
+    <div id="menuContainer"></div>
     <script>
-      fetch('menu.html')
-        .then(response => response.text())
-        .then(html => {
-          document.getElementById('menuContainer').innerHTML = html;
-        });
-    </script>
-  <section>
-    <div>
-      <table>
-        <tr>
-          <td>
-            <div>
-              <p class="TITLE style6">Programaci&oacute;n de visitas a establecimientos</p>
-            </div>
-          </td>
-        </tr>
+    fetch('menu.html')
+      .then(response => response.text())
+      .then(html => {
+        document.getElementById('menuContainer').innerHTML = html;
+      });
+  </script>
+    <section>
+      <div>
+        <table>
+          <tr>
+            <td>
+              <div>
+                <p class="TITLE style6">Programaci&oacute;n de visitas a
+                  establecimientos</p>
+              </div>
+            </td>
+          </tr>
 
-      </table>
-      <p>Programaci&oacute;n de visitas: Esta agrupaci&oacute;n de campos muestra, las visitas programadas para
-        una zona en particular, teniendo en cuenta la informaci&oacute;n asociada a esta y los agentes encargados de
-        realizar la actividad.</p>
-      <p>El formulario contiene las opciones Actualizar y Eliminar. Adicionalmente, cuenta con un filtro de
-        b&uacute;squeda, vinculo <a href="#actividades">Actividades por visita</a> y bot&oacute;n para
-        retroceder. </p>
-      <p class="TITLE"><img src="../img/AEF_003B3.PNG"></p>
-      <p class="PARRAFO"><span class="SUBTITULO">Filtro:</span>  Se pueden realizar consultas a trav&eacute;s
-        de las siguientes opciones:</p>
-      <p class="center"><img src="../img/AEF_003B4.PNG" 165"></p>
-      <table>
-        <tr>
-          <td class="titletable">
-            <p class="SUBTITULO"><span>Secuencia</span></p>
-          </td>
-          <td>
-            <p>Campo alfanum&eacute;rico de 8 d&iacute;gitos, que indica el n&uacute;mero de secuencia que el sistema le
-              asign&oacute; a cada visita al momento de ejecutar la programaci&oacute;n de la misma.</p>
-          </td>
-        </tr>
-      </table>
-      <p><span class="SUBTITULO"><span><b>Actualizar</b>:</span></span><span> Si el usuario invoca la
-          opci&oacute;n Actualizar se despliega un nuevo formulario
-          en el cual </span><span>el</span>  <span> &uacute;nico campo </span><span
-          class="style7"><span>modificable</span></span><span> es:</span>  Fecha de visita. </p>
-      <p class="TITLE"><img src="../img/AEF_003B5.PNG" ></p>
-      <p class="TITLE">Descripci&oacute;n de campos</p>
-      <table>
-        <tr>
-          <td class="titletable">
-            <p class="SUBTITULO"><b><span>Fecha de visita </span></b></p>
-          </td>
-          <td>
-            <p>Este campo en formato YYYY-MM-DD muestra la fecha para la cual el sistema program&oacute; la visita al
-              establecimiento.</p>
-          </td>
-        </tr>
-      </table>
-      <p>Actividades por visita<a name="actividades"></a>: Una vez marcados los registros de las visitas
-        programadas; en esta agrupaci&oacute;n de campos se indican las actividades a realizar. Esta opci&oacute;n
-        cuenta con un filtro de b&uacute;squeda y con un boton para retroceder.</p>
-      <p class="TITLE"><img src="../img/AEF_003B6.PNG" ></p>
-      <p class="PARRAFO"><span class="SUBTITULO">Filtro:</span>  Se pueden realizar consultas a trav&eacute;s
-        de las siguientes opciones:</p>
-      <p class="center"><img src="../img/AEF_003B4.PNG" ></p>
-      <table>
-        <tr>
-          <td class="titletable">
-            <p class="SUBTITULO"><span>Secuencia</span></p>
-          </td>
-          <td>
-            <p>Campo alfanum&eacute;rico , que indica el n&uacute;mero de secuencia que el sistema le asign&oacute; a
-              cada visita al momento de ejecutar la programaci&oacute;n de la misma.</p>
-          </td>
-        </tr>
-        <tr>
-          <td class="titletable">
-            <p class="SUBTITULO"><span>Actividad</span></p>
-          </td>
-          <td>
-            <p>En este campo alfanum&eacute;rico, se visualiza la actividad programada para la visita que se va a
-              ejecutar. </p>
-          </td>
-        </tr>
-        <tr>
-          <td class="titletable">
-            <p class="SUBTITULO"><span>Tiempo</span></p>
-          </td>
-          <td>
-            <p>Campo en el cual se indica la duraci&oacute;n de la visita seg&uacute;n la actividad que se pretende
-              realizar. </p>
-          </td>
-        </tr>
-        <tr>
-          <td class="titletable">
-            <p class="SUBTITULO"><span>Estado</span></p>
-          </td>
-          <td>
-            <p>En este campo se indica el estado de la actividad, seg&uacute;n el desarrollo o culminaci&oacute;n de la
-              misma. </p>
-          </td>
-        </tr>
-      </table>
-  </section>
-  <script src="../js/menu.js"></script>
-</body>
-<div id="footerContainer"></div>
-<script>
+        </table>
+        <p>Programaci&oacute;n de visitas: Esta agrupaci&oacute;n de campos
+          muestra, las visitas programadas para
+          una zona en particular, teniendo en cuenta la informaci&oacute;n
+          asociada a esta y los agentes encargados de
+          realizar la actividad.</p>
+        <p>El formulario contiene las opciones Actualizar y Eliminar.
+          Adicionalmente, cuenta con un filtro de
+          b&uacute;squeda, vinculo <a href="#actividades">Actividades por
+            visita</a> y bot&oacute;n para
+          retroceder. </p>
+        <p class="TITLE"><img src="../img/AEF_003B3.PNG"></p>
+        <p class="PARRAFO"><span class="SUBTITULO">Filtro:</span> Se pueden
+          realizar consultas a trav&eacute;s
+          de las siguientes opciones:</p>
+        <p class="center"><img src="../img/AEF_003B4.PNG" 165"></p>
+        <table>
+          <tr>
+            <td class="titletable">
+              <p class="SUBTITULO">Secuencia</span></p>
+            </td>
+            <td>
+              <p>Campo alfanum&eacute;rico de 8 d&iacute;gitos, que indica el
+                n&uacute;mero de secuencia que el sistema le
+                asign&oacute; a cada visita al momento de ejecutar la
+                programaci&oacute;n de la misma.</p>
+            </td>
+          </tr>
+        </table>
+        <p><span class="SUBTITULO">Actualizar:</span></span> Si el
+            usuario invoca la
+            opci&oacute;n Actualizar se despliega un nuevo formulario
+            en el cual </span>el</span>  &uacute;nico campo
+          </span><span
+            class="style7">modificable</span></span> es:</span>
+          Fecha de visita. </p>
+        <p class="TITLE"><img src="../img/AEF_003B5.PNG"></p>
+        <p class="TITLE">Descripci&oacute;n de campos</p>
+        <table>
+          <tr>
+            <td class="titletable">
+              <p class="SUBTITULO">Fecha de visita </span></p>
+            </td>
+            <td>
+              <p>Este campo en formato YYYY-MM-DD muestra la fecha para la cual
+                el sistema program&oacute; la visita al
+                establecimiento.</p>
+            </td>
+          </tr>
+        </table>
+        <p>Actividades por visita<a name="actividades"></a>: Una vez marcados
+          los registros de las visitas
+          programadas; en esta agrupaci&oacute;n de campos se indican las
+          actividades a realizar. Esta opci&oacute;n
+          cuenta con un filtro de b&uacute;squeda y con un boton para
+          retroceder.</p>
+        <p class="TITLE"><img src="../img/AEF_003B6.PNG"></p>
+        <p class="PARRAFO"><span class="SUBTITULO">Filtro:</span> Se pueden
+          realizar consultas a trav&eacute;s
+          de las siguientes opciones:</p>
+        <p class="center"><img src="../img/AEF_003B4.PNG"></p>
+        <table>
+          <tr>
+            <td class="titletable">
+              <p class="SUBTITULO">Secuencia</span></p>
+            </td>
+            <td>
+              <p>Campo alfanum&eacute;rico , que indica el n&uacute;mero de
+                secuencia que el sistema le asign&oacute; a
+                cada visita al momento de ejecutar la programaci&oacute;n de la
+                misma.</p>
+            </td>
+          </tr>
+          <tr>
+            <td class="titletable">
+              <p class="SUBTITULO">Actividad</span></p>
+            </td>
+            <td>
+              <p>En este campo alfanum&eacute;rico, se visualiza la actividad
+                programada para la visita que se va a
+                ejecutar. </p>
+            </td>
+          </tr>
+          <tr>
+            <td class="titletable">
+              <p class="SUBTITULO">Tiempo</span></p>
+            </td>
+            <td>
+              <p>Campo en el cual se indica la duraci&oacute;n de la visita
+                seg&uacute;n la actividad que se pretende
+                realizar. </p>
+            </td>
+          </tr>
+          <tr>
+            <td class="titletable">
+              <p class="SUBTITULO">Estado</span></p>
+            </td>
+            <td>
+              <p>En este campo se indica el estado de la actividad, seg&uacute;n
+                el desarrollo o culminaci&oacute;n de la
+                misma. </p>
+            </td>
+          </tr>
+        </table>
+      </section>
+      <script src="../js/menu.js"></script>
+    </body>
+    <div id="footerContainer"></div>
+    <script>
   fetch('footer.html')
     .then(response => response.text())
     .then(html => {
       document.getElementById('footerContainer').innerHTML = html;
     });
 </script>
-</html>
+  </html>

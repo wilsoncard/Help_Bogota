@@ -17,27 +17,19 @@
       <img class="TITLE" src="../img/menu.PNG" alt="Botón de Menú ">
     </div>
   </header>
-  <div id="menuContainer"></div>
-    <script>
-      fetch('menu.html')
-        .then(response => response.text())
-        .then(html => {
-          document.getElementById('menuContainer').innerHTML = html;
-        });
-    </script>
+    <div id="menuContainer"></div>
+  <script>
+    fetch('menu.html')
+      .then(response => response.text())
+      .then(html => {
+        document.getElementById('menuContainer').innerHTML = html;
+      });
+  </script>
 
   <section>
     <div>
-      <table>
-        <tr>
-          <td>
-            <div>
-
               <p class="TITLE">Inventario de plásticos </p>
-            </div>
-          </td>
-        </tr>
-      </table>
+
       <p class="PARRAFO">Mediante esta opción, la entidad puede gestionar el control de los plásticos, tanto los nuevos
         que ingresan como los entregados a los terceros para ser realzados (embosados).</span></p>
       <p class="PARRAFO">El manejo del inventario de los plásticos requiere, entre otras condiciones que, el campo
@@ -59,7 +51,7 @@
         plásticos.</span> 
       </p>
       <p class="PARRAFO">El formulario contiene un filtro que
-        le permite al usuario seleccionar por medio de una lista de valores el </span><span><a
+        le permite al usuario seleccionar por medio de una lista de valores el </span><a
               href="NUH_057B.html">modelo
               de plástico</a></span><span class="PARRAFO"> para el que se desea
           consultar la información.</span></p>
@@ -74,7 +66,7 @@
       <p class="TITLE"><img src="../img/PLF_001E1.PNG"></p>
       <p class="PARRAFO"><span class="PARRAFO">El formulario contiene
           las opciones Actualizar, Eliminar y Adicionar.</span></p>
-      <p class="PARRAFO"><b><span class="SUBTITULO">Adicionar:</span></b>
+      <p class="PARRAFO"><span class="SUBTITULO">Adicionar:</span>
         si el usuario invoca la opción Adicionar se despliega un nuevo formulario
         con los siguientes campos.</p>
       <p class="TITLE"><img src="../img/PLF_001E2.PNG"></p>
@@ -83,18 +75,18 @@
         <table>
           <tr>
             <td class="titletable">
-              <p class="SUBTITULO"><b><span>Modelo de plástico</span></b></p>
+              <p class="SUBTITULO">Modelo de plástico</span></p>
             </td>
             <td>
               <p class="PARRAFO">Campo
-                obligatorio con lista de valores que permite seleccionar el <span><a href="NUH_057B.html">modelo
+                obligatorio con lista de valores que permite seleccionar el <a href="NUH_057B.html">modelo
                       de plástico</a></span>  para el que se desea llevar el
                 inventario a través de la presente opción.</p>
             </td>
           </tr>
           <tr>
             <td class="titletable">
-              <p class="SUBTITULO"><b><span>Pedido</span></b></p>
+              <p class="SUBTITULO">Pedido</span></p>
             </td>
             <td>
               <p class="PARRAFO">Este
@@ -107,7 +99,7 @@
 
           <tr>
             <td class="titletable">
-              <p class="SUBTITULO"><b><span>Existencias</span></b></p>
+              <p class="SUBTITULO">Existencias</span></p>
             </td>
             <td>
               <p class="PARRAFO">Campo
@@ -123,7 +115,7 @@
 
           <tr>
             <td class="titletable">
-              <p class="SUBTITULO"><b><span>Realce</span></b></p>
+              <p class="SUBTITULO">Realce</span></p>
             </td>
             <td>
               <p class="PARRAFO">Este
@@ -138,7 +130,7 @@
 
           <tr>
             <td class="titletable">
-              <p class="SUBTITULO"><b><span>Reorden</span></b></p>
+              <p class="SUBTITULO">Reorden</span></p>
             </td>
             <td>
               <p class="PARRAFO">Campo
@@ -152,7 +144,7 @@
 
           <tr>
             <td class="titletable">
-              <p class="SUBTITULO"><b><span>Dañados</span></b></p>
+              <p class="SUBTITULO">Dañados</span></p>
             </td>
             <td>
               <p class="PARRAFO">Este
@@ -168,7 +160,7 @@
       <table>
         <tr>
           <td class="titletable">
-            <p class="SUBTITULO"><b><span>Entregados</span></b></p>
+            <p class="SUBTITULO">Entregados</span></p>
           </td>
           <td>
             <p class="PARRAFO">Este
@@ -181,7 +173,7 @@
 
         <tr>
           <td class="titletable">
-            <p class="SUBTITULO"><b><span>Rechazados</span></b></p>
+            <p class="SUBTITULO">Rechazados</span></p>
           </td>
           <td>
             <p class="PARRAFO">Campo
@@ -193,7 +185,7 @@
         </tr>
       </table>
 
-      <p class="PARRAFO"><b><span class="SUBTITULO">Actualizar:</span></b>
+      <p class="PARRAFO"><span class="SUBTITULO">Actualizar:</span>
         si el usuario selecciona un registro e invoca la opción Actualizar,
         se despliega un formulario en el cual el único campo modificable es
         Reorden para permitirle a la entidad modificar la cantidad mínima
@@ -201,8 +193,8 @@
       </p>
       <p class="TITLE"><img src="../img/PLF_001E3.PNG"></p>
 
-      <p class="PARRAFO"><a name="BL_GENERAR"></a><span class="SUBTITULO"><span><b>Generar
-              archivo de pedidos</b>:</span></span> 
+      <p class="PARRAFO"><a name="BL_GENERAR"></a><span class="SUBTITULO">Generar
+              archivo de pedidos:</span></span> 
           si el usuario invoca el hipervínculo generar archivo, el sistema despliega
           un nuevo formulario en el cual se registra el nombre del archivo de salida
           que contiene la información de los pedidos generados para los diferentes
@@ -214,7 +206,7 @@
         <table>
           <tr>
             <td class="titletable">
-              <p class="SUBTITULO"><b><span>Código</span></b></p>
+              <p class="SUBTITULO">Código</span></p>
             </td>
             <td>
               <p class="PARRAFO">Campo
@@ -225,8 +217,8 @@
           </tr>
           <tr>
             <td class="titletable">
-              <p class="SUBTITULO"><b><span>Fecha
-                    generación </span></b></p>
+              <p class="SUBTITULO">Fecha
+                    generación </span></p>
             </td>
             <td>
               <p class="PARRAFO">En

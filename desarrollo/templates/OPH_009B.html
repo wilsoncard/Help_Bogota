@@ -17,33 +17,25 @@
             <img class="TITLE" src="../img/menu.PNG" alt="Botón de Menú ">
         </div>
     </header>
-   <div id="menuContainer"></div>
-    <script>
-      fetch('menu.html')
-        .then(response => response.text())
-        .then(html => {
-          document.getElementById('menuContainer').innerHTML = html;
-        });
-    </script>
+      <div id="menuContainer"></div>
+  <script>
+    fetch('menu.html')
+      .then(response => response.text())
+      .then(html => {
+        document.getElementById('menuContainer').innerHTML = html;
+      });
+  </script>
 
     <section>
-        <div id="layer">
-            <table>
-                <tr>
-                    <td>
-                        <div>
-                            <p class="TITLE">Ejecuci&oacute;n grupos en malla</p>
-                        </div>
-                    </td>
-                </tr>
-            </table>
+        <div>
+            <p class="TITLE">Ejecuci&oacute;n grupos en malla</p>         
             <p class="PARRAFO">Esta opci&oacute;n muestra todos aquellos grupos que hayan sido marcados como Obligatorio
                 en la opci&oacute;n <a href="OPH_001B.html">Definici&oacute;n grupos de procesos</a>. De acuerdo a esto,
                 esta opci&oacute;n s&oacute;lo nos muestra los grupos de procesos a ejecutar autom&aacute;ticamente.</p>
             <p class="PARRAFO">La pantalla principal se divide en dos partes en la cuales se encontrar&aacute;n los
                 Grupos de procesos a la izquierda, as&iacute; como se muestra en la siguiente imagen.</p>
-            <p class="PARRAFO">Por otro lado , la opci&oacute;n cuenta tambi&eacute;n con el v&iacute;nculo de <a
-                    href="#Procesos" target="_self">Procesos</a> que nos permitir&aacute; consultar el detalle de
+            <p class="PARRAFO">Por otro lado, la opci&oacute;n cuenta tambi&eacute;n con el v&iacute;nculo de <a
+                    href="#Procesos">Procesos</a> que nos permitir&aacute; consultar el detalle de
                 algunos de los procesos pertenecientes al grupo que por alguna raz&oacute;n hayan presentado error en su
                 ejecuci&oacute;n. </p>
             <p class="TITLE"><img src="../img/OPF_009E.PNG"></p>
@@ -66,17 +58,17 @@
             <p class="PARRAFO">Antes de iniciar el cargue de un grupo en el d&iacute;a, el sistema los muestra con el
                 campo Estado proceso en blanco. Luego &eacute;ste varia de acuerdo al estado de los Procesos ejecutados
                 por cada Grupo.</p>
-            <p class="PARRAFO">Proceso en ejecuci&oacute;n: El sistema est&aacute; corriendo el paquete del proceso.
+            <p class="PARRAFO"><span class="SUBTITULO">Proceso en ejecuci&oacute;n:</span> El sistema est&aacute; corriendo el paquete del proceso.
             </p>
-            <p class="PARRAFO">Ejecuci&oacute;n parcial: El sistema ha presentado alg&uacute;n error que puede ser
+            <p class="PARRAFO"><span class="SUBTITULO">Ejecuci&oacute;n parcial:</span> El sistema ha presentado alg&uacute;n error que puede ser
                 consultado directamente en el log de operaciones o en el <a href="OPH_003B.html">Hist&oacute;rico de
                     procesos</a>. </p>
-            <p class="PARRAFO">Ejecuci&oacute;n total: El proceso ha finalizado exitosamente. </p>
-            <p class="PARRAFO">Proceso pendiente o Proceso en cola: El sistema identifica estos procesos como pendientes
+            <p class="PARRAFO"><span class="SUBTITULO">Ejecuci&oacute;n total:</span> El proceso ha finalizado exitosamente. </p>
+            <p class="PARRAFO"><span class="SUBTITULO">Proceso pendiente o Proceso en cola:</span> El sistema identifica estos procesos como pendientes
                 por procesar. </p>
 
-            <p class="PARRAFO"><span class="SUBTITULO"><span><b>Procesos<a
-                                name="Procesos"></a></b></span><span>:</span></span>  Este hiperv&iacute;nculo le permite
+            <p class="PARRAFO"><span class="SUBTITULO">Procesos<a
+                                name="Procesos"></a></span>:</span></span>  Este hiperv&iacute;nculo le permite
                 al usuario la consulta del detalle de la ejecuci&oacute;n de cada uno de los Procesos pertenecientes al
                 Grupo seleccionado en la pantalla principal. Se usa m&aacute;s con el prop&oacute;sito de consultar un
                 Proceso en el momento de haber presentado algun error, pues la descripci&oacute;n de &eacute;ste se

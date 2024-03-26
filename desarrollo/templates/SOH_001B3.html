@@ -1,125 +1,156 @@
 <!DOCTYPE html>
 <html lang="es">
 
-<head>
+  <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>BANKBU®</title>
     <link rel="stylesheet" href="../css/pages.css">
     <link rel="stylesheet" href="../css/style.css">
- <link rel="icon" href="../img/ACQUIRER-logo.JPG" type="image/x-icon">
-</head>
+    <link rel="icon" href="../img/ACQUIRER-logo.JPG" type="image/x-icon">
+  </head>
 
-<body>
+  <body>
     <header>
-        <img class="logo" src="../img/logoBankbu_.PNG" alt="Logo de Mi Empresa">
-        <div id="menuBtn">
-            <img class="TITLE"  src= "../img/menu.PNG" alt="Botón de Menú ">
-        </div>
+      <img class="logo" src="../img/logoBankbu_.PNG" alt="Logo de Mi Empresa">
+      <div id="menuBtn">
+        <img class="TITLE" src="../img/menu.PNG" alt="Botón de Menú ">
+      </div>
     </header>
-   <div id="menuContainer"></div>
+    <div id="menuContainer"></div>
     <script>
-      fetch('menu.html')
-        .then(response => response.text())
-        .then(html => {
-          document.getElementById('menuContainer').innerHTML = html;
-        });
-    </script>
+    fetch('menu.html')
+      .then(response => response.text())
+      .then(html => {
+        document.getElementById('menuContainer').innerHTML = html;
+      });
+  </script>
 
     <section>
-        <div> 
-            <table>
-              <tr> 
-                <td><div> 
-                    <p  class="TITLE">Par&aacute;metros de solicitudes - Calificaci&oacute;n </p>
-                    </div></td>
-              </tr>
-            </table>
-            <p class="PARRAFO"><span class="SUBTITULO">Calificaci&oacute;n:</span>  Formulario 
-              que muestra el c&oacute;digo y nombre de las franquicias autorizadas y licenciadas, 
-              para las cuales se definen los rangos de calificaci&oacute;n del scoring que 
-              dejar&aacute;n la solicitud en zona gris; aquellas solicitudes que obtengan 
-              una calificaci&oacute;n inferior a la m&iacute;nima ser&aacute;n negadas, 
-              y las que obtengan una calificaci&oacute;n superior a la m&aacute;xima ser&aacute;n 
-              aprobadas.</p>
-            <p class="PARRAFO">El formulario contiene la opci&oacute;n Calificaci&oacute;n 
-              y un bot&oacute;n en la parte superior para volver al <a href="SOH_001B.html" >formulario 
-              principal</a>.</p>
-            <p class="TITLE"><img src="../img/SOF_001B15.PNG"481" height="384"></p>
-           
-            <p><span class="SUBTITULO">Calificaci&oacute;n:</span>  El formulario contiene 
-              las opciones Actualizar, Eliminar, y Adicionar. Adicionalmente, cuenta en 
-              la parte superior con un bot&oacute;n para volver al formulario anterior.</p>
-            <p class="TITLE"><img src="../img/SOF_001B15a.PNG"547" ></p>
-            
-            <p><span class="SUBTITULO">Adicionar:</span>  Si el usuario invoca la opci&oacute;n 
-              Adicionar se despliega un formulario con los siguientes campos<span >:</span></p>
-            <p class="TITLE"><img src="../img/SOF_001B16.PNG"279" ></p>
-            
-            <table>
-              <tr> 
-                <td class="titletable"><p class="SUBTITULO"><b>Fecha 
-                    inicio </b></p></td>
-                <td><p class="PARRAFO">Este 
-                    campo acepta cualquier fecha en el formato correspondiente. No puede 
-                    ser nulo. El sistema controla que una misma fecha se pueda parametrizar 
-                    para diferentes marcas, pero para una misma marca no acepta la misma 
-                    fecha m&aacute;s de una vez</p></td>
-              </tr>
-              <tr> 
-                <td  class="titletable" ><p class="SUBTITULO">Calificaci&oacute;n 
-                    m&iacute;nima zona gris</p></td>
-                <td><p class="PARRAFO">El 
-                    campo Calificaci&oacute;n m&iacute;nima zona gris, acepta cualquier 
-                    dato num&eacute;rico de m&aacute;ximo cinco (5) d&iacute;gitos. No puede 
-                    ser nulo. </p></td>
-              </tr>
-              <tr> 
-                <td class="titletable"><p class="SUBTITULO">Calificaci&oacute;n 
-                    m&aacute;xima zona gris</p></td>
-                <td><p class="PARRAFO">El 
-                    campo Calificaci&oacute;n m&aacute;xima zona gris, acepta cualquier 
-                    dato num&eacute;rico de m&aacute;ximo cinco (5) d&iacute;gitos. No puede 
-                    ser nulo. El sistema controla que el valor de este campo sea igual o 
-                    mayor al valor de Calificaci&oacute;n m&iacute;nima zona gris</p></td>
-              </tr>
-              <tr> 
-                <td  class="titletable" ><p class="SUBTITULO"><b>M&aacute;ximo 
-                    puntaje </b></p></td>
-                <td><p class="PARRAFO">El 
-                    campo M&aacute;ximo puntaje, acepta cualquier dato num&eacute;rico de 
-                    m&aacute;ximo cinco (5) d&iacute;gitos. No puede ser nulo. El sistema 
-                    controla que el valor del M&aacute;ximo puntaje sea igual o mayor al 
-                    valor de Calificaci&oacute;n m&aacute;xima zona gris.</p></td>
-              </tr>
-            </table>
-           
-            <p class="PARRAFO"><span class="PARRAFO"><span class="SUBTITULO">Actualizar:</span>  
-              Si el usuario invoca la opci&oacute;n Actualizar se despliega un nuevo formulario 
-              en el cual los &uacute;nicos campos modificables son: Calificaci&oacute;n 
-              m&iacute;nima zona gris, Calificaci&oacute;n m&aacute;xima zona gris, y M&aacute;ximo 
-              puntaje.</span></p>
-            <p class="TITLE"><img src="../img/SOF_001B17.PNG"279" ></p>
-           
-            <p><b><b><span class="PARRAFO"><a href="SOH_001B.html" >Formulario 
-              principal</a> |</span></b></b><b><b><span class="PARRAFO"><a href="SOH_001B1.html" >Filtros</a> 
-              |</span></b></b><a href="SOH_001B2.html" >Funcionarios</a><b><b><span class="PARRAFO">|</span></b></b> 
-              <span class="PARRAFO"><a href="SOH_001B4.html" >Negaci&oacute;n</a> |<span > 
-              <b></b></span><a href="SOH_005B4.html"><b><b><span class="PARRAFO"></span></b></b> 
-              </a><a href="SOH_001B5.html" >Variables cupo</a><b><b><span class="PARRAFO">|</span></b></b> 
-              <span class="PARRAFO"><a href="SOH_001B6.html" >Globo de localizaci&oacute;n</a></span></span></p>
-            
-        </section>
-    <script src="../js/menu.js"></script>
+      <div>
 
-    <div id="footerContainer"></div>
-<script>
+        <p class="TITLE">Par&aacute;metros de solicitudes - Calificaci&oacute;n
+        </p>
+
+        <p class="PARRAFO"><span class="SUBTITULO">Calificaci&oacute;n:</span>
+          Formulario
+          que muestra el c&oacute;digo y nombre de las franquicias autorizadas y
+          licenciadas,
+          para las cuales se definen los rangos de calificaci&oacute;n del
+          scoring que
+          dejar&aacute;n la solicitud en zona gris; aquellas solicitudes que
+          obtengan
+          una calificaci&oacute;n inferior a la m&iacute;nima ser&aacute;n
+          negadas,
+          y las que obtengan una calificaci&oacute;n superior a la m&aacute;xima
+          ser&aacute;n
+          aprobadas.</p>
+        <p class="PARRAFO">El formulario contiene la opci&oacute;n
+          Calificaci&oacute;n
+          y un bot&oacute;n en la parte superior para volver al <a
+            href="SOH_001B.html">formulario
+            principal</a>.</p>
+        <p class="TITLE"><img src="../img/SOF_001B15.PNG"></p>
+
+        <p><span class="SUBTITULO">Calificaci&oacute;n:</span> El formulario
+          contiene
+          las opciones Actualizar, Eliminar, y Adicionar. Adicionalmente, cuenta
+          en
+          la parte superior con un bot&oacute;n para volver al formulario
+          anterior.</p>
+        <p class="TITLE"><img src="../img/SOF_001B15a.PNG"></p>
+
+        <p><span class="SUBTITULO">Adicionar:</span> Si el usuario invoca la
+          opci&oacute;n
+          Adicionar se despliega un formulario con los siguientes
+          campos<span>:</span></p>
+        <p class="TITLE"><img src="../img/SOF_001B16.PNG"></p>
+
+        <table>
+          <tr>
+            <td class="titletable"><p class="SUBTITULO">Fecha
+                inicio </p></td>
+            <td><p class="PARRAFO">Este
+                campo acepta cualquier fecha en el formato correspondiente. No
+                puede
+                ser nulo. El sistema controla que una misma fecha se pueda
+                parametrizar
+                para diferentes marcas, pero para una misma marca no acepta la
+                misma
+                fecha m&aacute;s de una vez</p></td>
+          </tr>
+          <tr>
+            <td class="titletable"><p class="SUBTITULO">Calificaci&oacute;n
+                m&iacute;nima zona gris</p></td>
+            <td><p class="PARRAFO">El
+                campo Calificaci&oacute;n m&iacute;nima zona gris, acepta
+                cualquier
+                dato num&eacute;rico de m&aacute;ximo cinco (5) d&iacute;gitos.
+                No puede
+                ser nulo. </p></td>
+          </tr>
+          <tr>
+            <td class="titletable"><p class="SUBTITULO">Calificaci&oacute;n
+                m&aacute;xima zona gris</p></td>
+            <td><p class="PARRAFO">El
+                campo Calificaci&oacute;n m&aacute;xima zona gris, acepta
+                cualquier
+                dato num&eacute;rico de m&aacute;ximo cinco (5) d&iacute;gitos.
+                No puede
+                ser nulo. El sistema controla que el valor de este campo sea
+                igual o
+                mayor al valor de Calificaci&oacute;n m&iacute;nima zona
+                gris</p></td>
+          </tr>
+          <tr>
+            <td class="titletable"><p class="SUBTITULO">M&aacute;ximo
+                puntaje </p></td>
+            <td><p class="PARRAFO">El
+                campo M&aacute;ximo puntaje, acepta cualquier dato
+                num&eacute;rico de
+                m&aacute;ximo cinco (5) d&iacute;gitos. No puede ser nulo. El
+                sistema
+                controla que el valor del M&aacute;ximo puntaje sea igual o
+                mayor al
+                valor de Calificaci&oacute;n m&aacute;xima zona gris.</p></td>
+          </tr>
+        </table>
+
+        <p class="PARRAFO"><span class="PARRAFO"><span
+              class="SUBTITULO">Actualizar:</span>
+            Si el usuario invoca la opci&oacute;n Actualizar se despliega un
+            nuevo formulario
+            en el cual los &uacute;nicos campos modificables son:
+            Calificaci&oacute;n
+            m&iacute;nima zona gris, Calificaci&oacute;n m&aacute;xima zona
+            gris, y M&aacute;ximo
+            puntaje.</span></p>
+        <p class="TITLE"><img src="../img/SOF_001B17.PNG"></p>
+
+        <p><span class="PARRAFO"><a href="SOH_001B.html">Formulario
+              principal</a> |</span><span class="PARRAFO"><a
+              href="SOH_001B1.html">Filtros</a>
+            |</span><a href="SOH_001B2.html">Funcionarios</a><span
+            class="PARRAFO">|</span>
+          <span class="PARRAFO"><a href="SOH_001B4.html">Negaci&oacute;n</a>
+            |<span>
+            </span><a href="SOH_005B4.html"><span class="PARRAFO"></span>
+            </a><a href="SOH_001B5.html">Variables cupo</a><span
+              class="PARRAFO">|</span>
+            <span class="PARRAFO"><a href="SOH_001B6.html">Globo de
+                localizaci&oacute;n</a></span></span></p>
+
+      </section>
+      <script src="../js/menu.js"></script>
+
+      <div id="footerContainer"></div>
+      <script>
   fetch('footer.html')
     .then(response => response.text())
     .then(html => {
       document.getElementById('footerContainer').innerHTML = html;
     });
 </script>
-</body>
+    </body>
 
-</html>
+  </html>

@@ -1,243 +1,313 @@
 <!DOCTYPE html>
 <html lang="es">
 
-<head>
+  <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>BANKBU®</title>
 
     <link rel="stylesheet" href="../css/pages.css">
     <link rel="stylesheet" href="../css/style.css">
- <link rel="icon" href="../img/ACQUIRER-logo.JPG" type="image/x-icon">
-</head>
+    <link rel="icon" href="../img/ACQUIRER-logo.JPG" type="image/x-icon">
+  </head>
 
-<body>
+  <body>
 
     <header>
-        <img class="logo" src="../img/logoBankbu_.PNG" alt="Logo de Mi Empresa">
-        <div id="menuBtn">
-            <img class="TITLE"  src= "../img/menu.PNG" alt="Botón de Menú ">
-        </div>
+      <img class="logo" src="../img/logoBankbu_.PNG" alt="Logo de Mi Empresa">
+      <div id="menuBtn">
+        <img class="TITLE" src="../img/menu.PNG" alt="Botón de Menú ">
+      </div>
     </header>
-   <div id="menuContainer"></div>
+    <div id="menuContainer"></div>
     <script>
-      fetch('menu.html')
-        .then(response => response.text())
-        .then(html => {
-          document.getElementById('menuContainer').innerHTML = html;
-        });
-    </script>
+    fetch('menu.html')
+      .then(response => response.text())
+      .then(html => {
+        document.getElementById('menuContainer').innerHTML = html;
+      });
+  </script>
 
     <section>
-        <div> 
-            <table>
-              <tr> 
-                <td><div> 
-                    <p  class="TITLE">Dep&oacute;sitos al cobro </p>
-                    </div></td>
-              </tr>
-            </table>
-            <p>A trav&eacute;s de esta forma o pantalla se   tramitan las transacciones de notas cr&eacute;dito que se han recibido a trav&eacute;s del canje nacional. Estos pagos corresponden a transacciones adquiridas en los establecimientos de la entidad que corresponden a tarjehabientes de otras entidades que habiendo agotado   infructuosamente el proceso de intercambio, o por haber excedido notoriamente   los diferentes plazos determinados por la franquicia, requieren iniciar un   proceso de negociaci&oacute;n o gesti&oacute;n entre las dos entidades involucradas, conocido   como efectos o comprobantes al cobro, o comprobantes de buena fe. </p>
-            <p>El formulario contiene las opciones Adicionar, Detalle y el hiperv&iacute;culo de transacciones sociadas. Adicionalmente, cuenta con un filtro de b&uacute;squeda.</p>
-           <p class="TITLE"><img src="../img/INF_026E3.PNG"714" ></p>
-            <p class="PARRAFO"><span class="SUBTITULO">Filtro:</span>  Se pueden realizar consultas a trav&eacute;s 
-            de las siguientes opciones:</p>
-            <p class="TITLE"><img src="../img/ESF_024B2.PNG"672" height="106"></p>
-            
-            <table>
-              <tr>
-                <td class="titletable"><p class="SUBTITULO">Fecha de proceso  </p></td>
-                <td><p class="PARRAFO">En este campo obligatorio, en formato YYYY-MM-DD se   ingresa la fecha inicial  que delimita el periodo   para el cual se desea consultar el movimiento aplicado o pendiente.</p>      </td>
-              </tr>
-              <tr>
-                <td class="titletable"><p class="SUBTITULO">Estado comprobante </p></td>
-                <td><p class="PARRAFO">Campo obligatorio,
-                que muestra la condici&oacute;n en que se encuentra actualmente el comprobante : Solucionado o Pendiente.</p>      </td>
-              </tr>
-              <tr>
-                <td class="titletable"><p class="SUBTITULO">Numero de tarjeta </p></td>
-                <td><p class="PARRAFO">Este 
-                campo permite ingresar cualquier valor alfanum&eacute;rico de 23 caracteres.</p>      </td>
-              </tr>
-              <tr>
-                <td class="SUBTITULO" >Bin receptor </td>
-                <td><p class="PARRAFO">Campo 
-                    alfanum&eacute;rico de ochos posiciones, en el cual 
-                se registra el bin de donde proviene el dep&oacute;sito al cobro. </td>
-              </tr></p>
-            </table>
-            
-            <p><span class="SUBTITULO">Adicionar:</span>  Si el usuario invoca la opci&oacute;n Adicionar se despliega un formulario con los siguientes campos<span >:</span></p>
-            
-            <p class="TITLE"><img src="../img/INF_026.PNG"768" height="733"></p>
-            <p class="TITLE"><img src="../img/INF_026E1.PNG"766" ></p>
-            <p  class="SUBTITULO">Deficici&oacute;n de Campos </p>
-            <table>
-              <tr>
-                <td class="titletable"><p class="SUBTITULO">Fecha 
-                  contabilizaci&oacute;n</p></td>
-                <td><p class="PARRAFO">Campo obligatorio, que contiene 
-                    la fecha en formato YYYY-MM-DD, en que se afect&oacute; contablemente 
-                    los saldos del tarjetahabiente, usualmente es la misma fecha de proceso 
-                  o canje.</p></td>
-              </tr>
-              <tr>
-                <td class="titletable"><p class="SUBTITULO">Fecha 
-                  canje </p></td>
-                <td><p class="PARRAFO">Campo 
-                  en formato YYYY-MM-DD obligatorio, que muestra la fecha en que se efectu&oacute; 
-                  el proceso del archivo en que viaj&oacute; la transacci&oacute;n enviada 
-                  </p></td>
-              </tr>
-              <tr>
-                <td   class="titletable"><span class="SUBTITULO">Origen transacci&oacute;n </span></td>
-                <td><p class="PARRAFO">Canpo obligatorio con lista 
-                    de valores que permite ingresar cualquier valor alfanum&eacute;rico 
-                de m&aacute;ximo 6 caracteres.</td></p>
-              </tr>
-              <tr>
-                <td   class="titletable"><span class="SUBTITULO">Motivo devoluci&oacute;n </span></td>
-                <td><p class="}PARRAFO">Campo obligatorio con lista de valores que muestra diferentes motivos devoluci&oacute;n, seg&uacute;n la transacci&oacute;n original que se haya ingresado en el campo anterior.</td>
-              </tr></p>
-              <tr>
-                <td class="titletable"><span class="SUBTITULO">Bin receptor</span>  </td>
-                <td><p class="PARRAFO">Campo 
-                  alfanum&eacute;rico obligatorio,de ochos posiciones, en el cual 
-                  se registra el bin de donde proviene el dep&oacute;sito al cobro. </td>
-              </tr></p>
-              <tr>
-                <td class="titletable"><p class="SUBTITULO">N&uacute;mero 
-                comprobante </p></td>
-                <td><p class="PARRAFO">Ilustra 
-                  el n&uacute;mero del voucher asociado a la transacci&oacute;n.</p></td>
-              </tr>
-              <tr>
-                <td class="titletable"><p class="SUBTITULO">Fecha comprobante </p></td>
-                <td><p class="PARRAFO">Campo que muestra 
-                    la fecha f&iacute;sica del comprobante de consumo o utilizaci&oacute;n 
-                en formato YYYY-MM-DD.</p></td>
-              </tr>
-              <tr>
-                <td   class="titletable"><span class="SUBTITULO">Establecimiento</span></td>
-                <td><p class="PARRAFO">Campo alfanum&eacute;rico de 11 d&iacute;gitos, obligatorio, en el que se   registra el c&oacute;digo &uacute;nico que identifica, ante la franquicia, al establecimiento   donde se realiza el consumo.</p></td>
-              </tr>
-              <tr>
-                <td class="titletable"><span class="SUBTITULO">Fecha 
-                consignaci&oacute;n</span></td>
-                <td><p class="PARRAFO">Contiene 
-                  la fecha en formato YYYY-MM-DD en la cual el establecimiento efectu&oacute; 
-                  la consignaci&oacute;n de los comprobantes o en la que ingres&oacute; 
-                el dep&oacute;sito electr&oacute;nico asociado a la transacci&oacute;n.</td>
-              </tr></p>
-              <tr>
-                <td class="titletable"><p class="SUBTITULO">Bin 
-                  fuente </p></td>
-                <td><p class="PARRAFO">Campo 
-                  que ilustra el prefijo o bin centro de proceso de la entidad a trav&eacute;s 
-                  de la que ingresa la transacci&oacute;n.</p></td>
-              </tr>
-              <tr>
-                <td class="titletable"><p class="SUBTITULO">Tipo 
-                  captura </p></td>
-                <td><p class="PARRAFO">Campo de salida en el que se se&ntilde;ala 
-                  el nombre asociado al c&oacute;digo definido por la franquicia que identifica 
-                  la manera como ingres&oacute;, por medio de su red, la transacci&oacute;n 
-                  al sistema (POS, ATM&#8217;s, oficinas, etc.).</p></td>
-              </tr>
-              <tr>
-                <td class="titletable"><p class="SUBTITULO">Bin 
-                  destino </p></td>
-                <td><p class="PARRAFO">Se&ntilde;ala 
-                  el prefijo o bin centro de proceso de la entidad emisora del pl&aacute;stico.</p></td>
-              </tr>
-              <tr>
-                <td class="titletable"><p class="SUBTITULO"><span >N&ugrave;mero de cuenta </span></p></td>
-                <td><p  class="PARRAFO">Campo de salida que muestra  las cuentas que tiene el establecimiento en la entidad. </p></td>
-              </tr>
-              <tr>
-                <td   class="titletable"><span class="SUBTITULO"> Tipo comprobante </span></td>
-                <td><p class="PARRAFO">Campo obigatorio con lista de valores en el que se puede seleccionar entre las opciones enviado o recibido. </td>
-              </tr>
-          
-          
-              <tr>
-                <td class="titletable"><p class="SUBTITULO">Autorizaci&oacute;n</p></td>
-                <td><p class="PARRAFO">Campo obligatorio en el que se ingresa el n&uacute;mero de la autorizaci&oacute;n asignado a la transacci&oacute;n 
-                  por el procesador o la entidad.</p></td>
-              </tr>
-              <tr>
-                <td class="titletable"><span class="SUBTITULO"> Tipo soluci&oacute;n. </span></td>
-                <td><p class="PARRAFO">Campo con lista de valores en el que se escoge la soluci&oacute;n dada por la entidad. </td>
-              </tr></p>
-              <tr>
-                <td class="titletable" ><p class="SUBTITULO">Valor 
-                compra </p></td>
-                <td><p class="PARRAFO">Muestra 
-                  el monto de la transacci&oacute;n de utilizaci&oacute;n o consumo sin 
-                incluir el monto de la propina concedida por el tarjetahabiente.</p></td>
-              </tr>
-
-              <tr>
-                <td class="titletable" ><p class="SUBTITULO">Valor 
-                propina </p></td>
-                <td><p class="PARRAFO">Refleja 
-                el monto de la propina otorgada por el cliente.</p></td>
-              </tr>
-
-              <tr>
-                <td class="titletable" ><p class="SUBTITULO">Valor 
-                descuento </p></td>
-                <td   ><p class="PARRAFO"> Contiene 
-                  el valor deducido al establecimiento al liquidarle la comisi&oacute;n 
-                o descuento sobre el valor del consumo realizado por el cliente.</p></td>
-              </tr>
-              <tr>
-                <td class="titletable"><p class="SUBTITULO">Valor 
-                  intercambio </p></td>
-                <td><p class="PARRAFO">Muestra 
-                  el valor neto de la transacci&oacute;n, esto es, valor del consumo o 
-                  utilizaci&oacute;n m&aacute;s valor propina, m&aacute;s valor IVA menos 
-                  valor descuento.</p></td>
-              </tr>
-              <tr>
-                <td class="titletable"><p class="SUBTITULO">Porcentaje 
-                  descuento </p></td>
-                <td><p class="PARRAFO">Rese&ntilde;a 
-                  el valor del porcentaje aplicado a la compra o consumo fraudulento realizados 
-                  en ese establecimiento a manera de comisi&oacute;n o descuento.</p></td>
-              </tr>
-            </table>
-            <p  class="SUBTITULO"><span class="style2">Transacciones asociadas:</span>  <span class="PARRAFO">En este formulario se parametrizan las transacciones segun el rol que se est&eacute; manejando por ejemplo: si la tarjeta y  el establecimiento </span>  <span class="PARRAFO">son de entidad, se asocian a la trx 000043 y si el establecimiento no es de la entidad. se asocia la transacci&oacute;n 00044 (original) que es una nora cr&eacute;dito de intercambio </span> .</p>
-            <p  class="SUBTITULO"><img src="../img/INF_026E2.PNG"714"  class="PARRAFO"></p>
-
-            <p><span class="SUBTITULO">Detalle:</span>  Si el usuario invoca la opci&oacute;n Detalle se despliega el siguiente formulario: <span
-              >
+      <div>
+        
+                <p class="TITLE">Dep&oacute;sitos al cobro </p>
               
+        <p>A trav&eacute;s de esta forma o pantalla se tramitan las
+          transacciones de notas cr&eacute;dito que se han recibido a
+          trav&eacute;s del canje nacional. Estos pagos corresponden a
+          transacciones adquiridas en los establecimientos de la entidad que
+          corresponden a tarjehabientes de otras entidades que habiendo agotado
+          infructuosamente el proceso de intercambio, o por haber excedido
+          notoriamente los diferentes plazos determinados por la franquicia,
+          requieren iniciar un proceso de negociaci&oacute;n o gesti&oacute;n
+          entre las dos entidades involucradas, conocido como efectos o
+          comprobantes al cobro, o comprobantes de buena fe. </p>
+        <p>El formulario contiene las opciones Adicionar, Detalle y el
+          hiperv&iacute;culo de transacciones sociadas. Adicionalmente, cuenta
+          con un filtro de b&uacute;squeda.</p>
+        <p class="TITLE"><img src="../img/INF_026E3.PNG"></p>
+        <p class="PARRAFO"><span class="SUBTITULO">Filtro:</span> Se pueden
+          realizar consultas a trav&eacute;s
+          de las siguientes opciones:</p>
+        <p class="TITLE"><img src="../img/ESF_024B2.PNG"></p>
+
+        <table>
+          <tr>
+            <td class="titletable"><p class="SUBTITULO">Fecha de proceso
+              </p></td>
+            <td><p class="PARRAFO">En este campo obligatorio, en formato
+                YYYY-MM-DD se ingresa la fecha inicial que delimita el periodo
+                para el cual se desea consultar el movimiento aplicado o
+                pendiente.</p> </td>
+          </tr>
+          <tr>
+            <td class="titletable"><p class="SUBTITULO">Estado comprobante
+              </p></td>
+            <td><p class="PARRAFO">Campo obligatorio,
+                que muestra la condici&oacute;n en que se encuentra actualmente
+                el comprobante : Solucionado o Pendiente.</p> </td>
+          </tr>
+          <tr>
+            <td class="titletable"><p class="SUBTITULO">Numero de tarjeta
+              </p></td>
+            <td><p class="PARRAFO">Este
+                campo permite ingresar cualquier valor alfanum&eacute;rico de 23
+                caracteres.</p> </td>
+          </tr>
+          <tr>
+            <td class="SUBTITULO">Bin receptor </td>
+            <td><p class="PARRAFO">Campo
+                alfanum&eacute;rico de ochos posiciones, en el cual
+                se registra el bin de donde proviene el dep&oacute;sito al
+                cobro. </td>
+            </tr></p>
+        </table>
+
+        <p><span class="SUBTITULO">Adicionar:</span> Si el usuario invoca la
+          opci&oacute;n Adicionar se despliega un formulario con los siguientes
+          campos:</span></p>
+
+        <p class="TITLE"><img src="../img/INF_026.PNG"></p>
+        <p class="TITLE"><img src="../img/INF_026E1.PNG"></p>
+        <p class="SUBTITULO">Deficici&oacute;n de Campos </p>
+        <table>
+          <tr>
+            <td class="titletable"><p class="SUBTITULO">Fecha
+                contabilizaci&oacute;n</p></td>
+            <td><p class="PARRAFO">Campo obligatorio, que contiene
+                la fecha en formato YYYY-MM-DD, en que se afect&oacute;
+                contablemente
+                los saldos del tarjetahabiente, usualmente es la misma fecha de
+                proceso
+                o canje.</p></td>
+          </tr>
+          <tr>
+            <td class="titletable"><p class="SUBTITULO">Fecha
+                canje </p></td>
+            <td><p class="PARRAFO">Campo
+                en formato YYYY-MM-DD obligatorio, que muestra la fecha en que
+                se efectu&oacute;
+                el proceso del archivo en que viaj&oacute; la transacci&oacute;n
+                enviada
+              </p></td>
+          </tr>
+          <tr>
+            <td class="titletable"><span class="SUBTITULO">Origen
+                transacci&oacute;n </span></td>
+            <td><p class="PARRAFO">Canpo obligatorio con lista
+                de valores que permite ingresar cualquier valor
+                alfanum&eacute;rico
+                de m&aacute;ximo 6 caracteres.</td></p>
+          </tr>
+          <tr>
+            <td class="titletable"><span class="SUBTITULO">Motivo
+                devoluci&oacute;n </span></td>
+            <td><p class="}PARRAFO">Campo obligatorio con lista de valores que
+                muestra diferentes motivos devoluci&oacute;n, seg&uacute;n la
+                transacci&oacute;n original que se haya ingresado en el campo
+                anterior.</td>
+            </tr></p>
+          <tr>
+            <td class="titletable"><span class="SUBTITULO">Bin receptor</span>
+            </td>
+            <td><p class="PARRAFO">Campo
+                alfanum&eacute;rico obligatorio,de ochos posiciones, en el cual
+                se registra el bin de donde proviene el dep&oacute;sito al
+                cobro. </td>
+            </tr></p>
+          <tr>
+            <td class="titletable"><p class="SUBTITULO">N&uacute;mero
+                comprobante </p></td>
+            <td><p class="PARRAFO">Ilustra
+                el n&uacute;mero del voucher asociado a la
+                transacci&oacute;n.</p></td>
+          </tr>
+          <tr>
+            <td class="titletable"><p class="SUBTITULO">Fecha comprobante
+              </p></td>
+            <td><p class="PARRAFO">Campo que muestra
+                la fecha f&iacute;sica del comprobante de consumo o
+                utilizaci&oacute;n
+                en formato YYYY-MM-DD.</p></td>
+          </tr>
+          <tr>
+            <td class="titletable"><span
+                class="SUBTITULO">Establecimiento</span></td>
+            <td><p class="PARRAFO">Campo alfanum&eacute;rico de 11
+                d&iacute;gitos, obligatorio, en el que se registra el
+                c&oacute;digo &uacute;nico que identifica, ante la franquicia,
+                al establecimiento donde se realiza el consumo.</p></td>
+          </tr>
+          <tr>
+            <td class="titletable"><span class="SUBTITULO">Fecha
+                consignaci&oacute;n</span></td>
+            <td><p class="PARRAFO">Contiene
+                la fecha en formato YYYY-MM-DD en la cual el establecimiento
+                efectu&oacute;
+                la consignaci&oacute;n de los comprobantes o en la que
+                ingres&oacute;
+                el dep&oacute;sito electr&oacute;nico asociado a la
+                transacci&oacute;n.</td>
+            </tr></p>
+          <tr>
+            <td class="titletable"><p class="SUBTITULO">Bin
+                fuente </p></td>
+            <td><p class="PARRAFO">Campo
+                que ilustra el prefijo o bin centro de proceso de la entidad a
+                trav&eacute;s
+                de la que ingresa la transacci&oacute;n.</p></td>
+          </tr>
+          <tr>
+            <td class="titletable"><p class="SUBTITULO">Tipo
+                captura </p></td>
+            <td><p class="PARRAFO">Campo de salida en el que se se&ntilde;ala
+                el nombre asociado al c&oacute;digo definido por la franquicia
+                que identifica
+                la manera como ingres&oacute;, por medio de su red, la
+                transacci&oacute;n
+                al sistema (POS, ATM&#8217;s, oficinas, etc.).</p></td>
+          </tr>
+          <tr>
+            <td class="titletable"><p class="SUBTITULO">Bin
+                destino </p></td>
+            <td><p class="PARRAFO">Se&ntilde;ala
+                el prefijo o bin centro de proceso de la entidad emisora del
+                pl&aacute;stico.</p></td>
+          </tr>
+          <tr>
+            <td class="titletable"><p class="SUBTITULO">N&ugrave;mero de
+                  cuenta </span></p></td>
+            <td><p class="PARRAFO">Campo de salida que muestra las cuentas que
+                tiene el establecimiento en la entidad. </p></td>
+          </tr>
+          <tr>
+            <td class="titletable"><span class="SUBTITULO"> Tipo comprobante
+              </span></td>
+            <td><p class="PARRAFO">Campo obigatorio con lista de valores en el
+                que se puede seleccionar entre las opciones enviado o recibido.
+              </td>
+            </tr>
+
+            <tr>
+              <td class="titletable"><p
+                  class="SUBTITULO">Autorizaci&oacute;n</p></td>
+              <td><p class="PARRAFO">Campo obligatorio en el que se ingresa el
+                  n&uacute;mero de la autorizaci&oacute;n asignado a la
+                  transacci&oacute;n
+                  por el procesador o la entidad.</p></td>
+            </tr>
+            <tr>
+              <td class="titletable"><span class="SUBTITULO"> Tipo
+                  soluci&oacute;n. </span></td>
+              <td><p class="PARRAFO">Campo con lista de valores en el que se
+                  escoge la soluci&oacute;n dada por la entidad. </td>
+              </tr></p>
+            <tr>
+              <td class="titletable"><p class="SUBTITULO">Valor
+                  compra </p></td>
+              <td><p class="PARRAFO">Muestra
+                  el monto de la transacci&oacute;n de utilizaci&oacute;n o
+                  consumo sin
+                  incluir el monto de la propina concedida por el
+                  tarjetahabiente.</p></td>
+            </tr>
+
+            <tr>
+              <td class="titletable"><p class="SUBTITULO">Valor
+                  propina </p></td>
+              <td><p class="PARRAFO">Refleja
+                  el monto de la propina otorgada por el cliente.</p></td>
+            </tr>
+
+            <tr>
+              <td class="titletable"><p class="SUBTITULO">Valor
+                  descuento </p></td>
+              <td><p class="PARRAFO"> Contiene
+                  el valor deducido al establecimiento al liquidarle la
+                  comisi&oacute;n
+                  o descuento sobre el valor del consumo realizado por el
+                  cliente.</p></td>
+            </tr>
+            <tr>
+              <td class="titletable"><p class="SUBTITULO">Valor
+                  intercambio </p></td>
+              <td><p class="PARRAFO">Muestra
+                  el valor neto de la transacci&oacute;n, esto es, valor del
+                  consumo o
+                  utilizaci&oacute;n m&aacute;s valor propina, m&aacute;s valor
+                  IVA menos
+                  valor descuento.</p></td>
+            </tr>
+            <tr>
+              <td class="titletable"><p class="SUBTITULO">Porcentaje
+                  descuento </p></td>
+              <td><p class="PARRAFO">Rese&ntilde;a
+                  el valor del porcentaje aplicado a la compra o consumo
+                  fraudulento realizados
+                  en ese establecimiento a manera de comisi&oacute;n o
+                  descuento.</p></td>
+            </tr>
+          </table>
+          <p class="PARRAFO"><span class="SUBTITULO">Transacciones
+              asociadas:</span> En este formulario se parametrizan las
+            transacciones segun el rol que se est&eacute; manejando por ejemplo:
+            si la tarjeta y el establecimiento </span> <span class="PARRAFO">son
+            de entidad, se asocian a la trx 000043 y si el establecimiento no es
+            de la entidad. se asocia la transacci&oacute;n 00044 (original) que
+            es una nora cr&eacute;dito de intercambio.</p>
+          <p class="TITLE"><img src="../img/INF_026E2.PNG"></p>
+
+          <p><span class="SUBTITULO">Detalle:</span> Si el usuario invoca la
+            opci&oacute;n Detalle se despliega el siguiente formulario: 
+
             </span></p>
-            <p class="TITLE"><img src="../img/ESF_024B5.PNG"653" height="484"></p>
-            
-            <p>Dentro del detalle se encuentra el globo de localizaci&oacute;n el cual despliega el siguiente formulario</p>
-            <p class="TITLE"><img src="../img/ESF_024B6.PNG"285" ></p>
-            
-            <p><span class="SUBTITULO">Opciones especiales</span></p>
-            <table>
-              <tr>
-                <td class="titletable"><p  class="SUBTITULO"><b><img src="../img/INF_026E4 APLICA MOV.PNG"40" ></b></p></td>
-                <td><p class="PARRAFO">Aplicar 
-                  movimiento: Una vez  seleccionado el registro es posible aplicar el movimiento. </p></td>
-              </tr>
-            </table>
-            
-            
+          <p class="TITLE"><img src="../img/ESF_024B5.PNG"></p>
+
+          <p>Dentro del detalle se encuentra el globo de localizaci&oacute;n el
+            cual despliega el siguiente formulario</p>
+          <p class="TITLE"><img src="../img/ESF_024B6.PNG"285"></p>
+
+          <p><span class="SUBTITULO">Opciones especiales</span></p>
+          <table>
+            <tr>
+              <td class="titletable"><p class="SUBTITULO"><img
+                    src="../img/INF_026E4 APLICA MOV.PNG"></p></td>
+              <td><p class="PARRAFO">Aplicar
+                  movimiento: Una vez seleccionado el registro es posible
+                  aplicar el movimiento. </p></td>
+            </tr>
+          </table>
+
         </section>
-    <script src="../js/menu.js"></script>
-</body>
-<div id="footerContainer"></div>
-<script>
+        <script src="../js/menu.js"></script>
+      </body>
+      <div id="footerContainer"></div>
+      <script>
   fetch('footer.html')
     .then(response => response.text())
     .then(html => {
       document.getElementById('footerContainer').innerHTML = html;
     });
 </script>
-</html>
+    </html>

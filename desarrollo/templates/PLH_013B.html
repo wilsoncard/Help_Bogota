@@ -17,27 +17,18 @@
       <img class="TITLE" src="../img/menu.PNG" alt="Botón de Menú ">
     </div>
   </header>
-  <div id="menuContainer"></div>
-    <script>
-      fetch('menu.html')
-        .then(response => response.text())
-        .then(html => {
-          document.getElementById('menuContainer').innerHTML = html;
-        });
-    </script>
+    <div id="menuContainer"></div>
+  <script>
+    fetch('menu.html')
+      .then(response => response.text())
+      .then(html => {
+        document.getElementById('menuContainer').innerHTML = html;
+      });
+  </script>
 
   <section>
     <div>
-      <table>
-        <tr>
-          <td>
-            <div>
-
-              <p class="TITLE">Plásticos en mensajería</p>
-            </div>
-          </td>
-        </tr>
-      </table>
+      <p class="TITLE">Plásticos en mensajería</p>
       <p class="PARRAFO">Mediante esta función, se habilita la selección de aquellos plásticos que, durante el proceso de las diferentes solicitudes, arriban a la etapa de envío a mensajería, para generar el archivo a utilizar por la entidad, para que las empresas de mensajería contratadas por esta, puedan hacer entrega de los plásticos realzados a los clientes titulares.</span></p>
       <p class="PARRAFO">Al invocar la opción, el usuario se encuentra con un wizard de tres pasos, el primero, corresponde a un filtro, en el cual es necesario diligenciar al menos un criterio que permita determinar la(s) tarjeta(s) que se desea consultar para incluirlas dentro del archivo de entrega de plásticos.</span> 
         <span class="PARRAFO">
@@ -50,8 +41,8 @@
         <table>
           <tr>
             <td class="titletable">
-              <p class="SUBTITULO"><b><span>Número
-                    tarjeta </span></b></p>
+              <p class="SUBTITULO">Número
+                    tarjeta </span></p>
             </td>
             <td>
               <p class="PARRAFO">Campo
@@ -62,8 +53,8 @@
           </tr>
           <tr>
             <td class="titletable">
-              <p class="SUBTITULO"><b><span>Nombre
-                    plástico </span></b></p>
+              <p class="SUBTITULO">Nombre
+                    plástico </span></p>
             </td>
             <td>
               <p class="PARRAFO">En
@@ -75,8 +66,8 @@
 
           <tr>
             <td class="titletable">
-              <p class="SUBTITULO"><b><span>Producto
-                    plástico </span></b></p>
+              <p class="SUBTITULO">Producto
+                    plástico </span></p>
             </td>
             <td>
               <p class="PARRAFO">Campo
@@ -88,7 +79,7 @@
 
           <tr>
             <td class="titletable">
-              <p class="SUBTITULO"><b><span>Marca</span></b></p>
+              <p class="SUBTITULO">Marca</span></p>
             </td>
             <td>
               <p class="PARRAFO">En
@@ -101,7 +92,7 @@
 
           <tr>
             <td class="titletable">
-              <p class="SUBTITULO"><b><span>Origen registro </span></b></p>
+              <p class="SUBTITULO">Origen registro </span></p>
             </td>
             <td>
               <p class="PARRAFO">Campo
@@ -121,7 +112,7 @@
 
           <tr>
             <td class="titletable">
-              <p class="SUBTITULO"><b><span>Secuencia solicitud</span></b></p>
+              <p class="SUBTITULO">Secuencia solicitud</span></p>
             </td>
             <td>
               <p class="PARRAFO">En
@@ -132,7 +123,7 @@
           </tr>
           <tr>
             <td class="titletable">
-              <p class="SUBTITULO"><b><span>Número remisión </span></b></p>
+              <p class="SUBTITULO">Número remisión </span></p>
             </td>
             <td>
               <p class="PARRAFO">Despliega el número de documento con el cual se remisionaron los plásticos durante el proceso de <a href="PLH_008B.html">realce</a> que se hace desde esta misma opción.
@@ -141,11 +132,11 @@
           </tr>
           <tr>
             <td class="titletable">
-              <p class="SUBTITULO"><b><span>Modelo plástico (código y descripción) </span></b></p>
+              <p class="SUBTITULO">Modelo plástico (código y descripción) </span></p>
             </td>
             <td>
               <p class="PARRAFO">Campo
-                con lista de valores que permite seleccionar el <span><a href="NUH_057B.html">modelo
+                con lista de valores que permite seleccionar el <a href="NUH_057B.html">modelo
                       de plástico</a></span>  asociado con las tarjetas para
                 las cuales se desea consultar y ejecutar el proceso de generación
                 del archivo de envío a mensajería.
@@ -154,7 +145,7 @@
           </tr>
           <tr>
             <td class="titletable">
-              <p class="SUBTITULO"><b><span>N&uacute;mero remisi&oacute;n </span></b></p>
+              <p class="SUBTITULO">N&uacute;mero remisi&oacute;n </span></p>
             </td>
             <td>
               <p class="PARRAFO">Despliega el número de documento con el cual se remisionaron los plásticos durante el proceso de <a href="PLH_008B.html">realce</a> que se hace desde esta misma
@@ -166,8 +157,8 @@
       <table>
         <tr>
           <td class="titletable">
-            <p class="SUBTITULO"><b><span>Nombre
-                  archivo </span></b></p>
+            <p class="SUBTITULO">Nombre
+                  archivo </span></p>
           </td>
           <td>
             <p class="PARRAFO">En este campo obligatorio, se debe ingresar el nombre con el cual se va a identificar el archivo a generar con la información para la asignación de las claves a las tarjetas seleccionadas.
@@ -190,7 +181,7 @@
           para la totalidad de los registros desplegados. </span></p>
       <p class="TITLE"><img src="../img/PLF_013E1.PNG"></p>
 
-      <p class="PARRAFO"><span>En la tercera
+      <p class="PARRAFO">En la tercera
           página del wizard, se muestran los registros que el usuario haya seleccionado
           para ejecutar el proceso de envío a mensajería, en caso que
           éste no se vaya a aplicar para todos los registros desplegado en la
@@ -203,23 +194,23 @@
         alguna razón ya no desea incluir en el archivo de envío a mensajería.</p>
       <p class="TITLE"><img src="../img/PLF_013E2.PNG"></p>
 
-      <p class="PARRAFO"><a name="BL_DETALLE"></a><span class="SUBTITULO"><span><b>Detalle</b>:</span> 
-          </span><span>
+      <p class="PARRAFO"><a name="BL_DETALLE"></a><span class="SUBTITULO">Detalle:</span> 
+          </span>
           si desde la segunda o tercera página del wizard el usuario selecciona
           un registro e invoca la opción Detalle, se despliega un formulario
           con la información completa del registro y cuyos campos se describen
           a continuación. Ninguno de los datos allá contenidos puede ser
           modificado.</span> 
       </p>
-      <p class="TITLE"><img src="../img/PLF_013E3.PNG" ></p>
+      <p class="TITLE"><img src="../img/PLF_013E3.PNG"></p>
 
       <p class="TITLE">Descripci&oacute;n de campos</p>
       <div>
         <table>
           <tr>
             <td class="titletable">
-              <p class="SUBTITULO"><b><span>N&uacute;mero
-                    tarjeta </span></b></p>
+              <p class="SUBTITULO">N&uacute;mero
+                    tarjeta </span></p>
             </td>
             <td>
               <p class="PARRAFO">Campo en el que se despliega el número (enmascarado si aplica) de la tarjeta para el cual se está consultando la información.</p>
@@ -227,8 +218,8 @@
           </tr>
           <tr>
             <td class="titletable">
-              <p class="SUBTITULO"><b><span>Nombre
-                    pl&aacute;stico </span></b></p>
+              <p class="SUBTITULO">Nombre
+                    pl&aacute;stico </span></p>
             </td>
             <td>
               <p class="PARRAFO">En
@@ -239,7 +230,7 @@
 
           <tr>
             <td class="titletable">
-              <p class="SUBTITULO"><b><span>N&uacute;mero</span><span> pl&aacute;stico </span></b></p>
+              <p class="SUBTITULO">N&uacute;mero</span> pl&aacute;stico </span></p>
             </td>
             <td>
               <p class="PARRAFO">Campo
@@ -249,8 +240,8 @@
           </tr>
           <tr>
             <td class="titletable">
-              <p class="SUBTITULO"><b><span>Consecutivo
-                    pl&aacute;stico </span></b></p>
+              <p class="SUBTITULO">Consecutivo
+                    pl&aacute;stico </span></p>
             </td>
             <td>
               <p class="PARRAFO">Campo
@@ -261,8 +252,8 @@
 
           <tr>
             <td class="titletable">
-              <p class="SUBTITULO"><b><span>Nombre
-                    archivo realce</span></b></p>
+              <p class="SUBTITULO">Nombre
+                    archivo realce</span></p>
             </td>
             <td>
               <p class="PARRAFO">Despliega
@@ -273,8 +264,8 @@
           </tr>
           <tr>
             <td class="titletable">
-              <p class="SUBTITULO"><b><span>Fecha
-                    / hora realce</span></b></p>
+              <p class="SUBTITULO">Fecha
+                    / hora realce</span></p>
             </td>
             <td>
               <p class="PARRAFO">Indica
@@ -284,8 +275,8 @@
           </tr>
           <tr>
             <td class="titletable">
-              <p class="SUBTITULO"><b><span>Archivo
-                    sobreflex de clave</span></b></p>
+              <p class="SUBTITULO">Archivo
+                    sobreflex de clave</span></p>
             </td>
             <td>
               <p class="PARRAFO">Despliega
@@ -296,8 +287,8 @@
           </tr>
           <tr>
             <td class="titletable">
-              <p class="SUBTITULO"><b><span>Fecha
-                    / hora sobreflex de clave</span></b></p>
+              <p class="SUBTITULO">Fecha
+                    / hora sobreflex de clave</span></p>
             </td>
             <td>
               <p class="PARRAFO">Campo
@@ -308,8 +299,8 @@
           </tr>
           <tr>
             <td class="titletable">
-              <p class="SUBTITULO"><b><span>Fecha
-                    / hora inventario</span></b></p>
+              <p class="SUBTITULO">Fecha
+                    / hora inventario</span></p>
             </td>
             <td>
               <p class="PARRAFO">Muestra
@@ -320,8 +311,8 @@
           </tr>
           <tr>
             <td class="titletable">
-              <p class="SUBTITULO"><b><span>Fecha
-                    / hora sobreflex de empaque</span></b></p>
+              <p class="SUBTITULO">Fecha
+                    / hora sobreflex de empaque</span></p>
             </td>
             <td>
               <p class="PARRAFO">Campo
@@ -332,8 +323,8 @@
           </tr>
           <tr>
             <td class="titletable">
-              <p class="SUBTITULO"><b><span>Fecha
-                    / hora env&iacute;o mensajer&iacute;a</span></b></p>
+              <p class="SUBTITULO">Fecha
+                    / hora env&iacute;o mensajer&iacute;a</span></p>
             </td>
             <td>
               <p class="PARRAFO">Este
@@ -344,8 +335,8 @@
           </tr>
           <tr>
             <td class="titletable">
-              <p class="SUBTITULO"><b><span>Fecha
-                    / hora acuse</span></b></p>
+              <p class="SUBTITULO">Fecha
+                    / hora acuse</span></p>
             </td>
             <td>
               <p class="PARRAFO">Campo
@@ -355,7 +346,7 @@
           </tr>
           <tr>
             <td class="titletable">
-              <p class="SUBTITULO"><b><span>Pl&aacute;stico aceptado</span></b></p>
+              <p class="SUBTITULO">Pl&aacute;stico aceptado</span></p>
             </td>
             <td>
               <p class="PARRAFO">En
@@ -365,7 +356,7 @@
           </tr>
           <tr>
             <td class="titletable">
-              <p class="SUBTITULO"><b><span>Nombre empresa</span></b></p>
+              <p class="SUBTITULO">Nombre empresa</span></p>
             </td>
             <td>
               <p class="PARRAFO">Para
@@ -376,8 +367,8 @@
           </tr>
           <tr>
             <td class="titletable">
-              <p class="SUBTITULO"><b><span>Tipo
-                    pl&aacute;stico </span></b></p>
+              <p class="SUBTITULO">Tipo
+                    pl&aacute;stico </span></p>
             </td>
             <td>
               <p class="PARRAFO">Campo
@@ -393,8 +384,8 @@
           </tr>
           <tr>
             <td class="titletable">
-              <p class="SUBTITULO"><b><span>Foto
-                    cliente </span></b></p>
+              <p class="SUBTITULO">Foto
+                    cliente </span></p>
             </td>
             <td>
               <p class="PARRAFO">Indica
@@ -405,8 +396,8 @@
           </tr>
           <tr>
             <td class="titletable">
-              <p class="SUBTITULO"><b><span>Nombre
-                    otro pl&aacute;stico</span></b></p>
+              <p class="SUBTITULO">Nombre
+                    otro pl&aacute;stico</span></p>
             </td>
             <td>
               <p class="PARRAFO">Cuando
@@ -417,7 +408,7 @@
           </tr>
           <tr>
             <td class="titletable">
-              <p class="SUBTITULO"><b><span>Producto</span></b> pl&aacute;stico </p>
+              <p class="SUBTITULO">Producto</span> pl&aacute;stico </p>
             </td>
             <td>
               <p class="PARRAFO">En
@@ -427,7 +418,7 @@
           </tr>
           <tr>
             <td class="titletable">
-              <p class="SUBTITULO"><b><span>Secuencia</span></b></p>
+              <p class="SUBTITULO">Secuencia</span></p>
             </td>
             <td>
               <p class="PARRAFO">Campo
@@ -439,7 +430,7 @@
           </tr>
           <tr>
             <td class="titletable">
-              <p class="SUBTITULO"><b><span>Marca</span></b></p>
+              <p class="SUBTITULO">Marca</span></p>
             </td>
             <td>
               <p class="PARRAFO">En
@@ -451,7 +442,7 @@
 
           <tr>
             <td class="titletable">
-              <p class="SUBTITULO"><b><span>Origen</span></b> registro </p>
+              <p class="SUBTITULO">Origen</span> registro </p>
             </td>
             <td>
               <p class="PARRAFO">Este
@@ -469,7 +460,7 @@
           </tr>
           <tr>
             <td class="titletable">
-              <p class="SUBTITULO"><b><span>Secuencia solicitud</span></b></p>
+              <p class="SUBTITULO">Secuencia solicitud</span></p>
             </td>
             <td>
               <p class="PARRAFO">Campo
@@ -479,8 +470,8 @@
           </tr>
           <tr>
             <td class="titletable">
-              <p class="SUBTITULO"><b><span>Fecha
-                    / hora aprobaci&oacute;n </span></b></p>
+              <p class="SUBTITULO">Fecha
+                    / hora aprobaci&oacute;n </span></p>
             </td>
             <td>
               <p class="PARRAFO">Campo
@@ -491,8 +482,8 @@
           </tr>
           <tr>
             <td class="titletable">
-              <p class="SUBTITULO"><b><span>Fecha
-                    vigencia</span></b></p>
+              <p class="SUBTITULO">Fecha
+                    vigencia</span></p>
             </td>
             <td>
               <p class="PARRAFO">En
@@ -502,8 +493,8 @@
           </tr>
           <tr>
             <td class="titletable">
-              <p class="SUBTITULO"><b><span>Fecha
-                    vencimiento</span></b></p>
+              <p class="SUBTITULO">Fecha
+                    vencimiento</span></p>
             </td>
             <td>
               <p class="PARRAFO">Campo que contiene la fecha (enmascarada si aplica) hasta la cual tendrá vigencia o validez el plástico de acuerdo con lo parametrizado para el producto al que pertenece.</p>
@@ -512,8 +503,8 @@
 
           <tr>
             <td class="titletable">
-              <p class="SUBTITULO"><b><span>Sucursal
-                    radicaci&oacute;n </span></b></p>
+              <p class="SUBTITULO">Sucursal
+                    radicaci&oacute;n </span></p>
             </td>
             <td>
               <p class="PARRAFO">En
@@ -524,8 +515,8 @@
           </tr>
           <tr>
             <td class="titletable">
-              <p class="SUBTITULO"><b><span>Sucursal
-                    regional </span></b></p>
+              <p class="SUBTITULO">Sucursal
+                    regional </span></p>
             </td>
             <td>
               <p class="PARRAFO">Campo
@@ -535,8 +526,8 @@
           </tr>
           <tr>
             <td class="titletable">
-              <p class="SUBTITULO"><b><span>Oficina
-                    env&iacute;o </span></b></p>
+              <p class="SUBTITULO">Oficina
+                    env&iacute;o </span></p>
             </td>
             <td>
               <p class="PARRAFO">En
@@ -546,12 +537,12 @@
           </tr>
           <tr>
             <td class="titletable">
-              <p class="SUBTITULO"><b><span>Modelo
-                    pl&aacute;stico </span></b></p>
+              <p class="SUBTITULO">Modelo
+                    pl&aacute;stico </span></p>
             </td>
             <td>
               <p class="PARRAFO">Campo
-                que muestra el <span><a href="NUH_057B.html">modelo
+                que muestra el <a href="NUH_057B.html">modelo
                       de pl&aacute;stico</a></span>  a utilizar para elaborar el realce
                 o embozado de la tarjeta.
               </p>
@@ -562,7 +553,7 @@
       <table>
         <tr>
           <td class="titletable">
-            <p class="SUBTITULO"><b><span>Proveedor</span><span> pl&aacute;stico </span></b></p>
+            <p class="SUBTITULO">Proveedor</span> pl&aacute;stico </span></p>
           </td>
           <td>
             <p class="PARRAFO">Este
@@ -574,7 +565,7 @@
 
         <tr>
           <td class="titletable">
-            <p class="SUBTITULO"><b><span>N&uacute;mero remisi&oacute;n </span></b></p>
+            <p class="SUBTITULO">N&uacute;mero remisi&oacute;n </span></p>
           </td>
           <td>
             <p class="PARRAFO">Despliega el número de documento con el cual se remisionaron los plásticos durante el proceso de <a href="PLH_008B.html">realce</a> que se hace desde esta misma
@@ -584,8 +575,8 @@
       </table>
 
       <p class="TITLE">Botones especiales</p>
-      <p class="PARRAFO"><a name="BL_GENERAR"></a><span class="SUBTITULO"><span><b>Generar
-              archivo de mensajería</b>:</span></span><span>
+      <p class="PARRAFO"><a name="BL_GENERAR"></a><span class="SUBTITULO">Generar
+              archivo de mensajería:</span></span>
           si desde la primera página del wizard el actor invoca el botón
           Generar archivo de mensajería, se ejecuta el proceso mediante el cual
           se genera el archivo con la información de los nombres y direcciones

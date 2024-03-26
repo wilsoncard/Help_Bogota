@@ -17,14 +17,14 @@
             <img class="TITLE"  src= "../img/menu.PNG" alt="Botón de Menú ">
         </div>
     </header>
-   <div id="menuContainer"></div>
-    <script>
-      fetch('menu.html')
-        .then(response => response.text())
-        .then(html => {
-          document.getElementById('menuContainer').innerHTML = html;
-        });
-    </script>
+      <div id="menuContainer"></div>
+  <script>
+    fetch('menu.html')
+      .then(response => response.text())
+      .then(html => {
+        document.getElementById('menuContainer').innerHTML = html;
+      });
+  </script>
 
     <section>
         <div> 
@@ -34,9 +34,7 @@
           <div>
                     <p  class="TITLE">Novedad tarjeta principal a amparada/extendida/adicional 
                     </p>
-                    </div></td>
-              </tr>
-            </table>
+                    
             <p  class="PARRAFO">En este formulario invocado desde la opción 
               <a href="SCH_075B1.html" >ingreso de novedades</a><a href="SCH_075B.html" ></a>, 
               (issuer) y que aplica exclusivamente para tarjetas principales que no tengan 
@@ -46,13 +44,12 @@
               cliente de la tarjeta principal con la cual se dese asociar exista un vínvulo 
               o relación.
             </p>
-            <p class="TITLE"><img src="../img/SCF_028E.PNG"311" height="107"></p>
+            <p class="TITLE"><img src="../img/SCF_028E.PNG"></p>
             <p  class="TITLE">Descripción de campos</p>
             <table>
               <tr> 
-                <td class="titletable"><p class="SUBTITULO"><b><span 
-        > 
-                    Tipo tarjeta</span></b></p></td>
+                <td class="titletable"><p class="SUBTITULO">
+                    Tipo tarjeta</p></td>
                 <td><p  class="PARRAFO">Campo 
                     obligatorio tipo combo, en el que se selecciona entre Extendida, 
                     Amparada o Adicional el tipo de tarjeta a la cual se desea 
@@ -60,9 +57,8 @@
               </tr>
            
               <tr> 
-                <td class="titletable"><p class="SUBTITULO"><b><span 
-        >Número 
-                    tarjeta principal</span></b></p>
+                <td class="titletable"><p class="SUBTITULO"><span>Número 
+                    tarjeta principal</span></p>
                   </td>
                 <td><p  class="PARRAFO">En 
                     este campo obligatorio de hasta 23 caracteres se ingresa el número 
@@ -71,9 +67,8 @@
               </tr>
            
               <tr> 
-                <td class="titletable"><p class="SUBTITULO"><b><span 
-        >Fecha 
-                    radicación</span></b></p></td>
+                <td class="titletable"><p class="SUBTITULO">Fecha 
+                    radicación</p></td>
                 <td><p  class="PARRAFO">Campo 
                     obligatorio en el que se registra en formato YYYY-MM-DD la fecha en 
                     la cual se ingresó el cambio de tarjeta principal a dependiente 

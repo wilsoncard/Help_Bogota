@@ -1,165 +1,86 @@
 <!DOCTYPE html>
 <html lang="es">
 
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>BANKBU®</title>
-  <link rel="stylesheet" href="../css/pages.css">
-  <link rel="stylesheet" href="../css/style.css">
-  <link rel="icon" href="../img/ACQUIRER-logo.JPG" type="image/x-icon">
-</head>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BANKBU®</title>
+    <link rel="stylesheet" href="../css/pages.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="icon" href="../img/ACQUIRER-logo.JPG" type="image/x-icon">
+  </head>
 
-<body>
+  <body>
 
-  <header>
-    <img class="logo" src="../img/logoBankbu_.PNG" alt="Logo de Mi Empresa">
-    <div id="menuBtn">
-      <img class="TITLE" src="../img/menu.PNG" alt="Botón de Menú ">
-    </div>
-  </header>
-  <div id="menuContainer"></div>
+    <header>
+      <img class="logo" src="../img/logoBankbu_.PNG" alt="Logo de Mi Empresa">
+      <div id="menuBtn">
+        <img class="TITLE" src="../img/menu.PNG" alt="Botón de Menú ">
+      </div>
+    </header>
+    <div id="menuContainer"></div>
     <script>
-      fetch('menu.html')
-        .then(response => response.text())
-        .then(html => {
-          document.getElementById('menuContainer').innerHTML = html;
-        });
-    </script>
+    fetch('menu.html')
+      .then(response => response.text())
+      .then(html => {
+        document.getElementById('menuContainer').innerHTML = html;
+      });
+  </script>
 
-  <section>
-    <div>
-      <table>
-        <tr>
-          <td>
-            <div>
-              <p class="TITLE">Reversi&oacute;n premios</p>
-            </div>
-          </td>
-        </tr>
-      </table>
-      <p>Mediante esta funci&oacute;n es posible revertir, &uacute;nicamente, los puntos utilizados mediante la <A
-            href="MEH_014B.html">redenci&oacute;n de premios</A>, pues a pesar de desplegarse los distintos premios
-        y millas, el sistema no permite la reversi&oacute;n de estas &uacute;ltimas. Para reversar premios basta
-        con seleccionar cada registro al final de los mismos y confirmar la acci&oacute;n (salvando los cambios); los
-        puntos involucrados en cada reversi&oacute;n le son reflejados al cliente tanto en el campo
-        Devoluciones del submen&uacute; <A href="SCH_065B.html">Puntajes</A> de la opci&oacute;n <A
-            href="SCH_060B.html">Datos de la tarjeta</A>, como al momento de redimir nuevos premios pues dentro de
-        los puntos acumulados se incluyen los aqu&iacute; reversados. De igual manera el campo Saldo
-          inventario, en <A href="MEH_013B.html">Premios puntaje</A>, se incrementa en la misma cantidad
-        aqu&iacute; reversada.
-      </p>
-      <p class="PARRAFO">El formulario cuenta
-        con un wizard de tres pasos a trav&eacute;s del cual se realiza el proceso de reversi&oacute;n.</p>
-      <p class="PARRAFO"><span class="SUBTITULO">Filtro:</span>  En el primer paso del wizard, el usuuario debe ingresar
-        el campo obligatorio N&uacute;mero de tarjeta, a trav&eacute;s del cual el sistema traer&aacute; toda la
-        informaci&oacute;n relacionada con el cliente. </p>
-      <p class="TITLE"><img src="../img/MEF_015B.PNG"></p>
-      <table>
-        <tr>
-          <td class="titletable">
-            <p class="SUBTITULO">N&uacute;mero y nombre de la tarjeta </span></p>
-          </td>
-          <td>
-            <p>Campo en el cual se captura el n&uacute;mero de la tarjeta a la cual se efectuar&aacute; la
-              reversi&oacute;n de premios. A continuaci&oacute;n aparece el respectivo nombre del cliente.</p>
-          </td>
-        </tr>
-        <tr>
-          <td class="titletable">
-            <p class="SUBTITULO"><b><span>Tipo de tarjeta </span></b></p>
-          </td>
-          <td>
-            <p>Campo de salida que ilustra la clase de tarjeta (Principal, Amparada o Extendida) a la
-              que corresponde el n&uacute;mero de tarjeta digitado. </p>
-          </td>
-        </tr>
-        <tr>
-          <td class="titletable">
-            <p class="SUBTITULO">Tarjeta principal </p>
-          </td>
-          <td>
-            <p>Aplica para los casos en que el tipo de tarjeta registrado pertenezca a una Amparada o
-              Extendida, en cuyo caso despliega tanto el n&uacute;mero como el nombre del tarjeta habiente
-              Principal del cual depende.
-            </p>
-          </td>
-        </tr>
-        <tr>
-          <td class="titletable">
-            <p class="SUBTITULO"><b><span>Mecanismo de redenci&oacute;n </span></span></b></p>
-          </td>
-          <td>
-            <p>En este campo se muestra a cu&aacute;l mecanismo de redenci&oacute;n, definido en <A
-                  href="MEH_006B.html#BL_MECANISMO">Esquemas de puntaje</A>, se encuentra relacionado el producto
-              al que pertenece la tarjeta a la que se le tramita la reversi&oacute;n de premios.</p>
-          </td>
-        </tr>
-        <tr>
-          <td class="titletable">
-            <p class="SUBTITULO"><b><span>Esquema</span></span></b></p>
-          </td>
-          <td>
-            <p>Campo que ilustra el <A href="MEH_006B.html">esquema de puntaje</A> dentro del cual est&aacute;
-              definido el producto al que pertenece la tarjeta a la que se le tramita la reversi&oacute;n de premios.
-            </p>
-          </td>
-        </tr>
-      </table>
-      <p class="PARRAFO"><span class="SUBTITULO">Novedades:</span> Conjunto de campos que permiten, de un lado, verificar
-        cu&aacute;les premios han sido entregados al cliente y seleccionar, marcando cada registro al final del mismo,
-        aquellos susceptibles de ser reversados. El sistema, al realizar la reversi&oacute;n de premios tiene en
-        cuenta el total de los puntos que fueron redimidos por ese premio.</p>
-      <p class="PARRAFO">El usuario debe Seleccionar aquellos puntos que ser&aacute;n devueltos. </p>
-      <p class="TITLE"><img src="../img/MEF_015B1.PNG"></p>
-      <table>
-        <tr>
-          <td class="titletable">
-            <p class="SUBTITULO">Fecha</span></p>
-          </td>
-          <td>
-            <p>Campo de salida, presenta la fecha de proceso en la cual fue, originalmente, redimido el premio.
-              Una vez reversado, servir&aacute; de referencia del movimiento, dado que producto de la reversi&oacute;n
-              de los premios los dem&aacute;s campos del registro quedar&aacute;n en ceros o sin datos.</p>
-          </td>
-        </tr>
-        <tr>
-          <td class="titletable">
-            <p class="SUBTITULO"><b><span>N&uacute;mero de puntos redimidos </span></span></b></p>
-          </td>
-          <td>
-            <p>Despliega, antes de confirmar la reversi&oacute;n, el monto de puntos que fueron redimidos por dicho
-              premio.</p>
-          </td>
-        </tr>
-        <tr>
-          <td class="titletable">
-            <p class="SUBTITULO">Premios</p>
-          </td>
-          <td>
-            <p>Contiene, antes de confirmar la reversi&oacute;n, la descripci&oacute;n del premio redimido.</p>
-          </td>
-        </tr>
-        <tr>
-          <td class="titletable">
-            <p class="SUBTITULO"><b><span>Cantidad </span></b></p>
-          </td>
-          <td>
-            <p>Campo de salida que, antes de confirmar la reversi&oacute;n, muestra el n&uacute;mero de unidades del
-              producto, que le fueron redimidos al cliente. </p>
-          </td>
-        </tr>
-      </table>
-      <p class="TITLE"><img src="../img/MEF_015B2.PNG"></p>
-      <p><span class="SUBTITULO">Resumen:</span>  A trav&eacute;s de este &uacute;ltimo paso del wizard, el usuario puede
-        finalizar el proceso de reversi&oacute;n de puntos, e incluso es permidito seleccionar aquellos que finalmente
-        no requieran cumplir con este proceso. esto se realiza a trav&eacute;s de la opci&oacute;n Remover. </p>
-      <p class="TITLE"><img src="../img/MEF_015B3.PNG"></p>
-  </section>
-  <script src="../js/menu.js"></script>
-</body>
-<div id="footerContainer"></div>
-<script>
+    <section>
+      <div>
+
+        <p class="TITLE">Reversi&oacute;n premios</p>
+
+        <p>Mediante esta función es posible revertir, únicamente, los puntos
+          utilizados mediante la <a
+            href="MEH_014B.html">Redención premios</a>, pues a pesar de
+          desplegarse los distintos premios y millas, el sistema no permite la
+          reversión de estas últimas. El formulario cuenta con un wizard de tres
+          pasos a través del cual se realiza el proceso de reversión.
+        </p>
+
+        <p class="PARRAFO"><span class="SUBTITULO">Filtro:</span> En el primer
+          paso del wizard, en el único campo, obligatorio y editable, Número de
+          tarjeta, se debe ingresar el dato valido correspondiente, y mediante
+          las teclas Tab o Intro, el sistema mostrará la información relacionada
+          con esa tarjeta. </p>
+        <p class="TITLE"><img src="../img/MEF_015B.PNG"></p>
+
+        <p class="PARRAFO"><span class="SUBTITULO">Novedades:</span> En el
+          segundo paso del wizard, si aplica, aparecen relacionan los datos de
+          los premios que le han sido entregados al cliente, y al final de cada
+          registro, se deben marcar o seleccionar, aquellos susceptibles de ser
+          reversados. El sistema, al realizar la reversión de premios, tiene en
+          cuenta el total de los puntos que fueron redimidos por ese premio.
+        </p>
+        <p class="TITLE"><img src="../img/MEF_015B4.PNG"></p>
+
+        <p class="PARRAFO"><span class="SUBTITULO">Actualizar:</span> Al invocar
+          este enlace, el sistema permite modificar (reducir) la cantidad de
+          unidades del premio a reversar, esto es efectuar reversiones
+          parciales.</p>
+        <p class="TITLE"><img src="../img/MEF_015B5.PNG"></p>
+
+        <p class="PARRAFO"><span class="SUBTITULO">Resumen:</span> Al llegar al
+          tercer y último paso del wizard, si no se marca, en el checkbox
+          Remover, alguno de los registros, al activar el botón checkmark
+          (palomita, chulito o verificado), se finaliza el proceso de reversión
+          de puntos.</p>
+        <p class="TITLE"><img src="../img/MEF_015B6.PNG"></p>
+
+        <p class="PARRAFO">Los puntos involucrados en cada reversión, le son
+          reflejados al cliente en varios formularios del aplicativo, a saber:
+          en el campo Devoluciones del formulario invocado mediante el enlace
+          <a href="SCH_065B.html">Puntajes</a> de la Consulta centralizada de tarjeta, en los formularios
+          <a href="MEH_014B.html">Redención premios</a> o <a href="SCH_065B.html">Puntajes por tarjeta</a>. De igual
+          manera el campo Saldo inventario, en Premios puntaje, se incrementa en
+          la misma cantidad aquí reversada.</p>
+      </section>
+      <script src="../js/menu.js"></script>
+    </body>
+    <div id="footerContainer"></div>
+    <script>
   fetch('footer.html')
     .then(response => response.text())
     .then(html => {
@@ -167,4 +88,4 @@
     });
 </script>
 
-</html>
+  </html>

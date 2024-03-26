@@ -18,24 +18,20 @@
             <img class="TITLE"  src= "../img/menu.PNG" alt="Botón de Menú ">
         </div>
     </header>
-   <div id="menuContainer"></div>
-    <script>
-      fetch('menu.html')
-        .then(response => response.text())
-        .then(html => {
-          document.getElementById('menuContainer').innerHTML = html;
-        });
-    </script>
+      <div id="menuContainer"></div>
+  <script>
+    fetch('menu.html')
+      .then(response => response.text())
+      .then(html => {
+        document.getElementById('menuContainer').innerHTML = html;
+      });
+  </script>
 
     <section>
         <div> 
-            <table>
-              <tr> 
-                <td><div> 
+            
                     <p  class="TITLE">Solicitudes masivas</p>
-                  </div></td>
-              </tr>
-            </table>
+                  
             <p class="PARRAFO" >Mediante esta opci&oacute;n la entidad 
               tiene la posibilidad de registrar en el sistema las solicitudes de tarjetas 
               d&eacute;bito no personalizadas con destino a las diferentes sucursales con 
@@ -43,13 +39,13 @@
             <p  class="PARRAFO">Al ingresar a la opci&oacute;n se despliega 
               un wizard de dos pasos y la primera p&aacute;gina contiene un filtro que permite 
               consultar las solicitudes por sucursal y/o producto.</p>
-            <p class="TITLE"><img src="../img/DBF_002E.PNG"412" ></p>
+            <p class="TITLE"><img src="../img/DBF_002E.PNG"></p>
 
             <p  class="TITLE">Descripci&oacute;n de campos</p>
             <div> 
               <table>
                 <tr> 
-                  <td class="titletable"  ><p class="SUBTITULO"><b><span >Sucursal</span></b></p></td>
+                  <td class="titletable"  ><p class="SUBTITULO"><span >Sucursal</span></p></td>
                   <td><p  class="PARRAFO">Campo 
                       con lista de valores que permite seleccionar la <a href="NUH_020B.html" >sucursal</a> 
                       de la entidad a la que pertenecen las solicitudes masivas que se desea 
@@ -57,7 +53,7 @@
                 </tr>
                 <tr> 
                   <td class="titletable" > 
-                    <p class="SUBTITULO"><b><span >Producto</span></b></p></td>
+                    <p class="SUBTITULO"><span >Producto</span></p></td>
                   <td><p  class="PARRAFO">Este 
                       campo contiene una lista de valores que permite seleccionar el <a href="DBH_018B.html" >producto 
                       d&eacute;bito</a> al que corresponden las solicitudes masivas 
@@ -80,41 +76,41 @@
             <div> 
               <table>
                 <tr> 
-                  <td class="titletable"  ><p class="SUBTITULO"><b><span >Sucursal</span></b></p></td>
+                  <td class="titletable"  ><p class="SUBTITULO"><span >Sucursal</span></p></td>
                   <td><p  class="PARRAFO">Campo 
                       que muestra las <a href="NUH_020B.html" >sucursales</a> 
                       de la entidad a las que pertenecen las diferentes solicitudes masivas.</p></td>
                 </tr>
                 <tr> 
                   <td class="titletable" > 
-                    <p class="SUBTITULO"><b><span >Producto</span></b></p></td>
+                    <p class="SUBTITULO"><span >Producto</span></p></td>
                   <td><p  class="PARRAFO">Este 
                       campo despliega el <a href="DBH_018B.html" >producto 
                       d&eacute;bito</a> que se est&aacute; solicitando para la sucursal.</p></td>
                 </tr>
                 <tr> 
-                  <td class="titletable"><p class="SUBTITULO"><b><span >Fecha 
-                      solicitud </span></b></p></td>
+                  <td class="titletable"><p class="SUBTITULO"><span >Fecha 
+                      solicitud </span></p></td>
                   <td><p  class="PARRAFO">Campo 
                       en formato YYYY-MM-DD la fecha en la cual se registr&oacute; en el 
                       sistema la solicitud masiva de tarjetas d&eacute;bito.</p></td>
                 </tr>
                 <tr> 
-                  <td class="titletable"><p class="SUBTITULO"><b><span >Solo 
-                      consulta </span></b></p></td>
+                  <td class="titletable"><p class="SUBTITULO"><span >Solo 
+                      consulta </span></p></td>
                   <td><p  class="PARRAFO">Este 
                       campo muestra como valor 'Normal' para indicar que la tarjeta es transaccional 
                       y emite pl&aacute;stico.</p></td>
                 </tr>
                 <tr> 
-                  <td class="titletable"><p class="SUBTITULO"><b><span >Cantidad 
-                      solicitada </span></b></p></td>
+                  <td class="titletable"><p class="SUBTITULO"><span >Cantidad 
+                      solicitada </span></p></td>
                   <td><p  class="PARRAFO">Campo 
                       que contiene la cantidad de tarjetas que por producto se solicitan 
                       para la sucursal.</p></td>
                 </tr>
                 <tr> 
-                  <td class="titletable"><p class="SUBTITULO"><b><span >Procesada</span></b></p></td>
+                  <td class="titletable"><p class="SUBTITULO"><span >Procesada</span></p></td>
                   <td><p  class="PARRAFO">En 
                       este campo se indica Si o No la solicitud ya fue 
                       procesada, es decir, si ya se generaron los n&uacute;meros de tarjetas 
@@ -122,7 +118,7 @@
                       en realce</a>.</p></td>
                 </tr>
                 <tr> 
-                  <td class="titletable"><p class="SUBTITULO"><b><span >Selecci&oacute;n</span></b></p></td>
+                  <td class="titletable"><p class="SUBTITULO"><span >Selecci&oacute;n</span></p></td>
                   <td><p  class="PARRAFO">Campo 
                       tipo check que permite marcar las solicitudes que se desea procesar 
                       en caso que no se desee procesar todas las solicitudes existentes.</p></td>
@@ -132,7 +128,7 @@
 
             <p  class="PARRAFO">El formulario cuenta con las opciones Eliminar 
               y Adicionar.</p>
-            <p  class="PARRAFO"><b ><span class="SUBTITULO">Adicionar:</span></b> 
+            <p  class="PARRAFO"><span class="SUBTITULO">Adicionar:</span> 
               si el usuario invoca la opci&oacute;n Adicionar, se despliega un 
               nuevo formulario con los siguientes campos.</p>
             <p class="TITLE"><img src="../img/DBF_002E2.PNG"468" height="113"></p>
@@ -141,8 +137,8 @@
             <div> 
               <table>
                 <tr> 
-                  <td class="titletable"><p class="SUBTITULO"><b><span >Tipo 
-                      solicitud </span></b></p></td>
+                  <td class="titletable"><p class="SUBTITULO"><span >Tipo 
+                      solicitud </span></p></td>
                   <td><p  class="PARRAFO">Campo 
                       obligatorio con lista de valores que permite seleccionar el <a href="DBH_018B.html" >producto 
                       d&eacute;bito</a> del cual se est&aacute; solicitando generaci&oacute;n 
@@ -151,7 +147,7 @@
                 </tr>
                 <tr> 
                   <td class="titletable" > 
-                    <p class="SUBTITULO"><b><span >Sucursal</span></b></p></td>
+                    <p class="SUBTITULO"><span >Sucursal</span></p></td>
                   <td><p  class="PARRAFO">Este 
                       campo obligatorio contiene lista de valores de la que se selecciona 
                       la <a href="NUH_020B.html" >sucursal</a> 
@@ -160,8 +156,8 @@
                 </tr>
                 <tr> 
                   <td> 
-                    <p class="SUBTITULO"><b><span >Cantidad 
-                      solicitada </span></b></p></td>
+                    <p class="SUBTITULO"><span >Cantidad 
+                      solicitada </span></p></td>
                   <td><p  class="PARRAFO">Campo 
                       num&eacute;rico obligatorio en el que se debe registrar la cantidad 
                       de tarjetas masivas solicitadas.</p></td>
@@ -179,8 +175,8 @@
             <p  class="PARRAFO">La segunda p&aacute;gina contiene una casilla 
               que permite seleccionar aquellas solicitudes que ya no se desea procesar.</p>
             <p  class="TITLE">Botones especiales</p>
-            <p><a name="BL_APLICAR"></a><span class="SUBTITULO"><span ><b>Aplicar 
-              todas </b>:</span></span><span > 
+            <p><a name="BL_APLICAR"></a><span class="SUBTITULO"><span >Aplicar 
+              todas :</span></span><span > 
               mediante este bot&oacute;n se permite el procesamiento de todas las solicitudes 
               masivas existentes y cuyo estado sea sin procesar, de acuerdo con lo indicado 
               para la misma en el campo Procesada. Una vez efectuado el proceso, en la opci&oacute;n 

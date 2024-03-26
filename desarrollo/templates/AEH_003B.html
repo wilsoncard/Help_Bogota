@@ -1,135 +1,159 @@
 <!DOCTYPE html>
 <html lang="es">
 
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>BANKBU®</title>
-  <link rel="stylesheet" href="../css/pages.css">
-  <link rel="stylesheet" href="../css/style.css">
-  <link rel="icon" href="../img/ACQUIRER-logo.JPG" type="image/x-icon">
-</head>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BANKBU®</title>
+    <link rel="stylesheet" href="../css/pages.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="icon" href="../img/ACQUIRER-logo.JPG" type="image/x-icon">
+  </head>
 
-<body>
-  <header>
-    <img class="logo" src="../img/logoBankbu_.PNG" alt="Logo de Mi Empresa">
-    <div id="menuBtn">
-      <img class="TITLE" src="../img/menu.PNG" alt="Botón de Menú ">
-    </div>
-  </header>
-  <div id="menuContainer"></div>
+  <body>
+    <header>
+      <img class="logo" src="../img/logoBankbu_.PNG" alt="Logo de Mi Empresa">
+      <div id="menuBtn">
+        <img class="TITLE" src="../img/menu.PNG" alt="Botón de Menú ">
+      </div>
+    </header>
+    <div id="menuContainer"></div>
     <script>
-      fetch('menu.html')
-        .then(response => response.text())
-        .then(html => {
-          document.getElementById('menuContainer').innerHTML = html;
-        });
-    </script>
-  <section>
-    <div>
-      <table>
-        <tr>
-          <td>
-            <div>
-              <p class="TITLE style6">Programaci&oacute;n de visitas a establecimientos</p>
-            </div>
-          </td>
-        </tr>
+    fetch('menu.html')
+      .then(response => response.text())
+      .then(html => {
+        document.getElementById('menuContainer').innerHTML = html;
+      });
+  </script>
+    <section>
+      <div>
+        <table>
+          <tr>
+            <td>
+              <div>
+                <p class="TITLE style6">Programaci&oacute;n de visitas a
+                  establecimientos</p>
+              </div>
+            </td>
+          </tr>
 
-      </table>
-      <p>Una vez que se ha efectuado el proceso de programaci&oacute;n de visitas, por medio de esta opci&oacute;n, la
-        entidad financiera puede definir las actividades que se deben llevar a cabo en cada una de las visitas
-        programadas a los establecimientos. El formulario cuenta con un filtro de b&uacute;squeda y los vinculos <a
-            href="AEH_003B1.html">Programaci&oacute;n de visitas</a> / <a href="AEH_003B2.html">Programaci&oacute;n
+        </table>
+        <p>Una vez que se ha efectuado el proceso de programaci&oacute;n de
+          visitas, por medio de esta opci&oacute;n, la
+          entidad financiera puede definir las actividades que se deben llevar a
+          cabo en cada una de las visitas
+          programadas a los establecimientos. El formulario cuenta con un filtro
+          de b&uacute;squeda y los vinculos <a
+            href="AEH_003B1.html">Programaci&oacute;n de visitas</a> / <a
+            href="AEH_003B2.html">Programaci&oacute;n
             masiva de visitas</a>.</p>
-      <p class="TITLE"><img src="../img/AEF_003B.PNG" ></p>
-      <p class="PARRAFO"><span class="SUBTITULO">Filtro:</span>  Se pueden realizar consultas a trav&eacute;s
-        de las siguientes opciones:</p>
-      <p class="center"><img src="../img/AEF_003B1.PNG" 748" ></p>
-      <table>
-        <tr>
-          <td class="titletable">
-            <p class="SUBTITULO"><span>C&oacute;digo</span>  del establecimiento </p>
-          </td>
-          <td>
-            <p>Campo alfanum&eacute;rico de 11 d&iacute;gitos, el cual corresponde al c&oacute;digo &uacute;nico que
-              identifica a cada comercio dentro de las <A href="NUH_033B.html">franquicias</A> o al
-              c&oacute;digo asignado a los establecimientos de marca privada.</p>
-          </td>
-        </tr>
+        <p class="TITLE"><img src="../img/AEF_003B.PNG"></p>
+        <p class="PARRAFO"><span class="SUBTITULO">Filtro:</span> Se pueden
+          realizar consultas a trav&eacute;s
+          de las siguientes opciones:</p>
+        <p class="center"><img src="../img/AEF_003B1.PNG" 748"></p>
+        <table>
+          <tr>
+            <td class="titletable">
+              <p class="SUBTITULO">C&oacute;digo</span> del
+                establecimiento </p>
+            </td>
+            <td>
+              <p>Campo alfanum&eacute;rico de 11 d&iacute;gitos, el cual
+                corresponde al c&oacute;digo &uacute;nico que
+                identifica a cada comercio dentro de las <a
+                  href="NUH_033B.html">franquicias</a> o al
+                c&oacute;digo asignado a los establecimientos de marca
+                privada.</p>
+            </td>
+          </tr>
 
-        <tr>
-          <td class="titletable">
-            <p class="SUBTITULO"><b><span><span>Nombre</span></span></b> del establecimiento </p>
-          </td>
-          <td>
-            <p>En este campo alfanum&eacute;rico de 30 d&iacute;gitos, se registra el nombre comercial del
-              establecimiento asociado al c&oacute;digo &uacute;nico.</p>
-          </td>
-        </tr>
-        <tr>
-          <td class="titletable">
-            <p class="SUBTITULO"><b><span>N&uacute;mero de identificaci&oacute;n </span></b></p>
-          </td>
-          <td>
-            <p>Este campo alfanum&eacute;rico de 12 posiciones, permite ingresar la identificaci&oacute;n del asociado
-              que se desea filtrar. </p>
-          </td>
-        </tr>
+          <tr>
+            <td class="titletable">
+              <p class="SUBTITULO">Nombre</span></span> del
+                establecimiento </p>
+            </td>
+            <td>
+              <p>En este campo alfanum&eacute;rico de 30 d&iacute;gitos, se
+                registra el nombre comercial del
+                establecimiento asociado al c&oacute;digo &uacute;nico.</p>
+            </td>
+          </tr>
+          <tr>
+            <td class="titletable">
+              <p class="SUBTITULO">N&uacute;mero de identificaci&oacute;n
+                </span></p>
+            </td>
+            <td>
+              <p>Este campo alfanum&eacute;rico de 12 posiciones, permite
+                ingresar la identificaci&oacute;n del asociado
+                que se desea filtrar. </p>
+            </td>
+          </tr>
 
-        <tr>
-          <td class="titletable">
-            <p class="SUBTITULO"><b><span><span>Regi&oacute;n</span></span></b></p>
-          </td>
-          <td>
-            <p>Campo
-              alfanum&eacute;rico de tres d&iacute;gitos, que contiene
-              el c&oacute;digo asignado a cada Regi&oacute;n. Se puede diligenciar de forma manual o desplazando la
-              lista de valores.</p>
-          </td>
-        </tr>
+          <tr>
+            <td class="titletable">
+              <p class="SUBTITULO">Regi&oacute;n</span></span></p>
+            </td>
+            <td>
+              <p>Campo
+                alfanum&eacute;rico de tres d&iacute;gitos, que contiene
+                el c&oacute;digo asignado a cada Regi&oacute;n. Se puede
+                diligenciar de forma manual o desplazando la
+                lista de valores.</p>
+            </td>
+          </tr>
 
-        <tr>
-          <td class="titletable">
-            <p class="SUBTITULO"><b><span><span>Sub divisi&oacute;n </span></span></b></p>
-          </td>
-          <td>
-            <p>Campo
-              alfanum&eacute;rico, que contiene
-              el c&oacute;digo asignado a cada Sub divisi&oacute;n. Se diligencia desplazando la lista de valores.</p>
-          </td>
-        </tr>
+          <tr>
+            <td class="titletable">
+              <p class="SUBTITULO">Sub divisi&oacute;n
+                  </span></span></p>
+            </td>
+            <td>
+              <p>Campo
+                alfanum&eacute;rico, que contiene
+                el c&oacute;digo asignado a cada Sub divisi&oacute;n. Se
+                diligencia desplazando la lista de valores.</p>
+            </td>
+          </tr>
 
-        <tr>
-          <td class="titletable">
-            <p class="SUBTITULO"><b><span><span>Ubicaci&oacute;n</span></span></b></p>
-          </td>
-          <td>
-            <p>Campo obligatorio, diligenciable seg&uacute;n la informaci&oacute;n contenida en el campo Sub
-                divisi&oacute;n , en esta se diligencian los datos contenidos en la tabla <span class="style2"><a
-                  href="NUH_003B.html">Informaci&oacute;n geopolitica</a>. </span></p>
-          </td>
-        </tr>
+          <tr>
+            <td class="titletable">
+              <p
+                class="SUBTITULO">Ubicaci&oacute;n</span></span></p>
+            </td>
+            <td>
+              <p>Campo obligatorio, diligenciable seg&uacute;n la
+                informaci&oacute;n contenida en el campo Sub
+                divisi&oacute;n , en esta se diligencian los datos contenidos en
+                la tabla <span class="style2"><a
+                    href="NUH_003B.html">Informaci&oacute;n geopolitica</a>.
+                </span></p>
+            </td>
+          </tr>
 
-        <tr>
-          <td class="titletable">
-            <p class="SUBTITULO"><b><span><span>C&oacute;digo de zona </span></span></b></p>
-          </td>
-          <td>
-            <p>Campo num&eacute;rico de 2 d&iacute;gitos, en el cual se registra el c&oacute;digo asignado por la
-              entidad a cada una de las zonas que conforman las subdivisiones.</p>
-          </td>
-        </tr>
-      </table>
-  </section>
-  <script src="../js/menu.js"></script>
-</body>
-<div id="footerContainer"></div>
-<script>
+          <tr>
+            <td class="titletable">
+              <p class="SUBTITULO">C&oacute;digo de zona
+                  </span></span></p>
+            </td>
+            <td>
+              <p>Campo num&eacute;rico de 2 d&iacute;gitos, en el cual se
+                registra el c&oacute;digo asignado por la
+                entidad a cada una de las zonas que conforman las
+                subdivisiones.</p>
+            </td>
+          </tr>
+        </table>
+      </section>
+      <script src="../js/menu.js"></script>
+    </body>
+    <div id="footerContainer"></div>
+    <script>
   fetch('footer.html')
     .then(response => response.text())
     .then(html => {
       document.getElementById('footerContainer').innerHTML = html;
     });
 </script>
-</html>
+  </html>

@@ -18,24 +18,20 @@
             <img class="TITLE"  src= "../img/menu.PNG" alt="Botón de Menú ">
         </div>
     </header>
-   <div id="menuContainer"></div>
-    <script>
-      fetch('menu.html')
-        .then(response => response.text())
-        .then(html => {
-          document.getElementById('menuContainer').innerHTML = html;
-        });
-    </script>
+      <div id="menuContainer"></div>
+  <script>
+    fetch('menu.html')
+      .then(response => response.text())
+      .then(html => {
+        document.getElementById('menuContainer').innerHTML = html;
+      });
+  </script>
 
     <section>
         <div> 
-            <table>
-              <tr> 
-                <td><div> 
+            
                     <p  class="TITLE">Novedad bloqueo pl&aacute;stico d&eacute;bito</p>
-                  </div></td>
-              </tr>
-            </table>
+                  
             <p class="PARRAFO" >Mediante esta opci&oacute;n que se 
               invoca desde <a href="DBH_020B.html" >Generaci&oacute;n de novedades 
               d&eacute;bito</a> se registra la novedad mediante la cual se aplican o retiran 
@@ -47,8 +43,8 @@
             <div> 
               <table>
                 <tr> 
-                  <td class="titletable"  ><p class="SUBTITULO"><b><span >Bloqueo 
-                      actual</span></b></p></td>
+                  <td class="titletable"  ><p class="SUBTITULO"><span >Bloqueo 
+                      actual</span></p></td>
                   <td><p  class="PARRAFO">Campo 
                       con lista de valores de la que se selecciona la <a href="NUH_017B.html" >novedad</a> 
                       de productos d&eacute;bito que se le va a aplicar a la tarjeta. Cuando 
@@ -57,16 +53,16 @@
                       se est&aacute; levantando el bloqueo a la tarjeta.</p></td>
                 </tr>
                 <tr> 
-                  <td class="titletable"><p class="SUBTITULO"><b><span >Fecha 
-                      bloqueo actual</span></b></p></td>
+                  <td class="titletable"><p class="SUBTITULO"><span >Fecha 
+                      bloqueo actual</span></p></td>
                   <td><p  class="PARRAFO">En 
                       este campo de salida se muestra en formato YYYY-MM-DD la fecha de 
                       la &uacute;ltima vez que se le aplic&oacute; o retir&oacute; un bloqueo 
                       a la tarjeta.</p></td>
                 </tr>
                 <tr> 
-                  <td class="titletable"><p class="SUBTITULO"><b><span >Motivo 
-                      cancelaci&oacute;n </span></b></p></td>
+                  <td class="titletable"><p class="SUBTITULO"><span >Motivo 
+                      cancelaci&oacute;n </span></p></td>
                   <td><p  class="PARRAFO">Cuando 
                       el bloqueo actual corresponde a Cancelaci&oacute;n voluntaria, 
                       este campo se habilita y convierte en obligatorio permitiendo selecciona 
@@ -74,8 +70,8 @@
                       por el cual el cliente hace la devoluci&oacute;n del pl&aacute;stico.</p></td>
                 </tr>
                 <tr> 
-                  <td class="titletable"><p class="SUBTITULO"><b><span >Fecha 
-                      radicaci&oacute;n</span></b></p></td>
+                  <td class="titletable"><p class="SUBTITULO"><span >Fecha 
+                      radicaci&oacute;n</span></p></td>
                   <td><p  class="PARRAFO">En 
                       este campo obligatorio se registra en formato YYYY-MM-DD la fecha 
                       en la que se ingresa la novedad en el sistema.</p></td>

@@ -18,24 +18,20 @@
             <img class="TITLE"  src= "../img/menu.PNG" alt="Botón de Menú ">
         </div>
     </header>
-   <div id="menuContainer"></div>
-    <script>
-      fetch('menu.html')
-        .then(response => response.text())
-        .then(html => {
-          document.getElementById('menuContainer').innerHTML = html;
-        });
-    </script>
+      <div id="menuContainer"></div>
+  <script>
+    fetch('menu.html')
+      .then(response => response.text())
+      .then(html => {
+        document.getElementById('menuContainer').innerHTML = html;
+      });
+  </script>
 
     <section>
         <div> 
-            <table>
-              <tr> 
-                <td><div> 
+            
                     <p  class="TITLE">Tipos de documentos </p>
-                    </div></td>
-              </tr>
-            </table>
+                    
             <p>Una vez se   inicie el proceso de cobranza, la base del mismo la constituyen los documentos   recibidos tanto en calidad de garant&iacute;a como de medio de pago, por lo que esta   forma o pantalla permite parametrizar dichos documentos.</p>
             <p>El formulario contiene las opciones Actualizar, Eliminar, 
             y Adicionar.</p>
@@ -48,7 +44,7 @@
             
             <table>
               <tr>
-                <td class="titletable"  ><p class="SUBTITULO"><b><span ><span >C&oacute;digo</span></span></b></p></td>
+                <td class="titletable"  ><p class="SUBTITULO"><span ><span >C&oacute;digo</span></span></p></td>
                 <td><p>Campo   alfanum&eacute;rico de 3 posiciones, obligatorio, asignado a cada una de las clases o   tipos de documentos bien sean de garant&iacute;a o de medio de pago que circulan   durante el proceso de cobranza.</p>        </td>
               </tr>
               <tr>
@@ -57,7 +53,7 @@
                 </td>
               </tr>
               <tr>
-                <td class="titletable"><p class="SUBTITULO"><b><span >Cantidad de copias </span></b></p></td>
+                <td class="titletable"><p class="SUBTITULO"><span >Cantidad de copias </span></p></td>
                 <td><p class="PARRAFO">En este capo se ingresa el n&uacute;mero de copias que deben ser entregadas del documento solicitado. </p>      </td>
               </tr>
             </table>

@@ -17,33 +17,29 @@
             <img class="TITLE"  src= "../img/menu.PNG" alt="Botón de Menú ">
         </div>
     </header>
-   <div id="menuContainer"></div>
-    <script>
-      fetch('menu.html')
-        .then(response => response.text())
-        .then(html => {
-          document.getElementById('menuContainer').innerHTML = html;
-        });
-    </script>
+      <div id="menuContainer"></div>
+  <script>
+    fetch('menu.html')
+      .then(response => response.text())
+      .then(html => {
+        document.getElementById('menuContainer').innerHTML = html;
+      });
+  </script>
     <section>
         <div> 
-            <table>
-              <tr> 
-                <td><div> 
+            
                     <p  class="TITLE">Consulta de auditoria    </p>
-                  </div></td>
-              </tr>
-            </table>
+                  
             <p class="PARRAFO" >El sistema permite realizar ex&aacute;menes puntuales a la configuraci&oacute;n del esquema de auditor&iacute;a vigente.</span></p>
             <p class="PARRAFO" >El formulario inicial desplegado contiene los enlaces <a href="#adicionarconsulta" target="_self" >Adicionar consulta</a> y <a href="#ejecutarconsulta" target="_self" >Ejecutar consulta</a>, adem&aacute;s de los de Actualizar, Eliminar </span><span >y</span><span class="PARRAFO"> Detalle.</span></p>
            
             <p class="TITLE"><img src="../img/AUF_002E.PNG"></p>
             
             <p  class="TITLE">Descripci&oacute;n de campos</p>
-            <table width=731  >
+            <table   >
               <tr>
-                <td    class="SUBTITULO"><p class="SUBTITULO">Consulta ID<b>
-                </b></p></td>
+                <td    class="SUBTITULO"><p class="SUBTITULO">Consulta ID
+                </p></td>
                 <td   class="PARRAFO" ><p  class="PARRAFO">Campo de salida que ilustra la secuencia asignada por el sistema y que permite identificar las diferentes consultas definidas por la entidad.</p></td>
               </tr>
               <tr>
@@ -57,16 +53,16 @@
               </tr>
             </table>
             
-            <p class="PARRAFO" ><span class="SUBTITULO"><span ><b >Actualizar</b></span><span >: </span></span><span >si </span><span > el usuario invoca el enlace Actualizar, se depliega</span><span > un wisard de </span>  <span >d</span><span >os pasos, mediante el cual puede modificarse sobre cuales  campos se realiza la consulta de la  audit</span><span >o</span><span >r&iacute;a.</span></span></p>
+            <p class="PARRAFO" ><span class="SUBTITULO"><span >Actualizar</span><span >: </span></span><span >si </span><span > el usuario invoca el enlace Actualizar, se depliega</span><span > un wisard de </span>  <span >d</span><span >os pasos, mediante el cual puede modificarse sobre cuales  campos se realiza la consulta de la  audit</span><span >o</span><span >r&iacute;a.</span></span></p>
             <p class="TITLE"><img src="../img/AUF_002E1.PNG""></p>
             
             <p class="TITLE"><img src="../img/AUF_002E2.PNG"></p>
             
             <p  class="TITLE">Descripci&oacute;n de campos</p>
-            <table width=731  >
+            <table >
               <tr>
-                <td    class="SUBTITULO"><p class="SUBTITULO">Descripci&oacute;n consulta<b>
-                </b></p></td>
+                <td    class="SUBTITULO"><p class="SUBTITULO">Descripci&oacute;n consulta
+                </p></td>
                 <td   class="PARRAFO" ><p  class="PARRAFO">Campo alfanum&eacute;rico, obligatorio, en el que en m&aacute;ximo 50 caracteres, se debe indicar el nombre que mejor sintetice el contenido u objetivo de la consulta de auditor&iacute;a. </p></td>
               </tr>
               <tr>
@@ -115,15 +111,15 @@
               </tr>
             </table>
             
-            <p class="PARRAFO" ><span class="SUBTITULO"><span ><b >Detalle</b></span><span >:</span></span><span >Si el usuario invoca el enlace </span><span >Detalle</span><span >, </span><span >el siguiente formulario: </span></span></p>
+            <p class="PARRAFO" ><span class="SUBTITULO"><span >Detalle</span><span >:</span></span><span >Si el usuario invoca el enlace </span><span >Detalle</span><span >, </span><span >el siguiente formulario: </span></span></p>
             
             <p class="TITLE"><img src="../img/AUF_002E3.PNG"></p>
             
             <p  class="TITLE">Descripci&oacute;n de campos</p>
-            <table width=731  >
+            <table>
               <tr>
-                <td    class="SUBTITULO"><p class="SUBTITULO">Columna<b>
-                </b></p></td>
+                <td    class="SUBTITULO"><p class="SUBTITULO">Columna
+                </p></td>
                 <td   class="PARRAFO" ><p  class="PARRAFO">Campo de salida que ilustra el nombre de la columna o campo de la estructura o tabla consultada.</p></td>
               </tr>
               <tr>
@@ -141,15 +137,15 @@
             </table>
             
             
-            <p class="PARRAFO" ><span class="SUBTITULO"><span ><b ><a name="adicionarconsulta"></a>Adicionar consulta</b></span><span >:</span></span>  Al activar formulario </span></p>
+            <p class="PARRAFO" ><span class="SUBTITULO"><span ><a name="adicionarconsulta"></a>Adicionar consulta</span><span >:</span></span>  Al activar formulario </span></p>
             <p class="TITLE"><img src="../img/AUF_002E4.PNG"></p>
             
             <p class="TITLE"><img src="../img/AUF_002E5.PNG"></p>
             <p  class="TITLE">Descripci&oacute;n de campos</p>
-            <table width=731  >
+            <table>
               <tr>
-                <td    class="SUBTITULO"><p class="SUBTITULO">Descripci&oacute;n consulta<b>
-                </b></p></td>
+                <td    class="SUBTITULO"><p class="SUBTITULO">Descripci&oacute;n consulta
+                </p></td>
                 <td   class="PARRAFO" ><p  class="PARRAFO">Campo obligatorio, en el que en m&aacute;ximo 50 caracteres, el usuario debe registrar el nombre que mejor describa la esencia de la consulta de auditor&iacute;a a efectuar. </p></td>
               </tr>
               <tr>
@@ -199,13 +195,13 @@
             </table>
             
             
-            <p class="PARRAFO" ><span class="SUBTITULO"><span ><b ><a name="ejecutarconsulta"></a>Ejecutar consulta</b></span><span >:</span></span>  El formulario desplegado por el sistema le muestra al usuario los campos incluidos por cada estructura, antes de ordenar la <a href="#generarconsulta" target="_self" >Generación de la consulta</a>.</span></p>
+            <p class="PARRAFO" ><span class="SUBTITULO"><span ><a name="ejecutarconsulta"></a>Ejecutar consulta</span><span >:</span></span>  El formulario desplegado por el sistema le muestra al usuario los campos incluidos por cada estructura, antes de ordenar la <a href="#generarconsulta" target="_self" >Generación de la consulta</a>.</span></p>
             <p class="TITLE"><img src="../img/AUF_002E6.PNG"></p>
             <p  class="TITLE">Descripci&oacute;n de campos</p>
-            <table width=731  >
+            <table>
               <tr>
-                <td    class="SUBTITULO"><p class="SUBTITULO">Descripci&oacute;n consulta<b>
-                </b></p></td>
+                <td    class="SUBTITULO"><p class="SUBTITULO">Descripci&oacute;n consulta
+                </p></td>
                 <td   class="PARRAFO" ><p  class="PARRAFO">Campo obligatorio, en el que en m&aacute;ximo 50 caracteres, el usuario debe registrar el nombre que mejor describa la esencia de la consulta de auditor&iacute;a a efectuar. </p></td>
               </tr>
               <tr>
@@ -238,13 +234,13 @@
               </tr>
             </table>
 
-            <p  class="PARRAFO"><span class="SUBTITULO"><span ><b ><a name="generarconsulta"></a>Generar consulta</b></span><span >:</span></span>  El formulario d</p>
+            <p  class="PARRAFO"><span class="SUBTITULO"><span ><a name="generarconsulta"></a>Generar consulta</span><span >:</span></span>  El formulario d</p>
             <p class="TITLE"><img src="../img/AUF_002E7.PNG"></p>
             <p  class="TITLE">Descripci&oacute;n de campos</p>
-            <table width=731  >
+            <table>
               <tr>
-                <td    class="SUBTITULO"><p class="SUBTITULO">Descripci&oacute;n consulta<b>
-                </b></p></td>
+                <td    class="SUBTITULO"><p class="SUBTITULO">Descripci&oacute;n consulta
+                </p></td>
                 <td   class="PARRAFO" ><p  class="PARRAFO">Campo obligatorio, en el que en m&aacute;ximo 50 caracteres, el usuario debe registrar el nombre que mejor describa la esencia de la consulta de auditor&iacute;a a efectuar. </p></td>
               </tr>
               <tr>

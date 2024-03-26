@@ -1,179 +1,194 @@
 <!DOCTYPE html>
 <html lang="es">
 
-<head>
+  <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>BANKBU®</title>
     <link rel="stylesheet" href="../css/pages.css">
     <link rel="stylesheet" href="../css/style.css">
- <link rel="icon" href="../img/ACQUIRER-logo.JPG" type="image/x-icon">
-</head>
+    <link rel="icon" href="../img/ACQUIRER-logo.JPG" type="image/x-icon">
+  </head>
 
-<body>
+  <body>
     <header>
-        <img class="logo" src="../img/logoBankbu_.PNG" alt="Logo de Mi Empresa">
-        <div id="menuBtn">
-            <img class="TITLE"  src= "../img/menu.PNG" alt="Botón de Menú ">
-        </div>
+      <img class="logo" src="../img/logoBankbu_.PNG" alt="Logo de Mi Empresa">
+      <div id="menuBtn">
+        <img class="TITLE" src="../img/menu.PNG" alt="Botón de Menú ">
+      </div>
     </header>
-   <div id="menuContainer"></div>
+    <div id="menuContainer"></div>
     <script>
-      fetch('menu.html')
-        .then(response => response.text())
-        .then(html => {
-          document.getElementById('menuContainer').innerHTML = html;
-        });
-    </script>
+    fetch('menu.html')
+      .then(response => response.text())
+      .then(html => {
+        document.getElementById('menuContainer').innerHTML = html;
+      });
+  </script>
 
     <section>
-        <div> 
-            <table>
-              <tr> 
-                <td><div> 
-                    <p  class="TITLE">Consulta de clientes </p>
-                  </div></td>
-              </tr>
-            </table>
-            <p  class="PARRAFO">Este formulario que puede ser invocado desde 
-              el n&uacute;cleo (Core) o desde el emisor (Issuer) le permite a la entidad 
-              realizar la b&uacute;squeda de un cliente o una tarjeta en la base de datos.</p>
-            <p  class="PARRAFO">Independientemente desde donde se esté procurando la consulta, ésta se puede efectuar por: 
-              tipo y número de identificación, por uno o los dos nombres o apellidos, o por uno solo de estos, así como por el
-               Número tarjeta.</p>
-            <p  class="PARRAFO">La opci&oacute;n est&aacute; compuesta por 
-              un filtro donde el usuario ingresa los criterios deseados y como resultado 
-              el sistema le muestra todos los registros de clientes coincidentes con la 
-              b&uacute;squeda efectuada.</p>
-            <p class="TITLE"><img src="../img/SCF_001E.PNG"556" height="135"></p>
-            
-            
-            <p  class="TITLE">Descripci&oacute;n de campos</p>
-            <table>
-              <tr> 
-                <td class="titletable"><p class="SUBTITULO"><b><span> 
-                    Identificaci&oacute;n</span></b></p></td>
-                <td><p  class="PARRAFO">Radio 
-                    button en el cual se le indica al sistema que la b&uacute;squeda se 
-                    va a efectuar para un tipo y n&uacute;mero de documento de identificaci&oacute;n 
-                    en particular. Por defecto, al ingresar al formulario es la opci&oacute;n 
-                    seleccionada.
-                  </p></td>
-              </tr>
-           
-              <tr> 
-                <td class="titletable"><p class="SUBTITULO"><b><span 
-        >Tipo</span></b></p>
-                </td>
-                <td><p  class="PARRAFO">En 
-                    este campo campo tipo combo el usuario puede seleccionar el <a href="NUH_008B.html" >tipo 
-                    de documento</a> asociado con el cliente que se desea consultar 
-                    en la base de datos.</p></td>
-              </tr>
-           
-              <tr> 
-                <td class="titletable"><p class="SUBTITULO"><b><span 
-        >N&uacute;mero</span></b></p></td>
-                <td><p  class="PARRAFO">Campo 
-                    alfanum&eacute;rico de 16 posiciones, en el que se ingresa el n&uacute;mero 
-                    asociado al documento seleccionado en el campo anterior.
-                  </p>
-                </td>
-              </tr>
-           
-              <tr> 
-                <td class="titletable"><p class="SUBTITULO"><b><span 
-        > 
-                    Nombre</span></b></p></td>
-                <td><p  class="PARRAFO">En 
-                    caso que la b&uacute;squeda se desee efectuar con base en el nombre 
-                    y/o apellidos del cliente, en esta radio button se marca para indicarle 
-                    al sistema el tipo de consulta que se requiere hacer.
-                  </p></td>
-              </tr>
-           
-              <tr> 
-                <td class="titletable"><p class="SUBTITULO"><b><span 
-        > 
-                    1er Nombre</span></b></p></td>
-                <td><p  class="PARRAFO">Campo 
-                    alfanum&eacute;rico de 60 posiciones, no obligatorio, en el cual se 
-                    ingresa el primer nombre del cliente personasnatural o la raz&oacute;n 
-                    social de la persona jur&iacute;dica para la cual se desea consultar 
-                    la informaci&oacute;n.</p></td>
-              </tr>
-           
-              <tr> 
-                <td class="titletable"><p class="SUBTITULO"><b><span 
-        > 
-                    2do Nombre</span></b></p></td>
-                <td><p  class="PARRAFO">En 
-                    este campo alfanum&eacute;rico de 25 posiciones, no obligatorio, se 
-                    registra el segundo nombre correspondiente al cliente persona natural 
-                    para el que se desea efectuar la consulta.
-                  </p></td>
-              </tr>
-           
-              <tr> 
-                <td class="titletable"><p class="SUBTITULO"><b><span 
-        > 
-                    1er Apellido</span></b></p></td>
-                <td><p  class="PARRAFO">Campo 
-                    alfanum&eacute;rico de 20 posiciones, no obligatorio, en el cual se 
-                    ingresa el primer apellido del cliente para el cual se desea efectuar 
-                    la b&uacute;squeda en la base de datos.
-                  </p></td>
-              </tr>
-           
-              <tr> 
-                <td class="titletable"><p class="SUBTITULO"><b><span 
-        > 
-                    2do Apellido</span></b></p></td>
-                <td><p  class="PARRAFO">Este 
-                    campo alfanum&eacute;rico de 20 posiciones, no obligatorio, permite 
-                    consultar en la base de datos a partir del segundo apellido del cliente 
-                    cuando este es una persona natural. </p></td>
-              </tr>
-           
-              <tr> 
-                <td class="titletable"><p class="SUBTITULO"><b><span 
-        > 
-                    Tarjeta</span></b></p></td>
-                <td><p  class="PARRAFO">Campo 
-                    alfanum&eacute;rico de 23 posiciones, no obligatorio, en el cual se 
-                    ingresa el n&uacute;mero de tarjeta que se desea consultar.</p>
-                </td>
-              </tr>
-            </table>
+      <div>
 
-            <p  class="PARRAFO">Cuando se invoca desde el core, una vez ingresados los datos disponibles y se ejecuta la
-               consulta mediante el botón Buscar, el sistema muestra, en el bloque Resultados, todos aquellos registros
-                de la base de datos que coinciden con los criterios seleccionados. Para cada cliente que exista y aún no
-                 tenga un producto asociado, en el campo <a href="SCH_002B.html" >n&uacute;mero 
-                identificaci&oacute;n</a> 
-                se dispone del enlace que permite ir al Detalle de la información del cliente en particular.</p>
-            <p class="TITLE"><img src="../img/SCF_001E3.PNG"768" height="344"></p>
-            
-            <p  class="PARRAFO">Igual comportamiento se observa cuando se invoca desde el Issuer, caso en el cual, si 
-              el cliente existe, en el campo
-              <a href="SCH_002B.html" >n&uacute;mero identificaci&oacute;n</a> 
-              se dispone del enlace que permite ir al Detalle de la información del cliente en particular y, si
-               además, el cliente ya posee un producto, dicho registro se muestra en el campo 
-               <a href="SCH_060B.html" >n&uacute;mero tarjeta</a> 
-               como enlace que permite ir a la Consulta centralizada de tarjetas.</p>
-            <p class="TITLE"><img src="../img/SCF_001E4.PNG"818" ></p>
-            <div>
+        <p class="TITLE">Consulta de clientes </p>
+
+        <p class="PARRAFO">Este formulario puede ser invocado desde el núcleo
+          (Core) o desde el emisor (Issuer), le permite a la entidad realizar la
+          búsqueda de un cliente o una tarjeta en la base de datos.
+          Independientemente desde donde se esté procurando la consulta, ésta se
+          puede efectuar por: tipo y número de identificación, por uno o los dos
+          nombres o apellidos, o por uno solo de estos, así como por el Número
+          tarjeta.</p>
+        <p class="PARRAFO">La opción cuenta con un filtro en el cual se ingresan
+          los criterios disponibles, y luego de activar el botón Buscar, el
+          sistema muestra los registros de clientes coincidentes con la búsqueda
+          efectuada.</p>
+        <p class="TITLE"><img src="../img/SCF_001E.PNG"></p>
+
+        <p class="TITLE">Descripci&oacute;n de campos</p>
+        <table>
+          <tr>
+            <td class="titletable"><p class="SUBTITULO">
+                  Identificaci&oacute;n</span></p></td>
+            <td><p class="PARRAFO">Radio
+                button en el cual se le indica al sistema que la b&uacute;squeda
+                se
+                va a efectuar para un tipo y n&uacute;mero de documento de
+                identificaci&oacute;n
+                en particular. Por defecto, al ingresar al formulario es la
+                opci&oacute;n
+                seleccionada.
+              </p></td>
+          </tr>
+
+          <tr>
+            <td class="titletable"><p class="SUBTITULO">Tipo</span></p>
+            </td>
+            <td><p class="PARRAFO">En
+                este campo campo tipo combo el usuario puede seleccionar el <a
+                  href="NUH_008B.html">tipo
+                  de documento</a> asociado con el cliente que se desea
+                consultar
+                en la base de datos.</p></td>
+          </tr>
+
+          <tr>
+            <td class="titletable"><p
+                class="SUBTITULO">N&uacute;mero</span></p></td>
+            <td><p class="PARRAFO">Campo
+                alfanum&eacute;rico de 16 posiciones, en el que se ingresa el
+                n&uacute;mero
+                asociado al documento seleccionado en el campo anterior.
+              </p>
+            </td>
+          </tr>
+
+          <tr>
+            <td class="titletable"><p class="SUBTITULO">
+                  Nombre</span></p></td>
+            <td><p class="PARRAFO">En
+                caso que la b&uacute;squeda se desee efectuar con base en el
+                nombre
+                y/o apellidos del cliente, en esta radio button se marca para
+                indicarle
+                al sistema el tipo de consulta que se requiere hacer.
+              </p></td>
+          </tr>
+
+          <tr>
+            <td class="titletable"><p class="SUBTITULO">
+                  1er Nombre</span></p></td>
+            <td><p class="PARRAFO">Campo
+                alfanum&eacute;rico de 60 posiciones, no obligatorio, en el cual
+                se
+                ingresa el primer nombre del cliente personasnatural o la
+                raz&oacute;n
+                social de la persona jur&iacute;dica para la cual se desea
+                consultar
+                la informaci&oacute;n.</p></td>
+          </tr>
+
+          <tr>
+            <td class="titletable"><p class="SUBTITULO">
+                  2do Nombre</span></p></td>
+            <td><p class="PARRAFO">En
+                este campo alfanum&eacute;rico de 25 posiciones, no obligatorio,
+                se
+                registra el segundo nombre correspondiente al cliente persona
+                natural
+                para el que se desea efectuar la consulta.
+              </p></td>
+          </tr>
+
+          <tr>
+            <td class="titletable"><p class="SUBTITULO">
+                  1er Apellido</span></p></td>
+            <td><p class="PARRAFO">Campo
+                alfanum&eacute;rico de 20 posiciones, no obligatorio, en el cual
+                se
+                ingresa el primer apellido del cliente para el cual se desea
+                efectuar
+                la b&uacute;squeda en la base de datos.
+              </p></td>
+          </tr>
+
+          <tr>
+            <td class="titletable"><p class="SUBTITULO">
+                  2do Apellido</span></p></td>
+            <td><p class="PARRAFO">Este
+                campo alfanum&eacute;rico de 20 posiciones, no obligatorio,
+                permite
+                consultar en la base de datos a partir del segundo apellido del
+                cliente
+                cuando este es una persona natural. </p></td>
+          </tr>
+
+          <tr>
+            <td class="titletable"><p class="SUBTITULO">
+                  Tarjeta</span></p></td>
+            <td><p class="PARRAFO">Campo
+                alfanum&eacute;rico de 23 posiciones, no obligatorio, en el cual
+                se
+                ingresa el n&uacute;mero de tarjeta que se desea consultar.</p>
+            </td>
+          </tr>
+        </table>
+
+        <p class="PARRAFO">Cuando se invoca desde el core, una vez ingresados
+          los datos disponibles y se ejecuta la
+          consulta mediante el botón Buscar, el sistema muestra, en el bloque
+          Resultados, todos aquellos registros
+          de la base de datos que coinciden con los criterios seleccionados.
+          Para cada cliente que exista y aún no
+          tenga un producto asociado, en el campo <a
+            href="SCH_002B.html">n&uacute;mero
+            identificaci&oacute;n</a>
+          se dispone del enlace que permite ir al Detalle de la información del
+          cliente en particular.</p>
+        <p class="TITLE"><img src="../img/SCF_001E3.PNG"></p>
+
+        <p class="PARRAFO">Igual comportamiento se observa cuando se invoca
+          desde el Issuer, caso en el cual, si
+          el cliente existe, en el campo
+          <a href="SCH_002B.html">n&uacute;mero identificaci&oacute;n</a>
+          se dispone del enlace que permite ir al Detalle de la información del
+          cliente en particular y, si
+          además, el cliente ya posee un producto, dicho registro se muestra en
+          el campo
+          <a href="SCH_060B.html">n&uacute;mero tarjeta</a>
+          como enlace que permite ir a la Consulta centralizada de tarjetas.</p>
+        <p class="TITLE"><img src="../img/SCF_001E4.PNG"></p>
+        <div>
         </section>
-    <script src="../js/menu.js"></script>
+        <script src="../js/menu.js"></script>
 
-    <div id="footerContainer"></div>
-<script>
+        <div id="footerContainer"></div>
+        <script>
   fetch('footer.html')
     .then(response => response.text())
     .then(html => {
       document.getElementById('footerContainer').innerHTML = html;
     });
 </script>
-</body>
+      </body>
 
-</html>
+    </html>

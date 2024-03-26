@@ -1,161 +1,189 @@
 <!DOCTYPE html>
 <html lang="es">
 
-<head>
+  <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>BANKBU®</title>
 
     <link rel="stylesheet" href="../css/pages.css">
     <link rel="stylesheet" href="../css/style.css">
- <link rel="icon" href="../img/ACQUIRER-logo.JPG" type="image/x-icon">
-</head>
+    <link rel="icon" href="../img/ACQUIRER-logo.JPG" type="image/x-icon">
+  </head>
 
-<body>
+  <body>
 
     <header>
-        <img class="logo" src="../img/logoBankbu_.PNG" alt="Logo de Mi Empresa">
-        <div id="menuBtn">
-            <img class="TITLE"  src= "../img/menu.PNG" alt="Botón de Menú ">
-        </div>
+      <img class="logo" src="../img/logoBankbu_.PNG" alt="Logo de Mi Empresa">
+      <div id="menuBtn">
+        <img class="TITLE" src="../img/menu.PNG" alt="Botón de Menú ">
+      </div>
     </header>
-   <div id="menuContainer"></div>
+    <div id="menuContainer"></div>
     <script>
-      fetch('menu.html')
-        .then(response => response.text())
-        .then(html => {
-          document.getElementById('menuContainer').innerHTML = html;
-        });
-    </script>
+    fetch('menu.html')
+      .then(response => response.text())
+      .then(html => {
+        document.getElementById('menuContainer').innerHTML = html;
+      });
+  </script>
 
     <section>
-        <div> 
-            <table>
-              <tr> 
-                <td><div> 
-                    <p  class="TITLE">Informaci&oacute;n de establecimientos 
-                      - Secciones</p>
-                  </div></td>
-              </tr>
-            </table>
-            <p  class="PARRAFO">Desde este formulario, que se invoca mediante 
-              el hiperv&iacute;nculo Secciones contenido en el formulario de <a href="ESH_006B.html" >Informaci&oacute;n 
-              de establecimientos</a>, se registran la informaci&oacute;n detallada 
-              acerca de la forma como est&aacute; dividido o estructurado el establecimiento 
-              desde el punto de vista comercial y los POS que tiene habilita-dos, informaci&oacute;n 
-              que es utilizada al momento de definir las Estrategias de mercadeo. </p>
-            <p  class="PARRAFO">El formulario contiene el hiperv&iacute;nculo 
-              <a href="ESH_006B2.html#BL_PUNTO_VTA" > Puntos de venta</a> 
-              en el cual se parametriza la informaci&oacute;n de los POS del establecimiento.</p>
-            <p class="TITLE"><img src="../img/ESF_006E12.PNG"></p>
+      <div>
+        <p class="TITLE">Informaci&oacute;n de establecimientos
+          - Secciones</p>
 
-            <p  class="PARRAFO">El formulario contiene las opciones Actualizar, 
-              Eliminar y Adicionar.</p>
-            <p  class="PARRAFO"><b ><span class="SUBTITULO">Adicionar:</span></b> 
-              si el usuario invoca la opci&oacute;n Adicionar se despliega un nuevo formulario 
-              con los siguientes campos:</p>
-            <p class="TITLE"><img src="../img/ESF_006E13.PNG"></p>
-            
-            <p  class="TITLE">Descripci&oacute;n de campos</p>
-            <table>
-              <tr> 
-                <td class="titletable"><p class="SUBTITULO"><b><span > 
-                    C&oacute;digo</span></b></p></td>
-                <td><p  class="PARRAFO">Campo 
-                    alfanum&eacute;rico de m&aacute;ximo 6 posiciones, obligatorio, en el 
-                    cual se registra el c&oacute;digo asignado para identificar cada una 
-                    de las diferentes secciones que componen el establecimiento.
-                  </p></td>
-              </tr>
+        <p class="PARRAFO">Desde este formulario, que se invoca mediante el enlace Secciones contenido en el formulario de <a
+            href="ESH_006B.html">Informaci&oacute;n
+            de establecimientos</a>, se registran la información detallada, acerca de la forma como está dividido o estructurado el establecimiento desde el punto de vista comercial y los POS que tiene habilitados, información que es utilizada al momento de definir las Estrategias de mercadeo.
+        </p>
+        <p class="PARRAFO">El formulario contiene el hiperv&iacute;nculo
+          <a href="ESH_006B2.html#BL_PUNTO_VTA"> Puntos de venta</a>
+          en el cual se parametriza la informaci&oacute;n de los POS del
+          establecimiento.</p>
+        <p class="TITLE"><img src="../img/ESF_006E12.PNG"></p>
 
-              <tr> 
-                <td class="titletable"  ><p class="SUBTITULO"><b><span > 
-                    Descripci&oacute;n</span></b></p></td>
-                <td><p  class="PARRAFO">En 
-                    este campo alfanum&eacute;rico de m&aacute;ximo 60 posiciones, obligatorio, 
-                    se registra el nombre o breve descripci&oacute;n de la secci&oacute;n 
-                    asociada al c&oacute;digo anterior.</p></td>
-              </tr>
-            </table>
+        <p class="PARRAFO">El formulario contiene las opciones Actualizar,
+          Eliminar y Adicionar.</p>
+        <p class="PARRAFO"><span class="SUBTITULO">Adicionar:</span>
+          si el usuario invoca la opci&oacute;n Adicionar se despliega un nuevo
+          formulario
+          con los siguientes campos:</p>
+        <p class="TITLE"><img src="../img/ESF_006E13.PNG"></p>
 
-            <p  class="PARRAFO"><b ><span class="SUBTITULO">Actualizar</span></b>: 
-              si el usuario selecciona un registro e invoca la opci&oacute;n Actualizar 
-              se despliega un formulario en el cual el &uacute;nico campo modificable es 
-              la Descripci&oacute;n. </p>
-            <p class="TITLE"><img src="../img/ESF_006E14.PNG"></p>
-            
-              
-            <p  class="PARRAFO"><a name="BL_PUNTO_VTA"></a><span class="SUBTITULO"><span > 
-              <b >Puntos de venta</b></span></span> :  
-              cuando el usuario selecciona un registro e invoca el hiperv&iacute;nculo Puntos 
-              de venta, se despliega un formulario en el cual se muestra la informaci&oacute;n 
-              de los POS pertenecientes al establecimiento.</p>
-            <p class="TITLE"><img src="../img/ESF_006E15.PNG"></p>
-            
-            <p  class="PARRAFO">El formulario contiene las opciones Actualizar, 
-              Eliminar y Adicionar.</p>
-            <p  class="PARRAFO"><b ><span class="SUBTITULO">Adicionar:</span></b> 
-              si el usuario invoca la opci&oacute;n Adicionar se despliega un nuevo formulario 
-              con los siguientes campos:</p>
-            <p class="TITLE"><img src="../img/ESF_006E16.PNG"></p>
-            <p  class="TITLE">Descripci&oacute;n de campos</p>
-            <table>
-              <tr> 
-                <td class="titletable"><p class="SUBTITULO"><b><span > 
-                    N&uacute;mero de terminal</span></b></p></td>
-                <td><p  class="PARRAFO">Campo 
-                    alfanum&eacute;rico de hasta 16 posiciones en el que se registra el 
-                    c&oacute;digo o serie que identifica cada uno de los POS habilitados 
-                    por el establecimiento.
-                  </p></td>
-              </tr>
+        <p class="TITLE">Descripci&oacute;n de campos</p>
+        <table>
+          <tr>
+            <td class="titletable"><p class="SUBTITULO">
+                  C&oacute;digo</span></p></td>
+            <td><p class="PARRAFO">Campo
+                alfanum&eacute;rico de m&aacute;ximo 6 posiciones, obligatorio,
+                en el
+                cual se registra el c&oacute;digo asignado para identificar cada
+                una
+                de las diferentes secciones que componen el establecimiento.
+              </p></td>
+          </tr>
 
-              <tr> 
-                <td class="titletable"  ><p class="SUBTITULO"><b><span > 
-                    Descripci&oacute;n</span></b></p></td>
-                <td><p  class="PARRAFO">En 
-                    este campo alfanum&eacute;rico de m&aacute;ximo 60 caracteres, se registra 
-                    el nombre o descripci&oacute;n del POS asociado al campo anterior.</p></td>
-              </tr>
+          <tr>
+            <td class="titletable"><p class="SUBTITULO">
+                  Descripci&oacute;n</span></p></td>
+            <td><p class="PARRAFO">En
+                este campo alfanum&eacute;rico de m&aacute;ximo 60 posiciones,
+                obligatorio,
+                se registra el nombre o breve descripci&oacute;n de la
+                secci&oacute;n
+                asociada al c&oacute;digo anterior.</p></td>
+          </tr>
+        </table>
 
-              <tr> 
-                <td class="titletable"  ><p class="SUBTITULO"><b><span > 
-                    C&oacute;digo de tienda</span></b></p></td>
-                <td><p  class="PARRAFO">Campo 
-                    num&eacute;rico de hasta 11 d&iacute;gitos en el que se registra el 
-                    c&oacute;digo que identifica la tienda o sucursal del establecimiento 
-                    a la que pertenece el POS.</p></td>
-              </tr>
+        <p class="PARRAFO"><span class="SUBTITULO">Actualizar</span>:
+          si el usuario selecciona un registro e invoca la opci&oacute;n
+          Actualizar
+          se despliega un formulario en el cual el &uacute;nico campo
+          modificable es
+          la Descripci&oacute;n. </p>
+        <p class="TITLE"><img src="../img/ESF_006E14.PNG"></p>
 
-              <tr> 
-                <td class="titletable"  ><p class="SUBTITULO"><b><span > 
-                    Bin establecimiento</span></b></p></td>
-                <td><p  class="PARRAFO">En 
-                    este campo alfanum&eacute;rico de m&aacute;ximo 11 posiciones se registra 
-                    si es del caso, el bin que identifica al establecimiento, cuando por 
-                    ejemplo se trate de tarjetas de marca privada (retail).</p></td>
-              </tr>
+        <p class="PARRAFO"><a name="BL_PUNTO_VTA"></a><span
+            class="SUBTITULO">
+              Puntos de venta</span></span> :
+          cuando el usuario selecciona un registro e invoca el
+          hiperv&iacute;nculo Puntos
+          de venta, se despliega un formulario en el cual se muestra la
+          informaci&oacute;n
+          de los POS pertenecientes al establecimiento.</p>
+        <p class="TITLE"><img src="../img/ESF_006E15.PNG"></p>
 
-              <tr> 
-                <td class="titletable"  ><p class="SUBTITULO"><b><span > 
-                    Rango terminal</span></b></p></td>
-                <td><p  class="PARRAFO">Campo 
-                    tipo combo en el que se puede seleccionar entre Alto...</p></td>
-              </tr>
-            </table>
+        <p class="PARRAFO">El formulario contiene las opciones Actualizar,
+          Eliminar y Adicionar.</p>
+        <p class="PARRAFO"><span class="SUBTITULO">Adicionar:</span>
+          si el usuario invoca la opci&oacute;n Adicionar se despliega un nuevo
+          formulario
+          con los siguientes campos:</p>
+        <p class="TITLE"><img src="../img/ESF_006E16.PNG"></p>
+        <p class="TITLE">Descripci&oacute;n de campos</p>
+        <table>
+          <tr>
+            <td class="titletable"><p class="SUBTITULO">
+                  N&uacute;mero de terminal</span></p></td>
+            <td><p class="PARRAFO">Campo
+                alfanum&eacute;rico de hasta 16 posiciones en el que se registra
+                el
+                c&oacute;digo o serie que identifica cada uno de los POS
+                habilitados
+                por el establecimiento.
+              </p></td>
+          </tr>
 
-            <p  class="PARRAFO"><b ><span class="SUBTITULO">Actualizar:</span></b> 
-              si el usuario selecciona un registro e invoca la opci&oacute;n Actualizar 
-              se despliega un formulario en el cual los campos modificables son Descripci&oacute;n, 
-              C&oacute;digo de tienda, Bin establecimiento y Rango terminal.</p>
-            <p class="TITLE"><img src="../img/ESF_006E17.PNG"></p>
-            
-            <div>
-        </section>
+          <tr>
+            <td class="titletable"><p class="SUBTITULO">
+                  Descripci&oacute;n</span></p></td>
+            <td><p class="PARRAFO">En
+                este campo alfanum&eacute;rico de m&aacute;ximo 60 caracteres,
+                se registra
+                el nombre o descripci&oacute;n del POS asociado al campo
+                anterior.</p></td>
+          </tr>
+
+          <tr>
+            <td class="titletable"><p class="SUBTITULO">
+                  C&oacute;digo de tienda</span></p></td>
+            <td><p class="PARRAFO">Campo
+                num&eacute;rico de hasta 11 d&iacute;gitos en el que se registra
+                el
+                c&oacute;digo que identifica la tienda o sucursal del
+                establecimiento
+                a la que pertenece el POS.</p></td>
+          </tr>
+
+          <tr>
+            <td class="titletable"><p class="SUBTITULO">
+                  Bin establecimiento</span></p></td>
+            <td><p class="PARRAFO">En
+                este campo alfanum&eacute;rico de m&aacute;ximo 11 posiciones se
+                registra
+                si es del caso, el bin que identifica al establecimiento, cuando
+                por
+                ejemplo se trate de tarjetas de marca privada (retail).</p></td>
+          </tr>
+
+          <tr>
+            <td class="titletable"><p class="SUBTITULO">
+                  Rango terminal</span></p></td>
+            <td><p class="PARRAFO">Campo tipo combo en el que se puede seleccionar entre: Nulo, Marca, Bajo o Alto.</p></td>
+          </tr>
+        </table>
+
+        <p class="PARRAFO"><span class="SUBTITULO">Actualizar:</span>
+          Desde este formulario, que se invoca mediante el enlace Secciones
+          contenido en el formulario de <a href="ESH_006B.html">Información de
+            establecimientos</a>, se
+          registran la información detallada, acerca de la forma como está
+          dividido o estructurado el establecimiento desde el punto de vista
+          comercial y los POS que tiene habilitados, información que es
+          utilizada al momento de definir las Estrategias de mercadeo.</p>
+        <p class="TITLE"><img src="../img/ESF_006E17.PNG"></p>
+        <table>
+          <tr>
+            <td class="titletable"><p class="SUBTITULO">
+                  Rango terminal</span></p></td>
+            <td><p class="PARRAFO">Campo tipo combo en el que se puede
+                seleccionar entre: Nulo, Marca, Bajo o Alto.</p></td>
+          </tr>
+
+          <tr>
+            <td class="titletable"><p class="SUBTITULO">
+                  Ultima actualización</span></p></td>
+            <td><p class="PARRAFO">En este campo obligatorio, en el que, mediante la funcionalidad de un calendario, se registra la fecha en la cual se hizo la más reciente actualización de datos para la cuenta.</p></td>
+          </tr>
+        </table>
+      </div>
+    </section>
     <script src="../js/menu.js"></script>
-</body>
-<div id="footerContainer"></div>
-<script>
+  </body>
+  <div id="footerContainer"></div>
+  <script>
   fetch('footer.html')
     .then(response => response.text())
     .then(html => {

@@ -19,24 +19,20 @@
             <img class="TITLE"  src= "../img/menu.PNG" alt="Botón de Menú ">
         </div>
     </header>
-   <div id="menuContainer"></div>
-    <script>
-      fetch('menu.html')
-        .then(response => response.text())
-        .then(html => {
-          document.getElementById('menuContainer').innerHTML = html;
-        });
-    </script>
+      <div id="menuContainer"></div>
+  <script>
+    fetch('menu.html')
+      .then(response => response.text())
+      .then(html => {
+        document.getElementById('menuContainer').innerHTML = html;
+      });
+  </script>
 
     <section>
         <div> 
-            <table>
-              <tr> 
-                <td><div> 
+            
                     <p  class="TITLE">Causales de rechazo </p>
-                  </div></td>
-              </tr>
-            </table>
+                  
             <p class="PARRAFO" >A trav&eacute;s de esta opci&oacute;n 
               se permite la consulta de la tabla que contiene la codificaci&oacute;n de 
               las distintas <a href="NUH_016B.html" >causales de rechazo</a> 
@@ -54,7 +50,7 @@
             <p  class="PARRAFO">El formulario solo contiene la opci&oacute;n 
               Actualizar y se muestra &uacute;nicamente para aquellas <a href="NUH_016B.html" >causales</a> a las cuales se les defini&oacute; que Si permiten cambio de acci&oacute;n. </p>
             <p  class="PARRAFO"><span class="SUBTITULO"><span 
-        ><b ><span class="SUBTITULO">Actualizar</span></b>:</span><span 
+        ><span class="SUBTITULO">Actualizar</span>:</span><span 
         ></span></span><span 
         > 
               si el usuario invoca la opci&oacute;n Actualizar se despliega un nuevo formulario 
@@ -63,8 +59,8 @@
             <p  class="TITLE">Descripci&oacute;n de campos</p>
             <table>
               <tr> 
-                <td class="titletable"><p class="SUBTITULO"><b><span 
-        >Acci&oacute;n</span></b></p></td>
+                <td class="titletable"><p class="SUBTITULO"><span 
+        >Acci&oacute;n</span></p></td>
                 <td><p  class="PARRAFO">Campo 
                     tipo combo en el cual se puede seleccionar el destino de la transacci&oacute;n 
                     de acuerdo con la causal, que puede ser <a href="INH_022B.html"><span >Fraudes</span></a>, 
@@ -79,8 +75,8 @@
               </tr>
             </table>
             <div>
-          <p class="PARRAFO"><b ><span class="SUBTITULO"> 
-                </span></b></p>
+          <p class="PARRAFO"><span class="SUBTITULO"> 
+                </span></p>
         </section>
     <script src="../js/menu.js"></script>
 </body>

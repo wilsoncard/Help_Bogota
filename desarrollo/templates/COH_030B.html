@@ -18,26 +18,20 @@
       <img class="TITLE" src="../img/menu.PNG" alt="Botón de Menú ">
     </div>
   </header>
-  <div id="menuContainer"></div>
-    <script>
-      fetch('menu.html')
-        .then(response => response.text())
-        .then(html => {
-          document.getElementById('menuContainer').innerHTML = html;
-        });
-    </script>
+    <div id="menuContainer"></div>
+  <script>
+    fetch('menu.html')
+      .then(response => response.text())
+      .then(html => {
+        document.getElementById('menuContainer').innerHTML = html;
+      });
+  </script>
 
   <section>
     <div>
-      <table>
-        <tr>
-          <td>
-            <div>
+      
               <p class="TITLE">Reglas</p>
-            </div>
-          </td>
-        </tr>
-      </table>
+
       <p class="PARRAFO">Mediante esta opci&oacute;n, la entidad define las diferentes reglas que pueden ser utilizadas
         por el autorizador para aprobar, negar o referir una autorizaci&oacute;n, seg&uacute;n se encuentren <a
           href="COH_031B.html">asociadas</a> con los diferentes <a href="MEH_002B.html">productos</a> cr&eacute;dito.
@@ -56,14 +50,14 @@
       <p class="TITLE"><img src="../img/COF_030B1.PNG"></p>
 
       <p><span class="SUBTITULO">Adicionar:</span>  Si el usuario invoca
-        la opci&oacute;n Adicionar se despliega un formulario con los siguientes campos<span>:</span></p>
+        la opci&oacute;n Adicionar se despliega un formulario con los siguientes campos:</span></p>
       <p class="TITLE"><img src="../img/COF_030B2.PNG"></p>
 
 
       <table>
         <tr>
           <td class="titletable">
-            <p class="SUBTITULO"><b>Nombre</b></p>
+            <p class="SUBTITULO">Nombre</p>
           </td>
           <td>
             <p class="PARRAFO">Campo alfanum&eacute;rico de hasta 30 caracteres, obligatorio, en el cual se registra el
@@ -87,7 +81,7 @@
           <td>
             <p class="PARRAFO">Campo obligatorio que se habilita &uacute;nicamente cuando en el campo acci&oacute;n se
               selecciona la opci&oacute;n 'Aprobar' y que contiene un combo con las opciones Si y No.
-              </span><span>Cuando se selecciona</span><span class="PARRAFO"> Si, le indica al sistema que
+              </span>Cuando se selecciona</span><span class="PARRAFO"> Si, le indica al sistema que
                 si la tarjeta que se est&aacute; evaluando cumple con la sintaxis de la regla debe tomar la respuestas
                 como definitiva y no continuar evaluando las dem&aacute;s reglas <a href="COH_031B.html">asociadas</a>
                 al producto en caso que las hubiere. Si se selecciona No, indica que se deben seguir evaluando
@@ -122,8 +116,8 @@
             <p class="PARRAFO">En este campo no obligatorio, la entidad puede determinar a partir de que fecha tiene
               validez o aplicaci&oacute;n la regla. El sistema solo evaluar&aacute; aquellas reglas que adem&aacute;s de
               estar <a href="COH_031B.html">asociadas</a> al producto y encontrarse en estado Activa,
-              </span><span>se encuentren vigentes al momento de solicitar la autorizaci&oacute;n.
-              </span><span>Utiliza formato YYYY-MM-DD</span></p>
+              </span>se encuentren vigentes al momento de solicitar la autorizaci&oacute;n.
+              </span>Utiliza formato YYYY-MM-DD</span></p>
           </td>
         </tr>
         <tr>
@@ -131,7 +125,7 @@
           <td>
             <div>Campo no obligatorio, en el que la entidad puede determinar hasta que fecha tiene validez o
               aplicaci&oacute;n la regla. El sistema solo evaluar&aacute; aquellas reglas que adem&aacute;s de estar <a
-                href="COH_031B.html">asociadas</a> al producto y encontrarse en estado Activa, <span>se
+                href="COH_031B.html">asociadas</a> al producto y encontrarse en estado Activa, se
                 encuentren vigentes al momento de solicitar la autorizaci&oacute;n. Utiliza formato YYYY-MM-DD . </span> 
             </div>
           </td>
@@ -145,25 +139,23 @@
           </td>
         </tr>
       </table>
-      <p src="../img/MEF_002E5.PNG"></p>
-      <p>Es importante tener en cuenta con las fechas de vigencia inicial y vigencia final las
+      <p class="TITLE"><img src="../img/MEF_002E5.PNG"></p>
+      <p class="PARRAFO">Es importante tener en cuenta con las fechas de vigencia inicial y vigencia final las
         siguientes condiciones:</p>
-      <ul>
-        <li>Si ninguno de los dos campos tiene informaci&oacute;n la regla no se encuentra limitada en el tiempo y
-          est&aacute; vigente permanentemente. </li>
-        <li>Si el campo vigencia inicial contiene datos pero vigencia final no, indica que la regla aplica desde la
-          fecha indicada de manera indefinida </li>
-        <li>Si el campo vigencia inicial no tiene informaci&oacute;n pero la vigencia final si, indica que la regla
-          aplica &uacute;nicamente hasta la fecha indicada.</li>
-        <li>Si tanto el campo vigencia inicial como vigencia final contienen datos, indica que la regla solo aplica
-          dentro de ese rango de fechas en particular. </li>
-      </ul>
-
+      
+        <p class="PARRAFO">Si ninguno de los dos campos tiene informaci&oacute;n la regla no se encuentra limitada en el tiempo y
+          est&aacute; vigente permanentemente. </p>
+        <p class="PARRAFO">Si el campo vigencia inicial contiene datos pero vigencia final no, indica que la regla aplica desde la
+          fecha indicada de manera indefinida </p>
+        <p class="PARRAFO">Si el campo vigencia inicial no tiene informaci&oacute;n pero la vigencia final si, indica que la regla
+          aplica &uacute;nicamente hasta la fecha indicada.</p>
+        <p class="PARRAFO">Si tanto el campo vigencia inicial como vigencia final contienen datos, indica que la regla solo aplica
+          dentro de ese rango de fechas en particular. </p>
       <p class="PARRAFO"><span class="PARRAFO"><span class="SUBTITULO">Actualizar:</span>  Si el usuario invoca la
           opci&oacute;n Actualizar se despliega un nuevo formulario
           en el cual el &uacute;nico campo NO modificable es el Nombre.</span></p>
       <p class="TITLE"><img src="../img/COF_030B3.PNG"></p>
-      <p src="../img/MEF_002E5.PNG"></p>
+      
   </section>
   <script src="../js/menu.js"></script>
 </body>

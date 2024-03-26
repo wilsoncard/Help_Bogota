@@ -1,196 +1,241 @@
 <!DOCTYPE html>
 <html lang="es">
 
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>BANKBU®</title>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BANKBU®</title>
 
-  <link rel="stylesheet" href="../css/pages.css">
-  <link rel="stylesheet" href="../css/style.css">
-  <link rel="icon" href="../img/ACQUIRER-logo.JPG" type="image/x-icon">
-</head>
+    <link rel="stylesheet" href="../css/pages.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="icon" href="../img/ACQUIRER-logo.JPG" type="image/x-icon">
+  </head>
 
-<body>
+  <body>
 
-  <header>
-    <img class="logo" src="../img/logoBankbu_.PNG" alt="Logo de Mi Empresa">
-    <div id="menuBtn">
-      <img class="TITLE" src="../img/menu.PNG" alt="Botón de Menú ">
-    </div>
-  </header>
-  <div id="menuContainer"></div>
+    <header>
+      <img class="logo" src="../img/logoBankbu_.PNG" alt="Logo de Mi Empresa">
+      <div id="menuBtn">
+        <img class="TITLE" src="../img/menu.PNG" alt="Botón de Menú ">
+      </div>
+    </header>
+    <div id="menuContainer"></div>
     <script>
-      fetch('menu.html')
-        .then(response => response.text())
-        .then(html => {
-          document.getElementById('menuContainer').innerHTML = html;
-        });
-    </script>
+    fetch('menu.html')
+      .then(response => response.text())
+      .then(html => {
+        document.getElementById('menuContainer').innerHTML = html;
+      });
+  </script>
 
-  <section>
-    <div>
-      <table>
-        <tr>
-          <td>
-            <div>
-              <p class="TITLE">Esquemas de puntajes - Relaciones </p>
-            </div>
-          </td>
-        </tr>
-      </table>
-      <p><span class="SUBTITULO">Relaciones:</span>  Cuarto nivel de la parametrizaci&oacute;n en el
-        que se define la manera como las cadenas, grupos, establecimientos, clases de servicios y transacciones,
-        convertir&aacute;n en puntos los consumos realizados; las diferentes opciones contenidas en este formulario se
-        activar&aacute;n siempre y cuando en la <a href="MEH_006B2.html">Par&aacute;metros adicionales</a>, no hayan
-        sido marcados como No considerar.</p>
+    <section>
+      <div>
+        <p class="TITLE">Esquemas de puntajes - Relaciones </p>
+              
+        <p><span class="SUBTITULO">Relaciones:</span> Cuarto nivel de la
+          parametrizaci&oacute;n en el
+          que se define la manera como las cadenas, grupos, establecimientos,
+          clases de servicios y transacciones,
+          convertir&aacute;n en puntos los consumos realizados; las diferentes
+          opciones contenidas en este formulario se
+          activar&aacute;n siempre y cuando en la <a
+            href="MEH_006B2.html">Par&aacute;metros adicionales</a>, no hayan
+          sido marcados como No considerar.</p>
 
-      <p class="PARRAFO">Se regresa al formulario principal de <a href="MEH_006B.html">Esquemas de puntajes</a> a
-        trav&eacute;s del bot&oacute;n en la parte superior izquierda.</p>
+        <p class="PARRAFO">Se regresa al formulario principal de <a
+            href="MEH_006B.html">Esquemas de puntajes</a> a
+          trav&eacute;s del bot&oacute;n en la parte superior izquierda.</p>
 
-      <p><span class="SUBTITULO">Transacciones:</span> Son en esencia la base a partir de la cual el
-        sistema eval&uacute;a el restante conjunto de par&aacute;metros se&ntilde;alados que se van a considerar para
-        acumular puntos. En lo referente a transacci&oacute;n, la entidad puede otorgar puntos por transacci&oacute;n
-        aplicada y/o otorgarle puntos por unidad valor de la misma, los que se adicionar&iacute;an a los anteriores y
-        continuar&iacute;an evalu&aacute;ndose e increment&aacute;ndose de acuerdo con los restantes par&aacute;metros.
-      </p>
-      <p class="TITLE"><img src="../img/MEF_006B11.PNG"></p>
+        <p><span class="SUBTITULO">Transacciones:</span> Son en esencia la base
+          a partir de la cual el
+          sistema eval&uacute;a el restante conjunto de par&aacute;metros
+          se&ntilde;alados que se van a considerar para
+          acumular puntos. En lo referente a transacci&oacute;n, la entidad
+          puede otorgar puntos por transacci&oacute;n
+          aplicada y/o otorgarle puntos por unidad valor de la misma, los que se
+          adicionar&iacute;an a los anteriores y
+          continuar&iacute;an evalu&aacute;ndose e increment&aacute;ndose de
+          acuerdo con los restantes par&aacute;metros.
+        </p>
+        <p class="TITLE"><img src="../img/MEF_006B11.PNG"></p>
 
+        <p class="PARRAFO"><span class="SUBTITULO">Adicionar:</span> Si
+          el usuario invoca la opci&oacute;n Adicionar se despliega un
+          formulario con
+          los siguientes campos:</span>
+        </p>
+        <p class="TITLE"><img src="../img/MEF_006B12.PNG"></p>
 
-      <p class="PARRAFO"><span class="SUBTITULO">Adicionar:</span>  Si
-        el usuario invoca la opci&oacute;n Adicionar se despliega un formulario con
-        los siguientes campos<span>:</span> 
-      </p>
-      <p class="TITLE"><img src="../img/MEF_006B12.PNG"></p>
+        <table>
+          <tr>
+            <td class="titletable">
+              <p class="SUBTITULO">Transacci&oacute;n</p>
+            </td>
+            <td>
+              <p class="PARRAFO">Este campo posee lista de valores poblada a
+                trav&eacute;s de la opci&oacute;n <a
+                  href="MEH_003B.html">Transacciones por empresa</a> del
+                m&oacute;dulo de Mercadeo, de la que se
+                seleccionan las diferentes transacciones que la entidad desea
+                compensar otorg&aacute;ndole puntos al
+                cliente por efectuarlas. Es importante tener en cuenta que las
+                transacciones internas seleccionadas
+                tambi&eacute;n deben encontrarse parametrizadas en el <a
+                  href="INH_031B.html">Traductor de
+                  transacciones</a> del m&oacute;dulo de Intercambio.</p>
+            </td>
+          </tr>
+          <tr>
+            <td class="SUBTITULO">Puntos por transacci&oacute;n </td>
+            <td>
+              <p class="PARRAFO">Campo en el cual se define la cantidad de
+                puntos que se acumular&aacute;n en el momento que sean
+                aplicadas cada una de las transacciones que hagan parte del
+                esquema y sean realizadas por el cliente. </p>
+            </td>
+          </tr>
+          <tr>
+            <td class="SUBTITULO">Puntos por unidad de valor </td>
+            <td>
+              <p class="PARRAFO">En este campo se registra el factor a utilizar
+                por el sistema para calcular los puntos a otorgar al
+                cliente por transacci&oacute;n de acuerdo con su valor; su
+                funcionamiento es sencillo y consiste
+                simplemente en que el sistema divide el monto de la
+                transacci&oacute;n realizada y aplicada al cliente,
+                entre el valor se&ntilde;alado en el campo Valor unidad, y este
+                resultado lo multiplica por el
+                factor indicado en este campo, obteni&eacute;ndose as&iacute; la
+                cantidad de puntos.</p>
+            </td>
+          </tr>
+          <tr>
+            <td class="titletable">
+              <p class="SUBTITULO">Moneda unidad </p>
+            </td>
+            <td>
+              <p class="PARRAFO">Campo con lista de valores de la cual se
+                selecciona la <a href="NUH_005B.html">Moneda</a> que el
+                sistema utilizar&aacute; como referente para efectuar el
+                c&aacute;lculo explicado en el campo anterior.
+              </p>
+            </td>
+          </tr>
+          <tr>
+            <td class="SUBTITULO">Valor unidad </td>
+            <td>
+              <p class="PARRAFO">En este campo se define el valor que se
+                tomar&aacute; como divisor del monto de la transacci&oacute;n
+                realizada, para obtener los puntos por unidad, si la moneda de
+                almacenamiento de la transacci&oacute;n es
+                la misma Moneda unidad se&ntilde;alada en el campo anterior; en
+                caso contrario, el sistema
+                obtiene la equivalencia y ese resultado ser&aacute; dividido
+                entre el valor indicado en este campo, como
+                ya se explic&oacute;.</p>
+            </td>
+          </tr>
+        </table>
 
-      <table>
-        <tr>
-          <td class="titletable">
-            <p class="SUBTITULO">Transacci&oacute;n</p>
-          </td>
-          <td>
-            <p class="PARRAFO">Este campo posee lista de valores poblada a trav&eacute;s de la opci&oacute;n <A
-                  href="MEH_003B.html">Transacciones por empresa</A> del m&oacute;dulo de Mercadeo, de la que se
-              seleccionan las diferentes transacciones que la entidad desea compensar otorg&aacute;ndole puntos al
-              cliente por efectuarlas. Es importante tener en cuenta que las transacciones internas seleccionadas
-              tambi&eacute;n deben encontrarse parametrizadas en el <A href="INH_031B.html">Traductor de
-                  transacciones</A> del m&oacute;dulo de Intercambio.</p>
-          </td>
-        </tr>
-        <tr>
-          <td class="SUBTITULO">Puntos por transacci&oacute;n </td>
-          <td>
-            <p class="PARRAFO">Campo en el cual se define la cantidad de puntos que se acumular&aacute;n en el momento que sean
-              aplicadas cada una de las transacciones que hagan parte del esquema y sean realizadas por el cliente. </p>
-          </td>
-        </tr>
-        <tr>
-          <td class="SUBTITULO">Puntos por unidad de valor </td>
-          <td>
-            <p class="PARRAFO">En este campo se registra el factor a utilizar por el sistema para calcular los puntos a otorgar al
-              cliente por transacci&oacute;n de acuerdo con su valor; su funcionamiento es sencillo y consiste
-              simplemente en que el sistema divide el monto de la transacci&oacute;n realizada y aplicada al cliente,
-              entre el valor se&ntilde;alado en el campo Valor unidad, y este resultado lo multiplica por el
-              factor indicado en este campo, obteni&eacute;ndose as&iacute; la cantidad de puntos.</p>
-          </td>
-        </tr>
-        <tr>
-          <td class="titletable">
-            <p class="SUBTITULO">Moneda unidad </p>
-          </td>
-          <td>
-            <p class="PARRAFO">Campo con lista de valores de la cual se selecciona la <A href="NUH_005B.html">Moneda</A> que el
-              sistema utilizar&aacute; como referente para efectuar el c&aacute;lculo explicado en el campo anterior.
-            </p>
-          </td>
-        </tr>
-        <tr>
-          <td class="SUBTITULO">Valor unidad </td>
-          <td>
-            <p class="PARRAFO">En este campo se define el valor que se tomar&aacute; como divisor del monto de la transacci&oacute;n
-              realizada, para obtener los puntos por unidad, si la moneda de almacenamiento de la transacci&oacute;n es
-              la misma Moneda unidad se&ntilde;alada en el campo anterior; en caso contrario, el sistema
-              obtiene la equivalencia y ese resultado ser&aacute; dividido entre el valor indicado en este campo, como
-              ya se explic&oacute;.</p>
-          </td>
-        </tr>
-      </table>
+        <p><span class="SUBTITULO">Actualizar:</span> Si el usuario
+          invoca la opci&oacute;n Actualizar se despliega un nuevo formulario en
+          cual
+          los &uacute;nicos campos modificables son los siguientes:</p>
+        <p class="TITLE"><img src="../img/MEF_006B13.PNG"></p>
 
-      <p><span class="SUBTITULO">Actualizar:</span>  Si el usuario
-        invoca la opci&oacute;n Actualizar se despliega un nuevo formulario en cual
-        los &uacute;nicos campos modificables son los siguientes:</p>
-      <p class="TITLE"><img src="../img/MEF_006B13.PNG"></p>
+        <p class="PARRAFO"><a name="cadena"></a><span
+            class="SUBTITULO">Cadenas:</span> Conjunto de campos en los cuales
+          se definen las caracter&iacute;sticas,
+          tanto de valor absoluto como de operador matem&aacute;tico que utiliza
+          el sistema para calcular los puntos a
+          otorgar al cliente por realizar el consumo en los establecimientos que
+          hacen parte de alguna de las cadenas
+          parametrizadas en la opci&oacute;n <a
+            href="ESH_005B.html">Cadenas</a>, y que pueden consultarse o
+          asociarse a los comercios mediante la opci&oacute;n <a
+            href="ESH_006B.html">Informaci&oacute;n de
+            establecimientos</a>; siempre y cuando en la opci&oacute;n <a
+            href="MEH_006B2.html">Par&aacute;metros
+            adicionales</a> se haya marcado con Incluir, la opci&oacute;n
+          Cadenas; no aplica en caso de
+          haberse seleccionado Excluir.</p>
+        <p class="PARRAFO">El formulario contiene las opciones Actualizar,
+          Eliminar
+          y Adicionar.</p>
 
+        <p class="TITLE"><img src="../img/MEF_006B14.PNG"></p>
 
-      <p class="PARRAFO"><a name="cadena"></a><span class="SUBTITULO">Cadenas:</span> Conjunto de campos en los cuales se definen las caracter&iacute;sticas,
-        tanto de valor absoluto como de operador matem&aacute;tico que utiliza el sistema para calcular los puntos a
-        otorgar al cliente por realizar el consumo en los establecimientos que hacen parte de alguna de las cadenas
-        parametrizadas en la opci&oacute;n <A href="ESH_005B.html">Cadenas</A>, y que pueden consultarse o
-        asociarse a los comercios mediante la opci&oacute;n <A href="ESH_006B.html">Informaci&oacute;n de
-            establecimientos</A>; siempre y cuando en la opci&oacute;n <a href="MEH_006B2.html">Par&aacute;metros
-          adicionales</a> se haya marcado con Incluir, la opci&oacute;n Cadenas; no aplica en caso de
-        haberse seleccionado Excluir.</p>
-      <p class="PARRAFO">El formulario contiene las opciones Actualizar, Eliminar
-        y Adicionar.</p>
+        <p class="PARRAFO"><span class="SUBTITULO">Adicionar:</span> Si
+          el usuario invoca la opci&oacute;n Adicionar se despliega un
+          formulario con
+          los siguientes campos:</span>
+        </p>
+        <p class="TITLE"><img src="../img/MEF_006B15.PNG"></p>
 
-      <p class="TITLE"><img src="../img/MEF_006B14.PNG"></p>
+        <table>
+          <tr>
+            <td class="titletable">
+              <p class="SUBTITULO">Cadena</p>
+            </td>
+            <td>
+              <p class="PARRAFO">Campo que posee lista de valores de la que debe
+                seleccionarse el c&oacute;digo de la <a
+                  href="ESH_005B.html">Cadena</a> a la cual pertenece el
+                comercio, desplegando a
+                continuaci&oacute;n el nombre de la misma.</p>
+            </td>
+          </tr>
+          <tr>
+            <td class="SUBTITULO">Operador</td>
+            <td>
+              <p class="PARRAFO">Este campo posee lista adjunta de la que debe
+                seleccionarse entre Multiplicaci&oacute;n o
+                Adici&oacute;n la forma en que ser&aacute;n calculados los
+                puntos adicionales a otorgar al
+                cliente; en el primer caso, multiplicaci&oacute;n, significa que
+                cuando el cliente haga un
+                consumo en cada uno de esos comercios, el sistema tomar&aacute;
+                los puntos que vienen de la
+                transacci&oacute;n, los multiplicar&aacute; por el valor
+                definido en el campo Factor, y el valor
+                resultante se sumar&aacute; a los puntos acumulados que posea el
+                cliente. Cuando se indica
+                Adici&oacute;n significa simplemente que el valor definido en el
+                campo Factor se
+                sumar&aacute; al total de puntos que el cliente tenga acumulados
+                en el momento. Este mismo procedimiento
+                aplica para los subtabs Clases de servicios, Grupos de
+                establecimientos y/o Cadenas de
+                establecimientos cuando se encuentran activos y en ellos se ha
+                registrado la informaci&oacute;n
+                correspondiente. </p>
+            </td>
+          </tr>
+          <tr>
+            <td class="SUBTITULO">Factor</td>
+            <td>
+              <p class="PARRAFO">Campo en el que se determina el valor a aplicar
+                por el sistema para calcular los puntos a conceder al
+                cliente.</p>
+            </td>
+          </tr>
+        </table>
 
-      <p class="PARRAFO"><span class="SUBTITULO">Adicionar:</span>  Si
-        el usuario invoca la opci&oacute;n Adicionar se despliega un formulario con
-        los siguientes campos<span>:</span> 
-      </p>
-      <p class="TITLE"><img src="../img/MEF_006B15.PNG"></p>
+        <p><span class="SUBTITULO">Actualizar:</span> Si el usuario
+          invoca la opci&oacute;n Actualizar se despliega un nuevo formulario en
+          cual
+          los &uacute;nicos campos modificables son los siguientes:</p>
+        <p class="TITLE"><img src="../img/MEF_006B16.PNG"></p>
 
-      <table>
-        <tr>
-          <td class="titletable">
-            <p class="SUBTITULO">Cadena</p>
-          </td>
-          <td>
-            <p class="PARRAFO">Campo que posee lista de valores de la que debe seleccionarse el c&oacute;digo de la <A
-                  href="ESH_005B.html">Cadena</A> a la cual pertenece el comercio, desplegando a
-              continuaci&oacute;n el nombre de la misma.</p>
-          </td>
-        </tr>
-        <tr>
-          <td class="SUBTITULO">Operador</td>
-          <td>
-            <p class="PARRAFO">Este campo posee lista adjunta de la que debe seleccionarse entre Multiplicaci&oacute;n o
-              Adici&oacute;n la forma en que ser&aacute;n calculados los puntos adicionales a otorgar al
-              cliente; en el primer caso, multiplicaci&oacute;n, significa que cuando el cliente haga un
-              consumo en cada uno de esos comercios, el sistema tomar&aacute; los puntos que vienen de la
-              transacci&oacute;n, los multiplicar&aacute; por el valor definido en el campo Factor, y el valor
-              resultante se sumar&aacute; a los puntos acumulados que posea el cliente. Cuando se indica
-              Adici&oacute;n significa simplemente que el valor definido en el campo Factor se
-              sumar&aacute; al total de puntos que el cliente tenga acumulados en el momento. Este mismo procedimiento
-              aplica para los subtabs Clases de servicios, Grupos de establecimientos y/o Cadenas de
-                establecimientos cuando se encuentran activos y en ellos se ha registrado la informaci&oacute;n
-              correspondiente. </p>
-          </td>
-        </tr>
-        <tr>
-          <td class="SUBTITULO">Factor</td>
-          <td>
-            <p class="PARRAFO">Campo en el que se determina el valor a aplicar por el sistema para calcular los puntos a conceder al
-              cliente.</p>
-          </td>
-        </tr>
-      </table>
-
-      <p><span class="SUBTITULO">Actualizar:</span>  Si el usuario
-        invoca la opci&oacute;n Actualizar se despliega un nuevo formulario en cual
-        los &uacute;nicos campos modificables son los siguientes:</p>
-      <p class="TITLE"><img src="../img/MEF_006B16.PNG"></p>
-
-  </section>
-  <script src="../js/menu.js"></script>
-</body>
-<div id="footerContainer"></div>
-<script>
+      </section>
+      <script src="../js/menu.js"></script>
+    </body>
+    <div id="footerContainer"></div>
+    <script>
   fetch('footer.html')
     .then(response => response.text())
     .then(html => {
       document.getElementById('footerContainer').innerHTML = html;
     });
 </script>
-</html>
+  </html>

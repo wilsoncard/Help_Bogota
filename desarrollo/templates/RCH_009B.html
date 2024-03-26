@@ -1,92 +1,124 @@
 <!DOCTYPE html>
 <html lang="es">
 
-<head>
+  <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>BANKBU®</title>
     <link rel="stylesheet" href="../css/pages.css">
     <link rel="stylesheet" href="../css/style.css">
- <link rel="icon" href="../img/ACQUIRER-logo.JPG" type="image/x-icon">
-</head>
+    <link rel="icon" href="../img/ACQUIRER-logo.JPG" type="image/x-icon">
+  </head>
 
-<body>
+  <body>
     <header>
-        <img class="logo" src="../img/logoBankbu_.PNG" alt="Logo de Mi Empresa">
-        <div id="menuBtn">
-            <img class="TITLE"  src= "../img/menu.PNG" alt="Botón de Menú ">
-        </div>
+      <img class="logo" src="../img/logoBankbu_.PNG" alt="Logo de Mi Empresa">
+      <div id="menuBtn">
+        <img class="TITLE" src="../img/menu.PNG" alt="Botón de Menú ">
+      </div>
     </header>
-   <div id="menuContainer"></div>
+    <div id="menuContainer"></div>
     <script>
-      fetch('menu.html')
-        .then(response => response.text())
-        .then(html => {
-          document.getElementById('menuContainer').innerHTML = html;
-        });
-    </script>
+    fetch('menu.html')
+      .then(response => response.text())
+      .then(html => {
+        document.getElementById('menuContainer').innerHTML = html;
+      });
+  </script>
 
     <section>
-        <div> 
-            <table>
-              <tr> 
-                <td><div> 
-                    <p  class="TITLE">Hist&oacute;rico de Reclamos</p>
-                    </div></td>
-              </tr>
-            </table>
-            <p class="PARRAFO">Mediante este formulario se consultan todos los reclamos cuyo estado sea Terminado, bien sea que sus actividades hayan sido canceladas o terminadas. Para poder visualizar dichos registros en esta opci&oacute;n, el usuario debe haber ejecutado el proceso que los elimina de las opciones <a href="RCH_007B.html" >Atenci&oacute;n de reclamos</a> y <a href="RCH_008B.html" >Maestro de reclamos</a>, y los pasa a esta opci&oacute;n. Dicho proceso se podr&aacute; ejecutar para el mes actual o para cualquier mes anterior en el sistema.</p>
-            <p class="PARRAFO">El formulario contiene la opci&oacute;n Detalle. Adicionalmente, cuenta con un filtro de b&uacute;squeda 
-            y la opci&oacute;n <a href="RCH_009B1.html" >Estado actividades</a>.</p>
-            <p class="TITLE"><img src="../img/RCF_009B1.PNG"825" height="296"></p>
-            
-            <p><span class="SUBTITULO">Filtro:</span>  Se pueden realizar consultas a trav&eacute;s 
-              de las siguientes opciones:</p>
-            <p class="TITLE"><img src="../img/RCF_009B.PNG"669" height="123"></p>
-            
-            <table>
-              <tr>
-                <td  class="SUBTITULO"><b class="SUBTITULO">Fecha </b><b><span >inicial</span></b></td>
-                <td   class="PARRAFO"><p>Dato en formato YYYY-MM-DD que indica la fecha de radicaci&oacute;n inicial desde la <span class="PARRAFO" style"padding:3.0pt 3.0pt 3.0pt 3.0pt"> cual se desean consultar los reclamos en la base de datos. Este campo es obligatorio en el filtro para poder efectuar cualquier consulta.</span></td>
-              </tr></p>
-              <tr>
-                <td class="SUBTITULO">Fecha final</td>
-                <td  class="PARRAFO"><p>Dato en formato YYYY-MM-DD que indica la fecha de radicaci&oacute;n final hasta la cual se desean consultar los reclamos en la base de datos. <span class="PARRAFO" style"padding:3.0pt 3.0pt 3.0pt 3.0pt">Este campo es obligatorio en el filtro para poder efectuar cualquier consulta.</span></td>
-              </tr></p>
-              <tr>
-                <td  class="titletable" ><p class="SUBTITULO"><b><span 
-        >Gestor</span></b></p></td>
-                <td><p class="PARRAFO"><p>En este campo se selecciona de la lista de valores adjunta, el <a href="RCH_003B.html" >gestor</a> del cual se desean consultar sus reclamos.</p></td>
-              </tr></p>
-              <tr>
-                <td class="SUBTITULO">C&oacute;digo reclamo </td>
-                <td  class="PARRAFO"><p>Campo num&eacute;rico de 4 d&iacute;gitos que contiene el c&oacute;digo del reclamo que se desea buscar, el cual fue asignado autom&aacute;ticamente por el sistema. </td>
-              </tr></p>
-              <tr>
-                <td><span class="SUBTITULO #1"><b>Tipo de identificaci&oacute;n</b></span></td>
-                <td><p>En este campo tipo combo, el usuario puede   seleccionar el <A href="NUH_008B.html" >tipo de   documento</A> asociado al cliente al cual corresponde el reclamo que se desea consultar en la base de   datos.</p></td>
-              </tr>
-              <tr>
-                <td><span class="SUBTITULO #1"><b>N&uacute;mero de identificaci&oacute;n </b></span></td>
-                <td  class="PARRAFO"><p>Campo num&eacute;rico de 16 posiciones, en el que se ingresa el n&uacute;mero de identificaci&oacute;n del cliente asociado con el reclamo que se quiere consultar</td>
-              </tr></p>
-            </table>
-            
-            <p  class="PARRAFO"><span class="PARRAFO"><span class="SUBTITULO">Detalle:</span>  Si el usuario invoca la opci&oacute;n Detalle se despliega el siguiente formulario el cual contendr&aacute; la informaci&oacute;n </span> detallada del reclamo y su tr&aacute;mite.</p>
-            .
-            <p class="TITLE"><img src="../img/RCF_009B2.PNG"800" height="292"></p>
-           
-        </section>
-    <script src="../js/menu.js"></script>
+      <div>
 
-    <div id="footerContainer"></div>
-<script>
+        <p class="TITLE">Hist&oacute;rico de Reclamos</p>
+
+        <p class="PARRAFO">Mediante este formulario se posibilita el consultar
+          los diferentes reclamos cuyo estado sea Terminado, bien sea que sus
+          actividades hayan sido canceladas o terminadas. Para poder visualizar
+          dichos registros en esta opción, el usuario debe haber ejecutado el
+          proceso que los elimina de las opciones <a
+            href="RCH_007B.html">Atenci&oacute;n de
+            reclamos</a> y <a href="RCH_008B.html">Maestro de reclamos</a>, y
+          los pasa a esta opción. Dicho proceso se podrá ejecutar para el mes
+          actual o para cualquier mes anterior en el sistema.</p>
+
+        <p class="PARRAFO">El formulario dispone de los enlaces Detalle y <a
+            href="RCH_009B1.html">Estado
+            actividades</a>. Adicionalmente, cuenta con un filtro de
+          búsqueda.</p>
+        <p class="TITLE"><img src="../img/RCF_009B6.PNG"></p>
+        <p class="TITLE"><img src="../img/RCF_009B1.PNG"></p>
+
+        <p><span class="SUBTITULO">Filtro:</span> Se pueden realizar consultas a
+          través de los siguientes criterios:</p>
+        <p class="TITLE"><img src="../img/RCF_009B.PNG"></p>
+
+        <table>
+          <tr>
+            <td class="SUBTITULO"><b class="SUBTITULO">Fecha
+                <span>inicial</span></td>
+              <td><p class="PARRAFO">Campo obligatorio que, mediante la
+                  funcionalidad de un calendario, debe indicarse la fecha
+                  inicial o a partir de la cual se debió haber radicado el
+                  reclamo que se desea consultar en la base de datos.</td>
+              </tr></p>
+            <tr>
+              <td class="SUBTITULO">Fecha final</td>
+              <td><p class="PARRAFO">Campo obligatorio que, mediante la
+                  funcionalidad de un calendario, permite indicar la fecha final
+                  o hasta la cual se debió haber radicado el reclamo que se
+                  desea consultar en la base de datos.</td>
+              </tr></p>
+            <tr>
+              <td class="titletable"><p
+                  class="SUBTITULO"><span>Gestor</span></p></td>
+              <td><p class="PARRAFO"><p>Campo que dispone de una lista de
+                    valores adjunta, de la que puede seleccionarse el <a
+                      href="RCH_003B.html">gestor</a>
+                    para el cual se desean consultar los reclamos asignados o a
+                    su cargo.</p></td>
+              </tr></p>
+            <tr>
+              <td class="SUBTITULO">C&oacute;digo reclamo </td>
+              <td><p class="PARRAFO">Campo numérico de 4 dígitos, en el que
+                  puede digitarse el código del reclamo que se desea consultar,
+                  el cual fue asignado automáticamente por el sistema.
+                </td>
+              </tr></p>
+            <tr>
+              <td><span class="SUBTITULO">Tipo de
+                  identificaci&oacute;n</span></td>
+              <td><p>Campo que dispone de una lista de valores tipo combo, de la
+                  cual se puede seleccionar el
+                  <a href="NUH_008B.html">tipo de documento</a> asociado al
+                  tarjetahabiente al cual corresponde el reclamo que se desea
+                  consultar en la base de datos.</p></td>
+            </tr>
+            <tr>
+              <td><span class="SUBTITULO #1">N&uacute;mero de
+                  identificación </span></td>
+              <td class="PARRAFO"><p>Campo numérico de 20 posiciones, en el que
+                  puede ingresarse el número de identificación del cliente
+                  asociado con el reclamo que se quiere consultar.</td>
+              </tr></p>
+          </table>
+
+          <p class="PARRAFO"><span class="PARRAFO"><span
+                class="SUBTITULO">Detalle:</span> Si el usuario invoca la
+              opci&oacute;n Detalle se despliega el siguiente formulario el cual
+              contendr&aacute; la informaci&oacute;n </span> detallada del
+            reclamo y su tr&aacute;mite.</p>
+          <p class="TITLE"><img src="../img/RCF_009B2.PNG"></p>
+        </section>
+        <script src="../js/menu.js"></script>
+
+        <div id="footerContainer"></div>
+        <script>
   fetch('footer.html')
     .then(response => response.text())
     .then(html => {
       document.getElementById('footerContainer').innerHTML = html;
     });
 </script>
-</body>
+      </body>
 
-</html>
+    </html>

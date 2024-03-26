@@ -17,43 +17,37 @@
             <img class="TITLE"  src= "../img/menu.PNG" alt="Botón de Menú ">
         </div>
     </header>
-   <div id="menuContainer"></div>
-    <script>
-      fetch('menu.html')
-        .then(response => response.text())
-        .then(html => {
-          document.getElementById('menuContainer').innerHTML = html;
-        });
-    </script>
+      <div id="menuContainer"></div>
+  <script>
+    fetch('menu.html')
+      .then(response => response.text())
+      .then(html => {
+        document.getElementById('menuContainer').innerHTML = html;
+      });
+  </script>
 
     <section>
         <div> 
-            <table>
-              <tr> 
-                <td><div> 
-                    <p  class="TITLE">Gestores</p>
-                    </div></td>
-              </tr>
-            </table>
+            
+           <p  class="TITLE">Gestores</p>
+                    
             <p class="PARRAFO"><span class="SUBTITULO">Roles:</span>  Mediante esta funci&oacute;n se asignan a cada gestor los roles con los cuales podr&aacute; atender los diferentes tipos de reclamos existentes.</p>
             <p class="PARRAFO">El formulario contiene las opciones Eliminar y
             Adicionar, y un bot&oacute;n para devolverse a la opci&oacute;n Principal <a href="RCH_003B.html" >Gestores</a>. </p>
-            <p class="TITLE"><img src="../img/RCF_003B8.PNG"546" ></p>
+            <p class="TITLE"><img src="../img/RCF_003B8.PNG"></p>
             
             <p><span class="SUBTITULO">Adicionar:</span>  Si el usuario invoca la opci&oacute;n Adicionar se despliega un formulario con el siguiente campo<span 
         >:</span></p>
-            <p class="TITLE"><img src="../img/RCF_003B9.PNG"361" ></p>
+            <p class="TITLE"><img src="../img/RCF_003B9.PNG"></p>
             
             <table>
               <tr> 
-                <td class="titletable"><p class="SUBTITULO"><b><span 
-        >Rol</span></span></b></p></td>
-                <td><p class="PARRAFO"><span class="PARRAFO" style"padding:3.0pt 3.0pt 3.0pt 3.0pt">En 
+                <td class="titletable"><p class="SUBTITULO"><span 
+        >Rol</span></span></p></td>
+                <td><p class="PARRAFO"><span class="PARRAFO">En 
                 este campo obligatorio, se selecciona de la lista de valores el <a href="RCH_002B.html" >rol</a> al cual se asociar&aacute; el gestor.</span></p></td>
               </tr>
             </table>
- 
-              .
         </section>
     <script src="../js/menu.js"></script>
 

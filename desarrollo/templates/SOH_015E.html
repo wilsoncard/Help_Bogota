@@ -1,249 +1,311 @@
 <!DOCTYPE html>
 <html lang="es">
 
-<head>
+  <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>BANKBU®</title>
     <link rel="stylesheet" href="../css/pages.css">
     <link rel="stylesheet" href="../css/style.css">
     <link rel="icon" href="../img/ACQUIRER-logo.JPG" type="image/x-icon">
-</head>
+  </head>
 
-<body>
+  <body>
     <header>
-        <img class="logo" src="../img/logoBankbu_.PNG" alt="Logo de Mi Empresa">
-        <div id="menuBtn">
-            <img class="TITLE" src="../img/menu.PNG" alt="Botón de Menú ">
-        </div>
+      <img class="logo" src="../img/logoBankbu_.PNG" alt="Logo de Mi Empresa">
+      <div id="menuBtn">
+        <img class="TITLE" src="../img/menu.PNG" alt="Botón de Menú ">
+      </div>
     </header>
-   <div id="menuContainer"></div>
+    <div id="menuContainer"></div>
     <script>
-      fetch('menu.html')
-        .then(response => response.text())
-        .then(html => {
-          document.getElementById('menuContainer').innerHTML = html;
-        });
-    </script>
+    fetch('menu.html')
+      .then(response => response.text())
+      .then(html => {
+        document.getElementById('menuContainer').innerHTML = html;
+      });
+  </script>
 
     <section>
-        <div>
-            <p class="TITLE">Reposici&oacute;n cr&eacute;dito</p>
+      <div>
+        <p class="TITLE">Reposici&oacute;n cr&eacute;dito</p>
 
-            <p>A trav&eacute;s de este formulario se realiza la solicitud que permite reemplazar
-                los pl&aacute;sticos de tarjeta cr&eacute;dito emitidos, bien sea por deterioro
-                f&iacute;sico del pl&aacute;stico, por presentar fallas al tratar de leer
-                la banda magn&eacute;tica, o por error en el nombre del cliente que aparece
-                realzado en el mismo. A partir de la solicitud de Reposici&oacute;n,
-                la entidad efect&uacute;a la generaci&oacute;n de un nuevo pl&aacute;stico
-                calculando o no la fecha de vencimiento para &eacute;ste, as&iacute; como
-                los costos que se cargar&aacute;n al cliente, de acuerdo con los par&aacute;metros
-                que la entidad defina.</p>
-            <p>Los campos N&uacute;mero tarjeta y Fecha vencimiento despliegan informaci&oacute;n
-                una vez la solicitud ha surtido la etapa de Aprobaci&oacute;n o la etapa anterior
-                al realce.</p>
-            <p>En el formulario de otras solicitudes  se selecciona la opci&oacute;n
-                 Reposici&oacute;n cr&eacute;dito y la tarjeta a la cual se le ingresar&aacute;
-                la solicitud.
-            </p>
-            <p class="TITLE"><img src="../img/SOF_015B.PNG"></p>
+        <p>A trav&eacute;s de este formulario se realiza la solicitud que
+          permite reemplazar
+          los pl&aacute;sticos de tarjeta cr&eacute;dito emitidos, bien sea por
+          deterioro
+          f&iacute;sico del pl&aacute;stico, por presentar fallas al tratar de
+          leer
+          la banda magn&eacute;tica, o por error en el nombre del cliente que
+          aparece
+          realzado en el mismo. A partir de la solicitud de Reposici&oacute;n,
+          la entidad efect&uacute;a la generaci&oacute;n de un nuevo
+          pl&aacute;stico
+          calculando o no la fecha de vencimiento para &eacute;ste, as&iacute;
+          como
+          los costos que se cargar&aacute;n al cliente, de acuerdo con los
+          par&aacute;metros
+          que la entidad defina.</p>
+        <p>Los campos N&uacute;mero tarjeta y Fecha vencimiento despliegan
+          informaci&oacute;n
+          una vez la solicitud ha surtido la etapa de Aprobaci&oacute;n o la
+          etapa anterior
+          al realce.</p>
+        <p>En el formulario de otras solicitudes se selecciona la opci&oacute;n
+          Reposici&oacute;n cr&eacute;dito y la tarjeta a la cual se le
+          ingresar&aacute;
+          la solicitud.
+        </p>
+        <p class="TITLE"><img src="../img/SOF_015B.PNG"></p>
 
-            <table>
-                <tr>
-                    <td class="titletable">
-                        <p class="SUBTITULO">Tarjeta </p>
-                    </td>
-                    <td>
-                        <p class="PARRAFO">Campo
-                            con lista de valores que contiene los diferentes n&uacute;meros de tarjeta
-                            del cliente. El usuario debe seleccionar aquella para la cual se desea
-                            solicitar la Reposici&oacute;n.</p>
-                    </td>
+        <table>
+          <tr>
+            <td class="titletable">
+              <p class="SUBTITULO">Tarjeta </p>
+            </td>
+            <td>
+              <p class="PARRAFO">Campo
+                con lista de valores que contiene los diferentes n&uacute;meros
+                de tarjeta
+                del cliente. El usuario debe seleccionar aquella para la cual se
+                desea
+                solicitar la Reposici&oacute;n.</p>
+            </td>
+          </tr>
+        </table>
+
+        <p><span class="SUBTITULO">Adicionar:</span> una vez se han seleccionado
+          los datos anteriores, se
+          deplegar&aacute; un wizard de dos pasos. El primero de ellos contiene
+          los bloques Informaci&oacute;n
+          general y <a href="#Negacion" title="Motivos de negación"
+            target="_self">Motivos de negación</a>
+          <span>:</span>
+        </p>
+        <p class="TITLE"><img src="../img/SOF_015E1.PNG"></p>
+        <p></p>
+        <table>
+          <tr>
+            <td class="titletable"><p class="SUBTITULO">Cliente</p></td>
+            <td><p class="PARRAFO">Campo
+                de salida desde el cual se podr&aacute; invocar la consulta del
+                cliente
+                al cual se le est&aacute; ingresando la solicitud. </p></td>
+          </tr>
+          <tr>
+            <td class="titletable"><p class="SUBTITULO">N&uacute;mero
+                tarjeta </p></td>
+            <td><p class="PARRAFO">Campo
+                de salida desde el cual se podr&aacute; invocar la consulta de
+                tarjeta
+                del cliente al cual se le est&aacute; ingresando la solicitud.
+              </p></td>
+          </tr>
+          <tr>
+            <td class="titletable"><p class="SUBTITULO">Producto</p></td>
+            <td><p class="PARRAFO">Estos
+                campos se llenan autom&aacute;ticamente una vez ingresado el
+                n&uacute;mero
+                de tarjeta asociado a la solicitud, permitiendo conocer el
+                Segmento,
+                Grupo de afinidad y Descripci&oacute;n que junto con
+                el Bin conforman el producto <a href="DBH_018E.html"></a><a
+                  href="MEH_002B.html">cr&eacute;dito</a>
+                a reponer.</p></td>
+          </tr>
+          <tr>
+            <td class="titletable"><p class="SUBTITULO">Marca</p></td>
+            <td><p class="PARRAFO"><span lang="ES-TRAD">Campo
+                  de salida que ilustra la <a
+                    href="NUH_033B.html">franquicia</a>
+                  asociada al producto en la Definici&oacute;n del
+                  producto.</span></p></td>
+          </tr>
+          <tr>
+            <td class="titletable"><p class="SUBTITULO"><strong>Fecha
+                  Vencimiento</p></td>
+              <td><p class="PARRAFO"><span lang="ES-TRAD">Campo
+                    de salida en formato YYYY-MM-DD, que indica la fecha en que
+                    expirar&aacute;
+                    el nuevo pl&aacute;stico de la tarjeta, cuando se ha
+                    parametrizado que
+                    el sistema deba calcular una nueva fecha de
+                    vencimiento.</span></p></td>
+            </tr>
+            <tr>
+              <td class="titletable"><p class="SUBTITULO">Posee
+                  pl&aacute;stico </p></td>
+              <td><p class="PARRAFO">Este
+                  campo de acuerdo con lo parametrizado a nivel de producto,
+                  bien sea <a href="MEH_002B.html">cr&eacute;dito</a>,
+                  determina si se genera un pl&aacute;stico a modo de
+                  materializaci&oacute;n
+                  del producto asociado a la tarjeta desde la cual se genera la
+                  solicitud.
+                  Si esta casilla aparece marcada (activa) permite interactuar
+                  con el
+                  campo Emite pl&aacute;stico.</p></td>
+            </tr>
+            <tr>
+              <td class="titletable"><p class="SUBTITULO">Emite
+                  pl&aacute;stico </p></td>
+              <td><p class="PARRAFO">En
+                  este campo con lista de valores adjunta se debe seleccionar
+                  entre Si
+                  se emite pl&aacute;stico o No, dependiendo del tipo de
+                  solicitud.
+                  El poder interactuar con este campo depende del valor que
+                  tenga el campo
+                  Posee pl&aacute;stico.</p></td>
+            </tr>
+            <tr>
+              <td class="titletable"><p class="SUBTITULO">Foto
+                  del cliente </p></td>
+              <td><p class="PARRAFO">Campo
+                  que posee lista de valores adjunta en la que es posible
+                  indicar Si
+                  o No el nuevo pl&aacute;stico incluir&aacute; la foto del
+                  cliente,
+                  de acuerdo con lo parametrizado para cada producto en
+                  particular.</p></td>
+            </tr>
+            <tr>
+              <td class="titletable"><p class="SUBTITULO">Motivo
+                  reposici&oacute;n </td>
+                <td><p class="PARRAFO">Campo que posee lista
+                    de valores adjunta de la que debe seleccionarse entre
+                    Deterioro, Banda
+                    (magn&eacute;tica) o Nombre la raz&oacute;n por la cual se
+                    solicita la
+                    reposici&oacute;n del pl&aacute;stico.</p></td>
+              </tr>
+              <tr>
+                <td class="titletable"><p class="SUBTITULO">Primer
+                    nombre</p></td>
+                <td><p class="PARRAFO">Campos
+                    de salida que contienen los datos del primer nombre
+                    registrado para
+                    la tarjeta.</p></td>
+              </tr>
+              <tr>
+                <td class="titletable"><p class="SUBTITULO">Segundo
+                    nombre</p></td>
+                <td><p class="PARRAFO">Campos
+                    de salida que contienen los datos del segundo nombre
+                    registrado para
+                    la tarjeta.</p></td>
+              </tr>
+              <tr>
+                <td class="titletable"><p class="SUBTITULO">Primer
+                    apellido </p></td>
+                <td><p class="PARRAFO">Campos
+                    de salida que contienen los datos del primer apellido
+                    registrado para
+                    la tarjeta.</p></td>
+              </tr>
+              <tr>
+                <td class="titletable"><p class="SUBTITULO">Segundo
+                    apellido </p></td>
+                <td><p class="PARRAFO">Campos
+                    de salida que contienen los datos del segundo apellido
+                    registrado para
+                    la tarjeta. </p></td>
+              </tr>
+              <tr>
+                <td class="titletable"><p class="SUBTITULO">Realce
+                    actual</p></td>
+                <td><p class="PARRAFO">En
+                    este campo se despliega el nombre del cliente tal y como
+                    aparece en
+                    el pl&aacute;stico actual a reponer.</p></td>
+              </tr>
+              <tr>
+                <td class="titletable"><p class="SUBTITULO">Realce
+                    nuevo</p></td>
+                <td><p class="PARRAFO">Campo
+                    que se activa si la opci&oacute;n se&ntilde;alada en el
+                    campo Motivo
+                    reposici&oacute;n corresponde a Nombre, y permite registrar
+                    el nombre
+                    correcto o como el cliente desea que aparezca en el nuevo
+                    pl&aacute;stico
+                    a emitir, pero teniendo en cuenta que &eacute;ste no exceda
+                    la longitud
+                    m&aacute;xima del mismo.</p></td>
+              </tr>
+              <tr>
+                <td class="titletable"><p class="SUBTITULO">Estado
+                    solicitd </p></td>
+                <td><p class="PARRAFO">Este
+                    campo ilustra la condici&oacute;n en que se encuentra la
+                    solicitud en
+                    cada momento, y que puede ser <em class="PARRAFO">En zona
+                      gris, Negada
+                      totalmente, Negada parcialmente, Aprobada totalmente o
+                      Aprobada
+                      parcialmente.</p></td>
                 </tr>
-            </table>
+                <tr>
+                  <td class="titletable"><p class="SUBTITULO">Anexos</p></td>
+                  <td><p class="PARRAFO">Campo
+                      que permite ingresar informaci&oacute;n relacionada con la
+                      solicitud,
+                      referente a documentos suministrados por el cliente u
+                      otros datos.</p></td>
+                </tr>
+              </table>
+              <p><a name="Negacion"></a></p>
+              <p class="TITLE"><img src="../img/SOF_015B2.PNG"></p>
 
-            <p><span class="SUBTITULO">Adicionar:</span>  una vez se han seleccionado los datos anteriores, se
-                deplegar&aacute; un wizard de dos pasos. El primero de ellos contiene los bloques Informaci&oacute;n
-                general y <a href="#Negacion" title="Motivos de negación" target="_self">Motivos de negación</a>
-              <span >:</span> 
-            </p>
-            <p class="TITLE"><img src="../img/SOF_015E1.PNG"></p>
-            <p></p>
-            <table '>
-                  <tr> 
-                    <td class="titletable" ><p class="SUBTITULO">Cliente</p></td>
-                    <td><p class="PARRAFO">Campo 
-                        de salida desde el cual se podr&aacute; invocar la consulta del cliente 
-                        al cual se le est&aacute; ingresando la solicitud. </p></td>
-                  </tr>
-                  <tr> 
-                    <td class="titletable" ><p class="SUBTITULO">N&uacute;mero 
-                        tarjeta </p></td>
-                    <td><p class="PARRAFO">Campo 
-                        de salida desde el cual se podr&aacute; invocar la consulta de tarjeta 
-                        del cliente al cual se le est&aacute; ingresando la solicitud. </p></td>
-                  </tr>
-                  <tr> 
-                    <td class="titletable" ><p class="SUBTITULO">Producto</p></td>
-                    <td><p class="PARRAFO">Estos 
-                        campos se llenan autom&aacute;ticamente una vez ingresado el n&uacute;mero 
-                        de tarjeta asociado a la solicitud, permitiendo conocer el Segmento, 
-                        Grupo de afinidad y Descripci&oacute;n que junto con 
-                        el Bin conforman el producto <A href="DBH_018E.html"></A><A href="MEH_002B.html">cr&eacute;dito</A> 
-                        a reponer.</p></td>
-                  </tr>
-                  <tr> 
-                    <td class="titletable" ><p class="SUBTITULO">Marca</p></td>
-                    <td><p class="PARRAFO"><SPAN lang="ES-TRAD">Campo 
-                        de salida que ilustra la <A href="NUH_033B.html">franquicia</A> 
-                        asociada al producto en la Definici&oacute;n del producto.</span></p></td>
-                  </tr>
-                  <tr> 
-                    <td class="titletable" ><p class="SUBTITULO"><strong>Fecha 
-                        Vencimiento</p></td>
-                    <td><p class="PARRAFO"><SPAN lang="ES-TRAD">Campo 
-                        de salida en formato YYYY-MM-DD, que indica la fecha en que expirar&aacute; 
-                        el nuevo pl&aacute;stico de la tarjeta, cuando se ha parametrizado que 
-                        el sistema deba calcular una nueva fecha de vencimiento.</span></p></td>
-                  </tr>
-                  <tr> 
-                    <td class="titletable" ><p class="SUBTITULO">Posee 
-                        pl&aacute;stico </p></td>
-                    <td><p class="PARRAFO">Este 
-                        campo de acuerdo con lo parametrizado a nivel de producto, 
-                        bien sea <A href="MEH_002B.html">cr&eacute;dito</A>, 
-                        determina si se genera un pl&aacute;stico a modo de materializaci&oacute;n 
-                        del producto asociado a la tarjeta desde la cual se genera la solicitud. 
-                        Si esta casilla aparece marcada (activa) permite interactuar con el 
-                        campo Emite pl&aacute;stico.</p></td>
-                  </tr>
-                  <tr> 
-                    <td class="titletable" ><p class="SUBTITULO">Emite 
-                        pl&aacute;stico </p></td>
-                    <td><p class="PARRAFO">En 
-                        este campo con lista de valores adjunta se debe seleccionar entre Si 
-                        se emite pl&aacute;stico o No, dependiendo del tipo de solicitud. 
-                        El poder interactuar con este campo depende del valor que tenga el campo 
-                        Posee pl&aacute;stico.</p></td>
-                  </tr>
-                  <tr> 
-                    <td class="titletable" ><p class="SUBTITULO">Foto 
-                        del cliente </p></td>
-                    <td><p class="PARRAFO">Campo 
-                        que posee lista de valores adjunta en la que es posible indicar Si 
-                        o No el nuevo pl&aacute;stico incluir&aacute; la foto del cliente, 
-                        de acuerdo con lo parametrizado para cada producto en particular.</p></td>
-                  </tr>
-                  <tr> 
-                    <td class="titletable" ><p class="SUBTITULO">Motivo 
-                      reposici&oacute;n </td>
-                    <td><p class="PARRAFO">Campo que posee lista 
-                      de valores adjunta de la que debe seleccionarse entre Deterioro, Banda 
-                      (magn&eacute;tica) o Nombre la raz&oacute;n por la cual se solicita la 
-                      reposici&oacute;n del pl&aacute;stico.</p></td>
-                  </tr>
-                  <tr> 
-                    <td class="titletable" ><p class="SUBTITULO">Primer 
-                        nombre</p></td>
-                    <td><p class="PARRAFO">Campos 
-                        de salida que contienen los datos del primer nombre registrado para 
-                        la tarjeta.</p></td>
-                  </tr>
-                  <tr> 
-                    <td class="titletable" ><p class="SUBTITULO">Segundo 
-                        nombre</p></td>
-                    <td><p class="PARRAFO">Campos 
-                        de salida que contienen los datos del segundo nombre registrado para 
-                        la tarjeta.</p></td>
-                  </tr>
-                  <tr> 
-                    <td class="titletable" ><p class="SUBTITULO">Primer 
-                        apellido </p></td>
-                    <td><p class="PARRAFO">Campos 
-                        de salida que contienen los datos del primer apellido registrado para 
-                        la tarjeta.</p></td>
-                  </tr>
-                  <tr> 
-                    <td class="titletable" ><p class="SUBTITULO">Segundo 
-                        apellido </p></td>
-                    <td><p class="PARRAFO">Campos 
-                        de salida que contienen los datos del segundo apellido registrado para 
-                        la tarjeta. </p></td>
-                  </tr>
-                  <tr> 
-                    <td class="titletable"><p class="SUBTITULO">Realce 
-                      actual</p></td>
-                    <td><p class="PARRAFO">En 
-                        este campo se despliega el nombre del cliente tal y como aparece en 
-                        el pl&aacute;stico actual a reponer.</p></td>
-                  </tr>
-                  <tr> 
-                    <td class="titletable"><p class="SUBTITULO">Realce 
-                      nuevo</p></td>
-                    <td><p class="PARRAFO">Campo 
-                        que se activa si la opci&oacute;n se&ntilde;alada en el campo Motivo 
-                        reposici&oacute;n corresponde a Nombre, y permite registrar el nombre 
-                        correcto o como el cliente desea que aparezca en el nuevo pl&aacute;stico 
-                        a emitir, pero teniendo en cuenta que &eacute;ste no exceda la longitud 
-                        m&aacute;xima del mismo.</p></td>
-                  </tr>
-                  <tr> 
-                    <td class="titletable" ><p class="SUBTITULO">Estado 
-                        solicitd </p></td>
-                    <td><p class="PARRAFO">Este 
-                        campo ilustra la condici&oacute;n en que se encuentra la solicitud en 
-                        cada momento, y que puede ser <em class="PARRAFO">En zona gris, Negada 
-                        totalmente, Negada parcialmente, Aprobada totalmente o Aprobada 
-                        parcialmente.</p></td>
-                  </tr>
-                  <tr> 
-                    <td class="titletable"><p class="SUBTITULO">Anexos</p></td>
-                    <td><p class="PARRAFO">Campo 
-                        que permite ingresar informaci&oacute;n relacionada con la solicitud, 
-                        referente a documentos suministrados por el cliente u otros datos.</p></td>
-                  </tr>
-                </table>
-                <p><a name="Negacion"></a></p>
-                <p class="TITLE" ><img src="../img/SOF_015B2.PNG"></p>
-                
-                <table>
-                  <tr>
-                    <td class="titletable" ><p class="SUBTITULO">Motivo negaci&oacute;n </p></td>
-                    <td><p class="PARRAFO">Si aplica, contiene el c&oacute;digo y la descripci&oacute;n de la causal de negaci&oacute;n de la   solicitud.</p>        </td>
-                  </tr>
-                  <tr>
-                    <td class="titletable"><p class="SUBTITULO">Observaciones negaci&oacute;n </p></td>
-                    <td><p class="PARRAFO">Campo que   puede contener notas que ilustren las razones por las cuales fue denegada la   solicitud.</p>      </td>
-                  </tr>
-                </table>
-                
-                <p  class="PARRAFO"><span class="PARRAFO">A trav&eacute;s de los 
-                  botones de la parte inferior derecha, se podr&aacute; cancelar el proceso 
-                  o ir al segundo paso del wizard: <a href="SOH_015B1.html">Documentos</a></span> .</p>
-                
-                <p  class="PARRAFO"><span class="SUBTITULO">Actualizar:</span>  
-                  Si en formulario del otras solicitudes el usuario invoca la opci&oacute;n 
-                  Actualizar, se despliega el siguiente formulario.</p>
-                <p class="TITLE" ><img src="../img/SOF_015B4.PNG" width="724" height="589"></p>
-                
-                <p><span class="SUBTITULO">Detalle:</span><span class="PARRAFO"> De igual forma, si </span> en formulario del otras solicitudes el usuario invoca la opci&oacute;n Detalle, se despliega el siguiente formulario. <span
-                  >
-                
+              <table>
+                <tr>
+                  <td class="titletable"><p class="SUBTITULO">Motivo
+                      negaci&oacute;n </p></td>
+                  <td><p class="PARRAFO">Si aplica, contiene el c&oacute;digo y
+                      la descripci&oacute;n de la causal de negaci&oacute;n de
+                      la solicitud.</p> </td>
+                </tr>
+                <tr>
+                  <td class="titletable"><p class="SUBTITULO">Observaciones
+                      negaci&oacute;n </p></td>
+                  <td><p class="PARRAFO">Campo que puede contener notas que
+                      ilustren las razones por las cuales fue denegada la
+                      solicitud.</p> </td>
+                </tr>
+              </table>
+
+              <p class="PARRAFO"><span class="PARRAFO">A trav&eacute;s de los
+                  botones de la parte inferior derecha, se podr&aacute; cancelar
+                  el proceso
+                  o ir al segundo paso del wizard: <a
+                    href="SOH_015B1.html">Documentos</a></span> .</p>
+
+              <p class="PARRAFO"><span class="SUBTITULO">Actualizar:</span>
+                Si en formulario del otras solicitudes el usuario invoca la
+                opci&oacute;n
+                Actualizar, se despliega el siguiente formulario.</p>
+              <p class="TITLE"><img src="../img/SOF_015B4.PNG"></p>
+
+              <p><span class="SUBTITULO">Detalle:</span><span class="PARRAFO">
+                  De igual forma, si </span> en formulario del otras solicitudes
+                el usuario invoca la opci&oacute;n Detalle, se despliega el
+                siguiente formulario. <span>
+
                 </span></p>
-                <p class="TITLE" ><img src="../img/SOF_015B5.PNG" ></p>
-                
-        </div>
-    </section>
-    <script src="../js/menu.js"></script>
+              <p class="TITLE"><img src="../img/SOF_015B5.PNG"></p>
 
-    <div id="footerContainer"></div>
-<script>
+            </div>
+          </section>
+          <script src="../js/menu.js"></script>
+
+          <div id="footerContainer"></div>
+          <script>
   fetch('footer.html')
     .then(response => response.text())
     .then(html => {
       document.getElementById('footerContainer').innerHTML = html;
     });
 </script>
-</body>
+        </body>
 
-</html>
+      </html>

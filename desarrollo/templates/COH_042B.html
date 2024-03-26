@@ -18,26 +18,20 @@
       <img class="TITLE" src="../img/menu.PNG" alt="Botón de Menú ">
     </div>
   </header>
-  <div id="menuContainer"></div>
-    <script>
-      fetch('menu.html')
-        .then(response => response.text())
-        .then(html => {
-          document.getElementById('menuContainer').innerHTML = html;
-        });
-    </script>
+    <div id="menuContainer"></div>
+  <script>
+    fetch('menu.html')
+      .then(response => response.text())
+      .then(html => {
+        document.getElementById('menuContainer').innerHTML = html;
+      });
+  </script>
 
   <section>
     <div>
-      <table>
-        <tr>
-          <td>
-            <div>
+      
               <p class="TITLE">Consulta mensajes del sistema</p>
-            </div>
-          </td>
-        </tr>
-      </table>
+
       <p class="PARRAFO">Esta función permite consultar en detalle el histórico de las autorizaciones otorgadas por el
         sistema y que ya fueron procesadas.</p>
       <p class="PARRAFO"><span class="SUBTITULO">Filtro:</span>  El formulario cuenta con tres campos o criterios para
@@ -68,8 +62,8 @@
         </tr>
         <tr>
           <td class="titletable">
-            <p class="SUBTITULO"><b><span>N&uacute;mero
-                  tarjeta </span></b></p>
+            <p class="SUBTITULO">N&uacute;mero
+                  tarjeta </span></p>
           </td>
           <td>
             <p class="PARRAFO">Campo en el que se digita el número de tarjeta del cliente para la que se desea efectuar
@@ -102,8 +96,8 @@
         </tr>
         <tr>
           <td class="titletable">
-            <p class="SUBTITULO"><b><span>N&uacute;mero
-                  tarjeta </span></b></p>
+            <p class="SUBTITULO">N&uacute;mero
+                  tarjeta </span></p>
           </td>
           <td>
             <p class="PARRAFO">Campo que ilustra el número de tarjeta asociada a cada uno de los registros del histórico
@@ -131,7 +125,7 @@
         </tr>
         <tr>
           <td class="titletable">
-            <p class="SUBTITULO"><b><span><span>Monto transacci&oacute;n</span></span></b></p>
+            <p class="SUBTITULO">Monto transacci&oacute;n</span></span></p>
           </td>
           <td>
             <p class="PARRAFO">Campo que ilustra el valor de la utilización asociado a cada uno de los registros del
@@ -147,7 +141,7 @@
       <table>
         <tr>
           <td class="titletable">
-            <p class="SUBTITULO"><b><span>Establecimiento</span></b></p>
+            <p class="SUBTITULO">Establecimiento</span></p>
           </td>
           <td>
             <p class="PARRAFO">Campo que muestra el código del establecimiento en dónde se efectuó la utilización del

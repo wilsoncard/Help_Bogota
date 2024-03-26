@@ -1,390 +1,443 @@
 <!DOCTYPE html>
 <html lang="es">
 
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>BANKBU®</title>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BANKBU®</title>
 
-  <link rel="stylesheet" href="../css/pages.css">
-  <link rel="stylesheet" href="../css/style.css">
-  <link rel="icon" href="../img/ACQUIRER-logo.JPG" type="image/x-icon">
-</head>
+    <link rel="stylesheet" href="../css/pages.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="icon" href="../img/ACQUIRER-logo.JPG" type="image/x-icon">
+  </head>
 
-<body>
+  <body>
 
-  <header>
-    <img class="logo" src="../img/logoBankbu_.PNG" alt="Logo de Mi Empresa">
-    <div id="menuBtn">
-      <img class="TITLE" src="../img/menu.PNG" alt="Botón de Menú ">
-    </div>
-  </header>
-  <div id="menuContainer"></div>
+    <header>
+      <img class="logo" src="../img/logoBankbu_.PNG" alt="Logo de Mi Empresa">
+      <div id="menuBtn">
+        <img class="TITLE" src="../img/menu.PNG" alt="Botón de Menú ">
+      </div>
+    </header>
+    <div id="menuContainer"></div>
     <script>
-      fetch('menu.html')
-        .then(response => response.text())
-        .then(html => {
-          document.getElementById('menuContainer').innerHTML = html;
-        });
-    </script>
+    fetch('menu.html')
+      .then(response => response.text())
+      .then(html => {
+        document.getElementById('menuContainer').innerHTML = html;
+      });
+  </script>
 
-  <section>
-    <div>
-      <table>
-        <tr>
-          <td>
-            <div>
-              <p class="TITLE">Contracargos</p>
-            </div>
-          </td>
-        </tr>
-      </table>
-      <p class="PARRAFO"><span class="SUBTITULO"><a name="ingresar"></a>Ingresar:</span>  El formulario inicial consta de
-        dos campos que permiten ingresar los datos principales de la transacci&oacute;n a autorizar. El bot&oacute;n
-        salvar s&oacute;lo se habilita una vez &eacute;stos hayan sido ingresados. </p>
-      <p>El formulario cuenta con las opciones N&uacute;mero tarjeta y Referencia universal, y permite ir a la <a
-          href="INH_027B.html">opci&oacute;n anterior</a> a trav&eacute;s del bot&oacute;n Cancelar.</p>
-      <p class="TITLE"><img src="../img/../img/../img/INF_027B9.PNG"></p>
+    <section>
+      <div>
+        <p class="TITLE">Contracargos</p>
+              
+        <p class="PARRAFO"><span class="SUBTITULO"><a
+              name="ingresar"></a>Ingresar:</span> El formulario inicial consta
+          de
+          dos campos que permiten ingresar los datos principales de la
+          transacci&oacute;n a autorizar. El bot&oacute;n
+          salvar s&oacute;lo se habilita una vez &eacute;stos hayan sido
+          ingresados. </p>
+        <p>El formulario cuenta con las opciones N&uacute;mero tarjeta y
+          Referencia universal, y permite ir a la <a
+            href="INH_027B.html">opci&oacute;n anterior</a> a trav&eacute;s del
+          bot&oacute;n Cancelar.</p>
+        <p class="TITLE"><img src="../img/../img/../img/INF_027B9.PNG"></p>
 
-      <table>
-        <tr>
-          <td class="titletable">
-            <p class="SUBTITULO">N&uacute;mero
-              tarjeta </p>
-          </td>
-          <td>
-            <p class="PARRAFO">Campo
-              en el que se ingresa el n&uacute;mero de la tarjeta asociado a la transacci&oacute;n
-              en disputa para su b&uacute;squeda</p>
-          </td>
-        </tr>
-        <tr>
-          <td class="titletable">
-            <p class="SUBTITULO">Referencia
-              universal </p>
-          </td>
-          <td>
-            <p class="PARRAFO">Se ingresa el n&uacute;mero
-              dado por el sistema tanto para el canje enviado como
-              para el recibido, que identifica de manera exclusiva a cada transacci&oacute;n
-              dentro de todo el universo transaccional.</p>
-          </td>
-        </tr>
-      </table>
+        <table>
+          <tr>
+            <td class="titletable">
+              <p class="SUBTITULO">N&uacute;mero
+                tarjeta </p>
+            </td>
+            <td>
+              <p class="PARRAFO">Campo
+                en el que se ingresa el n&uacute;mero de la tarjeta asociado a
+                la transacci&oacute;n
+                en disputa para su b&uacute;squeda</p>
+            </td>
+          </tr>
+          <tr>
+            <td class="titletable">
+              <p class="SUBTITULO">Referencia
+                universal </p>
+            </td>
+            <td>
+              <p class="PARRAFO">Se ingresa el n&uacute;mero
+                dado por el sistema tanto para el canje enviado como
+                para el recibido, que identifica de manera exclusiva a cada
+                transacci&oacute;n
+                dentro de todo el universo transaccional.</p>
+            </td>
+          </tr>
+        </table>
 
-      <p class="TITLE" ><img src="../img/LINEA.GIF"></p>
+        <p class="TITLE"><img src="../img/LINEA.GIF"></p>
 
+        <p class="PARRAFO"><span class="SUBTITULO"><a name="datos"></a>Datos
+            complementarios:</span> Grupo de datos
+          desplegados que ilustran suficientemente la informaci&oacute;n
+          b&aacute;sica de una transacci&oacute;n en
+          disputa. A pesar de disponer de la misma informaci&oacute;n, los
+          &uacute;nicos campos que no son comunes entre
+          los roles de emisor y adquirente son "Origen inmediato y Origen" que
+          s&oacute;lo aplican para el primero de
+          estos. </p>
+        <p class="TITLE"><img src="../img/INF_027B10.PNG"></p>
 
-      <p class="PARRAFO"><span class="SUBTITULO"><a name="datos"></a>Datos complementarios:</span>  Grupo de datos
-        desplegados que ilustran suficientemente la informaci&oacute;n b&aacute;sica de una transacci&oacute;n en
-        disputa. A pesar de disponer de la misma informaci&oacute;n, los &uacute;nicos campos que no son comunes entre
-        los roles de emisor y adquirente son "Origen inmediato y Origen" que s&oacute;lo aplican para el primero de
-        estos. </p>
-      <p class="TITLE"><img src="../img/INF_027B10.PNG"></p>
+        <p><span class="SUBTITULO">Localizaci&oacute;n:</span> El formulario
+          cuenta con un globo de localizaci&oacute;n
+          que muestra los siguientes
+          datos:</p>
+        <p class="TITLE"><img src="../img/INF_027B11.PNG"></p>
 
+        <p><span class="SUBTITULO"><a name="notas"></a>Adicionar notas
+            d&eacute;bito:</span> A trav&eacute;s de esta
+          opci&oacute;n el sistema permite grabar cargos a las tarjetas
+          cr&eacute;dito que lo requieran, de acuerdo a los
+          procesos de contracargos.</p>
+        <p class="TITLE"><img src="../img/INF_027B14.PNG"></p>
 
-      <p><span class="SUBTITULO">Localizaci&oacute;n:</span>  El formulario cuenta con un globo de localizaci&oacute;n
-        que muestra los siguientes
-        datos:</p>
-      <p class="TITLE"><img src="../img/INF_027B11.PNG"></p>
+        <table>
+          <tr>
+            <td class="titletable">
+              <p class="SUBTITULO">N&uacute;mero tarjeta</p>
+            </td>
+            <td>
+              <p>Muestra el n&uacute;mero de la tarjeta asociado a la
+                transacci&oacute;n en disputa.</p>
+            </td>
+          </tr>
+        </table>
+        <p class="TITLE"><img src="../img/INF_027B15.PNG"></p>
 
-      <p><span class="SUBTITULO"><a name="notas"></a>Adicionar notas d&eacute;bito:</span>  A trav&eacute;s de esta
-        opci&oacute;n el sistema permite grabar cargos a las tarjetas cr&eacute;dito que lo requieran, de acuerdo a los
-        procesos de contracargos.</p>
-      <p class="TITLE"><img src="../img/INF_027B14.PNG"></p>
+        <table>
+          <tr>
+            <td class="titletable">
+              <p class="SUBTITULO">Marca </p>
+            </td>
+            <td>
+              <p class="PARRAFO">Se
+                ingresa el c&oacute;digo de la <a
+                  href="NUH_033B.html">franquicia</a> a la que pertenece el
+                pl&aacute;stico mediante el que se realiz&oacute;
+                la transacci&oacute;n.</p>
+            </td>
+          </tr>
+          <tr>
+            <td class="titletable">
+              <p class="SUBTITULO">Transacci&oacute;n origen </p>
+            </td>
+            <td>
+              <p class="PARRAFO">Lista de valores que despliega
+                tanto el c&oacute;digo como el nombre asociado a cada tipo o
+                clase de
+                transacci&oacute;n enviada o recibida dentro del proceso de
+                intercambio,
+                con base en la codificaci&oacute;n determinada por las
+                franquicias y
+                parametrizada mediante la opci&oacute;n <a
+                  href="NUH_027B.html">Or&iacute;genes
+                  de transacciones</a> del grupo de Tablas reservadas del
+                N&uacute;cleo.</p>
+            </td>
+          </tr>
+          <tr>
+            <td class="titletable">
+              <p class="SUBTITULO">Establecimiento</p>
+            </td>
+            <td>
+              <p class="PARRAFO">Campo opcional en el que se debe ingresar el
+                c&oacute;digo del establecimiento
+                involucrado en la nora d&eacute;bito. </p>
+            </td>
+          </tr>
+          <tr>
+            <td class="titletable">
+              <p class="SUBTITULO">Fecha vencimiento </p>
+            </td>
+            <td>
+              <p class="PARRAFO">Campo
+                con formato YYYY-MM-DD en el que se ingresa la fecha en la cual
+                se
+                vence el plazo definido de la nora d&eacute;bito. </p>
+            </td>
+          </tr>
+          <tr>
+            <td class="titletable">
+              <p class="SUBTITULO">Tipo de captura </p>
+            </td>
+            <td>
+              <p class="PARRAFO">Se&ntilde;ala
+                el nombre asociado al c&oacute;digo definido por la franquicia
+                que identifica
+                la manera como ingres&oacute;, por medio de su red, la
+                transacci&oacute;n
+                al sistema (POS, ATM&#8217;s, oficinas, etc.).</p>
+            </td>
+          </tr>
+          <tr>
+            <td class="titletable">
+              <p class="SUBTITULO">Fecha comprobante </p>
+            </td>
+            <td>
+              <p class="PARRAFO">Muestra
+                la fecha f&iacute;sica del comprobante de consumo o
+                utilizaci&oacute;n
+                en formato YYYY-MM-DD.</p>
+            </td>
+          </tr>
+          <tr>
+            <td class="titletable">
+              <p class="SUBTITULO">Fecha contabilizaci&oacute;n</p>
+            </td>
+            <td>
+              <p class="PARRAFO">Corresponde
+                a la fecha de contabilizaci&oacute;n del movimiento, la cual
+                regularmente,
+                corresponde a la fecha de proceso, sin embargo cualquier
+                registro podr&iacute;a
+                llegar con una fecha diferente de contabilizaci&oacute;n, por
+                tal raz&oacute;n
+                se muestra esta informaci&oacute;n en este campo.</p>
+            </td>
+          </tr>
+          <tr>
+            <td class="titletable">
+              <p class="SUBTITULO">N&uacute;mero autorizaci&oacute;n </p>
+            </td>
+            <td>
+              <p class="PARRAFO">En este campo se ingresa el N&uacute;mero de
+                autorizaci&oacute;n dado por el sistema.</p>
+            </td>
+          </tr>
+          <tr>
+            <td class="titletable">
+              <p class="SUBTITULO">Bin receptor </p>
+            </td>
+            <td>
+              <p class="PARRAFO">Campo obligatorio en el cual se ingresa
+                el prefijo o bin centro de proceso de la entidad a trav&eacute;s
+                de
+                la que ingresa la transacci&oacute;n.</p>
+            </td>
+          </tr>
+          <tr>
+            <td class="titletable">
+              <p class="SUBTITULO">Bin destino </p>
+            </td>
+            <td>
+              <p class="PARRAFO">Campo obligatorio en el cual se ingresa el
+                prefijo o bin centro de proceso de la entidad
+                emisora del pl&aacute;stico.</p>
+            </td>
+          </tr>
+          <tr>
+            <td class="titletable">
+              <p class="SUBTITULO">Origen inmediato </p>
+            </td>
+            <td>
+              <p class="PARRAFO">Este campo se muestra por defecto como 'CO',
+                indicando que proviene del origen de
+                Contracargos. </p>
+            </td>
+          </tr>
+          <tr>
+            <td class="titletable">
+              <p class="SUBTITULO">Origen</p>
+            </td>
+            <td>
+              <p class="PARRAFO">Campo
+                que despliega por defecto el c&oacute;digo '2', que indica que
+                proviene de un Proceso interno.</p>
+            </td>
+          </tr>
+          <tr>
+            <td class="titletable">
+              <p class="SUBTITULO">N&uacute;mero boleta de ruta </p>
+            </td>
+            <td>
+              <p class="PARRAFO">Campo opcional en el cual se ingresa este
+                n&uacute;mero asignado por el sistema. </p>
+            </td>
+          </tr>
+          <tr>
+            <td class="titletable">
+              <p class="SUBTITULO">Identificaci&oacute;n red </p>
+            </td>
+            <td>
+              <p class="PARRAFO">Campo obligatorio en el cual se indica el
+                c&oacute;digo de la red a trav&eacute;s de la
+                cual ingres&oacute;
+                la transacci&oacute;n.</p>
+            </td>
+          </tr>
+          <tr>
+            <td class="titletable">
+              <p class="SUBTITULO">N&uacute;mero comprobante </p>
+            </td>
+            <td>
+              <p class="PARRAFO">Se ingresa
+                el n&uacute;mero del voucher asociado a la transacci&oacute;n en
+                disputa.</p>
+            </td>
+          </tr>
+          <tr>
+            <td class="titletable">
+              <p class="SUBTITULO">Valor compra </p>
+            </td>
+            <td>
+              <p class="PARRAFO">Campo obligatorio de 14 d&iacute;gitos y dos
+                decimales en el cual se ingresa este valor
+                para realizar el ajuste. </p>
+            </td>
+          </tr>
+          <tr>
+            <td class="titletable">
+              <p class="SUBTITULO">Valor total </p>
+            </td>
+            <td>
+              <p class="PARRAFO">Campo obligatorio de 14 d&iacute;gitos y dos
+                decimales en el cual se ingresa este valor
+                para realizar el ajuste.</p>
+            </td>
+          </tr>
+          <tr>
+            <td class="titletable">
+              <p class="SUBTITULO">Valor de intercambio y % deescuento emisor
+              </p>
+            </td>
+            <td>
+              <p class="PARRAFO">Campo opcional de dos d&iacute;gitos y dos
+                decimales en el cual se ingresa este valor en
+                caso de que aplique. </p>
+            </td>
+          </tr>
+        </table>
 
-      <table>
-        <tr>
-          <td class="titletable">
-            <p class="SUBTITULO">N&uacute;mero tarjeta</p>
-          </td>
-          <td>
-            <p>Muestra el n&uacute;mero de la tarjeta asociado a la transacci&oacute;n en disputa.</p>
-          </td>
-        </tr>
-      </table>
-      <p class="TITLE"><img src="../img/INF_027B15.PNG"></p>
+        <p class="TITLE"><img src="../img/LINEA.GIF"></p>
 
-      <table>
-        <tr>
-          <td class="titletable">
-            <p class="SUBTITULO">Marca </p>
-          </td>
-          <td>
-            <p class="PARRAFO">Se
-              ingresa el c&oacute;digo de la <a href="NUH_033B.html">franquicia</a> a la que pertenece el
-              pl&aacute;stico mediante el que se realiz&oacute;
-              la transacci&oacute;n.</p>
-          </td>
-        </tr>
-        <tr>
-          <td class="titletable">
-            <p class="SUBTITULO">Transacci&oacute;n origen </p>
-          </td>
-          <td>
-            <p class="PARRAFO">Lista de valores que despliega
-              tanto el c&oacute;digo como el nombre asociado a cada tipo o clase de
-              transacci&oacute;n enviada o recibida dentro del proceso de intercambio,
-              con base en la codificaci&oacute;n determinada por las franquicias y
-              parametrizada mediante la opci&oacute;n <a href="NUH_027B.html">Or&iacute;genes
-                de transacciones</a> del grupo de Tablas reservadas del N&uacute;cleo.</p>
-          </td>
-        </tr>
-        <tr>
-          <td class="titletable">
-            <p class="SUBTITULO">Establecimiento</p>
-          </td>
-          <td>
-            <p class="PARRAFO">Campo opcional en el que se debe ingresar el c&oacute;digo del establecimiento
-              involucrado en la nora d&eacute;bito. </p>
-          </td>
-        </tr>
-        <tr>
-          <td class="titletable">
-            <p class="SUBTITULO">Fecha vencimiento </p>
-          </td>
-          <td>
-            <p class="PARRAFO">Campo
-              con formato YYYY-MM-DD en el que se ingresa la fecha en la cual se
-              vence el plazo definido de la nora d&eacute;bito. </p>
-          </td>
-        </tr>
-        <tr>
-          <td class="titletable">
-            <p class="SUBTITULO">Tipo de captura </p>
-          </td>
-          <td>
-            <p class="PARRAFO">Se&ntilde;ala
-              el nombre asociado al c&oacute;digo definido por la franquicia que identifica
-              la manera como ingres&oacute;, por medio de su red, la transacci&oacute;n
-              al sistema (POS, ATM&#8217;s, oficinas, etc.).</p>
-          </td>
-        </tr>
-        <tr>
-          <td class="titletable">
-            <p class="SUBTITULO">Fecha comprobante </p>
-          </td>
-          <td>
-            <p class="PARRAFO">Muestra
-              la fecha f&iacute;sica del comprobante de consumo o utilizaci&oacute;n
-              en formato YYYY-MM-DD.</p>
-          </td>
-        </tr>
-        <tr>
-          <td class="titletable">
-            <p class="SUBTITULO">Fecha contabilizaci&oacute;n</p>
-          </td>
-          <td>
-            <p class="PARRAFO">Corresponde
-              a la fecha de contabilizaci&oacute;n del movimiento, la cual regularmente,
-              corresponde a la fecha de proceso, sin embargo cualquier registro podr&iacute;a
-              llegar con una fecha diferente de contabilizaci&oacute;n, por tal raz&oacute;n
-              se muestra esta informaci&oacute;n en este campo.</p>
-          </td>
-        </tr>
-        <tr>
-          <td class="titletable">
-            <p class="SUBTITULO">N&uacute;mero autorizaci&oacute;n </p>
-          </td>
-          <td>
-            <p class="PARRAFO">En este campo se ingresa el N&uacute;mero de autorizaci&oacute;n dado por el sistema.</p>
-          </td>
-        </tr>
-        <tr>
-          <td class="titletable">
-            <p class="SUBTITULO">Bin receptor </p>
-          </td>
-          <td>
-            <p class="PARRAFO">Campo obligatorio en el cual se ingresa
-              el prefijo o bin centro de proceso de la entidad a trav&eacute;s de
-              la que ingresa la transacci&oacute;n.</p>
-          </td>
-        </tr>
-        <tr>
-          <td class="titletable">
-            <p class="SUBTITULO">Bin destino </p>
-          </td>
-          <td>
-            <p class="PARRAFO">Campo obligatorio en el cual se ingresa el prefijo o bin centro de proceso de la entidad
-              emisora del pl&aacute;stico.</p>
-          </td>
-        </tr>
-        <tr>
-          <td class="titletable">
-            <p class="SUBTITULO">Origen inmediato </p>
-          </td>
-          <td>
-            <p class="PARRAFO">Este campo se muestra por defecto como 'CO', indicando que proviene del origen de
-              Contracargos. </p>
-          </td>
-        </tr>
-        <tr>
-          <td class="titletable">
-            <p class="SUBTITULO">Origen</p>
-          </td>
-          <td>
-            <p class="PARRAFO">Campo
-              que despliega por defecto el c&oacute;digo '2', que indica que proviene de un Proceso interno.</p>
-          </td>
-        </tr>
-        <tr>
-          <td class="titletable">
-            <p class="SUBTITULO">N&uacute;mero boleta de ruta </p>
-          </td>
-          <td>
-            <p class="PARRAFO">Campo opcional en el cual se ingresa este n&uacute;mero asignado por el sistema. </p>
-          </td>
-        </tr>
-        <tr>
-          <td class="titletable">
-            <p class="SUBTITULO">Identificaci&oacute;n red </p>
-          </td>
-          <td>
-            <p class="PARRAFO">Campo obligatorio en el cual se indica el c&oacute;digo de la red a trav&eacute;s de la
-              cual ingres&oacute;
-              la transacci&oacute;n.</p>
-          </td>
-        </tr>
-        <tr>
-          <td class="titletable">
-            <p class="SUBTITULO">N&uacute;mero comprobante </p>
-          </td>
-          <td>
-            <p class="PARRAFO">Se ingresa
-              el n&uacute;mero del voucher asociado a la transacci&oacute;n en disputa.</p>
-          </td>
-        </tr>
-        <tr>
-          <td class="titletable">
-            <p class="SUBTITULO">Valor compra </p>
-          </td>
-          <td>
-            <p class="PARRAFO">Campo obligatorio de 14 d&iacute;gitos y dos decimales en el cual se ingresa este valor
-              para realizar el ajuste. </p>
-          </td>
-        </tr>
-        <tr>
-          <td class="titletable">
-            <p class="SUBTITULO">Valor total </p>
-          </td>
-          <td>
-            <p class="PARRAFO">Campo obligatorio de 14 d&iacute;gitos y dos decimales en el cual se ingresa este valor
-              para realizar el ajuste.</p>
-          </td>
-        </tr>
-        <tr>
-          <td class="titletable">
-            <p class="SUBTITULO">Valor de intercambio y % deescuento emisor </p>
-          </td>
-          <td>
-            <p class="PARRAFO">Campo opcional de dos d&iacute;gitos y dos decimales en el cual se ingresa este valor en
-              caso de que aplique. </p>
-          </td>
-        </tr>
-      </table>
+        <p><span class="SUBTITULO"><a name="asociadas"></a>Transacciones
+            asociadas: </span> Corresponde a las diversas
+          transacciones que pueden darse dentro del proceso de intercambio. El
+          formulario permite el ingreso de
+          transacciones, m&aacute;s no el borrado de aquellas recibidas o
+          enviadas por la otra entidad involucrada. Cuenta
+          con las opciones Detalle e Ingresar. </p>
+        <p class="TITLE"><img src="../img/INF_027B16.PNG" 782"></p>
 
-      
-      <p class="TITLE" ><img src="../img/LINEA.GIF"></p>
+        <p><span class="SUBTITULO">Ingresar:</span> La opci&oacute;n muestra un
+          formulario wizard con dos pasos:
+          Transacci&oacute;n asociada y Resumen.</p>
+        <p>El formulario Transacci&oacute;n asociada despliega los siguientes
+          campos: </p>
 
-      <p><span class="SUBTITULO"><a name="asociadas"></a>Transacciones asociadas: </span> Corresponde a las diversas
-        transacciones que pueden darse dentro del proceso de intercambio. El formulario permite el ingreso de
-        transacciones, m&aacute;s no el borrado de aquellas recibidas o enviadas por la otra entidad involucrada. Cuenta
-        con las opciones Detalle e Ingresar. </p>
-      <p class="TITLE"><img src="../img/INF_027B16.PNG" 782"></p>
+        <p class="TITLE"><img src="../img/INF_027B17.PNG" 763" height="337"></p>
+        <table width=545>
+          <tr>
+            <td class="titletable">
+              <p class="SUBTITULO">Transacci&oacute;n origen </p>
+            </td>
+            <td>
+              <p class="PARRAFO">Lista de valores que despliega
+                tanto el c&oacute;digo como el nombre asociado a cada tipo o
+                clase de
+                transacci&oacute;n enviada o recibida dentro del proceso de
+                intercambio,
+                con base en la codificaci&oacute;n determinada por las
+                franquicias y
+                parametrizada mediante la opci&oacute;n <a
+                  href="NUH_027B.html">Or&iacute;genes
+                  de transacciones</a> del grupo de Tablas reservadas del
+                N&uacute;cleo.</p>
+            </td>
+          </tr>
+          <tr>
+            <td class="titletable">
+              <p class="SUBTITULO">Motivo cobro </p>
+            </td>
+            <td>
+              <p>Contiene tanto el c&oacute;digo como el nombre asociado a las
+                transacciones de notas d&eacute;bito o
+                cr&eacute;dito generadas como resultado del proceso de
+                intercambio, y que ilustran la motivaci&oacute;n de
+                esos cargos o abonos interentidades.</p>
+            </td>
+          </tr>
+          <tr>
+            <td class="titletable">
+              <p class="SUBTITULO">Motivo devoluci&oacute;n </p>
+            </td>
+            <td>
+              <p class="PARRAFO">Lista de valores que permite ingresar tanto el
+                c&oacute;digo como la descripci&oacute;n o
+                nombre de la causa o motivo por la que la transacci&oacute;n fue
+                devuelta por la entidad emisora del
+                pl&aacute;stico asociado a la misma.</p>
+            </td>
+          </tr>
+          <tr>
+            <td class="titletable">
+              <p class="SUBTITULO">Bin fuente </p>
+            </td>
+            <td>
+              <p>Campos que ilustran tanto el prefijo o bin centro de proceso de
+                la entidad a trav&eacute;s de la que
+                ingresa la transacci&oacute;n como el de la entidad emisora del
+                pl&aacute;stico, lo que facilita la
+                interpretaci&oacute;n de la direcci&oacute;n de cada
+                transacci&oacute;n.</p>
+            </td>
+          </tr>
+          <tr>
+            <td class="titletable">
+              <p class="SUBTITULO">Bin destino </p>
+            </td>
+            <td>
+              <p class="PARRAFO">Campos que ilustran tanto el prefijo o bin
+                centro de proceso de la entidad a
+                trav&eacute;s de la que ingresa la transacci&oacute;n como el de
+                la entidad emisora del pl&aacute;stico,
+                lo que facilita la interpretaci&oacute;n de la direcci&oacute;n
+                de cada transacci&oacute;n.</p>
+            </td>
+          </tr>
+          <tr>
+            <td class="titletable">
+              <p class="SUBTITULO">Fecha canje </p>
+            </td>
+            <td>
+              <p>Despliega la fecha en formato YYYY-MM-DD en que ingres&oacute;
+                la transacci&oacute;n asociada al proceso
+                de intercambio a trav&eacute;s del canje.</p>
+            </td>
+          </tr>
+          <tr>
+            <td class="titletable">
+              <p class="SUBTITULO">Fecha proceso </p>
+            </td>
+            <td>
+              <p>Despliega la fecha en formato YYYY-MM-DD en que fue procesado
+                el movimiento que contiene la
+                transacci&oacute;n relacionada con el proceso de
+                intercambio.</p>
+            </td>
+          </tr>
+        </table>
 
+        <p><span class="SUBTITULO">Resumen:</span> Si el usuario invoca
+          la opci&oacute;n Resumen se despliega el siguiente formulario:
 
-      <p><span class="SUBTITULO">Ingresar:</span>  La opci&oacute;n muestra un formulario wizard con dos pasos:
-        Transacci&oacute;n asociada y Resumen.</p>
-      <p>El formulario Transacci&oacute;n asociada despliega los siguientes campos: </p>
+          </span></p>
 
-      <p class="TITLE"><img src="../img/INF_027B17.PNG" 763" height="337"></p>
-      <table width=545>
-        <tr>
-          <td class="titletable">
-            <p class="SUBTITULO">Transacci&oacute;n origen </p>
-          </td>
-          <td>
-            <p class="PARRAFO">Lista de valores que despliega
-              tanto el c&oacute;digo como el nombre asociado a cada tipo o clase de
-              transacci&oacute;n enviada o recibida dentro del proceso de intercambio,
-              con base en la codificaci&oacute;n determinada por las franquicias y
-              parametrizada mediante la opci&oacute;n <a href="NUH_027B.html">Or&iacute;genes
-                de transacciones</a> del grupo de Tablas reservadas del N&uacute;cleo.</p>
-          </td>
-        </tr>
-        <tr>
-          <td class="titletable">
-            <p class="SUBTITULO">Motivo cobro </p>
-          </td>
-          <td>
-            <p>Contiene tanto el c&oacute;digo como el nombre asociado a las transacciones de notas d&eacute;bito o
-              cr&eacute;dito generadas como resultado del proceso de intercambio, y que ilustran la motivaci&oacute;n de
-              esos cargos o abonos interentidades.</p>
-          </td>
-        </tr>
-        <tr>
-          <td class="titletable">
-            <p class="SUBTITULO">Motivo devoluci&oacute;n </p>
-          </td>
-          <td>
-            <p class="PARRAFO">Lista de valores que permite ingresar tanto el c&oacute;digo como la descripci&oacute;n o
-              nombre de la causa o motivo por la que la transacci&oacute;n fue devuelta por la entidad emisora del
-              pl&aacute;stico asociado a la misma.</p>
-          </td>
-        </tr>
-        <tr>
-          <td class="titletable">
-            <p class="SUBTITULO">Bin fuente </p>
-          </td>
-          <td>
-            <p>Campos que ilustran tanto el prefijo o bin centro de proceso de la entidad a trav&eacute;s de la que
-              ingresa la transacci&oacute;n como el de la entidad emisora del pl&aacute;stico, lo que facilita la
-              interpretaci&oacute;n de la direcci&oacute;n de cada transacci&oacute;n.</p>
-          </td>
-        </tr>
-        <tr>
-          <td class="titletable">
-            <p class="SUBTITULO">Bin destino </p>
-          </td>
-          <td>
-            <p class="PARRAFO">Campos que ilustran tanto el prefijo o bin centro de proceso de la entidad a
-              trav&eacute;s de la que ingresa la transacci&oacute;n como el de la entidad emisora del pl&aacute;stico,
-              lo que facilita la interpretaci&oacute;n de la direcci&oacute;n de cada transacci&oacute;n.</p>
-          </td>
-        </tr>
-        <tr>
-          <td class="titletable">
-            <p class="SUBTITULO">Fecha canje </p>
-          </td>
-          <td>
-            <p>Despliega la fecha en formato YYYY-MM-DD en que ingres&oacute; la transacci&oacute;n asociada al proceso
-              de intercambio a trav&eacute;s del canje.</p>
-          </td>
-        </tr>
-        <tr>
-          <td class="titletable">
-            <p class="SUBTITULO">Fecha proceso </p>
-          </td>
-          <td>
-            <p>Despliega la fecha en formato YYYY-MM-DD en que fue procesado el movimiento que contiene la
-              transacci&oacute;n relacionada con el proceso de intercambio.</p>
-          </td>
-        </tr>
-      </table>
+        <p class="TITLE"><img src="../img/INF_027B18.PNG"></p>
 
-
-      <p><span class="SUBTITULO">Resumen:</span>  Si el usuario invoca
-        la opci&oacute;n Resumen se despliega el siguiente formulario:<span>
-
-        </span></p>
-
-      <p class="TITLE"><img src="../img/INF_027B18.PNG" 763" height="353"></p>
-
-  </section>
-  <script src="../js/menu.js"></script>
-</body>
-<div id="footerContainer"></div>
-<script>
+      </section>
+      <script src="../js/menu.js"></script>
+    </body>
+    <div id="footerContainer"></div>
+    <script>
   fetch('footer.html')
     .then(response => response.text())
     .then(html => {
@@ -392,4 +445,4 @@
     });
 </script>
 
-</html>
+  </html>

@@ -1,130 +1,147 @@
 <!DOCTYPE html>
 <html lang="es">
 
-<head>
+  <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>BANKBU®</title>
     <link rel="stylesheet" href="../css/pages.css">
     <link rel="stylesheet" href="../css/style.css">
- <link rel="icon" href="../img/ACQUIRER-logo.JPG" type="image/x-icon">
-</head>
+    <link rel="icon" href="../img/ACQUIRER-logo.JPG" type="image/x-icon">
+  </head>
 
-<body>
+  <body>
     <header>
-        <img class="logo" src="../img/logoBankbu_.PNG" alt="Logo de Mi Empresa">
-        <div id="menuBtn">
-            <img class="TITLE"  src= "../img/menu.PNG" alt="Botón de Menú ">
-        </div>
+      <img class="logo" src="../img/logoBankbu_.PNG" alt="Logo de Mi Empresa">
+      <div id="menuBtn">
+        <img class="TITLE" src="../img/menu.PNG" alt="Botón de Menú ">
+      </div>
     </header>
-   <div id="menuContainer"></div>
+    <div id="menuContainer"></div>
     <script>
-      fetch('menu.html')
-        .then(response => response.text())
-        .then(html => {
-          document.getElementById('menuContainer').innerHTML = html;
-        });
-    </script>
+    fetch('menu.html')
+      .then(response => response.text())
+      .then(html => {
+        document.getElementById('menuContainer').innerHTML = html;
+      });
+  </script>
 
     <section>
-        <div> 
-            <table>
-              <tr> 
-                <td><div> 
-                    <p  class="TITLE">Par&aacute;metros de solicitudes - Negaci&oacute;n </p>
-                    </div></td>
-              </tr>
-            </table>
-            <p class="PARRAFO"><span class="SUBTITULO">Negaci&oacute;n:</span>  Formulario 
-              que permite parametrizar todos los motivos por los cuales ser&aacute;n posiblemente 
-              negadas las solicitudes.</p>
-            <p class="PARRAFO">El formulario contiene las opciones Actualizar, Eliminar, 
-              y Adicionar. Adicionalmente, cuenta con un filtro de b&uacute;squeda y un 
-              bot&oacute;n en la parte superior para volver al <a href="SOH_001B.html" >formulario 
-              principal</a>.</p>
-            <p class="TITLE"><img src="../img/SOF_001B19.PNG"593" height="490"></p>
-           
-            <p><span class="SUBTITULO">Filtro:</span>  Se pueden realizar consultas a trav&eacute;s 
-              de los siguientes campos: </p>
-            <p class="TITLE"><img src="../img/SOF_001B18.PNG"301" height="105"></p>
-            
-            <table>
-              <tr> 
-                <td  class="titletable" ><p class="SUBTITULO"><b><span 
-        >Motivos 
-                    de negaci&oacute;n</span></b></p></td>
-                <td><p  class="PARRAFO">Campo 
-                    num&eacute;rico de dos posiciones, en el cual se digita el c&oacute;digo 
-                    del motivo de negaci&oacute;n a buscar.</p></td>
-              </tr>
-              <tr> 
-                <td class="titletable"><p class="SUBTITULO"><b><span 
-        >Nombre</span></b></p></td>
-                <td><p  class="PARRAFO">Campo 
-                    alfanum&eacute;rico que permite la b&uacute;squeda de un motivo de negaci&oacute;n 
-                    existente. </p></td>
-              </tr>
-            </table>
-           
-            <p class="PARRAFO"><span class="SUBTITULO">Adicionar:</span>  Si el usuario invoca 
-              la opci&oacute;n Adicionar se despliega un formulario con los siguientes campos<span >:</span></p>
-            <p class="TITLE"><img src="../img/SOF_001B20.PNG"274" ></p>
-            <table>
-              <tr> 
-                <td class="titletable"><p class="SUBTITULO"><b>Motivos 
-                    de negaci&oacute;n</b></p></td>
-                <td><p class="PARRAFO">Campo 
-                    num&eacute;rico de dos d&iacute;gitos, obligatorio, que contiene el 
-                    c&oacute;digo del motivo de negaci&oacute;n.</p></td>
-              </tr>
-              <tr> 
-                <td  class="titletable" ><p class="SUBTITULO">Nombre</p></td>
-                <td><p class="PARRAFO">Campo 
-                    alfanum&eacute;rico de 60 posiciones, obligatorio, en el cual se registra 
-                    el nombre del motivo de negaci&oacute;n.</p>
-                </td>
-              </tr>
-              <tr> 
-                <td class="titletable"><p class="SUBTITULO"><b>Correspondencia</b></p></td>
-                <td><p class="PARRAFO">Campo 
-                    que permite marcar si el motivo de negaci&oacute;n amerita que se env&iacute;e 
-                    correspondencia informando al cliente.</p></td>
-              </tr>
-              <tr> 
-                <td  class="titletable" ><p class="SUBTITULO"><b>Descripci&oacute;n</b></p></td>
-                <td><p class="PARRAFO">Campo 
-                    alfanum&eacute;rico de 100 posiciones, en el cual se puede digitar una 
-                    descripci&oacute;n con la informaci&oacute;n m&aacute;s relevante del 
-                    motivo de negaci&oacute;n.</p></td>
-              </tr>
-            </table>
-           
-            <p class="PARRAFO"><span class="PARRAFO"><span class="SUBTITULO">Actualizar:</span>  
-              Si el usuario invoca la opci&oacute;n Actualizar se despliega un nuevo formulario 
-              en el cual los &uacute;nicos campos modificables son: Cupo autorizado, Permite 
-              forzar cupo por encima, y Permite forzar cupo por debajo.</span></p>
-            <p class="TITLE"><img src="../img/SOF_001B21.PNG"276" ></p>
-           
-            <p><b><b><span class="PARRAFO"><a href="SOH_001B.html" >Formulario 
-              principal</a> |</span></b></b><span class="PARRAFO"><b><b><span class="PARRAFO"><a href="SOH_001B1.html" >Filtros</a> 
-              |</span></b></b><a href="SOH_001B2.html" >Funcionarios</a> |<span > 
-              <b></b></span><a href="SOH_005B4.html"><b><b><span class="PARRAFO"></span></b></b> 
-              </a><a href="SOH_001B3.html" >Calificaci&oacute;n</a> |<span > 
-              <b></b></span><a href="SOH_005B4.html"><b><b><span class="PARRAFO"></span></b></b> 
-              </a><a href="SOH_001B5.html" >Variables cupo</a><b><b><span class="PARRAFO">|</span></b></b> 
-              <span class="PARRAFO"><a href="SOH_001B6.html" >Globo de localizaci&oacute;n</a></span></span></p>
-            
-        </section>
-    <script src="../js/menu.js"></script>
+      <div>
 
-    <div id="footerContainer"></div>
-<script>
+        <p class="TITLE">Par&aacute;metros de solicitudes - Negaci&oacute;n </p>
+
+        <p class="PARRAFO"><span class="SUBTITULO">Negaci&oacute;n:</span>
+          Formulario
+          que permite parametrizar todos los motivos por los cuales ser&aacute;n
+          posiblemente
+          negadas las solicitudes.</p>
+        <p class="PARRAFO">El formulario contiene las opciones Actualizar,
+          Eliminar,
+          y Adicionar. Adicionalmente, cuenta con un filtro de b&uacute;squeda y
+          un
+          bot&oacute;n en la parte superior para volver al <a
+            href="SOH_001B.html">formulario
+            principal</a>.</p>
+        <p class="TITLE"><img src="../img/SOF_001B19.PNG"></p>
+
+        <p><span class="SUBTITULO">Filtro:</span> Se pueden realizar consultas a
+          trav&eacute;s
+          de los siguientes campos: </p>
+        <p class="TITLE"><img src="../img/SOF_001B18.PNG"></p>
+
+        <table>
+          <tr>
+            <td class="titletable"><p class="SUBTITULO"><span>Motivos
+                  de negaci&oacute;n</span></p></td>
+            <td><p class="PARRAFO">Campo
+                num&eacute;rico de dos posiciones, en el cual se digita el
+                c&oacute;digo
+                del motivo de negaci&oacute;n a buscar.</p></td>
+          </tr>
+          <tr>
+            <td class="titletable"><p
+                class="SUBTITULO"><span>Nombre</span></p></td>
+            <td><p class="PARRAFO">Campo
+                alfanum&eacute;rico que permite la b&uacute;squeda de un motivo
+                de negaci&oacute;n
+                existente. </p></td>
+          </tr>
+        </table>
+
+        <p class="PARRAFO"><span class="SUBTITULO">Adicionar:</span> Si el
+          usuario invoca
+          la opci&oacute;n Adicionar se despliega un formulario con los
+          siguientes campos<span>:</span></p>
+        <p class="TITLE"><img src="../img/SOF_001B20.PNG"></p>
+        <table>
+          <tr>
+            <td class="titletable"><p class="SUBTITULO">Motivos
+                de negaci&oacute;n</p></td>
+            <td><p class="PARRAFO">Campo
+                num&eacute;rico de dos d&iacute;gitos, obligatorio, que contiene
+                el
+                c&oacute;digo del motivo de negaci&oacute;n.</p></td>
+          </tr>
+          <tr>
+            <td class="titletable"><p class="SUBTITULO">Nombre</p></td>
+            <td><p class="PARRAFO">Campo
+                alfanum&eacute;rico de 60 posiciones, obligatorio, en el cual se
+                registra
+                el nombre del motivo de negaci&oacute;n.</p>
+            </td>
+          </tr>
+          <tr>
+            <td class="titletable"><p class="SUBTITULO">Correspondencia</p></td>
+            <td><p class="PARRAFO">Campo
+                que permite marcar si el motivo de negaci&oacute;n amerita que
+                se env&iacute;e
+                correspondencia informando al cliente.</p></td>
+          </tr>
+          <tr>
+            <td class="titletable"><p
+                class="SUBTITULO">Descripci&oacute;n</p></td>
+            <td><p class="PARRAFO">Campo
+                alfanum&eacute;rico de 100 posiciones, en el cual se puede
+                digitar una
+                descripci&oacute;n con la informaci&oacute;n m&aacute;s
+                relevante del
+                motivo de negaci&oacute;n.</p></td>
+          </tr>
+        </table>
+
+        <p class="PARRAFO"><span class="PARRAFO"><span
+              class="SUBTITULO">Actualizar:</span>
+            Si el usuario invoca la opci&oacute;n Actualizar se despliega un
+            nuevo formulario
+            en el cual los &uacute;nicos campos modificables son: Cupo
+            autorizado, Permite
+            forzar cupo por encima, y Permite forzar cupo por debajo.</span></p>
+        <p class="TITLE"><img src="../img/SOF_001B21.PNG"></p>
+
+        <p><span class="PARRAFO"><a href="SOH_001B.html">Formulario
+              principal</a> |</span><span class="PARRAFO"><span
+              class="PARRAFO"><a href="SOH_001B1.html">Filtros</a>
+              |</span><a href="SOH_001B2.html">Funcionarios</a> |<span>
+            </span><a href="SOH_005B4.html"><span class="PARRAFO"></span>
+            </a><a href="SOH_001B3.html">Calificaci&oacute;n</a> |<span>
+            </span><a href="SOH_005B4.html"><span class="PARRAFO"></span>
+            </a><a href="SOH_001B5.html">Variables cupo</a><span
+              class="PARRAFO">|</span>
+            <span class="PARRAFO"><a href="SOH_001B6.html">Globo de
+                localizaci&oacute;n</a></span></span></p>
+
+      </section>
+      <script src="../js/menu.js"></script>
+
+      <div id="footerContainer"></div>
+      <script>
   fetch('footer.html')
     .then(response => response.text())
     .then(html => {
       document.getElementById('footerContainer').innerHTML = html;
     });
 </script>
-</body>
+    </body>
 
-</html>
+  </html>

@@ -1,81 +1,80 @@
 <!DOCTYPE html>
 <html lang="es">
 
-<head>
+  <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>BANKBU®</title>
     <link rel="stylesheet" href="../css/pages.css">
     <link rel="stylesheet" href="../css/style.css">
- <link rel="icon" href="../img/ACQUIRER-logo.JPG" type="image/x-icon">
-</head>
+    <link rel="icon" href="../img/ACQUIRER-logo.JPG" type="image/x-icon">
+  </head>
 
-<body>
+  <body>
     <header>
-        <img class="logo" src="../img/logoBankbu_.PNG" alt="Logo de Mi Empresa">
-        <div id="menuBtn">
-            <img class="TITLE"  src= "../img/menu.PNG" alt="Botón de Menú ">
-        </div>
+      <img class="logo" src="../img/logoBankbu_.PNG" alt="Logo de Mi Empresa">
+      <div id="menuBtn">
+        <img class="TITLE" src="../img/menu.PNG" alt="Botón de Menú ">
+      </div>
     </header>
-   <div id="menuContainer"></div>
+    <div id="menuContainer"></div>
     <script>
-      fetch('menu.html')
-        .then(response => response.text())
-        .then(html => {
-          document.getElementById('menuContainer').innerHTML = html;
-        });
-    </script>
+    fetch('menu.html')
+      .then(response => response.text())
+      .then(html => {
+        document.getElementById('menuContainer').innerHTML = html;
+      });
+  </script>
 
     <section>
-        <div> 
-            <table>
-              <tr> 
-                <td><div> 
-                    <p  class="TITLE">Novedad esquema de puntos</p>
-                  </div></td>
-              </tr>
-            </table>
-            <p  class="PARRAFO">En este formulario invocado desde la opci&oacute;n 
-              <a href="SCH_075B1.html" >ingreso de novedades</a>, 
-              (issuer) la entidad puede modificar o adicionar la informaci&oacute;n el <a href="MEH_006B.html" >esquema 
-              de puntos</a> al que pertenece una tarjeta
-            </p>
-            <p class="TITLE"><img src="../img/SCF_057E.PNG"374" height="93"></p>
-            
-            <p  class="TITLE">Descripci&oacute;n de campos</p>
-            <table>
-              <tr> 
-                <td class="titletable"><p class="SUBTITULO"><b><span 
-        > 
-                    Esquema de puntos</span></b></p></td>
-                <td><p  class="PARRAFO">Campo 
-                    obligatorio que posee lista de valores de la cual se puede seleccionar 
-                    el <a href="MEH_006B.html" >esquema de puntos</a> 
-                    que se desea asociar a la tarjeta.</p></td>
-              </tr>
-           
-              <tr> 
-                <td class="titletable"><p class="SUBTITULO"><b><span 
-        >Fecha 
-                    de radicaci&oacute;n</span></b></p></td>
-                <td><p  class="PARRAFO">En 
-                    este campo obligatorio se registra en formato YYYY-MM-DD la fecha en 
-                    la cual se solicit&oacute; el cambio de esquema de puntaje y que puede 
-                    ser una fecha anterior a la actual del sistema, facilitando el ingreso 
-                    de novedades de fechas anteriores. </p></td>
-              </tr>
-            </table>
-        </section>
-    <script src="../js/menu.js"></script>
+      <div>
 
-    <div id="footerContainer"></div>
-<script>
+        <p class="TITLE">Novedad esquema de puntos</p>
+
+        <p class="PARRAFO">En este formulario invocado desde la opci&oacute;n
+          <a href="SCH_075B1.html">ingreso de novedades</a>,
+          (issuer) la entidad puede modificar o adicionar la informaci&oacute;n
+          el <a href="MEH_006B.html">esquema
+            de puntos</a> al que pertenece una tarjeta
+        </p>
+        <p class="TITLE"><img src="../img/SCF_057E.PNG"></p>
+
+        <p class="TITLE">Descripci&oacute;n de campos</p>
+        <table>
+          <tr>
+            <td class="titletable"><p class="SUBTITULO"><span>
+                  Esquema de puntos</span></p></td>
+            <td><p class="PARRAFO">Campo
+                obligatorio que posee lista de valores de la cual se puede
+                seleccionar
+                el <a href="MEH_006B.html">esquema de puntos</a>
+                que se desea asociar a la tarjeta.</p></td>
+          </tr>
+
+          <tr>
+            <td class="titletable"><p class="SUBTITULO"><span>Fecha
+                  de radicaci&oacute;n</span></p></td>
+            <td><p class="PARRAFO">En
+                este campo obligatorio se registra en formato YYYY-MM-DD la
+                fecha en
+                la cual se solicit&oacute; el cambio de esquema de puntaje y que
+                puede
+                ser una fecha anterior a la actual del sistema, facilitando el
+                ingreso
+                de novedades de fechas anteriores. </p></td>
+          </tr>
+        </table>
+      </section>
+      <script src="../js/menu.js"></script>
+
+      <div id="footerContainer"></div>
+      <script>
   fetch('footer.html')
     .then(response => response.text())
     .then(html => {
       document.getElementById('footerContainer').innerHTML = html;
     });
 </script>
-</body>
+    </body>
 
-</html>
+  </html>

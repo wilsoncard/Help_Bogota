@@ -1,278 +1,324 @@
 <!DOCTYPE html>
 <html lang="es">
 
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>BANKBU®</title>
-  <link rel="stylesheet" href="../css/pages.css">
-  <link rel="stylesheet" href="../css/style.css">
-  <link rel="icon" href="../img/ACQUIRER-logo.JPG" type="image/x-icon">
-</head>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BANKBU®</title>
+    <link rel="stylesheet" href="../css/pages.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="icon" href="../img/ACQUIRER-logo.JPG" type="image/x-icon">
+  </head>
 
-<body>
-  <header>
-    <img class="logo" src="../img/logoBankbu_.PNG" alt="Logo de Mi Empresa">
-    <div id="menuBtn">
-      <img class="TITLE" src="../img/menu.PNG" alt="Botón de Menú ">
-    </div>
-  </header>
-  <div id="menuContainer"></div>
+  <body>
+    <header>
+      <img class="logo" src="../img/logoBankbu_.PNG" alt="Logo de Mi Empresa">
+      <div id="menuBtn">
+        <img class="TITLE" src="../img/menu.PNG" alt="Botón de Menú ">
+      </div>
+    </header>
+    <div id="menuContainer"></div>
     <script>
-      fetch('menu.html')
-        .then(response => response.text())
-        .then(html => {
-          document.getElementById('menuContainer').innerHTML = html;
-        });
-    </script>
+    fetch('menu.html')
+      .then(response => response.text())
+      .then(html => {
+        document.getElementById('menuContainer').innerHTML = html;
+      });
+  </script>
 
-  <section>
-    <div>
-      <table>
-        <tr>
-          <td>
-            <div>
-              <p class="TITLE">Definici&oacute;n de entidades </p>
-            </div>
-          </td>
-        </tr>
-      </table>
-      <p>Mediante esta funci&oacute;n se habilita la consulta y/o mantenimiento de la tabla en la cual se almacena toda
-        la informaci&oacute;n relacionada con el licenciamiento corporativo de la aplicaci&oacute;n
-        Administraci&oacute;n de Tarjetas de Cr&eacute;dito OpenCard&reg;.</p>
-      <p>El formulario contiene la opcion <a href="#Administracion" >Configuración sistema</a>.
-        Adicionalmente cuenta con un filtro de b&uacute;squeda.</p>
-      <p class="TITLE"><img src="../img/NUF_076E.PNG"></p>
-      <p class="PARRAFO"><strong class="TITLE">Filtro: Se pueden realizar consultas a trav&eacute;s
-        de las siguientes opciones:</p>
+    <section>
+      <div>
 
+        <p class="TITLE">Definici&oacute;n de entidades </p>
 
-      <p class="TITLE"><img src="../img/NUF_076E1.PNG"></p>
+        <p>Mediante esta funci&oacute;n se habilita la consulta y/o
+          mantenimiento de la tabla en la cual se almacena toda
+          la informaci&oacute;n relacionada con el licenciamiento corporativo de
+          la aplicaci&oacute;n
+          Administraci&oacute;n de Tarjetas de Cr&eacute;dito OpenCard&reg;.</p>
+        <p>El formulario contiene la opcion <a
+            href="#Administracion">Configuración sistema</a>.
+          Adicionalmente cuenta con un filtro de b&uacute;squeda.</p>
+        <p class="TITLE"><img src="../img/NUF_076E.PNG"></p>
+        <p class="PARRAFO"><strong class="TITLE">Filtro: Se pueden realizar
+            consultas a trav&eacute;s
+            de las siguientes opciones:</p>
 
+          <p class="TITLE"><img src="../img/NUF_076E1.PNG"></p>
 
-      <table>
-        <tr>
-          <td class="titletable">
-            <p class="SUBTITULO"><span >C&oacute;digo de entidad </span></p>
-          </td>
-          <td>
-            <p class="PARRAFO">Campo en el que se registra el c&oacute;digo y nombre de cada corporaci&oacute;n o
-              entidad financiera licenciada</p>
-          </td>
-        </tr>
-        <tr>
-          <td class="titletable">
-            <p class="SUBTITULO"><b><span><span >Nombre de la entidad </span></span></b></p>
-          </td>
-          <td>
-            <p class="PARRAFO">Campo alfanum&eacute;rico, en el que se registra el nombre con el que se encuentra
-              radicada la corporaci&oacute;n o entidad financiera licenciada, ante la C&aacute;mara de Comercio o quien
-              haga sus veces</p>
-          </td>
-        </tr>
-      </table>
+          <table>
+            <tr>
+              <td class="titletable">
+                <p class="SUBTITULO"><span>C&oacute;digo de entidad </span></p>
+              </td>
+              <td>
+                <p class="PARRAFO">Campo en el que se registra el c&oacute;digo
+                  y nombre de cada corporaci&oacute;n o
+                  entidad financiera licenciada</p>
+              </td>
+            </tr>
+            <tr>
+              <td class="titletable">
+                <p class="SUBTITULO"><span>Nombre de la entidad
+                  </span></span></p>
+            </td>
+            <td>
+              <p class="PARRAFO">Campo alfanum&eacute;rico, en el que se
+                registra el nombre con el que se encuentra
+                radicada la corporaci&oacute;n o entidad financiera licenciada,
+                ante la C&aacute;mara de Comercio o quien
+                haga sus veces</p>
+            </td>
+          </tr>
+        </table>
 
-      <p class="PARRAFO"><strong class="TITLE">Actualizar: Si el usuario invoca la opci&oacute;n Actualizar se
-        despliega un nuevo formulario
-        en el cual todos los campos son modificables a excepci&oacute;n de la Fecha sistema.</p>
-      <p class="TITLE"><img src="../img/NUF_076E2.PNG"></p>
-      <p class="TITLE">Informaci&oacute;n basica:</p>
-      <table>
-        <tr>
-          <td class="titletable">
-            <p class="SUBTITULO">C&oacute;digo de la entidad </p>
-          </td>
-          <td>
-            <p class="PARRAFO">Campo obligatorios en los que se registra el c&oacute;digo y nombre de cada
-              corporaci&oacute;n o entidad financiera licenciada.</p>
-          </td>
-        </tr>
-        <tr>
-          <td class="titletable">
-            <p class="SUBTITULO">Nombre de la entidad </p>
-          </td>
-          <td>
-            <p class="PARRAFO">Campo alfanum&eacute;rico de 20 posiciones, obligatorio, en el que se registra el nombre
-              con el que se encuentra radicada la corporaci&oacute;n o entidad financiera licenciada, ante la
-              C&aacute;mara de Comercio o quien haga sus veces.</p>
-          </td>
-        </tr>
-        <tr>
-          <td class="titletable">
-            <p class="SUBTITULO">Nombre comercial </p>
-          </td>
-          <td>
-            <p class="PARRAFO">Campo alfanum&eacute;rico de 20 posiciones, obligatorio, en el que se registra el nombre
-              comercial con el que se encuentra radicada la corporaci&oacute;n o entidad financiera licenciada, ante la
-              C&aacute;mara de Comercio o quien haga sus veces.</p>
-          </td>
-        </tr>
-        <tr>
-          <td class="titletable">
-            <p class="SUBTITULO">Sucursal centralizada </p>
-          </td>
-          <td>
-            <p class="PARRAFO">Campo que contiene lista de valores poblada en la opci&oacute;n <a
-                  href="NUH_020B.html">Estructura org&aacute;nica</a> de las Tablas de la entidad financiera, de la
-              que puede seleccionarse el c&oacute;digo de la dependencia centralizadora tanto del movimiento operativo
-              como contable de cada corporaci&oacute;n o entidad financiera licenciada.</p>
-          </td>
-        </tr>
-        <tr>
-          <td class="titletable">
-            <p class="SUBTITULO">Entidad financiera </p>
-          </td>
-          <td>
-            <p class="PARRAFO">Campo alfanum&eacute;rico de 3 posiciones que contiene los c&oacute;digos
-              correspondientes a cada entidad financiera de acuerdo con los valores asignados en la opci&oacute;n <a
-                  href="NUH_019B.html">Entidades Financieras</a>; en el campo de salida ubicado a la derecha
-              aparece el nombre de la entidad asociado al c&oacute;digo seleccionado.</p>
-          </td>
-        </tr>
-        <tr>
-          <td class="titletable">
-            <p class="SUBTITULO">Moneda</p>
-          </td>
-          <td>
-            <p class="PARRAFO">En este campo se selecciona de la lista de valores el c&oacute;digo de la <a
-                  href="NUH_005B.html">moneda</a> oficial o defecto para cada corporaci&oacute;n o entidad
-              financiera licenciada.</p>
-          </td>
-        </tr>
-        <tr>
-          <td class="titletable">
-            <p class="SUBTITULO">Persona contacto </p>
-          </td>
-          <td>
-            <p class="PARRAFO">Campo alfanum&eacute;rico de 30 d&iacute;gitos, obligatorio, contiene el nombre de la
-              persona responsable o indicada del &aacute;rea de producci&oacute;n de Tarjeta de cr&eacute;dito o
-              Cr&eacute;dito rotativo, a quien, en caso de ser necesario, se puede contactar en primera instancia.</p>
-          </td>
-        </tr>
-        <tr>
-          <td class="titletable">
-            <p class="SUBTITULO">Correo contacto </p>
-          </td>
-          <td>
-            <p class="PARRAFO">En este campo alfanum&eacute;rico de 30 d&iacute;gitos, no obligatorio, se registra la
-              direcci&oacute;n de correo electr&oacute;nico del responsable del &aacute;rea de producci&oacute;n
-              (contacto).</p>
-          </td>
-        </tr>
+        <p class="PARRAFO"><strong class="TITLE">Actualizar: Si el usuario
+            invoca la opci&oacute;n Actualizar se
+            despliega un nuevo formulario
+            en el cual todos los campos son modificables a excepci&oacute;n de
+            la Fecha sistema.</p>
+          <p class="TITLE"><img src="../img/NUF_076E2.PNG"></p>
+          <p class="TITLE">Informaci&oacute;n basica:</p>
+          <table>
+            <tr>
+              <td class="titletable">
+                <p class="SUBTITULO">C&oacute;digo de la entidad </p>
+              </td>
+              <td>
+                <p class="PARRAFO">Campo obligatorios en los que se registra el
+                  c&oacute;digo y nombre de cada
+                  corporaci&oacute;n o entidad financiera licenciada.</p>
+              </td>
+            </tr>
+            <tr>
+              <td class="titletable">
+                <p class="SUBTITULO">Nombre de la entidad </p>
+              </td>
+              <td>
+                <p class="PARRAFO">Campo alfanum&eacute;rico de 20 posiciones,
+                  obligatorio, en el que se registra el nombre
+                  con el que se encuentra radicada la corporaci&oacute;n o
+                  entidad financiera licenciada, ante la
+                  C&aacute;mara de Comercio o quien haga sus veces.</p>
+              </td>
+            </tr>
+            <tr>
+              <td class="titletable">
+                <p class="SUBTITULO">Nombre comercial </p>
+              </td>
+              <td>
+                <p class="PARRAFO">Campo alfanum&eacute;rico de 20 posiciones,
+                  obligatorio, en el que se registra el nombre
+                  comercial con el que se encuentra radicada la
+                  corporaci&oacute;n o entidad financiera licenciada, ante la
+                  C&aacute;mara de Comercio o quien haga sus veces.</p>
+              </td>
+            </tr>
+            <tr>
+              <td class="titletable">
+                <p class="SUBTITULO">Sucursal centralizada </p>
+              </td>
+              <td>
+                <p class="PARRAFO">Campo que contiene lista de valores poblada
+                  en la opci&oacute;n <a
+                    href="NUH_020B.html">Estructura org&aacute;nica</a> de las
+                  Tablas de la entidad financiera, de la
+                  que puede seleccionarse el c&oacute;digo de la dependencia
+                  centralizadora tanto del movimiento operativo
+                  como contable de cada corporaci&oacute;n o entidad financiera
+                  licenciada.</p>
+              </td>
+            </tr>
+            <tr>
+              <td class="titletable">
+                <p class="SUBTITULO">Entidad financiera </p>
+              </td>
+              <td>
+                <p class="PARRAFO">Campo alfanum&eacute;rico de 3 posiciones que
+                  contiene los c&oacute;digos
+                  correspondientes a cada entidad financiera de acuerdo con los
+                  valores asignados en la opci&oacute;n <a
+                    href="NUH_019B.html">Entidades Financieras</a>; en el campo
+                  de salida ubicado a la derecha
+                  aparece el nombre de la entidad asociado al c&oacute;digo
+                  seleccionado.</p>
+              </td>
+            </tr>
+            <tr>
+              <td class="titletable">
+                <p class="SUBTITULO">Moneda</p>
+              </td>
+              <td>
+                <p class="PARRAFO">En este campo se selecciona de la lista de
+                  valores el c&oacute;digo de la <a
+                    href="NUH_005B.html">moneda</a> oficial o defecto para cada
+                  corporaci&oacute;n o entidad
+                  financiera licenciada.</p>
+              </td>
+            </tr>
+            <tr>
+              <td class="titletable">
+                <p class="SUBTITULO">Persona contacto </p>
+              </td>
+              <td>
+                <p class="PARRAFO">Campo alfanum&eacute;rico de 30
+                  d&iacute;gitos, obligatorio, contiene el nombre de la
+                  persona responsable o indicada del &aacute;rea de
+                  producci&oacute;n de Tarjeta de cr&eacute;dito o
+                  Cr&eacute;dito rotativo, a quien, en caso de ser necesario, se
+                  puede contactar en primera instancia.</p>
+              </td>
+            </tr>
+            <tr>
+              <td class="titletable">
+                <p class="SUBTITULO">Correo contacto </p>
+              </td>
+              <td>
+                <p class="PARRAFO">En este campo alfanum&eacute;rico de 30
+                  d&iacute;gitos, no obligatorio, se registra la
+                  direcci&oacute;n de correo electr&oacute;nico del responsable
+                  del &aacute;rea de producci&oacute;n
+                  (contacto).</p>
+              </td>
+            </tr>
 
-        <tr>
-          <td class="titletable">
-            <p class="SUBTITULO">Direcci&oacute;n contacto </p>
-          </td>
-          <td>
-            <p class="PARRAFO">Campo alfanum&eacute;rico de 40 d&iacute;gitos, no obligatorio, contiene la
-              direcci&oacute;n para correspondencia con el &aacute;rea de producci&oacute;n o la sede de la
-              corporaci&oacute;n o entidad financiera.</p>
-          </td>
-        </tr>
+            <tr>
+              <td class="titletable">
+                <p class="SUBTITULO">Direcci&oacute;n contacto </p>
+              </td>
+              <td>
+                <p class="PARRAFO">Campo alfanum&eacute;rico de 40
+                  d&iacute;gitos, no obligatorio, contiene la
+                  direcci&oacute;n para correspondencia con el &aacute;rea de
+                  producci&oacute;n o la sede de la
+                  corporaci&oacute;n o entidad financiera.</p>
+              </td>
+            </tr>
 
-        <tr>
-          <td class="titletable">
-            <p class="SUBTITULO">Telefono contacto </p>
-          </td>
-          <td>
-            <p class="PARRAFO">Campo alfanum&eacute;rico de 20 d&iacute;gitos, no obligatorio, contiene el n&uacute;mero
-              telef&oacute;nico del &aacute;rea de producci&oacute;n o sede de la entidad financiera.</p>
-          </td>
-        </tr>
+            <tr>
+              <td class="titletable">
+                <p class="SUBTITULO">Telefono contacto </p>
+              </td>
+              <td>
+                <p class="PARRAFO">Campo alfanum&eacute;rico de 20
+                  d&iacute;gitos, no obligatorio, contiene el n&uacute;mero
+                  telef&oacute;nico del &aacute;rea de producci&oacute;n o sede
+                  de la entidad financiera.</p>
+              </td>
+            </tr>
 
-        <tr>
-          <td class="titletable">
-            <p class="SUBTITULO">Ubicaci&oacute;n</p>
-          </td>
-          <td>
-            <p class="PARRAFO">Campo que posee lista de valores poblada en la opci&oacute;n <a
-                  href="NUH_003B.html#BL_MUNICIPIOS">Informaci&oacute;n geopol&iacute;tica</a> del N&uacute;cleo,
-              de la que puede seleccionarse o no, la ciudad (municipio) donde de ubica el &aacute;rea de
-              producci&oacute;n o sede de la corporaci&oacute;n o entidad financiera.</p>
-          </td>
-        </tr>
-      </table>
-      <p class="TITLE">Informaci&oacute;n de licencia:</p>
-      <table>
-        <tr>
-          <td class="titletable">
-            <p class="SUBTITULO">Corporaci&oacute;n</p>
-          </td>
-          <td>
-            <p class="PARRAFO">Campo sobre el que se marca si la entidad financiera descrita en el bloque de
-              Informaci&oacute;n general corresponde a la corporaci&oacute;n o no.</p>
-          </td>
-        </tr>
+            <tr>
+              <td class="titletable">
+                <p class="SUBTITULO">Ubicaci&oacute;n</p>
+              </td>
+              <td>
+                <p class="PARRAFO">Campo que posee lista de valores poblada en
+                  la opci&oacute;n <a
+                    href="NUH_003B.html#BL_MUNICIPIOS">Informaci&oacute;n
+                    geopol&iacute;tica</a> del N&uacute;cleo,
+                  de la que puede seleccionarse o no, la ciudad (municipio)
+                  donde de ubica el &aacute;rea de
+                  producci&oacute;n o sede de la corporaci&oacute;n o entidad
+                  financiera.</p>
+              </td>
+            </tr>
+          </table>
+          <p class="TITLE">Informaci&oacute;n de licencia:</p>
+          <table>
+            <tr>
+              <td class="titletable">
+                <p class="SUBTITULO">Corporaci&oacute;n</p>
+              </td>
+              <td>
+                <p class="PARRAFO">Campo sobre el que se marca si la entidad
+                  financiera descrita en el bloque de
+                  Informaci&oacute;n general corresponde a la corporaci&oacute;n
+                  o no.</p>
+              </td>
+            </tr>
 
-        <tr>
-          <td class="titletable">
-            <p class="SUBTITULO">C&oacute;digo interno </p>
-          </td>
-          <td>
-            <p class="PARRAFO">En este campo num&eacute;rico de 2 d&iacute;gitos, no obligatorio, de uso exclusivo para
-              OpenCard, se registra el c&oacute;digo asignado a la corporaci&oacute;n.</p>
-          </td>
-        </tr>
+            <tr>
+              <td class="titletable">
+                <p class="SUBTITULO">C&oacute;digo interno </p>
+              </td>
+              <td>
+                <p class="PARRAFO">En este campo num&eacute;rico de 2
+                  d&iacute;gitos, no obligatorio, de uso exclusivo para
+                  OpenCard, se registra el c&oacute;digo asignado a la
+                  corporaci&oacute;n.</p>
+              </td>
+            </tr>
 
-        <tr>
-          <td class="titletable">
-            <p class="SUBTITULO">Empresa depende de </p>
-          </td>
-          <td>
-            <p class="PARRAFO">Campo que contiene lista de valores poblada a trav&eacute;s de esta misma pantalla de la
-              que se selecciona o no la corporaci&oacute;n de la cual depende la entidad financiera.</p>
-          </td>
-        </tr>
-      </table>
-      <p class="TITLE">Otra informaci&oacute;n:</p>
-      <table>
-        <tr>
-          <td class="titletable">
-            <p class="SUBTITULO">Fecha sistema </p>
-          </td>
-          <td>
-            <p>Campo en formato fecha DD/MM/YYYY que corresponde a la fecha vigente para la ejecuci&oacute;n de
-              procesos.</p>
-          </td>
-        </tr>
+            <tr>
+              <td class="titletable">
+                <p class="SUBTITULO">Empresa depende de </p>
+              </td>
+              <td>
+                <p class="PARRAFO">Campo que contiene lista de valores poblada a
+                  trav&eacute;s de esta misma pantalla de la
+                  que se selecciona o no la corporaci&oacute;n de la cual
+                  depende la entidad financiera.</p>
+              </td>
+            </tr>
+          </table>
+          <p class="TITLE">Otra informaci&oacute;n:</p>
+          <table>
+            <tr>
+              <td class="titletable">
+                <p class="SUBTITULO">Fecha sistema </p>
+              </td>
+              <td>
+                <p>Campo en formato fecha DD/MM/YYYY que corresponde a la fecha
+                  vigente para la ejecuci&oacute;n de
+                  procesos.</p>
+              </td>
+            </tr>
 
-        <tr>
-          <td class="titletable">
-            <p class="SUBTITULO">Sabados</p>
-          </td>
-          <td>
-            <p class="PARRAFO">Campo con lista de valores de la que se selecciona si para la entidad el d&iacute;a
-              s&aacute;bado es Laborable o No laborable.</p>
-          </td>
-        </tr>
+            <tr>
+              <td class="titletable">
+                <p class="SUBTITULO">Sabados</p>
+              </td>
+              <td>
+                <p class="PARRAFO">Campo con lista de valores de la que se
+                  selecciona si para la entidad el d&iacute;a
+                  s&aacute;bado es Laborable o No laborable.</p>
+              </td>
+            </tr>
 
-        <tr>
-          <td class="titletable">
-            <p class="SUBTITULO">Domingos</p>
-          </td>
-          <td>
-            <p class="PARRAFO">En este campo se selecciona de la lista de valores, si para la entidad el d&iacute;a
-              domingo es Laborable o No laborable.</p>
-          </td>
-        </tr>
-      </table>
-      <p class="PARRAFO"><span class="SUBTITULO">Adicionar:</span>  Si el usuario invoca la opci&oacute;n Adicionar se
-        despliega un formulario con los siguientes campos<span>:</span> 
-      </p>
-      <p class="TITLE"><img src="../img/NUF_076E3.PNG" height="551"></p>
+            <tr>
+              <td class="titletable">
+                <p class="SUBTITULO">Domingos</p>
+              </td>
+              <td>
+                <p class="PARRAFO">En este campo se selecciona de la lista de
+                  valores, si para la entidad el d&iacute;a
+                  domingo es Laborable o No laborable.</p>
+              </td>
+            </tr>
+          </table>
+          <p class="PARRAFO"><span class="SUBTITULO">Adicionar:</span> Si el
+            usuario invoca la opci&oacute;n Adicionar se
+            despliega un formulario con los siguientes campos:</span>
+        </p>
+        <p class="TITLE"><img src="../img/NUF_076E3.PNG" height="551"></p>
 
-      <p><span class="SUBTITULO">Detalle:</span>  Si el usuario invoca la opci&oacute;n Detalle se despliega el siguiente
-        formulario: <span>
+        <p><span class="SUBTITULO">Detalle:</span> Si el usuario invoca la
+          opci&oacute;n Detalle se despliega el siguiente
+          formulario:
 
         </span></p>
       <p class="TITLE"><img src="../img/NUF_076E4.PNG" 768" height="411"></p>
 
-      <p><span class="TITLE"><a name="Administracion"></a>Configuraci&oacute;n sistema </span></p>
-      <p class="PARRAFO">A trav&eacute;s de esta pantalla se permite la consulta y mantenimiento de la tabla en la que
-        se registran las caracter&iacute;sticas, b&aacute;sicamente t&eacute;cnicas, relacionadas con la manera en que
-        se ha conformado el sistema operativo sobre el que funciona la base de datos.</p>
-      <p class="PARRAFO">El formulario contiene la opcion <a href="#Administracion" >Adicionar</a>.</p>
+      <p><span class="TITLE"><a name="Administracion"></a>Configuraci&oacute;n
+          sistema </span></p>
+      <p class="PARRAFO">A trav&eacute;s de esta pantalla se permite la consulta
+        y mantenimiento de la tabla en la que
+        se registran las caracter&iacute;sticas, b&aacute;sicamente
+        t&eacute;cnicas, relacionadas con la manera en que
+        se ha conformado el sistema operativo sobre el que funciona la base de
+        datos.</p>
+      <p class="PARRAFO">El formulario contiene la opcion <a
+          href="#Administracion">Adicionar</a>.</p>
       <p class="TITLE"><img src="../img/NUF_076E5.PNG" 557" height="776"></p>
 
       <table>
@@ -281,8 +327,10 @@
             <p class="SUBTITULO">Sistema operativo</p>
           </td>
           <td>
-            <p class="PARRAFO">Campo que posee lista de valores adjunta de la cual es posible seleccionar entre
-              Win.N.T, Unix u Otro, el sistema operativo sobre el que se interact&uacute;a con la base
+            <p class="PARRAFO">Campo que posee lista de valores adjunta de la
+              cual es posible seleccionar entre
+              Win.N.T, Unix u Otro, el sistema operativo sobre el que se
+              interact&uacute;a con la base
               de datos correspondiente.</p>
           </td>
         </tr>
@@ -291,8 +339,10 @@
             <p class="SUBTITULO">Comando export</p>
           </td>
           <td>
-            <p class="PARRAFO">En este campo se almacena el comando del motor de la base de datos utilizado para
-              efectuar la funcionalidad que genera ,a manera de salidas del sistema, archivos tipo exports.</p>
+            <p class="PARRAFO">En este campo se almacena el comando del motor de
+              la base de datos utilizado para
+              efectuar la funcionalidad que genera ,a manera de salidas del
+              sistema, archivos tipo exports.</p>
           </td>
         </tr>
         <tr>
@@ -300,7 +350,8 @@
             <p class="SUBTITULO">Comando import</p>
           </td>
           <td>
-            <p class="PARRAFO">Campo en el que se almacena el comando del motor de la base utilizado para efectuar la
+            <p class="PARRAFO">Campo en el que se almacena el comando del motor
+              de la base utilizado para efectuar la
               funcionalidad que integra los archivos tipo imports.</p>
           </td>
         </tr>
@@ -310,8 +361,10 @@
             <p class="SUBTITULO">Instancia base de datos</p>
           </td>
           <td>
-            <p class="PARRAFO">Este campo identifica el SID (System Identification Database) de la base de datos
-              asociada o utilizada por el Sistema OpenCard&reg; cada vez que un usuario se conecta por medio del mismo.
+            <p class="PARRAFO">Este campo identifica el SID (System
+              Identification Database) de la base de datos
+              asociada o utilizada por el Sistema OpenCard&reg; cada vez que un
+              usuario se conecta por medio del mismo.
             </p>
           </td>
         </tr>
@@ -320,8 +373,10 @@
             <p class="SUBTITULO">Tablespace tablas backups</p>
           </td>
           <td>
-            <p class="PARRAFO">Campo en el que se registra el nombre que identifica el espacio reservado en la base de
-              datos, en el que se almacenan &lsquo;transitoriamente&rsquo; los backups hasta que dicho proceso es
+            <p class="PARRAFO">Campo en el que se registra el nombre que
+              identifica el espacio reservado en la base de
+              datos, en el que se almacenan &lsquo;transitoriamente&rsquo; los
+              backups hasta que dicho proceso es
               ejecutado nuevamente.</p>
           </td>
         </tr>
@@ -330,9 +385,12 @@
             <p class="SUBTITULO">Tablespace &iacute;ndices backups</p>
           </td>
           <td>
-            <p class="PARRAFO">En este campo se registra el nombre que identifica el espacio reservado en la base de
-              datos, en el que se ejecuta de manera l&oacute;gica esta funcionalidad de la herramienta del motor de la
-              base de datos, tendiente a optimizar la restauraci&oacute;n de la informaci&oacute;n contenida en los
+            <p class="PARRAFO">En este campo se registra el nombre que
+              identifica el espacio reservado en la base de
+              datos, en el que se ejecuta de manera l&oacute;gica esta
+              funcionalidad de la herramienta del motor de la
+              base de datos, tendiente a optimizar la restauraci&oacute;n de la
+              informaci&oacute;n contenida en los
               backups.</p>
           </td>
         </tr>
@@ -342,8 +400,10 @@
             <p class="SUBTITULO">URL</p>
           </td>
           <td>
-            <p class="PARRAFO">Campo en el que se registra la ubicaci&oacute;n y ruta para acceder v&iacute;a internet a
-              los archivos almacenados en el servidor de la Base de Datos de la entidad.</p>
+            <p class="PARRAFO">Campo en el que se registra la ubicaci&oacute;n y
+              ruta para acceder v&iacute;a internet a
+              los archivos almacenados en el servidor de la Base de Datos de la
+              entidad.</p>
           </td>
         </tr>
         <tr>
@@ -351,7 +411,8 @@
             <p class="SUBTITULO">Puerto</p>
           </td>
           <td>
-            <p class="PARRAFO">En este campo se registra de ser necesario, la direcci&oacute;n o nombre del puerto a
+            <p class="PARRAFO">En este campo se registra de ser necesario, la
+              direcci&oacute;n o nombre del puerto a
               utilizar para la comunicaci&oacute;n.</p>
           </td>
         </tr>
@@ -360,7 +421,8 @@
             <p class="SUBTITULO">Servidor reportes</p>
           </td>
           <td>
-            <p class="PARRAFO">Campo que identifica el nombre del servidor al cual se debe conectar para la
+            <p class="PARRAFO">Campo que identifica el nombre del servidor al
+              cual se debe conectar para la
               generaci&oacute;n de los reportes.</p>
           </td>
         </tr>
@@ -370,7 +432,8 @@
             <p class="SUBTITULO">Formato reportes</p>
           </td>
           <td>
-            <p class="PARRAFO">Este campo especifica mediante las siglas de extensi&oacute;n de archivo el formato a
+            <p class="PARRAFO">Este campo especifica mediante las siglas de
+              extensi&oacute;n de archivo el formato a
               utilizar para los reportes generados.</p>
           </td>
         </tr>
@@ -379,7 +442,8 @@
             <p class="SUBTITULO">Propietario base</p>
           </td>
           <td>
-            <p class="PARRAFO">Campo que registra el nombre que identifica al propietario del esquema de la base de
+            <p class="PARRAFO">Campo que registra el nombre que identifica al
+              propietario del esquema de la base de
               datos a la que pertenecen las tablas seleccionadas.</p>
           </td>
         </tr>
@@ -388,7 +452,8 @@
             <p class="SUBTITULO">Configuraci&oacute;n reportes</p>
           </td>
           <td>
-            <p class="PARRAFO">Campo alfanum&egrave;rico de 16 posiciones, en el que se ingresa el identificador del
+            <p class="PARRAFO">Campo alfanum&egrave;rico de 16 posiciones, en el
+              que se ingresa el identificador del
               informe de configuraci&oacute;n.</p>
           </td>
         </tr>
@@ -398,7 +463,8 @@
             <p class="SUBTITULO">Puerto servidor correo saliente</p>
           </td>
           <td>
-            <p class="PARRAFO">Indica el puerto de comunicacion con el servidor de correo saliente.</p>
+            <p class="PARRAFO">Indica el puerto de comunicacion con el servidor
+              de correo saliente.</p>
           </td>
         </tr>
         <tr>
@@ -406,7 +472,8 @@
             <p class="SUBTITULO">Ruta monedero emails</p>
           </td>
           <td>
-            <p>Indica el path donde se encuentra ubicada la WALLET para funcionamiento de los emails que requieren
+            <p>Indica el path donde se encuentra ubicada la WALLET para
+              funcionamiento de los emails que requieren
               autenticacion TLS.</p>
           </td>
         </tr>
@@ -415,7 +482,8 @@
             <p class="SUBTITULO">Password monedero correo</p>
           </td>
           <td>
-            <p class="PARRAFO">Indica el password que permite abrir la WALLET para funcionamiento de los emails que
+            <p class="PARRAFO">Indica el password que permite abrir la WALLET
+              para funcionamiento de los emails que
               requieren autenticacion TLS.</p>
           </td>
         </tr>
@@ -425,8 +493,10 @@
             <p class="SUBTITULO">Password cuenta de correo</p>
           </td>
           <td>
-            <p class="PARRAFO">Indica el password de la cuenta de correo fuente desde donde se van a generar los emails
-              de operaciones y solo aplica cuando el servidor de correos requiere autenticacion TLS.</p>
+            <p class="PARRAFO">Indica el password de la cuenta de correo fuente
+              desde donde se van a generar los emails
+              de operaciones y solo aplica cuando el servidor de correos
+              requiere autenticacion TLS.</p>
           </td>
         </tr>
         <tr>
@@ -434,7 +504,8 @@
             <p class="SUBTITULO">Versi&oacute;n oracle</p>
           </td>
           <td>
-            <p class="PARRAFO">Indica la version de oracle del motor de la base de datos.</p>
+            <p class="PARRAFO">Indica la version de oracle del motor de la base
+              de datos.</p>
           </td>
         </tr>
         <tr>
@@ -442,7 +513,8 @@
             <p class="SUBTITULO">Servidor correo</p>
           </td>
           <td>
-            <p>Indica la direccion IP del servidor de correo desde donde se van a enviar los emails.</p>
+            <p>Indica la direccion IP del servidor de correo desde donde se van
+              a enviar los emails.</p>
           </td>
         </tr>
 
@@ -451,7 +523,8 @@
             <p class="SUBTITULO">Dominio correo</p>
           </td>
           <td>
-            <p class="PARRAFO">Indica el dominio a que pertenece la cuenta de correo desde donde se van a enviar los
+            <p class="PARRAFO">Indica el dominio a que pertenece la cuenta de
+              correo desde donde se van a enviar los
               emails de operaciones.</p>
           </td>
         </tr>
@@ -460,7 +533,8 @@
             <p class="SUBTITULO">Cuenta correo</p>
           </td>
           <td>
-            <p class="PARRAFO">Indica la cuenta de correo fuente desde donde se van a generar los emails de operaciones.
+            <p class="PARRAFO">Indica la cuenta de correo fuente desde donde se
+              van a generar los emails de operaciones.
             </p>
           </td>
         </tr>
@@ -469,7 +543,8 @@
             <p class="SUBTITULO">Cuenta de destino correo</p>
           </td>
           <td>
-            <p class="PARRAFO">Indica la primera cuenta de correo destino a donde se envia los emails de operaciones.
+            <p class="PARRAFO">Indica la primera cuenta de correo destino a
+              donde se envia los emails de operaciones.
             </p>
           </td>
         </tr>
@@ -479,7 +554,8 @@
             <p class="SUBTITULO">Cuenta de destino correo2</p>
           </td>
           <td>
-            <p class="PARRAFO">Indica la segunda cuenta de correo destino a donde se envia los emails de operaciones.
+            <p class="PARRAFO">Indica la segunda cuenta de correo destino a
+              donde se envia los emails de operaciones.
             </p>
           </td>
         </tr>
@@ -488,7 +564,8 @@
             <p class="SUBTITULO">Cuenta de destino correo3</p>
           </td>
           <td>
-            <p class="PARRAFO">Indica la tercera cuenta de correo destino a donde se envia los emails de operaciones.
+            <p class="PARRAFO">Indica la tercera cuenta de correo destino a
+              donde se envia los emails de operaciones.
             </p>
           </td>
         </tr>
@@ -498,23 +575,24 @@
             <p class="SUBTITULO">Servidor aplicaci&oacute;n</p>
           </td>
           <td>
-            <p class="PARRAFO">Indica el servidor de aplicaciones donde se ejecuta el aplicativo
+            <p class="PARRAFO">Indica el servidor de aplicaciones donde se
+              ejecuta el aplicativo
               oracle weblogic.</p>
           </td>
         </tr>
       </table>
 
-  </section>
-  <script src="../js/menu.js"></script>
+    </section>
+    <script src="../js/menu.js"></script>
 
-  <div id="footerContainer"></div>
-<script>
+    <div id="footerContainer"></div>
+    <script>
   fetch('footer.html')
     .then(response => response.text())
     .then(html => {
       document.getElementById('footerContainer').innerHTML = html;
     });
 </script>
-</body>
+  </body>
 
 </html>

@@ -18,28 +18,18 @@
       <img class="TITLE" src="../img/menu.PNG" alt="Botón de Menú ">
     </div>
   </header>
-  <div id="menuContainer"></div>
-    <script>
-      fetch('menu.html')
-        .then(response => response.text())
-        .then(html => {
-          document.getElementById('menuContainer').innerHTML = html;
-        });
-    </script>
+    <div id="menuContainer"></div>
+  <script>
+    fetch('menu.html')
+      .then(response => response.text())
+      .then(html => {
+        document.getElementById('menuContainer').innerHTML = html;
+      });
+  </script>
   <section>
-    <center>
-      <div>
-        <table>
-          <tr>
-            <td>
-              <div>
-                <center>
+    <div>
                   <p class="TITLE">Administración de casos de uso</p>
-                </center>
-              </div>
-            </td>
-          </tr>
-        </table>
+                
 
         <p class="PARRAFO">Desde este formulario, se habilita la consulta
           y mantenimiento de la tabla en la cual se almacena toda la informaci&oacute;n
@@ -50,9 +40,9 @@
 
         <p class="PARRAFO">El formulario cuenta con un filtro que permite
           efectuar consultas tanto por el Rol de negocio como por el Tipo de men&uacute;.</p>
-        <p class="PARRAFO">El formulario contiene las opciones:<b> Actualizar,
-            Eliminar, y Adicionar.</span></b></p>
-        <p class="PARRAFO"><b><span class="SUBTITULO">Adicionar:</span></b>
+        <p class="PARRAFO">El formulario contiene las opciones: Actualizar,
+            Eliminar, y Adicionar.</span></p>
+        <p class="PARRAFO"><span class="SUBTITULO">Adicionar:</span>
           si el usuario invoca la opci&oacute;n Adicionar se despliega un nuevo formulario
           dividido en dos pasos de un wisard de datos (Men&uacute; / Caso de uso y Funcionalidades) con los siguientes
           campos.</p>
@@ -69,8 +59,8 @@
           <table>
             <tr>
               <td>
-                <p class="SUBTITULO"><b><span>
-                      Rol de negocio</span></b></p>
+                <p class="SUBTITULO">
+                      Rol de negocio</span></p>
               </td>
               <td>
                 <p class="PARRAFO">Campo
@@ -83,8 +73,8 @@
             </tr>
             <tr>
               <td>
-                <p class="SUBTITULO"><b><span>
-                      Tipo de men&uacute;</span></b></p>
+                <p class="SUBTITULO">
+                      Tipo de men&uacute;</span></p>
               </td>
               <td>
                 <p class="PARRAFO">Campo
@@ -97,8 +87,8 @@
             </tr>
             <tr>
               <td>
-                <p class="SUBTITULO"><b><span>
-                      Depende de</span></b></p>
+                <p class="SUBTITULO">
+                      Depende de</span></p>
               </td>
               <td>
                 <p class="PARRAFO">Campo no
@@ -110,8 +100,8 @@
             </tr>
             <tr>
               <td>
-                <p class="SUBTITULO"><b><span>
-                      Label</span></b></p>
+                <p class="SUBTITULO">
+                      Label</span></p>
               </td>
               <td>
                 <p class="PARRAFO">En
@@ -121,8 +111,8 @@
             </tr>
             <tr>
               <td>
-                <p class="SUBTITULO"><b><span>
-                      Url principal</span></b></p>
+                <p class="SUBTITULO">
+                      Url principal</span></p>
               </td>
               <td>
                 <p class="PARRAFO">Campo
@@ -133,8 +123,8 @@
             </tr>
             <tr>
               <td>
-                <p class="SUBTITULO"><b><span>
-                      C&oacute;digo funcionalidad</span></b></p>
+                <p class="SUBTITULO">
+                      C&oacute;digo funcionalidad</span></p>
               </td>
               <td>
                 <p class="PARRAFO">Campo de salida que muestra un n&uacute;mero secuencial, asignado por
@@ -147,8 +137,8 @@
           <table>
             <tr>
               <td>
-                <p class="SUBTITULO"><b><span>
-                      Descripci&oacute;n</span></b></p>
+                <p class="SUBTITULO">
+                      Descripci&oacute;n</span></p>
               </td>
               <td>
                 <p class="PARRAFO">Campo alfanum&eacute;rico de 200 posiciones, obligatorio, en el que
@@ -157,7 +147,7 @@
             </tr>
             <tr>
               <td>
-                <p class="SUBTITULO"><b>Agregar Url </p></b></p>
+                <p class="SUBTITULO">Agregar Url </p></p>
               </td>
               <td>
                 <p class="PARRAFO">Campo en el que debe registrarse, una a una, las diferentes url o
@@ -167,8 +157,8 @@
             </tr>
             <tr>
               <td>
-                <p class="SUBTITULO"><b>Funcionalidad existente </p>
-              </td></b>
+                <p class="SUBTITULO">Funcionalidad existente </p>
+              </td>
               <td>
                 <p class="PARRAFO">Campo que posee lista de valores adjunta, de la cual es posible
                   seleccionar las tareas funcionales previamente creadas mediante esta misma opci&oacute;n, lo que
@@ -180,12 +170,12 @@
             <tr></tr>
           </table>
         </div>
-        <p class="PARRAFO"><b><span class="SUBTITULO">Actualizar</span></b>:
+        <p class="PARRAFO"><span class="SUBTITULO">Actualizar</span>:
           si el usuario selecciona un registro e invoca la opci&oacute;n Actualizar se despliega un formulario
           con todos los campos modificables. </p>
         <p class="TITLE"><img src="../img/NUF_001E3.PNG"></p>
         <p class="TITLE"><img src="../img/NUF_001E4.PNG"></p>
-    </center>
+    
   </section>
   <script src="../js/menu.js"></script>
 

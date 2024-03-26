@@ -18,26 +18,20 @@
       <img class="TITLE" src="../img/menu.PNG" alt="Botón de Menú ">
     </div>
   </header>
-  <div id="menuContainer"></div>
-    <script>
-      fetch('menu.html')
-        .then(response => response.text())
-        .then(html => {
-          document.getElementById('menuContainer').innerHTML = html;
-        });
-    </script>
+    <div id="menuContainer"></div>
+  <script>
+    fetch('menu.html')
+      .then(response => response.text())
+      .then(html => {
+        document.getElementById('menuContainer').innerHTML = html;
+      });
+  </script>
 
   <section>
     <div>
-      <table>
-        <tr>
-          <td>
-            <div>
+      
               <p class="TITLE">Par&aacute;metros globales </p>
-            </div>
-          </td>
-        </tr>
-      </table>
+
       <p class="PARRAFO">Mediante esta opci&oacute;n, la entidad parametriza las caracter&iacute;sticas para la
         operaci&oacute;n de los par&aacute;metros adicionales a los establecidos como estandar para la evaluaci&oacute;n
         de las <a href="COH_030B.html">reglas</a> por parte del autorizador. </p>
@@ -48,7 +42,7 @@
       <p>El formulario contiene las opciones Actualizar, Eliminar y Adicionar. </p>
 
       <p><span class="SUBTITULO">Adicionar:</span>  Si el usuario invoca
-        la opci&oacute;n Adicionar se despliega un formulario con los siguientes campos<span>:</span></p>
+        la opci&oacute;n Adicionar se despliega un formulario con los siguientes campos:</span></p>
       <p class="TITLE"><img src="../img/COF_033B1.PNG"></p>
       <p>Cuando el parámetro No es dinámico: </p>
       <p class="TITLE"><img src="../img/COF_033B2.PNG"></p>
@@ -56,7 +50,7 @@
       <table>
         <tr>
           <td class="titletable">
-            <p class="SUBTITULO"><b>Nombre</b></p>
+            <p class="SUBTITULO">Nombre</p>
           </td>
           <td>
             <p class="PARRAFO">Campo alfanum&eacute;rico de hasta 30 caracteres, obligatorio, en el cual se registra el
@@ -136,13 +130,11 @@
               para validar reglas del autorizador.</p>
           </td>
         </tr>
-      </table>
-      <p src="../img/MEF_002E5.PNG"></p>
+      </table> 
       <p class="PARRAFO"><span class="PARRAFO"><span class="SUBTITULO">Actualizar:</span>  Si el usuario invoca la
           opci&oacute;n Actualizar se despliega un nuevo formulario
           en el cual el &uacute;nico campo NO modificable es el Nombre.</span></p>
       <p class="TITLE"><img src="../img/COF_033B3.PNG"></p>
-      <p src="../img/MEF_002E5.PNG"></p>
   </section>
   <script src="../js/menu.js"></script>
 </body>

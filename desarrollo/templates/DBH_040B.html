@@ -19,26 +19,20 @@
       <img class="TITLE" src="../img/menu.PNG" alt="Botón de Menú ">
     </div>
   </header>
-  <div id="menuContainer"></div>
-    <script>
-      fetch('menu.html')
-        .then(response => response.text())
-        .then(html => {
-          document.getElementById('menuContainer').innerHTML = html;
-        });
-    </script>
+    <div id="menuContainer"></div>
+  <script>
+    fetch('menu.html')
+      .then(response => response.text())
+      .then(html => {
+        document.getElementById('menuContainer').innerHTML = html;
+      });
+  </script>
 
   <section>
     <div>
-      <table>
-        <tr>
-          <td>
-            <div>
+      
               <p class="TITLE">Solicitudes por etapa </p>
-            </div>
-          </td>
-        </tr>
-      </table>
+
       <p class="PARRAFO">Mediante este wizard se posibilita el acceso a las pantallas
         correspondientes a cada una de las etapas de las solicitudes d&eacute;bito, definidas por
         la entidad, para la interacci&oacute;n con cada una de ellas.</p>
@@ -50,7 +44,7 @@
       <table>
         <tr>
           <td class="titletable">
-            <p class="SUBTITULO"><b>Etapa</b></p>
+            <p class="SUBTITULO">Etapa</p>
           </td>
           <td>
             <p class="PARRAFO">Campo
@@ -61,7 +55,7 @@
         </tr>
         <tr>
           <td class="titletable">
-            <p class="SUBTITULO"><b>Estado</b></p>
+            <p class="SUBTITULO">Estado</p>
           </td>
           <td>
             <p class="PARRAFO">Combo
@@ -72,8 +66,8 @@
         </tr>
         <tr>
           <td class="titletable">
-            <p class="SUBTITULO"><b><span>Tipo
-                  solicitud </span></b></p>
+            <p class="SUBTITULO">Tipo
+                  solicitud </span></p>
           </td>
           <td>
             <p class="PARRAFO">Combo
@@ -83,8 +77,8 @@
         </tr>
         <tr>
           <td class="titletable">
-            <p class="SUBTITULO"><b><span>Tipo
-                  identificaci&oacute;n </span></b></p>
+            <p class="SUBTITULO">Tipo
+                  identificaci&oacute;n </span></p>
           </td>
           <td>
             <p class="PARRAFO">Combo
@@ -95,8 +89,8 @@
         </tr>
         <tr>
           <td class="titletable">
-            <p class="SUBTITULO"><b><span>N&uacute;mero
-                  identificaci&oacute;n </span></b></p>
+            <p class="SUBTITULO">N&uacute;mero
+                  identificaci&oacute;n </span></p>
           </td>
           <td>
             <p class="PARRAFO">Este

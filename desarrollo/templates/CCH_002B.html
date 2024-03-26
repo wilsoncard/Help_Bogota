@@ -18,24 +18,20 @@
             <img class="TITLE"  src= "../img/menu.PNG" alt="Botón de Menú ">
         </div>
     </header>
-   <div id="menuContainer"></div>
-    <script>
-      fetch('menu.html')
-        .then(response => response.text())
-        .then(html => {
-          document.getElementById('menuContainer').innerHTML = html;
-        });
-    </script>
+      <div id="menuContainer"></div>
+  <script>
+    fetch('menu.html')
+      .then(response => response.text())
+      .then(html => {
+        document.getElementById('menuContainer').innerHTML = html;
+      });
+  </script>
 
     <section>
         <div> 
-            <table>
-              <tr> 
-                <td><div> 
+            
                     <p  class="TITLE">Tipos de cobro </p>
-                    </div></td>
-              </tr>
-            </table>
+                    
             <p>La principal forma de diferenciar las distintas clases de cobro a realizar a los deudores consiste en definir tantas categor&iacute;as como requiera la entidad y/o la casa de cobranza. Esta forma o pantalla permite tanto la consulta como la parametrizaci&oacute;n de los tipos de cobro.</p>
             <p>El formulario contiene las opciones Actualizar, Eliminar, 
             y Adicionar.</p>
@@ -48,7 +44,7 @@
             
             <table>
               <tr>
-                <td class="titletable"  ><p class="SUBTITULO"><b><span ><span >C&oacute;digo</span></span></b></p></td>
+                <td class="titletable"  ><p class="SUBTITULO"><span ><span >C&oacute;digo</span></span></p></td>
                 <td><p>Campo   alfanum&eacute;rico de 3 posiciones, obligatorio, asignado a cada uno de los distintos   tipos de cobro que la entidad defina.</p>      
                 </td>
               </tr>
@@ -58,7 +54,7 @@
                 </td>
               </tr>
               <tr>
-                <td class="titletable"><p class="SUBTITULO"><b><span >Genera </span></b>honorarios</p></td>
+                <td class="titletable"><p class="SUBTITULO"><span >Genera </span>honorarios</p></td>
                 <td><p class="PARRAFO">Lista de valores con S&iacute; y No en la que selecciona una opci&oacute;n seg&uacute;n el caso. </p>      </td>
               </tr>
             </table>

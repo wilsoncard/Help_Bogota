@@ -18,24 +18,20 @@
             <img class="TITLE"  src= "../img/menu.PNG" alt="Botón de Menú ">
         </div>
     </header>
-   <div id="menuContainer"></div>
-    <script>
-      fetch('menu.html')
-        .then(response => response.text())
-        .then(html => {
-          document.getElementById('menuContainer').innerHTML = html;
-        });
-    </script>
+      <div id="menuContainer"></div>
+  <script>
+    fetch('menu.html')
+      .then(response => response.text())
+      .then(html => {
+        document.getElementById('menuContainer').innerHTML = html;
+      });
+  </script>
 
     <section>
         <div> 
-            <table>
-              <tr> 
-                <td><div> 
+            
                     <p  class="TITLE">Cambio masivo sucursal</p>
-                    </div></td>
-              </tr>
-            </table>
+                    
             <p class="PARRAFO">Mediante esta funci&oacute;n la entidad realiza el proceso 
               de cambio masivo de oficina de radicaci&oacute;n de los productos de los clientes, 
               por razones de cambio de oficinas, traslado, cierre, &oacute; cuando por pol&iacute;tica 

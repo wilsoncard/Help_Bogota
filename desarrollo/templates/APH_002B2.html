@@ -1,200 +1,232 @@
 <!DOCTYPE html>
 <html lang="es">
 
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>BANKBU®</title>
-  <link rel="stylesheet" href="../css/pages.css">
-  <link rel="stylesheet" href="../css/style.css">
-  <link rel="icon" href="../img/ACQUIRER-logo.JPG" type="image/x-icon">
-</head>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BANKBU®</title>
+    <link rel="stylesheet" href="../css/pages.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="icon" href="../img/ACQUIRER-logo.JPG" type="image/x-icon">
+  </head>
 
-<body>
-  <header>
-    <img class="logo" src="../img/logoBankbu_.PNG" alt="Logo de Mi Empresa">
-    <div id="menuBtn">
-      <img class="TITLE" src="../img/menu.PNG" alt="Botón de Menú ">
-    </div>
-  </header>
-  <div id="menuContainer"></div>
+  <body>
+    <header>
+      <img class="logo" src="../img/logoBankbu_.PNG" alt="Logo de Mi Empresa">
+      <div id="menuBtn">
+        <img class="TITLE" src="../img/menu.PNG" alt="Botón de Menú ">
+      </div>
+    </header>
+    <div id="menuContainer"></div>
     <script>
-      fetch('menu.html')
-        .then(response => response.text())
-        .then(html => {
-          document.getElementById('menuContainer').innerHTML = html;
-        });
-    </script>
-  <section>
-    <div>
-      <table>
-        <tr>
-          <td>
-            <div>
-              <p class="TITLE">Comisiones y metas - Metas sin promoci&oacute;n </p>
-            </div>
-          </td>
-        </tr>
-      </table>
-      <p>Metas sin promoci&oacute;n:En este espacio se registran los ingresos que devengar&aacute;n los
-        promotores por cumplir la meta de finalizar las tareas asignadas durante un per&iacute;odo de tiempo esperado y
-        sobre productos que no pertenecen a ninguna promoci&oacute;n de colocaci&oacute;n. Los par&aacute;metros que se
-        definan en este espacio sumar&aacute;n en la liquidaci&oacute;n de ingresos a los promotores con las comisiones
-        definidas en el bloque productos las cuales corresponden a comisiones propiamente dichas, y las de esta
-        carpeta que corresponden a bonificaciones por cumplimiento de metas, las cuales responden a un objetivo
-        diferente y espec&iacute;fico.</p>
-      <p>El formulario contiene las opciones Eliminar,
-        Adicionar y Bonificaciones.</p>
-      <p class="TITLE"><img src="../img/APF_002B10.PNG" alt="Filter" 719" ></p>
+    fetch('menu.html')
+      .then(response => response.text())
+      .then(html => {
+        document.getElementById('menuContainer').innerHTML = html;
+      });
+  </script>
+    <section>
+      <div>
+        <p class="TITLE">Comisiones y metas - Metas sin promoci&oacute;n
+                </p>
+              
+        <p>Metas sin promoci&oacute;n:En este espacio se registran los ingresos
+          que devengar&aacute;n los
+          promotores por cumplir la meta de finalizar las tareas asignadas
+          durante un per&iacute;odo de tiempo esperado y
+          sobre productos que no pertenecen a ninguna promoci&oacute;n de
+          colocaci&oacute;n. Los par&aacute;metros que se
+          definan en este espacio sumar&aacute;n en la liquidaci&oacute;n de
+          ingresos a los promotores con las comisiones
+          definidas en el bloque productos las cuales corresponden a comisiones
+          propiamente dichas, y las de esta
+          carpeta que corresponden a bonificaciones por cumplimiento de metas,
+          las cuales responden a un objetivo
+          diferente y espec&iacute;fico.</p>
+        <p>El formulario contiene las opciones Eliminar,
+          Adicionar y Bonificaciones.</p>
+        <p class="TITLE"><img src="../img/APF_002B10.PNG"></p>
 
-      <p><span class="SUBTITULO">Adicionar:</span>  Si
-        el usuario invoca la opci&oacute;n Adicionar se despliega un formulario con
-        los siguientes campos<span>:</span> 
-      </p>
-      <p class="TITLE"><img src="../img/APF_002B11.PNG" alt="Filter"></p>
+        <p><span class="SUBTITULO">Adicionar:</span> Si
+          el usuario invoca la opci&oacute;n Adicionar se despliega un
+          formulario con
+          los siguientes campos:</span>
+        </p>
+        <p class="TITLE"><img src="../img/APF_002B11.PNG"></p>
 
-      <table>
-        <tr>
-          <td class="titletable">
-            <p class="SUBTITULO"><b><span>Fecha inicial </span></b></p>
-          </td>
-          <td>
-            <p class="PARRAFO">Campo en formato YYYY-MM-DD, obligatorio, en el que se define el momento de inicio del per&iacute;odo
-              para el cumplimiento de metas. </p>
-          </td>
-        </tr>
-        <tr>
-          <td class="titletable">
-            <p class="SUBTITULO"><b><span>Fecha final </span></b></p>
-          </td>
-          <td>
-            <p class="PARRAFO">En este campo en formato YYYY-MM-DD, obligatorio, se define el momento de finalizaci&oacute;n del
-              per&iacute;odo para el cumplimiento de metas.</p>
-          </td>
-        </tr>
-      </table>
+        <table>
+          <tr>
+            <td class="titletable">
+              <p class="SUBTITULO">Fecha inicial </span></p>
+            </td>
+            <td>
+              <p class="PARRAFO">Campo en formato YYYY-MM-DD, obligatorio, en el
+                que se define el momento de inicio del per&iacute;odo
+                para el cumplimiento de metas. </p>
+            </td>
+          </tr>
+          <tr>
+            <td class="titletable">
+              <p class="SUBTITULO">Fecha final </span></p>
+            </td>
+            <td>
+              <p class="PARRAFO">En este campo en formato YYYY-MM-DD,
+                obligatorio, se define el momento de finalizaci&oacute;n del
+                per&iacute;odo para el cumplimiento de metas.</p>
+            </td>
+          </tr>
+        </table>
 
-      <p><span class="SUBTITULO">Bonificaciones:</span></p>
-      <p class="TITLE"><img src="../img/APF_002B12.PNG" alt="Filter"></p>
+        <p><span class="SUBTITULO">Bonificaciones:</span></p>
+        <p class="TITLE"><img src="../img/APF_002B12.PNG"></p>
 
-      <p>El formulario contiene las opciones Actualizar, Eliminar,
-        Adicionar y Detalle.</p>
-      <p class="PARRAFO"><span class="SUBTITULO">Adicionar:</span>  Si
-        el usuario invoca la opci&oacute;n Adicionar se despliega un formulario con
-        los siguientes campos<span>:</span> 
-      </p>
-      <p class="TITLE"><img src="../img/APF_002B13.PNG" alt="Filter"></p>
+        <p>El formulario contiene las opciones Actualizar, Eliminar,
+          Adicionar y Detalle.</p>
+        <p class="PARRAFO"><span class="SUBTITULO">Adicionar:</span> Si
+          el usuario invoca la opci&oacute;n Adicionar se despliega un
+          formulario con
+          los siguientes campos:</span>
+        </p>
+        <p class="TITLE"><img src="../img/APF_002B13.PNG"></p>
 
-      <table>
-        <tr>
-          <td class="titletable">
-            <p class="SUBTITULO"><b><span>Base bonificaci&oacute;n </span></b></p>
-          </td>
-          <td>
-            <p class="PARRAFO">Campo en el que se define cual ser&aacute; la base sobre la cual se liquidar&aacute; el incentivo a los
-              promotores por finalizaci&oacute;n de tareas en el tiempo previsto y que puede estar dada en
-              t&eacute;rminos de n&uacute;mero de Tarjetas, o como Cupos correspondiente al monto
-              aprobado de los productos.</p>
-          </td>
-        </tr>
-        <tr>
-          <td class="titletable">
-            <p class="SUBTITULO"><span>Tipo bonificaci&oacute;n </span></p>
-          </td>
-          <td class="PARRAFO">
-            <p class="PARRAFO">Este campo le otorga la caracter&iacute;stica al registro, de permitir o no la
-              definici&oacute;n de rangos. La opci&oacute;n valor, expresa que no pertenece a una
-              condici&oacute;n de inicio y fin, sino a un &uacute;nico valor; mientras que la opci&oacute;n rango
-              expresa que se delimita el valor de inicio y el valor final para que el promotor devengue el incentivo de
-              acuerdo con los par&aacute;metros de base y per&iacute;odo establecido para el cumplimiento de la meta.
-            </p>
-          </td>
-        </tr>
-        <tr>
-          <td class="titletable">
-            <p class="SUBTITULO"><b><span>Rango inicial </span></b></p>
-          </td>
-          <td>
-            <p class="PARRAFO">Campo num&eacute;rico de 12 posiciones enteras y 2 decimales, obligatorio, en el que se registra el valor
-              de inicio (tarjetas o cupos) a tener en cuenta en el momento de la liquidaci&oacute;n de bonificaciones a
-              promotores por la finalizaci&oacute;n de las tareas dentro del per&iacute;odo de tiempo esperado. </p>
-          </td>
-        </tr>
-        <tr>
-          <td class="titletable">
-            <p class="SUBTITULO"><b><span>Rango final </span></b></p>
-          </td>
-          <td>
-            <p class="PARRAFO">Si en Tipo Bonificaci&oacute;n se define que es un rango, entonces este campo num&eacute;rico de
-              12 posiciones enteras y 2 decimales se habilita y se vuelve obligatorio; en &eacute;l se registra el valor
-              l&iacute;mite (tarjetas o cupos) a tener en cuenta en el momento de la liquidaci&oacute;n de
-              bonificaciones a promotores por la finalizaci&oacute;n de las tareas dentro del per&iacute;odo de tiempo
-              esperado. </p>
-          </td>
-        </tr>
-        <tr>
-          <td class="titletable">
-            <p class="SUBTITULO"><b><span>Modo bonificaci&oacute;n </span></b></p>
-          </td>
-          <td class="PARRAFO">
-            <p class="PARRAFO">Campo con lista de valores de la cual la entidad selecciona la manera c&oacute;mo
-              aplicar&aacute; la bonificaci&oacute;n del promotor por la tarea terminada y que puede ser un
-              Porcentaje o un Valor absoluto.</p>
-          </td>
-        </tr>
-        <tr>
-          <td class="titletable">
-            <p class="SUBTITULO"><b><span>Valor bonificaci&oacute;n </span></b></p>
-          </td>
-          <td>
-            <p class="PARRAFO">Este campo se activa cuando en el campo modo bonificaci&oacute;n se ha seleccionado la
-              opci&oacute;n valor y en &eacute;l se registra el monto del mismo; indica que por la tarea
-              terminada sobre cada producto definido, el promotor devenga determinado valor.</p>
-          </td>
-        </tr>
-        <tr>
-          <td class="titletable">
-            <p class="SUBTITULO"><b><span>Moneda</span></b></p>
-          </td>
-          <td>
-            <p class="PARRAFO">Al igual que el anterior, este campo se activa cuando en modo bonificaci&oacute;n se ha elegido
-              la opci&oacute;n valor, y en el se selecciona a trav&eacute;s de la lista de valores la <A
-                  href="NUH_005B.html">Moneda</A> en la cual se expresa el valor de la bonificaci&oacute;n.</p>
-          </td>
-        </tr>
-        <tr>
-          <td class="titletable">
-            <p class="SUBTITULO"><b><span><span>Porcentaje</span></span></b></p>
-          </td>
-          <td>
-            <p class="PARRAFO">Cuando en el campo modo comisi&oacute;n, se selecciona la opci&oacute;n porcentaje,
-              este campo se activa para permitir registrar la cifra respectiva a aplicar sobre el monto de cupo aprobado
-              de cada producto definido del cual se ha finalizado la tarea, siendo este el valor de la
-              bonificaci&oacute;n.</p>
-          </td>
-        </tr>
-      </table>
+        <table>
+          <tr>
+            <td class="titletable">
+              <p class="SUBTITULO">Base bonificaci&oacute;n </span></p>
+            </td>
+            <td>
+              <p class="PARRAFO">Campo en el que se define cual ser&aacute; la
+                base sobre la cual se liquidar&aacute; el incentivo a los
+                promotores por finalizaci&oacute;n de tareas en el tiempo
+                previsto y que puede estar dada en
+                t&eacute;rminos de n&uacute;mero de Tarjetas, o como Cupos
+                correspondiente al monto
+                aprobado de los productos.</p>
+            </td>
+          </tr>
+          <tr>
+            <td class="titletable">
+              <p class="SUBTITULO">Tipo bonificaci&oacute;n </span></p>
+            </td>
+            <td class="PARRAFO">
+              <p class="PARRAFO">Este campo le otorga la caracter&iacute;stica
+                al registro, de permitir o no la
+                definici&oacute;n de rangos. La opci&oacute;n valor, expresa que
+                no pertenece a una
+                condici&oacute;n de inicio y fin, sino a un &uacute;nico valor;
+                mientras que la opci&oacute;n rango
+                expresa que se delimita el valor de inicio y el valor final para
+                que el promotor devengue el incentivo de
+                acuerdo con los par&aacute;metros de base y per&iacute;odo
+                establecido para el cumplimiento de la meta.
+              </p>
+            </td>
+          </tr>
+          <tr>
+            <td class="titletable">
+              <p class="SUBTITULO">Rango inicial </span></p>
+            </td>
+            <td>
+              <p class="PARRAFO">Campo num&eacute;rico de 12 posiciones enteras
+                y 2 decimales, obligatorio, en el que se registra el valor
+                de inicio (tarjetas o cupos) a tener en cuenta en el momento de
+                la liquidaci&oacute;n de bonificaciones a
+                promotores por la finalizaci&oacute;n de las tareas dentro del
+                per&iacute;odo de tiempo esperado. </p>
+            </td>
+          </tr>
+          <tr>
+            <td class="titletable">
+              <p class="SUBTITULO">Rango final </span></p>
+            </td>
+            <td>
+              <p class="PARRAFO">Si en Tipo Bonificaci&oacute;n se define que es
+                un rango, entonces este campo num&eacute;rico de
+                12 posiciones enteras y 2 decimales se habilita y se vuelve
+                obligatorio; en &eacute;l se registra el valor
+                l&iacute;mite (tarjetas o cupos) a tener en cuenta en el momento
+                de la liquidaci&oacute;n de
+                bonificaciones a promotores por la finalizaci&oacute;n de las
+                tareas dentro del per&iacute;odo de tiempo
+                esperado. </p>
+            </td>
+          </tr>
+          <tr>
+            <td class="titletable">
+              <p class="SUBTITULO">Modo bonificaci&oacute;n </span></p>
+            </td>
+            <td class="PARRAFO">
+              <p class="PARRAFO">Campo con lista de valores de la cual la
+                entidad selecciona la manera c&oacute;mo
+                aplicar&aacute; la bonificaci&oacute;n del promotor por la tarea
+                terminada y que puede ser un
+                Porcentaje o un Valor absoluto.</p>
+            </td>
+          </tr>
+          <tr>
+            <td class="titletable">
+              <p class="SUBTITULO">Valor bonificaci&oacute;n </span></p>
+            </td>
+            <td>
+              <p class="PARRAFO">Este campo se activa cuando en el campo modo
+                bonificaci&oacute;n se ha seleccionado la
+                opci&oacute;n valor y en &eacute;l se registra el monto del
+                mismo; indica que por la tarea
+                terminada sobre cada producto definido, el promotor devenga
+                determinado valor.</p>
+            </td>
+          </tr>
+          <tr>
+            <td class="titletable">
+              <p class="SUBTITULO">Moneda</span></p>
+            </td>
+            <td>
+              <p class="PARRAFO">Al igual que el anterior, este campo se activa
+                cuando en modo bonificaci&oacute;n se ha elegido
+                la opci&oacute;n valor, y en el se selecciona a trav&eacute;s de
+                la lista de valores la <a
+                  href="NUH_005B.html">Moneda</a> en la cual se expresa el valor
+                de la bonificaci&oacute;n.</p>
+            </td>
+          </tr>
+          <tr>
+            <td class="titletable">
+              <p class="SUBTITULO">Porcentaje</span></span></p>
+            </td>
+            <td>
+              <p class="PARRAFO">Cuando en el campo modo comisi&oacute;n, se
+                selecciona la opci&oacute;n porcentaje,
+                este campo se activa para permitir registrar la cifra respectiva
+                a aplicar sobre el monto de cupo aprobado
+                de cada producto definido del cual se ha finalizado la tarea,
+                siendo este el valor de la
+                bonificaci&oacute;n.</p>
+            </td>
+          </tr>
+        </table>
 
-      <p><span class="SUBTITULO">Actualizar:</span>  Si el usuario
-        invoca la opci&oacute;n Actualizar se despliega un nuevo formulario en cual
-        los &uacute;nicos campos modificables son los siguientes:</p>
-      <p class="TITLE"><img src="../img/APF_002B14.PNG" alt="Filter"></p>
+        <p><span class="SUBTITULO">Actualizar:</span> Si el usuario
+          invoca la opci&oacute;n Actualizar se despliega un nuevo formulario en
+          cual
+          los &uacute;nicos campos modificables son los siguientes:</p>
+        <p class="TITLE"><img src="../img/APF_002B14.PNG"></p>
 
-      <p class="PARRAFO"><span class="SUBTITULO">Detalle:</span>  Si el usuario invoca
-        la opci&oacute;n Detalle se despliega el siguiente formulario.<span>
+        <p class="PARRAFO"><span class="SUBTITULO">Detalle:</span> Si el usuario
+          invoca
+          la opci&oacute;n Detalle se despliega el siguiente formulario.
 
-        </span></p>
-      <p class="TITLE"><img src="../img/APF_002B15.PNG" alt="Filter"></p>
+          </span></p>
+        <p class="TITLE"><img src="../img/APF_002B15.PNG"></p>
 
-  </section>
-  <script src="../js/menu.js"></script>
-</body>
-<div id="footerContainer"></div>
-<script>
+      </section>
+      <script src="../js/menu.js"></script>
+    </body>
+    <div id="footerContainer"></div>
+    <script>
   fetch('footer.html')
     .then(response => response.text())
     .then(html => {
       document.getElementById('footerContainer').innerHTML = html;
     });
 </script>
-</html>
+  </html>

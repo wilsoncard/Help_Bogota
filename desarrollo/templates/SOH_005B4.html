@@ -1,76 +1,70 @@
 <!DOCTYPE html>
 <html lang="es">
 
-<head>
+  <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>BANKBU®</title>
     <link rel="stylesheet" href="../css/pages.css">
     <link rel="stylesheet" href="../css/style.css">
- <link rel="icon" href="../img/ACQUIRER-logo.JPG" type="image/x-icon">
-</head>
+    <link rel="icon" href="../img/ACQUIRER-logo.JPG" type="image/x-icon">
+  </head>
 
-<body>
+  <body>
     <header>
-        <img class="logo" src="../img/logoBankbu_.PNG" alt="Logo de Mi Empresa">
-        <div id="menuBtn">
-            <img class="TITLE"  src= "../img/menu.PNG" alt="Botón de Menú ">
-        </div>
+      <img class="logo" src="../img/logoBankbu_.PNG" alt="Logo de Mi Empresa">
+      <div id="menuBtn">
+        <img class="TITLE" src="../img/menu.PNG" alt="Botón de Menú ">
+      </div>
     </header>
-   <div id="menuContainer"></div>
+    <div id="menuContainer"></div>
     <script>
-      fetch('menu.html')
-        .then(response => response.text())
-        .then(html => {
-          document.getElementById('menuContainer').innerHTML = html;
-        });
-    </script>
+    fetch('menu.html')
+      .then(response => response.text())
+      .then(html => {
+        document.getElementById('menuContainer').innerHTML = html;
+      });
+  </script>
 
     <section>
-        <div> 
-            <table>
-              <tr> 
-                <td><div> 
-                    <p  class="TITLE">Consulta de etapas </p>
-                    </div></td>
-              </tr>
-            </table>
-            <p  class="PARRAFO"><span class="SUBTITULO">Consultar etapas:</span>  
-              Si el usuario invoca la opci&oacute;n la consulta de etapas se despliega el 
-              siguiente formulario, el cual se va alimentando a medida que la solicitud 
-              avanza de etapa hasta ser Aprobada.<span
-              
-        ></span></p>
-            <p class="TITLE"><img src="../img/SOF_003B3c.PNG"  ></p>
-            <p><span class="SUBTITULO">Documentos requeridos:</span></p>
-            <p><span class="SUBTITULO">Scoring:</span></p>
-            <p><span class="SUBTITULO">Central riesgos:</span></p>
-            <p><span class="SUBTITULO">Verificaci&oacute;n referencias:</span></p>
-            .
-           
-            .
-           
-            <p class="PARRAFO"><span
-              
-        ></span></p>
-            
-            
-            <p><span ><b><span class="PARRAFO"><a href="SOH_005B1.html" >Informaci&oacute;n 
-              general</a> | </span></b></span>  <b><b><span class="PARRAFO"><a href="SOH_005B2.html" >L&iacute;neas 
-              de cr&eacute;dito</a> |</span></b></b><a href="SOH_005B3.html" >Documentos</a> 
-              <b><b><span class="PARRAFO">|</span></b></b><span class="PARRAFO"><a href="SOH_005B5.html" >Ingreso 
-              de Adicionales</a></span>  </p>
-            </section>
-    <script src="../js/menu.js"></script>
+      <div>
 
-    <div id="footerContainer"></div>
-<script>
+        <p class="TITLE">Consulta de etapas </p>
+
+        <p class="PARRAFO"><span class="SUBTITULO">Consultar etapas:</span>
+          Si el usuario invoca la opci&oacute;n la consulta de etapas se
+          despliega el
+          siguiente formulario, el cual se va alimentando a medida que la
+          solicitud
+          avanza de etapa hasta ser Aprobada.<span></span></p>
+        <p class="TITLE"><img src="../img/SOF_003B3c.PNG"></p>
+        <p><span class="SUBTITULO">Documentos requeridos:</span></p>
+        <p><span class="SUBTITULO">Scoring:</span></p>
+        <p><span class="SUBTITULO">Central riesgos:</span></p>
+        <p><span class="SUBTITULO">Verificaci&oacute;n referencias:</span></p>
+
+        <p class="PARRAFO"><span></span></p>
+
+        <p><span><span class="PARRAFO"><a
+                href="SOH_005B1.html">Informaci&oacute;n
+                general</a> | </span></span> <span class="PARRAFO"><a
+              href="SOH_005B2.html">L&iacute;neas
+              de cr&eacute;dito</a> |</span><a
+            href="SOH_005B3.html">Documentos</a>
+          <span class="PARRAFO">|</span><span class="PARRAFO"><a
+              href="SOH_005B5.html">Ingreso
+              de Adicionales</a></span> </p>
+      </section>
+      <script src="../js/menu.js"></script>
+
+      <div id="footerContainer"></div>
+      <script>
   fetch('footer.html')
     .then(response => response.text())
     .then(html => {
       document.getElementById('footerContainer').innerHTML = html;
     });
 </script>
-</body>
+    </body>
 
-</html>
+  </html>

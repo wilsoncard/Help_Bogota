@@ -17,40 +17,35 @@
             <img class="TITLE"  src= "../img/menu.PNG" alt="Botón de Menú ">
         </div>
     </header>
-   <div id="menuContainer"></div>
-    <script>
-      fetch('menu.html')
-        .then(response => response.text())
-        .then(html => {
-          document.getElementById('menuContainer').innerHTML = html;
-        });
-    </script>
+      <div id="menuContainer"></div>
+  <script>
+    fetch('menu.html')
+      .then(response => response.text())
+      .then(html => {
+        document.getElementById('menuContainer').innerHTML = html;
+      });
+  </script>
 
     <section>
         <div> 
-            <table>
-              <tr> 
-                <td><div> 
-                    <p  class="TITLE">Gestores</p>
-                    </div></td>
-              </tr>
-            </table>
+            <p  class="TITLE">Gestores</p>
+                    
             <p class="PARRAFO">Mediante esta funci&oacute;n se habilita la consulta y mantenimiento 
             de la tabla en la cual se almacenan los diferentes gestores que podr&aacute;n atender los diferentes tipos de reclamos existentes. As&iacute; mismo, &eacute;stos se relacionar&aacute;n con los roles ya creados y se podr&aacute;n visualizar las estad&iacute;sticas de la asignaci&oacute;n y atenci&oacute;n de dichos reclamos por cada gestor existente. </p>
             <p class="PARRAFO">El formulario contiene las opciones Actualizar, Eliminar, 
               Adicionar y Detalle. Adicionalmente, cuenta con un filtro de b&uacute;squeda 
             y las opciones <a href="RCH_003B1.html" >Roles</a> y <a href="RCH_003B2.html" >Estad&iacute;sticas</a>.</p>
-            <p class="TITLE"><img src="../img/RCF_003B1.PNG"755" height="356"></p>
+            <p class="TITLE"><img src="../img/RCF_003B1.PNG"></p>
  </blockquote>
             
             <p><span class="SUBTITULO">Filtro:</span>  Se pueden realizar consultas a trav&eacute;s 
               de las siguientes opciones:</p>
-            <p class="TITLE"><img src="../img/RCF_003B.PNG"688" height="112"></p>
+            <p class="TITLE"><img src="../img/RCF_003B.PNG"></p>
             
             <table>
               <tr> 
-                <td  class="titletable" ><p class="SUBTITULO"><b><span 
-        >C&oacute;digo</span></b></p></td>
+                <td  class="titletable" ><p class="SUBTITULO"><span 
+        >C&oacute;digo</span></p></td>
                 <td><p class="PARRAFO">Campo 
                     num&eacute;rico de 4 d&iacute;gitos que contiene 
                     el c&oacute;digo del gestor que se desea buscar.</p>      </td>
@@ -60,11 +55,11 @@
                 <td><p  class="PARRAFO">Campo alfanum&eacute;rico de 60 posiciones, que contiene el nombre del gestor que se desea buscar.</p></td>
               </tr>
               <tr>
-                <td><b class="SUBTITULO">Tipo de identificaci&oacute;n</b></td>
+                <td><b class="SUBTITULO">Tipo de identificaci&oacute;n</td>
                 <td  class="PARRAFO" ><p>En este campo tipo combo, el usuario puede seleccionar el <a href="NUH_008B.html" >tipo de documento</a> asociado al gestor que se desea consultar en la base de datos.</td>
               </tr></p>
               <tr>
-                <td><b class="SUBTITULO">N&uacute;mero de identificaci&oacute;n</b></td>
+                <td><b class="SUBTITULO">N&uacute;mero de identificaci&oacute;n</td>
                 <td  class="PARRAFO" ><p>Campo num&eacute;rico de 16 posiciones, en el que se ingresa el n&uacute;mero de identificaci&oacute;n del gestor que se quiere consultar.</td>
               </tr></p>
               <tr>
@@ -79,51 +74,51 @@
             
             <p  class="PARRAFO"><span class="SUBTITULO">Adicionar:</span>  Si el usuario invoca la opci&oacute;n Adicionar se despliega un formulario con los siguientes campos<span 
         >:</span></p>
-            <p class="TITLE"><img src="../img/RCF_003B2.PNG"475" height="433"></p>
+            <p class="TITLE"><img src="../img/RCF_003B2.PNG"></p>
             
             <table>
               <tr> 
-                <td class="titletable"><p class="SUBTITULO"><b><span 
-        >C&oacute;digo</span></b> gestor </p></td>
+                <td class="titletable"><p class="SUBTITULO"><span 
+        >C&oacute;digo</span> gestor </p></td>
                 <td><p class="PARRAFO">Campo 
                     num&eacute;rico de 4 d&iacute;gitos, obligatorio, que contiene 
                     el c&oacute;digo asignado a cada gestor y que lo identifica 
                     dentro del sistema.</p></td>
               </tr>
               <tr> 
-                <td class="titletable"><p class="SUBTITULO"><b><span >Tipo de identificaci&oacute;n</span></b></p></td>
+                <td class="titletable"><p class="SUBTITULO"><span >Tipo de identificaci&oacute;n</span></p></td>
                 <td><p class="PARRAFO">En este campo campo tipo combo obligatorio, el usuario puede   seleccionar el <A href="NUH_008B.html" >tipo de   documento</A> asociado a cada gestor.</p></td>
               </tr>
               <tr>
-                <td class="titletable"><span class="SUBTITULO"><b><span >N&uacute;mero de identificaci&oacute;n</span></b></span></td>
+                <td class="titletable"><span class="SUBTITULO"><span >N&uacute;mero de identificaci&oacute;n</span></span></td>
                 <td  class="PARRAFO"><p>Campo num&eacute;rico de 16 d&iacute;gitos obligatorio, en el que se ingresa el n&uacute;mero de identificaci&oacute;n del gestor asociado al   tipo de documento seleccionado en el campo anterior.</span></p>      </td>
               </tr></p>
               <tr>
-                <td class="titletable"><span class="SUBTITULO"><b><span 
-        >Nombre</span></b></span></td>
+                <td class="titletable"><span class="SUBTITULO"><span 
+        >Nombre</span></span></td>
                 <td  class="PARRAFO"><p>Campo 
                     alfanum&eacute;rico de 60 posiciones, obligatorio, en el cual se registra 
                 el nombre del gestor.</td></p>
               </tr>
               <tr>
-                <td class="titletable"><span class="SUBTITULO"><b><span >Tipo de relaci&oacute;n</span></b></span></td>
+                <td class="titletable"><span class="SUBTITULO"><span >Tipo de relaci&oacute;n</span></span></td>
                 <td  class="PARRAFO"><p>Campo tipo combo obligatorio, en el cual el usuario puede   seleccionar entre interno o externo seg&uacute;n si el gestor pertenece directamente a la entidad o trabaja de manera externa con &eacute;sta.</span></p>      </td>
               </tr></p>
               <tr>
-                <td><span class="SUBTITULO #1"><b>Usuario del sistema</b></span></td>
+                <td><span class="SUBTITULO #1">Usuario del sistema</span></td>
                 <td  class="PARRAFO"><p>En 
                 este campo obligatorio, se selecciona de la lista de valores el <a href="NUH_010B.html" >usuario</a> al cual se asocia el gestor.</td>
               </tr></p>
               <tr>
-                <td><span class="SUBTITULO #1"><b>Direcci&oacute;n</b></span></td>
+                <td><span class="SUBTITULO #1">Direcci&oacute;n</span></td>
                 <td  class="PARRAFO"><p>Campo alfanum&eacute;rico de 60 posiciones, obligatorio, en el cual se registra la direcci&oacute;n correspondiente al gestor.</td>
               </tr></p>
               <tr>
-                <td class="titletable"><span class="SUBTITULO"><b><span >Tel&eacute;fono del contacto</span></b></span></td>
+                <td class="titletable"><span class="SUBTITULO"><span >Tel&eacute;fono del contacto</span></span></td>
                 <td  class="PARRAFO"><p>Campo alfanum&eacute;rico de 30 posiciones, obligatorio, en el cual se registra el tel&eacute;fono correspondiente al gestor.</td>
               </tr></p>
               <tr>
-                <td><b class="SUBTITULO">Tel&eacute;fono celular </b></td>
+                <td><b class="SUBTITULO">Tel&eacute;fono celular </td>
                 <td  class="PARRAFO"><p>Campo alfanum&eacute;rico de 30 posiciones, en el cual se registra el tel&eacute;fono celular correspondiente al gestor.</td>
               </tr></p>
               <tr>
@@ -138,14 +133,12 @@
             <p  class="PARRAFO"><span class="PARRAFO"><span class="SUBTITULO">Actualizar:</span>  
               Si el usuario invoca la opci&oacute;n Actualizar se despliega un nuevo formulario 
               en el cual todos los campos son modificables excepto el c&oacute;digo del gestor.</span></p>
-            <p class="TITLE"><img src="../img/RCF_003B3.PNG"474" height="430"></p>
+            <p class="TITLE"><img src="../img/RCF_003B3.PNG"></p>
            
-            <p class="PARRAFO"><span class="SUBTITULO">Detalle:</span>  Si el usuario invoca la opci&oacute;n Detalle se despliega el siguiente formulario: <span
-              
-        >
+            <p class="PARRAFO"><span class="SUBTITULO">Detalle:</span>  Si el usuario invoca la opci&oacute;n Detalle se despliega el siguiente formulario: <span>
             
             </span></p>
-            <p class="TITLE"><img src="../img/RCF_003B4.PNG"812" ></p>
+            <p class="TITLE"><img src="../img/RCF_003B4.PNG"></p>
             
         </section>
     <script src="../js/menu.js"></script>

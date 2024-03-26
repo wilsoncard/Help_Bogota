@@ -1,75 +1,75 @@
 <!DOCTYPE html>
 <html lang="es">
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>BANKBU®</title>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>BANKBU®</title>
 
-    <link rel="stylesheet" href="../css/pages.css">
-    <link rel="stylesheet" href="../css/style.css">
-    <link rel="icon" href="../img/ACQUIRER-logo.JPG" type="image/x-icon">
-</head>
+        <link rel="stylesheet" href="../css/pages.css">
+        <link rel="stylesheet" href="../css/style.css">
+        <link rel="icon" href="../img/ACQUIRER-logo.JPG" type="image/x-icon">
+    </head>
 
-<body>
+    <body>
 
-    <header>
-        <img class="logo" src="../img/logoBankbu_.PNG" alt="Logo de Mi Empresa">
-        <div id="menuBtn">
-            <img class="TITLE" src="../img/menu.PNG" alt="Botón de Menú ">
-        </div>
-    </header>
-   <div id="menuContainer"></div>
-    <script>
-      fetch('menu.html')
-        .then(response => response.text())
-        .then(html => {
-          document.getElementById('menuContainer').innerHTML = html;
-        });
-    </script>
+        <header>
+            <img class="logo" src="../img/logoBankbu_.PNG"
+                alt="Logo de Mi Empresa">
+            <div id="menuBtn">
+                <img class="TITLE" src="../img/menu.PNG" alt="Botón de Menú ">
+            </div>
+        </header>
+        <div id="menuContainer"></div>
+        <script>
+    fetch('menu.html')
+      .then(response => response.text())
+      .then(html => {
+        document.getElementById('menuContainer').innerHTML = html;
+      });
+  </script>
 
-    <section>
-        <div>
-            <table>
-                <tr>
-                    <td>
-                        <div>
-                            <p class="TITLE">Origenes restringidos</p>
-                        </div>
-                    </td>
-                </tr>
-            </table>
-            <p>Or&iacute;genes restringidos : Campos en los que se parametriza uno o varios or&iacute;genes de
-                transacci&oacute;n que no har&aacute;n parte del esquema de puntajes.</p>
-            <p class="PARRAFO">El formulario contiene las opciones Eliminar
-                y Adicionar.</p>
-            <p class="TITLE"><img src="../img/MEF_006B51.PNG"></p>
-            <p class="PARRAFO"><span class="SUBTITULO">Filtro:</span>  El formulario cuenta
-                con un filtro inicial de b&uacute;squeda, necesario para la consulta de la
-                informaci&oacute;n:</p>
-            <p class="TITLE"><img src="../img/MEF_006B52.PNG"></p>
-            <p class="PARRAFO"><span class="SUBTITULO">Adicionar:</span>  Si
-                el usuario invoca la opci&oacute;n Adicionar se despliega un formulario con
-                los siguientes campos<span>:</span> 
+        <section>
+            <div>
+                <p class="TITLE">Origenes restringidos</p>
+
+                <p>Campo en el que se parametriza uno o varios orígenes de
+                    transacciones, que no harán parte del esquema de
+                    puntajes.</p>
+                <p class="PARRAFO">Mediante el botón ubicado en la parte
+                    superior izquierda se puede regresar al formulario principal
+                    de <a href="MEH_006B.html">Esquemas de puntajes</a> .</p>
+                <p class="PARRAFO">El formulario contiene las opciones Eliminar
+                    y Adicionar.</p>
+                <p class="TITLE"><img src="../img/MEF_006B51.PNG"></p>
+                <p class="PARRAFO"><span class="SUBTITULO">Filtro:</span> El
+                    formulario cuenta con un filtro inicial de búsqueda:</p>
+                <p class="TITLE"><img src="../img/MEF_006B52.PNG"></p>
+                <p class="PARRAFO"><span class="SUBTITULO">Adicionar:</span> Si
+                    el usuario invoca el enlace se despliega un formulario con
+                    los siguientes campos:</span>
             </p>
-
+            <p class="TITLE"><img src="../img/MEF_006B29.PNG"></p>
             <table>
                 <tr>
                     <td class="titletable">
-                        <p class="SUBTITULO">Or&iacute;gen</p>
+                        <p class="SUBTITULO">Orígen</p>
                     </td>
                     <td class="PARRAFO">
-                        <p>Se utiliza para poder parametrizar las transacciones originales que se usan para determinado
-                            cargue y validacion de movimientos al igual que establece de donde procede ese movimiento.
+                        <p>Campo que dispone de una lista de valores poblada en
+                            <a href="NUH_027B.html">Origen de transacciones</a>, 
+                            de la cual se debe seleccionar cada uno de los
+                            orígenes de movimiento que se desea excluir del
+                            Esquema de puntajes.
                         </p>
                     </td>
                 </tr>
             </table>
-    </section>
-    <script src="../js/menu.js"></script>
-</body>
-<div id="footerContainer"></div>
-<script>
+        </section>
+        <script src="../js/menu.js"></script>
+    </body>
+    <div id="footerContainer"></div>
+    <script>
   fetch('footer.html')
     .then(response => response.text())
     .then(html => {

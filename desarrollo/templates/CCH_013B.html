@@ -18,26 +18,20 @@
       <img class="TITLE" src="../img/menu.PNG" alt="Botón de Menú ">
     </div>
   </header>
-  <div id="menuContainer"></div>
-    <script>
-      fetch('menu.html')
-        .then(response => response.text())
-        .then(html => {
-          document.getElementById('menuContainer').innerHTML = html;
-        });
-    </script>
+    <div id="menuContainer"></div>
+  <script>
+    fetch('menu.html')
+      .then(response => response.text())
+      .then(html => {
+        document.getElementById('menuContainer').innerHTML = html;
+      });
+  </script>
 
   <section>
     <div>
-      <table>
-        <tr>
-          <td>
-            <div>
+      
               <p class="TITLE">Registro y actualizaci&oacute;n de clientes</p>
-            </div>
-          </td>
-        </tr>
-      </table>
+
       <p>Mediante este formulario se habilita el mantenimiento y consulta de una tabla que contiene la
         informaci&oacute;n de todas las obligaciones a las que se le ha iniciado gesti&oacute;n de cobro. El primer
         formulario permite la captura de la informaci&oacute;n b&aacute;sica de identificaci&oacute;n y ubicaci&oacute;n
@@ -49,13 +43,13 @@
       <p></p>
       <p class="PARRAFO"><span class="SUBTITULO">Adicionar:</span>  Si
         el usuario invoca la opci&oacute;n Adicionar se despliega un formulario con
-        los siguientes campos<span>:</span></p>
+        los siguientes campos:</span></p>
       <p class="TITLE"><img src="../img/CCF_013B1.PNG"></p>
 
       <table>
         <tr>
           <td class="titletable">
-            <p class="SUBTITULO"><b><span><span>Nombre</span></span></b></p>
+            <p class="SUBTITULO">Nombre</span></span></p>
           </td>
           <td>
             <p>Campo alfanum&eacute;rico de 80 posiciones, obligatorio, en el que se registra el nombre del cliente
@@ -64,7 +58,7 @@
         </tr>
         <tr>
           <td class="titletable">
-            <p class="SUBTITULO"><span>Sexo</span></p>
+            <p class="SUBTITULO">Sexo</span></p>
           </td>
           <td>
             <p class="PARRAFO">Este campo cuenta con lista de valores adjunta de la que debe seleccionarse entre
@@ -75,7 +69,7 @@
         </tr>
         <tr>
           <td class="titletable">
-            <p class="SUBTITULO"><b><span><span>Tipo de identificaci&oacute;n </span></span></b></p>
+            <p class="SUBTITULO">Tipo de identificaci&oacute;n </span></span></p>
           </td>
           <td>
             <p class="PARRAFO">Dupla de campos, obligatorios, en el primero de los cuales se selecciona de la lista de
@@ -85,7 +79,7 @@
         </tr>
         <tr>
           <td class="titletable">
-            <p class="SUBTITULO"><b><span><span>N&uacute;mero </span></span></b><span>identificaci&oacute;n</span></p>
+            <p class="SUBTITULO">N&uacute;mero </span></span>identificaci&oacute;n</span></p>
           </td>
           <td>
             <p>Campo en el cual se ingresa la informaci&oacute;n correspondiente al cliente.</p>
@@ -93,7 +87,7 @@
         </tr>
         <tr>
           <td class="titletable">
-            <p class="SUBTITULO"><b><span><span>Tel&eacute;fono 1 </span></span></b></p>
+            <p class="SUBTITULO">Tel&eacute;fono 1 </span></span></p>
           </td>
           <td>
             <p class="PARRAFO">Campo alfanum&eacute;rico de 12 posiciones, no obligatorio, dentro del que aparece el
@@ -102,7 +96,7 @@
         </tr>
         <tr>
           <td class="titletable">
-            <p class="SUBTITULO"><b><span>Tel&eacute;fono 2 </span></b></p>
+            <p class="SUBTITULO">Tel&eacute;fono 2 </span></p>
           </td>
           <td>
             <p>En este campo alfanum&eacute;rico de 12 posiciones, no obligatorio, se digita el segundo n&uacute;mero
@@ -155,13 +149,13 @@
 
       <p class="PARRAFO"><span class="SUBTITULO">Adicionar:</span>  Si
         el usuario invoca la opci&oacute;n Adicionar se despliega un formulario con
-        los siguientes campos<span>:</span></p>
+        los siguientes campos:</span></p>
       <p class="TITLE"><img src="../img/CCF_013B4.PNG"></p>
 
       <table>
         <tr>
           <td class="titletable">
-            <p class="SUBTITULO"><b><span><span>N&uacute;mero obligaci&oacute;n </span></span></b></p>
+            <p class="SUBTITULO">N&uacute;mero obligaci&oacute;n </span></span></p>
           </td>
           <td>
             <p>En este campo alfanum&eacute;rico de 25 posiciones, obligatorio, se registra la cadena de caracteres que
@@ -172,7 +166,7 @@
         </tr>
         <tr>
           <td class="titletable">
-            <p class="SUBTITULO"><span>N&uacute;mero cuota </span></p>
+            <p class="SUBTITULO">N&uacute;mero cuota </span></p>
           </td>
           <td>
             <p class="PARRAFO">En este campo num&eacute;rico de 3 d&iacute;gitos, obligatorio, contendr&aacute; el
@@ -182,7 +176,7 @@
         </tr>
         <tr>
           <td class="titletable">
-            <p class="SUBTITULO"><b><span><span>Prioridad</span></span></b></p>
+            <p class="SUBTITULO">Prioridad</span></span></p>
           </td>
           <td>
             <p>Campo num&eacute;rico de 3 d&iacute;gitos, no obligatorio, en el que es posible determinar la prioridad
@@ -192,7 +186,7 @@
         </tr>
         <tr>
           <td class="titletable">
-            <p class="SUBTITULO"><b><span><span>Edad mora </span></span></b></p>
+            <p class="SUBTITULO">Edad mora </span></span></p>
           </td>
           <td>
             <p>En este campo num&eacute;rico de 4 d&iacute;gitos, obligatorio, se indica la altura o edad de mora en que
@@ -202,7 +196,7 @@
         </tr>
         <tr>
           <td class="titletable">
-            <p class="SUBTITULO"><b><span><span>Abonos acumulados </span></span></b></p>
+            <p class="SUBTITULO">Abonos acumulados </span></span></p>
           </td>
           <td>
             <p>En este campo num&eacute;rico de 14 d&iacute;gitos m&aacute;s 2 decimales, se despliegan la sumatoria de
@@ -212,7 +206,7 @@
         </tr>
         <tr>
           <td class="titletable">
-            <p class="SUBTITULO"><span>&Uacute;ltimo abono </span></p>
+            <p class="SUBTITULO">&Uacute;ltimo abono </span></p>
           </td>
           <td>
             <p>Campo num&eacute;rico de 14 d&iacute;gitos m&aacute;s 2 decimales, no obligatorio, en el que se registra

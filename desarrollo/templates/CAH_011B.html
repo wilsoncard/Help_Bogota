@@ -18,24 +18,20 @@
             <img class="TITLE"  src= "../img/menu.PNG" alt="Botón de Menú ">
         </div>
     </header>
-   <div id="menuContainer"></div>
-    <script>
-      fetch('menu.html')
-        .then(response => response.text())
-        .then(html => {
-          document.getElementById('menuContainer').innerHTML = html;
-        });
-    </script>
+      <div id="menuContainer"></div>
+  <script>
+    fetch('menu.html')
+      .then(response => response.text())
+      .then(html => {
+        document.getElementById('menuContainer').innerHTML = html;
+      });
+  </script>
 
     <section>
         <div> 
-            <table>
-              <tr> 
-                <td><div> 
+            
                     <p  class="TITLE">Ajustes monetarios</p>
-                    </div></td>
-              </tr>
-            </table>
+                    
             <p class="PARRAFO">Mediante esta opci&oacute;n el Sistema <span >BankB&uacute;&reg;</span>  
               ofrece la funcionalidad que permite generar las diferentes transacciones monetarias 
               requeridas para afectar los saldos de la obligaci&oacute;n de un cliente, 
@@ -89,14 +85,14 @@
                     en que se denomina la transacci&oacute;n del ajuste.</p></td>
               </tr>
               <tr> 
-                <td class="titletable"><p class="SUBTITULO"><b>Sucursal</b></p></td>
+                <td class="titletable"><p class="SUBTITULO">Sucursal</p></td>
                 <td><p class="PARRAFO">Campo 
                     que posee lista de la cual se selecciona la <a href="NUH_020B.html" >sucursal</a> 
                     a trav&eacute;s de la cual se gestiona el ajuste.</p></td>
               </tr>
               <tr> 
-                <td class="titletable"><p class="SUBTITULO"><b>Fecha 
-                    transacci&oacute;n </b></p></td>
+                <td class="titletable"><p class="SUBTITULO">Fecha 
+                    transacci&oacute;n </p></td>
                 <td><p class="PARRAFO">Contiene 
                     la fecha en la cual se realiz&oacute; la transacci&oacute;n o en caso 
                     de la creaci&oacute;n de un cargo no registrado, contiene la fecha asociada 

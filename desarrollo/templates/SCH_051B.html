@@ -1,80 +1,81 @@
 <!DOCTYPE html>
 <html lang="es">
 
-<head>
+  <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>BANKBU®</title>
     <link rel="stylesheet" href="../css/pages.css">
     <link rel="stylesheet" href="../css/style.css">
- <link rel="icon" href="../img/ACQUIRER-logo.JPG" type="image/x-icon">
-</head>
+    <link rel="icon" href="../img/ACQUIRER-logo.JPG" type="image/x-icon">
+  </head>
 
-<body>
+  <body>
     <header>
-        <img class="logo" src="../img/logoBankbu_.PNG" alt="Logo de Mi Empresa">
-        <div id="menuBtn">
-            <img class="TITLE"  src= "../img/menu.PNG" alt="Botón de Menú ">
-        </div>
+      <img class="logo" src="../img/logoBankbu_.PNG" alt="Logo de Mi Empresa">
+      <div id="menuBtn">
+        <img class="TITLE" src="../img/menu.PNG" alt="Botón de Menú ">
+      </div>
     </header>
-   <div id="menuContainer"></div>
+    <div id="menuContainer"></div>
     <script>
-      fetch('menu.html')
-        .then(response => response.text())
-        .then(html => {
-          document.getElementById('menuContainer').innerHTML = html;
-        });
-    </script>
+    fetch('menu.html')
+      .then(response => response.text())
+      .then(html => {
+        document.getElementById('menuContainer').innerHTML = html;
+      });
+  </script>
 
     <section>
-        <div> 
-            <table>
-              <tr> 
-                <td><div> 
-                    <p  class="TITLE">Novedad calificaci&oacute;n tarjeta</p>
-                  </div></td>
-              </tr>
-            </table>
-            <p  class="PARRAFO">En este formulario invocado desde la opci&oacute;n 
-              <a href="SCH_075B1.html" >ingreso de novedades</a>, 
-              (issuer) la entidad puede registrar la calificaci&oacute;n asignada a la obligaci&oacute;n.
-            </p>
-            <p class="TITLE"><img src="../img/SCF_051E.PNG"362" height="79"></p>
-            
-            <p  class="TITLE">Descripci&oacute;n de campos</p>
-            <table>
-              <tr> 
-                <td class="titletable"><p class="SUBTITULO"><b><span 
-        > 
-                    Calificaci&oacute;n</span></b></p></td>
-                <td><p  class="PARRAFO">Campo 
-                    obligatorio que cuenta con lista de valores de la cual se puede seleccionar 
-                    la calificaci&oacute;n que la entidad desea asociar a la tarjeta o cr&eacute;dito. 
-                  </p></td>
-              </tr>
-           
-              <tr> 
-                <td class="titletable"><p class="SUBTITULO"><b><span 
-        >Fecha 
-                    de radicaci&oacute;n</span></b></p></td>
-                <td><p  class="PARRAFO">En 
-                    este campo obligatorio se registra en formato YYYY-MM-DD la fecha en 
-                    la cual se solicit&oacute; la actualizaci&oacute;n de la calificaci&oacute;n 
-                    para la tarjeta y que puede ser una fecha anterior a la actual del sistema, 
-                    facilitando el ingreso de novedades de fechas anteriores. </p></td>
-              </tr>
-            </table>
-        </section>
-    <script src="../js/menu.js"></script>
+      <div>
 
-    <div id="footerContainer"></div>
-<script>
+        <p class="TITLE">Novedad calificaci&oacute;n tarjeta</p>
+
+        <p class="PARRAFO">En este formulario invocado desde la opci&oacute;n
+          <a href="SCH_075B1.html">ingreso de novedades</a>,
+          (issuer) la entidad puede registrar la calificaci&oacute;n asignada a
+          la obligaci&oacute;n.
+        </p>
+        <p class="TITLE"><img src="../img/SCF_051E.PNG"></p>
+
+        <p class="TITLE">Descripci&oacute;n de campos</p>
+        <table>
+          <tr>
+            <td class="titletable"><p class="SUBTITULO"><span>
+                  Calificaci&oacute;n</span></p></td>
+            <td><p class="PARRAFO">Campo
+                obligatorio que cuenta con lista de valores de la cual se puede
+                seleccionar
+                la calificaci&oacute;n que la entidad desea asociar a la tarjeta
+                o cr&eacute;dito.
+              </p></td>
+          </tr>
+
+          <tr>
+            <td class="titletable"><p class="SUBTITULO"><span>Fecha
+                  de radicaci&oacute;n</span></p></td>
+            <td><p class="PARRAFO">En
+                este campo obligatorio se registra en formato YYYY-MM-DD la
+                fecha en
+                la cual se solicit&oacute; la actualizaci&oacute;n de la
+                calificaci&oacute;n
+                para la tarjeta y que puede ser una fecha anterior a la actual
+                del sistema,
+                facilitando el ingreso de novedades de fechas anteriores.
+              </p></td>
+          </tr>
+        </table>
+      </section>
+      <script src="../js/menu.js"></script>
+
+      <div id="footerContainer"></div>
+      <script>
   fetch('footer.html')
     .then(response => response.text())
     .then(html => {
       document.getElementById('footerContainer').innerHTML = html;
     });
 </script>
-</body>
+    </body>
 
-</html>
+  </html>

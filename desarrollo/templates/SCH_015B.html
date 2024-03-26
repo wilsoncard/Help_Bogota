@@ -1,184 +1,202 @@
 <!DOCTYPE html>
 <html lang="es">
 
-<head>
+  <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>BANKBU®</title>
     <link rel="stylesheet" href="../css/pages.css">
     <link rel="stylesheet" href="../css/style.css">
- <link rel="icon" href="../img/ACQUIRER-logo.JPG" type="image/x-icon">
-</head>
+    <link rel="icon" href="../img/ACQUIRER-logo.JPG" type="image/x-icon">
+  </head>
 
-<body>
+  <body>
     <header>
-        <img class="logo" src="../img/logoBankbu_.PNG" alt="Logo de Mi Empresa">
-        <div id="menuBtn">
-            <img class="TITLE"  src= "../img/menu.PNG" alt="Botón de Menú ">
-        </div>
+      <img class="logo" src="../img/logoBankbu_.PNG" alt="Logo de Mi Empresa">
+      <div id="menuBtn">
+        <img class="TITLE" src="../img/menu.PNG" alt="Botón de Menú ">
+      </div>
     </header>
-   <div id="menuContainer"></div>
+    <div id="menuContainer"></div>
     <script>
-      fetch('menu.html')
-        .then(response => response.text())
-        .then(html => {
-          document.getElementById('menuContainer').innerHTML = html;
-        });
-    </script>
+    fetch('menu.html')
+      .then(response => response.text())
+      .then(html => {
+        document.getElementById('menuContainer').innerHTML = html;
+      });
+  </script>
 
     <section>
-        <div> 
-            <table>
-              <tr> 
-                <td><div> 
-                    <p  class="TITLE">Novedad cambio de direcci&oacute;n</p>
-                  </div></td>
-              </tr>
-            </table>
-            <p  class="PARRAFO">En este formulario invocado desde la opci&oacute;n 
-              <a href="SOH_004B.html#BL_DIRECCIONES" >consulta de clientes</a>, 
-              en el bloque Direcciones, la entidad puede efectuar el ingreso o 
-              modificaci&oacute;n los datos relacionados con las direcciones y n&uacute;meros 
-              telef&oacute;nicos, mediante los que es posible ubicar directa o indirectamente 
-              al cliente y mantener as&iacute; actualizada la informaci&oacute;n del mismo.</p>
-            <p  class="PARRAFO">El formulario contiene las opciones Actualizar, 
-              Eliminar, Adicionar y Detalle. </p>
-            <p  class="PARRAFO"><span class="SUBTITULO"><b ><span            '>Adicionar</span></b><span 
-        >:</span><span 
-        ></span></span><span 
-        > 
-              Si el usuario invoca la opci&oacute;n Adicionar se despliega un formulario 
-              con los siguientes campos</span></p>
-            <p  class="PARRAFO"></p>
-            <p class="TITLE"><img src="../img/SCF_015E.PNG"458" height="419"></p>
-            <p  class="TITLE">Descripci&oacute;n de campos</p>
-            <table>
-              <tr> 
-                <td class="titletable"><p class="SUBTITULO"><b><span 
-        > 
-                    Direcci&oacute;n</span></b></p></td>
-                <td><p  class="PARRAFO">Campo 
-                    alfanum&eacute;rico de 60 posiciones, obligatorio, en el que se registra 
-                    la nomenclatura de cada uno de los lugares en los que usual o eventualmente 
-                    puede ser ubicado o, a los cuales es factible enviar correspondencia 
-                    al cliente.
-                  </p></td>
-              </tr>
-           
-              <tr> 
-                <td  class="titletable" ><p class="SUBTITULO"><b><span 
-        > 
-                    Tel&eacute;fono 1 / 2</span></b></p></td>
-                <td><p  class="PARRAFO">En 
-                    estos campos alfanum&eacute;ricos de 20 posiciones, no obligatorios, 
-                    se registran respectivamente el primer y segundo n&uacute;meros telef&oacute;nicos 
-                    en los que es posible ubicar al cliente.
-                  </p></td>
-              </tr>
-              <tr> 
-                <td  class="titletable" ><p class="SUBTITULO"><b><span 
-        > 
-                    Extensi&oacute;n 1 / 2</span></b></p></td>
-                <td><p  class="PARRAFO">Campos 
-                    alfanum&eacute;ricos de 6 posiciones, no obligatorios, en los que se 
-                    registra si el el caso la extensi&oacute;n asociada respectivamente 
-                    al primer y segundo n&uacute;meros telef&oacute;nicos en el que es posible 
-                    ubicar al cliente.
-                  </p></td>
-              </tr>
-              <tr> 
-                <td  class="titletable" ><p class="SUBTITULO"><b><span 
-        > 
-                    Celular</span></b></p></td>
-                <td><p  class="PARRAFO">En 
-                    este campo alfanum&eacute;rico de 12 posiciones, no obligatorio, se 
-                    ingresa el n&uacute;mero del tel&eacute;fono celular del cliente. </p></td>
-              </tr>
-              <tr> 
-                <td class="titletable"><p class="SUBTITULO"><b><span 
-        >Fax</span></b></p></td>
-                <td><p  class="PARRAFO">Campo 
-                    alfanum&eacute;rico de 12 posiciones, no obligatorio, en el que se registra 
-                    el n&uacute;mero del fax al que es posible enviar comunicados al cliente.</p></td>
-              </tr>
-           
-              <tr> 
-                <td  class="titletable" ><p class="SUBTITULO"><b><span 
-        >Tipo 
-                    direcci&oacute;n </span></b></p></td>
-                <td><p  class="PARRAFO">Este 
-                    campo obligatorio cuenta con lista de valores de la que debe seleccionarse 
-                    el <a href="NUH_004B.html" >Tipo de direcci&oacute;n</a> 
-                    que se est&aacute; ingresando.
-                  </p></td>
-              </tr>
-              <tr> 
-                <td  class="titletable" ><p class="SUBTITULO"><b><span 
-        >Correspondencia</span></b></p></td>
-                <td><p  class="PARRAFO">Campo 
-                    tipo check en el cual se marca para indicar si la direcci&oacute;n ingresada 
-                    es la de correspondencia o no; el sistema valida que el cliente no pued 
-                    tener m&aacute;s de una direcci&oacute;n marcada como de correspondencia. 
-                  </p></td>
-              </tr>
-              <tr> 
-                <td  class="titletable" ><p class="SUBTITULO"><b><span 
-        >Ubicac</span><span 
-        >i&oacute;n</span></b></p></td>
-                <td><p  class="PARRAFO">Este 
-                    campo obligatorio contiene lista de valores de la cual la entidad puede 
-                    seleccionar la <a href="NUH_003B.html" >ubicaci&oacute;n 
-                    geogr&aacute;fica</a> correspondiente a la direcci&oacute;n registrada 
-                    por el cliente.</p></td>
-              </tr>
-              <tr> 
-                <td  class="titletable" ><p class="SUBTITULO"><b><span 
-        >Zona 
-                    postal </span></b></p></td>
-                <td><p  class="PARRAFO">Campo 
-                    no obligatorio en el cual se ingressa el c&oacute;digo postal asociado 
-                    a la nomenclatura de la direcci&oacute;n que se est&aacute; ingresando. 
-                    El sistema eval&uacute;a la consistencia de los datos, aqu&iacute; registrados, 
-                    con lo parametrizado en la opci&oacute;n <a href="NUH_003B.html" >Entidades 
-                    territoriales</a>
-                  </p></td>
-              </tr>
-              <tr> 
-                <td  class="titletable" ><p class="SUBTITULO"><b><span 
-        > 
-                    Fecha de radicaci&oacute;n</span></b></p></td>
-                <td><p  class="PARRAFO">En 
-                    este campo obligatorio se registra en formato YYYY-MM-DD la fecha en 
-                    la cual se solicit&oacute; el cambio o adici&oacute;n de la direcci&oacute;n 
-                    y que puede ser una fecha anterior a la actual del sistema, facilitando 
-                    el ingreso de novedades de fechas anteriores. </p></td>
-              </tr>
-            </table>
+      <div>
 
-            <p class="PARRAFO"><b ><span class="SUBTITULO">Actualizar</span></b>: 
-              Si el usuario selecciona un registro e invoca la opci&oacute;n Actualizar 
-              se despliega un nuevo formulario en el cual todos sus campos son modificables.</p>
-            <p  class="PARRAFO"></p>
-            <p class="TITLE"><img src="../img/SCF_015E1.PNG"458" height="419"></p>
-            .
-            <p class="PARRAFO"><b ><span class="SUBTITULO">Detalle</span></b>: 
-              Si el usuario selecciona un registro e invoca la opci&oacute;n Detalle se 
-              despliega un nuevo formulario con toda la informaci&oacute;n del registro 
-              y en el cual ninguno de sus campos es modificable.</p>
-           
-            <p class="TITLE"><img src="../img/SCF_015E2.PNG"689" ></p>
-            <div>
+        <p class="TITLE">Novedad cambio de direcci&oacute;n</p>
+
+        <p class="PARRAFO">En este formulario invocado desde la opci&oacute;n
+          <a href="SOH_004B.html#BL_DIRECCIONES">consulta de clientes</a>,
+          en el bloque Direcciones, la entidad puede efectuar el ingreso o
+          modificaci&oacute;n los datos relacionados con las direcciones y
+          n&uacute;meros
+          telef&oacute;nicos, mediante los que es posible ubicar directa o
+          indirectamente
+          al cliente y mantener as&iacute; actualizada la informaci&oacute;n del
+          mismo.</p>
+        <p class="PARRAFO">El formulario contiene las opciones Actualizar,
+          Eliminar, Adicionar y Detalle. </p>
+        <p class="PARRAFO"><span class="SUBTITULO">Adicionar</span><span>:</span>
+            Si el usuario invoca la opci&oacute;n Adicionar se despliega un
+            formulario
+            con los siguientes campos</p>
+        <p class="PARRAFO"></p>
+        <p class="TITLE"><img src="../img/SCF_015E.PNG"></p>
+        <p class="TITLE">Descripci&oacute;n de campos</p>
+        <table>
+          <tr>
+            <td class="titletable"><p class="SUBTITULO"><span>
+                  Direcci&oacute;n</span></p></td>
+            <td><p class="PARRAFO">Campo
+                alfanum&eacute;rico de 60 posiciones, obligatorio, en el que se
+                registra
+                la nomenclatura de cada uno de los lugares en los que usual o
+                eventualmente
+                puede ser ubicado o, a los cuales es factible enviar
+                correspondencia
+                al cliente.
+              </p></td>
+          </tr>
+
+          <tr>
+            <td class="titletable"><p class="SUBTITULO"><span>
+                  Tel&eacute;fono 1 / 2</span></p></td>
+            <td><p class="PARRAFO">En
+                estos campos alfanum&eacute;ricos de 20 posiciones, no
+                obligatorios,
+                se registran respectivamente el primer y segundo n&uacute;meros
+                telef&oacute;nicos
+                en los que es posible ubicar al cliente.
+              </p></td>
+          </tr>
+          <tr>
+            <td class="titletable"><p class="SUBTITULO"><span>
+                  Extensi&oacute;n 1 / 2</span></p></td>
+            <td><p class="PARRAFO">Campos
+                alfanum&eacute;ricos de 6 posiciones, no obligatorios, en los
+                que se
+                registra si el el caso la extensi&oacute;n asociada
+                respectivamente
+                al primer y segundo n&uacute;meros telef&oacute;nicos en el que
+                es posible
+                ubicar al cliente.
+              </p></td>
+          </tr>
+          <tr>
+            <td class="titletable"><p class="SUBTITULO"><span>
+                  Celular</span></p></td>
+            <td><p class="PARRAFO">En
+                este campo alfanum&eacute;rico de 12 posiciones, no obligatorio,
+                se
+                ingresa el n&uacute;mero del tel&eacute;fono celular del
+                cliente. </p></td>
+          </tr>
+          <tr>
+            <td class="titletable"><p
+                class="SUBTITULO"><span>Fax</span></p></td>
+            <td><p class="PARRAFO">Campo
+                alfanum&eacute;rico de 12 posiciones, no obligatorio, en el que
+                se registra
+                el n&uacute;mero del fax al que es posible enviar comunicados al
+                cliente.</p></td>
+          </tr>
+
+          <tr>
+            <td class="titletable"><p class="SUBTITULO"><span>Tipo
+                  direcci&oacute;n </span></p></td>
+            <td><p class="PARRAFO">Este
+                campo obligatorio cuenta con lista de valores de la que debe
+                seleccionarse
+                el <a href="NUH_004B.html">Tipo de direcci&oacute;n</a>
+                que se est&aacute; ingresando.
+              </p></td>
+          </tr>
+          <tr>
+            <td class="titletable"><p
+                class="SUBTITULO"><span>Correspondencia</span></p></td>
+            <td><p class="PARRAFO">Campo
+                tipo check en el cual se marca para indicar si la
+                direcci&oacute;n ingresada
+                es la de correspondencia o no; el sistema valida que el cliente
+                no pued
+                tener m&aacute;s de una direcci&oacute;n marcada como de
+                correspondencia.
+              </p></td>
+          </tr>
+          <tr>
+            <td class="titletable"><p
+                class="SUBTITULO"><span>Ubicac</span><span>i&oacute;n</span></p></td>
+            <td><p class="PARRAFO">Este
+                campo obligatorio contiene lista de valores de la cual la
+                entidad puede
+                seleccionar la <a href="NUH_003B.html">ubicaci&oacute;n
+                  geogr&aacute;fica</a> correspondiente a la direcci&oacute;n
+                registrada
+                por el cliente.</p></td>
+          </tr>
+          <tr>
+            <td class="titletable"><p class="SUBTITULO"><span>Zona
+                  postal </span></p></td>
+            <td><p class="PARRAFO">Campo
+                no obligatorio en el cual se ingressa el c&oacute;digo postal
+                asociado
+                a la nomenclatura de la direcci&oacute;n que se est&aacute;
+                ingresando.
+                El sistema eval&uacute;a la consistencia de los datos,
+                aqu&iacute; registrados,
+                con lo parametrizado en la opci&oacute;n <a
+                  href="NUH_003B.html">Entidades
+                  territoriales</a>
+              </p></td>
+          </tr>
+          <tr>
+            <td class="titletable"><p class="SUBTITULO"><span>
+                  Fecha de radicaci&oacute;n</span></p></td>
+            <td><p class="PARRAFO">En
+                este campo obligatorio se registra en formato YYYY-MM-DD la
+                fecha en
+                la cual se solicit&oacute; el cambio o adici&oacute;n de la
+                direcci&oacute;n
+                y que puede ser una fecha anterior a la actual del sistema,
+                facilitando
+                el ingreso de novedades de fechas anteriores. </p></td>
+          </tr>
+        </table>
+
+        <p class="PARRAFO"><span class="SUBTITULO">Actualizar</span>:
+          Si el usuario selecciona un registro e invoca la opci&oacute;n
+          Actualizar
+          se despliega un nuevo formulario en el cual todos sus campos son
+          modificables.</p>
+        <p class="PARRAFO"></p>
+        <p class="TITLE"><img src="../img/SCF_015E1.PNG"></p>
+        
+        <p class="PARRAFO"><span class="SUBTITULO">Detalle</span>:
+          Si el usuario selecciona un registro e invoca la opci&oacute;n Detalle
+          se
+          despliega un nuevo formulario con toda la informaci&oacute;n del
+          registro
+          y en el cual ninguno de sus campos es modificable.</p>
+
+        <p class="TITLE"><img src="../img/SCF_015E2.PNG"></p>
+        <div>
         </section>
-    <script src="../js/menu.js"></script>
+        <script src="../js/menu.js"></script>
 
-    <div id="footerContainer"></div>
-<script>
+        <div id="footerContainer"></div>
+        <script>
   fetch('footer.html')
     .then(response => response.text())
     .then(html => {
       document.getElementById('footerContainer').innerHTML = html;
     });
 </script>
-</body>
+      </body>
 
-</html>
+    </html>

@@ -17,24 +17,20 @@
             <img class="TITLE"  src= "../img/menu.PNG" alt="Botón de Menú ">
         </div>
     </header>
-   <div id="menuContainer"></div>
-    <script>
-      fetch('menu.html')
-        .then(response => response.text())
-        .then(html => {
-          document.getElementById('menuContainer').innerHTML = html;
-        });
-    </script>
+      <div id="menuContainer"></div>
+  <script>
+    fetch('menu.html')
+      .then(response => response.text())
+      .then(html => {
+        document.getElementById('menuContainer').innerHTML = html;
+      });
+  </script>
 
     <section>
         <div> 
-            <table>
-              <tr> 
-                <td><div> 
+            
                     <p  class="TITLE">Indicadores econ&oacute;micos (corporativos)</p>
-                    </div></td>
-              </tr>
-            </table>
+                    
             <p>Mediante esta funci&oacute;n se habilita la consulta y mantenimiento de la 
               tabla corporativa o de cada entidad, dependiendo de la opci&oacute;n del men&uacute; 
               desde la cual es invocada, en la cual se almacena el valor absoluto, para 
@@ -45,7 +41,7 @@
               las Tablas corporativas. Al igual que los valores de las tasas de cambio, 
               es necesario realizar diariamente, a primera hora, la actualizaci&oacute;n 
               de los indicadores b&aacute;sicos para el correcto funcionamiento del sistema.</p>
-            <p class="TITLE"><img src="../img/NUF_043B.PNG" alt="Formulario"715" height="717"></p>
+            <p class="TITLE"><img src="../img/NUF_043B.PNG"></p>
             <p><a name="Volver"></a></p>
             
             <p  class="PARRAFO">El formulario contiene las opciones Actualizar, 
@@ -56,53 +52,51 @@
               los mismos.</p>
             <p><span class="SUBTITULO">Filtro:</span>  Se pueden realizar consultas 
               a trav&eacute;s de las siguientes opciones: </p>
-            <p class="TITLE"><img src="../img/NUF_043B1.PNG" alt="Filtro"386" height="125"></p>
+            <p class="TITLE"><img src="../img/NUF_043B1.PNG"></p>
             
             <table>
               <tr>
-                <td  class="titletable" ><p class="SUBTITULO"><b><span 
-        >Fecha de ingreso </span></span></b></p></td>
+                <td  class="titletable" ><p class="SUBTITULO"><span 
+        >Fecha de ingreso </span></span></p></td>
                 <td><p>Campo en formato fecha YYYY/MM/AA,  que contiene por defecto la fecha actual del sistema. </p>      
                 </td>
               </tr>
               <tr>
-                <td class="titletable"><p class="SUBTITULO"><b><span 
-        >indicador econ&oacute;mico </span></span></b></p></td>
+                <td class="titletable"><p class="SUBTITULO"><span 
+        >indicador econ&oacute;mico </span></span></p></td>
                 <td><p>Campo que contiene lista de valores poblada   a trav&eacute;s de la opci&oacute;n <a href="NUH_036B.html">tipos de tasas e   indicadores</a> de la que se selecciona el c&oacute;digo (o nombre) asignado a cada   uno de los indicadores econ&oacute;micos requeridos.</p>      </td>
               </tr>
             </table>
             
             <p  class="PARRAFO"><span class="SUBTITULO">Adicionar:</span>  Si el usuario invoca la opci&oacute;n Adicionar se despliega un formulario con los siguientes campos<span 
         >:</span></p>
-            <p class="TITLE"><img src="../img/NUF_043B2.PNG" alt="Adicionar"397" height="130"></p>
+            <p class="TITLE"><img src="../img/NUF_043B2.PNG" alt="Adicionar"></p>
             
             <table>
               <tr>
-                <td class="titletable"><p class="SUBTITULO"><b><span 
-        >Indicador econ&oacute;mico </span></span></b></p></td>
+                <td class="titletable"><p class="SUBTITULO"><span 
+        >Indicador econ&oacute;mico </span></span></p></td>
                 <td><p class="PARRAFO">Campo que contiene lista de valores poblada   a trav&eacute;s de la opci&oacute;n <a href="NUH_036B.html">tipos de tasas e   indicadores</a> de la que se selecciona el c&oacute;digo (o nombre) asignado a cada   uno de los indicadores econ&oacute;micos requeridos. Al ingresar un c&oacute;digo se   valida contra la lista; aquellos que no aparecen en la lista corresponden a   indicadores que son el resultado de c&aacute;lculos basados en algunas de &eacute;stas   cifras.</p>        
                 </td>
               </tr>
               <tr>
-                <td class="titletable"><p class="SUBTITULO"><b><span 
-        >Fecha de ingreso </span></span></b></p></td>
+                <td class="titletable"><p class="SUBTITULO"><span 
+        >Fecha de ingreso </span></span></p></td>
                 <td><p class="PARRAFO">Despliega la fecha seleccionada del   calendario, apareciendo por defecto la del d&iacute;a actual.</p>      
                 </td>
               </tr>
               <tr>
-                <td  class="titletable" ><p class="SUBTITULO"><b><span 
-        >Valor</span></b></p></td>
+                <td  class="titletable" ><p class="SUBTITULO"><span 
+        >Valor</span></p></td>
                 <td><p class="PARRAFO">Campo num&eacute;rico obligatorio, que en un m&aacute;ximo   de seis enteros y seis decimales permite registrar el valor porcentual v&aacute;lido   para cada indicador econ&oacute;mico tipo base.</p>        
                 </td>
               </tr>
             </table>
             <p  class="PARRAFO"><span class="PARRAFO"><span class="SUBTITULO">Actualizar:</span>  Si el usuario invoca la opci&oacute;n Actualizar se despliega un nuevo formulario 
             en el cual el &uacute;nico campo modificable es:  Valor.</span></p>
-            <p class="TITLE"><img src="../img/NUF_043B3.PNG" alt="Actualizar"379" height="129"></p>
+            <p class="TITLE"><img src="../img/NUF_043B3.PNG"></p>
            
-            <p class="PARRAFO"><span class="SUBTITULO"><span class="SUBTITULO">Copiar indicadores del d&iacute;a anterior<a name="Boton"></a></span> :</span>  Utilitario que permite replicar los valores para los diferentes indicadores   econ&oacute;micos definidos el d&iacute;a anterior, si existen, y solamente modificar aquellos   cuyos valores hayan variado.<span
-              
-        >
+            <p class="PARRAFO"><span class="SUBTITULO">Copiar indicadores del d&iacute;a anterior<a name="Boton"></a></span> :</span>  Utilitario que permite replicar los valores para los diferentes indicadores   econ&oacute;micos definidos el d&iacute;a anterior, si existen, y solamente modificar aquellos   cuyos valores hayan variado.<span>
               
             </span></p>
             <p class="TITLE"><img src="../img/NUF_043B4.PNG" ></p>

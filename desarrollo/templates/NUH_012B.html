@@ -17,26 +17,20 @@
       <img class="TITLE" src="../img/menu.PNG" alt="Botón de Menú ">
     </div>
   </header>
-  <div id="menuContainer"></div>
-    <script>
-      fetch('menu.html')
-        .then(response => response.text())
-        .then(html => {
-          document.getElementById('menuContainer').innerHTML = html;
-        });
-    </script>
+    <div id="menuContainer"></div>
+  <script>
+    fetch('menu.html')
+      .then(response => response.text())
+      .then(html => {
+        document.getElementById('menuContainer').innerHTML = html;
+      });
+  </script>
 
   <section>
     <div>
-      <table>
-        <tr>
-          <td>
-            <div>
+      
               <p class="TITLE">Bloqueos</p>
-            </div>
-          </td>
-        </tr>
-      </table>
+
       <p class="PARRAFO">Mediante esta funci&oacute;n se habilita
         la consulta y mantenimiento (reservado a funcionarios de OpenCard SAS),
         de la tabla en la cual se almacenan los c&oacute;digos, descripciones y tipos
@@ -49,7 +43,7 @@
 
       <p class="PARRAFO">El formulario contiene las opciones Actualizar,
         Eliminar y Adicionar. </p>
-      <p class="PARRAFO"><span class="SUBTITULO"><b><span>Adicionar</span></b><span 
+      <p class="PARRAFO"><span class="SUBTITULO">Adicionar</span><span 
         >:</span><span 
         ></span></span><span 
         > 
@@ -58,8 +52,8 @@
             <p  class="TITLE">Descripci&oacute;n de campos</p>
             <table>
               <tr> 
-                <td class="titletable"><p class="SUBTITULO"><b><span 
-        >C&oacute;digo</span></b></p></td>
+                <td class="titletable"><p class="SUBTITULO"><span 
+        >C&oacute;digo</span></p></td>
                 <td><p  class="PARRAFO">Campo 
                     alfanum&eacute;rico de 1 posici&oacute;n, obligatorio, con el que se 
                     identifica cada bloqueo a definir. Este campo no es modificable, a&uacute;n 
@@ -69,8 +63,8 @@
                   </p></td>
               </tr>
               <tr> 
-                <td class="titletable"><p class="SUBTITULO"><b><span 
-        >Descripci&oacute;n</span></b></p></td>
+                <td class="titletable"><p class="SUBTITULO"><span 
+        >Descripci&oacute;n</span></p></td>
                 <td><p  class="PARRAFO">En 
                     este campo alfanum&eacute;rico de 30 posiciones, obligatorio, se registra 
                     el nombre o descripci&oacute;n de cada bloqueo codificado.
@@ -79,9 +73,9 @@
               </tr>
            
               <tr> 
-                <td class="titletable" ><p class="SUBTITULO"><b>Tipo 
+                <td class="titletable" ><p class="SUBTITULO">Tipo 
                     bloqueo
-                    </b></p></td>
+                    </p></td>
                 <td><p  class="PARRAFO">Campo 
                     que posee lista de valores adjunta de la que debe seleccionarse entre 
                     Reestructuraci&oacute;n, Pl&aacute;stico, Sobrecupo, Persona o Saldo 
@@ -91,8 +85,8 @@
               </tr>
             </table>
             <div> 
-              <p class="PARRAFO"><b ><span class="SUBTITULO"> 
-                Actualizar</span></b>: Si el usuario invoca la opci&oacute;n Actualizar 
+              <p class="PARRAFO"><span class="SUBTITULO"> 
+                Actualizar</span>: Si el usuario invoca la opci&oacute;n Actualizar 
                 se despliega un nuevo formulario en el cual los &uacute;nicos campos modificables 
                 son Descripci&oacute;n y Tipo bloqueo
               </p>

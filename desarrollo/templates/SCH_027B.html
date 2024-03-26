@@ -1,105 +1,110 @@
 <!DOCTYPE html>
 <html lang="es">
 
-<head>
+  <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>BANKBU®</title>
     <link rel="stylesheet" href="../css/pages.css">
     <link rel="stylesheet" href="../css/style.css">
- <link rel="icon" href="../img/ACQUIRER-logo.JPG" type="image/x-icon">
-</head>
+    <link rel="icon" href="../img/ACQUIRER-logo.JPG" type="image/x-icon">
+  </head>
 
-<body>
+  <body>
     <header>
-        <img class="logo" src="../img/logoBankbu_.PNG" alt="Logo de Mi Empresa">
-        <div id="menuBtn">
-            <img class="TITLE"  src= "../img/menu.PNG" alt="Botón de Menú ">
-        </div>
+      <img class="logo" src="../img/logoBankbu_.PNG" alt="Logo de Mi Empresa">
+      <div id="menuBtn">
+        <img class="TITLE" src="../img/menu.PNG" alt="Botón de Menú ">
+      </div>
     </header>
-   <div id="menuContainer"></div>
+    <div id="menuContainer"></div>
     <script>
-      fetch('menu.html')
-        .then(response => response.text())
-        .then(html => {
-          document.getElementById('menuContainer').innerHTML = html;
-        });
-    </script>
+    fetch('menu.html')
+      .then(response => response.text())
+      .then(html => {
+        document.getElementById('menuContainer').innerHTML = html;
+      });
+  </script>
 
     <section>
-        <div> 
-            <table>
-              <tr> 
-                <td><div> 
-                    <p  class="TITLE">Novedad tarjeta amparada/extendida/adicional 
-                      a principal</p>
-                    </div></td>
-              </tr>
-            </table>
-            <p  class="PARRAFO">En este formulario invocado desde la opci&oacute;n 
-              <a href="SCH_075B1.html" >ingreso de novedades</a>, 
-              (issuer) y que aplica exclusivamente para tarjetas que no sean principales, 
-              la entidad puede efectuar el cambio para convertir una tarjeta amparada, extendida 
-              o adicional en principal, rompiendo el v&iacute;nculo de dependencia existente 
-              actualmente con la tarjeta de la cual depende.
-            </p>
-            <p class="TITLE"><img src="../img/SCF_027E.PNG"323" height="138"></p>
-            <p  class="TITLE">Descripci&oacute;n de campos</p>
-            <table>
-              <tr> 
-                <td class="titletable"><p class="SUBTITULO"><b><span 
-        > 
-                    Tipo tarjeta</span></b></p></td>
-                <td><p  class="PARRAFO">Campo 
-                    obligatorio tipo combo, en el cual se muestra inicialmente el tipo de 
-                    tarjeta actual a la cual se le va a aplicar la novedad, y de la que 
-                    se selecciona la opci&oacute;n Principal para indicar la acci&oacute;n 
-                    a ejecutar. </p></td>
-              </tr>
-           
-              <tr> 
-                <td class="titletable"><p class="SUBTITULO"><b><span 
-        >N&uacute;mero 
-                    tarjeta principal</span></b></p>
-                  </td>
-                <td><p  class="PARRAFO">En 
-                    este campo de salida se despliega el n&uacute;mero actual de la tarjeta 
-                    del cliente principal al que se encuentra asociada la tarjeta que desea 
-                    &quot;independizarse&quot;. </p></td>
-              </tr>
-           
-              <tr> 
-                <td class="titletable"><p class="SUBTITULO"><b><span 
-        >Nombre 
-                    principal </span></b></p></td>
-                <td><p  class="PARRAFO">Campo 
-                    de salida en el que se muestra el nombre del cliente a quien pertenece 
-                    la tarjeta principal a la que se encuentra asociada la tarjeta que desea 
-                    &quot;independizarse&quot;. </p></td>
-              </tr>
-           
-              <tr> 
-                <td class="titletable"><p class="SUBTITULO"><b><span 
-        >Fecha 
-                    radicaci&oacute;n</span></b></p></td>
-                <td><p  class="PARRAFO">Campo 
-                    obligatorio en el que se registra en formato YYYY-MM-DD la fecha en 
-                    la cual se ingres&oacute; el cambio de tarjeta dependiente a principal 
-                    y que puede ser una fecha anterior a la actual del sistema, facilitando 
-                    el ingreso de novedades de fechas anteriores. </p></td>
-              </tr>
-            </table>
-        </section>
-    <script src="../js/menu.js"></script>
+      <div>
 
-    <div id="footerContainer"></div>
-<script>
+        <p class="TITLE">Novedad tarjeta amparada/extendida/adicional
+          a principal</p>
+
+        <p class="PARRAFO">En este formulario invocado desde la opci&oacute;n
+          <a href="SCH_075B1.html">ingreso de novedades</a>,
+          (issuer) y que aplica exclusivamente para tarjetas que no sean
+          principales,
+          la entidad puede efectuar el cambio para convertir una tarjeta
+          amparada, extendida
+          o adicional en principal, rompiendo el v&iacute;nculo de dependencia
+          existente
+          actualmente con la tarjeta de la cual depende.
+        </p>
+        <p class="TITLE"><img src="../img/SCF_027E.PNG"></p>
+        <p class="TITLE">Descripci&oacute;n de campos</p>
+        <table>
+          <tr>
+            <td class="titletable"><p class="SUBTITULO"><span>
+                  Tipo tarjeta</span></p></td>
+            <td><p class="PARRAFO">Campo
+                obligatorio tipo combo, en el cual se muestra inicialmente el
+                tipo de
+                tarjeta actual a la cual se le va a aplicar la novedad, y de la
+                que
+                se selecciona la opci&oacute;n Principal para indicar la
+                acci&oacute;n
+                a ejecutar. </p></td>
+          </tr>
+
+          <tr>
+            <td class="titletable"><p class="SUBTITULO"><span>N&uacute;mero
+                  tarjeta principal</span></p>
+            </td>
+            <td><p class="PARRAFO">En
+                este campo de salida se despliega el n&uacute;mero actual de la
+                tarjeta
+                del cliente principal al que se encuentra asociada la tarjeta
+                que desea
+                &quot;independizarse&quot;. </p></td>
+          </tr>
+
+          <tr>
+            <td class="titletable"><p class="SUBTITULO"><span>Nombre
+                  principal </span></p></td>
+            <td><p class="PARRAFO">Campo
+                de salida en el que se muestra el nombre del cliente a quien
+                pertenece
+                la tarjeta principal a la que se encuentra asociada la tarjeta
+                que desea
+                &quot;independizarse&quot;. </p></td>
+          </tr>
+
+          <tr>
+            <td class="titletable"><p class="SUBTITULO"><span>Fecha
+                  radicaci&oacute;n</span></p></td>
+            <td><p class="PARRAFO">Campo
+                obligatorio en el que se registra en formato YYYY-MM-DD la fecha
+                en
+                la cual se ingres&oacute; el cambio de tarjeta dependiente a
+                principal
+                y que puede ser una fecha anterior a la actual del sistema,
+                facilitando
+                el ingreso de novedades de fechas anteriores. </p></td>
+          </tr>
+        </table>
+      </section>
+      <script src="../js/menu.js"></script>
+
+      <div id="footerContainer"></div>
+      <script>
   fetch('footer.html')
     .then(response => response.text())
     .then(html => {
       document.getElementById('footerContainer').innerHTML = html;
     });
 </script>
-</body>
+    </body>
 
-</html>
+  </html>

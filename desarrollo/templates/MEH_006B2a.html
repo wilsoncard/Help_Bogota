@@ -1,85 +1,110 @@
 <!DOCTYPE html>
 <html lang="es">
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>BANKBU®</title>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>BANKBU®</title>
 
-    <link rel="stylesheet" href="../css/pages.css">
-    <link rel="stylesheet" href="../css/style.css">
-    <link rel="icon" href="../img/ACQUIRER-logo.JPG" type="image/x-icon">
-</head>
+        <link rel="stylesheet" href="../css/pages.css">
+        <link rel="stylesheet" href="../css/style.css">
+        <link rel="icon" href="../img/ACQUIRER-logo.JPG" type="image/x-icon">
+    </head>
 
-<body>
+    <body>
 
-    <header>
-        <img class="logo" src="../img/logoBankbu_.PNG" alt="Logo de Mi Empresa">
-        <div id="menuBtn">
-            <img class="TITLE" src="../img/menu.PNG" alt="Botón de Menú ">
-        </div>
-    </header>
-   <div id="menuContainer"></div>
-    <script>
-      fetch('menu.html')
-        .then(response => response.text())
-        .then(html => {
-          document.getElementById('menuContainer').innerHTML = html;
-        });
-    </script>
+        <header>
+            <img class="logo" src="../img/logoBankbu_.PNG"
+                alt="Logo de Mi Empresa">
+            <div id="menuBtn">
+                <img class="TITLE" src="../img/menu.PNG" alt="Botón de Menú ">
+            </div>
+        </header>
+        <div id="menuContainer"></div>
+        <script>
+    fetch('menu.html')
+      .then(response => response.text())
+      .then(html => {
+        document.getElementById('menuContainer').innerHTML = html;
+      });
+  </script>
 
-    <section>
-        <div>
-            <table>
-                <tr>
-                    <td>
-                        <div>
-                            <p class="TITLE">Esquemas de puntajes - Par&aacute;metros adicionales </p>
-                        </div>
-                    </td>
-                </tr>
-            </table>
-            <p><span class="SUBTITULO">Parametros adicionales:</span> En este espacio la entidad define, de una
-                parte, los lineamientos especiales correspondientes al mecanismo de redenci&oacute;n de puntos y, de
-                otro lado, la secuencia y condiciones de orden y si aplica o no la fuente de generaci&oacute;n de los
-                puntos. Es importante tener en cuenta que la relaci&oacute;n esquema puntajes/mecanismo de
-                redenci&oacute;n es uno a uno, o en otras palabras, es posible asociar un &uacute;nico mecanismo de
-                redenci&oacute;n por esquema.</p>
-            <p>A trav&eacute;s de los botones Salvar o Cancelar, se regresa al formulario principal de <a
-                    href="MEH_006B.html">Esquemas de puntajes</a>. </p>
-            <p class="TITLE"><img src="../img/MEF_006B2a.PNG"></p>
+        <section>
+            <div>
+                <table>
+                    <tr>
+                        <td>
+                            <div>
+                                <p class="TITLE">Esquemas de puntajes -
+                                    Par&aacute;metros adicionales </p>
+                            </div>
+                        </td>
+                    </tr>
+                </table>
+                <p><span class="SUBTITULO">Parametros adicionales:</span> En
+                    este espacio la entidad define, de una
+                    parte, los lineamientos especiales correspondientes al
+                    mecanismo de redenci&oacute;n de puntos y, de
+                    otro lado, la secuencia y condiciones de orden y si aplica o
+                    no la fuente de generaci&oacute;n de los
+                    puntos. Es importante tener en cuenta que la relaci&oacute;n
+                    esquema puntajes/mecanismo de
+                    redenci&oacute;n es uno a uno, o en otras palabras, es
+                    posible asociar un &uacute;nico mecanismo de
+                    redenci&oacute;n por esquema.</p>
+                <p>A trav&eacute;s de los botones Salvar o Cancelar, se regresa
+                    al formulario principal de <a
+                        href="MEH_006B.html">Esquemas de puntajes</a>. </p>
+                <p class="TITLE"><img src="../img/MEF_006B2a.PNG"></p>
 
-            <p><span class="SUBTITULO">Secuencia y condiciones:</span> Dado que la transacci&oacute;n es
-                la esencia o causa para que el sistema genere o no puntos para un producto, y esa transacci&oacute;n es
-                realizada en un comercio, la entidad dispone de este conjunto de campos que le permiten determinar si
-                tiene en cuenta, para otorgar o no puntos adicionales bien sea incluyendo o excluyendo, a los
-                establecimientos, los tipos de servicio, grupos y cadenas (siendo estas tres &uacute;ltimas
-                caracter&iacute;sticas de los establecimientos). El sistema al momento de asignar los puntos
-                eval&uacute;a en el orden se&ntilde;alado si debe o no tener en cuenta cada uno de las variables. Si la
-                entidad requiere que un mismo <A href="MEH_002B.html">producto</A> acumule puntos en m&aacute;s
-                de un esquema se requiere no considerar Servicio, Grupos y Cadenas.</p>
+                <p><span class="SUBTITULO">Secuencia y condiciones:</span> Dado
+                    que la transacci&oacute;n es
+                    la esencia o causa para que el sistema genere o no puntos
+                    para un producto, y esa transacci&oacute;n es
+                    realizada en un comercio, la entidad dispone de este
+                    conjunto de campos que le permiten determinar si
+                    tiene en cuenta, para otorgar o no puntos adicionales bien
+                    sea incluyendo o excluyendo, a los
+                    establecimientos, los tipos de servicio, grupos y cadenas
+                    (siendo estas tres &uacute;ltimas
+                    caracter&iacute;sticas de los establecimientos). El sistema
+                    al momento de asignar los puntos
+                    eval&uacute;a en el orden se&ntilde;alado si debe o no tener
+                    en cuenta cada uno de las variables. Si la
+                    entidad requiere que un mismo <a
+                        href="MEH_002B.html">producto</a> acumule puntos en
+                    m&aacute;s
+                    de un esquema se requiere no considerar Servicio, Grupos y
+                    Cadenas.</p>
 
-            <table>
-                <tr>
-                    <td class="titletable">
-                        <p class="SUBTITULO">No considerar </p>
+                <table>
+                    <tr>
+                        <td class="titletable">
+                            <p class="SUBTITULO">No considerar </p>
+                        </td>
+                        <td class="PARRAFO">
+                            <p>Si la entidad marca este campo indica que no
+                                existe ning&uacute;n tipo de acuerdo por
+                                cadena, grupo, servicio o establecimiento,
+                                desactiv&aacute;ndose el subtab
+                                correspondiente a las opciones marcadas.</p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="titletable">
+                            <p class="SUBTITULO">Incluir</span></span></p>
                     </td>
                     <td class="PARRAFO">
-                        <p>Si la entidad marca este campo indica que no existe ning&uacute;n tipo de acuerdo por
-                            cadena, grupo, servicio o establecimiento, desactiv&aacute;ndose el subtab
-                            correspondiente a las opciones marcadas.</p>
-                    </td>
-                </tr>
-                <tr>
-                    <td class="titletable">
-                        <p class="SUBTITULO"><b><span>Incluir</span></span></b></p>
-                    </td>
-                    <td class="PARRAFO">
-                        <p>En este campo la entidad se&ntilde;ala que existe un plan o tratado especial con determinada
-                            cadena, grupo, servicio o establecimiento de acuerdo con el esquema de
-                            puntaje, los que deber&aacute;n ser relacionados en sus correspondientes subtabs y
-                            servir&aacute;n de base al sistema para otorgar puntos adicionales solo a las transacciones
-                            realizadas en esos establecimientos, y/o en establecimientos que posean esos mismo tipos de
+                        <p>En este campo la entidad se&ntilde;ala que existe un
+                            plan o tratado especial con determinada
+                            cadena, grupo, servicio o establecimiento de acuerdo
+                            con el esquema de
+                            puntaje, los que deber&aacute;n ser relacionados en
+                            sus correspondientes subtabs y
+                            servir&aacute;n de base al sistema para otorgar
+                            puntos adicionales solo a las transacciones
+                            realizadas en esos establecimientos, y/o en
+                            establecimientos que posean esos mismo tipos de
                             servicio, cadenas o grupos.</p>
                     </td>
                 </tr>
@@ -88,19 +113,23 @@
                         <p class="SUBTITULO">Excluir</p>
                     </td>
                     <td class="PARRAFO">
-                        <p>Indica que determinadas cadena, grupo, servicio o establecimiento no hace parte del esquema
-                            de puntaje dise&ntilde;ado por la entidad, los cuales deben ser relacionados dentro del
-                            subtab correspondiente, lo que indica que la cadena, grupo, servicio y/o establecimiento que
-                            no se encuentre aqu&iacute; relacionado es tenido en cuenta de acuerdo con lo parametrizado.
+                        <p>Indica que determinadas cadena, grupo, servicio o
+                            establecimiento no hace parte del esquema
+                            de puntaje dise&ntilde;ado por la entidad, los
+                            cuales deben ser relacionados dentro del
+                            subtab correspondiente, lo que indica que la cadena,
+                            grupo, servicio y/o establecimiento que
+                            no se encuentre aqu&iacute; relacionado es tenido en
+                            cuenta de acuerdo con lo parametrizado.
                         </p>
                     </td>
                 </tr>
             </table>
-    </section>
-    <script src="../js/menu.js"></script>
-</body>
-<div id="footerContainer"></div>
-<script>
+        </section>
+        <script src="../js/menu.js"></script>
+    </body>
+    <div id="footerContainer"></div>
+    <script>
   fetch('footer.html')
     .then(response => response.text())
     .then(html => {

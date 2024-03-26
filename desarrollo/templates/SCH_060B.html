@@ -1,973 +1,1188 @@
 <!DOCTYPE html>
 <html lang="es">
 
-<head>
+  <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>BANKBU®</title>
     <link rel="stylesheet" href="../css/pages.css">
     <link rel="stylesheet" href="../css/style.css">
- <link rel="icon" href="../img/ACQUIRER-logo.JPG" type="image/x-icon">
-</head>
+    <link rel="icon" href="../img/ACQUIRER-logo.JPG" type="image/x-icon">
+  </head>
 
-<body>
+  <body>
     <header>
-        <img class="logo" src="../img/logoBankbu_.PNG" alt="Logo de Mi Empresa">
-        <div id="menuBtn">
-            <img class="TITLE"  src= "../img/menu.PNG" alt="Botón de Menú ">
-        </div>
+      <img class="logo" src="../img/logoBankbu_.PNG" alt="Logo de Mi Empresa">
+      <div id="menuBtn">
+        <img class="TITLE" src="../img/menu.PNG" alt="Botón de Menú ">
+      </div>
     </header>
-   <div id="menuContainer"></div>
+    <div id="menuContainer"></div>
     <script>
-      fetch('menu.html')
-        .then(response => response.text())
-        .then(html => {
-          document.getElementById('menuContainer').innerHTML = html;
-        });
-    </script>
+    fetch('menu.html')
+      .then(response => response.text())
+      .then(html => {
+        document.getElementById('menuContainer').innerHTML = html;
+      });
+  </script>
 
     <section>
-        <div> 
-            <table width="100%">
-              <tr> 
-                <td><div> 
-                    <p  class="TITLE">Consulta tarjeta</p>
-                  </div></td>
-              </tr>
-            </table>
-            <p  class="PARRAFO">Desde este formulario se puede consultar 
-              toda la informaci&oacute;n de la tarjeta o el cr&eacute;dito rotativo, relacionada 
-              con los diversos valores monetarios, consolidados, o por l&iacute;neas de 
-              cr&eacute;dito o por monedas, desagregados en los m&uacute;ltiples conceptos 
-              que los componen, y a trav&eacute;s del tiempo mediante los hist&oacute;ricos; 
-              contiene adem&aacute;s detalles sobre los estados, datos personales de ubicaci&oacute;n, 
-              novedades registradas, comportamiento de puntajes e informaci&oacute;n sobre 
-              las tarjetas que dependen del cr&eacute;dito principal. </p>
-            <p  class="PARRAFO">Toda la informaci&oacute;n desplegada es 
-              solo de consulta por lo cual ninguno de los formularios del detalle de la 
-              tarjeta contiene las opciones Adicionar, Actualizar ni Eliminar.</p>
-            <p  class="PARRAFO">La opci&oacute;n cuenta con varios hiperv&iacute;nculos 
-              desde los cuales se invocan los formularios en los cuales el usuario encuentra 
-              agrupada la informaci&oacute;n de la tarjeta que se est&aacute; consultando: 
-              <a href="SCH_060B.html#BL_BASICA" >Informaci&oacute;n b&aacute;sica</a>, 
-              <a href="SCH_060B1.html" >Estados y bloqueos</a>, <a href="SCH_062B.html" >Transacciones</a>, 
-              <a href="SCH_067B.html" >Novedades</a>, <a href="SCH_068B.html" >Solicitudes</a> 
-              y <a href="SCH_072B.html" >Mas informaci&oacute;n</a>. Por 
-              defecto, cuando se ingresa al formulario de Detalle consulta tarjeta siempre 
-              se despliega en el hiperv&iacute;nculo de Informaci&oacute;n 
-              b&aacute;sica</p>
-              <p class="TITLE"><img  src="../img/SCF_060E.PNG"></p>
-            <p  class="PARRAFO">El formulario de Informaci&oacute;n b&aacute;sica 
-              contiene seis hiperv&iacute;nculos que permiten invocar otros formularios 
-              que contienen datos de la tarjeta: <a href="SCH_061B.html" >Saldos</a>, 
-              <a href="SCH_065B.html" >Puntajes</a>, <a href="SCH_066B.html" >Tarjetas 
-              y pl&aacute;sticos</a>, <a href="SCH_030B.html" >Generar extrav&iacute;o</a>, 
-              <a href="SCH_002B.html" >Consultar cliente</a> e Historia. 
-              Adicionalmente, el formulario se encuentra estructurado en 9 bloques de datos 
-              para facilitar la consulta de los mismos por parte del usuario: Informaci&oacute;n 
-              principal, Sucursales, Saldos, Localizaci&oacute;n, Fechas importantes, Pr&oacute;ximas 
-              fechas, Primera fecha, Ultima fecha y Tarjetas relacionadas.</p>
-            <p  class="TITLE">Descripción de campos</p>
+      <div>
+
+        <p class="TITLE">Consulta tarjeta</p>
+
+        <p class="PARRAFO">Desde este formulario se puede consultar toda la
+          información de la tarjeta, relacionada con los diversos valores
+          monetarios, consolidados, o por líneas de crédito o por monedas,
+          desagregados en los múltiples conceptos que los componen, y a través
+          del tiempo mediante los históricos; contiene además detalles sobre los
+          estados, datos personales de ubicación, novedades registradas,
+          comportamiento de puntajes e información sobre las tarjetas que
+          dependen del crédito principal. </p>
+        <p class="PARRAFO">Toda la informaci&oacute;n desplegada es
+          solo de consulta por lo cual ninguno de los formularios del
+          detalle de la
+          tarjeta contiene las opciones Adicionar, Actualizar ni
+          Eliminar.</p>
+        <p class="PARRAFO">La opci&oacute;n cuenta con varios
+          hiperv&iacute;nculos
+          desde los cuales se invocan los formularios en los cuales el
+          usuario encuentra
+          agrupada la informaci&oacute;n de la tarjeta que se
+          est&aacute; consultando:
+          <a href="SCH_060B.html#BL_BASICA">Informaci&oacute;n
+            b&aacute;sica</a>,
+          <a href="SCH_060B1.html">Estados y bloqueos</a>, <a
+            href="SCH_062B.html">Transacciones</a>,
+          <a href="SCH_067B.html">Novedades</a>, <a
+            href="SCH_068B.html">Solicitudes</a>
+          y <a href="SCH_072B.html">Mas informaci&oacute;n</a>. Por
+          defecto, cuando se ingresa al formulario de Detalle consulta
+          tarjeta siempre
+          se despliega en el hiperv&iacute;nculo de Informaci&oacute;n
+          b&aacute;sica</p>
+        <p class="TITLE"><img src="../img/SCF_060E.PNG"></p>
+        <p class="PARRAFO">El formulario de Informaci&oacute;n
+          b&aacute;sica
+          contiene seis hiperv&iacute;nculos que permiten invocar otros
+          formularios
+          que contienen datos de la tarjeta: <a
+            href="SCH_061B.html">Saldos</a>,
+          <a href="SCH_065B.html">Puntajes</a>, <a
+            href="SCH_066B.html">Tarjetas
+            y pl&aacute;sticos</a>, <a href="SCH_030B.html">Generar
+            extrav&iacute;o</a>,
+          <a href="SCH_002B.html">Consultar cliente</a> e Historia.
+          Adicionalmente, el formulario se encuentra estructurado en 9
+          bloques de datos
+          para facilitar la consulta de los mismos por parte del
+          usuario: Informaci&oacute;n
+          principal, Sucursales, Saldos, Localizaci&oacute;n, Fechas
+          importantes, Pr&oacute;ximas
+          fechas, Primera fecha, Ultima fecha y Tarjetas
+          relacionadas.</p>
+        <p class="TITLE">Descripción de campos</p>
+        <table>
+          <tr>
+            <td>
+              <p class="SUBTITULO">Cliente</p></td>
+            <td><p class="PARRAFO">Campo
+                que muestra el nombre del cliente titular de la
+                tarjeta.</p></td>
+          </tr>
+          <tr>
+            <td class="titletable"><p class="SUBTITULO">N&uacute;mero
+                tarjeta </p></td>
+            <td><p class="PARRAFO">Este
+                campo despliega el n&uacute;mero de la tarjeta que
+                permite identificar
+                la obligaci&oacute;n del cliente.</p></td>
+          </tr>
+
+          <tr>
+            <td class="titletable"><p class="SUBTITULO">C&oacute;digo
+                interno de la tarjeta
+              </p></td>
+            <td><p class="PARRAFO">Campo
+                en el cual se indica el c&oacute;digo interno de la
+                tarjeta, el cual
+                es &uacute;nico y permite identificar la tarjeta
+                as&iacute; esta haya
+                presentado cambios de n&uacute;mero por ejemplo cuando
+                se hace una reexpedici&oacute;n
+                de la misma.</p></td>
+          </tr>
+
+          <tr>
+            <td class="titletable"><p class="SUBTITULO">Tipo
+                tarjeta </p></td>
+            <td><p class="PARRAFO">Este
+                campo se&ntilde;ala si la tarjeta es principal,
+                extendida, adicional
+                o amparada lo que le confiere caracter&iacute;sticas
+                especiales
+                a la misma.
+              </p></td>
+          </tr>
+
+          <tr>
+            <td class="titletable"><p class="SUBTITULO">Marca
+              </p></td>
+            <td><p class="PARRAFO">Campo
+                en el que se muestra la <a
+                  href="NUH_033B.html">marca</a>
+                a la cual pertenece el bin de la tarjeta.</p></td>
+          </tr>
+
+          <tr>
+            <td class="titletable"><p class="SUBTITULO">Empresa
+              </p></td>
+            <td><p class="PARRAFO">Este
+                campo contien el nombre de la entidad que expide la
+                tarjeta y el cual
+                es de utilidad cuando se opera como
+                multiempresa.</p></td>
+          </tr>
+
+          <tr>
+            <td class="titletable"><p class="SUBTITULO">Foto
+                cliente
+              </p></td>
+            <td><p class="PARRAFO">Campo
+                que indica si el pl&aacute;stico correspondiente a la
+                tarjeta del cliente
+                tiene o no su foto impresa.</p></td>
+          </tr>
+
+          <tr>
+            <td class="titletable"><p class="SUBTITULO">Expira
+                en
+              </p></td>
+            <td><p class="PARRAFO">En
+                este campo se indica en formato YYYY-MM-DD la fecha en
+                la cual vence
+                o expira la tarjeta y debe ser renovada.</p></td>
+          </tr>
+
+          <tr>
+            <td class="titletable"><p class="SUBTITULO">Bin,
+                segmento, grupo
+              </p></td>
+            <td><p class="PARRAFO">Campos
+                en los que se muestra la combinatoria del bin, segmento
+                y grupo de afinidad
+                que conforman el producto al cual pertenece la tarjeta
+                consultada.</p></td>
+          </tr>
+
+          <tr>
+            <td class="titletable"><p class="SUBTITULO">Producto
+              </p></td>
+            <td><p class="PARRAFO">Este
+                campo despliega el nombre del <a
+                  href="MEH_002B.html">producto</a>
+                al que pertenece la tarjeta que se est&aacute;
+                consultando.</p></td>
+          </tr>
+
+          <tr>
+            <td class="titletable"><p class="SUBTITULO">Ciclo
+                facturaci&oacute;n
+              </p></td>
+            <td><p class="PARRAFO">Campo
+                que contiene el <a href="CAH_003B.html">ciclo de
+                  facturaci&oacute;n</a>
+                asociado con la tarjeta y que determina las fechas de
+                corte de la misma.</p></td>
+          </tr>
+
+          <tr>
+            <td class="titletable"><p class="SUBTITULO">Modalidad
+                de cr&eacute;dito
+              </p></td>
+            <td><p class="PARRAFO">Este
+                campo muestra la clasificaci&oacute;n del cr&eacute;dito
+                de acuerdo
+                con las pol&iacute;ticas de la entidad, la
+                legislaci&oacute;n vigente
+                y que puede ser Consumo, Comercial o
+                Microcr&eacute;dito.</p></td>
+          </tr>
+
+          <tr>
+            <td class="titletable"><p class="SUBTITULO">Categor&iacute;a
+                cliente
+              </p></td>
+            <td><p class="PARRAFO">Campo
+                que indica la <a
+                  href="MEH_004B.html">categor&iacute;a</a>
+                a la cual pertenece el cliente titular de la tarjeta y
+                que puede en
+                alg&uacute;n momento determinar algunos privilegios
+                especiales como
+                disminuci&oacute;n en las cuotas de manejo, periodos de
+                excenci&oacute;n,
+                entre otros.</p></td>
+          </tr>
+
+          <tr>
+            <td class="titletable"><p class="SUBTITULO">Tipo
+                garant&iacute;a
+              </p></td>
+            <td><p class="PARRAFO">Este
+                campo muestra si el tipo de garant&iacute;a con el cual
+                el cliente est&aacute;
+                respaldando la obligaci&oacute;n contra&iacute;da es
+                Real o
+                Personal</p>
+            </td>
+          </tr>
+
+          <tr>
+            <td class="titletable"><p class="SUBTITULO">Reporta
+                datacr&eacute;dito
+              </p></td>
+            <td><p class="PARRAFO">Campo
+                en el que se se&ntilde;ala si la informaci&oacute;n de
+                la tarjeta debe
+                o no ser reportada a la central de riesgo
+                Datacr&eacute;dito.</p></td>
+          </tr>
+
+          <tr>
+            <td class="titletable"><p class="SUBTITULO">Sucursal
+                radicaci&oacute;n
+              </p></td>
+            <td><p class="PARRAFO">Este
+                campo muestra la <a href="NUH_020B.html">sucursal</a>
+                de la entidad ante la cual se encuentra radicada a la
+                cual pertenece
+                la obligaci&oacute;n. </p></td>
+          </tr>
+
+          <tr>
+            <td class="titletable"><p class="SUBTITULO">Sucursal
+                venta
+              </p></td>
+            <td><p class="PARRAFO">Campo
+                que contiene la <a href="NUH_020B.html">sucursal</a>
+                de la entidad a la cual se le debe reconocer la
+                gesti&oacute;n por la
+                colocaci&oacute;n de la tarjeta, informaci&oacute;n que
+                puede ser utilizada
+                por la entidad para generar estad&iacute;sticas,
+                determinar el cumplimiento
+                de metas y el pago de las comisiones o incentivos por
+                colocaci&oacute;n
+                de productos.</p></td>
+          </tr>
+
+          <tr>
+            <td class="titletable"><p class="SUBTITULO">Sucursal
+                regional
+              </p></td>
+            <td><p class="PARRAFO">En
+                este campo se despliega seg&uacute;n corresponda, la <a
+                  href="NUH_020B.html">sucursal</a>
+                de la entidad con caracter&iacute;stica de regional a la
+                cual pertenece
+                o se encuentra adscrita la sucursal de radicaci&oacute;n
+                de la tarjeta.</p></td>
+          </tr>
+
+          <tr>
+            <td class="titletable"><p class="SUBTITULO">Sucursal
+                env&iacute;o tarjeta
+              </p></td>
+            <td><p class="PARRAFO">Campo
+                en el que se indica si es el caso, la <a
+                  href="NUH_020B.html">sucursal</a>
+                de la entidad a la cual se env&iacute;a la tarjeta una
+                vez realzada
+                para que el cliente la reclame y pueda utilizar.</p>
+            </td>
+          </tr>
+
+          <tr>
+            <td class="titletable"><p class="SUBTITULO">Pago
+                m&iacute;nimo
+              </p></td>
+            <td><p class="PARRAFO">Este
+                campo muestra el valor del <a
+                  href="SCH_060B.html#BL_PMINIMO">pago
+                  m&iacute;nimo</a> actual de la tarjeta y contiene un
+                hiperv&iacute;nculo
+                mediante el cual se invoca un formulario que despliega
+                el detalle o
+                composici&oacute;n de dicho valor.</p></td>
+          </tr>
+
+          <tr>
+            <td class="titletable"><p class="SUBTITULO">Pago
+                total
+              </p></td>
+            <td><p class="PARRAFO">Campo
+                que indica el valor del <a
+                  href="SCH_060B.html#BL_PTOTAL">pago
+                  total</a> actual de la tarjeta y que contiene un
+                hiperv&iacute;nculo
+                con el cual se invoca el formulario que muestra el
+                detalle o composici&oacute;n
+                de este valor.</p></td>
+          </tr>
+
+          <tr>
+            <td class="titletable"><p class="SUBTITULO">Disponible
+              </p></td>
+            <td><p class="PARRAFO">Este
+                campo se&ntilde;ala el valor que se obtiene de la
+                diferencia entre el
+                cupo total asignado a la tarjeta (incluido el extracupo
+                si lo tiene)
+                y el monto de las utilizaciones efectuadas por el
+                cliente. Contiene
+                un hiperv&iacute;nculo a trav&eacute;s del cual se
+                invoca el formulario
+                en el cual se muestra el detalle del <a
+                  href="SCH_060B.html#BL_DISPONIBLE">disponible</a>.</p></td>
+          </tr>
+
+          <tr>
+            <td class="titletable"><p class="SUBTITULO">Cupo
+                total
+              </p></td>
+            <td><p class="PARRAFO">Campo
+                en el cual se muestra el valor del cupo total asignado a
+                la l&iacute;nea
+                principal y las l&iacute;neas independientes de la
+                tarjeta.</p></td>
+          </tr>
+
+          <tr>
+            <td class="titletable"><p class="SUBTITULO">Extracupo
+                asignado
+              </p></td>
+            <td><p class="PARRAFO">Este
+                campo indica el valor del extracupo que le ha sido
+                asignado
+                a la tarjeta.</p></td>
+          </tr>
+
+          <tr>
+            <td class="titletable"><p class="SUBTITULO">Extracupo
+                autorizado
+              </p></td>
+            <td><p class="PARRAFO">Campo
+                en el que se despliega el valor de las autorizaciones
+                otorgadas sobre
+                el extracupo asignado a la tarjeta y que a&uacute;n no
+                han sido cruzadas.
+                Una vez que estas son cruzadas, su valor se disminuye y
+                se carga al
+                monto desplegado en el campo Extracupo
+                utilizado.</p></td>
+          </tr>
+
+          <tr>
+            <td class="titletable"><p class="SUBTITULO">Extracupo
+                utilizado
+              </p></td>
+            <td><p class="PARRAFO">Este
+                campo contiene el valor acumulado de las utilizaciones
+                hechas sobre
+                el extracupo asignado a la tarjeta y que disminuyen el
+                disponible del
+                mismo. </p></td>
+          </tr>
+
+          <tr>
+            <td class="titletable"><p class="SUBTITULO">Autorizaciones
+              </p></td>
+            <td><p class="PARRAFO">Campo
+                que muestra el monto total de las autorizaciones que han
+                sido otorgadas
+                por la entidad a las solicitudes de utilizaci&oacute;n
+                que se han hecho
+                con la tarjeta y que incluye tanto aquellas que ya
+                fueron cruzadas como
+                las que se encuentran pendientes de cruzar.</p></td>
+          </tr>
+
+          <tr>
+            <td class="titletable"><p class="SUBTITULO">Saldo
+                promedio al d&iacute;a
+              </p></td>
+            <td><p class="PARRAFO">Este
+                campo despliega el promedio que el sistema calcula a
+                partir de las utilizaciones
+                hechas con la tarjeta.</p></td>
+          </tr>
+
+          <tr>
+            <td class="titletable"><p class="SUBTITULO">Saldo
+                a favor
+              </p></td>
+            <td><p class="PARRAFO">Campo
+                en el que se muestra si es el caso, el valor del saldo a
+                favor del cliente
+                generado por los pagos en exceso efectuados por
+                &eacute;l.</p></td>
+          </tr>
+        </table>
+
+        <p class="PARRAFO">Los restantes bloques del formulario
+          contienen los campos
+          que se describen a continuaci&oacute;n:<span
+            class="SUBTITULO"></span></p>
+        <div class="PARRAFO">
+          <p class="TITLE"><img src="../img/SCF_060E1.PNG"></p>
+          <p class="TITLE">Descripción de campos</p>
+          <table>
+            <tr>
+              <td class="titletable"><p
+                  class="SUBTITULO">Direcci&oacute;n
+                  correspondencia
+                </p></td>
+              <td><p class="PARRAFO">Campo
+                  que despliega la direcci&oacute;n de correspondencia
+                  asociada con
+                  la tarjeta consultada y a la que se env&iacute;a
+                  seg&uacute;n el caso
+                  el extracto respectivo.
+                </p></td>
+            </tr>
+
+            <tr>
+              <td class="titletable"><p
+                  class="SUBTITULO">Ubicaci&oacute;n
+
+                </p></td>
+              <td><p class="PARRAFO">Este
+                  campo muestra la ubicaci&oacute;n geogr&aacute;fica a
+                  la que pertenece
+                  la direcci&oacute;n anterior.</p></td>
+            </tr>
+
+            <tr>
+              <td class="titletable"><p
+                  class="SUBTITULO">Tel&eacute;fonos
+
+                </p></td>
+              <td><p class="PARRAFO">Campo
+                  en el que se indica los n&uacute;meros
+                  telef&oacute;nicos en los cuales
+                  es posible contactar al titular de la
+                  tarjeta.</p></td>
+            </tr>
+
+            <tr>
+              <td class="titletable"><p class="SUBTITULO">Extensiones
+
+                </p></td>
+              <td><p class="PARRAFO">Este
+                  campo muestra seg&uacute;n el caso las extensiones
+                  asociadas con los
+                  n&uacute;meros telef&oacute;nicos anteriores.</p></td>
+            </tr>
+
+            <tr>
+              <td class="titletable"><p class="SUBTITULO">Fax
+
+                </p></td>
+              <td><p class="PARRAFO">Campo
+                  que se&ntilde;ala el n&uacute;mero de fax al cual se
+                  le puede enviar
+                  informaci&oacute;n al titular de la tarjeta por este
+                  medio.</p>
+              </td>
+            </tr>
+
+            <tr>
+              <td class="titletable"><p class="SUBTITULO">Celular
+
+                </p></td>
+              <td><p class="PARRAFO">En
+                  este campo se despliega el n&uacute;mero de
+                  tel&eacute;fono celular
+                  del titular de la tarjeta.</p></td>
+            </tr>
+
+            <tr>
+              <td class="titletable"><p class="SUBTITULO">Zona
+                  postal
+
+                </p></td>
+              <td><p class="PARRAFO">Campo
+                  que indica la zona postal asociada con la
+                  direcci&oacute;n y ubicaci&oacute;n
+                  del titular de la tarjeta.</p>
+              </td>
+            </tr>
+
+            <tr>
+              <td class="titletable"><p class="SUBTITULO">Fecha
+                  l&iacute;mite de pago
+
+                </p></td>
+              <td><p class="PARRAFO">Este
+                  campo muestra en formato YYYY-MM-DD la fecha
+                  l&iacute;mite de pago
+                  actual de la tarjeta.</p></td>
+            </tr>
+
+            <tr>
+              <td class="titletable"><p class="SUBTITULO">Pr&oacute;xima
+                  facturaci&oacute;n
+
+                </p></td>
+              <td><p class="PARRAFO">Campo
+                  en formato YYYY-MM-DD que contiene la siguiente fecha
+                  en la cual se
+                  har&aacute; corte y facturaci&oacute;n de la tarjeta
+                  de acuerdo con
+                  el <a href="CAH_003B.html">ciclo</a> al que
+                  &eacute;sta pertenece.</p></td>
+            </tr>
+
+            <tr>
+              <td class="titletable"><p class="SUBTITULO">Fecha
+                  apertura
+
+                </p></td>
+              <td><p class="PARRAFO">En
+                  este campo se muestra en formato YYYY-MM-DD la fecha
+                  en la cual se
+                  aprob&oacute; la solicitud mediante la cual se le
+                  otorg&oacute; la
+                  tarjeta el cliente.</p>
+              </td>
+            </tr>
+
+            <tr>
+              <td class="titletable"><p class="SUBTITULO">Fecha
+                  entrega pl&aacute;stico actual
+                </p></td>
+              <td><p class="PARRAFO">Campo
+                  en formato YYYY-MM-DD que contiene la fecha en la cual
+                  se hizo entrega
+                  al cliente del &uacute;ltimo pl&aacute;stico asociado
+                  a la tarjeta
+                  cuando por ejemplo se han presentado eventos de
+                  reposici&oacute;n,
+                  reexpedici&oacute;n y otros que implican realzar un
+                  nuevo pl&aacute;stico
+                  en reemplazo del anterior.</p></td>
+            </tr>
+
+            <tr>
+              <td class="titletable"><p class="SUBTITULO">Cuota
+                  afiliaci&oacute;n / manejo / seguro
+
+                </p></td>
+              <td><p class="PARRAFO">En
+                  este campo se muestra en formato YYYY-MM-DD la fecha
+                  en la cual se
+                  le efectuar&aacute; al cliente el cobro por concepto
+                  de cuota de afiliaci&oacute;n,
+                  manejo y seguro de acuerdo con lo parametrizado para
+                  el <a href="MEH_002B.html">producto</a>.</p></td>
+            </tr>
+
+            <tr>
+              <td class="titletable"><p class="SUBTITULO">Fecha
+                  1a compra normal / especial
+
+                </p></td>
+              <td><p class="PARRAFO">Campos
+                  que muestran respectivamente y en formato YYYY-MM-DD
+                  la fecha en la
+                  cual se hizo la primera compra normal y la primera
+                  compra especial
+                  con la tarjeta.</p></td>
+            </tr>
+
+            <tr>
+              <td class="titletable"><p class="SUBTITULO">Valor
+                  1a compra normal / especial
+
+                </p></td>
+              <td><p class="PARRAFO">Estos
+                  campos contienen respectivamente el valor de la
+                  primera compra normal
+                  y la primera compra especial efectuadas por el cliente
+                  con la tarjeta.</p>
+              </td>
+            </tr>
+
+            <tr>
+              <td class="titletable"><p class="SUBTITULO">Fecha
+                  1er avance
+
+                </p></td>
+              <td><p class="PARRAFO">Campo
+                  que despliega en formato YYYY-MM-DD la fecha en la
+                  cual se hizo la
+                  primera transacci&oacute;n de avance con la
+                  tarjeta.</p></td>
+            </tr>
+
+            <tr>
+              <td class="titletable"><p class="SUBTITULO">Valor
+                  1er avance
+
+                </p></td>
+              <td><p class="PARRAFO">Este
+                  campo indica el valor de la primera transacci&oacute;n
+                  de avance efectuada
+                  con la tarjeta.</p></td>
+            </tr>
+
+            <tr>
+              <td class="titletable"><p class="SUBTITULO">Fecha
+                  1er pago
+
+                </p></td>
+              <td><p class="PARRAFO">Campo
+                  en formato YYYY-MM-DD que se&ntilde;ala la fecha en la
+                  cual el cliente
+                  hizo el primer pago a la entidad por la
+                  obligaci&oacute;n contra&iacute;da.</p></td>
+            </tr>
+            <tr>
+              <td class="titletable"><p class="SUBTITULO">Valor
+                  1er pago
+
+                </p></td>
+              <td><p class="PARRAFO">En
+                  este campo se se&ntilde;ala el valor del primer pago
+                  efectuado por
+                  el titular de la tarjeta a la entidad.</p></td>
+            </tr>
+            <tr>
+              <td class="titletable"><p
+                  class="SUBTITULO">(&Uacute;ltima)
+                  autorizaci&oacute;n
+
+                </p></td>
+              <td><p class="PARRAFO">Campo
+                  en el que se muestra en formato YYYY-MM-DD la fecha en
+                  la que la entidad
+                  otorg&oacute; la m&aacute;s reciente
+                  autorizaci&oacute;n de una transacci&oacute;n
+                  para la tarjeta.</p></td>
+            </tr>
+
+            <tr>
+              <td class="titletable"><p
+                  class="SUBTITULO">(&Uacute;ltimo)
+                  cambio de ciclo
+
+                </p></td>
+              <td><p class="PARRAFO">Este
+                  campo en formato YYYY-MM-DD contiene la fecha en la
+                  cual se hizo el
+                  m&aacute;s reciente cambio de ciclo de
+                  facturaci&oacute;n para la
+                  tarjeta. </p></td>
+            </tr>
+
+            <tr>
+              <td class="titletable"><p
+                  class="SUBTITULO">(&Uacute;ltimo)
+                  aumento de cupo
+                </p></td>
+              <td><p class="PARRAFO">Campo
+                  que despliega la fecha del m&aacute;s reciente aumento
+                  de cupo que
+                  ha tenido la tarjeta.</p></td>
+            </tr>
+
+            <tr>
+              <td class="titletable"><p
+                  class="SUBTITULO">(&Uacute;ltima)
+                  reactivaci&oacute;n / reposici&oacute;n /
+                  reexpedici&oacute;n / renovaci&oacute;n
+
+                </p></td>
+              <td><p class="PARRAFO">En
+                  estos campos se muestra respectivamente la fecha en la
+                  cual la tarjeta
+                  tuvo el mas reciente evento de reactivaci&oacute;n,
+                  reposici&oacute;n,
+                  reexpedici&oacute;n y/o renovaci&oacute;n.</p></td>
+            </tr>
+
+            <tr>
+              <td class="titletable"><p
+                  class="SUBTITULO">Activaci&oacute;n
+                  &uacute;ltimo pl&aacute;stico
+
+                </p></td>
+              <td><p class="PARRAFO">Campo
+                  en formato YYYY-MM-DD que contiene la fecha en la que
+                  se hizo la activaci&oacute;n
+                  del &uacute;ltimo o m&aacute;s reciente
+                  pl&aacute;stico entregado
+                  al titular de la tarjeta.</p></td>
+            </tr>
+
+            <tr>
+              <td class="titletable"><p
+                  class="SUBTITULO">(&Uacute;ltima)
+                  fecha purque exception file
+
+                </p></td>
+              <td><p class="PARRAFO">En
+                  este campo se indica la fecha mas reciente en la cual
+                  la tarjeta fue
+                  retirada del archivo de exception file.</p></td>
+            </tr>
+
+            <tr>
+              <td class="titletable"><p class="SUBTITULO">N&uacute;mero
+                  tarjeta depende
+
+                </p></td>
+              <td><p class="PARRAFO">Cuando
+                  el tipo de tarjeta es diferente a principal, en este
+                  campo se muestra
+                  el n&uacute;mero de la tarjeta de la cual
+                  depende.</p></td>
+            </tr>
+
+            <tr>
+              <td class="titletable"><p class="SUBTITULO">Tarjeta
+                  masificadora
+                </p></td>
+              <td><p class="PARRAFO">En
+                  este campo se despliega el n&uacute;mero de tarjeta
+                  sobre la cual
+                  se van a cobrar las cuotas de afiliaci&oacute;n,
+                  manejo y seguro,
+                  en caso que el cliente tenga m&aacute;s de una tarjeta
+                  y la entidad
+                  desee efectuar estos cobros sobre una sola de esas
+                  tarjetas.</p></td>
+            </tr>
+
+            <tr>
+              <td class="titletable"><p class="SUBTITULO">Tarjeta
+                  depende virtual
+
+                </p></td>
+              <td><p class="PARRAFO">Campo
+                  que aplica para el caso de las tarjetas virtuales y
+                  muestra el n&uacute;mero
+                  de la tarjeta f&iacute;sica de la cual
+                  depende.</p></td>
+            </tr>
+
+            <tr>
+              <td class="titletable"><p class="SUBTITULO">N&uacute;mero
+                  tarjeta anterior
+
+                </p></td>
+              <td><p class="PARRAFO">Si
+                  por alg&uacute;n evento la tarjeta consultada ha
+                  tenido alg&uacute;n
+                  cambio de n&uacute;mero, en este campo se muestra el
+                  n&uacute;mero
+                  que ten&iacute;a la tarjeta antes del &uacute;ltimo
+                  cambio.</p></td>
+            </tr>
+
+            <tr>
+              <td class="titletable"><p class="SUBTITULO">N&uacute;mero
+                  de dependientes
+                </p></td>
+              <td><p class="PARRAFO">En
+                  el caso de tarjetas principales con extendidas, en
+                  este campo se indica
+                  la cantidad de tarjetas que dependen directamente de
+                  la principal.</p></td>
+            </tr>
+          </table>
+
+          <p class="PARRAFO"><a name="BL_PMINIMO"></a></p>
+          <p><span class="SUBTITULO"><span>Pago
+                m&iacute;nimo</span><span>:</span></span>
+            si el actor invoca el hiperv&iacute;nculo contenido en el
+            campo pago
+            m&iacute;nimo, se despliega un nuevo formulario con el
+            detalle de dicho
+            pago.</p>
+          <p class="TITLE"><img src="../img/SCF_060E2.PNG"></p>
+
+          <p class="TITLE">Descripción de campos</p>
+          <table>
+            <tr>
+              <td class="titletable"><p class="SUBTITULO">Capital
+                  facturado
+                </p></td>
+              <td><p class="PARRAFO">Este
+                  campo indica el monto de las transacciones
+                  diferidas que debe ser
+                  cubierto mediante el pago m&iacute;nimo.</p></td>
+            </tr>
+            <tr>
+              <td class="titletable"><p class="SUBTITULO">Capital
+                  mora
+
+                </p></td>
+              <td><p class="PARRAFO">Campo
+                  que se&ntilde;ala el monto del capital de
+                  facturaciones anteriores
+                  que se encuentra actualmente en mora por no haber
+                  sido pagado y
+                  que debe ser cubierto por el pago
+                  m&iacute;nimo.</p></td>
+            </tr>
+
+            <tr>
+              <td class="titletable"><p
+                  class="SUBTITULO">Inter&eacute;s
+                  corriente
+                </p></td>
+              <td><p class="PARRAFO">En
+                  este campo se muestra el valor del inter&eacute;s
+                  de financiaci&oacute;n
+                  que la entidad cobra al cliente por el diferido de
+                  las transacciones
+                  efectuadas y que debe ser cubierto en el pago
+                  m&iacute;nimo.
+                </p></td>
+            </tr>
+
+            <tr>
+              <td class="titletable"><p
+                  class="SUBTITULO">Inter&eacute;s
+                  mora
+                </p></td>
+              <td><p class="PARRAFO">Campo
+                  que contiene el monto de los intereses liquidados
+                  por la entidad
+                  sobre el capital en mora y debe cancelar mediante
+                  el pago m&iacute;nimo.</p></td>
+            </tr>
+
+            <tr>
+              <td class="titletable"><p
+                  class="SUBTITULO">Inter&eacute;s
+                  extracontable
+                </p></td>
+              <td><p class="PARRAFO">En
+                  este campo se indica seg&uacute;n corresponda, el
+                  monto de los intereses
+                  causados despu&eacute;s de determinada altura de
+                  mora y que deben
+                  ser cubiertos con el pago m&iacute;nimo.
+                </p></td>
+            </tr>
+
+            <tr>
+              <td class="titletable"><p class="SUBTITULO">Saldo
+                  a favor</p></td>
+              <td><p class="PARRAFO">Campo
+                  que despliega en caso de existir, el valor del
+                  saldo a favor del
+                  cliente y el cual se descontar&aacute; o
+                  aplicar&aacute; para determinar
+                  el pago m&iacute;nimo.</p></td>
+            </tr>
+
+            <tr>
+              <td class="titletable"><p class="SUBTITULO">Pago
+                  m&iacute;nimo
+                </p></td>
+              <td><p class="PARRAFO">En
+                  este campo se muestra el valor del pago
+                  m&iacute;nimo resultante
+                  de la sumatoria de los campos anteriores y que el
+                  cliente debe cancelar
+                  dentro de los plazos otorgados por la
+                  entidad.</p></td>
+            </tr>
+          </table>
+
+          <p class="PARRAFO"><a name="BL_PTOTAL"></a></p>
+          <p><span class="SUBTITULO"><span>Pago
+                total</span><span>:</span></span>
+            si el actor invoca el hiperv&iacute;nculo contenido en
+            el campo pago
+            total, se despliega un nuevo formulario con el detalle
+            de dicho pago.</p>
+          <p class="TITLE"><img src="../img/SCF_060E3.PNG"></p>
+          <div class="PARRAFO">
+            <p class="TITLE">Descripción de campos</p>
             <table>
-              <tr> 
-                <td    >
-          <p class="SUBTITULO"><b>Cliente</b></p></td>
-                <td><p  class="PARRAFO">Campo 
-                    que muestra el nombre del cliente titular de la tarjeta.</p></td>
+              <tr>
+                <td class="titletable"><p class="SUBTITULO">Pago
+                    facturado
+                  </p></td>
+                <td><p class="PARRAFO">Este
+                    campo indica el monto de las transacciones
+                    diferidas que debe
+                    ser cubierto mediante el pago total.</p></td>
               </tr>
-              <tr> 
-                <td class="titletable"><p class="SUBTITULO"><b>N&uacute;mero 
-                    tarjeta </b></p></td>
-                <td><p  class="PARRAFO">Este 
-                    campo despliega el n&uacute;mero de la tarjeta que permite identificar 
-                    la obligaci&oacute;n del cliente.</p></td>
+              <tr>
+                <td class="titletable"><p
+                    class="SUBTITULO">Capital
+                    mora
+
+                  </p></td>
+                <td><p class="PARRAFO">Campo
+                    que se&ntilde;ala el monto del capital de
+                    facturaciones anteriores
+                    que se encuentra actualmente en mora por no
+                    haber sido pagado
+                    y que debe ser cubierto por el pago
+                    total.</p></td>
               </tr>
-        
-              <tr> 
-                <td class="titletable" ><p class="SUBTITULO"><b>C&oacute;digo 
-                    interno de la tarjeta
-                    </b></p></td>
-                <td><p  class="PARRAFO">Campo 
-                    en el cual se indica el c&oacute;digo interno de la tarjeta, el cual 
-                    es &uacute;nico y permite identificar la tarjeta as&iacute; esta haya 
-                    presentado cambios de n&uacute;mero por ejemplo cuando se hace una reexpedici&oacute;n 
-                    de la misma.</p></td>
-              </tr>
-           
-              <tr> 
-                <td class="titletable" ><p class="SUBTITULO"><b>Tipo 
-                    tarjeta </b></p></td>
-                <td><p  class="PARRAFO">Este 
-                    campo se&ntilde;ala si la tarjeta es principal, extendida, adicional 
-                    o amparada lo que le confiere caracter&iacute;sticas especiales 
-                    a la misma.
+
+              <tr>
+                <td class="titletable"><p
+                    class="SUBTITULO">Inter&eacute;s
+                    corriente
+                  </p></td>
+                <td><p class="PARRAFO">En
+                    este campo se muestra el valor del
+                    inter&eacute;s de financiaci&oacute;n
+                    que la entidad cobra al cliente por el
+                    diferido de las transacciones
+                    efectuadas y que debe ser cubierto en el pago
+                    total.
                   </p></td>
               </tr>
-           
-              <tr> 
-                <td class="titletable" ><p class="SUBTITULO"><b>Marca
-                    </b></p></td>
-                <td><p  class="PARRAFO">Campo 
-                    en el que se muestra la <a href="NUH_033B.html" >marca</a> 
-                    a la cual pertenece el bin de la tarjeta.</p></td>
-              </tr>
-           
-              <tr> 
-                <td class="titletable"><p class="SUBTITULO"><b>Empresa
-                    </b></p></td>
-                <td><p  class="PARRAFO">Este 
-                    campo contien el nombre de la entidad que expide la tarjeta y el cual 
-                    es de utilidad cuando se opera como multiempresa.</p></td>
-              </tr>
-           
-              <tr> 
-                <td class="titletable"><p class="SUBTITULO"><b>Foto 
-                    cliente
-                    </b></p></td>
-                <td><p  class="PARRAFO">Campo 
-                    que indica si el pl&aacute;stico correspondiente a la tarjeta del cliente 
-                    tiene o no su foto impresa.</p></td>
-              </tr>
-           
-              <tr> 
-                <td class="titletable" ><p class="SUBTITULO"><b>Expira 
-                    en
-                    </b></p></td>
-                <td><p  class="PARRAFO">En 
-                    este campo se indica en formato YYYY-MM-DD la fecha en la cual vence 
-                    o expira la tarjeta y debe ser renovada.</p></td>
-              </tr>
-           
-              <tr> 
-                <td class="titletable" ><p class="SUBTITULO"><b>Bin, 
-                    segmento, grupo
-                    </b></p></td>
-                <td><p  class="PARRAFO">Campos 
-                    en los que se muestra la combinatoria del bin, segmento y grupo de afinidad 
-                    que conforman el producto al cual pertenece la tarjeta consultada.</p></td>
-              </tr>
-           
-              <tr> 
-                <td class="titletable" ><p class="SUBTITULO"><b>Producto
-                    </b></p></td>
-                <td><p  class="PARRAFO">Este 
-                    campo despliega el nombre del <a href="MEH_002B.html" >producto</a> 
-                    al que pertenece la tarjeta que se est&aacute; consultando.</p></td>
-              </tr>
-           
+
               <tr>
-                <td class="titletable" ><p class="SUBTITULO"><b>Ciclo 
-                    facturaci&oacute;n
-                </b></p></td>
-                <td><p  class="PARRAFO">Campo 
-                    que contiene el <a href="CAH_003B.html" >ciclo de facturaci&oacute;n</a> 
-                    asociado con la tarjeta y que determina las fechas de corte de la misma.</p></td>
+                <td class="titletable"><p
+                    class="SUBTITULO">Inter&eacute;s
+                    mora
+                  </p></td>
+                <td><p class="PARRAFO">Campo
+                    que contiene el monto de los intereses
+                    liquidados por la entidad
+                    sobre el capital en mora y debe cancelar
+                    mediante el pago total.</p></td>
               </tr>
-           
+
               <tr>
-                <td class="titletable" ><p class="SUBTITULO"><b>Modalidad 
-                    de cr&eacute;dito
-                </b></p></td>
-                <td><p  class="PARRAFO">Este 
-                    campo muestra la clasificaci&oacute;n del cr&eacute;dito de acuerdo 
-                    con las pol&iacute;ticas de la entidad, la legislaci&oacute;n vigente 
-                    y que puede ser Consumo, Comercial o Microcr&eacute;dito.</p></td>
+                <td class="titletable"><p
+                    class="SUBTITULO">Inter&eacute;s
+                    extracontable
+                  </p></td>
+                <td><p class="PARRAFO">En
+                    este campo se indica seg&uacute;n corresponda,
+                    el monto de los
+                    intereses causados despu&eacute;s de
+                    determinada altura de mora
+                    y que deben ser cubiertos con el pago total.
+                  </p></td>
               </tr>
-           
+
               <tr>
-                <td class="titletable" ><p class="SUBTITULO"><b>Categor&iacute;a 
-                    cliente
-                </b></p></td>
-                <td><p  class="PARRAFO">Campo 
-                    que indica la <a href="MEH_004B.html" >categor&iacute;a</a> 
-                    a la cual pertenece el cliente titular de la tarjeta y que puede en 
-                    alg&uacute;n momento determinar algunos privilegios especiales como 
-                    disminuci&oacute;n en las cuotas de manejo, periodos de excenci&oacute;n, 
-                    entre otros.</p></td>
+                <td class="titletable"><p class="SUBTITULO">Saldo
+                    a favor</p></td>
+                <td><p class="PARRAFO">Campo
+                    que despliega en caso de existir, el valor del
+                    saldo a favor del
+                    cliente y el cual se descontar&aacute; o
+                    aplicar&aacute; para
+                    determinar el pago total.</p></td>
               </tr>
-           
+
               <tr>
-                <td class="titletable" ><p class="SUBTITULO"><b>Tipo 
-                    garant&iacute;a
-                </b></p></td>
-                <td><p  class="PARRAFO">Este 
-                    campo muestra si el tipo de garant&iacute;a con el cual el cliente est&aacute; 
-                    respaldando la obligaci&oacute;n contra&iacute;da es Real o 
-                    Personal</p>
-                </td>
+                <td class="titletable"><p
+                    class="SUBTITULO">Capital
+                    no facturado</p></td>
+                <td><p class="PARRAFO">Indica
+                    el monto de los saldos diferidos pendientes
+                    por cancelar despu&eacute;s
+                    de efectuar el pago m&iacute;nimo, los
+                    consumos o utilizaciones
+                    realizados despu&eacute;s de la fecha de la
+                    &uacute;ltima facturaci&oacute;n
+                    y los ajustes monetarios que incrementen el
+                    saldo tales como reversiones
+                    de pagos err&oacute;neamente aplicados, etc.
+                    que deben ser cubiertos
+                    mediante el pago total.</p></td>
               </tr>
-           
               <tr>
-                <td class="titletable" ><p class="SUBTITULO"><b>Reporta 
-                    datacr&eacute;dito
-                </b></p></td>
-                <td><p  class="PARRAFO">Campo 
-                    en el que se se&ntilde;ala si la informaci&oacute;n de la tarjeta debe 
-                    o no ser reportada a la central de riesgo Datacr&eacute;dito.</p></td>
-              </tr>
-           
-              <tr>
-                <td class="titletable" ><p class="SUBTITULO"><b>Sucursal 
-                    radicaci&oacute;n
-                </b></p></td>
-                <td><p  class="PARRAFO">Este 
-                    campo muestra la <a href="NUH_020B.html" >sucursal</a> 
-                    de la entidad ante la cual se encuentra radicada a la cual pertenece 
-                    la obligaci&oacute;n. </p></td>
-              </tr>
-           
-              <tr>
-                <td class="titletable" ><p class="SUBTITULO"><b>Sucursal 
-                    venta
-                </b></p></td>
-                <td><p  class="PARRAFO">Campo 
-                    que contiene la <a href="NUH_020B.html" >sucursal</a> 
-                    de la entidad a la cual se le debe reconocer la gesti&oacute;n por la 
-                    colocaci&oacute;n de la tarjeta, informaci&oacute;n que puede ser utilizada 
-                    por la entidad para generar estad&iacute;sticas, determinar el cumplimiento 
-                    de metas y el pago de las comisiones o incentivos por colocaci&oacute;n 
-                    de productos.</p></td>
-              </tr>
-           
-              <tr>
-                <td class="titletable" ><p class="SUBTITULO"><b>Sucursal 
-                    regional
-                </b></p></td>
-                <td><p  class="PARRAFO">En 
-                    este campo se despliega seg&uacute;n corresponda, la <a href="NUH_020B.html" >sucursal</a> 
-                    de la entidad con caracter&iacute;stica de regional a la cual pertenece 
-                    o se encuentra adscrita la sucursal de radicaci&oacute;n de la tarjeta.</p></td>
-              </tr>
-           
-              <tr>
-                <td class="titletable" ><p class="SUBTITULO"><b>Sucursal 
-                    env&iacute;o tarjeta
-                </b></p></td>
-                <td><p  class="PARRAFO">Campo 
-                    en el que se indica si es el caso, la <a href="NUH_020B.html" >sucursal</a> 
-                    de la entidad a la cual se env&iacute;a la tarjeta una vez realzada 
-                    para que el cliente la reclame y pueda utilizar.</p>
-                </td>
-              </tr>
-           
-              <tr>
-                <td class="titletable" ><p class="SUBTITULO"><b>Pago 
-                    m&iacute;nimo
-                </b></p></td>
-                <td><p  class="PARRAFO">Este 
-                    campo muestra el valor del <a href="SCH_060B.html#BL_PMINIMO" >pago 
-                    m&iacute;nimo</a> actual de la tarjeta y contiene un hiperv&iacute;nculo 
-                    mediante el cual se invoca un formulario que despliega el detalle o 
-                    composici&oacute;n de dicho valor.</p></td>
-              </tr>
-           
-              <tr> 
-                <td class="titletable" ><p class="SUBTITULO"><b>Pago 
+                <td class="titletable"><p class="SUBTITULO">Pago
                     total
-                    </b></p></td>
-                <td><p  class="PARRAFO">Campo 
-                    que indica el valor del <a href="SCH_060B.html#BL_PTOTAL" >pago 
-                    total</a> actual de la tarjeta y que contiene un hiperv&iacute;nculo 
-                    con el cual se invoca el formulario que muestra el detalle o composici&oacute;n 
-                    de este valor.</p></td>
-              </tr>
-           
-              <tr> 
-                <td class="titletable" ><p class="SUBTITULO"><b>Disponible
-                    </b></p></td>
-                <td><p  class="PARRAFO">Este 
-                    campo se&ntilde;ala el valor que se obtiene de la diferencia entre el 
-                    cupo total asignado a la tarjeta (incluido el extracupo si lo tiene) 
-                    y el monto de las utilizaciones efectuadas por el cliente. Contiene 
-                    un hiperv&iacute;nculo a trav&eacute;s del cual se invoca el formulario 
-                    en el cual se muestra el detalle del <a href="SCH_060B.html#BL_DISPONIBLE" >disponible</a>.</p></td>
-              </tr>
-           
-              <tr> 
-                <td class="titletable" ><p class="SUBTITULO"><b>Cupo 
-                    total
-                    </b></p></td>
-                <td><p  class="PARRAFO">Campo 
-                    en el cual se muestra el valor del cupo total asignado a la l&iacute;nea 
-                    principal y las l&iacute;neas independientes de la tarjeta.</p></td>
-              </tr>
-           
-              <tr> 
-                <td class="titletable" ><p class="SUBTITULO"><b>Extracupo 
-                    asignado
-                    </b></p></td>
-                <td><p  class="PARRAFO">Este 
-                    campo indica el valor del extracupo que le ha sido asignado 
-                    a la tarjeta.</p></td>
-              </tr>
-           
-              <tr> 
-                <td class="titletable" ><p class="SUBTITULO"><b>Extracupo 
-                    autorizado
-                    </b></p></td>
-                <td><p  class="PARRAFO">Campo 
-                    en el que se despliega el valor de las autorizaciones otorgadas sobre 
-                    el extracupo asignado a la tarjeta y que a&uacute;n no han sido cruzadas. 
-                    Una vez que estas son cruzadas, su valor se disminuye y se carga al 
-                    monto desplegado en el campo Extracupo utilizado.</p></td>
-              </tr>
-           
-              <tr> 
-                <td class="titletable" ><p class="SUBTITULO"><b>Extracupo 
-                    utilizado
-                    </b></p></td>
-                <td><p  class="PARRAFO">Este 
-                    campo contiene el valor acumulado de las utilizaciones hechas sobre 
-                    el extracupo asignado a la tarjeta y que disminuyen el disponible del 
-                    mismo. </p></td>
-              </tr>
-           
-              <tr> 
-                <td class="titletable" ><p class="SUBTITULO"><b>Autorizaciones
-                    </b></p></td>
-                <td><p  class="PARRAFO">Campo 
-                    que muestra el monto total de las autorizaciones que han sido otorgadas 
-                    por la entidad a las solicitudes de utilizaci&oacute;n que se han hecho 
-                    con la tarjeta y que incluye tanto aquellas que ya fueron cruzadas como 
-                    las que se encuentran pendientes de cruzar.</p></td>
-              </tr>
-           
-              <tr> 
-                <td class="titletable" ><p class="SUBTITULO"><b>Saldo 
-                    promedio al d&iacute;a
-                    </b></p></td>
-                <td><p  class="PARRAFO">Este 
-                    campo despliega el promedio que el sistema calcula a partir de las utilizaciones 
-                    hechas con la tarjeta.</p></td>
-              </tr>
-           
-              <tr> 
-                <td class="titletable" ><p class="SUBTITULO"><b>Saldo 
-                    a favor
-                    </b></p></td>
-                <td><p  class="PARRAFO">Campo 
-                    en el que se muestra si es el caso, el valor del saldo a favor del cliente 
-                    generado por los pagos en exceso efectuados por &eacute;l.</p></td>
+                  </p></td>
+                <td><p class="PARRAFO">En
+                    este campo se muestra el valor del pago total
+                    resultante de la
+                    sumatoria de los campos anteriores.</p></td>
               </tr>
             </table>
-           
-            <p class="PARRAFO">Los restantes bloques del formulario contienen los campos 
-              que se describen a continuaci&oacute;n:<b ><span class="SUBTITULO"></span></b></p>
-            <div  class="PARRAFO">
-              <p class="TITLE"><img src="../img/SCF_060E1.PNG"613" height="693"></p>
-              <p  class="TITLE">Descripción de campos</p>
+            <p class="TITLE"><a name="BL_DISPONIBLE"></a></p>
+            <p><span
+                class="SUBTITULO"><span>Disponible</span><span>:</span></span>
+              si el actor invoca el hiperv&iacute;nculo contenido
+              en el campo Disponible,
+              se despliega un nuevo formulario con el detalle que
+              permite determinar
+              el disponible de la tarjeta.</p>
+            <p class="TITLE"><img
+                src="../img/SCF_060E4.PNG">01</p>
+            <div class="PARRAFO">
+              <p class="TITLE">Descripción de campos</p>
               <table>
-                <tr> 
-                  <td class="titletable" ><p class="SUBTITULO"><b>Direcci&oacute;n 
-                      correspondencia
-                      </b></p></td>
-                  <td><p  class="PARRAFO">Campo 
-                      que despliega la direcci&oacute;n de correspondencia asociada con 
-                      la tarjeta consultada y a la que se env&iacute;a seg&uacute;n el caso 
-                      el extracto respectivo.
+                <tr>
+                  <td class="titletable"><p class="SUBTITULO">Cupo
+                      asignado
+                    </p></td>
+                  <td><p class="PARRAFO">Este
+                      campo indica el monto que se asign&oacute;
+                      como cupo a la l&iacute;nea
+                      principal de la tarjeta.</p></td>
+                </tr>
+                <tr>
+                  <td class="titletable"><p class="SUBTITULO">Pago
+                      total actual
+
+                    </p></td>
+                  <td><p class="PARRAFO">Campo
+                      que contiene el valor del <a
+                        href="SCH_060B.html#BL_PTOTAL">pago
+                        total</a> actual de la tarjeta.</p></td>
+                </tr>
+
+                <tr>
+                  <td class="titletable"><p
+                      class="SUBTITULO">Saldo
+                      ciclo en curso
+                    </p></td>
+                  <td><p class="PARRAFO">En
+                      este campo se muestra el valor de los
+                      consumos recientes no
+                      facturados, intereses corrientes y de mora
+                      hasta la fecha actual.
                     </p></td>
                 </tr>
-   
-                <tr> 
-                  <td class="titletable" ><p class="SUBTITULO"><b>Ubicaci&oacute;n 
-                     
-                     
-                     
-                      </b></p></td>
-                  <td><p  class="PARRAFO">Este 
-                      campo muestra la ubicaci&oacute;n geogr&aacute;fica a la que pertenece 
-                      la direcci&oacute;n anterior.</p></td>
-                </tr>
-   
-                <tr> 
-                  <td class="titletable" ><p class="SUBTITULO"><b>Tel&eacute;fonos
-                     
-                     
-                      </b></p></td>
-                  <td><p  class="PARRAFO">Campo 
-                      en el que se indica los n&uacute;meros telef&oacute;nicos en los cuales 
-                      es posible contactar al titular de la tarjeta.</p></td>
-                </tr>
-   
-                <tr> 
-                  <td class="titletable" ><p class="SUBTITULO"><b>Extensiones
-                     
-                      </b></p></td>
-                  <td><p  class="PARRAFO">Este 
-                      campo muestra seg&uacute;n el caso las extensiones asociadas con los 
-                      n&uacute;meros telef&oacute;nicos anteriores.</p></td>
-                </tr>
-   
+
                 <tr>
-                  <td class="titletable" ><p class="SUBTITULO"><b>Fax
-                           
-                  </b></p></td>
-                  <td><p  class="PARRAFO">Campo 
-                      que se&ntilde;ala el n&uacute;mero de fax al cual se le puede enviar 
-                      informaci&oacute;n al titular de la tarjeta por este medio.</p>
-                  </td>
+                  <td class="titletable"><p
+                      class="SUBTITULO">Inter&eacute;s
+                      corriente
+                    </p></td>
+                  <td><p class="PARRAFO">Campo
+                      que contiene el monto de los intereses de
+                      financiaci&oacute;n
+                      liquidados por la entidad sobre los saldos
+                      diferidos.</p></td>
                 </tr>
-   
+
                 <tr>
-                  <td class="titletable" ><p class="SUBTITULO"><b>Celular
-                           
-                  </b></p></td>
-                  <td><p  class="PARRAFO">En 
-                      este campo se despliega el n&uacute;mero de tel&eacute;fono celular 
-                      del titular de la tarjeta.</p></td>
+                  <td class="titletable"><p
+                      class="SUBTITULO">Autorizaciones
+                    </p></td>
+                  <td><p class="PARRAFO">En
+                      este campo se indica el valor de las
+                      autorizaciones que la entidad
+                      ha otorgado sobre la tarjeta.
+                    </p></td>
                 </tr>
-   
+
                 <tr>
-                  <td class="titletable" ><p class="SUBTITULO"><b>Zona 
-                      postal
-                           
-                  </b></p></td>
-                  <td><p  class="PARRAFO">Campo 
-                      que indica la zona postal asociada con la direcci&oacute;n y ubicaci&oacute;n 
-                      del titular de la tarjeta.</p>
-                  </td>
+                  <td class="titletable"><p
+                      class="SUBTITULO">Autorizaciones
+                      pendientes </p></td>
+                  <td><p class="PARRAFO">Campo
+                      que despliega en caso de existir, el valor
+                      de las autorizaciones
+                      que han sido otorgadas en l&iacute;nea y que
+                      a&uacute;n no han
+                      sido aplicadas para que afecten el
+                      disponible del cliente.</p></td>
                 </tr>
-   
+
                 <tr>
-                  <td class="titletable" ><p class="SUBTITULO"><b>Fecha 
-                      l&iacute;mite de pago
-                           
-                  </b></p></td>
-                  <td><p  class="PARRAFO">Este 
-                      campo muestra en formato YYYY-MM-DD la fecha l&iacute;mite de pago 
-                      actual de la tarjeta.</p></td>
+                  <td class="titletable"><p
+                      class="SUBTITULO">Sobrecupo
+                      disponible </p></td>
+                  <td><p class="PARRAFO">Indica
+                      el monto del sobrecupo autorizado para la
+                      tarjeta de acuerdo
+                      con lo parametrizado para el <a
+                        href="MEH_002B.html">producto</a>
+                      al que pertenece la misma.</p></td>
                 </tr>
-   
                 <tr>
-                  <td class="titletable" ><p class="SUBTITULO"><b>Pr&oacute;xima 
-                      facturaci&oacute;n
-                           
-                  </b></p></td>
-                  <td><p  class="PARRAFO">Campo 
-                      en formato YYYY-MM-DD que contiene la siguiente fecha en la cual se 
-                      har&aacute; corte y facturaci&oacute;n de la tarjeta de acuerdo con 
-                      el <a href="CAH_003B.html" >ciclo</a> al que 
-                      &eacute;sta pertenece.</p></td>
+                  <td class="titletable"><p
+                      class="SUBTITULO">Extracupo
+                      disponible
+                    </p></td>
+                  <td><p class="PARRAFO">Si
+                      la tarjeta tiene asignado un extracupo a la
+                      fecha, este campo
+                      muestra el monto que se encuentra disponible
+                      para ser utilizado.</p></td>
                 </tr>
-   
                 <tr>
-                  <td class="titletable" ><p class="SUBTITULO"><b>Fecha 
-                      apertura
-                           
-                  </b></p></td>
-                  <td><p  class="PARRAFO">En 
-                      este campo se muestra en formato YYYY-MM-DD la fecha en la cual se 
-                      aprob&oacute; la solicitud mediante la cual se le otorg&oacute; la 
-                      tarjeta el cliente.</p>
-                  </td>
+                  <td class="titletable"><p
+                      class="SUBTITULO">Saldos
+                      l&iacute;neas dependientes
+                    </p></td>
+                  <td><p class="PARRAFO">En
+                      este campo se muestra el valor del saldo
+                      actual que la tarjeta
+                      tiene por las transacciones y consumos
+                      hechos sobre las l&iacute;neas
+                      que dependen de la principal.</p></td>
                 </tr>
-   
+
                 <tr>
-                  <td class="titletable" ><p class="SUBTITULO"><b>Fecha 
-                      entrega pl&aacute;stico actual
-                  </b></p></td>
-                  <td><p  class="PARRAFO">Campo 
-                      en formato YYYY-MM-DD que contiene la fecha en la cual se hizo entrega 
-                      al cliente del &uacute;ltimo pl&aacute;stico asociado a la tarjeta 
-                      cuando por ejemplo se han presentado eventos de reposici&oacute;n, 
-                      reexpedici&oacute;n y otros que implican realzar un nuevo pl&aacute;stico 
-                      en reemplazo del anterior.</p></td>
+                  <td class="titletable"><p
+                      class="SUBTITULO">Saldos
+                      tarjeta principal / extendidas
+                    </p></td>
+                  <td><p class="PARRAFO">Si
+                      la tarjeta consultada es principal y tiene
+                      extendidas, en este
+                      campo se despliega el monto de los saldos
+                      actuales de las tarjetas
+                      dependientes y que afectan el disponible de
+                      la principal.</p></td>
                 </tr>
-   
+
                 <tr>
-                  <td class="titletable" ><p class="SUBTITULO"><b>Cuota 
-                      afiliaci&oacute;n / manejo / seguro
-                           
-                  </b></p></td>
-                  <td><p  class="PARRAFO">En 
-                      este campo se muestra en formato YYYY-MM-DD la fecha en la cual se 
-                      le efectuar&aacute; al cliente el cobro por concepto de cuota de afiliaci&oacute;n, 
-                      manejo y seguro de acuerdo con lo parametrizado para el <a href="MEH_002B.html" >producto</a>.</p></td>
+                  <td class="titletable"><p
+                      class="SUBTITULO">Disponible
+                    </p></td>
+                  <td><p class="PARRAFO">En
+                      este campo se muestra el valor del cual
+                      dispone la tarjeta para
+                      poder afectuar transacciones, y que incluye
+                      el de la l&iacute;nea
+                      de avances.</p></td>
                 </tr>
-   
+
                 <tr>
-                  <td class="titletable" ><p class="SUBTITULO"><b>Fecha 
-                      1a compra normal / especial
-                           
-                  </b></p></td>
-                  <td><p  class="PARRAFO">Campos 
-                      que muestran respectivamente y en formato YYYY-MM-DD la fecha en la 
-                      cual se hizo la primera compra normal y la primera compra especial 
-                      con la tarjeta.</p></td>
-                </tr>
-   
-                <tr>
-                  <td class="titletable" ><p class="SUBTITULO"><b>Valor 
-                      1a compra normal / especial
-                           
-                  </b></p></td>
-                  <td><p  class="PARRAFO">Estos 
-                      campos contienen respectivamente el valor de la primera compra normal 
-                      y la primera compra especial efectuadas por el cliente con la tarjeta.</p>
-                  </td>
-                </tr>
-   
-                <tr>
-                  <td class="titletable" ><p class="SUBTITULO"><b>Fecha 
-                      1er avance
-                           
-                  </b></p></td>
-                  <td><p  class="PARRAFO">Campo 
-                      que despliega en formato YYYY-MM-DD la fecha en la cual se hizo la 
-                      primera transacci&oacute;n de avance con la tarjeta.</p></td>
-                </tr>
-   
-                <tr> 
-                  <td class="titletable" ><p class="SUBTITULO"><b>Valor 
-                      1er avance
-                     
-                      </b></p></td>
-                  <td><p  class="PARRAFO">Este 
-                      campo indica el valor de la primera transacci&oacute;n de avance efectuada 
-                      con la tarjeta.</p></td>
-                </tr>
-   
-                <tr> 
-                  <td class="titletable"><p class="SUBTITULO"><b>Fecha 
-                      1er pago
-                     
-                      </b></p></td>
-                  <td><p  class="PARRAFO">Campo 
-                      en formato YYYY-MM-DD que se&ntilde;ala la fecha en la cual el cliente 
-                      hizo el primer pago a la entidad por la obligaci&oacute;n contra&iacute;da.</p></td>
-                </tr>
-                <tr> 
-                  <td class="titletable"><p class="SUBTITULO"><b>Valor 
-                      1er pago
-                     
-                      </b></p></td>
-                  <td><p  class="PARRAFO">En 
-                      este campo se se&ntilde;ala el valor del primer pago efectuado por 
-                      el titular de la tarjeta a la entidad.</p></td>
-                </tr>
-                <tr> 
-                  <td class="titletable" ><p class="SUBTITULO"><b>(&Uacute;ltima) 
-                      autorizaci&oacute;n
-                     
-                      </b></p></td>
-                  <td><p  class="PARRAFO">Campo 
-                      en el que se muestra en formato YYYY-MM-DD la fecha en la que la entidad 
-                      otorg&oacute; la m&aacute;s reciente autorizaci&oacute;n de una transacci&oacute;n 
-                      para la tarjeta.</p></td>
-                </tr>
-   
-                <tr> 
-                  <td class="titletable" ><p class="SUBTITULO"><b>(&Uacute;ltimo) 
-                      cambio de ciclo
-                     
-                      </b></p></td>
-                  <td><p  class="PARRAFO">Este 
-                      campo en formato YYYY-MM-DD contiene la fecha en la cual se hizo el 
-                      m&aacute;s reciente cambio de ciclo de facturaci&oacute;n para la 
-                      tarjeta. </p></td>
-                </tr>
-   
-                <tr> 
-                  <td class="titletable" ><p class="SUBTITULO"><b>(&Uacute;ltimo) 
-                      aumento de cupo
-                      </b></p></td>
-                  <td><p  class="PARRAFO">Campo 
-                      que despliega la fecha del m&aacute;s reciente aumento de cupo que 
-                      ha tenido la tarjeta.</p></td>
-                </tr>
-   
-                <tr> 
-                  <td class="titletable" ><p class="SUBTITULO"><b>(&Uacute;ltima) 
-                      reactivaci&oacute;n / reposici&oacute;n / reexpedici&oacute;n / renovaci&oacute;n
-                     
-                      </b></p></td>
-                  <td><p  class="PARRAFO">En 
-                      estos campos se muestra respectivamente la fecha en la cual la tarjeta 
-                      tuvo el mas reciente evento de reactivaci&oacute;n, reposici&oacute;n, 
-                      reexpedici&oacute;n y/o renovaci&oacute;n.</p></td>
-                </tr>
-   
-                <tr> 
-                  <td class="titletable" ><p class="SUBTITULO"><b>Activaci&oacute;n 
-                      &uacute;ltimo pl&aacute;stico
-                     
-                      </b></p></td>
-                  <td><p  class="PARRAFO">Campo 
-                      en formato YYYY-MM-DD que contiene la fecha en la que se hizo la activaci&oacute;n 
-                      del &uacute;ltimo o m&aacute;s reciente pl&aacute;stico entregado 
-                      al titular de la tarjeta.</p></td>
-                </tr>
-   
-                <tr> 
-                  <td class="titletable" ><p class="SUBTITULO"><b>(&Uacute;ltima) 
-                      fecha purque exception file
-                     
-                      </b></p></td>
-                  <td><p  class="PARRAFO">En 
-                      este campo se indica la fecha mas reciente en la cual la tarjeta fue 
-                      retirada del archivo de exception file.</p></td>
-                </tr>
-   
-                <tr> 
-                  <td class="titletable" ><p class="SUBTITULO"><b>N&uacute;mero 
-                      tarjeta depende
-                     
-                      </b></p></td>
-                  <td><p  class="PARRAFO">Cuando 
-                      el tipo de tarjeta es diferente a principal, en este campo se muestra 
-                      el n&uacute;mero de la tarjeta de la cual depende.</p></td>
-                </tr>
-   
-                <tr> 
-                  <td class="titletable" ><p class="SUBTITULO"><b>Tarjeta 
-                      masificadora
-                      </b></p></td>
-                  <td><p  class="PARRAFO">En 
-                      este campo se despliega el n&uacute;mero de tarjeta sobre la cual 
-                      se van a cobrar las cuotas de afiliaci&oacute;n, manejo y seguro, 
-                      en caso que el cliente tenga m&aacute;s de una tarjeta y la entidad 
-                      desee efectuar estos cobros sobre una sola de esas tarjetas.</p></td>
-                </tr>
-   
-                <tr> 
-                  <td class="titletable" ><p class="SUBTITULO"><b>Tarjeta 
-                      depende virtual
-                     
-                      </b></p></td>
-                  <td><p  class="PARRAFO">Campo 
-                      que aplica para el caso de las tarjetas virtuales y muestra el n&uacute;mero 
-                      de la tarjeta f&iacute;sica de la cual depende.</p></td>
-                </tr>
-   
-                <tr> 
-                  <td class="titletable" ><p class="SUBTITULO"><b>N&uacute;mero 
-                      tarjeta anterior
-                     
-                      </b></p></td>
-                  <td><p  class="PARRAFO">Si 
-                      por alg&uacute;n evento la tarjeta consultada ha tenido alg&uacute;n 
-                      cambio de n&uacute;mero, en este campo se muestra el n&uacute;mero 
-                      que ten&iacute;a la tarjeta antes del &uacute;ltimo cambio.</p></td>
-                </tr>
-   
-                <tr> 
-                  <td class="titletable" ><p class="SUBTITULO"><b>N&uacute;mero 
-                      de dependientes
-                      </b></p></td>
-                  <td><p  class="PARRAFO">En 
-                      el caso de tarjetas principales con extendidas, en este campo se indica 
-                      la cantidad de tarjetas que dependen directamente de la principal.</p></td>
+                  <td class="titletable"><p
+                      class="SUBTITULO">Disponible
+                      l&iacute;nea avances
+                    </p></td>
+                  <td><p class="PARRAFO">Campo
+                      que muestra el monto disponible que tiene la
+                      l&iacute;nea de avances
+                      de la tarjeta.</p></td>
                 </tr>
               </table>
-              <p  class="PARRAFO"> 
-              <p class="PARRAFO"><a name="BL_PMINIMO"></a></p>
-              <p><span class="SUBTITULO"><span 
-        ><b >Pago 
-                m&iacute;nimo</b></span><span 
-        >:</span></span>  
-                si el actor invoca el hiperv&iacute;nculo contenido en el campo pago 
-                m&iacute;nimo, se despliega un nuevo formulario con el detalle de dicho 
-                pago.</p>
-              <p class="TITLE"><img src="../img/SCF_060E2.PNG"></p>
+            </div>
+          </section>
+          <script src="../js/menu.js"></script>
+          <div id="footerContainer"></div>
+          <script>
+                          fetch('footer.html')
+                            .then(response => response.text())
+                            .then(html => {
+                              document.getElementById('footerContainer').innerHTML = html;
+                            });
+                        </script>
+        </body>
 
-              <div  class="PARRAFO">
-                <p  class="TITLE">Descripción de campos</p>
-                <table>
-                  <tr>
-                    <td class="titletable"><p class="SUBTITULO"><b>Capital 
-                        facturado
-                    </b></p></td>
-                    <td><p  class="PARRAFO">Este 
-                        campo indica el monto de las transacciones diferidas que debe ser 
-                        cubierto mediante el pago m&iacute;nimo.</p></td>
-                  </tr>
-                  <tr>
-                    <td class="titletable"><p class="SUBTITULO"><b>Capital 
-                        mora
-                             
-                             
-                    </b></p></td>
-                    <td><p  class="PARRAFO">Campo 
-                        que se&ntilde;ala el monto del capital de facturaciones anteriores 
-                        que se encuentra actualmente en mora por no haber sido pagado y 
-                        que debe ser cubierto por el pago m&iacute;nimo.</p></td>
-                  </tr>
-      
-                  <tr>
-                    <td class="titletable" ><p class="SUBTITULO"><b>Inter&eacute;s 
-                        corriente
-                    </b></p></td>
-                    <td><p  class="PARRAFO">En 
-                        este campo se muestra el valor del inter&eacute;s de financiaci&oacute;n 
-                        que la entidad cobra al cliente por el diferido de las transacciones 
-                        efectuadas y que debe ser cubierto en el pago m&iacute;nimo.
-                    </p></td>
-                  </tr>
-      
-                  <tr>
-                    <td class="titletable"><p class="SUBTITULO"><b>Inter&eacute;s 
-                        mora
-                    </b></p></td>
-                    <td><p  class="PARRAFO">Campo 
-                        que contiene el monto de los intereses liquidados por la entidad 
-                        sobre el capital en mora y debe cancelar mediante el pago m&iacute;nimo.</p></td>
-                  </tr>
-      
-                  <tr>
-                    <td class="titletable"><p class="SUBTITULO"><b>Inter&eacute;s 
-                        extracontable
-                    </b></p></td>
-                    <td><p  class="PARRAFO">En 
-                        este campo se indica seg&uacute;n corresponda, el monto de los intereses 
-                        causados despu&eacute;s de determinada altura de mora y que deben 
-                        ser cubiertos con el pago m&iacute;nimo.
-                    </p></td>
-                  </tr>
-      
-                  <tr>
-                    <td class="titletable" ><p class="SUBTITULO"><b>Saldo 
-                        a favor</b></p></td>
-                    <td><p  class="PARRAFO">Campo 
-                        que despliega en caso de existir, el valor del saldo a favor del 
-                        cliente y el cual se descontar&aacute; o aplicar&aacute; para determinar 
-                        el pago m&iacute;nimo.</p></td>
-                  </tr>
-      
-                  <tr>
-                    <td class="titletable" ><p class="SUBTITULO"><b>Pago 
-                        m&iacute;nimo
-                    </b></p></td>
-                    <td><p  class="PARRAFO">En 
-                        este campo se muestra el valor del pago m&iacute;nimo resultante 
-                        de la sumatoria de los campos anteriores y que el cliente debe cancelar 
-                        dentro de los plazos otorgados por la entidad.</p></td>
-                  </tr>
-                </table>
-                <p  class="PARRAFO"> 
-              <p class="PARRAFO"><a name="BL_PTOTAL"></a></p>
-                <p><span class="SUBTITULO"><span 
-        ><b >Pago 
-                  total</b></span><span 
-        >:</span></span>  
-                  si el actor invoca el hiperv&iacute;nculo contenido en el campo pago 
-                  total, se despliega un nuevo formulario con el detalle de dicho pago.</p>
-                <p class="TITLE"><img src="../img/SCF_060E3.PNG"></p>
-                <div  class="PARRAFO">
-                  <p  class="TITLE">Descripción de campos</p>
-                  <table>
-                    <tr> 
-                      <td class="titletable"><p class="SUBTITULO"><b>Pago 
-                          facturado
-                          </b></p></td>
-                      <td><p  class="PARRAFO">Este 
-                          campo indica el monto de las transacciones diferidas que debe 
-                          ser cubierto mediante el pago total.</p></td>
-                    </tr>
-                    <tr> 
-                      <td class="titletable"><p class="SUBTITULO"><b>Capital 
-                          mora
-                         
-                         
-                          </b></p></td>
-                      <td><p  class="PARRAFO">Campo 
-                          que se&ntilde;ala el monto del capital de facturaciones anteriores 
-                          que se encuentra actualmente en mora por no haber sido pagado 
-                          y que debe ser cubierto por el pago total.</p></td>
-                    </tr>
-
-                    <tr> 
-                      <td class="titletable" ><p class="SUBTITULO"><b>Inter&eacute;s 
-                          corriente
-                          </b></p></td>
-                      <td><p  class="PARRAFO">En 
-                          este campo se muestra el valor del inter&eacute;s de financiaci&oacute;n 
-                          que la entidad cobra al cliente por el diferido de las transacciones 
-                          efectuadas y que debe ser cubierto en el pago total.
-                        </p></td>
-                    </tr>
-
-                    <tr> 
-                      <td class="titletable"><p class="SUBTITULO"><b>Inter&eacute;s 
-                          mora
-                          </b></p></td>
-                      <td><p  class="PARRAFO">Campo 
-                          que contiene el monto de los intereses liquidados por la entidad 
-                          sobre el capital en mora y debe cancelar mediante el pago total.</p></td>
-                    </tr>
-
-                    <tr> 
-                      <td class="titletable"><p class="SUBTITULO"><b>Inter&eacute;s 
-                          extracontable
-                          </b></p></td>
-                      <td><p  class="PARRAFO">En 
-                          este campo se indica seg&uacute;n corresponda, el monto de los 
-                          intereses causados despu&eacute;s de determinada altura de mora 
-                          y que deben ser cubiertos con el pago total.
-                        </p></td>
-                    </tr>
-
-                    <tr> 
-                      <td class="titletable" ><p class="SUBTITULO"><b>Saldo 
-                          a favor</b></p></td>
-                      <td><p  class="PARRAFO">Campo 
-                          que despliega en caso de existir, el valor del saldo a favor del 
-                          cliente y el cual se descontar&aacute; o aplicar&aacute; para 
-                          determinar el pago total.</p></td>
-                    </tr>
-
-                    <tr> 
-                      <td class="titletable"><p class="SUBTITULO"><b>Capital 
-                          no facturado</b></p></td>
-                      <td><p  class="PARRAFO">Indica 
-                          el monto de los saldos diferidos pendientes por cancelar despu&eacute;s 
-                          de efectuar el pago m&iacute;nimo, los consumos o utilizaciones 
-                          realizados despu&eacute;s de la fecha de la &uacute;ltima facturaci&oacute;n 
-                          y los ajustes monetarios que incrementen el saldo tales como reversiones 
-                          de pagos err&oacute;neamente aplicados, etc. que deben ser cubiertos 
-                          mediante el pago total.</p></td>
-                    </tr>
-                    <tr> 
-                      <td class="titletable" ><p class="SUBTITULO"><b>Pago 
-                          total
-                          </b></p></td>
-                      <td><p  class="PARRAFO">En 
-                          este campo se muestra el valor del pago total resultante de la 
-                          sumatoria de los campos anteriores.</p></td>
-                    </tr>
-                  </table>
-                  <p  class="TITLE"><a name="BL_DISPONIBLE"></a></p>
-                  <p><span class="SUBTITULO"><span 
-        ><b >Disponible</b></span><span 
-        >:</span></span>  
-                    si el actor invoca el hiperv&iacute;nculo contenido en el campo Disponible, 
-                    se despliega un nuevo formulario con el detalle que permite determinar 
-                    el disponible de la tarjeta.</p>
-                  <p class="TITLE"><img src="../img/SCF_060E4.PNG">01</p>
-                  <div  class="PARRAFO"> 
-                    <p  class="TITLE">Descripción de campos</p>
-                    <table>
-                      <tr> 
-                        <td class="titletable"><p class="SUBTITULO"><b>Cupo 
-                            asignado
-                            </b></p></td>
-                        <td><p  class="PARRAFO">Este 
-                            campo indica el monto que se asign&oacute; como cupo a la l&iacute;nea 
-                            principal de la tarjeta.</p></td>
-                      </tr>
-                      <tr> 
-                        <td class="titletable"><p class="SUBTITULO"><b>Pago 
-                            total actual
-                           
-                           
-                            </b></p></td>
-                        <td><p  class="PARRAFO">Campo 
-                            que contiene el valor del <a href="SCH_060B.html#BL_PTOTAL" >pago 
-                            total</a> actual de la tarjeta.</p></td>
-                      </tr>
-       
-                      <tr> 
-                        <td class="titletable" ><p class="SUBTITULO"><b>Saldo 
-                            ciclo en curso
-                            </b></p></td>
-                        <td><p  class="PARRAFO">En 
-                            este campo se muestra el valor de los consumos recientes no 
-                            facturados, intereses corrientes y de mora hasta la fecha actual. 
-                          </p></td>
-                      </tr>
-       
-                      <tr> 
-                        <td class="titletable"><p class="SUBTITULO"><b>Inter&eacute;s 
-                            corriente
-                            </b></p></td>
-                        <td><p  class="PARRAFO">Campo 
-                            que contiene el monto de los intereses de financiaci&oacute;n 
-                            liquidados por la entidad sobre los saldos diferidos.</p></td>
-                      </tr>
-       
-                      <tr> 
-                        <td class="titletable"><p class="SUBTITULO"><b>Autorizaciones
-                            </b></p></td>
-                        <td><p  class="PARRAFO">En 
-                            este campo se indica el valor de las autorizaciones que la entidad 
-                            ha otorgado sobre la tarjeta.
-                          </p></td>
-                      </tr>
-       
-                      <tr> 
-                        <td class="titletable" ><p class="SUBTITULO"><b>Autorizaciones 
-                            pendientes </b></p></td>
-                        <td><p  class="PARRAFO">Campo 
-                            que despliega en caso de existir, el valor de las autorizaciones 
-                            que han sido otorgadas en l&iacute;nea y que a&uacute;n no han 
-                            sido aplicadas para que afecten el disponible del cliente.</p></td>
-                      </tr>
-       
-                      <tr> 
-                        <td class="titletable"><p class="SUBTITULO"><b>Sobrecupo 
-                            disponible </b></p></td>
-                        <td><p  class="PARRAFO">Indica 
-                            el monto del sobrecupo autorizado para la tarjeta de acuerdo 
-                            con lo parametrizado para el <a href="MEH_002B.html" >producto</a> 
-                            al que pertenece la misma.</p></td>
-                      </tr>
-                      <tr> 
-                        <td class="titletable" ><p class="SUBTITULO"><b>Extracupo 
-                            disponible
-                            </b></p></td>
-                        <td><p  class="PARRAFO">Si 
-                            la tarjeta tiene asignado un extracupo a la fecha, este campo 
-                            muestra el monto que se encuentra disponible para ser utilizado.</p></td>
-                      </tr>
-                    <tr> 
-                      <td class="titletable" ><p class="SUBTITULO"><b>Saldos 
-                          l&iacute;neas dependientes
-                          </b></p></td>
-                      <td><p  class="PARRAFO">En 
-                          este campo se muestra el valor del saldo actual que la tarjeta 
-                          tiene por las transacciones y consumos hechos sobre las l&iacute;neas 
-                          que dependen de la principal.</p></td>
-                    </tr>
-
-                    <tr> 
-                      <td class="titletable" ><p class="SUBTITULO"><b>Saldos 
-                          tarjeta principal / extendidas
-                          </b></p></td>
-                      <td><p  class="PARRAFO">Si 
-                          la tarjeta consultada es principal y tiene extendidas, en este 
-                          campo se despliega el monto de los saldos actuales de las tarjetas 
-                          dependientes y que afectan el disponible de la principal.</p></td>
-                    </tr>
-
-                    <tr> 
-                      <td class="titletable" ><p class="SUBTITULO"><b>Disponible
-                          </b></p></td>
-                      <td><p  class="PARRAFO">En 
-                          este campo se muestra el valor del cual dispone la tarjeta para 
-                          poder afectuar transacciones, y que incluye el de la l&iacute;nea 
-                          de avances.</p></td>
-                    </tr>
-
-                    <tr> 
-                      <td class="titletable" ><p class="SUBTITULO"><b>Disponible 
-                          l&iacute;nea avances
-                          </b></p></td>
-                      <td><p  class="PARRAFO">Campo 
-                          que muestra el monto disponible que tiene la l&iacute;nea de avances 
-                          de la tarjeta.</p></td>
-                    </tr>
-                  </table>
-                  </div>
-        </section>
-    <script src="../js/menu.js"></script>
-
-    <div id="footerContainer"></div>
-<script>
-  fetch('footer.html')
-    .then(response => response.text())
-    .then(html => {
-      document.getElementById('footerContainer').innerHTML = html;
-    });
-</script>
-</body>
-
-</html>
+      </html>

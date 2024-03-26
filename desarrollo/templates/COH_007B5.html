@@ -1,161 +1,181 @@
 <!DOCTYPE html>
 <html lang="es">
 
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>BANKBU®</title>
-  <link rel="stylesheet" href="../css/pages.css">
-  <link rel="stylesheet" href="../css/style.css">
-  <link rel="icon" href="../img/ACQUIRER-logo.JPG" type="image/x-icon">
-</head>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BANKBU®</title>
+    <link rel="stylesheet" href="../css/pages.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="icon" href="../img/ACQUIRER-logo.JPG" type="image/x-icon">
+  </head>
 
-<body>
+  <body>
 
-  <header>
-    <img class="logo" src="../img/logoBankbu_.PNG" alt="Logo de Mi Empresa">
-    <div id="menuBtn">
-      <img class="TITLE" src="../img/menu.PNG" alt="Botón de Menú ">
-    </div>
-  </header>
-  <div id="menuContainer"></div>
+    <header>
+      <img class="logo" src="../img/logoBankbu_.PNG" alt="Logo de Mi Empresa">
+      <div id="menuBtn">
+        <img class="TITLE" src="../img/menu.PNG" alt="Botón de Menú ">
+      </div>
+    </header>
+    <div id="menuContainer"></div>
     <script>
-      fetch('menu.html')
-        .then(response => response.text())
-        .then(html => {
-          document.getElementById('menuContainer').innerHTML = html;
-        });
-    </script>
+    fetch('menu.html')
+      .then(response => response.text())
+      .then(html => {
+        document.getElementById('menuContainer').innerHTML = html;
+      });
+  </script>
 
-  <section>
-    <div>
-      <table>
-        <tr>
-          <td>
-            <div>
-              <p class="TITLE">Límite de autorizaciones ContacLess:</p>
-            </div>
-          </td>
-        </tr>
-      </table>
-      <p class="PARRAFO"><span class="SUBTITULO">Límite de autorizaciones ContacLess:</span> 
-        Este formulario permite la parametrización por producto de los límites de autorizaciones
-         para Contactless. Solo permite incluir productos cuyo BIN esté marcado como Contactless
+    <section>
+      <div>
+        <p class="TITLE">Límite de autorizaciones ContacLess:</p>
+              
+        <p class="PARRAFO"><span class="SUBTITULO">Límite de autorizaciones
+            ContacLess:</span>
+          Este formulario permite la parametrización por producto de los límites
+          de autorizaciones
+          para Contactless. Solo permite incluir productos cuyo BIN esté marcado
+          como Contactless
           y solo para la línea de crédito 1-Compras.</p>
-      <p class="PARRAFO">El formulario contiene las opciones Actualizar, Eliminar,
-        Adicionar y Detalle. Adicionalmente, cuenta con un bot&oacute;n en la parte
-        superior para ir a la opci&oacute;n anterior: <a href="COH_007B.html">Puertos</a>; tambi&eacute;n cuenta con un
-        filtro de b&uacute;squeda. </p>
-      <p class="TITLE"><img src="../img/COF_007B11.PNG"></p>
+        <p class="PARRAFO">El formulario contiene las opciones Actualizar,
+          Eliminar,
+          Adicionar y Detalle. Adicionalmente, cuenta con un bot&oacute;n en la
+          parte
+          superior para ir a la opci&oacute;n anterior: <a
+            href="COH_007B.html">Puertos</a>; tambi&eacute;n cuenta con un
+          filtro de b&uacute;squeda. </p>
+        <p class="TITLE"><img src="../img/COF_007B11.PNG"></p>
 
-      <p><span class="SUBTITULO">Filtro:</span>  Se pueden realizar consultas a trav&eacute;s
-        de las siguientes opciones:</p>
-      <p class="TITLE"><img src="../img/COF_007B8.PNG"></p>
-      <p><span class="SUBTITULO">Adicionar:</span>  Si el usuario invoca
-        la opci&oacute;n Adicionar se despliega un formulario con los siguientes campos<span>:</span> 
-      </p>
-      <p class="TITLE"><img src="../img/COF_007B12.PNG"></p>
+        <p><span class="SUBTITULO">Filtro:</span> Se pueden realizar consultas a
+          trav&eacute;s
+          de las siguientes opciones:</p>
+        <p class="TITLE"><img src="../img/COF_007B8.PNG"></p>
+        <p><span class="SUBTITULO">Adicionar:</span> Si el usuario invoca
+          la opci&oacute;n Adicionar se despliega un formulario con los
+          siguientes campos:</span>
+        </p>
+        <p class="TITLE"><img src="../img/COF_007B12.PNG"></p>
 
-      <table>
-        <tr>
-          <td class="titletable">
-            <p class="SUBTITULO"><b>Producto</b></p>
-          </td>
-          <td>
-            <p class="PARRAFO">A
-              trav&eacute;s de la lista de valores que la entidad selecciona el <a href="MEH_002B.html">producto</a>
-              (Bin, Segmento, Grupo de afinidad) sobre el cual se realizar&aacute;n las validaciones,
-              con su correspondiente descripci&oacute;n.</p>
-          </td>
-        </tr>
-        <tr>
-          <td class="titletable">
-            <p class="SUBTITULO">L&iacute;nea
-              de cr&eacute;dito</p>
-          </td>
-          <td>
-            <p class="PARRAFO">Mediante
-              la lista de valores poblada previamente en las L&iacute;neas de cr&eacute;dito
-              de la opci&oacute;n Producto, se selecciona la l&iacute;nea de cr&eacute;dito
-              sobre la cual se realizar&aacute;n las validaciones.</p>
-          </td>
-        </tr>
-        <tr>
-          <td class="titletable">
-            <p class="SUBTITULO">Moneda</p>
-          </td>
-          <td>
-            <p class="PARRAFO">Muestra
-              la moneda en la que est&aacute; expresada la l&iacute;nea de cr&eacute;dito
-              de acuerdo con la definici&oacute;n que la entidad haya hecho.</p>
-          </td>
-        </tr>
-        <tr>
-          <td class="titletable">
-            <p class="SUBTITULO">M&aacute;ximo n&uacute;mero
-              de transacciones diario</p>
-          </td>
-          <td>
-            <p class="PARRAFO">Campo
-              num&eacute;rico de 7 posiciones, no obligatorio, en el cual se registra
-              el n&uacute;mero l&iacute;mite de autorizaciones por d&iacute;a.</p>
-          </td>
-        </tr>
-        <tr>
-          <td class="titletable">
-            <p class="SUBTITULO">M&aacute;ximo n&uacute;mero
-              de transacciones semanal</p>
-          </td>
-          <td>
-            <p class="PARRAFO">Este
-              campo num&eacute;rico de 18 posiciones, no obligatorio, permite registrar
-              el monto l&iacute;mite de las autorizaciones por d&iacute;a.</p>
-          </td>
-        </tr>
-        <tr>
-          <td class="titletable">
-            <p class="SUBTITULO">M&aacute;ximo valor
-              transacciones diario</p>
-          </td>
-          <td>
-            <p class="PARRAFO">Campo
-              num&eacute;rico de 7 posiciones, no obligatorio, en el cual se registra
-              el n&uacute;mero l&iacute;mite de autorizaciones por semana.</p>
-          </td>
-        </tr>
-        <tr>
-          <td class="titletable"><span class="SUBTITULO">  M&aacute;ximo
-            valor de transacciones semanal</span></td>
-          <td class="PARRAFO">Este campo num&eacute;rico
-            de 18 posiciones, no obligatorio, permite registrar el monto l&iacute;mite
-            de las autorizaciones por semana.</td>
-        </tr>
-      </table>
-      <p class="PARRAFO"><span class="PARRAFO"><span class="SUBTITULO">Actualizar:</span> 
-          Si el usuario invoca la opci&oacute;n Actualizar se despliega un nuevo formulario
-          en el cual los &uacute;nicos campos modificables son: N&uacute;mero de transacciones
-          diario, N&uacute;mero de transacciones semanal, Valor transacciones diario,
-          y N&uacute;mero de transacciones semanal.</span></p>
-      <p class="TITLE"><img src="../img/COF_007B13.PNG"></p>
+        <table>
+          <tr>
+            <td class="titletable">
+              <p class="SUBTITULO">Producto</p>
+            </td>
+            <td>
+              <p class="PARRAFO">A
+                trav&eacute;s de la lista de valores que la entidad selecciona
+                el <a href="MEH_002B.html">producto</a>
+                (Bin, Segmento, Grupo de afinidad) sobre el cual se
+                realizar&aacute;n las validaciones,
+                con su correspondiente descripci&oacute;n.</p>
+            </td>
+          </tr>
+          <tr>
+            <td class="titletable">
+              <p class="SUBTITULO">L&iacute;nea
+                de cr&eacute;dito</p>
+            </td>
+            <td>
+              <p class="PARRAFO">Mediante
+                la lista de valores poblada previamente en las L&iacute;neas de
+                cr&eacute;dito
+                de la opci&oacute;n Producto, se selecciona la l&iacute;nea de
+                cr&eacute;dito
+                sobre la cual se realizar&aacute;n las validaciones.</p>
+            </td>
+          </tr>
+          <tr>
+            <td class="titletable">
+              <p class="SUBTITULO">Moneda</p>
+            </td>
+            <td>
+              <p class="PARRAFO">Muestra
+                la moneda en la que est&aacute; expresada la l&iacute;nea de
+                cr&eacute;dito
+                de acuerdo con la definici&oacute;n que la entidad haya
+                hecho.</p>
+            </td>
+          </tr>
+          <tr>
+            <td class="titletable">
+              <p class="SUBTITULO">M&aacute;ximo n&uacute;mero
+                de transacciones diario</p>
+            </td>
+            <td>
+              <p class="PARRAFO">Campo
+                num&eacute;rico de 7 posiciones, no obligatorio, en el cual se
+                registra
+                el n&uacute;mero l&iacute;mite de autorizaciones por
+                d&iacute;a.</p>
+            </td>
+          </tr>
+          <tr>
+            <td class="titletable">
+              <p class="SUBTITULO">M&aacute;ximo n&uacute;mero
+                de transacciones semanal</p>
+            </td>
+            <td>
+              <p class="PARRAFO">Este
+                campo num&eacute;rico de 18 posiciones, no obligatorio, permite
+                registrar
+                el monto l&iacute;mite de las autorizaciones por d&iacute;a.</p>
+            </td>
+          </tr>
+          <tr>
+            <td class="titletable">
+              <p class="SUBTITULO">M&aacute;ximo valor
+                transacciones diario</p>
+            </td>
+            <td>
+              <p class="PARRAFO">Campo
+                num&eacute;rico de 7 posiciones, no obligatorio, en el cual se
+                registra
+                el n&uacute;mero l&iacute;mite de autorizaciones por semana.</p>
+            </td>
+          </tr>
+          <tr>
+            <td class="titletable"><span class="SUBTITULO"> M&aacute;ximo
+                valor de transacciones semanal</span></td>
+            <td class="PARRAFO">Este campo num&eacute;rico
+              de 18 posiciones, no obligatorio, permite registrar el monto
+              l&iacute;mite
+              de las autorizaciones por semana.</td>
+          </tr>
+        </table>
+        <p class="PARRAFO"><span class="PARRAFO"><span
+              class="SUBTITULO">Actualizar:</span>
+            Si el usuario invoca la opci&oacute;n Actualizar se despliega un
+            nuevo formulario
+            en el cual los &uacute;nicos campos modificables son: N&uacute;mero
+            de transacciones
+            diario, N&uacute;mero de transacciones semanal, Valor transacciones
+            diario,
+            y N&uacute;mero de transacciones semanal.</span></p>
+        <p class="TITLE"><img src="../img/COF_007B13.PNG"></p>
 
-      <p class="PARRAFO"><span class="SUBTITULO">Detalle:</span>  Si el usuario invoca
-        la opci&oacute;n Detalle se despliega el siguiente formulario: <span></span></p>
-      <p class="TITLE"><img src="../img/COF_007B14.PNG"></p>
+        <p class="PARRAFO"><span class="SUBTITULO">Detalle:</span> Si el usuario
+          invoca
+          la opci&oacute;n Detalle se despliega el siguiente formulario:
+          </p>
+        <p class="TITLE"><img src="../img/COF_007B14.PNG"></p>
 
-      <a href="COH_007B.html">Puertos</a><span><b> | </b></span><a href="COH_007B1.html">Validaciones
-          por puerto</a><b><span> | </span></b><a href="COH_007B2.html">Direcciones</a><span><b> | </b></span><a
+        <a href="COH_007B.html">Puertos</a> | </span><a
+          href="COH_007B1.html">Validaciones
+          por puerto</a> | </span><a
+          href="COH_007B2.html">Direcciones</a> | </span><a
           href="COH_007B4.html">Par&aacute;metros
           valida existencia autorizaci&oacute;n</a>
-          
-  </section>
-  <script src="../js/menu.js"></script>
-</body>
-<div id="footerContainer"></div>
-<script>
+
+      </section>
+      <script src="../js/menu.js"></script>
+    </body>
+    <div id="footerContainer"></div>
+    <script>
   fetch('footer.html')
     .then(response => response.text())
     .then(html => {
       document.getElementById('footerContainer').innerHTML = html;
     });
 </script>
-</html>
+  </html>

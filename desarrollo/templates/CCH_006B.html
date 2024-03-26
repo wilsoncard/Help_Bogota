@@ -18,26 +18,20 @@
       <img class="TITLE" src="../img/menu.PNG" alt="Botón de Menú ">
     </div>
   </header>
-  <div id="menuContainer"></div>
-    <script>
-      fetch('menu.html')
-        .then(response => response.text())
-        .then(html => {
-          document.getElementById('menuContainer').innerHTML = html;
-        });
-    </script>
+    <div id="menuContainer"></div>
+  <script>
+    fetch('menu.html')
+      .then(response => response.text())
+      .then(html => {
+        document.getElementById('menuContainer').innerHTML = html;
+      });
+  </script>
 
   <section>
     <div>
-      <table>
-        <tr>
-          <td>
-            <div>
+      
               <p class="TITLE">Actividades por tipo de cobro</p>
-            </div>
-          </td>
-        </tr>
-      </table>
+
       <p>A trav&eacute;s de esta forma o funci&oacute;n se relacionan tanto el c&oacute;digo de la obligaci&oacute;n
         como el tipo de cobro con las actividades de la gesti&oacute;n de cobranza; adicionalmente, para cada una de las
         actividades se permite parametrizar el plazo en d&iacute;as, o si genera o no un monto a cobrar por la actividad
@@ -69,13 +63,13 @@
 
       <p class="PARRAFO"><span class="SUBTITULO">Adicionar:</span>  Si
         el usuario invoca la opci&oacute;n Adicionar se despliega un formulario con
-        los siguientes campos<span>:</span></p>
+        los siguientes campos:</span></p>
       <p class="TITLE"><img src="../img/CCF_006B2.PNG"></p>
 
       <table>
         <tr>
           <td class="titletable">
-            <p class="SUBTITULO"><b><span>Tipo de cobro </span></b></p>
+            <p class="SUBTITULO">Tipo de cobro </span></p>
           </td>
           <td>
             <p>Campo con lista de valores de la cual debe seleccionarse la <A href="CCH_002B.html"
@@ -84,7 +78,7 @@
         </tr>
         <tr>
           <td class="titletable">
-            <p class="SUBTITULO"><span>Actividad</span></p>
+            <p class="SUBTITULO">Actividad</span></p>
           </td>
           <td>
             <p class="PARRAFO">Este campo cuenta con lista de valores poblada a trav&eacute;s de la opci&oacute;n <A
@@ -95,7 +89,7 @@
         </tr>
         <tr>
           <td class="titletable">
-            <p class="SUBTITULO"><b><span>D&iacute;as de plazo </span></b></p>
+            <p class="SUBTITULO">D&iacute;as de plazo </span></p>
           </td>
           <td>
             <p class="PARRAFO">Campo num&eacute;rico de 3 d&iacute;gitos, obligatorio, que contiene la cantidad de
@@ -105,7 +99,7 @@
         </tr>
         <tr>
           <td class="titletable">
-            <p class="SUBTITULO"><b><span>Cobro al cliente </span></b></p>
+            <p class="SUBTITULO">Cobro al cliente </span></p>
           </td>
           <td>
             <p>Campo con lista de valores poblada a trav&eacute;s de la opci&oacute;n Tipos de cobro de este
@@ -115,7 +109,7 @@
         </tr>
         <tr>
           <td class="titletable">
-            <p class="SUBTITULO"><b><span>Moneda</span></b></p>
+            <p class="SUBTITULO">Moneda</span></p>
           </td>
           <td>
             <p class="PARRAFO">Campo con lista de valores de la que debe seleccionarse el c&oacute;digo de la <A
@@ -126,7 +120,7 @@
         </tr>
         <tr>
           <td class="titletable">
-            <p class="SUBTITULO"><b><span>Periodo inicial mora </span></b></p>
+            <p class="SUBTITULO">Periodo inicial mora </span></p>
           </td>
           <td>
             <p>Campo num&eacute;rico de 3 d&iacute;gitos, obligatorio, en la que se registra el Periodo del rango
@@ -135,7 +129,7 @@
         </tr>
         <tr>
           <td class="titletable">
-            <p class="SUBTITULO"><b><span>Meriodo final mora </span></b></p>
+            <p class="SUBTITULO">Meriodo final mora </span></p>
           </td>
           <td>
             <p>en este campo num&eacute;rico de 3 d&iacute;gitos, obligatorio, se indica el periodo del rango referido a
@@ -144,7 +138,7 @@
         </tr>
         <tr>
           <td class="titletable">
-            <p class="SUBTITULO"><b><span>Prioridad</span></b></p>
+            <p class="SUBTITULO">Prioridad</span></p>
           </td>
           <td>
             <p>En este campo num&eacute;rico de 3 d&iacute;gitos, obligatorio, se asigna el n&uacute;mero que permite
@@ -154,7 +148,7 @@
         </tr>
         <tr>
           <td class="titletable">
-            <p class="SUBTITULO"><b><span>Permite cambio agente </span></b></p>
+            <p class="SUBTITULO">Permite cambio agente </span></p>
           </td>
           <td>
             <p class="PARRAFO">Campo que posee lista de valores adjunta de la que debe seleccionarse entre Si o
@@ -164,7 +158,7 @@
         </tr>
         <tr>
           <td class="titletable">
-            <p class="SUBTITULO"><b><span>Tipo de sobrecupo </span></b></p>
+            <p class="SUBTITULO">Tipo de sobrecupo </span></p>
           </td>
           <td>
             <p>Este campo con lista de valores para escoger entre Valor y Porcentaje, no obligatorio. De este campo
@@ -173,7 +167,7 @@
         </tr>
         <tr>
           <td class="titletable">
-            <p class="SUBTITULO"><b><span>Valor sobrecupo </span></b></p>
+            <p class="SUBTITULO">Valor sobrecupo </span></p>
           </td>
           <td>
             <p>S&iacute; el Tipo de sobrecupo es VALOR, se muestra un campo num&eacute;rico de 14 d&iacute;gitos
@@ -186,7 +180,7 @@
         </tr>
         <tr>
           <td class="titletable">
-            <p class="SUBTITULO"><b><span>Tipo de cobro </span></b></p>
+            <p class="SUBTITULO">Tipo de cobro </span></p>
           </td>
           <td>
             <p class="PARRAFO">Campo con lista de valores poblada a trav&eacute;s de la opci&oacute;n <a
@@ -197,7 +191,7 @@
         </tr>
         <tr>
           <td class="titletable">
-            <p class="SUBTITULO"><b><span><span>Actividad</span></span></b></p>
+            <p class="SUBTITULO">Actividad</span></span></p>
           </td>
           <td>
             <p class="PARRAFO">Este campo cuenta con lista de valores poblada a trav&eacute;s de la opci&oacute;n
@@ -215,7 +209,7 @@
       <p class="TITLE"><img src="../img/CCF_006B3.PNG"></p>
 
       <p class="PARRAFO"><span class="SUBTITULO">Detalle:</span>  Si el usuario invoca
-        la opci&oacute;n Detalle se despliega el siguiente formulario.<span>
+        la opci&oacute;n Detalle se despliega el siguiente formulario.
 
         </span></p>
       <p class="TITLE"><img src="../img/CCF_006B4.PNG"></p>

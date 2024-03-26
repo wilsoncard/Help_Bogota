@@ -1,141 +1,165 @@
 <!DOCTYPE html>
 <html lang="es">
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>BANKBU®</title>
-    <link rel="stylesheet" href="../css/pages.css">
-    <link rel="stylesheet" href="../css/style.css">
-    <link rel="icon" href="../img/ACQUIRER-logo.JPG" type="image/x-icon">
-</head>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>BANKBU®</title>
+        <link rel="stylesheet" href="../css/pages.css">
+        <link rel="stylesheet" href="../css/style.css">
+        <link rel="icon" href="../img/ACQUIRER-logo.JPG" type="image/x-icon">
+    </head>
 
-<body>
-    <header>
-        <img class="logo" src="../img/logoBankbu_.PNG" alt="Logo de Mi Empresa">
-        <div id="menuBtn">
-            <img class="TITLE" src="../img/menu.PNG" alt="Botón de Menú ">
-        </div>
-    </header>
-   <div id="menuContainer"></div>
-    <script>
-      fetch('menu.html')
-        .then(response => response.text())
-        .then(html => {
-          document.getElementById('menuContainer').innerHTML = html;
-        });
-    </script>
-    <section>
-        <div>
-            <table>
-                <tr>
-                    <td>
-                        <div>
-                            <p class="TITLE">Solicitudes por etapa - Realce </p>
-                        </div>
-                    </td>
-                </tr>
-            </table>
-            <p class="PARRAFO"><span class="SUBTITULO">Solicitudes en etapa de Realce: </span> Este
-                formulario corresponde al segundo paso del wizard, al que se accede desde
-                la opci&oacute;n principal <a href="SOH_040B.html" >Solicitudes por etapa</a>.
-                En &eacute;l se pueden consultar las diferentes solicitudes de afiliaci&oacute;n
-                que se encuentran en cualquiera de las etapas de Realce, Sobreflex de
-                    clave, Sobreflex de empaque, Env&iacute;o mensajer&iacute;a, Acuse de entrega. </p>
-            <p class="PARRAFO">A trav&eacute;s de la opci&oacute;n Detalle de la parte superior,
-                se puede consultar la solicitud seleccionada. Adicionalmente, se puede consultar
-                el detalle del cliente por medio del v&iacute;nculo ubicado en la Identificaci&oacute;n
-                del solicitante. Por &uacute;ltimo, cuando se trata de una solicitud de Principal con adicional
-                se mostrar&aacute; la opci&oacute;n Adicionales en la parte superior, la cual invoca el detalle de este
-                tipo de solicitudes.</p>
-            <p class="TITLE"><img src="../img/AEF_014B12.PNG" ></p>
+    <body>
+        <header>
+            <img class="logo" src="../img/logoBankbu_.PNG"
+                alt="Logo de Mi Empresa">
+            <div id="menuBtn">
+                <img class="TITLE" src="../img/menu.PNG" alt="Botón de Menú ">
+            </div>
+        </header>
+        <div id="menuContainer"></div>
+        <script>
+    fetch('menu.html')
+      .then(response => response.text())
+      .then(html => {
+        document.getElementById('menuContainer').innerHTML = html;
+      });
+  </script>
+        <section>
+            <div>
+                <table>
+                    <tr>
+                        <td>
+                            <div>
+                                <p class="TITLE">Solicitudes por etapa - Realce
+                                </p>
+                            </div>
+                        </td>
+                    </tr>
+                </table>
+                <p class="PARRAFO"><span class="SUBTITULO">Solicitudes en etapa
+                        de Realce: </span> Este
+                    formulario corresponde al segundo paso del wizard, al que se
+                    accede desde
+                    la opci&oacute;n principal <a
+                        href="SOH_040B.html">Solicitudes por etapa</a>.
+                    En &eacute;l se pueden consultar las diferentes solicitudes
+                    de afiliaci&oacute;n
+                    que se encuentran en cualquiera de las etapas de Realce,
+                    Sobreflex de
+                    clave, Sobreflex de empaque, Env&iacute;o mensajer&iacute;a,
+                    Acuse de entrega. </p>
+                <p class="PARRAFO">A trav&eacute;s de la opci&oacute;n Detalle
+                    de la parte superior,
+                    se puede consultar la solicitud seleccionada.
+                    Adicionalmente, se puede consultar
+                    el detalle del cliente por medio del v&iacute;nculo ubicado
+                    en la Identificaci&oacute;n
+                    del solicitante. Por &uacute;ltimo, cuando se trata de una
+                    solicitud de Principal con adicional
+                    se mostrar&aacute; la opci&oacute;n Adicionales en la parte
+                    superior, la cual invoca el detalle de este
+                    tipo de solicitudes.</p>
+                <p class="TITLE"><img src="../img/AEF_014B12.PNG"></p>
 
-            <table>
-                <tr>
-                    <td class="titletable">
-                        <p class="SUBTITULO">Fecha
-                            ingreso </p>
-                    </td>
-                    <td>
-                        <p class="PARRAFO">Muestra
-                            la fecha en la cual se grab&oacute; la solicitud.</p>
-                    </td>
-                </tr>
-                <tr>
-                    <td class="titletable">
-                        <p class="SUBTITULO"><b>Secuencia</b></p>
-                    </td>
-                    <td>
-                        <p class="PARRAFO">Campo
-                            de salida que ilustra el n&uacute;mero consecutivo asignado por el sistema
-                            y que permite diferenciar e identificar las solicitudes.</p>
-                    </td>
-                </tr>
-                <tr>
-                    <td class="titletable">
-                        <p class="SUBTITULO"><b><span>Tipo
-                                    solicitud</span></b></p>
-                    </td>
-                    <td>
-                        <p class="PARRAFO">Muestra
-                            el tipo de solicitud a tramitar en el formulario.</p>
-                    </td>
-                </tr>
-                <tr>
-                    <td class="titletable">
-                        <p class="SUBTITULO"><b><span>Tipo
-                                    cr&eacute;dito nuevo</span></b></p>
-                    </td>
-                    <td>
-                        <p class="PARRAFO">Campo
-                            de salida que identifica qu&eacute; tipo de cliente o clientes aplican
-                            para la solicitud de Cr&eacute;dito nuevo. Puede ser Titular
-                            con adicional, Solo titular, o Solo Adicional.</p>
-                    </td>
-                </tr>
-                <tr>
-                    <td class="titletable">
-                        <p class="SUBTITULO"><b><span>Estado</span></b></p>
-                    </td>
-                    <td>
-                        <p class="PARRAFO">Indica
-                            la condici&oacute;n en que se encuentra la solicitud al arribar a esta
-                            etapa, las cuales pueden ser: En zona gris, Negada totalmente, Negada
-                            parcialmente, Aprobada totalmente o Aprobada parcialmente.</p>
-                    </td>
-                </tr>
-                <tr>
-                    <td class="titletable">
-                        <p class="SUBTITULO"><b><span>Identificaci&oacute;n
-                                    solicitante </span></b></p>
-                    </td>
-                    <td>
-                        <p class="PARRAFO">Contiene
-                            tanto el tipo de documento como el n&uacute;mero del mismo, que identifica
-                            al solicitante.</p>
-                    </td>
-                </tr>
-                <tr>
-                    <td class="titletable">
-                        <p class="SUBTITULO">Nombre<b>
-                            </b></p>
-                    </td>
-                    <td>
-                        <p class="PARRAFO">Despliega
-                            el nombre del solicitante.</p>
-                    </td>
-                </tr>
-            </table>
+                <table>
+                    <tr>
+                        <td class="titletable">
+                            <p class="SUBTITULO">Fecha
+                                ingreso </p>
+                        </td>
+                        <td>
+                            <p class="PARRAFO">Muestra
+                                la fecha en la cual se grab&oacute; la
+                                solicitud.</p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="titletable">
+                            <p class="SUBTITULO">Secuencia</p>
+                        </td>
+                        <td>
+                            <p class="PARRAFO">Campo
+                                de salida que ilustra el n&uacute;mero
+                                consecutivo asignado por el sistema
+                                y que permite diferenciar e identificar las
+                                solicitudes.</p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="titletable">
+                            <p class="SUBTITULO">Tipo
+                                    solicitud</span></p>
+                        </td>
+                        <td>
+                            <p class="PARRAFO">Muestra
+                                el tipo de solicitud a tramitar en el
+                                formulario.</p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="titletable">
+                            <p class="SUBTITULO">Tipo
+                                    cr&eacute;dito nuevo</span></p>
+                        </td>
+                        <td>
+                            <p class="PARRAFO">Campo
+                                de salida que identifica qu&eacute; tipo de
+                                cliente o clientes aplican
+                                para la solicitud de Cr&eacute;dito nuevo. Puede
+                                ser Titular
+                                con adicional, Solo titular, o Solo
+                                Adicional.</p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="titletable">
+                            <p class="SUBTITULO">Estado</span></p>
+                        </td>
+                        <td>
+                            <p class="PARRAFO">Indica
+                                la condici&oacute;n en que se encuentra la
+                                solicitud al arribar a esta
+                                etapa, las cuales pueden ser: En zona gris,
+                                Negada totalmente, Negada
+                                parcialmente, Aprobada totalmente o Aprobada
+                                parcialmente.</p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="titletable">
+                            <p class="SUBTITULO">Identificaci&oacute;n
+                                    solicitante </span></p>
+                        </td>
+                        <td>
+                            <p class="PARRAFO">Contiene
+                                tanto el tipo de documento como el n&uacute;mero
+                                del mismo, que identifica
+                                al solicitante.</p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="titletable">
+                            <p class="SUBTITULO">Nombre
+                            </p>
+                        </td>
+                        <td>
+                            <p class="PARRAFO">Despliega
+                                el nombre del solicitante.</p>
+                        </td>
+                    </tr>
+                </table>
 
-    </section>
-    <script src="../js/menu.js"></script>
-</body>
-<div id="footerContainer"></div>
-<script>
+            </section>
+            <script src="../js/menu.js"></script>
+        </body>
+        <div id="footerContainer"></div>
+        <script>
   fetch('footer.html')
     .then(response => response.text())
     .then(html => {
       document.getElementById('footerContainer').innerHTML = html;
     });
 </script>
-</html>
+    </html>

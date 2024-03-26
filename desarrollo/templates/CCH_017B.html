@@ -18,26 +18,20 @@
       <img class="TITLE" src="../img/menu.PNG" alt="Botón de Menú ">
     </div>
   </header>
-  <div id="menuContainer"></div>
-    <script>
-      fetch('menu.html')
-        .then(response => response.text())
-        .then(html => {
-          document.getElementById('menuContainer').innerHTML = html;
-        });
-    </script>
+    <div id="menuContainer"></div>
+  <script>
+    fetch('menu.html')
+      .then(response => response.text())
+      .then(html => {
+        document.getElementById('menuContainer').innerHTML = html;
+      });
+  </script>
 
   <section>
     <div>
-      <table>
-        <tr>
-          <td>
-            <div>
+      
               <p class="TITLE">Reasignaci&oacute;n de la cobranza</p>
-            </div>
-          </td>
-        </tr>
-      </table>
+
       <p>Este formulario permite reasignar o devolver actividades de una obligaci&oacute;n para que sea gestionada por
         otra casa de cobranza o agente. La informaci&oacute;n presentada en la pantalla se despliega con la simple
         invocaci&oacute;n de la opci&oacute;n y el &uacute;nico campo al que se tiene acceso es la casilla de
@@ -89,7 +83,7 @@
         </tr>
         <tr>
           <td class="titletable">
-            <p class="SUBTITULO"><b><span>Agente</span></b></p>
+            <p class="SUBTITULO">Agente</span></p>
           </td>
           <td>
             <p>Campo con lista de valores, poblada a trav&eacute;s de la opci&oacute;n <A
@@ -101,8 +95,8 @@
         </tr>
       </table>
       <p><span class="SUBTITULO"><a name="resumen"></a>Resumen:</span>  Es el segundo formulario del wizard, que
-        despliega la siguiente informaci&oacute;n<span>, de </span><span>acuerdo a las tarjetas en gesti&oacute;n que
-          hayan sido seleccionadas en el primer paso. Cuenta con una opci&oacute;n para Remover aquellas</span><span>
+        despliega la siguiente informaci&oacute;n, de </span>acuerdo a las tarjetas en gesti&oacute;n que
+          hayan sido seleccionadas en el primer paso. Cuenta con una opci&oacute;n para Remover aquellas</span>
           tarjetas que finalmente no se requieren reasignar o devolver:</span></p>
       <p class="TITLE"><img src="../img/CCF_017B3.PNG"></p>
 

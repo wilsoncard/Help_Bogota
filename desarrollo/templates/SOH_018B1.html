@@ -1,65 +1,66 @@
 <!DOCTYPE html>
 <html lang="es">
 
-<head>
+  <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>BANKBU®</title>
     <link rel="stylesheet" href="../css/pages.css">
     <link rel="stylesheet" href="../css/style.css">
- <link rel="icon" href="../img/ACQUIRER-logo.JPG" type="image/x-icon">
+    <link rel="icon" href="../img/ACQUIRER-logo.JPG" type="image/x-icon">
 
- <style>
+    <style>
     footer{
           position: fixed;
       }
 </style>
-</head>
+  </head>
 
-<body>
+  <body>
     <header>
-        <img class="logo" src="../img/logoBankbu_.PNG" alt="Logo de Mi Empresa">
-        <div id="menuBtn">
-            <img class="TITLE"  src= "../img/menu.PNG" alt="Botón de Menú ">
-        </div>
+      <img class="logo" src="../img/logoBankbu_.PNG" alt="Logo de Mi Empresa">
+      <div id="menuBtn">
+        <img class="TITLE" src="../img/menu.PNG" alt="Botón de Menú ">
+      </div>
     </header>
-   <div id="menuContainer"></div>
+    <div id="menuContainer"></div>
     <script>
-      fetch('menu.html')
-        .then(response => response.text())
-        .then(html => {
-          document.getElementById('menuContainer').innerHTML = html;
-        });
-    </script>
+    fetch('menu.html')
+      .then(response => response.text())
+      .then(html => {
+        document.getElementById('menuContainer').innerHTML = html;
+      });
+  </script>
 
     <section>
-        <div> 
-                    <p class="TITLE">Reexpedici&oacute;n</p>
-                        <p><span class="SUBTITULO">Documentos:</span>  En este paso del wizard se muetra la
-                             relaci&oacute;n de los diferentes documentos que deben   anexarse a la 
-                             solicitud, permitiendo marcar en las columnas correspondientes si   cada 
-                             documento relacionado fue entregado o no.</p>
-                        <p>En caso de no haber documentos parametrizados para el producto de la tarjeta,
-                             este formulario se mostrar&aacute; en blanco.</p>
-                             <p class="TITLE"><img src="../img/SOF_014B14.2.PNG" ></p>
-                        <p class="TITLE"><img src="../img/SOF_014B4.1.PNG" ></p>
-                        
-                        <p  class="PARRAFO"><span class="PARRAFO">A trav&eacute;s de los botones
-                             de la parte inferior derecha, se podr&aacute; regresar o cancelar el
-                              proceso.</span></p>
-                        
-            
-            </section>
-    <script src="../js/menu.js"></script>
+      <div>
+        <p class="TITLE">Reexpedici&oacute;n</p>
+        <p><span class="SUBTITULO">Documentos:</span> En este paso del wizard se
+          muetra la
+          relaci&oacute;n de los diferentes documentos que deben anexarse a la
+          solicitud, permitiendo marcar en las columnas correspondientes si cada
+          documento relacionado fue entregado o no.</p>
+        <p>En caso de no haber documentos parametrizados para el producto de la
+          tarjeta,
+          este formulario se mostrar&aacute; en blanco.</p>
+        <p class="TITLE"><img src="../img/SOF_014B14.2.PNG"></p>
+        <p class="TITLE"><img src="../img/SOF_014B4.1.PNG"></p>
 
-    <div id="footerContainer"></div>
-<script>
+        <p class="PARRAFO"><span class="PARRAFO">A trav&eacute;s de los botones
+            de la parte inferior derecha, se podr&aacute; regresar o cancelar el
+            proceso.</span></p>
+
+      </section>
+      <script src="../js/menu.js"></script>
+
+      <div id="footerContainer"></div>
+      <script>
   fetch('footer.html')
     .then(response => response.text())
     .then(html => {
       document.getElementById('footerContainer').innerHTML = html;
     });
 </script>
-</body>
+    </body>
 
-</html>
+  </html>

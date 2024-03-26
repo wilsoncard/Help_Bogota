@@ -17,103 +17,95 @@
             <img class="TITLE"  src= "../img/menu.PNG" alt="Botón de Menú ">
         </div>
     </header>
-   <div id="menuContainer"></div>
-    <script>
-      fetch('menu.html')
-        .then(response => response.text())
-        .then(html => {
-          document.getElementById('menuContainer').innerHTML = html;
-        });
-    </script>
+      <div id="menuContainer"></div>
+  <script>
+    fetch('menu.html')
+      .then(response => response.text())
+      .then(html => {
+        document.getElementById('menuContainer').innerHTML = html;
+      });
+  </script>
 
     <section>
         <div> 
-            <table>
-              <tr> 
-                <td><div> 
-                    <p  class="TITLE">Actividades</p>
-                    </div></td>
-              </tr>
-            </table>
+            
+            <p  class="TITLE">Actividades</p>
+                    
             <p class="PARRAFO">Mediante esta funci&oacute;n se habilita la consulta y mantenimiento 
               de la tabla en la cual se almacenan las diferentes actividades que deben ser realizadas para la gesti&oacute;n de cada uno de los tipos de reclamos existentes, permitiendo definir un tiempo espec&iacute;fico para cada una de ellas as&iacute; como el orden en el cual deben ser ejecutadas. As&iacute; mismo, se definen los roles que podr&aacute;n ejecutar dichas actividades y los requisitos que cada una de ellas tendr&aacute;.</p>
             <p class="PARRAFO">El formulario contiene las opciones Actualizar, Eliminar y
               Adicionar. Adicionalmente, cuenta con un filtro de b&uacute;squeda 
             y las opciones <a href="RCH_005B1.html" >Requisitos por actividad</a> y <a href="RCH_005B2.html" >Roles por actividad</a>.</p>
-            <p class="TITLE"><img src="../img/RCF_005B1.PNG"761" height="461"></p>
+            <p class="TITLE"><img src="../img/RCF_005B1.PNG"></p>
             
             <p><span class="SUBTITULO">Filtro:</span>  Se pueden realizar consultas a trav&eacute;s 
               de las siguientes opciones:</p>
-            <p class="TITLE"><img src="../img/RCF_005B.PNG"446" height="115"></p>
+            <p class="TITLE"><img src="../img/RCF_005B.PNG"></p>
             
             <table>
               <tr> 
-                <td  class="titletable" ><p class="SUBTITULO"><b><span 
-        >C&oacute;digo</span></b></p></td>
+                <td  class="titletable" ><p class="SUBTITULO"><span 
+        >C&oacute;digo</span></p></td>
                 <td><p class="PARRAFO">Campo 
                     num&eacute;rico de 4 d&iacute;gitos que contiene 
-                    el c&oacute;digo de la actividad que se desea buscar.</p>      </td>
+                    el c&oacute;digo de la actividad que se desea buscar.</p></td>
               </tr>
               <tr> 
-                <td class="titletable"><p class="SUBTITULO"><b><span 
-        >Descripci&oacute;n</span></span></b></p></td>
+                <td class="titletable"><p class="SUBTITULO"><span 
+        >Descripci&oacute;n</span></span></p></td>
                 <td><p class="PARRAFO">En este campo alfanum&eacute;rico de m&aacute;ximo 60 caracteres, se ingresa el nombre asociado a la actividad que se desee buscar.</p></td>
               </tr>
               <tr>
-                <td><span class="SUBTITULO #1"><b>Tipo de reclamo</b></span></td>
+                <td><span class="SUBTITULO #1">Tipo de reclamo</span></td>
                 <td><p>En este campo se selecciona de la lista de valores adjunta, el <a href="RCH_001B.html" >tipo de reclamo</a> que se desea consultar.</p></td>
               </tr>
             </table>
             
             <p  class="PARRAFO"><span class="SUBTITULO">Adicionar:</span>  Si el usuario invoca la opci&oacute;n Adicionar se despliega un formulario con los siguientes campos<span 
         >:</span></p>
-            <p class="TITLE"><img src="../img/RCF_005B2.PNG"453" height="264"></p>
+            <p class="TITLE"><img src="../img/RCF_005B2.PNG"></p>
             
             <table>
               <tr> 
-                <td class="titletable"><p class="SUBTITULO"><b><span 
-        >C&oacute;digo</span></b></p></td>
+                <td class="titletable"><p class="SUBTITULO"><span 
+        >C&oacute;digo</span></p></td>
                 <td><p class="PARRAFO">Campo 
                     num&eacute;rico de 4 d&iacute;gitos, obligatorio, que contiene 
                     el c&oacute;digo asignado a cada actividad y que la identifica 
                     dentro del sistema.</p></td>
               </tr>
               <tr> 
-                <td class="titletable"><p class="SUBTITULO"><b><span >Descripci&oacute;n</span></span></b></p></td>
+                <td class="titletable"><p class="SUBTITULO"><span >Descripci&oacute;n</span></span></p></td>
                 <td><p class="PARRAFO">Campo alfanum&eacute;rico de 60 posiciones, obligatorio, en el cual se registra el nombre de la actividad.</p></td>
               </tr>
               <tr>
-                <td><span class="SUBTITULO #1"><b>Tipo de reclamo</b></span></td>
+                <td><span class="SUBTITULO #1">Tipo de reclamo</span></td>
                 <td  class="PARRAFO"><p>En este campo obligatorio, se selecciona de la lista de valores adjunta, el <a href="RCH_001B.html" >tipo de reclamo</a> al cual corresponde la actividad.</td>
               </tr></p>
               <tr>
-                <td><span class="SUBTITULO #1"><b>Duraci&oacute;n</b></span></td>
+                <td><span class="SUBTITULO #1">Duraci&oacute;n</span></td>
                 <td  class="PARRAFO"><p>Campo 
                     num&eacute;rico de 3 d&iacute;gitos, obligatorio, que contiene 
                 la duraci&oacute;n expresada en n&uacute;mero de horas asignadas para realizar dicha actividad. El sistema valida que la suma del n&uacute;mero de horas asignadas a las actividades de un <a href="RCH_001B.html" >tipo de reclamo </a>espec&iacute;fico, no pasen el valor parametrizado en el periodo m&aacute;ximo de ejecuci&oacute;n de dicho reclamo.</td>
               </tr></p>
               <tr>
-                <td><span class="SUBTITULO #1"><b>Actividad depende de</b></span></td>
+                <td><span class="SUBTITULO #1">Actividad depende de</span></td>
                 <td  class="PARRAFO"><p>De esta lista de valores se selecciona la actividad que debe preceder a la que se est&aacute; ingresando. La 'Actividad depende de' debe estar terminada o cancelada antes de poder iniciar la ejecuci&oacute;n de la actividad que se est&aacute; parametrizando.</span></p>
                 <p>Este campo s&oacute;lo puede ser nulo cuando la Actividad ingresada es la primera para un tipo de reclamo, de lo contrario siempre exigir&aacute; ser diligenciado con la anterior actividad creada para el mismo reclamo.</p></td>
               </tr>
               <tr>
-                <td><span class="SUBTITULO #1"><b>Rol</b></span></td>
+                <td><span class="SUBTITULO #1">Rol</span></td>
                 <td  class="PARRAFO" ><p>En 
                 este campo obligatorio, se selecciona de la lista de valores el <a href="RCH_002B.html" >rol</a> principal al cual se podr&aacute; asignar esta actividad.</td>
               </tr></p>
             </table>
- 
-              .
- 
+
             <p  class="PARRAFO"><span class="PARRAFO"><span class="SUBTITULO">Actualizar:</span>  
               Si el usuario invoca la opci&oacute;n Actualizar se despliega un nuevo formulario 
               en el cual los &uacute;nicos campos modificables son la Descripci&oacute;n y la Duraci&oacute;n.</span></p>
  
-              <p class="TITLE"><img src="../img/RCF_005B3.PNG"374" height="225"></p>
+              <p class="TITLE"><img src="../img/RCF_005B3.PNG"></p>
               
- 
- 
         </section>
     <script src="../js/menu.js"></script>
 

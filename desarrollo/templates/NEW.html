@@ -18,24 +18,20 @@
             <img class="TITLE"  src= "../img/menu.PNG" alt="Botón de Menú ">
         </div>
     </header>
-   <div id="menuContainer"></div>
-    <script>
-      fetch('menu.html')
-        .then(response => response.text())
-        .then(html => {
-          document.getElementById('menuContainer').innerHTML = html;
-        });
-    </script>
+      <div id="menuContainer"></div>
+  <script>
+    fetch('menu.html')
+      .then(response => response.text())
+      .then(html => {
+        document.getElementById('menuContainer').innerHTML = html;
+      });
+  </script>
 
     <section>
         <div> 
-            <table>
-              <tr> 
-                <td><div> 
+            
                     <p  class="TITLE">Movimiento aplicado a convenios</p>
-                    </div></td>
-              </tr>
-            </table>
+                    
             <p class="PARRAFO">Mediante esta opci&oacute;n se facilita la consulta de   los diferentes movimientos que afectan las cuentas de los convenios, grupos de   afinidad o a la de las empresas con las que se han celebrado acuerdos   comerciales.</p>
             <p class="PARRAFO">El formulario muestra los campos por los cual se podr&aacute; fitrar la informaci&oacute;n de convenios a consultar. Esta informaci&oacute;n se puede consultar a trav&eacute;s de las opciones Detalle movimiento convenio, Detalle movimiento grupos de afinidad, y Detalle movimiento clientes.</p>
             <p class="TITLE"><img src="../img/MEF_031B.PNG"693" height="239"></p>
@@ -62,42 +58,42 @@
             
             <table>
               <tr> 
-                <td  class="titletable" ><p class="SUBTITULO"><b><span 
-        >C&oacute;digo</span></b></p></td>
+                <td  class="titletable" ><p class="SUBTITULO"><span 
+        >C&oacute;digo</span></p></td>
                 <td><p class="PARRAFO">Campo 
                     alfanum&eacute;rico de tres d&iacute;gitos, obligatorio, que contiene 
                     el c&oacute;digo asignado a cada pa&iacute;s y el cual lo identifica 
                     a nivel internacional dentro del sistema de tarjeta de cr&eacute;dito.</p></td>
               </tr>
               <tr> 
-                <td class="titletable"><p class="SUBTITULO"><b><span 
-        >Nombre</span></b></p></td>
+                <td class="titletable"><p class="SUBTITULO"><span 
+        >Nombre</span></p></td>
                 <td><p class="PARRAFO">Campo 
                     alfanum&eacute;rico de 35 posiciones, obligatorio, en el cual se registra 
                     el nombre oficial de cada pa&iacute;s asociado al respectivo c&oacute;digo.</p></td>
               </tr>
               <tr> 
-                <td  class="titletable" ><p class="SUBTITULO"><b><span 
+                <td  class="titletable" ><p class="SUBTITULO"><span 
         >C&oacute;digo 
                     telef&oacute;nico
-                    </span></b></p></td>
+                    </span></p></td>
                 <td><p class="PARRAFO">Campo 
                     alfanum&eacute;rico de cuatro posiciones, no obligatorio, en el cual 
                     se registra el c&oacute;digo telef&oacute;nico asignado a cada pa&iacute;s. 
                   </p></td>
               </tr>
               <tr> 
-                <td class="titletable"><p class="SUBTITULO"><b><span 
+                <td class="titletable"><p class="SUBTITULO"><span 
         >Moneda</span><span 
         >
-                    </span></b></p></td>
+                    </span></p></td>
                 <td><p class="PARRAFO">Campo 
                     no obligatorio, con lista de valores de la cual se selecciona la Moneda 
                     emitida por el Banco Central del pa&iacute;s en que resida la aplicaci&oacute;n.</p></td>
               </tr>
               <tr> 
-                <td  class="titletable" ><p class="SUBTITULO"><b><span 
-        >Reguladora</span></b></p></td>
+                <td  class="titletable" ><p class="SUBTITULO"><span 
+        >Reguladora</span></p></td>
                 <td><p class="PARRAFO">En 
                     este campo no obligatorio, se selecciona de la lista de valores la Moneda 
                     patr&oacute;n, es decir, aquella en la cual se realizan las transacciones 
@@ -105,41 +101,41 @@
                     las cifras existentes dentro del sistema.</p></td>
               </tr>
               <tr> 
-                <td class="titletable"><p class="SUBTITULO"><b><span 
-        >Indizadora</span></b></p></td>
+                <td class="titletable"><p class="SUBTITULO"><span 
+        >Indizadora</span></p></td>
                 <td><p class="PARRAFO">Este 
                     campo dise&ntilde;ado para un uso futuro, contiene lista de valores 
                     de la que se puede seleccionar la moneda puente, o que se va a utilizar 
                     para realizar las conversiones requeridas.</p></td>
               </tr>
               <tr> 
-                <td  class="titletable" ><p class="SUBTITULO"><b><span 
+                <td  class="titletable" ><p class="SUBTITULO"><span 
         >Nivel 
-                    </span></b></p></td>
+                    </span></p></td>
                 <td><p class="PARRAFO">Campo 
                     con lista de valores de la cual se selecciona entre Pa&iacute;s, Departamento, 
                     Municipio y Otro el nivel en el cual se realizar&aacute; la validaci&oacute;n.</p></td>
               </tr>
               <tr> 
-                <td class="titletable"><p class="SUBTITULO"><b><span 
+                <td class="titletable"><p class="SUBTITULO"><span 
         >Zona 
-                    postal</span></b></p></td>
+                    postal</span></p></td>
                 <td><p class="PARRAFO">En 
                     este campo no obligatorio, se se&ntilde;ala si la zona postal se valida 
                     o no para el pa&iacute;s sobre el que se ubica el cursor. </p></td>
               </tr>
               <tr> 
-                <td  class="titletable" ><p class="SUBTITULO"><b><span 
+                <td  class="titletable" ><p class="SUBTITULO"><span 
         >Posici&oacute;n 
-                    inicial</span></b></p></td>
+                    inicial</span></p></td>
                 <td><p class="PARRAFO">Campo 
                     num&eacute;rico de 2 d&iacute;gitos, obligatorio, que indica la posici&oacute;n 
                     a partir de la que debe aparecer el dato de la zona postal dentro del 
                     registro o cadena de caracteres, cuando se deba validar. </p></td>
               </tr>
               <tr> 
-                <td class="titletable"><p class="SUBTITULO"><b><span 
-        >Longitud</span></b></p></td>
+                <td class="titletable"><p class="SUBTITULO"><span 
+        >Longitud</span></p></td>
                 <td><p class="PARRAFO">En 
                     este campo num&eacute;rico de 2 d&iacute;gitos, obligatorio, se registra 
                     la cantidad o n&uacute;mero de posiciones que ocupar&aacute; el dato 
@@ -154,9 +150,9 @@
                     de determinadas franquicias.</p></td>
               </tr>
               <tr> 
-                <td class="titletable"><p class="SUBTITULO"><b><span 
+                <td class="titletable"><p class="SUBTITULO"><span 
         >Pa&iacute;s 
-                    internacional</span></b></p></td>
+                    internacional</span></p></td>
                 <td><p class="PARRAFO">Este 
                     campo num&eacute;rico de 3 d&iacute;gitos, no obligatorio, permite asociar 
                     un c&oacute;digo de pa&iacute;s diferente al utilizado tanto por Visa 
@@ -178,10 +174,10 @@
             <p class="TITLE"><img src="../img/NUF_003B15.PNG"749" ></p>
             
             <p><a href="NUH_003B1.html">Departamentos</a><span
-              ><b> | </b></span><a href="NUH_003B2.html">Municipios</a><b><span > 
-              | </span></b><a href="NUH_003B3.html">Otros</a><span
-              ><b> | </b></span><a href="NUH_003B4.html">Zona 
-              postal</a><b></b></p>
+              > | </span><a href="NUH_003B2.html">Municipios</a><span > 
+              | </span><a href="NUH_003B3.html">Otros</a><span
+              > | </span><a href="NUH_003B4.html">Zona 
+              postal</a></p>
             
         </section>
     <script src="../js/menu.js"></script>

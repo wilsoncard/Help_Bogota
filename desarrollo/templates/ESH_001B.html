@@ -19,27 +19,21 @@
       <img class="TITLE" src="../img/menu.PNG" alt="Botón de Menú ">
     </div>
   </header>
-  <div id="menuContainer"></div>
-    <script>
-      fetch('menu.html')
-        .then(response => response.text())
-        .then(html => {
-          document.getElementById('menuContainer').innerHTML = html;
-        });
-    </script>
+    <div id="menuContainer"></div>
+  <script>
+    fetch('menu.html')
+      .then(response => response.text())
+      .then(html => {
+        document.getElementById('menuContainer').innerHTML = html;
+      });
+  </script>
 
   <section>
     <div>
-      <table>
-        <tr>
-          <td>
-            <div>
+      
               <p class="TITLE">Grupos de establecimientos</p>
-            </div>
-          </td>
-        </tr>
-      </table>
-      <p class="PARRAFO"><span>Mediante
+
+      <p class="PARRAFO">Mediante
           esta funci&oacute;n se permite la consulta y mantenimiento de
           la tabla que contiene la codificaci&oacute;n de los diferentes
           grupos de establecimientos definidos por la entidad financiera.</span></p>
@@ -48,7 +42,7 @@
       <p class="PARRAFO">El
         formulario contiene las opciones Actualizar, Eliminar, y Adicionar.</p>
       <p class="PARRAFO"><span class="SUBTITULO">Adicionar:</span>  Si el usuario invoca la opci&oacute;n Adicionar se
-        despliega un formulario con los siguientes campos<span>:</span> 
+        despliega un formulario con los siguientes campos:</span> 
       </p>
       <p class="TITLE"><img src="../img/ESF_001E1.PNG"></p>
 
@@ -58,7 +52,7 @@
             <p class="SUBTITULO">C&oacute;digo</p>
           </td>
           <td>
-            <p class="PARRAFO"><span>Campo alfanum&eacute;rico de
+            <p class="PARRAFO">Campo alfanum&eacute;rico de
                 4 posiciones, obligatorio, asignado a cada uno de los grupos de
                 establecimientos establecidos por la entidad financiera.</span></p>
           </td>
@@ -68,7 +62,7 @@
             <p class="SUBTITULO">Descripci&oacute;n</p>
           </td>
           <td>
-            <p class="PARRAFO"><span>En
+            <p class="PARRAFO">En
                 este campo alfanum&eacute;rico de 30 posiciones, obligatorio,
                 se registra el nombre asociado a cada grupo de establecimientos.</span></p>
           </td>
@@ -78,7 +72,7 @@
             <p class="SUBTITULO">Abreviatura</p>
           </td>
           <td>
-            <p class="PARRAFO"><span>Campo
+            <p class="PARRAFO">Campo
                 alfanum&eacute;rico de 10 posiciones, obligatorio, en el que se
                 registran los nombres cortos a utilizar en los reportes o consultas. </span></p>
           </td>

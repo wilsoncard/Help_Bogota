@@ -1,75 +1,79 @@
 <!DOCTYPE html>
 <html lang="es">
 
-<head>
+  <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>BANKBU®</title>
     <link rel="stylesheet" href="../css/pages.css">
     <link rel="stylesheet" href="../css/style.css">
- <link rel="icon" href="../img/ACQUIRER-logo.JPG" type="image/x-icon">
-</head>
+    <link rel="icon" href="../img/ACQUIRER-logo.JPG" type="image/x-icon">
+  </head>
 
-<body>
+  <body>
     <header>
-        <img class="logo" src="../img/logoBankbu_.PNG" alt="Logo de Mi Empresa">
-        <div id="menuBtn">
-            <img class="TITLE"  src= "../img/menu.PNG" alt="Botón de Menú ">
-        </div>
+      <img class="logo" src="../img/logoBankbu_.PNG" alt="Logo de Mi Empresa">
+      <div id="menuBtn">
+        <img class="TITLE" src="../img/menu.PNG" alt="Botón de Menú ">
+      </div>
     </header>
-   <div id="menuContainer"></div>
+    <div id="menuContainer"></div>
     <script>
-      fetch('menu.html')
-        .then(response => response.text())
-        .then(html => {
-          document.getElementById('menuContainer').innerHTML = html;
-        });
-    </script>
+    fetch('menu.html')
+      .then(response => response.text())
+      .then(html => {
+        document.getElementById('menuContainer').innerHTML = html;
+      });
+  </script>
 
     <section>
-        <div> 
-            <table>
-              <tr> 
-                <td><div> 
-                    <p  class="TITLE">Ingreso de solicitudes Cr&eacute;dito 
-                      nuevo </p>
-                    </div></td>
-              </tr>
-            </table>
-           
-            <p class="PARRAFO"><span class="SUBTITULO">Documentos:</span>  Tercer paso del 
-              wizard que contiene los siguientes campos a diligenciar. </p>
-           
-            <p class="PARRAFO">Muestra en bloques los diversos documentos o soportes que 
-              el cliente debe adjuntar acorde con los <a href="SOH_001B.htm">par&aacute;metros 
-              de solicitudes</a>. Adicionalmente, los muestra de acuerdo a los tipos de 
-              categor&iacute;as o clases de clientes, con los combos para verificar si dichos 
-              documentos ya fueron recibidos por la entidad o no.</p>
-           
-            <p class="TITLE"><img src="../img/SOF_003B12.PNG"532" ></p>
-           
-            <p class="PARRAFO">El formulario cuenta con tres botones en la parte inferior 
-              derecha: Atr&aacute;s, Cancelar, para <a href="SOH_003B.html">volver 
-              al formulario inicial</a>, y Salvar la solicitud.</p>
-            
-            <p><span ><b><span class="PARRAFO"><a href="SOH_005B1.html">Informaci&oacute;n 
-              general</a> | </span></b></span>  <b><b></b></b><b><b><span class="PARRAFO"><a href="SOH_005B2.html">L&iacute;neas 
-              de cr&eacute;dito</a></span></b></b> |<span > 
-              <b></b></span><a href="SOH_005B4.html"><b><b><span class="PARRAFO"></span></b></b> 
-              Consultar etapas</a><b><b><span class="PARRAFO">|</span></b></b><span class="PARRAFO"><a href="SOH_005B5.html">Ingreso 
-              de Adicionales</a></span></p>
-            
-            </section>
-    <script src="../js/menu.js"></script>
+      <div>
 
-    <div id="footerContainer"></div>
-<script>
+        <p class="TITLE">Ingreso de solicitudes Cr&eacute;dito
+          nuevo </p>
+
+        <p class="PARRAFO"><span class="SUBTITULO">Documentos:</span> Tercer
+          paso del
+          wizard que contiene los siguientes campos a diligenciar. </p>
+
+        <p class="PARRAFO">Muestra en bloques los diversos documentos o soportes
+          que
+          el cliente debe adjuntar acorde con los <a
+            href="SOH_001B.htm">par&aacute;metros
+            de solicitudes</a>. Adicionalmente, los muestra de acuerdo a los
+          tipos de
+          categor&iacute;as o clases de clientes, con los combos para verificar
+          si dichos
+          documentos ya fueron recibidos por la entidad o no.</p>
+
+        <p class="TITLE"><img src="../img/SOF_003B12.PNG"></p>
+
+        <p class="PARRAFO">El formulario cuenta con tres botones en la parte
+          inferior
+          derecha: Atr&aacute;s, Cancelar, para <a href="SOH_003B.html">volver
+            al formulario inicial</a>, y Salvar la solicitud.</p>
+
+        <p><span><span class="PARRAFO"><a
+                href="SOH_005B1.html">Informaci&oacute;n
+                general</a> | </span></span> <span class="PARRAFO"><a
+              href="SOH_005B2.html">L&iacute;neas
+              de cr&eacute;dito</a></span> |<span>
+          </span><a href="SOH_005B4.html"><span class="PARRAFO"></span>
+            Consultar etapas</a><span class="PARRAFO">|</span><span
+            class="PARRAFO"><a href="SOH_005B5.html">Ingreso
+              de Adicionales</a></span></p>
+
+      </section>
+      <script src="../js/menu.js"></script>
+
+      <div id="footerContainer"></div>
+      <script>
   fetch('footer.html')
     .then(response => response.text())
     .then(html => {
       document.getElementById('footerContainer').innerHTML = html;
     });
 </script>
-</body>
+    </body>
 
-</html>
+  </html>

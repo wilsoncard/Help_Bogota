@@ -1,91 +1,103 @@
 <!DOCTYPE html>
 <html lang="es">
 
-<head>
+  <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>BANKBU®</title>
     <link rel="stylesheet" href="../css/pages.css">
     <link rel="stylesheet" href="../css/style.css">
- <link rel="icon" href="../img/ACQUIRER-logo.JPG" type="image/x-icon">
-</head>
+    <link rel="icon" href="../img/ACQUIRER-logo.JPG" type="image/x-icon">
+  </head>
 
-<body>
+  <body>
     <header>
-        <img class="logo" src="../img/logoBankbu_.PNG" alt="Logo de Mi Empresa">
-        <div id="menuBtn">
-            <img class="TITLE"  src= "../img/menu.PNG" alt="Botón de Menú ">
-        </div>
+      <img class="logo" src="../img/logoBankbu_.PNG" alt="Logo de Mi Empresa">
+      <div id="menuBtn">
+        <img class="TITLE" src="../img/menu.PNG" alt="Botón de Menú ">
+      </div>
     </header>
-   <div id="menuContainer"></div>
+    <div id="menuContainer"></div>
     <script>
-      fetch('menu.html')
-        .then(response => response.text())
-        .then(html => {
-          document.getElementById('menuContainer').innerHTML = html;
-        });
-    </script>
+    fetch('menu.html')
+      .then(response => response.text())
+      .then(html => {
+        document.getElementById('menuContainer').innerHTML = html;
+      });
+  </script>
 
     <section>
-        <div> 
-            <table>
-              <tr> 
-                <td><div> 
-                    <p  class="TITLE">Generación tarjetas de emergencia</p>
-                  </div></td>
-              </tr>
-            </table>
-            <p  class="PARRAFO">A través de este formulario se generan y 
-              asignan los números de tarjetas que estarón disponibles en caso de extravío 
-              de tarjetas en el exterior y que tendrán las características propias de tarjetas 
-              de emergencia. </p>
-            <p  class="PARRAFO"> Estas tarjetas tienen una vida útil o tiempo   de vigencia corta de acuerdo con lo que se indique para cada <a href="MEH_002B.html" >producto</a>.</p>
-            <p class="TITLE"><img src="../img/SOF_029E.PNG"648" height="500"></p>
-            
-            <p  class="PARRAFO">El formulario cuenta con un filtro que permite 
-              consultar los n&uacute;meros de tarjeta para un bin o un n&uacute;mero en 
-              particular.</p>
-            <p class="TITLE"><img src="../img/SOF_029E1.PNG"285" height="128"></p>
-            <p  class="PARRAFO">Por medio del hiperv&iacute;nculo Crear tarjeta de emergencia contenido en el formulario y de acuerdo tanto con las pol&iacute;ticas de las franquicias y con lo que se haya parametrizado 
-            en el campo Administraci&oacute;n tarjetas emergencia, de la opci&oacute;n <A href="NUH_055B.html" >Par&aacute;metros operativos</A>,  se invocan los formulario correspondientes que permiten hacer la generaci&oacute;n <A href="SOH_030B.html" >manual</A> o <A href="SOH_028B.html" >autom&aacute;tica</A> de estas tarjetas.</p>
-            <p  class="PARRAFO">El formulario sólo contiene la opción Actualizar.</p>
-            <p  class="PARRAFO"><b ><span class="SUBTITULO">Actualizar:</span></b> si el usuario selecciona un registro e invoca la opción Actualizar, se despliega un formulario en el cual se
-             registra la información de la tarjeta extraviada a la cual se le va a asignar el número de tarjeta de emergencia seleccionado.</p>
-            <p class="TITLE"><img src="../img/SOF_029E2.PNG"262" ></p>
-            
-            <div  class="PARRAFO">
-          <p  class="TITLE">Descripción de campos</p>
-              <table>
-                <tr> 
-                  <td class="titletable" ><p class="SUBTITULO"><b>Tarjeta asociada
-                      </b></p></td>
-                  <td><p  class="PARRAFO">Campo obligatorio 
-                  alfanumérico de 23 posiciones, obligatorio, en el cual se registra el el número de tarjeta extraviada a la cual se le va
-                  a asignar la tarjeta de emergencia.</p></td>
-                </tr>
-   
-                <tr> 
-                  <td class="titletable" ><p class="SUBTITULO"><b>Nombre
-                     
-                     
-                      </b></p></td>
-                  <td><p  class="PARRAFO">Una vez que el
-                  sistema a validado el número de tarjeta ingresado y verifica que se le puede asignar la tarjeta de emergencia, en este
-                  campo de salida se despliega el nombre del cliente titular de la misma.</p></td>
-                </tr>
-              
-              </table>
-            </section>
-    <script src="../js/menu.js"></script>
+      <div>
 
-    <div id="footerContainer"></div>
-<script>
+        <p class="TITLE">Generación tarjetas de emergencia</p>
+
+        <p class="PARRAFO">A través de este formulario se generan y
+          asignan los números de tarjetas que estarón disponibles en caso de
+          extravío
+          de tarjetas en el exterior y que tendrán las características propias
+          de tarjetas
+          de emergencia. </p>
+        <p class="PARRAFO"> Estas tarjetas tienen una vida útil o tiempo de
+          vigencia corta de acuerdo con lo que se indique para cada <a
+            href="MEH_002B.html">producto</a>.</p>
+        <p class="TITLE"><img src="../img/SOF_029E.PNG"></p>
+
+        <p class="PARRAFO">El formulario cuenta con un filtro que permite
+          consultar los n&uacute;meros de tarjeta para un bin o un n&uacute;mero
+          en
+          particular.</p>
+        <p class="TITLE"><img src="../img/SOF_029E1.PNG"></p>
+        <p class="PARRAFO">Por medio del hiperv&iacute;nculo Crear tarjeta de
+          emergencia contenido en el formulario y de acuerdo tanto con las
+          pol&iacute;ticas de las franquicias y con lo que se haya parametrizado
+          en el campo Administraci&oacute;n tarjetas emergencia, de la
+          opci&oacute;n <a href="NUH_055B.html">Par&aacute;metros
+            operativos</a>, se invocan los formulario correspondientes que
+          permiten hacer la generaci&oacute;n <a href="SOH_030B.html">manual</a>
+          o <a href="SOH_028B.html">autom&aacute;tica</a> de estas tarjetas.</p>
+        <p class="PARRAFO">El formulario sólo contiene la opción Actualizar.</p>
+        <p class="PARRAFO"><span class="SUBTITULO">Actualizar:</span> si el
+          usuario selecciona un registro e invoca la opción Actualizar, se
+          despliega un formulario en el cual se
+          registra la información de la tarjeta extraviada a la cual se le va a
+          asignar el número de tarjeta de emergencia seleccionado.</p>
+        <p class="TITLE"><img src="../img/SOF_029E2.PNG"></p>
+
+        <div class="PARRAFO">
+          <p class="TITLE">Descripción de campos</p>
+          <table>
+            <tr>
+              <td class="titletable"><p class="SUBTITULO">Tarjeta asociada
+                </p></td>
+              <td><p class="PARRAFO">Campo obligatorio
+                  alfanumérico de 23 posiciones, obligatorio, en el cual se
+                  registra el el número de tarjeta extraviada a la cual se le va
+                  a asignar la tarjeta de emergencia.</p></td>
+            </tr>
+
+            <tr>
+              <td class="titletable"><p class="SUBTITULO">Nombre
+
+                </p></td>
+              <td><p class="PARRAFO">Una vez que el
+                  sistema a validado el número de tarjeta ingresado y verifica
+                  que se le puede asignar la tarjeta de emergencia, en este
+                  campo de salida se despliega el nombre del cliente titular de
+                  la misma.</p></td>
+            </tr>
+
+          </table>
+        </section>
+        <script src="../js/menu.js"></script>
+
+        <div id="footerContainer"></div>
+        <script>
   fetch('footer.html')
     .then(response => response.text())
     .then(html => {
       document.getElementById('footerContainer').innerHTML = html;
     });
 </script>
-</body>
+      </body>
 
-</html>
+    </html>

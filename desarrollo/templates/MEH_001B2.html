@@ -1,270 +1,329 @@
 <!DOCTYPE html>
 <html lang="es">
 
-<head>
+  <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>BANKBU®</title>
 
     <link rel="stylesheet" href="../css/pages.css">
     <link rel="stylesheet" href="../css/style.css">
- <link rel="icon" href="../img/ACQUIRER-logo.JPG" type="image/x-icon">
-</head>
+    <link rel="icon" href="../img/ACQUIRER-logo.JPG" type="image/x-icon">
+  </head>
 
-<body>
+  <body>
 
     <header>
-        <img class="logo" src="../img/logoBankbu_.PNG" alt="Logo de Mi Empresa">
-        <div id="menuBtn">
-            <img class="TITLE"  src= "../img/menu.PNG" alt="Botón de Menú ">
-        </div>
+      <img class="logo" src="../img/logoBankbu_.PNG" alt="Logo de Mi Empresa">
+      <div id="menuBtn">
+        <img class="TITLE" src="../img/menu.PNG" alt="Botón de Menú ">
+      </div>
     </header>
-   <div id="menuContainer"></div>
+    <div id="menuContainer"></div>
     <script>
-      fetch('menu.html')
-        .then(response => response.text())
-        .then(html => {
-          document.getElementById('menuContainer').innerHTML = html;
-        });
-    </script>
+    fetch('menu.html')
+      .then(response => response.text())
+      .then(html => {
+        document.getElementById('menuContainer').innerHTML = html;
+      });
+  </script>
 
     <section>
-        <div> 
-            <table>
-              <tr> 
-                <td><div> 
-                    <p  class="TITLE">Definici&oacute;n de bines</p>
-                    </div></td>
-              </tr>
-            </table>
-            <p><span class="SUBTITULO">Grupos afinidad: </span> Tercer nivel de la parametrizaci&oacute;n 
-              en el que se relacionan los grupos que presentan caracter&iacute;sticas comunes 
-              otorg&aacute;ndoles algunos beneficios a los clientes que pertenezcan a &eacute;ste, 
-              con el objetivo de incentivar el consumo; a cada grupo se le asocia un <a href="NUH_067B.html">programa</a> definido por Visa, con el fin que cuando el identificador de la franquicia 
-              nos indica que un producto corresponde a esta marca y grupo de afinidad, al 
-              generar las estad&iacute;sticas de operaciones para la misma, el sistema pueda 
-              clasificar correctamente la informaci&oacute;n a generar. Este tab cuenta 
-              con un bot&oacute;n especial que permite invocar la pantalla Oficinas por 
-              grupo de afinidad</p>
-            <p>El formulario contiene las opciones Actualizar, Eliminar, Adicionar, Detalle, 
-              y la opci&oacute;n <a href="#Oficinas" title="Oficinas por grupo de afinidad" target="_self">Oficinas por grupo de afinidad</a> en la parte superior. Adicionalmente, se puede regresar a la opci&oacute;n 
-              <a href="MEH_001B.html" target="_self">Definici&oacute;n de Bines</a> a trav&eacute;s 
-              del bot&oacute;n volver de la parte superior izquierda.</p>
-            <p class="TITLE"><img src="../img/MEF_001E8.PNG"></p>
-            
-            <p  class="PARRAFO"><span class="SUBTITULO">Adicionar:</span>  Si 
-              el usuario invoca la opci&oacute;n Adicionar se despliega un formulario con 
-              los siguientes campos<span 
-        >:</span></p>
-            <p class="TITLE"><img src="../img/MEF_001E9.PNG"752" height="384"></p>
-            
-            <table>
-              <tr> 
-                <td class="titletable"><p class="SUBTITULO"><b><span 
-        >Grupo 
-                    afinidad </span></b></p></td>
-                <td><p class="PARRAFO">El 
-                    primer campo es alfanum&eacute;rico de tres d&iacute;gitos, que corresponde 
-                    al c&oacute;digo asignado a cada uno de los grupos con caracter&iacute;sticas 
-                    comunes establecidos por la entidad financiera o comercial.</p>
-                  <p>El segundo campo es alfanum&eacute;rico de 30 posiciones, y en &eacute;l 
-                    se registra el nombre asociado al c&oacute;digo de cada grupo.</p>      </td>
-              </tr>
-              <tr> 
-                <td class="titletable"><p class="SUBTITULO"><b><span 
-        >Marca 
-                    compartida </span></b></p></td>
-                <td><p class="PARRAFO">Este 
-                    campo permite indicar si el nombre del grupo definido corresponde a 
-                    marca compartida o no. Los grupos se&ntilde;alados conformar&aacute;n 
-                    la lista de valores que se despliega en el campo M. compartida, del 
-                    tab Marca de la opci&oacute;n <a href="ESH_006B.html">Informaci&oacute;n 
-                    de establecimientos</a>.</p></td>
-              </tr>
-              <tr> 
-                <td  class="titletable" ><p class="SUBTITULO"><b><span 
-        >Programa</span></b></p></td>
-                <td><p class="PARRAFO">Campo 
-                    no obligatorio, con lista de valores del que se puede seleccionar el          <a href="NUH_067B.html">programa de afinidad</a> establecido por Visa, 
-                    para asociarlo a cada uno de los grupos definidos con el fin que cuando 
-                    el identificador de la franquicia nos indica que un producto corresponde 
-                    a esta marca y grupo de afinidad, al generar las estad&iacute;sticas 
-                    de operaciones para la misma, el sistema pueda clasificar correctamente 
-                    la informaci&oacute;n a generar.</p></td>
-              </tr>
-              <tr> 
-                <td  class="titletable" ><p class="SUBTITULO"><b><span 
-        >Representante 
-                    legal </span></b></p></td>
-                <td><p class="PARRAFO">Campo 
-                    alfanum&eacute;rico de 30 d&iacute;gitos no obligatorio en el que se 
-                    registra el nombre del representante legal o quien haga sus veces en 
-                    la entidad relacionada con el grupo de afinidad.</p></td>
-              </tr>
-              <tr> 
-                <td class="titletable"><p class="SUBTITULO"><b><span 
-        >Ubicaci&oacute;n</span></b></p></td>
-                <td><p class="PARRAFO">Campo 
-                    que posee lista de valores poblada a trav&eacute;s de la opci&oacute;n          <a href="NUH_003B.html">Informaci&oacute;n geopol&iacute;tica</a> del 
-                    grupo de Tablas corporativas del N&uacute;cleo, de la que debe seleccionarse 
-                    aquella divisi&oacute;n a la que corresponda la direcci&oacute;n ingresada.</p></td>
-              </tr>
-              <tr> 
-                <td  class="titletable" ><p class="SUBTITULO"><b><span 
-        >Comisi&oacute;n 
-                    cambio grupo de afinidad</span></b></p></td>
-                <td><p class="PARRAFO">En 
-                    este campo la entidad determina si el cambio de Grupo de afinidad debe 
-                    implicar el pago de una comisi&oacute;n o no a la empresa asociada al 
-                    nuevo grupo de afinidad.</p></td>
-              </tr>
-              <tr> 
-                <td class="titletable"><p class="SUBTITULO"><b><span 
-        >Tel&eacute;fonos</span></b></p></td>
-                <td><p class="PARRAFO">En 
-                    estos campos se digitan los los n&uacute;meros telef&oacute;nicos de 
-                    la sede de la entidad relacionada con el grupo de afinidad.</p></td>
-              </tr>
-              <tr> 
-                <td  class="titletable" ><p class="SUBTITULO"><b><span 
-        >Fax</span></b></p></td>
-                <td><p class="PARRAFO">Campo 
-                    que puede contener el n&uacute;mero del fax de la sede de la entidad 
-                    relacionada con el grupo de afinidad.</p></td>
-              </tr>
-              <tr> 
-                <td class="titletable"><p class="SUBTITULO"><b><span 
-        >Correo 
-                    electr&oacute;nico </span></b></p></td>
-                <td><p class="PARRAFO">En 
-                    este campo se registra la direcci&oacute;n electr&oacute;nica de la 
-                    entidad relacionada con el grupo de afinidad.</p></td>
-              </tr>
-              <tr> 
-                <td class="titletable"><p class="SUBTITULO"><b><span 
-        >Entidad</span></b></p></td>
-                <td><p class="PARRAFO">Campo no obligatorio en el cual se registra el nombre de la Entidad relacionada con el grupo de afinidad.</p></td>
-              </tr>
-              <tr> 
-                <td  class="titletable" ><p class="SUBTITULO"><b><span 
-        >Tipo 
-                    cuenta </span></b></p></td>
-                <td><p class="PARRAFO">Campo 
-                    que posee lista de valores adjunta de la cual puede seleccionarse entre 
-                    Ahorro, Rotativo o Corriente, la clase o tipo de cuenta a afectar con 
-                    los beneficios de los acuerdos celebrados con la entidad relacionada 
-                    con el grupo de afinidad.</p></td>
-              </tr>
-              <tr> 
-                <td  class="titletable" ><p class="SUBTITULO"><b><span 
-        >Programa 
-                    fidelidad</span></b></p></td>
-                <td><p class="PARRAFO">Campo 
-                    que posee lista de valores de la que debe seleccionarse el <a href="MEH_006B.html">Esquema 
-                    de puntaje</a> asociado al grupo de afinidad para poder obtener los 
-                    beneficios ofrecidos por &eacute;stos.</p></td>
-              </tr>
-              <tr> 
-                <td class="titletable"><p class="SUBTITULO"><b><span 
-        >N&uacute;mero 
-                    cuenta </span></b></p></td>
-                <td><p class="PARRAFO">Contiene 
-                    el n&uacute;mero de la cuenta de ahorro, Rotativo o corriente a afectar 
-                    con los beneficios de los acuerdos celebrados con la entidad relacionada 
-                    con el grupo de afinidad.</p></td>
-              </tr>
-              <tr> 
-                <td  class="titletable" ><p class="SUBTITULO"><b><span 
-        >Direcci&oacute;n</span></b></p></td>
-                <td><p class="PARRAFO">En 
-                    este campo alfanum&eacute;rico de 30 d&iacute;gitos no obligatorio, 
-                    se ingresa la nomenclatura de la sede principal de la entidad relacionada 
-                    con el grupo de afinidad.</p></td>
-              </tr>
-            </table>
-            <p  class="PARRAFO"><span class="PARRAFO"><span class="SUBTITULO">Actualizar:</span>  
-              Si el usuario invoca la opci&oacute;n Actualizar se despliega un nuevo formulario 
-              en el cual los &uacute;nicos campos modificables son: </span>  Marca compartida, 
-              Programa, Representante legal, Ubicaci&oacute;n, Comisi&oacute;n cambio grupo 
-              de afinidad, Tel&eacute;fonos, Fax, Correo electr&oacute;nico, Tipo cuenta, 
-              Programa fidelidad, N&uacute;mero cuenta, y Direcci&oacute;n.</p>
-            <p class="TITLE"><img src="../img/MEF_001E10.PNG"828" height="309"></p>
+      <div>
 
-            <p  class="PARRAFO"><span class="SUBTITULO">Detalle:</span>  Si 
-              el usuario invoca la opci&oacute;n Detalle se despliega el siguiente formulario:  </p>
-            <p class="TITLE"><span ><img src="../img/MEF_001E11.PNG"615" >
-            </span></p>
-            
-            <p><span
-              
-        ><a name="Oficinas"></a></span></p>
-            <p><span class="SUBTITULO">Oficinas por grupo de afinidad: 
-              </span><span class="PARRAFO">Esta formulario se invoca con el v&iacute;nculo 
-              de la parte superior del formulario. Permite modificar las oficinas de la 
-              empresa relacionadas con el grupo de afinidad correspondiente al registro 
-              sobre el cual se encuentra ubicado el cursor.</span></p>
-            <p>El formulario contiene las opciones Actualizar, Eliminar, y Adicionar. 
-              Adicionalmente, se puede regresar a la opci&oacute;n <a href="MEH_001B2.html">Grupos 
-              de afinidad</a> a trav&eacute;s del bot&oacute;n volver de la parte superior 
-              izquierda.<span class="PARRAFO"></span></p>
-            <p class="TITLE""><img src="../img/MEF_001E12.PNG"604" height="328"></p>
-            
-            <p  class="PARRAFO"><span class="SUBTITULO">Adicionar:</span>  Si 
-              el usuario invoca la opci&oacute;n Adicionar se despliega un formulario con 
-              los siguientes campos<span 
-        >:</span></p>
-            <p class="TITLE"><img src="../img/MEF_001E13.PNG"375" height="130"></p>
-            
-            <table>
-              <tr> 
-                <td class="titletable"><p class="SUBTITULO"><b><span 
-        >Oficina</span></b></p></td>
-                <td><p class="PARRAFO">El 
-                    primer campo es num&eacute;rico de 5 d&iacute;gitos en el que pueden 
-                    relacionarse los c&oacute;digos de las diferentes oficinas de la entidad 
-                    (empresa) relacionada con el grupo de afinidad.</p>
-                  <p class="PARRAFO">El segundo campo es alfanum&eacute;rico de 30 d&iacute;gitos 
-                    se registra el nombre de las oficinas codificadas.</p></td>
-              </tr>
-              <tr> 
-                <td class="titletable"><p class="SUBTITULO"><b><span 
-        >Tipo 
-                    cuenta </span></b></p></td>
-                <td><p class="PARRAFO">Campo 
-                    que posee lista de valores adjunta de la cual puede seleccionarse entre 
-                    Ahorro, Rotativo o Corriente, la clase o tipo de cuenta a afectar, por 
-                    cada oficina, con los beneficios de los acuerdos celebrados con la entidad 
-                    (empresa) relacionada con el grupo de afinidad.</p></td>
-              </tr>
-              <tr> 
-                <td class="titletable"><p class="SUBTITULO"><b><span 
-        >N&uacute;mero 
-                    cuenta </span></b></p></td>
-                <td><p class="PARRAFO">Contiene 
-                    el n&uacute;mero de la cuenta de ahorro, Rotativo o corriente, perteneciente 
-                    a cada oficina de la entidad (empresa) relacionada con el grupo de afinidad.</p></td>
-              </tr>
-            </table>
-            <p  class="PARRAFO"><span class="PARRAFO"><span class="SUBTITULO">Actualizar:</span>  
-              Si el usuario invoca la opci&oacute;n Actualizar se despliega un nuevo formulario 
-              en el cual los &uacute;nicos campos modificables son: </span>  Tipo cuenta 
-              y N&uacute;mero cuenta.</p>
-            <p class="TITLE"><img src="../img/MEF_001E14.PNG"375" height="131"></p>
-            
-            <p><a href="MEH_001B.html" target="_self">Volver a Definici&oacute;n 
-              de Bines</a><span
-              ><b> | </b></span><a href="MEH_001B1.html">Segmentos</a><b><span > 
-              | </span></b><a href="MEH_001B3.html">Cuentas de dep&oacute;sito por bin</a></p>
-            
-            </section>
-    <script src="../js/menu.js"></script>
-</body>
-<div id="footerContainer"></div>
-<script>
+        <p class="TITLE">Definici&oacute;n de bines</p>
+
+        <p><span class="SUBTITULO">Grupos afinidad: </span> Tercer nivel de la
+          parametrizaci&oacute;n
+          en el que se relacionan los grupos que presentan
+          caracter&iacute;sticas comunes
+          otorg&aacute;ndoles algunos beneficios a los clientes que pertenezcan
+          a &eacute;ste,
+          con el objetivo de incentivar el consumo; a cada grupo se le asocia un
+          <a href="NUH_067B.html">programa</a> definido por Visa, con el fin que
+          cuando el identificador de la franquicia
+          nos indica que un producto corresponde a esta marca y grupo de
+          afinidad, al
+          generar las estad&iacute;sticas de operaciones para la misma, el
+          sistema pueda
+          clasificar correctamente la informaci&oacute;n a generar. Este tab
+          cuenta
+          con un bot&oacute;n especial que permite invocar la pantalla Oficinas
+          por
+          grupo de afinidad</p>
+        <p>El formulario contiene las opciones Actualizar, Eliminar, Adicionar,
+          Detalle,
+          y la opci&oacute;n <a href="#Oficinas"
+            title="Oficinas por grupo de afinidad" target="_self">Oficinas por
+            grupo de afinidad</a> en la parte superior. Adicionalmente, se puede
+          regresar a la opci&oacute;n
+          <a href="MEH_001B.html" target="_self">Definici&oacute;n de Bines</a>
+          a trav&eacute;s
+          del bot&oacute;n volver de la parte superior izquierda.</p>
+        <p class="TITLE"><img src="../img/MEF_001E8.PNG"></p>
+
+        <p class="PARRAFO"><span class="SUBTITULO">Adicionar:</span> Si
+          el usuario invoca la opci&oacute;n Adicionar se despliega un
+          formulario con
+          los siguientes campos<span>:</span></p>
+        <p class="TITLE"><img src="../img/MEF_001E9.PNG"></p>
+
+        <table>
+          <tr>
+            <td class="titletable"><p class="SUBTITULO"><span>Grupo
+                  afinidad </span></p></td>
+            <td><p class="PARRAFO">El
+                primer campo es alfanum&eacute;rico de tres d&iacute;gitos, que
+                corresponde
+                al c&oacute;digo asignado a cada uno de los grupos con
+                caracter&iacute;sticas
+                comunes establecidos por la entidad financiera o comercial.</p>
+              <p>El segundo campo es alfanum&eacute;rico de 30 posiciones, y en
+                &eacute;l
+                se registra el nombre asociado al c&oacute;digo de cada
+                grupo.</p> </td>
+          </tr>
+          <tr>
+            <td class="titletable"><p class="SUBTITULO"><span>Marca
+                  compartida </span></p></td>
+            <td><p class="PARRAFO">Este
+                campo permite indicar si el nombre del grupo definido
+                corresponde a
+                marca compartida o no. Los grupos se&ntilde;alados
+                conformar&aacute;n
+                la lista de valores que se despliega en el campo M. compartida,
+                del
+                tab Marca de la opci&oacute;n <a
+                  href="ESH_006B.html">Informaci&oacute;n
+                  de establecimientos</a>.</p></td>
+          </tr>
+          <tr>
+            <td class="titletable"><p
+                class="SUBTITULO"><span>Programa</span></p></td>
+            <td><p class="PARRAFO">Campo
+                no obligatorio, con lista de valores del que se puede
+                seleccionar el <a href="NUH_067B.html">programa de afinidad</a>
+                establecido por Visa,
+                para asociarlo a cada uno de los grupos definidos con el fin que
+                cuando
+                el identificador de la franquicia nos indica que un producto
+                corresponde
+                a esta marca y grupo de afinidad, al generar las
+                estad&iacute;sticas
+                de operaciones para la misma, el sistema pueda clasificar
+                correctamente
+                la informaci&oacute;n a generar.</p></td>
+          </tr>
+          <tr>
+            <td class="titletable"><p class="SUBTITULO"><span>Representante
+                  legal </span></p></td>
+            <td><p class="PARRAFO">Campo
+                alfanum&eacute;rico de 30 d&iacute;gitos no obligatorio en el
+                que se
+                registra el nombre del representante legal o quien haga sus
+                veces en
+                la entidad relacionada con el grupo de afinidad.</p></td>
+          </tr>
+          <tr>
+            <td class="titletable"><p
+                class="SUBTITULO"><span>Ubicaci&oacute;n</span></p></td>
+            <td><p class="PARRAFO">Campo
+                que posee lista de valores poblada a trav&eacute;s de la
+                opci&oacute;n <a href="NUH_003B.html">Informaci&oacute;n
+                  geopol&iacute;tica</a> del
+                grupo de Tablas corporativas del N&uacute;cleo, de la que debe
+                seleccionarse
+                aquella divisi&oacute;n a la que corresponda la direcci&oacute;n
+                ingresada.</p></td>
+          </tr>
+          <tr>
+            <td class="titletable"><p class="SUBTITULO"><span>Comisi&oacute;n
+                  cambio grupo de afinidad</span></p></td>
+            <td><p class="PARRAFO">En
+                este campo la entidad determina si el cambio de Grupo de
+                afinidad debe
+                implicar el pago de una comisi&oacute;n o no a la empresa
+                asociada al
+                nuevo grupo de afinidad.</p></td>
+          </tr>
+          <tr>
+            <td class="titletable"><p
+                class="SUBTITULO"><span>Tel&eacute;fonos</span></p></td>
+            <td><p class="PARRAFO">En
+                estos campos se digitan los los n&uacute;meros
+                telef&oacute;nicos de
+                la sede de la entidad relacionada con el grupo de
+                afinidad.</p></td>
+          </tr>
+          <tr>
+            <td class="titletable"><p
+                class="SUBTITULO"><span>Fax</span></p></td>
+            <td><p class="PARRAFO">Campo
+                que puede contener el n&uacute;mero del fax de la sede de la
+                entidad
+                relacionada con el grupo de afinidad.</p></td>
+          </tr>
+          <tr>
+            <td class="titletable"><p class="SUBTITULO"><span>Correo
+                  electr&oacute;nico </span></p></td>
+            <td><p class="PARRAFO">En
+                este campo se registra la direcci&oacute;n electr&oacute;nica de
+                la
+                entidad relacionada con el grupo de afinidad.</p></td>
+          </tr>
+          <tr>
+            <td class="titletable"><p
+                class="SUBTITULO"><span>Entidad</span></p></td>
+            <td><p class="PARRAFO">Campo no obligatorio en el cual se registra
+                el nombre de la Entidad relacionada con el grupo de
+                afinidad.</p></td>
+          </tr>
+          <tr>
+            <td class="titletable"><p class="SUBTITULO"><span>Tipo
+                  cuenta </span></p></td>
+            <td><p class="PARRAFO">Campo
+                que posee lista de valores adjunta de la cual puede
+                seleccionarse entre
+                Ahorro, Rotativo o Corriente, la clase o tipo de cuenta a
+                afectar con
+                los beneficios de los acuerdos celebrados con la entidad
+                relacionada
+                con el grupo de afinidad.</p></td>
+          </tr>
+          <tr>
+            <td class="titletable"><p class="SUBTITULO"><span>Programa
+                  fidelidad</span></p></td>
+            <td><p class="PARRAFO">Campo
+                que posee lista de valores de la que debe seleccionarse el <a
+                  href="MEH_006B.html">Esquema
+                  de puntaje</a> asociado al grupo de afinidad para poder
+                obtener los
+                beneficios ofrecidos por &eacute;stos.</p></td>
+          </tr>
+          <tr>
+            <td class="titletable"><p class="SUBTITULO"><span>N&uacute;mero
+                  cuenta </span></p></td>
+            <td><p class="PARRAFO">Contiene
+                el n&uacute;mero de la cuenta de ahorro, Rotativo o corriente a
+                afectar
+                con los beneficios de los acuerdos celebrados con la entidad
+                relacionada
+                con el grupo de afinidad.</p></td>
+          </tr>
+          <tr>
+            <td class="titletable"><p
+                class="SUBTITULO"><span>Direcci&oacute;n</span></p></td>
+            <td><p class="PARRAFO">En
+                este campo alfanum&eacute;rico de 30 d&iacute;gitos no
+                obligatorio,
+                se ingresa la nomenclatura de la sede principal de la entidad
+                relacionada
+                con el grupo de afinidad.</p></td>
+          </tr>
+        </table>
+        <p class="PARRAFO"><span class="PARRAFO"><span
+              class="SUBTITULO">Actualizar:</span>
+            Si el usuario invoca la opci&oacute;n Actualizar se despliega un
+            nuevo formulario
+            en el cual los &uacute;nicos campos modificables son: </span> Marca
+          compartida,
+          Programa, Representante legal, Ubicaci&oacute;n, Comisi&oacute;n
+          cambio grupo
+          de afinidad, Tel&eacute;fonos, Fax, Correo electr&oacute;nico, Tipo
+          cuenta,
+          Programa fidelidad, N&uacute;mero cuenta, y Direcci&oacute;n.</p>
+        <p class="TITLE"><img src="../img/MEF_001E10.PNG"828" height="309"></p>
+
+        <p class="PARRAFO"><span class="SUBTITULO">Detalle:</span> Si
+          el usuario invoca la opci&oacute;n Detalle se despliega el siguiente
+          formulario: </p>
+        <p class="TITLE"><span><img src="../img/MEF_001E11.PNG"615">
+          </span></p>
+
+        <p><span><a name="Oficinas"></a></span></p>
+        <p><span class="SUBTITULO">Oficinas por grupo de afinidad:
+          </span><span class="PARRAFO">Esta formulario se invoca con el
+            v&iacute;nculo
+            de la parte superior del formulario. Permite modificar las oficinas
+            de la
+            empresa relacionadas con el grupo de afinidad correspondiente al
+            registro
+            sobre el cual se encuentra ubicado el cursor.</span></p>
+        <p>El formulario contiene las opciones Actualizar, Eliminar, y
+          Adicionar.
+          Adicionalmente, se puede regresar a la opci&oacute;n <a
+            href="MEH_001B2.html">Grupos
+            de afinidad</a> a trav&eacute;s del bot&oacute;n volver de la parte
+          superior
+          izquierda.<span class="PARRAFO"></span></p>
+        <p class="TITLE""><img src="../img/MEF_001E12.PNG"604" height="328"></p>
+
+        <p class="PARRAFO"><span class="SUBTITULO">Adicionar:</span> Si
+          el usuario invoca la opci&oacute;n Adicionar se despliega un
+          formulario con
+          los siguientes campos<span>:</span></p>
+        <p class="TITLE"><img src="../img/MEF_001E13.PNG"375" height="130"></p>
+
+        <table>
+          <tr>
+            <td class="titletable"><p
+                class="SUBTITULO"><span>Oficina</span></p></td>
+            <td><p class="PARRAFO">El
+                primer campo es num&eacute;rico de 5 d&iacute;gitos en el que
+                pueden
+                relacionarse los c&oacute;digos de las diferentes oficinas de la
+                entidad
+                (empresa) relacionada con el grupo de afinidad.</p>
+              <p class="PARRAFO">El segundo campo es alfanum&eacute;rico de 30
+                d&iacute;gitos
+                se registra el nombre de las oficinas codificadas.</p></td>
+          </tr>
+          <tr>
+            <td class="titletable"><p class="SUBTITULO"><span>Tipo
+                  cuenta </span></p></td>
+            <td><p class="PARRAFO">Campo
+                que posee lista de valores adjunta de la cual puede
+                seleccionarse entre
+                Ahorro, Rotativo o Corriente, la clase o tipo de cuenta a
+                afectar, por
+                cada oficina, con los beneficios de los acuerdos celebrados con
+                la entidad
+                (empresa) relacionada con el grupo de afinidad.</p></td>
+          </tr>
+          <tr>
+            <td class="titletable"><p class="SUBTITULO"><span>N&uacute;mero
+                  cuenta </span></p></td>
+            <td><p class="PARRAFO">Contiene
+                el n&uacute;mero de la cuenta de ahorro, Rotativo o corriente,
+                perteneciente
+                a cada oficina de la entidad (empresa) relacionada con el grupo
+                de afinidad.</p></td>
+          </tr>
+        </table>
+        <p class="PARRAFO"><span class="PARRAFO"><span
+              class="SUBTITULO">Actualizar:</span>
+            Si el usuario invoca la opci&oacute;n Actualizar se despliega un
+            nuevo formulario
+            en el cual los &uacute;nicos campos modificables son: </span> Tipo
+          cuenta
+          y N&uacute;mero cuenta.</p>
+        <p class="TITLE"><img src="../img/MEF_001E14.PNG"375" height="131"></p>
+
+        <p><a href="MEH_001B.html" target="_self">Volver a Definici&oacute;n
+            de Bines</a><span> | </span><a
+            href="MEH_001B1.html">Segmentos</a><span>
+            | </span><a href="MEH_001B3.html">Cuentas de dep&oacute;sito por
+            bin</a></p>
+
+      </section>
+      <script src="../js/menu.js"></script>
+    </body>
+    <div id="footerContainer"></div>
+    <script>
   fetch('footer.html')
     .then(response => response.text())
     .then(html => {
       document.getElementById('footerContainer').innerHTML = html;
     });
 </script>
-</html>
+  </html>

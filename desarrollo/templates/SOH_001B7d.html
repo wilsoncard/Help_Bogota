@@ -1,75 +1,83 @@
 <!DOCTYPE html>
 <html lang="es">
 
-<head>
+  <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>BANKBU®</title>
     <link rel="stylesheet" href="../css/pages.css">
     <link rel="stylesheet" href="../css/style.css">
- <link rel="icon" href="../img/ACQUIRER-logo.JPG" type="image/x-icon">
-</head>
+    <link rel="icon" href="../img/ACQUIRER-logo.JPG" type="image/x-icon">
+  </head>
 
-<body>
+  <body>
     <header>
-        <img class="logo" src="../img/logoBankbu_.PNG" alt="Logo de Mi Empresa">
-        <div id="menuBtn">
-            <img class="TITLE"  src= "../img/menu.PNG" alt="Botón de Menú ">
-        </div>
+      <img class="logo" src="../img/logoBankbu_.PNG" alt="Logo de Mi Empresa">
+      <div id="menuBtn">
+        <img class="TITLE" src="../img/menu.PNG" alt="Botón de Menú ">
+      </div>
     </header>
-   <div id="menuContainer"></div>
+    <div id="menuContainer"></div>
     <script>
-      fetch('menu.html')
-        .then(response => response.text())
-        .then(html => {
-          document.getElementById('menuContainer').innerHTML = html;
-        });
-    </script>
+    fetch('menu.html')
+      .then(response => response.text())
+      .then(html => {
+        document.getElementById('menuContainer').innerHTML = html;
+      });
+  </script>
 
     <section>
-        <div> 
-            <table>
-              <tr> 
-                <td><div> 
-                    <p  class="TITLE">Par&aacute;metros solicitudes por producto</p>
-                    </div></td>
-              </tr>
-            </table>
-            <p class="PARRAFO"><span class="SUBTITULO">Relaciones laborales:</span>  En esta 
-              opci&oacute;n se definen condiciones espec&iacute;ficas para cada combinatoria 
-              producto / tipo de solicitud, sobre las etapas que debe surtir, los filtros 
-              a aplicar en cada una de ellas y los documentos que se deben anexar. En el 
-              t&iacute;tulo del formulario se despliega la informaci&oacute;n correspondiente 
-              al tipo de solicitud y el producto para los cuales se est&aacute;n definiendo 
-              par&aacute;metros, y que corresponden al registro seleccionado en la opci&oacute;n 
-              Solicitudes.</p>
-            <p class="PARRAFO">El formulario contiene las opciones Actualizar, Eliminar, 
-              y Adicionar. Adicionalmente, cuenta con las opciones: <a href="SOH_001B7d1.html">Productos 
-              con entidad</a>, y <a href="SOH_001B7d2.html">Relaci&oacute;n laboral producto;</a> 
-              y un bot&oacute;n en la parte superior para volver al formulario de <a href="SOH_001B7.html">Solicitudes</a>.</p>
-           
-            <p class="TITLE"><img src="../img/SOF_001B47.PNG"360" height="573"></p>
-            
-            
-            <p><a href="SOH_001B7.html">Solicitudes</a><span
-              style='font-size:10.0pt;font-family:Arial'><b> | </b></span><a href="SOH_001B7b.html">Etapas</a><b><span style='font-size:10.0pt;font-family:Arial'> 
-              | </span></b><a href="SOH_001B7c.html">Cupos extendidos</a><b><span style='font-size:10.0pt;font-family:Arial'></span></b><span
-              style='font-size:10.0pt;font-family:Arial'><b> | </b></span><a href="SOH_001B7e.html">Cupos 
-              m&iacute;n y m&aacute;x por rango</a><b><span style='font-size:10.0pt;font-family:Arial'> 
-              <b>|</b></span></b><span style='font-size:10.0pt;font-family:Arial'></span><a href="SOH_001B7f.html">Copiar 
-              par&aacute;metros</a><span style='font-size:10.0pt;font-family:Arial'></span></p>
-           
-        </section>
-    <script src="../js/menu.js"></script>
+      <div>
 
-    <div id="footerContainer"></div>
-<script>
+        <p class="TITLE">Par&aacute;metros solicitudes por producto</p>
+
+        <p class="PARRAFO"><span class="SUBTITULO">Relaciones laborales:</span>
+          En esta
+          opci&oacute;n se definen condiciones espec&iacute;ficas para cada
+          combinatoria
+          producto / tipo de solicitud, sobre las etapas que debe surtir, los
+          filtros
+          a aplicar en cada una de ellas y los documentos que se deben anexar.
+          En el
+          t&iacute;tulo del formulario se despliega la informaci&oacute;n
+          correspondiente
+          al tipo de solicitud y el producto para los cuales se est&aacute;n
+          definiendo
+          par&aacute;metros, y que corresponden al registro seleccionado en la
+          opci&oacute;n
+          Solicitudes.</p>
+        <p class="PARRAFO">El formulario contiene las opciones Actualizar,
+          Eliminar,
+          y Adicionar. Adicionalmente, cuenta con las opciones: <a
+            href="SOH_001B7d1.html">Productos
+            con entidad</a>, y <a href="SOH_001B7d2.html">Relaci&oacute;n
+            laboral producto;</a>
+          y un bot&oacute;n en la parte superior para volver al formulario de <a
+            href="SOH_001B7.html">Solicitudes</a>.</p>
+
+        <p class="TITLE"><img src="../img/SOF_001B47.PNG"></p>
+
+        <p><a href="SOH_001B7.html">Solicitudes</a><span> | </span><a
+            href="SOH_001B7b.html">Etapas</a><span>
+            | </span><a href="SOH_001B7c.html">Cupos extendidos</a><span> | </span><a
+            href="SOH_001B7e.html">Cupos
+            m&iacute;n y m&aacute;x por rango</a><span>
+            |</span><span></span><a
+            href="SOH_001B7f.html">Copiar
+            par&aacute;metros</a><span
+            style='font-size:10.0pt;font-family:Arial'></span></p>
+
+      </section>
+      <script src="../js/menu.js"></script>
+
+      <div id="footerContainer"></div>
+      <script>
   fetch('footer.html')
     .then(response => response.text())
     .then(html => {
       document.getElementById('footerContainer').innerHTML = html;
     });
 </script>
-</body>
+    </body>
 
-</html>
+  </html>

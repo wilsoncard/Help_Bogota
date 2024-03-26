@@ -1,171 +1,189 @@
 <!DOCTYPE html>
 <html lang="es">
 
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>BANKBU®</title>
-  <link rel="stylesheet" href="../css/pages.css">
-  <link rel="stylesheet" href="../css/style.css">
-  <link rel="icon" href="../img/ACQUIRER-logo.JPG" type="image/x-icon">
-</head>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BANKBU®</title>
+    <link rel="stylesheet" href="../css/pages.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="icon" href="../img/ACQUIRER-logo.JPG" type="image/x-icon">
+  </head>
 
-<body>
-  <header>
-    <img class="logo" src="../img/logoBankbu_.PNG" alt="Logo de Mi Empresa">
-    <div id="menuBtn">
-      <img class="TITLE" src="../img/menu.PNG" alt="Botón de Menú ">
-    </div>
-  </header>
-  <div id="menuContainer"></div>
+  <body>
+    <header>
+      <img class="logo" src="../img/logoBankbu_.PNG" alt="Logo de Mi Empresa">
+      <div id="menuBtn">
+        <img class="TITLE" src="../img/menu.PNG" alt="Botón de Menú ">
+      </div>
+    </header>
+    <div id="menuContainer"></div>
     <script>
-      fetch('menu.html')
-        .then(response => response.text())
-        .then(html => {
-          document.getElementById('menuContainer').innerHTML = html;
-        });
-    </script>
-  <section>
-    <div>
-      <table>
-        <tr>
-          <td>
-            <div>
-              <p class="TITLE">Deducciones</p>
-            </div>
-          </td>
-        </tr>
-      </table>
-      <p>De acuerdo con los ingresos (comisiones y bonificaciones) devengados por los promotores, la legislaci&oacute;n
-        define varios conceptos a descontar sobre esos valores y/o los que la entidad considere susceptibles de
-        deducci&oacute;n. Mediante esta funci&oacute;n se habilita el mantenimiento correspondiente a los montos y bases
-        a tomar en cuenta para la liquidaci&oacute;n de dichos descuentos.</p>
-      <p class="PARRAFO"><span class="SUBTITULO">Filtro:</span>  El formulario cuenta
-        con un filtro inicial de b&uacute;squeda, necesario para la consulta de la
-        informaci&oacute;n:</p>
+    fetch('menu.html')
+      .then(response => response.text())
+      .then(html => {
+        document.getElementById('menuContainer').innerHTML = html;
+      });
+  </script>
+    <section>
+      <div>
+        <p class="TITLE">Deducciones</p>
+              
+        <p>De acuerdo con los ingresos (comisiones y bonificaciones) devengados
+          por los promotores, la legislaci&oacute;n
+          define varios conceptos a descontar sobre esos valores y/o los que la
+          entidad considere susceptibles de
+          deducci&oacute;n. Mediante esta funci&oacute;n se habilita el
+          mantenimiento correspondiente a los montos y bases
+          a tomar en cuenta para la liquidaci&oacute;n de dichos descuentos.</p>
+        <p class="PARRAFO"><span class="SUBTITULO">Filtro:</span> El formulario
+          cuenta
+          con un filtro inicial de b&uacute;squeda, necesario para la consulta
+          de la
+          informaci&oacute;n:</p>
 
-      <p class="TITLE"><img src="../img/APF_003B1.PNG" alt="Filter"></p>
+        <p class="TITLE"><img src="../img/APF_003B1.PNG"></p>
 
+        <table>
+          <tr>
+            <td class="titletable">
+              <p class="SUBTITULO">C&oacute;digo</p>
+            </td>
+            <td>
+              <p class="PARRAFO">Campo alfanum&eacute;rico de 4 posiciones que
+                permite filtrar por la tarea a realizar en una etapa
+                definida.</p>
+            </td>
+          </tr>
+          <tr>
+            <td class="titletable">
+              <p class="SUBTITULO">Descripci&oacute;n</p>
+            </td>
+            <td>
+              <p class="PARRAFO">En este campo alfanum&eacute;rico de hasta 30
+                posiciones en el cual se puede ingresar un palabra clave
+                para realizar la b&uacute;squeda.</p>
+            </td>
+          </tr>
+          <tr>
+            <td class="titletable">
+              <p class="SUBTITULO">Modo de deducci&oacute;n </p>
+            </td>
+            <td>
+              <p class="PARRAFO">Campo con lista de valores adjunta que permite
+                buscar por el modo de descuento.</p>
+            </td>
+          </tr>
+        </table>
 
-      <table>
-        <tr>
-          <td class="titletable">
-            <p class="SUBTITULO">C&oacute;digo</p>
-          </td>
-          <td>
-            <p class="PARRAFO">Campo alfanum&eacute;rico de 4 posiciones que permite filtrar por la tarea a realizar en una etapa
-              definida.</p>
-          </td>
-        </tr>
-        <tr>
-          <td class="titletable">
-            <p class="SUBTITULO">Descripci&oacute;n</p>
-          </td>
-          <td>
-            <p class="PARRAFO">En este campo alfanum&eacute;rico de hasta 30 posiciones en el cual se puede ingresar un palabra clave
-              para realizar la b&uacute;squeda.</p>
-          </td>
-        </tr>
-        <tr>
-          <td class="titletable">
-            <p class="SUBTITULO">Modo de deducci&oacute;n </p>
-          </td>
-          <td>
-            <p class="PARRAFO">Campo con lista de valores adjunta que permite buscar por el modo de descuento.</p>
-          </td>
-        </tr>
-      </table>
+        <p class="PARRAFO">Este formulario contiene las opciones Actualizar,
+          Eliminar,
+          Adicionar y Detalle</p>
+        <p class="TITLE"><img src="../img/APF_003B.PNG" 771"></p>
 
-      <p class="PARRAFO">Este formulario contiene las opciones Actualizar, Eliminar,
-        Adicionar y Detalle</p>
-      <p class="TITLE"><img src="../img/APF_003B.PNG" 771" ></p>
+        <p><span class="SUBTITULO">Adicionar:</span> Si
+          el usuario invoca la opci&oacute;n Adicionar se despliega un
+          formulario con
+          los siguientes campos:</span>
+        </p>
+        <p class="TITLE"><img src="../img/APF_003B2.PNG"></p>
 
-      <p><span class="SUBTITULO">Adicionar:</span>  Si
-        el usuario invoca la opci&oacute;n Adicionar se despliega un formulario con
-        los siguientes campos<span>:</span> 
-      </p>
-      <p class="TITLE"><img src="../img/APF_003B2.PNG"></p>
+        <table>
+          <tr>
+            <td class="titletable">
+              <p class="SUBTITULO">C&oacute;digo</span></span></p>
+            </td>
+            <td>
+              <p class="PARRAFO">Campo alfanum&eacute;rico de 3 posiciones,
+                obligatorio, que identifica cada uno de los conceptos a ser
+                descontado de los valores devengados por los promotores.</p>
+            </td>
+          </tr>
+          <tr>
+            <td class="titletable">
+              <p
+                class="SUBTITULO">Descripci&oacute;n</span></span></p>
+            </td>
+            <td class="PARRAFO">
+              <p class="PARRAFO">En este campo alfanum&eacute;rico de 30
+                posiciones, obligatorio, se registra el nombre
+                asociado al concepto por el cual se realizar&aacute; la
+                deducci&oacute;n de los valores devengados por los
+                promotores. </p>
+            </td>
+          </tr>
+          <tr>
+            <td class="titletable">
+              <p class="SUBTITULO">Modo comisi&oacute;n </span></p>
+            </td>
+            <td>
+              <p class="PARRAFO">De acuerdo con la lista de valores adjunta la
+                entidad selecciona entre Porcentaje o
+                Valor el modo c&oacute;mo se liquidar&aacute;n los descuentos a
+                cada promotor, es decir, si la
+                liquidaci&oacute;n del descuento a aplicar sobre el total
+                devengado (comisiones y bonificaciones) se
+                har&aacute; con base en un porcentaje o un valor absoluto.</p>
+            </td>
+          </tr>
+          <tr>
+            <td class="titletable">
+              <p class="SUBTITULO">Valor</span></span></p>
+            </td>
+            <td class="PARRAFO">
+              <p class="PARRAFO">Este campo se activa cuando en el campo modo
+                descuento se ha seleccionado la
+                opci&oacute;n valor y en &eacute;l se registra el monto del
+                mismo.</p>
+            </td>
+          </tr>
+          <tr>
+            <td class="titletable">
+              <p class="SUBTITULO">Moneda</span></span></p>
+            </td>
+            <td>
+              <p class="PARRAFO">Al igual que el anterior, este campo se activa
+                cuando en modo descuento se ha elegido la
+                opci&oacute;n valor, y en el se selecciona a trav&eacute;s de la
+                lista de valores la <a
+                  href="NUH_005B.html">Moneda</a> en la cual se expresa el valor
+                del descuento.</p>
+            </td>
+          </tr>
+          <tr>
+            <td class="titletable">
+              <p class="SUBTITULO">Porcentaje</span></p>
+            </td>
+            <td>
+              <p class="PARRAFO">Este campo se activa en el caso que la entidad
+                defina que el concepto a deducir se liquidar&aacute; a
+                trav&eacute;s de un porcentaje y en &eacute;l se determina la
+                cifra del mismo. </p>
+            </td>
+          </tr>
+        </table>
 
-      <table>
-        <tr>
-          <td class="titletable">
-            <p class="SUBTITULO"><b><span><span>C&oacute;digo</span></span></b></p>
-          </td>
-          <td>
-            <p class="PARRAFO">Campo alfanum&eacute;rico de 3 posiciones, obligatorio, que identifica cada uno de los conceptos a ser
-              descontado de los valores devengados por los promotores.</p>
-          </td>
-        </tr>
-        <tr>
-          <td class="titletable">
-            <p class="SUBTITULO"><b><span><span>Descripci&oacute;n</span></span></b></p>
-          </td>
-          <td class="PARRAFO">
-            <p class="PARRAFO">En este campo alfanum&eacute;rico de 30 posiciones, obligatorio, se registra el nombre
-              asociado al concepto por el cual se realizar&aacute; la deducci&oacute;n de los valores devengados por los
-              promotores. </p>
-          </td>
-        </tr>
-        <tr>
-          <td class="titletable">
-            <p class="SUBTITULO"><span>Modo comisi&oacute;n </span></p>
-          </td>
-          <td>
-            <p class="PARRAFO">De acuerdo con la lista de valores adjunta la entidad selecciona entre Porcentaje o
-              Valor el modo c&oacute;mo se liquidar&aacute;n los descuentos a cada promotor, es decir, si la
-              liquidaci&oacute;n del descuento a aplicar sobre el total devengado (comisiones y bonificaciones) se
-              har&aacute; con base en un porcentaje o un valor absoluto.</p>
-          </td>
-        </tr>
-        <tr>
-          <td class="titletable">
-            <p class="SUBTITULO"><b><span><span>Valor</span></span></b></p>
-          </td>
-          <td class="PARRAFO">
-            <p class="PARRAFO">Este campo se activa cuando en el campo modo descuento se ha seleccionado la
-              opci&oacute;n valor y en &eacute;l se registra el monto del mismo.</p>
-          </td>
-        </tr>
-        <tr>
-          <td class="titletable">
-            <p class="SUBTITULO"><b><span><span>Moneda</span></span></b></p>
-          </td>
-          <td>
-            <p class="PARRAFO">Al igual que el anterior, este campo se activa cuando en modo descuento se ha elegido la
-              opci&oacute;n valor, y en el se selecciona a trav&eacute;s de la lista de valores la <A
-                  href="NUH_005B.html">Moneda</A> en la cual se expresa el valor del descuento.</p>
-          </td>
-        </tr>
-        <tr>
-          <td class="titletable">
-            <p class="SUBTITULO"><b><span>Porcentaje</span></b></p>
-          </td>
-          <td>
-            <p class="PARRAFO">Este campo se activa en el caso que la entidad defina que el concepto a deducir se liquidar&aacute; a
-              trav&eacute;s de un porcentaje y en &eacute;l se determina la cifra del mismo. </p>
-          </td>
-        </tr>
-      </table>
+        <p><span class="SUBTITULO">Actualizar:</span> Si el usuario
+          invoca la opci&oacute;n Actualizar se despliega un nuevo formulario en
+          cual
+          los &uacute;nicos campos modificables son los siguientes:</p>
+        <p class="TITLE"><img src="../img/APF_003B3.PNG"></p>
 
-      <p><span class="SUBTITULO">Actualizar:</span>  Si el usuario
-        invoca la opci&oacute;n Actualizar se despliega un nuevo formulario en cual
-        los &uacute;nicos campos modificables son los siguientes:</p>
-      <p class="TITLE"><img src="../img/APF_003B3.PNG"></p>
+        <p class="PARRAFO"><span class="SUBTITULO">Detalle:</span> Si el usuario
+          invoca
+          la opci&oacute;n Detalle se despliega el siguiente formulario.
 
-      <p class="PARRAFO"><span class="SUBTITULO">Detalle:</span>  Si el usuario invoca
-        la opci&oacute;n Detalle se despliega el siguiente formulario.<span>
-
-        </span></p>
-      <p class="TITLE"><img src="../img/APF_003B4.PNG" 773"></p>
-  </section>
-  <script src="../js/menu.js"></script>
-</body>
-<div id="footerContainer"></div>
-<script>
+          </span></p>
+        <p class="TITLE"><img src="../img/APF_003B4.PNG"></p>
+      </section>
+      <script src="../js/menu.js"></script>
+    </body>
+    <div id="footerContainer"></div>
+    <script>
   fetch('footer.html')
     .then(response => response.text())
     .then(html => {
       document.getElementById('footerContainer').innerHTML = html;
     });
 </script>
-</html>
+  </html>

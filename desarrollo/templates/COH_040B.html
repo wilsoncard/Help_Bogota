@@ -18,26 +18,20 @@
       <img class="TITLE" src="../img/menu.PNG" alt="Botón de Menú ">
     </div>
   </header>
-  <div id="menuContainer"></div>
-    <script>
-      fetch('menu.html')
-        .then(response => response.text())
-        .then(html => {
-          document.getElementById('menuContainer').innerHTML = html;
-        });
-    </script>
+    <div id="menuContainer"></div>
+  <script>
+    fetch('menu.html')
+      .then(response => response.text())
+      .then(html => {
+        document.getElementById('menuContainer').innerHTML = html;
+      });
+  </script>
 
   <section>
     <div>
-      <table>
-        <tr>
-          <td>
-            <div>
+      
               <p class="TITLE">Claves</p>
-            </div>
-          </td>
-        </tr>
-      </table>
+
       <p class="PARRAFO">Esta funci&oacute;n registra en el sistema las claves necesarias
         en el realce de tarjetas y validaci&oacute;n de pin, utilizadas durante los
         procesos de emisi&oacute;n de nuevas tarjetas, renovaci&oacute;n y sobreflex.</p>
@@ -46,13 +40,13 @@
       <p class="TITLE"><img src="../img/COF_040B.PNG"></p>
 
       <p class="PARRAFO"><span class="SUBTITULO">Adicionar:</span>  Si el usuario invoca la opci&oacute;n Adicionar se
-        despliega un formulario con los siguientes campos<span>:</span></p>
+        despliega un formulario con los siguientes campos:</span></p>
       <p class="TITLE"><img src="../img/COF_040B1.PNG"></p>
 
       <table>
         <tr>
           <td class="titletable">
-            <p class="SUBTITULO"><b><span>Clave</span></b></p>
+            <p class="SUBTITULO">Clave</span></p>
           </td>
           <td>
             <p class="PARRAFO">Campo numérico, obligatorio, de máximo dos dígitos en el que se define cada una de las

@@ -19,26 +19,20 @@
       <img class="TITLE" src="../img/menu.PNG" alt="Botón de Menú ">
     </div>
   </header>
-  <div id="menuContainer"></div>
-    <script>
-      fetch('menu.html')
-        .then(response => response.text())
-        .then(html => {
-          document.getElementById('menuContainer').innerHTML = html;
-        });
-    </script>
+    <div id="menuContainer"></div>
+  <script>
+    fetch('menu.html')
+      .then(response => response.text())
+      .then(html => {
+        document.getElementById('menuContainer').innerHTML = html;
+      });
+  </script>
 
   <section>
     <div>
-      <table>
-        <tr>
-          <td>
-            <div>
+      
               <p class="TITLE">Segmentos</p>
-            </div>
-          </td>
-        </tr>
-      </table>
+
       <p class="PARRAFO">Mediante esta opci&oacute;n se parametrizan
         los diferentes segmentos o nichos de mercado que van a ser asociados a los
         bines y que conjuntamente con el grupo de afinidad van a conformar cada uno
@@ -59,7 +53,7 @@
         le permiten a la entidad parametrizar los dem&aacute;s componentes del producto.
         Adicionalmente contiene las opciones Actualizar, Eliminar y Adicionar.
       </p>
-      <p class="PARRAFO"><b><span class="SUBTITULO">Adicionar:</span></b>
+      <p class="PARRAFO"><span class="SUBTITULO">Adicionar:</span>
         si el usuario invoca la opci&oacute;n Adicionar, se despliega un
         nuevo formulario con los siguientes campos.</p>
       <p class="TITLE"><img src="../img/DBF_034E9.PNG"></p>
@@ -69,7 +63,7 @@
         <table>
           <tr>
             <td class="titletable">
-              <p class="SUBTITULO"><b><span>C&oacute;digo</span></b></p>
+              <p class="SUBTITULO">C&oacute;digo</span></p>
             </td>
             <td>
               <p class="PARRAFO">Campo
@@ -79,7 +73,7 @@
           </tr>
           <tr>
             <td class="titletable">
-              <p class="SUBTITULO"><b><span>Descripci&oacute;n</span></b></p>
+              <p class="SUBTITULO">Descripci&oacute;n</span></p>
             </td>
             <td>
               <p class="PARRAFO">Este
@@ -90,7 +84,7 @@
         </table>
       </div>
 
-      <p class="PARRAFO"><b><span class="SUBTITULO">Actualizar:</span></b>
+      <p class="PARRAFO"><span class="SUBTITULO">Actualizar:</span>
         si el usuario selecciona un registro e invoca la opci&oacute;n Actualizar,
         se despliega un formulario en el cual el &uacute;nico campo modificable es
         la Descripci&oacute;n.</p>

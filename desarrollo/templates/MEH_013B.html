@@ -18,33 +18,23 @@
       <img class="TITLE" src="../img/menu.PNG" alt="Botón de Menú ">
     </div>
   </header>
-  <div id="menuContainer"></div>
-    <script>
-      fetch('menu.html')
-        .then(response => response.text())
-        .then(html => {
-          document.getElementById('menuContainer').innerHTML = html;
-        });
-    </script>
+    <div id="menuContainer"></div>
+  <script>
+    fetch('menu.html')
+      .then(response => response.text())
+      .then(html => {
+        document.getElementById('menuContainer').innerHTML = html;
+      });
+  </script>
 
   <section>
     <div>
-      <table>
-        <tr>
-          <td>
-            <div>
+      
               <p class="TITLE">Premios puntajes</p>
-            </div>
-          </td>
-        </tr>
-      </table>
-      <p>Mediante esta funci&oacute;n se definen los incentivos o premios representados en electrodom&eacute;sticos,
-        pasajes a&eacute;reos, entre otros, a los cuales el cliente se hace acreedor al acumular puntos por los consumos
-        efectuados en los establecimientos que pertenecen a cualquiera de los distintos <a href="MEH_006B.html">esquemas
-          de puntaje</a> definidos por la entidad.</p>
-      <p class="PARRAFO"><span class="SUBTITULO">Filtro:</span>  El formulario cuenta
-        con un filtro inicial de b&uacute;squeda, necesario para la consulta de la
-        informaci&oacute;n:</p>
+
+      <p>Mediante esta función se pueden definir los incentivos o premios a los cuales el cliente se hace acreedor, al acumular puntos por los consumos efectuados por este, en los establecimientos que pertenecen a cualquiera de los distintos <a href="MEH_006B.html">esquemas
+          de puntaje</a> definidos por la entidad. Dichos premios pueden estar representados en:  electrodomésticos, pasajes aéreos, beneficios o abonos a sus tarjetas, entre otros.</p>
+      <p class="PARRAFO"><span class="SUBTITULO">Filtro:</span>  El formulario cuenta con un filtro inicial de búsqueda:</p>
         <p class="TITLE"><img src="../img/MEF_013B4.PNG"></p>
       <table>
         <tr>
@@ -52,15 +42,14 @@
             <p class="SUBTITULO">C&oacute;digo</p>
           </td>
           <td>
-            <p>Campo num&eacute;rico de m&aacute;ximo 7 d&iacute;gitos, en el cual se ingresa el c&oacute;digo del
-              premio que se desee consultar.</p>
+            <p class="PARRAFO">Campo numérico de máximo 7 dígitos, mediante el cual, digitando el código del premio, se puede realizar la consulta.</p>
           </td>
         </tr>
         <tr>
           <td class="SUBTITULO">Descripci&oacute;n</td>
           <td>
-            <p>En este campo alfanum&eacute;rico de hasta 60 posiciones, se puede realizar la b&uacute;squeda a
-              trav&eacute;s de la descripci&oacute;n del premio. </p>
+            <p class="PARRAFO">	
+              Campo alfanumérico de hasta 60 posiciones, mediante el cual, digitando el nombre del premio o parte de él, se puede realizar la consulta.</p>
           </td>
         </tr>
       </table>
@@ -71,14 +60,14 @@
         Adicionar y Detalle.</p>
       <p class="PARRAFO"><span class="SUBTITULO">Adicionar:</span>  Si
         el usuario invoca la opci&oacute;n Adicionar se despliega un formulario con
-        los siguientes campos<span>:</span> 
+        los siguientes campos:</span> 
       </p>
       <p class="TITLE"><img src="../img/MEF_013B1.PNG"></p>
 
       <table>
         <tr>
           <td class="titletable">
-            <p class="SUBTITULO"><b><span>C&oacute;digo</span></span></b></p>
+            <p class="SUBTITULO">C&oacute;digo</span></span></p>
           </td>
           <td>
             <p>Campo num&eacute;rico de m&aacute;ximo 7 d&iacute;gitos, obligatorio, en el que se registra el
@@ -97,7 +86,7 @@
         </tr>
         <tr>
           <td class="titletable">
-            <p class="SUBTITULO"><b><span>Saldo inventario </span></span></b></p>
+            <p class="SUBTITULO">Saldo inventario </span></span></p>
           </td>
           <td>
             <p>Campo en cual se registra la cantidad de unidades disponibles por clase de premio. Este campo luego de
@@ -108,7 +97,7 @@
         </tr>
         <tr>
           <td class="titletable">
-            <p class="SUBTITULO"><b><span>Cantidad de reorden </span></span></b></p>
+            <p class="SUBTITULO">Cantidad de reorden </span></span></p>
           </td>
           <td>
             <p>En este campo num&eacute;rico de 10 d&iacute;gitos, no obligatorio, se define el saldo m&iacute;nimo de
@@ -122,7 +111,7 @@
         </tr>
         <tr>
           <td class="titletable">
-            <p class="SUBTITULO"><b><span>Puntos requeridos </span></span></b></p>
+            <p class="SUBTITULO">Puntos requeridos </span></span></p>
           </td>
           <td>
             <p>Campo num&eacute;rico de 7 d&iacute;gitos, obligatorio, en el que se registra la cantidad de puntos que
@@ -131,7 +120,7 @@
         </tr>
         <tr>
           <td class="titletable">
-            <p class="SUBTITULO"><b><span>Plan millas </span></span></b></p>
+            <p class="SUBTITULO">Plan millas </span></span></p>
           </td>
           <td>
             <p>En este campo se define si el premio previamente registrado corresponde a millas o no, lo que determina
@@ -141,7 +130,7 @@
         </tr>
         <tr>
           <td class="titletable">
-            <p class="SUBTITULO"><b><span>Referencia millas </span></span></b></p>
+            <p class="SUBTITULO">Referencia millas </span></span></p>
           </td>
           <td>
             <p>En este campo la entidad inscribe las caracter&iacute;sticas propias del premio que se ha registrado
@@ -157,7 +146,7 @@
       <p class="TITLE"><img src="../img/MEF_013B2.PNG"></p>
 
       <p class="PARRAFO"><span class="SUBTITULO">Detalle:</span>  Si el usuario invoca
-        la opci&oacute;n Detalle se despliega el siguiente formulario.<span>
+        la opci&oacute;n Detalle se despliega el siguiente formulario.
 
         </span></p>
       <p class="TITLE"><img src="../img/MEF_013B3.PNG"></p>

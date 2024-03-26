@@ -1,104 +1,112 @@
 <!DOCTYPE html>
 <html lang="es">
 
-<head>
+  <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>BANKBU®</title>
 
     <link rel="stylesheet" href="../css/pages.css">
     <link rel="stylesheet" href="../css/style.css">
- <link rel="icon" href="../img/ACQUIRER-logo.JPG" type="image/x-icon">
-</head>
+    <link rel="icon" href="../img/ACQUIRER-logo.JPG" type="image/x-icon">
+  </head>
 
-<body>
+  <body>
 
     <header>
-        <img class="logo" src="../img/logoBankbu_.PNG" alt="Logo de Mi Empresa">
-        <div id="menuBtn">
-            <img class="TITLE"  src= "../img/menu.PNG" alt="Botón de Menú ">
-        </div>
+      <img class="logo" src="../img/logoBankbu_.PNG" alt="Logo de Mi Empresa">
+      <div id="menuBtn">
+        <img class="TITLE" src="../img/menu.PNG" alt="Botón de Menú ">
+      </div>
     </header>
-   <div id="menuContainer"></div>
+    <div id="menuContainer"></div>
     <script>
-      fetch('menu.html')
-        .then(response => response.text())
-        .then(html => {
-          document.getElementById('menuContainer').innerHTML = html;
-        });
-    </script>
+    fetch('menu.html')
+      .then(response => response.text())
+      .then(html => {
+        document.getElementById('menuContainer').innerHTML = html;
+      });
+  </script>
 
     <section>
-        <div> 
-            <table>
-              <tr> 
-                <td><div> 
-                    <p  class="TITLE">Consulta de movimientos</p>
-                    </div></td>
-              </tr>
-            </table>
-            <p class="PARRAFO"><span class="PARRAFO"><span class="SUBTITULO">Rechazo cargue 
-              convenios:</span>  </span> Conjunto de campos que muestran los registros contenidos 
-              dentro de los cargues de movimientos de convenios, los que ni siquiera fue 
-              posible leer, siendo enviados a esta opci&oacute;n.</p>
-            <p class="PARRAFO">El formulario cuenta con la opci&oacute;n Detalle, sumado 
-              a las siguientes opciones<span class="PARRAFO">:</span>  
-               <a href="INH_040B1.html">Movimiento 
-              diario</a>, <a href="INH_040B2.html">Fraudes</a>, <a href="INH_006B5.html"></a><a href="INH_040B3.html">Pendientes</a>, 
-              <a href="INH_006B6.html"></a><a href="INH_040B4.html">Rechazo cargue</a>, 
-              <a href="INH_040B5.html">Contracargos</a>, <a href="INH_040B6.html">Efectos 
-              al cobro</a>, <a href="INH_006B9.html"></a><a href="INH_040B7.html">Intercambio</a>, 
-              y <a href="INH_040B.html">Ver par&aacute;metros</a>. </p>
-            <p class="TITLE"><img src="../img/INF_040B8.PNG"></p>
-           
-            <table>
-              <tr> 
-                <td  class="titletable" ><p class="SUBTITULO">Secuencia</p></td>
-                <td><p class="PARRAFO">Despliega 
-                    el n&uacute;mero secuencial asignado por el sistema al archivo que contiene 
-                    el registro inv&aacute;lido.</p></td>
-              </tr>
-              <tr> 
-                <td class="titletable"><p class="SUBTITULO">Registros</p></td>
-                <td><p class="PARRAFO">Campo 
-                    que despliega la cadena de caracteres del registro rechazado.</p></td>
-              </tr>
-              <tr> 
-                <td class="titletable"> 
-                  <p class="SUBTITULO">Causal</p></td>
-                <td><p class="PARRAFO">Campo 
-                    que contiene el c&oacute;digo de la causal de error determinado por 
-                    la validaci&oacute;n del movimiento.</p></td>
-              </tr>
-              <tr> 
-                <td  class="titletable" ><p class="SUBTITULO">Error</p></td>
-                <td><p class="PARRAFO">Campo 
-                    que contiene el c&oacute;digo de error asociado al registro rechazado.</p></td>
-              </tr>
-            </table>
-            <p><a href="INH_040B1.html">Movimiento 
-              diario</a><b><span > 
-              | </span></b><a href="INH_006B3.html"></a><a href="INH_040B2.html">Fraudes</a><span
-              ><b> | </b></span><a href="INH_006B5.html"></a><a href="INH_040B3.html">Pendientes</a> 
-              <span
-              ><b>| </b></span><a href="INH_040B4.html">Rechazo 
-              cargue</a><span
-              ><b> | </b></span>  <a href="INH_040B5.html">Contracargos</a><a href="INH_040B6.html">Efectos 
-              al cobro</a><span
-              ><b> | </b></span><a href="INH_006B9.html"></a><a href="INH_040B7.html">Intercambio</a><span
-              ><b></b></span><span
-              ><b> | </b></span>  <a href="INH_040B5.html"></a> 
-              <a href="INH_040B.html">Ver par&aacute;metros</a></p>
-            
-        </section>
-    <script src="../js/menu.js"></script>
-</body>
-<div id="footerContainer"></div>
-<script>
+      <div>
+
+        <p class="TITLE">Consulta de movimientos</p>
+
+        <p class="PARRAFO"><span class="PARRAFO"><span class="SUBTITULO">Rechazo
+              cargue
+              convenios:</span> </span> Conjunto de campos que muestran los
+          registros contenidos
+          dentro de los cargues de movimientos de convenios, los que ni siquiera
+          fue
+          posible leer, siendo enviados a esta opci&oacute;n.</p>
+        <p class="PARRAFO">El formulario cuenta con la opci&oacute;n Detalle,
+          sumado
+          a las siguientes opciones<span class="PARRAFO">:</span>
+          <a href="INH_040B1.html">Movimiento
+            diario</a>, <a href="INH_040B2.html">Fraudes</a>, <a
+            href="INH_006B5.html"></a><a href="INH_040B3.html">Pendientes</a>,
+          <a href="INH_006B6.html"></a><a href="INH_040B4.html">Rechazo
+            cargue</a>,
+          <a href="INH_040B5.html">Contracargos</a>, <a
+            href="INH_040B6.html">Efectos
+            al cobro</a>, <a href="INH_006B9.html"></a><a
+            href="INH_040B7.html">Intercambio</a>,
+          y <a href="INH_040B.html">Ver par&aacute;metros</a>. </p>
+        <p class="TITLE"><img src="../img/INF_040B8.PNG"></p>
+
+        <table>
+          <tr>
+            <td class="titletable"><p class="SUBTITULO">Secuencia</p></td>
+            <td><p class="PARRAFO">Despliega
+                el n&uacute;mero secuencial asignado por el sistema al archivo
+                que contiene
+                el registro inv&aacute;lido.</p></td>
+          </tr>
+          <tr>
+            <td class="titletable"><p class="SUBTITULO">Registros</p></td>
+            <td><p class="PARRAFO">Campo
+                que despliega la cadena de caracteres del registro
+                rechazado.</p></td>
+          </tr>
+          <tr>
+            <td class="titletable">
+              <p class="SUBTITULO">Causal</p></td>
+            <td><p class="PARRAFO">Campo
+                que contiene el c&oacute;digo de la causal de error determinado
+                por
+                la validaci&oacute;n del movimiento.</p></td>
+          </tr>
+          <tr>
+            <td class="titletable"><p class="SUBTITULO">Error</p></td>
+            <td><p class="PARRAFO">Campo
+                que contiene el c&oacute;digo de error asociado al registro
+                rechazado.</p></td>
+          </tr>
+        </table>
+        <p><a href="INH_040B1.html">Movimiento
+            diario</a><span>
+            | </span><a href="INH_006B3.html"></a><a
+            href="INH_040B2.html">Fraudes</a><span> | </span><a
+            href="INH_006B5.html"></a><a href="INH_040B3.html">Pendientes</a>
+          <span>| </span><a href="INH_040B4.html">Rechazo
+            cargue</a><span> | </span> <a
+            href="INH_040B5.html">Contracargos</a><a
+            href="INH_040B6.html">Efectos
+            al cobro</a><span> | </span><a href="INH_006B9.html"></a><a
+            href="INH_040B7.html">Intercambio</a><span></span><span> | </span>
+          <a href="INH_040B5.html"></a>
+          <a href="INH_040B.html">Ver par&aacute;metros</a></p>
+
+      </section>
+      <script src="../js/menu.js"></script>
+    </body>
+    <div id="footerContainer"></div>
+    <script>
   fetch('footer.html')
     .then(response => response.text())
     .then(html => {
       document.getElementById('footerContainer').innerHTML = html;
     });
 </script>
-</html>
+  </html>
