@@ -1,15 +1,15 @@
 <!DOCTYPE html>
 <html lang="es">
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>BANKBU®</title>
-    <link rel="stylesheet" href="../css/pages.css">
-    <link rel="stylesheet" href="../css/style.css">
-    <link rel="icon" href="../img/ACQUIRER-logo.JPG" type="image/x-icon">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>BANKBU®</title>
+        <link rel="stylesheet" href="../css/pages.css">
+        <link rel="stylesheet" href="../css/style.css">
+        <link rel="icon" href="../img/ACQUIRER-logo.JPG" type="image/x-icon">
 
-    <style>
+        <style>
         section p {
             width: 625px;
         }
@@ -22,77 +22,96 @@
             display: none;
         }
     </style>
-</head>
+    </head>
 
-<body>
+    <body>
 
-    <header>
-        <img class="logo" src="../img/logoBankbu_.PNG" alt="Logo de Mi Empresa">
-        <div id="menuBtn">
-            <img class="TITLE" src="../img/menu.PNG" alt="Botón de Menú ">
-        </div>
-    </header>
-      <div id="menuContainer"></div>
-  <script>
+        <header>
+            <img class="logo" src="../img/logoBankbu_.PNG"
+                alt="Logo de Mi Empresa">
+            <div id="menuBtn">
+                <img class="TITLE" src="../img/menu.PNG" alt="Botón de Menú ">
+            </div>
+        </header>
+        <div id="menuContainer"></div>
+        <script>
     fetch('menu.html')
       .then(response => response.text())
       .then(html => {
         document.getElementById('menuContainer').innerHTML = html;
       });
   </script>
-    <section>
-        <div>
-            <p class="TITLE">Núcleo
-            </p>
-            <p>En este menú se despliegan todas las opciones que permiten a la entidad efectuar la parametrización
-                requerida
-                por los diferentes servicios que componen la aplicación y que será utilizada posteriormente tanto en la
-                ejecución de
-                procedimientos invocados desde los botones contenidos en los diferentes formularios y como entrada para
-                alimentar las
-                listas de valores que permiten llenar información en diversos campos. Por lo general, estos parámetros
-                permanecen
-                relativamente estáticos en la línea de tiempo y se modifican eventualmente como resultado de cambios en
-                las políticas de
-                la entidad, por disposiciones de los entes gubernamentales que regulan la actividad financiera o las
-                franquicias.
-            </p>
+        <section>
+            <div>
+                <p class="TITLE">Núcleo
+                </p>
+                <p>En este menú se despliegan todas las opciones que permiten a
+                    la entidad efectuar la parametrización
+                    requerida
+                    por los diferentes servicios que componen la aplicación y
+                    que será utilizada posteriormente tanto en la
+                    ejecución de
+                    procedimientos invocados desde los botones contenidos en los
+                    diferentes formularios y como entrada para
+                    alimentar las
+                    listas de valores que permiten llenar información en
+                    diversos campos. Por lo general, estos parámetros
+                    permanecen
+                    relativamente estáticos en la línea de tiempo y se modifican
+                    eventualmente como resultado de cambios en
+                    las políticas de
+                    la entidad, por disposiciones de los entes gubernamentales
+                    que regulan la actividad financiera o las
+                    franquicias.
+                </p>
 
-            <p><span class="aviso-importante">Parámetros configuración del sistema:
-                </span> En este bloque del menú se muestran las opciones que permiten parametrizar
-                la ubicación de los archivos de entrada y salida del sistema así como la definición de los usuarios.
-            </p>
+                <p><span class="aviso-importante">Parámetros configuración del
+                        sistema:
+                    </span> En este bloque del menú se muestran las opciones que
+                    permiten parametrizar
+                    la ubicación de los archivos de entrada y salida del sistema
+                    así como la definición de los usuarios.
+                </p>
 
-            <li><a href="NUH_001B.html">Administracion de casos de Uso</a></li>
-            <li><a href="NUH_002B.html">Ordenamiento de casos de uso</a></li>
-            <li><a href="NUH_010B.html">Administración de usuarios</a></li>
-            <li><a href="NUH_014B.html">Roles y Restricciones</a></li>
-            <li><a href="NUH_034B.html">Botones seguros</a></li>
-            <li><a href="NUH_024B.html">Mensajes</a></li>
-            <li><a href="NUH_053B.html">Ubicación de archivos</a></li>
-            <li><a href="NUH_076E.html">Definición de entidades</a></li>
-            <p style="text-align: left; cursor: pointer;color:#341C8C;" onclick="toggleList('ParámetrosPCI')" onmouseover="this.style.color='#F26716'" onmouseout="this.style.color='#341C8C'">Parámetros PCI </p>
-            <ul id="ParámetrosPCI">
-                <li><a href="NUH_120E.html">Parámetros PCI DSS</a></li>
-                <li><a href="NUH_121E.html">Parámetros Grupos Entrada y Salida</a></li>
-                <li><a href="NUH_122E.html">Parámetros Llaves de cifrado PGP</a></li>
-                <li><a href="NUH_123E.html">Parámetros conexión al Servidor</a></li>
-                <li><a href="NUH_124E.html">Asociaciones de conexiones, llaves y archivos a grupos</a></li>
-            </ul>
-            <li><a href="NUH_126E.html">Usuarios webservice</a></li>
-            
+                <li><a href="NUH_001B.html">Administracion de casos de
+                        Uso</a></li>
+                <li><a href="NUH_002B.html">Ordenamiento de casos de
+                        uso</a></li>
+                <li><a href="NUH_010B.html">Administración de usuarios</a></li>
+                <li><a href="NUH_014B.html">Roles y Restricciones</a></li>
+                <li><a href="NUH_034B.html">Botones seguros</a></li>
+                <li><a href="NUH_024B.html">Mensajes</a></li>
+                <li><a href="NUH_053B.html">Ubicación de archivos</a></li>
+                <li><a href="NUH_076E.html">Definición de entidades</a></li>
+                <p style="text-align: left; cursor: pointer;color:#341C8C;"
+                    onclick="toggleList('ParámetrosPCI')"
+                    onmouseover="this.style.color='#F26716'"
+                    onmouseout="this.style.color='#341C8C'">Parámetros PCI </p>
+                <ul id="ParámetrosPCI">
+                    <li><a href="NUH_120E.html">Parámetros PCI DSS</a></li>
+                    <li><a href="NUH_121E.html">Parámetros Grupos Entrada y
+                            Salida</a></li>
+                    <li><a href="NUH_122E.html">Parámetros Llaves de cifrado
+                            PGP</a></li>
+                    <li><a href="NUH_123E.html">Parámetros conexión al
+                            Servidor</a></li>
+                    <li><a href="NUH_124E.html">Asociaciones de conexiones,
+                            llaves y archivos a grupos</a></li>
+                </ul>
+                <li><a href="NUH_126E.html">Usuarios webservice</a></li>
 
-        </div>
+            </div>
 
-        <img class="ImagenBankbu" class="ImagenBankbu" src="../img/bankbu-removebg-preview.PNG"
-            alt="Imagen de la empresa">
+            <img class="ImagenBankbu" class="ImagenBankbu"
+                src="../img/bankbu-removebg-preview.PNG"
+                alt="Imagen de la empresa">
 
-    </section>
-    <script src="../js/menu.js"></script>
-    <script src="../js/opciones.js"></script>
-</body>
-<div id="footerContainer"></div>
-<script>
+        </section>
+        <script src="../js/menu.js"></script>
+        <script src="../js/opciones.js"></script>
+    </body>
+    <div id="footerContainer"></div>
+    <script>
   fetch('footer.html')
     .then(response => response.text())
     .then(html => {

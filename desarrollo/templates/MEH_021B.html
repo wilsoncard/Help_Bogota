@@ -1,25 +1,25 @@
 <!DOCTYPE html>
 <html lang="es">
 
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>BANKBU®</title>
-  <link rel="stylesheet" href="../css/pages.css">
-  <link rel="stylesheet" href="../css/style.css">
-  <link rel="icon" href="../img/ACQUIRER-logo.JPG" type="image/x-icon">
-</head>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BANKBU®</title>
+    <link rel="stylesheet" href="../css/pages.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="icon" href="../img/ACQUIRER-logo.JPG" type="image/x-icon">
+  </head>
 
-<body>
+  <body>
 
-  <header>
-    <img class="logo" src="../img/logoBankbu_.PNG" alt="Logo de Mi Empresa">
-    <div id="menuBtn">
-      <img class="TITLE" src="../img/menu.PNG" alt="Botón de Menú ">
-    </div>
-  </header>
+    <header>
+      <img class="logo" src="../img/logoBankbu_.PNG" alt="Logo de Mi Empresa">
+      <div id="menuBtn">
+        <img class="TITLE" src="../img/menu.PNG" alt="Botón de Menú ">
+      </div>
+    </header>
     <div id="menuContainer"></div>
-  <script>
+    <script>
     fetch('menu.html')
       .then(response => response.text())
       .then(html => {
@@ -27,73 +27,93 @@
       });
   </script>
 
-  <section>
-    <div>
-      
-              <p class="TITLE">Par&aacute;metros de comisiones</p>
+    <section>
+      <div>
 
-      <p class="PARRAFO">Mediante esta opción la entidad define a cuáles de sus productos se les aplicará el costo
-        correspondiente, al momento de efectuar el cargue de comisiones por uso de cajeros.</p>
-      <p class="PARRAFO">El formulario cuenta con un filtro de búsqueda y enlaces a las funcionalidades de
-        <a href="#Parametros" title="Parámetros cobro comisiones" target="_self">
-          Parámetros
-          cobro comisiones</a>,<a href="#Parametros">
-          Copiar Parámetros.</a>
-      </p>
-      <p class="TITLE"><img src="../img/MEF_021B.PNG"></p>
+        <p class="TITLE">Par&aacute;metros de comisiones</p>
 
-      <p><span class="SUBTITULO">Filtro:</span>  Se pueden realizar consultas a trav&eacute;s
-        de las siguientes opciones: </p>
-      <p class="TITLE"><img src="../img/MEF_021B1.PNG"></p>
+        <p class="PARRAFO">Mediante esta opción la entidad define a cuáles de
+          sus productos se les aplicará el costo
+          correspondiente, al momento de efectuar el cargue de comisiones por
+          uso de cajeros.</p>
+        <p class="PARRAFO">El formulario cuenta con un filtro de búsqueda y
+          enlaces a las funcionalidades de
+          <a href="#Parametros" title="Parámetros cobro comisiones"
+            target="_self">
+            Parámetros
+            cobro comisiones</a>,<a href="#Parametros">
+            Copiar Parámetros.</a>
+        </p>
+        <p class="TITLE"><img src="../img/MEF_021B.PNG"></p>
 
-      <table>
-        <tr>
-          <td class="titletable">
-            <p class="SUBTITULO">Bin</p>
-          </td>
-          <td>
-            <p class="PARRAFO">Campo
-              con lista de valores de la cual se selecciona el <a href="MEH_001B.html">Bin</a>
-              por el cual se desea filtrar. Este criterio puede combinarse con el
-              Segmento y Grupo de Afinidad, que son los otros dos componentes del
-              producto.</p>
-          </td>
-        </tr>
-        <tr>
-          <td class="titletable">
-            <p class="SUBTITULO">Producto</p>
-          </td>
-          <td>
-            <p class="PARRAFO">Campo
-              con lista de valores de la cual se selecciona el <a href="MEH_001B1.html">Segmento</a>
-              por el cual se desea filtrar. Este criterio puede combinarse con el
-              Bin y Grupo de Afinidad, que son los otros dos componentes del producto.</p>
-          </td>
-        </tr>
-        <tr>
-          <td class="titletable">
-            <p class="SUBTITULO">Grupo
-              de afinidad</p>
-          </td>
-          <td>
-            <p class="PARRAFO">Campo
-              con lista de valores de la cual se selecciona el <a href="MEH_001B2.html">Grupo
-                de Afinidad</a> por el cual se desea filtrar. Este criterio puede combinarse
-              con el Bin y Segmento, que son los otros dos componentes del producto.</p>
-          </td>
-        </tr>
-      </table>
+        <p><span class="SUBTITULO">Filtro:</span> Se pueden realizar consultas a
+          trav&eacute;s
+          de las siguientes opciones: </p>
+        <p class="TITLE"><img src="../img/MEF_021B1.PNG"></p>
 
-      <p class="PARRAFO"><span class="SUBTITULO"><a name="Parametros"></a>Par&aacute;metros
-          cobro comisiones<a href="#Parametros" title="Parametros" target="_self"></a>:</span> 
-        Si el usuario invoca esta opci&oacute;n se despliega un formulario con los
-        siguientes campos:</span></p>
+        <table>
+          <tr>
+            <td class="titletable">
+              <p class="SUBTITULO">Bin</p>
+            </td>
+            <td>
+              <p class="PARRAFO">Campo
+                con lista de valores de la cual se selecciona el <a
+                  href="MEH_001B.html">Bin</a>
+                por el cual se desea filtrar. Este criterio puede combinarse con
+                el
+                Segmento y Grupo de Afinidad, que son los otros dos componentes
+                del
+                producto.</p>
+            </td>
+          </tr>
+          <tr>
+            <td class="titletable">
+              <p class="SUBTITULO">Producto</p>
+            </td>
+            <td>
+              <p class="PARRAFO">Campo
+                con lista de valores de la cual se selecciona el <a
+                  href="MEH_001B1.html">Segmento</a>
+                por el cual se desea filtrar. Este criterio puede combinarse con
+                el
+                Bin y Grupo de Afinidad, que son los otros dos componentes del
+                producto.</p>
+            </td>
+          </tr>
+          <tr>
+            <td class="titletable">
+              <p class="SUBTITULO">Grupo
+                de afinidad</p>
+            </td>
+            <td>
+              <p class="PARRAFO">Campo
+                con lista de valores de la cual se selecciona el <a
+                  href="MEH_001B2.html">Grupo
+                  de Afinidad</a> por el cual se desea filtrar. Este criterio
+                puede combinarse
+                con el Bin y Segmento, que son los otros dos componentes del
+                producto.</p>
+            </td>
+          </tr>
+        </table>
+
+        <p class="PARRAFO"><span class="SUBTITULO"><a
+              name="Parametros"></a>Par&aacute;metros
+            cobro comisiones<a href="#Parametros" title="Parametros"
+              target="_self"></a>:</span>
+          Si el usuario invoca esta opci&oacute;n se despliega un formulario con
+          los
+          siguientes campos:</p>
       <p class="TITLE"><img src="../img/MEF_021B2.PNG"></p>
 
-      <p><span class="SUBTITULO">Adicionar:</span>  Si el usuario invoca
-        esta opci&oacute;n, se despliega un formulario con los siguientes campos<span >.
-          A trav&eacute;s de estos, se definen las caracter&iacute;sticas del registro
-          para que se asocie a determinada transacci&oacute;n del cliente. </span> 
+      <p><span class="SUBTITULO">Adicionar:</span> Si el usuario invoca
+        esta opci&oacute;n, se despliega un formulario con los siguientes
+        campos<span>.
+          A trav&eacute;s de estos, se definen las caracter&iacute;sticas del
+          registro
+          para que se asocie a determinada transacci&oacute;n del cliente.
+        </span>
       </p>
       <p class="TITLE"><img src="../img/MEF_021B3.PNG"></p>
 
@@ -104,8 +124,10 @@
           </td>
           <td>
             <p class="PARRAFO">Campo
-              con lista de valores adjunta de la cual la entidad selecciona si el
-              registro que se identifica en el archivo de comisiones cajeros corresponde
+              con lista de valores adjunta de la cual la entidad selecciona si
+              el
+              registro que se identifica en el archivo de comisiones cajeros
+              corresponde
               a nacional o internacional.</p>
           </td>
         </tr>
@@ -115,8 +137,10 @@
           </td>
           <td>
             <p class="PARRAFO">Campo obligatorio
-              con lista de valores de la cual la entidad selecciona la <a href="MEH_003B.html">Transacci&oacute;n</a>
-              que se asociar&aacute; y presentar&aacute; al cliente de acuerdo con
+              con lista de valores de la cual la entidad selecciona la <a
+                href="MEH_003B.html">Transacci&oacute;n</a>
+              que se asociar&aacute; y presentar&aacute; al cliente de acuerdo
+              con
               las caracter&iacute;sticas del registro.</p>
           </td>
         </tr>
@@ -127,7 +151,8 @@
           </td>
           <td>
             <p class="PARRAFO">En
-              este campo la entidad identifica el registro que viene en el archivo
+              este campo la entidad identifica el registro que viene en el
+              archivo
               de autorizaciones.</p>
           </td>
         </tr>
@@ -137,17 +162,19 @@
           </td>
           <td>
             <p class="PARRAFO">Corresponde
-              a la definici&oacute;n del c&oacute;digo de respuesta del autorizador.</p>
+              a la definici&oacute;n del c&oacute;digo de respuesta del
+              autorizador.</p>
           </td>
         </tr>
         <tr>
           <td class="titletable">
             <p class="SUBTITULO">Origen
-                cajero </p>
+              cajero </p>
           </td>
           <td>
             <p class="PARRAFO">Campo
-              en el cual la entidad identifica el origen del cajero del registro que
+              en el cual la entidad identifica el origen del cajero del registro
+              que
               viene en el archivo de autorizaciones.</p>
           </td>
         </tr>
@@ -157,8 +184,10 @@
           </td>
           <td>
             <p class="PARRAFO">En
-              este campo la entidad selecciona de la lista de valores si el registro
-              que se identifica en el archivo de comisiones cajeros corresponde a
+              este campo la entidad selecciona de la lista de valores si el
+              registro
+              que se identifica en el archivo de comisiones cajeros corresponde
+              a
               Propio, No propio u Otro, esta &uacute;ltima opci&oacute;n
               es para uso futuro.
             </p>
@@ -170,23 +199,29 @@
           </td>
           <td>
             <p class="PARRAFO">Campo
-              en el cual la entidad identifica la red del registro que viene en el
+              en el cual la entidad identifica la red del registro que viene en
+              el
               archivo de autorizaciones.</p>
           </td>
         </tr>
       </table>
-      <p class="PARRAFO"><span class="PARRAFO"><span class="SUBTITULO">Actualizar:</span> 
-          Si el usuario invoca la opci&oacute;n Actualizar se despliega un nuevo formulario
-          en el cualel &uacute;nico campo no modificable es el de Transacci&oacute;n.</span></p>
+      <p class="PARRAFO"><span class="PARRAFO"><span
+            class="SUBTITULO">Actualizar:</span>
+          Si el usuario invoca la opci&oacute;n Actualizar se despliega un nuevo
+          formulario
+          en el cualel &uacute;nico campo no modificable es el de
+          Transacci&oacute;n.</p>
       <p class="TITLE"><img src="../img/MEF_021B4.PNG"></p>
-      <p><span class="SUBTITULO">Copiar par&aacute;metros :</span>  Si el usuario invoca la opci&oacute;n, copia los
-        parametros de acuerdo al boton de seleccion elegido, est&eacute; copia los parametros del producto.</p>
+      <p><span class="SUBTITULO">Copiar par&aacute;metros :</span> Si el usuario
+        invoca la opci&oacute;n, copia los
+        parametros de acuerdo al boton de seleccion elegido, est&eacute; copia
+        los parametros del producto.</p>
       <p class="TITLE"><img src="../img/MEF_021B5.PNG"></p>
-  </section>
-  <script src="../js/menu.js"></script>
-</body>
-<div id="footerContainer"></div>
-<script>
+    </section>
+    <script src="../js/menu.js"></script>
+  </body>
+  <div id="footerContainer"></div>
+  <script>
   fetch('footer.html')
     .then(response => response.text())
     .then(html => {

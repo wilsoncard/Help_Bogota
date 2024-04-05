@@ -1,0 +1,890 @@
+<!DOCTYPE html>
+<html lang="es">
+
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BANKBU®</title>
+    <link rel="stylesheet" href="../css/pages.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="icon" href="../img/ACQUIRER-logo.JPG" type="image/x-icon">
+  </head>
+
+  <body>
+    <header>
+      <img class="logo" src="../img/logoBankbu_.PNG" alt="Logo de Mi Empresa">
+      <div id="menuBtn">
+        <img class="TITLE" src="../img/menu.PNG" alt="Botón de Menú ">
+      </div>
+    </header>
+    <div id="menuContainer"></div>
+    <script>
+    fetch('menu.html')
+      .then(response => response.text())
+      .then(html => {
+        document.getElementById('menuContainer').innerHTML = html;
+      });
+  </script>
+    <section>
+      <div>
+
+ <p class="TITLE">Movimiento pendiente</p>
+
+ <p class="PARRAFO">Esta pantalla es invocada indistintamente
+ desde la opciones del submenú <i>Movimiento pendiente, </i>siendo estas:<i>
+ Depósitos electrónicos: </i>Muestra el movimiento proveniente del archivo de depósitos
+ electrónicos que ocasionalmente resulte rechazado; <i>Análisis devoluciones</i>:
+ Despliega el movimiento que no fue posible aplicar una vez validada la
+ información de los establecimientos; <i>Representaciones internac.</i>:
+ Movimiento internacional que no fue aceptado por los bancos emisores y que
+ requiere ser solucionado manualmente; <i>Rechazos canje enviado</i>: Muestra
+ el movimiento rechazado correspondiente al canje enviado; <i>Manejo cheques</i>:
+ Aplica en caso que la entidad determine que los pagos en cheque deban cumplir
+ el plazo de canje, por <i><a href="..\..\Nu\Help\NUH_020E.html">oficina</a></i>,
+ correspondiente, ilustrando dichas transacciones. <i>Pendiente</i>: Contiene
+ el movimiento pendiente diferente a los conceptos ya mencionados. Así mismo, esta opción el sistema permite
+ la consulta y/o la interacción con las transacciones que han sido remitidas a
+ esta forma o pantalla por los procesos de validación. Las causales permiten
+ encaminar el análisis requerido en la solución del movimiento pendiente.Todos los datos que aparecen al ingresar a
+ la forma son desplegados por defecto. Ninguno de los datos del bloque
+ superior es modificable pero brindan información básica tanto de la fuente u
+ origen, de la causal que motivó su no aplicación, como también monetaria y de
+ identificación. A excepción del campo Origen inmediato, los demás campos del
+ bloque inferior son ingresables o modificables, posibilitando efectuar los
+ cambios o adiciones de información tendientes a enrutar la transacción hacia
+ el destino que el análisis señale. Los probables destinos de las transacciones son Aplicar
+ movimiento, Enviar a <i><a href="INH_022E.html">fraudes</a></i>, Enviar a <i><a
+ href="INH_027E.html">contracargos</a></i>, Enviar a <i><a
+ href="..\..\CA\Help\CAH_008E.html">castigo</a></i>, Devolver movimiento,
+ Reconsignar cheque, Devolver el pago en cheque o Enviar a intercambio.Adicionalmente, la forma dispone de un
+ botón especial que facilita la consulta de la forma o pantalla de Consulta
+ pendientes que contiene mayor nivel de detalle de la misma transacción
+ ofreciendo elementos adicionales de análisis. Estos destinos son habilitados a cada usuario acorde con el
+ perfil.</p>
+
+ <p class="TITLE"><img src="INH_008E_image002.jpg">
+ <p class="TITLE"><a name="BL_PENDIENTES"></a> Descripción de Campos</p>
+ 
+<table>
+<tr>
+ <td class="titletable">
+ <p class="SUBTITULO">Fecha proceso</p>
+ </td>
+ <td>
+ <p class="PARRAFO">Campo con formato DD-MM-YYYY ilustra la fecha en que se efectuá el proceso del
+ archivo en que viajé la transacción enviada a Movimiento pendiente.</p>
+ </td>
+</tr>
+<tr>
+ <td class="titletable">
+ <p class="SUBTITULO">Trx. Origen</p>
+ </td>
+ <td>
+ <p class="PARRAFO">Despliega tanto el código como el nombre
+ asociado a cada tipo o clase de transacción enviada a pendiente contenida
+ dentro del archivo del movimiento. La
+ codificación es determinada por las franquicias y parametrizada mediante la
+ opción de <i><a href="..\..\NU\Help\NUH_027E.html">Orígenes de transacciones</a></i>
+ del grupo de Tablas reservadas del Núcleo.</p>
+ </td>
+</tr>
+<tr>
+ <td class="titletable">
+ <p class="SUBTITULO">Origen</p>
+ </td>
+ <td>
+ <p class="PARRAFO">Campos que despliegan tanto el código como
+ el nombre del origen o fuente de transacciones dentro del que se incluya la
+ transacción enviada a movimiento pendiente.</p>
+ </td>
+</tr>
+<tr>
+ <td class="titletable">
+ <p class="SUBTITULO">Causal</p>
+ </td>
+ <td>
+ <p class="PARRAFO">Señala el código y nombre de la razón o
+ motivo por la cual la transacción fue enviada a pendiente, de ser posible y
+ una vez modificada la información se envía a aplicar o al destino
+ correspondiente. La codificación de
+ estos motivos corresponde a lo parametrizado en la opción de <i><a
+ href="INH_014E.html">Causales de rechazo</a></i> de éste mismo módulo.</p>
+ </td>
+</tr>
+<tr>
+ <td class="titletable">
+ <p class="SUBTITULO">Moneda</p>
+ </td>
+ <td>
+ <p class="PARRAFO">Despliega el nombre oficial de la moneda
+ que identifica la moneda original de la transacción. Datos poblados en la
+ opción <i><a href="..\..\NU\Help\NUH_005E.html">Monedas</a></i> del grupo de Tablas
+ corporativas del Núcleo.</p>
+ </td>
+</tr>
+<tr>
+ <td class="titletable">
+ <p class="SUBTITULO">Sucursal</p>
+ </td>
+ <td>
+ <p class="PARRAFO">Campo de salida que despliega el nombre de
+ la oficina por medio de la que ingresá el movimiento.</p>
+ </td>
+</tr>
+<tr>
+ <td class="titletable">
+ <p class="SUBTITULO">Compra</p>
+ </td>
+ <td>
+ <p class="PARRAFO">Muestra el monto de la transacción de
+ utilización o consumo sin incluir el monto de la propina concedida por el
+ tarjetahabiente.</p>
+ </td>
+</tr>
+<tr>
+ <td class="titletable">
+ <p class="SUBTITULO">Propina</p>
+ </td>
+ <td>
+ <p class="PARRAFO">Refleja el monto de la propina otorgada
+ por el cliente.</p>
+ </td>
+</tr>
+<tr>
+ <td class="titletable">
+ <p class="SUBTITULO">Valor IVA</p>
+ </td>
+ <td>
+ <p class="PARRAFO">Refleja el valor cobrado al cliente por
+ concepto de impuesto al valor agregado.</p>
+ </td>
+</tr>
+<tr>
+ <td class="titletable">
+ <p class="SUBTITULO">Valor base reintegro IVA</p>
+ </td>
+ <td>
+ <p class="PARRAFO">Valor base del cálculo de la devolución de
+ IVA. Es el valor de los bienes o servicios grabados con el 16%. A partir del
+ año 2005 se adicionan bienes y servicios grabados con un IVA del 10%.</p>
+ </td>
+</tr>
+<tr>
+ <td class="titletable">
+ <p class="SUBTITULO">Indicador EMV</p>
+ </td>
+ <td>
+ <p class="PARRAFO">Indica si la transacción fué realizada con 
+ el chip de la tarjeta.</p>
+ </td>
+</tr>
+<tr>
+ <td class="titletable">
+ <p class="SUBTITULO">Descuento</p>
+ </td>
+ <td>
+ <p class="PARRAFO">Contiene el valor deducido al establecimiento
+ al liquidarle la comisión o descuento sobre el valor del consumo realizado
+ por el cliente.</p>
+ </td>
+</tr>
+<tr>
+ <td class="titletable">
+ <p class="SUBTITULO">Intercambio</p>
+ </td>
+ <td>
+ <p class="PARRAFO">Muestra el valor neto de la transacción,
+ esto es, valor del consumo o utilización más valor propina menos valor
+ descuento.</p>
+ </td>
+</tr>
+<tr>
+ <td class="titletable">
+ <p class="SUBTITULO">Total</p>
+ </td>
+ <td>
+ <p class="PARRAFO">Despliega el valor bruto de la transacción,
+ esto es, valor del consumo o utilización más valor propina.</p>
+ </td>
+</tr>
+<tr>
+ <td class="titletable">
+ <p class="SUBTITULO">Refer. universal</p>
+ </td>
+ <td>
+ <p class="PARRAFO">Número construido y validado por el
+ sistema tanto para el canje enviado como para el recibido, identifica de manera
+ exclusiva a cada transacción dentro de todo el universo transaccional.</p>
+ </td>
+</tr>
+<tr>
+ <td class="titletable">
+ <p class="SUBTITULO">Número consignación</p>
+ </td>
+ <td>
+ <p class="PARRAFO">Corresponde al número del comprobante de
+ consignación al cual pertenece el pagará de la utilización.</p>
+ </td>
+</tr>
+<tr>
+ <td class="titletable">
+ <p class="SUBTITULO">Suc adquirente</p>
+ </td>
+ <td>
+ <p class="PARRAFO">Despliega el código que permite
+ identificar la sucursal de la entidad adquirente o receptora del movimiento.</p>
+ </td>
+</tr>
+<tr>
+ <td class="titletable">
+ <p class="SUBTITULO">Indicador de Cashback</p>
+ </td>
+ <td>
+ <p class="PARRAFO">Si el establecimiento tiene esta
+ característica, indica que el valor registrado como propina en la
+ transacción, corresponde a un avance hecho por el cliente en el
+ establecimiento. Las opciones posibles de la transacción son <i>0</i>: No
+ tiene cashback,<i>1</i>: Si tiene cashback.</p>
+ </td>
+</tr>
+<tr>
+ <td class="titletable">
+ <p class="SUBTITULO">Código rechazo</p>
+ </td>
+ <td>
+ <p class="PARRAFO">A partir de este campo y los subsiguientes
+ la forma permite la inclusión o modificación de los datos tendientes a la
+ evolución de las transacciones que se encuentran en pendientes.</p>
+ <p class="PARRAFO">Despliega el código asignado por el
+ procesador para identificar la causa o motivo, por la que un registro del
+ archivo de canje enviado le es devuelto a la entidad.</p>
+ </td>
+</tr>
+<tr>
+ <td class="titletable">
+ <p class="SUBTITULO">Fecha comprobante</p>
+ </td>
+ <td>
+ <p class="PARRAFO">Dato modificable, muestra la fecha física
+ del comprobante de consumo o utilización en formato DD-MM-YYYY.</p>
+ </td>
+</tr>
+<tr>
+ <td class="titletable">
+ <p class="SUBTITULO">Número comprobante</p>
+ </td>
+ <td>
+ <p class="PARRAFO">Corresponde al número de recibo o
+ comprobante de venta de la utilización.</p>
+ </td>
+</tr>
+<tr>
+ <td class="titletable">
+ <p class="SUBTITULO">Establecimiento</p>
+ </td>
+ <td>
+ <p class="PARRAFO">Dato modificable, despliega el código único
+ que identifica el establecimiento en que se realizá la utilización o consumo.</p>
+ </td>
+</tr>
+<tr>
+ <td class="titletable">
+ <p class="SUBTITULO">Entidad</p>
+ </td>
+ <td>
+ <p class="PARRAFO">Dato modificable, contiene tanto el código
+ como el nombre de la entidad financiera receptora del movimiento.</p>
+ </td>
+</tr>
+<tr>
+ <td class="titletable">
+ <p class="SUBTITULO">Motivo cobro</p>
+ </td>
+ <td>
+ <p class="PARRAFO">Dato modificable, contiene tanto el código
+ como el nombre asociado a las transacciones de notas débito o crédito
+ generadas como resultado del proceso de intercambio o de efectos o
+ comprobantes al cobro, y que ilustran la motivación de esos cargos o abonos
+ interentidades.</p>
+ </td>
+</tr>
+<tr>
+ <td class="titletable">
+ <p class="SUBTITULO">Tarjeta</p>
+ </td>
+ <td>
+ <p class="PARRAFO">Dato modificable, reseña el número de la
+ tarjeta asociado inicialmente a la transacción, el cual puede ser erróneo o
+ no pertenecer al sistema.</p>
+ </td>
+</tr>
+<tr>
+ <td class="titletable">
+ <p class="SUBTITULO">Tipo captura</p>
+ </td>
+ <td>
+ <p class="PARRAFO">Señala el nombre asociado al código definido
+ por la franquicia que identifica la manera como ingresá, por medio de su red,
+ la transacción al sistema.</p>
+ </td>
+</tr>
+<tr>
+ <td class="titletable">
+ <p class="SUBTITULO">Fecha contabilización</p>
+ </td>
+ <td>
+ <p class="PARRAFO">Contiene la fecha en formato DD-MM-YYYY en que se afectá contablemente los saldos del
+ tarjetahabiente, usualmente es la misma fecha de proceso o canje.</p>
+ </td>
+</tr>
+<tr>
+ <td class="titletable">
+ <p class="SUBTITULO">Tipo negocio</p>
+ </td>
+ <td>
+ <p class="PARRAFO">Despliega el nombre del principal servicio
+ ofrecido por el establecimiento de comercio.</p>
+ </td>
+</tr>
+<tr>
+ <td class="titletable">
+ <p class="SUBTITULO">Marca</p>
+ </td>
+ <td>
+ <p class="PARRAFO">Dato modificable, indica el nombre de la
+ franquicia a la que pertenece el plástico mediante el que se realizá la
+ transacción, posee lista de valores que despliega ínicamente las marcas o
+ franquicias habilitadas para la entidad, poblada en la opción de <i><a
+ href="..\..\NU\Help\NUH_033E.html">Franquicias</a></i> del grupo de Tablas
+ reservadas del Núcleo.</p>
+ </td>
+</tr>
+<tr>
+ <td class="titletable">
+ <p class="SUBTITULO">Fecha consignación</p>
+ </td>
+ <td>
+ <p class="PARRAFO">Dato modificable, contiene la fecha en
+ formato DD-MM-YYYY en la que el establecimiento realizá la
+ consignación de los comprobantes o ingresá el depósito electrónico con la
+ transacción de consumo o utilización.</p>
+ </td>
+</tr>
+<tr>
+ <td class="titletable">
+ <p class="SUBTITULO">Estado comprobante</p>
+ </td>
+ <td>
+ <p class="PARRAFO">Informa si el comprobante ha sido
+ solucionado con anterioridad y en cuál fue dicha solución.</p>
+ </td>
+</tr>
+<tr>
+ <td class="titletable">
+ <p class="SUBTITULO">Nombre</p>
+ </td>
+ <td>
+ <p class="PARRAFO">Dato modificable, contiene el nombre
+ comercial del establecimiento en que se realizá la transacción.</p>
+ </td>
+</tr>
+<tr>
+ <td class="titletable">
+ <p class="SUBTITULO">Cuenta</p>
+ </td>
+ <td>
+ <p class="PARRAFO">Dato modificable, despliega el número de la
+ cuenta de depósitos perteneciente al establecimiento de comercio.</p>
+ </td>
+</tr>
+<tr>
+ <td class="SUBTITULO">
+ <p class="SUBTITULO">Tipo</p>
+ </td>
+ <td>
+ <p class="PARRAFO">Identifica la clase (corriente o ahorros)
+ a la cual pertenece el número de cuenta del establecimiento.</p>
+ </td>
+</tr>
+<tr>
+ <td class="titletable">
+ <p class="SUBTITULO">Autorización</p>
+ </td>
+ <td>
+ <p class="PARRAFO">Dato modificable, muestra el número de la
+ autorización asignado a la transacción por el procesador o la entidad.</p>
+ </td>
+</tr>
+<tr>
+ <td class="titletable">
+ <p class="SUBTITULO">Origen inmediato</p>
+ </td>
+ <td>
+ <p class="PARRAFO">Aplica para las transacciones que al
+ ingresar al sistema no pasaron directamente al movimiento diario, si no que han
+ transitado por otras etapas o destinos del movimiento, y permite identificar
+ la procedencia de las mismas.</p>
+ </td>
+</tr>
+<tr>
+ <td class="titletable">
+ <p class="SUBTITULO">Bin receptor</p>
+ </td>
+ <td>
+ <p class="PARRAFO">Contiene el prefijo o bin centro de
+ proceso de la entidad a través de la que ingresa la transacción.</p>
+ </td>
+</tr>
+<tr>
+ <td class="titletable">
+ <p class="SUBTITULO">Bin destino</p>
+ </td>
+ <td>
+ <p class="PARRAFO">Señala el prefijo o bin centro de proceso
+ de la entidad emisora del plástico.</p>
+ </td>
+</tr>
+<tr>
+ <td class="titletable">
+ <p class="SUBTITULO">Código uso</p>
+ </td>
+ <td>
+ <p class="PARRAFO">Valor o identificador utilizado en los
+ registros del movimiento de canje internacional.</p>
+ </td>
+</tr>
+<tr>
+ <td class="titletable">
+ <p class="SUBTITULO">Bin fuente</p>
+ </td>
+ <td>
+ <p class="PARRAFO">Contiene el mismo prefijo o bin receptor.</p>
+ </td>
+</tr>
+<tr>
+ <td class="titletable">
+ <p class="SUBTITULO">Código razón</p>
+ </td>
+ <td>
+ <p class="PARRAFO">Valor o identificador utilizado en los
+ registros del movimiento de canje internacional.</p>
+ </td>
+</tr>
+</table>
+
+ <p class="TITLE">Opciones en Modo Consulta</p>
+
+<table>
+<tr>
+ <td class="titletable">
+ <p class="SUBTITULO"><a href="..\..\NU\Help\NUH_INTE.html#Acciones"></a>Acciones</p>
+ </td>
+ <td>
+ <p class="PARRAFO">Imprimir, Configurar Impresión, Salir</p>
+ </td>
+ <td>
+ <p class="PARRAFO"><a
+ href="..\..\NU\Help\NUH_INTE.html#BotAccion"><img 
+ src="..\..\NU\Help\Images\BotImprimir.gif"></span></a><a
+ href="..\..\NU\Help\NUH_INTE.html#BotAccion"><img 
+ src="..\..\NU\Help\Images\BotConfigurar.gif"></span></a><a
+ href="..\..\NU\Help\NUH_INTE.html#BotAccion"><img 
+ src="..\..\NU\Help\Images\BotSalir.gif"></span></a></p>
+ </td>
+</tr>
+<tr>
+ <td class="titletable">
+ <p class="SUBTITULO"><a href="..\..\NU\Help\NUH_INTE.html#Modulos"></a>Módulos</p>
+ </td>
+ <td>
+ <p class="PARRAFO">Según atribuciones del perfil</p>
+ </td>
+ <td>
+ <p class="PARRAFO">&nbsp;</p>
+ </td>
+</tr>
+<tr>
+ <td class="titletable">
+ <p class="SUBTITULO"><a href="..\..\NU\Help\NUH_INTE.html#Consulta"></a>Consulta</p>
+ </td>
+ <td>
+ <p class="PARRAFO">Ingresar, Ejecutar, Cancelar</p>
+ </td>
+ <td>
+ <p class="PARRAFO"><a
+ href="..\..\NU\Help\NUH_INTE.html#BotConsulta"><img 
+ src="..\..\NU\Help\Images\BotEntQuery.gif"></span></a><a
+ href="..\..\NU\Help\NUH_INTE.html#BotConsulta"><img 
+ src="..\..\NU\Help\Images\BotEjeQuery.gif"></span></a><a
+ href="..\..\NU\Help\NUH_INTE.html#BotConsulta"><img 
+ src="..\..\NU\Help\Images\BotCanQuery.gif"></span></a></p>
+ </td>
+</tr>
+<tr>
+ <td class="titletable">
+ <p class="SUBTITULO"><a href="..\..\NU\Help\NUH_INTE.html#Navegacion"></a>Navegación</p>
+ </td>
+ <td>
+ <p class="PARRAFO">Registro Anterior, Registro Siguiente</p>
+ </td>
+ <td>
+ <p class="PARRAFO"><a
+ href="..\..\NU\Help\NUH_INTE.html#BotNavegacion"><img 
+ src="..\..\NU\Help\Images\BotRegAnterior.gif"></span></a><a
+ href="..\..\NU\Help\NUH_INTE.html#BotNavegacion"><img 
+ src="..\..\NU\Help\Images\BotRegSiguiente.gif"></span></a></p>
+ </td>
+</tr>
+<tr>
+ <td class="titletable">
+ <p class="SUBTITULO"><a href="..\..\NU\Help\NUH_INTE.html#Utilidades"></a>Utilidades</p>
+ </td>
+ <td>
+ <p class="PARRAFO">Cambio de clave, Cambio de idioma y otras
+ según atribuciones del perfil</p>
+ </td>
+ <td>
+ <p class="PARRAFO">&nbsp;</p>
+ </td>
+</tr>
+<tr>
+ <td class="titletable">
+ <p class="SUBTITULO"><a href="..\..\NU\Help\NUH_INTE.html#Ayuda"></a>Ayuda</p>
+ </td>
+ <td>
+ <p class="PARRAFO">Lista de Valores, Auditoria, Muestra Teclas,
+ Manual del Usuario, Acerca de Open Card</p>
+ </td>
+ <td>
+ <p class="PARRAFO"><a
+ href="..\..\NU\Help\NUH_INTE.html#BotLista"><img 
+ src="..\..\NU\Help\Images\BotListaValores.gif"></span></a><a
+ href="..\..\NU\Help\NUH_INTE.html#BotAuditoria"><img 
+ src="..\..\NU\Help\Images\BotAuditoria.gif"></span></a><a
+ href="..\..\NU\Help\NUH_INTE.html#BotAyuda"><img 
+ src="..\..\NU\Help\Images\BotAyuda.gif"></span></a><a
+ href="..\..\NU\Help\NUH_INTE.html#BotAcercade"><img 
+ src="..\..\NU\Help\Images\BotAcercade.gif"></span></a></p>
+ </td>
+</tr>
+<tr>
+ <td class="titletable">
+ <p class="SUBTITULO"><a href="..\..\NU\Help\NUH_INTE.html#Window"></a>Window</p>
+ </td>
+ <td>
+ <p class="PARRAFO">Cascade, Tile, Arrange, Icons, Ventanas
+ Abiertas</span></p>
+ </td>
+ <td>
+ <p class="PARRAFO">&nbsp;</p>
+ </td>
+</tr>
+</table>
+
+ <p class="TITLE">Opciones en Modo Total</p>
+
+<table>
+<tr>
+ <td class="titletable">
+ <p class="SUBTITULO"><a href="..\..\NU\Help\NUH_INTE.html#Acciones"></a>Acciones</p>
+ </td>
+ <td>
+ <p class="PARRAFO">Grabar, Imprimir, Configurar Impresión,
+ Salir</p>
+ </td>
+ <td>
+ <p><a
+ href="..\..\NU\Help\NUH_INTE.html#BotAccion"><img 
+ src="..\..\NU\Help\Images\BotGrabar.gif"></span></a><a
+ href="..\..\NU\Help\NUH_INTE.html#BotAccion"><img 
+ src="..\..\NU\Help\Images\BotImprimir.gif"></span></a><a
+ href="..\..\NU\Help\NUH_INTE.html#BotAccion"><img 
+ src="..\..\NU\Help\Images\BotConfigurar.gif"></span></a><a
+ href="..\..\NU\Help\NUH_INTE.html#BotAccion"><img 
+ src="..\..\NU\Help\Images\BotSalir.gif"></span></a></p>
+ </td>
+</tr>
+<tr>
+ <td class="titletable">
+ <p class="SUBTITULO"><a href="..\..\NU\Help\NUH_INTE.html#Modulos"></a>Módulos</p>
+ </td>
+ <td>
+ <p class="PARRAFO">Según atribuciones del perfil</p>
+ </td>
+ <td >
+ <p>&nbsp;</p>
+ </td>
+</tr>
+<tr>
+ <td class="titletable">
+ <p class="SUBTITULO"><a href="..\..\NU\Help\NUH_INTE.html#Editar"></a>Editar</p>
+ </td>
+ <td>
+ <p class="PARRAFO">Cortar, Copiar, Pegar</p>
+ </td>
+ <td >
+ <p><a
+ href="..\..\NU\Help\NUH_INTE.html#BotEditar"><img 
+ src="..\..\NU\Help\Images\BotCortar.gif"></span></a><a
+ href="..\..\NU\Help\NUH_INTE.html#BotEditar"><img 
+ src="..\..\NU\Help\Images\BotCopiar.gif"></span></a><a
+ href="..\..\NU\Help\NUH_INTE.html#BotEditar"><img 
+ src="..\..\NU\Help\Images\BotPegar.gif"></span></a></p>
+ </td>
+</tr>
+<tr>
+ <td class="titletable">
+ <p class="SUBTITULO"><a href="..\..\NU\Help\NUH_INTE.html#Consulta"></a>Consulta</p>
+ </td>
+ <td>
+ <p class="PARRAFO">Ingresar, Ejecutar, Cancelar</p>
+ </td>
+ <td >
+ <p><a
+ href="..\..\NU\Help\NUH_INTE.html#BotConsulta"><img 
+ src="..\..\NU\Help\Images\BotEntQuery.gif"></span></a><a
+ href="..\..\NU\Help\NUH_INTE.html#BotConsulta"><img 
+ src="..\..\NU\Help\Images\BotEjeQuery.gif"></span></a><a
+ href="..\..\NU\Help\NUH_INTE.html#BotConsulta"><img 
+ src="..\..\NU\Help\Images\BotCanQuery.gif"></span></a></p>
+ </td>
+</tr>
+<tr>
+ <td class="titletable">
+ <p class="SUBTITULO"><a href="..\..\NU\Help\NUH_INTE.html#Navegacion"></a>Navegación</p>
+ </td>
+ <td>
+ <p class="PARRAFO">Registro Anterior, Registro Siguiente</p>
+ </td>
+ <td>
+ <p><a
+ href="..\..\NU\Help\NUH_INTE.html#BotNavegacion"><img 
+ src="..\..\NU\Help\Images\BotRegAnterior.gif"></span></a><a
+ href="..\..\NU\Help\NUH_INTE.html#BotNavegacion"><img 
+ src="..\..\NU\Help\Images\BotRegSiguiente.gif"></span></a></p>
+ </td>
+</tr>
+<tr>
+ <td class="titletable">
+ <p class="SUBTITULO"><a href="..\..\NU\Help\NUH_INTE.html#Utilidades"></a>Utilidades</p>
+ </td>
+ <td>
+ <p class="PARRAFO">Cambio de clave, Cambio de idioma y otras
+ según atribuciones del perfil</p>
+ </td>
+ <td>
+ <p>&nbsp;</p>
+ </td>
+</tr>
+<tr>
+ <td class="titletable">
+ <p class="SUBTITULO"><a href="..\..\NU\Help\NUH_INTE.html#Registro"></a>Registro</p>
+ </td>
+ <td>
+ <p class="PARRAFO">Crear, Borrar, Limpiar</span></p>
+ </td>
+ <td >
+ <p><a
+ href="..\..\NU\Help\NUH_INTE.html#BotRegistro"><img 
+ src="..\..\NU\Help\Images\BotCreaReg.gif"></span></a><a
+ href="..\..\NU\Help\NUH_INTE.html#BotRegistro"><img 
+ src="..\..\NU\Help\Images\BotBorraReg.gif"></span></a><a
+ href="..\..\NU\Help\NUH_INTE.html#BotRegistro"><img 
+ src="..\..\NU\Help\Images\BotLimpiaReg.gif"></span></a></p>
+ </td>
+</tr>
+<tr>
+ <td class="titletable">
+ <p class="SUBTITULO"><a href="..\..\NU\Help\NUH_INTE.html#Ayuda"></a> Ayuda</p>
+ </td>
+ <td>
+ <p class="PARRAFO">Limpiar Pantalla, Lista de Valores,
+ Auditoria, Muestra Teclas, Manual del Usuario, Acerca de Open Card</p>
+ </td>
+ <td >
+ <p><a
+ href="..\..\NU\Help\NUH_INTE.html#BotLimpiar"><img 
+ src="..\..\NU\Help\Images\BotLimpiaPant.gif"></span></a><a
+ href="..\..\NU\Help\NUH_INTE.html#BotLista"><img 
+ src="..\..\NU\Help\Images\BotListaValores.gif"></span></a><a
+ href="..\..\NU\Help\NUH_INTE.html#BotAuditoria"><img 
+ src="..\..\NU\Help\Images\BotAuditoria.gif"></span></a><a
+ href="..\..\NU\Help\NUH_INTE.html#BotAyuda"><img 
+ src="..\..\NU\Help\Images\BotAyuda.gif"></span></a><a
+ href="..\..\NU\Help\NUH_INTE.html#BotAcercade"><img 
+ src="..\..\NU\Help\Images\BotAcercade.gif"></span></a></p>
+ </td>
+</tr>
+<tr>
+ <td class="titletable">
+ <p class="SUBTITULO"><a href="..\..\NU\Help\NUH_INTE.html#Window"></a> Window</p>
+ </td>
+ <td>
+ <p>Cascade, Tile, Arrange, Icons, Ventanas
+ Abiertas</p>
+ </td>
+ <td >
+ <p>&nbsp;</p>
+ </td>
+</tr>
+</table>
+ 
+ <p class="TITLE">Opciones Especiales</p>
+ 
+<table>
+<tr>
+ <td class="titletable">
+ <p class="TITLE"><img src="Images\BotApliMvto.gif"></p>
+ </td>
+ <td>
+ <p class="PARRAFO"><i>Aplicar movimiento</i>, una vez modificada y/o adicionada la información
+ requerida es posible enviar la transacción para ser validada y posteriormente
+ aplicada al cliente.</p>
+ </td>
+</tr>
+<tr>
+ <td class="titletable">
+ <p class="TITLE"><img src="Images\BotEnvFra.gif"></p>
+ </td>
+ <td>
+ <p class="PARRAFO">Enviar a <i><a href="INH_022E.html">fraudes</a></i>,
+ mediante esta opción es factible trasladar transacciones del movimiento
+ pendiente a fraudes si previamente la tarjeta ha sido registrada a través de
+ la opción de <i><a href="..\..\SC\Help\SCH_030E.html">Extravíos</a></i> del
+ módulo de Servicio al cliente.</p>
+ </td>
+</tr>
+<tr>
+ <td class="titletable">
+ <p class="TITLE"><img src="Images\BotEnvCont.gif"></p>
+ </td>
+ <td>
+ <p class="PARRAFO">Enviar a <i><a href="INH_027E.html">contracargos</a></i>,
+ aplica para las transacciones que se encuentran en disputa o deban iniciar
+ dicho proceso por inconsistencias o no cumplimiento tanto de las reglas como
+ los procedimientos que rigen el canje interentidades.</p>
+ </td>
+</tr>
+<tr>
+ <td class="titletable">
+ <p class="TITLE"><img src="Images\BotEnvCast.gif"></p>
+ </td>
+ <td>
+ <p class="PARRAFO">Enviar a <i><a
+ href="..\..\CA\Help\CAH_008E.html">castigo</a></i>, último recurso del que
+ dispone la entidad para &quot;solucionar&quot; una transacción que ha agotado
+ todas las alternativas, esto es que no fue posible cargar al cliente por no
+ haberla efectuado, no haberla reconocido o pagado la compañía de seguros, no
+ haber logrado el pago ni mediante el proceso de contracargo ni comprobantes
+ al cobro o de buena fe, en síntesis la entidad debe asumir esa pérdida.</p>
+ </td>
+</tr>
+<tr>
+ <td class="titletable">
+ <p class="TITLE"><img src="Images\BotDevMvto.gif"></p>
+ </td>
+ <td>
+ <p><i>Devolver movimiento</i>, aplica cuando la entidad desempeña el rol de
+ emisor y la causal de devolución o rechazo de la transacción lo amerita.</p>
+ </td>
+</tr>
+<tr>
+ <td class="titletable">
+ <p class="TITLE"><img src="Images\BotRecCheq.gif"></p>
+ </td>
+ <td>
+ <p class="PARRAFO"><i>Reconsignar cheque</i>, aplica en caso que de acuerdo con los parámetros
+ de <i><a href="INH_014E.html">Causales de rechazo</a></i> (Pago en cheque)
+ del módulo de Intercambio como Libera cheques a facturación de <i><a
+ href="..\..\NU\Help\NUH_055E.html">Parámetros operativos</a></i>, no envíen a
+ movimiento pendiente o interrumpan el tiempo en días hábiles del canje, y
+ permiten reiniciar o reasignar el plazo de canje definido para cada sucursal
+ receptora en <i><a href="..\..\NU\Help\NUH_020E.html">Estructura orgánica</a></i>,
+ labor que debe realizarse durante el plazo de canje del cheque puesto que el
+ sistema una vez cumplido el plazo, si no ha recibido alguna novedad, libera
+ el pago y lo aplica.</p>
+ </td>
+</tr>
+<tr>
+ <td class="titletable">
+ <p class="TITLE"><img src="Images\BotDevChe.gif"></p>
+ </td>
+ <td>
+ <p class="PARRAFO"><i>Devolver el pago en cheque</i>, se utiliza cuando éste resulta impagado, esto
+ implica realizar la labor de devolver el pago, durante el plazo de canje del
+ cheque, puesto que el sistema una vez cumplido el plazo, si no ha recibido
+ alguna novedad, libera el pago y lo aplica. Se despliega una forma adicional
+ en la que debe señalarse la causal dada por la entidad financiera para
+ devolver el cheque.</p>
+ </td>
+</tr>
+<tr>
+ <td class="titletable">
+ <p class="TITLE"><img src="Images\BotInterc.gif"></p>
+ </td>
+ <td>
+ <p class="PARRAFO"><i>Llevar a intercambio</i>, una vez solucionado y/o modificado el registro de
+ transacción sea propia o no propia, original o no original, que se encuentra
+ en disputa y que debe ser remitido a través del canje enviado, se utiliza
+ esta opción.</p>
+ </td>
+</tr>
+<tr>
+ <td class="titletable">
+ <p class="SUBTITULO"><img src="INH_008E_image004.png"></p>
+ </td>
+ <td>
+ <p class="PARRAFO"><i>Retirar movimiento</i>, esta opción tiene un efecto contable, pues retira
+ el movimiento de las cuentas contables que afectá.</p>
+ </td>
+</tr>
+<tr>
+ <td class="titletable">
+ <p class="SUBTITULO"><img src="INH_008E_image006.png"></p>
+ </td>
+ <td>
+ <p class="PARRAFO"><i>Consulta Retirados, Devueltos y
+ Castigados</i>, este botón invoca una
+ pantalla con los mismos datos desplegados aquí, pero que únicamente muestra
+ la información relativa al movimiento que ha sido retirado, devuelto o
+ castigado.</p>
+ </td>
+</tr>
+<tr>
+ <td class="titletable">
+ <p class="SUBTITULO"><img src="INH_008E_image007.gif"></p>
+ </td>
+ <td>
+ <p class="PARRAFO"><i>Detalle trx</i>, si el análisis realizado para la solución del
+ movimiento requiere de información puede invocarse la forma o pantalla de 
+ <i><a href="INH_017E.html">Consulta pendiente</a></i>.</p>
+ </td>
+</tr>
+<tr>
+ <td class="titletable">
+ <p class="SUBTITULO"><img src="INH_008E_image009.gif"></p>
+ </td>
+ <td>
+ <p class="PARRAFO"><i>Causales de rechazo,</i> botón especial que invoca una pantalla auxiliar en
+ la que es posible visualizar, simultáneamente, todas las causales de rechazo
+ que afectan a una misma transacción, facilitando, de ser factible, y de igual
+ forma, su solución para poder así aplicarse en firme.</p>
+ </td>
+</tr>
+</table>
+ <p class="TITLE"><img src="INH_008E_image011.jpg"></p>
+
+
+      </div>
+      </section>
+      <script src="../js/menu.js"></script>
+      <div id="footerContainer"></div>
+    </body>
+    <script>
+  fetch('footer.html')
+    .then(response => response.text())
+    .then(html => {
+      document.getElementById('footerContainer').innerHTML = html;
+    });
+</script>
+  </html>

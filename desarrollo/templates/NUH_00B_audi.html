@@ -1,15 +1,15 @@
 <!DOCTYPE html>
 <html lang="es">
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>BANKBU®</title>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>BANKBU®</title>
 
-    <link rel="stylesheet" href="../css/pages.css">
-    <link rel="stylesheet" href="../css/style.css">
-    <link rel="icon" href="../img/ACQUIRER-logo.JPG" type="image/x-icon">
-    <style>
+        <link rel="stylesheet" href="../css/pages.css">
+        <link rel="stylesheet" href="../css/style.css">
+        <link rel="icon" href="../img/ACQUIRER-logo.JPG" type="image/x-icon">
+        <style>
         footer {
             position: fixed;
         }
@@ -21,49 +21,53 @@
             width: 100%;
         }
     </style>
-</head>
+    </head>
 
-<body>
+    <body>
 
-    <header>
-        <img class="logo" src="../img/logoBankbu_.PNG" alt="Logo de Mi Empresa">
-        <div id="menuBtn">
-            <img class="TITLE" src="../img/menu.PNG" alt="Botón de Menú ">
-        </div>
-    </header>
-      <div id="menuContainer"></div>
-  <script>
+        <header>
+            <img class="logo" src="../img/logoBankbu_.PNG"
+                alt="Logo de Mi Empresa">
+            <div id="menuBtn">
+                <img class="TITLE" src="../img/menu.PNG" alt="Botón de Menú ">
+            </div>
+        </header>
+        <div id="menuContainer"></div>
+        <script>
     fetch('menu.html')
       .then(response => response.text())
       .then(html => {
         document.getElementById('menuContainer').innerHTML = html;
       });
   </script>
-    <section>
-        <div>
-            <p class="TITLE">Auditoría:
-            </p>
+        <section>
+            <div>
+                <p class="TITLE">Auditoría:
+                </p>
 
+                <p>Servicio que le permite a la entidad hacer seguimiento y
+                    monitoreo de las acciones que los usuarios
+                    ejecutan en la base de datos para adicionar, actualizar o
+                    eliminar información. La entidad determina las
+                    tablas y campos sobre los cuales desea aplicar auditoria y
+                    las fechas y horas en las cuales el sistema
+                    debe ejecutar el monitoreo.
+                </p>
+                <a href="AUH_001E.html">
+                    <h3>Configuraciones</h3>
+                </a>
+                <a href="AUH_002E.html">
+                    <h3>Consultas</h3>
+                </a>
 
-            <p>Servicio que le permite a la entidad hacer seguimiento y monitoreo de las acciones que los usuarios
-                ejecutan en la base de datos para adicionar, actualizar o eliminar información. La entidad determina las
-                tablas y campos sobre los cuales desea aplicar auditoria y las fechas y horas en las cuales el sistema
-                debe ejecutar el monitoreo.
-            </p>
-            <a href="AUH_001E.html">
-                <h3>Configuraciones</h3>
-            </a>
-            <a href="AUH_002E.html">
-                <h3>Consultas</h3>
-            </a>
-
-        </div>
-        <img class="ImagenBankbu" src="../img/bankbu-removebg-preview.PNG" alt="Imagen de la empresa">
-    </section>
-    <script src="../js/menu.js"></script>
-</body>
-<div id="footerContainer"></div>
-<script>
+            </div>
+            <img class="ImagenBankbu" src="../img/bankbu-removebg-preview.PNG"
+                alt="Imagen de la empresa">
+        </section>
+        <script src="../js/menu.js"></script>
+    </body>
+    <div id="footerContainer"></div>
+    <script>
   fetch('footer.html')
     .then(response => response.text())
     .then(html => {

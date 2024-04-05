@@ -1,24 +1,24 @@
 <!DOCTYPE html>
 <html lang="es">
 
-<head>
+  <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>BANKBU®</title>
     <link rel="stylesheet" href="../css/pages.css">
     <link rel="stylesheet" href="../css/style.css">
- <link rel="icon" href="../img/ACQUIRER-logo.JPG" type="image/x-icon">
-</head>
+    <link rel="icon" href="../img/ACQUIRER-logo.JPG" type="image/x-icon">
+  </head>
 
-<body>
+  <body>
     <header>
-        <img class="logo" src="../img/logoBankbu_.PNG" alt="Logo de Mi Empresa">
-        <div id="menuBtn">
-            <img class="TITLE"  src= "../img/menu.PNG" alt="Botón de Menú ">
-        </div>
+      <img class="logo" src="../img/logoBankbu_.PNG" alt="Logo de Mi Empresa">
+      <div id="menuBtn">
+        <img class="TITLE" src="../img/menu.PNG" alt="Botón de Menú ">
+      </div>
     </header>
-      <div id="menuContainer"></div>
-  <script>
+    <div id="menuContainer"></div>
+    <script>
     fetch('menu.html')
       .then(response => response.text())
       .then(html => {
@@ -27,125 +27,154 @@
   </script>
 
     <section>
-        <div> 
-            
-                    <p  class="TITLE">Tipos de tasas e indicadores</p>
-                  
-            <p class="PARRAFO" >Mediante esta funci&oacute;n se habilita 
-              la consulta y mantenimiento de la tabla en la cual se almacena la codificaci&oacute;n 
-              de los diferentes items o variables locales, conocidos como tipos de tasas 
-              e indicadores econ&oacute;micos. Existen unos cuyo monto es un valor absoluto, 
-              usualmente variable, y otros cuyo valor es el resultado del c&aacute;lculo 
-              de una f&oacute;rmula.
-              </span></p>
-            <p class="TITLE"><img src="../img/NUF_036E.PNG"760" height="472"></p>
-            
-            <p  class="PARRAFO">El formulario contiene las opciones Actualizar, 
-              Eliminar y Adicionar. </p>
-            <p  class="PARRAFO"><span class="SUBTITULO"><span            '>Adicionar</span><span 
-        >:</span><span 
-        ></span></span><span 
-        > 
-              Si el usuario invoca la opci&oacute;n Adicionar se despliega un nuevo formulario. 
-              </span></p>
-            <p class="TITLE"><img src="../img/NUF_036E1.PNG"373" ></p>
-            <p  class="TITLE">Descripci&oacute;n de campos</p>
-            <table>
-              <tr> 
-                <td class="titletable"><p class="SUBTITULO"><span 
-        >C&oacute;digo</span></p></td>
-                <td><p  class="PARRAFO">Campo 
-                    num&eacute;rico de cuatro d&iacute;gitos, obligatorio, que corresponde 
-                    al c&oacute;digo asignado a cada uno de los tipos de tasas e indicadores 
-                    econ&oacute;micos definidos por la entidad.</p></td>
-              </tr>
-              <tr> 
-                <td  class="titletable" ><p class="SUBTITULO"><span 
-        >Descripci&oacute;n</span></p></td>
-                <td><p  class="PARRAFO">En 
-                    este campo alfanum&eacute;rico de 40 posiciones, obligatorio, se registra 
-                    el nombre asociado al c&oacute;digo anterior.
-                  </p></td>
-              </tr>
-           
-              <tr> 
-                <td  class="titletable" ><p class="SUBTITULO"><span 
-        >Tipo 
-                    tasa</span></p></td>
-                <td><p  class="PARRAFO">Campo 
-                    tipo combo en el cual se selecciona entre Base (un valor absoluto) 
-                    o F&oacute;rmula (un c&aacute;lculo a partir de otras variables) 
-                    la manera en la cual est&aacute; definido el indicador.
-                  </p></td>
-              </tr>
-           
-              <tr> 
-                <td  class="titletable" ><p class="SUBTITULO"><span 
-        >F&oacute;rmula</span></p></td>
-                <td><p  class="PARRAFO">Cuando 
-                    en el campo anterior se ha seleccionado la opci&oacute;n f&oacute;rmula, 
-                    este campo se habilita y se vuelve obligatorio, Aqu&iacute; se definen 
-                    las variables, operadores matem&aacute;ticos y/o valores que componen 
-                    la f&oacute;rmula mediante la cual se va a calcular el indicador. Una 
-                    variable corresponde a cualesquiera de los restantes c&oacute;digos 
-                    de esta misma tabla antecedido por la letra T, por ejemplo (T3*T8)/360, 
-                    equivale al indicador identificado con el c&oacute;digo 3 multiplicado 
-                    por el indicador identificado con el c&oacute;digo 8 y ese resultado 
-                    dividido por el n&uacute;mero 360; se debe tener en cuenta que el resultado 
-                    de dicha f&oacute;rmula se reflejar&aacute; en el formulario de <a href="NUH_043B.html" >Indicadores 
-                    econ&oacute;micos</a>. Si la f&oacute;rmula a definir requiere 
-                    el uso de funciones num&eacute;ricas diferentes a las <a href="ANEXFORM.html" >operaciones 
-                    aritm&eacute;ticas b&aacute;sicas</a>, consulte el documento anexo.
-                  </p></td>
-              </tr>
-           
-              <tr> 
-                <td  class="titletable" ><p class="SUBTITULO"><span 
-        >Frecuencia 
-                    actualizaci&oacute;n </span></p></td>
-                <td><p  class="PARRAFO">Campo 
-                    obligatorio tipo combo en el cual se selecciona la periodicidad con 
-                    la que debe ser actualizado el valor del indicador econ&oacute;mico, 
-                    condici&oacute;n que aplica &uacute;nicamente para los indicadores cuyo 
-                    valor corresponde a un valor base o absoluto. Cuando se ha definido 
-                    que el tipo tasa sea F&oacute;rmula, el campo se inhabilita 
-                    y toma por defecto el valor No Aplica.</p></td>
-              </tr>
-           
-              <tr> 
-                <td  class="titletable" ><p class="SUBTITULO"><span 
-        >Aplicaci&oacute;n</span></p></td>
-                <td><p  class="PARRAFO">Dado 
-                    que varios procesos tanto en l&iacute;nea como en batch requieren la 
-                    definici&oacute;n previa de tasas e indicadores econ&oacute;micos, el 
-                    primer proceso que debe <a href="OPH_002B.html" >ejecutarse</a> 
-                    en el d&iacute;a es la verificaci&oacute;n de la existencia de esos 
-                    valores. Para poder realizar esa verificaci&oacute;n, el procedimiento 
-                    eval&uacute;a el valor seleccionado en este campo, a partir de las opciones 
-                    contenidas en el combo y que puede ser Diario, Mensual o Anual.
-                  </p></td>
-              </tr>
-            </table>
-            <div>
-              <p class="PARRAFO"><span class="SUBTITULO"> 
-                Actualizar</span>: Si el usuario selecciona un regitro e invoca la opci&oacute;n 
-                Actualizar se despliega un formulario en el cual los campos modificables 
-                son Descripci&oacute;n, Tipo tasa, F&oacute;rmula (si el tipo tasa es f&oacute;rmula), 
-                Frecuencia actualizaci&oacute;n (si el tipo tasa es base) y Aplicaci&oacute;n.
-              </p>
-             <p class="TITLE"><img src="../img/NUF_036E3.PNG"373" ></p>
-              .
+      <div>
+
+        <p class="TITLE">Tipos de tasas e indicadores</p>
+
+        <p class="PARRAFO">Mediante esta funci&oacute;n se habilita
+          la consulta y mantenimiento de la tabla en la cual se almacena la
+          codificaci&oacute;n
+          de los diferentes items o variables locales, conocidos como tipos de
+          tasas
+          e indicadores econ&oacute;micos. Existen unos cuyo monto es un valor
+          absoluto,
+          usualmente variable, y otros cuyo valor es el resultado del
+          c&aacute;lculo
+          de una f&oacute;rmula.
+        </p>
+      <p class="TITLE"><img src="../img/NUF_036E.PNG"></p>
+
+      <p class="PARRAFO">El formulario contiene las opciones Actualizar,
+        Eliminar y Adicionar. </p>
+      <p class="PARRAFO"><span class="SUBTITULO"><span
+            '>Adicionar</span><span>:</span><span></span></span><span>
+          Si el usuario invoca la opci&oacute;n Adicionar se despliega un nuevo
+          formulario.
+        </p>
+      <p class="TITLE"><img src="../img/NUF_036E1.PNG"></p>
+      <p class="TITLE">Descripci&oacute;n de campos</p>
+      <table>
+        <tr>
+          <td class="titletable"><p
+              class="SUBTITULO"><span>C&oacute;digo</p></td>
+          <td><p class="PARRAFO">Campo
+              num&eacute;rico de cuatro d&iacute;gitos, obligatorio, que
+              corresponde
+              al c&oacute;digo asignado a cada uno de los tipos de tasas e
+              indicadores
+              econ&oacute;micos definidos por la entidad.</p></td>
+        </tr>
+        <tr>
+          <td class="titletable"><p
+              class="SUBTITULO"><span>Descripci&oacute;n</p></td>
+          <td><p class="PARRAFO">En
+              este campo alfanum&eacute;rico de 40 posiciones, obligatorio, se
+              registra
+              el nombre asociado al c&oacute;digo anterior.
+            </p></td>
+        </tr>
+
+        <tr>
+          <td class="titletable"><p class="SUBTITULO"><span>Tipo
+                tasa</p></td>
+          <td><p class="PARRAFO">Campo
+              tipo combo en el cual se selecciona entre Base (un valor absoluto)
+              o F&oacute;rmula (un c&aacute;lculo a partir de otras variables)
+              la manera en la cual est&aacute; definido el indicador.
+            </p></td>
+        </tr>
+
+        <tr>
+          <td class="titletable"><p
+              class="SUBTITULO"><span>F&oacute;rmula</p></td>
+          <td><p class="PARRAFO">Cuando
+              en el campo anterior se ha seleccionado la opci&oacute;n
+              f&oacute;rmula,
+              este campo se habilita y se vuelve obligatorio, Aqu&iacute; se
+              definen
+              las variables, operadores matem&aacute;ticos y/o valores que
+              componen
+              la f&oacute;rmula mediante la cual se va a calcular el indicador.
+              Una
+              variable corresponde a cualesquiera de los restantes
+              c&oacute;digos
+              de esta misma tabla antecedido por la letra T, por ejemplo
+              (T3*T8)/360,
+              equivale al indicador identificado con el c&oacute;digo 3
+              multiplicado
+              por el indicador identificado con el c&oacute;digo 8 y ese
+              resultado
+              dividido por el n&uacute;mero 360; se debe tener en cuenta que el
+              resultado
+              de dicha f&oacute;rmula se reflejar&aacute; en el formulario de <a
+                href="NUH_043B.html">Indicadores
+                econ&oacute;micos</a>. Si la f&oacute;rmula a definir requiere
+              el uso de funciones num&eacute;ricas diferentes a las <a
+                href="ANEXFORM.html">operaciones
+                aritm&eacute;ticas b&aacute;sicas</a>, consulte el documento
+              anexo.
+            </p></td>
+        </tr>
+
+        <tr>
+          <td class="titletable"><p class="SUBTITULO"><span>Frecuencia
+                actualizaci&oacute;n </p></td>
+          <td><p class="PARRAFO">Campo
+              obligatorio tipo combo en el cual se selecciona la periodicidad
+              con
+              la que debe ser actualizado el valor del indicador
+              econ&oacute;mico,
+              condici&oacute;n que aplica &uacute;nicamente para los indicadores
+              cuyo
+              valor corresponde a un valor base o absoluto. Cuando se ha
+              definido
+              que el tipo tasa sea F&oacute;rmula, el campo se inhabilita
+              y toma por defecto el valor No Aplica.</p></td>
+        </tr>
+
+        <tr>
+          <td class="titletable"><p
+              class="SUBTITULO"><span>Aplicaci&oacute;n</p></td>
+          <td><p class="PARRAFO">Dado
+              que varios procesos tanto en l&iacute;nea como en batch requieren
+              la
+              definici&oacute;n previa de tasas e indicadores econ&oacute;micos,
+              el
+              primer proceso que debe <a href="OPH_002B.html">ejecutarse</a>
+              en el d&iacute;a es la verificaci&oacute;n de la existencia de
+              esos
+              valores. Para poder realizar esa verificaci&oacute;n, el
+              procedimiento
+              eval&uacute;a el valor seleccionado en este campo, a partir de las
+              opciones
+              contenidas en el combo y que puede ser Diario, Mensual o Anual.
+            </p></td>
+        </tr>
+      </table>
+      <div>
+        <p class="PARRAFO"><span class="SUBTITULO">
+            Actualizar</span>: Si el usuario selecciona un regitro e invoca la
+          opci&oacute;n
+          Actualizar se despliega un formulario en el cual los campos
+          modificables
+          son Descripci&oacute;n, Tipo tasa, F&oacute;rmula (si el tipo tasa es
+          f&oacute;rmula),
+          Frecuencia actualizaci&oacute;n (si el tipo tasa es base) y
+          Aplicaci&oacute;n.
+        </p>
+        <p class="TITLE"><img src="../img/NUF_036E3.PNG"></p>
+      </div>
     </section>
     <script src="../js/menu.js"></script>
 
     <div id="footerContainer"></div>
-<script>
+    <script>
   fetch('footer.html')
     .then(response => response.text())
     .then(html => {
       document.getElementById('footerContainer').innerHTML = html;
     });
 </script>
-</body>
+  </body>
 
 </html>

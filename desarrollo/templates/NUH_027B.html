@@ -1,25 +1,25 @@
 <!DOCTYPE html>
 <html lang="es">
 
-<head>
+  <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>BANKBU®</title>
     <link rel="stylesheet" href="../css/pages.css">
     <link rel="stylesheet" href="../css/style.css">
- <link rel="icon" href="../img/ACQUIRER-logo.JPG" type="image/x-icon">
-</head>
+    <link rel="icon" href="../img/ACQUIRER-logo.JPG" type="image/x-icon">
+  </head>
 
-<body>
+  <body>
 
     <header>
-        <img class="logo" src="../img/logoBankbu_.PNG" alt="Logo de Mi Empresa">
-        <div id="menuBtn">
-            <img class="TITLE"  src= "../img/menu.PNG" alt="Botón de Menú ">
-        </div>
+      <img class="logo" src="../img/logoBankbu_.PNG" alt="Logo de Mi Empresa">
+      <div id="menuBtn">
+        <img class="TITLE" src="../img/menu.PNG" alt="Botón de Menú ">
+      </div>
     </header>
-      <div id="menuContainer"></div>
-  <script>
+    <div id="menuContainer"></div>
+    <script>
     fetch('menu.html')
       .then(response => response.text())
       .then(html => {
@@ -28,125 +28,164 @@
   </script>
 
     <section>
-        <div> 
-            
-                    <p  class="TITLE">Origen de transacciones</p>
-                  
-            <p  class="PARRAFO">Esta funci&oacute;n habilita la consulta 
-              y/o mantenimiento, reservado a funcionarios de OpenCard SAS, de la tabla 
-              que almacena los c&oacute;digos de los diferentes or&iacute;genes o fuentes 
-              de las transacciones, determinando para cada uno de estos las transacciones 
-              correspondientes o propias de cada origen, y para cada una de ellas, entre 
-              otros par&aacute;metros, datos de plazo, multa y costo respectivo, as&iacute; 
-              como las validaciones a las cuales deben someterse. Adem&aacute;s, provee 
-              la opci&oacute;n de relacionar las causales de devoluci&oacute;n que usualmente 
-              se asocian a algunas transacciones que entran en proceso de intercambio y 
-              dado el caso de llegarse a la instancia de manejar las transacciones en proceso 
-              de Comprobantes de buena fe o contracargos se permite parametrizar por rol 
-              (adquirente o emisor) acorde al origen, el destino del movimiento.</p>
-            <p class="TITLE"><img src="../img/NUF_027E.PNG"749" height="504"></p>
+      <div>
 
-            <p  class="PARRAFO">El formulario cuenta con un filtro mediante 
-              el cual el usuario puede hacer consultas selectivas bien sea por el c&oacute;digo 
-              del origen o por el nombre del mismo.</p>
-            <p class="TITLE"><img src="../img/NUF_027E1.PNG"192" ></p>
+        <p class="TITLE">Origen de transacciones</p>
 
-            <p  class="PARRAFO">El formulario contiene las opciones Actualizar, 
-              Eliminar y Adicionar. </p>
-            <p  class="PARRAFO"><span class="SUBTITULO"><span            '>Adicionar</span><span 
-        >:</span><span 
-        ></span></span><span 
-        > 
-              Si el usuario invoca la opci&oacute;n Adicionar se despliega un nuevo formulario</span></p>
-            <p class="TITLE"><img src="../img/NUF_027E2.PNG"283" ></p>
-            
-            <p  class="TITLE">Descripci&oacute;n de campos</p>
-            <table>
-              <tr> 
-                <td class="titletable"><p class="SUBTITULO"><span 
-        >C&oacute;digo</span></p></td>
-                <td><p  class="PARRAFO">Campo 
-                    num&eacute;rico de 3 d&iacute;gitos, obligatorio, en el cual se registra 
-                    el c&oacute;digo asignado a cada uno de los or&iacute;genes de transacciones 
-                    definidos por la entidad, tanto externos (<a href="NUH_033B.html" >franquicias</a>, 
-                    <a href="NUH_054B.html" > compensadores</a>), 
-                    como locales, internacionales, internos, etc.</p></td>
-              </tr>
-           
-              <tr> 
-                <td class="titletable"><p class="SUBTITULO"><span 
-        >Nombre</span></p></td>
-                <td><p  class="PARRAFO">En 
-                    este campo alfanum&eacute;rico de 30 caracteres, obligatorio, se registra 
-                    la descripci&oacute;n o definici&oacute;n asociada a cada c&oacute;digo 
-                    de origen de transacciones.</p></td>
-              </tr>
-           
-              <tr> 
-                <td class="titletable"><p class="SUBTITULO"><span 
-        >Abreviatura</span></p></td>
-                <td><p  class="PARRAFO">Campo 
-                    alfanum&eacute;rico de 10 caracteres, obligatorio, en el que se ingresa 
-                    la abreviatura o nombre corto utilizado que identifica al origen y que 
-                    se utiliza para reportes impresos o consultas.</p></td>
-              </tr>
-           
-              <tr> 
-                <td class="titletable"><p class="SUBTITULO"><span 
-        >Compensador</span></p></td>
-                <td><p  class="PARRAFO">Este 
-                    campo tipo combo permite seleccionar el <a href="NUH_054B.html" >compensadores</a> 
-                    a trav&eacute;s del cual se va a procesar el movimiento que ingresa 
-                    por el origen.</p></td>
-              </tr>
-           
-              <tr> 
-                <td class="titletable"><p class="SUBTITULO"><span >Tapa</span></p></td>
-                <td><p  class="PARRAFO">Campo 
-                    obligatorio que contiene un combo donde se selecciona entre Si o No 
-                    el origen requiere que una vez se efect&uacute;e el cambio de calendario 
-                    se habilite para el siguiente d&iacute;a h&aacute;bil, lo que aplica 
-                    principalmente para aquellos or&iacute;genes basados en cargues o integraci&oacute;n 
-                    de movimiento.</p></td>
-              </tr>
-           
-              <tr> 
-                <td class="titletable"><p class="SUBTITULO"><span 
-        >Reservado</span></p></td>
-                <td><p  class="PARRAFO">En 
-                    este campo tipo combo se selecciona entre Si o No el c&oacute;digo y 
-                    origen han sido reservados para uso exclusivo de OpenCard, o corresponden 
-                    a Convenios. Para tal fin, existen unos rangos seleccionados previamente, 
-                    por lo cual si la entidad requiere definir uno o m&aacute;s or&iacute;genes 
-                    puede hacerlo utilizando un c&oacute;digo diferente al del rango reservado, 
-                    siempre y cuando se tenga presente que ello implica desarrollos adicionales 
-                    o en el mejor de los casos, adecuaci&oacute;n de los programas existentes.</p></td>
-              </tr>
-            </table>
-            <div>
-              <p class="PARRAFO"><span class="SUBTITULO"> 
-                Actualizar</span>: Si el usuario selecciona un registro e invoca la 
-                opci&oacute;n Actualizar se despliega un formulario en el cual los campos 
-                modificables son el Nombre, Abreviatura, Compensador, Tapa y Reservado.    </p>
-             <p class="TITLE"><img src="../img/NUF_027E3.PNG"283" ></p>
-              .
-              <p class="PARRAFO">El formulario Or&iacute;gen de transacciones contiene los 
-                hiperv&iacute;nculos <a href="NUH_027B1.html" >Transacciones 
-                </a><a href="NUH_066B.html#BL_SISTEMA" ></a>y <a href="NUH_027B2.html" >Par&aacute;metros 
-                de origen</a> que le permiten al usuario seleccionar el registro correspondiente 
-                a un origen en particular e invocar los formularios desde los cuales se 
-                puedeb parametrizar las transacciones originales v&aacute;lidas y algunos 
-                par&aacute;metros propios para el origen seleccionado.</p>
-             
-            </section>
-    <script src="../js/menu.js"></script>
-</body>
-<div id="footerContainer"></div>
-<script>
+        <p class="PARRAFO">Esta funci&oacute;n habilita la consulta
+          y/o mantenimiento, reservado a funcionarios de OpenCard SAS, de la
+          tabla
+          que almacena los c&oacute;digos de los diferentes or&iacute;genes o
+          fuentes
+          de las transacciones, determinando para cada uno de estos las
+          transacciones
+          correspondientes o propias de cada origen, y para cada una de ellas,
+          entre
+          otros par&aacute;metros, datos de plazo, multa y costo respectivo,
+          as&iacute;
+          como las validaciones a las cuales deben someterse. Adem&aacute;s,
+          provee
+          la opci&oacute;n de relacionar las causales de devoluci&oacute;n que
+          usualmente
+          se asocian a algunas transacciones que entran en proceso de
+          intercambio y
+          dado el caso de llegarse a la instancia de manejar las transacciones
+          en proceso
+          de Comprobantes de buena fe o contracargos se permite parametrizar por
+          rol
+          (adquirente o emisor) acorde al origen, el destino del movimiento.</p>
+        <p class="TITLE"><img src="../img/NUF_027E.PNG"></p>
+
+        <p class="PARRAFO">El formulario cuenta con un filtro mediante
+          el cual el usuario puede hacer consultas selectivas bien sea por el
+          c&oacute;digo
+          del origen o por el nombre del mismo.</p>
+        <p class="TITLE"><img src="../img/NUF_027E1.PNG"></p>
+
+        <p class="PARRAFO">El formulario contiene las opciones Actualizar,
+          Eliminar y Adicionar. </p>
+        <p class="PARRAFO"><span class="SUBTITULO"><span
+              '>Adicionar</span><span>:</span><span></span></span><span>
+            Si el usuario invoca la opci&oacute;n Adicionar se despliega un
+            nuevo formulario</p>
+        <p class="TITLE"><img src="../img/NUF_027E2.PNG"></p>
+
+        <p class="TITLE">Descripci&oacute;n de campos</p>
+        <table>
+          <tr>
+            <td class="titletable"><p
+                class="SUBTITULO"><span>C&oacute;digo</p></td>
+            <td><p class="PARRAFO">Campo
+                num&eacute;rico de 3 d&iacute;gitos, obligatorio, en el cual se
+                registra
+                el c&oacute;digo asignado a cada uno de los or&iacute;genes de
+                transacciones
+                definidos por la entidad, tanto externos (<a
+                  href="NUH_033B.html">franquicias</a>,
+                <a href="NUH_054B.html"> compensadores</a>),
+                como locales, internacionales, internos, etc.</p></td>
+          </tr>
+
+          <tr>
+            <td class="titletable"><p
+                class="SUBTITULO"><span>Nombre</p></td>
+            <td><p class="PARRAFO">En
+                este campo alfanum&eacute;rico de 30 caracteres, obligatorio, se
+                registra
+                la descripci&oacute;n o definici&oacute;n asociada a cada
+                c&oacute;digo
+                de origen de transacciones.</p></td>
+          </tr>
+
+          <tr>
+            <td class="titletable"><p
+                class="SUBTITULO"><span>Abreviatura</p></td>
+            <td><p class="PARRAFO">Campo
+                alfanum&eacute;rico de 10 caracteres, obligatorio, en el que se
+                ingresa
+                la abreviatura o nombre corto utilizado que identifica al origen
+                y que
+                se utiliza para reportes impresos o consultas.</p></td>
+          </tr>
+
+          <tr>
+            <td class="titletable"><p
+                class="SUBTITULO"><span>Compensador</p></td>
+            <td><p class="PARRAFO">Este
+                campo tipo combo permite seleccionar el <a
+                  href="NUH_054B.html">compensadores</a>
+                a trav&eacute;s del cual se va a procesar el movimiento que
+                ingresa
+                por el origen.</p></td>
+          </tr>
+
+          <tr>
+            <td class="titletable"><p
+                class="SUBTITULO"><span>Tapa</p></td>
+            <td><p class="PARRAFO">Campo
+                obligatorio que contiene un combo donde se selecciona entre Si o
+                No
+                el origen requiere que una vez se efect&uacute;e el cambio de
+                calendario
+                se habilite para el siguiente d&iacute;a h&aacute;bil, lo que
+                aplica
+                principalmente para aquellos or&iacute;genes basados en cargues
+                o integraci&oacute;n
+                de movimiento.</p></td>
+          </tr>
+
+          <tr>
+            <td class="titletable"><p
+                class="SUBTITULO"><span>Reservado</p></td>
+            <td><p class="PARRAFO">En
+                este campo tipo combo se selecciona entre Si o No el
+                c&oacute;digo y
+                origen han sido reservados para uso exclusivo de OpenCard, o
+                corresponden
+                a Convenios. Para tal fin, existen unos rangos seleccionados
+                previamente,
+                por lo cual si la entidad requiere definir uno o m&aacute;s
+                or&iacute;genes
+                puede hacerlo utilizando un c&oacute;digo diferente al del rango
+                reservado,
+                siempre y cuando se tenga presente que ello implica desarrollos
+                adicionales
+                o en el mejor de los casos, adecuaci&oacute;n de los programas
+                existentes.</p></td>
+          </tr>
+        </table>
+        <div>
+          <p class="PARRAFO"><span class="SUBTITULO">
+              Actualizar</span>: Si el usuario selecciona un registro e invoca
+            la
+            opci&oacute;n Actualizar se despliega un formulario en el cual los
+            campos
+            modificables son el Nombre, Abreviatura, Compensador, Tapa y
+            Reservado. </p>
+          <p class="TITLE"><img src="../img/NUF_027E3.PNG"></p>
+          
+          <p class="PARRAFO">El formulario Or&iacute;gen de transacciones
+            contiene los
+            hiperv&iacute;nculos <a href="NUH_027B1.html">Transacciones
+            </a><a href="NUH_066B.html#BL_SISTEMA"></a>y <a
+              href="NUH_027B2.html">Par&aacute;metros
+              de origen</a> que le permiten al usuario seleccionar el registro
+            correspondiente
+            a un origen en particular e invocar los formularios desde los cuales
+            se
+            puedeb parametrizar las transacciones originales v&aacute;lidas y
+            algunos
+            par&aacute;metros propios para el origen seleccionado.</p>
+
+        </section>
+        <script src="../js/menu.js"></script>
+      </body>
+      <div id="footerContainer"></div>
+      <script>
   fetch('footer.html')
     .then(response => response.text())
     .then(html => {
       document.getElementById('footerContainer').innerHTML = html;
     });
 </script>
-</html>
+    </html>

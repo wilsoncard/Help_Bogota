@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="es">
+
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BANKBU®</title>
+    <link rel="stylesheet" href="../css/pages.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="icon" href="../img/ACQUIRER-logo.JPG" type="image/x-icon">
+  </head>
+
+  <body>
+    <header>
+      <img class="logo" src="../img/logoBankbu_.PNG" alt="Logo de Mi Empresa">
+      <div id="menuBtn">
+        <img class="TITLE" src="../img/menu.PNG" alt="Botón de Menú ">
+      </div>
+    </header>
+    <div id="menuContainer"></div>
+    <script>
+    fetch('menu.html')
+      .then(response => response.text())
+      .then(html => {
+        document.getElementById('menuContainer').innerHTML = html;
+      });
+  </script>
+    <section>
+      <div>
+
+ <p class="TITLE">Causales  x Motivos Cancelaci&oacute;n </p>
+ 
+
+ <p class="PARRAFO">Esta función habilita la consulta y
+ mantenimiento de las agrupaciones de los diversos  motivos
+ de devoluci&oacute;n con las causales que se requiera que se encuentren relacionadas. </p>
+
+ <p class="TITLE"><img src="Images/NUF_144E1.PNG"></p>
+
+ <p class="TITLE"><a name="BL_MOTIVOS_CANCELACION"></a> Descripción de Campos</a></p>
+ 
+<table>
+<tr>
+ <td class="titletable">
+ <p class="SUBTITULO">Código Motivo</p>
+ </td>
+ <td>
+ <p class="PARRAFO">Muestra el c&oacute;digo asignado al motivo de devoluci&oacute;n y
+     que se encuentra consignado el la forma de<a href="NUH_143E.html"> Causales motivo 
+        devoluci&oacute;n.</a></p>
+</td>
+</tr>
+<tr>
+ <td class="titletable">
+ <p class="SUBTITULO">Causales</p>
+ </td>
+ <td>
+ <p class="PARRAFO">En este utilitario se consignan las causales que se quieran asociar al motivo de devoluci&oacute;n.</p>
+ </td>
+</tr>
+</table>
+
+ <p class="TITLE">Opciones en Modo Consulta</p>
+ 
+<table>
+<tr>
+ <td class="titletable">
+ <p class="SUBTITULO"><a href="NUH_INTE.html#Acciones"></a> Acciones</p>
+ </td>
+ <td>
+ <p class="PARRAFO">Imprimir, Configurar Impresión, Salir</p>
+ </td>
+ <td>
+ <p class="PARRAFO"><a href="NUH_INTE.html#BotAccion"><img src=../img/BotImprimir.gif></a>
+    <a href="NUH_INTE.html#BotAccion"><img src=../img/BotConfigurar.gif></a>
+    <a href="NUH_INTE.html#BotAccion"><img src=../img/BotSalir.gif></a></p>
+ </td>
+</tr>
+<tr>
+ <td class="titletable">
+ <p class="SUBTITULO"><a href="NUH_INTE.html#Modulos"></a> Módulos</p>
+ </td>
+ <td>
+ <p class="PARRAFO">Según atribuciones del perfil</p>
+ </td>
+ <td>
+ <p class="PARRAFO">&nbsp;</p>
+ </td>
+</tr>
+<tr>
+ <td class="titletable">
+ <p class="SUBTITULO"><a href="NUH_INTE.html#Consulta"></a>Consulta</p>
+ </td>
+ <td>
+ <p class="PARRAFO">Ingresar, Ejecutar, Cancelar</p>
+ </td>
+ <td>
+ <p class="PARRAFO"><a href="NUH_INTE.html#BotConsulta"><img src=../img/BotEntQuery.gif></a>
+    <a href="NUH_INTE.html#BotConsulta"><img src=../img/BotEjeQuery.gif></a>
+    <a href="NUH_INTE.html#BotConsulta"><img src=../img/BotCanQuery.gif></a></p>
+ </td>
+</tr>
+<tr>
+ <td class="titletable">
+ <p class="SUBTITULO"><a href="NUH_INTE.html#Navegacion"></a>Navegación</p>
+ </td>
+ <td>
+ <p class="PARRAFO">Registro anterior, Registro Siguiente</p>
+ </td>
+ <td>
+ <p class="PARRAFO"><a href="NUH_INTE.html#BotNavegacion"><img src=../img/BotRegAnterior.gif></a>
+    <a href="NUH_INTE.html#BotNavegacion"><img src=../img/BotRegSiguiente.gif></a></p>
+ </td>
+</tr>
+<tr>
+ <td class="titletable">
+ <p class="SUBTITULO"><a href="NUH_INTE.html#Utilidades"></a>Utilidades</p>
+ </td>
+ <td>
+ <p class="PARRAFO">Cambio de clave, Cambio de idioma y otras
+ según atribuciones del perfil</p>
+ </td>
+ <td>
+ <p class="PARRAFO">&nbsp;</p>
+ </td>
+</tr>
+<tr>
+ <td class="titletable">
+ <p class="SUBTITULO"><a href="NUH_INTE.html#Ayuda"></a> Ayuda</p>
+ </td>
+ <td>
+ <p class="PARRAFO">Auditoria, Muestra Teclas, Manual del
+ Usuario, Acerca de Open Card</p>
+ </td>
+ <td>
+ <p class="PARRAFO"><a href="NUH_INTE.html#BotAuditoria"><img src=../img/BotAuditoria.gif></a>
+    <a href="NUH_INTE.html#BotAyuda"><img src=../img/BotAyuda.gif></a>
+    <a href="NUH_INTE.html#BotAcercade"><img src=../img/BotAcercade.gif></a></p>
+ </td>
+</tr>
+<tr>
+ <td class="titletable">
+ <p class="SUBTITULO"><a href="NUH_INTE.html#Window"></a> Window</p>
+ </td>
+ <td>
+ <p class="PARRAFO">Cascade, Tile, Arrange, Icons, Ventanas
+ Abiertas</p>
+ </td>
+ <td>
+ <p class="PARRAFO">&nbsp;</p>
+ </td>
+</tr>
+</table>
+
+ <p class="TITLE">Opciones en Modo Total</p>
+ 
+
+<table>
+<tr>
+ <td class="titletable">
+ <p class="SUBTITULO"><a href="NUH_INTE.html#Acciones"></a> Acciones</p>
+ </td>
+ <td>
+ <p class="PARRAFO">Grabar, Imprimir, Configurar Impresión,
+ Salir</p>
+ </td>
+ <td>
+ <p class="PARRAFO"><a href="NUH_INTE.html#BotAccion"><img src=../img/BotGrabar.gif></a>
+    <a href="NUH_INTE.html#BotAccion"><img src=../img/BotImprimir.gif></a>
+    <a href="NUH_INTE.html#BotAccion"><img src=../img/BotConfigurar.gif></a>
+    <a href="NUH_INTE.html#BotAccion"><img src=../img/BotSalir.gif></a></p>
+ </td>
+</tr>
+<tr>
+ <td class="titletable">
+ <p class="SUBTITULO"><a href="NUH_INTE.html#Modulos"></a> Módulos</p>
+ </td>
+ <td>
+ <p class="PARRAFO">Según atribuciones del perfil</p>
+ </td>
+ <td>
+ <p class="PARRAFO">&nbsp;</p>
+ </td>
+</tr>
+<tr>
+ <td class="titletable">
+ <p class="SUBTITULO"><a href="NUH_INTE.html#Editar"></a> Editar</p>
+ </td>
+ <td>
+ <p class="PARRAFO">Cortar, Copiar, Pegar</p>
+ </td>
+ <td>
+ <p class="PARRAFO"><a href="NUH_INTE.html#BotEditar"><img src=../img/BotCortar.gif></a>
+    <a href="NUH_INTE.html#BotEditar"><img src=../img/BotCopiar.gif></a>
+    <a href="NUH_INTE.html#BotEditar"><img src=../img/BotPegar.gif></a></p>
+ </td>
+</tr>
+<tr>
+ <td class="titletable">
+ <p class="SUBTITULO"><a href="NUH_INTE.html#Consulta"></a> Consulta</p>
+ </td>
+ <td>
+ <p class="PARRAFO">Ingresar, Ejecutar, Cancelar</p>
+ </td>
+ <td>
+ <p class="PARRAFO"><a href="NUH_INTE.html#BotConsulta"><img src=../img/BotEntQuery.gif></a>
+    <a href="NUH_INTE.html#BotConsulta"><img src=../img/BotEjeQuery.gif></a>
+    <a href="NUH_INTE.html#BotConsulta"><img src=../img/BotCanQuery.gif></a></p>
+ </td>
+</tr>
+<tr>
+ <td class="titletable">
+ <p class="SUBTITULO"><a href="NUH_INTE.html#Navegacion">Navegación</a></p>
+ </td>
+ <td>
+ <p class="PARRAFO">Registro anterior, Registro Siguiente</p>
+ </td>
+ <td>
+ <p class="PARRAFO"><a href="NUH_INTE.html#BotNavegacion"><img src=../img/BotRegAnterior.gif></a>
+    <a href="NUH_INTE.html#BotNavegacion"><img src=../img/BotRegSiguiente.gif></a></p>
+ </td>
+</tr>
+<tr>
+ <td class="titletable">
+ <p class="SUBTITULO"><a href="NUH_INTE.html#Utilidades"></a> Utilidades</p>
+ </td>
+ <td>
+ <p class="PARRAFO">Cambio de clave, Cambio de idioma y otras
+ según atribuciones del perfil</p>
+ </td>
+ <td>
+ <p class="PARRAFO">&nbsp;</p>
+ </td>
+</tr>
+<tr>
+ <td class="titletable">
+ <p class="SUBTITULO"><a href="NUH_INTE.html#Registro"></a> Registro</p>
+ </td>
+ <td>
+ <p class="PARRAFO">Crear, Borrar, Limpiar</p>
+ </td>
+ <td>
+ <p class="PARRAFO"><a href="NUH_INTE.html#BotRegistro"><img src=../img/BotCreaReg.gif></a>
+    <a href="NUH_INTE.html#BotRegistro"><img src=../img/BotBorraReg.gif></a>
+    <a href="NUH_INTE.html#BotRegistro"><img src=../img/BotLimpiaReg.gif></a></p>
+ </td>
+</tr>
+<tr>
+ <td class="titletable">
+ <p class="SUBTITULO"><a href="NUH_INTE.html#Ayuda"></a> Ayuda</p>
+ </td>
+ <td>
+ <p class="PARRAFO">Limpiar Pantalla, Auditoria, Muestra
+ Teclas, Manual del Usuario, Acerca de Open Card</p>
+ </td>
+ <td>
+ <p class="PARRAFO"><a href="NUH_INTE.html#BotLimpiar"><img src=../img/BotLimpiaPant.gif></a>
+    <a href="NUH_INTE.html#BotAuditoria"><img src=../img/BotAuditoria.gif></a>
+    <a href="NUH_INTE.html#BotAyuda"><img src=../img/BotAyuda.gif></a>
+    <a href="NUH_INTE.html#BotAcercade"><img src=../img/BotAcercade.gif></a></p>
+ </td>
+</tr>
+<tr>
+ <td class="titletable">
+ <p class="SUBTITULO"><a href="NUH_INTE.html#Window"></a> Window</p>
+ </td>
+ <td>
+ <p class="PARRAFO">Cascade, Tile, Arrange, Icons, Ventanas
+ Abiertas</p>
+ </td>
+ <td>
+ <p class="PARRAFO">&nbsp;</p>
+ </td>
+</tr>
+</table>
+
+      </div>
+      </section>
+      <script src="../js/menu.js"></script>
+      <div id="footerContainer"></div>
+    </body>
+    <script>
+  fetch('footer.html')
+    .then(response => response.text())
+    .then(html => {
+      document.getElementById('footerContainer').innerHTML = html;
+    });
+</script>
+  </html>

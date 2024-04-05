@@ -1,16 +1,16 @@
 <!DOCTYPE html>
 <html lang="es">
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>BANKBU®</title>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>BANKBU®</title>
 
-    <link rel="stylesheet" href="../css/pages.css">
-    <link rel="stylesheet" href="../css/style.css">
-    <link rel="icon" href="../img/ACQUIRER-logo.JPG" type="image/x-icon">
+        <link rel="stylesheet" href="../css/pages.css">
+        <link rel="stylesheet" href="../css/style.css">
+        <link rel="icon" href="../img/ACQUIRER-logo.JPG" type="image/x-icon">
 
-    <style>
+        <style>
         section p {
             width: 625px;
         }
@@ -21,18 +21,19 @@
             width: 100%;
         }
     </style>
-</head>
+    </head>
 
-<body>
+    <body>
 
-    <header>
-        <img class="logo" src="../img/logoBankbu_.PNG" alt="Logo de Mi Empresa">
-        <div id="menuBtn">
-            <img class="TITLE" src="../img/menu.PNG" alt="Botón de Menú ">
-        </div>
-    </header>
-      <div id="menuContainer"></div>
-  <script>
+        <header>
+            <img class="logo" src="../img/logoBankbu_.PNG"
+                alt="Logo de Mi Empresa">
+            <div id="menuBtn">
+                <img class="TITLE" src="../img/menu.PNG" alt="Botón de Menú ">
+            </div>
+        </header>
+        <div id="menuContainer"></div>
+        <script>
     fetch('menu.html')
       .then(response => response.text())
       .then(html => {
@@ -40,43 +41,51 @@
       });
   </script>
 
-    <section>
-        <div>
-            <p class="TITLE">Configuración de parámetros:
-            </p>
+        <section>
+            <div>
+                <p class="TITLE">Configuración de parámetros:
+                </p>
 
-            <p>Este bloque contiene los principales parámetros utilizados por el sistema desde el punto de vista
-                operativo y los datos registrados en estas opciones constituyen la entrada para múltiples campos
-                contenidos en los diversos formularios que es necesario diligenciar para el correcto funcionamiento del
-                sistema.
-            </p>
+                <p>Este bloque contiene los principales parámetros utilizados
+                    por el sistema desde el punto de vista
+                    operativo y los datos registrados en estas opciones
+                    constituyen la entrada para múltiples campos
+                    contenidos en los diversos formularios que es necesario
+                    diligenciar para el correcto funcionamiento del
+                    sistema.
+                </p>
 
-            <p class="TITLE">Parametros Generales</p>
+                <p class="TITLE">Parametros Generales</p>
 
-            <li><a href="NUH_032B.html">Actividades económicas</a></li>
-            <li><a href="NUH_039B.html">Compañias de telefonia movil</a></li>
-            <li><a href="NUH_019B.html">Entidades financieras</a></li>
-            <li><a href="NUH_003B.html">Entidades territoriales</a></li>
-            <li><a href="NUH_013B.html">Marcas de vehículos</a></li>
-            <li><a href="NUH_005B.html">Monedas</a></li>
-            <li><a href="NUH_030B.html">Profesiones</a></li>
-            <li><a href="NUH_011B.html">Tipos de bienes</a></li>
-            <li><a href="NUH_004B.html">Tipos de dirección</a></li>
-            <li><a href="NUH_008B.html">Tipos de identificación</a></li>
-            <li><a href="NUH_120B.html">Tipos de ocupación</a></li>
-            <li><a href="NUH_038B.html">Tipos de organización</a></li>
-            <li><a href="NUH_031B.html">Tipos de proveedor</a></li>
-            <li><a href="NUH_028B.html">Tipos de relación</a></li>
-            <li><a href="NUH_041B.html">Zonas geográficas</a></li>
-            <li><a href="NUH_115E.html">Plantilla</a></li>
+                <li><a href="NUH_032B.html">Actividades económicas</a></li>
+                <li><a href="NUH_039B.html">Compañias de telefonia
+                        movil</a></li>
+                <li><a href="NUH_019B.html">Entidades financieras</a></li>
+                <li><a href="NUH_003B.html">Entidades territoriales</a></li>
+                <li style="display: none; visibility: hidden;"><a
+                        href="NUH_013B.html">Marcas de vehículos</a></li>
+                <li><a href="NUH_005B.html">Monedas</a></li>
+                <li style="display: none; visibility: hidden;"><a
+                        href="NUH_030B.html">Profesiones</a></li>
+                <li style="display: none; visibility: hidden;"><a
+                        href="NUH_011B.html">Tipos de bienes</a></li>
+                <li><a href="NUH_004B.html">Tipos de dirección</a></li>
+                <li><a href="NUH_008B.html">Tipos de identificación</a></li>
+                <li><a href="NUH_120B.html">Tipos de ocupación</a></li>
+                <li><a href="NUH_038B.html">Tipos de organización</a></li>
+                <li><a href="NUH_031B.html">Tipos de proveedor</a></li>
+                <li><a href="NUH_028B.html">Tipos de relación</a></li>
+                <li><a href="NUH_041B.html">Zonas geográficas</a></li>
+                <li><a href="NUH_115E.html">Plantilla</a></li>
 
-        </div>
-        <img class="ImagenBankbu" src="../img/bankbu-removebg-preview.PNG" alt="Imagen de la empresa">
-    </section>
-    <script src="../js/menu.js"></script>
-</body>
-<div id="footerContainer"></div>
-<script>
+            </div>
+            <img class="ImagenBankbu" src="../img/bankbu-removebg-preview.PNG"
+                alt="Imagen de la empresa">
+        </section>
+        <script src="../js/menu.js"></script>
+    </body>
+    <div id="footerContainer"></div>
+    <script>
   fetch('footer.html')
     .then(response => response.text())
     .then(html => {

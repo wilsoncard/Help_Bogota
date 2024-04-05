@@ -1,15 +1,15 @@
 <!DOCTYPE html>
 <html lang="es">
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>BANKBU®</title>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>BANKBU®</title>
 
-    <link rel="stylesheet" href="../css/pages.css">
-    <link rel="stylesheet" href="../css/style.css">
-    <link rel="icon" href="../img/ACQUIRER-logo.JPG" type="image/x-icon">
-    <style>
+        <link rel="stylesheet" href="../css/pages.css">
+        <link rel="stylesheet" href="../css/style.css">
+        <link rel="icon" href="../img/ACQUIRER-logo.JPG" type="image/x-icon">
+        <style>
         footer {
             position: fixed;
         }
@@ -21,18 +21,19 @@
             width: 100%;
         }
     </style>
-</head>
+    </head>
 
-<body>
+    <body>
 
-    <header>
-        <img class="logo" src="../img/logoBankbu_.PNG" alt="Logo de Mi Empresa">
-        <div id="menuBtn">
-            <img class="TITLE" src="../img/menu.PNG" alt="Botón de Menú ">
-        </div>
-    </header>
-      <div id="menuContainer"></div>
-  <script>
+        <header>
+            <img class="logo" src="../img/logoBankbu_.PNG"
+                alt="Logo de Mi Empresa">
+            <div id="menuBtn">
+                <img class="TITLE" src="../img/menu.PNG" alt="Botón de Menú ">
+            </div>
+        </header>
+        <div id="menuContainer"></div>
+        <script>
     fetch('menu.html')
       .then(response => response.text())
       .then(html => {
@@ -40,39 +41,41 @@
       });
   </script>
 
-    <section>
-        <div>
-            <p class="TITLE">Contabilidad:
-            </p>
+        <section>
+            <div>
+                <p class="TITLE">Contabilidad:
+                </p>
 
+                <p> Contiene las opciones en las cuales la entidad define la
+                    manera como se va a generar y presentar la
+                    informacion contable resultante del movimiento diario,
+                    permitiendo la consulta y análisis de cifras
+                    contables.
+                </p>
 
-            <p> Contiene las opciones en las cuales la entidad define la manera como se va a generar y presentar la
-                informacion contable resultante del movimiento diario, permitiendo la consulta y análisis de cifras
-                contables.
-            </p>
+                <a href="NUH_078B.html">
+                    <h3>Identificadores contables</h3>
+                </a>
 
-            <a href="NUH_078B.html">
-                <h3>Identificadores contables</h3>
-            </a>
+                <a style="display: none; visibility: hidden;"
+                    href="NUH_015B.html">
+                    <h3>Tipos de cartera</h3>
+                </a>
+                <a href="CTH_001B.html">
+                    <h3>Parámetros contables</h3>
+                </a>
+                <a href="CTH_002B.html">
+                    <h3>Análisis contable</h3>
+                </a>
 
-            <a href="NUH_015B.html">
-                <h3>Tipos de cartera</h3>
-            </a>
-            <a href="CTH_001B.html">
-                <h3>Parámetros contables</h3>
-            </a>
-            <a href="CTH_002B.html">
-                <h3>Análisis contable</h3>
-            </a>
-
-
-        </div>
-        <img class="ImagenBankbu" src="../img/bankbu-removebg-preview.PNG" alt="Imagen de la empresa">
-    </section>
-    <script src="../js/menu.js"></script>
-</body>
-<div id="footerContainer"></div>
-<script>
+            </div>
+            <img class="ImagenBankbu" src="../img/bankbu-removebg-preview.PNG"
+                alt="Imagen de la empresa">
+        </section>
+        <script src="../js/menu.js"></script>
+    </body>
+    <div id="footerContainer"></div>
+    <script>
   fetch('footer.html')
     .then(response => response.text())
     .then(html => {

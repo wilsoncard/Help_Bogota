@@ -1,25 +1,26 @@
 <!DOCTYPE html>
 <html lang="es">
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>BANKBU®</title>
-    <link rel="stylesheet" href="../css/pages.css">
-    <link rel="stylesheet" href="../css/style.css">
-    <link rel="icon" href="../img/ACQUIRER-logo.JPG" type="image/x-icon">
-</head>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>BANKBU®</title>
+        <link rel="stylesheet" href="../css/pages.css">
+        <link rel="stylesheet" href="../css/style.css">
+        <link rel="icon" href="../img/ACQUIRER-logo.JPG" type="image/x-icon">
+    </head>
 
-<body>
+    <body>
 
-    <header>
-        <img class="logo" src="../img/logoBankbu_.PNG" alt="Logo de Mi Empresa">
-        <div id="menuBtn">
-            <img class="TITLE" src="../img/menu.PNG" alt="Botón de Menú ">
-        </div>
-    </header>
-      <div id="menuContainer"></div>
-  <script>
+        <header>
+            <img class="logo" src="../img/logoBankbu_.PNG"
+                alt="Logo de Mi Empresa">
+            <div id="menuBtn">
+                <img class="TITLE" src="../img/menu.PNG" alt="Botón de Menú ">
+            </div>
+        </header>
+        <div id="menuContainer"></div>
+        <script>
     fetch('menu.html')
       .then(response => response.text())
       .then(html => {
@@ -27,94 +28,101 @@
       });
   </script>
 
-    <section>
-        <div>
-            <table>
-                <tr>
-                    <td>
-                        <div>
-                            <p class="TITLE">Definici&oacute;n de otros pl&aacute;sticos</p>
-                        </div>
-                    </td>
-                </tr>
-            </table>
+        <section>
+            <div>
+                <p class="TITLE">Definici&oacute;n de otros pl&aacute;sticos</p>
 
-            <p class="PARRAFO">A trav&eacute;s de este formulario, la entidad puede parametrizar los diferentes
-                pl&aacute;sticos que adicional a la tarjeta de cr&eacute;dito, se deben realzar y entregar al cliente de
-                acuerdo con lo que se haya definido a nivel del <a href="MEH_002B4.html">producto</a></p>
-            <p class="TITLE"><img src="../img/MEF_030E.PNG"></p>
+                <p class="PARRAFO">A trav&eacute;s de este formulario, la
+                    entidad puede parametrizar los diferentes
+                    pl&aacute;sticos que adicional a la tarjeta de
+                    cr&eacute;dito, se deben realzar y entregar al cliente de
+                    acuerdo con lo que se haya definido a nivel del <a
+                        href="MEH_002B4.html">producto</a></p>
+                <p class="TITLE"><img src="../img/MEF_030E.PNG"></p>
 
-            <p class="PARRAFO">El formulario contiene las opciones Actualizar, Eliminar y Adicionar.</p>
-            <p class="PARRAFO"><span class="SUBTITULO">Adicionar:</span> si el usuario invoca la opci&oacute;n
-                Adicionar se despliega un nuevo formulario con los siguientes campos.</p>
-            <p class="TITLE"><img src="../img/MEF_030E1.PNG"></p>
+                <p class="PARRAFO">El formulario contiene las opciones
+                    Actualizar, Eliminar y Adicionar.</p>
+                <p class="PARRAFO"><span class="SUBTITULO">Adicionar:</span> si
+                    el usuario invoca la opci&oacute;n
+                    Adicionar se despliega un nuevo formulario con los
+                    siguientes campos.</p>
+                <p class="TITLE"><img src="../img/MEF_030E1.PNG"></p>
 
-            <div class="PARRAFO">
-                <p class="TITLE">Descripci&oacute;n de campos</p>
-                <table>
+                <div class="PARRAFO">
+                    <p class="TITLE">Descripci&oacute;n de campos</p>
+                    <table>
+                        <tr>
+                            <td class="titletable">
+                                <p class="SUBTITULO">C&oacute;digo
+                                </p>
+                            </td>
+                            <td>
+                                <p class="PARRAFO">Campo
+                                    num&eacute;rico de 11 d&iacute;gitos,
+                                    obligatorio, en el cual se registra el
+                                    c&oacute;digo que identifica cada uno de las
+                                    diferentes pl&aacute;sticos adicionales
+                                    definidos por la entidad.</p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="titletable">
+                                <p class="SUBTITULO">Nombre otro pl&aacute;stico
+
+                                </p>
+                            </td>
+                            <td>
+                                <p class="PARRAFO">Este
+                                    campo alfanum&eacute;rico de 30 posiciones,
+                                    obligatorio, permite registrar el nombre del
+                                    otro pl&aacute;stico asociado con el
+                                    c&oacute;digo anterior.</p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="titletable">
+                                <p class="SUBTITULO">Modelo
+                                </p>
+                            </td>
+                            <td>
+                                <p class="PARRAFO">Campo obligatorio con lista
+                                    de valores de la cual se selecciona el <a
+                                        href="NUH_057B.html">modelo</a> que se
+                                    debe utilizar al momento de efectuar
+                                    el realce para el pl&aacute;stico que se
+                                    est&aacute; parametrizando.</p>
+                            </td>
+                        </tr>
+                    </table>
                     <tr>
                         <td class="titletable">
-                            <p class="SUBTITULO">C&oacute;digo
-                                </p>
+                            <p class="SUBTITULO">Proveedor
+
+                            </p>
                         </td>
                         <td>
                             <p class="PARRAFO">Campo
-                                num&eacute;rico de 11 d&iacute;gitos, obligatorio, en el cual se registra el
-                                c&oacute;digo que identifica cada uno de las diferentes pl&aacute;sticos adicionales
-                                definidos por la entidad.</p>
+                                que contiene el nombre del proveedor quien
+                                presta los bienes y servicios, quien suministra
+                                los plasticos de tarjetas de credito. </p>
                         </td>
                     </tr>
-                    <tr>
-                        <td class="titletable">
-                            <p class="SUBTITULO">Nombre otro pl&aacute;stico
-
-
-                                </p>
-                        </td>
-                        <td>
-                            <p class="PARRAFO">Este
-                                campo alfanum&eacute;rico de 30 posiciones, obligatorio, permite registrar el nombre del
-                                otro pl&aacute;stico asociado con el c&oacute;digo anterior.</p>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td class="titletable">
-                            <p class="SUBTITULO">Modelo
-                                </p>
-                        </td>
-                        <td>
-                            <p class="PARRAFO">Campo obligatorio con lista de valores de la cual se selecciona el <a
-                                        href="NUH_057B.html">modelo</a> que se debe utilizar al momento de efectuar
-                                el realce para el pl&aacute;stico que se est&aacute; parametrizando.</p>
-                        </td>
-                    </tr>
-                </table>
-                <tr>
-                    <td class="titletable">
-                        <p class="SUBTITULO">Proveedor
-
-
-                            </p>
-                    </td>
-                    <td>
-                        <p class="PARRAFO">Campo
-                            que contiene el nombre del proveedor quien presta los bienes y servicios, quien suministra
-                            los plasticos de tarjetas de credito. </p>
-                    </td>
-                </tr>
                 </table>
                 <p class="PARRAFO">
-                <p><span class="SUBTITULO">Actualizar:</span> si el usuario selecciona un registro e invoca la
-                    opci&oacute;n Actualizar, se despliega un formulario en el cual el &uacute;nico campo NO modificable
-                    es el C&oacute;digo.</p>
-                <p class="TITLE"><img src="../img/MEF_030E2.PNG"></p>
+                    <p><span class="SUBTITULO">Actualizar:</span> si el usuario
+                        selecciona un registro e invoca la
+                        opci&oacute;n Actualizar, se despliega un formulario en
+                        el cual el &uacute;nico campo NO modificable
+                        es el C&oacute;digo.</p>
+                    <p class="TITLE"><img src="../img/MEF_030E2.PNG"></p>
 
-                <a href="SOH_058B.html">Párametros otros Plasticos |</span></a>
-    </section>
-    <script src="../js/menu.js"></script>
-</body>
-<div id="footerContainer"></div>
-<script>
+                    <a href="SOH_058B.html">Párametros otros Plasticos
+                        |</span></a>
+            </section>
+            <script src="../js/menu.js"></script>
+        </body>
+        <div id="footerContainer"></div>
+        <script>
   fetch('footer.html')
     .then(response => response.text())
     .then(html => {
@@ -122,4 +130,4 @@
     });
 </script>
 
-</html>
+    </html>

@@ -1,24 +1,24 @@
 <!DOCTYPE html>
 <html lang="es">
 
-<head>
+  <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>BANKBU®</title>
     <link rel="stylesheet" href="../css/pages.css">
     <link rel="stylesheet" href="../css/style.css">
- <link rel="icon" href="../img/ACQUIRER-logo.JPG" type="image/x-icon">
-</head>
+    <link rel="icon" href="../img/ACQUIRER-logo.JPG" type="image/x-icon">
+  </head>
 
-<body>
+  <body>
     <header>
-        <img class="logo" src="../img/logoBankbu_.PNG" alt="Logo de Mi Empresa">
-        <div id="menuBtn">
-            <img class="TITLE"  src= "../img/menu.PNG" alt="Botón de Menú ">
-        </div>
+      <img class="logo" src="../img/logoBankbu_.PNG" alt="Logo de Mi Empresa">
+      <div id="menuBtn">
+        <img class="TITLE" src="../img/menu.PNG" alt="Botón de Menú ">
+      </div>
     </header>
-      <div id="menuContainer"></div>
-  <script>
+    <div id="menuContainer"></div>
+    <script>
     fetch('menu.html')
       .then(response => response.text())
       .then(html => {
@@ -27,58 +27,88 @@
   </script>
 
     <section>
-        <div> 
-            
-                    <p  class="TITLE">Estado de ingresos   y egresos</p>
-                    
-            <p>Mediante esta funci&oacute;n se habilita la consulta y mantenimiento de   la tabla en la que la entidad financiera almacena los diferentes items o   conceptos monetarios, aplicables a los tipos de <a href="SOH_004B.html" >solicitudes</a> (personas naturales, peque&ntilde;as o grandes   empresas), permitiendo asociar parte de la informaci&oacute;n suministrada por el   cliente, a conceptos financieros similares a un estado de ganancias y p&eacute;rdidas,   lo que facilita conocer, entre otros, la capacidad de endeudamiento del cliente.   Adicionalmente, al asociarle la clase de prototipo es posible generar, mediante   interfaces espec&iacute;ficas, informaci&oacute;n relevante para la entidad.</p>
-            <p class="TITLE"><img src="../img/NUF_035E.PNG"604" height="459"></p>
-            
-            <p  class="PARRAFO">El 
-              formulario contiene las opciones Actualizar, Eliminar, y Adicionar.</p>
-            <p  class="PARRAFO"><span class="SUBTITULO">Adicionar:</span>  Si el usuario invoca la opci&oacute;n Adicionar se despliega un formulario con los siguientes campos<span 
-        >:</span></p>
-            <p class="TITLE"><img src="../img/NUF_035E1.PNG"303" ></p>
-            
-            <table>
-              <tr>
-                <td class="titletable"><p class="SUBTITULO"><span 
-        >C&oacute;digo</span></p></td>
-                <td><p class="PARRAFO">Campo num&eacute;rico de tres d&iacute;gitos,   obligatorio, que corresponde al c&oacute;digo asignado a cada uno de los conceptos de   ingreso o egreso.</p>        </td>
-              </tr>
-              <tr>
-                <td class="titletable"><p class="SUBTITULO"><span 
-        >Descripci&oacute;n</span></span></p></td>
-                <td><p class="PARRAFO">En este campo alfanum&eacute;rico de 30 posiciones,   obligatorio, se registra el nombre o descriptivo asociado al c&oacute;digo de cada   concepto de ingreso o egreso.</p>      
-                </td>
-              </tr>
-              <tr>
-                <td  class="titletable" ><p class="SUBTITULO"><span 
-        >Acci&oacute;n</span></p></td>
-                <td><p class="PARRAFO">Campo que contiene lista de valores de la   cual se puede seleccionar entre sumar o restar el efecto o acci&oacute;n asociado a   cada concepto de ingreso o egreso, acorde con las pr&aacute;cticas contables tendientes   a la obtenci&oacute;n de un estado de ganancias y p&eacute;rdidas o a otros prop&oacute;sitos   deseados por la entidad.</p>        </td>
-              </tr>
-              <tr>
-                <td class="titletable"><p class="SUBTITULO"><span 
-        >Prototipo</span></p></td>
-                <td><p class="PARRAFO">En este campo con lista de valores adjunta   se debe seleccionar entre Utilidad neta, Patrimonio, Pasivos, Activos, Otros   gastos, Gastos, Otros ingresos o Ingresos, el c&oacute;digo interno con el cual el   sistema reconocer&aacute; cada uno de los conceptos definidos, con base en los cuales   procesar&aacute; dicha informaci&oacute;n, en caso que la entidad defina alguna interface   espec&iacute;fica para con ese fin.</p>        
-                </td>
-              </tr>
-            </table>
-            <p  class="PARRAFO"><span class="PARRAFO"><span class="SUBTITULO">Actualizar:</span>  Si el usuario invoca la opci&oacute;n Actualizar se despliega un nuevo formulario 
-            en el cual los &uacute;nicos campos modificables son: </span> Descrici&oacute;n, Acci&oacute;n, y Prototipo.</p>
-            <p class="TITLE"><img src="../img/NUF_035E2.PNG"303" ></p>
-            
+      <div>
+        <p class="TITLE">Estado de ingresos y egresos</p>
+
+        <p>Mediante esta funci&oacute;n se habilita la consulta y mantenimiento
+          de la tabla en la que la entidad financiera almacena los diferentes
+          items o conceptos monetarios, aplicables a los tipos de <a
+            href="SOH_004B.html">solicitudes</a> (personas naturales,
+          peque&ntilde;as o grandes empresas), permitiendo asociar parte de la
+          informaci&oacute;n suministrada por el cliente, a conceptos
+          financieros similares a un estado de ganancias y p&eacute;rdidas, lo
+          que facilita conocer, entre otros, la capacidad de endeudamiento del
+          cliente. Adicionalmente, al asociarle la clase de prototipo es posible
+          generar, mediante interfaces espec&iacute;ficas, informaci&oacute;n
+          relevante para la entidad.</p>
+        <p class="TITLE"><img src="../img/NUF_035E.PNG"></p>
+
+        <p class="PARRAFO">El
+          formulario contiene las opciones Actualizar, Eliminar, y
+          Adicionar.</p>
+        <p class="PARRAFO"><span class="SUBTITULO">Adicionar:</span> Si el
+          usuario invoca la opci&oacute;n Adicionar se despliega un formulario
+          con los siguientes campos<span>:</p>
+        <p class="TITLE"><img src="../img/NUF_035E1.PNG"></p>
+
+        <table>
+          <tr>
+            <td class="titletable"><p
+                class="SUBTITULO"><span>C&oacute;digo</p></td>
+            <td><p class="PARRAFO">Campo num&eacute;rico de tres d&iacute;gitos,
+                obligatorio, que corresponde al c&oacute;digo asignado a cada
+                uno de los conceptos de ingreso o egreso.</p> </td>
+          </tr>
+          <tr>
+            <td class="titletable"><p
+                class="SUBTITULO"><span>Descripci&oacute;n</p></td>
+          <td><p class="PARRAFO">En este campo alfanum&eacute;rico de 30
+              posiciones, obligatorio, se registra el nombre o descriptivo
+              asociado al c&oacute;digo de cada concepto de ingreso o
+              egreso.</p>
+          </td>
+        </tr>
+        <tr>
+          <td class="titletable"><p
+              class="SUBTITULO"><span>Acci&oacute;n</p></td>
+          <td><p class="PARRAFO">Campo que contiene lista de valores de la cual
+              se puede seleccionar entre sumar o restar el efecto o
+              acci&oacute;n asociado a cada concepto de ingreso o egreso, acorde
+              con las pr&aacute;cticas contables tendientes a la
+              obtenci&oacute;n de un estado de ganancias y p&eacute;rdidas o a
+              otros prop&oacute;sitos deseados por la entidad.</p> </td>
+        </tr>
+        <tr>
+          <td class="titletable"><p
+              class="SUBTITULO"><span>Prototipo</p></td>
+          <td><p class="PARRAFO">En este campo con lista de valores adjunta se
+              debe seleccionar entre Utilidad neta, Patrimonio, Pasivos,
+              Activos, Otros gastos, Gastos, Otros ingresos o Ingresos, el
+              c&oacute;digo interno con el cual el sistema reconocer&aacute;
+              cada uno de los conceptos definidos, con base en los cuales
+              procesar&aacute; dicha informaci&oacute;n, en caso que la entidad
+              defina alguna interface espec&iacute;fica para con ese fin.</p>
+          </td>
+        </tr>
+      </table>
+      <p class="PARRAFO"><span class="PARRAFO"><span
+            class="SUBTITULO">Actualizar:</span> Si el usuario invoca la
+          opci&oacute;n Actualizar se despliega un nuevo formulario
+          en el cual los &uacute;nicos campos modificables son: </span>
+        Descrici&oacute;n, Acci&oacute;n, y Prototipo.</p>
+      <p class="TITLE"><img src="../img/NUF_035E2.PNG"></p>
+      </div>
     </section>
     <script src="../js/menu.js"></script>
 
     <div id="footerContainer"></div>
-<script>
+    <script>
   fetch('footer.html')
     .then(response => response.text())
     .then(html => {
       document.getElementById('footerContainer').innerHTML = html;
     });
 </script>
-</body>
+  </body>
 
 </html>

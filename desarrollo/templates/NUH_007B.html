@@ -1,25 +1,26 @@
 <!DOCTYPE html>
 <html lang="es">
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>BANKBU®</title>
-    <link rel="stylesheet" href="../css/pages.css">
-    <link rel="stylesheet" href="../css/style.css">
-    <link rel="icon" href="../img/ACQUIRER-logo.JPG" type="image/x-icon">
-</head>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>BANKBU®</title>
+        <link rel="stylesheet" href="../css/pages.css">
+        <link rel="stylesheet" href="../css/style.css">
+        <link rel="icon" href="../img/ACQUIRER-logo.JPG" type="image/x-icon">
+    </head>
 
-<body>
+    <body>
 
-    <header>
-        <img class="logo" src="../img/logoBankbu_.PNG" alt="Logo de Mi Empresa">
-        <div id="menuBtn">
-            <img class="TITLE" src="../img/menu.PNG" alt="Botón de Menú ">
-        </div>
-    </header>
-      <div id="menuContainer"></div>
-  <script>
+        <header>
+            <img class="logo" src="../img/logoBankbu_.PNG"
+                alt="Logo de Mi Empresa">
+            <div id="menuBtn">
+                <img class="TITLE" src="../img/menu.PNG" alt="Botón de Menú ">
+            </div>
+        </header>
+        <div id="menuContainer"></div>
+        <script>
     fetch('menu.html')
       .then(response => response.text())
       .then(html => {
@@ -27,88 +28,104 @@
       });
   </script>
 
-    <section>
-        <div>
-            <table>
-                <tr>
-                    <td>
-                        <div>
-                            <p class="TITLE">Esquemas de amortizaci&oacute;n</p>
-                        </div>
-                    </td>
-                </tr>
-            </table>
-            <p class="PARRAFO">A trav&eacute;s de este formulario, se efect&uacute;a la parametrizaci&oacute;n de los
-                diferentes esquemas de amortizaci&oacute;n que pueden ser asociados a los <a
-                        href="MEH_002B.html">productos</a> de la entidad y que determinar&aacute;n la manera en la
-                cual se har&aacute; la liquidaci&oacute;n de las obligaciones contra&iacute;das por los clientes.</p>
-            <p class="TITLE"><img src="../img/NUF_007E.PNG" 517" height="280"></p>
+        <section>
+            <div>
 
-            <p class="PARRAFO">El formulario contiene las opciones Actualizar, Eliminar y Adicionar.</p>
-            <p class="PARRAFO"><span class="SUBTITULO">Adicionar:</span> si el usuario invoca la opci&oacute;n
-                Adicionar se despliega un nuevo formulario con los siguientes campos.</p>
-            <p class="TITLE"><img src="../img/NUF_007E1.PNG" 320" height="250"></p>
+                <p class="TITLE">Esquemas de amortizaci&oacute;n</p>
 
-            <div class="PARRAFO">
-                <p class="TITLE">Descripci&oacute;n de campos</p>
-                <table>
-                    <tr>
-                        <td class="titletable">
-                            <p class="SUBTITULO">C&oacute;digo
-                                </p>
-                        </td>
-                        <td>
-                            <p class="PARRAFO">Campo
-                                num&eacute;rico de 4 d&iacute;gitos, obligatorio, en el cual se registra el
-                                c&oacute;digo que identifica cada uno de los diferentes esquemas de amortizaci&oacute;n
-                                parametrizados.</p>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td class="titletable">
-                            <p class="SUBTITULO">Nombre
-                                </p>
-                        </td>
-                        <td>
-                            <p class="PARRAFO">Este
-                                campo alfanum&eacute;rico de 30 posiciones, obligatorio, permite registrar el nombre del
-                                esquema asociado con el c&oacute;digo anterior.</p>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td class="titletable">
-                            <p class="SUBTITULO">Abreviatura
-                                </p>
-                        </td>
-                        <td>
-                            <p class="PARRAFO">Campo alfanum&eacute;rico obligatorio de hasta 10 posiciones en el que se
-                                indica una abreviatura para identificar el esquema que se est&aacute; parametrizando.
-                            </p>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td class="titletable">
-                            <p class="SUBTITULO">Descripci&oacute;n
-                                </p>
-                        </td>
-                        <td>
-                            <p class="PARRAFO">En este campo de alfanum&eacute;rico de hasta 1000 caracteres, no
-                                obligatorio, se puede describir y/o ejemplificar cada esquema de amortizaci&oacute;n con
-                                el fin de hacer expl&iacute;cito o entendible la manera de operar del mismo.</p>
-                        </td>
-                    </tr>
-                </table>
-                <p class="PARRAFO">
-                <p><span class="SUBTITULO">Actualizar:</span> si el usuario selecciona un registro e invoca la
-                    opci&oacute;n Actualizar, se despliega un formulario en el cual el &uacute;nico campo NO modificable
-                    es el C&oacute;digo.</p>
-                <p class="TITLE"><img src="../img/NUF_007E2.PNG" 320" height="252"></p>
+                <p class="PARRAFO">A trav&eacute;s de este formulario, se
+                    efect&uacute;a la parametrizaci&oacute;n de los
+                    diferentes esquemas de amortizaci&oacute;n que pueden ser
+                    asociados a los <a
+                        href="MEH_002B.html">productos</a> de la entidad y que
+                    determinar&aacute;n la manera en la
+                    cual se har&aacute; la liquidaci&oacute;n de las
+                    obligaciones contra&iacute;das por los clientes.</p>
+                <p class="TITLE"><img src="../img/NUF_007E.PNG"></p>
 
-    </section>
-    <script src="../js/menu.js"></script>
-</body>
-<div id="footerContainer"></div>
-<script>
+                <p class="PARRAFO">El formulario contiene las opciones
+                    Actualizar, Eliminar y Adicionar.</p>
+                <p class="PARRAFO"><span class="SUBTITULO">Adicionar:</span> si
+                    el usuario invoca la opci&oacute;n
+                    Adicionar se despliega un nuevo formulario con los
+                    siguientes campos.</p>
+                <p class="TITLE"><img src="../img/NUF_007E1.PNG"></p>
+
+                <div class="PARRAFO">
+                    <p class="TITLE">Descripci&oacute;n de campos</p>
+                    <table>
+                        <tr>
+                            <td class="titletable">
+                                <p class="SUBTITULO">C&oacute;digo
+                                </p>
+                            </td>
+                            <td>
+                                <p class="PARRAFO">Campo
+                                    num&eacute;rico de 4 d&iacute;gitos,
+                                    obligatorio, en el cual se registra el
+                                    c&oacute;digo que identifica cada uno de los
+                                    diferentes esquemas de amortizaci&oacute;n
+                                    parametrizados.</p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="titletable">
+                                <p class="SUBTITULO">Nombre
+                                </p>
+                            </td>
+                            <td>
+                                <p class="PARRAFO">Este
+                                    campo alfanum&eacute;rico de 30 posiciones,
+                                    obligatorio, permite registrar el nombre del
+                                    esquema asociado con el c&oacute;digo
+                                    anterior.</p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="titletable">
+                                <p class="SUBTITULO">Abreviatura
+                                </p>
+                            </td>
+                            <td>
+                                <p class="PARRAFO">Campo alfanum&eacute;rico
+                                    obligatorio de hasta 10 posiciones en el que
+                                    se
+                                    indica una abreviatura para identificar el
+                                    esquema que se est&aacute; parametrizando.
+                                </p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="titletable">
+                                <p class="SUBTITULO">Descripci&oacute;n
+                                </p>
+                            </td>
+                            <td>
+                                <p class="PARRAFO">En este campo de
+                                    alfanum&eacute;rico de hasta 1000
+                                    caracteres, no
+                                    obligatorio, se puede describir y/o
+                                    ejemplificar cada esquema de
+                                    amortizaci&oacute;n con
+                                    el fin de hacer expl&iacute;cito o
+                                    entendible la manera de operar del
+                                    mismo.</p>
+                            </td>
+                        </tr>
+                    </table>
+                    <p class="PARRAFO">
+                        <p><span class="SUBTITULO">Actualizar:</span> si el
+                            usuario selecciona un registro e invoca la
+                            opci&oacute;n Actualizar, se despliega un formulario
+                            en el cual el &uacute;nico campo NO modificable
+                            es el C&oacute;digo.</p>
+                        <p class="TITLE"><img src="../img/NUF_007E2.PNG"></p>
+
+                    </section>
+                    <script src="../js/menu.js"></script>
+                </body>
+                <div id="footerContainer"></div>
+                <script>
   fetch('footer.html')
     .then(response => response.text())
     .then(html => {
@@ -116,4 +133,4 @@
     });
 </script>
 
-</html>
+            </html>

@@ -1,14 +1,14 @@
 <!DOCTYPE html>
 <html lang="es">
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>BANKBU®</title>
-    <link rel="stylesheet" href="../css/pages.css">
-    <link rel="stylesheet" href="../css/style.css">
-    <link rel="icon" href="../img/ACQUIRER-logo.JPG" type="image/x-icon">
-    <style>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>BANKBU®</title>
+        <link rel="stylesheet" href="../css/pages.css">
+        <link rel="stylesheet" href="../css/style.css">
+        <link rel="icon" href="../img/ACQUIRER-logo.JPG" type="image/x-icon">
+        <style>
         section p {
             width: 625px;
         }
@@ -16,63 +16,71 @@
             width: 100%;
         }
     </style>
-</head>
+    </head>
 
-<body>
+    <body>
 
-    <header>
-        <img class="logo" src="../img/logoBankbu_.PNG" alt="Logo de Mi Empresa">
-        <div id="menuBtn">
-            <img class="TITLE" src="../img/menu.PNG" alt="Botón de Menú ">
-        </div>
-    </header>
-      <div id="menuContainer"></div>
-  <script>
+        <header>
+            <img class="logo" src="../img/logoBankbu_.PNG"
+                alt="Logo de Mi Empresa">
+            <div id="menuBtn">
+                <img class="TITLE" src="../img/menu.PNG" alt="Botón de Menú ">
+            </div>
+        </header>
+        <div id="menuContainer"></div>
+        <script>
     fetch('menu.html')
       .then(response => response.text())
       .then(html => {
         document.getElementById('menuContainer').innerHTML = html;
       });
   </script>
-    <section>
-        <div>
-            <p class="TITLE">Configuración de parámetros:
-            </p>
+        <section>
+            <div>
+                <p class="TITLE">Configuración de parámetros:
+                </p>
 
+                <p>Este bloque contiene los principales parámetros utilizados
+                    por el sistema desde el punto de vista
+                    operativo y los datos registrados en estas opciones
+                    constituyen la entrada para múltiples campos
+                    contenidos en los diversos formularios que es necesario
+                    diligenciar para el correcto funcionamiento del
+                    sistema.
+                </p>
 
-            <p>Este bloque contiene los principales parámetros utilizados por el sistema desde el punto de vista
-                operativo y los datos registrados en estas opciones constituyen la entrada para múltiples campos
-                contenidos en los diversos formularios que es necesario diligenciar para el correcto funcionamiento del
-                sistema.
-            </p>
+                <p class="TITLE">Parámetros de operación </p>
 
-            <p class="TITLE">Parámetros de operación </p>
+                <li><a href="INH_014B.html">Causales de rechazo</a></li>
+                <li><a href="NUH_016B.html">Causales de rechazo de
+                        transacciones</a></li>
+                <li><a href="CAH_003B.html">Ciclos de facturación</a></li>
+                <li><a href="NUH_048B.html">Conceptos cubiertos por el
+                        pago</a></li>
+                <li><a href="CAH_002B.html">Estados y bloqueos</a></li>
+                <li><a href="NUH_071B.html">Nodos facturación</a></li>
+                <li><a href="NUH_017B.html">Novedades administrativas</a></li>
+                <li><a href="NUH_027B.html">Origen de transacciones</a></li>
+                <li><a href="NUH_050B.html">Parámetros de captura</a></li>
+                <li><a href="INH_003B.html">Parámetros de captura por
+                        franquicia</a></li>
+                <li><a href="INH_012B.html">Parámetros del compensador</a></li>
+                <li><a href="NUH_097B.html">Parámetros generales</a></li>
+                <li><a href="NUH_055B.html">Parámetros operativos</a></li>
+                <li><a href="PLH_010B.html">Parámetros realce</a></li>
+                <li><a href="CAH_007B.html">Prioridad de aplicación de
+                        pagos</a></li>
+                <li><a href="INH_031B.html">Traductor de transacciones</a></li>
+                <li><a href="MEH_003B.html">Transacciones por empresa</a></li>
 
-            <li><a href="INH_014B.html">Causales de rechazo</a></li>
-            <li><a href="NUH_016B.html">Causales de rechazo de transacciones</a></li>
-            <li><a href="CAH_003B.html">Ciclos de facturación</a></li>
-            <li><a href="NUH_048B.html">Conceptos cubiertos por el pago</a></li>
-            <li><a href="CAH_002B.html">Estados y bloqueos</a></li>
-            <li><a href="NUH_071B.html">Nodos facturación</a></li>
-            <li><a href="NUH_017B.html">Novedades administrativas</a></li>
-            <li><a href="NUH_027B.html">Origen de transacciones</a></li>
-            <li><a href="NUH_050B.html">Parámetros de captura</a></li>
-            <li><a href="INH_003B.html">Parámetros de captura por franquicia</a></li>
-            <li><a href="INH_012B.html">Parámetros del compensador</a></li>
-            <li><a href="NUH_097B.html">Parámetros generales</a></li>
-            <li><a href="NUH_055B.html">Parámetros operativos</a></li>
-            <li><a href="PLH_010B.html">Parámetros realce</a></li>
-            <li><a href="CAH_007B.html">Prioridad de aplicación de pagos</a></li>
-            <li><a href="INH_031B.html">Traductor de transacciones</a></li>
-            <li><a href="MEH_003B.html">Transacciones por empresa</a></li>
-
-        </div>
-        <img class="ImagenBankbu" src="../img/bankbu-removebg-preview.PNG" alt="Imagen de la empresa">
-    </section>
-    <script src="../js/menu.js"></script>
-</body>
-<div id="footerContainer"></div>
-<script>
+            </div>
+            <img class="ImagenBankbu" src="../img/bankbu-removebg-preview.PNG"
+                alt="Imagen de la empresa">
+        </section>
+        <script src="../js/menu.js"></script>
+    </body>
+    <div id="footerContainer"></div>
+    <script>
   fetch('footer.html')
     .then(response => response.text())
     .then(html => {

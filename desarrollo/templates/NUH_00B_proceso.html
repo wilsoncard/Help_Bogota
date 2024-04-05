@@ -1,15 +1,15 @@
 <!DOCTYPE html>
 <html lang="es">
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>BANKBU®</title>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>BANKBU®</title>
 
-    <link rel="stylesheet" href="../css/pages.css">
-    <link rel="stylesheet" href="../css/style.css">
-    <link rel="icon" href="../img/ACQUIRER-logo.JPG" type="image/x-icon">
-    <style>
+        <link rel="stylesheet" href="../css/pages.css">
+        <link rel="stylesheet" href="../css/style.css">
+        <link rel="icon" href="../img/ACQUIRER-logo.JPG" type="image/x-icon">
+        <style>
         footer {
             position: fixed;
         }
@@ -22,18 +22,19 @@
             width: 100%;
         }
     </style>
-</head>
+    </head>
 
-<body>
+    <body>
 
-    <header>
-        <img class="logo" src="../img/logoBankbu_.PNG" alt="Logo de Mi Empresa">
-        <div id="menuBtn">
-            <img class="TITLE" src="../img/menu.PNG" alt="Botón de Menú ">
-        </div>
-    </header>
-      <div id="menuContainer"></div>
-  <script>
+        <header>
+            <img class="logo" src="../img/logoBankbu_.PNG"
+                alt="Logo de Mi Empresa">
+            <div id="menuBtn">
+                <img class="TITLE" src="../img/menu.PNG" alt="Botón de Menú ">
+            </div>
+        </header>
+        <div id="menuContainer"></div>
+        <script>
     fetch('menu.html')
       .then(response => response.text())
       .then(html => {
@@ -41,44 +42,46 @@
       });
   </script>
 
-    <section>
-        <div>
-            <p class="TITLE">Procesos:
-            </p>
+        <section>
+            <div>
+                <p class="TITLE">Procesos:
+                </p>
 
+                <p>Este submenú contiene todas las opciones que le permiten a la
+                    entidad parametrizar los procesos batch,
+                    asociarlos en grupos, crear relaciones de precedencia entre
+                    ellos y determinar la manera como se deben
+                    ejecutar.
+                </p>
 
-            <p>Este submenú contiene todas las opciones que le permiten a la entidad parametrizar los procesos batch,
-                asociarlos en grupos, crear relaciones de precedencia entre ellos y determinar la manera como se deben
-                ejecutar.
-            </p>
+                <a href="OPH_008B.html">
+                    <h3>Definición objetos lógicos</h3>
+                </a>
+                <a href="OPH_001B.html">
+                    <h3>Definición grupos de procesos</h3>
+                </a>
+                <a href="OPH_009B.html">
+                    <h3>Ejecución grupos en malla</h3>
+                </a>
+                <a href="OPH_007E.html">
+                    <h3>Ejecución grupos independientes</h3>
+                </a>
+                <a href="OPH_006B.html">
+                    <h3>Grupos en espera de confirmación</h3>
+                </a>
+                <a href="OPH_003B.html">
+                    <h3>Historia automatización procesos</h3>
+                </a>
 
-            <a href="OPH_008B.html">
-                <h3>Definición objetos lógicos</h3>
-            </a>
-            <a href="OPH_001B.html">
-                <h3>Definición grupos de procesos</h3>
-            </a>
-            <a href="OPH_009B.html">
-                <h3>Ejecución grupos en malla</h3>
-            </a>
-            <a href="OPH_007E.html">
-                <h3>Ejecución grupos independientes</h3>
-            </a>
-            <a href="OPH_006B.html">
-                <h3>Grupos en espera de confirmación</h3>
-            </a>
-            <a href="OPH_003B.html">
-                <h3>Historia automatización procesos</h3>
-            </a>
+            </div>
+            <img class="ImagenBankbu" src="../img/bankbu-removebg-preview.PNG"
+                alt="Imagen de la empresa">
 
-        </div>
-        <img class="ImagenBankbu" src="../img/bankbu-removebg-preview.PNG" alt="Imagen de la empresa">
-
-    </section>
-    <script src="../js/menu.js"></script>
-</body>
-<div id="footerContainer"></div>
-<script>
+        </section>
+        <script src="../js/menu.js"></script>
+    </body>
+    <div id="footerContainer"></div>
+    <script>
   fetch('footer.html')
     .then(response => response.text())
     .then(html => {

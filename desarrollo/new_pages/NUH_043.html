@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="es">
+
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BANKBU®</title>
+    <link rel="stylesheet" href="../css/pages.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="icon" href="../img/ACQUIRER-logo.JPG" type="image/x-icon">
+  </head>
+
+  <body>
+    <header>
+      <img class="logo" src="../img/logoBankbu_.PNG" alt="Logo de Mi Empresa">
+      <div id="menuBtn">
+        <img class="TITLE" src="../img/menu.PNG" alt="Botón de Menú ">
+      </div>
+    </header>
+    <div id="menuContainer"></div>
+    <script>
+    fetch('menu.html')
+      .then(response => response.text())
+      .then(html => {
+        document.getElementById('menuContainer').innerHTML = html;
+      });
+  </script>
+    <section>
+      <div>
+
+  <p class="TITLE">Indicadores económicos</p>
+ 
+
+  <p class="PARRAFO">Mediante esta funci�n se habilita la
+  consulta y mantenimiento de una tabla en la cual se almacena el valor
+  absoluto, para cada uno de los indicadores econ�micos &quot;oficiales&quot; o
+  para los definidos por la corporaci�n, vigentes para o a partir de la fecha
+  se�alada. El valor absoluto puede corresponder a un valor base o ser el
+  resultado de una f�rmula previamente definida en la opci�n de <i
+ ><a href="NUH_036E.html">Tipos de tasas e
+  indicadores</a></i> en las Tablas corporativas. Se dispone, adicionalmente,
+  de un utilitario, invocado mediante el bot�n especial, que facilita la r�plica
+  de los valores de los indicadores definidos para el d�a inmediatamente
+  anterior.</p>
+  
+  <p class="TITLE"><img src="NUH_043E_image002.jpg"></p>
+ 
+  <p class="TITLE"><a name="BL_VALORES_TASAS"></a> Descripción de Campos</p>
+ 
+<table>
+ <tr>
+  <td class="titletable">
+  <p class="SUBTITULO">Indicador</p>
+  </td>
+  <td>
+  <p class="PARRAFO">Campo que contiene lista de valores de la
+  que se selecciona el código (o nombre) asignado a cada uno de los indicadores
+  económicos previamente definidos. Al ingresar un código este es validado
+  frente a la lista. Aquellos que no aparecen en la lista corresponden a
+  indicadores que son el resultado de cálculos basados en algunas de éstas
+  cifras.</p>
+  </td>
+ </tr>
+ <tr>
+  <td class="titletable">
+  <p class="SUBTITULO">F. ingreso</p>
+  </td>
+  <td>
+  <p class="PARRAFO">Campo que registra la fecha selecciona del
+  calendario apareciendo por defecto.</p>
+  </td>
+ </tr>
+ <tr>
+  <td class="titletable">
+  <p class="SUBTITULO">Valor</p>
+  </td>
+  <td>
+  <p class="PARRAFO">Campo numérico obligatorio, que en un máximo
+  de siete enteros y dos decimales permite registrar el monto o valor en moneda
+  oficial equivalente a una unidad de la moneda con la que se está
+  relacionando.</p>
+  </td>
+ </tr>
+</table>
+
+  <p class="TITLE">Opciones en Modo Consulta</p>
+
+<table>
+ <tr>
+  <td class="titletable">
+  <p><a href="NUH_INTE.html#Acciones"></a>Acciones</p>
+  </td>
+  <td>
+  <p class="PARRAFO">Imprimir, Configurar Impresión, Salir</p>
+  </td>
+  <td>
+  <p><a href="NUH_INTE.html#BotAccion"><img src="../img/BotImprimir.gif"></a>
+    <a href="NUH_INTE.html#BotAccion"><img src="../img/BotConfigurar.gif"></a>
+    <a href="NUH_INTE.html#BotAccion"><img src="../img/BotSalir.gif"></a></p>
+  </td>
+ </tr>
+ <tr>
+  <td class="titletable">
+  <p class="SUBTITULO"><a href="NUH_INTE.html#Modulos"></a> Módulos</p>
+  </td>
+  <td>
+  <p class="PARRAFO">Según atribuciones del perfil</p>
+  </td>
+  <td>
+  <p>&nbsp;</p>
+  </td>
+ </tr>
+ <tr>
+  <td class="titletable">
+  <p class="SUBTITULO"><a href="NUH_INTE.html#Navegacion"></a>Navegación</p>
+  </td>
+  <td>
+  <p class="PARRAFO">Registro anterior, Registro Siguiente</p>
+  </td>
+  <td>
+  <p><a href="NUH_INTE.html#BotNavegacion"><img src="../img/BotRegAnterior.gif"></a>
+    <a href="NUH_INTE.html#BotNavegacion"><img src="../img/BotRegSiguiente.gif"></a></p>
+  </td>
+ </tr>
+ <tr>
+  <td class="titletable">
+  <p class="SUBTITULO"><a href="NUH_INTE.html#Utilidades"></a> Utilidades</p>
+  </td>
+  <td>
+  <p class="PARRAFo">Cambio de clave, Cambio de idioma y otras
+  según atribuciones del perfil</p>
+  </td>
+  <td>
+  <p>&nbsp;</p>
+  </td>
+ </tr>
+ <tr>
+  <td class="titletable">
+  <p class="SUBTITULO"><a href="NUH_INTE.html#Ayuda"></a>Ayuda</p>
+  </td>
+  <td>
+  <p class="PARRAFO">Lista de Valores, Auditoria, Muestra
+  Teclas, Manual del Usuario, Acerca de Open Card</p>
+  </td>
+  <td>
+  <p><a href="NUH_INTE.html#BotLista"><img src="../img/BotListaValores.gif"></a>
+    <a href="NUH_INTE.html#BotAuditoria"><img src="../img/BotAuditoria.gif"></a>
+    <a href="NUH_INTE.html#BotAyuda"><img src="../img/BotAyuda.gif"></a>
+    <a href="NUH_INTE.html#BotAcercade"><img src="../img/BotAcercade.gif"></a></p>
+  </td>
+ </tr>
+ <tr>
+  <td class="titletable">
+  <p class="SUBTITULO"><a href="NUH_INTE.html#Window"></a> Window</p>
+  </td>
+  <td>
+  <p class="PARRAFO">Cascade, Tile, Arrange, Icons, Ventanas
+  Abiertas</p>
+  </td>
+  <td>
+  <p>&nbsp;</p>
+  </td>
+ </tr>
+</table>
+
+  <p class="TITLE">Opciones en Modo Total</p>
+
+
+<table>
+ <tr>
+  <td class="titletable">
+  <p class="SUBTITULO"><a href="NUH_INTE.html#Acciones"></a>Acciones</p>
+  </td>
+  <td>
+  <p class="PARRAFO">Grabar, Imprimir, Configurar Impresión,
+  Salir</p>
+  </td>
+  <td>
+  <p><a href="NUH_INTE.html#BotAccion"><img src="../img/BotGrabar.gif"></a>
+    <a href="NUH_INTE.html#BotAccion"><img  src="../img/BotImprimir.gif"></a>
+    <a href="NUH_INTE.html#BotAccion"><img  src="../img/BotConfigurar.gif"></a>
+    <a href="NUH_INTE.html#BotAccion"><img src="../img/BotSalir.gif"></span></a></p>
+  </td>
+ </tr>
+ <tr>
+  <td class="titletable">
+  <p class="SUBTITULO"><a href="NUH_INTE.html#Modulos"></a>Módulos</p>
+  </td>
+  <td>
+  <p class="PARRAFO">Seg�n atribuciones del perfil</p>
+  </td>
+  <td>
+  <p>&nbsp;</p>
+  </td>
+ </tr>
+ <tr>
+  <td class="titletable">
+  <p><a href="NUH_INTE.html#Editar"></a>Editar</p>
+  </td>
+  <td>
+  <p>Cortar, Copiar, Pegar</p>
+  </td>
+  <td>
+  <p><a href="NUH_INTE.html#BotEditar"><img src="../img/BotCortar.gif"></a><a
+  href="NUH_INTE.html#BotEditar"><img src="../img/BotCopiar.gif"></a>
+  <a href="NUH_INTE.html#BotEditar"><img src="../img/BotPegar.gif"></a></p>
+  </td>
+ </tr>
+ <tr>
+  <td class="titletable">
+  <p class="SUBTITULO"><a href="NUH_INTE.html#Navegacion"></a> Navegación</p>
+  </td>
+  <td>
+  <p class="PARRAFO">Registro anterior, Registro Siguiente</p>
+  </td>
+  <td>
+  <p><a href="NUH_INTE.html#BotNavegacion"><img src="../img/BotRegAnterior.gif"></a>
+    <a href="NUH_INTE.html#BotNavegacion"><img src="../img/BotRegSiguiente.gif"></a></p>
+  </td>
+ </tr>
+ <tr>
+  <td class="titletable">
+  <p class="SUBTITULO"><a href="NUH_INTE.html#Utilidades"></a> Utilidades</p>
+  </td>
+  <td>
+  <p class="PARRAFO">Cambio de clave, Cambio de idioma y otras
+  según atribuciones del perfil</p>
+  </td>
+  <td>
+  <p>&nbsp;</p>
+  </td>
+ </tr>
+ <tr>
+  <td class="titletable">
+  <p class="SUBTITULO"><a href="NUH_INTE.html#Registro"></a> Registro</p>
+  </td>
+  <td>
+  <p class="PARRAFO">Crear, Borrar, Limpiar</p>
+  </td>
+  <td>
+  <p><a href="NUH_INTE.html#BotRegistro"><img src="../img/BotCreaReg.gif"></a>
+    <a href="NUH_INTE.html#BotRegistro"><img src="../img/BotBorraReg.gif"></a>
+    <a href="NUH_INTE.html#BotRegistro"><img src="../img/BotLimpiaReg.gif"></a></p>
+  </td>
+ </tr>
+ <tr>
+  <td class="titletable">
+  <p class="SUBTITULO"><a href="NUH_INTE.html#Ayuda"></a> Ayuda</p>
+  </td>
+  <td>
+  <p class="PARRAFO">Limpiar Pantalla, Lista de Valores,
+  Auditoria, Muestra Teclas, Manual del Usuario, Acerca de Open Card</p>
+  </td>
+  <td>
+  <p><a href="NUH_INTE.html#BotLimpiar"><img src="../img/BotLimpiaPant.gif"></a>
+    <a href="NUH_INTE.html#BotLista"><img src="../img/BotListaValores.gif"></a>
+    <a href="NUH_INTE.html#BotAuditoria"><img src="../img/BotAuditoria.gif"></a>
+    <a href="NUH_INTE.html#BotAyuda"><img src="../img/BotAyuda.gif"></a>
+    <a href="NUH_INTE.html#BotAcercade"><img src="../img/BotAcercade.gif"></a></p>
+  </td>
+ </tr>
+ <tr>
+  <td class="titletable">
+  <p class="SUBTITULO"><a href="NUH_INTE.html#Window"></a> Window</p>
+  </td>
+  <td>
+  <p class="PARRAFO">Cascade, Tile, Arrange, Icons, Ventanas
+  Abiertas</p>
+  </td>
+  <td>
+  <p>&nbsp;</p>
+  </td>
+ </tr>
+</table>
+
+  <p class="TITLE">Opciones Especiales</p>
+ 
+
+<table>
+ <tr>
+  <td class="titletable">
+  <p class="TITLE"><img src="NUH_043E_image003.gif"></p>
+  </td>
+  <td>
+  <p class="PARRAFO">Copiar indicadores día anterior. Utilitario que permite duplicar todos los
+  indicadores definidos para el día inmediatamente anterior, lo que minimiza el
+  riesgo de error.</p>
+  </td>
+ </tr>
+ <tr>
+  <td class="titletable">
+  <p class="TITLE"><img src="../img/BAnterior.gif"><img src="../img/BSiguiente.gif"></p>
+  </td>
+  <td >
+  <p class="PARRAFO">Permiten
+  retroceder o avanzar el calendario en un mes (mes anterior, mes siguiente).</p>
+  </td>
+ </tr>
+ <tr>
+  <td class="titletable">
+  <p class="TITLE"><img src="../img/B2Anterior.gif"><img src="../img/B2Siguiente.gif"></p>
+  </td>
+  <td>
+  <p class="PARRAFO">Permiten
+  retroceder o avanzar el calendario en un año (año anterior, año siguiente)</p>
+  </td>
+ </tr>
+</table>
+
+      </div>
+      </section>
+      <script src="../js/menu.js"></script>
+      <div id="footerContainer"></div>
+    </body>
+    <script>
+  fetch('footer.html')
+    .then(response => response.text())
+    .then(html => {
+      document.getElementById('footerContainer').innerHTML = html;
+    });
+</script>
+  </html>

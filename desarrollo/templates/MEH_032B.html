@@ -1,14 +1,14 @@
 <!DOCTYPE html>
 <html lang="es">
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>BANKBU®</title>
-    <link rel="stylesheet" href="../css/pages.css">
-    <link rel="stylesheet" href="../css/style.css">
-    <link rel="icon" href="../img/ACQUIRER-logo.JPG" type="image/x-icon">
-    <style>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>BANKBU®</title>
+        <link rel="stylesheet" href="../css/pages.css">
+        <link rel="stylesheet" href="../css/style.css">
+        <link rel="icon" href="../img/ACQUIRER-logo.JPG" type="image/x-icon">
+        <style>
         footer {
             position: fixed;
         }
@@ -22,18 +22,19 @@
             max-width: 100%;
         }
     </style>
-</head>
+    </head>
 
-<body>
+    <body>
 
-    <header>
-        <img class="logo" src="../img/logoBankbu_.PNG" alt="Logo de Mi Empresa">
-        <div id="menuBtn">
-            <img class="TITLE" src="../img/menu.PNG" alt="Botón de Menú ">
-        </div>
-    </header>
-      <div id="menuContainer"></div>
-  <script>
+        <header>
+            <img class="logo" src="../img/logoBankbu_.PNG"
+                alt="Logo de Mi Empresa">
+            <div id="menuBtn">
+                <img class="TITLE" src="../img/menu.PNG" alt="Botón de Menú ">
+            </div>
+        </header>
+        <div id="menuContainer"></div>
+        <script>
     fetch('menu.html')
       .then(response => response.text())
       .then(html => {
@@ -41,42 +42,51 @@
       });
   </script>
 
-    <section>
-        <div>
-            <p class="TITLE">Lealtad
-            </p>
+        <section>
+            <div>
+                <p class="TITLE">Lealtad
+                </p>
 
+                <p class="PARRAFO">Mediante este módulo, se habilita la
+                    definición de múltiples planes de lealtad o <a
+                        href="MEH_006B.html">esquemas
+                        de puntaje</a> que pueden operar en forma simultánea
+                    generando puntos a clientes y tarjetas, los
+                    cuales son
+                    posteriormente <a href="MEH_014B.html">redimidos</a> por la
+                    entidad o directamente por el cliente para
+                    convertirlos en <a href="MEH_013B.html">premios,</a>
+                    millas o abonos en efectivo a sus cuentas (tarjetas); si por
+                    causa de algún defecto de los premios o las
+                    mercancías estos son devueltos a la entidad, se dispone de
+                    la opción <a href="MEH_015B.html">Reversión
+                        premios</a> para tal
+                    registrar este hecho.
+                </p>
+                <li style="display: none; visibility: hidden;"><a
+                        href="MEH_013B.html">Premios puntaje</a></li>
+                <li style="display: none; visibility: hidden;"><a
+                        href="MEH_006B.html">Esquemas de puntaje</a></li>
+                <li style="display: none; visibility: hidden;"><a
+                        href="MEH_011B.html">Comportamiento esquemas de
+                        puntaje</a></li>
+                <li style="display: none; visibility: hidden;"><a
+                        href="SCH_065B.html">Puntajes por tarjeta</a></li>
+                <li style="display: none; visibility: hidden;"><a
+                        href="MEH_014B.html">Redención de premios</a></li>
+                <li style="display: none; visibility: hidden;"><a
+                        href="MEH_015B.html">Reversión de premios</a></li>
 
-            <p class="PARRAFO">Mediante este módulo, se habilita la definición de múltiples planes de lealtad o <a
-                    href="MEH_006B.html">esquemas
-                    de puntaje</a> que pueden operar en forma simultánea generando puntos a clientes y tarjetas, los
-                cuales son
-                posteriormente <a href="MEH_014B.html">redimidos</a> por la entidad o directamente por el cliente para
-                convertirlos en <a href="MEH_013B.html">premios,</a>
-                millas o abonos en efectivo a sus cuentas (tarjetas); si por causa de algún defecto de los premios o las
-                mercancías estos son devueltos a la entidad, se dispone de la opción <a href="MEH_015B.html">Reversión
-                    premios</a> para tal
-                registrar este hecho.
-            </p>
-            <li><a href="MEH_013B.html">Premios puntaje</a></li>
-            <li><a href="MEH_006B.html">Esquemas de puntaje</a></li>
-            <li><a href="MEH_011B.html">Comportamiento esquemas de puntaje</a></li>
-            <li><a href="SCH_065B.html">Puntajes por tarjeta</a></li>
-            <li><a href="MEH_014B.html">Redención de premios</a></li>
-            <li><a href="MEH_015B.html">Reversión de premios</a></li>
+            </div>
 
+            <img class="ImagenBankbu" src="../img/bankbu-removebg-preview.PNG"
+                alt="Imagen de la empresa">
 
-        </div>
-
-        <img class="ImagenBankbu" src="../img/bankbu-removebg-preview.PNG" alt="Imagen de la empresa">
-
-
-
-    </section>
-    <script src="../js/menu.js"></script>
-</body>
-<div id="footerContainer"></div>
-<script>
+        </section>
+        <script src="../js/menu.js"></script>
+    </body>
+    <div id="footerContainer"></div>
+    <script>
   fetch('footer.html')
     .then(response => response.text())
     .then(html => {
