@@ -45,18 +45,21 @@ ul {
     background-color: #341C8C;
     position: fixed;
     left: -100%;
-    top: 0 vw;
+    top: 0;
     overflow-y: auto;
     transition: 0.5s;
     padding-top: 3vw;
 }
-nav ul{
+
+nav ul {
     width: 15vw;
     max-width: 15vw;
 }
-.main-optionINICIO{
+
+.main-optionINICIO {
     margin-top: 3vw;
 }
+
 nav a {
     padding: 1.5vw;
     text-decoration: none;
@@ -66,27 +69,32 @@ nav a {
     transition: 0.5s;
     border-bottom: 0.1vw solid #5c3aff;
 }
+
 nav ul ul {
     visibility: hidden;
     max-height: 0;
-    overflow: hidden;
+    overflow-y: auto; /* Permitir desplazamiento vertical */
     transition: max-height 0.3s ease-in-out, visibility 0.3s ease-in-out;
 }
-nav ul li{
+
+nav ul li {
     margin-left: -35px;
 }
+
 nav ul li ul {
     visibility: hidden;
     max-height: 0;
-    overflow: hidden;
+    overflow-y: auto; /* Permitir desplazamiento vertical */
     transition: max-height 0.5s ease-in-out, visibility 0.5s ease-in-out, opacity 0.5s ease-in-out;
     opacity: 0;
 }
+
 nav ul li ul.active {
     visibility: visible;
-    max-height: 100vw;
+    max-height: 100%; /* Cambiado de 100vw a 100% */
     opacity: 1;
 }
+
 section div {
     width: 90vw; /* Ajusta según tus necesidades con unidades relativas */
     text-align: justify;
@@ -158,7 +166,10 @@ body.menu-opened footer div img {
 body.menu-opened footer {
     margin-left: 18.5vw; /* Ajusta según el ancho de tu menú con unidades relativas */
 }
-
+.ocultar{
+    visibility: hidden;
+    display: none;
+}
 
    
 @media (max-width: 1300px) {

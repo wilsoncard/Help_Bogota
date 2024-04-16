@@ -1,25 +1,25 @@
 <!DOCTYPE html>
 <html lang="es">
 
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>BANKBU®</title>
-  <link rel="stylesheet" href="../css/pages.css">
-  <link rel="stylesheet" href="../css/style.css">
-  <link rel="icon" href="../img/ACQUIRER-logo.JPG" type="image/x-icon">
-</head>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BANKBU®</title>
+    <link rel="stylesheet" href="../css/pages.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="icon" href="../img/ACQUIRER-logo.JPG" type="image/x-icon">
+  </head>
 
-<body>
+  <body>
 
-  <header>
-    <img class="logo" src="../img/logoBankbu_.PNG" alt="Logo de Mi Empresa">
-    <div id="menuBtn">
-      <img class="TITLE" src="../img/menu.PNG" alt="Botón de Menú ">
-    </div>
-  </header>
+    <header>
+      <img class="logo" src="../img/logoBankbu_.PNG" alt="Logo de Mi Empresa">
+      <div id="menuBtn">
+        <img class="TITLE" src="../img/menu.PNG" alt="Botón de Menú ">
+      </div>
+    </header>
     <div id="menuContainer"></div>
-  <script>
+    <script>
     fetch('menu.html')
       .then(response => response.text())
       .then(html => {
@@ -27,136 +27,151 @@
       });
   </script>
 
-  <section>
-    <div>
-      <p class="TITLE">Bines internacionales</p>
-      <p>Esta funci&oacute;n habilita la consulta y mantenimiento de la tabla que almacena toda la informaci&oacute;n
-        necesaria en la validaci&oacute;n de transacciones realizadas con tarjetas emitidas en el exterior (Bines
-        internacionales). El mantenimiento se realiza a trav&eacute;s del cargue de la cinta enviada
-        peri&oacute;dicamente por el operador (franquicia) y eventualmente de forma manual para resolver movimiento no
-        procesado por falta de actualizaci&oacute;n de la misma tabla.</p>
-      <p class="TITLE"><img src="../img/NUF_018E.PNG"></p>
+    <section>
+      <div>
+        <p class="TITLE">Bines internacionales</p>
+        <p class="PARRAFO">Esta función habilita la consulta y mantenimiento de
+          la estructura,
+          que almacena la información necesaria en la validación de
+          transacciones realizadas con tarjetas emitidas en el exterior (Bines
+          internacionales). El mantenimiento se realiza a través del cargue de
+          la cinta enviada periódicamente por el operador (franquicia) y
+          eventualmente de forma manual para resolver movimiento no procesado
+          por falta de actualización de la misma tabla. El formulario contiene
+          los enlaces: Actualizar, Eliminar, y Adicionar.</p>
+        <p class="TITLE"><img src="../img/NUF_018E.PNG"></p>
 
-      <p class="PARRAFO">El
-        formulario contiene las opciones Actualizar, Eliminar, y Adicionar.</p>
-      <p class="PARRAFO"><span class="SUBTITULO">Adicionar:</span> Si el usuario invoca la opci&oacute;n Adicionar se
-        despliega un formulario con los siguientes campos:</p>
-      <p class="TITLE"><img src="../img/NUF_018E1.PNG"></p>
+        <p class="PARRAFO">El
+          formulario contiene las opciones Actualizar, Eliminar, y
+          Adicionar.</p>
+        <p class="PARRAFO"><span class="SUBTITULO">Adicionar:</span> Al activar
+          el enlace se despliega un formulario con los siguientes campos:/p>
+          <p class="TITLE"><img src="../img/NUF_018E1.PNG"></p>
 
-      <table>
-        <tr>
-          <td class="titletable">
-            <p><span class="SUBTITULO">Franquicia</span>
+          <table>
+            <tr>
+              <td class="titletable">
+                <p class="PARRAFO"><span class="SUBTITULO">Franquicia</span>
 
-              </p>
-          </td>
-          <td>
-            <p class="PARRAFO">Campo obligatorio, con lista
-              de valores de la cual se selecciona la <a href="NUH_033B.html">franquicia</a> para la que se define el
-              rango o bin internacional en particular,
-              desplegando el nombre de la misma.</p>
-          </td>
-        </tr>
-        <tr>
-          <td class="titletable">
-            <p><span class="SUBTITULO">Bin</p>
-          </td>
-          <td>
-            <p>Campo
-              num&eacute;rico obligatorio que almacena, en un m&aacute;ximo
-              de 8 caracteres, el Bank Identification Number BIN correspondiente
-              para cada rango de tarjetas.</p>
-          </td>
-        </tr>
-        <tr>
-          <td class="titletable">
-            <p><span class="SUBTITULO">Rango inferior</span>
+                </p>
+              </td>
+              <td>
+                <p class="PARRAFO">Campo obligatorio, con lista
+                  de valores de la cual se selecciona la <a
+                    href="NUH_033B.html">franquicia</a> para la que se define el
+                  rango o bin internacional en particular,
+                  desplegando el nombre de la misma.</p>
+              </td>
+            </tr>
+            <tr>
+              <td class="titletable">
+                <p class="PARRAFO"><span class="SUBTITULO">Bin</p>
+                </td>
+                <td>
+                  <p class="PARRAFO">Campo
+                    numérico obligatorio que almacena, en un máximo
+                    de 8 caracteres, el Bank Identification Number BIN
+                    correspondiente
+                    para cada rango de tarjetas.</p>
+                </td>
+              </tr>
+              <tr>
+                <td class="titletable">
+                  <p class="PARRAFO"><span class="SUBTITULO">Rango
+                      inferior</span>
 
-              </p>
-          </td>
-          <td>
-            <p>En
-                este campo alfanum&eacute;rico de 16 caracteres, obligatorio,
-                se registra el l&iacute;mite inferior o n&uacute;mero de tarjeta
-                a partir del cual se define el rango acorde a cada Bin.</p>
-          </td>
-        </tr>
-        <tr>
-          <td class="titletable">
-            <p><span class="SUBTITULO">Rango superior</span>
+                  </p>
+                </td>
+                <td>
+                  <p class="PARRAFO">En
+                    este campo alfanumérico de 16 caracteres, obligatorio,
+                    se registra el límite inferior o número de tarjeta
+                    a partir del cual se define el rango acorde a cada Bin.</p>
+                </td>
+              </tr>
+              <tr>
+                <td class="titletable">
+                  <p class="PARRAFO"><span class="SUBTITULO">Rango
+                      superior</span>
 
-              </p>
-          </td>
-          <td>
-            <p>Campo
-                alfanum&eacute;rico de 16 caracteres, obligatorio, en el que se
-                indica el l&iacute;mite superior o n&uacute;mero de tarjeta hasta
-                el cual se define el rango acorde a cada Bin.</p>
-          </td>
-        </tr>
-        <tr>
-          <td class="titletable">
-            <p><span class="SUBTITULO">Longitud bin</span>
+                  </p>
+                </td>
+                <td>
+                  <p class="PARRAFO">Campo
+                    alfanumérico de 16 caracteres, obligatorio, en el que se
+                    indica el límite superior o número de tarjeta hasta
+                    el cual se define el rango acorde a cada Bin.</p>
+                </td>
+              </tr>
+              <tr>
+                <td class="titletable">
+                  <p class="PARRAFO"><span class="SUBTITULO">Longitud
+                      bin(LB)</span>
 
-              </p>
-          </td>
-          <td>
-            <p>Campo
-                num&eacute;rico de una posici&oacute;n, obligatorio, que ilustra
-                la longitud del bin dentro del n&uacute;mero de la tarjeta.</p>
-          </td>
-        </tr>
-        <tr>
-          <td class="titletable">
-            <p><span class="SUBTITULO">Longitud tarjeta</span>
+                  </p>
+                </td>
+                <td>
+                  <p class="PARRAFO">Campo
+                    numérico de una posición, obligatorio, que ilustra
+                    la longitud del bin dentro del número de la tarjeta.</p>
+                </td>
+              </tr>
+              <tr>
+                <td class="titletable">
+                  <p class="PARRAFO"><span class="SUBTITULO">Longitud
+                      tarjeta(LT)</span>
 
-              </p>
-          </td>
-          <td>
-            <p>En
-                este campo num&eacute;rico de dos d&iacute;gitos, obligatorio,
-                se almacena la cantidad m&aacute;xima de d&iacute;gitos que componen
-                la cuenta del tarjetahabiente, es decir, el n&uacute;mero de la
-                tarjeta.</p>
-          </td>
-        </tr>
-        <tr>
-          <td class="titletable">
-            <p><span class="SUBTITULO">Tipo</span>
-              </p>
-          </td>
-          <td>
-            <p>Campo
-                alfanum&eacute;rico de un d&iacute;gito, opcional, el cual contiene
-                un indicador asignado por la franquicia a cada bin para identificar
-                el tipo de producto.</p>
-          </td>
-        </tr>
-        <tr>
-          <td class="titletable">
-            <p><span class="SUBTITULO">D&iacute;gito
-                  de chequeo</p>
-          </td>
-          <td>
-            <p>Campo
-                que contiene lista de valores de la que se puede seleccionar el
-                algoritmo mediante el cual se realiza la verificaci&oacute;n del
-                d&iacute;gito de chequeo.</p>
-          </td>
-        </tr>
-      </table>
-      <p class="PARRAFO"><span class="PARRAFO"><span class="SUBTITULO">Actualizar:</span></span> Si el
-          usuario invoca la opci&oacute;n Actualizar se despliega un nuevo formulario
-          en el cual los &uacute;nicos campos modificables son: Franquicia, Rango
-          superior, Longitud bin, Longitud tarjeta, Tipo, D&iacute;gito
-          de chequeo.</p>
-      <p class="TITLE"><img src="../img/NUF_018E2.PNG"></p>
+                  </p>
+                </td>
+                <td>
+                  <p class="PARRAFO">En
+                    este campo numérico de dos dígitos, obligatorio,
+                    se almacena la cantidad máxima de dígitos que componen
+                    la cuenta del tarjetahabiente, es decir, el número de la
+                    tarjeta.</p>
+                </td>
+              </tr>
+              <tr>
+                <td class="titletable">
+                  <p class="PARRAFO"><span class="SUBTITULO">Tipo(T)</span>
+                  </p>
+                </td>
+                <td>
+                  <p class="PARRAFO">Campo
+                    alfanumérico de un dígito, opcional, el cual contiene
+                    un indicador asignado por la franquicia a cada bin para
+                    identificar
+                    el tipo de producto.</p>
+                </td>
+              </tr>
+              <tr>
+                <td class="titletable">
+                  <p class="PARRAFO"><span class="SUBTITULO">Dígito
+                      de chequeo</p>
+                  </td>
+                  <td>
+                    <p class="PARRAFO">Campo
+                      que contiene lista de valores de la que se puede
+                      seleccionar
+                      el
+                      algoritmo mediante el cual se realiza la verificación del
+                      dígito de chequeo.</p>
+                  </td>
+                </tr>
+              </table>
+              <p class="PARRAFO"><span class="PARRAFO"><span
+                    class="SUBTITULO">Actualizar:</span></span> Al activar el
+                enlace se despliega un nuevo formulario, en el cual los únicos
+                campos modificables son: Franquicia, Rango inferior, Rango
+                superior, Longitud bin, Longitud tarjeta, Tipo y Dígito de
+                chequeo.</p>
+              <p class="TITLE"><img src="../img/NUF_018E2.PNG"></p>
 
-  </section>
-  <script src="../js/menu.js"></script>
-</body>
-<div id="footerContainer"></div>
-<script>
+            </section>
+            <script src="../js/menu.js"></script>
+          </body>
+          <div id="footerContainer"></div>
+          <script>
   fetch('footer.html')
     .then(response => response.text())
     .then(html => {
@@ -164,4 +179,4 @@
     });
 </script>
 
-</html>
+        </html>

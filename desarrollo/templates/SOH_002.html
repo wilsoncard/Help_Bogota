@@ -1,0 +1,485 @@
+<!DOCTYPE html>
+<html lang="es">
+
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BANKBU®</title>
+    <link rel="stylesheet" href="../css/pages.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="icon" href="../img/ACQUIRER-logo.JPG" type="image/x-icon">
+  </head>
+
+  <body>
+    <header>
+      <img class="logo" src="../img/logoBankbu_.PNG" alt="Logo de Mi Empresa">
+      <div id="menuBtn">
+        <img class="TITLE" src="../img/menu.PNG" alt="Botón de Menú ">
+      </div>
+    </header>
+    <div id="menuContainer"></div>
+    <script>
+    fetch('menu.html')
+      .then(response => response.text())
+      .then(html => {
+        document.getElementById('menuContainer').innerHTML = html;
+      });
+  </script>
+  
+    <section>
+      <div>
+
+ <p class="TITLE">Parámetros</p>
+
+ <p class="PARRAFO">Mediante esta
+ función se definen, por producto, las diferentes clases o tipos de solicitud ofrecidas o disponibles para éstos y, las etapas que deben surtir.</span></p>
+ <p class="TITLE"><img src="Images\SOF_002E.gif"></p>
+ 
+ <p class="TITLE"><a name="BL_DEFINICION_PRODUCTOS"></a>Descripción de Campos</p>
+ 
+<table>
+<tr>
+ <td class="titletable">
+ <p class="SUBTITULO">Bin</p>
+ </td>
+ <td>
+ <p class="PARRAFO">Información que
+ aparece por defecto alimentada de los datos registrados en el módulo de
+ mercadeo en la opción de <i><a href="..\..\ME\Help\MEH_001E.html">parámetros</a></i>
+ (Seg., Grupo, Descripción producto, Marca).</p>
+ </td>
+</tr>
+<tr>
+ <td class="titletable">
+ <p class="SUBTITULO"><a name="BL_PARAMETROS_SOLICITUDES"></a>Tipo solicitud</p>
+ </td>
+ <td>
+ <p class="PARRAFO">Conjunto de campos que permiten a la entidad definir, mediante lista de valores adjunta, todas y cada una de las distintas 
+ solicitudes que pueden efectuarse por cada producto.</p>
+ </td>
+</tr>
+</table>
+
+ <p class="PARRAFO"><span class="SUBTITULO">Parámetros:</span> Dupla de criterios que serán tenidos
+ en cuenta durante el trámite de las solicitudes de cada producto. Estos valores aplican o deben definirse por cada Tipo de solicitud.</span>&nbsp;</p>
+ </td>
+</tr>
+<table>
+<tr>
+ <td class="titletable">
+ <p class="SUBTITULO">Consulta derogatoria</p>
+ </td>
+ <td>
+ <p class="PARRAFO">Campo que permite definir si para el trámite de las 
+ solicitudes se tendrán en cuenta los datos contenidos en la tabla de <i><a
+ href="..\..\NU\Help\NUH_044E.html">derogatorio de cédulas</a></i> los cuales
+ corresponden a aquellos números de identificación a los cuales la entidad
+ debe prestar mayor atención por estar allá registrados, puesto que determinan
+ alguna clase de peligro para la misma.</span> Hay dos opciones a saber: <i>Error</i> o <i>Peligro</i>.</span>En el evento que la entidad determine que
+ la validación que debe realizar es <i>Error</i>, significa que si el número
+ de identificación del cliente que está efectuando la solicitud se encuentra
+ en la tabla derogatoria de cédulas, el sistema detiene el proceso en dicho
+ punto y no continua. Sin embargo, si el parámetro indica <i>Peligro</i> el
+ sistema muestra un mensaje de alerta para que la entidad tome las medidas de
+ precaución necesarias, permitiendo continuar con el proceso.</span></p>
+ </td>
+</tr>
+<tr>
+ <td class="titletable">
+ <p class="SUBTITULO">Evaluar solicitud</span></b></p>
+ </td>
+ <td>
+ <p class="PARRAFO">Campo obligatorio, el cual contiene tres valores (<i>Módulo
+ externo</i>, <i>Si</i>, <i>No</i>) para que de acuerdo con los procesos de la entidad se
+ determine cuales son las pautas para evaluar las solicitudes.De esta manera se evalúa al cliente y su
+ capacidad de endeudamiento.</p>
+ </td>
+</tr>
+</table>
+ 
+ <p class="PARRAFO"><span class="SUBTITULO">Etapas</span>En
+ este espacio la entidad determina los estadios o estaciones por las
+ cuales deben pasar las diferentes solicitudes por producto. Estos valores aplican o deben definirse por cada Tipo de solicitud.</span>&nbsp;</p>
+ </td>
+</tr>
+<table>
+<tr>
+ <td class="titletable">
+ <p class="SUBTITULO">Ingreso</span></b></p>
+ </td>
+ <td>
+ <p class="PARRAFO">Esta etapa siempre
+ estará marcada por defecto y es obligatoria puesto que toda clase de
+ solicitud debe ser ingresada para que se realice su respectivo trámite y
+ quede el registro de ésta en el sistema.</span>&nbsp;</p>
+ </td>
+</tr>
+<tr>
+ <td class="titletable">
+ <p class="SUBTITULO">Verificar referencias</p>
+ </td>
+ <td>
+ <p class="PARRAFO">Campo que se
+ marca para que la solicitud entre o no a ésta etapa, si la entidad así lo
+ requiere y se registre el resultado de esta tarea.</p>
+ </td>
+</tr>
+<tr>
+ <td class="titletable">
+ <p class="SUBTITULO">Envío a C/R</p>
+ </td>
+ <td>
+ <p class="PARRAFO">Campo que se
+ marca para que la solicitud entre o no a esta etapa, si la entidad así lo
+ requiere.</p>
+ </td>
+</tr>
+<tr>
+ <td class="titletable">
+ <p class="SUBTITULO">Conceptos de C/R</p>
+ </td>
+ <td>
+ <p class="PARRAFO">Campo que se marca
+ para que la solicitud entre a esta etapa, si la entidad así lo requiere y
+ estando allá se pueda registrar el resultado de la misma.</p>
+ </td>
+</tr>
+<tr>
+ <td class="titletable">
+ <p class="SUBTITULO">Aprobación</p>
+ </td>
+ <td>
+ <p class="PARRAFO">Esta etapa
+ siempre estará marcada por defecto y es obligatoria puesto que toda clase de
+ solicitud debe ser aprobada para que se realice su respectivo trámite.</p>
+ </td>
+</tr>
+<tr>
+ <td class="titletable">
+ <p class="SUBTITULO">Generacion plásticos</p>
+ </td>
+ <td>
+ <p class="PARRAFO">Campo que se
+ marca para que la solicitud entre a esta etapa, genere el plástico por
+ determinada solicitud si la entidad así lo requiere. </p>
+ </td>
+</tr>
+<tr>
+ <td class="titletable">
+ <p class="SUBTITULO">Activar</p>
+ </td>
+ <td>
+ <p class="PARRAFO">Campo que se marca
+ para que la solicitud entre a esta etapa, si la entidad así lo requiere.</p>
+ </td>
+</tr>
+<tr>
+ <td class="titletable">
+ <p class="SUBTITULO">Generación sobreflex</p>
+ </td>
+ <td>
+ <p class="PARRAFO">Campo que se
+ marca para que la solicitud entre a esta etapa, y genere información del
+ número de identificación personal del cliente por determinada solicitud si la
+ entidad así lo requiere.</p>
+ </td>
+</tr>
+</table>
+
+ <p class="TITLE">Opciones en Modo Consulta</p>
+
+<table>
+<tr>
+ <td class="titletable">
+ <p class="SUBTITULO"><a href="..\..\NU\Help\NUH_INTE.html#Acciones"></a> Acciones</p>
+ </td>
+ <td>
+ <p class="PARRAFO">Imprimir, Configurar Impresión, Salir</p>
+ </td>
+ <td>
+ <p class="PARRAFO"><a
+ href="..\..\NU\Help\NUH_INTE.html#BotAccion"><img 
+ src="..\..\NU\Help\Images\BotImprimir.gif"></span></a><a
+ href="..\..\NU\Help\NUH_INTE.html#BotAccion"><img 
+ src="..\..\NU\Help\Images\BotConfigurar.gif"></a><a
+ href="..\..\NU\Help\NUH_INTE.html#BotAccion"><img 
+ src="..\..\NU\Help\Images\BotSalir.gif"></a></p>
+ </td>
+</tr>
+<tr>
+ <td class="titletable">
+ <p class="SUBTITULO"><a href="..\..\NU\Help\NUH_INTE.html#Modulos"></a>Módulos</p>
+ </td>
+ <td>
+ <p class="PARRAFO">Según atribuciones del perfil</span></p>
+ </td>
+ <td>
+ <p class="PARRAFO">&nbsp;</p>
+ </td>
+</tr>
+<tr>
+ <td class="titletable">
+ <p class="SUBTITULO"><a href="..\..\NU\Help\NUH_INTE.html#Consulta"></a>Consulta</p>
+ </td>
+ <td>
+ <p class="PARRAFO">Ingresar, Ejecutar, Cancelar</span></p>
+ </td>
+ <td>
+ <p class="PARRAFO"><a
+ href="..\..\NU\Help\NUH_INTE.html#BotConsulta"><img 
+ src="..\..\NU\Help\Images\BotEntQuery.gif"></span></a><a
+ href="..\..\NU\Help\NUH_INTE.html#BotConsulta"><img 
+ src="..\..\NU\Help\Images\BotEjeQuery.gif"></span></a><a
+ href="..\..\NU\Help\NUH_INTE.html#BotConsulta"><img 
+ src="..\..\NU\Help\Images\BotCanQuery.gif"></span></a></p>
+ </td>
+</tr>
+<tr>
+ <td class="titletable">
+ <p class="SUBTITULO"><a href="..\..\NU\Help\NUH_INTE.html#Navegacion"></a>Navegación</p>
+ </td>
+ <td>
+ <p class="PARRAFO">Bloque Anterior, Registro Anterior, Registro
+ Siguiente, Bloque Siguiente</span></p>
+ </td>
+ <td>
+ <p class="PARRAFO"><a
+ href="..\..\NU\Help\NUH_INTE.html#BotNavegacion"><img 
+ src="..\..\NU\Help\Images\BotBloqAnterior.gif"></span></a><a
+ href="..\..\NU\Help\NUH_INTE.html#BotNavegacion"><img 
+ src="..\..\NU\Help\Images\BotRegAnterior.gif"></span></a><a
+ href="..\..\NU\Help\NUH_INTE.html#BotNavegacion"><img 
+ src="..\..\NU\Help\Images\BotRegSiguiente.gif"></span></a><a
+ href="..\..\NU\Help\NUH_INTE.html#BotNavegacion"><img 
+ src="..\..\NU\Help\Images\BotBloqSiguiente.gif"></span></a></p>
+ </td>
+</tr>
+<tr>
+ <td class="titletable">
+ <p class="SUBTITULO"><a href="..\..\NU\Help\NUH_INTE.html#Utilidades"></a>Utilidades</p>
+ </td>
+ <td>
+ <p class="PARRAFO">Cambio de clave, Cambio de idioma y otras
+ según atribuciones del perfil</span></p>
+ </td>
+ <td>
+ <p class="PARRAFO">&nbsp;</p>
+ </td>
+</tr>
+<tr>
+ <td class="titletable">
+ <p class="SUBTITULO"><a href="..\..\NU\Help\NUH_INTE.html#Ayuda"></a>Ayuda</p>
+ </td>
+ <td>
+ <p class="PARRAFO">Lista de Valores, Auditoría, Muestra
+ Teclas, Manual del Usuario, Acerca de Open Card.</p>
+ </td>
+ <td>
+ <p class="PARRAFO"><a
+ href="..\..\NU\Help\NUH_INTE.html#BotLista"><img 
+ src="..\..\NU\Help\Images\BotListaValores.gif"></span></a><a
+ href="..\..\NU\Help\NUH_INTE.html#BotAuditoria"><img 
+ src="..\..\NU\Help\Images\BotAuditoria.gif"></span></a><a
+ href="..\..\NU\Help\NUH_INTE.html#BotAyuda"><img 
+ src="..\..\NU\Help\Images\BotAyuda.gif"></span></a><a
+ href="..\..\NU\Help\NUH_INTE.html#BotAcercade"><img 
+ src="..\..\NU\Help\Images\BotAcercade.gif"></span></a></p>
+ </td>
+</tr>
+<tr>
+ <td class="titletable">
+ <p class="SUBTITULO"><a href="..\..\NU\Help\NUH_INTE.html#Window"></a>Window</p>
+ </td>
+ <td>
+ <p class="PARRAFO">Cascade, Tile, Arrange, Icons, Ventanas
+ Abiertas</span></p>
+ </td>
+ <td>
+ <p class="PARRAFO">&nbsp;</p>
+ </td>
+</tr>
+</table>
+
+ <p class="TITLE">Opciones en Modo Total</p>
+
+
+<table>
+<tr>
+ <td class="titletable">
+ <p class="SUBTITULO"><a href="..\..\NU\Help\NUH_INTE.html#Acciones"></a>Acciones</p>
+ </td>
+ <td>
+ <p class="PARRAFO">Grabar, Imprimir, Configurar Impresión,
+ Salir</span></p>
+ </td>
+ <td>
+ <p class="PARRAFO"><a
+ href="..\..\NU\Help\NUH_INTE.html#BotAccion"><img 
+ src="..\..\NU\Help\Images\BotGrabar.gif"></span></a><a
+ href="..\..\NU\Help\NUH_INTE.html#BotAccion"><img 
+ src="..\..\NU\Help\Images\BotImprimir.gif"></span></a><a
+ href="..\..\NU\Help\NUH_INTE.html#BotAccion"><img 
+ src="..\..\NU\Help\Images\BotConfigurar.gif"></span></a><a
+ href="..\..\NU\Help\NUH_INTE.html#BotAccion"><img 
+ src="..\..\NU\Help\Images\BotSalir.gif"></span></a></p>
+ </td>
+</tr>
+<tr>
+ <td class="titletable">
+ <p class="SUBTITULO"><a href="..\..\NU\Help\NUH_INTE.html#Modulos"></a>Módulos</p>
+ </td>
+ <td>
+ <p class="PARRAFO">Según atribuciones del perfil</p>
+ </td>
+ <td>
+ <p class="PARRAFO">&nbsp;</p>
+ </td>
+</tr>
+<tr>
+ <td class="titletable">
+ <p class="SUBTITULO"><a href="..\..\NU\Help\NUH_INTE.html#Editar"></a>Editar</p>
+ </td>
+ <td>
+ <p class="PARRAFO">Cortar, Copiar, Pegar</p>
+ </td>
+ <td>
+ <p class="PARRAFO"><a
+ href="..\..\NU\Help\NUH_INTE.html#BotEditar"><img 
+ src="..\..\NU\Help\Images\BotCortar.gif"></span></a><a
+ href="..\..\NU\Help\NUH_INTE.html#BotEditar"><img 
+ src="..\..\NU\Help\Images\BotCopiar.gif"></span></a><a
+ href="..\..\NU\Help\NUH_INTE.html#BotEditar"><img 
+ src="..\..\NU\Help\Images\BotPegar.gif"></span></a></p>
+ </td>
+</tr>
+<tr>
+ <td class="titletable">
+ <p class="SUBTITULO"><a href="..\..\NU\Help\NUH_INTE.html#Consulta"></a>Consulta</p>
+ </td>
+ <td>
+ <p class="PARRAFO">Ingresar, Ejecutar, Cancelar</p>
+ </td>
+ <td>
+ <p class="PARRAFO"><a
+ href="..\..\NU\Help\NUH_INTE.html#BotConsulta"><img 
+ src="..\..\NU\Help\Images\BotEntQuery.gif"></span></a><a
+ href="..\..\NU\Help\NUH_INTE.html#BotConsulta"><img 
+ src="..\..\NU\Help\Images\BotEjeQuery.gif"></span></a><a
+ href="..\..\NU\Help\NUH_INTE.html#BotConsulta"><img 
+ src="..\..\NU\Help\Images\BotCanQuery.gif"></span></a></p>
+ </td>
+</tr>
+<tr>
+ <td class="titletable">
+ <p class="SUBTITULO"><a href="..\..\NU\Help\NUH_INTE.html#Navegacion"></a>Navegación</p>
+ </td>
+ <td>
+ <p class="PARRAFO">Bloque Anterior, Registro Anterior, Registro
+ Siguiente, Bloque Siguiente</span></p>
+ </td>
+ <td>
+ <p class="PARRAFO"><a
+ href="..\..\NU\Help\NUH_INTE.html#BotNavegacion"><img 
+ src="..\..\NU\Help\Images\BotBloqAnterior.gif"></span></a><a
+ href="..\..\NU\Help\NUH_INTE.html#BotNavegacion"><img 
+ src="..\..\NU\Help\Images\BotRegAnterior.gif"></span></a><a
+ href="..\..\NU\Help\NUH_INTE.html#BotNavegacion"><img 
+ src="..\..\NU\Help\Images\BotRegSiguiente.gif"></span></a><a
+ href="..\..\NU\Help\NUH_INTE.html#BotNavegacion"><img 
+ src="..\..\NU\Help\Images\BotBloqSiguiente.gif"></span></a></p>
+ </td>
+</tr>
+<tr>
+ <td class="titletable">
+ <p class="SUBTITULO"><a href="..\..\NU\Help\NUH_INTE.html#Utilidades"></a>Utilidades</p>
+ </td>
+ <td>
+ <p class="PARRAFO">Cambio de clave, Cambio de idioma y otras
+ según atribuciones del perfil</span></p>
+ </td>
+ <td>
+ <p class="PARRAFO">&nbsp;</p>
+ </td>
+</tr>
+<tr>
+ <td class="titletable">
+ <p class="SUBTITULO"><a href="..\..\NU\Help\NUH_INTE.html#Registro"></a>Registro</p>
+ </td>
+ <td>
+ <p class="PARRAFO">Crear, Borrar, Limpiar</span></p>
+ </td>
+ <td>
+ <p class="PARRAFO"><a
+ href="..\..\NU\Help\NUH_INTE.html#BotRegistro"><img 
+ src="..\..\NU\Help\Images\BotCreaReg.gif"></span></a><a
+ href="..\..\NU\Help\NUH_INTE.html#BotRegistro"><img 
+ src="..\..\NU\Help\Images\BotBorraReg.gif"></span></a><a
+ href="..\..\NU\Help\NUH_INTE.html#BotRegistro"><img 
+ src="..\..\NU\Help\Images\BotLimpiaReg.gif"></span></a></p>
+ </td>
+</tr>
+<tr>
+ <td class="titletable">
+ <p class="SUBTITULO"><a href="..\..\NU\Help\NUH_INTE.html#Ayuda"></a>Ayuda</p>
+ </td>
+ <td>
+ <p class="PARRAFO">Limpiar Pantalla, Lista de Valores,
+ Auditoría, Muestra Teclas, Manual del Usuario, Acerca de Open Card</p>
+ </td>
+ <td>
+ <p class="PARRAFO"><a
+ href="..\..\NU\Help\NUH_INTE.html#BotLimpiar"><img 
+ src="..\..\NU\Help\Images\BotLimpiaPant.gif"></span></a><a
+ href="..\..\NU\Help\NUH_INTE.html#BotLista"><img 
+ src="..\..\NU\Help\Images\BotListaValores.gif"></span></a><a
+ href="..\..\NU\Help\NUH_INTE.html#BotAuditoria"><img 
+ src="..\..\NU\Help\Images\BotAuditoria.gif"></span></a><a
+ href="..\..\NU\Help\NUH_INTE.html#BotAyuda"><img 
+ src="..\..\NU\Help\Images\BotAyuda.gif"></span></a><a
+ href="..\..\NU\Help\NUH_INTE.html#BotAcercade"><img 
+ src="..\..\NU\Help\Images\BotAcercade.gif"></span></a></p>
+ </td>
+</tr>
+<tr>
+ <td class="titletable">
+ <p class="SUBTITULO"><a href="..\..\NU\Help\NUH_INTE.html#Window"></a>Window</p>
+ </td>
+ <td>
+ <p class="PARRAFO">Cascade, Tile, Arrange, Icons, Ventanas
+ Abiertas</span></p>
+ </td>
+ <td>
+ <p class="PARRAFO">&nbsp;</p>
+ </td>
+</tr>
+</table>
+
+ <p class="TITLE">Opciones Especiales</p>
+ 
+<table>
+<tr>
+ <td class="titletable">
+ <p class="SUBTITULO"><img src="..\..\NU\Help\Images\BotActualizar.gif"></p>
+ </td>
+ <td>
+ <p class="PARRAFO"><i>Copiar
+ parámetros</i>.Herramienta que al
+ replicar los datos y al modificar alguno de los datos facilita la
+ parametrización por cada producto.</p>
+ </td>
+</tr>
+</table>
+
+      </div>
+      </section>
+      <script src="../js/menu.js"></script>
+      <div id="footerContainer"></div>
+    </body>
+    <script>
+  fetch('footer.html')
+    .then(response => response.text())
+    .then(html => {
+      document.getElementById('footerContainer').innerHTML = html;
+    });
+</script>
+  </html>

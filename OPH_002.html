@@ -1,0 +1,740 @@
+<!DOCTYPE html>
+<html lang="es">
+
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BANKBU®</title>
+    <link rel="stylesheet" href="../css/pages.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="icon" href="../img/ACQUIRER-logo.JPG" type="image/x-icon">
+  </head>
+
+  <body>
+    <header>
+      <img class="logo" src="../img/logoBankbu_.PNG" alt="Logo de Mi Empresa">
+      <div id="menuBtn">
+        <img class="TITLE" src="../img/menu.PNG" alt="Botón de Menú ">
+      </div>
+    </header>
+    <div id="menuContainer"></div>
+    <script>
+    fetch('menu.html')
+      .then(response => response.text())
+      .then(html => {
+        document.getElementById('menuContainer').innerHTML = html;
+      });
+  </script>
+    <section>
+      <div>
+
+        
+<table>
+<tr>
+ <td class="titletable">
+ <p class="SUBTITULO">Ejecuci�n de procesos</span></b></p>
+ </td>
+ <td>
+ <p class="PARRAFO"><b><span style='font-size:10.0pt;
+ font-family:Arial;color:red'>OPF_002</span></b></p>
+ </td>
+</tr>
+</table>
+
+
+
+<table>
+<tr>
+ <td class="titletable">
+ <p class="SUBTITULO">Mediante esta opción el sistema ofrece la
+ funcionalidad requerida para la ejecuci�n autom�tica o manual de todos los
+ grupos de procesos.<span >� </span>Si la entidad
+ desea que sus procesos corran de forma autom�tica debe tener en cuenta la
+ condición de obligatoriedad, ya que de ser obligatorios implica que todos los
+ procesos que conformen cada uno de los grupos deben finalizar exitosamente
+ con <i >Ejecuci�n total</i>, además debe
+ existir relación de precedencia entre ellos.<span >�
+ </span>Si por el contrario, se desea operar manualmente, el sistema permite
+ ordenar la ejecuci�n de grupos o procesos de manera independiente, pero
+ respetando las relaciones de dependencia <i><a href="OPH_001E.html">definidas</a></i>
+ entre los grupos o procesos. De otra parte se provee la funcionalidad para ejecutar
+ o generar interfaces con fecha del d�a de proceso inmediatamente anterior,
+ para aquellos grupos que previamente les ha sido parametrizada dicha condición,
+ en la <i><a href="OPH_001E.html">Definición de procesos</a></i>.</span></p>
+ </td>
+</tr>
+<tr>
+ <td class="titletable">
+ <p class="SUBTITULO"><!--[if gte vml 1]><v:shapetype
+  id="_x0000_t75" coordsize="21600,21600" o:spt="75" o:preferrelative="t"
+  path="m@4@5l@4@11@9@11@9@5xe" filled="f" stroked="f">
+  <v:stroke joinstyle="miter"/>
+  <v:formulas>
+   <v:f eqn="if lineDrawn pixelLineWidth 0"/>
+   <v:f eqn="sum @0 1 0"/>
+   <v:f eqn="sum 0 0 @1"/>
+   <v:f eqn="prod @2 1 2"/>
+   <v:f eqn="prod @3 21600 pixelWidth"/>
+   <v:f eqn="prod @3 21600 pixelHeight"/>
+   <v:f eqn="sum @0 0 1"/>
+   <v:f eqn="prod @6 1 2"/>
+   <v:f eqn="prod @7 21600 pixelWidth"/>
+   <v:f eqn="sum @8 21600 0"/>
+   <v:f eqn="prod @7 21600 pixelHeight"/>
+   <v:f eqn="sum @10 21600 0"/>
+  </v:formulas>
+  <v:path o:extrusionok="f" gradientshapeok="t" o:connecttype="rect"/>
+  <o:lock v:ext="edit" aspectratio="t"/>
+ </v:shapetype><v:shape id="_x0000_i1064" type="#_x0000_t75" style='width:425.25pt;
+  height:291pt'>
+  <v:imagedata src="Images\OPF_002E1.png" o:title="OPF_002E1"/>
+ </v:shape><![endif]--><![if !vml]><img border=0 width=567 height=388
+ src="OPH_002E_image003.jpg" v:shapes="_x0000_i1064"><![endif]></span></p>
+ </td>
+</tr>
+</table>
+
+
+
+
+
+<table>
+<tr>
+ <td class="titletable">
+ <p class="SUBTITULO"><a name="BL_GRUPOS_PROCESOS">Descripción de Campos</span></b></a> Actual</span></b></p>
+ </td>
+</tr>
+</table>
+
+
+
+<table>
+<tr>
+ <td class="titletable">
+ <p class="SUBTITULO">Fecha hoy de ejecuci�n</span></b></p>
+ </td>
+ <td>
+ <p class="PARRAFO">Campo de salida, despliega la fecha del sistema,
+ la que a su vez permite controlar que sean mostrados únicamente los grupos o
+ procesos que por fecha pr�xima ejecuci�n correspondan con la fecha. </span></p>
+ </td>
+</tr>
+<tr>
+ <td class="titletable">
+ <p class="SUBTITULO"><b>Grupos </span></b><span
+ style='font-family:Arial'>Campos que permiten visualizar toda la información suficiente
+ y necesaria para cada uno de los grupos establecidos en la opción <i><a
+ href="OPH_001E.html">Definición de procesos</a></i> de este mismo módulo,
+ siempre y cuando la fecha pr�xima ejecuci�n corresponda con la fecha hoy del
+ sistema. Si se desea ejecutar algún grupo en particular debe marcarse en el
+ cuadro disponible a la izquierda de cada registro, si son todos, basta con presionar
+ el bot�n especial <i >Seleccionar todos lo
+ grupos</i>. </span></p>
+ </td>
+</tr>
+<tr>
+ <td class="titletable">
+ <p class="SUBTITULO">código</span></b></p>
+ </td>
+ <td>
+ <p class="PARRAFO">Campo de salida, despliega la
+ Identificación de cada uno de los grupos disponibles o programados para la
+ fecha hoy del sistema.</span></p>
+ </td>
+</tr>
+<tr>
+ <td class="titletable">
+ <p class="SUBTITULO">Descripción</span></b></p>
+ </td>
+ <td>
+ <p class="PARRAFO">Campo de salida, despliega el nombre
+ asociado a cada código de grupo parametrizado en la opción <i><a
+ href="OPH_001E.html">Definición de procesos</a>.</i></span></p>
+ </td>
+</tr>
+<tr>
+ <td class="titletable">
+ <p class="SUBTITULO">Estado</span></b></p>
+ </td>
+ <td>
+ <p class="PARRAFO">Campo que ilustra el resultado de la
+ ejecuci�n del grupo, los cuales pueden ser <i>Proceso en ejecuci�n</i>, <i>Proceso
+ pendiente</i> (por ordenarse su ejecuci�n), <i>Ejecuci�n parcial</i> y <i>Ejecuci�n
+ total</i>.<span >� </span>En caso de tratarse de un
+ proceso de ejecuci�n manual, y desplegarse el mensaje de <i>Ejecuci�n parcial</i>,
+ y de ser posible solucionar la causa, puede reordenarse dicha ejecuci�n.</span></p>
+ </td>
+</tr>
+<tr>
+ <td class="titletable">
+ <p class="SUBTITULO">Corrida</span></b></p>
+ </td>
+ <td>
+ <p class="PARRAFO">Campo de salida que se inicializa en cero
+ y muestra el número de corridas que ha tenido el grupo, el cual no supera el
+ número de veces se�alado en <i><a href="OPH_001E.html">Definición de procesos</a>,
+ </i>debido a los controles que realiza el sistema<i>.</i></span></p>
+ </td>
+</tr>
+<tr>
+ <td class="titletable">
+ <p class="SUBTITULO"><a name="BL_PROCESOS_AUTOMATICOS"><b>Procesos</span></b></a><b><span
+ style='font-family:Arial'><span >� </span></span></b><span
+ style='font-family:Arial'>Conjunto de campos que permiten la ejecuci�n
+ individual de cada proceso, siempre y cuando se respeten las relaciones de
+ dependencia (obligatoriedad) establecidas entre ellos en la opción de <i><a
+ href="OPH_001E.html">Definición de procesos</a>.</i></span><span
+ style='font-family:Arial;color:windowtext'> Al igual que como con los grupos,
+ si se requiere ejecutar un proceso en particular debe marcarse sobre el
+ cuadro disponible a la izquierda de cada registro, o si son todos basta con
+ marcar el grupo al cual pertenecen.</span><span style='color:windowtext'></span></p>
+ </td>
+</tr>
+<tr>
+ <td class="titletable">
+ <p class="SUBTITULO">Sec</span></b></p>
+ </td>
+ <td>
+ <p class="PARRAFO">Campo de salida, corresponde a la
+ secuencia interna asignada por el sistema a cada proceso al momento de
+ crearse en <i><a href="OPH_001E.html">Definición de procesos</a>, </i></span><span
+ style='font-family:Arial;color:windowtext'>y que permiten la Identificación
+ num�rica por proceso.</span><i> </span></i></p>
+ </td>
+</tr>
+<tr>
+ <td class="titletable">
+ <p class="SUBTITULO">Objeto l�gico</span></b></p>
+ </td>
+ <td>
+ <p class="PARRAFO">Campo de salida, ilustra el nombre del procedimiento
+ o programa a ser ejecutado.</span></p>
+ </td>
+</tr>
+<tr>
+ <td class="titletable">
+ <p class="SUBTITULO">Descripción</span></b></p>
+ </td>
+ <td>
+ <p class="PARRAFO">Campo de salida, muestra un breve
+ descriptivo sobre la esencia del proceso.</span></p>
+ </td>
+</tr>
+<tr>
+ <td class="titletable">
+ <p class="SUBTITULO">Estado</span></b></p>
+ </td>
+ <td>
+ <p class="PARRAFO">Campo que ilustra el resultado de la
+ ejecuci�n del proceso, los cuales pueden ser <i>Proceso en ejecuci�n</i>, <i>Proceso
+ pendiente</i> (por ordenarse su ejecuci�n), <i>Ejecuci�n parcial</i> y <i>Ejecuci�n
+ total</i>.<span >� </span>En caso de tratarse de un
+ proceso de ejecuci�n manual, y desplegarse el mensaje de <i>Ejecuci�n parcial</i>,
+ si es posible solucionar la causa, puede reordenarse dicha ejecuci�n.</span></p>
+ </td>
+</tr>
+<tr>
+ <td class="titletable">
+ <p class="SUBTITULO">Corrida</span></b></p>
+ </td>
+ <td>
+ <p class="PARRAFO">Campo de salida que se inicializa en cero
+ y muestra el número de corridas que ha tenido el proceso, el cual no supera
+ el número de veces se�alado en <i><a href="OPH_001E.html">Definición de
+ procesos</a>, </i>debido a los controles que realiza el sistema<i>.</i></span></p>
+ </td>
+</tr>
+<tr>
+ <td class="titletable">
+ <p class="SUBTITULO">Mensaje</span></b></p>
+ </td>
+ <td>
+ <p class="PARRAFO">Campo de salida en el que aparece uno a
+ uno los motivo por los que el proceso no finaliz� exitosamente.� </span>Una vez solucionado se procede a continuar
+ su ejecuci�n hasta llegar al estado de <i>Ejecuci�n total</i>.� </span></span></p>
+ </td>
+</tr>
+<tr>
+ <td class="titletable">
+ <p class="SUBTITULO"><img border=0
+ width=560 height=8 id="_x0000_i1063" src="../../NU/Help/Images/Line4.gif"></p>
+ </td>
+</tr>
+<tr>
+ <td class="titletable">
+ <p class="SUBTITULO"><b>Anterior </span></b><span
+ style='font-family:Arial'>Contiene la información de los distintos grupos de
+ procesos asociados a las interfaces que pueden ser generadas con fecha de
+ proceso del d�a inmediatamente anterior. Dado que todos los campos de la página
+ tab se corresponden con los de la página tab <i>Actual</i>, se documentan una �nica vez. </span></p>
+ </td>
+</tr>
+<tr>
+ <td class="titletable">
+ <p class="SUBTITULO"><!--[if gte vml 1]><v:shape
+  id="_x0000_i1072" type="#_x0000_t75" style='width:424.5pt;height:288.75pt'>
+  <v:imagedata src="Images\OPF_002E2.png" o:title="OPF_002E2"/>
+ </v:shape><![endif]--><![if !vml]><img border=0 width=566 height=385
+ src="OPH_002E_image009.jpg" v:shapes="_x0000_i1072"><![endif]></span></p>
+ </td>
+</tr>
+</table>
+
+
+
+<table>
+<tr>
+ <td class="titletable">
+ <p class="SUBTITULO"><img border=0 width=560 height=8
+ id="_x0000_i1032" src="../../NU/Help/Images/Line4.gif"></p>
+ </td>
+</tr>
+</table>
+
+
+
+<table>
+<tr>
+ <td class="titletable">
+ <p class="SUBTITULO"><b>Opciones en Modo Consulta</span></b></p>
+ </td>
+</tr>
+</table>
+
+
+
+<table>
+<tr>
+ <td class="titletable">
+ <p class="SUBTITULO"><a href="../../NU/Help/NUH_INTE.html#Acciones">Acciones</span></a></p>
+ </td>
+ <td>
+ <p class="PARRAFO">Imprimir, Configurar Impresión, Salir</span></p>
+ </td>
+ <td>
+ <p class="PARRAFO"><a
+ href="../../NU/Help/NUH_INTE.html#BotAccion"><img border=0 width=22 height=22 id="_x0000_i1033"
+ src="../../NU/Help/Images/BotImprimir.gif"></span></a><a
+ href="../../NU/Help/NUH_INTE.html#BotAccion"><img
+ src="../../NU/Help/Images/BotConfigurar.gif"></span></a><a
+ href="../../NU/Help/NUH_INTE.html#BotAccion"><img 
+ src="../../NU/Help/Images/BotSalir.gif"></span></a></p>
+ </td>
+</tr>
+<tr>
+ <td class="titletable">
+ <p class="SUBTITULO"><a href="../../NU/Help/NUH_INTE.html#Modulos">módulos</span></a></p>
+ </td>
+ <td>
+ <p class="PARRAFO">Seg�n atribuciones del perfil</span></p>
+ </td>
+ <td>
+ <p class="PARRAFO">&nbsp;</p>
+ </td>
+</tr>
+<tr>
+ <td class="titletable">
+ <p class="SUBTITULO"><a href="../../NU/Help/NUH_INTE.html#Navegacion">Navegaci�n</span></a></p>
+ </td>
+ <td>
+ <p class="PARRAFO">Bloque Anterior, Registro Anterior,
+ Registro Siguiente, Bloque Siguiente</span></p>
+ </td>
+ <td>
+ <p class="PARRAFO"><a
+ href="../../NU/Help/NUH_INTE.html#BotNavegacion"><img 
+ src="../../NU/Help/Images/BotBloqAnterior.gif"></span></a><a
+ href="../../NU/Help/NUH_INTE.html#BotNavegacion"><img 
+ src="../../NU/Help/Images/BotRegAnterior.gif"></span></a><a
+ href="../../NU/Help/NUH_INTE.html#BotNavegacion"><img 
+ src="../../NU/Help/Images/BotRegSiguiente.gif"></span></a><a
+ href="../../NU/Help/NUH_INTE.html#BotNavegacion"><img 
+ src="../../NU/Help/Images/BotBloqSiguiente.gif"></span></a></p>
+ </td>
+</tr>
+<tr>
+ <td class="titletable">
+ <p class="SUBTITULO"><a href="../../NU/Help/NUH_INTE.html#Utilidades">Utilidades</span></a></p>
+ </td>
+ <td>
+ <p class="PARRAFO">Cambio de clave, Cambio de idioma y otras
+ seg�n atribuciones del perfil</span></p>
+ </td>
+ <td>
+ <p class="PARRAFO">&nbsp;</p>
+ </td>
+</tr>
+<tr>
+ <td class="titletable">
+ <p class="SUBTITULO"><a href="../../NU/Help/NUH_INTE.html#Ayuda">Ayuda</span></a></p>
+ </td>
+ <td>
+ <p class="PARRAFO">Lista de Valores, Auditoria, Muestra
+ Teclas, Manual del Usuario, Acerca de Open Card</span></p>
+ </td>
+ <td>
+ <p class="PARRAFO"><a
+ href="../../NU/Help/NUH_INTE.html#BotLista"><img 
+ src="../../NU/Help/Images/BotListaValores.gif"></span></a><a
+ href="../../NU/Help/NUH_INTE.html#BotAuditoria"><img 
+ src="../../NU/Help/Images/BotAuditoria.gif"></span></a><a
+ href="../../NU/Help/NUH_INTE.html#BotAyuda"><img 
+ src="../../NU/Help/Images/BotAyuda.gif"></span></a><a
+ href="../../NU/Help/NUH_INTE.html#BotAcercade"><img 
+ src="../../NU/Help/Images/BotAcercade.gif"></span></a></p>
+ </td>
+</tr>
+<tr>
+ <td class="titletable">
+ <p class="SUBTITULO"><a href="../../NU/Help/NUH_INTE.html#Window">Window</span></a></p>
+ </td>
+ <td>
+ <p class="PARRAFO">Cascade, Tile, Arrange, Icons, Ventanas
+ Abiertas</span></p>
+ </td>
+ <td>
+ <p class="PARRAFO">&nbsp;</p>
+ </td>
+</tr>
+</table>
+
+
+
+<table>
+<tr>
+ <td class="titletable">
+ <p class="SUBTITULO"><img border=0 width=560 height=8
+ id="_x0000_i1044" src="../../NU/Help/Images/Line4.gif"></p>
+ </td>
+</tr>
+</table>
+
+
+
+<table>
+<tr>
+ <td class="titletable">
+ <p class="SUBTITULO"><b>Opciones en Modo Total</span></b></p>
+ </td>
+</tr>
+</table>
+
+
+
+<table>
+<tr>
+ <td class="titletable">
+ <p class="SUBTITULO"><a href="../../NU/Help/NUH_INTE.html#Acciones">Acciones</span></a></p>
+ </td>
+ <td>
+ <p class="PARRAFO">Grabar, Imprimir, Configurar Impresión,
+ Salir</span></p>
+ </td>
+ <td>
+ <p class="PARRAFO"><a
+ href="../../NU/Help/NUH_INTE.html#BotAccion"><img 
+ src="../../NU/Help/Images/BotGrabar.gif"></span></a><a
+ href="../../NU/Help/NUH_INTE.html#BotAccion"><img 
+ src="../../NU/Help/Images/BotImprimir.gif"></span></a><a
+ href="../../NU/Help/NUH_INTE.html#BotAccion"><img 
+ src="../../NU/Help/Images/BotConfigurar.gif"></span></a><a
+ href="../../NU/Help/NUH_INTE.html#BotAccion"><img 
+ src="../../NU/Help/Images/BotSalir.gif"></span></a></p>
+ </td>
+</tr>
+<tr>
+ <td class="titletable">
+ <p class="SUBTITULO"><a href="../../NU/Help/NUH_INTE.html#Modulos">módulos</span></a></p>
+ </td>
+ <td>
+ <p class="PARRAFO">Seg�n atribuciones del perfil</span></p>
+ </td>
+ <td>
+ <p class="PARRAFO">&nbsp;</p>
+ </td>
+</tr>
+<tr>
+ <td class="titletable">
+ <p class="SUBTITULO"><a href="../../NU/Help/NUH_INTE.html#Navegacion">Navegaci�n</span></a></p>
+ </td>
+ <td>
+ <p class="PARRAFO">Bloque Anterior, Registro Anterior, Registro
+ Siguiente, Bloque Siguiente</span></p>
+ </td>
+ <td>
+ <p class="PARRAFO"><a
+ href="../../NU/Help/NUH_INTE.html#BotNavegacion"><img
+ src="../../NU/Help/Images/BotBloqAnterior.gif"></span></a><a
+ href="../../NU/Help/NUH_INTE.html#BotNavegacion"><img 
+ src="../../NU/Help/Images/BotRegAnterior.gif"></span></a><a
+ href="../../NU/Help/NUH_INTE.html#BotNavegacion"><img 
+ src="../../NU/Help/Images/BotRegSiguiente.gif"></span></a><a
+ href="../../NU/Help/NUH_INTE.html#BotNavegacion"><img 
+ src="../../NU/Help/Images/BotBloqSiguiente.gif"></span></a></p>
+ </td>
+</tr>
+<tr>
+ <td class="titletable">
+ <p class="SUBTITULO"><a href="../../NU/Help/NUH_INTE.html#Utilidades">Utilidades</span></a></p>
+ </td>
+ <td>
+ <p class="PARRAFO">Cambio de clave, Cambio de idioma y otras
+ seg�n atribuciones del perfil</span></p>
+ </td>
+ <td>
+ <p class="PARRAFO">&nbsp;</p>
+ </td>
+</tr>
+<tr>
+ <td class="titletable">
+ <p class="SUBTITULO"><a href="../../NU/Help/NUH_INTE.html#Ayuda">Ayuda</span></a></p>
+ </td>
+ <td>
+ <p class="PARRAFO">Limpiar Pantalla, Lista de Valores,
+ Auditoria, Muestra Teclas, Manual del Usuario, Acerca de Open Card</span></p>
+ </td>
+ <td>
+ <p class="PARRAFO"><a
+ href="../../NU/Help/NUH_INTE.html#BotLimpiar"><img 
+ src="../../NU/Help/Images/BotLimpiaPant.gif"></span></a><a
+ href="../../NU/Help/NUH_INTE.html#BotLista"><img 
+ src="../../NU/Help/Images/BotListaValores.gif"></span></a><a
+ href="../../NU/Help/NUH_INTE.html#BotAuditoria"><img 
+ src="../../NU/Help/Images/BotAuditoria.gif"></span></a><a
+ href="../../NU/Help/NUH_INTE.html#BotAyuda"><img 
+ src="../../NU/Help/Images/BotAyuda.gif"></span></a><a
+ href="../../NU/Help/NUH_INTE.html#BotAcercade"><img 
+ src="../../NU/Help/Images/BotAcercade.gif"></span></a></p>
+ </td>
+</tr>
+<tr>
+ <td class="titletable">
+ <p class="SUBTITULO"><a href="../../NU/Help/NUH_INTE.html#Window">Window</span></a></p>
+ </td>
+ <td>
+ <p class="PARRAFO">Cascade, Tile, Arrange, Icons, Ventanas
+ Abiertas</span></p>
+ </td>
+ <td>
+ <p class="PARRAFO">&nbsp;</p>
+ </td>
+</tr>
+</table>
+
+
+
+<table>
+<tr>
+ <td class="titletable">
+ <p class="SUBTITULO"><img border=0 width=560 height=8
+ id="_x0000_i1058" src="../../NU/Help/Images/Line4.gif"></p>
+ </td>
+</tr>
+</table>
+
+
+
+<table>
+<tr>
+ <td class="titletable">
+ <p class="SUBTITULO"><b>Opciones Especiales</span></b></p>
+ </td>
+</tr>
+</table>
+
+
+
+<table>
+<tr>
+ <td class="titletable">
+ <p class="SUBTITULO"><!--[if gte vml 1]><v:shape id="_x0000_i1059"
+  type="#_x0000_t75" style='width:22.5pt;height:21.75pt'>
+  <v:imagedata src="Images\BotCambCal.gif" o:title="BotCambCal"/>
+ </v:shape><![endif]--><![if !vml]><img border=0 width=30 height=29
+ src="OPH_002E_image018.gif" v:shapes="_x0000_i1059"><![endif]></p>
+ </td>
+ <td>
+ <p class="PARRAFO"><i>Cambiar fecha calendario</span></i><span
+ style='font-family:Arial'>, una vez ejecutados y finalizados absolutamente
+ todos los procesos mediante este bot�n el sistema cambia o pasa a la
+ siguiente fecha h�bil que la entidad a definido por medio de la opción <i><a
+ href="../../NU/Help/NUH_023E.html">Calendario</a></i> del grupo de Tablas de
+ la entidad financiera o en su defecto Tablas corporativas. El bot�n se inactiva
+ si existen grupos de interfaces pendientes de generar en la página tab <i
+ >Anterior</i>, o cuando existen grupos de procesos
+ en ejecuci�n en la página tab <i >Actual</i>.
+ Adicionalmente, permite pasar los grupos de procesos de interfaces de la página
+ tab <i >Anterior</i> a la página tab <i
+ >Actual</i>.</span></p>
+ </td>
+</tr>
+<tr>
+ <td class="titletable">
+ <p class="SUBTITULO"><span style='mso-bidi-font-size:
+ 10.0pt'><!--[if gte vml 1]><v:shape id="_x0000_i1065" type="#_x0000_t75"
+  style='width:15.75pt;height:15.75pt'>
+  <v:imagedata src="Images\BotSelecT.png" o:title="BotSelecT"/>
+ </v:shape><![endif]--><![if !vml]><img border=0 width=21 height=21
+ src="OPH_002E_image008.gif" v:shapes="_x0000_i1065"><![endif]></span></p>
+ </td>
+ <td>
+ <p class="PARRAFO"><i>Seleccionar todos los grupos</span></i><span
+ style='font-family:Arial'>, permite marcar todos los grupos de procesos habilitados
+ para su ejecuci�n para la fecha hoy del sistema.</span></p>
+ </td>
+</tr>
+<tr>
+ <td class="titletable">
+ <p class="SUBTITULO"><span style='mso-bidi-font-size:
+ 10.0pt'><!--[if gte vml 1]><v:shape id="_x0000_i1066" type="#_x0000_t75"
+  style='width:15.75pt;height:15.75pt'>
+  <v:imagedata src="Images\BotDeselecT.png" o:title="BotDeselecT"/>
+ </v:shape><![endif]--><![if !vml]><img border=0 width=21 height=21
+ src="OPH_002E_image011.gif" v:shapes="_x0000_i1066"><![endif]></span></p>
+ </td>
+ <td>
+ <p class="PARRAFO"><i>Deseleccionar todos los grupos</span></i><span
+ style='font-family:Arial'>, si lo que se desea es ejecutar alguno de los grupos,
+ en particular, se desmarcan primero todos y luego se selecciona el o los grupos
+ a ser ejecutados.</span></p>
+ </td>
+</tr>
+<tr>
+ <td class="titletable">
+ <p class="SUBTITULO"><!--[if gte vml 1]><v:shape id="_x0000_i1062"
+  type="#_x0000_t75" style='width:17.25pt;height:15.75pt'>
+  <v:imagedata src="Images\BotCreaSec.png" o:title="BotCreaSec"/>
+ </v:shape><![endif]--><![if !vml]><img border=0 width=23 height=21
+ src="OPH_002E_image012.jpg" v:shapes="_x0000_i1062"><![endif]></p>
+ </td>
+ <td>
+ <p class="PARRAFO"><i>Crea secuencia</span></i><span
+ style='font-family:Arial;mso-bidi-font-style:italic'>. Utilitario que permite
+ habilitar la ejecuci�n de alguno o todos los procesos de un grupo, siempre y
+ cuando corresponda a los diferentes <i><a href="../../Nu/Help/NUH_027E.html">Or�genes
+ de transacciones</a></i>.</span></p>
+ </td>
+</tr>
+<tr>
+ <td class="titletable">
+ <p class="SUBTITULO"><span style='font-family:Arial;
+ mso-bidi-font-style:italic'><!--[if gte vml 1]><v:shape id="_x0000_i1069"
+  type="#_x0000_t75" style='width:228pt;height:87.75pt'>
+  <v:imagedata src="Images\OPF_002E3.png" o:title="OPF_002E3"/>
+ </v:shape><![endif]--><![if !vml]><img border=0 width=304 height=117
+ src="OPH_002E_image020.gif" v:shapes="_x0000_i1069"><![endif]></span></p>
+ </td>
+</tr>
+<tr>
+ <td class="titletable">
+ <p class="SUBTITULO"><!--[if gte vml 1]><v:shape id="_x0000_i1067"
+  type="#_x0000_t75" style='width:17.25pt;height:17.25pt'>
+  <v:imagedata src="Images\BotDevolver.png" o:title="BotDevolver"/>
+ </v:shape><![endif]--><![if !vml]><img border=0 width=23 height=23
+ src="OPH_002E_image013.gif" v:shapes="_x0000_i1067"><![endif]></p>
+ </td>
+ <td>
+ <p class="PARRAFO"><i>Devolver a fecha anterior. </span></i><span
+ style='font-family:Arial;mso-bidi-font-style:italic'>La funcionalidad
+ provista por medio de este bot�n especial le permite al operador trasladar todos
+ los grupos cuyos procesos correspondan �</span>a la generaci�n de interfaces, de la página
+ tab <i>Actual</i> a la página tab <i>Anterior</i>; la pantalla controla que
+ para poderse realizar dicho movimiento, no exista ning�n proceso en ejecuci�n
+ en ese preciso momento.</span></p>
+ </td>
+</tr>
+<tr>
+ <td class="titletable">
+ <p class="SUBTITULO"><!--[if gte vml 1]><v:shape id="_x0000_i1071"
+  type="#_x0000_t75" style='width:17.25pt;height:17.25pt'>
+  <v:imagedata src="Images\BotEjecta.png" o:title="BotEjecta"/>
+ </v:shape><![endif]--><![if !vml]><img border=0 width=23 height=23
+ src="OPH_002E_image021.gif" v:shapes="_x0000_i1071"><![endif]></span></p>
+ </td>
+ <td>
+ <p class="PARRAFO"><i>Ejecutar grupos y/o procesos</span></i><span
+ style='font-family:Arial'>, permite ordenar al sistema la ejecuci�n o
+ reinicio del mismo proceso, tanto para grupos como para procesos, de forma
+ manual o autom�tica.</span></p>
+ </td>
+</tr>
+<tr>
+ <td class="titletable">
+ <p class="SUBTITULO"><!--[if gte vml 1]><v:shape id="_x0000_i1070"
+  type="#_x0000_t75" style='width:17.25pt;height:14.25pt'>
+  <v:imagedata src="Images\BotPropied.png" o:title="BotPropied"/>
+ </v:shape><![endif]--><![if !vml]><img border=0 width=23 height=19
+ src="OPH_002E_image016.gif" v:shapes="_x0000_i1070"><![endif]></p>
+ </td>
+ <td>
+ <p class="PARRAFO"><i>Propiedades. </span></i><span
+ style='font-family:Arial;mso-bidi-font-style:italic'>Bot�n especial que al
+ ser presionado, desde el grupo o desde alguno de los procesos que lo
+ componen, suministra datos adicionales tales como <i>Periodicidad</i>, <i>Ultimo
+ d�a h�bil</i> en que debe correrse o <i>D�a del per�odo</i> para ejecutarse,
+ si es <i>Obligatorio</i> o no, el <i>M�ximo número de corridas</i> permitidas
+ y la <i>Fecha de la �ltima</i> o más reciente ejecuci�n.</span></p>
+ </td>
+</tr>
+<tr>
+ <td class="titletable">
+ <p class="SUBTITULO"><span style='font-family:Arial;
+ mso-bidi-font-style:italic'><!--[if gte vml 1]><v:shape id="_x0000_i1068"
+  type="#_x0000_t75" style='width:233.25pt;height:156.75pt'>
+  <v:imagedata src="Images\OPF_002E4.png" o:title="OPF_002E4"/>
+ </v:shape><![endif]--><![if !vml]><img border=0 width=311 height=209
+ src="OPH_002E_image017.gif" v:shapes="_x0000_i1068"><![endif]></span></p>
+ </td>
+</tr>
+<tr>
+ <td class="titletable">
+ <p class="SUBTITULO"><!--[if gte vml 1]><v:shape id="_x0000_i1060"
+  type="#_x0000_t75" style='width:15.75pt;height:17.25pt'>
+  <v:imagedata src="Images\BotMensaje.gif" o:title="BotMensaje"/>
+ </v:shape><![endif]--><![if !vml]><img border=0 width=21 height=23
+ src="OPH_002E_image022.gif" v:shapes="_x0000_i1060"><![endif]></p>
+ </td>
+ <td>
+ <p class="PARRAFO"><i>Ver mensaje</span></i><span
+ style='font-family:Arial'>, bot�n especial que permite una mejor
+ visualizaci�n de alguna información resultante o del error presentado durante
+ la ejecuci�n del proceso.</span></p>
+ </td>
+</tr>
+</table>
+
+
+
+<table>
+<tr>
+ <td class="titletable">
+ <p class="SUBTITULO"><img border=0 width=462 height=18
+ id="_x0000_i1061" src="../../NU/Help/Images/RAFAGA.GIF"></p>
+ </td>
+</tr>
+<tr>
+ <td class="titletable">
+ <p class="SUBTITULO"><a
+ href="../../NU/Help/NUH_INDE.html"><b><span style='font-size:10.0pt;
+ font-family:Arial'>�ndice General</span></b></a><span style='font-size:10.0pt;
+ font-family:Arial'> <b>| </b></span><a href="OPH_000E.html"><b>�ndice del módulo</span></b></a><b> | </span></b><a
+ href="../../NU/Help/NUH_INTE.html"><b><span style='font-size:10.0pt;
+ font-family:Arial'>Ayuda General</span></b></a></p>
+ </td>
+</tr>
+</table>
+
+
+      </div>
+      </section>
+      <script src="../js/menu.js"></script>
+      <div id="footerContainer"></div>
+    </body>
+    <script>
+  fetch('footer.html')
+    .then(response => response.text())
+    .then(html => {
+      document.getElementById('footerContainer').innerHTML = html;
+    });
+</script>
+  </html>

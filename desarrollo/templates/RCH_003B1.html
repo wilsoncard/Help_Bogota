@@ -1,24 +1,24 @@
 <!DOCTYPE html>
 <html lang="es">
 
-<head>
+  <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>BANKBU®</title>
     <link rel="stylesheet" href="../css/pages.css">
     <link rel="stylesheet" href="../css/style.css">
- <link rel="icon" href="../img/ACQUIRER-logo.JPG" type="image/x-icon">
-</head>
+    <link rel="icon" href="../img/ACQUIRER-logo.JPG" type="image/x-icon">
+  </head>
 
-<body>
+  <body>
     <header>
-        <img class="logo" src="../img/logoBankbu_.PNG" alt="Logo de Mi Empresa">
-        <div id="menuBtn">
-            <img class="TITLE"  src= "../img/menu.PNG" alt="Botón de Menú ">
-        </div>
+      <img class="logo" src="../img/logoBankbu_.PNG" alt="Logo de Mi Empresa">
+      <div id="menuBtn">
+        <img class="TITLE" src="../img/menu.PNG" alt="Botón de Menú ">
+      </div>
     </header>
-      <div id="menuContainer"></div>
-  <script>
+    <div id="menuContainer"></div>
+    <script>
     fetch('menu.html')
       .then(response => response.text())
       .then(html => {
@@ -27,38 +27,47 @@
   </script>
 
     <section>
-        <div> 
-            
-           <p  class="TITLE">Gestores</p>
-                    
-            <p class="PARRAFO"><span class="SUBTITULO">Roles:</span>  Mediante esta funci&oacute;n se asignan a cada gestor los roles con los cuales podr&aacute; atender los diferentes tipos de reclamos existentes.</p>
-            <p class="PARRAFO">El formulario contiene las opciones Eliminar y
-            Adicionar, y un bot&oacute;n para devolverse a la opci&oacute;n Principal <a href="RCH_003B.html" >Gestores</a>. </p>
-            <p class="TITLE"><img src="../img/RCF_003B8.PNG"></p>
-            
-            <p><span class="SUBTITULO">Adicionar:</span>  Si el usuario invoca la opci&oacute;n Adicionar se despliega un formulario con el siguiente campo<span 
-        >:</p>
-            <p class="TITLE"><img src="../img/RCF_003B9.PNG"></p>
-            
-            <table>
-              <tr> 
-                <td class="titletable"><p class="SUBTITULO"><span 
-        >Rol</p></td>
-                <td><p class="PARRAFO"><span class="PARRAFO">En 
-                este campo obligatorio, se selecciona de la lista de valores el <a href="RCH_002B.html" >rol</a> al cual se asociar&aacute; el gestor.</p></td>
-              </tr>
-            </table>
-        </section>
-    <script src="../js/menu.js"></script>
+      <div>
 
-    <div id="footerContainer"></div>
-<script>
+        <p class="TITLE">Gestores</p>
+
+        <p class="PARRAFO"><span class="SUBTITULO">Estadísticas:</span>
+          Mediante esta funcionalidad, el usuario puede consultar el histórico
+          de los reclamos que ha tramitado o que ha finalizado cada gestor;
+          conocer cuántos de los reclamos que le han asignados han sido
+          reasignados a otros gestores, o cuántos le han sido reasignados de
+          otros gestores. </p>
+          
+        <p class="PARRAFO">Muestra la información organizada cronológicamente y
+          cuenta con un botón para regresar al formulario principal <a
+            href="RCH_003B.html">Gestores</a>. </p>
+        <p class="TITLE"><img src="../img/RCF_003B8.PNG"></p>
+
+        <p class="PARRAFO"><span class="SUBTITULO">Adicionar:</span> Si el usuario invoca la
+          opción Adicionar se despliega un formulario con el siguiente
+          campo<span>:</p>
+          <p class="TITLE"><img src="../img/RCF_003B9.PNG"></p>
+
+          <table>
+            <tr>
+              <td class="titletable"><p class="SUBTITULO"><span>Rol</p></td>
+                <td><p class="PARRAFO"><span class="PARRAFO">En
+                      este campo obligatorio, se selecciona de la lista de
+                      valores el <a href="RCH_002B.html">rol</a> al cual se
+                      asociará el gestor.</p></td>
+                </tr>
+              </table>
+            </section>
+            <script src="../js/menu.js"></script>
+
+            <div id="footerContainer"></div>
+            <script>
   fetch('footer.html')
     .then(response => response.text())
     .then(html => {
       document.getElementById('footerContainer').innerHTML = html;
     });
 </script>
-</body>
+          </body>
 
-</html>
+        </html>

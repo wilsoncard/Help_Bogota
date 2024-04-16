@@ -1,0 +1,1887 @@
+<!DOCTYPE html>
+<html lang="es">
+
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BANKBU®</title>
+    <link rel="stylesheet" href="../css/pages.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="icon" href="../img/ACQUIRER-logo.JPG" type="image/x-icon">
+  </head>
+
+  <body>
+    <header>
+      <img class="logo" src="../img/logoBankbu_.PNG" alt="Logo de Mi Empresa">
+      <div id="menuBtn">
+        <img class="TITLE" src="../img/menu.PNG" alt="Botón de Menú ">
+      </div>
+    </header>
+    <div id="menuContainer"></div>
+    <script>
+    fetch('menu.html')
+      .then(response => response.text())
+      .then(html => {
+        document.getElementById('menuContainer').innerHTML = html;
+      });
+  </script>
+    <section>
+      <div>
+
+ <p class="TITLE">Clientes existentes y/o nuevos</p>
+ 
+ <p class="PARRAFO">Mediante esta función se capturan todos
+ los datos generales del cliente e información concerniente al mismo y las
+ diferentes solicitudes que de acuerdo con sus necesidades éste pueda
+ requerir. En la parte superior de la forma aparecerá el nombre completo (nombres
+ y apellidos) del cliente de acuerdo con los datos capturados.</p>
+
+
+ <p class="PARRAFO"><a name="BL_CLIENTES"></a><span class="SUBTITULO">Identificación: </span>Conjunto de campos, en los que dependiendo del tipo
+ de documento <i><a href="SOH_003B.html">ingresado</a></i> la pantalla
+ despliega campos a diligenciar con nombre y apellidos, mostrando tanto el
+ tipo y número del documento de identidad como la clase de persona
+ correspondiente. </p>
+ 
+<table>
+<tr>
+ <td class="titletable">
+ <p class="SUBTITULO">Nombres / Apellidos</p>
+ </td>
+ <td>
+ <p class="PARRAFO">Campos en los que se registra los nombres
+ y apellidos de las personas naturales o la razón social para personas jurídicas.</p>
+ </td>
+</tr>
+<tr>
+ <td class="titletable">
+ <p class="SUBTITULO">Tipo</p>
+ </td>
+ <td>
+ <p class="PARRAFO">En este campo aparece por defecto la clase
+ de documento de Identificación que posee el cliente sobre el cual se está
+ efectuando la captura.</p>
+ </td>
+</tr>
+<tr>
+ <td class="titletable">
+ <p class="SUBTITULO">Numero</p>
+ </td>
+ <td>
+ <p class="PARRAFO">En este campo se muestra el número de Identificación
+ asociado al cliente sobre el cual se está efectuando la captura. Si el
+ cliente ya tiene productos asociados no permite su modificación, pero si
+ hasta la fecha solamente es un cliente potencial puede modificarse el dato
+ aquí registrado.</p>
+ </td>
+</tr>
+
+<tr>
+ <td class="titletable">
+ <p class="SUBTITULO">Persona</p>
+ </td>
+ <td>
+ <p class="PARRAFO">En este campo aparece la naturaleza del
+ cliente sobre el cual se efectúa la consulta, la que puede ser <i>Natural</i>
+ o <i>Jurídica</i>.</span></p>
+ </td>
+</tr>
+<tr>
+ <td class="titletable">
+ <p class="SUBTITULO">Ciudad exp.</span></b></p>
+ </td>
+ <td>
+ <p class="PARRAFO">Campo que posee lista de valores poblada a
+ través de la pantalla de <i ><a
+ href="NUH_003E.html">información geopolítica</a></i> del grupo
+ de Tablas corporativas del núcleo de la que debe seleccionarse el municipio o
+ su equivalente en el que fue expedido el documento que identifica al cliente.</p>
+ </td>
+</tr>
+<tr>
+ <td class="titletable">
+ <p class="SUBTITULO">Fecha exp.</p>
+ </td>
+ <td>
+ <p class="PARRAFO">Campo que en formato DD-MM-YYYY debe contener la fecha en que fue expedido el
+ documento que identifica al cliente.</p>
+ </td>
+</tr>
+</table>
+
+ <p class="PARRAFO"><span class="SUBTITULO">General:</span> Este
+ espacio está destinado para la captura de los datos básicos de clientes
+ personas naturales o corporativos.</p>
+ 
+ <p class="PARRAFO"><span class="SUBTITULO">Individual (Persona natural):</span>Permite capturar los datos particulares del
+ cliente, los cuales son específicos de acuerdo con su naturaleza.</p>
+
+ <p class="TITLE"><img src="SOH_004E_image002.jpg"></p>
+ 
+ <p class="TITLE">Descripción de Campos Individual (Persona
+ natural)</p>
+
+<table>
+<tr>
+ <td class="titletable">
+ <p class="SUBTITULO">Estado civil</p>
+ </td>
+ <td>
+ <p class="PARRAFO">Permite seleccionar de la lista de valores
+ adjunta una de las opciones proporcionadas, para definir la información
+ correspondiente al estado civil del cliente al momento
+ de su registro. Este es un campo no obligatorio.</p>
+ </td>
+</tr>
+<tr>
+ <td class="titletable">
+ <p class="SUBTITULO">Sexo</p>
+ </td>
+ <td>
+ <p class="PARRAFO">Permite seleccionar una de las opciones proporcionadas
+ en la lista de valores adjunta, para definir la información correspondiente
+ al género del cliente. Es un campo obligatorio puesto que es la base para
+ validar el número de Identificación del cliente.</p>
+ </td>
+</tr>
+<tr>
+ <td class="titletable">
+ <p class="SUBTITULO">Fecha nacimiento</p>
+ </td>
+ <td>
+ <p class="PARRAFO">Campo no obligatorio que permite capturar
+ el dato correspondiente a la fecha de nacimiento del cliente, expresado en
+ formato DD-MM-YYYY.</p>
+ </td>
+</tr>
+<tr>
+ <td class="titletable">
+ <p class="SUBTITULO">Lugar nacimiento</p>
+ </td>
+ <td>
+ <p class="PARRAFO">Permite seleccionar de la lista de valores
+ poblada en <i><a href="NUH_003E.html">información geopolítica</a></i>
+ de las Tablas corporativas del núcleo, el lugar en que nació el cliente. Este es un campo no obligatorio.</span></p>
+ </td>
+</tr>
+<tr>
+ <td class="titletable">
+ <p class="SUBTITULO">Profesión</p>
+ </td>
+ <td>
+ <p class="PARRAFO">Campo no obligatorio que permite
+ seleccionar de una lista de valores poblada en <i><a
+ href="NUH_030E.html">profesiones</a></i> de las Tablas
+ corporativas del Núcleo, el área de conocimiento profesional del cliente.</p>
+ </td>
+</tr>
+
+<tr>
+ <td class="titletable">
+ <p class="SUBTITULO">Actividad</p>
+ </td>
+ <td>
+ <p class="PARRAFO">Campo no obligatorio que permite
+ seleccionar de una lista de valores poblada en <i><a
+ href="NUH_032E.html">actividades económicas</a></i> de las
+ tablas corporativas del núcleo, la ocupación económica específica del
+ cliente.</p>
+ </td>
+</tr>
+<tr>
+ <td class="titletable">
+ <p class="SUBTITULO">Independiente</span></b></p>
+ </td>
+ <td>
+ <p class="PARRAFO">Campo que posee lista de valores adjunta
+ mediante la que es posible ilustrar si la fuente de ingresos del cliente
+ depende de un empleador o no.</span></p>
+ </td>
+</tr>
+<tr>
+ <td class="titletable">
+ <p class="SUBTITULO">Estrato</span></b></p>
+ </td>
+ <td>
+ <p class="PARRAFO">Campo numérico de 1 posición, no
+ obligatorio, que permite capturar la información correspondiente a la
+ estratificación social a la cual pertenece el cliente.</p>
+ </td>
+</tr>
+<tr>
+ <td class="titletable">
+ <p class="SUBTITULO">Personas a cargo</span></b></p>
+ </td>
+ <td>
+ <p class="PARRAFO">Campo numérico de 2, no obligatorio, que permite
+ capturar el número de personas que dependen económicamente del cliente.</span></p>
+ </td>
+</tr>
+<tr>
+ <td class="titletable">
+ <p class="SUBTITULO">Fecha defunción</span></b></p>
+ </td>
+ <td>
+ <p class="PARRAFO">En caso de que el cliente ya exista en la
+ base de datos y éste fallezca, en este campo aparece la información
+ correspondiente a la fecha de defunción.</span></p>
+ </td>
+</tr>
+<tr>
+ <td class="titletable">
+ <p class="SUBTITULO">No. acta defunción</span></b></p>
+ </td>
+ <td>
+ <p class="PARRAFO">Una vez capturados los datos
+ correspondientes a un cliente fallecido, en este campo aparece el número del
+ acta de defunción.</span></p>
+ </td>
+</tr>
+<tr>
+ <td class="titletable">
+ <p class="SUBTITULO">Lugar defunción</span></b></p>
+ </td>
+ <td>
+ <p class="PARRAFO">En este campo se muestra el sitio donde
+ ocurrió el deceso.</span></p>
+ </td>
+</tr>
+</table>
+
+ <p class="PARRAFO"><span class="SUBTITULO">Individual (Persona
+ Jurídica)</span> Permite capturar los datos específicos
+ de clientes cuya naturaleza corresponda a persona Jurídica.</p>
+
+ <p class="TITLE"><img src="SOH_004E_image004.jpg"></p>
+ 
+ 
+ <p class="TITLE">Descripción de Campos Individual (Personal
+ Jurídica)</p>
+
+<table>
+<tr>
+ <td class="titletable">
+ <p class="SUBTITULO">Representante legal</p>
+ </td>
+ <td>
+ <p class="PARRAFO">En este campo contiene el nombre del representante
+ legal de la empresa, reportado al crearse como cliente dentro del sistema.</p>
+ </td>
+</tr>
+<tr>
+ <td class="titletable">
+ <p class="SUBTITULO">Fecha constitución</p>
+ </td>
+ <td>
+ <p class="PARRAFO">En este campo se registra la información
+ correspondiente a la fecha a partir de la cual, el cliente existe como
+ persona jurídica. Se debe capturar la información en formato DD-MMM-YYYY.</p>
+ </td>
+</tr>
+<tr>
+ <td class="titletable">
+ <p class="SUBTITULO">Escritura</p>
+ </td>
+ <td>
+ <p class="PARRAFO">Campo en el cual se registra el número de
+ la escritura pública con la cual se constituyé el cliente como persona
+ Jurídica.</p>
+ </td>
+</tr>
+<tr>
+ <td class="titletable">
+ <p class="SUBTITULO">Notaría</p>
+ </td>
+ <td>
+ <p class="PARRAFO">Se debe diligenciar el campo con la información
+ correspondiente a la notaría en la cual se registrá la escritura de
+ constitución.</p>
+ </td>
+</tr>
+<tr>
+ <td class="titletable">
+ <p class="SUBTITULO">Tipo sociedad</p>
+ </td>
+ <td>
+ <p class="PARRAFO">En este campo se debe registrar la clase
+ de <i ><a href="NUH_038E.html">sociedad</a></i>
+ a la cual pertenece el cliente como persona Jurídica.</p>
+ </td>
+</tr>
+
+<tr>
+ <td class="titletable">
+ <p class="SUBTITULO">Ubicación</p>
+ </td>
+ <td>
+ <p class="PARRAFO">Permite seleccionar, de la lista de
+ valores poblada en <i><a href="NUH_003E.html">información geopolítica</a></i>
+ de las tablas corporativas del núcleo, la ciudad y departamento en la cual se
+ encuentra domiciliado el cliente como persona Jurídica.</p>
+ </td>
+</tr>
+
+<tr>
+ <td class="titletable">
+ <p class="SUBTITULO">Actividad</p>
+ </td>
+ <td>
+ <p class="PARRAFO">Campo no obligatorio que permite
+ seleccionar de una lista de valores poblada en <i><a
+ href="NUH_032E.html">actividades económicas</a></i> de las
+ Tablas corporativas del núcleo, la ocupación económica específica del
+ cliente.</p>
+ </td>
+</tr>
+
+<tr>
+ <td class="titletable">
+ <p class="SUBTITULO">Capital</span></b></p>
+ </td>
+ <td>
+ <p class="PARRAFO">Campo en el que se registra el monto del
+ capital de constitución de la sociedad.</span></p>
+ </td>
+</tr>
+</table>
+
+ <p class="PARRAFO"><span class="SUBTITULO">Institucional: </span>Conjunto
+ de campos que contienen datos asignados por el sistema una vez éste efectúe las
+ validaciones pertinentes.</p>
+
+ <p class="TITLE"><img src="SOH_004E_image006.jpg"></p>
+ <p class="TITLE"><a name="BL_SALDOS_CLIENTES"></a> Descripción de Campos
+ Institucional</p>
+ 
+<table>
+<tr>
+ <td class="titletable">
+ <p class="SUBTITULO">Categoría</p>
+ </td>
+ <td>
+ <p class="PARRAFO">Campo que contiene una lista de la cual se
+ selecciona el grupo al cual pertenece el cliente de acuerdo con la clasificación
+ de la entidad. Dicha lista ha sido poblada previamente en la opción <i><a
+ href="../../Me/Help/MEH_004E.html">Categoría clientes</a></i> del módulo
+ Mercadeo y su diligenciamiento es obligatorio, cuando se ingresa el cliente
+ por primera vez a la base de datos.</span></p>
+ </td>
+</tr>
+<tr>
+ <td class="titletable">
+ <p class="SUBTITULO">Estado</span></b></p>
+ </td>
+ <td>
+ <p class="PARRAFO">El campo se actualiza automáticamente una
+ vez se aprueba la primera solicitud, permitiendo determinar si el cliente que
+ se está ingresando está activo o no y ha empezado a operar normalmente con
+ los productos de la entidad. </span></p>
+ </td>
+</tr>
+<tr>
+ <td class="titletable">
+ <p class="SUBTITULO">Capacidad</span></b></p>
+ </td>
+ <td>
+ <p class="PARRAFO">En este campo se muestra la capacidad de
+ endeudamiento del cliente.</span></p>
+ </td>
+</tr>
+<tr>
+ <td class="titletable">
+ <p class="SUBTITULO">Calificación institucional</span></b></p>
+ </td>
+ <td>
+ <p class="PARRAFO">Este campo trae información
+ correspondiente a la evaluación que realiza la entidad respecto a los
+ diferentes productos que posee el cliente con la entidad.</span></p>
+ </td>
+</tr>
+<tr>
+ <td class="titletable">
+ <p class="SUBTITULO">Calificación interna</span></b></p>
+ </td>
+ <td>
+ <p class="PARRAFO">En este campo se muestra la Calificación
+ que posee el cliente producto de la evaluación de su comportamiento
+ crediticio con determinado producto que administra el sistema OpenCard.</span></p>
+ </td>
+</tr>
+<tr>
+ <td class="titletable">
+ <p class="SUBTITULO">Períodos actividad</span></b></p>
+ </td>
+ <td>
+ <p class="PARRAFO">Aparece información correspondiente a
+ cerca de los Períodos (expresado en meses), a partir del cual el cliente ha
+ poseído el producto.</p>
+ </td>
+</tr>
+<tr>
+ <td class="titletable">
+ <p class="SUBTITULO">Promedio utilización</p>
+ </td>
+ <td>
+ <p class="PARRAFO">Corresponde a la información del número
+ promedio de utilizaciones que al mes efectúa el cliente con el producto.</p>
+ </td>
+</tr>
+<tr>
+ <td class="titletable">
+ <p class="SUBTITULO">Desviación estándar</p>
+ </td>
+ <td>
+ <p class="PARRAFO">Informa acerca del cálculo correspondiente
+ a la Desviación estándar respecto al promedio de utilización. </span>El objetivo es generar alertas a la entidad
+ de acuerdo con los hábitos y montos de consumo del cliente.</p>
+ </td>
+</tr>
+<tr>
+ <td class="titletable">
+ <p class="SUBTITULO">Valor prom. utilización</span></b></p>
+ </td>
+ <td>
+ <p class="PARRAFO">Corresponde a la información del monto
+ promedio de las utilizaciones que al mes efectúa el cliente con el producto
+ normalmente.</span></p>
+ </td>
+</tr>
+<tr>
+ <td class="titletable">
+ <p class="SUBTITULO">Desviación estándar</span></b></p>
+ </td>
+ <td>
+ <p class="PARRAFO">Informa acerca del cálculo correspondiente
+ a la Desviación estándar respecto al valor promedio de utilización. </span>El objetivo es generar alertas a la entidad
+ de acuerdo con los hábitos y montos de consumo del cliente.</span></p>
+ </td>
+</tr>
+</table>
+
+ <p class="PARRAFO"><span class="SUBTITULO">Laboral: </span>Campo en el cual se relaciona la historia laboral del
+ cliente de acuerdo con la información suministrada por éste, aplica
+ únicamente para clientes personas naturales.</span></p>
+
+ <p class="TITLE"><img src="SOH_004E_image008.jpg"></p>
+
+
+ <p class="TITLE"><a name="BL_DATOS_LABORALES"></a> Descripción de Campos
+ Laboral</p>
+
+<table>
+<tr>
+ <td class="titletable">
+ <p class="SUBTITULO">Compañía</p>
+ </td>
+ <td>
+ <p class="PARRAFO">En este campo se captura la información
+ correspondiente a las entidades para las cuales el cliente ha prestado sus
+ servicios, incluso la empresa para la que labora al momento de ingresar los datos
+ laborales. </p>
+ </td>
+</tr>
+<tr>
+ <td class="titletable">
+ <p class="SUBTITULO">Dirección</p>
+ </td>
+ <td>
+ <p class="PARRAFO">Corresponde a la nomenclatura exacta de la
+ entidad a la cual el cliente ha prestado sus servicios.</p>
+ </td>
+</tr>
+<tr>
+ <td class="titletable">
+ <p class="SUBTITULO">Teléfono</p>
+ </td>
+ <td>
+ <p class="PARRAFO">Campo en el cual se captura la información
+ correspondiente a los respectivos números telefónicos de la entidad en
+ mención.</p>
+ </td>
+</tr>
+<tr>
+ <td class="titletable">
+ <p class="SUBTITULO">Ubicación</p>
+ </td>
+ <td>
+ <p class="PARRAFO">Permite seleccionar, de la lista de
+ valores poblada en <i><a href="NUH_003E.html">información geopolítica</a></i>
+ de las tablas corporativas del núcleo, la ciudad y departamento en la cual se
+ encuentra domiciliada la correspondiente compañía.</p>
+ </td>
+</tr>
+<tr>
+ <td class="titletable">
+ <p class="SUBTITULO">Fecha ingreso</p>
+ </td>
+ <td>
+ <p class="PARRAFO">Campo en el cual se define la fecha (DD-MM-YYYY) en la cual el cliente integrá la entidad en
+ mención.</p>
+ </td>
+</tr>
+<tr>
+ <td class="titletable">
+ <p class="SUBTITULO">Fecha retiro</p>
+ </td>
+ <td>
+ <p class="PARRAFO">Campo en el cual se define la fecha (DD-MM-YYYY) en la cual el cliente dejá de prestar sus
+ servicios a la entidad en mención.</p>
+ </td>
+</tr>
+<tr>
+ <td class="titletable">
+ <p class="SUBTITULO">Sueldo</p>
+ </td>
+ <td>
+ <p class="PARRAFO">Corresponde al último sueldo devengado por
+ el cliente de acuerdo con el cargo especificado.</p>
+ </td>
+</tr>
+<tr>
+ <td class="titletable">
+ <p class="SUBTITULO">Modalidad sueldo</p>
+ </td>
+ <td>
+ <p class="PARRAFO">Campo que provee de una lista de valores para
+ seleccionar si el monto estipulado en el campo sueldo, corresponde a cifras
+ en bruto o liquidadas, o su equivalente, sueldo básico o integral.</p>
+ </td>
+</tr>
+<tr>
+ <td class="titletable">
+ <p class="SUBTITULO">Cargo</p>
+ </td>
+ <td>
+ <p class="PARRAFO">Corresponde al último oficio desempeñado
+ por el cliente.</p>
+ </td>
+</tr>
+</table>
+
+ <p class="PARRAFO"><span class="SUBTITULO">Relación: </span>Conjunto de campos diseñados para capturar, modificar o eliminar la
+ información correspondiente a los vínculos que el nuevo cliente posee con otros
+ clientes de la entidad, previamente ingresados al sistema, conformando un
+ universo de clientes potenciales para la misma. El sistema permite
+ diferenciar cuál es el rol del nuevo cliente, esto es si la relación es de
+ dependencia de los otros clientes (superiores) o, de los otros clientes hacia
+ el nuevo cliente (inferiores).</p>
+
+ <p class="TITLE"><img  src="SOH_004E_image010.jpg"></p>
+ 
+ <p class="TITLE"><a name="BL_RELACIONES_PERSONAS_SUP"></a> Descripción de Campos
+ relación</p>
+ 
+<table>
+<tr>
+ <td class="titletable">
+ <p class="SUBTITULO">Identificación</p>
+ </td>
+ <td>
+ <p class="PARRAFO">Dupla de campos, el primero de los cuales
+ provee de una lista de valores de los cuales de selecciona el tipo de documento
+ de Identificación que corresponde al cliente, posteriormente se captura el
+ número respectivo a ese tipo de documento de Identificación.</p>
+ </td>
+</tr>
+<tr>
+ <td class="titletable">
+ <p class="SUBTITULO">Nombre</p>
+ </td>
+ <td>
+ <p class="PARRAFO">Luego de capturados los datos correspondientes
+ al tipo y número de Identificación el sistema alimenta este campo con el
+ nombre completo del cliente de acuerdo como se haya realizado la captura.</p>
+ </td>
+</tr>
+<tr>
+ <td class="titletable">
+ <p class="SUBTITULO">Tipo relación</p>
+ </td>
+ <td>
+ <p class="PARRAFO">Luego de capturada dicha información, en
+ este campo se debe seleccionar, de la lista adjunta, la relación que tiene el
+ cliente titular con la persona que se está ingresando.</p>
+ </td>
+</tr>
+</table>
+
+
+ <p class="PARRAFO"><span class="SUBTITULO">Referencias: </span>En este espacio se captura la información correspondiente a las
+ diferentes recomendaciones o certificaciones que posee un cliente.</p>
+
+ <p class="PARRAFO"><span class="SUBTITULO">Financieras: </span>Se
+ capturan los datos correspondientes a los diferentes productos financieros
+ que posee un cliente, para que la entidad pueda verificar o solicitar
+ información respecto a su comportamiento crediticio.</span></p>
+ 
+ <p class="TITLE"><img src="SOH_004E_image012.jpg"></p>
+
+ <p class="TITLE"><a name="BL_REFERENCIAS_BANCARIAS"></a>Descripción de Campos
+ Referencias (Financieras)</p>
+
+<table>
+<tr>
+ <td class="titletable">
+ <p class="SUBTITULO">Entidad</p>
+ </td>
+ <td>
+ <p class="PARRAFO">Campo en el cual se registra en nombre de la
+ entidad que emite la certificación del cliente.</p>
+ </td>
+</tr>
+<tr>
+ <td class="titletable">
+ <p class="SUBTITULO">Numero cuenta</p>
+ </td>
+ <td>
+ <p class="PARRAFO">En este campo se debe relacionar el número
+ del tipo de producto que posee el cliente con dicha entidad sobre el cual se
+ efectuará la referenciación.</p>
+ </td>
+</tr>
+<tr>
+ <td class="titletable">
+ <p class="SUBTITULO">Tipo</p>
+ </td>
+ <td>
+ <p class="PARRAFO">Este campo provee de una lista de valores
+ sobre la cual se puede establecer la relación con el tipo de producto que
+ posee el cliente, esto es si se trata de una <i>Cuenta de ahorro</i>, <i >Cuenta
+ corriente</i>, <i >Tarjeta de crédito</i> u
+ <i >Otro</i>.</p>
+ </td>
+</tr>
+<tr>
+ <td class="titletable">
+ <p class="SUBTITULO">Moneda</p>
+ </td>
+ <td>
+ <p class="PARRAFO">A través de una lista de valores que
+ provee este campo, se debe seleccionar la <i ><a
+ href="NUH_005E.html">moneda</a></i> en que se denominan los
+ saldos adeudados o acumulados.</p>
+ </td>
+</tr>
+<tr>
+ <td class="titletable">
+ <p class="SUBTITULO">Observaciones</p>
+ </td>
+ <td>
+ <p class="PARRAFO">En este campo se pueden colocar datos
+ adicionales que sean considerados importantes por la entidad.</p>
+ </td>
+</tr>
+</table>
+
+ <p class="PARRAFO"><span class="SUBTITULO">Otras:</span> Se
+ capturan los datos correspondientes a las personas que teniendo o no, una
+ relación comercial con el cliente puedan ratificar la información que éste ha
+ proporcionado en su solicitud a la entidad.</p>
+
+ <p class="TITLE"><img src="SOH_004E_image014.jpg"></p>
+
+ <p class="TITLE"><a name="BL_OTRAS_REFERENCIAS"></a>Descripción de Campos
+ Referencias (Otras)</p>
+
+<table>
+<tr>
+ <td class="titletable">
+ <p class="SUBTITULO">Tipo referencia</p>
+ </td>
+ <td>
+ <p class="PARRAFO">Este campo provee de una lista de valores
+ de los cuales se selecciona la clase de referencia que se va a registrar, la
+ que puede ser <i>Personal, Comercial </i>o<i> Familiar.</i></span><i></i></p>
+ </td>
+</tr>
+<tr>
+ <td class="titletable">
+ <p class="SUBTITULO">Nombre referencia</p>
+ </td>
+ <td>
+ <p class="PARRAFO">En este campo se debe registrar el nombre
+ de la persona con quien la entidad establecerá el contacto para ratificar la
+ información suministrada por el cliente.</p>
+ </td>
+</tr>
+<tr>
+ <td class="titletable">
+ <p class="SUBTITULO">Dirección</p>
+ </td>
+ <td>
+ <p class="PARRAFO">En este campo se registra la Ubicación de
+ la persona natural o Jurídica de dicha referencia.</p>
+ </td>
+</tr>
+<tr>
+ <td class="titletable">
+ <p class="SUBTITULO">Teléfonos</p>
+ </td>
+ <td>
+ <p class="PARRAFO">En este campo se registra los números
+ telefónicos a través de los cuales se pueden contactar las personas que darán
+ las referencias del cliente.</p>
+ </td>
+</tr>
+<tr>
+ <td class="titletable">
+ <p class="SUBTITULO">Ubicación</p>
+ </td>
+ <td>
+ <p class="PARRAFO">Permite seleccionar, de la lista de valores
+ poblada en <i><a href="NUH_003E.html">información geopolítica</a></i>
+ de las tablas corporativas del núcleo, la ciudad y departamento en la cual se
+ encuentra domiciliada la correspondiente persona natural o compañía.</span></p>
+ </td>
+</tr>
+<tr>
+ <td class="titletable">
+ <p class="SUBTITULO">Observaciones</span></b></p>
+ </td>
+ <td>
+ <p class="PARRAFO">En este campo se pueden colocar datos
+ adicionales que sean considerados importantes por la entidad.</span></p>
+ </td>
+</tr>
+
+ <p class="PARRAFO"><span class="SUBTITULO">Direcciones: </span>En este campo se deben registrar todas y cada una de las
+ localizaciones que posee el cliente.</p>
+
+ <p class="TITLE"><img  src="SOH_004E_image016.jpg" ></p>
+
+ <p class="TITLE"><a name="BL_DIRECCIONES"></a> Descripción de Campos
+ Direcciones</p>
+ 
+<table>
+<tr>
+ <td class="titletable">
+ <p class="SUBTITULO">Dirección</span></b></p>
+ </td>
+ <td>
+ <p class="PARRAFO">En este campo se registra la nomenclatura
+ completa de la localización del cliente.</span></p>
+ </td>
+</tr>
+<tr>
+ <td class="titletable">
+ <p class="SUBTITULO">Teléfono 1 - Extensión /
+ Teléfono 2 - Extensión</span></b></p>
+ </td>
+ <td>
+ <p class="PARRAFO">En estos campos se debe registrar la
+ información correspondiente a los números telefónicos y extensiones que posea
+ el cliente de acuerdo con su Dirección registrada.</span></p>
+ </td>
+</tr>
+<tr>
+ <td class="titletable">
+ <p class="SUBTITULO">Fax</span></b></p>
+ </td>
+ <td>
+ <p class="PARRAFO">Campo en el que se registra el número del
+ fax al que puede noticiarse al cliente.</span></p>
+ </td>
+</tr>
+<tr>
+ <td class="titletable">
+ <p class="SUBTITULO">C</span></b></p>
+ </td>
+ <td>
+ <p class="PARRAFO">En este campo se marca, de forma
+ excluyente, a cual de las direcciones registradas, el cliente selecciona para
+ que le sea enviada su correspondencia.</span></p>
+ </td>
+</tr>
+<tr>
+ <td class="titletable">
+ <p class="SUBTITULO">Celular</span></b></p>
+ </td>
+ <td>
+ <p class="PARRAFO">Campo en el que puede registrarse el
+ número del Teléfono celular del cliente.</span></p>
+ </td>
+</tr>
+<tr>
+ <td class="titletable">
+ <p class="SUBTITULO">Tipo</p>
+ </td>
+ <td>
+ <p class="PARRAFO">Este campo provee de una lista de valores
+ para seleccionar a cuál clase de Dirección hace referencia el registro de la
+ misma.</span></p>
+ </td>
+</tr>
+<tr>
+ <td class="titletable">
+ <p class="SUBTITULO">Ubicación</p>
+ </td>
+ <td>
+ <p class="PARRAFO">Permite seleccionar, de la lista de
+ valores poblada en <i><a href="NUH_003E.html">información geopolpitica</a></i>
+ de las tablas corporativas del núcleo, la ciudad y departamento en la cual se
+ encuentra localizada cada una de las direcciones que se hayan registrado</span></p>
+ </td>
+</tr>
+<tr>
+ <td class="titletable">
+ <p class="SUBTITULO">Zona postal</p>
+ </td>
+ <td>
+ <p class="PARRAFO">Si aplica, en este campo se captura el
+ código asignado a la zona que pertenece a la Dirección registrada.</p>
+ </td>
+</tr>
+</table>
+
+ <p class="PARRAFO"><span class="SUBTITULO">Tarjetas: </span>
+Cuando la persona natural o jurídica, ya existe
+ como cliente de la entidad en esta forma aparecen todos y cada uno de los
+ productos que posee con la misma.</p>
+
+ <p class="TITLE"><img src="SOH_004E_image018.jpg"></p>
+
+ <p class="TITLE"><a name="BL_TARJETAS"></a> Descripción de Campos
+</p>
+
+<table>
+<tr>
+ <td class="titletable">
+ <p class="SUBTITULO">Número de tarjeta</p>
+ </td>
+ <td>
+ <p class="PARRAFO">Este campo muestra el número del producto
+ que el cliente posee con la entidad.</p>
+ </td>
+</tr>
+<tr>
+ <td class="titletable">
+ <p class="SUBTITULO">Marca</p>
+ </td>
+ <td>
+ <p class="PARRAFO">Muestra la franquicia a la cual pertenece
+ el producto en mención.</p>
+ </td>
+</tr>
+<tr>
+ <td class="titletable">
+ <p class="SUBTITULO">Fecha vcto.</p>
+ </td>
+ <td>
+ <p class="PARRAFO">Muestra la fecha de expiración de la
+ tarjeta o del crédito.</p>
+ </td>
+</tr>
+<tr>
+ <td class="titletable">
+ <p class="SUBTITULO">Cupo asignado</p>
+ </td>
+ <td>
+ <p class="PARRAFO">Muestra el monto aprobado a la tarjeta o
+ al crédito del cual el cliente puede hacer utilización.</p>
+ </td>
+</tr>
+<tr>
+ <td class="titletable">
+ <p class="SUBTITULO">Cupo disponible</p>
+ </td>
+ <td>
+ <p class="PARRAFO">Muestra el monto que al cliente le queda
+ para consumir.</p>
+ </td>
+</tr>
+</table>
+
+ <p class="PARRAFO"><span class="SUBTITULO">Finanzas: </span>En
+ este campo se capturan la información que corresponde a los ingresos y
+ egresos del cliente.</p>
+
+ <p class="PARRAFO"><span class="SUBTITULO">Bien�: </span>En
+ este campo se captura la información que corresponde a los bienes que posee
+ el cliente.</p>
+
+ <p class="TITLE"><img src="SOH_004E_image020.jpg"></p>
+ 
+
+ <p class="TITLE"><a name="BL_BIENES_CLIENTE"></a> Descripción de Campos
+ Bien</p>
+
+<table>
+<tr>
+ <td class="titletable">
+ <p class="SUBTITULO">Tipo</span></b> </p>
+ </td>
+ <td>
+ <p class="PARRAFO">A través de una lista de valores se
+ selecciona la <i ><a
+ href="NUH_011E.html">clase de bien</a></i> (tangible o
+ intangible) que posee el cliente.</span></p>
+ </td>
+</tr>
+<tr>
+ <td class="titletable">
+ <p class="SUBTITULO">Valor compra</span></b> </p>
+ </td>
+ <td>
+ <p class="PARRAFO">Es este campo se especifica el monto de
+ adquisición de dicho bien.</span></p>
+ </td>
+</tr>
+<tr>
+ <td class="titletable">
+ <p class="SUBTITULO">Deuda</span></b></p>
+ </td>
+ <td>
+ <p class="PARRAFO">En ese campo se selecciona la opción
+ correspondiente a si el cliente posee o no un saldo pendiente de cancelar por
+ el bien en mención.</span></p>
+ </td>
+</tr>
+<tr>
+ <td class="titletable">
+ <p class="SUBTITULO">Valor deuda</span></b></p>
+ </td>
+ <td>
+ <p class="PARRAFO">En el caso en que el bien poseído por el cliente,
+ conserve algún saldo de deuda pendiente, en este campo se debe registrar
+ dicho monto.</span></p>
+ </td>
+</tr>
+<tr>
+ <td class="titletable">
+ <p class="SUBTITULO">Moneda</span></b></p>
+ </td>
+ <td>
+ <p class="PARRAFO">En este campo se especifica la clase de
+ moneda en el que está expresado el saldo de la deuda, en el evento que
+ existiera.</span></p>
+ </td>
+</tr>
+<tr>
+ <td class="titletable">
+ <p class="SUBTITULO">Notaría</span></b></p>
+ </td>
+ <td>
+ <p class="PARRAFO">Dependiendo de la clase de bien que posee
+ el cliente requiere un inscripción en notaria, en este campo se debe
+ especificar la notaría en el cual fue registrado dicho bien.</span></p>
+ </td>
+</tr>
+<tr>
+ <td class="titletable">
+ <p class="SUBTITULO">Escritura</span></b></p>
+ </td>
+ <td>
+ <p class="PARRAFO">El producto del registro en notaria, al bien
+ le es otorgado un número, en este campo se captura tal información.</span></p>
+ </td>
+</tr>
+<tr>
+ <td class="titletable">
+ <p class="SUBTITULO">Fecha</span></b></p>
+ </td>
+ <td>
+ <p class="PARRAFO">En este espacio se diligencia la fecha de
+ expedición de la escritura.</span></p>
+ </td>
+</tr>
+<tr>
+ <td class="titletable">
+ <p class="SUBTITULO">Observaciones</span></b></p>
+ </td>
+ <td>
+ <p class="PARRAFO">En este espacio la entidad coloca datos
+ adicionales que considere de importancia.</span></p>
+ </td>
+</tr>
+</table>
+
+ <p class="PARRAFO"><span class="SUBTITULO">Obligación: </span>Conjunto
+ de campos en los que es posible relacionar las deudas que posea el cliente.</p>
+
+ <p class="TITLE"><img src="SOH_004E_image022.jpg"></p>
+
+ <p class="TITLE"><a
+ name="BL_OBLIGACIONES_FINANCIERAS"></a>Descripción de Campos Obligación</p>
+
+<table>
+<tr>
+ <td class="titletable">
+ <p class="SUBTITULO">Entidad</p>
+ </td>
+ <td>
+ <p class="PARRAFO">En este campo se registra el nombre de la
+ entidad con la cual el cliente ha contraído obligaciones.</p>
+ </td>
+</tr>
+<tr>
+ <td class="titletable">
+ <p class="SUBTITULO">Cuenta</p>
+ </td>
+ <td>
+ <p class="PARRAFO">Se debe capturar el número de la
+ obligación que el cliente posee con la entidad en mención.</span></p>
+ </td>
+</tr>
+<tr>
+ <td class="titletable">
+ <p class="SUBTITULO">Tipo</p>
+ </td>
+ <td>
+ <p class="PARRAFO">Este campo contiene una lista de valores
+ de la cual se debe seleccionar la clase de obligación que el cliente ha
+ contraído con la entidad en mención <i >Tarjeta</i>
+ de crédito, crédito <i >Hipotecario</i> o <i
+ >Préstamo</i> de consumo.</p>
+ </td>
+</tr>
+<tr>
+ <td class="titletable">
+ <p class="SUBTITULO">Saldo</p>
+ </td>
+ <td>
+ <p class="PARRAFO">En este campo se captura el monto que a la
+ fecha de registro adeude el cliente por dicha obligación. </p>
+ </td>
+</tr>
+<tr>
+ <td class="titletable">
+ <p class="SUBTITULO">Moneda</p>
+ </td>
+ <td>
+ <p class="PARRAFO">En este campo se indica la <i
+ ><a href="NUH_005E.html">moneda</a></i>
+ en la cual está expresado el saldo de la deuda.</p>
+ </td>
+</tr>
+<tr>
+ <td class="titletable">
+ <p class="SUBTITULO">Cuota mensual</p>
+ </td>
+ <td>
+ <p class="PARRAFO">Si aplica, debe capturarse el valor
+ correspondiente a los instalamentos mínimos que debe cubrir el cliente en
+ períodos mensuales.</p>
+ </td>
+</tr>
+<tr>
+ <td class="titletable">
+ <p class="SUBTITULO">Valor aprobado</p>
+ </td>
+ <td>
+ <p class="PARRAFO">En este campo se debe registrar el valor
+ global sobre el cual fue aprobada la obligación del cliente con determinada
+ entidad.</span></p>
+ </td>
+</tr>
+<tr>
+ <td class="titletable">
+ <p class="SUBTITULO">Observaciones</p>
+ </td>
+ <td>
+ <p class="PARRAFO">En este espacio la entidad puede registrar
+ información adicional que considere de gran importancia.</p>
+ </td>
+</tr>
+</table>
+
+ <p class="PARRAFO"><span class="SUBTITULO">Balance: </span>En
+ este campo se captura la información que corresponde al estado de sus
+ ingresos y egresos de acuerdo con los diferentes registros que aplican para
+ él.</p>
+
+ <p class="TITLE"><img  src="../img/SOH_004E_image024.jpg"></p>
+
+
+ <p class="TITLE"><a name="BL_BALANCES_CLIENTES"></a>Descripción de Campos
+ Balance</p>
+
+<table>
+<tr>
+ <td class="titletable">
+ <p class="SUBTITULO">Concepto</p>
+ </td>
+ <td>
+ <p class="PARRAFO">Campo que posee lista de valores de la que
+ debe seleccionar cada uno de los diferentes <i>conceptos</i> o rubros que conforman su estado de ingresos y egresos.</span></p>
+ </td>
+</tr>
+<tr>
+ <td class="titletable">
+ <p class="SUBTITULO">Valor</p>
+ </td>
+ <td>
+ <p class="PARRAFO">Una vez se seleccione el concepto, en este
+ campo debe registrar el valor que le corresponde a dicho registro.</p>
+ </td>
+</tr>
+<tr>
+ <td class="titletable">
+ <p class="SUBTITULO">Moneda</p>
+ </td>
+ <td>
+ <p class="PARRAFO">Contiene la moneda en la que se expresan
+ los montos asociados a cada concepto o rubro relacionado.</p>
+ </td>
+</tr>
+<tr>
+ <td class="titletable">
+ <p class="SUBTITULO">Fecha</p>
+ </td>
+ <td>
+ <p class="PARRAFO">Corresponde a la fecha más reciente en la
+ cual fue actualizado el registro del balance.</p>
+ </td>
+</tr>
+<tr>
+ <td class="titletable">
+ <p class="SUBTITULO">Observaciones</p>
+ </td>
+ <td>
+ <p class="PARRAFO">En este campo, se captura información adicional
+ que la entidad considere de gran importancia.</p>
+ </td>
+</tr>
+</table>
+
+ <p class="PARRAFO"><span class="SUBTITULO" >Novedad</span>
+  En este espacio el sistema muestra la información
+ del cliente la cual ha sido actualizada o esté en proceso de actualización.</p>
+ 
+ <p class="TITLE"><img  src="../img/SOH_004E_image026.jpg"></p>
+
+
+ <p class="TITLE"><a name="BL_NOVEDADES"></a> Descripción de Campos
+ Novedad</p>
+ 
+<table>
+<tr>
+ <td class="titletable">
+ <p class="SUBTITULO">Tipo novedad</p>
+ </td>
+ <td>
+ <p class="PARRAFO">En este campo se muestra cuál novedad ha sido
+ registrada para actualización de datos del cliente de acuerdo con los
+ requerimientos del mismo.</p>
+ </td>
+</tr>
+<tr>
+ <td class="titletable">
+ <p class="SUBTITULO">Clase novedad</p>
+ </td>
+ <td>
+ <p class="PARRAFO">En este campo se muestra el resultado de
+ dicha novedad, es decir si corresponde a una novedad <i>nueva</i>, a una <i>modificación</i>
+ o a una <i>eliminación</i>.</p>
+ </td>
+</tr>
+<tr>
+ <td class="titletable">
+ <p class="SUBTITULO">F. ingreso</p>
+ </td>
+ <td>
+ <p class="PARRAFO">Muestra la fecha en la cual fue capturada
+ la novedad.</p>
+ </td>
+</tr>
+<tr>
+ <td class="titletable">
+ <p class="SUBTITULO">F. aplicación</p>
+ </td>
+ <td>
+ <p class="PARRAFO">Muestra la fecha en la cual se afectá la
+ información registrada en la base de datos con dicha novedad.</p>
+ </td>
+</tr>
+<tr>
+ <td class="titletable">
+ <p class="SUBTITULO">F. expiración</p>
+ </td>
+ <td>
+ <p class="PARRAFO">Muestra la fecha hasta la cual la información
+ de dicha novedad estará guardada dentro del sistema, de acuerdo con los <i><a
+ href="NUH_017E.html">parámetros</a></i> que la entidad haya
+ definido para la conservación de la información.</p>
+ </td>
+</tr>
+<tr>
+ <td class="titletable">
+ <p class="SUBTITULO">Estado</p>
+ </td>
+ <td>
+ <p class="PARRAFO">Este campo muestra la etapa en la cual se
+ encuentra la novedad.</p>
+ </td>
+</tr>
+<tr>
+ <td class="titletable">
+ <p class="SUBTITULO">Indicador</p>
+ </td>
+ <td>
+ <p class="PARRAFO">En este campo se muestra el resultado del
+ proceso de la novedad, el cual en algún momento puede equivaler a error,
+ básicamente por inconsistencias de la información.</p>
+ </td>
+</tr>
+</table>
+
+ <p class="PARRAFO"><span class="SUBTITULO">Reclamo: </span>En el evento de que el cliente (ya existente) no
+ este de acuerdo con alguna información suministrada, respecto a la administración
+ de su producto, en este espacio la entidad visualiza todos los requerimientos
+ que éste haya realizado al respecto y el curso que se le ha dado.</p>
+
+ <p class="TITLE"><img src="../img/SOH_004E_image028.jpg"></p>
+
+ <p class="TITLE"><a name="BL_RECLAMOS"></a> Descripción de Campos
+ Reclamo</p>
+
+<table>
+<tr>
+ <td class="titletable">
+ <p class="SUBTITULO">F. ingreso</p>
+ </td>
+ <td>
+ <p class="PARRAFO">En este campo se muestra la fecha en la
+ cual se registró el requerimiento del cliente.</p>
+ </td>
+</tr>
+<tr>
+ <td class="titletable">
+ <p class="SUBTITULO">Tipo reclamo</p>
+ </td>
+ <td>
+ <p class="PARRAFO">El campo permite mostrar la <i
+ ><a href="../../Sc/Help/SCH_004E.html">clase</a></i>
+ de requerimiento que demanda el cliente.</p>
+ </td>
+</tr>
+<tr>
+ <td class="titletable">
+ <p class="SUBTITULO">Modo ingreso</p>
+ </td>
+ <td>
+ <p class="PARRAFO">Este campo muestra la manera como arribá a
+ la entidad dicho requerimiento, <i>Telefónico, Escrito </i>o <i>Personal</i>.</span></p>
+ </td>
+</tr>
+<tr>
+ <td class="titletable">
+ <p class="SUBTITULO">Estado</p>
+ </td>
+ <td>
+ <p class="PARRAFO">Este campo muestra la etapa de gestión en
+ la cual se encuentra dicho requerimiento, <i>Finalizado, Solucionado </i>o <i>Activo</i>.</span></p>
+ </td>
+</tr>
+<tr>
+ <td class="titletable">
+ <p class="SUBTITULO">F. estimada</p>
+ </td>
+ <td>
+ <p class="PARRAFO">De acuerdo con el tipo de reclamo y con
+ los <i><a href="../../Sc/Help/SCH_004E.html">parámetros</a></i> el sistema
+ efectúa los cálculos correspondientes y muestra en este campo el producto de
+ dicho cálculo (fecha) en la cual se espera haya solución al requerimiento.</p>
+ </td>
+</tr>
+<tr>
+ <td class="titletable">
+ <p class="SUBTITULO">F. solución</p>
+ </td>
+ <td>
+ <p class="PARRAFO">En este campo se muestra la fecha en que
+ se ha dado solución el requerimiento, de acuerdo con la etapa de gestión en
+ la que se encuentre.</p>
+ </td>
+</tr>
+<tr>
+ <td class="titletable">
+ <p class="SUBTITULO">F. final</p>
+ </td>
+ <td>
+ <p class="PARRAFO">Corresponde a la fecha en la cual se notifica
+ al cliente que su requerimiento ha sido solucionado.</p>
+ </td>
+</tr>
+<tr>
+ <td class="titletable">
+ <p class="SUBTITULO">Tarjeta</p>
+ </td>
+ <td>
+ <p class="PARRAFO">Corresponde al número de tarjeta con la
+ cual el cliente tiene radicado el requerimiento.</p>
+ </td>
+</tr>
+<tr>
+ <td class="titletable">
+ <p class="SUBTITULO">Transacción</p>
+ </td>
+ <td>
+ <p class="PARRAFO">Corresponde al identificador interno de la
+ transacción si el requerimiento hace referencia a una transacción específica.</p>
+ </td>
+</tr>
+<tr>
+ <td class="titletable">
+ <p class="SUBTITULO">Oficina radicación</p>
+ </td>
+ <td>
+ <p class="PARRAFO">Campo que ilustra el código y nombre de la
+ oficina a través de la que ingresá el reclamo.</p>
+ </td>
+</tr>
+<tr>
+ <td class="titletable">
+ <p class="SUBTITULO">Usuario</p>
+ </td>
+ <td>
+ <p class="PARRAFO">Corresponde a la Identificación del usuario
+ a quien se le asigna y gestiona la solución del reclamo.</p>
+ </td>
+</tr>
+<tr>
+ <td class="titletable">
+ <p class="SUBTITULO"><a name="BL_OBSERVACIONES_RECLAMOS"></a>Observaciones</p>
+ </td>
+ <td>
+ <p class="PARRAFO">Corresponde al detalle o bitácora del
+ requerimiento del cliente.</span></p>
+ </td>
+</tr>
+</table>
+
+
+ <p class="PARRAFO"><span class="SUBTITULO"> Solicitud: </span>Conjunto de campos que ofrecen una gama amplia de
+ funciones, de una parte le permite la entidad la visualización de las
+ distintas demandas o peticiones del cliente, tales como solicitud de una
+ tarjeta principal, adicional, etc., o modificaciones a sus productos
+ existentes, para lo cual debe oprimir el botón especial destinado para tal
+ fin, el que se explica más adelante; en razón a que la entidad requiera
+ desestimar una solicitud recién ingresada o en etapas posteriores puede
+ hacerlo mientras dicha solicitud no haya finalizado exitosamente; es factible
+ avanzar solicitudes o consultar la evolución de cada solicitud.</p>
+
+ <p class="TITLE"><img src="../img/SOH_004E_image030.jpg"></p>
+
+ <p class="TITLE"><a name="BL_SOLICITUDES"></a> Descripción de Campos
+ Solicitud</p>
+
+<table>
+<tr>
+ <td class="titletable">
+ <p class="SUBTITULO">Secuencia</p>
+ </td>
+ <td>
+ <p class="PARRAFO">Corresponde a un número consecutivo que asigna
+ el sistema para identificar cada solicitud que se registra en el mismo.</p>
+ </td>
+</tr>
+<tr>
+ <td class="titletable">
+ <p class="SUBTITULO">Tipo</p>
+ </td>
+ <td>
+ <p class="PARRAFO">Muestra el nombre de la clase de solicitud
+ a la cual pertenece el código de secuencia, a través de la lista de valores
+ adjunta es posible realizar consultas a la base de datos.</p>
+ </td>
+</tr>
+
+<tr>
+ <td class="titletable">
+ <p class="SUBTITULO">Origen</p>
+ </td>
+ <td>
+ <p class="PARRAFO">Muestra el medio a través del cual fue
+ alimentado el sistema con dicha solicitud, <i>Internet, Externo</i> o <i>Interno</i>.</span></p>
+ </td>
+</tr>
+<tr>
+ <td class="titletable">
+ <p class="SUBTITULO">F. ingreso</p>
+ </td>
+ <td>
+ <p class="PARRAFO">Corresponde a la fecha en la cual fue
+ capturada o incluida en el sistema determinada solicitud.</p>
+ </td>
+</tr>
+<tr>
+ <td class="titletable">
+ <p class="SUBTITULO">Etapa actual</p>
+ </td>
+ <td>
+ <p class="PARRAFO">Muestra el paso por el cual está
+ atravesando determinada solicitud, acorde con las estaciones definidas en la
+ pantalla <i><a href="SOH_002B.html">parámetros</a></i> de éste mismo módulo.</p>
+ </td>
+</tr>
+<tr>
+ <td class="titletable">
+ <p class="SUBTITULO">Estado</p>
+ </td>
+ <td>
+ <p class="PARRAFO">Informa a la entidad acerca de la condición
+ en la cual se encuentra la solicitud, es decir si se encuentra en la parte
+ final del proceso, si ha sido denegada o aprobada parcial o definitivamente.</p>
+ </td>
+</tr>
+<tr>
+ <td class="titletable">
+ <p class="SUBTITULO">Finalizada</p>
+ </td>
+ <td>
+ <p class="PARRAFO">Muestra si la solicitud, en el estado en
+ que se encuentra, corresponde a la finalización del trámite de la misma o
+ queda algún paso intermedio para realizar dicha finalización.</p>
+ </td>
+</tr>
+<tr>
+ <td class="titletable">
+ <p class="SUBTITULO">Solicitud depende</p>
+ </td>
+ <td>
+ <p class="PARRAFO">Aplica para cuando la demanda del cliente
+ corresponde a una tarjeta adicional que depende de una solicitud de tarjeta principal,
+ y contiene la secuencia que identifica a ésta última.</p>
+ </td>
+</tr>
+<tr>
+ <td class="titletable">
+ <p class="SUBTITULO">Anexos</p>
+ </td>
+ <td>
+ <p class="PARRAFO">Muestra los documentos que el cliente ha
+ anexado en el momento de realizar determinada solicitud.</p>
+ </td>
+</tr>
+<tr>
+ <td class="titletable">
+ <p class="SUBTITULO">Motivo cancela</p>
+ </td>
+ <td>
+ <p class="PARRAFO">Campo de salida que ilustra la causal por la
+ que se interrumpe, definitivamente el trámite de una solicitud.</p>
+ </td>
+</tr>
+</table>
+
+ <p class="PARRAFO"><a name="nueva_solicitud"></a><span class="SUBTITULO"> Nueva
+ solicitud</span> A través de esta pantalla es probable invocar
+ cualquiera de las distintas clases de solicitudes que podría requerir un
+ cliente, estas son: Tarjeta principal, <a
+ href="SOH_013E.html">Tarjeta adicional</a>,<span >
+ </span><a href="SOH_019E.html">Variación de cupo</a>, <a href="SOH_014E.html">Renovación</a>,
+ <a href="SOH_015E.html">Reposición</a>, <a href="SOH_014E.html">Reexpedición</a>,
+ <a href="SOH_014E.html">Reactivación</a>, <a href="SOH_020E.html">Línea
+ crédito adicional</a>, <a href="SOH_017E.html">Cambio ciclo facturacion</a>, <a
+ href="SOH_016E.html">Cancelación voluntaria crédito</a>, <a
+ href="SOH_021E.html">Cambio producto (crédito)</a>, <a href="SOH_033E.html">débito
+ nuevo</a>, <a href="SOH_034E.html">Cambio producto débito</a>, <a
+ href="SOH_035E.html">Generación plástico</a>, <a href="SOH_036E.html">Reposición
+ débito</a> </i>o <i><a href="SOH_037E.html">Renovación débito</a></i>.</span></p>
+ 
+ <p class="TITLE"><img src="../img/SOH_004E_image031.png"></p>
+
+ <p class="TITLE"><b>Opciones en Modo Consulta</span></b></p>
+ 
+<table>
+<tr>
+ <td class="titletable">
+ <p class="SUBTITULO"><a href="NUH_INTE.html#Acciones"></a> Acciones</p>
+ </td>
+ <td>
+ <p class="PARRAFO">Imprimir, Configurar Impresión, Salir</p>
+ </td>
+ <td>
+ <p class="PARRAFO"><a
+ href="NUH_INTE.html#BotAccion"><img 
+ src="../img/BotImprimir.gif"></span></a><a
+ href="NUH_INTE.html#BotAccion"><img 
+ src="../img/BotConfigurar.gif"></span></a><a
+ href="NUH_INTE.html#BotAccion"><img 
+ src="../img/BotSalir.gif"></span></a></p>
+ </td>
+</tr>
+<tr>
+ <td class="titletable">
+ <p class="SUBTITULO"><a href="NUH_INTE.html#Modulos"></a> Módulos</p>
+ </td>
+ <td>
+ <p class="PARRAFO">Según atribuciones del perfil</p>
+ </td>
+ <td>
+ <p class="PARRAFO">&nbsp;</p>
+ </td>
+</tr>
+<tr>
+ <td class="titletable">
+ <p class="SUBTITULO"><a href="NUH_INTE.html#Consulta"></a>Consulta</p>
+ </td>
+ <td>
+ <p class="PARRAFO">Ingresar, Ejecutar, Cancelar</span></p>
+ </td>
+ <td>
+ <p class="PARRAFO"><a
+ href="NUH_INTE.html#BotConsulta"><img 
+ src="../img/BotEntQuery.gif"></span></a><a
+ href="NUH_INTE.html#BotConsulta"><img 
+ src="../img/BotEjeQuery.gif"></span></a><a
+ href="NUH_INTE.html#BotConsulta"><img 
+ src="../img/BotCanQuery.gif"></span></a></p>
+ </td>
+</tr>
+<tr>
+ <td class="titletable">
+ <p class="SUBTITULO"><a href="NUH_INTE.html#Navegacion"></a>Navegación</p>
+ </td>
+ <td>
+ <p class="PARRAFO">Bloque Anterior, Registro anterior,
+ Registro Siguiente, Bloque Siguiente</p>
+ </td>
+ <td>
+ <p class="PARRAFO"><a
+ href="NUH_INTE.html#BotNavegacion"><img 
+ src="../img/BotBloqAnterior.gif"></span></a><a
+ href="NUH_INTE.html#BotNavegacion"><img 
+ src="../img/BotRegAnterior.gif"></span></a><a
+ href="NUH_INTE.html#BotNavegacion"><img 
+ src="../img/BotRegSiguiente.gif"></span></a><a
+ href="NUH_INTE.html#BotNavegacion"><img 
+ src="../img/BotBloqSiguiente.gif"></span></a></p>
+ </td>
+</tr>
+<tr>
+ <td class="titletable">
+ <p class="SUBTITULO"><a href="NUH_INTE.html#Utilidades"></a>Utilidades</p>
+ </td>
+ <td>
+ <p class="PARRAFO">Cambio de clave, Cambio de idioma y otras
+ según atribuciones del perfil</p>
+ </td>
+ <td>
+ <p class="PARRAFO">&nbsp;</p>
+ </td>
+</tr>
+<tr>
+ <td class="titletable">
+ <p class="SUBTITULO"><a href="NUH_INTE.html#Ayuda"></a>Ayuda</p>
+ </td>
+ <td>
+ <p class="PARRAFO">Lista de Valores, Auditoria, Muestra
+ Teclas, Manual del Usuario, Acerca de Open Card</span></p>
+ </td>
+ <td>
+ <p class="PARRAFO"><a
+ href="NUH_INTE.html#BotLista"><img 
+ src="../img/BotListaValores.gif"></span></a><a
+ href="NUH_INTE.html#BotAuditoria"><img 
+ src="../img/BotAuditoria.gif"></span></a><a
+ href="NUH_INTE.html#BotAyuda"><img 
+ src="../img/BotAyuda.gif"></span></a><a
+ href="NUH_INTE.html#BotAcercade"><img 
+ src="../img/BotAcercade.gif"></span></a></p>
+ </td>
+</tr>
+<tr>
+ <td class="titletable">
+ <p class="SUBTITULO"><a href="NUH_INTE.html#Window"></a>Window</p>
+ </td>
+ <td>
+ <p class="PARRAFO">Cascade, Tile, Arrange, Icons, Ventanas
+ Abiertas</span></p>
+ </td>
+ <td>
+ <p class="PARRAFO">&nbsp;</p>
+ </td>
+</tr>
+</table>
+
+ <p class="TITLE">Opciones en Modo Total</p>
+
+
+<table>
+<tr>
+ <td class="titletable">
+ <p class="SUBTITULO"><a href="NUH_INTE.html#Acciones"></a> Acciones</p>
+ </td>
+ <td>
+ <p class="PARRAFO">Grabar, Imprimir, Configurar Impresión,
+ Salir</span></p>
+ </td>
+ <td>
+ <p class="PARRAFO"><a
+ href="NUH_INTE.html#BotAccion"><img 
+ src="../img/BotGrabar.gif"></span></a><a
+ href="NUH_INTE.html#BotAccion"><img 
+ src="../img/BotImprimir.gif"></span></a><a
+ href="NUH_INTE.html#BotAccion"><img 
+ src="../img/BotConfigurar.gif"></span></a><a
+ href="NUH_INTE.html#BotAccion"><img 
+ src="../img/BotSalir.gif"></span></a></p>
+ </td>
+</tr>
+<tr>
+ <td class="titletable">
+ <p class="SUBTITULO"><a href="NUH_INTE.html#Modulos"></a> Módulos</p>
+ </td>
+ <td>
+ <p class="PARRAFO">Según atribuciones del perfil</p>
+ </td>
+ <td>
+ <p class="PARRAFO">&nbsp;</p>
+ </td>
+</tr>
+<tr>
+ <td class="titletable">
+ <p class="SUBTITULO"><a href="NUH_INTE.html#Editar"></a>Editar</p>
+ </td>
+ <td>
+ <p class="PARRAFO">Cortar, Copiar, Pegar</p>
+ </td>
+ <td>
+ <p class="PARRAFO"><a
+ href="NUH_INTE.html#BotEditar"><img 
+ src="../img/BotCortar.gif"></span></a><a
+ href="NUH_INTE.html#BotEditar"><img 
+ src="../img/BotCopiar.gif"></span></a><a
+ href="NUH_INTE.html#BotEditar"><img 
+ src="../img/BotPegar.gif"></span></a></p>
+ </td>
+</tr>
+<tr>
+ <td class="titletable">
+ <p class="SUBTITULO"><a href="NUH_INTE.html#Consulta"></a>Consulta</p>
+ </td>
+ <td>
+ <p class="PARRAFO">Ingresar, Ejecutar, Cancelar</p>
+ </td>
+ <td>
+ <p class="PARRAFO"><a
+ href="NUH_INTE.html#BotConsulta"><img
+ src="../img/BotEntQuery.gif"></span></a><a
+ href="NUH_INTE.html#BotConsulta"><img
+ src="../img/BotEjeQuery.gif"></span></a><a
+ href="NUH_INTE.html#BotConsulta"><img
+ src="../img/BotCanQuery.gif"></span></a></p>
+ </td>
+</tr>
+<tr>
+ <td class="titletable">
+ <p class="SUBTITULO"><a href="NUH_INTE.html#Navegacion"></a>Navegación</p>
+ </td>
+ <td>
+ <p class="PARRAFO">Bloque Anterior, Registro anterior, Registro
+ Siguiente, Bloque Siguiente</p>
+ </td>
+ <td>
+ <p class="PARRAFO"><a
+ href="NUH_INTE.html#BotNavegacion"><img
+ src="../img/BotBloqAnterior.gif"></span></a><a
+ href="NUH_INTE.html#BotNavegacion"><img
+ src="../img/BotRegAnterior.gif"></span></a><a
+ href="NUH_INTE.html#BotNavegacion"><img
+ src="../img/BotRegSiguiente.gif"></span></a><a
+ href="NUH_INTE.html#BotNavegacion"><img
+ src="../img/BotBloqSiguiente.gif"></span></a></p>
+ </td>
+</tr>
+<tr>
+ <td class="titletable">
+ <p class="SUBTITULO"><a href="NUH_INTE.html#Utilidades"></a>Utilidades</p>
+ </td>
+ <td>
+ <p class="PARRAFO">Cambio de clave, Cambio de idioma y otras según
+ atribuciones del perfil</p>
+ </td>
+ <td>
+ <p class="PARRAFO">&nbsp;</p>
+ </td>
+</tr>
+<tr>
+ <td class="titletable">
+ <p class="SUBTITULO"><a href="NUH_INTE.html#Registro"></a>Registro</p>
+ </td>
+ <td>
+ <p class="PARRAFO">Crear, Borrar, Limpiar</p>
+ </td>
+ <td>
+ <p class="PARRAFO"><a
+ href="NUH_INTE.html#BotRegistro"><img 
+ src="../img/BotCreaReg.gif"></span></a><a
+ href="NUH_INTE.html#BotRegistro"><img 
+ src="../img/BotBorraReg.gif"></span></a><a
+ href="NUH_INTE.html#BotRegistro"><img 
+ src="../img/BotLimpiaReg.gif"></span></a></p>
+ </td>
+</tr>
+<tr>
+ <td class="titletable">
+ <p class="SUBTITULO"><a href="NUH_INTE.html#Ayuda"></a>Ayuda</p>
+ </td>
+ <td>
+ <p class="PARRAFO">Limpiar Pantalla, Lista de Valores,
+ Auditoria, Muestra Teclas, Manual del Usuario, Acerca de Open Card</p>
+ </td>
+ <td>
+ <p class="PARRAFO"><a
+ href="NUH_INTE.html#BotLimpiar"><img 
+ src="../img/BotLimpiaPant.gif"></span></a><a
+ href="NUH_INTE.html#BotLista"><img 
+ src="../img/BotListaValores.gif"></span></a><a
+ href="NUH_INTE.html#BotAuditoria"><img 
+ src="../img/BotAuditoria.gif"></span></a><a
+ href="NUH_INTE.html#BotAyuda"><img 
+ src="../img/BotAyuda.gif"></span></a><a
+ href="NUH_INTE.html#BotAcercade"><img
+ src="../img/BotAcercade.gif"></span></a></p>
+ </td>
+</tr>
+<tr>
+ <td class="titletable">
+ <p class="SUBTITULO"><a href="NUH_INTE.html#Window"></a>Window</p>
+ </td>
+ <td>
+ <p class="PARRAFO">Cascade, Tile, Arrange, Icons, Ventanas
+ Abiertas</span></p>
+ </td>
+ <td>
+ <p class="PARRAFO">&nbsp;</p>
+ </td>
+</tr>
+</table>
+
+ <p class="TITLE">Opciones Especiales</p>
+<table>
+  <tr>
+    <td class="titletable">
+      <p class="SUBTITULO"><img src="SOH_004E_image032.gif" ></p>
+    </td>
+    <td>
+      <p class="PARRAFO"><i><span class="SUBTITULO">Datos del cliente: </span></i>Funcionalidad, que utilizando esta misma
+        pantalla, muestra los datos del cliente con el que existe la relación.</p>
+    </td>
+   </tr>
+   <tr>
+    <td class="titletable">
+      <p class="SUBTITULO"><img src="SOH_004E_image033.gif"></p>
+    </td>
+    <td>
+      <p class="PARRAFO"><i><span class="SUBTITULO">Retornar cliente anterior</span></i>, una vez consultados o actualizados los datos en
+         la misma pantalla, este botón permite retornar al cliente inicial.</p>
+    </td>
+   </tr>
+<tr>
+ <td class="titletable">
+ <p class="SUBTITULO"><img src="SOH_004E_image034.gif"></p>
+ </td>
+ <td>
+ <p class="PARRAFO">Si la página tab <i>Tarjetas</i> contiene registros y se requiere acceder a la
+ información de alguna de estas, basta con presionar el botón </span><i
+ ><a href="NUH_046E.html">Datos de la tarjeta</a>.</span></i></p>
+ </td>
+</tr>
+<tr>
+ <td class="titletable">
+ <p class="SUBTITULO"><img src="SOH_004E_image035.gif"></p>
+ </td>
+ <td>
+ <p class="PARRAFO"><i><span class="SUBTITULO">Detalle de la novedad</span></i>, permite visualizar la esencia de cada una de las
+ novedades de las que se posea información histórica.</p>
+ </td>
+</tr>
+<tr>
+ <td class="titletable">
+ <p class="SUBTITULO"><img src="SOH_004E_image036.gif"></p>
+ </td>
+ <td>
+ <p class="PARRAFO"><i><span class="SUBTITULO">Historia reclamo</i>, permite visualizar los datos más relevantes de cada
+ uno de los reclamos que existan en el histórico.</p>
+ </td>
+</tr>
+<tr>
+ <td class="titletable">
+ <p class="SUBTITULO"><img src="SOH_004E_image035.gif"></p>
+ </td>
+ <td>
+ <p class="PARRAFO"><i><span class="SUBTITULO">Detalle reclamo</span></i>, ilustra la esencia de cada uno de los reclamos
+ realizados por el cliente y de los que se posee información histórica. <i></i></p>
+ </td>
+</tr>
+<tr>
+ <td class="titletable">
+ <p class="SUBTITULO"><img src="SOH_004E_image035.gif"></p>
+ </td>
+ <td>
+ <p class="PARRAFO"><i><span class="SUBTITULO">Detalle de la solicitud</span></i>, muestra la información pormenorizada de cada
+ solicitud del cliente (en donde se encuentre ubicado el cursor).</p>
+ </td>
+</tr>
+<tr>
+ <td class="titletable">
+ <p class="SUBTITULO"><img src="SOH_004E_image038.gif" ></p>
+ </td>
+ <td>
+ <p class="PARRAFO"><i><span class="SUBTITULO">Eliminar solicitud</span></i>. Sólo se ejecuta cuando la solicitud se encuentra
+ en la etapa de ingreso.</p>
+ </td>
+</tr>
+<tr>
+ <td class="titletable">
+ <p class="SUBTITULO"><img src="SOH_004E_image039.gif"></p>
+ </td>
+ <td>
+ <p class="PARRAFO"><i><span class="SUBTITULO"><a href="SOH_012E.html">Consultar
+ etapas</a></span></i>. La pantalla invocada
+ desde este botón permite conocer las etapas por las que ha transitado la
+ solicitud.</p>
+ </td>
+</tr>
+<tr>
+ <td class="titletable">
+ <p class="SUBTITULO"><img src="SOH_004E_image040.gif"></p>
+ </td>
+ <td>
+ <p class="PARRAFO"><i ><span class="SUBTITULO">Pasar
+ a la siguiente etapa. </span></i>Botón
+ especial mediante el que es posible pasar una solicitud de la etapa inicial
+ de grabación o ingreso a la etapa subsiguiente, acorde a la <i
+ ><a href="SOH_002E.html">parametrización</a></i>
+ por producto y tipo de solicitud en este mismo módulo.</p>
+ </td>
+</tr>
+<tr>
+ <td class="titletable">
+ <p class="SUBTITULO"><img src="SOH_004E_image041.gif"></p>
+ </td>
+ <td>
+ <p class="PARRAFO">Ver <i><a href="#nueva_solicitud">Nueva
+ solicitud</a></i>, permite ingresar la información básica de cada una de las
+ solicitudes nuevas.</span></p>
+ </td>
+</tr>
+<tr>
+ <td class="titletable">
+ <p class="SUBTITULO"><img src="SOH_004E_image042.gif"></p>
+ </td>
+ <td>
+ <p class="PARRAFO"><i ><span class="SUBTITULO">Cancelar
+ solicitud, </span></i>utilitario que permite
+ eliminar cualquier solicitud en trámite, excepto aquellas que ya han
+ finalizado completamente. Al invocarse esta funcionalidad se despliega una
+ ventana en la que debe indicarse el motivo correspondiente.</p>
+ </td>
+</tr>
+</table>
+
+      </div>
+      </section>
+      <script src="../js/menu.js"></script>
+      <div id="footerContainer"></div>
+    </body>
+    <script>
+  fetch('footer.html')
+    .then(response => response.text())
+    .then(html => {
+      document.getElementById('footerContainer').innerHTML = html;
+    });
+</script>
+  </html>

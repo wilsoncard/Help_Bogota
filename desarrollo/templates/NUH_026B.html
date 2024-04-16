@@ -1,25 +1,25 @@
 <!DOCTYPE html>
 <html lang="es">
 
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>BANKBU®</title>
-  <link rel="stylesheet" href="../css/pages.css">
-  <link rel="stylesheet" href="../css/style.css">
-  <link rel="icon" href="../img/ACQUIRER-logo.JPG" type="image/x-icon">
-</head>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BANKBU®</title>
+    <link rel="stylesheet" href="../css/pages.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="icon" href="../img/ACQUIRER-logo.JPG" type="image/x-icon">
+  </head>
 
-<body>
+  <body>
 
-  <header>
-    <img class="logo" src="../img/logoBankbu_.PNG" alt="Logo de Mi Empresa">
-    <div id="menuBtn">
-      <img class="TITLE" src="../img/menu.PNG" alt="Botón de Menú ">
-    </div>
-  </header>
+    <header>
+      <img class="logo" src="../img/logoBankbu_.PNG" alt="Logo de Mi Empresa">
+      <div id="menuBtn">
+        <img class="TITLE" src="../img/menu.PNG" alt="Botón de Menú ">
+      </div>
+    </header>
     <div id="menuContainer"></div>
-  <script>
+    <script>
     fetch('menu.html')
       .then(response => response.text())
       .then(html => {
@@ -27,156 +27,178 @@
       });
   </script>
 
-  <section>
-    <div>
-      <p class="TITLE">Bines Nacionales</span></p>
+    <section>
+      <div>
+        <p class="TITLE">Bines Nacionales</span></p>
 
-      <p class="PARRAFO">Esta
-        funci&oacute;n habilita la consulta y mantenimiento de la tabla
-        que almacena toda la informaci&oacute;n necesaria en la validaci&oacute;n
-        de transacciones realizadas con tarjetas emitidas por las entidades
-        financieras nacionales (Bines nacionales), mantenimiento que se
-        realiza a trav&eacute;s del cargue de la cinta enviada peri&oacute;dicamente
-        por el operador (</span><a href="NUH_033B.html">franquicia</a>), y as&iacute;
-        mismo permite la inclusi&oacute;n de los datos de los bines asociados
-        a las marcas privadas. La codificaci&oacute;n aqu&iacute; contenida,
-        es utilizada como base en la conformaci&oacute;n o creaci&oacute;n
-        de los diferentes </span><a href="MEH_002B.html">productos</a> ofrecidos
-        por la entidad.</p>
-      <p class="TITLE"><img src="../img/NUF_026E.PNG"></p>
+      <p class="PARRAFO">Esta función habilita la consulta y mantenimiento de la
+        estructura que, almacena la información necesaria en la validación de
+        transacciones realizadas con tarjetas emitidas por las entidades
+        financieras nacionales (Bines nacionales), mantenimiento que se realiza
+        a través del cargue de la cinta enviada periódicamente por el operador
+        (</span><a href="NUH_033B.html">franquicia</a>), y así mismo permite la
+      inclusión de los datos de los bines asociados a las marcas privadas. La
+      codificación aquí contenida, es utilizada como base en la conformación o
+      creación de los diferentes </span><a href="MEH_002B.html">productos</a>
+    ofrecidos por la entidad. El formulario dispone de un filtro para consultar
+    los datos, además, los enlaces: Actualizar, Eliminar, Adicionar y
+    Detalle.</p>
+  <p class="TITLE"><img src="../img/NUF_026E.PNG"></p>
 
-      <p>El
-        formulario contiene las opciones Actualizar, Eliminar, Adicionar, Detalle y la opci&oacute;n Ir a Filtro. </p>
-      <p>Adicionar: Si el usuario invoca la opci&oacute;n Adicionar se despliega un formulario con los siguientes
-        campos:</p>
-      <p class="TITLE"><img src="../img//NUF_026E1.PNG"></p>
+  <p class="PARRAFO"><span class="SUBTITULO">Adicionar:</span> Al activar el
+    enlace se despliega un formulario
+    con los siguientes campos:</p>
+  <p class="TITLE"><img src="../img//NUF_026E1.PNG"></p>
 
-      <table>
-        <tr>
-          <td class="titletable">
-            <p><span class="SUBTITULO">Bin</p>
-          </td>
-          <td>
-            <p class="PARRAFO">Campo
-              alfanum&eacute;rico obligatorio que almacena, en un m&aacute;ximo
-              de 8 caracteres, el Bank Identification Number BIN o prefijo correspondiente
-              a cada producto por entidad financiera o los de marca privada.</p>
-          </td>
-        </tr>
-        <tr>
-          <td class="titletable">
-            <p><span class="SUBTITULO">Descripci&oacute;n</p>
+  <table>
+    <tr>
+      <td class="titletable">
+        <p class="PARRAFO"><span class="SUBTITULO">Bin</p>
+        </td>
+        <td>
+          <p class="PARRAFO">Campo
+            alfanumérico obligatorio que almacena, en un máximo
+            de 8 caracteres, el Bank Identification Number BIN o prefijo
+            correspondiente
+            a cada producto por entidad financiera o los de marca privada.</p>
+        </td>
+      </tr>
+      <tr>
+        <td class="titletable">
+          <p class="PARRAFO"><span class="SUBTITULO">Descripción</p>
           </td>
           <td>
             <p class="PARRAFO">En
-                este campo alfanum&eacute;rico de m&aacute;ximo 30 caracteres,
-                obligatorio, se registra el tipo o nombre del producto de la entidad
-                financiera asociado a cada Bin. </p>
+              este campo alfanumérico de máximo 30 caracteres,
+              obligatorio, se registra el tipo o nombre del producto de la
+              entidad
+              financiera asociado a cada Bin. </p>
           </td>
         </tr>
         <tr>
           <td class="titletable">
-            <p><span class="SUBTITULO">Entidad</p>
-          </td>
-          <td>
-            <p class="PARRAFO">En
-              este campo se selecciona de la lista de valores la <a
-                href="NUH_019B.html">entidad
-                financiera</a> emisora de cada producto (Bin).</p>
-          </td>
-        </tr>
-        <tr>
-          <td class="titletable">
-            <p><span class="SUBTITULO">Tipo tarjeta</p>
-          </td>
-          <td>
-            <p class="PARRAFO"><span class="PARRAFO">En
-                este campo se selecciona de la lista de valores adjunta, el tipo
-                o clase de tarjeta correspondiente al bin y que puede ser <em class="PARRAFO">D&eacute;bito,
-                    Cr&eacute;dito, Electron/Maestro<em class="PARRAFO">, D&eacute;bito propia, Cr&eacute;dito
-                      propia</span></span>.</p>
-          </td>
-        </tr>
-        <tr>
-          <td class="titletable">
-            <p><span class="SUBTITULO">Franquicia</p>
-          </td>
-          <td>
-            <p class="PARRAFO">Campo
-                que posee lista de valores de la que se selecciona la <a
-                  href="NUH_033B.html">franquicia</a>
-                a la que pertenece el bin en particular.</p>
-          </td>
-        </tr>
-        <tr>
-          <td class="titletable">
-            <p><span class="SUBTITULO">Longitud bin</p>
-          </td>
-          <td>
-            <p class="PARRAFO">Campo
-                num&eacute;rico de una posici&oacute;n, obligatorio, que ilustra
-                la longitud m&aacute;xima del bin o prefijo.</p>
-          </td>
-        </tr>
-        <tr>
-          <td class="titletable">
-            <p><span class="SUBTITULO">Longitud tarjeta</p>
-          </td>
-          <td>
-            <p class="PARRAFO">En
-                este campo num&eacute;rico de 2 posiciones, obligatorio, se almacena
-                la cantidad m&aacute;xima de d&iacute;gitos que componen el n&uacute;mero
-                de la tarjeta, usualmente contiene el bin o prefijo.</p>
-          </td>
-        </tr>
-        <tr>
-          <td class="titletable">
-            <p><span class="SUBTITULO">D&iacute;gito
-                  chequeo</p>
-          </td>
-          <td>
-            <p class="PARRAFO">Campo
-                que posee lista de valores sobre la cual se puede seleccionar
-                el algoritmo mediante el cual se realiza la verificaci&oacute;n
-                del d&iacute;gito de chequeo.</p>
-          </td>
-        </tr>
-        <tr>
-          <td class="titletable">
-            <p><span class="SUBTITULO">Comod&iacute;n</p>
-          </td>
-          <td>
-            <p class="PARRAFO">Campo
-                alfanum&eacute;rico de 23 d&iacute;gitos, obligatorio, que facilita
-                la captura de movimiento del canje manual cuando el n&uacute;mero
-                de la tarjeta no es legible y permite al sistema validar su d&iacute;gito
-                de verificaci&oacute;n. Se construye adicion&aacute;ndole al Bin
-                o prefijo ene menos uno ceros (donde &quot;n&quot; es la longitud
-                de la tarjeta menos la longitud del bin) y al final el d&iacute;gito
-                de chequeo obtenido al aplicar el algoritmo asociado, completando
-                as&iacute; la cantidad de d&iacute;gitos que componen el n&uacute;mero
-                de las tarjetas.</p>
-          </td>
-        </tr>
-      </table>
-      <p class="PARRAFO"><span class="SUBTITULO">Actualizar</span>: Si el
-          usuario invoca la opci&oacute;n Actualizar se despliega un nuevo formulario
-          en el cual los &uacute;nicos campos modificables son: Descrici&oacute;n,
-          Entidad, Tipo tarjeta, </span>Franquicia,
-          Longitud bin, Longitud tarjeta, D&iacute;gito de chequeo, y Comod&iacute;n.</p>
-      <p class="TITLE"><img src="../img/NUF_026E2.PNG"></p>
+            <p class="PARRAFO"><span class="SUBTITULO">Franquicia</p>
+            </td>
+            <td>
+              <p class="PARRAFO">Campo que posee lista de valores de la que se
+                selecciona la <a href="NUH_033B.html">franquicia</a> a la que
+                pertenece el bin en
+                particular.</p>
+            </td>
+          </tr>
+          <tr>
+            <td class="titletable">
+              <p class="PARRAFO"><span class="SUBTITULO">Tipo tarjeta</p>
+              </td>
+              <td>
+                <p class="PARRAFO">En este campo se selecciona de la lista de
+                  valores adjunta, el tipo o clase de tarjeta correspondiente al
+                  bin y que puede ser <em>Débito, Crédito, Electron/Maestro,
+                    Débito
+                    propia, Crédito propia.</em> </p>
+              </td>
+            </tr>
+            <tr>
+              <td class="titletable">
+                <p class="PARRAFO"><span class="SUBTITULO">Entidad</p>
+                </td>
+                <td>
+                  <p class="PARRAFO">En
+                    este campo se selecciona de la lista de valores la <a
+                      href="NUH_019B.html">entidad
+                      financiera</a> emisora de cada producto (Bin).</p>
+                </td>
+              </tr>
+              <tr>
+                <td class="titletable">
+                  <p class="PARRAFO"><span class="SUBTITULO">Longitud
+                      bin</p>
+                  </td>
+                  <td>
+                    <p class="PARRAFO">Campo
+                      numérico de una posición, obligatorio, que ilustra
+                      la longitud máxima del bin o prefijo.</p>
+                  </td>
+                </tr>
+                <tr>
+                  <td class="titletable">
+                    <p class="PARRAFO"><span class="SUBTITULO">Longitud
+                        tarjeta</p>
+                    </td>
+                    <td>
+                      <p class="PARRAFO">En
+                        este campo numérico de 2 posiciones, obligatorio,
+                        se
+                        almacena
+                        la cantidad máxima de dígitos que componen el
+                        número
+                        de la tarjeta, usualmente contiene el bin o
+                        prefijo.</p>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td class="titletable">
+                      <p class="PARRAFO"><span class="SUBTITULO">Dígito
+                          chequeo</p>
+                      </td>
+                      <td>
+                        <p class="PARRAFO">Campo
+                          que posee lista de valores sobre la cual se
+                          puede
+                          seleccionar
+                          el algoritmo mediante el cual se realiza la
+                          verificación
+                          del dígito de chequeo.</p>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td class="titletable">
+                        <p class="PARRAFO"><span
+                            class="SUBTITULO">Comodín</p>
+                        </td>
+                        <td>
+                          <p class="PARRAFO">Campo
+                            alfanumérico de 23 dígitos, obligatorio, que
+                            facilita
+                            la captura de movimiento del canje manual
+                            cuando
+                            el número
+                            de la tarjeta no es legible y permite al
+                            sistema
+                            validar su dígito
+                            de verificación. Se construye adicionándole al
+                            Bin
+                            o prefijo ene menos uno ceros (donde
+                            &quot;n&quot;
+                            es la longitud
+                            de la tarjeta menos la longitud del bin) y al
+                            final el dígito
+                            de chequeo obtenido al aplicar el algoritmo
+                            asociado, completando
+                            así la cantidad de dígitos que componen el
+                            número
+                            de las tarjetas.</p>
+                        </td>
+                      </tr>
+                    </table>
+                    <p class="PARRAFO"><span
+                        class="SUBTITULO">Actualizar</span>: Al activar ese
+                      enlace se despliega un nuevo formulario en el cual, el
+                      único campo inmodificable es Bin:.</p>
+                    <p class="TITLE"><img src="../img/NUF_026E2.PNG"></p>
 
-      <p class="PARRAFO"><span class="SUBTITULO">Detalle:</span> Si el usuario invoca la opci&oacute;n Detalle se
-        despliega el siguiente formulario. 
+                    <p class="PARRAFO"><span
+                        class="SUBTITULO">Detalle:</span>
+                        Al activar ese enlace se despliega el siguiente formulario:
 
-        </p>
-      <p class="TITLE"><img src="../img/NUF_026E3.PNG"></p>
+                    </p>
+                    <p class="TITLE"><img src="../img/NUF_026E3.PNG"></p>
 
-  </section>
-  <script src="../js/menu.js"></script>
-</body>
-<div id="footerContainer"></div>
-<script>
+                  </section>
+                  <script src="../js/menu.js"></script>
+                </body>
+                <div id="footerContainer"></div>
+                <script>
   fetch('footer.html')
     .then(response => response.text())
     .then(html => {
@@ -184,4 +206,4 @@
     });
 </script>
 
-</html>
+              </html>

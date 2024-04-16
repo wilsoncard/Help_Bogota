@@ -30,196 +30,196 @@
             
                     <p  class="TITLE">Configuraciones</p>
                   
-            <p  class="PARRAFO">A trav&eacute;s de &eacute;ste formulario Bankb&uacute;&reg; permite a funcionarios conocedores del modelo de la base de datos, definir el alcance de la auditor&iacute;a que la entidad requiera, teniendo en consideraci&oacute;n el costo de la misma en cuanto al consumo de recursos del sistema que de &eacute;sta se derive.</p>
-            <p  class="PARRAFO">Una configuraci&oacute;n puede estar  compuesta de una o m&aacute;s tablas o estructuras de la base de datos. El sistema no permite operar m&aacute;s de una configuraci&oacute;n al mismo tiempo, motivo por el cual al generar una configuraci&oacute;n, &eacute;sta entra en operaci&oacute;n y desactiva la anterior:</p>
+            <p  class="PARRAFO">A través de éste formulario Bankbú&reg; permite a funcionarios conocedores del modelo de la base de datos, definir el alcance de la auditoría que la entidad requiera, teniendo en consideración el costo de la misma en cuanto al consumo de recursos del sistema que de ésta se derive.</p>
+            <p  class="PARRAFO">Una configuración puede estar  compuesta de una o más tablas o estructuras de la base de datos. El sistema no permite operar más de una configuración al mismo tiempo, motivo por el cual al generar una configuración, ésta entra en operación y desactiva la anterior:</p>
             <p  class="PARRAFO">El formulario inicial desplegado contiene el enlace <a href="#nuevaconfiguracion" target="_self" >Nueva Configuración</a>.</p>
             <p class="TITLE"><img src="../img/AUF_001E.PNG"></p>
             
-            <p  class="TITLE">Descripci&oacute;n de campos</p>
+            <p  class="TITLE">Descripción de campos</p>
             <table width=731 >
               <tr>
                 <td    class="SUBTITULO"><p class="SUBTITULO">Id
                         </p></td>
-                <td   class="PARRAFO" ><p  class="PARRAFO">Campo de salida que ilustra la secuencia asignada por el sistema y que permite identificar las diferentes configuraciones de auditor&iacute;a definidos por la entidad. El formulario m&aacute;ximo muestra dos registros, el primero con la configuraci&oacute;n vigente o generada y la nueva que est&eacute; en construcci&oacute;n.</p></td>
+                <td   class="PARRAFO" ><p  class="PARRAFO">Campo de salida que ilustra la secuencia asignada por el sistema y que permite identificar las diferentes configuraciones de auditoría definidos por la entidad. El formulario máximo muestra dos registros, el primero con la configuración vigente o generada y la nueva que esté en construcción.</p></td>
               </tr>
               <tr>
                 <td  class="SUBTITULO" ><p class="SUBTITULO">Estado</p></td>
-                <td   class="PARRAFO" ><p  class="PARRAFO">Campo de salida que puede mostrar <span >GENERADA</span>  o <span >EN_CONSTRUCCION</span> , permiti&eacute;ndole  al usuario diferenciar la configuraci&oacute;n vigente de la que no lo est&eacute;.</p></td>
+                <td   class="PARRAFO" ><p  class="PARRAFO">Campo de salida que puede mostrar <span >GENERADA</span>  o <span >EN_CONSTRUCCION</span> , permitiéndole  al usuario diferenciar la configuración vigente de la que no lo esté.</p></td>
               </tr>
               <tr>
-                <td  class="SUBTITULO" >Fecha creaci&oacute;n </td>
-                <td   class="PARRAFO" ><p>Campo de salida que muestra la fecha en la que cada configuraci&oacute;n fue definida.</p></td>
+                <td  class="SUBTITULO" >Fecha creación </td>
+                <td   class="PARRAFO" ><p class="PARRAFO">Campo de salida que muestra la fecha en la que cada configuración fue definida.</p></td>
               </tr>
               <tr>
-                <td  class="SUBTITULO" >Usuario de creaci&oacute;n </td>
-                <td   class="PARRAFO" ><p>Campo de salida que ilustra el usuario de la base de datos del <a href="NUH_045E.html"><span >funcionario</span></a> que defini&oacute; cada configuraci&oacute;n.</p></td>
+                <td  class="SUBTITULO" >Usuario de creación </td>
+                <td   class="PARRAFO" ><p class="PARRAFO">Campo de salida que ilustra el usuario de la base de datos del <a href="NUH_045E.html"><span >funcionario</span></a> que definió cada configuración.</p></td>
               </tr>
               <tr>
-                <td  class="SUBTITULO" >Fecha de generaci&oacute;n </td>
-                <td   class="PARRAFO" ><p>Campo de salida que muestra la fecha en la que cada configuraci&oacute;n cambio de estado de<span > EN_CONSTRUCCION</span>  a <span >GENERADA</span> .</p></td>
+                <td  class="SUBTITULO" >Fecha de generación </td>
+                <td   class="PARRAFO" ><p class="PARRAFO">Campo de salida que muestra la fecha en la que cada configuración cambio de estado de<span > EN_CONSTRUCCION</span>  a <span >GENERADA</span> .</p></td>
               </tr>
               <tr>
-                <td  class="SUBTITULO" >Usuario de generaci&oacute;n </td>
-                <td   class="PARRAFO" ><p>Campo de salida que ilustra el usuario de la base de datos del <a href="NUH_045E.html"><span >funcionario</span></a> que realiza el cambio de estado de<span > EN_CONSTRUCCION</span>  a <span >GENERADA</span> .</p></td>
+                <td  class="SUBTITULO" >Usuario de generación </td>
+                <td   class="PARRAFO" ><p class="PARRAFO">Campo de salida que ilustra el usuario de la base de datos del <a href="NUH_045E.html"><span >funcionario</span></a> que realiza el cambio de estado de<span > EN_CONSTRUCCION</span>  a <span >GENERADA</span> .</p></td>
               </tr>
             </table>
             
-            <p class="PARRAFO" ><span class="SUBTITULO"><span ><a name="nuevaconfiguracion"></a>Nueva Configuraci&oacute;n</span><span >:</span></span>  El formulario desplegado al invocar el enlace provisto por el sistema en el campo Id del formulario inicial, contiene cinco enlaces 
-            que permiten invocar otros formulario desde los cuales se parametrizan y activan las configuraciones, &eacute;stos son: </span><a href="#agregartabla" target="_self" >Agregar tabla</a><span class="PARRAFO">, <a href="#estimarcrecimiento" target="_self" >Estimar crecimiento de table spaces</a>, <a href="#descargarscript" target="_self" >Descargar Script</a>, <a href="#generarconfiguracion" target="_self" >Generar Configuración</a>, <a href="#verificarestado" target="_self" >Verificar estado  configuración</a> y Eliminar Configuraci&oacute;n; para &eacute;ste &uacute;ltimo enlace no se requiere documentaci&oacute;n adicional, dado que la &uacute;nica funci&oacute;n es la de quitar la configuraci&oacute;n desde la que se activa. </p>
+            <p class="PARRAFO" ><span class="SUBTITULO"><span ><a name="nuevaconfiguracion"></a>Nueva Configuración</span><span >:</span></span>  El formulario desplegado al invocar el enlace provisto por el sistema en el campo Id del formulario inicial, contiene cinco enlaces 
+            que permiten invocar otros formulario desde los cuales se parametrizan y activan las configuraciones, éstos son: </span><a href="#agregartabla" target="_self" >Agregar tabla</a><span class="PARRAFO">, <a href="#estimarcrecimiento" target="_self" >Estimar crecimiento de table spaces</a>, <a href="#descargarscript" target="_self" >Descargar Script</a>, <a href="#generarconfiguracion" target="_self" >Generar Configuración</a>, <a href="#verificarestado" target="_self" >Verificar estado  configuración</a> y Eliminar Configuración; para éste último enlace no se requiere documentación adicional, dado que la única función es la de quitar la configuración desde la que se activa. </p>
             <p class="PARRAFO" >El formulario de Tablas  contiene los enlaces Actualizar</span> ,<span class="PARRAFO"> Eliminar y Detalle.</p>
              <p class="TITLE"><img src="../img/AUF_001E1.PNG"></p>
            
-            <p  class="TITLE">Descripci&oacute;n de campos</p>
+            <p  class="TITLE">Descripción de campos</p>
             <table width=731 >
               <tr>
                 <td    class="SUBTITULO"><p class="SUBTITULO">Esquema
                 </p></td>
-                <td   class="PARRAFO" ><p  class="PARRAFO">Campo de salida que contiene el nombre asignado por el sistema al conjunto de tablas de la base de datos sobre las que se va a realizar la auditor&iacute;a. </p></td>
+                <td   class="PARRAFO" ><p  class="PARRAFO">Campo de salida que contiene el nombre asignado por el sistema al conjunto de tablas de la base de datos sobre las que se va a realizar la auditoría. </p></td>
               </tr>
               <tr>
                 <td  class="SUBTITULO" ><p class="SUBTITULO">Nombre</p></td>
                 <td   class="PARRAFO" ><p  class="PARRAFO">Campo de salida que muestra cada uno de los nombres de las estructuras o tablas que van a ser auditadas. </p></td>
               </tr>
               <tr>
-                <td  class="SUBTITULO" >Descripci&oacute;n</td>
-                <td   class="PARRAFO" ><p>Campo de salida que ilustra brevemente la funci&oacute;n principal de la estructura o tabla de la base de datos. </p></td>
+                <td  class="SUBTITULO" >Descripción</td>
+                <td   class="PARRAFO" ><p class="PARRAFO">Campo de salida que ilustra brevemente la función principal de la estructura o tabla de la base de datos. </p></td>
               </tr>
             </table>
            
-            <p class="PARRAFO" ><span class="SUBTITULO"><span >Actualizar</span><span >:</span></span><span > Esta funcionalidad se activa siempre y </span><span >cuando el esquema tenga estructuras o tablas asociadas, si </span><span > el usuario invoca el enlace Actualizar, se depliega</span><span > un wisard de </span>  <span >d</span><span >os pasos, mediante el cual puede modificarse los campos a auditar de la estructura desde la que se invoca, as&iacute; como los </span><span >datos del table space</span><span > de la confi</span><span >guraci&oacute;n generada.</span></p>
+            <p class="PARRAFO" ><span class="SUBTITULO"><span >Actualizar</span><span >:</span></span><span > Esta funcionalidad se activa siempre y </span><span >cuando el esquema tenga estructuras o tablas asociadas, si </span><span > el usuario invoca el enlace Actualizar, se depliega</span><span > un wisard de </span>  <span >d</span><span >os pasos, mediante el cual puede modificarse los campos a auditar de la estructura desde la que se invoca, así como los </span><span >datos del table space</span><span > de la confi</span><span >guración generada.</span></p>
             
             <p class="TITLE"><img src="../img/AUF_001E2.PNG"></p>
             
             <p  class="TITLE"><img src="../img/AUF_001E3.PNG"></p>
             
-            <p  class="TITLE">Descripci&oacute;n de campos</p>
+            <p  class="TITLE">Descripción de campos</p>
             <table width=731 >
               <tr>
                 <td    class="SUBTITULO"><p class="SUBTITULO">Columna
                 </p></td>
-                <td   class="PARRAFO" ><p  class="PARRAFO">El formulario debe contener la totalidad de los campos o columnas de la estructura o tabla de base de datos indicada en el campo Nombre tabla, justo antes de  cada nombre de la columna el formulario provee un campo checkbox, aquellos que aparecen preseleccionados y que no permiten modificaci&oacute;n, corresponden a los campos que son llave primaria y por defecto  deben auditarse, mientras que  los restantes,  aparecen disponibles para que, a criterio de quien define la auditor&iacute;a, marque los dem&aacute;s campos o columnas que van a auditarse. La funcionalidad permite desmarcar campos previamente activados.</p></td>
+                <td   class="PARRAFO" ><p  class="PARRAFO">El formulario debe contener la totalidad de los campos o columnas de la estructura o tabla de base de datos indicada en el campo Nombre tabla, justo antes de  cada nombre de la columna el formulario provee un campo checkbox, aquellos que aparecen preseleccionados y que no permiten modificación, corresponden a los campos que son llave primaria y por defecto  deben auditarse, mientras que  los restantes,  aparecen disponibles para que, a criterio de quien define la auditoría, marque los demás campos o columnas que van a auditarse. La funcionalidad permite desmarcar campos previamente activados.</p></td>
               </tr>
               <tr>
                 <td  class="SUBTITULO" ><p class="SUBTITULO">Tipo</p></td>
-                <td   class="PARRAFO" ><p  class="PARRAFO">Campo de salida que ilustra si el dato contenido corresponde a un valor num&eacute;rico o alfanum&eacute;rico o, a una fecha. </p></td>
+                <td   class="PARRAFO" ><p  class="PARRAFO">Campo de salida que ilustra si el dato contenido corresponde a un valor numérico o alfanumérico o, a una fecha. </p></td>
               </tr>
               <tr>
                 <td  class="SUBTITULO" >Longitud</td>
-                <td   class="PARRAFO" ><p>Campo de salida que muestra la extensi&oacute;n o magnitud m&aacute;xima que puede tener el dato dentro de cada campo.</p></td>
+                <td   class="PARRAFO" ><p class="PARRAFO">Campo de salida que muestra la extensión o magnitud máxima que puede tener el dato dentro de cada campo.</p></td>
               </tr>
               <tr>
-                <td  class="SUBTITULO" >Precisi&oacute;n</td>
-                <td   class="PARRAFO" ><p>Aplica &uacute;nicamente para los campos tipo num&eacute;rico e indica la cantidad m&aacute;xima de digitos que componen el dato, incluye tanto la parte entera como los decimales. </td>
+                <td  class="SUBTITULO" >Precisión</td>
+                <td   class="PARRAFO" ><p class="PARRAFO">Aplica únicamente para los campos tipo numérico e indica la cantidad máxima de digitos que componen el dato, incluye tanto la parte entera como los decimales. </td>
               </tr></p>
               <tr>
                 <td  class="SUBTITULO" >Escala</td>
-                <td   class="PARRAFO" ><p>Aplica &uacute;nicamente para los campos tipo num&eacute;rico e indica la cantidad m&aacute;xima de <span class="PARRAFO" #"padding:3.0pt 3.0pt 3.0pt 3.0pt">decimales</span> que puede contener el dato. </td>
+                <td   class="PARRAFO" ><p class="PARRAFO">Aplica únicamente para los campos tipo numérico e indica la cantidad máxima de <span class="PARRAFO" #"padding:3.0pt 3.0pt 3.0pt 3.0pt">decimales</span> que puede contener el dato. </td>
               </tr></p>
               <tr>
-                <td  class="SUBTITULO" >Descripci&oacute;n</td>
-                <td   class="PARRAFO" ><p>Campo de salida que muestra el comentario asociado a cada columna en la base de datos, que procura comunicar la raz&oacute;n del ser del campo. Si la longitud del mensaje supera la capacidad del campo en el formulario, se muestra un s&iacute;gno m&aacute;s que al activarse despliega una ventana con el texto completo del mismo. </td>
+                <td  class="SUBTITULO" >Descripción</td>
+                <td   class="PARRAFO" ><p class="PARRAFO">Campo de salida que muestra el comentario asociado a cada columna en la base de datos, que procura comunicar la razón del ser del campo. Si la longitud del mensaje supera la capacidad del campo en el formulario, se muestra un sígno más que al activarse despliega una ventana con el texto completo del mismo. </td>
               </tr></p>
               <tr>
                 <td  class="SUBTITULO" >Registros mensuales </td>
-                <td   class="PARRAFO" ><p>Campo num&eacute;rico, obligatorio, en el que debe indicarse, en un m&aacute;ximo de diez (10) enteros, la cantidad tope de registros a auditar durante cada mes en que la configuraci&oacute;n est&eacute; activa. </td>
+                <td   class="PARRAFO" ><p class="PARRAFO">Campo numérico, obligatorio, en el que debe indicarse, en un máximo de diez (10) enteros, la cantidad tope de registros a auditar durante cada mes en que la configuración esté activa. </td>
               </tr></p>
               <tr>
                 <td  class="SUBTITULO" >Data table space </td>
-                <td   class="PARRAFO" ><p>Campo que posee lista de valores tipo combo de la que debe seleccionarse el nombre que identifica el espacio del disco en el que se almacenan los datos asociados a la auditor&iacute;a. </td>
+                <td   class="PARRAFO" ><p class="PARRAFO">Campo que posee lista de valores tipo combo de la que debe seleccionarse el nombre que identifica el espacio del disco en el que se almacenan los datos asociados a la auditoría. </td>
               </tr></p>
               <tr>
                 <td  class="SUBTITULO" >Index table space </td>
-                <td   class="PARRAFO" ><p>Campo que posee lista de valores tipo combo de la que debe seleccionarse el nombre que identifica el espacio del disco en el que se almacenan los &iacute;ndices asociados a la auditor&iacute;a.</td>
+                <td   class="PARRAFO" ><p class="PARRAFO">Campo que posee lista de valores tipo combo de la que debe seleccionarse el nombre que identifica el espacio del disco en el que se almacenan los índices asociados a la auditoría.</td>
               </tr></p>
             </table>
             <p class="PARRAFO" ><span class="SUBTITULO">Detalle</span><span >:</span></span><span > Si el usuario invoca el enlace </span><span >Detalle</span><span >, </span><span >el siguiente formulario: </span></p>
             <p class="TITLE"><img src="../img/AUF_001E4.PNG"></p>
-            <p class="PARRAFO"><a name="agregartabla"></a><span class="SUBTITULO">Agregar tabla</span><span >:</span>  El sistema muestra la primera estructura o tabla de la base de datos, seg&uacute;n el orden alfab&eacute;tico ascendente de las mismas. Bankb&uacute;&reg; provee un wisard de tres pasos, en el primero, el usuario debe proceder a seleccionar, una a una, las estructuras que requiera incluir dentro del presente esquema, el formulario provee el filtro Nombre tabla, en el que, utilizando el s&iacute;mbolo &quot;%&quot; a manera de comod&iacute;n, es posible consultar la base de datos para ubicar la estructura requerida. En el segundo paso, debe indicar, a cu&aacute;les campos de la estructura seleccionada, diferentes a llaves primaria, requiere auditar; as&iacute; mismo, en &eacute;ste formulario el sistema  provee el filtro Nombre columna, que opera igual que el anteriormente descrito, pero a nivel de los campos de la estructura o tabla y, en el tercer y &uacute;ltimo paso, la data asociada al table space correspondiente.</p>
+            <p class="PARRAFO"><a name="agregartabla"></a><span class="SUBTITULO">Agregar tabla</span><span >:</span>  El sistema muestra la primera estructura o tabla de la base de datos, según el orden alfabético ascendente de las mismas. Bankbú&reg; provee un wisard de tres pasos, en el primero, el usuario debe proceder a seleccionar, una a una, las estructuras que requiera incluir dentro del presente esquema, el formulario provee el filtro Nombre tabla, en el que, utilizando el símbolo &quot;%&quot; a manera de comodín, es posible consultar la base de datos para ubicar la estructura requerida. En el segundo paso, debe indicar, a cuáles campos de la estructura seleccionada, diferentes a llaves primaria, requiere auditar; así mismo, en éste formulario el sistema  provee el filtro Nombre columna, que opera igual que el anteriormente descrito, pero a nivel de los campos de la estructura o tabla y, en el tercer y último paso, la data asociada al table space correspondiente.</p>
             <p class="TITLE"><img src="../img/AUF_001E5.PNG"></p>
             <p  class="TITLE"><img src="../img/AUF_001E6.PNG"></p>
             <p  class="TITLE"><img src="../img/AUF_001E7.PNG"></p>
             
-            <p  class="TITLE">Descripci&oacute;n de campos</p>
+            <p  class="TITLE">Descripción de campos</p>
             <table>
               <tr>
                 <td    class="SUBTITULO">Esquema</td>
-                <td   class="PARRAFO" ><p>Campo de salida que ilustra el nombre asignado por el sistema.</td>
+                <td   class="PARRAFO" ><p class="PARRAFO">Campo de salida que ilustra el nombre asignado por el sistema.</td>
               </tr></p>
               <tr>
                 <td    class="SUBTITULO">Tabla</td>
-                <td   class="PARRAFO" ><p>El formulario despliega, en &oacute;rden alfab&eacute;tico ascendente, las estructuras o tablas del sistema, de la cuales, el usuario debe marcar, en el radiobutton a la izquierda del nombre de la estructura a adicionar y luego, mediante el bot&oacute;n avanzar, llegar al segundo paso del wisard. </td>
+                <td   class="PARRAFO" ><p class="PARRAFO">El formulario despliega, en órden alfabético ascendente, las estructuras o tablas del sistema, de la cuales, el usuario debe marcar, en el radiobutton a la izquierda del nombre de la estructura a adicionar y luego, mediante el botón avanzar, llegar al segundo paso del wisard. </td>
               </tr></p>
               <tr>
                 <td    class="SUBTITULO"><p class="SUBTITULO">Columna
                 </p></td>
-                <td   class="PARRAFO" ><p  class="PARRAFO">El formulario debe contener la totalidad de los campos o columnas de la estructura o tabla de base de datos indicada en el campo Nombre tabla, justo antes de  cada nombre de la columna el formulario provee un campo checkbox, aquellos que aparecen preseleccionados y que no permiten modificaci&oacute;n, corresponden a los campos que son llave primaria y por defecto  deben auditarse, mientras que  los restantes,  aparecen disponibles para que, a criterio de quien define la auditor&iacute;a, marque los dem&aacute;s campos o columnas que van a auditarse.</p></td>
+                <td   class="PARRAFO" ><p  class="PARRAFO">El formulario debe contener la totalidad de los campos o columnas de la estructura o tabla de base de datos indicada en el campo Nombre tabla, justo antes de  cada nombre de la columna el formulario provee un campo checkbox, aquellos que aparecen preseleccionados y que no permiten modificación, corresponden a los campos que son llave primaria y por defecto  deben auditarse, mientras que  los restantes,  aparecen disponibles para que, a criterio de quien define la auditoría, marque los demás campos o columnas que van a auditarse.</p></td>
               </tr>
               <tr>
                 <td  class="SUBTITULO" ><p class="SUBTITULO">Tipo</p></td>
-                <td   class="PARRAFO" ><p  class="PARRAFO">Campo de salida que ilustra si el dato contenido corresponde a un valor num&eacute;rico o alfanum&eacute;rico o, a una fecha. </p></td>
+                <td   class="PARRAFO" ><p  class="PARRAFO">Campo de salida que ilustra si el dato contenido corresponde a un valor numérico o alfanumérico o, a una fecha. </p></td>
               </tr>
               <tr>
                 <td  class="SUBTITULO" >Longitud</td>
-                <td   class="PARRAFO" ><p>Campo de salida que muestra la extensi&oacute;n o magnitud m&aacute;xima que puede tener el dato dnetro de cada campo.</p></td>
+                <td   class="PARRAFO" ><p class="PARRAFO">Campo de salida que muestra la extensión o magnitud máxima que puede tener el dato dnetro de cada campo.</p></td>
               </tr>
               <tr>
-                <td  class="SUBTITULO" >Precisi&oacute;n</td>
-                <td   class="PARRAFO" ><p>Aplica &uacute;nicamente para los campos tipo num&eacute;rico e indica la cantidad m&aacute;xima de digitos que componen el dato, incluye tanto la parte entera como los decimales. </td>
+                <td  class="SUBTITULO" >Precisión</td>
+                <td   class="PARRAFO" ><p class="PARRAFO">Aplica únicamente para los campos tipo numérico e indica la cantidad máxima de digitos que componen el dato, incluye tanto la parte entera como los decimales. </td>
               </tr></p>
               <tr>
                 <td  class="SUBTITULO" >Escala</td>
-                <td   class="PARRAFO" ><p>Aplica &uacute;nicamente para los campos tipo num&eacute;rico e indica la cantidad m&aacute;xima de <span class="PARRAFO" #"padding:3.0pt 3.0pt 3.0pt 3.0pt">decimales</span> que puede contener el dato. </td>
+                <td   class="PARRAFO" ><p class="PARRAFO">Aplica únicamente para los campos tipo numérico e indica la cantidad máxima de <span class="PARRAFO" #"padding:3.0pt 3.0pt 3.0pt 3.0pt">decimales</span> que puede contener el dato. </td>
               </tr></p>
               <tr>
-                <td  class="SUBTITULO" >Descripci&oacute;n</td>
-                <td   class="PARRAFO" ><p>Campo de salida que muestra el comentario asociado a cada columna en la base de datos, que procura comunicar la raz&oacute;n del ser del campo. Si la longitud del mensaje supera la capacidad del campo en el formulario, se muestra un s&iacute;gno m&aacute;s que al activarse despliega una ventana con el texto completo del mismo. </td>
+                <td  class="SUBTITULO" >Descripción</td>
+                <td   class="PARRAFO" ><p class="PARRAFO">Campo de salida que muestra el comentario asociado a cada columna en la base de datos, que procura comunicar la razón del ser del campo. Si la longitud del mensaje supera la capacidad del campo en el formulario, se muestra un sígno más que al activarse despliega una ventana con el texto completo del mismo. </td>
               </tr></p>
               <tr>
                 <td  class="SUBTITULO" >Registros mensuales </td>
-                <td   class="PARRAFO" ><p>Campo num&eacute;rico, obligatorio, en el que debe indicarse, en un m&aacute;ximo de diez (10) enteros, la cantidad tope de registros a auditar durante cada mes en que la configuraci&oacute;n est&eacute; activa. </td>
+                <td   class="PARRAFO" ><p class="PARRAFO">Campo numérico, obligatorio, en el que debe indicarse, en un máximo de diez (10) enteros, la cantidad tope de registros a auditar durante cada mes en que la configuración esté activa. </td>
               </tr></p>
               <tr>
                 <td  class="SUBTITULO" >Data table space </td>
-                <td   class="PARRAFO" ><p>Campo que posee lista de valores tipo combo de la que debe seleccionarse el nombre que identifica el espacio del disco en el que se almacenan los datos asociados a la auditor&iacute;a.</td>
+                <td   class="PARRAFO" ><p class="PARRAFO">Campo que posee lista de valores tipo combo de la que debe seleccionarse el nombre que identifica el espacio del disco en el que se almacenan los datos asociados a la auditoría.</td>
               </tr></p>
               <tr>
                 <td  class="SUBTITULO" >Index table space </td>
-                <td   class="PARRAFO" ><p>Campo que posee lista de valores tipo combo de la que debe seleccionarse el nombre que identifica el espacio del disco en el que se almacenan los &iacute;ndices asociados a la auditor&iacute;a.</td>
+                <td   class="PARRAFO" ><p class="PARRAFO">Campo que posee lista de valores tipo combo de la que debe seleccionarse el nombre que identifica el espacio del disco en el que se almacenan los índices asociados a la auditoría.</td>
               </tr></p>
             </table>
             
-            <p class="PARRAFO" ><span class="SUBTITULO"><a name="estimarcrecimiento"></a>Estimar crecimiento de table spaces<span >:</span></span>  El sistema, basado en un c&aacute;lculo estad&iacute;stico, indica la cantidad de espacio f&iacute;sico que requiere en el disco duro para almacenar la data de auditor&iacute;a, en el evento en que, en un mes se alcance la cantidad de registros se&ntilde;alados  en el campo Registros mensuales en el paso tres (Table spaces) de </span><a href="#agregartabla" target="_self" >Agregar tabla</a><span class="PARRAFO">. </p>
+            <p class="PARRAFO" ><span class="SUBTITULO"><a name="estimarcrecimiento"></a>Estimar crecimiento de table spaces<span >:</span></span>  El sistema, basado en un cálculo estadístico, indica la cantidad de espacio físico que requiere en el disco duro para almacenar la data de auditoría, en el evento en que, en un mes se alcance la cantidad de registros se&ntilde;alados  en el campo Registros mensuales en el paso tres (Table spaces) de </span><a href="#agregartabla" target="_self" >Agregar tabla</a><span class="PARRAFO">. </p>
             <p class="TITLE"><img src="../img/AUF_001E8.PNG"></p>
-            <p  class="TITLE">Descripci&oacute;n de campos</p>
+            <p  class="TITLE">Descripción de campos</p>
             <table>
               <tr>
                 <td    class="SUBTITULO"><p class="SUBTITULO">Nombre table space
                 </p></td>
-                <td   class="PARRAFO" ><p  class="PARRAFO">Campo de salida que ilustra la asignaci&oacute;n indicada por el usuario en el campo </p></td>
+                <td   class="PARRAFO" ><p  class="PARRAFO">Campo de salida que ilustra la asignación indicada por el usuario en el campo </p></td>
               </tr>
               <tr>
                 <td  class="SUBTITULO" ><p class="SUBTITULO">Crecimiento mensual</p></td>
-                <td   class="PARRAFO" ><p  class="PARRAFO">Campo de salida que  muestra el resultado del c&aacute;lculo o estimaci&oacute;n efectuada por el sistema, sobre la magnitud de espacio f&iacute;sico de disco duro requerida para almacenar la data de la estructura, desde donde se ordena &eacute;sta acci&oacute;n.</p></td>
+                <td   class="PARRAFO" ><p  class="PARRAFO">Campo de salida que  muestra el resultado del cálculo o estimación efectuada por el sistema, sobre la magnitud de espacio físico de disco duro requerida para almacenar la data de la estructura, desde donde se ordena ésta acción.</p></td>
               </tr>
             </table>
             
-            <p class="PARRAFO" ><span class="SUBTITULO"><a name="descargarscript"></a>Descargar Script<span >:</span></span>  <span class="style3">Al momento de activar &eacute;ste enlace el sistema despliega una ventana emergente, mediante la cual se le permite al usuario ubicar y .... el archivo mediante el cual ....</span></p>
+            <p class="PARRAFO" ><span class="SUBTITULO"><a name="descargarscript"></a>Descargar Script<span >:</span></span>  <span class="style3">Al momento de activar éste enlace el sistema despliega una ventana emergente, mediante la cual se le permite al usuario ubicar y .... el archivo mediante el cual ....</span></p>
             <p class="TITLE"><img src="../img/AUF_001E9.PNG"></p>
-            <p   class="TITLE">Descripci&oacute;n de campos</p>
+            <p   class="TITLE">Descripción de campos</p>
             <table >
               <tr>
-                <td><p class="TITLE">Aplica el tener que describir &eacute;ste formulario?</p></td>
+                <td><p class="TITLE">Aplica el tener que describir éste formulario?</p></td>
               </tr>
             
             </table>
             
             
-            <p class="PARRAFO" ><span class="SUBTITULO"><a name="generarconfiguracion"></a>Generar Configuraci&oacute;n<span >:</span></span>  Al activar &eacute;ste enlace, el sistema esencialmente procede a desactivar el esquema vigente hasta ese momento y cambiar el estado del nuevo esquema de <span >EN_CONSTRUCCION</span>  a <span >GENERADA</span> .</p>
+            <p class="PARRAFO" ><span class="SUBTITULO"><a name="generarconfiguracion"></a>Generar Configuración<span >:</span></span>  Al activar éste enlace, el sistema esencialmente procede a desactivar el esquema vigente hasta ese momento y cambiar el estado del nuevo esquema de <span >EN_CONSTRUCCION</span>  a <span >GENERADA</span> .</p>
             
-            <p  class="PARRAFO"><a name="verificarestado"></a>Verificar estado configuraci&oacute;n<span >:</span>  Una vez se genera la configuraci&oacute;n del esquema y se realizan <a href="AUH_002E.html"><span >consultas</span></a>, se activar &eacute;ste enlace y al invocarlo, el sistema despliega el formulario: </p>
+            <p  class="PARRAFO"><a name="verificarestado"></a>Verificar estado configuración<span >:</span>  Una vez se genera la configuración del esquema y se realizan <a href="AUH_002E.html"><span >consultas</span></a>, se activar éste enlace y al invocarlo, el sistema despliega el formulario: </p>
             
             <p class="TITLE"><img src="../img/AUF_001E10.PNG"></p>
-            <p  class="TITLE">Descripci&oacute;n de campos</p>
+            <p  class="TITLE">Descripción de campos</p>
             <table width=731 >
               <tr>
                 <td    class="SUBTITULO"><p class="SUBTITULO">Estado del trigger 
@@ -228,11 +228,11 @@
               </tr>
               <tr>
                 <td  class="SUBTITULO" ><p class="SUBTITULO">Nombre</p></td>
-                <td   class="PARRAFO" ><p  class="PARRAFO">Campo de salida que ilustra el nombre asigando por el sistema al trigger creado por &eacute;ste para cada estructura, usualmente le adiciona el prefijo <span >AUD</span> _ y, al final le agrega la terminaci&oacute;n _<span >TRB</span> .</p></td>
+                <td   class="PARRAFO" ><p  class="PARRAFO">Campo de salida que ilustra el nombre asigando por el sistema al trigger creado por éste para cada estructura, usualmente le adiciona el prefijo <span >AUD</span> _ y, al final le agrega la terminación _<span >TRB</span> .</p></td>
               </tr>
               <tr>
                 <td  class="SUBTITULO" >Estado</td>
-                <td   class="PARRAFO" ><p>Campo de salida que muestra la condici&oacute;n de cada uno de los trigger definidos.</p></td>
+                <td   class="PARRAFO" ><p class="PARRAFO">Campo de salida que muestra la condición de cada uno de los trigger definidos.</p></td>
               </tr>
             </table>
             
