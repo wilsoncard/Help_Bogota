@@ -1,25 +1,25 @@
 <!DOCTYPE html>
 <html lang="es">
 
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>BANKBU®</title>
-  <link rel="stylesheet" href="../css/pages.css">
-  <link rel="stylesheet" href="../css/style.css">
-  <link rel="icon" href="../img/ACQUIRER-logo.JPG" type="image/x-icon">
-</head>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BANKBU®</title>
+    <link rel="stylesheet" href="../css/pages.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="icon" href="../img/ACQUIRER-logo.JPG" type="image/x-icon">
+  </head>
 
-<body>
+  <body>
 
-  <header>
-    <img class="logo" src="../img/logoBankbu_.PNG" alt="Logo de Mi Empresa">
-    <div id="menuBtn">
-      <img class="TITLE" src="../img/menu.PNG" alt="Botón de Menú ">
-    </div>
-  </header>
+    <header>
+      <img class="logo" src="../img/logoBankbu_.PNG" alt="Logo de Mi Empresa">
+      <div id="menuBtn">
+        <img class="TITLE" src="../img/menu.PNG" alt="Botón de Menú ">
+      </div>
+    </header>
     <div id="menuContainer"></div>
-  <script>
+    <script>
     fetch('menu.html')
       .then(response => response.text())
       .then(html => {
@@ -27,115 +27,132 @@
       });
   </script>
 
-  <section>
-    <div>
-      
-              <p class="TITLE">Agentes por zonas </p>
+    <section>
+      <div>
+        <p class="TITLE">Agentes por zonas </p>
 
-      <p class="PARRAFO">Mediante esta forma o pantalla se vinculan los distintos agentes de cobro con las zonas geográficas
-        definidas por la entidad con el ánimo de se&ntilde;alar apropiadamente la cobertura para cada uno de
-        estos; los campos restantes se diligencian con base en la parametrización efectuada en la
-        opción <A href="CCH_007B.html">Actividades de cobro por perfil</A>.</p>
-      <p class="PARRAFO"><span class="SUBTITULO">Filtro:</span>  El formulario cuenta
-        con un filtro inicial de búsqueda, necesario para la consulta de la
-        información:</p>
-      <p class="TITLE"><img src="../img/CCF_012B1.PNG"></p>
+        <p class="PARRAFO">Mediante esta forma o pantalla se vinculan los
+          distintos agentes de cobro con las zonas geográficas
+          definidas por la entidad con el ánimo de se&ntilde;alar apropiadamente
+          la cobertura para cada uno de
+          estos; los campos restantes se diligencian con base en la
+          parametrización efectuada en la
+          opción <a href="CCH_007B.html">Actividades de cobro por
+            perfil</a>.</p>
+        <p class="PARRAFO"><span class="SUBTITULO">Filtro:</span> El formulario
+          cuenta
+          con un filtro inicial de búsqueda, necesario para la consulta de la
+          información:</p>
+        <p class="TITLE"><img src="../img/CCF_012B1.PNG"></p>
 
-      <table>
-        <tr>
-          <td class="titletable">
-            <p class="SUBTITULO">Código agente </p>
-          </td>
-          <td>
-            <p class="PARRAFO">Campo con lista de valores poblada a través de la opción <A
-                  href="CCH_001B.html">Agentes de cobro</A> que permite realizar filtro por el código
-              seleccionado. </p>
-          </td>
-        </tr>
-      </table>
+        <table>
+          <tr>
+            <td class="titletable">
+              <p class="SUBTITULO">Código agente </p>
+            </td>
+            <td>
+              <p class="PARRAFO">Campo con lista de valores poblada a través de
+                la opción <a
+                  href="CCH_001B.html">Agentes de cobro</a> que permite realizar
+                filtro por el código
+                seleccionado. </p>
+            </td>
+          </tr>
+        </table>
 
-      <p class="PARRAFO">El formulario contiene las opciones Actualizar, Eliminar,
-        y Adicionar.</p>
-      <p class="TITLE"><img src="../img/CCF_012B.PNG"></p>
+        <p class="PARRAFO">El formulario contiene los enlaces: Actualizar,Eliminar y Adicionar </p>
+        <p class="TITLE"><img src="../img/CCF_012B.PNG"></p>
 
+        <p class="PARRAFO"><span class="SUBTITULO">Adicionar:</span> Si
+          el usuario invoca la opción Adicionar se despliega un formulario con
+          los siguientes campos:</p>
+        <p class="TITLE"><img src="../img/CCF_012B2.PNG"></p>
 
+        <table>
+          <tr>
+            <td class="titletable">
+              <p class="SUBTITULO">Código agente </p>
+            </td>
+            <td>
+              <p class="PARRAFO">Campo con lista de valores poblada a través de
+                la opción <a
+                  href="CCH_001B.html">Agentes de cobro</a> de la cual debe
+                seleccionarse el agente cuyo alcance o
+                cobertura va a ser definida.</p>
+            </td>
+          </tr>
+          <tr>
+            <td class="titletable">
+              <p class="SUBTITULO">Zona</p>
+            </td>
+            <td>
+              <p class="PARRAFO">Este campo cuenta con lista de valores poblada
+                por medio de la opción <a
+                  href="NUH_003B.html">Zonas geográficas</a>, de la cual se debe
+                seleccionar el
+                código del área o áreas sobre las que el agente de cobro ejerce
+                dominio o se
+                encuentra bajo su cargo para los efectos de los procesos de
+                cobranza.</p>
+            </td>
+          </tr>
+          <tr>
+            <td class="titletable">
+              <p class="SUBTITULO">Tipo de cobro </p>
+            </td>
+            <td>
+              <p class="PARRAFO">En este campo con lista de valores poblada a
+                partir de la opción <a
+                  href="CCH_002B.html">Tipos de cobro,</a> se deben seleccionar
+                los que puede atender el agente
+                acorde a su perfil.</p>
+            </td>
+          </tr>
+          <tr>
+            <td class="titletable">
+              <p class="SUBTITULO">Moneda</p>
+            </td>
+            <td>
+              <p class="PARRAFO">Campo que posee lista de valores construida con
+                base en la opción <a
+                  href="NUH_005B.html">Monedas</a> del Núcleo. </p>
+            </td>
+          </tr>
+          <tr>
+            <td class="titletable">
+              <p class="SUBTITULO">Edad mora inicial </p>
+            </td>
+            <td>
+              <p class="PARRAFO">Campo numérico de 3 dígitos, obligatorio, en la
+                que se registra el Periodo del rango
+                referido a la altura de mora presentado por las obligaciones que
+                se están parametrizando.</p>
+            </td>
+          </tr>
+          <tr>
+            <td class="titletable">
+              <p class="SUBTITULO">Edad mora final </p>
+            </td>
+            <td>
+              <p class="PARRAFO">en este campo numérico de 3 dígitos,
+                obligatorio, se indica el periodo del rango referido a
+                la altura de mora presentado por las obligaciones que se están
+                parametrizando.</p>
+            </td>
+          </tr>
+        </table>
 
-      <p class="PARRAFO"><span class="SUBTITULO">Adicionar:</span>  Si
-        el usuario invoca la opción Adicionar se despliega un formulario con
-        los siguientes campos:</p>
-      <p class="TITLE"><img src="../img/CCF_012B2.PNG"></p>
+        <p class="PARRAFO"><span class="SUBTITULO">Actualizar:</span> Si el
+          usuario
+          invoca la opción Actualizar se despliega un formulario en cual
+          los únicos campos modificables son los siguientes:</p>
+        <p class="TITLE"><img src="../img/CCF_012B3.PNG"></p>
 
-      <table>
-        <tr>
-          <td class="titletable">
-            <p class="SUBTITULO">Código agente </p>
-          </td>
-          <td>
-            <p class="PARRAFO">Campo con lista de valores poblada a través de la opción <A
-                  href="CCH_001B.html">Agentes de cobro</A> de la cual debe seleccionarse el agente cuyo alcance o
-              cobertura va a ser definida.</p>
-          </td>
-        </tr>
-        <tr>
-          <td class="titletable">
-            <p class="SUBTITULO">Zona</p>
-          </td>
-          <td>
-            <p class="PARRAFO">Este campo cuenta con lista de valores poblada por medio de la opción <A
-                  href="NUH_003B.html">Zonas geográficas</A>, de la cual se debe seleccionar el
-              código del área o áreas sobre las que el agente de cobro ejerce dominio o se
-              encuentra bajo su cargo para los efectos de los procesos de cobranza.</p>
-          </td>
-        </tr>
-        <tr>
-          <td class="titletable">
-            <p class="SUBTITULO">Tipo de cobro </p>
-          </td>
-          <td>
-            <p class="PARRAFO">En este campo con lista de valores poblada a partir de la opción <a
-                  href="CCH_002B.html">Tipos de cobro,</a> se deben seleccionar los que puede atender el agente
-              acorde a su perfil.</p>
-          </td>
-        </tr>
-        <tr>
-          <td class="titletable">
-            <p class="SUBTITULO">Moneda</p>
-          </td>
-          <td>
-            <p class="PARRAFO">Campo que posee lista de valores construida con base en la opción <A
-                  href="NUH_005B.html">Monedas</A> del Núcleo. </p>
-          </td>
-        </tr>
-        <tr>
-          <td class="titletable">
-            <p class="SUBTITULO">Edad mora inicial </p>
-          </td>
-          <td>
-            <p class="PARRAFO">Campo numérico de 3 dígitos, obligatorio, en la que se registra el Periodo del rango
-              referido a la altura de mora presentado por las obligaciones que se están parametrizando.</p>
-          </td>
-        </tr>
-        <tr>
-          <td class="titletable">
-            <p class="SUBTITULO">Edad mora final </p>
-          </td>
-          <td>
-            <p class="PARRAFO">en este campo numérico de 3 dígitos, obligatorio, se indica el periodo del rango referido a
-              la altura de mora presentado por las obligaciones que se están parametrizando.</p>
-          </td>
-        </tr>
-      </table>
-
-      <p class="PARRAFO"><span class="SUBTITULO">Actualizar:</span>  Si el usuario
-        invoca la opción Actualizar se despliega un nuevo formulario en cual
-        los únicos campos modificables son los siguientes:</p>
-      <p class="TITLE"><img src="../img/CCF_012B3.PNG"></p>
-
-  </section>
-  <script src="../js/menu.js"></script>
-</body>
-<div id="footerContainer"></div>
-<script>
+      </section>
+      <script src="../js/menu.js"></script>
+    </body>
+    <div id="footerContainer"></div>
+    <script>
   fetch('footer.html')
     .then(response => response.text())
     .then(html => {
@@ -143,4 +160,4 @@
     });
 </script>
 
-</html>
+  </html>

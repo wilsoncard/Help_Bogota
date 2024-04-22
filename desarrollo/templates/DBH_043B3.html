@@ -1,26 +1,26 @@
 <!DOCTYPE html>
 <html lang="es">
 
-<head>
+  <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>BANKBU®</title>
 
     <link rel="stylesheet" href="../css/pages.css">
     <link rel="stylesheet" href="../css/style.css">
- <link rel="icon" href="../img/ACQUIRER-logo.JPG" type="image/x-icon">
-</head>
+    <link rel="icon" href="../img/ACQUIRER-logo.JPG" type="image/x-icon">
+  </head>
 
-<body>
+  <body>
 
     <header>
-        <img class="logo" src="../img/logoBankbu_.PNG" alt="Logo de Mi Empresa">
-        <div id="menuBtn">
-            <img class="TITLE"  src= "../img/menu.PNG" alt="Botón de Menú ">
-        </div>
+      <img class="logo" src="../img/logoBankbu_.PNG" alt="Logo de Mi Empresa">
+      <div id="menuBtn">
+        <img class="TITLE" src="../img/menu.PNG" alt="Botón de Menú ">
+      </div>
     </header>
-      <div id="menuContainer"></div>
-  <script>
+    <div id="menuContainer"></div>
+    <script>
     fetch('menu.html')
       .then(response => response.text())
       .then(html => {
@@ -29,78 +29,88 @@
   </script>
 
     <section>
-        <div> 
-            
-                    <p  class="TITLE">Consulta global de intercambio débito </p>
-                    
-            <p class="PARRAFO"><span class="PARRAFO"><span class="SUBTITULO">Pendientes:</span>  
-              </span> Las transacciones que por diferentes razones no son enviadas a aplicar 
-              al Movimiento día o a cualquiera de los otros posibles destinos, principalmente 
-              por errores de datos, se muestran a través de esta opción.</p>
-            <p class="PARRAFO">El formulario contiene las opción Detalle, y cuenta 
-              en la parte superior con un botón para volver al <a href="DBH_043.html" >formulario 
-              principal</a> de la Consulta global de intercambio.</p>
-            <p class="TITLE"><img src="../img/DBF_043B9.PNG"741" ></p>
-           
-            <table>
-              <tr> 
-                <td  class="titletable" ><p class="SUBTITULO">Fecha 
-                    comprobante </p></td>
-                <td><p class="PARRAFO">Muestra 
-                    la fecha física del comprobante de consumo o utilización.</p></td>
-              </tr>
-              <tr> 
-                <td class="titletable"><p class="SUBTITULO">Número 
-                    tarjeta </p></td>
-                <td><p class="PARRAFO">Rese&ntilde;a 
-                    el número de la tarjeta a través de la que se realizó 
-                    el consumo o utilización.</p></td>
-              </tr>
-              <tr> 
-                <td  class="titletable" ><p class="SUBTITULO">Moneda</p></td>
-                <td><p class="PARRAFO">Despliega 
-                    la abreviatura definida por la franquicia que identifica <a href="NUH_005B.html" >Moneda</a> 
-                    original de la transacción.</p></td>
-              </tr>
-              <tr> 
-                <td class="titletable"><p class="SUBTITULO">Valor 
-                    total</p></td>
-                <td><p class="PARRAFO">Muestra 
-                    el monto por el cual fue realizada la transacción.</p></td>
-              </tr>
-              <tr> 
-                <td class="titletable"><p class="SUBTITULO">Causal 
-                    de error</p></td>
-                <td><p class="PARRAFO">Campo 
-                    que contiene el código de la causal de error determinado por 
-                    la validación del movimiento.</p></td>
-              </tr>
-            </table>
-            <p class="PARRAFO"><span class="SUBTITULO">Detalle:</span>  Si el usuario invoca la opción 
-              Detalle se despliega un formulario con los bloques: Recepción, Valores, 
-              Mercancías, Datos transacción, Establecimiento, Información 
-              general, y Datos pago.</p>
-            <p class="TITLE"><img src="../img/DBF_043B10.PNG"697" height="734"></p>
-            .
-            <p class="PARRAFO"><span class="SUBTITULO">Localización:</span>  Adicionalmente, 
-              cuenta con un globo de localización que muestra los siguientes campos:</p>
-            <p class="TITLE"><img src="../img/DBF_043B11.PNG"284" ></p>
-            
-            <p class="PARRAFO"><a href="DBH_043.html">Formulario principal</a><span
-              style='font-size:10.0pt;font-family:Arial'> | </span><a href="DBH_043B1.html">Tapa 
-              contable</a><span style='font-size:10.0pt;font-family:Arial'> | </span><a href="DBH_043B2.html">Movimiento 
-              diario</a><span
-              style='font-size:10.0pt;font-family:Arial'> |</p>
-            
+      <div>
+
+        <p class="TITLE">Consulta global de intercambio débito </p>
+
+        <p class="PARRAFO"><span class="PARRAFO"><span
+              class="SUBTITULO">Pendientes:</span>
+          </span> Las transacciones que por diferentes razones no son enviadas a
+          aplicar
+          al Movimiento día o a cualquiera de los otros posibles destinos,
+          principalmente
+          por errores de datos, se muestran a través de esta opción.</p>
+        <p class="PARRAFO">El formulario contiene las opción Detalle, y cuenta
+          en la parte superior con un botón para volver al <a
+            href="DBH_043.html">formulario
+            principal</a> de la Consulta global de intercambio.</p>
+        <p class="TITLE"><img src="../img/DBF_043B9.PNG"></p>
+
+        <table>
+          <tr>
+            <td class="titletable"><p class="SUBTITULO">Fecha
+                comprobante </p></td>
+            <td><p class="PARRAFO">Muestra
+                la fecha física del comprobante de consumo o
+                utilización.</p></td>
+          </tr>
+          <tr>
+            <td class="titletable"><p class="SUBTITULO">Número
+                tarjeta </p></td>
+            <td><p class="PARRAFO">Rese&ntilde;a
+                el número de la tarjeta a través de la que se realizó
+                el consumo o utilización.</p></td>
+          </tr>
+          <tr>
+            <td class="titletable"><p class="SUBTITULO">Moneda</p></td>
+            <td><p class="PARRAFO">Despliega
+                la abreviatura definida por la franquicia que identifica <a
+                  href="NUH_005B.html">Moneda</a>
+                original de la transacción.</p></td>
+          </tr>
+          <tr>
+            <td class="titletable"><p class="SUBTITULO">Valor
+                total</p></td>
+            <td><p class="PARRAFO">Muestra
+                el monto por el cual fue realizada la transacción.</p></td>
+          </tr>
+          <tr>
+            <td class="titletable"><p class="SUBTITULO">Causal
+                de error</p></td>
+            <td><p class="PARRAFO">Campo
+                que contiene el código de la causal de error determinado por
+                la validación del movimiento.</p></td>
+          </tr>
+        </table>
+        <p class="PARRAFO"><span class="SUBTITULO">Detalle:</span> Si el usuario
+          invoca la opción
+          Detalle se despliega un formulario con los bloques: Recepción,
+          Valores,
+          Mercancías, Datos transacción, Establecimiento, Información
+          general, y Datos pago.</p>
+        <p class="TITLE"><img src="../img/DBF_043B10.PNG"></p>
+        
+        <p class="PARRAFO"><span class="SUBTITULO">Localización:</span>
+          Adicionalmente,
+          cuenta con un globo de localización que muestra los siguientes
+          campos:</p>
+        <p class="TITLE"><img src="../img/DBF_043B11.PNG"></p>
+
+        <p class="PARRAFO"><a href="DBH_043.html">Formulario principal</a><span> | </span><a
+            href="DBH_043B1.html">Tapa
+            contable</a><span> |
+          </span><a href="DBH_043B2.html">Movimiento
+            diario</a><span> |</p>
+
         </section>
-    <script src="../js/menu.js"></script>
-</body>
-<div id="footerContainer"></div>
-<script>
+        <script src="../js/menu.js"></script>
+      </body>
+      <div id="footerContainer"></div>
+      <script>
   fetch('footer.html')
     .then(response => response.text())
     .then(html => {
       document.getElementById('footerContainer').innerHTML = html;
     });
 </script>
-</html>
+    </html>

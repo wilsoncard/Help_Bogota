@@ -1,26 +1,26 @@
 <!DOCTYPE html>
 <html lang="es">
 
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>BANKBU®</title>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BANKBU®</title>
 
-  <link rel="stylesheet" href="../css/pages.css">
-  <link rel="stylesheet" href="../css/style.css">
-  <link rel="icon" href="../img/ACQUIRER-logo.JPG" type="image/x-icon">
-</head>
+    <link rel="stylesheet" href="../css/pages.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="icon" href="../img/ACQUIRER-logo.JPG" type="image/x-icon">
+  </head>
 
-<body>
+  <body>
 
-  <header>
-    <img class="logo" src="../img/logoBankbu_.PNG" alt="Logo de Mi Empresa">
-    <div id="menuBtn">
-      <img class="TITLE" src="../img/menu.PNG" alt="Botón de Menú ">
-    </div>
-  </header>
+    <header>
+      <img class="logo" src="../img/logoBankbu_.PNG" alt="Logo de Mi Empresa">
+      <div id="menuBtn">
+        <img class="TITLE" src="../img/menu.PNG" alt="Botón de Menú ">
+      </div>
+    </header>
     <div id="menuContainer"></div>
-  <script>
+    <script>
     fetch('menu.html')
       .then(response => response.text())
       .then(html => {
@@ -28,321 +28,339 @@
       });
   </script>
 
-  <section>
-    <div>
-      
-              <p class="TITLE">Información de establecimientos</p>
-
-      <p class="PARRAFO">Desde este formulario, se habilita el mantenimiento
-        y consulta de una tabla que contiene la información general de los
-        establecimientos adscritos a las franquicias o los de marca privada, brindando
-        opción de conocer su comportamiento a través de estadísticas,
-        y los movimientos realizados en las diferentes cuentas de depósito
-        que éstos posean en cualesquiera de las entidades financieras de la
-        corporación o en ella misma. Usualmente, la actualización de
-        los datos se realiza mediante el cargue de archivos enviados por las <a href="NUH_033B.html"
-            >franquicias</a>
-        pero desde este formulario la entidad igual puede crear o eliminar establecimientos
-        y modificar la información de los mismos.</p>
-      <p class="PARRAFO">El formulario cuenta con tres hipervínculos
-        en los cuales se administran las <a href="ESH_006B1.html"><span >marcas</span></a>,
-        <span ><a href="ESH_006B2.html" >secciones</a></span> 
-        y <a href="ESH_006B3.html"><span >cuentas de depósito</span></a>
-        del establecimiento.
-      </p>
-      <p class="TITLE"><img src="../img/ESF_006E.PNG"></p>
-      <p class="PARRAFO">El formulario cuenta con un filtro que le
-        permite al usuario buscar información específica por el código,
-        nombre o nit del establecimiento.</p>
-      <p class="TITLE"><img src="../img/ESF_006E1.PNG"></p>
-
-      <p class="PARRAFO">El formulario contiene las opciones Actualizar,
-        Eliminar, Adicionar y Detalle.</p>
-      <p class="PARRAFO"><span class="SUBTITULO">Adicionar:</span>
-        si el usuario invoca la opción Adicionar se despliega un nuevo formulario
-        con los siguientes campos:</p>
-      <p class="TITLE"><img src="../img/ESF_006E2.PNG"></p>
-
-      <p class="TITLE">Descripción de campos</p>
-      <table>
-        <tr>
-          <td class="titletable">
-            <p class="SUBTITULO">
-                  Código establecimiento</p>
-          </td>
-          <td>
-            <p class="PARRAFO">Campo
-              alfanumérico de 11 dígitos, obligatorio, y el cual corresponde
-              al código único que identifica a cada comercio dentro
-              de las <a href="NUH_033B.html" >franquicias</a>
-              o al código asignado a los establecimientos de marca privada.
-            </p>
-          </td>
-        </tr>
-
-        <tr>
-          <td class="titletable">
-            <p class="SUBTITULO"> Nombre establecimiento</p>
-          </td>
-          <td>
-            <p class="PARRAFO">En
-              este campo alfanumérico de 30 dígitos, obligatorio, se
-              registra el nombre comercial del establecimiento asociado al código
-              anterior.
-            </p>
-          </td>
-        </tr>
-        <tr>
-          <td class="titletable">
-            <p class="SUBTITULO">
-                  Nombre de fantasía </p>
-          </td>
-          <td>
-            <p class="PARRAFO">En
-              este campo alfanumérico de 30 dígitos, obligatorio, se
-              registra el nombre comercial del establecimiento asociado al código
-              anterior cuando este pertenece a un grupo economico.
-            </p>
-          </td>
-        </tr>
-        <tr>
-          <td class="titletable">
-            <p class="SUBTITULO">
-                  Razón social</p>
-          </td>
-          <td>
-            <p class="PARRAFO">Campo
-              alfanumérico de 30 dígitos, no obligatorio, dentro del
-              que se registra el nombre del establecimiento registrado ante la Cámara
-              de Comercio o de quien haga sus veces.
-            </p>
-          </td>
-        </tr>
-
-        <tr>
-          <td class="titletable">
-            <p class="SUBTITULO">
-                  Nit</p>
-          </td>
-          <td>
-            <p class="PARRAFO">En
-              este campo alfanumérico de 12 dígitos, no obligatorio,
-              se registra el Numero de Identificación Tributaria del establecimiento.
-            </p>
-          </td>
-        </tr>
-
-        <tr>
-          <td class="titletable">
-            <p class="SUBTITULO">
-                  Dirección</p>
-          </td>
-          <td>
-            <p class="PARRAFO">Campo
-              alfanumérico de 30 dígitos, no obligatorio, que permite
-              registrar la nomenclatura que identifica la sede u oficina principal
-              del establecimiento.
-            </p>
-          </td>
-        </tr>
-
-        <tr>
-          <td class="titletable">
-            <p class="SUBTITULO">
-                  Ubicación</p>
-          </td>
-          <td>
-            <p class="PARRAFO">En
-              este campo obligatorio con lista de valores, se selecciona la <a href="NUH_003B.html"
-                >ubicación geográfica</a> correspondiente a la dirección del
-              establecimiento.
-            </p>
-          </td>
-        </tr>
-
-        <tr>
-          <td class="titletable">
-            <p class="SUBTITULO">
-                  E-mail</p>
-          </td>
-          <td>
-            <p class="PARRAFO">Campo
-              alfanumérico de hasta 30 caracteres en el que se registra la
-              dirección de correo electrónico del establecimiento.
-            </p>
-          </td>
-        </tr>
-
-        <tr>
-          <td class="titletable">
-            <p class="SUBTITULO">
-                  Cadena</p>
-          </td>
-          <td>
-            <p class="PARRAFO">Este
-              campo cuenta con lista de valores de al cual se debe seleccionar la
-              <a href="ESH_005B.html" >cadena</a> a la cual
-              pertenece el establecimiento que puede inclusive ser 'Sin cadena'.
-            </p>
-          </td>
-        </tr>
-
-        <tr>
-          <td class="titletable">
-            <p class="SUBTITULO">
-                  Tipo de sociedad</p>
-          </td>
-          <td>
-            <p class="PARRAFO">Campo
-              tipo combo del cual se seleciona el <a href="NUH_038B.html" >Tipo
-                  de sociedad</a> comercial con el que se identifica o se encuentra
-              constituido el establecimiento.</p>
-          </td>
-        </tr>
-
-        <tr>
-          <td class="titletable">
-            <p class="SUBTITULO">
-                  Grupo </p>
-          </td>
-          <td>
-            <p class="PARRAFO">Este
-              campo tipo combo permite seleccionar el <a href="ESH_001B.html" >Grupo</a>
-              correspondiente a la categorización realizada por la entidad
-              financiera y que permite darle un manejo diferencial a cada establecimiento.
-            </p>
-          </td>
-        </tr>
-        <tr>
-          <td class="titletable">
-            <p class="SUBTITULO">
-                  Registro de cámara</p>
-          </td>
-          <td>
-            <p class="PARRAFO">Campo
-              alfanumérico de 10 dígitos, no obligatorio, en el que
-              se se ingresa el número de la Matrícula Mercantil asignado
-              por la Cámara de Comercio o por quien haga sus veces.
-            </p>
-          </td>
-        </tr>
-        <tr>
-          <td class="titletable">
-            <p class="SUBTITULO">
-                  Apartado aéreo </p>
-          </td>
-          <td>
-            <p class="PARRAFO">En
-              este campo alfanumérico de 10 dígitos, no obligatorio,
-              se registra el número del apartado aéreo para envío
-              de correspondencia.</p>
-          </td>
-        </tr>
-        <tr>
-          <td class="titletable">
-            <p class="SUBTITULO">
-                  Número de teléfono</p>
-          </td>
-          <td>
-            <p class="PARRAFO">Campo
-              alfanumérico de 20 dígitos, no obligatorio, en el que
-              se registra el número telefónico de la sede u oficina
-              principal del establecimiento. </p>
-          </td>
-        </tr>
-        <tr>
-          <td class="titletable">
-            <p class="SUBTITULO">
-                  Horario</p>
-          </td>
-          <td>
-            <p class="PARRAFO">En
-              este campo obligatorio tipo combo se selecciona entre Diurno, Nocturno
-              o Ambos el horario habitual en el cual opera el establecimiento.
-            </p>
-          </td>
-        </tr>
-
-        <tr>
-          <td class="titletable">
-            <p class="SUBTITULO">
-                  Fax</p>
-          </td>
-          <td>
-            <p class="PARRAFO">Campo
-              alfanumérico de 20 dígitos, no obligatorio, en el cual
-              se ingresa el número telefax de la sede u oficina principal del
-              establecimiento. </p>
-          </td>
-        </tr>
-
-        <tr>
-          <td class="titletable">
-            <p class="SUBTITULO">
-                  Teléfono de correspondencia</p>
-          </td>
-          <td>
-            <p class="PARRAFO">En
-              este campo alfanumérico de 20 dígitos, no obligatorio,
-              se registra el número telefónico donde se puede establecer
-              contacto con el comercio habitualmente para efectos de correspondencia
-              y/o actividades comer-ciales. </p>
-          </td>
-        </tr>
-
-        <tr>
-          <td class="titletable">
-            <p class="SUBTITULO">
-                  Fax de correspondencia</p>
-          </td>
-          <td>
-            <p class="PARRAFO">Campo
-              alfanumérico de 20 dígitos, no obligatorio, en el que
-              se registra el número telefax donde se puede establecer contacto
-              con el comercio habitualmente para efectos de correspondencia y/o actividades
-              comer-ciales.
-            </p>
-          </td>
-        </tr>
-
-        <tr>
-          <td class="titletable">
-            <p class="SUBTITULO">Nombre de </span>  </span>usuario</p>
-          </td>
-          <td>
-            <p class="PARRAFO">Campo
-
-              tipo combo del cual se seleciona el usuario quien ingresa o actualiza el establecimiento.
-            </p>
-          </td>
-        </tr>
-      </table>
-
-      <p class="PARRAFO"><span class="SUBTITULO">Actualizar</span>:
-        si el usuario selecciona un registro e invoca la opción Actualizar
-        se despliega un formulario en el cual el único campo NO modificable
-        es el Código del establecimiento. </p>
-      <p class="TITLE"><img src="../img/ESF_006E3.PNG"></p>
-
-      <p class="PARRAFO"><span class="SUBTITULO">Detalle</span>:
-        si el usuario selecciona un registro e invoca la opción Detalle se
-        despliega un formulario con la información completa del registro y
-        en el cual ninguno de sus campos es modificable.</p>
-      <p class="TITLE"><img src="../img/ESF_006E4.PNG"></p>
-      <p class="PARRAFO">Una vez creado el establecimiento, el usuario
-        puede seleccionar cualquiera de los hipervínculos contenidos en él
-        para administrar las <a href="ESH_006B1.html"><span >marcas</span></a>,
-        <span ><a href="ESH_006B2.html" >secciones</a></span> 
-        y <a href="ESH_006B3.html"><span >cuentas de depósito</span></a>
-        del establecimiento.
-      </p>
-
+    <section>
       <div>
-  </section>
-  <script src="../js/menu.js"></script>
-</body>
-<div id="footerContainer"></div>
-<script>
+
+        <p class="TITLE">Información de establecimientos</p>
+
+        <p class="PARRAFO">Desde este formulario, se habilita el mantenimiento
+          y consulta de una tabla que contiene la información general de los
+          establecimientos adscritos a las franquicias o los de marca privada,
+          brindando
+          opción de conocer su comportamiento a través de estadísticas,
+          y los movimientos realizados en las diferentes cuentas de depósito
+          que éstos posean en cualesquiera de las entidades financieras de la
+          corporación o en ella misma. Usualmente, la actualización de
+          los datos se realiza mediante el cargue de archivos enviados por las
+          <a href="NUH_033B.html">franquicias</a>
+          pero desde este formulario la entidad igual puede crear o eliminar
+          establecimientos
+          y modificar la información de los mismos.</p>
+        <p class="PARRAFO">El formulario cuenta con tres hipervínculos
+          en los cuales se administran las <a
+            href="ESH_006B1.html"><span>marcas</span></a>,
+          <span><a href="ESH_006B2.html">secciones</a></span>
+          y <a href="ESH_006B3.html"><span>cuentas de depósito</span></a>
+          del establecimiento.
+        </p>
+        <p class="TITLE"><img src="../img/ESF_006E.PNG"></p>
+        <p class="PARRAFO">El formulario cuenta con un filtro que le
+          permite al usuario buscar información específica por el código,
+          nombre o nit del establecimiento.</p>
+        <p class="TITLE"><img src="../img/ESF_006E1.PNG"></p>
+
+        <p class="PARRAFO">El formulario contiene los enlaces: Actualizar, Eliminar, Adicionar y Detalle.</p>
+        <p class="PARRAFO"><span class="SUBTITULO">Adicionar:</span>
+          Al activar ese enlace se despliega un nuevo
+          formulario
+          con los siguientes campos:</p>
+        <p class="TITLE"><img src="../img/ESF_006E2.PNG"></p>
+
+        <p class="TITLE">Descripción de campos</p>
+        <table>
+          <tr>
+            <td class="titletable">
+              <p class="SUBTITULO">
+                Código establecimiento</p>
+            </td>
+            <td>
+              <p class="PARRAFO">Campo
+                alfanumérico de 11 dígitos, obligatorio, y el cual corresponde
+                al código único que identifica a cada comercio dentro
+                de las <a href="NUH_033B.html">franquicias</a>
+                o al código asignado a los establecimientos de marca privada.
+              </p>
+            </td>
+          </tr>
+
+          <tr>
+            <td class="titletable">
+              <p class="SUBTITULO"> Nombre establecimiento</p>
+            </td>
+            <td>
+              <p class="PARRAFO">En
+                este campo alfanumérico de 30 dígitos, obligatorio, se
+                registra el nombre comercial del establecimiento asociado al
+                código
+                anterior.
+              </p>
+            </td>
+          </tr>
+          <tr>
+            <td class="titletable">
+              <p class="SUBTITULO">
+                Nombre de fantasía </p>
+            </td>
+            <td>
+              <p class="PARRAFO">En
+                este campo alfanumérico de 30 dígitos, obligatorio, se
+                registra el nombre comercial del establecimiento asociado al
+                código
+                anterior cuando este pertenece a un grupo economico.
+              </p>
+            </td>
+          </tr>
+          <tr>
+            <td class="titletable">
+              <p class="SUBTITULO">
+                Razón social</p>
+            </td>
+            <td>
+              <p class="PARRAFO">Campo
+                alfanumérico de 30 dígitos, no obligatorio, dentro del
+                que se registra el nombre del establecimiento registrado ante la
+                Cámara
+                de Comercio o de quien haga sus veces.
+              </p>
+            </td>
+          </tr>
+
+          <tr>
+            <td class="titletable">
+              <p class="SUBTITULO">
+                Nit</p>
+            </td>
+            <td>
+              <p class="PARRAFO">En
+                este campo alfanumérico de 12 dígitos, no obligatorio,
+                se registra el Numero de Identificación Tributaria del
+                establecimiento.
+              </p>
+            </td>
+          </tr>
+
+          <tr>
+            <td class="titletable">
+              <p class="SUBTITULO">
+                Dirección</p>
+            </td>
+            <td>
+              <p class="PARRAFO">Campo
+                alfanumérico de 30 dígitos, no obligatorio, que permite
+                registrar la nomenclatura que identifica la sede u oficina
+                principal
+                del establecimiento.
+              </p>
+            </td>
+          </tr>
+
+          <tr>
+            <td class="titletable">
+              <p class="SUBTITULO">
+                Ubicación</p>
+            </td>
+            <td>
+              <p class="PARRAFO">En
+                este campo obligatorio con lista de valores, se selecciona la <a
+                  href="NUH_003B.html">ubicación geográfica</a> correspondiente
+                a la dirección del
+                establecimiento.
+              </p>
+            </td>
+          </tr>
+
+          <tr>
+            <td class="titletable">
+              <p class="SUBTITULO">
+                E-mail</p>
+            </td>
+            <td>
+              <p class="PARRAFO">Campo
+                alfanumérico de hasta 30 caracteres en el que se registra la
+                dirección de correo electrónico del establecimiento.
+              </p>
+            </td>
+          </tr>
+
+          <tr>
+            <td class="titletable">
+              <p class="SUBTITULO">
+                Cadena</p>
+            </td>
+            <td>
+              <p class="PARRAFO">Este
+                campo cuenta con lista de valores de al cual se debe seleccionar
+                la
+                <a href="ESH_005B.html">cadena</a> a la cual
+                pertenece el establecimiento que puede inclusive ser
+                'Sin cadena'.
+              </p>
+            </td>
+          </tr>
+
+          <tr>
+            <td class="titletable">
+              <p class="SUBTITULO">
+                Tipo de sociedad</p>
+            </td>
+            <td>
+              <p class="PARRAFO">Campo
+                tipo combo del cual se seleciona el <a href="NUH_038B.html">Tipo
+                  de sociedad</a> comercial con el que se identifica o se
+                encuentra
+                constituido el establecimiento.</p>
+            </td>
+          </tr>
+
+          <tr>
+            <td class="titletable">
+              <p class="SUBTITULO">
+                Grupo </p>
+            </td>
+            <td>
+              <p class="PARRAFO">Este
+                campo tipo combo permite seleccionar el <a
+                  href="ESH_001B.html">Grupo</a>
+                correspondiente a la categorización realizada por la entidad
+                financiera y que permite darle un manejo diferencial a cada
+                establecimiento.
+              </p>
+            </td>
+          </tr>
+          <tr>
+            <td class="titletable">
+              <p class="SUBTITULO">
+                Registro de cámara</p>
+            </td>
+            <td>
+              <p class="PARRAFO">Campo
+                alfanumérico de 10 dígitos, no obligatorio, en el que
+                se se ingresa el número de la Matrícula Mercantil asignado
+                por la Cámara de Comercio o por quien haga sus veces.
+              </p>
+            </td>
+          </tr>
+          <tr>
+            <td class="titletable">
+              <p class="SUBTITULO">
+                Apartado aéreo </p>
+            </td>
+            <td>
+              <p class="PARRAFO">En
+                este campo alfanumérico de 10 dígitos, no obligatorio,
+                se registra el número del apartado aéreo para envío
+                de correspondencia.</p>
+            </td>
+          </tr>
+          <tr>
+            <td class="titletable">
+              <p class="SUBTITULO">
+                Número de teléfono</p>
+            </td>
+            <td>
+              <p class="PARRAFO">Campo
+                alfanumérico de 20 dígitos, no obligatorio, en el que
+                se registra el número telefónico de la sede u oficina
+                principal del establecimiento. </p>
+            </td>
+          </tr>
+          <tr>
+            <td class="titletable">
+              <p class="SUBTITULO">
+                Horario</p>
+            </td>
+            <td>
+              <p class="PARRAFO">En
+                este campo obligatorio tipo combo se selecciona entre Diurno,
+                Nocturno
+                o Ambos el horario habitual en el cual opera el establecimiento.
+              </p>
+            </td>
+          </tr>
+
+          <tr>
+            <td class="titletable">
+              <p class="SUBTITULO">
+                Fax</p>
+            </td>
+            <td>
+              <p class="PARRAFO">Campo
+                alfanumérico de 20 dígitos, no obligatorio, en el cual
+                se ingresa el número telefax de la sede u oficina principal del
+                establecimiento. </p>
+            </td>
+          </tr>
+
+          <tr>
+            <td class="titletable">
+              <p class="SUBTITULO">
+                Teléfono de correspondencia</p>
+            </td>
+            <td>
+              <p class="PARRAFO">En
+                este campo alfanumérico de 20 dígitos, no obligatorio,
+                se registra el número telefónico donde se puede establecer
+                contacto con el comercio habitualmente para efectos de
+                correspondencia
+                y/o actividades comer-ciales. </p>
+            </td>
+          </tr>
+
+          <tr>
+            <td class="titletable">
+              <p class="SUBTITULO">
+                Fax de correspondencia</p>
+            </td>
+            <td>
+              <p class="PARRAFO">Campo
+                alfanumérico de 20 dígitos, no obligatorio, en el que
+                se registra el número telefax donde se puede establecer contacto
+                con el comercio habitualmente para efectos de correspondencia
+                y/o actividades
+                comer-ciales.
+              </p>
+            </td>
+          </tr>
+
+          <tr>
+            <td class="titletable">
+              <p class="SUBTITULO">Nombre de </span> </span>usuario</p>
+        </td>
+        <td>
+          <p class="PARRAFO">Campo
+
+            tipo combo del cual se seleciona el usuario quien ingresa o
+            actualiza el establecimiento.
+          </p>
+        </td>
+      </tr>
+    </table>
+
+    <p class="PARRAFO"><span class="SUBTITULO">Actualizar</span>:
+      si el usuario selecciona un registro e invoca la opción Actualizar
+      se despliega un formulario en el cual el único campo NO modificable
+      es el Código del establecimiento. </p>
+    <p class="TITLE"><img src="../img/ESF_006E3.PNG"></p>
+
+    <p class="PARRAFO"><span class="SUBTITULO">Detalle</span>:
+      si el usuario selecciona un registro e invoca la opción Detalle se
+      despliega un formulario con la información completa del registro y
+      en el cual ninguno de sus campos es modificable.</p>
+    <p class="TITLE"><img src="../img/ESF_006E4.PNG"></p>
+    <p class="PARRAFO">Una vez creado el establecimiento, el usuario
+      puede seleccionar cualquiera de los hipervínculos contenidos en él
+      para administrar las <a href="ESH_006B1.html"><span>marcas</span></a>,
+      <span><a href="ESH_006B2.html">secciones</a></span>
+      y <a href="ESH_006B3.html"><span>cuentas de depósito</span></a>
+      del establecimiento.
+    </p>
+
+    <div>
+    </section>
+    <script src="../js/menu.js"></script>
+  </body>
+  <div id="footerContainer"></div>
+  <script>
   fetch('footer.html')
     .then(response => response.text())
     .then(html => {

@@ -1,25 +1,25 @@
 <!DOCTYPE html>
 <html lang="es">
 
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>BANKBU®</title>
-  <link rel="stylesheet" href="../css/pages.css">
-  <link rel="stylesheet" href="../css/style.css">
-  <link rel="icon" href="../img/ACQUIRER-logo.JPG" type="image/x-icon">
-</head>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BANKBU®</title>
+    <link rel="stylesheet" href="../css/pages.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="icon" href="../img/ACQUIRER-logo.JPG" type="image/x-icon">
+  </head>
 
-<body>
+  <body>
 
-  <header>
-    <img class="logo" src="../img/logoBankbu_.PNG" alt="Logo de Mi Empresa">
-    <div id="menuBtn">
-      <img class="TITLE" src="../img/menu.PNG" alt="Botón de Menú ">
-    </div>
-  </header>
+    <header>
+      <img class="logo" src="../img/logoBankbu_.PNG" alt="Logo de Mi Empresa">
+      <div id="menuBtn">
+        <img class="TITLE" src="../img/menu.PNG" alt="Botón de Menú ">
+      </div>
+    </header>
     <div id="menuContainer"></div>
-  <script>
+    <script>
     fetch('menu.html')
       .then(response => response.text())
       .then(html => {
@@ -27,286 +27,325 @@
       });
   </script>
 
-  <section>
-    <div>
-      
-      <p class="TITLE">Franquicias</p>
+    <section>
+      <div>
 
-      <p class="PARRAFO">Mediante esta función se habilita el mantenimiento de la tabla en la cual se almacenan los
-        códigos de las diferentes marcas o franquicias existentes en el mercado local, se&ntilde;alando
-        cuáles de éstas se encuentran habilitadas dentro del Sistema por entidad. </p>
-      <p class="PARRAFO">El formulario contiene las opciones Actualizar, Eliminar,
-        Adicionar y Detalle. Adicionalmente, cuenta con los hipervínculos <a href="NUH_033B1.html"
-          >Clases de prefijos</a>, <a href="NUH_033B3.html" >Parámetros operativos</a>,
-        <a href="NUH_033B4.html" >Parámetros acciones para el exception file</a>, <a
-          href="NUH_033B5.html" >Parámetros acciones por bloqueos</a>, y <a href="NUH_033B6.html"
-          >Parámetros regiones para el exception file</a> que contienen parametrización
-        adicional para las franquicias. </p>
-      <p class="TITLE"><img src="../img/NUF_033B.PNG"></p>
+        <p class="TITLE">Franquicias</p>
 
-      <p class="PARRAFO"><span class="SUBTITULO">Adicionar:</span>  Si el usuario invoca la opción Adicionar se despliega un
-        formulario con los siguientes bloques:</p>
-      <p class="TITLE"><img src="../img/NUF_033B1.PNG"></p>
+        <p class="PARRAFO">A través de este formulario, se habilita el
+          mantenimiento de la tabla en la cual se almacenan los códigos de las
+          diferentes marcas o franquicias, presentes en el mercado local,
+          identificando cuáles de éstas se encuentran habilitadas para la
+          entidad. Además del acceso a: Actualizar, Eliminar, Adicionar y
+          Detalle, el formulario contiene los siguientes enlaces: <a
+            href="NUH_033B1.html">Clases de prefijos</a>, <a
+            href="NUH_033B3.html">Parámetros operativos</a>,
+          <a href="NUH_033B4.html">Parámetros acciones para el exception
+            file</a>, <a
+            href="NUH_033B5.html">Parámetros acciones por bloqueos</a>, y <a
+            href="NUH_033B6.html">Parámetros regiones para el exception
+            file</a>, los cuales contienen parametrización adicional para las
+          franquicias. </p>
+        <p class="TITLE"><img src="../img/NUF_033B.PNG"></p>
 
-      <p class="PARRAFO"><span class="SUBTITULO">Franquicias:</span></span>  Conjunto de bloques que permiten definir las
-        principales particularidades de cada franquicia. </p>
+        <p class="PARRAFO"><span class="SUBTITULO">Adicionar:</span> Al activar
+          ese enlace se despliega un
+          formulario con los siguientes bloques:</p>
+        <p class="TITLE"><img src="../img/NUF_033B1.PNG"></p>
 
-      <table>
-        <tr>
-          <td class="titletable">
-            <p class="SUBTITULO">Marca</p>
-          </td>
-          <td class="PARRAFO">
-            <p class="PARRAFO">Campo numérico de dos dígitos, obligatorio, asignado a cada una de las
-              marcas o franquicias con las cuales operará la entidad.</p>
-          </td>
-        </tr>
-        <tr>
-          <td class="titletable">
-            <p class="SUBTITULO">Nombre</p>
-          </td>
-          <td class="PARRAFO">
-            <p class="PARRAFO">En este campo alfanumérico de 30 posiciones, obligatorio, se registra la
-              descripción asociada al código de cada franquicia. </p>
-          </td>
-        </tr>
-        <tr>
-          <td class="titletable">
-            <p class="SUBTITULO">Marca habilitada </p>
-          </td>
-          <td class="PARRAFO">
-            <p class="PARRAFO">Campo de chequeo que permite se&ntilde;alar si dicha franquicia se encuentra habilitada o
-              no dentro del sistema, para la entidad.</p>
-          </td>
-        </tr>
-        <tr>
-          <td class="titletable">
-            <p class="SUBTITULO">Establecimiento impuestos </p>
-          </td>
-          <td class="PARRAFO">
-            <p class="PARRAFO">Este campo admite cualquier dato alfanumérico de máximo 11 caracteres.
-              Permite mayúsculas y minúsculas. </p>
-            <p class="PARRAFO">El campo Código establecimiento debe validar el código ingresado frente a
-              los establecimientos existentes actualmente en la base de datos para la marca y empresa en la cual se
-              encuentra ubicado el usuario. Si el código ingresado existe, el sistema debe traer
-              automáticamente la descripción del mismo, de lo contrario debe generar un mensaje de error
-              informando que el establecimiento no existe.</p>
-          </td>
-        </tr>
-        <tr>
-          <td class="titletable">
-            <p class="SUBTITULO">Jerarquía asig. cupos </p>
-          </td>
-          <td class="PARRAFO">
-            <p class="PARRAFO">El campo Jerarquía asignación cupos admite cualquier valor numérico
-              de máximo 2 dígitos. Permite ingresar un valor para definir la prioridad en que los cupos de
-              las tarjetas son asignados según la marca. </p>
-          </td>
-        </tr>
-      </table>
-      <p class="PARRAFO"><span class="SUBTITULO">Longitudes:</span></span>  Conjunto de datos que indican los valores que
-        por defecto define la franquicia para cada uno de los conceptos contenidos en el bloque y los algoritmos a
-        utilizar para verificar la referencia universal asociada a las transacciones.</p>
+        <p class="PARRAFO"><span class="SUBTITULO">Franquicias:</span> Bloque de
+          campos que permite definir algunos datos de cada franquicia. </p>
 
-      <table >
+        <table>
+          <tr>
+            <td class="titletable">
+              <p class="SUBTITULO">Marca</p>
+            </td>
+            <td class="PARRAFO">
+              <p class="PARRAFO">Campo numérico de dos dígitos, obligatorio,
+                asignado a cada una de las marcas o franquicias habilitadas a la
+                entidad para operar con ellas.</p>
+            </td>
+          </tr>
+          <tr>
+            <td class="titletable">
+              <p class="SUBTITULO">Nombre</p>
+            </td>
+            <td class="PARRAFO">
+              <p class="PARRAFO">En este campo alfanumérico de 30 posiciones,
+                obligatorio, se registra el nombre asociado al código de cada
+                franquicia. </p>
+            </td>
+          </tr>
+          <tr>
+            <td class="titletable">
+              <p class="SUBTITULO">Marca habilitada </p>
+            </td>
+            <td class="PARRAFO">
+              <p class="PARRAFO">Campo que posee lista de valores tipo combo,
+                que permite señalar si dicha franquicia se encuentra habilitada
+                o no dentro del sistema, para la entidad.</p>
+            </td>
+          </tr>
+          <tr>
+            <td class="titletable">
+              <p class="SUBTITULO">Establecimiento impuestos </p>
+            </td>
+            <td class="PARRAFO">
+
+              <p class="PARRAFO">Campo que posee lista de valores adjunta con la
+                data poblada en la opción
+                Información <a href="ESH_006B.html">establecimientos</a>, de la
+                que debe seleccionarse
+                aquel establecimiento que va a ser validado por el movimiento de
+                algunos
+                <a href="NUH_027B.html">orígenes</a> ,
+                las transacciones correspondientes al pago de impuestos.</p>
+            </td>
+          </tr>
+
+        </table>
+        <p class="PARRAFO"><span class="SUBTITULO">Longitudes:</span>Conjunto de
+          datos que indican los valores que, por defecto, define la franquicia
+          para cada uno de los campos y los algoritmos a utilizar para verificar
+          la referencia universal asociada a las transacciones.</p>
+
+        <table>
+          <tr>
+            <td class="titletable">
+              <p class="SUBTITULO">Bin</p>
+            </td>
+            <td>
+              <p class="PARRAFO">Este campo numérico de dos dígitos,
+                obligatorio, permite se&ntilde;alar la longitud
+                máxima por defecto para el bin o prefijo.</p>
+            </td>
+          </tr>
+          <tr>
+            <td class="titletable">
+              <p class="SUBTITULO">Número tarjeta </p>
+            </td>
+            <td class="PARRAFO">
+              <p class="PARRAFO">Campo numérico de dos dígitos, obligatorio,
+                dentro del que se se&ntilde;ala
+                la longitud máxima por defecto que tendrán las tarjetas
+                incluyendo el bin o prefijo.</p>
+            </td>
+          </tr>
+          <tr>
+            <td class="titletable">
+              <p class="SUBTITULO">Referencia universal </p>
+            </td>
+            <td class="PARRAFO">
+              <p class="PARRAFO">Campo numérico de dos dígitos, obligatorio, que
+                contiene la longitud
+                máxima del número que identifica de manera exclusiva a cada
+                transacción dentro del
+                universo de transacciones por franquicia, las cuales establecen
+                las rutinas de armado de la misma.</p>
+            </td>
+          </tr>
+          <tr>
+            <td class="titletable">
+              <p class="SUBTITULO">Dígito chequeo referencia </p>
+            </td>
+            <td class="PARRAFO">
+              <p class="PARRAFO">Campo que posee lista de valores adjunta, de la
+                que se debe seleccionar el algoritmo, que por defecto, debe
+                utilizar el sistema para obtener el dígito de chequeo que hace
+                parte de la referencia universal.</p>
+            </td>
+          </tr>
+          <tr>
+            <td class="titletable">
+              <p class="SUBTITULO">Algoritmo referencia </p>
+            </td>
+            <td>
+              <p class="PARRAFO">En este campo con lista de valores adjunta, se
+                debe seleccionar la rutina de aplicación del
+                algoritmo por franquicia que por defecto debe utilizar el
+                sistema para obtener o construir la referencia
+                universal asociada a cada transacción.</p>
+            </td>
+          </tr>
+        </table>
+        <p class="PARRAFO"><span class="SUBTITULO">Comisiones: </span>Conjunto
+          de parámetros definidos por la franquicia, que permiten establecer las
+          condiciones que regirán por defecto sobre los conceptos aquí
+          contenidos.</p>
+
+        <table>
+          <tr>
+            <td class="titletable">
+              <p class="SUBTITULO">Tarjeta débito / Tarjeta crédito </p>
+            </td>
+            <td>
+              <p class="PARRAFO">Campo con lista de valores tipo combo, que
+                permite definir, de manera excluyente, si la cifra relacionada
+                en el campo Valor ubicado a continuación, corresponde a un
+                porcentaje o un valor absoluto.</p>
+            </td>
+          </tr>
+          <tr>
+            <td class="titletable">
+              <p class="SUBTITULO">Valor</p>
+            </td>
+            <td>
+              <p class="PARRAFO">Campo numérico de 16 dígitos no obligatorio, en
+                el que se registra acorde a lo definido en el campo anterior, el
+                valor absoluto o porcentual a descontar, a manera de comisión a
+                los establecimientos por transacciones realizadas con productos
+                débito y que aplicará para la marca en específico. Cuando es
+                porcentual, sólo admite hasta 6 caracteres.</p>
+            </td>
+          </tr>
+          <tr>
+            <td class="titletable">
+              <p class="SUBTITULO">% Adquirencia nacional</p>
+            </td>
+            <td>
+              <p class="PARRAFO">Campo numérico de 6 posiciones enteras y 2
+                decimales, no obligatorio, en el cual se define el porcentaje
+                aplicable sobre las comisiones de los comprobantes de venta para
+                determinar los valores devengados por la entidad como
+                consecuencia del envío de movimiento de canje nacional.</p>
+            </td>
+          </tr>
+          <tr>
+            <td class="titletable">
+              <p class="SUBTITULO">% Adquirencia internacional</p>
+            </td>
+            <td>
+              <p class="PARRAFO">Campo numérico de 6 posiciones enteras y 2
+                decimales, no obligatorio, en el cual se define el porcentaje
+                aplicable sobre el total de los comprobantes de venta para
+                determinar los valores devengados por la entidad como
+                consecuencia del envío de movimiento de canje internacional.</p>
+            </td>
+          </tr>
+          <tr>
+            <td class="titletable">
+              <p class="SUBTITULO">Tipo liquidación</p>
+            </td>
+            <td>
+              <p class="PARRAFO">Campo que posee lista de valores tipo combo, de
+                la que puede seleccionarse el tipo de liquidación de las
+                comisiones entre Intercambio o Adquirencia, si es por
+                adquirencia, las comisiones son liquidadas según el modelo
+                anterior (porcentajes entre entidades y franquicias), y si es
+                por Intercambio las comisiones son liquidadas según porcentajes
+                pactados entre entidades y establecimientos.
+
+              </p>
+            </td>
+          </tr>
+        </table>
+
+        <p class="PARRAFO"><span class="SUBTITULO">Propinas: </span>Conjunto de
+          parámetros definidos por la franquicia, que permiten establecer las
+          condiciones que regirán por defecto sobre los conceptos aquí
+          contenidos.
+
+        </p>
+
+        <table>
+          <tr>
+            <td class="titletable">
+              <p class="SUBTITULO">Derecho propina </p>
+            </td>
+            <td>
+              <p class="PARRAFO">Casilla que indica si determinada franquicia
+                permite la liquidación y cobro de propina.
+              </p>
+            </td>
+          </tr>
+          <tr>
+            <td class="titletable">
+              <p class="SUBTITULO">% Máximo no comisionable </p>
+            </td>
+            <td>
+              <p class="PARRAFO">En este campo numérico de 6 posiciones, no
+                obligatorio, se registra el valor porcentual
+                máximo o tope para el cobro de propina acordado por la
+                franquicia.</p>
+            </td>
+          </tr>
+          <tr>
+            <td class="titletable">
+              <p class="SUBTITULO">Tolerancia no comisionable </p>
+            </td>
+            <td class="PARRAFO">
+              <p class="PARRAFO">Campo numérico de 14 enteros y 2 decimales no
+                obligatorio, en el que se registra
+                el valor absoluto máximo acordado entre el emisor y el operador
+                (franquicia) en que puede excederse
+                el monto de comisión cobrado.</p>
+            </td>
+          </tr>
+        </table>
+
+        <p class="PARRAFO"><span class="SUBTITULO">Franquicia
+            internacional:</span></span><span class="PARRAFO"> C</span><span
+          class="PARRAFO">onjunto de campos que permiten se&ntilde;alar los
+          códigos que identifican la cobertura
+          de la tarjeta 'Local' o 'Internacional', información que hará parte de
+          los datos contenidos
+          dentro de la banda magnética de cada plástico y que serán asignados a
+          nivel de cada
+          Producto en sus <a href="MEH_002B1.html">Líneas de crédito</a>.</span>
+      </p>
+
+      <table width=740>
         <tr>
           <td class="titletable">
-            <p class="SUBTITULO">Bin</p>
+            <p class="SUBTITULO">
+              Código servicio internal </p>
           </td>
           <td>
-            <p class="PARRAFO">Este campo numérico de dos dígitos, obligatorio, permite se&ntilde;alar la longitud
-              máxima por defecto para el bin o prefijo.</p>
-          </td>
-        </tr>
-        <tr>
-          <td class="titletable">
-            <p class="SUBTITULO">Número tarjeta </p>
-          </td>
-          <td class="PARRAFO">
-            <p class="PARRAFO">Campo numérico de dos dígitos, obligatorio, dentro del que se se&ntilde;ala
-              la longitud máxima por defecto que tendrán las tarjetas incluyendo el bin o prefijo.</p>
-          </td>
-        </tr>
-        <tr>
-          <td class="titletable">
-            <p class="SUBTITULO">Referencia universal </p>
-          </td>
-          <td class="PARRAFO">
-            <p class="PARRAFO">Campo numérico de dos dígitos, obligatorio, que contiene la longitud
-              máxima del número que identifica de manera exclusiva a cada transacción dentro del
-              universo de transacciones por franquicia, las cuales establecen las rutinas de armado de la misma.</p>
-          </td>
-        </tr>
-        <tr>
-          <td class="titletable">
-            <p class="SUBTITULO">Dígito chequeo referencia </p>
-          </td>
-          <td class="PARRAFO">
-            <p class="PARRAFO">Campo que posee lista de valores adjunta de la que se debe seleccionar el algoritmo que
-              por defecto debe utilizar el sistema para obtener el dígito de chequeo que hace parte de la
-              referencia universal. </p>
-          </td>
-        </tr>
-        <tr>
-          <td class="titletable">
-            <p class="SUBTITULO">Algoritmo referencia </p>
-          </td>
-          <td>
-            <p class="PARRAFO">En este campo con lista de valores adjunta, se debe seleccionar la rutina de aplicación del
-              algoritmo por franquicia que por defecto debe utilizar el sistema para obtener o construir la referencia
-              universal asociada a cada transacción.</p>
-          </td>
-        </tr>
-      </table>
-      <p class="PARRAFO"><span class="SUBTITULO">Comisiones: </span></span> Conjunto de parámetros definidos por la
-        franquicia, que permiten establecer las condiciones que regirán por defecto los conceptos aquí
-        contenidos.</p>
-
-      <table>
-        <tr>
-          <td class="titletable">
-            <p class="SUBTITULO">Tarjeta débito / Tarjeta crédito </p>
-          </td>
-          <td>
-            <p class="PARRAFO">Opción que permite definir de manera excluyente si la cifra relacionada en el campo Valor
-              ubicado a continuación, corresponde a un porcentaje o un valor absoluto.</p>
-          </td>
-        </tr>
-        <tr>
-          <td class="titletable">
-            <p class="SUBTITULO">Valor</p>
-          </td>
-          <td>
-            <p class="PARRAFO">Campo numérico de 16 dígitos no obligatorio, en el que se registra acorde a lo definido en
-              el campo anterior, el valor absoluto o porcentual a descontar a manera de comisión a los
-              establecimientos por transacciones realizadas con productos débito o crédito y que
-              aplicará para la marca en especifico.Cuando es porcentual, sólo admite hasta 6
-              caracteres. </p>
-          </td>
-        </tr>
-      </table>
-
-      <p class="PARRAFO"><span class="SUBTITULO">Propinas: </span></span> Conjunto de parámetros definidos por la
-        franquicia, que permiten establecer las condiciones que regirán por defecto los conceptos aquí
-        contenidos.</p>
-
-      <table>
-        <tr>
-          <td class="titletable">
-            <p class="SUBTITULO">Derecho propina </p>
-          </td>
-          <td>
-            <p class="PARRAFO">Casilla que indica si determinada franquicia permite la liquidación y cobro de propina.
-            </p>
-          </td>
-        </tr>
-        <tr>
-          <td class="titletable">
-            <p class="SUBTITULO">% Máximo no comisionable </p>
-          </td>
-          <td>
-            <p class="PARRAFO">En este campo numérico de 6 posiciones, no obligatorio, se registra el valor porcentual
-              máximo o tope para el cobro de propina acordado por la franquicia.</p>
-          </td>
-        </tr>
-        <tr>
-          <td class="titletable">
-            <p class="SUBTITULO">Tolerancia no comisionable </p>
-          </td>
-          <td class="PARRAFO">
-            <p class="PARRAFO">Campo numérico de 14 enteros y 2 decimales no obligatorio, en el que se registra
-              el valor absoluto máximo acordado entre el emisor y el operador (franquicia) en que puede excederse
-              el monto de comisión cobrado.</p>
-          </td>
-        </tr>
-        <tr>
-          <td class="titletable">
-            <p class="SUBTITULO">Código servicio internacional </p>
-          </td>
-          <td class="PARRAFO">
-            <p class="PARRAFO">Campo numérico de cuatro dígitos, no obligatorio, mediante el que cada
-              franquicia determina el código asociado a cada <A href="MEH_002B.html"
-                  >producto</A> (bin, segmento, y grupo de afinidad) se&ntilde;alando que puede ser
-              utilizado tanto a nivel nacional o local como también internacional.</p>
+            <p class="PARRAFO"> Campo numérico de 4 dígitos, no obligatorio, que
+              hace parte de la información contenida en el plástico y que
+              permite identificar la cobertura a nivel internacional de la
+              tarjeta.</p>
           </td>
         </tr>
         <tr>
           <td class="titletable">
             <p class="SUBTITULO">Código servicio nacional </p>
           </td>
-          <td class="PARRAFO">
-            <p class="PARRAFO">En este campo numérico de cuatro dígitos, no obligatorio, se registra el
-              código determinado por cada franquicia y que estará asociado a cada <A
-                  href="MEH_002B.html" >producto</A> (bin, segmento, y grupo de afinidad) cuyo uso se
-              restringe al nivel nacional o local.</p>
+          <td>
+            <p class="PARRAFO">Campo numérico de 4 dígitos, no obligatorio, que
+              hace parte de la información contenida en el plástico y que
+              permite identificar la cobertura a nivel nacional o local de la
+              tarjeta.</p>
           </td>
         </tr>
       </table>
+      <p class="PARRAFO"><span class="PARRAFO"><span
+            class="SUBTITULO">Actualizar:</span>
+            Al activar ese enlace se despliega un formulario en el cual, el único campo no modificable es Marca. </p>
+        <p class="TITLE"><img src="../img/NUF_033B2.PNG"></p>
 
-
-      <p class="PARRAFO"><span class="SUBTITULO">Franquicia internacional:</span></span><span class="PARRAFO"> C</span><span
-          class="PARRAFO">onjunto de campos que permiten se&ntilde;alar los códigos que identifican la cobertura
-          de la tarjeta 'Local' o 'Internacional', información que hará parte de los datos contenidos
-          dentro de la banda magnética de cada plástico y que serán asignados a nivel de cada
-          Producto en sus <A href="MEH_002B1.html" >Líneas de crédito</A>.</span> 
-      </p>
-
-      <table width=740>
-        <tr>
-          <td class="titletable">
-            <p class="SUBTITULO">% Adquirencia nacional </p>
-          </td>
-          <td>
-            <p class="PARRAFO">Campo numérico de 6 posiciones enteras y 2 decimales, no obligatorio, en el cual se define el
-              porcentaje aplicable sobre las comisiones de los comprobantes de venta para determinar los valores
-              devengados por la entidad como consecuencia del envío de movimiento de canje nacional.</p>
-          </td>
-        </tr>
-        <tr>
-          <td class="titletable">
-            <p class="SUBTITULO">% Adquirencia internacional </p>
-          </td>
-          <td>
-            <p class="PARRAFO">Campo numérico de 6 posiciones enteras y 2 decimales, no obligatorio, en el cual se define el
-              porcentaje aplicable sobre el total de los comprobantes de venta para determinar los valores devengados
-              por la entidad como consecuencia del envío de movimiento de canje internacional.</p>
-          </td>
-        </tr>
-        <tr>
-          <td class="titletable">
-            <p class="SUBTITULO">Tipo liquidación </p>
-          </td>
-          <td>
-            <p class="PARRAFO">Campo que posee lista de valores adjunta de la que debe seleccionarse el tipo de liquidación de
-              las comisiones entre Intercambio o Adquirencia si es por adquirencia
-              las comisiones son liquidadas según el modelo anterior (porcentajes entre entidades y
-              franquicias), y si es por Intercambio las comisiones son liquidadas según
-              porcentajes pactados entre entidades y establecimientos.</p>
-          </td>
-        </tr>
-      </table>
-      <p class="PARRAFO"><span class="PARRAFO"><span class="SUBTITULO">Actualizar:</span> 
-          Si el usuario invoca la opción Actualizar se despliega un nuevo formulario
-          en el cual el único campo no modificable es el Código.</p>
-      <p class="TITLE"><img src="../img/NUF_033B2.PNG"></p>
-
-      <p class="PARRAFO"><span class="SUBTITULO">Detalle:</span>  Si el usuario invoca la opción Detalle se
-        despliega el siguiente formulario: 
-
+        <p class="PARRAFO"><span class="SUBTITULO">Detalle:</span> Si el usuario
+          invoca la opción Detalle se
+          despliega el siguiente formulario:
         </p>
-      <p class="TITLE"><img src="../img/NUF_033B3.PNG"></p>
+        <p class="TITLE"><img src="../img/NUF_033B3.PNG"></p>
 
-      <p class="PARRAFO"><span class="TITLE">Botones especiales</p>
-      <p class="PARRAFO"><span class="SUBTITULO">Actualizar propinas de servicio</span> : Botón que permite asignarle la
-        información contenida en estos campos a todos los tipos de servicios y establecimientos que no la posean
-        o sólo a los tipos de servicios y establecimientos iguales al actual.</p>
-      <p class="TITLE"><img src="../img/NUF_033B4-Act propinas de servi.PNG"></p>
-    </div>
-  </section>
-  <script src="../js/menu.js"></script>
-</body>
-<div id="footerContainer"></div>
-<script>
+        <p class="PARRAFO"><span class="TITLE">Botones especiales</p>
+          <p class="PARRAFO"><span class="SUBTITULO">Actualizar propinas de
+              servicio</span> : Botón que permite asignarle la
+            información contenida en estos campos a todos los tipos de servicios
+            y establecimientos que no la posean
+            o sólo a los tipos de servicios y establecimientos iguales al
+            actual.</p>
+          <p class="TITLE"><img
+              src="../img/NUF_033B4-Act propinas de servi.PNG"></p>
+        </div>
+      </section>
+      <script src="../js/menu.js"></script>
+    </body>
+    <div id="footerContainer"></div>
+    <script>
   fetch('footer.html')
     .then(response => response.text())
     .then(html => {
@@ -314,4 +353,4 @@
     });
 </script>
 
-</html>
+  </html>

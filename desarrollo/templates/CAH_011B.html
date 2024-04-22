@@ -1,25 +1,25 @@
 <!DOCTYPE html>
 <html lang="es">
 
-<head>
+  <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>BANKBU®</title>
     <link rel="stylesheet" href="../css/pages.css">
     <link rel="stylesheet" href="../css/style.css">
- <link rel="icon" href="../img/ACQUIRER-logo.JPG" type="image/x-icon">
-</head>
+    <link rel="icon" href="../img/ACQUIRER-logo.JPG" type="image/x-icon">
+  </head>
 
-<body>
+  <body>
 
     <header>
-        <img class="logo" src="../img/logoBankbu_.PNG" alt="Logo de Mi Empresa">
-        <div id="menuBtn">
-            <img class="TITLE"  src= "../img/menu.PNG" alt="Botón de Menú ">
-        </div>
+      <img class="logo" src="../img/logoBankbu_.PNG" alt="Logo de Mi Empresa">
+      <div id="menuBtn">
+        <img class="TITLE" src="../img/menu.PNG" alt="Botón de Menú ">
+      </div>
     </header>
-      <div id="menuContainer"></div>
-  <script>
+    <div id="menuContainer"></div>
+    <script>
     fetch('menu.html')
       .then(response => response.text())
       .then(html => {
@@ -28,282 +28,327 @@
   </script>
 
     <section>
-        <div> 
-            
-                    <p  class="TITLE">Ajustes monetarios</p>
-                    
-            <p class="PARRAFO">Mediante esta opción el Sistema <span >BankBú&reg;</span>  
-              ofrece la funcionalidad que permite generar las diferentes transacciones monetarias 
-              requeridas para afectar los saldos de la obligación de un cliente, 
-              las cuales pueden ser de naturaleza débito o crédito. Permite 
-              compensar valores o saldos de una transacción, de una línea 
-              de crédito, de una moneda o de una tarjeta. El campo Ajuste dirigido 
-              a facilita la captura de los ajustes, pues al seleccionar de la lista alguna 
-              de las transacciones allí contenidas, se alimentan automáticamente 
-              varios de los campos requeridos minimizando la labor y la ocurrencia de errores.</p>
-            <p class="PARRAFO">El formulario cuenta con un wizard de dos pasos:</p>
-            <p class="TITLE"><img src="../img/CAF_011B.PNG"681" height="410"></p>
-           
-            <table>
-              <tr> 
-                <td class="titletable"><p class="SUBTITULO">Número 
-                    tarjeta </p></td>
-                <td><p class="PARRAFO">Campo 
-                    en el que se registra el número de la tarjeta sobre la que se 
-                    realiza el ajuste monetario y cuyos saldos se verán afectados 
-                    una vez sea aplicada la transacción correspondiente.</p></td>
-              </tr>
-              <tr> 
-                <td class="titletable"><p class="SUBTITULO">Tipo 
-                    de ajuste</p></td>
-                <td><p class="PARRAFO">Este 
-                    campo cuenta con lista de valores adjunta de la que debe seleccionarse 
-                    entre Débito o Crédito la naturaleza que corresponda con 
-                    el ajuste monetario a realizar.</p>
-                </td>
-              </tr>
-              <tr> 
-                <td class="titletable"><p class="SUBTITULO">Ajuste 
-                    dirigido a</p></td>
-                <td><p class="PARRAFO">Campo 
-                    que posee lista de valores de la cual debe seleccionarse entre Ajuste 
-                    a transacción crédito, Ajustes saldos a favor, Crear transacción 
-                    original, o Ajuste a transacción débito; opciones que 
-                    aparecen total o parcialmente, dependiendo de la clase o naturaleza 
-                    del ajuste y el objetivo de la afectación monetaria a realizar.</p>
-                  <p class="PARRAFO">Tipo de ajuste Crédito habilita las opciones: 
-                    (Crear transacción original, o Ajuste a transacción crédito). 
-                    Tipo de ajuste débito habilita (Crear transacción original, 
-                    Ajuste a transacción débito, Ajuste a transacción 
-                    crédito, y Ajuste saldo a favor).</p>
-                </td>
-              </tr>
-              <tr> 
-                <td class="titletable"><p class="SUBTITULO">Moneda</p></td>
-                <td><p class="PARRAFO">En 
-                    este campo se selecciona de la lista de valores la <a href="NUH_005B.html" >Moneda</a> 
-                    en que se denomina la transacción del ajuste.</p></td>
-              </tr>
-              <tr> 
-                <td class="titletable"><p class="SUBTITULO">Sucursal</p></td>
-                <td><p class="PARRAFO">Campo 
-                    que posee lista de la cual se selecciona la <a href="NUH_020B.html" >sucursal</a> 
-                    a través de la cual se gestiona el ajuste.</p></td>
-              </tr>
-              <tr> 
-                <td class="titletable"><p class="SUBTITULO">Fecha 
-                    transacción </p></td>
-                <td><p class="PARRAFO">Contiene 
-                    la fecha en la cual se realizó la transacción o en caso 
-                    de la creación de un cargo no registrado, contiene la fecha asociada 
-                    a la nueva transacción.</p></td>
-              </tr>
-            </table>
-           
-            <p class="PARRAFO">Una vez ingresada esta información, al utilizar el 
-              botón siguiente el sistema despliega el segundo formulario, mínimo 
-              con los siguientes bloques de información: Detalle transacción 
-              y Saldos transacción (Capital, Intereses, Moras y Saldo a favor).</p>
-            <p class="TITLE"><img src="../img/CAF_011B1.PNG"><img src="../img/CAF_011B5.PNG"></p>
-           
-            <p class="PARRAFO">El bloque Detalle de la transacción, debe desplegar 
-              los campos dependiendo hacia qué va dirigido el ajuste. Si el ajuste 
-              es crear una transacción original o va dirigido al saldo a favor de 
-              la tarjeta, el sistema debe desplegar los campos Transacción a aplicar, 
-              Valor ajuste y referencia universal únicamente:</p>
-            <p class="PARRAFO">Si el ajuste es débito y va dirigido al saldo a favor 
-              de la tarjeta, se deben desplegar además los campos Tipo y Número 
-              de cuenta:</p>
-            <p class="TITLE"><img src="../img/CAF_011B1b.PNG"731" > 
-            </p>
-            
-            <p  class="PARRAFO">Si el ajuste es débito y es crear una 
-              transacción original, se debe desplegar además, el campo Plazo.</p>
-            <p  class="PARRAFO">Si el ajuste es débito, es crear una 
-              transacción original y es una transacción cuyo concepto es Compra, 
-              se debe desplegar además, el establecimiento. </p>
-            <p class="TITLE"><img src="../img/CAF_011B1a.PNG"776" ></p>
-            
-            <p  class="PARRAFO">Si el ajuste va dirigido a otra transacción, 
-              el sistema debe desplegar los campos Transacción a aplicar, Transacción 
-              tarjeta, Valor ajuste y Referencia universal: </p>
-            <p class="TITLE"><img src="../img/CAF_011B1.PNG"756" height="114"></p>
-            
-            <p  class="PARRAFO"><span class="SUBTITULO">Detalle transacción:</span>  
-              Conjunto de campos que son tanto de salida como ingresables dependiendo de 
-              si se trata de un ajuste a una transacción existente o por el contrario 
-              a la creación de una transacción nueva.</p>
-            <table>
-              <tr> 
-                <td class="titletable"><p class="SUBTITULO">Transacción 
-                    a aplicar</p></td>
-                <td><p class="PARRAFO">Campo 
-                    con lista de valores, que para el caso de transacciones de naturaleza 
-                    débito despliega la secuencia o número que identifica 
-                    cada transacción que ha ingresado al sistema.</p></td>
-              </tr>
-              <tr> 
-                <td class="titletable"><p class="SUBTITULO">Transacción 
-                    tarjeta </p></td>
-                <td><p class="PARRAFO">Este 
-                    campo posee lista de valores poblada mediante el movimiento histórico 
-                    de las transacciones, filtrada por la clase o naturaleza del ajuste. 
-                    Cuando se trata de afectar una transacción existente, la lista 
-                    despliega la información básica, suficiente y necesaria 
-                    que le permite al usuario ubicar exactamente la transacción a 
-                    afectar.</p></td>
-              </tr>
-              <tr> 
-                <td class="titletable"><p class="SUBTITULO">Valor 
-                    ajuste </p></td>
-                <td><p class="PARRAFO">Este 
-                    campo despliega, en principio, el saldo que presente la transacción 
-                    o en su defecto puede contener el monto que se desea ajustar o el valor 
-                    de una nueva transacción cuando se desea crear ésta. Si 
-                    se trata de una ajuste a una transacción existente el monto se 
-                    descompondrá en los conceptos correspondientes.</p></td>
-              </tr>
-              <tr> 
-                <td class="titletable"><p class="SUBTITULO">Establecimiento</p></td>
-                <td><p class="PARRAFO">Campo 
-                    que permite ingresar el código del establecimiento en donde se 
-                    realizó la transacción. Cuando se define que la moneda 
-                    de la transacción es pesos, el aplicativo validará la 
-                    información del establecimiento y si es correcto desplegará 
-                    el nombre asociado al código ingresado. Cuando se define una 
-                    moneda diferente a pesos el aplicativo no valida el código y 
-                    permite ingresar cualquier dato en este campo inclusive letras hasta 
-                    un máximo de 11 caracteres.</p></td>
-              </tr>
-              <tr> 
-                <td class="titletable"><p class="SUBTITULO">Plazo</p></td>
-                <td><p class="PARRAFO">Despliega 
-                    el número de periodos solicitados por el cliente o asignados 
-                    por el sistema sobre la transacción realizada o en caso de la 
-                    creación de un cargo no registrado, contiene el número 
-                    de periodos solicitados por el cliente para amortizar la nueva transacción.</p></td>
-              </tr>
-              <tr> 
-                <td class="titletable"><p class="SUBTITULO">Referencia 
-                    universal </p></td>
-                <td><p class="PARRAFO">Registra 
-                    la referencia universal asignada por el sistema a cada transacción 
-                    registrada dentro del mismo, la que en adición a la secuencia, 
-                    permite identificar claramente cada una de las transacciones.</p></td>
-              </tr>
-              <tr> 
-                <td class="titletable"><p class="SUBTITULO">Tipo 
-                    cuenta </p></td>
-                <td><p class="PARRAFO">El 
-                    campo Tipo cuenta debe contener combo con los valores Ahorros, Corriente 
-                    y Rotativo. Debe traer un valor diligenciado por defecto y permitirle 
-                    al usuario dejarlo igual o modificarlo.
-                  </p></td>
-              </tr>
-              <tr> 
-                <td class="titletable"><p class="SUBTITULO">Número 
-                    cuenta </p></td>
-                <td><p class="PARRAFO">El 
-                    campo Número cuenta admite cualquier dato alfanumérico 
-                    de máximo 16 caracteres. Permite mayúsculas y minúsculas.
-                  </p></td>
-              </tr>
-            </table>
-            
-            <p  class="PARRAFO"><span class="SUBTITULO">Saldos transacción: 
-              </span> La información contenida en estos campos aplica exclusivamente 
-              para las transacciones que ingresaron al sistema previamente, ilustra el estado 
-              actual de los saldos de la transacción por cada uno de los principales 
-              conceptos.</p>
-            <p class="TITLE"><img src="../img/CAF_011B5.PNG"757" height="351"></p>
-            <table>
-              <tr> 
-                <td class="titletable"><p class="SUBTITULO">Capital 
-                    no facturado </p></td>
-                <td><p class="PARRAFO">Campo 
-                    que ilustra el monto de los diferidos pendientes por cancelar después 
-                    de efectuar el pago mínimo, los consumos o utilizaciones realizados 
-                    después de la fecha de la última facturación y 
-                    los ajustes monetarios que incrementen el saldo tales como reversiones 
-                    de pagos erróneamente aplicados, etc</p></td>
-              </tr>
-              <tr> 
-                <td class="titletable"><p class="SUBTITULO">Capital 
-                    facturado </p></td>
-                <td><p class="PARRAFO">Indica 
-                    la porción de los diferidos a ser cubierta mediante el pago mínimo.</p></td>
-              </tr>
-              <tr> 
-                <td class="titletable"><p class="SUBTITULO">Saldo 
-                    interés corriente</p></td>
-                <td><p class="PARRAFO">Presenta 
-                    el monto resultante de la liquidación del beneficio esperado 
-                    por la entidad sobre el saldo del capital vigente.</p></td>
-              </tr>
-              <tr> 
-                <td class="titletable"><p class="SUBTITULO">Saldo 
-                    interés mora</p></td>
-                <td><p class="PARRAFO">Se&ntilde;ala 
-                    el monto resultante de la liquidación del beneficio adicional 
-                    esperado por la entidad sobre el saldo del capital en mora.</p></td>
-              </tr>
-              <tr> 
-                <td class="titletable"><p class="SUBTITULO">Saldo 
-                    interés extracontable</p></td>
-                <td><p class="PARRAFO">Muestra 
-                    el monto resultante de la liquidación del beneficio esperado 
-                    por la entidad sobre el saldo del capital cuya altura de mora supere 
-                    los 90 días.</p></td>
-              </tr>
-              <tr> 
-                <td class="titletable"><p class="SUBTITULO">Mora 
-                    1 periodo ... Mora mayor a 12 periodos</p></td>
-                <td><p class="PARRAFO">Agrupación 
-                    de campos que ilustran el estado actual de los saldos de la transacción 
-                    por este concepto, acorde con la altura de mora correspondiente.</p></td>
-              </tr>
-            </table>
-            
-            <p class="PARRAFO">Si el ajuste es dirigido a una transacción débito, 
-              esta pantalla debe desplegar un bloque adicional con los Saldos de la transacción 
-              débito seleccionada por el actor.</p>
-            <p  class="PARRAFO"> Si el ajuste es dirigido a una transacción 
-              débito, en este bloque de los saldos de dicha transacción, el 
-              sistema debe desplegar los campos: Capital facturado, Capital no facturado, 
-              Capital en mora del 1 al 12, Interés corriente, Interés de mora 
-              e Interés extracontable, reflejando los saldos actuales de estos conceptos 
-              en la transacción a la cual se dirige el ajuste. Ninguno de los campos 
-              debe permitir ser modificado</p>
-            <p  class="TITLE"><img src="../img/CAF_011B2.PNG"><img src="../img/CAF_011B4.PNG"><img src="../img/CAF_011B3.PNG"></p>
+      <div>
 
-            <p  class="PARRAFO"><span class="SUBTITULO">Detalle moras transacción: 
-              </span> Agrupación de campos que permiten distribuir el ajuste, por 
-              este concepto, acorde con la altura de mora correspondiente. </p>
-            <p  class="PARRAFO">Si el ajuste va dirigido al Capital en mora, se debe desplegar el bloque Detalle moras transacción
-               con los campos desde Mora 1 Periodo, ... hasta Mora 11 Periodo y Mora más 12 Periodos.</p>
-            <p  class="TITLE"><img src="../img/CAF_011B6.PNG"></p>
+        <p class="TITLE">Ajustes monetarios</p>
 
-            <table>
-              <tr> 
-                <td class="titletable"><p class="SUBTITULO">Mora 
-                    1 periodo ... Mora mayor a 12 periodos</p></td>
-                <td><p class="PARRAFO">Conjunto 
-                    de campos que permiten distribuir por cada uno de los diferentes periodos 
-                    o alturas de mora, el ajuste por concepto de los intereses de mora. 
-                    Estos campos de detalle moras deben admitir cualquier dato numérico 
-                    de máximo 16 dígitos, 14 enteros y dos decimales.</p></td>
-              </tr>
-            </table>
+        <p class="PARRAFO">Mediante esta opción el Sistema
+          <span>BankBú&reg;</span>
+          ofrece la funcionalidad que permite generar las diferentes
+          transacciones monetarias
+          requeridas para afectar los saldos de la obligación de un cliente,
+          las cuales pueden ser de naturaleza débito o crédito. Permite
+          compensar valores o saldos de una transacción, de una línea
+          de crédito, de una moneda o de una tarjeta. El campo Ajuste dirigido
+          a facilita la captura de los ajustes, pues al seleccionar de la lista
+          alguna
+          de las transacciones allí contenidas, se alimentan automáticamente
+          varios de los campos requeridos minimizando la labor y la ocurrencia
+          de errores.</p>
+        <p class="PARRAFO">El formulario cuenta con un wizard de dos pasos:</p>
+        <p class="TITLE"><img src="../img/CAF_011B.PNG"></p>
 
-        </section>
-    <script src="../js/menu.js"></script>
-</body>
-<div id="footerContainer"></div>
-<script>
+        <table>
+          <tr>
+            <td class="titletable"><p class="SUBTITULO">Número
+                tarjeta </p></td>
+            <td><p class="PARRAFO">Campo
+                en el que se registra el número de la tarjeta sobre la que se
+                realiza el ajuste monetario y cuyos saldos se verán afectados
+                una vez sea aplicada la transacción correspondiente.</p></td>
+          </tr>
+          <tr>
+            <td class="titletable"><p class="SUBTITULO">Tipo
+                de ajuste</p></td>
+            <td><p class="PARRAFO">Este
+                campo cuenta con lista de valores adjunta de la que debe
+                seleccionarse
+                entre Débito o Crédito la naturaleza que corresponda con
+                el ajuste monetario a realizar.</p>
+            </td>
+          </tr>
+          <tr>
+            <td class="titletable"><p class="SUBTITULO">Ajuste
+                dirigido a</p></td>
+            <td><p class="PARRAFO">Campo
+                que posee lista de valores de la cual debe seleccionarse entre
+                Ajuste
+                a transacción crédito, Ajustes saldos a favor, Crear transacción
+                original, o Ajuste a transacción débito; opciones que
+                aparecen total o parcialmente, dependiendo de la clase o
+                naturaleza
+                del ajuste y el objetivo de la afectación monetaria a
+                realizar.</p>
+              <p class="PARRAFO">Tipo de ajuste Crédito habilita las opciones:
+                (Crear transacción original, o Ajuste a transacción crédito).
+                Tipo de ajuste débito habilita (Crear transacción original,
+                Ajuste a transacción débito, Ajuste a transacción
+                crédito, y Ajuste saldo a favor).</p>
+            </td>
+          </tr>
+          <tr>
+            <td class="titletable"><p class="SUBTITULO">Moneda</p></td>
+            <td><p class="PARRAFO">En
+                este campo se selecciona de la lista de valores la <a
+                  href="NUH_005B.html">Moneda</a>
+                en que se denomina la transacción del ajuste.</p></td>
+          </tr>
+          <tr>
+            <td class="titletable"><p class="SUBTITULO">Sucursal</p></td>
+            <td><p class="PARRAFO">Campo
+                que posee lista de la cual se selecciona la <a
+                  href="NUH_020B.html">sucursal</a>
+                a través de la cual se gestiona el ajuste.</p></td>
+          </tr>
+          <tr>
+            <td class="titletable"><p class="SUBTITULO">Fecha
+                transacción </p></td>
+            <td><p class="PARRAFO">Contiene
+                la fecha en la cual se realizó la transacción o en caso
+                de la creación de un cargo no registrado, contiene la fecha
+                asociada
+                a la nueva transacción.</p></td>
+          </tr>
+        </table>
+
+        <p class="PARRAFO">Una vez ingresada esta información, al utilizar el
+          botón siguiente el sistema despliega el segundo formulario, mínimo
+          con los siguientes bloques de información: Detalle transacción
+          y Saldos transacción (Capital, Intereses, Moras y Saldo a favor).</p>
+        <p class="TITLE"><img src="../img/CAF_011B1.PNG"><img
+            src="../img/CAF_011B5.PNG"></p>
+
+        <p class="PARRAFO">El bloque Detalle de la transacción, debe desplegar
+          los campos dependiendo hacia qué va dirigido el ajuste. Si el ajuste
+          es crear una transacción original o va dirigido al saldo a favor de
+          la tarjeta, el sistema debe desplegar los campos Transacción a
+          aplicar,
+          Valor ajuste y referencia universal únicamente:</p>
+        <p class="PARRAFO">Si el ajuste es débito y va dirigido al saldo a favor
+          de la tarjeta, se deben desplegar además los campos Tipo y Número
+          de cuenta:</p>
+        <p class="TITLE"><img src="../img/CAF_011B1b.PNG"731">
+        </p>
+
+        <p class="PARRAFO">Si el ajuste es débito y es crear una
+          transacción original, se debe desplegar además, el campo Plazo.</p>
+        <p class="PARRAFO">Si el ajuste es débito, es crear una
+          transacción original y es una transacción cuyo concepto es Compra,
+          se debe desplegar además, el establecimiento. </p>
+        <p class="TITLE"><img src="../img/CAF_011B1a.PNG"776"></p>
+
+        <p class="PARRAFO">Si el ajuste va dirigido a otra transacción,
+          el sistema debe desplegar los campos Transacción a aplicar,
+          Transacción
+          tarjeta, Valor ajuste y Referencia universal: </p>
+        <p class="TITLE"><img src="../img/CAF_011B1.PNG"756" height="114"></p>
+
+        <p class="PARRAFO"><span class="SUBTITULO">Detalle transacción:</span>
+          Conjunto de campos que son tanto de salida como ingresables
+          dependiendo de
+          si se trata de un ajuste a una transacción existente o por el
+          contrario
+          a la creación de una transacción nueva.</p>
+        <table>
+          <tr>
+            <td class="titletable"><p class="SUBTITULO">Transacción
+                a aplicar</p></td>
+            <td><p class="PARRAFO">Campo
+                con lista de valores, que para el caso de transacciones de
+                naturaleza
+                débito despliega la secuencia o número que identifica
+                cada transacción que ha ingresado al sistema.</p></td>
+          </tr>
+          <tr>
+            <td class="titletable"><p class="SUBTITULO">Transacción
+                tarjeta </p></td>
+            <td><p class="PARRAFO">Este
+                campo posee lista de valores poblada mediante el movimiento
+                histórico
+                de las transacciones, filtrada por la clase o naturaleza del
+                ajuste.
+                Cuando se trata de afectar una transacción existente, la lista
+                despliega la información básica, suficiente y necesaria
+                que le permite al usuario ubicar exactamente la transacción a
+                afectar.</p></td>
+          </tr>
+          <tr>
+            <td class="titletable"><p class="SUBTITULO">Valor
+                ajuste </p></td>
+            <td><p class="PARRAFO">Este
+                campo despliega, en principio, el saldo que presente la
+                transacción
+                o en su defecto puede contener el monto que se desea ajustar o
+                el valor
+                de una nueva transacción cuando se desea crear ésta. Si
+                se trata de una ajuste a una transacción existente el monto se
+                descompondrá en los conceptos correspondientes.</p></td>
+          </tr>
+          <tr>
+            <td class="titletable"><p class="SUBTITULO">Establecimiento</p></td>
+            <td><p class="PARRAFO">Campo
+                que permite ingresar el código del establecimiento en donde se
+                realizó la transacción. Cuando se define que la moneda
+                de la transacción es pesos, el aplicativo validará la
+                información del establecimiento y si es correcto desplegará
+                el nombre asociado al código ingresado. Cuando se define una
+                moneda diferente a pesos el aplicativo no valida el código y
+                permite ingresar cualquier dato en este campo inclusive letras
+                hasta
+                un máximo de 11 caracteres.</p></td>
+          </tr>
+          <tr>
+            <td class="titletable"><p class="SUBTITULO">Plazo</p></td>
+            <td><p class="PARRAFO">Despliega
+                el número de periodos solicitados por el cliente o asignados
+                por el sistema sobre la transacción realizada o en caso de la
+                creación de un cargo no registrado, contiene el número
+                de periodos solicitados por el cliente para amortizar la nueva
+                transacción.</p></td>
+          </tr>
+          <tr>
+            <td class="titletable"><p class="SUBTITULO">Referencia
+                universal </p></td>
+            <td><p class="PARRAFO">Registra
+                la referencia universal asignada por el sistema a cada
+                transacción
+                registrada dentro del mismo, la que en adición a la secuencia,
+                permite identificar claramente cada una de las
+                transacciones.</p></td>
+          </tr>
+          <tr>
+            <td class="titletable"><p class="SUBTITULO">Tipo
+                cuenta </p></td>
+            <td><p class="PARRAFO">El
+                campo Tipo cuenta debe contener combo con los valores Ahorros,
+                Corriente
+                y Rotativo. Debe traer un valor diligenciado por defecto y
+                permitirle
+                al usuario dejarlo igual o modificarlo.
+              </p></td>
+          </tr>
+          <tr>
+            <td class="titletable"><p class="SUBTITULO">Número
+                cuenta </p></td>
+            <td><p class="PARRAFO">El
+                campo Número cuenta admite cualquier dato alfanumérico
+                de máximo 16 caracteres. Permite mayúsculas y minúsculas.
+              </p></td>
+          </tr>
+        </table>
+
+        <p class="PARRAFO"><span class="SUBTITULO">Saldos transacción:
+          </span> La información contenida en estos campos aplica exclusivamente
+          para las transacciones que ingresaron al sistema previamente, ilustra
+          el estado
+          actual de los saldos de la transacción por cada uno de los principales
+          conceptos.</p>
+        <p class="TITLE"><img src="../img/CAF_011B5.PNG"757" height="351"></p>
+        <table>
+          <tr>
+            <td class="titletable"><p class="SUBTITULO">Capital
+                no facturado </p></td>
+            <td><p class="PARRAFO">Campo
+                que ilustra el monto de los diferidos pendientes por cancelar
+                después
+                de efectuar el pago mínimo, los consumos o utilizaciones
+                realizados
+                después de la fecha de la última facturación y
+                los ajustes monetarios que incrementen el saldo tales como
+                reversiones
+                de pagos erróneamente aplicados, etc</p></td>
+          </tr>
+          <tr>
+            <td class="titletable"><p class="SUBTITULO">Capital
+                facturado </p></td>
+            <td><p class="PARRAFO">Indica
+                la porción de los diferidos a ser cubierta mediante el pago
+                mínimo.</p></td>
+          </tr>
+          <tr>
+            <td class="titletable"><p class="SUBTITULO">Saldo
+                interés corriente</p></td>
+            <td><p class="PARRAFO">Presenta
+                el monto resultante de la liquidación del beneficio esperado
+                por la entidad sobre el saldo del capital vigente.</p></td>
+          </tr>
+          <tr>
+            <td class="titletable"><p class="SUBTITULO">Saldo
+                interés mora</p></td>
+            <td><p class="PARRAFO">Se&ntilde;ala
+                el monto resultante de la liquidación del beneficio adicional
+                esperado por la entidad sobre el saldo del capital en
+                mora.</p></td>
+          </tr>
+          <tr>
+            <td class="titletable"><p class="SUBTITULO">Saldo
+                interés extracontable</p></td>
+            <td><p class="PARRAFO">Muestra
+                el monto resultante de la liquidación del beneficio esperado
+                por la entidad sobre el saldo del capital cuya altura de mora
+                supere
+                los 90 días.</p></td>
+          </tr>
+          <tr>
+            <td class="titletable"><p class="SUBTITULO">Mora
+                1 periodo ... Mora mayor a 12 periodos</p></td>
+            <td><p class="PARRAFO">Agrupación
+                de campos que ilustran el estado actual de los saldos de la
+                transacción
+                por este concepto, acorde con la altura de mora
+                correspondiente.</p></td>
+          </tr>
+        </table>
+
+        <p class="PARRAFO">Si el ajuste es dirigido a una transacción débito,
+          esta pantalla debe desplegar un bloque adicional con los Saldos de la
+          transacción
+          débito seleccionada por el actor.</p>
+        <p class="PARRAFO"> Si el ajuste es dirigido a una transacción
+          débito, en este bloque de los saldos de dicha transacción, el
+          sistema debe desplegar los campos: Capital facturado, Capital no
+          facturado,
+          Capital en mora del 1 al 12, Interés corriente, Interés de mora
+          e Interés extracontable, reflejando los saldos actuales de estos
+          conceptos
+          en la transacción a la cual se dirige el ajuste. Ninguno de los campos
+          debe permitir ser modificado</p>
+        <p class="TITLE"><img src="../img/CAF_011B2.PNG"><img
+            src="../img/CAF_011B4.PNG"><img src="../img/CAF_011B3.PNG"></p>
+
+        <p class="PARRAFO"><span class="SUBTITULO">Detalle moras transacción:
+          </span> Agrupación de campos que permiten distribuir el ajuste, por
+          este concepto, acorde con la altura de mora correspondiente. </p>
+        <p class="PARRAFO">Si el ajuste va dirigido al Capital en mora, se debe
+          desplegar el bloque Detalle moras transacción
+          con los campos desde Mora 1 Periodo, ... hasta Mora 11 Periodo y Mora
+          más 12 Periodos.</p>
+        <p class="TITLE"><img src="../img/CAF_011B6.PNG"></p>
+
+        <table>
+          <tr>
+            <td class="titletable"><p class="SUBTITULO">Mora
+                1 periodo ... Mora mayor a 12 periodos</p></td>
+            <td><p class="PARRAFO">Conjunto
+                de campos que permiten distribuir por cada uno de los diferentes
+                periodos
+                o alturas de mora, el ajuste por concepto de los intereses de
+                mora.
+                Estos campos de detalle moras deben admitir cualquier dato
+                numérico
+                de máximo 16 dígitos, 14 enteros y dos decimales.</p></td>
+          </tr>
+        </table>
+
+      </section>
+      <script src="../js/menu.js"></script>
+    </body>
+    <div id="footerContainer"></div>
+    <script>
   fetch('footer.html')
     .then(response => response.text())
     .then(html => {
       document.getElementById('footerContainer').innerHTML = html;
     });
 </script>
-</html>
+  </html>

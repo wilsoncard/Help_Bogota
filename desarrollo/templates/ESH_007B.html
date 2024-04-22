@@ -1,26 +1,26 @@
 <!DOCTYPE html>
 <html lang="es">
 
-<head>
+  <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>BANKBU®</title>
 
     <link rel="stylesheet" href="../css/pages.css">
     <link rel="stylesheet" href="../css/style.css">
- <link rel="icon" href="../img/ACQUIRER-logo.JPG" type="image/x-icon">
-</head>
+    <link rel="icon" href="../img/ACQUIRER-logo.JPG" type="image/x-icon">
+  </head>
 
-<body>
+  <body>
 
     <header>
-        <img class="logo" src="../img/logoBankbu_.PNG" alt="Logo de Mi Empresa">
-        <div id="menuBtn">
-            <img class="TITLE"  src= "../img/menu.PNG" alt="Botón de Menú ">
-        </div>
+      <img class="logo" src="../img/logoBankbu_.PNG" alt="Logo de Mi Empresa">
+      <div id="menuBtn">
+        <img class="TITLE" src="../img/menu.PNG" alt="Botón de Menú ">
+      </div>
     </header>
-      <div id="menuContainer"></div>
-  <script>
+    <div id="menuContainer"></div>
+    <script>
     fetch('menu.html')
       .then(response => response.text())
       .then(html => {
@@ -29,208 +29,289 @@
   </script>
 
     <section>
-        <div> 
-            
-                    <p  class="TITLE">Estadística depósito por 
-                      cadena</p>
-                    
-            <p class="PARRAFO">Mediante esta función la entidad conoce, mes a mes, 
-              el movimiento acumulado de los establecimientos afiliados, a partir de las 
-              diferentes cadenas en las que se encuentran agrupados.</p>
-            <p class="PARRAFO"><span class="SUBTITULO">Cadenas:</span>  Este primer formulario 
-              muestra la identificación correspondiente a las diferentes cadenas 
-              de comercio, definidas previamente por las franquicias. Este formulario cuanta 
-              con un filtro de búsqueda y la opción <a href="#Estadisticas">Estadísticas</a>.</p>
-            <p class="TITLE"><img src="../img/ESF_007B.PNG"></p>
-            
-            <table>
-              <tr> 
-                <td class="titletable"  ><p class="SUBTITULO"><span >Código</p></td>
-                <td><p class="PARRAFO">Despliega 
-                    el código asignado a cada una de las cadenas de comercios.</p></td>
-              </tr>
-              <tr> 
-                <td class="titletable"><p class="SUBTITULO"><span >Descripción</p></td>
-                <td><p class="PARRAFO">Contiene 
-                    el nombre de la cadena asociada al código anterior. </p></td>
+      <div>
+
+        <p class="TITLE">Estadística depósito por
+          cadena</p>
+
+        <p class="PARRAFO">Mediante esta función la entidad conoce, mes a mes,
+          el movimiento acumulado de los establecimientos afiliados, a partir de
+          las
+          diferentes cadenas en las que se encuentran agrupados.</p>
+        <p class="PARRAFO"><span class="SUBTITULO">Cadenas:</span> Este primer
+          formulario
+          muestra la identificación correspondiente a las diferentes cadenas
+          de comercio, definidas previamente por las franquicias. Este
+          formulario cuanta
+          con un filtro de búsqueda y la opción <a
+            href="#Estadisticas">Estadísticas</a>.</p>
+        <p class="TITLE"><img src="../img/ESF_007B.PNG"></p>
+
+        <table>
+          <tr>
+            <td class="titletable"><p class="SUBTITULO"><span>Código</p></td>
+              <td><p class="PARRAFO">Despliega
+                  el código asignado a cada una de las cadenas de
+                  comercios.</p></td>
+            </tr>
+            <tr>
+              <td class="titletable"><p
+                  class="SUBTITULO"><span>Descripción</p></td>
+                <td><p class="PARRAFO">Contiene
+                    el nombre de la cadena asociada al código anterior.
+                  </p></td>
               </tr>
             </table>
-            <p class="PARRAFO"><span class="SUBTITULO">Filtro:</span>  Se pueden realizar consultas a través 
+            <p class="PARRAFO"><span class="SUBTITULO">Filtro:</span> Se pueden
+              realizar consultas a través
               de la siguiente opción: </p>
             <p class="TITLE"><img src="../img/ESF_007B1.PNG"></p>
-            
+
             <table>
-              <tr> 
-                <td class="titletable"><p class="SUBTITULO"><span >Cadenas</p></td>
-                <td><p class="PARRAFO">El 
-                    campo código es numérico de hasta 3 dígitos. El 
-                    usuario también puede seleccionar la cadena invocando la lista 
-                    de valores contenida en el campo.
-                  </p></td>
-              </tr>
-            </table>
-            
-            
-            <p  class="PARRAFO"><span class="SUBTITULO"><a name="Estadisticas"></a>Estadísticas:</span>  
-              Conjunto de campos que muestran información correspondiente al movimiento 
-              específico de la cadena de comercios en determinado período 
-              de tiempo; los datos desplegados pertenecen al registro sobre el cual se encuentra 
-              ubicado el cursor en el bloque anterior. </p>
-            <p  class="PARRAFO">El formulario cuenta con un filtro para que 
-              el usuario pueda consultar las estadísticas para un a&ntilde;o y/o 
-              mes en particular. Adicionalmente cuenta con la opción <a href="#Otros_datos">Otros 
-              datos</a>.</p>
-            <p class="TITLE"><img src="../img/ESF_007B2.PNG"></p>
-            
-            <table>
-              <tr> 
-                <td class="titletable"><p class="SUBTITULO"><span >A&ntilde;o</p></td>
-                <td><p class="PARRAFO">Campo 
-                    de salida en el que se muestra el a&ntilde;o al cual hace referencia 
-                    la información.</p></td>
-              </tr>
-              <tr> 
-                <td class="titletable"><p class="SUBTITULO"><span >Mes</p></td>
-                <td><p class="PARRAFO">Muestra 
-                    el mes correspondiente al periodo de tiempo asociado a la información 
-                    presentada.</p></td>
-              </tr>
-              <tr> 
-                <td class="titletable"  ><p class="SUBTITULO"><span >Consignaciones</p></td>
-                <td><p class="PARRAFO">Indica 
-                    la cantidad de consignaciones realizadas por la cadena de comercios 
-                    en determinado tiempo. </p>
-                </td>
-              </tr>
-              <tr> 
-                <td class="titletable"><p class="SUBTITULO"><span >Comprobantes</p></td>
-                <td><p class="PARRAFO">Despliega 
-                    la cantidad de comprobantes consignados por la cadena de comercios en 
-                    determinado tiempo. </p></td>
-              </tr>
-              <tr> 
-                <td class="titletable"><p class="SUBTITULO"><span >Valor</p></td>
-                <td><p class="PARRAFO">Se&ntilde;ala 
-                    el monto total equivalente a las consignaciones realizadas por la cadena 
-                    de comercios en determinado período de tiempo. </p></td>
-              </tr>
-            </table>
-            <p  class="PARRAFO"><span class="SUBTITULO">Filtro:</span>  Se pueden 
-              realizar consultas a través de la siguiente opción: </p>
-            <p class="TITLE"><img src="../img/ESF_007B3.PNG"></p>
-            <table>
-              <tr> 
-                <td class="titletable"><p class="SUBTITULO"><span >A&ntilde;o</p></td>
-                <td><p class="PARRAFO">El 
-                    campo a&ntilde;o admite cualquier valor numérico de hasta 4 dígitos 
-                   
-                  </p></td>
-              </tr>
-              <tr> 
-                <td class="titletable"><p class="SUBTITULO"><span >Mes</p></td>
-                <td><p class="PARRAFO">El 
-                    campo mes admite cualquier valor numérico de hasta 2 dígitos
-                  </p></td>
-              </tr>
-            </table>
-           
-            <p class="PARRAFO"><span class="SUBTITULO"><a name="Otros_datos"></a>Otros datos:</span>  
-              En este espacio se muestra información adicional y con mayor detalle, 
-              de la cadena de comercio correspondiente al registro sobre el cual se encuentra 
-              ubicado el cursor. Adicionalmente, se puede consultar la información 
-              de Localización a través del globo ubicado en la parte 
-              superior derecha. </p>
-            <p class="TITLE"><img src="../img/ESF_007B4.PNG"></p>
-            
-            <table>
-              <tr> 
-                <td class="titletable"><p class="SUBTITULO"><span >Valor 
-                    ventas </p></td>
-                <td><p class="PARRAFO">Registra 
-                    el valor total de las ventas de la cadena de comercios que se está 
-                    consultando en determinado período de tiempo. </p></td>
-              </tr>
-              <tr> 
-                <td class="titletable"><p class="SUBTITULO"><span >Valor 
-                    propinas </p></td>
-                <td><p class="PARRAFO">Contiene 
-                    el valor total de las propinas que recibió la cadena de comercios 
-                    que se está consultando en determinado período de tiempo. 
-                  </p></td>
-              </tr>
-              <tr> 
-                <td class="titletable"  ><p class="SUBTITULO"><span >Valor 
-                    comisiones </p></td>
-                <td><p class="PARRAFO">Presenta 
-                    el valor total de las comisiones (porcentaje de descuento) practicadas 
-                    a la cadena de comercios que se está consultando en determinado 
-                    período de tiempo. </p></td>
-              </tr>
-              <tr> 
-                <td class="titletable"><p class="SUBTITULO"><span >Otros 
-                    cargos </p></td>
-                <td><p class="PARRAFO">Muestra 
-                    el valor total de notas débito efectuados a la cadena de comercios 
-                    que se está consultando en determinado período de tiempo. 
-                  </p></td>
-              </tr>
-              <tr> 
-                <td class="titletable"><p class="SUBTITULO"><span >Otros 
-                    abonos </p></td>
-                <td><p class="PARRAFO">Contiene 
-                    el valor total de notas crédito efectuados a la cadena de comercios 
-                    que se está consultando en determinado período de tiempo. 
-                  </p></td>
-              </tr>
-            </table>
-            
-            <p  class="SUBTITULO">Información de Localización:</p>
-            <p class="TITLE"><img src="../img/ESF_007B5.PNG"></p>
-            
-            <table>
-              <tr> 
-                <td class="titletable"><p class="SUBTITULO"><span >Valor 
-                    iva</p></td>
-                <td><p class="PARRAFO">Muestra 
-                    el valor del impuesto de valor agregado (IVA) correspondiente al movimiento 
-                    consignado por la cadena de establecimientos, por cada uno de los meses 
-                    en que se hayan generado las estadísticas correspondientes. </p></td>
-              </tr>
-              <tr> 
-                <td class="titletable"  ><p class="SUBTITULO"><span >Valor 
-                    reteiva</p></td>
-                <td><p class="PARRAFO">Informa 
-                    acerca del valor retenido a la cadena de establecimientos, y acumulado 
-                    por cada mes, sobre el impuesto del valor agregado, acorde con la legislación 
-                    vigente.</p></td>
-              </tr>
-              <tr> 
-                <td class="titletable"><p class="SUBTITULO"><span >Valor 
-                    retefuente</p></td>
-                <td><p class="PARRAFO">Despliega 
-                    el valor total de la retención en la fuente practicada a la cadena 
-                    de comercios que se está consultando en determinado período 
-                    de tiempo. </p></td>
-              </tr>
-              <tr> 
-                <td class="titletable"><p class="SUBTITULO"><span >Valor 
-                    reteica</p></td>
-                <td><p class="PARRAFO">Si 
-                    aplica, este campo se&ntilde;ala el valor retenido por concepto del 
-                    impuesto de industria y comercio (ICA), correspondiente al movimiento 
-                    consignado por la cadena de establecimientos, mes a mes. </p></td>
-              </tr>
-            </table>
-            
-        </section>
-    <script src="../js/menu.js"></script>
-</body>
-<div id="footerContainer"></div>
-<script>
+              <tr>
+                <td class="titletable"><p
+                    class="SUBTITULO"><span>Cadenas</p></td>
+                  <td><p class="PARRAFO">El
+                      campo código es numérico de hasta 3 dígitos. El
+                      usuario también puede seleccionar la cadena invocando la
+                      lista
+                      de valores contenida en el campo.
+                    </p></td>
+                </tr>
+              </table>
+
+              <p class="PARRAFO"><span class="SUBTITULO"><a
+                    name="Estadisticas"></a>Estadísticas:</span>
+                Conjunto de campos que muestran información correspondiente al
+                movimiento
+                específico de la cadena de comercios en determinado período
+                de tiempo; los datos desplegados pertenecen al registro sobre el
+                cual se encuentra
+                ubicado el cursor en el bloque anterior. </p>
+              <p class="PARRAFO">El formulario cuenta con un filtro para que
+                el usuario pueda consultar las estadísticas para un a&ntilde;o
+                y/o
+                mes en particular. Adicionalmente cuenta con la opción <a
+                  href="#Otros_datos">Otros
+                  datos</a>.</p>
+              <p class="TITLE"><img src="../img/ESF_007B2.PNG"></p>
+
+              <table>
+                <tr>
+                  <td class="titletable"><p
+                      class="SUBTITULO"><span>A&ntilde;o</p></td>
+                    <td><p class="PARRAFO">Campo
+                        de salida en el que se muestra el a&ntilde;o al cual
+                        hace referencia
+                        la información.</p></td>
+                  </tr>
+                  <tr>
+                    <td class="titletable"><p
+                        class="SUBTITULO"><span>Mes</p></td>
+                      <td><p class="PARRAFO">Muestra
+                          el mes correspondiente al periodo de tiempo asociado a
+                          la información
+                          presentada.</p></td>
+                    </tr>
+                    <tr>
+                      <td class="titletable"><p
+                          class="SUBTITULO"><span>Consignaciones</p></td>
+                        <td><p class="PARRAFO">Indica
+                            la cantidad de consignaciones realizadas por la
+                            cadena de comercios
+                            en determinado tiempo. </p>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td class="titletable"><p
+                            class="SUBTITULO"><span>Comprobantes</p></td>
+                          <td><p class="PARRAFO">Despliega
+                              la cantidad de comprobantes consignados por la
+                              cadena de comercios en
+                              determinado tiempo. </p></td>
+                        </tr>
+                        <tr>
+                          <td class="titletable"><p
+                              class="SUBTITULO"><span>Valor</p></td>
+                            <td><p class="PARRAFO">Se&ntilde;ala
+                                el monto total equivalente a las consignaciones
+                                realizadas por la cadena
+                                de comercios en determinado período de tiempo.
+                              </p></td>
+                          </tr>
+                        </table>
+                        <p class="PARRAFO"><span
+                            class="SUBTITULO">Filtro:</span> Se pueden
+                          realizar consultas a través de la siguiente opción:
+                        </p>
+                        <p class="TITLE"><img src="../img/ESF_007B3.PNG"></p>
+                        <table>
+                          <tr>
+                            <td class="titletable"><p
+                                class="SUBTITULO"><span>A&ntilde;o</p></td>
+                              <td><p class="PARRAFO">El
+                                  campo a&ntilde;o admite cualquier valor
+                                  numérico de hasta 4 dígitos
+
+                                </p></td>
+                            </tr>
+                            <tr>
+                              <td class="titletable"><p
+                                  class="SUBTITULO"><span>Mes</p></td>
+                                <td><p class="PARRAFO">El
+                                    campo mes admite cualquier valor numérico de
+                                    hasta 2 dígitos
+                                  </p></td>
+                              </tr>
+                            </table>
+
+                            <p class="PARRAFO"><span class="SUBTITULO"><a
+                                  name="Otros_datos"></a>Otros datos:</span>
+                              En este espacio se muestra información adicional y
+                              con mayor detalle,
+                              de la cadena de comercio correspondiente al
+                              registro sobre el cual se encuentra
+                              ubicado el cursor. Adicionalmente, se puede
+                              consultar la información
+                              de Localización a través del globo ubicado en la
+                              parte
+                              superior derecha. </p>
+                            <p class="TITLE"><img
+                                src="../img/ESF_007B4.PNG"></p>
+
+                            <table>
+                              <tr>
+                                <td class="titletable"><p
+                                    class="SUBTITULO"><span>Valor
+                                      ventas </p></td>
+                                  <td><p class="PARRAFO">Registra
+                                      el valor total de las ventas de la cadena
+                                      de comercios que se está
+                                      consultando en determinado período de
+                                      tiempo. </p></td>
+                                </tr>
+                                <tr>
+                                  <td class="titletable"><p
+                                      class="SUBTITULO"><span>Valor
+                                        propinas </p></td>
+                                    <td><p class="PARRAFO">Contiene
+                                        el valor total de las propinas que
+                                        recibió la cadena de comercios
+                                        que se está consultando en determinado
+                                        período de tiempo.
+                                      </p></td>
+                                  </tr>
+                                  <tr>
+                                    <td class="titletable"><p
+                                        class="SUBTITULO"><span>Valor
+                                          comisiones </p></td>
+                                      <td><p class="PARRAFO">Presenta
+                                          el valor total de las comisiones
+                                          (porcentaje de descuento) practicadas
+                                          a la cadena de comercios que se está
+                                          consultando en determinado
+                                          período de tiempo. </p></td>
+                                    </tr>
+                                    <tr>
+                                      <td class="titletable"><p
+                                          class="SUBTITULO"><span>Otros
+                                            cargos </p></td>
+                                        <td><p class="PARRAFO">Muestra
+                                            el valor total de notas débito
+                                            efectuados a la cadena de comercios
+                                            que se está consultando en
+                                            determinado período de tiempo.
+                                          </p></td>
+                                      </tr>
+                                      <tr>
+                                        <td class="titletable"><p
+                                            class="SUBTITULO"><span>Otros
+                                              abonos </p></td>
+                                          <td><p class="PARRAFO">Contiene
+                                              el valor total de notas crédito
+                                              efectuados a la cadena de
+                                              comercios
+                                              que se está consultando en
+                                              determinado período de tiempo.
+                                            </p></td>
+                                        </tr>
+                                      </table>
+
+                                      <p class="SUBTITULO">Información de
+                                        Localización:</p>
+                                      <p class="TITLE"><img
+                                          src="../img/ESF_007B5.PNG"></p>
+
+                                      <table>
+                                        <tr>
+                                          <td class="titletable"><p
+                                              class="SUBTITULO"><span>Valor
+                                                iva</p></td>
+                                            <td><p class="PARRAFO">Muestra
+                                                el valor del impuesto de valor
+                                                agregado (IVA) correspondiente
+                                                al movimiento
+                                                consignado por la cadena de
+                                                establecimientos, por cada uno
+                                                de los meses
+                                                en que se hayan generado las
+                                                estadísticas correspondientes.
+                                              </p></td>
+                                          </tr>
+                                          <tr>
+                                            <td class="titletable"><p
+                                                class="SUBTITULO"><span>Valor
+                                                  reteiva</p></td>
+                                              <td><p class="PARRAFO">Informa
+                                                  acerca del valor retenido a la
+                                                  cadena de establecimientos, y
+                                                  acumulado
+                                                  por cada mes, sobre el
+                                                  impuesto del valor agregado,
+                                                  acorde con la legislación
+                                                  vigente.</p></td>
+                                            </tr>
+                                            <tr>
+                                              <td class="titletable"><p
+                                                  class="SUBTITULO"><span>Valor
+                                                    retefuente</p></td>
+                                                <td><p class="PARRAFO">Despliega
+                                                    el valor total de la
+                                                    retención en la fuente
+                                                    practicada a la cadena
+                                                    de comercios que se está
+                                                    consultando en determinado
+                                                    período
+                                                    de tiempo. </p></td>
+                                              </tr>
+                                              <tr>
+                                                <td class="titletable"><p
+                                                    class="SUBTITULO"><span>Valor
+                                                      reteica</p></td>
+                                                  <td><p class="PARRAFO">Si
+                                                      aplica, este campo
+                                                      se&ntilde;ala el valor
+                                                      retenido por concepto del
+                                                      impuesto de industria y
+                                                      comercio (ICA),
+                                                      correspondiente al
+                                                      movimiento
+                                                      consignado por la cadena
+                                                      de establecimientos, mes a
+                                                      mes. </p></td>
+                                                </tr>
+                                              </table>
+
+                                            </section>
+                                            <script
+                                              src="../js/menu.js"></script>
+                                          </body>
+                                          <div id="footerContainer"></div>
+                                          <script>
   fetch('footer.html')
     .then(response => response.text())
     .then(html => {
       document.getElementById('footerContainer').innerHTML = html;
     });
 </script>
-</html>
+                                        </html>

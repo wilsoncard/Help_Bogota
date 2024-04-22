@@ -1,25 +1,25 @@
 <!DOCTYPE html>
 <html lang="es">
 
-<head>
+  <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>BANKBU®</title>
     <link rel="stylesheet" href="../css/pages.css">
     <link rel="stylesheet" href="../css/style.css">
- <link rel="icon" href="../img/ACQUIRER-logo.JPG" type="image/x-icon">
-</head>
+    <link rel="icon" href="../img/ACQUIRER-logo.JPG" type="image/x-icon">
+  </head>
 
-<body>
+  <body>
 
     <header>
-        <img class="logo" src="../img/logoBankbu_.PNG" alt="Logo de BANKBU®">
-        <div id="menuBtn">
-            <img class="TITLE"  src= "../img/menu.PNG" alt="Botón de Menú ">
-        </div>
+      <img class="logo" src="../img/logoBankbu_.PNG" alt="Logo de BANKBU®">
+      <div id="menuBtn">
+        <img class="TITLE" src="../img/menu.PNG" alt="Botón de Menú ">
+      </div>
     </header>
-      <div id="menuContainer"></div>
-  <script>
+    <div id="menuContainer"></div>
+    <script>
     fetch('menu.html')
       .then(response => response.text())
       .then(html => {
@@ -28,241 +28,361 @@
   </script>
 
     <section>
-        <div> 
-            
-                    <p  class="TITLE">Renovación masiva débito</p>
-                  
-            <p class="PARRAFO" >Mediante esta opción se efectúa 
-              el proceso que permite actualizar la fecha de vencimiento de las tarjetas 
-              seleccionadas por la entidad de acuerdo con los criterios ingresados.</p>
-            <p  class="PARRAFO">Al ingresar a la opción se despliega 
-              un formulario inicial que contiene las listas generadas por la entidad y que 
-              han sido utilizadas en los procesos anteriores de renovación.</p>
-            <p class="TITLE"><img src="../img/DBF_024E.PNG"></p>
+      <div>
 
-            <p  class="PARRAFO">El formulario contiene el hipervínculos 
-              <span ><a href="DBH_024B.html#BL_RESULTADOS" >Ver 
-              resultados</a></span>  que permite consultar las tarjetas incluidas en 
-              cada una de las listas de renovación de acuerdo con los criterios ingresados. 
-              Adicionalmente contiene las opciones Eliminar y Generar lista.</p>
-            <p  class="PARRAFO"><span class="SUBTITULO">Adicionar:</span> 
-              si el usuario invoca la opción Generar lista, se despliega 
-              un nuevo formulario con los siguientes campos.</p>
-            <p class="TITLE"><img src="../img/DBF_024E1.PNG"></p>
+        <p class="TITLE">Renovación masiva débito</p>
 
-            <p  class="TITLE">Descripción de campos</p>
-            <div> 
-              <table>
-                <tr> 
-                  <td class="titletable"><p class="SUBTITULO"><span >Nombre 
-                      lista </p></td>
-                  <td><p  class="PARRAFO">Campo 
-                      alfanumérico obligatorio en el que se registra el nombre con 
-                      el cual se va a identificar cada una de las listas de renovación 
-                      generadas por la entidad.</p></td>
-                </tr>
-                <tr> 
-                  <td class="titletable" > 
-                    <p class="SUBTITULO"><span >Descripción</p></td>
-                  <td><p  class="PARRAFO">En 
-                      este campo alfanumérico se ingresan datos relevantes que sirven 
-                      de complemento por ejemplo para la identificación de la lista 
-                      o para indicar algunas características propias de la misma.</p></td>
-                </tr>
-                <tr> 
-                  <td class="titletable"><p class="SUBTITULO"><span >Mes 
-                      de vencimiento</p></td>
-                  <td><p  class="PARRAFO">Campo 
-                      en el cual puede determinar si las tarjetas a incluir en la lista 
-                      de renovación son aquellas con fecha de vencimiento = ó 
-                      &lt;= al valor ingresado en el campo adjunto y que permite registrar 
-                      en formato YYYY-MM la fecha a tomar como referencia por el sistema, 
-                      de acuerdo con la condición seleccionada.</p></td>
-                </tr>
-                <tr> 
-                  <td class="titletable"><p class="SUBTITULO"><span >Periodos 
-                      atrás </p></td>
-                  <td><p  class="PARRAFO">Este 
-                      campo es complementario del campo anterior y solo se habilita si la 
-                      condición seleccionada es &lt;=. Permite indicarle al sistema 
-                      el número de meses anteriores a la fecha de vencimiento registrada 
-                      en el campo anterior que deben tener las tarjetas para ser incluidas 
-                      en la lista.</p></td>
-                </tr>
-                <tr> 
-                  <td class="titletable"><p class="SUBTITULO"><span >Mes 
-                      de vencimiento</p></td>
-                  <td><p  class="PARRAFO">Campo 
-                      en el cual puede determinar si las tarjetas a incluir en la lista 
-                      de renovación son aquellas con fecha de vencimiento = ó 
-                      &lt;= al valor ingresado en el campo adjunto y que permite registrar 
-                      en formato YYYY-MM la fecha a tomar como referencia por el sistema, 
-                      de acuerdo con la condición seleccionada.</p></td>
-                </tr>
-                <tr> 
-                  <td class="titletable"><p class="SUBTITULO"><span >Producto</p></td>
-                  <td><p  class="PARRAFO">En 
-                      este campo se selecciona si la condición a tener en cuenta 
-                      es que el producto al que pertenecen las tarjetas para incluirlas 
-                      en la lista sea = o &iexcl;= al <a href="DBH_018B.html" >producto 
-                      débito</a> seleccionado mediante la lista de valores. 
-                      Cuando se ha deicidido utilizar este campo como criterio, se inhabilitan 
-                      los campos Bin, segmento y grupo de afinidad.</p></td>
-                </tr>
-                <tr> 
-                  <td class="titletable"><p class="SUBTITULO"><span >Bin</p></td>
-                  <td><p  class="PARRAFO">Campo 
-                      en el que se indica si el bin asociado con el <a href="DBH_018B.html" >producto 
-                      débito</a> al que deben pertenecer las tarjetas para ser 
-                      incluidas en la lista tiene que ser = ó &iexcl;= al <a href="DBH_010B.html" >bin</a> 
-                      seleccionado de la lista de valores. 
-                      </span>Este campo solo se habilita 
-                      cuando en el campo Producto no se haya seleccionado ningún 
-                      valor.</p></td>
-                </tr>
-                <tr> 
-                  <td class="titletable"><p class="SUBTITULO"><span >Segmento</p></td>
-                  <td><p  class="PARRAFO">Este 
-                      campo permite se&ntilde;alar si el segmento asociado con el <a href="DBH_018B.html" >producto 
-                      débito</a> al que deben pertenecer las tarjetas para ser 
-                      incluidas en la lista tiene que ser = ó &iexcl;= al <a href="DBH_010B.html" >segmento</a> 
-                      seleccionado de la lista de valores. 
-                      </span>Este campo solo se habilita 
-                      cuando en el campo Producto no se haya seleccionado ningún 
-                      valor.</p></td>
-                </tr>
-                <tr> 
-                  <td class="titletable"><p class="SUBTITULO"><span >Grupo 
-                      de afinidad</p></td>
-                  <td><p  class="PARRAFO">Campo 
-                      en el que se indica si el grupo de afinidad asociado con el <a href="DBH_018B.html" >producto 
-                      débito</a> al que deben pertenecer las tarjetas para ser 
-                      incluidas en la lista tiene que ser = ó &iexcl;= al <a href="DBH_010B.html" >grupo 
-                      de afinidad</a> seleccionado de la lista de valores.<span > 
-                      </span><span >Este campo solo se habilita 
-                      cuando en el campo Producto no se haya seleccionado ningún 
-                      valor.</p></td>
-                </tr>
-                <tr> 
-                  <td class="titletable"><p class="SUBTITULO"><span >Sucursal</p></td>
-                  <td><p  class="PARRAFO">En 
-                      este campo se indica si las tarjetas a incluir en la lista son aquellas 
-                      cuya sucursal de radicación sea = ó &iexcl;= a la <a href="NUH_020B.html" >sucursal</a> 
-                      seleccionada por medio de la lista de valores.</p></td>
-                </tr>
-                <tr> 
-                  <td class="titletable"><p class="SUBTITULO"><span >Sucursales 
-                      dependientes</p></td>
-                  <td><p  class="PARRAFO">Si 
-                      en el campo anterior se ha seleccionado algún valor, mediante 
-                      este check se le indica al sistema si se deben incluir/excluir las 
-                      tarjetas pertenecientes a las sucursales que dependan de la que se 
-                      haya seleccionado.</p></td>
-                </tr>
-                <tr> 
-                  <td class="titletable"  ><p class="SUBTITULO"><span >Verifica 
-                      bloqueos </p></td>
-                  <td><p  class="PARRAFO">Campo 
-                      que se marca para indicar si el sistema debe evaluar que los <a href="CAH_002B.html" >bloqueos</a> 
-                      actuales de las tarjetas permitan la acción de renovación 
-                      para que éstas puedan ser incluidas en la lista.</p></td>
-                </tr>
-              </table>
-            </div>
-            <p  class="PARRAFO">Es importante aclarar que además de 
-              las condiciones se&ntilde;aladas en este formulario, el sistema evalúa 
-              si de acuerdo con los <a href="DBH_018B.html" >parámetros 
-              del producto</a>, en el formulario de eventos, bloque renovación 
-              el campo permite renovación masiva se encuentra marcado. En 
-              caso que el campo no esté marcado, así las tarjetas pertenecientes 
-              al producto cumplan con todas las condiciones para ser incluidas en la lista 
-              de renovación, ninguna de ellas será incluida.</p>
-            <p  class="PARRAFO">Adicionalmente al campo Lista que 
-              es el único obligatorio, por lo menos alguno de los otros campos contenidos 
-              en el formulario debe ser utilizado como criterio para que la lista se pueda 
-              generar.</p>
+        <p class="PARRAFO">Mediante esta opción se efectúa
+          el proceso que permite actualizar la fecha de vencimiento de las
+          tarjetas
+          seleccionadas por la entidad de acuerdo con los criterios
+          ingresados.</p>
+        <p class="PARRAFO">Al ingresar a la opción se despliega
+          un formulario inicial que contiene las listas generadas por la entidad
+          y que
+          han sido utilizadas en los procesos anteriores de renovación.</p>
+        <p class="TITLE"><img src="../img/DBF_024E.PNG"></p>
 
-            <p  class="PARRAFO"><a name="BL_RESULTADOS"></a><span class="SUBTITULO"><span >Ver 
-              resultados:</span></span><span > 
-              si el usuario selecciona una lista e invoca el hipervínculo Ver 
-              resultados , se despliega un wizard de dos pasos en el que se muestran 
-              todas las tarjetas que cumplieron con los criterios seleccionados al momento 
-              de generar la lista.</p>
-            <p  class="PARRAFO">La primera página del wizard contiene 
-              el botón especial <a href="DBH_024B.html#BL_RENOVAR" >renovar 
-              todas</a> que le permite al usuario efectuar el proceso de renovación 
-              para todas las tarjets contenidas en la lista; adicionalmente mediante la 
-              opción Eliminar el usuario puede retirar cualquiera de las tarjetas.</p>
-            <p class="TITLE"><img src="../img/DBF_024E2.PNG"676" height="483"></p>
+        <p class="PARRAFO">El formulario contiene el hipervínculos
+          <span><a href="DBH_024B.html#BL_RESULTADOS">Ver
+              resultados</a></span> que permite consultar las tarjetas incluidas
+          en
+          cada una de las listas de renovación de acuerdo con los criterios
+          ingresados.
+          Adicionalmente contiene los enlaces:Eliminar y Generar lista.</p>
+        <p class="PARRAFO"><span class="SUBTITULO">Adicionar:</span>
+          si el usuario invoca la opción Generar lista, se despliega
+          un nuevo formulario con los siguientes campos.</p>
+        <p class="TITLE"><img src="../img/DBF_024E1.PNG"></p>
 
-            <p  class="TITLE">Descripción de campos</p>
-            <div> 
-              <table>
-                <tr> 
-                  <td class="titletable"  ><p class="SUBTITULO"><span >Número 
-                      tarjeta</p></td>
-                  <td><p  class="PARRAFO">Campo 
-                      que muestra el número de cada una de las tarjetas que cumplieron 
-                      los criterios para ser incluidas en la lista de renovación.</p></td>
+        <p class="TITLE">Descripción de campos</p>
+        <div>
+          <table>
+            <tr>
+              <td class="titletable"><p class="SUBTITULO"><span>Nombre
+                    lista </p></td>
+                <td><p class="PARRAFO">Campo
+                    alfanumérico obligatorio en el que se registra el nombre con
+                    el cual se va a identificar cada una de las listas de
+                    renovación
+                    generadas por la entidad.</p></td>
+              </tr>
+              <tr>
+                <td class="titletable">
+                  <p class="SUBTITULO"><span>Descripción</p></td>
+                  <td><p class="PARRAFO">En
+                      este campo alfanumérico se ingresan datos relevantes que
+                      sirven
+                      de complemento por ejemplo para la identificación de la
+                      lista
+                      o para indicar algunas características propias de la
+                      misma.</p></td>
                 </tr>
-                <tr> 
-                  <td class="titletable"><p class="SUBTITULO"><span >Nombre 
-                      plástico</p></td>
-                  <td><p  class="PARRAFO">En 
-                      este campo se despliega el nombre actual del realce de cada una de 
-                      las tarjetas.</p></td>
-                </tr>
-                <tr> 
-                  <td class="titletable"><p class="SUBTITULO"><span >Fecha 
-                      vencimiento </p></td>
-                  <td><p  class="PARRAFO">Campo 
-                      que muestra en formato YYYY-MM-DD la fecha actual de vencimiento de 
-                      las tarjetas incluidas en la lista.</p></td>
-                </tr>
-                <tr> 
-                  <td class="titletable"><p class="SUBTITULO"><span >Renovada</p></td>
-                  <td><p  class="PARRAFO">En 
-                      este campo se indica para cada tarjetas Si o No 
-                      se le aplicó ya el proceso de renovación.</p></td>
-                </tr>
-                <tr> 
-                  <td class="titletable"><p class="SUBTITULO"><span >Renovar</p></td>
-                  <td><p  class="PARRAFO">Campo 
-                      que permite marcar las tarjetas a las cuales se les desea aplicar 
-                      el proceso de renovación, cuando éste no se desea aplicar 
-                      para todas las tarjetas de la lista.</p></td>
-                </tr>
-              </table>
-            </div>
-            
-            <p  class="PARRAFO">Después de haber seleccionado las tarjetas 
-              a renovar y al desplazarse a la segunda página del wizard mediante 
-              el botón de navegación, se muestra el resumen de los registros 
-              a renovar. El formulario cuenta con un check que permite marcar aquellas tarjetas 
-              que por alguna causa ya no se desea renovar y mediante el botón finalizar 
-              se efectúa el proceso respectivo. </p>
-            <p class="TITLE"><img src="../img/DBF_024E3.PNG"686" ></p>
+                <tr>
+                  <td class="titletable"><p class="SUBTITULO"><span>Mes
+                        de vencimiento</p></td>
+                    <td><p class="PARRAFO">Campo
+                        en el cual puede determinar si las tarjetas a incluir en
+                        la lista
+                        de renovación son aquellas con fecha de vencimiento = ó
+                        &lt;= al valor ingresado en el campo adjunto y que
+                        permite registrar
+                        en formato YYYY-MM la fecha a tomar como referencia por
+                        el sistema,
+                        de acuerdo con la condición seleccionada.</p></td>
+                  </tr>
+                  <tr>
+                    <td class="titletable"><p class="SUBTITULO"><span>Periodos
+                          atrás </p></td>
+                      <td><p class="PARRAFO">Este
+                          campo es complementario del campo anterior y solo se
+                          habilita si la
+                          condición seleccionada es &lt;=. Permite indicarle al
+                          sistema
+                          el número de meses anteriores a la fecha de
+                          vencimiento registrada
+                          en el campo anterior que deben tener las tarjetas para
+                          ser incluidas
+                          en la lista.</p></td>
+                    </tr>
+                    <tr>
+                      <td class="titletable"><p class="SUBTITULO"><span>Mes
+                            de vencimiento</p></td>
+                        <td><p class="PARRAFO">Campo
+                            en el cual puede determinar si las tarjetas a
+                            incluir en la lista
+                            de renovación son aquellas con fecha de vencimiento
+                            = ó
+                            &lt;= al valor ingresado en el campo adjunto y que
+                            permite registrar
+                            en formato YYYY-MM la fecha a tomar como referencia
+                            por el sistema,
+                            de acuerdo con la condición seleccionada.</p></td>
+                      </tr>
+                      <tr>
+                        <td class="titletable"><p
+                            class="SUBTITULO"><span>Producto</p></td>
+                          <td><p class="PARRAFO">En
+                              este campo se selecciona si la condición a tener
+                              en cuenta
+                              es que el producto al que pertenecen las tarjetas
+                              para incluirlas
+                              en la lista sea = o &iexcl;= al <a
+                                href="DBH_018B.html">producto
+                                débito</a> seleccionado mediante la lista de
+                              valores.
+                              Cuando se ha deicidido utilizar este campo como
+                              criterio, se inhabilitan
+                              los campos Bin, segmento y grupo de
+                              afinidad.</p></td>
+                        </tr>
+                        <tr>
+                          <td class="titletable"><p
+                              class="SUBTITULO"><span>Bin</p></td>
+                            <td><p class="PARRAFO">Campo
+                                en el que se indica si el bin asociado con el <a
+                                  href="DBH_018B.html">producto
+                                  débito</a> al que deben pertenecer las
+                                tarjetas para ser
+                                incluidas en la lista tiene que ser = ó &iexcl;=
+                                al <a href="DBH_010B.html">bin</a>
+                                seleccionado de la lista de valores.
+                              </span>Este campo solo se habilita
+                              cuando en el campo Producto no se haya
+                              seleccionado ningún
+                              valor.</p></td>
+                        </tr>
+                        <tr>
+                          <td class="titletable"><p
+                              class="SUBTITULO"><span>Segmento</p></td>
+                            <td><p class="PARRAFO">Este
+                                campo permite se&ntilde;alar si el segmento
+                                asociado con el <a href="DBH_018B.html">producto
+                                  débito</a> al que deben pertenecer las
+                                tarjetas para ser
+                                incluidas en la lista tiene que ser = ó &iexcl;=
+                                al <a href="DBH_010B.html">segmento</a>
+                                seleccionado de la lista de valores.
+                              </span>Este campo solo se habilita
+                              cuando en el campo Producto no se haya
+                              seleccionado ningún
+                              valor.</p></td>
+                        </tr>
+                        <tr>
+                          <td class="titletable"><p
+                              class="SUBTITULO"><span>Grupo
+                                de afinidad</p></td>
+                            <td><p class="PARRAFO">Campo
+                                en el que se indica si el grupo de afinidad
+                                asociado con el <a href="DBH_018B.html">producto
+                                  débito</a> al que deben pertenecer las
+                                tarjetas para ser
+                                incluidas en la lista tiene que ser = ó &iexcl;=
+                                al <a href="DBH_010B.html">grupo
+                                  de afinidad</a> seleccionado de la lista de
+                                valores.<span>
+                                </span><span>Este campo solo se habilita
+                                  cuando en el campo Producto no se haya
+                                  seleccionado ningún
+                                  valor.</p></td>
+                            </tr>
+                            <tr>
+                              <td class="titletable"><p
+                                  class="SUBTITULO"><span>Sucursal</p></td>
+                                <td><p class="PARRAFO">En
+                                    este campo se indica si las tarjetas a
+                                    incluir en la lista son aquellas
+                                    cuya sucursal de radicación sea = ó &iexcl;=
+                                    a la <a href="NUH_020B.html">sucursal</a>
+                                    seleccionada por medio de la lista de
+                                    valores.</p></td>
+                              </tr>
+                              <tr>
+                                <td class="titletable"><p
+                                    class="SUBTITULO"><span>Sucursales
+                                      dependientes</p></td>
+                                  <td><p class="PARRAFO">Si
+                                      en el campo anterior se ha seleccionado
+                                      algún valor, mediante
+                                      este check se le indica al sistema si se
+                                      deben incluir/excluir las
+                                      tarjetas pertenecientes a las sucursales
+                                      que dependan de la que se
+                                      haya seleccionado.</p></td>
+                                </tr>
+                                <tr>
+                                  <td class="titletable"><p
+                                      class="SUBTITULO"><span>Verifica
+                                        bloqueos </p></td>
+                                    <td><p class="PARRAFO">Campo
+                                        que se marca para indicar si el sistema
+                                        debe evaluar que los <a
+                                          href="CAH_002B.html">bloqueos</a>
+                                        actuales de las tarjetas permitan la
+                                        acción de renovación
+                                        para que éstas puedan ser incluidas en
+                                        la lista.</p></td>
+                                  </tr>
+                                </table>
+                              </div>
+                              <p class="PARRAFO">Es importante aclarar que
+                                además de
+                                las condiciones se&ntilde;aladas en este
+                                formulario, el sistema evalúa
+                                si de acuerdo con los <a
+                                  href="DBH_018B.html">parámetros
+                                  del producto</a>, en el formulario de eventos,
+                                bloque renovación
+                                el campo permite renovación masiva se encuentra
+                                marcado. En
+                                caso que el campo no esté marcado, así las
+                                tarjetas pertenecientes
+                                al producto cumplan con todas las condiciones
+                                para ser incluidas en la lista
+                                de renovación, ninguna de ellas será
+                                incluida.</p>
+                              <p class="PARRAFO">Adicionalmente al campo Lista
+                                que
+                                es el único obligatorio, por lo menos alguno de
+                                los otros campos contenidos
+                                en el formulario debe ser utilizado como
+                                criterio para que la lista se pueda
+                                generar.</p>
 
-            <p  class="PARRAFO"><a name="BL_RENOVAR"></a><span class="SUBTITULO"><span >Renovar 
-              todas:</span></span><span > 
-              si desde la primera página del wizard de resultados el usuario invoca 
-              el botón Renovar todas, el sistema ejecutará el proceso de renovación 
-              de todas las tarjetas contenidas en la lista para las cuales el indicador 
-              de estado mostrado en el campo Renovada sea No. Una vez 
-              que el proceso ha finalizado, las tarjetas quedan con estado Renovada = Si 
-              y se inhabilita el check Renovar.</p>
-            <p class="TITLE"><img src="../img/RENOV_TODAS_DB.PNG"35" height="33"></p>
-            
-            <div>
-            </section>
-    <script src="../js/menu.js"></script>
-</body>
-<div id="footerContainer"></div>
-<script>
+                              <p class="PARRAFO"><a
+                                  name="BL_RESULTADOS"></a><span
+                                  class="SUBTITULO"><span>Ver
+                                    resultados:</span></span><span>
+                                  si el usuario selecciona una lista e invoca el
+                                  hipervínculo Ver
+                                  resultados , se despliega un wizard de dos
+                                  pasos en el que se muestran
+                                  todas las tarjetas que cumplieron con los
+                                  criterios seleccionados al momento
+                                  de generar la lista.</p>
+                                <p class="PARRAFO">La primera página del wizard
+                                  contiene
+                                  el botón especial <a
+                                    href="DBH_024B.html#BL_RENOVAR">renovar
+                                    todas</a> que le permite al usuario efectuar
+                                  el proceso de renovación
+                                  para todas las tarjets contenidas en la lista;
+                                  adicionalmente mediante la
+                                  opción Eliminar el usuario puede retirar
+                                  cualquiera de las tarjetas.</p>
+                                <p class="TITLE"><img
+                                    src="../img/DBF_024E2.PNG"676"
+                                    height="483"></p>
+
+                                <p class="TITLE">Descripción de campos</p>
+                                <div>
+                                  <table>
+                                    <tr>
+                                      <td class="titletable"><p
+                                          class="SUBTITULO"><span>Número
+                                            tarjeta</p></td>
+                                        <td><p class="PARRAFO">Campo
+                                            que muestra el número de cada una de
+                                            las tarjetas que cumplieron
+                                            los criterios para ser incluidas en
+                                            la lista de renovación.</p></td>
+                                      </tr>
+                                      <tr>
+                                        <td class="titletable"><p
+                                            class="SUBTITULO"><span>Nombre
+                                              plástico</p></td>
+                                          <td><p class="PARRAFO">En
+                                              este campo se despliega el nombre
+                                              actual del realce de cada una de
+                                              las tarjetas.</p></td>
+                                        </tr>
+                                        <tr>
+                                          <td class="titletable"><p
+                                              class="SUBTITULO"><span>Fecha
+                                                vencimiento </p></td>
+                                            <td><p class="PARRAFO">Campo
+                                                que muestra en formato
+                                                YYYY-MM-DD la fecha actual de
+                                                vencimiento de
+                                                las tarjetas incluidas en la
+                                                lista.</p></td>
+                                          </tr>
+                                          <tr>
+                                            <td class="titletable"><p
+                                                class="SUBTITULO"><span>Renovada</p></td>
+                                              <td><p class="PARRAFO">En
+                                                  este campo se indica para cada
+                                                  tarjetas Si o No
+                                                  se le aplicó ya el proceso de
+                                                  renovación.</p></td>
+                                            </tr>
+                                            <tr>
+                                              <td class="titletable"><p
+                                                  class="SUBTITULO"><span>Renovar</p></td>
+                                                <td><p class="PARRAFO">Campo
+                                                    que permite marcar las
+                                                    tarjetas a las cuales se les
+                                                    desea aplicar
+                                                    el proceso de renovación,
+                                                    cuando éste no se desea
+                                                    aplicar
+                                                    para todas las tarjetas de
+                                                    la lista.</p></td>
+                                              </tr>
+                                            </table>
+                                          </div>
+
+                                          <p class="PARRAFO">Después de haber
+                                            seleccionado las tarjetas
+                                            a renovar y al desplazarse a la
+                                            segunda página del wizard mediante
+                                            el botón de navegación, se muestra
+                                            el resumen de los registros
+                                            a renovar. El formulario cuenta con
+                                            un check que permite marcar aquellas
+                                            tarjetas
+                                            que por alguna causa ya no se desea
+                                            renovar y mediante el botón
+                                            finalizar
+                                            se efectúa el proceso respectivo.
+                                          </p>
+                                          <p class="TITLE"><img
+                                              src="../img/DBF_024E3.PNG"686"></p>
+
+                                          <p class="PARRAFO"><a
+                                              name="BL_RENOVAR"></a><span
+                                              class="SUBTITULO"><span>Renovar
+                                                todas:</span></span><span>
+                                              si desde la primera página del
+                                              wizard de resultados el usuario
+                                              invoca
+                                              el botón Renovar todas, el sistema
+                                              ejecutará el proceso de renovación
+                                              de todas las tarjetas contenidas
+                                              en la lista para las cuales el
+                                              indicador
+                                              de estado mostrado en el campo
+                                              Renovada sea No. Una vez
+                                              que el proceso ha finalizado, las
+                                              tarjetas quedan con estado
+                                              Renovada = Si
+                                              y se inhabilita el check
+                                              Renovar.</p>
+                                            <p class="TITLE"><img
+                                                src="../img/RENOV_TODAS_DB.PNG"35"
+                                                height="33"></p>
+
+                                            <div>
+                                            </section>
+                                            <script
+                                              src="../js/menu.js"></script>
+                                          </body>
+                                          <div id="footerContainer"></div>
+                                          <script>
   fetch('footer.html')
     .then(response => response.text())
     .then(html => {
       document.getElementById('footerContainer').innerHTML = html;
     });
 </script>
-</html>
+                                        </html>

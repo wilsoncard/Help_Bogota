@@ -1,25 +1,25 @@
 <!DOCTYPE html>
 <html lang="es">
 
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>BANKBU®</title>
-  <link rel="stylesheet" href="../css/pages.css">
-  <link rel="stylesheet" href="../css/style.css">
-  <link rel="icon" href="../img/ACQUIRER-logo.JPG" type="image/x-icon">
-</head>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BANKBU®</title>
+    <link rel="stylesheet" href="../css/pages.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="icon" href="../img/ACQUIRER-logo.JPG" type="image/x-icon">
+  </head>
 
-<body>
+  <body>
 
-  <header>
-    <img class="logo" src="../img/logoBankbu_.PNG" alt="Logo de Mi Empresa">
-    <div id="menuBtn">
-      <img class="TITLE" src="../img/menu.PNG" alt="Botón de Menú ">
-    </div>
-  </header>
+    <header>
+      <img class="logo" src="../img/logoBankbu_.PNG" alt="Logo de Mi Empresa">
+      <div id="menuBtn">
+        <img class="TITLE" src="../img/menu.PNG" alt="Botón de Menú ">
+      </div>
+    </header>
     <div id="menuContainer"></div>
-  <script>
+    <script>
     fetch('menu.html')
       .then(response => response.text())
       .then(html => {
@@ -27,84 +27,102 @@
       });
   </script>
 
-  <section>
-    <div>
-      
-              <p class="TITLE">Canales</p>
+    <section>
+      <div>
 
-      <p class="PARRAFO">Mediante esta opción se habilita la consulta y mantenimiento de la tabla en la cual se
-        almacenan los canales o medios que se encuentran habilitados y que son utilizados por los tarjeta-habientes para
-        realizar operaciones de pagos y consultas. Cada canal contiene un código, una descripción y un
-        horario hábil de funcionamiento.
-        El formulario contiene las opciones adicionar, actualizar, eliminar y el link &ldquo;Transacciones asociadas al
-        canal&rdquo;. Adicionalmente contiene un filtro que le permite al usuario consultar información de
-        canales, de acuerdo a un código y/o descripción ingresados.</p>
-      <p class="TITLE"><img src="../img/CHH_003B.PNG"></p>
-      <table width="711">
-        <tr>
-          <td class="titletable"><span class="SUBTITULO">Código: </span></td>
-          <td>
-            <p class="PARRAFO">Campo numérico de 3 posiciones, que corresponde al identificador del canal.</p>
-          </td>
-        </tr>
-        <tr>
-          <td class="PARRAFO">Descripción: </span></td>
-          <td class="PARRAFO">Campo alfanumérico que corresponde al nombre del canal.</td>
+        <p class="TITLE">Canales</p>
+
+        <p class="PARRAFO">Mediante esta opción se habilita la consulta y
+          mantenimiento de la tabla en la cual se
+          almacenan los canales o medios que se encuentran habilitados y que son
+          utilizados por los tarjeta-habientes para
+          realizar operaciones de pagos y consultas. Cada canal contiene un
+          código, una descripción y un
+          horario hábil de funcionamiento.
+          El formulario contiene los enlaces: Adicionar, Actualizar, Eliminar y
+          el link &ldquo;Transacciones asociadas al
+          canal&rdquo;. Adicionalmente contiene un filtro que le permite al
+          usuario consultar información de
+          canales, de acuerdo a un código y/o descripción ingresados.</p>
+        <p class="TITLE"><img src="../img/CHH_003B.PNG"></p>
+        <table width="711">
+          <tr>
+            <td class="titletable"><span class="SUBTITULO">Código: </span></td>
+            <td>
+              <p class="PARRAFO">Campo numérico de 3 posiciones, que corresponde
+                al identificador del canal.</p>
+            </td>
+          </tr>
+          <tr>
+            <td class="PARRAFO">Descripción: </span></td>
+          <td class="PARRAFO">Campo alfanumérico que corresponde al nombre del
+            canal.</td>
         </tr>
       </table>
-      <p class="PARRAFO">Adicionar:si el usuario invoca la opción adicionar se despliega el
-        siguiente formulario:</p>
+      <p class="PARRAFO"><span class="SUBTITULO"></span>Adicionar:</span> Al activar ese enlace se despliega un formulario:<span></p>
       <p class="none"><img src="../img/CHH_003B1.PNG"></p>
       <table>
         <tr>
           <td class="titletable"><span class="SUBTITULO"> Código: </span></td>
           <td>
-            <p class="PARRAFO">Campo numérico de 3 posiciones, obligatorio, que corresponde al identificador del canal.</p>
+            <p class="PARRAFO">Campo numérico de 3 posiciones, obligatorio, que
+              corresponde al identificador del canal.</p>
           </td>
         </tr>
         <tr>
-          <td class="titletable"><span class="SUBTITULO"> Descripción: </span></td>
-          <td class="PARRAFO">En este campo alfanumérico de 80 posiciones, obligatorio, se registra el nombre del
+          <td class="titletable"><span class="SUBTITULO"> Descripción:
+            </span></td>
+          <td class="PARRAFO">En este campo alfanumérico de 80 posiciones,
+            obligatorio, se registra el nombre del
             canal. Ejemplo: Internet, Datafono.</td>
         </tr>
         <tr>
           <td class="SUBTITULO">Horario hábil de funcionamiento:</td>
-          <td class="PARRAFO">Campo alfanumérico de 22 posiciones, no obligatorio, que describe el horario de
+          <td class="PARRAFO">Campo alfanumérico de 22 posiciones, no
+            obligatorio, que describe el horario de
             funcionamiento del canal.</td>
         </tr>
       </table>
-      <p class="PARRAFO">Actualizar:Si el usuario invoca la opción Actualizar se despliega el
+      <p class="PARRAFO">Actualizar: Al activar ese enlace  se
+        despliega el
         siguiente formulario:</p>
       <p class="none"><img src="../img/CHH_003B2.PNG"></p>
       <p class="PARRAFO">El campo código no se puede modificar.</p>
-      <p class="PARRAFO">Transacciones asociadas al canal:Si el usuario invoca la opción
-        Transacciones asociadas al canal se despliega el siguiente formulario:</p>
+      <p class="PARRAFO">Transacciones asociadas al canal:Si el usuario invoca
+        la opción
+        Transacciones asociadas al canal se despliega el siguiente
+        formulario:</p>
       <p class="TITLE"><img src="../img/CHH_003B3.PNG"></p>
-      <p class="PARRAFO">Mediante esta opción se habilita la consulta de transacciones financieras y no
-        financieras asociadas al canal o medio permitido seleccionado. Esta pantalla permite ver la información
-        correspondiente al Canal y a las transacciones. Cada transacción contiene un Nombre de
-          Transacción, un Tipo, un Indicador de Soporte por el autorizador y un indicador
+      <p class="PARRAFO">Mediante esta opción se habilita la consulta de
+        transacciones financieras y no
+        financieras asociadas al canal o medio permitido seleccionado. Esta
+        pantalla permite ver la información
+        correspondiente al Canal y a las transacciones. Cada transacción
+        contiene un Nombre de
+        Transacción, un Tipo, un Indicador de Soporte por el autorizador y un
+        indicador
         de reversión. </p>
-      <p class="PARRAFO">El formulario contiene las opciones adicionar y eliminar.</p>
+      <p class="PARRAFO">El formulario contiene los enlaces: Adicionar y
+        Eliminar.</p>
 
-      <p class="PARRAFO">Adicionar:si el usuario invoca la opción adicionar se despliega el
-        siguiente formulario:</p>
+      <p class="PARRAFO"><span class="SUBTITULO">Adicionar:</span> Al activar ese enlace se despliega un formulario:<span></p>
       <p class="none"><img src="../img/CHH_003B4.PNG"></p>
       <table>
 
         <tr>
           <td class="PARRAFO">Transacción:</td>
-          <td class="PARRAFO">Campo obligatorio con lista de valores de la cuál se selecciona la
+          <td class="PARRAFO">Campo obligatorio con lista de valores de la cuál
+            se selecciona la
             transacción que va a ser asociada al canal.</td>
         </tr>
       </table>
       <div>
 
-  </section>
-  <script src="../js/menu.js"></script>
-</body>
-<div id="footerContainer"></div>
-<script>
+      </section>
+      <script src="../js/menu.js"></script>
+    </body>
+    <div id="footerContainer"></div>
+    <script>
   fetch('footer.html')
     .then(response => response.text())
     .then(html => {
@@ -112,4 +130,4 @@
     });
 </script>
 
-</html>
+  </html>

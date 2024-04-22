@@ -1,26 +1,26 @@
 <!DOCTYPE html>
 <html lang="es">
 
-<head>
+  <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>BANKBU®</title>
-  
+
     <link rel="stylesheet" href="../css/pages.css">
     <link rel="stylesheet" href="../css/style.css">
- <link rel="icon" href="../img/ACQUIRER-logo.JPG" type="image/x-icon">
-</head>
+    <link rel="icon" href="../img/ACQUIRER-logo.JPG" type="image/x-icon">
+  </head>
 
-<body>
+  <body>
 
     <header>
-        <img class="logo" src="../img/logoBankbu_.PNG" alt="Logo de Mi Empresa">
-        <div id="menuBtn">
-            <img class="TITLE"  src= "../img/menu.PNG" alt="Botón de Menú ">
-        </div>
+      <img class="logo" src="../img/logoBankbu_.PNG" alt="Logo de Mi Empresa">
+      <div id="menuBtn">
+        <img class="TITLE" src="../img/menu.PNG" alt="Botón de Menú ">
+      </div>
     </header>
-      <div id="menuContainer"></div>
-  <script>
+    <div id="menuContainer"></div>
+    <script>
     fetch('menu.html')
       .then(response => response.text())
       .then(html => {
@@ -29,130 +29,158 @@
   </script>
 
     <section>
-        <div> 
-            
-                    <p  class="TITLE">Consulta de clientes </p>
-                  
-            <p  class="PARRAFO">Este formulario le permite a la entidad realizar 
-              la búsqueda de un cliente o una tarjeta débito en la base de 
-              datos y permite la consulta por el tipo y número de identificación, 
-              por uno o los dos nombres o apellidos, o por un número de tarjeta en 
-              particular.</p>
-            <p  class="PARRAFO">La opción está compuesta por 
-              un filtro donde el usuario ingresa los criterios desados y como resultado 
-              el sistema le muestra todos los registros de clientes coincidentes con la 
-              búsqueda efectuada.</p>
-            <p class="TITLE"><img src="../img/DBF_036E.PNG"></p>
-            <p  class="TITLE">Descripción de campos</p>
-            <table>
-              <tr> 
-                <td class="titletable"  ><p class="SUBTITULO"><span > 
-                    Identificación</p></td>
-                <td><p  class="PARRAFO">Radio 
-                    button en el cual se le indica al sistema que la búsqueda se 
-                    va a efectuar para un tipo y número de documento de identificación 
-                    en particular. Por defecto, al ingresar al formulario es la opción 
-                    seleccionada.
-                  </p></td>
-              </tr>
+      <div>
 
-              <tr> 
-                <td class="titletable"  ><p class="SUBTITULO"><span >Tipo</p>
-                  </td>
-                <td><p  class="PARRAFO">En 
-                    este campo campo tipo combo el usuario puede seleccionar el <a href="NUH_008B.html" >tipo 
-                    de documento</a> asociado con el cliente que se desea consultar 
+        <p class="TITLE">Consulta de clientes </p>
+
+        <p class="PARRAFO">Este formulario le permite a la entidad realizar
+          la búsqueda de un cliente o una tarjeta débito en la base de
+          datos y permite la consulta por el tipo y número de identificación,
+          por uno o los dos nombres o apellidos, o por un número de tarjeta en
+          particular.</p>
+        <p class="PARRAFO">La opción está compuesta por
+          un filtro donde el usuario ingresa los criterios desados y como
+          resultado
+          el sistema le muestra todos los registros de clientes coincidentes con
+          la
+          búsqueda efectuada.</p>
+        <p class="TITLE"><img src="../img/DBF_036E.PNG"></p>
+        <p class="TITLE">Descripción de campos</p>
+        <table>
+          <tr>
+            <td class="titletable"><p class="SUBTITULO"><span>
+                  Identificación</p></td>
+              <td><p class="PARRAFO">Radio
+                  button en el cual se le indica al sistema que la búsqueda se
+                  va a efectuar para un tipo y número de documento de
+                  identificación
+                  en particular. Por defecto, al ingresar al formulario es la
+                  opción
+                  seleccionada.
+                </p></td>
+            </tr>
+
+            <tr>
+              <td class="titletable"><p class="SUBTITULO"><span>Tipo</p>
+                </td>
+                <td><p class="PARRAFO">En
+                    este campo campo tipo combo el usuario puede seleccionar el
+                    <a href="NUH_008B.html">tipo
+                      de documento</a> asociado con el cliente que se desea
+                    consultar
                     en la base de datos.</p></td>
               </tr>
 
-              <tr> 
-                <td class="titletable"  ><p class="SUBTITULO"><span >Número</p></td>
-                <td><p  class="PARRAFO">Campo 
-                    alfanumérico de 16 posiciones, en el que se ingresa el número 
-                    asociado al documento seleccionado en el campo anterior.
-                  </p>
+              <tr>
+                <td class="titletable"><p
+                    class="SUBTITULO"><span>Número</p></td>
+                  <td><p class="PARRAFO">Campo
+                      alfanumérico de 16 posiciones, en el que se ingresa el
+                      número
+                      asociado al documento seleccionado en el campo anterior.
+                    </p>
                   </td>
-              </tr>
+                </tr>
 
-              <tr> 
-                <td class="titletable"  ><p class="SUBTITULO"><span > 
-                    Nombre</p></td>
-                <td><p  class="PARRAFO">En 
-                    caso que la búsqueda se desee efectuar con base en el nombre 
-                    y/o apellidos del cliente, en esta radio button se marca para indicarle 
-                    al sistema el tipo de consulta que se requiere hacer.
-                  </p></td>
-              </tr>
+                <tr>
+                  <td class="titletable"><p class="SUBTITULO"><span>
+                        Nombre</p></td>
+                    <td><p class="PARRAFO">En
+                        caso que la búsqueda se desee efectuar con base en el
+                        nombre
+                        y/o apellidos del cliente, en esta radio button se marca
+                        para indicarle
+                        al sistema el tipo de consulta que se requiere hacer.
+                      </p></td>
+                  </tr>
 
-              <tr> 
-                <td class="titletable"  ><p class="SUBTITULO"><span > 
-                    1er Nombre</p></td>
-                <td><p  class="PARRAFO">Campo 
-                    alfanumérico de 60 posiciones, no obligatorio, en el cual se 
-                    ingresa el primer nombre del cliente personasnatural o la razón 
-                    social de la persona jurídica para la cual se desea consultar 
-                    la información.</p></td>
-              </tr>
+                  <tr>
+                    <td class="titletable"><p class="SUBTITULO"><span>
+                          1er Nombre</p></td>
+                      <td><p class="PARRAFO">Campo
+                          alfanumérico de 60 posiciones, no obligatorio, en el
+                          cual se
+                          ingresa el primer nombre del cliente personasnatural o
+                          la razón
+                          social de la persona jurídica para la cual se desea
+                          consultar
+                          la información.</p></td>
+                    </tr>
 
-              <tr> 
-                <td class="titletable"  ><p class="SUBTITULO"><span > 
-                    2do Nombre</p></td>
-                <td><p  class="PARRAFO">En 
-                    este campo alfanumérico de 25 posiciones, no obligatorio, se 
-                    registra el segundo nombre correspondiente al cliente persona natural 
-                    para el que se desea efectuar la consulta.
-                  </p></td>
-              </tr>
+                    <tr>
+                      <td class="titletable"><p class="SUBTITULO"><span>
+                            2do Nombre</p></td>
+                        <td><p class="PARRAFO">En
+                            este campo alfanumérico de 25 posiciones, no
+                            obligatorio, se
+                            registra el segundo nombre correspondiente al
+                            cliente persona natural
+                            para el que se desea efectuar la consulta.
+                          </p></td>
+                      </tr>
 
-              <tr> 
-                <td class="titletable"  ><p class="SUBTITULO"><span > 
-                    1er Apellido</p></td>
-                <td><p  class="PARRAFO">Campo 
-                    alfanumérico de 20 posiciones, no obligatorio, en el cual se 
-                    ingresa el primer apellido del cliente para el cual se desea efectuar 
-                    la búsqueda en la base de datos.
-                  </p></td>
-              </tr>
+                      <tr>
+                        <td class="titletable"><p class="SUBTITULO"><span>
+                              1er Apellido</p></td>
+                          <td><p class="PARRAFO">Campo
+                              alfanumérico de 20 posiciones, no obligatorio, en
+                              el cual se
+                              ingresa el primer apellido del cliente para el
+                              cual se desea efectuar
+                              la búsqueda en la base de datos.
+                            </p></td>
+                        </tr>
 
-              <tr> 
-                <td class="titletable"  ><p class="SUBTITULO"><span > 
-                    2do Apellido</p></td>
-                <td><p  class="PARRAFO">Este 
-                    campo alfanumérico de 20 posiciones, no obligatorio, permite 
-                    consultar en la base de datos a partir del segundo apellido del cliente 
-                    cuando este es una persona natural. </p></td>
-              </tr>
+                        <tr>
+                          <td class="titletable"><p class="SUBTITULO"><span>
+                                2do Apellido</p></td>
+                            <td><p class="PARRAFO">Este
+                                campo alfanumérico de 20 posiciones, no
+                                obligatorio, permite
+                                consultar en la base de datos a partir del
+                                segundo apellido del cliente
+                                cuando este es una persona natural. </p></td>
+                          </tr>
 
-              <tr> 
-                <td class="titletable"  ><p class="SUBTITULO"><span > 
-                    Tarjeta</p></td>
-                <td><p  class="PARRAFO">Campo 
-                    alfanumérico de 23 posiciones, no obligatorio, en el cual se 
-                    ingresa el número de tarjeta que se desea consultar.</p>
-                  </td>
-              </tr>
-            </table>
+                          <tr>
+                            <td class="titletable"><p class="SUBTITULO"><span>
+                                  Tarjeta</p></td>
+                              <td><p class="PARRAFO">Campo
+                                  alfanumérico de 23 posiciones, no obligatorio,
+                                  en el cual se
+                                  ingresa el número de tarjeta que se desea
+                                  consultar.</p>
+                              </td>
+                            </tr>
+                          </table>
 
-            <p  class="PARRAFO">Una vez que se han ingresado los datos requeridos, 
-              el sistema trae un nuevo formulario en el cual se muestran todos aquellos 
-              registros de la base de datos que coinciden con los criterios seleccionados. 
-              En el formulario de resultados el campo <a href="SCH_002B.html" >número 
-              identificación</a> contiene un hipervínculo que invoca 
-              el formulario con los datos de un cliente en particular y el número 
-              de tarjeta un hipervínculo que trae el <a href="DBH_001B.html" >detalle</a> 
-              de la misma</p>
-            <p class="TITLE"><img src="../img/DBF_036E1.PNG"></p>
-            
-            <div>
-            </section>
-    <script src="../js/menu.js"></script>
-</body>
-<div id="footerContainer"></div>
-<script>
+                          <p class="PARRAFO">Una vez que se han ingresado los
+                            datos requeridos,
+                            el sistema trae un nuevo formulario en el cual se
+                            muestran todos aquellos
+                            registros de la base de datos que coinciden con los
+                            criterios seleccionados.
+                            En el formulario de resultados el campo <a
+                              href="SCH_002B.html">número
+                              identificación</a> contiene un hipervínculo que
+                            invoca
+                            el formulario con los datos de un cliente en
+                            particular y el número
+                            de tarjeta un hipervínculo que trae el <a
+                              href="DBH_001B.html">detalle</a>
+                            de la misma</p>
+                          <p class="TITLE"><img src="../img/DBF_036E1.PNG"></p>
+
+                          <div>
+                          </section>
+                          <script src="../js/menu.js"></script>
+                        </body>
+                        <div id="footerContainer"></div>
+                        <script>
   fetch('footer.html')
     .then(response => response.text())
     .then(html => {
       document.getElementById('footerContainer').innerHTML = html;
     });
 </script>
-</html>
+                      </html>

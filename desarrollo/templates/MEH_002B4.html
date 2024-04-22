@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="es">
 
-<head>
+  <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>BANKBU®</title>
@@ -9,18 +9,18 @@
     <link rel="stylesheet" href="../css/pages.css">
     <link rel="stylesheet" href="../css/style.css">
     <link rel="icon" href="../img/ACQUIRER-logo.JPG" type="image/x-icon">
-</head>
+  </head>
 
-<body>
+  <body>
 
     <header>
-        <img class="logo" src="../img/logoBankbu_.PNG" alt="Logo de Mi Empresa">
-        <div id="menuBtn">
-            <img class="TITLE" src="../img/menu.PNG" alt="Botón de Menú ">
-        </div>
+      <img class="logo" src="../img/logoBankbu_.PNG" alt="Logo de Mi Empresa">
+      <div id="menuBtn">
+        <img class="TITLE" src="../img/menu.PNG" alt="Botón de Menú ">
+      </div>
     </header>
-      <div id="menuContainer"></div>
-  <script>
+    <div id="menuContainer"></div>
+    <script>
     fetch('menu.html')
       .then(response => response.text())
       .then(html => {
@@ -30,56 +30,65 @@
 
     <section>
 
-        <div <table>
+      <div>
 
-            <p class="TITLE">Definición de productos - Otros plásticos</p>
+        <p class="TITLE">Definición de productos - Otros plásticos</p>
+        <p class="PARRAFO">Esta opción que se invoca desde el formulario <a
+            href="MEH_002B.html">Definición de productos</a>, le permite a la
+          entidad adicionar o
+          modificar la información correspondiente a plásticos adicionales que
+          deben ser realzados y
+          entregados al cliente conjuntamente con su tarjeta de crédito.</p>
+        <p class="TITLE"><img src="../img/MEF_002E33.PNG"></p>
 
-            </table>
+        <p class="PARRAFO">El formulario contiene los enlaces: Actualizar,
+          Eliminar y Adicionar.</p>
+        <p class="PARRAFO"><span class="SUBTITULO">Adicionar:</span> si el
+          usuario invoca la opción
+          Adicionar se despliega un formulario con los siguientes campos.</p>
+        <p class="TITLE"><img src="../img/MEF_002E34.PNG" 380" height="79"></p>
 
-            <p class="PARRAFO">Esta opción que se invoca desde el formulario <a href="MEH_002B.html"
-                        >Definición de productos</a>, le permite a la entidad adicionar o
-                modificar la información correspondiente a plásticos adicionales que deben ser realzados y
-                entregados al cliente conjuntamente con su tarjeta de crédito.</p>
-            <p class="TITLE"><img src="../img/MEF_002E33.PNG" 555"></p>
+        <div class="PARRAFO">
+          <p class="TITLE">Descripción de campos</p>
+          <table '>
+            <tr>
+              <td class="titletable"><p class="SUBTITULO">Código
+                </p></td>
+              <td><p class="PARRAFO">Campo
+                  obligatorio con lista de valores de la cual se puede
+                  seleccionar el <a href="MEH_030B.html">plástico</a> adicional
+                  que es necesario realzar y entregar a un cliente que se le
+                  otorgue una tarjeta perteneciente al producto que se está
+                  parametrizando.
+                </p></td>
+            </tr>
 
-            <p class="PARRAFO">El formulario contiene las opciones Actualizar, Eliminar y Adicionar.</p>
-            <p class="PARRAFO"><span class="SUBTITULO">Adicionar:</span> si el usuario invoca la opción
-                Adicionar se despliega un nuevo formulario con los siguientes campos.</p>
-            <p class="TITLE"><img src="../img/MEF_002E34.PNG" 380" height="79"></p>
+            <tr>
+              <td class="titletable"><p class="SUBTITULO">Genera clave
 
-            <div class="PARRAFO">
-                <p class="TITLE">Descripción de campos</p>
-                <table '>
-                    <tr> 
-                      <td class="titletable" ><p class="SUBTITULO">Código
-                          </p></td>
-                      <td><p  class="PARRAFO">Campo 
-                          obligatorio con lista de valores de la cual se puede seleccionar el <a href="MEH_030B.html" >plástico</a> adicional que es necesario realzar y entregar a un cliente que se le otorgue una tarjeta perteneciente al producto que se está parametrizando.
-                        </p></td>
-                    </tr>
-
-                    <tr> 
-                      <td class="titletable" ><p class="SUBTITULO">Genera clave
-                         
-                         
-                          </p></td>
-                      <td><p  class="PARRAFO">Este 
-                      campo tipo check permite indicar si para el plástico adicional a entregar al cliente se requiere generar clave para su utilización.</p></td>
-                    </tr>
-                  </table>
-                  <p  class="PARRAFO">    
-                  <p class="PARRAFO"><span class="SUBTITULO">Actualizar:</span> si el usuario selecciona un registro e invoca la opción Actualizar, se despliega un formulario en el cual el único campos modificable es Genera clave.</p>
-                  <p class="TITLE"><img src="../img/MEF_002E35.PNG"327" ></p>
-                  <p  class="PARRAFO">
+                </p></td>
+              <td><p class="PARRAFO">Este
+                  campo tipo check permite indicar si para el plástico adicional
+                  a entregar al cliente se requiere generar clave para su
+                  utilización.</p></td>
+            </tr>
+          </table>
+          <p class="PARRAFO">
+            <p class="PARRAFO"><span class="SUBTITULO">Actualizar:</span> si el
+              usuario selecciona un registro e invoca la opción Actualizar, se
+              despliega un formulario en el cual el único campos modificable es
+              Genera clave.</p>
+            <p class="TITLE"><img src="../img/MEF_002E35.PNG"327"></p>
+            <p class="PARRAFO">
             </section>
-    <script src="../js/menu.js"></script>
-</body>
-<div id="footerContainer"></div>
-<script>
+            <script src="../js/menu.js"></script>
+          </body>
+          <div id="footerContainer"></div>
+          <script>
   fetch('footer.html')
     .then(response => response.text())
     .then(html => {
       document.getElementById('footerContainer').innerHTML = html;
     });
 </script>
-</html>
+        </html>

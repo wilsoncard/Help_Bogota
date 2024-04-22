@@ -1,25 +1,25 @@
 <!DOCTYPE html>
 <html lang="es">
 
-<head>
+  <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>BANKBU®</title>
     <link rel="stylesheet" href="../css/pages.css">
     <link rel="stylesheet" href="../css/style.css">
- <link rel="icon" href="../img/ACQUIRER-logo.JPG" type="image/x-icon">
-</head>
+    <link rel="icon" href="../img/ACQUIRER-logo.JPG" type="image/x-icon">
+  </head>
 
-<body>
+  <body>
 
     <header>
-        <img class="logo" src="../img/logoBankbu_.PNG" alt="Logo de Mi Empresa">
-        <div id="menuBtn">
-            <img class="TITLE"  src= "../img/menu.PNG" alt="Botón de Menú ">
-        </div>
+      <img class="logo" src="../img/logoBankbu_.PNG" alt="Logo de Mi Empresa">
+      <div id="menuBtn">
+        <img class="TITLE" src="../img/menu.PNG" alt="Botón de Menú ">
+      </div>
     </header>
-      <div id="menuContainer"></div>
-  <script>
+    <div id="menuContainer"></div>
+    <script>
     fetch('menu.html')
       .then(response => response.text())
       .then(html => {
@@ -28,80 +28,97 @@
   </script>
 
     <section>
-        <div> 
-            
-                    <p  class="TITLE">Novedad cambio categoría cuenta</p>
-                  
-            <p class="PARRAFO" >Mediante esta opción que se 
-              invoca desde <a href="DBH_020B.html" >Generación de novedades 
-              débito</a> se registra la novedad mediante la cual se hace el cambio 
-              de la categoría de una cuenta de principal a secundaria y viceversa.</p>
-            <p  class="PARRAFO">El sitema valida que para poder hacer el 
-              cambio de categoría, la tarjeta tenga asociadas por lo menos dos cuentas 
-              de las cuales una es principal y otra secundaria. Adicionalmente el sistema 
-              siempre valida que solo una cuenta pueda ser principal y todas las demás 
-              que se encuentren asociadas con la tarjeta sean secundarias.</p>
-            
-            <p class="TITLE"><img src="../img/DBF_022E3.PNG"447" ></p>
+      <div>
 
-            <p  class="TITLE">Descripción de campos</p>
-            <div> 
-              <table>
-                <tr> 
-                  <td class="titletable"  ><p class="SUBTITULO"><span >Cuenta 
-                      actual</p></td>
-                  <td><p  class="PARRAFO">Campo 
-                      obligatorio con lista de valores de la que se selecciona la cuenta 
-                      secundaria a la que se desea cambiar de categoría a principal.</p></td>
-                </tr>
-                <tr> 
-                  <td class="titletable"><p class="SUBTITULO"><span >Categoría</p></td>
-                  <td><p  class="PARRAFO">En 
-                      este campo de salida se muestra como categoría 'Principal' 
-                      para indicar que es la categoría que se le va a asignar a la 
+        <p class="TITLE">Novedad cambio categoría cuenta</p>
+
+        <p class="PARRAFO">Mediante esta opción que se
+          invoca desde <a href="DBH_020B.html">Generación de novedades
+            débito</a> se registra la novedad mediante la cual se hace el cambio
+          de la categoría de una cuenta de principal a secundaria y
+          viceversa.</p>
+        <p class="PARRAFO">El sitema valida que para poder hacer el
+          cambio de categoría, la tarjeta tenga asociadas por lo menos dos
+          cuentas
+          de las cuales una es principal y otra secundaria. Adicionalmente el
+          sistema
+          siempre valida que solo una cuenta pueda ser principal y todas las
+          demás
+          que se encuentren asociadas con la tarjeta sean secundarias.</p>
+
+        <p class="TITLE"><img src="../img/DBF_022E3.PNG"447"></p>
+
+        <p class="TITLE">Descripción de campos</p>
+        <div>
+          <table>
+            <tr>
+              <td class="titletable"><p class="SUBTITULO"><span>Cuenta
+                    actual</p></td>
+                <td><p class="PARRAFO">Campo
+                    obligatorio con lista de valores de la que se selecciona la
+                    cuenta
+                    secundaria a la que se desea cambiar de categoría a
+                    principal.</p></td>
+              </tr>
+              <tr>
+                <td class="titletable"><p
+                    class="SUBTITULO"><span>Categoría</p></td>
+                  <td><p class="PARRAFO">En
+                      este campo de salida se muestra como categoría 'Principal'
+                      para indicar que es la categoría que se le va a asignar a
+                      la
                       cuenta seleccionada.</p></td>
                 </tr>
-                <tr> 
-                  <td class="titletable"><p class="SUBTITULO"><span >Tipo 
-                      cuenta a debitar</p></td>
-                  <td><p  class="PARRAFO">Campo 
-                      de salida que muestra si la cuenta seleccionada para cambio de categoría 
-                      es de Ahorros, Corriente o Rotativo.</p></td>
-                </tr>
-                <tr> 
-                  <td class="titletable"><p class="SUBTITULO"><span >Moneda</p></td>
-                  <td><p  class="PARRAFO">En 
-                      este campo de salida se muestra la moneda en la que se encuentra denominada 
-                      la cuenta a la que se va a cambiar la categoría.</p></td>
-                </tr>
-                <tr> 
-                  <td class="titletable"><p class="SUBTITULO"><span >Fecha 
-                      radicación</p></td>
-                  <td><p  class="PARRAFO">En 
-                      este campo obligatorio se registra en formato YYYY-MM-DD la fecha 
-                      en la que se ingresa la novedad en el sistema.</p></td>
-                </tr>
-                <tr> 
-                  <td class="titletable"><p class="SUBTITULO"><span >Sucursal 
-                      cuenta </p></td>
-                  <td><p  class="PARRAFO">Campo 
-                      de salida que muetra la <a href="NUH_020B.html" >sucursal</a> 
-                      de la entidad a la que pertence la cuenta seleccionada para el cambio 
-                      de categoría.</p></td>
-                </tr>
-              </table>
-            </div>
+                <tr>
+                  <td class="titletable"><p class="SUBTITULO"><span>Tipo
+                        cuenta a debitar</p></td>
+                    <td><p class="PARRAFO">Campo
+                        de salida que muestra si la cuenta seleccionada para
+                        cambio de categoría
+                        es de Ahorros, Corriente o Rotativo.</p></td>
+                  </tr>
+                  <tr>
+                    <td class="titletable"><p
+                        class="SUBTITULO"><span>Moneda</p></td>
+                      <td><p class="PARRAFO">En
+                          este campo de salida se muestra la moneda en la que se
+                          encuentra denominada
+                          la cuenta a la que se va a cambiar la
+                          categoría.</p></td>
+                    </tr>
+                    <tr>
+                      <td class="titletable"><p class="SUBTITULO"><span>Fecha
+                            radicación</p></td>
+                        <td><p class="PARRAFO">En
+                            este campo obligatorio se registra en formato
+                            YYYY-MM-DD la fecha
+                            en la que se ingresa la novedad en el
+                            sistema.</p></td>
+                      </tr>
+                      <tr>
+                        <td class="titletable"><p
+                            class="SUBTITULO"><span>Sucursal
+                              cuenta </p></td>
+                          <td><p class="PARRAFO">Campo
+                              de salida que muetra la <a
+                                href="NUH_020B.html">sucursal</a>
+                              de la entidad a la que pertence la cuenta
+                              seleccionada para el cambio
+                              de categoría.</p></td>
+                        </tr>
+                      </table>
+                    </div>
 
-            <div>
-            </section>
-    <script src="../js/menu.js"></script>
-</body>
-<div id="footerContainer"></div>
-<script>
+                    <div>
+                    </section>
+                    <script src="../js/menu.js"></script>
+                  </body>
+                  <div id="footerContainer"></div>
+                  <script>
   fetch('footer.html')
     .then(response => response.text())
     .then(html => {
       document.getElementById('footerContainer').innerHTML = html;
     });
 </script>
-</html>
+                </html>

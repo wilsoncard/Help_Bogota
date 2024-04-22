@@ -1,26 +1,26 @@
 <!DOCTYPE html>
 <html lang="es">
 
-<head>
+  <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>BANKBU®</title>
 
     <link rel="stylesheet" href="../css/pages.css">
     <link rel="stylesheet" href="../css/style.css">
- <link rel="icon" href="../img/ACQUIRER-logo.JPG" type="image/x-icon">
-</head>
+    <link rel="icon" href="../img/ACQUIRER-logo.JPG" type="image/x-icon">
+  </head>
 
-<body>
+  <body>
 
     <header>
-        <img class="logo" src="../img/logoBankbu_.PNG" alt="Logo de Mi Empresa">
-        <div id="menuBtn">
-            <img class="TITLE"  src= "../img/menu.PNG" alt="Botón de Menú ">
-        </div>
+      <img class="logo" src="../img/logoBankbu_.PNG" alt="Logo de Mi Empresa">
+      <div id="menuBtn">
+        <img class="TITLE" src="../img/menu.PNG" alt="Botón de Menú ">
+      </div>
     </header>
-      <div id="menuContainer"></div>
-  <script>
+    <div id="menuContainer"></div>
+    <script>
     fetch('menu.html')
       .then(response => response.text())
       .then(html => {
@@ -29,198 +29,260 @@
   </script>
 
     <section>
-        <div> 
-            
-                    <p  class="TITLE">Información de establecimientos 
-                      - Cuentas de depósito</p>
-                  
-            <p  class="PARRAFO">Desde este formulario, que se invoca mediante 
-              el hipervínculo Cuentas de depósito contenido en el 
-              formulario de <a href="ESH_006B.html" >Información 
-              de establecimientos</a>, se registra la información y permite 
-              connsultar la información de los números de todas las cuentas 
-              que posee el establecimiento en las diferentes entidades de la corporación, 
-              u otras entidades del sistema financiero local (por efecto de convenios), 
-              su denominación, fecha de la última actualización y el 
-              estado en que se encuentra; adicionalmente, el código y nombre de la 
-              sucursal u oficina de la respectiva entidad financiera, la marca asociada, 
-              y las comisiones a cobrar al establecimiento por parte de la entidad cuando 
-              para la <a href="NUH_033B.html" >franquicia</a> se ha 
-              definido que la manera de liquidar las comisiones es por el sistema de adquirencia.</p>
-            
-            <p class="TITLE"><img src="../img/ESF_006E18.PNG"></p>
+      <div>
 
-            <p  class="PARRAFO">El formulario contiene las opciones Actualizar, 
-              Eliminar, Adicionar y Detalle.</p>
-            <p  class="PARRAFO"><span class="SUBTITULO">Adicionar:</span> 
-              si el usuario invoca la opción Adicionar se despliega un nuevo formulario 
-              con los siguientes campos:</p>
-            <p class="TITLE"><img src="../img/ESF_006E19.PNG"></p>
-            
-            <p  class="TITLE">Descripción de campos</p>
-            <table>
-              <tr> 
-                <td class="titletable"><p class="SUBTITULO"><span > 
-                    Entidad</p></td>
-                <td><p  class="PARRAFO">Campo 
-                    obligatorio con lista de valores de la cual se debe seleccionar la <a href="NUH_019B.html" >entidad 
-                    financiera</a> en la cual fue abierta la cuenta de depósitos.
-                  </p></td>
-              </tr>
+        <p class="TITLE">Información de establecimientos
+          - Cuentas de depósito</p>
 
-              <tr> 
-                <td class="titletable"><p class="SUBTITULO"><span > 
+        <p class="PARRAFO">Desde este formulario, que se invoca mediante
+          el hipervínculo Cuentas de depósito contenido en el
+          formulario de <a href="ESH_006B.html">Información
+            de establecimientos</a>, se registra la información y permite
+          connsultar la información de los números de todas las cuentas
+          que posee el establecimiento en las diferentes entidades de la
+          corporación,
+          u otras entidades del sistema financiero local (por efecto de
+          convenios),
+          su denominación, fecha de la última actualización y el
+          estado en que se encuentra; adicionalmente, el código y nombre de la
+          sucursal u oficina de la respectiva entidad financiera, la marca
+          asociada,
+          y las comisiones a cobrar al establecimiento por parte de la entidad
+          cuando
+          para la <a href="NUH_033B.html">franquicia</a> se ha
+          definido que la manera de liquidar las comisiones es por el sistema de
+          adquirencia.</p>
+
+        <p class="TITLE"><img src="../img/ESF_006E18.PNG"></p>
+
+        <p class="PARRAFO">El formulario contiene los enlaces: Actualizar, Eliminar, Adicionar y Detalle.</p>
+        <p class="PARRAFO"><span class="SUBTITULO">Adicionar:</span>
+          Al activar ese enlace se despliega un nuevo
+          formulario
+          con los siguientes campos:</p>
+        <p class="TITLE"><img src="../img/ESF_006E19.PNG"></p>
+
+        <p class="TITLE">Descripción de campos</p>
+        <table>
+          <tr>
+            <td class="titletable"><p class="SUBTITULO"><span>
+                  Entidad</p></td>
+              <td><p class="PARRAFO">Campo
+                  obligatorio con lista de valores de la cual se debe
+                  seleccionar la <a href="NUH_019B.html">entidad
+                    financiera</a> en la cual fue abierta la cuenta de
+                  depósitos.
+                </p></td>
+            </tr>
+
+            <tr>
+              <td class="titletable"><p class="SUBTITULO"><span>
                     Tipo de cuenta</p></td>
-                <td><p  class="PARRAFO">En 
-                    este campo tipo combo, obligatorio, se selecciona entre Ahorros, 
-                    Corriente o Rotativo el tipo de cuenta de depósito del establecimiento.
+                <td><p class="PARRAFO">En
+                    este campo tipo combo, obligatorio, se selecciona entre
+                    Ahorros,
+                    Corriente o Rotativo el tipo de cuenta de depósito del
+                    establecimiento.
                   </p></td>
-              </tr>
-
-              <tr> 
-                <td class="titletable"><p class="SUBTITULO"><span > 
-                    Número de cuenta</p></td>
-                <td><p  class="PARRAFO">Campo 
-                    obligatorio alfanumérico de hasta 16 caracteres en el que se registra el 
-                    número de cuenta del establecimiento.
-                  </p></td>
-              </tr>
-
-              <tr> 
-                <td class="titletable"><p class="SUBTITULO"><span > 
-                    Tipo de captura</p></td>
-                <td><p  class="PARRAFO">En 
-                    este campo tipo combo, obligatorio, se selecciona entre POS visa, 
-                    el tipo de captura para la cual se habilita la cuenta de depósito 
-                    del establecimiento. </p></td>
-              </tr>
-
-              <tr> 
-                <td class="titletable"><p class="SUBTITULO"><span > 
-                    Moneda</p></td>
-                <td><p  class="PARRAFO">Campo 
-                    obligatorio con lista de valores de la cual se selecciona la <a href="NUH_005B.html" >moneda</a> 
-                    en la que se encuentra denominada la cuenta del establecimiento.</p></td>
-              </tr>
-
-              <tr> 
-                <td class="titletable"><p class="SUBTITULO"><span > 
-                    Ultima actualización</p></td>
-                <td><p  class="PARRAFO">En 
-                    este campo obligatorio se registra en formato YYYY-MM-DD la fecha en 
-                    la cual se hizo la más reciente actualización de datos 
-                    para la cuenta.</p></td>
-              </tr>
-
-              <tr> 
-                <td class="titletable"><p class="SUBTITULO"><span > 
-                    Estado</p></td>
-                <td><p  class="PARRAFO">Campo 
-                    tipo combo, obligatorio, en el que se selecciona el estado actual de 
-                    la cuenta de depósito del establecimiento.</p></td>
-              </tr>
-
-              <tr> 
-                <td class="titletable"><p class="SUBTITULO"><span > 
-                    Cuenta convenio</p></td>
-                <td><p  class="PARRAFO">En 
-                    este campo tipo combo, no obligatorio, si indica Si o No la cuenta corresponde 
-                    a un convenio.</p></td>
-              </tr>
-
-              <tr> 
-                <td class="titletable"><p class="SUBTITULO"><span > 
-                    Oficina</p></td>
-                <td><p  class="PARRAFO">Campo 
-                    obligatorio con lista de valores de la cual se selecciona la <a href="NUH_020B.html" >sucursal</a> 
-                    de la entidad en la cual está radicada la cuenta del establecimiento, 
-                    para el caso de los establecimientos propios de la entidad.</p></td>
               </tr>
 
               <tr>
-                <td class="titletable"><p class="SUBTITULO">Marca</p></td>
-                <td><span class="PARRAFO">Campo 
-                  obligatorio con lista de valores de la cual se selecciona cada una de 
-                  las diferentes <a href="NUH_033B.html" >franquicias</a> autorizadas para el establecimiento y para la cual aplican las demás 
-                  condiciones definidas en este formulario. </span></td>
-              </tr>
+                <td class="titletable"><p class="SUBTITULO"><span>
+                      Número de cuenta</p></td>
+                  <td><p class="PARRAFO">Campo
+                      obligatorio alfanumérico de hasta 16 caracteres en el que
+                      se registra el
+                      número de cuenta del establecimiento.
+                    </p></td>
+                </tr>
 
-              <tr> 
-                <td class="titletable"><p class="SUBTITULO"><span > 
-                    Código pseudocuenta</p></td>
-                <td><p  class="PARRAFO">Campo 
-                    obligatorio en el cual se registra un código único de 
-                    cuenta que permite identificar a varias de las cuentas que tenga asociado 
-                    el establecimiento.</p></td>
-              </tr>
+                <tr>
+                  <td class="titletable"><p class="SUBTITULO"><span>
+                        Tipo de captura</p></td>
+                    <td><p class="PARRAFO">En
+                        este campo tipo combo, obligatorio, se selecciona entre
+                        POS visa,
+                        el tipo de captura para la cual se habilita la cuenta de
+                        depósito
+                        del establecimiento. </p></td>
+                  </tr>
 
-              <tr> 
-                <td class="titletable"><p class="SUBTITULO"><span > 
-                    Tipo de adquirente</p></td>
-                <td><p  class="PARRAFO">En 
-                    este campo tipo combo, no obligatorio, se selecciona entre Operación 
-                    manual y Operación electrónica la manera como el 
-                    movimiento fue ingresado al sistema y determinar por cual tipo de movimiento 
-                    se debe hacer el depósito a la cuenta.
-                  </p></td>
-              </tr>
+                  <tr>
+                    <td class="titletable"><p class="SUBTITULO"><span>
+                          Moneda</p></td>
+                      <td><p class="PARRAFO">Campo
+                          obligatorio con lista de valores de la cual se
+                          selecciona la <a href="NUH_005B.html">moneda</a>
+                          en la que se encuentra denominada la cuenta del
+                          establecimiento.</p></td>
+                    </tr>
 
-              <tr> 
-                <td class="titletable"><p class="SUBTITULO"><span > 
-                    Tipo de comisión débito / Crédito / Electron</p></td>
-                <td><p  class="PARRAFO">Cada 
-                    uno de estos campos tipo combo, permite seleccionar de manera excluyente 
-                    si la comisión que la entidad emisora de la tarjeta le va a cobrar 
-                    al establecimiento por el uso de cada tipo de tarjeta corresponde a 
-                    un Valor fijo, un Porcentaje sobre el valor de la 
-                    transacción o Mixto, es decir, un valor fijo más 
-                    un porcentaje adicional.</p></td>
-              </tr>
+                    <tr>
+                      <td class="titletable"><p class="SUBTITULO"><span>
+                            Ultima actualización</p></td>
+                        <td><p class="PARRAFO">En
+                            este campo obligatorio se registra en formato
+                            YYYY-MM-DD la fecha en
+                            la cual se hizo la más reciente actualización de
+                            datos
+                            para la cuenta.</p></td>
+                      </tr>
 
-              <tr> 
-                <td class="titletable"><p class="SUBTITULO"><span > 
-                    Valor fijo</p></td>
-                <td><p  class="PARRAFO">Si 
-                    el tipo comisión se define como Valor o Mixto, 
-                    en este campo obligatorio de 14 enteros y 2 decimales se registra el valor fijo 
-                    a cobrar al establecimiento por cada transacción, a modo de comisión 
-                    para la entidad.</p></td>
-              </tr>
+                      <tr>
+                        <td class="titletable"><p class="SUBTITULO"><span>
+                              Estado</p></td>
+                          <td><p class="PARRAFO">Campo
+                              tipo combo, obligatorio, en el que se selecciona
+                              el estado actual de
+                              la cuenta de depósito del
+                              establecimiento.</p></td>
+                        </tr>
 
-              <tr> 
-                <td class="titletable"><p class="SUBTITULO"><span > 
-                    Porcentaje</p></td>
-                <td><p  class="PARRAFO">Cuendo 
-                    el tipo comisión para un tipo de tarjeta se ha definido como 
-                    Porcentaje o Mixto, en este campo de 3 enteros y 2 
-                    decimales se registra la tasa a aplicar sobre la transacción 
-                    para determinar el monto de comisión para la entidad.</p></td>
-              </tr>
-            </table>
+                        <tr>
+                          <td class="titletable"><p class="SUBTITULO"><span>
+                                Cuenta convenio</p></td>
+                            <td><p class="PARRAFO">En
+                                este campo tipo combo, no obligatorio, si indica
+                                Si o No la cuenta corresponde
+                                a un convenio.</p></td>
+                          </tr>
 
-            <p  class="PARRAFO"><span class="SUBTITULO">Actualizar</span>: 
-              si el usuario selecciona un registro e invoca la opción Actualizar 
-              se despliega un formulario en el cual los únicos campos NO modificables 
-              son Entidad, Tipo de cuenta, Número de cuenta y Tipo de captura dependiendo de lo parametrizado en tipo de comisi&ntilde;on. </p>
-            <p class="TITLE"><img src="../img/ESF_006E20.PNG"></p>
-            
-              
-            <p  class="PARRAFO"><span class="SUBTITULO">Detalle:</span> 
-              si el usuario selecciona un registro e invoca la opción Detalle se 
-              despliega un formulario con todos los datos del registro y en el cual ninguno 
-              se sus campos es modificable.</p>
-            <p class="TITLE"><img src="../img/ESF_006E21.PNG"></p>
-            <p  class="PARRAFO"></p>
-            <div>
-        </section>
-    <script src="../js/menu.js"></script>
-</body>
-<div id="footerContainer"></div>
-<script>
+                          <tr>
+                            <td class="titletable"><p class="SUBTITULO"><span>
+                                  Oficina</p></td>
+                              <td><p class="PARRAFO">Campo
+                                  obligatorio con lista de valores de la cual se
+                                  selecciona la <a
+                                    href="NUH_020B.html">sucursal</a>
+                                  de la entidad en la cual está radicada la
+                                  cuenta del establecimiento,
+                                  para el caso de los establecimientos propios
+                                  de la entidad.</p></td>
+                            </tr>
+
+                            <tr>
+                              <td class="titletable"><p
+                                  class="SUBTITULO">Marca</p></td>
+                              <td><span class="PARRAFO">Campo
+                                  obligatorio con lista de valores de la cual se
+                                  selecciona cada una de
+                                  las diferentes <a
+                                    href="NUH_033B.html">franquicias</a>
+                                  autorizadas para el establecimiento y para la
+                                  cual aplican las demás
+                                  condiciones definidas en este formulario.
+                                </span></td>
+                            </tr>
+
+                            <tr>
+                              <td class="titletable"><p class="SUBTITULO"><span>
+                                    Código pseudocuenta</p></td>
+                                <td><p class="PARRAFO">Campo
+                                    obligatorio en el cual se registra un código
+                                    único de
+                                    cuenta que permite identificar a varias de
+                                    las cuentas que tenga asociado
+                                    el establecimiento.</p></td>
+                              </tr>
+
+                              <tr>
+                                <td class="titletable"><p
+                                    class="SUBTITULO"><span>
+                                      Tipo de adquirente</p></td>
+                                  <td><p class="PARRAFO">En
+                                      este campo tipo combo, no obligatorio, se
+                                      selecciona entre Operación
+                                      manual y Operación electrónica la manera
+                                      como el
+                                      movimiento fue ingresado al sistema y
+                                      determinar por cual tipo de movimiento
+                                      se debe hacer el depósito a la cuenta.
+                                    </p></td>
+                                </tr>
+
+                                <tr>
+                                  <td class="titletable"><p
+                                      class="SUBTITULO"><span>
+                                        Tipo de comisión débito / Crédito /
+                                        Electron</p></td>
+                                    <td><p class="PARRAFO">Cada
+                                        uno de estos campos tipo combo, permite
+                                        seleccionar de manera excluyente
+                                        si la comisión que la entidad emisora de
+                                        la tarjeta le va a cobrar
+                                        al establecimiento por el uso de cada
+                                        tipo de tarjeta corresponde a
+                                        un Valor fijo, un Porcentaje sobre el
+                                        valor de la
+                                        transacción o Mixto, es decir, un valor
+                                        fijo más
+                                        un porcentaje adicional.</p></td>
+                                  </tr>
+
+                                  <tr>
+                                    <td class="titletable"><p
+                                        class="SUBTITULO"><span>
+                                          Valor fijo</p></td>
+                                      <td><p class="PARRAFO">Si
+                                          el tipo comisión se define como Valor
+                                          o Mixto,
+                                          en este campo obligatorio de 14
+                                          enteros y 2 decimales se registra el
+                                          valor fijo
+                                          a cobrar al establecimiento por cada
+                                          transacción, a modo de comisión
+                                          para la entidad.</p></td>
+                                    </tr>
+
+                                    <tr>
+                                      <td class="titletable"><p
+                                          class="SUBTITULO"><span>
+                                            Porcentaje</p></td>
+                                        <td><p class="PARRAFO">Cuendo
+                                            el tipo comisión para un tipo de
+                                            tarjeta se ha definido como
+                                            Porcentaje o Mixto, en este campo de
+                                            3 enteros y 2
+                                            decimales se registra la tasa a
+                                            aplicar sobre la transacción
+                                            para determinar el monto de comisión
+                                            para la entidad.</p></td>
+                                      </tr>
+                                    </table>
+
+                                    <p class="PARRAFO"><span
+                                        class="SUBTITULO">Actualizar</span>:
+                                      si el usuario selecciona un registro e
+                                      invoca la opción Actualizar
+                                      se despliega un formulario en el cual los
+                                      únicos campos NO modificables
+                                      son Entidad, Tipo de cuenta, Número de
+                                      cuenta y Tipo de captura dependiendo de lo
+                                      parametrizado en tipo de comisi&ntilde;on.
+                                    </p>
+                                    <p class="TITLE"><img
+                                        src="../img/ESF_006E20.PNG"></p>
+
+                                    <p class="PARRAFO"><span
+                                        class="SUBTITULO">Detalle:</span>
+                                      si el usuario selecciona un registro e
+                                      invoca la opción Detalle se
+                                      despliega un formulario con todos los
+                                      datos del registro y en el cual ninguno
+                                      se sus campos es modificable.</p>
+                                    <p class="TITLE"><img
+                                        src="../img/ESF_006E21.PNG"></p>
+                                    <p class="PARRAFO"></p>
+                                    <div>
+                                    </section>
+                                    <script src="../js/menu.js"></script>
+                                  </body>
+                                  <div id="footerContainer"></div>
+                                  <script>
   fetch('footer.html')
     .then(response => response.text())
     .then(html => {
       document.getElementById('footerContainer').innerHTML = html;
     });
 </script>
-</html>
+                                </html>

@@ -1,25 +1,25 @@
 <!DOCTYPE html>
 <html lang="es">
 
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>BANKBU®</title>
-  <link rel="stylesheet" href="../css/pages.css">
-  <link rel="stylesheet" href="../css/style.css">
-  <link rel="icon" href="../img/ACQUIRER-logo.JPG" type="image/x-icon">
-</head>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BANKBU®</title>
+    <link rel="stylesheet" href="../css/pages.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="icon" href="../img/ACQUIRER-logo.JPG" type="image/x-icon">
+  </head>
 
-<body>
+  <body>
 
-  <header>
-    <img class="logo" src="../img/logoBankbu_.PNG" alt="Logo de Mi Empresa">
-    <div id="menuBtn">
-      <img class="TITLE" src="../img/menu.PNG" alt="Botón de Menú ">
-    </div>
-  </header>
+    <header>
+      <img class="logo" src="../img/logoBankbu_.PNG" alt="Logo de Mi Empresa">
+      <div id="menuBtn">
+        <img class="TITLE" src="../img/menu.PNG" alt="Botón de Menú ">
+      </div>
+    </header>
     <div id="menuContainer"></div>
-  <script>
+    <script>
     fetch('menu.html')
       .then(response => response.text())
       .then(html => {
@@ -27,165 +27,188 @@
       });
   </script>
 
-  <section>
-    <div>
-      
-              <p class="TITLE">Estadísticas colocaciones</p>
+    <section>
+      <div>
 
-      <p class="PARRAFO">Mediante esta función se evalúa la gestión
-        de las oficinas respecto a los productos colocados activos y el nivel de facturación
-        que se desprende como resultado de dicha colocación.</p>
-      <p class="PARRAFO">El formulario contiene las opciones Actualizar, Eliminar,
-        y Adicionar. Adicionalmente, cuenta con un filtro de búsqueda, la opción
-        <a href="CAH_015B1.html">Metas por sucursal</a>, y dos botones de <a href="#Especiales">opciones
-          especiales</a>.
-      </p>
-      <p class="TITLE"><img src="../img/CAF_015B.PNG"></p>
+        <p class="TITLE">Estadísticas colocaciones</p>
 
-      <p class="PARRAFO"><span class="SUBTITULO">Filtro:</span> Se pueden realizar consultas a través
-        de las siguientes opciones: </p>
-      <p class="TITLE"><img src="../img/CAF_015B1.PNG"></p>
+        <p class="PARRAFO">Mediante esta función se evalúa la gestión
+          de las oficinas respecto a los productos colocados activos y el nivel
+          de facturación
+          que se desprende como resultado de dicha colocación.</p>
+        <p class="PARRAFO">El formulario contiene los enlaces: Actualizar,Eliminar y Adicionar  Adicionalmente, cuenta con un filtro de búsqueda, la
+          opción
+          <a href="CAH_015B1.html">Metas por sucursal</a>, y dos botones de <a
+            href="#Especiales">opciones
+            especiales</a>.
+        </p>
+        <p class="TITLE"><img src="../img/CAF_015B.PNG"></p>
 
-      <table>
-        <tr>
-          <td class="titletable">
-            <p class="SUBTITULO">Fecha
-                  inicio</p>
-          </td>
-          <td>
-            <p class="PARRAFO">Campo
-              con formato YYYY-MM , que define la fecha inicio del rango que se desea
-              filtrar.</p>
-          </td>
-        </tr>
-        <tr>
-          <td class="titletable">
-            <p class="SUBTITULO">Fecha
-                  fin </p>
-          </td>
-          <td>
-            <p class="PARRAFO">Campo
-              con formato YYYY-MM , que define la fecha fin del rango que se desea
-              filtrar.</p>
-          </td>
-        </tr>
-      </table>
+        <p class="PARRAFO"><span class="SUBTITULO">Filtro:</span> Se pueden
+          realizar consultas a través
+          de las siguientes opciones: </p>
+        <p class="TITLE"><img src="../img/CAF_015B1.PNG"></p>
 
-      <p class="PARRAFO"><span class="SUBTITULO">Adicionar:</span> Si el usuario invoca la opción Adicionar se
-        despliega un formulario con los siguientes campos:</p>
-      <p class="TITLE"><img src="../img/CAF_015B2.PNG" 277"></p>
+        <table>
+          <tr>
+            <td class="titletable">
+              <p class="SUBTITULO">Fecha
+                inicio</p>
+            </td>
+            <td>
+              <p class="PARRAFO">Campo
+                con formato YYYY-MM , que define la fecha inicio del rango que
+                se desea
+                filtrar.</p>
+            </td>
+          </tr>
+          <tr>
+            <td class="titletable">
+              <p class="SUBTITULO">Fecha
+                fin </p>
+            </td>
+            <td>
+              <p class="PARRAFO">Campo
+                con formato YYYY-MM , que define la fecha fin del rango que se
+                desea
+                filtrar.</p>
+            </td>
+          </tr>
+        </table>
 
-      <table>
-        <tr>
-          <td class="titletable">
-            <p class="SUBTITULO">Fecha</p>
-          </td>
-          <td>
-            <p class="PARRAFO">Campo
-              obligatorio, en formato YYYY-MM, que define el período de tiempo
-              sobre el cual se fija metas la entidad respecto a la colocación
-              de nuevos productos y niveles de facturación de los productos
-              nuevos más los activos.</p>
-          </td>
-        </tr>
-        <tr>
-          <td class="titletable">
-            <p class="SUBTITULO">Colocaciones</p>
-          </td>
-          <td>
-            <p class="PARRAFO">Campo
-              numérico de 7 posiciones, obligatorio, en el cual se define la
-              cantidad de productos nuevos que la entidad se fija como meta a determinado
-              tiempo.</p>
-          </td>
-        </tr>
-        <tr>
-          <td class="titletable">
-            <p class="SUBTITULO">Porcentaje
-                  colocación</p>
-          </td>
-          <td>
-            <p class="PARRAFO">En
-              este campo numérico de 3 enteros y 2 decimales,obligatorio, se define la
-              proporción que se asignará a las oficinas por colocación
-              de productos con base en el valor a distribuir a las mismas. Su diligenciamiento
-              es obligatorio y sumados con el campo Porcentaje facturación
-              no deben exceder el cien por ciento. </p>
-          </td>
-        </tr>
-        <tr>
-          <td class="titletable">
-            <p class="SUBTITULO">Porcentaje
-                  facturación </p>
-          </td>
-          <td>
-            <p class="PARRAFO">En
-              este campo numérico de 3 enteros y 2 decimales, obligatorio,se define la
-              proporción que se asignará a las oficinas por montos de
-              facturación con base en el valor a distribuir a las mismas. Su
-              diligenciamiento es obligatorio y sumados con el campo Porcentaje
-              colocación no deben exceder el cien por ciento.</p>
-          </td>
-        </tr>
-        <tr>
-          <td class="titletable">
-            <p class="SUBTITULO">Valor</p>
-          </td>
-          <td>
-            <p class="PARRAFO">Campo
-              numérico de 14 enteros y dos decimales, obligatorio, en el cual
-              se define el valor de facturación de productos nuevos y existentes
-              que la entidad se fija como meta a un determinado tiempo.</p>
-          </td>
-        </tr>
-        <tr>
-          <td class="titletable">
-            <p class="SUBTITULO">Valor distribuido</p>
-          </td>
-          <td>
-            <p class="PARRAFO">Campo
-              numérico de 14 enteros y dos decimales, obligatorio,que permite definir el
-              valor distribuido a las sucursales por cumplimiento de las metas fijadas
-              por la entidad.</p>
-          </td>
-        </tr>
-      </table>
-      <p class="PARRAFO"><span class="PARRAFO"><span class="SUBTITULO">Actualizar:</span>
-          Si el usuario invoca la opción Actualizar se despliega un nuevo formulario
-          en el cual los únicos campos modificables son: Porcentaje colocación,
-          Porcentaje facturación, Valor y Distribuir.</p>
-      <p class="TITLE"><img src="../img/CAF_015B3.PNG"></p>
+        <p class="PARRAFO"><span class="SUBTITULO">Adicionar:</span> Si el
+          usuario invoca la opción Adicionar se
+          despliega un formulario con los siguientes campos:</p>
+        <p class="TITLE"><img src="../img/CAF_015B2.PNG" 277"></p>
 
-      <p class="PARRAFO"><span class="SUBTITULO">Botones:</p>
-      <table>
-        <tr>
-          <td>
-            <p class="SUBTITULO"><img src="../img/CAF_015B4-Actualizar%20result.PNG" 46"></p>
-          </td>
-          <td>
-            <p class="PARRAFO"><a name="Especiales"></a><span class="SUBTITULO">Actualizar
-              resultados:</span>  Botón que permite conocer las cifras de colocaciones
-              relacionadas con las metas fijadas.</p>
-          </td>
-        </tr>
-        <tr>
-          <td class="titletable">
-            <p class="SUBTITULO"><img src="../img/CAF_015B5-Actualizar%20distrib.PNG" 46"></p>
-          </td>
-          <td>
-            <p class="PARRAFO"><span class="SUBTITULO">Actualizar
-              distribución:</span>  Botón que al ejecutarse permite establecer
-              el valor a retribuir a cada oficina si estas han alcanzado las metas
-              propuestas.</p>
-          </td>
-        </tr>
-      </table>
+        <table>
+          <tr>
+            <td class="titletable">
+              <p class="SUBTITULO">Fecha</p>
+            </td>
+            <td>
+              <p class="PARRAFO">Campo
+                obligatorio, en formato YYYY-MM, que define el período de tiempo
+                sobre el cual se fija metas la entidad respecto a la colocación
+                de nuevos productos y niveles de facturación de los productos
+                nuevos más los activos.</p>
+            </td>
+          </tr>
+          <tr>
+            <td class="titletable">
+              <p class="SUBTITULO">Colocaciones</p>
+            </td>
+            <td>
+              <p class="PARRAFO">Campo
+                numérico de 7 posiciones, obligatorio, en el cual se define la
+                cantidad de productos nuevos que la entidad se fija como meta a
+                determinado
+                tiempo.</p>
+            </td>
+          </tr>
+          <tr>
+            <td class="titletable">
+              <p class="SUBTITULO">Porcentaje
+                colocación</p>
+            </td>
+            <td>
+              <p class="PARRAFO">En
+                este campo numérico de 3 enteros y 2 decimales,obligatorio, se
+                define la
+                proporción que se asignará a las oficinas por colocación
+                de productos con base en el valor a distribuir a las mismas. Su
+                diligenciamiento
+                es obligatorio y sumados con el campo Porcentaje facturación
+                no deben exceder el cien por ciento. </p>
+            </td>
+          </tr>
+          <tr>
+            <td class="titletable">
+              <p class="SUBTITULO">Porcentaje
+                facturación </p>
+            </td>
+            <td>
+              <p class="PARRAFO">En
+                este campo numérico de 3 enteros y 2 decimales, obligatorio,se
+                define la
+                proporción que se asignará a las oficinas por montos de
+                facturación con base en el valor a distribuir a las mismas. Su
+                diligenciamiento es obligatorio y sumados con el campo
+                Porcentaje
+                colocación no deben exceder el cien por ciento.</p>
+            </td>
+          </tr>
+          <tr>
+            <td class="titletable">
+              <p class="SUBTITULO">Valor</p>
+            </td>
+            <td>
+              <p class="PARRAFO">Campo
+                numérico de 14 enteros y dos decimales, obligatorio, en el cual
+                se define el valor de facturación de productos nuevos y
+                existentes
+                que la entidad se fija como meta a un determinado tiempo.</p>
+            </td>
+          </tr>
+          <tr>
+            <td class="titletable">
+              <p class="SUBTITULO">Valor distribuido</p>
+            </td>
+            <td>
+              <p class="PARRAFO">Campo
+                numérico de 14 enteros y dos decimales, obligatorio,que permite
+                definir el
+                valor distribuido a las sucursales por cumplimiento de las metas
+                fijadas
+                por la entidad.</p>
+            </td>
+          </tr>
+        </table>
+        <p class="PARRAFO"><span class="PARRAFO"><span
+              class="SUBTITULO">Actualizar:</span>
+             Al activar ese enlace  se despliega un nuevo
+            formulario
+            en el cual los únicos campos modificables son: Porcentaje
+            colocación,
+            Porcentaje facturación, Valor y Distribuir.</p>
+          <p class="TITLE"><img src="../img/CAF_015B3.PNG"></p>
 
-  </section>
-  <script src="../js/menu.js"></script>
-</body>
-<div id="footerContainer"></div>
-<script>
+          <p class="PARRAFO"><span class="SUBTITULO">Botones:</p>
+            <table>
+              <tr>
+                <td>
+                  <p class="SUBTITULO"><img
+                      src="../img/CAF_015B4-Actualizar%20result.PNG" 46"></p>
+                </td>
+                <td>
+                  <p class="PARRAFO"><a name="Especiales"></a><span
+                      class="SUBTITULO">Actualizar
+                      resultados:</span> Botón que permite conocer las cifras de
+                    colocaciones
+                    relacionadas con las metas fijadas.</p>
+                </td>
+              </tr>
+              <tr>
+                <td class="titletable">
+                  <p class="SUBTITULO"><img
+                      src="../img/CAF_015B5-Actualizar%20distrib.PNG" 46"></p>
+                </td>
+                <td>
+                  <p class="PARRAFO"><span class="SUBTITULO">Actualizar
+                      distribución:</span> Botón que al ejecutarse permite
+                    establecer
+                    el valor a retribuir a cada oficina si estas han alcanzado
+                    las metas
+                    propuestas.</p>
+                </td>
+              </tr>
+            </table>
+
+          </section>
+          <script src="../js/menu.js"></script>
+        </body>
+        <div id="footerContainer"></div>
+        <script>
   fetch('footer.html')
     .then(response => response.text())
     .then(html => {
@@ -193,4 +216,4 @@
     });
 </script>
 
-</html>
+      </html>

@@ -1,24 +1,24 @@
 <!DOCTYPE html>
 <html lang="es">
 
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>BANKBU®</title>
-  <link rel="stylesheet" href="../css/pages.css">
-  <link rel="stylesheet" href="../css/style.css">
-  <link rel="icon" href="../img/ACQUIRER-logo.JPG" type="image/x-icon">
-</head>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BANKBU®</title>
+    <link rel="stylesheet" href="../css/pages.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="icon" href="../img/ACQUIRER-logo.JPG" type="image/x-icon">
+  </head>
 
-<body>
-  <header>
-    <img class="logo" src="../img/logoBankbu_.PNG" alt="Logo de Mi Empresa">
-    <div id="menuBtn">
-      <img class="TITLE" src="../img/menu.PNG" alt="Botón de Menú ">
-    </div>
-  </header>
+  <body>
+    <header>
+      <img class="logo" src="../img/logoBankbu_.PNG" alt="Logo de Mi Empresa">
+      <div id="menuBtn">
+        <img class="TITLE" src="../img/menu.PNG" alt="Botón de Menú ">
+      </div>
+    </header>
     <div id="menuContainer"></div>
-  <script>
+    <script>
     fetch('menu.html')
       .then(response => response.text())
       .then(html => {
@@ -26,83 +26,98 @@
       });
   </script>
 
-  <section>
-    <div>
-      
-              <div>
-                <p class="TITLE">Puntos de entrega</p>
-              </div>
+    <section>
+      <div>
 
-      <p class="PARRAFO">Mediante esta función se permite la parametrización de los diferentes lugares en
-        los que se efectúa la entrega de los plásticos a los tarjetahabientes, puntos que pueden ser o no
-        ser las mismas oficinas de la entidad.</p>
-      <p class="PARRAFO">El formulario contiene los enlaces Eliminar y Adicionar, así mismo, en
-        la parte superior, se cuenta con el enlace Tcr. </p>
-      <p class="TITLE"><img src="../img/PLF_006B.PNG"></p>
+        <div>
+          <p class="TITLE">Puntos de entrega</p>
+        </div>
 
-      <p class="PARRAFO">El
-        formulario contiene las opciones Actualizar, Eliminar, Adicionar y Detalle. </p>
-      <p class="PARRAFO"><span class="SUBTITULO">Adicionar</span>:</span><span 
-        ></span></span> Si el usuario invoca la opción Adicionar se despliega un formulario con los 
-              siguientes </span>campos:</p>
-            <p class="TITLE"><img src="../img/PLF_006B1.PNG"></p>
-           
-            <p  class="TITLE">Descripción de campos</p>
-            <table>
-              <tr>
-                <td class="titletable"><p class="SUBTITULO"><span 
-        >Punto de entrega </p></td>
-                <td><p class="PARRAFO">Campo obligatorio en el que se registra el   código numérico que identificará cada uno de los distintos puntos de entrega que   determine la entidad.</p></td>
+        <p class="PARRAFO">A través de esta opción, si aplica, se permite la
+          parametrización de los diferentes lugares en los que se efectúa la
+          entrega de los plásticos a los tarjetahabientes, puntos que pueden ser
+          o no ser las mismas oficinas de la entidad. El formulario contiene los
+          enlaces: Actualizar, Eliminar, Adicionar y Detalle. </p>
+        <p class="TITLE"><img src="../img/PLF_006B.PNG"></p>
+
+        <p class="PARRAFO"><span
+            class="SUBTITULO">Adicionar</span>:</span><span></span></span> Al
+      activar ese enlace se despliega un formulario con los siguientes
+      campos:</p>
+    <p class="TITLE"><img src="../img/PLF_006B1.PNG"></p>
+
+    <p class="TITLE">Descripción de campos</p>
+    <table>
+      <tr>
+        <td class="titletable"><p class="SUBTITULO"><span>Punto de entrega
+            </p></td>
+          <td><p class="PARRAFO">Campo obligatorio en el que se registra el
+              código
+              numérico que identificará cada uno de los distintos puntos de
+              entrega que determine la entidad.</p></td>
+        </tr>
+        <tr>
+          <td class="titletable"><p class="SUBTITULO"><span>Descripción</p></td>
+            <td><p class="PARRAFO">En este campo obligatorio se debe registrar
+                el
+                nombre del punto de entrega asociado al código
+                anterior.</p></td>
+          </tr>
+          <tr>
+            <td class="titletable"><p class="SUBTITULO"><span>Código
+                  agente</p></td>
+              <td><p class="PARRAFO">Campo obligatorio que posee lista de
+                  valores poblada a través de la opciónn <a
+                    href="NUH_045B.html">Funcionarios</a>, de la que se
+                  selecciona el funcionario responsable del manejo de los
+                  plásticos y de la atención a los clientes.</p></td>
+            </tr>
+            <tr>
+              <td class="titletable"><p
+                  class="SUBTITULO"><span>Dirección</p></td>
+                <td><p class="PARRAFO">En este campo obligatorio se registra la
+                    nomenclatura de la ubicación geográfica de cada uno de los
+                    diferentes puntos de entrega definidos por la
+                    entidad.</p></td>
               </tr>
               <tr>
-                <td class="titletable"><p class="SUBTITULO"><span 
-        >Descripción</p></td>
-                <td><p class="PARRAFO">En este campo obligatorio se debe registrar   el nombre del punto de entrega asociado al código anterior.</p></td>
-              </tr>
-              <tr>
-                <td  class="titletable" ><p class="SUBTITULO"><span 
-        >Agente</p></td>
-                <td><p class="PARRAFO">Campo obligatorio que posee lista de valores poblada a   través de la opción <a href="file:///C|/Documents and Settings/faguilar/Mis documentos/V7 Manuales/HELP/NUH_045B.html">Funcionarios</a> del grupo de   Tablas de la entidad financiera, de la que se selecciona el funcionario   responsable del manejo de los plásticos y de la atención a los   clientes.</p></td>
-              </tr>
-              <tr>
-                <td class="titletable"><p class="SUBTITULO"><span 
-        >Dirección</p></td>
-                <td><p class="PARRAFO">En este campo obligatorio se registra la nomenclatura de   la ubicación geográfica de cada uno de los diferentes puntos de entrega   definidos por la entidad.</p></td>
-              </tr>
-              <tr>
-                <td  class="titletable" ><p class="SUBTITULO">Teléfono</p></td>
-                <td><p class="PARRAFO">Campo en el que se debe registrar el número   de teléfono en el que se ubica al agente promotor responsable de cada uno de los   diferentes puntos de entrega definidos por la entidad.</p></td>
-              </tr>
-              <tr>
-                <td class="titletable"><p class="SUBTITULO"><span 
-        >Ubicación</p></td>
-                <td><p class="PARRAFO">Este campo obligatorio posee lista de valores poblada a   través de la opción <a href="file:///C|/Documents and Settings/faguilar/Mis documentos/V7 Manuales/HELP/NUH_003B.html">Información geopolítica</a> del grupo de Tablas corporativas, de la que se selecciona el municipio,   departamento y país, en que se ubica el punto de entrega. </p></td>
-              </tr>
-            </table>
-            <p class="PARRAFO" ><span class="SUBTITULO">Actualizar:</span>  Si el usuario invoca la opción Actualizar se despliega un nuevo formulario 
-            en el cual los únicos campos modificables son: Descripción, Agente, Dirección, teléfono, y Ubicación.</span></p>
+                <td class="titletable"><p
+                    class="SUBTITULO"><span>Ubicación</p></td>
+                  <td><p class="PARRAFO">Este campo obligatorio posee lista de
+                      valores poblada a través de la opción <a
+                        href="NUH_003B.html">Información
+                        geopolítica</a>, de la
+                      que se selecciona el municipio, departamento y país, en
+                      que
+                      se ubica el punto de entrega. </p></td>
+                </tr>
+              </table>
+              <p class="PARRAFO"><span class="SUBTITULO">Actualizar:</span> Al
+                activar ese enlace se despliega un formulario en el cual los
+                campos modificables son: Descripción, Código agente, Dirección y
+                Ubicación</span></p>
             <p class="TITLE"><img src="../img/PLF_006B2.PNG"></p>
-            
-            <p class="PARRAFO"><span class="SUBTITULO">Detalle:</span>  <span 
-        > Si el usuario invoca la opción Detalle se despliega el siguiente 
-              formulario:</p>
-           
-           
-            <p class="TITLE"><img src="../img/PLF_006B3.PNG"></p>
 
-            <div>
+            <p class="PARRAFO"><span class="SUBTITULO">Detalle:</span> <span> Al
+                invocar ese enlace se despliega el siguiente formulario:
 
-        </section>
-    <script src="../js/menu.js"></script>
+              </p>
 
-    <div id="footerContainer"></div>
-<script>
+              <p class="TITLE"><img src="../img/PLF_006B3.PNG"></p>
+
+              <div>
+
+              </section>
+              <script src="../js/menu.js"></script>
+
+              <div id="footerContainer"></div>
+              <script>
   fetch('footer.html')
     .then(response => response.text())
     .then(html => {
       document.getElementById('footerContainer').innerHTML = html;
     });
 </script>
-</body>
+            </body>
 
-</html>
+          </html>

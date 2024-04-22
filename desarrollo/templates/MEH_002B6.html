@@ -1,26 +1,27 @@
 <!DOCTYPE html>
 <html lang="es">
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>BANKBU®</title>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>BANKBU®</title>
 
-    <link rel="stylesheet" href="../css/pages.css">
-    <link rel="stylesheet" href="../css/style.css">
-    <link rel="icon" href="../img/ACQUIRER-logo.JPG" type="image/x-icon">
-</head>
+        <link rel="stylesheet" href="../css/pages.css">
+        <link rel="stylesheet" href="../css/style.css">
+        <link rel="icon" href="../img/ACQUIRER-logo.JPG" type="image/x-icon">
+    </head>
 
-<body>
+    <body>
 
-    <header>
-        <img class="logo" src="../img/logoBankbu_.PNG" alt="Logo de Mi Empresa">
-        <div id="menuBtn">
-            <img class="TITLE" src="../img/menu.PNG" alt="Botón de Menú ">
-        </div>
-    </header>
-      <div id="menuContainer"></div>
-  <script>
+        <header>
+            <img class="logo" src="../img/logoBankbu_.PNG"
+                alt="Logo de Mi Empresa">
+            <div id="menuBtn">
+                <img class="TITLE" src="../img/menu.PNG" alt="Botón de Menú ">
+            </div>
+        </header>
+        <div id="menuContainer"></div>
+        <script>
     fetch('menu.html')
       .then(response => response.text())
       .then(html => {
@@ -28,88 +29,100 @@
       });
   </script>
 
-    <section>
-        <div>
-            <table>
-                <tr>
-                    <td>
-                        <div>
-                            <p class="TITLE">Definición de productos - Parámetros de excepción</p>
-                        </div>
-                    </td>
-                </tr>
-            </table>
+        <section>
+            <div>
 
-            <p class="PARRAFO">Esta opción que se invoca desde el formulario <a href="MEH_002B.html"
-                        >Definición de productos</a> se habilita únicamente cuando en en
-                el formulario <A href="NUH_055B.html" >parámetros operativos</A> en el
-                campo Excepción geográfica se encuentra seleccionada una opción diferente
-                a No aplica y le permite a la entidad parametrizar aquellas ubicaciones geográficas para
-                las cuales aplican condiciones especiales en los procesos de liquidación de intereses. </p>
-            <p class="TITLE"><img src="../img/MEF_002E38.PNG" 554"></p>
+                <p class="TITLE">Definición de productos - Parámetros de
+                    excepción</p>
 
-            <p class="PARRAFO">El formulario contiene las opciones Actualizar, Eliminar y Adicionar.</p>
-            <p class="PARRAFO"><span class="SUBTITULO">Adicionar:</span> si el usuario invoca la opción
-                Adicionar se despliega un nuevo formulario con los siguientes campos.</p>
-            <p class="TITLE"><img src="../img/MEF_002E39.PNG" 484" height="111"></p>
+                <p class="PARRAFO">Esta opción que se invoca desde el formulario
+                    <a href="MEH_002B.html">Definición de productos</a> se
+                    habilita únicamente cuando en en
+                    el formulario <a href="NUH_055B.html">parámetros
+                        operativos</a> en el
+                    campo Excepción geográfica se encuentra seleccionada una
+                    opción diferente
+                    a No aplica y le permite a la entidad parametrizar aquellas
+                    ubicaciones geográficas para
+                    las cuales aplican condiciones especiales en los procesos de
+                    liquidación de intereses. </p>
+                <p class="TITLE"><img src="../img/MEF_002E38.PNG"></p>
 
-            <div class="PARRAFO">
-                <p class="TITLE">Descripción de campos</p>
-                <table>
-                    <tr>
-                        <td class="titletable">
-                            <p class="SUBTITULO">Estado
+                <p class="PARRAFO">El formulario contiene los enlaces:
+                    Actualizar, Eliminar y Adicionar.</p>
+                <p class="PARRAFO"><span class="SUBTITULO">Adicionar:</span> si
+                    el usuario invoca la opción
+                    Adicionar se despliega un formulario con los siguientes
+                    campos.</p>
+                <p class="TITLE"><img src="../img/MEF_002E39.PNG"></p>
+
+                <div class="PARRAFO">
+                    <p class="TITLE">Descripción de campos</p>
+                    <table>
+                        <tr>
+                            <td class="titletable">
+                                <p class="SUBTITULO">Estado
                                 </p>
-                        </td>
-                        <td>
-                            <p class="PARRAFO">Campo
-                                obligatorio con lista de valores de la cual se selecciona el estado o ubicación
-                                geográfica para la cual aplican las condiciones de excepción que se van a
-                                definir.</p>
-                        </td>
-                    </tr>
+                            </td>
+                            <td>
+                                <p class="PARRAFO">Campo
+                                    obligatorio con lista de valores de la cual
+                                    se selecciona el estado o ubicación
+                                    geográfica para la cual aplican las
+                                    condiciones de excepción que se van a
+                                    definir.</p>
+                            </td>
+                        </tr>
 
-                    <tr>
-                        <td class="titletable">
-                            <p class="SUBTITULO">Método calcular interés
-
-
-                                </p>
-                        </td>
-                        <td>
-                            <p class="PARRAFO">Este
-                                campo obligatorio tipo combo permite seleccionar entre SPDIC (Saldo Promedio
-                                Diario Incluye Compras) y SPDEC (Saldo Promedio Diario Excluye Compras) la
-                                forma como se debe liquidar el interés para el estado se&ntilde;alado en el campo
-                                anterior.</p>
-                        </td>
-                    </tr>
-
-                    <tr>
-                        <td class="titletable">
-                            <p class="SUBTITULO">Indicador económico
-
+                        <tr>
+                            <td class="titletable">
+                                <p class="SUBTITULO">Método calcular interés
 
                                 </p>
-                        </td>
-                        <td>
-                            <p class="PARRAFO">Campo obligatorio con lista de valores de la cual se selecciona el <a
-                                        href="NUH_043B.html" >Indicador económico</a> a
-                                utilizar para liquidar el interés correspondiente.</p>
-                        </td>
-                    </tr>
-                </table>
-                <p class="PARRAFO">
-                <p class="PARRAFO"><span class="SUBTITULO">Actualizar:</span> si el usuario selecciona un registro e invoca la
-                    opción Actualizar, se despliega un formulario en el cual los campos modificables son
-                    Método calcular interés e Indicador económico.</p>
-                <p class="TITLE"><img src="../img/MEF_002E40.PNG" 465" height="113"></p>
-                <p class="PARRAFO">
-    </section>
-    <script src="../js/menu.js"></script>
-</body>
-<div id="footerContainer"></div>
-<script>
+                            </td>
+                            <td>
+                                <p class="PARRAFO">Este
+                                    campo obligatorio tipo combo permite
+                                    seleccionar entre SPDIC (Saldo Promedio
+                                    Diario Incluye Compras) y SPDEC (Saldo
+                                    Promedio Diario Excluye Compras) la
+                                    forma como se debe liquidar el interés para
+                                    el estado se&ntilde;alado en el campo
+                                    anterior.</p>
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td class="titletable">
+                                <p class="SUBTITULO">Indicador económico
+
+                                </p>
+                            </td>
+                            <td>
+                                <p class="PARRAFO">Campo obligatorio con lista
+                                    de valores de la cual se selecciona el <a
+                                        href="NUH_043B.html">Indicador
+                                        económico</a> a
+                                    utilizar para liquidar el interés
+                                    correspondiente.</p>
+                            </td>
+                        </tr>
+                    </table>
+                    <p class="PARRAFO">
+                        <p class="PARRAFO"><span
+                                class="SUBTITULO">Actualizar:</span> si el
+                            usuario selecciona un registro e invoca la
+                            opción Actualizar, se despliega un formulario en el
+                            cual los campos modificables son
+                            Método calcular interés e Indicador económico.</p>
+                        <p class="TITLE"><img src="../img/MEF_002E40.PNG" 465"
+                                height="113"></p>
+                        <p class="PARRAFO">
+                        </section>
+                        <script src="../js/menu.js"></script>
+                    </body>
+                    <div id="footerContainer"></div>
+                    <script>
   fetch('footer.html')
     .then(response => response.text())
     .then(html => {
@@ -117,4 +130,4 @@
     });
 </script>
 
-</html>
+                </html>

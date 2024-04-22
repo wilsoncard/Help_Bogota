@@ -1,25 +1,26 @@
 <!DOCTYPE html>
 <html lang="es">
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>BANKBU®</title>
-    <link rel="stylesheet" href="../css/pages.css">
-    <link rel="stylesheet" href="../css/style.css">
-    <link rel="icon" href="../img/ACQUIRER-logo.JPG" type="image/x-icon">
-</head>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>BANKBU®</title>
+        <link rel="stylesheet" href="../css/pages.css">
+        <link rel="stylesheet" href="../css/style.css">
+        <link rel="icon" href="../img/ACQUIRER-logo.JPG" type="image/x-icon">
+    </head>
 
-<body>
+    <body>
 
-    <header>
-        <img class="logo" src="../img/logoBankbu_.PNG" alt="Logo de Mi Empresa">
-        <div id="menuBtn">
-            <img class="TITLE" src="../img/menu.PNG" alt="Botón de Menú ">
-        </div>
-    </header>
-      <div id="menuContainer"></div>
-  <script>
+        <header>
+            <img class="logo" src="../img/logoBankbu_.PNG"
+                alt="Logo de Mi Empresa">
+            <div id="menuBtn">
+                <img class="TITLE" src="../img/menu.PNG" alt="Botón de Menú ">
+            </div>
+        </header>
+        <div id="menuContainer"></div>
+        <script>
     fetch('menu.html')
       .then(response => response.text())
       .then(html => {
@@ -27,120 +28,143 @@
       });
   </script>
 
-    <section>
-        <div>
-            <table>
-                <tr>
-                    <td>
-                        <div>
-                            <p class="TITLE">Consulta cargue de autorizaciones MasterCard</p>
-                        </div>
-                    </td>
-                </tr>
-            </table>
-            <p class="PARRAFO">Esta funcionalidad le permite a la entidad consultar en detalle, las autorizaciones que
-                ingresaron mediante el cargue de un archivo recibido, actualmente, en Colombia, de Redeban Multicolor.
-            </p>
-            <p class="PARRAFO"><span class="SUBTITULO">Filtro:</span>  El formulario cuenta con conjunto de campos o
-                criterios para realizar la búsqueda, mínimo debe contener un dato:</p>
-            <p class="TITLE"><img src="../img/COF_020B.PNG"></p>
+        <section>
+            <div>
 
-            <table>
-                <tr>
-                    <td class="titletable">
-                        <p class="SUBTITULO">Número
+                <p class="TITLE">Consulta cargue de autorizaciones
+                    MasterCard</p>
+
+                <p class="PARRAFO">Esta funcionalidad le permite a la entidad
+                    consultar en detalle, las autorizaciones que
+                    ingresaron mediante el cargue de un archivo recibido,
+                    actualmente, en Colombia, de Redeban Multicolor.
+                </p>
+                <p class="PARRAFO"><span class="SUBTITULO">Filtro:</span> El
+                    formulario cuenta con conjunto de campos o
+                    criterios para realizar la búsqueda, mínimo debe contener un
+                    dato:</p>
+                <p class="TITLE"><img src="../img/COF_020B.PNG"></p>
+
+                <table>
+                    <tr>
+                        <td class="titletable">
+                            <p class="SUBTITULO">Número
                                 autorización</p>
-                    </td>
-                    <td>
-                        <p class="PARRAFO">Campo en el que se digita el número de autorización sobre el cual se desea
-                            realizar la consulta.</p>
-                    </td>
-                </tr>
-                <tr>
-                    <td class="titletable">
-                        <p class="SUBTITULO">Número
-                                    tarjeta </p>
-                    </td>
-                    <td>
-                        <p class="PARRAFO">Campo en el que se digita el número de tarjeta por la que se desea efectuar
-                            la consulta.</p>
-                    </td>
-                </tr>
-                <tr>
-                    <td class="titletable">
-                        <p class="SUBTITULO">Código
-                            respuesta</p>
-                    </td>
-                    <td>
-                        <p class="PARRAFO">Campo en el que se puede digitar, el código de respuesta dado por el sistema
-                            sobre la autorización respecto de la cual se desea realizar la consulta.</p>
-                    </td>
-                </tr>
-                <tr>
-                    <td class="titletable">
-                        <p class="SUBTITULO">Fecha
-                            transacción</p>
-                    </td>
-                    <td>
-                        <p class="PARRAFO">Campo en el que el sistema permite seleccionar de un calendario, la fecha en
-                            la que se realizó la utilización respecto de la cual se desea realizar la consulta.</p>
-                    </td>
-                </tr>
-                <tr>
-                    <td class="titletable">
-                        <p class="SUBTITULO">Hora
-                            transacción</p>
-                    </td>
-                    <td>
-                        <p class="PARRAFO">Campo en el que se puede digitar en formato HH:MM:SS el momento en el que se
-                            realizó la utilización respecto de la cual se desea efectuar la consulta.</p>
-                    </td>
-                </tr>
-                <tr>
-                    <td class="titletable">
-                        <p class="SUBTITULO">Clase
-                            transacción</p>
-                    </td>
-                    <td>
-                        <p class="PARRAFO">Campo en el que se puede digitar el código de la transacción asociada a la
-                            utilización respecto de la cual se desea realizar la consulta. </p>
-                    </td>
-                </tr>
-                <tr>
-                    <td class="titletable">
-                        <p class="SUBTITULO">Fecha
-                            cargue </p>
-                    </td>
-                    <td>
-                        <p class="PARRAFO">Campo en el que se permite seleccionar de un calendario, la fecha en la que
-                            ingresó o se cargó el archivo con la autorización respecto de la cual se desea realizar la
-                            consulta.</p>
-                    </td>
-                </tr>
-            </table>
+                        </td>
+                        <td>
+                            <p class="PARRAFO">Campo en el que se digita el
+                                número de autorización sobre el cual se desea
+                                realizar la consulta.</p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="titletable">
+                            <p class="SUBTITULO">Número
+                                tarjeta </p>
+                        </td>
+                        <td>
+                            <p class="PARRAFO">Campo en el que se digita el
+                                número de tarjeta por la que se desea efectuar
+                                la consulta.</p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="titletable">
+                            <p class="SUBTITULO">Código
+                                respuesta</p>
+                        </td>
+                        <td>
+                            <p class="PARRAFO">Campo en el que se puede digitar,
+                                el código de respuesta dado por el sistema
+                                sobre la autorización respecto de la cual se
+                                desea realizar la consulta.</p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="titletable">
+                            <p class="SUBTITULO">Fecha
+                                transacción</p>
+                        </td>
+                        <td>
+                            <p class="PARRAFO">Campo en el que el sistema
+                                permite seleccionar de un calendario, la fecha
+                                en
+                                la que se realizó la utilización respecto de la
+                                cual se desea realizar la consulta.</p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="titletable">
+                            <p class="SUBTITULO">Hora
+                                transacción</p>
+                        </td>
+                        <td>
+                            <p class="PARRAFO">Campo en el que se puede digitar
+                                en formato HH:MM:SS el momento en el que se
+                                realizó la utilización respecto de la cual se
+                                desea efectuar la consulta.</p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="titletable">
+                            <p class="SUBTITULO">Clase
+                                transacción</p>
+                        </td>
+                        <td>
+                            <p class="PARRAFO">Campo en el que se puede digitar
+                                el código de la transacción asociada a la
+                                utilización respecto de la cual se desea
+                                realizar la consulta. </p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="titletable">
+                            <p class="SUBTITULO">Fecha
+                                cargue </p>
+                        </td>
+                        <td>
+                            <p class="PARRAFO">Campo en el que se permite
+                                seleccionar de un calendario, la fecha en la que
+                                ingresó o se cargó el archivo con la
+                                autorización respecto de la cual se desea
+                                realizar la
+                                consulta.</p>
+                        </td>
+                    </tr>
+                </table>
 
-            <p class="PARRAFO">A través del botón Buscar, se muestra un formulario
-                que contiene la siguiente información, junto con la opción Detalle.</p>
-            <p class="TITLE"><img src="../img/COF_020B1.PNG"></p>
+                <p class="PARRAFO">A través del botón Buscar, se muestra un
+                    formulario
+                    que contiene la siguiente información, junto con la opción
+                    Detalle.</p>
+                <p class="TITLE"><img src="../img/COF_020B1.PNG"></p>
 
-            <p class="PARRAFO"><span class="PARRAFO"><span class="SUBTITULO">Detalle:</span> 
-                    A través de este botón el sistema muestra un formulario con
-                    la siguiente información. Adicionalmente, cuenta con la opción
-                    Código rechazo.</p>
-            <p class="TITLE"><img src="../img/COF_020B2.PNG"></p>
+                <p class="PARRAFO"><span class="PARRAFO"><span
+                            class="SUBTITULO">Detalle:</span>
+                        A través de este botón el sistema muestra un formulario
+                        con
+                        la siguiente información. Adicionalmente, cuenta con la
+                        opción
+                        Código rechazo.</p>
+                    <p class="TITLE"><img src="../img/COF_020B2.PNG"></p>
 
-            <p class="PARRAFO"><span class="SUBTITULO">Código rechazo:</span> 
-                A través de este botón el sistema muestra un formulario con
-                el código y la descripción de los rechazos presentados en el
-                cargue de la autorización consultada. Si la autorizacióin no
-                presentó rechazos, el formulario no mostrará información.</p>
-            <p class="TITLE"><img src="../img/COF_020B3.PNG"></p>
-        </div>
-    </section>
-    <script src="../js/menu.js"></script>
-</body>
-<div id="footerContainer"></div>
-<script>
+                    <p class="PARRAFO"><span class="SUBTITULO">Código
+                            rechazo:</span>
+                        A través de este botón el sistema muestra un formulario
+                        con
+                        el código y la descripción de los rechazos presentados
+                        en el
+                        cargue de la autorización consultada. Si la
+                        autorizacióin no
+                        presentó rechazos, el formulario no mostrará
+                        información.</p>
+                    <p class="TITLE"><img src="../img/COF_020B3.PNG"></p>
+                </div>
+            </section>
+            <script src="../js/menu.js"></script>
+        </body>
+        <div id="footerContainer"></div>
+        <script>
   fetch('footer.html')
     .then(response => response.text())
     .then(html => {
@@ -148,4 +172,4 @@
     });
 </script>
 
-</html>
+    </html>

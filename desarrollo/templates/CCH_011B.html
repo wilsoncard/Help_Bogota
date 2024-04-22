@@ -1,25 +1,26 @@
 <!DOCTYPE html>
 <html lang="es">
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>BANKBU®</title>
-    <link rel="stylesheet" href="../css/pages.css">
-    <link rel="stylesheet" href="../css/style.css">
-    <link rel="icon" href="../img/ACQUIRER-logo.JPG" type="image/x-icon">
-</head>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>BANKBU®</title>
+        <link rel="stylesheet" href="../css/pages.css">
+        <link rel="stylesheet" href="../css/style.css">
+        <link rel="icon" href="../img/ACQUIRER-logo.JPG" type="image/x-icon">
+    </head>
 
-<body>
+    <body>
 
-    <header>
-        <img class="logo" src="../img/logoBankbu_.PNG" alt="Logo de Mi Empresa">
-        <div id="menuBtn">
-            <img class="TITLE" src="../img/menu.PNG" alt="Botón de Menú ">
-        </div>
-    </header>
-      <div id="menuContainer"></div>
-  <script>
+        <header>
+            <img class="logo" src="../img/logoBankbu_.PNG"
+                alt="Logo de Mi Empresa">
+            <div id="menuBtn">
+                <img class="TITLE" src="../img/menu.PNG" alt="Botón de Menú ">
+            </div>
+        </header>
+        <div id="menuContainer"></div>
+        <script>
     fetch('menu.html')
       .then(response => response.text())
       .then(html => {
@@ -27,38 +28,36 @@
       });
   </script>
 
-    <section>
-        <div>
-            <table>
-                <tr>
-                    <td>
-                        <div>
-                            <p class="TITLE">Tipos de compromisos </p>
-                        </div>
-                    </td>
-                </tr>
-            </table>
-            <p class="PARRAFO">Partiendo del concepto que la gestión de cobranza es un proceso de variable complejidad, se provee
-                a través de esta forma o pantalla, la manera de parametrizar las diferentes clases o tipos de
-                compromisos y acuerdos de pago a celebrar con los deudores, de manera que permitan efectuarles un
-                adecuado seguimiento. </p>
-            <p class="PARRAFO">El formulario contiene las opciones Actualizar, Eliminar,
-                y Adicionar.</p>
-            <p class="TITLE"><img src="../img/CCF_011B.PNG"></p>
+        <section>
+            <div>
+                <p class="TITLE">Tipos de compromisos </p>
 
-            <p class="PARRAFO"><span class="SUBTITULO">Adicionar:</span>  Si
-                el usuario invoca la opción Adicionar se despliega un formulario con
-                los siguientes campos:</p>
-            <p class="TITLE"><img src="../img/CCF_011B1.PNG"></p>
+                <p class="PARRAFO">Partiendo del concepto que la gestión de
+                    cobranza es un proceso de variable complejidad, se provee
+                    a través de esta forma o pantalla, la manera de parametrizar
+                    las diferentes clases o tipos de
+                    compromisos y acuerdos de pago a celebrar con los deudores,
+                    de manera que permitan efectuarles un
+                    adecuado seguimiento. </p>
+                <p class="PARRAFO">El formulario contiene los enlaces: Actualizar, Eliminar y Adicionar.</p>
+                <p class="TITLE"><img src="../img/CCF_011B.PNG"></p>
 
-            <table>
-                <tr>
-                    <td class="titletable">
-                        <p class="SUBTITULO">Código</span></p>
+                <p class="PARRAFO"><span class="SUBTITULO">Adicionar:</span> Si
+                    el usuario invoca la opción Adicionar se despliega un
+                    formulario con
+                    los siguientes campos:</p>
+                <p class="TITLE"><img src="../img/CCF_011B1.PNG"></p>
+
+                <table>
+                    <tr>
+                        <td class="titletable">
+                            <p class="SUBTITULO">Código</span></p>
                     </td>
                     <td>
-                        <p class="PARRAFO">Campo alfanumérico de 3 posiciones, obligatorio, en el que se registra la referencia o
-                            identificación de cada uno de los tipos de acuerdo o compromiso.</p>
+                        <p class="PARRAFO">Campo alfanumérico de 3 posiciones,
+                            obligatorio, en el que se registra la referencia o
+                            identificación de cada uno de los tipos de acuerdo o
+                            compromiso.</p>
                     </td>
                 </tr>
                 <tr>
@@ -66,22 +65,27 @@
                         <p class="SUBTITULO">Descripción</p>
                     </td>
                     <td>
-                        <p class="PARRAFO">En este campo alfanumérico de 50 posiciones, obligatorio, se ingresa el nombre o breve
-                            descripción del acuerdo o compromiso de pago asociado a cada código.</p>
+                        <p class="PARRAFO">En este campo alfanumérico de 50
+                            posiciones, obligatorio, se ingresa el nombre o
+                            breve
+                            descripción del acuerdo o compromiso de pago
+                            asociado a cada código.</p>
                     </td>
                 </tr>
             </table>
 
-            <p class="PARRAFO"><span class="SUBTITULO">Actualizar:</span>  Si el usuario
-                invoca la opción Actualizar se despliega un nuevo formulario en cual
+            <p class="PARRAFO"><span class="SUBTITULO">Actualizar:</span> Si el
+                usuario
+                invoca la opción Actualizar se despliega un formulario en
+                cual
                 los únicos campos modificables son los siguientes:</p>
             <p class="TITLE"><img src="../img/CCF_011B2.PNG"></p>
 
-    </section>
-    <script src="../js/menu.js"></script>
-</body>
-<div id="footerContainer"></div>
-<script>
+        </section>
+        <script src="../js/menu.js"></script>
+    </body>
+    <div id="footerContainer"></div>
+    <script>
   fetch('footer.html')
     .then(response => response.text())
     .then(html => {

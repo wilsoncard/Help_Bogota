@@ -1,25 +1,25 @@
 <!DOCTYPE html>
 <html lang="es">
 
-<head>
+  <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>BANKBU®</title>
     <link rel="stylesheet" href="../css/pages.css">
     <link rel="stylesheet" href="../css/style.css">
- <link rel="icon" href="../img/ACQUIRER-logo.JPG" type="image/x-icon">
-</head>
+    <link rel="icon" href="../img/ACQUIRER-logo.JPG" type="image/x-icon">
+  </head>
 
-<body>
+  <body>
 
     <header>
-        <img class="logo" src="../img/logoBankbu_.PNG" alt="Logo de Mi Empresa">
-        <div id="menuBtn">
-            <img class="TITLE"  src= "../img/menu.PNG" alt="Botón de Menú ">
-        </div>
+      <img class="logo" src="../img/logoBankbu_.PNG" alt="Logo de Mi Empresa">
+      <div id="menuBtn">
+        <img class="TITLE" src="../img/menu.PNG" alt="Botón de Menú ">
+      </div>
     </header>
-      <div id="menuContainer"></div>
-  <script>
+    <div id="menuContainer"></div>
+    <script>
     fetch('menu.html')
       .then(response => response.text())
       .then(html => {
@@ -28,243 +28,334 @@
   </script>
 
     <section>
-        <div> 
-            
-                    <p  class="TITLE">Parámetros de solicitudes por 
-                      producto </p>
-                  
-            <p class="PARRAFO" >Mediante esta opción se parametriza 
-              para cada uno de los <a href="DBH_018B.html" >productos débito</a> 
-              definidos por la entidad los tipos de solicitud que es permitido efectuar, 
-              las etapas por las cuales debe pasar la solicitud y los documentos que son 
-              exigibles al cliente en cada etapa.</p>
-            <p  class="PARRAFO">Al ingresar a la opción se despliega 
-              un formulario inicial que contiene una lista de valores en la cual el usuasrio 
-              selecciona el producto para el cual se requiere parametrizar los tipos de 
-              solicitud.</p>
-            <p class="TITLE"><img src="../img/DBF_019E6.PNG" ></p>
+      <div>
 
-            <p  class="PARRAFO">Una vez seleccionado el producto, se despliega 
-              un nuevo formulario que contiene los tipos de solicitud parametrizados actualmente 
-              para ese producto o en blanco si no existen aún parámetros para 
-              el mismo mostrando para cada una de ellas el tipo solicitud y el nombre o 
-              descripción.</p>
-            <p class="TITLE"><img src="../img/DBF_019E7.PNG"663" height="269"></p>
-            
-            <p  class="PARRAFO">El formulario posee los hipervínculos 
-              <a href="DBH_019B1.html#BL_ETAPAS" > Etapas</a> que 
-              permite asociar a cada tipo de solicitud las etapas por las que debe pasar 
-              y <a href="DBH_019B1.html#BL_COPIAR" >Copiar parámetros</a> 
-              que permite replicar los parámetros definidos para un producto a otro 
-              diferente. Adicionalmente contiene las opciones Actualizar, Eliminar, Adicionar 
-              y Detalle.</p>
-            <p  class="PARRAFO"><span class="SUBTITULO">Adicionar:</span> 
-              si el usuario invoca la opción Adicionar, se despliega un 
-              nuevo formulario con los siguientes campos.</p>
-            <p class="TITLE"><img src="../img/DBF_019E8.PNG"500" height="241"></p>
-            
-            <p class="TITLE"><img src="../img/DBF_019E9.PNG"500" height="242"></p>
+        <p class="TITLE">Parámetros de solicitudes por
+          producto </p>
 
-            <p  class="TITLE">Descripción de campos</p>
-            <div> 
-              <table>
-                <tr> 
-                  <td class="titletable"><p class="SUBTITULO"><span >Tipo 
-                      solicitud </p></td>
-                  <td><p  class="PARRAFO">Campo 
-                      obligatorio tipo combo en el que se selecciona entre Nuevo débito, 
-                      Reposición débito, Reexpedición débito 
-                      o Renovación débito el tipo de solicitud 
-                      que se desea adicionar al producto.</p></td>
-                </tr>
-                <tr> 
-                  <td class="titletable"  >
-          <p class="SUBTITULO"><span >Regional</p></td>
-                  <td><p  class="PARRAFO">Este 
-                      campo se habilita únicamente cuando el tipo de solicitud corresponda 
-                      a Nuevo débito y se marca para indicar si durante 
-                      el proceso de ingreso de la solicitud la <a href="NUH_020B.html" >sucursal</a> 
-                      de radicación registrada en el formulario debe corresponder 
+        <p class="PARRAFO">Mediante esta opción se parametriza
+          para cada uno de los <a href="DBH_018B.html">productos débito</a>
+          definidos por la entidad los tipos de solicitud que es permitido
+          efectuar,
+          las etapas por las cuales debe pasar la solicitud y los documentos que
+          son
+          exigibles al cliente en cada etapa.</p>
+        <p class="PARRAFO">Al ingresar a la opción se despliega
+          un formulario inicial que contiene una lista de valores en la cual el
+          usuasrio
+          selecciona el producto para el cual se requiere parametrizar los tipos
+          de
+          solicitud.</p>
+        <p class="TITLE"><img src="../img/DBF_019E6.PNG"></p>
+
+        <p class="PARRAFO">Una vez seleccionado el producto, se despliega
+          un nuevo formulario que contiene los tipos de solicitud parametrizados
+          actualmente
+          para ese producto o en blanco si no existen aún parámetros para
+          el mismo mostrando para cada una de ellas el tipo solicitud y el
+          nombre o
+          descripción.</p>
+        <p class="TITLE"><img src="../img/DBF_019E7.PNG"663" height="269"></p>
+
+        <p class="PARRAFO">El formulario posee los hipervínculos
+          <a href="DBH_019B1.html#BL_ETAPAS"> Etapas</a> que
+          permite asociar a cada tipo de solicitud las etapas por las que debe
+          pasar
+          y <a href="DBH_019B1.html#BL_COPIAR">Copiar parámetros</a>
+          que permite replicar los parámetros definidos para un producto a otro
+          diferente. Adicionalmente contiene los enlaces:Actualizar, Eliminar,
+          Adicionar
+          y Detalle.</p>
+        <p class="PARRAFO"><span class="SUBTITULO">Adicionar:</span>
+          Al activar ese enlace, se despliega un
+          nuevo formulario con los siguientes campos.</p>
+        <p class="TITLE"><img src="../img/DBF_019E8.PNG"500" height="241"></p>
+
+        <p class="TITLE"><img src="../img/DBF_019E9.PNG"500" height="242"></p>
+
+        <p class="TITLE">Descripción de campos</p>
+        <div>
+          <table>
+            <tr>
+              <td class="titletable"><p class="SUBTITULO"><span>Tipo
+                    solicitud </p></td>
+                <td><p class="PARRAFO">Campo
+                    obligatorio tipo combo en el que se selecciona entre Nuevo
+                    débito,
+                    Reposición débito, Reexpedición débito
+                    o Renovación débito el tipo de solicitud
+                    que se desea adicionar al producto.</p></td>
+              </tr>
+              <tr>
+                <td class="titletable">
+                  <p class="SUBTITULO"><span>Regional</p></td>
+                  <td><p class="PARRAFO">Este
+                      campo se habilita únicamente cuando el tipo de solicitud
+                      corresponda
+                      a Nuevo débito y se marca para indicar si durante
+                      el proceso de ingreso de la solicitud la <a
+                        href="NUH_020B.html">sucursal</a>
+                      de radicación registrada en el formulario debe
+                      corresponder
                       a una regional o depender de alguna regional. </p></td>
                 </tr>
-                <tr> 
-                  <td class="titletable"  ><p class="SUBTITULO"><span >Fecha 
-                      nacimiento / Estado civil / Personas a cargo / Profesión titular 
-                      / Teléfono correspondencia / Tipo residencia / Relación 
-                      laboral / Ingresos</p></td>
-                  <td><p  class="PARRAFO">Conjunto 
-                      de campos que se habilitan únicamente para el tipo de solicitud 
-                      nuevo débito y en los cuales se marca respectivamente para 
-                      indicar si el dato es requerido para permitir el ingreso de la solicitud. 
-                      Cuando al ingresar la solicitud el sistema detecta que el cliente 
-                      no posee la información correspondiente para alguno de los 
-                      campos marcados como obligatorio, no permite continuar con el proceso 
-                      hasta tanto no se le adicionen al cliente todos los datos requeridos.</p></td>
-                </tr>
-              </table>
-            </div>
+                <tr>
+                  <td class="titletable"><p class="SUBTITULO"><span>Fecha
+                        nacimiento / Estado civil / Personas a cargo / Profesión
+                        titular
+                        / Teléfono correspondencia / Tipo residencia / Relación
+                        laboral / Ingresos</p></td>
+                    <td><p class="PARRAFO">Conjunto
+                        de campos que se habilitan únicamente para el tipo de
+                        solicitud
+                        nuevo débito y en los cuales se marca respectivamente
+                        para
+                        indicar si el dato es requerido para permitir el ingreso
+                        de la solicitud.
+                        Cuando al ingresar la solicitud el sistema detecta que
+                        el cliente
+                        no posee la información correspondiente para alguno de
+                        los
+                        campos marcados como obligatorio, no permite continuar
+                        con el proceso
+                        hasta tanto no se le adicionen al cliente todos los
+                        datos requeridos.</p></td>
+                  </tr>
+                </table>
+              </div>
 
-            <p  class="PARRAFO"><span class="SUBTITULO">Actualizar:</span> 
-              si el usuario selecciona un registro correspondiente a Tipo solicitud 
-              'Nuevo débito' e invoca la opción Actualizar, 
-              se despliega un formulario en el cual el único campo no modificable 
-              es Tipo solicitud. Si el tipo solicitud del registro seleccionado 
-              para actualizar es diferente a Nuevo débito, ninguno de los 
-              campos desplegados en el formulario se puede modificar.</p>
-            <p class="TITLE"><img src="../img/DBF_019E10.PNG"504" height="239"></p>
-            
-            <p class="TITLE"><img src="../img/DBF_019E11.PNG"500" height="240"></p>
+              <p class="PARRAFO"><span class="SUBTITULO">Actualizar:</span>
+                si el usuario selecciona un registro correspondiente a Tipo
+                solicitud
+                'Nuevo débito' e invoca la opción Actualizar,
+                se despliega un formulario en el cual el único campo no
+                modificable
+                es Tipo solicitud. Si el tipo solicitud del registro
+                seleccionado
+                para actualizar es diferente a Nuevo débito, ninguno de los
+                campos desplegados en el formulario se puede modificar.</p>
+              <p class="TITLE"><img src="../img/DBF_019E10.PNG"504"
+                  height="239"></p>
 
-            <p  class="PARRAFO"><span class="SUBTITULO">Detalle:</span> 
-              si el usuario selecciona un registro e invoca la opción Detalle, 
-              se despliega un formulario con la información completa del registro 
-              y en el cual ninguno de sus campos es modificable.</p>
-            <p class="TITLE"><img src="../img/DBF_019E12.PNG"288" ></p>
-            
-            <p  class="PARRAFO"><a name="BL_ETAPAS"></a><span class="SUBTITULO"><span >Etapas:</span></span><span > 
-              si el usuario selecciona un tipo de solicitud e invoca el hipervínculo 
-              Etapas, se despliega un nuevo formulario en el que se muestran las 
-              etapas por las cuales la entidad haya definido que debe pasar cada tipo de 
-              solicitud.</p>
-            <p class="TITLE"><img src="../img/DBF_019E13.PNG"311" ></p>
+              <p class="TITLE"><img src="../img/DBF_019E11.PNG"500"
+                  height="240"></p>
 
-            <p  class="PARRAFO">El formulario contiene además de las 
-              opciones Eliminar y Adicionar, un hipervínculo a través del 
-              cual se asocian a cada etapa los <a href="DBH_019B1.html#BL_DOCUMENTOS" >documentos</a> 
-              exigibles al cliente.</p>
-            <p  class="PARRAFO"><span class="SUBTITULO">Adicionar:</span> 
-              si el usuario invoca la opción Adicionar, se despliega un 
-              wizard de dos pasos en el cual se ingresan las diferentes etapas asociadas 
-              con el producto y tipo de solicitud y se les asigna el orden secuencial en 
-              el cual se deben avanzar.</p>
-            <p class="TITLE"><img src="../img/DBF_019E14.PNG"361" ></p>
-            <p  class="TITLE">Descripción de campos</p>
-            <div> 
-              <table>
-                <tr> 
-                  <td class="titletable"  ><p class="SUBTITULO"><span >Descripción 
-                      etapa </p></td>
-                  <td><p  class="PARRAFO">Campo 
-                      obligatorio con lista de valores que permite seleccionar la <a href="DBH_019B.html" >etapa</a> 
-                      que se desea asociar al tipo de solicitud.</p></td>
-                </tr>
-                <tr> 
-                  <td class="titletable"><p class="SUBTITULO"><span >Orden</p></td>
-                  <td><p  class="PARRAFO">En 
-                      este campo numérico de hasta 2 dígitos, obligatorio, 
-                      se registra el orden en el que debe ir la etapa que se está 
-                      asociando al tipo de solicitud.</p></td>
-                </tr>
-              </table>
-            </div>
-            
-            <p  class="PARRAFO">Después de haber ingresado los datos 
-              de cada etapa, mediante el segundo botón del wizard se van adicionando 
-              una a una y luego al desplazarse a la segunda página se muestra el 
-              resumen de todas desplegando para cada una el código de la etapa, la 
-              descripción y el orden. El formulario cuenta con un check que permite 
-              marcar aquellas etapas que no se desea adicionar.</p>
-            <p  class="PARRAFO">Es importante para el usuario tener en cuenta, 
-              que en este proceso inicial de adición el sistema requiere que las 
-              etapas sean ingresadas de manera que tengan un orden estrictamente secuencial, 
-              puesto que de lo contrario no se permitirá guardar los registros en 
-              la base de datos.</p>
-            <p class="TITLE"><img src="../img/DBF_019E15.PNG"739" ></p>
+              <p class="PARRAFO"><span class="SUBTITULO">Detalle:</span>
+                si el usuario selecciona un registro e invoca la opción Detalle,
+                se despliega un formulario con la información completa del
+                registro
+                y en el cual ninguno de sus campos es modificable.</p>
+              <p class="TITLE"><img src="../img/DBF_019E12.PNG"288"></p>
 
-            <p  class="PARRAFO"><a name="BL_DOCUMENTOS"></a><span class="SUBTITULO"><span >Documentos:</span></span><span > 
-              si el usuario selecciona una etapa definida para un tipo de solicitud e invoca 
-              el hipervínculo Documentos, se despliega un nuevo formulario 
-              en el que se muestran los documentos que la entidad solicita al cliente para 
-              poder procesar su solicitud.</p>
-            <p class="TITLE"><img src="../img/DBF_019E16.PNG"769" ></p>
+              <p class="PARRAFO"><a name="BL_ETAPAS"></a><span
+                  class="SUBTITULO"><span>Etapas:</span></span><span>
+                  si el usuario selecciona un tipo de solicitud e invoca el
+                  hipervínculo
+                  Etapas, se despliega un formulario en el que se muestran
+                  las
+                  etapas por las cuales la entidad haya definido que debe pasar
+                  cada tipo de
+                  solicitud.</p>
+                <p class="TITLE"><img src="../img/DBF_019E13.PNG"311"></p>
 
-            <p  class="PARRAFO">El formulario contiene las opciones Actualizar, 
-              Eliminar, Adicionar y Detalle.</p>
-            <p  class="PARRAFO"><span class="SUBTITULO">Adicionar:</span> 
-              si el usuario invoca la opción Adicionar, se despliega un 
-              nuevo formulario con los siguientes campos.</p>
-            <p class="TITLE"><img src="../img/DBF_019E17.PNG"528" height="307"></p>
-            
-            <p  class="TITLE">Descripción de campos</p>
-            <div> 
-              <table>
-                <tr> 
-                  <td class="titletable"  ><p class="SUBTITULO"><span >Documento</p></td>
-                  <td><p  class="PARRAFO">Campo 
-                      obligatorio con lista de valores que permite seleccionar el <a href="DBH_019B.html#BL_DOCUMENTOS" >documento 
-                      </a> que se desea exigir al cliente en la etapa actual.</p></td>
-                </tr>
-                <tr> 
-                  <td class="titletable"><p class="SUBTITULO"><span >Natural 
-                      empleado / Natural independiente / Natural sin ingresos / Representante 
-                      legal / Funcionarios / Empresa</p></td>
-                  <td><p  class="PARRAFO">En 
-                      este campo tipo combo se selecciona para cada una de las personas 
-                      entre Opcional y No aplica para indicar 
-                      si el documento debe ser entregado como requisito para el procesamiento 
-                      de la solicitud, queda a decisión de la entidad o si dicho 
-                      documento no tiene ninguna implicación para el tipo de solicitud.</p></td>
-                </tr>
-                <tr> 
-                  <td class="titletable"><p class="SUBTITULO"><span >Observaciones</p></td>
-                  <td><p  class="PARRAFO">Campo 
-                      alfanumérico que permite registrar información adicional 
-                      o aclaratoria en relación con cada uno de los documentos exigidos.</p></td>
-                </tr>
-              </table>
-            </div>
-            
-            <p  class="PARRAFO"><span class="SUBTITULO">Actualizar:</span> 
-              si el usuario selecciona un registro e invoca la opción Actualizar, 
-              se despliega un formulario en el cual el único campo NO modificable 
-              es Documento.</p>
-            <p class="TITLE"><img src="../img/DBF_019E18.PNG"532" height="301"></p>
-            
-            <p  class="PARRAFO"><span class="SUBTITULO">Detalle:</span> 
-              si el usuario selecciona un registro e invoca la opción Detalle, 
-              se despliega un formulario con la información completa del registro 
-              y en el cual ninguno de sus campos es modificable.</p>
-            <p class="TITLE"><img src="../img/DBF_019E19.PNG"361" height="280"></p>
-            
-            <p  class="PARRAFO"><a name="BL_COPIAR"></a><span class="SUBTITULO"><span >Copiar 
-              parámetros:</span></span><span > 
-              si el usuario selecciona un tipo de solicitud e invoca el hipervínculo 
-              Copiar parámetros, se despliega un nuevo formulario que le permite 
-              replicar los parámetros del producto actual a otro producto diferente, 
-              agilizando el proceso de parametrización.</p>
-            <p class="TITLE"><img src="../img/DBF_019E20.PNG"460" ></p>
+                <p class="PARRAFO">El formulario contiene además de las
+                  opciones Eliminar y Adicionar, un hipervínculo a través del
+                  cual se asocian a cada etapa los <a
+                    href="DBH_019B1.html#BL_DOCUMENTOS">documentos</a>
+                  exigibles al cliente.</p>
+                <p class="PARRAFO"><span class="SUBTITULO">Adicionar:</span>
+                  Al activar ese enlace, se despliega un
+                  wizard de dos pasos en el cual se ingresan las diferentes
+                  etapas asociadas
+                  con el producto y tipo de solicitud y se les asigna el orden
+                  secuencial en
+                  el cual se deben avanzar.</p>
+                <p class="TITLE"><img src="../img/DBF_019E14.PNG"361"></p>
+                <p class="TITLE">Descripción de campos</p>
+                <div>
+                  <table>
+                    <tr>
+                      <td class="titletable"><p
+                          class="SUBTITULO"><span>Descripción
+                            etapa </p></td>
+                        <td><p class="PARRAFO">Campo
+                            obligatorio con lista de valores que permite
+                            seleccionar la <a href="DBH_019B.html">etapa</a>
+                            que se desea asociar al tipo de solicitud.</p></td>
+                      </tr>
+                      <tr>
+                        <td class="titletable"><p
+                            class="SUBTITULO"><span>Orden</p></td>
+                          <td><p class="PARRAFO">En
+                              este campo numérico de hasta 2 dígitos,
+                              obligatorio,
+                              se registra el orden en el que debe ir la etapa
+                              que se está
+                              asociando al tipo de solicitud.</p></td>
+                        </tr>
+                      </table>
+                    </div>
 
-            <p  class="TITLE">Descripción de campos</p>
-            <div> 
-              <table>
-                <tr> 
-                  <td class="titletable"  ><p class="SUBTITULO"><span >Producto 
-                      origen </p></td>
-                  <td><p  class="PARRAFO">Campo 
-                      de salida que muestra el producto actual seleccionado por el usuario 
-                      y que contiene los parámetros que se desea copiar o replicar.</p></td>
-                </tr>
-                <tr> 
-                  <td class="titletable"><p class="SUBTITULO"><span >Producto 
-                      destino </p></td>
-                  <td><p  class="PARRAFO">En 
-                      este campo obligatorio con lista de valores, se selecciona el <a href="DBH_018B.html" >producto 
-                      débito</a> para el cual se desea copiar o replicar los 
-                      parámetros actuales del producto de origen.</p></td>
-                </tr>
-              </table>
-            </div>
+                    <p class="PARRAFO">Después de haber ingresado los datos
+                      de cada etapa, mediante el segundo botón del wizard se van
+                      adicionando
+                      una a una y luego al desplazarse a la segunda página se
+                      muestra el
+                      resumen de todas desplegando para cada una el código de la
+                      etapa, la
+                      descripción y el orden. El formulario cuenta con un check
+                      que permite
+                      marcar aquellas etapas que no se desea adicionar.</p>
+                    <p class="PARRAFO">Es importante para el usuario tener en
+                      cuenta,
+                      que en este proceso inicial de adición el sistema requiere
+                      que las
+                      etapas sean ingresadas de manera que tengan un orden
+                      estrictamente secuencial,
+                      puesto que de lo contrario no se permitirá guardar los
+                      registros en
+                      la base de datos.</p>
+                    <p class="TITLE"><img src="../img/DBF_019E15.PNG"739"></p>
 
-            <div>
-            </section>
-    <script src="../js/menu.js"></script>
-</body>
-<div id="footerContainer"></div>
-<script>
+                    <p class="PARRAFO"><a name="BL_DOCUMENTOS"></a><span
+                        class="SUBTITULO"><span>Documentos:</span></span><span>
+                        si el usuario selecciona una etapa definida para un tipo
+                        de solicitud e invoca
+                        el hipervínculo Documentos, se despliega un nuevo
+                        formulario
+                        en el que se muestran los documentos que la entidad
+                        solicita al cliente para
+                        poder procesar su solicitud.</p>
+                      <p class="TITLE"><img src="../img/DBF_019E16.PNG"769"></p>
+
+                      <p class="PARRAFO">El formulario contiene los enlaces:
+                        Actualizar,
+                        Eliminar, Adicionar y Detalle.</p>
+                      <p class="PARRAFO"><span
+                          class="SUBTITULO">Adicionar:</span>
+                        Al activar ese enlace, se despliega
+                        un
+                        nuevo formulario con los siguientes campos.</p>
+                      <p class="TITLE"><img src="../img/DBF_019E17.PNG"528"
+                          height="307"></p>
+
+                      <p class="TITLE">Descripción de campos</p>
+                      <div>
+                        <table>
+                          <tr>
+                            <td class="titletable"><p
+                                class="SUBTITULO"><span>Documento</p></td>
+                              <td><p class="PARRAFO">Campo
+                                  obligatorio con lista de valores que permite
+                                  seleccionar el <a
+                                    href="DBH_019B.html#BL_DOCUMENTOS">documento
+                                  </a> que se desea exigir al cliente en la
+                                  etapa actual.</p></td>
+                            </tr>
+                            <tr>
+                              <td class="titletable"><p
+                                  class="SUBTITULO"><span>Natural
+                                    empleado / Natural independiente / Natural
+                                    sin ingresos / Representante
+                                    legal / Funcionarios / Empresa</p></td>
+                                <td><p class="PARRAFO">En
+                                    este campo tipo combo se selecciona para
+                                    cada una de las personas
+                                    entre Opcional y No aplica para indicar
+                                    si el documento debe ser entregado como
+                                    requisito para el procesamiento
+                                    de la solicitud, queda a decisión de la
+                                    entidad o si dicho
+                                    documento no tiene ninguna implicación para
+                                    el tipo de solicitud.</p></td>
+                              </tr>
+                              <tr>
+                                <td class="titletable"><p
+                                    class="SUBTITULO"><span>Observaciones</p></td>
+                                  <td><p class="PARRAFO">Campo
+                                      alfanumérico que permite registrar
+                                      información adicional
+                                      o aclaratoria en relación con cada uno de
+                                      los documentos exigidos.</p></td>
+                                </tr>
+                              </table>
+                            </div>
+
+                            <p class="PARRAFO"><span
+                                class="SUBTITULO">Actualizar:</span>
+                              si el usuario selecciona un registro e invoca la
+                              opción Actualizar,
+                              se despliega un formulario en el cual el único
+                              campo NO modificable
+                              es Documento.</p>
+                            <p class="TITLE"><img
+                                src="../img/DBF_019E18.PNG"532"
+                                height="301"></p>
+
+                            <p class="PARRAFO"><span
+                                class="SUBTITULO">Detalle:</span>
+                              si el usuario selecciona un registro e invoca la
+                              opción Detalle,
+                              se despliega un formulario con la información
+                              completa del registro
+                              y en el cual ninguno de sus campos es
+                              modificable.</p>
+                            <p class="TITLE"><img
+                                src="../img/DBF_019E19.PNG"361"
+                                height="280"></p>
+
+                            <p class="PARRAFO"><a name="BL_COPIAR"></a><span
+                                class="SUBTITULO"><span>Copiar
+                                  parámetros:</span></span><span>
+                                si el usuario selecciona un tipo de solicitud e
+                                invoca el hipervínculo
+                                Copiar parámetros, se despliega un nuevo
+                                formulario que le permite
+                                replicar los parámetros del producto actual a
+                                otro producto diferente,
+                                agilizando el proceso de parametrización.</p>
+                              <p class="TITLE"><img
+                                  src="../img/DBF_019E20.PNG"460"></p>
+
+                              <p class="TITLE">Descripción de campos</p>
+                              <div>
+                                <table>
+                                  <tr>
+                                    <td class="titletable"><p
+                                        class="SUBTITULO"><span>Producto
+                                          origen </p></td>
+                                      <td><p class="PARRAFO">Campo
+                                          de salida que muestra el producto
+                                          actual seleccionado por el usuario
+                                          y que contiene los parámetros que se
+                                          desea copiar o replicar.</p></td>
+                                    </tr>
+                                    <tr>
+                                      <td class="titletable"><p
+                                          class="SUBTITULO"><span>Producto
+                                            destino </p></td>
+                                        <td><p class="PARRAFO">En
+                                            este campo obligatorio con lista de
+                                            valores, se selecciona el <a
+                                              href="DBH_018B.html">producto
+                                              débito</a> para el cual se desea
+                                            copiar o replicar los
+                                            parámetros actuales del producto de
+                                            origen.</p></td>
+                                      </tr>
+                                    </table>
+                                  </div>
+
+                                  <div>
+                                  </section>
+                                  <script src="../js/menu.js"></script>
+                                </body>
+                                <div id="footerContainer"></div>
+                                <script>
   fetch('footer.html')
     .then(response => response.text())
     .then(html => {
       document.getElementById('footerContainer').innerHTML = html;
     });
 </script>
-</html>
+                              </html>

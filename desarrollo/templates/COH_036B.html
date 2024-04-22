@@ -1,25 +1,26 @@
 <!DOCTYPE html>
 <html lang="es">
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>BANKBU®</title>
-    <link rel="stylesheet" href="../css/pages.css">
-    <link rel="stylesheet" href="../css/style.css">
-    <link rel="icon" href="../img/ACQUIRER-logo.JPG" type="image/x-icon">
-</head>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>BANKBU®</title>
+        <link rel="stylesheet" href="../css/pages.css">
+        <link rel="stylesheet" href="../css/style.css">
+        <link rel="icon" href="../img/ACQUIRER-logo.JPG" type="image/x-icon">
+    </head>
 
-<body>
+    <body>
 
-    <header>
-        <img class="logo" src="../img/logoBankbu_.PNG" alt="Logo de Mi Empresa">
-        <div id="menuBtn">
-            <img class="TITLE" src="../img/menu.PNG" alt="Botón de Menú ">
-        </div>
-    </header>
-      <div id="menuContainer"></div>
-  <script>
+        <header>
+            <img class="logo" src="../img/logoBankbu_.PNG"
+                alt="Logo de Mi Empresa">
+            <div id="menuBtn">
+                <img class="TITLE" src="../img/menu.PNG" alt="Botón de Menú ">
+            </div>
+        </header>
+        <div id="menuContainer"></div>
+        <script>
     fetch('menu.html')
       .then(response => response.text())
       .then(html => {
@@ -27,77 +28,96 @@
       });
   </script>
 
-    <section>
-        <div>
-            <table>
-                <tr>
-                    <td>
-                        <div>
-                            <p class="TITLE">Autorizaciones VIP </p>
-                        </div>
-                    </td>
-                </tr>
-            </table>
-            <p class="PARRAFO">Mediante esta opción, el actor puede consultar aquellas tarjetas a las que por
-                cualquier circustancia se les negó una autorización y que por el tipo de cliente a quien
-                pertenece la tarjeta o por políticas de la entidad, se le debe permitir efectuar la
-                transacción.</p>
-            <p class="PARRAFO">Debe tenerse en cuenta que si se trata de una autorización <a
-                        href="COH_035B.html">referida</a>, la solución se debe dar desde esa opción
-                en particular y no mediante autorizaciones VIP. </p>
-            <p class="PARRAFO">Al ingresar al formulario se despliega un filtro inicial en el cual el actor debe
-                diligenciar de manera obligatoria el número de la tarjeta a la que se le negó la
-                autorización. </p>
+        <section>
+            <div>
 
-            <p class="TITLE"><img src="../img/COF_036B.PNG"></p>
+                <p class="TITLE">Autorizaciones VIP </p>
 
-            <p class="PARRAFO">Una vez ingresado el número de la tarjeta, mediante el botón Cargar
-                    información el sistema busca la información de la misma en la tabla de referidos
-                y despliega el formulario correspondiente. </p>
-            <p class="PARRAFO">Con excepción del campo 'Observaciones autorización' que es el único
-                editable por el actor, todos los demás campos se toman de la tabla de referidos donde son
-                actualizados mediante el cargue de un archivo de referidos ejecutado desde automatización de
-                procesos. </p>
-            <p class="PARRAFO">Nota importante: este formulario requiere que exista información para la tarjeta en la
-                tabla de referidos (CO_REFERRAL); si la tarjeta seleccionada en el filtro no existe en dicha tabla, al
-                utilizar el botón Cargar información se despliega un mensaje indicando este
-                evento al actor y no le permite ingresar al formulario correspondiente. </p>
+                <p class="PARRAFO">Mediante esta opción, el actor puede
+                    consultar aquellas tarjetas a las que por
+                    cualquier circustancia se les negó una autorización y que
+                    por el tipo de cliente a quien
+                    pertenece la tarjeta o por políticas de la entidad, se le
+                    debe permitir efectuar la
+                    transacción.</p>
+                <p class="PARRAFO">Debe tenerse en cuenta que si se trata de una
+                    autorización <a
+                        href="COH_035B.html">referida</a>, la solución se debe
+                    dar desde esa opción
+                    en particular y no mediante autorizaciones VIP. </p>
+                <p class="PARRAFO">Al ingresar al formulario se despliega un
+                    filtro inicial en el cual el actor debe
+                    diligenciar de manera obligatoria el número de la tarjeta a
+                    la que se le negó la
+                    autorización. </p>
 
-            <p class="TITLE"><img src="../img/COF_036B1.PNG"></p>
+                <p class="TITLE"><img src="../img/COF_036B.PNG"></p>
 
-            <table>
-                <tr>
-                    <td class="titletable">
-                        <p class="SUBTITULO">Número de la tarjeta </p>
-                    </td>
-                    <td>
-                        <p class="PARRAFO">Este campo obligatorio muestra el número de tarjeta a la que pertenece
-                            la información desplegada.</p>
-                    </td>
-                </tr>
+                <p class="PARRAFO">Una vez ingresado el número de la tarjeta,
+                    mediante el botón Cargar
+                    información el sistema busca la información de la misma en
+                    la tabla de referidos
+                    y despliega el formulario correspondiente. </p>
+                <p class="PARRAFO">Con excepción del campo
+                    'Observaciones autorización' que es el único
+                    editable por el actor, todos los demás campos se toman de la
+                    tabla de referidos donde son
+                    actualizados mediante el cargue de un archivo de referidos
+                    ejecutado desde automatización de
+                    procesos. </p>
+                <p class="PARRAFO">Nota importante: este formulario requiere que
+                    exista información para la tarjeta en la
+                    tabla de referidos (CO_REFERRAL); si la tarjeta seleccionada
+                    en el filtro no existe en dicha tabla, al
+                    utilizar el botón Cargar información se despliega un mensaje
+                    indicando este
+                    evento al actor y no le permite ingresar al formulario
+                    correspondiente. </p>
 
-                <tr>
-                    <td class="titletable">
-                        <p class="SUBTITULO">Recomendación sistema autorizador </p>
-                    </td>
-                    <td>
-                        <p class="PARRAFO">Campo alfanumérico de hasta 400 caracteres, obligatorio, en el cual el
-                            usuario del call center registra las observaciones para sustentar el motivo por el cual se
-                            negó o aprobó la autorización especial al cliente titular de la
-                            tarjeta.</p>
-                    </td>
-                </tr>
-            </table>
-            <p class="PARRAFO">El formulario contiene dos botones mediante los cuales el actor puede
-                aprobar o negar la autorización vip de acuerdo con las políticas de la entidad,
-                además del botón Cancelar que le permite regresar al formulario inicial que
-                contiene el filtro de consulta.</p>
-            
-    </section>
-    <script src="../js/menu.js"></script>
-</body>
-<div id="footerContainer"></div>
-<script>
+                <p class="TITLE"><img src="../img/COF_036B1.PNG"></p>
+
+                <table>
+                    <tr>
+                        <td class="titletable">
+                            <p class="SUBTITULO">Número de la tarjeta </p>
+                        </td>
+                        <td>
+                            <p class="PARRAFO">Este campo obligatorio muestra el
+                                número de tarjeta a la que pertenece
+                                la información desplegada.</p>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td class="titletable">
+                            <p class="SUBTITULO">Recomendación sistema
+                                autorizador </p>
+                        </td>
+                        <td>
+                            <p class="PARRAFO">Campo alfanumérico de hasta 400
+                                caracteres, obligatorio, en el cual el
+                                usuario del call center registra las
+                                observaciones para sustentar el motivo por el
+                                cual se
+                                negó o aprobó la autorización especial al
+                                cliente titular de la
+                                tarjeta.</p>
+                        </td>
+                    </tr>
+                </table>
+                <p class="PARRAFO">El formulario contiene dos botones mediante
+                    los cuales el actor puede
+                    aprobar o negar la autorización vip de acuerdo con las
+                    políticas de la entidad,
+                    además del botón Cancelar que le permite regresar al
+                    formulario inicial que
+                    contiene el filtro de consulta.</p>
+
+            </section>
+            <script src="../js/menu.js"></script>
+        </body>
+        <div id="footerContainer"></div>
+        <script>
   fetch('footer.html')
     .then(response => response.text())
     .then(html => {
@@ -105,4 +125,4 @@
     });
 </script>
 
-</html>
+    </html>

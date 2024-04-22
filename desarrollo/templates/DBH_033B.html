@@ -1,26 +1,26 @@
 <!DOCTYPE html>
 <html lang="es">
 
-<head>
+  <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>BANKBU®</title>
-  
+
     <link rel="stylesheet" href="../css/pages.css">
     <link rel="stylesheet" href="../css/style.css">
- <link rel="icon" href="../img/ACQUIRER-logo.JPG" type="image/x-icon">
-</head>
+    <link rel="icon" href="../img/ACQUIRER-logo.JPG" type="image/x-icon">
+  </head>
 
-<body>
+  <body>
 
     <header>
-        <img class="logo" src="../img/logoBankbu_.PNG" alt="Logo de Mi Empresa">
-        <div id="menuBtn">
-            <img class="TITLE"  src= "../img/menu.PNG" alt="Botón de Menú ">
-        </div>
+      <img class="logo" src="../img/logoBankbu_.PNG" alt="Logo de Mi Empresa">
+      <div id="menuBtn">
+        <img class="TITLE" src="../img/menu.PNG" alt="Botón de Menú ">
+      </div>
     </header>
-      <div id="menuContainer"></div>
-  <script>
+    <div id="menuContainer"></div>
+    <script>
     fetch('menu.html')
       .then(response => response.text())
       .then(html => {
@@ -29,147 +29,181 @@
   </script>
 
     <section>
-        <div> 
-            
-                    <p  class="TITLE">Administración de novedades débito</p>
-                  
-            <p  class="PARRAFO">Desde este formulario, se permite la aplicación 
-              de aquellas novedades que no pudieron ser aplicadas correctamente por errores 
-              durante el proceso, o de aquellas que de acuerdo con lo definido en la opción 
-              <a href="NUH_017B.html" > Novedades administrativas</a> 
-              la entidad haya determinado que se aplican en batch y no en línea.</p>
-            <p  class="PARRAFO">Al ingresar al formulario se despliega inicialmente 
-              un filtro en el cual el usuario define los criterios de las novedades que 
-              quiere seleccionar para aplicación.
-            </p>
-            <p class="TITLE"><img src="../img/DBF_033E.PNG"></p>
-            <p  class="TITLE">Descripción de campos</p>
-            <table>
-              <tr> 
-                <td class="titletable"  ><p class="SUBTITULO"><span > 
-                    Novedad</p></td>
-                <td><p  class="PARRAFO">En 
-                    este campo tipo combo en el que se permite seleccionar la <a href="NUH_017B.html" >Novedad 
+      <div>
+
+        <p class="TITLE">Administración de novedades débito</p>
+
+        <p class="PARRAFO">Desde este formulario, se permite la aplicación
+          de aquellas novedades que no pudieron ser aplicadas correctamente por
+          errores
+          durante el proceso, o de aquellas que de acuerdo con lo definido en la
+          opción
+          <a href="NUH_017B.html"> Novedades administrativas</a>
+          la entidad haya determinado que se aplican en batch y no en línea.</p>
+        <p class="PARRAFO">Al ingresar al formulario se despliega inicialmente
+          un filtro en el cual el usuario define los criterios de las novedades
+          que
+          quiere seleccionar para aplicación.
+        </p>
+        <p class="TITLE"><img src="../img/DBF_033E.PNG"></p>
+        <p class="TITLE">Descripción de campos</p>
+        <table>
+          <tr>
+            <td class="titletable"><p class="SUBTITULO"><span>
+                  Novedad</p></td>
+              <td><p class="PARRAFO">En
+                  este campo tipo combo en el que se permite seleccionar la <a
+                    href="NUH_017B.html">Novedad
                     administrativa</a> que se desea consultar. </p></td>
-              </tr>
-              <tr> 
-                <td class="titletable"><p class="SUBTITULO"><span > 
+            </tr>
+            <tr>
+              <td class="titletable"><p class="SUBTITULO"><span>
                     Tipo de identificación</p></td>
-                <td><p  class="PARRAFO">Campo 
-                    tipo combo en el cual se puede seleccionar el tipo de <a href="NUH_008B.html" >documento 
-                    de identificación</a> asociado a los clientes para los cuales 
+                <td><p class="PARRAFO">Campo
+                    tipo combo en el cual se puede seleccionar el tipo de <a
+                      href="NUH_008B.html">documento
+                      de identificación</a> asociado a los clientes para los
+                    cuales
                     se desea consultar novedades.</p></td>
               </tr>
-              <tr> 
-                <td class="titletable"><p class="SUBTITULO"><span > 
-                    Número de identificación</p></td>
-                <td><p  class="PARRAFO">En 
-                    este campo numérico de hasta 16 caracteres se ingresa el número 
-                    de identificación del cliente para el cual se desea consultar 
-                    novedades. </p></td>
-              </tr>
-              <tr> 
-                <td class="titletable"><p class="SUBTITULO"><span > 
-                    Fecha grabación</span> inicial </p></td>
-                <td><p  class="PARRAFO">Campo 
-                    que permite ingresar en formato YYYY-MM-DD la fecha específica 
-                    en la cual se grabaron las novedades que se desea consultar.</p></td>
-              </tr>
               <tr>
-                <td class="titletable"><p class="SUBTITULO"><span > Fecha grabación</span> final </p></td>
-                <td><p  class="PARRAFO">Campo 
-                  que permite ingresar en formato YYYY-MM-DD la fecha específica 
-                  en la cual se grabaron las novedades que se desea consultar.</p></td>
-              </tr>
-            </table>
+                <td class="titletable"><p class="SUBTITULO"><span>
+                      Número de identificación</p></td>
+                  <td><p class="PARRAFO">En
+                      este campo numérico de hasta 16 caracteres se ingresa el
+                      número
+                      de identificación del cliente para el cual se desea
+                      consultar
+                      novedades. </p></td>
+                </tr>
+                <tr>
+                  <td class="titletable"><p class="SUBTITULO"><span>
+                        Fecha grabación</span> inicial </p></td>
+                  <td><p class="PARRAFO">Campo
+                      que permite ingresar en formato YYYY-MM-DD la fecha
+                      específica
+                      en la cual se grabaron las novedades que se desea
+                      consultar.</p></td>
+                </tr>
+                <tr>
+                  <td class="titletable"><p class="SUBTITULO"><span> Fecha
+                        grabación</span> final </p></td>
+                  <td><p class="PARRAFO">Campo
+                      que permite ingresar en formato YYYY-MM-DD la fecha
+                      específica
+                      en la cual se grabaron las novedades que se desea
+                      consultar.</p></td>
+                </tr>
+              </table>
 
-            <p  class="PARRAFO">Una vez que se han ingresado los criterios 
-              a utilizar para seleccionar las novedades que se desea gestionar, mediante 
-              el botón buscar el sistema efectúa la consulta y despliega un 
-              formularaio con los resultados
-            </p>
-            <p class="TITLE"><img src="../img/DBF_033E1.PNG"></p>
-            <p  class="TITLE">Descripción de campos</p>
-            <table>
-              <tr> 
-                <td class="titletable"  ><p class="SUBTITULO"><span > 
-                    Tipo novedad</p></td>
-                <td><p  class="PARRAFO">Despliega 
-                    la abreviatura asociada a cada tipo o clase de novedad, parametrizadas 
-                    mediante la opción <a href="NUH_017B.html" >Novedades 
-                    administrativas</a>.
-                  </p></td>
-              </tr>
+              <p class="PARRAFO">Una vez que se han ingresado los criterios
+                a utilizar para seleccionar las novedades que se desea
+                gestionar, mediante
+                el botón buscar el sistema efectúa la consulta y despliega un
+                formularaio con los resultados
+              </p>
+              <p class="TITLE"><img src="../img/DBF_033E1.PNG"></p>
+              <p class="TITLE">Descripción de campos</p>
+              <table>
+                <tr>
+                  <td class="titletable"><p class="SUBTITULO"><span>
+                        Tipo novedad</p></td>
+                    <td><p class="PARRAFO">Despliega
+                        la abreviatura asociada a cada tipo o clase de novedad,
+                        parametrizadas
+                        mediante la opción <a href="NUH_017B.html">Novedades
+                          administrativas</a>.
+                      </p></td>
+                  </tr>
 
-              <tr> 
-                <td class="titletable"  ><p class="SUBTITULO"><span > 
-                    Cliente</p></td>
-                <td><p  class="PARRAFO">En 
-                    este campo se muestra el nombre del cliente a quien corresponde la novedad.</p></td>
-              </tr>
-              <tr> 
-                <td class="titletable"><p class="SUBTITULO"><span > 
-                    Clase</p></td>
-                <td><p  class="PARRAFO">Campo 
-                    de salida en el que se indica si la novedad es Nueva es decir 
-                    que corresponde a la inclusión de información, una Modificación 
-                    o Eliminación de datos previamente existentes, brindando 
-                    un criterio adicional para su evaluación, en caso de ser necesario.
-                  </p></td>
-              </tr>
-              <tr> 
-                <td class="titletable"><p class="SUBTITULO"><span > 
-                    Fecha de grabación</p></td>
-                <td><p  class="PARRAFO">En 
-                    este campo se muestra en formato YYYY-MM-DD la fecha específica 
-                    en la cual se grabó la novedad.</p></td>
-              </tr>
-              <tr> 
-                <td class="titletable"><p class="SUBTITULO"><span > 
-                    Fecha de aplicación </p></td>
-                <td><p  class="PARRAFO">Campo 
-                    que muestra en formato YYYY-MM-DD la fecha en que se aplicó exitosamente 
-                    la novedad en el sistema. Difiere de la fecha de grabación para 
-                    las novedades que presentan errores de datos, o para las que no son 
-                    de aplicación en línea.</p></td>
-              </tr>
-              <tr> 
-                <td class="titletable"><p class="SUBTITULO"><span > 
-                    Estado</p></td>
-                <td><p  class="PARRAFO">Muestra 
-                    la opción Aplicada, asociada a la 
-                    novedad, lo que permite diferenciar las novedades ingresadas 
-                    al sistema.</p></td>
-              </tr>
-              <tr> 
-                <td class="titletable"><p class="SUBTITULO"><span > 
-                    Indicador</p></td>
-                <td><p  class="PARRAFO">En 
-                    este campo se muestra el indicador actual de la novedad y que siempre será Aplicada.</p></td>
-              </tr>
-              <tr> 
-                <td class="titletable"><p class="SUBTITULO"><span > 
-                    Mensaje</p></td>
-                <td><p  class="PARRAFO">Si 
-                    durante el proceso de aplicación de la novedad se presentó 
-                    algún error que no permitió su correcta aplicación, 
-                    en este campo se despliega el mensaje en el cual se indica al usuario 
-                    la causa de tal evento.</p></td>
-              </tr>
-            </table>
-            <p  class="PARRAFO"><span class="SUBTITULO">Detalle</span>: 
-              Si el usuario selecciona un registro e invoca la opción Detalle se 
-              puede invocar el formulario a través del cual se capturó la 
-              novedad.</p>
-            </section>
-    <script src="../js/menu.js"></script>
-</body>
-<div id="footerContainer"></div>
-<script>
+                  <tr>
+                    <td class="titletable"><p class="SUBTITULO"><span>
+                          Cliente</p></td>
+                      <td><p class="PARRAFO">En
+                          este campo se muestra el nombre del cliente a quien
+                          corresponde la novedad.</p></td>
+                    </tr>
+                    <tr>
+                      <td class="titletable"><p class="SUBTITULO"><span>
+                            Clase</p></td>
+                        <td><p class="PARRAFO">Campo
+                            de salida en el que se indica si la novedad es Nueva
+                            es decir
+                            que corresponde a la inclusión de información, una
+                            Modificación
+                            o Eliminación de datos previamente existentes,
+                            brindando
+                            un criterio adicional para su evaluación, en caso de
+                            ser necesario.
+                          </p></td>
+                      </tr>
+                      <tr>
+                        <td class="titletable"><p class="SUBTITULO"><span>
+                              Fecha de grabación</p></td>
+                          <td><p class="PARRAFO">En
+                              este campo se muestra en formato YYYY-MM-DD la
+                              fecha específica
+                              en la cual se grabó la novedad.</p></td>
+                        </tr>
+                        <tr>
+                          <td class="titletable"><p class="SUBTITULO"><span>
+                                Fecha de aplicación </p></td>
+                            <td><p class="PARRAFO">Campo
+                                que muestra en formato YYYY-MM-DD la fecha en
+                                que se aplicó exitosamente
+                                la novedad en el sistema. Difiere de la fecha de
+                                grabación para
+                                las novedades que presentan errores de datos, o
+                                para las que no son
+                                de aplicación en línea.</p></td>
+                          </tr>
+                          <tr>
+                            <td class="titletable"><p class="SUBTITULO"><span>
+                                  Estado</p></td>
+                              <td><p class="PARRAFO">Muestra
+                                  la opción Aplicada, asociada a la
+                                  novedad, lo que permite diferenciar las
+                                  novedades ingresadas
+                                  al sistema.</p></td>
+                            </tr>
+                            <tr>
+                              <td class="titletable"><p class="SUBTITULO"><span>
+                                    Indicador</p></td>
+                                <td><p class="PARRAFO">En
+                                    este campo se muestra el indicador actual de
+                                    la novedad y que siempre será
+                                    Aplicada.</p></td>
+                              </tr>
+                              <tr>
+                                <td class="titletable"><p
+                                    class="SUBTITULO"><span>
+                                      Mensaje</p></td>
+                                  <td><p class="PARRAFO">Si
+                                      durante el proceso de aplicación de la
+                                      novedad se presentó
+                                      algún error que no permitió su correcta
+                                      aplicación,
+                                      en este campo se despliega el mensaje en
+                                      el cual se indica al usuario
+                                      la causa de tal evento.</p></td>
+                                </tr>
+                              </table>
+                              <p class="PARRAFO"><span
+                                  class="SUBTITULO">Detalle</span>:
+                                Si el usuario selecciona un registro e invoca la
+                                opción Detalle se
+                                puede invocar el formulario a través del cual se
+                                capturó la
+                                novedad.</p>
+                            </section>
+                            <script src="../js/menu.js"></script>
+                          </body>
+                          <div id="footerContainer"></div>
+                          <script>
   fetch('footer.html')
     .then(response => response.text())
     .then(html => {
       document.getElementById('footerContainer').innerHTML = html;
     });
 </script>
-</html>
+                        </html>

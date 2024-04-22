@@ -31,70 +31,59 @@
       <div>
         <p class="TITLE">Cargos de Usuario</p>
 
-        <p class="PARRAFO">Mediante esta función se habilita
-          la consulta y mantenimiento de la tabla que contiene los
-          códigos y
-          el nombre de los cargos desempe&ntilde;ados tanto por los diferentes
-          funcionarios
-          dentro de la entidad como por los clientes de la misma; esta
-          codificación
-          puede ser utilizada, por ejemplo, para asignar valores o cupos
-          diferenciales
-          a los clientes acorde con los ingresos asociados a los cargos
-          desempe&ntilde;ados
-          por los mismos.</p>
+        <p class="PARRAFO">Mediante esta opción, se habilita la consulta y
+          mantenimiento de la tabla que contiene los códigos y el nombre de los
+          cargos desempeñados por los funcionarios dentro de la entidad.</p>
         <p class="TITLE"><img src="../img/NUF_040E.PNG"></p>
 
         <p class="PARRAFO"><span>El
-            formulario contiene las opciones Actualizar, Eliminar y
+            formulario contiene los enlaces:Actualizar, Eliminar y
             Adicionar.</p>
-        <p class="PARRAFO"><span class="SUBTITULO">Adicionar:</span>
-          Si el usuario invoca la opción Adicionar se despliega el
-          siguiente
-          formulario:</p>
-        <p class="TITLE"><img src="../img/NUF_040E1.PNG"></p>
-        <div>
-          <table>
-            <tr>
-              <td>
-                <p class="SUBTITULO"><span>Cargo</span><span></p></td>
-              <td><p class="PARRAFO">Campo
-                  numérico de tres posiciones, obligatorio, asignado a
-                  cada uno
-                  de los diversos cargos existentes dentro de cualesquiera
-                  organización
-                  productiva o de servicios, pública o privada.</p></td>
-            </tr>
-            <tr>
-              <td class="titletable"><p
-                  class="SUBTITULO"><span>Descripción</p></td>
-              <td><p class="PARRAFO">Campo
-                  alfanumérico, obligatorio, que almacena, en un
-                  máximo
-                  de 30 caracteres, el nombre o descripción del cargo
-                  asociado
-                  a cada código.</p></td>
-            </tr>
-          </table>
-        </div>
-        <p class="PARRAFO"><span class="SUBTITULO">Actualizar:</span>
-          Si el usuario invoca la opción Actualizar se despliega un nuevo
-          formulario
-          en el cual el único campo modificable es:
-          Descripción.</p>
-        <p class="TITLE"><img src="../img/NUF_040E2.PNG"></p>
-      </div>
-    </section>
-    <script src="../js/menu.js"></script>
+          <p class="PARRAFO"><span class="SUBTITULO">Adicionar:</span>
+            Al activar ese enlace se despliega el
+            siguiente
+            formulario:</p>
+          <p class="TITLE"><img src="../img/NUF_040E1.PNG"></p>
+          <div>
+            <table>
+              <tr>
+                <td>
+                  <p class="SUBTITULO"><span>Cargo</span><span></p></td>
+                  <td><p class="PARRAFO">
+                      Campo numérico de tres posiciones, obligatorio, asignado a
+                      cada uno de los diversos cargos existentes dentro de la
+                      entidad.</p></td>
+                </tr>
+                <tr>
+                  <td class="titletable"><p
+                      class="SUBTITULO"><span>Descripción</p></td>
+                    <td><p class="PARRAFO">Campo
+                        alfanumérico, obligatorio, que almacena, en un
+                        máximo
+                        de 30 caracteres, el nombre o descripción del cargo
+                        asociado
+                        a cada código.</p></td>
+                  </tr>
+                </table>
+              </div>
+              <p class="PARRAFO"><span class="SUBTITULO">Actualizar:</span>
+                Al activar ese enlace se despliega un nuevo
+                formulario
+                en el cual el único campo modificable es:
+                Descripción.</p>
+              <p class="TITLE"><img src="../img/NUF_040E2.PNG"></p>
+            </div>
+          </section>
+          <script src="../js/menu.js"></script>
 
-    <div id="footerContainer"></div>
-    <script>
+          <div id="footerContainer"></div>
+          <script>
   fetch('footer.html')
     .then(response => response.text())
     .then(html => {
       document.getElementById('footerContainer').innerHTML = html;
     });
 </script>
-  </body>
+        </body>
 
-</html>
+      </html>

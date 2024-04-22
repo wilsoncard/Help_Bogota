@@ -1,26 +1,26 @@
 <!DOCTYPE html>
 <html lang="es">
 
-<head>
+  <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>BANKBU®</title>
 
     <link rel="stylesheet" href="../css/pages.css">
     <link rel="stylesheet" href="../css/style.css">
- <link rel="icon" href="../img/ACQUIRER-logo.JPG" type="image/x-icon">
-</head>
+    <link rel="icon" href="../img/ACQUIRER-logo.JPG" type="image/x-icon">
+  </head>
 
-<body>
+  <body>
 
     <header>
-        <img class="logo" src="../img/logoBankbu_.PNG" alt="Logo de Mi Empresa">
-        <div id="menuBtn">
-            <img class="TITLE"  src= "../img/menu.PNG" alt="Botón de Menú ">
-        </div>
+      <img class="logo" src="../img/logoBankbu_.PNG" alt="Logo de Mi Empresa">
+      <div id="menuBtn">
+        <img class="TITLE" src="../img/menu.PNG" alt="Botón de Menú ">
+      </div>
     </header>
-      <div id="menuContainer"></div>
-  <script>
+    <div id="menuContainer"></div>
+    <script>
     fetch('menu.html')
       .then(response => response.text())
       .then(html => {
@@ -29,108 +29,140 @@
   </script>
 
     <section>
-        <div> 
-            
-                    <p  class="TITLE">Definición de productos - Parámetros especiales de mora</p>
-                  
-            
-            <p  class="PARRAFO">Esta opción que se invoca desde el formulario <a href="MEH_002B.html" >Definición de productos</a>, le permite a la entidad  asociar el código de bloqueo que va a afectar a las tarjetas   internacionales pertenecientes al producto que se está parametrizando, de acuerdo con la altura de mora y el monto de la   misma. </p>
-           <p class="TITLE"><img src="../img/MEF_002E29.PNG"634" height="364"></p>
+      <div>
 
-            <p  class="PARRAFO">El formulario contiene las opciones Actualizar, Eliminar, Adicionar y Detalle.</p>
-            <p  class="PARRAFO"><span class="SUBTITULO">Adicionar:</span> si el usuario invoca la opción Adicionar se despliega un nuevo formulario con los siguientes campos.</p>
-            <p class="TITLE"><img src="../img/MEF_002E30.PNG"405" height="319"></p>
+        <p class="TITLE">Definición de productos - Parámetros especiales de
+          mora</p>
 
-            <div  class="PARRAFO">
-              <p  class="TITLE">Descripción de campos</p>
-              <table>
-                <tr> 
-                  <td class="titletable" ><p class="SUBTITULO">Rango inicial antiguedad
-                      </p></td>
-                  <td><p  class="PARRAFO">Campo 
-                  numérico de hasta 3 dígitos, obligatorio, en el cual se registra la antiguedad mínima expresada en a&ntilde;os que debe tener la tarjeta para poder ser afectada con determinado bloqueo.</p></td>
-                </tr>
-   
-                <tr> 
-                  <td class="titletable" ><p class="SUBTITULO">Rango final antiguedad
-                     
-                     
-                      </p></td>
-                  <td><p  class="PARRAFO">Este 
-                  campo numérico de 3 dígitos, obligatorio, permite indicar la antiguedad máxima expresada en a&ntilde;os que debe tener la tarjeta para poder ser afectada con el bloqueo. </p></td>
-                </tr>
-   
-                <tr> 
-                  <td class="titletable" ><p class="SUBTITULO">Periodo inicial mora
-                     
-                     
-                      </p></td>
-                  <td><p  class="PARRAFO">Campo obligatorio de hasta 2 enteros en el que se registra la altura de mora mínima que debe tener la tarjeta para poder ser afectada con determinado bloqueo.</p></td>
-                </tr>
-                <tr>
-                  <td class="titletable" ><p class="SUBTITULO">Periodo final mora
-                           
-                           
-                  </p></td>
-                  <td><p  class="PARRAFO">En este campo de 2 dígitos, obligatorio, se indica la altura máxima de mora que puede presentar la tarjeta para que se le pueda aplicar el bloqueo.</p></td>
-                </tr>
-   
-                <tr>
-                  <td class="titletable" ><p class="SUBTITULO">Monto mínimo mora
-                           
-                           
-                  </p></td>
-                  <td><p  class="PARRAFO">Campo obligatorio de 14 enteros y 2 decimales en el que se registra el monto mínimo del capital en mora que debe presentar la tarjeta para poder ser afectada con el bloqueo.</p></td>
-                </tr>
-   
-                <tr>
-                  <td class="titletable" ><p class="SUBTITULO">Monto máximo mora
-                           
-                           
-                  </p></td>
-                  <td><p  class="PARRAFO">En este campo obligatorio de 14 enteros y 2 decimales, se indica el monto máximo de capital en mora que puede tener la tarjeta para que se le pueda explicar el bloqueo.</p></td>
-                </tr>
-   
-                <tr>
-                  <td class="titletable" ><p class="SUBTITULO">Rango inicial cupo
-                           
-                           
-                  </p></td>
-                  <td><p  class="PARRAFO">Campo obligatorio de 14 enteros y 2 decimales en el que se registra el monto mínimo que debe tener asignado como cupo la tarjeta para poder ser afectada con el bloqueo.</p></td>
-                </tr>
-   
-                <tr>
-                  <td class="titletable" ><p class="SUBTITULO">Rango final cupo
-                           
-                           
-                  </p></td>
-                  <td><p  class="PARRAFO">En este campo obligatorio de 14 enteros y 2 decimales  se indica  el monto máximo que puede tener como cupo asignado la tarjeta para que se le pueda aplicar el bloqueo.</p></td>
-                </tr>
-   
-                <tr>
-                  <td class="titletable" ><p class="SUBTITULO">Bloqueo
-                           
-                           
-                  </p></td>
-                  <td><p  class="PARRAFO">Campo obligatorio con lista de valores, de la cual se selecciona el <a href="CAH_002B.html" >bloqueo</a> que se le va a aplicar a la tarjeta cuando cumpla todas las demás condiciones indicadas en los campos anteriores.</p></td>
-                </tr>
-              </table>
-              <p  class="PARRAFO">    
-              <p class="PARRAFO"><span class="SUBTITULO">Actualizar:</span> si el usuario selecciona un registro e invoca la opción Actualizar, se despliega un formulario en el cual el único campo modificable es el Bloqueo.</p>
-              <p class="TITLE"><img src="../img/MEF_002E31.PNG"405" height="319"></p>
-              <p  class="PARRAFO">    
-              <p  class="PARRAFO"><span class="SUBTITULO">Detalle:</span> si el usuario selecciona un registro e invoca la opción Detalle, se despliega un formulario con toda la información del registro y en el cual ninguno de los campos es modificable.<div  class="PARRAFO">
-                <p class="TITLE"><img src="../img/MEF_002E32.PNG"380" ></p>
-              </div>
-            </section>
-    <script src="../js/menu.js"></script>
-</body>
-<div id="footerContainer"></div>
-<script>
+        <p class="PARRAFO">Esta opción que se invoca desde el formulario <a
+            href="MEH_002B.html">Definición de productos</a>, le permite a la
+          entidad asociar el código de bloqueo que va a afectar a las tarjetas
+          internacionales pertenecientes al producto que se está parametrizando,
+          de acuerdo con la altura de mora y el monto de la misma. </p>
+        <p class="TITLE"><img src="../img/MEF_002E29.PNG"634" height="364"></p>
+
+        <p class="PARRAFO">El formulario contiene los enlaces: Actualizar,
+          Eliminar, Adicionar y Detalle.</p>
+        <p class="PARRAFO"><span class="SUBTITULO">Adicionar:</span> Al activar
+          ese enlace se despliega un formulario con los siguientes campos.</p>
+        <p class="TITLE"><img src="../img/MEF_002E30.PNG"405" height="319"></p>
+
+        <div class="PARRAFO">
+          <p class="TITLE">Descripción de campos</p>
+          <table>
+            <tr>
+              <td class="titletable"><p class="SUBTITULO">Rango inicial
+                  antiguedad
+                </p></td>
+              <td><p class="PARRAFO">Campo
+                  numérico de hasta 3 dígitos, obligatorio, en el cual se
+                  registra la antiguedad mínima expresada en a&ntilde;os que
+                  debe tener la tarjeta para poder ser afectada con determinado
+                  bloqueo.</p></td>
+            </tr>
+
+            <tr>
+              <td class="titletable"><p class="SUBTITULO">Rango final antiguedad
+
+                </p></td>
+              <td><p class="PARRAFO">Este
+                  campo numérico de 3 dígitos, obligatorio, permite indicar la
+                  antiguedad máxima expresada en a&ntilde;os que debe tener la
+                  tarjeta para poder ser afectada con el bloqueo. </p></td>
+            </tr>
+
+            <tr>
+              <td class="titletable"><p class="SUBTITULO">Periodo inicial mora
+
+                </p></td>
+              <td><p class="PARRAFO">Campo obligatorio de hasta 2 enteros en el
+                  que se registra la altura de mora mínima que debe tener la
+                  tarjeta para poder ser afectada con determinado
+                  bloqueo.</p></td>
+            </tr>
+            <tr>
+              <td class="titletable"><p class="SUBTITULO">Periodo final mora
+
+                </p></td>
+              <td><p class="PARRAFO">En este campo de 2 dígitos, obligatorio, se
+                  indica la altura máxima de mora que puede presentar la tarjeta
+                  para que se le pueda aplicar el bloqueo.</p></td>
+            </tr>
+
+            <tr>
+              <td class="titletable"><p class="SUBTITULO">Monto mínimo mora
+
+                </p></td>
+              <td><p class="PARRAFO">Campo obligatorio de 14 enteros y 2
+                  decimales en el que se registra el monto mínimo del capital en
+                  mora que debe presentar la tarjeta para poder ser afectada con
+                  el bloqueo.</p></td>
+            </tr>
+
+            <tr>
+              <td class="titletable"><p class="SUBTITULO">Monto máximo mora
+
+                </p></td>
+              <td><p class="PARRAFO">En este campo obligatorio de 14 enteros y 2
+                  decimales, se indica el monto máximo de capital en mora que
+                  puede tener la tarjeta para que se le pueda explicar el
+                  bloqueo.</p></td>
+            </tr>
+
+            <tr>
+              <td class="titletable"><p class="SUBTITULO">Rango inicial cupo
+
+                </p></td>
+              <td><p class="PARRAFO">Campo obligatorio de 14 enteros y 2
+                  decimales en el que se registra el monto mínimo que debe tener
+                  asignado como cupo la tarjeta para poder ser afectada con el
+                  bloqueo.</p></td>
+            </tr>
+
+            <tr>
+              <td class="titletable"><p class="SUBTITULO">Rango final cupo
+
+                </p></td>
+              <td><p class="PARRAFO">En este campo obligatorio de 14 enteros y 2
+                  decimales se indica el monto máximo que puede tener como cupo
+                  asignado la tarjeta para que se le pueda aplicar el
+                  bloqueo.</p></td>
+            </tr>
+
+            <tr>
+              <td class="titletable"><p class="SUBTITULO">Bloqueo
+
+                </p></td>
+              <td><p class="PARRAFO">Campo obligatorio con lista de valores, de
+                  la cual se selecciona el <a href="CAH_002B.html">bloqueo</a>
+                  que se le va a aplicar a la tarjeta cuando cumpla todas las
+                  demás condiciones indicadas en los campos anteriores.</p></td>
+            </tr>
+          </table>
+          <p class="PARRAFO">
+            <p class="PARRAFO"><span class="SUBTITULO">Actualizar:</span> si el
+              usuario selecciona un registro e invoca la opción Actualizar, se
+              despliega un formulario en el cual el único campo modificable es
+              el Bloqueo.</p>
+            <p class="TITLE"><img src="../img/MEF_002E31.PNG"405"
+                height="319"></p>
+            <p class="PARRAFO">
+              <p class="PARRAFO"><span class="SUBTITULO">Detalle:</span> si el
+                usuario selecciona un registro e invoca la opción Detalle, se
+                despliega un formulario con toda la información del registro y
+                en el cual ninguno de los campos es modificable.<div
+                  class="PARRAFO">
+                  <p class="TITLE"><img src="../img/MEF_002E32.PNG"380"></p>
+                </div>
+              </section>
+              <script src="../js/menu.js"></script>
+            </body>
+            <div id="footerContainer"></div>
+            <script>
   fetch('footer.html')
     .then(response => response.text())
     .then(html => {
       document.getElementById('footerContainer').innerHTML = html;
     });
 </script>
-</html>
+          </html>

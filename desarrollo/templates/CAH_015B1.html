@@ -1,25 +1,25 @@
 <!DOCTYPE html>
 <html lang="es">
 
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>BANKBU®</title>
-  <link rel="stylesheet" href="../css/pages.css">
-  <link rel="stylesheet" href="../css/style.css">
-  <link rel="icon" href="../img/ACQUIRER-logo.JPG" type="image/x-icon">
-</head>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BANKBU®</title>
+    <link rel="stylesheet" href="../css/pages.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="icon" href="../img/ACQUIRER-logo.JPG" type="image/x-icon">
+  </head>
 
-<body>
+  <body>
 
-  <header>
-    <img class="logo" src="../img/logoBankbu_.PNG" alt="Logo de Mi Empresa">
-    <div id="menuBtn">
-      <img class="TITLE" src="../img/menu.PNG" alt="Botón de Menú ">
-    </div>
-  </header>
+    <header>
+      <img class="logo" src="../img/logoBankbu_.PNG" alt="Logo de Mi Empresa">
+      <div id="menuBtn">
+        <img class="TITLE" src="../img/menu.PNG" alt="Botón de Menú ">
+      </div>
+    </header>
     <div id="menuContainer"></div>
-  <script>
+    <script>
     fetch('menu.html')
       .then(response => response.text())
       .then(html => {
@@ -27,96 +27,124 @@
       });
   </script>
 
-  <section>
-    <div>
-      
-              <p class="TITLE">Estadísticas colocaciones</p>
+    <section>
+      <div>
 
-      <p class="PARRAFO"><span class="SUBTITULO">Metas por sucursal:</span>  En este
-        espacio se define el aporte que debe hacer cada sucursal con su gestión,
-        para el cumplimiento del objetivo de la entidad.</p>
-      <p class="PARRAFO">El formulario contiene las opciones Actualizar, Eliminar,
-        Adicionar y Detalle. Adicionalmente, cuenta con un botón para volver
-        a la opción principal <a href="CAH_015B.html">Estadísticas colocaciones</a> .</p>
-            <p class="TITLE"><img src="../img/CAF_015B6.PNG"></p>
-            
-            <p  class="PARRAFO"><span class="SUBTITULO">Adicionar:</span>  Si el usuario invoca la opción Adicionar se despliega un formulario con los siguientes campos<span >:</p>
-            <p class="TITLE"><img src="../img/CAF_015B7.PNG"></p>
-            
-            <table>
-              <tr> 
-                <td class="titletable"><p class="SUBTITULO">Sucursal</p></td>
-                <td><p class="PARRAFO">De que de 
-                    acuerdo con el valor a distribuir fijado por la entidad, se determinan 
-                    las sucursales que deben contribuir para el cumplimiento del objetivo 
-                    que ésta se ha fijado. Este campo obligatorio contiene una lista de valores 
-                    previamente poblada en la opción <a href="NUH_020B.html">estructura 
-                    orgánica</a> del Núcleo, para facilitar la labor de asignación.</p></td>
-              </tr>
-              <tr> 
-                <td class="titletable"><p class="SUBTITULO">Producto</p></td>
-                <td><p class="PARRAFO">Campo obligatorio, que de 
-                    acuerdo con el valor a distribuir fijado por la entidad, se determinan 
-                    los <a href="MEH_002B.html">productos</a> (Bin, Segmento, Grupo) por 
-                    sucursal que deben contribuir para el cumplimiento del objetivo que 
-                    se ha fijado la entidad.</p></td>
-              </tr>
-              <tr> 
-                <td class="titletable" ><p class="SUBTITULO"><span >Colocaciones</p></td>
-                <td><p class="PARRAFO">Campo 
-                    de 6 posiciones, obligatorio, en el que se registra la cantidad de determinado 
-                    producto que debe colocar la sucursal para hacerse acreedora de la asignación 
-                    de la parte de utilidad obtenida por su gestión de acuerdo con 
+        <p class="TITLE">Estadísticas colocaciones</p>
+
+        <p class="PARRAFO"><span class="SUBTITULO">Metas por sucursal:</span> En
+          este
+          espacio se define el aporte que debe hacer cada sucursal con su
+          gestión,
+          para el cumplimiento del objetivo de la entidad.</p>
+        <p class="PARRAFO">El formulario contiene los enlaces: Actualizar,Eliminar, Adicionar y Detalle. Adicionalmente, cuenta con un botón para volver
+          a la opción principal <a href="CAH_015B.html">Estadísticas
+            colocaciones</a> .</p>
+        <p class="TITLE"><img src="../img/CAF_015B6.PNG"></p>
+
+        <p class="PARRAFO"><span class="SUBTITULO">Adicionar:</span> Si el
+          usuario invoca la opción Adicionar se despliega un formulario con los
+          siguientes campos<span>:</p>
+          <p class="TITLE"><img src="../img/CAF_015B7.PNG"></p>
+
+          <table>
+            <tr>
+              <td class="titletable"><p class="SUBTITULO">Sucursal</p></td>
+              <td><p class="PARRAFO">De que de
+                  acuerdo con el valor a distribuir fijado por la entidad, se
+                  determinan
+                  las sucursales que deben contribuir para el cumplimiento del
+                  objetivo
+                  que ésta se ha fijado. Este campo obligatorio contiene una
+                  lista de valores
+                  previamente poblada en la opción <a
+                    href="NUH_020B.html">estructura
+                    orgánica</a> del Núcleo, para facilitar la labor de
+                  asignación.</p></td>
+            </tr>
+            <tr>
+              <td class="titletable"><p class="SUBTITULO">Producto</p></td>
+              <td><p class="PARRAFO">Campo obligatorio, que de
+                  acuerdo con el valor a distribuir fijado por la entidad, se
+                  determinan
+                  los <a href="MEH_002B.html">productos</a> (Bin, Segmento,
+                  Grupo) por
+                  sucursal que deben contribuir para el cumplimiento del
+                  objetivo que
+                  se ha fijado la entidad.</p></td>
+            </tr>
+            <tr>
+              <td class="titletable"><p
+                  class="SUBTITULO"><span>Colocaciones</p></td>
+                <td><p class="PARRAFO">Campo
+                    de 6 posiciones, obligatorio, en el que se registra la
+                    cantidad de determinado
+                    producto que debe colocar la sucursal para hacerse acreedora
+                    de la asignación
+                    de la parte de utilidad obtenida por su gestión de acuerdo
+                    con
                     el valor definido a distribuir.</p></td>
               </tr>
-              <tr> 
-                <td class="titletable"><p class="SUBTITULO"><span >Valor</p></td>
-                <td><p class="PARRAFO">Campo 
-                    numérico de 14 enteros y dos decimales, obligatorio, se registra 
-                    el monto de facturación de determinado producto que debe cumplir 
-                    la sucursal para hacerse acreedora de la asignación de la parte 
-                    de utilidad obtenida por su gestión de acuerdo con el valor definido 
-                    a distribuir.</p></td>
-              </tr>
-            </table>
+              <tr>
+                <td class="titletable"><p class="SUBTITULO"><span>Valor</p></td>
+                  <td><p class="PARRAFO">Campo
+                      numérico de 14 enteros y dos decimales, obligatorio, se
+                      registra
+                      el monto de facturación de determinado producto que debe
+                      cumplir
+                      la sucursal para hacerse acreedora de la asignación de la
+                      parte
+                      de utilidad obtenida por su gestión de acuerdo con el
+                      valor definido
+                      a distribuir.</p></td>
+                </tr>
+              </table>
 
-            <p  class="PARRAFO"><span class="PARRAFO"><span class="SUBTITULO">Actualizar:</span>  
-              Si el usuario invoca la opción Actualizar se despliega un nuevo formulario 
-              con tres campos nuevos, en el cual los únicos modificables son: Colocaciones 
-              y Valor.</p>
-            <p class="TITLE"><img src="../img/CAF_015B8.PNG"></p>
-           
-            <table>
-              <tr> 
-                <td class="titletable"><p class="SUBTITULO">Colocaciones</p></td>
-                <td><p class="PARRAFO">Corresponde 
-                    a la cantidad de colocaciones realizadas por la sucursal por determinado 
-                    producto.</p></td>
-              </tr>
-              <tr> 
-                <td class="titletable"><p class="SUBTITULO">Valor 
-                    facturado </p></td>
-                <td><p class="PARRAFO">Indica 
-                    el valor facturado por la sucursal por determinado producto.</p></td>
-              </tr>
-              <tr> 
-                <td class="titletable" ><p class="SUBTITULO"><span >Valor 
-                    distribuido </p></td>
-                <td><p class="PARRAFO">Muestra 
-                    el valor total que se asignará a cada oficina producto de su 
-                    gestión en el cumplimiento del objetivo de la entidad.</p></td>
-              </tr>
-            </table>
-           
-        </section>
-    <script src="../js/menu.js"></script>
-</body>
-<div id="footerContainer"></div>
-<script>
+              <p class="PARRAFO"><span class="PARRAFO"><span
+                    class="SUBTITULO">Actualizar:</span>
+                   Al activar ese enlace  se despliega un
+                  nuevo formulario
+                  con tres campos nuevos, en el cual los únicos modificables
+                  son: Colocaciones
+                  y Valor.</p>
+                <p class="TITLE"><img src="../img/CAF_015B8.PNG"></p>
+
+                <table>
+                  <tr>
+                    <td class="titletable"><p
+                        class="SUBTITULO">Colocaciones</p></td>
+                    <td><p class="PARRAFO">Corresponde
+                        a la cantidad de colocaciones realizadas por la sucursal
+                        por determinado
+                        producto.</p></td>
+                  </tr>
+                  <tr>
+                    <td class="titletable"><p class="SUBTITULO">Valor
+                        facturado </p></td>
+                    <td><p class="PARRAFO">Indica
+                        el valor facturado por la sucursal por determinado
+                        producto.</p></td>
+                  </tr>
+                  <tr>
+                    <td class="titletable"><p class="SUBTITULO"><span>Valor
+                          distribuido </p></td>
+                      <td><p class="PARRAFO">Muestra
+                          el valor total que se asignará a cada oficina producto
+                          de su
+                          gestión en el cumplimiento del objetivo de la
+                          entidad.</p></td>
+                    </tr>
+                  </table>
+
+                </section>
+                <script src="../js/menu.js"></script>
+              </body>
+              <div id="footerContainer"></div>
+              <script>
   fetch('footer.html')
     .then(response => response.text())
     .then(html => {
       document.getElementById('footerContainer').innerHTML = html;
     });
 </script>
-</html>
+            </html>

@@ -1,26 +1,27 @@
 <!DOCTYPE html>
 <html lang="es">
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>BANKBU®</title>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>BANKBU®</title>
 
-    <link rel="stylesheet" href="../css/pages.css">
-    <link rel="stylesheet" href="../css/style.css">
-    <link rel="icon" href="../img/ACQUIRER-logo.JPG" type="image/x-icon">
-</head>
+        <link rel="stylesheet" href="../css/pages.css">
+        <link rel="stylesheet" href="../css/style.css">
+        <link rel="icon" href="../img/ACQUIRER-logo.JPG" type="image/x-icon">
+    </head>
 
-<body>
+    <body>
 
-    <header>
-        <img class="logo" src="../img/logoBankbu_.PNG" alt="Logo de Mi Empresa">
-        <div id="menuBtn">
-            <img class="TITLE" src="../img/menu.PNG" alt="Botón de Menú ">
-        </div>
-    </header>
-      <div id="menuContainer"></div>
-  <script>
+        <header>
+            <img class="logo" src="../img/logoBankbu_.PNG"
+                alt="Logo de Mi Empresa">
+            <div id="menuBtn">
+                <img class="TITLE" src="../img/menu.PNG" alt="Botón de Menú ">
+            </div>
+        </header>
+        <div id="menuContainer"></div>
+        <script>
     fetch('menu.html')
       .then(response => response.text())
       .then(html => {
@@ -28,26 +29,25 @@
       });
   </script>
 
-    <section>
-        <div>
-            <table>
-                <tr>
-                    <td>
-                        <div>
-                            <p class="TITLE">Motivos de desafiliación</p>
-                        </div>
-                    </td>
-                </tr>
-            </table>
-            <p class="PARRAFO">Mediante esta función se permite la consulta y mantenimiento de la tabla que contiene la
-                codificación de las diferentes razones o argumentos que ilustran el por qué los
-                establecimientos se desvinculan de una franquicia, bien por decisión voluntaria o por
-                dispocisión de la marca.</p>
-            <p class="TITLE"><img src="../img/ESF_004E.PNG"></p>
+        <section>
+            <div>
 
-            <p class="PARRAFO">El formulario contiene las opciones Actualizar, Eliminar y Adicionar.</p>
-            <p class="PARRAFO"><span class="SUBTITULO">Adicionar:</span>  Si el usuario invoca la opción Adicionar se despliega un
-                formulario con los siguientes campos:</span> 
+                <p class="TITLE">Motivos de desafiliación</p>
+
+                <p class="PARRAFO">Mediante esta función se permite la consulta
+                    y mantenimiento de la tabla que contiene la
+                    codificación de las diferentes razones o argumentos que
+                    ilustran el por qué los
+                    establecimientos se desvinculan de una franquicia, bien por
+                    decisión voluntaria o por
+                    dispocisión de la marca.</p>
+                <p class="TITLE"><img src="../img/ESF_004E.PNG"></p>
+
+                <p class="PARRAFO">El formulario contiene los enlaces:
+                    Actualizar, Eliminar y Adicionar.</p>
+                <p class="PARRAFO"><span class="SUBTITULO">Adicionar:</span> Si
+                    el usuario invoca la opción Adicionar se despliega un
+                    formulario con los siguientes campos:</span>
             </p>
             <p class="TITLE"><img src="../img/ESF_004E1.PNG"></p>
 
@@ -57,8 +57,10 @@
                         <p class="SUBTITULO">Código</p>
                     </td>
                     <td>
-                        <p class="PARRAFO">Campo numérico de 2 posiciones, obligatorio, en el que se registra el código
-                            asignado a cada uno de los motivos o razones que justifican o explican la
+                        <p class="PARRAFO">Campo numérico de 2 posiciones,
+                            obligatorio, en el que se registra el código
+                            asignado a cada uno de los motivos o razones que
+                            justifican o explican la
                             desvinculación de los establecimientos.</p>
                     </td>
                 </tr>
@@ -67,20 +69,23 @@
                         <p class="SUBTITULO">Descripción</p>
                     </td>
                     <td>
-                        <p class="PARRAFO">En este campo alfanumérico de 30 posiciones, obligatorio, se registra el concepto
+                        <p class="PARRAFO">En este campo alfanumérico de 30
+                            posiciones, obligatorio, se registra el concepto
                             asociado a cada motivo.</p>
                     </td>
                 </tr>
             </table>
-            <p class="PARRAFO"><span class="PARRAFO"><span class="SUBTITULO">Actualizar:</span>  Si el usuario invoca la
-                    opción Actualizar se despliega un nuevo formulario
+            <p class="PARRAFO"><span class="PARRAFO"><span
+                        class="SUBTITULO">Actualizar:</span> Si el usuario
+                    invoca la
+                    opción Actualizar se despliega un formulario
                     en el cual el único campo modificable es: Descripción.</p>
-            <p class="TITLE"><img src="../img/ESF_004E3.PNG"></p>
-    </section>
-    <script src="../js/menu.js"></script>
-</body>
-<div id="footerContainer"></div>
-<script>
+                <p class="TITLE"><img src="../img/ESF_004E3.PNG"></p>
+            </section>
+            <script src="../js/menu.js"></script>
+        </body>
+        <div id="footerContainer"></div>
+        <script>
   fetch('footer.html')
     .then(response => response.text())
     .then(html => {
@@ -88,4 +93,4 @@
     });
 </script>
 
-</html>
+    </html>

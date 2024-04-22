@@ -1,25 +1,25 @@
 <!DOCTYPE html>
 <html lang="es">
 
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>BANKBU®</title>
-  <link rel="stylesheet" href="../css/pages.css">
-  <link rel="stylesheet" href="../css/style.css">
-  <link rel="icon" href="../img/ACQUIRER-logo.JPG" type="image/x-icon">
-</head>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BANKBU®</title>
+    <link rel="stylesheet" href="../css/pages.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="icon" href="../img/ACQUIRER-logo.JPG" type="image/x-icon">
+  </head>
 
-<body>
+  <body>
 
-  <header>
-    <img class="logo" src="../img/logoBankbu_.PNG" alt="Logo de Mi Empresa">
-    <div id="menuBtn">
-      <img class="TITLE" src="../img/menu.PNG" alt="Botón de Menú ">
-    </div>
-  </header>
+    <header>
+      <img class="logo" src="../img/logoBankbu_.PNG" alt="Logo de Mi Empresa">
+      <div id="menuBtn">
+        <img class="TITLE" src="../img/menu.PNG" alt="Botón de Menú ">
+      </div>
+    </header>
     <div id="menuContainer"></div>
-  <script>
+    <script>
     fetch('menu.html')
       .then(response => response.text())
       .then(html => {
@@ -27,95 +27,130 @@
       });
   </script>
 
-  <section>
-    <div>
-      
-              <p class="TITLE">Referidos</p>
+    <section>
+      <div>
 
-      <p class="PARRAFO">Mediante esta opción, el actor puede consultar aquellas autorizaciones que de acuerdo
-        con la validación de las reglas aplicadas por el autorizador, fueron enviadas a 'Referir'. </p>
-      <p class="PARRAFO">Al ingresar al formulario se despliega un filtro inicial en el cual el actor debe diligenciar
-        de manera obligatoria el número de la tarjeta a la que pertenece la autorización referida, y
-        opcionalmente el código del establecimiento y el valor de la transacción. </p>
+        <p class="TITLE">Referidos</p>
 
-      <p class="TITLE"><img src="../img/COF_035B.PNG"></p>
+        <p class="PARRAFO">Mediante esta opción, el actor puede consultar
+          aquellas autorizaciones que de acuerdo
+          con la validación de las reglas aplicadas por el autorizador, fueron
+          enviadas a 'Referir'. </p>
+        <p class="PARRAFO">Al ingresar al formulario se despliega un filtro
+          inicial en el cual el actor debe diligenciar
+          de manera obligatoria el número de la tarjeta a la que pertenece la
+          autorización referida, y
+          opcionalmente el código del establecimiento y el valor de la
+          transacción. </p>
 
-      <p class="PARRAFO">Una vez validados los filtros el sistema traerá todas las autorizaciones referidas que además de
-        cumplir con los filtros ingresados, correspondan a la fecha actual real. El formulario muestra el número
-        de tarjeta, el establecimiento en el que se hizo la transacción, el monto de la transacción, el
-        estado de la autorización, la acción (debe ser 'Referido' y el estado del referido que
-        puede ser Negado, Aprobado, Cancelado, cuando ya ha sido tramitado, o en blanco. </p>
+        <p class="TITLE"><img src="../img/COF_035B.PNG"></p>
 
-      <p class="TITLE"><img src="../img/COF_035B1.PNG"></p>
-      <p class="PARRAFO">El formulario contiene el hiérvínculo Referido, mediante el cual el actor puede
-        después de seleccionar alguno de los registros desplegados, puede invocar el formulario en el cual
-        consulta la información necesaria para tomar una decisión respecto del referido, la que puede ser
-        aprobar, negar o cancelar la autorización. </p>
-      <p class="PARRAFO">Con excepción de los campos del bloque 'Datos autorización' que son tomados directamente
-        de la tabla de autorizaciones y del campo 'Recomendación sistema autorizador' que es el
-        único editable por el actor, todos los demás campos se toman de la tabla de referidos donde son
-        actualizados mediante el cargue de un archivo de referidos ejecutado desde automatización de procesos.
-      </p>
-      <p class="PARRAFO">Nota importante: este formulario requiere que exista información para la tarjeta en la tabla de
-        referidos (CO_REFERRAL); si para la tarjeta a la cual pertenece el registro seleccionado no existe en dicha
-        tabla, al invocar el hipervínculo de referidos se despliega un mensaje indicando este evento al actor y
-        no le permite ingresar al formulario correspondiente. </p>
-      <p class="TITLE"><img src="../img/COF_035B2.PNG"></p>
-      <p class="PARRAFO">Solo se describen aquellos campos que se generan directamente por el sistema durante el proceso de
-        autorización </p>
+        <p class="PARRAFO">Una vez validados los filtros el sistema traerá todas
+          las autorizaciones referidas que además de
+          cumplir con los filtros ingresados, correspondan a la fecha actual
+          real. El formulario muestra el número
+          de tarjeta, el establecimiento en el que se hizo la transacción, el
+          monto de la transacción, el
+          estado de la autorización, la acción (debe ser 'Referido' y el estado
+          del referido que
+          puede ser Negado, Aprobado, Cancelado, cuando ya ha sido tramitado, o
+          en blanco. </p>
 
-      <table>
-        <tr>
-          <td class="titletable">
-            <p class="SUBTITULO">Número de la tarjeta </p>
-          </td>
-          <td>
-            <p class="PARRAFO">Campo que muestra el número de tarjeta que solicita la autorización. </p>
-          </td>
-        </tr>
-        <tr>
-          <td class="SUBTITULO">Monto transacción </td>
-          <td>Despliega el valor de la transacción solicitado por la autorización. </td>
-        </tr>
-        <tr>
-          <td class="SUBTITULO">Nombre comercio </td>
-          <td>Contiene el nombre del establecimiento que solicita la autorización </td>
-        </tr>
-        <tr>
-          <td class="SUBTITULO">Código afiliación comercio </td>
-          <td>Indica el código con el cual la entidad identifica al establecimiento </td>
-        </tr>
-        <tr>
-          <td class="SUBTITULO">Fecha autorización </td>
-          <td>Corresponde a la fecha en la cual ingreso la autorización referida, mostrada en formato YYYY-MM-DD
-          </td>
-        </tr>
-        <tr>
-          <td class="titletable">
-            <p class="SUBTITULO">Recomendación sistema autorizador </p>
-          </td>
-          <td>
-            <p class="PARRAFO">Campo alfanumérico de hasta 400 caracteres, obligatorio, en el cual el usuario del
-              call center registra las observaciones para sustentar el motivo por el cual se negó, aprobó
-              o canceló el referido. Si el referido ya fue procesado previamente, este campo es solo de consulta
-              y no permite ingresar o modificar información. </p>
-          </td>
-        </tr>
-      </table>
-      <p class="PARRAFO">El formulario contiene tres botones mediante los cuales el actor puede aprobar,
-          negar o cancelar el referido de acuerdo con las políticas de la entidad, además
-        del botón Salir que le permite regresar al formulario inicial que contiene el filtro de
-        consulta.</p>
-      <p class="PARRAFO">Una vez que el referido sea negado, aprobado o cancelado, al seleccionarle
-        nuevamente e invocar el hipervínculo 'Referido' el formulario NO mostrará los botones
-        Aprobar, Negar y Cancelar de modo que el actor solo puede consutlar la información
-        desplegada. </p>
-      <p class="PARRAFO"></p>
-  </section>
-  <script src="../js/menu.js"></script>
-</body>
-<div id="footerContainer"></div>
-<script>
+        <p class="TITLE"><img src="../img/COF_035B1.PNG"></p>
+        <p class="PARRAFO">El formulario contiene el hiérvínculo Referido,
+          mediante el cual el actor puede
+          después de seleccionar alguno de los registros desplegados, puede
+          invocar el formulario en el cual
+          consulta la información necesaria para tomar una decisión respecto del
+          referido, la que puede ser
+          aprobar, negar o cancelar la autorización. </p>
+        <p class="PARRAFO">Con excepción de los campos del bloque
+          'Datos autorización' que son tomados directamente
+          de la tabla de autorizaciones y del campo
+          'Recomendación sistema autorizador' que es el
+          único editable por el actor, todos los demás campos se toman de la
+          tabla de referidos donde son
+          actualizados mediante el cargue de un archivo de referidos ejecutado
+          desde automatización de procesos.
+        </p>
+        <p class="PARRAFO">Nota importante: este formulario requiere que exista
+          información para la tarjeta en la tabla de
+          referidos (CO_REFERRAL); si para la tarjeta a la cual pertenece el
+          registro seleccionado no existe en dicha
+          tabla, al invocar el hipervínculo de referidos se despliega un mensaje
+          indicando este evento al actor y
+          no le permite ingresar al formulario correspondiente. </p>
+        <p class="TITLE"><img src="../img/COF_035B2.PNG"></p>
+        <p class="PARRAFO">Solo se describen aquellos campos que se generan
+          directamente por el sistema durante el proceso de
+          autorización </p>
+
+        <table>
+          <tr>
+            <td class="titletable">
+              <p class="SUBTITULO">Número de la tarjeta </p>
+            </td>
+            <td>
+              <p class="PARRAFO">Campo que muestra el número de tarjeta que
+                solicita la autorización. </p>
+            </td>
+          </tr>
+          <tr>
+            <td class="SUBTITULO">Monto transacción </td>
+            <td>Despliega el valor de la transacción solicitado por la
+              autorización. </td>
+          </tr>
+          <tr>
+            <td class="SUBTITULO">Nombre comercio </td>
+            <td>Contiene el nombre del establecimiento que solicita la
+              autorización </td>
+          </tr>
+          <tr>
+            <td class="SUBTITULO">Código afiliación comercio </td>
+            <td>Indica el código con el cual la entidad identifica al
+              establecimiento </td>
+          </tr>
+          <tr>
+            <td class="SUBTITULO">Fecha autorización </td>
+            <td>Corresponde a la fecha en la cual ingreso la autorización
+              referida, mostrada en formato YYYY-MM-DD
+            </td>
+          </tr>
+          <tr>
+            <td class="titletable">
+              <p class="SUBTITULO">Recomendación sistema autorizador </p>
+            </td>
+            <td>
+              <p class="PARRAFO">Campo alfanumérico de hasta 400 caracteres,
+                obligatorio, en el cual el usuario del
+                call center registra las observaciones para sustentar el motivo
+                por el cual se negó, aprobó
+                o canceló el referido. Si el referido ya fue procesado
+                previamente, este campo es solo de consulta
+                y no permite ingresar o modificar información. </p>
+            </td>
+          </tr>
+        </table>
+        <p class="PARRAFO">El formulario contiene tres botones mediante los
+          cuales el actor puede aprobar,
+          negar o cancelar el referido de acuerdo con las políticas de la
+          entidad, además
+          del botón Salir que le permite regresar al formulario inicial que
+          contiene el filtro de
+          consulta.</p>
+        <p class="PARRAFO">Una vez que el referido sea negado, aprobado o
+          cancelado, al seleccionarle
+          nuevamente e invocar el hipervínculo 'Referido' el formulario NO
+          mostrará los botones
+          Aprobar, Negar y Cancelar de modo que el actor solo puede consutlar la
+          información
+          desplegada. </p>
+        <p class="PARRAFO"></p>
+      </section>
+      <script src="../js/menu.js"></script>
+    </body>
+    <div id="footerContainer"></div>
+    <script>
   fetch('footer.html')
     .then(response => response.text())
     .then(html => {
@@ -123,4 +158,4 @@
     });
 </script>
 
-</html>
+  </html>

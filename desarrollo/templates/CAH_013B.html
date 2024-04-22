@@ -1,25 +1,25 @@
 <!DOCTYPE html>
 <html lang="es">
 
-<head>
+  <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>BANKBU®</title>
     <link rel="stylesheet" href="../css/pages.css">
     <link rel="stylesheet" href="../css/style.css">
- <link rel="icon" href="../img/ACQUIRER-logo.JPG" type="image/x-icon">
-</head>
+    <link rel="icon" href="../img/ACQUIRER-logo.JPG" type="image/x-icon">
+  </head>
 
-<body>
+  <body>
 
     <header>
-        <img class="logo" src="../img/logoBankbu_.PNG" alt="Logo de Mi Empresa">
-        <div id="menuBtn">
-            <img class="TITLE"  src= "../img/menu.PNG" alt="Botón de Menú ">
-        </div>
+      <img class="logo" src="../img/logoBankbu_.PNG" alt="Logo de Mi Empresa">
+      <div id="menuBtn">
+        <img class="TITLE" src="../img/menu.PNG" alt="Botón de Menú ">
+      </div>
     </header>
-      <div id="menuContainer"></div>
-  <script>
+    <div id="menuContainer"></div>
+    <script>
     fetch('menu.html')
       .then(response => response.text())
       .then(html => {
@@ -28,228 +28,267 @@
   </script>
 
     <section>
-        <div> 
-            
-                    <p  class="TITLE">Parámetros de reestructuración</p>
-                    
-            <p class="PARRAFO">Mediante esta función se definen todos los conceptos 
-              concernientes a la reestructuración de créditos, los cuales 
-              permitirán realizar dichas tareas como la entidad lo requiera.</p>
-            <p class="PARRAFO"><span class="SUBTITULO">Reestructuración: </span>   La reestructuración de créditos es un
-               mecanismo que poseen las entidades para normalizar los créditos de algún cliente
-                que en un determinado momento y por diferentes circunstancias no haya podido 
-                cumplir con la obligación contraída con la misma; en este espacio se definen los
-                 lineamientos a tener en cuenta en relación con la reestructuración de dichos créditos.</p>
-            <p class="PARRAFO">El formulario cuenta con la opción Actualizar.</p>
-            <p class="TITLE"><img src="../img/CAF_013B.PNG"></p>
-           
-            <p  class="PARRAFO"><span class="PARRAFO"><span class="SUBTITULO">Actualizar:</span>  
-              A través de esta opción, el sistema muestra el siguiente formulario 
-              con todos los campos modificables.</span>  Adicionalmente, cuenta con un enlace que permite <a href="#Pag2" target="_self" >Ir a página 2</a> del formulario de actualización.</p>
-            <p class="TITLE"><img  src="../img/CAF_013B1.PNG"></p>
-            
-            <table>
-              <tr> 
-                <td class="titletable"><p class="SUBTITULO">Número 
-                    máximo reestructuraciones
-                  </p></td>
-                <td><p class="PARRAFO">En 
-                    este campo numérico de 3 posiciones, obligatorio, se define la 
-                    cantidad límite de veces que se puede reestructurar un crédito 
-                    durante la vigencia del mismo.</p></td>
-              </tr>
-              <tr> 
-                <td class="titletable"><p class="SUBTITULO">Iniciar 
-                    contador de reestructuraciones</p></td>
-                <td><p class="PARRAFO">Campo 
-                    que permite reiniciar el conteo de reestructuraciones de las obligaciones.</p></td>
-              </tr>
-              <tr> 
-                <td class="titletable"><p class="SUBTITULO">Capitalizar 
-                    intereses</p></td>
-                <td><p class="PARRAFO">En 
-                    este espacio se define la manera como se manejarán los intereses 
-                    correspondientes a la deuda objeto de reestructuración.</p>
-                  <p class="PARRAFO">Se debe marcar si los intereses que posee la deuda 
-                    harán parte o no del saldo del nuevo crédito luego de 
-                    efectuada la reestructuración.</p></td>
-              </tr>
-              <tr> 
-                <td class="titletable"><p class="SUBTITULO">Transacción 
-                    original </p></td>
-                <td><p class="PARRAFO">Este 
-                    campo sólo se despliega al seleccionar la opción No capitaliza 
-                    intereses (en el campo anterior) y en él se debe definir la transacción 
-                    bajo la cual se identificará dicho registro, por medio de la 
-                    lista de valores poblada de la opción <a href="NUH_027B.html" >orígenes 
-                    de transacciones</a> (internas) del núcleo.</p></td>
-              </tr>
-              <tr> 
-                <td class="titletable"><p class="SUBTITULO">Capitaliza 
-                    comisión</p></td>
-                <td><p class="PARRAFO">Campo 
-                    que permite definir la manera como se manejarán las comisiones 
-                    correspondientes a la deuda objeto de reestructuración.</p>
-                  <p class="PARRAFO">Se debe marcar si las comisiones que posee la deuda 
-                    harán parte o no del saldo del nuevo crédito luego de 
-                    efectuada la reestructuración.</p></td>
-              </tr>
-              <tr> 
-                <td class="titletable"><p class="SUBTITULO">Transacción 
-                    original </p></td>
-                <td   ><p class="PARRAFO">Campo 
-                    que sólo se despliega al seleccionar la opción No capitaliza 
-                    comisión y en él se debe definir la transacción 
-                    bajo la cual se identificará dicho registro, por medio de la 
-                    lista de valores poblada de la opción <a href="NUH_027B.html" >orígenes 
-                de transacciones</a> (internas) del núcleo.</p></td>
-              </tr>
-              <tr> 
-                <td class="titletable"><p class="SUBTITULO">Transacción 
-                    pago</p></td>
-                <td><p class="PARRAFO">Contiene 
-                    el código de la transacción automática de abono 
-                    por reestructuración una vez se realice la transacción 
-                    y el código de la transacción de Reversión automática 
-                    de intereses en el caso de que aplique.</p>
-                  <p class="PARRAFO">A través de una lista de valores poblada en 
-                    la opción <a href="MEH_003B.html" >transacciones por empresa</a>, 
-                    se define aquella con la cual se identificará el pago que realice 
-                    el cliente bajo el concepto de reestructuración.</p></td>
-              </tr>
-              <tr> 
-                <td class="titletable"><p class="SUBTITULO">Transacción 
-                    reversión </p></td>
-                <td><p class="PARRAFO">Campo 
-                    que despliega una lista de valores poblada de la opción <a href="NUH_027B.html" >orígenes 
-                    de transacciones</a> (internas) del núcleo. Permite seleccionar 
-                    la transacción de reversión de intereses en el caso de 
-                    que aplique.</p></td>
-              </tr>
-            </table>
-           
-            <p class="TITLE"><img src="../img/CAF_013B2.PNG"></p>
-            
-            <table>
-              <tr> 
-                <td class="titletable"><p class="SUBTITULO">Valor 
-                    máximo comisiones</p></td>
-                <td><p class="PARRAFO">Campo 
-                    numérico de 18 posiciones, no obligatorio, en el cual se define 
-                    el valor máximo por este concepto que puede tener acumulado un 
-                    cliente para efectuar la reestructuración.</p></td>
-              </tr>
-              <tr> 
-                <td class="titletable"><p class="SUBTITULO">Valor 
-                    máximo intereses</p></td>
-                <td><p class="PARRAFO">En 
-                    este campo numérico de 18 posiciones, no obligatorio, se define 
-                    el valor máximo por este concepto que puede tener acumulado un 
-                    cliente para efectuar la reestructuración.</p></td>
-              </tr>
-              <tr> 
-                <td class="titletable"><p class="SUBTITULO">Porcentaje 
-                    capital cubierto</p></td>
-                <td><p class="PARRAFO">Campo 
-                    numérico de 9 posiciones, no obligatorio, en el cual se registra 
-                    la proporción de capital de la deuda que como mínimo debe 
-                    cubrir un cliente a través del pago para que ésta sea 
-                    normalizada.</p></td>
-              </tr>
-              <tr> 
-                <td class="titletable"><p class="SUBTITULO">Porcentaje 
-                    interés cubierto</p></td>
-                <td><p class="PARRAFO">En 
-                    este campo numérico de 9 posiciones, no obligatorio, se registra 
-                    la proporción de intereses corrientes, moratorios y/o extracontables 
-                    de la deuda que como mínimo debe cubrir un cliente a través 
-                    del pago para que ésta sea normalizada.</p></td>
-              </tr>
-              <tr> 
-                <td class="titletable"><p class="SUBTITULO">Porcentaje 
-                    comisión a cubrir
-                  </p></td>
-                <td><p class="PARRAFO">Campo 
-                    numérico de 9 posiciones, no obligatorio, en el cual se registra 
-                    la proporción de comisiones, que hacen parte de la deuda y que 
-                    como mínimo debe cubrir un cliente a través del pago para 
-                    que ésta sea normalizada.</p></td>
-              </tr>
-              <tr> 
-                <td class="titletable"><p class="SUBTITULO">Días 
-                    sanción</p></td>
-                <td><p class="PARRAFO">En 
-                    este campo numérico de 4 posiciones, no obligatorio, se indica 
-                    el número de días de plazo que tiene el cliente para cumplir 
-                    con el compromiso adquirido, después de realizado el acuerdo 
-                    de pago, para que efectivamente este se pueda realizar la normalización 
-                    de su crédito.</p></td>
-              </tr>
-            </table>
-            <p class="TITLE"><img src="../img/CAF_013B3.PNG"703" height="110"></p>
-           
-            <table>
-              <tr> 
-                <td class="titletable"><p class="SUBTITULO">Calificación 
-                    base</p></td>
-                <td><p class="PARRAFO">Campo 
-                    que posee lista de valores adjunta de la que puede seleccionar entre 
-                    Periodo anterior o Refinanciación la calificación que 
-                    se toma como referente para variar la misma acorde al tratamiento de 
-                    pagos dado por el deudor a la obligación.</p></td>
-              </tr>
-              <tr> 
-                <td class="titletable"><p class="SUBTITULO">Subir 
-                    calificación</p></td>
-                <td><p class="PARRAFO">Este 
-                    campo cuenta con lista de valores adjunta de la que puede seleccionar 
-                    entre Original o Gradual y se refiere a la calificación que debe 
-                    asignarse a la obligación acorde al tratamiento de pagos dado 
-                    por el deudor a la obligación.</p></td>
-              </tr>
-              <tr> 
-                <td class="titletable"><p class="SUBTITULO">Bajar 
-                    calificación</p></td>
-                <td><p class="PARRAFO">Campo 
-                    que posee lista de valores adjunta de la que puede seleccionar entre 
-                    Porcentual, Rangos o Gradual; y que dependiendo de la opción 
-                    seleccionada despliega respectivamente los campos Porcentaje pago calificación, 
-                    Cuotas a cubrir, Número cuotas a cubrir Bajar, o Número altura de mora a bajar, permitiendo al 
-                    sistema bajar o minimizar la calificación de riesgo de la deuda, 
-                    acorde al tratamiento de pagos dado por el deudor a la obligación.</p></td>
-              </tr>
-            </table>
-            <p class="PARRAFO"><a name="Pag2"></a></p>
-            <p class="TITLE"><img src="../img/CAF_013B4.PNG"></p>
-           
-            <table>
-              <tr>
-                <td class="titletable"><p class="SUBTITULO">Número cuotas a cubrir / Número altura de mora a bajar</p>      
-                </td>
-                <td><p class="PARRAFO">En este conjunto de campos se deben relacionar   la cantidad de cuotas o instalamentos que el cliente debe cubrir para que la   calificación de riesgo de su deuda baje &ldquo;n&rdquo; alturas. Estos campos son de una   posición ya que las calificaciones son de la A a la E, es por esto que el número   de calificaciones que se pueden bajar deberá estar entre 1 y 5.</p></td>
-              </tr>
-              <tr>
-                <td class="titletable"><p class="SUBTITULO">Porcentaje pago calificación</p>      
-                </td>
-                <td><p class="PARRAFO">Campo numérico, excluyente, en el cual se   indica la proporción de deuda que debe cubrir el pago que realice el cliente   para que su crédito sea evaluado con una categoría de riesgo menor.</p>      
-                </td>
-              </tr>
-              <tr>
-                <td class="titletable"><p class="SUBTITULO">Cuotas a   cubrir</p>      
-                </td>
-                <td><p class="PARRAFO">En este campo excluyente se indica el número   mínimo de cuotas que debe cubrir el cliente para que su crédito sea evaluado con   una categoría de riesgo menor.</p>      </td>
-              </tr>
-            </table>
-           
-        </section>
-    <script src="../js/menu.js"></script>
-</body>
-<div id="footerContainer"></div>
-<script>
+      <div>
+
+        <p class="TITLE">Parámetros de reestructuración</p>
+
+        <p class="PARRAFO">Mediante esta función se definen todos los conceptos
+          concernientes a la reestructuración de créditos, los cuales
+          permitirán realizar dichas tareas como la entidad lo requiera.</p>
+        <p class="PARRAFO"><span class="SUBTITULO">Reestructuración: </span> La
+          reestructuración de créditos es un
+          mecanismo que poseen las entidades para normalizar los créditos de
+          algún cliente
+          que en un determinado momento y por diferentes circunstancias no haya
+          podido
+          cumplir con la obligación contraída con la misma; en este espacio se
+          definen los
+          lineamientos a tener en cuenta en relación con la reestructuración de
+          dichos créditos.</p>
+        <p class="PARRAFO">El formulario cuenta con la opción Actualizar.</p>
+        <p class="TITLE"><img src="../img/CAF_013B.PNG"></p>
+
+        <p class="PARRAFO"><span class="PARRAFO"><span
+              class="SUBTITULO">Actualizar:</span>
+            A través de esta opción, el sistema muestra el siguiente formulario
+            con todos los campos modificables.</span> Adicionalmente, cuenta con
+          un enlace que permite <a href="#Pag2" target="_self">Ir a página 2</a>
+          del formulario de actualización.</p>
+        <p class="TITLE"><img src="../img/CAF_013B1.PNG"></p>
+
+        <table>
+          <tr>
+            <td class="titletable"><p class="SUBTITULO">Número
+                máximo reestructuraciones
+              </p></td>
+            <td><p class="PARRAFO">En
+                este campo numérico de 3 posiciones, obligatorio, se define la
+                cantidad límite de veces que se puede reestructurar un crédito
+                durante la vigencia del mismo.</p></td>
+          </tr>
+          <tr>
+            <td class="titletable"><p class="SUBTITULO">Iniciar
+                contador de reestructuraciones</p></td>
+            <td><p class="PARRAFO">Campo
+                que permite reiniciar el conteo de reestructuraciones de las
+                obligaciones.</p></td>
+          </tr>
+          <tr>
+            <td class="titletable"><p class="SUBTITULO">Capitalizar
+                intereses</p></td>
+            <td><p class="PARRAFO">En
+                este espacio se define la manera como se manejarán los intereses
+                correspondientes a la deuda objeto de reestructuración.</p>
+              <p class="PARRAFO">Se debe marcar si los intereses que posee la
+                deuda
+                harán parte o no del saldo del nuevo crédito luego de
+                efectuada la reestructuración.</p></td>
+          </tr>
+          <tr>
+            <td class="titletable"><p class="SUBTITULO">Transacción
+                original </p></td>
+            <td><p class="PARRAFO">Este
+                campo sólo se despliega al seleccionar la opción No capitaliza
+                intereses (en el campo anterior) y en él se debe definir la
+                transacción
+                bajo la cual se identificará dicho registro, por medio de la
+                lista de valores poblada de la opción <a
+                  href="NUH_027B.html">orígenes
+                  de transacciones</a> (internas) del núcleo.</p></td>
+          </tr>
+          <tr>
+            <td class="titletable"><p class="SUBTITULO">Capitaliza
+                comisión</p></td>
+            <td><p class="PARRAFO">Campo
+                que permite definir la manera como se manejarán las comisiones
+                correspondientes a la deuda objeto de reestructuración.</p>
+              <p class="PARRAFO">Se debe marcar si las comisiones que posee la
+                deuda
+                harán parte o no del saldo del nuevo crédito luego de
+                efectuada la reestructuración.</p></td>
+          </tr>
+          <tr>
+            <td class="titletable"><p class="SUBTITULO">Transacción
+                original </p></td>
+            <td><p class="PARRAFO">Campo
+                que sólo se despliega al seleccionar la opción No capitaliza
+                comisión y en él se debe definir la transacción
+                bajo la cual se identificará dicho registro, por medio de la
+                lista de valores poblada de la opción <a
+                  href="NUH_027B.html">orígenes
+                  de transacciones</a> (internas) del núcleo.</p></td>
+          </tr>
+          <tr>
+            <td class="titletable"><p class="SUBTITULO">Transacción
+                pago</p></td>
+            <td><p class="PARRAFO">Contiene
+                el código de la transacción automática de abono
+                por reestructuración una vez se realice la transacción
+                y el código de la transacción de Reversión automática
+                de intereses en el caso de que aplique.</p>
+              <p class="PARRAFO">A través de una lista de valores poblada en
+                la opción <a href="MEH_003B.html">transacciones por empresa</a>,
+                se define aquella con la cual se identificará el pago que
+                realice
+                el cliente bajo el concepto de reestructuración.</p></td>
+          </tr>
+          <tr>
+            <td class="titletable"><p class="SUBTITULO">Transacción
+                reversión </p></td>
+            <td><p class="PARRAFO">Campo
+                que despliega una lista de valores poblada de la opción <a
+                  href="NUH_027B.html">orígenes
+                  de transacciones</a> (internas) del núcleo. Permite
+                seleccionar
+                la transacción de reversión de intereses en el caso de
+                que aplique.</p></td>
+          </tr>
+        </table>
+
+        <p class="TITLE"><img src="../img/CAF_013B2.PNG"></p>
+
+        <table>
+          <tr>
+            <td class="titletable"><p class="SUBTITULO">Valor
+                máximo comisiones</p></td>
+            <td><p class="PARRAFO">Campo
+                numérico de 18 posiciones, no obligatorio, en el cual se define
+                el valor máximo por este concepto que puede tener acumulado un
+                cliente para efectuar la reestructuración.</p></td>
+          </tr>
+          <tr>
+            <td class="titletable"><p class="SUBTITULO">Valor
+                máximo intereses</p></td>
+            <td><p class="PARRAFO">En
+                este campo numérico de 18 posiciones, no obligatorio, se define
+                el valor máximo por este concepto que puede tener acumulado un
+                cliente para efectuar la reestructuración.</p></td>
+          </tr>
+          <tr>
+            <td class="titletable"><p class="SUBTITULO">Porcentaje
+                capital cubierto</p></td>
+            <td><p class="PARRAFO">Campo
+                numérico de 9 posiciones, no obligatorio, en el cual se registra
+                la proporción de capital de la deuda que como mínimo debe
+                cubrir un cliente a través del pago para que ésta sea
+                normalizada.</p></td>
+          </tr>
+          <tr>
+            <td class="titletable"><p class="SUBTITULO">Porcentaje
+                interés cubierto</p></td>
+            <td><p class="PARRAFO">En
+                este campo numérico de 9 posiciones, no obligatorio, se registra
+                la proporción de intereses corrientes, moratorios y/o
+                extracontables
+                de la deuda que como mínimo debe cubrir un cliente a través
+                del pago para que ésta sea normalizada.</p></td>
+          </tr>
+          <tr>
+            <td class="titletable"><p class="SUBTITULO">Porcentaje
+                comisión a cubrir
+              </p></td>
+            <td><p class="PARRAFO">Campo
+                numérico de 9 posiciones, no obligatorio, en el cual se registra
+                la proporción de comisiones, que hacen parte de la deuda y que
+                como mínimo debe cubrir un cliente a través del pago para
+                que ésta sea normalizada.</p></td>
+          </tr>
+          <tr>
+            <td class="titletable"><p class="SUBTITULO">Días
+                sanción</p></td>
+            <td><p class="PARRAFO">En
+                este campo numérico de 4 posiciones, no obligatorio, se indica
+                el número de días de plazo que tiene el cliente para cumplir
+                con el compromiso adquirido, después de realizado el acuerdo
+                de pago, para que efectivamente este se pueda realizar la
+                normalización
+                de su crédito.</p></td>
+          </tr>
+        </table>
+        <p class="TITLE"><img src="../img/CAF_013B3.PNG"703" height="110"></p>
+
+        <table>
+          <tr>
+            <td class="titletable"><p class="SUBTITULO">Calificación
+                base</p></td>
+            <td><p class="PARRAFO">Campo
+                que posee lista de valores adjunta de la que puede seleccionar
+                entre
+                Periodo anterior o Refinanciación la calificación que
+                se toma como referente para variar la misma acorde al
+                tratamiento de
+                pagos dado por el deudor a la obligación.</p></td>
+          </tr>
+          <tr>
+            <td class="titletable"><p class="SUBTITULO">Subir
+                calificación</p></td>
+            <td><p class="PARRAFO">Este
+                campo cuenta con lista de valores adjunta de la que puede
+                seleccionar
+                entre Original o Gradual y se refiere a la calificación que debe
+                asignarse a la obligación acorde al tratamiento de pagos dado
+                por el deudor a la obligación.</p></td>
+          </tr>
+          <tr>
+            <td class="titletable"><p class="SUBTITULO">Bajar
+                calificación</p></td>
+            <td><p class="PARRAFO">Campo
+                que posee lista de valores adjunta de la que puede seleccionar
+                entre
+                Porcentual, Rangos o Gradual; y que dependiendo de la opción
+                seleccionada despliega respectivamente los campos Porcentaje
+                pago calificación,
+                Cuotas a cubrir, Número cuotas a cubrir Bajar, o Número altura
+                de mora a bajar, permitiendo al
+                sistema bajar o minimizar la calificación de riesgo de la deuda,
+                acorde al tratamiento de pagos dado por el deudor a la
+                obligación.</p></td>
+          </tr>
+        </table>
+        <p class="PARRAFO"><a name="Pag2"></a></p>
+        <p class="TITLE"><img src="../img/CAF_013B4.PNG"></p>
+
+        <table>
+          <tr>
+            <td class="titletable"><p class="SUBTITULO">Número cuotas a cubrir /
+                Número altura de mora a bajar</p>
+            </td>
+            <td><p class="PARRAFO">En este conjunto de campos se deben
+                relacionar la cantidad de cuotas o instalamentos que el cliente
+                debe cubrir para que la calificación de riesgo de su deuda baje
+                &ldquo;n&rdquo; alturas. Estos campos son de una posición ya que
+                las calificaciones son de la A a la E, es por esto que el número
+                de calificaciones que se pueden bajar deberá estar entre 1 y
+                5.</p></td>
+          </tr>
+          <tr>
+            <td class="titletable"><p class="SUBTITULO">Porcentaje pago
+                calificación</p>
+            </td>
+            <td><p class="PARRAFO">Campo numérico, excluyente, en el cual se
+                indica la proporción de deuda que debe cubrir el pago que
+                realice el cliente para que su crédito sea evaluado con una
+                categoría de riesgo menor.</p>
+            </td>
+          </tr>
+          <tr>
+            <td class="titletable"><p class="SUBTITULO">Cuotas a cubrir</p>
+            </td>
+            <td><p class="PARRAFO">En este campo excluyente se indica el número
+                mínimo de cuotas que debe cubrir el cliente para que su crédito
+                sea evaluado con una categoría de riesgo menor.</p> </td>
+          </tr>
+        </table>
+
+      </section>
+      <script src="../js/menu.js"></script>
+    </body>
+    <div id="footerContainer"></div>
+    <script>
   fetch('footer.html')
     .then(response => response.text())
     .then(html => {
       document.getElementById('footerContainer').innerHTML = html;
     });
 </script>
-</html>
+  </html>

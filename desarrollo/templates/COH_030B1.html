@@ -1,25 +1,25 @@
 <!DOCTYPE html>
 <html lang="es">
 
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>BANKBU®</title>
-  <link rel="stylesheet" href="../css/pages.css">
-  <link rel="stylesheet" href="../css/style.css">
-  <link rel="icon" href="../img/ACQUIRER-logo.JPG" type="image/x-icon">
-</head>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BANKBU®</title>
+    <link rel="stylesheet" href="../css/pages.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="icon" href="../img/ACQUIRER-logo.JPG" type="image/x-icon">
+  </head>
 
-<body>
+  <body>
 
-  <header>
-    <img class="logo" src="../img/logoBankbu_.PNG" alt="Logo de Mi Empresa">
-    <div id="menuBtn">
-      <img class="TITLE" src="../img/menu.PNG" alt="Botón de Menú ">
-    </div>
-  </header>
+    <header>
+      <img class="logo" src="../img/logoBankbu_.PNG" alt="Logo de Mi Empresa">
+      <div id="menuBtn">
+        <img class="TITLE" src="../img/menu.PNG" alt="Botón de Menú ">
+      </div>
+    </header>
     <div id="menuContainer"></div>
-  <script>
+    <script>
     fetch('menu.html')
       .then(response => response.text())
       .then(html => {
@@ -27,60 +27,79 @@
       });
   </script>
 
-  <section>
-    <div>
-      
-              <p class="TITLE">Definición de reglas</p>
+    <section>
+      <div>
 
-      <p class="PARRAFO">Mediante este hipervínculo que se invoca desde el formulario principal de <a
-          href="COH_030B.html">reglas</a>, la entidad configura la conformación o estructura de la regla que debe
-        ser evaluada por el autorizador y poder determinar si la tarjeta cumple o no con la misma. </p>
-      <p class="PARRAFO">Cada regla solo puede tener una única definición, por lo cual las opciones
-        Eliminar,
-        Adicionar y Detalle solo se mostrarán cuando el formulario no contenga datos.</p>
-      <p class="PARRAFO">Si ya existe una definición para la regla, solo estárán disponibles las
-        opciones Eliminar y Detalle </p>
-      <p class="TITLE"><img src="../img/COF_030B4.PNG"></p>
-      <p class="TITLE"><img src="../img/COF_030B5.PNG"></p>
+        <p class="TITLE">Definición de reglas</p>
 
-      <p class="PARRAFO"><span class="SUBTITULO">Adicionar:</span>  Si el actor invoca
-        la opción Adicionar se despliega un nuevo formulario con los siguientes campos:</p>
-      <p class="TITLE"><img src="../img/COF_030B6.PNG"></p>
+        <p class="PARRAFO">Mediante este hipervínculo que se invoca desde el
+          formulario principal de <a
+            href="COH_030B.html">reglas</a>, la entidad configura la
+          conformación o estructura de la regla que debe
+          ser evaluada por el autorizador y poder determinar si la tarjeta
+          cumple o no con la misma. </p>
+        <p class="PARRAFO">Cada regla solo puede tener una única definición, por
+          lo cual las opciones
+          Eliminar,
+          Adicionar y Detalle solo se mostrarán cuando el formulario no contenga
+          datos.</p>
+        <p class="PARRAFO">Si ya existe una definición para la regla, solo
+          estárán disponibles las
+          opciones Eliminar y Detalle </p>
+        <p class="TITLE"><img src="../img/COF_030B4.PNG"></p>
+        <p class="TITLE"><img src="../img/COF_030B5.PNG"></p>
 
-      <table>
-        <tr>
-          <td class="titletable">
-            <p class="SUBTITULO">Parámetros</p>
-          </td>
-          <td>
-            <p class="PARRAFO">Campo con lista de valores del cual se selecciona una a una las variables a utilizar para
-              la configuración de la regla.</p>
-          </td>
-        </tr>
-        <tr>
-          <td class="titletable">
-            <p class="SUBTITULO">Operadores lógicos </p>
-          </td>
-          <td>
-            <p class="PARRAFO">Este campo tipo combo, permite seleccionar el operador lógico a utilizar para la
-              configuración de la regla y que puede ser: &lt; (menor que), &gt; (mayor
-                que), &lt;= (menor o igual que), &gt;= (mayor o igual que), &lt;&gt;
+        <p class="PARRAFO"><span class="SUBTITULO">Adicionar:</span> Si el actor
+          invoca
+          la opción Adicionar se despliega un formulario con los
+          siguientes campos:</p>
+        <p class="TITLE"><img src="../img/COF_030B6.PNG"></p>
+
+        <table>
+          <tr>
+            <td class="titletable">
+              <p class="SUBTITULO">Parámetros</p>
+            </td>
+            <td>
+              <p class="PARRAFO">Campo con lista de valores del cual se
+                selecciona una a una las variables a utilizar para
+                la configuración de la regla.</p>
+            </td>
+          </tr>
+          <tr>
+            <td class="titletable">
+              <p class="SUBTITULO">Operadores lógicos </p>
+            </td>
+            <td>
+              <p class="PARRAFO">Este campo tipo combo, permite seleccionar el
+                operador lógico a utilizar para la
+                configuración de la regla y que puede ser: &lt; (menor que),
+                &gt; (mayor
+                que), &lt;= (menor o igual que), &gt;= (mayor o igual que),
+                &lt;&gt;
                 (diferente de), = (igual), Not (no), And (y), Or (o), '('
                 (abrir paréntesis), ' )' (cerrar paréntesis) </p>
-          </td>
-        </tr>
-        <tr>
-          <td class="titletable">
-            <p class="SUBTITULO">Valor</p>
-          </td>
-          <td>
-            <p class="PARRAFO">Campo que se encuentra precedido de un combo con las opciones </span> VARCHAR,
-                NUMBER o DATE y donde el actor debe indicar de acuerdo con el parámetro
-              seleccionado el tipo de dato al que corresponde el valor ingresado en el campo anexo. El campo admite
-              cualquier dato alfanumérico de hasta 30 caracteres. Al momento de salvar el registro el sistema
-              validará si el tipo de dato indicado por el actor es coherente con la información del
-              parámetro con el que está relacionado. Es importante tener en cuenta que si el tipo de dato
-              indicado es DATE el valor se debe ingresar en formato YYYY-MM-DD. </p>
+            </td>
+          </tr>
+          <tr>
+            <td class="titletable">
+              <p class="SUBTITULO">Valor</p>
+            </td>
+            <td>
+              <p class="PARRAFO">Campo que se encuentra precedido de un combo
+                con las opciones </span> VARCHAR,
+              NUMBER o DATE y donde el actor debe indicar de acuerdo con el
+              parámetro
+              seleccionado el tipo de dato al que corresponde el valor ingresado
+              en el campo anexo. El campo admite
+              cualquier dato alfanumérico de hasta 30 caracteres. Al momento de
+              salvar el registro el sistema
+              validará si el tipo de dato indicado por el actor es coherente con
+              la información del
+              parámetro con el que está relacionado. Es importante tener en
+              cuenta que si el tipo de dato
+              indicado es DATE el valor se debe ingresar en formato YYYY-MM-DD.
+            </p>
           </td>
         </tr>
         <tr>
@@ -88,9 +107,11 @@
             <p class="SUBTITULO">Operadores aritméticos </p>
           </td>
           <td>
-            <p class="PARRAFO">Este campo tipo combo, permite seleccionar el operador matemático a utilizar para
-              la configuración de la regla y que puede ser: + (mas), - (menos), *
-                (multiplicado por), / (dividido entre)</p>
+            <p class="PARRAFO">Este campo tipo combo, permite seleccionar el
+              operador matemático a utilizar para
+              la configuración de la regla y que puede ser: + (mas), - (menos),
+              *
+              (multiplicado por), / (dividido entre)</p>
           </td>
         </tr>
         <tr>
@@ -98,74 +119,108 @@
             <p class="SUBTITULO">Definición de regla </p>
           </td>
           <td>
-            <p class="PARRAFO">Campo o área de trabajo en la cual se van mostrando los parámetros,
-              operadores lógicos, matemáticos y valores utilizados para configurar la regla en el mismo
+            <p class="PARRAFO">Campo o área de trabajo en la cual se van
+              mostrando los parámetros,
+              operadores lógicos, matemáticos y valores utilizados para
+              configurar la regla en el mismo
               orden en el que fueron adicionados por el actor.</p>
           </td>
         </tr>
       </table>
-      
-      <p class="PARRAFO">Los campos parámetros, operadores lógicos, valor y operadores
-          matemáticos van precedidos de un radio button en el cual el actor debe marcar cual de ellos desea
-        utilizar; una vez que el actor selecciona alguno de ellos el campo se habilita quedando los demás
-        deshabilitados. Por defecto, al ingresar al formulario siempre entra marcado y habilitado el campo
-        Parámetros. </p>
-      <p class="PARRAFO">Además de los botones salvar y cancelar, el formulario contiene tres botones especiales
-        que son los que permiten configurar las reglas: Agregar, Deshacer y Borrar todo </p>
 
-      <p class="PARRAFO"><span class="SUBTITULO">Detalle:</span>  si el actor invoca
-        la opción Detalle se despliega un nuevo formulario en el cual se muestra la sintaxis o estructura de la
+      <p class="PARRAFO">Los campos parámetros, operadores lógicos, valor y
+        operadores
+        matemáticos van precedidos de un radio button en el cual el actor debe
+        marcar cual de ellos desea
+        utilizar; una vez que el actor selecciona alguno de ellos el campo se
+        habilita quedando los demás
+        deshabilitados. Por defecto, al ingresar al formulario siempre entra
+        marcado y habilitado el campo
+        Parámetros. </p>
+      <p class="PARRAFO">Además de los botones salvar y cancelar, el formulario
+        contiene tres botones especiales
+        que son los que permiten configurar las reglas: Agregar, Deshacer y
+        Borrar todo </p>
+
+      <p class="PARRAFO"><span class="SUBTITULO">Detalle:</span> si el actor
+        invoca
+        la opción Detalle se despliega un formulario en el cual se muestra
+        la sintaxis o estructura de la
         regla y el diagrama de flujo de la misma.</p>
       <p class="TITLE"><img src="../img/COF_030B11.PNG"></p>
 
-      <p class="PARRAFO"><span class="PARRAFO"><span class="SUBTITULO"><span class="style3">PROCEDIMIENTO PARA ADICIONAR
-              LOS DATOS Y CONFIGURAR LA REGLA</span> :</span>  para configurar la estructura de la regla, el actor debe
-          seleccionar y agregar uno a uno los parámetros, operadores lógicos, valor y
-          operadores matemáticos que vaya a utilizar, teniendo en cuenta el orden en el cual son
+      <p class="PARRAFO"><span class="PARRAFO"><span class="SUBTITULO"><span
+              class="style3">PROCEDIMIENTO PARA ADICIONAR
+              LOS DATOS Y CONFIGURAR LA REGLA</span> :</span> para configurar la
+          estructura de la regla, el actor debe
+          seleccionar y agregar uno a uno los parámetros, operadores lógicos,
+          valor y
+          operadores matemáticos que vaya a utilizar, teniendo en cuenta el
+          orden en el cual son
           agregados.</p>
-      <p class="PARRAFO">Previo al proceso de definición de las reglas es aconsejable y muy útil que se
-        tenga definido en un excel u otro tipo de documento la sintaxis o argumentos que conforman la regla. </p>
-      <p class="PARRAFO"><span class="PARRAFO">Para adicionar cualquiera de los elementos de la regla, el actor primero
-          debe marcar el radio button asociado con el tipo de elemento que desea utilizar, luego seleccionar o ingresar
-          el valor del mismo y por último debe utilizar el botón especial <span class="PARRAFO">
-            'Agregar'. Una vez que el actor agregue cada </span> parámetro, operador lógico,
-            valor u operador matemático </span><span class="style2">estos se deben mostrar en el
-          campo</span><span class="PARRAFO"> 'Definición de regla' </span>  como se muestra a
-        continuación. </p>
-      <p class="PARRAFO">Para agregar un parámetro: </p>
-      <p class="TITLE"><img src="../img/COF_030B7.PNG"></p>
-      <p class="PARRAFO">Para agregar un operador lógico: </p>
-      <p class="TITLE"><img src="../img/COF_030B8.PNG"></p>
-      <p class="PARRAFO">Para agregar un valor: </p>
-      <p class="TITLE"><img src="../img/COF_030B9.PNG"></p>
-      <p class="PARRAFO">Cuando se adicione un 'Valor' dependiendo del tipo de dato indicado por el actor el sistema lo mostrará
-        de la siguiente manera: </p>
-      <p class="PARRAFO">Si es un VARCHAR lo mostrará encerrado entre comillas sencillas 'abc'</p>
-      <p class="PARRAFO">Si es un DATE lo mostrará encerrado entre paréntesis cuadrados [2009-03-01]</p>
-      <p class="PARRAFO">Si es un NUMBER lo mostrará sin ningún tipo de marca adicional </p>
-      <p class="PARRAFO">Una vez que el actor ha agregado todos los parámetros, operadores lógicos, valor y
-        operadores matemáticos que definen la configuración de la regla, mediante el botón
-        salvar el sistema valida la síntaxis de la misma y si es correcta muestra el diagrama de flujo
-        respectivo.</p>
-      <p class="TITLE"><img src="../img/COF_030B10.PNG"></p>
-      <p class="PARRAFO">Si durante la configuración de la regla el actor se equivoca o decide modificar cualquiera de los datos
-        ingresados debe utilizar los botones Deshacer y Borrar todo. Deshacer va eliminando uno a uno los diferentes
-        datos agregados, mientras que borrar todo los elimina completamente dejando el formulario en blanco para que el
-        actor pueda comenzar nuevamente.</p>
+        <p class="PARRAFO">Previo al proceso de definición de las reglas es
+          aconsejable y muy útil que se
+          tenga definido en un excel u otro tipo de documento la sintaxis o
+          argumentos que conforman la regla. </p>
+        <p class="PARRAFO"><span class="PARRAFO">Para adicionar cualquiera de
+            los elementos de la regla, el actor primero
+            debe marcar el radio button asociado con el tipo de elemento que
+            desea utilizar, luego seleccionar o ingresar
+            el valor del mismo y por último debe utilizar el botón especial
+            <span class="PARRAFO">
+              'Agregar'. Una vez que el actor agregue cada </span> parámetro,
+            operador lógico,
+            valor u operador matemático </span><span class="style2">estos se
+            deben mostrar en el
+            campo</span><span class="PARRAFO"> 'Definición de regla' </span>
+          como se muestra a
+          continuación. </p>
+        <p class="PARRAFO">Para agregar un parámetro: </p>
+        <p class="TITLE"><img src="../img/COF_030B7.PNG"></p>
+        <p class="PARRAFO">Para agregar un operador lógico: </p>
+        <p class="TITLE"><img src="../img/COF_030B8.PNG"></p>
+        <p class="PARRAFO">Para agregar un valor: </p>
+        <p class="TITLE"><img src="../img/COF_030B9.PNG"></p>
+        <p class="PARRAFO">Cuando se adicione un 'Valor' dependiendo del tipo de
+          dato indicado por el actor el sistema lo mostrará
+          de la siguiente manera: </p>
+        <p class="PARRAFO">Si es un VARCHAR lo mostrará encerrado entre comillas
+          sencillas 'abc'</p>
+        <p class="PARRAFO">Si es un DATE lo mostrará encerrado entre paréntesis
+          cuadrados [2009-03-01]</p>
+        <p class="PARRAFO">Si es un NUMBER lo mostrará sin ningún tipo de marca
+          adicional </p>
+        <p class="PARRAFO">Una vez que el actor ha agregado todos los
+          parámetros, operadores lógicos, valor y
+          operadores matemáticos que definen la configuración de la regla,
+          mediante el botón
+          salvar el sistema valida la síntaxis de la misma y si es correcta
+          muestra el diagrama de flujo
+          respectivo.</p>
+        <p class="TITLE"><img src="../img/COF_030B10.PNG"></p>
+        <p class="PARRAFO">Si durante la configuración de la regla el actor se
+          equivoca o decide modificar cualquiera de los datos
+          ingresados debe utilizar los botones Deshacer y Borrar todo. Deshacer
+          va eliminando uno a uno los diferentes
+          datos agregados, mientras que borrar todo los elimina completamente
+          dejando el formulario en blanco para que el
+          actor pueda comenzar nuevamente.</p>
 
-      <p class="TITLE">Botones especiales </p>
-      <p class="TITLE"><img src="../img/DESHACER.PNG"></p>
-      <p class="PARRAFO">Deshacer: botón que permite eliminar uno a uno los diferentes componentes agregados a la regla,
-        iniciando por el último. </p>
-      <p class="TITLE"><img src="../img/BORRAR TODO.PNG"></p>
-      Borrar todo: botón que permite eliminar simultáneamente todos
-        los componentes agregados a la regla, para que el actor pueda comenzar nuevamente el proceso de
+        <p class="TITLE">Botones especiales </p>
+        <p class="TITLE"><img src="../img/DESHACER.PNG"></p>
+        <p class="PARRAFO">Deshacer: botón que permite eliminar uno a uno los
+          diferentes componentes agregados a la regla,
+          iniciando por el último. </p>
+        <p class="TITLE"><img src="../img/BORRAR TODO.PNG"></p>
+        Borrar todo: botón que permite eliminar simultáneamente todos
+        los componentes agregados a la regla, para que el actor pueda comenzar
+        nuevamente el proceso de
         definición de la regla.</p>
-  </section>
-  <script src="../js/menu.js"></script>
-</body>
-<div id="footerContainer"></div>
-<script>
+    </section>
+    <script src="../js/menu.js"></script>
+  </body>
+  <div id="footerContainer"></div>
+  <script>
   fetch('footer.html')
     .then(response => response.text())
     .then(html => {

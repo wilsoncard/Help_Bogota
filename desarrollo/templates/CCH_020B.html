@@ -1,25 +1,25 @@
 <!DOCTYPE html>
 <html lang="es">
 
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>BANKBU®</title>
-  <link rel="stylesheet" href="../css/pages.css">
-  <link rel="stylesheet" href="../css/style.css">
-  <link rel="icon" href="../img/ACQUIRER-logo.JPG" type="image/x-icon">
-</head>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BANKBU®</title>
+    <link rel="stylesheet" href="../css/pages.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="icon" href="../img/ACQUIRER-logo.JPG" type="image/x-icon">
+  </head>
 
-<body>
+  <body>
 
-  <header>
-    <img class="logo" src="../img/logoBankbu_.PNG" alt="Logo de Mi Empresa">
-    <div id="menuBtn">
-      <img class="TITLE" src="../img/menu.PNG" alt="Botón de Menú ">
-    </div>
-  </header>
+    <header>
+      <img class="logo" src="../img/logoBankbu_.PNG" alt="Logo de Mi Empresa">
+      <div id="menuBtn">
+        <img class="TITLE" src="../img/menu.PNG" alt="Botón de Menú ">
+      </div>
+    </header>
     <div id="menuContainer"></div>
-  <script>
+    <script>
     fetch('menu.html')
       .then(response => response.text())
       .then(html => {
@@ -27,175 +27,199 @@
       });
   </script>
 
-  <section>
-    <div>
-      <table>
-        <tbody>
+    <section>
+      <div>
+
+        <p class="TITLE">Histórico de gestiones</p>
+
+        <p class="PARRAFO">Esta forma o pantalla muestra un resumen general de
+          todas las obligaciones que se encuentran en proceso de
+          cobro, asignadas a las diferentes casas o agentes de cobro y permite
+          también efectuar consultas sobre las
+          mismas con base en la combinación de criterios. </p>
+        <p class="PARRAFO">El formulario contiene las opción Detalle.</p>
+        <p class="TITLE"><img src="../img/CCF_020B.PNG"></p>
+
+        <p class="PARRAFO"><span class="SUBTITULO">Gestiones</span> Agrupación
+          de campos que muestran a nivel general las
+          obligaciones entregadas por la entidad a las diferentes casas y/o
+          agentes de cobro para su correspondiente
+          gestión. En el caso de efectuarse una consulta con base en algunos de
+          los criterios del bloque Datos
+          adicionales, la información que se muestra en este bloque de gestiones
+          será
+          únicamente la de aquellos registros que cumplieron con los criterios
+          seleccionados.</p>
+        <table cellspacing="0" cellpadding="0">
           <tr>
+            <td class="titletable">
+              <p class="SUBTITULO">Número obligación</p>
+            </td>
             <td>
-              <div>
-                <p class="TITLE">Histórico de gestiones</p>
-              </div>
+              <p class="PARRAFO">
+                Campo que contiene el número que identifica a cada una de las
+                obligaciones entregadas a proceso de
+                cobro por la entidad.</p>
             </td>
           </tr>
-        </tbody>
-      </table>
-      <p class="PARRAFO">Esta forma o pantalla muestra un resumen general de todas las obligaciones que se encuentran en proceso de
-        cobro, asignadas a las diferentes casas o agentes de cobro y permite también efectuar consultas sobre las
-        mismas con base en la combinación de criterios. </p>
-      <p class="PARRAFO">El formulario contiene las opción Detalle.</p>
-      <p class="TITLE"><img src="../img/CCF_020B.PNG"></p>
+          <tr>
+            <td class="titletable">
+              <p class="SUBTITULO">Tipo cobro</p>
+            </td>
+            <td>
+              <p class="PARRAFO">
+                Indica con base en las definiciones hechas en la opción del
+                mismo nombre, la <a
+                  href="CCH_002B.html">clase de cobro</a> que se adelanta sobre
+                la obligación.</p>
+            </td>
+          </tr>
+          <tr>
+            <td class="titletable">
+              <p class="SUBTITULO">Cliente</p>
+            </td>
+            <td class="PARRAFO">Muestra el nombre del cliente deudor de la
+              obligación objeto del cobro.
+            </td>
+          </tr>
+        </table>
 
-      <p class="PARRAFO"><span class="SUBTITULO">Gestiones</span>  Agrupación de campos que muestran a nivel general las
-        obligaciones entregadas por la entidad a las diferentes casas y/o agentes de cobro para su correspondiente
-        gestión. En el caso de efectuarse una consulta con base en algunos de los criterios del bloque Datos
-          adicionales, la información que se muestra en este bloque de gestiones será
-        únicamente la de aquellos registros que cumplieron con los criterios seleccionados.</p>
-      <table cellspacing="0" cellpadding="0">
-        <TR>
-          <td class="titletable">
-            <p class="SUBTITULO">Número obligación</p>
-          </TD>
-          <td>
-            <p class="PARRAFO">
-              Campo que contiene el número que identifica a cada una de las obligaciones entregadas a proceso de
-              cobro por la entidad.</p>
-          </TD>
-        </TR>
-        <TR>
-          <td class="titletable">
-            <p class="SUBTITULO">Tipo cobro</p>
-          </TD>
-          <td>
-            <p class="PARRAFO">
-              Indica con base en las definiciones hechas en la opción del mismo nombre, la <A
-                  href="CCH_002B.html">clase de cobro</A> que se adelanta sobre la obligación.</p>
-          </TD>
-        </TR>
-        <TR>
-          <td class="titletable">
-            <p class="SUBTITULO">Cliente</p>
-          </TD>
-          <TD class="PARRAFO">Muestra el nombre del cliente deudor de la obligación objeto del cobro.
-          </TD>
-        </TR>
-      </table>
-
-      <p class="PARRAFO"><span class="SUBTITULO">Detalle:</span>  Esta agrupación de campos muestra de manera específica,
-        para cada una de las obligaciones contenidas en el bloque anterior sobre la cual se ubique el cursor, toda la
-        información detallada relacionada con la evolución que ha tenido el proceso de cobranza de la
-        misma. Permite también efectuar consulta por medio de la selección y/o combinación de
-        criterios según la necesidad de información requerida por la entidad o casa de cobranza. </p>
-      <table>
-        <TR>
-          <TD class="SUBTITULO">
-            <p class="PARRAFO">Tipo obligación</p>
-          </TD>
-          <td>
-            <p class="PARRAFO">Se&ntilde;ala con base en lo parametrizado en la opción tipo obligación, la clase
-              a la que corresponde la obligación. </p>
-          </TD>
-        </TR>
-        <TR>
-          <TD class="SUBTITULO">
-            <p class="PARRAFO">Actividad</p>
-          </TD>
-          <td>
-            <p class="PARRAFO">Muestra la clase de actividad actual en la cual se encuentra la obligación ó la que se
-              desea consultar, acorde con lo parametrizado en <A href="CCH_004B.html">Actividades de cobro</A>
-            </p>
-          </TD>
-        </TR>
-        <TR>
-          <TD class="SUBTITULO">
-            <p class="PARRAFO">Fecha inicio</p>
-          </TD>
-          <td>
-            <p class="PARRAFO">Campo en formato DD-MM-YYYY que contiene la fecha en la cual ingresó la obligación a cobro.
-            </p>
-          </TD>
-        </TR>
-        <TR>
-          <TD class="SUBTITULO">
-            <p class="PARRAFO">Fecha programada</p>
-          </TD>
-          <td>
-            <p class="PARRAFO">En este campo en formato DD-MM-YYYY, el sistema determina de acuerdo con la fecha de ingreso y el plazo
-              estimado para efectuar las actividades de cobro correspondiente, la fecha en que debe estar finalizada la
-              gestión correspondiente a la actividad asignada. </p>
-          </TD>
-        </TR>
-        <TR>
-          <TD class="SUBTITULO">
-            <p class="PARRAFO">Fecha real</p>
-          </TD>
-          <td>
-            <p class="PARRAFO">Campo en formato DD-MM-YYYY que muestra, según el caso, la fecha en la que efectivamente se
-              terminó la gestión de cobro correspondiente a la actividad asignada.</p>
-          </TD>
-        </TR>
-        <TR>
-          <TD class="SUBTITULO">
-            <p class="PARRAFO">Estado</p>
-          </TD>
-          <td>
-            <p class="PARRAFO">Registra el estado en el que se encuentra la obligación; en caso de ser criterio de consulta
-              permite escoger de la lista de valores adjunta, el estado que deben tener las obligaciones que se desea
-              consultar. </p>
-          </TD>
-        </TR>
-        <TR>
-          <TD class="SUBTITULO">
-            <p class="PARRAFO">Valor gestión</p>
-          </TD>
-          <td>
-            <p class="PARRAFO">Muestra el valor o monto de la obligación sobre el cual se está adelantando la
-              gestión de cobro.</p>
-          </TD>
-        </TR>
-        <TR>
-          <TD class="SUBTITULO">
-            <p class="PARRAFO">Valor cobros</p>
-          </TD>
-          <td>
-            <p class="PARRAFO">Se&ntilde;ala el valor de las sumas recaudadas como resultado de la gestión de cobro efectuada.
-            </p>
-          </TD>
-        </TR>
-        <TR>
-          <TD class="SUBTITULO">
-            <p class="PARRAFO">Agente</p>
-          </TD>
-          <td>
-            <p class="PARRAFO">Dupla de campos que indican el código y nombre del agente al cual le fue asignada la
-              obligación; en caso de ser criterio de consulta se&ntilde;ala el agente sobre el cual se desea
-              consultar las obligaciones a su cargo.</p>
-          </TD>
-        </TR>
-        <TR>
-          <TD class="SUBTITULO">
-            <p class="PARRAFO">Observaciones</p>
-          </TD>
-          <td>
-            <p class="PARRAFO">Campo que muestra, si las hay, las anotaciones adicionales de importancia relacionadas con la
-              gestión de cobro efectuada.</p>
-          </TD>
-        </TR>
-        <TR>
-          <TD class="SUBTITULO">
-            <p class="PARRAFO">Número cobro</p>
-          </TD>
-          <td>
-            <p class="PARRAFO">Contiene el número que identifica cada uno de los cobros entregados por la entidad a las casas de
-              cobranza.</p>
-          </TD>
-        </TR>
-      </table>
-  </section>
-  <script src="../js/menu.js"></script>
-</body>
-<div id="footerContainer"></div>
-<script>
+        <p class="PARRAFO"><span class="SUBTITULO">Detalle:</span> Esta
+          agrupación de campos muestra de manera específica,
+          para cada una de las obligaciones contenidas en el bloque anterior
+          sobre la cual se ubique el cursor, toda la
+          información detallada relacionada con la evolución que ha tenido el
+          proceso de cobranza de la
+          misma. Permite también efectuar consulta por medio de la selección y/o
+          combinación de
+          criterios según la necesidad de información requerida por la entidad o
+          casa de cobranza. </p>
+        <table>
+          <tr>
+            <td class="SUBTITULO">
+              <p class="PARRAFO">Tipo obligación</p>
+            </td>
+            <td>
+              <p class="PARRAFO">Se&ntilde;ala con base en lo parametrizado en
+                la opción tipo obligación, la clase
+                a la que corresponde la obligación. </p>
+            </td>
+          </tr>
+          <tr>
+            <td class="SUBTITULO">
+              <p class="PARRAFO">Actividad</p>
+            </td>
+            <td>
+              <p class="PARRAFO">Muestra la clase de actividad actual en la cual
+                se encuentra la obligación ó la que se
+                desea consultar, acorde con lo parametrizado en <a
+                  href="CCH_004B.html">Actividades de cobro</a>
+              </p>
+            </td>
+          </tr>
+          <tr>
+            <td class="SUBTITULO">
+              <p class="PARRAFO">Fecha inicio</p>
+            </td>
+            <td>
+              <p class="PARRAFO">Campo en formato DD-MM-YYYY que contiene la
+                fecha en la cual ingresó la obligación a cobro.
+              </p>
+            </td>
+          </tr>
+          <tr>
+            <td class="SUBTITULO">
+              <p class="PARRAFO">Fecha programada</p>
+            </td>
+            <td>
+              <p class="PARRAFO">En este campo en formato DD-MM-YYYY, el sistema
+                determina de acuerdo con la fecha de ingreso y el plazo
+                estimado para efectuar las actividades de cobro correspondiente,
+                la fecha en que debe estar finalizada la
+                gestión correspondiente a la actividad asignada. </p>
+            </td>
+          </tr>
+          <tr>
+            <td class="SUBTITULO">
+              <p class="PARRAFO">Fecha real</p>
+            </td>
+            <td>
+              <p class="PARRAFO">Campo en formato DD-MM-YYYY que muestra, según
+                el caso, la fecha en la que efectivamente se
+                terminó la gestión de cobro correspondiente a la actividad
+                asignada.</p>
+            </td>
+          </tr>
+          <tr>
+            <td class="SUBTITULO">
+              <p class="PARRAFO">Estado</p>
+            </td>
+            <td>
+              <p class="PARRAFO">Registra el estado en el que se encuentra la
+                obligación; en caso de ser criterio de consulta
+                permite escoger de la lista de valores adjunta, el estado que
+                deben tener las obligaciones que se desea
+                consultar. </p>
+            </td>
+          </tr>
+          <tr>
+            <td class="SUBTITULO">
+              <p class="PARRAFO">Valor gestión</p>
+            </td>
+            <td>
+              <p class="PARRAFO">Muestra el valor o monto de la obligación sobre
+                el cual se está adelantando la
+                gestión de cobro.</p>
+            </td>
+          </tr>
+          <tr>
+            <td class="SUBTITULO">
+              <p class="PARRAFO">Valor cobros</p>
+            </td>
+            <td>
+              <p class="PARRAFO">Se&ntilde;ala el valor de las sumas recaudadas
+                como resultado de la gestión de cobro efectuada.
+              </p>
+            </td>
+          </tr>
+          <tr>
+            <td class="SUBTITULO">
+              <p class="PARRAFO">Agente</p>
+            </td>
+            <td>
+              <p class="PARRAFO">Dupla de campos que indican el código y nombre
+                del agente al cual le fue asignada la
+                obligación; en caso de ser criterio de consulta se&ntilde;ala el
+                agente sobre el cual se desea
+                consultar las obligaciones a su cargo.</p>
+            </td>
+          </tr>
+          <tr>
+            <td class="SUBTITULO">
+              <p class="PARRAFO">Observaciones</p>
+            </td>
+            <td>
+              <p class="PARRAFO">Campo que muestra, si las hay, las anotaciones
+                adicionales de importancia relacionadas con la
+                gestión de cobro efectuada.</p>
+            </td>
+          </tr>
+          <tr>
+            <td class="SUBTITULO">
+              <p class="PARRAFO">Número cobro</p>
+            </td>
+            <td>
+              <p class="PARRAFO">Contiene el número que identifica cada uno de
+                los cobros entregados por la entidad a las casas de
+                cobranza.</p>
+            </td>
+          </tr>
+        </table>
+      </section>
+      <script src="../js/menu.js"></script>
+    </body>
+    <div id="footerContainer"></div>
+    <script>
   fetch('footer.html')
     .then(response => response.text())
     .then(html => {
@@ -203,4 +227,4 @@
     });
 </script>
 
-</html>
+  </html>

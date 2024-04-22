@@ -1,25 +1,25 @@
 <!DOCTYPE html>
 <html lang="es">
 
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>BANKBU®</title>
-  <link rel="stylesheet" href="../css/pages.css">
-  <link rel="stylesheet" href="../css/style.css">
-  <link rel="icon" href="../img/ACQUIRER-logo.JPG" type="image/x-icon">
-</head>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BANKBU®</title>
+    <link rel="stylesheet" href="../css/pages.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="icon" href="../img/ACQUIRER-logo.JPG" type="image/x-icon">
+  </head>
 
-<body>
+  <body>
 
-  <header>
-    <img class="logo" src="../img/logoBankbu_.PNG" alt="Logo de Mi Empresa">
-    <div id="menuBtn">
-      <img class="TITLE" src="../img/menu.PNG" alt="Botón de Menú ">
-    </div>
-  </header>
+    <header>
+      <img class="logo" src="../img/logoBankbu_.PNG" alt="Logo de Mi Empresa">
+      <div id="menuBtn">
+        <img class="TITLE" src="../img/menu.PNG" alt="Botón de Menú ">
+      </div>
+    </header>
     <div id="menuContainer"></div>
-  <script>
+    <script>
     fetch('menu.html')
       .then(response => response.text())
       .then(html => {
@@ -27,295 +27,337 @@
       });
   </script>
 
-  <section>
-    <div>
-      
-              <p class="TITLE">Plan de pago preferencial</p>
+    <section>
+      <div>
 
-      <p class="PARRAFO">Mediante esta función se habilita un centro de autorizaciones
-        manual, con el fin de atender los establecimientos a los cuales les es permitido efectuar transacciones de pago
-        preferencial.</p>
-      <p class="PARRAFO">Al ingresar al formulario el usuario debe registrar el número de tarjeta, el
-        código alfa, el valor de la transacción y el código del establecimiento que solicita la
-        autorización. </p>
+        <p class="TITLE">Plan de pago preferencial</p>
 
-      <p class="TITLE"><img src="../img/COF_037B.PNG"></p>
+        <p class="PARRAFO">Mediante esta función se habilita un centro de
+          autorizaciones
+          manual, con el fin de atender los establecimientos a los cuales les es
+          permitido efectuar transacciones de pago
+          preferencial.</p>
+        <p class="PARRAFO">Al ingresar al formulario el usuario debe registrar
+          el número de tarjeta, el
+          código alfa, el valor de la transacción y el código del
+          establecimiento que solicita la
+          autorización. </p>
 
-      <table>
-        <tr>
-          <td class="titletable">
-            <p class="SUBTITULO">Número
-                  tarjeta </p>
-          </td>
-          <td>
-            <p class="PARRAFO">En
-              este campo se captura el número de tarjeta del cliente a quien
-              se le otorgará la autorización.</p>
-          </td>
-        </tr>
-        <tr>
-          <td class="titletable">
-            <p class="SUBTITULO">Código alpha </p>
-          </td>
-          <td>
-            <p class="PARRAFO">Campo obligatorio en el que se registra el número del código alpha de la
-              tarjeta a autorizar. </p>
-          </td>
-        </tr>
-        <tr>
-          <td class="titletable">
-            <p class="SUBTITULO">Valor
-                </p>
-          </td>
-          <td>
-            <p class="PARRAFO">En
-              este campo obligatorio se ingresa el monto de la transacción que se está
-              solicitando autorizar.</p>
-          </td>
-        </tr>
-        <tr>
-          <td class="titletable">
-            <p class="SUBTITULO">Transacción
-                </p>
-          </td>
-          <td>
-            <p class="PARRAFO">Campo
-              de salida no modificable que muestra la transacción original con la cual el autorizador reconoce
-              que es una transacción Plan de Pago Preferencial para que pueda afectar directamente la
-              línea PPP y no la de consumos de la tarjeta. </p>
-          </td>
-        </tr>
-        <tr>
-          <td class="titletable">
-            <p class="SUBTITULO">Establecimiento</p>
-          </td>
-          <td>
-            <p class="PARRAFO">En este campo obligatorio se debe ingresar el código del establecimiento que
-              solicita la autorización. Al momente de cargar la información el sistema debe validar que
-              las posiciones 5 y 6 del código del establecimiento sean 28 o 48 para identificar si el
-              establecimiento está o no autorizado para efectuar transacciones PPP. </p>
-          </td>
-        </tr>
-        <tr>
-          <td class="titletable">
-            <p class="SUBTITULO">Moneda</p>
-          </td>
-          <td>
-            <p class="PARRAFO">Campo
-              de salida que muestra la moneda en la cual se denomina la transacción y que por defecto es la
-              moneda patron definida para la entidad. </p>
-          </td>
-        </tr>
-      </table>
+        <p class="TITLE"><img src="../img/COF_037B.PNG"></p>
 
-      <p class="PARRAFO">Después de haber diligenciado los datos requeridos en el formulario inicial al utilizar
-        el botón Cargar información una vez que el sistema valide la tarjeta y el establecimiento
-        se despliega un nuevo formulario que muestra toda la información básica de la transacción a
-        autorizar y donde todos los campos son de salida no modificables por el usuario, </p>
-      <p class="TITLE"><img src="../img/COF_037B1.PNG"></p>
-
-      <table>
-        <tr>
-          <td class="titletable">
-            <p class="SUBTITULO">Número
+        <table>
+          <tr>
+            <td class="titletable">
+              <p class="SUBTITULO">Número
                 tarjeta </p>
-          </td>
-          <td>
-            <p class="PARRAFO">Muestra
-              el número de tarjeta ingresado de la autorización que
-              se dese crear.</p>
-          </td>
-        </tr>
-        <tr>
-          <td class="titletable">
-            <p class="SUBTITULO">Nombre
+            </td>
+            <td>
+              <p class="PARRAFO">En
+                este campo se captura el número de tarjeta del cliente a quien
+                se le otorgará la autorización.</p>
+            </td>
+          </tr>
+          <tr>
+            <td class="titletable">
+              <p class="SUBTITULO">Código alpha </p>
+            </td>
+            <td>
+              <p class="PARRAFO">Campo obligatorio en el que se registra el
+                número del código alpha de la
+                tarjeta a autorizar. </p>
+            </td>
+          </tr>
+          <tr>
+            <td class="titletable">
+              <p class="SUBTITULO">Valor
+              </p>
+            </td>
+            <td>
+              <p class="PARRAFO">En
+                este campo obligatorio se ingresa el monto de la transacción que
+                se está
+                solicitando autorizar.</p>
+            </td>
+          </tr>
+          <tr>
+            <td class="titletable">
+              <p class="SUBTITULO">Transacción
+              </p>
+            </td>
+            <td>
+              <p class="PARRAFO">Campo
+                de salida no modificable que muestra la transacción original con
+                la cual el autorizador reconoce
+                que es una transacción Plan de Pago Preferencial para que pueda
+                afectar directamente la
+                línea PPP y no la de consumos de la tarjeta. </p>
+            </td>
+          </tr>
+          <tr>
+            <td class="titletable">
+              <p class="SUBTITULO">Establecimiento</p>
+            </td>
+            <td>
+              <p class="PARRAFO">En este campo obligatorio se debe ingresar el
+                código del establecimiento que
+                solicita la autorización. Al momente de cargar la información el
+                sistema debe validar que
+                las posiciones 5 y 6 del código del establecimiento sean 28 o 48
+                para identificar si el
+                establecimiento está o no autorizado para efectuar transacciones
+                PPP. </p>
+            </td>
+          </tr>
+          <tr>
+            <td class="titletable">
+              <p class="SUBTITULO">Moneda</p>
+            </td>
+            <td>
+              <p class="PARRAFO">Campo
+                de salida que muestra la moneda en la cual se denomina la
+                transacción y que por defecto es la
+                moneda patron definida para la entidad. </p>
+            </td>
+          </tr>
+        </table>
+
+        <p class="PARRAFO">Después de haber diligenciado los datos requeridos en
+          el formulario inicial al utilizar
+          el botón Cargar información una vez que el sistema valide la tarjeta y
+          el establecimiento
+          se despliega un formulario que muestra toda la información
+          básica de la transacción a
+          autorizar y donde todos los campos son de salida no modificables por
+          el usuario, </p>
+        <p class="TITLE"><img src="../img/COF_037B1.PNG"></p>
+
+        <table>
+          <tr>
+            <td class="titletable">
+              <p class="SUBTITULO">Número
+                tarjeta </p>
+            </td>
+            <td>
+              <p class="PARRAFO">Muestra
+                el número de tarjeta ingresado de la autorización que
+                se dese crear.</p>
+            </td>
+          </tr>
+          <tr>
+            <td class="titletable">
+              <p class="SUBTITULO">Nombre
                 plástico </p>
-          </td>
-          <td>
-            <p class="PARRAFO">Despliega el nombre del cliente a quien pertenece la tarjeta.</p>
-          </td>
-        </tr>
-        <tr>
-          <td class="titletable">
-            <p class="SUBTITULO">Tipo
-              identificación </p>
-          </td>
-          <td>
-            <p class="PARRAFO">Contiene
-              el tipo documento de identificación del tarjetahabiente.</p>
-          </td>
-        </tr>
-        <tr>
-          <td class="titletable">
-            <p class="SUBTITULO">Número
-              identificación </p>
-          </td>
-          <td>
-            <p class="PARRAFO">Indica el número de documento de identificación del tarjetahabiente.</p>
-          </td>
-        </tr>
-        <tr>
-          <td class="titletable">
-            <p class="SUBTITULO">Fecha
+            </td>
+            <td>
+              <p class="PARRAFO">Despliega el nombre del cliente a quien
+                pertenece la tarjeta.</p>
+            </td>
+          </tr>
+          <tr>
+            <td class="titletable">
+              <p class="SUBTITULO">Tipo
+                identificación </p>
+            </td>
+            <td>
+              <p class="PARRAFO">Contiene
+                el tipo documento de identificación del tarjetahabiente.</p>
+            </td>
+          </tr>
+          <tr>
+            <td class="titletable">
+              <p class="SUBTITULO">Número
+                identificación </p>
+            </td>
+            <td>
+              <p class="PARRAFO">Indica el número de documento de identificación
+                del tarjetahabiente.</p>
+            </td>
+          </tr>
+          <tr>
+            <td class="titletable">
+              <p class="SUBTITULO">Fecha
                 vencimiento </p>
-          </td>
-          <td>
-            <p class="PARRAFO">Muestra
-              la fecha de vencimiento de la tarjeta capturada previamente.</p>
-          </td>
-        </tr>
-        <tr>
-          <td class="titletable">
-            <p class="SUBTITULO">Transacción</p>
-          </td>
-          <td>
-            <p class="PARRAFO">Despliega la transacción para la cual se está solicitando la
-              autorización.</p>
-          </td>
-        </tr>
-        <tr>
-          <td class="titletable">
-            <p class="SUBTITULO">Moneda</p>
-          </td>
-          <td>
-            <p class="PARRAFO">Contiene la moneda en la cual se denomina la transacción que se está
-              solicitando autorizar. </p>
-          </td>
-        </tr>
-        <tr>
-          <td class="titletable">
-            <p class="SUBTITULO">Valor
+            </td>
+            <td>
+              <p class="PARRAFO">Muestra
+                la fecha de vencimiento de la tarjeta capturada previamente.</p>
+            </td>
+          </tr>
+          <tr>
+            <td class="titletable">
+              <p class="SUBTITULO">Transacción</p>
+            </td>
+            <td>
+              <p class="PARRAFO">Despliega la transacción para la cual se está
+                solicitando la
+                autorización.</p>
+            </td>
+          </tr>
+          <tr>
+            <td class="titletable">
+              <p class="SUBTITULO">Moneda</p>
+            </td>
+            <td>
+              <p class="PARRAFO">Contiene la moneda en la cual se denomina la
+                transacción que se está
+                solicitando autorizar. </p>
+            </td>
+          </tr>
+          <tr>
+            <td class="titletable">
+              <p class="SUBTITULO">Valor
                 transacción</p>
-          </td>
-          <td>
-            <p class="PARRAFO">Indica el monto por el cual se solicita la autorización </p>
-          </td>
-        </tr>
-        <tr>
-          <td class="titletable">
-            <p class="SUBTITULO">Establecimiento</p>
-          </td>
-          <td>
-            <p class="PARRAFO">Despliega el código y nombre el establecimiento que solicita la
-              autorización PPP </p>
-          </td>
-        </tr>
-        <tr>
-          <td class="titletable">
-            <p class="SUBTITULO">Horario</p>
-          </td>
-          <td>
-            <p class="PARRAFO">Campo
-              que contiene información del horario en que el establecimiento
-              está autorizado para operar normalmente; este dato ayuda a la
-              entidad a detectar comportamientos fraudulentos con el uso de la tarjeta.</p>
-          </td>
-        </tr>
-        <tr>
-          <td class="titletable">
-            <p class="SUBTITULO">Número
-              identificación</p>
-          </td>
-          <td>
-            <p class="PARRAFO">En
-              este campo se muestra el código de identificación del
-              establecimiento en dónde se está realizando la transacción.</p>
-          </td>
-        </tr>
-        <tr>
-          <td class="titletable">
-            <p class="SUBTITULO">Razón
+            </td>
+            <td>
+              <p class="PARRAFO">Indica el monto por el cual se solicita la
+                autorización </p>
+            </td>
+          </tr>
+          <tr>
+            <td class="titletable">
+              <p class="SUBTITULO">Establecimiento</p>
+            </td>
+            <td>
+              <p class="PARRAFO">Despliega el código y nombre el establecimiento
+                que solicita la
+                autorización PPP </p>
+            </td>
+          </tr>
+          <tr>
+            <td class="titletable">
+              <p class="SUBTITULO">Horario</p>
+            </td>
+            <td>
+              <p class="PARRAFO">Campo
+                que contiene información del horario en que el establecimiento
+                está autorizado para operar normalmente; este dato ayuda a la
+                entidad a detectar comportamientos fraudulentos con el uso de la
+                tarjeta.</p>
+            </td>
+          </tr>
+          <tr>
+            <td class="titletable">
+              <p class="SUBTITULO">Número
+                identificación</p>
+            </td>
+            <td>
+              <p class="PARRAFO">En
+                este campo se muestra el código de identificación del
+                establecimiento en dónde se está realizando la transacción.</p>
+            </td>
+          </tr>
+          <tr>
+            <td class="titletable">
+              <p class="SUBTITULO">Razón
                 social </p>
-          </td>
-          <td>
-            <p class="PARRAFO">Muestra
-              el nombre con el cual se encuentra registrado el establecimiento ante
-              la Cámara de Comercio o la entidad que cumpla esa función.</p>
-          </td>
-        </tr>
-        <tr>
-          <td class="titletable">
-            <p class="SUBTITULO">Servicio</p>
-          </td>
-          <td>
-            <p class="PARRAFO">Despliega
-              el código y nombre del servicio asociado al comercio a través
-              del cual se realiza la utilización para la que se registra la
-              autorización.</p>
-          </td>
-        </tr>
-        <tr>
-          <td class="titletable">
-            <p class="SUBTITULO">Convenio</p>
-          </td>
-          <td>
-            <p class="PARRAFO">Campo
-              de salida que muestra el código y el nombre del convenio al que
-              pertenece la tarjeta cuando es de marca privada</p>
-          </td>
-        </tr>
-      </table>
-      <p class="PARRAFO"><span class="PARRAFO"><span class="SUBTITULO">Proceso
-            autorización:</span>  A través de este botón el sistema
-          inicia el proceso de generar la autorización, y muestra el resultado
-          en el bloque Información de la autorización.</p>
-      <p class="PARRAFO">En este bloque, una vez capturada la información
-        requerida para la autorización, se muestra la respuesta arrojada por
-        la solicitud de autorización una vez se apliquen las correspondientes
-        validaciones.</p>
-      <p class="TITLE"><img src="../img/COF_037B2.PNG"></p>
+            </td>
+            <td>
+              <p class="PARRAFO">Muestra
+                el nombre con el cual se encuentra registrado el establecimiento
+                ante
+                la Cámara de Comercio o la entidad que cumpla esa función.</p>
+            </td>
+          </tr>
+          <tr>
+            <td class="titletable">
+              <p class="SUBTITULO">Servicio</p>
+            </td>
+            <td>
+              <p class="PARRAFO">Despliega
+                el código y nombre del servicio asociado al comercio a través
+                del cual se realiza la utilización para la que se registra la
+                autorización.</p>
+            </td>
+          </tr>
+          <tr>
+            <td class="titletable">
+              <p class="SUBTITULO">Convenio</p>
+            </td>
+            <td>
+              <p class="PARRAFO">Campo
+                de salida que muestra el código y el nombre del convenio al que
+                pertenece la tarjeta cuando es de marca privada</p>
+            </td>
+          </tr>
+        </table>
+        <p class="PARRAFO"><span class="PARRAFO"><span class="SUBTITULO">Proceso
+              autorización:</span> A través de este botón el sistema
+            inicia el proceso de generar la autorización, y muestra el resultado
+            en el bloque Información de la autorización.</p>
+          <p class="PARRAFO">En este bloque, una vez capturada la información
+            requerida para la autorización, se muestra la respuesta arrojada por
+            la solicitud de autorización una vez se apliquen las
+            correspondientes
+            validaciones.</p>
+          <p class="TITLE"><img src="../img/COF_037B2.PNG"></p>
 
-      <table>
-        <tr>
-          <td class="titletable">
-            <p class="SUBTITULO">Código
-                respuesta </p>
-          </td>
-          <td>
-            <p class="PARRAFO">Corresponde
-              al código y descripción de la respuesta a la solicitud
-              de autorización.</p>
-          </td>
-        </tr>
-        <tr>
-          <td class="titletable">
-            <p class="SUBTITULO">Número
-              autorización</p>
-          </td>
-          <td>
-            <p class="PARRAFO">En
-              caso de que la solicitud de autorización haya sido exitosa, en
-              este campo aparece el número que fue asignado como aprobación
-              de la misma.</p>
-          </td>
-        </tr>
-      </table>
+          <table>
+            <tr>
+              <td class="titletable">
+                <p class="SUBTITULO">Código
+                  respuesta </p>
+              </td>
+              <td>
+                <p class="PARRAFO">Corresponde
+                  al código y descripción de la respuesta a la solicitud
+                  de autorización.</p>
+              </td>
+            </tr>
+            <tr>
+              <td class="titletable">
+                <p class="SUBTITULO">Número
+                  autorización</p>
+              </td>
+              <td>
+                <p class="PARRAFO">En
+                  caso de que la solicitud de autorización haya sido exitosa, en
+                  este campo aparece el número que fue asignado como aprobación
+                  de la misma.</p>
+              </td>
+            </tr>
+          </table>
 
-      <p class="PARRAFO">Plan de Pago Preferencial. El formulario contiene un hipervínculo denominado Plan de Pago
-          Preferencial que al ser invocado despliega un nuevo formulario que contiene la información
-        requerida por el usuario que está capturando la solicitud de autorización con el fin de permitirle
-        decidir si la niega de manera autónoma o si por el contrario invoca el autorizador para que sea
-        éste quien decida si niega o aprueba la solicitud.</p>
-      <p class="PARRAFO">La información desplegada es únicamente de salida y se alimenta mediante el cargue de un archivo.
-        Si para la tarjeta que solicita la autorización no existe información al invocar el
-        hipevínculo se desplegará un mesnaje de error indicando al actor este evento. </p>
-      <p class="TITLE"><img src="../img/COF_037B3.PNG"></p>
-      <p class="PARRAFO">Este formulario solo contiene el botón Salir que le permite al actor regresar al formulario
-        inicial desde donde podrá Invocar el autorizador, negar o cancelar la autorización. </p>
-      <p class="TITLE">OPCIONES ESPECIALES </p>
-      <p class="PARRAFO">Negar: mediante este botón el usuario puede negar de manera inmediata la
-        autorización, sin necesidad de invocar el autorizador, cuando después del análisis hecho en
-        el formulario Plan de Pago Preferencial considera que no se debe aprobar la autorización </p>
-      <p class="PARRAFO">Proceso autorización: mediante este botón el usuario invoca el
-        autorizador permitiendo que sea éste quien decida con base en las validaciones propias si aprueba o niega
-        la autorización solicitada.</p>
-      <p class="PARRAFO">Cancelar: mediante este botón el usuario regresa al formulario inicial de
-        captura y no efectúa ningún tipo de proceso con la autorización. </p>
-  </section>
-  <script src="../js/menu.js"></script>
-</body>
-<div id="footerContainer"></div>
-<script>
+          <p class="PARRAFO">Plan de Pago Preferencial. El formulario contiene
+            un hipervínculo denominado Plan de Pago
+            Preferencial que al ser invocado despliega un formulario que
+            contiene la información
+            requerida por el usuario que está capturando la solicitud de
+            autorización con el fin de permitirle
+            decidir si la niega de manera autónoma o si por el contrario invoca
+            el autorizador para que sea
+            éste quien decida si niega o aprueba la solicitud.</p>
+          <p class="PARRAFO">La información desplegada es únicamente de salida y
+            se alimenta mediante el cargue de un archivo.
+            Si para la tarjeta que solicita la autorización no existe
+            información al invocar el
+            hipevínculo se desplegará un mesnaje de error indicando al actor
+            este evento. </p>
+          <p class="TITLE"><img src="../img/COF_037B3.PNG"></p>
+          <p class="PARRAFO">Este formulario solo contiene el botón Salir que le
+            permite al actor regresar al formulario
+            inicial desde donde podrá Invocar el autorizador, negar o cancelar
+            la autorización. </p>
+          <p class="TITLE">OPCIONES ESPECIALES </p>
+          <p class="PARRAFO">Negar: mediante este botón el usuario puede negar
+            de manera inmediata la
+            autorización, sin necesidad de invocar el autorizador, cuando
+            después del análisis hecho en
+            el formulario Plan de Pago Preferencial considera que no se debe
+            aprobar la autorización </p>
+          <p class="PARRAFO">Proceso autorización: mediante este botón el
+            usuario invoca el
+            autorizador permitiendo que sea éste quien decida con base en las
+            validaciones propias si aprueba o niega
+            la autorización solicitada.</p>
+          <p class="PARRAFO">Cancelar: mediante este botón el usuario regresa al
+            formulario inicial de
+            captura y no efectúa ningún tipo de proceso con la autorización.
+          </p>
+        </section>
+        <script src="../js/menu.js"></script>
+      </body>
+      <div id="footerContainer"></div>
+      <script>
   fetch('footer.html')
     .then(response => response.text())
     .then(html => {
@@ -323,4 +365,4 @@
     });
 </script>
 
-</html>
+    </html>

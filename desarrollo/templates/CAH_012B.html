@@ -1,25 +1,25 @@
 <!DOCTYPE html>
 <html lang="es">
 
-<head>
+  <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>BANKBU®</title>
     <link rel="stylesheet" href="../css/pages.css">
     <link rel="stylesheet" href="../css/style.css">
- <link rel="icon" href="../img/ACQUIRER-logo.JPG" type="image/x-icon">
-</head>
+    <link rel="icon" href="../img/ACQUIRER-logo.JPG" type="image/x-icon">
+  </head>
 
-<body>
+  <body>
 
     <header>
-        <img class="logo" src="../img/logoBankbu_.PNG" alt="Logo de Mi Empresa">
-        <div id="menuBtn">
-            <img class="TITLE"  src= "../img/menu.PNG" alt="Botón de Menú ">
-        </div>
+      <img class="logo" src="../img/logoBankbu_.PNG" alt="Logo de Mi Empresa">
+      <div id="menuBtn">
+        <img class="TITLE" src="../img/menu.PNG" alt="Botón de Menú ">
+      </div>
     </header>
-      <div id="menuContainer"></div>
-  <script>
+    <div id="menuContainer"></div>
+    <script>
     fetch('menu.html')
       .then(response => response.text())
       .then(html => {
@@ -28,55 +28,63 @@
   </script>
 
     <section>
-        <div> 
-            
-                    <p  class="TITLE">Cambio masivo gerente de cuenta</p>
-                    
-            <p class="PARRAFO">Mediante esta función la entidad realiza el proceso 
-              de cambio masivo de los <a href="NUH_045B.html" >funcionarios</a> que tienen 
-              perfil de gerentes de cuenta, puesto que un funcionario determinado podría 
-              cesar sus actividades dentro de la entidad, cambiar de cargo o simplemente 
-              por política de la entidad se decide el cambio de dicho funcionario.</p>
-            <p class="PARRAFO">El formulario cuenta con dos campos y el botón para 
-              realizar el cambio masivo.</p>
-            <p class="TITLE"><img src="../img/CAF_012B.PNG"></p>
-            <table>
-              <tr> 
-                <td class="titletable"><p class="SUBTITULO">Gerente 
-                    actual</p></td>
-                <td><p class="PARRAFO">Este 
-                    campo posee una lista de valores poblada a través de la opción 
-                    <a href="NUH_045B.html" >funcionarios</a> de las tablas de la entidad 
-                    financiera del núcleo, a partir de la cual se selecciona el nombre 
-                    del gerente a ser removido o sobre el que se efectuará el cambio.</p></td>
-              </tr>
-              <tr> 
-                <td class="titletable"><p class="SUBTITULO">Gerente 
-                    nuevo </p></td>
-                <td><p class="PARRAFO">A 
-                    través de la lista de valores que provee el campo poblada en 
-                    la opción <a href="NUH_045B.html" >funcionarios</a> de las tablas 
-                    de la entidad financiera del núcleo, se selecciona el nombre 
-                    del nuevo gerente a quien le son asignados los clientes que eran atendidos 
-                    por el funcionario arriba se&ntilde;alado.</p></td>
-              </tr>
-            </table>
-            <table>
-              <tr> 
-                <td><p  class="SUBTITULO"><img src="../img/CAF_012B1.PNG"></p></td>
-                <td><p class="PARRAFO">Ejecuta 
-                    la acción del cambio masivo de gerente.</p></td>
-              </tr>
-            </table>
-        </section>
-    <script src="../js/menu.js"></script>
-</body>
-<div id="footerContainer"></div>
-<script>
+      <div>
+
+        <p class="TITLE">Cambio masivo gerente de cuenta</p>
+
+        <p class="PARRAFO">Mediante esta función la entidad realiza el proceso
+          de cambio masivo de los <a href="NUH_045B.html">funcionarios</a> que
+          tienen
+          perfil de gerentes de cuenta, puesto que un funcionario determinado
+          podría
+          cesar sus actividades dentro de la entidad, cambiar de cargo o
+          simplemente
+          por política de la entidad se decide el cambio de dicho
+          funcionario.</p>
+        <p class="PARRAFO">El formulario cuenta con dos campos y el botón para
+          realizar el cambio masivo.</p>
+        <p class="TITLE"><img src="../img/CAF_012B.PNG"></p>
+        <table>
+          <tr>
+            <td class="titletable"><p class="SUBTITULO">Gerente
+                actual</p></td>
+            <td><p class="PARRAFO">Este
+                campo posee una lista de valores poblada a través de la opción
+                <a href="NUH_045B.html">funcionarios</a> de las tablas de la
+                entidad
+                financiera del núcleo, a partir de la cual se selecciona el
+                nombre
+                del gerente a ser removido o sobre el que se efectuará el
+                cambio.</p></td>
+          </tr>
+          <tr>
+            <td class="titletable"><p class="SUBTITULO">Gerente
+                nuevo </p></td>
+            <td><p class="PARRAFO">A
+                través de la lista de valores que provee el campo poblada en
+                la opción <a href="NUH_045B.html">funcionarios</a> de las tablas
+                de la entidad financiera del núcleo, se selecciona el nombre
+                del nuevo gerente a quien le son asignados los clientes que eran
+                atendidos
+                por el funcionario arriba se&ntilde;alado.</p></td>
+          </tr>
+        </table>
+        <table>
+          <tr>
+            <td><p class="SUBTITULO"><img src="../img/CAF_012B1.PNG"></p></td>
+            <td><p class="PARRAFO">Ejecuta
+                la acción del cambio masivo de gerente.</p></td>
+          </tr>
+        </table>
+      </section>
+      <script src="../js/menu.js"></script>
+    </body>
+    <div id="footerContainer"></div>
+    <script>
   fetch('footer.html')
     .then(response => response.text())
     .then(html => {
       document.getElementById('footerContainer').innerHTML = html;
     });
 </script>
-</html>
+  </html>

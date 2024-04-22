@@ -1,25 +1,25 @@
 <!DOCTYPE html>
 <html lang="es">
 
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>BANKBU®</title>
-  <link rel="stylesheet" href="../css/pages.css">
-  <link rel="stylesheet" href="../css/style.css">
-  <link rel="icon" href="../img/ACQUIRER-logo.JPG" type="image/x-icon">
-</head>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BANKBU®</title>
+    <link rel="stylesheet" href="../css/pages.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="icon" href="../img/ACQUIRER-logo.JPG" type="image/x-icon">
+  </head>
 
-<body>
+  <body>
 
-  <header>
-    <img class="logo" src="../img/logoBankbu_.PNG" alt="Logo de Mi Empresa">
-    <div id="menuBtn">
-      <img class="TITLE" src="../img/menu.PNG" alt="Botón de Menú ">
-    </div>
-  </header>
+    <header>
+      <img class="logo" src="../img/logoBankbu_.PNG" alt="Logo de Mi Empresa">
+      <div id="menuBtn">
+        <img class="TITLE" src="../img/menu.PNG" alt="Botón de Menú ">
+      </div>
+    </header>
     <div id="menuContainer"></div>
-  <script>
+    <script>
     fetch('menu.html')
       .then(response => response.text())
       .then(html => {
@@ -27,119 +27,151 @@
       });
   </script>
 
-  <section>
-    <div>
-      
-              <p class="TITLE">Parámetros globales </p>
+    <section>
+      <div>
 
-      <p class="PARRAFO">Mediante esta opción, la entidad parametriza las características para la
-        operación de los parámetros adicionales a los establecidos como estandar para la evaluación
-        de las <a href="COH_030B.html">reglas</a> por parte del autorizador. </p>
-      <p class="PARRAFO">Por defecto, al ingresar al formulario muestra todos los parámetros globales que ya
-        hayan sido definidos.</p>
-      <p class="TITLE"><img src="../img/COF_033B.PNG"></p>
+        <p class="TITLE">Parámetros globales </p>
 
-      <p class="PARRAFO">El formulario contiene las opciones Actualizar, Eliminar y Adicionar. </p>
+        <p class="PARRAFO">Mediante esta opción, la entidad parametriza las
+          características para la
+          operación de los parámetros adicionales a los establecidos como
+          estandar para la evaluación
+          de las <a href="COH_030B.html">reglas</a> por parte del autorizador.
+        </p>
+        <p class="PARRAFO">Por defecto, al ingresar al formulario muestra todos
+          los parámetros globales que ya
+          hayan sido definidos.</p>
+        <p class="TITLE"><img src="../img/COF_033B.PNG"></p>
 
-      <p class="PARRAFO"><span class="SUBTITULO">Adicionar:</span>  Si el usuario invoca
-        la opción Adicionar se despliega un formulario con los siguientes campos:</p>
-      <p class="TITLE"><img src="../img/COF_033B1.PNG"></p>
-      <p class="PARRAFO">Cuando el parámetro No es dinámico: </p>
-      <p class="TITLE"><img src="../img/COF_033B2.PNG"></p>
+        <p class="PARRAFO">El formulario contiene los enlaces: Actualizar,Eliminar y Adicionar. </p>
 
-      <table>
-        <tr>
-          <td class="titletable">
-            <p class="SUBTITULO">Nombre</p>
-          </td>
-          <td>
-            <p class="PARRAFO">Campo alfanumérico de hasta 30 caracteres, obligatorio, en el cual se registra el
-              nombre con el cual se va a identificar el parámetro global. </p>
-          </td>
-        </tr>
-        <tr>
-          <td class="titletable">
-            <p class="SUBTITULO">Campo</p>
-          </td>
-          <td>
-            <p class="PARRAFO">Este campo tipo combo, obligatorio, permite seleccionar entre CAMPO_1 ...
-                CAMPO_10, cual de los 10 campos disponibles para ser utilizado como parámetro global es el
-              que se va a utilizar. </p>
-          </td>
-        </tr>
-        <tr>
-          <td class="titletable">
-            <p class="SUBTITULO">Tipo de campo </p>
-          </td>
-          <td>
-            <p class="PARRAFO">Campo obligatorio tipo combo en el cual se indica si el parámetro global que se
-              está definiendo se debe comportar como un tipo de dato NUMéRICO, CARACTER o
-              FECHA. </p>
-          </td>
-        </tr>
-        <tr>
-          <td class="titletable">
-            <p class="SUBTITULO">Dinámico</p>
-          </td>
-          <td>
-            <p class="PARRAFO">En este campo obligatorio se puede seleccionar entre Si  o No; en el primer
-                caso (Si)  le indica al sistema que el dato va a llegar en la trama enviada por el switch al
-              autorizador, lo que requiere que el switch envíe en la posición indicada el dato respectivo, para que
-              pueda ser validado por las reglas. En el segundo caso (No) se está indicando que el dato se va a
-              leer directamente de la tabla de <a href="COH_034B.html">parámetros</a>, caso en el cual, el dato
-              se debe enviar en el archivo de parámetros para ser cargado desde automatización de
-              procesos.</p>
-          </td>
-        </tr>
-        <tr>
-          <td class="titletable">
-            <p class="SUBTITULO">Posición inicial trama </p>
-          </td>
-          <td>
-            <p class="PARRAFO">Si en el campo anterior se selecciona la opción No, este campo se oculta
-              automáticamente en el formulario. Para el diligenciamiento de este campo el actor debe tener en
-              cuenta que este está dado en base '0' es decir, que la posición inicial corresponde a la
-              posición inmediatamente anterior a aquella en la cual comienza el dato correspondiente al
-              parámetro que se está definiendo. Por ejemplo si el dato inicia desde la posición
-              '1', en este campo se debe parametrizar '0'; si inicia en la posición '10', se debe parametrizar
-              '9'.</p>
-          </td>
-        </tr>
-        <tr>
-          <td class="titletable">
-            <p class="SUBTITULO">Posición final trama </p>
-          </td>
-          <td>
-            <p class="PARRAFO">Si en el campo 'Dinámico' se selecciona la opción No, este campo se oculta
-              automáticamente en el formulario. </span> Para el diligenciamiento de este campo el actor debe tener
-              en cuenta que este está dado en base '1' es decir, que corresponde a la última
-              posición inclusive, que ocupa el dato correspondiente al parámetro que se está
-              definiendo. Por ejemplo si el dato va hasta la posición '10' inclusive, este mismo valor es el que
+        <p class="PARRAFO"><span class="SUBTITULO">Adicionar:</span> Si el
+          usuario invoca
+          la opción Adicionar se despliega un formulario con los siguientes
+          campos:</p>
+        <p class="TITLE"><img src="../img/COF_033B1.PNG"></p>
+        <p class="PARRAFO">Cuando el parámetro No es dinámico: </p>
+        <p class="TITLE"><img src="../img/COF_033B2.PNG"></p>
+
+        <table>
+          <tr>
+            <td class="titletable">
+              <p class="SUBTITULO">Nombre</p>
+            </td>
+            <td>
+              <p class="PARRAFO">Campo alfanumérico de hasta 30 caracteres,
+                obligatorio, en el cual se registra el
+                nombre con el cual se va a identificar el parámetro global. </p>
+            </td>
+          </tr>
+          <tr>
+            <td class="titletable">
+              <p class="SUBTITULO">Campo</p>
+            </td>
+            <td>
+              <p class="PARRAFO">Este campo tipo combo, obligatorio, permite
+                seleccionar entre CAMPO_1 ...
+                CAMPO_10, cual de los 10 campos disponibles para ser utilizado
+                como parámetro global es el
+                que se va a utilizar. </p>
+            </td>
+          </tr>
+          <tr>
+            <td class="titletable">
+              <p class="SUBTITULO">Tipo de campo </p>
+            </td>
+            <td>
+              <p class="PARRAFO">Campo obligatorio tipo combo en el cual se
+                indica si el parámetro global que se
+                está definiendo se debe comportar como un tipo de dato NUMéRICO,
+                CARACTER o
+                FECHA. </p>
+            </td>
+          </tr>
+          <tr>
+            <td class="titletable">
+              <p class="SUBTITULO">Dinámico</p>
+            </td>
+            <td>
+              <p class="PARRAFO">En este campo obligatorio se puede seleccionar
+                entre Si o No; en el primer
+                caso (Si) le indica al sistema que el dato va a llegar en la
+                trama enviada por el switch al
+                autorizador, lo que requiere que el switch envíe en la posición
+                indicada el dato respectivo, para que
+                pueda ser validado por las reglas. En el segundo caso (No) se
+                está indicando que el dato se va a
+                leer directamente de la tabla de <a
+                  href="COH_034B.html">parámetros</a>, caso en el cual, el dato
+                se debe enviar en el archivo de parámetros para ser cargado
+                desde automatización de
+                procesos.</p>
+            </td>
+          </tr>
+          <tr>
+            <td class="titletable">
+              <p class="SUBTITULO">Posición inicial trama </p>
+            </td>
+            <td>
+              <p class="PARRAFO">Si en el campo anterior se selecciona la opción
+                No, este campo se oculta
+                automáticamente en el formulario. Para el diligenciamiento de
+                este campo el actor debe tener en
+                cuenta que este está dado en base '0' es decir, que la posición
+                inicial corresponde a la
+                posición inmediatamente anterior a aquella en la cual comienza
+                el dato correspondiente al
+                parámetro que se está definiendo. Por ejemplo si el dato inicia
+                desde la posición
+                '1', en este campo se debe parametrizar '0'; si inicia en la
+                posición '10', se debe parametrizar
+                '9'.</p>
+            </td>
+          </tr>
+          <tr>
+            <td class="titletable">
+              <p class="SUBTITULO">Posición final trama </p>
+            </td>
+            <td>
+              <p class="PARRAFO">Si en el campo 'Dinámico' se selecciona la
+                opción No, este campo se oculta
+                automáticamente en el formulario. </span> Para el
+              diligenciamiento de este campo el actor debe tener
+              en cuenta que este está dado en base '1' es decir, que corresponde
+              a la última
+              posición inclusive, que ocupa el dato correspondiente al parámetro
+              que se está
+              definiendo. Por ejemplo si el dato va hasta la posición '10'
+              inclusive, este mismo valor es el que
               se debe parmetrizar.</p>
           </td>
         </tr>
-        </tr>
-        <tr>
-          <td class="titletable">
-            <p class="SUBTITULO">Trama postilion </p>
-          </td>
-          <td>
-            <p class="PARRAFO">Cuando en el campo 'Dinámico' se ha seleccionado la opción SI, aquí se registra el código
-              que identifica el campo respectivo dentro de la trama que postilion le envía al autorizador, para indicar
-              cual es el dato que corresponde al parámetro global dinámico definido por el usuario y que va a ser tomado
-              para validar reglas del autorizador.</p>
-          </td>
-        </tr>
-      </table> 
-      <p class="PARRAFO"><span class="PARRAFO"><span class="SUBTITULO">Actualizar:</span>  Si el usuario invoca la
-          opción Actualizar se despliega un nuevo formulario
-          en el cual el único campo NO modificable es el Nombre.</p>
+      </tr>
+      <tr>
+        <td class="titletable">
+          <p class="SUBTITULO">Trama postilion </p>
+        </td>
+        <td>
+          <p class="PARRAFO">Cuando en el campo 'Dinámico' se ha seleccionado la
+            opción SI, aquí se registra el código
+            que identifica el campo respectivo dentro de la trama que postilion
+            le envía al autorizador, para indicar
+            cual es el dato que corresponde al parámetro global dinámico
+            definido por el usuario y que va a ser tomado
+            para validar reglas del autorizador.</p>
+        </td>
+      </tr>
+    </table>
+    <p class="PARRAFO"><span class="PARRAFO"><span
+          class="SUBTITULO">Actualizar:</span> Si el usuario invoca la
+        opción Actualizar se despliega un formulario
+        en el cual el único campo NO modificable es el Nombre.</p>
       <p class="TITLE"><img src="../img/COF_033B3.PNG"></p>
-  </section>
-  <script src="../js/menu.js"></script>
-</body>
-<div id="footerContainer"></div>
-<script>
+    </section>
+    <script src="../js/menu.js"></script>
+  </body>
+  <div id="footerContainer"></div>
+  <script>
   fetch('footer.html')
     .then(response => response.text())
     .then(html => {

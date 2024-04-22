@@ -1,26 +1,26 @@
 <!DOCTYPE html>
 <html lang="es">
 
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>BANKBU®</title>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BANKBU®</title>
 
-  <link rel="stylesheet" href="../css/pages.css">
-  <link rel="stylesheet" href="../css/style.css">
-  <link rel="icon" href="../img/ACQUIRER-logo.JPG" type="image/x-icon">
-</head>
+    <link rel="stylesheet" href="../css/pages.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="icon" href="../img/ACQUIRER-logo.JPG" type="image/x-icon">
+  </head>
 
-<body>
+  <body>
 
-  <header>
-    <img class="logo" src="../img/logoBankbu_.PNG" alt="Logo de Mi Empresa">
-    <div id="menuBtn">
-      <img class="TITLE" src="../img/menu.PNG" alt="Botón de Menú ">
-    </div>
-  </header>
+    <header>
+      <img class="logo" src="../img/logoBankbu_.PNG" alt="Logo de Mi Empresa">
+      <div id="menuBtn">
+        <img class="TITLE" src="../img/menu.PNG" alt="Botón de Menú ">
+      </div>
+    </header>
     <div id="menuContainer"></div>
-  <script>
+    <script>
     fetch('menu.html')
       .then(response => response.text())
       .then(html => {
@@ -28,134 +28,145 @@
       });
   </script>
 
-  <section>
-    <div>
-      
-              <p class="TITLE">Programas comerciales</p>
-
-      <p class="PARRAFO">Mediante esta opción se parametrizan
-        los diferentes programas comerciales que posteriormente serán asociados
-        a los <a href="DBH_018B.html">productos débito</a>
-        para otorgarles algunos beneficios adicionales relacionados con la disminución
-        o exoneración de la cuota de manejo.</p>
-      <p class="PARRAFO">Al ingresar a la opción se despliega
-        un filtro que le permite al actor consultar algún registro específico
-        por el bin, la descripción del mismo o el tipo de bin. Por defecto,
-        al ingresar al formulario se muestran todos los bines parametrizados actualmente
-        por la entidad para productos débito.</p>
-
-      <p class="TITLE"><img src="../img/DBF_039E.PNG"></p>
-      <p class="PARRAFO">El formulario contiene las opciones Actualizar,
-        Eliminar, Adicionar y Detalle.</p>
-      <p class="PARRAFO"><span class="SUBTITULO">Adicionar:</span>
-        si el usuario invoca la opción Adicionar, se despliega un
-        nuevo formulario con los siguientes campos.</p>
-      <p class="TITLE"><img src="../img/DBF_039E1.PNG"></p>
-
-      <p class="TITLE"><img src="../img/DBF_039E2.PNG"></p>
-
-      <p class="TITLE">Descripción de campos</p>
+    <section>
       <div>
-        <table>
-          <tr>
-            <td class="titletable">
-              <p class="SUBTITULO">Código</p>
-            </td>
-            <td>
-              <p class="PARRAFO">Campo
-                numérico de hasta 3 dígitos, obligatorio, en el que
-                se ingresa el código que identifica cada uno de los programas
-                comerciales.</p>
-            </td>
-          </tr>
-          <tr>
-            <td class="titletable">
-              <p class="SUBTITULO">Descripción</p>
-            </td>
-            <td>
-              <p class="PARRAFO">Este
-                campo alfanumérico obligatorio permite registrar el nombre
-                o descripción asociados con cada programa comercial.</p>
-            </td>
-          </tr>
-          <tr>
-            <td class="titletable">
-              <p class="SUBTITULO">Identificador</p>
-            </td>
-            <td>
-              <p class="PARRAFO">Campo
-                obligatorio tipo combo en el que se selecciona entre Edad
-                o Antiguedad la característica o critero que se debe
-                tener en cuenta al momento de efectuar procesos de cambios masivos
-                de producto.</p>
-            </td>
-          </tr>
-          <tr>
-            <td class="titletable">
-              <p class="SUBTITULO">Edad inicial
-                    / final</p>
-            </td>
-            <td>
-              <p class="PARRAFO">Esta
-                dupla de campos que se habilitan y convierten en obligatorios cuando
-                el identificador es Edad, permite registrar el rango de edad
-                entre los cuales debe estar el cliente titular de la tarjeta para
-                poder seguir perteneciendo al programa o para ingresar en él.</p>
-            </td>
-          </tr>
-          <tr>
-            <td class="titletable">
-              <p class="SUBTITULO">Antiguedad inicial
-                    / final</p>
-            </td>
-            <td>
-              <p class="PARRAFO">Dupla
-                de campos que se habilitan y convierten en obligatorios cuando el
-                identificador es Antiguedad, permite registrar el rango de
-                periodos de antiguedad entre los cuales debe estar la tarjeta para
-                poder seguir perteneciendo al programa o para ingresar en él.</p>
-            </td>
-          </tr>
-          <tr>
-            <td class="titletable">
-              <p class="SUBTITULO">% Manejo</p>
-            </td>
-            <td>
-              <p class="PARRAFO">Campo
-                numérico obligatorio en el que se registra el porcentaje que
-                sobre la cuota de manejo definida para el <span class="PARRAFO"><a href="DBH_018B.html">productos
+
+        <p class="TITLE">Programas comerciales</p>
+
+        <p class="PARRAFO">Mediante esta opción se parametrizan
+          los diferentes programas comerciales que posteriormente serán
+          asociados
+          a los <a href="DBH_018B.html">productos débito</a>
+          para otorgarles algunos beneficios adicionales relacionados con la
+          disminución
+          o exoneración de la cuota de manejo.</p>
+        <p class="PARRAFO">Al ingresar a la opción se despliega
+          un filtro que le permite al actor consultar algún registro específico
+          por el bin, la descripción del mismo o el tipo de bin. Por defecto,
+          al ingresar al formulario se muestran todos los bines parametrizados
+          actualmente
+          por la entidad para productos débito.</p>
+
+        <p class="TITLE"><img src="../img/DBF_039E.PNG"></p>
+        <p class="PARRAFO">El formulario contiene los enlaces: Actualizar, Eliminar, Adicionar y Detalle.</p>
+        <p class="PARRAFO"><span class="SUBTITULO">Adicionar:</span>
+          Al activar ese enlace, se despliega un
+          nuevo formulario con los siguientes campos.</p>
+        <p class="TITLE"><img src="../img/DBF_039E1.PNG"></p>
+
+        <p class="TITLE"><img src="../img/DBF_039E2.PNG"></p>
+
+        <p class="TITLE">Descripción de campos</p>
+        <div>
+          <table>
+            <tr>
+              <td class="titletable">
+                <p class="SUBTITULO">Código</p>
+              </td>
+              <td>
+                <p class="PARRAFO">Campo
+                  numérico de hasta 3 dígitos, obligatorio, en el que
+                  se ingresa el código que identifica cada uno de los programas
+                  comerciales.</p>
+              </td>
+            </tr>
+            <tr>
+              <td class="titletable">
+                <p class="SUBTITULO">Descripción</p>
+              </td>
+              <td>
+                <p class="PARRAFO">Este
+                  campo alfanumérico obligatorio permite registrar el nombre
+                  o descripción asociados con cada programa comercial.</p>
+              </td>
+            </tr>
+            <tr>
+              <td class="titletable">
+                <p class="SUBTITULO">Identificador</p>
+              </td>
+              <td>
+                <p class="PARRAFO">Campo
+                  obligatorio tipo combo en el que se selecciona entre Edad
+                  o Antiguedad la característica o critero que se debe
+                  tener en cuenta al momento de efectuar procesos de cambios
+                  masivos
+                  de producto.</p>
+              </td>
+            </tr>
+            <tr>
+              <td class="titletable">
+                <p class="SUBTITULO">Edad inicial
+                  / final</p>
+              </td>
+              <td>
+                <p class="PARRAFO">Esta
+                  dupla de campos que se habilitan y convierten en obligatorios
+                  cuando
+                  el identificador es Edad, permite registrar el rango de edad
+                  entre los cuales debe estar el cliente titular de la tarjeta
+                  para
+                  poder seguir perteneciendo al programa o para ingresar en
+                  él.</p>
+              </td>
+            </tr>
+            <tr>
+              <td class="titletable">
+                <p class="SUBTITULO">Antiguedad inicial
+                  / final</p>
+              </td>
+              <td>
+                <p class="PARRAFO">Dupla
+                  de campos que se habilitan y convierten en obligatorios cuando
+                  el
+                  identificador es Antiguedad, permite registrar el rango de
+                  periodos de antiguedad entre los cuales debe estar la tarjeta
+                  para
+                  poder seguir perteneciendo al programa o para ingresar en
+                  él.</p>
+              </td>
+            </tr>
+            <tr>
+              <td class="titletable">
+                <p class="SUBTITULO">% Manejo</p>
+              </td>
+              <td>
+                <p class="PARRAFO">Campo
+                  numérico obligatorio en el que se registra el porcentaje que
+                  sobre la cuota de manejo definida para el <span
+                    class="PARRAFO"><a href="DBH_018B.html">productos
                       débito</a></span> , se le va a cobrar al cliente por las
-                tarjetas que pertenecezcan a productos asociados con el programa comercial.
-                El sistema toma en cuenta la jerarquía establecida en la opción
-                Orden aplicación cuotas. </p>
-            </td>
-          </tr>
-        </table>
-      </div>
+                  tarjetas que pertenecezcan a productos asociados con el
+                  programa comercial.
+                  El sistema toma en cuenta la jerarquía establecida en la
+                  opción
+                  Orden aplicación cuotas. </p>
+              </td>
+            </tr>
+          </table>
+        </div>
 
-      <p class="PARRAFO"><span class="SUBTITULO">Actualizar:</span>
-        si el usuario selecciona un registro e invoca la opción Actualizar,
-        se despliega un formulario en el cual el único campo NO modificable
-        es el Código.</p>
-      <p class="TITLE"><img src="../img/DBF_039E3.PNG"></p>
+        <p class="PARRAFO"><span class="SUBTITULO">Actualizar:</span>
+          si el usuario selecciona un registro e invoca la opción Actualizar,
+          se despliega un formulario en el cual el único campo NO modificable
+          es el Código.</p>
+        <p class="TITLE"><img src="../img/DBF_039E3.PNG"></p>
 
-      <p class="PARRAFO"><span class="SUBTITULO">Detalle:</span>
-        si el usuario selecciona un registro e invoca la opción Detalle,
-        se despliega un formulario con la información completa del registro
-        y en el cual ninguno de sus campos es modificable.</p>
-      <p class="TITLE"><img src="../img/DBF_039E4.PNG"></p>
+        <p class="PARRAFO"><span class="SUBTITULO">Detalle:</span>
+          si el usuario selecciona un registro e invoca la opción Detalle,
+          se despliega un formulario con la información completa del registro
+          y en el cual ninguno de sus campos es modificable.</p>
+        <p class="TITLE"><img src="../img/DBF_039E4.PNG"></p>
 
-      <div>
-  </section>
-  <script src="../js/menu.js"></script>
-</body>
-<div id="footerContainer"></div>
-<script>
+        <div>
+        </section>
+        <script src="../js/menu.js"></script>
+      </body>
+      <div id="footerContainer"></div>
+      <script>
   fetch('footer.html')
     .then(response => response.text())
     .then(html => {
       document.getElementById('footerContainer').innerHTML = html;
     });
 </script>
-
-</html>
+  </html>

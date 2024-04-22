@@ -1,26 +1,26 @@
 <!DOCTYPE html>
 <html lang="es">
 
-<head>
+  <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>BANKBU®</title>
 
     <link rel="stylesheet" href="../css/pages.css">
     <link rel="stylesheet" href="../css/style.css">
- <link rel="icon" href="../img/ACQUIRER-logo.JPG" type="image/x-icon">
-</head>
+    <link rel="icon" href="../img/ACQUIRER-logo.JPG" type="image/x-icon">
+  </head>
 
-<body>
+  <body>
 
     <header>
-        <img class="logo" src="../img/logoBankbu_.PNG" alt="Logo de Mi Empresa">
-        <div id="menuBtn">
-            <img class="TITLE"  src= "../img/menu.PNG" alt="Botón de Menú ">
-        </div>
+      <img class="logo" src="../img/logoBankbu_.PNG" alt="Logo de Mi Empresa">
+      <div id="menuBtn">
+        <img class="TITLE" src="../img/menu.PNG" alt="Botón de Menú ">
+      </div>
     </header>
-      <div id="menuContainer"></div>
-  <script>
+    <div id="menuContainer"></div>
+    <script>
     fetch('menu.html')
       .then(response => response.text())
       .then(html => {
@@ -29,70 +29,106 @@
   </script>
 
     <section>
-        <div> 
-            
-                    <p  class="TITLE">Definición de productos - Orden aplicación de cuotas</p>
-                  
-            
-            <p  class="PARRAFO">Esta opción que se invoca desde el formulario <a href="MEH_002B.html" >Definición de productos</a> le permite a la entidad determinar el orden o jerarquía que se   tendrá en cuenta para la aplicación de algunos descuentos   preferenciales y exoneraciones definidos en  <span ><A href="MEH_005B.html"  MEH_005E.html?>Promociones para colocación</A></span> , <span ><A href="MEH_004B.html" >Categorías de clientes</A></span> , <span ><A href="MEH_019B.html" >Programas comerciales</A></span> , <span ><A  >Convenios</A></span>  o  <A href="NUH_085B.html" >Parámetros   Interfranquicias</A> y que serán evaluados por el sistema al momento de calcular el   valor a cobrar al cliente por concepto de cuota de afiliación, manejo o seguro, tomando en cuenta que un mismo cliente   y/o producto pueden estar incluidos simultáneamente en varias de las opciones   mencionadas y por consiguiente tener derecho a diferentes privilegios, de   acuerdo con lo parametrizado en cada una de esas opciones. </p>
-            <p  class="PARRAFO">El sistema parte siempre de lo parametrizado para el producto en el formulario de cuotas.</p>
-            
-            <p  class="PARRAFO"><img src="../img/MEF_002E41.PNG"></p>
+      <div>
 
-            <p  class="PARRAFO">El formulario contiene las opciones Actualizar, Eliminar y Adicionar.</p>
-            <p  class="PARRAFO"><span class="SUBTITULO">Adicionar:</span> si el usuario invoca la opción Adicionar se despliega un nuevo formulario con los siguientes campos.</p>
-            <p class="TITLE"><img src="../img/MEF_002E42.PNG"></p>
-            <p  class="PARRAFO">Si en el campo Tipo de orden, el usuario selecciona la opción El primero, los campos Segundo, Tercero, Cuarto, Quinto y Sexto se inhabilitan automáticamente.</p>
-            <p class="TITLE"><img src="../img/MEF_002E43.PNG"></p>
+        <p class="TITLE">Definición de productos - Orden aplicación de
+          cuotas</p>
 
-            <div  class="PARRAFO">
-              <p  class="TITLE">Descripción de campos</p>
-              <table>
-                <tr> 
-                  <td class="titletable" ><p class="SUBTITULO">Tipo de cuota
-                      </p></td>
-                  <td><p  class="PARRAFO">Campo 
-                  obligatorio con lista de valores de la cual se selecciona entre Afiliación, Manejo o Seguro el tipo de cuota para la que se va a parametrizar el orden de aplicación.</p></td>
-                </tr>
-   
-                <tr> 
-                  <td class="titletable" ><p class="SUBTITULO">Tipo de orden
-                     
-                     
-                      </p></td>
-                  <td><p  class="PARRAFO">Este 
-                  campo obligatorio tipo combo permite seleccionar entre El primero o En cascada, la manera como el sistema debe evaluar los diferentes eventos definidos para el cálculo de la cuota.</p></td>
-                </tr>
-   
-                <tr> 
-                  <td class="titletable" ><p class="SUBTITULO">Primero
-                     
-                     
-                      </p></td>
-                  <td><p  class="PARRAFO">Campo obligatorio con lista de valores de la cual se selecciona entre Interfranquicias,  Programa comercial, Programa promoción, Categoría cliente o Convenios el evento que se debe evaluar en primera instancia.</p></td>
-                </tr>
-   
-                <tr>
-                  <td class="titletable" ><p class="SUBTITULO">Seguno / Tercero / Cuarto / Quinto / Sexto
-                           
-                           
-                  </p></td>
-                  <td><p  class="PARRAFO">En estos campos tipo combo no obligatorios y que se habilitan únicamente cuando el tipo orden sea En cascada, se selecciona entre Interfranquicias,  Programa comercial, Programa promoción, Categoría cliente o Convenios el orden en el que  se debe evaluar cada uno de los eventos seleccionados para efectos de calcular la cuota respectiva.</p></td>
-                </tr>
-              </table>
-              <p  class="PARRAFO">    
-              <p class="PARRAFO"><span class="SUBTITULO">Actualizar:</span> si el usuario selecciona un registro e invoca la opción Actualizar, se despliega un formulario en el cual el único   campo NO modificable es Tipo de cuota.</p>
-              <p class="TITLE"><img src="../img/MEF_002E44.PNG"233" height="262"></p>
-              <p  class="PARRAFO">
-                </section>
-    <script src="../js/menu.js"></script>
-</body>
-<div id="footerContainer"></div>
-<script>
+        <p class="PARRAFO">Esta opción que se invoca desde el formulario <a
+            href="MEH_002B.html">Definición de productos</a> le permite a la
+          entidad determinar el orden o jerarquía que se tendrá en cuenta para
+          la aplicación de algunos descuentos preferenciales y exoneraciones
+          definidos en <span><a href="MEH_005B.html" MEH_005E.html?>Promociones
+              para colocación</a></span> , <span><a
+              href="MEH_004B.html">Categorías de clientes</a></span> , <span><a
+              href="MEH_019B.html">Programas comerciales</a></span> ,
+          <span><a>Convenios</a></span> o <a href="NUH_085B.html">Parámetros
+            Interfranquicias</a> y que serán evaluados por el sistema al momento
+          de calcular el valor a cobrar al cliente por concepto de cuota de
+          afiliación, manejo o seguro, tomando en cuenta que un mismo cliente
+          y/o producto pueden estar incluidos simultáneamente en varias de las
+          opciones mencionadas y por consiguiente tener derecho a diferentes
+          privilegios, de acuerdo con lo parametrizado en cada una de esas
+          opciones. </p>
+        <p class="PARRAFO">El sistema parte siempre de lo parametrizado para el
+          producto en el formulario de cuotas.</p>
+
+        <p class="PARRAFO"><img src="../img/MEF_002E41.PNG"></p>
+
+        <p class="PARRAFO">El formulario contiene los enlaces: Actualizar,
+          Eliminar y Adicionar.</p>
+        <p class="PARRAFO"><span class="SUBTITULO">Adicionar:</span> Al activar
+          ese enlace se despliega un formulario con los siguientes campos.</p>
+        <p class="TITLE"><img src="../img/MEF_002E42.PNG"></p>
+        <p class="PARRAFO">Si en el campo Tipo de orden, el usuario selecciona
+          la opción El primero, los campos Segundo, Tercero, Cuarto, Quinto y
+          Sexto se inhabilitan automáticamente.</p>
+        <p class="TITLE"><img src="../img/MEF_002E43.PNG"></p>
+
+        <div class="PARRAFO">
+          <p class="TITLE">Descripción de campos</p>
+          <table>
+            <tr>
+              <td class="titletable"><p class="SUBTITULO">Tipo de cuota
+                </p></td>
+              <td><p class="PARRAFO">Campo
+                  obligatorio con lista de valores de la cual se selecciona
+                  entre Afiliación, Manejo o Seguro el tipo de cuota para la que
+                  se va a parametrizar el orden de aplicación.</p></td>
+            </tr>
+
+            <tr>
+              <td class="titletable"><p class="SUBTITULO">Tipo de orden
+
+                </p></td>
+              <td><p class="PARRAFO">Este
+                  campo obligatorio tipo combo permite seleccionar entre El
+                  primero o En cascada, la manera como el sistema debe evaluar
+                  los diferentes eventos definidos para el cálculo de la
+                  cuota.</p></td>
+            </tr>
+
+            <tr>
+              <td class="titletable"><p class="SUBTITULO">Primero
+
+                </p></td>
+              <td><p class="PARRAFO">Campo obligatorio con lista de valores de
+                  la cual se selecciona entre Interfranquicias, Programa
+                  comercial, Programa promoción, Categoría cliente o Convenios
+                  el evento que se debe evaluar en primera instancia.</p></td>
+            </tr>
+
+            <tr>
+              <td class="titletable"><p class="SUBTITULO">Seguno / Tercero /
+                  Cuarto / Quinto / Sexto
+
+                </p></td>
+              <td><p class="PARRAFO">En estos campos tipo combo no obligatorios
+                  y que se habilitan únicamente cuando el tipo orden sea En
+                  cascada, se selecciona entre Interfranquicias, Programa
+                  comercial, Programa promoción, Categoría cliente o Convenios
+                  el orden en el que se debe evaluar cada uno de los eventos
+                  seleccionados para efectos de calcular la cuota
+                  respectiva.</p></td>
+            </tr>
+          </table>
+          <p class="PARRAFO">
+            <p class="PARRAFO"><span class="SUBTITULO">Actualizar:</span> si el
+              usuario selecciona un registro e invoca la opción Actualizar, se
+              despliega un formulario en el cual el único campo NO modificable
+              es Tipo de cuota.</p>
+            <p class="TITLE"><img src="../img/MEF_002E44.PNG"233"
+                height="262"></p>
+            <p class="PARRAFO">
+            </section>
+            <script src="../js/menu.js"></script>
+          </body>
+          <div id="footerContainer"></div>
+          <script>
   fetch('footer.html')
     .then(response => response.text())
     .then(html => {
       document.getElementById('footerContainer').innerHTML = html;
     });
 </script>
-</html>
+        </html>

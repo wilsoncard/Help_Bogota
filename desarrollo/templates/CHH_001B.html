@@ -1,25 +1,25 @@
 <!DOCTYPE html>
 <html lang="es">
 
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>BANKBU®</title>
-  <link rel="stylesheet" href="../css/pages.css">
-  <link rel="stylesheet" href="../css/style.css">
-  <link rel="icon" href="../img/ACQUIRER-logo.JPG" type="image/x-icon">
-</head>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BANKBU®</title>
+    <link rel="stylesheet" href="../css/pages.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="icon" href="../img/ACQUIRER-logo.JPG" type="image/x-icon">
+  </head>
 
-<body>
+  <body>
 
-  <header>
-    <img class="logo" src="../img/logoBankbu_.PNG" alt="Logo de Mi Empresa">
-    <div id="menuBtn">
-      <img class="TITLE" src="../img/menu.PNG" alt="Botón de Menú ">
-    </div>
-  </header>
+    <header>
+      <img class="logo" src="../img/logoBankbu_.PNG" alt="Logo de Mi Empresa">
+      <div id="menuBtn">
+        <img class="TITLE" src="../img/menu.PNG" alt="Botón de Menú ">
+      </div>
+    </header>
     <div id="menuContainer"></div>
-  <script>
+    <script>
     fetch('menu.html')
       .then(response => response.text())
       .then(html => {
@@ -27,67 +27,83 @@
       });
   </script>
 
-  <section>
-    <div>
-      
-              <p class="TITLE">Campos </p>
+    <section>
+      <div>
 
-      <p class="PARRAFO">Mediante esta opción, se habilita la consulta y mantenimiento de la tabla en la cual se
-        almacenan los campos tanto de entrada como de salida, de las diferentes transacciones que soporta el sistema.
-        Cada campo contiene un nombre técnico con el cual se va a representar en los programas (Ejemplo:
-        CardNumber), una Descripción, un Tipo, Longitud y
-        Precisión (si es decimal).</p>
-      <p class="PARRAFO">
-        El formulario contiene las opciones Adicionar, Actualizar y Eliminar. Adicionalmente contiene
-        un filtro que le permite al usuario consultar información de Campos, de acuerdo a un nombre y/o
-        tipo ingresados.</p>
+        <p class="TITLE">Campos </p>
 
-      <p class="PARRAFO"><span class="#3">.</span><span class="PARRAFO"><img src="../img/CHH_001B.PNG"></p>
-      <p class="PARRAFO">Adicionar:Si el usuario invoca la opción adicionar se despliega el siguiente
-        formulario:</p>
-      <p class="PARRAFO"><span class="#3">.<img src="../img/CHH_001B1.PNG"></p>
-      <table>
-        <tr>
-          <td class="titletable">
-            <p class="SUBTITULO">Nombre:
+        <p class="PARRAFO">Mediante esta opción, se habilita la consulta y
+          mantenimiento de la tabla en la cual se
+          almacenan los campos tanto de entrada como de salida, de las
+          diferentes transacciones que soporta el sistema.
+          Cada campo contiene un nombre técnico con el cual se va a representar
+          en los programas (Ejemplo:
+          CardNumber), una Descripción, un Tipo, Longitud y
+          Precisión (si es decimal).</p>
+        <p class="PARRAFO">
+          El formulario contiene los enlaces: Adicionar, Actualizar y Eliminar.
+          Adicionalmente contiene
+          un filtro que le permite al usuario consultar información de Campos,
+          de acuerdo a un nombre y/o
+          tipo ingresados.</p>
 
+        <p class="PARRAFO"><span class="#3">.</span><span class="PARRAFO"><img
+              src="../img/CHH_001B.PNG"></p>
+          <p class="PARRAFO">Adicionar:Al activar ese enlace
+            se despliega el siguiente
+            formulario:</p>
+          <p class="PARRAFO"><span class="#3">.<img
+                src="../img/CHH_001B1.PNG"></p>
+            <table>
+              <tr>
+                <td class="titletable">
+                  <p class="SUBTITULO">Nombre:
 
-            </p>
-          </td>
-          <td class="PARRAFO">Campo alfanumérico de 70 posiciones, obligatorio, que corresponde al nombre
-            técnico del campo.</td>
-        </tr>
-        <tr>
-          <td class="titletable"><span class="SUBTITULO">Descripción:</span></td>
-          <td class="PARRAFO">En este campo alfanumérico de 80 posiciones, obligatorio, se registra la
-            descripción del campo.</td>
-        </tr>
-        <tr>
-          <td class="titletable"><span class="SUBTITULO">Tipo:</span></td>
-          <td class="PARRAFO">
-            Campo alfanumérico de 1 caracter, obligatorio, que contiene los valores carácter, decimal,
-              entero y fecha.</td>
-        </tr>
-        <tr>
-          <td class="titletable"><span class="SUBTITULO">Longitud:</span></td>
-          <td class="PARRAFO">Campo numérico de 3 posiciones que representa el tama&ntilde;o del campo.</td>
-        </tr>
-        <tr>
-          <td class="titletable"><span class="SUBTITULO">Precisión:</span></td>
-          <td class="PARRAFO">Campo numérico de 2 posiciones que representa la precisión si el campo es
-            decimal.</td>
-        </tr>
-      </table>
-      <p class="SUBTITULO">Actualizar:Si el usuario invoca la opción Actualizar se despliega
-        el siguiente formulario:</p>
-      <p class="none">.</span><img src="../img/CHH_001B2.PNG"></p>
-        <div>
- 
-        </section>
-    <script src=" ../js/menu.js"></script>
-</body>
-<div id="footerContainer"></div>
-<script>
+                  </p>
+                </td>
+                <td class="PARRAFO">Campo alfanumérico de 70 posiciones,
+                  obligatorio, que corresponde al nombre
+                  técnico del campo.</td>
+              </tr>
+              <tr>
+                <td class="titletable"><span
+                    class="SUBTITULO">Descripción:</span></td>
+                <td class="PARRAFO">En este campo alfanumérico de 80 posiciones,
+                  obligatorio, se registra la
+                  descripción del campo.</td>
+              </tr>
+              <tr>
+                <td class="titletable"><span class="SUBTITULO">Tipo:</span></td>
+                <td class="PARRAFO">
+                  Campo alfanumérico de 1 caracter, obligatorio, que contiene
+                  los valores carácter, decimal,
+                  entero y fecha.</td>
+              </tr>
+              <tr>
+                <td class="titletable"><span
+                    class="SUBTITULO">Longitud:</span></td>
+                <td class="PARRAFO">Campo numérico de 3 posiciones que
+                  representa el tama&ntilde;o del campo.</td>
+              </tr>
+              <tr>
+                <td class="titletable"><span
+                    class="SUBTITULO">Precisión:</span></td>
+                <td class="PARRAFO">Campo numérico de 2 posiciones que
+                  representa la precisión si el campo es
+                  decimal.</td>
+              </tr>
+            </table>
+            <p class="SUBTITULO">Actualizar:Si el usuario invoca la opción
+              Actualizar se despliega
+              el siguiente formulario:</p>
+            <p class="none">.</span><img src="../img/CHH_001B2.PNG"></p>
+          <div>
+
+          </section>
+          <script src=" ../js/menu.js"></script>
+        </body>
+        <div id="footerContainer"></div>
+        <script>
   fetch('footer.html')
     .then(response => response.text())
     .then(html => {
@@ -95,4 +111,4 @@
     });
 </script>
 
-</html>
+      </html>

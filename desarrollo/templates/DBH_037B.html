@@ -1,26 +1,26 @@
 <!DOCTYPE html>
 <html lang="es">
 
-<head>
+  <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>BANKBU®</title>
-  
+
     <link rel="stylesheet" href="../css/pages.css">
     <link rel="stylesheet" href="../css/style.css">
- <link rel="icon" href="../img/ACQUIRER-logo.JPG" type="image/x-icon">
-</head>
+    <link rel="icon" href="../img/ACQUIRER-logo.JPG" type="image/x-icon">
+  </head>
 
-<body>
+  <body>
 
     <header>
-        <img class="logo" src="../img/logoBankbu_.PNG" alt="Logo de Mi Empresa">
-        <div id="menuBtn">
-            <img class="TITLE"  src= "../img/menu.PNG" alt="Botón de Menú ">
-        </div>
+      <img class="logo" src="../img/logoBankbu_.PNG" alt="Logo de Mi Empresa">
+      <div id="menuBtn">
+        <img class="TITLE" src="../img/menu.PNG" alt="Botón de Menú ">
+      </div>
     </header>
-      <div id="menuContainer"></div>
-  <script>
+    <div id="menuContainer"></div>
+    <script>
     fetch('menu.html')
       .then(response => response.text())
       .then(html => {
@@ -29,181 +29,216 @@
   </script>
 
     <section>
-        <div> 
-            <p  class="TITLE">Captura movimiento oficinas</p>
-                  
-            <p  class="PARRAFO">Mediante esta opción se permite a 
-              la entidad la captura o ingreso del movimiento hecho con tarjetas débito 
-              por sus clientes directamente en las sucursales y correspondiente a transacciones 
-              de avances e impuestos.</p>
-            <p  class="PARRAFO">Al ingresar al formulario se despliega un 
-              filtro en el cual el usuario debe digitar la información de la oficina 
-              para la que se va a capturar el movimiento, la transcción a ingresar 
-              y la moneda.</p>
-            <p class="TITLE"><img src="../img/DBF_037E.PNG"></p>
-            
-            <p  class="TITLE">Descripción de campos</p>
-            <table>
-              <tr> 
-                <td class="titletable"><p class="SUBTITULO">Fecha 
-                    proceso </p></td>
-                <td><p class="PARRAFO">Campo 
-                    de salida en formato YYYY-MM-DD que contiene la fecha de proceso actual 
-                    y para la que se va a capturar el movimiento. El sistema no permite 
-                    el ingreso de transacciones para fechas anteriores.</p></td>
-              </tr>
-              <tr> 
-                <td class="titletable"><p class="SUBTITULO">Oficina</p></td>
-                <td><p class="PARRAFO">En 
-                    este campo obligatorio con lista de valores se selecciona la <a href="NUH_020B.html" >oficina</a> 
-                    para la que se va a consultar y/o ingresar movimiento manual.</p></td>
-              </tr>
-              <tr> 
-                <td class="titletable"><p class="SUBTITULO">Transacción</p></td>
-                <td><p class="PARRAFO">Campo 
-                    obligatorio tipo combo en el que se selecciona entre Avance 
-                    o Impuestos el tipo de transacción a consultar y/o capturar.</p></td>
-              </tr>
-              <tr> 
-                <td class="titletable"><p class="SUBTITULO">Moneda</p></td>
-                <td><p class="PARRAFO">En 
-                    este campo obligatorio con lista de valores, se selecciona la <a href="NUH_005B.html" >Moneda</a> 
-                    en la que están denominadas las transacciones manuales a ingresar 
-                    en el sistema</p></td>
-              </tr>
-              <tr> 
-                <td class="titletable"><p class="SUBTITULO">Boleta 
-                    de ruta</p></td>
-                <td><p class="PARRAFO">Campo 
-                    no obligatorio en el que se puede registrar el número de la <a href="INH_037B.html" >boleta 
-                    de ruta</a> asignada a la sucursal para la que se desea consultar y/o 
-                    ingresar movimiento manual.</p></td>
-              </tr>
-            </table>
-            <p  class="PARRAFO">Una vez seleccionados los criterios y mediante 
-              el botón buscar, se despliegan en el formulario los registros de las 
-              transacciones de avances o impuestos capturadas para esa oficina en la fecha 
-              de proceso actual. Si no existe movimiento ingresado el formulario se muestra 
-              en blanco.</p>
-            <p  class="PARRAFO">Es importante aclarar que el sistema no permite 
-              mezclar los avances y los impuestos por lo cual antes de poder ingresar cualquiera 
-              de estos tipos de transacción es necesario diligenciar el filtro seleccionando 
-              el tipo de transacción requerido.</p>
-            
-            <p class="TITLE"><img src="../img/DBF_037E1.PNG"></p>
-            
-            <p  class="PARRAFO">El formulario contiene las opciones Actualizar, 
-              Eliminar y Adicionar.</p>
-            <p  class="PARRAFO"><span class="SUBTITULO">Adicionar:</span> 
-              si el usuario invoca la opción Adicionar se despliega un nuevo formulario 
-              con los siguientes campos para permitir el ingreso de las transacciones tanto 
-              de Avances como de Pagos de impuestos.</p>
-            <p class="TITLE"><img src="../img/DBF_037E2.PNG"></p>
-            
-            <p  class="TITLE">Descripción de campos</p>
-            <table>
-              <tr> 
-                <td class="titletable"><p class="SUBTITULO">Fecha 
-                    proceso </p></td>
-                <td><p class="PARRAFO">Campo 
-                    de salida en formato YYYY-MM-DD que contiene la fecha de proceso actual 
-                    y para la que se va a capturar el movimiento. El sistema no permite 
-                    el ingreso de transacciones para fechas anteriores.</p></td>
-              </tr>
-              <tr> 
-                <td class="titletable"><p class="SUBTITULO">Oficina</p></td>
-                <td><p class="PARRAFO">En 
-                    este campo de salida se muestra la <a href="NUH_020B.html" >oficina</a> 
-                    para la que se está ingresando el movimiento de acuerdo con la 
-                    información seleccioanda en el filtro inicial.</p></td>
-              </tr>
-              <tr> 
-                <td class="titletable"><p class="SUBTITULO">Marca</p></td>
-                <td><p class="PARRAFO">Campo 
-                    obligatorio con lista de valores del que se selecciona la <a href="NUH_033B.html" >marca</a> 
-                    a la que pertenece la tarjeta débito para la que se va a capturar 
-                    la transacción de avances o impuestos. </p></td>
-              </tr>
-              <tr> 
-                <td class="titletable"><p class="SUBTITULO">Establecimiento</p></td>
-                <td><p class="PARRAFO">En 
-                    este campo alfanumérico de 11 dígitos, no obligatorio, 
-                    se registra el código único que identifica, ante la franquicia, 
-                    al <a href="ESH_006B.html" >establecimiento</a> donde se 
-                    realiza la transacción.</p></td>
-              </tr>
-              <tr> 
-                <td class="titletable"><p class="SUBTITULO">Número 
-                    tarjeta </p></td>
-                <td><p class="PARRAFO">Campo 
-                    alfanumérico de 23 dígitos, obligatorio, en el que se 
-                    digita el número de la tarjeta débito mediante la cual 
-                    se realizó la transacción de Avance o Pago de impuestos 
-                    y que es validada por el sistema para verificar su existencia. </p></td>
-              </tr>
-              <tr> 
-                <td class="titletable"><p class="SUBTITULO">Número 
-                    comprobante </p></td>
-                <td><p class="PARRAFO">En 
-                    este campo numérico de 7 dígitos, obligatorio, se registra 
-                    el número del voucher o comprobante correspondiente a la transacción 
-                    de Avance o Impuesto efectuada por el cliente.</p></td>
-              </tr>
-              <tr> 
-                <td class="titletable"><p class="SUBTITULO">Fecha 
-                    comprobante </p></td>
-                <td><p class="PARRAFO">Campo 
-                    obligatorio en formato YYYY-MM-DD que por defecto muestra la misma fecha 
-                    actual de proceso pero que es editable y permite el ingreso de la fecha 
-                    correspondiente a la transacción. </p></td>
-              </tr>
-              <tr> 
-                <td class="titletable"><p class="SUBTITULO">Número 
-                    de autorización</p></td>
-                <td><p class="PARRAFO">En 
-                    este campo alfanumérico de 6 dígitos, no obligatorio, 
-                    en el que se registra el número de autorización otorgado 
-                    para el Avance o Pago de impuesto.</p></td>
-              </tr>
-              <tr> 
-                <td class="titletable"><p class="SUBTITULO">Plazo</p></td>
-                <td><p class="PARRAFO">Campo 
-                    de salida que siempre esta en 1, ya que todas las transaccion de tarjeta debito son debitadas en su totalidad de la cuenta.  
-              <tr> 
-                <td class="titletable"><p class="SUBTITULO">Causal</p></td>
-                <td><p class="PARRAFO">Si 
-                    durante el proceso de la captura del comprobante el usuario detecta 
-                    inconsistencias en los comprobantes, tales como falta de firma, falta 
-                    de sellos, documento no legible, entre otras posibles alteraciones, 
-                    mediante la lista de valores adjunta puede seleccionar la <a href="NUH_016B.html" >Causal 
-                    de rechazo de transacciones</a> por la cual el movimiento va a ser enviado 
-                    a pendientes o fraudes.</p></td>
-              </tr>
-              <tr> 
-                <td class="titletable"><p class="SUBTITULO">Total</p></td>
-                <td><p class="PARRAFO">Campo 
-                    numérico obligatorio de hasta 14 enteros y 2 decimales en el 
-                    que se registra el valor total de la transacción de Avance o 
-                    Pago de impuestos efectuada por el cliente con su tarjeta débito.</p></td>
-              </tr>
-            </table>
+      <div>
+        <p class="TITLE">Captura movimiento oficinas</p>
 
+        <p class="PARRAFO">Mediante esta opción se permite a
+          la entidad la captura o ingreso del movimiento hecho con tarjetas
+          débito
+          por sus clientes directamente en las sucursales y correspondiente a
+          transacciones
+          de avances e impuestos.</p>
+        <p class="PARRAFO">Al ingresar al formulario se despliega un
+          filtro en el cual el usuario debe digitar la información de la oficina
+          para la que se va a capturar el movimiento, la transcción a ingresar
+          y la moneda.</p>
+        <p class="TITLE"><img src="../img/DBF_037E.PNG"></p>
 
-            <p  class="PARRAFO"><span class="SUBTITULO">Actualizar</span>: 
-              si el usuario selecciona un registro e invoca la opción Actualizar 
-              se despliega un formulario en el cual los campos NO modificables son Fecha 
-              proceso, Oficina, Marca, Plazo y Valor total. </p>
-            <p class="TITLE"><img src="../img/DBF_037E3.PNG"></p>
-            <div>
-            </section>
-    <script src="../js/menu.js"></script>
-</body>
-<div id="footerContainer"></div>
-<script>
+        <p class="TITLE">Descripción de campos</p>
+        <table>
+          <tr>
+            <td class="titletable"><p class="SUBTITULO">Fecha
+                proceso </p></td>
+            <td><p class="PARRAFO">Campo
+                de salida en formato YYYY-MM-DD que contiene la fecha de proceso
+                actual
+                y para la que se va a capturar el movimiento. El sistema no
+                permite
+                el ingreso de transacciones para fechas anteriores.</p></td>
+          </tr>
+          <tr>
+            <td class="titletable"><p class="SUBTITULO">Oficina</p></td>
+            <td><p class="PARRAFO">En
+                este campo obligatorio con lista de valores se selecciona la <a
+                  href="NUH_020B.html">oficina</a>
+                para la que se va a consultar y/o ingresar movimiento
+                manual.</p></td>
+          </tr>
+          <tr>
+            <td class="titletable"><p class="SUBTITULO">Transacción</p></td>
+            <td><p class="PARRAFO">Campo
+                obligatorio tipo combo en el que se selecciona entre Avance
+                o Impuestos el tipo de transacción a consultar y/o
+                capturar.</p></td>
+          </tr>
+          <tr>
+            <td class="titletable"><p class="SUBTITULO">Moneda</p></td>
+            <td><p class="PARRAFO">En
+                este campo obligatorio con lista de valores, se selecciona la <a
+                  href="NUH_005B.html">Moneda</a>
+                en la que están denominadas las transacciones manuales a
+                ingresar
+                en el sistema</p></td>
+          </tr>
+          <tr>
+            <td class="titletable"><p class="SUBTITULO">Boleta
+                de ruta</p></td>
+            <td><p class="PARRAFO">Campo
+                no obligatorio en el que se puede registrar el número de la <a
+                  href="INH_037B.html">boleta
+                  de ruta</a> asignada a la sucursal para la que se desea
+                consultar y/o
+                ingresar movimiento manual.</p></td>
+          </tr>
+        </table>
+        <p class="PARRAFO">Una vez seleccionados los criterios y mediante
+          el botón buscar, se despliegan en el formulario los registros de las
+          transacciones de avances o impuestos capturadas para esa oficina en la
+          fecha
+          de proceso actual. Si no existe movimiento ingresado el formulario se
+          muestra
+          en blanco.</p>
+        <p class="PARRAFO">Es importante aclarar que el sistema no permite
+          mezclar los avances y los impuestos por lo cual antes de poder
+          ingresar cualquiera
+          de estos tipos de transacción es necesario diligenciar el filtro
+          seleccionando
+          el tipo de transacción requerido.</p>
+
+        <p class="TITLE"><img src="../img/DBF_037E1.PNG"></p>
+
+        <p class="PARRAFO">El formulario contiene los enlaces: Actualizar,Eliminar y Adicionar.</p>
+        <p class="PARRAFO"><span class="SUBTITULO">Adicionar:</span>
+          Al activar ese enlace se despliega un nuevo
+          formulario
+          con los siguientes campos para permitir el ingreso de las
+          transacciones tanto
+          de Avances como de Pagos de impuestos.</p>
+        <p class="TITLE"><img src="../img/DBF_037E2.PNG"></p>
+
+        <p class="TITLE">Descripción de campos</p>
+        <table>
+          <tr>
+            <td class="titletable"><p class="SUBTITULO">Fecha
+                proceso </p></td>
+            <td><p class="PARRAFO">Campo
+                de salida en formato YYYY-MM-DD que contiene la fecha de proceso
+                actual
+                y para la que se va a capturar el movimiento. El sistema no
+                permite
+                el ingreso de transacciones para fechas anteriores.</p></td>
+          </tr>
+          <tr>
+            <td class="titletable"><p class="SUBTITULO">Oficina</p></td>
+            <td><p class="PARRAFO">En
+                este campo de salida se muestra la <a
+                  href="NUH_020B.html">oficina</a>
+                para la que se está ingresando el movimiento de acuerdo con la
+                información seleccioanda en el filtro inicial.</p></td>
+          </tr>
+          <tr>
+            <td class="titletable"><p class="SUBTITULO">Marca</p></td>
+            <td><p class="PARRAFO">Campo
+                obligatorio con lista de valores del que se selecciona la <a
+                  href="NUH_033B.html">marca</a>
+                a la que pertenece la tarjeta débito para la que se va a
+                capturar
+                la transacción de avances o impuestos. </p></td>
+          </tr>
+          <tr>
+            <td class="titletable"><p class="SUBTITULO">Establecimiento</p></td>
+            <td><p class="PARRAFO">En
+                este campo alfanumérico de 11 dígitos, no obligatorio,
+                se registra el código único que identifica, ante la franquicia,
+                al <a href="ESH_006B.html">establecimiento</a> donde se
+                realiza la transacción.</p></td>
+          </tr>
+          <tr>
+            <td class="titletable"><p class="SUBTITULO">Número
+                tarjeta </p></td>
+            <td><p class="PARRAFO">Campo
+                alfanumérico de 23 dígitos, obligatorio, en el que se
+                digita el número de la tarjeta débito mediante la cual
+                se realizó la transacción de Avance o Pago de impuestos
+                y que es validada por el sistema para verificar su existencia.
+              </p></td>
+          </tr>
+          <tr>
+            <td class="titletable"><p class="SUBTITULO">Número
+                comprobante </p></td>
+            <td><p class="PARRAFO">En
+                este campo numérico de 7 dígitos, obligatorio, se registra
+                el número del voucher o comprobante correspondiente a la
+                transacción
+                de Avance o Impuesto efectuada por el cliente.</p></td>
+          </tr>
+          <tr>
+            <td class="titletable"><p class="SUBTITULO">Fecha
+                comprobante </p></td>
+            <td><p class="PARRAFO">Campo
+                obligatorio en formato YYYY-MM-DD que por defecto muestra la
+                misma fecha
+                actual de proceso pero que es editable y permite el ingreso de
+                la fecha
+                correspondiente a la transacción. </p></td>
+          </tr>
+          <tr>
+            <td class="titletable"><p class="SUBTITULO">Número
+                de autorización</p></td>
+            <td><p class="PARRAFO">En
+                este campo alfanumérico de 6 dígitos, no obligatorio,
+                en el que se registra el número de autorización otorgado
+                para el Avance o Pago de impuesto.</p></td>
+          </tr>
+          <tr>
+            <td class="titletable"><p class="SUBTITULO">Plazo</p></td>
+            <td><p class="PARRAFO">Campo
+                de salida que siempre esta en 1, ya que todas las transaccion de
+                tarjeta debito son debitadas en su totalidad de la cuenta.
+                <tr>
+                  <td class="titletable"><p class="SUBTITULO">Causal</p></td>
+                  <td><p class="PARRAFO">Si
+                      durante el proceso de la captura del comprobante el
+                      usuario detecta
+                      inconsistencias en los comprobantes, tales como falta de
+                      firma, falta
+                      de sellos, documento no legible, entre otras posibles
+                      alteraciones,
+                      mediante la lista de valores adjunta puede seleccionar la
+                      <a href="NUH_016B.html">Causal
+                        de rechazo de transacciones</a> por la cual el
+                      movimiento va a ser enviado
+                      a pendientes o fraudes.</p></td>
+                </tr>
+                <tr>
+                  <td class="titletable"><p class="SUBTITULO">Total</p></td>
+                  <td><p class="PARRAFO">Campo
+                      numérico obligatorio de hasta 14 enteros y 2 decimales en
+                      el
+                      que se registra el valor total de la transacción de Avance
+                      o
+                      Pago de impuestos efectuada por el cliente con su tarjeta
+                      débito.</p></td>
+                </tr>
+              </table>
+
+              <p class="PARRAFO"><span class="SUBTITULO">Actualizar</span>:
+                si el usuario selecciona un registro e invoca la opción
+                Actualizar
+                se despliega un formulario en el cual los campos NO modificables
+                son Fecha
+                proceso, Oficina, Marca, Plazo y Valor total. </p>
+              <p class="TITLE"><img src="../img/DBF_037E3.PNG"></p>
+              <div>
+              </section>
+              <script src="../js/menu.js"></script>
+            </body>
+            <div id="footerContainer"></div>
+            <script>
   fetch('footer.html')
     .then(response => response.text())
     .then(html => {
       document.getElementById('footerContainer').innerHTML = html;
     });
 </script>
-</html>
+          </html>

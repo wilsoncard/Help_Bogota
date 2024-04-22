@@ -1,25 +1,25 @@
 <!DOCTYPE html>
 <html lang="es">
 
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>BANKBU®</title>
-  <link rel="stylesheet" href="../css/pages.css">
-  <link rel="stylesheet" href="../css/style.css">
-  <link rel="icon" href="../img/ACQUIRER-logo.JPG" type="image/x-icon">
-</head>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BANKBU®</title>
+    <link rel="stylesheet" href="../css/pages.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="icon" href="../img/ACQUIRER-logo.JPG" type="image/x-icon">
+  </head>
 
-<body>
+  <body>
 
-  <header>
-    <img class="logo" src="../img/logoBankbu_.PNG" alt="Logo de Mi Empresa">
-    <div id="menuBtn">
-      <img class="TITLE" src="../img/menu.PNG" alt="Botón de Menú ">
-    </div>
-  </header>
+    <header>
+      <img class="logo" src="../img/logoBankbu_.PNG" alt="Logo de Mi Empresa">
+      <div id="menuBtn">
+        <img class="TITLE" src="../img/menu.PNG" alt="Botón de Menú ">
+      </div>
+    </header>
     <div id="menuContainer"></div>
-  <script>
+    <script>
     fetch('menu.html')
       .then(response => response.text())
       .then(html => {
@@ -27,65 +27,77 @@
       });
   </script>
 
-  <section>
-    <div>
-      
-              <p class="TITLE">Actividades por tipo de perfil </p>
+    <section>
+      <div>
 
-      <p class="PARRAFO">Esta forma permite la creación o definición de los distintos perfiles a asociar a los
-        funcionarios internos o de la casa de cobranza; así mismo, a cada perfil definido se le vinculan tanto
-        los tipos de obligación que le es dable asumir, como los tipos de cobro que puede efectuar y las
-        actividades de cobro que debe atender.</p>
-      <p class="PARRAFO"><a name="perfiles"></a>PerfilesEn este primer formulario la entidad puede crear o definir cuantos
-        perfiles requiera ésta o la empresa externa de cobranzas, acorde con los tipos de cobro y tipos de
-        obligación, puesto que puede ser necesaria una cualificación determinada, para atender
-        adecuadamente las gestiones de cobro.</p>
+        <p class="TITLE">Actividades por tipo de perfil </p>
 
-      <p class="PARRAFO"><span class="SUBTITULO">Filtro:</span>  El formulario cuenta
-        con un filtro inicial de búsqueda, necesario para la consulta de la
-        información:</p>
+        <p class="PARRAFO">Esta forma permite la creación o definición de los
+          distintos perfiles a asociar a los
+          funcionarios internos o de la casa de cobranza; así mismo, a cada
+          perfil definido se le vinculan tanto
+          los tipos de obligación que le es dable asumir, como los tipos de
+          cobro que puede efectuar y las
+          actividades de cobro que debe atender.</p>
+        <p class="PARRAFO"><a name="perfiles"></a>PerfilesEn este primer
+          formulario la entidad puede crear o definir cuantos
+          perfiles requiera ésta o la empresa externa de cobranzas, acorde con
+          los tipos de cobro y tipos de
+          obligación, puesto que puede ser necesaria una cualificación
+          determinada, para atender
+          adecuadamente las gestiones de cobro.</p>
 
-      <p class="TITLE"><img src="../img/CCF_007B1.PNG"></p>
+        <p class="PARRAFO"><span class="SUBTITULO">Filtro:</span> El formulario
+          cuenta
+          con un filtro inicial de búsqueda, necesario para la consulta de la
+          información:</p>
 
-      <table>
-        <tr>
-          <td class="titletable">
-            <p class="SUBTITULO">Código</p>
+        <p class="TITLE"><img src="../img/CCF_007B1.PNG"></p>
+
+        <table>
+          <tr>
+            <td class="titletable">
+              <p class="SUBTITULO">Código</p>
+            </td>
+            <td>
+              <p class="PARRAFO">Campo alfanumérico de 15 posiciones que permite
+                realizar un filtro de búsqueda por el
+                código del perfil. </p>
+            </td>
+          </tr>
+          <tr>
+            <td class="titletable">
+              <p class="SUBTITULO">Descripción</p>
+            </td>
+            <td>
+              <p class="PARRAFO">A través de este campo alfanumérico de 50
+                posiciones es posible realizar la búsqueda
+                por la descripción de los perfiles. </p>
+            </td>
+          </tr>
+        </table>
+
+        <p class="PARRAFO">El formulario contiene los enlaces: Actualizar,Eliminar, Adicionar y Detalle. Adicionalmente cuenta con las opciones <a
+            href="#actividades" target="_self">Actividades de
+            cobro</a>, <a href="#agentes" target="_self">Agentes</a> y <a
+            href="#metas" target="_self">Metas</a>. </p>
+        <p class="TITLE"><img src="../img/CCF_007B.PNG"></p>
+
+        <p class="PARRAFO"><span class="SUBTITULO">Adicionar:</span> Si
+          el usuario invoca la opción Adicionar se despliega un formulario con
+          los siguientes campos:</p>
+        <p class="TITLE"><img src="../img/CCF_007B2.PNG"></p>
+
+        <table>
+          <tr>
+            <td class="titletable">
+              <p class="SUBTITULO">Código</span></p>
           </td>
           <td>
-            <p class="PARRAFO">Campo alfanumérico de 15 posiciones que permite realizar un filtro de búsqueda por el
-              código del perfil. </p>
-          </td>
-        </tr>
-        <tr>
-          <td class="titletable">
-            <p class="SUBTITULO">Descripción</p>
-          </td>
-          <td>
-            <p class="PARRAFO">A través de este campo alfanumérico de 50 posiciones es posible realizar la búsqueda
-              por la descripción de los perfiles. </p>
-          </td>
-        </tr>
-      </table>
-
-      <p class="PARRAFO">El formulario contiene las opciones Actualizar, Eliminar,
-        Adicionar y Detalle. Adicionalmente cuenta con las opciones <a href="#actividades" target="_self">Actividades de
-          cobro</a>, <a href="#agentes" target="_self">Agentes</a> y <a href="#metas" target="_self">Metas</a>. </p>
-      <p class="TITLE"><img src="../img/CCF_007B.PNG"></p>
-
-      <p class="PARRAFO"><span class="SUBTITULO">Adicionar:</span>  Si
-        el usuario invoca la opción Adicionar se despliega un formulario con
-        los siguientes campos:</p>
-      <p class="TITLE"><img src="../img/CCF_007B2.PNG"></p>
-
-      <table>
-        <tr>
-          <td class="titletable">
-            <p class="SUBTITULO">Código</span></p>
-          </td>
-          <td>
-            <p class="PARRAFO">Campo alfanumérico de 15 posiciones, obligatorio, permite asignar una referencia numérica o
-              alfanumérica para identificar cada uno de los perfiles definidos por la entidad o casa de cobranza.
+            <p class="PARRAFO">Campo alfanumérico de 15 posiciones, obligatorio,
+              permite asignar una referencia numérica o
+              alfanumérica para identificar cada uno de los perfiles definidos
+              por la entidad o casa de cobranza.
             </p>
           </td>
         </tr>
@@ -94,25 +106,31 @@
             <p class="SUBTITULO">Descripción</p>
           </td>
           <td>
-            <p class="PARRAFO">En este campo alfanumérico de 50 posiciones, obligatorio, se indica el nombre o descriptivo
+            <p class="PARRAFO">En este campo alfanumérico de 50 posiciones,
+              obligatorio, se indica el nombre o descriptivo
               asociado a cada uno de los códigos de perfil creados.</p>
           </td>
         </tr>
       </table>
 
-      <p class="PARRAFO"><span class="SUBTITULO">Actualizar:</span>  Si el usuario
-        invoca la opción Actualizar se despliega un nuevo formulario en cual
+      <p class="PARRAFO"><span class="SUBTITULO">Actualizar:</span> Si el
+        usuario
+        invoca la opción Actualizar se despliega un formulario en cual
         los únicos campos modificables son los siguientes:</p>
       <p class="TITLE"><img src="../img/CCF_007B3.PNG"></p>
 
-      <p class="PARRAFO"><span class="SUBTITULO">Detalle:</span>  Si el usuario invoca
+      <p class="PARRAFO"><span class="SUBTITULO">Detalle:</span> Si el usuario
+        invoca
         la opción Detalle se despliega el siguiente formulario.
 
-        </p>
+      </p>
       <p class="TITLE"><img src="../img/CCF_007B4.PNG"></p>
 
-      <p class="PARRAFO"><span class="SUBTITULO"><a name="actividades"></a>Actividades de cobro: </span> Grupo de datos que permiten
-        asociarle a cada perfil por tipo de cobro las actividades que le es dable efectuar.</p>
+      <p class="PARRAFO"><span class="SUBTITULO"><a
+            name="actividades"></a>Actividades de cobro: </span> Grupo de datos
+        que permiten
+        asociarle a cada perfil por tipo de cobro las actividades que le es
+        dable efectuar.</p>
       <p class="TITLE"><img src="../img/CCF_007B5.PNG"></p>
 
       <table>
@@ -121,9 +139,12 @@
             <p class="SUBTITULO">Tipo de cobro </p>
           </td>
           <td>
-            <p class="PARRAFO">Este campo cuenta con lista de valores poblada mediante la opción <A href="CCH_002B.html"
-                  target="_self">Tipos de cobro</A> de este mismo módulo, de la que debe seleccionarse la
-              clase de cobro que se asocia al tipo de obligación predefinida.</p>
+            <p class="PARRAFO">Este campo cuenta con lista de valores poblada
+              mediante la opción <a href="CCH_002B.html"
+                target="_self">Tipos de cobro</a> de este mismo módulo, de la
+              que debe seleccionarse la
+              clase de cobro que se asocia al tipo de obligación
+              predefinida.</p>
           </td>
         </tr>
         <tr>
@@ -131,40 +152,50 @@
             <p class="SUBTITULO">Actividad</p>
           </td>
           <td>
-            <p class="PARRAFO">Campo con lista de valores poblada mediante la opción <A href="CCH_004B.html"
-                  target="_self">Actividades de cobro</A> de este mismo módulo, de la que debe seleccionarse
-              todas y cada una de las actividades permitidas al perfil que se está definiendo y que se asocian al
+            <p class="PARRAFO">Campo con lista de valores poblada mediante la
+              opción <a href="CCH_004B.html"
+                target="_self">Actividades de cobro</a> de este mismo módulo, de
+              la que debe seleccionarse
+              todas y cada una de las actividades permitidas al perfil que se
+              está definiendo y que se asocian al
               tipo de cobro y a la obligación predefinida.</p>
           </td>
         </tr>
       </table>
 
-      <p class="PARRAFO"><span class="SUBTITULO">Actualizar:</span>  Si el usuario
-        invoca la opción Actualizar se despliega un nuevo formulario en cual
+      <p class="PARRAFO"><span class="SUBTITULO">Actualizar:</span> Si el
+        usuario
+        invoca la opción Actualizar se despliega un formulario en cual
         los únicos campos modificables son los siguientes:</p>
       <p class="TITLE"><img src="../img/CCF_007B6.PNG"></p>
 
-      <p class="PARRAFO"><span class="SUBTITULO"><a name="agentes" id="agentes"></a>Agentes: </span> Este formulario muestra todos los
-        agentes que se encuentren dentro del perfil selecccionado, de acuerdo a lo que se haya paremetrizado para los
-        Agentes de cobro en la opción <a href="CCH_001B.html" target="_self">Operadores de cobro</a>. </p>
+      <p class="PARRAFO"><span class="SUBTITULO"><a name="agentes"
+            id="agentes"></a>Agentes: </span> Este formulario muestra todos los
+        agentes que se encuentren dentro del perfil selecccionado, de acuerdo a
+        lo que se haya paremetrizado para los
+        Agentes de cobro en la opción <a href="CCH_001B.html"
+          target="_self">Operadores de cobro</a>. </p>
       <p class="TITLE"><img src="../img/CCF_007B7.PNG"></p>
 
-      <p class="PARRAFO"><span class="SUBTITULO">Detalle:</span>  Si el usuario invoca
+      <p class="PARRAFO"><span class="SUBTITULO">Detalle:</span> Si el usuario
+        invoca
         la opción Detalle se despliega el siguiente formulario.
 
-        </p>
+      </p>
       <p class="TITLE"><img src="../img/CCF_007B8.PNG"></p>
 
-      <p class="PARRAFO"><span class="SUBTITULO"><a name="metas" id="metas"></a>Metas: </span> A través de este formulario se
-        pueden consultar las <a href="CCH_010B.html">Metas</a> que hayan sido parametrizadas para cada uno de los <a
+      <p class="PARRAFO"><span class="SUBTITULO"><a name="metas"
+            id="metas"></a>Metas: </span> A través de este formulario se
+        pueden consultar las <a href="CCH_010B.html">Metas</a> que hayan sido
+        parametrizadas para cada uno de los <a
           href="#perfiles" target="_self">Perfiles</a>.</p>
       <p class="TITLE"><img src="../img/CCF_007B9.PNG"></p>
 
-  </section>
-  <script src="../js/menu.js"></script>
-</body>
-<div id="footerContainer"></div>
-<script>
+    </section>
+    <script src="../js/menu.js"></script>
+  </body>
+  <div id="footerContainer"></div>
+  <script>
   fetch('footer.html')
     .then(response => response.text())
     .then(html => {

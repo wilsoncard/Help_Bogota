@@ -1,26 +1,27 @@
 <!DOCTYPE html>
 <html lang="es">
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>BANKBU®</title>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>BANKBU®</title>
 
-    <link rel="stylesheet" href="../css/pages.css">
-    <link rel="stylesheet" href="../css/style.css">
-    <link rel="icon" href="../img/ACQUIRER-logo.JPG" type="image/x-icon">
-</head>
+        <link rel="stylesheet" href="../css/pages.css">
+        <link rel="stylesheet" href="../css/style.css">
+        <link rel="icon" href="../img/ACQUIRER-logo.JPG" type="image/x-icon">
+    </head>
 
-<body>
+    <body>
 
-    <header>
-        <img class="logo" src="../img/logoBankbu_.PNG" alt="Logo de Mi Empresa">
-        <div id="menuBtn">
-            <img class="TITLE" src="../img/menu.PNG" alt="Botón de Menú ">
-        </div>
-    </header>
-      <div id="menuContainer"></div>
-  <script>
+        <header>
+            <img class="logo" src="../img/logoBankbu_.PNG"
+                alt="Logo de Mi Empresa">
+            <div id="menuBtn">
+                <img class="TITLE" src="../img/menu.PNG" alt="Botón de Menú ">
+            </div>
+        </header>
+        <div id="menuContainer"></div>
+        <script>
     fetch('menu.html')
       .then(response => response.text())
       .then(html => {
@@ -28,27 +29,25 @@
       });
   </script>
 
-    <section>
-        <div>
-            <table>
-                <tr>
-                    <td>
-                        <div>
-                            <p class="TITLE">Conceptos contables para ND/NC</p>
-                        </div>
-                    </td>
-                </tr>
-            </table>
-            <p class="PARRAFO">Mediante esta función se definen los conceptos que
-                se tendrán en cuenta para la afectación de las cuentas corrientes
-                o de ahorros de los establecimientos, así como la operación
-                que se deriva de dicho concepto.</p>
-            <p class="PARRAFO">El formulario contiene las opciones Actualizar, Eliminar
-                y Adicionar y Detalle.</p>
-            <p class="TITLE"><img src="../img/ESF_015B.PNG"></p>
+        <section>
+            <div>
 
-            <p class="PARRAFO"><span class="SUBTITULO">Adicionar:</span>  Si el usuario invoca la opción Adicionar
-                se despliega un formulario con los siguientes campos:</span> 
+                <p class="TITLE">Conceptos contables para ND/NC</p>
+
+                <p class="PARRAFO">Mediante esta función se definen los
+                    conceptos que
+                    se tendrán en cuenta para la afectación de las cuentas
+                    corrientes
+                    o de ahorros de los establecimientos, así como la operación
+                    que se deriva de dicho concepto.</p>
+                <p class="PARRAFO">El formulario contiene los enlaces:
+                    Actualizar, Eliminar
+                    y Adicionar y Detalle.</p>
+                <p class="TITLE"><img src="../img/ESF_015B.PNG"></p>
+
+                <p class="PARRAFO"><span class="SUBTITULO">Adicionar:</span> Si
+                    el usuario invoca la opción Adicionar
+                    se despliega un formulario con los siguientes campos:</span>
             </p>
             <p class="TITLE"><img src="../img/ESF_015B1.PNG"></p>
 
@@ -59,8 +58,10 @@
                     </td>
                     <td>
                         <p class="PARRAFO">Campo
-                            alfanumérico de 5 posiciones, obligatorio, que identifica el
-                            código del concepto que se tendrá en cuenta de acuerdo
+                            alfanumérico de 5 posiciones, obligatorio, que
+                            identifica el
+                            código del concepto que se tendrá en cuenta de
+                            acuerdo
                             con el evento que ocurra.</p>
                     </td>
                 </tr>
@@ -70,50 +71,61 @@
                     </td>
                     <td>
                         <p class="PARRAFO">Campo
-                            alfanumérico de 30 posiciones, obligatorio, en el cual se registra
+                            alfanumérico de 30 posiciones, obligatorio, en el
+                            cual se registra
                             el nombre del concepto.</p>
                     </td>
                 </tr>
                 <tr>
                     <td class="titletable">
                         <p class="SUBTITULO">Tipo
-                                    nota </p>
+                            nota </p>
                     </td>
                     <td>
                         <p class="PARRAFO">Campo
-                            que contiene una lista de valores adjunta de la cual se selecciona entre
+                            que contiene una lista de valores adjunta de la cual
+                            se selecciona entre
                             Nota débito o Nota crédito, el tipo
-                            de registro asociado a cada evento, que de acuerdo con las especificaciones
-                            de la interface, aparecerá en el extracto de la cuenta del establecimiento.
+                            de registro asociado a cada evento, que de acuerdo
+                            con las especificaciones
+                            de la interface, aparecerá en el extracto de la
+                            cuenta del establecimiento.
                         </p>
                     </td>
                 </tr>
                 <tr>
                     <td class="titletable">
                         <p class="SUBTITULO">Tipo
-                                    operación </p>
+                            operación </p>
                     </td>
                     <td>
                         <p class="PARRAFO">Campo
-                            con lista de valores adjunta de la cual, de acuerdo con el evento y
-                            guardando estrecha relación con el tipo de concepto, se identifica
-                            el tipo de registro que se debe realizar en la cuenta corriente o de
-                            ahorros del establecimiento, constituyéndose en otra manera de
-                            identificar la procedencia del movimiento dentro del sistema.</p>
+                            con lista de valores adjunta de la cual, de acuerdo
+                            con el evento y
+                            guardando estrecha relación con el tipo de concepto,
+                            se identifica
+                            el tipo de registro que se debe realizar en la
+                            cuenta corriente o de
+                            ahorros del establecimiento, constituyéndose en otra
+                            manera de
+                            identificar la procedencia del movimiento dentro del
+                            sistema.</p>
                     </td>
                 </tr>
             </table>
-            <p class="PARRAFO"><span class="PARRAFO"><span class="SUBTITULO">Actualizar:</span> 
-                    Si el usuario invoca la opción Actualizar se despliega un nuevo formulario
+            <p class="PARRAFO"><span class="PARRAFO"><span
+                        class="SUBTITULO">Actualizar:</span>
+                     Al activar ese enlace  se despliega un
+                    nuevo formulario
                     en el cual los únicos campos modificables son: Descripción,
                     Tipo nota, y Tipo operación.</p>
-            <p class="TITLE"><img src="../img/ESF_015B2.PNG"></p>
+                <p class="TITLE"><img src="../img/ESF_015B2.PNG"></p>
 
-    </section>
-    <script src="../js/menu.js"></script>
-</body>
-<div id="footerContainer"></div>
-<script>
+            </section>
+            <script src="../js/menu.js"></script>
+        </body>
+        <div id="footerContainer"></div>
+        <script>
   fetch('footer.html')
     .then(response => response.text())
     .then(html => {
@@ -121,4 +133,4 @@
     });
 </script>
 
-</html>
+    </html>

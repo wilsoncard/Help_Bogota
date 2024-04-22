@@ -1,26 +1,26 @@
 <!DOCTYPE html>
 <html lang="es">
 
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>BANKBU®</title>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BANKBU®</title>
 
-  <link rel="stylesheet" href="../css/pages.css">
-  <link rel="stylesheet" href="../css/style.css">
-  <link rel="icon" href="../img/ACQUIRER-logo.JPG" type="image/x-icon">
-</head>
+    <link rel="stylesheet" href="../css/pages.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="icon" href="../img/ACQUIRER-logo.JPG" type="image/x-icon">
+  </head>
 
-<body>
+  <body>
 
-  <header>
-    <img class="logo" src="../img/logoBankbu_.PNG" alt="Logo de Mi Empresa">
-    <div id="menuBtn">
-      <img class="TITLE" src="../img/menu.PNG" alt="Botón de Menú ">
-    </div>
-  </header>
+    <header>
+      <img class="logo" src="../img/logoBankbu_.PNG" alt="Logo de Mi Empresa">
+      <div id="menuBtn">
+        <img class="TITLE" src="../img/menu.PNG" alt="Botón de Menú ">
+      </div>
+    </header>
     <div id="menuContainer"></div>
-  <script>
+    <script>
     fetch('menu.html')
       .then(response => response.text())
       .then(html => {
@@ -28,91 +28,99 @@
       });
   </script>
 
-  <section>
-    <div>
-      
-              <p class="TITLE">Definición de productos - Copia productos</p>
+    <section>
+      <div>
 
+        <p class="TITLE">Definición de productos - Copia productos</p>
 
-      <p class="PARRAFO">Esta opción que se invoca desde el formulario <a href="MEH_002B.html"
-            >Definición de productos</a> le permite a la entidad copiar y replicar todos los
-        parámetros de un producto ya existente a un nuevo producto, agilizando así el proceso de
-        creación de nuevos productos.</p>
-      <p class="PARRAFO">Después que el produto ha sido copiado, el usuario puede modificar los datos y
-        parámetros que sea necesario de acuerdo con las características del nuevo producto.</p>
-      <p class="PARRAFO">Una vez que el usuario selecciona un registro desde <a href="MEH_002B.html"
-            >Definición de productos</a> e invoca el hipervínculo copia productos, se
-        despliega un nuevo formulario con los siguientes campos.</p>
-      <p class="TITLE"><img src="../img/MEF_002E45.PNG" 389" height="232"></p>
+        <p class="PARRAFO">Esta opción que se invoca desde el formulario <a
+            href="MEH_002B.html">Definición de productos</a> le permite a la
+          entidad copiar y replicar todos los
+          parámetros de un producto ya existente a un nuevo producto, agilizando
+          así el proceso de
+          creación de nuevos productos.</p>
+        <p class="PARRAFO">Después que el produto ha sido copiado, el usuario
+          puede modificar los datos y
+          parámetros que sea necesario de acuerdo con las características del
+          nuevo producto.</p>
+        <p class="PARRAFO">Una vez que el usuario selecciona un registro desde
+          <a href="MEH_002B.html">Definición de productos</a> e invoca el
+          hipervínculo copia productos, se
+          despliega un formulario con los siguientes campos.</p>
+        <p class="TITLE"><img src="../img/MEF_002E45.PNG"></p>
 
-      <div class="PARRAFO">
-        <p class="TITLE">Descripción de campos</p>
-        <table>
-          <tr>
-            <td class="titletable">
-              <p class="SUBTITULO">Producto origen
+        <div class="PARRAFO">
+          <p class="TITLE">Descripción de campos</p>
+          <table>
+            <tr>
+              <td class="titletable">
+                <p class="SUBTITULO">Producto origen
                 </p>
-            </td>
-            <td>
-              <p class="PARRAFO">Campo
-                de salida en el cual se muestra el bin, producto, grupo de afinidad y descripción del producto
-                origen que se quiere copiar.</p>
-            </td>
-          </tr>
+              </td>
+              <td>
+                <p class="PARRAFO">Campo
+                  de salida en el cual se muestra el bin, producto, grupo de
+                  afinidad y descripción del producto
+                  origen que se quiere copiar.</p>
+              </td>
+            </tr>
 
-          <tr>
-            <td class="titletable">
-              <p class="SUBTITULO">Bin
-
-
-                </p>
-            </td>
-            <td>
-              <p class="PARRAFO">Este
-                campo obligatorio contiene lista de valores de la que se selecciona el <a href="MEH_001B.html"
-                    >bin</a> que conforma el nuevo producto al que se desea replicar la
-                parametrización del producto origen.</p>
-            </td>
-          </tr>
-
-          <tr>
-            <td class="titletable">
-              <p class="SUBTITULO">Producto
-
+            <tr>
+              <td class="titletable">
+                <p class="SUBTITULO">Bin
 
                 </p>
-            </td>
-            <td>
-              <p class="PARRAFO">Campo obligatorio con lista de valores de la que se selecciona el <a
-                    href="MEH_001B.html" >producto (segmento)</a> que conforma el nuevo producto al
-                que se desea replicar la parametrización del producto origen.</p>
-            </td>
-          </tr>
+              </td>
+              <td>
+                <p class="PARRAFO">Este
+                  campo obligatorio contiene lista de valores de la que se
+                  selecciona el <a href="MEH_001B.html">bin</a> que conforma el
+                  nuevo producto al que se desea replicar la
+                  parametrización del producto origen.</p>
+              </td>
+            </tr>
 
-          <tr>
-            <td class="titletable">
-              <p class="SUBTITULO">Grupo de afinidad
-
+            <tr>
+              <td class="titletable">
+                <p class="SUBTITULO">Producto
 
                 </p>
-            </td>
-            <td>
-              <p class="PARRAFO">Este
-                campo obligatorio contiene lista de valores de la que se selecciona el <a href="MEH_001B.html"
-                    >grupo de afinidad</a> que conjuntamente con el bin y el producto seleccionados en
-                los campos anteriores conforma el nuevo producto al que se desea replicar la parametrización del
-                producto origen.</p>
-            </td>
-          </tr>
-        </table>
-        <p class="PARRAFO">
+              </td>
+              <td>
+                <p class="PARRAFO">Campo obligatorio con lista de valores de la
+                  que se selecciona el <a
+                    href="MEH_001B.html">producto (segmento)</a> que conforma el
+                  nuevo producto al
+                  que se desea replicar la parametrización del producto
+                  origen.</p>
+              </td>
+            </tr>
 
-        <p class="PARRAFO">
-  </section>
-  <script src="../js/menu.js"></script>
-</body>
-<div id="footerContainer"></div>
-<script>
+            <tr>
+              <td class="titletable">
+                <p class="SUBTITULO">Grupo de afinidad
+
+                </p>
+              </td>
+              <td>
+                <p class="PARRAFO">Este
+                  campo obligatorio contiene lista de valores de la que se
+                  selecciona el <a href="MEH_001B.html">grupo de afinidad</a>
+                  que conjuntamente con el bin y el producto seleccionados en
+                  los campos anteriores conforma el nuevo producto al que se
+                  desea replicar la parametrización del
+                  producto origen.</p>
+              </td>
+            </tr>
+          </table>
+          <p class="PARRAFO">
+
+            <p class="PARRAFO">
+            </section>
+            <script src="../js/menu.js"></script>
+          </body>
+          <div id="footerContainer"></div>
+          <script>
   fetch('footer.html')
     .then(response => response.text())
     .then(html => {
@@ -120,4 +128,4 @@
     });
 </script>
 
-</html>
+        </html>

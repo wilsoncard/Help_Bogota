@@ -1,25 +1,26 @@
 <!DOCTYPE html>
 <html lang="es">
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>BANKBU®</title>
-    <link rel="stylesheet" href="../css/pages.css">
-    <link rel="stylesheet" href="../css/style.css">
-    <link rel="icon" href="../img/ACQUIRER-logo.JPG" type="image/x-icon">
-</head>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>BANKBU®</title>
+        <link rel="stylesheet" href="../css/pages.css">
+        <link rel="stylesheet" href="../css/style.css">
+        <link rel="icon" href="../img/ACQUIRER-logo.JPG" type="image/x-icon">
+    </head>
 
-<body>
+    <body>
 
-    <header>
-        <img class="logo" src="../img/logoBankbu_.PNG" alt="Logo de Mi Empresa">
-        <div id="menuBtn">
-            <img class="TITLE" src="../img/menu.PNG" alt="Botón de Menú ">
-        </div>
-    </header>
-      <div id="menuContainer"></div>
-  <script>
+        <header>
+            <img class="logo" src="../img/logoBankbu_.PNG"
+                alt="Logo de Mi Empresa">
+            <div id="menuBtn">
+                <img class="TITLE" src="../img/menu.PNG" alt="Botón de Menú ">
+            </div>
+        </header>
+        <div id="menuContainer"></div>
+        <script>
     fetch('menu.html')
       .then(response => response.text())
       .then(html => {
@@ -27,248 +28,291 @@
       });
   </script>
 
-    <section>
-        <div>
-           
-          <p class="TITLE">Origen de transacciones - Parámetros
-                                de origen</p>
-            <p class="PARRAFO">En este formulario que se invoca desde el
-                hipervínculo Parámetros de origen contenido en el formulario
-                <a href="NUH_027B.html">orígenes de transacciones</a>
-                se registran las condiciones particulares válidas para el origen seleccionado
-                por el usuario.
-            </p>
-            <p class="TITLE"><img src="../img/NUF_027E10.PNG"></p>
-
-            <p class="PARRAFO">El formulario contiene las opciones Actualizar,
-                Eliminar.</p>
-            <p class="PARRAFO"><span class="SUBTITULO">Actualizar</span>:</span></span>
-                    Si el usuario invoca la opción Actualizar se despliega un nuevo formulario
-                    en el cual todos los campos son modificables.</p>
-            <p class="TITLE"><img src="../img/NUF_027E11.PNG"></p>
-            <p class="TITLE">Descripción de campos</p>
-            <table>
-                <tr>
-                    <td class="titletable">
-                        <p class="SUBTITULO">Antig&uuml;edad
-                                    permitida procesamiento comprobantes</p>
-                    </td>
-                    <td>
-                        <p class="PARRAFO">En
-                            este campo numérico de 3 dígitos se registra el número
-                            máximo de días calendario permitidos para recibir y procesar
-                            un comprobante, por cada origen. Por ejemplo en Canje nacional, si un
-                            comprobante supera una antig&uuml;edad de 90 días, puede ser
-                            devuelto automáticamente a la entidad que lo envío, puesto
-                            que los plazos estipulados de intercambio no han sido respetados.</p>
-                    </td>
-                </tr>
-
-                <tr>
-                    <td class="titletable">
-                        <p class="SUBTITULO">Identificador
-                                    para la red 1 / 2 / 3</p>
-                    </td>
-                    <td>
-                        <p class="PARRAFO">Campos
-                            alfanuméricos de 8 dígitos, en los que se puede registrar
-                            el código que identifica a la entidad financiera ante cada una
-                            de las respectivas Redes.</p>
-                    </td>
-                </tr>
-
-                <tr>
-                    <td class="titletable">
-                        <p class="SUBTITULO">Origen
-                                    afecta las cuentas de depósitos</p>
-                    </td>
-                    <td>
-                        <p class="PARRAFO">En
-                            este campo la entidad se&ntilde;ala si para el origen que se está
-                            parametrizando se debe tener en consideración o no la afectación
-                            a las cuentas de depósitos de los establecimientos.</p>
-                    </td>
-                </tr>
-
-                <tr>
-                    <td class="titletable">
-                        <p class="SUBTITULO">Transacción
-                                    para aplicar abono a cuentas</p>
-                    </td>
-                    <td>
-                        <p class="PARRAFO">Campo
-                            alfanumérico de diez dígitos en el que se registra el
-                            código de la transacción que identifica, en la interface
-                            de Depósitos el abono a cuenta.</p>
-                    </td>
-                </tr>
-
-                <tr>
-                    <td class="titletable">
-                        <p class="SUBTITULO">Transacción
-                                    para descuentos</p>
-                    </td>
-                    <td>
-                        <p class="PARRAFO">En
-                            este campo alfanumérico de diez dígitos se digita el código
-                            de transacción que identifica, en la interface de afectación
-                            a cuenta, el valor del descuento aplicado, el cual puede no aparecer
-                            y viajar en la interface en el valor neto del depósito.</p>
-                    </td>
-                </tr>
-
-                <tr>
-                    <td class="titletable">
-                        <p class="SUBTITULO">Transacción
-                                    para reversar abono a cuentas</p>
-                    </td>
-                    <td>
-                        <p class="PARRAFO">Campo
-                            alfanumérico de diez dígitos en el que se registra el
-                            código de transacción que identifica, en la interface
-                            de Depósitos la reversión de un abono a cuenta</p>
-                    </td>
-                </tr>
-
-                <tr>
-                    <td class="titletable">
-                        <p class="SUBTITULO">Transacción
-                                    reversión descuento</p>
-                    </td>
-                    <td>
-                        <p class="PARRAFO">En
-                            este campo alfanumérico de diez dígitos se registra el
-                            código de transacción que identifica, en la interface
-                            de afectación a cuenta, el valor de la reversión del descuento
-                            aplicado.</p>
-                    </td>
-                </tr>
-
-                <tr>
-                    <td class="titletable">
-                        <p class="SUBTITULO">Transacción
-                                    para aplicar retención en la fuente</p>
-                    </td>
-                    <td>
-                        <p class="PARRAFO">Campo
-                            alfanumérico de diez dígitos en el que se ingresa el código
-                            de transacción que identifica, en la interface de Depósitos,
-                            la aplicación de la retención en la fuente.</p>
-                    </td>
-                </tr>
-
-                <tr>
-                    <td class="titletable">
-                        <p class="SUBTITULO">Transacción
-                                    retención iva</p>
-                    </td>
-                    <td>
-                        <p class="PARRAFO">Campo
-                            numérico de hasta 6 dígitos en el cual se registra el
-                            código que identifica la transacción original que se está
-                            parametrizando y para la que se definen las demás condiciones
-                            del presente formulario.</p>
-                    </td>
-                </tr>
-
-                <tr>
-                    <td class="titletable">
-                        <p class="SUBTITULO">Transacción
-                                    para reversar retención en la fuente</p>
-                    </td>
-                    <td>
-                        <p class="PARRAFO">Campo
-                            numérico de hasta 6 dígitos en el cual se registra el
-                            código que identifica la transacción original que se está
-                            parametrizando y para la que se definen las demás condiciones
-                            del presente formulario.</p>
-                    </td>
-                </tr>
-
-                <tr>
-                    <td class="titletable">
-                        <p class="SUBTITULO">Transacción
-                                    reversión iva</p>
-                    </td>
-                    <td>
-                        <p class="PARRAFO">Campo
-                            alfanumérico de diez dígitos en el cual se ingresa el
-                            código de transacción que identifica, en la interface
-                            de afectación a cuenta, el valor de la retención del impuesto
-                            de IVA aplicado, el cual puede no aparecer y viajar en la interface
-                            en el valor neto del depósito.</p>
-                    </td>
-                </tr>
-
-                <tr>
-                    <td class="titletable">
-                        <p class="SUBTITULO">Se
-                                    requiere cargue de datos</p>
-                    </td>
-                    <td>
-                        <p class="PARRAFO">En
-                            este campo la entidad se&ntilde;ala si la fuente de recepción
-                            de movimiento corresponde a un archivo plano que debe ser cargado, ó
-                            la entrada de movimiento se hace en línea.</p>
-                    </td>
-                </tr>
-
-                <tr>
-                    <td class="titletable">
-                        <p class="SUBTITULO">Se
-                                    requieren múltiples cargues</p>
-                    </td>
-                    <td>
-                        <p class="PARRAFO">Campo
-                            que se marca para indicar si para el origen es necesario efectuar mas
-                            de un cargue en la fecha de proceso.</p>
-                    </td>
-                </tr>
-
-                <tr>
-                    <td class="titletable">
-                        <p class="SUBTITULO">Validación
-                                    cuenta </p>
-                    </td>
-                    <td>
-                        <p class="PARRAFO">En
-                            este campo tipo combo se puede seleccionar entre Pseudocuenta, Establecimiento
-                            o Cuenta, la raíz o punto de partida de que se dispone,
-                            acorde con el origen o franquicia, para identificar la cuenta de depósitos
-                            que debe ser afectada con los mismos. La pseudocuenta es un
-                            código de identificación de la cuenta asignado por la
-                            red o franquicia, al seleccionar esta opción, en el momento del
-                            cargue, el proceso de validación revisa que el establecimiento
-                            que está viajando tenga asociado dicho código. Al seleccionar
-                            establecimiento, el proceso de validación toma el establecimiento
-                            y lo asocia a la cuenta correspondiente. Si el establecimiento tiene
-                            asociadas varias cuentas el proceso toma la primera que encuentre. La
-                            opción cuenta, permite que el proceso de validación
-                            revise que la cuenta que trae el archivo esté relacionada con
-                            las cuentas del establecimiento.</p>
-                    </td>
-                </tr>
-
-                <tr>
-                    <td class="titletable">
-                        <p class="SUBTITULO">Máximo
-                                    número de duplicados</p>
-                    </td>
-                    <td>
-                        <p class="PARRAFO">Campo
-                            numérico en el que se indica la máxima cantidad de registros
-                            iguales que el sistema debe permitir antes de determinar que se trata
-                            de un archivo duplicado y se finalice el proceso de cargue del mismo,
-                            evitando así que por error se cargue dos veces la misma transacción.</p>
-                    </td>
-                </tr>
-            </table>
+        <section>
             <div>
-    </section>
-    <script src="../js/menu.js"></script>
-</body>
-<div id="footerContainer"></div>
-<script>
+
+                <p class="TITLE">Origen de transacciones - Parámetros
+                    de origen</p>
+                <p class="PARRAFO">En este formulario que se invoca desde el
+                    hipervínculo Parámetros de origen contenido en el formulario
+                    <a href="NUH_027B.html">orígenes de transacciones</a>
+                    se registran las condiciones particulares válidas para el
+                    origen seleccionado
+                    por el usuario.
+                </p>
+                <p class="TITLE"><img src="../img/NUF_027E10.PNG"></p>
+
+                <p class="PARRAFO">El formulario contiene los enlaces:
+                    Actualizar,
+                    Eliminar.</p>
+                <p class="PARRAFO"><span
+                        class="SUBTITULO">Actualizar</span>:</span></span>
+             Al activar ese enlace  se despliega un nuevo
+            formulario
+            en el cual todos los campos son modificables.</p>
+        <p class="TITLE"><img src="../img/NUF_027E11.PNG"></p>
+        <p class="TITLE">Descripción de campos</p>
+        <table>
+            <tr>
+                <td class="titletable">
+                    <p class="SUBTITULO">Antig&uuml;edad
+                        permitida procesamiento comprobantes</p>
+                </td>
+                <td>
+                    <p class="PARRAFO">En
+                        este campo numérico de 3 dígitos se registra el número
+                        máximo de días calendario permitidos para recibir y
+                        procesar
+                        un comprobante, por cada origen. Por ejemplo en Canje
+                        nacional, si un
+                        comprobante supera una antig&uuml;edad de 90 días, puede
+                        ser
+                        devuelto automáticamente a la entidad que lo envío,
+                        puesto
+                        que los plazos estipulados de intercambio no han sido
+                        respetados.</p>
+                </td>
+            </tr>
+
+            <tr>
+                <td class="titletable">
+                    <p class="SUBTITULO">Identificador
+                        para la red 1 / 2 / 3</p>
+                </td>
+                <td>
+                    <p class="PARRAFO">Campos
+                        alfanuméricos de 8 dígitos, en los que se puede
+                        registrar
+                        el código que identifica a la entidad financiera ante
+                        cada una
+                        de las respectivas Redes.</p>
+                </td>
+            </tr>
+
+            <tr>
+                <td class="titletable">
+                    <p class="SUBTITULO">Origen
+                        afecta las cuentas de depósitos</p>
+                </td>
+                <td>
+                    <p class="PARRAFO">En
+                        este campo la entidad se&ntilde;ala si para el origen
+                        que se está
+                        parametrizando se debe tener en consideración o no la
+                        afectación
+                        a las cuentas de depósitos de los establecimientos.</p>
+                </td>
+            </tr>
+
+            <tr>
+                <td class="titletable">
+                    <p class="SUBTITULO">Transacción
+                        para aplicar abono a cuentas</p>
+                </td>
+                <td>
+                    <p class="PARRAFO">Campo
+                        alfanumérico de diez dígitos en el que se registra el
+                        código de la transacción que identifica, en la interface
+                        de Depósitos el abono a cuenta.</p>
+                </td>
+            </tr>
+
+            <tr>
+                <td class="titletable">
+                    <p class="SUBTITULO">Transacción
+                        para descuentos</p>
+                </td>
+                <td>
+                    <p class="PARRAFO">En
+                        este campo alfanumérico de diez dígitos se digita el
+                        código
+                        de transacción que identifica, en la interface de
+                        afectación
+                        a cuenta, el valor del descuento aplicado, el cual puede
+                        no aparecer
+                        y viajar en la interface en el valor neto del
+                        depósito.</p>
+                </td>
+            </tr>
+
+            <tr>
+                <td class="titletable">
+                    <p class="SUBTITULO">Transacción
+                        para reversar abono a cuentas</p>
+                </td>
+                <td>
+                    <p class="PARRAFO">Campo
+                        alfanumérico de diez dígitos en el que se registra el
+                        código de transacción que identifica, en la interface
+                        de Depósitos la reversión de un abono a cuenta</p>
+                </td>
+            </tr>
+
+            <tr>
+                <td class="titletable">
+                    <p class="SUBTITULO">Transacción
+                        reversión descuento</p>
+                </td>
+                <td>
+                    <p class="PARRAFO">En
+                        este campo alfanumérico de diez dígitos se registra el
+                        código de transacción que identifica, en la interface
+                        de afectación a cuenta, el valor de la reversión del
+                        descuento
+                        aplicado.</p>
+                </td>
+            </tr>
+
+            <tr>
+                <td class="titletable">
+                    <p class="SUBTITULO">Transacción
+                        para aplicar retención en la fuente</p>
+                </td>
+                <td>
+                    <p class="PARRAFO">Campo
+                        alfanumérico de diez dígitos en el que se ingresa el
+                        código
+                        de transacción que identifica, en la interface de
+                        Depósitos,
+                        la aplicación de la retención en la fuente.</p>
+                </td>
+            </tr>
+
+            <tr>
+                <td class="titletable">
+                    <p class="SUBTITULO">Transacción
+                        retención iva</p>
+                </td>
+                <td>
+                    <p class="PARRAFO">Campo
+                        numérico de hasta 6 dígitos en el cual se registra el
+                        código que identifica la transacción original que se
+                        está
+                        parametrizando y para la que se definen las demás
+                        condiciones
+                        del presente formulario.</p>
+                </td>
+            </tr>
+
+            <tr>
+                <td class="titletable">
+                    <p class="SUBTITULO">Transacción
+                        para reversar retención en la fuente</p>
+                </td>
+                <td>
+                    <p class="PARRAFO">Campo
+                        numérico de hasta 6 dígitos en el cual se registra el
+                        código que identifica la transacción original que se
+                        está
+                        parametrizando y para la que se definen las demás
+                        condiciones
+                        del presente formulario.</p>
+                </td>
+            </tr>
+
+            <tr>
+                <td class="titletable">
+                    <p class="SUBTITULO">Transacción
+                        reversión iva</p>
+                </td>
+                <td>
+                    <p class="PARRAFO">Campo
+                        alfanumérico de diez dígitos en el cual se ingresa el
+                        código de transacción que identifica, en la interface
+                        de afectación a cuenta, el valor de la retención del
+                        impuesto
+                        de IVA aplicado, el cual puede no aparecer y viajar en
+                        la interface
+                        en el valor neto del depósito.</p>
+                </td>
+            </tr>
+
+            <tr>
+                <td class="titletable">
+                    <p class="SUBTITULO">Se
+                        requiere cargue de datos</p>
+                </td>
+                <td>
+                    <p class="PARRAFO">En
+                        este campo la entidad se&ntilde;ala si la fuente de
+                        recepción
+                        de movimiento corresponde a un archivo plano que debe
+                        ser cargado, ó
+                        la entrada de movimiento se hace en línea.</p>
+                </td>
+            </tr>
+
+            <tr>
+                <td class="titletable">
+                    <p class="SUBTITULO">Se
+                        requieren múltiples cargues</p>
+                </td>
+                <td>
+                    <p class="PARRAFO">Campo
+                        que se marca para indicar si para el origen es necesario
+                        efectuar mas
+                        de un cargue en la fecha de proceso.</p>
+                </td>
+            </tr>
+
+            <tr>
+                <td class="titletable">
+                    <p class="SUBTITULO">Validación
+                        cuenta </p>
+                </td>
+                <td>
+                    <p class="PARRAFO">En
+                        este campo tipo combo se puede seleccionar entre
+                        Pseudocuenta, Establecimiento
+                        o Cuenta, la raíz o punto de partida de que se dispone,
+                        acorde con el origen o franquicia, para identificar la
+                        cuenta de depósitos
+                        que debe ser afectada con los mismos. La pseudocuenta es
+                        un
+                        código de identificación de la cuenta asignado por la
+                        red o franquicia, al seleccionar esta opción, en el
+                        momento del
+                        cargue, el proceso de validación revisa que el
+                        establecimiento
+                        que está viajando tenga asociado dicho código. Al
+                        seleccionar
+                        establecimiento, el proceso de validación toma el
+                        establecimiento
+                        y lo asocia a la cuenta correspondiente. Si el
+                        establecimiento tiene
+                        asociadas varias cuentas el proceso toma la primera que
+                        encuentre. La
+                        opción cuenta, permite que el proceso de validación
+                        revise que la cuenta que trae el archivo esté
+                        relacionada con
+                        las cuentas del establecimiento.</p>
+                </td>
+            </tr>
+
+            <tr>
+                <td class="titletable">
+                    <p class="SUBTITULO">Máximo
+                        número de duplicados</p>
+                </td>
+                <td>
+                    <p class="PARRAFO">Campo
+                        numérico en el que se indica la máxima cantidad de
+                        registros
+                        iguales que el sistema debe permitir antes de determinar
+                        que se trata
+                        de un archivo duplicado y se finalice el proceso de
+                        cargue del mismo,
+                        evitando así que por error se cargue dos veces la misma
+                        transacción.</p>
+                </td>
+            </tr>
+        </table>
+        <div>
+        </section>
+        <script src="../js/menu.js"></script>
+    </body>
+    <div id="footerContainer"></div>
+    <script>
   fetch('footer.html')
     .then(response => response.text())
     .then(html => {

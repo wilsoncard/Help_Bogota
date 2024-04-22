@@ -1,25 +1,25 @@
 <!DOCTYPE html>
 <html lang="es">
 
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>BANKBU®</title>
-  <link rel="stylesheet" href="../css/pages.css">
-  <link rel="stylesheet" href="../css/style.css">
-  <link rel="icon" href="../img/ACQUIRER-logo.JPG" type="image/x-icon">
-</head>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BANKBU®</title>
+    <link rel="stylesheet" href="../css/pages.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="icon" href="../img/ACQUIRER-logo.JPG" type="image/x-icon">
+  </head>
 
-<body>
+  <body>
 
-  <header>
-    <img class="logo" src="../img/logoBankbu_.PNG" alt="Logo de Mi Empresa">
-    <div id="menuBtn">
-      <img class="TITLE" src="../img/menu.PNG" alt="Botón de Menú ">
-    </div>
-  </header>
+    <header>
+      <img class="logo" src="../img/logoBankbu_.PNG" alt="Logo de Mi Empresa">
+      <div id="menuBtn">
+        <img class="TITLE" src="../img/menu.PNG" alt="Botón de Menú ">
+      </div>
+    </header>
     <div id="menuContainer"></div>
-  <script>
+    <script>
     fetch('menu.html')
       .then(response => response.text())
       .then(html => {
@@ -27,60 +27,73 @@
       });
   </script>
 
-  <section>
-    <div>
-      <p class="TITLE">Franquicias</p>
+    <section>
+      <div>
+        <p class="TITLE">Franquicias</p>
 
-      <p class="PARRAFO"><span class="SUBTITULO">Clases de prefijos:</span>  Las franquicias requieren reportes periódicos por
-        clase de producto (clásica, oro, empresarial, etc) independientemente de las combinaciones creadas por
-        cada entidad, lo que obligó a la definición de una codificación fija para tal efecto. Estos
-        códigos pueden ser relacionados a los bines o prefijos a través de la opción <A
-            href="MEH_001B.html" >Definición de bines</A>.</p>
-      <p class="PARRAFO">El formulario contiene las opciones Actualizar, Eliminar,
-        y Adicionar. Adicionalmente, cuenta con un botón en la parte superior para regresar al formulario
-        principal de <a href="NUH_033B.html" >Franquicias</a>.</p>
-      <p class="TITLE"><img src="../img/NUF_033B5.PNG"></p>
+        <p class="PARRAFO"><span class="SUBTITULO">Clases de prefijos:</span>
+          Las franquicias requieren reportes periódicos por clase de producto
+          (clásica, oro, empresarial, etc.), independientemente de las
+          combinaciones creadas por cada entidad, lo que obligó a la definición
+          de una codificación fija para tal efecto. Estos códigos pueden ser
+          relacionados a los bines o prefijos a través de la opción <a
+            href="MEH_001B.html">Definición de bines</a>.El formulario contiene
+          los enlaces: Actualizar, Eliminar, y Adicionar. Adicionalmente, cuenta
+          con un botón en la parte superior para regresar al formulario
+          principal de <a href="NUH_033B.html">Franquicias</a>.</p>
+        <p class="TITLE"><img src="../img/NUF_033B5.PNG"></p>
 
-      <p class="PARRAFO"><span class="SUBTITULO">Adicionar:</span>  Si el usuario invoca la opción Adicionar se despliega un
-        formulario con los siguientes bloques:</p>
-      <p class="TITLE"><img src="../img/NUF_033B6.PNG"></p>
+        <p class="PARRAFO"><span class="SUBTITULO">Adicionar:</span> Al activar
+          ese enlace se despliega un
+          formulario con los siguientes bloques:</p>
+        <p class="TITLE"><img src="../img/NUF_033B6.PNG"></p>
 
-      <table>
-        <tr>
-          <td class="titletable">
-            <p class="SUBTITULO">Clase bin </p>
+        <table>
+          <tr>
+            <td class="titletable">
+              <p class="SUBTITULO">Clase bin </p>
+            </td>
+            <td>
+              <p class="PARRAFO">Campo alfanumérico de dos posiciones,
+                obligatorio, mediante el que se asigna un código
+                identificador a cada tipo o clase de producto genérico por
+                franquicia.</p>
+            </td>
+          </tr>
+          <tr>
+            <td class="titletable">
+              <p class="SUBTITULO">Descripción</span></p>
           </td>
           <td>
-            <p class="PARRAFO">Campo alfanumérico de dos posiciones, obligatorio, mediante el que se asigna un código
-              identificador a cada tipo o clase de producto genérico por franquicia.</p>
-          </td>
-        </tr>
-        <tr>
-          <td class="titletable">
-            <p class="SUBTITULO">Descripción</span></p>
-          </td>
-          <td>
-            <p class="PARRAFO">En este campo alfanumérico de 30 posiciones, obligatorio, se registra el nombre asociado al
+            <p class="PARRAFO">En este campo alfanumérico de 30 posiciones,
+              obligatorio, se registra el nombre asociado al
               código de cada clase de bin.</p>
           </td>
         </tr>
       </table>
-      <p class="PARRAFO"><span class="PARRAFO"><span class="SUBTITULO">Actualizar:</span> 
-          Si el usuario invoca la opción Actualizar se despliega un nuevo formulario
-          en el cual el único campo modificable es la Descripción.</p>
-      <p class="TITLE"><img src="../img/NUF_033B7.PNG"></p>
+      <p class="PARRAFO"><span class="PARRAFO"><span
+            class="SUBTITULO">Actualizar:</span>
+          Al activar ese enlace se despliega un formulario en el cual el único
+          campo modificable es la Descripción.</p>
+        <p class="TITLE"><img src="../img/NUF_033B7.PNG"></p>
 
-      <p class="PARRAFO"><a href="NUH_033B.html">Franquicias</a><a href="NUH_003B1.html"></a><span
-        > | </span><a href="NUH_033B1.html">Clases de prefijos</a><a href="NUH_033B2.html"></a><a href="NUH_003B2.html"></a><span > 
-        | </span><a href="NUH_033B4.html">Parámetros acciones para el exception file</a><span
-        > | </span><a href="NUH_033B2.html"></a><a href="NUH_033B3.html"></a><a href="NUH_003B3.html"></a>
-      <a href="NUH_033B4.html"></a><a href="NUH_033B5.html"></a><a href="NUH_033B1.html"></a><a href="NUH_003B1.html"></a><a href="NUH_033B5.html">Parámetros acciones por bloqueos</a><a href="NUH_033B2.html"></a><a href="NUH_003B2.html"></a><span > | </span><a href="NUH_033B6.html">Parámetros regiones para el exception file</a></p>
-    </div>
-  </section>
-  <script src="../js/menu.js"></script>
-</body>
-<div id="footerContainer"></div>
-<script>
+        <p class="PARRAFO"><a href="NUH_033B.html">Franquicias</a></a><span> | </span><a
+            href="NUH_033B3.html">Parámetros operativos</a><span>
+            | </span><a href="NUH_033B4.html">Parámetros acciones para el
+            exception file</a><span> | </span><a href="NUH_033B2.html"></a><a
+            href="NUH_033B3.html"></a><a href="NUH_003B3.html"></a>
+          <a href="NUH_033B4.html"></a><a href="NUH_033B5.html"></a><a
+            href="NUH_033B1.html"></a><a href="NUH_003B1.html"></a><a
+            href="NUH_033B5.html">Parámetros acciones por bloqueos</a><a
+            href="NUH_033B2.html"></a><a href="NUH_003B2.html"></a><span> |
+          </span><a href="NUH_033B6.html">Parámetros regiones para el exception
+            file</a></p>
+      </div>
+    </section>
+    <script src="../js/menu.js"></script>
+  </body>
+  <div id="footerContainer"></div>
+  <script>
   fetch('footer.html')
     .then(response => response.text())
     .then(html => {

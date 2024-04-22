@@ -28,91 +28,74 @@
 
     <section>
       <div>
-                <p class="TITLE">Compensadores</p>
+        <p class="TITLE">Compensadores</p>
 
-                <p class="PARRAFO">Mediante esta función se permite darle
-                  mantenimiento a la tabla que contiene la codificación
-                  de los distintos entes encargados de la compensación
-                  (canalización) del movimiento del universo
-                  transaccional ínter entidades. Un mismo compensador
-                  puede procesar el movimiento correspondiente a más de
-                  una franquicia; adicionalmente, para cada uno de ellos se
-                  define si el aplicativo debe o no generar el depósito y
-                  comisión a la cuenta del establecimiento.</p>
-                <p class="TITLE"><img src="../img/NUH_054B.PNG"></p>
+        <p class="PARRAFO">Mediante esta opción, se permite darle mantenimiento
+          a la tabla que contiene la codificación de los distintos entes
+          encargados de la compensación (canalización), del movimiento del
+          universo transaccional ínter entidades. Un mismo compensador puede
+          procesar el movimiento correspondiente a más de una franquicia;
+          adicionalmente, para cada uno de ellos se define si el aplicativo debe
+          o no generar el depósito y comisión a la cuenta del establecimiento.
+          El formulario contiene los enlaces: Actualizar, Eliminar y
+          Adicionar.</p>
+        <p class="TITLE"><img src="../img/NUH_054B.PNG"></p>
 
-                <p class="PARRAFO">El
-                  formulario contiene las opciones Actualizar, Eliminar y
-                  Adicionar.</p>
-                <p class="PARRAFO"><span
-                    class="SUBTITULO"><span>Adicionar</span><span>:</span></span><span>
-                    Si el
-                    usuario invoca la opción Adicionar se despliega un
-                    formulario con los
-                    siguientes bloques:</p>
-                <p class="TITLE"><img src="../img/NUH_054B1.PNG"></p>
+        <p class="PARRAFO">El
+          formulario contiene los enlaces:Actualizar, Eliminar y
+          Adicionar.</p>
+        <p class="PARRAFO"><span
+            class="SUBTITULO"><span>Adicionar</span><span>:</span></span><span>
+            Al activar ese enlace se despliega el siguiente formulario:</p>
+          <p class="TITLE"><img src="../img/NUH_054B1.PNG"></p>
 
-                <table>
-                  <tr>
-                    <td class="titletable"><p
-                        class="SUBTITULO"><span>Código</span> compensador
-                      </p></td>
-                    <td><p class="PARRAFO">Campo numérico de dos dígitos,
-                        obligatorio, asignado a cada una de las entidades que
-                        desempe&ntilde;an el rol de cámara de
-                        compensación.</p> </td>
-                  </tr>
-                  <tr>
-                    <td class="titletable"><p
-                        class="SUBTITULO"><span>Descripción</p></td>
-                  <td><p class="PARRAFO">En este campo alfanumérico de 30 posiciones,
-                      obligatorio, en el cual se registra el nombre asociado al
-                      código de cada compensador.</p> </td>
-                </tr>
-                <tr>
-                  <td class="titletable"><p
-                      class="SUBTITULO"><span>Depósito</p></td>
-                <td><p class="PARRAFO">Campo que posee lista de valores adjunta de la que debe
-                    seleccionarse entre Si o No la aplicación debe
-                    generar los depósitos a las cuentas de los
-                    establecimientos.</p> </td>
+          <table>
+            <tr>
+              <td class="titletable"><p
+                  class="SUBTITULO"><span>Código</span> compensador
+                </p></td>
+              <td><p class="PARRAFO">Campo numérico de dos dígitos,
+                  obligatorio, asignado a cada una de las entidades que
+                  desempe&ntilde;an el rol de cámara de
+                  compensación.</p> </td>
+            </tr>
+            <tr>
+              <td class="titletable"><p
+                  class="SUBTITULO"><span>Descripción</p></td>
+                <td><p class="PARRAFO">En este campo alfanumérico de 30
+                    posiciones,
+                    obligatorio, en el cual se registra el nombre asociado al
+                    código de cada compensador.</p> </td>
               </tr>
               <tr>
                 <td class="titletable"><p
-                    class="SUBTITULO"><span>Comisión</p></td>
-              <td><p class="PARRAFO">Campo que posee lista de valores adjunta que permite
-                  seleccionar Si la entidad contratará un <span
-                    lang="EN-US">outsourcing</span> para que realice la
-                  liquidación comisiones de Adquirencia pactadas con los
-                  establecimientos o No si la entidad liquida directamente
-                  estas. Si la selección es Si los campos que muestran
-                  los datos de las comisiones de <span
-                    lang="ES-CO">Adquirencia</span> en el tab cuentas de
-                  deposito de <a href="ESH_006B.html">Información de
-                    Establecimientos</a> no se muestran, por el contrario si la
-                  selección es No los campos que muestran dicha
-                  información son desplegados. </p> </td>
-            </tr>
-          </table>
-          <p class="PARRAFO"><span class="SUBTITULO">Actualizar:</span> Si el
-            usuario invoca la opción Actualizar se despliega un nuevo
-            formulario
-            en el cual los únicos campos modificables son:
-            Descripción, Afecta depósitos y Comisiones. </p>
+                    class="SUBTITULO"><span>Depósito</p></td>
+                  <td><p class="PARRAFO">
+                      Campo que posee lista de valores tipo combo, de la que
+                      debe seleccionarse entre Si o No, la aplicación debe
+                      generar los depósitos a las cuentas de los
+                      establecimientos.</p> </td>
+                </tr>
 
-          <p class="TITLE"><img src="../img/NUH_054B2.PNG"></p>
-        </div>
-      </section>
-      <script src="../js/menu.js"></script>
+              </table>
+              <p class="PARRAFO"><span class="SUBTITULO">Actualizar:</span> Al
+                activar ese enlace se despliega un nuevo formulario, en el cual
+                los únicos campos modificables son: Descripción y Afecta
+                Depósitos: </p>
 
-      <div id="footerContainer"></div>
-      <script>
+              <p class="TITLE"><img src="../img/NUH_054B2.PNG"></p>
+            </div>
+          </section>
+          <script src="../js/menu.js"></script>
+
+          <div id="footerContainer"></div>
+          <script>
   fetch('footer.html')
     .then(response => response.text())
     .then(html => {
       document.getElementById('footerContainer').innerHTML = html;
     });
 </script>
-    </body>
+        </body>
 
-  </html>
+      </html>

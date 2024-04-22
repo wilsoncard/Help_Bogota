@@ -1,25 +1,25 @@
 <!DOCTYPE html>
 <html lang="es">
 
-<head>
+  <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>BANKBU®</title>
     <link rel="stylesheet" href="../css/pages.css">
     <link rel="stylesheet" href="../css/style.css">
- <link rel="icon" href="../img/ACQUIRER-logo.JPG" type="image/x-icon">
-</head>
+    <link rel="icon" href="../img/ACQUIRER-logo.JPG" type="image/x-icon">
+  </head>
 
-<body>
+  <body>
 
     <header>
-        <img class="logo" src="../img/logoBankbu_.PNG" alt="Logo de Mi Empresa">
-        <div id="menuBtn">
-            <img class="TITLE"  src= "../img/menu.PNG" alt="Botón de Menú ">
-        </div>
+      <img class="logo" src="../img/logoBankbu_.PNG" alt="Logo de Mi Empresa">
+      <div id="menuBtn">
+        <img class="TITLE" src="../img/menu.PNG" alt="Botón de Menú ">
+      </div>
     </header>
-      <div id="menuContainer"></div>
-  <script>
+    <div id="menuContainer"></div>
+    <script>
     fetch('menu.html')
       .then(response => response.text())
       .then(html => {
@@ -28,51 +28,65 @@
   </script>
 
     <section>
-        <div> 
-            
-                    <p  class="TITLE">Tipos de cobro </p>
-                    
-            <p class="PARRAFO">La principal forma de diferenciar las distintas clases de cobro a realizar a los deudores consiste en definir tantas categorías como requiera la entidad y/o la casa de cobranza. Esta forma o pantalla permite tanto la consulta como la parametrización de los tipos de cobro.</p>
-            <p class="PARRAFO">El formulario contiene las opciones Actualizar, Eliminar, 
-            y Adicionar.</p>
-            <p class="TITLE"><img src="../img/CCF_002B.PNG"616" height="290"></p>
-            
-            <p  class="PARRAFO"><span class="SUBTITULO">Adicionar:</span>  Si 
-              el usuario invoca la opción Adicionar se despliega un formulario con 
-              los siguientes campos<span >:</p>
-            <p class="TITLE"><img src="../img/CCF_002B1.PNG"422" height="113"></p>
-            
-            <table>
-              <tr>
-                <td class="titletable"  ><p class="SUBTITULO"><span ><span >Código</p></td>
-                <td><p class="PARRAFO">Campo   alfanumérico de 3 posiciones, obligatorio, asignado a cada uno de los distintos   tipos de cobro que la entidad defina.</p>      
-                </td>
-              </tr>
-              <tr>
-                <td class="titletable"><p class="SUBTITULO"><span >Descripción</p></td>
-                <td><p class="PARRAFO">En este campo   alfanumérico de 50 posiciones, obligatorio, se registra el nombre o descriptivo   asociado al código de cada tipo de cobro.</p>      
-                </td>
-              </tr>
-              <tr>
-                <td class="titletable"><p class="SUBTITULO"><span >Genera </span>honorarios</p></td>
-                <td><p class="PARRAFO">Lista de valores con Sí y No en la que selecciona una opción según el caso. </p>      </td>
-              </tr>
-            </table>
-            
-            <p class="PARRAFO"><span class="SUBTITULO">Actualizar:</span>  Si el usuario 
-              invoca la opción Actualizar se despliega un nuevo formulario en cual 
-              los únicos campos modificables son los siguientes:</p>
-            <p class="TITLE"><img src="../img/CCF_002B2.PNG"422" height="113"></p>
-            
-        </section>
-    <script src="../js/menu.js"></script>
-</body>
-<div id="footerContainer"></div>
-<script>
+      <div>
+
+        <p class="TITLE">Tipos de cobro </p>
+
+        <p class="PARRAFO">La principal forma de diferenciar las distintas
+          clases de cobro a realizar a los deudores consiste en definir tantas
+          categorías como requiera la entidad y/o la casa de cobranza. Esta
+          forma o pantalla permite tanto la consulta como la parametrización de
+          los tipos de cobro.</p>
+        <p class="PARRAFO">El formulario contiene los enlaces: Actualizar,Eliminar y Adicionar </p>
+        <p class="TITLE"><img src="../img/CCF_002B.PNG"></p>
+
+        <p class="PARRAFO"><span class="SUBTITULO">Adicionar:</span> Si
+          el usuario invoca la opción Adicionar se despliega un formulario con
+          los siguientes campos<span>:</p>
+          <p class="TITLE"><img src="../img/CCF_002B1.PNG"></p>
+
+          <table>
+            <tr>
+              <td class="titletable"><p
+                  class="SUBTITULO"><span><span>Código</p></td>
+                  <td><p class="PARRAFO">Campo alfanumérico de 3 posiciones,
+                      obligatorio, asignado a cada uno de los distintos tipos de
+                      cobro que la entidad defina.</p>
+                  </td>
+                </tr>
+                <tr>
+                  <td class="titletable"><p
+                      class="SUBTITULO"><span>Descripción</p></td>
+                    <td><p class="PARRAFO">En este campo alfanumérico de 50
+                        posiciones, obligatorio, se registra el nombre o
+                        descriptivo asociado al código de cada tipo de
+                        cobro.</p>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td class="titletable"><p class="SUBTITULO"><span>Genera
+                        </span>honorarios</p></td>
+                    <td><p class="PARRAFO">Lista de valores con Sí y No en la
+                        que selecciona una opción según el caso. </p> </td>
+                  </tr>
+                </table>
+
+                <p class="PARRAFO"><span class="SUBTITULO">Actualizar:</span> Si
+                  el usuario
+                  invoca la opción Actualizar se despliega un formulario
+                  en cual
+                  los únicos campos modificables son los siguientes:</p>
+                <p class="TITLE"><img src="../img/CCF_002B2.PNG"></p>
+
+              </section>
+              <script src="../js/menu.js"></script>
+            </body>
+            <div id="footerContainer"></div>
+            <script>
   fetch('footer.html')
     .then(response => response.text())
     .then(html => {
       document.getElementById('footerContainer').innerHTML = html;
     });
 </script>
-</html>
+          </html>

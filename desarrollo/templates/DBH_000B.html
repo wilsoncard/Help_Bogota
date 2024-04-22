@@ -1,25 +1,25 @@
 <!DOCTYPE html>
 <html lang="es">
 
-<head>
+  <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>BANKBU®</title>
     <link rel="stylesheet" href="../css/pages.css">
     <link rel="stylesheet" href="../css/style.css">
- <link rel="icon" href="../img/ACQUIRER-logo.JPG" type="image/x-icon">
-</head>
+    <link rel="icon" href="../img/ACQUIRER-logo.JPG" type="image/x-icon">
+  </head>
 
-<body>
+  <body>
 
     <header>
-        <img class="logo" src="../img/logoBankbu_.PNG" alt="Logo de Mi Empresa">
-        <div id="menuBtn">
-            <img class="TITLE"  src= "../img/menu.PNG" alt="Botón de Menú ">
-        </div>
+      <img class="logo" src="../img/logoBankbu_.PNG" alt="Logo de Mi Empresa">
+      <div id="menuBtn">
+        <img class="TITLE" src="../img/menu.PNG" alt="Botón de Menú ">
+      </div>
     </header>
-      <div id="menuContainer"></div>
-  <script>
+    <div id="menuContainer"></div>
+    <script>
     fetch('menu.html')
       .then(response => response.text())
       .then(html => {
@@ -28,158 +28,190 @@
   </script>
 
     <section>
-        <div id="layer" >
-            <div>
-                <div>
-                  <p  class="TITLE">Tarjeta débito </p>
-                </div>
-                <p  ><span class="PARRAFO">En este menú </span><span class="PARRAFO"> se despliegan todas las opciones que permiten 
-                  a la entidad efectuar la parametrización requerida para el manejo de 
-                  las tarjetas débito y que permite implementar la funcionalidad multicuenta 
-                  gracias a la cual es posible asociar a una misma tarjeta varias cuentas de 
-                  ahorros o corrientes, permiti</span><span class="PARRAFO">endo categorizarlas como principales o secundarias. 
-                    El servicio utiliza o se sirve de algunas funcionalidades del sistema contenidas 
-                en el núcleo y el servicio de plásticos. </p>
-                <p  >El menú se encuentra estructurado en 
-                  6 grupos que contienen las opciones que le permiten al usuario ingresar a 
-                cada uno de los diferentes formularios de la siguiente manera:</p>
-                <p  ></p>
-                <p class="PARRAFO">Productos: Las opciones aquí 
-                  contenidas le permiten a la entidad la definición de los bines débito, 
-                  los segmentos y grupos de afinidad que van a ser utilizados para la conformación 
-                  de los distintos productos débito a ofrecer a sus clientes. Adicionalmente, 
-                  permite hacer la homologación de productos débito definidos 
-                  por la entidad en otros sistemas diferentes, con el fin que puedan ser administrados 
-                por <span>BANKBU<sup>&reg;</sup></span>, y contiene la opción en donde se definen los programas comerciales 
-                  que se asocian posteriormente a los productos débito y permiten otorgarle 
-                  al cliente algunos beneficions adicionales relacionados principalmente con 
-                  la disminución porcentual en el valor de la cuota de manejo por determinada 
-                cantidad de periodos.</p>
-                <ul class="ocultar">
-                  <li >
-                    <div><a href="DBH_034B.html" >Definición 
-                      de bines</a></div>
-                  </li>
-                  <li>
-                    <div><a href="DBH_018B.html" >Definición 
-                      de productos</a></div>
-                  </li>
-                  <li>
-                    <div><a href="DBH_003B.html"  > Homologación 
-                      de productos débito</a></div>
-                  </li>
-                  <li class="PARRAFO">
-                    <div><a href="DBH_039B.html"  >Programas comerciales</a></div>
-                  </li>
-                </ul>
-              
-                <p >Solicitudes del cliente: 
-                  Contiene las opciones en las cuales la entidad parametriza los diferentes 
-                  tipos de solicitudes que son aplicables a sus productos débito y adicionalmente 
-                  permite el ingreso de las solicitudes de nuevo débito para los clientes 
-                  de la entidad de manera individual así como la generación de 
-                  solicitudes másivas con destino las sucursales. </p>
-                <ul>
-                  <li>
-                    <div><a href="DBH_019B.html" >Parámetros de solicitudes 
-                    débito </a></div>
-                  </li>
-                  <li>
-                    <div><a href="DBH_019B1.html" >Parámetros solicitudes por 
-                    producto</a></div>
-                  </li>
-                  <li>
-                    <div><a href="DBH_032B.html" >Ingreso de solicitudes</a></div>
-                  </li>
-                  <li>
-                    <div><a href="DBH_040B.html" >Solicitudes por etapa </a></div>
-                  </li>
-                  <li>
-                    <div><a href="DBH_019B.html" ></a><a href="DBH_002B.html" >Solicitudes masivas</a></div>
-                  </li>
-                  <li>
-                    <div><a href="DBH_024B.html" ></a><a href="DBH_041B.html" >Consulta de solicitudes</a></div>
-                  </li>
-                </ul>
-         
-                <p class="PARRAFO"><span class="SUBTITULO">Servicio al cliente:</span> Este 
-                  bloque del menú contiene la opción para consulta de clientes 
-                  a partir de la cual se pueden consultar los datos de del cliente y la información 
-                  de todas sus tarjetas débito que posea con la entidad. Adicionalmente, muestra las opciones desde las 
-                  cuales se hace el ingreso de las solicitudes de reposición, renovación 
-                  y reexpedición de tarjetas débito, la generación de las 
-                  novedades para modificar información de las tarjetas y la administración 
-                  de estas novedades. En este bloque se incluye 
-                también la renovación masiva de tarjetas débito.</p>
-                <ul class="ocultar">
-                  <li >
-                    <div><a href="DBH_036B.html"  >Consulta de clientes</a></div>
-                  </li>
-                  <li>
-                    <div><a href="DBH_031B.html"  > Actualización 
-                      de solicitudes</a></div>
-                  </li>
-                  <li>
-                    <div><a href="DBH_020B.html"  >Generación 
-                      de novedades</a></div>
-                  </li>
-                  <li>
-                    <div><a href="DBH_033B.html"  >Administración 
-                      de novedades</a></div>
-                  </li>
-                  <li>
-                    <div><a href="DBH_024B.html" >Renovación masiva de tarjetas</a></div>
-                  </li>
-                </ul>
+      <div>
 
-                <p >Transaccionalidad: Este submenú 
-                  contiene todas las opciones que le permiten a la entidad administrar lo relacionado 
-                  con el movimiento enviado a pendientes por no haber superado las validaciones 
-                  correspondientes, parametrizar las transacciones de empresa que se van a utilizar 
-                  para identificar las transacciones hechas con productos débito, definir 
-                  los parámetros que van a permitir conciliar o cruzar la información 
-                  de las transacciones cargadas contra las autorizaciones, consultar las autorizaciones 
-                  otorgadas por utilizaciones de productos débito y la captura de transacciones 
-                por parte de las oficinas.</p>
-                <ul>
-                  <li>
-                    <div><a href="DBH_026B.html" >Parámetros 
-                    de conciliación</a></div>
-                  </li>
-                  <li class="ocultar">
-                    <div><a href="DBH_017B.html" >Transacciones por 
-                    entidad</a></div>
-                  </li>
-                  <li class="ocultar">
-                    <div><a href="DBH_037B.html" >Captura movimiento 
-                    de oficinas</a></div>
-                  </li>
-                  <li class="ocultar">
-                    <div><span class="PARRAFO"><a href="DBH_043.html" >Consulta global de intercambio</a></span></div>
-                  </li>
-                  <li class="ocultar">
-                    <div><a href="DBH_025B.html" >Consulta de autorizaciones</a></div>
-                  </li>
-                  <li class="ocultar">
-                    <div><span class="PARRAFO"><a href="DBH_042B.html" >Consulta cargue de autorizaciones</a></span></div>
-                  </li>
-                  <li class="ocultar">
-                    <div><a href="DBH_023B.html"  >Pendientes</a></div>
-                  </li>
-                  <li class="ocultar">
-                    <div><a href="DBH_023B1.html" >Pendientes retirados</a></div>
-                  </li>
-                </ul>
+        <p class="TITLE">Tarjeta débito </p>
 
-    </section>
-    <script src="../js/menu.js"></script>
-</body>
-<div id="footerContainer"></div>
-<script>
+        <p><span class="PARRAFO">En este menú </span><span class="PARRAFO"> se
+            despliegan todas las opciones que permiten
+            a la entidad efectuar la parametrización requerida para el manejo de
+            las tarjetas débito y que permite implementar la funcionalidad
+            multicuenta
+            gracias a la cual es posible asociar a una misma tarjeta varias
+            cuentas de
+            ahorros o corrientes, permiti</span><span class="PARRAFO">endo
+            categorizarlas como principales o secundarias.
+            El servicio utiliza o se sirve de algunas funcionalidades del
+            sistema contenidas
+            en el núcleo y el servicio de plásticos. </p>
+          <p>El menú se encuentra estructurado en
+            6 grupos que contienen las opciones que le permiten al usuario
+            ingresar a
+            cada uno de los diferentes formularios de la siguiente manera:</p>
+          <p></p>
+          <p class="PARRAFO">Productos: Las opciones aquí
+            contenidas le permiten a la entidad la definición de los bines
+            débito,
+            los segmentos y grupos de afinidad que van a ser utilizados para la
+            conformación
+            de los distintos productos débito a ofrecer a sus clientes.
+            Adicionalmente,
+            permite hacer la homologación de productos débito definidos
+            por la entidad en otros sistemas diferentes, con el fin que puedan
+            ser administrados
+            por <span>BANKBU<sup>&reg;</sup></span>, y contiene la opción en
+            donde se definen los programas comerciales
+            que se asocian posteriormente a los productos débito y permiten
+            otorgarle
+            al cliente algunos beneficions adicionales relacionados
+            principalmente con
+            la disminución porcentual en el valor de la cuota de manejo por
+            determinada
+            cantidad de periodos.</p>
+          <ul class="ocultar">
+            <li>
+              <div><a href="DBH_034B.html">Definición
+                  de bines</a></div>
+            </li>
+            <li>
+              <div><a href="DBH_018B.html">Definición
+                  de productos</a></div>
+            </li>
+            <li>
+              <div><a href="DBH_003B.html"> Homologación
+                  de productos débito</a></div>
+            </li>
+            <li class="PARRAFO">
+              <div><a href="DBH_039B.html">Programas comerciales</a></div>
+            </li>
+          </ul>
+
+          <p>Solicitudes del cliente:
+            contiene los enlaces:en las cuales la entidad parametriza los
+            diferentes
+            tipos de solicitudes que son aplicables a sus productos débito y
+            adicionalmente
+            permite el ingreso de las solicitudes de nuevo débito para los
+            clientes
+            de la entidad de manera individual así como la generación de
+            solicitudes másivas con destino las sucursales. </p>
+          <ul>
+            <li>
+              <div><a href="DBH_019B.html">Parámetros de solicitudes
+                  débito </a></div>
+            </li>
+            <li>
+              <div><a href="DBH_019B1.html">Parámetros solicitudes por
+                  producto</a></div>
+            </li>
+            <li>
+              <div><a href="DBH_032B.html">Ingreso de solicitudes</a></div>
+            </li>
+            <li>
+              <div><a href="DBH_040B.html">Solicitudes por etapa </a></div>
+            </li>
+            <li>
+              <div><a href="DBH_019B.html"></a><a
+                  href="DBH_002B.html">Solicitudes masivas</a></div>
+            </li>
+            <li>
+              <div><a href="DBH_024B.html"></a><a href="DBH_041B.html">Consulta
+                  de solicitudes</a></div>
+            </li>
+          </ul>
+
+          <p class="PARRAFO"><span class="SUBTITULO">Servicio al cliente:</span>
+            Este
+            bloque del menú contiene la opción para consulta de clientes
+            a partir de la cual se pueden consultar los datos de del cliente y
+            la información
+            de todas sus tarjetas débito que posea con la entidad.
+            Adicionalmente, muestra las opciones desde las
+            cuales se hace el ingreso de las solicitudes de reposición,
+            renovación
+            y reexpedición de tarjetas débito, la generación de las
+            novedades para modificar información de las tarjetas y la
+            administración
+            de estas novedades. En este bloque se incluye
+            también la renovación masiva de tarjetas débito.</p>
+          <ul class="ocultar">
+            <li>
+              <div><a href="DBH_036B.html">Consulta de clientes</a></div>
+            </li>
+            <li>
+              <div><a href="DBH_031B.html"> Actualización
+                  de solicitudes</a></div>
+            </li>
+            <li>
+              <div><a href="DBH_020B.html">Generación
+                  de novedades</a></div>
+            </li>
+            <li>
+              <div><a href="DBH_033B.html">Administración
+                  de novedades</a></div>
+            </li>
+            <li>
+              <div><a href="DBH_024B.html">Renovación masiva de
+                  tarjetas</a></div>
+            </li>
+          </ul>
+
+          <p>Transaccionalidad: Este submenú
+            contiene todas las opciones que le permiten a la entidad administrar
+            lo relacionado
+            con el movimiento enviado a pendientes por no haber superado las
+            validaciones
+            correspondientes, parametrizar las transacciones de empresa que se
+            van a utilizar
+            para identificar las transacciones hechas con productos débito,
+            definir
+            los parámetros que van a permitir conciliar o cruzar la información
+            de las transacciones cargadas contra las autorizaciones, consultar
+            las autorizaciones
+            otorgadas por utilizaciones de productos débito y la captura de
+            transacciones
+            por parte de las oficinas.</p>
+          <ul>
+            <li>
+              <div><a href="DBH_026B.html">Parámetros
+                  de conciliación</a></div>
+            </li>
+            <li class="ocultar">
+              <div><a href="DBH_017B.html">Transacciones por
+                  entidad</a></div>
+            </li>
+            <li class="ocultar">
+              <div><a href="DBH_037B.html">Captura movimiento
+                  de oficinas</a></div>
+            </li>
+            <li class="ocultar">
+              <div><span class="PARRAFO"><a href="DBH_043.html">Consulta global
+                    de intercambio</a></span></div>
+            </li>
+            <li class="ocultar">
+              <div><a href="DBH_025B.html">Consulta de autorizaciones</a></div>
+            </li>
+            <li class="ocultar">
+              <div><span class="PARRAFO"><a href="DBH_042B.html">Consulta cargue
+                    de autorizaciones</a></span></div>
+            </li>
+            <li class="ocultar">
+              <div><a href="DBH_023B.html">Pendientes</a></div>
+            </li>
+            <li class="ocultar">
+              <div><a href="DBH_023B1.html">Pendientes retirados</a></div>
+            </li>
+          </ul>
+
+        </section>
+        <script src="../js/menu.js"></script>
+      </body>
+      <div id="footerContainer"></div>
+      <script>
   fetch('footer.html')
     .then(response => response.text())
     .then(html => {
       document.getElementById('footerContainer').innerHTML = html;
     });
 </script>
-</html>
+    </html>

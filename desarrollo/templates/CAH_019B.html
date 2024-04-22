@@ -1,25 +1,25 @@
 <!DOCTYPE html>
 <html lang="es">
 
-<head>
+  <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>BANKBU®</title>
     <link rel="stylesheet" href="../css/pages.css">
     <link rel="stylesheet" href="../css/style.css">
- <link rel="icon" href="../img/ACQUIRER-logo.JPG" type="image/x-icon">
-</head>
+    <link rel="icon" href="../img/ACQUIRER-logo.JPG" type="image/x-icon">
+  </head>
 
-<body>
+  <body>
 
     <header>
-        <img class="logo" src="../img/logoBankbu_.PNG" alt="Logo de Mi Empresa">
-        <div id="menuBtn">
-            <img class="TITLE"  src= "../img/menu.PNG" alt="Botón de Menú ">
-        </div>
+      <img class="logo" src="../img/logoBankbu_.PNG" alt="Logo de Mi Empresa">
+      <div id="menuBtn">
+        <img class="TITLE" src="../img/menu.PNG" alt="Botón de Menú ">
+      </div>
     </header>
-      <div id="menuContainer"></div>
-  <script>
+    <div id="menuContainer"></div>
+    <script>
     fetch('menu.html')
       .then(response => response.text())
       .then(html => {
@@ -28,99 +28,119 @@
   </script>
 
     <section>
-        <div> 
-            
-                    <p  class="TITLE">Desbloqueo de tarjetas refinanciadas</p>
-                    
-            <p class="PARRAFO">Mediante esta función se facilita la labor de levantamiento 
-              del bloqueo de refinanciada sobre aquellas tarjetas que han transitado por 
-              dicho estado, acorde a las políticas que sobre el particular posea 
-              la entidad.</p>
-            <p class="PARRAFO"><span class="SUBTITULO">Filtro:</span>  El formulario cuenta 
-              con un filtro inicial de búsqueda, necesario para la consulta de la 
-              información:</p>
-            <p class="TITLE"><img src="../img/CAF_019B1.PNG"></p>
-           
-            <table>
-              <tr> 
-                <td class="titletable"><p class="SUBTITULO"><span >Número 
-                    tarjeta </p></td>
-                <td><p class="PARRAFO">El 
-                    campo número tarjeta admite cualquier dato alfanumérico 
-                    de máximo 23 caracteres.</p></td>
-              </tr>
-            </table>
-           
-            <p class="PARRAFO">Por defecto, el formulario muestra todos los registros de tarjetas
-               que ya tienen el bloqueo J REDIFERIDA.  En la parte inferior se cuenta con el botón
-                <a href="#Desbloquear" title="Desbloquear todas las tarjetas" target="_self" >
-                  Desbloquear 
-              todas las tarjetas</a>. Sin embargo, se cuenta con un filtro para buscar una tarjeta en particular.</p>
-            <p class="TITLE"><img src="../img/CAF_019B.PNG"601" height="423"></p>
-            
-            <table>
-              <tr> 
-                <td class="titletable"><p class="SUBTITULO">Número 
-                    de tarjeta</p></td>
-                <td><p class="PARRAFO">Muestra el número de cada tarjeta que posee el bloqueo Reestructuración
-                   J REDIFERIDA.</p></td>
-              </tr>
-              <tr> 
-                <td class="titletable"><p class="SUBTITULO">Nombre 
-                    plástico </p></td>
-                <td><p class="PARRAFO">Corresponde al nombre del titular del producto asociada a al número de 
+      <div>
+
+        <p class="TITLE">Desbloqueo de tarjetas refinanciadas</p>
+
+        <p class="PARRAFO">Mediante esta función se facilita la labor de
+          levantamiento
+          del bloqueo de refinanciada sobre aquellas tarjetas que han transitado
+          por
+          dicho estado, acorde a las políticas que sobre el particular posea
+          la entidad.</p>
+        <p class="PARRAFO"><span class="SUBTITULO">Filtro:</span> El formulario
+          cuenta
+          con un filtro inicial de búsqueda, necesario para la consulta de la
+          información:</p>
+        <p class="TITLE"><img src="../img/CAF_019B1.PNG"></p>
+
+        <table>
+          <tr>
+            <td class="titletable"><p class="SUBTITULO"><span>Número
+                  tarjeta </p></td>
+              <td><p class="PARRAFO">El
+                  campo número tarjeta admite cualquier dato alfanumérico
+                  de máximo 23 caracteres.</p></td>
+            </tr>
+          </table>
+
+          <p class="PARRAFO">Por defecto, el formulario muestra todos los
+            registros de tarjetas
+            que ya tienen el bloqueo J REDIFERIDA. En la parte inferior se
+            cuenta con el botón
+            <a href="#Desbloquear" title="Desbloquear todas las tarjetas"
+              target="_self">
+              Desbloquear
+              todas las tarjetas</a>. Sin embargo, se cuenta con un filtro para
+            buscar una tarjeta en particular.</p>
+          <p class="TITLE"><img src="../img/CAF_019B.PNG"></p>
+
+          <table>
+            <tr>
+              <td class="titletable"><p class="SUBTITULO">Número
+                  de tarjeta</p></td>
+              <td><p class="PARRAFO">Muestra el número de cada tarjeta que posee
+                  el bloqueo Reestructuración
+                  J REDIFERIDA.</p></td>
+            </tr>
+            <tr>
+              <td class="titletable"><p class="SUBTITULO">Nombre
+                  plástico </p></td>
+              <td><p class="PARRAFO">Corresponde al nombre del titular del
+                  producto asociada a al número de
                   tarjeta anterior.</p></td>
-              </tr>
-              <tr> 
-                <td class="titletable"><p class="SUBTITULO">Tipo 
-                    tarjeta </p></td>
-                <td><p class="PARRAFO">Indica si la tarjeta corresponde a Principal, o adicionales 
+            </tr>
+            <tr>
+              <td class="titletable"><p class="SUBTITULO">Tipo
+                  tarjeta </p></td>
+              <td><p class="PARRAFO">Indica si la tarjeta corresponde a
+                  Principal, o adicionales
                   (Extendida o Amparada), si éstas últimas aplican.</p></td>
-              </tr>
-              <tr> 
-                <td class="titletable"><p class="SUBTITULO">Fecha 
-                    bloqueo </p></td>
-                <td><p class="PARRAFO">En formato YYYY-MM-DD ilustra el momento en que se le aplicó el bloqueo 
+            </tr>
+            <tr>
+              <td class="titletable"><p class="SUBTITULO">Fecha
+                  bloqueo </p></td>
+              <td><p class="PARRAFO">En formato YYYY-MM-DD ilustra el momento en
+                  que se le aplicó el bloqueo
                   Reestructuración J REDIFERIDA a la tarjeta.</p></td>
-              </tr>
-              <tr> 
-                <td class="titletable"><p class="SUBTITULO">Saldo</p></td>
-                <td><p class="PARRAFO">Muestra la sumatoria de lo adeudado en la tarjeta a la fecha en 
-                  que se le aplicó el bloqueo Reestructuración J REDIFERIDA.<p class="PARRAFO"></td>
-              </tr>
-              <tr> 
-                <td class="titletable"><p class="SUBTITULO">Seleccionar</p></td>
-                <td><p class="PARRAFO">En este campo la entidad selecciona aquellas tarjetas a las que 
-                  se les va a gestionar el desbloqueo Reestructuración J REDIFERIDA.</p></td>
-              </tr>
-            </table>
-           
-            <p class="PARRAFO">Si el usuario invoca el segundo paso del desbloqueo, se despliega 
-              el siguiente formulario en el cual sólo se muestran las tarjetas seleccionadas 
-              anteriormente.<span
-              ></p>
-              <p class="TITLE"><img src="../img/CAF_019B12.PNG"></p>
-            <p class="TITLE"><img src="../img/CAF_019B2.PNG"></p>
-            
-            <table>
-              <tr> 
-                <td><p  class="SUBTITULO"><img src="../img/CAF_019B3-Desbloquear%20todas.PNG"46" ></p></td>
-                <td><p class="PARRAFO"><a name="Desbloquear"></a>Desbloquear 
-                    todas las tarjetas: Al invocar este botón el sistema tiene 
-                    en cuenta el total de tarjetas encontradas en el formulario, sin importar 
-                    si están seleccionadas o no.</p></td>
-              </tr>
-            </table>
-            .
-        </section>
-    <script src="../js/menu.js"></script>
-</body>
-<div id="footerContainer"></div>
-<script>
+            </tr>
+            <tr>
+              <td class="titletable"><p class="SUBTITULO">Saldo</p></td>
+              <td><p class="PARRAFO">Muestra la sumatoria de lo adeudado en la
+                  tarjeta a la fecha en
+                  que se le aplicó el bloqueo Reestructuración J REDIFERIDA.<p
+                    class="PARRAFO"></td>
+                </tr>
+                <tr>
+                  <td class="titletable"><p
+                      class="SUBTITULO">Seleccionar</p></td>
+                  <td><p class="PARRAFO">En este campo la entidad selecciona
+                      aquellas tarjetas a las que
+                      se les va a gestionar el desbloqueo Reestructuración J
+                      REDIFERIDA.</p></td>
+                </tr>
+              </table>
+
+              <p class="PARRAFO">Si el usuario invoca el segundo paso del
+                desbloqueo, se despliega
+                el siguiente formulario en el cual sólo se muestran las tarjetas
+                seleccionadas
+                anteriormente.<span></p>
+                <p class="TITLE"><img src="../img/CAF_019B12.PNG"></p>
+                <p class="TITLE"><img src="../img/CAF_019B2.PNG"></p>
+
+                <table>
+                  <tr>
+                    <td><p class="SUBTITULO"><img
+                          src="../img/CAF_019B3-Desbloquear%20todas.PNG"46"></p></td>
+                    <td><p class="PARRAFO"><a name="Desbloquear"></a>Desbloquear
+                        todas las tarjetas: Al invocar este botón el sistema
+                        tiene
+                        en cuenta el total de tarjetas encontradas en el
+                        formulario, sin importar
+                        si están seleccionadas o no.</p></td>
+                  </tr>
+                </table>
+                
+              </section>
+              <script src="../js/menu.js"></script>
+            </body>
+            <div id="footerContainer"></div>
+            <script>
   fetch('footer.html')
     .then(response => response.text())
     .then(html => {
       document.getElementById('footerContainer').innerHTML = html;
     });
 </script>
-</html>
+          </html>

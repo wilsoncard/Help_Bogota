@@ -1,25 +1,25 @@
 <!DOCTYPE html>
 <html lang="es">
 
-<head>
+  <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>BANKBU®</title>
     <link rel="stylesheet" href="../css/pages.css">
     <link rel="stylesheet" href="../css/style.css">
- <link rel="icon" href="../img/ACQUIRER-logo.JPG" type="image/x-icon">
-</head>
+    <link rel="icon" href="../img/ACQUIRER-logo.JPG" type="image/x-icon">
+  </head>
 
-<body>
+  <body>
 
     <header>
-        <img class="logo" src="../img/logoBankbu_.PNG" alt="Logo de Mi Empresa">
-        <div id="menuBtn">
-            <img class="TITLE"  src= "../img/menu.PNG" alt="Botón de Menú ">
-        </div>
+      <img class="logo" src="../img/logoBankbu_.PNG" alt="Logo de Mi Empresa">
+      <div id="menuBtn">
+        <img class="TITLE" src="../img/menu.PNG" alt="Botón de Menú ">
+      </div>
     </header>
-      <div id="menuContainer"></div>
-  <script>
+    <div id="menuContainer"></div>
+    <script>
     fetch('menu.html')
       .then(response => response.text())
       .then(html => {
@@ -28,86 +28,101 @@
   </script>
 
     <section>
-        <div> 
-            
-                    <p  class="TITLE">Saldos contables</p>
-                  
-            <p  class="PARRAFO">En este formulario la entidad puede consultar 
-              la información detallada de los d&egrave;bitos, cr&egrave;ditos y saldos de llas diferentes cuentas contables para una fecha determinada.</p>
-            <p  class="PARRAFO">El formulario cuenta con un filtro que le permite al usuario digitar en formato YYYY-MM-DD la fecha para la cual se desea consultar la información de los saldos contables.</p>
-            <p class="TITLE"><img src="../img/CTF_002E4.PNG"226" ></p>
-            <p  class="PARRAFO">Una vez seleccionada la fecha y mediante el botón buscar, el formulario trae todos aquellos registros que coincidan con esa fecha de proceso.</p>
-            <p  class="PARRAFO"><img src="../img/CTF_002E5.PNG"762" height="445"></p>
-            
-            <p  class="TITLE">Descripción de campos</p>
-            <table>
-              <tr> 
-                <td class="titletable"  ><p class="SUBTITULO">Fecha proceso
-                    </p></td>
-                <td><p  class="PARRAFO">Campo que muestra en formato YYYY-MM-DD la fecha de proceso a la que corresponden los saldos contables desplegados en el formulario.</p></td>
-              </tr>
-              <tr> 
-                <td class="titletable"><p class="SUBTITULO">Código cuenta 
-                   
-                   
-                   
-                    </p></td>
-                <td><p  class="PARRAFO">En 
-                    este campo se muestra el código de la cuenta afectada contablemente 
-                    en la fecha de proceso
-                  </p></td>
-              </tr>
+      <div>
 
-              <tr> 
-                <td class="titletable" ><p class="SUBTITULO">Moneda
-                    </p></td>
-                <td><p  class="PARRAFO">Campo 
-                    que muestra la <a href="NUH_005B.html" >moneda</a> en la cual est&agrave;n denominados los diferentes conceptos de la cuenta.</p></td>
-              </tr>
+        <p class="TITLE">Saldos contables</p>
 
-              <tr> 
-                <td class="titletable" ><p class="SUBTITULO">Saldo anterior</p></td>
-                <td><p  class="PARRAFO">Este campo contiene el saldo con el cual terminó la cuenta en la fecha de proceso inmediatamente anterior a la fecha consultada.
-                  </p></td>
-              </tr>
+        <p class="PARRAFO">En este formulario la entidad puede consultar
+          la información detallada de los d&egrave;bitos, cr&egrave;ditos y
+          saldos de llas diferentes cuentas contables para una fecha
+          determinada.</p>
+        <p class="PARRAFO">El formulario cuenta con un filtro que le permite al
+          usuario digitar en formato YYYY-MM-DD la fecha para la cual se desea
+          consultar la información de los saldos contables.</p>
+        <p class="TITLE"><img src="../img/CTF_002E4.PNG"226"></p>
+        <p class="PARRAFO">Una vez seleccionada la fecha y mediante el botón
+          buscar, el formulario trae todos aquellos registros que coincidan con
+          esa fecha de proceso.</p>
+        <p class="PARRAFO"><img src="../img/CTF_002E5.PNG"762" height="445"></p>
 
-              <tr> 
-                <td class="titletable" ><p class="SUBTITULO">Movimiento 
-                    débito
-                    </p></td>
-                <td><p  class="PARRAFO">Campo 
-                    que muestra el valor total de los registros de naturaleza débito 
-                    aplicados a la cuenta en la fecha de proceso.
-                  </p></td>
-              </tr>
+        <p class="TITLE">Descripción de campos</p>
+        <table>
+          <tr>
+            <td class="titletable"><p class="SUBTITULO">Fecha proceso
+              </p></td>
+            <td><p class="PARRAFO">Campo que muestra en formato YYYY-MM-DD la
+                fecha de proceso a la que corresponden los saldos contables
+                desplegados en el formulario.</p></td>
+          </tr>
+          <tr>
+            <td class="titletable"><p class="SUBTITULO">Código cuenta
 
-              <tr> 
-                <td class="titletable"><p class="SUBTITULO">Movimiento 
-                    crédito
-                    </p></td>
-                <td><p  class="PARRAFO">Este 
-                    campo despliega el valor total de los registros de naturaleza crédito 
-                    aplicados a la cuenta en la fecha de proceso.</p></td>
-              </tr>
+              </p></td>
+            <td><p class="PARRAFO">En
+                este campo se muestra el código de la cuenta afectada
+                contablemente
+                en la fecha de proceso
+              </p></td>
+          </tr>
 
-              <tr> 
-                <td class="titletable"><p class="SUBTITULO">Ultimo saldo
-                    </p></td>
-                <td><p  class="PARRAFO">Campo 
-                      que muestra a partir del saldo anterior y las afectaciones de los movimientos d&egrave;bito y cr&egrave;dito que se le aplicaron, el saldo final con el cual cierra la cuenta para la fecha de proceso.
-                  </p></td>
-              </tr>
-            </table>
-           
-        </section>
-    <script src="../js/menu.js"></script>
-</body>
-<div id="footerContainer"></div>
-<script>
+          <tr>
+            <td class="titletable"><p class="SUBTITULO">Moneda
+              </p></td>
+            <td><p class="PARRAFO">Campo
+                que muestra la <a href="NUH_005B.html">moneda</a> en la cual
+                est&agrave;n denominados los diferentes conceptos de la
+                cuenta.</p></td>
+          </tr>
+
+          <tr>
+            <td class="titletable"><p class="SUBTITULO">Saldo anterior</p></td>
+            <td><p class="PARRAFO">Este campo contiene el saldo con el cual
+                terminó la cuenta en la fecha de proceso inmediatamente anterior
+                a la fecha consultada.
+              </p></td>
+          </tr>
+
+          <tr>
+            <td class="titletable"><p class="SUBTITULO">Movimiento
+                débito
+              </p></td>
+            <td><p class="PARRAFO">Campo
+                que muestra el valor total de los registros de naturaleza débito
+                aplicados a la cuenta en la fecha de proceso.
+              </p></td>
+          </tr>
+
+          <tr>
+            <td class="titletable"><p class="SUBTITULO">Movimiento
+                crédito
+              </p></td>
+            <td><p class="PARRAFO">Este
+                campo despliega el valor total de los registros de naturaleza
+                crédito
+                aplicados a la cuenta en la fecha de proceso.</p></td>
+          </tr>
+
+          <tr>
+            <td class="titletable"><p class="SUBTITULO">Ultimo saldo
+              </p></td>
+            <td><p class="PARRAFO">Campo
+                que muestra a partir del saldo anterior y las afectaciones de
+                los movimientos d&egrave;bito y cr&egrave;dito que se le
+                aplicaron, el saldo final con el cual cierra la cuenta para la
+                fecha de proceso.
+              </p></td>
+          </tr>
+        </table>
+
+      </section>
+      <script src="../js/menu.js"></script>
+    </body>
+    <div id="footerContainer"></div>
+    <script>
   fetch('footer.html')
     .then(response => response.text())
     .then(html => {
       document.getElementById('footerContainer').innerHTML = html;
     });
 </script>
-</html>
+  </html>

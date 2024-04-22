@@ -1,25 +1,25 @@
 <!DOCTYPE html>
 <html lang="es">
 
-<head>
+  <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>BANKBU®</title>
     <link rel="stylesheet" href="../css/pages.css">
     <link rel="stylesheet" href="../css/style.css">
- <link rel="icon" href="../img/ACQUIRER-logo.JPG" type="image/x-icon">
-</head>
+    <link rel="icon" href="../img/ACQUIRER-logo.JPG" type="image/x-icon">
+  </head>
 
-<body>
+  <body>
 
     <header>
-        <img class="logo" src="../img/logoBankbu_.PNG" alt="Logo de Mi Empresa">
-        <div id="menuBtn">
-            <img class="TITLE"  src= "../img/menu.PNG" alt="Botón de Menú ">
-        </div>
+      <img class="logo" src="../img/logoBankbu_.PNG" alt="Logo de Mi Empresa">
+      <div id="menuBtn">
+        <img class="TITLE" src="../img/menu.PNG" alt="Botón de Menú ">
+      </div>
     </header>
-      <div id="menuContainer"></div>
-  <script>
+    <div id="menuContainer"></div>
+    <script>
     fetch('menu.html')
       .then(response => response.text())
       .then(html => {
@@ -28,106 +28,126 @@
   </script>
 
     <section>
-        <div> 
-            <p  class="TITLE">Transacciones por empresa débito</p>
-                  
-            <p  class="PARRAFO">Mediante esta opción, la entidad puede 
-              definir las principales características de las transacciones internas 
-              y los conceptos bajo los cuales se efectuarán los registros contables 
-              y la información general para el cliente acerca de la operación 
-              con productos débito.</p>
-            <p  class="PARRAFO">Al ingresar la formulario se despliega un filtro en el que el usuario puede consultar la información por el código de la transacción, el nombre o el concepto de la misma. </p>
-           
-            <p class="TITLE"><img src="../img/DBF_017E.PNG"416" height="133"></p>
-            
-            <p  class="PARRAFO">Una vez ingresados los criterios mediante el botón buscar se muestran los registros que coincidan. Por defecto, al ingresar al formulario trae todos los registros existentes. </p>
-           
-            <p class="TITLE"><img src="../img/DBF_017E1.PNG"751" ></p>
+      <div>
+        <p class="TITLE">Transacciones por empresa débito</p>
 
-            <p  class="PARRAFO">El formulario cuenta con las opciones Actualizar, 
-              Eliminar, Adicionar y Detalle.</p>
-            
-            <p  class="PARRAFO"><span class="SUBTITULO">Adicionar:</span> 
-              si el usuario invoca la opción Adicionar, se despliega un 
-              nuevo formulario con los siguientes campos.</p>
-            <p class="TITLE"><img src="../img/DBF_017E2.PNG"411" height="249"></p>
-            
-            <p  class="TITLE">Descripción de campos</p>
-            <div> 
-              <table>
-                <tr> 
-                  <td class="titletable"><p class="SUBTITULO"><span >Código 
-                      y nombre</p></td>
-                  <td><p  class="PARRAFO">Campo 
-                      numérico de hasta cuatro dígitos, obligatorio, en el 
-                      que se registra el código de la transacción para productos 
-                      débito. Va acompa&ntilde;ado de un camapo alfanumérico 
-                      de 30 posiciones donde se registra el nombre o descripción 
-                      de la transacción.</p></td>
+        <p class="PARRAFO">Mediante esta opción, la entidad puede
+          definir las principales características de las transacciones internas
+          y los conceptos bajo los cuales se efectuarán los registros contables
+          y la información general para el cliente acerca de la operación
+          con productos débito.</p>
+        <p class="PARRAFO">Al ingresar la formulario se despliega un filtro en
+          el que el usuario puede consultar la información por el código de la
+          transacción, el nombre o el concepto de la misma. </p>
+
+        <p class="TITLE"><img src="../img/DBF_017E.PNG"416" height="133"></p>
+
+        <p class="PARRAFO">Una vez ingresados los criterios mediante el botón
+          buscar se muestran los registros que coincidan. Por defecto, al
+          ingresar al formulario trae todos los registros existentes. </p>
+
+        <p class="TITLE"><img src="../img/DBF_017E1.PNG"751"></p>
+
+        <p class="PARRAFO">El formulario cuenta con las opciones Actualizar,
+          Eliminar, Adicionar y Detalle.</p>
+
+        <p class="PARRAFO"><span class="SUBTITULO">Adicionar:</span>
+          Al activar ese enlace, se despliega un
+          nuevo formulario con los siguientes campos.</p>
+        <p class="TITLE"><img src="../img/DBF_017E2.PNG"411" height="249"></p>
+
+        <p class="TITLE">Descripción de campos</p>
+        <div>
+          <table>
+            <tr>
+              <td class="titletable"><p class="SUBTITULO"><span>Código
+                    y nombre</p></td>
+                <td><p class="PARRAFO">Campo
+                    numérico de hasta cuatro dígitos, obligatorio, en el
+                    que se registra el código de la transacción para productos
+                    débito. Va acompa&ntilde;ado de un camapo alfanumérico
+                    de 30 posiciones donde se registra el nombre o descripción
+                    de la transacción.</p></td>
+              </tr>
+              <tr>
+                <td class="titletable">
+                  <p class="SUBTITULO"><span>Naturaleza</p></td>
+                  <td><p class="PARRAFO">Este
+                      campo obligatorio tipo combo permite seleccionar entre
+                      Débito,
+                      Crédito o No aplica la clase o naturaleza contable del
+                      registro al cual pertenece la transacción, de acuerdo con
+                      la
+                      manera como debe afectar el saldo de la tarjeta
+                      débito.</p></td>
                 </tr>
-                <tr> 
-                  <td class="titletable" > 
-                    <p class="SUBTITULO"><span >Naturaleza</p></td>
-                  <td><p  class="PARRAFO">Este 
-                      campo obligatorio tipo combo permite seleccionar entre Débito, 
-                      Crédito o No aplica la clase o naturaleza contable del 
-                      registro al cual pertenece la transacción, de acuerdo con la 
-                      manera como debe afectar el saldo de la tarjeta débito.</p></td>
-                </tr>
-                <tr> 
-                  <td class="titletable" > 
-                    <p class="SUBTITULO"><span >Abreviatura 
+                <tr>
+                  <td class="titletable">
+                    <p class="SUBTITULO"><span>Abreviatura
                       </p></td>
-                  <td><p  class="PARRAFO">Campo 
-                      alfanumérico de hasta 10 caracteres, obligatorio, en el que 
-                      se registra un nombre corto para identificar la transacción 
-                      interna particularmente en las consultas o reportes impresos.</p></td>
-                </tr>
-                <tr> 
-                  <td class="titletable" > 
-                    <p class="SUBTITULO"><span >Tipo transacción</p></td>
-                  <td><p  class="PARRAFO">En 
-                      este campo obligatorio tipo combo se puede seleccionar entre Transacción 
-                      del sistema o Transacción del cliente para indicar 
-                      la manera como se originó la transacción</p></td>
-                </tr>
-                <tr> 
-                  <td class="titletable" > 
-                    <p class="SUBTITULO"><span >Concepto transacción</p></td>
-                  <td><p  class="PARRAFO">Campo 
-                      obligatorio con lista de valores de la que se selecciona el <a href="NUH_059B.html" >Concepto</a> 
-                      asociado con la transacción y que le indica al sistema la manera 
-                      cómo aparecerá la descripción de la transacción 
-                      en el extracto.</p></td>
-                </tr>
-                <tr> 
-                  <td> 
-                    <p class="SUBTITULO"><span >Moneda transacción</p></td>
-                  <td><p  class="PARRAFO">En 
-                      este campo obligatorio con lista de valores se selecciona la <a href="NUH_005B.html" >Moneda</a> 
-                      en que se encuentra expresado el valor de las transacciones alternas. 
-                      Se habilita dependiendo del valor ingresado en el campo anterior, cuando este corresponde a comisiones. 
-                    </p></td>
-                </tr>
-              </table>
-            </div>
-            
-            
-            <p  class="PARRAFO"><span class="SUBTITULO">Actualizar:</span> 
-              si el usuario selecciona un registro e invoca la opción Actualizar, 
-              se despliega un formulario en el cual el único campo NO modificable es el Código.</p>
-            <p class="TITLE"><img src="../img/DBF_017E3.PNG"411" height="250"></p>
+                    <td><p class="PARRAFO">Campo
+                        alfanumérico de hasta 10 caracteres, obligatorio, en el
+                        que
+                        se registra un nombre corto para identificar la
+                        transacción
+                        interna particularmente en las consultas o reportes
+                        impresos.</p></td>
+                  </tr>
+                  <tr>
+                    <td class="titletable">
+                      <p class="SUBTITULO"><span>Tipo transacción</p></td>
+                      <td><p class="PARRAFO">En
+                          este campo obligatorio tipo combo se puede seleccionar
+                          entre Transacción
+                          del sistema o Transacción del cliente para indicar
+                          la manera como se originó la transacción</p></td>
+                    </tr>
+                    <tr>
+                      <td class="titletable">
+                        <p class="SUBTITULO"><span>Concepto transacción</p></td>
+                        <td><p class="PARRAFO">Campo
+                            obligatorio con lista de valores de la que se
+                            selecciona el <a href="NUH_059B.html">Concepto</a>
+                            asociado con la transacción y que le indica al
+                            sistema la manera
+                            cómo aparecerá la descripción de la transacción
+                            en el extracto.</p></td>
+                      </tr>
+                      <tr>
+                        <td>
+                          <p class="SUBTITULO"><span>Moneda transacción</p></td>
+                          <td><p class="PARRAFO">En
+                              este campo obligatorio con lista de valores se
+                              selecciona la <a href="NUH_005B.html">Moneda</a>
+                              en que se encuentra expresado el valor de las
+                              transacciones alternas.
+                              Se habilita dependiendo del valor ingresado en el
+                              campo anterior, cuando este corresponde a
+                              comisiones.
+                            </p></td>
+                        </tr>
+                      </table>
+                    </div>
 
-            <div>
-    </section>
-    <script src="../js/menu.js"></script>
-</body>
-<div id="footerContainer"></div>
-<script>
+                    <p class="PARRAFO"><span
+                        class="SUBTITULO">Actualizar:</span>
+                      si el usuario selecciona un registro e invoca la opción
+                      Actualizar,
+                      se despliega un formulario en el cual el único campo NO
+                      modificable es el Código.</p>
+                    <p class="TITLE"><img src="../img/DBF_017E3.PNG"411"
+                        height="250"></p>
+
+                    <div>
+                    </section>
+                    <script src="../js/menu.js"></script>
+                  </body>
+                  <div id="footerContainer"></div>
+                  <script>
   fetch('footer.html')
     .then(response => response.text())
     .then(html => {
       document.getElementById('footerContainer').innerHTML = html;
     });
 </script>
-</html>
+                </html>

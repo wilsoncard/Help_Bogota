@@ -1,26 +1,27 @@
 <!DOCTYPE html>
 <html lang="es">
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>BANKBU®</title>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>BANKBU®</title>
 
-    <link rel="stylesheet" href="../css/pages.css">
-    <link rel="stylesheet" href="../css/style.css">
- <link rel="icon" href="../img/ACQUIRER-logo.JPG" type="image/x-icon">
-</head>
+        <link rel="stylesheet" href="../css/pages.css">
+        <link rel="stylesheet" href="../css/style.css">
+        <link rel="icon" href="../img/ACQUIRER-logo.JPG" type="image/x-icon">
+    </head>
 
-<body>
+    <body>
 
-    <header>
-        <img class="logo" src="../img/logoBankbu_.PNG" alt="Logo de Mi Empresa">
-        <div id="menuBtn">
-            <img class="TITLE"  src= "../img/menu.PNG" alt="Botón de Menú ">
-        </div>
-    </header>
-      <div id="menuContainer"></div>
-  <script>
+        <header>
+            <img class="logo" src="../img/logoBankbu_.PNG"
+                alt="Logo de Mi Empresa">
+            <div id="menuBtn">
+                <img class="TITLE" src="../img/menu.PNG" alt="Botón de Menú ">
+            </div>
+        </header>
+        <div id="menuContainer"></div>
+        <script>
     fetch('menu.html')
       .then(response => response.text())
       .then(html => {
@@ -28,185 +29,244 @@
       });
   </script>
 
-    <section>
-        <div>
-         
-            <p  class="TITLE">Promociones para colocación</p>
-                     
-            <p class="PARRAFO">La entidad posee a través de esta pantalla, la opción de especificar o definir programas
-                orientados a fomentar la colocación de productos en determinadas épocas del a&ntilde;o o
-                eventos especiales y a la vez, estimular el consumo o utilizaciones con esos productos
-                ofreciéndole a los clientes condiciones especiales de menores costos durante un número
-                limitado de periodos </p>
-            <p class="PARRAFO">El formulario contiene las opciones Actualizar, Eliminar,
-                Adicionar y Detalle.</p>
-            <p class="TITLE"><img src="../img/MEF_005B.PNG"564" height="319"></p>
-            
-            <p class="PARRAFO"><span class="SUBTITULO">Filtro:</span>  Se pueden realizar consultas a través
-                de las siguientes opciones: </p>
-            <p class="TITLE"><img src="../img/MEF_005B1.PNG"257" height="121"></p>
-            
-            <table>
-                <tr>
-                    <td>
-                        <p class="SUBTITULO"><span 
-        >Código</p>
-                    </td>
-                    <td>
-                        <p class="PARRAFO">Campo numérico de hasta 6 dígitos, en el que se registra el código
-                            asignado por la entidad por el que se desea filtrar. </p>
-                    </td>
-                </tr>
-                <tr>
-                    <td>
-                        <p class="SUBTITULO"><span 
-        >Promoción</p>
-                    </td>
-                    <td>
-                        <p class="PARRAFO">Campo alfanumérico de hasta 30 posiciones, en el que se filtra por el nombre o
-                            descripción asociado al código anterior.</p>
-                    </td>
-                </tr>
-            </table>
-            
-            <p  class="PARRAFO"><span class="SUBTITULO">Adicionar:</span>  Si el usuario invoca la
-                opción Adicionar se despliega un formulario con los siguientes campos<span 
-        >:</span> 
-            </p>
-            <p class="TITLE"><img src="../img/MEF_005B2.PNG"></p>
-            
-            <table>
-                <tr>
-                    <td class="titletable">
-                        <p class="SUBTITULO"><span 
-        >Código</p>
-                    </td>
-                    <td>
-                        <p class="PARRAFO">Campo numérico de hasta 6 dígitos, obligatorio, en el que se
-                            registra el código asignado por la entidad a cada una de las promociones a definir.
+        <section>
+            <div>
+
+                <p class="TITLE">Promociones para colocación</p>
+
+                <p class="PARRAFO">La entidad posee a través de esta pantalla,
+                    la opción de especificar o definir programas
+                    orientados a fomentar la colocación de productos en
+                    determinadas épocas del a&ntilde;o o
+                    eventos especiales y a la vez, estimular el consumo o
+                    utilizaciones con esos productos
+                    ofreciéndole a los clientes condiciones especiales de
+                    menores costos durante un número
+                    limitado de periodos </p>
+                <p class="PARRAFO">El formulario contiene los enlaces:
+                    Actualizar, Eliminar,
+                    Adicionar y Detalle.</p>
+                <p class="TITLE"><img src="../img/MEF_005B.PNG"></p>
+
+                <p class="PARRAFO"><span class="SUBTITULO">Filtro:</span> Se
+                    pueden realizar consultas a través
+                    de las siguientes opciones: </p>
+                <p class="TITLE"><img src="../img/MEF_005B1.PNG"></p>
+
+                <table>
+                    <tr>
+                        <td class="titletable">
+                            <p class="SUBTITULO"><span>Código</p>
+                            </td>
+                            <td>
+                                <p class="PARRAFO">Campo numérico de hasta 6
+                                    dígitos, en el que se registra el código
+                                    asignado por la entidad por el que se desea
+                                    filtrar. </p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="titletable">
+                                <p class="SUBTITULO"><span>Promoción</p>
+                                </td>
+                                <td>
+                                    <p class="PARRAFO">Campo alfanumérico de
+                                        hasta 30 posiciones, en el que se filtra
+                                        por el nombre o
+                                        descripción asociado al código
+                                        anterior.</p>
+                                </td>
+                            </tr>
+                        </table>
+
+                        <p class="PARRAFO"><span
+                                class="SUBTITULO">Adicionar:</span> Si el
+                            usuario invoca la
+                            opción Adicionar se despliega un formulario con los
+                            siguientes campos<span>:</span>
                         </p>
-                    </td>
-                </tr>
-                <tr>
-                    <td>
-                        <p class="SUBTITULO"><span 
-        ><span
-                                        >Promoción</span></p>
-                    </td>
-                    <td>
-                        <p class="PARRAFO">En este campo alfanumérico de hasta 30 posiciones, obligatorio, se
-                            registra el nombre o descripción asociado al código anterior.</p>
-                    </td>
-                </tr>
-                <tr>
-                    <td>
-                        <p class="SUBTITULO">Vigencia desde</p>
-                    </td>
-                    <td>
-                        <p class="PARRAFO">Campo en formato YYYY-MM-DD, obligatorio, en el que se registra la fecha de
-                            inicio de la promoción.</p>
-                    </td>
-                </tr>
-                <tr>
-                    <td>
-                        <p class="SUBTITULO">Vigencia hasta </p>
-                    </td>
-                    <td>
-                        <p class="PARRAFO">n este campo en formato YYYY-MM-DD, obligatorio, se registra la fecha en la
-                            cual termina la promoción.</p>
-                    </td>
-                </tr>
-                <tr>
-                    <td>
-                        <p class="SUBTITULO">% Cuota afiliación </p>
-                    </td>
-                    <td>
-                        <p class="PARRAFO" >Campo en el que la entidad se&ntilde;ala el valor porcentual a cobrar
-                                sobre la cuota de afiliación definida en la opción</span><span
-                                class="PARRAFO"><a href="MEH_002B.html">Productos</a>, </span> y que aplicará
-                            para los productos aprobados durante la vigencia del programa.</p>
-                    </td>
-                </tr>
-                <tr>
-                    <td>
-                        <p class="SUBTITULO">Periodos exención </p>
-                    </td>
-                    <td>
-                        <p class="PARRAFO">En este campo se registra el número de periodos (expresado en
-                            facturaciones) durante el cual se aplicará el beneficio definido en el campo
-                            anterior.</p>
-                    </td>
-                </tr>
-                <tr>
-                    <td>
-                        <p class="SUBTITULO">% Cuota manejo </p>
-                    </td>
-                    <td>
-                        <p class="PARRAFO">Campo en el que la entidad se&ntilde;ala el valor porcentual a cobrar sobre
-                            la cuota de manejo definida en la opción <a href="MEH_002B.html">Productos</a>,
-                            </span> y que aplicará para los productos aprobados durante la vigencia del programa.
-                        </p>
-                    </td>
-                </tr>
-                <tr>
-                    <td>
-                        <p class="SUBTITULO">Periodos exención </p>
-                    </td>
-                    <td>
-                        <p class="PARRAFO">En este campo se registra el número de periodos (expresado en
-                            facturaciones) durante el cual se aplicará el beneficio definido en el campo
-                            anterior.</p>
-                    </td>
-                </tr>
-                <tr>
-                    <td>
-                        <p class="SUBTITULO">% Cuota seguro </p>
-                    </td>
-                    <td>
-                        <p class="PARRAFO">Campo en el que la entidad se&ntilde;ala el valor porcentual a cobrar sobre
-                            la cuota de seguro definida en la opción <a href="MEH_002B.html">Productos</a>,
-                            </span> y que aplicará para los productos aprobados durante la vigencia del programa.
-                        </p>
-                    </td>
-                </tr>
-                <tr>
-                    <td>
-                        <p class="SUBTITULO">Periodos exención </p>
-                    </td>
-                    <td>
-                        <p class="PARRAFO">Permite registrar el número de periodos (expresado en facturaciones)
-                            durante el cual se aplicará el beneficio definido en el campo anterior.</p>
-                    </td>
-                </tr>
-                <tr>
-                    <td>
-                        <p class="SUBTITULO">% Cuota reposición </p>
-                    </td>
-                    <td>
-                        <p class="PARRAFO">En este campo la entidad define el valor porcentual a descontar sobre el
-                            costo de reposición definido en la opción <a
-                                href="MEH_002B.html">Productos</a>, </span> y que aplicará para los productos
-                            aprobados durante la vigencia de la promoción.</p>
-                    </td>
-                </tr>
-                <tr>
-                    <td>
-                        <p class="SUBTITULO">Periodos vigencia</p>
-                    </td>
-                    <td>
-                        <p class="PARRAFO">Una vez definido el porcentaje de descuento en el cobro del costo de
-                            reposición, en este campo la entidad determina durante cuantos períodos
-                            (expresado en facturaciones) tendrá validez ese descuento.</p>
-                    </td>
-                </tr>
-                <tr>
-                    <td>
-                        <p class="SUBTITULO">% Cuota reexpedición </p>
-                    </td>
-                    <td>
-                        <p class="PARRAFO">En este campo la entidad define el valor porcentual a descontar sobre el
-                            costo de reexpedición definido en la opción <a
-                                href="MEH_002B.html">Productos</a>, </span> y que aplicará para los productos
+                        <p class="TITLE"><img src="../img/MEF_005B2.PNG"></p>
+
+                        <table>
+                            <tr>
+                                <td class="titletable">
+                                    <p class="SUBTITULO"><span>Código</p>
+                                    </td>
+                                    <td>
+                                        <p class="PARRAFO">Campo numérico de
+                                            hasta 6 dígitos, obligatorio, en el
+                                            que se
+                                            registra el código asignado por la
+                                            entidad a cada una de las
+                                            promociones a definir.
+                                        </p>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="titletable">
+                                        <p
+                                            class="SUBTITULO"><span><span>Promoción</span></p>
+                                        </td>
+                                        <td>
+                                            <p class="PARRAFO">En este campo
+                                                alfanumérico de hasta 30
+                                                posiciones, obligatorio, se
+                                                registra el nombre o descripción
+                                                asociado al código anterior.</p>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="titletable">
+                                            <p class="SUBTITULO">Vigencia
+                                                desde</p>
+                                        </td>
+                                        <td>
+                                            <p class="PARRAFO">Campo en formato
+                                                YYYY-MM-DD, obligatorio, en el
+                                                que se registra la fecha de
+                                                inicio de la promoción.</p>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="titletable">
+                                            <p class="SUBTITULO">Vigencia hasta
+                                            </p>
+                                        </td>
+                                        <td>
+                                            <p class="PARRAFO">n este campo en
+                                                formato YYYY-MM-DD, obligatorio,
+                                                se registra la fecha en la
+                                                cual termina la promoción.</p>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="titletable">
+                                            <p class="SUBTITULO">% Cuota
+                                                afiliación </p>
+                                        </td>
+                                        <td>
+                                            <p class="PARRAFO">Campo en el que
+                                                la entidad se&ntilde;ala el
+                                                valor porcentual a cobrar
+                                                sobre la cuota de afiliación
+                                                definida en la
+                                                opción</span><span
+                                                class="PARRAFO"><a
+                                                    href="MEH_002B.html">Productos</a>,
+                                            </span> y que aplicará
+                                            para los productos aprobados durante
+                                            la vigencia del programa.</p>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="titletable">
+                                        <p class="SUBTITULO">Periodos exención
+                                        </p>
+                                    </td>
+                                    <td>
+                                        <p class="PARRAFO">En este campo se
+                                            registra el número de periodos
+                                            (expresado en
+                                            facturaciones) durante el cual se
+                                            aplicará el beneficio definido en el
+                                            campo
+                                            anterior.</p>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="titletable">
+                                        <p class="SUBTITULO">% Cuota manejo </p>
+                                    </td>
+                                    <td>
+                                        <p class="PARRAFO">Campo en el que la
+                                            entidad se&ntilde;ala el valor
+                                            porcentual a cobrar sobre
+                                            la cuota de manejo definida en la
+                                            opción <a
+                                                href="MEH_002B.html">Productos</a>,
+                                        </span> y que aplicará para los
+                                        productos aprobados durante la vigencia
+                                        del programa.
+                                    </p>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="titletable">
+                                    <p class="SUBTITULO">Periodos exención </p>
+                                </td>
+                                <td>
+                                    <p class="PARRAFO">En este campo se registra
+                                        el número de periodos (expresado en
+                                        facturaciones) durante el cual se
+                                        aplicará el beneficio definido en el
+                                        campo
+                                        anterior.</p>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="titletable">
+                                    <p class="SUBTITULO">% Cuota seguro </p>
+                                </td>
+                                <td>
+                                    <p class="PARRAFO">Campo en el que la
+                                        entidad se&ntilde;ala el valor
+                                        porcentual a cobrar sobre
+                                        la cuota de seguro definida en la opción
+                                        <a href="MEH_002B.html">Productos</a>,
+                                    </span> y que aplicará para los productos
+                                    aprobados durante la vigencia del programa.
+                                </p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="titletable">
+                                <p class="SUBTITULO">Periodos exención </p>
+                            </td>
+                            <td>
+                                <p class="PARRAFO">Permite registrar el número
+                                    de periodos (expresado en facturaciones)
+                                    durante el cual se aplicará el beneficio
+                                    definido en el campo anterior.</p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="titletable">
+                                <p class="SUBTITULO">% Cuota reposición </p>
+                            </td>
+                            <td>
+                                <p class="PARRAFO">En este campo la entidad
+                                    define el valor porcentual a descontar sobre
+                                    el
+                                    costo de reposición definido en la opción <a
+                                        href="MEH_002B.html">Productos</a>,
+                                </span> y que aplicará para los productos
+                                aprobados durante la vigencia de la
+                                promoción.</p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="titletable">
+                            <p class="SUBTITULO">Periodos vigencia</p>
+                        </td>
+                        <td>
+                            <p class="PARRAFO">Una vez definido el porcentaje de
+                                descuento en el cobro del costo de
+                                reposición, en este campo la entidad determina
+                                durante cuantos períodos
+                                (expresado en facturaciones) tendrá validez ese
+                                descuento.</p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="titletable">
+                            <p class="SUBTITULO">% Cuota reexpedición </p>
+                        </td>
+                        <td>
+                            <p class="PARRAFO">En este campo la entidad define
+                                el valor porcentual a descontar sobre el
+                                costo de reexpedición definido en la opción <a
+                                    href="MEH_002B.html">Productos</a>, </span>
+                            y que aplicará para los productos
                             aprobados durante la vigencia de la promoción.</p>
                     </td>
                 </tr>
@@ -214,73 +274,89 @@
                     <td class="titletable"><span class="SUBTITULO">Periodos
                             vigencia</span></td>
                     <td>
-                        <p class="PARRAFO">Una vez definido el porcentaje de descuento en el cobro del costo de
-                            reexpedición, en este campo la entidad determina durante cuantos períodos
-                            (expresado en facturaciones) tendrá validez ese descuento.</p>
+                        <p class="PARRAFO">Una vez definido el porcentaje de
+                            descuento en el cobro del costo de
+                            reexpedición, en este campo la entidad determina
+                            durante cuantos períodos
+                            (expresado en facturaciones) tendrá validez ese
+                            descuento.</p>
                     </td>
                 </tr>
                 <tr>
                     <td class="titletable"><span class="SUBTITULO">% Cuota
                             renovación </span></td>
                     <td>
-                        <p class="PARRAFO">En este campo la entidad define el valor porcentual a descontar sobre el
+                        <p class="PARRAFO">En este campo la entidad define el
+                            valor porcentual a descontar sobre el
                             costo de renovación definido en la opción <a
-                                href="MEH_002B.html">Productos</a>,</span>  y que aplicará para los productos
-                            aprobados durante la vigencia de la promoción.</p>
-                    </td>
-                </tr>
-                <tr>
-                    <td>
-                        <p class="SUBTITULO">Periodos vigencia</p>
-                    </td>
-                    <td>
-                        <p class="PARRAFO">Una vez definido el porcentaje de descuento en el cobro del costo de
-                            renovación, en este campo la entidad determina durante cuantos períodos
-                            (expresado en facturaciones) tendrá validez ese descuento.</p>
-                    </td>
-                </tr>
-                <tr>
-                    <td class="titletable"><span class="SUBTITULO">% Cuota
-                            dependiente</span></td>
-                    <td  class="PARRAFO">En este campos la entidad
-                        se&ntilde;ala el valor porcentual a descontar sobre las cuotas de afiliación, seguro y
-                        manejo de las tarjetas amparadas definidas en la opción <a
-                            href="MEH_002B.html">Productos</a>, y que aplicará para los productos aprobados
-                        durante la vigencia de la promoción.</td>
-                </tr>
-                <tr>
-                    <td class="titletable"><span class="SUBTITULO">Periodos
-                            vigencia</span></td>
-                    <td>
-                        <p class="PARRAFO">Una vez definido el porcentaje de descuento en el cobro de la cuota de
-                            afiliación, manejo y seguro de las tarjetas amparadas, en este campo la entidad
-                            determina el número de períodos (expresado en facturaciones) durante los
-                            cuales tendrá vigencia ese descuento.</p>
-                    </td>
-                </tr>
-            </table>
-            <p  class="PARRAFO"><span class="PARRAFO"><span class="SUBTITULO">Actualizar:</span> 
-                    Si el usuario invoca la opción Actualizar se despliega un nuevo formulario
-                    en el cual los únicos campos modificables son: Promoción, Vigencia desde, Vigencia
-                    hasta, % Cuota afiliación, </span> % Cuota manejo, % Cuota seguro, % Cuota reposición,
-                % Cuota reexpedición, % Cuota renovación, % Cuota dependiente; y los campos de Periodos de
-                exención y Periodos de vigencia.</p>
-            <p class="TITLE"><img src="../img/MEF_005B3.PNG"427" height="508"></p>
-           
-            <p class="PARRAFO"><span class="SUBTITULO">Detalle:</span>  Si el usuario invoca la opción Detalle se
-                despliega el siguiente formulario: <span 
-        >
-                    
-                </p>
-            <p class="TITLE"><img src="../img/MEF_005B4.PNG"427" height="258"></p>
-            
-            
-            
-    </section>
-    <script src="../js/menu.js"></script>
-</body>
-<div id="footerContainer"></div>
-<script>
+                                href="MEH_002B.html">Productos</a>,</span> y que
+                        aplicará para los productos
+                        aprobados durante la vigencia de la promoción.</p>
+                </td>
+            </tr>
+            <tr>
+                <td class="titletable">
+                    <p class="SUBTITULO">Periodos vigencia</p>
+                </td>
+                <td>
+                    <p class="PARRAFO">Una vez definido el porcentaje de
+                        descuento en el cobro del costo de
+                        renovación, en este campo la entidad determina durante
+                        cuantos períodos
+                        (expresado en facturaciones) tendrá validez ese
+                        descuento.</p>
+                </td>
+            </tr>
+            <tr>
+                <td class="titletable"><span class="SUBTITULO">% Cuota
+                        dependiente</span></td>
+                <td class="PARRAFO">En este campos la entidad
+                    se&ntilde;ala el valor porcentual a descontar sobre las
+                    cuotas de afiliación, seguro y
+                    manejo de las tarjetas amparadas definidas en la opción <a
+                        href="MEH_002B.html">Productos</a>, y que aplicará para
+                    los productos aprobados
+                    durante la vigencia de la promoción.</td>
+            </tr>
+            <tr>
+                <td class="titletable"><span class="SUBTITULO">Periodos
+                        vigencia</span></td>
+                <td>
+                    <p class="PARRAFO">Una vez definido el porcentaje de
+                        descuento en el cobro de la cuota de
+                        afiliación, manejo y seguro de las tarjetas amparadas,
+                        en este campo la entidad
+                        determina el número de períodos (expresado en
+                        facturaciones) durante los
+                        cuales tendrá vigencia ese descuento.</p>
+                </td>
+            </tr>
+        </table>
+        <p class="PARRAFO"><span class="PARRAFO"><span
+                    class="SUBTITULO">Actualizar:</span>
+                Al activar ese enlace se despliega un formulario
+                en el cual los únicos campos modificables son: Promoción,
+                Vigencia desde, Vigencia
+                hasta, % Cuota afiliación, </span> % Cuota manejo, % Cuota
+            seguro, % Cuota reposición,
+            % Cuota reexpedición, % Cuota renovación, % Cuota dependiente; y los
+            campos de Periodos de
+            exención y Periodos de vigencia.</p>
+        <p class="TITLE"><img src="../img/MEF_005B3.PNG"427" height="508"></p>
+
+        <p class="PARRAFO"><span class="SUBTITULO">Detalle:</span> Si el usuario
+            invoca la opción Detalle se
+            despliega el siguiente formulario: <span>
+
+            </p>
+            <p class="TITLE"><img src="../img/MEF_005B4.PNG"427"
+                    height="258"></p>
+
+        </section>
+        <script src="../js/menu.js"></script>
+    </body>
+    <div id="footerContainer"></div>
+    <script>
   fetch('footer.html')
     .then(response => response.text())
     .then(html => {

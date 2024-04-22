@@ -1,25 +1,25 @@
 <!DOCTYPE html>
 <html lang="es">
 
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>BANKBU®</title>
-  <link rel="stylesheet" href="../css/pages.css">
-  <link rel="stylesheet" href="../css/style.css">
-  <link rel="icon" href="../img/ACQUIRER-logo.JPG" type="image/x-icon">
-</head>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BANKBU®</title>
+    <link rel="stylesheet" href="../css/pages.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="icon" href="../img/ACQUIRER-logo.JPG" type="image/x-icon">
+  </head>
 
-<body>
+  <body>
 
-  <header>
-    <img class="logo" src="../img/logoBankbu_.PNG" alt="Logo de Mi Empresa">
-    <div id="menuBtn">
-      <img class="TITLE" src="../img/menu.PNG" alt="Botón de Menú ">
-    </div>
-  </header>
+    <header>
+      <img class="logo" src="../img/logoBankbu_.PNG" alt="Logo de Mi Empresa">
+      <div id="menuBtn">
+        <img class="TITLE" src="../img/menu.PNG" alt="Botón de Menú ">
+      </div>
+    </header>
     <div id="menuContainer"></div>
-  <script>
+    <script>
     fetch('menu.html')
       .then(response => response.text())
       .then(html => {
@@ -27,77 +27,92 @@
       });
   </script>
 
-  <section>
-    <div>
-      
-              <p class="TITLE">Campos del encabezado </p>
-
-
-      <p class="PARRAFO">Mediante esta opción se habilita la consulta y mantenimiento de la tabla en la cual se
-        almacenan los campos del encabezado de la transacción y el orden en que son enviados. Cada campo contiene
-        un nombre Técnico, un tipo, longitud, precisión (si es decimal), identificador y orden.</p>
-      <p class="PARRAFO">El formulario contiene las opciones Adicionar y Eliminar:
-      <p class="TITLE"><img src="../img/CHH_002B.PNG"></p>
-
-      <p class="PARRAFO">Adicionar:Si el usuario invoca la opción Adicionar, se despliega un
-        Asistente de dos pasos. En la primera página se registran y adicionan cada uno de los campos del
-        encabezado.</p>
-      <p class="TITLE"><img src="../img/CHH_002B1.PNG"></p>
-      <table>
-        <tr>
-          <td class="PARRAFO">
-            <p class="style9">Nombre:
-
-
-            </p>
-          </td>
-          <td class="PARRAFO">Campo obligatorio con lista de valores del cual se selecciona el campo de va a ser
-            registrado como campo del encabezado de la transacción.</td>
-        </tr>
-
-        <tr>
-          <td class="PARRAFO"><span class="style9">Tipo:</span></td>
-          <td>
-            <p class="PARRAFO">Este campo no modificable muestra el tipo del campo (carácter, decimal, entero o fecha) y
-              se llena automáticamente cuando se selecciona un registro de la lista de valores de campos.</p>
-          </td>
-        </tr>
-        <tr>
-          <td class="PARRAFO"><span class="style9">Longitud:</span></td>
-          <td class="PARRAFO">Este campo no modificable muestra la longitud del campo y se llena automáticamente
-            cuando se selecciona un registro de la lista de valores de campos..</td>
-        </tr>
-
-        <tr>
-          <td class="PARRAFO"><span class="style9">Precisión:</span></td>
-          <td class="PARRAFO">Este campo no modificable muestra la precisión del campo (si es de tipo decimal) y
-            se llena automáticamente cuando se selecciona un registro de la lista de valores de campos.</td>
-        </tr>
-      </table>
-      <table>
-        <tr>
-          <td class="PARRAFO"><span >Identificador: </span></td>
-          <td>
-            <p class="PARRAFO">Campo obligatorio que contiene los valores Corporación, canal, transacción, fecha y
-                otro.</p>
-          </td>
-        </tr>
-        <tr>
-          <td class="PARRAFO"><span >Orden: </span></td>
-          <td class="PARRAFO">Campo numérico de 2 posiciones que representa el orden en que será enviado
-            el Campo del Encabezado.</td>
-        </tr>
-      </table>
-      <p class="PARRAFO">Una vez adicionados los registros, al desplazarse a la segunda página del Asistente, se
-        muestra el resumen de los diferentes campos adicionados y se confirma la acción mediante el botón
-        Finalizar.</p>
-      <p class="none"><img src="../img/CHH_002B2.PNG"></p>
+    <section>
       <div>
-  </section>
-  <script src="../js/menu.js"></script>
-</body>
-<div id="footerContainer"></div>
-<script>
+
+        <p class="TITLE">Campos del encabezado </p>
+
+        <p class="PARRAFO">Mediante esta opción se habilita la consulta y
+          mantenimiento de la tabla en la cual se
+          almacenan los campos del encabezado de la transacción y el orden en
+          que son enviados. Cada campo contiene
+          un nombre Técnico, un tipo, longitud, precisión (si es decimal),
+          identificador y orden.</p>
+        <p class="PARRAFO">El formulario contiene los enlaces: Adicionar y
+          Eliminar:
+          <p class="TITLE"><img src="../img/CHH_002B.PNG"></p>
+
+          <p class="PARRAFO">Adicionar:Al activar ese enlace,
+            se despliega un
+            Asistente de dos pasos. En la primera página se registran y
+            adicionan cada uno de los campos del
+            encabezado.</p>
+          <p class="TITLE"><img src="../img/CHH_002B1.PNG"></p>
+          <table>
+            <tr>
+              <td class="PARRAFO">
+                <p class="style9">Nombre:
+
+                </p>
+              </td>
+              <td class="PARRAFO">Campo obligatorio con lista de valores del
+                cual se selecciona el campo de va a ser
+                registrado como campo del encabezado de la transacción.</td>
+            </tr>
+
+            <tr>
+              <td class="PARRAFO"><span class="style9">Tipo:</span></td>
+              <td>
+                <p class="PARRAFO">Este campo no modificable muestra el tipo del
+                  campo (carácter, decimal, entero o fecha) y
+                  se llena automáticamente cuando se selecciona un registro de
+                  la lista de valores de campos.</p>
+              </td>
+            </tr>
+            <tr>
+              <td class="PARRAFO"><span class="style9">Longitud:</span></td>
+              <td class="PARRAFO">Este campo no modificable muestra la longitud
+                del campo y se llena automáticamente
+                cuando se selecciona un registro de la lista de valores de
+                campos..</td>
+            </tr>
+
+            <tr>
+              <td class="PARRAFO"><span class="style9">Precisión:</span></td>
+              <td class="PARRAFO">Este campo no modificable muestra la precisión
+                del campo (si es de tipo decimal) y
+                se llena automáticamente cuando se selecciona un registro de la
+                lista de valores de campos.</td>
+            </tr>
+          </table>
+          <table>
+            <tr>
+              <td class="PARRAFO"><span>Identificador: </span></td>
+              <td>
+                <p class="PARRAFO">Campo obligatorio que contiene los valores
+                  Corporación, canal, transacción, fecha y
+                  otro.</p>
+              </td>
+            </tr>
+            <tr>
+              <td class="PARRAFO"><span>Orden: </span></td>
+              <td class="PARRAFO">Campo numérico de 2 posiciones que representa
+                el orden en que será enviado
+                el Campo del Encabezado.</td>
+            </tr>
+          </table>
+          <p class="PARRAFO">Una vez adicionados los registros, al desplazarse a
+            la segunda página del Asistente, se
+            muestra el resumen de los diferentes campos adicionados y se
+            confirma la acción mediante el botón
+            Finalizar.</p>
+          <p class="none"><img src="../img/CHH_002B2.PNG"></p>
+          <div>
+          </section>
+          <script src="../js/menu.js"></script>
+        </body>
+        <div id="footerContainer"></div>
+        <script>
   fetch('footer.html')
     .then(response => response.text())
     .then(html => {
@@ -105,4 +120,4 @@
     });
 </script>
 
-</html>
+      </html>

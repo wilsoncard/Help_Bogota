@@ -1,25 +1,25 @@
 <!DOCTYPE html>
 <html lang="es">
 
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>BANKBU®</title>
-  <link rel="stylesheet" href="../css/pages.css">
-  <link rel="stylesheet" href="../css/style.css">
-  <link rel="icon" href="../img/ACQUIRER-logo.JPG" type="image/x-icon">
-</head>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BANKBU®</title>
+    <link rel="stylesheet" href="../css/pages.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="icon" href="../img/ACQUIRER-logo.JPG" type="image/x-icon">
+  </head>
 
-<body>
+  <body>
 
-  <header>
-    <img class="logo" src="../img/logoBankbu_.PNG" alt="Logo de Mi Empresa">
-    <div id="menuBtn">
-      <img class="TITLE" src="../img/menu.PNG" alt="Botón de Menú ">
-    </div>
-  </header>
+    <header>
+      <img class="logo" src="../img/logoBankbu_.PNG" alt="Logo de Mi Empresa">
+      <div id="menuBtn">
+        <img class="TITLE" src="../img/menu.PNG" alt="Botón de Menú ">
+      </div>
+    </header>
     <div id="menuContainer"></div>
-  <script>
+    <script>
     fetch('menu.html')
       .then(response => response.text())
       .then(html => {
@@ -27,198 +27,235 @@
       });
   </script>
 
-  <section>
-    <div>
-      
-              <p class="TITLE">Actividades por tipo de cobro</p>
+    <section>
+      <div>
 
-      <p class="PARRAFO">A través de esta forma o función se relacionan tanto el código de la obligación
-        como el tipo de cobro con las actividades de la gestión de cobranza; adicionalmente, para cada una de las
-        actividades se permite parametrizar el plazo en días, o si genera o no un monto a cobrar por la actividad
-        realizada del deudor. Mediante el uso del mouse o ratón, es posible ubicarse en el campo de prerrequisito
-        para determinar que tipo de cobro y cuáles actividades deben ser finalizadas previamente a la actividad
-        en que esté ubicado el cursor.</p>
-      <p class="PARRAFO"><span class="SUBTITULO">Filtro:</span>  El formulario cuenta
-        con un filtro inicial de búsqueda, necesario para la consulta de la
-        información:</p>
-      <p class="TITLE"><img src="../img/CCF_006B1.PNG"></p>
+        <p class="TITLE">Actividades por tipo de cobro</p>
 
-      <table>
-        <tr>
-          <td class="titletable">
-            <p class="SUBTITULO">Tipo de cobro </p>
-          </td>
-          <td>
-            <p class="PARRAFO">Campo con lista de valores de la cual debe seleccionarse la <A href="CCH_002B.html"
-                  target="_self">clase de cobro</A> a filtrar. </p>
-          </td>
-        </tr>
-      </table>
+        <p class="PARRAFO">A través de esta forma o función se relacionan tanto
+          el código de la obligación
+          como el tipo de cobro con las actividades de la gestión de cobranza;
+          adicionalmente, para cada una de las
+          actividades se permite parametrizar el plazo en días, o si genera o no
+          un monto a cobrar por la actividad
+          realizada del deudor. Mediante el uso del mouse o ratón, es posible
+          ubicarse en el campo de prerrequisito
+          para determinar que tipo de cobro y cuáles actividades deben ser
+          finalizadas previamente a la actividad
+          en que esté ubicado el cursor.</p>
+        <p class="PARRAFO"><span class="SUBTITULO">Filtro:</span> El formulario
+          cuenta
+          con un filtro inicial de búsqueda, necesario para la consulta de la
+          información:</p>
+        <p class="TITLE"><img src="../img/CCF_006B1.PNG"></p>
 
-      <p class="PARRAFO">El formulario contiene las opciones Actualizar, Eliminar,
-        Adicionar y Detalle.</p>
+        <table>
+          <tr>
+            <td class="titletable">
+              <p class="SUBTITULO">Tipo de cobro </p>
+            </td>
+            <td>
+              <p class="PARRAFO">Campo con lista de valores de la cual debe
+                seleccionarse la <a href="CCH_002B.html"
+                  target="_self">clase de cobro</a> a filtrar. </p>
+            </td>
+          </tr>
+        </table>
 
-      <p class="TITLE"><img src="../img/CCF_006B.PNG"></p>
+        <p class="PARRAFO">El formulario contiene los enlaces: Actualizar,Eliminar, Adicionar y Detalle.</p>
 
+        <p class="TITLE"><img src="../img/CCF_006B.PNG"></p>
 
-      <p class="PARRAFO"><span class="SUBTITULO">Adicionar:</span>  Si
-        el usuario invoca la opción Adicionar se despliega un formulario con
-        los siguientes campos:</p>
-      <p class="TITLE"><img src="../img/CCF_006B2.PNG"></p>
+        <p class="PARRAFO"><span class="SUBTITULO">Adicionar:</span> Si
+          el usuario invoca la opción Adicionar se despliega un formulario con
+          los siguientes campos:</p>
+        <p class="TITLE"><img src="../img/CCF_006B2.PNG"></p>
 
-      <table>
-        <tr>
-          <td class="titletable">
-            <p class="SUBTITULO">Tipo de cobro </p>
+        <table>
+          <tr>
+            <td class="titletable">
+              <p class="SUBTITULO">Tipo de cobro </p>
+            </td>
+            <td>
+              <p class="PARRAFO">Campo con lista de valores de la cual debe
+                seleccionarse la <a href="CCH_002B.html"
+                  target="_self">clase de cobro</a> a adelantar. </p>
+            </td>
+          </tr>
+          <tr>
+            <td class="titletable">
+              <p class="SUBTITULO">Actividad</p>
+            </td>
+            <td>
+              <p class="PARRAFO">Este campo cuenta con lista de valores poblada
+                a través de la opción <a
+                  href="CCH_004B.html" target="_self">Actividades de cobro</a>
+                de este mismo menú, de la
+                cual deben seleccionarse las acciones o pasos que deben
+                adelantarse acorde tanto con el tipo de cobro como
+                con el tipo de obligación seleccionados.</p>
+            </td>
+          </tr>
+          <tr>
+            <td class="titletable">
+              <p class="SUBTITULO">Días de plazo </p>
+            </td>
+            <td>
+              <p class="PARRAFO">Campo numérico de 3 dígitos, obligatorio, que
+                contiene la cantidad de
+                días hábiles de que dispone el personal de cobranza para
+                realizar cada una de las
+                actividades parametrizadas.</p>
+            </td>
+          </tr>
+          <tr>
+            <td class="titletable">
+              <p class="SUBTITULO">Cobro al cliente </p>
+            </td>
+            <td>
+              <p class="PARRAFO">Campo con lista de valores poblada a través de
+                la opción Tipos de cobro de este
+                mismo módulo, de la cual debe seleccionarse la clase de cobro
+                que corresponde a la actividad que es
+                se&ntilde;alada como prerrequisito de otra.</p>
+            </td>
+          </tr>
+          <tr>
+            <td class="titletable">
+              <p class="SUBTITULO">Moneda</p>
+            </td>
+            <td>
+              <p class="PARRAFO">Campo con lista de valores de la que debe
+                seleccionarse el código de la <a
+                  href="NUH_005B.html" target="_self">Moneda</a> del grupo de
+                Tablas en la cual deben estar
+                expresados los saldos de la obligación, para que apliquen los
+                restantes parámetros
+                aquí definidos.</p>
+            </td>
+          </tr>
+          <tr>
+            <td class="titletable">
+              <p class="SUBTITULO">Periodo inicial mora </p>
+            </td>
+            <td>
+              <p class="PARRAFO">Campo numérico de 3 dígitos, obligatorio, en la
+                que se registra el Periodo del rango
+                referido a la altura de mora presentado por las obligaciones que
+                se están parametrizando.</p>
+            </td>
+          </tr>
+          <tr>
+            <td class="titletable">
+              <p class="SUBTITULO">Meriodo final mora </p>
+            </td>
+            <td>
+              <p class="PARRAFO">en este campo numérico de 3 dígitos,
+                obligatorio, se indica el periodo del rango referido a
+                la altura de mora presentado por las obligaciones que se están
+                parametrizando.</p>
+            </td>
+          </tr>
+          <tr>
+            <td class="titletable">
+              <p class="SUBTITULO">Prioridad</p>
+            </td>
+            <td>
+              <p class="PARRAFO">En este campo numérico de 3 dígitos,
+                obligatorio, se asigna el número que permite
+                ordenar las obligaciones, por orden de importancia, siendo 1 el
+                de mayor valor, y de esa forma asignarlas
+                a los agentes de cobro.</p>
+            </td>
+          </tr>
+          <tr>
+            <td class="titletable">
+              <p class="SUBTITULO">Permite cambio agente </p>
+            </td>
+            <td>
+              <p class="PARRAFO">Campo que posee lista de valores adjunta de la
+                que debe seleccionarse entre Si o
+                No se permite cambiar de agente de cobro una vez asignada la
+                obligación.
+              </p>
+            </td>
+          </tr>
+          <tr>
+            <td class="titletable">
+              <p class="SUBTITULO">Tipo de sobrecupo </p>
+            </td>
+            <td>
+              <p class="PARRAFO">Este campo con lista de valores para escoger
+                entre Valor y Porcentaje, no obligatorio. De este campo
+                depende lo aceptado en el Valor del sobrecupo.</p>
+            </td>
+          </tr>
+          <tr>
+            <td class="titletable">
+              <p class="SUBTITULO">Valor sobrecupo </p>
+            </td>
+            <td>
+              <p class="PARRAFO">Sí el Tipo de sobrecupo es VALOR, se muestra un
+                campo numérico de 14 dígitos
+                más 2 decimales, corresponde al valor de sobrecupo presentado
+                por el cliente, a partir del cual se
+                inicia el tipo de cobro. La acción de iniciar gestión de cobro
+                por mora prima sobre el cobro
+                por sobrecupo.</p>
+              <p class="PARRAFO">Sí el Tipo de sobrecupo es PORCENTAJE, se
+                muestra un campo numérico de 3 dígitos
+                más 2 decimales.</p>
+            </td>
+          </tr>
+          <tr>
+            <td class="titletable">
+              <p class="SUBTITULO">Tipo de cobro </p>
+            </td>
+            <td>
+              <p class="PARRAFO">Campo con lista de valores poblada a través de
+                la opción <a
+                  href="CCH_002B.html" target="_self">Tipos de cobro</a> de este
+                mismo menú, de la cual debe
+                seleccionarse la clase de cobro que corresponde a la actividad
+                que es se&ntilde;alada como prerrequisito
+                de otra.</p>
+            </td>
+          </tr>
+          <tr>
+            <td class="titletable">
+              <p class="SUBTITULO">Actividad</span></p>
           </td>
           <td>
-            <p class="PARRAFO">Campo con lista de valores de la cual debe seleccionarse la <A href="CCH_002B.html"
-                  target="_self">clase de cobro</A> a adelantar. </p>
-          </td>
-        </tr>
-        <tr>
-          <td class="titletable">
-            <p class="SUBTITULO">Actividad</p>
-          </td>
-          <td>
-            <p class="PARRAFO">Este campo cuenta con lista de valores poblada a través de la opción <A
-                  href="CCH_004B.html" target="_self">Actividades de cobro</A> de este mismo menú, de la
-              cual deben seleccionarse las acciones o pasos que deben adelantarse acorde tanto con el tipo de cobro como
-              con el tipo de obligación seleccionados.</p>
-          </td>
-        </tr>
-        <tr>
-          <td class="titletable">
-            <p class="SUBTITULO">Días de plazo </p>
-          </td>
-          <td>
-            <p class="PARRAFO">Campo numérico de 3 dígitos, obligatorio, que contiene la cantidad de
-              días hábiles de que dispone el personal de cobranza para realizar cada una de las
-              actividades parametrizadas.</p>
-          </td>
-        </tr>
-        <tr>
-          <td class="titletable">
-            <p class="SUBTITULO">Cobro al cliente </p>
-          </td>
-          <td>
-            <p class="PARRAFO">Campo con lista de valores poblada a través de la opción Tipos de cobro de este
-              mismo módulo, de la cual debe seleccionarse la clase de cobro que corresponde a la actividad que es
-              se&ntilde;alada como prerrequisito de otra.</p>
-          </td>
-        </tr>
-        <tr>
-          <td class="titletable">
-            <p class="SUBTITULO">Moneda</p>
-          </td>
-          <td>
-            <p class="PARRAFO">Campo con lista de valores de la que debe seleccionarse el código de la <A
-                  href="NUH_005B.html" target="_self">Moneda</A> del grupo de Tablas en la cual deben estar
-              expresados los saldos de la obligación, para que apliquen los restantes parámetros
-              aquí definidos.</p>
-          </td>
-        </tr>
-        <tr>
-          <td class="titletable">
-            <p class="SUBTITULO">Periodo inicial mora </p>
-          </td>
-          <td>
-            <p class="PARRAFO">Campo numérico de 3 dígitos, obligatorio, en la que se registra el Periodo del rango
-              referido a la altura de mora presentado por las obligaciones que se están parametrizando.</p>
-          </td>
-        </tr>
-        <tr>
-          <td class="titletable">
-            <p class="SUBTITULO">Meriodo final mora </p>
-          </td>
-          <td>
-            <p class="PARRAFO">en este campo numérico de 3 dígitos, obligatorio, se indica el periodo del rango referido a
-              la altura de mora presentado por las obligaciones que se están parametrizando.</p>
-          </td>
-        </tr>
-        <tr>
-          <td class="titletable">
-            <p class="SUBTITULO">Prioridad</p>
-          </td>
-          <td>
-            <p class="PARRAFO">En este campo numérico de 3 dígitos, obligatorio, se asigna el número que permite
-              ordenar las obligaciones, por orden de importancia, siendo 1 el de mayor valor, y de esa forma asignarlas
-              a los agentes de cobro.</p>
-          </td>
-        </tr>
-        <tr>
-          <td class="titletable">
-            <p class="SUBTITULO">Permite cambio agente </p>
-          </td>
-          <td>
-            <p class="PARRAFO">Campo que posee lista de valores adjunta de la que debe seleccionarse entre Si o
-              No se permite cambiar de agente de cobro una vez asignada la obligación.
-            </p>
-          </td>
-        </tr>
-        <tr>
-          <td class="titletable">
-            <p class="SUBTITULO">Tipo de sobrecupo </p>
-          </td>
-          <td>
-            <p class="PARRAFO">Este campo con lista de valores para escoger entre Valor y Porcentaje, no obligatorio. De este campo
-              depende lo aceptado en el Valor del sobrecupo.</p>
-          </td>
-        </tr>
-        <tr>
-          <td class="titletable">
-            <p class="SUBTITULO">Valor sobrecupo </p>
-          </td>
-          <td>
-            <p class="PARRAFO">Sí el Tipo de sobrecupo es VALOR, se muestra un campo numérico de 14 dígitos
-              más 2 decimales, corresponde al valor de sobrecupo presentado por el cliente, a partir del cual se
-              inicia el tipo de cobro. La acción de iniciar gestión de cobro por mora prima sobre el cobro
-              por sobrecupo.</p>
-            <p class="PARRAFO">Sí el Tipo de sobrecupo es PORCENTAJE, se muestra un campo numérico de 3 dígitos
-              más 2 decimales.</p>
-          </td>
-        </tr>
-        <tr>
-          <td class="titletable">
-            <p class="SUBTITULO">Tipo de cobro </p>
-          </td>
-          <td>
-            <p class="PARRAFO">Campo con lista de valores poblada a través de la opción <a
-                  href="CCH_002B.html" target="_self">Tipos de cobro</a> de este mismo menú, de la cual debe
-              seleccionarse la clase de cobro que corresponde a la actividad que es se&ntilde;alada como prerrequisito
-              de otra.</p>
-          </td>
-        </tr>
-        <tr>
-          <td class="titletable">
-            <p class="SUBTITULO">Actividad</span></p>
-          </td>
-          <td>
-            <p class="PARRAFO">Este campo cuenta con lista de valores poblada a través de la opción
-              Actividades de cobro de este mismo módulo, de la cual debe seleccionarse aquella que se
-              constituye en prerrequisito de la actividad del bloque anterior sobre la que se encuentra ubicado el
+            <p class="PARRAFO">Este campo cuenta con lista de valores poblada a
+              través de la opción
+              Actividades de cobro de este mismo módulo, de la cual debe
+              seleccionarse aquella que se
+              constituye en prerrequisito de la actividad del bloque anterior
+              sobre la que se encuentra ubicado el
               cursor.
             </p>
           </td>
         </tr>
       </table>
 
-      <p class="PARRAFO"><span class="SUBTITULO">Actualizar:</span>  Si el usuario
-        invoca la opción Actualizar se despliega un nuevo formulario en cual
+      <p class="PARRAFO"><span class="SUBTITULO">Actualizar:</span> Si el
+        usuario
+        invoca la opción Actualizar se despliega un formulario en cual
         los únicos campos modificables son los siguientes:</p>
       <p class="TITLE"><img src="../img/CCF_006B3.PNG"></p>
 
-      <p class="PARRAFO"><span class="SUBTITULO">Detalle:</span>  Si el usuario invoca
+      <p class="PARRAFO"><span class="SUBTITULO">Detalle:</span> Si el usuario
+        invoca
         la opción Detalle se despliega el siguiente formulario.
 
-        </p>
+      </p>
       <p class="TITLE"><img src="../img/CCF_006B4.PNG"></p>
 
-  </section>
-  <script src="../js/menu.js"></script>
-</body>
-<div id="footerContainer"></div>
-<script>
+    </section>
+    <script src="../js/menu.js"></script>
+  </body>
+  <div id="footerContainer"></div>
+  <script>
   fetch('footer.html')
     .then(response => response.text())
     .then(html => {

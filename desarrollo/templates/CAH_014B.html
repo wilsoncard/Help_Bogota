@@ -1,24 +1,24 @@
 <!DOCTYPE html>
 <html lang="es">
 
-<head>
+  <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>BANKBU®</title>
     <link rel="stylesheet" href="../css/pages.css">
     <link rel="stylesheet" href="../css/style.css">
- <link rel="icon" href="../img/ACQUIRER-logo.JPG" type="image/x-icon">
-</head>
+    <link rel="icon" href="../img/ACQUIRER-logo.JPG" type="image/x-icon">
+  </head>
 
-<body>
+  <body>
     <header>
-        <img class="logo" src="../img/logoBankbu_.PNG" alt="Logo de Mi Empresa">
-        <div id="menuBtn">
-            <img class="TITLE"  src= "../img/menu.PNG" alt="Botón de Menú ">
-        </div>
+      <img class="logo" src="../img/logoBankbu_.PNG" alt="Logo de Mi Empresa">
+      <div id="menuBtn">
+        <img class="TITLE" src="../img/menu.PNG" alt="Botón de Menú ">
+      </div>
     </header>
-      <div id="menuContainer"></div>
-  <script>
+    <div id="menuContainer"></div>
+    <script>
     fetch('menu.html')
       .then(response => response.text())
       .then(html => {
@@ -26,388 +26,537 @@
       });
   </script>
     <section>
-        <div> 
-            
-                    <p  class="TITLE">Reestructuraciones</p>
-                    
-            <p class="PARRAFO">Mediante esta función se registran aquellos clientes 
-              que a través del proceso de reestructuración o refinanciación 
-              intentan normalizar su crédito. De acuerdo con el perfil del funcionario, 
-              el usuario podrá realizar reestructuraciones o refinanciaciones directas 
-              a partir de esta forma, sin tener en cuenta las validaciones que efectuaría 
-              el aplicativo sobre un perfil de funcionario corriente. La reestructuración 
-              implica la creación de un nuevo número de obligación, 
-              mientras que la refinanciación no involucra nuevo crédito. La 
-              opción ofrece la opción de efectuar el proceso de reestructuración 
-              o refinanciación en forma directa, o la formalización de un 
-              acuerdo de pago, de manera que cuando éste sea realizado, se permita 
-              la refinanciación o reestructuración.</p>
-            <p class="PARRAFO">El formulario cuenta con un filtro 
-              de búsqueda y la opción Procesar en la parte superior.</p>
-            <p class="PARRAFO"><span class="SUBTITULO">Filtro:</span>  Se pueden realizar consultas a través 
-              de las siguientes opciones. El usuario debe seleccionar si el filtro aplica 
-              por el Documento o por la Tarjeta.</p>
-            <p class="TITLE"><img src="../img/CAF_014B.PNG"></p>
-            
-            <table>
-              <tr> 
-                <td class="titletable"><p class="SUBTITULO"><span >Tipo</p></td>
-                <td><p class="PARRAFO">Cuando 
-                    se ingresa a la opción, se despliega un filtro inicial en el 
-                    que se selecciona de la lista de valores el <a href="NUH_008B.html" >tipo 
+      <div>
+
+        <p class="TITLE">Reestructuraciones</p>
+
+        <p class="PARRAFO">Mediante esta función se registran aquellos clientes
+          que a través del proceso de reestructuración o refinanciación
+          intentan normalizar su crédito. De acuerdo con el perfil del
+          funcionario,
+          el usuario podrá realizar reestructuraciones o refinanciaciones
+          directas
+          a partir de esta forma, sin tener en cuenta las validaciones que
+          efectuaría
+          el aplicativo sobre un perfil de funcionario corriente. La
+          reestructuración
+          implica la creación de un nuevo número de obligación,
+          mientras que la refinanciación no involucra nuevo crédito. La
+          opción ofrece la opción de efectuar el proceso de reestructuración
+          o refinanciación en forma directa, o la formalización de un
+          acuerdo de pago, de manera que cuando éste sea realizado, se permita
+          la refinanciación o reestructuración.</p>
+        <p class="PARRAFO">El formulario cuenta con un filtro
+          de búsqueda y la opción Procesar en la parte superior.</p>
+        <p class="PARRAFO"><span class="SUBTITULO">Filtro:</span> Se pueden
+          realizar consultas a través
+          de las siguientes opciones. El usuario debe seleccionar si el filtro
+          aplica
+          por el Documento o por la Tarjeta.</p>
+        <p class="TITLE"><img src="../img/CAF_014B.PNG"></p>
+
+        <table>
+          <tr>
+            <td class="titletable"><p class="SUBTITULO"><span>Tipo</p></td>
+              <td><p class="PARRAFO">Cuando
+                  se ingresa a la opción, se despliega un filtro inicial en el
+                  que se selecciona de la lista de valores el <a
+                    href="NUH_008B.html">tipo
                     de documento de identificación</a>.</p></td>
-              </tr>
-              <tr> 
-                <td class="titletable"><p class="SUBTITULO"><span >Número</p></td>
-                <td><p class="PARRAFO">Este 
-                    campo opcional acepta cualquier dato alfanumérico de máximo 
+            </tr>
+            <tr>
+              <td class="titletable"><p class="SUBTITULO"><span>Número</p></td>
+                <td><p class="PARRAFO">Este
+                    campo opcional acepta cualquier dato alfanumérico de máximo
                     deciseis caracteres.</p></td>
               </tr>
-              <tr> 
-                <td class="titletable"><p class="SUBTITULO"><span >Número 
-                    tarjeta </p></td>
-                <td><p class="PARRAFO">En 
-                    este campo se captura el número de tarjeta del cliente a quien 
-                    se desea consultar, acepta máximo 23 caracteres.</p></td>
-              </tr>
-            </table>
-           
-            <p class="PARRAFO">Una vez aplicado el filtro, el sistema muestra el siguiente 
-              formulario, a través del cual se puede acceder a la consulta del cliente 
-              y de la tarjeta.</p>
-            <p class="TITLE"><img src="../img/CAF_014B1.PNG"></p>
-            
-            <p  class="PARRAFO"><span class="SUBTITULO">Procesar:</span>  Si el 
-              usuario invoca la opción Procesar se despliega un formulario con los 
-              siguientes campos<span >. 
-              Adicionalmente, cuenta con las opciones <a href="#Tarjeta" title="Saldo tarjeta" target="_self" >Saldo 
-              tarjeta</a>, <a href="#Saldo" title="Saldo al día" target="_self" >Saldo al 
-              día</a>, y <a href="#Proyeccion" title="Proyección cuotas" target="_self" >Proyección 
-              cuotas</a>.</p>
-            <p class="TITLE"><img src="../img/CAF_014B2.PNG"></p>
-            
-            <table>
-              <tr> 
-                <td class="titletable"><p class="SUBTITULO">Cliente</p></td>
-                <td><p class="PARRAFO">Corresponde 
-                    al nombre del cliente titular del producto.</p></td>
-              </tr>
-              <tr> 
-                <td class="titletable"><p class="SUBTITULO">Acción 
-                    a realizar</p></td>
-                <td><p class="PARRAFO">Se 
-                    determina la acción a realizar (Reestructurar o Refinanciar) 
-                    para que el sistema verifique y presente a continuación la información 
-                    del cliente al cual se le va a aplicar el procedimiento.</p></td>
-              </tr>
-              <tr> 
-                <td class="titletable"><p class="SUBTITULO">Tarjeta<span > 
-                    </p></td>
-                <td><p class="PARRAFO">Luego 
-                    de capturados el tipo y número de identificación, en este 
-                    campo se presenta el número de la tarjeta asociado a dicha identificación.</p></td>
-              </tr>
-              <tr> 
-                <td class="titletable"><p class="SUBTITULO">Modo 
-                    aplicación<span ></p></td>
-                <td><p class="PARRAFO">La 
-                    forma ofrece la opción de efectuar el proceso de reestructuración 
-                    o refinanciación en forma directa, o la formalización 
-                    de un acuerdo de pago, de manera que cuando éste sea realizado, 
-                    se permita la refinanciación o reestructuración.</p></td>
-              </tr>
-              <tr> 
-                <td class="titletable"><p class="SUBTITULO">Tarjeta 
-                    refinancia </p></td>
-                <td><p class="PARRAFO">En 
-                    este campo se selecciona la tarjeta que consolida la reestructuración, 
-                    es decir, aquella a la cual le será aplicada la reestructuración 
-                    o refinanciación. El campo contiene lista de valores con todas 
-                    las tarjetas que posee el cliente.</p></td>
-              </tr>
-              <tr> 
-                <td class="titletable"><p class="SUBTITULO">Aplica 
-                    en </p></td>
-                <td><p class="PARRAFO">El 
-                    usuario selecciona si va a hacer la operación línea y 
-                    en tiempo real o en batch.
-                  </p></td>
-              </tr>
-              <tr> 
-                <td class="titletable"><p class="SUBTITULO">Tipo 
-                    reestructuración </p></td>
-                <td><p class="PARRAFO">Campo 
-                    con lista propia de valores que permite seleccionar la clase de reestructuración 
-                    a efectuar.</p></td>
-              </tr>
-              <tr> 
-                <td class="titletable"><p class="SUBTITULO">Estado</p></td>
-                <td><p class="PARRAFO">Este 
-                    campo informa acerca de la etapa en la cual se encuentra la tarjeta, 
-                    dentro del proceso de reestructuración o refinanciación. 
-                    De acuerdo con la lista de valores adjunta hay cuatro alternativas de 
-                    selección: Solicitada, la cual corresponde al ingreso 
-                    de la solicitud, cuando se llevan a cabo los acuerdos de pago; una vez 
-                    el cliente cumple con el pago acordado, el estado del registro cambia 
-                    a Candidata, en el proceso de actualización de saldos 
-                    diario. También se puede actualizar manualmente el estado a Candidata, 
-                    cuando se desea realizar la reestructuración o refinanciación 
-                    en forma directa, sin necesidad de acuerdo de pago previo. Los otros 
-                    estados posibles son: Denegada, el cual se registra cuando 
-                    la entidad decida negar la solicitud; y Negada por no pago, 
-                    en caso de que el cliente incumpla el acuerdo.</p></td>
-              </tr>
-              <tr> 
-                <td class="titletable"><p class="SUBTITULO">Saldo 
-                    a reestructurar</p></td>
-                <td><p class="PARRAFO">Campo 
-                    en el cual se selecciona el valor a reestructurar o refinanciar. Los 
-                    valores posibles son: Saldo Total, cuando el monto a reestructurar 
-                    o refinanciar corresponde al saldo total de la deuda; Pago Mínimo, 
-                    en caso de que el valor a refinanciar sea equivalente al pago mínimo 
-                    de la obligación; y Otro, cuando el valor a refinanciar 
-                    no corresponde ni al pago mínimo ni al saldo total de la deuda, 
-                    en cuyo caso el monto a refinanciar se debe digitar en el campo &#8220;Valor 
-                    a reestructurar&#8221; de esta misma forma. Es importante resaltar que 
-                    cuando el bloqueo es Reestructuración, únicamente aplica 
-                    la opción Saldo Total, pues no es posible reestructurar 
-                    valores diferentes al total de la deuda; las opciones Pago Mínimo 
-                    y Otro solo son permitidas cuando el bloqueo es Refinanciación. 
-                  </p></td>
-              </tr>
-              <tr> 
-                <td class="titletable"><p class="SUBTITULO">Valor 
-                    a reestructurar</p></td>
-                <td><p class="PARRAFO">Despliega 
-                    el valor del saldo total de la deuda o del pago mínimo, en caso 
-                    de haber seleccionado las opciones Saldo Total o Pago Mínimo, 
-                    respectivamente, en el campo anterior. El campo puede ser actualizado 
-                    cuando la opción seleccionada en ese mismo campo es Otro, 
-                    caso en el cual el usuario digita el valor a refinanciar. </p></td>
-              </tr>
-              <tr> 
-                <td class="titletable"  ><p class="SUBTITULO">Fecha 
-                    a pagar</p></td>
-                <td><p class="PARRAFO">Campo 
-                    en formato YYYY-MM-DD, en el que se ingresa la fecha en la cual el cliente 
-                    debe hacer el pago pactado en el campo anterior. Es importante anotar 
-                    que cuando se graba el acuerdo de pago, a través de la opción 
-                    que la forma provee para este efecto, el estado del registro es Solicitada, 
-                    y que el proceso de cierre diario evalúa si efectivamente se 
-                    llevó a cabo el pago acordado, caso en el cual el estado cambia 
-                    automáticamente a Candidata. Solamente las tarjetas 
-                    que tengan este estado pueden ser refinanciadas o reestructuradas, ya 
-                    sea manualmente, a través de la forma, o en el proceso batch 
-                    que realiza el proceso automáticamente.</p></td>
-              </tr>
-              <tr> 
-                <td class="titletable"><p class="SUBTITULO">Valor 
-                    a pagar</p></td>
-                <td><p class="PARRAFO">Campo 
-                    en el cual se indica el valor que debe pagar el cliente, cuando se pretende 
-                    formalizar un acuerdo de pago.</p></td>
-              </tr>
-              <tr> 
-                <td class="titletable"><p class="SUBTITULO">Acuerdo</p></td>
-                <td><p class="PARRAFO">Mediante 
-                    una lista de valores adjunta la entidad selecciona la clase de convenio 
-                    al que llega con el cliente para efectuar la reestructuración 
-                    o refinanciación: Verbal, cuando el convenio lo efectúa 
-                    el cliente sin Inter.-mediación de ningún documento para 
-                    efectuar la reestructuración; Cheque, cuando para formalizar 
-                    el acuerdo el cliente debe dejar un cheque como garantía de cumplimiento; 
-                    y Reestructurar, que corresponde a la normalización 
-                    del crédito sin requerimientos previos y por políticas 
-                    de la entidad. En este último caso, la reestructuración 
-                    o refinanciación se puede hacer en forma directa, sin esperar 
-                    el cumplimiento de un compromiso de pago.</p></td>
-              </tr>
-              <tr> 
-                <td class="titletable"><p class="SUBTITULO">Transacción 
-                    compra </p></td>
-                <td><p class="PARRAFO">El 
-                    usuario debe ingresar la transacción compra a partir de una lista 
-                    para el compromiso de pago. Es obligatorio.</p></td>
-              </tr>
-              <tr> 
-                <td class="titletable"><p class="SUBTITULO">Plazo</p></td>
-                <td><p class="PARRAFO">En 
-                    este campo obligatorio se debe ingresar el plazo para el compromiso 
-                    de pago.</p></td>
-              </tr>
-              <tr> 
-                <td class="titletable"><p class="SUBTITULO">Observaciones</p></td>
-                <td><p class="PARRAFO">Campo 
-                    alfanumérico de máximo 2000 caracteres, no obligatorio, 
-                    en el que se puede registrar cualquier tipo de información adicional 
-                    o relevante con relación a la refinanciación, reestructuración 
-                    o acuerdo de pago a efectuar.</p></td>
-              </tr>
-            </table>
-            <p  class="PARRAFO"><span class="PARRAFO"><span class="SUBTITULO"><a name="Tarjeta"></a>Saldo 
-              tarjeta :</span>  Si el usuario invoca esta opción, se despliega un 
-              nuevo formulario con la <a href="SCH_060B.html" >Consulta de la tarjeta</a> 
-              a la cual se le está realizando la reestructuración.</p>
-            <p class="TITLE"><img src="../img/CAF_014B3.PNG"></p>
-           
-            <p class="PARRAFO"><span class="SUBTITULO"><a name="Saldo"></a>Saldo día:</span>  
-              Si el usuario invoca la opción Saldo al día se despliega el 
-              siguiente formulario: <span
-              >  </p>
-            <p class="TITLE"><img src="../img/CAF_014B4.PNG"p>
-            <table>
-              <tr> 
-                <td class="titletable"><p class="SUBTITULO">Fecha 
-                    a pagar</p></td>
-                <td><p class="PARRAFO">Despliega 
-                    en formato YYYY-MM-DD la fecha estimada en que se debe efectuar el pago.</p></td>
-              </tr>
-              <tr> 
-                <td class="titletable"><p class="SUBTITULO">Capital 
-                    facturado </p></td>
-                <td><p class="PARRAFO">Indica 
-                    la porción de los diferidos a ser cubierta mediante el pago propuesto.</p></td>
-              </tr>
-              <tr> 
-                <td class="titletable"><p class="SUBTITULO">Capital 
-                    mora <span ></p></td>
-                <td><p class="PARRAFO">Se&ntilde;ala 
-                    el monto acumulado de los diferidos no cubiertos en facturaciones anteriores.</p></td>
-              </tr>
-              <tr> 
-                <td class="titletable"><p class="SUBTITULO">Interés 
-                    corriente </p></td>
-                <td><p class="PARRAFO">Muestra 
-                    el valor resultante de la liquidación del beneficio esperado 
-                    por la entidad sobre el saldo del capital vigente proyectado a la fecha 
-                    de pago propuesta.</p></td>
-              </tr>
-              <tr> 
-                <td class="titletable"><p class="SUBTITULO">Interés 
-                    mora </p></td>
-                <td><p class="PARRAFO">Despliega 
-                    el monto resultante de la liquidación del beneficio adicional 
-                    esperado por la entidad sobre el saldo del capital en mora proyectado 
-                    a la fecha de pago propuesta.</p></td>
-              </tr>
-              <tr> 
-                <td class="titletable"><p class="SUBTITULO">Ajuste 
-                    interés mora </p></td>
-                <td><p class="PARRAFO">Registra 
-                    el valor del ajuste hecho a los intereses de mora y que afecta al pago 
-                    total. </p></td>
-              </tr>
-              <tr> 
-                <td class="titletable"><p class="SUBTITULO">Interés 
-                    extracontable </p></td>
-                <td><p class="PARRAFO">Campo 
-                    de salida que muestra el monto resultante de la liquidación del 
-                    beneficio esperado por la entidad sobre el saldo del capital cuya altura 
-                    de mora supere los 90 días proyectado a la fecha de pago propuesta.</p></td>
-              </tr>
-              <tr> 
-                <td class="titletable"><p class="SUBTITULO">Saldo 
-                    a favor</p></td>
-                <td><p class="PARRAFO">Presenta 
-                    los valores que han excedido bien sea el pago mínimo o total 
-                    acorde con los parámetros definidos en los Datos básicos 
-                    de la opción <a href="MEH_002B.html" >Productos</a>.</p></td>
-              </tr>
-              <tr> 
-                <td class="titletable"><p class="SUBTITULO">Honorarios</p></td>
-                <td><p class="PARRAFO">Indica, 
-                    en caso de aplicar, el monto que por concepto de Honorarios deberá 
-                    ser cubierto por el pago propuesto. </p></td>
-              </tr>
-              <tr> 
-                <td class="titletable"><p class="SUBTITULO">Pago 
-                    total </p></td>
-                <td><p class="PARRAFO">Contiene 
-                    la sumatoria de los anteriores conceptos y que deberá se cubierto 
-                    por el pago propuesto.</p></td>
-              </tr>
-              <tr> 
-                <td class="titletable"  ><p class="SUBTITULO">Saldo 
-                    no facturado</p></td>
-                <td><p class="PARRAFO">Despliega 
-                    el saldo insoluto que reflejará la obligación si el pago 
-                    propuesto se hace efectivo.</p></td>
-              </tr>
-            </table>
-            <p  class="PARRAFO"><span class="SUBTITULO"><a name="Proyeccion"></a>Proyección 
-              cuotas:</span>  <span
-              >La funcionalidad ofrecida al invocar el botón 
-              especial permite proyectar las n cuotas a pagar, después de seleccionar 
-              la transacción interna y el plazo para la refinanciación o reestructuración, 
-              desplegando una pantalla con los datos resultantes de la proyección. 
-              Las cuotas proyectadas son las mismas cuando la transacción seleccionada 
-              es Refinanciación o Reestructuración, pero varían dependiendo 
-              del plazo.</p>
-            <p class="TITLE"><img src="../img/CAF_014B5.PNG"></p>
-            
-            <table>
-              <tr> 
-                <td class="titletable"><p class="SUBTITULO">Cuota</p></td>
-                <td><p class="PARRAFO">Muestra 
-                    el número de cuotas en las cuales se va a dividir el pago del 
-                    saldo a refinanciar.</p></td>
-              </tr>
-              <tr> 
-                <td class="titletable"><p class="SUBTITULO">Saldo</p></td>
-                <td><p class="PARRAFO">Indica 
-                    para cada cuota, el saldo de capital pendiente.</p></td>
-              </tr>
-              <tr> 
-                <td class="titletable"><p class="SUBTITULO">Valor 
-                    capital <span ></p></td>
-                <td><p class="PARRAFO">Registra 
-                    el valor por concepto de capital ( a pagar ) correspondiente a cada 
-                    una de las cuotas de la refinanciación.</p></td>
-              </tr>
-              <tr> 
-                <td class="titletable"><p class="SUBTITULO">Valor 
-                    interés </p></td>
-                <td><p class="PARRAFO">Se&ntilde;ala 
-                    el valor de los intereses respectivos calculados sobre el saldo y el 
-                    valor cuota capital.</p></td>
-              </tr>
-              <tr> 
-                <td class="titletable"><p class="SUBTITULO">Valor 
-                    cuota </p></td>
-                <td><p class="PARRAFO">Muestra 
-                    el valor total a cancelar ( cuota capital más intereses) en cada 
-                    una de las cuotas de la refinanciación.</p></td>
-              </tr>
-            </table>
-            
-            <p class="PARRAFO">El formulario cuenta con dos botones adicionales para las siguientes 
-              funcionalidades: </p>
-            <table>
-              <tr> 
-                <td class="titletable"><p  class="SUBTITULO"><img src="../img/CAF_014B6-Tras%20saldos.PNG"44" height="42"></p></td>
-                <td><p class="PARRAFO">Traslado 
-                    saldo en dólares a moneda patrón: funcionalidad que 
-                    posibilita el movimiento de saldos expresados en dólares a la 
-                    moneda patrón de la entidad, en razón a que el sistema 
-                    no permite refinanciación en dólares.</p></td>
-              </tr>
-              <tr> 
-                <td class="titletable"><p  class="SUBTITULO"><img src="../img/CAF_014B7-Grabar%20negaci.PNG"44" height="42"></p></td>
-                <td><p class="PARRAFO">Grabar 
-                    negación: Este botón permite grabar un registro de 
-                    la negación de la reestructuración.</p></td>
-              </tr>
-            </table>
-            
-        </section>
-    <script src="../js/menu.js"></script>
-</body>
-<div id="footerContainer"></div>
-<script>
+              <tr>
+                <td class="titletable"><p class="SUBTITULO"><span>Número
+                      tarjeta </p></td>
+                  <td><p class="PARRAFO">En
+                      este campo se captura el número de tarjeta del cliente a
+                      quien
+                      se desea consultar, acepta máximo 23 caracteres.</p></td>
+                </tr>
+              </table>
+
+              <p class="PARRAFO">Una vez aplicado el filtro, el sistema muestra
+                el siguiente
+                formulario, a través del cual se puede acceder a la consulta del
+                cliente
+                y de la tarjeta.</p>
+              <p class="TITLE"><img src="../img/CAF_014B1.PNG"></p>
+
+              <p class="PARRAFO"><span class="SUBTITULO">Procesar:</span> Si el
+                usuario invoca la opción Procesar se despliega un formulario con
+                los
+                siguientes campos<span>.
+                  Adicionalmente, cuenta con las opciones <a href="#Tarjeta"
+                    title="Saldo tarjeta" target="_self">Saldo
+                    tarjeta</a>, <a href="#Saldo" title="Saldo al día"
+                    target="_self">Saldo al
+                    día</a>, y <a href="#Proyeccion" title="Proyección cuotas"
+                    target="_self">Proyección
+                    cuotas</a>.</p>
+                <p class="TITLE"><img src="../img/CAF_014B2.PNG"></p>
+
+                <table>
+                  <tr>
+                    <td class="titletable"><p class="SUBTITULO">Cliente</p></td>
+                    <td><p class="PARRAFO">Corresponde
+                        al nombre del cliente titular del producto.</p></td>
+                  </tr>
+                  <tr>
+                    <td class="titletable"><p class="SUBTITULO">Acción
+                        a realizar</p></td>
+                    <td><p class="PARRAFO">Se
+                        determina la acción a realizar (Reestructurar o
+                        Refinanciar)
+                        para que el sistema verifique y presente a continuación
+                        la información
+                        del cliente al cual se le va a aplicar el
+                        procedimiento.</p></td>
+                  </tr>
+                  <tr>
+                    <td class="titletable"><p class="SUBTITULO">Tarjeta<span>
+                        </p></td>
+                      <td><p class="PARRAFO">Luego
+                          de capturados el tipo y número de identificación, en
+                          este
+                          campo se presenta el número de la tarjeta asociado a
+                          dicha identificación.</p></td>
+                    </tr>
+                    <tr>
+                      <td class="titletable"><p class="SUBTITULO">Modo
+                          aplicación<span></p></td>
+                        <td><p class="PARRAFO">La
+                            forma ofrece la opción de efectuar el proceso de
+                            reestructuración
+                            o refinanciación en forma directa, o la
+                            formalización
+                            de un acuerdo de pago, de manera que cuando éste sea
+                            realizado,
+                            se permita la refinanciación o
+                            reestructuración.</p></td>
+                      </tr>
+                      <tr>
+                        <td class="titletable"><p class="SUBTITULO">Tarjeta
+                            refinancia </p></td>
+                        <td><p class="PARRAFO">En
+                            este campo se selecciona la tarjeta que consolida la
+                            reestructuración,
+                            es decir, aquella a la cual le será aplicada la
+                            reestructuración
+                            o refinanciación. El campo contiene lista de valores
+                            con todas
+                            las tarjetas que posee el cliente.</p></td>
+                      </tr>
+                      <tr>
+                        <td class="titletable"><p class="SUBTITULO">Aplica
+                            en </p></td>
+                        <td><p class="PARRAFO">El
+                            usuario selecciona si va a hacer la operación línea
+                            y
+                            en tiempo real o en batch.
+                          </p></td>
+                      </tr>
+                      <tr>
+                        <td class="titletable"><p class="SUBTITULO">Tipo
+                            reestructuración </p></td>
+                        <td><p class="PARRAFO">Campo
+                            con lista propia de valores que permite seleccionar
+                            la clase de reestructuración
+                            a efectuar.</p></td>
+                      </tr>
+                      <tr>
+                        <td class="titletable"><p
+                            class="SUBTITULO">Estado</p></td>
+                        <td><p class="PARRAFO">Este
+                            campo informa acerca de la etapa en la cual se
+                            encuentra la tarjeta,
+                            dentro del proceso de reestructuración o
+                            refinanciación.
+                            De acuerdo con la lista de valores adjunta hay
+                            cuatro alternativas de
+                            selección: Solicitada, la cual corresponde al
+                            ingreso
+                            de la solicitud, cuando se llevan a cabo los
+                            acuerdos de pago; una vez
+                            el cliente cumple con el pago acordado, el estado
+                            del registro cambia
+                            a Candidata, en el proceso de actualización de
+                            saldos
+                            diario. También se puede actualizar manualmente el
+                            estado a Candidata,
+                            cuando se desea realizar la reestructuración o
+                            refinanciación
+                            en forma directa, sin necesidad de acuerdo de pago
+                            previo. Los otros
+                            estados posibles son: Denegada, el cual se registra
+                            cuando
+                            la entidad decida negar la solicitud; y Negada por
+                            no pago,
+                            en caso de que el cliente incumpla el
+                            acuerdo.</p></td>
+                      </tr>
+                      <tr>
+                        <td class="titletable"><p class="SUBTITULO">Saldo
+                            a reestructurar</p></td>
+                        <td><p class="PARRAFO">Campo
+                            en el cual se selecciona el valor a reestructurar o
+                            refinanciar. Los
+                            valores posibles son: Saldo Total, cuando el monto a
+                            reestructurar
+                            o refinanciar corresponde al saldo total de la
+                            deuda; Pago Mínimo,
+                            en caso de que el valor a refinanciar sea
+                            equivalente al pago mínimo
+                            de la obligación; y Otro, cuando el valor a
+                            refinanciar
+                            no corresponde ni al pago mínimo ni al saldo total
+                            de la deuda,
+                            en cuyo caso el monto a refinanciar se debe digitar
+                            en el campo &#8220;Valor
+                            a reestructurar&#8221; de esta misma forma. Es
+                            importante resaltar que
+                            cuando el bloqueo es Reestructuración, únicamente
+                            aplica
+                            la opción Saldo Total, pues no es posible
+                            reestructurar
+                            valores diferentes al total de la deuda; las
+                            opciones Pago Mínimo
+                            y Otro solo son permitidas cuando el bloqueo es
+                            Refinanciación.
+                          </p></td>
+                      </tr>
+                      <tr>
+                        <td class="titletable"><p class="SUBTITULO">Valor
+                            a reestructurar</p></td>
+                        <td><p class="PARRAFO">Despliega
+                            el valor del saldo total de la deuda o del pago
+                            mínimo, en caso
+                            de haber seleccionado las opciones Saldo Total o
+                            Pago Mínimo,
+                            respectivamente, en el campo anterior. El campo
+                            puede ser actualizado
+                            cuando la opción seleccionada en ese mismo campo es
+                            Otro,
+                            caso en el cual el usuario digita el valor a
+                            refinanciar. </p></td>
+                      </tr>
+                      <tr>
+                        <td class="titletable"><p class="SUBTITULO">Fecha
+                            a pagar</p></td>
+                        <td><p class="PARRAFO">Campo
+                            en formato YYYY-MM-DD, en el que se ingresa la fecha
+                            en la cual el cliente
+                            debe hacer el pago pactado en el campo anterior. Es
+                            importante anotar
+                            que cuando se graba el acuerdo de pago, a través de
+                            la opción
+                            que la forma provee para este efecto, el estado del
+                            registro es Solicitada,
+                            y que el proceso de cierre diario evalúa si
+                            efectivamente se
+                            llevó a cabo el pago acordado, caso en el cual el
+                            estado cambia
+                            automáticamente a Candidata. Solamente las tarjetas
+                            que tengan este estado pueden ser refinanciadas o
+                            reestructuradas, ya
+                            sea manualmente, a través de la forma, o en el
+                            proceso batch
+                            que realiza el proceso automáticamente.</p></td>
+                      </tr>
+                      <tr>
+                        <td class="titletable"><p class="SUBTITULO">Valor
+                            a pagar</p></td>
+                        <td><p class="PARRAFO">Campo
+                            en el cual se indica el valor que debe pagar el
+                            cliente, cuando se pretende
+                            formalizar un acuerdo de pago.</p></td>
+                      </tr>
+                      <tr>
+                        <td class="titletable"><p
+                            class="SUBTITULO">Acuerdo</p></td>
+                        <td><p class="PARRAFO">Mediante
+                            una lista de valores adjunta la entidad selecciona
+                            la clase de convenio
+                            al que llega con el cliente para efectuar la
+                            reestructuración
+                            o refinanciación: Verbal, cuando el convenio lo
+                            efectúa
+                            el cliente sin Inter.-mediación de ningún documento
+                            para
+                            efectuar la reestructuración; Cheque, cuando para
+                            formalizar
+                            el acuerdo el cliente debe dejar un cheque como
+                            garantía de cumplimiento;
+                            y Reestructurar, que corresponde a la normalización
+                            del crédito sin requerimientos previos y por
+                            políticas
+                            de la entidad. En este último caso, la
+                            reestructuración
+                            o refinanciación se puede hacer en forma directa,
+                            sin esperar
+                            el cumplimiento de un compromiso de pago.</p></td>
+                      </tr>
+                      <tr>
+                        <td class="titletable"><p class="SUBTITULO">Transacción
+                            compra </p></td>
+                        <td><p class="PARRAFO">El
+                            usuario debe ingresar la transacción compra a partir
+                            de una lista
+                            para el compromiso de pago. Es obligatorio.</p></td>
+                      </tr>
+                      <tr>
+                        <td class="titletable"><p
+                            class="SUBTITULO">Plazo</p></td>
+                        <td><p class="PARRAFO">En
+                            este campo obligatorio se debe ingresar el plazo
+                            para el compromiso
+                            de pago.</p></td>
+                      </tr>
+                      <tr>
+                        <td class="titletable"><p
+                            class="SUBTITULO">Observaciones</p></td>
+                        <td><p class="PARRAFO">Campo
+                            alfanumérico de máximo 2000 caracteres, no
+                            obligatorio,
+                            en el que se puede registrar cualquier tipo de
+                            información adicional
+                            o relevante con relación a la refinanciación,
+                            reestructuración
+                            o acuerdo de pago a efectuar.</p></td>
+                      </tr>
+                    </table>
+                    <p class="PARRAFO"><span class="PARRAFO"><span
+                          class="SUBTITULO"><a name="Tarjeta"></a>Saldo
+                          tarjeta :</span> Si el usuario invoca esta opción, se
+                        despliega un
+                        nuevo formulario con la <a href="SCH_060B.html">Consulta
+                          de la tarjeta</a>
+                        a la cual se le está realizando la reestructuración.</p>
+                      <p class="TITLE"><img src="../img/CAF_014B3.PNG"></p>
+
+                      <p class="PARRAFO"><span class="SUBTITULO"><a
+                            name="Saldo"></a>Saldo día:</span>
+                        Si el usuario invoca la opción Saldo al día se despliega
+                        el
+                        siguiente formulario: <span> </p>
+                        <p class="TITLE"><img src="../img/CAF_014B4.PNG" p>
+                          <table>
+                            <tr>
+                              <td class="titletable"><p class="SUBTITULO">Fecha
+                                  a pagar</p></td>
+                              <td><p class="PARRAFO">Despliega
+                                  en formato YYYY-MM-DD la fecha estimada en que
+                                  se debe efectuar el pago.</p></td>
+                            </tr>
+                            <tr>
+                              <td class="titletable"><p
+                                  class="SUBTITULO">Capital
+                                  facturado </p></td>
+                              <td><p class="PARRAFO">Indica
+                                  la porción de los diferidos a ser cubierta
+                                  mediante el pago propuesto.</p></td>
+                            </tr>
+                            <tr>
+                              <td class="titletable"><p
+                                  class="SUBTITULO">Capital
+                                  mora <span></p></td>
+                                <td><p class="PARRAFO">Se&ntilde;ala
+                                    el monto acumulado de los diferidos no
+                                    cubiertos en facturaciones
+                                    anteriores.</p></td>
+                              </tr>
+                              <tr>
+                                <td class="titletable"><p
+                                    class="SUBTITULO">Interés
+                                    corriente </p></td>
+                                <td><p class="PARRAFO">Muestra
+                                    el valor resultante de la liquidación del
+                                    beneficio esperado
+                                    por la entidad sobre el saldo del capital
+                                    vigente proyectado a la fecha
+                                    de pago propuesta.</p></td>
+                              </tr>
+                              <tr>
+                                <td class="titletable"><p
+                                    class="SUBTITULO">Interés
+                                    mora </p></td>
+                                <td><p class="PARRAFO">Despliega
+                                    el monto resultante de la liquidación del
+                                    beneficio adicional
+                                    esperado por la entidad sobre el saldo del
+                                    capital en mora proyectado
+                                    a la fecha de pago propuesta.</p></td>
+                              </tr>
+                              <tr>
+                                <td class="titletable"><p
+                                    class="SUBTITULO">Ajuste
+                                    interés mora </p></td>
+                                <td><p class="PARRAFO">Registra
+                                    el valor del ajuste hecho a los intereses de
+                                    mora y que afecta al pago
+                                    total. </p></td>
+                              </tr>
+                              <tr>
+                                <td class="titletable"><p
+                                    class="SUBTITULO">Interés
+                                    extracontable </p></td>
+                                <td><p class="PARRAFO">Campo
+                                    de salida que muestra el monto resultante de
+                                    la liquidación del
+                                    beneficio esperado por la entidad sobre el
+                                    saldo del capital cuya altura
+                                    de mora supere los 90 días proyectado a la
+                                    fecha de pago propuesta.</p></td>
+                              </tr>
+                              <tr>
+                                <td class="titletable"><p
+                                    class="SUBTITULO">Saldo
+                                    a favor</p></td>
+                                <td><p class="PARRAFO">Presenta
+                                    los valores que han excedido bien sea el
+                                    pago mínimo o total
+                                    acorde con los parámetros definidos en los
+                                    Datos básicos
+                                    de la opción <a
+                                      href="MEH_002B.html">Productos</a>.</p></td>
+                              </tr>
+                              <tr>
+                                <td class="titletable"><p
+                                    class="SUBTITULO">Honorarios</p></td>
+                                <td><p class="PARRAFO">Indica,
+                                    en caso de aplicar, el monto que por
+                                    concepto de Honorarios deberá
+                                    ser cubierto por el pago propuesto.
+                                  </p></td>
+                              </tr>
+                              <tr>
+                                <td class="titletable"><p class="SUBTITULO">Pago
+                                    total </p></td>
+                                <td><p class="PARRAFO">Contiene
+                                    la sumatoria de los anteriores conceptos y
+                                    que deberá se cubierto
+                                    por el pago propuesto.</p></td>
+                              </tr>
+                              <tr>
+                                <td class="titletable"><p
+                                    class="SUBTITULO">Saldo
+                                    no facturado</p></td>
+                                <td><p class="PARRAFO">Despliega
+                                    el saldo insoluto que reflejará la
+                                    obligación si el pago
+                                    propuesto se hace efectivo.</p></td>
+                              </tr>
+                            </table>
+                            <p class="PARRAFO"><span class="SUBTITULO"><a
+                                  name="Proyeccion"></a>Proyección
+                                cuotas:</span> <span>La funcionalidad ofrecida
+                                al invocar el botón
+                                especial permite proyectar las n cuotas a pagar,
+                                después de seleccionar
+                                la transacción interna y el plazo para la
+                                refinanciación o reestructuración,
+                                desplegando una pantalla con los datos
+                                resultantes de la proyección.
+                                Las cuotas proyectadas son las mismas cuando la
+                                transacción seleccionada
+                                es Refinanciación o Reestructuración, pero
+                                varían dependiendo
+                                del plazo.</p>
+                              <p class="TITLE"><img
+                                  src="../img/CAF_014B5.PNG"></p>
+
+                              <table>
+                                <tr>
+                                  <td class="titletable"><p
+                                      class="SUBTITULO">Cuota</p></td>
+                                  <td><p class="PARRAFO">Muestra
+                                      el número de cuotas en las cuales se va a
+                                      dividir el pago del
+                                      saldo a refinanciar.</p></td>
+                                </tr>
+                                <tr>
+                                  <td class="titletable"><p
+                                      class="SUBTITULO">Saldo</p></td>
+                                  <td><p class="PARRAFO">Indica
+                                      para cada cuota, el saldo de capital
+                                      pendiente.</p></td>
+                                </tr>
+                                <tr>
+                                  <td class="titletable"><p
+                                      class="SUBTITULO">Valor
+                                      capital <span></p></td>
+                                    <td><p class="PARRAFO">Registra
+                                        el valor por concepto de capital ( a
+                                        pagar ) correspondiente a cada
+                                        una de las cuotas de la
+                                        refinanciación.</p></td>
+                                  </tr>
+                                  <tr>
+                                    <td class="titletable"><p
+                                        class="SUBTITULO">Valor
+                                        interés </p></td>
+                                    <td><p class="PARRAFO">Se&ntilde;ala
+                                        el valor de los intereses respectivos
+                                        calculados sobre el saldo y el
+                                        valor cuota capital.</p></td>
+                                  </tr>
+                                  <tr>
+                                    <td class="titletable"><p
+                                        class="SUBTITULO">Valor
+                                        cuota </p></td>
+                                    <td><p class="PARRAFO">Muestra
+                                        el valor total a cancelar ( cuota
+                                        capital más intereses) en cada
+                                        una de las cuotas de la
+                                        refinanciación.</p></td>
+                                  </tr>
+                                </table>
+
+                                <p class="PARRAFO">El formulario cuenta con dos
+                                  botones adicionales para las siguientes
+                                  funcionalidades: </p>
+                                <table>
+                                  <tr>
+                                    <td class="titletable"><p
+                                        class="SUBTITULO"><img
+                                          src="../img/CAF_014B6-Tras%20saldos.PNG"44"
+                                          height="42"></p></td>
+                                    <td><p class="PARRAFO">Traslado
+                                        saldo en dólares a moneda patrón:
+                                        funcionalidad que
+                                        posibilita el movimiento de saldos
+                                        expresados en dólares a la
+                                        moneda patrón de la entidad, en razón a
+                                        que el sistema
+                                        no permite refinanciación en
+                                        dólares.</p></td>
+                                  </tr>
+                                  <tr>
+                                    <td class="titletable"><p
+                                        class="SUBTITULO"><img
+                                          src="../img/CAF_014B7-Grabar%20negaci.PNG"44"
+                                          height="42"></p></td>
+                                    <td><p class="PARRAFO">Grabar
+                                        negación: Este botón permite grabar un
+                                        registro de
+                                        la negación de la
+                                        reestructuración.</p></td>
+                                  </tr>
+                                </table>
+
+                              </section>
+                              <script src="../js/menu.js"></script>
+                            </body>
+                            <div id="footerContainer"></div>
+                            <script>
   fetch('footer.html')
     .then(response => response.text())
     .then(html => {
       document.getElementById('footerContainer').innerHTML = html;
     });
 </script>
-</html>
+                          </html>

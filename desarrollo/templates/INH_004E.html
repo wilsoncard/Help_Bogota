@@ -1,26 +1,26 @@
 <!DOCTYPE html>
 <html lang="es">
 
-<head>
+  <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>BANKBU®</title>
 
     <link rel="stylesheet" href="../css/pages.css">
     <link rel="stylesheet" href="../css/style.css">
- <link rel="icon" href="../img/ACQUIRER-logo.JPG" type="image/x-icon">
-</head>
+    <link rel="icon" href="../img/ACQUIRER-logo.JPG" type="image/x-icon">
+  </head>
 
-<body>
+  <body>
 
     <header>
-        <img class="logo" src="../img/logoBankbu_.PNG" alt="Logo de Mi Empresa">
-        <div id="menuBtn">
-            <img class="TITLE"  src= "../img/menu.PNG" alt="Botón de Menú ">
-        </div>
+      <img class="logo" src="../img/logoBankbu_.PNG" alt="Logo de Mi Empresa">
+      <div id="menuBtn">
+        <img class="TITLE" src="../img/menu.PNG" alt="Botón de Menú ">
+      </div>
     </header>
-      <div id="menuContainer"></div>
-  <script>
+    <div id="menuContainer"></div>
+    <script>
     fetch('menu.html')
       .then(response => response.text())
       .then(html => {
@@ -29,121 +29,166 @@
   </script>
 
     <section>
-        <div> 
-            
-                    <p  class="TITLE">Supervisor captura movimento oficina</p>
-                    
-            <p class="PARRAFO">A través de esta opción el sistema permite 
-              el ingreso manual del movimiento de transacciones de Pago, Avances, Pago de 
-              impuestos y Compras o consumos realizados por los clientes en los establecimientos. 
-              Adicionalmente, cuenta con la opción Detalle para la consulta de los 
-              movimientos cuando por efecto de errores en la captura o malas liquidaciones 
-              del movimiento, éste queda descuadrado, requiriendo de una autorización 
-              para ser procesado en la operación diaria. El procedimiento para capturar 
-              el movimiento es el siguiente: una vez se despliega el formulario se debe 
-              ingresar el código de la oficina o sucursal de la que se va a capturar 
-              movimiento, sumado a la transacción y la moneda, se escoge la opción adicionar y se ingresan los datos.</p>
-            <p class="PARRAFO">Si el    movimiento presenta alguna diferencia o descuadre es posible corregirlo    puesto que el sistema no permite procesar movimiento cuya captura presente un    estado diferente al de &lsquo;cuadrado&rsquo;, esto es, inconsistencias no    solamente en valor de los comprobantes, sino también en cantidad de    comprobantes, etc. Cada movimiento debe ser desagregado en todos sus    conceptos. En caso de que el movimiento requiera ser procesado con dichas    inconsistencias es necesario cambiar el estado del comprobante por el de &lsquo;ok    supervisor&rsquo; el cual indica que el movimiento se procesará de todas maneras.    El ingreso o no del valor de Descuento, depende del parámetro    correspondiente definido en la opción <a href="file:///C:/Users/aconde/AppData/Roaming/Skype/My%20Skype%20Received%20Files/NUH_055E.html#BL_CAPTURA">Parámetros    operativos</a> del grupo de Tablas de la entidad financiera del módulo    Núcleo; así mismo, la obligatoriedad o no de diligenciar determinados campos depende     de lo definido por la entidad en la opción <a href="file:///C:/Users/aconde/AppData/Roaming/Skype/My%20Skype%20Received%20Files/INH_003E.html">Parámetros    de captura</a> de este mismo módulo.</p>
-           
-            <p class="PARRAFO"><span class="SUBTITULO">Adicionar:</span>  De acuerdo a lo 
-              que se haya seleccionado en la opción Transacción, 
-              el sistema muestra el ingreso manual del movimiento de transacciones de <a href="INH_004B1.html" >Compras</a>, 
-              <a href="INH_004B2.html" >Avances</a>, <a href="INH_004B3.html" >Impuestos</a>, 
-              y <a href="INH_004B4.html" >Pagos</a>.    </p>
-            <p class="TITLE"><img src="../img/INF_004E.PNG"763" height="300"></p>
- </blockquote>
-            
-            <table>
-              <tr> 
-                <td  class="titletable" ><p class="SUBTITULO">Fecha 
-                    proceso </p></td>
-                <td><p class="PARRAFO">Campo 
-                    de salida o no ingresable, que contiene la fecha del sistema para la 
-                    cual se ingresa movimiento.</p></td>
-              </tr>
-              <tr> 
-                <td class="titletable"><p class="SUBTITULO">Oficina</p></td>
-                <td><p class="PARRAFO">Campo 
-                    obligatorio en el que se digita el código de la oficina para la cual se va 
-                    a capturar o supervisar (dependiendo de la opción dentro de menú) 
-                    el movimiento. Estos códigos corresponden a los definidos en 
-                    la tabla <a href="NUH_020B.html" >Estructura orgánica</a> del 
-                    Núcleo. Una vez ingresado el código, se ejecuta la consulta, 
-                    para proseguir con la captura.</p></td>
-              </tr>
-              <tr> 
-                <td  class="titletable" ><p class="SUBTITULO">Transacción</p></td>
-                <td><p class="PARRAFO">Campo obligatorio
-                    que posee lista de valores poblada en la opción <a href="NUH_027B.html" >Origen 
-                    de transacciones</a> del Núcleo de la cual se debe seleccionar 
-                    el código de la transacción correspondiente o digitar 
-                    el código válido de la misma, el sistema completará 
-                    con ceros a la izquierda. </p></td>
-              </tr>
-              <tr> 
-                <td class="titletable"><p class="SUBTITULO">Moneda</p></td>
-                <td><p class="PARRAFO">En 
-                    este campoobligatorio con lista de valores se debe seleccionar la <a href="NUH_005B.html" >Moneda</a> 
-                    que aplica para el movimiento a ingresar; el sistema despliega por defecto 
-                    la moneda definida en la opción <a href="NUH_006B.html" >Datos 
-                    de licenciamiento</a>.</p></td>
-              </tr>
-              <tr> 
-                <td  class="titletable" ><p class="SUBTITULO">Boleta 
-                    de ruta</p></td>
-                <td><p class="PARRAFO">Campo 
-                    numérico de 3 dígitos, obligatorio, corresponde a un segundo 
-                    nivel de clasificación o agrupación del movimiento a capturar 
-                    y pertenece al número consecutivo de los comprobantes de control 
-                    permitidos por cada oficina en la captura del movimiento, producto de 
-                    la operación diaria. Los rangos de estos consecutivos son determinados 
-                    previamente en la opción <a href="INH_037B.html" >Boletas de Ruta.</a></p></td>
-              </tr>
-            </table>
-            
-            <p class="PARRAFO"><span class="SUBTITULO">Detalle:</span>  Si el usuario invoca 
-              la opción Detalle se despliega el siguiente formulario. En él 
-              se puede consultar también la opción de localización, 
-              a través del globo ubicado en la parte superior derecha.<span
-              
-        ></p>
-            <p class="PARRAFO"><span >
+      <div>
+
+        <p class="TITLE">Supervisor captura movimento oficina</p>
+
+        <p class="PARRAFO">A través de esta opción el sistema permite
+          el ingreso manual del movimiento de transacciones de Pago, Avances,
+          Pago de
+          impuestos y Compras o consumos realizados por los clientes en los
+          establecimientos.
+          Adicionalmente, cuenta con la opción Detalle para la consulta de los
+          movimientos cuando por efecto de errores en la captura o malas
+          liquidaciones
+          del movimiento, éste queda descuadrado, requiriendo de una
+          autorización
+          para ser procesado en la operación diaria. El procedimiento para
+          capturar
+          el movimiento es el siguiente: una vez se despliega el formulario se
+          debe
+          ingresar el código de la oficina o sucursal de la que se va a capturar
+          movimiento, sumado a la transacción y la moneda, se escoge la opción
+          adicionar y se ingresan los datos.</p>
+        <p class="PARRAFO">Si el movimiento presenta alguna diferencia o
+          descuadre es posible corregirlo puesto que el sistema no permite
+          procesar movimiento cuya captura presente un estado diferente al de
+          &lsquo;cuadrado&rsquo;, esto es, inconsistencias no solamente en valor
+          de los comprobantes, sino también en cantidad de comprobantes, etc.
+          Cada movimiento debe ser desagregado en todos sus conceptos. En caso
+          de que el movimiento requiera ser procesado con dichas inconsistencias
+          es necesario cambiar el estado del comprobante por el de &lsquo;ok
+          supervisor&rsquo; el cual indica que el movimiento se procesará de
+          todas maneras. El ingreso o no del valor de Descuento, depende del
+          parámetro correspondiente definido en la opción <a
+            href="file:///C:/Users/aconde/AppData/Roaming/Skype/My%20Skype%20Received%20Files/NUH_055E.html#BL_CAPTURA">Parámetros
+            operativos</a> del grupo de Tablas de la entidad financiera del
+          módulo Núcleo; así mismo, la obligatoriedad o no de diligenciar
+          determinados campos depende de lo definido por la entidad en la opción
+          <a
+            href="file:///C:/Users/aconde/AppData/Roaming/Skype/My%20Skype%20Received%20Files/INH_003E.html">Parámetros
+            de captura</a> de este mismo módulo.</p>
+
+        <p class="PARRAFO"><span class="SUBTITULO">Adicionar:</span> De acuerdo
+          a lo
+          que se haya seleccionado en la opción Transacción,
+          el sistema muestra el ingreso manual del movimiento de transacciones
+          de <a href="INH_004B1.html">Compras</a>,
+          <a href="INH_004B2.html">Avances</a>, <a
+            href="INH_004B3.html">Impuestos</a>,
+          y <a href="INH_004B4.html">Pagos</a>. </p>
+        <p class="TITLE"><img src="../img/INF_004E.PNG"></p>
+      </blockquote>
+
+      <table>
+        <tr>
+          <td class="titletable"><p class="SUBTITULO">Fecha
+              proceso </p></td>
+          <td><p class="PARRAFO">Campo
+              de salida o no ingresable, que contiene la fecha del sistema para
+              la
+              cual se ingresa movimiento.</p></td>
+        </tr>
+        <tr>
+          <td class="titletable"><p class="SUBTITULO">Oficina</p></td>
+          <td><p class="PARRAFO">Campo
+              obligatorio en el que se digita el código de la oficina para la
+              cual se va
+              a capturar o supervisar (dependiendo de la opción dentro de menú)
+              el movimiento. Estos códigos corresponden a los definidos en
+              la tabla <a href="NUH_020B.html">Estructura orgánica</a> del
+              Núcleo. Una vez ingresado el código, se ejecuta la consulta,
+              para proseguir con la captura.</p></td>
+        </tr>
+        <tr>
+          <td class="titletable"><p class="SUBTITULO">Transacción</p></td>
+          <td><p class="PARRAFO">Campo obligatorio
+              que posee lista de valores poblada en la opción <a
+                href="NUH_027B.html">Origen
+                de transacciones</a> del Núcleo de la cual se debe seleccionar
+              el código de la transacción correspondiente o digitar
+              el código válido de la misma, el sistema completará
+              con ceros a la izquierda. </p></td>
+        </tr>
+        <tr>
+          <td class="titletable"><p class="SUBTITULO">Moneda</p></td>
+          <td><p class="PARRAFO">En
+              este campoobligatorio con lista de valores se debe seleccionar la
+              <a href="NUH_005B.html">Moneda</a>
+              que aplica para el movimiento a ingresar; el sistema despliega por
+              defecto
+              la moneda definida en la opción <a href="NUH_006B.html">Datos
+                de licenciamiento</a>.</p></td>
+        </tr>
+        <tr>
+          <td class="titletable"><p class="SUBTITULO">Boleta
+              de ruta</p></td>
+          <td><p class="PARRAFO">Campo
+              numérico de 3 dígitos, obligatorio, corresponde a un segundo
+              nivel de clasificación o agrupación del movimiento a capturar
+              y pertenece al número consecutivo de los comprobantes de control
+              permitidos por cada oficina en la captura del movimiento, producto
+              de
+              la operación diaria. Los rangos de estos consecutivos son
+              determinados
+              previamente en la opción <a href="INH_037B.html">Boletas de
+                Ruta.</a></p></td>
+        </tr>
+      </table>
+
+      <p class="PARRAFO"><span class="SUBTITULO">Detalle:</span> Si el usuario
+        invoca
+        la opción Detalle se despliega el siguiente formulario. En él
+        se puede consultar también la opción de localización,
+        a través del globo ubicado en la parte superior derecha.<span></p>
+        <p class="PARRAFO"><span>
             <div class="TITLE"><img src="../img/INF_004B10.PNG"></div>
-            </span> 
-            
-            <p class="TITLE"><span ><img src="../img/INF_004B11.PNG" ></p>
-            <p class="PARRAFO"> 
-            <p class="PARRAFO"><a name="Comprobantes"></a><span class="SUBTITULO">Comprobantes:</span>  
-              Conjunto de datos que detallan cada uno de los vouchers o comprobantes 
-              asociados a cada consignación. Cuenta con las opciones de Actualizar 
-              y Detalle.</p>
-            <p class="TITLE"><span ><img src="../img/INF_004B12.PNG"688" ></p>
-            <p class="PARRAFO"> 
-            <p class="PARRAFO"><span class="SUBTITULO" >Actualizar:</span><span > 
-              Si el usuario invoca la opción Actualizar se despliega un nuevo formulario 
-              en el cual los únicos campos modificables son: Número tarjeta, 
-              Número comprobante, Fecha comprobante, Número autorización, 
-              Plazo, y Causal.</p>
-            <p class="TITLE"><span ><img src="../img/INF_004B13.PNG"></p>
-            
-            <span >Igualmente se pueden invocar los campos 
-            de la opción de localización, aunque ninguno de ellos es modificable.</p> 
-            <p class="TITLE"><span ><img src="../img/INF_004B14.PNG"></p>
-              
-            <p class="PARRAFO"><a href="INH_004B1.html">Compras</a><span
-              > | </span><a href="INH_004B2.html">Avances</a><span > 
-              | </span><a href="INH_004B3.html">Impuestos</a><span
-              > | </span><a href="INH_004B4.html">Pagos</a></p>
-          </div>  
-        </section>
-    <script src="../js/menu.js"></script>
-</body>
-<div id="footerContainer"></div>
-<script>
+          </span>
+
+          <p class="TITLE"><span><img src="../img/INF_004B11.PNG"></p>
+            <p class="PARRAFO">
+              <p class="PARRAFO"><a name="Comprobantes"></a><span
+                  class="SUBTITULO">Comprobantes:</span>
+                Conjunto de datos que detallan cada uno de los vouchers o
+                comprobantes
+                asociados a cada consignación. Cuenta con las opciones de
+                Actualizar
+                y Detalle.</p>
+              <p class="TITLE"><span><img src="../img/INF_004B12.PNG"></p>
+                <p class="PARRAFO">
+                  <p class="PARRAFO"><span
+                      class="SUBTITULO">Actualizar:</span><span>
+                       Al activar ese enlace  se despliega un
+                      nuevo formulario
+                      en el cual los únicos campos modificables son: Número
+                      tarjeta,
+                      Número comprobante, Fecha comprobante, Número
+                      autorización,
+                      Plazo, y Causal.</p>
+                    <p class="TITLE"><span><img src="../img/INF_004B13.PNG"></p>
+
+                      <span>Igualmente se pueden invocar los campos
+                        de la opción de localización, aunque ninguno de ellos es
+                        modificable.</p>
+                      <p class="TITLE"><span><img
+                            src="../img/INF_004B14.PNG"></p>
+
+                        <p class="PARRAFO"><a
+                            href="INH_004B1.html">Compras</a><span> | </span><a
+                            href="INH_004B2.html">Avances</a><span>
+                            | </span><a
+                            href="INH_004B3.html">Impuestos</a><span> |
+                          </span><a href="INH_004B4.html">Pagos</a></p>
+                      </div>
+                    </section>
+                    <script src="../js/menu.js"></script>
+                  </body>
+                  <div id="footerContainer"></div>
+                  <script>
   fetch('footer.html')
     .then(response => response.text())
     .then(html => {
       document.getElementById('footerContainer').innerHTML = html;
     });
 </script>
-</html>
+                </html>

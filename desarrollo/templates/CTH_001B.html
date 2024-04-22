@@ -1,25 +1,25 @@
 <!DOCTYPE html>
 <html lang="es">
 
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>BANKBU®</title>
-  <link rel="stylesheet" href="../css/pages.css">
-  <link rel="stylesheet" href="../css/style.css">
-  <link rel="icon" href="../img/ACQUIRER-logo.JPG" type="image/x-icon">
-</head>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BANKBU®</title>
+    <link rel="stylesheet" href="../css/pages.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="icon" href="../img/ACQUIRER-logo.JPG" type="image/x-icon">
+  </head>
 
-<body>
+  <body>
 
-  <header>
-    <img class="logo" src="../img/logoBankbu_.PNG" alt="Logo de Mi Empresa">
-    <div id="menuBtn">
-      <img class="TITLE" src="../img/menu.PNG" alt="Botón de Menú ">
-    </div>
-  </header>
+    <header>
+      <img class="logo" src="../img/logoBankbu_.PNG" alt="Logo de Mi Empresa">
+      <div id="menuBtn">
+        <img class="TITLE" src="../img/menu.PNG" alt="Botón de Menú ">
+      </div>
+    </header>
     <div id="menuContainer"></div>
-  <script>
+    <script>
     fetch('menu.html')
       .then(response => response.text())
       .then(html => {
@@ -27,266 +27,314 @@
       });
   </script>
 
-  <section>
-    <div>
-      
-              <p class="TITLE">Parámetros contables</p>
+    <section>
+      <div>
 
-      <p class="PARRAFO">Desde este formulario la entidad puede definir
-        todos los conceptos que se tendrán en cuenta para la generación
-        de la información contable requerida. Debe tenerse en cuenta que cuando
-        se vaya a efectuar la parametrización relacionada con productos Débito
-        algunos formularios y campos no son aplicables, lo cual se indicará
-        a lo largo del presente documento.</p>
-      <p class="PARRAFO">La opción contiene cuatro hipervínculos
-        que permiten invocar otros formulario desde los cuales se parametriza la información
-        correspondiente al <a href="CTH_001B.html#BL_EJERCICIO">Ejercicio
+        <p class="TITLE">Parámetros contables</p>
+
+        <p class="PARRAFO">Desde este formulario la entidad puede definir
+          todos los conceptos que se tendrán en cuenta para la generación
+          de la información contable requerida. Debe tenerse en cuenta que
+          cuando
+          se vaya a efectuar la parametrización relacionada con productos Débito
+          algunos formularios y campos no son aplicables, lo cual se indicará
+          a lo largo del presente documento.</p>
+        <p class="PARRAFO">La opción contiene cuatro hipervínculos
+          que permiten invocar otros formulario desde los cuales se parametriza
+          la información
+          correspondiente al <a href="CTH_001B.html#BL_EJERCICIO">Ejercicio
             contable</a>, <a href="CTH_001B.html#BL_PLAN">Plan contable</a>,
-          <a href="CTH_001B.html#BL_TERCEROS">Tercero</a> y <a href="CTH_001B.html#BL_CHEQUEO">Chequeo</a>.</p>
-      <p class="PARRAFO">El formulario de análisis contable
-        contiene las opciones Actualizar y Eliminar.</p>
-      <p class="TITLE"><img src="../img/CTF_001E.PNG"></p>
+          <a href="CTH_001B.html#BL_TERCEROS">Tercero</a> y <a
+            href="CTH_001B.html#BL_CHEQUEO">Chequeo</a>.</p>
+        <p class="PARRAFO">El formulario de análisis contable
+          contiene los enlaces:Actualizar y Eliminar.</p>
+        <p class="TITLE"><img src="../img/CTF_001E.PNG"></p>
 
-      <p class="PARRAFO"><a name="Manejocontabilidad"></a><span class="SUBTITULO"> Actualizar</span> :
-        Si el usuario invoca la opción Actualizar se despliega un nuevo formulario
-        que se encuentra dividido en tres bloques de datos: Afecta cuenta, Mayorización
-        y Datos cuadre contable con los siguientes campos:</p>
-      <p class="TITLE"><img src="../img/CTF_001E1.PNG"></p>
+        <p class="PARRAFO"><a name="Manejocontabilidad"></a><span
+            class="SUBTITULO"> Actualizar</span> :
+           Al activar ese enlace  se despliega un nuevo
+          formulario
+          que se encuentra dividido en tres bloques de datos: Afecta cuenta,
+          Mayorización
+          y Datos cuadre contable con los siguientes campos:</p>
+        <p class="TITLE"><img src="../img/CTF_001E1.PNG"></p>
 
-      <p class="TITLE">Descripción de campos</p>
+        <p class="TITLE">Descripción de campos</p>
 
-
-      <table>
-        <tr>
-          <td class="titletable">
-            <p class="SUBTITULO">Manejo
+        <table>
+          <tr>
+            <td class="titletable">
+              <p class="SUBTITULO">Manejo
                 contabilidad
               </p>
-          </td>
-          <td>
-            <p class="PARRAFO">En
-              este campo obligatorio tipo combo se selecciona entre Edad mora, Calificación externa, Calificación
+            </td>
+            <td>
+              <p class="PARRAFO">En
+                este campo obligatorio tipo combo se selecciona entre Edad mora,
+                Calificación externa, Calificación
                 provisión o
                 Calificación sistema,
-              la manera de registrar la contabilidad de acuerdo con el estado de los saldos del cliente, respecto a la
-              maduración de su cartera.</p>
-          </td>
-        </tr>
+                la manera de registrar la contabilidad de acuerdo con el estado
+                de los saldos del cliente, respecto a la
+                maduración de su cartera.</p>
+            </td>
+          </tr>
 
-        <tr>
-          <td class="titletable">
-            <p class="SUBTITULO">Homologación
+          <tr>
+            <td class="titletable">
+              <p class="SUBTITULO">Homologación
                 producto
               </p>
-          </td>
-          <td>
-            <p class="PARRAFO">Campo
-              tipo combo, obligatorio, en el que se puede seleccionar entre Si o No
-              se debe verificar la calificación de todos los productos que
-              el cliente posea con la entidad y que sean administrados por el sistema
-              aplicando a todos los productos del cliente la mas alta (mala) registrada.</p>
-          </td>
-        </tr>
-        <tr>
-          <td class="titletable">
-            <p class="SUBTITULO">Homologación
+            </td>
+            <td>
+              <p class="PARRAFO">Campo
+                tipo combo, obligatorio, en el que se puede seleccionar entre Si
+                o No
+                se debe verificar la calificación de todos los productos que
+                el cliente posea con la entidad y que sean administrados por el
+                sistema
+                aplicando a todos los productos del cliente la mas alta (mala)
+                registrada.</p>
+            </td>
+          </tr>
+          <tr>
+            <td class="titletable">
+              <p class="SUBTITULO">Homologación
                 externa
               </p>
-          </td>
-          <td>
-            <p class="PARRAFO">En
-              este campo tipo combo, obligatorio, se indica Si o No la calificación
-              obtenida por en la homolgación por producto, se debe homologar
-              con otras calificaciones obtenidas de sistemas externos a el sistema.
-              Es importante se&ntilde;alar que la entidad puede hacer la homologación
-              por producto sin requerir la externa, pero no al contrario, es decir,
-              si se va a hacer homologación externa se requiere obligatoriamente
-              que exista previamente la homologación por producto.</p>
-          </td>
-        </tr>
+            </td>
+            <td>
+              <p class="PARRAFO">En
+                este campo tipo combo, obligatorio, se indica Si o No la
+                calificación
+                obtenida por en la homolgación por producto, se debe homologar
+                con otras calificaciones obtenidas de sistemas externos a el
+                sistema.
+                Es importante se&ntilde;alar que la entidad puede hacer la
+                homologación
+                por producto sin requerir la externa, pero no al contrario, es
+                decir,
+                si se va a hacer homologación externa se requiere
+                obligatoriamente
+                que exista previamente la homologación por producto.</p>
+            </td>
+          </tr>
 
-        <tr>
-          <td class="titletable">
-            <p class="SUBTITULO">Afecta
+          <tr>
+            <td class="titletable">
+              <p class="SUBTITULO">Afecta
                 provisiones</p>
-          </td>
-          <td>
-            <p class="PARRAFO">Campo
-              obligatorio tipo combo en el que se selecciona entre Afectación por modalidad
-              o Afectación por tipo de cartera la manera como se hará
-              la provisión sobre la cartera de la entidad siempre y cuando
-              ésta se haga en el sistema.
-              Los porcentajes a aprovisionar se parametrizan para cada modalidad o
-              tipo de cartera en la opción <a href="NUH_066B.html">Calificaciones</a>.</p>
-          </td>
-        </tr>
+            </td>
+            <td>
+              <p class="PARRAFO">Campo
+                obligatorio tipo combo en el que se selecciona entre Afectación
+                por modalidad
+                o Afectación por tipo de cartera la manera como se hará
+                la provisión sobre la cartera de la entidad siempre y cuando
+                ésta se haga en el sistema.
+                Los porcentajes a aprovisionar se parametrizan para cada
+                modalidad o
+                tipo de cartera en la opción <a
+                  href="NUH_066B.html">Calificaciones</a>.</p>
+            </td>
+          </tr>
 
-        <tr>
-          <td class="titletable">
-            <p class="SUBTITULO">Afecta
+          <tr>
+            <td class="titletable">
+              <p class="SUBTITULO">Afecta
                 contingentes
               </p>
-          </td>
-          <td>
-            <p class="PARRAFO">Este campo
-              es de salida y muestra siempre el valor No, para indicar que la afectación de contingentes
-              no se hace por transacción
-              sino cuando la entidad ejecute el proceso respectivo bien sea diariamente, mensualmente,
-              etc.</p>
-          </td>
-        </tr>
+            </td>
+            <td>
+              <p class="PARRAFO">Este campo
+                es de salida y muestra siempre el valor No, para indicar que la
+                afectación de contingentes
+                no se hace por transacción
+                sino cuando la entidad ejecute el proceso respectivo bien sea
+                diariamente, mensualmente,
+                etc.</p>
+            </td>
+          </tr>
 
-        <tr>
-          <td class="titletable">
-            <p class="SUBTITULO">Contabilidad pagarés
+          <tr>
+            <td class="titletable">
+              <p class="SUBTITULO">Contabilidad pagarés
               </p>
-          </td>
-          <td>
-            <p class="PARRAFO">Campo
-              tipo combo que permite indicar Si o No al momento de aprobar o cancelar un
-              crédito se debe generar el registro contable con base en el documento que garantíza el
-              mismo.</p>
-          </td>
-        </tr>
-        <tr>
-          <td class="titletable">
-            <p class="SUBTITULO">Nivel consolidación cuenta
+            </td>
+            <td>
+              <p class="PARRAFO">Campo
+                tipo combo que permite indicar Si o No al momento de aprobar o
+                cancelar un
+                crédito se debe generar el registro contable con base en el
+                documento que garantíza el
+                mismo.</p>
+            </td>
+          </tr>
+          <tr>
+            <td class="titletable">
+              <p class="SUBTITULO">Nivel consolidación cuenta
               </p>
-          </td>
-          <td>
-            <p class="PARRAFO">En este campo
-              se registra el nivel de mayorización con el cual se generará la interface con destino al
-              sistema contable central de la entidad de acuerdo con los niveles de mayorización que se definen en
-              los campos siguientes.</p>
-          </td>
-        </tr>
-        <tr>
-          <td class="titletable">
-            <p class="SUBTITULO">Nivel
+            </td>
+            <td>
+              <p class="PARRAFO">En este campo
+                se registra el nivel de mayorización con el cual se generará la
+                interface con destino al
+                sistema contable central de la entidad de acuerdo con los
+                niveles de mayorización que se definen en
+                los campos siguientes.</p>
+            </td>
+          </tr>
+          <tr>
+            <td class="titletable">
+              <p class="SUBTITULO">Nivel
                 1 / 2 / 3 / 4
               </p>
-          </td>
-          <td>
-            <p class="PARRAFO">Campos
-              obligatorios que le permiten a la entidad definire el nivel de agrupamiento
-              o número de posiciones de la cuenta contable con la cual será
-              mostrada la información contable. Por ejemplo, si la entidad
-              define que el nivel 1 será de 4 posiciones, dicha cuenta debe
-              parametrizarse y se&ntilde;alarse como cuenta mayor para que los valores
-              que se afectaron por cada cuenta sean sumados y mostrados en dicho nivel.
-              Igual opera para los demás niveles, teniendo siempre presente
-              que de los parámetros aquí definidos depende la condensación
-              de la información que se reflejará en la opción
-              <a href="CTH_002B.html"> análisis contable</a>.
-              Todos son campos numéricos de hasta 2 posiciones, que contienen
-              un rango de 1 hasta 19 correspondiente al total de posiciones de la
-              cuenta contable, donde se digita el número de posiciones a asignar
-              a cada nivel de mayorización de acuerdo con los procedimientos
-              contables de la entidad. Es importante aclarar que el nivel cuatro debe
-              corresponder al de mayor número de posiciones de la cuenta contable.
-            </p>
-          </td>
-        </tr>
-        <tr>
-          <td class="titletable">
-            <p class="SUBTITULO">Cuenta
+            </td>
+            <td>
+              <p class="PARRAFO">Campos
+                obligatorios que le permiten a la entidad definire el nivel de
+                agrupamiento
+                o número de posiciones de la cuenta contable con la cual será
+                mostrada la información contable. Por ejemplo, si la entidad
+                define que el nivel 1 será de 4 posiciones, dicha cuenta debe
+                parametrizarse y se&ntilde;alarse como cuenta mayor para que los
+                valores
+                que se afectaron por cada cuenta sean sumados y mostrados en
+                dicho nivel.
+                Igual opera para los demás niveles, teniendo siempre presente
+                que de los parámetros aquí definidos depende la condensación
+                de la información que se reflejará en la opción
+                <a href="CTH_002B.html"> análisis contable</a>.
+                Todos son campos numéricos de hasta 2 posiciones, que contienen
+                un rango de 1 hasta 19 correspondiente al total de posiciones de
+                la
+                cuenta contable, donde se digita el número de posiciones a
+                asignar
+                a cada nivel de mayorización de acuerdo con los procedimientos
+                contables de la entidad. Es importante aclarar que el nivel
+                cuatro debe
+                corresponder al de mayor número de posiciones de la cuenta
+                contable.
+              </p>
+            </td>
+          </tr>
+          <tr>
+            <td class="titletable">
+              <p class="SUBTITULO">Cuenta
                 débito
               </p>
-          </td>
-          <td>
-            <p class="PARRAFO">En
-              este campo con lista de valores se puede seleccionar la cuenta que se
-              va a utilizar para efectuar los ajustes por descuadres de tipo débito
-              presentados en el movimiento y que se ven reflejados en el <a href="CTH_002B.html">análisis
+            </td>
+            <td>
+              <p class="PARRAFO">En
+                este campo con lista de valores se puede seleccionar la cuenta
+                que se
+                va a utilizar para efectuar los ajustes por descuadres de tipo
+                débito
+                presentados en el movimiento y que se ven reflejados en el <a
+                  href="CTH_002B.html">análisis
                   contable</a>.
-            </p>
-          </td>
-        </tr>
-        <tr>
-          <td class="titletable">
-            <p class="SUBTITULO">Cuenta
+              </p>
+            </td>
+          </tr>
+          <tr>
+            <td class="titletable">
+              <p class="SUBTITULO">Cuenta
                 débito orden
               </p>
-          </td>
-          <td>
-            <p class="PARRAFO">Campo
-              con lista de valores en el que se puede seleccionar la cuenta que se
-              va a utilizar para efectuar los ajustes para cuentas de orden por descuadres
-              de tipo débito presentados en el movimiento.</p>
-          </td>
-        </tr>
+            </td>
+            <td>
+              <p class="PARRAFO">Campo
+                con lista de valores en el que se puede seleccionar la cuenta
+                que se
+                va a utilizar para efectuar los ajustes para cuentas de orden
+                por descuadres
+                de tipo débito presentados en el movimiento.</p>
+            </td>
+          </tr>
 
-        <tr>
-          <td class="titletable">
-            <p class="SUBTITULO">Monto
+          <tr>
+            <td class="titletable">
+              <p class="SUBTITULO">Monto
                 máximo débito
               </p>
-          </td>
-          <td>
-            <p class="PARRAFO">En
-              este campo numérico de hasta 14 enteros y 2 decimales se registra
-              el valor máximo hasta el cual se podrán efectuar ajustes
-              tipo débito en las cuentas respectivas.</p>
-          </td>
-        </tr>
-        <tr>
-          <td class="titletable">
-            <p class="SUBTITULO">Cuenta
+            </td>
+            <td>
+              <p class="PARRAFO">En
+                este campo numérico de hasta 14 enteros y 2 decimales se
+                registra
+                el valor máximo hasta el cual se podrán efectuar ajustes
+                tipo débito en las cuentas respectivas.</p>
+            </td>
+          </tr>
+          <tr>
+            <td class="titletable">
+              <p class="SUBTITULO">Cuenta
                 crédito
               </p>
-          </td>
-          <td>
-            <p class="PARRAFO">En
-              este campo con lista de valores se puede seleccionar la cuenta que se
-              va a utilizar para efectuar los ajustes por descuadres de tipo crédito
-              presentados en el movimiento y reflejados en el <a href="CTH_002B.html">análisis
+            </td>
+            <td>
+              <p class="PARRAFO">En
+                este campo con lista de valores se puede seleccionar la cuenta
+                que se
+                va a utilizar para efectuar los ajustes por descuadres de tipo
+                crédito
+                presentados en el movimiento y reflejados en el <a
+                  href="CTH_002B.html">análisis
                   contable</a>..
-            </p>
-          </td>
-        </tr>
+              </p>
+            </td>
+          </tr>
 
-        <tr>
-          <td class="titletable">
-            <p class="SUBTITULO">Cuenta
+          <tr>
+            <td class="titletable">
+              <p class="SUBTITULO">Cuenta
                 crédito orden
               </p>
-          </td>
-          <td>
-            <p class="PARRAFO">Campo
-              con lista de valores en el que se puede seleccionar la cuenta que se
-              va a utilizar para efectuar los ajustes para cuentas de orden por descuadres
-              de tipo crédito presentados en el movimiento.</p>
-          </td>
-        </tr>
+            </td>
+            <td>
+              <p class="PARRAFO">Campo
+                con lista de valores en el que se puede seleccionar la cuenta
+                que se
+                va a utilizar para efectuar los ajustes para cuentas de orden
+                por descuadres
+                de tipo crédito presentados en el movimiento.</p>
+            </td>
+          </tr>
 
-        <tr>
-          <td class="titletable">
-            <p class="SUBTITULO">Monto
+          <tr>
+            <td class="titletable">
+              <p class="SUBTITULO">Monto
                 máximo crédito
               </p>
-          </td>
-          <td>
-            <p class="PARRAFO">Campo
-              numérico de hasta 14 enteros y 2 decimales en el que se indica
-              el valor máximo hasta el cual se podrán efectuar ajustes
-              tipo crédito en las respectivas cuentas parametrizadas anteriormente.</p>
-          </td>
-        </tr>
-      </table>
+            </td>
+            <td>
+              <p class="PARRAFO">Campo
+                numérico de hasta 14 enteros y 2 decimales en el que se indica
+                el valor máximo hasta el cual se podrán efectuar ajustes
+                tipo crédito en las respectivas cuentas parametrizadas
+                anteriormente.</p>
+            </td>
+          </tr>
+        </table>
 
-      <p class="PARRAFO"><span class="PARRAFO"><a name="BL_EJERCICIO"></a><span class="SUBTITULO">Ejercicio
-                contable</span>:</span></span> 
-          si el usuario invoca el hiperv&igrave;nculo Ejercicio contable se
-          despliega un nuevo formulario que permite definir las fechas en las cuales
-          se van a efectuar los cierres de ejercicio contable de acuerdo con la legislación
-          vigente y/o a las políticas de la entidad</span> .
+        <p class="PARRAFO"><span class="PARRAFO"><a
+              name="BL_EJERCICIO"></a><span class="SUBTITULO">Ejercicio
+              contable</span>:</span></span>
+        si el usuario invoca el hiperv&igrave;nculo Ejercicio contable se
+        despliega un formulario que permite definir las fechas en las
+        cuales
+        se van a efectuar los cierres de ejercicio contable de acuerdo con la
+        legislación
+        vigente y/o a las políticas de la entidad</span> .
       <p class="TITLE"><img src="../img/CTF_001E2.PNG"></p>
 
       <div class="PARRAFO">
-        <p class="PARRAFO">El formulario de contiene las opciones Adicionar, Actualizar
+        <p class="PARRAFO">El formulario de contiene los enlaces:Adicionar,
+          Actualizar
           y Eliminar.</p>
         <p class="PARRAFO"><span class="SUBTITULO">Adicionar</span> :
-          Si el usuario invoca la opción Adicionar se despliega un nuevo formulario
+          Al activar ese enlace se despliega un nuevo
+          formulario
           con los siguientes campos.</p>
         <p class="TITLE"><img src="../img/CTF_001E3.PNG"></p>
         <p class="TITLE">Descripción de campos</p>
@@ -295,1122 +343,537 @@
           <tr>
             <td class="titletable">
               <p class="SUBTITULO">Número
-                </p>
+              </p>
             </td>
             <td>
-              <p class="PARRAFO">	
-                Campo numérico de hasta 2 dígitos, obligatorio, en el que se registra de manera secuencial el orden o consecutivo del ejercicio contable para el cual se van a definir sus fechas.</p>
+              <p class="PARRAFO">
+                Campo numérico de hasta 2 dígitos, obligatorio, en el que se
+                registra de manera secuencial el orden o consecutivo del
+                ejercicio contable para el cual se van a definir sus fechas.</p>
             </td>
           </tr>
           <tr>
             <td class="titletable">
               <p class="SUBTITULO">Fecha
-                  inicial
+                inicial
 
-
-                </p>
+              </p>
             </td>
             <td>
-              <p class="PARRAFO">Este campo obligatorio que ofrece la funcionalidad de un calendario, en el que se debe registrar la fecha a partir de la cual comienza el ejercicio contable, correspondiente al consecutivo o secuencia anterior.</p>
+              <p class="PARRAFO">Este campo obligatorio que ofrece la
+                funcionalidad de un calendario, en el que se debe registrar la
+                fecha a partir de la cual comienza el ejercicio contable,
+                correspondiente al consecutivo o secuencia anterior.</p>
             </td>
           </tr>
           <tr>
             <td class="titletable">
               <p class="SUBTITULO">Fecha
-                  final
+                final
 
-
-                </p>
+              </p>
             </td>
             <td>
-              <p class="PARRAFO">	
-                Campo obligatorio que ofrece la funcionalidad de un calendario, en el que en el que se debe indicar la fecha en la que finaliza el ejercicio contable.</p>
+              <p class="PARRAFO">
+                Campo obligatorio que ofrece la funcionalidad de un calendario,
+                en el que en el que se debe indicar la fecha en la que finaliza
+                el ejercicio contable.</p>
             </td>
           </tr>
         </table>
-        <p class="PARRAFO"><span class="SUBTITULO">Actualizar:</span>  Si el usuario
+        <p class="PARRAFO"><span class="SUBTITULO">Actualizar:</span> Si el
+          usuario
           selecciona un registro invoca la opción Actualizar se despliega un
-          formulario en el cual los campos modificables son Fecha inicial y Fecha
+          formulario en el cual los campos modificables son Fecha inicial y
+          Fecha
           final.</p>
         <p class="TITLE"><img src="../img/CTF_001E4.PNG"></p>
 
-        <p class="PARRAFO"><a name="BL_PLAN"></a><span class="SUBTITULO">Plan contable:</span>  Si el usuario invoca el hiperv&igrave;nculo Plan contable se despliega
-          un nuevo formulario que permite a la entidad parametrizar las cuentas contables
-          a utilizar para el registro de sus operaciones diarias así como definir
+        <p class="PARRAFO"><a name="BL_PLAN"></a><span class="SUBTITULO">Plan
+            contable:</span> Si el usuario invoca el hiperv&igrave;nculo Plan
+          contable se despliega
+          un nuevo formulario que permite a la entidad parametrizar las cuentas
+          contables
+          a utilizar para el registro de sus operaciones diarias así como
+          definir
           las características de dichas cuentas. Este formulario cuenta
-          con tres hipervínculos que le permiten al usuario <a href="CTH_001B.html#BL_COPIAR">Copiar
-            una cuenta</a>, <a href="CTH_001B.html#BL_MOVER">Mover una cuenta</a>
+          con tres hipervínculos que le permiten al usuario <a
+            href="CTH_001B.html#BL_COPIAR">Copiar
+            una cuenta</a>, <a href="CTH_001B.html#BL_MOVER">Mover una
+            cuenta</a>
           y parametrizar el <a href="CTH_001B.html#BL_AGRUPACION">Nivel
-              general de agrupación contable</a></span> .
-        </p>
-        <p class="TITLE"><img src="../img/CTF_001E5.PNG"></p>
+            general de agrupación contable</a></span> .
+      </p>
+      <p class="TITLE"><img src="../img/CTF_001E5.PNG"></p>
 
-        <p class="PARRAFO">La opción cuenta con un filtro que le permite a la entidad, efectuar consultas específicas por el <em>Tipo de cuenta, Cuenta o Naturaleza</em>  de la misma.
-        </p>
-        <p class="TITLE"><img src="../img/CTF_001E6.PNG"></p>
-        <p class="PARRAFO">El formulario de contiene las opciones Actualizar,
-          Eliminar, Adicionar y Detalle.</p>
-        <p class="PARRAFO"><span class="SUBTITULO">Adicionar:</span>  Si el usuario
-          invoca la opción Adicionar se despliega un nuevo formulario con los
-          siguientes campos.</p>
-        <p class="TITLE"><img src="../img/CTF_001E7.PNG"></p>
+      <p class="PARRAFO">La opción cuenta con un filtro que le permite a la
+        entidad, efectuar consultas específicas por el <em>Tipo de cuenta,
+          Cuenta o Naturaleza</em> de la misma.
+      </p>
+      <p class="TITLE"><img src="../img/CTF_001E6.PNG"></p>
+      <p class="PARRAFO">El formulario de contiene los enlaces:Actualizar,
+        Eliminar, Adicionar y Detalle.</p>
+      <p class="PARRAFO"><span class="SUBTITULO">Adicionar:</span> Si el usuario
+        invoca la opción Adicionar se despliega un formulario con los
+        siguientes campos.</p>
+      <p class="TITLE"><img src="../img/CTF_001E7.PNG"></p>
 
-        <div class="PARRAFO">
-          <p class="TITLE">Descripción de campos</p>
-          <table>
-            <tr>
-              <td class="titletable">
-                <p class="SUBTITULO">Número
-                  </p>
-              </td>
-              <td>
-                <p class="PARRAFO">En
-                  este campo numérico de hasta 19 dígitos, obligatorio,
-                  se registra el código de la cuenta contable.</p>
-              </td>
-            </tr>
-            <tr>
-              <td class="titletable">
-                <p class="SUBTITULO">Descripción
-
-
-                  </p>
-              </td>
-              <td>
-                <p class="PARRAFO">Campo
-                  alfanumérico de 60 caracteres, obligatorio, en el que se
-                  indica el nombre o descripción de la cuenta contable.
-                </p>
-              </td>
-            </tr>
-            <tr>
-              <td class="titletable">
-                <p class="SUBTITULO">Tipo
-                    cuenta
-                  </p>
-              </td>
-              <td>
-                <p class="PARRAFO">En
-                  este campo tipo combo, obligatorio, se selecciona entre Mayor
-                  o Detalle la característica de la cuenta. Si se
-                  indica Mayor, con excepción del campo Naturaleza,
-                  los demás contenidos en este formulario se inhabilitan.</p>
-              </td>
-            </tr>
-            <tr>
-              <td class="titletable">
-                <p class="SUBTITULO">Naturaleza
-                  </p>
-              </td>
-              <td>
-                <p class="PARRAFO">Campo
-                  obligatorio tipo combo en el que se selecciona entre Débito
-                  o Crédito la naturaleza propia de la cuenta de acuerdo
-                  con los principios de contabilidad generalmente aceptados.</p>
-              </td>
-            </tr>
-            <tr>
-              <td class="titletable">
-                <p class="SUBTITULO">Sucursal
-                  </p>
-              </td>
-              <td>
-                <p class="PARRAFO">En
-                  este campo obligatorio tipo combo se indica Si o No
-                  la cuenta pertenece a sucursales o agencias.</p>
-              </td>
-            </tr>
-            <tr>
-              <td class="titletable">
-                <p class="SUBTITULO">Oficina
-                  </p>
-              </td>
-              <td>
-                <p class="PARRAFO">Campo
-                  obligatorio tipo combo que permite seleccionar entre Si
-                  o No la cuenta es base para determinar la distribución
-                  de utilidades por oficina.</p>
-              </td>
-            </tr>
-            <tr>
-              <td class="titletable">
-                <p class="SUBTITULO">Acumula
-                    mes
-                  </p>
-              </td>
-              <td>
-                <p class="PARRAFO">En
-                  este campo obligatorio tipo combo se indica Si o No
-                  la cuenta acumula saldos mes a mes.
-                </p>
-              </td>
-            </tr>
-            <tr>
-              <td class="titletable">
-                <p class="SUBTITULO">Ajustes
-                  </p>
-              </td>
-              <td>
-                <p class="PARRAFO">Campo
-                  obligatorio tipo combo que permite seleccionar entre Si
-                  o No la cuenta permite efectuar ajustes a la misma.</p>
-              </td>
-            </tr>
-            <tr>
-              <td class="titletable">
-                <p class="SUBTITULO">Conversión
-                    moneda
-                  </p>
-              </td>
-              <td>
-                <p class="PARRAFO">En
-                  este campo obligatorio tipo combo se indica Si o No
-                  la cuenta realiza el proceso de conversión del tipo de moneda
-                  del registro a la utilizada como patrón.</p>
-              </td>
-            </tr>
-
-            <tr>
-              <td class="titletable">
-                <p class="SUBTITULO">Resultados
-                  </p>
-              </td>
-              <td>
-                <p class="PARRAFO">Campo
-                  obligatorio tipo combo que permite seleccionar entre Si
-                  o No la cuenta contable que se está definiendo pertenece
-                  a una cuenta de resultados, para efectos de iniciación de
-                  saldos en cada ejercicio contable. </p>
-              </td>
-            </tr>
-
-            <tr>
-              <td class="titletable">
-                <p class="SUBTITULO">Impuestos
-                  </p>
-              </td>
-              <td>
-                <p class="PARRAFO">En
-                  este campo obligatorio tipo combo se indica Si o No
-                  la cuenta corresponde a registros de impuestos.</p>
-              </td>
-            </tr>
-
-            <tr>
-              <td class="titletable">
-                <p class="SUBTITULO">Provisión
-                  </p>
-              </td>
-              <td>
-                <p class="PARRAFO">Campo
-                  obligatorio tipo combo que permite seleccionar entre Si
-                  o No la cuenta corresponde a provisión de cartera,
-                  intereses y comisiones, para efectos de la generación de
-                  la información correspondiente.</p>
-              </td>
-            </tr>
-
-            <tr>
-              <td class="titletable">
-                <p class="SUBTITULO">Terceros
-                  </p>
-              </td>
-              <td>
-                <p class="PARRAFO">En
-                  este campo obligatorio tipo combo se indica Si o No
-                  la cuenta tiene manejo de terceros para mostrar la información
-                  de identificación de la persona o comercio que generó
-                  el movimiento. Solo cuando se ha seleccionado la opción Si,
-                  se habilitan los campos Tipo identificación y Número
-                    identificación. </p>
-              </td>
-            </tr>
-
-            <tr>
-              <td class="titletable">
-                <p class="SUBTITULO">Tipo
-                    identificación
-                  </p>
-              </td>
-              <td>
-                <p class="PARRAFO">Campo
-                  con lista de valores de la cual se selecciona el tipo de documento
-                  de identidad correspondiente al tercero asociado con la cuenta.</p>
-              </td>
-            </tr>
-
-            <tr>
-              <td class="titletable">
-                <p class="SUBTITULO">Número
-                    identificación
-                  </p>
-              </td>
-              <td>
-                <p class="PARRAFO">En
-                  este campo alfanumérico de hasta 16 caracteres se registra
-                  el número de identificación del tercero asociado a
-                  la cuenta.</p>
-              </td>
-            </tr>
-          </table>
-          <p class="PARRAFO"><span class="SUBTITULO">Actualizar:</span>  Si el usuario
-            selecciona un registro invoca la opción Actualizar se despliega
-            un formulario en el cual el único campo NO modificable es el Número
-            de la cuenta siempre y cuando el tipo de cuenta sea Detalle. Cuando el tipo de cuenta es Mayor los
-            únicos campos modificables son Descripción, Tipo cuenta y Naturaleza. </p>
-          <p class="TITLE"><img src="../img/CTF_001E8.PNG"></p>
-          <p class="PARRAFO"><span class="SUBTITULO">Detalle:</span>  Si el usuario
-            selecciona un registro invoca la opción Detalle se despliega un
-            formulario en el cual ninguno de sus campos es modificable.</p>
-          <p class="TITLE"><img src="../img/CTF_001E9.PNG"></p>
-          <p class="PARRAFO"><a name="BL_COPIAR"></a><span class="SUBTITULO">Copiar
-                    cuenta:</span> 
-                    si el usuario invoca el enlace Copiar cuenta, se despliega un nuevo formulario que permite a la entidad filtrar los parámetros actuales de una cuenta para replicarlos en otra cuenta diferente. </p>
-          <p class="TITLE"><img src="../img/CTF_001E10.PNG"></p>
-          <p class="TITLE">Descripción de campos</p>
-          <table>
-            <tr>
-              <td>
-                <p class="SUBTITULO">Cuenta origen</p>
-              </td>
-              <td>
-                <p class="PARRAFO">Campo
-                  de salida que muestra el código y descripción de la
-                  cuenta origen de la cual se va a tomar la información a copiar
-                  en la cuenta destino
-              </td>
-              </p>
-            </tr>
-            <tr>
-              <td>
-                <p class="SUBTITULO">Cuenta destino
-                  </p>
-              </td>
-              <td>
-                <p class="PARRAFO">En
-                  este campo con lista de valores se selecciona la cuenta contable a
-                  la cual se desean copiar los parámetros de la cuenta origen.
-              </td>
-              </p>
-            </tr>
-            <tr>
-              <td class="titletable">
-                <p class="SUBTITULO">Edad
-                    mora origen
-
-                  </p>
-              </td>
-              <td>
-                <p class="PARRAFO">Campo
-                  tipo combo en el cual se indica la altura de mora actual de los
-                  registros que se desea copiar a la cuenta destino.</p>
-              </td>
-            </tr>
-            <tr>
-              <td class="titletable">
-                <p class="SUBTITULO">Edad
-                    mora destino
-
-
-                  </p>
-              </td>
-              <td>
-                <p class="PARRAFO">En
-                  este campo tipo combo se selecciona la edad de mora con la cual
-                  deben pasar los registros a copiar de la cuenta origen.
-                </p>
-              </td>
-            </tr>
-            <tr>
-              <td class="titletable">
-                <p class="SUBTITULO">Garantía
-                    origen
-                  </p>
-              </td>
-              <td>
-                <p class="PARRAFO">Campo
-                  tipo combo en el cual se indica el tipo de garantía actual
-                  de los registros que se desea copiar a la cuenta destino.</p>
-              </td>
-            </tr>
-
-            <tr>
-              <td class="titletable">
-                <p class="SUBTITULO">Garantía
-                    destino
-                  </p>
-              </td>
-              <td>
-                <p class="PARRAFO">En
-                  este campo tipo combo se selecciona el tipo de garantía con
-                  el que deben pasar los registros a copiar de la cuenta origen.</p>
-              </td>
-            </tr>
-            <tr>
-              <td class="titletable">
-                <p class="SUBTITULO">Modalidad
-                    origen
-                  </p>
-              </td>
-              <td>
-                <p class="PARRAFO">Campo
-                  tipo combo en el cual se indica modalidad de crédito actual
-                  de los registros que se desea copiar a la cuenta destino.</p>
-              </td>
-            </tr>
-
-            <tr>
-              <td class="titletable">
-                <p class="SUBTITULO">Modalidad
-                    destino
-                  </p>
-              </td>
-              <td>
-                <p class="PARRAFO">En
-                  este campo tipo combo se selecciona la modalidad de crédito
-                  con la que deben pasar los registros a copiar de la cuenta origen.</p>
-              </td>
-            </tr>
-            <tr>
-              <td class="titletable">
-                <p class="SUBTITULO">Calificación
-                    sistema origen
-                  </p>
-              </td>
-              <td>
-                <p class="PARRAFO">Campo
-                  con lista de valores de la cual se selecciona la <a href="NUH_066B.html">calificación
-                      del sistema</a> actual de los registros que se desea copiar
-                  a la cuenta destino.</p>
-              </td>
-            </tr>
-
-            <tr>
-              <td class="titletable">
-                <p class="SUBTITULO">Calificación
-                    sistema destino
-                  </p>
-              </td>
-              <td>
-                <p class="PARRAFO">En
-                  este campo contiene lista de valores que permite seleccionar la
-                  <a href="NUH_066B.html">calificación
-                      del sistema</a> con la que deben pasar los registros a copiar
-                  de la cuenta origen.
-                </p>
-              </td>
-            </tr>
-            <tr>
-              <td class="titletable">
-                <p class="SUBTITULO">Calificación
-                    externa origen
-                  </p>
-              </td>
-              <td>
-                <p class="PARRAFO">Campo
-                  con lista de valores de la cual se selecciona la <a href="NUH_066B.html">calificación
-                      externa</a> actual de los registros que se desea copiar a la
-                  cuenta destino.</p>
-              </td>
-            </tr>
-
-            <tr>
-              <td class="titletable">
-                <p class="SUBTITULO">Calificación
-                    externa destino
-                  </p>
-              </td>
-              <td>
-                <p class="PARRAFO">En
-                  este campo contiene lista de valores que permite seleccionar la
-                  <a href="NUH_066B.html">calificación externa</a>
-                  con la que deben pasar los registros a copiar de la cuenta origen.
-                </p>
-              </td>
-            </tr>
-            <tr>
-              <td class="titletable">
-                <p class="SUBTITULO">Calificación
-                    provisión origen
-                  </p>
-              </td>
-              <td>
-                <p class="PARRAFO">Campo
-                  con lista de valores de la cual se selecciona la <a href="NUH_066B.html">calificación
-                      para provisión</a> actual de los registros que se desea
-                  copiar a la cuenta destino.
-                </p>
-              </td>
-            </tr>
-
-            <tr>
-              <td class="titletable">
-                <p class="SUBTITULO">Calificación
-                    provisión destino
-                  </p>
-              </td>
-              <td>
-                <p class="PARRAFO">En
-                  este campo contiene lista de valores que permite seleccionar la
-                  <a href="NUH_066B.html">calificación
-                      para provisión</a> con la que deben pasar los registros
-                  a copiar de la cuenta origen.
-                </p>
-              </td>
-            </tr>
-            <tr>
-              <td class="titletable">
-                <p class="SUBTITULO">Moneda
-                    origen
-                  </p>
-              </td>
-              <td>
-                <p class="PARRAFO">Campo
-                  con lista de valores de la cual se selecciona la <a href="NUH_027B.html">
-                    </a><a href="NUH_005B.html">moneda</a> actual
-                  de los registros que se desea copiar a la cuenta destino. </p>
-              </td>
-            </tr>
-
-            <tr>
-              <td class="titletable">
-                <p class="SUBTITULO">Moneda
-                    destino
-                  </p>
-              </td>
-              <td>
-                <p class="PARRAFO">En
-                  este campo contiene lista de valores que permite seleccionar la<a href="NUH_005B.html">
-                      moneda</a> con el que deben pasar los registros a copiar de
-                  la cuenta origen.</p>
-              </td>
-            </tr>
-            <tr>
-              <td class="titletable">
-                <p class="SUBTITULO">Origen
-                    (origen)
-                  </p>
-              </td>
-              <td>
-                <p class="PARRAFO">Campo
-                  con lista de valores de la cual se selecciona el <a href="NUH_027B.html">origen</a>
-                  actual de los registros que se desea copiar a la cuenta destino.
-                </p>
-              </td>
-            </tr>
-
-            <tr>
-              <td class="titletable">
-                <p class="SUBTITULO">Origen
-                    (destino)
-                  </p>
-              </td>
-              <td>
-                <p class="PARRAFO">En
-                  este campo contiene lista de valores que permite seleccionar el
-                  <a href="NUH_027B.html">origen</a> con el
-                  que deben pasar los registros a copiar de la cuenta origen.
-                </p>
-              </td>
-            </tr>
-            <tr>
-              <td class="titletable">
-                <p class="SUBTITULO">Transacción
-                    origen
-                  </p>
-              </td>
-              <td>
-                <p class="PARRAFO">Campo
-                  con lista de valores de la cual se selecciona la <a href="MEH_003B.html">transacción
-                      interna crédito</a> o <a href="DBH_017B.html">débito</a>
-                  actual de los registros que se desea copiar a la cuenta destino.
-                </p>
-              </td>
-            </tr>
-
-            <tr>
-              <td class="titletable">
-                <p class="SUBTITULO">Transacción
-                    destino
-                  </p>
-              </td>
-              <td>
-                <p class="PARRAFO">En
-                  este campo contiene lista de valores que permite seleccionar la
-                  <a href="MEH_003B.html">transacción interna
-                      crédito</a> o <a href="DBH_017B.html">débito</a>
-                  con la que deben pasar los registros a copiar de la cuenta origen.
-                </p>
-              </td>
-            </tr>
-            <tr>
-              <td class="titletable">
-                <p class="SUBTITULO">Marca
-                    origen
-                  </p>
-              </td>
-              <td>
-                <p class="PARRAFO">Campo
-                  con lista de valores de la cual se selecciona la <a href="NUH_033B.html">marca</a>
-                  actual de los registros que se desea copiar a la cuenta destino.
-                </p>
-              </td>
-            </tr>
-
-            <tr>
-              <td class="titletable">
-                <p class="SUBTITULO">Marca
-                    destino
-                  </p>
-              </td>
-              <td>
-                <p class="PARRAFO">En
-                  este campo contiene lista de valores que permite seleccionar la
-                  <a href="NUH_033B.html">marca</a> con la
-                  que deben pasar los registros a copiar de la cuenta origen.
-                </p>
-              </td>
-            </tr>
-            <tr>
-              <td class="titletable">
-                <p class="SUBTITULO">Bin
-                    origen
-                  </p>
-              </td>
-              <td>
-                <p class="PARRAFO">Campo
-                  con lista de valores de la cual se selecciona el <a href="MEH_001B.html">bin</a>
-                  actual de los registros que se desea copiar a la cuenta destino.</p>
-              </td>
-            </tr>
-
-            <tr>
-              <td class="titletable">
-                <p class="SUBTITULO">Bin
-                    destino
-                  </p>
-              </td>
-              <td>
-                <p class="PARRAFO">En
-                  este campo contiene lista de valores que permite seleccionar el
-                  <a href="MEH_001B.html">bin</a> con el
-                  que deben pasar los registros a copiar de la cuenta origen.
-                </p>
-              </td>
-            </tr>
-            <tr>
-              <td class="titletable">
-                <p class="SUBTITULO">Producto
-                    origen
-                  </p>
-              </td>
-              <td>
-                <p class="PARRAFO">Campo
-                  con lista de valores de la cual se selecciona el <a href="MEH_001B.html">segmento</a>
-                  actual de los registros que se desea copiar a la cuenta destino.</p>
-              </td>
-            </tr>
-
-            <tr>
-              <td class="titletable">
-                <p class="SUBTITULO">Producto
-                    destino
-                  </p>
-              </td>
-              <td>
-                <p class="PARRAFO">En
-                  este campo contiene lista de valores que permite seleccionar el
-                  <a href="MEH_001B.html">segmento</a> con
-                  el que deben pasar los registros a copiar de la cuenta origen.
-                </p>
-              </td>
-            </tr>
-            <tr>
-              <td class="titletable">
-                <p class="SUBTITULO">Grupo
-                    de afinidad origen
-                  </p>
-              </td>
-              <td>
-                <p class="PARRAFO">Campo
-                  con lista de valores de la cual se selecciona el <a href="MEH_001B.html">grupo
-                      de afinidad</a> actual de los registros que se desea copiar
-                  a la cuenta destino.</p>
-              </td>
-            </tr>
-
-            <tr>
-              <td class="titletable">
-                <p class="SUBTITULO">Grupo
-                    de afinidad destino
-                  </p>
-              </td>
-              <td>
-                <p class="PARRAFO">En
-                  este campo contiene lista de valores que permite seleccionar el
-                  <a href="MEH_001B.html">grupo de afinidad</a>
-                  con el que deben pasar los registros a copiar de la cuenta origen.
-                </p>
-              </td>
-            </tr>
-          </table>
-          <p class="PARRAFO"><a name="BL_MOVER"></a><span class="SUBTITULO">Mover
-                    cuenta:</span> 
-                    si el usuario invoca el enlace Mover cuenta, se despliega un nuevo formulario que permite a la entidad, filtrar los parámetros actuales de una cuenta para quitarlos de allí y enviarlos a otra cuenta diferente. </p>
-          <p class="PARRAFO">La descripción de los campos es la
-            misma dada para el formulario <a href="CTH_001B.html#BL_COPIAR">Copiar
-                cuenta</a> por lo cual no se relacionan nuevamente los campos respectivos.
-          <p class="TITLE"><img src="../img/CTF_001E11.PNG"></p>
-          <p class="PARRAFO"><a name="BL_AGRUPACION"></a><span class="SUBTITULO">Nivel
-                  general de agrupación contable:</span> 
-                  si el usuario invoca el enlace <em>Nivel general de agrupación contable,</em> se despliega un nuevo formulario que permite a la entidad, definir las características que deben reunir los registros para poder ser enviados a determinada cuenta contable. </p>
-          <p class="TITLE"><img src="../img/CTF_001E12.PNG"></p>
-          <p class="PARRAFO">El formulario contiene las opciones Actualizar,
-            Eliminar, Adicionar y Detalle.</p>
-          <p class="PARRAFO"><span class="SUBTITULO">Adicionar:</span>  si el usuario
-            invoca la opción Adicionar se despliega un nuevo formulario con
-            los siguientes campos.</p>
-          <p class="TITLE"><img src="../img/CTF_001E13.PNG"></p>
-          <p class="TITLE">Descripción de campos</p>
-          <table>
-            <tr>
-              <td>
-                <p class="SUBTITULO">Moneda
-                  </p>
-              </td>
-              <td>
-                <p class="PARRAFO">Campo
-                  obligatorio con lista de valores de la cual se selecciona la<a href="NUH_027B.html">
-                    </a><a href="NUH_005B.html">moneda</a> con la cual
-                  debe llegar el registro para poder ser incluido en la cuenta contable.
-              </td>
-              </p>
-            </tr>
-            <tr>
-              <td class="titletable">
-                <p class="SUBTITULO">Tipo
-                    cuenta
-                  </p>
-              </td>
-              <td>
-                <p class="PARRAFO">Campo
-                  tipo combo obligatorio, en el que se selecciona entre Débito  o
-                  Créditoel tipo de cuenta con el cual debe llegar el registro para poder
-                  ser incluido en la cuenta contable. </p>
-              </td>
-            </tr>
-            <tr>
-              <td><b class="SUBTITULO">Transacción</td>
-              <td>
-                <p class="PARRAFO">En
-                  este campo con lista de valores se selecciona la <a href="MEH_003B.html">transacción
-                      interna crédito</a> o <a href="DBH_017B.html">débito</a> con la cual
-                  debe llegar el registro para poder ser incluido en la
-                  cuenta contable.
-              </td>
-              </p>
-            </tr>
-            <tr>
-              <td>
-                <p class="SUBTITULO">Concepto
-                    contable
-                  </p>
-              </td>
-              <td>
-                <p class="PARRAFO">En
-                  este campo con lista de valores, obligatorio, se selecciona el concepto
-                  contable que debe generar el registro a determinada cuenta.
-              </td>
-              </p>
-            </tr>
-            <tr>
-              <td><b class="SUBTITULO">Identificador
-                  contable </td>
-              <td>
-                <p class="PARRAFO">Campo
-                  con lista de valores en el que se selecciona el <a href="NUH_078B.html">identificador
-                      contable</a> con el cual se reconoce el movimiento para efectuar
-                  los respectivos registros a la cuenta contable.
-              </td>
-              </p>
-            </tr>
-            <tr>
-              <td class="titletable">
-                <p class="SUBTITULO">Origen
-
-
-                  </p>
-              </td>
-              <td>
-                <p class="PARRAFO">Campo
-                  con lista de valores de la cual se selecciona el <a href="NUH_027B.html">origen</a>
-                  con el cual debe llegar el registro para poder ser incluido en la
-                  cuenta contable.</p>
-              </td>
-            </tr>
-            <tr>
-              <td class="SUBTITULO">Bin</td>
-              <td>En
-                este campo con lista de valores se selecciona el <a href="MEH_001B.html">bin</a>
-                <p class="PARRAFO">con el cual debe llegar el registro para poder ser incluido en la
-                  cuenta contable. Para poder utilizar los campos Producto y Grupo de afinidad es
-                  necesario que se parametrice algún
-                  valor en este campo.
-              </td>
-              </p>
-            </tr>
-            <tr>
-              <td class="SUBTITULO">Producto</td>
-              <td>
-                <p class="PARRAFO">Campo
-                  con lista de valores de la cual se selecciona el <a href="MEH_001B.html">segmento</a> con el
-                  cual debe llegar el registro para poder ser incluido en la
-                  cuenta contable. Aplica si se ha seleccionado algún Bin
-              </td>
-              </p>
-            </tr>
-            <tr>
-              <td class="SUBTITULO">Grupo
-                  de afinidad</td>
-              <td>
-                <p class="PARRAFO">Campo
-                  con lista de valores en el que se selecciona el <a href="NUH_078B.html">identificador
-                      contable</a> con el cual se reconoce el movimiento para efectuar
-                  los respectivos registros a la cuenta contable.
-              </td>
-              </p>
-            </tr>
-
-            <tr>
-              <td class="titletable">
-                <p class="SUBTITULO">Calificación
-                    sistema
-
-
-                  </p>
-              </td>
-              <td>
-                <p class="PARRAFO">En
-                  este campo con lista de valores se selecciona la <a
-                    href="NUH_066B.html#BL_SISTEMA">calificación
-                      del sistema</a> con la cual debe llegar el registro para poder
-                  ser incluido en la cuenta contable.
-                </p>
-              </td>
-            </tr>
-            <tr>
-              <td class="titletable">
-                <p class="SUBTITULO">Calificación
-                    externa
-                  </p>
-              </td>
-              <td>
-                <p class="PARRAFO">Campo
-                  con lista de valores de la cual se selecciona <a href="NUH_066B.html">calificación
-                      externa</a> con la cual debe llegar el registro para poder
-                  ser incluido en la cuenta contable.</p>
-              </td>
-            </tr>
-
-            <tr>
-              <td class="titletable">
-                <p class="SUBTITULO">Calificación
-                    provisión
-                  </p>
-              </td>
-              <td>
-                <p class="PARRAFO">Campo
-                  con lista de valores de la cual se selecciona <a
-                    href="NUH_066B.html#BL_CARTERA">calificación
-                      para provisión</a> con la cual debe llegar el registro
-                  para poder ser incluido en la cuenta contable.</p>
-              </td>
-            </tr>
-            <tr>
-              <td class="titletable"><span class="SUBTITULO">Línea
-                    de</span><span class="SUBTITULO">crédito</span></td>
-              <td>
-                <p class="PARRAFO">Campo
-                  con lista de valores de la cual se selecciona la <a href="MEH_001B4.html">línea
-                      de crédito</a> con la cual debe llegar el registro para
-                  poder ser incluido en la cuenta contable.
-              </td>
-              </p>
-            </tr>
-
-            <tr>
-              <td class="titletable">
-                <p class="SUBTITULO">Sucursal
-                  </p>
-              </td>
-              <td>
-                <p class="PARRAFO">En
-                  este campo con lista de valores se selecciona la <a href="NUH_020B.html">sucursal</a>
-                  con la cual debe llegar el registro para poder ser incluido en la
-                  cuenta contable. </p>
-              </td>
-            </tr>
-            <tr>
-              <td class="SUBTITULO">Oficina
-                  radicación</td>
-              <td>
-                <p class="PARRAFO">Campo
-                  con lista de valores de la cual se selecciona la <a href="NUH_020B.html">oficina</a> en la
-                  cual se activó la tarjeta, con la cual debe llegar
-                  el registro para poder ser incluido en la cuenta contable.
-              </td>
-              </p>
-            </tr>
-            <tr>
-              <td class="titletable">
-                <p class="SUBTITULO">Marca
-                  </p>
-              </td>
-              <td>
-                <p class="PARRAFO">En
-                  este campo con lista de valores se selecciona la <a href="NUH_033B.html">marca</a> con la que
-                  debe llegar el registro para poder ser incluido en la
-                  cuenta contable. </p>
-              </td>
-            </tr>
-            <tr>
-              <td class="titletable">
-                <p class="SUBTITULO">Tipo
-                    cartera
-                  </p>
-              </td>
-              <td>
-                <p class="PARRAFO">Campo
-                  con lista de valores de la cual se selecciona el<a href="NUH_015B.html">
-                      Tipo de cartera</a> con el cual debe llegar el registro para
-                  poder ser incluido en la cuenta contable.</p>
-              </td>
-            </tr>
-
-            <tr>
-              <td class="titletable">
-                <p class="SUBTITULO">Edad
-                    mora
-                  </p>
-              </td>
-              <td>
-                <p class="PARRAFO">En
-                  este campo tipo combo se selecciona la edad de mora con la cual
-                  debe llegar el registro para poder ser incluido en la cuenta contable.
-                </p>
-              </td>
-            </tr>
-            <tr>
-              <td class="titletable">
-                <p class="SUBTITULO">Garantía
-                  </p>
-              </td>
-              <td>
-                <p class="PARRAFO">Campo
-                  tipo combo en el que se selecciona entre Personal o Real
-                  el Tipo de garantía con el cual debe llegar el registro
-                  para poder ser incluido en la cuenta contable.</p>
-              </td>
-            </tr>
-
-            <tr>
-              <td class="titletable">
-                <p class="SUBTITULO">Tipo
-                    cuenta
-                  </p>
-              </td>
-              <td>
-                <p class="PARRAFO">Campo
-                  tipo combo obligatorioen el que se selecciona entre Ahorros  o Corrienteel
-                  tipo de cuenta con el cual debe llegar el registro para poder
-                  ser incluido en la cuenta contable. </p>
-              </td>
-            </tr>
-
-            <tr>
-              <td class="titletable">
-                <p class="SUBTITULO">Modalidad
-                    de crédito
-                  </p>
-              </td>
-              <td>
-                <p class="PARRAFO">En
-                  este campo tipo combo se selecciona entre Consumo, Microcrédito
-                    o Comercial la modalidad de crédito con la cual debe
-                  llegar el registro para poder ser incluido en la cuenta contable.
-                </p>
-              </td>
-            </tr>
-            <tr>
-              <td class="titletable">
-                <p class="SUBTITULO">Cuenta
-                    conversión
-                  </p>
-              </td>
-              <td>
-                <p class="PARRAFO">Este
-                  campo se habilita cuando en el campo moneda se selecciona una que
-                  sea diferente a la local, y permite seleccionar de la lista de valores
-                  la <a href="CTH_001B.html#BL_PLAN">cuenta contable</a> a utilizar en el momento que se
-                  efectúe la conversión
-                  de esa moneda a la local. </p>
-              </td>
-            </tr>
-          </table>
-          <p class="PARRAFO"><span class="SUBTITULO">Actualizar:</span>  si el usuario
-            selecciona un registro e invoca la opción Actualizar se despliega
-            un formulario en el que mayoría de los campos son modificables segun lo definido en <a
-              href="#Manejocontabilidad">Parámetros contables</a>, Afecta cuenta, campo Maneja
-            contabilidad.</p>
-          <p class="TITLE"><img src="../img/CTF_001E14.PNG"></p>
-
-          <p class="PARRAFO"><span class="SUBTITULO">Detalle:</span>  si el usuario
-            selecciona un registro e invoca la opción Detalle se despliega
-            un formulario con la información completa del registro y en el
-            que ninguno de sus campos es modificable.</p>
-          <p class="TITLE"><img src="../img/CTF_001E15.PNG"></p>
-
-          <p class="PARRAFO"><a name="BL_TERCEROS"></a><span
-              class="SUBTITULO">Terceros:</span> 
-              si el usuario invoca el enlace Tercero, se despliega un nuevo formulario en el cual, la entidad puede parametrizar los identificadores contables (pasos intermedios de aplicación al cliente de la información contable) y, conceptos de transacción asociados al manejo de terceros. Este formulario NO aplica para la parametrización contable de productos Débito.
-          </p>
-          <p class="TITLE"><img src="../img/CTF_001E16.PNG"></p>
-          <p class="PARRAFO">La opción cuenta con un filtro que le permite al usuario consultar
-            los registros por el identificador, concepto o el manejo.</p>
-          <p class="TITLE"><img src="../img/CTF_001E17.PNG"></p>
-
-          <p class="PARRAFO">El formulario contiene las opciones Actualizar, Eliminar y Adicionar</p>
-          <p class="PARRAFO"><span class="SUBTITULO">Adicionar:</span>  si el usuario
-            invoca la opción Adicionar se despliega un nuevo formulario con
-            los siguientes campos.</p>
-          <p class="TITLE"><img src="../img/CTF_001E18.PNG"></p>
-          <p class="TITLE">Descripción de campos</p>
-          <table>
-            <tr>
-              <td>
-                <p class="SUBTITULO">Identificador contable
-                  </p>
-              </td>
-              <td>
-                <p class="PARRAFO">Campo
-                  obligatorio con lista de valores de la cual se selecciona el <a href="NUH_027B.html">
-                    </a><a href="NUH_078B.html">identificador contable</a>
-                  con el que se reconoce el movimiento para efectuar los respectivos
-                  registros contables a determinada cuenta.
-              </td>
-              </p>
-            </tr>
-            <tr>
-              <td>
-                <p class="SUBTITULO">Concepto transacción
-                  </p>
-              </td>
-              <td>
-                <p class="PARRAFO">En
-                  este campo obligatorio con lista de valores se selecciona el <a href="NUH_059B.html">concepto
-                      de la transacción</a> asociado con el identificador contable.
-              </td>
-              </p>
-            </tr>
-            <tr>
-              <td class="titletable">
-                <p class="SUBTITULO">Manejo
-
-
-                  </p>
-              </td>
-              <td>
-                <p class="PARRAFO">Campo
-                  tipo combo del que se selecciona entre Código cliente, Código
-                    tarjeta,Identificación cliente, Identificación tarjeta, Número tarjeta
-                    o Comercio, la manera como se generó el movimiento.</p>
-              </td>
-            </tr>
-          </table>
-          <div class="PARRAFO">
-
-            <p class="PARRAFO"><span class="SUBTITULO">Actualizar:</span>  si el usuario
-              selecciona un registro e invoca la opción Actualizar se despliega
-              un formulario en el cual el único campo modificable es Manejo.</p>
-            <p class="TITLE"><img src="../img/CTF_001E19.PNG"></p>
-
-            <p class="PARRAFO"><a name="BL_CHEQUEO"></a><span
-                class="SUBTITULO">Chequeo:</span> 
-                si el usuario invoca el enlace Chequeo, se despliega un nuevo formulario en el cual, la entidad puede consultar la parametrización existente para el conjunto de criterios seleccionado.</p>
-            <p class="TITLE"><img src="../img/CTF_001E20.PNG" ></p>
-            <p class="PARRAFO">Por medio del filtro el usuario puede seleccionar aquellos criterios para los cuales
-              requiere consultar la información de parametrización contable:</p>
-            <p class="TITLE"><img src="../img/CTF_001E21.PNG"></p>
-            <p class="TITLE">Descripción de campos</p>
-            <table>
-              <tr>
-                <td class="titletable">
-                  <p class="SUBTITULO">Cuenta
-                    </p>
-                </td>
-                <td>
-                  <p class="PARRAFO">Campo
-                    con lista de valores de la que se selecciona la cuenta para la
-                    que se desea consultar la parametrización contable.</p>
-                </td>
-              </tr>
-          </div>
+      <div class="PARRAFO">
+        <p class="TITLE">Descripción de campos</p>
+        <table>
           <tr>
             <td class="titletable">
-              <p class="SUBTITULO">Moneda
-                </p>
-            </td>
-            <td>
-              <p class="PARRAFO">Este
-                campo contiene lista de valores para seleccionar la <a href="NUH_005B.html">moneda</a>
-                para la cual se desea consultar la parametrización contable.</p>
-            </td>
-          </tr>
-
-          <tr>
-            <td class="titletable">
-              <p class="SUBTITULO">Identificador
-
-
-                </p>
-            </td>
-            <td>
-              <p class="PARRAFO">Campo
-                con lista de valores de la que se selecciona el <a href="NUH_078B.html">identificador
-                    contable</a> para el que se desea consultar la parametrización
-                contable.
+              <p class="SUBTITULO">Número
               </p>
-            </td>
-          </tr>
-
-          <tr>
-            <td class="titletable">
-              <p class="SUBTITULO">Concepto
-                  contable
-
-
-                </p>
             </td>
             <td>
               <p class="PARRAFO">En
-                este campo tipo combo se selecciona el concepto contable para el
-                que se desea consultar la parametrización contable.
+                este campo numérico de hasta 19 dígitos, obligatorio,
+                se registra el código de la cuenta contable.</p>
+            </td>
+          </tr>
+          <tr>
+            <td class="titletable">
+              <p class="SUBTITULO">Descripción
+
               </p>
+            </td>
+            <td>
+              <p class="PARRAFO">Campo
+                alfanumérico de 60 caracteres, obligatorio, en el que se
+                indica el nombre o descripción de la cuenta contable.
+              </p>
+            </td>
+          </tr>
+          <tr>
+            <td class="titletable">
+              <p class="SUBTITULO">Tipo
+                cuenta
+              </p>
+            </td>
+            <td>
+              <p class="PARRAFO">En
+                este campo tipo combo, obligatorio, se selecciona entre Mayor
+                o Detalle la característica de la cuenta. Si se
+                indica Mayor, con excepción del campo Naturaleza,
+                los demás contenidos en este formulario se inhabilitan.</p>
+            </td>
+          </tr>
+          <tr>
+            <td class="titletable">
+              <p class="SUBTITULO">Naturaleza
+              </p>
+            </td>
+            <td>
+              <p class="PARRAFO">Campo
+                obligatorio tipo combo en el que se selecciona entre Débito
+                o Crédito la naturaleza propia de la cuenta de acuerdo
+                con los principios de contabilidad generalmente aceptados.</p>
+            </td>
+          </tr>
+          <tr>
+            <td class="titletable">
+              <p class="SUBTITULO">Sucursal
+              </p>
+            </td>
+            <td>
+              <p class="PARRAFO">En
+                este campo obligatorio tipo combo se indica Si o No
+                la cuenta pertenece a sucursales o agencias.</p>
+            </td>
+          </tr>
+          <tr>
+            <td class="titletable">
+              <p class="SUBTITULO">Oficina
+              </p>
+            </td>
+            <td>
+              <p class="PARRAFO">Campo
+                obligatorio tipo combo que permite seleccionar entre Si
+                o No la cuenta es base para determinar la distribución
+                de utilidades por oficina.</p>
+            </td>
+          </tr>
+          <tr>
+            <td class="titletable">
+              <p class="SUBTITULO">Acumula
+                mes
+              </p>
+            </td>
+            <td>
+              <p class="PARRAFO">En
+                este campo obligatorio tipo combo se indica Si o No
+                la cuenta acumula saldos mes a mes.
+              </p>
+            </td>
+          </tr>
+          <tr>
+            <td class="titletable">
+              <p class="SUBTITULO">Ajustes
+              </p>
+            </td>
+            <td>
+              <p class="PARRAFO">Campo
+                obligatorio tipo combo que permite seleccionar entre Si
+                o No la cuenta permite efectuar ajustes a la misma.</p>
+            </td>
+          </tr>
+          <tr>
+            <td class="titletable">
+              <p class="SUBTITULO">Conversión
+                moneda
+              </p>
+            </td>
+            <td>
+              <p class="PARRAFO">En
+                este campo obligatorio tipo combo se indica Si o No
+                la cuenta realiza el proceso de conversión del tipo de moneda
+                del registro a la utilizada como patrón.</p>
+            </td>
+          </tr>
+
+          <tr>
+            <td class="titletable">
+              <p class="SUBTITULO">Resultados
+              </p>
+            </td>
+            <td>
+              <p class="PARRAFO">Campo
+                obligatorio tipo combo que permite seleccionar entre Si
+                o No la cuenta contable que se está definiendo pertenece
+                a una cuenta de resultados, para efectos de iniciación de
+                saldos en cada ejercicio contable. </p>
+            </td>
+          </tr>
+
+          <tr>
+            <td class="titletable">
+              <p class="SUBTITULO">Impuestos
+              </p>
+            </td>
+            <td>
+              <p class="PARRAFO">En
+                este campo obligatorio tipo combo se indica Si o No
+                la cuenta corresponde a registros de impuestos.</p>
+            </td>
+          </tr>
+
+          <tr>
+            <td class="titletable">
+              <p class="SUBTITULO">Provisión
+              </p>
+            </td>
+            <td>
+              <p class="PARRAFO">Campo
+                obligatorio tipo combo que permite seleccionar entre Si
+                o No la cuenta corresponde a provisión de cartera,
+                intereses y comisiones, para efectos de la generación de
+                la información correspondiente.</p>
+            </td>
+          </tr>
+
+          <tr>
+            <td class="titletable">
+              <p class="SUBTITULO">Terceros
+              </p>
+            </td>
+            <td>
+              <p class="PARRAFO">En
+                este campo obligatorio tipo combo se indica Si o No
+                la cuenta tiene manejo de terceros para mostrar la información
+                de identificación de la persona o comercio que generó
+                el movimiento. Solo cuando se ha seleccionado la opción Si,
+                se habilitan los campos Tipo identificación y Número
+                identificación. </p>
+            </td>
+          </tr>
+
+          <tr>
+            <td class="titletable">
+              <p class="SUBTITULO">Tipo
+                identificación
+              </p>
+            </td>
+            <td>
+              <p class="PARRAFO">Campo
+                con lista de valores de la cual se selecciona el tipo de
+                documento
+                de identidad correspondiente al tercero asociado con la
+                cuenta.</p>
+            </td>
+          </tr>
+
+          <tr>
+            <td class="titletable">
+              <p class="SUBTITULO">Número
+                identificación
+              </p>
+            </td>
+            <td>
+              <p class="PARRAFO">En
+                este campo alfanumérico de hasta 16 caracteres se registra
+                el número de identificación del tercero asociado a
+                la cuenta.</p>
+            </td>
+          </tr>
+        </table>
+        <p class="PARRAFO"><span class="SUBTITULO">Actualizar:</span> Si el
+          usuario
+          selecciona un registro invoca la opción Actualizar se despliega
+          un formulario en el cual el único campo NO modificable es el Número
+          de la cuenta siempre y cuando el tipo de cuenta sea Detalle. Cuando el
+          tipo de cuenta es Mayor los
+          únicos campos modificables son Descripción, Tipo cuenta y Naturaleza.
+        </p>
+        <p class="TITLE"><img src="../img/CTF_001E8.PNG"></p>
+        <p class="PARRAFO"><span class="SUBTITULO">Detalle:</span> Si el usuario
+          selecciona un registro invoca la opción Detalle se despliega un
+          formulario en el cual ninguno de sus campos es modificable.</p>
+        <p class="TITLE"><img src="../img/CTF_001E9.PNG"></p>
+        <p class="PARRAFO"><a name="BL_COPIAR"></a><span
+            class="SUBTITULO">Copiar
+            cuenta:</span>
+          si el usuario invoca el enlace Copiar cuenta, se despliega un nuevo
+          formulario que permite a la entidad filtrar los parámetros actuales de
+          una cuenta para replicarlos en otra cuenta diferente. </p>
+        <p class="TITLE"><img src="../img/CTF_001E10.PNG"></p>
+        <p class="TITLE">Descripción de campos</p>
+        <table>
+          <tr>
+            <td>
+              <p class="SUBTITULO">Cuenta origen</p>
+            </td>
+            <td>
+              <p class="PARRAFO">Campo
+                de salida que muestra el código y descripción de la
+                cuenta origen de la cual se va a tomar la información a copiar
+                en la cuenta destino
+              </td>
+            </p>
+          </tr>
+          <tr>
+            <td>
+              <p class="SUBTITULO">Cuenta destino
+              </p>
+            </td>
+            <td>
+              <p class="PARRAFO">En
+                este campo con lista de valores se selecciona la cuenta contable
+                a
+                la cual se desean copiar los parámetros de la cuenta origen.
+              </td>
+            </p>
+          </tr>
+          <tr>
+            <td class="titletable">
+              <p class="SUBTITULO">Edad
+                mora origen
+
+              </p>
+            </td>
+            <td>
+              <p class="PARRAFO">Campo
+                tipo combo en el cual se indica la altura de mora actual de los
+                registros que se desea copiar a la cuenta destino.</p>
+            </td>
+          </tr>
+          <tr>
+            <td class="titletable">
+              <p class="SUBTITULO">Edad
+                mora destino
+
+              </p>
+            </td>
+            <td>
+              <p class="PARRAFO">En
+                este campo tipo combo se selecciona la edad de mora con la cual
+                deben pasar los registros a copiar de la cuenta origen.
+              </p>
+            </td>
+          </tr>
+          <tr>
+            <td class="titletable">
+              <p class="SUBTITULO">Garantía
+                origen
+              </p>
+            </td>
+            <td>
+              <p class="PARRAFO">Campo
+                tipo combo en el cual se indica el tipo de garantía actual
+                de los registros que se desea copiar a la cuenta destino.</p>
             </td>
           </tr>
 
           <tr>
             <td class="titletable">
               <p class="SUBTITULO">Garantía
-
-
-                </p>
+                destino
+              </p>
+            </td>
+            <td>
+              <p class="PARRAFO">En
+                este campo tipo combo se selecciona el tipo de garantía con
+                el que deben pasar los registros a copiar de la cuenta
+                origen.</p>
+            </td>
+          </tr>
+          <tr>
+            <td class="titletable">
+              <p class="SUBTITULO">Modalidad
+                origen
+              </p>
             </td>
             <td>
               <p class="PARRAFO">Campo
-                tipo combo en el que se indica entre Personal y Real
-                el tipo de garantía para el cual se desea consultar la parametrización
-                contable.
+                tipo combo en el cual se indica modalidad de crédito actual
+                de los registros que se desea copiar a la cuenta destino.</p>
+            </td>
+          </tr>
+
+          <tr>
+            <td class="titletable">
+              <p class="SUBTITULO">Modalidad
+                destino
+              </p>
+            </td>
+            <td>
+              <p class="PARRAFO">En
+                este campo tipo combo se selecciona la modalidad de crédito
+                con la que deben pasar los registros a copiar de la cuenta
+                origen.</p>
+            </td>
+          </tr>
+          <tr>
+            <td class="titletable">
+              <p class="SUBTITULO">Calificación
+                sistema origen
+              </p>
+            </td>
+            <td>
+              <p class="PARRAFO">Campo
+                con lista de valores de la cual se selecciona la <a
+                  href="NUH_066B.html">calificación
+                  del sistema</a> actual de los registros que se desea copiar
+                a la cuenta destino.</p>
+            </td>
+          </tr>
+
+          <tr>
+            <td class="titletable">
+              <p class="SUBTITULO">Calificación
+                sistema destino
+              </p>
+            </td>
+            <td>
+              <p class="PARRAFO">En
+                este campo contiene lista de valores que permite seleccionar la
+                <a href="NUH_066B.html">calificación
+                  del sistema</a> con la que deben pasar los registros a copiar
+                de la cuenta origen.
+              </p>
+            </td>
+          </tr>
+          <tr>
+            <td class="titletable">
+              <p class="SUBTITULO">Calificación
+                externa origen
+              </p>
+            </td>
+            <td>
+              <p class="PARRAFO">Campo
+                con lista de valores de la cual se selecciona la <a
+                  href="NUH_066B.html">calificación
+                  externa</a> actual de los registros que se desea copiar a la
+                cuenta destino.</p>
+            </td>
+          </tr>
+
+          <tr>
+            <td class="titletable">
+              <p class="SUBTITULO">Calificación
+                externa destino
+              </p>
+            </td>
+            <td>
+              <p class="PARRAFO">En
+                este campo contiene lista de valores que permite seleccionar la
+                <a href="NUH_066B.html">calificación externa</a>
+                con la que deben pasar los registros a copiar de la cuenta
+                origen.
+              </p>
+            </td>
+          </tr>
+          <tr>
+            <td class="titletable">
+              <p class="SUBTITULO">Calificación
+                provisión origen
+              </p>
+            </td>
+            <td>
+              <p class="PARRAFO">Campo
+                con lista de valores de la cual se selecciona la <a
+                  href="NUH_066B.html">calificación
+                  para provisión</a> actual de los registros que se desea
+                copiar a la cuenta destino.
+              </p>
+            </td>
+          </tr>
+
+          <tr>
+            <td class="titletable">
+              <p class="SUBTITULO">Calificación
+                provisión destino
+              </p>
+            </td>
+            <td>
+              <p class="PARRAFO">En
+                este campo contiene lista de valores que permite seleccionar la
+                <a href="NUH_066B.html">calificación
+                  para provisión</a> con la que deben pasar los registros
+                a copiar de la cuenta origen.
+              </p>
+            </td>
+          </tr>
+          <tr>
+            <td class="titletable">
+              <p class="SUBTITULO">Moneda
+                origen
+              </p>
+            </td>
+            <td>
+              <p class="PARRAFO">Campo
+                con lista de valores de la cual se selecciona la <a
+                  href="NUH_027B.html">
+                </a><a href="NUH_005B.html">moneda</a> actual
+                de los registros que se desea copiar a la cuenta destino. </p>
+            </td>
+          </tr>
+
+          <tr>
+            <td class="titletable">
+              <p class="SUBTITULO">Moneda
+                destino
+              </p>
+            </td>
+            <td>
+              <p class="PARRAFO">En
+                este campo contiene lista de valores que permite seleccionar
+                la<a href="NUH_005B.html">
+                  moneda</a> con el que deben pasar los registros a copiar de
+                la cuenta origen.</p>
+            </td>
+          </tr>
+          <tr>
+            <td class="titletable">
+              <p class="SUBTITULO">Origen
+                (origen)
+              </p>
+            </td>
+            <td>
+              <p class="PARRAFO">Campo
+                con lista de valores de la cual se selecciona el <a
+                  href="NUH_027B.html">origen</a>
+                actual de los registros que se desea copiar a la cuenta destino.
               </p>
             </td>
           </tr>
@@ -1418,12 +881,29 @@
           <tr>
             <td class="titletable">
               <p class="SUBTITULO">Origen
-                </p>
+                (destino)
+              </p>
             </td>
             <td>
-              <p class="PARRAFO">Este
-                campo contiene lista de valores para seleccionar el <a href="NUH_027B.html">origen</a>
-                para el cual se desea consultar la parametrización contable.
+              <p class="PARRAFO">En
+                este campo contiene lista de valores que permite seleccionar el
+                <a href="NUH_027B.html">origen</a> con el
+                que deben pasar los registros a copiar de la cuenta origen.
+              </p>
+            </td>
+          </tr>
+          <tr>
+            <td class="titletable">
+              <p class="SUBTITULO">Transacción
+                origen
+              </p>
+            </td>
+            <td>
+              <p class="PARRAFO">Campo
+                con lista de valores de la cual se selecciona la <a
+                  href="MEH_003B.html">transacción
+                  interna crédito</a> o <a href="DBH_017B.html">débito</a>
+                actual de los registros que se desea copiar a la cuenta destino.
               </p>
             </td>
           </tr>
@@ -1431,55 +911,744 @@
           <tr>
             <td class="titletable">
               <p class="SUBTITULO">Transacción
-                </p>
+                destino
+              </p>
+            </td>
+            <td>
+              <p class="PARRAFO">En
+                este campo contiene lista de valores que permite seleccionar la
+                <a href="MEH_003B.html">transacción interna
+                  crédito</a> o <a href="DBH_017B.html">débito</a>
+                con la que deben pasar los registros a copiar de la cuenta
+                origen.
+              </p>
+            </td>
+          </tr>
+          <tr>
+            <td class="titletable">
+              <p class="SUBTITULO">Marca
+                origen
+              </p>
             </td>
             <td>
               <p class="PARRAFO">Campo
-                con lista de valores de la que se selecciona la <a href="MEH_003B.html">transacción</a>
-                para la que se desea consultar la parametrización contable.</p>
-            </td>
-          </tr>
-
-          <tr>
-            <td class="titletable">
-              <p class="SUBTITULO">Franquicia
-                </p>
-            </td>
-            <td>
-              <p class="PARRAFO">Este
-                campo contiene lista de valores para seleccionar la<a href="NUH_033B.html">
-                    marca</a> para el cual se desea consultar la parametrización
-                contable.
+                con lista de valores de la cual se selecciona la <a
+                  href="NUH_033B.html">marca</a>
+                actual de los registros que se desea copiar a la cuenta destino.
               </p>
             </td>
           </tr>
 
           <tr>
             <td class="titletable">
-              <p class="SUBTITULO">Asiento
-                </p>
+              <p class="SUBTITULO">Marca
+                destino
+              </p>
+            </td>
+            <td>
+              <p class="PARRAFO">En
+                este campo contiene lista de valores que permite seleccionar la
+                <a href="NUH_033B.html">marca</a> con la
+                que deben pasar los registros a copiar de la cuenta origen.
+              </p>
+            </td>
+          </tr>
+          <tr>
+            <td class="titletable">
+              <p class="SUBTITULO">Bin
+                origen
+              </p>
             </td>
             <td>
               <p class="PARRAFO">Campo
-                tipo combo en el que se selecciona entre Debito o Crédito
-                el tipo de registro para el cual se desea consultar la parametrización
-                contable.</p>
+                con lista de valores de la cual se selecciona el <a
+                  href="MEH_001B.html">bin</a>
+                actual de los registros que se desea copiar a la cuenta
+                destino.</p>
             </td>
           </tr>
-          </table>
-          <p class="PARRAFO">El formulario cuenta con el hipervínculo <a href="CTH_001B.html#BL_COPI_PAR">Copiar
-                parámetros</a> y la opción Detalle. </p>
-                <p class="PARRAFO"><span class="SUBTITULO">Detalle:</span>  si el usuario
-            selecciona un registro e invoca la opción Detalle se despliega
-            un formulario con todos los datos del registro y que no permite modificar
-            ningún campo.</p>
-          <p class="TITLE"><img src="../img/CTF_001E22.PNG" ></p>
-        </div>
-  </section>
-  <script src="../js/menu.js"></script>
-</body>
-<div id="footerContainer"></div>
-<script>
+
+          <tr>
+            <td class="titletable">
+              <p class="SUBTITULO">Bin
+                destino
+              </p>
+            </td>
+            <td>
+              <p class="PARRAFO">En
+                este campo contiene lista de valores que permite seleccionar el
+                <a href="MEH_001B.html">bin</a> con el
+                que deben pasar los registros a copiar de la cuenta origen.
+              </p>
+            </td>
+          </tr>
+          <tr>
+            <td class="titletable">
+              <p class="SUBTITULO">Producto
+                origen
+              </p>
+            </td>
+            <td>
+              <p class="PARRAFO">Campo
+                con lista de valores de la cual se selecciona el <a
+                  href="MEH_001B.html">segmento</a>
+                actual de los registros que se desea copiar a la cuenta
+                destino.</p>
+            </td>
+          </tr>
+
+          <tr>
+            <td class="titletable">
+              <p class="SUBTITULO">Producto
+                destino
+              </p>
+            </td>
+            <td>
+              <p class="PARRAFO">En
+                este campo contiene lista de valores que permite seleccionar el
+                <a href="MEH_001B.html">segmento</a> con
+                el que deben pasar los registros a copiar de la cuenta origen.
+              </p>
+            </td>
+          </tr>
+          <tr>
+            <td class="titletable">
+              <p class="SUBTITULO">Grupo
+                de afinidad origen
+              </p>
+            </td>
+            <td>
+              <p class="PARRAFO">Campo
+                con lista de valores de la cual se selecciona el <a
+                  href="MEH_001B.html">grupo
+                  de afinidad</a> actual de los registros que se desea copiar
+                a la cuenta destino.</p>
+            </td>
+          </tr>
+
+          <tr>
+            <td class="titletable">
+              <p class="SUBTITULO">Grupo
+                de afinidad destino
+              </p>
+            </td>
+            <td>
+              <p class="PARRAFO">En
+                este campo contiene lista de valores que permite seleccionar el
+                <a href="MEH_001B.html">grupo de afinidad</a>
+                con el que deben pasar los registros a copiar de la cuenta
+                origen.
+              </p>
+            </td>
+          </tr>
+        </table>
+        <p class="PARRAFO"><a name="BL_MOVER"></a><span class="SUBTITULO">Mover
+            cuenta:</span>
+          si el usuario invoca el enlace Mover cuenta, se despliega un nuevo
+          formulario que permite a la entidad, filtrar los parámetros actuales
+          de una cuenta para quitarlos de allí y enviarlos a otra cuenta
+          diferente. </p>
+        <p class="PARRAFO">La descripción de los campos es la
+          misma dada para el formulario <a href="CTH_001B.html#BL_COPIAR">Copiar
+            cuenta</a> por lo cual no se relacionan nuevamente los campos
+          respectivos.
+          <p class="TITLE"><img src="../img/CTF_001E11.PNG"></p>
+          <p class="PARRAFO"><a name="BL_AGRUPACION"></a><span
+              class="SUBTITULO">Nivel
+              general de agrupación contable:</span>
+            si el usuario invoca el enlace <em>Nivel general de agrupación
+              contable,</em> se despliega un formulario que permite a la
+            entidad, definir las características que deben reunir los registros
+            para poder ser enviados a determinada cuenta contable. </p>
+          <p class="TITLE"><img src="../img/CTF_001E12.PNG"></p>
+          <p class="PARRAFO">El formulario contiene los enlaces: Actualizar,
+            Eliminar, Adicionar y Detalle.</p>
+          <p class="PARRAFO"><span class="SUBTITULO">Adicionar:</span> si el
+            usuario
+            invoca la opción Adicionar se despliega un formulario con
+            los siguientes campos.</p>
+          <p class="TITLE"><img src="../img/CTF_001E13.PNG"></p>
+          <p class="TITLE">Descripción de campos</p>
+          <table>
+            <tr>
+              <td>
+                <p class="SUBTITULO">Moneda
+                </p>
+              </td>
+              <td>
+                <p class="PARRAFO">Campo
+                  obligatorio con lista de valores de la cual se selecciona la<a
+                    href="NUH_027B.html">
+                  </a><a href="NUH_005B.html">moneda</a> con la cual
+                  debe llegar el registro para poder ser incluido en la cuenta
+                  contable.
+                </td>
+              </p>
+            </tr>
+            <tr>
+              <td class="titletable">
+                <p class="SUBTITULO">Tipo
+                  cuenta
+                </p>
+              </td>
+              <td>
+                <p class="PARRAFO">Campo
+                  tipo combo obligatorio, en el que se selecciona entre Débito o
+                  Créditoel tipo de cuenta con el cual debe llegar el registro
+                  para poder
+                  ser incluido en la cuenta contable. </p>
+              </td>
+            </tr>
+            <tr>
+              <td><b class="SUBTITULO">Transacción</td>
+                <td>
+                  <p class="PARRAFO">En
+                    este campo con lista de valores se selecciona la <a
+                      href="MEH_003B.html">transacción
+                      interna crédito</a> o <a href="DBH_017B.html">débito</a>
+                    con la cual
+                    debe llegar el registro para poder ser incluido en la
+                    cuenta contable.
+                  </td>
+                </p>
+              </tr>
+              <tr>
+                <td>
+                  <p class="SUBTITULO">Concepto
+                    contable
+                  </p>
+                </td>
+                <td>
+                  <p class="PARRAFO">En
+                    este campo con lista de valores, obligatorio, se selecciona
+                    el concepto
+                    contable que debe generar el registro a determinada cuenta.
+                  </td>
+                </p>
+              </tr>
+              <tr>
+                <td><b class="SUBTITULO">Identificador
+                    contable </td>
+                  <td>
+                    <p class="PARRAFO">Campo
+                      con lista de valores en el que se selecciona el <a
+                        href="NUH_078B.html">identificador
+                        contable</a> con el cual se reconoce el movimiento para
+                      efectuar
+                      los respectivos registros a la cuenta contable.
+                    </td>
+                  </p>
+                </tr>
+                <tr>
+                  <td class="titletable">
+                    <p class="SUBTITULO">Origen
+
+                    </p>
+                  </td>
+                  <td>
+                    <p class="PARRAFO">Campo
+                      con lista de valores de la cual se selecciona el <a
+                        href="NUH_027B.html">origen</a>
+                      con el cual debe llegar el registro para poder ser
+                      incluido en la
+                      cuenta contable.</p>
+                  </td>
+                </tr>
+                <tr>
+                  <td class="SUBTITULO">Bin</td>
+                  <td>En
+                    este campo con lista de valores se selecciona el <a
+                      href="MEH_001B.html">bin</a>
+                    <p class="PARRAFO">con el cual debe llegar el registro para
+                      poder ser incluido en la
+                      cuenta contable. Para poder utilizar los campos Producto y
+                      Grupo de afinidad es
+                      necesario que se parametrice algún
+                      valor en este campo.
+                    </td>
+                  </p>
+                </tr>
+                <tr>
+                  <td class="SUBTITULO">Producto</td>
+                  <td>
+                    <p class="PARRAFO">Campo
+                      con lista de valores de la cual se selecciona el <a
+                        href="MEH_001B.html">segmento</a> con el
+                      cual debe llegar el registro para poder ser incluido en la
+                      cuenta contable. Aplica si se ha seleccionado algún Bin
+                    </td>
+                  </p>
+                </tr>
+                <tr>
+                  <td class="SUBTITULO">Grupo
+                    de afinidad</td>
+                  <td>
+                    <p class="PARRAFO">Campo
+                      con lista de valores en el que se selecciona el <a
+                        href="NUH_078B.html">identificador
+                        contable</a> con el cual se reconoce el movimiento para
+                      efectuar
+                      los respectivos registros a la cuenta contable.
+                    </td>
+                  </p>
+                </tr>
+
+                <tr>
+                  <td class="titletable">
+                    <p class="SUBTITULO">Calificación
+                      sistema
+
+                    </p>
+                  </td>
+                  <td>
+                    <p class="PARRAFO">En
+                      este campo con lista de valores se selecciona la <a
+                        href="NUH_066B.html#BL_SISTEMA">calificación
+                        del sistema</a> con la cual debe llegar el registro para
+                      poder
+                      ser incluido en la cuenta contable.
+                    </p>
+                  </td>
+                </tr>
+                <tr>
+                  <td class="titletable">
+                    <p class="SUBTITULO">Calificación
+                      externa
+                    </p>
+                  </td>
+                  <td>
+                    <p class="PARRAFO">Campo
+                      con lista de valores de la cual se selecciona <a
+                        href="NUH_066B.html">calificación
+                        externa</a> con la cual debe llegar el registro para
+                      poder
+                      ser incluido en la cuenta contable.</p>
+                  </td>
+                </tr>
+
+                <tr>
+                  <td class="titletable">
+                    <p class="SUBTITULO">Calificación
+                      provisión
+                    </p>
+                  </td>
+                  <td>
+                    <p class="PARRAFO">Campo
+                      con lista de valores de la cual se selecciona <a
+                        href="NUH_066B.html#BL_CARTERA">calificación
+                        para provisión</a> con la cual debe llegar el registro
+                      para poder ser incluido en la cuenta contable.</p>
+                  </td>
+                </tr>
+                <tr>
+                  <td class="titletable"><span class="SUBTITULO">Línea
+                      de</span><span class="SUBTITULO">crédito</span></td>
+                  <td>
+                    <p class="PARRAFO">Campo
+                      con lista de valores de la cual se selecciona la <a
+                        href="MEH_001B4.html">línea
+                        de crédito</a> con la cual debe llegar el registro para
+                      poder ser incluido en la cuenta contable.
+                    </td>
+                  </p>
+                </tr>
+
+                <tr>
+                  <td class="titletable">
+                    <p class="SUBTITULO">Sucursal
+                    </p>
+                  </td>
+                  <td>
+                    <p class="PARRAFO">En
+                      este campo con lista de valores se selecciona la <a
+                        href="NUH_020B.html">sucursal</a>
+                      con la cual debe llegar el registro para poder ser
+                      incluido en la
+                      cuenta contable. </p>
+                  </td>
+                </tr>
+                <tr>
+                  <td class="SUBTITULO">Oficina
+                    radicación</td>
+                  <td>
+                    <p class="PARRAFO">Campo
+                      con lista de valores de la cual se selecciona la <a
+                        href="NUH_020B.html">oficina</a> en la
+                      cual se activó la tarjeta, con la cual debe llegar
+                      el registro para poder ser incluido en la cuenta contable.
+                    </td>
+                  </p>
+                </tr>
+                <tr>
+                  <td class="titletable">
+                    <p class="SUBTITULO">Marca
+                    </p>
+                  </td>
+                  <td>
+                    <p class="PARRAFO">En
+                      este campo con lista de valores se selecciona la <a
+                        href="NUH_033B.html">marca</a> con la que
+                      debe llegar el registro para poder ser incluido en la
+                      cuenta contable. </p>
+                  </td>
+                </tr>
+                <tr>
+                  <td class="titletable">
+                    <p class="SUBTITULO">Tipo
+                      cartera
+                    </p>
+                  </td>
+                  <td>
+                    <p class="PARRAFO">Campo
+                      con lista de valores de la cual se selecciona el<a
+                        href="NUH_015B.html">
+                        Tipo de cartera</a> con el cual debe llegar el registro
+                      para
+                      poder ser incluido en la cuenta contable.</p>
+                  </td>
+                </tr>
+
+                <tr>
+                  <td class="titletable">
+                    <p class="SUBTITULO">Edad
+                      mora
+                    </p>
+                  </td>
+                  <td>
+                    <p class="PARRAFO">En
+                      este campo tipo combo se selecciona la edad de mora con la
+                      cual
+                      debe llegar el registro para poder ser incluido en la
+                      cuenta contable.
+                    </p>
+                  </td>
+                </tr>
+                <tr>
+                  <td class="titletable">
+                    <p class="SUBTITULO">Garantía
+                    </p>
+                  </td>
+                  <td>
+                    <p class="PARRAFO">Campo
+                      tipo combo en el que se selecciona entre Personal o Real
+                      el Tipo de garantía con el cual debe llegar el registro
+                      para poder ser incluido en la cuenta contable.</p>
+                  </td>
+                </tr>
+
+                <tr>
+                  <td class="titletable">
+                    <p class="SUBTITULO">Tipo
+                      cuenta
+                    </p>
+                  </td>
+                  <td>
+                    <p class="PARRAFO">Campo
+                      tipo combo obligatorioen el que se selecciona entre
+                      Ahorros o Corrienteel
+                      tipo de cuenta con el cual debe llegar el registro para
+                      poder
+                      ser incluido en la cuenta contable. </p>
+                  </td>
+                </tr>
+
+                <tr>
+                  <td class="titletable">
+                    <p class="SUBTITULO">Modalidad
+                      de crédito
+                    </p>
+                  </td>
+                  <td>
+                    <p class="PARRAFO">En
+                      este campo tipo combo se selecciona entre Consumo,
+                      Microcrédito
+                      o Comercial la modalidad de crédito con la cual debe
+                      llegar el registro para poder ser incluido en la cuenta
+                      contable.
+                    </p>
+                  </td>
+                </tr>
+                <tr>
+                  <td class="titletable">
+                    <p class="SUBTITULO">Cuenta
+                      conversión
+                    </p>
+                  </td>
+                  <td>
+                    <p class="PARRAFO">Este
+                      campo se habilita cuando en el campo moneda se selecciona
+                      una que
+                      sea diferente a la local, y permite seleccionar de la
+                      lista de valores
+                      la <a href="CTH_001B.html#BL_PLAN">cuenta contable</a> a
+                      utilizar en el momento que se
+                      efectúe la conversión
+                      de esa moneda a la local. </p>
+                  </td>
+                </tr>
+              </table>
+              <p class="PARRAFO"><span class="SUBTITULO">Actualizar:</span> si
+                el usuario
+                selecciona un registro e invoca la opción Actualizar se
+                despliega
+                un formulario en el que mayoría de los campos son modificables
+                segun lo definido en <a
+                  href="#Manejocontabilidad">Parámetros contables</a>, Afecta
+                cuenta, campo Maneja
+                contabilidad.</p>
+              <p class="TITLE"><img src="../img/CTF_001E14.PNG"></p>
+
+              <p class="PARRAFO"><span class="SUBTITULO">Detalle:</span> si el
+                usuario
+                selecciona un registro e invoca la opción Detalle se despliega
+                un formulario con la información completa del registro y en el
+                que ninguno de sus campos es modificable.</p>
+              <p class="TITLE"><img src="../img/CTF_001E15.PNG"></p>
+
+              <p class="PARRAFO"><a name="BL_TERCEROS"></a><span
+                  class="SUBTITULO">Terceros:</span>
+                si el usuario invoca el enlace Tercero, se despliega un nuevo
+                formulario en el cual, la entidad puede parametrizar los
+                identificadores contables (pasos intermedios de aplicación al
+                cliente de la información contable) y, conceptos de transacción
+                asociados al manejo de terceros. Este formulario NO aplica para
+                la parametrización contable de productos Débito.
+              </p>
+              <p class="TITLE"><img src="../img/CTF_001E16.PNG"></p>
+              <p class="PARRAFO">La opción cuenta con un filtro que le permite
+                al usuario consultar
+                los registros por el identificador, concepto o el manejo.</p>
+              <p class="TITLE"><img src="../img/CTF_001E17.PNG"></p>
+
+              <p class="PARRAFO">El formulario contiene los enlaces: Actualizar, Eliminar y Adicionar.</p>
+              <p class="PARRAFO"><span class="SUBTITULO">Adicionar:</span> si el
+                usuario
+                invoca la opción Adicionar se despliega un formulario con
+                los siguientes campos.</p>
+              <p class="TITLE"><img src="../img/CTF_001E18.PNG"></p>
+              <p class="TITLE">Descripción de campos</p>
+              <table>
+                <tr>
+                  <td>
+                    <p class="SUBTITULO">Identificador contable
+                    </p>
+                  </td>
+                  <td>
+                    <p class="PARRAFO">Campo
+                      obligatorio con lista de valores de la cual se selecciona
+                      el <a href="NUH_027B.html">
+                      </a><a href="NUH_078B.html">identificador contable</a>
+                      con el que se reconoce el movimiento para efectuar los
+                      respectivos
+                      registros contables a determinada cuenta.
+                    </td>
+                  </p>
+                </tr>
+                <tr>
+                  <td>
+                    <p class="SUBTITULO">Concepto transacción
+                    </p>
+                  </td>
+                  <td>
+                    <p class="PARRAFO">En
+                      este campo obligatorio con lista de valores se selecciona
+                      el <a href="NUH_059B.html">concepto
+                        de la transacción</a> asociado con el identificador
+                      contable.
+                    </td>
+                  </p>
+                </tr>
+                <tr>
+                  <td class="titletable">
+                    <p class="SUBTITULO">Manejo
+
+                    </p>
+                  </td>
+                  <td>
+                    <p class="PARRAFO">Campo
+                      tipo combo del que se selecciona entre Código cliente,
+                      Código
+                      tarjeta,Identificación cliente, Identificación tarjeta,
+                      Número tarjeta
+                      o Comercio, la manera como se generó el movimiento.</p>
+                  </td>
+                </tr>
+              </table>
+              <div class="PARRAFO">
+
+                <p class="PARRAFO"><span class="SUBTITULO">Actualizar:</span> si
+                  el usuario
+                  selecciona un registro e invoca la opción Actualizar se
+                  despliega
+                  un formulario en el cual el único campo modificable es
+                  Manejo.</p>
+                <p class="TITLE"><img src="../img/CTF_001E19.PNG"></p>
+
+                <p class="PARRAFO"><a name="BL_CHEQUEO"></a><span
+                    class="SUBTITULO">Chequeo:</span>
+                  si el usuario invoca el enlace Chequeo, se despliega un nuevo
+                  formulario en el cual, la entidad puede consultar la
+                  parametrización existente para el conjunto de criterios
+                  seleccionado.</p>
+                <p class="TITLE"><img src="../img/CTF_001E20.PNG"></p>
+                <p class="PARRAFO">Por medio del filtro el usuario puede
+                  seleccionar aquellos criterios para los cuales
+                  requiere consultar la información de parametrización
+                  contable:</p>
+                <p class="TITLE"><img src="../img/CTF_001E21.PNG"></p>
+                <p class="TITLE">Descripción de campos</p>
+                <table>
+                  <tr>
+                    <td class="titletable">
+                      <p class="SUBTITULO">Cuenta
+                      </p>
+                    </td>
+                    <td>
+                      <p class="PARRAFO">Campo
+                        con lista de valores de la que se selecciona la cuenta
+                        para la
+                        que se desea consultar la parametrización contable.</p>
+                    </td>
+                  </tr>
+                </div>
+                <tr>
+                  <td class="titletable">
+                    <p class="SUBTITULO">Moneda
+                    </p>
+                  </td>
+                  <td>
+                    <p class="PARRAFO">Este
+                      campo contiene lista de valores para seleccionar la <a
+                        href="NUH_005B.html">moneda</a>
+                      para la cual se desea consultar la parametrización
+                      contable.</p>
+                  </td>
+                </tr>
+
+                <tr>
+                  <td class="titletable">
+                    <p class="SUBTITULO">Identificador
+
+                    </p>
+                  </td>
+                  <td>
+                    <p class="PARRAFO">Campo
+                      con lista de valores de la que se selecciona el <a
+                        href="NUH_078B.html">identificador
+                        contable</a> para el que se desea consultar la
+                      parametrización
+                      contable.
+                    </p>
+                  </td>
+                </tr>
+
+                <tr>
+                  <td class="titletable">
+                    <p class="SUBTITULO">Concepto
+                      contable
+
+                    </p>
+                  </td>
+                  <td>
+                    <p class="PARRAFO">En
+                      este campo tipo combo se selecciona el concepto contable
+                      para el
+                      que se desea consultar la parametrización contable.
+                    </p>
+                  </td>
+                </tr>
+
+                <tr>
+                  <td class="titletable">
+                    <p class="SUBTITULO">Garantía
+
+                    </p>
+                  </td>
+                  <td>
+                    <p class="PARRAFO">Campo
+                      tipo combo en el que se indica entre Personal y Real
+                      el tipo de garantía para el cual se desea consultar la
+                      parametrización
+                      contable.
+                    </p>
+                  </td>
+                </tr>
+
+                <tr>
+                  <td class="titletable">
+                    <p class="SUBTITULO">Origen
+                    </p>
+                  </td>
+                  <td>
+                    <p class="PARRAFO">Este
+                      campo contiene lista de valores para seleccionar el <a
+                        href="NUH_027B.html">origen</a>
+                      para el cual se desea consultar la parametrización
+                      contable.
+                    </p>
+                  </td>
+                </tr>
+
+                <tr>
+                  <td class="titletable">
+                    <p class="SUBTITULO">Transacción
+                    </p>
+                  </td>
+                  <td>
+                    <p class="PARRAFO">Campo
+                      con lista de valores de la que se selecciona la <a
+                        href="MEH_003B.html">transacción</a>
+                      para la que se desea consultar la parametrización
+                      contable.</p>
+                  </td>
+                </tr>
+
+                <tr>
+                  <td class="titletable">
+                    <p class="SUBTITULO">Franquicia
+                    </p>
+                  </td>
+                  <td>
+                    <p class="PARRAFO">Este
+                      campo contiene lista de valores para seleccionar la<a
+                        href="NUH_033B.html">
+                        marca</a> para el cual se desea consultar la
+                      parametrización
+                      contable.
+                    </p>
+                  </td>
+                </tr>
+
+                <tr>
+                  <td class="titletable">
+                    <p class="SUBTITULO">Asiento
+                    </p>
+                  </td>
+                  <td>
+                    <p class="PARRAFO">Campo
+                      tipo combo en el que se selecciona entre Debito o Crédito
+                      el tipo de registro para el cual se desea consultar la
+                      parametrización
+                      contable.</p>
+                  </td>
+                </tr>
+              </table>
+              <p class="PARRAFO">El formulario cuenta con el hipervínculo <a
+                  href="CTH_001B.html#BL_COPI_PAR">Copiar
+                  parámetros</a> y la opción Detalle. </p>
+              <p class="PARRAFO"><span class="SUBTITULO">Detalle:</span> si el
+                usuario
+                selecciona un registro e invoca la opción Detalle se despliega
+                un formulario con todos los datos del registro y que no permite
+                modificar
+                ningún campo.</p>
+              <p class="TITLE"><img src="../img/CTF_001E22.PNG"></p>
+            </div>
+          </section>
+          <script src="../js/menu.js"></script>
+        </body>
+        <div id="footerContainer"></div>
+        <script>
   fetch('footer.html')
     .then(response => response.text())
     .then(html => {
@@ -1487,4 +1656,4 @@
     });
 </script>
 
-</html>
+      </html>

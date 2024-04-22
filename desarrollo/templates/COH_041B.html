@@ -1,25 +1,26 @@
 <!DOCTYPE html>
 <html lang="es">
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>BANKBU®</title>
-    <link rel="stylesheet" href="../css/pages.css">
-    <link rel="stylesheet" href="../css/style.css">
-    <link rel="icon" href="../img/ACQUIRER-logo.JPG" type="image/x-icon">
-</head>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>BANKBU®</title>
+        <link rel="stylesheet" href="../css/pages.css">
+        <link rel="stylesheet" href="../css/style.css">
+        <link rel="icon" href="../img/ACQUIRER-logo.JPG" type="image/x-icon">
+    </head>
 
-<body>
+    <body>
 
-    <header>
-        <img class="logo" src="../img/logoBankbu_.PNG" alt="Logo de Mi Empresa">
-        <div id="menuBtn">
-            <img class="TITLE" src="../img/menu.PNG" alt="Botón de Menú ">
-        </div>
-    </header>
-      <div id="menuContainer"></div>
-  <script>
+        <header>
+            <img class="logo" src="../img/logoBankbu_.PNG"
+                alt="Logo de Mi Empresa">
+            <div id="menuBtn">
+                <img class="TITLE" src="../img/menu.PNG" alt="Botón de Menú ">
+            </div>
+        </header>
+        <div id="menuContainer"></div>
+        <script>
     fetch('menu.html')
       .then(response => response.text())
       .then(html => {
@@ -27,94 +28,99 @@
       });
   </script>
 
-    <section>
-        <div>
-            <table>
-                <tr>
-                    <td>
-                        <div>
-                            <p class="TITLE">Parámetros de Pin</p>
-                        </div>
-                    </td>
-                </tr>
-            </table>
-            <p class="PARRAFO">A través de este formulario el sistema permite al
-                actor ingresar los parámetros relacionados con el cálculo de
-                PIN.</p>
-            <p class="PARRAFO">El formulario contiene las opciones Actualizar y Eliminar;
-                la opción Adicionar se muestra automáticamente cuando se eliminan
-                los parámetros actuales.</p>
-            <p class="TITLE"><img src="../img/COF_041B.PNG"></p>
+        <section>
+            <div>
 
-            <p class="PARRAFO"><span class="SUBTITULO">Adicionar:</span>  Si el usuario invoca la opción Adicionar
-                se despliega un formulario con los siguientes campos:</p>
-            <p class="TITLE"><img src="../img/COF_041B1.PNG"></p>
+                <p class="TITLE">Parámetros de Pin</p>
 
-            <table>
-                <tr>
-                    <td class="titletable">
-                        <p class="SUBTITULO">Largo
+                <p class="PARRAFO">A través de este formulario el sistema
+                    permite al
+                    actor ingresar los parámetros relacionados con el cálculo de
+                    PIN.</p>
+                <p class="PARRAFO">El formulario contiene los enlaces:
+                    Actualizar y Eliminar;
+                    la opción Adicionar se muestra automáticamente cuando se
+                    eliminan
+                    los parámetros actuales.</p>
+                <p class="TITLE"><img src="../img/COF_041B.PNG"></p>
+
+                <p class="PARRAFO"><span class="SUBTITULO">Adicionar:</span> Si
+                    el usuario invoca la opción Adicionar
+                    se despliega un formulario con los siguientes campos:</p>
+                <p class="TITLE"><img src="../img/COF_041B1.PNG"></p>
+
+                <table>
+                    <tr>
+                        <td class="titletable">
+                            <p class="SUBTITULO">Largo
                                 pan </p>
-                    </td>
-                    <td>
-                        <p class="PARRAFO">El
-                            campo Largo pan acepta 2 caracteres alfanuméricos. Es obligatorio.</p>
-                    </td>
-                </tr>
-                <tr>
-                    <td class="titletable">
-                        <p class="SUBTITULO">Tabla
-                            decimalización </p>
-                    </td>
-                    <td>
-                        <p class="PARRAFO">El campo Tabla
-                            decimalización acepta 16 caracteres numéricos. Es obligatorio.</p>
-                    </td>
-                </tr>
-                <tr>
-                    <td class="titletable">
-                        <p class="SUBTITULO">Caracter
-                                    de relleno</p>
-                    </td>
-                    <td>
-                        <p class="PARRAFO">El
-                            campo Carácter de relleno acepta 1 caracter alfanumérico.
-                            Es obligatorio.</p>
-                    </td>
-                </tr>
-                <tr>
-                    <td class="titletable">
-                        <p class="SUBTITULO">Largo
-                                    pin </p>
-                    </td>
-                    <td>
-                        <p class="PARRAFO">El
-                            campo Largo pin acepta 2 caracteres numéricos. Es obligatorio.</p>
-                    </td>
-                </tr>
-                <tr>
-                    <td class="titletable">
-                        <p class="SUBTITULO">Posición
-                            track2 </p>
-                    </td>
-                    <td>
-                        <p class="PARRAFO">El campo Posición
-                            track2 acepta 2 caracteres numéricos. Es obligatorio.</p>
-                    </td>
-                </tr>
-            </table>
-            <p class="PARRAFO"><span class="SUBTITULO">Actualizar:</span> 
-                Si el usuario invoca la opción Actualizar se despliega un nuevo formulario
-                en el cual los únicos campos modificables son: Largo pan, Tabla decimalización,
-                Caracter de relleno, Largo pin, y Posición
+                        </td>
+                        <td>
+                            <p class="PARRAFO">El
+                                campo Largo pan acepta 2 caracteres
+                                alfanuméricos. Es obligatorio.</p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="titletable">
+                            <p class="SUBTITULO">Tabla
+                                decimalización </p>
+                        </td>
+                        <td>
+                            <p class="PARRAFO">El campo Tabla
+                                decimalización acepta 16 caracteres numéricos.
+                                Es obligatorio.</p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="titletable">
+                            <p class="SUBTITULO">Caracter
+                                de relleno</p>
+                        </td>
+                        <td>
+                            <p class="PARRAFO">El
+                                campo Carácter de relleno acepta 1 caracter
+                                alfanumérico.
+                                Es obligatorio.</p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="titletable">
+                            <p class="SUBTITULO">Largo
+                                pin </p>
+                        </td>
+                        <td>
+                            <p class="PARRAFO">El
+                                campo Largo pin acepta 2 caracteres numéricos.
+                                Es obligatorio.</p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="titletable">
+                            <p class="SUBTITULO">Posición
+                                track2 </p>
+                        </td>
+                        <td>
+                            <p class="PARRAFO">El campo Posición
+                                track2 acepta 2 caracteres numéricos. Es
+                                obligatorio.</p>
+                        </td>
+                    </tr>
+                </table>
+                <p class="PARRAFO"><span class="SUBTITULO">Actualizar:</span>
+                     Al activar ese enlace  se despliega un
+                    nuevo formulario
+                    en el cual los únicos campos modificables son: Largo pan,
+                    Tabla decimalización,
+                    Caracter de relleno, Largo pin, y Posición
                     track2 .</p>
-            <p class="TITLE"><img src="../img/COF_041B2.PNG"></p>
+                <p class="TITLE"><img src="../img/COF_041B2.PNG"></p>
 
-    </section>
-    <script src="../js/menu.js"></script>
-</body>
-<div id="footerContainer"></div>
-<script>
+            </section>
+            <script src="../js/menu.js"></script>
+        </body>
+        <div id="footerContainer"></div>
+        <script>
   fetch('footer.html')
     .then(response => response.text())
     .then(html => {
@@ -122,4 +128,4 @@
     });
 </script>
 
-</html>
+    </html>

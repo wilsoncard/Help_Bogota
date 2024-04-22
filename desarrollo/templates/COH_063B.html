@@ -1,25 +1,26 @@
 <!DOCTYPE html>
 <html lang="es">
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>BANKBU®</title>
-    <link rel="stylesheet" href="../css/pages.css">
-    <link rel="stylesheet" href="../css/style.css">
-    <link rel="icon" href="../img/ACQUIRER-logo.JPG" type="image/x-icon">
-</head>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>BANKBU®</title>
+        <link rel="stylesheet" href="../css/pages.css">
+        <link rel="stylesheet" href="../css/style.css">
+        <link rel="icon" href="../img/ACQUIRER-logo.JPG" type="image/x-icon">
+    </head>
 
-<body>
+    <body>
 
-    <header>
-        <img class="logo" src="../img/logoBankbu_.PNG" alt="Logo de Mi Empresa">
-        <div id="menuBtn">
-            <img class="TITLE" src="../img/menu.PNG" alt="Botón de Menú ">
-        </div>
-    </header>
-      <div id="menuContainer"></div>
-  <script>
+        <header>
+            <img class="logo" src="../img/logoBankbu_.PNG"
+                alt="Logo de Mi Empresa">
+            <div id="menuBtn">
+                <img class="TITLE" src="../img/menu.PNG" alt="Botón de Menú ">
+            </div>
+        </header>
+        <div id="menuContainer"></div>
+        <script>
     fetch('menu.html')
       .then(response => response.text())
       .then(html => {
@@ -27,103 +28,143 @@
       });
   </script>
 
-    <section>
-        <div>
-            <table>
-                <tr>
-                    <td>
-                        <div>
-                            <p class="TITLE">Validaciones 3DSecure</p>
-                        </div>
-                    </td>
-                </tr>
-            </table>
-            <p class="PARRAFO">Mediante este formulario la entidad realiza la combinatoria de los tres conjuntos de parámetros previos y, a partir de ese punto le indica al sistema la acción que debe tener lugar, esto es Rechazar o Autorizar la transacción.</p>
-            <p class="PARRAFO"><span class="SUBTITULO"> Filtro: </span> El formulario cuenta con conjunto de campos o criterios para realizar la búsqueda, mínimo debe contener un dato:</p>
-            <p class="TITLE"><img src="../img/COH_063B3.PNG"></p>
-            <table>
-                <tr>
-                    <td class="titletable">
-                        <p class="SUBTITULO">SLI</p>
-                    </td>
-                    <td>
-                        <p class="PARRAFO">Campo en el que se puede digitar o seleccionar de la lista de valores provista el código de la SLI3DSecure sobre el cual se desea realizar la consulta.</p>
-                    </td>
-                </tr>
-                <tr>
-                    <td class="titletable">
-                        <p class="SUBTITULO">Versión 3DS</p>
-                    </td>
-                    <td>
-                        <p class="PARRAFO">Campo en el que se puede digitar o seleccionar de la lista de valores provista la versión de SLI3DSecure sobre el cual se desea realizar la consulta.</p>
-                    </td>
-                </tr>
-                <tr>
-                    <td class="titletable">
-                        <p class="SUBTITULO">DTI</p>
-                    </td>
-                    <td>
-                        <p class="PARRAFO">Campo en el que se puede digitar o seleccionar de la lista de valores provista la variable de riesgo o incertidumbre sobre el cual se desea realizar la consulta.</p>
-                    </td>
-                </tr>
-                <tr>
-                    <td class="titletable">
-                        <p class="SUBTITULO">Acción</p>
-                    </td>
-                    <td>
-                        <p class="PARRAFO">Campo que posee lista de valores tipo combo con las opciones Rechazar / Autorizar, una de las cuales se muestra por defecto, sobre el cual se desea realizar la consulta.</p>
-                    </td>
-                </tr>
-            </table>
-            <p class="PARRAFO">El formulario contiene las opciones Actualizar, Eliminar, y Adicionar.</p>
-            <p class="TITLE"><img src="../img/COH_063B4.PNG"></p>
-            <p class="PARRAFO"><span class="SUBTITULO"> Adicionar:</span>  Al invocarse la opción Adicionar se despliega un nuevo formulario con los siguientes campos.</p>
-            <p class="TITLE"><img src="../img/COH_063B5.PNG"></p>
+        <section>
+            <div>
 
-            <table>
-                <tr>
-                    <td class="titletable">
-                        <p class="SUBTITULO">SLI</p>
-                    </td>
-                    <td>
-                        <p class="PARRAFO">Campo alfanumérico de 3 máximo tres caracteres, obligatorio, en el que se puede digitar o seleccionar de la lista de valores provista, el código de la SLI3DSecure para el cual se desea determinar la validación a realizar y la acción correspondiente.</p>
-                    </td>
-                </tr>
-                <tr>
-                    <td class="titletable">
-                        <p class="SUBTITULO">Versión 3DS</p>
-                    </td>
-                    <td>
-                        <p class="PARRAFO">Campo alfanumérico de 3 máximo tres caracteres, obligatorio, en el que se puede digitar o seleccionar de la lista de valores provista, la versión de SLI3DSecure para el cual se desea determinar la validación a realizar y la acción correspondiente.</p>
-                    </td>
-                </tr>
-                <tr>
-                    <td class="titletable">
-                        <p class="SUBTITULO">DTI</p>
-                    </td>
-                    <td>
-                        <p class="PARRAFO">Campo alfanumérico de 3 máximo tres caracteres, obligatorio, en el que se puede digitar o seleccionar de la lista de valores provista, la variable de riesgo o incertidumbre para la cual se desea determinar la validación a realizar y la acción correspondiente.</p>
-                    </td>
-                </tr>
-                <tr>
-                    <td class="titletable">
-                        <p class="SUBTITULO">Acción</p>
-                    </td>
-                    <td>
-                        <p class="PARRAFO">Campo que posee lista de valores tipo combo con las opciones Rechazar / Autorizar, una de las cuales se debe seleccionar, de tal suerte, que al validarse que se presentan las tres variables antes definidas, el sistema realiza la acción aquí determinada.</p>
-                    </td>
-                </tr>
-            </table>
+                <p class="TITLE">Validaciones 3DSecure</p>
 
-            <p class="PARRAFO"><span class="PARRAFO"><span class="SUBTITULO">Actualizar: </span> 
-                Si el usuario invoca la opción Actualizar se despliega un nuevo formulario en el cual el único de los cuatro campos que puede modificarse es el de Acción:</p>
-            <p class="TITLE"><img src="../img/COH_063B6.PNG"></p>
-        </div>
-    </section>
-    <script src="../js/menu.js"></script>
-</body>
-<div id="footerContainer"></div>
-<script>
+                <p class="PARRAFO">Mediante este formulario la entidad realiza
+                    la combinatoria de los tres conjuntos de parámetros previos
+                    y, a partir de ese punto le indica al sistema la acción que
+                    debe tener lugar, esto es Rechazar o Autorizar la
+                    transacción.</p>
+                <p class="PARRAFO"><span class="SUBTITULO"> Filtro: </span> El
+                    formulario cuenta con conjunto de campos o criterios para
+                    realizar la búsqueda, mínimo debe contener un dato:</p>
+                <p class="TITLE"><img src="../img/COH_063B3.PNG"></p>
+                <table>
+                    <tr>
+                        <td class="titletable">
+                            <p class="SUBTITULO">SLI</p>
+                        </td>
+                        <td>
+                            <p class="PARRAFO">Campo en el que se puede digitar
+                                o seleccionar de la lista de valores provista el
+                                código de la SLI3DSecure sobre el cual se desea
+                                realizar la consulta.</p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="titletable">
+                            <p class="SUBTITULO">Versión 3DS</p>
+                        </td>
+                        <td>
+                            <p class="PARRAFO">Campo en el que se puede digitar
+                                o seleccionar de la lista de valores provista la
+                                versión de SLI3DSecure sobre el cual se desea
+                                realizar la consulta.</p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="titletable">
+                            <p class="SUBTITULO">DTI</p>
+                        </td>
+                        <td>
+                            <p class="PARRAFO">Campo en el que se puede digitar
+                                o seleccionar de la lista de valores provista la
+                                variable de riesgo o incertidumbre sobre el cual
+                                se desea realizar la consulta.</p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="titletable">
+                            <p class="SUBTITULO">Acción</p>
+                        </td>
+                        <td>
+                            <p class="PARRAFO">Campo que posee lista de valores
+                                tipo combo con las opciones Rechazar /
+                                Autorizar, una de las cuales se muestra por
+                                defecto, sobre el cual se desea realizar la
+                                consulta.</p>
+                        </td>
+                    </tr>
+                </table>
+                <p class="PARRAFO">El formulario contiene los enlaces:
+                    Actualizar, Eliminar, y Adicionar.</p>
+                <p class="TITLE"><img src="../img/COH_063B4.PNG"></p>
+                <p class="PARRAFO"><span class="SUBTITULO"> Adicionar:</span> Al
+                    invocarse la opción Adicionar se despliega un nuevo
+                    formulario con los siguientes campos.</p>
+                <p class="TITLE"><img src="../img/COH_063B5.PNG"></p>
+
+                <table>
+                    <tr>
+                        <td class="titletable">
+                            <p class="SUBTITULO">SLI</p>
+                        </td>
+                        <td>
+                            <p class="PARRAFO">Campo alfanumérico de 3 máximo
+                                tres caracteres, obligatorio, en el que se puede
+                                digitar o seleccionar de la lista de valores
+                                provista, el código de la SLI3DSecure para el
+                                cual se desea determinar la validación a
+                                realizar y la acción correspondiente.</p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="titletable">
+                            <p class="SUBTITULO">Versión 3DS</p>
+                        </td>
+                        <td>
+                            <p class="PARRAFO">Campo alfanumérico de 3 máximo
+                                tres caracteres, obligatorio, en el que se puede
+                                digitar o seleccionar de la lista de valores
+                                provista, la versión de SLI3DSecure para el cual
+                                se desea determinar la validación a realizar y
+                                la acción correspondiente.</p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="titletable">
+                            <p class="SUBTITULO">DTI</p>
+                        </td>
+                        <td>
+                            <p class="PARRAFO">Campo alfanumérico de 3 máximo
+                                tres caracteres, obligatorio, en el que se puede
+                                digitar o seleccionar de la lista de valores
+                                provista, la variable de riesgo o incertidumbre
+                                para la cual se desea determinar la validación a
+                                realizar y la acción correspondiente.</p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="titletable">
+                            <p class="SUBTITULO">Acción</p>
+                        </td>
+                        <td>
+                            <p class="PARRAFO">Campo que posee lista de valores
+                                tipo combo con las opciones Rechazar /
+                                Autorizar, una de las cuales se debe
+                                seleccionar, de tal suerte, que al validarse que
+                                se presentan las tres variables antes definidas,
+                                el sistema realiza la acción aquí
+                                determinada.</p>
+                        </td>
+                    </tr>
+                </table>
+
+                <p class="PARRAFO"><span class="PARRAFO"><span
+                            class="SUBTITULO">Actualizar: </span>
+                         Al activar ese enlace  se despliega
+                        un nuevo formulario en el cual el único de los cuatro
+                        campos que puede modificarse es el de Acción:</p>
+                    <p class="TITLE"><img src="../img/COH_063B6.PNG"></p>
+                </div>
+            </section>
+            <script src="../js/menu.js"></script>
+        </body>
+        <div id="footerContainer"></div>
+        <script>
   fetch('footer.html')
     .then(response => response.text())
     .then(html => {
@@ -131,4 +172,4 @@
     });
 </script>
 
-</html>
+    </html>

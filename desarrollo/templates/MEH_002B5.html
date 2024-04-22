@@ -1,26 +1,26 @@
 <!DOCTYPE html>
 <html lang="es">
 
-<head>
+  <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>BANKBU®</title>
 
     <link rel="stylesheet" href="../css/pages.css">
     <link rel="stylesheet" href="../css/style.css">
- <link rel="icon" href="../img/ACQUIRER-logo.JPG" type="image/x-icon">
-</head>
+    <link rel="icon" href="../img/ACQUIRER-logo.JPG" type="image/x-icon">
+  </head>
 
-<body>
+  <body>
 
     <header>
-        <img class="logo" src="../img/logoBankbu_.PNG" alt="Logo de Mi Empresa">
-        <div id="menuBtn">
-            <img class="TITLE"  src= "../img/menu.PNG" alt="Botón de Menú ">
-        </div>
+      <img class="logo" src="../img/logoBankbu_.PNG" alt="Logo de Mi Empresa">
+      <div id="menuBtn">
+        <img class="TITLE" src="../img/menu.PNG" alt="Botón de Menú ">
+      </div>
     </header>
-      <div id="menuContainer"></div>
-  <script>
+    <div id="menuContainer"></div>
+    <script>
     fetch('menu.html')
       .then(response => response.text())
       .then(html => {
@@ -29,38 +29,51 @@
   </script>
 
     <section>
-        <div> 
-            
-                    <p  class="TITLE">Definición de productos - Productos amparados</p>
-                  
-            
-            <p  class="PARRAFO">Esta opción que se invoca desde el formulario <a href="MEH_002B.html" >Definición de productos</a>, le permite a la entidad adicionar o modificar la información correspondiente a aquellos otros productos de la entidad que pueden ser entregados en calidad de amparados (extendidas, adicionales o amparadas) y que pueden depender directamente de una tarjeta perteneciente al producto que se está parametrizando. Si para un Producto no se registra  información en este formulario, implícitamente se está indicando que para este no sería permitido solicitar ningún tipo de tarjeta dependiente.</p>
-            <p  class="TITLE"><img src="../img/MEF_002E36.PNG"555" ></p>
+      <div>
 
-            <p  class="PARRAFO">El formulario contiene las opciones  Eliminar y Adicionar.</p>
-            <p  class="PARRAFO"><span class="SUBTITULO">Adicionar:</span> si el usuario invoca la opción Adicionar se despliega un nuevo formulario con los siguientes campos.</p>
-            <p class="TITLE"><img src="../img/MEF_002E37.PNG"480" ></p>
+        <p class="TITLE">Definición de productos - Productos amparados</p>
 
-            <div  class="PARRAFO">
-              <p  class="TITLE">Descripción de campos</p>
-              <table>
-                <tr> 
-                  <td class="titletable" ><p class="SUBTITULO">Producto amparado
-                      </p></td>
-                  <td><p  class="PARRAFO">Campo 
-                      obligatorio con lista de valores de la cual se puede seleccionar el <a href="MEH_002B.html" >producto</a> que puede ser amparado por un titular de una tarjeta perteneciente al producto que se está parametrizando.
-                    </p></td>
-                </tr>
-              </table>
-                </section>
-    <script src="../js/menu.js"></script>
-</body>
-<div id="footerContainer"></div>
-<script>
+        <p class="PARRAFO">Esta opción que se invoca desde el formulario <a
+            href="MEH_002B.html">Definición de productos</a>, le permite a la
+          entidad adicionar o modificar la información correspondiente a
+          aquellos otros productos de la entidad que pueden ser entregados en
+          calidad de amparados (extendidas, adicionales o amparadas) y que
+          pueden depender directamente de una tarjeta perteneciente al producto
+          que se está parametrizando. Si para un Producto no se registra
+          información en este formulario, implícitamente se está indicando que
+          para este no sería permitido solicitar ningún tipo de tarjeta
+          dependiente.</p>
+        <p class="TITLE"><img src="../img/MEF_002E36.PNG"></p>
+
+        <p class="PARRAFO">El formulario contiene los enlaces: Eliminar y
+          Adicionar.</p>
+        <p class="PARRAFO"><span class="SUBTITULO">Adicionar:</span> Al activar
+          ese enlace se despliega un formulario con los siguientes campos.</p>
+        <p class="TITLE"><img src="../img/MEF_002E37.PNG"></p>
+
+        <div class="PARRAFO">
+          <p class="TITLE">Descripción de campos</p>
+          <table>
+            <tr>
+              <td class="titletable"><p class="SUBTITULO">Producto amparado
+                </p></td>
+              <td><p class="PARRAFO">Campo
+                  obligatorio con lista de valores de la cual se puede
+                  seleccionar el <a href="MEH_002B.html">producto</a> que puede
+                  ser amparado por un titular de una tarjeta perteneciente al
+                  producto que se está parametrizando.
+                </p></td>
+            </tr>
+          </table>
+        </section>
+        <script src="../js/menu.js"></script>
+      </body>
+      <div id="footerContainer"></div>
+      <script>
   fetch('footer.html')
     .then(response => response.text())
     .then(html => {
       document.getElementById('footerContainer').innerHTML = html;
     });
 </script>
-</html>
+    </html>

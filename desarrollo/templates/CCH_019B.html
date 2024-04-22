@@ -1,25 +1,25 @@
 <!DOCTYPE html>
 <html lang="es">
 
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>BANKBU®</title>
-  <link rel="stylesheet" href="../css/pages.css">
-  <link rel="stylesheet" href="../css/style.css">
-  <link rel="icon" href="../img/ACQUIRER-logo.JPG" type="image/x-icon">
-</head>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BANKBU®</title>
+    <link rel="stylesheet" href="../css/pages.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="icon" href="../img/ACQUIRER-logo.JPG" type="image/x-icon">
+  </head>
 
-<body>
+  <body>
 
-  <header>
-    <img class="logo" src="../img/logoBankbu_.PNG" alt="Logo de Mi Empresa">
-    <div id="menuBtn">
-      <img class="TITLE" src="../img/menu.PNG" alt="Botón de Menú ">
-    </div>
-  </header>
+    <header>
+      <img class="logo" src="../img/logoBankbu_.PNG" alt="Logo de Mi Empresa">
+      <div id="menuBtn">
+        <img class="TITLE" src="../img/menu.PNG" alt="Botón de Menú ">
+      </div>
+    </header>
     <div id="menuContainer"></div>
-  <script>
+    <script>
     fetch('menu.html')
       .then(response => response.text())
       .then(html => {
@@ -27,84 +27,98 @@
       });
   </script>
 
-  <section>
-    <div>
-      
-              <p class="TITLE">Consulta de actividades </p>
+    <section>
+      <div>
 
-      <p class="PARRAFO">Mediante esta opción es posible realizar la consulta de las distintas actividades que están o han
-        sido atendidas por cada agente de cobro. La forma permite realizar la consulta utilizando como criterio la
-        mayoría de los campos de la forma, desplegando para cada actividad los datos básicos asociados,
-        por lo cual su naturaleza puede ser de salida o de ingreso de datos.</p>
-      <p class="PARRAFO"><span class="SUBTITULO">Filtro:</span>  El formulario cuenta
-        con un filtro inicial de búsqueda, necesario para la consulta de la
-        información:</p>
-      <p class="TITLE"><img src="../img/CCF_019B1.PNG"></p>
+        <p class="TITLE">Consulta de actividades </p>
 
-      <table>
-        <tr>
-          <td class="titletable">
-            <p class="SUBTITULO">Agente</p>
-          </td>
-          <td>
-            <p class="PARRAFO">Para filtrar se ingresa el <A href="CCH_001B.html" target="_self">agente de cobro</A> a
-              través de la lista de valores del campo. </p>
-          </td>
-        </tr>
-        <tr>
-          <td class="titletable">
-            <p class="SUBTITULO">Estado actividad </p>
-          </td>
-          <td>
-            <p class="PARRAFO">Conjunto de campos con las diferentes etapas en las que se puede encontrar una actividad:Sin
-                  asignar, Terminada, Liquidada, Pagada, Cancelada, Asignada, Devuelta, y Retirada. Es
-                posible realizar la consulta utilizando cualquiera de dichos estados como criterio de selección.
-            </p>
-          </td>
-        </tr>
-        <tr>
-          <td class="titletable">
-            <p class="SUBTITULO">Número de obligación </p>
-          </td>
-          <td>
-            <p class="PARRAFO">Campo en el que se ingresa el número de la obligación a la que están asociadas las
-              actividades atendidas por el agente de cobro.</p>
-          </td>
-        </tr>
-        <tr>
-          <td class="titletable">
-            <p class="SUBTITULO">Tipo de cobro </p>
-          </td>
-          <td>
-            <p class="PARRAFO">Campo en el que se ingresa el nombre del <a href="CCH_002B.html" target="_self">Tipo de cobro</a> del que
-              dependen las actividades atendidas por el agente de cobro.</p>
-          </td>
-        </tr>
-        <tr>
-          <td class="titletable">
-            <p class="SUBTITULO">Número de cobro </p>
-          </td>
-          <td>
-            <p class="PARRAFO">Campo numérico de tres dígitos en el cual se ingreso el código por el cual se desea
-              realizar el filtro. </p>
-          </td>
-        </tr>
-      </table>
+        <p class="PARRAFO">Mediante esta opción es posible realizar la consulta
+          de las distintas actividades que están o han
+          sido atendidas por cada agente de cobro. La forma permite realizar la
+          consulta utilizando como criterio la
+          mayoría de los campos de la forma, desplegando para cada actividad los
+          datos básicos asociados,
+          por lo cual su naturaleza puede ser de salida o de ingreso de
+          datos.</p>
+        <p class="PARRAFO"><span class="SUBTITULO">Filtro:</span> El formulario
+          cuenta
+          con un filtro inicial de búsqueda, necesario para la consulta de la
+          información:</p>
+        <p class="TITLE"><img src="../img/CCF_019B1.PNG"></p>
 
-      <p class="PARRAFO">E<span class="PARRAFO">l formulario contiene la opcipon Detalle.</p>
-      <p class="TITLE"><img src="../img/CCF_019B.PNG"></p>
+        <table>
+          <tr>
+            <td class="titletable">
+              <p class="SUBTITULO">Agente</p>
+            </td>
+            <td>
+              <p class="PARRAFO">Para filtrar se ingresa el <a
+                  href="CCH_001B.html" target="_self">agente de cobro</a> a
+                través de la lista de valores del campo. </p>
+            </td>
+          </tr>
+          <tr>
+            <td class="titletable">
+              <p class="SUBTITULO">Estado actividad </p>
+            </td>
+            <td>
+              <p class="PARRAFO">Conjunto de campos con las diferentes etapas en
+                las que se puede encontrar una actividad:Sin
+                asignar, Terminada, Liquidada, Pagada, Cancelada, Asignada,
+                Devuelta, y Retirada. Es
+                posible realizar la consulta utilizando cualquiera de dichos
+                estados como criterio de selección.
+              </p>
+            </td>
+          </tr>
+          <tr>
+            <td class="titletable">
+              <p class="SUBTITULO">Número de obligación </p>
+            </td>
+            <td>
+              <p class="PARRAFO">Campo en el que se ingresa el número de la
+                obligación a la que están asociadas las
+                actividades atendidas por el agente de cobro.</p>
+            </td>
+          </tr>
+          <tr>
+            <td class="titletable">
+              <p class="SUBTITULO">Tipo de cobro </p>
+            </td>
+            <td>
+              <p class="PARRAFO">Campo en el que se ingresa el nombre del <a
+                  href="CCH_002B.html" target="_self">Tipo de cobro</a> del que
+                dependen las actividades atendidas por el agente de cobro.</p>
+            </td>
+          </tr>
+          <tr>
+            <td class="titletable">
+              <p class="SUBTITULO">Número de cobro </p>
+            </td>
+            <td>
+              <p class="PARRAFO">Campo numérico de tres dígitos en el cual se
+                ingreso el código por el cual se desea
+                realizar el filtro. </p>
+            </td>
+          </tr>
+        </table>
 
-      <p class=" PARRAFO"><span class="SUBTITULO">Detalle:</span>  Si el usuario invoca
-        la opción Detalle se despliega el siguiente formulario.
+        <p class="PARRAFO">E<span class="PARRAFO">l formulario contiene la
+            opcipon Detalle.</p>
+          <p class="TITLE"><img src="../img/CCF_019B.PNG"></p>
 
-        </p>
-      <p class="TITLE"><img src="../img/CCF_019B2.PNG"></p>
+          <p class=" PARRAFO"><span class="SUBTITULO">Detalle:</span> Si el
+            usuario invoca
+            la opción Detalle se despliega el siguiente formulario.
 
-  </section>
-  <script src="../js/menu.js"></script>
-</body>
-<div id="footerContainer"></div>
-<script>
+          </p>
+          <p class="TITLE"><img src="../img/CCF_019B2.PNG"></p>
+
+        </section>
+        <script src="../js/menu.js"></script>
+      </body>
+      <div id="footerContainer"></div>
+      <script>
   fetch('footer.html')
     .then(response => response.text())
     .then(html => {
@@ -112,4 +126,4 @@
     });
 </script>
 
-</html>
+    </html>

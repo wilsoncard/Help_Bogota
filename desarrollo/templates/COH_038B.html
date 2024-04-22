@@ -1,25 +1,26 @@
 <!DOCTYPE html>
 <html lang="es">
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>BANKBU®</title>
-    <link rel="stylesheet" href="../css/pages.css">
-    <link rel="stylesheet" href="../css/style.css">
-    <link rel="icon" href="../img/ACQUIRER-logo.JPG" type="image/x-icon">
-</head>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>BANKBU®</title>
+        <link rel="stylesheet" href="../css/pages.css">
+        <link rel="stylesheet" href="../css/style.css">
+        <link rel="icon" href="../img/ACQUIRER-logo.JPG" type="image/x-icon">
+    </head>
 
-<body>
+    <body>
 
-    <header>
-        <img class="logo" src="../img/logoBankbu_.PNG" alt="Logo de Mi Empresa">
-        <div id="menuBtn">
-            <img class="TITLE" src="../img/menu.PNG" alt="Botón de Menú ">
-        </div>
-    </header>
-      <div id="menuContainer"></div>
-  <script>
+        <header>
+            <img class="logo" src="../img/logoBankbu_.PNG"
+                alt="Logo de Mi Empresa">
+            <div id="menuBtn">
+                <img class="TITLE" src="../img/menu.PNG" alt="Botón de Menú ">
+            </div>
+        </header>
+        <div id="menuContainer"></div>
+        <script>
     fetch('menu.html')
       .then(response => response.text())
       .then(html => {
@@ -27,34 +28,38 @@
       });
   </script>
 
-    <section>
-        <div>
-            <table>
-                <tr>
-                    <td>
-                        <div>
-                            <p class="TITLE">Tipos de regla </p>
-                        </div>
-                    </td>
-                </tr>
-            </table>
-            <p class="PARRAFO">A través de esta opción se definen los distintos tipos de reglas para
-                facilitar la clasificación de las mismas por ejemplo, por el área de la entidad que la
-                define y permite a la vez restringir que perfiles tienen acceso a la información de cada tipo de
-                regla parametrizado. </p>
-            <p class="PARRAFO">El formulario contiene un filtro que le permite al actor buscar y consultar
-                información específica bien sea por el código o la descripción del tipo de
-                regla. </p>
-            <p class="TITLE"><img src="../img/COF_038B.PNG" ></p>
+        <section>
+            <div>
 
-            <p class="PARRAFO">Al ingresar al formulario muestra todos los tipos de regla existentes. El formulario
-                contiene las opciones Actualizar, Eliminar y Adicionar así como el hipervínculo <a
-                        href="COH_039B.html">Perfiles por tipos de regla</a></span>  que le permite al actor determinar
-                que perfiles tienen derecho a crear y ver la información correspondiente a cada tipo de regla
+                <p class="TITLE">Tipos de regla </p>
+
+                <p class="PARRAFO">A través de esta opción se definen los
+                    distintos tipos de reglas para
+                    facilitar la clasificación de las mismas por ejemplo, por el
+                    área de la entidad que la
+                    define y permite a la vez restringir que perfiles tienen
+                    acceso a la información de cada tipo de
+                    regla parametrizado. </p>
+                <p class="PARRAFO">El formulario contiene un filtro que le
+                    permite al actor buscar y consultar
+                    información específica bien sea por el código o la
+                    descripción del tipo de
+                    regla. </p>
+                <p class="TITLE"><img src="../img/COF_038B.PNG"></p>
+
+                <p class="PARRAFO">Al ingresar al formulario muestra todos los
+                    tipos de regla existentes. El formulario
+                    contiene los enlaces:Actualizar, Eliminar y Adicionar así
+                    como el hipervínculo <a
+                        href="COH_039B.html">Perfiles por tipos de
+                        regla</a></span> que le permite al actor determinar
+                que perfiles tienen derecho a crear y ver la información
+                correspondiente a cada tipo de regla
                 parametrizado. </p>
             <p class="TITLE"><img src="../img/COF_038B1.PNG"></p>
 
-            <p class="PARRAFO"><span class="SUBTITULO">Adicionar:</span>  Si el usuario invoca la opción Adicionar
+            <p class="PARRAFO"><span class="SUBTITULO">Adicionar:</span> Si el
+                usuario invoca la opción Adicionar
                 se despliega un formulario con los siguientes campos:</p>
             <p class="TITLE"><img src="../img/COF_038B2.PNG"></p>
 
@@ -65,7 +70,8 @@
                     </td>
                     <td>
                         <p class="PARRAFO">Campo
-                            alfanumérido obligatorio de hasta 2 caracteres en el que se registra el código
+                            alfanumérido obligatorio de hasta 2 caracteres en el
+                            que se registra el código
                             asignado a cada uno de los tipos de comercio.</p>
                     </td>
                 </tr>
@@ -75,21 +81,25 @@
                     </td>
                     <td>
                         <p class="PARRAFO">En este
-                            campo alfanumérico de hasta 30 posiciones, obligatorio, se registra la
-                            descripción correspondiente a cada tipo de comercio.</p>
+                            campo alfanumérico de hasta 30 posiciones,
+                            obligatorio, se registra la
+                            descripción correspondiente a cada tipo de
+                            comercio.</p>
                     </td>
                 </tr>
             </table>
-            <p class="PARRAFO"><span class="PARRAFO"><span class="SUBTITULO">Actualizar:</span> 
-                    Si el usuario invoca la opción Actualizar se despliega un nuevo formulario
+            <p class="PARRAFO"><span class="PARRAFO"><span
+                        class="SUBTITULO">Actualizar:</span>
+                     Al activar ese enlace  se despliega un
+                    nuevo formulario
                     en el cual el único campo modificable es la descripción.</p>
-            <p class="TITLE"><img src="../img/COF_038B3.PNG"></p>
+                <p class="TITLE"><img src="../img/COF_038B3.PNG"></p>
 
-    </section>
-    <script src="../js/menu.js"></script>
-</body>
-<div id="footerContainer"></div>
-<script>
+            </section>
+            <script src="../js/menu.js"></script>
+        </body>
+        <div id="footerContainer"></div>
+        <script>
   fetch('footer.html')
     .then(response => response.text())
     .then(html => {
@@ -97,4 +107,4 @@
     });
 </script>
 
-</html>
+    </html>

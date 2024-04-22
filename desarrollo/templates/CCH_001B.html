@@ -1,25 +1,25 @@
 <!DOCTYPE html>
 <html lang="es">
 
-<head>
+  <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>BANKBU®</title>
     <link rel="stylesheet" href="../css/pages.css">
     <link rel="stylesheet" href="../css/style.css">
- <link rel="icon" href="../img/ACQUIRER-logo.JPG" type="image/x-icon">
-</head>
+    <link rel="icon" href="../img/ACQUIRER-logo.JPG" type="image/x-icon">
+  </head>
 
-<body>
+  <body>
 
     <header>
-        <img class="logo" src="../img/logoBankbu_.PNG" alt="Logo de Mi Empresa">
-        <div id="menuBtn">
-            <img class="TITLE"  src= "../img/menu.PNG" alt="Botón de Menú ">
-        </div>
+      <img class="logo" src="../img/logoBankbu_.PNG" alt="Logo de Mi Empresa">
+      <div id="menuBtn">
+        <img class="TITLE" src="../img/menu.PNG" alt="Botón de Menú ">
+      </div>
     </header>
-      <div id="menuContainer"></div>
-  <script>
+    <div id="menuContainer"></div>
+    <script>
     fetch('menu.html')
       .then(response => response.text())
       .then(html => {
@@ -28,233 +28,1239 @@
   </script>
 
     <section>
-        <div> 
-            
-                    <p  class="TITLE">Operadores de cobro </p>
-                    
-            <p class="PARRAFO">Cuando las   obligaciones contraídas por los clientes no son canceladas oportunamente y de   acuerdo con las políticas establecidas por la entidad se requiera una gestión de   cobro, puede optarse por contratar a terceros para que adelanten todas las   gestiones encaminadas al logro de los recaudos correspondientes. Si por el   contrario, se da el caso que la entidad posee un área de cobranzas propia   debidamente estructurada o si ésta solamente existe como un grupo de   funcionarios de la entidad que desempe&ntilde;an las labores de cobro, apoyados por   algunos abogados o agentes externos, es necesario en ambos casos crear una casa   de cobranza, que para el primer caso se denomina real y para el segundo   genérica. A través de este formulario se permite la parametrización tanto de las casas de cobranzas como de   los agentes de cobro correspondientes.</p>
-            .
-            <p class="PARRAFO"><span class="SUBTITULO">Filtro:</span>  El formulario cuenta 
-              con un filtro inicial de búsqueda, necesario para la consulta de la 
-              información:</p>
-            <p class="TITLE"><img src="../img/CCF_001B1.PNG"390" height="105"></p>
-           
-            <table>
-              <tr> 
-                <td class="titletable"><p class="SUBTITULO">Código</p></td>
-                <td><p class="PARRAFO">Campo numérico   de 5 dígitos,  en el que se registra el número de cobranza que se desea filtrar. </p>        </td>
-              </tr>
-              <tr> 
-                <td class="titletable"><p class="SUBTITULO">Nombre</p></td>
-                <td><p class="PARRAFO">En este campo   alfanumérico de 60 posiciones, se ingresa parte del nombre por el cual se desea realizar la búsqueda. </p>        </td>
-              </tr>
-            </table>
-           
-            <p class="PARRAFO">El formulario contiene las opciones Actualizar, Eliminar, 
-              Adicionar y Detalle; adicionalmente muestra la opción <a href="#agentes" target="_self" >Agentes de cobro</a>. </p>
- 
-              <p class="TITLE"><img src="../img/CCF_001B.PNG"757" ></p>
- 
-            
-            <p  class="PARRAFO"><span class="SUBTITULO">Adicionar:</span>  Si 
-              el usuario invoca la opción Adicionar se despliega un formulario con 
-              los siguientes campos<span >:</p>
-            <p class="TITLE"><img src="../img/CCF_001B2.PNG"500" height="422"></p>
-            
-            <table>
-              <tr>
-                <td class="titletable"><p class="SUBTITULO"><span ><span >Código</p></td>
-                <td><p class="PARRAFO">Campo numérico   de 8 dígitos, obligatorio, en el que se registra el número asignado a cada casa   de cobranza, para permitir su identificación dentro del sistema.</p>      </td>
-              </tr>
-              <tr>
-                <td class="titletable"><p class="SUBTITULO"><span >Nombre</p></td>
-                <td><p class="PARRAFO">En este campo   alfanumérico de 60 posiciones, obligatorio, en el cual se registra la razón social de la   casa de cobranza.</p>      </td>
-              </tr>
-              <tr>
-                <td class="titletable"><p class="SUBTITULO"><span ><span >Dirección</p></td>
-                <td><p class="PARRAFO">Campo   alfanumérico de 60 posiciones, no obligatorio, en el que se ingresa la   nomenclatura de la sede u oficina principal de la casa de cobranza.</p>      </td>
-              </tr>
-              <tr>
-                <td class="titletable"><p class="SUBTITULO"><span ><span >Teléfono</span></span> 1</p></td>
-                <td><p class="PARRAFO">En este campo   alfanumérico de 12 posiciones, no obligatorio, se digita el primer número   telefónico de la sede u oficina principal de la casa de cobranza.</p>      </td>
-              </tr>
-              <tr>
-                <td class="titletable"><p class="SUBTITULO"><span ><span >Teléfono 2 </p></td>
-                <td><p class="PARRAFO">Campo   alfanumérico de 12 posiciones, no obligatorio, dentro del que se registra un segundo número telefónico de la sede u oficina principal de la casa   de cobranza.</p>      </td>
-              </tr>
-              <tr>
-                <td class="titletable"><p class="SUBTITULO"><span ><span >Fax</p></td>
-                <td><p class="PARRAFO">En este campo   alfanumérico de 12 posiciones, no obligatorio, se indica el número del fax   correspondiente a la sede u oficina principal de la casa de cobranza.</p>      </td>
-              </tr>
-              <tr>
-                <td class="titletable"><p class="SUBTITULO"><span ><span >E-mail</p></td>
-                <td><p class="PARRAFO">Campo   alfanumérico de 30 posiciones, no obligatorio, en el que se registra la   dirección electrónica de la casa de cobranza.</p>      </td>
-              </tr>
-              <tr>
-                <td class="titletable"><p class="SUBTITULO"><span ><span >Representante legal </p></td>
-                <td><p class="PARRAFO">En este campo   alfanumérico de 60 posiciones, no obligatorio, se registra el nombre del   representante legal de la casa de cobranza.</p>      </td>
-              </tr>
-              <tr>
-                <td class="titletable"><p class="SUBTITULO"><span ><span >Tipo de identificación </p></td>
-                <td><p class="PARRAFO">Campo con lista   de valores de la que debe seleccionarse el <A href="NUH_008B.html" target="_self" >tipo de   documento de identificación</A> correspondiente a la casa de   cobranza.</p>      </td>
-              </tr>
-              <tr>
-                <td class="titletable"><p class="SUBTITULO"><span ><span >Número de identificación </p></td>
-                <td><p class="PARRAFO">Este campo   alfanumérico de 16 posiciones, obligatorio, permite registrar el número del   documento asociado al campo anterior.</p>      </td>
-              </tr>
-              <tr>
-                <td class="titletable"  ><p class="SUBTITULO"><span ><span >Ubicación</p></td>
-                <td><p class="PARRAFO">Campo   obligatorio, que posee lista de valores poblada por medio de la opción <A href="NUH_003B.html" target="_self" >Información geopolítica</A> y de la que debe   seleccionarse el municipio (ciudad), departamento (estado) y/o país en los que   se ubica la sede u oficina principal de la casa de cobranza.</p>      </td>
-              </tr>
-              <tr>
-                <td class="titletable"><p class="SUBTITULO"><span ><span >Tipo de cobranza </p></td>
-                <td><p class="PARRAFO">Lista de valores desde la cual se selcciona si la cobranza es Propia o Externa. </p></td>
-              </tr>
-            </table>
-            
-            <p class="PARRAFO"><span class="SUBTITULO">Actualizar:</span>  Si el usuario 
-              invoca la opción Actualizar se despliega un nuevo formulario en cual 
-              los únicos campos modificables son los siguientes:</p>
-            <p class="TITLE"><img src="../img/CCF_001B3.PNG"498" height="419"></p>
-            
-            <p class="PARRAFO"><span class="SUBTITULO">Detalle:</span>  Si el usuario invoca 
-              la opción Detalle se despliega el siguiente formulario.<span
-              >
-                
-              </p>
-            <p class="TITLE"><img src="../img/CCF_001B4.PNG"752" ></p>
-            
-            <p class="PARRAFO"><span class="TITLE"><a name="agentes"></a>Agentes de cobro </p>
-            <p class="PARRAFO">Por medio de este conjunto de campos es posible el   ingreso de los datos relevantes de todos y cada uno de los agentes de cobro, se   trate de funcionarios internos o externos, pertenecientes a una casa de cobranza   real o a una casa genérica creada para poder asociar a dichos   agentes.</p>
-            <p class="TITLE"><img src="../img/CCF_001B5.PNG"623" ></p>
+      <div>
 
-            <p  class="PARRAFO"><span class="SUBTITULO">Adicionar o Actualizar:</span>  El sistema muestra una de estas dos opciones según corresponda. Se despliega un formulario con 
-              los siguientes campos<span >:</p>
-            <p class="TITLE"><img src="../img/CCF_001B6.PNG"768" height="498"></p>
-            
-            <p class="PARRAFO"><span class="SUBTITULO">Información general:</p>
-            <table>
-              <tr>
-                <td class="titletable"><p class="SUBTITULO"><span ><span >Código</span></span> agente </p></td>
-                <td><p class="PARRAFO">Campo obligatorio en el que se registra el Código (máximo de 5 dígitos) del agente. Este campo no es modificable al actualizar el registro.</p>        
-                </td>
-              </tr>
-              <tr>
-                <td class="titletable"><p class="SUBTITULO"><span >Nombre</span>  agente </p></td>
-                <td><p class="PARRAFO">Campo obligatorio en el que se registra el Nombre (máximo de 80 dígitos) del agente. Este campo sí es modificable al actualizar el registro.</p>
-                </td>
-              </tr>
-              <tr>
-                <td class="titletable"><p class="SUBTITULO"><span >Tipo de identificación </p></td>
-                <td><p class="PARRAFO">Campo que posee   lista de valores poblada a través de la opción de <a href="NUH_008B.html" target="_self" >Tipos documento   identificación</a>, de la que debe seleccionarse aquel que coincide con el del   agente de cobro; en esa misma opción se determina, mediante la inclusión de un   programa validador, si el número del documento de identificación se   valida.</p>        </td>
-              </tr>
-              <tr>
-                <td class="titletable"><p class="SUBTITULO"><span >Número de identificación </p></td>
-                <td><p class="PARRAFO">En este campo   alfanumérico de 16 posiciones, obligatorio, se registra el número del documento   de identificación del agente de cobro. </p></td>
-              </tr>
-              <tr>
-                <td class="titletable"><p class="SUBTITULO"><span >Sexo</p></td>
-                <td><p class="PARRAFO">Este campo posee   lista de valores adjunta de la que debe seleccionarse entre Femenino o Masculino el género del agente según corresponda, información que se   considera necesaria en aquellos países o regiones en los que es posible validar   o diferenciar el número del documento respecto del género de la   persona.</p>        </td>
-              </tr>
-              <tr>
-                <td class="titletable"><p class="SUBTITULO"><span >Dirección</p></td>
-                <td><p class="PARRAFO">Campo   alfanumérico de 80 posiciones, no obligatorio, en el que se digita la   nomenclatura correspondiente al sitio de residencia permanente u oficina del   agente de cobro.</p></td>
-              </tr>
-              <tr>
-                <td class="titletable"><p class="SUBTITULO"><span >Teléfono 1 </p></td>
-                <td><p class="PARRAFO">En este campo   alfanumérico de 12 posiciones, no obligatorio, se indica el primer número   telefónico correspondiente al sitio de residencia permanente u oficina del   agente de cobro.</p>
-                </td>
-              </tr>
-              <tr>
-                <td class="titletable"><p class="SUBTITULO"><span >Teléfono 2 </p></td>
-                <td><p class="PARRAFO">En este campo   alfanumérico de 12 posiciones, no obligatorio, se registra, en caso de existir,   el segundo número telefónico correspondiente al sitio de residencia permanente u   oficina del agente de cobro.</p>
-                </td>
-              </tr>
-              <tr>
-                <td class="titletable"><p class="SUBTITULO"><span >Fax</p></td>
-                <td><p class="PARRAFO">Campo   alfanumérico de 12 posiciones, no obligatorio, que contiene según el caso, el   número del telefax, por medio del cual poder enviar alguna clase de   correspondencia al agente de cobro.</p>
-                </td>
-              </tr>
-              <tr>
-                <td class="titletable"><p class="SUBTITULO"><span ><span >Estado agente </span>   </p></td>
-                <td><p class="PARRAFO">Campo con lista   de valores adjunta de la que debe seleccionarse entre Activo,   Inactivo y Retirado acorde con la situación del agente. El sistema utiliza esta   información para la asignación de las obligaciones de cobro.</p>        </td>
-              </tr>
-              <tr>
-                <td class="titletable"  ><p class="SUBTITULO"><span >Usuario</p></td>
-                <td><p class="PARRAFO">En este campo   alfanumérico de 16 posiciones no obligatorio, se ingresa el nombre de <A href="NUH_010B.html" >usuario</A> que identifica al agente de cobro para   poder interactuar con la base de datos de la entidad o de la casa de cobranzas,   si se encuentra autorizado para ello.</p>
-                </td>
-              </tr>
-              <tr>
-                <td class="titletable"><p class="SUBTITULO"><span ><span >Ubicación</p></td>
-                <td><p class="PARRAFO">Campo   obligatorio, que posee lista de valores poblada por medio de la opción <A href="NUH_003B.html" target="_self" >Información geopolítica</A> y de la que debe   seleccionarse el municipio (ciudad), departamento (estado) y/o país en los que   se ubica la sede u oficina principal de la casa de cobranza.</p>        </td>
-              </tr>
-              <tr>
-                <td class="titletable"><span class="SUBTITULO"><span >Perfil</span></span></td>
-                <td><p class="PARRAFO">Campo que posee   lista de valores poblada en la opción <A href="CCH_009B.html">Actividades de   cobro por perfil</A>, de la que debe seleccionarse el perfil que se   corresponda con el agente de cobro.</p></td>
-              </tr>
-              <tr>
-                <td class="titletable"><span class="SUBTITULO"><span >Salario</span></span></td>
-                <td><p class="PARRAFO">En este campo   numérico de 16 dígitos incluidos 2 decimales, no obligatorio, se registra el   valor del salario básico devengado por el agente de cobro, sea interno o   externo. En un uso futuro puede servir como una base a la cual adicionarle el   valor de las comisiones obtenidas por el agente de cobro.</p></td>
-              </tr>
-              
-              <tr>
-                <td class="titletable"><span class="SUBTITULO"><span >Pago empresa </span></span></td>
-                <td><p class="PARRAFO">Campo que posee   lista de valores adjunta de la cual es posible seleccionar si el pago se efectúa   o no mediante la empresa.</p></td>
-              </tr>
-              <tr>
-                <td class="titletable"><span class="SUBTITULO"><span >Tipo de agente </span></span></td>
-                <td><p class="PARRAFO">Este campo   cuenta con lista de valores adjunta asociada a la característica del vínculo   entre la entidad y el agente de cobro, de la cual se debe seleccionar entre Externo o Interno. Reviste mayor importancia en caso de existir   una única y genérica casa de cobranzas, puesto que permitiría identificar   fácilmente a unos y otros.</p></td>
-              </tr>
-              <tr>
-                <td class="titletable"><span class="SUBTITULO ">E-mail</span></td>
-                <td><p class="PARRAFO">En este campo   alfanumérico de 30 posiciones, no obligatorio, se registra la dirección   electrónica del agente de cobro. </p></td>
-              </tr>
-            </table>
-            
-            <p class="PARRAFO">Abono   comisiones Conjunto de campos que   permiten parametrizar los datos de la cuenta en la que debe realizarse la   consignación de las comisiones devengadas por el agente de cobro.</p>
-            <table>
-              <tr>
-                <td class="titletable"><p class="SUBTITULO"><span ><span >Moneda cuenta </p></td>
-                <td><p class="PARRAFO">Campo con lista   de valores de la que debe seleccionarse la <A href="NUH_005B.html" >Moneda</A>, en que se denomina la cuenta en la cual   serán depositadas las comisiones devengadas por el agente de cobro.</p>
-                </td>
-              </tr>
-              <tr>
-                <td class="titletable"><p class="SUBTITULO"><span ><span >Tipo de cuenta </p></td>
-                <td><p class="PARRAFO">Este campo   cuenta con lista de valores adjunta de la que puede seleccionarse entre Cuenta de ahorro, Corriente o Crédito rotativo; la clase de cuenta que posee el   agente de cobro.</p>
-                </td>
-              </tr>
-              <tr>
-                <td class="titletable"><p class="SUBTITULO"><span >Número de cuenta </p></td>
-                <td><p class="PARRAFO">Campo   alfanumérico de 16 posiciones, no obligatorio, en el que se registra el número   de la cuenta destinada a percibir las consignaciones de las comisiones   devengadas por el agente de cobro. </p>        
-                </td>
-              </tr>
-              <tr>
-                <td class="titletable"  ><p class="SUBTITULO"><span >Agente sustituto </p></td>
-                <td><p class="PARRAFO">En este campo   con lista de valores poblada a través de este mismo formulario, se puede   seleccionar el agente que en caso de ser necesario supliría las labores del   presente agente.</p>        </td>
-              </tr>
-              <tr>
-                <td class="titletable"><p class="SUBTITULO"><span >Agente dependiente </p></td>
-                <td><p class="PARRAFO">Campo con lista   de valores poblada a través de este mismo formulario, de la que puede o no   seleccionarse el agente que jerárquicamente se ubica en un nivel superior o   frente al cual existe una relación de subordinación. Por esta razón, el sistema   valida que el agente de quien se depende posea un nivel jerárquico superior al   del presente agente o agente subordinado.</p>        
-                </td>
-              </tr>
-            </table>
-            
-            <p class="PARRAFO"><span class="SUBTITULO">Detalle:</span>  Si el usuario invoca 
-              la opción Detalle se despliega el siguiente formulario.<span
-              >
-                
-              </p>
-            <p class="TITLE"><img src="../img/CCF_001B7.PNG"752" height="352"></p>
-            
-        </section>
-    <script src="../js/menu.js"></script>
-</body>
-<div id="footerContainer"></div>
-<script>
+        <p class="TITLE">Operadores de cobro </p>
+
+        <p class="PARRAFO">Cuando las obligaciones contraídas por los clientes
+          no son canceladas oportunamente y de acuerdo con las políticas
+          establecidas por la entidad se requiera una gestión de cobro, puede
+          optarse por contratar a terceros para que adelanten todas las
+          gestiones encaminadas al logro de los recaudos correspondientes. Si
+          por el contrario, se da el caso que la entidad posee un área de
+          cobranzas propia debidamente estructurada o si ésta solamente existe
+          como un grupo de funcionarios de la entidad que desempe&ntilde;an las
+          labores de cobro, apoyados por algunos abogados o agentes externos, es
+          necesario en ambos casos crear una casa de cobranza, que para el
+          primer caso se denomina real y para el segundo genérica. A través de
+          este formulario se permite la parametrización tanto de las casas de
+          cobranzas como de los agentes de cobro correspondientes.</p>
+        
+        <p class="PARRAFO"><span class="SUBTITULO">Filtro:</span> El formulario
+          cuenta
+          con un filtro inicial de búsqueda, necesario para la consulta de la
+          información:</p>
+        <p class="TITLE"><img src="../img/CCF_001B1.PNG"></p>
+
+        <table>
+          <tr>
+            <td class="titletable"><p class="SUBTITULO">Código</p></td>
+            <td><p class="PARRAFO">Campo numérico de 5 dígitos, en el que se
+                registra el número de cobranza que se desea filtrar. </p> </td>
+          </tr>
+          <tr>
+            <td class="titletable"><p class="SUBTITULO">Nombre</p></td>
+            <td><p class="PARRAFO">En este campo alfanumérico de 60 posiciones,
+                se ingresa parte del nombre por el cual se desea realizar la
+                búsqueda. </p> </td>
+          </tr>
+        </table>
+
+        <p class="PARRAFO">El formulario contiene los enlaces: Actualizar,
+          Eliminar,
+          Adicionar y Detalle. Adicionalmente muestra la opción <a
+            href="#agentes" target="_self">Agentes de cobro</a>. </p>
+
+        <p class="TITLE"><img src="../img/CCF_001B.PNG"></p>
+
+        <p class="PARRAFO"><span class="SUBTITULO">Adicionar:</span> Si
+          el usuario invoca la opción Adicionar se despliega un formulario con
+          los siguientes campos<span>:</p>
+          <p class="TITLE"><img src="../img/CCF_001B2.PNG"></p>
+
+          <table>
+            <tr>
+              <td class="titletable"><p
+                  class="SUBTITULO"><span><span>Código</p></td>
+                  <td><p class="PARRAFO">Campo numérico de 8 dígitos,
+                      obligatorio, en el que se registra el número asignado a
+                      cada casa de cobranza, para permitir su identificación
+                      dentro del sistema.</p> </td>
+                </tr>
+                <tr>
+                  <td class="titletable"><p
+                      class="SUBTITULO"><span>Nombre</p></td>
+                    <td><p class="PARRAFO">En este campo alfanumérico de 60
+                        posiciones, obligatorio, en el cual se registra la razón
+                        social de la casa de cobranza.</p> </td>
+                  </tr>
+                  <tr>
+                    <td class="titletable"><p
+                        class="SUBTITULO"><span><span>Dirección</p></td>
+                        <td><p class="PARRAFO">Campo alfanumérico de 60
+                            posiciones, no obligatorio, en el que se ingresa la
+                            nomenclatura de la sede u oficina principal de la
+                            casa de cobranza.</p> </td>
+                      </tr>
+                      <tr>
+                        <td class="titletable"><p
+                            class="SUBTITULO"><span><span>Teléfono</span></span>
+                            1</p></td>
+                        <td><p class="PARRAFO">En este campo alfanumérico de 12
+                            posiciones, no obligatorio, se digita el primer
+                            número telefónico de la sede u oficina principal de
+                            la casa de cobranza.</p> </td>
+                      </tr>
+                      <tr>
+                        <td class="titletable"><p
+                            class="SUBTITULO"><span><span>Teléfono 2 </p></td>
+                            <td><p class="PARRAFO">Campo alfanumérico de 12
+                                posiciones, no obligatorio, dentro del que se
+                                registra un segundo número telefónico de la sede
+                                u oficina principal de la casa de cobranza.</p>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td class="titletable"><p
+                                class="SUBTITULO"><span><span>Fax</p></td>
+                                <td><p class="PARRAFO">En este campo
+                                    alfanumérico de 12 posiciones, no
+                                    obligatorio, se indica el número del fax
+                                    correspondiente a la sede u oficina
+                                    principal de la casa de cobranza.</p> </td>
+                              </tr>
+                              <tr>
+                                <td class="titletable"><p
+                                    class="SUBTITULO"><span><span>E-mail</p></td>
+                                    <td><p class="PARRAFO">Campo alfanumérico de
+                                        30 posiciones, no obligatorio, en el que
+                                        se registra la dirección electrónica de
+                                        la casa de cobranza.</p> </td>
+                                  </tr>
+                                  <tr>
+                                    <td class="titletable"><p
+                                        class="SUBTITULO"><span><span>Representante
+                                            legal </p></td>
+                                        <td><p class="PARRAFO">En este campo
+                                            alfanumérico de 60 posiciones, no
+                                            obligatorio, se registra el nombre
+                                            del representante legal de la casa
+                                            de cobranza.</p> </td>
+                                      </tr>
+                                      <tr>
+                                        <td class="titletable"><p
+                                            class="SUBTITULO"><span><span>Tipo
+                                                de identificación </p></td>
+                                            <td><p class="PARRAFO">Campo con
+                                                lista de valores de la que debe
+                                                seleccionarse el <a
+                                                  href="NUH_008B.html"
+                                                  target="_self">tipo de
+                                                  documento de
+                                                  identificación</a>
+                                                correspondiente a la casa de
+                                                cobranza.</p> </td>
+                                          </tr>
+                                          <tr>
+                                            <td class="titletable"><p
+                                                class="SUBTITULO"><span><span>Número
+                                                    de identificación </p></td>
+                                                <td><p class="PARRAFO">Este
+                                                    campo alfanumérico de 16
+                                                    posiciones, obligatorio,
+                                                    permite registrar el número
+                                                    del documento asociado al
+                                                    campo anterior.</p> </td>
+                                              </tr>
+                                              <tr>
+                                                <td class="titletable"><p
+                                                    class="SUBTITULO"><span><span>Ubicación</p></td>
+                                                    <td><p class="PARRAFO">Campo
+                                                        obligatorio, que posee
+                                                        lista de valores poblada
+                                                        por medio de la opción
+                                                        <a href="NUH_003B.html"
+                                                          target="_self">Información
+                                                          geopolítica</a> y de
+                                                        la que debe
+                                                        seleccionarse el
+                                                        municipio (ciudad),
+                                                        departamento (estado)
+                                                        y/o país en los que se
+                                                        ubica la sede u oficina
+                                                        principal de la casa de
+                                                        cobranza.</p> </td>
+                                                  </tr>
+                                                  <tr>
+                                                    <td class="titletable"><p
+                                                        class="SUBTITULO"><span><span>Tipo
+                                                            de cobranza
+                                                          </p></td>
+                                                        <td><p
+                                                            class="PARRAFO">Lista
+                                                            de valores desde la
+                                                            cual se selcciona si
+                                                            la cobranza es
+                                                            Propia o Externa.
+                                                          </p></td>
+                                                      </tr>
+                                                    </table>
+
+                                                    <p class="PARRAFO"><span
+                                                        class="SUBTITULO">Actualizar:</span>
+                                                      Si el usuario
+                                                      invoca la opción
+                                                      Actualizar se despliega un
+                                                      nuevo formulario en cual
+                                                      los únicos campos
+                                                      modificables son los
+                                                      siguientes:</p>
+                                                    <p class="TITLE"><img
+                                                        src="../img/CCF_001B3.PNG"498"
+                                                        height="419"></p>
+
+                                                    <p class="PARRAFO"><span
+                                                        class="SUBTITULO">Detalle:</span>
+                                                      Si el usuario invoca
+                                                      la opción Detalle se
+                                                      despliega el siguiente
+                                                      formulario.<span>
+
+                                                      </p>
+                                                      <p class="TITLE"><img
+                                                          src="../img/CCF_001B4.PNG"752"></p>
+
+                                                      <p class="PARRAFO"><span
+                                                          class="TITLE"><a
+                                                            name="agentes"></a>Agentes
+                                                          de cobro </p>
+                                                        <p class="PARRAFO">Por
+                                                          medio de este conjunto
+                                                          de campos es posible
+                                                          el ingreso de los
+                                                          datos relevantes de
+                                                          todos y cada uno de
+                                                          los agentes de cobro,
+                                                          se trate de
+                                                          funcionarios internos
+                                                          o externos,
+                                                          pertenecientes a una
+                                                          casa de cobranza real
+                                                          o a una casa genérica
+                                                          creada para poder
+                                                          asociar a dichos
+                                                          agentes.</p>
+                                                        <p class="TITLE"><img
+                                                            src="../img/CCF_001B5.PNG"623"></p>
+
+                                                        <p class="PARRAFO"><span
+                                                            class="SUBTITULO">Adicionar
+                                                            o Actualizar:</span>
+                                                          El sistema muestra una
+                                                          de estas dos opciones
+                                                          según corresponda. Se
+                                                          despliega un
+                                                          formulario con
+                                                          los siguientes
+                                                          campos<span>:</p>
+                                                          <p class="TITLE"><img
+                                                              src="../img/CCF_001B6.PNG"768"
+                                                              height="498"></p>
+
+                                                          <p
+                                                            class="PARRAFO"><span
+                                                              class="SUBTITULO">Información
+                                                              general:</p>
+                                                            <table>
+                                                              <tr>
+                                                                <td
+                                                                  class="titletable"><p
+                                                                    class="SUBTITULO"><span><span>Código</span></span>
+                                                                    agente
+                                                                  </p></td>
+                                                                <td><p
+                                                                    class="PARRAFO">Campo
+                                                                    obligatorio
+                                                                    en el que se
+                                                                    registra el
+                                                                    Código
+                                                                    (máximo de 5
+                                                                    dígitos) del
+                                                                    agente. Este
+                                                                    campo no es
+                                                                    modificable
+                                                                    al
+                                                                    actualizar
+                                                                    el
+                                                                    registro.</p>
+                                                                </td>
+                                                              </tr>
+                                                              <tr>
+                                                                <td
+                                                                  class="titletable"><p
+                                                                    class="SUBTITULO"><span>Nombre</span>
+                                                                    agente
+                                                                  </p></td>
+                                                                <td><p
+                                                                    class="PARRAFO">Campo
+                                                                    obligatorio
+                                                                    en el que se
+                                                                    registra el
+                                                                    Nombre
+                                                                    (máximo de
+                                                                    80 dígitos)
+                                                                    del agente.
+                                                                    Este campo
+                                                                    sí es
+                                                                    modificable
+                                                                    al
+                                                                    actualizar
+                                                                    el
+                                                                    registro.</p>
+                                                                </td>
+                                                              </tr>
+                                                              <tr>
+                                                                <td
+                                                                  class="titletable"><p
+                                                                    class="SUBTITULO"><span>Tipo
+                                                                      de
+                                                                      identificación
+                                                                    </p></td>
+                                                                  <td><p
+                                                                      class="PARRAFO">Campo
+                                                                      que posee
+                                                                      lista de
+                                                                      valores
+                                                                      poblada a
+                                                                      través de
+                                                                      la opción
+                                                                      de <a
+                                                                        href="NUH_008B.html"
+                                                                        target="_self">Tipos
+                                                                        documento
+                                                                        identificación</a>,
+                                                                      de la que
+                                                                      debe
+                                                                      seleccionarse
+                                                                      aquel que
+                                                                      coincide
+                                                                      con el del
+                                                                      agente de
+                                                                      cobro; en
+                                                                      esa misma
+                                                                      opción se
+                                                                      determina,
+                                                                      mediante
+                                                                      la
+                                                                      inclusión
+                                                                      de un
+                                                                      programa
+                                                                      validador,
+                                                                      si el
+                                                                      número del
+                                                                      documento
+                                                                      de
+                                                                      identificación
+                                                                      se
+                                                                      valida.</p>
+                                                                  </td>
+                                                                </tr>
+                                                                <tr>
+                                                                  <td
+                                                                    class="titletable"><p
+                                                                      class="SUBTITULO"><span>Número
+                                                                        de
+                                                                        identificación
+                                                                      </p></td>
+                                                                    <td><p
+                                                                        class="PARRAFO">En
+                                                                        este
+                                                                        campo
+                                                                        alfanumérico
+                                                                        de 16
+                                                                        posiciones,
+                                                                        obligatorio,
+                                                                        se
+                                                                        registra
+                                                                        el
+                                                                        número
+                                                                        del
+                                                                        documento
+                                                                        de
+                                                                        identificación
+                                                                        del
+                                                                        agente
+                                                                        de
+                                                                        cobro.
+                                                                      </p></td>
+                                                                  </tr>
+                                                                  <tr>
+                                                                    <td
+                                                                      class="titletable"><p
+                                                                        class="SUBTITULO"><span>Sexo</p></td>
+                                                                      <td><p
+                                                                          class="PARRAFO">Este
+                                                                          campo
+                                                                          posee
+                                                                          lista
+                                                                          de
+                                                                          valores
+                                                                          adjunta
+                                                                          de la
+                                                                          que
+                                                                          debe
+                                                                          seleccionarse
+                                                                          entre
+                                                                          Femenino
+                                                                          o
+                                                                          Masculino
+                                                                          el
+                                                                          género
+                                                                          del
+                                                                          agente
+                                                                          según
+                                                                          corresponda,
+                                                                          información
+                                                                          que se
+                                                                          considera
+                                                                          necesaria
+                                                                          en
+                                                                          aquellos
+                                                                          países
+                                                                          o
+                                                                          regiones
+                                                                          en los
+                                                                          que es
+                                                                          posible
+                                                                          validar
+                                                                          o
+                                                                          diferenciar
+                                                                          el
+                                                                          número
+                                                                          del
+                                                                          documento
+                                                                          respecto
+                                                                          del
+                                                                          género
+                                                                          de la
+                                                                          persona.</p>
+                                                                      </td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                      <td
+                                                                        class="titletable"><p
+                                                                          class="SUBTITULO"><span>Dirección</p></td>
+                                                                        <td><p
+                                                                            class="PARRAFO">Campo
+                                                                            alfanumérico
+                                                                            de
+                                                                            80
+                                                                            posiciones,
+                                                                            no
+                                                                            obligatorio,
+                                                                            en
+                                                                            el
+                                                                            que
+                                                                            se
+                                                                            digita
+                                                                            la
+                                                                            nomenclatura
+                                                                            correspondiente
+                                                                            al
+                                                                            sitio
+                                                                            de
+                                                                            residencia
+                                                                            permanente
+                                                                            u
+                                                                            oficina
+                                                                            del
+                                                                            agente
+                                                                            de
+                                                                            cobro.</p></td>
+                                                                      </tr>
+                                                                      <tr>
+                                                                        <td
+                                                                          class="titletable"><p
+                                                                            class="SUBTITULO"><span>Teléfono
+                                                                              1
+                                                                            </p></td>
+                                                                          <td><p
+                                                                              class="PARRAFO">En
+                                                                              este
+                                                                              campo
+                                                                              alfanumérico
+                                                                              de
+                                                                              12
+                                                                              posiciones,
+                                                                              no
+                                                                              obligatorio,
+                                                                              se
+                                                                              indica
+                                                                              el
+                                                                              primer
+                                                                              número
+                                                                              telefónico
+                                                                              correspondiente
+                                                                              al
+                                                                              sitio
+                                                                              de
+                                                                              residencia
+                                                                              permanente
+                                                                              u
+                                                                              oficina
+                                                                              del
+                                                                              agente
+                                                                              de
+                                                                              cobro.</p>
+                                                                          </td>
+                                                                        </tr>
+                                                                        <tr>
+                                                                          <td
+                                                                            class="titletable"><p
+                                                                              class="SUBTITULO"><span>Teléfono
+                                                                                2
+                                                                              </p></td>
+                                                                            <td><p
+                                                                                class="PARRAFO">En
+                                                                                este
+                                                                                campo
+                                                                                alfanumérico
+                                                                                de
+                                                                                12
+                                                                                posiciones,
+                                                                                no
+                                                                                obligatorio,
+                                                                                se
+                                                                                registra,
+                                                                                en
+                                                                                caso
+                                                                                de
+                                                                                existir,
+                                                                                el
+                                                                                segundo
+                                                                                número
+                                                                                telefónico
+                                                                                correspondiente
+                                                                                al
+                                                                                sitio
+                                                                                de
+                                                                                residencia
+                                                                                permanente
+                                                                                u
+                                                                                oficina
+                                                                                del
+                                                                                agente
+                                                                                de
+                                                                                cobro.</p>
+                                                                            </td>
+                                                                          </tr>
+                                                                          <tr>
+                                                                            <td
+                                                                              class="titletable"><p
+                                                                                class="SUBTITULO"><span>Fax</p></td>
+                                                                              <td><p
+                                                                                  class="PARRAFO">Campo
+                                                                                  alfanumérico
+                                                                                  de
+                                                                                  12
+                                                                                  posiciones,
+                                                                                  no
+                                                                                  obligatorio,
+                                                                                  que
+                                                                                  contiene
+                                                                                  según
+                                                                                  el
+                                                                                  caso,
+                                                                                  el
+                                                                                  número
+                                                                                  del
+                                                                                  telefax,
+                                                                                  por
+                                                                                  medio
+                                                                                  del
+                                                                                  cual
+                                                                                  poder
+                                                                                  enviar
+                                                                                  alguna
+                                                                                  clase
+                                                                                  de
+                                                                                  correspondencia
+                                                                                  al
+                                                                                  agente
+                                                                                  de
+                                                                                  cobro.</p>
+                                                                              </td>
+                                                                            </tr>
+                                                                            <tr>
+                                                                              <td
+                                                                                class="titletable"><p
+                                                                                  class="SUBTITULO"><span><span>Estado
+                                                                                      agente
+                                                                                    </span>
+                                                                                  </p></td>
+                                                                                <td><p
+                                                                                    class="PARRAFO">Campo
+                                                                                    con
+                                                                                    lista
+                                                                                    de
+                                                                                    valores
+                                                                                    adjunta
+                                                                                    de
+                                                                                    la
+                                                                                    que
+                                                                                    debe
+                                                                                    seleccionarse
+                                                                                    entre
+                                                                                    Activo,
+                                                                                    Inactivo
+                                                                                    y
+                                                                                    Retirado
+                                                                                    acorde
+                                                                                    con
+                                                                                    la
+                                                                                    situación
+                                                                                    del
+                                                                                    agente.
+                                                                                    El
+                                                                                    sistema
+                                                                                    utiliza
+                                                                                    esta
+                                                                                    información
+                                                                                    para
+                                                                                    la
+                                                                                    asignación
+                                                                                    de
+                                                                                    las
+                                                                                    obligaciones
+                                                                                    de
+                                                                                    cobro.</p>
+                                                                                </td>
+                                                                              </tr>
+                                                                              <tr>
+                                                                                <td
+                                                                                  class="titletable"><p
+                                                                                    class="SUBTITULO"><span>Usuario</p></td>
+                                                                                  <td><p
+                                                                                      class="PARRAFO">En
+                                                                                      este
+                                                                                      campo
+                                                                                      alfanumérico
+                                                                                      de
+                                                                                      16
+                                                                                      posiciones
+                                                                                      no
+                                                                                      obligatorio,
+                                                                                      se
+                                                                                      ingresa
+                                                                                      el
+                                                                                      nombre
+                                                                                      de
+                                                                                      <a
+                                                                                        href="NUH_010B.html">usuario</a>
+                                                                                      que
+                                                                                      identifica
+                                                                                      al
+                                                                                      agente
+                                                                                      de
+                                                                                      cobro
+                                                                                      para
+                                                                                      poder
+                                                                                      interactuar
+                                                                                      con
+                                                                                      la
+                                                                                      base
+                                                                                      de
+                                                                                      datos
+                                                                                      de
+                                                                                      la
+                                                                                      entidad
+                                                                                      o
+                                                                                      de
+                                                                                      la
+                                                                                      casa
+                                                                                      de
+                                                                                      cobranzas,
+                                                                                      si
+                                                                                      se
+                                                                                      encuentra
+                                                                                      autorizado
+                                                                                      para
+                                                                                      ello.</p>
+                                                                                  </td>
+                                                                                </tr>
+                                                                                <tr>
+                                                                                  <td
+                                                                                    class="titletable"><p
+                                                                                      class="SUBTITULO"><span><span>Ubicación</p></td>
+                                                                                      <td><p
+                                                                                          class="PARRAFO">Campo
+                                                                                          obligatorio,
+                                                                                          que
+                                                                                          posee
+                                                                                          lista
+                                                                                          de
+                                                                                          valores
+                                                                                          poblada
+                                                                                          por
+                                                                                          medio
+                                                                                          de
+                                                                                          la
+                                                                                          opción
+                                                                                          <a
+                                                                                            href="NUH_003B.html"
+                                                                                            target="_self">Información
+                                                                                            geopolítica</a>
+                                                                                          y
+                                                                                          de
+                                                                                          la
+                                                                                          que
+                                                                                          debe
+                                                                                          seleccionarse
+                                                                                          el
+                                                                                          municipio
+                                                                                          (ciudad),
+                                                                                          departamento
+                                                                                          (estado)
+                                                                                          y/o
+                                                                                          país
+                                                                                          en
+                                                                                          los
+                                                                                          que
+                                                                                          se
+                                                                                          ubica
+                                                                                          la
+                                                                                          sede
+                                                                                          u
+                                                                                          oficina
+                                                                                          principal
+                                                                                          de
+                                                                                          la
+                                                                                          casa
+                                                                                          de
+                                                                                          cobranza.</p>
+                                                                                      </td>
+                                                                                    </tr>
+                                                                                    <tr>
+                                                                                      <td
+                                                                                        class="titletable"><span
+                                                                                          class="SUBTITULO"><span>Perfil</span></span></td>
+                                                                                      <td><p
+                                                                                          class="PARRAFO">Campo
+                                                                                          que
+                                                                                          posee
+                                                                                          lista
+                                                                                          de
+                                                                                          valores
+                                                                                          poblada
+                                                                                          en
+                                                                                          la
+                                                                                          opción
+                                                                                          <a
+                                                                                            href="CCH_009B.html">Actividades
+                                                                                            de
+                                                                                            cobro
+                                                                                            por
+                                                                                            perfil</a>,
+                                                                                          de
+                                                                                          la
+                                                                                          que
+                                                                                          debe
+                                                                                          seleccionarse
+                                                                                          el
+                                                                                          perfil
+                                                                                          que
+                                                                                          se
+                                                                                          corresponda
+                                                                                          con
+                                                                                          el
+                                                                                          agente
+                                                                                          de
+                                                                                          cobro.</p></td>
+                                                                                    </tr>
+                                                                                    <tr>
+                                                                                      <td
+                                                                                        class="titletable"><span
+                                                                                          class="SUBTITULO"><span>Salario</span></span></td>
+                                                                                      <td><p
+                                                                                          class="PARRAFO">En
+                                                                                          este
+                                                                                          campo
+                                                                                          numérico
+                                                                                          de
+                                                                                          16
+                                                                                          dígitos
+                                                                                          incluidos
+                                                                                          2
+                                                                                          decimales,
+                                                                                          no
+                                                                                          obligatorio,
+                                                                                          se
+                                                                                          registra
+                                                                                          el
+                                                                                          valor
+                                                                                          del
+                                                                                          salario
+                                                                                          básico
+                                                                                          devengado
+                                                                                          por
+                                                                                          el
+                                                                                          agente
+                                                                                          de
+                                                                                          cobro,
+                                                                                          sea
+                                                                                          interno
+                                                                                          o
+                                                                                          externo.
+                                                                                          En
+                                                                                          un
+                                                                                          uso
+                                                                                          futuro
+                                                                                          puede
+                                                                                          servir
+                                                                                          como
+                                                                                          una
+                                                                                          base
+                                                                                          a
+                                                                                          la
+                                                                                          cual
+                                                                                          adicionarle
+                                                                                          el
+                                                                                          valor
+                                                                                          de
+                                                                                          las
+                                                                                          comisiones
+                                                                                          obtenidas
+                                                                                          por
+                                                                                          el
+                                                                                          agente
+                                                                                          de
+                                                                                          cobro.</p></td>
+                                                                                    </tr>
+
+                                                                                    <tr>
+                                                                                      <td
+                                                                                        class="titletable"><span
+                                                                                          class="SUBTITULO"><span>Pago
+                                                                                            empresa
+                                                                                          </span></span></td>
+                                                                                      <td><p
+                                                                                          class="PARRAFO">Campo
+                                                                                          que
+                                                                                          posee
+                                                                                          lista
+                                                                                          de
+                                                                                          valores
+                                                                                          adjunta
+                                                                                          de
+                                                                                          la
+                                                                                          cual
+                                                                                          es
+                                                                                          posible
+                                                                                          seleccionar
+                                                                                          si
+                                                                                          el
+                                                                                          pago
+                                                                                          se
+                                                                                          efectúa
+                                                                                          o
+                                                                                          no
+                                                                                          mediante
+                                                                                          la
+                                                                                          empresa.</p></td>
+                                                                                    </tr>
+                                                                                    <tr>
+                                                                                      <td
+                                                                                        class="titletable"><span
+                                                                                          class="SUBTITULO"><span>Tipo
+                                                                                            de
+                                                                                            agente
+                                                                                          </span></span></td>
+                                                                                      <td><p
+                                                                                          class="PARRAFO">Este
+                                                                                          campo
+                                                                                          cuenta
+                                                                                          con
+                                                                                          lista
+                                                                                          de
+                                                                                          valores
+                                                                                          adjunta
+                                                                                          asociada
+                                                                                          a
+                                                                                          la
+                                                                                          característica
+                                                                                          del
+                                                                                          vínculo
+                                                                                          entre
+                                                                                          la
+                                                                                          entidad
+                                                                                          y
+                                                                                          el
+                                                                                          agente
+                                                                                          de
+                                                                                          cobro,
+                                                                                          de
+                                                                                          la
+                                                                                          cual
+                                                                                          se
+                                                                                          debe
+                                                                                          seleccionar
+                                                                                          entre
+                                                                                          Externo
+                                                                                          o
+                                                                                          Interno.
+                                                                                          Reviste
+                                                                                          mayor
+                                                                                          importancia
+                                                                                          en
+                                                                                          caso
+                                                                                          de
+                                                                                          existir
+                                                                                          una
+                                                                                          única
+                                                                                          y
+                                                                                          genérica
+                                                                                          casa
+                                                                                          de
+                                                                                          cobranzas,
+                                                                                          puesto
+                                                                                          que
+                                                                                          permitiría
+                                                                                          identificar
+                                                                                          fácilmente
+                                                                                          a
+                                                                                          unos
+                                                                                          y
+                                                                                          otros.</p></td>
+                                                                                    </tr>
+                                                                                    <tr>
+                                                                                      <td
+                                                                                        class="titletable"><span
+                                                                                          class="SUBTITULO ">E-mail</span></td>
+                                                                                      <td><p
+                                                                                          class="PARRAFO">En
+                                                                                          este
+                                                                                          campo
+                                                                                          alfanumérico
+                                                                                          de
+                                                                                          30
+                                                                                          posiciones,
+                                                                                          no
+                                                                                          obligatorio,
+                                                                                          se
+                                                                                          registra
+                                                                                          la
+                                                                                          dirección
+                                                                                          electrónica
+                                                                                          del
+                                                                                          agente
+                                                                                          de
+                                                                                          cobro.
+                                                                                        </p></td>
+                                                                                    </tr>
+                                                                                  </table>
+
+                                                                                  <p
+                                                                                    class="PARRAFO">Abono
+                                                                                    comisiones
+                                                                                    Conjunto
+                                                                                    de
+                                                                                    campos
+                                                                                    que
+                                                                                    permiten
+                                                                                    parametrizar
+                                                                                    los
+                                                                                    datos
+                                                                                    de
+                                                                                    la
+                                                                                    cuenta
+                                                                                    en
+                                                                                    la
+                                                                                    que
+                                                                                    debe
+                                                                                    realizarse
+                                                                                    la
+                                                                                    consignación
+                                                                                    de
+                                                                                    las
+                                                                                    comisiones
+                                                                                    devengadas
+                                                                                    por
+                                                                                    el
+                                                                                    agente
+                                                                                    de
+                                                                                    cobro.</p>
+                                                                                  <table>
+                                                                                    <tr>
+                                                                                      <td
+                                                                                        class="titletable"><p
+                                                                                          class="SUBTITULO"><span><span>Moneda
+                                                                                              cuenta
+                                                                                            </p></td>
+                                                                                          <td><p
+                                                                                              class="PARRAFO">Campo
+                                                                                              con
+                                                                                              lista
+                                                                                              de
+                                                                                              valores
+                                                                                              de
+                                                                                              la
+                                                                                              que
+                                                                                              debe
+                                                                                              seleccionarse
+                                                                                              la
+                                                                                              <a
+                                                                                                href="NUH_005B.html">Moneda</a>,
+                                                                                              en
+                                                                                              que
+                                                                                              se
+                                                                                              denomina
+                                                                                              la
+                                                                                              cuenta
+                                                                                              en
+                                                                                              la
+                                                                                              cual
+                                                                                              serán
+                                                                                              depositadas
+                                                                                              las
+                                                                                              comisiones
+                                                                                              devengadas
+                                                                                              por
+                                                                                              el
+                                                                                              agente
+                                                                                              de
+                                                                                              cobro.</p>
+                                                                                          </td>
+                                                                                        </tr>
+                                                                                        <tr>
+                                                                                          <td
+                                                                                            class="titletable"><p
+                                                                                              class="SUBTITULO"><span><span>Tipo
+                                                                                                  de
+                                                                                                  cuenta
+                                                                                                </p></td>
+                                                                                              <td><p
+                                                                                                  class="PARRAFO">Este
+                                                                                                  campo
+                                                                                                  cuenta
+                                                                                                  con
+                                                                                                  lista
+                                                                                                  de
+                                                                                                  valores
+                                                                                                  adjunta
+                                                                                                  de
+                                                                                                  la
+                                                                                                  que
+                                                                                                  puede
+                                                                                                  seleccionarse
+                                                                                                  entre
+                                                                                                  Cuenta
+                                                                                                  de
+                                                                                                  ahorro,
+                                                                                                  Corriente
+                                                                                                  o
+                                                                                                  Crédito
+                                                                                                  rotativo;
+                                                                                                  la
+                                                                                                  clase
+                                                                                                  de
+                                                                                                  cuenta
+                                                                                                  que
+                                                                                                  posee
+                                                                                                  el
+                                                                                                  agente
+                                                                                                  de
+                                                                                                  cobro.</p>
+                                                                                              </td>
+                                                                                            </tr>
+                                                                                            <tr>
+                                                                                              <td
+                                                                                                class="titletable"><p
+                                                                                                  class="SUBTITULO"><span>Número
+                                                                                                    de
+                                                                                                    cuenta
+                                                                                                  </p></td>
+                                                                                                <td><p
+                                                                                                    class="PARRAFO">Campo
+                                                                                                    alfanumérico
+                                                                                                    de
+                                                                                                    16
+                                                                                                    posiciones,
+                                                                                                    no
+                                                                                                    obligatorio,
+                                                                                                    en
+                                                                                                    el
+                                                                                                    que
+                                                                                                    se
+                                                                                                    registra
+                                                                                                    el
+                                                                                                    número
+                                                                                                    de
+                                                                                                    la
+                                                                                                    cuenta
+                                                                                                    destinada
+                                                                                                    a
+                                                                                                    percibir
+                                                                                                    las
+                                                                                                    consignaciones
+                                                                                                    de
+                                                                                                    las
+                                                                                                    comisiones
+                                                                                                    devengadas
+                                                                                                    por
+                                                                                                    el
+                                                                                                    agente
+                                                                                                    de
+                                                                                                    cobro.
+                                                                                                  </p>
+                                                                                                </td>
+                                                                                              </tr>
+                                                                                              <tr>
+                                                                                                <td
+                                                                                                  class="titletable"><p
+                                                                                                    class="SUBTITULO"><span>Agente
+                                                                                                      sustituto
+                                                                                                    </p></td>
+                                                                                                  <td><p
+                                                                                                      class="PARRAFO">En
+                                                                                                      este
+                                                                                                      campo
+                                                                                                      con
+                                                                                                      lista
+                                                                                                      de
+                                                                                                      valores
+                                                                                                      poblada
+                                                                                                      a
+                                                                                                      través
+                                                                                                      de
+                                                                                                      este
+                                                                                                      mismo
+                                                                                                      formulario,
+                                                                                                      se
+                                                                                                      puede
+                                                                                                      seleccionar
+                                                                                                      el
+                                                                                                      agente
+                                                                                                      que
+                                                                                                      en
+                                                                                                      caso
+                                                                                                      de
+                                                                                                      ser
+                                                                                                      necesario
+                                                                                                      supliría
+                                                                                                      las
+                                                                                                      labores
+                                                                                                      del
+                                                                                                      presente
+                                                                                                      agente.</p>
+                                                                                                  </td>
+                                                                                                </tr>
+                                                                                                <tr>
+                                                                                                  <td
+                                                                                                    class="titletable"><p
+                                                                                                      class="SUBTITULO"><span>Agente
+                                                                                                        dependiente
+                                                                                                      </p></td>
+                                                                                                    <td><p
+                                                                                                        class="PARRAFO">Campo
+                                                                                                        con
+                                                                                                        lista
+                                                                                                        de
+                                                                                                        valores
+                                                                                                        poblada
+                                                                                                        a
+                                                                                                        través
+                                                                                                        de
+                                                                                                        este
+                                                                                                        mismo
+                                                                                                        formulario,
+                                                                                                        de
+                                                                                                        la
+                                                                                                        que
+                                                                                                        puede
+                                                                                                        o
+                                                                                                        no
+                                                                                                        seleccionarse
+                                                                                                        el
+                                                                                                        agente
+                                                                                                        que
+                                                                                                        jerárquicamente
+                                                                                                        se
+                                                                                                        ubica
+                                                                                                        en
+                                                                                                        un
+                                                                                                        nivel
+                                                                                                        superior
+                                                                                                        o
+                                                                                                        frente
+                                                                                                        al
+                                                                                                        cual
+                                                                                                        existe
+                                                                                                        una
+                                                                                                        relación
+                                                                                                        de
+                                                                                                        subordinación.
+                                                                                                        Por
+                                                                                                        esta
+                                                                                                        razón,
+                                                                                                        el
+                                                                                                        sistema
+                                                                                                        valida
+                                                                                                        que
+                                                                                                        el
+                                                                                                        agente
+                                                                                                        de
+                                                                                                        quien
+                                                                                                        se
+                                                                                                        depende
+                                                                                                        posea
+                                                                                                        un
+                                                                                                        nivel
+                                                                                                        jerárquico
+                                                                                                        superior
+                                                                                                        al
+                                                                                                        del
+                                                                                                        presente
+                                                                                                        agente
+                                                                                                        o
+                                                                                                        agente
+                                                                                                        subordinado.</p>
+                                                                                                    </td>
+                                                                                                  </tr>
+                                                                                                </table>
+
+                                                                                                <p
+                                                                                                  class="PARRAFO"><span
+                                                                                                    class="SUBTITULO">Detalle:</span>
+                                                                                                  Si
+                                                                                                  el
+                                                                                                  usuario
+                                                                                                  invoca
+                                                                                                  la
+                                                                                                  opción
+                                                                                                  Detalle
+                                                                                                  se
+                                                                                                  despliega
+                                                                                                  el
+                                                                                                  siguiente
+                                                                                                  formulario.<span>
+
+                                                                                                  </p>
+                                                                                                  <p
+                                                                                                    class="TITLE"><img
+                                                                                                      src="../img/CCF_001B7.PNG"752"
+                                                                                                      height="352"></p>
+
+                                                                                                </section>
+                                                                                                <script
+                                                                                                  src="../js/menu.js"></script>
+                                                                                              </body>
+                                                                                              <div
+                                                                                                id="footerContainer"></div>
+                                                                                              <script>
   fetch('footer.html')
     .then(response => response.text())
     .then(html => {
       document.getElementById('footerContainer').innerHTML = html;
     });
 </script>
-</html>
+                                                                                            </html>

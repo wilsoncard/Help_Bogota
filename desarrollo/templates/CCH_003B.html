@@ -1,25 +1,25 @@
 <!DOCTYPE html>
 <html lang="es">
 
-<head>
+  <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>BANKBU®</title>
     <link rel="stylesheet" href="../css/pages.css">
     <link rel="stylesheet" href="../css/style.css">
- <link rel="icon" href="../img/ACQUIRER-logo.JPG" type="image/x-icon">
-</head>
+    <link rel="icon" href="../img/ACQUIRER-logo.JPG" type="image/x-icon">
+  </head>
 
-<body>
+  <body>
 
     <header>
-        <img class="logo" src="../img/logoBankbu_.PNG" alt="Logo de Mi Empresa">
-        <div id="menuBtn">
-            <img class="TITLE"  src= "../img/menu.PNG" alt="Botón de Menú ">
-        </div>
+      <img class="logo" src="../img/logoBankbu_.PNG" alt="Logo de Mi Empresa">
+      <div id="menuBtn">
+        <img class="TITLE" src="../img/menu.PNG" alt="Botón de Menú ">
+      </div>
     </header>
-      <div id="menuContainer"></div>
-  <script>
+    <div id="menuContainer"></div>
+    <script>
     fetch('menu.html')
       .then(response => response.text())
       .then(html => {
@@ -28,50 +28,65 @@
   </script>
 
     <section>
-        <div> 
-            
-                    <p  class="TITLE">Tipos de documentos </p>
-                    
-            <p class="PARRAFO">Una vez se   inicie el proceso de cobranza, la base del mismo la constituyen los documentos   recibidos tanto en calidad de garantía como de medio de pago, por lo que esta   forma o pantalla permite parametrizar dichos documentos.</p>
-            <p class="PARRAFO">El formulario contiene las opciones Actualizar, Eliminar, 
-            y Adicionar.</p>
-            <p class="TITLE"><img src="../img/CCF_003B.PNG"615" ></p>
-            
-            <p  class="PARRAFO"><span class="SUBTITULO">Adicionar:</span>  Si 
-              el usuario invoca la opción Adicionar se despliega un formulario con 
-              los siguientes campos<span >:</p>
-            <p class="TITLE"><img src="../img/CCF_003B1.PNG"424" height="114"></p>
-            
-            <table>
-              <tr>
-                <td class="titletable"  ><p class="SUBTITULO"><span ><span >Código</p></td>
-                <td><p class="PARRAFO">Campo   alfanumérico de 3 posiciones, obligatorio, asignado a cada una de las clases o   tipos de documentos bien sean de garantía o de medio de pago que circulan   durante el proceso de cobranza.</p>        </td>
-              </tr>
-              <tr>
-                <td class="titletable"><p class="SUBTITULO"><span >Descripción</p></td>
-                <td><p class="PARRAFO">Este campo   alfanumérico de 50 posiciones, obligatorio, contiene el nombre o descriptivo   asociado a cada uno de los del tipo de documento.</p>      
-                </td>
-              </tr>
-              <tr>
-                <td class="titletable"><p class="SUBTITULO"><span >Cantidad de copias </p></td>
-                <td><p class="PARRAFO">En este capo se ingresa el número de copias que deben ser entregadas del documento solicitado. </p>      </td>
-              </tr>
-            </table>
-            
-            <p class="PARRAFO"><span class="SUBTITULO">Actualizar:</span>  Si el usuario 
-              invoca la opción Actualizar se despliega un nuevo formulario en cual 
-              los únicos campos modificables son los siguientes:</p>
-            <p class="TITLE"><img src="../img/CCF_003B2.PNG"422" height="117"></p>
-            
-        </section>
-    <script src="../js/menu.js"></script>
-</body>
-<div id="footerContainer"></div>
-<script>
+      <div>
+
+        <p class="TITLE">Tipos de documentos </p>
+
+        <p class="PARRAFO">Una vez se inicie el proceso de cobranza, la base del
+          mismo la constituyen los documentos recibidos tanto en calidad de
+          garantía como de medio de pago, por lo que esta forma o pantalla
+          permite parametrizar dichos documentos.</p>
+        <p class="PARRAFO">El formulario contiene los enlaces: Actualizar,Eliminar y Adicionar </p>
+        <p class="TITLE"><img src="../img/CCF_003B.PNG"></p>
+
+        <p class="PARRAFO"><span class="SUBTITULO">Adicionar:</span> Si
+          el usuario invoca la opción Adicionar se despliega un formulario con
+          los siguientes campos<span>:</p>
+          <p class="TITLE"><img src="../img/CCF_003B1.PNG"></p>
+
+          <table>
+            <tr>
+              <td class="titletable"><p
+                  class="SUBTITULO"><span><span>Código</p></td>
+                  <td><p class="PARRAFO">Campo alfanumérico de 3 posiciones,
+                      obligatorio, asignado a cada una de las clases o tipos de
+                      documentos bien sean de garantía o de medio de pago que
+                      circulan durante el proceso de cobranza.</p> </td>
+                </tr>
+                <tr>
+                  <td class="titletable"><p
+                      class="SUBTITULO"><span>Descripción</p></td>
+                    <td><p class="PARRAFO">Este campo alfanumérico de 50
+                        posiciones, obligatorio, contiene el nombre o
+                        descriptivo asociado a cada uno de los del tipo de
+                        documento.</p>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td class="titletable"><p class="SUBTITULO"><span>Cantidad
+                          de copias </p></td>
+                      <td><p class="PARRAFO">En este capo se ingresa el número
+                          de copias que deben ser entregadas del documento
+                          solicitado. </p> </td>
+                    </tr>
+                  </table>
+
+                  <p class="PARRAFO"><span class="SUBTITULO">Actualizar:</span>
+                    Si el usuario
+                    invoca la opción Actualizar se despliega un formulario
+                    en cual
+                    los únicos campos modificables son los siguientes:</p>
+                  <p class="TITLE"><img src="../img/CCF_003B2.PNG"></p>
+
+                </section>
+                <script src="../js/menu.js"></script>
+              </body>
+              <div id="footerContainer"></div>
+              <script>
   fetch('footer.html')
     .then(response => response.text())
     .then(html => {
       document.getElementById('footerContainer').innerHTML = html;
     });
 </script>
-</html>
+            </html>

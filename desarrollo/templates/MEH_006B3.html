@@ -59,280 +59,301 @@
               <p class="SUBTITULO">Bin / <span class="SUBTITULO">Producto</span>
                 / <span class="SUBTITULO">Grupo
                   afinidad </p>
-            </td>
-            <td>
-              <p class="PARRAFO">Conjunto de campos, cada uno con lista de
-                valores, de las cuales se deben seleccionar los elementos de la
-                combinación de <a
-                  href="MEH_002B.html">Productos</a> que el usuario desee
-                consultar.</p>
-            </td>
-          </tr>
-        </table>
-        <p class="PARRAFO">El formulario además de ofrecer el acceso a:
-          Eliminar, y Adicionar, dispone de los enlaces:
-          <a href="#vigencia">Vigencia</a>, <a href="#grupos">Grupos</a>,<a
-            href="#servicios"> Servicios</a> y
-          <a href="#establecimientos">Establecimientos</a>. </p>
-        <p class="TITLE"><img src="../img/MEF_006B30.PNG"></p>
-        <p class="PARRAFO"><span class="SUBTITULO">Adicionar:</span> Mediante
-          este enlace se invoca el siguiente formulario:</p>
-        <p class="TITLE"><img src="../img/MEF_006B31.PNG"></p>
+              </td>
+              <td>
+                <p class="PARRAFO">Conjunto de campos, cada uno con lista de
+                  valores, de las cuales se deben seleccionar los elementos de
+                  la
+                  combinación de <a
+                    href="MEH_002B.html">Productos</a> que el usuario desee
+                  consultar.</p>
+              </td>
+            </tr>
+          </table>
+          <p class="PARRAFO">El formulario además de ofrecer el acceso a:
+            Eliminar, y Adicionar, dispone de los enlaces:
+            <a href="#vigencia">Vigencia</a>, <a href="#grupos">Grupos</a>,<a
+              href="#servicios"> Servicios</a> y
+            <a href="#establecimientos">Establecimientos</a>. </p>
+          <p class="TITLE"><img src="../img/MEF_006B30.PNG"></p>
+          <p class="PARRAFO"><span class="SUBTITULO">Adicionar:</span> Mediante
+            este enlace se invoca el siguiente formulario:</p>
+          <p class="TITLE"><img src="../img/MEF_006B31.PNG"></p>
+
+          <table>
+            <tr>
+              <td class="titletable">
+                <p class="SUBTITULO">Segmento</p>
+              </td>
+              <td>
+                <p class="PARRAFO">
+                  Campo que dispone de una lista de valores, de la cual se debe
+                  seleccionar el <a href="MEH_002B.html">Producto</a> que la
+                  entidad desee incluir dentro del
+                  Esquema de puntajes, también permite ser ingresado
+                  manualmente.</p>
+              </td>
+            </tr>
+          </table>
+          <p class="PARRAFO"><span class="SUBTITULO">Vigencia<a
+                name="vigencia"></a>:</span> Conjuntos de campos mediante los
+            cuales la entidad define, entre otros, por cada producto, el rango
+            de
+            tiempo para el cual se tendrán en cuenta, las utilizaciones de los
+            tarjetahabientes que tengan tarjetas de esos productos.</p>
+
+          <p class="PARRAFO">El formulario contiene un filtro de consulta, así
+            como enlaces a las opciones: Actualizar, Eliminar y Adicionar.</p>
+          <p class="TITLE"><img src="../img/MEF_006B7.PNG"></p>
+
+          <p class="PARRAFO"><span class="SUBTITULO">Adicionar:</span> Al
+            invocar
+            este formulario desde Vigencia, permite definir los siguientes
+            datos:</span>
+        </p>
+        <p class="TITLE"><img src="../img/MEF_006B9.PNG"></p>
 
         <table>
           <tr>
             <td class="titletable">
-              <p class="SUBTITULO">Segmento</p>
+              <p class="SUBTITULO">
+                Producto (Segmento)</p>
             </td>
             <td>
-              <p class="PARRAFO">
-                Campo que dispone de una lista de valores, de la cual se debe
-                seleccionar el <a href="MEH_002B.html">Producto</a> que la
-                entidad desee incluir dentro del
-                Esquema de puntajes, también permite ser ingresado
-                manualmente.</p>
+              <p class="PARRAFO">Campo con lista de valores de la cual se debe
+                seleccionar el <a
+                  href="MEH_002B.html">Productos</a> que la entidad considere
+                deba
+                hacer parte del esquema de puntaje.</p>
+            </td>
+          </tr>
+          <tr>
+            <td class="SUBTITULO">Inicio vigencia </td>
+            <td>
+              <p class="PARRAFO">Campo en formato YYYY-MM-DD en el cual se
+                define
+                la fecha en que entra en vigencia cada esquema de
+                puntaje para determinado producto. El sistema controla que un
+                mismo producto no pueda hacer parte de otro
+                esquema si las fechas de vigencia se traslapan o sobreponen, a
+                excepción de los casos en que la
+                entidad requiera que para un mismo producto el sistema acumule
+                puntos, siendo necesario marcar como no
+                considerar Servicio, Grupos y Cadenas en la opción <a
+                  href="MEH_006B2.html">Parámetros adicionales</a>. Dado
+                que el sistema realiza los cortes de
+                cuentas de puntos a fecha de facturación, se sugiere
+                utilizar dichas fechas tanto para inicio como
+                para fin de la vigencia de los esquemas.</p>
+            </td>
+          </tr>
+          <tr>
+            <td class="SUBTITULO">Fin vigencia </td>
+            <td>
+              <p class="PARRAFO">Campo en el que, mediante funcionalidad de un
+                formulario, permite definir la fecha en la que expiran los
+                beneficios del esquema de puntaje para ese producto en
+                particular.</p>
+            </td>
+          </tr>
+
+          <tr>
+            <td class="SUBTITULO">Factor conversión puntos </td>
+            <td>
+              <p class="PARRAFO">Aplica para cuando el mecanismo de redención
+                seleccionado corresponda a abono, caso en el cual, en este
+                campo,
+                se determina el valor de cada unidad monetaria a la cual se van
+                a
+                convertir los puntos acumulados, en otras palabras, se
+                multiplica
+                el número de puntos disponibles a redimir, por el valor aquí
+                indicado y ese será el monto máximo del abono a aplicar a la
+                tarjeta del cliente.</p>
+            </td>
+          </tr>
+
+          <tr>
+            <td class="SUBTITULO">Puntos minimos </td>
+            <td>
+              <p class="PARRAFO">Campo numérico de 7 dígitos, obligatorio, en el
+                que se debe registrar la cantidad de puntos que necesita un
+                cliente para poder hacerse acreedor a cada premio
+                parametrizado.</p>
             </td>
           </tr>
         </table>
-        <p class="PARRAFO"><span class="SUBTITULO">Vigencia<a
-              name="vigencia"></a>:</span> Conjuntos de campos mediante los
-          cuales la entidad define, entre otros, por cada producto, el rango de
-          tiempo para el cual se tendrán en cuenta, las utilizaciones de los
-          tarjetahabientes que tengan tarjetas de esos productos.</p>
 
-        <p class="PARRAFO">El formulario contiene un filtro de consulta, así
-          como enlaces a las opciones: Actualizar, Eliminar y Adicionar.</p>
-        <p class="TITLE"><img src="../img/MEF_006B7.PNG"></p>
+        <p class="PARRAFO"><span class="SUBTITULO">Actualizar:</span> Al invocar
+          este formulario
+          desde Vigencia, se despliega un formulario en el cual el único
+          campo inmodificable es Producto (segmento):</p>
+        <p class="TITLE"><img src="../img/MEF_006B10.PNG"></p>
 
+        <p class="PARRAFO"><a name="grupos"></a><span
+            class="SUBTITULO">Grupos:</span> Conjuntos
+          de campos mediante
+          los cuales la entidad define, los Grupos de establecimientos a tener
+          en
+          consideración por cada producto, en los que los tarjetahabientes
+          realicen sus utilizaciones.
+        </p>
+        <p class="PARRAFO">El formulario contiene enlaces a las opciones:
+          Actualizar, Eliminar y Adicionar</p>
+        <p class="TITLE"><img src="../img/MEF_006B35.PNG"></p>
         <p class="PARRAFO"><span class="SUBTITULO">Adicionar:</span> Al invocar
-          este formulario desde Vigencia, permite definir los siguientes
-          datos:</span>
-      </p>
-      <p class="TITLE"><img src="../img/MEF_006B9.PNG"></p>
-
-      <table>
-        <tr>
-          <td class="titletable">
-            <p class="SUBTITULO">
-              Producto (Segmento)</p>
-          </td>
-          <td>
-            <p class="PARRAFO">Campo con lista de valores de la cual se debe
-              seleccionar el <a
-                href="MEH_002B.html">Productos</a> que la entidad considere deba
-              hacer parte del esquema de puntaje.</p>
-          </td>
-        </tr>
-        <tr>
-          <td class="SUBTITULO">Inicio vigencia </td>
-          <td>
-            <p class="PARRAFO">Campo en formato YYYY-MM-DD en el cual se define
-              la fecha en que entra en vigencia cada esquema de
-              puntaje para determinado producto. El sistema controla que un
-              mismo producto no pueda hacer parte de otro
-              esquema si las fechas de vigencia se traslapan o sobreponen, a
-              excepción de los casos en que la
-              entidad requiera que para un mismo producto el sistema acumule
-              puntos, siendo necesario marcar como no
-              considerar Servicio, Grupos y Cadenas en la opción <a
-                href="MEH_006B2.html">Parámetros adicionales</a>. Dado
-              que el sistema realiza los cortes de
-              cuentas de puntos a fecha de facturación, se sugiere
-              utilizar dichas fechas tanto para inicio como
-              para fin de la vigencia de los esquemas.</p>
-          </td>
-        </tr>
-        <tr>
-          <td class="SUBTITULO">Fin vigencia </td>
-          <td>
-            <p class="PARRAFO">Campo en el que, mediante funcionalidad de un
-              formulario, permite definir la fecha en la que expiran los
-              beneficios del esquema de puntaje para ese producto en
-              particular.</p>
-          </td>
-        </tr>
-
-        <tr>
-          <td class="SUBTITULO">Factor conversión puntos </td>
-          <td>
-            <p class="PARRAFO">Aplica para cuando el mecanismo de redención
-              seleccionado corresponda a abono, caso en el cual, en este campo,
-              se determina el valor de cada unidad monetaria a la cual se van a
-              convertir los puntos acumulados, en otras palabras, se multiplica
-              el número de puntos disponibles a redimir, por el valor aquí
-              indicado y ese será el monto máximo del abono a aplicar a la
-              tarjeta del cliente.</p>
-          </td>
-        </tr>
-
-        <tr>
-          <td class="SUBTITULO">Puntos minimos </td>
-          <td>
-            <p class="PARRAFO">Campo numérico de 7 dígitos, obligatorio, en el
-              que se debe registrar la cantidad de puntos que necesita un
-              cliente para poder hacerse acreedor a cada premio
-              parametrizado.</p>
-          </td>
-        </tr>
-      </table>
-
-      <p class="PARRAFO"><span class="SUBTITULO">Actualizar:</span> Al invocar este formulario
-        desde Vigencia, se despliega un nuevo formulario en el cual el único
-        campo inmodificable es Producto (segmento):</p>
-      <p class="TITLE"><img src="../img/MEF_006B10.PNG"></p>
-
-      <p class="PARRAFO"><a name="grupos"></a><span class="SUBTITULO">Grupos:</span> Conjuntos
-        de campos mediante
-        los cuales la entidad define, los Grupos de establecimientos a tener en
-        consideración por cada producto, en los que los tarjetahabientes
-        realicen sus utilizaciones.
-      </p>
-      <p class="PARRAFO">El formulario contiene enlaces a las opciones:
-        Actualizar, Eliminar y Adicionar</p>
-      <p class="TITLE"><img src="../img/MEF_006B35.PNG"></p>
-      <p class="PARRAFO"><span class="SUBTITULO">Adicionar:</span> Al invocar
-        este formulario desde Grupos, permite definir los siguientes datos:</p>
+          este formulario desde Grupos, permite definir los siguientes
+          datos:</p>
         <p class="TITLE"><img src="../img/MEF_006B37.PNG"></p>
-      <table>
-        <tr>
-          <td class="titletable">
-            <p class="SUBTITULO">
-              Grupo</p>
-          </td>
-          <td>
-            <p class="PARRAFO">Campo con lista de valores de la cual se debe
-              seleccionar el <a href="ESH_001B.html">Grupo</a>, que la
-              entidad considere deba hacer parte del esquema de puntaje.</p>
-          </td>
-        </tr>
-        <tr>
-          <td class="SUBTITULO">Operador </td>
-          <td>
-            <p class="PARRAFO">
-              Campo que posee lista de valores tipo combo del que la entidad
-              debe seleccionar entre Multiplicación o Adición, con lo que se
-              indica al sistema si la operación matemática que debe realizar
-              sobre el valor a definir en Factor es una u otra.</p>
-          </td>
-        </tr>
-        <tr>
-          <td class="SUBTITULO">Factor </td>
-          <td>
-            <p class="PARRAFO">Campo numérico, obligatorio, en el que la entidad
-              debe definir el número que el sistema tendrá en consideración al
-              efectuar la operación matemática indicad en el campo Operador.
-            </p>
-          </td>
-        </tr>
-      </table>
-      <p class="PARRAFO"><span class="SUBTITULO">Actualizar:</span> Al invocar este formulario
-        desde Grupos, se despliega un nuevo formulario en el cual los únicos
-        campos modificable son Operador y Factor:</p>
-      <p class="TITLE"><img src="../img/MEF_006B36.PNG"></p>
+        <table>
+          <tr>
+            <td class="titletable">
+              <p class="SUBTITULO">
+                Grupo</p>
+            </td>
+            <td>
+              <p class="PARRAFO">Campo con lista de valores de la cual se debe
+                seleccionar el <a href="ESH_001B.html">Grupo</a>, que la
+                entidad considere deba hacer parte del esquema de puntaje.</p>
+            </td>
+          </tr>
+          <tr>
+            <td class="SUBTITULO">Operador </td>
+            <td>
+              <p class="PARRAFO">
+                Campo que posee lista de valores tipo combo del que la entidad
+                debe seleccionar entre Multiplicación o Adición, con lo que se
+                indica al sistema si la operación matemática que debe realizar
+                sobre el valor a definir en Factor es una u otra.</p>
+            </td>
+          </tr>
+          <tr>
+            <td class="SUBTITULO">Factor </td>
+            <td>
+              <p class="PARRAFO">Campo numérico, obligatorio, en el que la
+                entidad
+                debe definir el número que el sistema tendrá en consideración al
+                efectuar la operación matemática indicad en el campo Operador.
+              </p>
+            </td>
+          </tr>
+        </table>
+        <p class="PARRAFO"><span class="SUBTITULO">Actualizar:</span> Al invocar
+          este formulario
+          desde Grupos, se despliega un formulario en el cual los únicos
+          campos modificable son Operador y Factor:</p>
+        <p class="TITLE"><img src="../img/MEF_006B36.PNG"></p>
 
-      <p class="PARRAFO"><a name="servicios"></a><span class="SUBTITULO">Servicios:</span>
-        Conjuntos de campos mediante los cuales la entidad define, los servicios
-        o MCC, de los establecimientos a tener en consideración por cada
-        producto, en los que los tarjetahabientes realicen sus utilizaciones.
-      </p>
-      <p class="PARRAFO">El formulario contiene enlaces a las opciones:
-        Actualizar, Eliminar y Adicionar.</p>
+        <p class="PARRAFO"><a name="servicios"></a><span
+            class="SUBTITULO">Servicios:</span>
+          Conjuntos de campos mediante los cuales la entidad define, los
+          servicios
+          o MCC, de los establecimientos a tener en consideración por cada
+          producto, en los que los tarjetahabientes realicen sus utilizaciones.
+        </p>
+        <p class="PARRAFO">El formulario contiene enlaces a las opciones:
+          Actualizar, Eliminar y Adicionar.</p>
         <p class="TITLE"><img src="../img/MEF_006B38.PNG"></p>
         <p class="PARRAFO"><span class="SUBTITULO">Adicionar:</span> Al invocar
-          este formulario desde Servicios, permite definir los siguientes datos:</p>
-      <p class="TITLE"><img src="../img/MEF_006B25.PNG"></p>
+          este formulario desde Servicios, permite definir los siguientes
+          datos:</p>
+        <p class="TITLE"><img src="../img/MEF_006B25.PNG"></p>
 
-      <table>
-        <tr>
-          <td class="titletable">
-            <p class="SUBTITULO">
-              Servicio</p>
-          </td>
-          <td>
-            <p class="PARRAFO">Campo con lista de valores de la cual se debe
-              seleccionar el <a href="ESH_002B.html">Servicio</a>, que la
-              entidad considere deba hacer parte del esquema de puntaje.</p>
-          </td>
-        </tr>
-        <tr>
-          <td class="SUBTITULO">Operador </td>
-          <td>
-            <p class="PARRAFO">
-              Campo que posee lista de valores tipo combo del que la entidad
-              debe seleccionar entre Multiplicación o Adición, con lo que se
-              indica al sistema si la operación matemática que debe realizar
-              sobre el valor a definir en Factor es una u otra.</p>
-          </td>
-        </tr>
-        <tr>
-          <td class="SUBTITULO">Factor </td>
-          <td>
-            <p class="PARRAFO">Campo numérico, obligatorio, en el que la entidad
-              debe definir el número que el sistema tendrá en consideración al
-              efectuar la operación matemática indicad en el campo Operador.
-            </p>
-          </td>
-        </tr>
-      </table>
-      <p class="PARRAFO"><span class="SUBTITULO">Actualizar:</span> Al invocar
-        este formulario desde Servicios, se despliega un
-        nuevo formulario en el cual los únicos campos modificable son Operador y
-        Factor:</p>
-      <p class="PARRAFO"><a name="establecimientos"></a><span
-          class="SUBTITULO">Establecimientos:</span>
-        Conjuntos de campos mediante los cuales la entidad
-        define, los establecimientos a tener en consideración por cada producto,
-        en los que los tarjetahabientes realicen sus utilizaciones.</p>
-      <p class="PARRAFO">El formulario contiene enlaces a las opciones:
-        Actualizar, Eliminar y Adicionar.</p>
-      <p class="TITLE"><img src="../img/MEF_006B32.PNG"></p>
-      <p class="PARRAFO"><span class="SUBTITULO">Adicionar:</span> Al invocar
-        este formulario desde Establecimientos, permite definir los siguientes
-        datos:</p>
-      <p class="TITLE"><img src="../img/MEF_006B33.PNG"></p>
-      <table>
-        <tr>
-          <td class="titletable">
-            <p class="SUBTITULO">
-              Establecimiento</p>
-          </td>
-          <td>
-            <p class="PARRAFO">
-              Campo con lista de valores de la cual se debe seleccionar el
-              <a href="ESH_002B.html">Establecimiento</a>, que la
-              entidad considere deba hacer parte del esquema de puntaje.</p>
-          </td>
-        </tr>
-        <tr>
-          <td class="SUBTITULO">Operador </td>
-          <td>
-            <p class="PARRAFO">
-              Campo que posee lista de valores tipo combo del que la entidad
-              debe seleccionar entre Multiplicación o Adición, con lo que se
-              indica al sistema si la operación matemática que debe realizar
-              sobre el valor a definir en Factor es una u otra.</p>
-          </td>
-        </tr>
-        <tr>
-          <td class="SUBTITULO">Factor </td>
-          <td>
-            <p class="PARRAFO">
-              Campo numérico, obligatorio, en el que la entidad debe definir el
-              número que el sistema tendrá en consideración al efectuar la
-              operación matemática indicad en el campo Operador.
-            </p>
-          </td>
-        </tr>
-      </table>
-      <p class="PARRAFO"><span class="SUBTITULO">Actualizar:</span> Al invocar
-        este formulario desde Establecimientos, se despliega un nuevo formulario
-        en el cual los únicos campos modificable son Operador y Factor:</p>
-      <p class="TITLE"><img src="../img/MEF_006B34.PNG"></p>
-    </section>
-    <script src="../js/menu.js"></script>
-  </body>
-  <div id="footerContainer"></div>
-  <script>
+        <table>
+          <tr>
+            <td class="titletable">
+              <p class="SUBTITULO">
+                Servicio</p>
+            </td>
+            <td>
+              <p class="PARRAFO">Campo con lista de valores de la cual se debe
+                seleccionar el <a href="ESH_002B.html">Servicio</a>, que la
+                entidad considere deba hacer parte del esquema de puntaje.</p>
+            </td>
+          </tr>
+          <tr>
+            <td class="SUBTITULO">Operador </td>
+            <td>
+              <p class="PARRAFO">
+                Campo que posee lista de valores tipo combo del que la entidad
+                debe seleccionar entre Multiplicación o Adición, con lo que se
+                indica al sistema si la operación matemática que debe realizar
+                sobre el valor a definir en Factor es una u otra.</p>
+            </td>
+          </tr>
+          <tr>
+            <td class="SUBTITULO">Factor </td>
+            <td>
+              <p class="PARRAFO">Campo numérico, obligatorio, en el que la
+                entidad
+                debe definir el número que el sistema tendrá en consideración al
+                efectuar la operación matemática indicad en el campo Operador.
+              </p>
+            </td>
+          </tr>
+        </table>
+        <p class="PARRAFO"><span class="SUBTITULO">Actualizar:</span> Al invocar
+          este formulario desde Servicios, se despliega un
+          nuevo formulario en el cual los únicos campos modificable son Operador
+          y
+          Factor:</p>
+        <p class="PARRAFO"><a name="establecimientos"></a><span
+            class="SUBTITULO">Establecimientos:</span>
+          Conjuntos de campos mediante los cuales la entidad
+          define, los establecimientos a tener en consideración por cada
+          producto,
+          en los que los tarjetahabientes realicen sus utilizaciones.</p>
+        <p class="PARRAFO">El formulario contiene enlaces a las opciones:
+          Actualizar, Eliminar y Adicionar.</p>
+        <p class="TITLE"><img src="../img/MEF_006B32.PNG"></p>
+        <p class="PARRAFO"><span class="SUBTITULO">Adicionar:</span> Al invocar
+          este formulario desde Establecimientos, permite definir los siguientes
+          datos:</p>
+        <p class="TITLE"><img src="../img/MEF_006B33.PNG"></p>
+        <table>
+          <tr>
+            <td class="titletable">
+              <p class="SUBTITULO">
+                Establecimiento</p>
+            </td>
+            <td>
+              <p class="PARRAFO">
+                Campo con lista de valores de la cual se debe seleccionar el
+                <a href="ESH_002B.html">Establecimiento</a>, que la
+                entidad considere deba hacer parte del esquema de puntaje.</p>
+            </td>
+          </tr>
+          <tr>
+            <td class="SUBTITULO">Operador </td>
+            <td>
+              <p class="PARRAFO">
+                Campo que posee lista de valores tipo combo del que la entidad
+                debe seleccionar entre Multiplicación o Adición, con lo que se
+                indica al sistema si la operación matemática que debe realizar
+                sobre el valor a definir en Factor es una u otra.</p>
+            </td>
+          </tr>
+          <tr>
+            <td class="SUBTITULO">Factor </td>
+            <td>
+              <p class="PARRAFO">
+                Campo numérico, obligatorio, en el que la entidad debe definir
+                el
+                número que el sistema tendrá en consideración al efectuar la
+                operación matemática indicad en el campo Operador.
+              </p>
+            </td>
+          </tr>
+        </table>
+        <p class="PARRAFO"><span class="SUBTITULO">Actualizar:</span> Al invocar
+          este formulario desde Establecimientos, se despliega un formulario
+          en el cual los únicos campos modificable son Operador y Factor:</p>
+        <p class="TITLE"><img src="../img/MEF_006B34.PNG"></p>
+      </section>
+      <script src="../js/menu.js"></script>
+    </body>
+    <div id="footerContainer"></div>
+    <script>
   fetch('footer.html')
     .then(response => response.text())
     .then(html => {
@@ -340,4 +361,4 @@
     });
 </script>
 
-</html>
+  </html>

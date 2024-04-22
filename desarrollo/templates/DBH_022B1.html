@@ -1,25 +1,25 @@
 <!DOCTYPE html>
 <html lang="es">
 
-<head>
+  <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>BANKBU®</title>
     <link rel="stylesheet" href="../css/pages.css">
     <link rel="stylesheet" href="../css/style.css">
- <link rel="icon" href="../img/ACQUIRER-logo.JPG" type="image/x-icon">
-</head>
+    <link rel="icon" href="../img/ACQUIRER-logo.JPG" type="image/x-icon">
+  </head>
 
-<body>
+  <body>
 
     <header>
-        <img class="logo" src="../img/logoBankbu_.PNG" alt="Logo de Mi Empresa">
-        <div id="menuBtn">
-            <img class="TITLE"  src= "../img/menu.PNG" alt="Botón de Menú ">
-        </div>
+      <img class="logo" src="../img/logoBankbu_.PNG" alt="Logo de Mi Empresa">
+      <div id="menuBtn">
+        <img class="TITLE" src="../img/menu.PNG" alt="Botón de Menú ">
+      </div>
     </header>
-      <div id="menuContainer"></div>
-  <script>
+    <div id="menuContainer"></div>
+    <script>
     fetch('menu.html')
       .then(response => response.text())
       .then(html => {
@@ -28,83 +28,97 @@
   </script>
 
     <section>
-        <div> 
-            
-                    <p  class="TITLE">Novedad cambio cuenta</p>
-                  
-            <p class="PARRAFO" >Mediante esta opción que se 
-              invoca desde <a href="DBH_020B.html" >Generación de novedades 
-              débito</a> se registra la novedad mediante la cual se hace el cambio 
-              de una cuenta por otra. </p>
-            <p  class="PARRAFO">La cuenta cambiada conserva la misma categoría 
-              que tenía la cuenta original seleccionada.</p>
-            
-            <p class="TITLE"><img src="../img/DBF_022E2.PNG"420" height="266"></p>
+      <div>
 
-            <p  class="TITLE">Descripción de campos</p>
-            <div> 
-              <table>
-                <tr> 
-                  <td class="titletable"  ><p class="SUBTITULO"><span >Cuenta 
-                      actual</p></td>
-                  <td><p  class="PARRAFO">Campo 
-                      obligatorio con lista de valores de la que se selecciona la cuenta 
-                      que se desea cambiar.</p></td>
-                </tr>
-                <tr> 
-                  <td class="titletable"><p class="SUBTITULO"><span >Categoría</p></td>
-                  <td><p  class="PARRAFO">En 
-                      este campo de salida se muestra la categoría correspondiente 
+        <p class="TITLE">Novedad cambio cuenta</p>
+
+        <p class="PARRAFO">Mediante esta opción que se
+          invoca desde <a href="DBH_020B.html">Generación de novedades
+            débito</a> se registra la novedad mediante la cual se hace el cambio
+          de una cuenta por otra. </p>
+        <p class="PARRAFO">La cuenta cambiada conserva la misma categoría
+          que tenía la cuenta original seleccionada.</p>
+
+        <p class="TITLE"><img src="../img/DBF_022E2.PNG"420" height="266"></p>
+
+        <p class="TITLE">Descripción de campos</p>
+        <div>
+          <table>
+            <tr>
+              <td class="titletable"><p class="SUBTITULO"><span>Cuenta
+                    actual</p></td>
+                <td><p class="PARRAFO">Campo
+                    obligatorio con lista de valores de la que se selecciona la
+                    cuenta
+                    que se desea cambiar.</p></td>
+              </tr>
+              <tr>
+                <td class="titletable"><p
+                    class="SUBTITULO"><span>Categoría</p></td>
+                  <td><p class="PARRAFO">En
+                      este campo de salida se muestra la categoría
+                      correspondiente
                       a la cuenta seleccionada.</p></td>
                 </tr>
-                <tr> 
-                  <td class="titletable"><p class="SUBTITULO"><span >Tipo 
-                      cuenta a debitar</p></td>
-                  <td><p  class="PARRAFO">Campo 
-                      obligatorio tipo combo en el que se selecciona entre Ahorros, 
-                      Corriente o Rotativo el tipo de cuenta asociado con 
-                      la cuenta a cambiar.</p></td>
-                </tr>
-                <tr> 
-                  <td class="titletable"><p class="SUBTITULO"><span >Moneda</p></td>
-                  <td><p  class="PARRAFO">En 
-                      este campo obligatorio con lista de valores, se selecciona la moneda 
-                      en la que se encuentra denominada la cuenta que se va a cambiar.</p></td>
-                </tr>
-                <tr> 
-                  <td class="titletable"><p class="SUBTITULO"><span >Número 
-                      de cuenta</p></td>
-                  <td><p  class="PARRAFO">Campo 
-                      obligatorio de hasta 16 posiciones en el que se registra el nuevo 
-                      el número de la cuenta a cambiar.</p></td>
-                </tr>
-                <tr> 
-                  <td class="titletable"><p class="SUBTITULO"><span >Fecha 
-                      radicación</p></td>
-                  <td><p  class="PARRAFO">En 
-                      este campo obligatorio se registra en formato YYYY-MM-DD la fecha 
-                      en la que se ingresa la novedad en el sistema.</p></td>
-                </tr>
-                <tr> 
-                  <td class="titletable"><p class="SUBTITULO"><span >Sucursal 
-                      cuenta </p></td>
-                  <td><p  class="PARRAFO">Campo 
-                      obligatorio con lista de valores que permite seleccionar la <a href="NUH_020B.html" >sucursal</a> 
-                      de la entidad a la que pertence la cuenta que se va a cambiar.</p></td>
-                </tr>
-              </table>
-            </div>
+                <tr>
+                  <td class="titletable"><p class="SUBTITULO"><span>Tipo
+                        cuenta a debitar</p></td>
+                    <td><p class="PARRAFO">Campo
+                        obligatorio tipo combo en el que se selecciona entre
+                        Ahorros,
+                        Corriente o Rotativo el tipo de cuenta asociado con
+                        la cuenta a cambiar.</p></td>
+                  </tr>
+                  <tr>
+                    <td class="titletable"><p
+                        class="SUBTITULO"><span>Moneda</p></td>
+                      <td><p class="PARRAFO">En
+                          este campo obligatorio con lista de valores, se
+                          selecciona la moneda
+                          en la que se encuentra denominada la cuenta que se va
+                          a cambiar.</p></td>
+                    </tr>
+                    <tr>
+                      <td class="titletable"><p class="SUBTITULO"><span>Número
+                            de cuenta</p></td>
+                        <td><p class="PARRAFO">Campo
+                            obligatorio de hasta 16 posiciones en el que se
+                            registra el nuevo
+                            el número de la cuenta a cambiar.</p></td>
+                      </tr>
+                      <tr>
+                        <td class="titletable"><p class="SUBTITULO"><span>Fecha
+                              radicación</p></td>
+                          <td><p class="PARRAFO">En
+                              este campo obligatorio se registra en formato
+                              YYYY-MM-DD la fecha
+                              en la que se ingresa la novedad en el
+                              sistema.</p></td>
+                        </tr>
+                        <tr>
+                          <td class="titletable"><p
+                              class="SUBTITULO"><span>Sucursal
+                                cuenta </p></td>
+                            <td><p class="PARRAFO">Campo
+                                obligatorio con lista de valores que permite
+                                seleccionar la <a
+                                  href="NUH_020B.html">sucursal</a>
+                                de la entidad a la que pertence la cuenta que se
+                                va a cambiar.</p></td>
+                          </tr>
+                        </table>
+                      </div>
 
-            <div>
-            </section>
-    <script src="../js/menu.js"></script>
-</body>
-<div id="footerContainer"></div>
-<script>
+                      <div>
+                      </section>
+                      <script src="../js/menu.js"></script>
+                    </body>
+                    <div id="footerContainer"></div>
+                    <script>
   fetch('footer.html')
     .then(response => response.text())
     .then(html => {
       document.getElementById('footerContainer').innerHTML = html;
     });
 </script>
-</html>
+                  </html>
