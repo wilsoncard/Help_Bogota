@@ -1,25 +1,26 @@
 <!DOCTYPE html>
 <html lang="es">
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>BANKBU®</title>
-    <link rel="stylesheet" href="../css/pages.css">
-    <link rel="stylesheet" href="../css/style.css">
-    <link rel="icon" href="../img/ACQUIRER-logo.JPG" type="image/x-icon">
-</head>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>OpencardWeb®</title>
+        <link rel="stylesheet" href="../css/pages.css">
+        <link rel="stylesheet" href="../css/style.css">
+        <link rel="icon" href="../img/ACQUIRER-logo.JPG" type="image/x-icon">
+    </head>
 
-<body>
+    <body>
 
-    <header>
-        <img class="logo" src="../img/logoBankbu_.PNG" alt="Logo de Mi Empresa">
-        <div id="menuBtn">
-            <img class="TITLE" src="../img/menu.PNG" alt="Botón de Menú ">
-        </div>
-    </header>
-      <div id="menuContainer"></div>
-  <script>
+        <header>
+            <img class="logo" src="../img/logoBankbu_.PNG"
+                alt="Logo de Mi Empresa">
+            <div id="menuBtn">
+                <img class="TITLE" src="../img/menu.PNG" alt="Botón de Menú ">
+            </div>
+        </header>
+        <div id="menuContainer"></div>
+        <script>
     fetch('menu.html')
       .then(response => response.text())
       .then(html => {
@@ -27,56 +28,82 @@
       });
   </script>
 
-    <section>
-        <div>
-            <p class="TITLE">Franquicias</p>
-                      
-            <p class="PARRAFO"><span class="SUBTITULO">Parámetros acciones por bloqueos: </span> Grupo de datos que permite
-                relacionar los bloqueos que pueden presentar las tarjetas o los clientes y las acciones o causales por
-                las que se generan las novedades en el exception file.</p>
-            <p class="PARRAFO">El formulario contiene los enlaces: Eliminar
-                y Adicionar. Adicionalmente, cuenta con un botón en la parte superior para regresar al formulario
-                principal de <a href="NUH_033B.html" >Franquicias</a>.</p>
-            <p class="TITLE"><img src="../img/NUF_033B16.PNG"></p>
+        <section>
+            <div>
+                <p class="TITLE">Franquicias</p>
 
-            <p class="PARRAFO"><span class="SUBTITULO">Adicionar:</span>  Al activar ese enlace se despliega un
-                formulario con los siguientes bloques:</p>
-            <p class="TITLE"><img src="../img/NUF_033B17.PNG"></p>
+                <p class="PARRAFO"><span class="SUBTITULO">Parámetros acciones por bloqueos:</span> Grupo de datos que
+                        permite relacionar los bloqueos que pueden presentar las
+                        tarjetas o los clientes y las acciones o causales por
+                        las que se generan las novedades en el exception file.
 
-            <table>
-                <tr>
-                    <td class="titletable">
-                        <p class="SUBTITULO">Bloqueo</p>
-                    </td>
-                    <td class="PARRAFO">
-                        <p class="PARRAFO">Campo que posee lista de valores poblada a partir de la opción de <A
-                                    href="CAH_002B.html#Actualizar" >Estados y bloqueos</A>, de la
-                            cual toma únicamente los bloqueos en los cuales dentro del grupo de transacciones
-                            habilitadas el campo Exception file esté marcado como activo o que aplica.
-                        </p>
-                    </td>
-                </tr>
-                <tr>
-                    <td class="titletable">
-                        <p class="SUBTITULO">Parámetros acciones para el exception file </p>
-                    </td>
-                    <td class="PARRAFO">
-                        <p class="PARRAFO">Lista de valores que muestra las acciones parametrizadas en la <a href="NUH_033B4.html"
-                                >opción</a> cn el mismo nombre perteneciente a este mismo caso. </p>
-                    </td>
-                </tr>
-            </table>
-            <p class="PARRAFO"><a href="NUH_033B.html">Franquicias</a><a href="NUH_003B1.html"></a><span
-                > | </span><a href="NUH_033B1.html">Clases de prefijos</a><a href="NUH_033B2.html"></a><a href="NUH_003B2.html"></a><span > 
-                | </span><a href="NUH_033B4.html">Parámetros acciones para el exception file</a><span
-                > | </span><a href="NUH_033B2.html"></a><a href="NUH_033B3.html"></a><a href="NUH_003B3.html"></a>
-              <a href="NUH_033B4.html"></a><a href="NUH_033B5.html"></a><a href="NUH_033B1.html"></a><a href="NUH_003B1.html"></a><a href="NUH_033B5.html">Parámetros acciones por bloqueos</a><a href="NUH_033B2.html"></a><a href="NUH_003B2.html"></a><span > | </span><a href="NUH_033B6.html">Parámetros regiones para el exception file</a></p>
-        </div>
-    </section>
-    <script src="../js/menu.js"></script>
-</body>
-<div id="footerContainer"></div>
-<script>
+                        El formulario contiene los enlaces: Eliminar y
+                        Adicionar. Adicionalmente, cuenta con un botón en la
+                        parte superior para regresar al formulario principal de
+                        <a href="NUH_033B.html">Franquicias</a>.</p>
+
+                    <p class="PARRAFO"><span class="SUBTITULO">Adicionar:</span>
+                        Al activar ese enlace se despliega un
+                        formulario con los siguientes bloques:</p>
+                  
+
+                    <table>
+                        <tr>
+                            <td class="titletable">
+                                <p class="SUBTITULO">Bloqueo</p>
+                            </td>
+                            <td class="PARRAFO">
+                                <p class="PARRAFO">Campo que posee lista de
+                                    valores poblada a partir de la opción de <a
+                                        href="CAH_002B.html#Actualizar">Estados
+                                        y bloqueos</a>, de la
+                                    cual toma únicamente los bloqueos en los
+                                    cuales dentro del grupo de transacciones
+                                    habilitadas el campo Exception file esté
+                                    marcado como activo o que aplica.
+                                </p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="titletable">
+                                <p class="SUBTITULO">Parámetros acciones para el
+                                    exception file </p>
+                            </td>
+                            <td class="PARRAFO">
+                                <p class="PARRAFO">Lista de valores que muestra
+                                    las acciones parametrizadas en la <a
+                                        href="NUH_033B4.html">opción</a> con el
+                                    mismo nombre perteneciente a este mismo
+                                    caso. </p>
+                            </td>
+                        </tr>
+                    </table>
+                    <p class="PARRAFO"><a href="NUH_033B.html">Franquicias</a><a
+                            href="NUH_003B1.html"></a><span> | </span><a
+                            href="NUH_033B1.html">Clases de prefijos</a><a
+                            href="NUH_033B2.html"></a><a
+                            href="NUH_003B2.html"></a><span>
+                            | </span><a href="NUH_033B3.html">Parámetros operativos</a></a><span
+                            > | </span><a href="NUH_033B4.html">Parámetros
+                            acciones para el exception file</a><span> |
+                        </span><a href="NUH_033B2.html"></a><a
+                            href="NUH_033B3.html"></a><a
+                            href="NUH_003B3.html"></a>
+                        <a href="NUH_033B4.html"></a><a
+                            href="NUH_033B5.html"></a><a
+                            href="NUH_033B1.html"></a><a
+                            href="NUH_003B1.html"></a><a
+                            href="NUH_033B5.html">Parámetros acciones por
+                            bloqueos</a><a href="NUH_033B2.html"></a><a
+                            href="NUH_003B2.html"></a><span> | </span><a
+                            href="NUH_033B6.html">Parámetros regiones para el
+                            exception file</a></p>
+                </div>
+            </section>
+            <script src="../js/menu.js"></script>
+        </body>
+        <div id="footerContainer"></div>
+        <script>
   fetch('footer.html')
     .then(response => response.text())
     .then(html => {
@@ -84,4 +111,4 @@
     });
 </script>
 
-</html>
+    </html>

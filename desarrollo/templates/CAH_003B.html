@@ -4,7 +4,7 @@
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>BANKBU®</title>
+    <title>OpencardWeb®</title>
     <link rel="stylesheet" href="../css/pages.css">
     <link rel="stylesheet" href="../css/style.css">
     <link rel="icon" href="../img/ACQUIRER-logo.JPG" type="image/x-icon">
@@ -32,26 +32,19 @@
         
                 <p class="TITLE">Ciclos de Facturación</p>
               
-        <p class="PARRAFO">Mediante esta función se definen
-          los lineamientos que se tendrán en cuenta para los cortes de
-          los créditos
-          de la entidad y su correspondiente número de ciclos.
+        <p class="PARRAFO">A través de esta opción, se definen los lineamientos de frecuencia y
+           programación de las fechas en las que la entidad, realizará los procesos de cortes de
+            los estados de cuenta de los productos otorgados. El formulario contiene los enlaces:
+             Actualizar, Eliminar, Adicionar, Detalle y <a
+             href="CAH_003B.html#BL_PROGRAMACION">Programación</a>.
         </p>
       <p class="TITLE"><img src="../img/CAF_003E.PNG"></p>
-      <p class="PARRAFO">El formulario cuenta con un filtro que le
-        pérmite al usuario consultar la información para un ciclo
-        de
-        facturación en particular, a través del código y/o
-        la
-        franquicia a la cual pertenece el mismo.</p>
+    <p class="PARRAFO">El formulario cuenta con un filtro que le permite consultar la información por Código del ciclo de facturación y/o la franquicia a la cual pertenece el mismo.</p>
       <p class="TITLE"><img src="../img/CAF_003E1.PNG"></p>
-      <p class="PARRAFO">El formulario contiene los enlaces: Actualizar,Eliminar, Adicionar y Detalle. Cuenta también con el
-        hipervínculo
-        <a
-            href="CAH_003B.html#BL_PROGRAMACION">Programación</a>.</p>
+  
       <p class="PARRAFO"><span class="SUBTITULO"><span
                 class="SUBTITULO">Adicionar</span>:</span></span>
-            Al activar ese enlace se despliega un formulario.
+                Al activar ese enlace se despliega el siguiente formulario:
           </p>
         <p class="TITLE"><img src="../img/CAF_003E2.PNG"></p>
         <p class="TITLE">Descripción de campos</p>
@@ -59,12 +52,8 @@
           <tr>
             <td class="titletable"><p
                 class="SUBTITULO">Código</p></td>
-            <td><p class="PARRAFO">Campo
-                numérico de 3 posiciones, obligatorio, con el cual se
-                registran
-                los ciclos definidos por la entidad para realizar los cortes
-                correspondientes
-                a la facturación periódica de sus clientes.
+            <td><p class="PARRAFO">	
+              Campo numérico de 3 posiciones, obligatorio, con el cual se identifica a cada uno de los ciclos definidos por la entidad, para realizar los cortes correspondientes a la facturación periódica de los productos de sus clientes.
               </p></td>
           </tr>
 
@@ -83,14 +72,7 @@
           <tr>
             <td class="titletable"><p
                 class="SUBTITULO">Periodicidad</p></td>
-            <td><p class="PARRAFO">A
-                través de las opciones provistas por el combo, en este
-                campo
-                obligatorio se selecciona la frecuencia con la cual se van a
-                facturar
-                las tarjetas que pertenezcan al ciclo. Las posibles opciones son
-                Semanal,
-                quincenal, mensual, trimestral y anual.</p></td>
+            <td><p class="PARRAFO">Campo obligatorio que posee lista de valores tipo combo, de la cual se debe seleccionar la frecuencia con la cual se van a facturar las tarjetas que pertenezcan al ciclo.</p></td>
           </tr>
 
           <tr>
@@ -108,147 +90,82 @@
             <td class="titletable"><p class="SUBTITULO">Número
                   de días primer ciclo de
                   facturación</p></td>
-            <td><p class="PARRAFO">En
-                este campo obligatorio se diligencian la cantidad de días
-                que
-                el sistema debe tomar en cuenta para la primera fecha de la
-                programación
-                del ciclo, indistintamente de la periodicidad parametrizada para
-                el
-                mismo.
+            <td><p class="PARRAFO">Campo obligatorio que, como su nombre lo indica, se diligencia una única vez, antes de iniciar la puesta en producció del aplicativo. Contiene la cantidad de días que el sistema debe tomar en cuenta, para la primera fecha de la programación del ciclo, indistintamente de la periodicidad parametrizada para el mismo.
               </p></td>
           </tr>
 
           <tr>
             <td class="titletable"><p class="SUBTITULO">última
                   fecha facturación</p></td>
-            <td><p class="PARRAFO">Cada
-                vez que se ejeucta el proceso de facturación este campo
-                es actualizado
-                con la fecha correspondiente a la última fecha en la que
-                se ejecutó
-                de acuerdo con el ciclo.
+            <td><p class="PARRAFO">Cada vez que se ejecuta el proceso de facturación, este campo es actualizado con la fecha correspondiente a la última fecha en la que se ejecutaron dichos procesos, de acuerdo con el ciclo.
               </p></td>
           </tr>
         </table>
 
         <p class="PARRAFO"><span class="SUBTITULO"><span
                   class="SUBTITULO">Actualizar</span>:</span></span>
-              Si el usuario selecciona un registro e invoca la opción
-              Actualizar
-              se despliega un formulario en el cual los campos modificables son
-              Descripción,
-              Periodicidad y Franquica.</p>
+                  Al invoca ese enlace se despliega un formulario con los datos del registro desde el cual fue llamado, en el cual los campos modificables son: Descripción, Periodicidad y Franquicia.</p>
           <p class="TITLE"><img src="../img/CAF_003E3.PNG"></p>
 
           <p class="PARRAFO"><span
               class="SUBTITULO">Detalle:</span></span>
-                Si el usuario selecciona un registro e invoca la opción
-                Detalle se
-                despliega un formulario con la información completa del
-                registro y
-                en el cual ninguno de los campos es modificable</p>
-            <p class="TITLE"><img src="../img/CAF_003E4.PNG"244"></p>
+              Al invocar ese enlace, se despliega un formulario con la información completa del registro y en el cual, ninguno de los campos es modificable:</p>
+            <p class="TITLE"><img src="../img/CAF_003E4.PNG"></p>
 
             <div>
               <p class="PARRAFO"><a name="BL_PROGRAMACION"></a><span
                   class="SUBTITULO">Programación:</span></span>
-                    Si el usuario invoca la opción Programación,
-                    se despliega
-                    un nuevo formulario con el mismo nombre y en el cual se
-                    parametrizan las
-                    fechas en las cuales se haran los cortes de
-                    facturación para cada
-                    ciclo y las fechas para los débitos
-                    automáticos en el caso
-                    de empleados.</p>
+                  Si el usuario invoca ese enlace, se despliega un nuevo formulario en el cual, se parametrizan las fechas en las que tendrán lugar los cortes de facturación, para cada ciclo y, si aplica, las fechas para los débitos automáticos en el caso de empleados. El formulario contiene los enlaces: Eliminar, Adicionar y Detalle.</p>
                 <p class="TITLE"><img src="../img/CAF_003E5.PNG"></p>
-                <p class="PARRAFO">El formulario contiene los enlaces: Eliminar,
-                  Adicionar y Detalle. </p>
-               <p class="PARRAFO"><span class="SUBTITULO">Adicionar:</span> Al activar ese enlace se despliega un formulario:<span></p>
-                  <p class="TITLE"><img src="../img/CAF_003E6.PNG"211"></p>
+                
+               <p class="PARRAFO"><span class="SUBTITULO">Adicionar:</span> Al activar ese enlace se despliega el siguiente formulario:</p>
+                  <p class="TITLE"><img src="../img/CAF_003E6.PNG"></p>
                   <p class="TITLE">Descripción de campos</p>
                   <table>
                     <tr>
                       <td class="titletable"><p class="SUBTITULO">Fecha
                             facturación</p></td>
-                      <td><p class="PARRAFO">Campo
-                          obligatorio en formato yyyy-mm-dd en el cual se
-                          registran las fechas
-                          en las cuales se realizarán la
-                          facturación de acuerdo
-                          con cada ciclo. </p></td>
+                      <td><p class="PARRAFO">Campo obligatorio que, mediante la funcionalidad de calendario, requiere se defina la fecha en la cual se realizará la facturación, de acuerdo con cada ciclo. </p></td>
                     </tr>
 
                     <tr>
                       <td class="titletable"><p class="SUBTITULO">Fecha
                             límite de pago</p></td>
-                      <td><p class="PARRAFO">En
-                          este campo obligatorio en formato yyyy-mm-dd se
-                          registra para cada
-                          facturación la fecha límite para el pago
-                          por parte de
-                          los tarjetahabientes.
+                      <td><p class="PARRAFO">Campo obligatorio que, mediante la funcionalidad de calendario, requiere se defina la fecha máxima en la cual se deberá efectuar el pago, a que haya lugar, por parte de los tarjetahabientes.
                         </p></td>
                     </tr>
 
                     <tr>
                       <td class="titletable"><p
                           class="SUBTITULO">Estado</p></td>
-                      <td><p class="PARRAFO">Campo
-                          de salida en el cual se indica si la fecha programada
-                          ya fue Facturada
-                          o se encuentra Pendiente para
-                          facturación</p></td>
+                      <td><p class="PARRAFO">	
+                        Campo de salida en el cual se indica si la fecha programada ya fue Facturada o se encuentra Pendiente para facturación.</p></td>
                     </tr>
 
                     <tr>
                       <td class="titletable"><p class="SUBTITULO">Fecha
                             1er débito</p></td>
-                      <td><p class="PARRAFO">Campo
-                          en el que se registra la fecha para efectuar el primer
-                          débito
-                          automático cuando en los <a
-                            href="NUH_055B.html">parámetros
-                            operativos</a> se ha definido como frecuencia
-                          Mensual.</p></td>
+                      <td><p class="PARRAFO">Campo no obligatorio, en el que, si aplica, se registra la fecha para efectuar el primer débito automático.</p></td>
                     </tr>
 
                     <tr>
                       <td class="titletable"><p class="SUBTITULO">Fecha
                             2do débito</p></td>
-                      <td><p class="PARRAFO">Campo
-                          en el que se registra la fecha para efectuar el
-                          segundo débito
-                          automático cuando en los <a
-                            href="NUH_055B.html">parámetros
-                            operativos</a> se ha definido como frecuencia
-                          Quincenal.
+                      <td><p class="PARRAFO">Campo no obligatorio, en el que, si aplica, se registra la fecha para efectuar el segundo débito automático, cuando el primer débito no fue exitoso.
                         </p></td>
                     </tr>
 
                     <tr>
                       <td class="titletable"><p class="SUBTITULO">Fecha
                             3er débito</p></td>
-                      <td><p class="PARRAFO">Campo
-                          en el que se registra la fecha para efectuar el
-                          segundo débito
-                          automático cuando en los <a
-                            href="NUH_055B.html">parámetros
-                            operativos</a> se ha definido como frecuencia
-                          Decenal.
+                      <td><p class="PARRAFO">Campo no obligatorio, en el que, si aplica, se registra la fecha para efectuar el tercer y último débito automático, cuando el segundo débito no fue exitoso.
                         </p></td>
                     </tr>
                   </table>
 
                   <p class="PARRAFO"><span
                       class="SUBTITULO">Detalle:</span></span>
-                        Si el usuario selecciona un registro e invoca la
-                        opción Detalle se
-                        despliega un formulario con la información
-                        completa del registro
-                        y en el cual ninguno de los campos es
-                        modificable</p>
+                      Al activa ese enlace se despliega un formulario con la información del registro, desde el que se invocó, y en el cual ninguno de los campos es modificable:</p>
                     <p class="TITLE"><img src="../img/CAF_003E7.PNG"></p>
 
                   </section>

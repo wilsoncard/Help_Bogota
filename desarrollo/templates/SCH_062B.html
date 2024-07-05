@@ -4,7 +4,7 @@
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>BANKBU®</title>
+    <title>OpencardWeb®</title>
     <link rel="stylesheet" href="../css/pages.css">
     <link rel="stylesheet" href="../css/style.css">
     <link rel="icon" href="../img/ACQUIRER-logo.JPG" type="image/x-icon">
@@ -32,7 +32,7 @@
         <p class="TITLE">Transacciones</p>
 
         <p class="PARRAFO">En este formulario que se invoca desde la <a
-            href="SCH_060B.html">Consulta
+            href="DBH_001B.html">Consulta
             centralizada de tarjeta</a>, la entidad puede conocer la información
           acerca de las transacciones que han afectado a la tarjeta, bien sea
           que éstas se hayan originado directamente por las utilizaciones que el
@@ -49,19 +49,19 @@
       <p class="TITLE">Descripción de campos</p>
       <table>
         <tr>
-          <td><p class="SUBTITULO">Secuencia</p></td>
+          <td class="titletable"><p class="SUBTITULO">Secuencia</p></td>
           <td><p class="PARRAFO">Campo que muestra el número único o
               consecutivo que identifica la transacción y, que es asignado
               internamente por el sistema.</p></td>
         </tr>
         <tr>
-          <td>
+          <td class="titletable">
             <p class="SUBTITULO">Fecha </p></td>
           <td><p class="PARRAFO">Este campo despliega la fecha en la cual se
-              efectuó o generó la transacción..</p></td>
+              efectuó o generó la transacción.</p></td>
         </tr>
         <tr>
-          <td>
+          <td class="titletable">
             <p class="SUBTITULO">Fecha Facturación</p></td>
           <td><p class="PARRAFO">En este campo se ilustra la fecha en la que,
               por primera vez, el sistema realiza los cálculos a que haya
@@ -96,100 +96,98 @@
               bien sea el nombre del establecimiento en el cual ésta fue
               efectuada o la descripción de la transacción.</p></td>
         </tr>
-      </table>
-      <div class="PARRAFO">
-        <table>
-          <tr>
-            <td class="titletable"><p class="SUBTITULO">Concepto
-                transacción
-              </p></td>
-            <td><p class="PARRAFO">Este
-                campo despliega el <a href="NUH_059B.html">concepto</a>
-                asociado con la transacción interna aplicada a la
-                tarjeta.</p></td>
-          </tr>
+        <tr>
+          <td class="titletable"><p class="SUBTITULO">Concepto
+              transacción
+            </p></td>
+          <td><p class="PARRAFO">Este
+              campo despliega el <a href="NUH_059B.html">concepto</a>
+              asociado con la transacción interna aplicada a la
+              tarjeta.</p></td>
+        </tr>
 
-          <tr>
-            <td class="titletable"><p class="SUBTITULO">Moneda
+        <tr>
+          <td class="titletable"><p class="SUBTITULO">Moneda
 
-              </p></td>
-            <td><p class="PARRAFO">Campo
-                que muestra la moneda de almacenamiento definida para la <a
-                  href="MEH_003B.html">transacción</a>
-                aplicada a la tarjeta.</p></td>
-          </tr>
-          <tr>
-            <td class="titletable"><p class="SUBTITULO">Valor
-                inicial
-              </p></td>
-            <td><p class="PARRAFO">Este campo contiene el monto o valor
-                inicial por el cual fue efectuada la transacción y con el cual
-                ingresó al sistema para ser aplicada a la tarjeta.</p></td>
-          </tr>
+            </p></td>
+          <td><p class="PARRAFO">Campo
+              que muestra la moneda de almacenamiento definida para la <a
+                href="MEH_003B.html">transacción</a>
+              aplicada a la tarjeta.</p></td>
+        </tr>
+        <tr>
+          <td class="titletable"><p class="SUBTITULO">Valor
+              inicial
+            </p></td>
+          <td><p class="PARRAFO">Este campo contiene el monto o valor
+              inicial por el cual fue efectuada la transacción y con el cual
+              ingresó al sistema para ser aplicada a la tarjeta.</p></td>
+        </tr>
 
-          <tr>
-            <td class="titletable"><p class="SUBTITULO">Plazo
-              </p></td>
-            <td>Campo que indica el plazo que fue solicitado por el cliente
+        <tr>
+          <td class="titletable"><p class="SUBTITULO">Plazo
+            </p></td>
+          <td><p class="PARRAFO">Campo que indica el plazo que fue solicitado
+              por el cliente
               y/o asignado por el sistema para diferir el pago de la
-              transacción aplicada.</td>
+              transacción aplicada.</p></td>
+        </tr>
+
+        <tr>
+          <td class="titletable"><p class="SUBTITULO">Tasa
+            </p></td>
+          <td><p class="PARRAFO">Este campo despliega según corresponda con
+              el tipo de transacción el valor del indicador económico
+              asociado con la transacción aplicada a la tarjeta y que se va
+              a utilizar para calcular los intereses corrientes.</td>
           </tr>
-
           <tr>
-            <td class="titletable"><p class="SUBTITULO">Tasa
+            <td class="titletable"><p class="SUBTITULO">Saldo
               </p></td>
-            <td><p class="PARRAFO">Este campo despliega según corresponda con
-                el tipo de transacción el valor del indicador económico
-                asociado con la transacción aplicada a la tarjeta y que se va
-                a utilizar para calcular los intereses corrientes.</td>
-            </tr>
-            <tr>
-              <td class="titletable"><p class="SUBTITULO">Saldo
-                </p></td>
-              <td><p class="PARRAFO">Campo que muestra el saldo de la
-                  transacción que a la fecha se encuentra pendiente de
-                  facturar y/o pagar, por parte del cliente.</p></td>
-            </tr>
-          </table>
-          <p class="PARRAFO"><a name="afectadopor"></a><span
-              class="SUBTITULO">Afectado por:</span> Los
-            datos aquí mostrados aplican, exclusivamente para transacciones de
-            naturaleza débito (utilizaciones, ajustes débito), y que permiten
-            conocer las secuencias de las transacciones de naturaleza crédito
-            (pagos, ajustes crédito), que redujeron o disminuyeron los saldos
-            adeudados por el tarjetahabiente, tanto por Capital como por
-            Intereses.</p>
-          <p class="TITLE"><img src="../img/SCF_062E.PNG"></p>
-          <p class="PARRAFO"><a name="afectadoa"></a><span
-              class="SUBTITULO">Afectado a:</span> Los datos aquí
-            mostrados aplican, exclusivamente para transacciones de naturaleza
-            crédito (pagos, ajustes crédito), y que permiten conocer las
-            secuencias de las transacciones de naturaleza débito
-            (utilizaciones, ajustes débito), a las cuáles se les redujeron o
-            disminuyeron, los saldos adeudados por el tarjetahabiente, tanto
-            por Capital como por Intereses.</p>
-          <p class="TITLE"><img src="../img/SCF_062E1.PNG"></p>
-          <p class="PARRAFO"><a name="detalle"></a><span
-              class="SUBTITULO">Detalle transacción:</span> Al activar ese
-            enlace, se despliega un wizard de cuatro pasos, los cuales
-            contienen la información completa y desagregada, de cada una de
-            las transacciones que le han sido aplicadas a la tarjeta y en el
-            cual ninguno de sus datos es modificable.</p>
-          <p class="TITLE"><img src="../img/SCF_062E2.PNG"></p>
-          <p class="TITLE"><img src="../img/SCF_062E3.PNG"></p>
-          <p class="TITLE"><img src="../img/SCF_062E4.PNG"></p>
-          <p class="TITLE"><img src="../img/SCF_062E5.PNG"></p>
-        </section>
-        <script src="../js/menu.js"></script>
+            <td><p class="PARRAFO">Campo que muestra el saldo de la
+                transacción que a la fecha se encuentra pendiente de
+                facturar y/o pagar, por parte del cliente.</p></td>
+          </tr>
+        </table>
+        <p class="PARRAFO"><a name="afectadopor"></a><span
+            class="SUBTITULO">Afectado por:</span> Los
+          datos aquí mostrados aplican, exclusivamente para transacciones de
+          naturaleza débito (utilizaciones, ajustes débito), y que permiten
+          conocer las secuencias de las transacciones de naturaleza crédito
+          (pagos, ajustes crédito), que redujeron o disminuyeron los saldos
+          adeudados por el tarjetahabiente, tanto por Capital como por
+          Intereses.</p>
+        <p class="TITLE"><img src="../img/SCF_062E.PNG"></p>
+        <p class="PARRAFO"><a name="afectadoa"></a><span
+            class="SUBTITULO">Afectado a:</span> Los datos aquí
+          mostrados aplican, exclusivamente para transacciones de naturaleza
+          crédito (pagos, ajustes crédito), y que permiten conocer las
+          secuencias de las transacciones de naturaleza débito
+          (utilizaciones, ajustes débito), a las cuáles se les redujeron o
+          disminuyeron, los saldos adeudados por el tarjetahabiente, tanto
+          por Capital como por Intereses.</p>
+        <p class="TITLE"><img src="../img/SCF_062E1.PNG"></p>
+        <p class="PARRAFO"><a name="detalle"></a><span
+            class="SUBTITULO">Detalle transacción:</span> Al activar ese
+          enlace, se despliega un wizard de cuatro pasos, los cuales
+          contienen la información completa y desagregada, de cada una de
+          las transacciones que le han sido aplicadas a la tarjeta y en el
+          cual ninguno de sus datos es modificable.</p>
+        <p class="TITLE"><img src="../img/SCF_062E2.PNG"></p>
+        <p class="TITLE"><img src="../img/SCF_062E3.PNG"></p>
+        <p class="TITLE"><img src="../img/SCF_062E4.PNG"></p>
+        <p class="TITLE"><img src="../img/SCF_062E5.PNG"></p>
+      </section>
+      <script src="../js/menu.js"></script>
 
-        <div id="footerContainer"></div>
-        <script>
+      <div id="footerContainer"></div>
+      <script>
   fetch('footer.html')
     .then(response => response.text())
     .then(html => {
       document.getElementById('footerContainer').innerHTML = html;
     });
 </script>
-      </body>
+    </body>
 
-    </html>
+  </html>

@@ -4,7 +4,7 @@
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>BANKBU®</title>
+    <title>OpencardWeb®</title>
     <link rel="stylesheet" href="../css/pages.css">
     <link rel="stylesheet" href="../css/style.css">
     <link rel="icon" href="../img/ACQUIRER-logo.JPG" type="image/x-icon">
@@ -29,64 +29,59 @@
     <section>
       <div>
 
- <p class="TITLE">Reposición tarjeta débito</p>
+ <p class="TITLE">Reposición débito</p>
 
 
- <p class="PARRAFO">A través de esta pantalla invocada desde
- la página tab o pestaña <i>Solicitud </i>de la opción <i><a
- href="SOH_004E.html">Datos básicos</a></i> del cliente, se realiza la
- solicitud que permite reemplazar los plásticos emitidos de tarjeta débito,
- bien sea por deterioro físico del plástico, o por presentar errores al tratar
- de leer la banda magnética, o por error en el nombre del cliente que aparece
- realzado en el plástico. A partir de la solicitud de reposición, la entidad lleva
- a cabo la generación de un nuevo plástico calculando o no la fecha de vencimiento
- del mismo, así como los costos que se cargarón al cliente, de acuerdo con los
- parámetros que la entidad defina en la página tab <i>Eventos</i> de la opción
- <i><a href="../../ME/Help/MEH_002E.html">Definición productos</a></i>.</p>
-
- <p class="PARRAFO">Los campos <i>Motivo rechazo</i>, <i>Número
- tarjeta</i> y <i>Fecha vencimiento</i> despliegan información una vez la
- solicitud ha surtido la etapa de <i><a href="SOH_009E.html">Aprobación</a></i>.</p>
-
- <p class="TITLE"><img src="SOH_036E_image001.gif"></p>
+ <p class="PARRAFO">
+  A partir de los pasos previos descritos en la opción <a
+ href="SOH_006E.html">ingreso de otras solicitudes</a>, se realiza la solicitud que permite reemplazar los plásticos emitidos 
+ de tarjeta débito, bien sea por deterioro físico del plástico, o por presentar errores al tratar de leer la banda magnética,
+  o por error en el nombre del cliente que aparece realzado en el plástico. A partir de la solicitud de reposición, la entidad
+   lleva a cabo la generación de un nuevo plástico calculando o no la fecha de vencimiento del mismo, así como el costo que será
+    cargado a la cuenta de depósitos del cliente, de acuerdo con los parámetros que la entidad defina en la opción
+ <a href="MEH_002B.html">Definición productos</a>, para lo cual se selecciona el número de la tarjeta débito a reponer, y luego se activa el botón Aceptar:</p>
+ <p class="TITLE"><img src="../img/SOH_036E1.PNG"></p>
+ <p class="PARRAFO">el sistema despliega el siguiente formulario: </p>
+ <p class="TITLE"><img src="../img/SOH_036E2.PNG"></p>
  <p class="TITLE">Descripción de Campos</p>
 
 <table>
 <tr>
  <td class="titletable">
- <p class="SUBTITULO">Número tarjeta</p>
+ <p class="SUBTITULO">Clientes</p>
  </td>
  <td>
- <p class="PARRAFO">Campo
- que posee lista de valores con los diferentes números de tarjeta débito
- aprobadas al cliente y, de la que debe seleccionarse aquella para la que se
- desea solicitar su <i>Reposición</i>. Si solo se posee una tarjeta el sistema
- alimenta el campo al invocar la lista de valores y lleva el cursor al campo <i>Motivo
- reposición</i>. </p>
+ <p class="PARRAFO">Campo no modificable muestra el nombre del cliente titular de la tarjeta débito, haciendo clic sobre el mismo, se accede a los datos de dicho <a href="SCH_002B.html">cliente</a> si se requiere.
+
+ </p>
  </td>
 </tr>
 <tr>
  <td class="titletable">
- <p class="SUBTITULO">Producto</p>
+ <p class="SUBTITULO">Número de tarjeta
+</p>
  </td>
  <td>
- <p class="PARRAFO">Campos
- de salida desplegados por el sistema una
- vez ingresado el número de tarjeta asociado a la solicitud. Permitiendo
- conocer el <i>Segmento</i>, <i>Grupo de afinidad</i> y <i>Descripción,</i> que
- junto con el <i>Bin,</i> conforman el <i><a href="../../ME/Help/MEH_002E.html">producto</a></i>.</span></p>
+ <p class="PARRAFO">Campo no modificable que ilustra el número de la <a href="DBH_001B.html">tarjeta débito</a> (enmascarado - si aplica) desde el cual, haciendo clic sobre el mismo permite conocer los datos de la misma.</p>
  </td>
 </tr>
+<tr>
+  <td class="titletable">
+  <p class="SUBTITULO">Producto
+ </p>
+  </td>
+  <td>
+  <p class="PARRAFO">Campos de salida desplegados por el sistema una vez ingresado el número de tarjeta asociado a la solicitud, permitiendo conocer el Bin, Segmento, Grupo de afinidad y Descripción, que conforman el producto del plástico actual.</p>
+  </td>
+ </tr>
 <tr>
  <td class="titletable">
  <p class="SUBTITULO">Marca</p>
  </td>
  <td>
- <p class="PARRAFO">Campo de salida que ilustra la <i><a
- href="../../NU/Help/NUH_033E.html">franquicia</a></i> asociada al <i><a
- href="../../ME/Help/MEH_002E.html">producto</a>, </i>previa vinculación con el Bin a través de la pantalla de <i><a
- href="../../ME/Help/MEH_001E.html">Parámetros generales</a></i></span> del módulo
- de Tarjeta débito. </p>
+ <p class="PARRAFO">Campo de salida que ilustra la franquicia asociada al <a
+  href="MEH_002B.html">producto</a>, previa vinculación con el Bin a través del formulario <a
+  href="MEH_002B.html"> Definición de bines.</a></p>
  </td>
 </tr>
 <tr>
@@ -96,19 +91,6 @@
  <td>
  <p class="PARRAFO">Campo de salida que en formato DD-MM-YYYY muestra la fecha en que expira el plástico actual
  de la tarjeta.</p>
- </td>
-</tr>
-<tr>
- <td class="titletable">
- <p class="SUBTITULO">Posee plástico</p>
- </td>
- <td>
- <p class="PARRAFO">Campo
- que ilustra lo parametrizado a nivel de <i><a
- href="../../ME/Help/MEH_002E.html">Definición productos</a></i> asociado a la
- tarjeta por medio de la que se realiza la solicitud. Si el campo aparece como
- activo o señalado permite interactuar con el siguiente campo <i
- >Emite plástico</i>. </p>
  </td>
 </tr>
 <tr>
@@ -123,6 +105,19 @@
  </td>
 </tr>
 <tr>
+  <td class="titletable">
+  <p class="SUBTITULO">Posee plástico</p>
+  </td>
+  <td>
+  <p class="PARRAFO">Campo
+  que ilustra lo parametrizado a nivel de <i><a
+  href="MEH_002B.html">Definición productos</a></i> asociado a la
+  tarjeta por medio de la que se realiza la solicitud. Si el campo aparece como
+  activo o señalado permite interactuar con el siguiente campo <i
+  >Emite plástico</i>. </p>
+  </td>
+ </tr>
+<tr>
  <td class="titletable">
  <p class="SUBTITULO">Motivo reposición</p>
  </td>
@@ -133,6 +128,14 @@
  de ser de la solicitud.</p>
  </td>
 </tr>
+<tr>
+  <td class="titletable">
+  <p class="SUBTITULO">Tarjeta chip</p>
+  </td>
+  <td>
+  <p class="PARRAFO">Campo tipo chekbox, permite marcar si la nueva tarjeta a emitir debe contener ese dispositivo o tecnología.</p>
+  </td>
+ </tr>
 <tr>
  <td class="titletable">
  <p class="SUBTITULO">Primer nombre/Segundo nombre</p>
@@ -215,288 +218,6 @@
  <p class="PARRAFO">Campo
  de salida que ilustra la fecha en que expira el nuevo plástico generado por
  el sistema, si el tipo de solicitud lo requiere.</p>
- </td>
-</tr>
-</table>
-
- <p class="TITLE">Opciones en Modo Consulta</p>
-
-<table>
-<tr>
- <td class="titletable">
- <p class="SUBTITULO"><a href="../../NU/Help/NUH_INTE.html#Acciones"></a>Acciones</p>
- </td>
- <td>
- <p class="PARRAFO">Imprimir, Configurar Impresión, Salir</p>
- </td>
- <td>
- <p class="PARRAFO"><a
- href="../../NU/Help/NUH_INTE.html#BotAccion"><img
- src="../../NU/Help/Images/BotImprimir.gif"></span></a><a
- href="../../NU/Help/NUH_INTE.html#BotAccion"><img
- src="../../NU/Help/Images/BotConfigurar.gif"></span></a><a
- href="../../NU/Help/NUH_INTE.html#BotAccion"><img
- src="../../NU/Help/Images/BotSalir.gif"></span></a></p>
- </td>
-</tr>
-<tr>
- <td class="titletable">
- <p class="SUBTITULO"><a href="../../NU/Help/NUH_INTE.html#Modulos"></a>Módulos</p>
- </td>
- <td>
- <p class="PARRAFO">Según atribuciones del perfil</p>
- </td>
- <td>
- <p class="PARRAFO">&nbsp;</p>
- </td>
-</tr>
-<tr>
- <td class="titletable">
- <p class="SUBTITULO"><a href="../../NU/Help/NUH_INTE.html#Consulta"></a>Consulta</p>
- </td>
- <td>
- <p class="PARRAFO">Ingresar, Ejecutar, Cancelar</p>
- </td>
- <td>
- <p class="PARRAFO"><a
- href="../../NU/Help/NUH_INTE.html#BotConsulta"><img
- src="../../NU/Help/Images/BotEntQuery.gif"></span></a><a
- href="../../NU/Help/NUH_INTE.html#BotConsulta"><img
- src="../../NU/Help/Images/BotEjeQuery.gif"></span></a><a
- href="../../NU/Help/NUH_INTE.html#BotConsulta"><img
- src="../../NU/Help/Images/BotCanQuery.gif"></span></a></p>
- </td>
-</tr>
-<tr>
- <td class="titletable">
- <p class="SUBTITULO"><a href="../../NU/Help/NUH_INTE.html#Navegacion"></a>Navegación</p>
- </td>
- <td>
- <p class="PARRAFO">Bloque Anterior, Registro anterior,
- Registro Siguiente, Bloque Siguiente</p>
- </td>
- <td>
- <p class="PARRAFO"><a
- href="../../NU/Help/NUH_INTE.html#BotNavegacion"><img
- src="../../NU/Help/Images/BotBloqAnterior.gif"></span></a><a
- href="../../NU/Help/NUH_INTE.html#BotNavegacion"><img
- src="../../NU/Help/Images/BotRegAnterior.gif"></span></a><a
- href="../../NU/Help/NUH_INTE.html#BotNavegacion"><img
- src="../../NU/Help/Images/BotRegSiguiente.gif"></span></a><a
- href="../../NU/Help/NUH_INTE.html#BotNavegacion"><img
- src="../../NU/Help/Images/BotBloqSiguiente.gif"></span></a></p>
- </td>
-</tr>
-<tr>
- <td class="titletable">
- <p class="SUBTITULO"><a href="../../NU/Help/NUH_INTE.html#Utilidades"></a>Utilidades</p>
- </td>
- <td>
- <p class="PARRAFO">Cambio de clave, Cambio de idioma y otras
- según atribuciones del perfil</p>
- </td>
- <td>
- <p class="PARRAFO">&nbsp;</p>
- </td>
-</tr>
-<tr>
- <td class="titletable">
- <p class="SUBTITULO"><a href="../../NU/Help/NUH_INTE.html#Ayuda"></a>Ayuda</p>
- </td>
- <td>
- <p class="PARRAFO">Lista de Valores, Auditoria, Muestra
- Teclas, Manual del Usuario, Acerca de Open Card</p>
- </td>
- <td>
- <p class="PARRAFO"><a
- href="../../NU/Help/NUH_INTE.html#BotLista"><img
- src="../../NU/Help/Images/BotListaValores.gif"></span></a><a
- href="../../NU/Help/NUH_INTE.html#BotAuditoria"><img
- src="../../NU/Help/Images/BotAuditoria.gif"></span></a><a
- href="../../NU/Help/NUH_INTE.html#BotAyuda"><img
- src="../../NU/Help/Images/BotAyuda.gif"></span></a><a
- href="../../NU/Help/NUH_INTE.html#BotAcercade"><img
- src="../../NU/Help/Images/BotAcercade.gif"></span></a></p>
- </td>
-</tr>
- <td class="titletable">
- <p class="SUBTITULO"><a href="../../NU/Help/NUH_INTE.html#Window"></a>Window</p>
- </td>
- <td>
- <p class="PARRAFO">Cascade, Tile, Arrange, Icons, Ventanas
- Abiertas</span></p>
- </td>
- <td>
- <p class="PARRAFO">&nbsp;</p>
- </td>
-</tr>
-</table>
-
- <p class="TITLE">Opciones en Modo Total</p>
-
-<table>
-<tr>
- <td class="titletable">
- <p class="SUBTITULO"><a href="../../NU/Help/NUH_INTE.html#Acciones"></a>Acciones</p>
- </td>
- <td>
- <p class="PARRAFO">Grabar, Imprimir, Configurar Impresión,
- Salir</p>
- </td>
- <td>
- <p class="PARRAFO"><a
- href="../../NU/Help/NUH_INTE.html#BotAccion"><img
- src="../../NU/Help/Images/BotGrabar.gif"></span></a><a
- href="../../NU/Help/NUH_INTE.html#BotAccion"><img
- src="../../NU/Help/Images/BotImprimir.gif"></span></a><a
- href="../../NU/Help/NUH_INTE.html#BotAccion"><img
- src="../../NU/Help/Images/BotConfigurar.gif"></span></a><a
- href="../../NU/Help/NUH_INTE.html#BotAccion"><img
- src="../../NU/Help/Images/BotSalir.gif"></span></a></p>
- </td>
-</tr>
-<tr>
- <td class="titletable">
- <p class="SUBTITULO"><a href="../../NU/Help/NUH_INTE.html#Modulos"></a>Módulos</p>
- </td>
- <td>
- <p class="PARRAFO">Según atribuciones del perfil</p>
- </td>
- <td>
- <p class="PARRAFO">&nbsp;</p>
- </td>
-</tr>
-<tr>
- <td class="titletable">
- <p class="SUBTITULO"><a href="../../NU/Help/NUH_INTE.html#Editar"></a>Editar</p>
- </td>
- <td>
- <p class="PARRAFO">Cortar, Copiar, Pegar</p>
- </td>
- <td>
- <p class="PARRAFO"><a
- href="../../NU/Help/NUH_INTE.html#BotEditar"><img
- src="../../NU/Help/Images/BotCortar.gif"></span></a><a
- href="../../NU/Help/NUH_INTE.html#BotEditar"><img
- src="../../NU/Help/Images/BotCopiar.gif"></span></a><a
- href="../../NU/Help/NUH_INTE.html#BotEditar"><img
- src="../../NU/Help/Images/BotPegar.gif"></span></a></p>
- </td>
-</tr>
-<tr>
- <td class="titletable">
- <p class="SUBTITULO"><a href="../../NU/Help/NUH_INTE.html#Consulta"></a>Consulta</p>
- </td>
- <td>
- <p class="PARRAFO">Ingresar, Ejecutar, Cancelar</p>
- </td>
- <td>
- <p class="PARRAFO"><a
- href="../../NU/Help/NUH_INTE.html#BotConsulta"><img
- src="../../NU/Help/Images/BotEntQuery.gif"></span></a><a
- href="../../NU/Help/NUH_INTE.html#BotConsulta"><img
- src="../../NU/Help/Images/BotEjeQuery.gif"></span></a><a
- href="../../NU/Help/NUH_INTE.html#BotConsulta"><img
- src="../../NU/Help/Images/BotCanQuery.gif"></span></a></p>
- </td>
-</tr>
-<tr>
- <td class="titletable">
- <p class="SUBTITULO"><a href="../../NU/Help/NUH_INTE.html#Navegacion"></a>Navegación</p>
- </td>
- <td>
- <p class="PARRAFO">Bloque Anterior, Registro anterior,
- Registro Siguiente, Bloque Siguiente</p>
- </td>
- <td>
- <p class="PARRAFO"><a
- href="../../NU/Help/NUH_INTE.html#BotNavegacion"><img
- src="../../NU/Help/Images/BotBloqAnterior.gif"></span></a><a
- href="../../NU/Help/NUH_INTE.html#BotNavegacion"><img
- src="../../NU/Help/Images/BotRegAnterior.gif"></span></a><a
- href="../../NU/Help/NUH_INTE.html#BotNavegacion"><img
- src="../../NU/Help/Images/BotRegSiguiente.gif"></span></a><a
- href="../../NU/Help/NUH_INTE.html#BotNavegacion"><img
- src="../../NU/Help/Images/BotBloqSiguiente.gif"></span></a></p>
- </td>
-</tr>
-<tr>
- <td class="titletable">
- <p class="SUBTITULO"><a href="../../NU/Help/NUH_INTE.html#Utilidades"></a>Utilidades</p>
- </td>
- <td>
- <p class="PARRAFO">Cambio de clave, Cambio de idioma y otras
- según atribuciones del perfil</span></p>
- </td>
- <td>
- <p class="PARRAFO">&nbsp;</p>
- </td>
-</tr>
-<tr>
- <td class="titletable">
- <p class="SUBTITULO"><a href="../../NU/Help/NUH_INTE.html#Registro"></a>Registro</p>
- </td>
- <td>
- <p class="PARRAFO">Crear, Borrar, Limpiar</p>
- </td>
- <td>
- <p class="PARRAFO"><a
- href="../../NU/Help/NUH_INTE.html#BotRegistro"><img 
- src="../../NU/Help/Images/BotCreaReg.gif"></span></a><a
- href="../../NU/Help/NUH_INTE.html#BotRegistro"><img 
- src="../../NU/Help/Images/BotBorraReg.gif"></span></a><a
- href="../../NU/Help/NUH_INTE.html#BotRegistro"><img 
- src="../../NU/Help/Images/BotLimpiaReg.gif"></span></a></p>
- </td>
-</tr>
-<tr>
- <td class="titletable">
- <p class="SUBTITULO"><a href="../../NU/Help/NUH_INTE.html#Ayuda"></a>Ayuda</p>
- </td>
- <td>
- <p class="PARRAFO">Limpiar Pantalla, Lista de Valores,
- Auditoria, Muestra Teclas, Manual del Usuario, Acerca de Open Card</p>
- </td>
- <td>
- <p class="PARRAFO"><a
- href="../../NU/Help/NUH_INTE.html#BotLimpiar"><img
- src="../../NU/Help/Images/BotLimpiaPant.gif"></span></a><a
- href="../../NU/Help/NUH_INTE.html#BotLista"><img
- src="../../NU/Help/Images/BotListaValores.gif"></span></a><a
- href="../../NU/Help/NUH_INTE.html#BotAuditoria"><img
- src="../../NU/Help/Images/BotAuditoria.gif"></span></a><a
- href="../../NU/Help/NUH_INTE.html#BotAyuda"><img
- src="../../NU/Help/Images/BotAyuda.gif"></span></a><a
- href="../../NU/Help/NUH_INTE.html#BotAcercade"><img
- src="../../NU/Help/Images/BotAcercade.gif"></span></a></p>
- </td>
-</tr>
-<tr>
- <td class="titletable">
- <p class="SUBTITULO"><a href="../../NU/Help/NUH_INTE.html#Window"></a>Window</p>
- </td>
- <td>
- <p class="PARRAFO">Cascade, Tile, Arrange, Icons, Ventanas
- Abiertas</span></p>
- </td>
- <td>
- <p class="PARRAFO">&nbsp;</p>
- </td>
-</tr>
-</table>
-
- <p class="TITLE">Opciones Especiales</p>
-
-<table>
-<tr>
- <td class="titletable">
- <p class="SUBTITULO"><img src="SOH_036E_image002.gif"></p>
- </td>
- <td>
- <p class="PARRAFO">Utilitario que
- permite invocar la forma de</span>&nbsp;<i><a
- href="../../NU/Help/NUH_046E.html">Detalle tarjeta</a></span></i><span
- style='font-family:Arial'> para verificar datos.</span><o:p></o:p></span></b></p>
  </td>
 </tr>
 </table>

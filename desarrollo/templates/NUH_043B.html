@@ -1,24 +1,24 @@
 <!DOCTYPE html>
 <html lang="es">
 
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>BANKBU®</title>
-  <link rel="stylesheet" href="../css/pages.css">
-  <link rel="stylesheet" href="../css/style.css">
-  <link rel="icon" href="../img/ACQUIRER-logo.JPG" type="image/x-icon">
-</head>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OpencardWeb®</title>
+    <link rel="stylesheet" href="../css/pages.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="icon" href="../img/ACQUIRER-logo.JPG" type="image/x-icon">
+  </head>
 
-<body>
-  <header>
-    <img class="logo" src="../img/logoBankbu_.PNG" alt="Logo de Mi Empresa">
-    <div id="menuBtn">
-      <img class="TITLE" src="../img/menu.PNG" alt="Botón de Menú ">
-    </div>
-  </header>
-   <div id="menuContainer"></div>
-  <script>
+  <body>
+    <header>
+      <img class="logo" src="../img/logoBankbu_.PNG" alt="Logo de Mi Empresa">
+      <div id="menuBtn">
+        <img class="TITLE" src="../img/menu.PNG" alt="Botón de Menú ">
+      </div>
+    </header>
+    <div id="menuContainer"></div>
+    <script>
     fetch('menu.html')
       .then(response => response.text())
       .then(html => {
@@ -26,105 +26,122 @@
       });
   </script>
 
-  <section>
-    <div>
-      <p class="TITLE">Indicadores económicos entidad</p>
+    <section>
+      <div>
+        <p class="TITLE">Indicadores económicos entidad</p>
 
-      <p class="PARRAFO">Mediante esta función se habilita la consulta y mantenimiento del valor absoluto, para cada uno
-        de los indicadores económicos "oficiales" vigentes para o a partir de la fecha señalada y definidos por la
-        entidad para ser utilizados para el cálculo del beneficio o margen a obtener por los créditos utilizados por los
-        clientes. Al igual que los valores de las tasas de cambio, es necesario realizar periódicamente, la
-        actualización de los indicadores básicos para el correcto funcionamiento del sistema.</p>
-      <p class="PARRAFO">El formulario contiene los enlaces: Actualizar, Eliminar y Adicionar. Adicionalmente cuenta
-        con un filtro de búsqueda y el botón <a href="#Boton">Indicadores económicos de ayer </a> en la parte inferior,
-        que permite replicar los valores definidos el día anterior, si existen, facilitando de esta manera la
-        actualización de los mismos. </p>
-      <p class="TITLE"><img src="../img/WWW_012.PNG"></p>
+        <p class="PARRAFO">A través de esta opción se habilita la consulta y
+          mantenimiento del valor absoluto, asociado a cada uno de los
+          indicadores económicos "oficiales" vigentes para o a partir de la
+          fecha señalada y definidos por la entidad para ser utilizados para el
+          cálculo del beneficio o margen a obtener por los créditos utilizados
+          por los clientes. Al igual que los valores de las tasas de cambio, es
+          necesario realizar periódicamente, la actualización de los indicadores
+          básicos para el correcto funcionamiento del sistema. El formulario
+          cuenta con un filtro de búsqueda y contiene los enlaces: Actualizar,
+          Eliminar y Adicionar. </p>
+        <p class="TITLE"><img src="../img/WWW_012.PNG"></p>
+        <p class="PARRAFO">Los campos de filtro permiten:</p>
+        <table>
+          <tr>
+            <td class="titletable">
+              <p class="SUBTITULO">Fecha de ingreso</p>
+            </td>
+            <td>
+              <p class="PARRAFO">Campo en el que mediante la funcionalidad de un
+                calendario se selecciona la fecha para la que se requiere
+                realizar la consulta. Por defecto muestra la fecha actual del
+                sistema.
+              </p>
+            </td>
+          </tr>
+          <tr>
+            <td class="titletable">
+              <p class="SUBTITULO">Indicador económico </p>
+            </td>
+            <td>
+              <p class="PARRAFO">Campo en el que se puede digitar o seleccionar
+                de la lista de valores poblada a través de la opción <a
+                  href="NUH_036B.html">tipos de tasas e
+                  indicadores</a> el código asignado al indicador económico
+                a consultar. </p>
+            </td>
+          </tr>
+        </table>
 
+        <p class="PARRAFO"><span class="SUBTITULO">Adicionar:</span> Al activar
+          ese enlace se despliega
+          un formulario con los siguientes campos:</p>
+        <p class="TITLE"><img src="../img/WWW_013.PNG"></p>
 
-      <table>
-        <tr>
-          <td class="titletable">
-            <p class="SUBTITULO">Fecha de ingreso</p>
-          </td>
-          <td>
-            <p class="PARRAFO">Campo en el que mediante la funcionalidad de un calendario se selecciona la fecha para la
-              que se requiere realizar la consulta. Por defecto muestra la fecha actual del sistema.
-            </p>
-          </td>
-        </tr>
-        <tr>
-          <td class="titletable">
-            <p class="SUBTITULO">Indicador económico </p>
-          </td>
-          <td>
-            <p class="PARRAFO">Campo en el que se puede digitar o seleccionar de la lista de valores poblada a través de
-              la opción <a href="NUH_036B.html">tipos de tasas e indicadores</a> el código asignado al indicador
-              económico a consultar. </p>
-          </td>
-        </tr>
-      </table>
+        <table>
+          <tr>
+            <td class="titletable">
+              <p class="SUBTITULO">Indicador económico </p>
+            </td>
+            <td>
+              <p class="PARRAFO">Campo obligatorio en el que se puede digitar o
+                seleccionar de la lista de valores poblada
+                a través de la opción
+                <a href="NUH_036B.html">tipos de tasas e indicadores</a> el
+                código asignado al indicador económico a
+                incluir. Al ingresar un código se valida contra la lista;
+                aquellos que no aparecen en la lista, pueden
+                corresponder a indicadores que son el resultado de cálculos
+                basados en algunas de estas cifras.
+              </p>
+            </td>
+          </tr>
+          <tr>
+            <td class="titletable">
+              <p class="SUBTITULO">Fecha de ingreso </p>
+            </td>
+            <td>
+              <p class="PARRAFO">Campo obligatorio que, mediante la
+                funcionalidad de un calendario, permite definir la fecha a
+                partir de la cual la entidad determina el valor asociado a dicho
+                indicador. Por integridad de los cálculos, solo permite
+                definirle la misma fecha del día actual de proceso.</p>
+            </td>
+          </tr>
+          <tr>
+            <td class="titletable">
+              <p class="SUBTITULO">Valor</p>
+            </td>
+            <td>
+              <p class="PARRAFO">Campo numérico obligatorio, que en un máximo de
+                seis enteros y seis decimales permite registrar el valor
+                absoluto válido para cada indicador económico tipo base.</p>
+            </td>
+          </tr>
+        </table>
+        <p class="PARRAFO"><span class="SUBTITULO">Actualizar:</span> Campo
+          numérico obligatorio, que en un máximo de seis enteros y seis
+          decimales permite registrar el valor absoluto válido para cada
+          indicador económico tipo base.</p>
+        <p class="TITLE"><img src="../img/WWW_014.PNG"></p>
 
-      <p class="PARRAFO"><span class="SUBTITULO">Adicionar:</span> Al activar ese enlace se despliega
-        un formulario con los siguientes campos:</p>
-      <p class="TITLE"><img src="../img/WWW_013.PNG"></p>
-
-      <table>
-        <tr>
-          <td class="titletable">
-            <p class="SUBTITULO">Indicador económico </p>
-          </td>
-          <td>
-            <p class="PARRAFO">Campo obligatorio en el que se puede digitar o seleccionar de la lista de valores poblada
-              a través de la opción
-              <a href="NUH_036B.html">tipos de tasas e indicadores</a> el código asignado al indicador económico a
-              incluir. Al ingresar un código se valida contra la lista; aquellos que no aparecen en la lista, pueden
-              corresponder a indicadores que son el resultado de cálculos basados en algunas de estas cifras.
-            </p>
-          </td>
-        </tr>
-        <tr>
-          <td class="titletable">
-            <p class="SUBTITULO">Fecha de ingreso </p>
-          </td>
-          <td>
-            <p class="PARRAFO">Campo obligatorio que, mediante la funcionalidad de un calendario, permite definir la
-              fecha a partir de la cual la entidad determinar el valor de asociado a dicho indicador. Por integridad de
-              los cálculos solo permite definirle la misma fecha del día actual de proceso.</p>
-          </td>
-        </tr>
-        <tr>
-          <td class="titletable">
-            <p class="SUBTITULO">Valor</p>
-          </td>
-          <td>
-            <p class="PARRAFO">Campo numérico obligatorio, que en un máximo de seis enteros y seis decimales permite
-              registrar el valor absoluto válido para cada indicador económico tipo base</p>
-          </td>
-        </tr>
-      </table>
-      <p class="PARRAFO"><span class="SUBTITULO">Actualizar:</span>  Al activar ese enlace  se
-        despliega un formulario en el cual el único campo modificable es: Valor.</p>
-      <p class="TITLE"><img src="../img/WWW_014.PNG"></p>
-
-      <p class="PARRAFO"><span class="SUBTITULO">Copiar indicadores económicos de ayer:<a name="Boton"></a></span>
-        Utilitario que permite replicar los valores para los diferentes indicadores económicos definidos el día
-        anterior, si existen, y solamente modificar aquellos cuyos valores hayan variado.
+        <p class="PARRAFO"><span class="SUBTITULO">Copiar indicadores económicos
+            de ayer:<a name="Boton"></a></span>
+          Utilitario que permite replicar los valores para los diferentes
+          indicadores económicos definidos el día anterior, si existen, y
+          solamente modificar aquellos cuyos valores hayan variado, facilitando
+          de esta manera la actualización de los mismos:
 
         </p>
-      <p class="TITLE"><img src="../img/NUF_043B4.PNG"></p>
-    </div>
-  </section>
-  <script src="../js/menu.js"></script>
+        <p class="TITLE"><img src="../img/NUF_043B4.PNG"></p>
+      </div>
+    </section>
+    <script src="../js/menu.js"></script>
 
-  <div id="footerContainer"></div>
-<script>
+    <div id="footerContainer"></div>
+    <script>
   fetch('footer.html')
     .then(response => response.text())
     .then(html => {
       document.getElementById('footerContainer').innerHTML = html;
     });
 </script>
-</body>
+  </body>
 
 </html>

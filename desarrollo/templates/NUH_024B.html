@@ -4,7 +4,7 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>BANKBU®</title>
+        <title>OpencardWeb®</title>
         <link rel="stylesheet" href="../css/pages.css">
         <link rel="stylesheet" href="../css/style.css">
         <link rel="icon" href="../img/ACQUIRER-logo.JPG" type="image/x-icon">
@@ -32,41 +32,117 @@
                 <p class="TITLE">Mensajes</p>
 
                 <p class="PARRAFO">Mediante esta función se habilita la consulta
-                    y mantenimiento de los diferentes
-                    componentes alfanuméricos de los mensajes que despliega el
-                    sistema, particularmente cuando se
-                    pretende realizar alguna acción indebida o diferente a las
-                    permitidas para cada formulario,
-                    reporte o procedimiento; en algunos puntos del sistema
-                    también sirven para informar sobre el
-                    resultado exitoso de un proceso o acción realizado. Dado que
-                    un mismo mensaje puede ser
+                    y mantenimiento de los diferentes componentes alfanuméricos
+                    de los mensajes que despliega el sistema, particularmente
+                    cuando se pretende realizar alguna acción indebida o
+                    diferente a las permitidas para cada formulario o
+                    procedimiento; en algunos puntos del sistema también sirven
+                    para informar sobre el resultado exitoso de un proceso o
+                    acción realizado. Dado que un mismo mensaje puede ser
                     utilizado en más de un procedimiento asociado a varios
-                    formularios o reportes, debe tenerse
-                    especial cuidado al modificarse el contenido de los
-                    mismos.</p>
-                <p class="PARRAFO">El formulario muestra las opciones
-                    Actualizar, Eliminar y Adicionar. Adicionalmente,
-                    cuenta con la opción <a href="NUH_024B1.html">Mensajes por
-                        lenguaje</a></span> .</p>
-            <p class="TITLE"><img src="../img/NUF_024B.PNG"></p>
+                    formularios, debe tenerse especial cuidado al modificarse el
+                    contenido de los mismos. Adicional a los enlaces:
+                    Actualizar, Eliminar y Adicionar, el formulario cuenta con
+                    el enlace Inglés, el que, al invocarse, si se está creando
+                    el registro, aparecen los campos Descripción (Mensaje) y
+                    Acción, para ser diligenciados en ese idioma.</p>
 
-            <p class="PARRAFO"><span class="SUBTITULO">Adicionar:</span> Si el
-                usuario invoca la opción Adicionar
-                se despliega un formulario con los siguientes campos:</span>
+                <p class="TITLE"><img src="../img/NUF_024B.PNG"></p>
+                <p class="PARRAFO"><span class="SUBTITULO">Filtro:</span> Con el
+                    propósito de facilitar el ubicar y/o identificar un mensaje
+                    en particular, se dispone de los siguientes
+                    criterios:</span>
+            </p>
+            <table>
+                <tr>
+                    <td class="titletable">
+                        <p class="SUBTITULO">Código Mensaje</p>
+                    </td>
+                    <td>
+                        <p class="PARRAFO">Campo alfanumérico obligatorio de
+                            cinco dígitos, en el que se digita el código
+                            asignado a cada registro o mensaje y por el cual
+                            poder realizar la consulta.
+
+                        </p>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="titletable">
+                        <p class="SUBTITULO">Tipo</p>
+                    </td>
+                    <td>
+                        <p class="PARRAFO">Campo que posee lista de valores tipo
+                            combo de la que puedes seleccionarse entre: Nulo,
+                            Mensaje o Error, característica que es asignada a
+                            cada registro o mensaje y por el cual poder realizar
+                            la consulta.
+
+                        </p>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="titletable">
+                        <p class="SUBTITULO">Nivel</p>
+                    </td>
+                    <td>
+                        <p class="PARRAFO">Campo que posee lista de valores tipo
+                            combo de la que puedes seleccionarse entre: Nulo,
+                            Pare, Nota o Precaución, característica que es
+                            asignada a cada registro o mensaje y por el cual
+                            poder realizar la consulta.
+
+                        </p>
+                    </td>
+                </tr>
+            </table>
+
+            <p class="PARRAFO"><span class="SUBTITULO">Adicionar:</span> Al
+                activar ese enlace se despliega un formulario con los siguientes
+                campos:</span>
         </p>
         <p class="TITLE"><img src="../img/NUF_024B1.PNG"></p>
 
         <table>
             <tr>
                 <td class="titletable">
-                    <p class="SUBTITULO">Código</p>
+                    <p class="SUBTITULO">Código Mensaje</p>
                 </td>
                 <td>
-                    <p class="PARRAFO">Campo
-                        alfanumérico obligatorio de cinco dígitos, que contiene
-                        el código asignado a cada tipo de idioma utilizado en el
-                        sistema.</p>
+                    <p class="PARRAFO">Campo alfanumérico obligatorio de
+                        cinco dígitos, en el que se digita el código
+                        asignado a cada registro o mensaje y por el cual
+                        poder realizar la consulta.
+
+                    </p>
+                </td>
+            </tr>
+            <tr>
+                <td class="titletable">
+                    <p class="SUBTITULO">Tipo</p>
+                </td>
+                <td>
+                    <p class="PARRAFO">Campo que posee lista de valores tipo
+                        combo de la que puedes seleccionarse entre: Nulo,
+                        Mensaje o Error, característica que es asignada a
+                        cada registro o mensaje y por el cual poder realizar
+                        la consulta.
+
+                    </p>
+                </td>
+            </tr>
+            <tr>
+                <td class="titletable">
+                    <p class="SUBTITULO">Nivel</p>
+                </td>
+                <td>
+                    <p class="PARRAFO">Campo que posee lista de valores tipo
+                        combo de la que puedes seleccionarse entre: Nulo,
+                        Pare, Nota o Precaución, característica que es
+                        asignada a cada registro o mensaje y por el cual
+                        poder realizar la consulta.
+
+                    </p>
                 </td>
             </tr>
             <tr>
@@ -74,18 +150,31 @@
                     <p class="SUBTITULO">Descripción</p>
                 </td>
                 <td>
-                    <p class="PARRAFO">Campo
-                        alfanumérico de 500 posiciones, obligatorio, en el cual
-                        se registra
-                        información adicional del lenguaje ingresado. </p>
+                    <p class="PARRAFO">Campo alfanumérico de 500 posiciones, no
+                        obligatorio, en el cual se puede registrar información
+                        que ilustre al usuario sobre el evento presentado.
+
+                    </p>
+                </td>
+            </tr>
+            <tr>
+                <td class="titletable">
+                    <p class="SUBTITULO">Accion</p>
+                </td>
+                <td>
+                    <p class="PARRAFO">Campo alfanumérico de 500 posiciones, no
+                        obligatorio, en el cual se puede registrar información
+                        que le permita al usuario tomar las acciones necesarias
+                        para superar el incidente o buscar el apoyo necesario.
+
+                    </p>
                 </td>
             </tr>
         </table>
         <p class="PARRAFO"><span class="PARRAFO"><span
                     class="SUBTITULO">Actualizar:</span>
-                 Al activar ese enlace  se despliega un nuevo
-                formulario
-                en el cual sólo podrá actualizarse la Descripción.</p>
+                Al activar ese enlace se despliega un nuevo formulario en el
+                cual el único campo no modificable es Código mensaje:</p>
             <p class="TITLE"><img src="../img/NUF_024B2.PNG"></p>
 
         </section>

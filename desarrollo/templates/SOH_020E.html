@@ -1,24 +1,24 @@
 <!DOCTYPE html>
 <html lang="es">
 
-<head>
+  <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>BANKBU®</title>
+    <title>OpencardWeb®</title>
     <link rel="stylesheet" href="../css/pages.css">
     <link rel="stylesheet" href="../css/style.css">
     <link rel="icon" href="../img/ACQUIRER-logo.JPG" type="image/x-icon">
-</head>
+  </head>
 
-<body>
+  <body>
     <header>
-        <img class="logo" src="../img/logoBankbu_.PNG" alt="Logo de Mi Empresa">
-        <div id="menuBtn">
-            <img class="TITLE" src="../img/menu.PNG" alt="Botón de Menú ">
-        </div>
+      <img class="logo" src="../img/logoBankbu_.PNG" alt="Logo de Mi Empresa">
+      <div id="menuBtn">
+        <img class="TITLE" src="../img/menu.PNG" alt="Botón de Menú ">
+      </div>
     </header>
-      <div id="menuContainer"></div>
-  <script>
+    <div id="menuContainer"></div>
+    <script>
     fetch('menu.html')
       .then(response => response.text())
       .then(html => {
@@ -28,375 +28,934 @@
 
     <section>
 
-        <div>
+      <div>
 
-     
+        <p class="TITLE">Línea de crédito adicional crédito</p>
 
- <p class="TITLE">Línea de crédito adicional crédito</p>
- 
+        <table>
+          <tr>
+            <td class="titletable">
+              <p class="PARRAFO">A través de esta forma o pantalla invocada
+                desde la página tab o pestaña <i>Solicitud </i>de la opción
+                <i><a
+                    href="SOH_004E.html">Datos básicos</a></i> del cliente, se
+                puede registrar la
+                solicitud de una nueva línea de crédito que demande el cliente
+                de acuerdo con
+                sus necesidades y con la especificación del producto, es decir,
+                si en el momento
+                en que el cliente solicitá el producto decidé no utilizar alguna
+                línea de
+                crédito de las que tiene definidas el </span><i><span><a
+                    href="MEH_002E.html">producto</a></span></i><span>, el
+                cliente puede solicitar esa línea de crédito
+                de la cual él, en algún momento prescindir. Dependiendo si el
+                tipo crédito es
+                <i>Titular y adicionales, sólo adicional ó sólo titular</i> la
+                forma
+                desplegará un número de tabs diferente.</p>
+            </td>
+          </tr>
+        </table>
+        <p class="TITLE"><img src="../img/SOF_020E1.PNG"></p>
 
-<table>
-<tr>
- <td class="titletable">
- <p class="PARRAFO">A través de esta forma o pantalla invocada
- desde la página tab o pestaña <i>Solicitud </i>de la opción <i><a
- href="SOH_004E.html">Datos básicos</a></i> del cliente, se puede registrar la
- solicitud de una nueva línea de crédito que demande el cliente de acuerdo con
- sus necesidades y con la especificación del producto, es decir, si en el momento
- en que el cliente solicitá el producto decidé no utilizar alguna línea de
- crédito de las que tiene definidas el </span><i><span ><a href="MEH_002E.html">producto</a></span></i><span
->, el cliente puede solicitar esa línea de crédito
- de la cual él, en algún momento prescindir. Dependiendo si el tipo crédito es
- <i>Titular y adicionales, sólo adicional ó sólo titular</i> la forma
- desplegará un número de tabs diferente.</p>
- </td>
-</tr>
-</table>
-    <p class="TITLE"><img  src="../img/SOF_020E1.PNG" ></p>
- 
-<p class="TITLE">Descripción de Campos Página 1</p>
+        <p class="TITLE">Descripción de Campos Página 1</p>
 
+        <table>
+          <tr>
+            <td class="titletable">
+              <p class="SUBTITULO">Número Tarjeta</p>
+            </td>
+            <td>
+              <p class="PARRAFO"><span>Campo
+                  que posee lista de valores con los diferentes números de
+                  tarjeta aprobadas al
+                  cliente y de la que debe seleccionarse aquella para la que se
+                  desea solicitar
+                  la <i>Línea de crédito adicional</i>. Si solo se posee una
+                  tarjeta el sistema
+                  alimenta el campo al invocar la lista de valores y lleva el
+                  cursor al campo <i>Anexos</i>.
+                </p>
+              </td>
+            </tr>
+            <tr>
+              <td class="titletable">
+                <p class="SUBTITULO"><span>Producto </p>
+                </td>
+                <td>
+                  <p class="PARRAFO"><span>Campos
+                      de salida </span><span>desplegados por la forma una vez
+                      ingresado o seleccionado el número de tarjeta asociado a
+                      la solicitud. Permitiendo conocer el <i>Segmento</i>,
+                      <i>Grupo
+                        de afinidad</i> y <i>Descripción</i> que junto con el
+                      <i>Bin</i> conforman el
+                      <i><a href="MEH_002E.html">producto</a></i>.</p>
+                  </td>
+                </tr>
+                <tr>
+                  <td class="titletable">
+                    <p class="SUBTITULO"><span>Marca</p>
+                    </td>
+                    <td>
+                      <p class="PARRAFO"><span>Campo de salida que ilustra la
+                          <i><a
+                              href="NUH_033E.html">franquicia</a></i> asociada
+                          al <i><a href="MEH_002E.html">producto</a>
+                          </i>en los <i><a
+                              href="MEH_001E.html">parámetros</a></i> del módulo
+                          de
+                          Mercadeo. </p>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td class="titletable">
+                        <p class="SUBTITULO"><span>Fecha Vencimiento</p>
+                        </td>
+                        <td>
+                          <p class="PARRAFO"><span>Campo de salida que en
+                              formato </span><span>DD-MM-YYYY</span><span>
+                              muestra la fecha en que expira el plástico actual
+                              de la tarjeta o producto del cliente.</p>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td class="titletable">
+                            <p class="SUBTITULO"><span>Tipo Tarjeta</p>
+                            </td>
+                            <td>
+                              <p class="PARRAFO"><span>Campo
+                                  que ilustra la clase o tipo de tarjeta a la
+                                  que corresponde el <i><a
+                                      href="MEH_002E.html">producto</a></i> a
+                                  través del que se realiza la
+                                  solicitud.</p>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td class="titletable">
+                                <p class="SUBTITULO"><span>Cupo global
+                                    Tarjeta</p>
+                                </td>
+                                <td>
+                                  <p class="PARRAFO"><span>Campo
+                                      de salida que ilustra el monto global que
+                                      posee actualmente el cliente
+                                      empresarial o principal que tiene tarjetas
+                                      amparadas.</p>
+                                  </td>
+                                </tr>
+                                <tr>
+                                  <td class="titletable">
+                                    <p class="SUBTITULO">Cupo global
+                                      solicitado</span><b></p>
+                                  </td>
+                                  <td>
+                                    <p class="PARRAFO"><span>Aplica
+                                        para tarjetas empresariales y
+                                        principales que posean tarjetas
+                                        amparadas, y
+                                        puede contener el nuevo cupo global
+                                        requerido por el cliente.</p>
+                                    </td>
+                                  </tr>
+                                  <tr>
+                                    <td class="titletable">
+                                      <p class="SUBTITULO">Cupo global
+                                        asignado</span><b></p>
+                                    </td>
+                                    <td>
+                                      <p class="PARRAFO"><span>Campo
+                                          de salida que ilustra el monto o valor
+                                          del nuevo cupo global asociado al
+                                          producto, de tarjetas empresariales y
+                                          principales que posean tarjetas
+                                          amparadas, de forma manual o al surtir
+                                          la etapa de asignación de cupos.</p>
+                                      </td>
+                                    </tr>
+                                    <tr>
+                                      <td class="titletable">
+                                        <p class="SUBTITULO"><span>Anexos</p>
+                                        </td>
+                                        <td>
+                                          <p class="PARRAFO"><span>Campo
+                                              que permite ingresar información
+                                              relacionada con la solicitud,
+                                              referente a
+                                              documentos suministrados por el
+                                              cliente u otros datos que de
+                                              alguna manera
+                                              justifiquen y/o avalen la
+                                              solicitud o su denegación.</p>
+                                          </td>
+                                        </tr>
+                                      </table>
+                                      <p class="TITLE"><img
+                                          src="../img/SOF_020E2.PNG"></p>
 
-<table>
-<tr>
- <td class="titletable">
- <p class="SUBTITULO">Número Tarjeta</p>
- </td>
- <td>
- <p class="PARRAFO"><span >Campo
- que posee lista de valores con los diferentes números de tarjeta aprobadas al
- cliente y de la que debe seleccionarse aquella para la que se desea solicitar
- la <i>Línea de crédito adicional</i>. Si solo se posee una tarjeta el sistema
- alimenta el campo al invocar la lista de valores y lleva el cursor al campo <i>Anexos</i>.
- </p>
- </td>
-</tr>
-<tr>
- <td class="titletable">
- <p class="SUBTITULO"><span >Producto </p>
- </td>
- <td>
- <p class="PARRAFO"><span >Campos
- de salida </span><span >desplegados por la forma una vez
- ingresado o seleccionado el número de tarjeta asociado a la solicitud. Permitiendo conocer el <i>Segmento</i>, <i>Grupo
- de afinidad</i> y <i>Descripción</i> que junto con el <i>Bin</i> conforman el
- <i><a href="MEH_002E.html">producto</a></i>.</p>
- </td>
-</tr>
-<tr>
- <td class="titletable">
- <p class="SUBTITULO"><span >Marca</p>
- </td>
- <td>
- <p class="PARRAFO"><span >Campo de salida que ilustra la <i><a
- href="NUH_033E.html">franquicia</a></i> asociada al <i><a href="MEH_002E.html">producto</a>
- </i>en los <i><a href="MEH_001E.html">parámetros</a></i> del módulo de
- Mercadeo. </p>
- </td>
-</tr>
-<tr>
- <td class="titletable">
- <p class="SUBTITULO"><span >Fecha Vencimiento</p>
- </td>
- <td>
- <p class="PARRAFO"><span >Campo de salida que en formato </span><span
->DD-MM-YYYY</span><span
- > muestra la fecha en que expira el plástico actual
- de la tarjeta o producto del cliente.</p>
- </td>
-</tr>
-<tr>
- <td class="titletable">
- <p class="SUBTITULO"><span >Tipo Tarjeta</p>
- </td>
- <td>
- <p class="PARRAFO"><span >Campo
- que ilustra la clase o tipo de tarjeta a la que corresponde el <i><a
- href="MEH_002E.html">producto</a></i> a través del que se realiza la
- solicitud.</p>
- </td>
-</tr>
-<tr>
- <td class="titletable">
- <p class="SUBTITULO"><span >Cupo global Tarjeta</p>
- </td>
- <td>
- <p class="PARRAFO"><span >Campo
- de salida que ilustra el monto global que posee actualmente el cliente
- empresarial o principal que tiene tarjetas amparadas.</p>
- </td>
-</tr>
-<tr>
- <td class="titletable">
- <p class="SUBTITULO">Cupo global solicitado</span><b
- ></p>
- </td>
- <td>
- <p class="PARRAFO"><span >Aplica
- para tarjetas empresariales y principales que posean tarjetas amparadas, y
- puede contener el nuevo cupo global requerido por el cliente.</p>
- </td>
-</tr>
-<tr>
- <td class="titletable">
- <p class="SUBTITULO">Cupo global asignado</span><b
- ></p>
- </td>
- <td>
- <p class="PARRAFO"><span >Campo
- de salida que ilustra el monto o valor del nuevo cupo global asociado al
- producto, de tarjetas empresariales y principales que posean tarjetas
- amparadas, de forma manual o al surtir la etapa de asignación de cupos.</p>
- </td>
-</tr>
-<tr>
- <td class="titletable">
- <p class="SUBTITULO"><span >Anexos</p>
- </td>
- <td>
- <p class="PARRAFO"><span >Campo
- que permite ingresar información relacionada con la solicitud, referente a
- documentos suministrados por el cliente u otros datos que de alguna manera
- justifiquen y/o avalen la solicitud o su denegación.</p>
- </td>
-</tr>
-</table>
-    <p class="TITLE"><img src="../img/SOF_020E2.PNG"></p>
+                                      <p class="TITLE">Descripción de Campos
+                                        Página 2</p>
+                                      <table>
+                                        <tr>
+                                          <td class="titletable">
+                                            <p class="SUBTITULO"><span>Línea de
+                                                Crédito Activa </p>
+                                            </td>
+                                            <td>
+                                              <p class="PARRAFO"><span>Campo
+                                                  de salida que ilustra todas y
+                                                  cada una de las líneas de
+                                                  crédito que a la
+                                                  fecha presente el cliente.
+                                                </p>
+                                              </td>
+                                            </tr>
+                                            <tr>
+                                              <td class="titletable">
+                                                <p
+                                                  class="SUBTITULO"><span>Moneda</p>
+                                                </td>
+                                                <td>
+                                                  <p class="PARRAFO"><span>Campo
+                                                      de salida que ilustra la
+                                                      moneda en que se denomina
+                                                      cada una de las líneas de
+                                                      crédito
+                                                      activas que presente el
+                                                      cliente. </p>
+                                                  </td>
+                                                </tr>
+                                                <tr>
+                                                  <td class="titletable">
+                                                    <p class="SUBTITULO">Modo
+                                                      uso</p>
+                                                  </td>
+                                                  <td>
+                                                    <p
+                                                      class="PARRAFO"><span>Campo
+                                                        de salida que ilustra la
+                                                        jerarquía (principal,
+                                                        dependiente, especial)
+                                                        entre
+                                                        las distintas líneas de
+                                                        crédito activas que
+                                                        presente el cliente.</p>
+                                                    </td>
+                                                  </tr>
+                                                  <tr>
+                                                    <td class="titletable">
+                                                      <p class="SUBTITULO">Cupo
+                                                        actual</p>
+                                                    </td>
+                                                    <td>
+                                                      <p
+                                                        class="PARRAFO"><span>Campo
+                                                          de salida que ilustra
+                                                          el monto o valor
+                                                          actual de cupo
+                                                          asociado a cada una de
+                                                          las líneas de crédito
+                                                          activas que presente
+                                                          el cliente.</p>
+                                                      </td>
+                                                    </tr>
+                                                    <tr>
+                                                      <td class="titletable">
+                                                        <p
+                                                          class="SUBTITULO">Línea
+                                                          crédito solicitada</p>
+                                                      </td>
+                                                      <td>
+                                                        <p
+                                                          class="PARRAFO"><span>Campo
+                                                            que posee lista de
+                                                            valores poblada y
+                                                            filtrada a través de
+                                                            la opción de <i><a
+                                                                href="MEH_002E.html">productos</a></i>,
+                                                            esto es, sólo
+                                                            contiene las líneas
+                                                            asociadas al
+                                                            producto al que
+                                                            pertenece la
+                                                            tarjeta, y de la
+                                                            cual debe
+                                                            seleccionarse la
+                                                            línea de crédito
+                                                            adicional deseada
+                                                            por el cliente.</p>
+                                                        </td>
+                                                      </tr>
+                                                      <tr>
+                                                        <td class="titletable">
+                                                          <p
+                                                            class="SUBTITULO"><span>Moneda</p>
+                                                          </td>
+                                                          <td>
+                                                            <p
+                                                              class="PARRAFO"><span>Campo
+                                                                de salida que
+                                                                ilustra la
+                                                                moneda en que se
+                                                                denomina cada
+                                                                una de las
+                                                                líneas de
+                                                                crédito
+                                                                asociadas al
+                                                                producto. </p>
+                                                            </td>
+                                                          </tr>
+                                                          <tr>
+                                                            <td
+                                                              class="titletable">
+                                                              <p
+                                                                class="SUBTITULO"><span>Modo
+                                                                  Uso</p>
+                                                              </td>
+                                                              <td>
+                                                                <p
+                                                                  class="PARRAFO"><span>Campo
+                                                                    de salida
+                                                                    que ilustra
+                                                                    la jerarquía
+                                                                    (principal,
+                                                                    dependiente,
+                                                                    especial)
+                                                                    entre las
+                                                                    distintas
+                                                                    líneas de
+                                                                    crédito
+                                                                    asociadas al
+                                                                    producto.</p>
+                                                                </td>
+                                                              </tr>
+                                                              <tr>
+                                                                <td
+                                                                  class="titletable">
+                                                                  <p
+                                                                    class="SUBTITULO"><span>Cupo
+                                                                      Solicitado</p>
+                                                                  </td>
+                                                                  <td>
+                                                                    <p
+                                                                      class="PARRAFO"><span>Campo
+                                                                        en el
+                                                                        que se
+                                                                        registra
+                                                                        el monto
+                                                                        o valor
+                                                                        del cupo
+                                                                        asociado
+                                                                        a cada
+                                                                        una de
+                                                                        las
+                                                                        líneas
+                                                                        de
+                                                                        crédito
+                                                                        adicional
+                                                                        solicitada;
+                                                                        la forma
+                                                                        controla
+                                                                        que el
+                                                                        valor
+                                                                        del
+                                                                        cupo
+                                                                        total
+                                                                        aprobado
+                                                                        se
+                                                                        distribuya
+                                                                        con base
+                                                                        en la
+                                                                        jerarquía
+                                                                        de las
+                                                                        mismas.</p>
+                                                                    </td>
+                                                                  </tr>
+                                                                  <tr>
+                                                                    <td
+                                                                      class="titletable">
+                                                                      <p
+                                                                        class="SUBTITULO"><span>Cupo
+                                                                          Aprobado</p>
+                                                                      </td>
+                                                                      <td>
+                                                                        <p
+                                                                          class="PARRAFO"><span>Campo
+                                                                            de
+                                                                            salida
+                                                                            que
+                                                                            ilustra
+                                                                            el
+                                                                            monto
+                                                                            o
+                                                                            valor
+                                                                            de
+                                                                            cupo,
+                                                                            de
+                                                                            tarjetas
+                                                                            empresariales
+                                                                            o
+                                                                            principales
+                                                                            que
+                                                                            posean
+                                                                            tarjetas
+                                                                            amparadas,
+                                                                            de
+                                                                            forma
+                                                                            manual
+                                                                            o al
+                                                                            surtir
+                                                                            la
+                                                                            etapa
+                                                                            de
+                                                                            asignación
+                                                                            de
+                                                                            dichos
+                                                                            cupos
+                                                                            para
+                                                                            cada
+                                                                            una
+                                                                            de
+                                                                            las
+                                                                            líneas
+                                                                            de
+                                                                            crédito
+                                                                            adicionales,
+                                                                            de
+                                                                            acuerdo
+                                                                            con
+                                                                            el
+                                                                            nuevo
+                                                                            cupo
+                                                                            total
+                                                                            y la
+                                                                            jerarquía
+                                                                            de
+                                                                            las
+                                                                            mismas,
+                                                                            determinada
+                                                                            en
+                                                                            la
+                                                                            página
+                                                                            tab
+                                                                            <i>Líneas
+                                                                              crédito</i>
+                                                                            de
+                                                                            la
+                                                                            opción
+                                                                            <i><a
+                                                                                href="MEH_002E.html">producto</a>.</i>
+                                                                          </p>
+                                                                        </td>
+                                                                      </tr>
+                                                                      <tr>
+                                                                        <td
+                                                                          class="titletable">
+                                                                          <p
+                                                                            class="SUBTITULO"><span>Cupos
+                                                                              por
+                                                                              Tarjeta</p>
+                                                                          </td>
+                                                                          <td>
+                                                                            <p
+                                                                              class="PARRAFO"><span>Campo
+                                                                                que
+                                                                                ilustra
+                                                                                el
+                                                                                nuevo
+                                                                                cupo
+                                                                                total
+                                                                                de
+                                                                                la
+                                                                                tarjeta,
+                                                                                incluyendo
+                                                                                el
+                                                                                monto
+                                                                                de
+                                                                                cada
+                                                                                una
+                                                                                de
+                                                                                las
+                                                                                líneas
+                                                                                adicionales
+                                                                                solicitada.</p>
+                                                                            </td>
+                                                                          </tr>
+                                                                          <tr>
+                                                                            <td
+                                                                              class="titletable">
+                                                                              <p
+                                                                                class="SUBTITULO"><span>Cupo
+                                                                                  asignado
+                                                                                  modificado
+                                                                                  por
+                                                                                </p>
+                                                                              </td>
+                                                                              <td>
+                                                                                <p
+                                                                                  class="PARRAFO"><span>Campo
+                                                                                    de
+                                                                                    salida
+                                                                                    que
+                                                                                    ilustra
+                                                                                    el
+                                                                                    tipo
+                                                                                    y
+                                                                                    número
+                                                                                    de
+                                                                                    documento
+                                                                                    de
+                                                                                    identificación,
+                                                                                    y
+                                                                                    nombre
+                                                                                    del
+                                                                                    <i><a
+                                                                                        href="NUH_045E.html">funcionario</a></i>
+                                                                                    asociado
+                                                                                    al
+                                                                                    usuario
+                                                                                    de
+                                                                                    la
+                                                                                    base
+                                                                                    de
+                                                                                    datos,
+                                                                                    autorizado,
+                                                                                    que
+                                                                                    varía
+                                                                                    el
+                                                                                    monto
+                                                                                    de
+                                                                                    los
+                                                                                    cupos
+                                                                                    previamente
+                                                                                    asignados.</p>
+                                                                                </td>
+                                                                              </tr>
+                                                                            </table>
+                                                                            <p
+                                                                              class="TITLE"><img
+                                                                                src="../img/SOF_020E3.PNG"></p>
 
- <p class="TITLE" >Descripción de Campos Página 2</p>
-    <table>
-<tr>
- <td class="titletable">
- <p class="SUBTITULO"><span >Línea de Crédito Activa </p>
- </td>
- <td>
- <p class="PARRAFO"><span >Campo
- de salida que ilustra todas y cada una de las líneas de crédito que a la
- fecha presente el cliente. </p>
- </td>
-</tr>
-<tr>
- <td class="titletable">
- <p class="SUBTITULO"><span >Moneda</p>
- </td>
- <td>
- <p class="PARRAFO"><span >Campo
- de salida que ilustra la moneda en que se denomina cada una de las líneas de crédito
- activas que presente el cliente. </p>
- </td>
-</tr>
-<tr>
- <td class="titletable">
- <p class="SUBTITULO">Modo uso</p>
- </td>
- <td>
- <p class="PARRAFO"><span >Campo
- de salida que ilustra la jerarquía (principal, dependiente, especial) entre
- las distintas líneas de crédito activas que presente el cliente.</p>
- </td>
-</tr>
-<tr>
- <td class="titletable">
- <p class="SUBTITULO">Cupo actual</p>
- </td>
- <td>
- <p class="PARRAFO"><span >Campo
- de salida que ilustra el monto o valor actual de cupo asociado a cada una de
- las líneas de crédito activas que presente el cliente.</p>
- </td>
-</tr>
-<tr>
- <td class="titletable">
- <p class="SUBTITULO">Línea crédito solicitada</p>
- </td>
- <td>
- <p class="PARRAFO"><span >Campo
- que posee lista de valores poblada y filtrada a través de la opción de <i><a
- href="MEH_002E.html">productos</a></i>, esto es, sólo contiene las líneas
- asociadas al producto al que pertenece la tarjeta, y de la cual debe
- seleccionarse la línea de crédito adicional deseada por el cliente.</p>
- </td>
-</tr>
-<tr>
- <td class="titletable">
- <p class="SUBTITULO"><span >Moneda</p>
- </td>
- <td>
- <p class="PARRAFO"><span >Campo
- de salida que ilustra la moneda en que se denomina cada una de las líneas de
- crédito asociadas al producto. </p>
- </td>
-</tr>
-<tr>
- <td class="titletable">
- <p class="SUBTITULO"><span >Modo Uso</p>
- </td>
- <td>
- <p class="PARRAFO"><span >Campo
- de salida que ilustra la jerarquía (principal, dependiente, especial) entre las
- distintas líneas de crédito asociadas al producto.</p>
- </td>
-</tr>
-<tr>
- <td class="titletable">
- <p class="SUBTITULO"><span >Cupo Solicitado</p>
- </td>
- <td>
- <p class="PARRAFO"><span >Campo
- en el que se registra el monto o valor del cupo asociado a cada una de las
- líneas de crédito adicional solicitada; la forma controla que el valor del
- cupo total aprobado se distribuya con base en la jerarquía de las mismas.</p>
- </td>
-</tr>
-<tr>
- <td class="titletable">
- <p class="SUBTITULO"><span >Cupo Aprobado</p>
- </td>
- <td>
- <p class="PARRAFO"><span >Campo
- de salida que ilustra el monto o valor de cupo, de tarjetas empresariales o
- principales que posean tarjetas amparadas, de forma manual o al surtir la
- etapa de asignación de dichos cupos para cada una de las líneas de crédito
- adicionales, de acuerdo con el nuevo cupo total y la jerarquía de las mismas,
- determinada en la página tab <i>Líneas crédito</i> de la opción <i><a href="MEH_002E.html">producto</a>.</i>
- </p>
- </td>
-</tr>
-<tr>
- <td class="titletable">
- <p class="SUBTITULO"><span >Cupos por Tarjeta</p>
- </td>
- <td>
- <p class="PARRAFO"><span >Campo
- que ilustra el nuevo cupo total de la tarjeta, incluyendo el monto de cada
- una de las líneas adicionales solicitada.</p>
- </td>
-</tr>
-<tr>
- <td class="titletable">
- <p class="SUBTITULO"><span >Cupo asignado modificado
- por </p>
- </td>
- <td>
- <p class="PARRAFO"><span >Campo
- de salida que ilustra el tipo y número de documento de identificación, y
- nombre del <i><a href="NUH_045E.html">funcionario</a></i> asociado al usuario
- de la base de datos, autorizado, que varía el monto de los cupos previamente
- asignados.</p>
- </td>
-</tr>
-</table>
-    <p class="TITLE"><img  src="../img/SOF_020E3.PNG" ></p>
+                                                                            <p
+                                                                              class="TITLE">Descripción
+                                                                              de
+                                                                              Campos
+                                                                              Página
+                                                                              3</p>
+                                                                            <table>
+                                                                              <tr>
+                                                                                <td
+                                                                                  class="titletable">
+                                                                                  <p
+                                                                                    class="SUBTITULO"><span>Motivo
+                                                                                      negación</p>
+                                                                                  </td>
+                                                                                  <td>
+                                                                                    <p
+                                                                                      class="PARRAFO"><span>Campo
+                                                                                        que
+                                                                                        puede
+                                                                                        ser
+                                                                                        de
+                                                                                        salida
+                                                                                        si
+                                                                                        el
+                                                                                        valor
+                                                                                        del
+                                                                                        campo
+                                                                                        <i>Estado</i>
+                                                                                        es
+                                                                                        <i>Aprobada
+                                                                                          totalmente</i>,
+                                                                                        en
+                                                                                        cualquier
+                                                                                        otro
+                                                                                        caso
+                                                                                        posee
+                                                                                        lista
+                                                                                        de
+                                                                                        valores
+                                                                                        mediante
+                                                                                        la
+                                                                                        cual
+                                                                                        se
+                                                                                        indica
+                                                                                        la
+                                                                                        causa
+                                                                                        de
+                                                                                        negación
+                                                                                        de
+                                                                                        la
+                                                                                        solicitud,
+                                                                                        por
+                                                                                        lo
+                                                                                        que
+                                                                                        contiene
+                                                                                        datos,
+                                                                                        solamente,
+                                                                                        cuando
+                                                                                        la
+                                                                                        solicitud
+                                                                                        es
+                                                                                        negada,
+                                                                                        y
+                                                                                        permite
+                                                                                        conocer
+                                                                                        la
+                                                                                        razón
+                                                                                        correspondiente.
+                                                                                      </p>
+                                                                                    </td>
+                                                                                  </tr>
+                                                                                  <tr>
+                                                                                    <td
+                                                                                      class="titletable">
+                                                                                      <p
+                                                                                        class="SUBTITULO"><span>Observaciones
+                                                                                          negación</p>
+                                                                                      </td>
+                                                                                      <td>
+                                                                                        <p
+                                                                                          class="PARRAFO"><span>Campo
+                                                                                            que
+                                                                                            puede
+                                                                                            ser
+                                                                                            de
+                                                                                            salida
+                                                                                            si
+                                                                                            el
+                                                                                            valor
+                                                                                            del
+                                                                                            campo
+                                                                                            <i>Estado</i>
+                                                                                            es
+                                                                                            <i>Aprobada
+                                                                                              totalmente</i>,
+                                                                                            en
+                                                                                            cualquier
+                                                                                            otro
+                                                                                            caso
+                                                                                            permite
+                                                                                            registrar
+                                                                                            algunas
+                                                                                            notas
+                                                                                            que
+                                                                                            ilustren
+                                                                                            la
+                                                                                            razón
+                                                                                            o
+                                                                                            datos
+                                                                                            adicionales
+                                                                                            que
+                                                                                            motivaron
+                                                                                            la
+                                                                                            negación
+                                                                                            de
+                                                                                            la
+                                                                                            solicitud,
+                                                                                            incluso
+                                                                                            desplegar
+                                                                                            los
+                                                                                            mensajes
+                                                                                            automáticos
+                                                                                            derivados
+                                                                                            de
+                                                                                            la
+                                                                                            aplicación
+                                                                                            de
+                                                                                            los
+                                                                                            filtros
+                                                                                            a
+                                                                                            la
+                                                                                            solicitud
+                                                                                            u
+                                                                                            otras
+                                                                                            instancias
+                                                                                            en
+                                                                                            las
+                                                                                            que
+                                                                                            se
+                                                                                            produjo
+                                                                                            la
+                                                                                            negación.</p>
+                                                                                        </td>
+                                                                                      </tr>
+                                                                                      <tr>
+                                                                                        <td
+                                                                                          class="titletable">
+                                                                                          <p
+                                                                                            class="SUBTITULO"><span>Estado</p>
+                                                                                          </td>
+                                                                                          <td>
+                                                                                            <p
+                                                                                              class="PARRAFO"><span>Campo
+                                                                                                de
+                                                                                                salida,
+                                                                                                se
+                                                                                                actualiza
+                                                                                                dinámicamente
+                                                                                                acorde
+                                                                                                con
+                                                                                                la
+                                                                                                condición
+                                                                                                en
+                                                                                                que
+                                                                                                se
+                                                                                                encuentre
+                                                                                                la
+                                                                                                solicitud.</p>
+                                                                                            </td>
+                                                                                          </tr>
+                                                                                          <tr>
+                                                                                            <td
+                                                                                              class="titletable">
+                                                                                              <p
+                                                                                                class="SUBTITULO"><span>Fecha
+                                                                                                  estado</p>
+                                                                                              </td>
+                                                                                              <td>
+                                                                                                <p
+                                                                                                  class="PARRAFO"><span>Campo
+                                                                                                    de
+                                                                                                    salida
+                                                                                                    que
+                                                                                                    en
+                                                                                                    formato
+                                                                                                  </span><span>DD-MM-YYYY</span><span>
+                                                                                                    ilustra
+                                                                                                    la
+                                                                                                    fecha
+                                                                                                    en
+                                                                                                    que
+                                                                                                    arribá
+                                                                                                    al
+                                                                                                    estado
+                                                                                                    actual.</p>
+                                                                                                </td>
+                                                                                              </tr>
+                                                                                              <tr>
+                                                                                                <td
+                                                                                                  class="titletable">
+                                                                                                  <p
+                                                                                                    class="SUBTITULO"><span>Etapa
+                                                                                                      actual</p>
+                                                                                                  </td>
+                                                                                                  <td>
+                                                                                                    <p
+                                                                                                      class="PARRAFO"><span>Campo
+                                                                                                        de
+                                                                                                        salida
+                                                                                                        que
+                                                                                                        ilustra
+                                                                                                        el
+                                                                                                        paso
+                                                                                                        o
+                                                                                                        estadio
+                                                                                                        en
+                                                                                                        que
+                                                                                                        se
+                                                                                                        encuentra
+                                                                                                        la
+                                                                                                        solicitud
+                                                                                                        acorde
+                                                                                                        tanto
+                                                                                                        con
+                                                                                                        su
+                                                                                                        clase
+                                                                                                        como
+                                                                                                        con
+                                                                                                        la
+                                                                                                        parametrización
+                                                                                                        de
+                                                                                                        la
+                                                                                                        misma,
+                                                                                                        realizada
+                                                                                                        en
+                                                                                                        la
+                                                                                                        opción
+                                                                                                        <i>Etapas</i>
+                                                                                                        invocada
+                                                                                                        mediante
+                                                                                                        el
+                                                                                                        botón
+                                                                                                        especial
+                                                                                                        <i>Más
+                                                                                                          parámetros</i>
+                                                                                                        de
+                                                                                                        la
+                                                                                                        opción
+                                                                                                        <i><a
+                                                                                                            href="SOH_001E.html">Parámetros</a></i>
+                                                                                                        del
+                                                                                                        mismo
+                                                                                                        módulo.</p>
+                                                                                                    </td>
+                                                                                                  </tr>
+                                                                                                  <tr>
+                                                                                                    <td
+                                                                                                      class="titletable">
+                                                                                                      <p
+                                                                                                        class="SUBTITULO"><span>Documento
+                                                                                                          exigido</p>
+                                                                                                      </td>
+                                                                                                      <td>
+                                                                                                        <p
+                                                                                                          class="PARRAFO"><span>Conjunto
+                                                                                                            de
+                                                                                                            campos
+                                                                                                            en
+                                                                                                            los
+                                                                                                            que
+                                                                                                            aparecen
+                                                                                                            relacionados
+                                                                                                            los
+                                                                                                            documentos
+                                                                                                            requeridos
+                                                                                                            como
+                                                                                                            soporte
+                                                                                                            de
+                                                                                                            la
+                                                                                                            solicitud
+                                                                                                            acorde
+                                                                                                            tanto
+                                                                                                            con
+                                                                                                            su
+                                                                                                            clase
+                                                                                                            como
+                                                                                                            con
+                                                                                                            la
+                                                                                                            parametrización
+                                                                                                            de
+                                                                                                            la
+                                                                                                            misma,
+                                                                                                            realizada
+                                                                                                            en
+                                                                                                            la
+                                                                                                            opción
+                                                                                                            <i>Etapas</i>
+                                                                                                            invocada
+                                                                                                            mediante
+                                                                                                            el
+                                                                                                            botón
+                                                                                                            especial
+                                                                                                            <i>Más
+                                                                                                              parámetros</i>
+                                                                                                            de
+                                                                                                            la
+                                                                                                            opción
+                                                                                                            <i><a
+                                                                                                                href="SOH_001E.html">Parámetros</a></i>
+                                                                                                            del
+                                                                                                            mismo
+                                                                                                            módulo,
+                                                                                                            y
+                                                                                                            para
+                                                                                                            cada
+                                                                                                            uno
+                                                                                                            de
+                                                                                                            estos
+                                                                                                            puede
+                                                                                                            señalarse
+                                                                                                            si
+                                                                                                            han
+                                                                                                            sido
+                                                                                                            entregados
+                                                                                                            o
+                                                                                                            no
+                                                                                                            por
+                                                                                                            cada
+                                                                                                            tipo
+                                                                                                            de
+                                                                                                            cliente
+                                                                                                            (<i>Natural,
+                                                                                                              Avalista,
+                                                                                                              Representante
+                                                                                                              legal,
+                                                                                                              Funcionarios,
+                                                                                                              Empresa</i>
+                                                                                                            o
+                                                                                                            <i>Amparados</i>).</p>
+                                                                                                        </td>
+                                                                                                      </tr>
+                                                                                                    </table>
+                                                                                                    <p
+                                                                                                      class="TITLE"><img
+                                                                                                        src="../img/SOF_020E4.PNG"></p>
 
- <p class="TITLE">Descripción de Campos Página 3</p>
-    <table>
-<tr>
- <td class="titletable">
- <p class="SUBTITULO"><span >Motivo negación</p>
- </td>
- <td>
- <p class="PARRAFO"><span >Campo
- que puede ser de salida si el valor del campo <i>Estado</i> es <i>Aprobada
- totalmente</i>, en cualquier otro caso posee lista de valores mediante la
- cual se indica la causa de negación de la solicitud, por lo que contiene
- datos, solamente, cuando la solicitud es negada, y permite conocer la razón
- correspondiente. </p>
- </td>
-</tr>
-<tr>
- <td class="titletable">
- <p class="SUBTITULO"><span >Observaciones negación</p>
- </td>
- <td>
- <p class="PARRAFO"><span >Campo
- que puede ser de salida si el valor del campo <i>Estado</i> es <i>Aprobada
- totalmente</i>, en cualquier otro caso permite registrar algunas notas que
- ilustren la razón o datos adicionales que motivaron la negación de la solicitud,
- incluso desplegar los mensajes automáticos derivados de la aplicación de los
- filtros a la solicitud u otras instancias en las que se produjo la negación.</p>
- </td>
-</tr>
-<tr>
- <td class="titletable">
- <p class="SUBTITULO"><span >Estado</p>
- </td>
- <td>
- <p class="PARRAFO"><span >Campo
- de salida, se actualiza dinámicamente acorde con la condición en que se encuentre
- la solicitud.</p>
- </td>
-</tr>
-<tr>
- <td class="titletable">
- <p class="SUBTITULO"><span >Fecha estado</p>
- </td>
- <td>
- <p class="PARRAFO"><span >Campo
- de salida que en formato </span><span >DD-MM-YYYY</span><span
- > ilustra la
- fecha en que arribá al estado actual.</p>
- </td>
-</tr>
-<tr>
- <td class="titletable">
- <p class="SUBTITULO"><span >Etapa actual</p>
- </td>
- <td>
- <p class="PARRAFO"><span >Campo
- de salida que ilustra el paso o estadio en que se encuentra la solicitud acorde
- tanto con su clase como con la parametrización de la misma, realizada en la
- opción <i>Etapas</i> invocada mediante el botón especial <i>Más parámetros</i>
- de la opción <i><a href="SOH_001E.html">Parámetros</a></i> del mismo módulo.</p>
- </td>
-</tr>
-<tr>
- <td class="titletable">
- <p class="SUBTITULO"><span >Documento exigido</p>
- </td>
- <td>
- <p class="PARRAFO"><span >Conjunto
- de campos en los que aparecen relacionados los documentos requeridos como
- soporte de la solicitud acorde tanto con su clase como con la parametrización
- de la misma, realizada en la opción <i>Etapas</i> invocada mediante el botón
- especial <i>Más parámetros</i> de la opción <i><a href="SOH_001E.html">Parámetros</a></i>
- del mismo módulo, y para cada uno de estos puede señalarse si han sido
- entregados o no por cada tipo de cliente (<i>Natural, Avalista, Representante
- legal, Funcionarios, Empresa</i> o <i>Amparados</i>).</p>
- </td>
-</tr>
-</table>
-    <p class="TITLE"><img src="../img/SOF_020E4.PNG" ></p>
-   
+                                                                                                    <p
+                                                                                                      class="TITLE">Descripción
+                                                                                                      de
+                                                                                                      Campos
+                                                                                                      Página
+                                                                                                      4</p>
+                                                                                                    <table>
+                                                                                                      <tr>
+                                                                                                        <td
+                                                                                                          class="titletable">
+                                                                                                          <p
+                                                                                                            class="SUBTITULO"><span>Datos
+                                                                                                              beneficiario
+                                                                                                              adicional</p>
+                                                                                                          </td>
+                                                                                                          <td>
+                                                                                                            <p
+                                                                                                              class="PARRAFO"><span>Campos
+                                                                                                                de
+                                                                                                                salida
+                                                                                                                que
+                                                                                                                muestran
+                                                                                                                la
+                                                                                                                información
+                                                                                                                relacionada
+                                                                                                                con
+                                                                                                                las
+                                                                                                                tarjetas
+                                                                                                                adicionales
+                                                                                                                que
+                                                                                                                dependen
+                                                                                                                del
+                                                                                                                cliente
+                                                                                                                principal
+                                                                                                                o
+                                                                                                                empresarial
+                                                                                                                tales
+                                                                                                                como
+                                                                                                                tipo
+                                                                                                                y
+                                                                                                                número
+                                                                                                                de
+                                                                                                                documento
+                                                                                                                de
+                                                                                                                identificación,
+                                                                                                                nombre
+                                                                                                                y
+                                                                                                                número
+                                                                                                                de
+                                                                                                                la
+                                                                                                                tarjeta
+                                                                                                                o
+                                                                                                                producto.</p>
+                                                                                                            </td>
+                                                                                                          </tr>
+                                                                                                        </table>
 
- <p class="TITLE">Descripción de Campos Página 4</p>
- <table>
- <tr>
- <td class="titletable">
- <p class="SUBTITULO"><span >Datos beneficiario adicional</p>
- </td>
- <td>
- <p class="PARRAFO"><span >Campos
- de salida que muestran la información relacionada con las tarjetas
- adicionales que dependen del cliente principal o empresarial tales como tipo y
- número de documento de identificación, nombre y número de la tarjeta o
- producto.</p>
- </td>
-</tr>
-</table>
+                                                                                                      </div>
 
-        </div>
+                                                                                                    </section>
+                                                                                                    <script
+                                                                                                      src="../js/menu.js"></script>
 
-    </section>
-    <script src="../js/menu.js"></script>
-
-    <div id="footerContainer"></div>
-<script>
+                                                                                                    <div
+                                                                                                      id="footerContainer"></div>
+                                                                                                    <script>
   fetch('footer.html')
     .then(response => response.text())
     .then(html => {
       document.getElementById('footerContainer').innerHTML = html;
     });
 </script>
-</body>
+                                                                                                  </body>
 
-</html>
+                                                                                                </html>

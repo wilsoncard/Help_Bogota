@@ -1,24 +1,24 @@
 <!DOCTYPE html>
 <html lang="es">
 
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>BANKBU®</title>
-  <link rel="stylesheet" href="../css/pages.css">
-  <link rel="stylesheet" href="../css/style.css">
-  <link rel="icon" href="../img/ACQUIRER-logo.JPG" type="image/x-icon">
-</head>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OpencardWeb®</title>
+    <link rel="stylesheet" href="../css/pages.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="icon" href="../img/ACQUIRER-logo.JPG" type="image/x-icon">
+  </head>
 
-<body>
-  <header>
-    <img class="logo" src="../img/logoBankbu_.PNG" alt="Logo de Mi Empresa">
-    <div id="menuBtn">
-      <img class="TITLE" src="../img/menu.PNG" alt="Botón de Menú ">
-    </div>
-  </header>
+  <body>
+    <header>
+      <img class="logo" src="../img/logoBankbu_.PNG" alt="Logo de Mi Empresa">
+      <div id="menuBtn">
+        <img class="TITLE" src="../img/menu.PNG" alt="Botón de Menú ">
+      </div>
+    </header>
     <div id="menuContainer"></div>
-  <script>
+    <script>
     fetch('menu.html')
       .then(response => response.text())
       .then(html => {
@@ -26,137 +26,215 @@
       });
   </script>
 
-  <section>
-    <div>
-      
-              <p class="TITLE">Parámetros de solicitudes</p>
+    <section>
+      <div>
 
-      <p class="PARRAFO">Mediante esta función se permite la consulta y mantenimiento
-        de las tablas que contienen los parámetros que determinan las diferentes
-        clases de solicitudes y las etapas que se deben cumplir.</p>
-      <p class="PARRAFO">El formulario inicial contiene dos bloques de ingreso de parámetros:
-        Etapas y <a href="#Documentos" title="Documentos" target="_self">Documentos</a>.
-        Cada uno con las opciones Actualizar, Eliminar, y Adicionar. Adicionalmente,
-        en la parte superior se ubican las otras opciones pertenecientes a los Parámetros
-        de solicitudes: <a href="SOH_001B1.html">Filtros negación</a>, <a href="SOH_001B2.html">Funcionarios</a>,
-        <a href="SOH_001B3.html">Calificación</a>, <a href="SOH_001B4.html">Negación</a>,
-        <a href="SOH_001B5.html">Variables cupo</a>, y el <a href="SOH_001B6.html">Globo
-          de localización</a>.
-      </p>
-      <p class="PARRAFO"><span class="SUBTITULO">Etapas:</span> Conjunto de campos en los que se codifican
-        las diversas etapas que deberán surtir las solicitudes; cada etapa
-        se asocia a un prototipo interno de OpenCard, siendo factible que un mismo
-        prototipo pueda tener asociados dos o más etapas ya que se le ofrece
-        a la entidad la posibilidad de dar un nombre diferente a cada una de ellas,
-        dependiendo del tipo de producto.</p>
-      <p class="TITLE"><img src="../img/SOF_001B.PNG"></p>
+        <p class="TITLE">Parámetros solicitudes tarjeta débito</p>
 
-      <p class="PARRAFO"><span class="SUBTITULO">Adicionar:</span> Si el usuario invoca la opción
-        Adicionar se despliega un formulario con los siguientes campos:</p>
-      <p class="TITLE"><img src="../img/SOF_001B1.PNG"></p>
-      <table>
-        <tr>
-          <td class="titletable">
-            <p class="SUBTITULO">Código</p>
-          </td>
-          <td>
-            <p class="PARRAFO">Campo
-              alfanumérico de 4 posiciones, obligatorio, en el que se registra
-              el código asignado a cada una de las diferentes etapas por las
-              que deben transitar las solicitudes.</p>
-          </td>
-        </tr>
-        <tr>
-          <td class="titletable">
-            <p class="SUBTITULO">Nombre</p>
-          </td>
-          <td>
-            <p class="PARRAFO">En
-              este campo alfanumérico de 60 posiciones, obligatorio, se debe
-              registrar el nombre o breve descriptivo de cada etapa codificada.</p>
-          </td>
-        </tr>
-        <tr>
-          <td class="titletable">
-            <p class="SUBTITULO">Prototipo</p>
-          </td>
-          <td>
-            <p class="PARRAFO">Campo
-              obligatorio que posee lista de valores adjunta de la que debe seleccionarse el código
-              interno con el que el sistema gestiona la correspondiente etapa. Como
-              ya se mencionó, un mismo prototipo puede tener asociadas dos
-              o más etapas, o lo que es lo mismo, diferentes etapas definidas
-              por la entidad pueden estar asociadas a un mismo prototipo.</p>
-          </td>
-        </tr>
-      </table>
+        <p class="PARRAFO">Al invocar la opción, se despliega un filtro con el
+          mismo nombre, en el que se debe o digitar los tres datos que componen
+          el producto: Bin, Segmento y Grupo de afinidad o bien, se pueden
+          buscar en la lista activada mediante la lupa a la derecha, incluso por
+          el nombre o descripción del mismo, siendo este el paso previo para que
+          se muestre la data de dichos parámetros por cada producto: </p>
 
-      <p class="PARRAFO"><span class="PARRAFO"><span class="SUBTITULO">Actualizar:</span>
-           Al activar ese enlace  se despliega un formulario
-          en el cual los únicos campos modificables son: Nombre, y Prototipo.</p>
-      <p class="TITLE"><img src="../img/SOF_001B2.PNG"></p>
+        <p class="TITLE"><img src="../img/SOF_001B.PNG"></p>
+        <p class="PARRAFO"><span class="SUBTITULO">Una vez seleccionado el
+            producto de interés y activando el botón Buscar, si los datos son
+            válidos, se despliega el siguiente formulario, en cuya parte
+            superior se muestra la combinatoria y nombre o descripción del
+            producto, mismos datos del filtro utilizado, más abajo del cual, se
+            dispone de los enlaces: Actualizar, Eliminar, Adicionar y Detalle.
+            En el bloque principal, se ilustran los diferentes tipos de
+            solicitudes que la entidad ha definido que se pueden gestionar por
+            producto:</p>
+          <p class="TITLE"><img src="../img/SOF_0040B.PNG"></p>
 
-      <p class="PARRAFO"><span class="SUBTITULO"><a name="Documentos"></a>Documentos:</span>
-        Conjunto de campos en los que se relacionan los diferentes documentos que
-        pueden ser requeridos a manera de soporte en proceso de evaluación
-        de cada solicitud. En la opción Etapas de los Parámetros
-        solicitudes por producto, se define cuáles de estos documentos son
-        requeridos en cada una de las etapas.</p>
-      <p class="TITLE"><img src="../img/SOF_001B3.PNG"></p>
+          <table>
+            <tr>
+              <td class="titletable">
+                <p class="SUBTITULO">Tipo solicitud</p>
+              </td>
+              <td>
+                <p class="PARRAFO">Campo que muestra el código con el que el
+                  sistema identifica a cada una de las distintas solicitudes que
+                  se le han asociado al producto.</p>
+              </td>
+            </tr>
+            <tr>
+              <td class="titletable">
+                <p class="SUBTITULO">Descripción solicitud</p>
+              </td>
+              <td>
+                <p class="PARRAFO">Campo que ilustra el nombre o descripción del
+                  tipo de solicitud asociada al producto.</p>
+              </td>
+            </tr>
+            <tr>
+              <td class="titletable">
+                <p class="SUBTITULO">Ingreso</p>
+              </td>
+              <td>
+                <p class="PARRAFO">Esta etapa siempre estará marcada por defecto
+                  y es obligatoria puesto que toda clase de solicitud debe ser
+                  ingresada para que se realice su respectivo trámite y quede el
+                  registro de ésta en el sistema. A partir de este punto, se
+                  ilustran las cinco etapas más relevantes de las solicitudes,
+                  indicando para cada una, si aplica o no, respecto de cada tipo
+                  de solicitud.</p>
+              </td>
+            </tr>
+            <tr>
+              <td class="titletable">
+                <p class="SUBTITULO">Aprobacion</p>
+              </td>
+              <td>
+                <p class="PARRAFO">Campo que muestra un Si, siempre y cuando al
+                  momento de crearse o modificarse el registro, la entidad
+                  indica que se debe surtir dicha etapa, en caso contrario, se
+                  muestra el valor No. </p>
+              </td>
+            </tr>
+            <tr>
+              <td class="titletable">
+                <p class="SUBTITULO">Generacion plastico</p>
+              </td>
+              <td>
+                <p class="PARRAFO">Campo que muestra un Si, siempre y cuando al
+                  momento de crearse o modificarse el registro, la entidad
+                  indica que se debe surtir dicha etapa, en caso contrario, se
+                  muestra el valor No. </p>
+              </td>
+            </tr>
+            <tr>
+              <td class="titletable">
+                <p class="SUBTITULO">Generacion sobreflex</p>
+              </td>
+              <td>
+                <p class="PARRAFO">Campo que muestra un Si, siempre y cuando al
+                  momento de crearse o modificarse el registro, la entidad
+                  indica que se debe surtir dicha etapa, en caso contrario, se
+                  muestra el valor No.
 
-      <p class="PARRAFO"><span class="SUBTITULO">Adicionar:</span> Si el usuario invoca la opción
-        Adicionar se despliega un formulario con los siguientes campos:</p>
-      <p class="TITLE"><img src="../img/SOF_001B4.PNG"></p>
-      <table>
-        <tr>
-          <td class="titletable">
-            <p class="SUBTITULO">Código</p>
-          </td>
-          <td>
-            <p class="PARRAFO">Campo
-              numérico de 3 dígitos obligatorio en el que se registra
-              el código de cada uno de los documentos potencialmente requeridos
-              a los clientes a manera de soporte.</p>
-          </td>
-        </tr>
-        <tr>
-          <td class="titletable">
-            <p class="SUBTITULO">Nombre</p>
-          </td>
-          <td>
-            <p class="PARRAFO">Es
-              este campo alfanumérico de 60 posiciones, obligatorio, debe incluirse
-              el nombre o breve descriptivo de los documentos codificados.</p>
-          </td>
-        </tr>
-      </table>
+                </p>
+              </td>
+            </tr>
+            <tr>
+              <td class="titletable">
+                <p class="SUBTITULO">Activar</p>
+              </td>
+              <td>
+                <p class="PARRAFO">Campo que muestra un Si, siempre y cuando al
+                  momento de crearse o modificarse el registro, la entidad
+                  indica que se debe surtir dicha etapa, en caso contrario, se
+                  muestra el valor No. </p>
+              </td>
+            </tr>
+          </table>
 
-      <p class="PARRAFO"><span class="PARRAFO"><span class="SUBTITULO">Actualizar:</span>
-           Al activar ese enlace  se despliega un formulario
-          en el cual el único campo modificable es: Nombre.</p>
-      <p class="TITLE"><img src="../img/SOF_001B5.PNG"></p>
+          <p class="PARRAFO"><span class="SUBTITULO">Adicionar:</span> Si el
+            usuario invoca la opción Adicionar se despliega un formulario con
+            los siguientes campos:</p>
+          <p class="TITLE"><img src="../img/SOF_001B4.PNG"></p>
+          <table>
+            <tr>
+              <td class="titletable">
+                <p class="SUBTITULO">Tipo solicitud</p>
+              </td>
+              <td>
+                <p class="PARRAFO">Campo obligatorio, posee lista de valores
+                  tipo combo, mediante la cual se le permite a la entidad,
+                  definir las distintas solicitudes que pueden efectuarse por
+                  cada producto.</p>
+              </td>
+            </tr>
+            <tr>
+              <td class="titletable">
+                <p class="SUBTITULO">Consulta derogatoria
 
-      <p class="PARRAFO"><span class="PARRAFO"><a href="SOH_001B1.html">Filtros</a>
-         |</span><a href="SOH_001B2.html">Funcionarios</a> |
-          </span><a href="SOH_005B4.html"><span class="PARRAFO"></span>
-        </a><a href="SOH_001B3.html">Calificación</a><span class="PARRAFO">|</span>
-        <span class="PARRAFO"><a href="SOH_001B4.html">Negación</a> |
+                </p>
+              </td>
+              <td>
+                <p class="PARRAFO">Campo que permite definir si para el trámite
+                  de las solicitudes, se tendrán en cuenta los datos contenidos
+                  en <a href="NUH_044B.html">derogatorio de cédulas</a>, los
+                  cuales corresponden a aquellos números de identificación a los
+                  que la entidad debe prestar mayor atención, por estar allí
+                  registrados, puesto que determinan alguna clase de riesgo para
+                  la misma. Hay dos opciones a saber: Error o Peligro. En el
+                  evento que la entidad determine que la validación que debe
+                  realizar es Error, caso en el cual, el sistema detiene el
+                  proceso en dicho punto y no continua. Sin embargo, si el
+                  parámetro indica Peligro, el sistema muestra un mensaje de
+                  alerta para que la entidad tome las medidas de precaución
+                  necesarias, permitiendo continuar con el proceso.</p>
+              </td>
+            </tr>
+            <tr>
+              <td class="titletable">
+                <p class="SUBTITULO">Evaluar solicitud</p>
+              </td>
+              <td>
+                <p class="PARRAFO">Campo no obligatorio, posee lista tipo combo
+                  con los valores Si / No, para que, de acuerdo con los procesos
+                  de la entidad, se determine cuáles son las pautas para evaluar
+                  las solicitudes. De esta manera se evalúa al cliente y su
+                  capacidad de endeudamiento. </p>
+              </td>
+            </tr>
+            <tr>
+              <td class="titletable">
+                <p class="SUBTITULO">Generación sobreflex</p>
+              </td>
+              <td>
+                <p class="PARRAFO">Campo no obligatorio, que indica la forma como se debe generar el sobreflex de clave durante el proceso de la solicitud. Los posibles valores son: Nulo, Normal o Después.</p>
+              </td>
+            </tr>
+            <tr>
+              <td class="titletable">
+                <p class="SUBTITULO">"Etapas"</p>
+              </td>
+              <td>
+                <p class="PARRAFO">Conjunto de campos, en los que, frente a cada uno, se cuenta con un checkbox, que permiten señalar cuáles etapas deberá surtir el tipo de solicitud que se está adicionando.</p>
+              </td>
+            </tr>
+          </table>
+
+          <p class="PARRAFO"><span class="PARRAFO"><span
+                class="SUBTITULO">Actualizar:</span>
+                Al invocarse ese enlace se despliega un nuevo formulario, en el que no debe cambiarse el Tipo solicitud, los restantes datos pueden ser modificados:</p>
+            <p class="TITLE"><img src="../img/SOF_001B5.PNG"></p>
+
+            <p class="PARRAFO"><span class="PARRAFO"><span
+              class="SUBTITULO">Detalle:</span>
+              Al invocarse ese enlace se despliega el siguiente formulario, en el que, ninguno de sus datos puede modificado:</p>
+          <p class="TITLE"><img src="../img/SOF_001B70.PNG"></p>
+
+            <p class="PARRAFO"><span class="PARRAFO"><a
+                  href="SOH_001B1.html">Filtros</a>
+                |</span><a href="SOH_001B2.html">Funcionarios</a> |
             </span><a href="SOH_005B4.html"><span class="PARRAFO"></span>
-          </a><a href="SOH_001B5.html">Variables cupo</a><span class="PARRAFO">|</span>
-          <span class="PARRAFO"><a href="SOH_001B6.html">Globo de localización</a></span></span>
-      </p>
+            </a><a href="SOH_001B3.html">Calificación</a><span
+              class="PARRAFO">|</span>
+            <span class="PARRAFO"><a href="SOH_001B4.html">Negación</a> |
+            </span><a href="SOH_005B4.html"><span class="PARRAFO"></span>
+            </a><a href="SOH_001B5.html">Variables cupo</a><span
+              class="PARRAFO">|</span>
+            <span class="PARRAFO"><a href="SOH_001B6.html">Globo de
+                localización</a></span></span>
+        </p>
 
-  </section>
-  <script src="../js/menu.js"></script>
+      </section>
+      <script src="../js/menu.js"></script>
 
-  <div id="footerContainer"></div>
-<script>
+      <div id="footerContainer"></div>
+      <script>
   fetch('footer.html')
     .then(response => response.text())
     .then(html => {
       document.getElementById('footerContainer').innerHTML = html;
     });
 </script>
-</body>
+    </body>
 
-</html>
+  </html>

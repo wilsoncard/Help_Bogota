@@ -4,7 +4,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>BANKBU®</title>
+  <title>OpencardWeb®</title>
   <link rel="stylesheet" href="../css/pages.css">
   <link rel="stylesheet" href="../css/style.css">
   <link rel="icon" href="../img/ACQUIRER-logo.JPG" type="image/x-icon">
@@ -31,33 +31,21 @@
     <div>    
       <p class=" TITLE">Origen de transacciones - Transacciones</p>
 
-      <p class="PARRAFO">En este formulario que se invoca desde el
-        hipervínculo Transacciones contenido en el formulario <a href="NUH_027B.html">orígenes
-          de transacciones</a> se registra la codificación y descripción
-        de las distintas transacciones válidas para cada uno de los orígenes,
-        relacionando para cada una, en caso de aplicar los costos asociados a la misma.</p>
+      <p class="PARRAFO">A través de este formulario invocado desde el enlace Transacciones,
+         contenido en el formulario <a href="NUH_027B.html">orígen
+          de transacciones</a>se registra la codificación y descripción de las
+           distintas transacciones válidas para cada uno de los orígenes, relacionando
+            para cada una, en caso de aplicar, los costos asociados a la misma. El
+             formulario contiene los enlaces:<a href="NUH_027B1.html#BL_MOTIVOS">Motivos de devolución, </a><a href="NUH_027B1.html#BL_CONTRACARGOS">Transacciones origen contracargos</a>
+             , Actualizar, Eliminar, Adicionar y Detalle. </p>
       <p class="TITLE"><img src="../img/NUF_027E4.PNG"></p>
 
-      <p class="PARRAFO">El formulario cuenta con un filtro mediante
-        el cual el usuario puede hacer consultas selectivas bien sea por el código
-        de la transacción original o la descripción de la misma.</p>
+      <p class="PARRAFO">El formulario cuenta con un filtro mediante el cual, se pueden hacer consultas selectivas, bien sea por el código de la transacción original o la descripción de la misma.</p>
       <p class="TITLE"><img src="../img/NUF_027E1.PNG"></p>
 
-      <p class="PARRAFO">El formulario contiene los enlaces: Actualizar,Eliminar, Adicionar y Detalle. El formulario también contiene los hipervínculos
-        <a href="NUH_027B1.html#BL_CONVENIOS"> Prevalidaciones convenio</a>,
-        <a href="NUH_027B1.html#BL_MOTIVOS"> Motivos de devolución</a>
-        y <a href="NUH_027B1.html#BL_CONTRACARGOS">Transacciones
-          origen contracargos</a> que le permiten a la entidad definir las características
-        propias y los parámetros adicionales que aplican para cada transacción
-        en particular seleccionada por el usuairo, transacción que a su vez
-        se encuentra asociada siempre a un origen específico.
-      </p>
+     
       <p class="PARRAFO"><span class="SUBTITULO">Adicionar:</span>
-        Al activar ese enlace se despliega un formulario
-        que se encuentra dividido en tres bloques de datos: Parámetros, Canje
-        internacional y Validaciones.</p>
-      <p class="PARRAFO">Al ingresar al formulario por defecto se despliega
-        siempre en el bloque Parámetros.</p>
+        Al activar ese enlace se despliega el siguiente formulario, el cual se encuentra dividido en tres bloques de datos: Parámetros, Canje internacional y Validaciones.</p>
       <p class="TITLE"><img src="../img/NUF_027E5.PNG"></p>
       <p class="TITLE">Descripción de campos</p>
       <table>
@@ -66,11 +54,8 @@
             <p class="SUBTITULO">Transacción</p>
           </td>
           <td>
-            <p class="PARRAFO">Campo
-              numérico de hasta 6 dígitos en el cual se registra el
-              código que identifica la transacción original que se está
-              parametrizando y para la que se definen las demás condiciones
-              del presente formulario.</p>
+            <p class="PARRAFO">	
+              Campo numérico de hasta 6 dígitos en el cual se registra el código que identifica la transacción original que se está parametrizando y para la que se definen las demás condiciones del presente formulario.</p>
           </td>
         </tr>
 
@@ -102,6 +87,17 @@
           </td>
         </tr>
 
+
+        <tr>
+          <td class="titletable">
+            <p class="SUBTITULO">Liquida
+                  comisión nacional</p>
+          </td>
+          <td>
+            <p class="PARRAFO">Campo que posee lista de valores tipo combo, permite seleccionar entre Si o No, la transacción debe generar liquidación de comisión dentro del canje nacional.</p>
+          </td>
+        </tr>
+
         <tr>
           <td class="titletable">
             <p class="SUBTITULO">Plazo
@@ -115,44 +111,24 @@
               o reclamación a la entidad contraparte.</p>
           </td>
         </tr>
-
-        <tr>
-          <td class="titletable">
-            <p class="SUBTITULO">Liquida
-                  comisión nacional</p>
-          </td>
-          <td>
-            <p class="PARRAFO">Esta
-              campo tipo combo permite seleccionar entre Si o No la transacción
-              debe generar liquidación de comisión dentro del canje
-              nacional.</p>
-          </td>
-        </tr>
-
-        <tr>
-          <td class="titletable">
-            <p class="SUBTITULO">Liquida
-                  comisión internacional</p>
-          </td>
-          <td>
-            <p class="PARRAFO">Campo
-              que contiene un combo en el cual se slecciona Si o No la transacción
-              debe generar liquidación de comisión dentro del canje
-              internacional.</p>
-          </td>
-        </tr>
-
+       
         <tr>
           <td class="titletable">
             <p class="SUBTITULO">Tipo
                   de documento</p>
           </td>
           <td>
-            <p class="PARRAFO">Este
-              campo tipo combo del cual se puede seleccionar entre Nota crédito,
-              Error de canje, Nota débito, Transacción no original
-              o Transacción origen el tipo de documento que soporta
-              la transacción.</p>
+            <p class="PARRAFO">	
+              Campo que posee lista de valores tipo combo, de la cual se puede seleccionar entre: Transacción original, Transacción no original, Nota débito, Error de canje o Nota crédito, el tipo de documento que soporta la transacción.</p>
+          </td>
+        </tr>
+        <tr>
+          <td class="titletable">
+            <p class="SUBTITULO">Liquida
+                  comisión internacional adquirente</p>
+          </td>
+          <td>
+            <p class="PARRAFO">Campo que posee lista de valores tipo combo, de la cual se selecciona entre Si o No, la transacción debe generar liquidación de comisión dentro del canje internacional.</p>
           </td>
         </tr>
 
@@ -165,7 +141,7 @@
             <p class="PARRAFO">Campo
               dise&ntilde;ado para uso futuro, que posee lista de valores de la que
               se puede seleccionar entre Suma o Resta la implicación que tiene
-              cada transacción dentro del canje enviado.</p>
+              cada transacción dentro del canje enviado.Campo diseñado para uso futuro, que posee lista de valores de la que se puede seleccionar entre Suma o Resta, la implicación que tiene cada transacción dentro del canje enviado.</p>
           </td>
         </tr>
 
@@ -174,10 +150,7 @@
             <p class="SUBTITULO">Naturaleza</p>
           </td>
           <td>
-            <p class="PARRAFO">Esta
-              campo obligatorio contiene un combo con las opciones Débito,
-              Crédito o No aplica para seleccionar la escencia
-              de la transacción según corresponda.</p>
+            <p class="PARRAFO">Campo obligatorio que posee lista de valores tipo combo con las opciones: No aplica, Débito o Crédito, para seleccionar la esencia de la transacción según corresponda.</p>
           </td>
         </tr>
 
@@ -186,45 +159,13 @@
             <p class="SUBTITULO">Concepto</p>
           </td>
           <td>
-            <p class="PARRAFO">Campo
-              con lista de valores en el cual se debe seleccionar el <a href="NUH_059B.html">concepto
-                de la transacción</a> de acuerdo con la forma en que ésta
-              afecta el saldo de la tarjeta.</p>
+            <p class="PARRAFO">Campo con lista de valores adjunta, de la cual se puede seleccionar el <a href="NUH_059B.html">concepto
+                de la transacción</a>, de acuerdo con la forma en que ésta afecta el saldo de la tarjeta.</p>
           </td>
         </tr>
 
-        <tr>
-          <td class="titletable">
-            <p class="SUBTITULO">Días
-                  aplica pago</p>
-          </td>
-          <td>
-            <p class="PARRAFO">En
-              este campo numérico la entidad se&ntilde;ala el número
-              de días que deben transcurrir para afectar la cuenta de los establecimientos
-              por los valores resultantes de los depósitos efectuados por éstos.</p>
-          </td>
-        </tr>
-
-        <tr>
-          <td class="titletable">
-            <p class="SUBTITULO">Porcentaje
-                  máximo iva</p>
-          </td>
-          <td>
-            <p class="PARRAFO">En
-              este campo numérico de 3 posiciones enteras y 2 decimales, la
-              entidad define el porcentaje de IVA que se autoriza liquidar como máximo
-              en los comprobantes de movimiento manual y electrónico, en donde
-              si el movimiento supera dicho parámetro se genera una <a href="NUH_016B.html">causal
-                de rechazo</a> enviándolo al destino definido por la misma
-              entidad.</p>
-          </td>
-        </tr>
       </table>
-      <p class="PARRAFO">El segundo bloque de datos del formulario adicionar
-        transacción se denomina Canje internacional y contiene los siguientes
-        campos</p>
+      <p class="PARRAFO">El segundo bloque de datos, Canje internacional contiene los siguientes campos:</p>
       <p class="TITLE"><img src="../img/NUF_027E6.PNG"></p>
       <p class="TITLE">Descripción de campos</p>
       <table>
@@ -262,8 +203,7 @@
           </td>
         </tr>
       </table>
-      <p class="PARRAFO">El tercer bloque de datos del formulario adicionar
-        transacción se denomina Validaciones y contiene los siguientes campos</p>
+      <p class="PARRAFO">El tercer bloque de datos se denomina Validaciones y contiene los siguientes campos:</p>
       <p class="TITLE"><img src="../img/NUF_027E7.PNG"></p>
       <p class="TITLE">Descripción de campos</p>
       <table>
@@ -272,14 +212,7 @@
             <p class="SUBTITULO">Procedimiento</p>
           </td>
           <td>
-            <p class="PARRAFO">Campo
-              con lista de valores en el cual se selecciona el programa que se va
-              a ejecutar como parte del proceso de validaciones a las que será
-              sometida la transacción original y de cuyo resultado depende
-              en últimas el destino de la misma. El sistema permite definir
-              hasta 20 validadores para una transacción los cuales serán
-              ejecutados exactamente en el mismo orden en el que son ingresados en
-              el formulario.</p>
+            <p class="PARRAFO">Campo con lista de valores en el cual se selecciona el programa que se va a ejecutar, como parte del proceso de validaciones a las que será sometida la transacción original, y de cuyo resultado depende en últimas el destino de la misma. El sistema permite definir hasta 20 validadores para una transacción, los cuales serán ejecutados exactamente en el mismo orden en el que son ingresados en el formulario.</p>
           </td>
         </tr>
 
@@ -288,106 +221,30 @@
             <p class="SUBTITULO">Indicador</p>
           </td>
           <td>
-            <p class="PARRAFO">Este
-              campo tipo combo cuenta con las opciones Ejecutar y No
-              ejecutar para indicarle al sistema si en el momento de validar
-              la transacción original asociada al origen, se debe aplicar o
-              no el validador.</p>
+            <p class="PARRAFO">Campo que posee lista de valores tipo combo, de la cual se selecciona entre: Ejecutar y No ejecutar, para indicarle al sistema si en el momento de validar la transacción original asociada al origen, se debe aplicar o no el validador.</p>
           </td>
         </tr>
       </table>
       <div>
         <p class="PARRAFO"><span class="SUBTITULO">
-              Actualizar</span>: Si el usuario selecciona un registro e invoca la
-          opción Actualizar se despliega un formulario en el cual el único
-          campo NO modificable es la Transacción.
+              Actualizar</span>: Al invocar ese enlace se despliega el siguiente formulario, en el cual el único campo no modificable es: Transacción.
         </p>
         <p class="TITLE"><img src="../img/NUF_027E8.PNG"></p>
         
         <p class="PARRAFO"><span class="SUBTITULO">Detalle</span>:
-          Si el usuario selecciona un registro e invoca la opción Detalle se
-          despliega un formulario con todos los datos del registro y en el cual ninguno
-          de sus campos es modificable</p>
+          Al activar ese enlace se despliega el siguiente formulario, con los datos del registro y en el cual ninguno de sus campos es modificable:</p>
         <p class="TITLE"><img src="../img/NUF_027E9.PNG"></p>
         
-        <p class="PARRAFO"><a name="BL_CONVENIOS"></a>Prevalidaciones
-            convenio : En este formulario se registran los diferentes validadores
+        <p class="PARRAFO"><a name="BL_CONVENIOS"></a><span class="SUBTITULO">Motivos de devolución:</span> En este formulario se permite asociar a cada transacción, los diversos conceptos o motivos que pueden argumentarse dentro de los archivos en que viaje la información de una transacción en proceso de intercambio o disputa. Estos motivos deben corresponder con los estándares definidos por las franquicias. El formulario contiene los enlaces: Actualizar, Eliminar y Adicionar. En este formulario se registran los diferentes validadores
           que aplican previamente a las transacciones de tarjetas que pertenecen a
           productos asociados a convenios. Los validadores aquí parametrizados
           aplican exclusivamente para el origen y transacción original seleccionados
           por el usuario al momento de invocar este formulario.correspondientes.</p>
         <p class="TITLE"><img src="../img/NUF_027E12.PNG"></p>
-
-        <p class="PARRAFO">El formulario contiene los enlaces: Actualizar,Eliminar y Adicionar.</p>
         <p class="PARRAFO"><span class="SUBTITULO">Adicionar:</span>
-
           Al activar ese enlace se despliega un formulario.
-
         </p>
         <p class="TITLE"><img src="../img/NUF_027E13.PNG"></p>
-        <p class="TITLE">Descripción de campos</p>
-        <table>
-          <tr>
-            <td class="titletable">
-              <p class="SUBTITULO">Procedimiento</p>
-            </td>
-            <td>
-              <p class="PARRAFO">Campo
-                con lista de valores en el cual se selecciona el programa que se va
-                a ejecutar como parte del proceso de validaciones a las que será
-                sometida la transacción original y de cuyo resultado depende
-                en últimas el destino de la misma.</p>
-            </td>
-          </tr>
-
-          <tr>
-            <td class="titletable">
-              <p class="SUBTITULO">Indicador</p>
-            </td>
-            <td>
-              <p class="PARRAFO">Este
-                campo tipo combo cuenta con las opciones Si y No para indicarle al
-                sistema si en el momento de validar la transacción original
-                asociada al origen, se debe aplicar o no el pre validador de convenio.</p>
-            </td>
-          </tr>
-
-          <tr>
-            <td class="titletable">
-              <p class="SUBTITULO">Causal</p>
-            </td>
-            <td>
-              <p class="PARRAFO">Campo
-                numérico de 4 dígitos, en el que se registra la <a href="NUH_095B.html">causal
-                  de rechazo de convenio</a> asociada con el validador y que se
-                le colocará a la transacción en caso que ésta
-                no supere este paso.</p>
-            </td>
-          </tr>
-        </table>
-
-        <p class="PARRAFO"><span class="SUBTITULO">Actualizar</span>:</span></span>
-            si el usuario selecciona un registro e invoca la opción Actualizar
-            se despliega un formulario en el cual los campos modificables son Indicador
-            y Causal. </p>
-        <p class="TITLE"><img src="../img/NUF_027E14.PNG"></p>
-
-
-        <p class="PARRAFO"><a name="BL_MOTIVOS"></a><SPAN class="SUBTITULO">Motivos
-            de devolución</span> : En este formulario se permite asociar a cada transacción
-          los diversos conceptos o motivos que pueden argumentarse dentro de los archivos
-          en que viaje la información de una transacción en proceso
-          de intercambio o disputa. Estos motivos deben corresponder con los estándares
-          definidos por las franquicias.</p>
-        <p class="TITLE"><img src="../img/NUF_027E15.PNG"></p>
-
-        <p class="PARRAFO">El formulario contiene los enlaces: Actualizar,Eliminar y Adicionar. También contiene el hipervínculo <a
-            href="NUH_027B1.html#BL_MOTI_RANGO">Motivos
-            por rango y plazo</a>.</p>
-        <p class="PARRAFO"><span class="SUBTITULO">Adicionar:</span>
-          Al activar ese enlace se despliega un formulario.
-        </p>
-        <p class="TITLE"><img src="../img/NUF_027E16.PNG"></p>
         <p class="TITLE">Descripción de campos</p>
         <table>
           <tr>
@@ -395,11 +252,8 @@
               <p class="SUBTITULO">Motivo</p>
             </td>
             <td>
-              <p class="PARRAFO">En
-                este campo numérico de 3 dígitos, obligatorio, se registra
-                el código que identifica el motivo por el cual una transacción
-                puede ser devuelta o presentada a reclamación (intercambio)
-                entre las entidades adquirente y emisora.</p>
+              <p class="PARRAFO">	
+                En este campo numérico de 3 dígitos, obligatorio, se registra el código que identifica el motivo por el cual una transacción puede ser devuelta o presentada a reclamación (intercambio) entre las entidades adquirente y emisora.</p>
             </td>
           </tr>
 
@@ -408,170 +262,70 @@
               <p class="SUBTITULO">Descripción</p>
             </td>
             <td>
-              <p class="PARRAFO">Campo
-                alfanumérico, obligatorio, que contiene el nombre o breve descriptivo
-                del motivo o concepto asociado al código anterior.</p>
+              <p class="PARRAFO">Campo alfanumérico, obligatorio, que contiene el nombre o breve descriptivo del motivo o concepto asociado al código anterior.</p>
+            </td>
+          </tr>
+        </table>
+
+        <p class="PARRAFO"><span class="SUBTITULO">Actualizar</span>:</span></span>
+          Al activar ese enlace se despliega el siguiente formulario, en el cual el único campo modificable es la Descripción: </p>
+        <p class="TITLE"><img src="../img/NUF_027E14.PNG"></p>
+
+
+        <p class="PARRAFO"><a name="BL_MOTIVOS"></a><SPAN class="SUBTITULO">Transacciones origen contracargos</span> : en este formulario se registra la información asociada con el proceso de contracargos, y en él se parametrizan las transacciones que es posible generar acorde con cada origen de movimiento y considerando el rol desempeñado por la entidad bien sea como emisor o adquirente. El formulario contiene los enlaces: Actualizar, Eliminar y Adicionar.</p>
+        <p class="TITLE"><img src="../img/NUF_027E15.PNG"></p>
+
+        <p class="PARRAFO">El formulario contiene los enlaces: Actualizar,Eliminar y Adicionar. También contiene el hipervínculo <a
+            href="NUH_027B1.html#BL_MOTI_RANGO">Motivos
+            por rango y plazo</a>.</p>
+        <p class="PARRAFO"><span class="SUBTITULO">Adicionar:</span>
+          Al activar ese enlace se despliega el siguiente formulario:
+        </p>
+        <p class="TITLE"><img src="../img/NUF_027E16.PNG"></p>
+        <p class="TITLE">Descripción de campos</p>
+        <table>
+          <tr>
+            <td class="titletable">
+              <p class="SUBTITULO">Origen requiere</p>
+            </td>
+            <td>
+              <p class="PARRAFO">	
+                Este campo obligatorio posee lista de valores de la cual debe seleccionarse el <a href="NUH_027B.html">origen</a> o fuente de movimiento a parametrizar.</p>
+            </td>
+          </tr>
+
+          <tr>
+            <td class="titletable">
+              <p class="SUBTITULO">Transaccion Origen requiere</p>
+            </td>
+            <td>
+              <p class="PARRAFO">Campo obligatorio con lista de valores que permite asociarle a cada origen o fuente, las diferentes transacciones que pueden ser invocadas o argumentadas, de acuerdo con la etapa o estado del proceso de contracargo.</p>
+            </td>
+          </tr>
+          <tr>
+            <td class="titletable">
+              <p class="SUBTITULO">Destino movimiento</p>
+            </td>
+            <td>
+              <p class="PARRAFO">Campo obligatorio que posee lista de valores tipo combo, de la que debe seleccionarse entre: Intercambio, Diario o Ambos, el destino que se le debe dar a las transacciones.</p>
+            </td>
+          </tr>
+
+          <tr>
+            <td class="titletable">
+              <p class="SUBTITULO">Rol entidad</p>
+            </td>
+            <td>
+            <p class="PARRAFO">	
+              Campo obligatorio que posee lista de valores tipo combo, de la que debe seleccionarse entre: Adquirente o Emisor, el rol o papel desempeñado por la entidad respecto de cada transacción y origen de la misma, el cual varía dependiendo de la etapa o fase en que se encuentre el proceso de contracargo.</p>
             </td>
           </tr>
         </table>
         <p class="PARRAFO"><span class="SUBTITULO">Actualizar</span>:</span></span>
-            si el usuario selecciona un registro e invoca la opción Actualizar
-            se despliega un formulario en el cual el único campo modificable
-            es la Descripción</span>.
+          Al activar ese enlace se despliega el siguiente formulario, en el cual los campos modificables son: Destino movimiento y Rol entidad.</span>
           </p>
-        <p class="TITLE"><img src="../img/NUF_027E17.PNG"></p>
-        <p class="PARRAFO"><a name="BL_MOTI_RANGO"></a><span class="SUBTITULO">Motivos
-            por rango y plazo</span> : En este formulario se definen las condiciones para
-          validar los plazos de intercambio de movimiento que ha sido asociado a algún
-          motivo de devolución. Es importante tener presente que la información
-          ingresada en este formulario aplica para el origen, transacción
-          original y motivo devolución seleccionados por el usuario.</p>
-        <p class="TITLE"><img src="../img/NUF_027E18.PNG"></p>
-
-        <p class="PARRAFO">El formulario contiene los enlaces: Actualizar,Eliminar y Adicionar.</p>
-        <p class="PARRAFO"><span class="SUBTITULO">Adicionar</span>:</span></span>
-            Al activar ese enlace se despliega un formulario.
-          </span>
-        </p>
-        <p class="TITLE"><img src="../img/NUF_027E19.PNG"></p>
-        <p class="TITLE">Descripción de campos</p>
-        <table>
-          <tr>
-            <td class="titletable">
-              <p class="SUBTITULO">Marca</p>
-            </td>
-            <td>
-              <p class="PARRAFO">Campo
-                obligatorio que contiene una lista de valores de la cual se selecciona
-                la <a href="NUH_033B.html">franquicia</a> sobre
-                la cual se definirán las condiciones de validación de
-                plazos para intercambio de acuerdo con el motivo de devolución.</p>
-            </td>
-          </tr>
-
-          <tr>
-            <td class="titletable">
-              <p class="SUBTITULO">Rango
-                    inicial </p>
-            </td>
-            <td>
-              <p class="PARRAFO">En
-                este campo numérico de 14 posiciones enteras y 2 decimales,
-                obligatorio, se define el monto de la transacción a partir
-                del cual se validará el plazo para intercambio.</p>
-            </td>
-          </tr>
-
-          <tr>
-            <td class="titletable">
-              <p class="SUBTITULO">Rango
-                    final </p>
-            </td>
-            <td>
-              <p class="PARRAFO">Campo
-                numérico de 16 posiciones enteras y 2 decimales, obligatorio,
-                en el cual se define el monto final de la transacción hasta
-                el cual se validará el plazo para intercambio.</p>
-            </td>
-          </tr>
-
-          <tr>
-            <td class="titletable">
-              <p class="SUBTITULO">Plazo</p>
-            </td>
-            <td>
-              <p class="PARRAFO">En
-                este campo obligatorio, se define el tiempo asignado al comprobante
-                para la validación del plazo de intercambio. Este parámetro
-                aplica cuando en el campo Plazo intercambio de los <a href="NUH_055B.html">parámetros
-                  operativos</a> se ha seleccionado la opción Motivo.</p>
-            </td>
-          </tr>
-        </table>
-
-        <p class="PARRAFO"><span class="SUBTITULO">Actualizar</span>:</span></span>
-            si el usuario selecciona un registro e invoca la opción Actualizar
-            se despliega un formulario en el cual los campos modificables son Rango
-            inicial, Rango final y Plazo</p>
-        <p class="TITLE"><img src="../img/NUF_027E20.PNG"></p>
-
-
-        <p class="PARRAFO"><a name="BL_CONTRACARGOS"></a><span class="SUBTITULO">Transacciones
-            origen contracargos</span> : en este formulario se registra la información
-          asociada con el proceso de contracargos, y en él se parametrizan
-          las transacciones que es posible generar acorde con cada origen de movimiento
-          y considerando el rol desempe&ntilde;ado por la entidad bien sea como emisor
-          o adquirente.</p>
-        <p class="TITLE"><img src="../img/NUF_027E21.PNG"></p>
-
-        <p class="PARRAFO">El formulario contiene los enlaces: Actualizar,Eliminar y Adicionar.</p>
-        <p class="PARRAFO"><span class="SUBTITULO">Adicionar</span>:</span></span>
-            Al activar ese enlace se despliega un formulario.
-          </span>
-        </p>
-        <p class="TITLE"><img src="../img/NUF_027E22.PNG"></p>
-        <p class="TITLE">Descripción de campos</p>
-        <table>
-          <tr>
-            <td class="titletable">
-              <p class="SUBTITULO">Origen
-                    requiere </p>
-            </td>
-            <td>
-              <p class="PARRAFO">Este
-                campo obligatorio posee lista de valores de la cual debe seleccionarse
-                el <a href="NUH_027B.html">origen</a> o fuente
-                de movimiento a parametrizar.</p>
-            </td>
-          </tr>
-
-          <tr>
-            <td class="titletable">
-              <p class="SUBTITULO">Transacción
-                    origen requiere</p>
-            </td>
-            <td>
-              <p class="PARRAFO">Campo
-                obligatorio con ista de valores que permite asociarle a cada origen
-                o fuente, las diferentes <a href="NUH_027B1.html">transacciones</a>
-                que pueden ser invocadas o argumentadas, de acuerdo con la etapa o
-                estado del proceso de contracargo.</p>
-            </td>
-          </tr>
-
-          <tr>
-            <td class="titletable">
-              <p class="SUBTITULO">Destino
-                    movimiento </p>
-            </td>
-            <td>
-              <p class="PARRAFO">En
-                este campo obligatorio tipo combo que contiene los enlaces:Diario,
-                Intercambio o Ambas la entidad puede seleccionar el
-                destino que se le debe dar a las transacciones. </p>
-            </td>
-          </tr>
-
-          <tr>
-            <td class="titletable">
-              <p class="SUBTITULO">Rol
-                    entidad </p>
-            </td>
-            <td>
-              <p class="PARRAFO">Campo
-                obligatorio que contiene los enlaces:Emisor o Adquirente
-                y en el cual se selecciona el rol o papel desempe&ntilde;ado por la
-                entidad respecto de cada transacción y origen de la misma,
-                el cual varía dependiendo de la etapa o fase en que se encuentre
-                el proceso de contracargo.</p>
-            </td>
-          </tr>
-        </table>
-        <p class="PARRAFO"><span class="SUBTITULO">Actualizar</span>:</span></span>
-            si el usuario selecciona un registro e invoca la opción Actualizar
-            se despliega un formulario en el cual los campos modificables son Destino
-            movimiento y Rol entidad. </p>
-        <p class="TITLE"><img src="../img/NUF_027E23.PNG"></p>
+          <p class="TITLE"><img src="../img/NUH_027B1a1.PNG"></p>
+     
   </section>
   <script src="../js/menu.js"></script>
 </body>

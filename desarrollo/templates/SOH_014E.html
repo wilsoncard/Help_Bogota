@@ -1,24 +1,25 @@
 <!DOCTYPE html>
 <html lang="es">
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>BANKBU®</title>
-    <link rel="stylesheet" href="../css/pages.css">
-    <link rel="stylesheet" href="../css/style.css">
-    <link rel="icon" href="../img/ACQUIRER-logo.JPG" type="image/x-icon">
-</head>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>OpencardWeb®</title>
+        <link rel="stylesheet" href="../css/pages.css">
+        <link rel="stylesheet" href="../css/style.css">
+        <link rel="icon" href="../img/ACQUIRER-logo.JPG" type="image/x-icon">
+    </head>
 
-<body>
-    <header>
-        <img class="logo" src="../img/logoBankbu_.PNG" alt="Logo de Mi Empresa">
-        <div id="menuBtn">
-            <img class="TITLE" src="../img/menu.PNG" alt="Botón de Menú ">
-        </div>
-    </header>
-      <div id="menuContainer"></div>
-  <script>
+    <body>
+        <header>
+            <img class="logo" src="../img/logoBankbu_.PNG"
+                alt="Logo de Mi Empresa">
+            <div id="menuBtn">
+                <img class="TITLE" src="../img/menu.PNG" alt="Botón de Menú ">
+            </div>
+        </header>
+        <div id="menuContainer"></div>
+        <script>
     fetch('menu.html')
       .then(response => response.text())
       .then(html => {
@@ -26,261 +27,349 @@
       });
   </script>
 
-    <section>
+        <section>
 
-        <div>
-            <p class="TITLE">Renovación crédito</p>
+            <div>
+                <p class="TITLE">Renovación crédito</p>
 
+                <p class="PARRAFO">Cuando se trata de una solicitud de
+                    Renovación la entidad efectúa el cambio de la fecha
+                    de
+                    vencimiento de una tarjeta que aún no ha expirado, pero que
+                    por alguna razón el cliente requiere que
+                    esta
+                    fecha de vencimiento sea modificada antes del proceso normal
+                    de renovación masiva que realiza la
+                    entidad;
+                    dependiendo si el producto emite o no plástico, éste se
+                    genera o no para la tarjeta renovada. Es
+                    conveniente
+                    tener en cuenta que para permitir ingresar la solicitud de
+                    renovación el sistema controla entre otros
+                    datos
+                    que el estado actual de la tarjeta no impida esta acción,
+                    pero NO efectúa ninguna validación con
+                    relación a
+                    la fecha de vencimiento de la tarjeta a renovar y es el
+                    usuario quien debe determinar de acuerdo con las
+                    políticas de la entidad si se justifica o no autorizar dicha
+                    renovación, por ejemplo con productos para
+                    cuyo vencimiento falten todavía 6 meses o más.</p>
 
-            <p class="PARRAFO">Cuando se trata de una solicitud de Renovación la entidad efectúa el cambio de la fecha
-                de
-                vencimiento de una tarjeta que aún no ha expirado, pero que por alguna razón el cliente requiere que
-                esta
-                fecha de vencimiento sea modificada antes del proceso normal de renovación masiva que realiza la
-                entidad;
-                dependiendo si el producto emite o no plástico, éste se genera o no para la tarjeta renovada. Es
-                conveniente
-                tener en cuenta que para permitir ingresar la solicitud de renovación el sistema controla entre otros
-                datos
-                que el estado actual de la tarjeta no impida esta acción, pero NO efectúa ninguna validación con
-                relación a
-                la fecha de vencimiento de la tarjeta a renovar y es el usuario quien debe determinar de acuerdo con las
-                políticas de la entidad si se justifica o no autorizar dicha renovación, por ejemplo con productos para
-                cuyo vencimiento falten todavía 6 meses o más.</p>
+                <p class="PARRAFO">Los campos Tarjeta nueva y Fecha vencimiento
+                    despliegan información una vez la solicitud
+                    ha
+                    surtido la etapa de Aprobación.</p>
 
+                <p class="PARRAFO">En el formulario de Ingreso de solicitudes se
+                    selecciona la opción Renovación crédito y
+                    la
+                    tarjeta a la cual se le ingresará la solicitud</p>
+                <p class="TITLE"><img src="../img/SOF_014E0.PNG"></p>
 
-            <p class="PARRAFO">Los campos Tarjeta nueva y Fecha vencimiento despliegan información una vez la solicitud
-                ha
-                surtido la etapa de Aprobación.</p>
-
-            <p class="PARRAFO">En el formulario de Ingreso de solicitudes se selecciona la opción Renovación crédito y
-                la
-                tarjeta a la cual se le ingresará la solicitud</p>
-            <p class="TITLE"><img src="../img/SOF_014E0.PNG"></p>
-
-            <table>
-                <td class="titletable">
-                    <p class="PARRAFO"><span class="SUBTITULO">Tarjeta</p>
-                </td>
-                <td>
-                    <p class="PARRAFO">Campo con lista de valores que contiene los diferentes números de tarjeta del
-                        cliente.
-                        El usuario debe seleccionar aquella para la cual se desea solicitar la Renovación.</p>
-                </td>
-            </table>
-            <p class="PARRAFO"><span class="SUBTITULO"> Adicionar:</span>  una vez se han seleccionado los datos anteriores, se deplegará un wizard de
-                dos pasos.
-                El primero de ellos contiene los bloques Información general y <a href="#Negacion"> Motivos de
-                    negación:</a></p>
-            <p class="TITLE"><img src="../img/SOF_014B3.PNG"></p>
-
-            <table>
-                <tr>
+                <table>
                     <td class="titletable">
-                        <p class="SUBTITULO">Cliente</p>
-                    </td>
-                    <td>
-                        <p class="PARRAFO">Campo de salida desde el cual se podrá invocar la consulta del cliente
-                            al cual se le está ingresando la solicitud. </p>
-                    </td>
-                </tr>
-                <tr>
-                    <td class="titletable">
-                        <p class="SUBTITULO">Número tarjeta </p>
-                    </td>
-                    <td>
-                        <p class="PARRAFO">Campo de salida desde el cual se podrá invocar la consulta de tarjeta
-                            del cliente al cual se le está ingresando la solicitud. </p>
-                    </td>
-                </tr>
-                <tr>
-                    <td class="titletable">
-                        <p class="SUBTITULO">Producto</p>
-                    </td>
-                    <td>
-                        <p class="PARRAFO">Estos campos se llenan automáticamente una vez ingresado el
-                            número de tarjeta asociado a la solicitud, permitiendo conocer el Segmento,
-                            Grupo de afinidad y Descripción que junto con el Bin
-                            conforman el producto <A href="DBH_018E.html"></A><A
-                                    href="MEH_002B.html">crédito</A> a reponer.</p>
-                    </td>
-                </tr>
-                <tr>
-                    <td class="titletable">
-                        <p class="SUBTITULO">Marca</p>
-                    </td>
-                    <td>
-                        <p class="PARRAFO">Campo de salida que ilustra la <A
-                                        href="NUH_033B.html">franquicia</A> asociada al producto en la
-                                Definición del producto.</p>
-                    </td>
-                </tr>
-                <tr>
-                    <td class="titletable">
-                        <p class="SUBTITULO"><strong>Fecha Vencimiento</p>
-                    </td>
-                    <td>
-                        <p class="PARRAFO">Campo de salida en formato YYYY-MM-DD, que indica la fecha en que
-                                expirará el nuevo plástico de la tarjeta, cuando se ha parametrizado que
-                                el sistema deba calcular una nueva fecha de vencimiento.</p>
-                    </td>
-                </tr>
-                <tr>
-                    <td class="titletable">
-                        <p class="SUBTITULO">Posee plástico </p>
-                    </td>
-                    <td>
-                        <p class="PARRAFO">Este campo de acuerdo con lo parametrizado a nivel de producto, bien
-                            sea <A href="MEH_002B.html">crédito</A>, determina si se genera un
-                            plástico a modo de materialización del producto asociado a la tarjeta desde la
-                            cual se genera la solicitud. Si esta casilla aparece marcada (activa) permite interactuar
-                            con el campo Emite plástico.</p>
-                    </td>
-                </tr>
-                <tr>
-                    <td class="titletable">
-                        <p class="SUBTITULO">Emite plástico </p>
-                    </td>
-                    <td>
-                        <p class="PARRAFO">En este campo con lista de valores adjunta se debe seleccionar entre
-                            Si se emite plástico o No, dependiendo del tipo de solicitud.
-                            El poder interactuar con este campo depende del valor que tenga el campo Posee
-                                plástico.</p>
-                    </td>
-                </tr>
-                <tr>
-                    <td class="titletable">
-                        <p class="SUBTITULO">Foto del cliente </p>
-                    </td>
-                    <td>
-                        <p class="PARRAFO">Campo que posee lista de valores adjunta en la que es posible indicar
-                            Si o No el nuevo plástico incluirá la foto del cliente, de
-                            acuerdo con lo parametrizado para cada producto en particular.</p>
-                    </td>
-                </tr>
-                <tr>
-                    <td class="titletable"><p class="SUBTITULO"> Número CDT </p></td>
-                    <td><p class="PARRAFO"> En este campo, en caso de aplicar, se indica el número que identifica el C.D.T. que
-                        garantiza la obligación.</p></td>
-                </tr>
-                <tr>
-                    <td class="titletable">
-                        <p class="SUBTITULO">Oficina CDT </p>
-                    </td>
-                    <td>
-                        <p class="PARRAFO">En este campo se selecciona de la lista de valores la <A
-                                    href="NUH_020B.html">sucursal</A> en la que se efectuó la apertura del
-                            C.D.T. para garantizar la obligación, siempre y cuando aplique para el producto en
-                            particular.</p>
-                    </td>
-                </tr>
-                <tr>
-                    <td class="titletable">
-                        <p class="SUBTITULO">Monto CDT </p>
-                    </td>
-                    <td>
-                        <p class="PARRAFO">Campo, que si aplica, debe contener el valor inicial del C.D.T. que garantiza
-                            la obligación.</p>
-                    </td>
-                </tr>
-                <tr>
-                    <td class="titletable">
-                        <p class="SUBTITULO">Plazo CDT </p>
-                    </td>
-                    <td>
-                        <p class="PARRAFO">Campo que en caso de aplicar, debe contener el plazo inicial del C.D.T. que
-                            garantiza la obligación.</p>
-                    </td>
-                </tr>
-                <tr>
-                    <td class="titletable">
-                        <p class="SUBTITULO">Fecha apertura CDT </p>
-                    </td>
-                    <td>
-                        <p class="PARRAFO">En este campo, en caso de aplicar, se registra la fecha en que se constituye
-                            el C.D.T. que garantiza la obligación.</p>
-                    </td>
-                </tr>
-                <tr>
-                    <td class="titletable"><p class="SUBTITULO"> Fecha vencimiento CDT</p></td>
-                    <td>
-                        <p class="PARRAFO">Campo, que en caso de aplicar, debe contener la fecha en que expira el C.D.T.
-                            que garantiza la obligación.</p>
-                    </td>
-                </tr>
-                <tr>
-                    <td class="titletable">
-                        <p class="SUBTITULO">Estado solicitd </p>
-                    </td>
-                    <td>
-                        <p class="PARRAFO">Este campo ilustra la condición en que se encuentra la solicitud en
-                            cada momento, y que puede ser <em class="PARRAFO">En zona gris, Negada totalmente, Negada
-                                parcialmente, Aprobada totalmente o Aprobada parcialmente.</p>
-                    </td>
-                </tr>
-                <tr>
-                    <td class="titletable"><p class="SUBTITULO">Anexos</p></td>
-                    <td>
-                        <p class="PARRAFO">Campo que permite ingresar información relacionada con la solicitud,
-                            referente a documentos suministrados por el cliente u otros datos.</p>
-                    </td>
-                </tr>
-            </table>
-            <p class="PARRAFO"><a name="Negacion"></a></p>
-            <p class="TITLE"><img src="../img/SOF_014B4.2.PNG"></p>
+                        <p class="PARRAFO"><span class="SUBTITULO">Tarjeta</p>
+                        </td>
+                        <td>
+                            <p class="PARRAFO">Campo con lista de valores que
+                                contiene los diferentes números de tarjeta del
+                                cliente.
+                                El usuario debe seleccionar aquella para la cual
+                                se desea solicitar la Renovación.</p>
+                        </td>
+                    </table>
+                    <p class="PARRAFO"><span class="SUBTITULO">
+                            Adicionar:</span> una vez se han seleccionado los
+                        datos anteriores, se deplegará un wizard de
+                        dos pasos.
+                        El primero de ellos contiene los bloques Información
+                        general y <a href="#Negacion"> Motivos de
+                            negación:</a></p>
+                    <p class="TITLE"><img src="../img/SOF_014B3.PNG"></p>
 
-            <table>
-                <tr>
-                    <td class="titletable">
-                        <p class="SUBTITULO">Motivo
-                            negación </p>
-                    </td>
-                    <td>
-                        <p class="PARRAFO">Si
-                            aplica, contiene el código y la descripción de la causal
-                            de negación de la solicitud.</p>
-                    </td>
-                </tr>
-                <tr>
-                    <td class="titletable"><p class="SUBTITULO"> Observaciones
-                        negación </p></td>
-                    <td>
-                        <p class="PARRAFO">Campo
-                            que puede contener notas que ilustren las razones por las cuales fue
-                            denegada la solicitud.</p>
-                    </td>
-                </tr>
-            </table>
+                    <table>
+                        <tr>
+                            <td class="titletable">
+                                <p class="SUBTITULO">Cliente</p>
+                            </td>
+                            <td>
+                                <p class="PARRAFO">Campo de salida desde el cual
+                                    se podrá invocar la consulta del cliente
+                                    al cual se le está ingresando la solicitud.
+                                </p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="titletable">
+                                <p class="SUBTITULO">Número tarjeta </p>
+                            </td>
+                            <td>
+                                <p class="PARRAFO">Campo de salida desde el cual
+                                    se podrá invocar la consulta de tarjeta
+                                    del cliente al cual se le está ingresando la
+                                    solicitud. </p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="titletable">
+                                <p class="SUBTITULO">Producto</p>
+                            </td>
+                            <td>
+                                <p class="PARRAFO">Estos campos se llenan
+                                    automáticamente una vez ingresado el
+                                    número de tarjeta asociado a la solicitud,
+                                    permitiendo conocer el Segmento,
+                                    Grupo de afinidad y Descripción que junto
+                                    con el Bin
+                                    conforman el producto <a
+                                        href="DBH_018E.html"></a><a
+                                        href="MEH_002B.html">crédito</a> a
+                                    reponer.</p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="titletable">
+                                <p class="SUBTITULO">Marca</p>
+                            </td>
+                            <td>
+                                <p class="PARRAFO">Campo de salida que ilustra
+                                    la <a
+                                        href="NUH_033B.html">franquicia</a>
+                                    asociada al producto en la
+                                    Definición del producto.</p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="titletable">
+                                <p class="SUBTITULO"><strong>Fecha
+                                        Vencimiento</p>
+                                </td>
+                                <td>
+                                    <p class="PARRAFO">Campo de salida en
+                                        formato YYYY-MM-DD, que indica la fecha
+                                        en que
+                                        expirará el nuevo plástico de la
+                                        tarjeta, cuando se ha parametrizado que
+                                        el sistema deba calcular una nueva fecha
+                                        de vencimiento.</p>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="titletable">
+                                    <p class="SUBTITULO">Posee plástico </p>
+                                </td>
+                                <td>
+                                    <p class="PARRAFO">Este campo de acuerdo con
+                                        lo parametrizado a nivel de producto,
+                                        bien
+                                        sea <a href="MEH_002B.html">crédito</a>,
+                                        determina si se genera un
+                                        plástico a modo de materialización del
+                                        producto asociado a la tarjeta desde la
+                                        cual se genera la solicitud. Si esta
+                                        casilla aparece marcada (activa) permite
+                                        interactuar
+                                        con el campo Emite plástico.</p>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="titletable">
+                                    <p class="SUBTITULO">Emite plástico </p>
+                                </td>
+                                <td>
+                                    <p class="PARRAFO">En este campo con lista
+                                        de valores adjunta se debe seleccionar
+                                        entre
+                                        Si se emite plástico o No, dependiendo
+                                        del tipo de solicitud.
+                                        El poder interactuar con este campo
+                                        depende del valor que tenga el campo
+                                        Posee
+                                        plástico.</p>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="titletable">
+                                    <p class="SUBTITULO">Foto del cliente </p>
+                                </td>
+                                <td>
+                                    <p class="PARRAFO">Campo que posee lista de
+                                        valores adjunta en la que es posible
+                                        indicar
+                                        Si o No el nuevo plástico incluirá la
+                                        foto del cliente, de
+                                        acuerdo con lo parametrizado para cada
+                                        producto en particular.</p>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="titletable"><p class="SUBTITULO">
+                                        Número CDT </p></td>
+                                <td><p class="PARRAFO"> En este campo, en caso
+                                        de aplicar, se indica el número que
+                                        identifica el C.D.T. que
+                                        garantiza la obligación.</p></td>
+                            </tr>
+                            <tr>
+                                <td class="titletable">
+                                    <p class="SUBTITULO">Oficina CDT </p>
+                                </td>
+                                <td>
+                                    <p class="PARRAFO">En este campo se
+                                        selecciona de la lista de valores la <a
+                                            href="NUH_020B.html">sucursal</a> en
+                                        la que se efectuó la apertura del
+                                        C.D.T. para garantizar la obligación,
+                                        siempre y cuando aplique para el
+                                        producto en
+                                        particular.</p>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="titletable">
+                                    <p class="SUBTITULO">Monto CDT </p>
+                                </td>
+                                <td>
+                                    <p class="PARRAFO">Campo, que si aplica,
+                                        debe contener el valor inicial del
+                                        C.D.T. que garantiza
+                                        la obligación.</p>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="titletable">
+                                    <p class="SUBTITULO">Plazo CDT </p>
+                                </td>
+                                <td>
+                                    <p class="PARRAFO">Campo que en caso de
+                                        aplicar, debe contener el plazo inicial
+                                        del C.D.T. que
+                                        garantiza la obligación.</p>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="titletable">
+                                    <p class="SUBTITULO">Fecha apertura CDT </p>
+                                </td>
+                                <td>
+                                    <p class="PARRAFO">En este campo, en caso de
+                                        aplicar, se registra la fecha en que se
+                                        constituye
+                                        el C.D.T. que garantiza la
+                                        obligación.</p>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="titletable"><p class="SUBTITULO">
+                                        Fecha vencimiento CDT</p></td>
+                                <td>
+                                    <p class="PARRAFO">Campo, que en caso de
+                                        aplicar, debe contener la fecha en que
+                                        expira el C.D.T.
+                                        que garantiza la obligación.</p>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="titletable">
+                                    <p class="SUBTITULO">Estado solicitd </p>
+                                </td>
+                                <td>
+                                    <p class="PARRAFO">Este campo ilustra la
+                                        condición en que se encuentra la
+                                        solicitud en
+                                        cada momento, y que puede ser <em
+                                            class="PARRAFO">En zona gris, Negada
+                                            totalmente, Negada
+                                            parcialmente, Aprobada totalmente o
+                                            Aprobada parcialmente.</p>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="titletable"><p
+                                            class="SUBTITULO">Anexos</p></td>
+                                    <td>
+                                        <p class="PARRAFO">Campo que permite
+                                            ingresar información relacionada con
+                                            la solicitud,
+                                            referente a documentos suministrados
+                                            por el cliente u otros datos.</p>
+                                    </td>
+                                </tr>
+                            </table>
+                            <p class="PARRAFO"><a name="Negacion"></a></p>
+                            <p class="TITLE"><img
+                                    src="../img/SOF_014B4.2.PNG"></p>
 
-            <p class="PARRAFO"><span class="PARRAFO">A través de los
-                    botones de la parte inferior derecha, se podrá cancelar el proceso
-                    o ir al segundo paso del wizard: <a href="SOH_014B1b.html">Documentos</a></span><span
-                    class="PARRAFO"></p>
+                            <table>
+                                <tr>
+                                    <td class="titletable">
+                                        <p class="SUBTITULO">Motivo
+                                            negación </p>
+                                    </td>
+                                    <td>
+                                        <p class="PARRAFO">Si
+                                            aplica, contiene el código y la
+                                            descripción de la causal
+                                            de negación de la solicitud.</p>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="titletable"><p class="SUBTITULO">
+                                            Observaciones
+                                            negación </p></td>
+                                    <td>
+                                        <p class="PARRAFO">Campo
+                                            que puede contener notas que
+                                            ilustren las razones por las cuales
+                                            fue
+                                            denegada la solicitud.</p>
+                                    </td>
+                                </tr>
+                            </table>
 
-            <p class="PARRAFO"><span class="SUBTITULO">Actualizar:</span> 
-                Si en formulario del ingreso de solicitudes el usuario invoca la opción
-                Actualizar, se despliega el siguiente formulario.</p>
-            <p  class="TITLE"><img src="../img/SOF_014B4.3.PNG"></p>
+                            <p class="PARRAFO"><span class="PARRAFO">A través de
+                                    los
+                                    botones de la parte inferior derecha, se
+                                    podrá cancelar el proceso
+                                    o ir al segundo paso del wizard: <a
+                                        href="SOH_014B1b.html">Documentos</a></span><span
+                                    class="PARRAFO"></p>
 
-            <p class="PARRAFO"><span class="SUBTITULO">Detalle:</span><span class="PARRAFO"> De igual forma, si </span> en formulario del ingreso de
-                solicitudes el usuario invoca la opción Detalle, se despliega el siguiente formulario. 
+                                <p class="PARRAFO"><span
+                                        class="SUBTITULO">Actualizar:</span>
+                                    Si en formulario del ingreso de solicitudes
+                                    el usuario invoca la opción
+                                    Actualizar, se despliega el siguiente
+                                    formulario.</p>
+                                <p class="TITLE"><img
+                                        src="../img/SOF_014B4.3.PNG"></p>
 
-                </p>
-            <p  class="TITLE"><img src="../img/SOF_014B4.4.PNG"></p>
+                                <p class="PARRAFO"><span
+                                        class="SUBTITULO">Detalle:</span><span
+                                        class="PARRAFO"> De igual forma, si
+                                    </span> en formulario del ingreso de
+                                    solicitudes el usuario invoca la opción
+                                    Detalle, se despliega el siguiente
+                                    formulario.
 
-        </div>
+                                </p>
+                                <p class="TITLE"><img
+                                        src="../img/SOF_014B4.4.PNG"></p>
 
-    </section>
-    <script src="../js/menu.js"></script>
+                            </div>
 
-    <div id="footerContainer"></div>
-<script>
+                        </section>
+                        <script src="../js/menu.js"></script>
+
+                        <div id="footerContainer"></div>
+                        <script>
   fetch('footer.html')
     .then(response => response.text())
     .then(html => {
       document.getElementById('footerContainer').innerHTML = html;
     });
 </script>
-</body>
+                    </body>
 
-</html>
+                </html>

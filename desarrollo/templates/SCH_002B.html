@@ -4,7 +4,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>BANKBU®</title>
+  <title>OpencardWeb®</title>
   <link rel="stylesheet" href="../css/pages.css">
   <link rel="stylesheet" href="../css/style.css">
   <link rel="icon" href="../img/ACQUIRER-logo.JPG" type="image/x-icon">
@@ -31,38 +31,14 @@
       
        <p class="TITLE">Datos del cliente</p>
 
-      <p class="PARRAFO">Esta es una de los principales formularios
-        a los que se puede acceder desde la opción <a href="SCH_001B.html">Consulta
-            clientes</a> contenida en el core y desde cualquier de los hipervínculos
-        contenidos en los diferentes formularios del aplicativo habilitados para permitir
-        consultar la información de un clinete. Esta opción contiene
-        la información básica de todos los clientes de la entidad bien
-        sea potenciales o efectivos, personas naturales o jurídicas, con lo
-        cual la entidad o corporación puede realizar gestiones de mercadeo
-        tales como segmentaciones o campa&ntilde;as comerciales.</p>
-      <p class="PARRAFO">La opción está compuesta por
-        una serie de formularios en los cuales se despliega de manera ordenada y agrupada
-        la información principal del cliente. Por defecto, al ingresar a esta
-        opción el primer formulario que se muestra es el de información
-        general el que contiene los hipervínculos <a href="SCH_002B.html#BL_REFERENCIAS">Referencias</a>,
-          <a href="SCH_002B.html#BL_FINANCIERA">Financiera</a>, <a href="SCH_002B.html#BL_SALDOS">Saldos</a>,
-          <a href="SCH_002B.html#BL_NOVEDADES">Novedades</a>, <a href="SCH_002B.html#BL_TARJETAS">Tarjetas</a>,
-          <a href="SCH_002B.html#BL_SOLICITUDES">Solicitudes</a> y <a
-            href="SCH_002B.html#BL_CALIFICACIONES">Calificaciones</a>
-        que permiten hacer el llamado de los restantes formularios que componen la
-        opción de datos del cliente.</p>
+      <p class="PARRAFO">Este es uno de los principales formularios a los que se puede acceder desde la opción <a href="SCH_001B.html">Consulta
+            clientes</a>, ubicada en el Núcleo, o desde cualquiera de los enlaces habilitados en los diferentes formularios del aplicativo para permitir consultar la información de un cliente. Esta opción contiene información básica de los clientes de la entidad, personas naturales o jurídicas, bien sea potenciales o efectivos.</p>
+      <p class="PARRAFO">El formulario invocado desde el Núcleo dispone de enlaces a:<a href="SCH_002B.html#BL_RELACIONES">Relaciones personales,</a>
+        <a href="SCH_002B.html#BL_NOVEDADES">Novedades,</a><a href="SCH_002B.html#BL_SOLICITUDES">Solicitudes</a>  y<a href="SCH_002B.html#BL_TARJETAS"> Tarjetas,</a>  en los cuales se despliega de manera ordenada y agrupada la información principal del cliente. Mientras que, si es invocado desde el Emisor DB, inicialmente solo dispone de enlaces a: Detalle y<a href="SCH_002B.html#BL_TARJETAS"> Tarjetas.</a> Por defecto, al ingresar a esta opción, el primer formulario que aparece es el de información General, sin embargo, al activar el enlace Detalle, se muestran los mismos enlaces y contenido que los exhibidos desde el Núcleo.</p>
 
-      <p class="PARRAFO">Información
-        general: este formulario despliega los datos básicos
-        de identificación e información particular y/o exclusiva de
-        cada cliente o tarjetahabiente, y según se trate de una persona natural
-        o jurídica muestra un grupo de datos diferente para cada una de ellas.
-        El formulario contiene adicionalmente un bloque de datos con la información
-        de las <a href="SCH_002B.html#BL_DIRECCIONES">direcciones</a>
+      <p class="PARRAFO"><span class="SUBTITULO">General:</span>  este formulario despliega los datos básicos de identificación e información particular y/o exclusiva de cada cliente o tarjetahabiente, y según se trate de una persona natural o jurídica, muestra un grupo de datos diferente para cada una de ellas. El formulario contiene, adicionalmente, un bloque de datos con la información de las <a href="SCH_002B.html#BL_DIRECCIONES">Direcciones</a>
         del cliente.</p>
-      <p class="PARRAFO">Personas naturales:
-        si el cliente que se desea consultar es tipo de persona natural, el formulario
-        desplegado es el siguiente.</p>
+      <p class="PARRAFO"><span class="SUBTITULO">Persona:</span>  Natural, se ilustra el formulario desplegado. Si el enlace es invocado desde la Consulta clientes tarjeta débito en el Emisor DB, se muestra la misma información al activar el enlace Detalle.</p>
       <p class="TITLE"><img src="../img/SCF_002E.PNG"></p>
 
       <p class="TITLE">Descripción de campos</p>
@@ -73,8 +49,7 @@
                   Nombres</p>
           </td>
           <td>
-            <p class="PARRAFO">Campo
-              que muestra los nombres del cliente.</p>
+            <p class="PARRAFO">Campo que muestra los nombres del cliente.</p>
           </td>
         </tr>
 
@@ -83,8 +58,7 @@
             <p class="SUBTITULO">Apellidos</p>
           </td>
           <td>
-            <p class="PARRAFO">En
-              este campo se despliegan los apellidos del cliente.</p>
+            <p class="PARRAFO">En este campo se despliegan los apellidos del cliente.</p>
           </td>
         </tr>
 
@@ -94,8 +68,7 @@
                   identificación </p>
           </td>
           <td>
-            <p class="PARRAFO">Campo
-              que indica el tipo de documento de identidad asociado al cliente.
+            <p class="PARRAFO">Campo que indica el tipo de documento de identidad asociado al cliente.
             </p>
           </td>
         </tr>
@@ -106,9 +79,18 @@
                   Número identificación</p>
           </td>
           <td>
-            <p class="PARRAFO">En
-              este campo se despliega el número de identificación del
-              cliente. </p>
+            <p class="PARRAFO">En este campo se despliega el número de identificación del cliente. </p>
+          </td>
+        </tr>
+
+        <tr>
+          <td class="titletable">
+            <p class="SUBTITULO">
+                  Ciudad de Expedición </p>
+          </td>
+          <td>
+            <p class="PARRAFO">	
+              Campo en que se muestra los datos de la <a href="NUH_003B.html">ubicación geográfica</a> del municipio en el que se originó el documento de identificación del cliente. </p>
           </td>
         </tr>
 
@@ -118,8 +100,7 @@
                   Estado civil</p>
           </td>
           <td>
-            <p class="PARRAFO">Campo
-              en el que se indica el estado civil actual del cliente.</p>
+            <p class="PARRAFO">Campo en el que se ilustra el dato del cliente sobre su condición de: casado, soltero, viudo, etc.</p>
           </td>
         </tr>
 
@@ -129,8 +110,8 @@
                   Sexo</p>
           </td>
           <td>
-            <p class="PARRAFO">En
-              este campo se muestra el género del cliente.</p>
+            <p class="PARRAFO">Campo en el que se ilustra el género del cliente.
+            </p>
           </td>
         </tr>
 
@@ -140,10 +121,8 @@
                   Lugar de nacimiento</p>
           </td>
           <td>
-            <p class="PARRAFO">Campo
-              en el que se indica la <a href="NUH_003B.html">ubicación
-                  geográfica</a> correspondiente al sitio de nacimiento del
-              cliente.</p>
+            <p class="PARRAFO">Campo en el que se indica la <a href="NUH_003B.html">ubicación
+                  geográfica</a> correspondiente al sitio de nacimiento del cliente.</p>
           </td>
         </tr>
 
@@ -153,34 +132,7 @@
                   Fecha de nacimiento</p>
           </td>
           <td>
-            <p class="PARRAFO">En
-              este campo se muestra en formato YYYY-MM-DD la fecha de nacimiento del
-              cliente. </p>
-          </td>
-        </tr>
-
-        <tr>
-          <td class="titletable">
-            <p class="SUBTITULO">
-                  Tipo de residencia</p>
-          </td>
-          <td>
-            <p class="PARRAFO">Campo
-              en el que se indica si la residencia reportada por el cliente es propia,
-                arrendada o familiar.</p>
-          </td>
-        </tr>
-
-        <tr>
-          <td class="titletable">
-            <p class="SUBTITULO">
-                  Tipo de empleo</p>
-          </td>
-          <td>
-            <p class="PARRAFO">Este
-              campo contiene información sobre si el cliente o tarjetahabiente
-              es dependiente o independiente lo que permite establecer indirectamente
-              la fuente de ingresos del mismo.
+            <p class="PARRAFO">En este campo se muestra en formato AAAA-MM-DD, la fecha de nacimiento del cliente.
             </p>
           </td>
         </tr>
@@ -188,25 +140,23 @@
         <tr>
           <td class="titletable">
             <p class="SUBTITULO">
-                  Relación laboral</p>
+                  Fecha de Expedición </p>
           </td>
           <td>
-            <p class="PARRAFO">Se&ntilde;ala
-              la clase de <a href="NUH_084B.html">relación
-                  laboral</a> que detenta el cliente y que puede servir de base para
-              la asignación del cupo. </p>
+            <p class="PARRAFO">En este campo se muestra en formato AAAA-MM-DD, la fecha en que se emite el documento actual de identificación del cliente.
+            </p>
           </td>
         </tr>
 
         <tr>
           <td class="titletable">
             <p class="SUBTITULO">
-                  Estrato</p>
+                  Independiente  </p>
           </td>
           <td>
-            <p class="PARRAFO">En
-              este campo se indica la estratificación socio económica
-              a la que pertenece el cliente.</p>
+            <p class="PARRAFO">Campo en el que se muestra si el cliente es laboralmente independiente o no.
+
+            </p>
           </td>
         </tr>
 
@@ -216,36 +166,28 @@
                   Profesión</p>
           </td>
           <td>
-            <p class="PARRAFO">Campo
-              en el que se despliega la información acerca de la <a
+            <p class="PARRAFO">Campo en el que se despliega la información acerca de la <a
                 href="NUH_030B.html">profesión</a>
-              del cliente.</p>
+                o formación académica del cliente.</p>
           </td>
         </tr>
 
         <tr>
           <td class="titletable">
             <p class="SUBTITULO">
-                  Nivel máximo de estudios</p>
+                  Actividad</p>
           </td>
           <td>
-            <p class="PARRAFO">En
-              este campo se muestra el dato correspondiente al mayor grado de estudios
-              o educación alcanzado por el cliente.</p>
+            <p class="PARRAFO">En este campo se muestra la<a href="NUH_032B.html"> actividad económica</a> desarrollada por el cliente.</p>
           </td>
         </tr>
-
         <tr>
           <td class="titletable">
             <p class="SUBTITULO">
-                  Viajero frecuente</p>
+                  Estrato</p>
           </td>
           <td>
-            <p class="PARRAFO">Campo
-              que indica si el cliente es viajero frecuente o no, lo que junto con
-              otros datos le permite a la entidad, por ejemplo, emitir un plástico
-              adicional como Premiun Pass o asociarlo a un esquema de puntajes.
-            </p>
+            <p class="PARRAFO">En este campo se indica la estratificación socio económica a la que pertenece el cliente.</p>
           </td>
         </tr>
 
@@ -255,117 +197,15 @@
                   Personas a cargo</p>
           </td>
           <td>
-            <p class="PARRAFO">En
-              este campo se indica la cantidad de personas que dependen económicamente
-              del cliente.</p>
+            <p class="PARRAFO">En este campo se indica la cantidad de personas que dependen económicamente del cliente.</p>
           </td>
         </tr>
 
-        <tr>
-          <td class="titletable">
-            <p class="SUBTITULO">
-                  Ocupación</p>
-          </td>
-          <td>
-            <p class="PARRAFO">Campo
-              en el que se muestra la ocupación actual del cliente.</p>
-          </td>
-        </tr>
-
-        <tr>
-          <td class="titletable">
-            <p class="SUBTITULO">
-                  Actividad económica</p>
-          </td>
-          <td>
-            <p class="PARRAFO">En
-              este campo se muestra la <a href="NUH_032B.html">actividad
-                  económica</a> desarrollada por el cliente.</p>
-          </td>
-        </tr>
-
-        <tr>
-          <td class="titletable">
-            <p class="SUBTITULO">
-                  Fecha de defunción</p>
-          </td>
-          <td>
-            <p class="PARRAFO">Campo
-              que en caso que el cliente haya fallecido, muestra en formato YYYY-MM-DD
-              la fecha en la cual se produjo su deceso.</p>
-          </td>
-        </tr>
-
-        <tr>
-          <td class="titletable">
-            <p class="SUBTITULO">
-                  Número acta defunción</p>
-          </td>
-          <td>
-            <p class="PARRAFO">En
-              este campo se despliega según corresponda, el número de
-              acta en la que consta el fallecimiento del cliente.</p>
-          </td>
-        </tr>
-
-        <tr>
-          <td class="titletable">
-            <p class="SUBTITULO">
-                  Fecha envío seguro</p>
-          </td>
-          <td>
-            <p class="PARRAFO">Campo
-              en formato YYYY-MM-DD que indica si es el caso la fecha en la cual la
-              entidad envió al seguro la reclamación por las obligaciones
-              vigentes y no canceladas por parte del cliente, en caso que este hubiere
-              fallecido.</p>
-          </td>
-        </tr>
-
-        <tr>
-          <td class="titletable">
-            <p class="SUBTITULO">
-                  Lugar de defunción</p>
-          </td>
-          <td>
-            <p class="PARRAFO">En
-              este campo se despliega la <a href="NUH_003B.html">ubicación
-                  geográfica</a> correspondiente al sitio de fallecimiento
-              del cliente.</p>
-          </td>
-        </tr>
-
-        <tr>
-          <td class="titletable">
-            <p class="SUBTITULO">
-                  Fecha respuesta seguro</p>
-          </td>
-          <td>
-            <p class="PARRAFO">Campo
-              que muestra en formato YYYY-MM-DD la fecha en al cual el seguro dió
-              respuesta a la entidad respecto de las reclamaciones presentadas por
-              las obligaciones insolutas del cliente, en el evento de su fallecimiento.</p>
-          </td>
-        </tr>
-
-        <tr>
-          <td class="titletable">
-            <p class="SUBTITULO">
-                  Permite mercadeo</p>
-          </td>
-          <td>
-            <p class="PARRAFO">En
-              este campo se indica si el cliente ha autorizado o no el envío
-              de publicidad y otros tipos de información dentro de los planes
-              de mercadeo de la entidad.</p>
-          </td>
-        </tr>
+       
       </table>
 
       <p class="PARRAFO">
-        Personas jurídicas:
-        si el cliente que se desea consultar es tipo de persona jurídica, el
-        formulario desplegado es el siguiente.
+       <span class="SUBTITULO">Persona:</span> Jurídica, se ilustra el formulario desplegado.
       </p>
       <p class="TITLE"><img src="../img/SCF_002E1.PNG"></p>
 
@@ -377,30 +217,17 @@
                   Nombre</p>
           </td>
           <td>
-            <p class="PARRAFO">En
-              este campo se muestra la razón social de la persona jurídica.</p>
+            <p class="PARRAFO">En este campo se muestra la razón social de la persona jurídica.</p>
           </td>
         </tr>
-        <tr>
-          <td class="titletable">
-            <p class="SUBTITULO">Tipo
-                  identificación </p>
-          </td>
-          <td>
-            <p class="PARRAFO">Campo
-              que indica el tipo de documento de identidad asociado al cliente.</p>
-          </td>
-        </tr>
-
+      
         <tr>
           <td class="titletable">
             <p class="SUBTITULO">Número
                   identificación</p>
           </td>
           <td>
-            <p class="PARRAFO">En
-              este campo se despliega el número de identificación del
-              cliente. </p>
+            <p class="PARRAFO">En este campo se despliega el número de identificación del cliente </p>
           </td>
         </tr>
 
@@ -410,9 +237,20 @@
                   Escritura</p>
           </td>
           <td>
-            <p class="PARRAFO">Campo
-              en el que se indica el número de escritura mediante la cual se
-              constituyó la sociedad.</p>
+            <p class="PARRAFO">Campo en el que se indica el número de escritura pública, mediante la cual se constituyó la sociedad.
+            </p>
+          </td>
+        </tr>
+        
+        <tr>
+          <td class="titletable">
+            <p class="SUBTITULO">
+              Ciudad expedición
+            </p>
+          </td>
+          <td>
+            <p class="PARRAFO">	
+              Campo en que se muestra los datos de la <a href="NUH_003B">ubicación geográfica</a> del municipio en el que se expidió la correspondiente escritura pública. </p>
           </td>
         </tr>
         <tr>
@@ -421,21 +259,7 @@
                   Representante legal</p>
           </td>
           <td>
-            <p class="PARRAFO">Este
-              campo muestra el nombre de la persona que hace las veces de representante
-              legal de la sociedad.</p>
-          </td>
-        </tr>
-
-        <tr>
-          <td class="titletable">
-            <p class="SUBTITULO">
-                  Escritura</p>
-          </td>
-          <td>
-            <p class="PARRAFO">Campo
-              que contiene el número de escritura mediante la cual se constituyó
-              la sociedad. </p>
+            <p class="PARRAFO">Este campo muestra el nombre de la persona que hace las veces de representante legal de la sociedad.</p>
           </td>
         </tr>
 
@@ -445,20 +269,7 @@
                   Fecha de constitución</p>
           </td>
           <td>
-            <p class="PARRAFO">En
-              este campo se muestra en formato YYYY-MM-DD la fecha de constitución
-              de la sociedad.</p>
-          </td>
-        </tr>
-
-        <tr>
-          <td class="titletable">
-            <p class="SUBTITULO">
-                  Capital social</p>
-          </td>
-          <td>
-            <p class="PARRAFO">Campo
-              en el que se muestra el monto correspondiente al capital de la sociedad.
+            <p class="PARRAFO">En este campo se muestra en formato AAAA-MM-DD la fecha de constitución de la sociedad.
             </p>
           </td>
         </tr>
@@ -469,9 +280,8 @@
                   Notaría</p>
           </td>
           <td>
-            <p class="PARRAFO">Este
-              campo despliega la información de la notaría ante la cual
-              se elevó la escritura de constitución de la sociedad.</p>
+            <p class="PARRAFO">Este campo despliega la información de la notaría ante la cual se elevó la escritura pública de constitución de la sociedad.
+            </p>
           </td>
         </tr>
         <tr>
@@ -482,8 +292,7 @@
           <td>
             <p class="PARRAFO">Campo
               en el que se indica la <a href="NUH_003B.html">ubicación
-                  geográfica</a> en la cual se encuentra ubicada la sede principal
-              o domicilio de la sociedad.</p>
+                  geográfica</a> en la cual se encuentra localizada la sede principal o domicilio de la sociedad.</p>
           </td>
         </tr>
 
@@ -495,126 +304,35 @@
           <td>
             <p class="PARRAFO">En
               este campo se despliega el <a href="NUH_038B.html">tipo
-                  de sociedad</a> en que se encuentra constituido el cliente persona
-              jurídica.</p>
+                  de sociedad</a> comercial bajo el cual se encuentra constituido el cliente persona jurídica.</p>
           </td>
         </tr>
-
         <tr>
           <td class="titletable">
             <p class="SUBTITULO">
-                  Autonomía representante</p>
+                  Actividad</p>
           </td>
           <td>
-            <p class="PARRAFO">Se&ntilde;ala
-              el monto máximo autorizado al representante legal, para poder
-              contratar o adquirir obligaciones a nombre de la empresa de manera directa.
+            <p class="PARRAFO">En este campo se muestra la<a href="NUH_032B.html"> actividad económica</a> desarrollada por el cliente.</p>
+          </td>
+        </tr>
+        <tr>
+          <td class="titletable">
+            <p class="SUBTITULO">
+              Capital social
             </p>
           </td>
-        </tr>
-
-        <tr>
-          <td class="titletable">
-            <p class="SUBTITULO">
-                  Viajero frecuente</p>
-          </td>
           <td>
-            <p class="PARRAFO">Campo
-              que permite conocer si el cliente persona jurídica es viajero
-              frecuente o no, lo que junto con otros datos le permiten a la entidad
-              , por ejemplo, emitir un plástico adicional como Premiun Pass.
-            </p>
-          </td>
-        </tr>
-
-        <tr>
-          <td class="titletable">
-            <p class="SUBTITULO">
-                  Actividad económica</p>
-          </td>
-          <td>
-            <p class="PARRAFO">En
-              este campo se muestra la <a href="NUH_032B.html">actividad
-                  económica</a> desarrollada por la sociedad, de acuerdo con
-              su objeto social.</p>
-          </td>
-        </tr>
-
-        <tr>
-          <td class="titletable">
-            <p class="SUBTITULO">
-                  Registro cámara de comercio</p>
-          </td>
-          <td>
-            <p class="PARRAFO">Indica
-              el número del registro mercantil asignado al cliente, por la
-              seccional de la Cámara de comercio o quien haga sus veces.
-            </p>
-          </td>
-        </tr>
-
-        <tr>
-          <td class="titletable">
-            <p class="SUBTITULO">
-                  Tipo de empresa</p>
-          </td>
-          <td>
-            <p class="PARRAFO">Campo
-              en el que se despliega la indicación del tipo de empresa a la
-              que pertenece el cliente.</p>
-          </td>
-        </tr>
-
-        <tr>
-          <td class="titletable">
-            <p class="SUBTITULO">
-                  Utilidad neta mensual</p>
-          </td>
-          <td>
-            <p class="PARRAFO">Contiene
-              la información de la utilidad neta estimada de la actividad económica
-              desempe&ntilde;ada por el cliente
-            </p>
-          </td>
-        </tr>
-
-        <tr>
-          <td class="titletable">
-            <p class="SUBTITULO">
-                  Número de empleados</p>
-          </td>
-          <td>
-            <p class="PARRAFO">Este
-              campo contiene el dato acerca del número de empleados reportado
-              por el cliente.
-            </p>
-          </td>
-        </tr>
-
-        <tr>
-          <td class="titletable">
-            <p class="SUBTITULO">
-                  Permite mercadeo</p>
-          </td>
-          <td>
-            <p class="PARRAFO">Indica
-              si el cliente autoriza o no incluirlo dentro de las campa&ntilde;as
-              de mercadeo, y por lo tanto es posible generarle o no correspondencia
-              comercial.
-            </p>
+            <p class="PARRAFO">	
+              Campo en el que se muestra el monto correspondiente al capital de la sociedad.</p>
           </td>
         </tr>
       </table>
 
       <p class="PARRAFO"><a name="BL_DIRECCIONES"></a><span class="SUBTITULO">
           Direcciones:</span></span> 
-        en este bloque se muestra la información de todas las direcciones suministradas
-        por el cliente o tarjetahabiente u obtenidas por terceros sobre los diferentes
-        inmuebles (o medios de correo como el apartado aéreo) donde puede ser
-        ubicado directa o indirectamente. Este bloque contiene la funcionalidad necesaria
-        para permitirle a la entidad ingresar o modificar los datos correspondientes
-        a las <a href="SCH_015B.html">direcciones</a> del cliente,
-        a través de la respectiva novedad.</p>
+          en este bloque se muestra la información de las diferentes direcciones suministradas por el cliente o tarjetahabiente, sobre los inmuebles (o medios de correo como: electrónico, apartado aéreo o postal), donde puede ser ubicado o al que hacerle llegar el plástico de la tarjeta o la correspondencia. Adicionalmente contiene la funcionalidad necesaria para permitirle a la entidad ingresar o modificar los datos correspondientes a la novedad de direcciones del cliente.
+        </p>
       <p class="TITLE"><img src="../img/SCF_002E2.PNG"></p>
 
       <p class="TITLE">Descripción de campos</p>
@@ -625,9 +343,7 @@
                   Dirección</p>
           </td>
           <td>
-            <p class="PARRAFO">Campo
-              que registra la nomenclatura de cada inmueble (o medios de correo como
-              el apartado aéreo) en los que es posible ubicar al cliente.
+            <p class="PARRAFO">Campo que registra la nomenclatura de cada inmueble (o medios de correo como el correo electrónico o el apartado aéreo) en los que es posible ubicar al cliente.
             </p>
           </td>
         </tr>
@@ -637,8 +353,8 @@
             <p class="SUBTITULO">Celular</p>
           </td>
           <td>
-            <p class="PARRAFO">Despliega,
-              si lo hay, el número del teléfono celular del cliente</p>
+            <p class="PARRAFO">Despliega el número del teléfono celular del cliente
+            </p>
           </td>
         </tr>
 
@@ -648,9 +364,7 @@
                   1 </p>
           </td>
           <td>
-            <p class="PARRAFO">Contiene
-              el número de teléfono asociado a la dirección y
-              en el cual es posible ubicar al cliente.
+            <p class="PARRAFO">Contiene el número de teléfono asociado a la dirección y en el cual es posible ubicar al cliente.
             </p>
           </td>
         </tr>
@@ -661,9 +375,7 @@
                   Extensión 1</p>
           </td>
           <td>
-            <p class="PARRAFO">En
-              caso de aplicar, registra la extensión en la cual se localiza
-              al cliente.</p>
+            <p class="PARRAFO">En caso de aplicar, registra la extensión en la cual se localiza al cliente.</p>
           </td>
         </tr>
 
@@ -673,8 +385,7 @@
                   Fax</p>
           </td>
           <td>
-            <p class="PARRAFO">Registra
-              el número del fax al que es posible enviar comunicados al cliente.
+            <p class="PARRAFO">Registra el número del fax al que es posible enviar comunicados al cliente.
             </p>
           </td>
         </tr>
@@ -685,9 +396,8 @@
                   Tipo de dirección</p>
           </td>
           <td>
-            <p class="PARRAFO">Indica
-              si la dirección registrada es la comercial, familiar, del cónyuge,
-              etc.</p>
+            <p class="PARRAFO">	
+              Indica si la dirección registrada es la comercial, familiar, correo electrónico, etc.</p>
           </td>
         </tr>
 
@@ -697,34 +407,45 @@
                   Correspondencia</p>
           </td>
           <td>
-            <p class="PARRAFO">Campo
-              que al estar marcado, indica que la dirección registrada es aquella
-              a la cual el cliente desea se le dirija toda su correspondencia.</p>
+            <p class="PARRAFO">Campo que al estar marcado, indica que la dirección registrada es aquella a la cual el cliente desea se le dirija toda su correspondencia.</p>
           </td>
         </tr>
       </table>
 
-      <p class="PARRAFO"><a name="BL_REFERENCIAS"></a><span class="SUBTITULO">
-          Referencias:</span></span> 
-        en este formulario se muestra la información suministrada tanto por
-        entidades financieras como por establecimientos de comercio o personas naturales,
-        familiares, etc., sobre la moralidad comercial y personal del cliente o tarjetahabiente,
-        cuya importancia relativa, en cuanto a su cantidad y calidad, puede reflejarse
-        en los resultados de campa&ntilde;as de mercadeo o, llegado el caso, en la
-        cobranza efectiva de cartera morosa. El formulario se encuentra estructurado
-        en cuatro bloques de datos a saber: <a href="SCH_002B.html#BL_LABORALES">referencias
-            laborales</a>, <a href="SCH_002B.html#BL_BANCARIAS">referencias
-            bancarias</a>, <a href="SCH_002B.html#BL_OTRAS">otras referencias</a>
-          y <a href="SCH_002B.html#BL_RELACIONES">relaciones personales</a>.</p>
+      <p class="PARRAFO"><span class="SUBTITULO">
+        Adicionar - Direcciones:</span></span> 
+        Al invocar ese enlace desde Direcciones, se despliega el siguiente formulario, en el que el único campo obligatorio, no ilustrado es el de Ubicación, el cual mediante una lista de valores poblada en ubicación geográfica, de la que debe seleccionarse, el municipio al que corresponde o se localiza la nomenclatura de la nueva Dirección que se está ingresando:</p>
 
-      <p class="PARRAFO"><a name="BL_LABORALES"></a><span class="SUBTITULO">
-          Referencias
-              laborales:</span></span>  en este formulario se muestra la información
-        acerca de la historia laboral del cliente o tarjetahabiente. Este bloque contiene
-        la funcionalidad necesaria para permitirle a la entidad ingresar o modificar
-        los datos correspondientes a las <a href="SCH_011B.html">referencias
-            laborales</a> del cliente, a través de la respectiva novedad.<a
-          href="SCH_015B.html"></a></p>
+      <p class="TITLE"><img src="../img/SCF_002E15.PNG"></p>
+
+      <p class="PARRAFO"><span class="SUBTITULO">
+        Actualizar - Direcciones:</span></span> 
+        Al invocar ese enlace se despliega el siguiente formulario, en el cual todos los datos son modificables:</p>
+
+      <p class="TITLE"><img src="../img/SCF_002E16.PNG"></p>
+
+      <p class="PARRAFO"><span class="SUBTITULO">
+        "Novedades de" - Direcciones:</span></span> 
+        Al invocar ese enlace se despliega el formulario que le permite a la entidad visualizar cualquiera de las acciones realizadas sobre los datos de Direcciones, esto es, si se Adicionó, Eliminó o Actualizó:</p>
+
+      <p class="TITLE"><img src="../img/SCF_002E17.PNG"></p>
+
+      <p class="PARRAFO"><span class="SUBTITULO">
+        Detalle - "Novedades de" Direcciones:</span></span> 
+        Al invocarse ese enlace desde alguno de los registros de Novedades (Modificación o Eliminación), se permite conocer la información previa o correspondiente a la asociada a la acción sobre el registro:</p>
+
+      <p class="TITLE"><img src="../img/SCF_002E18.PNG"></p>
+
+      <p class="PARRAFO"><span class="SUBTITULO">
+        Detalle:</span></span> 
+        Al invocar ese enlace se despliega el siguiente formulario:</p>
+
+      <p class="TITLE"><img src="../img/SCF_002E19.PNG"></p>
+
+      <p class="PARRAFO"><a name="BL_REFERENCIAS"></a><span class="SUBTITULO">
+        Relaciones personales:</span></span> 
+        en este formulario se muestra la información correspondiente a los vínculos que posee el cliente con otros clientes de la entidad, quienes previamente han sido ingresados al sistema y eventualmente pueden ser clientes potenciales para la misma. Adicionalmente contiene la funcionalidad necesaria para permitirle a la entidad ingresar o modificar los datos correspondientes a la novedad relaciones personales del cliente.</p>
+
       <p class="TITLE"><img src="../img/SCF_002E3.PNG"></p>
 
       <p class="TITLE">Descripción de campos</p>
@@ -732,921 +453,85 @@
         <tr>
           <td class="titletable">
             <p class="SUBTITULO">
-                  Compa&ntilde;ia</p>
+                  Identificación</p>
           </td>
           <td>
-            <p class="PARRAFO">Contiene
-              el nombre o razón social de las diferentes empresas para las
-              cuales ha laborado o labora actualmente el cliente.
+            <p class="PARRAFO">Indica el número del documento de identificación del cliente relacionado.
+
             </p>
           </td>
         </tr>
 
         <tr>
           <td class="titletable">
-            <p class="SUBTITULO">Dirección</p>
+            <p class="SUBTITULO">Nombre</p>
           </td>
           <td>
-            <p class="PARRAFO">Indica
-              nomenclatura exacta de cada una de las empresas en las cuales el cliente
-              ha prestado sus servicios</p>
+            <p class="PARRAFO">Campo que muestran el nombre del cliente a quien pertenece el tipo y número de identificación y con el que existe la relación.
+            </p>
           </td>
         </tr>
       </table>
       <table width=761>
         <tr>
           <td class="titletable">
-            <p class="SUBTITULO">Teléfono
-                  1 </p>
-          </td>
-          <td>
-            <p class="PARRAFO">Campo
-              que muestran la información de los números telefónicos
-              de las empresas para las cuales ha laborado el cliente y en los cuales
-              es posible verificar la referencia.
+            <p class="SUBTITULO">Tipo de relación
             </p>
           </td>
-        </tr>
-
-        <tr>
-          <td class="titletable">
-            <p class="SUBTITULO">
-                  Ubicación</p>
-          </td>
           <td>
-            <p class="PARRAFO">Despliega
-              la <a href="NUH_003B.html">ubicación geográfica</a>
-              correspondiente a la dirección de la empresa.</p>
+            <p class="PARRAFO">Despliega el<a href="NUH_028B.html"> Tipo de relación</a>  existente entre los dos clientes.
+            </p>
           </td>
-        </tr>
-
-        <tr>
-          <td class="titletable">
-            <p class="SUBTITULO">
-                  Correo electrónico</p>
-          </td>
-          <td>
-            <p class="PARRAFO">Indica
-              la dirección de correo electrónico de las empresas para
-              las cuales ha laborado el cliente.</p>
-          </td>
-        </tr>
+        </tr>     
       </table>
 
-      <p class="PARRAFO"><a name="BL_BANCARIAS"></a><span class="SUBTITULO">
-          Referencias
-              bancarias:</span></span>  en este formulario se muestra la información
-        de los vínculos del cliente o tarjetahabiente con el sistema financiero
-        y el estado o comportamiento frente a los mismos. Este bloque contiene la
-        funcionalidad necesaria para permitirle a la entidad ingresar o modificar
-        los datos correspondientes a las <a href="SCH_013B.html">referencias
-            bancarias</a>, a través de la respectiva novedad.</p>
-      <p class="TITLE"><img src="../img/SCF_002E4.PNG"></p>
+      <p class="PARRAFO"><span class="SUBTITULO">
+        Adicionar - Relaciones personales:</span></span> 
+        Al invocar ese enlace desde Relaciones personales, se despliega el siguiente formulario, en el que se deben diligenciar Tipo y Número de identificación del cliente con el que se tiene algún tipo de relación, y por supuesto se debe seleccionar, ese tipo de relación:</p>
 
-      <p class="TITLE">Descripción de campos</p>
-      <table width=714>
-        <tr>
-          <td class="titletable">
-            <p class="SUBTITULO">
-                  Entidad</p>
-          </td>
-          <td>
-            <p class="PARRAFO">Campo
-              que muestra el nombre de la entidad financiera con la cual existen o
-              han existido vínculos comerciales.
-            </p>
-          </td>
-        </tr>
+      <p class="TITLE"><img src="../img/SCF_002E22.PNG"></p>
 
-        <tr>
-          <td class="titletable">
-            <p class="SUBTITULO">Número
-                  de cuenta</p>
-          </td>
-          <td>
-            <p class="PARRAFO">Contiene
-              el número de cuenta o referencia que identifica el producto que
-              el cliente posee (o tuvo) con la entidad financiera.
-            </p>
-          </td>
-        </tr>
+      <p class="PARRAFO"><span class="SUBTITULO">
+        "Novedades de" Relaciones personales:</span></span> 
+        Al invocar ese enlace se despliega el formulario que le permite a la entidad visualizar cualquiera de las dos acciones realizadas sobre los datos de Relaciones personales, esto es, si se Adicionó o Eliminó:</p>
 
-        <tr>
-          <td class="titletable">
-            <p class="SUBTITULO">Tipo
-                  de servicio</p>
-          </td>
-          <td>
-            <p class="PARRAFO">Muestra
-              el nombre o clase de producto asociado a los campos anteriores.
-            </p>
-          </td>
-        </tr>
+      <p class="TITLE"><img src="../img/SCF_002E23.PNG"></p>
 
-        <tr>
-          <td class="titletable">
-            <p class="SUBTITULO">
-                  Moneda</p>
-          </td>
-          <td>
-            <p class="PARRAFO">Indica
-              la denominación de la <a href="NUH_005B.html">moneda</a>
-              en la que se expresa el crédito concedido al cliente por la entidad
-              financiera.
-            </p>
-          </td>
-        </tr>
+      <p class="PARRAFO"><span class="SUBTITULO">
+        Detalle - "Novedades de" Relaciones personales:</span></span> 
+        Al invocarse ese enlace desde alguno de los registros de Novedades (Modificación o Eliminación), se permite conocer la información previa o correspondiente a la asociada a la acción sobre el registro:</p>
 
-        <tr>
-          <td class="titletable">
-            <p class="SUBTITULO">
-                  Observaciones</p>
-          </td>
-          <td>
-            <p class="PARRAFO">Campo
-              en el que están registrados los datos adicionales relevantes
-              como la síntesis del concepto o referencia emanado de la entidad
-              financiera con la cual existen o existieron vínculos.
-            </p>
-          </td>
-        </tr>
-      </table>
+      <p class="TITLE"><img src="../img/SCF_002E24.PNG"></p>
 
-      <p class="PARRAFO"><a name="BL_OTRAS"></a><span class="SUBTITULO">
-          Otras
-              referencias:</span></span>  en este formulario se muestra la información
-        de las demás referencias diferentes a las bancarias y laborales tales
-        como comerciales, personales y familiares suministradas y/o confirmadas. .
-        Este bloque contiene la funcionalidad necesaria para permitirle a la entidad
-        ingresar o modificar los datos correspondientes a las <a href="SCH_014B.html">otras
-            referencias </a>, a través de la respectiva novedad.</p>
-      <p class="TITLE"><img src="../img/SCF_002E5.PNG"></p>
-
-      <p class="TITLE">Descripción de campos</p>
-      <table width=714>
-        <tr>
-          <td class="titletable">
-            <p class="SUBTITULO">
-                  Tipo referencia</p>
-          </td>
-          <td>
-            <p class="PARRAFO">Campo
-              que ilustra la fuente de la información sobre el cliente y que
-              puede ser Personal o Comercial.
-            </p>
-          </td>
-        </tr>
-
-        <tr>
-          <td class="titletable">
-            <p class="SUBTITULO">Nombre</p>
-          </td>
-          <td>
-            <p class="PARRAFO">Contiene
-              el nombre de la persona natural o jurídica que suministra la
-              referencia sobre el cliente.
-            </p>
-          </td>
-        </tr>
-
-        <tr>
-          <td class="titletable">
-            <p class="SUBTITULO">Dirección</p>
-          </td>
-          <td>
-            <p class="PARRAFO">Este
-              campo indica a la nomenclatura donde se ubica la persona natural o jurídica
-              que suministra la referencia sobre el cliente.
-            </p>
-          </td>
-        </tr>
-
-        <tr>
-          <td class="titletable">
-            <p class="SUBTITULO">
-                  Teléfono</p>
-          </td>
-          <td>
-            <p class="PARRAFO">Campo
-              en que se muestran los números telefónicos en los que
-              es posible ubicar a la persona natural o jurídica que suministra
-              la referencia sobre el cliente.
-            </p>
-          </td>
-        </tr>
-
-        <tr>
-          <td class="titletable">
-            <p class="SUBTITULO">
-                  Extensión</p>
-          </td>
-          <td>
-            <p class="PARRAFO">Si
-              aplica, despliega el número de la extensión telefónica
-              en la que se ubica la persona encargada de dar la información
-              sobre el cliente.
-            </p>
-          </td>
-        </tr>
-
-        <tr>
-          <td class="titletable">
-            <p class="SUBTITULO">
-                  Ubicación</p>
-          </td>
-          <td>
-            <p class="PARRAFO">Despliega
-              la <a href="NUH_003B.html">ubicación geográfica</a>
-              correspondiente a la dirección de la persona natural o jurídica
-              que suministra la referencia sobre el cliente. </p>
-          </td>
-        </tr>
-
-        <tr>
-          <td class="titletable">
-            <p class="SUBTITULO">
-                  Descripción</p>
-          </td>
-          <td>
-            <p class="PARRAFO">Campo
-              en el que están registrados el resumen o información importante
-              obtenida como resultado de la verificación de la referencia.
-            </p>
-          </td>
-        </tr>
-      </table>
-
-      <p class="PARRAFO"><a name="BL_RELACIONES"></a><span class="SUBTITULO">
-          Relaciones
-              personales:</span></span>  en este formulario se muestra la información
-        correspondiente a los vínculos que posee el cliente con otros clientes
-        de la entidad, quienes previamente han sido ingresados al sistema y eventualmente
-        pueden ser clientes potenciales para la misma. Este bloque contiene la funcionalidad
-        necesaria para permitirle a la entidad ingresar o modificar los datos correspondientes
-        a las <a href="SCH_012B.html">relaciones personales </a>,
-        a través de la respectiva novedad.</p>
-      <p class="TITLE"><img src="../img/SCF_002E6.PNG"></p>
-
-      <p class="TITLE">Descripción de campos</p>
-      <table width=714>
-        <tr>
-          <td class="titletable">
-            <p class="SUBTITULO">
-                  Tipo de identificación</p>
-          </td>
-          <td>
-            <p class="PARRAFO">Contiene
-              el <a href="NUH_008B.html">tipo de documento</a>
-              de identidad correspondiente al cliente con el cual existe alguna relación
-              con el actual.
-            </p>
-          </td>
-        </tr>
-
-        <tr>
-          <td class="titletable">
-            <p class="SUBTITULO">Identificación</p>
-          </td>
-          <td>
-            <p class="PARRAFO">Indica
-              el número de identificación del cliente relacionado.</p>
-          </td>
-        </tr>
-
-        <tr>
-          <td class="titletable">
-            <p class="SUBTITULO">Nombre</p>
-          </td>
-          <td>
-            <p class="PARRAFO">Campo
-              que muestran el nombre del cliente a quien pertenece el tipo y número
-              de identificación y con el que existe la relación.
-            </p>
-          </td>
-        </tr>
-
-        <tr>
-          <td class="titletable">
-            <p class="SUBTITULO">
-                  Tipo de relación</p>
-          </td>
-          <td>
-            <p class="PARRAFO">Despliega
-              el <a href="NUH_028B.html">tipo de relación</a>
-              existente entre los dos clientes.</p>
-          </td>
-        </tr>
-      </table>
-
-      <p class="PARRAFO"><a name="BL_FINANCIERA"></a><span class="SUBTITULO">
-          Financiera:</span></span> 
-        en este formulario se muestra la información que permite conocer la
-        situación financiera y patrimonial del cliente o tarjetahabiente. El
-        formulario se encuentra estructurado en tres bloques de datos: <a href="SCH_002B.html#BL_BIENES">información
-            de bienes</a>, <a href="SCH_002B.html#BL_OBLIGACIONES">obligaciones
-            financieras</a> e <a href="SCH_002B.html#BL_BALANCE">información
-            balance</a>.</p>
-
-      <p class="PARRAFO"><a name="BL_BIENES"></a><span class="SUBTITULO">
-          Información
-              de bienes:</span></span>  en este formulario se muestra la información
-        acerca los diferentes bienes y activos que posee el cliente. Este bloque contiene
-        la funcionalidad necesaria para permitirle a la entidad ingresar o modificar
-        los datos correspondientes a los <a href="SCH_016B.html">
-            bienes</a> del cliente, a través de la respectiva novedad.<a href="SCH_015B.html"></a>
-      </p>
-      <p class="TITLE"><img src="../img/SCF_002E7.PNG"></p>
-
-      <p class="TITLE">Descripción de campos</p>
-      <table width=714>
-        <tr>
-          <td class="titletable">
-            <p class="SUBTITULO">
-                  Tipo</p>
-          </td>
-          <td>
-            <p class="PARRAFO">Indica
-              de bien o activo poseído por el cliente.
-            </p>
-          </td>
-        </tr>
-
-        <tr>
-          <td class="titletable">
-            <p class="SUBTITULO">Propiedad</p>
-          </td>
-          <td>
-            <p class="PARRAFO">En
-              este campo se se&ntilde;ala si el bien es Propio o sobre el pesa alguna
-              Prenda o Hipoteca.
-            </p>
-          </td>
-        </tr>
-
-        <tr>
-          <td class="titletable">
-            <p class="SUBTITULO">Entidad</p>
-          </td>
-          <td>
-            <p class="PARRAFO">Si
-              el bien no es propio, en este campo se despliega la información
-              referente al nombre de la persona natural o jurídica, o de la
-              entidad financiera a favor de quien se encuentra constituida la Prenda
-              o Hipoteca.
-            </p>
-          </td>
-        </tr>
-
-        <tr>
-          <td class="titletable">
-            <p class="SUBTITULO">
-                  Garantía</p>
-          </td>
-          <td>
-            <p class="PARRAFO">Campo
-              en el cual se indica, en caso de aplicar, el tipo de garantía
-              constituída sobre el bien, cuando este se encuentra en prenda
-              o hipoteca.</p>
-          </td>
-        </tr>
-
-        <tr>
-          <td class="titletable">
-            <p class="SUBTITULO">
-                  Valor de compra</p>
-          </td>
-          <td>
-            <p class="PARRAFO">Indica
-              el monto por el cual el cliente adquirió el bien o activo reportado.</p>
-          </td>
-        </tr>
-      </table>
-
-      <p class="PARRAFO"><a name="BL_OBLIGACIONES"></a><span class="SUBTITULO">
-          Obligaciones
-              financieras:</span></span>  en este formulario se muestra la información
-        de las obligaciones financieras que el cliente posee. Este bloque contiene
-        la funcionalidad necesaria para permitirle a la entidad ingresar o modificar
-        los datos correspondientes a las <a href="SCH_017B.html">obligaciones
-            financieras </a> del cliente, a través de la respectiva novedad.</p>
-      <p class="TITLE"><img src="../img/SCF_002E8.PNG"></p>
-
-      <p class="TITLE">Descripción de campos</p>
-      <table width=714>
-        <tr>
-          <td class="titletable">
-            <p class="SUBTITULO">
-                  Entidad</p>
-          </td>
-          <td>
-            <p class="PARRAFO">Campo
-              que muestra el nombre de la entidad financiera con la cual el cliente
-              ha contraído alguna obligación y se encuentra vigente.</p>
-          </td>
-        </tr>
-
-        <tr>
-          <td class="titletable">
-            <p class="SUBTITULO">Número
-                  de cuenta</p>
-          </td>
-          <td>
-            <p class="PARRAFO">Indica
-              el número que identifica la obligación que el cliente
-              adquirió con la entidad.
-            </p>
-          </td>
-        </tr>
-
-        <tr>
-          <td class="titletable">
-            <p class="SUBTITULO">Tipo
-                </p>
-          </td>
-          <td>
-            <p class="PARRAFO">Se&ntilde;ala
-              que clase de obligación (tarjeta de crédito, crédito
-              hipotecario, etc) adquirió el cliente con la entidad.
-            </p>
-          </td>
-        </tr>
-
-        <tr>
-          <td class="titletable">
-            <p class="SUBTITULO">Saldo
-                </p>
-          </td>
-          <td>
-            <p class="PARRAFO">Este
-              campo contiene el valor que el cliente aún adeuda a la entidad
-              por concepto de la obligación contraída.
-            </p>
-          </td>
-        </tr>
-        <tr>
-          <td class="titletable">
-            <p class="SUBTITULO">
-                  Moneda</p>
-          </td>
-          <td>
-            <p class="PARRAFO">Indica
-              la denominación de la <a href="NUH_005B.html">moneda</a>
-              en la que se encuentra expresada la obligación contraída
-              por el cliente con la entidad financiera.
-            </p>
-          </td>
-        </tr>
-      </table>
-
-      <p class="PARRAFO"><a name="BL_BALANCE"></a><span class="SUBTITULO">
-          Información
-              balance:</span></span>  en este formulario se muestra la información
-        sobre los ingresos y egresos del cliente o tarjetahabiente persona natural
-        o activos y pasivos para personas jurídicas, asociándole a cada
-        uno tanto la moneda en que se denomina como la fecha para la cual la información
-        es válida o vigente. Este bloque contiene la funcionalidad necesaria
-        para permitirle a la entidad ingresar o modificar los datos correspondientes
-        al <a href="SCH_018B.html"> balance</a> del cliente,
-        a través de la respectiva novedad.</p>
-      <p class="TITLE"><img src="../img/SCF_002E9.PNG"></p>
-
-      <p class="TITLE">Descripción de campos</p>
-      <table width=714>
-        <tr>
-          <td class="titletable">
-            <p class="SUBTITULO">
-                  Concepto</p>
-          </td>
-          <td>
-            <p class="PARRAFO">Campo
-              que indica si la información relacionada por el cliente corresponde
-              a un <a href="NUH_035B.html">ingreso o egreso</a>.</span> 
-            </p>
-          </td>
-        </tr>
-
-        <tr>
-          <td class="titletable">
-            <p class="SUBTITULO">Valor</p>
-          </td>
-          <td>
-            <p class="PARRAFO">Indica
-              el valor del ingreso o egreso reportado por el cliente.
-            </p>
-          </td>
-        </tr>
-
-        <tr>
-          <td class="titletable">
-            <p class="SUBTITULO">Moneda</p>
-          </td>
-          <td>
-            <p class="PARRAFO">Este
-              campo Indica la denominación de la <a href="NUH_005B.html">moneda</a>
-              en la que se encuentra expresado el ingreso o egreso relacionado por
-              el cliente.</p>
-          </td>
-        </tr>
-
-        <tr>
-          <td class="titletable">
-            <p class="SUBTITULO">
-                  Fecha</p>
-          </td>
-          <td>
-            <p class="PARRAFO">Campo
-              en formato YYYY-MM-DD que contiene la fecha más reciente en la
-              cual fue actualizado el registro del balance presentado por el cliente.
-            </p>
-          </td>
-        </tr>
-
-        <tr>
-          <td class="titletable">
-            <p class="SUBTITULO">
-                  Observaciones</p>
-          </td>
-          <td>
-            <p class="PARRAFO">En
-              este campo se registra información adicional que la entidad considere
-              relevante.
-            </p>
-          </td>
-        </tr>
-      </table>
-
-      <p class="PARRAFO"><a name="BL_SALDOS"></a><span class="SUBTITULO">
-          Saldos:</span></span> 
-        en este formulario se muestra la información consolidada de los saldos
-        de todas las tarjetas y obligaciones que la entidad le ha otorgado al cliente,
-        constituyendo un resumen total de su estado. El formulario se encuentra dividido
-        en tres bloques de datos: Estado actual, Detalle saldo total y Detalle moras.</p>
-      <p class="TITLE"><img src="../img/SCF_002E10.PNG"></p>
-
-      <p class="TITLE">Descripción de campos</p>
-      <table>
-        <tr>
-          <td class="titletable">
-            <p class="SUBTITULO">
-                  Pago total</p>
-          </td>
-          <td>
-            <p class="PARRAFO">Campo
-              en el que se indica el monto que a la fecha adeuda el cliente a la entidad
-              por las diferentes tarjetas aprobadas.</p>
-          </td>
-        </tr>
-        <tr>
-          <td class="titletable">
-            <p class="SUBTITULO">Valor
-                  autorizaciones </p>
-          </td>
-          <td>
-            <p class="PARRAFO">En
-              este campo se despliegael monto de las autorizaciones emitidas para
-              las diferentes utilizaciones y que se encuentran pendientes por cruzar.
-            </p>
-          </td>
-        </tr>
-
-        <tr>
-          <td class="titletable">
-            <p class="SUBTITULO">Interés
-                  provisional </p>
-          </td>
-          <td>
-            <p class="PARRAFO">Se&ntilde;ala
-              el valor acumulado de los intereses corrientes que la entidad espera
-              recibir, calculados sobre los consumos aún no facturados.
-            </p>
-          </td>
-        </tr>
-
-        <tr>
-          <td class="titletable">
-            <p class="SUBTITULO">
-                  Altura mora periodos</p>
-          </td>
-          <td>
-            <p class="PARRAFO">En
-              este campo se indica la máxima altura de mora que presentan los
-              productos que el cliente posee con la entidad.</p>
-          </td>
-        </tr>
-        <tr>
-          <td class="titletable">
-            <p class="SUBTITULO">
-                  Estado cliente</p>
-          </td>
-          <td>
-            <p class="PARRAFO">Campo
-              en el que se indica el estado actual del cliente ante la entidad y que
-              puede ser activo, inactivo, etc.</p>
-          </td>
-        </tr>
-
-        <tr>
-          <td class="titletable">
-            <p class="SUBTITULO">
-                  Calificación interna</p>
-          </td>
-          <td>
-            <p class="PARRAFO">En
-              este campo se despliega la calificación interna del cliente obtenida
-              a partir de la calificación individual de las diferentes obligaciones
-              que tiene con la entidad.</p>
-          </td>
-        </tr>
-
-        <tr>
-          <td class="titletable">
-            <p class="SUBTITULO">
-                  Bloqueo persona</p>
-          </td>
-          <td>
-            <p class="PARRAFO">Según
-              el caso, este campo muestra el bloqueo de persona que recae sobre el
-              cliente. </p>
-          </td>
-        </tr>
-
-        <tr>
-          <td class="titletable">
-            <p class="SUBTITULO">
-                  Fecha bloqueo persona</p>
-          </td>
-          <td>
-            <p class="PARRAFO">En
-              este campo se muestra en formato YYYY-MM-DD la fecha en la cual se aplicó
-              el bloqueo de persona al cliente</p>
-          </td>
-        </tr>
-
-        <tr>
-          <td class="titletable">
-            <p class="SUBTITULO">
-                  Bloqueo anterior persona</p>
-          </td>
-          <td>
-            <p class="PARRAFO">Campo
-              que contiene el el bloqueo de persona inmediatamente anterior, que tenía
-              o tuvo el cliente.</p>
-          </td>
-        </tr>
-        <tr>
-          <td class="titletable">
-            <p class="SUBTITULO">
-                  Fecha bloqueo anterior persona</p>
-          </td>
-          <td>
-            <p class="PARRAFO">En
-              este campo se muestra en formato YYYY-MM-DD la fecha en la cual se aplicó
-              el anterior bloqueo de persona al cliente</p>
-          </td>
-        </tr>
-
-        <tr>
-          <td class="titletable">
-            <p class="SUBTITULO">
-                  Periodos actividad</p>
-          </td>
-          <td>
-            <p class="PARRAFO">Campo
-              en el cual se indica la cantidad de periodos de actividad que el cliente
-              tiene con la entidad.</p>
-          </td>
-        </tr>
-
-        <tr>
-          <td class="titletable">
-            <p class="SUBTITULO">
-                  Categoría cliente</p>
-          </td>
-          <td>
-            <p class="PARRAFO">Se&ntilde;ala
-              la <a href="MEH_004B.html">categoría</a>
-              actual del cliente lo que puede determinar algunos beneficios particulares
-              para él.</p>
-          </td>
-        </tr>
-
-        <tr>
-          <td class="titletable">
-            <p class="SUBTITULO">
-                  Promedio utilización</p>
-          </td>
-          <td>
-            <p class="PARRAFO">Campo
-              que permite conocer el promedio de utilización que el cliente
-              ha tenido con todos los productos que la entidad le ha otorgado.
-            </p>
-          </td>
-        </tr>
-
-        <tr>
-          <td class="titletable">
-            <p class="SUBTITULO">
-                  Número desviación estandar</p>
-          </td>
-          <td>
-            <p class="PARRAFO">En
-              este campo se muestra la <a href="NUH_032B.html">actividad
-                  económica</a> desarrollada por la sociedad, de acuerdo con
-              su objeto social.</p>
-          </td>
-        </tr>
-
-        <tr>
-          <td class="titletable">
-            <p class="SUBTITULO">
-                  Valor promedio utilización</p>
-          </td>
-          <td>
-            <p class="PARRAFO">Indica
-              el número del registro mercantil asignado al cliente, por la
-              seccional de la Cámara de comercio o quien haga sus veces.
-            </p>
-          </td>
-        </tr>
-
-        <tr>
-          <td class="titletable">
-            <p class="SUBTITULO">
-                  Valor desviación estandar</p>
-          </td>
-          <td>
-            <p class="PARRAFO">Campo
-              en el que se despliega la indicación del tipo de empresa a la
-              que pertenece el cliente.</p>
-          </td>
-        </tr>
-
-        <tr>
-          <td class="titletable">
-            <p class="SUBTITULO">
-                  Capital facturado</p>
-          </td>
-          <td>
-            <p class="PARRAFO">Contiene
-              el valor de las utilizaciones efectuadas por el cliente con sus diferentes
-              productos y que debe ser cancelada dentro del pago mínimo calculado
-              por el sistema.
-            </p>
-          </td>
-        </tr>
-
-        <tr>
-          <td class="titletable">
-            <p class="SUBTITULO">
-                  Capital no facturado</p>
-          </td>
-          <td>
-            <p class="PARRAFO">Este
-              campo contiene el monto diferido que aún se encuentra pendiente
-              de facturar y cobrar al cliente, por las utilizaciones hechas con sus
-              tarjetas. </p>
-          </td>
-        </tr>
-
-        <tr>
-          <td class="titletable">
-            <p class="SUBTITULO">
-                  Capital en mora</p>
-          </td>
-          <td>
-            <p class="PARRAFO">Indica
-              el monto actual acumulado de los saldos facturados en periodos anteriores
-              y no han sido pagados por el cliente.
-            </p>
-          </td>
-        </tr>
-
-        <tr>
-          <td class="titletable">
-            <p class="SUBTITULO">
-                  Interés corriente</p>
-          </td>
-          <td>
-            <p class="PARRAFO">Campo
-              que muestra el monto de los intereses de financiación generados
-              por las compras y/o avances a plazos efectuadas por el cliente.</p>
-          </td>
-        </tr>
-
-        <tr>
-          <td class="titletable">
-            <p class="SUBTITULO">
-                  Interés de mora</p>
-          </td>
-          <td>
-            <p class="PARRAFO">Este
-              campo contiene el monto de los intereses que el cliente adeuda a la
-              entidad por el no pago oportuno de sus obligaciones.</p>
-          </td>
-        </tr>
-
-        <tr>
-          <td class="titletable">
-            <p class="SUBTITULO">
-                  Interés extracontable</p>
-          </td>
-          <td>
-            <p class="PARRAFO">Muestra
-              el valor resultante de la liquidación del beneficio esperado
-              por la entidad sobre el saldo del capital cuya altura de mora supere
-              los parámetros definidos por la entidad para la generación
-              de este tipo de intereses.
-            </p>
-          </td>
-        </tr>
-
-        <tr>
-          <td class="titletable">
-            <p class="SUBTITULO">
-                  Saldo a favor</p>
-          </td>
-          <td>
-            <p class="PARRAFO">Campo
-              que indica los valores que han excedido el pago mínimo o total
-              de los diferentes que el cliente posee con la entidad y que constituyen
-              un saldo a su favor. </p>
-          </td>
-        </tr>
-
-        <tr>
-          <td class="titletable">
-            <p class="SUBTITULO">
-                  Saldo promedio</p>
-          </td>
-          <td>
-            <p class="PARRAFO">Este
-              campo contiene el dato acerca del valor de saldo promedio que han tenido
-              todas las tarjetas del cliente de acuerdo con las utilizaciones hechas.</p>
-          </td>
-        </tr>
-
-        <tr>
-          <td class="titletable">
-            <p class="SUBTITULO">
-                  Capital en mora 1 ... 12</p>
-          </td>
-          <td>
-            <p class="PARRAFO">Campos
-              en los que se muestra el valor de mora que presentan las diferentes
-              tarjeta u obligaciones otorgadas al cliente para cada uno de los periodos.
-
-            </p>
-          </td>
-        </tr>
-      </table>
 
       <p class="PARRAFO"><a name="BL_NOVEDADES"></a><span class="SUBTITULO">
           Novedades:</span></span> 
-        en este formulario se muestra la información de las diferentes actualizaciones
-        de datos del cliente que han sido efectuadas, bien sea reportadas por el propio
-        cliente o que la entidad haya obtenido a través de otras fuentes como
-        pueden ser centrales de información financiera, etc.</p>
-      <p class="PARRAFO">El formulario contiene la opción Detalles, que permite
-        seleccionar un registro de novedad e invocar el formulario en el cual se puede
-        ver la información que fue modificada o alterada.</p>
+          en este formulario se muestra la información de las diferentes actualizaciones de datos del cliente que han sido efectuadas, bien sea reportadas por el propio cliente o que la entidad haya obtenido a través de otras fuentes como pueden ser centrales de información financiera, etc.</p>
       <p class="TITLE"><img src="../img/SCF_002E11.PNG"></p>
 
-      <p class="TITLE">Descripción de campos</p>
+        <p class="PARRAFO">El formulario contiene el enlace Detalle que, al invocarse, despliega un formulario en el cual se puede visualizar la información que fue modificada o alterada.</p>
+        <p class="TITLE"><img src="../img/SCF_002E21.PNG"></p>
+      
+        <p class="TITLE">Descripción de campos</p>
       <table>
+      
         <tr>
           <td class="titletable">
-            <p class="SUBTITULO">
-                  Fecha de aplicación</p>
+            <p class="SUBTITULO">Tipo de novedad</p>
           </td>
           <td>
-            <p class="PARRAFO">Campo
-              que muestra el formato YYYY-MM-DD la fecha en la cual se hicieron efectivos
-              los cambios en la base de datos.</p>
-          </td>
-        </tr>
-        <tr>
-          <td class="titletable">
-            <p class="SUBTITULO">Tipo
-                  de novedad</p>
-          </td>
-          <td>
-            <p class="PARRAFO">En
-              este campo se despliega el código y descripción de la
-              <a href="NUH_017B.html"> novedad</a> aplicada
-              al cliente.
+            <p class="PARRAFO">Campo que ilustra tanto el código como la descripción de la <a href="NUH_017B.html">novedad</a>  aplicada al cliente.
             </p>
           </td>
         </tr>
 
         <tr>
           <td class="titletable">
-            <p class="SUBTITULO">Clase
-                  de novedad</p>
+            <p class="SUBTITULO">Clase de novedad</p>
           </td>
           <td>
-            <p class="PARRAFO">Se&ntilde;ala
-              si con la novedad se adicionó, modificó o eliminó
-              información del cliente.
+            <p class="PARRAFO">
+              Señala si con la novedad se adicionó, modificó o eliminó información del cliente.
             </p>
           </td>
         </tr>
@@ -1657,20 +542,29 @@
                   Fecha de ingreso</p>
           </td>
           <td>
-            <p class="PARRAFO">En
-              este campo se indica en formato YYYY-MM-DD la fecha en la cual se registró
-              el cambio de datos en el sistema.</p>
+            <p class="PARRAFO">Campo que en formato AAAA-MM-DD indica la fecha en la cual se registró el cambio de datos en el sistema.
+            </p>
           </td>
         </tr>
+        <tr>
+          <td class="titletable">
+            <p class="SUBTITULO">
+                  Fecha de aplicación</p>
+          </td>
+          <td>
+            <p class="PARRAFO">Campo que muestra el formato AAAA-MM-DD la fecha en la cual se hicieron efectivos los cambios en la base de datos.
+            </p>
+          </td>
+        </tr>
+        <tr>
         <tr>
           <td class="titletable">
             <p class="SUBTITULO">
                   Fecha de expiración</p>
           </td>
           <td>
-            <p class="PARRAFO">Campo
-              en el que se indica en formato YYYY-MM-DD la fecha hasta la cual el
-              registro de la novedad permanecerá en la base de datos.</p>
+            <p class="PARRAFO">Campo en el que se indica en formato AAAA-MM-DD la fecha hasta la cual el registro de la novedad permanecerá en la base de datos.
+            </p>
           </td>
         </tr>
 
@@ -1680,10 +574,7 @@
                   Estado</p>
           </td>
           <td>
-            <p class="PARRAFO">En
-              este campo se indica si la novedad ya fue Aplicada o si se
-              encuentra Por Aplicar a causa de algún error o información
-              inválida.</p>
+            <p class="PARRAFO">En este campo se indica si la novedad ya fue Aplicada o si se encuentra Por Aplicar a causa de algún error, información inválida, o simplemente, debido a que su aplicación no en inmediata y se hará dentro de los procesos batch.</p>
           </td>
         </tr>
 
@@ -1695,96 +586,19 @@
           <td>
             <p class="PARRAFO">Campo
               que muestra el resultado de la <a href="SCH_009B.html">gestión</a>
-              hecha sobre la novedad y que puede ser Error, No aplicar o
-              Aplicar dependiendo el tipo de acción ejecutado sobre
-              la novedad.
+              hecha sobre la novedad y que puede ser: Error, No aplicar o Aplicar dependiendo el tipo de acción ejecutado sobre la novedad.
             </p>
           </td>
         </tr>
       </table>
       <div>
-        .
-        <p class="PARRAFO"><a name="BL_TARJETAS"></a><span class="SUBTITULO">
-            Tarjetas:</span></span> 
-          en este formulario se despliega la información de todas las tarjetas
-          que el cliente posea en la entidad. Si se requiere mayor información
-          sobre alguna de éstas, basta con posicionarse en el registro correspondiente
-          y utilizar el hipervínculo que se encuentra en el campo número
-          tarjeta para que el sistema lo lleve al formulario correspondiente a la
-          <a href="SCH_060B.html"> consulta del detalle de la tarjeta</a>.
-        </p>
-
-        <p class="TITLE"><img src="../img/SCF_002E12.PNG"></p>
-
-        <p class="TITLE">Descripción de campos</p>
-        <table>
-          <tr>
-            <td class="titletable">
-              <p class="SUBTITULO">
-                    Número de tarjeta</p>
-            </td>
-            <td>
-              <p class="PARRAFO">Campo
-                que muestra el número de cada una de las tarjetas que el cliente
-                posee con la entidad. Este campo es un hipervínculo que le
-                permite al usuario ir directamente a la <a href="SCH_060B.html">
-                  consulta del detalle de la tarjeta</a></p>
-            </td>
-          </tr>
-          <tr>
-            <td class="titletable">
-              <p class="SUBTITULO">Marca</p>
-            </td>
-            <td>
-              <p class="PARRAFO">Despliega
-                el nombre de la marca a la cual pertenece cada una de las tarjetas
-                del cliente.</p>
-            </td>
-          </tr>
-
-          <tr>
-            <td class="titletable">
-              <p class="SUBTITULO">Producto</p>
-            </td>
-            <td>
-              <p class="PARRAFO">Campo
-                en el cual se muestra el bin, producto, grupo de afinidad y descripción
-                del <a href="MEH_002B.html">producto</a> al
-                que pertenece la tarjeta.</p>
-            </td>
-          </tr>
-
-          <tr>
-            <td class="titletable">
-              <p class="SUBTITULO">
-                    Fecha de vencimiento</p>
-            </td>
-            <td>
-              <p class="PARRAFO">En
-                este campo se indica en formato YYYY-MM-DD la fecha hasta la cual
-                se encuentra vigente cada una de las tarjetas del cliente.</p>
-            </td>
-          </tr>
-          <tr>
-            <td class="titletable">
-              <p class="SUBTITULO">
-                    Cupo asignado</p>
-            </td>
-            <td>
-              <p class="PARRAFO">Campo
-                en el que se despliega el valor del cupo asignado a cada una de las
-                tarjetas del cliente.</p>
-            </td>
-          </tr>
-        </table>
+        
+       
         <div>
           
           <p class="PARRAFO"><a name="BL_SOLICITUDES"></a><span class="SUBTITULO">
               Solicitudes:</span></span> 
-            en este formulario se muestra la información de las diferentes
-            solicitudes que el cliente ha presentado ante la entidad bien sea para
-            productos nuevos o en relación con las tarjetas que la entidad
-            le ha otorgado.</p>
+              en este formulario se muestra la información de las diferentes solicitudes que el cliente ha presentado ante la entidad bien sea para productos nuevos o en relación con las tarjetas que la entidad le ha otorgado.</p>
           <p class="TITLE"><img src="../img/SCF_002E13.PNG"></p>
 
           <p class="TITLE">Descripción de campos</p>
@@ -1795,9 +609,8 @@
                       Secuencia</p>
               </td>
               <td>
-                <p class="PARRAFO">Campo
-                  que muestra el número o secuencia interno asignados por el
-                  sistema a cada una de las solicitudes presentadas por el cliente.</p>
+                <p class="PARRAFO">Campo que muestra el número o secuencia interna, asignada por el sistema a cada una de las solicitudes presentadas por el cliente.
+                </p>
               </td>
             </tr>
             <tr>
@@ -1806,9 +619,7 @@
                       de solicitud</p>
               </td>
               <td>
-                <p class="PARRAFO">En
-                  este campo se despliega la información sobre los diferentes
-                  tipos de solicitud que el cliente ha presentado a la entidad.</p>
+                <p class="PARRAFO">En este campo se despliega el nombre del tipo de solicitud gestionada para el cliente.</p>
               </td>
             </tr>
 
@@ -1818,109 +629,107 @@
                       Fecha de ingreso</p>
               </td>
               <td>
-                <p class="PARRAFO">Campo
-                  que despliega en formato YYYY-MM-DD la fecha en la cual se registró
-                  la solicitud en el sistema.</p>
+                <p class="PARRAFO">Campo que en formato AAAA-MM-DD despliega la fecha en la cual se registró la solicitud en el sistema.
+                </p>
               </td>
             </tr>
             <tr>
               <td class="titletable">
                 <p class="SUBTITULO">
-                      Tipo nuevo crédito</p>
+                      Etapa/Estado
+                    </p>
               </td>
               <td>
-                <p class="PARRAFO">Si
-                  el tipo de solicitud es Nuevo crédito, en este campo se indica
-                  si es de solo titular, titular con adicionales o solo
-                    adicional el tipo de solicitud presentada a la entidad.</p>
+                <p class="PARRAFO">Campo que ilustra el punto en que se encuentra la solicitud.
+                </p>
               </td>
             </tr>
 
             <tr>
               <td class="titletable">
                 <p class="SUBTITULO">
-                      Etapa actual</p>
+                  Anexo</p>
               </td>
               <td>
-                <p class="PARRAFO">En
-                  este campo se indica de acuerdo con la parametrización efectuada
-                  para el producto y el tipo de solicitud, la etapa en la cual se
-                  encuentra la solicitud al momento de la consulta.</p>
+                <p class="PARRAFO">Campo que ilustra si para la solicitud le fue requerido algún soporte al cliente, caso en el cual se ilustra el dato o referencia correspondiente.
+                </p>
               </td>
             </tr>
 
             <tr>
               <td class="titletable">
                 <p class="SUBTITULO">
-                      Estado</p>
+                  Fin trámite
+                </p>
               </td>
               <td>
-                <p class="PARRAFO">Campo
-                  que muestra si la solicitud se encuentra aprobada totalmente,
-                    aprobada parcialmente, negada totalmente, negada paracialmente o
-                    en zona gris.</p>
+                <p class="PARRAFO">Campo que, mediante un Si o un No, indica si la solicitud ya pasó por la última etapa parametrizada para el producto y tipo de solicitud presentada.</p>
               </td>
             </tr>
           </table>
         </div>
-        <table>
-          <tr>
-            <td class="titletable">
-              <p class="SUBTITULO">
-                    Finalizada</p>
-            </td>
-            <td>
-              <p class="PARRAFO">En
-                este campo se indica Si o No la solicitud ya pasó por la última
-                etapa parametrizada para el producto y tipo de solicitud presentada.</p>
-            </td>
-          </tr>
-        </table>
+      
+        <p class="PARRAFO"><a name="BL_TARJETAS"></a><span class="SUBTITULO">
+          Tarjetas:</span></span> 
+          en este formulario se despliega la información de las tarjetas que el cliente posea en la entidad. Si la consulta se efectúa desde Emisor DB, y de requerirse mayor información sobre alguna de éstas, basta con posicionarse en el registro correspondiente y utilizar el enlace que se encuentra en el campo Número tarjeta, para que el sistema lo lleve al formulario correspondiente,
+            <a href="DBH_001B.html">Consulta de tarjeta.</a> 
+      </p>
 
-        <p class="PARRAFO"><a name="BL_CALIFICACIONES"></a><span class="SUBTITULO">
-            Calificaciones:</span></span> 
-          en caso que durante el avance de cualquiera de las solicitudes el cliente
-          haya sido enviado para aplicarle el proceso de scoring o calificación,
-          en este formulario se muestra el histórico de las diferentes calificaciones
-          obtenidas.</p>
-        <div>
-          <p class="TITLE"><img src="../img/SCF_002E14.PNG"></p>
-          <p class="TITLE">Descripción de campos</p>
-          <table>
-            <tr>
-              <td class="titletable">
-                <p class="SUBTITULO">
-                      Fecha calificación</p>
-              </td>
-              <td>
-                <p class="PARRAFO">Campo
-                  que muestra en formato YYYY-MM-DD la fecha en la cual se hizo la
-                  calificación del cliente.</p>
-              </td>
-            </tr>
-            <tr>
-              <td class="titletable">
-                <p class="SUBTITULO">Calificación</p>
-              </td>
-              <td>
-                <p class="PARRAFO">En
-                  este campo se despliega el resultado obtenido por el cliente en
-                  el proceso de scoring o calificación.</p>
-              </td>
-            </tr>
+      <p class="TITLE"><img src="../img/SCF_002E12.PNG"></p>
 
-            <tr>
-              <td class="titletable">
-                <p class="SUBTITULO">
-                      Origen</p>
-              </td>
-              <td>
-                <p class="PARRAFO">Campo
-                  que despliega la información respecto de cual fue el origen
-                  a través del cual se obtuvo la calificación del cliente.</p>
-              </td>
-            </tr>
-          </table>
+      <p class="TITLE">Descripción de campos</p>
+      <table>
+        <tr>
+          <td class="titletable">
+            <p class="SUBTITULO">
+                  Número de tarjeta</p>
+          </td>
+          <td>
+            <p class="PARRAFO">Campo que muestra el número enmascarado de cada una de las tarjetas que el cliente posee con la entidad. 
+            </p>
+          </td>
+        </tr>
+        <tr>
+          <td class="titletable">
+            <p class="SUBTITULO">Marca</p>
+          </td>
+          <td>
+            <p class="PARRAFO">Despliega el nombre de la franquicia a la cual pertenece cada una de las tarjetas del cliente.
+            </p>
+          </td>
+        </tr>
+
+        <tr>
+          <td class="titletable">
+            <p class="SUBTITULO">Cupo disponible</p>
+          </td>
+          <td>
+            <p class="PARRAFO">Campo que aplica para productos crédito.</p>
+          </td>
+        </tr>
+
+        <tr>
+          <td class="titletable">
+            <p class="SUBTITULO">
+                  Fecha de vencimiento</p>
+          </td>
+          <td>
+            <p class="PARRAFO">Campo enmascarado que, en formato AAAA-MM-DD contiene la fecha hasta la cual se encuentra vigente el plástico de cada tarjeta del cliente.
+            </p>
+          </td>
+        </tr>
+        <tr>
+          <td class="titletable">
+            <p class="SUBTITULO">
+                  Cupo asignado</p>
+          </td>
+          <td>
+            <p class="PARRAFO">Campo que aplica para productos crédito.
+              </p>
+          </td>
+        </tr>
+      </table>
+       
 
         </div>
   </section>

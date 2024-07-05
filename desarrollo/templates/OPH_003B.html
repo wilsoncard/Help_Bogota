@@ -1,24 +1,24 @@
 <!DOCTYPE html>
 <html lang="es">
 
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>BANKBU®</title>
-  <link rel="stylesheet" href="../css/pages.css">
-  <link rel="stylesheet" href="../css/style.css">
-  <link rel="icon" href="../img/ACQUIRER-logo.JPG" type="image/x-icon">
-</head>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OpencardWeb®</title>
+    <link rel="stylesheet" href="../css/pages.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="icon" href="../img/ACQUIRER-logo.JPG" type="image/x-icon">
+  </head>
 
-<body>
-  <header>
-    <img class="logo" src="../img/logoBankbu_.PNG" alt="Logo de Mi Empresa">
-    <div id="menuBtn">
-      <img class="TITLE" src="../img/menu.PNG" alt="Botón de Menú ">
-    </div>
-  </header>
+  <body>
+    <header>
+      <img class="logo" src="../img/logoBankbu_.PNG" alt="Logo de Mi Empresa">
+      <div id="menuBtn">
+        <img class="TITLE" src="../img/menu.PNG" alt="Botón de Menú ">
+      </div>
+    </header>
     <div id="menuContainer"></div>
-  <script>
+    <script>
     fetch('menu.html')
       .then(response => response.text())
       .then(html => {
@@ -26,95 +26,95 @@
       });
   </script>
 
-  <section>
-    <div>
-      
-              <p class="TITLE">Historia automatización de procesos</p>
+    <section>
+      <div>
 
-      <p class="PARRAFO">En este formulario la entidad puede consultar
-        la información histórica de la ejecución de los diferentes procesos <a
-            href="OPH_002B.html" >automatizados.</a></p>
-      <p class="PARRAFO">El formulario cuenta con un filtro que le permite al usuario seleccionar los criterios para los
-        cuales desea consultar la información histórica de ejecución de procesos.</p>
-      <p class="TITLE"><img src="../img/OPF_003E.PNG"></p>
+        <p class="TITLE">Historia automatización de procesos</p>
 
-      <p class="TITLE">Descripción de campos</p>
-      <table width=769>
-        <tr>
-          <td class="SUBTITULO">
-            <p class="SUBTITULO #1">Fecha ejecución
+        <p class="PARRAFO">Mediante este formulario, utilizando los criterios
+          del filtro, la entidad puede consultar la información o resultado de
+          la ejecución, en una fecha anterior en particular, de los diferentes
+          Grupos y/o Procesos.</p>
+        <p class="TITLE"><img src="../img/OPF_003E.PNG"></p>
+
+        <p class="TITLE">Descripción de campos</p>
+        <table width=769>
+          <tr>
+            <td class="SUBTITULO">
+              <p class="SUBTITULO #1">Fecha ejecución
               </p>
-          </td>
-          <td class="PARRAFO">
-            <p class="PARRAFO #1">Campo que ofrece la funcionalidad de un calendario en el que seleccionar la fecha a la que corresponden los procesos que se desea consultar.</p>
-          </td>
-        </tr>
-        <tr>
-          <td class="SUBTITULO">
-            <p class="SUBTITULO #1">Estado proceso
-
+            </td>
+            <td class="PARRAFO">
+              <p class="PARRAFO #1">Campo que ofrece la funcionalidad de un
+                calendario, mediante el cual se debe seleccionar la fecha a la
+                que corresponden los Grupos / Procesos que se desea
+                consultar.</p>
+            </td>
+          </tr>
+          <tr>
+            <td class="SUBTITULO">
+              <p class="SUBTITULO #1">Estado proceso
 
               </p>
-          </td>
-          <td class="PARRAFO">
-            <p class="PARRAFO #1">En este campo con lista de valores tipo combo, de la cual es posible seleccionar entre: No ejecutado, Proceso en ejecución, Ejecución parcial, Ejecución total, Proceso pendiente, Ejecución total y en blanco, el estado de los procesos a consultar.
+            </td>
+            <td class="PARRAFO">
+              <p class="PARRAFO #1">En este campo con lista de valores tipo
+                combo, de la cual es posible seleccionar entre: No ejecutado,
+                Proceso en ejecución, Ejecución parcial, Proceso pendiente,
+                Ejecución total, Proceso en cola y Esperando Confirmación, el
+                estado de los Grupos / Procesos a consultar.
+              </p>
+            </td>
+          </tr>
+
+          <tr>
+            <td class="titletable">
+              <p class="SUBTITULO">Código grupo
+              </p>
+            </td>
+            <td>
+              <p class="PARRAFO">	
+                Campo en el que debe digitarse el dato del Código del <a href="OPH_001B.html">grupo</a> en particular,
+                al cual pertenecen los procesos que se desea consultar.</p>
+            </td>
+          </tr>
+        </table>
+
+        <p class="PARRAFO">Una vez seleccionada la combinatoria de criterios de interés, al activar el botón Buscar, el sistema retorna la información de los registros que coincidan.</p>
+        <p class="PARRAFO">El formulario cuenta con el enlace Procesos el que, al activarse, despliega un nuevo formulario, en el cual se muestran los procesos pertenecientes al Grupo desde el que fue invocado, mostrando los datos correspondientes al resultado obtenido en el momento en que fue lanzado cada proceso: </p>
+        <p class="TITLE"><img src="../img/OPF_003E1.PNG"></p>
+        <p class="TITLE">Descripcion Campos</p>
+        <table>
+          <tr>
+            <td class="SUBTITULO">
+              <p class="SUBTITULO #1">Código proceso </p>
+            </td>
+            <td>
+              <p class="PARRAFO #1">Campo en el que se ilustra el dato que identifica a cada uno de los procesos, que hacen parte del Grupo desde el cual fue invocado el enlace correspondiente.</p>
+            </td>
+          </tr>
+          <tr>
+            <td class="titletable">
+              <p class="SUBTITULO">Objeto lógico</p>
+            </td>
+            <td>
+              <p class="PARRAFO">En este campo se muestra el nombre del procedimiento o programa ejecutado en la fecha consultada.</p>
+            </td>
+          </tr>
+          <tr>
+            <td class="titletable">
+              <p class="SUBTITULO">Secuencia de ejcución </p>
+            </td>
+            <td>
+              <p class="PARRAFO">Campo que indica el número de veces que fue ejecutado el proceso en la fecha consultada.
+              </p>
+            </td>
+          </tr>
+          <tr>
+            <td class="SUBTITULO">Estado proceso</span></td>
+          <td>
+            <p class="PARRAFO">Campo que ilustra si el proceso terminó o no de forma exitosa para la fecha consultada.
             </p>
-          </td>
-        </tr>
-
-        <tr>
-          <td class="titletable">
-            <p class="SUBTITULO">Código grupo
-              </p>
-          </td>
-          <td>
-            <p class="PARRAFO">Campo con lista de valores de la cual se puede seleccionar el <a href="OPH_001B.html"
-                  >grupo</a> en particular, al cual pertenecen los procesos que se desea consultar.</p>
-          </td>
-        </tr>
-      </table>
-
-      <p class="PARRAFO">Una vez seleccionada la fecha y los dem&agrave;s criterios mediante el botón buscar el
-        sistema trae la información de todos los registros que coincidan.</p>
-      <p class="TITLE"><img src="../img/OPF_003E1.PNG"></p>
-      <p class="PARRAFO">El formulario cuenta con el hipervínculo procesos que despliega un nuevo
-        formulario en el cual se muestran
-        todos los procesos pertenecientes al grupo y que pueden ser ejecutados en
-        la fecha y van acompa&ntilde;ados de una casilla en la que se marcan aquellos
-        que se desea ejecutar.</p>
-
-      <p class="TITLE"><img src="../img/OPF_003E2.PNG" ></p>
-      <p class="TITLE">Descripcion Campos</p>
-      <table>
-        <tr>
-          <td class="SUBTITULO">
-            <p class="SUBTITULO #1">Código proceso </p>
-          </td>
-          <td>
-            <p class="PARRAFO #1">Despliega la identificación de cada uno de los grupos disponibles o programados
-              para la fecha hoy del sistema.</p>
-          </td>
-        </tr>
-        <tr>
-          <td class="titletable">
-            <p class="SUBTITULO">Objeto lógico</p>
-          </td>
-          <td>
-            <p class="PARRAFO">En este campo se muestra el nombre del procedimiento o programa ejecutado en la fecha indicada</p>
-          </td>
-        </tr>
-        <tr>
-          <td class="titletable">
-            <p class="SUBTITULO">Secuencia de ejcución </p>
-          </td>
-          <td>
-            <p class="PARRAFO">Campo que indica el número de veces que fue ejecutado el proceso en la fecha indicada.</p>
-          </td>
-        </tr>
-        <tr>
-          <td class="SUBTITULO">Estado proceso</span></td>
-          <td>
-            <p class="PARRAFO">Campo que despliega el estado del proceso para la fecha seleccionada.</p>
           </td>
         </tr>
         <tr>
@@ -122,9 +122,8 @@
             <p class="SUBTITULO">Ejecutado por</p>
           </td>
           <td>
-            <p class="PARRAFO">Campo que muestra el mensaje enviado por el sistema al momento de finalizar el proceso. Por lo general
-              cuando el proceso no culmina exitosamente muestra el error que indica la causa de no terminación
-              del proceso.</p>
+            <p class="PARRAFO">Campo que ilustra el dato del Usuario logueado en el aplicativo con el que se ordenó la ejecución de cada proceso que pertenece al Grupo consultado.
+            </p>
           </td>
         </tr>
         <tr>
@@ -132,9 +131,8 @@
             <p class="SUBTITULO">Fecha inicio</p>
           </td>
           <td>
-            <p class="PARRAFO">En este campo se muestra la fecha y hora en la cual se ordenó el inicio de la ejecución del
-              proceso. En caso de varias ejecuciones para la misma fecha, muestra la información correspondiente
-              a la última vez que se dió inicio al proceso</p>
+            <p class="PARRAFO">En este campo se muestra la fecha y hora en la cual se ordenó o lanzó el proceso. En caso de varias ejecuciones para la misma fecha, muestra la información correspondiente a la última vez que se dio inicio al proceso.
+            </p>
           </td>
         </tr>
         <tr>
@@ -142,9 +140,8 @@
             <p class="SUBTITULO">Fecha fin</p>
           </td>
           <td>
-            <p class="PARRAFO">Campo que contiene la fecha y hora en la que finalizó la ejecución del proceso. En caso de
-              varias ejecuciones para la misma fecha, muestra la información correspondiente a la
-              finalización de la última vez que se corrió el proceso.</p>
+            <p class="PARRAFO">Campo que contiene la fecha y hora en la que finalizó la ejecución del proceso. En caso de varias ejecuciones para la misma fecha, muestra la información correspondiente a la finalización de la última vez que se corrió el proceso.
+            </p>
           </td>
         </tr>
         <tr>
@@ -152,24 +149,23 @@
             <p class="SUBTITULO">Mensaje</p>
           </td>
           <td>
-            <p class="PARRAFO">Campo que muestra el mensaje enviado por el sistema al momento de finalizar el proceso. Por lo general
-              cuando el proceso no culmina exitosamente muestra el error que indica la causa de no terminación
-              del proceso.</p>
+            <p class="PARRAFO">Campo que muestra el mensaje enviado por el sistema al momento de finalizar el proceso. Por lo general cuando el proceso no culmina exitosamente muestra el error que indica la causa de no terminación del proceso.
+            </p>
           </td>
         </tr>
       </table>
 
-  </section>
-  <script src="../js/menu.js"></script>
+    </section>
+    <script src="../js/menu.js"></script>
 
-  <div id="footerContainer"></div>
-<script>
+    <div id="footerContainer"></div>
+    <script>
   fetch('footer.html')
     .then(response => response.text())
     .then(html => {
       document.getElementById('footerContainer').innerHTML = html;
     });
 </script>
-</body>
+  </body>
 
 </html>

@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="es">
+
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OpencardWeb®</title>
+    <link rel="stylesheet" href="../css/pages.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="icon" href="../img/ACQUIRER-logo.JPG" type="image/x-icon">
+  </head>
+
+  <body>
+    <header>
+      <img class="logo" src="../img/logoBankbu_.PNG" alt="Logo de Mi Empresa">
+      <div id="menuBtn">
+        <img class="TITLE" src="../img/menu.PNG" alt="Botón de Menú ">
+      </div>
+    </header>
+    <div id="menuContainer"></div>
+    <script>
+    fetch('menu.html')
+      .then(response => response.text())
+      .then(html => {
+        document.getElementById('menuContainer').innerHTML = html;
+      });
+  </script>
+    <section>
+      <div>
+
+        <p class="TITLE">Ejecución de procesos</p>
+
+        <p class="PARRAFO">La funcionalidad provista por esta opción permite dar
+          curso a las <i><a
+              href="DBH_002B.html">solicitudes masivas</a></i> requeridas por
+          las oficinas, al generar las inserciones de los registros en las
+          tablas correspondientes. Si la ejecución es exitosa, dependiendo de si
+          los plásticos corresponden a tarjetas sin chip, se deberá evidenciar
+          el incremento del número de registros en la opción <a
+            href="PLH_008B.html">Plástico a realzar</a> o en su defecto, los
+          plásticos corresponden a tarjetas con chip, caso en el cual, se deberá
+          evidenciar el incremento del número de registros en la opción Realce chip</a>. </p>
+
+        <p class="TITLE"><img src="../img/DBH_005B.PNG"></p>
+
+        <p class="TITLE"><a name="BL_GENERACION"></a>Descripción de Campos</p>
+
+        <table>
+          <tr>
+            <td class="titletable">
+              <p class="SUBTITULO">Marca</p>
+            </td>
+            <td>
+              <p class="PARRAFO">Campo que posee lista de valores poblada a
+                través de la opción de Franquicias, habilitadas para la entidad,
+                de los parámetros de negocio del Núcleo, de la que debe
+                indicarse a cuál de ellas corresponden los plásticos solicitados
+                y a generar.</p>
+            </td>
+          </tr>
+          <tr>
+            <td class="titletable">
+              <p class="SUBTITULO">Generación masiva</p>
+            </td>
+            <td>
+              <p class="PARRAFO">Botón especial que por defecto aparece activo y
+                que permite indicarle a los programas invocados, que corresponde
+                a la <i><a href="DBH_002B.html">solicitud masiva</a></i>
+                de plásticos realizada por oficina o sucursal de la entidad.</p>
+            </td>
+          </tr>
+        </table>
+
+      </div>
+    </section>
+    <script src="../js/menu.js"></script>
+    <div id="footerContainer"></div>
+  </body>
+  <script>
+  fetch('footer.html')
+    .then(response => response.text())
+    .then(html => {
+      document.getElementById('footerContainer').innerHTML = html;
+    });
+</script>
+</html>

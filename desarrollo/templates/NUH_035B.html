@@ -4,7 +4,7 @@
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>BANKBU®</title>
+    <title>OpencardWeb®</title>
     <link rel="stylesheet" href="../css/pages.css">
     <link rel="stylesheet" href="../css/style.css">
     <link rel="icon" href="../img/ACQUIRER-logo.JPG" type="image/x-icon">
@@ -30,85 +30,74 @@
       <div>
         <p class="TITLE">Estado de ingresos y egresos</p>
 
-        <p class="PARRAFO">Mediante esta función se habilita la consulta y mantenimiento
-          de la tabla en la que la entidad financiera almacena los diferentes
-          items o conceptos monetarios, aplicables a los tipos de <a
-            href="SOH_004B.html">solicitudes</a> (personas naturales,
-          peque&ntilde;as o grandes empresas), permitiendo asociar parte de la
-          información suministrada por el cliente, a conceptos
-          financieros similares a un estado de ganancias y pérdidas, lo
-          que facilita conocer, entre otros, la capacidad de endeudamiento del
-          cliente. Adicionalmente, al asociarle la clase de prototipo es posible
-          generar, mediante interfaces específicas, información
-          relevante para la entidad.</p>
+        <p class="PARRAFO">Mediante esta función se habilita la consulta y
+          mantenimiento de la tabla en la que la entidad financiera almacena los
+          diferentes items o conceptos monetarios, aplicables a los tipos de <a
+            href="SOH_004B.html">solicitudes,</a> permitiendo asociar parte de
+          la
+          información suministrada por el cliente, a conceptos financieros
+          similares a un estado de ganancias y pérdidas, lo que facilita
+          conocer, entre otros, la capacidad de endeudamiento del cliente. El
+          formulario contiene los enlaces: Actualizar, Eliminar y Adicionar.</p>
         <p class="TITLE"><img src="../img/NUF_035E.PNG"></p>
 
-        <p class="PARRAFO">El
-          formulario contiene los enlaces:Actualizar, Eliminar, y
-          Adicionar.</p>
-        <p class="PARRAFO"><span class="SUBTITULO">Adicionar:</span> Si el
-          usuario invoca la opción Adicionar se despliega un formulario
-          con los siguientes campos<span>:</p>
+        <p class="PARRAFO"><span class="SUBTITULO">Adicionar:</span> Al invocar
+          ese enlace se despliega un formulario con los siguientes campos:
+
+        </p>
         <p class="TITLE"><img src="../img/NUF_035E1.PNG"></p>
 
         <table>
           <tr>
             <td class="titletable"><p
-                class="SUBTITULO"><span>Código</p></td>
-            <td><p class="PARRAFO">Campo numérico de tres dígitos,
-                obligatorio, que corresponde al código asignado a cada
-                uno de los conceptos de ingreso o egreso.</p> </td>
+                class="SUBTITULO">Código</p></td>
+            <td><p class="PARRAFO">Campo numérico de tres dígitos, obligatorio,
+                que corresponde al código asignado a cada uno de los conceptos
+                de ingreso o egreso.
+
+              </p> </td>
           </tr>
           <tr>
             <td class="titletable"><p
-                class="SUBTITULO"><span>Descripción</p></td>
-          <td><p class="PARRAFO">En este campo alfanumérico de 30
-              posiciones, obligatorio, se registra el nombre o descriptivo
-              asociado al código de cada concepto de ingreso o
-              egreso.</p>
-          </td>
-        </tr>
-        <tr>
-          <td class="titletable"><p
-              class="SUBTITULO"><span>Acción</p></td>
-          <td><p class="PARRAFO">Campo que contiene lista de valores de la cual
-              se puede seleccionar entre sumar o restar el efecto o
-              acción asociado a cada concepto de ingreso o egreso, acorde
-              con las prácticas contables tendientes a la
-              obtención de un estado de ganancias y pérdidas o a
-              otros propósitos deseados por la entidad.</p> </td>
-        </tr>
-        <tr>
-          <td class="titletable"><p
-              class="SUBTITULO"><span>Prototipo</p></td>
-          <td><p class="PARRAFO">En este campo con lista de valores adjunta se
-              debe seleccionar entre Utilidad neta, Patrimonio, Pasivos,
-              Activos, Otros gastos, Gastos, Otros ingresos o Ingresos, el
-              código interno con el cual el sistema reconocerá
-              cada uno de los conceptos definidos, con base en los cuales
-              procesará dicha información, en caso que la entidad
-              defina alguna interface específica para con ese fin.</p>
-          </td>
-        </tr>
-      </table>
-      <p class="PARRAFO"><span class="PARRAFO"><span
-            class="SUBTITULO">Actualizar:</span> Si el usuario invoca la
-          opción Actualizar se despliega un formulario
-          en el cual los únicos campos modificables son: </span>
-        Descrición, Acción, y Prototipo.</p>
-      <p class="TITLE"><img src="../img/NUF_035E2.PNG"></p>
-      </div>
-    </section>
-    <script src="../js/menu.js"></script>
+                class="SUBTITULO">Descripción</p></td>
+            <td><p class="PARRAFO">En este campo alfanumérico de 30 posiciones,
+                obligatorio, se registra el nombre o descriptivo asociado al
+                código de cada concepto de ingreso o egreso.
 
-    <div id="footerContainer"></div>
-    <script>
+              </p>
+            </td>
+          </tr>
+          <tr>
+            <td class="titletable"><p
+                class="SUBTITULO">Acción</p></td>
+            <td><p class="PARRAFO">Campo que contiene lista de valores de la
+                cual se puede seleccionar entre sumar o restar el efecto o
+                acción asociado a cada concepto de ingreso o egreso, acorde con
+                las prácticas contables tendientes a la obtención de un estado
+                de ganancias y pérdidas o a otros propósitos deseados por la
+                entidad.
+
+              </p> </td>
+          </tr>
+
+        </table>
+        <p class="PARRAFO"><span class="PARRAFO"><span
+              class="SUBTITULO">Actualizar:</span> Al invocar ese enlace se
+            despliega un formulario en el cual, el único campo no modificable
+            es: Código</p>
+          <p class="TITLE"><img src="../img/NUF_035E2.PNG"></p>
+        </div>
+      </section>
+      <script src="../js/menu.js"></script>
+
+      <div id="footerContainer"></div>
+      <script>
   fetch('footer.html')
     .then(response => response.text())
     .then(html => {
       document.getElementById('footerContainer').innerHTML = html;
     });
 </script>
-  </body>
+    </body>
 
-</html>
+  </html>

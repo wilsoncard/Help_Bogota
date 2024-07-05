@@ -1,24 +1,25 @@
 <!DOCTYPE html>
 <html lang="es">
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>BANKBU®</title>
-    <link rel="stylesheet" href="../css/pages.css">
-    <link rel="stylesheet" href="../css/style.css">
-    <link rel="icon" href="../img/ACQUIRER-logo.JPG" type="image/x-icon">
-</head>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>OpencardWeb®</title>
+        <link rel="stylesheet" href="../css/pages.css">
+        <link rel="stylesheet" href="../css/style.css">
+        <link rel="icon" href="../img/ACQUIRER-logo.JPG" type="image/x-icon">
+    </head>
 
-<body>
-    <header>
-        <img class="logo" src="../img/logoBankbu_.PNG" alt="Logo de Mi Empresa">
-        <div id="menuBtn">
-            <img class="TITLE" src="../img/menu.PNG" alt="Botón de Menú ">
-        </div>
-    </header>
-    <div id="menuContainer"></div>
-    <script>
+    <body>
+        <header>
+            <img class="logo" src="../img/logoBankbu_.PNG"
+                alt="Logo de Mi Empresa">
+            <div id="menuBtn">
+                <img class="TITLE" src="../img/menu.PNG" alt="Botón de Menú ">
+            </div>
+        </header>
+        <div id="menuContainer"></div>
+        <script>
         fetch('menu.html')
             .then(response => response.text())
             .then(html => {
@@ -26,141 +27,166 @@
             });
     </script>
 
-    <section>
-        <div>
-            <table>
-                <tr>
-                    <td>
-                        <div>
-                            <p class="TITLE">Puntos de entrega</p>
-                        </div>
-                    </td>
-                </tr>
-            </table>
-            <p class="PARRAFO">Mediante esta opción, la entidad define aquellos puntos físicos, sucursales u otros
-                lugares, a los que sus clientes pueden dirigirse para recibir el plástico de su tarjeta. El formulario
-                dispone de los enlaces: Actualizar, Eliminar, Adicionar y Detalle.</p>
-            <p class="TITLE"><img src="../img/NUF_127E.PNG"></p>
-            <p class="PARRAFO"><span class="SUBTITULO">Actualizar:</span> Al invocar este formulario, se le permite a la
-                entidad modificar los datos de los campos Dirección y/o ubicación. Los otros tres, Punto de entrega,
-                Descripción y Código agente, son de salida o no modificables.</p>
+        <section>
+            <div>
 
-            <p class="TITLE"><img src="../img/NUF_127E1.PNG"></p>
+                <p class="TITLE">Puntos de entrega</p>
 
-            <p class="TITLE">Descripción de campos</p>
+                <p class="PARRAFO">Mediante esta opción, la entidad define
+                    aquellos puntos físicos, sucursales u otros
+                    lugares, a los que sus clientes pueden dirigirse para
+                    recibir el plástico de su tarjeta. El formulario
+                    dispone de los enlaces: Actualizar, Eliminar, Adicionar y
+                    Detalle.</p>
+                <p class="TITLE"><img src="../img/NUF_127E.PNG"></p>
+                <p class="PARRAFO"><span class="SUBTITULO">Actualizar:</span> Al
+                    invocar este formulario, se le permite a la
+                    entidad modificar los datos de los campos Dirección y/o
+                    ubicación. Los otros tres, Punto de entrega,
+                    Descripción y Código agente, son de salida o no
+                    modificables.</p>
 
-            <table>
-                <tr>
-                    <td class="titletable">
-                        <p class="SUBTITULO">Dirección</p>
-                    </td>
-                    <td>
-                        <p class="PARRAFO">Campo alfanumérico de hasta 60 caracteres, obligatorio, en que se debe
-                            registrar la nomenclatura de la sucursal o lugar en el que el cliente puede reclamar el
-                            plástico de su tarjeta.
-                        </p>
-                    </td>
-                </tr>
-                <tr>
-                    <td class="titletable">
-                        <p class="SUBTITULO"><b>Ubicación
-                            </b></p>
-                    </td>
-                    <td>
-                        <p class="PARRAFO">Campo obligatorio que cuenta con una lista de valores poblada en <a
-                                href="NUH_003B.html">Entidades territoriales,</a> de la que debe seleccionarse el
-                            municipio en el que se encuentra la sucursal o punto físico.</p>
-                    </td>
-                </tr>
-            </table>
-            <p class="PARRAFO"><span class="SUBTITULO">Adicionar:</span> Al invocar este formulario, se le permite a la
-                entidad ingresar los datos para cada nuevo punto de entrega de plásticos.</p>
+                <p class="TITLE"><img src="../img/NUF_127E1.PNG"></p>
 
-            <p class="TITLE"><img src="../img/NUF_127E2.PNG"></p>
-            <table>
-                <tr>
-                    <td class="titletable">
-                        <p class="SUBTITULO">Punto de entrega</p>
-                    </td>
-                    <td>
-                        <p class="PARRAFO">Campo numérico de hasta 4 dígitos, obligatorio, en que se debe registrar el
-                            número asociado a la nueva sucursal o lugar en el que el cliente puede reclamar el plástico
-                            de su tarjeta.
-                        </p>
-                    </td>
-                </tr>
-                <tr>
-                    <td class="titletable">
-                        <p class="SUBTITULO"><b>
-                                Descripción
-                            </b></p>
-                    </td>
-                    <td>
-                        <p class="PARRAFO">
-                            Campo alfanumérico de hasta 10 caracteres, obligatorio, en el que debe indicarse el nombre
-                            de la nueva sucursal o lugar en el que el cliente puede reclamar el plástico de su tarjeta.
-                        </p>
-                    </td>
-                </tr>
-                <tr>
-                    <td class="titletable">
-                        <p class="SUBTITULO"><b>
-                                Código agente
-                            </b></p>
-                    </td>
-                    <td>
-                        <p class="PARRAFO">
-                            Campo obligatorio que cuenta con una lista de valores poblada en <a
-                                href="NUH_045B.html">Funcionarios,</a> de la que debe seleccionarse aquel al que le
-                            corresponda atender a los clientes asociados a la sucursal o lugar en el que el cliente
-                            puede reclamar el plástico de su tarjeta.</p>
-                    </td>
-                </tr>
-                <tr>
-                    <td class="titletable">
-                        <p class="SUBTITULO"><b>
+                <p class="TITLE">Descripción de campos</p>
 
-                                Dirección
-                            </b></p>
-                    </td>
-                    <td>
-                        <p class="PARRAFO">
+                <table>
+                    <tr>
+                        <td class="titletable">
+                            <p class="SUBTITULO">Dirección</p>
+                        </td>
+                        <td>
+                            <p class="PARRAFO">Campo alfanumérico de hasta 60
+                                caracteres, obligatorio, en que se debe
+                                registrar la nomenclatura de la sucursal o lugar
+                                en el que el cliente puede reclamar el
+                                plástico de su tarjeta.
+                            </p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="titletable">
+                            <p class="SUBTITULO"><b>Ubicación
+                                </b></p>
+                        </td>
+                        <td>
+                            <p class="PARRAFO">Campo obligatorio que cuenta con
+                                una lista de valores poblada en <a
+                                    href="NUH_003B.html">Entidades
+                                    territoriales,</a> de la que debe
+                                seleccionarse el
+                                municipio en el que se encuentra la sucursal o
+                                punto físico.</p>
+                        </td>
+                    </tr>
+                </table>
+                <p class="PARRAFO"><span class="SUBTITULO">Adicionar:</span> Al
+                    invocar este formulario, se le permite a la
+                    entidad ingresar los datos para cada nuevo punto de entrega
+                    de plásticos.</p>
 
-                            Campo alfanumérico de hasta 60 caracteres, obligatorio, en que se debe registrar la
-                            nomenclatura de la sucursal o lugar en el que el cliente puede reclamar el plástico de su
-                            tarjeta.</p>
-                    </td>
-                </tr>
-                <tr>
-                    <td class="titletable">
-                        <p class="SUBTITULO"><b>
-                                Ubicación
-                            </b></p>
-                    </td>
-                    <td>
-                        <p class="PARRAFO">
-                            Campo obligatorio que cuenta con una lista de valores poblada en <a
-                            href="NUH_003B.html">Entidades territoriales,</a> de
-                            la que debe seleccionarse el municipio en el que se encuentra la sucursal o punto físico.
-                        </p>
-                    </td>
-                </tr>
-            </table>
-            <p class="PARRAFO"><span class="SUBTITULO">Detalle:</span>  Al invocar este formulario, se le muestran los datos adicionales asociados a cada sucursal o lugar en el que el cliente puede reclamar el plástico de su tarjeta.</p>
+                <p class="TITLE"><img src="../img/NUF_127E2.PNG"></p>
+                <table>
+                    <tr>
+                        <td class="titletable">
+                            <p class="SUBTITULO">Punto de entrega</p>
+                        </td>
+                        <td>
+                            <p class="PARRAFO">Campo numérico de hasta 4
+                                dígitos, obligatorio, en que se debe registrar
+                                el
+                                número asociado a la nueva sucursal o lugar en
+                                el que el cliente puede reclamar el plástico
+                                de su tarjeta.
+                            </p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="titletable">
+                            <p class="SUBTITULO"><b>
+                                    Descripción
+                                </b></p>
+                        </td>
+                        <td>
+                            <p class="PARRAFO">
+                                Campo alfanumérico de hasta 10 caracteres,
+                                obligatorio, en el que debe indicarse el nombre
+                                de la nueva sucursal o lugar en el que el
+                                cliente puede reclamar el plástico de su
+                                tarjeta.
+                            </p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="titletable">
+                            <p class="SUBTITULO"><b>
+                                    Código agente
+                                </b></p>
+                        </td>
+                        <td>
+                            <p class="PARRAFO">
+                                Campo obligatorio que cuenta con una lista de
+                                valores poblada en <a
+                                    href="NUH_045B.html">Funcionarios,</a> de la
+                                que debe seleccionarse aquel al que le
+                                corresponda atender a los clientes asociados a
+                                la sucursal o lugar en el que el cliente
+                                puede reclamar el plástico de su tarjeta.</p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="titletable">
+                            <p class="SUBTITULO"><b>
 
-            <p class="TITLE"><img src="../img/NUF_127E3.PNG"></p>
-        </div>
-    </section>
-    <script src="../js/menu.js"></script>
+                                    Dirección
+                                </b></p>
+                        </td>
+                        <td>
+                            <p class="PARRAFO">
 
-    <div id="footerContainer"></div>
-    <script>
+                                Campo alfanumérico de hasta 60 caracteres,
+                                obligatorio, en que se debe registrar la
+                                nomenclatura de la sucursal o lugar en el que el
+                                cliente puede reclamar el plástico de su
+                                tarjeta.</p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="titletable">
+                            <p class="SUBTITULO"><b>
+                                    Ubicación
+                                </b></p>
+                        </td>
+                        <td>
+                            <p class="PARRAFO">
+                                Campo obligatorio que cuenta con una lista de
+                                valores poblada en <a
+                                    href="NUH_003B.html">Entidades
+                                    territoriales,</a> de
+                                la que debe seleccionarse el municipio en el que
+                                se encuentra la sucursal o punto físico.
+                            </p>
+                        </td>
+                    </tr>
+                </table>
+                <p class="PARRAFO"><span class="SUBTITULO">Detalle:</span> Al
+                    invocar este formulario, se le muestran los datos
+                    adicionales asociados a cada sucursal o lugar en el que el
+                    cliente puede reclamar el plástico de su tarjeta.</p>
+
+                <p class="TITLE"><img src="../img/NUF_127E3.PNG"></p>
+            </div>
+        </section>
+        <script src="../js/menu.js"></script>
+
+        <div id="footerContainer"></div>
+        <script>
         fetch('footer.html')
             .then(response => response.text())
             .then(html => {
                 document.getElementById('footerContainer').innerHTML = html;
             });
     </script>
-</body>
+    </body>
 
 </html>

@@ -1,25 +1,26 @@
 <!DOCTYPE html>
 <html lang="es">
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>BANKBU®</title>
-    <link rel="stylesheet" href="../css/pages.css">
-    <link rel="stylesheet" href="../css/style.css">
-    <link rel="icon" href="../img/ACQUIRER-logo.JPG" type="image/x-icon">
-</head>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>OpencardWeb®</title>
+        <link rel="stylesheet" href="../css/pages.css">
+        <link rel="stylesheet" href="../css/style.css">
+        <link rel="icon" href="../img/ACQUIRER-logo.JPG" type="image/x-icon">
+    </head>
 
-<body>
+    <body>
 
-    <header>
-        <img class="logo" src="../img/logoBankbu_.PNG" alt="Logo de Mi Empresa">
-        <div id="menuBtn">
-            <img class="TITLE" src="../img/menu.PNG" alt="Botón de Menú ">
-        </div>
-    </header>
-      <div id="menuContainer"></div>
-  <script>
+        <header>
+            <img class="logo" src="../img/logoBankbu_.PNG"
+                alt="Logo de Mi Empresa">
+            <div id="menuBtn">
+                <img class="TITLE" src="../img/menu.PNG" alt="Botón de Menú ">
+            </div>
+        </header>
+        <div id="menuContainer"></div>
+        <script>
     fetch('menu.html')
       .then(response => response.text())
       .then(html => {
@@ -27,181 +28,326 @@
       });
   </script>
 
-    <section>
-        
+        <section>
+
             <div>
-              
+
                 <p class="TITLE">Roles y restricciones </p>
-                                
-                <p class="PARRAFO">Este formulario permite la consulta
-                    y mantenimiento de la tabla en la cual se almacenan los Perfiles establecidos por la
-                    corporación o entidad
-                    financiera.
+
+                <p class="PARRAFO">Este formulario permite la consulta y
+                    mantenimiento de la tabla en la cual se almacenan los Roles
+                    (antes Perfiles) establecidos por la entidad financiera.
+
+                    El formulario contiene los enlaces: Actualizar, Adicionar y
+                    Restricciones
                 </p>
-                <p class="PARRAFO">El formulario contiene los enlaces: Actualizar,Adicionar y Restricciones.</p>
+
                 <p class="TITLE"><img src="../img/NUF_014B.PNG"></p>
-                <p class="PARRAFO">El formulario contiene los enlaces: Actualizar, Adicionar y Restricciones.</p>
-                <p class="PARRAFO"><span class="SUBTITULO">Actualizar</span>: si
-                    el usuario invoca la opción Adicionar se despliega un wizard de tres pasos Rol, Tareas y
-                    Funcionalidad.</p>
-                <p class="TITLE"><img src="../img/NUF_014B1.PNG"></p>
-                
-                    <p class="TITLE">Roles</p>
-                
-                <table>
-                    <tr>
-                        <td>
-                            <p class="SUBTITULO"><span >Rol</p>
-                        </td>
-                        <td>
-                            <p class="PARRAFO">Campo alfanumérico de 30 caracteres en el cual se ingresa el
-                                nombre del Rol que se desea agregar.</p>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>
-                            <p class="SUBTITULO"><span >Tipo de horario </p>
-                        </td>
-                        <td>
-                            <p class="PARRAFO">Corresponde al los turnos de trabajo asignado a cada perfil, que va desde
-                                horario total, diurno y nocturno. </p>
-                        </td>
-                    </tr>
-                </table>
-                <p class="TITLE"><img src="../img/NUF_014B2.PNG"></p>
-
-                
-                    <p class="TITLE">Tareas </p>
-                
-                <table>
-                    <tr>
-                        <td>
-                            <p class="SUBTITULO"><span >Nucleo y Emisor </p>
-                        </td>
-                        <td>
-                            <p class="PARRAFO">Menú del sistema, donde se muestran las opciones vinculadas a cada
-                                modulo y estas a suves determinan los casos de uso permitidos y restringidos para los
-                                perfiles creados por la entidad.</p>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>
-                            <p class="SUBTITULO"><span >Casos de uso restringidos </p>
-                        </td>
-                        <td>
-                            <p class="PARRAFO">Corresponde a las opciones que permiten al perfil seleccionado bloquear
-                                permisos de acceso y navegacion de la forma.</p>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>
-                            <p class="SUBTITULO">Casos de uso permitidos </p>
-                        </td>
-                        <td>
-                            <p class="PARRAFO">Corresponde a las opciones que permiten al perfil seleccionado otorgar
-                                permisos de acceso y navegacion de la forma.</p>
-                        </td>
-                    </tr>
-                </table>
-                <p class="TITLE"><img src="../img/NUF_014B3.PNG"></p>
-
-                
-                    <p class="TITLE">Funcionalidad</p>
-                
-                <table>
-                    <tr>
-                        <td>
-                            <p class="SUBTITULO"><span >Nucleo y Emisor </p>
-                        </td>
-                        <td>
-                            <p class="PARRAFO">Menú del sistema, donde se muestran las opciones vinculadas a cada
-                                modulo y estas a su ves determinan la funcionalidad permitida y funcionalidad
-                                restringida asignada a los casos de uso seleccionados para los perfiles creados por la
-                                entidad.</p>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>
-                            <p class="SUBTITULO"><span >Funcionalidades restringidas</p>
-                        </td>
-                        <td>
-                            <p class="PARRAFO">Corresponde a las opciones restringidas que no permiten al perfil
-                                seleccionado la navegacion y el acceso dentro de la forma y manejo de la funcionalidad
-                                como lo es adicionar, eliminar y actualizar.</p>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>
-                            <p class="SUBTITULO">Funcionalidades permitidas </p>
-                        </td>
-                        <td>
-                            <p class="PARRAFO">Corresponde a las opciones que permiten al perfil seleccionado otorgar
-                                permisos de acceso, navegacion de la forma y manejo de la funcionalidad como lo es
-                                adicionar, eliminar y actualizar.</p>
-                        </td>
-                    </tr>
-                </table>
-                <p class="PARRAFO"><span class="SUBTITULO">Adicionar:</span>  Si el usuario invoca la
-                    opción Adicionar se despliega un formulario con los siguientes campos:</span> 
-                </p>
+                <p class="PARRAFO"><span class="SUBTITULO">Adicionar</span>: Al
+                    invocar ese enlace se despliega un wizard de tres pasos:
+                    Rol, Tareas y Funcionalidad:</p>
                 <p class="TITLE"><img src="../img/NUF_014B4.PNG"></p>
-                <table>
-                    <tr>
-                        <td>
-                            <p class="SUBTITULO"><span >Rol</p>
-                        </td>
-                        <td>
-                            <p class="PARRAFO">Campo alfanumérico de 30 caracteres en el cual se ingresa el
-                                nombre del Rol que se desea agregar.</p>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>
-                            <p class="SUBTITULO"><span >Tipo de horario</p>
-                        </td>
-                        <td>
-                            <p class="PARRAFO">Corresponde al los turnos de trabajo asignado a cada perfil, que va desde
-                                horario total, diurno y nocturno.</p>
-                        </td>
-                    </tr>
-                </table>
-                <p class="PARRAFO"><span class="SUBTITULO">Restricciones:</span>  Si el usuario invoca la opción
-                    Restricciones se despliega un formulario con los siguientes campos:</span> 
-                </p>
-                <p class="TITLE"><img src="../img/NUF_014B5.PNG"></p>
-                <table>
-                    <tr>
-                        <td>
-                            <p class="SUBTITULO"><span >Tipo de restricción </p>
-                        </td>
-                        <td>
-                            <p class="PARRAFO">Corresponde a los tipos de restriccion al rol o perfil asignado, que
-                                pueden ser restricciones de Campo, Tipo de transacción, Tipo de solicitud,
-                                Novedades, Productos, Botones y/o plasticos. </p>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>
-                            <p class="SUBTITULO"><span >Descripción</p>
-                        </td>
-                        <td>
-                            <p class="PARRAFO">Corresponde a la descripción de cada tipo de restricción
-                                asignada para cada rol o perfil. </p>
-                        </td>
-                    </tr>
-                </table>
-        
-    </section>
-    <script src="../js/menu.js"></script>
 
-    <div id="footerContainer"></div>
-<script>
+                <p class="TITLE">Roles</p>
+
+                <table>
+                    <tr>
+                        <td>
+                            <p class="SUBTITULO"><span>Rol</p>
+                            </td>
+                            <td>
+                                <p class="PARRAFO">Campo alfanumérico de 30
+                                    caracteres en el cual se ingresa el
+                                    nombre del Rol que se desea agregar.</p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <p class="SUBTITULO"><span>Tipo de horario </p>
+                                </td>
+                                <td>
+                                    <p class="PARRAFO">Campo obligatorio,
+                                        dispone de lista de valores tipo combo,
+                                        de la que debe seleccionarse entre:
+                                        Diurno, Nocturno o Total, aquel que
+                                        mejor describa el turno de trabajo
+                                        asignado a cada Rol. </p>
+                                </td>
+                            </tr>
+                        </table>
+                        <p class="TITLE"><img src="../img/NUF_014B2.PNG"></p>
+
+                        <p class="TITLE">Tareas </p>
+
+                        <table>
+                            <tr>
+                                <td>
+                                    <p class="SUBTITULO"><span>Núcleo, Emisor
+                                            TD, Banco de Bogotá o Adquirente
+                                        </p>
+                                    </td>
+                                    <td>
+                                        <p class="PARRAFO">Menú del sistema,
+                                            donde se muestran las opciones que
+                                            componen la funcionalidad de cada
+                                            módulo, inicialmente se muestran en
+                                            la parte izquierda de la pantalla,
+                                            bajo el título de Casos de uso
+                                            restringidos.</p>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <p class="SUBTITULO"><span>Casos de uso
+                                                restringidos </p>
+                                        </td>
+                                        <td>
+                                            <p class="PARRAFO">Como se indica
+                                                más arriba, es la manera en que
+                                                se muestra la funcionalidad del
+                                                aplicativo, inicialmente
+                                                disponible y que puede ser
+                                                asignada a Rol que se está
+                                                creando o eventualmente,
+                                                modificando.</p>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <p class="SUBTITULO">Casos de uso
+                                                permitidos </p>
+                                        </td>
+                                        <td>
+                                            <p class="PARRAFO">Corresponde a las
+                                                opciones o funcionalidades que
+                                                inicialmente estaban en la
+                                                columna Casos de uso
+                                                restringidos y que, mediante los
+                                                botones que aparecen entre ambos
+                                                bloques, arriban a esta columna,
+                                                indicando que la entidad le
+                                                permite al Rol que se está
+                                                creando o eventualmente
+                                                modificando, otorgándole
+                                                permisos de acceso y navegación
+                                                a los formularios, una vez se
+                                                concluya con la parametrización
+                                                correspondiente.</p>
+                                        </td>
+                                    </tr>
+                                </table>
+                                <p class="TITLE"><img
+                                        src="../img/NUF_014B3.PNG"></p>
+
+                                <p class="TITLE">Funcionalidad</p>
+
+                                <table>
+                                    <tr>
+                                        <td>
+                                            <p class="SUBTITULO"><span>
+                                                    Núcleo, Emisor TD, Banco de
+                                                    Bogotá o Adquirente </p>
+                                            </td>
+                                            <td>
+                                                <p class="PARRAFO">Menú del
+                                                    sistema, donde se muestran
+                                                    las opciones que componen la
+                                                    funcionalidad de cada
+                                                    módulo, inicialmente se
+                                                    muestran en la parte
+                                                    izquierda de la pantalla,
+                                                    bajo el título de
+                                                    Funcionalidades
+                                                    restringidas.
+
+                                                </p>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <p class="SUBTITULO"><span>
+                                                        Casos de uso permitidos
+
+                                                    </p>
+                                                </td>
+                                                <td>
+                                                    <p class="PARRAFO">Campo que
+                                                        posee lista de valores,
+                                                        creada dinámicamente, a
+                                                        partir de lo
+                                                        parametrizado en el paso
+                                                        anterior Tareas.
+
+                                                    </p>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <p
+                                                        class="SUBTITULO"><span>Funcionalidades
+                                                            restringidas</p>
+                                                    </td>
+                                                    <td>
+                                                        <p
+                                                            class="PARRAFO">Corresponde
+                                                            al conjunto de
+                                                            operatividades que
+                                                            se ofrece por cada
+                                                            caso de uso, lo que
+                                                            permite, por
+                                                            ejemplo, que a un
+                                                            Rol se permita
+                                                            únicamente,
+                                                            consultar la data,
+                                                            mientras que, a
+                                                            otro, la interacción
+                                                            total con dicha
+                                                            información.
+
+                                                        </p>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td>
+                                                        <p
+                                                            class="SUBTITULO">Funcionalidades
+                                                            permitidas </p>
+                                                    </td>
+                                                    <td>
+                                                        <p
+                                                            class="PARRAFO">A
+                                                            partir de lo
+                                                            indicado para el
+                                                            campo anterior,
+                                                            dentro de esta
+                                                            columna queda
+                                                            aquellas
+                                                            operatividades, que
+                                                            estando inicialmente
+                                                            en la columna
+                                                            Funcionalidades
+                                                            restringidas y que,
+                                                            mediante los botones
+                                                            que aparecen entre
+                                                            ambos bloques,
+                                                            arriban a esta
+                                                            columna, indicando
+                                                            que la entidad le
+                                                            permite al Rol que
+                                                            se está creando o
+                                                            eventualmente
+                                                            modificando,
+                                                            otorgándole permisos
+                                                            de acceso y
+                                                            navegación a los
+                                                            formularios.
+
+                                                        </p>
+                                                    </td>
+                                                </tr>
+                                            </table>
+                                            <p class="PARRAFO"><span
+                                                    class="SUBTITULO">Actualizar</span>:
+                                                Al invocar ese enlace se
+                                                despliega un formulario en el
+                                                que el único campo modificable
+                                                es Rol:</p>
+                                            <p class="TITLE"><img
+                                                    src="../img/NUF_014B1.PNG"></p>
+
+                                            <p class="PARRAFO"><span
+                                                    class="SUBTITULO">Restricciones:</span>
+                                                Al invocar ese enlace, se
+                                                despliega un formulario, que le
+                                                permite a la entidad, determinar
+                                                cuáles restricciones aplican al
+                                                Rol que se está creando o
+                                                eventualmente
+                                                modificando.</span>
+                                        </p>
+                                        <p class="TITLE"><img
+                                                src="../img/NUF_014B5.PNG"></p>
+                                        <p class="PARRAFO"><span
+                                                class="SUBTITULO">Adicionar:</span>
+                                            Al invocar ese enlace se despliega
+                                            el siguiente formulario:</span>
+                                    </p>
+                                    <p class="TITLE"><img
+                                            src="../img/NUF_014B8.PNG"></p>
+
+                                    <table>
+                                        <tr>
+                                            <td>
+                                                <p
+                                                    class="SUBTITULO"><span>Tipo
+                                                        de
+                                                        restricción
+                                                    </p>
+                                                </td>
+                                                <td>
+                                                    <p
+                                                        class="PARRAFO">Campo
+                                                        obligatorio, posee lista
+                                                        de valores de la que
+                                                        debe seleccionarse
+                                                        entre: Campo, Tipo de
+                                                        transacción, Tipo de
+                                                        solicitud, Novedades,
+                                                        Productos, Botones o
+                                                        Plásticos, la
+                                                        funcionalidad que la
+                                                        entidad determine
+                                                        impedir a los usuarios
+                                                        que tengan el Rol que se
+                                                        está creando o
+                                                        eventualmente,
+                                                        modificando.
+
+                                                    </p>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <p
+                                                        class="SUBTITULO"><span>* ​Campo</p>
+                                                    </td>
+                                                    <td>
+                                                        <p
+                                                            class="PARRAFO">El
+                                                            campo que se
+                                                            habilita y se
+                                                            muestra como
+                                                            obligatorio, depende
+                                                            de lo seleccionado
+                                                            en Tipo de
+                                                            Restricciones y debe
+                                                            diligenciarse acorde
+                                                            con lo que la
+                                                            entidad, requiera
+                                                            impedir a los
+                                                            usuarios que tengan
+                                                            el Rol que se está
+                                                            creando o
+                                                            eventualmente,
+                                                            modificando.
+                                                        </p>
+                                                    </td>
+                                                </tr>
+                                            </table>
+
+                                        </section>
+                                        <script
+                                            src="../js/menu.js"></script>
+
+                                        <div
+                                            id="footerContainer"></div>
+                                        <script>
   fetch('footer.html')
     .then(response => response.text())
     .then(html => {
       document.getElementById('footerContainer').innerHTML = html;
     });
 </script>
-</body>
+                                    </body>
 
-</html>
+                                </html>

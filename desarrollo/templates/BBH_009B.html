@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="es">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>OpencardWeb®</title>
+        <link rel="stylesheet" href="../css/pages.css">
+        <link rel="stylesheet" href="../css/style.css">
+        <link rel="icon" href="../img/ACQUIRER-logo.JPG" type="image/x-icon">
+    </head>
+
+    <body>
+        <header>
+            <img class="logo" src="../img/logoBankbu_.PNG"
+                alt="Logo de Mi Empresa">
+            <div id="menuBtn">
+                <img class="TITLE" src="../img/menu.PNG" alt="Botón de Menú ">
+            </div>
+        </header>
+        <div id="menuContainer"></div>
+        <script>
+    fetch('menu.html')
+      .then(response => response.text())
+      .then(html => {
+        document.getElementById('menuContainer').innerHTML = html;
+      });
+  </script>
+        <section>
+            <div>
+                <p class="TITLE">Conversiones</p>
+
+                <p class="PARRAFO">Esta opción presenta una doble funcionalidad,
+                    en el formulario inicial, Bloqueos, a partir de los bloqueos
+                    predefinidos en el sistema, combinado con tres datos
+                    definidos por la entidad: Clase cuenta, Estado y Prioridad,
+                    llegar al Bloqueo empresa a asignar, principalmente a los
+                    plásticos. Cuenta con el filtro Bloqueo, que permite conocer
+                    las diferentes combinatorias que, para un mismo bloqueo, de
+                    los predefinidos en el sistema lado, existen o han sido
+                    creadas. Mediante el enlace <a
+                        href="#productos">Productos</a>, se invoca la segunda
+                    funcionalidad, más abajo explicada. Ambos formularios
+                    cuentan con los enlaces: Actualizar, Eliminar y Adicionar.
+
+                </p>
+                <p class="TITLE"><img src="../img/BBH_009B.PNG"></p>
+
+                <p class="PARRAFO"><span class="SUBTITULO">Adicionar:</span> Al
+                    activar ese enlace se despliega un formulario con los
+                    siguientes campos:</p>
+
+                <p class="TITLE"><img src="../img/BBH_009B1.PNG"></p>
+
+                <p class="TITLE">Descripción De Campos</p>
+                <table>
+                    <tr>
+                        <td class="titletable">
+                            <p class="SUBTITULO">Bloqueo</p>
+                        </td>
+                        <td>
+                            <p class="PARRAFO">Campo obligatorio, en el que debe
+                                digitarse o seleccionarse de la lista de
+                                valores, el <a href="NUH_012B.html">Bloqueo</a>
+                                predefinido en el sistema, de cuya combinatoria
+                                con datos adicionales, determinan o le permiten
+                                a la entidad definir el <a
+                                    href="CAH_002B.html">Bloqueo</a> por empresa
+                                a asignar, principalmente a las tarjetas. </p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="titletable">
+                            <p class="SUBTITULO">Clase cuenta</p>
+                        </td>
+                        <td>
+                            <p class="PARRAFO">Campo obligatorio, posee lista de
+                                valores tipo combo de la que debe seleccionarse
+                                entre: Ahorros o Corriente, el tipo de cuenta a
+                                tener en consideración dentro de la combinatoria
+                                que se está definiendo o eventualmente,
+                                modificando.</p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="titletable">
+                            <p class="SUBTITULO">Estado</p>
+                        </td>
+                        <td>
+                            <p class="PARRAFO">
+                                Campo obligatorio, posee lista de valores tipo
+                                combo de la que debe seleccionarse entre:
+                                Activo, Cancelada, Inactivo o Congelada -
+                                Embargada, valor a tener en consideración dentro
+                                de la combinatoria que se está definiendo o
+                                eventualmente, modificando.
+                            </p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="titletable">
+                            <p class="SUBTITULO">Prioridad</p>
+                        </td>
+                        <td>
+                            <p class="PARRAFO">Campo obligatorio, posee lista de
+                                valores tipo combo de la que debe seleccionarse
+                                entre: Valor 1, ..., Valor 5, dato a tener en
+                                consideración dentro de la combinatoria que se
+                                está definiendo o eventualmente,
+                                modificando.</p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="titletable">
+                            <p class="SUBTITULO">Bloqueo empresa</p>
+                        </td>
+                        <td>
+                            <p class="PARRAFO">
+                                Campo obligatorio, en el que debe digitarse o
+                                seleccionarse de la lista de valores, el <a
+                                    href="CAH_002B.html">Bloqueo
+                                    por empresa</a>
+                                que el sistema, evaluando la combinatoria
+                                correspondiente, debe asignar, principalmente a
+                                las tarjetas. </p>
+                        </td>
+                    </tr>
+                </table>
+                <p class="PARRAFO"><span class="SUBTITULO">Actualizar:</span> Al
+                    activar ese enlace se despliega un formulario en el cual los
+                    únicos campos no modificables son: Bloqueo y Clase
+                    cuenta:</p>
+                <p class="TITLE"><img src="../img/BBH_009B2.PNG"></p>
+
+                <p class="PARRAFO"><span class="SUBTITULO">Productos:</span> La
+                    funcionalidad provista le permite a la entidad, realizar
+                    otras combinatorias, en las que el único componente, Bin,
+                    hace parte de la data del aplicativo.</p>
+
+                <p class="TITLE"><img src="../img/BBH_009B3.PNG"></p>
+
+                <p class="PARRAFO"><span class="SUBTITULO">Adicionar:</span> Al
+                    activar ese enlace se despliega un formulario con los
+                    siguientes campos:</p>
+
+                <p class="TITLE"><img src="../img/BBH_009B4.PNG"></p>
+
+                <p class="TITLE">Descripción De Campos</p>
+                <table>
+                    <tr>
+                        <td class="titletable">
+                            <p class="SUBTITULO">Codigo Grupo</p>
+                        </td>
+                        <td>
+                            <p class="PARRAFO">Campo obligatorio, alfanumérico
+                                en el que, en máximo 4 caracteres, se debe
+                                digitar el código a asignar a cada una de la
+                                combinatorias que la entidad defina. </p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="titletable">
+                            <p class="SUBTITULO">Bin </p>
+                        </td>
+                        <td>
+                            <p class="PARRAFO">Campo obligatorio, alfanumérico
+                                en el que, en máximo 6 caracteres, se debe
+                                digitar el Bin, a asignar a cada una de la
+                                combinatorias que la entidad defina.</p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="titletable">
+                            <p class="SUBTITULO">Producto</p>
+                        </td>
+                        <td>
+                            <p class="PARRAFO">
+                                Campo numérico no obligatorio, en el que, en
+                                máximo 3 dígitos se puede digitar el Producto, a
+                                asignar a cada una de la combinatorias que la
+                                entidad defina.
+                            </p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="titletable">
+                            <p class="SUBTITULO">Prioridad</p>
+                        </td>
+                        <td>
+                            <p class="PARRAFO">Campo numérico no obligatorio, en
+                                el que, en máximo 3 dígitos se puede digitar el
+                                Grupo nuevo, a asignar a cada una de la
+                                combinatorias que la entidad defina.</p>
+                        </td>
+                    </tr>
+
+                </table>
+                <p class="PARRAFO"><span class="SUBTITULO">Actualizar:</span> Al
+                    activar ese enlace se despliega un formulario en el cual los
+                    únicos campos no modificables son: Producto y Grupo
+                    nuevo:</p>
+                <p class="TITLE"><img src="../img/BBH_009B6.PNG"></p>
+
+            </div>
+        </section>
+        <script src="../js/menu.js"></script>
+    </body>
+    <div id="footerContainer"></div>
+    <script>
+  fetch('footer.html')
+    .then(response => response.text())
+    .then(html => {
+      document.getElementById('footerContainer').innerHTML = html;
+    });
+</script>
+</html>

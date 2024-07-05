@@ -1,24 +1,24 @@
 <!DOCTYPE html>
 <html lang="es">
 
-<head>
+  <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>BANKBU®</title>
+    <title>OpencardWeb®</title>
     <link rel="stylesheet" href="../css/pages.css">
     <link rel="stylesheet" href="../css/style.css">
- <link rel="icon" href="../img/ACQUIRER-logo.JPG" type="image/x-icon">
-</head>
+    <link rel="icon" href="../img/ACQUIRER-logo.JPG" type="image/x-icon">
+  </head>
 
-<body>
+  <body>
     <header>
-        <img class="logo" src="../img/logoBankbu_.PNG" alt="Logo de Mi Empresa">
-        <div id="menuBtn">
-            <img class="TITLE"  src= "../img/menu.PNG" alt="Botón de Menú ">
-        </div>
+      <img class="logo" src="../img/logoBankbu_.PNG" alt="Logo de Mi Empresa">
+      <div id="menuBtn">
+        <img class="TITLE" src="../img/menu.PNG" alt="Botón de Menú ">
+      </div>
     </header>
-      <div id="menuContainer"></div>
-  <script>
+    <div id="menuContainer"></div>
+    <script>
     fetch('menu.html')
       .then(response => response.text())
       .then(html => {
@@ -27,58 +27,68 @@
   </script>
 
     <section>
-   
-    <div> 
-   
-              <p  class="TITLE">Definición de objetos lógicos </p>
- 
-      <p  class="PARRAFO">Esta opción le permite a los usuarios técnicos registrar aquellos objetos lógicos que identifican a cada uno de los procesos que serán parametrizados en la opción <a href="OPH_001B.html" >Definición grupos de procesos</a>.  </p>
-      <p  class="PARRAFO">La opción cuenta con el campo Objeto lógico que servirá como filtro en la pantalla principal. Adicionalmente cuenta con las opciones de Actualizar, Eliminar y Adicionar. </p>
-      <p class="TITLE"><img src="../img/OPF_008E.PNG"757" height="489"></p>
-      
-      <p class="PARRAFO" ><span class="SUBTITULO"><span 
-        >Adicionar:</span><span 
-        ></span></span><span 
-        > Al activar ese enlace se despliega </span><span 
-        >el siguiente formulario </span><span 
-        >. </span></p>
-      <p class="TITLE"><img src="../img/OPF_008E1.PNG"676" ></p>
-      
-      <table style'width:536.25pt;
-       mso-cellspacing:0cm;mso-padding-alt:3.0pt 3.0pt 3.0pt 3.0pt'>
-        <tr>
-          <td class="titletable"><p class="SUBTITULO">Objeto lógico</p></td>
-          <td><p  class="PARRAFO">Este campo alfanúmerico acepta hasta 61 caracteres y permite ingresar el nombre exacto del objeto lógico que corresponderá a uno de los procesos a definir en la opción <a href="OPH_001B.html" >Definición grupos de procesos</a>.</p></td>
-        </tr>
-        <tr>
-          <td  class="titletable" ><p class="SUBTITULO">Descripción objeto lógico</p></td>
-          <td><p  class="PARRAFO">Campo obligatorio alfanúmerico de 30 caracteres en el cual se debe ingresar una breve descripción del proceso que realiza el objeto lógico a parametrizar. </p></td>
-        </tr>
-        <tr>
-          <td   class="SUBTITULO" >Función objeto lógico</td>
-          <td><p class="PARRAFO">Campo opcional de 255 caracteres en el cual se puede describir con detalle que tipo de acción es realizada por el objeto lógico parametrizado. </p></td>
-        </tr>
-      </table>
-      
-      <p class="PARRAFO" ><span class="SUBTITULO"><span 
-        >Actualizar:</span></span><span 
-        > si el usuario selecciona un registro e invoca la opción Actualizar 
-      se despliega </span><span 
-        >el siguiente formulario con el campo Objeto lógico </span><span 
-        >no editable.</span></p>
-      <p class="TITLE"><img src="../img/OPF_008E2.PNG"676" ></p>
-      
-    </section>
-    <script src="../js/menu.js"></script>
 
-    <div id="footerContainer"></div>
-<script>
+      <div>
+
+        <p class="TITLE">Definición de objetos lógicos </p>
+
+        <p class="PARRAFO">Esta opción le permite a los usuarios técnicos
+          registrar aquellos objetos lógicos que identifican a cada uno de los
+          procesos que serán parametrizados en la opción <a
+            href="OPH_001B.html">Definición grupos de procesos</a>. </p>
+        <p class="PARRAFO">La opción cuenta con el campo Objeto lógico que
+          servirá como filtro en la pantalla principal. Adicionalmente cuenta
+          con las opciones de Actualizar, Eliminar y Adicionar. </p>
+        <p class="TITLE"><img src="../img/OPF_008E.PNG"></p>
+
+        <p class="PARRAFO"><span
+            class="SUBTITULO">Adicionar:</span></span></span>
+            Al activar ese enlace se despliega </span>el siguiente
+            formulario </span>. </span></p>
+        <p class="TITLE"><img src="../img/OPF_008E1.PNG"></p>
+
+        <table>
+          <tr>
+            <td class="titletable"><p class="SUBTITULO">Objeto lógico</p></td>
+            <td><p class="PARRAFO">Este campo alfanúmerico acepta hasta 61
+                caracteres y permite ingresar el nombre exacto del objeto lógico
+                que corresponderá a uno de los procesos a definir en la opción
+                <a href="OPH_001B.html">Definición grupos de
+                  procesos</a>.</p></td>
+          </tr>
+          <tr>
+            <td class="titletable"><p class="SUBTITULO">Descripción objeto
+                lógico</p></td>
+            <td><p class="PARRAFO">Campo obligatorio alfanúmerico de 30
+                caracteres en el cual se debe ingresar una breve descripción del
+                proceso que realiza el objeto lógico a parametrizar. </p></td>
+          </tr>
+          <tr>
+            <td class="SUBTITULO">Función objeto lógico</td>
+            <td><p class="PARRAFO">Campo opcional de 255 caracteres en el cual
+                se puede describir con detalle que tipo de acción es realizada
+                por el objeto lógico parametrizado. </p></td>
+          </tr>
+        </table>
+
+        <p class="PARRAFO"><span
+            class="SUBTITULO">Actualizar:</span></span> si el
+            usuario selecciona un registro e invoca la opción Actualizar
+            se despliega </span>el siguiente formulario con el campo
+            Objeto lógico </span>no editable.</span></p>
+        <p class="TITLE"><img src="../img/OPF_008E2.PNG"></p>
+
+      </section>
+      <script src="../js/menu.js"></script>
+
+      <div id="footerContainer"></div>
+      <script>
   fetch('footer.html')
     .then(response => response.text())
     .then(html => {
       document.getElementById('footerContainer').innerHTML = html;
     });
 </script>
-</body>
+    </body>
 
-</html>
+  </html>

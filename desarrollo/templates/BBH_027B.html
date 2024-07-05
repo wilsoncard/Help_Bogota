@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="es">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>OpencardWeb®</title>
+        <link rel="stylesheet" href="../css/pages.css">
+        <link rel="stylesheet" href="../css/style.css">
+        <link rel="icon" href="../img/ACQUIRER-logo.JPG" type="image/x-icon">
+    </head>
+
+    <body>
+        <header>
+            <img class="logo" src="../img/logoBankbu_.PNG"
+                alt="Logo de Mi Empresa">
+            <div id="menuBtn">
+                <img class="TITLE" src="../img/menu.PNG" alt="Botón de Menú ">
+            </div>
+        </header>
+        <div id="menuContainer"></div>
+        <script>
+    fetch('menu.html')
+      .then(response => response.text())
+      .then(html => {
+        document.getElementById('menuContainer').innerHTML = html;
+      });
+  </script>
+        <section>
+            <div>
+                <p class="TITLE">Sistemas de transporte</p>
+
+                <p class="PARRAFO">Mediante este formulario, se permite el
+                    mantenimiento de la estructura en la que se almacena la
+                    codificación de cada uno de los sistemas de transporte, lo
+                    que incluye o compuestos por, las <a
+                        href="BBH_025B.html">Entidades de transporte</a>
+                    y
+                    los <a href="BBH_026B.html">Operadores recaudo</a>.
+                    El formulario dispone de los enlaces: Actualizar, Eliminar y
+                    Adicionar:
+
+                </p>
+                <p class="TITLE"><img src="../img/BBH_027B.PNG"></p>
+
+                <p class="PARRAFO"><span class="SUBTITULO">Código
+                        transporte:</span> Campo del filtro provisto, permite
+                    seleccionar al usuario un registro único.</p>
+
+                <p class="PARRAFO"><span class="SUBTITULO">Adicionar:</span> Al
+                    activar ese enlace se despliega el siguiente formulario:</p>
+
+                <p class="TITLE"><img src="../img/BBH_027B1.PNG"></p>
+
+                <p class="TITLE">Descripción De Campos</p>
+                <table>
+                    <tr>
+                        <td class="titletable">
+                            <p class="SUBTITULO">Codigo Sistema Transporte</p>
+                        </td>
+                        <td>
+                            <p class="PARRAFO">Campo obligatorio, alfanumérico,
+                                que en máximo dos caracteres, permite indicar el
+                                dato que identifica a cada sistema de transporte
+                                masivo de pasajeros, dentro del aplicativo. </p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="titletable">
+                            <p class="SUBTITULO">Código transporte</p>
+                        </td>
+                        <td>
+                            <p class="PARRAFO">Campo obligatorio, posee lista de
+                                valores poblada en <a
+                                    href="BBH_025B.html">Entidades de
+                                    transporte</a>
+                                de la que debe seleccionarse aquella a la que
+                                esté vinculada o que haga parte del sistema de
+                                transporte masivo de pasajeros que se está
+                                creando o eventualmente, modificando.</p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="titletable">
+                            <p class="SUBTITULO">Ubicación</p>
+                        </td>
+                        <td>
+                            <p class="PARRAFO">
+                                Campo obligatorio, posee lista de valores, de la
+                                que debe seleccionarse la entidad territorial
+                                sede principal del sistema de transporte masivo
+                                de pasajeros que se está creando o
+                                eventualmente, modificando.
+                            </p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="titletable">
+                            <p class="SUBTITULO">Operador recaudo</p>
+                        </td>
+                        <td>
+                            <p class="PARRAFO">Campo obligatorio, posee lista de
+                                valores poblada en <a
+                                    href="BBH_026B.html">Operador recaudo</a>
+                                de la que debe seleccionarse aquel al que esté
+                                vinculado o que haga parte del sistema de
+                                transporte masivo de pasajeros que se está
+                                creando o eventualmente, modificando. </p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="titletable">
+                            <p class="SUBTITULO">Nombre sistema transporte</p>
+                        </td>
+                        <td>
+                            <p class="PARRAFO">
+                                Campo obligatorio, alfanumérico de máximo 30
+                                caracteres, debe contener el nombre o breve
+                                descriptivo del sistema de transporte masivo de
+                                pasajeros, que se está creando o eventualmente
+                                modificando. </p>
+                        </td>
+                    </tr>
+                </table>
+                <p class="PARRAFO"><span class="SUBTITULO">Actualizar:</span> Al
+                    activar ese enlace se despliega el siguiente formulario, en
+                    el que el único dato no modificable es el Código sistema
+                    transporte:</p>
+                    <p class="TITLE"><img src="../img/BBH_027B2.PNG"></p>
+            </div>
+        </section>
+        <script src="../js/menu.js"></script>
+    </body>
+    <div id="footerContainer"></div>
+    <script>
+  fetch('footer.html')
+    .then(response => response.text())
+    .then(html => {
+      document.getElementById('footerContainer').innerHTML = html;
+    });
+</script>
+</html>

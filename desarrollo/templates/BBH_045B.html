@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="es">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>OpencardWeb®</title>
+        <link rel="stylesheet" href="../css/pages.css">
+        <link rel="stylesheet" href="../css/style.css">
+        <link rel="icon" href="../img/ACQUIRER-logo.JPG" type="image/x-icon">
+    </head>
+
+    <body>
+        <header>
+            <img class="logo" src="../img/logoBankbu_.PNG"
+                alt="Logo de Mi Empresa">
+            <div id="menuBtn">
+                <img class="TITLE" src="../img/menu.PNG" alt="Botón de Menú ">
+            </div>
+        </header>
+        <div id="menuContainer"></div>
+        <script>
+    fetch('menu.html')
+      .then(response => response.text())
+      .then(html => {
+        document.getElementById('menuContainer').innerHTML = html;
+      });
+  </script>
+        <section>
+            <div>
+                <p class="TITLE">Establecimientos de seguros</p>
+
+                <p class="PARRAFO">Mediante este formulario, la entidad puede
+                    consultar, para los establecimientos creados o asociados a
+                    las utilizaciones de pólizas o planes de seguros, los datos
+                    de: Trx Vision, Plan y Plazo, asociados a cada uno de ellos.
+                    En el único campo del filtro disponible, debe digitarse el
+                    número completo del Establecimiento o ubicarse mediante la
+                    funcionalidad de la lupa ubicada a la derecha del mismo. Se
+                    cuenta, además, con la funcionalidad de Adicionar y
+                    Actualizar.
+                </p>
+                <p class="TITLE"><img src="../img/BBH_045B.PNG"></p>
+
+                <p class="PARRAFO"><span class="SUBTITULO">Adicionar:</span> Al
+                    activar ese enlace se despliega el siguiente formulario:</p>
+
+                <p class="TITLE"><img src="../img/BBH_045B1.PNG"></p>
+
+                <p class="TITLE">Descripción De Campos</p>
+                <table>
+                    <tr>
+                        <td class="titletable">
+                            <p class="SUBTITULO">Establecimiento</p>
+                        </td>
+                        <td>
+                            <p class="PARRAFO">Campo obligatorio en el que debe
+                                seleccionarse de la lista de valores adjunta, el
+                                código del establecimiento de seguros a
+                                adicionar. </p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="titletable">
+                            <p class="SUBTITULO">Trx Visión</p>
+                        </td>
+                        <td>
+                            <p class="PARRAFO">Campo obligatorio, alfanumérico
+                                de máximo 6 caracteres, debe contener el código
+                                con el que se debe identificar la utilización de
+                                seguros para Vision.</p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="titletable">
+                            <p class="SUBTITULO">Plan</p>
+                        </td>
+                        <td>
+                            <p class="PARRAFO">Campo obligatorio, alfanumérico
+                                de máximo 6 caracteres, debe contener el código
+                                con el que se debe identificar el plan de
+                                seguros.
+
+                            </p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="titletable">
+                            <p class="SUBTITULO">Plazo</p>
+                        </td>
+                        <td>
+                            <p class="PARRAFO">Campo obligatorio, numérico de
+                                máximo dos dígitos, en el que se debe indicar el
+                                número de cuotas en el que se debe diferir la
+                                utilización del plan de seguro. </p>
+                        </td>
+                    </tr>
+                </table>
+                <p class="PARRAFO"><span class="SUBTITULO">Actualizar:</span>
+                    Al activar ese enlace se despliega el siguiente formulario,
+                    en el que los únicos datos no modificables son el código y
+                    nombre del Establecimiento (de seguros): </p>
+
+                    <p class="TITLE"><img src="../img/BBH_045B2.PNG"></p>
+            </div>
+        </section>
+        <script src="../js/menu.js"></script>
+    </body>
+    <div id="footerContainer"></div>
+    <script>
+  fetch('footer.html')
+    .then(response => response.text())
+    .then(html => {
+      document.getElementById('footerContainer').innerHTML = html;
+    });
+</script>
+</html>

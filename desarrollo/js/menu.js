@@ -3,9 +3,12 @@ function openMenu() {
     var body = document.querySelector("body");
     var nav = document.querySelector("nav");
     var footer = document.querySelector("footer");
-    nav.style.left = "0";
-    body.classList.add("menu-opened");
-    footer.classList.add("menu-opened");
+
+    if (nav && body && footer) {
+        nav.style.left = "0";
+        body.classList.add("menu-opened");
+        footer.classList.add("menu-opened");
+    }
 }
 
 // Función para cerrar el menú
@@ -13,18 +16,23 @@ function closeMenu() {
     var body = document.querySelector("body");
     var nav = document.querySelector("nav");
     var footer = document.querySelector("footer");
-    nav.style.left = "-100vw";
-    body.classList.remove("menu-opened");
-    footer.classList.remove("menu-opened");
+
+    if (nav && body && footer) {
+        nav.style.left = "-100vw";
+        body.classList.remove("menu-opened");
+        footer.classList.remove("menu-opened");
+    }
 }
 
 document.getElementById("menuBtn").addEventListener("click", function (e) {
     e.stopPropagation(); // Evita que el clic se propague al documento
     var nav = document.querySelector("nav");
-    if (nav.style.left === "-100vw") {
-        openMenu();
-    } else {
-        closeMenu();
+    if (nav) {
+        if (nav.style.left === "-100vw" || !nav.style.left) {
+            openMenu();
+        } else {
+            closeMenu();
+        }
     }
 });
 
@@ -34,7 +42,9 @@ document.getElementById("menuContainer").addEventListener("click", function (e) 
 
     if (e.target.classList.contains('main-option') || e.target.classList.contains('sub-option')) {
         const subMenu = e.target.nextElementSibling;
-        subMenu.classList.toggle('active');
+        if (subMenu) {
+            subMenu.classList.toggle('active');
+        }
     }
 });
 

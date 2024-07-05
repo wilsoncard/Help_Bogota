@@ -4,7 +4,7 @@
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>BANKBU®</title>
+    <title>OpencardWeb®</title>
     <link rel="stylesheet" href="../css/pages.css">
     <link rel="stylesheet" href="../css/style.css">
     <link rel="icon" href="../img/ACQUIRER-logo.JPG" type="image/x-icon">
@@ -32,7 +32,7 @@
         <p class="TITLE">Saldos</p>
 
         <p class="PARRAFO">En este formulario que se invoca desde la <a
-            href="SCH_060B.html">Consulta centralizada de tarjeta</a>, la
+            href="DBH_001B.html">Consulta centralizada de tarjeta</a>, la
           entidad puede conocer la información detallada de los saldos de la
           tarjeta, presentados o agrupados por diferentes criterios.</p>
         <p class="PARRAFO">La opción ofrece varios enlaces a los formularios:
@@ -50,275 +50,281 @@
           información de Consolidado, la cual se presenta en columnas, tanto a
           la fecha actual como el dato que tenía la tarjeta en la fecha de la
           última facturación.</p>
-      <p class="PARRAFO"><a name="BL_CONSOLIDADO"> </a></p>
-      <p class="TITLE"><img src="../img/SCF_061E.PNG"></p>
+        <p class="PARRAFO"><a name="BL_CONSOLIDADO"> </a></p>
+        <p class="TITLE"><img src="../img/SCF_061E.PNG"></p>
 
-      <p class="TITLE">Descripción de campos</p>
-      <table>
-        <tr>
-          <td>
-            <p class="SUBTITULO">+Fecha</p></td>
-          <td><p class="PARRAFO">Campo
-              que muestra en formato YYYY-MM-DD la fecha a la que corresponden
-              los
-              datos desplegados.</p></td>
-        </tr>
-        <tr>
-          <td class="titletable"><p class="SUBTITULO">+Capital
-              facturado</p></td>
-          <td><p class="PARRAFO">Muestra
-              el valor correspondiente para las fechas respectivas, del capital
-              diferido
-              cobrado al cliente dentro del pago mínimo.</p></td>
-        </tr>
-
-        <tr>
-          <td class="titletable"><p class="SUBTITULO">+Comisión
-              facturada
-            </p></td>
-          <td><p class="PARRAFO">Campo
-              que se&ntilde;ala el monto de las comisiones cobradas al cliente
-              dentro
-              del pago mínimo.</p></td>
-        </tr>
-
-        <tr>
-          <td class="titletable"><p class="SUBTITULO">+Total
-              capital facturado</p></td>
-          <td><p class="PARRAFO">Indica
-              la sumatoria del capital y las comisiones cobradas al cliente
-              dentro
-              del pago mínimo.</p></td>
-        </tr>
-
-        <tr>
-          <td class="titletable"><p class="SUBTITULO">+Capital
-              mora
-            </p></td>
-          <td><p class="PARRAFO">Campo
-              en el que se muestra el monto de capital no cubierto por el
-              cliente
-              en las facturaciones anteriores a la fecha indicada.</p></td>
-        </tr>
-
-        <tr>
-          <td class="titletable"><p class="SUBTITULO">+Comisión
-              mora
-            </p></td>
-          <td><p class="PARRAFO">Este
-              campo indica el monto de las comisiones no cubiertas por el
-              cliente
-              en las facturaciones anteriores.</p></td>
-        </tr>
-
-        <tr>
-          <td class="titletable"><p class="SUBTITULO">+Total
-              capital mora
-            </p></td>
-          <td><p class="PARRAFO">Contiene
-              la sumatoria del capital y las comisiones que no fueron cubiertas
-              por
-              el cliente en las facturaciones anteriores.</p></td>
-        </tr>
-
-        <tr>
-          <td class="titletable"><p class="SUBTITULO">+Interés
-              corriente
-            </p></td>
-          <td><p class="PARRAFO">En
-              este campo se indica el valor del interés de
-              financiación
-              que la entidad le cobra el cliente por los saldos pendientes a la
-              fecha
-              sobre los consumos efectuados.</p></td>
-        </tr>
-      </table>
-      <div class="PARRAFO">
+        <p class="TITLE">Descripción de campos</p>
         <table>
           <tr>
-            <td class="titletable"><p class="SUBTITULO">+Interés
-                mora
-              </p></td>
+            <td class="titletable">
+              <p class="SUBTITULO">+Fecha</p></td>
             <td><p class="PARRAFO">Campo
-                que muestra el monto de los intereses de sanción
-                generados
-                por la entidad sobre las porciones de capital no cubiertas por
-                el
-                cliente en facturaciones anteriores.</p></td>
+                que muestra en formato YYYY-MM-DD la fecha a la que corresponden
+                los
+                datos desplegados.</p></td>
           </tr>
-
-          <tr>
-            <td class="titletable"><p class="SUBTITULO">+Interés
-                extracontable
-              </p></td>
-            <td><p class="PARRAFO">En
-                este campo se indica el monto de los intereses que de acuerdo
-                con
-                la altura de mora o la calificación de la tarjeta, se
-                deben
-                causar sobre los saldos de la tarjeta.</p></td>
-          </tr>
-
-          <tr>
-            <td class="titletable"><p class="SUBTITULO">-Saldo
-                a favor
-              </p></td>
-            <td><p class="PARRAFO">Despliega
-                el monto a favor del cliente resultante de pagos hechos en
-                exceso,
-                reversiones de transacciones de consumos y ajustes entre otras
-                posibles
-                causas.</p></td>
-          </tr>
-
-          <tr>
-            <td class="titletable"><p class="SUBTITULO">Pago
-                mínimo
-              </p></td>
-            <td><p class="PARRAFO">En
-                este campo se indica el monto que el actor debe cancelar para
-                cubrir
-                la obligación y no incurrir en mora.</p></td>
-          </tr>
-
           <tr>
             <td class="titletable"><p class="SUBTITULO">+Capital
-                no facturado
-              </p></td>
+                facturado</p></td>
             <td><p class="PARRAFO">Muestra
-                el monto de los consumos diferidos que se encuentran pendientes
-                de
-                facturar y no han sido incluidos aún dentro del pago
-                mínimo.</p></td>
+                el valor correspondiente para las fechas respectivas, del
+                capital
+                diferido
+                cobrado al cliente dentro del pago mínimo.</p></td>
           </tr>
 
           <tr>
             <td class="titletable"><p class="SUBTITULO">+Comisión
-                no facturada
-              </p></td>
-            <td><p class="PARRAFO">En
-                este campo se indica el monto de las comisiones que aún
-                no
-                han sido incluidas dentro del pago mínimo de la
-                tarjeta.</p></td>
-          </tr>
-
-          <tr>
-            <td class="titletable"><p class="SUBTITULO">Total
-                capital no facturado
-              </p></td>
-            <td><p class="PARRAFO">Indica
-                la sumatoria de los montos no incluidos dentro del pago
-                mínimo</p></td>
-          </tr>
-
-          <tr>
-            <td class="titletable"><p class="SUBTITULO">Pago
-                total
-              </p></td>
-            <td><p class="PARRAFO">Este
-                campo contiene el valor total adeudado por el cliente a la
-                entidad
-                como resultado de las utilizaciones y consumos hechos con la
-                tarjeta.</p></td>
-          </tr>
-
-          <tr>
-            <td class="titletable"><p class="SUBTITULO">Interés
-                provisional
-              </p></td>
-            <td><p class="PARRAFO">Despliega
-                los intereses calculados de manera provisional sobre
-                transacciones
-                que tengan la condición de condonar intereses el primer
-                mes,
-                de acuerdo con lo definido en <a
-                  href="MEH_003B.html">transacciones
-                  por empresa</a>.</p></td>
-          </tr>
-
-          <tr>
-            <td class="titletable"><p class="SUBTITULO">-Autorizaciones
-              </p></td>
-            <td><p class="PARRAFO">Este
-                campo aplica solo para la fecha actual y se&ntilde;ala el monto
-                de
-                las autorizaciones o aprobaciones otorgadas por la entidad y que
-                se
-                encuentran vigentes.</p></td>
-          </tr>
-
-          <tr>
-            <td class="titletable"><p class="SUBTITULO">Cupo
-                total
-              </p></td>
-            <td><p class="PARRAFO">Contiene
-                el monto total del cupo asignado a la línea principal de
-                la
-                tarjeta. </p></td>
-          </tr>
-
-          <tr>
-            <td class="titletable"><p class="SUBTITULO">Cupo
-                disponible
-              </p></td>
-            <td><p class="PARRAFO">En
-                este campo se indica el valor del cupo que puede ser utilizado
-                por
-                el cliente para efectuar consumos con la tarjeta.</p></td>
-          </tr>
-
-          <tr>
-            <td class="titletable"><p class="SUBTITULO">Saldo
-                promedio
-              </p></td>
-            <td><p class="PARRAFO">Indica
-                el promedio ponderado del saldo de la tarjeta en cada fecha que
-                se
-                incrementa con los consumos y disminuye por lo pagos efectuados.
-                Se
-                utiliza especialmente en el mercado norteamericano para calcular
-                los
-                intereses sobre el saldo promedio diario (ADB, average daily
-                balance).</p></td>
-          </tr>
-
-          <tr>
-            <td class="titletable"><p class="SUBTITULO">Cupo
-                global
+                facturada
               </p></td>
             <td><p class="PARRAFO">Campo
-                que muestra el monto total asignado a la línea principal
-                y
-                las líneas independientes de la tarjeta.</p></td>
+                que se&ntilde;ala el monto de las comisiones cobradas al cliente
+                dentro
+                del pago mínimo.</p></td>
           </tr>
 
           <tr>
-            <td class="titletable"><p class="SUBTITULO">Edad
-                mora </p></td>
-            <td><p class="PARRAFO">Muestra
-                la edad de mora que tenia la tarjeta en cada una de las fechas
-                desplegadas.</p></td>
+            <td class="titletable"><p class="SUBTITULO">+Total
+                capital facturado</p></td>
+            <td><p class="PARRAFO">Indica
+                la sumatoria del capital y las comisiones cobradas al cliente
+                dentro
+                del pago mínimo.</p></td>
           </tr>
 
           <tr>
-            <td class="titletable"><p class="SUBTITULO">Capital
-                mora 1... Capital mora 12
+            <td class="titletable"><p class="SUBTITULO">+Capital
+                mora
               </p></td>
-            <td><p class="PARRAFO">Campos
-                que muestran el monto de capital no cubierto por el cliente en
-                cada
-                altura o edad de mora.</p></td>
+            <td><p class="PARRAFO">Campo
+                en el que se muestra el monto de capital no cubierto por el
+                cliente
+                en las facturaciones anteriores a la fecha indicada.</p></td>
+          </tr>
+
+          <tr>
+            <td class="titletable"><p class="SUBTITULO">+Comisión
+                mora
+              </p></td>
+            <td><p class="PARRAFO">Este
+                campo indica el monto de las comisiones no cubiertas por el
+                cliente
+                en las facturaciones anteriores.</p></td>
+          </tr>
+
+          <tr>
+            <td class="titletable"><p class="SUBTITULO">+Total
+                capital mora
+              </p></td>
+            <td><p class="PARRAFO">Contiene
+                la sumatoria del capital y las comisiones que no fueron
+                cubiertas
+                por
+                el cliente en las facturaciones anteriores.</p></td>
+          </tr>
+
+          <tr>
+            <td class="titletable"><p class="SUBTITULO">+Interés
+                corriente
+              </p></td>
+            <td><p class="PARRAFO">En
+                este campo se indica el valor del interés de
+                financiación
+                que la entidad le cobra el cliente por los saldos pendientes a
+                la
+                fecha
+                sobre los consumos efectuados.</p></td>
           </tr>
         </table>
-        <p class="PARRAFO">
+        <div class="PARRAFO">
+          <table>
+            <tr>
+              <td class="titletable"><p class="SUBTITULO">+Interés
+                  mora
+                </p></td>
+              <td><p class="PARRAFO">Campo
+                  que muestra el monto de los intereses de sanción
+                  generados
+                  por la entidad sobre las porciones de capital no cubiertas por
+                  el
+                  cliente en facturaciones anteriores.</p></td>
+            </tr>
+
+            <tr>
+              <td class="titletable"><p class="SUBTITULO">+Interés
+                  extracontable
+                </p></td>
+              <td><p class="PARRAFO">En
+                  este campo se indica el monto de los intereses que de acuerdo
+                  con
+                  la altura de mora o la calificación de la tarjeta, se
+                  deben
+                  causar sobre los saldos de la tarjeta.</p></td>
+            </tr>
+
+            <tr>
+              <td class="titletable"><p class="SUBTITULO">-Saldo
+                  a favor
+                </p></td>
+              <td><p class="PARRAFO">Despliega
+                  el monto a favor del cliente resultante de pagos hechos en
+                  exceso,
+                  reversiones de transacciones de consumos y ajustes entre otras
+                  posibles
+                  causas.</p></td>
+            </tr>
+
+            <tr>
+              <td class="titletable"><p class="SUBTITULO">Pago
+                  mínimo
+                </p></td>
+              <td><p class="PARRAFO">En
+                  este campo se indica el monto que el actor debe cancelar para
+                  cubrir
+                  la obligación y no incurrir en mora.</p></td>
+            </tr>
+
+            <tr>
+              <td class="titletable"><p class="SUBTITULO">+Capital
+                  no facturado
+                </p></td>
+              <td><p class="PARRAFO">Muestra
+                  el monto de los consumos diferidos que se encuentran
+                  pendientes
+                  de
+                  facturar y no han sido incluidos aún dentro del pago
+                  mínimo.</p></td>
+            </tr>
+
+            <tr>
+              <td class="titletable"><p class="SUBTITULO">+Comisión
+                  no facturada
+                </p></td>
+              <td><p class="PARRAFO">En
+                  este campo se indica el monto de las comisiones que aún
+                  no
+                  han sido incluidas dentro del pago mínimo de la
+                  tarjeta.</p></td>
+            </tr>
+
+            <tr>
+              <td class="titletable"><p class="SUBTITULO">Total
+                  capital no facturado
+                </p></td>
+              <td><p class="PARRAFO">Indica
+                  la sumatoria de los montos no incluidos dentro del pago
+                  mínimo</p></td>
+            </tr>
+
+            <tr>
+              <td class="titletable"><p class="SUBTITULO">Pago
+                  total
+                </p></td>
+              <td><p class="PARRAFO">Este
+                  campo contiene el valor total adeudado por el cliente a la
+                  entidad
+                  como resultado de las utilizaciones y consumos hechos con la
+                  tarjeta.</p></td>
+            </tr>
+
+            <tr>
+              <td class="titletable"><p class="SUBTITULO">Interés
+                  provisional
+                </p></td>
+              <td><p class="PARRAFO">Despliega
+                  los intereses calculados de manera provisional sobre
+                  transacciones
+                  que tengan la condición de condonar intereses el primer
+                  mes,
+                  de acuerdo con lo definido en <a
+                    href="MEH_003B.html">transacciones
+                    por empresa</a>.</p></td>
+            </tr>
+
+            <tr>
+              <td class="titletable"><p class="SUBTITULO">-Autorizaciones
+                </p></td>
+              <td><p class="PARRAFO">Este
+                  campo aplica solo para la fecha actual y se&ntilde;ala el
+                  monto
+                  de
+                  las autorizaciones o aprobaciones otorgadas por la entidad y
+                  que
+                  se
+                  encuentran vigentes.</p></td>
+            </tr>
+
+            <tr>
+              <td class="titletable"><p class="SUBTITULO">Cupo
+                  total
+                </p></td>
+              <td><p class="PARRAFO">Contiene
+                  el monto total del cupo asignado a la línea principal de
+                  la
+                  tarjeta. </p></td>
+            </tr>
+
+            <tr>
+              <td class="titletable"><p class="SUBTITULO">Cupo
+                  disponible
+                </p></td>
+              <td><p class="PARRAFO">En
+                  este campo se indica el valor del cupo que puede ser utilizado
+                  por
+                  el cliente para efectuar consumos con la tarjeta.</p></td>
+            </tr>
+
+            <tr>
+              <td class="titletable"><p class="SUBTITULO">Saldo
+                  promedio
+                </p></td>
+              <td><p class="PARRAFO">Indica
+                  el promedio ponderado del saldo de la tarjeta en cada fecha
+                  que
+                  se
+                  incrementa con los consumos y disminuye por lo pagos
+                  efectuados.
+                  Se
+                  utiliza especialmente en el mercado norteamericano para
+                  calcular
+                  los
+                  intereses sobre el saldo promedio diario (ADB, average daily
+                  balance).</p></td>
+            </tr>
+
+            <tr>
+              <td class="titletable"><p class="SUBTITULO">Cupo
+                  global
+                </p></td>
+              <td><p class="PARRAFO">Campo
+                  que muestra el monto total asignado a la línea principal
+                  y
+                  las líneas independientes de la tarjeta.</p></td>
+            </tr>
+
+            <tr>
+              <td class="titletable"><p class="SUBTITULO">Edad
+                  mora </p></td>
+              <td><p class="PARRAFO">Muestra
+                  la edad de mora que tenia la tarjeta en cada una de las fechas
+                  desplegadas.</p></td>
+            </tr>
+
+            <tr>
+              <td class="titletable"><p class="SUBTITULO">Capital
+                  mora 1... Capital mora 12
+                </p></td>
+              <td><p class="PARRAFO">Campos
+                  que muestran el monto de capital no cubierto por el cliente en
+                  cada
+                  altura o edad de mora.</p></td>
+            </tr>
+          </table>
           <p class="PARRAFO"><a name="BL_COMISIONES"></a></p>
-          <p class="PARRAFO"><span
-              class="SUBTITULO"><span>Comisiones</span><span>:</span></span>
+          <p class="PARRAFO"><span class="SUBTITULO">Comisiones:</span>
             Al invocar este enlace se despliega un formulario con el
             detalle de las comisiones cobradas al cliente.</p>
-          <p class="TITLE"><img
-              src="../img/SCF_061E1.PNG"></p>
+          <p class="TITLE"><img src="../img/SCF_061E1.PNG"></p>
 
           <div class="PARRAFO">
             <p class="TITLE">Descripción de campos</p>
@@ -338,7 +344,6 @@
                     de renovación / reexpedición /
                     reactivación
                     / reposición
-
                   </p></td>
                 <td><p class="PARRAFO">Campo
                     que se&ntilde;ala el monto de las comisiones cobradas al
@@ -349,7 +354,6 @@
                     pertenece
                     la tarjeta.</p></td>
               </tr>
-
               <tr>
                 <td class="titletable"><p class="SUBTITULO">Devolución
                     reembolso
@@ -406,186 +410,183 @@
                     las notas débitos generadas a favor de la entidad.
                   </p></td>
               </tr>
-
             </table>
-            <p class="PARRAFO">
-              <p class="PARRAFO"><a name="BL_PROYECTAR"></a></p>
-              <p class="PARRAFO"><span
-                  class="SUBTITULO"><span>Proyectar</span><span>:</span></span>
-                Al invocar este enlace se despliega un formulario en el
-                cual, mediante una funcionalidad de un calendario, se puede
-                estimar o hacer una proyección de los saldos de la tarjeta a una
-                fecha posterior a la actual, sin embargo, debe ser inferior a la
-                fecha de la próxima facturación..</p>
-              <p class="TITLE"><img src="../img/SCF_061E2.PNG"></p>
+            <p class="PARRAFO"><a name="BL_PROYECTAR"></a></p>
+            <p class="PARRAFO"><span class="SUBTITULO">Proyectar:</span>
+              Al invocar este enlace se despliega un formulario en el
+              cual, mediante una funcionalidad de un calendario, se puede
+              estimar o hacer una proyección de los saldos de la tarjeta a una
+              fecha posterior a la actual, sin embargo, debe ser inferior a la
+              fecha de la próxima facturación.</p>
+            <p class="TITLE"><img src="../img/SCF_061E2.PNG"></p>
 
-              <p class="TITLE">Descripción de campos</p>
+            <p class="TITLE">Descripción de campos</p>
+            <table>
+              <tr>
+                <td>
+                  <p class="SUBTITULO">Fecha</p></td>
+                <td><p class="PARRAFO">Campo
+                    que muestra en formato YYYY-MM-DD la fecha actual y
+                    la fecha a
+                    la cual se está haciendo la proyección
+                    de los saldos.</p></td>
+              </tr>
+              <tr>
+                <td class="titletable"><p class="SUBTITULO">Capital
+                    facturado</p></td>
+                <td><p class="PARRAFO">Muestra
+                    el valor correspondiente para las fechas
+                    respectivas, del capital
+                    diferido cobrado al cliente dentro del pago
+                    mínimo.</p></td>
+              </tr>
+
+              <tr>
+                <td class="titletable"><p class="SUBTITULO">Capital
+                    mora
+                  </p></td>
+                <td><p class="PARRAFO">Campo
+                    en el que se muestra el monto de capital no cubierto
+                    por el cliente
+                    en las facturaciones anteriores a la fecha
+                    indicada.</p></td>
+              </tr>
+
+              <tr>
+                <td class="titletable"><p
+                    class="SUBTITULO">Interés
+                    corriente
+                  </p></td>
+                <td><p class="PARRAFO">En
+                    este campo se indica el valor del interés de
+                    financiación
+                    que la entidad le cobra el cliente por los saldos
+                    pendientes a
+                    la fecha sobre los consumos efectuados.</p></td>
+              </tr>
+            </table>
+            <div class="PARRAFO">
               <table>
                 <tr>
-                  <td>
-                    <p class="SUBTITULO">Fecha</p></td>
-                  <td><p class="PARRAFO">Campo
-                      que muestra en formato YYYY-MM-DD la fecha actual y
-                      la fecha a
-                      la cual se está haciendo la proyección
-                      de los saldos.</p></td>
-                </tr>
-                <tr>
-                  <td class="titletable"><p class="SUBTITULO">Capital
-                      facturado</p></td>
-                  <td><p class="PARRAFO">Muestra
-                      el valor correspondiente para las fechas
-                      respectivas, del capital
-                      diferido cobrado al cliente dentro del pago
-                      mínimo.</p></td>
-                </tr>
-
-                <tr>
-                  <td class="titletable"><p class="SUBTITULO">Capital
+                  <td class="titletable"><p
+                      class="SUBTITULO">Interés
                       mora
                     </p></td>
                   <td><p class="PARRAFO">Campo
-                      en el que se muestra el monto de capital no cubierto
-                      por el cliente
-                      en las facturaciones anteriores a la fecha
-                      indicada.</p></td>
+                      que muestra el monto de los intereses de
+                      sanción generados
+                      por la entidad sobre las porciones de capital no
+                      cubiertas por
+                      el cliente en facturaciones anteriores.</p></td>
                 </tr>
 
                 <tr>
                   <td class="titletable"><p
                       class="SUBTITULO">Interés
-                      corriente
+                      extracontable
                     </p></td>
                   <td><p class="PARRAFO">En
-                      este campo se indica el valor del interés de
-                      financiación
-                      que la entidad le cobra el cliente por los saldos
-                      pendientes a
-                      la fecha sobre los consumos efectuados.</p></td>
+                      este campo se indica el monto de los intereses que
+                      de acuerdo
+                      con la altura de mora o la calificación de
+                      la tarjeta,
+                      se deben causar sobre los saldos de la
+                      tarjeta.</p></td>
+                </tr>
+
+                <tr>
+                  <td class="titletable"><p class="SUBTITULO">Saldo
+                      a favor
+
+                    </p></td>
+                  <td><p class="PARRAFO">Despliega
+                      el monto a favor del cliente resultante de pagos
+                      hechos en exceso,
+                      reversiones de transacciones de consumos y ajustes
+                      entre otras
+                      posibles causas.</p></td>
+                </tr>
+                <tr>
+                  <td class="titletable"><p class="SUBTITULO">Honorarios
+
+                    </p></td>
+                  <td><p class="PARRAFO">Campo
+                      que se&ntilde;ala el monto de los cargos que por
+                      concepto de
+                      honorarios se generan al cliente.</p></td>
+                </tr>
+                <tr>
+                  <td class="titletable"><p class="SUBTITULO">Cuota
+                      manejo / seguro / afiliación
+                    </p></td>
+                  <td><p class="PARRAFO">Despliega
+                      el monto correspondiente a cuota de
+                      afiliación, seguro
+                      y manejo cargadas al cliente.</p></td>
+                </tr>
+
+                <tr>
+                  <td class="titletable"><p class="SUBTITULO">Pago
+                      mínimo
+                    </p></td>
+                  <td><p class="PARRAFO">En
+                      este campo se indica el monto que el actor debe
+                      cancelar para
+                      cubrir la obligación y no incurrir en
+                      mora.</p></td>
+                </tr>
+
+                <tr>
+                  <td class="titletable"><p class="SUBTITULO">Capital
+                      no facturado
+                    </p></td>
+                  <td><p class="PARRAFO">Muestra
+                      el monto de los consumos diferidos que se
+                      encuentran pendientes
+                      de facturar y no han sido incluidos aún
+                      dentro del pago
+                      mínimo.</p></td>
+                </tr>
+
+                <tr>
+                  <td class="titletable"><p class="SUBTITULO">Pago
+                      total
+                    </p></td>
+                  <td><p class="PARRAFO">Este
+                      campo contiene el valor total adeudado por el
+                      cliente a la entidad
+                      como resultado de las utilizaciones y consumos
+                      hechos con la
+                      tarjeta.</p></td>
+                </tr>
+
+                <tr>
+                  <td class="titletable"><p
+                      class="SUBTITULO">Interés
+                      provisional
+                    </p></td>
+                  <td><p class="PARRAFO">Despliega
+                      los intereses calculados de manera provisional
+                      sobre transacciones
+                      que tengan la condición de condonar
+                      intereses el primer
+                      mes, de acuerdo con lo definido en <a
+                        href="MEH_003B.html">transacciones
+                        por empresa</a>.</p></td>
                 </tr>
               </table>
-              <div class="PARRAFO">
-                <table>
-                  <tr>
-                    <td class="titletable"><p
-                        class="SUBTITULO">Interés
-                        mora
-                      </p></td>
-                    <td><p class="PARRAFO">Campo
-                        que muestra el monto de los intereses de
-                        sanción generados
-                        por la entidad sobre las porciones de capital no
-                        cubiertas por
-                        el cliente en facturaciones anteriores.</p></td>
-                  </tr>
 
-                  <tr>
-                    <td class="titletable"><p
-                        class="SUBTITULO">Interés
-                        extracontable
-                      </p></td>
-                    <td><p class="PARRAFO">En
-                        este campo se indica el monto de los intereses que
-                        de acuerdo
-                        con la altura de mora o la calificación de
-                        la tarjeta,
-                        se deben causar sobre los saldos de la
-                        tarjeta.</p></td>
-                  </tr>
+            </section>
+            <script src="../js/menu.js"></script>
 
-                  <tr>
-                    <td class="titletable"><p class="SUBTITULO">Saldo
-                        a favor
-
-                      </p></td>
-                    <td><p class="PARRAFO">Despliega
-                        el monto a favor del cliente resultante de pagos
-                        hechos en exceso,
-                        reversiones de transacciones de consumos y ajustes
-                        entre otras
-                        posibles causas.</p></td>
-                  </tr>
-                  <tr>
-                    <td class="titletable"><p class="SUBTITULO">Honorarios
-
-                      </p></td>
-                    <td><p class="PARRAFO">Campo
-                        que se&ntilde;ala el monto de los cargos que por
-                        concepto de
-                        honorarios se generan al cliente.</p></td>
-                  </tr>
-                  <tr>
-                    <td class="titletable"><p class="SUBTITULO">Cuota
-                        manejo / seguro / afiliación
-                      </p></td>
-                    <td><p class="PARRAFO">Despliega
-                        el monto correspondiente a cuota de
-                        afiliación, seguro
-                        y manejo cargadas al cliente.</p></td>
-                  </tr>
-
-                  <tr>
-                    <td class="titletable"><p class="SUBTITULO">Pago
-                        mínimo
-                      </p></td>
-                    <td><p class="PARRAFO">En
-                        este campo se indica el monto que el actor debe
-                        cancelar para
-                        cubrir la obligación y no incurrir en
-                        mora.</p></td>
-                  </tr>
-
-                  <tr>
-                    <td class="titletable"><p class="SUBTITULO">Capital
-                        no facturado
-                      </p></td>
-                    <td><p class="PARRAFO">Muestra
-                        el monto de los consumos diferidos que se
-                        encuentran pendientes
-                        de facturar y no han sido incluidos aún
-                        dentro del pago
-                        mínimo.</p></td>
-                  </tr>
-
-                  <tr>
-                    <td class="titletable"><p class="SUBTITULO">Pago
-                        total
-                      </p></td>
-                    <td><p class="PARRAFO">Este
-                        campo contiene el valor total adeudado por el
-                        cliente a la entidad
-                        como resultado de las utilizaciones y consumos
-                        hechos con la
-                        tarjeta.</p></td>
-                  </tr>
-
-                  <tr>
-                    <td class="titletable"><p
-                        class="SUBTITULO">Interés
-                        provisional
-                      </p></td>
-                    <td><p class="PARRAFO">Despliega
-                        los intereses calculados de manera provisional
-                        sobre transacciones
-                        que tengan la condición de condonar
-                        intereses el primer
-                        mes, de acuerdo con lo definido en <a
-                          href="MEH_003B.html">transacciones
-                          por empresa</a>.</p></td>
-                  </tr>
-                </table>
-
-              </section>
-              <script src="../js/menu.js"></script>
-
-              <div id="footerContainer"></div>
-              <script>
+            <div id="footerContainer"></div>
+            <script>
   fetch('footer.html')
     .then(response => response.text())
     .then(html => {
       document.getElementById('footerContainer').innerHTML = html;
     });
 </script>
-            </body>
+          </body>
 
-          </html>
+        </html>

@@ -4,7 +4,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>BANKBU®</title>
+  <title>OpencardWeb®</title>
   <link rel="stylesheet" href="../css/pages.css">
   <link rel="stylesheet" href="../css/style.css">
   <link rel="icon" href="../img/ACQUIRER-logo.JPG" type="image/x-icon">
@@ -30,10 +30,7 @@
     <div>
       <p class="TITLE">Nodos de facturación</p>
 
-      <p class="PARRAFO">Mediante esta opción se permite la consulta y/o mantenimiento de la tabla en la que se definen los
-        factibles puntos locales o remotos (nodos) sobre los que la entidad puede generar procesos paralelos de
-        facturación, bien sea sobre una misma máquina o sobre host remotos. </p>
-      <p class="PARRAFO">El formulario contiene los enlaces: Actualizar,Eliminar,  y Adicionar.</p>
+      <p class="PARRAFO">Mediante esta opción se permite la consulta y/o mantenimiento de la tabla en la que, se definen los factibles puntos locales o remotos (nodos), sobre los que la entidad puede generar procesos paralelos de facturación, bien sea sobre una misma máquina o sobre host remotos. El formulario contiene los enlaces: Actualizar, Eliminar y Adicionar.</p>
       <p class="TITLE"><img src="../img/NUF_071B.PNG"></p>
 
       <p class="PARRAFO"><span class="SUBTITULO">Adicionar:</span>  Al activar ese enlace se
@@ -47,8 +44,7 @@
             <p class="SUBTITULO">Nodo</p>
           </td>
           <td class="PARRAFO">
-            <p class="PARRAFO">Campo numérico de dos dígitos, obligatorio, que identifica a cada uno de
-              los nodos o puntos en los que es probable efectuar procesos de facturación en paralelo.</p>
+            <p class="PARRAFO">Campo numérico de dos dígitos, obligatorio, que permite identificar a cada uno de los nodos o puntos en los que es probable efectuar procesos de facturación en paralelo.</p>
           </td>
         </tr>
         <tr>
@@ -56,19 +52,17 @@
             <p class="SUBTITULO">Estado</span></p>
           </td>
           <td class="PARRAFO">
-            <p class="PARRAFO">Este campo posee lista de valores de la cual el sistema asigna a cada nuevo registro, por
-              defecto, la opción listo para procesar, pero puede desplegar otros valores tales como
-              Falló, Proceso o Terminó.</p>
+            <p class="PARRAFO">	
+              Este campo posee lista de valores tipo combo, de la cual el sistema asigna a cada nuevo registro, por defecto, la opción: Listo para procesar, pero puede desplegar otros valores tales como: Falló, Proceso o Terminó.</p>
           </td>
         </tr>
         <tr>
           <td class="titletable">
-            <p class="SUBTITULO">Database link </span></p>
+            <p class="SUBTITULO">Enlace a base de datos
+            </span></p>
           </td>
           <td class="PARRAFO">
-            <p class="PARRAFO">Campo alfanumérico de 30 dígitos, no obligatorio, dentro del que aparece el
-              nombre del objeto mediante el cual se establece la conexión entre un host remoto y la base de datos
-              correspondiente.</p>
+            <p class="PARRAFO">Campo alfanumérico de 30 dígitos, no obligatorio, dentro del que puede aparecer el nombre del objeto mediante el cual se establece la conexión entre un host remoto y la base de datos correspondiente.</p>
           </td>
         </tr>
         <tr>
@@ -76,8 +70,9 @@
             <p class="SUBTITULO">Tipo</p>
           </td>
           <td>
-            <p class="PARRAFO">Este campo despliega una lista de valores que permite escoger los tipos de procesos que aplican para el
-              nodo, entre Diario o Facturación.</p>
+            <p class="PARRAFO">Este campo despliega una lista de valores tipo combo que permite escoger los tipos de procesos que aplican para el nodo, entre: Diario o Facturación.
+
+            </p>
           </td>
         </tr>
         <tr>
@@ -85,8 +80,9 @@
             <p class="SUBTITULO">Segmento</span></p>
           </td>
           <td>
-            <p class="PARRAFO">Este campo muestra el nombre que da el administrador de la base de datos de cada entidad al nodo
-              especifico.</p>
+            <p class="PARRAFO">Campo alfanumérico, no obligatorio, en el que se puede ilustrar el nombre que asigna el administrador de la base de datos de la entidad al nodo especifico.
+
+            </p>
           </td>
         </tr>
         <tr>
@@ -94,7 +90,9 @@
             <p class="SUBTITULO">Local</span></p>
           </td>
           <td>
-            <p class="PARRAFO">En este campo se indica si el host sobre el que se procesa es local o no.</p>
+            <p class="PARRAFO">Campo tipo checkbox, no obligatorio, en el que se indica si el host sobre el que se procesa es local o no.
+
+            </p>
           </td>
         </tr>
         <tr>
@@ -102,14 +100,13 @@
             <p class="SUBTITULO">Activo</span></p>
           </td>
           <td class="PARRAFO">
-            <p class="PARRAFO">Campo en el que se determina la condición de activo o no de cada nodo, con esto se
-              permite que la entidad pueda administrar la forma en que realiza sus procesos de facturación.</p>
+            <p class="PARRAFO">Campo tipo checkbox, no obligatorio, en el que se determina la condición de activo o no de cada nodo, con esto se permite que la entidad pueda administrar la forma en que realiza sus procesos de facturación.
+            </p>
           </td>
         </tr>
       </table>
       <p class="PARRAFO"><span class="PARRAFO"><span class="SUBTITULO">Actualizar:</span> 
-           Al activar ese enlace  se despliega un formulario
-          en el cual los únicos campos modificables son: Database link, Tipo, Segmento, Local, y Activo.</span> 
+        Al activar ese enlace se despliega un formulario en el cual los únicos campos no modificables son: Nodo y Estado:</span> 
       </p>
       <p class="TITLE"><img src="../img/NUF_071B2.PNG"></p>
     </div>

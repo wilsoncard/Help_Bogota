@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="es">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>OpencardWeb®</title>
+        <link rel="stylesheet" href="../css/pages.css">
+        <link rel="stylesheet" href="../css/style.css">
+        <link rel="icon" href="../img/ACQUIRER-logo.JPG" type="image/x-icon">
+    </head>
+
+    <body>
+        <header>
+            <img class="logo" src="../img/logoBankbu_.PNG"
+                alt="Logo de Mi Empresa">
+            <div id="menuBtn">
+                <img class="TITLE" src="../img/menu.PNG" alt="Botón de Menú ">
+            </div>
+        </header>
+        <div id="menuContainer"></div>
+        <script>
+    fetch('menu.html')
+      .then(response => response.text())
+      .then(html => {
+        document.getElementById('menuContainer').innerHTML = html;
+      });
+  </script>
+        <section>
+            <div>
+                <p class="TITLE">Consulta códigos IATA</p>
+
+                <p class="PARRAFO">Mediante esta función se permite vincular a
+                    los establecimientos válidos, agentes que gestionan
+                    operaciones para IATA.
+                </p>
+                <p class="TITLE"><img src="../img/BBH_014B.PNG"></p>
+
+                <p class="PARRAFO"><span>Filtro:</span> Funcionalidad mediante
+                    la que se facilita el ubicar y/o identificar los
+                    establecimientos por franquicia o los agentes asociados a
+                    los distintos establecimientos relacionados con IATA.
+                </p>
+
+                <p class="PARRAFO"><span>Adicionar:</span> Al activar ese enlace
+                    se despliega un formulario con los siguientes campos:
+                </p>
+                <p class="TITLE"><img src="../img/BBH_014B1.PNG"></p>
+
+                <p class="TITLE">Descripción De Campos</p>
+                <table>
+                    <tr>
+                        <td class="titletable">
+                            <p class="SUBTITULO">Establecimiento</p>
+                        </td>
+                        <td>
+                            <p class="PARRAFO">Campo numérico obligatorio de
+                                once dígitos, en el que debe digitarse el código
+                                asignado a cada establecimiento, el cual debe
+                                estar vinculado o asociado a la franquicia que
+                                se indica en el siguiente campo. Si el código
+                                del establecimiento o la franquicia no
+                                corresponde, al presionar el botón Salvar, el
+                                sistema le notificará el evento al usuario. </p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="titletable">
+                            <p class="SUBTITULO">Franquicia</p>
+                        </td>
+                        <td>
+                            <p class="PARRAFO">Campo numérico obligatorio de
+                                hasta dos dígitos, en el que debe digitarse el
+                                código válido asignado a cada franquicia o
+                                seleccionarse de la lista de valores provista,
+                                el código de la <a
+                                    href="NUH_033B.html">franquicia</a>
+                                a la que pertenece o está vinculado el
+                                establecimiento del campo anterior.
+
+                            </p>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td class="titletable">
+                            <p class="SUBTITULO">Cod. agente</p>
+                        </td>
+                        <td>
+                            <p class="PARRAFO">Campo numérico obligatorio de
+                                hasta cinco dígitos, en el que debe digitarse el
+                                código válido asignado a cada <a
+                                    href="NUH_045B.html">funcionario</a>
+                                o seleccionarse de la lista de valores provista,
+                                el código del agente a asociar al
+                                establecimiento vinculado con IATA.
+
+                            </p>
+                        </td>
+                    </tr>
+                </table>
+
+                <p class="PARRAFO"><span>Actualizar:</span> Al activar ese
+                    enlace se despliega un nuevo formulario en el cual el único
+                    campo modificable es Cod. agente:
+                </p>
+                <p class="TITLE"><img src="../img/BBH_014B2.PNG"></p>
+
+            </div>
+        </section>
+        <script src="../js/menu.js"></script>
+    </body>
+    <div id="footerContainer"></div>
+    <script>
+  fetch('footer.html')
+    .then(response => response.text())
+    .then(html => {
+      document.getElementById('footerContainer').innerHTML = html;
+    });
+</script>
+</html>

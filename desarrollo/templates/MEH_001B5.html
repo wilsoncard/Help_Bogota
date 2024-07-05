@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="es">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>OpencardWeb®</title>
+        <link rel="stylesheet" href="../css/pages.css">
+        <link rel="stylesheet" href="../css/style.css">
+        <link rel="icon" href="../img/ACQUIRER-logo.JPG" type="image/x-icon">
+    </head>
+
+    <body>
+        <header>
+            <img class="logo" src="../img/logoBankbu_.PNG"
+                alt="Logo de Mi Empresa">
+            <div id="menuBtn">
+                <img class="TITLE" src="../img/menu.PNG" alt="Botón de Menú ">
+            </div>
+        </header>
+        <div id="menuContainer"></div>
+        <script>
+    fetch('menu.html')
+      .then(response => response.text())
+      .then(html => {
+        document.getElementById('menuContainer').innerHTML = html;
+      });
+  </script>
+        <section>
+
+            <div>
+                <p class="TITLE">Líneas de credito </p>
+                <p class="PARRAFO">A través de este formulario, la entidad
+                    define la manera en la que en otra opción del aplicativo <a
+                        href="DBH_018B.html">-Definición de productos-</a>, se
+                    agrupan bajo criterios propios, las diferentes transacciones
+                    que le son permitidas a cada producto. El formulario
+                    contiene los enlaces: Actualizar, Eliminar, y Adicionar.
+
+                </p>
+                <p class="TITLE"><img src="../img/MEF_001B5.PNG"></p>
+
+                <p class="PARRAFO"><span class="SUBTITULO">Adicionar:</span> Al
+                    activar ese enlace se despliega el siguiente formulario:</p>
+                <p class="TITLE"><img src="../img/MEF_001B51.PNG"></p>
+
+                <table>
+                    <tr>
+                        <td class="titletable"><p class="SUBTITULO">Línea
+                                de crédito</p></td>
+                        <td><p class="PARRAFO">Campo obligatorio, que en máximo
+                                3 dígitos, permite registrar el código que
+                                identifica a cada una de las líneas de consumo
+                                definidas por la entidad.</p></td>
+                    </tr>
+                    <tr>
+                        <td class="titletable"><p
+                                class="SUBTITULO">Nombre</p></td>
+                        <td><p class="PARRAFO">
+                                Campo obligatorio que, en un máximo de 30
+                                caracteres, permite asociar a cada código, un
+                                descriptivo que ilustre la esencia de cada una
+                                de las líneas de consumo definidas por la
+                                entidad.</p></td>
+                    </tr>
+                    <tr>
+                        <td class="titletable"><p class="SUBTITULO">Concepto
+                            </p></td>
+                        <td><p class="PARRAFO">Campo obligatorio que dispone de
+                                lista de valores tipo combo, de la cual se debe
+                                seleccionar entre: Avances, Compras u Otros, la
+                                esencia o diferenciación de cada línea de
+                                consumo. </p></td>
+                    </tr>
+                </table>
+
+                <p class="PARRAFO"><span class="PARRAFO"><span
+                            class="SUBTITULO">Actualizar:</span>
+                            Al activar ese enlace, se despliega un formulario, en el que el único campo no modificable es: Líneas de consumo</p>
+
+                    <p class="TITLE"><img src="../img/MEF_001B52.PNG"></p>
+
+                </section>
+                <script src="../js/menu.js"></script>
+
+                <div id="footerContainer"></div>
+                <script>
+  fetch('footer.html')
+    .then(response => response.text())
+    .then(html => {
+      document.getElementById('footerContainer').innerHTML = html;
+    });
+</script>
+            </body>
+
+        </html>

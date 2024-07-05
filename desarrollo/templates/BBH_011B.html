@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="es">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>OpencardWeb®</title>
+        <link rel="stylesheet" href="../css/pages.css">
+        <link rel="stylesheet" href="../css/style.css">
+        <link rel="icon" href="../img/ACQUIRER-logo.JPG" type="image/x-icon">
+    </head>
+
+    <body>
+        <header>
+            <img class="logo" src="../img/logoBankbu_.PNG"
+                alt="Logo de Mi Empresa">
+            <div id="menuBtn">
+                <img class="TITLE" src="../img/menu.PNG" alt="Botón de Menú ">
+            </div>
+        </header>
+        <div id="menuContainer"></div>
+        <script>
+    fetch('menu.html')
+      .then(response => response.text())
+      .then(html => {
+        document.getElementById('menuContainer').innerHTML = html;
+      });
+  </script>
+        <section>
+            <div>
+                <p class="TITLE">Cargue clientes desde CRM</p>
+
+                <p class="PARRAFO">Mediante esta funcionalidad, utilizando la
+                    información básica de identificación de un cliente como son
+                    Tipo y Número identificación, activar el botón Cargar, si el
+                    cliente no existe en la base de datos del aplicativo,
+                    permite traer, desde el Core, la data necesaria para
+                    crearlo, si por el contrario ya existe, le notifica el
+                    usuario.
+                </p>
+                <p class="TITLE"><img src="../img/BBH_011B.PNG"></p>
+
+                <p class="TITLE">Descripción De Campos</p>
+                <table>
+                    <tr>
+                        <td class="titletable">
+                            <p class="SUBTITULO">Tipo identificación</p>
+                        </td>
+                        <td>
+                            <p class="PARRAFO">Campo que posee lista de valores
+                                tipo combo de la que debe seleccionarse aquel
+                                que corresponda al tipo de identificación del
+                                cliente que existiendo en el Core no así en la
+                                base de datos del aplicativo. </p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="titletable">
+                            <p class="SUBTITULO">Número identificación</p>
+                        </td>
+                        <td>
+                            <p class="PARRAFO">Campo obligatorio, numérico de
+                                máximo 16 dígitos, en el que debe registrarse el
+                                número de identificación del cliente que
+                                existiendo en el Core no así en la base de datos
+                                del aplicativo.</p>
+                        </td>
+                    </tr>
+                   
+                </table>
+
+            </div>
+        </section>
+        <script src="../js/menu.js"></script>
+    </body>
+    <div id="footerContainer"></div>
+    <script>
+  fetch('footer.html')
+    .then(response => response.text())
+    .then(html => {
+      document.getElementById('footerContainer').innerHTML = html;
+    });
+</script>
+</html>

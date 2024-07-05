@@ -4,7 +4,7 @@
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>BANKBU®</title>
+    <title>OpencardWeb®</title>
 
     <link rel="stylesheet" href="../css/pages.css">
     <link rel="stylesheet" href="../css/style.css">
@@ -34,68 +34,67 @@
         <p class="TITLE">Definición de bines</p>
 
         <p class="PARRAFO"><span class="SUBTITULO">Grupos afinidad: </span>
-          Tercer y último nivel de la parametrización, en el que se relacionan
-          los grupos que presentan características comunes, lo que posibilita el
-          otorgarles algunos beneficios a los clientes que pertenezcan a estos,
-          con el objetivo de incentivar el consumo; para los grupos que aplique,
-          se le puede asociar un
-          <a href="NUH_067B.html">programa</a> definido por Visa, al generar las
-          estadísticas de operaciones para la misma, el sistema pueda clasificar
-          correctamente la información a generar. Además de: Actualizar,
-          Eliminar y Adicionar, el formulario cuenta con otros dos enlaces:
-          <a href="MEH_001B.html">Definición de Bines</a> y
-          <a href="MEH_001B1.html">Segmentos</a>.</p>
+          Tercer nivel de la parametrización, en el que se relacionan los grupos
+          que presentan características comunes, lo que posibilita el otorgarles
+          algunos beneficios a los clientes que pertenezcan a estos, con el
+          objetivo de incentivar el consumo. Además de: Actualizar, Eliminar y
+          Adicionar, el formulario cuenta con otros tres enlaces:
+          <a href="MEH_001B.html">Definición de Bines, </a>
+          <a href="MEH_001B1.html">Segmentos, </a><a
+          href="MEH_001B3.html">Tarjetas
+          restringidas</a>.</p>
         <p class="TITLE"><img src="../img/MEF_001E8.PNG"></p>
 
         <p class="PARRAFO"><span class="SUBTITULO">Adicionar:</span> Al activar
-          ese enlace se despliega un formulario:<span></p>
-          <p class="TITLE"><img src="../img/MEF_001E9.PNG"></p>
+          ese enlace se despliega un formulario:</p>
+        <p class="TITLE"><img src="../img/MEF_001E9.PNG"></p>
 
-          <table>
-            <tr>
-              <td class="titletable"><p class="SUBTITULO"><span>Grupos
-                    afinidad </p></td>
-                <td><p class="PARRAFO">Dupla de campos obligatorios, el primero,
-                    alfanumérico de tres dígitos, debe contener el código
-                    asignado al nuevo grupo. El segundo, alfanumérico de 30
-                    posiciones, debe contener el nombre asociado al código del
-                    nuevo grupo.</p> </td>
-              </tr>
-              <tr>
-                <td class="titletable"><p class="SUBTITULO"><span>Programa
-                    </p></td>
-                  <td><p class="PARRAFO">
-                      Campo no obligatorio, con lista de valores del que se
-                      puede seleccionar, si aplica, el <a
-                        href="NUH_067B.html">programa de afinidad</a>
-                      establecido por Visa, para asociarlo a cada uno de los
-                      grupos creados.</p></td>
-                </tr>
-              </table>
-              <p class="PARRAFO"><span
-                  class="PARRAFO"><span
-                    class="SUBTITULO">Actualizar:</span>
-                  Al activar ese enlace se despliega un formulario en el cual,
-                  el único campo modificable es Programa:</p>
-                <p class="TITLE"><img
-                    src="../img/MEF_001E10.PNG"></p>
-                <p class="PARRAFO"><a
-                    href="MEH_001B.html"
-                    target="_self">Definición
-                    de Bines</a><span> |
-                  </span><a
-                    href="MEH_001B1.html">Segmentos</a></p>
+        <table>
+          <tr>
+            <td class="titletable"><p class="SUBTITULO">Grupos
+                afinidad </p></td>
+            <td><p class="PARRAFO">Dupla de campos obligatorios, el primero,
+                alfanumérico de tres dígitos, debe contener el código
+                asignado al nuevo grupo. El segundo, alfanumérico de 30
+                posiciones, debe contener el nombre asociado al código del
+                nuevo grupo.</p> </td>
+          </tr>
+          <tr>
+            <td class="titletable"><p class="SUBTITULO">Programa
+              </p></td>
+            <td><p class="PARRAFO">
+                Campo no obligatorio, con lista de valores del que se
+                puede seleccionar, si aplica, el <a
+                  href="NUH_067B.html">programa de afinidad</a>
+                establecido por Visa, para asociarlo a cada uno de los
+                grupos creados.</p></td>
+          </tr>
+        </table>
+        <p class="PARRAFO"><span
+            class="PARRAFO"><span
+              class="SUBTITULO">Actualizar:</span>
+              Al activar ese enlace se despliega un formulario en el cual, el único campo modificable es Programa:</p>
+          <p class="TITLE"><img
+              src="../img/MEF_001E10.PNG"></p>
+          <p class="PARRAFO"><a
+              href="MEH_001B.html"
+              target="_self">Definición
+              de Bines</a> |
+          </span><a
+            href="MEH_001B1.html">Segmentos</a>
+            | </span><a href="MEH_001B3.html"
+            target="_self">Tarjetas restringidas</a</p>
 
-              </section>
-              <script
-                src="../js/menu.js"></script>
-            </body>
-            <div id="footerContainer"></div>
-            <script>
+      </section>
+      <script
+        src="../js/menu.js"></script>
+    </body>
+    <div id="footerContainer"></div>
+    <script>
   fetch('footer.html')
     .then(response => response.text())
     .then(html => {
       document.getElementById('footerContainer').innerHTML = html;
     });
 </script>
-          </html>
+  </html>

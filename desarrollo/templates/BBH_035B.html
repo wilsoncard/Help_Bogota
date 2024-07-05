@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="es">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>OpencardWeb®</title>
+        <link rel="stylesheet" href="../css/pages.css">
+        <link rel="stylesheet" href="../css/style.css">
+        <link rel="icon" href="../img/ACQUIRER-logo.JPG" type="image/x-icon">
+    </head>
+
+    <body>
+        <header>
+            <img class="logo" src="../img/logoBankbu_.PNG"
+                alt="Logo de Mi Empresa">
+            <div id="menuBtn">
+                <img class="TITLE" src="../img/menu.PNG" alt="Botón de Menú ">
+            </div>
+        </header>
+        <div id="menuContainer"></div>
+        <script>
+    fetch('menu.html')
+      .then(response => response.text())
+      .then(html => {
+        document.getElementById('menuContainer').innerHTML = html;
+      });
+  </script>
+        <section>
+            <div>
+                <p class="TITLE">Consulta Bloqueos</p>
+
+                <p class="PARRAFO">A través de este formulario y usando los
+                    datos básicos de identificación de sus clientes, la entidad
+                    puede efectuar una consulta a su base de datos, y conocer el
+                    estatus en cuanto a bloqueos se refiere, de cada una de las
+                    tarjetas asociadas a los datos de identificación utilizados.
+                    En el bloque Resultados, el sistema muestra los diferentes
+                    registros de tarjetas sin tener en consideración que tengan
+                    o no bloqueos vigentes.
+
+                </p>
+                <p class="TITLE"><img src="../img/BBH_035B.PNG"></p>
+
+
+                <table>
+                    <tr>
+                        <td class="titletable">
+                            <p class="SUBTITULO">Tipo identificación</p>
+                        </td>
+                        <td>
+                            <p class="PARRAFO">Campo que posee lista de valores
+                                tipo combo, con las distintas opciones de
+                                documento de identificación, de la que debe
+                                seleccionar el tipo que corresponda al cliente
+                                para el que se va a consultar el estatus de los
+                                bloqueos de la(s) tarjetas(s) a su nombre.</p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="titletable">
+                            <p class="SUBTITULO">Número identificación</p>
+                        </td>
+                        <td>
+                            <p class="PARRAFO">Campo en el que debe ingresar,
+                                con o sin ceros a la izquierda, el número del
+                                documento de identificación del cliente a
+                                consultar. </p>
+                        </td>
+                    </tr>
+                </table>
+
+                <p class="TITLE">Resultados </p>
+                <table>
+                    <tr>
+                        <td class="titletable">
+                            <p class="SUBTITULO">Número Tarjeta</p>
+                        </td>
+                        <td>
+                            <p class="PARRAFO">Campo en el que se muestra el
+                                número, enmascarado, de cada una de las tarjetas
+                                a nombre del cliente consultado. </p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="titletable">
+                            <p class="SUBTITULO">Código interno</p>
+                        </td>
+                        <td>
+                            <p class="PARRAFO">Campo que muestra el código
+                                interno de cada una de las tarjetas a nombre del
+                                cliente consultado.</p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="titletable">
+                            <p class="SUBTITULO">Nombre Plástico</p>
+                        </td>
+                        <td>
+                            <p class="PARRAFO">Campo en el que se ilustra el
+                                nombre del cliente tal y como aparece en el
+                                plástico de cada una de las tarjetas a nombre
+                                del cliente consultado.
+                            </p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="titletable">
+                            <p class="SUBTITULO">Bloqueo</p>
+                        </td>
+                        <td>
+                            <p class="PARRAFO">Campo en el que se muestra el
+                                bloqueo detentado en cada una de las tarjetas a
+                                nombre del cliente consultado, dato que puede
+                                ser nulo. </p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="titletable">
+                            <p class="SUBTITULO">Fecha Bloqueo</p>
+                        </td>
+                        <td>
+                            <p class="PARRAFO">
+                                Campo que en formato DD-MM-AAAA HH:MM:SS
+                                ilustra, la fecha del sistema en la que se
+                                aplicó el bloqueo correspondiente. </p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="titletable">
+                            <p class="SUBTITULO">Tipo Tarjeta</p>
+                        </td>
+                        <td>
+                            <p class="PARRAFO">Campo que muestra el tipo de
+                                tarjeta a la que corresponde cada uno de los
+                                registros recuperados.
+
+                            </p>
+                        </td>
+                    </tr>
+                </table>
+
+            </div>
+        </section>
+        <script src="../js/menu.js"></script>
+    </body>
+    <div id="footerContainer"></div>
+    <script>
+  fetch('footer.html')
+    .then(response => response.text())
+    .then(html => {
+      document.getElementById('footerContainer').innerHTML = html;
+    });
+</script>
+</html>

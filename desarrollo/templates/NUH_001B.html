@@ -4,7 +4,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>BANKBU®</title>
+  <title>OpencardWeb®</title>
   <link rel="stylesheet" href="../css/style.css">
   <link rel="stylesheet" href="../css/pages.css">
   <link rel="icon" href="../img/ACQUIRER-logo.JPG" type="image/x-icon">
@@ -30,21 +30,11 @@
     <div>
         <p class="TITLE">Administración de casos de uso</p>
                 
-        <p class="PARRAFO">Desde este formulario, se habilita la consulta
-          y mantenimiento de la tabla en la cual se almacena toda la información
-          relacionada con la manera en que se estructuran los diferentes menús de opciones o formularios e,
-          incluso, su relación con los casos de uso -compuestos por tareas o funcionalidades-, los que pueden ser
-          asociados con los distintos perfiles de usuario, definidos por la entidad.</p>
+        <p class="PARRAFO">Desde este formulario, se habilita la consulta y mantenimiento de la tabla, en la cual se almacena la información relacionada con la manera en que se estructuran los diferentes menús de opciones o formularios e, incluso, su relación con los casos de uso -compuestos por tareas o funcionalidades-, los que pueden ser asociados con los distintos perfiles de usuario, definidos por la entidad. El formulario cuenta con un filtro que permite efectuar consultas tanto por el Rol de negocio como por el Tipo de menú. Así mismo, contiene los enlaces: Actualizar, Eliminar y Adicionar.</p>
         <p class="TITLE"><img src="../img/NUF_001E.PNG"></p>
 
-        <p class="PARRAFO">El formulario cuenta con un filtro que permite
-          efectuar consultas tanto por el Rol de negocio como por el Tipo de menú.</p>
-        <p class="PARRAFO">El formulario contiene los enlaces: Actualizar,
-            Eliminar, y Adicionar.</p>
         <p class="PARRAFO"><span class="SUBTITULO">Adicionar:</span>
-          Al activar ese enlace se despliega un formulario
-          dividido en dos pasos de un wisard de datos (Menú / Caso de uso y Funcionalidades) con los siguientes
-          campos.</p>
+          Al activar ese enlace se despliega un wisard de dos pasos: Menú / Caso de uso y Funcionalidades, con los siguientes campos.</p>
         <p class="TITLE"><img src="../img/NUF_001E1.PNG"></p>
 
         <p class="TITLE"><img src="../img/NUF_001E4.PNG"></p>
@@ -62,11 +52,9 @@
                       Rol de negocio</p>
               </td>
               <td>
-                <p class="PARRAFO">Campo
-                  obligatorio que posee lista de valores tipo combo, de la que debe seleccionarse entre
-                  Núcleo, Emisor, Cliente </span> o</span><span class="PARRAFO"> Adquirente a
-                    cuál de estos roles corresponde la funcionalidad que
-                    se va a adicionar.</span> 
+                <p class="PARRAFO">Campo obligatorio que posee lista de valores tipo combo, de la que debe seleccionarse entre: Núcleo, Emisor DB, BANCO DE BOGOTA o Adquirente, a cuál de estos roles corresponde la funcionalidad que se va a adicionar.
+
+                </span> 
                 </p>
               </td>
             </tr>
@@ -76,11 +64,9 @@
                       Tipo de menú</p>
               </td>
               <td>
-                <p class="PARRAFO">Campo
-                  obligatorio que posee lista de valores tipo combo, de la que debe seleccionarse entre
-                  Núlo, Menú </span> o</span><span class="PARRAFO">
-                      Caso de uso a cuál de estos tipos corresponde la funcionalidad que se va a
-                    adicionar.</span> 
+                <p class="PARRAFO">Campo obligatorio que posee lista de valores tipo combo, de la que debe seleccionarse entre: Nulo, Menú o Caso de uso, a cuál de estos tipos corresponde la funcionalidad que se va a adicionar.
+
+                </span> 
                 </p>
               </td>
             </tr>
@@ -90,22 +76,21 @@
                       Depende de</p>
               </td>
               <td>
-                <p class="PARRAFO">Campo no
-                  obligatorio que posee lista de valores tipo combo cuyos valores dependen del campo Rol de
-                    negocio, de la que puede seleccionarse la correspondiente opción de menú o rama
-                  de la que depende, en este caso, la funcionalidad que se va a adicionar.
+                <p class="PARRAFO">Campo no obligatorio que posee lista de valores tipo combo cuyos valores dependen del campo Rol de negocio, de la que puede seleccionarse la correspondiente opción de menú o rama de la que depende, en este caso, la funcionalidad que se va a adicionar.
+
+
                 </p>
               </td>
             </tr>
             <tr>
               <td>
                 <p class="SUBTITULO">
-                      Label</p>
+                      Etiqueta</p>
               </td>
               <td>
-                <p class="PARRAFO">En
-                  este campo alfanumérico de 60 posiciones, obligatorio, se debe registrar
-                  el nombre de la opción que corresponda a la funcionalidad que se va a adicionar.</p>
+                <p class="PARRAFO">En este campo alfanumérico de 60 posiciones, obligatorio, se debe registrar el nombre de la opción que corresponda a la funcionalidad que se va a adicionar.
+
+                </p>
               </td>
             </tr>
             <tr>
@@ -114,10 +99,9 @@
                       Url principal</p>
               </td>
               <td>
-                <p class="PARRAFO">Campo
-                  alfanumérico de 200 posiciones, cuya obligatoriedad depende del campo Tipo de
-                    menú, en caso de requerirse debe contener la dirección inicial o principal, a
-                  partir de la cual se accesa el formulario asociado a la funcionalidad que se va a adicionar.</p>
+                <p class="PARRAFO">Campo alfanumérico de 200 posiciones, cuya obligatoriedad depende del campo Tipo de menú, en caso de requerirse debe contener la dirección inicial o principal, a partir de la cual se accesa el formulario asociado a la funcionalidad que se va a adicionar.
+
+                </p>
               </td>
             </tr>
             <tr>
@@ -126,9 +110,9 @@
                       Código funcionalidad</p>
               </td>
               <td>
-                <p class="PARRAFO">Campo de salida que muestra un número secuencial, asignado por
-                  el sistema, que permite identificar cada tareal funcional que haga parte de un caso de uso. No aplica
-                  para opciones de menú Menú.
+                <p class="PARRAFO">Campo de salida que muestra un número secuencial, asignado por el sistema, que permite identificar cada tareal funcional que haga parte de un caso de uso. No aplica para opciones de menú Menú.
+
+
                 </p>
               </td>
             </tr>
@@ -140,8 +124,9 @@
                       Descripción</p>
               </td>
               <td>
-                <p class="PARRAFO">Campo alfanumérico de 200 posiciones, obligatorio, en el que
-                  debe registrarse el nombre asociado a la tarea funcional, asociada al caso de uso.</p>
+                <p class="PARRAFO">Campo alfanumérico de 200 posiciones, obligatorio, en el que debe registrarse el nombre asociado a la tarea funcional, asociada al caso de uso.
+
+                </p>
               </td>
             </tr>
             <tr>
@@ -149,8 +134,9 @@
                 <p class="SUBTITULO">Agregar Url </p></p>
               </td>
               <td>
-                <p class="PARRAFO">Campo en el que debe registrarse, una a una, las diferentes url o
-                  direcciones que permiten invocar los diferentes formularios o funcionalidades que componen cada tarea.
+                <p class="PARRAFO">Campo en el que debe registrarse, una a una, las diferentes url o direcciones que permiten invocar los diferentes formularios o funcionalidades que componen cada tarea.
+
+
                 </p>
               </td>
             </tr>
@@ -159,9 +145,9 @@
                 <p class="SUBTITULO">Funcionalidad existente </p>
               </td>
               <td>
-                <p class="PARRAFO">Campo que posee lista de valores adjunta, de la cual es posible
-                  seleccionar las tareas funcionales previamente creadas mediante esta misma opción, lo que
-                  permite reutilizar una misma tarea en varios casos de uso. </p>
+                <p class="PARRAFO">Campo que posee lista de valores adjunta, de la cual es posible seleccionar las tareas funcionales previamente creadas mediante esta misma opción, lo que permite reutilizar una misma tarea en varios casos de uso.
+
+                </p>
               </td>
             </tr>
           </table>
@@ -170,10 +156,9 @@
           </table>
         </div>
         <p class="PARRAFO"><span class="SUBTITULO">Actualizar</span>:
-          si el usuario selecciona un registro e invoca la opción Actualizar se despliega un formulario
-          con todos los campos modificables. </p>
+          Al invocar ese enlace se despliega un formulario con todos los campos modificables:</p>
         <p class="TITLE"><img src="../img/NUF_001E3.PNG"></p>
-        <p class="TITLE"><img src="../img/NUF_001E4.PNG"></p>
+        
     
   </section>
   <script src="../js/menu.js"></script>

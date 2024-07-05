@@ -1,24 +1,24 @@
 <!DOCTYPE html>
 <html lang="es">
 
-<head>
+  <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>BANKBU®</title>
+    <title>OpencardWeb®</title>
     <link rel="stylesheet" href="../css/pages.css">
     <link rel="stylesheet" href="../css/style.css">
- <link rel="icon" href="../img/ACQUIRER-logo.JPG" type="image/x-icon">
-</head>
+    <link rel="icon" href="../img/ACQUIRER-logo.JPG" type="image/x-icon">
+  </head>
 
-<body>
+  <body>
     <header>
-        <img class="logo" src="../img/logoBankbu_.PNG" alt="Logo de Mi Empresa">
-        <div id="menuBtn">
-            <img class="TITLE"  src= "../img/menu.PNG" alt="Botón de Menú ">
-        </div>
+      <img class="logo" src="../img/logoBankbu_.PNG" alt="Logo de Mi Empresa">
+      <div id="menuBtn">
+        <img class="TITLE" src="../img/menu.PNG" alt="Botón de Menú ">
+      </div>
     </header>
-      <div id="menuContainer"></div>
-  <script>
+    <div id="menuContainer"></div>
+    <script>
     fetch('menu.html')
       .then(response => response.text())
       .then(html => {
@@ -27,31 +27,29 @@
   </script>
 
     <section>
-        <div> 
-            
-            <p  class="TITLE">Consultar etapas </p>
-                  
-            <p class="PARRAFO"><span class="PARRAFO">Página en construcción. 
-              Ofrecemos disculpas.</p>
-           
-            <p class="PARRAFO" >
-              </p>
-            
+      <div>
 
+        <p class="TITLE">Consultar etapas </p>
 
-            <div></div>
-          </div>
-            </section>
-    <script src="../js/menu.js"></script>
+        <p class="PARRAFO"><span class="PARRAFO">Página en construcción.
+            Ofrecemos disculpas.</p>
 
-    <div id="footerContainer"></div>
-<script>
+          <p class="PARRAFO">
+          </p>
+
+          <div></div>
+        </div>
+      </section>
+      <script src="../js/menu.js"></script>
+
+      <div id="footerContainer"></div>
+      <script>
   fetch('footer.html')
     .then(response => response.text())
     .then(html => {
       document.getElementById('footerContainer').innerHTML = html;
     });
 </script>
-</body>
+    </body>
 
-</html>
+  </html>

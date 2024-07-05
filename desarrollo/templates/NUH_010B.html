@@ -1,25 +1,26 @@
 <!DOCTYPE html>
 <html lang="es">
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>BANKBU®</title>
-    <link rel="stylesheet" href="../css/pages.css">
-    <link rel="stylesheet" href="../css/style.css">
-    <link rel="icon" href="../img/ACQUIRER-logo.JPG" type="image/x-icon">
-</head>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>OpencardWeb®</title>
+        <link rel="stylesheet" href="../css/pages.css">
+        <link rel="stylesheet" href="../css/style.css">
+        <link rel="icon" href="../img/ACQUIRER-logo.JPG" type="image/x-icon">
+    </head>
 
-<body>
+    <body>
 
-    <header>
-        <img class="logo" src="../img/logoBankbu_.PNG" alt="Logo de Mi Empresa">
-        <div id="menuBtn">
-            <img class="TITLE" src="../img/menu.PNG" alt="Botón de Menú ">
-        </div>
-    </header>
-      <div id="menuContainer"></div>
-  <script>
+        <header>
+            <img class="logo" src="../img/logoBankbu_.PNG"
+                alt="Logo de Mi Empresa">
+            <div id="menuBtn">
+                <img class="TITLE" src="../img/menu.PNG" alt="Botón de Menú ">
+            </div>
+        </header>
+        <div id="menuContainer"></div>
+        <script>
     fetch('menu.html')
       .then(response => response.text())
       .then(html => {
@@ -27,67 +28,83 @@
       });
   </script>
 
-    <section>
-        
+        <section>
+
             <div>
-              
+
                 <p class="TITLE">Administración de Usuarios</p>
-                              
-                <p  class="PARRAFO">Desde este formulario, se habilita la consulta
-                    y mantenimiento de una tabla en la cual se almacena toda la información
-                    relacionada con los usuarios nombrados para la corporación o entidad
-                    financiera, lo cual requiere que, como medida de seguridad, el acceso a la misma
-                    sea altamente restringido.</p>
+
+                <p class="PARRAFO">esde este formulario, se habilita la consulta
+                    y mantenimiento de una tabla en la cual se almacena la
+                    información relacionada con los usuarios nombrados para la
+                    entidad financiera, lo cual requiere que, como medida de
+                    seguridad, el acceso a la misma sea altamente restringido.
+                    El formulario contiene las opciones Actualizar, Eliminar,
+                    Adicionar, Detalle y <a
+                        href="#Restricciones">Restricciones</a>.</p>
                 <p class="TITLE"><img src="../img/NUF_010E.PNG"></p>
 
-                <p  class="PARRAFO">El formulario cuenta con un filtro que permite
-                    efectuar consultar por el código y/o el nombre del usuario</p>
+                <p class="PARRAFO">El formulario cuenta con un filtro que
+                    permite
+                    efectuar consultar por el código y/o el nombre del
+                    usuario</p>
                 <p class="TITLE"><img src="../img/NUF_010E1.PNG"></p>
-    
-                <p class="PARRAFO">El formulario contiene los enlaces: Actualizar,
-                    Eliminar, Adicionar,Detalle y <a href="#restricciones">Restricciones</a></p>
-                <p class="PARRAFO"><span class="SUBTITULO">Adicionar:</span>
-                    Al activar ese enlace se despliega un formulario
-                    dividido en cuatro bloques de datos (Básicos, Información, Localización) con los siguientes campos.</p>
+
+                <p class="PARRAFO">El formulario cuenta con un filtro que
+                    permite efectuar consultar por: Nombre de usuario (del
+                    aplicativo) o por Nombre (del funcionario), este último
+                    puede ser primer o segundo nombre, si es por el segundo
+                    nombre, se debe usar el comodín %, antes del mismo:</p>
                 <p class="TITLE"><img src="../img/NUF_010E2.PNG"></p>
 
-                
-                    <p class="TITLE">Descripción de Campos</p>
-                
+                <p class="PARRAFO"><span class="SUBTITULO">Adicionar</span>:
+                    Al invocar ese enlace se despliega un nuevo formulario
+                    dividido en varios bloques de datos: Básicos, Información y
+                    Localización, con los siguientes campos: </p>
+                <p class="TITLE"><img src="../img/NUF_010E3.PNG"></p>
+
+                <p class="TITLE">Descripción de Campos</p>
 
                 <table>
                     <tr>
                         <td>
                             <p class="SUBTITULO">
-                                        Código</p>
+                                Nombre de usuario
+
+                            </p>
                         </td>
-                        <td  >
-                            <p  class="PARRAFO">Campo
-                                alfanumérico de 16 dígitos, obligatorio, en el que se
-                                registra un código, pseudónimo o abreviatura que identifica
-                                a cada usuario del Sistema.
+                        <td>
+                            <p class="PARRAFO">Campo alfanumérico de 16 dígitos,
+                                obligatorio, en el que debe registrarse una
+                                abreviatura, un código o pseudónimo que permite
+                                identificar a cada usuario del Sistema.
+
                             </p>
                         </td>
                     </tr>
                     <tr>
                         <td>
                             <p class="SUBTITULO">
-                                        Nombre</p>
+                                Nombre</p>
                         </td>
-                        <td  >
-                            <p  class="PARRAFO">En
-                                este campo alfanumérico de 25 posiciones, obligatorio, se registra
-                                el nombre de la persona a quien corresponde el usuario a definir.</p>
+                        <td>
+                            <p class="PARRAFO">En este campo alfanumérico de 25
+                                posiciones, obligatorio, se registra el(os)
+                                nombre(s) de la persona a quien corresponde el
+                                usuario a definir.
+
+                            </p>
                         </td>
                     </tr>
                     <tr>
                         <td>
                             <p class="SUBTITULO">
-                                        Primer apellido</p>
+                                Primer apellido</p>
                         </td>
                         <td>
-                            <p  class="PARRAFO">Campo
-                                alfanumérico de 20 posiciones, obligatorio, en el que se registra
+                            <p class="PARRAFO">Campo
+                                alfanumérico de 20 posiciones, obligatorio, en
+                                el que se registra
                                 el primer apellido del usuario nombrado.
                             </p>
                         </td>
@@ -95,35 +112,40 @@
                     <tr>
                         <td>
                             <p class="SUBTITULO">
-                                        Segundo apellido</p>
+                                Segundo apellido</p>
                         </td>
                         <td>
-                            <p  class="PARRAFO">En
-                                este campo alfanumérico de 20 posicione, no obligatorio, se registra
+                            <p class="PARRAFO">En
+                                este campo alfanumérico de 20 posicione, no
+                                obligatorio, se registra
                                 el segundo apellido del usuario nombrado. </p>
                         </td>
                     </tr>
                     <tr>
                         <td>
                             <p class="SUBTITULO">
-                                        Cargo</p>
+                                Cargo</p>
                         </td>
                         <td>
-                            <p  class="PARRAFO">Campo
-                                obligatorio con lista de valores de la que se debe seleccionar el <a
-                                    href="NUH_040B.html" >cargo</a>
-                                desempe&ntilde;ado por el usuario en la entidad.</p>
+                            <p class="PARRAFO">Campo
+                                obligatorio con lista de valores de la que se
+                                debe seleccionar el <a
+                                    href="NUH_040B.html">cargo</a>
+                                desempe&ntilde;ado por el usuario en la
+                                entidad.</p>
                         </td>
                     </tr>
                     <tr>
                         <td>
                             <p class="SUBTITULO">
-                                        Código empleado</p>
+                                Código empleado</p>
                         </td>
                         <td>
-                            <p  class="PARRAFO">En
-                                este campo alfanumérico de 16 dígitos, no obligatorio,
-                                se registra el código interno del funcionario o en su defecto
+                            <p class="PARRAFO">En
+                                este campo alfanumérico de 16 dígitos, no
+                                obligatorio,
+                                se registra el código interno del funcionario o
+                                en su defecto
                                 el número de documento de identificación.
                             </p>
                         </td>
@@ -131,40 +153,111 @@
                     <tr>
                         <td>
                             <p class="SUBTITULO">
-                                        Teléfono</p>
+                                Rol</p>
                         </td>
                         <td>
-                            <p  class="PARRAFO">En
-                                este campo alfanumérico de 20 dígitos, no obligatorio,
-                                se registran los números telefónicos en los que es posible
+                            <p class="PARRAFO">Campo que posee lista de valores
+                                adjunta de la que debe seleccionarse el rol al
+                                que pertenece el usuario del aplicativo que se
+                                está definiendo o modificando.
+
+                            </p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <p class="SUBTITULO">
+                                Estado</p>
+                        </td>
+                        <td>
+                            <p class="PARRAFO">Campo obligatorio, posee lista de
+                                valores tipo combo, de la que debe seleccionarse
+                                entre: Vigente, Bloqueado o Inactivo, la
+                                situación del usuario del aplicativo.
+
+                            </p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <p class="SUBTITULO">
+                                VIP Tarjetas PCI
+
+                            </p>
+                        </td>
+                        <td>
+                            <p class="PARRAFO">Campo obligatorio, posee lista de
+                                valores tipo combo, de la que debe seleccionarse
+                                entre: Si o No, al usuario le es habilitada la
+                                funcionalidad mediante la cual pueda visualizar
+                                en claro los números de las tarjetas.
+
+                            </p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <p class="SUBTITULO">
+                                Centro costo
+
+                            </p>
+                        </td>
+                        <td>
+                            <p class="PARRAFO">Campo obligatorio que en máximo
+                                14 enteros y 2 decimales, le permite a la
+                                entidad asignar el dato del centro de costos al
+                                cual está vinculado el funcionario a adicionar o
+                                modificar su información.
+
+                            </p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <p class="SUBTITULO">
+                                Teléfono</p>
+                        </td>
+                        <td>
+                            <p class="PARRAFO">En
+                                este campo alfanumérico de 20 dígitos, no
+                                obligatorio,
+                                se registran los números telefónicos en los que
+                                es posible
                                 ubicar al usuario. </p>
                         </td>
                     </tr>
                     <tr>
                         <td>
                             <p class="SUBTITULO">
-                                        Extensión</p>
+                                Extensión</p>
                         </td>
                         <td>
-                            <p  class="PARRAFO">Campo
-                                alfanumérico de 20 dígitos, no obligatorio, en el que
-                                se indican los números de extensión en los que es posible
+                            <p class="PARRAFO">Campo
+                                alfanumérico de 20 dígitos, no obligatorio, en
+                                el que
+                                se indican los números de extensión en los que
+                                es posible
                                 ubicar al usuario.</p>
                         </td>
                     </tr>
                     <tr>
                         <td>
                             <p class="SUBTITULO">
-                                        Correo electrónico</p>
+                                Correo electrónico</p>
                         </td>
                         <td>
-                            <p  class="PARRAFO">En
-                                este campo alfanumérico de 30 dígitos, no obligatorio,
-                                se registra la dirección electrónica a la que es posible
-                                enviar e-mails al usuario. Cuando se ejecutan procesos desde <a href="OPH_002B.html"
-                                    >automatización</a>,
-                                el sistema envía a esta dirección los mails en los que
-                                informa al usuario el resultado de la ejecución de los procesos
+                            <p class="PARRAFO">En
+                                este campo alfanumérico de 30 dígitos, no
+                                obligatorio,
+                                se registra la dirección electrónica a la que es
+                                posible
+                                enviar e-mails al usuario. Cuando se ejecutan
+                                procesos desde <a
+                                    href="OPH_002B.html">automatización</a>,
+                                el sistema envía a esta dirección los mails en
+                                los que
+                                informa al usuario el resultado de la ejecución
+                                de los procesos
                                 lanzados por él.
                             </p>
                         </td>
@@ -172,40 +265,44 @@
                 </table>
 
                 <p class="PARRAFO"><span class="SUBTITULO">Actualizar</span>:
-                    si el usuario selecciona un registro e invoca la opción Actualizar
-                    se despliega un formulario con un único campo NO modificable que es
-                    el Código. </p>
+                    Al invocar ese enlace se despliega un formulario con un
+                    único campo no modificable: Nombre de usuario. </p>
                 <p class="TITLE"><img src="../img/NUF_010E3.PNG"></p>
 
                 <p class="PARRAFO"><span class="SUBTITULO">Detalle</span>:
-                    si el usuario selecciona un registro e invoca la opción Detalle se
-                    despliega un formulario con toda la información del registro y en el
-                    cual ninguno de sus campos es modificable. </p>
+                    Al invocar ese enlace se despliega un formulario con la
+                    información del registro y en el cual ninguno de sus datos
+                    es modificable:</p>
                 <p class="TITLE"><img src="../img/NUF_010E4.PNG"></p>
 
-                    <p id="restricciones" class="PARRAFO" ><span class="SUBTITULO">Restricciones :</span>  
-                        una vez se activa el enlace Restricciones, se despliega un formulario que muestra 
-                        el o los Roles de negocio a los cuales tiene acceso el usuario desde el cuál se invocó.
-                         Ésta maniobrabilidad tiene como propósito poder diferenciar los atributos entre 
-                         usuarios que pertenezcan a un mismo rol; basta con navegar por los menús y submenús
-                          hasta ubicar la o las opciones que se requieran deshabilidar / habilitar o restringir 
-                          / autorizar, para el usuario desde el cuál se invocó, condición dada por el estado 
-                          del checkbox Permisos, que solo se habilitan para aquellos registros de tipo 
-                          Funcionalidad; para poder evidenciar el cambio es necesario primero activar el 
-                          botón especial Salvar y segundo que el usuario afectado, reingrese al aplicativo.</p>
-                        <p class="TITLE"><img src="../img/NUF_011E4.PNG"  ></p>
+                <p id="restricciones" class="PARRAFO"><span
+                        class="SUBTITULO">Restricciones :</span>
+                    Al invocar ese enlace se despliega un formulario que muestra
+                    el o los Roles de negocio a los cuales tiene acceso el
+                    usuario desde el cuál se invocó. Ésta maniobrabilidad tiene
+                    como propósito poder diferenciar los atributos entre
+                    usuarios que pertenezcan a un mismo rol; basta con navegar
+                    por los menús y submenús hasta ubicar la o las opciones que
+                    se requieran deshabilidar / habilitar o restringir /
+                    autorizar, para el usuario desde el cuál se invocó,
+                    condición dada por el estado del checkbox Permisos, que solo
+                    se habilitan para aquellos registros de tipo Funcionalidad;
+                    para poder evidenciar el cambio es necesario primero activar
+                    el botón especial Salvar y segundo que el usuario afectado,
+                    reingrese al aplicativo.</p>
+                <p class="TITLE"><img src="../img/NUF_011E4.PNG"></p>
             </div>
-    </section>
-    <script src="../js/menu.js"></script>
+        </section>
+        <script src="../js/menu.js"></script>
 
-    <div id="footerContainer"></div>
-<script>
+        <div id="footerContainer"></div>
+        <script>
   fetch('footer.html')
     .then(response => response.text())
     .then(html => {
       document.getElementById('footerContainer').innerHTML = html;
     });
 </script>
-</body>
+    </body>
 
 </html>

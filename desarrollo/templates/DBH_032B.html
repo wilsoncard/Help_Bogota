@@ -4,7 +4,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>BANKBU®</title>
+  <title>OpencardWeb®</title>
 
   <link rel="stylesheet" href="../css/pages.css">
   <link rel="stylesheet" href="../css/style.css">
@@ -31,14 +31,10 @@
   <section>
     <div>
       
-      <p class="TITLE">Ingreso de solicitudes nuevo débito</p>
+      <p class="TITLE">Ingreso solicitudes nuevas</p>
 
-      <p class="PARRAFO">Mediante esta opción se ingresan
-        en el sistema las solicitudes de nuevo débito.</p>
-      <p class="PARRAFO">Al ingresar a la opción se despliega
-        un formulario inicial en el cual se solicita al usuario digitar los datos
-        de identificación del cliente para quien se desea ingresar la solicitud.</p>
-      <p class="TITLE"><img src="../img/DBF_032E.PNG" 355"></p>
+      <p class="PARRAFO">A través de esta opción se ingresan las solicitudes de nuevo débito. Al invocar la opción, se despliega un formulario en el que se deben digitar los datos de identificación del cliente para quien se desea ingresar la solicitud y activar el botón Buscar. El sistema valida la existencia de un registro que coincida con el tipo y número de identificación.</p>
+      <p class="TITLE"><img src="../img/DBF_032E.PNG" ></p>
 
       <p class="TITLE">Descripción de campos</p>
       <div>
@@ -68,43 +64,34 @@
           </tr>
         </table>
       </div>
+      <p class="TITLE"><img src="../img/DBF_032E11.PNG" ></p>
 
-      <p class="PARRAFO">Una vez ingresada la información se
-        despliega un formulario que contiene la información de todas
-        las solicitudes de nuevo débito que tenga el cliente. Si no existen
-        solicitudes a mostrar el formulario se despliega en blanco.</p>
-      <p class="TITLE"><img src="../img/DBF_032E1.PNG" 670"></p>
+      <p class="PARRAFO">Una vez validados los datos de identificación ingresados, se despliega el formulario anterior que,
+         además de contener información básica del cliente, dispone del enlace Solicitudes que, al activarse, ilustra si el
+          cliente ya posee solicitudes de nuevo débito en proceso o no finalizadas. Si no existen esa clase de registros, 
+          el formulario se despliega en blanco. Además de los enlaces: Actualizar, Eliminar, Adicionar y Detalle, el formulario
+           dispone del enlace<a href="DBH_032B.html#BL_ETAPAS"> Consultar etapas</a>, el que permite ver el histórico de las etapas por las que ha pasado la solicitud. </p>
+      <p class="TITLE"><img src="../img/DBF_032E1.PNG" ></p>
 
-      <p class="PARRAFO">El formulario contiene el hipervínculo
-        <a href="DBH_032B.html#BL_ETAPAS"> Consultar etapas</a>,
-        que permite ver el histórico de las etapas por las que ha pasado la
-        solicitud. Adicionalmente contiene los enlaces:Actualizar, Eliminar, Adicionar
-        y Detalle.
-      </p>
       <p class="PARRAFO"><span class="SUBTITULO">Adicionar:</span>
-        Al activar ese enlace, se despliega un
-        nuevo formulario con un único campo que contiene una lista de valores
-        en donde se selecciona el <a href="DBH_018B.html">producto
-            débito</a> solicitado por el cliente.</p>
-      <p class="TITLE"><img src="../img/DBF_032E2.PNG" 435"></p>
-
-      <p class="PARRAFO">Una vez hechas las validaciones respectivas,
-        el sistema despliega un wizard de dos pasos en el que se registran los datos
-        requeridos para el ingreso de la solicitud.</p>
-      <p class="TITLE"><img src="../img/DBF_032E3.PNG" 678"></p>
+        Al activar ese enlace, se despliega un nuevo formulario con un único campo, en el que es posible digitar los tres datos que componen cada producto o, 
+        buscar mediante la lista de valores el <a href="MEH_002B.html">producto
+            débito</a> solicitado por el cliente:</p>
+      <p class="TITLE"><img src="../img/DBF_032E2.PNG"></p>
+      <p class="PARRAFO">Una vez hechas las validaciones respectivas, el sistema despliega un nuevo formulario en el que se deben indicar o registrar, los datos requeridos para el ingreso de la solicitud:</p>
+      <p class="TITLE"><img src="../img/DBF_032E3.PNG"></p>
 
       <p class="TITLE">Descripción de campos</p>
       <div>
         <table>
           <tr>
             <td class="titletable">
-              <p class="SUBTITULO">Bin
-                    / Producto</p>
+              <p class="SUBTITULO"> Producto</p>
             </td>
             <td>
               <p class="PARRAFO">Campo
                 de salida que muestra el bin, producto, grupo de afinidad y descripción
-                del <a href="DBH_018B.html">producto débito</a>
+                del <a href="MEH_002B.html">producto débito</a>
                 solicitado por el cliente.</p>
             </td>
           </tr>
@@ -143,13 +130,14 @@
           </tr>
           <tr>
             <td class="titletable">
-              <p class="SUBTITULO">Uso
-                    tarjeta </p>
+              <p class="SUBTITULO">Solo consulta
+
+              </p>
             </td>
             <td>
-              <p class="PARRAFO">Este campo toma el valor 'Normal'
-                para se&ntilde;alar que la tarjeta no tiene restricciones para su
-                uso. </p>
+              <p class="PARRAFO">Campo obligatorio, con lista de valores tipo combo, de la que puede indicarse Normal, para señalar que la tarjeta no tiene restricciones para su uso o restringida para solo Consulta.
+
+              </p>
             </td>
           </tr>
           <tr>
@@ -188,17 +176,6 @@
           </tr>
           <tr>
             <td class="titletable">
-              <p class="SUBTITULO">Sucursal
-                    cuenta </p>
-            </td>
-            <td>
-              <p class="PARRAFO">Campo
-                en el que se digita el código de la sucursal a la que pertenece
-                la cuenta a asociar con la tarjeta.</p>
-            </td>
-          </tr>
-          <tr>
-            <td class="titletable">
               <p class="SUBTITULO">Moneda</p>
             </td>
             <td>
@@ -208,46 +185,116 @@
                 débito. </p>
             </td>
           </tr>
+          <tr>
+            <td class="titletable">
+              <p class="SUBTITULO">Agente gestión
+
+              </p>
+            </td>
+            <td>
+              <p class="PARRAFO">Campo no obligatorio, en el que se digita o se selecciona de la lista adjunta, el código del agente asociado a la solicitud del cliente.
+              </p>
+            </td>
+          </tr>
+          <tr>
+            <td class="titletable">
+              <p class="SUBTITULO">Punto de entrega
+              </p>
+            </td>
+            <td>
+              <p class="PARRAFO">Campo no obligatorio, en el que, si aplica, se digita o se selecciona de la lista adjunta, el código del punto físico de la dependencia de la entidad en la que le será entregado el plástico de la tarjeta solicitada.
+              </p>
+            </td>
+          </tr>
+          <tr>
+            <td class="titletable">
+              <p class="SUBTITULO">Nombre empresa, Tipo identificación y Número identificación
+              </p>
+            </td>
+            <td>
+              <p class="PARRAFO">Conjunto de campos que aplican para cuando se trate de una solicitud para un producto empresarial, el sistema no valida ninguno de esos datos que corresponden a la empresa a la que está vinculado el producto solicitado por el cliente. 
+              </p>
+            </td>
+          </tr>
+          <tr>
+            <td class="titletable">
+              <p class="SUBTITULO">Tarjeta Chip
+              </p>
+            </td>
+            <td>
+              <p class="PARRAFO">Campo tipo checkbox en el que se indica si la tarjeta a expedir dispone o no de ese componente o dispositivo.
+
+              </p>
+            </td>
+          </tr>
+          <tr>
+            <td class="titletable">
+              <p class="SUBTITULO">Flag personalizada
+
+              </p>
+            </td>
+            <td>
+              <p class="PARRAFO">Campo tipo checkbox en el que se indica si en el plástico de la tarjeta se le debe adicionar algún distintivo a manera de personalización del mismo. En caso afirmativo, en el campo adjunto se debe digitar la ruta en la que se encuentra el archivo correspondiente.
+              </p>
+            </td>
+          </tr>
+          <tr>
+            <td class="titletable">
+              <p class="SUBTITULO">Sistema de transporte
+
+              </p>
+            </td>
+            <td>
+              <p class="PARRAFO">Campo que aplica si dentro de los atributos de la tarjeta, se tiene que puede ser usada para el pago de la tarifa del servicio de transporte masivo, caso en el cual, se debe digitar o seleccionar el código correspondiente.
+
+              </p>
+            </td>
+          </tr>
+          <tr>
+            <td class="titletable">
+              <p class="SUBTITULO">Contactless
+
+              </p>
+            </td>
+            <td>
+              <p class="PARRAFO">Campo que se activa cuando el plástico corresponde a una tarjeta chip, posee lista de valores tipo combo, de la que debe seleccionarse entre: Tarjeta, Celular micro SD o Celular simcard, la manera en que se habilita dicho servicio de utilización sin requerirse el contacto físico. 
+
+              </p>
+            </td>
+          </tr>
+          <tr>
+            <td class="titletable">
+              <p class="SUBTITULO">Modelo teléfono
+
+
+              </p>
+            </td>
+            <td>
+              <p class="PARRAFO">En caso de que el contactless se habilite para el celular, en este campo se indica a cuál modelo corresponde dicho teléfono.
+
+              </p>
+            </td>
+          </tr>
         </table>
       </div>
 
-      <p class="PARRAFO">En la segunda página del wizard, se
-        despliegan los diferentes documentos requeridos durante el ingreso de la solicitud
-        y el usuario puede marcar para cada tipo de persona si el documento fue entregado
-        o no.</p>
-      <p class="TITLE"><img src="../img/DBF_032E4.PNG" 646" height="317"></p>
+      <p class="PARRAFO">Una vez diligenciada la información suficiente, se activa el botón con el símbolo de palomita, check o visto bueno, al final del formulario, en la parte inferior derecha, el sistema realiza las validaciones a que haya lugar y, de cumplirse con ellas, retorna un mensaje "Proceso finalizado satisfactoriamente", creando el registro. </p>
 
       <p class="PARRAFO"><span class="SUBTITULO">Actualizar:</span>
-        si el usuario selecciona un registro e invoca la opción Actualizar,
-        se invoca un nuevo formulario en el cual los únicos campos modificables
-        son Sucursal, Tipo cuenta, Número cuenta y Sucursal cuenta.</p>
-      <p class="TITLE"><img src="../img/DBF_032E5.PNG" 708" height="383"></p>
-
-      <p class="PARRAFO">En la página de documentos, el usuario
-        puede modificar para cada documento y para cada tipo de persona la indicación
-        de Si o No el documento fue entregado.</p>
-      <p class="TITLE"><img src="../img/DBF_032E6.PNG" 429"></p>
+        Al activar ese enlace, se despliega un nuevo formulario, en el cual los únicos campos modificables son: Sucursal, Tipo cuenta, Número cuenta y Sucursal cuenta.</p>
+      <p class="TITLE"><img src="../img/DBF_032E5.PNG"></p>
 
       <p class="PARRAFO"><span class="SUBTITULO">Detalle:</span>
-        si el usuario selecciona un registro e invoca la opción Detalle,
-        se despliega un wizard de dos pasos con la información completa de
-        la solicitud y en el cual ninguno de sus campos es modificable.</p>
-      <p class="TITLE"><img src="../img/DBF_032E7.PNG" 739"></p>
-      <p class="TITLE"><img src="../img/DBF_032E8.PNG" 751" height="302"></p>
+        Al activar ese enlace se despliega el siguiente formulario, con la información de la solicitud, y en el cual, ninguno de sus campos es modificable:</p>
+      <p class="TITLE"><img src="../img/DBF_032E7.PNG"></p>
+ 
 
       <p class="PARRAFO"><a name="BL_ETAPAS"></a><span class="SUBTITULO">Consultar
               etapas :</span></span>
-          si el usuario selecciona una solicitud e invoca el hipervínculo Consultar
-            etapas, se despliega un formulario que le permite ver el detalle
-          de las diferentes etapas por las cuales ha avanzado la solicitud y el resultado
-          obtenido en cada una de ellas.</span> 
+              Al activar ese enlace, se despliega un formulario que, en su encabezado ilustra varios datos que identifican: Tipo solicitud, Fecha ingreso, Etapa actual y Producto, además, permite visualizar el detalle de las diferentes etapas, parametrizadas para el tipo de solicitud y por producto, por las cuales ha avanzado la solicitud o aún no lo ha hecho.</span> 
       </p>
-      <p class="PARRAFO">El formulario
-          contiene el hipervínculo <a href="DBH_032B.html#BL_DOCUMENTOS">Documentos
-              requeridos</a> que al ser invocado despliega otro formulario que le permite
-          ver al usuario cuales son los documentos que de acuerdo con lo parametrizados
-          para el tipo de solicitud y producto son requeridos en cada una de las etapas.</p>
-      <p class="TITLE"><img src="../img/DBF_032E9.PNG" 744" height="119"></p>
+      
+      <p class="TITLE"><img src="../img/DBF_032E9.PNG" ></p>
 
       <p class="TITLE">Descripción de campos</p>
       <div>
@@ -297,42 +344,13 @@
                 de las etapas.</p>
             </td>
           </tr>
-          <tr>
-            <td class="titletable">
-              <p class="SUBTITULO">Motivo
-                    negación </p>
-            </td>
-            <td>
-              <p class="PARRAFO">Si
-                durante el avance de la solicitud en la etapa debido a las validaciones
-                propias de la misma o a los filtros exitentes la solicitud fue negada,
-                en este campo se muestra el motivo que justifica dicha negación.</p>
-            </td>
-          </tr>
-          <tr>
-            <td class="titletable">
-              <p class="SUBTITULO">Fecha
-                    hora fin</p>
-            </td>
-            <td>
-              <p class="PARRAFO">En
-                este campo se muestran los comentarios u observaciones adiconales
-                que complementan la explicación del motivo por el cual fue
-                negada la solicitud.</p>
-            </td>
-          </tr>
         </table>
       </div>
 
-      <p class="PARRAFO"><a name="BL_DOCUMENTOS"></a><span class="SUBTITULO">Documentos
-              requeridos:</span></span>
-          si desde el histórico de etapas el usuario selecciona un registro e
-          invoca el hipervínculo Documentos requeridos, se despliega
-          un formulario en el que se relacionan los documentos que de acuerdo con los
-          parámetros de solicitud por producto son requeridos en la etapa y así
-          mismo se indica para cada documento si este fue o no entregado por el cliente.</span> 
+      <p class="PARRAFO"><a name="BL_DOCUMENTOS"></a><span class="SUBTITULO">Avanzar solicitud:</span></span>
+        Una vez finalizado el proceso de captura de los datos de la solicitud y mostrarse el mensaje de que el proceso fue satisfactorio, se dispone de este botón especial, el que, al activarse, hace que se surta la primera etapa parametrizada para este tipo de solicitud.</span> 
       </p>
-      <p class="TITLE"><img src="../img/DBF_032E10.PNG" 745" height="260"></p>
+      <p class="TITLE"><img src="../img/DBF_032E10.PNG"></p>
 
       <div>
   </section>

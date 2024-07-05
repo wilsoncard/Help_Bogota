@@ -4,7 +4,7 @@
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>BANKBU®</title>
+    <title>OpencardWeb®</title>
     <link rel="stylesheet" href="../css/pages.css">
     <link rel="stylesheet" href="../css/style.css">
     <link rel="icon" href="../img/ACQUIRER-logo.JPG" type="image/x-icon">
@@ -28,11 +28,10 @@
 
     <section>
       <div>
-
         <p class="TITLE">Saldos por moneda</p>
 
         <p class="PARRAFO">En este formulario que se invoca desde la <a
-            href="SCH_060B.html">Consulta
+            href="DBH_001B.html">Consulta
             centralizada de tarjeta / Saldos</a>, la entidad puede consultar la
           información de los saldos de la tarjeta, presentados, si aplica, para
           cada una de las monedas en las cuales se encuentren denominadas las
@@ -110,9 +109,6 @@
                 la fecha
                 sobre los consumos efectuados en cada moneda.</p></td>
           </tr>
-        </table>
-        <div class="PARRAFO">
-          <table>
             <tr>
               <td class="titletable"><p class="SUBTITULO">+Interés
                   mora
@@ -137,7 +133,6 @@
                   causar sobre los saldos de la tarjeta por cada una de las
                   monedas.</p></td>
             </tr>
-
             <tr>
               <td class="titletable"><p class="SUBTITULO">Pago
                   mínimo
@@ -148,7 +143,6 @@
                   cancelar para cubrir la obligación y no incurrir en
                   mora.</p></td>
             </tr>
-
             <tr>
               <td class="titletable"><p class="SUBTITULO">+Capital
                   no facturado
@@ -160,7 +154,6 @@
                   mínimo
                   para cada moneda.</p></td>
             </tr>
-
             <tr>
               <td class="titletable"><p class="SUBTITULO">+Comisión
                   no facturada
@@ -172,7 +165,6 @@
                   de
                   la tarjeta.</p></td>
             </tr>
-
             <tr>
               <td class="titletable"><p class="SUBTITULO">Saldo
                   pendiente
@@ -184,7 +176,6 @@
                   encuentra pendiente
                   de ser facturado y cobrado.</p></td>
             </tr>
-
             <tr>
               <td class="titletable"><p class="SUBTITULO">Interés
                   corriente periodo</p></td>
@@ -214,7 +205,6 @@
                   dentro
                   del pago mínimo.</p></td>
             </tr>
-
             <tr>
               <td class="titletable"><p class="SUBTITULO">Pago
                   total
@@ -276,31 +266,31 @@
         </div>
         <p class="PARRAFO"><a name="BL_FACTURACIONES"></a></p>
         <p class="PARRAFO"><span
-            class="SUBTITULO"><span>Facturaciones</span><span>:</span></span>
-          una vez que se ha seleccionado la moneda para
-            la cual desea consultar la información de los saldos, para las
-            últimas (o más recientes) fechas de corte, mediante este enlace, se
-            despliega un formulario en el cual se muestra la información
-            deseada, así como los cargos y abonos registrados entre una fecha y
-            otra para cada concepto presentado. La descripción del contenido de
-            los campos es el mismo descrito en el formulario inicial, con la
-            salvedad de que los datos corresponden a la fecha que se muestra
-            respectivamente en la primera fila, y que al final del formulario se
-            indica el valor del pago mínimo y el pago total expresados en la
-            moneda patrón.</p>
-        <p class="TITLE"><img src="../img/SCF_073E1.PNG"></p>
-        <div>
-        </section>
-        <script src="../js/menu.js"></script>
+            class="SUBTITULO">Facturaciones</span>:</span></span>
+      una vez que se ha seleccionado la moneda para
+      la cual desea consultar la información de los saldos, para las
+      últimas (o más recientes) fechas de corte, mediante este enlace, se
+      despliega un formulario en el cual se muestra la información
+      deseada, así como los cargos y abonos registrados entre una fecha y
+      otra para cada concepto presentado. La descripción del contenido de
+      los campos es el mismo descrito en el formulario inicial, con la
+      salvedad de que los datos corresponden a la fecha que se muestra
+      respectivamente en la primera fila, y que al final del formulario se
+      indica el valor del pago mínimo y el pago total expresados en la
+      moneda patrón.</p>
+    <p class="TITLE"><img src="../img/SCF_073E1.PNG"></p>
+    <div>
+    </section>
+    <script src="../js/menu.js"></script>
 
-        <div id="footerContainer"></div>
-        <script>
+    <div id="footerContainer"></div>
+    <script>
   fetch('footer.html')
     .then(response => response.text())
     .then(html => {
       document.getElementById('footerContainer').innerHTML = html;
     });
 </script>
-      </body>
+  </body>
 
-    </html>
+</html>

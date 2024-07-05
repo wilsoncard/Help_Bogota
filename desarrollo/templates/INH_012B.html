@@ -1,26 +1,26 @@
 <!DOCTYPE html>
 <html lang="es">
 
-<head>
+  <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>BANKBU®</title>
+    <title>OpencardWeb®</title>
 
     <link rel="stylesheet" href="../css/pages.css">
     <link rel="stylesheet" href="../css/style.css">
- <link rel="icon" href="../img/ACQUIRER-logo.JPG" type="image/x-icon">
-</head>
+    <link rel="icon" href="../img/ACQUIRER-logo.JPG" type="image/x-icon">
+  </head>
 
-<body>
+  <body>
 
     <header>
-        <img class="logo" src="../img/logoBankbu_.PNG" alt="Logo de Mi Empresa">
-        <div id="menuBtn">
-            <img class="TITLE"  src= "../img/menu.PNG" alt="Botón de Menú ">
-        </div>
+      <img class="logo" src="../img/logoBankbu_.PNG" alt="Logo de Mi Empresa">
+      <div id="menuBtn">
+        <img class="TITLE" src="../img/menu.PNG" alt="Botón de Menú ">
+      </div>
     </header>
-      <div id="menuContainer"></div>
-  <script>
+    <div id="menuContainer"></div>
+    <script>
     fetch('menu.html')
       .then(response => response.text())
       .then(html => {
@@ -29,183 +29,187 @@
   </script>
 
     <section>
-        <div> 
-            <p  class="TITLE">Parámetros de compensadores</p>
-                  
-            <p  class="PARRAFO"><span class="PARRAFO">En este formulario 
-              </span> la entidad puede efectuar el mantenimiento y consulta de la tabla que 
-              contiene la parametrización de las condiciones de interacción 
-              de la entidad respecto del(os) <a href="NUH_054B.html" >procesador(es)</a> 
-              del movimiento generado desde y hacia la entidad. </p>
-            <p  class="PARRAFO">El formulario cuenta con dos hipervínculos, 
-              <a href="INH_012B.html#BL_AGRUPACION" > Agrupación</a> 
-              y <a href="INH_012B.html#BL_INTERCAMBIO" >Conceptos enviados 
-              a intercambio</a> en los cuales se parametrizan las condiciones que el 
-              sistema debe evaluar para determinar el destino del movimiento propio de la 
-              entidad.</p>
-            <p class="TITLE"><img src="../img/INF_012E.PNG"566" height="522"></p>
-            <p  class="PARRAFO"></p>
-            <p  class="PARRAFO">El formulario contiene los enlaces: Actualizar, 
-              Eliminar, Adicionar y Detalle. </p>
-            <p  class="PARRAFO"><span class="SUBTITULO"><span #'font-family:Arial;
-              '>Adicionar</span><span >:</span></span><span > 
-              Al activar ese enlace se despliega un formulario 
-              con los siguientes campos:</p>
-            <p class="TITLE"><img src="../img/INF_012E1.PNG"747" ></p>
+      <div>
+        <p class="TITLE">Parámetros de compensadores</p>
 
-            <p  class="TITLE">Descripción de campos</p>
-            <table>
-              <tr> 
-                <td class="titletable"  ><p class="SUBTITULO"><span > 
+        <p class="PARRAFO"><span class="PARRAFO">A través de este formulario, la
+            entidad puede efectuar el mantenimiento y consulta de la tabla que
+            contiene la parametrización de las condiciones de interacción de la
+            entidad respecto del(os) <a href="NUH_054B.html">procesador(es)</a>
+            del movimiento generado desde y hacia la entidad. El formulario
+            contiene los enlaces:
+            <a href="INH_012B.html#BL_AGRUPACION"> Agrupación</a>
+            y <a href="INH_012B.html#BL_INTERCAMBIO">Conceptos enviados
+              a intercambio</a>, Actualizar, Eliminar, Adicionar y Detalle. </p>
+          <p class="TITLE"><img src="../img/INF_012E.PNG"></p>
+          <p class="PARRAFO"></p>
+
+          <p class="PARRAFO"><span
+              class="SUBTITULO">Adicionar</span><span>:</span></span><span>
+            Al activar ese enlace se despliega el siguiente formulario con los
+            siguientes campos:</p>
+          <p class="TITLE"><img src="../img/INF_012E1.PNG"></p>
+
+          <p class="TITLE">Descripción de campos</p>
+          <table>
+            <tr>
+              <td class="titletable"><p class="SUBTITULO"><span>
                     Compensador</p></td>
-                <td><p  class="PARRAFO">Campo 
-                    obligatorio tipo combo en el cual se selecciona el <a href="NUH_054B.html" >compensador</a> 
-                    para el cual se están definiendo las condiciones de operación</p>
+                <td><p class="PARRAFO">Campo obligatorio que posee lista de
+                    valores tipo combo, en el cual se debe seleccionar el <a
+                      href="NUH_054B.html">compensador</a>
+                    para el cual se están definiendo las condiciones de
+                    operación.</p>
                 </td>
               </tr>
 
-              <tr> 
-                <td class="titletable"><p class="SUBTITULO"><span > 
-                    Destino movimiento propio</p></td>
-                <td><p  class="PARRAFO">En 
-                    este campo tipo combo, obligatorio, se selecciona entre Movimiento 
-                    diario e Intercambio el destino del movimiento propio 
-                    de la entidad. Diario, indica que el movimiento de sus tarjeta 
-                    habientes propios lo procesa directamente la entidad, mientras que intercambio 
-                    le indica al sistema que se debe enviar el movimiento al compensador 
-                    quien lo reprocesa y se lo devuelve a la entidad.
-                  </p></td>
-              </tr>
-              <tr> 
-                <td class="titletable"><p class="SUBTITULO"><span > 
-                    Archivo de intercambio</p></td>
-                <td><p  class="PARRAFO">Campo 
-                    alfanumérico de 30 posiciones, obligatorio, dentro del que se 
-                    registra el nombre del archivo que contiene el movimiento<span >.</p></td>
-              </tr>
-              <tr> 
-                <td class="titletable"><p class="SUBTITULO"><span > 
-                    Bin destino tarjeta internacional</p></td>
-                <td><p  class="PARRAFO">Este 
-                    campo contiene lista de valores de la que debe seleccionarse el <a href="MEH_001B.html" >prefijo</a> 
-                    que centraliza el movimiento generado en el exterior por los tarjetahabientes 
-                    propios; cuando el compensador es Visa este campo se convierte en obligatorio. 
-                  </p></td>
-              </tr>
-              <tr> 
-                <td class="titletable"  ><p class="SUBTITULO"><span >Bin 
-                    centro de proceso</p></td>
-                <td><p  class="PARRAFO">Campo 
-                    obligatorio que contiene lista de valores de la cual se selecciona que 
-                    debe seleccionarse el <a href="MEH_001B.html" >prefijo</a> 
-                    que identifica a la entidad ante el procesador, usualmente corresponde 
-                    al bin de producto Clásica.
-                   
-                  </p></td>
-              </tr>
+              <tr>
+                <td class="titletable"><p class="SUBTITULO"><span>
+                      Destino movimiento propio</p></td>
+                  <td><p class="PARRAFO">Campo obligatorio que posee lista de
+                      valores tipo combo, en el cual se debe seleccionar entre:
+                      Movimiento diario e Intercambio, el destino del movimiento
+                      propio de la entidad. Diario, indica que el movimiento de
+                      sus tarjeta habientes propios lo procesa directamente la
+                      entidad, mientras que intercambio le indica al sistema que
+                      se debe enviar el movimiento al compensador quien lo
+                      reprocesa y se lo devuelve a la entidad.
+                    </p></td>
+                </tr>
+                <tr>
+                  <td class="titletable"><p class="SUBTITULO"><span>
+                        Archivo de intercambio</p></td>
+                    <td><p class="PARRAFO">Campo alfanumérico de 30 posiciones,
+                        obligatorio, dentro del que se debe registrar el nombre
+                        del archivo que contiene el movimiento.<span>.</p></td>
+                    </tr>
+                    <tr>
+                      <td class="titletable"><p
+                          class="SUBTITULO"><span>Participa
+                            conciliación </p></td>
+                        <td><p class="PARRAFO">Campo obligatorio que posee lista
+                            de valores tipo combo, en el cual se debe
+                            seleccionar entre: Si o No, el movimiento propio
+                            participa en la conciliación entre el canje enviado
+                            y recibido.</p>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td class="titletable"><p class="SUBTITULO"><span>Bin
+                              centro de proceso</p></td>
+                          <td><p class="PARRAFO">Campo
+                              obligatorio que contiene lista de valores de la
+                              cual se selecciona que
+                              debe seleccionarse el <a
+                                href="MEH_001B.html">prefijo</a>
+                              que identifica a la entidad ante el procesador,
+                              usualmente corresponde
+                              al bin de producto Clásica.
 
-              <tr> 
-                <td class="titletable"  ><p class="SUBTITULO"><span >Participa 
-                    conciliación </p></td>
-                <td><p  class="PARRAFO">En 
-                    este campo tipo combo, obligatorio, se selecciona entre Si o No el movimiento 
-                    propio participa en la conciliación entre el canje enviado y 
-                    recibido.</p>
-                </td>
-              </tr>
+                            </p></td>
+                        </tr>
+                        <tr>
+                          <td class="titletable"><p class="SUBTITULO"><span>
+                                Bin destino tarjeta internacional</p></td>
+                            <td><p class="PARRAFO">Campo obligatorio, contiene
+                                lista de valores, de la que debe seleccionarse
+                                el <a
+                                  href="MEH_001B.html">prefijo</a>
+                                que centraliza el movimiento generado en el
+                                exterior por los tarjetahabientes propios.
+                              </p></td>
+                          </tr>
 
-              <tr> 
-                <td class="titletable"  ><p class="SUBTITULO"><span >Valida 
-                    compra </p></td>
-                <td><p  class="PARRAFO">Campo 
-                    tipo combo donde se puede seleccionar entre Si o No el movimiento de 
-                    compras debe ser validado desde el momento de la captura o se omite; 
-                    esto se define con base en la forma de operar de algunos compensadores 
-                    a los cuales se envía el movimiento sin validar y éste 
-                    lo regresa a la entidad ya validado en el proceso de compensación. 
-                   
-                  </p></td>
-              </tr>
+                          <tr>
+                            <td class="titletable"><p
+                                class="SUBTITULO"><span>Valida
+                                  compra </p></td>
+                              <td><p class="PARRAFO">Campo que posee lista de
+                                  valores tipo combo, en el cual se debe
+                                  seleccionar entre: Si o No, el movimiento de
+                                  compras debe ser validado desde el momento de
+                                  la captura o se omite; esto se define con base
+                                  en la forma de operar de algunos compensadores
+                                  a los cuales se envía el movimiento sin
+                                  validar y éste lo regresa a la entidad ya
+                                  validado en el proceso de compensación.
 
-              <tr> 
-                <td class="titletable"  ><p class="SUBTITULO"><span >Código 
-                    identificación adquirente / emisor</p></td>
-                <td><p  class="PARRAFO">En 
-                    este campo alfanumérico de 11 posiciones, no obligatorio, se 
-                    registra el código asignado por American Express para identificar 
-                    a la entidad como emisor y/o adquirente.
-                  </p></td>
-              </tr>
+                                </p></td>
+                            </tr>
+                          </table>
 
-              <tr> 
-                <td class="titletable"  ><p class="SUBTITULO"><span >Código 
-                    procesador adquirente / emisor</p></td>
-                <td><p  class="PARRAFO">Campo 
-                    alfanumérico, no obligatorio, de 11 posiciones en el que se registra 
-                    el código asignado por American Express para identificar a los 
-                    diferentes actores que participan en el proceso de Intercambio.
-                  </p></td>
-              </tr>
-            </table>
+                          <p class="PARRAFO"><span
+                              class="SUBTITULO">Actualizar</span>:
+                            Al activar ese enlace se despliega el siguiente
+                            formulario, en el cual el único campo no modificable
+                            es el Compensador. Si el destino del movimiento es
+                            'Intercambio' y en el formulario <a
+                              href="INH_012B.html#BL_AGRUPACION">Agrupación</a>
+                            se ha parametrizado algún valor para el
+                            compensador, el campo no permite
+                            ser modificado, hasta tanto se eliminen los
+                            registros asociados.</p>
+                          <p class="TITLE"><img
+                              src="../img/INF_012E2.PNG"></p>
 
-            <p class="PARRAFO"><span class="SUBTITULO">Actualizar</span>: 
-              si el usuario selecciona un registro e invoca la opción Actualizar 
-              se despliega un formulario en el cual los único campo NO modificable 
-              es el Compensador. Si el destino del movimiento es 'Intercambio' y en en el 
-              formulario<a href="INH_012B.html#BL_AGRUPACION" >Agrupación</a> 
-              se ha parametrizado algún valor para el compensador, el campo no permite 
-              ser modificado, hasta tanto se eliminen los registros asociados.</p>
-            <p class="TITLE"><img src="../img/INF_012E2.PNG"749" ></p>
-            
-            <p class="PARRAFO"><span class="SUBTITULO">Detalle</span>: 
-              si el usuario selecciona un registro e invoca la opción Detalle se 
-              despliega un formulario con toda la información del registro y en el 
-              cual ninguno de sus campos es modificable.</p>
-            <p class="TITLE"><img src="../img/INF_012E3.PNG"477" height="125"></p>
-            
-            
-            <p  class="PARRAFO"><a name="BL_AGRUPACION"></a><span class="SUBTITULO"><span >
-            Agrupación:</span></span><span > 
-              si el actor invoca el hipervínculo del mismo nombre, se despliega un 
-              formulario en el cual la entidad puede parametrizar los templates que permiten 
-              identificar los bines a los cuales deben pertenecer las tarjetas para que 
-              su movimiento sea dirigido al destino seleccionado.</p>
-            <p class="TITLE"><img src="../img/INF_012E4.PNG"541" height="387"></p>
-            
-            <p  class="PARRAFO">El formulario contiene los enlaces: Eliminar 
-              y Adicionar </p>
-            <p  class="PARRAFO"><span class="SUBTITULO"><span #'font-family:Arial;
-              '>Adicionar</span><span >:</span></span><span > 
-              Al activar ese enlace se despliega un formulario 
-              con un único campo:</p>
-            <p class="TITLE"><img src="../img/INF_012E5.PNG"169" ></p>
-            <p  class="TITLE">Descripción de campos</p>
-            <table>
-              <tr> 
-                <td class="titletable"  ><p class="SUBTITULO"><span > 
-                    Template fijo</p></td>
-                <td><p  class="PARRAFO">Campo 
-                    alfanumérico de 8 posiciones, obligatorio, dentro del que se 
-                    registra el comodín que permite filtrar el número de la 
-                    tarjeta, mediante la que se realiza la transacción y en combinación 
-                    con el bin o prefijo y el compensador dirigen el movimiento propio como 
-                    se se&ntilde;ala. Se puede ingresar bien sea el número completo 
-                    del bin o los primeros dígitos por los cuales debe empezar el 
-                    bin, seguido del símbolo '%'
-                  </p></td>
-              </tr>
-            </table>
-            
-          
-        </section>
-    <script src="../js/menu.js"></script>
-</body>
-<div id="footerContainer"></div>
-<script>
+                          <p class="PARRAFO"><span
+                              class="SUBTITULO">Detalle</span>:
+                            Al activar ese enlace se despliega el siguiente
+                            formulario con la información del registro y en el
+                            cual ninguno de sus campos es modificable:</p>
+                          <p class="TITLE"><img
+                              src="../img/INF_012E3.PNG"></p>
+
+                          <p class="PARRAFO"><a
+                              name="BL_AGRUPACION"></a><span
+                              class="SUBTITULO"><span>
+                                Agrupación:</span></span><span>
+                              Al activar ese enlace se despliega el siguiente
+                              formulario, en el cual la entidad puede
+                              parametrizar los templates que permiten
+                              identificar los bines a los cuales deben
+                              pertenecer las tarjetas para que su movimiento sea
+                              dirigido al destino seleccionado. El formulario
+                              contiene los enlaces: Eliminar y Adicionar:</p>
+                            <p class="TITLE"><img
+                                src="../img/INF_012E4.PNG"></p>
+
+                            <p class="PARRAFO"><span
+                                class="SUBTITULO">Adicionar</span><span>:</span></span><span>
+                              Al activar ese enlace se despliega un formulario
+                              con un único campo:</p>
+                            <p class="TITLE"><img
+                                src="../img/INF_012E5.PNG"></p>
+                            <p class="TITLE">Descripción de campos</p>
+                            <table>
+                              <tr>
+                                <td class="titletable"><p
+                                    class="SUBTITULO"><span>
+                                      Template fijo</p></td>
+                                  <td><p class="PARRAFO">Campo alfanumérico de 8
+                                      posiciones, obligatorio, dentro del que se
+                                      debe registrar el comodín que permite
+                                      filtrar el número de la tarjeta, mediante
+                                      la que se realiza la transacción y en
+                                      combinación con el bin o prefijo y el
+                                      compensador, dirigen el movimiento propio
+                                      como se señala. Se puede ingresar bien sea
+                                      el número completo del bin o los primeros
+                                      dígitos por los cuales debe empezar el
+                                      bin, seguido del símbolo '%'.
+                                    </p></td>
+                                </tr>
+                              </table>
+
+                            </section>
+                            <script src="../js/menu.js"></script>
+                          </body>
+                          <div id="footerContainer"></div>
+                          <script>
   fetch('footer.html')
     .then(response => response.text())
     .then(html => {
       document.getElementById('footerContainer').innerHTML = html;
     });
 </script>
-</html>
+                        </html>

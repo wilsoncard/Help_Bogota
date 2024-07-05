@@ -4,7 +4,7 @@
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>BANKBU®</title>
+    <title>OpencardWeb®</title>
     <link rel="stylesheet" href="../css/pages.css">
     <link rel="stylesheet" href="../css/style.css">
     <link rel="icon" href="../img/ACQUIRER-logo.JPG" type="image/x-icon">
@@ -30,136 +30,243 @@
     <section>
       <div>
 
-        <p class="TITLE">Homologación de productos débito</p>
+        <p class="TITLE">Productos débito</p>
 
-        <p class="PARRAFO">Desde este formulario, se se realiza la homologación
-          de los diferentes productos débito propios de la entidad con los
-          definidos
-          internamente en <span
-            #'font-family:Arial;#:#006666'>BANKBU<sup></sup></span>
-          lo que permite asociar las características particulares definidas por
-          otros sistema del banco para sus diferentes productos débito, con los
-          productos manejados por <span
-            #'font-family:Arial;#:#006666'>BANKBU<sup></sup></span>
-          para que el sistema pueda interpretarlos. La aplicabilidad o
-          funcionalidad
-          de esta forma cobra importancia cuando la entidad ha definido sus
-          productos
-          por medio de un sistema diferente y desea empezar a utilizar <span
-            #'font-family:Arial;#:#006666'>BANKBU<sup></sup></span>
-          para el manejo y adiministración de los mismos, convirtiéndose
-          la opción en una especie de Traductor de productos. </p>
-        <p class="PARRAFO">Al ingresar a la opción, el formulario
-          inicial muestra lor productos débito definidos en <span
-            #'font-family:Arial;#:#006666'>BANKBU<sup></sup></span>
-          y que ya se encuentran homologados con los definidos en sistemas
-          diferentes.</p>
-        <p class="TITLE"><img src="../img/DBF_003E.PNG"659" height="359"></p>
+        <p class="PARRAFO">Al invocarse la opción, por defecto, el sistema
+          recupera la totalidad de registros de los productos débito
+          almacenados, los cuales reflejan datos adicionales a los ingresados en
+          <a href="MEH_002B.html">Definición de productos</a> y que
+          corresponden a la manera en la que, los bines que conforman los
+          productos débito, son reconocidos en el core bancario, además de
+          posibilitar el definir periodos de tiempo para campañas comerciales. A
+          través de este formulario se le ofrece a la entidad, el poder
+          consultar dichos registros, mediante un filtro con cinco criterios
+          distintos de búsqueda, dentro de la data almacenada en la base de
+          datos. </p>
+        <p class="TITLE"><img src="../img/DBF_003E.PNG"></p>
 
-        <p class="PARRAFO">El formulario cuenta con las opciones Actualizar,
-          Eliminar, Adicionar y Detalle.</p>
-        <p class="PARRAFO"><span class="SUBTITULO">Adicionar</span>:
-          Al activar ese enlace se despliega un nuevo
-          formulario
-          con los siguientes campos.</p>
-        <p class="TITLE"><img src="../img/DBF_003E1.PNG"438" height="240"></p>
-
-        <p class="TITLE">Descripción de campos</p>
         <table>
           <tr>
-            <td class="titletable"><p class="SUBTITULO"><span>
-                  Producto</p></td>
-              <td><p class="PARRAFO">Campo
-                  obligatorio con lista de valores de la que se selecciona el <a
-                    href="DBH_018B.html">producto
-                    débito</a> que se va a homologar.</p></td>
-            </tr>
+            <td class="titletable"><p class="SUBTITULO">
+                Bin</p></td>
+            <td><p class="PARRAFO">
+                Campo que permite digitar el Bin (del producto) o seleccionarlo
+                de la lista de valores adjunta, para el cual se requiere
+                efectuar la consulta.</p></td>
+          </tr>
+          <tr>
+            <td class="titletable"><p class="SUBTITULO">
+                Producto</p></td>
+            <td><p class="PARRAFO">Campo que permite digitar el Producto (o
+                segmento del producto) o seleccionarlo de la lista de valores
+                adjunta, para el cual se requiere efectuar la consulta.</p></td>
+          </tr>
 
-            <tr>
-              <td class="titletable"><p class="SUBTITULO"><span>
-                    Clase cuenta</p></td>
-                <td><p class="PARRAFO">En
-                    este campo numérico de 2 dígitos, obligatorio, se registra
-                    la clase de cuenta que la entidad desea homologar con el
-                    producto seleccionado
-                    y que corresponde a una subclasificación de cada producto
-                    definido
-                    por la misma entidad lo que le confiere ciertas
-                    características
-                    especiales; a manera de ejemplo podríamos mencionar Electron
-                    maestro, Visa electron con cuota de manejo, Visa electron
-                    sin cuota de manejo, como clases de cuenta derivadas del
-                    Producto
-                    Electron.
-                  </p></td>
-              </tr>
-              <tr>
-                <td class="titletable"><p class="SUBTITULO"><span>
-                      Tipo cuenta</p></td>
-                  <td><p class="PARRAFO">Campo
-                      obligatorio tipo combo en el cual se puede seleccionar
-                      entre Ahorros,
-                      Corriente o Rotativo el tipo de cuenta a homologar con
-                      el producto débito.</p></td>
-                </tr>
-                <tr>
-                  <td class="titletable"><p class="SUBTITULO"><span>
-                        Producto</p></td>
-                    <td><p class="PARRAFO">En
-                        este campo numérico de hasta 3 dígitos, obligatorio, se
-                        registra el código con el que la entida identifica su
-                        producto
-                        propio que desea homologar.</p></td>
-                  </tr>
-                  <tr>
-                    <td class="titletable"><p class="SUBTITULO"><span>
-                          Edad desde / hasta</p></td>
-                      <td><p class="PARRAFO">Campos
-                          obligatorios que permiten registar el rango de edades
-                          de los clientes
-                          a quienes va dirigido el producto que se desea
-                          homologar. </p></td>
-                    </tr>
-                    <tr>
-                      <td class="titletable"><p class="SUBTITULO"><span>
-                            Nómina</p></td>
-                        <td><p class="PARRAFO">En
-                            este campo obligatorio tipo combo se puede
-                            seleccionar entre Si
-                            o No el producto a homologar correponde a cuentas de
-                            nómina.</p></td>
-                      </tr>
-                    </table>
+          <tr>
+            <td class="titletable"><p class="SUBTITULO">
+                Grupo de afinidad
 
-                    <p class="PARRAFO"><span
-                        class="SUBTITULO">Actualizar</span>:
-                      si el usuario selecciona un registro e invoca la opción
-                      Actualizar
-                      se despliega un formulario en el cual el único campo NO
-                      modificable
-                      es el Producto.</p>
-                    <p class="TITLE"><img src="../img/DBF_003E2.PNG"416"
-                        height="240"></p>
+              </p></td>
+            <td><p class="PARRAFO">
+                Campo que permite digitar el Grupo de afinidad (del producto) o
+                seleccionarlo de la lista de valores adjunta, para el cual se
+                requiere efectuar la consulta.
+              </p></td>
+          </tr>
+          <tr>
+            <td class="titletable"><p class="SUBTITULO">
+                F1 </p></td>
+            <td><p class="PARRAFO">Campo que permite digitar ese dato numérico,
+                el cual está relacionado con los bines que conforman los
+                productos débito y cómo estos son reconocidos en el core
+                bancario.
+              </p></td>
+          </tr>
+          <tr>
+            <td class="titletable"><p class="SUBTITULO">
+                Clase Cuenta</p></td>
+            <td><p class="PARRAFO">Campo que permite digitar ese dato
+                alfanumérico, el cual está relacionado con los bines que
+                conforman los productos débito y cómo estos son reconocidos en
+                el core bancario.
+              </p></td>
+          </tr>
+        </table>
+        <p class="PARRAFO">El formulario cuenta con los enlaces: Actualizar,
+          Eliminar, Adicionar y Detalle.</p>
+        <p class="TITLE"><img src="../img/DBF_003E1.PNG"></p>
+        <p class="PARRAFO"><span
+            class="SUBTITULO">Adicionar</span>:
+          Al activar ese enlace se despliega el siguiente formulario:</p>
+        <p class="TITLE"><img src="../img/DBF_003E5.PNG"></p>
+        <table>
+          <tr>
+            <td class="titletable"><p class="SUBTITULO">
+                Definición productos
 
-                    <p class="PARRAFO"><span class="SUBTITULO">Detalle</span>:
-                      si el usuario selecciona un registro e invoca la opción
-                      Detalle se
-                      despliega un formulario con los datos completos del
-                      registro y en el cual
-                      ninguno de sus campos es modificable</p>
-                    <p class="TITLE"><img src="../img/DBF_003E3.PNG"506"
-                        height="241"></p>
+              </p></td>
+            <td><p class="PARRAFO">
+                Conjunto de campos que disponen de una lista de valores poblada
+                en <a href="MEH_002B.html">Definición de productos</a> de la
+                cual se debe seleccionar aquella combinatoria de producto débito
+                a la que se le va a vincular los datos adicionales relacionados
+                con los bines que conforman dichos productos débito y cómo estos
+                son reconocidos en el core bancario.
 
-                    <div>
-                    </section>
-                    <script src="../js/menu.js"></script>
-                  </body>
-                  <div id="footerContainer"></div>
-                  <script>
+              </p></td>
+          </tr>
+          <tr>
+            <td class="titletable"><p class="SUBTITULO">
+                F1</p></td>
+            <td><p class="PARRAFO">Campo obligatorio, alfanumérico de hasta 3
+                caracteres, en el cual se debe registrar el dato correspondiente
+                y asociado con los bines que conforman los productos débito y
+                cómo estos son reconocidos en el core bancario.
+              </p></td>
+          </tr>
+
+          <tr>
+            <td class="titletable"><p class="SUBTITULO">
+                Clase cuenta
+
+              </p></td>
+            <td><p class="PARRAFO">
+                Campo obligatorio, alfanumérico de hasta 2 caracteres, en el
+                cual se debe registrar el dato correspondiente y asociado con
+                los bines que conforman los productos débito y cómo estos son
+                reconocidos en el core bancario.
+
+              </p></td>
+          </tr>
+          <tr>
+            <td class="titletable"><p class="SUBTITULO">
+                Tipo cuenta </p></td>
+            <td><p class="PARRAFO"> Campo obligatorio, alfanumérico de hasta 3
+                caracteres, en el cual se debe registrar el dato correspondiente
+                y asociado con los bines que conforman los productos débito y
+                cómo estos son reconocidos en el core bancario.
+
+              </p></td>
+          </tr>
+          <tr>
+            <td class="titletable"><p class="SUBTITULO">
+                Producto</p></td>
+            <td><p class="PARRAFO">Campo obligatorio, alfanumérico de hasta 3
+                caracteres, en el cual se debe registrar el dato correspondiente
+                y asociado con los bines que conforman los productos débito y
+                cómo estos son reconocidos en el core bancario.
+
+              </p></td>
+          </tr>
+          <tr>
+            <td class="titletable"><p class="SUBTITULO">
+                Edad desde
+              </p></td>
+            <td><p class="PARRAFO">Campo no obligatorio, numérico de máximo 3
+                dígitos, permite definir el límite inferior del rango de edades
+                del producto.
+
+              </p></td>
+          </tr>
+          <tr>
+            <td class="titletable"><p class="SUBTITULO">
+                Hasta</p></td>
+            <td><p class="PARRAFO">Campo no obligatorio, numérico de máximo 3
+                dígitos, permite definir el límite superior del rango de edades
+                del producto.
+
+              </p></td>
+          </tr>
+          <tr>
+            <td class="titletable"><p class="SUBTITULO">
+                Prioridad</p></td>
+            <td><p class="PARRAFO">Campo no obligatorio, numérico de máximo 1
+                dígito, permite definit la prioridad con la que se ejecuta la
+                actividad va desde 1 hasta n.
+
+              </p></td>
+          </tr>
+          <tr>
+            <td class="titletable"><p class="SUBTITULO">
+                Nómina</p></td>
+            <td><p class="PARRAFO">Campo tipo checkbox, no obligatorio, en el
+                evento en que esté marcado, indica que el producto débito
+                corresponde a un producto de nómina.
+
+              </p></td>
+          </tr>
+          <tr>
+            <td class="titletable"><p class="SUBTITULO">
+                Fecha inicio promoción
+              </p></td>
+            <td><p class="PARRAFO">Campo no obligatorio que posee funcionalidad
+                de un calendario en el que en formato DD-MM-AAAA, permite
+                definir la fecha a partir de la cual entra en vigencia la
+                promoción dentro de la cual se incluye al producto débito.
+
+              </p></td>
+          </tr>
+          <tr>
+            <td class="titletable"><p class="SUBTITULO">
+                Fecha fin promoción
+              </p></td>
+            <td><p class="PARRAFO">Campo no obligatorio que posee funcionalidad
+                de un calendario en el que en formato DD-MM-AAAA, permite
+                definir la fecha hasta la cual estará vigente la promoción
+                dentro de la cual se incluye al producto débito.
+
+              </p></td>
+          </tr>
+          <tr>
+            <td class="titletable"><p class="SUBTITULO">
+                Mes proyección
+              </p></td>
+            <td><p class="PARRAFO">Campo no obligatorio, numérico de hasta 4
+                dígitos, en el que se define la cantidad de periodos en que se
+                proyecta el beneficio sobre la cuota de manejo.
+
+              </p></td>
+          </tr>
+          <tr>
+            <td class="titletable"><p class="SUBTITULO">
+                Universidad</p></td>
+            <td><p class="PARRAFO">Campo no obligatorio, posee lista de valores
+                de la que puede seleccionarse la institución universitaria a la
+                que está asociado el Bin del producto débito.
+
+              </p></td>
+          </tr>
+          <tr>
+            <td class="titletable"><p class="SUBTITULO">
+                Cuenta requerida
+              </p></td>
+            <td><p class="PARRAFO">Campo que posee lista de valores tipo combo,
+                de la que puede seleccionarse entre Si / No,
+
+              </p></td>
+          </tr>
+        </table>
+
+        <p class="PARRAFO"><span
+            class="SUBTITULO">Actualizar</span>:
+          Al activar ese enlace se despliega el siguiente formulario, en el que
+          el único campo no modificable es Definición productos:</p>
+        <p class="TITLE"><img src="../img/DBF_003E2.PNG"></p>
+
+        <p class="PARRAFO"><span class="SUBTITULO">Detalle</span>:
+          Al activar ese enlace se despliega el siguiente formulario con los restantes datos almacenados para el registro desde el cual se invoca:</p>
+        <p class="TITLE"><img src="../img/DBF_003E3.PNG"></p>
+
+        <div>
+        </section>
+        <script src="../js/menu.js"></script>
+      </body>
+      <div id="footerContainer"></div>
+      <script>
   fetch('footer.html')
     .then(response => response.text())
     .then(html => {
       document.getElementById('footerContainer').innerHTML = html;
     });
 </script>
-                </html>
+    </html>

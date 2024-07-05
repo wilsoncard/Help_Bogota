@@ -1,24 +1,28 @@
 <!DOCTYPE html>
 <html lang="es">
 
-  <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>BANKBU®</title>
-    <link rel="stylesheet" href="../css/pages.css">
-    <link rel="stylesheet" href="../css/style.css">
-    <link rel="icon" href="../img/ACQUIRER-logo.JPG" type="image/x-icon">
-  </head>
+      <head>
+            <meta charset="UTF-8">
+            <meta name="viewport"
+                  content="width=device-width, initial-scale=1.0">
+            <title>OpencardWeb®</title>
+            <link rel="stylesheet" href="../css/pages.css">
+            <link rel="stylesheet" href="../css/style.css">
+            <link rel="icon" href="../img/ACQUIRER-logo.JPG"
+                  type="image/x-icon">
+      </head>
 
-  <body>
-    <header>
-      <img class="logo" src="../img/logoBankbu_.PNG" alt="Logo de Mi Empresa">
-      <div id="menuBtn">
-        <img class="TITLE" src="../img/menu.PNG" alt="Botón de Menú ">
-      </div>
-    </header>
-    <div id="menuContainer"></div>
-    <script>
+      <body>
+            <header>
+                  <img class="logo" src="../img/logoBankbu_.PNG"
+                        alt="Logo de Mi Empresa">
+                  <div id="menuBtn">
+                        <img class="TITLE" src="../img/menu.PNG"
+                              alt="Botón de Menú ">
+                  </div>
+            </header>
+            <div id="menuContainer"></div>
+            <script>
     fetch('menu.html')
       .then(response => response.text())
       .then(html => {
@@ -26,228 +30,286 @@
       });
   </script>
 
-    <section>
-      <div>
+            <section>
+                  <div>
+                        <p class="TITLE">Tarjetas Extraviadas</p>
 
-        <p class="TITLE">Tarjetas Extraviadas</p>
+                        <p class="PARRAFO">A este formulario llegan las tarjetas
+                              a las que se
+                              les Aplicó un extravío,
+                              mediante la funcionalidad invocada desde el enlace
+                              Generar extravío en
+                              <a href="DBH_001B.html">Consulta centralizada de
+                                    tarjetas</a>,
+                              Dichas tarjetas quedan bloqueadas y el sistema no
+                              permite efectuar más
+                              utilizaciones con las
+                              mismas. El tarjetahabiente deberá esperar a que
+                              surta el proceso de
+                              reexpedición con un nuevo
+                              número, para recibir el plástico
+                              correspondiente.</p>
+                        <p class="PARRAFO">A continuación se ilustran los campos
+                              del formulario
+                              Aplicar extravío,
+                              en los que se ingresa la información requerida por
+                              la entidad, para
+                              certificar la causa
+                              del extravío.</p>
 
-        <p class="PARRAFO">A este formulario llegan las tarjetas a las que se
-          les Aplicó un extravío,
-          mediante la funcionalidad invocada desde el enlace Generar extravío en
-          <a href="SCH_060B.html">Consulta centralizada de tarjetas</a>,
-          Dichas tarjetas quedan bloqueadas y el sistema no permite efectuar más
-          utilizaciones con las
-          mismas. El tarjetahabiente deberá esperar a que surta el proceso de
-          reexpedición con un nuevo
-          número, para recibir el plástico correspondiente.</p>
-        <p class="PARRAFO">A continuación se ilustran los campos del formulario
-          Aplicar extravío,
-          en los que se ingresa la información requerida por la entidad, para
-          certificar la causa
-          del extravío.</p>
+                        <p class="TITLE"><img src="../img/SCF_030E1.PNG"></p>
+                        <p class="TITLE">Descripción de campos</p>
+                        <table>
+                              <tr>
+                                    <td class="titletable"><p class="SUBTITULO">
+                                                Tipo bloqueo</p></td>
+                                    <td><p class="PARRAFO">En
+                                                este campo obligatorio tipo
+                                                combo, se selecciona entre Robo
+                                                o Uso fraudulento el tipo de
+                                                evento por el cual se genera el
+                                                extravío a la tarjeta.</p></td>
+                              </tr>
 
-        <p class="TITLE"><img src="../img/SCF_030E1.PNG"></p>
-        <p class="TITLE">Descripción de campos</p>
-        <table>
-          <tr>
-            <td class="titletable"><p class="SUBTITULO"><span>
-                  Tipo bloqueo</p></td>
-            <td><p class="PARRAFO">En
-                este campo obligatorio tipo combo, se selecciona entre Robo
-                o Uso fraudulento el tipo de evento por el cual se genera el
-                extravío a la tarjeta.</p></td>
-          </tr>
+                              <tr>
+                                    <td class="titletable"><p class="SUBTITULO">
+                                                Fecha extravío</p></td>
+                                    <td><p class="PARRAFO">Campo
+                                                obligatorio en formato
+                                                YYYY-MM-DD en el que se registra
+                                                la fecha
+                                                en
+                                                la cual el cliente manifiesta
+                                                haber extraviado la tarjeta o
+                                                detectado
+                                                el uso fraudulento de la
+                                                misma.</p></td>
+                              </tr>
 
-          <tr>
-            <td class="titletable"><p class="SUBTITULO"><span>
-                  Fecha extravío</p></td>
-            <td><p class="PARRAFO">Campo
-                obligatorio en formato YYYY-MM-DD en el que se registra la fecha
-                en
-                la cual el cliente manifiesta haber extraviado la tarjeta o
-                detectado
-                el uso fraudulento de la misma.</p></td>
-          </tr>
+                              <tr>
+                                    <td class="titletable"><p class="SUBTITULO">
+                                                Fecha carta</p></td>
+                                    <td><p class="PARRAFO">En
+                                                este campo no obligatorio, se
+                                                registra la fecha de la carta en
+                                                la cual
+                                                el cliente comunica a la entidad
+                                                el extravío o fraude de
+                                                su tarjeta.</p></td>
+                              </tr>
 
-          <tr>
-            <td class="titletable"><p class="SUBTITULO"><span>
-                  Fecha carta</p></td>
-            <td><p class="PARRAFO">En
-                este campo no obligatorio, se registra la fecha de la carta en
-                la cual
-                el cliente comunica a la entidad el extravío o fraude de
-                su tarjeta.</p></td>
-          </tr>
+                              <tr>
+                                    <td class="titletable"><p class="SUBTITULO">
+                                                Fecha recepción carta</p></td>
+                                    <td><p class="PARRAFO">Campo
+                                                que permite registrar la fecha
+                                                en la cual el cliente radica
+                                                ante
+                                                la
+                                                entidad la carta en la que
+                                                informa la pérdida o fraude de
+                                                la
+                                                tarjeta.</p></td>
+                              </tr>
 
-          <tr>
-            <td class="titletable"><p class="SUBTITULO"><span>
-                  Fecha recepción carta</p></td>
-            <td><p class="PARRAFO">Campo
-                que permite registrar la fecha en la cual el cliente radica ante
-                la
-                entidad la carta en la que informa la pérdida o fraude de
-                la
-                tarjeta.</p></td>
-          </tr>
+                              <tr>
+                                    <td class="titletable"><p class="SUBTITULO">
+                                                Fecha denuncio</p></td>
+                                    <td><p class="PARRAFO">En
+                                                este campo se indica la fecha en
+                                                la que el cliente
+                                                presentó el
+                                                denuncio ante las autoridades
+                                                correspondientes por la
+                                                pérdida
+                                                o fraude cometido con su
+                                                tarjeta.</p></td>
+                              </tr>
 
-          <tr>
-            <td class="titletable"><p class="SUBTITULO"><span>
-                  Fecha denuncio</p></td>
-            <td><p class="PARRAFO">En
-                este campo se indica la fecha en la que el cliente
-                presentó el
-                denuncio ante las autoridades correspondientes por la
-                pérdida
-                o fraude cometido con su tarjeta.</p></td>
-          </tr>
+                              <tr>
+                                    <td class="titletable"><p class="SUBTITULO">
+                                                Fecha recepción
+                                                denuncio</p></td>
+                                    <td><p class="PARRAFO">Campo
+                                                que permite registrar la fecha
+                                                en la cual el cliente radica
+                                                ante
+                                                la
+                                                entidad el denuncio de la
+                                                pérdida o fraude.</p></td>
+                              </tr>
 
-          <tr>
-            <td class="titletable"><p class="SUBTITULO"><span>
-                  Fecha recepción denuncio</p></td>
-            <td><p class="PARRAFO">Campo
-                que permite registrar la fecha en la cual el cliente radica ante
-                la
-                entidad el denuncio de la pérdida o fraude.</p></td>
-          </tr>
+                              <tr>
+                                    <td class="titletable"><p class="SUBTITULO">
+                                                Tipo fraude</p></td>
+                                    <td><p class="PARRAFO">En
+                                                este campo obligatorio tipo
+                                                combo se puede seleccionar entre
+                                                Alteración,
+                                                Banda magnética,
+                                                Establecimiento, Extravío,
+                                                Falsificación,
+                                                Internet, Robo, Tarjeta no
+                                                presentada, Tarjeta no recibido
+                                                o
+                                                Uso indebido, la causal asociada
+                                                con el motivo que genera el
+                                                reporte
+                                                de extravío, siendo Extravío y
+                                                Robo
+                                                de aplicación exclusiva para el
+                                                tipo bloqueo por robo.
+                                                Es de anotar que esta
+                                                información es de gran utilidad
+                                                tanto para
+                                                la entidad como para la
+                                                compa&ntilde;ía aseguradora a
+                                                fin
+                                                de
+                                                poder determinar el origen o
+                                                causa del fraude y tomar los
+                                                correctivos
+                                                necesarios.</p></td>
+                              </tr>
 
-          <tr>
-            <td class="titletable"><p class="SUBTITULO"><span>
-                  Tipo fraude</p></td>
-            <td><p class="PARRAFO">En
-                este campo obligatorio tipo combo se puede seleccionar entre
-                Alteración,
-                Banda magnética, Establecimiento, Extravío,
-                Falsificación,
-                Internet, Robo, Tarjeta no presentada, Tarjeta no recibido o
-                Uso indebido, la causal asociada con el motivo que genera el
-                reporte
-                de extravío, siendo Extravío y Robo
-                de aplicación exclusiva para el tipo bloqueo por robo.
-                Es de anotar que esta información es de gran utilidad
-                tanto para
-                la entidad como para la compa&ntilde;ía aseguradora a fin
-                de
-                poder determinar el origen o causa del fraude y tomar los
-                correctivos
-                necesarios.</p></td>
-          </tr>
+                              <tr>
+                                    <td class="titletable"><p class="SUBTITULO">
+                                                Número tarjeta fraude</p></td>
+                                    <td><p class="PARRAFO">Cuando
+                                                el fraude es por tarjeta gemela,
+                                                en este campo se registra en
+                                                caso de
+                                                conocerse, el número de la
+                                                tarjeta utilizad para la
+                                                comisión
+                                                del fraude.</p></td>
+                              </tr>
+                              <tr>
+                                    <td class="titletable"><p class="SUBTITULO">
+                                                Reportado por </p></td>
+                                    <td><p class="PARRAFO">En
+                                                este campo se ingresa la
+                                                información de la persona que
+                                                efectuó
+                                                el trámite de reporte del
+                                                extravío o fraude de la
+                                                tarjeta
+                                                ante la entidad, que puede ser
+                                                el propio cliente titular o un
+                                                tercero
+                                                autorizado por éste.</p></td>
+                              </tr>
+                              <tr>
+                                    <td class="titletable"><p class="SUBTITULO">
+                                                Cobro reexpedición</p></td>
+                                    <td><p class="PARRAFO">Campo
+                                                obligatorio tipo combo en el que
+                                                se indica Si o No
+                                                se le debe cobrar al cliente la
+                                                reexpedición del nuevo
+                                                plástico
+                                                que le será entregado en
+                                                reemplazo del reportado como
+                                                extraviado.</p></td>
+                              </tr>
+                        </table>
 
-          <tr>
-            <td class="titletable"><p class="SUBTITULO"><span>
-                  Número tarjeta fraude</p></td>
-            <td><p class="PARRAFO">Cuando
-                el fraude es por tarjeta gemela, en este campo se registra en
-                caso de
-                conocerse, el número de la tarjeta utilizad para la
-                comisión
-                del fraude.</p></td>
-          </tr>
-          <tr>
-            <td class="titletable"><p class="SUBTITULO"><span>
-                  Reportado por </p></td>
-            <td><p class="PARRAFO">En
-                este campo se ingresa la información de la persona que
-                efectuó
-                el trámite de reporte del extravío o fraude de la
-                tarjeta
-                ante la entidad, que puede ser el propio cliente titular o un
-                tercero
-                autorizado por éste.</p></td>
-          </tr>
-          <tr>
-            <td class="titletable"><p class="SUBTITULO"><span>
-                  Cobro reexpedición</p></td>
-            <td><p class="PARRAFO">Campo
-                obligatorio tipo combo en el que se indica Si o No
-                se le debe cobrar al cliente la reexpedición del nuevo
-                plástico
-                que le será entregado en reemplazo del reportado como
-                extraviado.</p></td>
-          </tr>
-        </table>
+                        <p class="TITLE"><img src="../img/SCF_030E.PNG"></p>
+                        <p class="TITLE">Descripción de campos</p>
+                        <table>
+                              <tr>
+                                    <td class="titletable"><p class="SUBTITULO">
+                                                Número de tarjeta</p></td>
+                                    <td><p class="PARRAFO">En este campo se
+                                                despliega el número actual
+                                                de la tarjeta consultada
+                                                y que fue bloqueada por
+                                                extravío.</p></td>
+                              </tr>
 
-        <p class="TITLE"><img src="../img/SCF_030E.PNG"></p>
-        <p class="TITLE">Descripción de campos</p>
-        <table>
-          <tr>
-            <td class="titletable"><p class="SUBTITULO"><span>
-                  Número de tarjeta</p></td>
-            <td><p class="PARRAFO">En este campo se despliega el número actual
-                de la tarjeta consultada
-                y que fue bloqueada por extravío.</p></td>
-          </tr>
+                              <tr>
+                                    <td class="titletable"><p class="SUBTITULO">
+                                                Nombre</p></td>
+                                    <td><p class="PARRAFO">Campo
+                                                que contiene el nombre realzado
+                                                en el plástico de la
+                                                tarjeta.</p></td>
+                              </tr>
 
-          <tr>
-            <td class="titletable"><p class="SUBTITULO"><span>
-                  Nombre</p></td>
-            <td><p class="PARRAFO">Campo
-                que contiene el nombre realzado en el plástico de la
-                tarjeta.</p></td>
-          </tr>
+                              <tr>
+                                    <td class="titletable"><p class="SUBTITULO">
+                                                Producto</p></td>
+                                    <td><p class="PARRAFO">Indica
+                                                el bin, segmento, grupo de
+                                                afinidad y descripción del <a
+                                                      href="MEH_002B.html">producto</a>
+                                                al que pertenece la
+                                                tarjeta.</p></td>
+                              </tr>
 
-          <tr>
-            <td class="titletable"><p class="SUBTITULO"><span>
-                  Producto</p></td>
-            <td><p class="PARRAFO">Indica
-                el bin, segmento, grupo de afinidad y descripción del <a
-                  href="MEH_002B.html">producto</a>
-                al que pertenece la tarjeta.</p></td>
-          </tr>
+                              <tr>
+                                    <td class="titletable"><p class="SUBTITULO">
+                                                Dirección</p></td>
+                                    <td><p class="PARRAFO">Muestra
+                                                la dirección de correspondencia
+                                                asociada con la
+                                                tarjeta.</p></td>
+                              </tr>
 
-          <tr>
-            <td class="titletable"><p class="SUBTITULO"><span>
-                  Dirección</p></td>
-            <td><p class="PARRAFO">Muestra
-                la dirección de correspondencia asociada con la
-                tarjeta.</p></td>
-          </tr>
+                              <tr>
+                                    <td class="titletable"><p class="SUBTITULO">
+                                                Ubicación geográfica</p></td>
+                                    <td><p class="PARRAFO">Campo
+                                                que indica la ubicación
+                                                geográfica a la que
+                                                pertenece
+                                                la dirección de correspondencia
+                                                de la tarjeta.</p></td>
+                              </tr>
 
-          <tr>
-            <td class="titletable"><p class="SUBTITULO"><span>
-                  Ubicación geográfica</p></td>
-            <td><p class="PARRAFO">Campo
-                que indica la ubicación geográfica a la que
-                pertenece
-                la dirección de correspondencia de la tarjeta.</p></td>
-          </tr>
+                              <tr>
+                                    <td class="titletable"><p class="SUBTITULO">
+                                                Teléfono 1</p></td>
+                                    <td><p class="PARRAFO">Se&ntilde;ala
+                                                el número telefónico reportado
+                                                por el cliente y en
+                                                el
+                                                cual puede ser
+                                                contactado.</p></td>
+                              </tr>
 
-          <tr>
-            <td class="titletable"><p class="SUBTITULO"><span>
-                  Teléfono 1</p></td>
-            <td><p class="PARRAFO">Se&ntilde;ala
-                el número telefónico reportado por el cliente y en
-                el
-                cual puede ser contactado.</p></td>
-          </tr>
+                              <tr>
+                                    <td class="titletable"><p class="SUBTITULO">
+                                                Bloqueo plástico</p></td>
+                                    <td><p class="PARRAFO">Campo que ilustra con
+                                                cuál de los bloqueos
+                                                sobre el
+                                                plástico, queda registrado en
+                                                extravío.</p></td>
+                              </tr>
 
-          <tr>
-            <td class="titletable"><p class="SUBTITULO"><span>
-                  Bloqueo plástico</p></td>
-            <td><p class="PARRAFO">Campo que ilustra con cuál de los bloqueos
-                sobre el
-                plástico, queda registrado en extravío.</p></td>
-          </tr>
+                              <tr>
+                                    <td class="titletable"><p class="SUBTITULO">
+                                                Fecha bloqueo</p></td>
+                                    <td><p class="PARRAFO">Campo con formato
+                                                YYYY-MM-DD que indica la
+                                                fecha en la
+                                                cual se aplicó el bloqueo por
+                                                extravío a la tarjeta.</p></td>
+                              </tr>
+                        </table>
 
-          <tr>
-            <td class="titletable"><p class="SUBTITULO"><span>
-                  Fecha bloqueo</p></td>
-            <td><p class="PARRAFO">Campo con formato YYYY-MM-DD que indica la
-                fecha en la
-                cual se aplicó el bloqueo por extravío a la tarjeta.</p></td>
-          </tr>
-        </table>
+                  </section>
+                  <script src="../js/menu.js"></script>
 
-      </section>
-      <script src="../js/menu.js"></script>
-
-      <div id="footerContainer"></div>
-      <script>
+                  <div id="footerContainer"></div>
+                  <script>
   fetch('footer.html')
     .then(response => response.text())
     .then(html => {
       document.getElementById('footerContainer').innerHTML = html;
     });
 </script>
-    </body>
+            </body>
 
-  </html>
+      </html>

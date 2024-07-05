@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>BANKBU®</title>
+    <title>OpencardWeb®</title>
     <link rel="stylesheet" href="../css/pages.css">
     <link rel="stylesheet" href="../css/style.css">
     <link rel="icon" href="../img/ACQUIRER-logo.JPG" type="image/x-icon">
@@ -31,22 +31,17 @@
             
          <p  class="TITLE">Ejecución grupos independientes</p>
                        
-            <p  class="PARRAFO">Esta opción muestra todos aquellos grupos que no hayan sido
-                marcados en el campo Obligatorio de la opción <span class="PARRAFO"><a
-                        href="OPH_001B.html" >Definición grupos de procesos</a></span> . Esto
-                significa que todos aquellos que si hayan sido marcado como obligatorios sólo se mostrarán
-                en la opción <span class="PARRAFO"><a href="OPH_001B.html" ></a><a
-                        href="OPH_002B.html" >Ejecución grupos en malla</a></span> . </p>
-            <p  class="PARRAFO">Con base en lo anterior, esta opción sólo nos
-                mostrará los procesos a ser ejecutados manualmente, permitiendo a los usuarios hacerlo no solo
-                una vez sino las que sea necesario de acuerdo a las necesidades del cliente. </p>
-            <p  class="PARRAFO">La pantalla principal se divide en dos partes en la cuales se
-                encontrarán los Grupos de procesos a la izquierda, tal como se muestra en la siguiente imagen.
-            </p>
-            <p  class="PARRAFO">Por otro lado , la opción cuenta también con el
-                vínculo de <a href="#Procesos" target="_self" >Procesos</a> que nos permitirá
-                ejecutar uno a uno aquellos que necesitemos, sin ser necesario correr todo el grupo de procesos. </p>
-            <p class="TITLE"><img src="../img/OPF_007E.PNG"></p>
+            <p  class="PARRAFO">Este formulario muestra aquellos grupos de procesos que no hayan sido marcados en el 
+                campo Obligatorio de la opción <span class="PARRAFO"><a
+                        href="OPH_001B.html" >Definición grupos de procesos</a></span>. Esta opción sólo nos muestra
+                         los grupos de procesos a ser ejecutados manualmente, permitiendo incluso ejecutar algunos 
+                          ellos, más de una vez, dentro de la misma fecha de proceso, si es necesario, siempre y
+                           cuando ello no implique la duplicidad de registros ya ingresados al sistema. Así mismo,
+                            la opción cuenta también con el enlace <a href="#Procesos" target="_self" >Procesos,</a>
+                            el cual permite ejecutar, uno a uno, aquellos procesos que se requieran, sin ser necesario correr todo el grupo de procesos.</p>
+            
+            <p class="PARRAFO">La pantalla principal se divide en dos partes en la cuales se encontrarán los Grupos de procesos a la izquierda, tal como se muestra en la siguiente imagen:</p>
+                            <p class="TITLE"><img src="../img/OPF_007E.PNG"></p>
 
             <p class="PARRAFO">A la derecha de esta pantalla se ubica una ventana que funciona como log de operaciones,
                 describiendo las acciones y resultados de cada uno de los procesos que han sido ejecutados. </p>
@@ -73,16 +68,16 @@
             <p class="PARRAFO">Antes de iniciar el cargue de un grupo, el sistema los muestra con el campo Estado proceso en blanco. Luego éste varia de acuerdo al estado de los procesos ejecutados.</p>
             <table>
                 <tr>
-                    <td>
-                        <p class="PARRAFO"><span class="SUBTITULO">Proceso en ejecución</p>
+                    <td class="titletable">
+                        <p class="SUBTITULO">Proceso en ejecución</p>
                     </td>
                     <td>
                         <p class="PARRAFO"> El sistema está corriendo el paquete del proceso. </p>
                     </td>
                 </tr>
                 <tr>
-                    <td style="width: 450px;">
-                        <p class="PARRAFO"><span class="SUBTITULO">Ejecución parcial</p>
+                    <td class="titletable">
+                        <p class="SUBTITULO">Ejecución parcial</p>
                     </td>
                     <td>
                         <p class="PARRAFO">  El sistema ha presentado algún error que puede ser consultado directamente en el log de operaciones o en el <a href="OPH_003B.html"
@@ -90,8 +85,8 @@
                     </td>
                 </tr>
                 <tr>
-                    <td >
-                        <p class="PARRAFO"><span class="SUBTITULO">Ejecución total</p>
+                    <td class="titletable">
+                        <p class="SUBTITULO">Ejecución total</p>
                     </td>
                     <td>
                         <p class="PARRAFO"> El proceso ha finalizado exitosamente. </p>
@@ -99,7 +94,7 @@
                 </tr>
                 <tr>
                     <td class="titletable">
-                        <p class="PARRAFO"><span class="SUBTITULO">Proceso pendiente o Proceso en cola:</p>
+                        <p class="SUBTITULO">Proceso pendiente o Proceso en cola:</p>
                     </td>
                     <td>
                         <p class="PARRAFO"> El sistema identifica estos
@@ -111,6 +106,7 @@
                     </span>  Este enlace muestra un nuevo formulario desde el Grupo desde el cual se invocó, lo que le permite a la entidad, ejecutar algunos de los procesos de manera selectiva, sin necesidad de correrlos todos en conjunto. De igual forma permite la ejecución de estos tantas veces sea necesario, por ejemplo en el caso de los cargues de franquicias o de algunos convenios.</p>
             <p class="PARRAFO">Tal como aplica para la ejecución de Grupos antes descrita, este formulario permite la selección de uno o varios procesos a ejecutar, permitiendo su actualización a través de los mismos rangos de 5, 15 o 30 segundos, y mostrando el estado de los mismos y su Número de ejecuciones. En caso de presentarse algún error, será mostrado en el campo Mensaje de esta misma pantalla. </p>
             <p class="TITLE"><img src="../img/OPF_007E2.PNG" ></p>
+            <p class="PARRAFO"><span class="TITLE">Ejecutar:</span> Este botón especial, se debe activar cada vez que se requiera lanzar un Grupo completo de procesos o un proceso en particular, previa selección del mismo, marcando la casilla al final del registro.</p>
 
     </section>
     <script src="../js/menu.js"></script>

@@ -4,7 +4,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>BANKBU®</title>
+  <title>OpencardWeb®</title>
   <link rel="stylesheet" href="../css/pages.css">
   <link rel="stylesheet" href="../css/style.css">
   <link rel="icon" href="../img/ACQUIRER-logo.JPG" type="image/x-icon">
@@ -29,89 +29,56 @@
     
       <div>
           <p class="TITLE">Definición grupos de procesos</p>
-        <p class="PARRAFO">Mediante este formulario se habilita el mantenimiento y consulta de la data, de la
-          parametrización de los diferentes grupos de procesos, conformados por procedimientos con idéntica periodicidad
-          de ejecución y que, funcional o lógicamente, la entidad acorde con sus criterios, desee hacer concordar; esta
-          secuencialidad facilita la definición de precedencia, tanto a nivel de grupo como de procesos, dando la
-          posibilidad de priorizarlos e interrelacionarlos y determinar para cada grupo, los procesos específicos que
-          los conforman.
+        <p class="PARRAFO">A través de este formulario se habilita el mantenimiento y consulta de la data de la parametrización de los diferentes grupos de procesos, conformados por procedimientos con idéntica periodicidad de ejecución y que, funcional o lógicamente, la entidad acorde con sus criterios, desee hacer concordar; esta secuencialidad facilita la definición de precedencia, tanto a nivel de grupo como de procesos, dando la posibilidad de priorizarlos e interrelacionarlos y determinar para cada grupo, los procesos específicos que los conforman. El formulario cuenta con un filtro que le permite al usuario hacer consultas selectivas por el código del grupo y nombre del grupo. Adicionalmente, cuenta con los siguientes enlaces: <a href="#Procesos">Procesos</a></span>  
+               y <a href="#Predecesor">Predecesor,</a> Actualizar, Eliminar, Adicionar y Detalle.
           </p>
 
         <p class="TITLE"><img src="../img/OPF_001E.PNG"></p>
 
-        <p class="PARRAFO">El formulario cuenta con un filtro que le
-          permite al usuario hacer consultas selectivas por el código del grupo y nombre del grupo.</p>
-
-        <p class="TITLE"><img src="../img/OPF_001E1.PNG"></p>
-
-        <p class="PARRAFO"><span class="PARRAFO">El formulario contiene
-            las opciones Actualizar, Eliminar, Adicionar y Detalle. Cuenta también
-            con el hipervínculo <a href="#Procesos">Procesos</a></span>  y <a href="#Predecesor">Predecesor.</a>
-        </p>
         <p class="PARRAFO"><span class="SUBTITULO"><span
                   class="SUBTITULO">Adicionar</span>:</span></span>
-            Al activar ese enlace se despliega un formulario.
+                  Al activar ese enlace se despliega el siguiente formulario:
           </p>
 
         <p class="TITLE"><img src="../img/OPF_001E2.PNG"></p>
 
         <p class="TITLE">Descripción de campos</p>
-        <table '>
+        <table>
                   <tr>
                     <td class="titletable"><p class="SUBTITULO"><span 
         >Código </span>grupo</p></td>
-                    <td><p  class="PARRAFO">Campo 
-                        numérico de cuatro dígitos, obligatorio, en el que se 
-                        registra la serie o número que identifica cada uno de los grupos 
-                        de procesos.
+                    <td><p  class="PARRAFO">Campo numérico de cuatro dígitos, obligatorio, en el que se registra la serie o número que identifica cada uno de los grupos de procesos.
               </p></td>
                   </tr>
                   <tr>
                     <td  class="titletable" ><p class="SUBTITULO"><span 
-        >Nombre 
-                      grupo</p></td>
-                    <td><p  class="PARRAFO">En 
-                        este campo alfanumérico obligatorio, se registra el nombre o 
-                        breve descriptivo que mejor indique el propósito del grupo.
-              </p></td>
+        >Nombre grupo</p></td>
+                    <td><p  class="PARRAFO">Campo numérico de cuatro dígitos, obligatorio, en el que se registra la serie o número que identifica cada uno de los grupos de procesos.
+
+                    </p></td>
                   </tr>
                   <tr>
-                    <td class="titletable"><span class="SUBTITULO"><span 
-        >Frecuencia</span></span></td>
-                    <td><p class="PARRAFO">Campo 
-                        tipo combo obligatorio, del cual se debe seleccionar entre Diario, Semanal, Mensual, 
-                        Anual, Facturación y Especial, la frecuencia con la cual deben ser ejecutados los procesos del grupo. La combinatoria entre el valor aquí se&ntilde;alado 
-                        y los valores de los campos Fecha última ejecución, Fecha próxima ejecución, 
-                        último día hábil y Día del periodo, determinarán que aparezcan o no dentro de la opción Ejecución 
-                    de procesos para una fecha determinada. Cuando se selecciona ' Especial', indica que dicho grupo se
-          reflejará en la opción Ejecución de procesos especiales y por allí mismo se
-          podrá ejecutar de forma manual únicamente.</p>
+                    <td class="titletable"><span class="SUBTITULO">Frecuencia</span></td>
+                    <td><p class="PARRAFO">Campo obligatorio que posee lista de valores tipo combo, de la cual se debe seleccionar entre: Diario, Semanal, Mensual, Anual o Facturación, la frecuencia con la cual deberían ser ejecutados los procesos del grupo. La combinatoria entre el valor aquí señalado y los valores de los campos: Fecha próxima ejecución, Último día hábil y Día del periodo, determinarán que aparezcan o no dentro de la opción Ejecución de procesos para una fecha determinada.</p>
           </td>
           </tr>
         </table>
-        <table '>
+        <table>
                   <tr> 
                     <td class="titletable"><p class="SUBTITULO"><span 
         >Ultimo 
                         día hábil</p></td>
-                    <td><p  class="PARRAFO">Este 
-                        campo se activa únicamente cuando la periodicidad seleccionada 
-                        es semanal, mensual o anual, y contiene un combo con las opciones Si o No para indicarle 
-                        al sistema si ejecuta dicho grupo de procesos el último día hábil bien sea de la semana, del mes o del a&ntilde;o, ó se ejecuta en un día diferente.</p></td>
+                    <td><p  class="PARRAFO">Este campo se activa únicamente cuando la periodicidad seleccionada es semanal, mensual o anual, y contiene un combo con las opciones Si o No, para indicarle al sistema, si ejecuta dicho grupo de procesos el último día hábil bien sea de la semana, del mes o del año o, se ejecuta en un día diferente.</p></td>
                   </tr>
                 </table>
-                <table '>
+                <table>
           <tr>
             <td class="titletable">
               <p class="SUBTITULO">Día
                     del periodo</p>
             </td>
             <td>
-              <p class="PARRAFO">Campo
-                que solamente se activa cuando la periodicidad sea Semanal, Mensual o Anual, y cuando el campo
-                último día hábil sea NO. En él debe se&ntilde;alarse el número del
-                día
-                dentro del periodo correspondiente, en que se requiera ejecutar el grupo.
+              <p class="PARRAFO">Campo que solamente se activa cuando tanto la periodicidad sea: Semanal, Mensual o Anual, como el campo Último día hábil sea No. En él, debe señalarse el número del día dentro del periodo correspondiente, en que se requiera ejecutar el grupo.
               </p>
             </td>
           </tr>
@@ -120,23 +87,21 @@
                   <tr> 
                     <td class="titletable"><p class="SUBTITULO"><span 
         >Obligatorio</p></td>
-                    <td><p  class="PARRAFO">En 
-                        este campo tipo combo obligatorio se indica Si o No el grupo puede ser obligatorio o no. </p></td>
+                    <td><p  class="PARRAFO">En este campo tipo combo obligatorio se indica Si o No, el grupo es obligatorio o no el ser ejecutado. </p></td>
                   </tr>
                 </table>
-                <table '>
+                <table>
           <tr>
             <td class="titletable">
               <p class="SUBTITULO">Número </span>  </span>Maximo de Corridas </p>
             </td>
             <td>
-              <p class="PARRAFO">Campo
-                obligatorio que determina el numero de ejecuciones parametrizables para el grupo.
+              <p class="PARRAFO">Campo obligatorio, numérico, en el que en máximo dos dígitos, se determina la cantidad de veces que el sistema permite que el grupo pueda ejecutarse dentro de una misma fecha de proceso.
               </p>
             </td>
           </tr>
         </table>
-        <table '>
+        <table>
                   <tr>
                     <td class="titletable"><p class="SUBTITULO"><span 
         >Fecha próxima 
@@ -145,15 +110,13 @@
                     </p></td>
                   </tr>
                 </table>
-                <table '>
+                <table>
           <tr>
             <td class="titletable">
               <p class="SUBTITULO">Iniciar con confirmación </p>
             </td>
             <td>
-              <p class="PARRAFO">Campo en el que se se indica Si o No el grupo puede iniciar su ejecucion con
-                confirmacion por parte del funcionario, esto para poder chequear o hacer algunas validaciones dentro del
-                cierre diario determinadas por el banco.
+              <p class="PARRAFO">Campo que se activa y transforma en obligatorio, cuando el campo Obligatorio tiene valor Si, en éste se indica Si o No, el grupo requiere confirmación para iniciar su ejecución, esto para poder chequear o hacer algunas validaciones dentro del cierre diario determinadas por la entidad.
               </p>
             </td>
           </tr>
@@ -161,77 +124,65 @@
 
         <p class="PARRAFO"><span class="SUBTITULO"><span
                   class="SUBTITULO">Actualizar</span>:</span></span>
-            si el usuario selecciona un registro e invoca la opción Actualizar
-            se despliega un formulario en el cual el único campo NO modificable
-            es el Código grupo.</p>
+                  si el usuario selecciona un registro e invoca ese enlace, se despliega un formulario en el cual el único campo No modificable es el Código grupo:</p>
 
-        <p class="TITLE"><img src="../img/OPF_001E3.PNG" 372" height="286"></p>
+        <p class="TITLE"><img src="../img/OPF_001E3.PNG"></p>
 
         <p class="PARRAFO"><span class="SUBTITULO">Detalle:</span></span>
-            si el usuario selecciona un registro e invoca la opción Detalle se
-            despliega un formulario con toda la información del registro y en el
-            cual ninguno de sus campos es modificable.</p>
+          Al activar ese enlace se despliega un formulario con la información del registro, en el cual ninguno de sus campos es modificable:</p>
 
-        <p class="TITLE"><img src="../img/OPF_001E4.PNG" 769"></p>
+        <p class="TITLE"><img src="../img/OPF_001E4.PNG"></p>
 
         <div>
           <p class="PARRAFO"><span class="SUBTITULO"><a
                         name="Procesos"></a>Procesos:</span></span>
-              Si el usuario invoca el hipervínculo 'Procesos', se despliega un
-              nuevo formulario con el mismo nombre y en el que se registran todos los
-              procesos que componen o integran cada uno de los grupos definidos.</p>
+                        Al activar ese enlace se despliega un nuevo formulario en el que se registran los
+                         procesos que componen o integran cada uno de los grupos definidos. El formulario 
+                         contiene los enlaces: <a href="#BL_PARAMETROS">Parametros</a></span>  
+                         y <a href="#Predecesor">Predecesor,</a> Actualizar, Eliminar, Adicionar y Detalle.
 
-          <p class="TITLE"><img src="../img/OPF_001E5.PNG" 768" height="231"></p>
+                      </p>
 
-          <p class="PARRAFO">El formulario contiene los enlaces: Actualizar,
-            Eliminar y Adicionar. También contiene el hipervínculo <a
-              href="OPH_001B.html#BL_PARAMETROS">Parámetros</a> y <a href="#Predecesordeprocesos">Predecesor.</a>
-          </p>
-          <p class="PARRAFO"><span class="SUBTITULO"><span
-                    class="SUBTITULO">Adicionar</span>:</span></span> 
-            S</span>i el usuario invoca la opción Adicionar se despliega un formulario
-              con los siguientes campos:</span> 
+          <p class="TITLE"><img src="../img/OPF_001E15.PNG"></p>
+
+          <p class="PARRAFO"><span class="SUBTITULO">Adicionar</span>:
+                    Al Activar ese enlace se despliega un formulario con los siguientes campos:
           </p>
 
-          <p class="TITLE"><img src="../img/OPF_001E6.PNG" 666" height="240"></p>
+          <p class="TITLE"><img src="../img/OPF_001E6.PNG"></p>
 
           <p class="TITLE">Descripción de campos</p>
-          <table '>
+          <table>
                     <tr> 
                       <td class="titletable"><p class="SUBTITULO"><span 
         >Código 
                           proceso </p></td>
-                      <td><p  class="PARRAFO">Campos obligatorio
-                          de salida en los que se muestra la combinatoria correspondiente al 
-                          <a href="MEH_002B.html" > producto</a> para 
-                          el cual se está parametrizando la condición de no reporte 
-                          a centrales de riesgo.</p></td>
+                      <td><p  class="PARRAFO">Campo obligatorio, numérico de 3 dígitos, en el que se define el código a asignar al nuevo proceso que se está parametrizando.
+
+                      </p></td>
                     </tr>
 
                     <tr> 
                       <td class="titletable"><p class="SUBTITULO"><span 
         >Objeto</span> lógico </p></td>
-                      <td><p  class="PARRAFO">Campo 
-                          alfanumérico obligatorio en el que se registra el nombre del 
-                          objeto asociado al proceso a parametrizar. </p></td>
+                      <td><p  class="PARRAFO">Campo obligatorio que posee lista de valores poblada en la
+                         opción <a href="OPH_008B.html">Definición objetos lógicos</a> de la cual se
+                          debe el programa correspondiente a parametrizar. 
+
+                      </p></td>
                     </tr>
                     <tr> 
                       <td  class="titletable" ><p class="SUBTITULO"><span 
         >Descripción</span> objeto lógico </p></td>
-                      <td><p  class="PARRAFO">En 
-                          este campo alfanumérico obligatorio, se registra una breve 
-                          descripción de la función que cumple el proceso a parametrizar.</p></td>
+                      <td><p  class="PARRAFO">Campo alfanumérico obligatorio, de 80 caracteres, en el que se debe registrar una breve descripción de la función que cumple el proceso a parametrizar.
+
+                      </p></td>
                     </tr>
                     <tr>
                       <td  class="titletable" ><p class="SUBTITULO"><span >Frecuencia</p></td>
-                      <td><p  class="PARRAFO">Campo 
-                        tipo combo obligatorio, del cual se debe seleccionar entre Diario, Semanal, Mensual, 
-                        Anual, Facturación y Especial, la frecuencia con la cual deben ser ejecutados los procesos del grupo. La combinatoria entre el valor aquí se&ntilde;alado 
-                        y los valores de los campos Fecha última ejecución, Fecha próxima ejecución, 
-                        último día hábil y Día del periodo, determinarán que aparezcan o no dentro de la opción Ejecución 
-                    de procesos para una fecha determinada. Cuando se selecciona ' Especial', indica que dicho grupo se
-            reflejará en la opción Ejecución de procesos especiales y por allí mismo se
-            podrá ejecutar de forma manual únicamente.</p>
+                      <td><p  class="PARRAFO">Campo obligatorio que posee lista de valores tipo combo, de la cual se debe seleccionar entre: Diario, Semanal, Mensual, Anual o Facturación, la frecuencia con la cual deberá ser ejecutado el proceso. La combinatoria entre el valor aquí señalado y los valores de los campos: Fecha próxima ejecución, Último día hábil y Día del periodo, determinarán que aparezcan o no dentro de la opción Ejecución de procesos para una fecha determinada.
+
+                      </p>
             </td>
             </tr>
             <tr>
@@ -240,11 +191,9 @@
                       día hábil</p>
               </td>
               <td>
-                <p class="PARRAFO">Este
-                  campo se activa únicamente cuando la periodicidad seleccionada
-                  es semanal, mensual o anual, y contiene un combo con las opciones Si o No para indicarle
-                  al sistema si ejecuta dicho grupo de procesos el último día hábil bien sea de la
-                  semana, del mes o del a&ntilde;o, ó se ejecuta en un día diferente.</p>
+                <p class="PARRAFO">Este campo se activa únicamente cuando la periodicidad seleccionada es semanal, mensual o anual, y contiene un combo con las opciones Si o No, para indicarle al sistema, si ejecuta dicho proceso el último día hábil bien sea de la semana, del mes o del año o, se ejecuta en un día diferente.
+
+                </p>
               </td>
             </tr>
             <tr>
@@ -253,11 +202,7 @@
                       del periodo</p>
               </td>
               <td>
-                <p class="PARRAFO">Campo
-                  que solamente se activa cuando la periodicidad sea Semanal, Mensual o Anual, y cuando el campo
-                  último día hábil sea NO. En él debe se&ntilde;alarse el número del
-                  día
-                  dentro del periodo correspondiente, en que se requiera ejecutar el grupo.
+                <p class="PARRAFO">Campo que solamente se activa cuando tanto la periodicidad sea: Semanal, Mensual o Anual, como el campo Último día hábil sea No. En él, se debe registrar el número del día dentro del periodo correspondiente, en que se requiera ejecutar el proceso.
                 </p>
               </td>
             </tr>
@@ -266,8 +211,8 @@
                 <p class="SUBTITULO">Requerido</p>
               </td>
               <td>
-                <p class="PARRAFO">En
-                  este campo tipo combo obligatorio se indica Si o No el grupo puede ser obligatorio o no. </p>
+                <p class="PARRAFO">Campo en el que se señala si el proceso tiene la condición de obligatorio o no, lo que es evaluado por el sistema al momento de hacer el cambio de calendario, para no permitir la acción hasta tanto todos los procesos obligatorios hayan sido lanzados y su estado sea Ejecución total.
+                </p>
               </td>
             </tr>
 
@@ -276,8 +221,7 @@
                 <p class="SUBTITULO">Número </span>  </span>Maximo de Corridas </p>
               </td>
               <td>
-                <p class="PARRAFO">Campo
-                  obligatorio que determina el numero de ejecuciones parametrizables para el grupo.
+                <p class="PARRAFO">Campo numérico obligatorio, en el que, en máximo dos dígitos, se determina la cantidad de veces que el sistema permite que el proceso pueda ejecutarse dentro de una misma fecha de proceso.
                 </p>
               </td>
             </tr>
@@ -288,10 +232,9 @@
                       ejecución </p>
               </td>
               <td>
-                <p class="PARRAFO">Campo
-                  obligatorio en formato YYYY-MM-DD en el que se registra, acorde con la periodicidad
-                  y fechas hábiles, la siguiente fecha en que debe ser ejecutado
-                  el grupo.
+                <p class="PARRAFO">Campo obligatorio, que ofrece la funcionalidad de un calendario en el que se debe seleccionar, acorde con la periodicidad y fechas hábiles para Banca, la siguiente faech en que debe ser ejecutado el proceso.
+
+
                 </p>
               </td>
             </tr>
@@ -299,96 +242,65 @@
 
           <p class="PARRAFO"><span class="SUBTITULO"><span
                     class="SUBTITULO">Actualizar</span>:</span></span>
-              si el usuario selecciona un registro e invoca la opción Actualizar
-              se despliega un formulario en el cual </span>los campos </span> no modificables
-            </span>son Código proceso, Objeto lógico y Descripción objeto lógico.
+                    Al activar ese enlace se despliega un formulario en el cual los campos modificables son: Descripción objeto lógico, Número Máximo de Corridas y Fecha próxima ejecución:
             </p>
 
-          <p class="TITLE"><img src="../img/OPF_001E7.PNG" 657" height="291"></p>
+          <p class="TITLE"><img src="../img/OPF_001E7.PNG"></p>
 
           <p class="PARRAFO"><a name="BL_PARAMETROS"></a><span
               class="SUBTITULO">Parámetros:</span></span>
-              si el usuario invoca el hipervínculo Parámetros se despliega
-              un nuevo formulario con el mismo nombre y en el cual la entidad puede asociar
-              los valores de los parámetros que debe tener en cuenta el sistema
-              al momento de ejecutar cada uno de los procesos.</p>
+              Al activar ese enlace, se despliega un nuevo formulario en el cual la entidad puede asociar los valores de los datos o variables, que debe tener en cuenta el sistema al momento de ejecutar cada uno de los procesos. Además del filtro de búsqueda, el formulario contiene los enlaces: Actualizar, Eliminar y Adicionar.</p>
 
-          <p class="TITLE"><img src="../img/OPF_001E8.PNG" 544"></p>
+          <p class="TITLE"><img src="../img/OPF_001E8.PNG"></p>
 
-          <p class="PARRAFO">El formulario contiene los enlaces: Actualizar,
-            Eliminar y Adicionar. </p>
           <p class="PARRAFO"><span class="SUBTITULO"><span
                     class="SUBTITULO">Adicionar</span>:</span></span>
-              Al activar ese enlace se despliega un formulario.</p>
+                    Al activar ese enlace se despliega el siguiente formulario:
+          </p>
 
-          <p class="TITLE"><img src="../img/OPF_001E9.PNG" 437"></p>
+          <p class="TITLE"><img src="../img/OPF_001E9.PNG"></p>
 
           <p class="TITLE">Descripción de campos</p>
-          <table '>
+          <table>
                     <tr> 
-                      <td class="titletable"><p class="SUBTITULO"><span 
-        >Posición</p></td>
-                      <td><p  class="PARRAFO">Campo 
-                          numérico de tres dígitos, obligatorio, en el que debe 
-                          registrarse el mismo valor asociado al parámetro dentro del 
-                          programa.
+                      <td class="titletable"><p class="SUBTITULO">Posición</p></td>
+                      <td><p  class="PARRAFO">	
+                        Campo numérico de tres dígitos, obligatorio, en el que debe registrarse el mismo valor, asociado al parámetro, dentro del programa.
                         </p></td>
                     </tr>
 
                     <tr> 
-                      <td  class="titletable" ><p class="SUBTITULO"><span 
-        >Descripción</span> del parámetro</p></td>
-                      <td><p  class="PARRAFO">En 
-                          este campo alfanumérico obligatorio, se registra una breve descripción 
-                          del parámetro asociado al proceso.</p></td>
+                      <td  class="titletable" ><p class="SUBTITULO">Descripción</span> del parámetro</p></td>
+                      <td><p  class="PARRAFO">Campo alfanumérico obligatorio, en el que debe registrarse una breve descripción del parámetro asociado al proceso.</p></td>
                     </tr>
                     <tr> 
-                      <td  class="titletable" ><p class="SUBTITULO"><span 
-        >Tipo 
+                      <td  class="titletable" ><p class="SUBTITULO">Tipo 
                           de parámetro</p></td>
-                      <td><p  class="PARRAFO">Campo 
-                          tipo combo del cual se puede seleccionar entre Archivo de entrada, 
-                          Archivo de salida o No es archivo, la característica propia 
-                          del parámetro.
+                      <td><p  class="PARRAFO">Campo que posee lista de valores tipo combo, de la cual se puede seleccionar entre: Archivo de entrada, Archivo de salida o No es archivo, la característica propia del parámetro.
                          
                         </p></td>
                     </tr>
                     <tr> 
-                      <td  class="titletable" ><p class="SUBTITULO"><span 
-        >Valor</span> parámetro </p></td>
-                      <td><p  class="PARRAFO">En 
-                          este campo se registra el valor asociado al parámetro dentro 
-                          del programa, como por ejemplo el nombre con el cual se va a reconocer un 
-                          archivo a cargar.
+                      <td  class="titletable" ><p class="SUBTITULO">Valor</span> parámetro </p></td>
+                      <td><p  class="PARRAFO">En este campo se registra el valor asociado al parámetro dentro del programa, como por ejemplo el nombre con el cual se va a reconocer un archivo a cargar o archivo de salida.
                         </p></td>
                     </tr>
                     <tr> 
-                      <td  class="titletable" ><p class="SUBTITULO"><span 
-        >Nombre</span> parámetro </p></td>
-                      <td><p  class="PARRAFO">Campo 
-                          que aplica para los reportes, y corresponde a parámetros diferentes 
-                          al de Empresa, Idioma, Nombre del reporte y Usuario, y que se deben 
-                          ubicar dentro del programa.
+                      <td  class="titletable" ><p class="SUBTITULO">Nombre</span> parámetro </p></td>
+                      <td><p  class="PARRAFO">Campo que aplica para los reportes, y corresponde a parámetros diferentes al de: Empresa, Idioma, Nombre del reporte y Usuario, y que se deben ubicar dentro del programa.
                         </p></td>
                     </tr>
                   </table>
       
-                  <p  class="PARRAFO"><span class="SUBTITULO"><span 
-        ><span class="SUBTITULO">Actualizar</span>:</span><span 
-        ></span></span><span 
-        > 
-                    si el usuario selecciona un registro e invoca la opción Actualizar 
-                    se despliega un formulario en el cual el único campo NO modificable 
-                    es la Posición.</p>
+                  <p  class="PARRAFO"><span class="SUBTITULO">Actualizar:</span>
+                    Al activar ese enlace se despliega un formulario en el cual el único campo No modificable es la Posición:</p>
       
-                  <p class="TITLE"><img src="../img/OPF_001E10.PNG"438" ></p>
-                  <p class="PARRAFO" ><span class="SUBTITULO"><span 
-        ><a name="Predecesordeprocesos"></a>P</span><span 
-        >redeceso</span></span></span><span class="#6"><span class="SUBTITULO"><span 
-        >r:</span></span><span class="#8">Desde la misma forma  es el </span></span><span class="PARRAFO"> conjunto de datos que    permiten definir los procesos que deben ser ejecutados previamente o como    prerrequisito para poder ejecutar un proceso determinado.</p>
-                  <p class="TITLE"><img src="../img/OPF_001E11.PNG"767" ></p>
+                  <p class="TITLE"><img src="../img/OPF_001E10.PNG"></p>
+                  <p class="PARRAFO" ><span class="SUBTITULO"><a name="Predecesordeprocesos">
+                  </a>Predecesor:</span>Desde la misma forma  es el conjunto de datos que permiten definir los procesos que deben ser ejecutados previamente o como    prerrequisito para poder ejecutar un proceso determinado.</p>
+                  <p class="TITLE"><img src="../img/OPF_001E11.PNG"></p>
                   <p  class="TITLE">Descripción de campos</p>
-                  <table '>
+                  <table>
             <tr>
               <td class="titletable">
                 <p class="SUBTITULO">Código de proceso </span></p>
@@ -422,18 +334,16 @@
               </td>
             </tr>
           </table>
-          .
-          <div>
-            <p class="PARRAFO"><a name="Predecesor"></a>Predecesor:</span>  Grupo de características que permiten
+          
+            <p class="PARRAFO"><a name="Predecesor"></a><span class="SUBTITULO">Predecesor:</span>  Grupo de características que permiten
               definir relaciones de dependencia para la ejecución entre los diferentes grupos; usualmente se
               establecen en orden ascendente o de menor a mayor.</p>
-          </div>
-          <p class="TITLE"><img src="../img/OPF_001E12.PNG" 767"></p>
+         
+          <p class="TITLE"><img src="../img/OPF_001E16.PNG"></p>
           <p class="TITLE">Descripción de campos</p>
-          <table '>
+          <table>
                     <tr>
-                      <td class="titletable"><p class="SUBTITULO"><span 
-        >Código grupo </p></td>
+                      <td class="titletable"><p class="SUBTITULO">Código grupo </p></td>
                       <td><p  class="PARRAFO">Campo de salida que indica el grupo, al cual    se le van a asociar otro(s) grupo(s) como predecesor(es).
                       </p></td>
                     </tr>

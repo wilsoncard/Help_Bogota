@@ -1,24 +1,24 @@
 <!DOCTYPE html>
 <html lang="es">
 
-<head>
+  <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>BANKBU®</title>
+    <title>OpencardWeb®</title>
     <link rel="stylesheet" href="../css/pages.css">
     <link rel="stylesheet" href="../css/style.css">
- <link rel="icon" href="../img/ACQUIRER-logo.JPG" type="image/x-icon">
-</head>
+    <link rel="icon" href="../img/ACQUIRER-logo.JPG" type="image/x-icon">
+  </head>
 
-<body>
+  <body>
     <header>
-        <img class="logo" src="../img/logoBankbu_.PNG" alt="Logo de Mi Empresa">
-        <div id="menuBtn">
-            <img class="TITLE"  src= "../img/menu.PNG" alt="Botón de Menú ">
-        </div>
+      <img class="logo" src="../img/logoBankbu_.PNG" alt="Logo de Mi Empresa">
+      <div id="menuBtn">
+        <img class="TITLE" src="../img/menu.PNG" alt="Botón de Menú ">
+      </div>
     </header>
-      <div id="menuContainer"></div>
-  <script>
+    <div id="menuContainer"></div>
+    <script>
     fetch('menu.html')
       .then(response => response.text())
       .then(html => {
@@ -27,245 +27,120 @@
   </script>
 
     <section>
-        <div>  
-            <p  class="TITLE">Parámetros realce</p>
-                
-            <p class="PARRAFO">Mediante esta función se permite la consulta o mantenimiento 
-              de la tabla que contiene los parámetros que el sistema tiene en cuenta 
-              al generar el archivo de realce de plásticos.</p>
-            <p class="PARRAFO">Estos campos contienen la información básica 
-              necesaria para identificar y ubicar el archivo cuando éste no se encuentra 
-              en el servidor de la entidad sino en alguno de los equipos cliente, y para 
-              facilitar el acceso remoto al mismo.</p>
-            <p class="TITLE"><img src="../img/PLF_010E.PNG"></p>
-            
-            <p class="PARRAFO">El formulario contiene los enlaces: Actualizar, Eliminar, 
-              Adicionar y Detalle. Adicionalmente, muestra la opción Estructura en 
-              la parte superior.</pre></p>
-            <p class="PARRAFO"><span class="SUBTITULO">Adicionar: </span>  Si el usuario invoca 
-              la opción Adicionar se despliega un formulario con los siguientes campos.</p>
-            <p class="TITLE"><img src="../img/PLF_010E1.PNG"></p>
-            
-            <table>
-              <tr> 
-                <td  class="titletable" ><p class="SUBTITULO"><span 
-        >Modelo</p></td>
-                <td><p class="PARRAFO">Campo 
-                    obligatorio que posee lista de valores poblada a través de la 
-                    opción <a href="NUH_057B.html" >Modelos plásticos</a> del 
-                    grupo de Tablas de la entidad del Núcleo, de la que debe seleccionarse 
-                    el modelo físico a parametrizar. Una vez diligenciado este campo 
-                    se llena automáticamente el siguiente.</p></td>
-              </tr>
-              <tr> 
-                <td class="titletable"><p class="SUBTITULO"><span 
-        >Sistema 
-                    operativo personal</p></td>
-                <td><p class="PARRAFO">Campo 
-                    con lista de valores propios que permite seleccionar el sistema operativo 
-                    utilizado por la entidad.</p></td>
-              </tr>
-              <tr> 
-                <td  class="titletable" ><p class="SUBTITULO"><span 
-        >IP 
-                    equipo personal</p></td>
-                <td><p class="PARRAFO">Contiene 
-                    la dirección del equipo del usuario remoto lo que permitirá 
-                    la comunicación con él desde otros equipos.</p></td>
-              </tr>
-              <tr> 
-                <td class="titletable"><p class="SUBTITULO"><span 
-        >Usuario 
-                    remoto </p></td>
-                <td><p class="PARRAFO">En 
-                    este campo se registra el nombre que identifica al usuario del cual 
-                    se requiere tomar o al cual se le debe enviar un archivo en particular.</p></td>
-              </tr>
-              <tr> 
-                <td  class="titletable" ><p class="SUBTITULO"><span 
-        >Clave 
-                    usuario remoto</p></td>
-                <td><p class="PARRAFO">Campo 
-                    alfanumérico de hasta 15 posiciones que contiene la clave con 
-                    la cual se identifica el usuario remoto.</p></td>
-              </tr>
-              <tr> 
-                <td class="titletable"><p class="SUBTITULO"><span 
-        >E-mail 
-                    personal </p></td>
-                <td><p class="PARRAFO">En 
-                    este campo se registra la dirección de correo electrónico 
-                    del usuario.</p></td>
-              </tr>
-              <tr> 
-                <td class="titletable"><p class="SUBTITULO"><span 
-        >Servidor 
-                    correo </p></td>
-                <td><p class="PARRAFO">Identifica 
-                    el sistema de administración de correo utilizado.</p>
-                </td>
-              </tr>
-              <tr> 
-                <td class="titletable"><p class="SUBTITULO"><span 
-        >Acción 
-                    a tomar</p></td>
-                <td><p class="PARRAFO">Conjunto 
-                    de campos en los que se selecciona entre Copiar, Mover o Ninguna la 
-                    acción que se debe ejecutar con el archivo indicado.</p></td>
-              </tr>
-              <tr>
-                <td class="SUBTITULO">Usar 
-                  FTP </td>
-                <td><p class="PARRAFO"> con lista de 
-                  valores que determina Si o No se utiliza el protocolo FTP para el intercambio 
-                  de archivos.</td></p>
-              </tr>
-            </table>
-            <p  class="PARRAFO"><span class="PARRAFO"><span class="SUBTITULO">Actualizar:</span>  
-               Al activar ese enlace  se despliega un formulario 
-              en el cual los únicos campos modificables son: Sistema operativo personal, 
-              IP equipo personal, Nombre archivo personal, Usuario remoto, Clave usuario 
-              remoto, E-mail personal, Servidor correo, Acción a tomar, y Usar FTP:</p>
-            <p class="TITLE"><img src="../img/PLF_010E2.PNG"></p>
-           
-            <p class="PARRAFO"><span class="SUBTITULO">Detalle:</span>  Si el usuario invoca la opción Detalle se despliega el siguiente formulario:</p>
-            <p class="TITLE"><img src="../img/PLF_010E3.PNG"></p>
-            
-            <p class="PARRAFO"><span class="SUBTITULO" >Estructura</p>
-            <p  class="PARRAFO">Al invocar la vínculo Estructura, el 
-              sistema muestra el siguiente formulario:</p>
-            <p class="TITLE"><img src="../img/PLF_010E4.PNG"></p>
-            
-            <p  class="PARRAFO">Este formulario muestra el conjunto de campos 
-              que permiten determinar la secuencia y relación de los campos incluidos 
-              dentro del archivo de realce.</p>
-            <p  class="PARRAFO"><span>El 
-              formulario contiene los enlaces:Actualizar, Eliminar, Adicionar y Detalle.</p>
-            <p  class="PARRAFO"><span class="SUBTITULO" >Adicionar</span><span>: Si el 
-              usuario invoca la opción Adicionar se despliega el siguiente formulario:</p>
-            <p class="TITLE"><img src="../img/PLF_010E5.PNG"></p>
-            <table>
-              <tr> 
-                <td class="titletable" ><p class="SUBTITULO">Secuencia</p></td>
-                <td><p class="PARRAFO">Campo 
-                    numérico de 6 dígitos, obligatorio, en el que se indica 
-                    el orden en que aparecen los campos dentro del archivo de realce.</p></td>
-              </tr>
-              <tr> 
-                <td class="titletable" ><p class="SUBTITULO">Prototipo</p></td>
-                <td><p  class="PARRAFO">Este 
-                    campo obligatorio posee lista de valores adjunta de la que debe seleccionarse 
-                    el tipo de dato cuya información hace parte del archivo de realce.</p></td>
-              </tr>
-              <tr> 
-                <td class="titletable" ><p class="SUBTITULO">Nombre 
-                    de campo</p></td>
-                <td><p  class="PARRAFO">Campo 
-                    alfanumérico de 30 dígitos, obligatorio, en el que debe 
-                    registrarse un descriptivo de lo que contiene el campo.</p></td>
-              </tr>
-              <tr> 
-                <td class="titletable" ><p class="SUBTITULO">Tipo 
-                    de dato</p></td>
-                <td><p class="PARRAFO">Este 
-                    campo no obligatorio, cuenta con lista de valores adjunta de la que 
-                    puede seleccionarse entre Número, Carácter o Fecha, la 
-                    clase de dato asociado al prototipo.</p></td>
-              </tr>
-              <tr>
-                <td class="titletable" ><p class="SUBTITULO">Formato 
-                  de campo</p></td>
-                <td><p  class="PARRAFO">Campo 
-                  no obligatorio que provee lista de valores adjunta que aplica para los 
-                  prototipos relacionados con fechas, de la que puede seleccionarse el 
-                  formato en que se presenta el dato.</p></td>
-              </tr>
-              <tr> 
-                <td class="titletable" ><p class="SUBTITULO">Idioma campo</p></td>
-                <td><p  class="PARRAFO">Campo 
-                    no obligatorio que provee lista de idiomas la cual se quiere trabajar dentro de la estructura. </p></td>
-              </tr>
-              <tr> 
-                <td class="titletable" ><p class="SUBTITULO">Orden 
-                    campo</p></td>
-                <td><p  class="PARRAFO">En 
-                    este campo numérico de 4 dígitos, obligatorio, se registrarse 
-                    el lugar que ocupa el campo dentro del registro.</p></td>
-              </tr>
-              <tr> 
-                <td class="titletable" ><p class="SUBTITULO">Posición 
-                    inicial</p></td>
-                <td><p class="PARRAFO">Campo 
-                    numérico de 4 dígitos, obligatorio, en el que debe indicarse 
-                    la posición inicial que ocupa el campo dentro de la estructura 
-                    del registro.</p></td>
-              </tr>
-              <tr> 
-                <td class="titletable" ><p class="SUBTITULO">Posición 
-                    final</p></td>
-                <td><p  class="PARRAFO">En 
-                    este campo numérico de 4 dígitos, obligatorio, de indica 
-                    la posición final que ocupa el campo dentro de la estructura 
-                    del registro, la pantalla controla que el valor registrado sea mayor 
-                    o igual al definido en el campo Posición inicial.</p></td>
-              </tr>
-              <tr> 
-                <td class="titletable" ><p class="SUBTITULO">Posición 
-                    inicial subcadena</p></td>
-                <td><p  class="PARRAFO">Campo 
-                    numérico de 4 dígitos, no obligatorio, en el que debe 
-                    indicarse la posición inicial del resultado obtenido cuando se 
-                    quiere substraer una parte de la cadena de datos del registro.</p></td>
-              </tr>
-              <tr>
-                <td class="titletable" ><p class="SUBTITULO">Longitud 
-                  subcadena</p></td>
-                <td><p class="PARRAFO">En 
-                  este campo numérico de 4 dígitos, no obligatorio, se digita 
-                  la cantidad de posiciones del resultado obtenido cuando se quiere substraer 
-                  una parte de la cadena de datos del registro.</p></td>
-              </tr>
-              <tr> 
-                <td class="titletable" ><p class="SUBTITULO">Posición fija</p></td>
-                <td><p class="PARRAFO">En 
-                    este campo no obligatorio, de indica 
-                    la posición fija que ocupa el campo dentro de la estructura 
-                    del registro.</p></td>
-              </tr>
-              <tr> 
-                <td class="titletable" ><p class="SUBTITULO">Valor 
-                    del dato</p></td>
-                <td><p  class="PARRAFO">Campo 
-                    alfanumérico de 10 posiciones, no obligatorio, en el que puede 
-                    registrarse un valor fijo para campos de tipo constantes.</p></td>
-              </tr>
-            </table>
+      <div>
+        <p class="TITLE">Parámetros realce</p>
 
-            <p  class="PARRAFO"><span class="SUBTITULO">Nota importante:</span> para permitir el cargue de archivos para aplicar masivamente el <a href="PLH_031B.html" >control de inventario</a> y el <a href="PLH_030B.html" >acuse de recibo</a> a los diferentes plásticos bien sea de tarjetas crédito, débito u <a href="MEH_030B.html" >otros</a></span> , se requiere que todos los modelos tengan parametrizado dentro de la estructura del archivo la 'Secuencia' que identifica a cada plástico. Se sugiere que está vaya ubicada en todos los archivos en la misma posicón, bien al comienzo o al final  para todos los modelos. </p>
-            <p  class="PARRAFO"><span class="SUBTITULO">Actualizar</span>: 
-               Al activar ese enlace  se despliega un formulario 
-              en el cual los únicos campos modificables son: Prototipo, nombre campo, 
-              Tipo de dato, Formato campo, Orden campo, Posición inicial, Posición 
-              final, Posición inicial subcadena, Longitud subcadena, y Valor del 
-              dato.</p>
-            <p class="TITLE"><img src="../img/PLF_010E6.PNG"></p>
-            
-            <p class="PARRAFO"><span class="SUBTITULO">Detalle:</span><span class="PARRAFO"> 
-              Si el usuario invoca la opción Detalle se despliega el siguiente formulario: 
-              </p>
-            <p class="PARRAFO" ></span><span><p class="TITLE"><img src="../img/PLF_010E7.PNG"></p>
-            </p>
-        </section>
-    <script src="../js/menu.js"></script>
+        <p class="PARRAFO">A través de esta opción, se permite la consulta o
+          mantenimiento de la tabla que contiene los parámetros que el sistema
+          tiene en cuenta al generar el archivo de realce de plásticos. El
+          formulario contiene los enlaces: Actualizar, Eliminar y Adicionar.</p>
+        <p class="TITLE"><img src="../img/PLF_010E.PNG"></p>
 
-    <div id="footerContainer"></div>
-<script>
+        <p class="PARRAFO"><span class="SUBTITULO">Adicionar: </span> Al activar
+          ese el enlace se despliega el siguiente formulario con los campos:</p>
+        <p class="TITLE"><img src="../img/PLF_010E1.PNG"></p>
+        <p class="TITLE">Descripcion de Campos</p>
+        <table>
+          <tr>
+            <td class="titletable"><p class="SUBTITULO"><span>Marca</p></td>
+              <td><p class="PARRAFO">Campo obligatorio que posee lista de
+                  valores poblada a través de la opción <a
+                    href="NUH_033B.html">Franquicias</a>, de
+                  la que debe seleccionarse la franquicia para la que se van a
+                  parametrizar la manera en la que el sistema arma el archivo
+                  para el realce de los plásticos.</p></td>
+            </tr>
+            <tr>
+              <td class="titletable"><p
+                  class="SUBTITULO"><span>Proveedor</p></td>
+                <td><p class="PARRAFO">
+                    Campo obligatorio que posee lista de valores poblada a
+                    través de la opción <a
+                      href="NUH_063B.html">Proveedores</a>,
+                    de la que debe seleccionarse al responsable del servicio de
+                    realce de los plásticos.</p></td>
+              </tr>
+              <tr>
+                <td class="titletable"><p class="SUBTITULO"><span>Id
+                      filler</p></td>
+                  <td><p class="PARRAFO">Campo numérico de 1 dígito,
+                      obligatorio, en el que se debe registrar el número que
+                      identifica a cada filler dentro del archivo plano de
+                      realce.</p></td>
+                </tr>
+                <tr>
+                  <td class="titletable"><p class="SUBTITULO"><span>Posición
+                        Inicial </p></td>
+                    <td><p class="PARRAFO">Campo numérico de 1 dígito,
+                        obligatorio, en el que debe indicarse el número del
+                        carácter del registro, a partir del cual se ubica el
+                        filler dentro del correspondiente registro.</p></td>
+                  </tr>
+                  <tr>
+                    <td class="titletable"><p class="SUBTITULO"><span>Posición
+                          Inicial Campo</p></td>
+                      <td><p class="PARRAFO">Campo numérico de 1 dígitos,
+                          obligatorio, en el que se registra el número del
+                          carácter a partir del cual se incluye el dato
+                          seleccionado en Campo incluir.</p></td>
+                    </tr>
+                    <tr>
+                      <td class="titletable"><p
+                          class="SUBTITULO"><span>Prototipo realce </p></td>
+                        <td><p class="PARRAFO">Campo obligatorio que posee lista
+                            de valores tipo combo, de la que debe seleccionarse
+                            entre: Propio, Thomas, Otro o Fesa, la entidad o
+                            empresa encargada de realizar el realce de los
+                            plásticos o en su defecto si se trata de una labor o
+                            procedimiento interno o propio de la
+                            entidad.</p></td>
+                      </tr>
+                      <tr>
+                        <td class="titletable"><p
+                            class="SUBTITULO"><span>Campo incluir</p></td>
+                          <td><p class="PARRAFO">ampo obligatorio que posee
+                              lista de valores tipo combo, de la que debe
+                              seleccionarse entre: Número tarjeta, Número
+                              identificación, Código cliente o Número acción, el
+                              dato que la entidad requiere incluir dentro del
+                              archivo de realce.</p>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td class="titletable"><p
+                              class="SUBTITULO"><span>Posición inical</p></td>
+                            <td><p class="PARRAFO">Campo obligatorio numérico de
+                                dos dígitos, en el cual se señala el número del
+                                carácter del registro hasta el cual se incluye
+                                el filler dentro del registro.</p></td>
+                          </tr>
+                          <tr>
+                            <td class="SUBTITULO">Longuitud campo</td>
+                            <td><p class="PARRAFO"> Campo obligatorio numérico
+                                de dos dígitos, en el cual se indica el número
+                                máximo de caracteres requeridos por el dato
+                                seleccionado.</td></p>
+                          </tr>
+                        </table>
+                        <p class="PARRAFO"><span class="PARRAFO"><span
+                              class="SUBTITULO">Actualizar:</span>
+                            Al activar ese enlace, se despliega el siguiente
+                            formulario, en el cual todos los campos son
+                            modificables:</p>
+                          <p class="TITLE"><img src="../img/PLF_010E2.PNG"></p>
+
+                        
+                        </section>
+                        <script src="../js/menu.js"></script>
+
+                        <div id="footerContainer"></div>
+                        <script>
   fetch('footer.html')
     .then(response => response.text())
     .then(html => {
       document.getElementById('footerContainer').innerHTML = html;
     });
 </script>
-</body>
+                      </body>
 
-</html>
+                    </html>

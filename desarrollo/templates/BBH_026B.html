@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="es">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>OpencardWeb®</title>
+        <link rel="stylesheet" href="../css/pages.css">
+        <link rel="stylesheet" href="../css/style.css">
+        <link rel="icon" href="../img/ACQUIRER-logo.JPG" type="image/x-icon">
+    </head>
+
+    <body>
+        <header>
+            <img class="logo" src="../img/logoBankbu_.PNG"
+                alt="Logo de Mi Empresa">
+            <div id="menuBtn">
+                <img class="TITLE" src="../img/menu.PNG" alt="Botón de Menú ">
+            </div>
+        </header>
+        <div id="menuContainer"></div>
+        <script>
+    fetch('menu.html')
+      .then(response => response.text())
+      .then(html => {
+        document.getElementById('menuContainer').innerHTML = html;
+      });
+  </script>
+        <section>
+            <div>
+                <p class="TITLE">Operadores recaudo</p>
+
+                <p class="PARRAFO">Mediante este formulario, se permite el
+                    mantenimiento de la estructura en la que se almacena la
+                    codificación de las empresas responsables por el recaudo de
+                    las tarifas del servicio de transporte masivo de pasajeros.
+                    El formulario dispone de los enlaces: Actualizar, Eliminar y
+                    Adicionar:
+
+                </p>
+                <p class="TITLE"><img src="../img/BBH_026B.PNG"></p>
+
+                <p class="PARRAFO"><span class="SUBTITULO">Adicionar:</span>Al
+                    activar ese enlace se despliega el siguiente formulario:</p>
+
+                <p class="TITLE"><img src="../img/BBH_026B1.PNG"></p>
+
+                <p class="TITLE">Descripción De Campos</p>
+                <table>
+                    <tr>
+                        <td class="titletable">
+                            <p class="SUBTITULO">Codigo</p>
+                        </td>
+                        <td>
+                            <p class="PARRAFO">Campo obligatorio, alfanumérico,
+                                que en máximo dos caracteres, permite indicar el
+                                dato que identifica a cada empresa responsable
+                                del recaudo de las tarifas del servicio de
+                                transporte masivo de pasajeros, dentro del
+                                aplicativo. </p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="titletable">
+                            <p class="SUBTITULO">Nombre Operador recaudo</p>
+                        </td>
+                        <td>
+                            <p class="PARRAFO">Campo obligatorio, alfanumérico
+                                de máximo 30 caracteres, debe contener el nombre
+                                o breve descriptivo de la empresa responsable
+                                del recaudo de las tarifas del servicio de
+                                transporte masivo de pasajeros, identificada con
+                                el dato del campo anterior.</p>
+                        </td>
+                    </tr>
+
+                </table>
+                <p class="PARRAFO"><span class="SUBTITULO">Actualizar:</span> Al
+                    activar ese enlace se despliega el siguiente formulario, en
+                    el que el único dato no modificable es el Código:</p>
+                <p class="TITLE"><img src="../img/BBH_026B2.PNG"></p>
+            </div>
+        </section>
+        <script src="../js/menu.js"></script>
+    </body>
+    <div id="footerContainer"></div>
+    <script>
+  fetch('footer.html')
+    .then(response => response.text())
+    .then(html => {
+      document.getElementById('footerContainer').innerHTML = html;
+    });
+</script>
+</html>

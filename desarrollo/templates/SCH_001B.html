@@ -4,7 +4,7 @@
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>BANKBU®</title>
+    <title>OpencardWeb®</title>
     <link rel="stylesheet" href="../css/pages.css">
     <link rel="stylesheet" href="../css/style.css">
     <link rel="icon" href="../img/ACQUIRER-logo.JPG" type="image/x-icon">
@@ -31,24 +31,24 @@
 
         <p class="TITLE">Consulta de clientes </p>
 
-        <p class="PARRAFO">Este formulario puede ser invocado desde el núcleo
-          (Core) o desde el emisor (Issuer), le permite a la entidad realizar la
-          búsqueda de un cliente o una tarjeta en la base de datos.
-          Independientemente desde donde se esté procurando la consulta, ésta se
-          puede efectuar por: tipo y número de identificación, por uno o los dos
-          nombres o apellidos, o por uno solo de estos, así como por el Número
-          tarjeta.</p>
-        <p class="PARRAFO">La opción cuenta con un filtro en el cual se ingresan
-          los criterios disponibles, y luego de activar el botón Buscar, el
-          sistema muestra los registros de clientes coincidentes con la búsqueda
-          efectuada.</p>
+        <p class="PARRAFO">Este formulario puede ser invocado desde el Núcleo o
+          desde el Emisor DB, le permite a la entidad realizar la búsqueda de un
+          cliente o una tarjeta en la base de datos. Independientemente desde
+          donde se esté procurando la consulta, ésta se puede efectuar por: tipo
+          y número de identificación, por uno o los dos nombres o apellidos, o
+          por uno solo de estos, así como por el Número tarjeta.</p>
+        <p class="PARRAFO"> La opción cuenta con un filtro en el cual se
+          ingresan los criterios disponibles, y luego de activar el botón
+          Buscar, el sistema muestra los registros de clientes coincidentes con
+          la búsqueda efectuada.
+        </p>
         <p class="TITLE"><img src="../img/SCF_001E.PNG"></p>
 
         <p class="TITLE">Descripción de campos</p>
         <table>
           <tr>
             <td class="titletable"><p class="SUBTITULO">
-                  Identificación</p></td>
+                Identificación</p></td>
             <td><p class="PARRAFO">Radio
                 button en el cual se le indica al sistema que la búsqueda
                 se
@@ -84,44 +84,37 @@
 
           <tr>
             <td class="titletable"><p class="SUBTITULO">
-                  Nombre</p></td>
-            <td><p class="PARRAFO">En
-                caso que la búsqueda se desee efectuar con base en el
-                nombre
-                y/o apellidos del cliente, en esta radio button se marca para
-                indicarle
-                al sistema el tipo de consulta que se requiere hacer.
+                Nombre</p></td>
+            <td><p class="PARRAFO">Al marcar este radio button, se le indica al
+                sistema que la búsqueda se desea efectuar con base en el nombre
+                y/o apellidos del cliente PN o Razón social para PJ, si aplica.
+
               </p></td>
           </tr>
 
           <tr>
             <td class="titletable"><p class="SUBTITULO">
-                  1er Nombre</p></td>
-            <td><p class="PARRAFO">Campo
-                alfanumérico de 60 posiciones, no obligatorio, en el cual
-                se
-                ingresa el primer nombre del cliente personasnatural o la
-                razón
-                social de la persona jurídica para la cual se desea
-                consultar
-                la información.</p></td>
-          </tr>
-
-          <tr>
-            <td class="titletable"><p class="SUBTITULO">
-                  2do Nombre</p></td>
-            <td><p class="PARRAFO">En
-                este campo alfanumérico de 25 posiciones, no obligatorio,
-                se
-                registra el segundo nombre correspondiente al cliente persona
-                natural
-                para el que se desea efectuar la consulta.
+                1er Nombre</p></td>
+            <td><p class="PARRAFO">Campo alfanumérico de 60 posiciones, no
+                obligatorio, en el cual se ingresa el primer nombre del cliente
+                PN o la razón social PJ para la cual se desea consultar la
+                información.
               </p></td>
           </tr>
 
           <tr>
             <td class="titletable"><p class="SUBTITULO">
-                  1er Apellido</p></td>
+                2do Nombre</p></td>
+            <td><p class="PARRAFO">
+                En este campo alfanumérico de 25 posiciones, no obligatorio, se
+                registra el segundo nombre correspondiente al cliente para el
+                que se desea efectuar la consulta.
+              </p></td>
+          </tr>
+
+          <tr>
+            <td class="titletable"><p class="SUBTITULO">
+                1er Apellido</p></td>
             <td><p class="PARRAFO">Campo
                 alfanumérico de 20 posiciones, no obligatorio, en el cual
                 se
@@ -133,18 +126,16 @@
 
           <tr>
             <td class="titletable"><p class="SUBTITULO">
-                  2do Apellido</p></td>
-            <td><p class="PARRAFO">Este
-                campo alfanumérico de 20 posiciones, no obligatorio,
-                permite
-                consultar en la base de datos a partir del segundo apellido del
-                cliente
-                cuando este es una persona natural. </p></td>
+                2do Apellido</p></td>
+            <td><p class="PARRAFO">Este campo alfanumérico de 20 posiciones, no
+                obligatorio, permite consultar en la base de datos a partir del
+                segundo apellido del cliente.
+              </p></td>
           </tr>
 
           <tr>
             <td class="titletable"><p class="SUBTITULO">
-                  Tarjeta</p></td>
+                Tarjeta</p></td>
             <td><p class="PARRAFO">Campo
                 alfanumérico de 23 posiciones, no obligatorio, en el cual
                 se
@@ -153,28 +144,20 @@
           </tr>
         </table>
 
-        <p class="PARRAFO">Cuando se invoca desde el core, una vez ingresados
-          los datos disponibles y se ejecuta la
-          consulta mediante el botón Buscar, el sistema muestra, en el bloque
-          Resultados, todos aquellos registros
-          de la base de datos que coinciden con los criterios seleccionados.
-          Para cada cliente que exista y aún no
-          tenga un producto asociado, en el campo <a
-            href="SCH_002B.html">número
-            identificación</a>
-          se dispone del enlace que permite ir al Detalle de la información del
-          cliente en particular.</p>
+        <p class="PARRAFO">Cuando se invoca desde el Núcleo, una vez ingresados
+          los datos disponibles y se ejecuta la consulta mediante el botón
+          Buscar, el sistema muestra, en el bloque Resultados, todos aquellos
+          registros de la base de datos que coinciden con los criterios
+          seleccionados, y cada cliente que exista, tenga o no un producto
+          asociado, en el campo <a
+            href="SCH_002B.html">Número</a> (de identificación) se dispone del enlace que permite invocar el Detalle de la información del cliente en particular.</p>
         <p class="TITLE"><img src="../img/SCF_001E3.PNG"></p>
 
-        <p class="PARRAFO">Igual comportamiento se observa cuando se invoca
-          desde el Issuer, caso en el cual, si
-          el cliente existe, en el campo
-          <a href="SCH_002B.html">número identificación</a>
+        <p class="PARRAFO">Si la Consulta clientes tarjeta débito se realiza desde el Emisor DB / Débito, caso en el cual, si el cliente existe, en el campo
+          <a href="SCH_002B.html">Número</a> (de identifación)
           se dispone del enlace que permite ir al Detalle de la información del
-          cliente en particular y, si
-          además, el cliente ya posee un producto, dicho registro se muestra en
-          el campo
-          <a href="SCH_060B.html">número tarjeta</a>
+          cliente en particular y a diferencia de lo descrito más arriba, si el cliente ya posee un producto, dicho registro se muestra en el campo
+          <a href="DBH_001B.html">número tarjeta</a>
           como enlace que permite ir a la Consulta centralizada de tarjetas.</p>
         <p class="TITLE"><img src="../img/SCF_001E4.PNG"></p>
         <div>

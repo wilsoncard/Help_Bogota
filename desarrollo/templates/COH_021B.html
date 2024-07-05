@@ -4,7 +4,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>BANKBU®</title>
+  <title>OpencardWeb®</title>
   <link rel="stylesheet" href="../css/pages.css">
   <link rel="stylesheet" href="../css/style.css">
   <link rel="icon" href="../img/ACQUIRER-logo.JPG" type="image/x-icon">
@@ -30,46 +30,36 @@
   <section>
     <div>
       
-      <p class="TITLE">Registro llaves encripción</p>
+      <p class="TITLE">Ingreso llaves de encripción</p>
 
-      <p class="PARRAFO">Esta función registra en el sistema las llaves de PIN, CVV, CVV2, PVV y TRXFER. Estas llaves
-        son compiladas y almacenadas en una librería especial, las cuales son tomadas por las rutinas que calculan PIN,
-        CVV, CVV2, y PVV, utilizadas durante los procesos de emisión de nuevas tarjetas y sobreflex.</p>
-      <p class="PARRAFO">El formulario contiene los enlaces: Actualizar,Eliminar, Adicionar y Detalle. Adicionalmente, cuenta con un filtro de búsqueda.</p>
+      <p class="PARRAFO">Mediante esta función se posibilita el ingresar al sistema las distintas llaves, tales como: PIN, ICVV, CIFRAR y PIN CHIP, entre otras. Estas llaves son compiladas y almacenadas en una librería especial, las cuales son tomadas por las rutinas que calculan PIN, ICVV, CIFRAR, y PIN CHIP, utilizadas durante los procesos de emisión de nuevas tarjetas y sobreflex. El formulario contiene los enlaces: Actualizar, Eliminar y Adicionar. Adicionalmente, cuenta con un filtro de búsqueda.</p>
+
       <p class="TITLE"><img src="../img/COF_021B1.PNG"></p>
 
-      <p class="PARRAFO"><span class="SUBTITULO">Filtro:</span>  Se pueden realizar consultas a través
-        de las siguientes opciones: </p>
-      <p class="TITLE"><img src="../img/COF_021B.PNG"></p>
 
       <table>
         <tr>
           <td class="titletable">
-            <p class="SUBTITULO">Marca</p>
+            <p class="SUBTITULO">Franquicia</p>
           </td>
           <td>
-            <p class="PARRAFO">Este
-              campo obligatorio, cuenta con lista de valores poblada previamente en la opción
-              <a href="NUH_033B.html">franquicias</a>, de la cual se selecciona la
-              marca del producto sobre el cual operarán los parámetros.
+            <p class="PARRAFO">Este campo cuenta con una lista de valores poblada previamente en la opción
+              <a href="NUH_033B.html">franquicias</a>, de la cual se selecciona la marca del producto sobre el cual se desean consulta los diferentes parámetros de llaves de encripción. 
             </p>
           </td>
         </tr>
       </table>
 
-      <p class="PARRAFO"><span class="SUBTITULO">Adicionar:</span>  Al activar ese enlace se
-        despliega un formulario con los siguientes campos:</p>
+      <p class="PARRAFO"><span class="SUBTITULO">Adicionar:</span> Antes de activar ese enlace, es necesario indicar el dato Franquicia, luego de lo cual, se despliega un formulario con los siguientes campos:</p>
       <p class="TITLE"><img src="../img/COF_021B2.PNG"></p>
 
       <table>
         <tr>
           <td class="titletable">
-            <p class="SUBTITULO">Bin</p>
+            <p class="SUBTITULO">Patrón</p>
           </td>
           <td>
-            <p class="PARRAFO">Campo
-              con lista de valores en el cual se indica el Bin al que corresponde
-              la llave que se ingresará.</p>
+            <p class="PARRAFO">Campo obligatorio en el que en máximo 10 caracteres, debe contener el tipo de llave que se ingresará.</p>
           </td>
         </tr>
         <tr>
@@ -77,51 +67,21 @@
             <p class="SUBTITULO">Llave</p>
           </td>
           <td>
-            <p class="PARRAFO">En
-              este campo con lista de valores se indica el tipo de llave que se ingresará.</p>
+            <p class="PARRAFO">Campo obligatorio en el que en máximo 16 caracteres, se debe digitar la llave secreta otorgada por la central autorizadora para la emisión de nuevas tarjetas. Dada la calidad de la información, se adecuó la captura para que no sea visible en pantalla el número de llave ingresada.</p>
           </td>
         </tr>
         <tr>
           <td class="titletable">
-            <p class="SUBTITULO">Nombre llave</p>
+            <p class="SUBTITULO">Verificacion</p>
           </td>
           <td>
-            <p class="PARRAFO">En
-              este campo indica el nombre del tipo de llave que se ingresará otorgado por el banco.</p>
+            <p class="PARRAFO">Una vez definida la llave, en este campo obligatorio en el que en máximo 16 caracteres, se debe capturar la misma información para efectos de validación de la misma con el campo inmediatamente anterior. Si se encuentra algún tipo de diferencia, se reinicia la captura.</p>
           </td>
         </tr>
-        <tr>
-          <td class="titletable">
-            <p class="SUBTITULO">Criptograma
-                </p>
-          </td>
-          <td>
-            <p class="PARRAFO">Campo
-              alfanumérico de 16 posiciones, no obligatorio, en el que se digita
-              la llave secreta otorgada por la central autorizadora para la emisión
-              de nueva tarjetas. Dada la calidad de la información, se adecuó
-              la captura para que no sea visible en pantalla el número de llave
-              ingresada. </p>
-          </td>
-        </tr>
-        <tr>
-          <td class="titletable">
-            <p class="SUBTITULO">Confirmar
-              criptograma </p>
-          </td>
-          <td>
-            <p class="PARRAFO">Una
-              vez definida la llave, en esta campo se debe ingresar nuevamente la
-              misma información para efectos de validación con el campo
-              inmediatamente anterior. Si se encuentra algún tipo de diferencia,
-              se reinicia la captura. </p>
-          </td>
-        </tr>
+      
       </table>
       <p class="PARRAFO"><span class="PARRAFO"><span class="SUBTITULO">Actualizar:</span> 
-           Al activar ese enlace  se despliega un formulario
-          en el cual los únicos campos modificables son: Bin, Criptograma 
-            </span>, y Confirmar criptograma.</p>
+        Al activar ese enlace se despliega un formulario en el cual el único campo no modificable e Franquicia: </p>
       <p class="TITLE"><img src="../img/COF_021B3.PNG"></p>
 
   </section>

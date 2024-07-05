@@ -4,7 +4,7 @@
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>BANKBU®</title>
+    <title>OpencardWeb®</title>
     <link rel="stylesheet" href="../css/pages.css">
     <link rel="stylesheet" href="../css/style.css">
     <link rel="icon" href="../img/ACQUIRER-logo.JPG" type="image/x-icon">
@@ -31,70 +31,391 @@
 
         <p class="TITLE">Generar novedad</p>
 
-        <p class="PARRAFO">Esta opción invocada desde el
-          rol de núcleo (core) permite hacer el llamado a los diversos
-          formularios
-          desde los cuales se ingresan las modificaciones a la
-          información relacionada
-          con el cliente o tarjetahabiente, facilitando a la entidad mantener
-          actualizados
-          los datos de sus clientes.
+        <p class="PARRAFO">Esta opción invocada desde el Núcleo / Información
+          cliente, permite hacer el llamado a los diversos formularios desde los
+          cuales se ingresan las modificaciones a la información relacionada con
+          el cliente o tarjetahabiente, facilitando a la entidad mantener
+          actualizados los datos de los mismos.
         </p>
-      <p class="TITLE"><img src="../img/SCF_075E.PNG"></p>
-      <p class="PARRAFO">A diferencia de la mayoría de los formularios,
-        este no contiene opciones adicionales y está conformado por tres
-        campos
-        en los cuales se registran los datos requeridos por el sistema para el
-        ingreso
-        de la novedad.</p>
-      <p class="TITLE">Descripción de campos</p>
-      <table>
-        <tr>
-          <td class="titletable"><p class="SUBTITULO"><span>
+        <p class="TITLE"><img src="../img/SCF_075E.PNG"></p>
+        <p class="PARRAFO">A diferencia de la mayoría de los formularios,
+          este no contiene opciones adicionales y está conformado por tres
+          campos
+          en los cuales se registran los datos requeridos por el sistema para el
+          ingreso
+          de la novedad.</p>
+        <p class="TITLE">Descripción de campos</p>
+        <table>
+          <tr>
+            <td class="titletable"><p class="SUBTITULO">
                 Tipo de identificación</p></td>
-          <td><p class="PARRAFO">Campo
-              obligatorio tipo combo del cual se selecciona el <a
-                href="NUH_008B.html">tipo
-                de documento de identificación</a> correspondiente al
-              cliente
-              para el cual se desea generar la novedad.</p></td>
-        </tr>
-
-        <tr>
-          <td class="titletable"><p class="SUBTITULO"><span>Número
+            <td><p class="PARRAFO">Campo obligatorio que posee lista de valores
+                tipo combo, de la cual el usuario debe seleccionar el <a
+                  href="NUH_008B.html">tipo
+                  de documento de identificación</a> correspondiente al cliente
+                para el cual se desea generar la novedad.</p></td>
+          </tr>
+          <tr>
+            <td class="titletable"><p class="SUBTITULO">Número
                 de identificación</p></td>
-          <td><p class="PARRAFO">Este
-              campo obligatorio de hasta 16 posiciones en el cual se ingresa el
-              número
-              del documento de identificación del cliente.</p></td>
-        </tr>
-
-        <tr>
-          <td class="titletable"><p class="SUBTITULO"><span>Tipo
+            <td><p class="PARRAFO">Este campo obligatorio de hasta 16 posiciones
+                en el cual se ingresa el número del documento de identificación
+                del cliente.
+              </p></td>
+          </tr>
+          <tr>
+            <td class="titletable"><p class="SUBTITULO">Tipo
                 de actualización</p></td>
-          <td><p class="PARRAFO">Campo
-              obligatorio tipo combo del cual se selecciona el <a
-                href="NUH_017B.html">tipo
-                de novedad</a> que se desea generar para el cliente.</p>
-          </td>
-        </tr>
-      </table>
-      <p class="PARRAFO">Una vez ingresados los datos requeridos y mediante
-        el botón buscar, el sistema invoca el formulario correspondiente
-        de
-        acuerdo con el tipo de novedad seleccionada por el usuario.</p>
-      <div>
-      </section>
-      <script src="../js/menu.js"></script>
+            <td><p class="PARRAFO">Campo
+                obligatorio tipo combo del cual se selecciona el <a
+                  href="NUH_017B.html">tipo
+                  de novedad</a> que se desea generar para el cliente.</p>
+            </td>
+          </tr>
+        </table>
+        <p class="PARRAFO">Una vez ingresados los datos válidos requeridos y
+          mediante el botón Buscar, el sistema invoca el formulario
+          correspondiente de acuerdo con el tipo de novedad seleccionada por el
+          usuario, el cual puede ser: Datos de identificación, Datos básicos
+          persona natural, Datos básicos persona jurídica o Bloqueos
+          persona.</p>
 
-      <div id="footerContainer"></div>
-      <script>
+        <p class="PARRAFO"><span class="SUBTITULO">Datos de
+            identificación:</span> Al seleccionar este tipo de
+          novedad, el sistema despliega el siguiente formulario, en el que, el
+          único campo no modificable es Tipo persona:</p>
+
+        <p class="TITLE"><img src="../img/SCF_075E2.PNG"></p>
+
+        <p class="TITLE">Descripción de campos</p>
+        <table>
+          <tr>
+            <td class="titletable"><p class="SUBTITULO">
+                Nombres</p></td>
+            <td><p class="PARRAFO">
+                Dupla de campos, el primero obligatorio que, en máximo 60
+                caracteres, se debe ingresar el nuevo o correcto primer nombre
+                de la persona natural. Para el segundo nombre de persona natural
+                se dispone de 25 caracteres únicamente. </p></td>
+          </tr>
+          <tr>
+            <td class="titletable"><p class="SUBTITULO">Apellidos</p></td>
+            <td><p class="PARRAFO">Dupla de campos, el primero obligatorio,
+                que en máximo 20 caracteres, cada uno, dentro del(os) cual(es)
+                se registra el(os) nuevo(s) o correcto(s) apellido(s) de la
+                persona natural.
+              </p></td>
+          </tr>
+          <tr>
+            <td class="titletable"><p class="SUBTITULO">Tipo
+                identificación</p></td>
+            <td><p class="PARRAFO">Campo obligatorio, que posee lista de
+                valores tipo combo, de la cual debe seleccionarse, el nuevo o
+                correcto tipo de identificación asociado al cliente, en
+                reemplazo del actual.</p>
+            </td>
+          </tr>
+
+          <tr>
+            <td class="titletable"><p class="SUBTITULO">Número
+                identificación</p></td>
+            <td><p class="PARRAFO">Campo obligatorio, que en máximo 16 dígitos
+                debe contener el nuevo o correcto número del documento de
+                identificación asociado al cliente, para el que se está
+                efectuando la modificación de sus datos.</p>
+            </td>
+          </tr>
+          <tr>
+            <td class="titletable"><p class="SUBTITULO">Ciudad
+                Expedición</p></td>
+            <td><p class="PARRAFO">Campo no obligatorio, que permite
+                seleccionar de la lista de valores poblada en <a
+                  href="NUH_003B.html">información
+                  geopolítica</a>, el nuevo o correcto lugar de expedición del
+                documento de identificación del cliente.</p>
+            </td>
+          </tr>
+          <tr>
+            <td class="titletable"><p class="SUBTITULO">Sexo</p></td>
+            <td><p class="PARRAFO">Campo obligatorio, en el que mediante una
+                lista de valores tipo combo, permite modificar de Femenino a
+                Masculino, el género del cliente.</p>
+            </td>
+          </tr>
+
+        </table>
+        <p class="PARRAFO"><span class="SUBTITULO">Datos básicos persona
+            natural:</span>
+          Al seleccionar este tipo de novedad, el sistema despliega el
+          siguiente formulario, en el que, todos los campos son modificables:
+        </p>
+        <p class="TITLE"><img src="../img/SCF_075E3.PNG"></p>
+
+        <p class="TITLE">Descripción de campos</p>
+        <table>
+          <tr>
+            <td class="titletable"><p class="SUBTITULO">
+                Estado Civil</p></td>
+            <td><p class="PARRAFO">
+                Campo no obligatorio, en el que mediante una lista de valores
+                tipo combo, de la cual seleccionar la nueva o correcta condición
+                que defina el estado civil del cliente.
+
+              </p></td>
+          </tr>
+          <tr>
+            <td class="titletable"><p class="SUBTITULO">Fecha
+                Nacimiento</p></td>
+            <td><p class="PARRAFO">Campo no obligatorio, en el que, mediante la
+                funcionalidad de un calendario, permite registrar la nueva o
+                correcta fecha de nacimiento del cliente.
+
+              </p></td>
+          </tr>
+          <tr>
+            <td class="titletable"><p class="SUBTITULO">Lugar
+                Nacimiento</p></td>
+            <td><p class="PARRAFO">Campo no obligatorio, que permite seleccionar
+                de la lista de valores poblada en <a
+                  href="NUH_003B.html">información
+                  geopolítica</a>, el
+                nuevo o correcto lugar de nacimiento del cliente.</p>
+            </td>
+          </tr>
+
+          <tr>
+            <td class="titletable"><p class="SUBTITULO">Profesión</p></td>
+            <td><p class="PARRAFO">Este campo no obligatorio, permite
+                seleccionar de una lista de valores el nuevo o correcto tipo o
+                nivel de estudios indicado por el cliente.
+
+              </p>
+            </td>
+          </tr>
+          <tr>
+            <td class="titletable"><p class="SUBTITULO">Actividad económica
+              </p></td>
+            <td><p class="PARRAFO">Campo no obligatorio, permite seleccionar de
+                una lista de valores la nueva o correcta <a
+                  href="NUH_032B.html">actividad económica</a> o
+                código CIIU específico, señalado por el cliente.</p>
+            </td>
+          </tr>
+          <tr>
+            <td class="titletable"><p class="SUBTITULO">Empleo independiente
+              </p></td>
+            <td><p class="PARRAFO">Campo no obligatorio, que permite seleccionar
+                entre Si o No, la nueva o correcta condición de dependencia
+                laboral o fuente de ingresos informada por el cliente.
+              </p>
+            </td>
+          </tr>
+          <tr>
+            <td class="titletable"><p class="SUBTITULO">Personas a Cargo
+              </p></td>
+            <td><p class="PARRAFO">En este campo numérico de 2 dígitos, no
+                obligatorio, se registra el nuevo o correcto número de personas
+                que dependen económicamente del cliente.
+
+              </p>
+            </td>
+          </tr>
+          <tr>
+            <td class="titletable"><p class="SUBTITULO">Estrato
+              </p></td>
+            <td><p class="PARRAFO">Campo numérico de 1 posición, no obligatorio,
+                que permite capturar la información correspondiente a la nueva o
+                correcta estratificación social a la cual pertenece el cliente.
+              </p>
+            </td>
+          </tr>
+        </table>
+        <p class="PARRAFO"><span class="SUBTITULO">Datos básicos persona
+            jurídica:</span>Al seleccionar este
+          tipo de novedad, el sistema despliega el siguiente formulario, en el
+          que, todos los campos son modificables:
+
+        </p>
+        <p class="TITLE"><img src="../img/SCF_075E4.PNG"></p>
+
+        <p class="TITLE">Descripción de campos</p>
+        <table>
+          <tr>
+            <td class="titletable"><p class="SUBTITULO">
+                Representante legal
+              </p></td>
+            <td><p class="PARRAFO">
+                Campo alfanumérico, no obligatorio, permite registrar en máximo
+                60 caracteres, el nuevo o correcto nombre de la persona que hace
+                las veces de representante legal de la sociedad.
+              </p></td>
+          </tr>
+          <tr>
+            <td class="titletable"><p class="SUBTITULO">Escritura</p></td>
+            <td><p class="PARRAFO">Campo alfanumérico, no obligatorio, permite
+                registrar en máximo 10 caracteres, el nuevo o correcto número de
+                la escritura pública, mediante la cual se constituyó la
+                sociedad.
+
+              </p></td>
+          </tr>
+          <tr>
+            <td class="titletable"><p class="SUBTITULO">Notaría</p></td>
+            <td><p class="PARRAFO">Campo alfanumérico, no obligatorio, permite
+                registrar en máximo 10 caracteres, el nuevo o correcto número la
+                notaría ante la cual se elevó la escritura pública de
+                constitución de la sociedad.
+              </p>
+            </td>
+          </tr>
+
+          <tr>
+            <td class="titletable"><p class="SUBTITULO">Fecha de constitución
+              </p></td>
+            <td><p class="PARRAFO">Campo no obligatorio que ofrece la
+                funcionalidad de un calendario, y permite definir, en formato
+                AAAA-MM-DD, la nueva o correcta fecha de constitución de la
+                sociedad.
+              </p>
+            </td>
+          </tr>
+          <tr>
+            <td class="titletable"><p class="SUBTITULO">Ubicación</p></td>
+            <td><p class="PARRAFO">Campo no obligatorio, que permite seleccionar
+                de la lista de valores poblada a través de opción <a
+                  href="NUH_003B.html">Ubicación
+                  geográfica</a>, el nuevo o correcto municipio, en el que se
+                encuentra localizada la sede principal o domicilio de la
+                sociedad.</p>
+            </td>
+          </tr>
+          <tr>
+            <td class="titletable"><p class="SUBTITULO">Actividad
+                económica</p></td>
+            <td><p class="PARRAFO">Campo no obligatorio, que permite seleccionar
+                de la lista de valores poblada a través de opción<a
+                  href="NUH_032B.html"> Actividad
+                  económica</a>, la nueva o correcta actividad principal
+                desarrollada
+                por la sociedad, de acuerdo con su objeto social.</p>
+            </td>
+          </tr>
+          <tr>
+            <td class="titletable"><p class="SUBTITULO">Tipo de
+                Sociedad</p></td>
+            <td><p class="PARRAFO">Campo no obligatorio que posee lista de
+                valores tipo combo, de la que es posible seleccionar el nuevo o
+                correcto <a href="NUH_038B.html">tipo de sociedad</a> comercial
+                bajo el cual se encuentra
+                constituido el cliente persona jurídica.</p>
+            </td>
+          </tr>
+
+        </table>
+
+        <p class="PARRAFO"><span class="SUBTITULO">Bloqueos persona:</span>
+          Al seleccionar este tipo de novedad, el sistema despliega el siguiente
+          formulario, en el que, si el usuario selecciona el código
+          correspondiente a INCAPACIDAD TOTAL O PARCIAL de la lista de valores
+          del campo Bloqueo actual, el sistema solo espera que se active el
+          botón Salvar, si por el contrario selecciona el código asociado a
+          FALLECIDO, se despliegan los campos adicionales abajo ilustrados:
+
+        </p>
+        <p class="TITLE"><img src="../img/SCF_075E5.PNG"></p>
+        <p class="TITLE"><img src="../img/SCF_075E6.PNG"></p>
+
+        <p class="TITLE">Descripción de campos</p>
+        <table>
+          <tr>
+            <td class="titletable"><p class="SUBTITULO">
+                Bloqueo Actual
+              </p></td>
+            <td><p class="PARRAFO">
+                Campo no obligatorio en el que, mediante una lista de valores,
+                se posibilita seleccionar entre FALLECIDO o INCAPACIDAD TOTAL O
+                PARCIAL, el tipo de bloqueo persona a aplicar.
+
+              </p></td>
+          </tr>
+          <tr>
+            <td class="titletable"><p class="SUBTITULO">Fecha Bloqueo
+                Actual</p></td>
+            <td><p class="PARRAFO">Campo obligatorio, por defecto despliega la
+                fecha del sistema, en formato AAAA-MM-DD y no puede ser
+                modificada.
+
+              </p></td>
+          </tr>
+          <tr>
+            <td class="titletable"><p class="SUBTITULO">Fecha Defunción</p></td>
+            <td><p class="PARRAFO">Campo obligatorio, en el que, mediante la
+                funcionalidad de un calendario, permite registrar en formato
+                AAAA-MM-DD la fecha en la que se produjo el deceso del cliente.
+
+              </p>
+            </td>
+          </tr>
+
+          <tr>
+            <td class="titletable"><p class="SUBTITULO">Número Acta
+              </p></td>
+            <td><p class="PARRAFO">Campo alfanumérico de máximo 20 caracteres,
+                obligatorio, en el que debe registrarse el dato que identifica
+                el soporte o acta de defunción del cliente.
+
+              </p>
+            </td>
+          </tr>
+          <tr>
+            <td class="titletable"><p class="SUBTITULO">Lugar de
+                Fallecimiento</p></td>
+            <td><p class="PARRAFO">Campo obligatorio, que permite seleccionar de
+                la lista de valores poblada en <a
+                  href="NUH_003B.html">información geopolítica</a>, el
+                municipio en que falleció el cliente.</p>
+            </td>
+          </tr>
+          <tr>
+            <td class="titletable"><p class="SUBTITULO">Fecha Envio a
+                Seguro</p></td>
+            <td><p class="PARRAFO">Campo no obligatorio, en el que, mediante la
+                funcionalidad de un calendario, permite registrar en formato
+                AAAA-MM-DD la fecha en la que se notifica a la compañía de
+                seguros la reclamación por el deceso del cliente.
+
+              </p>
+            </td>
+          </tr>
+          <tr>
+            <td class="titletable"><p class="SUBTITULO">Fecha Respuesta Seguro
+              </p></td>
+            <td><p class="PARRAFO">Campo no obligatorio, en el que, mediante la
+                funcionalidad de un calendario, permite registrar en formato
+                AAAA-MM-DD la fecha en la que la compañía de seguros da
+                respuesta a la reclamación por el deceso del cliente.
+              </p>
+            </td>
+          </tr>
+        </table>
+        <p class="PARRAFO">Una vez el usuario confirme o envíe los datos, de
+          cualquiera de las anteriores novedades, mediante el botón Salvar, y el
+          sistema valide su consistencia, retorna el siguiente mensaje
+          notificando la aplicación de la misma:</p>
+          <p class="TITLE"><img src="../img/SCF_075E7.PNG"></p>
+
+      </div>
+    </section>
+    <script src="../js/menu.js"></script>
+
+    <div id="footerContainer"></div>
+    <script>
   fetch('footer.html')
     .then(response => response.text())
     .then(html => {
       document.getElementById('footerContainer').innerHTML = html;
     });
 </script>
-    </body>
+  </body>
 
-  </html>
+</html>
