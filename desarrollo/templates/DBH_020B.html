@@ -13,9 +13,9 @@
   <body>
 
     <header>
-      <img class="logo" src="../img/logoBankbu_.PNG" alt="Logo de Mi Empresa">
+      <img loading="lazy" rel="preload"  class="logo" src="../img/logoBankbu_.webp" alt="Logo de Mi Empresa">
       <div id="menuBtn">
-        <img class="TITLE" src="../img/menu.PNG" alt="Botón de Menú ">
+        <img loading="lazy" rel="preload"  class="TITLE" src="../img/menu.PNG" alt="Botón de Menú ">
       </div>
     </header>
     <div id="menuContainer"></div>
@@ -30,63 +30,53 @@
     <section>
       <div>
 
-        <p class="TITLE">Generación de novedades débito</p>
+        <p class="TITLE">Generación de novedades de tarjetas</p>
 
-        <p class="PARRAFO">Mediante esta opción la entidad
-          tiene puede ingresar las modificaciones a la información relacionada
-          con las tarjetas débito pertenecientes a los clientes. </p>
-        <p class="PARRAFO">Al ingresar a la opción se muestra
-          un formulario que le permite al usuario seleccionar el tipo de novedad
-          y el
-          número de la tarjeta a modificar.</p>
-        <p class="TITLE"><img src="../img/DBF_020E.PNG"298"></p>
+        <p class="PARRAFO">Mediante esta opción se habilita a la entidad
+          realizar dos novedades de tarjeta débito, Cambio bloqueo (del
+          plástico) o el Cambio sucursal. Al ingresar a la opción se muestra un
+          formulario que le permite al usuario seleccionar el tipo de novedad y
+          el número de la tarjeta a modificar.
+
+        </p>
+        <p class="TITLE"><img loading="lazy" rel="preload"  src="../img/DBF_020E.PNG"></p>
 
         <p class="TITLE">Descripción de campos</p>
         <div>
           <table>
             <tr>
               <td class="titletable"><p class="SUBTITULO">Novedad
-                    débito </p></td>
-                <td><p class="PARRAFO">Campo
-                    obligatorio tipo combo que permite seleccionar la <a
-                      href="NUH_017B.html">novedad</a>
-                    a aplicar a la tarjeta débito </p></td>
-              </tr>
-              <tr>
-                <td class="titletable">
-                  <p class="SUBTITULO">Número
-                      de tarjeta</p></td>
-                  <td><p class="PARRAFO">En
-                      este campo alfanumérico de hasta 23 posiciones,
-                      obligatorio,
-                      se digita el número de la tarjeta débito para la que
-                      se desea aplicar la novedad.</p></td>
-                </tr>
-              </table>
-            </div>
-            <p class="PARRAFO">Una vez seleccionadas la novedad y el número
-              de tarjeta, mediante el botón Aplicar una vez que el sistema hace
-              las
-              validaciones correspondientes se invoca el formulario donde se
-              ingresan los
-              datos particulares de cada novedad: <a
-                href="DBH_027B.html">Bloqueo
-                plástico TD</a>, <a href="DBH_022B.html">Adición
-                / Retiro cuenta</a>, <a href="DBH_022B1.html">Cambio de
-                cuenta</a>,
-              <a href="DBH_022B2.html">Cambio categoría cuenta</a>,
-              <a href="DBH_030B.html">Asociar cliente</a>.</p>
-
-            <div>
-            </section>
-            <script src="../js/menu.js"></script>
-          </body>
-          <div id="footerContainer"></div>
-          <script>
+                </p></td>
+              <td><p class="PARRAFO">Campo obligatorio en el que se puede
+                  ingresar o seleccionar uno de los dos registros, de la lista
+                  de valores, poblada a partir de la opción <a
+                    href="NUH_017B.html">Novedades administrativas</a>
+                  a aplicar a la tarjeta débito </p></td>
+            </tr>
+            <tr>
+              <td class="titletable">
+                <p class="SUBTITULO">Número
+                  de tarjeta</p></td>
+              <td><p class="PARRAFO">En este campo alfanumérico de hasta 23
+                  posiciones, obligatorio, se digita el número de la tarjeta
+                  débito, con o sin los ceros a la izquierda, para la que se
+                  desea aplicar el cambio o novedad.</p></td>
+            </tr>
+          </table>
+        </div>
+        <p class="PARRAFO">Una vez seleccionada la novedad y el número de
+          tarjeta débito, al activar el botón Aplicar, se despliega un nuevo
+          formulario, que puede ser <a href="DBH_027B.html">Cambio bloqueo</a> o <a href="DBH_020B1.html">Cambio sucursal</a>.</p>
+        </div>
+        </section>
+        <script src="../js/menu.js"></script>
+      </body>
+      <div id="footerContainer"></div>
+      <script>
   fetch('footer.html')
     .then(response => response.text())
     .then(html => {
       document.getElementById('footerContainer').innerHTML = html;
     });
 </script>
-        </html>
+    </html>

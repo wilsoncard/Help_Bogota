@@ -1,0 +1,1124 @@
+<!DOCTYPE html>
+<html lang="es">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>OpencardWeb®</title>
+
+        <link rel="stylesheet" href="../css/pages.css">
+        <link rel="stylesheet" href="../css/style.css">
+        <link rel="icon" href="../img/ACQUIRER-logo.JPG" type="image/x-icon">
+    </head>
+
+    <body>
+
+        <header>
+            <img loading="lazy" rel="preload"  class="logo" src="../img/logoBankbu_.webp"
+                alt="Logo de Mi Empresa">
+            <div id="menuBtn">
+                <img loading="lazy" rel="preload"  class="TITLE" src="../img/menu.PNG" alt="Botón de Menú ">
+            </div>
+        </header>
+        <div id="menuContainer"></div>
+        <script>
+    fetch('menu.html')
+      .then(response => response.text())
+      .then(html => {
+        document.getElementById('menuContainer').innerHTML = html;
+      });
+  </script>
+
+        <section>
+            <div>
+
+                <p class="TITLE">Consulta pendientes Tx retirada, devueltas,
+                    castigadas.
+                </p>
+
+                <p class="PARRAFO">Mediante esta función se habilita la consulta
+                    de las transacciones que, por efecto de inconsistencias en
+                    sus datos, los validadores las enviaron a <a
+                        href="INH_004B.html">Depósitos
+                        electrónicos</a>
+                    o <a href="INH_008B5.html">Depósitos manuales</a>
+                    y, la decisión o solución fue: Retirarlas, Devolverlas o
+                    Castigarlas. La información muestra datos relacionados con
+                    el origen o fuente de la transacción, valores monetarios,
+                    características de la transacción e información del
+                    establecimiento de comercio en que se realizó;
+                    adicionalmente muestra los detalles asociados con la entidad
+                    receptora y destino de la transacción, finalizando con datos
+                    referentes a las transacciones de pago.</p>
+                <p class="PARRAFO">El formulario contiene el enlace: Detalle y
+                    un filtro de búsqueda.</p>
+                <p class="TITLE"><img loading="lazy" rel="preload"  src="../img/INF_017B.PNG"></p>
+
+                <p class="PARRAFO"><span class="SUBTITULO">Filtro:</span> Se
+                    pueden
+                    realizar consultas a través
+                    de las siguientes opciones: </p>
+                <p class="TITLE"><img loading="lazy" rel="preload"  src="../img/INF_017B1.PNG"></p>
+
+                <table>
+                    <tr>
+                        <td class="titletable"><p class="SUBTITULO">Fecha
+                                proceso </p></td>
+                        <td><p class="PARRAFO">Campo que mediante la
+                                funcionalidad de un
+                                calendario, permite ingresar cualquier dato
+                                válido con el
+                                formato DD-MM-AAAA, como criterio de fecha de
+                                proceso para la
+                                cual consultar los registros en este histórico
+                                de movimiento
+                                pendiente.</p></td>
+                    </tr>
+                    <tr>
+                        <td class="titletable"><p
+                                class="SUBTITULO">Origen</p></td>
+                        <td><p class="PARRAFO">Campo que permite digitar el
+                                código del
+                                <a href="NUH_027B.html">origen</a> de
+                                movimiento a consultar o seleccionarlo de la
+                                lista de valores
+                                adjunta.</p></td>
+                    </tr>
+                    <tr>
+                        <td class="titletable"><p
+                                class="SUBTITULO">Tarjeta</p></td>
+                        <td><p class="PARRAFO">Campo permite ingresar cualquier
+                                valor
+                                alfanumérico de 23 caracteres con el número de
+                                la tarjeta para
+                                la cual consultar el histórico de movimiento
+                                pendiente que pueda
+                                existir, el dato ingresado puede o no llevar los
+                                ceros a la
+                                izquierda.</p></td>
+                    </tr>
+                    <tr>
+                        <td class="titletable"><p class="SUBTITULO">Transacción
+                                origen </p></td>
+                        <td><p class="PARRAFO">Lista de valores que permite
+                                ingresar
+                                cualquier valor alfanumérico de máximo 6
+                                caracteres. El filtro
+                                de Transacción origen solo tendrá información
+                                para consulta
+                                cuando el usuario haya diligenciado el Origen,
+                                de lo contrario,
+                                el sistema no permitirá ningún dato al no tener
+                                como armar la
+                                lista de valores</p></td>
+                    </tr>
+                    <tr>
+                        <td class="titletable"><p class="SUBTITULO">Valor
+                                total </p></td>
+                        <td><p class="PARRAFO">Para
+                                este campo el sistema admite cualquier dato
+                                numérico de máximo
+                                14 dígitos, 12 enteros y dos decimales.</p></td>
+                    </tr>
+                    <tr>
+                        <td class="titletable"><p class="SUBTITULO">Fecha
+                                comprobante </p></td>
+                        <td><p class="PARRAFO">Este campo, mediante la
+                                funcionalidad de un
+                                calendario, permite ingresar cualquier dato
+                                válido con el
+                                formato DD-MM-AAAA, como criterio de fecha en la
+                                que se efectuó
+                                la utilización para la cual consultar los
+                                registros del
+                                histórico de movimiento pendiente.</p></td>
+                    </tr>
+                    <tr>
+                        <td class="titletable"><p class="SUBTITULO">Causal
+                            </p></td>
+                        <td><p class="PARRAFO">Campo que posee lista de valores
+                                poblada en
+                                Causales de <a href="NUH_016B.html">rechazo de
+                                    transacciones</a>
+                                de la cual se puede seleccionar aquella por la
+                                cual se desea
+                                realizar la consulta. </tr>
+                        </table>
+
+                        <p class="PARRAFO"><span class="SUBTITULO"><a
+                                    name="Detalle"></a>Detalle:</span>
+                            Si el usuario invoca la opción Detalle se despliega
+                            un formulario con todos campos que se describen a
+                            continuación. Todos los datos que aparecen al
+                            ingresar al formulario son desplegados por defecto,
+                            brindan información básica tanto de la fuente u
+                            origen de la causal que motivó su no aplicación,
+                            como también información monetaria y de
+                            identificación.</p>
+                        <p class="TITLE">Recepción</p>
+                        <p class="TITLE"><img loading="lazy" rel="preload" 
+                                src="../img/INF_008B2-PCh.PNG"></p>
+
+                        <table>
+                            <tr>
+                                <td class="titletable"><p
+                                        class="SUBTITULO">Origen</p></td>
+                                <td><p class="PARRAFO">Campos
+                                        que despliegan tanto el código como el
+                                        nombre del origen o
+                                        fuente
+                                        de transacciones dentro del que se
+                                        incluía la transacción
+                                        enviada a movimiento pendiente.</p></td>
+                            </tr>
+                            <tr>
+                                <td class="titletable"><p
+                                        class="SUBTITULO">Transacción
+                                        origen </p></td>
+                                <td><p class="PARRAFO">Despliega
+                                        tanto el código como el nombre asociado
+                                        a cada tipo o clase
+                                        de
+                                        transacción enviada a pendiente
+                                        contenida dentro del archivo
+                                        del movimiento con base en la
+                                        codificación determinada por
+                                        las
+                                        franquicias y parametrizada mediante la
+                                        opción <a
+                                            href="NUH_027B.html">Orígenes
+                                            de transacciones</a> del
+                                        Núcleo.</p></td>
+                            </tr>
+                            <tr>
+                                <td class="titletable"><p
+                                        class="SUBTITULO">Fecha
+                                        proceso <span></p></td>
+                                    <td><p class="PARRAFO">Campo
+                                            con formato YYYY-MM-DD ilustra la
+                                            fecha en que se efectuó
+                                            el
+                                            proceso del archivo en que viajó la
+                                            transacción enviada
+                                            a Movimiento pendiente.</p></td>
+                                </tr>
+                                <tr>
+                                    <td class="titletable"><p
+                                            class="SUBTITULO">Fecha
+                                            consignación <span></p></td>
+                                        <td><p class="PARRAFO">Contiene
+                                                la fecha en formato YYYY-MM-DD
+                                                en la que el
+                                                establecimiento
+                                                realizó
+                                                la consignación de los
+                                                comprobantes o ingresó el
+                                                depósito
+                                                electrónico con la transacción
+                                                de consumo o
+                                                utilización.</p></td>
+                                    </tr>
+                                    <tr>
+                                        <td class="titletable"><p
+                                                class="SUBTITULO">Secuencia
+                                                recepción </p></td>
+                                        <td><p class="PARRAFO">Campo
+                                                de salida que ilustra el número
+                                                con el que se identifica
+                                                el
+                                                cargue
+                                                de archivos o integración del
+                                                movimiento ingresado por
+                                                un
+                                                mismo
+                                                origen para una misma fecha de
+                                                proceso.</p></td>
+                                    </tr>
+                                    <tr>
+                                        <td class="titletable"><p
+                                                class="SUBTITULO">Número
+                                                paquete </p></td>
+                                        <td><p class="PARRAFO">Campo
+                                                que ilustra el número del
+                                                paquete que identifica el
+                                                movimiento
+                                                por clase o tipo de transacción,
+                                                lo que facilita su
+                                                ubicación
+                                                en caso de ser
+                                                necesario.</p></td>
+                                    </tr>
+                                    <tr>
+                                        <td class="titletable"><p
+                                                class="SUBTITULO">Moneda</p></td>
+                                        <td><p class="PARRAFO">Despliega
+                                                el nombre oficial de la <a
+                                                    href="NUH_005B.html">Moneda</a>
+                                                que identifica
+                                                la moneda original de la
+                                                transacción.</p></td>
+                                    </tr>
+                                    <tr>
+                                        <td class="titletable"><p
+                                                class="SUBTITULO">Sucursal</p></td>
+                                        <td><p class="PARRAFO">Campo
+                                                de salida que despliega el
+                                                nombre de la oficina por
+                                                medio de
+                                                la que
+                                                ingresó el movimiento.</p></td>
+                                    </tr>
+                                </table>
+                                <p class="TITLE">Valores</p>
+                                <p class="TITLE"><img loading="lazy" rel="preload" 
+                                        src="../img/INF_008B3.PNG"></p>
+                                <table>
+                                    <tr>
+                                        <td class="titletable"><p
+                                                class="SUBTITULO">Compras
+                                            </p></td>
+                                        <td><p class="PARRAFO">Muestra
+                                                el monto de la transacción de
+                                                utilización o consumo sin
+                                                incluir el valor de la propina
+                                                concedida por el
+                                                tarjetahabiente.</p></td>
+                                    </tr>
+                                    <tr>
+                                        <td class="titletable"><p
+                                                class="SUBTITULO">Propinas
+                                            </p></td>
+                                        <td><p class="PARRAFO">Refleja
+                                                el monto de la propina otorgada
+                                                por el cliente.</p></td>
+                                    </tr>
+                                    <tr>
+                                        <td class="titletable"><p
+                                                class="SUBTITULO">Valor IVA
+                                            </p></td>
+                                        <td><p class="PARRAFO">Refleja el valor
+                                                cobrado al cliente por concepto
+                                                de impuesto al valor
+                                                agregado.</p></td>
+                                    </tr>
+                                    <tr>
+                                        <td class="titletable"><p
+                                                class="SUBTITULO">Valor INC
+                                            </p></td>
+                                        <td><p class="PARRAFO">Refleja el valor
+                                                cobrado al cliente por concepto
+                                                de impuesto nacional al
+                                                consumo.</p></td>
+                                    </tr>
+                                    <tr>
+                                        <td class="titletable"><p
+                                                class="SUBTITULO">Total
+                                            </p></td>
+                                        <td><p class="PARRAFO">Despliega
+                                                el valor bruto de la
+                                                transacción, esto es, valor del
+                                                consumo
+                                                o utilización más valor
+                                                propina.</p></td>
+                                    </tr>
+                                    <tr>
+                                        <td class="titletable"><p
+                                                class="SUBTITULO">Descuento </p></td>
+                                        <td><p class="PARRAFO">Contiene
+                                                el valor deducido al
+                                                establecimiento al liquidarle la
+                                                comisión
+                                                o descuento sobre el valor del
+                                                consumo realizado por el
+                                                cliente.</p></td>
+                                    </tr>
+                                    <tr>
+                                        <td class="titletable"><p
+                                                class="SUBTITULO">Intercambio </p></td>
+                                        <td><p class="PARRAFO">Muestra
+                                                el valor neto de la transacción,
+                                                esto es, valor del
+                                                consumo
+                                                o
+                                                utilización más valor propina
+                                                menos valor
+                                                descuento.</p></td>
+                                    </tr>
+                                    <tr>
+                                        <td class="titletable"><p
+                                                class="SUBTITULO">Valor
+                                                rete-iva </p></td>
+                                        <td><p class="PARRAFO">Campo
+                                                que despliega el monto retenido
+                                                por la entidad
+                                                adquirente
+                                                por dicho
+                                                concepto acorde con los
+                                                parámetros correspondientes
+                                                (%base
+                                                retención
+                                                y %rete-iva) definidos en <a
+                                                    href="ESH_006B.html">Información
+                                                    de establecimientos</a>, o
+                                                en <a
+                                                    href="ESH_002B.html">Tipos
+                                                    de servicio</a>
+                                                o en <a
+                                                    href="NUH_055B.html">Parámetros
+                                                    operativos</a>.</p></td>
+                                    </tr>
+                                    <tr>
+                                        <td class="titletable"><p
+                                                class="SUBTITULO">Valor
+                                                retefuente </p></td>
+                                        <td><p class="PARRAFO">Contiene
+                                                algún valor si el <a
+                                                    href="ESH_006B.html">establecimiento</a>
+                                                en que se realizó la transacción
+                                                es sujeto a aplicarle
+                                                la retención en la
+                                                fuente.</p></td>
+                                    </tr>
+                                    <tr>
+                                        <td class="titletable"><p
+                                                class="SUBTITULO">Valor
+                                                reteica </p></td>
+                                        <td><p class="PARRAFO">Contiene
+                                                algún valor si el <a
+                                                    href="ESH_006B.html">establecimiento</a>
+                                                en que se realizó la transacción
+                                                es sujeto a aplicarle
+                                                la retención sobre el impuesto
+                                                de industria y comercio
+                                                ICA.</p></td>
+                                    </tr>
+                                    <tr>
+                                        <td class="titletable"><p
+                                                class="SUBTITULO">Valor
+                                                base reintegro iva</p></td>
+                                        <td><p class="PARRAFO">Este
+                                                campo despliega el valor que
+                                                sirve como base para el
+                                                cálculo
+                                                del reintegro de los 2 puntos de
+                                                IVA sobre compras y que
+                                                corresponde
+                                                al valor de los bienes y/o
+                                                servicios gravados con una
+                                                tarifa del 16%;
+                                                a partir del 2005 también
+                                                quedaron incluidos aquellos
+                                                que
+                                                estén
+                                                gravados con un IVA del
+                                                10%.</p></td>
+                                    </tr>
+                                    <tr>
+                                        <td class="titletable"><p
+                                                class="SUBTITULO">Valor iva
+                                                comisión</p></td>
+                                        <td><p class="PARRAFO">Refleja el valor
+                                                cobrado como
+                                                impuesto al valor agregado sobre
+                                                la comisión de
+                                                adquirencia cobrada por la
+                                                entidad financiera al
+                                                establecimiento.</p></td>
+                                    </tr>
+                                </table>
+                                <p class="TITLE">Datos transacción</p>
+                                <p class="TITLE"><img loading="lazy" rel="preload" 
+                                        src="../img/INF_008B5-PCD.PNG"></p>
+                                <table>
+                                    <tr>
+                                        <td class="titletable"><p
+                                                class="SUBTITULO">Transacción
+                                                interna </p></td>
+                                        <td><p class="PARRAFO">Contiene
+                                                el nombre con el que se
+                                                identifica internamente la
+                                                transacción,
+                                                es el mismo que aparecerá en el
+                                                extracto una vez sea
+                                                corregida
+                                                y aplicada, con base en lo
+                                                parametrizado en la opción <a
+                                                    href="MEH_003B.html">Transacciones
+                                                    por entidad</a> del
+                                                Núcleo.</p></td>
+                                    </tr>
+                                    <tr>
+                                        <td class="titletable"><p
+                                                class="SUBTITULO">Marca</p></td>
+                                        <td><p class="PARRAFO">Dato
+                                                que indica el nombre de la <a
+                                                    href="NUH_033B.html">franquicia</a>
+                                                a
+                                                la que pertenece el plástico con
+                                                el que se realizó la
+                                                transacción.</p></td>
+                                    </tr>
+                                    <tr>
+                                        <td class="titletable"><p
+                                                class="SUBTITULO">Número
+                                                tarjeta actual</p></td>
+                                        <td><p class="PARRAFO">Rese&ntilde;a
+                                                el número de la tarjeta asociado
+                                                inicialmente a la
+                                                transacción,
+                                                el cual puede ser erróneo o no
+                                                pertenecer al
+                                                sistema.</p></td>
+                                    </tr>
+                                    <tr>
+                                        <td class="titletable"><p
+                                                class="SUBTITULO">Número
+                                                tarjeta anterior</p></td>
+                                        <td><p class="PARRAFO">Muestra
+                                                el número correcto de la tarjeta
+                                                a la que efectivamente
+                                                le
+                                                es
+                                                aplicada la transacción; este
+                                                campo despliega o contiene
+                                                información
+                                                si previamente se ha modificado
+                                                el número de tarjeta a
+                                                afectar
+                                                como parte de la solución de
+                                                movimiento
+                                                pendiente.</p></td>
+                                    </tr>
+                                    <tr>
+                                        <td class="titletable"><p
+                                                class="SUBTITULO">Valor monto
+                                                patrón</p></td>
+                                        <td><p class="PARRAFO">Despliega el
+                                                monto y nombre oficial
+                                                de la <a
+                                                    href="NUH_005B.html">Moneda</a>
+                                                que identifica
+                                                la moneda original de la
+                                                transacción</p></td>
+                                    </tr>
+                                    <tr>
+                                        <td class="titletable"><p
+                                                class="SUBTITULO">Plazo</p></td>
+                                        <td><p class="PARRAFO">Contiene
+                                                el número de periodos de 30
+                                                días, solicitado por el
+                                                cliente
+                                                o asignado por defecto, para el
+                                                pago de la transacción
+                                                de
+                                                consumo
+                                                o utilización.</p></td>
+                                    </tr>
+                                    <tr>
+                                        <td class="titletable"><p
+                                                class="SUBTITULO">Giro Dinero
+                                                TD</p></td>
+                                        <td><p class="PARRAFO">Corresponde al
+                                                valor de una
+                                                transacción crédito efectuada a
+                                                una tarjeta
+                                                débito.</p></td>
+                                    </tr>
+                                    <tr>
+                                        <td class="titletable"><p
+                                                class="SUBTITULO">Indicador de
+                                                cashback</p></td>
+                                        <td><p class="PARRAFO">Campo que indica
+                                                si la tarjeta débito
+                                                con la que se realizó la
+                                                transacción en Pendiente débito
+                                                tiene la característica de
+                                                cashback.</p></td>
+                                    </tr>
+                                    <tr>
+                                        <td class="titletable"><p
+                                                class="SUBTITULO">Indicador Emv
+                                            </p></td>
+                                        <td><p class="PARRAFO">Campo que ilustra
+                                                el dato generado
+                                                por el Europay MasterCard
+                                                Visa.</p></td>
+                                    </tr>
+                                    <tr>
+                                        <td class="titletable"><p
+                                                class="SUBTITULO">Indicador
+                                                Contactless</p></td>
+                                        <td><p class="PARRAFO">Campo que indica
+                                                si la tarjeta débito
+                                                con la que se realizó la
+                                                transacción en Pendiente débito
+                                                tiene la característica de
+                                                contacless.</p></td>
+                                    </tr>
+                                    <tr>
+                                        <td class="titletable"><p
+                                                class="SUBTITULO">Localidad Trx
+                                            </p></td>
+                                        <td><p class="PARRAFO">Contiene el dato
+                                                del municipio en el
+                                                que se realizó la trx que fue
+                                                enviada a Pendiente
+                                                débito.</p></td>
+                                    </tr>
+                                    <tr>
+                                        <td class="titletable"><p
+                                                class="SUBTITULO">Tarifa
+                                                intercambio </p></td>
+                                        <td><p class="PARRAFO">Corresponde al
+                                                valor porcentual que
+                                                la franquicia utilizó para
+                                                liquidar la comisión de
+                                                intercambio.</p></td>
+                                    </tr>
+                                </table>
+                                <p class="TITLE">Establecimiento</p>
+                                <p class="TITLE"><img loading="lazy" rel="preload" 
+                                        src="../img/INF_008B7-PCD.PNG"></p>
+                                <table>
+                                    <tr>
+                                        <td class="titletable"><p
+                                                class="SUBTITULO">Codigo
+                                            </p></td>
+                                        <td><p class="PARRAFO">Despliega el
+                                                código único que
+                                                identifica el establecimiento en
+                                                el que se realizó la
+                                                utilización o consumo.</p></td>
+                                    </tr>
+                                    <tr>
+                                        <td class="titletable"><p
+                                                class="SUBTITULO">Nombre</p></td>
+                                        <td><p class="PARRAFO">Muestra el nombre
+                                                del establecimiento
+                                                en el que se realizó la
+                                                utilización o consumo.</p></td>
+                                    </tr>
+                                    <tr>
+                                        <td class="titletable"><p
+                                                class="SUBTITULO">Tipo servicio
+                                            </p></td>
+                                        <td><p class="PARRAFO">Despliega el
+                                                código y nombre del
+                                                principal <a
+                                                    href="ESH_002B.html">servicio</a>
+                                                ofrecido
+                                                por el establecimiento de
+                                                comercio.</p></td>
+                                    </tr>
+                                    <tr>
+                                        <td class="titletable"><p
+                                                class="SUBTITULO">País </p></td>
+                                        <td><p class="PARRAFO">Campo en el que
+                                                se ubica el comercio
+                                                en el que se efectuó la
+                                                utilización.</p></td>
+                                    </tr>
+                                    <tr>
+                                        <td class="titletable"><p
+                                                class="SUBTITULO">Porcentaje
+                                                descuento </p></td>
+                                        <td><p class="PARRAFO">Contiene el valor
+                                                deducido al
+                                                establecimiento al liquidarle la
+                                                comisión o descuento
+                                                sobre el valor del consumo
+                                                realizado por el
+                                                cliente.</p></td>
+                                    </tr>
+                                </table>
+                                <p class="TITLE">Información general</p>
+                                <p class="TITLE"><img loading="lazy" rel="preload" 
+                                        src="../img/INF_008B8_CD.PNG"></p>
+                                <table>
+                                    <tr>
+                                        <td class="titletable"><p
+                                                class="SUBTITULO">Fecha
+                                                comprobante</p></td>
+                                        <td><p class="PARRAFO">Campo con formato
+                                                DD-MM-AAAA, ilustra
+                                                la fecha en que se efectuó la
+                                                transacción enviada a
+                                                movimiento pendiente.</p></td>
+                                    </tr>
+                                    <tr>
+                                        <td class="titletable"><p
+                                                class="SUBTITULO">Fecha canje
+                                            </p></td>
+                                        <td><p class="PARRAFO">Campo con formato
+                                                DD-MM-AAAA, ilustra
+                                                la fecha en que se efectuó el
+                                                proceso del archivo. En
+                                                que viajó la transacción enviada
+                                                a rechazos canje
+                                                enviado.</p></td>
+                                    </tr>
+                                    <tr>
+                                        <td class="titletable"><p
+                                                class="SUBTITULO">Identificación
+                                                red</p></td>
+                                        <td><p class="PARRAFO">Número que
+                                                permite establecer la red
+                                                a través de la cual se efectuó
+                                                la transacción.</p></td>
+                                    </tr>
+                                    <tr>
+                                        <td class="titletable"><p
+                                                class="SUBTITULO">Fecha solución
+                                            </p></td>
+                                        <td><p class="PARRAFO">Señala la fecha
+                                                en formato DD-MM-AAAA
+                                                en que fue resuelta la
+                                                inconsistencia que motivó el no
+                                                proceso de la
+                                                transacción.</p></td>
+                                    </tr>
+                                    <tr>
+                                        <td class="titletable"><p
+                                                class="SUBTITULO">Fecha
+                                                contabilización </p></td>
+                                        <td><p class="PARRAFO">Señala la fecha
+                                                en formato DD-MM-AAAA
+                                                en que se afectaron los
+                                                registros contables al ingresar
+                                                la utilización al
+                                                sistema.</p></td>
+                                    </tr>
+                                    <tr>
+                                        <td class="titletable"><p
+                                                class="SUBTITULO">Número
+                                                comprobante</p></td>
+                                        <td><p class="PARRAFO">Campo modificable
+                                                corresponde al
+                                                número de recibo o comprobante
+                                                de venta o de la
+                                                utilización.</p></td>
+                                    </tr>
+                                    <tr>
+                                        <td class="titletable"><p
+                                                class="SUBTITULO">Número
+                                                lote</p></td>
+                                        <td><p class="PARRAFO">Contiene el
+                                                número asignado a cada
+                                                lote de movimiento previo a su
+                                                captura y que permite
+                                                identificarlo
+                                                posteriormente</p></td>
+                                    </tr>
+                                    <tr>
+                                        <td class="titletable"><p
+                                                class="SUBTITULO">Bin
+                                                fuente</p></td>
+                                        <td><p class="PARRAFO">Contiene el mismo
+                                                prefijo o bin
+                                                receptor.</p></td>
+                                    </tr>
+                                    <tr>
+                                        <td class="titletable"><p
+                                                class="SUBTITULO">Secuencia
+                                                lote</p></td>
+                                        <td><p class="PARRAFO">Campo de salida
+                                                que ilustra el número
+                                                con el que se identifica el
+                                                cargue de archivos o
+                                                integración del movimiento
+                                                ingresado por un mismo origen
+                                                para una misma fecha de
+                                                proceso.</p></td>
+                                    </tr>
+                                    <tr>
+                                        <td class="titletable"><p
+                                                class="SUBTITULO">Bin
+                                                destino</p></td>
+                                        <td><p class="PARRAFO">Señala el prefijo
+                                                o bin centro de
+                                                proceso de la entidad emisora
+                                                del plástico.</p></td>
+                                    </tr>
+                                    <tr>
+                                        <td class="titletable"><p
+                                                class="SUBTITULO">Autorización</p></td>
+                                        <td><p class="PARRAFO">Muestra el número
+                                                de la autorización
+                                                asignado a la transacción por el
+                                                procesador o la
+                                                entidad.</p></td>
+                                    </tr>
+                                    <tr>
+                                        <td class="titletable"><p
+                                                class="SUBTITULO">Bin
+                                                receptor</p></td>
+                                        <td><p class="PARRAFO">Contiene el
+                                                prefijo o bin centro de
+                                                proceso de la entidad a través
+                                                de la que ingresa la
+                                                transacción.</p></td>
+                                    </tr>
+                                    <tr>
+                                        <td class="titletable"><p
+                                                class="SUBTITULO">Transacción
+                                                anterior</p></td>
+                                        <td><p class="PARRAFO">Aplica para
+                                                transacciones que se
+                                                encuentran en proceso de
+                                                intercambio por lo que en cada
+                                                etapa recibe un nombre diferente
+                                                al precedente.</p></td>
+                                    </tr>
+                                    <tr>
+                                        <td class="titletable"><p
+                                                class="SUBTITULO">Dígito de
+                                                chequeo</p></td>
+                                        <td><p class="PARRAFO">Campo numérico
+                                                cuyo valor debe
+                                                coincidir con el último número
+                                                de la referencia
+                                                universal el que también es
+                                                utilizado para validación
+                                                del movimiento</p></td>
+                                    </tr>
+                                    <tr>
+                                        <td class="titletable"><p
+                                                class="SUBTITULO">Referencia
+                                                universal</p></td>
+                                        <td><p class="PARRAFO">Número construido
+                                                y validado por el
+                                                sistema tanto para el canje
+                                                enviado como para el
+                                                recibido, identifica de manera
+                                                exclusiva a cada
+                                                transacción dentro de todo el
+                                                universo
+                                                transaccional.</p></td>
+                                    </tr>
+                                    <tr>
+                                        <td class="titletable"><p
+                                                class="SUBTITULO">Motivo
+                                                devolución</p></td>
+                                        <td><p class="PARRAFO">Campo que ilustra tanto el código como la descripción de la razón por la que la transacción fue devuelta.</p></td>
+                                    </tr>
+                                    <tr>
+                                        <td class="titletable"><p
+                                                class="SUBTITULO">Suc
+                                                adquirente</p></td>
+                                        <td><p class="PARRAFO">Despliega el
+                                                código que permite
+                                                identificar la sucursal de la
+                                                entidad adquirente o
+                                                receptora del
+                                                movimiento.</p></td>
+                                    </tr>
+                                    <tr>
+                                        <td class="titletable"><p
+                                                class="SUBTITULO">Origen
+                                                inmediato</p></td>
+                                        <td><p class="PARRAFO">Aplica para las
+                                                transacciones que al
+                                                ingresar al sistema no pasaron
+                                                directamente al
+                                                movimiento diario, sino que han
+                                                transitado por otras
+                                                etapas o destinos del
+                                                movimiento, permitiendo
+                                                identificar la procedencia de
+                                                las mismas.</p></td>
+                                    </tr>
+                                    <tr>
+                                        <td class="titletable"><p
+                                                class="SUBTITULO">Número
+                                                terminal</p></td>
+                                        <td><p class="PARRAFO">Identifica el
+                                                número de terminal en
+                                                la que se ingresó el depósito
+                                                electrónico con la
+                                                transacción de consumo o
+                                                utilización por parte del
+                                                establecimiento. </tr>
+                                            <tr>
+                                                <td class="titletable"><p
+                                                        class="SUBTITULO">Entidad
+                                                        fuente</p></td>
+                                                <td><p class="PARRAFO">Despliega
+                                                        el nombre de la entidad
+                                                        asociado al bin fuente.
+                                                    </tr>
+                                                    <tr>
+                                                        <td
+                                                            class="titletable"><p
+                                                                class="SUBTITULO">Código
+                                                                uso</p></td>
+                                                        <td><p
+                                                                class="PARRAFO">Valor
+                                                                o identificador
+                                                                utilizado en los
+                                                                registros del
+                                                                movimiento de
+                                                                canje
+                                                                internacional.
+                                                            </tr>
+                                                            <tr>
+                                                                <td
+                                                                    class="titletable"><p
+                                                                        class="SUBTITULO">Entidad
+                                                                        destino</p></td>
+                                                                <td><p
+                                                                        class="PARRAFO">Señala
+                                                                        el
+                                                                        nombre
+                                                                        de la
+                                                                        entidad
+                                                                        asociado
+                                                                        al bin
+                                                                        destino.
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <td
+                                                                            class="titletable"><p
+                                                                                class="SUBTITULO">Código
+                                                                                razón</p></td>
+                                                                        <td><p
+                                                                                class="PARRAFO">Valor
+                                                                                o
+                                                                                identificador
+                                                                                utilizado
+                                                                                en
+                                                                                los
+                                                                                registros
+                                                                                del
+                                                                                movimiento
+                                                                                de
+                                                                                canje
+                                                                                internacional.
+                                                                            </tr>                                                                    
+                                                                                </table>
+
+                                                                                <p
+                                                                                    class="TITLE">Datos
+                                                                                    pago</p>
+                                                                                <p
+                                                                                    class="TITLE"><img loading="lazy" rel="preload" 
+                                                                                        src="../img/INF_008B910.PNG"></p>
+                                                                                <table>
+                                                                                    <tr>
+                                                                                        <td
+                                                                                            class="titletable"><p
+                                                                                                class="SUBTITULO">Entidad</p></td>
+                                                                                        <td><p
+                                                                                                class="PARRAFO">
+                                                                                                Contiene
+                                                                                                el
+                                                                                                nombre
+                                                                                                de
+                                                                                                la
+                                                                                                entidad
+                                                                                                financiera
+                                                                                                receptora
+                                                                                                del
+                                                                                                movimiento.
+                                                                                            </tr>
+                                                                                            <tr>
+                                                                                                <td
+                                                                                                    class="titletable"><p
+                                                                                                        class="SUBTITULO">Cuenta</p></td>
+                                                                                                <td><p
+                                                                                                        class="PARRAFO">Despliega
+                                                                                                        el
+                                                                                                        número
+                                                                                                        de
+                                                                                                        la
+                                                                                                        cuenta
+                                                                                                        de
+                                                                                                        depósitos
+                                                                                                        perteneciente
+                                                                                                        al
+                                                                                                        establecimiento
+                                                                                                        de
+                                                                                                        comercio.</p></td>
+                                                                                            </tr>
+                                                                                            <tr>
+                                                                                                <td
+                                                                                                    class="titletable"><p
+                                                                                                        class="SUBTITULO">Origen
+                                                                                                        pago
+                                                                                                    </p></td>
+                                                                                                <td><p
+                                                                                                        class="PARRAFO">Aplica
+                                                                                                        para
+                                                                                                        los
+                                                                                                        pagos
+                                                                                                        de
+                                                                                                        tarjetas
+                                                                                                        extendidas
+                                                                                                        tales
+                                                                                                        como
+                                                                                                        las
+                                                                                                        empresariales
+                                                                                                        ingresados
+                                                                                                        al
+                                                                                                        sistema
+                                                                                                        mediante
+                                                                                                        la
+                                                                                                        captura
+                                                                                                        de
+                                                                                                        oficinas,
+                                                                                                        despliega
+                                                                                                        por
+                                                                                                        defecto
+                                                                                                        Tarjeta.</p></td>
+                                                                                            </tr>
+                                                                                            <tr>
+                                                                                                <td
+                                                                                                    class="titletable"><p
+                                                                                                        class="SUBTITULO">Tipo
+                                                                                                        cuenta</p></td>
+                                                                                                <td><p
+                                                                                                        class="PARRAFO">Identifica
+                                                                                                        si
+                                                                                                        el
+                                                                                                        número
+                                                                                                        de
+                                                                                                        cuenta
+                                                                                                        del
+                                                                                                        establecimiento
+                                                                                                        corresponde
+                                                                                                        a
+                                                                                                        Corriente,
+                                                                                                        Rotativo
+                                                                                                        o
+                                                                                                        Ahorros.</p></td>
+                                                                                            </tr>
+                                                                                            <tr>
+                                                                                                <td
+                                                                                                    class="titletable"><p
+                                                                                                        class="SUBTITULO">Destino
+                                                                                                        pago
+                                                                                                    </p></td>
+                                                                                                <td><p
+                                                                                                        class="PARRAFO">Aplica
+                                                                                                        para
+                                                                                                        los
+                                                                                                        pagos
+                                                                                                        dirigidos
+                                                                                                        ingresados
+                                                                                                        al
+                                                                                                        sistema
+                                                                                                        mediante
+                                                                                                        la
+                                                                                                        captura
+                                                                                                        de
+                                                                                                        oficinas
+                                                                                                        y
+                                                                                                        presenta
+                                                                                                        opciones
+                                                                                                        tales
+                                                                                                        como
+                                                                                                        Línea,
+                                                                                                        Tarjeta
+                                                                                                        o
+                                                                                                        Transacción.</p></td>
+                                                                                            </tr>
+                                                                                            <tr>
+                                                                                                <td
+                                                                                                    class="titletable"><p
+                                                                                                        class="SUBTITULO">Identificación
+                                                                                                        origen
+                                                                                                    </p></td>
+                                                                                                <td><p
+                                                                                                        class="PARRAFO">Despliega
+                                                                                                        el
+                                                                                                        número
+                                                                                                        de
+                                                                                                        la
+                                                                                                        tarjeta
+                                                                                                        principal
+                                                                                                        o
+                                                                                                        la
+                                                                                                        empresarial
+                                                                                                        bajo
+                                                                                                        la
+                                                                                                        que
+                                                                                                        se
+                                                                                                        encuentra
+                                                                                                        una
+                                                                                                        o
+                                                                                                        más
+                                                                                                        tarjetas
+                                                                                                        extendidas
+                                                                                                        a
+                                                                                                        las
+                                                                                                        que
+                                                                                                        se
+                                                                                                        les
+                                                                                                        aplicará
+                                                                                                        el
+                                                                                                        pago.
+                                                                                                    </tr>
+                                                                                                    <tr>
+                                                                                                        <td
+                                                                                                            class="titletable"><p
+                                                                                                                class="SUBTITULO">Forma
+                                                                                                                pago
+                                                                                                            </p></td>
+                                                                                                        <td><p
+                                                                                                                class="PARRAFO">Indica
+                                                                                                                si
+                                                                                                                el
+                                                                                                                pago
+                                                                                                                se
+                                                                                                                realizó
+                                                                                                                en
+                                                                                                                efectivo
+                                                                                                                o
+                                                                                                                en
+                                                                                                                cheque.
+                                                                                                            </tr>
+                                                                                                            <tr>
+                                                                                                                <td
+                                                                                                                    class="titletable"><p
+                                                                                                                        class="SUBTITULO">Identificación
+                                                                                                                        destino</p></td>
+                                                                                                                <td><p
+                                                                                                                        class="PARRAFO">Contiene
+                                                                                                                        el
+                                                                                                                        número
+                                                                                                                        asociado
+                                                                                                                        a
+                                                                                                                        la
+                                                                                                                        línea
+                                                                                                                        de
+                                                                                                                        crédito,
+                                                                                                                        a
+                                                                                                                        la
+                                                                                                                        tarjeta
+                                                                                                                        o
+                                                                                                                        a
+                                                                                                                        la
+                                                                                                                        transacción
+                                                                                                                        hacia
+                                                                                                                        la
+                                                                                                                        que
+                                                                                                                        se
+                                                                                                                        dirige
+                                                                                                                        el
+                                                                                                                        pago.
+                                                                                                                    </tr>
+
+                                                                                                                </table>
+                                                                                                            </section>
+                                                                                                            <script
+                                                                                                                src="../js/menu.js"></script>
+                                                                                                        </body>
+                                                                                                        <div
+                                                                                                            id="footerContainer"></div>
+                                                                                                        <script>
+  fetch('footer.html')
+    .then(response => response.text())
+    .then(html => {
+      document.getElementById('footerContainer').innerHTML = html;
+    });
+</script>
+                                                                                                    </html>

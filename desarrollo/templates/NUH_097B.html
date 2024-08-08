@@ -1,24 +1,24 @@
 <!DOCTYPE html>
 <html lang="es">
 
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>OpencardWeb®</title>
-  <link rel="stylesheet" href="../css/pages.css">
-  <link rel="stylesheet" href="../css/style.css">
-  <link rel="icon" href="../img/ACQUIRER-logo.JPG" type="image/x-icon">
-</head>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OpencardWeb®</title>
+    <link rel="stylesheet" href="../css/pages.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="icon" href="../img/ACQUIRER-logo.JPG" type="image/x-icon">
+  </head>
 
-<body>
-  <header>
-    <img class="logo" src="../img/logoBankbu_.PNG" alt="Logo de Mi Empresa">
-    <div id="menuBtn">
-      <img class="TITLE" src="../img/menu.PNG" alt="Botón de Menú ">
-    </div>
-  </header>
+  <body>
+    <header>
+      <img loading="lazy" rel="preload"  class="logo" src="../img/logoBankbu_.webp" alt="Logo de Mi Empresa">
+      <div id="menuBtn">
+        <img loading="lazy" rel="preload"  class="TITLE" src="../img/menu.PNG" alt="Botón de Menú ">
+      </div>
+    </header>
     <div id="menuContainer"></div>
-  <script>
+    <script>
     fetch('menu.html')
       .then(response => response.text())
       .then(html => {
@@ -26,239 +26,209 @@
       });
   </script>
 
-  <section>
-    <div>
+    <section>
+      <div>
+
+        <p class="TITLE">Parámetros generales</p>
+
+        <p class="PARRAFO">Esta pantalla permite tanto la consulta como el
+          mantenimiento, a los funcionarios de OpenCard SAS, de la tabla que
+          contiene la definición, por módulos, de aquellas variables o
+          parámetros genéricos requeridos por algunos procesos asociados o
+          relacionados con cada uno de dichos módulos. La funcionalidad provista
+          por esta opción, pretende, de un lado evitar el mayor crecimiento de
+          la tabla <a href="NUH_055B.html">Parámetros
+            operativos</a> y del otro optimizar la organización de algunos
+          parámetros al concentrarlos por cada uno de los módulos del sistema.
+          La parametrización aquí relacionada es independiente a la requerida
+          por la automatización de procesos. El formulario contiene los enlaces:
+          Actualizar, Eliminar, Adicionar y Detalle. Adicionalmente tiene un
+          filtro de búsqueda.</p>
+        <p class="TITLE"><img loading="lazy" rel="preload"  src="../img/NUH_097B.PNG"></p>
+
+        <p class="PARRAFO"><span class="SUBTITULO">Adicionar:</span> Al invocar
+          ese enlace se despliega un formulario con los siguientes campos:</p>
+        <p class="TITLE"><img loading="lazy" rel="preload"  src="../img/NUH_097B1.PNG"></p>
+
+        <table>
+          <tr>
+            <td class="titletable">
+              <p class="SUBTITULO">Módulos</p>
+            </td>
+            <td>
+              <p class="PARRAFO">Campo obligatorio que posee lista de valores
+                adjunta de la que debe seleccionarse o digitarse el código del
+                módulo del aplicativo para el que se quiere adicionar el
+                registro.
+
+              </p>
+            </td>
+          </tr>
+          <tr>
+            <td class="titletable">
+              <p class="SUBTITULO">Código</p>
+            </td>
+            <td>
+              <p class="PARRAFO">Campo numérico de cuatro dígitos, en el cual si
+                el usuario no digita valor alguno, el sistema asigna el entero
+                inmediatamente siguiente al mayor de los registrados con
+                anterioridad, y que permite diferenciar cada variable o
+                parámetro por módulo del sistema. El dato aquí registrado junto
+                con el del campo serie constituyen la llave de esta tabla, razón
+                por la cual cada módulo debe disponer de un rango propio u otra
+                manera que facilite el no cruce o tentativa de repetición de
+                valores, situación que tampoco es permitida por la forma.
+
+              </p>
+            </td>
+          </tr>
+          <tr>
+            <td class="titletable">
+              <p class="SUBTITULO">Serie</p>
+            </td>
+            <td>
+              <p class="PARRAFO">En este campo numérico de cuatro dígitos, por
+                defecto el sistema le asigna el número uno (1), aunque el
+                usuario puede digitar un valor distinto; permite un uso
+                compuesto del mismo parámetro, por ejemplo si el parámetro
+                corresponde a transacciones, la secuencia menor puede
+                corresponder al origen mientras que la mayor puede diferenciar
+                cada transacción original.
+
+              </p>
+            </td>
+          </tr>
+          <tr>
+            <td class="titletable">
+              <p class="SUBTITULO">Descripción
+
+              </p>
+            </td>
+            <td>
+              <p class="PARRAFO">Campo obligatorio en el que se debe registrar
+                el nombre o breve descriptivo de cada parámetro. Admite
+                cualquier dato alfanumérico de máximo 60 caracteres. Permite
+                mayúsculas y minúsculas.
+
+              </p>
+            </td>
+          </tr>
+          <tr>
+            <td class="titletable">
+              <p class="SUBTITULO">Tipo de dato
+
+              </p>
+            </td>
+            <td>
+              <p class="PARRAFO">Campo obligatorio, posee lista de valores tipo
+                combo con las opciones: Fecha, Decimal, Entero o Caracter. Los
+                campos que siguen se habilitan de acuerdo a la opción
+                seleccionada en este campo así: La opción Fecha, habilita el
+                campo Valor. La opción 'Decimal' habilita los campos Longitud,
+                Precisión y Valor. La opción 'Entero' habilita los campos
+                Longitud y Valor. La opción 'Caracter' habilita los campos
+                Longitud y Valor.
+
+              </p>
+            </td>
+          </tr>
+          <tr>
+            <td class="titletable">
+              <p class="SUBTITULO">Longitud
+
+              </p>
+            </td>
+            <td>
+              <p class="PARRAFO">Admite cualquier dato numérico de máximo 3
+                dígitos sin decimales.
+
+              </p>
+            </td>
+          </tr>
+          <tr>
+            <td class="titletable">
+              <p class="SUBTITULO">Precisión
+
+              </p>
+            </td>
+            <td>
+              <p class="PARRAFO">Este campo se habilita para ser diligenciado
+                cuando se selecciona Decimal en el campo Tipo dato, de lo
+                contrario no debe permitir ser diligenciado. Admite cualquier
+                dato numérico de máximo 2 dígitos sin decimales
+
+              </p>
+            </td>
+          </tr>
+          <tr>
+            <td class="titletable">
+              <p class="SUBTITULO">Constraint
+
+              </p>
+            </td>
+            <td>
+              <p class="PARRAFO">Campo que posee lista de valores tipo combo,
+                definida a nivel de programación, de la cual se debe seleccionar
+                el correspondiente constraint o restricción de la tabla respecto
+                de la cual es necesario validar la existencia de los registros
+                cuyo valor es definido en esta pantalla.
+
+              </p>
+            </td>
+          </tr>
+          <tr>
+            <td class="titletable">
+              <p class="SUBTITULO">Filtro
+
+              </p>
+            </td>
+            <td>
+              <p class="PARRAFO">Campo alfanumérico de doscientas posiciones, no
+                obligatorio, en el que es posible determinar condiciones
+                similares a las utilizadas, con herramientas tales como SQL/PLUS
+                en el Where de los Select sobre las tablas.
+
+              </p>
+            </td>
+          </tr>
+          <tr>
+            <td class="titletable">
+              <p class="SUBTITULO">Valor
+
+              </p>
+            </td>
+            <td>
+              <p class="PARRAFO">Campo que puede o no poseer lista de valores
+                adjunta siempre y cuando el campo Constraint contenga un dato
+                válido, o verifica su existencia si este es digitado por el
+                usuario, o simplemente, digitar el dato asociado a cada variable
+                o parámetro definido.
+
+              </p>
+            </td>
+          </tr>
+
+        </table>
       
-              <p class="TITLE">Parámetros generales</p>
+      
+      <p class="PARRAFO"><span class="SUBTITULO">Actualizar:</span>
+        Al activar ese enlace se despliega un formulario en el cual los únicos campos no modificables son: Módulos, Código y Serie.</p>
+      <p class="TITLE"><img loading="lazy" rel="preload"  src="../img/NUH_097B3.PNG"></p>
 
-      <p class="PARRAFO">Esta pantalla permite tanto la consulta como el mantenimiento,
-        a los funcionarios de OpenCard SAS, de la tabla que contiene la definición,
-        por módulos, de aquellas variables o parámetros genéricos
-        requeridos por algunos procesos asociados o relacionados con cada uno de dichos
-        módulos. La funcionalidad provista por esta opción, pretende,
-        de un lado evitar el mayor crecimiento de la tabla NU_PARáMETROS_OPERATIVOS,
-        y del otro optimizar la organización de algunos parámetros al
-        concentrarlos por cada uno de los módulos del sistema. La parametrización
-        aquí relacionada es independiente a la requerida por la automatización
-        de procesos. Dado que esta opción de menú corresponde al grupo
-        de Tablas reservadas del Núcleo, la cuales son altamente restrictivas,
-        mediante la opción <a href="NUH_055B.html">Parámetros
-          operativos</a> se provee el acceso para el usuario final, del campo Valor
-        que es esencial para éste. La funcionalidad ofrecida se relaciona entre
-        otras, con las variables o parámetros de transacciones originales y
-        orígenes de transacciones que afecten los depósitos a establecimientos,
-        lo que para algunas entidades corresponde a Cuenta nacional.</p>
-      <p class="TITLE"><img src="../img/NUH_097B.PNG" 703" height="665"></p>
+      <p class="PARRAFO"><span class="SUBTITULO">Detalle:</span> Si el usuario invoca la opción Detalle se despliega el siguiente formulario: </p>
+      <p class="TITLE"><img loading="lazy" rel="preload"  src="../img/NUH_097B4.PNG"></p>
 
-      <p class="PARRAFO">El formulario contiene los enlaces: Actualizar, Eliminar, Adicionar
-        y Detalle. Adicionalmente tiene un filtro de búsqueda.</p>
-      <p class="TITLE"><img src="../img/NUH_097B1.PNG" 293"></p>
+    </section>
+    <script src="../js/menu.js"></script>
 
-      <table>
-        <tr>
-          <td class="titletable">
-            <p class="SUBTITULO">Proceso</p>
-          </td>
-          <td>
-            <p class="PARRAFO">Este campo posee lista de valores con las opciones Emisor, Captura, y
-              Más de uno. </p>
-          </td>
-        </tr>
-        <tr>
-          <td class="titletable">
-            <p class="SUBTITULO">Rol</p>
-          </td>
-          <td>
-            <p class="PARRAFO">Este campo posee lista de valores con las opciones Emisor, Adquirente,
-                Débito , y Más de uno. </p>
-          </td>
-        </tr>
-        <tr>
-          <td class="titletable">
-            <p class="SUBTITULO">Tipo
-                  de parámetro</p>
-          </td>
-          <td>
-            <p class="PARRAFO">Despliega
-              las diferentes clases o tipos de parámetros definidos para cada
-              uno de los módulos parametrizados. Al cambiar de tipo de parámetro,
-              si hay más de uno, se despliegan los parámetros correspondientes
-              a cada uno de ellos.</p>
-          </td>
-        </tr>
-        <tr>
-          <td class="titletable">
-            <p class="SUBTITULO">Etiqueta</p>
-          </td>
-          <td>
-            <p class="PARRAFO">Campo alfanumérico de 30 campos.</p>
-          </td>
-        </tr>
-      </table>
-      <p class="PARRAFO"><span class="SUBTITULO">Adicionar:</span><span class="PARRAFO"> Si el usuario
-          invoca la opción Adicionar se despliega un for</span> mulario con los
-        siguientes campos:</span> 
-      </p>
-      <p class="TITLE"><img src="../img/NUH_097B2.PNG" 737" height="274"></p>
-      .
-      <table>
-        <tr>
-          <td class="titletable">
-            <p class="SUBTITULO">Proceso</p>
-          </td>
-          <td>
-            <p class="PARRAFO">Este campo posee lista de valores con las opciones Emisor, Captura, y
-              Más de uno. </p>
-          </td>
-        </tr>
-        <tr>
-          <td class="titletable">
-            <p class="SUBTITULO">Rol</p>
-          </td>
-          <td>
-            <p class="PARRAFO">Este campo posee lista de valores con las opciones Emisor, Adquirente,
-                Débito , y Más de uno. </p>
-          </td>
-        </tr>
-        <tr>
-          <td class="titletable">
-            <p class="SUBTITULO">Tipo
-                  de parámetro</p>
-          </td>
-          <td>
-            <p class="PARRAFO">Despliega
-              las diferentes clases o tipos de parámetros definidos para cada
-              uno de los módulos parametrizados. Al cambiar de tipo de parámetro,
-              si hay más de uno, se despliegan los parámetros correspondientes
-              a cada uno de ellos.</p>
-          </td>
-        </tr>
-        <tr>
-          <td class="titletable">
-            <p class="SUBTITULO">Etiqueta</p>
-          </td>
-          <td>
-            <p class="PARRAFO">El campo Etiqueta admite cualquier dato alfanumérico de máximo 30
-              caracteres. Permite mayúsculas y minúsculas</p>
-          </td>
-        </tr>
-        <tr>
-          <td class="titletable">
-            <p class="SUBTITULO">Código interno entidad </p>
-          </td>
-          <td>
-            <p class="PARRAFO">El campo código interno de la entidad, solo debe habilitarse y volverse
-                obligatorio cuando el actor en el campo Tipo parámetro, selecciona Personalizado, de lo contrario
-                no debe permitir ser diligenciado</p>
-          </td>
-        </tr>
-        <tr>
-          <td class="titletable">
-            <p class="SUBTITULO">Código</p>
-          </td>
-          <td>
-            <p class="PARRAFO">Campo
-              numérico de cuatro dígitos, en el cual si el usuario no
-              digita valor alguno, el sistema asigna el entero inmediatamente siguiente
-              al mayor de los registrados con anterioridad, y que permite diferenciar
-              cada variable o parámetro por módulo del sistema. El dato
-              aquí registrado junto con el del campo serie constituyen la llave
-              de esta tabla, razón por la cual cada módulo debe disponer
-              de un rango propio u otra manera que facilite el no cruce o tentativa
-              de repetición de valores, situación que tampoco es permitida
-              por la forma.</p>
-          </td>
-        </tr>
-        <tr>
-          <td class="titletable">
-            <p class="SUBTITULO">Serie</p>
-          </td>
-          <td>
-            <p class="PARRAFO">En
-              este campo numérico de cuatro dígitos, por defecto el
-              sistema le asigna el número uno (1), aunque el usuario puede
-              digitar un valor distinto; permite un uso compuesto del mismo parámetro,
-              por ejemplo si el parámetro corresponde a transacciones, la secuencia
-              menor puede corresponder al origen mientras que la mayor puede diferenciar
-              cada transacción original.</p>
-          </td>
-        </tr>
-        <tr>
-          <td class="titletable">
-            <p class="SUBTITULO">Descripción</p>
-          </td>
-          <td>
-            <p class="PARRAFO">Despliega
-              el nombre o breve descriptivo de cada parámetro. Admite cualquier dato alfanumérico de
-              máximo 60 caracteres. Permite mayúsculas y minúsculas.</p>
-          </td>
-        </tr>
-        <tr>
-          <td class="titletable">
-            <p class="SUBTITULO">Tipo
-                de dato</p>
-          </td>
-          <td>
-            <p class="PARRAFO">Este campo muestra un combo con las opciones Fecha, Decimal, Entero, y caracter. Los
-              campos que siguen se habilitan de acuerdo a la opción seleccionada en este campo así: La
-              opción Fecha habilita el campo Valor. La opción 'Decimal' habilita los campos
-              Longitud, Presición y Valor. La opción 'Entero' habilita los campos Longitud y
-                Valor. La opción 'Caracter' habilita los campos Longitud y Valor.</p>
-          </td>
-        </tr>
-        <tr>
-          <td class="titletable">
-            <p class="SUBTITULO">Longitud</p>
-          </td>
-          <td>
-            <p class="PARRAFO">El campo Longitud admite cualquier dato numérico de máximo 3 dígitos
-              sin decimales.</p>
-          </td>
-        </tr>
-        <tr>
-          <td class="titletable">
-            <p class="SUBTITULO">Presición</p>
-          </td>
-          <td>
-            <p class="PARRAFO">El campo Precisión solo se habilita para ser diligenciado cuando el actor en el campo Tipo dato
-              selecciona Decimal, de lo contrario no debe permitir ser diligenciado. Admite cualquier dato
-              numérico de máximo 2 dígitos sin decimales
-          </td>
-        </tr>
-        </p>
-        <tr>
-          <td class="titletable">
-            <p class="SUBTITULO">Valor</p>
-          </td>
-          <td>
-            <p class="PARRAFO">único
-              campo de la pantalla que le permite al usuario modificar su contenido,
-              en el debe registrarse el nuevo dato o valor correspondiente a cada
-              variable o parámetro.</p>
-          </td>
-        </tr>
-      </table>
-      <p class="PARRAFO"><span class="SUBTITULO">Actualizar:</span> 
-         Al activar ese enlace  se despliega un formulario
-        en el cual los únicos campos modificables son: Longitud, Presición
-        y Valor.</p>
-      <p class="TITLE"><img src="../img/NUH_097B3.PNG" 707" height="253"></p>
-
-      <p class="PARRAFO"><span class="SUBTITULO">Detalle:</span>  Si el usuario invoca
-        la opción Detalle se despliega el siguiente formulario: </p>
-      <p class="TITLE"><img src="../img/NUH_097B4.PNG" 702"></p>
-
-  </section>
-  <script src="../js/menu.js"></script>
-
-  <div id="footerContainer"></div>
-<script>
+    <div id="footerContainer"></div>
+    <script>
   fetch('footer.html')
     .then(response => response.text())
     .then(html => {
       document.getElementById('footerContainer').innerHTML = html;
     });
 </script>
-</body>
+  </body>
 
 </html>

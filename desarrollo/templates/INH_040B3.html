@@ -1,26 +1,26 @@
 <!DOCTYPE html>
 <html lang="es">
 
-<head>
+  <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>OpencardWeb®</title>
 
     <link rel="stylesheet" href="../css/pages.css">
     <link rel="stylesheet" href="../css/style.css">
- <link rel="icon" href="../img/ACQUIRER-logo.JPG" type="image/x-icon">
-</head>
+    <link rel="icon" href="../img/ACQUIRER-logo.JPG" type="image/x-icon">
+  </head>
 
-<body>
+  <body>
 
     <header>
-        <img class="logo" src="../img/logoBankbu_.PNG" alt="Logo de Mi Empresa">
-        <div id="menuBtn">
-            <img class="TITLE"  src= "../img/menu.PNG" alt="Botón de Menú ">
-        </div>
+      <img loading="lazy" rel="preload"  class="logo" src="../img/logoBankbu_.webp" alt="Logo de Mi Empresa">
+      <div id="menuBtn">
+        <img loading="lazy" rel="preload"  class="TITLE" src="../img/menu.PNG" alt="Botón de Menú ">
+      </div>
     </header>
-      <div id="menuContainer"></div>
-  <script>
+    <div id="menuContainer"></div>
+    <script>
     fetch('menu.html')
       .then(response => response.text())
       .then(html => {
@@ -29,99 +29,85 @@
   </script>
 
     <section>
-        <div> 
-            
-                    <p  class="TITLE">Consulta de movimientos</p>
-                    
-            <p class="PARRAFO"><span class="PARRAFO"><span class="SUBTITULO">Pendientes:</span>  
-              </span> Las transacciones que por diferentes razones no son enviadas a aplicar 
-              al Movimiento día o a cualquiera de los otros posibles destinos, principalmente 
-              por errores de datos, se muestran a través de esta opción.</p>
-            <p class="PARRAFO">El formulario cuenta con la opción Detalle, sumado 
-              a las siguientes opciones<span class="PARRAFO">:</span>  
-              <a href="INH_040B1.html">Movimiento diario</a>, <a href="INH_040B2.html">Fraudes</a>, 
-              <a href="INH_006B5.html"></a><a href="INH_006B6.html"></a><a href="INH_040B4.html">Rechazo 
-              cargue</a>, <a href="INH_040B5.html">Contracargos</a>, <a href="INH_040B6.html">Efectos 
-              al cobro</a>, <a href="INH_006B9.html"></a><a href="INH_040B7.html">Intercambio</a>, 
-              <a href="INH_040B8.html">Rechazo cargue convenios</a>, y <a href="INH_040B.html">Ver 
-              parámetros</a>.</p>
-            <p class="TITLE"><img src="../img/INF_040B3.PNG"798" height="521"></p>
-           
-            <table>
-              <tr> 
-                <td  class="titletable" ><p class="SUBTITULO">Fecha 
-                    comprobante </p></td>
-                <td><p class="PARRAFO">Muestra 
-                    la fecha física del comprobante de consumo o utilización.</p></td>
-              </tr>
-              <tr> 
-                <td class="titletable"><p class="SUBTITULO">Número 
-                    tarjeta </p></td>
-                <td><p class="PARRAFO">Rese&ntilde;a 
-                    el número de la tarjeta a través de la que se realizó 
-                    el consumo o utilización.</p></td>
-              </tr>
-              <tr> 
-                <td class="titletable"> 
-                  <p class="SUBTITULO">Nombre establecimiento</p></td>
-                <td><p class="PARRAFO">Contiene 
-                    el nombre comercial del establecimiento en que se realizó la 
-                    transacción.</p></td>
-              </tr>
-              <tr> 
-                <td  class="titletable" ><p class="SUBTITULO">Moneda</p></td>
-                <td><p class="PARRAFO">Despliega 
-                    la abreviatura definida por la franquicia que identifica <a href="NUH_005B.html">Moneda</a> 
-                    original de la transacción.</p></td>
-              </tr>
-              <tr> 
-                <td class="titletable"><p class="SUBTITULO">Valor 
-                    total</p></td>
-                <td><p class="PARRAFO">Muestra 
-                    el monto por el cual fue realizada la transacción.</p></td>
-              </tr>
-              <tr> 
-                <td class="titletable"><p class="SUBTITULO">Causal 
-                    de error</p></td>
-                <td><p class="PARRAFO">Campo que contiene el nombre o descriptivo de la causal
-                   de error determinado por la validación del movimiento.</p></td>
-              </tr>
-            </table>
-            <p class="PARRAFO"><span class="SUBTITULO">Detalle:</span>  Si el usuario invoca la opción 
-              Detalle se despliega un formulario con los bloques: Recepción, Valores, 
-              Mercancías, Datos transacción, Establecimiento, Información 
-              general, y Datos pago.</p>
-            <p class="TITLE"><img src="../img/INF_006B16.PNG"></p>
-            <p class="TITLE"><img src="../img/INF_006B26.PNG"></p>
-            <p class="PARRAFO"><span class="SUBTITULO">Localización:</span>  Adicionalmente, 
-              cuenta con un globo de localización que muestra los siguientes campos:</p>
-            <p class="TITLE"><img src="../img/INF_006B14.PNG"></p>
-            
-            <p class="PARRAFO"><a href="INH_040B1.html">Movimiento 
-              diario</a><span > 
-              | </span><a href="INH_006B3.html"></a><a href="INH_040B2.html">Fraudes</a><span
-              ></span><a href="INH_006B5.html"></a> 
-              <span
-              >| </span><a href="INH_040B4.html">Rechazo 
-              cargue</a><span
-              > | </span>  <a href="INH_040B5.html">Contracargos</a>
-            <a href="INH_040B6.html">Efectos 
-              al cobro</a><span
-              > | </span><a href="INH_006B9.html"></a><a href="INH_040B7.html">Intercambio</a><span
-              > | </span><a href="INH_040B8.html">Rechazo 
-              cargue convenios</a><span
-              > | </span>  <a href="INH_040B5.html"></a> 
-              <a href="INH_040B.html">Ver parámetros</a></p>
-            
-        </section>
-    <script src="../js/menu.js"></script>
-</body>
-<div id="footerContainer"></div>
-<script>
+      <div>
+
+        <p class="TITLE">Pendientes - Consulta Movimientos</p>
+
+        <p class="PARRAFO">Las transacciones que por diferentes razones no son
+          enviadas a aplicar al Movimiento débito o a cualquiera de los otros
+          posibles destinos, principalmente por errores de datos, se muestran a
+          través de esta opción. El formulario contiene el enlace Detalle y
+          cuenta en la parte superior con el botón <a
+            href="INH_040B.html">Ver Parámetros</a> para volver al
+          formulario principal.</p>
+        <p class="TITLE"><img loading="lazy" rel="preload"  src="../img/INF_040B3.PNG"></p>
+
+        <table>
+          <tr>
+            <td class="titletable"><p class="SUBTITULO">Fecha
+                comprobante </p></td>
+            <td><p class="PARRAFO">Muestra
+                la fecha física del comprobante de consumo o
+                utilización.</p></td>
+          </tr>
+          <tr>
+            <td class="titletable"><p class="SUBTITULO">Número
+                tarjeta </p></td>
+            <td><p class="PARRAFO">Rese&ntilde;a
+                el número de la tarjeta a través de la que se realizó
+                el consumo o utilización.</p></td>
+          </tr>
+          <tr>
+            <td class="titletable">
+              <p class="SUBTITULO">Nombre establecimiento</p></td>
+            <td><p class="PARRAFO">Contiene el código y nombre comercial del
+                establecimiento en que se realizó la transacción.</p></td>
+          </tr>
+          <tr>
+            <td class="titletable"><p class="SUBTITULO">Moneda</p></td>
+            <td><p class="PARRAFO">Despliega
+                la abreviatura definida por la franquicia que identifica <a
+                  href="NUH_005B.html">Moneda</a>
+                original de la transacción.</p></td>
+          </tr>
+          <tr>
+            <td class="titletable"><p class="SUBTITULO">Valor
+                total</p></td>
+            <td><p class="PARRAFO">Muestra
+                el monto por el cual fue realizada la transacción.</p></td>
+          </tr>
+          <tr>
+            <td class="titletable"><p class="SUBTITULO">Causal
+                de error</p></td>
+            <td><p class="PARRAFO">Campo que contiene el nombre o descriptivo de
+                la causal
+                de error determinado por la validación del movimiento.</p></td>
+          </tr>
+        </table>
+        <p class="PARRAFO"><span class="SUBTITULO">Detalle:</span> Si el usuario
+          invoca la opción Detalle se despliega un formulario con los bloques:
+          Recepción, Valores, Datos transacción, Establecimiento, Información
+          general, y Datos pago.</p>
+        <p class="TITLE"><img loading="lazy" rel="preload"  src="../img/INF_006B16.PNG"></p>
+        <p class="TITLE"><img loading="lazy" rel="preload"  src="../img/INF_006B26.PNG"></p>
+
+        <p class="PARRAFO"><a href="INH_040B1.html">Movimiento
+            debito</a><span>
+            | </span><a href="INH_040B4.html">Rechazo
+            cargue</a><span> | </span><a href="INH_006B9.html"></a><a
+            href="INH_040B7.html">Intercambio</a><span> | </span> <a
+            href="INH_040B5.html">Contracargos</a> | <a
+            href="INH_040B.html">Ver Parámetros</a></p>
+
+      </section>
+      <script src="../js/menu.js"></script>
+    </body>
+    <div id="footerContainer"></div>
+    <script>
   fetch('footer.html')
     .then(response => response.text())
     .then(html => {
       document.getElementById('footerContainer').innerHTML = html;
     });
 </script>
-</html>
+  </html>

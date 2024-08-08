@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="es">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>OpencardWeb®</title>
+        <link rel="stylesheet" href="../css/pages.css">
+        <link rel="stylesheet" href="../css/style.css">
+        <link rel="icon" href="../img/ACQUIRER-logo.JPG" type="image/x-icon">
+    </head>
+
+    <body>
+        <header>
+            <img loading="lazy" rel="preload"  class="logo" src="../img/logoBankbu_.webp"
+                alt="Logo de Mi Empresa">
+            <div id="menuBtn">
+                <img loading="lazy" rel="preload"  class="TITLE" src="../img/menu.PNG" alt="Botón de Menú ">
+            </div>
+        </header>
+        <div id="menuContainer"></div>
+        <script>
+    fetch('menu.html')
+      .then(response => response.text())
+      .then(html => {
+        document.getElementById('menuContainer').innerHTML = html;
+      });
+  </script>
+        <section>
+            <div>
+                <p class="TITLE">Personalizador asignado TD</p>
+
+                <p class="PARRAFO"> Esta función habilita la consulta y mantenimiento de la estructura que, permite definir el responsable de la
+                     personalización de los plásticos, para que los tarjetahabientes propietarios de los mismos, puedan utilizarlos como medio de
+                      pago en el sistema de transporte masivo disponible en la ciudad de residencia. El formulario dispone de un filtro para consultar
+                       los datos, además, los enlaces: <a href="#rutaDigital">Puntos entrega ruta digital</a>, Actualizar,
+                        Eliminar y Adicionar.
+                </p>
+                
+                <p class="TITLE"><img loading="lazy" rel="preload"  src="../img/BBH_039B.PNG"></p>
+
+
+                <p class="PARRAFO"><span class="SUBTITULO">Adicionar:</span> Al activar ese enlace se despliega un formulario con los siguientes campos:</span>
+                </p>
+                <p class="TITLE"><img loading="lazy" rel="preload"  src="../img/BBH_0039B2.PNG"></p>
+
+                <p class="TITLE">Descripción Campos</p>
+                <table>
+                    <tr>
+                        <td class="titletable">
+                            <p class="SUBTITULO">Bin</p>
+                        </td>
+                        <td>
+                            <p class="PARRAFO">Campo numérico obligatorio, en el que debe seleccionarse de la lista de valores adjunta, el Bank Identification Number BIN o prefijo del producto para el que se va a definir el personalizador de los plásticos de dicho producto, poblada en la opción <a href="MEH_001B.html">Definición de bines</a> y filtrada por Tipo de bin: Electron y Débito.</p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="titletable">
+                            <p class="SUBTITULO">Modelo plástico</p>
+                        </td>
+                        <td>
+                            <p class="PARRAFO">Campo numérico obligatorio, en el que debe seleccionarse de la lista de valores adjunta, el modelo de plástico correspondiente, asociado al Bin para el cual se está definiendo o, eventualmente, modificando los datos, la cual se pobla en la opción <a href="NUH_057B.html">Modelos plástico</a>. </p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="titletable">
+                            <p class="SUBTITULO">Chip</p>
+                        </td>
+                        <td>
+                            <p class="PARRAFO">Campo que posee lista de valores de la que debe seleccionarse entre Si o No, el Bin para el que se va a definir el personalizador de los plásticos, corresponde a una tarjeta con dicha tecnología. </p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="titletable">
+                            <p class="SUBTITULO">Contactless
+                            </p>
+                        </td>
+                        <td>
+                            <p class="PARRAFO">Campo que posee lista de valores, de la que debe seleccionarse entre: Tarjeta, Celular micro SD o Celular simcard, el dispositivo en el que se habilita dicha funcionalidad.
+
+                            </p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="titletable">
+                            <p class="SUBTITULO">Sistema transporte</p>
+                        </td>
+                        <td>
+                            <p class="PARRAFO">Campo numérico en el que se puede digitar el código del <a href="BBH_027B.html">sistema de transporte</a> para el que se habilita el dispositivo Contact less, o con lista de valores de la que se debe seleccionar dicho sistema.
+                            </p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="titletable">
+                            <p class="SUBTITULO">Personal</p>
+                        </td>
+                        <td>
+                            <p class="PARRAFO">	
+                                Campo que posee lista de valores de la que debe seleccionarse entre Si o No, el Bin para el que se va a definir el personalizador de los plásticos, corresponde a una tarjeta personal o empresarial.  </p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="titletable">
+                            <p class="SUBTITULO">Personalizador</p>
+                        </td>
+                        <td>
+                            <p class="PARRAFO">Campo numérico en el que se puede digitar el código del <a href="NUH_063B.html">Proveedor</a>, filtrado por aquellos que ofrecen realce. 
+                            </p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="titletable">
+                            <p class="SUBTITULO">Activa</p>
+                        </td>
+                        <td>
+                            <p class="PARRAFO">Campo que posee lista de valores de la que debe seleccionarse entre Si o No, el Bin para el que se va a definir el personalizador de los plásticos, corresponde a una tarjeta personal o empresarial.    </p>
+                        </td>
+                    </tr>
+                </table>
+               
+                 <p class="PARRAFO"><strong class="TITLE">Actualizar:</strong> Al activar ese enlace se despliega un formulario en el cual, los dos únicos campos no modificables son Bin y Modelo plástico:</p>
+                </p>
+                <p class="TITLE"><img loading="lazy" rel="preload"  src="../img/BBH_0039B3.PNG"></p>
+
+                <p class="PARRAFO"><a name="rutaDigital"></a> <span class="SUBTITULO">Puntos entrega ruta digital:</span> A través de esta funcionalidad, la entidad puede vincular un punto de <a href="PLH_006B.html">entrega</a> con una ciudad, e incluso, definir si dicho punto está activo o no. El formulario disponde de los enlaces Actualizar, Eliminar y Adicionar: </p>
+                <p class="TITLE"><img loading="lazy" rel="preload"  src="../img/BBH_039B4.PNG"></p>
+                <p class="PARRAFO"><span class="SUBTITULO">Adicionar (- Puntos entrega ruta digital):</span> Al activar ese enlace se despliega un formulario con los siguientes campos: </p>
+                <p class="TITLE"><img loading="lazy" rel="preload"  src="../img/BBH_0039B5.PNG"></p>
+                <p class="TITLE">Descripción De Campos</p>
+                <table>
+                <tr>
+                    <td class="titletable">
+                        <p class="SUBTITULO">Punto entrega
+
+                        </p>
+                    </td>
+                    <td>
+                        <p class="PARRAFO">	
+                            Campo numérico de una posición, obligatorio, en el que puede registrarse o seleccionarse de la lista de valores poblada en <a href="PLH_006B.html">Puntos de entrega</a> de la que debe seleccionarse aquel punto a definir o, eventualmente, modificar.           </td>
+                </tr>
+                <tr>
+                    <td class="titletable">
+                        <p class="SUBTITULO">Ciudad</p>
+                    </td>
+                    <td>
+                        <p class="PARRAFO">Campo obligatorio que posee lista de valores poblada a través de la opción <a href="NUH_003B.html">Entidades territoriales</a> de la que debe seleccionarse el código correspondiente.          </p>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="titletable">
+                        <p class="SUBTITULO">Estado</p>
+                    </td>
+                    <td>
+                        <p class="PARRAFO">Campo que posee lista de valores, con el valor Inactivo por defecto, y pudiendo tener valor Activo, de la que debe seleccionarse aquel que corresponda a la condición del punto de entrega a definir o, eventualmente, modificar.
+
+                        </td>
+                </tr>
+            </table>
+
+            <p class="PARRAFO"><strong class="TITLE">Actualizar (- Puntos entrega ruta digital):</strong> Al activar ese enlace se despliega un formulario en el cual, el único campo modificable es Estado:</p>
+                            <p class="TITLE"><img loading="lazy" rel="preload"  src="../img/BBH_0039B6.PNG"></p>
+            </div>
+        </section>
+        <script src="../js/menu.js"></script>
+    </body>
+    <div id="footerContainer"></div>
+    <script>
+  fetch('footer.html')
+    .then(response => response.text())
+    .then(html => {
+      document.getElementById('footerContainer').innerHTML = html;
+    });
+</script>
+</html>

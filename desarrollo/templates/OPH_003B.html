@@ -12,9 +12,9 @@
 
   <body>
     <header>
-      <img class="logo" src="../img/logoBankbu_.PNG" alt="Logo de Mi Empresa">
+      <img loading="lazy" rel="preload"  class="logo" src="../img/logoBankbu_.webp" alt="Logo de Mi Empresa">
       <div id="menuBtn">
-        <img class="TITLE" src="../img/menu.PNG" alt="Botón de Menú ">
+        <img loading="lazy" rel="preload"  class="TITLE" src="../img/menu.PNG" alt="Botón de Menú ">
       </div>
     </header>
     <div id="menuContainer"></div>
@@ -35,9 +35,9 @@
           del filtro, la entidad puede consultar la información o resultado de
           la ejecución, en una fecha anterior en particular, de los diferentes
           Grupos y/o Procesos.</p>
-        <p class="TITLE"><img src="../img/OPF_003E.PNG"></p>
+        <p class="TITLE"><img loading="lazy" rel="preload"  src="../img/OPF_003E.PNG"></p>
 
-        <p class="TITLE">Descripción de campos</p>
+        <p class="TITLE">Criterios del Filtro</p>
         <table width=769>
           <tr>
             <td class="SUBTITULO">
@@ -80,18 +80,85 @@
           </tr>
         </table>
 
-        <p class="PARRAFO">Una vez seleccionada la combinatoria de criterios de interés, al activar el botón Buscar, el sistema retorna la información de los registros que coincidan.</p>
-        <p class="PARRAFO">El formulario cuenta con el enlace Procesos el que, al activarse, despliega un nuevo formulario, en el cual se muestran los procesos pertenecientes al Grupo desde el que fue invocado, mostrando los datos correspondientes al resultado obtenido en el momento en que fue lanzado cada proceso: </p>
-        <p class="TITLE"><img src="../img/OPF_003E1.PNG"></p>
+        <p class="PARRAFO">Una vez seleccionada la combinatoria de criterios de interés, al activar el botón Buscar, el sistema retorna la información de los registros que coincidan. </p>
+        <p class="TITLE"><img loading="lazy" rel="preload"  src="../img/OPF_003E1.PNG"></p>
         <p class="TITLE">Descripcion Campos</p>
+
         <table>
           <tr>
             <td class="SUBTITULO">
-              <p class="SUBTITULO #1">Código proceso </p>
+              <p class="SUBTITULO #1">
+                Código grupo
+              </p>
             </td>
             <td>
-              <p class="PARRAFO #1">Campo en el que se ilustra el dato que identifica a cada uno de los procesos, que hacen parte del Grupo desde el cual fue invocado el enlace correspondiente.</p>
+              <p class="PARRAFO #1">Campo en el que se ilustra el dato que identifica a cada uno de los grupos, que fueron ejecutados durante la fecha que se está consultando.
+
+              </td>
+          </tr>
+          <tr>
+            <td class="titletable">
+              <p class="SUBTITULO">Usuario</p>
             </td>
+            <td>
+              <p class="PARRAFO">Campo que muestra el nombre del usuario de la base de datos, que el sistema registra como responsable de ordenar la ejecución del grupo de procesos en la fecha consultada.
+
+              </p>
+            </td>
+          </tr>
+          <tr>
+            <td class="titletable">
+              <p class="SUBTITULO">Corrida </p>
+            </td>
+            <td>
+              <p class="PARRAFO">En este campo se muestra el número acumulado o cantidad de veces que se ha ejecutado el grupo de procesos en la misma fecha que se está consultando.
+
+
+              </p>
+            </td>
+          </tr>
+          <tr>
+            <td class="SUBTITULO">Descripción
+            </span></td>
+          <td>
+            <p class="PARRAFO">Campo que ilustra el nombre del grupo de procesos ejecutado en la fecha consultada.
+            </p>
+          </td>
+        </tr>
+        <tr>
+          <td class="titletable">
+            <p class="SUBTITULO">Estado proceso
+            </p>
+          </td>
+          <td>
+            <p class="PARRAFO">Campo que ilustra si el grupo de procesos terminó o no de forma exitosa para la fecha consultada.
+
+            </p>
+          </td>
+        </tr>
+        <tr>
+          <td class="titletable">
+            <p class="SUBTITULO">Hora</p>
+          </td>
+          <td>
+            <p class="PARRAFO">Campo que ilustra en formato militar HH:MM:SS el momento en que finalizó la ejecución del grupo de procesos.
+
+            </p>
+          </td>
+        </tr>
+       
+      </table>
+      <p class="PARRAFO">El formulario cuenta con el enlace Procesos el que, al activarse, despliega un nuevo formulario, en el cual se muestran los procesos pertenecientes al Grupo desde el que fue invocado, mostrando los datos correspondientes al resultado obtenido en el momento en que fue lanzado cada proceso:
+        <p class="TITLE"><img loading="lazy" rel="preload"  src="../img/OPF_003E3.PNG"></p>
+      </p>
+        <table>
+          <tr>
+            <td class="SUBTITULO">
+              <p class="SUBTITULO #1">
+                Secuencia </p>
+            </td>
+            <td>
+              <p class="PARRAFO #1">Campo que corresponde al identificador asignado por el sistema, a cada objeto lógico o proceso, al momento de crear el registro en la opción <a href="OPH_001B.html">Definición grupos de procesos - Procesos</a></td>
           </tr>
           <tr>
             <td class="titletable">
@@ -103,10 +170,12 @@
           </tr>
           <tr>
             <td class="titletable">
-              <p class="SUBTITULO">Secuencia de ejcución </p>
+              <p class="SUBTITULO">Descripcion</p>
             </td>
             <td>
-              <p class="PARRAFO">Campo que indica el número de veces que fue ejecutado el proceso en la fecha consultada.
+              <p class="PARRAFO">Campo que muestra el nombre del procedimiento o programa ejecutado en la fecha consultada.
+
+
               </p>
             </td>
           </tr>
@@ -119,28 +188,50 @@
         </tr>
         <tr>
           <td class="titletable">
-            <p class="SUBTITULO">Ejecutado por</p>
+            <p class="SUBTITULO">Usuario</p>
           </td>
           <td>
-            <p class="PARRAFO">Campo que ilustra el dato del Usuario logueado en el aplicativo con el que se ordenó la ejecución de cada proceso que pertenece al Grupo consultado.
+            <p class="PARRAFO">Campo que muestra el nombre del usuario de la base de datos, que el sistema registra como responsable de ordenar la ejecución del proceso en la fecha consultada.
+
             </p>
           </td>
         </tr>
         <tr>
           <td class="titletable">
-            <p class="SUBTITULO">Fecha inicio</p>
+            <p class="SUBTITULO">Corrida</p>
           </td>
           <td>
-            <p class="PARRAFO">En este campo se muestra la fecha y hora en la cual se ordenó o lanzó el proceso. En caso de varias ejecuciones para la misma fecha, muestra la información correspondiente a la última vez que se dio inicio al proceso.
+            <p class="PARRAFO">Campo que indica el número de veces que fue ejecutado el proceso en la fecha consultada.
+
             </p>
           </td>
         </tr>
         <tr>
           <td class="titletable">
-            <p class="SUBTITULO">Fecha fin</p>
+            <p class="SUBTITULO">Hora inicio</p>
           </td>
           <td>
-            <p class="PARRAFO">Campo que contiene la fecha y hora en la que finalizó la ejecución del proceso. En caso de varias ejecuciones para la misma fecha, muestra la información correspondiente a la finalización de la última vez que se corrió el proceso.
+            <p class="PARRAFO">Campo que ilustra en formato militar HH:MM:SS el momento en que inició la ejecución del proceso. En caso de varias ejecuciones para la misma fecha, muestra la información correspondiente a la última vez que se dio inicio al proceso.
+
+            </p>
+          </td>
+        </tr>
+        <tr>
+          <td class="titletable">
+            <p class="SUBTITULO">Hora fin</p>
+          </td>
+          <td>
+            <p class="PARRAFO">Campo que ilustra en formato militar HH:MM:SS el momento en que finalizó la ejecución del proceso. En caso de varias ejecuciones para la misma fecha, muestra la información correspondiente a la finalización de la última vez que se corrió el proceso.
+            </p>
+          </td>
+        </tr>
+        <tr>
+          <td class="titletable">
+            <p class="SUBTITULO">Fecha proceso</p>
+          </td>
+          <td>
+            <p class="PARRAFO">En este campo se muestra la fecha del sistema en la cual se ordenó o lanzó el proceso.
+
             </p>
           </td>
         </tr>

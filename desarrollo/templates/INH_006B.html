@@ -14,9 +14,9 @@
 <body>
 
   <header>
-    <img class="logo" src="../img/logoBankbu_.PNG" alt="Logo de Mi Empresa">
+    <img loading="lazy" rel="preload"  class="logo" src="../img/logoBankbu_.webp" alt="Logo de Mi Empresa">
     <div id="menuBtn">
-      <img class="TITLE" src="../img/menu.PNG" alt="Botón de Menú ">
+      <img loading="lazy" rel="preload"  class="TITLE" src="../img/menu.PNG" alt="Botón de Menú ">
     </div>
   </header>
     <div id="menuContainer"></div>
@@ -33,46 +33,86 @@
       
       <p class="TITLE">Consulta global de intercambio</p>
 
-      <p class="PARRAFO">Mediante esta opción es posible conocer a manera de
-        síntesis y para cada fecha de proceso, el estado del movimiento por
-        origen del mismo.</p>
-      <p class="PARRAFO"><span class="SUBTITULO">Filtro:</span>  El formulario cuenta
-        con un filtro inicial de búsqueda, necesario para la consulta de la
-        información:</p>
-      <p class="TITLE"><img src="../img/INF_006B.PNG"></p>
+      <p class="PARRAFO">Mediante esta opción es posible conocer a manera de síntesis y para cada fecha de proceso, el estado y destino del movimiento por cada origen del mismo que se haya procesado. Al invocarse la opción se despliega un formulario que en la parte superior dispone de un filtro, en el que por defecto se muestra la fecha del sistema, sin embargo, mediante la funcionalidad de un calendario, permite consultar movimiento de días anteriores. En el bloque inferior muestra los diferentes orígenes de movimiento que pueden procesarse en el módulo del Emisor, para los que ya se les haya ingresado o cargado movimiento como también, para los que aún no.</p>
+      <p class="PARRAFO">El formulario dispone de los enlaces: <a href="INH_006B.html#Transacciones">Transacciones</a> | <a href="INH_006B10.html">Movimiento rechazado día anterior</a> | <a href="INH_006B.html#borrarCargue">Borrar cargue</a>.</p>
+      <p class="TITLE"><img loading="lazy" rel="preload"  src="../img/INF_006B.PNG"></p>
 
       <table>
         <tr>
           <td class="titletable">
-            <p class="SUBTITULO">Fecha
-                  proceso </p>
+            <p class="SUBTITULO">Origen</p>
           </td>
           <td>
-            <p class="PARRAFO">Por defecto se muestra la fecha de proceso o del sistema.
-              Si se requiere consultar movimiento de fecha anterior basta con utilizar el filtro
-              seleccionar la fecha deseada.</p>
+            <p class="PARRAFO">Contiene tanto el código como el nombre de los distintos orígenes o fuentes de movimiento definidos en la opción de <a href="NUH_027B.html">Orígenes de transacciones</a>, a través de los que ingresó movimiento para el día señalado en el campo fecha proceso.</p>
+          </td>
+        </tr>
+        <tr>
+          <td class="titletable">
+            <p class="SUBTITULO">Descripción </p>
+          </td>
+          <td>
+            <p class="PARRAFO">Campo en el que aparece el nombre de cada uno de los orígenes de movimiento asociados al dato del campo anterior.</p>
+          </td>
+        </tr>
+        <tr>
+          <td class="titletable">
+            <p class="SUBTITULO">Secuencia </p>
+          </td>
+          <td>
+            <p class="PARRAFO">Campo de salida que ilustra el número asignado por el sistema que permite identificar cada uno de los cargue de archivos o integración de los movimientos ingresados por un mismo origen para una misma fecha de proceso.</p>
+          </td>
+        </tr>
+        <tr>
+          <td class="titletable">
+            <p class="SUBTITULO">Estado</p>
+          </td>
+          <td>
+            <p class="PARRAFO">Campo de salida, el cual, mediante sus posibles valores: Disponible, Bloqueado o Validado, ilustran si el movimiento ingresado o cargado aún no ha sido validado (Bloqueado) o si le fueron aplicados los procesos de validación exitosamente (Validado).</p>
+          </td>
+        </tr>
+        <tr>
+          <td class="titletable">
+            <p class="SUBTITULO">Monto cargado </p>
+          </td>
+          <td>
+            <p class="PARRAFO">Campo que ilustra por origen el valor o cuantía total de las transacciones monetarias contenidas dentro del archivo.</p>
+          </td>
+        </tr>
+        <tr>
+          <td class="titletable">
+            <p class="SUBTITULO">Registros archivo </p>
+          </td>
+          <td>
+            <p class="PARRAFO">Campo de salida que muestra el número total de registros contenidos en cada archivo. Aplica para los orígenes en los que se ingresa movimiento mediante cargue o integración de archivos.</p>
+          </td>
+        </tr>
+        <tr>
+          <td class="titletable">
+            <p class="SUBTITULO">Registros
+              cargados </p>
+          </td>
+          <td>
+            <p class="PARRAFO">Campo de salida que ilustra el número de registros efectivamente cargados del archivo. Aplica para los orígenes en los que se ingresa movimiento mediante cargue o integración de archivos.</p>
+          </td>
+        </tr>
+        <tr>
+          <td class="titletable">
+            <p class="SUBTITULO">Comentarios </p>
+          </td>
+          <td>
+            <p class="PARRAFO">Campo que ilustra las observaciones efectuadas por el operador a través de la opción de <a href="INH_001B.html">Procesamiento por origen</a> mediante la que se argumentan los motivos por los cuales no fue cargado un archivo.</p>
           </td>
         </tr>
       </table>
 
-      <p class="PARRAFO">Al cargar la información a través del botón Buscar, se muestra el siguiente
-         formulario que contiene las opciones: Transacciones | 
-         <a href="INH_006B10.html" >Movimiento rechazado día anterior</a>| Borrar cargue | Ver errores.</p>
-      <p class="TITLE"><img src="../img/INF_006B1.PNG"></p>
+      <p class="PARRAFO"><span class="SUBTITULO">Transacciones:</span> A través de este enlace el sistema muestra un nuevo formulario que dispone de los siguientes enlaces:
+        <a href="INH_006B2.html"> Movimiento débito</a>,
+        <a href="INH_006B1.html"> Tapa contable</a>,
+        <a href="INH_006B6.html"> Contracargos</a>,   
+        <a href="INH_006B5.html"> Pendientes débito</a>,
+        <a href="INH_006B3.html"> Rechazo cargue</a>,
+        <a href="INH_006B9.html"> Intercambio</a>.</p>
 
-      <p class="PARRAFO"><span class="PARRAFO"><span class="SUBTITULO">Transacciones:</span> 
-          A través de este botón el sistema muestra un nuevo formulario
-          con las siguientes opciones en la parte superior:</span> 
-        
-          <a href="INH_006B1.html" >Tapa contable</a>, <a href="INH_006B2.html" >Movimiento
-            diario</a>, <a href="INH_006B3.html" >Rechazo cargue</a>, <a href="INH_006B4.html"
-            >Fraudes</a>,
-          <a href="INH_006B5.html" >Pendientes</a>, <a href="INH_006B6.html"
-            >Contracargos</a>,
-          <a href="INH_006B7.html" >Intercambio</a>, <a href="INH_006B8.html" >Efectos
-            al cobro</a>, <a href="INH_006B9.html" >Rechazo cargue convenios</a>.
-        
-      </p>
       <p class="PARRAFO">A través de estas opciones se presenta
         de manera detallada la desagregación del conjunto de transacciones,
         las que por efecto de las validaciones toman diferente fin; Exceptuando la
@@ -81,12 +121,13 @@
         desplegar formularios adicionales que contienen información detallada
         de cada una de ellas.
       </p>
-      <p class="TITLE"><img src="../img/INF_006B3.PNG"></p>
+      <p class="TITLE"><img loading="lazy" rel="preload"  src="../img/INF_006B1.PNG"></p>
+
 
       <p class="PARRAFO"><span class="SUBTITULO">Filtro:</span>  El formulario
         cuenta con un filtro inicial de búsqueda, necesario para la consulta
         de la información:</p>
-      <p class="TITLE"><img src="../img/INF_006B2.PNG"></p>
+      <p class="TITLE"><img loading="lazy" rel="preload"  src="../img/INF_006B2.PNG"></p>
 
       <table>
         <tr>
@@ -133,33 +174,17 @@
           </td>
         </tr>
       </table>
-
-      <p class="PARRAFO"><span class="SUBTITULO">Detalle:</span>  Si el usuario invoca
-        la opción Detalle se despliega el siguiente formulario: </p>
-      <p class="TITLE"><img src="../img/INF_006B3.1.PNG"></p>
-      <p class="PARRAFO"><span class="SUBTITULO">Borrar cargue:</span>  Este enlace permite eliminar los registros que han 
-        ingresado al sistema en la fecha de proceso, mediante el cargue de archivos, siempre 
-        y cuando no se hayan ejecutado aún los procesos que aplican dicho movimiento.</p>
-
-        <p class="PARRAFO"><span class="SUBTITULO">Ver errores:</span>  La funcionalidad de este enlace permite 
-          visualizar los registros completos de aquellos orígenes para los cuales su movimiento proviene de cargue de archivos,
-           los que, al surtir las validaciones, presentan inconsistencias o datos errados que impiden que los registros puedan 
-           ser procesados, identificando la causa del error.</p>
-
-<p class="PARRAFO"><span class="SUBTITULO">Transacciones:</span>  A través de este enlace, el sistema muestra un nuevo formulario con los siguientes enlaces 
-  en la parte superior:<a href="INH_006B1.html"> Tapa contable</a>,<a href="INH_006B2.html"> Movimiento diario</a>,<a href="INH_006B3.html"> Rechazo cargue</a>,<a href="INH_006B4.html"> Fraudes</a>,<a href="INH_006B5.html"> Pendientes</a>,<a href="INH_006B6.html"> Contracargos</a>,<a href="INH_006B7.html"> Intercambio</a>, 
- <a href="INH_006B8.html"> Efectos al cobro</a>,<a href="INH_006B9.html"> Rechazo cargue convenios</a>, los cuales se muestran o no dinámicamente, dependiendo de las validaciones 
-  que realice el sistema, permitiendo conocer así el destino del movimiento ingresado, por cada origen.</p>
-
-      <p class="PARRAFO"><a href="INH_006B1.html" >Tapa contable</a> | </span><a href="INH_006B2.html"
-          >Movimiento
-          diario</a> | </span><a href="INH_006B3.html" >Rechazo
-          cargue</a> | </span><a href="INH_006B4.html" >Fraudes</a> | </span><a
-          href="INH_006B5.html" >Pendientes</a>
-            | </span><a href="INH_006B7.html" >Intercambio</a> | </span><a
-          href="INH_006B8.html" >Efectos
-          al cobro</a> | </span><a href="INH_006B9.html" >Rechazo
-          cargue convenios</a></p>
+      <p class="PARRAFO"><a name="borrarCargue"></a> <span class="SUBTITULO">Borrar cargue:</span>  Este enlace invoca la funcionalidad que permite eliminar los registros que han ingresado al sistema en la fecha de proceso, mediante el cargue de archivos, siempre y cuando no se hayan ejecutado aún los procesos que aplican dicho movimiento.</p>
+        <p class="TITLE"><img loading="lazy" rel="preload"  src="../img/INF_006B3.1.PNG"></p>
+       
+        <p class="PARRAFO"> 
+          <a href="INH_006B2.html">Movimiento débito</a> |
+          <a href="INH_006B6.html">Contracargos</a> |
+          <a href="INH_006B1.html"> Tapa contable</a> |     
+          <a href="INH_006B5.html">Pendientes débito</a> |
+          <a href="INH_006B3.html">Rechazo cargue</a> |
+          <a href="INH_006B9.html">Intercambio</a>
+         </p>
 
   </section>
   <script src="../js/menu.js"></script>

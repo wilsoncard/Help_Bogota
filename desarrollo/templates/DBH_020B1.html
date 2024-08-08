@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="es">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>OpencardWeb®</title>
+        <link rel="stylesheet" href="../css/pages.css">
+        <link rel="stylesheet" href="../css/style.css">
+        <link rel="icon" href="../img/ACQUIRER-logo.JPG" type="image/x-icon">
+    </head>
+
+    <body>
+
+        <header>
+            <img loading="lazy" rel="preload"  class="logo" src="../img/logoBankbu_.webp"
+                alt="Logo de Mi Empresa">
+            <div id="menuBtn">
+                <img loading="lazy" rel="preload"  class="TITLE" src="../img/menu.PNG" alt="Botón de Menú ">
+            </div>
+        </header>
+        <div id="menuContainer"></div>
+        <script>
+    fetch('menu.html')
+      .then(response => response.text())
+      .then(html => {
+        document.getElementById('menuContainer').innerHTML = html;
+      });
+  </script>
+
+        <section>
+            <div>
+
+                <p class="TITLE">Cambio sucursal</p>
+
+                <p class="PARRAFO">La funcionalidad de este formulario invocada
+                    desde la opción Generación de novedades débito, permite
+                    modificar el dato de la sucursal en la que se solicitó la
+                    tarjeta débito del cliente. Luego de diligenciado el único
+                    dato requerido, mediante el botón Guardar, el sistema
+                    realiza las validaciones a que haya lugar y aplica la
+                    novedad.
+
+                </p>
+                <p class="TITLE"><img loading="lazy" rel="preload"  src="../img/DBF_020E1.PNG"></p>
+
+                <p class="TITLE">Descripción de campos</p>
+                <div>
+                    <table>
+                        <tr>
+                            <td class="titletable"><p class="SUBTITULO">Novedad
+                                </p></td>
+                            <td><p class="PARRAFO">Al desplegarse el formulario,
+                                    por defecto trae el código y nombre de la
+                                    sucursal actual del plástico, es un campo
+                                    obligatorio, en el que se puede ingresar o
+                                    seleccionar de la lista de valores poblada
+                                    en la opción <a href="NUH_020B.html">Estructura orgánica</a>,
+                                    la nueva sucursal a la que quedaría
+                                    vinculada la tarjeta débito.</p></td>
+                        </tr>
+
+                    </table>
+                </div>
+
+            </section>
+            <script src="../js/menu.js"></script>
+        </body>
+        <div id="footerContainer"></div>
+        <script>
+  fetch('footer.html')
+    .then(response => response.text())
+    .then(html => {
+      document.getElementById('footerContainer').innerHTML = html;
+    });
+</script>
+    </html>

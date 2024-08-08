@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="es">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>OpencardWeb®</title>
+        <link rel="stylesheet" href="../css/pages.css">
+        <link rel="stylesheet" href="../css/style.css">
+        <link rel="icon" href="../img/ACQUIRER-logo.JPG" type="image/x-icon">
+    </head>
+
+    <body>
+        <header>
+            <img loading="lazy" rel="preload"  class="logo" src="../img/logoBankbu_.webp"
+                alt="Logo de Mi Empresa">
+            <div id="menuBtn">
+                <img loading="lazy" rel="preload"  class="TITLE" src="../img/menu.PNG" alt="Botón de Menú ">
+            </div>
+        </header>
+        <div id="menuContainer"></div>
+        <script>
+      fetch('menu.html')
+        .then(response => response.text())
+        .then(html => {
+          document.getElementById('menuContainer').innerHTML = html;
+        });
+    </script>
+
+        <section>
+            <div>
+
+                <p class="TITLE">Parámetros impuesto financiero</p>
+
+                <p class="PARRAFO">A través de este formulario invocado desde
+                    <a href="NUH_027B.html">orígenes de transacciones</a> se
+                    registran las condiciones
+                    particulares válidas para el origen seleccionado por el
+                    usuario. El formulario contiene los enlaces: Transacciones,
+                    Adicionar y Eliminar.</p>
+                <p class="TITLE"><img loading="lazy" rel="preload"  src="../img/NUH_137B.PNG"></p>
+
+                <p class="PARRAFO"><span class="SUBTITULO">Adicionar:</span> Al
+                    activar ese enlace se despliega un formulario en el cual
+                    todos los campos son modificables.</p>
+                <p class="TITLE"><img loading="lazy" rel="preload"  src="../img/NUH_137B2.PNG"></p>
+
+                <p class="TITLE">Descripción De Campos</p>
+
+                <table>
+                    <tr>
+                        <td class="titletable">
+                            <p class="SUBTITULO">Tipo identificación
+
+                            </p>
+                        </td>
+                        <td>
+                            <p class="PARRAFO">Campo obligatorio que posee lista
+                                de valores poblada en <a
+                                    href="NUH_008B.html">Tipos de
+                                    identificación</a>,
+                                de la que debe seleccionarse o digitarse el
+                                código del tipo de identificación para el que se
+                                va a vincular o relacionar alguno de los
+                                conceptos de transacción
+                            </p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="titletable">
+                            <p class="SUBTITULO">Concepto</p>
+                        </td>
+                        <td>
+                            <p class="PARRAFO">Campo obligatorio que posee lista
+                                de valores poblada en <a
+                                    href="NUH_008B.html">Conceptos
+                                    transacción</a>,
+                                de la que debe seleccionarse el concepto los que
+                                se puede registrar el código que identifica a la
+                                entidad financiera ante cada una de las
+                                respectivas Redes.
+
+                            </p>
+                        </td>
+                    </tr>
+
+                </table>
+                <p class="PARRAFO"><span class="SUBTITULO">Transacciones:</span>
+                    Mediante este formulario se permite relacionar las distintas
+                    transacciones internas o por empresa, a las que la entidad
+                    determina no se les debe aplicar el impuesto financiero.</p>
+                <p class="TITLE"><img loading="lazy" rel="preload"  src="../img/NUH_137B1.PNG"></p>
+
+                <p class="PARRAFO"><span class="SUBTITULO">Adicionar:</span>
+                    Al activar ese enlace se despliega el siguiente
+                    formulario:</p>
+                <p class="TITLE"><img loading="lazy" rel="preload"  src="../img/NUH_137B3.PNG"></p>
+                <table>
+                    <tr>
+                        <td class="titletable">
+                            <p class="SUBTITULO">Transacción</p>
+                        </td>
+                        <td>
+                            <p class="PARRAFO">Campo obligatorio que posee lista
+                                de valores poblada en <a href="MEH_003B.html">Transacciones por empresa</a>,
+                                de la que debe seleccionarse o digitar el código
+                                de la transacción interna a incluir como exenta
+                                del cobro del impuesto financiero.
+
+                            </p>
+                        </td>
+                    </tr>
+
+                </table>
+
+            </section>
+            <script src="../js/menu.js"></script>
+
+            <div id="footerContainer"></div>
+            <script>
+  fetch('footer.html')
+    .then(response => response.text())
+    .then(html => {
+      document.getElementById('footerContainer').innerHTML = html;
+    });
+</script>
+        </body>
+
+    </html>

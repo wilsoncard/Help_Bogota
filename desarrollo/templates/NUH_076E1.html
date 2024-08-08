@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>OpencardWeb®</title>
+  <link rel="stylesheet" href="../css/pages.css">
+  <link rel="stylesheet" href="../css/style.css">
+  <link rel="icon" href="../img/ACQUIRER-logo.JPG" type="image/x-icon">
+</head>
+
+<body>
+  <header>
+    <img loading="lazy" rel="preload"  class="logo" src="../img/logoBankbu_.webp" alt="Logo de Mi Empresa">
+    <div id="menuBtn">
+      <img loading="lazy" rel="preload"  class="TITLE" src="../img/menu.PNG" alt="Botón de Menú ">
+    </div>
+  </header>
+    <div id="menuContainer"></div>
+  <script>
+    fetch('menu.html')
+      .then(response => response.text())
+      .then(html => {
+        document.getElementById('menuContainer').innerHTML = html;
+      });
+  </script>
+
+  <section>
+    <div>
+      
+        
+      <p class="TITLE">Configuración
+        sistema </p>
+    <p class="PARRAFO">A través de esta pantalla se permite la consulta
+      y mantenimiento de la tabla en la que
+      se registran las características, básicamente
+      técnicas, relacionadas con la manera en que
+      se ha conformado el sistema operativo sobre el que funciona la base de
+      datos. El formulario contiene los enlaces Actualizar y eliminar.</p>
+   
+    <p class="TITLE"><img loading="lazy" rel="preload"  src="../img/NUF_076E5.PNG"></p>
+
+    <p class="PARRAFO"><strong class="TITLE">Actualizar:</strong> Al invocar ese enlace se despliega un formulario en el cual todos los campos son modificables:</p>
+        <p class="TITLE"><img loading="lazy" rel="preload"  src="../img/NUF_076E15.PNG"></p>
+    <table>
+      <tr>
+        <td class="titletable">
+          <p class="SUBTITULO">Sistema operativo</p>
+        </td>
+        <td>
+          <p class="PARRAFO">Campo que posee lista de valores adjunta de la
+            cual es posible seleccionar entre
+            Win.N.T, Unix u Otro, el sistema operativo sobre el que se
+            interactúa con la base
+            de datos correspondiente.</p>
+        </td>
+      </tr>
+      <tr>
+        <td class="titletable">
+          <p class="SUBTITULO">Comando export</p>
+        </td>
+        <td>
+          <p class="PARRAFO">En este campo se almacena el comando del motor de
+            la base de datos utilizado para
+            efectuar la funcionalidad que genera ,a manera de salidas del
+            sistema, archivos tipo exports.</p>
+        </td>
+      </tr>
+      <tr>
+        <td class="titletable">
+          <p class="SUBTITULO">Comando import</p>
+        </td>
+        <td>
+          <p class="PARRAFO">Campo en el que se almacena el comando del motor
+            de la base utilizado para efectuar la
+            funcionalidad que integra los archivos tipo imports.</p>
+        </td>
+      </tr>
+
+      <tr>
+        <td class="titletable">
+          <p class="SUBTITULO">Instancia base de datos</p>
+        </td>
+        <td>
+          <p class="PARRAFO">Este campo identifica el SID (System
+            Identification Database) de la base de datos
+            asociada o utilizada por el Sistema OpenCard&reg; cada vez que un
+            usuario se conecta por medio del mismo.
+          </p>
+        </td>
+      </tr>
+      <tr>
+        <td class="titletable">
+          <p class="SUBTITULO">Tablespace tablas backups</p>
+        </td>
+        <td>
+          <p class="PARRAFO">Campo en el que se registra el nombre que
+            identifica el espacio reservado en la base de
+            datos, en el que se almacenan &lsquo;transitoriamente&rsquo; los
+            backups hasta que dicho proceso es
+            ejecutado nuevamente.</p>
+        </td>
+      </tr>
+      <tr>
+        <td class="titletable">
+          <p class="SUBTITULO">Tablespace índices backups</p>
+        </td>
+        <td>
+          <p class="PARRAFO">En este campo se registra el nombre que
+            identifica el espacio reservado en la base de
+            datos, en el que se ejecuta de manera lógica esta
+            funcionalidad de la herramienta del motor de la
+            base de datos, tendiente a optimizar la restauración de la
+            información contenida en los
+            backups.</p>
+        </td>
+      </tr>
+    </table>
+      
+
+      </div>
+  </section>
+  <script src="../js/menu.js"></script>
+
+  <div id="footerContainer"></div>
+<script>
+  fetch('footer.html')
+    .then(response => response.text())
+    .then(html => {
+      document.getElementById('footerContainer').innerHTML = html;
+    });
+</script>
+</body>
+
+</html>

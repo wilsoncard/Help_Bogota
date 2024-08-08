@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="es">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>OpencardWeb®</title>
+        <link rel="stylesheet" href="../css/pages.css">
+        <link rel="stylesheet" href="../css/style.css">
+        <link rel="icon" href="../img/ACQUIRER-logo.JPG" type="image/x-icon">
+    </head>
+
+    <body>
+        <header>
+            <img loading="lazy" rel="preload"  class="logo" src="../img/logoBankbu_.webp"
+                alt="Logo de Mi Empresa">
+            <div id="menuBtn">
+                <img loading="lazy" rel="preload"  class="TITLE" src="../img/menu.PNG" alt="Botón de Menú ">
+            </div>
+        </header>
+        <div id="menuContainer"></div>
+        <script>
+    fetch('menu.html')
+      .then(response => response.text())
+      .then(html => {
+        document.getElementById('menuContainer').innerHTML = html;
+      });
+  </script>
+        <section>
+            <div>
+
+                <p class="TITLE">Rango de series permitidos por bin</p>
+
+                <p class="PARRAFO">A través de esta opción, la entidad puede
+                    definir por cada Bin autorizado de que disponga, incluso sus
+                    bines propios, para definir rangos de número adicionales
+                    para uso interno. El formulario dispone de un filtro que le
+                    permite utilizar como criterio de búsqueda, el Bin con una
+                    lista adjunta y/o los rangos inicial y final.
+                    Adicionalmente, cuenta con los enlaces: Adicionar y
+                    Eliminar.</p>
+
+                <p class="TITLE"><img loading="lazy" rel="preload"  src="../img/DBH_048E.PNG"></p>
+
+                <p class="PARRAFO"><span class="SUBTITULO">Adicionar:</span> Al
+                    activar ese enlace se muestra el siguiente formulario:</p>
+                <p class="TITLE"><img loading="lazy" rel="preload"  src="../img/DBH_048E1.PNG"></p>
+                <p class="TITLE">Descripción Campos</p>
+                <table>
+                    <tr>
+                        <td class="titletable">
+                            <p class="SUBTITULO">Bin
+
+                            </p>
+                        </td>
+                        <td>
+                            <p class="PARRAFO">Campo obligatorio que posee lista
+                                de valores poblada en <a
+                                    href="MEH_001B.html">Definición de bines</a>
+                                de la cual se debe seleccionar el bin para el
+                                que se requiere definir un nuevo rango.
+
+                            </p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="titletable">
+                            <p class="SUBTITULO">Rango Inicial</p>
+                        </td>
+                        <td>
+                            <p class="PARRAFO">Campo numérico, obligatorio, de
+                                máximo dos dígitos en el que debe registrar el
+                                número a partir del cual se define el nuevo
+                                rango.
+
+                            </p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="titletable">
+                            <p class="SUBTITULO">Rango Final</p>
+                        </td>
+                        <td>
+                            <p class="PARRAFO">Campo numérico, obligatorio, de
+                                máximo dos dígitos en el que debe registrar el
+                                número hasta el cual se define el nuevo rango,
+                                el sistema controla que deba ser mayor al
+                                definido en Rango Inicial.
+                            </p>
+                        </td>
+                    </tr>
+                </table>
+
+            </div>
+        </section>
+        <script src="../js/menu.js"></script>
+        <div id="footerContainer"></div>
+    </body>
+    <script>
+  fetch('footer.html')
+    .then(response => response.text())
+    .then(html => {
+      document.getElementById('footerContainer').innerHTML = html;
+    });
+</script>
+</html>

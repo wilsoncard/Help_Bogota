@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="es">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>OpencardWeb®</title>
+        <link rel="stylesheet" href="../css/pages.css">
+        <link rel="stylesheet" href="../css/style.css">
+        <link rel="icon" href="../img/ACQUIRER-logo.JPG" type="image/x-icon">
+    </head>
+
+    <body>
+        <header>
+            <img loading="lazy" rel="preload"  class="logo" src="../img/logoBankbu_.webp"
+                alt="Logo de Mi Empresa">
+            <div id="menuBtn">
+                <img loading="lazy" rel="preload"  class="TITLE" src="../img/menu.PNG" alt="Botón de Menú ">
+            </div>
+        </header>
+        <div id="menuContainer"></div>
+        <script>
+    fetch('menu.html')
+      .then(response => response.text())
+      .then(html => {
+        document.getElementById('menuContainer').innerHTML = html;
+      });
+  </script>
+
+        <section>
+            <div>
+
+                <p class="TITLE">Plásticos para Activación</p>
+
+                <p class="PARRAFO">Mediante esta función, se habilita la
+                    selección de aquellos plásticos que, durante el proceso de
+                    las diferentes solicitudes, arriban a la etapa de Activación
+                    y que, como resultado de la labor efectuada por las empresas
+                    de mensajería, permite registrar el evento de si el plástico
+                    fue aceptado por el cliente o, si por el contrario este no
+                    pudo ser entregado o fue expresamente rechazado. </p>
+                <p class="PARRAFO">Al invocar la opción, el usuario se encuentra
+                    con un wizard de tres pasos, el primero, corresponde a un
+                    filtro, que permite ubicar la(s) tarjeta(s) que se desea
+                    consultar para generarles la marcación de Activa.</p>
+                <p class="TITLE"><img loading="lazy" rel="preload"  src="../img/PLF_004E.PNG"></p>
+
+                <p class="TITLE">Descripción de campos</p>
+
+                <table>
+                    <tr>
+                        <td class="titletable">
+                            <p class="SUBTITULO">Número
+                                tarjeta </p>
+                        </td>
+                        <td>
+                            <p class="PARRAFO">Campo
+                                alfanumérico de hasta 23 posiciones en el
+                                que se puede ingresar
+                                el número de alguna tarjeta en particular
+                                que se desee consultar
+                                para realce.</p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="titletable">
+                            <p class="SUBTITULO">Nombre
+                                plástico </p>
+                        </td>
+                        <td>
+                            <p class="PARRAFO">En
+                                este campo se ingresa como criterio para la
+                                consulta el nombre
+                                del
+                                cliente tal y como debe ir realzado en el
+                                plástico.</p>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td class="titletable">
+                            <p class="SUBTITULO">Origen registro
+                                plástico </p>
+                        </td>
+                        <td>
+                            <p class="PARRAFO">Campo que posee lista de
+                                valore tipo combo de
+                                la cual se puede seleccionar entre: Débito
+                                Masivo No
+                                Personalizado o Crédito Masivo No
+                                Personalizado, el evento que
+                                dió origen a la solicitud de los plásticos
+                                que se desea
+                                consultar para realce. </p>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td class="titletable">
+                            <p class="SUBTITULO">Secuencia solicitud
+                            </p>
+                        </td>
+                        <td>
+                            <p class="PARRAFO">En este campo numérico se
+                                puede ingresar el
+                                número de la solicitud específica para la
+                                cual se desean
+                                consultar el plástico a realzar.
+
+                            </p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="titletable">
+                            <p class="SUBTITULO">Sucursal
+                            </p>
+                        </td>
+                        <td>
+                            <p class="PARRAFO">Campo con lista de valores
+                                que permite seleccionar la <a
+                                    href="NUH_020B.html">Sucursal</a> en la
+                                que se gestionó la solicitud de las tarjetas
+                                para las cuales se desea activar.
+
+                            </p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="titletable">
+                            <p class="SUBTITULO">Punto entrega
+
+                            </p>
+                        </td>
+                        <td>
+                            <p class="PARRAFO">Campo con lista de valores
+                                que permite
+                                seleccionar el <a href="PLH_006B.html">punto
+                                    de entrega</a>
+                                asociado con las tarjetas para las cuales se
+                                desea consultar y
+                                ejecutar el proceso de realce.
+                            </p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="titletable">
+                            <p class="SUBTITULO">Agente
+                            </p>
+                        </td>
+                        <td>
+                            <p class="PARRAFO">
+                                Campo con lista de valores que permite
+                                seleccionar el <a
+                                    href="NUH_045B.html">Agente</a> asociado
+                                con las tarjetas para las cuales se desea
+                                consultar y activar.
+
+                            </p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="titletable">
+                            <p class="SUBTITULO">Código interno
+
+                            </p>
+                        </td>
+                        <td>
+                            <p class="PARRAFO">En este campo numérico se
+                                puede ingresar el número del código interno
+                                o único asociado a cada tarjeta, para la
+                                cual se desean consultar y activar.
+
+                            </p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="titletable">
+                            <p class="SUBTITULO">Seleccionar tarjetas
+                                masivas
+
+                            </p>
+                        </td>
+                        <td>
+                            <p class="PARRAFO">Campo que posee lista de
+                                valores tipo combo de la que puede
+                                seleccionarse entre: Si o No, se deben
+                                incluir del proceso de activación, a los
+                                plásticos de los procesos de generación
+                                masiva de tarjetas.
+
+                            </p>
+                        </td>
+                    </tr>
+                </table>
+
+                <p class="PARRAFO">Una vez seleccionados los criterios y al
+                    desplazarse a la segunda página del wizard, se muestran los
+                    registros que cumplen con las condiciones indicadas por el
+                    usuario, mostrando para cada uno de ellos: Número de tarjeta
+                    (enmascarado), Nombre a realzar en el plástico, Punto de
+                    entrega, Sucursal, Código agente, Código interno de tarjeta,
+                    Tipo de solicitud, Secuencia solicitud y, un campo para
+                    marcar aquellos registros que se quieran activar, en caso
+                    que el usuario no desee ejecutar la acción para todos los
+                    registros desplegados por los filtros.
+                </p>
+                <p class="PARRAFO">Es de aclarar que, en el caso que las
+                    tarjetas desplegadas correspondan a tipo débito generadas
+                    masivamente, el campo Nombre plástico se mostrará en blanco.
+                </p>
+                <p class="PARRAFO"><span class="PARRAFO">Esta segunda página del
+                        wizard cuenta con dos <a
+                            href="PLH_008B.html#BL_GENERAR">botónes</a>
+                        especiales que le permiten a la entidad Seleccionar o
+                        Deseleccionar todos los registros desplegados en el
+                        formulario y así facilitar avanzar al tercer paso del
+                        wizard.</p>
+                    <p class="TITLE"><img loading="lazy" rel="preload"  src="../img/PLF_004E1.PNG"></p>
+
+                    <p class="PARRAFO">En la tercera página del wizard, se
+                        muestran los registros que el usuario seleccionó, en
+                        caso que éste no se vaya a aplicar para todos los
+                        registros desplegado en la segunda página y mediante el
+                        botón de palomita o visto bueno se ordena la activación
+                        de las correspondientes tarjetas. El formulario cuenta
+                        con el enlace Detalle.</p>
+                    <p class="TITLE"><img loading="lazy" rel="preload"  src="../img/PLF_004E3.PNG"></p>
+
+                    <p class="PARRAFO"><span class="SUBTITULO">Detalle</span>:
+                        Al activar ese enlace se despliega el siguiente
+                        formulario, en el que ninguno de sus campos es
+                        modificable: </p>
+                    
+                    <p class="TITLE"><img loading="lazy" rel="preload"  src="../img/PLF_004E2.PNG"></p>
+
+                    <p class="TITLE">Botones especiales</p>
+                    <p class="PARRAFO"><a name="BL_GENERAR"></a><span
+                            class="SUBTITULO">Seleccionar /
+                            Deseleccionar:</span></span>
+                    Dupla de botones especiales que le permiten a la entidad,
+                    marcar o
+                    desmarcar, todos los registros desplegados en el segundo
+                    paso del wizard
+                    y así facilitar avanzar al tercer paso del mismo.
+                </p>
+                <p class="TITLE"><img loading="lazy" rel="preload"  src="../img/Seleccionar.PNG"></p>
+                <p class="TITLE"><img loading="lazy" rel="preload"  src="../img/Deseleccionar.PNG"></p>
+
+            </section>
+            <script src="../js/menu.js"></script>
+
+            <div id="footerContainer"></div>
+            <script>
+  fetch('footer.html')
+    .then(response => response.text())
+    .then(html => {
+      document.getElementById('footerContainer').innerHTML = html;
+    });
+</script>
+        </body>
+
+    </html>

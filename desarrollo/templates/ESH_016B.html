@@ -1,26 +1,27 @@
 <!DOCTYPE html>
 <html lang="es">
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>OpencardWeb®</title>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>OpencardWeb®</title>
 
-    <link rel="stylesheet" href="../css/pages.css">
-    <link rel="stylesheet" href="../css/style.css">
-    <link rel="icon" href="../img/ACQUIRER-logo.JPG" type="image/x-icon">
-</head>
+        <link rel="stylesheet" href="../css/pages.css">
+        <link rel="stylesheet" href="../css/style.css">
+        <link rel="icon" href="../img/ACQUIRER-logo.JPG" type="image/x-icon">
+    </head>
 
-<body>
+    <body>
 
-    <header>
-        <img class="logo" src="../img/logoBankbu_.PNG" alt="Logo de Mi Empresa">
-        <div id="menuBtn">
-            <img class="TITLE" src="../img/menu.PNG" alt="Botón de Menú ">
-        </div>
-    </header>
-      <div id="menuContainer"></div>
-  <script>
+        <header>
+            <img loading="lazy" rel="preload"  class="logo" src="../img/logoBankbu_.webp"
+                alt="Logo de Mi Empresa">
+            <div id="menuBtn">
+                <img loading="lazy" rel="preload"  class="TITLE" src="../img/menu.PNG" alt="Botón de Menú ">
+            </div>
+        </header>
+        <div id="menuContainer"></div>
+        <script>
     fetch('menu.html')
       .then(response => response.text())
       .then(html => {
@@ -28,154 +29,165 @@
       });
   </script>
 
-    <section>
-        <div>
-           
-            <p class="TITLE">Notas DB/CR a Establecimientos</p>
-                     
-            <p class="PARRAFO">Mediante esta función la entidad efectúa los
-                ajustes débito o crédito a los establecimientos producto de
-                solución a movimientos pendientes de abono o cualquier otro evento
-                que requiera de un ajuste. El formulario cuenta con los siguientes campos:</p>
-            <p class="TITLE"><img src="../img/ESF_016B.PNG"></p>
+        <section>
+            <div>
 
-            <table>
-                <tr>
-                    <td class="titletable">
-                        <p class="SUBTITULO">Fecha</p>
-                    </td>
-                    <td>
-                        <p class="PARRAFO">Corresponde
-                            a la fecha del sistema en la cual se realiza el ajuste a la cuenta del
-                            establecimiento.</p>
-                    </td>
-                </tr>
-                <tr>
-                    <td class="titletable">
-                        <p class="SUBTITULO">Establecimiento</p>
-                    </td>
-                    <td>
-                        <p class="PARRAFO">Campo
-                            que provee de una lista de valores producto del <a href="ESH_008B.html">cargue</a>
-                            y actualización de establecimientos activos de la entidad, de
-                            la que se selecciona el código del <a href="ESH_006B.html">establecimiento</a>,
-                            desplegándose la información básica del mismo.</p>
-                    </td>
-                </tr>
-                <tr>
-                    <td class="titletable">
-                        <p class="SUBTITULO">Número
-                            cuenta</p>
-                    </td>
-                    <td>
-                        <p class="PARRAFO">Este
-                            campo provee una lista de valores correspondiente a los números
-                            de cuenta asociados al establecimiento, producto del <a href="ESH_008B.html">cargue</a>
-                            y actualización de cuentas activas de los establecimientos afiliados
-                            al sistema.</p>
-                    </td>
-                </tr>
-                <tr>
-                    <td class="titletable">
-                        <p class="SUBTITULO">Tipo
-                            cuenta</p>
-                    </td>
-                    <td>
-                        <p class="PARRAFO">Campo
-                            de salida que ilustra la clase de cuenta, Ahorro o Corriente, correspondiente
-                            al número de cuenta de depósitos a afectar.</p>
-                    </td>
-                </tr>
-                <tr>
-                    <td class="titletable">
-                        <p class="SUBTITULO">Marca
+                <p class="TITLE">Notas DB/CR a Establecimientos</p>
+
+                <p class="PARRAFO">Mediante esta funcionalidad, la entidad puede
+                    efectuar ajustes débito o crédito, a los establecimientos,
+                    producto de la solución a movimientos pendientes de abono, o
+                    cualquier otro evento que requiera de un ajuste, luego de
+                    registrar los datos requeridos y activar el botón Salvar. El
+                    formulario cuenta con los siguientes campos:</p>
+                <p class="TITLE"><img loading="lazy" rel="preload"  src="../img/ESF_016B.PNG"></p>
+
+                <table>
+                    <tr>
+                        <td class="titletable">
+                            <p class="SUBTITULO">Fecha</p>
+                        </td>
+                        <td>
+                            <p class="PARRAFO">Campo obligatorio, no editable,
+                                por defecto muestra la fecha del sistema, en
+                                formato DD-MM-AAAA, en la cual se realiza el
+                                ajuste a la cuenta del establecimiento.</p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="titletable">
+                            <p class="SUBTITULO">Establecimiento</p>
+                        </td>
+                        <td>
+                            <p class="PARRAFO">Campo obligatorio, en el que se
+                                puede seleccionar el comercio de la lista de
+                                valores poblada en la opción <a
+                                    href="ESH_006B.html">Información de
+                                    establecimientos</a>, o digitar el código
+                                del
+                                establecimiento, el sistema valida que el dato
+                                ingresado sea válido.</p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="titletable">
+                            <p class="SUBTITULO">Número
                                 cuenta</p>
-                    </td>
-                    <td>
-                        <p class="PARRAFO">Campo
-                            de salida que ilustra, si aplica, la franquicia asociada a la cuenta
-                            de depósitos, acorde con lo definido en la pantalla de <a
-                                href="ESH_006B.html">Información
-                                de establecimientos</a>.</p>
-                    </td>
-                </tr>
-                <tr>
-                    <td class="titletable">
-                        <p class="SUBTITULO">Moneda
+                        </td>
+                        <td>
+                            <p class="PARRAFO">Campo obligatorio, que provee una
+                                lista de valores correspondiente a los números
+                                de cuenta asociados al establecimiento, siempre
+                                y cuando existan registros en el formulario
+                                Cuenta de depósito de la opción <a
+                                    href="ESH_006B.html">Información de
+                                    establecimientos</a>, de la cual debe
+                                seleccionarse
+                                aquella cuenta que será afectada con el
+                                ajuste.</p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="titletable">
+                            <p class="SUBTITULO">Tipo
                                 cuenta</p>
-                    </td>
-                    <td>
-                        <p class="PARRAFO">Campo
-                            de salida que muestra la <a href="NUH_005B.html">moneda</a> en la cual
-                            está expresada la cuenta del establecimiento, y sobre la que
-                            se realizará el ajuste.</p>
-                    </td>
-                </tr>
-                <tr>
-                    <td class="titletable">
-                        <p class="SUBTITULO">Contabilidad
-                                host</p>
-                    </td>
-                    <td>
-                        <p class="PARRAFO">Campo
-                            que posee lista de valores adjunta de la que el usuario debe seleccionar
-                            entre Normal, Convenio o M.compartida el direccionamiento o enrutamiento
-                            que debe darle el host a estos comprobantes para generar la correspondiente
-                            contabilidad.</p>
-                    </td>
-                </tr>
-                <tr>
-                    <td class="titletable">
-                        <p class="SUBTITULO">Concepto</p>
-                    </td>
-                    <td>
-                        <p class="PARRAFO">De
-                            la lista de valores poblada en la opción <a href="ESH_015B.html">Conceptos
-                                contables para ND/NC</a> del presente módulo, se selecciona el
-                            tipo de afectación que se realizará a la cuenta de depósitos
-                            del establecimiento.</p>
-                    </td>
-                </tr>
-                <tr>
-                    <td class="titletable">
-                        <p class="SUBTITULO">Tipo
+                        </td>
+                        <td>
+                            <p class="PARRAFO">Campo de salida que ilustra la
+                                clase de cuenta, Ahorro o Corriente,
+                                correspondiente al número de cuenta de depósitos
+                                a afectar.</p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="titletable">
+                            <p class="SUBTITULO">Marca
+                                cuenta</p>
+                        </td>
+                        <td>
+                            <p class="PARRAFO">Campo de salida que ilustra, la
+                                franquicia asociada a la cuenta de depósitos,
+                                acorde con lo definido en la pantalla de Cuenta
+                                de depósito en la opción <a
+                                    href="ESH_006B.html">Información
+                                    de establecimientos</a>.</p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="titletable">
+                            <p class="SUBTITULO">Moneda
+                                cuenta</p>
+                        </td>
+                        <td>
+                            <p class="PARRAFO">Campo
+                                de salida que muestra la <a
+                                    href="NUH_005B.html">moneda</a> en la cual
+                                está expresada la cuenta del establecimiento, y
+                                sobre la que
+                                se realizará el ajuste.</p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="titletable">
+                            <p class="SUBTITULO">Concepto</p>
+                        </td>
+                        <td>
+                            <p class="PARRAFO">Campo obligatorio que posee lista
+                                de valores poblada en la opción <a href="ESH_015B.html">Conceptos
+                                contables para ND/NC</a>, de la cual debe
+                                seleccionarse el tipo de afectación que se
+                                realizará a la cuenta de depósitos del
+                                establecimiento.</p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="titletable">
+                            <p class="SUBTITULO">Tipo
                                 nota</p>
-                    </td>
-                    <td>
-                        <p class="PARRAFO">Una
-                            vez seleccionado el concepto que afectará la cuenta del establecimiento,
-                            este campo se alimenta con la información definida previamente
-                            en la opción conceptos contables para ND/NC del presente módulo.</p>
-                    </td>
-                </tr>
-                <tr>
-                    <td class="titletable">
-                        <p class="SUBTITULO">Tipo
+                        </td>
+                        <td>
+                            <p class="PARRAFO">Una
+                                vez seleccionado el concepto que afectará la
+                                cuenta del establecimiento,
+                                este campo se alimenta con la información
+                                definida previamente
+                                en la opción conceptos contables para ND/NC del
+                                presente módulo.</p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="titletable">
+                            <p class="SUBTITULO">Tipo
                                 operación</p>
-                    </td>
-                    <td>
-                        <p class="PARRAFO">Una
-                            vez seleccionado el concepto que afectará la cuenta del establecimiento,
-                            este campo se alimenta con la información definida previamente
-                            en la opción conceptos contables para ND/NC del presente módulo.</p>
-                    </td>
-                </tr>
-                <tr>
-                    <td class="titletable">
-                        <p class="SUBTITULO">Valor</p>
-                    </td>
-                    <td>
-                        <p class="PARRAFO">Campo
-                            numérico de 16 posiciones (14 enteros y dos decimales), obligatorio,
-                            en el cual se registra el monto que afectará la cuenta del establecimiento.</p>
-                    </td>
-                </tr>
-            </table>
-    </section>
-    <script src="../js/menu.js"></script>
-</body>
-<div id="footerContainer"></div>
-<script>
+                        </td>
+                        <td>
+                            <p class="PARRAFO">Una
+                                vez seleccionado el concepto que afectará la
+                                cuenta del establecimiento,
+                                este campo se alimenta con la información
+                                definida previamente
+                                en la opción conceptos contables para ND/NC del
+                                presente módulo.</p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="titletable">
+                            <p class="SUBTITULO">Valor</p>
+                        </td>
+                        <td>
+                            <p class="PARRAFO">Campo
+                                numérico de 16 posiciones (14 enteros y dos
+                                decimales), obligatorio,
+                                en el cual se registra el monto que afectará la
+                                cuenta del establecimiento.</p>
+                        </td>
+                    </tr>
+                </table>
+            </section>
+            <script src="../js/menu.js"></script>
+        </body>
+        <div id="footerContainer"></div>
+        <script>
   fetch('footer.html')
     .then(response => response.text())
     .then(html => {
@@ -183,4 +195,4 @@
     });
 </script>
 
-</html>
+    </html>

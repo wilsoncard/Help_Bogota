@@ -1,24 +1,25 @@
 <!DOCTYPE html>
 <html lang="es">
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>OpencardWeb®</title>
-    <link rel="stylesheet" href="../css/pages.css">
-    <link rel="stylesheet" href="../css/style.css">
-    <link rel="icon" href="../img/ACQUIRER-logo.JPG" type="image/x-icon">
-</head>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>OpencardWeb®</title>
+        <link rel="stylesheet" href="../css/pages.css">
+        <link rel="stylesheet" href="../css/style.css">
+        <link rel="icon" href="../img/ACQUIRER-logo.JPG" type="image/x-icon">
+    </head>
 
-<body>
-    <header>
-        <img class="logo" src="../img/logoBankbu_.PNG" alt="Logo de Mi Empresa">
-        <div id="menuBtn">
-            <img class="TITLE" src="../img/menu.PNG" alt="Botón de Menú ">
-        </div>
-    </header>
-      <div id="menuContainer"></div>
-  <script>
+    <body>
+        <header>
+            <img loading="lazy" rel="preload"  class="logo" src="../img/logoBankbu_.webp"
+                alt="Logo de Mi Empresa">
+            <div id="menuBtn">
+                <img loading="lazy" rel="preload"  class="TITLE" src="../img/menu.PNG" alt="Botón de Menú ">
+            </div>
+        </header>
+        <div id="menuContainer"></div>
+        <script>
     fetch('menu.html')
       .then(response => response.text())
       .then(html => {
@@ -26,194 +27,192 @@
       });
   </script>
 
-    <section>
-        <div>
-            
-            <p class="TITLE">Consultar solicitudes</p>
-                        
-            <p class="PARRAFO">Esta opción permite consultar las diferentes solicitudes que se encuentran en cualquiera
-                de las
-                etapas por las que puedan pasar las solicitudes definidas por la entidad. La forma filtra con base en el
-                perfil del
-                usuario el tipo de solicitudes que le son permitidas consultar.</p>
-            <p class="PARRAFO">El formulario cuenta con un filtro de búsqueda y la
-                opción Solicitudes en la parte superior.</p>
-            <p class="PARRAFO"><span class="SUBTITULO">Filtro:</span> Se pueden realizar
-                consultas a través de las siguientes opciones: </p>
-            <p class="TITLE"><img src="../img/SOF_022B1.PNG"></p>
+        <section>
+            <div>
 
-            <table>
-                <tr>
-                    <td class="titletable">
-                        <p class="SUBTITULO">Secuencia
-                        </p>
-                    </td>
-                    <td>
-                        <p class="PARRAFO">Aparece
-                            el número consecutivo que identifica a cada una de las solicitudes
-                            que se han realizado en el sistema.</p>
-                    </td>
-                </tr>
-                <tr>
-                    <td class="titletable">
-                        <p class="SUBTITULO">Tipo
-                            solicitud </p>
-                    </td>
-                    <td>
-                        <p class="PARRAFO">Campo
-                            que ilustra la clase de solicitud que ha realizado el cliente; además
-                            posee lista de valores la cual puede ser utilizada como criterio para
-                            realizar consultas por los distintos tipos o clases de solicitudes.</p>
-                    </td>
-                </tr>
-                <tr>
-                    <td class="titletable">
-                        <p class="SUBTITULO">Fecha
+                <p class="TITLE">Consultar solicitudes</p>
+
+                <p class="PARRAFO">Esta opción permite consultar las diferentes
+                    solicitudes que se encuentran en cualquiera de las etapas
+                    por las que puedan pasar las solicitudes definidas por la
+                    entidad. La forma cuenta con un filtro de búsqueda, y lo
+                    hace con base en el perfil del usuario el tipo de
+                    solicitudes que le son permitidas consultar.</p>
+                <p class="PARRAFO"><span class="SUBTITULO">Filtro:</span> Se
+                    pueden realizar consultas a través de los siguientes
+                    criterios:</p>
+                <p class="TITLE"><img loading="lazy" rel="preload"  src="../img/SOF_022B1.PNG"></p>
+
+                <table>
+                    <tr>
+                        <td class="titletable">
+                            <p class="SUBTITULO">Secuencia
+                            </p>
+                        </td>
+                        <td>
+                            <p class="PARRAFO">Permite registrar el número
+                                consecutivo que identifica a cada una de las
+                                solicitudes que se han gestionado en el sistema
+                                y que se requiere consultar.
+
+                            </p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="titletable">
+                            <p class="SUBTITULO">Tipo
+                                tarjeta </p>
+                        </td>
+                        <td>
+                            <p class="PARRAFO">Campo de salida, por defecto
+                                tiene el valor Débito.
+                            </p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="titletable">
+                            <p class="SUBTITULO">Fecha
                                 ingreso</p>
-                    </td>
-                    <td>
-                        <p class="PARRAFO">Corresponde
-                            a la fecha en la cual la solicitud ingresó a la última
-                            etapa en la cual se encuentra la solicitud. Si se requiere establecer
-                            la fecha en que ingresó la solicitud basta con presionar el botón
-                            especial de Consultar Etapas.</p>
-                    </td>
-                </tr>
-                <tr>
-                    <td class="titletable">
-                        <p class="SUBTITULO">Tipo
-                            crédito nuevo</p>
-                    </td>
-                    <td>
-                        <p class="PARRAFO">Campo
-                            que indica si la solicitud tiene otras solicitudes relacionadas en trámite
-                            o no. Permite realizar consultas por cada tipo de crédito nuevo
-                            mediante la lista de valores adjunta.</p>
-                    </td>
-                </tr>
-                <tr>
-                    <td class="titletable">
-                        <p class="SUBTITULO">Origen</p>
-                    </td>
-                    <td>
-                        <p class="PARRAFO">Permite
-                            identificar a través de cuál fuente ingresó la
-                            solicitud. Permite realizar consultas por los distintos orígenes
-                            mediante la lista de valores adjunta.</p>
-                    </td>
-                </tr>
-                <tr>
-                    <td class="titletable">
-                        <p class="SUBTITULO">Finalizada
-                                </p>
-                    </td>
-                    <td>
-                        <p class="PARRAFO">Campo que posee
-                            lista de valores que además de servir de criterio de consulta,
-                            indica si la solicitud ya finalizó o no, o aún hace transito
-                            por alguna de las etapas parametrizadas. Contiene la opción Nulo.
-                    </td>
-                    </p>
-                </tr>
-                <tr>
-                    <td class="titletable">
-                        <p class="SUBTITULO">Fecha
-                            finalización</p>
-                    </td>
-                    <td>
-                        <p class="PARRAFO">Campo
-                            en el que en formato YYYY-MM-DD ilustra la fecha en que efectivamente
-                            se surtió la última etapa parametrizada.</p>
-                    </td>
-                </tr>
-                <tr>
-                    <td class="titletable">
-                        <p class="SUBTITULO">Etapa
-                            actual</p>
-                    </td>
-                    <td>
-                        <p class="PARRAFO">Muestra
-                            la etapa del proceso en la cual se encuentra la solicitud cuando esta
-                            no está finalizada.</p>
-                    </td>
-                </tr>
-                <tr>
-                    <td class="titletable">
-                        <p class="SUBTITULO">Estado</p>
-                    </td>
-                    <td>
-                        <p class="PARRAFO">Campo
-                            que indica la condición en que se encuentra la solicitud al arribar
-                            a esta etapa, las cuales pueden ser: Nulo, En zona gris, Negada totalmente,
-                            Negada parcialmente, Aprobada totalmente o Aprobada parcialmente; de
-                            igual forma facilita la consulta por cualquiera de estas mediante la
-                            lista de valores adjunta.</p>
-                    </td>
-                </tr>
-                <tr>
-                    <td class="titletable">
-                        <p class="SUBTITULO">Fecha
-                                estado</p>
-                    </td>
-                    <td>
-                        <p class="PARRAFO">Campo
-                            que ilustra la fecha en la que la solicitud adquirió el estado
-                            actual.</p>
-                    </td>
-                </tr>
-                <tr>
-                    <td class="titletable">
-                        <p class="SUBTITULO">Tipo
-                            identificación </p>
-                    </td>
-                    <td>
-                        <p class="PARRAFO">Campo
-                            que despliega tanto el tipo de documento como el número del mismo,
-                            que identifica al solicitante.</p>
-                    </td>
-                </tr>
-                <tr>
-                    <td class="titletable">
-                        <p class="SUBTITULO">Identificación
-                            solicitante </p>
-                    </td>
-                    <td>
-                        <p class="PARRAFO">Campo
-                            que despliega tanto el tipo de documento como el número del mismo,
-                            que identifica al solicitante.</p>
-                    </td>
-                </tr>
-                <tr>
-                    <td class="titletable">
-                        <p class="SUBTITULO">Nombre</p>
-                    </td>
-                    <td>
-                        <p class="PARRAFO">Despliega
-                            el nombre del cliente solicitante.</p>
-                    </td>
-                </tr>
-            </table>
+                        </td>
+                        <td>
+                            <p class="PARRAFO">Campo que mediante la
+                                funcionalidad de un calendario permite indicar
+                                la fecha en la cual ingresó la solicitud como
+                                criterio para la consulta.
+                            </p>
+                        </td>
+                    </tr>
 
-            <p class="PARRAFO">El sistema muestra el siguiente formulario de
-                acuerdo a los datos ingresados en el filtro. Este formulario cuenta con la
-                opción Detalle.</p>
-            <p class="TITLE"><img src="../img/SOF_022B2.PNG"></p>
+                    <tr>
+                        <td class="titletable">
+                            <p class="SUBTITULO">Origen</p>
+                        </td>
+                        <td>
+                            <p class="PARRAFO">Campo que mediante la lista de
+                                valores tipo combo de la que puede
+                                seleccionarse: Interno, Externo o Internet,
+                                permite realizar consultas por los distintos
+                                orígenes.
 
-            <p class="PARRAFO">Detalle: Esta opción muestra el wizard
-                correspondiente a la Consulta de solicitudes. </p>
-            <p class="TITLE"><img src="../img/SOF_022B3.PNG"></p>
-        </div>
-    </section>
-    <script src="../js/menu.js"></script>
-</body>
-<div id="footerContainer"></div>
-<script>
+                            </p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="titletable">
+                            <p class="SUBTITULO">Fin Trámite
+                            </p>
+                        </td>
+                        <td>
+                            <p class="PARRAFO">Campo que posee lista de valores
+                                tipo combo, con los valores: Si o No, la
+                                solicitud ya finalizó y sirve como criterio de
+                                consulta.
+
+                            </td>
+                        </p>
+                    </tr>
+                    <tr>
+                        <td class="titletable">
+                            <p class="SUBTITULO">Fecha
+                                finalización</p>
+                        </td>
+                        <td>
+                            <p class="PARRAFO">Campo que, mediante la
+                                funcionalidad de un calendario, permite indicar
+                                la fecha en la cual se surtió la última etapa
+                                parametrizada para la solicitud como criterio
+                                para la consulta.
+                            </p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="titletable">
+                            <p class="SUBTITULO">Etapa / Estado
+                            </p>
+                        </td>
+                        <td>
+                            <p class="PARRAFO">Campo que posee lista de valores
+                                tipo combo de la que puede seleccionarse entre:
+                                Aprobada, Negada, Aprobada Notificada o Negada
+                                Notificada, la condición actual de la solicitud,
+                                usada como criterio de búsqueda.
+                            </p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="titletable">
+                            <p class="SUBTITULO">Tipo
+                                identificación </p>
+                        </td>
+                        <td>
+                            <p class="PARRAFO">Campo que posee lista de valores
+                                con los distintos tipos de identificación
+                                válidos para la entidad, que pueden ser usados
+                                como criterio de búsqueda de la solicitud.
+
+                            </p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="titletable">
+                            <p class="SUBTITULO">Identificación
+                                solicitante </p>
+                        </td>
+                        <td>
+                            <p class="PARRAFO">Campo en que debe registrarse el
+                                número de identificación del cliente para el que
+                                se realiza la consulta de la solicitud.
+
+                            </p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="titletable">
+                            <p class="SUBTITULO">Nombre solicitante
+
+                            </p>
+                        </td>
+                        <td>
+                            <p class="PARRAFO">Campo en que debe registrarse el
+                                nombre del cliente solicitante para el que se
+                                realiza la consulta de la solicitud.
+
+                            </p>
+                        </td>
+                    </tr>
+                </table>
+
+                <p class="PARRAFO">El sistema muestra el siguiente formulario de
+                    acuerdo a los datos ingresados en el filtro. Este formulario
+                    cuenta con los enlaces: Consultar etapas y Detalle.
+
+                </p>
+                <p class="TITLE"><img loading="lazy" rel="preload"  src="../img/SOF_022B2.PNG"></p>
+
+                <p class="PARRAFO"><span class="SUBTITULO">Consultar etapas:</span> Al invocar ese enlace, se
+                    muestra un nuevo formulario que ilustra cada una de las
+                    etapas por las que ha pasado la solicitud consultada,
+                    brindando información de interés, tal como si la etapa se
+                    surtió de manera forzada o no, fecha y hora de inicio y
+                    fecha y hora de finalización de la etapa. </p>
+                <p class="TITLE"><img loading="lazy" rel="preload"  src="../img/SOF_022B3.PNG"></p>
+
+                
+                <p class="PARRAFO"><span class="SUBTITULO">Detalle:</span> Esta opción muestra el wizard
+                    correspondiente a la Consulta de solicitudes. </p>
+                <p class="TITLE"><img loading="lazy" rel="preload"  src="../img/SOF_022B4.PNG"></p>
+
+            </div>
+        </section>
+        <script src="../js/menu.js"></script>
+    </body>
+    <div id="footerContainer"></div>
+    <script>
   fetch('footer.html')
     .then(response => response.text())
     .then(html => {
       document.getElementById('footerContainer').innerHTML = html;
     });
 </script>
-
 
 </html>

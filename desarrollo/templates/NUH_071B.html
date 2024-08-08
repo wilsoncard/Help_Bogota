@@ -12,9 +12,9 @@
 
 <body>
   <header>
-    <img class="logo" src="../img/logoBankbu_.PNG" alt="Logo de Mi Empresa">
+    <img loading="lazy" rel="preload"  class="logo" src="../img/logoBankbu_.webp" alt="Logo de Mi Empresa">
     <div id="menuBtn">
-      <img class="TITLE" src="../img/menu.PNG" alt="Botón de Menú ">
+      <img loading="lazy" rel="preload"  class="TITLE" src="../img/menu.PNG" alt="Botón de Menú ">
     </div>
   </header>
     <div id="menuContainer"></div>
@@ -31,12 +31,11 @@
       <p class="TITLE">Nodos de facturación</p>
 
       <p class="PARRAFO">Mediante esta opción se permite la consulta y/o mantenimiento de la tabla en la que, se definen los factibles puntos locales o remotos (nodos), sobre los que la entidad puede generar procesos paralelos de facturación, bien sea sobre una misma máquina o sobre host remotos. El formulario contiene los enlaces: Actualizar, Eliminar y Adicionar.</p>
-      <p class="TITLE"><img src="../img/NUF_071B.PNG"></p>
+      <p class="TITLE"><img loading="lazy" rel="preload"  src="../img/NUF_071B.PNG"></p>
 
-      <p class="PARRAFO"><span class="SUBTITULO">Adicionar:</span>  Al activar ese enlace se
-        despliega un formulario con los siguientes campos:</span> 
+      <p class="PARRAFO"><span class="SUBTITULO">Adicionar:</span>  Al activar ese enlace se despliega un formulario con los siguientes campos:</span> 
       </p>
-      <p class="TITLE"><img src="../img/NUF_071B1.PNG"></p>
+      <p class="TITLE"><img loading="lazy" rel="preload"  src="../img/NUF_071B1.PNG"></p>
 
       <table>
         <tr>
@@ -44,7 +43,9 @@
             <p class="SUBTITULO">Nodo</p>
           </td>
           <td class="PARRAFO">
-            <p class="PARRAFO">Campo numérico de dos dígitos, obligatorio, que permite identificar a cada uno de los nodos o puntos en los que es probable efectuar procesos de facturación en paralelo.</p>
+            <p class="PARRAFO">Campo numérico de dos dígitos, obligatorio, que permite identificar a cada uno de los nodos o puntos en los que es probable efectuar procesos de facturación en paralelo.
+
+            </p>
           </td>
         </tr>
         <tr>
@@ -53,16 +54,22 @@
           </td>
           <td class="PARRAFO">
             <p class="PARRAFO">	
-              Este campo posee lista de valores tipo combo, de la cual el sistema asigna a cada nuevo registro, por defecto, la opción: Listo para procesar, pero puede desplegar otros valores tales como: Falló, Proceso o Terminó.</p>
+              EEste campo posee lista de valores tipo combo, de la cual el sistema asigna a cada nuevo registro, por defecto, la opción: Listo para procesar, pero puede desplegar otros valores tales como: Falló, Proceso o Terminó.
+
+            </p>
           </td>
         </tr>
         <tr>
           <td class="titletable">
-            <p class="SUBTITULO">Enlace a base de datos
+            <p class="SUBTITULO">Db link
+
+
             </span></p>
           </td>
           <td class="PARRAFO">
-            <p class="PARRAFO">Campo alfanumérico de 30 dígitos, no obligatorio, dentro del que puede aparecer el nombre del objeto mediante el cual se establece la conexión entre un host remoto y la base de datos correspondiente.</p>
+            <p class="PARRAFO">Campo alfanumérico de 30 dígitos, no obligatorio, dentro del que puede aparecer el nombre del objeto mediante el cual se establece la conexión entre un host remoto y la base de datos correspondiente.
+
+            </p>
           </td>
         </tr>
         <tr>
@@ -71,6 +78,7 @@
           </td>
           <td>
             <p class="PARRAFO">Este campo despliega una lista de valores tipo combo que permite escoger los tipos de procesos que aplican para el nodo, entre: Diario o Facturación.
+
 
             </p>
           </td>
@@ -91,7 +99,6 @@
           </td>
           <td>
             <p class="PARRAFO">Campo tipo checkbox, no obligatorio, en el que se indica si el host sobre el que se procesa es local o no.
-
             </p>
           </td>
         </tr>
@@ -108,7 +115,7 @@
       <p class="PARRAFO"><span class="PARRAFO"><span class="SUBTITULO">Actualizar:</span> 
         Al activar ese enlace se despliega un formulario en el cual los únicos campos no modificables son: Nodo y Estado:</span> 
       </p>
-      <p class="TITLE"><img src="../img/NUF_071B2.PNG"></p>
+      <p class="TITLE"><img loading="lazy" rel="preload"  src="../img/NUF_071B2.PNG"></p>
     </div>
   </section>
   <script src="../js/menu.js"></script>

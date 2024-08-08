@@ -12,9 +12,9 @@
 
 <body>
     <header>
-        <img class="logo" src="../img/logoBankbu_.PNG" alt="Logo de Mi Empresa">
+        <img loading="lazy" rel="preload"  class="logo" src="../img/logoBankbu_.webp" alt="Logo de Mi Empresa">
         <div id="menuBtn">
-            <img class="TITLE" src="../img/menu.PNG" alt="Botón de Menú ">
+            <img loading="lazy" rel="preload"  class="TITLE" src="../img/menu.PNG" alt="Botón de Menú ">
         </div>
     </header>
       <div id="menuContainer"></div>
@@ -31,17 +31,14 @@
             
             <p class="TITLE">Parámetros operativos</p>
                     
-            <p class="PARRAFO"><span class="SUBTITULO">Localización del Emisor:</span>  El formulario
-                inicial muestra el Detalle de los parámetros de localización,
-                y tiene las opciones Actualizar y el botón para regresar al formulario
-                principal <a href="NUH_055B.html">Emisor</a>.</p>
-            <p class="TITLE"><img src="../img/NUF_055E17.PNG"></p>
+            <p class="PARRAFO"><span class="SUBTITULO">Localización del Emisor:</span> Este formulario se invoca mediante el globo en movimiento ubicado en la parte superior derecha de la opción Parámetros operativos - Emisor y, muestra el detalle de los parámetros de localización emisor, desde ese mismo formulario se activa el enlace Actualizar y luego el globo. Cuenta con un botón para regresar al formulario principal <a href="NUH_055B.html">Emisor</a>.</p>
+            <p class="TITLE"><img loading="lazy" rel="preload"  src="../img/NUF_055E17.PNG"></p>
 
             <p class="PARRAFO"><span class="PARRAFO"><span class="SUBTITULO">Actualizar:</span> 
-                     Al activar ese enlace  se despliega un formulario
-                    con los siguientes bloques para modificar: General, CIFIN, Datacrédito y
-                    DIAN.</p>
-            <p class="TITLE"><img src="../img/NUF_055E18.PNG"></p>
+                Al activar ese enlace desde donde ya se explicó, se despliega un formulario con los siguientes bloques para modificar: General, CIFIN, DATACREDITO, DIAN y Card phone.
+</p>
+                <p class="TITLE">General</p>
+                <p class="TITLE"><img loading="lazy" rel="preload"  src="../img/NUF_055E18.PNG"></p>
 
             <table>
                 <tr>
@@ -78,6 +75,19 @@
                 </tr>
                 <tr>
                     <td class="titletable">
+                        <p class="SUBTITULO">Fecha
+                                última ejecución cargue autorizaciones redes externas
+                            </p>
+                    </td>
+                    <td>
+                        <p class="PARRAFO">Campo
+                            en formato YYYY-MM-DD, que registra la última fecha en que se
+                            ejecutó el cargue de autorizaciones de avances en redes externas
+                            (Servibanca, Redeban, etc.).</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="titletable">
                         <p class="SUBTITULO">Moneda
                                 central de riesgo
                             </p>
@@ -91,23 +101,11 @@
                             que, éstos podrían estar expresados en una moneda diferente
                             a la local y requieren ser expresados en una de conocimiento general.</p>
                     </td>
-                </tr>
-                <tr>
-                    <td class="titletable">
-                        <p class="SUBTITULO">Fecha
-                                última ejecución cargue autorizaciones redes externas
-                            </p>
-                    </td>
-                    <td>
-                        <p class="PARRAFO">Campo
-                            en formato YYYY-MM-DD, que registra la última fecha en que se
-                            ejecutó el cargue de autorizaciones de avances en redes externas
-                            (Servibanca, Redeban, etc.).</p>
-                    </td>
-                </tr>
+                </tr>     
             </table>
 
-            <p class="TITLE"><img src="../img/NUF_055E19.PNG"></p>
+            <p class="TITLE">CIFIN</p>
+            <p class="TITLE"><img loading="lazy" rel="preload"  src="../img/NUF_055E19.PNG"></p>
 
             <table>
                 <tr>
@@ -116,10 +114,9 @@
                             entidad</p>
                     </td>
                     <td>
-                        <p class="PARRAFO">Campo
-                            alfanumérico de 3 dígitos, no obligatorio, contiene el
-                            código asignado por CIFIN al tipo de entidad financiera en el
-                            cual se cataloga la empresa que se está parametrizando.</p>
+                        <p class="PARRAFO">Campo alfanumérico de 3 dígitos, no obligatorio, contiene el código asignado por CIFIN al tipo de entidad financiera en el cual se cataloga la empresa que se está parametrizando.
+
+                        </p>
                     </td>
                 </tr>
                 <tr>
@@ -129,10 +126,9 @@
                             </p>
                     </td>
                     <td>
-                        <p class="PARRAFO">En
-                            este campo alfanumérico de 3 dígitos, no obligatorio,
-                            se indica el código asignado por la CIFIN a la entidad financiera
-                            que se está parametrizando.</p>
+                        <p class="PARRAFO">En este campo alfanumérico de 3 dígitos, no obligatorio, se indica el código asignado por la CIFIN a la entidad financiera que se está parametrizando.
+
+                        </p>
                     </td>
                 </tr>
                 <tr>
@@ -140,9 +136,9 @@
                         <p class="SUBTITULO">Clave</p>
                     </td>
                     <td>
-                        <p class="PARRAFO">Campo
-                            alfanumérico de 18 dígitos, no obligatorio, asignado por
-                            la CIFIN y que identifica a cada entidad financiera de manera exclusiva.</p>
+                        <p class="PARRAFO">Campo alfanumérico de 18 dígitos, no obligatorio, asignado por la CIFIN y que identifica a cada entidad financiera de manera exclusiva.
+
+                        </p>
                     </td>
                 </tr>
                 <tr>
@@ -151,134 +147,31 @@
                                 reporte</p>
                     </td>
                     <td>
-                        <p class="PARRAFO">Este
-                            campo posee lista de valores adjunta de la cual se puede seleccionar
-                            entre Novedades o Refresco el tipo de reporte a generar para la CIFIN.</p>
+                        <p class="PARRAFO">Este campo posee lista de valores adjunta de la cual se puede seleccionar entre Novedades o Refresco el tipo de reporte a generar para la CIFIN.
+
+                        </p>
                     </td>
                 </tr>
             </table>
-
-            <p class="TITLE"><img src="../img/NUF_055E20.PNG"></p>
+            <p class="TITLE">DATACREDITO</p>
+            <p class="TITLE"><img loading="lazy" rel="preload"  src="../img/NUF_055E20.PNG"></p>
 
             <table>
                 <tr>
                     <td class="titletable">
-                        <p class="SUBTITULO">Host-IP</p>
-                    </td>
-                    <td>
-                        <p class="PARRAFO">Campo
-                            que indica la dirección http con la cual el sistema se debe conectar
-                            para intercambiar información en línea.</p>
-                    </td>
-                </tr>
-                <tr>
-                    <td class="titletable">
-                        <p class="SUBTITULO">Puerto</p>
-                    </td>
-                    <td>
-                        <p class="PARRAFO">En
-                            este campo se registra de ser necesario, la dirección o nombre
-                            del puerto a utilizar para intercambiar información en línea
-                            entre la entidad y DATACREDITO</p>
-                    </td>
-                </tr>
-                <tr>
-                    <td class="titletable">
-                        <p class="SUBTITULO">Longitud
-                                registro</p>
-                    </td>
-                    <td>
-                        <p class="PARRAFO">Este
-                            campo indica la cantidad de caracteres que componen el registro, con
-                            el fin de hacer mas fácil el intercambio de información
-                            en línea.</p>
-                    </td>
-                </tr>
-                <tr>
-                    <td class="titletable">
-                        <p class="SUBTITULO">Ubicación
-                                de archivo</p>
-                    </td>
-                    <td>
-                        <p class="PARRAFO">En
-                            este campo se registra la ruta de ubicación de los archivos de
-                            salida junto con la información del cliente de la entidad y los
-                            archivos de entrada con la calificación enviada a DATACREDITO</p>
-                    </td>
-                </tr>
-                <tr>
-                    <td class="titletable">
-                        <p class="SUBTITULO">Programa
-                                conexión</p>
-                    </td>
-                    <td>
-                        <p class="PARRAFO">Este
-                            campo permite registrar el nombre de un software especial (si es necesario)
-                            para realizar la conexión en línea con DATACREDITO</p>
-                    </td>
-                </tr>
-                <tr>
-                    <td class="titletable">
-                        <p class="SUBTITULO">Nombre
-                                archivo entrada</p>
-                    </td>
-                    <td>
-                        <p class="PARRAFO">Campo
-                            que muestra el nombre de archivo que es enviado por DATACREDITO; el
-                            cuál contiene información de clientes y que es solicitado
-                            por la entidad. </p>
-                    </td>
-                </tr>
-                <tr>
-                    <td class="titletable">
-                        <p class="SUBTITULO">Nombre
-                                archivo salida</p>
-                    </td>
-                    <td>
-                        <p class="PARRAFO">Campo
-                            que muestra el nombre de archivo que es enviado a DATACREDITO; el cuál
-                            contiene información detallada de las deudas de clientes que
-                            pertenecen a la entidad; así como su comportamiento financiero
-                            y la información solicitada por ellos.</p>
-                    </td>
-                </tr>
-                <tr>
-                    <td class="titletable">
-                        <p class="SUBTITULO">Código
-                                suscriptor</p>
-                    </td>
-                    <td>
-                        <p class="PARRAFO">Campo
-                            alfanumérico de 6 dígitos, no obligatorio, contiene el
-                            código asignado por Datacrédito a la entidad financiera.
-                            Este código debe ser reportado en la interface y debe corresponder
-                            al que le fue asignado por esta entidad externa.</p>
-                    </td>
-                </tr>
-                <tr>
-                    <td class="titletable">
-                        <p class="SUBTITULO">Terminal</p>
-                    </td>
-                    <td>
-                        <p class="PARRAFO">Número
-                            que permite identificar el código de la terminal a través
-                            de la cual se realiza la comunicación en línea con DATACREDITO.</p>
-                    </td>
-                </tr>
-                <tr>
-                    <td class="titletable">
-                        <p class="SUBTITULO">Clave
-                                asignada</p>
-                    </td>
-                    <td>
-                        <p class="PARRAFO">Campo
-                            que muestra la clave asignada por DATACREDITO y que identifica a cada
-                            entidad financiera de manera exclusiva.</p>
-                    </td>
-                </tr>
-            </table>
+                        <p class="SUBTITULO">Código suscriptor
 
-            <p class="TITLE"><img src="../img/NUF_055E21.PNG"></p>
+                        </p>
+                    </td>
+                    <td>
+                        <p class="PARRAFO">Campo alfanumérico de 6 dígitos, no obligatorio, contiene el código asignado por Datacrédito a la entidad financiera. Este código debe ser reportado en la interface y debe corresponder al que le fue asignado por esta entidad externa.
+                        </p>
+                    </td>
+                </tr>
+               
+            </table>
+            <p class="TITLE">DIAN</p>
+            <p class="TITLE"><img loading="lazy" rel="preload"  src="../img/NUF_055E21.PNG"></p>
 
             <table>
                 <tr>
@@ -310,6 +203,48 @@
                             (o débito), por un valor igual o superior al definido en éste
                             parámetro deberá ser reportado a la DIAN mediante la interface
                             correspondiente.</p>
+                    </td>
+                </tr>
+            </table>
+
+            <p class="TITLE">Card phone
+            </p>
+            <p class="TITLE"><img loading="lazy" rel="preload"  src="../img/NUF_055E21.PNG"></p>
+
+            <table>
+                <tr>
+                    <td class="titletable">
+                        <p class="SUBTITULO">Generar clave de card phone en sobreflex
+
+                        </p>
+                    </td>
+                    <td>
+                        <p class="PARRAFO">Campo en que la entidad señala si al momento de generar los sobreflex de claves de PIN, se debe incluir o no en el sobreflex la clave para servicio telefónico (Visaphone/Masterphone, etc.). En caso de que éste parámetro, no se encuentre marcado, se interpretará que en los sobreflex solo irá el cálculo del PIN.
+
+                        </p>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="titletable">
+                        <p class="SUBTITULO">Última fecha recepción cinta
+
+                        </p>
+                    </td>
+                    <td>
+                        <p class="PARRAFO">Campo que, mediante funcionalidad de un calendario, contiene parámetro de control y permite registrar cual fue la última fecha de la cinta de Servicio Telefónico (Visa phone, Masterphone), recibida y cargada al sistema.
+
+                        </p>
+                    </td>
+                </tr>
+                
+                <tr>
+                    <td class="titletable">
+                        <p class="SUBTITULO">Algoritmo
+                        </p>
+                    </td>
+                    <td>
+                        <p class="PARRAFO">Campo que posee lista de valores adjunta de la cual se debe seleccionar entre tomar el número de la tarjeta o del documento de identificación del cliente para ejecutar el algoritmo utilizado para calcular la clave para el Servicio Telefónico (Visaphone, Masterphone, etc.).
+                        </p>
                     </td>
                 </tr>
             </table>

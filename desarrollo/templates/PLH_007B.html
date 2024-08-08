@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="es">
+
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OpencardWeb®</title>
+    <link rel="stylesheet" href="../css/pages.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="icon" href="../img/ACQUIRER-logo.JPG" type="image/x-icon">
+  </head>
+
+  <body>
+    <header>
+      <img loading="lazy" rel="preload"  class="logo" src="../img/logoBankbu_.webp" alt="Logo de Mi Empresa">
+      <div id="menuBtn">
+        <img loading="lazy" rel="preload"  class="TITLE" src="../img/menu.PNG" alt="Botón de Menú ">
+      </div>
+    </header>
+    <div id="menuContainer"></div>
+    <script>
+    fetch('menu.html')
+      .then(response => response.text())
+      .then(html => {
+        document.getElementById('menuContainer').innerHTML = html;
+      });
+  </script>
+
+    <section>
+      <div>
+
+        <p class="TITLE">Realce chip</p>
+
+        <p class="PARRAFO">Al invocarse el formulario, el usuario dispone de
+          diferentes criterios que le permiten seleccionar, de aquellos
+          registros de solicitudes que arriban a la etapa de realce y, se
+          encuentran listos para ser enviados al proveedor encargado de efectuar
+          el proceso de realce (embosado) de los mismos, con el fin de poderlos
+          entregar posteriormente a los clientes, como materialización de la
+          tarjeta que le ha sido otorgada por la entidad.</span> </p>
+      <p class="PARRAFO">Es importante señalar que esta funcionalidad aplica
+        para aquellos <a href="MEH_002B.html">productos</a>
+        a los cuales se les haya definido que Si emiten plástico. Al ingresar a
+        la opción, el usuario se encuentra con
+        un wizard de tres pasos, en el que, la primera página corresponde a un
+        filtro en el cual, es opcional el
+        diligenciar alguno de los criterios, y de esa manera agrupar los
+        registros de solicitudes de tarjetas que se
+        desea enviar a proceso de realce (embosado).</p>
+      <p class="TITLE"><img loading="lazy" rel="preload"  src="../img/PLF_008E.PNG"></p>
+
+      <p class="TITLE">Descripción de campos</p>
+      <div>
+        <table>
+          <tr>
+            <td class="titletable">
+              <p class="SUBTITULO">Número
+                tarjeta </p>
+            </td>
+            <td>
+              <p class="PARRAFO">Campo
+                alfanumérico de hasta 23 posiciones en el que se puede ingresar
+                el número de alguna tarjeta en particular que se desee consultar
+                para realce.</p>
+            </td>
+          </tr>
+          <tr>
+            <td class="titletable">
+              <p class="SUBTITULO">Nombre
+                plástico </p>
+            </td>
+            <td>
+              <p class="PARRAFO">En
+                este campo se ingresa como criterio para la consulta el nombre
+                del
+                cliente tal y como debe ir realzado en el plástico.</p>
+            </td>
+          </tr>
+
+          <tr>
+            <td class="titletable">
+              <p class="SUBTITULO">Origen registro
+                plástico </p>
+            </td>
+            <td>
+              <p class="PARRAFO">Campo que posee lista de valore tipo combo de
+                la cual se puede seleccionar entre: Débito Masivo No
+                Personalizado o Crédito Masivo No Personalizado, el evento que
+                dió origen a la solicitud de los plásticos que se desea
+                consultar para realce. </p>
+            </td>
+          </tr>
+
+          <tr>
+            <td class="titletable">
+              <p class="SUBTITULO">Secuencia solicitud
+              </p>
+            </td>
+            <td>
+              <p class="PARRAFO">En este campo numérico se puede ingresar el
+                número de la solicitud específica para la cual se desean
+                consultar el plástico a realzar.
+
+              </p>
+            </td>
+          </tr>
+          <tr>
+            <td class="titletable">
+              <p class="SUBTITULO">Punto entrega
+
+              </p>
+            </td>
+            <td>
+              <p class="PARRAFO">Campo con lista de valores que permite
+                seleccionar el <a href="PLH_006B.html">punto de entrega</a>
+                asociado con las tarjetas para las cuales se desea consultar y
+                ejecutar el proceso de realce.
+              </p>
+            </td>
+          </tr>
+          <tr>
+            <td class="titletable">
+              <p class="SUBTITULO">Proveedor
+              </p>
+            </td>
+            <td>
+              <p class="PARRAFO">Campo con lista de valores que permite
+                seleccionar el <a href="NUH_063B.html">proveedor</a> asociado
+                con las tarjetas para las cuales se desea consultar y ejecutar
+                el proceso de realce.
+
+              </p>
+            </td>
+          </tr>
+          <tr>
+            <td class="titletable">
+              <p class="SUBTITULO">Punto de venta
+
+              </p>
+            </td>
+            <td>
+              <p class="PARRAFO">Campo con lista de valores que permite
+                seleccionar el punto de venta definido por la entidad, asociado
+                con las tarjetas para las cuales se desea consultar y ejecutar
+                el proceso de realce.
+
+              </p>
+            </td>
+          </tr>
+          <tr>
+            <td class="titletable">
+              <p class="SUBTITULO">Imagen
+
+              </p>
+            </td>
+            <td>
+              <p class="PARRAFO">Campo que posee lista de valores tipo combo de
+                la que puede seleccionarse entre: Si o No, los plástico a
+                consultar tienen o deben llevar una imagen.
+
+              </p>
+            </td>
+          </tr>
+          <tr>
+            <td class="titletable">
+              <p class="SUBTITULO">Seleccionar por Bin
+
+              </p>
+            </td>
+            <td>
+              <p class="PARRAFO">Campo que posee lista de valores adjunta, de la
+                que puede seleccionarse el Bin de las tarjetas para las cuales
+                se desea consultar y ejecutar el proceso de realce.
+
+              </p>
+            </td>
+          </tr>
+          <tr>
+            <td class="titletable">
+              <p class="SUBTITULO">Deseleccionar por Bin
+
+              </p>
+            </td>
+            <td>
+              <p class="PARRAFO">Campo que posee lista de valores adjunta, de la
+                que puede seleccionarse el Bin de las tarjetas para las cuales
+                se desea excluir de la consulta para luego ejecutar el proceso
+                de realce.
+
+              </p>
+            </td>
+          </tr>
+          <tr>
+            <td class="titletable">
+              <p class="SUBTITULO">Seleccionar tarjetas masivas
+
+              </p>
+            </td>
+            <td>
+              <p class="PARRAFO">Campo que posee lista de valores tipo combo de
+                la que puede seleccionarse entre: Si o No, se deben incluir del
+                proceso de realce, a los plásticos de los procesos de generación
+                masiva de tarjetas.
+
+              </p>
+            </td>
+          </tr>
+        </table>
+      </div>
+
+      <p class="PARRAFO">Una vez seleccionados los criterios y al desplazarse a
+        la segunda página del wizard, se muestran los registros que cumplen con
+        las condiciones indicadas por el usuario, mostrando para cada uno de
+        ellos: Número de tarjeta (enmascarado), Punto de entrega, Nombre a
+        realzar en el plástico, Secuencia solicitud, Tipo de solicitud, dato del
+        Proveedor, dato de si lleva imagen, Punto de venta, Origen del registro
+        y, un campo para marcar aquellos registros que se quiera enviar a
+        realce, en caso que el usuario no desee ejecutar la acción para todos
+        los registros desplegados por los filtros.
+      </p>
+      <p class="PARRAFO"><span class="PARRAFO">Esta segunda página del wizard
+          cuenta con dos <a href="PLH_008B.html#BL_GENERAR">botónes</a>
+          especiales que le permiten a la entidad Seleccionar o Deseleccionar
+          todos los registros desplegados en el formulario y así facilitar
+          avanzar al tercer paso del wizard.</p>
+        <p class="TITLE"><img loading="lazy" rel="preload"  src="../img/PLF_008E1.PNG"></p>
+
+        <p class="PARRAFO">En la tercera página del wizard, se muestran los
+          registros que el usuario seleccionó para ejecutar el proceso de
+          realce, en caso que éste no se vaya a aplicar para todos los registros
+          desplegado en la segunda página y mediante el botón de palomita o
+          visto bueno, se ordena la generación del archivo de realce
+          respectivo.</p>
+        <p class="TITLE"><img loading="lazy" rel="preload"  src="../img/PLF_008E2.PNG"></p>
+
+        <p class="PARRAFO">Al momento de ordenar la ejecución del proceso de
+          generación del archivo de realce, el sistema evalúa el campo Control
+          de remisión de plásticos, contenido en la opción <a
+            href="NUH_055B.html">Parámetros
+            operativos</a> y cuando este se encuentra en 'Si' se despliega un
+          nuevo formulario en el que se puede seleccionar una remisión ya
+          existente o crear un nuevo número remisión. </p>
+        <p class="TITLE"><img loading="lazy" rel="preload"  src="../img/PLF_008E3.PNG"></p>
+        <p class="TITLE"><img loading="lazy" rel="preload"  src="../img/PLF_008E4.PNG"></p>
+
+        <p class="TITLE">Botones especiales</p>
+        <p class="PARRAFO"><a name="BL_GENERAR"></a><span
+            class="SUBTITULO">Seleccionar / Deseleccionar:</span></span>
+        Dupla de botones especiales que le permiten a la entidad, marcar o
+        desmarcar, todos los registros desplegados en el segundo paso del wizard
+        y así facilitar avanzar al tercer paso del mismo.
+      </p>
+      <p class="TITLE"><img loading="lazy" rel="preload"  src="../img/Seleccionar.PNG"></p>
+      <p class="TITLE"><img loading="lazy" rel="preload"  src="../img/Deseleccionar.PNG"></p>
+
+    </section>
+    <script src="../js/menu.js"></script>
+
+    <div id="footerContainer"></div>
+    <script>
+  fetch('footer.html')
+    .then(response => response.text())
+    .then(html => {
+      document.getElementById('footerContainer').innerHTML = html;
+    });
+</script>
+  </body>
+
+</html>

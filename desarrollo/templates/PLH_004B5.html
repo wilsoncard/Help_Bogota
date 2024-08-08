@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="es">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>OpencardWeb®</title>
+        <link rel="stylesheet" href="../css/pages.css">
+        <link rel="stylesheet" href="../css/style.css">
+        <link rel="icon" href="../img/ACQUIRER-logo.JPG" type="image/x-icon">
+    </head>
+
+    <body>
+        <header>
+            <img loading="lazy" rel="preload"  class="logo" src="../img/logoBankbu_.webp"
+                alt="Logo de Mi Empresa">
+            <div id="menuBtn">
+                <img loading="lazy" rel="preload"  class="TITLE" src="../img/menu.PNG" alt="Botón de Menú ">
+            </div>
+        </header>
+        <div id="menuContainer"></div>
+        <script>
+    fetch('menu.html')
+      .then(response => response.text())
+      .then(html => {
+        document.getElementById('menuContainer').innerHTML = html;
+      });
+  </script>
+
+        <section>
+            <div>
+
+                <p class="TITLE">Activación Entrega No personalizada</p>
+
+                <p class="PARRAFO">Mediante esta función, se habilita la
+                    selección de aquellos plásticos No Personalizados que se
+                    encuentran disponibles para ser entregados a los clientes,
+                    surtiendo en ese momento la etapa de Activación. </p>
+                <p class="PARRAFO">Al invocar la opción, el usuario se encuentra
+                    con un wizard de tres pasos, el primero, corresponde a un
+                    filtro, que permite ubicar la(s) tarjeta(s) que se desea
+                    consultar para gestionar su entrega y marcación de
+                    Activa.</p>
+                <p class="TITLE"><img loading="lazy" rel="preload"  src="../img/PLF_004E4.PNG"></p>
+
+                <p class="TITLE">Descripción de campos</p>
+
+                <table>
+                    <tr>
+                        <td class="titletable">
+                            <p class="SUBTITULO">Creada en
+
+                            </p>
+                        </td>
+                        <td>
+                            <p class="PARRAFO">Campo que, mediante la
+                                funcionalidad de un calendario, permite indicar
+                                la fecha en la que se crearon las tarjetas no
+                                personalizadas a consultar para entregar y
+                                activar.
+
+                            </p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="titletable">
+                            <p class="SUBTITULO">Fecha Vencimiento
+
+                            </p>
+                        </td>
+                        <td>
+                            <p class="PARRAFO">Campo que, mediante la
+                                funcionalidad de un calendario, permite indicar
+                                la fecha en la que expirarán o vencerán las
+                                tarjetas no personalizadas a consultar para
+                                entregar y activar.
+
+                            </p>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td class="titletable">
+                            <p class="SUBTITULO">Sucursal </p>
+                        </td>
+                        <td>
+                            <p class="PARRAFO">Campo con lista de valores que
+                                permite seleccionar la <a
+                                    href="NUH_020B.html">sucursal</a> en la que
+                                se gestionó la solicitud de las tarjetas no
+                                personalizadas que se desean consultar y
+                                activar.
+                            </p>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td class="titletable">
+                            <p class="SUBTITULO">Punto de venta
+
+                            </p>
+                        </td>
+                        <td>
+                            <p class="PARRAFO">Campo con lista de valores que
+                                permite seleccionar el punto de venta asociado
+                                con las tarjetas no personalizadas que se desean
+                                consultar y activar.
+
+                            </p>
+                        </td>
+                    </tr>
+                </table>
+
+                <p class="PARRAFO">Una vez seleccionados los criterios y al
+                    desplazarse a la segunda página del wizard, se muestran los
+                    registros que cumplen con las condiciones indicadas por el
+                    usuario, mostrando para cada uno de ellos: Número de tarjeta
+                    (enmascarado), Creada en, Fecha Vencimiento, Sucursal y
+                    Punto de venta.</p>
+                <p class="TITLE"><img loading="lazy" rel="preload"  src="../img/PLF_004E5.PNG"></p>
+
+                <p class="PARRAFO">En la tercera página del wizard, se dispone
+                    de la funcionalidad para registrar la información del
+                    cliente a quien se le asigna una de las tarjetas no
+                    personalizadas. Luego de diligenciar la data disponible,
+                    mediante el botón de palomita o visto bueno se ordena la
+                    activación de la correspondiente tarjeta.</p>
+                <p class="TITLE"><img loading="lazy" rel="preload"  src="../img/PLF_004E6.PNG"></p>
+
+                <p class="TITLE">Descripción de campos</p>
+
+                <table>
+                    <tr>
+                        <td class="titletable">
+                            <p class="SUBTITULO">Tipo de cuenta
+
+                            </p>
+                        </td>
+                        <td>
+                            <p class="PARRAFO">Campo que posee lista de valores
+                                tipo combo de la que debe seleccionarse entre:
+                                Ahorros o Corriente, el tipo de cuenta de
+                                depósitos a la que se vincula la tarjeta no
+                                personalizada a entregar y activar.
+
+                            </p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="titletable">
+                            <p class="SUBTITULO">Número cuenta
+
+                            </p>
+                        </td>
+                        <td>
+                            <p class="PARRAFO">Campo en el que debe registrarse
+                                el número de la cuenta de depósitos a la que se
+                                vincula la tarjeta no personalizada a entregar y
+                                activar.
+
+                            </p>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td class="titletable">
+                            <p class="SUBTITULO">Moneda </p>
+                        </td>
+                        <td>
+                            <p class="PARRAFO">Campo con lista de valores que
+                                permite seleccionar la <a
+                                    href="NUH_005B.html">moneda</a> en la que se
+                                denominan los saldos de la cuenta de depósitos a
+                                la que se vincula la tarjeta no personalizada a
+                                entregar y activar.
+
+                            </p>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td class="titletable">
+                            <p class="SUBTITULO">Tipo identificación
+
+                            </p>
+                        </td>
+                        <td>
+                            <p class="PARRAFO">Campo con lista de valores tipo
+                                combo de la que debe seleccionarse aquel al que
+                                corresponda el documento de identificación del
+                                cliente al que se le va a entregar la tarjeta no
+                                personalizada.
+
+                            </p>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td class="titletable">
+                            <p class="SUBTITULO">Número identificación
+
+                            </p>
+                        </td>
+                        <td>
+                            <p class="PARRAFO">Campo en el que debe registrarse
+                                el dato del número de identificación del cliente
+                                al que se le va a entregar la tarjeta no
+                                personalizada.
+
+                            </p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="titletable">
+                            <p class="SUBTITULO">Nombres y Apellidos
+
+                            </p>
+                        </td>
+                        <td>
+                            <p class="PARRAFO">Campos de salida, el sistema los
+                                diligencia con la data correspondiente al
+                                cliente cuyos tipo y número de ID se ingresó.
+
+                            </p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="titletable">
+                            <p class="SUBTITULO">Ciclo facturación
+
+                            </p>
+                        </td>
+                        <td>
+                            <p class="PARRAFO">Campo con lista de valores que
+                                permite seleccionar el Ciclo de <a
+                                    href="CAH_003B.html">facturación</a> al que
+                                se asocia la tarjeta no personalizada a entregar
+                                y activar.
+
+                            </p>
+                        </td>
+                    </tr>
+                </table>
+
+            </section>
+            <script src="../js/menu.js"></script>
+
+            <div id="footerContainer"></div>
+            <script>
+  fetch('footer.html')
+    .then(response => response.text())
+    .then(html => {
+      document.getElementById('footerContainer').innerHTML = html;
+    });
+</script>
+        </body>
+
+    </html>

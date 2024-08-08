@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="es">
+
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OpencardWeb®</title>
+
+    <link rel="stylesheet" href="../css/pages.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="icon" href="../img/ACQUIRER-logo.JPG" type="image/x-icon">
+  </head>
+
+  <body>
+
+    <header>
+      <img loading="lazy" rel="preload"  class="logo" src="../img/logoBankbu_.webp" alt="Logo de Mi Empresa">
+      <div id="menuBtn">
+        <img loading="lazy" rel="preload"  class="TITLE" src="../img/menu.PNG" alt="Botón de Menú ">
+      </div>
+    </header>
+    <div id="menuContainer"></div>
+    <script>
+    fetch('menu.html')
+      .then(response => response.text())
+      .then(html => {
+        document.getElementById('menuContainer').innerHTML = html;
+      });
+  </script>
+
+    <section>
+      <div>
+        <p class="TITLE">Información de establecimientos
+          - Estadísticas</p>
+
+        <p class="PARRAFO">En este formulario invocado desde <a href="ESH_006B.html">Información
+            de establecimientos</a>, Permite visualizar los depósitos realizados por cuenta, de manera cronológica (mensual), incluso si existe más de un movimiento en una misma fecha. Cada movimiento es desagregado en todos sus conceptos. Si la entidad desea disponer de ésta información debe matricular y <a href="OPH_002E.html">ejecutar</a>
+             el proceso que genera dichas estadísticas.  </p>
+     
+        <p class="TITLE"><img loading="lazy" rel="preload"  src="../img/ESF_006E24.PNG"></p>
+        
+        <p class="TITLE">Descripción de campos</p>
+
+        <table>
+          <tr>
+              <th class="titletable">
+                  <p class="SUBTITULO">Establecimiento </p>
+              </th>
+              <td>
+                  <p class="PARRAFO">Corresponde al código de identificación del establecimiento.</p>
+              </td>
+          </tr>
+          <tr>
+              <th class="titletable">
+                  <p class="SUBTITULO">Nombre </p>
+              </th>
+              <td>
+                  <p class="PARRAFO">Describe el nombre del establecimiento asociado al código.</p>
+              </td>
+          </tr>
+          <tr>
+              <th class="titletable">
+                  <p class="SUBTITULO">Año </p>
+              </th>
+              <td>
+                  <p class="PARRAFO">Muestra el año para el cual se despliegan los datos estadísticos.</p>
+              </td>
+          </tr>
+          <tr>
+              <th class="titletable">
+                  <p class="SUBTITULO">Mes</p>
+              </th>
+              <td>
+                  <p class="PARRAFO">Muestra el mes para el cual se despliegan los datos estadísticos.</p>
+              </td>
+          </tr>
+          <tr>
+              <th class="titletable">
+                  <p class="SUBTITULO">Número de cuenta </p>
+              </th>
+              <td>
+                  <p class="PARRAFO">Despliega el número de la cuenta de depósito en la que se efectuaron los depósitos que permiten producir las estadísticas aquí mostradas.</p>
+              </td>
+          </tr>
+          <tr>
+              <th class="titletable">
+                  <p class="SUBTITULO">Consignaciones</p>
+              </th>
+              <td>
+                  <p class="PARRAFO">Número de consignaciones realizadas durante dicho mes y año.</p>
+              </td>
+          </tr>
+          <tr>
+              <th class="titletable">
+                  <p class="SUBTITULO">Comprobantes</p>
+              </th>
+              <td>
+                  <p class="PARRAFO">Número de comprobantes consignados durante dicho mes y año.</p>
+              </td>
+          </tr>
+          <tr>
+              <th class="titletable">
+                  <p class="SUBTITULO">Valor </p>
+              </th>
+              <td>
+                  <p class="PARRAFO">Acumulado del valor total de las consignaciones realizadas durante dicho mes y año.</p>
+              </td>
+          </tr>       
+      </table>
+
+        <p class="PARRAFO"><span class="SUBTITULO">Detalle estadísticas:</span>
+          Desglose del movimiento realizado durante el mes y año seleccionado en el otro bloque contenido dentro de este mismo tab.</p>
+        <p class="TITLE"><img loading="lazy" rel="preload"  src="../img/ESF_006E23.PNG"></p>
+
+        <table>
+          <tr>
+              <th class="titletable">
+                  <p class="SUBTITULO">Valor ventas</p>
+              </th>
+              <td>
+                  <p class="PARRAFO">Monto acumulado (por mes/año) equivalente al valor del consumo o utilización en cada consignación, (excluyendo las propinas).</p>
+              </td>
+          </tr>
+          <tr>
+              <th class="titletable">
+                  <p class="SUBTITULO">Valor propinas</p>
+              </th>
+              <td>
+                  <p class="PARRAFO">Monto acumulado (por mes/año) resultado de la sumatoria de los valores por concepto de propina, tomado de cada comprobante.</p>
+              </td>
+          </tr>
+          <tr>
+              <th class="titletable">
+                  <p class="SUBTITULO">Valor Retenciones </p>
+              </th>
+              <td>
+                  <p class="PARRAFO">Monto acumulado resultado de la liquidación de la retención en la fuente aplicada a las consignaciones del mes y año referenciados.</p>
+              </td>
+          </tr>
+          <tr>
+              <th class="titletable">
+                  <p class="SUBTITULO">Valor IVA</p>
+              </th>
+              <td>
+                  <p class="PARRAFO">Monto acumulado (por mes/año) resultado de la sumatoria de los valores por concepto del IVA, si aplica, tomado de cada comprobante.</p>
+              </td>
+          </tr>
+          <tr>
+              <th class="titletable">
+                  <p class="SUBTITULO">Valor INC</p>
+              </th>
+              <td>
+                  <p class="PARRAFO">Despliega, si aplica, el monto cobrado al cliente y depositado al establecimiento. El sistema evalúa los parámetros correspondientes.</p>
+              </td>
+          </tr>
+          <tr>
+              <th class="titletable">
+                  <p class="SUBTITULO">Valor IVA
+                    Comisión</p>
+              </th>
+              <td>
+                  <p class="PARRAFO">Despliega, si aplica, el monto del IVA cobrado sobre las comisiones aplicadas a la consignación.</p>
+              </td>
+          </tr>
+          <tr>
+              <th class="titletable">
+                  <p class="SUBTITULO">Valor Retención
+                    IVA</p>
+              </th>
+              <td>
+                  <p class="PARRAFO">Monto acumulado de la porción del IVA retenido al establecimiento durante el mes y año referenciados.</p>
+              </td>
+          </tr>
+          <tr>
+              <th class="titletable">
+                  <p class="SUBTITULO">Valor comisiones</p>
+              </th>
+              <td>
+                  <p class="PARRAFO">Monto acumulado resultado de la liquidación de la comisión (descuento) aplicada a las consignaciones del mes y año referenciados.</p>
+              </td>
+          </tr>
+          <tr>
+            <th class="titletable">
+                <p class="SUBTITULO">Valor otros cargos</p>
+            </th>
+            <td>
+                <p class="PARRAFO">Monto o resultado de la sumatoria de los valores que por concepto de <a href="ESH_006B.html#OTROS_CARGOS">otros cargos</a> afecta a la cuenta de depósitos.</p>
+            </td>
+        </tr>
+        <tr>
+            <th class="titletable">
+                <p class="SUBTITULO">Valor otros
+                  abonos</p>
+            </th>
+            <td>
+                <p class="PARRAFO">Monto o resultado de la sumatoria de los valores que por concepto de <a href="ESH_006B.html#OTROS_ABONOS">otros abonos</a> afecta a la cuenta de depósitos.</p>
+            </td>
+        </tr>
+        <tr>
+            <th class="titletable">
+                <p class="SUBTITULO">Valor Retención
+                  Ica</p>
+            </th>
+            <td>
+                <p class="PARRAFO">Monto acumulado de la porción del impuesto de industria y comercio ICA retenido al establecimiento durante el mes y año referenciados.</p>
+            </td>
+        </tr>        
+      </table>
+
+      <p class="PARRAFO"><span class="SUBTITULO">Reversiones: </span>Conjunto de campos que posibilita el conocer el movimiento de las deducciones o restituciones hechas a los comercios por efecto de la reversión de descuentos o abonos efectuados durante el mes y año seleccionado.</p>
+      <table>
+      <tr>
+        <th class="titletable">
+            <p class="SUBTITULO">Consignaciones</p>
+        </th>
+        <td>
+            <p class="PARRAFO">Monto acumulado de consignaciones reversadas durante el mes y año seleccionado.</p>
+        </td>
+    </tr>
+    <tr>
+      <th class="titletable">
+          <p class="SUBTITULO">Retención</p>
+      </th>
+      <td>
+          <p class="PARRAFO">Monto acumulado de las restituciones de las retenciones efectuadas sobre los depósitos reversados efectuados durante el mes y año seleccionado.</p>
+      </td>
+  </tr>
+  <tr>
+      <th class="titletable">
+          <p class="SUBTITULO">Valor IVA</p>
+      </th>
+      <td>
+          <p class="PARRAFO">Monto acumulado de las restituciones de las retenciones de Iva efectuadas sobre los depósitos aplicados, que debieron ser reversados, durante el mes y año seleccionado</p>
+      </td>
+  </tr>
+  <tr>
+      <th class="titletable">
+          <p class="SUBTITULO">Descuento</p>
+      </th>
+      <td>
+          <p class="PARRAFO">Monto acumulado de las restituciones de los descuentos efectuados sobre los depósitos hechos durante el mes y año seleccionado, que debieron ser reversados.</p>
+      </td>
+  </tr>        
+</table>
+
+       
+      </div>
+    </section>
+    <script src="../js/menu.js"></script>
+  </body>
+  <div id="footerContainer"></div>
+  <script>
+  fetch('footer.html')
+    .then(response => response.text())
+    .then(html => {
+      document.getElementById('footerContainer').innerHTML = html;
+    });
+</script>
+</html>

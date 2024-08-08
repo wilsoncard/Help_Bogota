@@ -14,9 +14,9 @@
   <body>
 
     <header>
-      <img class="logo" src="../img/logoBankbu_.PNG" alt="Logo de Mi Empresa">
+      <img loading="lazy" rel="preload"  class="logo" src="../img/logoBankbu_.webp" alt="Logo de Mi Empresa">
       <div id="menuBtn">
-        <img class="TITLE" src="../img/menu.PNG" alt="Botón de Menú ">
+        <img loading="lazy" rel="preload"  class="TITLE" src="../img/menu.PNG" alt="Botón de Menú ">
       </div>
     </header>
     <div id="menuContainer"></div>
@@ -32,36 +32,23 @@
       <div>
         <p class="TITLE">Consulta de movimientos</p>
               
-        <p class="PARRAFO">A través de esta pantalla se posibilita la
-          consulta
-          por diferentes criterios, de la información del movimiento
-          transaccional
-          que viaja hacia y desde los compensadores.</p>
+        <p class="PARRAFO">A través de esta pantalla se posibilita la consulta por diferentes criterios, de la información del movimiento transaccional que viaja hacia y desde los compensadores.</p>
         <p class="PARRAFO"><span class="SUBTITULO">Ver parámetros
             (Filtro):</span>
-          Conjunto de campos que contiene las diferentes variables que pueden
-          ser tomadas
-          individualmente o combinadas y una vez diligenciados y/o seleccionados
-          basta
-          con presionar el botón Buscar para obtener la
-          información
-          deseada. Es necesario ingresar al menos un grupo de las fechas para
-          realizar la busqueda. </p>
-        <p class="PARRAFO">El formulario cuenta con las siguientes
+            Conjunto de campos que contiene las diferentes variables que pueden ser tomadas individualmente o combinadas y una vez diligenciados y/o seleccionados basta con presionar el botón Intro para obtener la información deseada. Es necesario ingresar al menos un grupo de las fechas y un origen para realizar la búsqueda, los demás campos son opcionales. </p>
+        
+            <p class="PARRAFO">El formulario cuenta con las siguientes
           opciones<span class="PARRAFO">:</span> <a
             href="INH_040B1.html">Movimiento
-            diario</a>, <a href="INH_040B2.html">Fraudes</a>, <a
+            debito</a>, <a
             href="INH_006B5.html"></a><a
             href="INH_040B3.html">Pendientes</a>,
           <span class="LINK2 #1"><a href="INH_040B4.html">Rechazo</a></span><a
             href="INH_040B4.html"> cargue</a>,
-          <a href="INH_040B5.html">Contracargos</a>, <a
-            href="INH_040B6.html">Efectos
-            al cobro</a>, <a href="INH_040B7.html">Intercambio</a>,
-          y <a href="INH_040B8.html">Rechazo cargue
-              convenios</a></span>.</span>
+          <a href="INH_040B5.html">Contracargos</a> y <a href="INH_040B7.html">Intercambio</a>
+           </span>.</span>
         </p>
-        <p class="TITLE"><img src="../img/INF_040B.PNG"></p>
+        <p class="TITLE"><img loading="lazy" rel="preload"  src="../img/INF_040B.PNG"></p>
 
         <table>
           <tr>
@@ -72,7 +59,7 @@
             <td>
               <p class="PARRAFO">Este
                 campo permite ingresar cualquier dato válido con el
-                formato YYYY-MM-DD.</p>
+                formato YYYY-MM-DD, debe ser menor o igual a la fecha del sistema.</p>
             </td>
           </tr>
           <tr>
@@ -83,7 +70,7 @@
             <td>
               <p class="PARRAFO">Este
                 campo permite ingresar cualquier dato válido con el
-                formato YYYY-MM-DD.</p>
+                formato YYYY-MM-DD, debe ser menor o igual a la fecha del sistema.</p>
             </td>
           </tr>
           <tr>
@@ -94,7 +81,7 @@
             <td>
               <p class="PARRAFO">Este
                 campo permite ingresar cualquier dato válido con el
-                formato YYYY-MM-DD.</p>
+                formato YYYY-MM-DD, debe ser menor o igual a la fecha del sistema.</p>
             </td>
           </tr>
           <tr>
@@ -105,7 +92,7 @@
             <td>
               <p class="PARRAFO">Este
                 campo permite ingresar cualquier dato válido con el
-                formato YYYY-MM-DD.</p>
+                formato YYYY-MM-DD, debe ser menor o igual a la fecha del sistema.</p>
             </td>
           </tr>
           <tr>
@@ -116,9 +103,8 @@
               <p class="PARRAFO">Lista
                 de valores parametrizada mediante la opción <a
                   href="NUH_027B.html">Orígenes
-                  de transacciones</a> del Núcleo, que permite ingresar
-                cualquier
-                valor numérico de máximo 3 dígitos.</p>
+                  de transacciones</a> del Núcleo, que permite seleccionar el origen de movimiento que se
+                  quiera consultar</p>
             </td>
           </tr>
           <tr>
@@ -127,12 +113,7 @@
                 interna </p>
             </td>
             <td>
-              <p class="PARRAFO">El
-                campo Transacción interna admite cualquier valor
-                numérico
-                de máximo 3 dígitos. La transacción interna
-                también
-                se puede diligenciar por medio de lista de valores adjunta.</p>
+              <p class="PARRAFO">Campo con lista de valores, de la que se selecciona la transacción por empresa que se quiera consultar</p>
             </td>
           </tr>
           <tr>
@@ -141,9 +122,7 @@
                 de tarjeta</p>
             </td>
             <td>
-              <p class="PARRAFO">Este
-                campo permite ingresar cualquier valor alfanumérico de 23
-                caracteres.</p>
+              <p class="PARRAFO">Este campo permite ingresar cualquier valor alfanumérico de 23 caracteres, corresponde al número de tarjeta que se quiera consultar.</p>
             </td>
           </tr>
           <tr>
@@ -194,18 +173,6 @@
           </tr>
           <tr>
             <td class="titletable">
-              <p class="SUBTITULO">Boleta
-                de ruta</p>
-            </td>
-            <td>
-              <p class="PARRAFO">El
-                campo boleta de ruta es numérico de hasta 12
-                dígitos
-              </p>
-            </td>
-          </tr>
-          <tr>
-            <td class="titletable">
               <p class="SUBTITULO">Secuencia</p>
             </td>
             <td>
@@ -216,24 +183,16 @@
           </tr>
         </table>
 
-        <p class="PARRAFO"> El sistema muestra por defecto el <span
-            class="LINK2 #1"><a href="INH_040B1.html">Movimiento
-              diario</a></span> de acuerdo a los datos ingresados en el
-          filtro.</p>
-        <p class="TITLE"><img src="../img/INF_040B1.PNG"></p>
+        <p class="PARRAFO">El sistema muestra los datos de acuerdo a los parámetros ingresados, se debe ingresar a cada una de las opciones para ver la información, en esta parte hay una opción Ver Parámetros, la cual permite regresar al primer formulario.</p>
+        <p class="TITLE"><img loading="lazy" rel="preload"  src="../img/INF_040B9.PNG"></p>
+        
 
-        <p class="PARRAFO"><a href="INH_040B1.html">Movimiento
-            diario</a>
-            | </span><a href="INH_006B3.html"></a><a
-            href="INH_040B2.html">Fraudes</a> | </span><a
-            href="INH_006B5.html"></a><a href="INH_040B3.html">Pendientes</a>
-          | </span><a href="INH_040B4.html">Rechazo
-            cargue</a> | </span> <a href="INH_040B5.html">Contracargos</a>
-          <a href="INH_040B6.html">Efectos
-            al cobro</a> | </span><a href="INH_006B9.html"></a><a
-            href="INH_040B7.html">Intercambio</a> | </span><a
-            href="INH_040B8.html">Rechazo
-            cargue convenios</a>
+        <p class="PARRAFO"><a href="INH_040B1.html">Movimiento debito</a> | 
+          <a href="INH_040B3.html">Pendientes</a> | 
+          <a href="INH_040B4.html">Rechazo cargue</a> | 
+          <a href="INH_040B5.html">Contracargos</a> |
+          <a href="INH_040B7.html">Intercambio</a> |
+          <a href="INH_040B.html">Ver Parámetros</a>
         </p>
 
       </section>

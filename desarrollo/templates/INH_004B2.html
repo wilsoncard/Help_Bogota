@@ -1,26 +1,26 @@
 <!DOCTYPE html>
 <html lang="es">
 
-<head>
+  <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>OpencardWeb®</title>
 
     <link rel="stylesheet" href="../css/pages.css">
     <link rel="stylesheet" href="../css/style.css">
- <link rel="icon" href="../img/ACQUIRER-logo.JPG" type="image/x-icon">
-</head>
+    <link rel="icon" href="../img/ACQUIRER-logo.JPG" type="image/x-icon">
+  </head>
 
-<body>
+  <body>
 
     <header>
-        <img class="logo" src="../img/logoBankbu_.PNG" alt="Logo de Mi Empresa">
-        <div id="menuBtn">
-            <img class="TITLE"  src= "../img/menu.PNG" alt="Botón de Menú ">
-        </div>
+      <img loading="lazy" rel="preload"  class="logo" src="../img/logoBankbu_.webp" alt="Logo de Mi Empresa">
+      <div id="menuBtn">
+        <img loading="lazy" rel="preload"  class="TITLE" src="../img/menu.PNG" alt="Botón de Menú ">
+      </div>
     </header>
-      <div id="menuContainer"></div>
-  <script>
+    <div id="menuContainer"></div>
+    <script>
     fetch('menu.html')
       .then(response => response.text())
       .then(html => {
@@ -29,136 +29,236 @@
   </script>
 
     <section>
-        <div> 
-            
-            <p  class="TITLE">Captura de Movimientos oficina</p>
-                    
-            <p class="PARRAFO"><span class="SUBTITULO">Adicionar Avances:</span>  Grupo de 
-              datos que contiene la información necesaria correspondiente a esta 
-              clase de transacción. Los campos relacionados con la tapa deben capturarse 
-              como se hace en la captura de compras.</p>
-            <p class="PARRAFO">Si el usuario a seleccionado la Transacción Avances 
-              e invoca la opción Adicionar, se despliega el siguiente formulario:<span 
-        ></p>
-            <p class="TITLE"><img src="../img/INF_004B16.PNG"></p>
-            
-            <table>
-              <tr> 
-                <td  class="titletable" ><p class="SUBTITULO">Fecha 
-                    proceso </p></td>
-                <td><p class="PARRAFO">Campo 
-                    de salida o no ingresable, que contiene la fecha del sistema seleccionada 
-                    en el filtro inicial.</p></td>
-              </tr>
-              <tr> 
-                <td class="titletable"><p class="SUBTITULO">Oficina</p></td>
-                <td><p class="PARRAFO">Campo 
-                    en el que se muestra el código de la oficina y descripción 
-                    de la oficina para la cual se va a capturar.</p></td>
-              </tr>
-              <tr> 
-                <td class="titletable"><p class="SUBTITULO">Marca</p></td>
-                <td><p class="PARRAFO">Campo 
-                    que posee lista de valores poblada mediante la opción <a href="NUH_033B.html" >Franquicias 
-                    </a>del Núcleo. Si la entidad requiere generar contabilidad por 
-                    marca o franquicia, no debe mezclar dentro del mismo lote o tapa movimiento 
-                    de diferentes franquicias.</p></td>
-              </tr>
-              <tr> 
-                <td class="titletable"><p class="SUBTITULO">Establecimiento</p></td>
-                <td><p class="PARRAFO">Campo 
-                    alfanumérico de 11 dígitos, obligatorio, en el que se 
-                    registra el código único que identifica, ante la franquicia, 
-                    al establecimiento donde se realiza el consumo.</p></td>
-              </tr>
-              <tr> 
-                <td  class="titletable" ><p class="SUBTITULO">Número 
-                    tarjeta </p></td>
-                <td><p class="PARRAFO">Campo 
-                    alfanumérico de 23 dígitos, no obligatorio, en el que 
-                    se digita el número de la tarjeta mediante la cual se realiza 
-                    el Avance, el sistema valida la existencia de la misma dentro 
-                    del sistema y asigna los ceros a la izquierda hasta completar la longitud 
-                    total del campo.</p></td>
-              </tr>
-              <tr> 
-                <td class="titletable"><p class="SUBTITULO">Número 
-                    comprobante </p></td>
-                <td><p class="PARRAFO">Campo 
-                    numérico de 7 dígitos, no obligatorio, en el que se registra 
-                    el número del voucher o comprobante correspondiente el Avance.</p></td>
-              </tr>
-              <tr> 
-                <td class="titletable"><p class="SUBTITULO">Fecha 
-                    comprobante </p></td>
-                <td><p class="PARRAFO">Campo 
-                    tipo fecha, en formato DDMMYYYY, debe contener la fecha física 
-                    de cada uno de los comprobantes, es la base para determinar la antig&uuml;edad 
-                    de los mismos y verificar que no excedan el plazo máximo para 
-                    su consignación determinada en <a href="NUH_055B.html" >Parámetros 
-                    operativos</a>.</p></td>
-              </tr>
-              <tr> 
-                <td class="titletable"><p class="SUBTITULO">Número 
-                    de autorización</p></td>
-                <td><p class="PARRAFO">Campo 
-                    alfanumérico de 6 dígitos, no obligatorio, en el que se 
-                    registra el número de autorización del Avance 
-                    asignado por el sistema o por la franquicia.</p></td>
-              </tr>
-              <tr> 
-                <td class="titletable"><p class="SUBTITULO">Plazo</p></td>
-                <td><p class="PARRAFO">Campo 
-                    numérico de 2 dígitos, no obligatorio, en el que se relaciona 
-                    la cantidad de periodos solicitados por el tarjetahabiente en el voucher 
-                    para cancelar el Avance. En caso de no digitarse el sistema 
-                    tomará los valores por defecto se&ntilde;alados en los parámetros 
-                    de <a href="MEH_003B.html" >Transacciones por empresa</a> del Núcleo.</p></td>
-              </tr>
-              <tr> 
-                <td class="titletable"><p class="SUBTITULO">Causal</p></td>
-                <td><p class="PARRAFO">En 
-                    el momento de la captura del comprobante el usuario puede evidenciar 
-                    inconsistencias en los comprobantes, tales como falta de firma, falta 
-                    de sellos, etc., previendo posibles fraudes. El campo provee de una 
-                    lista de valores poblada previamente en la opción <a href="NUH_016B.html" >Causales 
-                    de rechazo de transacciones</a> del Núcleo, las cuales tienen 
-                    la característica de ser causal visual, de las cuales el usuario 
-                    selecciona la que se ajusta al evento sucedido.</p></td>
-              </tr>
-              <tr> 
-                <td class="titletable"><p class="SUBTITULO">Total</p></td>
-                <td><p class="PARRAFO">Campo 
-                    numérico con capacidad para una suma hasta de 16 dígitos 
-                    incluidos dos decimales, no obligatorio, que contiene el monto total 
-                    del Avance.</p></td>
-              </tr>
-            </table>
-            
-            <p  class="PARRAFO"><span class="PARRAFO"><span class="SUBTITULO">Actualizar:</span>  
-               Al activar ese enlace  se despliega un formulario 
-              en el cual los únicos campos modificables son: Establecimiento, Número 
-              tarjeta, Número comprobante, Fecha comprobante, Número autorización, 
-              Plazo, y Causal.</p>
-            <p class="TITLE"><img src="../img/INF_004B17.PNG"></p>
-              
-            
-                
-            <p class="PARRAFO"><a href="INH_004B.html">Formulario principal</a><span
-              > |</span>  <a href="INH_004B1.html">Compras</a><span
-              ></span><span > 
-              | </span><a href="INH_004B3.html">Impuestos</a><span
-              > | </span><a href="INH_004B4.html">Pagos</a></p>
-            
+      <div>
+
+        <p class="TITLE">Avances - Captura de Movimientos oficina</p>
+
+        <p class="PARRAFO">Luego de diligenciar los campos de la parte superior
+          del formulario Captura movimiento oficinas: el código de la oficina o
+          sucursal de la que se va a capturar movimiento, el Número lote, y la
+          Marca, la Fecha de proceso se muestra por defecto y no es modificable.
+          A continuación, se activa el enlace Adicionar.</p>
+        <p class="PARRAFO"><span class="SUBTITULO">Adicionar (- Avances):</span>
+          Al activar ese enlace se despliega el siguiente formulario
+          correspondiente al Lote de avances a ingresar:</p>
+        <p class="TITLE"><img loading="lazy" rel="preload"  src="../img/INF_004B16.PNG"></p>
+        <p class="TITLE">Descripción de Campos – Lote (Consignación)</p>
+        <table>
+          <tr>
+            <td class="titletable"><p class="SUBTITULO">Fecha
+                proceso </p></td>
+            <td><p class="PARRAFO">Campo
+                de salida o no ingresable, que contiene la fecha del sistema
+                seleccionada
+                en el filtro inicial.</p></td>
+          </tr>
+          <tr>
+            <td class="titletable"><p class="SUBTITULO">Oficina</p></td>
+            <td><p class="PARRAFO">Campo
+                en el que se muestra el código de la oficina y descripción
+                de la oficina para la cual se va a capturar.</p></td>
+          </tr>
+          <tr>
+            <td class="titletable"><p class="SUBTITULO">Marca</p></td>
+            <td><p class="PARRAFO">Campo
+                que posee lista de valores poblada mediante la opción <a
+                  href="NUH_033B.html">Franquicias
+                </a>del Núcleo. Si la entidad requiere generar contabilidad
+                por
+                marca o franquicia, no debe mezclar dentro del mismo lote o
+                tapa movimiento
+                de diferentes franquicias.</p></td>
+          </tr>
+          <tr>
+            <td class="titletable"><p
+                class="SUBTITULO">Número lote</p></td>
+            <td><p class="PARRAFO">Campo numérico de 3 dígitos, obligatorio,
+                corresponde al grupo o porción de movimiento a capturar, dato
+                ingresado en el formulario inicial o anterior. En este
+                formulario se hereda o muestra dicho valor.</p></td>
+          </tr>
+          <tr>
+            <td class="titletable"><p class="SUBTITULO">Nota contable </p></td>
+            <td><p class="PARRAFO">Campo numérico de 3 dígitos, no obligatorio,
+                corresponde a la porción de movimiento a capturar agrupado o
+                totalizado por montos.</p></td>
+          </tr>
+          <tr>
+            <td class="titletable"><p class="SUBTITULO">Transacción</p></td>
+            <td><p class="PARRAFO">Campo obligatorio que posee lista de valores
+                tipo combo, de la que debe seleccionarse entre: Compras,
+                Avances, Pagos o Impuestos, el tipo o clase de movimiento a
+                ingresar.</p></td>
+          </tr>
+          <tr>
+            <td class="titletable"><p class="SUBTITULO">Moneda </p></td>
+            <td><p class="PARRAFO">Campo obligatorio en el que se puede ingresar
+                o seleccionar de la lista de valores poblada en la opción Moneda
+                el código que aplica para el movimiento a ingresar.</p></td>
+          </tr>
+          <tr>
+            <td class="titletable"><p class="SUBTITULO">Cantidad</p></td>
+            <td><p class="PARRAFO">Campo obligatorio, numérico que en máximo dos
+                dígitos, debe contener el número de comprobantes de avances que
+                se van a ingresar.</p></td>
+          </tr>
+          <tr>
+            <td class="titletable"><p class="SUBTITULO">Valor</p></td>
+            <td><p class="PARRAFO">Campo numérico con capacidad para una suma
+                hasta de 16 dígitos incluidos dos decimales, contiene el monto o
+                cuantía de las operaciones efectuadas por transacción.</p></td>
+          </tr>
+        </table>
+
+        <p class="PARRAFO">Al activar el botón especial Siguiente, el sistema
+          realiza algunas validaciones, si existe alguna inconsistencia le
+          notifica al usuario, en caso contrario, despliega el siguiente
+          formulario:</p>
+
+        <p class="TITLE"><img loading="lazy" rel="preload"  src="../img/INF_004B24.PNG"></p>
+
+        <p class="TITLE">Descripción de Campos – Comprobantes de avances</p>
+        <table>
+          <tr>
+            <td class="titletable"><p class="SUBTITULO">Fecha
+                proceso </p></td>
+            <td><p class="PARRAFO">Campo
+                de salida o no ingresable, que contiene la fecha del sistema
+                seleccionada
+                en el filtro inicial.</p></td>
+          </tr>
+          <tr>
+            <td class="titletable"><p class="SUBTITULO">Oficina</p></td>
+            <td><p class="PARRAFO">Campo
+                en el que se muestra el código de la oficina y descripción
+                de la oficina para la cual se va a capturar.</p></td>
+          </tr>
+          <tr>
+            <td class="titletable"><p class="SUBTITULO">Marca</p></td>
+            <td><p class="PARRAFO">Campo
+                que posee lista de valores poblada mediante la opción <a
+                  href="NUH_033B.html">Franquicias
+                </a>del Núcleo. Si la entidad requiere generar contabilidad
+                por
+                marca o franquicia, no debe mezclar dentro del mismo lote o
+                tapa movimiento
+                de diferentes franquicias.</p></td>
+          </tr>
+          <tr>
+            <td class="titletable"><p
+                class="SUBTITULO">Establecimiento</p></td>
+            <td><p class="PARRAFO">Campo de salida o no ingresable, de los
+                formularios previos hereda o muestra el código junto con el
+                nombre del comercio en cuya cuenta se debe depositar el valor
+                neto del movimiento a ingresar.</p></td>
+          </tr>
+          <tr>
+            <td class="titletable"><p class="SUBTITULO">Número tarjeta </p></td>
+            <td><p class="PARRAFO">Campo alfanumérico de 23 dígitos, no
+                obligatorio, en el que se digita el número de la tarjeta
+                mediante la cual se realiza el avance, el sistema valida el bin
+                de la misma y asigna los ceros a la izquierda hasta completar la
+                longitud total del campo.</p></td>
+          </tr>
+          <tr>
+            <td class="titletable"><p class="SUBTITULO">Número
+                comprobante</p></td>
+            <td><p class="PARRAFO">Campo numérico de 7 dígitos, no obligatorio,
+                en el que se registra el número del voucher o comprobante
+                correspondiente al avance.</p></td>
+          </tr>
+          <tr>
+            <td class="titletable"><p class="SUBTITULO">Fecha
+                comprobante </p></td>
+            <td><p class="PARRAFO">Campo tipo fecha, en formato DD-MM-AAAA, debe
+                contener la fecha física de cada uno de los comprobantes, es la
+                base para determinar la antigüedad de los mismos y verificar que
+                no excedan el plazo máximo para su consignación.</p></td>
+          </tr>
+          <tr>
+            <td class="titletable"><p class="SUBTITULO">Número de
+                autorización</p></td>
+            <td><p class="PARRAFO">Campo alfanumérico de 6 dígitos, no
+                obligatorio, en el que se registra el número de autorización de
+                la transacción asignado por el sistema o por la
+                franquicia.</p></td>
+          </tr>
+          <tr>
+            <td class="titletable"><p class="SUBTITULO">Plazo</p></td>
+            <td><p class="PARRAFO">Campo numérico de 2 dígitos, no obligatorio,
+                en el que se relaciona la cantidad de periodos solicitados por
+                el tarjetahabiente en el voucher para cancelar su avance. En
+                caso de no digitarse el sistema tomará los valores señalados por
+                defecto en los parámetros de <a href="MEH_003B.html">
+                  Transacciones por empresa</a>.</p></td>
+          </tr>
+          <tr>
+            <td class="titletable"><p class="SUBTITULO">Valor total</p></td>
+            <td><p class="PARRAFO">Campo numérico con capacidad para una suma
+                hasta de 16 dígitos incluidos 2 decimales, no obligatorio, que
+                contiene el valor del avance realizado.</p></td>
+          </tr>
+        </table>
+
+        <p class="PARRAFO"><span class="PARRAFO">Luego de capturados los datos
+            de cada comprobante y activar el botón especial ubicado en la parte
+            inferior derecha, se muestra el siguiente formulario, en el que se
+            puede observar, además de la relación de los distintos comprobantes
+            que componen el lote (consignación), en resumen, si las cifras del
+            movimiento presentan o no diferencias, el cual dispone de los
+            enlaces: Actualizar y Adicionar:</p>
+          <p class="TITLE"><img loading="lazy" rel="preload"  src="../img/INF_004B17.PNG"></p>
+
+          <p class="PARRAFO"><span class="SUBTITULO">Adicionar (- Captura
+              movimiento oficinas):</span> Al activar ese enlace se muestra el
+            mismo formulario, cuya funcionalidad se ya se describió más arriba
+            como Lote (Consignación) y lo que permite es agregar la información
+            de un nuevo grupo de comprobantes que, aún no había sido
+            ingresado.</p>
+
+          <p class="PARRAFO"><span class="SUBTITULO">Actualizar (- Captura
+              movimiento oficinas):</span>Al activar ese enlace se muestra el
+            mismo formulario, cuya funcionalidad se ya se describió más arriba
+            como Lote (Consignación) y lo que permite es modificar datos de la
+            misma o de los comprobantes que la integran.</p>
+
+          <p class="PARRAFO">Al no evidenciarse descuadre en las cifras de la
+            consignación y sus comprobantes, al activar el botón especial
+            ubicado en la parte inferior derecha, se muestra el siguiente
+            formulario, el cual dispone de los enlaces: Actualizar, Eliminar y
+            Adicionar:</p>
+
+          <p class="TITLE"><img loading="lazy" rel="preload"  src="../img/INF_004B25.PNG"></p>
+
+          <p class="PARRAFO"><span class="SUBTITULO">Adicionar (- Comprobantes
+              de avance):</span> Al activar ese enlace se muestra el mismo
+            formulario, cuya funcionalidad se ya se describió más arriba como
+            Comprobantes de avance y lo que permite es agregar la información de
+            otro comprobante que, perteneciendo a la misma consignación, aún no
+            había sido ingresado.</p>
+
+          <p class="PARRAFO"><span class="SUBTITULO">Actualizar (- Comprobantes
+              de avance):</span>Al activar ese enlace, se despliega un
+            formulario en el que los únicos campos no modificables son: Fecha
+            proceso, Oficina, Marca y Establecimiento:</p>
+
+            <p class="TITLE"><img loading="lazy" rel="preload"  src="../img/INF_004B26.PNG"></p>
+
+
+          <p class="PARRAFO"> <a
+              href="INH_004B.html">Compras</a><span></span><span>
+              | </span><a href="INH_004B3.html">Impuestos</a><span> |
+            </span><a href="INH_004B4.html">Pagos</a></p>
+
         </section>
-    <script src="../js/menu.js"></script>
-</body>
-<div id="footerContainer"></div>
-<script>
+        <script src="../js/menu.js"></script>
+      </body>
+      <div id="footerContainer"></div>
+      <script>
   fetch('footer.html')
     .then(response => response.text())
     .then(html => {
       document.getElementById('footerContainer').innerHTML = html;
     });
 </script>
-</html>
+    </html>

@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="es">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>OpencardWeb®</title>
+        <link rel="stylesheet" href="../css/pages.css">
+        <link rel="stylesheet" href="../css/style.css">
+        <link rel="icon" href="../img/ACQUIRER-logo.JPG" type="image/x-icon">
+    </head>
+
+    <body>
+        <header>
+            <img loading="lazy" rel="preload"  class="logo" src="../img/logoBankbu_.webp"
+                alt="Logo de Mi Empresa">
+            <div id="menuBtn">
+                <img loading="lazy" rel="preload"  class="TITLE" src="../img/menu.PNG" alt="Botón de Menú ">
+            </div>
+        </header>
+        <div id="menuContainer"></div>
+        <script>
+    fetch('menu.html')
+      .then(response => response.text())
+      .then(html => {
+        document.getElementById('menuContainer').innerHTML = html;
+      });
+  </script>
+        <section>
+            <div>
+                <p class="TITLE">Parámetros personalización - Bloqueos 
+                </p>
+
+                <p class="PARRAFO">
+                </p>
+                <p class="TITLE"><img loading="lazy" rel="preload"  src="../img/BBH_003B2.PNG"></p>
+
+                <p class="PARRAFO"><span class="SUBTITULO">Adicionar:</span> En la primera pestaña el sistema permite la parametrización de los diferentes proveedores con su respectiva llave PGP y los bines asignados a cada uno de ellos.
+                </p>
+                
+                <p class="TITLE"><img loading="lazy" rel="preload"  src="../img/BBH_003B3.PNG"></p>
+
+                <p class="TITLE">Descripción De Campos</p>
+                <table>
+                    <tr>
+                        <td class="titletable">
+                            <p class="SUBTITULO">Proveedor</p>
+                        </td>
+                        <td>
+                            <p class="PARRAFO">Lista de valores que permite seleccionar entre aquellos proveedores que estén parametrizados como realzadores.
+
+                            </p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="titletable">
+                            <p class="SUBTITULO">Llave PGP
+
+                            </p>
+                        </td>
+                        <td>
+                            <p class="PARRAFO">Campo alfanúmerico obligatorio en el cual se ingresa la correspondiente información.
+
+
+
+                            </p>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td class="titletable">
+                            <p class="SUBTITULO">Bin</p>
+                        </td>
+                        <td>
+                            <p class="PARRAFO">Lista de valores desde la cual se selecciona los bines relacionados
+                                 con el proveedor de realce. Cada uno de los bines podrá tener un proveedor de plástico
+                                  por defecto parametrizado el los <a href="MEH_001B.html">Parámetros de bines</a> .
+
+                            </p>
+                        </td>
+                    </tr>
+                </table>
+                <p class="PARRAFO"><span class="SUBTITULO">Actualizar:</span> 
+                </p>
+                <p class="TITLE"><img loading="lazy" rel="preload"  src="../img/BBH_003B5.PNG"></p>
+
+                <P><a href="BBH_003B2.html">Cuentas</a> | <a href="BBH_003B3.html">Comisiones</a> 
+                    | <a href="BBH_003B4.html">Oficinas</a> | <a href="BBH_003B5.html">Contabilidad</a>  | <a href="BBH_003B.html">Formulario Principal</a></P>
+            </div>
+        </section>
+        <script src="../js/menu.js"></script>
+    </body>
+    <div id="footerContainer"></div>
+    <script>
+  fetch('footer.html')
+    .then(response => response.text())
+    .then(html => {
+      document.getElementById('footerContainer').innerHTML = html;
+    });
+</script>
+</html>

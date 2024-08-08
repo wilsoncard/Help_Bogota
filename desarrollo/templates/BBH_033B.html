@@ -1,0 +1,378 @@
+<!DOCTYPE html>
+<html lang="es">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>OpencardWeb®</title>
+        <link rel="stylesheet" href="../css/pages.css">
+        <link rel="stylesheet" href="../css/style.css">
+        <link rel="icon" href="../img/ACQUIRER-logo.JPG" type="image/x-icon">
+    </head>
+
+    <body>
+        <header>
+            <img loading="lazy" rel="preload"  class="logo" src="../img/logoBankbu_.webp"
+                alt="Logo de Mi Empresa">
+            <div id="menuBtn">
+                <img loading="lazy" rel="preload"  class="TITLE" src="../img/menu.PNG" alt="Botón de Menú ">
+            </div>
+        </header>
+        <div id="menuContainer"></div>
+        <script>
+    fetch('menu.html')
+      .then(response => response.text())
+      .then(html => {
+        document.getElementById('menuContainer').innerHTML = html;
+      });
+  </script>
+        <section>
+            <div>
+                <p class="TITLE">Consulta por cuentas tarjeta débito</p>
+
+                <p class="PARRAFO"> Mediante este formulario se habilita la
+                    consulta, a partir de la relación de las cuentas de
+                    depósitos (Ahorros o Corriente) con las tarjetas débito
+                    dependientes de dichas cuentas. El formulario dispone de los
+                    enlaces <a href="#tarjetasInactivas">Tarjetas inactivas</a> y <a href="#transporteMasivo">Transporte masivo</a>.
+                </p>
+                <p class="TITLE"><img loading="lazy" rel="preload"  src="../img/BBH_033B.PNG"></p>
+
+                <p class="PARRAFO"><span class="SUBTITULO">Filtro:</span> Luego
+                    de seleccionar el Tipo de cuenta e ingresar el número de la
+                    misma, al activar el botón Buscar, si los datos son
+                    consistentes, el sistema retorna la siguiente información:
+                </p>
+
+                <table>
+                    <tr>
+                        <td class="titletable">
+                            <p class="SUBTITULO">Tipo ID</p>
+                        </td>
+                        <td>
+                            <p class="PARRAFO">Campo que muestra la sigla del
+                                tipo de documento de identificación del cliente
+                                titular de la tarjeta, a la que está asociada la
+                                cuenta de depósitos con la que se realiza la
+                                consulta.
+                            </p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="titletable">
+                            <p class="SUBTITULO">Número
+                                identificación</p>
+                        </td>
+                        <td>
+                            <p class="PARRAFO">Campo que muestra el número del
+                                documento de identificación del cliente titular
+                                de la tarjeta, a la que está asociada la cuenta
+                                de depósitos con la que se realiza la
+                                consulta.</p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="titletable">
+                            <p class="SUBTITULO">Código interno</p>
+                        </td>
+                        <td>
+                            <p class="PARRAFO">
+                                Campo que ilustra el código interno asociado a
+                                la tarjeta débito vinculada a la cuenta de
+                                depósitos con la que se realiza la consulta.
+                            </p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="titletable">
+                            <p class="SUBTITULO">Oficina de entrega</p>
+                        </td>
+                        <td>
+                            <p class="PARRAFO">Campo que contiene el código de
+                                la sucursal relacionada como de entrega del
+                                plástico de la tarjeta débito.</p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="titletable">
+                            <p class="SUBTITULO">Número de tarjeta</p>
+                        </td>
+                        <td>
+                            <p class="PARRAFO">
+                                Campo que ilustra el número de la tarjeta
+                                débito, enmascarado, vinculada la cuenta de
+                                depósitos con la que se realiza la consulta.
+                            </p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="titletable">
+                            <p class="SUBTITULO">Nombre plástico</p>
+                        </td>
+                        <td>
+                            <p class="PARRAFO">
+                                Campo que ilustra el nombre del cliente tal y
+                                como debe aparecer en el realce de la tarjeta
+                                débito.</p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="titletable">
+                            <p class="SUBTITULO">Ind. Fallback</p>
+                        </td>
+                        <td>
+                            <p class="PARRAFO">
+                                Campo que puede contener alguno de los
+                                siguientes valores: 1. Transacciones banda y
+                                chip 2. Transacciones solo chip</p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="titletable">
+                            <p class="SUBTITULO">Oficina Fallback</p>
+                        </td>
+                        <td>
+                            <p class="PARRAFO">
+                                Campo que muestra el dato de la oficina Cambio
+                                Fallback.</p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="titletable">
+                            <p class="SUBTITULO">Fecha nov</p>
+                        </td>
+                        <td>
+                            <p class="PARRAFO">
+                                Campo que en formato DD-MM-AAAA ilustra la fecha
+                                de la novedad Fallback.</p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="titletable">
+                            <p class="SUBTITULO">Usuario</p>
+                        </td>
+                        <td>
+                            <p class="PARRAFO">
+                                Campo que contiene el nombre del usuario
+                                responsable por el cambio Fallback.</p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="titletable">
+                            <p class="SUBTITULO">Canal</p>
+                        </td>
+                        <td>
+                            <p class="PARRAFO">
+                                Campo que identifica el canal a través del que
+                                se realizó el cambio Fallback.</p>
+                        </td>
+                    </tr>
+                </table>
+                <p class="PARRAFO"><a name="tarjetasInactivas"></a> <span
+                        class="SUBTITULO">Tarjetas inactivas:</span> Al activar
+                    ese enlace se despliega el siguiente formulario, en cuyo
+                    filtro se debe diligenciar algunos de sus campos con datos
+                    válidos para que el sistema retorne información en el bloque
+                    inferior, relacionada con las tarjetas inactivas.</p>
+
+                <p class="PARRAFO"><span
+                        class="SUBTITULO">Filtro:</span> Los datos a utilizar
+                    como criterios en las dos primeras líneas o parejas de datos
+                    deben diligenciarse ambos. Al activarse el botón Buscar, el
+                    sistema retorna los datos ilustrados.</p>
+                <p class="TITLE"><img loading="lazy" rel="preload"  src="../img/BBH_033B2.PNG"></p>
+                <p class="PARRAFO">El formulario dispone de los enlaces:
+                    Tarjetas activas, Transporte masivo y Detalle.</p>
+                <p class="TITLE"><img loading="lazy" rel="preload"  src="../img/BBH_033B3.PNG"></p>
+                <table>
+                    <tr>
+                        <td class="titletable">
+                            <p class="SUBTITULO">Código interno</p>
+                        </td>
+                        <td>
+                            <p class="PARRAFO">Campo que ilustra el código
+                                interno asociado a la tarjeta débito, vinculada
+                                a la cuenta de depósitos, a la que corresponden
+                                los datos: Número serial y Serial transporte,
+                                para este caso, con los que se realiza la
+                                consulta.
+                            </p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="titletable">
+                            <p class="SUBTITULO">Nombre plástico</p>
+                        </td>
+                        <td>
+                            <p class="PARRAFO">Campo que ilustra el nombre del
+                                cliente tal y como debe aparecer en el realce de
+                                la tarjeta débito.</p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="titletable">
+                            <p class="SUBTITULO">Número de
+                                tarjeta</p>
+                        </td>
+                        <td>
+                            <p class="PARRAFO">
+                                Campo que ilustra el número de la tarjeta
+                                débito, enmascarado, vinculad a la cuenta de
+                                depósitos con la que se realiza la consulta.
+                            </p>
+                        </td>
+                    </tr>
+                </table>
+                <p class="PARRAFO"><span
+                        class="SUBTITULO">Detalle:</span> Al invocar ese enlace
+                    se despliega el siguiente formulario en el que ninguno de
+                    sus datos es modificable:</p>
+                <p class="TITLE"><img loading="lazy" rel="preload"  src="../img/BBH_033B4.PNG"></p>
+                <p class="PARRAFO"><a name="transporteMasivo"></a> <span
+                        class="SUBTITULO">Transporte masivo:</span> Al activar
+                    ese enlace se despliega el siguiente formulario, en cuyo
+                    filtro se debe diligenciar algunos de sus campos con datos
+                    válidos para que el sistema retorne información en el bloque
+                    inferior, relacionada con la información de las tarjetas
+                    débito a las que se les habilita el uso como medio de pago
+                    en los sistemas de transporte masivo.</p>
+
+                <p class="PARRAFO"><span
+                        class="SUBTITULO">Filtro:</span> Los datos a utilizar
+                    como criterios en las dos primeras líneas o parejas de datos
+                    deben diligenciarse ambos. Al activarse el botón Buscar, el
+                    sistema retorna los datos ilustrados.</p>
+                <p class="TITLE"><img loading="lazy" rel="preload"  src="../img/BBH_033B5.PNG"></p>
+
+                <table>
+                    <tr>
+                        <td class="titletable">
+                            <p class="SUBTITULO">Nombre ID</p>
+                        </td>
+                        <td>
+                            <p class="PARRAFO">Campo que muestra el nombre del
+                                tipo de documento de identificación del cliente
+                                titular de la tarjeta, a la que está asociada la
+                                cuenta de depósitos a la que corresponden los
+                                datos: Número serial y Serial transporte, para
+                                este caso, con los que se realiza la consulta.
+                            </p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="titletable">
+                            <p class="SUBTITULO">Número
+
+                                identificación</p>
+                        </td>
+                        <td>
+                            <p class="PARRAFO">Campo que muestra el número del
+                                documento de identificación del cliente titular
+                                de la tarjeta, a la que está asociada la cuenta
+                                de depósitos con la que se realiza la
+                                consulta.</p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="titletable">
+                            <p class="SUBTITULO">Cód interno</p>
+                        </td>
+                        <td>
+                            <p class="PARRAFO">
+                                Campo que ilustra el código interno asociado a
+                                la tarjeta débito vinculada a la cuenta de
+                                depósitos con la que se realiza la consulta.
+                            </p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="titletable">
+                            <p class="SUBTITULO">Número de tarjeta</p>
+                        </td>
+                        <td>
+                            <p class="PARRAFO">Campo que ilustra el número de la
+                                tarjeta débito, enmascarado, vinculada la cuenta
+                                de depósitos con la que se realiza la
+                                consulta.</p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="titletable">
+                            <p class="SUBTITULO">Nombre Plástico</p>
+                        </td>
+                        <td>
+                            <p class="PARRAFO">
+                                Campo que ilustra el nombre del cliente tal y
+                                como debe aparecer en el realce de la tarjeta
+                                débito.
+                            </p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="titletable">
+                            <p class="SUBTITULO">Número serial</p>
+                        </td>
+                        <td>
+                            <p class="PARRAFO">
+                                Campo que muestra el dato del serial único
+                                asignado por la entidad a cada tarjeta débito a
+                                la que se le habilita la funcionalidad de servir
+                                como medio de pago en los sistemas de transporte
+                                masivo.
+                            </p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="titletable">
+                            <p class="SUBTITULO">Cod Transporte</p>
+                        </td>
+                        <td>
+                            <p class="PARRAFO">
+                                Campo que muestra el dato del <a
+                                    href="BBH_027B.html">sistema de
+                                    transporte</a> en el que puede ser utilizada
+                                la tarjeta débito como medio de pago.
+                            </p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="titletable">
+                            <p class="SUBTITULO">Fecha activación</p>
+                        </td>
+                        <td>
+                            <p class="PARRAFO">
+                                Campo que muestra en formato AA/MM/DD, la fecha
+                                a partir de la cual se le habilitó a la tarjeta
+                                débito, la funcionalidad de servir como medio de
+                                pago en uno de los sistemas de transporte
+                                masivo. </p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="titletable">
+                            <p class="SUBTITULO">Fecha bloqueo</p>
+                        </td>
+                        <td>
+                            <p class="PARRAFO">
+                                Campo que muestra en formato AA/MM/DD, la fecha
+                                en la cual se bloqueó la tarjeta débito,
+                                usualmente por no haberse podido realizar el
+                                cargo por el valor de las utilizaciones en el
+                                sistemas de transporte masivo.
+                            </p>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+        </section>
+        <script src="../js/menu.js"></script>
+    </body>
+    <div id="footerContainer"></div>
+    <script>
+  fetch('footer.html')
+    .then(response => response.text())
+    .then(html => {
+      document.getElementById('footerContainer').innerHTML = html;
+    });
+</script>
+</html>

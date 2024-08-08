@@ -1,26 +1,26 @@
 <!DOCTYPE html>
 <html lang="es">
 
-<head>
+  <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>OpencardWeb®</title>
 
     <link rel="stylesheet" href="../css/pages.css">
     <link rel="stylesheet" href="../css/style.css">
- <link rel="icon" href="../img/ACQUIRER-logo.JPG" type="image/x-icon">
-</head>
+    <link rel="icon" href="../img/ACQUIRER-logo.JPG" type="image/x-icon">
+  </head>
 
-<body>
+  <body>
 
     <header>
-        <img class="logo" src="../img/logoBankbu_.PNG" alt="Logo de Mi Empresa">
-        <div id="menuBtn">
-            <img class="TITLE"  src= "../img/menu.PNG" alt="Botón de Menú ">
-        </div>
+      <img loading="lazy" rel="preload"  class="logo" src="../img/logoBankbu_.webp" alt="Logo de Mi Empresa">
+      <div id="menuBtn">
+        <img loading="lazy" rel="preload"  class="TITLE" src="../img/menu.PNG" alt="Botón de Menú ">
+      </div>
     </header>
-      <div id="menuContainer"></div>
-  <script>
+    <div id="menuContainer"></div>
+    <script>
     fetch('menu.html')
       .then(response => response.text())
       .then(html => {
@@ -29,88 +29,48 @@
   </script>
 
     <section>
-        <div> 
-            
-                    <p  class="TITLE">Consulta global de intercambio</p>
-                    
-            <p class="PARRAFO"><span class="PARRAFO"><span class="SUBTITULO">Movimiento rechazado 
-              día anterior:</span>  A través de este botón el sistema 
-              muestra un nuevo formulario con las siguientes opciones en la parte superior:</span>  
-              <a href="INH_006B1.html" >Tapa contable</a>, <a href="INH_006B2.html" >Movimiento 
-              diario</a>, <a href="INH_006B3.html" >Rechazo cargue</a>, <a href="INH_006B4.html" >Fraudes</a>, 
-              <a href="INH_006B5.html" >Pendientes</a>, <a href="INH_006B6.html" >Contracargos</a>, 
-              <a href="INH_006B7.html" >Intercambio</a>, <a href="INH_006B8.html" >Efectos 
-              al cobro</a>, <a href="INH_006B9.html" >Rechazo cargue convenios</a>.</p>
-            <p  class="PARRAFO">Grupo de campos que ilustran, mediante los 
-              mismo campos antes descritos, las distintas transacciones que fueron remitidas 
-              al procesador mediante el Canje enviado del día hábil inmediatamente 
-              anterior, para de ser posible corregir la(s) inconsistencia(s) presentada(s) 
-              y enviarse nuevamente a proceso.</p>
-            <p class="TITLE"><img src="../img/INF_006B3.PNG"734" height="535"></p>
+      <div>
 
-            <p  class="PARRAFO"><span class="SUBTITULO">Filtro:</span>  El formulario 
-              cuenta con un filtro inicial de búsqueda, necesario para la consulta 
-              de la información:</p>
-            <p class="TITLE"><img src="../img/INF_006B2.PNG"677" ></p>
-           
-            <table>
-              <tr> 
-                <td  class="titletable" ><p class="SUBTITULO">Transacción</p></td>
-                <td><p class="PARRAFO">Campo 
-                    en el cual se ingresa el nombre asociado a cada tipo o clase de transacción 
-                    contenida dentro del archivo del movimiento. El formulario despliega 
-                    la misma clase de transacción por cuantos paquetes la contengan 
-                    en una misma fecha de proceso y origen de transacciones.</p></td>
-              </tr>
-              <tr> 
-                <td  class="titletable" ><p class="SUBTITULO">Moneda</p></td>
-                <td><p class="PARRAFO">Contiene 
-                    el nombre de la moneda en que se denomina el movimiento consultado.</p></td>
-              </tr>
-              <tr> 
-                <td class="titletable"><p class="SUBTITULO">Número 
-                    paquete </p></td>
-                <td><p class="PARRAFO">Se 
-                    ingresa el número del paquete que identifica el movimiento por 
-                    clase o tipo de transacción, lo que facilita su ubicación 
-                    en caso de ser necesario.</p></td>
-              </tr>
-              <tr> 
-                <td class="titletable"><p class="SUBTITULO">Sucursal</p></td>
-                <td><p class="PARRAFO">Se 
-                    ingresa el código que identifica la oficina por medio de la que 
-                    ingresó el movimiento.</p></td>
-              </tr>
-            </table>
-           
-            <p class="PARRAFO"><span class="SUBTITULO">Detalle:</span>  Si el usuario invoca 
-              la opción Detalle se despliega el siguiente formulario: <span
-              
-        >  </p>
-            <p class="TITLE"><img src="../img/INF_006B3.1.PNG"></p>
-            
-            <p class="PARRAFO"><a href="INH_006B1.html">Tapa contable</a><span
-              > | </span><a href="INH_006B2.html">Movimiento 
-              diario</a><span > | </span><a href="INH_006B3.html">Rechazo 
-              cargue</a><span
-              > | </span><a href="INH_006B4.html">Fraudes</a><span
-              > | </span><a href="INH_006B5.html">Pendientes</a>
-            <a href="INH_006B6.html">Contracargos</a><span > 
-              | </span><a href="INH_006B7.html">Intercambio</a><span
-              > | </span><a href="INH_006B8.html">Efectos 
-              al cobro</a><span
-              > | </span><a href="INH_006B9.html">Rechazo 
-              cargue convenios</a></p>
-            
-        </section>
-    <script src="../js/menu.js"></script>
-</body>
-<div id="footerContainer"></div>
-<script>
+        <p class="TITLE">Movimiento rechazado día anterior - Consulta global de
+          intercambio</p>
+
+        <p class="PARRAFO"><span class="PARRAFO">Los registros contenidos en
+            este formulario, corresponden a las distintas transacciones que
+            fueron remitidas al procesador mediante el Canje enviado del día
+            hábil inmediatamente anterior, para de ser posible corregir la(s)
+            inconsistencia(s) presentada(s) y enviarse nuevamente a proceso. El
+            formulario contiene los siguientes enlaces: <a href="INH_006B10.html">Movimiento rechazado día anterior</a>,
+            <a href="INH_006B2.html"> Movimiento débito</a>,
+            <a href="INH_006B1.html"> Tapa contable</a>,
+            <a href="INH_006B6.html"> Contracargos</a>,
+            <a href="INH_006B4.html"> Fraudes</a>,    
+            <a href="INH_006B5.html"> Pendientes débito</a>,
+            <a href="INH_006B3.html"> Rechazo cargue</a>,
+            <a href="INH_006B9.html"> Intercambio</a>,
+            <a href="INH_006B9.html"> Rechazo cargue convenios</a>.</p>
+          <p class="TITLE"><img loading="lazy" rel="preload"  src="../img/INF_006B3.PNG"></p>
+
+          <br><br><br><br><br><br><br>
+         
+          <p class="PARRAFO"> <a href="INH_006B10.html">Movimiento rechazado día anterior</a> |
+            <a href="INH_006B2.html">Movimiento débito</a> |
+            <a href="INH_006B6.html">Contracargos</a> |
+            <a href="INH_006B1.html"> Tapa contable</a> |
+            <a href="INH_006B4.html">Fraudes</a> |     
+            <a href="INH_006B5.html">Pendientes débito</a> |
+            <a href="INH_006B3.html">Rechazo cargue</a> |
+            <a href="INH_006B9.html">Intercambio</a> |
+            <a href="INH_006B9.html">Rechazo cargue convenios</a>  </p>
+
+          </section>
+          <script src="../js/menu.js"></script>
+        </body>
+        <div id="footerContainer"></div>
+        <script>
   fetch('footer.html')
     .then(response => response.text())
     .then(html => {
       document.getElementById('footerContainer').innerHTML = html;
     });
 </script>
-</html>
+      </html>

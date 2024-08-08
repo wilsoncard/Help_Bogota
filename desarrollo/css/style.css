@@ -5,20 +5,23 @@ body {
     position: relative;
     overflow-x: auto;
 }
+
 header {
     color: #fff;
-    padding: 1vw; /* Utiliza unidades de vista del ancho para el padding */
+    padding: 1vw;
     text-align: right;
     position: relative;
 }
+
 header img.logo {
     max-height: 6vw;
-    max-width: 80%; /* Ajusta este valor según sea necesario */
+    max-width: 80%;
     position: absolute;
     right: 2vw;
     width: auto;
     top: 1vw;
 }
+
 #menuBtn {
     cursor: pointer;
     position: fixed;
@@ -26,34 +29,34 @@ header img.logo {
     top: 2vw;
     z-index: 1;
 }
+
 #menuBtn img {
     max-height: 6vw;
     max-width: 80%;
-    margin-top: 1 vw;
+    margin-top: 1vw;
     height: auto;
     width: 4.5vw;
     transition: opacity 0.5s;
 }
+
 ul {
     list-style: none;
-  }
-  nav {
+}
+
+nav {
     width: 18vw;
-    max-width: 18vw;
-    min-width: 18vw;
     height: 100%;
     background-color: #341C8C;
     position: fixed;
-    left: -100%;
+    left: -100vw;
     top: 0;
     overflow-y: auto;
-    transition: 0.5s;
+    transition: left 0.5s;
     padding-top: 3vw;
 }
 
 nav ul {
     width: 15vw;
-    max-width: 15vw;
 }
 
 .main-optionINICIO {
@@ -73,7 +76,7 @@ nav a {
 nav ul ul {
     visibility: hidden;
     max-height: 0;
-    overflow-y: auto; /* Permitir desplazamiento vertical */
+    overflow-y: auto;
     transition: max-height 0.3s ease-in-out, visibility 0.3s ease-in-out;
 }
 
@@ -84,119 +87,122 @@ nav ul li {
 nav ul li ul {
     visibility: hidden;
     max-height: 0;
-    overflow-y: auto; /* Permitir desplazamiento vertical */
+    overflow-y: auto;
     transition: max-height 0.5s ease-in-out, visibility 0.5s ease-in-out, opacity 0.5s ease-in-out;
     opacity: 0;
 }
 
 nav ul li ul.active {
     visibility: visible;
-    max-height: 100%; /* Cambiado de 100vw a 100% */
+    max-height: 100%;
     opacity: 1;
 }
 
-section div {
-    width: 90vw; /* Ajusta según tus necesidades con unidades relativas */
-    text-align: justify;
-    margin: auto; /* Centra el contenido horizontalmente */
-}
 section {
-    width: 90%; /* Puedes ajustar el valor según tus necesidades */
+    width: 90%;
     justify-content: space-between;
     text-align: justify;
-    margin-left: 6vw; /* Ajusta según tus necesidades con unidades relativas */
-    margin-top: 5vw; /* Ajusta según tus necesidades con unidades relativas */
+    margin-left: 6vw;
+    margin-top: 5vw;
     display: flex;
     align-items: center;
-    padding-bottom: 12vw; /* Ajusta según tus necesidades con unidades relativas */
+    padding-bottom: 12vw;
     transition: margin-left 0.5s;
 }
+
+section div {
+    width: 90vw;
+    text-align: justify;
+    margin: auto;
+}
+
 section table {
     border-collapse: collapse;
-    width: 100%; /* Hace que la tabla sea responsive */
+    width: 100%;
 }
+
 footer {
     width: 100vw;
-    max-width: 90vw;
-    min-width: 100vw;
     height: 8vw;
-    max-height: 8vw;
-    min-height: 8vw;
     background-color: #341C8C;
     color: #fff;
-    padding: 1vw; /* Utiliza unidades de vista del ancho para el padding */
+    padding: 1vw;
     position: absolute;
     bottom: 0;
     transition: margin-left 0.5s;
 }
+
 footer div img {
     width: 28vw;
-    max-width: 28vw;
 }
+
 footer p {
     font-size: 1.2vw;
     text-align: right;
-    margin-right: 4vw; /* Ajusta según tus necesidades con unidades relativas */
+    margin-right: 4vw;
 }
+
 footer a {
     color: #F26716;
 }
+
 footer div {
-    height: 3vw; /* Ajusta según tus necesidades con unidades relativas */
-    width: auto;
+    height: 3vw;
     position: absolute;
-    top: 3vw; /* Ajusta según tus necesidades con unidades relativas */
-    left: 2vw; /* Ajusta según tus necesidades con unidades relativas */
+    top: 3vw;
+    left: 2vw;
     text-align: justify;
 }
+
 .aviso-importante {
     color: #F26716;
 }
+
 body.menu-opened section {
-    margin-left: 20vw; /* Ajusta según el ancho de tu menú con unidades relativas */
+    margin-left: 18vw;
 }
+
 body.menu-opened #menuBtn img {
     opacity: 0;
     pointer-events: none;
 }
-body.menu-opened footer div img {
-    max-width: 28vw; /* Ajusta según tus necesidades */
-    height: auto;
-}
+
 body.menu-opened footer {
-    margin-left: 18.5vw; /* Ajusta según el ancho de tu menú con unidades relativas */
+    margin-left: 18vw;
 }
-.ocultar{
+
+.ocultar {
     visibility: hidden;
     display: none;
 }
 
-   
 @media (max-width: 1300px) {
-    footer{
+    footer {
         position: fixed;
     }
-        .seccion div {
-            display: flex; /* Usamos flexbox para alinear los elementos en fila por defecto */
-            flex-direction: column; /* Alineamos los elementos en columna para pantallas más pequeñas */
-            align-items: center; /* Centramos los elementos horizontalmente */
-            text-align: center; /* Centramos el texto */
-        }
-        .ImagenBankbu {
-            position: absolute;
-         visibility: hidden;
-        }
-    
-        section img  {
-            display: inline-block;
-            margin-left: 5vw; /* Ajusta este valor según sea necesario para separar la imagen del texto */
-            width: auto;
-            max-width:500px; /* Hace que la imagen sea responsive */
-            height: 80%;
-            max-height: auto;
-        }
-        section p {
-            width: auto;
-            margin-right: auto;
-        }
+
+    .seccion div {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
     }
+
+    .ImagenBankbu {
+        position: absolute;
+        visibility: hidden;
+    }
+
+    section img {
+        display: inline-block;
+        margin-left: 5vw;
+        width: auto;
+        max-width: 500px;
+        height: 80%;
+    }
+
+    section p {
+        width: auto;
+        margin-right: auto;
+    }
+}

@@ -1,24 +1,24 @@
 <!DOCTYPE html>
 <html lang="es">
 
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>OpencardWeb®</title>
-  <link rel="stylesheet" href="../css/pages.css">
-  <link rel="stylesheet" href="../css/style.css">
-  <link rel="icon" href="../img/ACQUIRER-logo.JPG" type="image/x-icon">
-</head>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OpencardWeb®</title>
+    <link rel="stylesheet" href="../css/pages.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="icon" href="../img/ACQUIRER-logo.JPG" type="image/x-icon">
+  </head>
 
-<body>
-  <header>
-    <img class="logo" src="../img/logoBankbu_.PNG" alt="Logo de Mi Empresa">
-    <div id="menuBtn">
-      <img class="TITLE" src="../img/menu.PNG" alt="Botón de Menú ">
-    </div>
-  </header>
+  <body>
+    <header>
+      <img loading="lazy" rel="preload"  class="logo" src="../img/logoBankbu_.webp" alt="Logo de Mi Empresa">
+      <div id="menuBtn">
+        <img loading="lazy" rel="preload"  class="TITLE" src="../img/menu.PNG" alt="Botón de Menú ">
+      </div>
+    </header>
     <div id="menuContainer"></div>
-  <script>
+    <script>
     fetch('menu.html')
       .then(response => response.text())
       .then(html => {
@@ -26,42 +26,49 @@
       });
   </script>
 
-  <section>
-    <div>
-      <p class="TITLE">Sobreflex de clave</p>
-
-      <p class="PARRAFO">Mediante esta función se habilita la selección de aquellos plásticos que, durante el proceso de
-        las diferentes solicitudes, arriban a la etapa de generación de sobreflex de clave para asignarle el PIN
-        (Personal Identification Number), dato requerido por el tarjetahabiente para hacer uso del plástico en cajeros y
-        otros medios. </p>
-      <p class="PARRAFO">Al invocar la opción, el usuario se encuentra con un wizard de tres pasos, el primero,
-        corresponde a un filtro, en el cual es necesario diligenciar al menos un criterio que permita determinar la(s)
-        tarjeta(s) que se desea consultar para generarles la clave o PIN.</p>
-      <p class="TITLE"><img src="../img/PLF_014E.PNG"></p>
-
-      <p class="TITLE">Descripción de campos</p>
+    <section>
       <div>
+        <p class="TITLE">Sobreflex de clave</p>
+
+        <p class="PARRAFO">Mediante esta función se habilita la selección de
+          aquellos plásticos que, durante el proceso de las diferentes
+          solicitudes, arriban a la etapa de generación de sobreflex de clave
+          para asignarle el PIN (Personal Identification Number), dato requerido
+          por el tarjetahabiente para hacer uso del plástico en cajeros y otros
+          medios. </p>
+        <p class="PARRAFO">Al invocar la opción, el usuario se encuentra con un
+          wizard de tres pasos, el primero, corresponde a un filtro, en el cual
+          es necesario diligenciar al menos un criterio que permita determinar
+          la(s) tarjeta(s) que se desea consultar para generarles la clave o
+          PIN.</p>
+        <p class="TITLE"><img loading="lazy" rel="preload"  src="../img/PLF_014E.PNG"></p>
+
+        <p class="TITLE">Descripción de campos</p>
+
         <table>
           <tr>
             <td class="titletable">
               <p class="SUBTITULO">Número
-                    tarjeta </p>
+                tarjeta </p>
             </td>
             <td>
               <p class="PARRAFO">Campo
-                alfanumérico de hasta 23 posiciones en el que se puede ingresar
-                el número de alguna tarjeta en particular que se desee consultar
+                alfanumérico de hasta 23 posiciones en el que se puede
+                ingresar
+                el número de alguna tarjeta en particular que se desee
+                consultar
                 para generarle el PIN o clave.</p>
             </td>
           </tr>
           <tr>
             <td class="titletable">
               <p class="SUBTITULO">Nombre
-                    plástico </p>
+                plástico </p>
             </td>
             <td>
               <p class="PARRAFO">En
-                este campo se ingresa como criterio para la consulta el nombre del
+                este campo se ingresa como criterio para la consulta el nombre
+                del
                 cliente tal y como aparece realzado en el plástico al cual
                 se desea generar la clave.</p>
             </td>
@@ -69,524 +76,148 @@
 
           <tr>
             <td class="titletable">
-              <p class="SUBTITULO">Producto
-                    plástico </p>
+              <p class="SUBTITULO">Origen registro
+
+              </p>
             </td>
             <td>
-              <p class="PARRAFO">Campo
-                con lista de valores de la que se puede seleccionar el <a href="MEH_002B.html"
-                  >producto</a>
-                al cual pertenecen los plásticos que se desea consultar para
-                generar clave. </p>
+              <p class="PARRAFO">Campo que posee lista de valore tipo combo de
+                la cual se puede seleccionar entre: Débito Masivo No
+                Personalizado o Crédito Masivo No Personalizado, el evento que
+                dio origen a la solicitud de los plásticos para los que se
+                desea generar el sobreflex.
+
+              </p>
             </td>
           </tr>
 
           <tr>
             <td class="titletable">
-              <p class="SUBTITULO">Marca</p>
+              <p class="SUBTITULO">Punto de venta
+
+              </p>
             </td>
             <td>
-              <p class="PARRAFO">En
-                este campo con lista de valores, se selecciona según el caso
-                la <a href="NUH_033B.html" >marca</a> asociada
-                con los productos a los que pertenecen los plásticos que se
-                desea consultar para generales la clave o PIN.</p>
-            </td>
-          </tr>
-          <tr>
-            <td class="titletable">
-              <p class="SUBTITULO">Origen registro</p>
-            </td>
-            <td>
-              <p class="PARRAFO">Campo
-                tipo combo en el cual se selecciona el evento que dió origen
-                a la solicitud de los plásticos que se desea consultar para
-                generarles el PIN o clave. Las opciones contenidas en este combo son
-                Crédito empresarial corporativo, Crédito convenio,
-                  Renovación individual crédito, Renovación masiva
-                  crédito, Reexpedición crédito, Crédito
-                  normal, Tarjeta débito, Cambio masivo de productos crédito,
-                  Recordatorio sobreflex de clave, Reposición, Reactivación,
-                  Renovación masiva débito, Reexpedición débito,
-                  Renovación débito, Reposición débito y
-                  Renovación masiva débito.
+              <p class="PARRAFO">Campo con lista de valores que permite
+                seleccionar el punto de venta definido por la entidad,
+                asociado con las tarjetas para las cuales se desea consultar y
+                generar el sobreflex.
+
               </p>
             </td>
           </tr>
           <tr>
             <td class="titletable">
-              <p class="SUBTITULO">Secuencia solicitud</p>
+              <p class="SUBTITULO">Secuencia solicitud
+
+              </p>
             </td>
             <td>
-              <p class="PARRAFO">En
-                este campo numérico se puede ingresar el número de la
-                solicitud específica para la cual se desean consultar los plásticos
-                para generarles la clave.</p>
+              <p class="PARRAFO">En este campo numérico se puede ingresar el
+                número de la solicitud específica para la cual se desean
+                consultar y generar el sobreflex.
+
+              </p>
+            </td>
+          </tr>
+          <tr>
+            <td class="titletable">
+              <p class="SUBTITULO">Sucursal</p>
+            </td>
+            <td>
+              <p class="PARRAFO">Campo con lista de valores que permite
+                seleccionar la <a href="NUH_020B.html">sucursal</a> en la que
+                se gestionó la solicitud de las tarjetas para las cuales se
+                desea consultar y generar el sobreflex.
+              </p>
             </td>
           </tr>
 
           <tr>
             <td class="titletable">
-              <p class="SUBTITULO">Modelo plástico (código y descripción) </p>
+              <p class="SUBTITULO">Punto entrega
+
+              </p>
             </td>
             <td>
-              <p class="PARRAFO">Campo
-                con lista de valores que permite seleccionar el <span ><a href="NUH_057B.html"
-                      >modelo
-                      de plástico</a></span>  asociado con las tarjetas para
-                las cuales se desea consultar y ejecutar el proceso de generación
-                de claves.
+              <p class="PARRAFO">Campo con lista de valores que permite
+                seleccionar el punto de <a href="PLH_006B.html">entrega</a>
+                asociado con las tarjetas para las cuales se desea consultar y
+                generar el sobreflex.
+
+              </p>
+            </td>
+          </tr>
+
+          <tr>
+            <td class="titletable">
+              <p class="SUBTITULO">Seleccionar tarjetas masivas
+              </p>
+            </td>
+            <td>
+              <p class="PARRAFO">Campo que posee lista de valores tipo combo
+                de la que puede seleccionarse entre: Si o No, se deben incluir
+                del proceso de realce, a los plásticos de los procesos de
+                generación masiva de tarjetas.
+
               </p>
             </td>
           </tr>
         </table>
-      </div>
-      <table>
-        <tr>
-          <td class="titletable">
-            <p class="SUBTITULO">Nombre
-                  archivo </p>
-          </td>
-          <td>
-            <p class="PARRAFO">En este campo obligatorio, se debe ingresar el nombre con el cual se va a identificar el
-              archivo a generar con la información para la asignación de las claves a las tarjetas seleccionadas.
+
+        <p class="PARRAFO"><span class="PARRAFO">Una vez seleccionados los
+            criterios y al desplazarse a la segunda página del wizard, se
+            muestran los registros que cumplen con las condiciones indicadas por
+            el usuario, mostrando para cada uno de ellos: Número de tarjeta
+            (enmascarado), Punto de entrega, Sucursal, Nombre a realzar en el
+            plástico, Fecha realce, Secuencia solicitud, Tipo de solicitud,
+            Punto de venta, Origen del registro y, un campo para marcar aquellos
+            registros que se quiera enviar a generar el sobreflex, en caso que
+            el usuario no desee ejecutar la acción para todos los registros
+            desplegados por los filtros.</p>
+
+          <p class="PARRAFO"><span class="PARRAFO">Es de aclarar que, en el caso
+              que las tarjetas desplegadas correspondan a tipo débito generadas
+              masivamente, el campo Nombre plástico se mostrará en blanco. </p>
+
+            <p class="PARRAFO"><span class="PARRAFO">Esta segunda página del
+                wizard cuenta con dos <a
+                  href="PLH_008B.html#BL_GENERAR">botones</a> especiales que le
+                permiten a la
+                entidad Seleccionar o Deseleccionar todos los registros
+                desplegados en el formulario y así facilitar avanzar al tercer
+                paso del wizard.</p>
+              <p class="TITLE"><img loading="lazy" rel="preload"  src="../img/PLF_014E1.PNG"></p>
+
+              <p class="PARRAFO">En la tercera página del wizard, se muestran
+                los registros que el usuario seleccionó, en caso que éste no se
+                vaya a aplicar para todos los registros desplegado en la segunda
+                página y mediante el botón de palomita o visto bueno se ordena
+                la generación del sobreflex.</p>
+              <p class="TITLE"><img loading="lazy" rel="preload"  src="../img/PLF_014E2.PNG"></p>
+
+              <p class="TITLE">Botones especiales</p>
+              <p class="PARRAFO"><a name="BL_GENERAR"></a><span
+                  class="SUBTITULO">Seleccionar / Deseleccionar:</span></span>
+              Dupla de botones especiales que le permiten a la entidad, marcar o
+              desmarcar, todos los registros desplegados en el segundo paso del wizard
+              y así facilitar avanzar al tercer paso del mismo.
             </p>
-          </td>
-        </tr>
-      </table>
+            <p class="TITLE"><img loading="lazy" rel="preload"  src="../img/Seleccionar.PNG"></p>
+            <p class="TITLE"><img loading="lazy" rel="preload"  src="../img/Deseleccionar.PNG"></p>
+      
+          </div>
+          </section>
+          <script src="../js/menu.js"></script>
 
-      <p class="PARRAFO"><span class="PARRAFO">Si bien solo con diligenciar el nombre del archivo y avanzar mediante
-          ubicado en la parte inferior derecha, en el segundo paso del wizard, el sistema recupera y despliega todos los
-          registros almacenados en la base de datos para los que se deba surtir esta etapa, y los muestra por bloques de
-          hasta 10 registros (ampliable a 100). Si por el contrario, se requiere ubicar solo una parte de dichos
-          registros, una vez seleccionados los criterios y utilizando el botón avanzar, en el segundo paso del wizard,
-          el sistema muestra, únicamente aquellos registros de las tarjetas que cumplen con las condiciones indicadas
-          por el usuario, ilustrando para cada uno de ellos, el número de tarjeta (enmascarado si aplica), el nombre
-          realzado en el plástico, la fecha de realce (embosado) y el campo Seleccionar.</p>
-
-      <p class="PARRAFO"><span class="PARRAFO">En las descripciones de la parte inferior de la página cambiar
-          descripción de: </p>
-      <p class="TITLE"><img src="../img/PLF_014E1.PNG"></p>
-
-      <p class="PARRAFO">En la tercera
-          página del wizard, se muestran los registros que el usuario haya seleccionado
-          para ejecutar el proceso de generación de claves, en caso que éste
-          no se vaya a aplicar para todos los registros desplegado en la segunda página
-          y mediante el botón finalizar se ordena la generación del archivo
-          respectivo; al igual que la segunda página del wizard este formulario
-          también contiene el hipervínculo </span><span class="PARRAFO"><a href="PLH_008B.html#BL_DETALLE">Detalle</a></span>.</p>
-      <p class="PARRAFO">La casilla remover le permite al usuario marcar
-        aquellos registros que había seleccionado previamente pero que por
-        alguna razón ya no desea incluir en el archivo de generación
-        de claves.</p>
-      <p class="TITLE"><img src="../img/PLF_014E2.PNG"></p>
-
-      <p class="PARRAFO"><a name="BL_DETALLE"></a><span class="SUBTITULO">Detalle:</span> 
-        </span>
-          si desde la segunda o tercera página del wizard el usuario selecciona
-          un registro e invoca la opción Detalle, se despliega un formulario
-          con la información completa del registro y cuyos campos se describen
-          a continuación. Ninguno de los datos allá contenidos puede ser
-          modificado.</span> 
-      </p>
-      <p class="TITLE"><img src="../img/PLF_014E3.PNG"></p>
-
-      <p class="TITLE">Descripción de campos</p>
-      <div>
-        <table>
-          <tr>
-            <td class="titletable">
-              <p class="SUBTITULO">Número
-                    tarjeta </p>
-            </td>
-            <td>
-              <p class="PARRAFO">Campo en el que se despliega el número (enmascarado si aplica) de la tarjeta para el
-                cual se está consultando la información.</p>
-            </td>
-          </tr>
-          <tr>
-            <td class="titletable">
-              <p class="SUBTITULO">Nombre
-                    plástico </p>
-            </td>
-            <td>
-              <p class="PARRAFO">En
-                este campo se muestra el nombre del cliente titular de la tarjeta
-                tal y como aparece realzado en el plástico.</p>
-            </td>
-          </tr>
-
-          <tr>
-            <td class="titletable">
-              <p class="SUBTITULO">Número</span> plástico </p>
-            </td>
-            <td>
-              <p class="PARRAFO">Campo
-                que contiene el consecutivo que identifica el plástico utilizado
-                durante el proceso de embosado o realce de la tarjeta.</p>
-            </td>
-          </tr>
-          <tr>
-            <td class="titletable">
-              <p class="SUBTITULO">Consecutivo
-                    plástico </p>
-            </td>
-            <td>
-              <p class="PARRAFO">Campo
-                que contiene el consecutivo que identifica el registro asociado a
-                la tarjeta dentro del archivo de realce.</p>
-            </td>
-          </tr>
-
-          <tr>
-            <td class="titletable">
-              <p class="SUBTITULO">Nombre
-                    archivo realce</p>
-            </td>
-            <td>
-              <p class="PARRAFO">Despliega
-                el nombre del archivo de realce dentro del cual se incluyó
-                el registro correspondiente al plástico asociado al número
-                de tarjeta.</p>
-            </td>
-          </tr>
-          <tr>
-            <td class="titletable">
-              <p class="SUBTITULO">Fecha
-                    / hora realce</p>
-            </td>
-            <td>
-              <p class="PARRAFO">Indica
-                la fecha y hora en la cual se generó el archivo de realce en
-                el cual se encuentra contenida la tarjeta consultada.</p>
-            </td>
-          </tr>
-          <tr>
-            <td class="titletable">
-              <p class="SUBTITULO">Archivo
-                    sobreflex de clave</p>
-            </td>
-            <td>
-              <p class="PARRAFO">Despliega
-                el nombre del archivo de sobreflex de clave dentro del cual se incluyó
-                el registro correspondiente a la información del PIN o clave
-                de la tarjeta.</p>
-            </td>
-          </tr>
-          <tr>
-            <td class="titletable">
-              <p class="SUBTITULO">Fecha
-                    / hora sobreflex de clave</p>
-            </td>
-            <td>
-              <p class="PARRAFO">Campo
-                que contiene la fecha y hora en la que se generó el archivo
-                mediante el que se genera el sobreflex con el PIN o clave que permite
-                al cliente el uso del plástico. </p>
-            </td>
-          </tr>
-          <tr>
-            <td class="titletable">
-              <p class="SUBTITULO">Fecha
-                    / hora inventario</p>
-            </td>
-            <td>
-              <p class="PARRAFO">Muestra
-                la fecha y hora en la cual se aplicó el control de inventario
-                a la tarjeta y mediante la cual se le asignó a la tarjeta el
-                número de plástico respectivo.</p>
-            </td>
-          </tr>
-          <tr>
-            <td class="titletable">
-              <p class="SUBTITULO">Fecha
-                    / hora sobreflex de empaque</p>
-            </td>
-            <td>
-              <p class="PARRAFO">Campo
-                que contiene la fecha y hora en la que se generó el archivo
-                mediante el que se imprimen los sobres de seguridad en los cuales
-                son empacados los plásticos para ser enviados al cliente.</p>
-            </td>
-          </tr>
-          <tr>
-            <td class="titletable">
-              <p class="SUBTITULO">Fecha
-                    / hora envío mensajería</p>
-            </td>
-            <td>
-              <p class="PARRAFO">Este
-                campo muestra la fecha y hora en la que se generó el archivo
-                con el cual se envió a la empresa de mensajería el plástico
-                realzado con el fin de ser entregado al cliente.</p>
-            </td>
-          </tr>
-          <tr>
-            <td class="titletable">
-              <p class="SUBTITULO">Fecha
-                    / hora acuse</p>
-            </td>
-            <td>
-              <p class="PARRAFO">Campo
-                que muestra la fecha y hora en la cual se registró en el sistema
-                la aceptación o rechazo del plástico por parte del cliente.</p>
-            </td>
-          </tr>
-          <tr>
-            <td class="titletable">
-              <p class="SUBTITULO">Plástico aceptado</p>
-            </td>
-            <td>
-              <p class="PARRAFO">En
-                este campo se indica Si o No el cliente aceptó
-                el plástico realzado y enviado por la entidad financiera.</p>
-            </td>
-          </tr>
-          <tr>
-            <td class="titletable">
-              <p class="SUBTITULO">Nombre empresa</p>
-            </td>
-            <td>
-              <p class="PARRAFO">Para
-                el caso de tarjetas de productos empresariales, en este campo se muestra
-                el nombre de la empresa a la cual se le aprobó la obligación
-                por parte de la entidad.</p>
-            </td>
-          </tr>
-          <tr>
-            <td class="titletable">
-              <p class="SUBTITULO">Tipo
-                    plástico </p>
-            </td>
-            <td>
-              <p class="PARRAFO">Campo
-                que indica si el plástico asociado con la tarjeta consultada
-                corresponde a un Plástico principal es decir, a la
-                materialización del crédito otorgado, u Otro plástico en caso de aquellos
-                <a href="MEH_002B4.html" >plásticos
-                    secundarios</a> o accesorios que de acuerdo con lo definido en
-                el producto se entregan adicionalmente a la tarjeta propiamente dicha
-                y que sirven para formalizar extensión de beneficios o un trato
-                preferencial a los titulares de los mismos.
-              </p>
-            </td>
-          </tr>
-          <tr>
-            <td class="titletable">
-              <p class="SUBTITULO">Foto
-                    cliente </p>
-            </td>
-            <td>
-              <p class="PARRAFO">Indica
-                si de acuerdo con los parámetros del <a href="MEH_002B.html" >producto</a>
-                y las características del modelo de plástico asociado,
-                el plástico lleva impresa o no la fotografía del cliente.</p>
-            </td>
-          </tr>
-          <tr>
-            <td class="titletable">
-              <p class="SUBTITULO">Nombre
-                    otro plástico</p>
-            </td>
-            <td>
-              <p class="PARRAFO">Cuando
-                en el campo Tipo plástico se indica que el registro
-                corresponde a <a href="MEH_030B.html" >Otro plástico</a>,
-                en este campo se muestra la descripción o nombre del mismo.</p>
-            </td>
-          </tr>
-          <tr>
-            <td class="titletable">
-              <p class="SUBTITULO">Producto</span> plástico </p>
-            </td>
-            <td>
-              <p class="PARRAFO">En
-                este campo se muestra el bin, segmento, grupo de afinidad y descripción
-                del producto al que pertenece la tarjeta.</p>
-            </td>
-          </tr>
-          <tr>
-            <td class="titletable">
-              <p class="SUBTITULO">Secuencia</p>
-            </td>
-            <td>
-              <p class="PARRAFO">Campo
-                que muestra la secuencia asignada internamente por el sistema y de
-                manera automática a cada uno de los plásticos que ingresan
-                a la etapa de realce, lo que permite diferenciarlo de los demás.
-              </p>
-            </td>
-          </tr>
-          <tr>
-            <td class="titletable">
-              <p class="SUBTITULO">Marca</p>
-            </td>
-            <td>
-              <p class="PARRAFO">En
-                este campo se despliega la <a href="NUH_033B.html" >marca</a> asociada con el
-                producto al que pertenece el plástico del cual
-                se está consultando el detalle.</p>
-            </td>
-          </tr>
-
-          <tr>
-            <td class="titletable">
-              <p class="SUBTITULO">Origen</span> registro </p>
-            </td>
-            <td>
-              <p class="PARRAFO">Este
-                campo muestra el evento que dió origen a la solicitud de los
-                plásticos que se desea consultar para realce. Las opciones
-                contenidas en este combo son Crédito empresarial corporativo,
-                  Crédito convenio, Renovación individual crédito,
-                  Renovación masiva crédito, Reexpedición crédito,
-                  Crédito normal, Tarjeta débito, Cambio masivo de productos
-                  crédito, Recordatorio sobreflex de clave, Reposición,
-                  Reactivación, Renovación masiva débito, Reexpedición
-                  débito, Renovación débito, Reposición
-                  débito y Renovación masiva débito.</p>
-            </td>
-          </tr>
-          <tr>
-            <td class="titletable">
-              <p class="SUBTITULO">Secuencia solicitud</p>
-            </td>
-            <td>
-              <p class="PARRAFO">Campo
-                que contiene el número o secuencia de la solicitud a la cual
-                se encuentra asociado el plástico actual.</p>
-            </td>
-          </tr>
-          <tr>
-            <td class="titletable">
-              <p class="SUBTITULO">Fecha
-                    / hora aprobación </p>
-            </td>
-            <td>
-              <p class="PARRAFO">Campo
-                que contiene la fecha y hora en la cual se aprobó la solicitud
-                mediante la cual se incluyó el registro en la etapa de plásticos
-                correspondiente (realce o sobreflex de clave).</p>
-            </td>
-          </tr>
-          <tr>
-            <td class="titletable">
-              <p class="SUBTITULO">Fecha
-                    vigencia</p>
-            </td>
-            <td>
-              <p class="PARRAFO">En
-                este campo se muestra la fecha a partir de la cual tiene vigencia
-                el plástico del cual se está consultando el detalle.</p>
-            </td>
-          </tr>
-          <tr>
-            <td class="titletable">
-              <p class="SUBTITULO">Fecha
-                    vencimiento</p>
-            </td>
-            <td>
-              <p class="PARRAFO">Campo que contiene la fecha (enmascarada si aplica) hasta la cual tendrá vigencia o
-                validez el plástico de acuerdo con lo parametrizado para el producto al que pertenece.</p>
-            </td>
-          </tr>
-
-          <tr>
-            <td class="titletable">
-              <p class="SUBTITULO">Sucursal
-                    radicación </p>
-            </td>
-            <td>
-              <p class="PARRAFO">En
-                este campo se muestra el código de la <a href="NUH_020B.html" >sucursal</a>
-                ante la cual se encuentra radicada la obligación que origina
-                la generación del plástico.</p>
-            </td>
-          </tr>
-          <tr>
-            <td class="titletable">
-              <p class="SUBTITULO">Sucursal
-                    regional </p>
-            </td>
-            <td>
-              <p class="PARRAFO">Campo
-                en el que se despliega la código de la <a href="NUH_020B.html"
-                  >sucursal</a> a la cual se encuentra adscrita o pertence la obligación.
-              </p>
-            </td>
-          </tr>
-          <tr>
-            <td class="titletable">
-              <p class="SUBTITULO">Oficina
-                    envío </p>
-            </td>
-            <td>
-              <p class="PARRAFO">En
-                este campo se muestra el código de la <a href="NUH_020B.html" >sucursal</a>
-                de la entidad a la que se va a enviar el plástico </p>
-            </td>
-          </tr>
-          <tr>
-            <td class="titletable">
-              <p class="SUBTITULO">Modelo
-                    plástico </p>
-            </td>
-            <td>
-              <p class="PARRAFO">Campo
-                que muestra el <span ><a href="NUH_057B.html" >modelo
-                      de plástico</a></span>  a utilizar para elaborar el realce
-                o embozado de la tarjeta.
-              </p>
-            </td>
-          </tr>
-        </table>
-      </div>
-      <table>
-        <tr>
-          <td class="titletable">
-            <p class="SUBTITULO">Proveedor</span> plástico </p>
-          </td>
-          <td>
-            <p class="PARRAFO">Este
-              campo muestra el nombre del <a href="NUH_063B.html" >proveedor</a> encargado de
-              suministrar el plástico en el cual se va a efectuar
-              el realce de la tarjeta.</p>
-          </td>
-        </tr>
-
-        <tr>
-          <td class="titletable">
-            <p class="SUBTITULO">Número remisión </p>
-          </td>
-          <td>
-            <p class="PARRAFO">Despliega el número de documento con el cual se remisionaron los plásticos
-              durante el proceso de <a href="PLH_008B.html" >realce</a> que se hace desde esta
-              misma
-              opción. </p>
-          </td>
-        </tr>
-      </table>
-
-      <p class="TITLE">Botones especiales</p>
-      <p class="PARRAFO"><a name="BL_GENERAR"></a><span class="SUBTITULO">Generar
-              sobreflex de claves:</span></span>
-          si desde la primera página del wizard el actor invoca el botón
-          Generar sobreflex de claves, se ejecuta el proceso mediante el cual se genera
-          el archivo con las claves o PIN's para todos los registros consultados. </span> 
-      </p>
-      <p class="TITLE"><img src="../img/GENERAR%20CLAVE.PNG"></p>
-      <div>
-  </section>
-  <script src="../js/menu.js"></script>
-
-  <div id="footerContainer"></div>
-<script>
+          <div id="footerContainer"></div>
+          <script>
   fetch('footer.html')
     .then(response => response.text())
     .then(html => {
       document.getElementById('footerContainer').innerHTML = html;
     });
 </script>
-</body>
+        </body>
 
-</html>
+      </html>

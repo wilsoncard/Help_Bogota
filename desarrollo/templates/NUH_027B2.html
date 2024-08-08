@@ -13,10 +13,10 @@
     <body>
 
         <header>
-            <img class="logo" src="../img/logoBankbu_.PNG"
+            <img loading="lazy" rel="preload"  class="logo" src="../img/logoBankbu_.webp"
                 alt="Logo de Mi Empresa">
             <div id="menuBtn">
-                <img class="TITLE" src="../img/menu.PNG" alt="Botón de Menú ">
+                <img loading="lazy" rel="preload"  class="TITLE" src="../img/menu.PNG" alt="Botón de Menú ">
             </div>
         </header>
         <div id="menuContainer"></div>
@@ -33,24 +33,18 @@
 
                 <p class="TITLE">Origen de transacciones - Parámetros
                     de origen</p>
-                <p class="PARRAFO">En este formulario que se invoca desde el
-                    hipervínculo Parámetros de origen contenido en el formulario
+                <p class="PARRAFO">En este formulario invocado desde
                     <a href="NUH_027B.html">orígenes de transacciones</a>
                     se registran las condiciones particulares válidas para el
-                    origen seleccionado
-                    por el usuario.
+                    origen seleccionado por el usuario. El formulario contiene
+                    los enlaces: Actualizar y Eliminar.
                 </p>
-                <p class="TITLE"><img src="../img/NUF_027E10.PNG"></p>
-
-                <p class="PARRAFO">El formulario contiene los enlaces:
-                    Actualizar,
-                    Eliminar.</p>
+                <p class="TITLE"><img loading="lazy" rel="preload"  src="../img/NUF_027E10.PNG"></p>
                 <p class="PARRAFO"><span
                         class="SUBTITULO">Actualizar</span>:</span></span>
-             Al activar ese enlace  se despliega un nuevo
-            formulario
-            en el cual todos los campos son modificables.</p>
-        <p class="TITLE"><img src="../img/NUF_027E11.PNG"></p>
+            Al activar ese enlace se despliega un formulario en el cual todos
+            los campos son modificables.</p>
+        <p class="TITLE"><img loading="lazy" rel="preload"  src="../img/NUF_027E11.PNG"></p>
         <p class="TITLE">Descripción de campos</p>
         <table>
             <tr>
@@ -291,19 +285,29 @@
 
             <tr>
                 <td class="titletable">
-                    <p class="SUBTITULO">Máximo
-                        número de duplicados</p>
+                    <p class="SUBTITULO">Ubicación</p>
                 </td>
                 <td>
-                    <p class="PARRAFO">Campo
-                        numérico en el que se indica la máxima cantidad de
-                        registros
-                        iguales que el sistema debe permitir antes de determinar
-                        que se trata
-                        de un archivo duplicado y se finalice el proceso de
-                        cargue del mismo,
-                        evitando así que por error se cargue dos veces la misma
-                        transacción.</p>
+                    <p class="PARRAFO">Campo no obligatorio en el que se indica
+                        el nombre de la carpeta o ruta en que la que debe
+                        ubicarse el archivo mediante el que ingresa el
+                        movimiento para el correspondiente origen.
+
+                    </p>
+                </td>
+            </tr>
+            <tr>
+                <td class="titletable">
+                    <p class="SUBTITULO">Nombre archivo
+                    </p>
+                </td>
+                <td>
+                    <p class="PARRAFO">Campo no obligatorio en el que se
+                        registra el nombre del archivo que contiene el
+                        movimiento o transacciones que ingresan por el origen
+                        que se está modificando.
+
+                    </p>
                 </td>
             </tr>
         </table>

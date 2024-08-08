@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="es">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>OpencardWeb®</title>
+
+        <link rel="stylesheet" href="../css/pages.css">
+        <link rel="stylesheet" href="../css/style.css">
+        <link rel="icon" href="../img/ACQUIRER-logo.JPG" type="image/x-icon">
+    </head>
+
+    <body>
+
+        <header>
+            <img loading="lazy" rel="preload" class="logo"
+                src="../img/logoBankbu_.webp" alt="Logo de Mi Empresa">
+            <div id="menuBtn">
+                <img loading="lazy" rel="preload" class="TITLE"
+                    src="../img/menu.PNG" alt="Botón de Menú ">
+            </div>
+        </header>
+        <div id="menuContainer"></div>
+        <script>
+    fetch('menu.html')
+      .then(response => response.text())
+      .then(html => {
+        document.getElementById('menuContainer').innerHTML = html;
+      });
+  </script>
+
+        <section>
+            <div>
+                <p class="TITLE">Información de establecimientos - Histórico
+                    Tarifas</p>
+
+                <p class="PARRAFO">En este formulario invocado desde <a
+                        href="ESH_006B.html">Información
+                        de establecimientos</a>, Permite visualizar las
+                    modificaciones de comisiones, realizadas a las cuentas del
+                    establecimiento, se guardan las novedades aplicadas por
+                    archivo o manualmente.</p>
+
+                <p class="TITLE"><img loading="lazy" rel="preload"
+                        src="../img/ESF_006E22.PNG"></p>
+
+
+                 <p  class="TITLE">Descripción de campos</p>     
+            <table>
+                <tr>
+                    <th class="titletable">
+                        <p class="SUBTITULO">Establecimiento </p>
+                    </th>
+                    <td>
+                        <p class="PARRAFO">Corresponde al código de identificación del establecimiento.</p>
+                    </td>
+                </tr>
+                <tr>
+                    <th class="titletable">
+                        <p class="SUBTITULO">Nombre </p>
+                    </th>
+                    <td>
+                        <p class="PARRAFO">Describe el nombre del establecimiento asociado al código.</p>
+                    </td>
+                </tr>
+                <tr>
+                    <th class="titletable">
+                        <p class="SUBTITULO">Fecha Novedad </p>
+                    </th>
+                    <td>
+                        <p class="PARRAFO">Muestra la fecha en la cual se realizo la modificación de las comiciones.</p>
+                    </td>
+                </tr>
+                <tr>
+                    <th class="titletable">
+                        <p class="SUBTITULO">Número de cuenta</p>
+                    </th>
+                    <td>
+                        <p class="PARRAFO">Despliega el número de la cuenta de depósito a la que se efectuaron modificaciones en las comisiones.</p>
+                    </td>
+                </tr>
+                <tr>
+                    <th class="titletable">
+                        <p class="SUBTITULO">Tipo de cuenta </p>
+                    </th>
+                    <td>
+                        <p class="PARRAFO">Despliega el tipo de cuenta de depósito, puede ser Ahorros o Corriente.</p>
+                    </td>
+                </tr>
+                <tr>
+                    <th class="titletable">
+                        <p class="SUBTITULO">Marca</p>
+                    </th>
+                    <td>
+                        <p class="PARRAFO">Muestra la marca asociada a la cuenta de depósito.</p>
+                    </td>
+                </tr>
+                <tr>
+                    <th class="titletable">
+                        <p class="SUBTITULO">Tipo Captura</p>
+                    </th>
+                    <td>
+                        <p class="PARRAFO">Muestra el tipo de captura asociado a la cuenta de depósito.</p>
+                    </td>
+                </tr>
+                <tr>
+                    <th class="titletable">
+                        <p class="SUBTITULO">Tipo Abono </p>
+                    </th>
+                    <td>
+                        <p class="PARRAFO">Campo que muestra la manera en que se genera el abono al establecimiento, puede ser: Neto, Detallado o Bruto/Detallado.</p>
+                    </td>
+                </tr>
+                <tr>
+                    <th class="titletable">
+                        <p class="SUBTITULO">Sucursal </p>
+                    </th>
+                    <td>
+                        <p class="PARRAFO">Muestra la sucursal en la cual esta radicada la cuenta de depósito.</p>
+                    </td>
+                </tr>
+                <tr>
+                    <th class="titletable">
+                        <p class="SUBTITULO">Número de Crédito</p>
+                    </th>
+                    <td>
+                        <p class="PARRAFO">Muestra el número de la obligación, adquirida por el establecimiento, y a la cual, eventualmente se la aplicarán abonos procedentes de los montos de los depósitos, inicialmente destinados a la cuenta del establecimiento.</p>
+                    </td>
+                </tr>
+                <tr>
+                    <th class="titletable">
+                        <p class="SUBTITULO">Comisión Db / Cr / Ele</p>
+                    </th>
+                    <td>
+                        <p class="PARRAFO">En cada uno de estos campos se muestra si la comisión que la entidad emisora de la tarjeta le va a cobrar al establecimiento por el uso de cada tipo de tarjeta corresponde a un Valor fijo, un Porcentaje sobre el valor de la transacción o Mixto, es decir, un valor fijo más un porcentaje adicional.</p>
+                    </td>
+                </tr>
+                <tr>
+                    <th class="titletable">
+                        <p class="SUBTITULO">Valor Fijo Db / Cr / Ele </p>
+                    </th>
+                    <td>
+                        <p class="PARRAFO">Si el tipo comisión se definió como Valor o Mixto, en este campo obligatorio de 14 enteros y 2 decimales se muestra el valor fijo a cobrar al establecimiento por cada transacción, a modo de comisión para la entidad.</p>
+                    </td>
+                </tr>
+                <tr>
+                    <th class="titletable">
+                        <p class="SUBTITULO">Porcentaje Db / Cr / Ele</p>
+                    </th>
+                    <td>
+                        <p class="PARRAFO">Cuando el tipo comisión para un tipo de tarjeta se definió como Porcentaje o Mixto, en este campo de 3 enteros y 2 decimales se muestra la tasa a aplicar sobre la transacción para determinar el monto de comisión para la entidad.</p>
+                    </td>
+                </tr>
+                
+            </table>
+
+            </div>
+        </section>
+        <script src="../js/menu.js"></script>
+    </body>
+    <div id="footerContainer"></div>
+    <script>
+  fetch('footer.html')
+    .then(response => response.text())
+    .then(html => {
+      document.getElementById('footerContainer').innerHTML = html;
+    });
+</script>
+</html>

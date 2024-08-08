@@ -13,9 +13,9 @@
   <body>
 
     <header>
-      <img class="logo" src="../img/logoBankbu_.PNG" alt="Logo de Mi Empresa">
+      <img loading="lazy" rel="preload"  class="logo" src="../img/logoBankbu_.webp" alt="Logo de Mi Empresa">
       <div id="menuBtn">
-        <img class="TITLE" src="../img/menu.PNG" alt="Botón de Menú ">
+        <img loading="lazy" rel="preload"  class="TITLE" src="../img/menu.PNG" alt="Botón de Menú ">
       </div>
     </header>
     <div id="menuContainer"></div>
@@ -30,76 +30,67 @@
     <section>
       <div>
 
-        <p class="TITLE">Novedad bloqueo plástico débito</p>
+        <p class="TITLE">Cambio bloqueo</p>
 
-        <p class="PARRAFO">Mediante esta opción que se
-          invoca desde <a href="DBH_020B.html">Generación de novedades
-            débito</a> se registra la novedad mediante la cual se aplican o
-          retiran
-          los bloqueos a sobre los plásticos de las tarjetas débito.</p>
+        <p class="PARRAFO">La funcionalidad de este formulario invocada desde la
+          opción <a href="DBH_020B.html">Generación de novedades
+            débito</a>, permite modificar el bloqueo actual de una tarjeta
+          débito en particular. Luego de diligenciados los datos que apliquen,
+          mediante el botón Guardar, el sistema realiza las validaciones a que
+          haya lugar y aplica la novedad.</p>
 
-        <p class="TITLE"><img src="../img/DBF_027E.PNG"384"></p>
+        <p class="TITLE"><img loading="lazy" rel="preload"  src="../img/DBF_027E.PNG"></p>
 
         <p class="TITLE">Descripción de campos</p>
         <div>
           <table>
             <tr>
               <td class="titletable"><p class="SUBTITULO">Bloqueo
-                    actual</p></td>
-                <td><p class="PARRAFO">Campo
-                    con lista de valores de la que se selecciona la <a
-                      href="NUH_017B.html">novedad</a>
-                    de productos débito que se le va a aplicar a la tarjeta.
-                    Cuando
-                    se ingresa al formulario, por defecto trae el bloqueo actual
-                    del plástico
-                    ingresado y permite si es el caso dejarlo en blanco para
-                    indicar que
-                    se está levantando el bloqueo a la tarjeta.</p></td>
-              </tr>
-              <tr>
-                <td class="titletable"><p class="SUBTITULO">Fecha
-                      bloqueo actual</p></td>
-                  <td><p class="PARRAFO">En
-                      este campo de salida se muestra en formato YYYY-MM-DD la
-                      fecha de
-                      la última vez que se le aplicó o retiró un bloqueo
-                      a la tarjeta.</p></td>
-                </tr>
-                <tr>
-                  <td class="titletable"><p class="SUBTITULO">Motivo
-                        cancelación </p></td>
-                    <td><p class="PARRAFO">Cuando
-                        el bloqueo actual corresponde a Cancelación voluntaria,
-                        este campo se habilita y convierte en obligatorio
-                        permitiendo selecciona
-                        de la lista de valores el <a
-                          href="NUH_009B.html">motivo</a>
-                        por el cual el cliente hace la devolución del
-                        plástico.</p></td>
-                  </tr>
-                  <tr>
-                    <td class="titletable"><p class="SUBTITULO">Fecha
-                          radicación</p></td>
-                      <td><p class="PARRAFO">En
-                          este campo obligatorio se registra en formato
-                          YYYY-MM-DD la fecha
-                          en la que se ingresa la novedad en el
-                          sistema.</p></td>
-                    </tr>
-                  </table>
-                </div>
+                  actual</p></td>
+              <td><p class="PARRAFO">Al desplegarse el formulario, por defecto
+                  trae el bloqueo actual del plástico, es un campo obligatorio,
+                  en el que se puede ingresar o seleccionar de la lista de
+                  valores poblada en la opción <a href="CAH_002B.html">Estados y
+                    bloqueos</a>,
+                  al momento de asignar un código de bloqueo (del plástico)
+                  diferente al actual, se debe tener en consideración que existe
+                  una jerarquía entre los mismo definida por la entidad. El
+                  formulario permite, si es el caso, dejarlo en blanco para
+                  indicar que se está levantando el bloqueo a la tarjeta
+                  diferente a nulo.</p></td>
+            </tr>
+            <tr>
+              <td class="titletable"><p class="SUBTITULO">Motivo
+                </p></td>
+              <td><p class="PARRAFO">
+                  Campo que se activa y se convierte en obligatorio cuando el
+                  bloqueo actual o a asignar, corresponde a Cancelación
+                  voluntaria, debiendo seleccionarse de la lista de valores
+                  poblada en la opción <a href="NUH_144B.html">Motivos de
+                    cancelación</a>,
+                  por el cual la entidad decide cancelar la tarjeta.</p></td>
+            </tr>
+            <tr>
+              <td class="titletable"><p class="SUBTITULO">Causal</p></td>
+              <td><p class="PARRAFO">ECampo no obligatorio en el que se puede
+                  ingresar o seleccionar de la lista de valores poblada en la
+                  opción <a href="NUH_009B.html">Motivos devolución voluntaria</a>
+                  la razón argumentada por el cliente para solicitar la cancelación
+                  voluntaria de su tarjeta.</p></td>
+            </tr>
+          </table>
+        </div>
 
-                <div>
-                </section>
-                <script src="../js/menu.js"></script>
-              </body>
-              <div id="footerContainer"></div>
-              <script>
+        <div>
+        </section>
+        <script src="../js/menu.js"></script>
+      </body>
+      <div id="footerContainer"></div>
+      <script>
   fetch('footer.html')
     .then(response => response.text())
     .then(html => {
       document.getElementById('footerContainer').innerHTML = html;
     });
 </script>
-            </html>
+    </html>

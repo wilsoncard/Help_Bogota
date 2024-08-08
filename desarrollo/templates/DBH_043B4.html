@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OpencardWeb®</title>
+
+    <link rel="stylesheet" href="../css/pages.css">
+    <link rel="stylesheet" href="../css/style.css">
+ <link rel="icon" href="../img/ACQUIRER-logo.JPG" type="image/x-icon">
+</head>
+
+<body>
+
+    <header>
+        <img loading="lazy" rel="preload"  class="logo" src="../img/logoBankbu_.webp" alt="Logo de Mi Empresa">
+        <div id="menuBtn">
+            <img loading="lazy" rel="preload"  class="TITLE"  src= "../img/menu.PNG" alt="Botón de Menú ">
+        </div>
+    </header>
+      <div id="menuContainer"></div>
+  <script>
+    fetch('menu.html')
+      .then(response => response.text())
+      .then(html => {
+        document.getElementById('menuContainer').innerHTML = html;
+      });
+  </script>
+
+    <section>
+        <div> 
+            
+                    <p  class="TITLE">Consulta global de intercambio</p>
+                    
+            <p class="PARRAFO"><span class="PARRAFO"><span class="SUBTITULO">Intercambio:</span>  
+              </span> Contiene el movimiento de las transacciones tanto originales como no 
+              originales que ingresan al sistema y que luego hacen parte del Canje enviado.</p>
+            <p class="PARRAFO">El formulario contiene las opción Detalle, y cuenta 
+              en la parte superior con un botón para volver al <a href="INH_006B.html" >formulario 
+              principal</a> de la Consulta global de intercambio.</p>
+            <p class="TITLE"><img loading="lazy" rel="preload"  src="../img/INF_006B19.PNG" ></p>
+           
+            <table>
+              <tr> 
+                <td class="titletable"><p class="SUBTITULO">Bin</p></td>
+                <td><p class="PARRAFO">Contiene 
+                    el número del prefijo o bin que identifica la entidad receptora 
+                    o destino de la transacción.</p></td>
+              </tr>
+              <tr> 
+                <td class="titletable"><p class="SUBTITULO">Número 
+                    tarjeta </p></td>
+                <td><p class="PARRAFO">Rese&ntilde;a 
+                    el número de la tarjeta a través de la que se realizó 
+                    el consumo o utilización.</p></td>
+              </tr>
+              <tr> 
+                <td class="titletable"><p class="SUBTITULO">Moneda</p></td>
+                <td><p class="PARRAFO">Despliega 
+                    la abreviatura definida por la franquicia que identifica <a href="NUH_005B.html" >Moneda</a> 
+                    original de la transacción.</p></td>
+              </tr>
+              <tr> 
+                <td  > 
+                  <p class="SUBTITULO">Nombre establecimiento</p></td>
+                <td><p class="PARRAFO">Muestra 
+                    el código único que identifica el establecimiento en que 
+                    se realizó la utilización o consumo.</p></td>
+              </tr>
+              <tr> 
+                <td class="titletable"><p class="SUBTITULO">Valor 
+                    intercambio </p></td>
+                <td><p class="PARRAFO">Contiene el valor 
+                    neto (valor compra más valor IVA más propina menos valor 
+                    descuento o comisión) de la transacción.</p></td>
+              </tr>
+              <tr> 
+                <td class="titletable"><p class="SUBTITULO">Devolución</p></td>
+                <td><p class="PARRAFO">Despliega 
+                    la descripción del motivo por el cual una transacción 
+                    es rechazada o devuelta, con base en la definición de motivos 
+                    hecha por las franquicias.</p></td>
+              </tr>
+            </table>
+            <p class="PARRAFO"><span class="SUBTITULO">Detalle:</span>  Si el usuario invoca la opción 
+              Detalle se despliega un formulario con los bloques: Recepción, Valores, 
+              Datos transacción, Establecimiento, Número terminal, y Datos 
+              pago.</p>
+            <p class="PARRAFO">Este formulario permite la consulta de las transacciones tanto originales 
+              como no originales que ingresan al sistema y que luego hacen parte del Canje 
+              enviado o Canje recibido.</p>
+            <p class="TITLE"><img loading="lazy" rel="preload"  src="../img/INF_006B20.PNG"></p>
+            <p class="TITLE"><img loading="lazy" rel="preload"  src="../img/INF_006B14.PNG" ></p>
+
+
+
+                    <p class="PARRAFO"><a href="DBH_043B1.html">Tapa contable</a>
+                        | </span></span><a href="DBH_043B3.html">Pendientes</a>
+                        | </span><a href="DBH_043.html" >Formulario principal</a>
+                        | </span><a href="DBH_043B5.html" >Rechazo
+                         cargue</a> </p>
+
+        </section>
+    <script src="../js/menu.js"></script>
+</body>
+<div id="footerContainer"></div>
+<script>
+  fetch('footer.html')
+    .then(response => response.text())
+    .then(html => {
+      document.getElementById('footerContainer').innerHTML = html;
+    });
+</script>
+</html>

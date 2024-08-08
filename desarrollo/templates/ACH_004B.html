@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="es">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>OpencardWeb®</title>
+        <link rel="stylesheet" href="../css/pages.css">
+        <link rel="stylesheet" href="../css/style.css">
+        <link rel="icon" href="../img/ACQUIRER-logo.JPG" type="image/x-icon">
+        <style>
+        footer {
+            position: fixed;
+        }
+
+        section p {
+            width: 625px;
+        }
+        section div p{
+            width: 100%;
+            max-width: 100%;
+        }
+    </style>
+    </head>
+
+    <body>
+
+        <header>
+            <img loading="lazy" rel="preload"  class="logo" src="../img/logoBankbu_.webp"
+                alt="Logo de Mi Empresa">
+            <div id="menuBtn">
+                <img loading="lazy" rel="preload"  class="TITLE" src="../img/menu.PNG" alt="Botón de Menú ">
+            </div>
+        </header>
+        <div id="menuContainer"></div>
+        <script>
+    fetch('menu.html')
+      .then(response => response.text())
+      .then(html => {
+        document.getElementById('menuContainer').innerHTML = html;
+      });
+  </script>
+
+        <section>
+            <div>
+                <p class="TITLE">Transaccionabilidad:
+                </p>
+                <p class="PARRAFO">Conjunto de funcionalidades que permiten el
+                    ingreso de movimiento recepcionado por otras entidades de
+                    los tarjetahabientes de la entidad, consultar el resultado
+                    del procesamiento de esos orígenes de transacciones y el
+                    destino de los mismos, así como gestionar ante otros
+                    emisores comprobantes que presentan inconsistencias.</p>
+                <li><a href="DBH_043.html">Consulta global</a></li>
+                <li><a href="INH_027B.html">Contracargos</a></li>
+
+            </div>
+
+            <img loading="lazy" rel="preload"  class="ImagenOpencardWeb"
+                src="../img/bankbu-removebg-preview.PNG"
+                alt="Imagen de la empresa">
+
+        </section>
+        <script src="../js/menu.js"></script>
+    </body>
+    <div id="footerContainer"></div>
+    <script>
+  fetch('footer.html')
+    .then(response => response.text())
+    .then(html => {
+      document.getElementById('footerContainer').innerHTML = html;
+    });
+</script>
+
+</html>

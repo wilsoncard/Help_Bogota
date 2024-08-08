@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="es">
+
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OpencardWeb®</title>
+    <link rel="stylesheet" href="../css/pages.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="icon" href="../img/ACQUIRER-logo.JPG" type="image/x-icon">
+  </head>
+
+  <body>
+    <header>
+      <img loading="lazy" rel="preload"  class="logo" src="../img/logoBankbu_.webp" alt="Logo de Mi Empresa">
+      <div id="menuBtn">
+        <img loading="lazy" rel="preload"  class="TITLE" src="../img/menu.PNG" alt="Botón de Menú ">
+      </div>
+    </header>
+    <div id="menuContainer"></div>
+    <script>
+    fetch('menu.html')
+      .then(response => response.text())
+      .then(html => {
+        document.getElementById('menuContainer').innerHTML = html;
+      });
+  </script>
+    <section>
+      <div>
+
+ <p class="TITLE"> Motivos Cancelación </p>
+ 
+
+ <p class="PARRAFO">Esta función habilita la consulta y mantenimiento de la tabla que almacena los códigos de los diversos motivos de devolución que agrupan las diversas causales que puede argumentar un cliente o el banco para que el plástico sea devuelto. El formulario tiene los enlaces: Adicionar, Actualizar y Eliminar:</p>
+
+ <p class="TITLE"><img loading="lazy" rel="preload"  src="../img/NUF_144E1.PNG"></p>
+ <p class="PARRAFO"><span class="SUBTITULO">Adicionar:</span> Al invocar ese enlace se despliega un formulario con los siguientes campos:</span>
+</p>
+<p class="TITLE"><img loading="lazy" rel="preload"  src="../img/NUF_144E2.PNG"></p>
+ <p class="TITLE"><a name="BL_MOTIVOS_CANCELACION"></a> Descripción de Campos</a></p>
+ 
+<table>
+<tr>
+ <td class="titletable">
+ <p class="SUBTITULO">Código</p>
+ </td>
+ <td>
+ <p class="PARRAFO">Campo numérico, obligatorio que, en un máximo de tres posiciones, se asigna un código a cada uno de los motivos de devolución de la tarjeta.</p>
+</td>
+</tr>
+<tr>
+  <td class="titletable">
+  <p class="SUBTITULO">Descripcion</p>
+  </td>
+  <td>
+  <p class="PARRAFO">Campo alfanumérico obligatorio, en el cual se almacena el motivo o razón de la devolución o cancelación de la tarjeta..
+  </p>
+  </td>
+ </tr>
+</table>
+<p class="PARRAFO"><strong class="TITLE">Actualizar:</strong> Al activar ese enlace se despliega un formulario en el cual el único campo modificable es Descripción.</p>
+  <p class="TITLE"><img loading="lazy" rel="preload"  src="../img/NUF_144E3.PNG"></p>
+
+      </div>
+      </section>
+      <script src="../js/menu.js"></script>
+      <div id="footerContainer"></div>
+    </body>
+    <script>
+  fetch('footer.html')
+    .then(response => response.text())
+    .then(html => {
+      document.getElementById('footerContainer').innerHTML = html;
+    });
+</script>
+  </html>

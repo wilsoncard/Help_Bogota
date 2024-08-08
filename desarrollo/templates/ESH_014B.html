@@ -14,9 +14,9 @@
   <body>
 
     <header>
-      <img class="logo" src="../img/logoBankbu_.PNG" alt="Logo de Mi Empresa">
+      <img loading="lazy" rel="preload"  class="logo" src="../img/logoBankbu_.webp" alt="Logo de Mi Empresa">
       <div id="menuBtn">
-        <img class="TITLE" src="../img/menu.PNG" alt="Botón de Menú ">
+        <img loading="lazy" rel="preload"  class="TITLE" src="../img/menu.PNG" alt="Botón de Menú ">
       </div>
     </header>
     <div id="menuContainer"></div>
@@ -33,22 +33,25 @@
 
         <p class="TITLE">Tesorería</p>
 
-        <p class="PARRAFO">Mediante esta función se permite la administración
-          de las afectaciones a las cuentas corrientes o de ahorro de los
-          establecimientos,
-          producto de todas las posibles fuentes de movimiento transaccional que
-          tengan
+        <p class="PARRAFO">Al invocarse la opción el sistema despliega un
+          formulario inicial que corresponde a un filtro, en el que, mediante
+          una lista de valores, se debe seleccionar entre: Depósitos, Historia e
+          Interfaces, la parte de la data de Tesorería que se desea consultar.
+          Mediante esta función se permite la administración de las afectaciones
+          a las cuentas corrientes o de ahorro de los establecimientos, producto
+          de todas las posibles fuentes de movimiento transaccional que tengan
           relación o como destino las cuentas de depósito de los comercios.
         </p>
-        <p class="PARRAFO">El formulario cuenta con un filtro de búsqueda
-          inicial
-          y la opción <a href="#Detalle">Detalle</a>.</p>
-        <p class="TITLE"><img src="../img/ESF_014B1.PNG"></p>
+        <p class="TITLE"><img loading="lazy" rel="preload"  src="../img/ESF_014B1.PNG"></p>
 
-        <p class="PARRAFO"><span class="SUBTITULO">Filtro:</span> Se pueden
-          realizar consultas a través
-          de las siguientes opciones: </p>
-        <p class="TITLE"><img src="../img/ESF_014B.PNG"></p>
+        <p class="PARRAFO"><span class="SUBTITULO">Filtro:</span> El formulario
+          dispone del siguiente conjunto de criterios para realizar búsquedas
+          puntuales, el cual aplica para los tres escenarios posibles: Depósitos
+          pendientes por aplicar, Depósitos para los cuales ya se generó la
+          interface para que sean afectadas las cuentas del establecimiento o
+          Historia, datos de los depósitos que ya fueron aplicados
+          definitivamente en las cuentas correspondientes: </p>
+        <p class="TITLE"><img loading="lazy" rel="preload"  src="../img/ESF_014B.PNG"></p>
 
         <table>
           <tr>
@@ -57,23 +60,13 @@
                 establecimiento </p>
             </td>
             <td>
-              <p class="PARRAFO">El
-                campo Establecimiento admite cualquier valor numérico de máximo
-                once dígitos.</p>
-            </td>
-          </tr>
-          <tr>
-            <td class="titletable">
-              <p class="SUBTITULO">Tipo
-                de cuenta </p>
-            </td>
-            <td>
-              <p class="PARRAFO">El
-                campo tipo cuenta es un combo con los valores ahorros,
-                corriente,
-                rotativo y en blanco, de donde el actor puede seleccionar aquel
-                que desea consultar.
-              </p>
+              <p class="PARRAFO">Campo que contiene lista de valores poblada en
+                la opción <a href="ESH_006B.html">Información de
+                  establecimientos</a> en el que, se puede digitar o
+                seleccionar, el código del comercio para el que se desea
+                realizar la consulta de los depósitos que eventualmente tenga
+                pendientes por aplicar, en proceso de afectación o ya en
+                histórico. </p>
             </td>
           </tr>
           <tr>
@@ -82,10 +75,35 @@
                 de cuenta </p>
             </td>
             <td>
-              <p class="PARRAFO">El
-                campo número de cuenta es alfanumérico y admite cualquier
-                valor de hasta 16 posiciones.
+              <p class="PARRAFO">Campo en el que se ingresa el número de la
+                cuenta del establecimiento por la que se desea realizar la
+                consulta de los depósitos que eventualmente tenga pendientes por
+                aplicar, en proceso de afectación o ya en histórico.
               </p>
+            </td>
+          </tr>
+          <tr>
+            <td class="titletable">
+              <p class="SUBTITULO">Tipo
+                de cuenta </p>
+            </td>
+            <td>
+              <p class="PARRAFO">Campo que posee lista de valores tipo combo, de
+                la que puede seleccionarse entre: Ahorros o Corriente, el
+                criterio de consulta.
+              </p>
+            </td>
+          </tr>
+          <tr>
+            <td class="titletable">
+              <p class="SUBTITULO">Marca </p>
+            </td>
+            <td>
+              <p class="PARRAFO">Corresponde a la <a
+                  href="NUH_033B.html">franquicia</a> a la cual pertenece la
+                consignación del establecimiento por la que se desea realizar la
+                consulta de los depósitos que eventualmente tenga pendientes por
+                aplicar, en proceso de afectación o ya en histórico. </p>
             </td>
           </tr>
           <tr>
@@ -94,601 +112,187 @@
                 proceso </p>
             </td>
             <td>
-              <p class="PARRAFO">El
-                campo fecha proceso admite cualquier fecha válida en formato
-                YYYY-MM-DD
+              <p class="PARRAFO">Campo que mediante la funcionalidad de un
+                calendario permite realizar consultas por fecha proceso, en
+                formato DD-MM-AAAA, admite cualquier fecha válida.
               </p>
             </td>
           </tr>
           <tr>
             <td class="titletable">
               <p class="SUBTITULO">Tipo
-                consulta </p>
+                Captura </p>
             </td>
             <td>
-              <p class="PARRAFO">El
-                campo tipo consulta debe estar marcado y comportarse como
-                obligatorio.
-                Es un combo con los valores Depósito, Histórico
-                e Interfase de donde el actor selecciona sobre cual de ellos
-                desea efectuar la consulta.</p>
+              <p class="PARRAFO">Campo que posee lista de valores tipo combo,
+                con los distintos tipos de captura habilitados por las
+                franquicias, los cuales sirven de criterio realizar la consulta
+                de los depósitos que eventualmente tenga pendientes por aplicar,
+                en proceso de afectación o ya en histórico.</p>
             </td>
           </tr>
         </table>
 
-        <p class="PARRAFO"><span class="SUBTITULO">Detalle<a
+        <p class="PARRAFO"><span class="SUBTITULO">Depositos<a
               name="Detalle"></a>:</span>
-          Mediante esta opción se posibilita la consulta de los depósitos
-          efectuados en las cuentas de los establecimientos producto de las
-          consignaciones
-          efectuadas y cuyo movimiento supera las validaciones exitosamente.</p>
-        <p class="PARRAFO">Si el usuario invoca la opción Detalle
-          se despliega un formulario con los siguiente bloques: <a
-            href="#Recepcion">Recepción</a>,
-          <a href="#Fechas">Fechas y otros</a>, <a href="#Totales">Totales
-            leídos</a>,
-          <a href="#Totales">Totales procesados</a>, y <a href="#Otros">Otros
-            valores</a>.
-          Adiiocnalmente, cuanto con el globo para acceder a la <a
-            href="#Localizacion">Información
-            de localización</a>. </p>
-        <p class="TITLE"><img src="../img/ESF_014B2.PNG"></p>
+          Formulario que al invocarse, refleja, en el bloque inferior, del
+          primer paso del wizard, todos los registros del movimiento proveniente
+          de distintos orígenes de transacciones, que se encuentran pendientes
+          por gestionar para ser aplicados a las cuentas de los
+          establecimientos.</p>
 
-        <p class="PARRAFO"><a name="Recepcion"></a><span
-            class="SUBTITULO">Recepción: </span>Grupo
-          de datos que ilustran la manera como ingresó la transacción
-          al sistema.</p>
+        <p class="TITLE"><img loading="lazy" rel="preload"  src="../img/ESF_014B2.PNG"></p>
+
+        <p class="PARRAFO">El formulario cuenta con el enlace Detalle, así como
+          con tres botones especiales: Aplicar todo, Seleccionar o Deseleccionar
+          todo.</p>
+        <p class="TITLE">Descripción de campos - Depósitos</p>
         <table>
-          <tr>
-            <td class="titletable">
-              <p class="SUBTITULO">Origen</p>
-            </td>
-            <td>
-              <p class="PARRAFO">Contiene
-                el nombre que identifica el origen o fuente del movimiento
-                definidos
-                en la opción <a href="NUH_027B.html">Orígenes de
-                  transacciones</a>
-                del Núcleo.</p>
-            </td>
-          </tr>
-          <tr>
-            <td class="titletable">
-              <p class="SUBTITULO">Transacción
-                origen </p>
-            </td>
-            <td>
-              <p class="PARRAFO">Campo
-                que despliega de manera genérica el nombre asociado a cada tipo
-                o clase de transacción contenida dentro del archivo del
-                movimiento.</p>
-            </td>
-          </tr>
-          <tr>
-            <td class="titletable">
-              <p class="SUBTITULO">Fecha
-                proceso </p>
-            </td>
-            <td>
-              <p class="PARRAFO">Campo
-                con formato YYYY-MM-DD ilustra la fecha en que se efectuó el
-                proceso del archivo en que viajó la transacción enviada
-                a Movimiento diario y a Depósitos.</p>
-            </td>
-          </tr>
-          <tr>
-            <td class="titletable">
-              <p class="SUBTITULO">Secuencia
-                recepción </p>
-            </td>
-            <td>
-              <p class="PARRAFO">Campo
-                de salida que ilustra el número con el que se identifica el
-                cargue
-                de archivos o integración del movimiento ingresado por un mismo
-                origen para una misma fecha de proceso.</p>
-            </td>
-          </tr>
-          <tr>
-            <td class="titletable">
-              <p class="SUBTITULO">Moneda</p>
-            </td>
-            <td>
-              <p class="PARRAFO">Despliega
-                el nombre oficial de la <a href="NUH_005B.html">Moneda</a> que
-                identifica
-                la moneda original de la transacción.</p>
-            </td>
-          </tr>
-          <tr>
-            <td class="titletable">
-              <p class="SUBTITULO">Número
-                lote </p>
-            </td>
-            <td>
-              <p class="PARRAFO">Campo
-                que ilustra el número del paquete que identifica el movimiento
-                por clase o tipo de transacción, lo que facilita su ubicación
-                en caso de ser necesario.</p>
-            </td>
-          </tr>
-          <tr>
-            <td class="titletable">
-              <p class="SUBTITULO">Sucursal
-                adquirente</p>
-            </td>
-            <td>
-              <p class="PARRAFO">Campo
-                de salida que despliega el código que identifica la oficina por
-                medio de la que ingresó el movimiento.</p>
-            </td>
-          </tr>
           <tr>
             <td class="titletable">
               <p class="SUBTITULO">Establecimiento</p>
             </td>
             <td>
-              <p class="PARRAFO">Campos
-                que despliegan tanto el código único como el nombre o
-                razón social del establecimiento en cuya cuenta se realiza el
-                abono</p>
+              <p class="PARRAFO">Campo que ilustra el nombre del comercio para
+                el que aparece el depósito pendiente por aplicar.</p>
             </td>
           </tr>
           <tr>
             <td class="titletable">
-              <p class="SUBTITULO">Entidad</p>
+              <p class="SUBTITULO">Código </p>
             </td>
             <td>
-              <p class="PARRAFO">Campos
-                que muestran el código y nombre de la entidad receptora del
-                depósito.</p>
+              <p class="PARRAFO">Campo que ilustra el nombre del establecimiento
+                para el que aparece el depósito pendiente por aplicar.</p>
             </td>
           </tr>
           <tr>
             <td class="titletable">
-              <p class="SUBTITULO">Descuento
-                incluido </p>
+              <p class="SUBTITULO">Tipo de cuenta </p>
             </td>
             <td>
-              <p class="PARRAFO">Opción
-                que determina si el descuento está o no incluido.</p>
+              <p class="PARRAFO">Campo que muestra el tipo de cuenta de
+                depósitos, Ahorros o Corriente, asociada al establecimiento.</p>
+            </td>
+          </tr>
+          <tr>
+            <td class="titletable">
+              <p class="SUBTITULO">Número de cuenta</p>
+            </td>
+            <td>
+              <p class="PARRAFO">Campo que muestra el número de cuenta de
+                depósitos asociada al comercio.</p>
+            </td>
+          </tr>
+          <tr>
+            <td class="titletable">
+              <p class="SUBTITULO">Marca</p>
+            </td>
+            <td>
+              <p class="PARRAFO">Corresponde a la <a
+                  href="NUH_033B.html">franquicia</a> a la cual pertenece la
+                consignación del establecimiento por la que se desea realizar la
+                consulta de los depósitos que eventualmente tenga pendientes por
+                aplicar, en proceso de afectación o ya en histórico.</p>
+            </td>
+          </tr>
+          <tr>
+            <td class="titletable">
+              <p class="SUBTITULO">Estado </p>
+            </td>
+            <td>
+              <p class="PARRAFO">Campo que indica si el depósito se encuentra
+                Pendiente por aplicar o Listo para pagar, acorde con el tiempo
+                transcurrido o el origen del movimiento.</p>
+            </td>
+          </tr>
+          <tr>
+            <td class="titletable">
+              <p class="SUBTITULO">Fecha proceso</p>
+            </td>
+            <td>
+              <p class="PARRAFO">Campo que mediante la funcionalidad de un
+                calendario permite realizar consultas por fecha proceso, en
+                formato DD-MM-AAAA, admite cualquier fecha válida.</p>
+            </td>
+          </tr>
+          <tr>
+            <td class="titletable">
+              <p class="SUBTITULO">Seleccionar</p>
+            </td>
+            <td>
+              <p class="PARRAFO">Campo tipo checkbox, en el que el funcionario
+                responsable debe marcar manualmente o mediante el botón
+                especial, aquellos depósitos a gestionar para generar la
+                interface, sin esperar a que se ejecuten los procesos de la
+                automatización, los cuales levantan todos los registros que se
+                encuentran en este formulario.</p>
             </td>
           </tr>
         </table>
-        <p class="PARRAFO"><span class="SUBTITULO">Fechas y otros:<a
-              name="Fechas"></a></span>
-          de datos asociados a las fechas de abono, cuenta en la que se efectúa
-          el depósito y estado de la consignación entre otros.</p>
+
+        <p class="PARRAFO">Existen dos maneras de
+          evolucionar la aplicación de los registros de Depósitos, una manual,
+          para avanzar al segundo paso del wizard, se debe marcar o
+          seleccionar al menos un registro, y utilizar el botón ubicado en la
+          parte inferior derecha, la otra, masiva, consiste en la ejecución de
+          los procesos automatizados, durante el día o dentro de los procesos
+          masivos del cierre diario:</p>
+        <p class="TITLE"><img loading="lazy" rel="preload"  src="../img/ESF_014B3.PNG"></p>
+        <p class="PARRAFO">Una vez allí, al activar el botón especial Aplicar
+          todo, se evidencia la reducción del total de registros, los mismos que
+          se deben aumentar en Interfaces:</p>
+        <p class="TITLE"><img loading="lazy" rel="preload"  src="../img/ESF_014B4.PNG"></p>
+        <p class="PARRAFO"><span class="SUBTITULO">Detalle:</span> Se ilustra el
+          contenido del formulario, en el cual ninguno de los datos es editable.
+          Dado que la estructura del mismo aplica para los tres momentos, esto
+          es, Depósitos, Interfaces e Histórico, solo se incluye una única
+          vez.</p>
+        <p class="TITLE"><img loading="lazy" rel="preload"  src="../img/ESF_014B5.PNG"></p>
+        <p class="TITLE"><img loading="lazy" rel="preload"  src="../img/ESF_014B6.PNG"></p>
+        <p class="PARRAFO"><span class="SUBTITULO">Interfaces:</span> Formulario
+          que al invocarse, refleja, en el bloque inferior, todos los registros
+          provenientes del formulario Depósitos. Las tres principales
+          diferencias, con Depósitos, son: no existe un wizard, todo está
+          contenido en el único formulario, en datos, el Estado ahora es Enviado
+          a pagar y que no existe el checkbox Seleccionar. Una vez se ejecuten
+          los procesos automáticos que generan la interface y, es enviada al
+          core, este es el responsable porque efectivamente se reflejen en las
+          cuentas de los establecimientos, los montos indicados en las
+          interfaces. La descripción de los campos del bloque inferior
+          corresponde a la misma realizada para el bloque de Depósitos, por lo
+          que no se repite en este punto.</p>
+        <p class="TITLE"><img loading="lazy" rel="preload"  src="../img/ESF_014B7.PNG"></p>
+        <p class="PARRAFO"><span class="SUBTITULO">Historia:</span> Formulario
+          que al invocarse, refleja, en el bloque inferior, los registros
+          provenientes del formulario Interface, después de ejecutarse los
+          procesos automáticos responsables por ese traslado. Las dos
+          principales diferencias, respecto de Interfaces, son: Fecha abono y #
+          Consignaciones.</p>
+
+        <p class="TITLE"><img loading="lazy" rel="preload"  src="../img/ESF_014B8.PNG"></p>
+
         <table>
           <tr>
             <td class="titletable">
-              <p class="SUBTITULO">Número
-                cuenta
-
+              <p class="SUBTITULO">Fecha abono
               </p>
             </td>
             <td>
-              <p class="PARRAFO">Despliega
-                el número de la cuenta de depósitos perteneciente al
-                establecimiento
-                de comercio en la que se realiza el abono.</p>
+              <p class="PARRAFO">Campo que en formato DD-MM-AAAA, ilustra la fecha en la que se aplica efectivamente el abono en la cuenta del establecimiento.</p>
             </td>
           </tr>
           <tr>
             <td class="titletable">
-              <p class="SUBTITULO">Tipo
-                cuenta</p>
+              <p class="SUBTITULO"># Consignaciones</p>
             </td>
             <td>
-              <p class="PARRAFO">Identifica
-                si el número de cuenta del establecimiento corresponde a
-                corriente,
-                Rotativo o ahorros.</p>
+              <p class="PARRAFO">Campo que indica el número de recibo con el cual se efectuó la consignación</p>
             </td>
           </tr>
-          <tr>
-            <td class="titletable">
-              <p class="SUBTITULO">Fecha
-                depósito</p>
-            </td>
-            <td>
-              <p class="PARRAFO">Campo
-                en formato YYYY-MM-DD que muestra la fecha en que el
-                establecimiento
-                realiza la consignación.</p>
-            </td>
-          </tr>
-          <tr>
-            <td class="titletable">
-              <p class="SUBTITULO">Fecha
-                abono</p>
-            </td>
-            <td>
-              <p class="PARRAFO">Despliega
-                la fecha, en formato YYYY-MM-DD, en que se aplica efectivamente
-                el abono
-                en la cuenta del establecimiento.</p>
-            </td>
-          </tr>
-          <tr>
-            <td class="titletable">
-              <p class="SUBTITULO">Número
-                consignación </p>
-            </td>
-            <td>
-              <p class="PARRAFO">Contiene
-                el número de recibo con el cual se efectuó la consignación.</p>
-            </td>
-          </tr>
-          <tr>
-            <td class="titletable">
-              <p class="SUBTITULO">Estado
-                consignación</p>
-            </td>
-            <td>
-              <p class="PARRAFO">Campo
-                que puede tomar alguno de los siguientes valores: A Pagado
-                totalmente
-                afecta ctas ctes, E Estadísticas establecimientos, L Listo para
-                pagar, P Pendiente por aplicar, T Generando estadísticas, M
-                Pagar
-                totalmente, O Pagar parcialmente, o Incluir Interface.</p>
-            </td>
-          </tr>
-          <tr>
-            <td class="titletable">
-              <p class="SUBTITULO">Concepto
-                consignación</p>
-            </td>
-            <td></td>
-          </tr>
-          <tr>
-            <td class="titletable">
-              <p class="SUBTITULO">Modalidad
-                abono</p>
-            </td>
-            <td>
-              <p class="PARRAFO">Campo
-                que puede tomar alguno de los siguientes valores: C Contado, D
-                Diferido
-                o T Tesorería.</p>
-            </td>
-          </tr>
-          <tr>
-            <td class="titletable">
-              <p class="SUBTITULO">Indicador
-                de cashback</p>
-            </td>
-            <td>
-              <p class="PARRAFO">Cuando
-                el establecimiento en el cual se realizó la transacción
-                posee esta característica indica que el valor registrado como
-                Propina corresponde a un Avance hecho por el cliente en dicho
-                establecimiento.
-                Los posibles valores del campo son &quot;0&quot; en caso de no
-                tener
-                cashback ó &quot;1&quot; cuando el establecimiento si tiene esta
-                condición.</p>
-            </td>
-          </tr>
+         
         </table>
-        <p class="PARRAFO"><span class="SUBTITULO">Totales <a
-              name="Totales"></a> leídos, Totales procesados:</span>
-          Grupo de campos que contienen información simultáneamente cuando
-          corresponden a cargue de archivos o integración de movimiento; en caso
-          contrario únicamente aparecerá información en uno de
-          los dos, lo que permite mostrar de manera consolidada por concepto el
-          movimiento
-          aplicado al diario que genera el depósito.</p>
-        <table>
-          <tr>
-            <td class="titletable">
-              <p class="SUBTITULO">Número
-                comprobantes</p>
-            </td>
-            <td>
-              <p class="PARRAFO">Muestra
-                la cantidad de comprobantes leídos y/o procesados.</p>
-            </td>
-          </tr>
-          <tr>
-            <td class="titletable">
-              <p class="SUBTITULO">Valor
-                ventas</p>
-            </td>
-            <td>
-              <p class="PARRAFO">Se&ntilde;ala
-                el valor acumulado de los consumos realizados en los
-                establecimientos.
-              </p>
-            </td>
-          </tr>
-          <tr>
-            <td class="titletable">
-              <p class="SUBTITULO">Valor
-                comisiones</p>
-            </td>
-            <td>
-              <p class="PARRAFO">Se&ntilde;ala
-                el valor consolidado de los descuentos o comisiones liquidados y
-                descontados
-                del monto consignado por el establecimiento, acorde con lo
-                parametrizado
-                en el campo Captura requiere ingreso descuento de la opción
-                Parámetros
-                operativos del grupo de Tablas corporativas del Núcleo.</p>
-            </td>
-          </tr>
-          <tr>
-            <td class="titletable">
-              <p class="SUBTITULO">Valor
-                propinas</p>
-            </td>
-            <td>
-              <p class="PARRAFO">Contiene
-                el valor acumulado de las propinas concedidas por los clientes
-                relacionados
-                con los consumos efectuados.</p>
-            </td>
-          </tr>
-          <tr>
-            <td class="titletable">
-              <p class="SUBTITULO">Valor
-                consignado</p>
-            </td>
-            <td>
-              <p class="PARRAFO">Despliega
-                el valor consignado al establecimiento; puede tener en cuenta o
-                no el
-                valor del descuento o comisión acorde con lo definido en el
-                campo
-                Captura requiere ingreso descuento definido en la opción <a
-                  href="NUH_055B.html">Parámetros
-                  operativos</a>.</p>
-            </td>
-          </tr>
-          <tr>
-            <td class="titletable">
-              <p class="SUBTITULO">Valor
-                Total</p>
-            </td>
-            <td>
-              <p class="PARRAFO">Campo
-                que contiene la sumatoria de los valores contenidos en los
-                campos Vlr
-                ventas, Vlr propinas y Valor IVA.</p>
-            </td>
-          </tr>
-        </table>
-        <p class="PARRAFO"><span class="SUBTITULO">Otros<a name="Otros"></a>
-            valores:</span>
-          Conjunto de información adicional sobre montos no contenidos o
-          contemplados
-          en los campos anteriores pero que afectan los saldos de las cuentas de
-          los
-          establecimientos.</p>
-        <table>
-          <tr>
-            <td class="titletable">
-              <p class="SUBTITULO">Tipo
-                operación</p>
-            </td>
-            <td>
-              <p class="PARRAFO">Campo
-                de salida que permite identificar la naturaleza (débito o
-                crédito)
-                que representa el depósito, dependiendo de si trata de una
-                reversión
-                o abono por concepto de Retención en la fuente, Valor descuento,
-                Retención IVA, Consignación o Efecto al cobro.</p>
-            </td>
-          </tr>
-          <tr>
-            <td class="titletable">
-              <p class="SUBTITULO">Boleta
-                de ruta</p>
-            </td>
-            <td>
-              <p class="PARRAFO">Corresponde
-                al número consecutivo de los comprobantes de control permitidos
-                por cada oficina en la captura del movimiento, producto de la
-                operación
-                diaria.</p>
-            </td>
-          </tr>
-          <tr>
-            <td class="titletable">
-              <p class="SUBTITULO">Fecha
-                contabilización</p>
-            </td>
-            <td>
-              <p class="PARRAFO">Corresponde
-                a la fecha de contabilización del movimiento, la cual
-                regularmente,
-                corresponde a la fecha de proceso, sin embargo cualquier
-                registro podría
-                llegar con una fecha diferente de contabilización, por tal razón
-                se muestra esta información en este campo.</p>
-            </td>
-          </tr>
-          <tr>
-            <td class="titletable">
-              <p class="SUBTITULO">Valor
-                pagar</p>
-            </td>
-            <td>
-              <p class="PARRAFO">Campo
-                numérico de 18 posiciones, no obligatorio, en el que se registra
-                el monto que será consignado en la cuenta de los
-                establecimientos,
-                cuando éste presenta movimiento de notas débito y crédito,
-                de tal manera, que permite definir la cantidad a ser consignada
-                al establecimiento
-                puesto que por efectos de validaciones y seguridad, la entidad
-                puede
-                determinar no realizar un pago total por este concepto. Sin
-                embargo,
-                en caso de que no se capture ningún valor, se tomará el
-                valor que aparecerá en el campo valor a pagar.</p>
-            </td>
-          </tr>
-          <tr>
-            <td class="titletable">
-              <p class="SUBTITULO">Valor
-                pagado</p>
-            </td>
-            <td>
-              <p class="PARRAFO">Indica
-                los valores que ya han sido consignados a los
-                establecimientos.</p>
-            </td>
-          </tr>
-          <tr>
-            <td class="titletable">
-              <p class="SUBTITULO">Valor
-                a consignar</p>
-            </td>
-            <td>
-              <p class="PARRAFO">Campo
-                que muestra el monto total definitivo con el cual se debe
-                afectar la
-                cuenta del establecimiento.</p>
-            </td>
-          </tr>
-          <tr>
-            <td class="titletable">
-              <p class="SUBTITULO">Nota
-                Crédito</p>
-            </td>
-            <td>
-              <p class="PARRAFO">En
-                el evento de que dentro del total de afectación al
-                establecimiento
-                se deban considerar otros valores correspondientes a ajustes, en
-                este
-                campo se informa dicho valor.</p>
-            </td>
-          </tr>
-          <tr>
-            <td class="titletable">
-              <p class="SUBTITULO">Nota
-                Débito</p>
-            </td>
-            <td>
-              <p class="PARRAFO">En
-                el evento de que dentro del total de afectación al
-                establecimiento
-                se deban considerar otros valores correspondientes a ajustes, en
-                este
-                campo se informa dicho valor.</p>
-            </td>
-          </tr>
-        </table>
-        <p class="PARRAFO"><span class="PARRAFO"><span
-              class="SUBTITULO">Información
-              de localización<a name="Localizacion"></a>:</span> Si el usuario
-            invoca
-            el globo de localización ubicado en la parte superior derecha de la
-            pantalla, se despliega un formulario con los siguientes
-            campos:</p>
-          <p class="TITLE"><img src="../img/ESF_014B3.PNG"></p>
-
-          <table>
-            <tr>
-              <td class="titletable">
-                <p class="SUBTITULO">Valor
-                  IVA leído</p>
-              </td>
-              <td>
-                <p class="PARRAFO">Refleja
-                  el valor cancelado por el cliente por dicho concepto.</p>
-              </td>
-            </tr>
-            <tr>
-              <td class="titletable">
-                <p class="SUBTITULO">Valor
-                  base reintegro IVA</p>
-              </td>
-              <td>
-                <p class="PARRAFO">Este
-                  campo despliega el valor que sirve como base para el calculo
-                  del reintegro
-                  de los 2 puntos de IVA sobre compras y que corresponde al
-                  valor de los
-                  bienes y/o servicios gravados con una tarifa del 16%; a partir
-                  del 2005
-                  también quedarán incluidos aquellos que estén gravados
-                  con un IVA del 10%. </p>
-              </td>
-            </tr>
-            <tr>
-              <td class="titletable">
-                <p class="SUBTITULO">Valor
-                  IVA procesado</p>
-              </td>
-              <td>
-                <p class="PARRAFO">Refleja
-                  el valor cancelado por el cliente por dicho concepto
-                  procesado.</p>
-              </td>
-            </tr>
-            <tr>
-              <td class="titletable">
-                <p class="SUBTITULO">Valor
-                  Reteiva</p>
-              </td>
-              <td>
-                <p class="PARRAFO">Campo
-                  que despliega el monto retenido por la entidad adquirente por
-                  dicho
-                  concepto acorde con los parámetros correspondientes (%base
-                  retención
-                  y %rete-iva) definidos en <a href="ESH_006B.html">Información
-                    de establecimientos</a>, o en <a href="ESH_002B.html">Tipos
-                    de servicio</a>
-                  o en <a href="NUH_055B.html">Parámetros operativos</a> lo que
-                  no aplica para los establecimientos que son
-                  autorretenedores.</p>
-              </td>
-            </tr>
-            <tr>
-              <td class="titletable">
-                <p class="SUBTITULO">Valor
-                  retefuente</p>
-              </td>
-              <td>
-                <p class="PARRAFO">Indica
-                  el monto descontado o valor en que es disminuida la
-                  consignación
-                  por concepto de la retención en la fuente liquidada sobre la
-                  base de retención calculada para los consumos, lo que no
-                  aplica
-                  para los establecimientos que son autorretenedores.</p>
-              </td>
-            </tr>
-            <tr>
-              <td class="titletable">
-                <p class="SUBTITULO">Valor
-                  retención Ica</p>
-              </td>
-              <td>
-                <p class="PARRAFO">Indica
-                  el monto descontado o valor en que es disminuida la
-                  consignación
-                  por concepto de la retención por concepto del impuesto de
-                  industria
-                  y comercio liquidado sobre la base de retención calculada
-                  sobre
-                  los consumos, acorde con los parámetros correspondientes
-                  (%base
-                  retención ica y %rete-ica) definidos en la opción <a
-                    href="ESH_006B.html">Información
-                    de establecimientos</a> lo que no aplica para los
-                  establecimientos que
-                  son autorretenedores.</p>
-              </td>
-            </tr>
-          </table>
+       
 
         </section>
         <script src="../js/menu.js"></script>

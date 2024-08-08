@@ -1,24 +1,24 @@
 <!DOCTYPE html>
 <html lang="es">
 
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>OpencardWeb®</title>
-  <link rel="stylesheet" href="../css/pages.css">
-  <link rel="stylesheet" href="../css/style.css">
-  <link rel="icon" href="../img/ACQUIRER-logo.JPG" type="image/x-icon">
-</head>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OpencardWeb®</title>
+    <link rel="stylesheet" href="../css/pages.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="icon" href="../img/ACQUIRER-logo.JPG" type="image/x-icon">
+  </head>
 
-<body>
-  <header>
-    <img class="logo" src="../img/logoBankbu_.PNG" alt="Logo de Mi Empresa">
-    <div id="menuBtn">
-      <img class="TITLE" src="../img/menu.PNG" alt="Botón de Menú ">
-    </div>
-  </header>
+  <body>
+    <header>
+      <img loading="lazy" rel="preload"  class="logo" src="../img/logoBankbu_.webp" alt="Logo de Mi Empresa">
+      <div id="menuBtn">
+        <img loading="lazy" rel="preload"  class="TITLE" src="../img/menu.PNG" alt="Botón de Menú ">
+      </div>
+    </header>
     <div id="menuContainer"></div>
-  <script>
+    <script>
     fetch('menu.html')
       .then(response => response.text())
       .then(html => {
@@ -26,24 +26,28 @@
       });
   </script>
 
-  <section>
-    <div>
-      
+    <section>
+      <div>
 
-              <p class="TITLE">Plásticos a realzar</p>
+        <p class="TITLE">Plásticos a realzar</p>
 
-      <p class="PARRAFO">Al invocarse el formulario, el usuario dispone de diferentes criterios que le permiten
-        seleccionar, de aquellos registros de solicitudes que arriban a la etapa de realce y, se encuentran listos para
-        ser enviados al proveedor encargado de efectuar el proceso de realce (embosado) de los mismos, con el fin de
-        poderlos entregar posteriormente a los clientes, como materialización de la tarjeta o crédito que le ha sido
-        otorgado por la entidad.</span>  </p>
-      <p class="PARRAFO">Es importante señalar que esta funcionalidad aplica para aquellos <a href="MEH_002B.html"
-          >productos</a>
-        a los cuales se les haya definido que Si emiten plástico. Al ingresar a la opción, el usuario se encuentra con
-        un wizard de tres pasos, en el que, la primera página corresponde a un filtro en el cual, es opcional el
-        diligenciar alguno de los criterios, y de esa manera agrupar los registros de solicitudes de tarjetas que se
+        <p class="PARRAFO">Al invocarse el formulario, el usuario dispone de
+          diferentes criterios que le permiten seleccionar, de aquellos
+          registros de solicitudes que arriban a la etapa de realce y, se
+          encuentran listos para ser enviados al proveedor encargado de efectuar
+          el proceso de realce (embosado) de los mismos, con el fin de poderlos
+          entregar posteriormente a los clientes, como materialización de la
+          tarjeta que le ha sido otorgada por la entidad.</span> </p>
+      <p class="PARRAFO">Es importante señalar que esta funcionalidad aplica
+        para aquellos <a href="MEH_002B.html">productos</a>
+        a los cuales se les haya definido que Si emiten plástico. Al ingresar a
+        la opción, el usuario se encuentra con
+        un wizard de tres pasos, en el que, la primera página corresponde a un
+        filtro en el cual, es opcional el
+        diligenciar alguno de los criterios, y de esa manera agrupar los
+        registros de solicitudes de tarjetas que se
         desea enviar a proceso de realce (embosado).</p>
-      <p class="TITLE"><img src="../img/PLF_008E.PNG"></p>
+      <p class="TITLE"><img loading="lazy" rel="preload"  src="../img/PLF_008E.PNG"></p>
 
       <p class="TITLE">Descripción de campos</p>
       <div>
@@ -51,7 +55,7 @@
           <tr>
             <td class="titletable">
               <p class="SUBTITULO">Número
-                    tarjeta </p>
+                tarjeta </p>
             </td>
             <td>
               <p class="PARRAFO">Campo
@@ -63,541 +67,203 @@
           <tr>
             <td class="titletable">
               <p class="SUBTITULO">Nombre
-                    plástico </p>
+                plástico </p>
             </td>
             <td>
               <p class="PARRAFO">En
-                este campo se ingresa como criterio para la consulta el nombre del
+                este campo se ingresa como criterio para la consulta el nombre
+                del
                 cliente tal y como debe ir realzado en el plástico.</p>
             </td>
           </tr>
 
           <tr>
             <td class="titletable">
-              <p class="SUBTITULO">Producto
-                    plástico </p>
+              <p class="SUBTITULO">Origen registro
+                plástico </p>
             </td>
             <td>
-              <p class="PARRAFO">Campo
-                con lista de valores de la que se puede seleccionar el <a href="MEH_002B.html"
-                  >producto</a>
-                al cual pertenecen los plásticos que se desea consultar para
-                enviar a realce. </p>
+              <p class="PARRAFO">Campo que posee lista de valore tipo combo de
+                la cual se puede seleccionar entre: Débito Masivo No
+                Personalizado o Crédito Masivo No Personalizado, el evento que
+                dió origen a la solicitud de los plásticos que se desea
+                consultar para realce. </p>
             </td>
           </tr>
 
           <tr>
             <td class="titletable">
-              <p class="SUBTITULO">Marca</p>
+              <p class="SUBTITULO">Secuencia solicitud
+              </p>
             </td>
             <td>
-              <p class="PARRAFO">En
-                este campo con lista de valores, se selecciona según el caso
-                la <a href="NUH_033B.html" >marca</a> asociada
-                con los productos a los que pertenecen los plásticos que se
-                desea consultar para realce.</p>
+              <p class="PARRAFO">En este campo numérico se puede ingresar el
+                número de la solicitud específica para la cual se desean
+                consultar el plástico a realzar.
+
+              </p>
             </td>
           </tr>
-
           <tr>
             <td class="titletable">
-              <p class="SUBTITULO">Origen</span> registro </p>
+              <p class="SUBTITULO">Punto entrega
+
+              </p>
             </td>
             <td>
-              <p class="PARRAFO">Campo
-                tipo combo en el cual se selecciona el evento que dió origen
-                a la solicitud de los plásticos que se desea consultar para
-                realce. Las opciones contenidas en este combo son Crédito
-                  empresarial corporativo, Crédito convenio, Renovación
-                  individual crédito, Renovación masiva crédito,
-                  Reexpedición crédito, Crédito normal, Tarjeta
-                  débito, Cambio masivo de productos crédito, Recordatorio
-                  sobreflex de clave, Reposición, Reactivación, Renovación
-                  masiva débito, Reexpedición débito, Renovación
-                  débito, Reposición débito y Renovación
-                  masiva débito.</p>
+              <p class="PARRAFO">Campo con lista de valores que permite
+                seleccionar el <a href="PLH_006B.html">punto de entrega</a>
+                asociado con las tarjetas para las cuales se desea consultar y
+                ejecutar el proceso de realce.
+              </p>
             </td>
           </tr>
-
           <tr>
             <td class="titletable">
-              <p class="SUBTITULO">Secuencia solicitud</p>
+              <p class="SUBTITULO">Proveedor
+              </p>
             </td>
             <td>
-              <p class="PARRAFO">En
-                este campo numérico se puede ingresar el número de la
-                solicitud específica para la cual se desean consultar los plásticos
-                a realzar.</p>
+              <p class="PARRAFO">Campo con lista de valores que permite
+                seleccionar el <a href="NUH_063B.html">proveedor</a> asociado
+                con las tarjetas para las cuales se desea consultar y ejecutar
+                el proceso de realce.
+
+              </p>
             </td>
           </tr>
-
           <tr>
             <td class="titletable">
-              <p class="SUBTITULO">Modelo
-                    plástico </p>
+              <p class="SUBTITULO">Punto de venta
+
+              </p>
             </td>
             <td>
-              <p class="PARRAFO">Campo
-                con lista de valores que permite seleccionar el <span ><a href="NUH_057B.html"
-                      >modelo
-                      de plástico</a></span>  asociado con las tarjetas para
-                las cuales se desea consultar y ejecutar el proceso de realce.
+              <p class="PARRAFO">Campo con lista de valores que permite
+                seleccionar el punto de venta definido por la entidad, asociado
+                con las tarjetas para las cuales se desea consultar y ejecutar
+                el proceso de realce.
+
+              </p>
+            </td>
+          </tr>
+          <tr>
+            <td class="titletable">
+              <p class="SUBTITULO">Imagen
+
+              </p>
+            </td>
+            <td>
+              <p class="PARRAFO">Campo que posee lista de valores tipo combo de
+                la que puede seleccionarse entre: Si o No, los plástico a
+                consultar tienen o deben llevar una imagen.
+
+              </p>
+            </td>
+          </tr>
+          <tr>
+            <td class="titletable">
+              <p class="SUBTITULO">Seleccionar por Bin
+
+              </p>
+            </td>
+            <td>
+              <p class="PARRAFO">Campo que posee lista de valores adjunta, de la
+                que puede seleccionarse el Bin de las tarjetas para las cuales
+                se desea consultar y ejecutar el proceso de realce.
+
+              </p>
+            </td>
+          </tr>
+          <tr>
+            <td class="titletable">
+              <p class="SUBTITULO">Deseleccionar por Bin
+
+              </p>
+            </td>
+            <td>
+              <p class="PARRAFO">Campo que posee lista de valores adjunta, de la
+                que puede seleccionarse el Bin de las tarjetas para las cuales
+                se desea excluir de la consulta para luego ejecutar el proceso
+                de realce.
+
+              </p>
+            </td>
+          </tr>
+          <tr>
+            <td class="titletable">
+              <p class="SUBTITULO">Seleccionar tarjetas masivas
+
+              </p>
+            </td>
+            <td>
+              <p class="PARRAFO">Campo que posee lista de valores tipo combo de
+                la que puede seleccionarse entre: Si o No, se deben incluir del
+                proceso de realce, a los plásticos de los procesos de generación
+                masiva de tarjetas.
+
               </p>
             </td>
           </tr>
         </table>
       </div>
 
-      <p class="PARRAFO">U<span class="PARRAFO">na vez seleccionados
-          los criterios y al desplazarse a la segunda página del wizard, se muestran
-          todos los registros que cumplen con las condiciones indicadas por el usuario
-          mostrando para cada uno de ellos el número de tarjeta, el nombre a
-          realzar en el plástico y un campo para marcar aquellos registros que
-          se quiera enviar a realce en caso que el usuario no desee ejecutar la acción
-          para todos los registros desplegados por los filtros. </p>
-      <p class="PARRAFO">Es de aclarar, que en el caso que las tarjetas
-        desplegadas correspondan a tipo débito generadas masivamente, el campo
-        Nombre plástico se mostrará en blanco.
+      <p class="PARRAFO">Una vez seleccionados los criterios y al desplazarse a
+        la segunda página del wizard, se muestran los registros que cumplen con
+        las condiciones indicadas por el usuario, mostrando para cada uno de
+        ellos: Número de tarjeta (enmascarado), Punto de entrega, Nombre a
+        realzar en el plástico, Secuencia solicitud, Tipo de solicitud, dato del
+        Proveedor, dato de si lleva imagen, Punto de venta, Origen del registro
+        y, un campo para marcar aquellos registros que se quiera enviar a
+        realce, en caso que el usuario no desee ejecutar la acción para todos
+        los registros desplegados por los filtros.
       </p>
-      <p class="PARRAFO"><span class="PARRAFO">Esta segunda página
-          del wizard cuenta con la opción <a href="PLH_008B.html#BL_DETALLE" >Detalle</a>,
-          que le permite al usuario invocar un nuevo formulario con la información
-          completa del registro seleccionado y adicionalmente contiene un <a href="PLH_008B.html#BL_GENERAR"
-            >botón</a>
-          especial que le permite a la entidad enviar a realce la totalidad de los registros
-          desplegados. </p>
-      <p class="TITLE"><img src="../img/PLF_008E1.PNG"></p>
+      <p class="PARRAFO"><span class="PARRAFO">Esta segunda página del wizard
+          cuenta con dos <a href="PLH_008B.html#BL_GENERAR">botónes</a>
+          especiales que le permiten a la entidad Seleccionar o Deseleccionar
+          todos los registros desplegados en el formulario y así facilitar
+          avanzar al tercer paso del wizard.</p>
+        <p class="TITLE"><img loading="lazy" rel="preload"  src="../img/PLF_008E1.PNG"></p>
 
-      <p class="PARRAFO">En la tercera
-          página del wizard, se muestran los registros que el usuario haya seleccionado
-          para ejecutar el proceso de realce, en caso que éste no se vaya a aplicar
-          para todos los registros desplegado en la segunda página y mediante
-          el botón finalizar se ordena la generación del archivo de realce
-          respectivo; al igual que la segunda página del wizard este formulario
-          también contiene el hipervínculo </span><span class="PARRAFO"><a href="PLH_008B.html#BL_DETALLE"
-              >Detalle</a></span>.</p>
-      <p class="PARRAFO">La casilla remover le permite al usuario marcar
-        aquellos registros que había seleccionado previamente pero que por
-        alguna razón ya no desea incluir en el archivo de realce.</p>
-      <p class="TITLE"><img src="../img/PLF_008E2.PNG"></p>
+        <p class="PARRAFO">En la tercera página del wizard, se muestran los
+          registros que el usuario seleccionó para ejecutar el proceso de
+          realce, en caso que éste no se vaya a aplicar para todos los registros
+          desplegado en la segunda página y mediante el botón de palomita o
+          visto bueno, se ordena la generación del archivo de realce
+          respectivo.</p>
+        <p class="TITLE"><img loading="lazy" rel="preload"  src="../img/PLF_008E2.PNG"></p>
 
-      <p class="PARRAFO">Al momento
-          de ordenar la ejecución del proceso de generación del archivo
-          de realce, el sistema evalúa el campo Control de remisión
-            de plásticos, contenido en la opción <a href="NUH_055B.html" >Parámetros
-              operativos</a> y cuando este se encuentra en 'Si' se despliega
-          un nuevo formulario en el que se puede seleccionar una remisión ya
-          existente o crear un nuevo número remisión </p>
-      <p class="TITLE"><img src="../img/PLF_008E3.PNG"></p>
-      <p class="TITLE"><img src="../img/PLF_008E4.PNG"></p>
+        <p class="PARRAFO">Al momento de ordenar la ejecución del proceso de
+          generación del archivo de realce, el sistema evalúa el campo Control
+          de remisión de plásticos, contenido en la opción <a
+            href="NUH_055B.html">Parámetros
+            operativos</a> y cuando este se encuentra en 'Si' se despliega un
+          nuevo formulario en el que se puede seleccionar una remisión ya
+          existente o crear un nuevo número remisión. </p>
+        <p class="TITLE"><img loading="lazy" rel="preload"  src="../img/PLF_008E3.PNG"></p>
+        <p class="TITLE"><img loading="lazy" rel="preload"  src="../img/PLF_008E4.PNG"></p>
 
-      <p class="PARRAFO"><span class="SUBTITULO">Detalle:</span> 
-        si desde la segunda o tercera página del wizard el usuario selecciona
-        un registro e invoca la opción Detalle, se despliega un formulario
-        con la información completa del registro y cuyos campos se describen
-        a continuación. Ninguno de los datos allá contenidos puede ser
-        modificado.</p>
-      <p class="TITLE"><img src="../img/PLF_008E5.PNG"></p>
-      <p class="TITLE">Descripción de campos</p>
-      <div>
-        <table>
-          <tr>
-            <td class="titletable">
-              <p class="SUBTITULO">Número
-                    tarjeta </p>
-            </td>
-            <td>
-              <p class="PARRAFO">Campo en el que se despliega el número (enmascarado si aplica) de la tarjeta para el cual se está consultando la información.</p>
-            </td>
-          </tr>
-          <tr>
-            <td class="titletable">
-              <p class="SUBTITULO">Nombre
-                    plástico </p>
-            </td>
-            <td>
-              <p class="PARRAFO">En
-                este campo se muestra el nombre del cliente titular de la tarjeta
-                tal y como aparece realzado en el plástico.</p>
-            </td>
-          </tr>
-
-          <tr>
-            <td class="titletable">
-              <p class="SUBTITULO">Número</span> plástico </p>
-            </td>
-            <td>
-              <p class="PARRAFO">Campo
-                que contiene el consecutivo que identifica el plástico utilizado
-                durante el proceso de embosado o realce de la tarjeta.</p>
-            </td>
-          </tr>
-          <tr>
-            <td class="titletable">
-              <p class="SUBTITULO">Consecutivo
-                    plástico </p>
-            </td>
-            <td>
-              <p class="PARRAFO">Campo
-                que contiene el consecutivo que identifica el registro asociado a
-                la tarjeta dentro del archivo de realce.</p>
-            </td>
-          </tr>
-
-          <tr>
-            <td class="titletable">
-              <p class="SUBTITULO">Nombre
-                    archivo realce</p>
-            </td>
-            <td>
-              <p class="PARRAFO">Despliega
-                el nombre del archivo de realce dentro del cual se incluyó
-                el registro correspondiente al plástico asociado al número
-                de tarjeta.</p>
-            </td>
-          </tr>
-          <tr>
-            <td class="titletable">
-              <p class="SUBTITULO">Fecha
-                    / hora realce</p>
-            </td>
-            <td>
-              <p class="PARRAFO">Indica
-                la fecha y hora en la cual se generó el archivo de realce en
-                el cual se encuentra contenida la tarjeta consultada.</p>
-            </td>
-          </tr>
-          <tr>
-            <td class="titletable">
-              <p class="SUBTITULO">Archivo
-                    sobreflex de clave</p>
-            </td>
-            <td>
-              <p class="PARRAFO">Despliega
-                el nombre del archivo de sobreflex de clave dentro del cual se incluyó
-                el registro correspondiente a la información del PIN o clave
-                de la tarjeta.</p>
-            </td>
-          </tr>
-          <tr>
-            <td class="titletable">
-              <p class="SUBTITULO">Fecha
-                    / hora sobreflex de clave</p>
-            </td>
-            <td>
-              <p class="PARRAFO">Campo
-                que contiene la fecha y hora en la que se generó el archivo
-                mediante el que se genera el sobreflex con el PIN o clave que permite
-                al cliente el uso del plástico. </p>
-            </td>
-          </tr>
-          <tr>
-            <td class="titletable">
-              <p class="SUBTITULO">Fecha
-                    / hora inventario</p>
-            </td>
-            <td>
-              <p class="PARRAFO">Muestra
-                la fecha y hora en la cual se aplicó el control de inventario
-                a la tarjeta y mediante la cual se le asignó a la tarjeta el
-                número de plástico respectivo.</p>
-            </td>
-          </tr>
-          <tr>
-            <td class="titletable">
-              <p class="SUBTITULO">Fecha
-                    / hora sobreflex de empaque</p>
-            </td>
-            <td>
-              <p class="PARRAFO">Campo
-                que contiene la fecha y hora en la que se generó el archivo
-                mediante el que se imprimen los sobres de seguridad en los cuales
-                son empacados los plásticos para ser enviados al cliente.</p>
-            </td>
-          </tr>
-          <tr>
-            <td class="titletable">
-              <p class="SUBTITULO">Fecha
-                    / hora envío mensajería</p>
-            </td>
-            <td>
-              <p class="PARRAFO">Este
-                campo muestra la fecha y hora en la que se generó el archivo
-                con el cual se envió a la empresa de mensajería el plástico
-                realzado con el fin de ser entregado al cliente.</p>
-            </td>
-          </tr>
-          <tr>
-            <td class="titletable">
-              <p class="SUBTITULO">Fecha
-                    / hora acuse</p>
-            </td>
-            <td>
-              <p class="PARRAFO">Campo
-                que muestra la fecha y hora en la cual se registró en el sistema
-                la aceptación o rechazo del plástico por parte del cliente.</p>
-            </td>
-          </tr>
-          <tr>
-            <td class="titletable">
-              <p class="SUBTITULO">Plástico aceptado</p>
-            </td>
-            <td>
-              <p class="PARRAFO">En
-                este campo se indica Si o No el cliente aceptó
-                el plástico realzado y enviado por la entidad financiera.</p>
-            </td>
-          </tr>
-          <tr>
-            <td class="titletable">
-              <p class="SUBTITULO">Nombre empresa</p>
-            </td>
-            <td>
-              <p class="PARRAFO">Para
-                el caso de tarjetas de productos empresariales, en este campo se muestra
-                el nombre de la empresa a la cual se le aprobó la obligación
-                por parte de la entidad.</p>
-            </td>
-          </tr>
-          <tr>
-            <td class="titletable">
-              <p class="SUBTITULO">Tipo
-                    plástico </p>
-            </td>
-            <td>
-              <p class="PARRAFO">Campo
-                que indica si el plástico asociado con la tarjeta consultada
-                corresponde a un Plástico principal es decir, a la
-                materialización del crédito otorgado, u Otro plástico en caso de aquellos
-                <a href="MEH_002B4.html" >plásticos
-                    secundarios</a> o accesorios que de acuerdo con lo definido en
-                el producto se entregan adicionalmente a la tarjeta propiamente dicha
-                y que sirven para formalizar extensión de beneficios o un trato
-                preferencial a los titulares de los mismos.
-              </p>
-            </td>
-          </tr>
-          <tr>
-            <td class="titletable">
-              <p class="SUBTITULO">Foto
-                    cliente </p>
-            </td>
-            <td>
-              <p class="PARRAFO">Indica
-                si de acuerdo con los parámetros del <a href="MEH_002B.html" >producto</a>
-                y las características del modelo de plástico asociado,
-                el plástico lleva impresa o no la fotografía del cliente.</p>
-            </td>
-          </tr>
-          <tr>
-            <td class="titletable">
-              <p class="SUBTITULO">Nombre
-                    otro plástico</p>
-            </td>
-            <td>
-              <p class="PARRAFO">Cuando
-                en el campo Tipo plástico se indica que el registro
-                corresponde a <a href="MEH_030B.html" >Otro plástico</a>,
-                en este campo se muestra la descripción o nombre del mismo.</p>
-            </td>
-          </tr>
-          <tr>
-            <td class="titletable">
-              <p class="SUBTITULO">Producto</span> plástico </p>
-            </td>
-            <td>
-              <p class="PARRAFO">En
-                este campo se muestra el bin, segmento, grupo de afinidad y descripción
-                del producto al que pertenece la tarjeta.</p>
-            </td>
-          </tr>
-          <tr>
-            <td class="titletable">
-              <p class="SUBTITULO">Secuencia</p>
-            </td>
-            <td>
-              <p class="PARRAFO">Campo
-                que muestra la secuencia asignada internamente por el sistema y de
-                manera automática a cada uno de los plásticos que ingresan
-                a la etapa de realce, lo que permite diferenciarlo de los demás.
-              </p>
-            </td>
-          </tr>
-          <tr>
-            <td class="titletable">
-              <p class="SUBTITULO">Marca</p>
-            </td>
-            <td>
-              <p class="PARRAFO">En
-                este campo se despliega la <a href="NUH_033B.html" >marca</a> asociada con el
-                producto al que pertenece el plástico del cual
-                se está consultando el detalle.</p>
-            </td>
-          </tr>
-
-          <tr>
-            <td class="titletable">
-              <p class="SUBTITULO">Origen</span> registro </p>
-            </td>
-            <td>
-              <p class="PARRAFO">Este
-                campo muestra el evento que dió origen a la solicitud de los
-                plásticos que se desea consultar para realce. Las opciones
-                contenidas en este combo son Crédito empresarial corporativo,
-                  Crédito convenio, Renovación individual crédito,
-                  Renovación masiva crédito, Reexpedición crédito,
-                  Crédito normal, Tarjeta débito, Cambio masivo de productos
-                  crédito, Recordatorio sobreflex de clave, Reposición,
-                  Reactivación, Renovación masiva débito, Reexpedición
-                  débito, Renovación débito, Reposición
-                  débito y Renovación masiva débito.</p>
-            </td>
-          </tr>
-          <tr>
-            <td class="titletable">
-              <p class="SUBTITULO">Secuencia solicitud</p>
-            </td>
-            <td>
-              <p class="PARRAFO">Campo
-                que contiene el número o secuencia de la solicitud a la cual
-                se encuentra asociado el plástico actual.</p>
-            </td>
-          </tr>
-          <tr>
-            <td class="titletable">
-              <p class="SUBTITULO">Fecha
-                    / hora aprobación </p>
-            </td>
-            <td>
-              <p class="PARRAFO">Campo
-                que contiene la fecha y hora en la cual se aprobó la solicitud
-                mediante la cual se incluyó el registro en la etapa de plásticos
-                correspondiente (realce o sobreflex de clave).</p>
-            </td>
-          </tr>
-          <tr>
-            <td class="titletable">
-              <p class="SUBTITULO">Fecha
-                    vigencia</p>
-            </td>
-            <td>
-              <p class="PARRAFO">En
-                este campo se muestra la fecha a partir de la cual tiene vigencia
-                el plástico del cual se está consultando el detalle.</p>
-            </td>
-          </tr>
-          <tr>
-            <td class="titletable">
-              <p class="SUBTITULO">Fecha
-                    vencimiento</p>
-            </td>
-            <td>
-              <p class="PARRAFO">Campo que contiene la fecha (enmascarada si aplica) hasta la cual tendrá vigencia o validez el plástico de acuerdo con lo parametrizado para el producto al que pertenece.</p>
-            </td>
-          </tr>
-
-          <tr>
-            <td class="titletable">
-              <p class="SUBTITULO">Sucursal
-                    radicación </p>
-            </td>
-            <td>
-              <p class="PARRAFO">En
-                este campo se muestra el código de la <a href="NUH_020B.html" >sucursal</a>
-                ante la cual se encuentra radicada la obligación que origina
-                la generación del plástico.</p>
-            </td>
-          </tr>
-          <tr>
-            <td class="titletable">
-              <p class="SUBTITULO">Sucursal
-                    regional </p>
-            </td>
-            <td>
-              <p class="PARRAFO">Campo
-                en el que se despliega la código de la <a href="NUH_020B.html"
-                  >sucursal</a> a la cual se encuentra adscrita o pertence la obligación.
-              </p>
-            </td>
-          </tr>
-          <tr>
-            <td class="titletable">
-              <p class="SUBTITULO">Oficina
-                    envío </p>
-            </td>
-            <td>
-              <p class="PARRAFO">En
-                este campo se muestra el código de la <a href="NUH_020B.html" >sucursal</a>
-                de la entidad a la que se va a enviar el plástico </p>
-            </td>
-          </tr>
-          <tr>
-            <td class="titletable">
-              <p class="SUBTITULO">Modelo
-                    plástico </p>
-            </td>
-            <td>
-              <p class="PARRAFO">Campo
-                que muestra el <span ><a href="NUH_057B.html" >modelo
-                      de plástico</a></span>  a utilizar para elaborar el realce
-                o embozado de la tarjeta.
-              </p>
-            </td>
-          </tr>
-        </table>
-      </div>
-      <table>
-        <tr>
-          <td class="titletable">
-            <p class="SUBTITULO">Proveedor</span> plástico </p>
-          </td>
-          <td>
-            <p class="PARRAFO">Este
-              campo muestra el nombre del <a href="NUH_063B.html" >proveedor</a> encargado de
-              suministrar el plástico en el cual se va a efectuar
-              el realce de la tarjeta.</p>
-          </td>
-        </tr>
-
-        <tr>
-          <td class="titletable">
-            <p class="SUBTITULO">Número remisión </p>
-          </td>
-          <td>
-            <p class="PARRAFO">Despliega el número de documento con el cual se remisionaron los plásticos
-              durante el proceso de <a href="PLH_008B.html" >realce</a> que se hace desde esta
-              misma
-              opción. </p>
-          </td>
-        </tr>
-      </table>
-
-      <p class="TITLE">Botones especiales</p>
-      <p class="PARRAFO"><a name="BL_GENERAR"></a><span class="SUBTITULO">Generar
-              archivo de realce:</span></span>
-          si desde la primera página del wizard el actor invoca el botón
-          Generar archivo para todos, se ejecuta el proceso mediante el cual se genera
-          el archivo con todos los registros a enviar al proveedor de realce para el
-          embosado de los plásticos correspondientes. Como ya se mencionó,
-          dependiendo de</span>l campo Control
-            de remisión de plásticos, contenido en la opción
-          <a href="NUH_055B.html" >Parámetros operativos</a>
-          se despliega un formulario en el que se puede seleccionar una remisión
-          ya existente o crear un nuevo número remisión. </span> 
+        <p class="TITLE">Botones especiales</p>
+        <p class="PARRAFO"><a name="BL_GENERAR"></a><span
+            class="SUBTITULO">Seleccionar / Deseleccionar:</span></span>
+        Dupla de botones especiales que le permiten a la entidad, marcar o
+        desmarcar, todos los registros desplegados en el segundo paso del wizard
+        y así facilitar avanzar al tercer paso del mismo.
       </p>
-      <p class="TITLE"><img src="../img/GENERAR_REALCE.PNG"></p>
+      <p class="TITLE"><img loading="lazy" rel="preload"  src="../img/Seleccionar.PNG"></p>
+      <p class="TITLE"><img loading="lazy" rel="preload"  src="../img/Deseleccionar.PNG"></p>
 
-  </section>
-  <script src="../js/menu.js"></script>
+    </section>
+    <script src="../js/menu.js"></script>
 
-  <div id="footerContainer"></div>
-<script>
+    <div id="footerContainer"></div>
+    <script>
   fetch('footer.html')
     .then(response => response.text())
     .then(html => {
       document.getElementById('footerContainer').innerHTML = html;
     });
 </script>
-</body>
+  </body>
 
 </html>

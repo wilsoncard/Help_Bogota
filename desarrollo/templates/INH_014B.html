@@ -1,26 +1,26 @@
 <!DOCTYPE html>
 <html lang="es">
 
-<head>
+  <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>OpencardWeb®</title>
 
     <link rel="stylesheet" href="../css/pages.css">
     <link rel="stylesheet" href="../css/style.css">
- <link rel="icon" href="../img/ACQUIRER-logo.JPG" type="image/x-icon">
-</head>
+    <link rel="icon" href="../img/ACQUIRER-logo.JPG" type="image/x-icon">
+  </head>
 
-<body>
+  <body>
 
     <header>
-        <img class="logo" src="../img/logoBankbu_.PNG" alt="Logo de Mi Empresa">
-        <div id="menuBtn">
-            <img class="TITLE"  src= "../img/menu.PNG" alt="Botón de Menú ">
-        </div>
+      <img loading="lazy" rel="preload"  class="logo" src="../img/logoBankbu_.webp" alt="Logo de Mi Empresa">
+      <div id="menuBtn">
+        <img loading="lazy" rel="preload"  class="TITLE" src="../img/menu.PNG" alt="Botón de Menú ">
+      </div>
     </header>
-      <div id="menuContainer"></div>
-  <script>
+    <div id="menuContainer"></div>
+    <script>
     fetch('menu.html')
       .then(response => response.text())
       .then(html => {
@@ -29,63 +29,66 @@
   </script>
 
     <section>
-        <div> 
-            
-                    <p  class="TITLE">Causales de rechazo </p>
-                  
-            <p class="PARRAFO" >A través de esta opción 
-              se permite la consulta de la tabla que contiene la codificación de 
-              las distintas <a href="NUH_016B.html" >causales de rechazo</a> 
-              de transacciones argumentadas o utilizadas por los procesos de validación. 
-              La entidad sólo puede modificar, según su propio criterio, la 
-              Acción o destino de la transacción que puede ser <a href="INH_022B.html"><span >Fraudes</span></a>, 
-              </span><span ><a href="INH_008B.html" >Pendiente</a></span><span class="PARRAFO">, 
-              o Aplicar. Entre muchas otras posibilidades la entidad puede por 
-              ejemplo, para la causal de rechazo de pago en cheque, definir que la acción 
-              debe ser Aplicar, lo que conlleva a que todos los pagos efectuados en cheque 
-              apliquen como si fuesen en efectivo.  El formulario cuenta con una opción de Filtro de Búsqueda por Código y Descripción.
-              </p>
-            <p class="TITLE"><img src="../img/INF_014E.PNG"759" height="541"></p>
-            
-            <p  class="PARRAFO">El formulario solo contiene la opción 
-              Actualizar y se muestra únicamente para aquellas <a href="NUH_016B.html" >causales</a> a las cuales se les definió que Si permiten cambio de acción. </p>
-            <p  class="PARRAFO"><span class="SUBTITULO"><span 
-        ><span class="SUBTITULO">Actualizar</span>:</span><span 
-        ></span></span><span 
-        > 
-               Al activar ese enlace  se despliega un formulario 
-              en el cual el único campo modificable es Acción.</p>
-            <p class="TITLE"><img src="../img/INF_014E1.PNG"260" ></p>
-            <p  class="TITLE">Descripción de campos</p>
-            <table>
-              <tr> 
-                <td class="titletable"><p class="SUBTITULO"><span 
-        >Acción</p></td>
-                <td><p  class="PARRAFO">Campo 
-                    tipo combo en el cual se puede seleccionar el destino de la transacción 
-                    de acuerdo con la causal, que puede ser <a href="INH_022B.html"><span >Fraudes</span></a>, 
-                    <span ><a href="INH_008B.html" >Pendiente</a></span>  
-                    o Aplicar, siempre y cuando al momento de definir la respectiva 
-                    <a href="NUH_016B.html" > causal de rechazo</a>, 
-                    en el campo Cambio se haya seleccionado la opción Si 
-                    para la misma; en caso contrario el sistema no permitirá efectuar 
-                    ninguna modificación al contenido actual del campo y desplegará 
+      <div>
+
+        <p class="TITLE">Causales de rechazo </p>
+
+        <p class="PARRAFO">A través de esta opción se permite la consulta de la
+          tabla que contiene la codificación de las distintas causales de
+          rechazo de transacciones argumentadas o utilizadas por los procesos de
+          validación. La entidad sólo puede modificar, según su propio criterio,
+          la Acción o destino de la transacción que puede ser <a
+            href="INH_022B.html"><span>Fraudes</span></a>,
+        </span><span><a href="INH_008B.html">Pendiente</a></span><span
+          class="PARRAFO">,
+          o Aplicar. Entre muchas otras posibilidades la entidad puede, por
+          ejemplo, para la causal de rechazo de pago en cheque, definir que la
+          acción debe ser Aplicar, lo que conlleva a que todos los pagos
+          efectuados en cheque apliquen como si fuesen en efectivo. El
+          formulario cuenta con una opción de Filtro de Búsqueda por Código y/o
+          Descripción.
+        </p>
+        <p class="TITLE"><img loading="lazy" rel="preload"  src="../img/INF_014E.PNG"></p>
+
+        <p class="PARRAFO">El formulario solo contiene la opción Actualizar y se muestra únicamente para aquellas <a
+            href="NUH_016B.html">causales</a> a las cuales se les definió que Si permiten cambio de acción. </p>
+        <p class="PARRAFO"><span class="SUBTITULO">Actualizar</span>:
+          Al activar ese enlace se despliega un formulario en el cual el único campo modificable es Acción.</p>
+          <p class="TITLE"><img loading="lazy" rel="preload"  src="../img/INF_014E1.PNG"></p>
+          <p class="TITLE">Descripción de campos</p>
+          <table>
+            <tr>
+              <td class="titletable"><p class="SUBTITULO"><span>Acción</p></td>
+                <td><p class="PARRAFO">Campo
+                    tipo combo en el cual se puede seleccionar el destino de la
+                    transacción
+                    de acuerdo con la causal, que puede ser <a
+                      href="INH_022B.html"><span>Fraudes</span></a>,
+                    <span><a href="INH_008B.html">Pendiente</a></span>
+                    o Aplicar, siempre y cuando al momento de definir la
+                    respectiva
+                    <a href="NUH_016B.html"> causal de rechazo</a>,
+                    en el campo Cambio se haya seleccionado la opción Si
+                    para la misma; en caso contrario el sistema no permitirá
+                    efectuar
+                    ninguna modificación al contenido actual del campo y
+                    desplegará
                     un mensaje de notificación al usuario.
                   </p></td>
               </tr>
             </table>
             <div>
-          <p class="PARRAFO"><span class="SUBTITULO"> 
+              <p class="PARRAFO"><span class="SUBTITULO">
                 </p>
-        </section>
-    <script src="../js/menu.js"></script>
-</body>
-<div id="footerContainer"></div>
-<script>
+              </section>
+              <script src="../js/menu.js"></script>
+            </body>
+            <div id="footerContainer"></div>
+            <script>
   fetch('footer.html')
     .then(response => response.text())
     .then(html => {
       document.getElementById('footerContainer').innerHTML = html;
     });
 </script>
-</html>
+          </html>

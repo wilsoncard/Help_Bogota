@@ -1,26 +1,26 @@
 <!DOCTYPE html>
 <html lang="es">
 
-<head>
+  <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>OpencardWeb®</title>
 
     <link rel="stylesheet" href="../css/pages.css">
     <link rel="stylesheet" href="../css/style.css">
- <link rel="icon" href="../img/ACQUIRER-logo.JPG" type="image/x-icon">
-</head>
+    <link rel="icon" href="../img/ACQUIRER-logo.JPG" type="image/x-icon">
+  </head>
 
-<body>
+  <body>
 
     <header>
-        <img class="logo" src="../img/logoBankbu_.PNG" alt="Logo de Mi Empresa">
-        <div id="menuBtn">
-            <img class="TITLE"  src= "../img/menu.PNG" alt="Botón de Menú ">
-        </div>
+      <img loading="lazy" rel="preload"  class="logo" src="../img/logoBankbu_.webp" alt="Logo de Mi Empresa">
+      <div id="menuBtn">
+        <img loading="lazy" rel="preload"  class="TITLE" src="../img/menu.PNG" alt="Botón de Menú ">
+      </div>
     </header>
-      <div id="menuContainer"></div>
-  <script>
+    <div id="menuContainer"></div>
+    <script>
     fetch('menu.html')
       .then(response => response.text())
       .then(html => {
@@ -29,369 +29,79 @@
   </script>
 
     <section>
-        <div> 
-            
-                    <p  class="TITLE">Consulta de movimientos</p>
-                    
-            <p class="PARRAFO"><span class="PARRAFO"><span class="SUBTITULO">Movimiento diario:</span>  
-              </span> En este formulario aparecen registradas todas las transacciones que 
-              han superado exitosamente las validaciones del sistema.</p>
-            <p class="PARRAFO">El formulario contiene los enlaces: <span ><a href="#Afectado_por" title="Afectado_por" target="_self" >Afectado por</a></span><span >, 
-                </span><span ><a href="#Afecta_a" title="Afecta a" target="_self" >Afecta a</a></span><span >,</span>  y el Detalle. 
-              Adicionalmente, cuenta en la parte superior con un las 
-              opciones<span class="PARRAFO">:</span>  <a href="INH_040B2.html" >Fraudes</a>,    <a href="INH_040B3.html" >Pendientes</a>, <a href="INH_040B4.html" >Rechazo 
-              cargue</a>, <a href="INH_040B5.html" >Contracargos</a>, <a href="INH_040B6.html" >Efectos 
-              al cobro</a>, <a href="INH_040B7.html" >Intercambio</a>, 
-              <a href="INH_040B8.html" >Rechazo cargue convenios</a>, y <a href="INH_040B.html" >Ver 
-              parámetros</a>.</p>
-            <p class="TITLE"><img src="../img/INF_040B1.PNG"715" height="331"></p>
-           
-            <table>
-              <tr> 
-                <td  class="titletable" ><p class="SUBTITULO">Descripción 
-                    extracto </p></td>
-                <td><p class="PARRAFO">Despliega 
-                    el nombre con el que aparecerá la transacción en el extracto 
-                    del cliente y corresponde al nombre de la transacción interna 
-                    definido en la opción <a href="MEH_003B.html" >Transacciones por 
-                    empresa</a>.</p></td>
-              </tr>
-              <tr> 
-                <td  class="titletable" ><p class="SUBTITULO">Fecha 
-                    comprobante </p></td>
-                <td><p class="PARRAFO">Campo 
-                    con formato YYYY-MM-DD ilustra la fecha física del comprobante 
-                    de venta.</p></td>
-              </tr>
-              <tr> 
-                <td class="titletable"><p class="SUBTITULO">Plazo</p></td>
-                <td><p class="PARRAFO">Contiene 
-                    el número de periodos de 30 días, solicitado por el cliente 
-                    o asignado por defecto, para el pago de la transacción de consumo 
-                    o utilización.</p></td>
-              </tr>
-              <tr> 
-                <td>
-          <p class="SUBTITULO">Moneda</p></td>
-                <td><p class="PARRAFO">Despliega 
-                    la abreviatura definida por la franquicia que identifica la <a href="NUH_005B.html" >Moneda</a> 
-                    original de la transacción.</p></td>
-              </tr>
-              <tr> 
-                <td  class="titletable" ><p class="SUBTITULO">Valor 
-                    total </p></td>
-                <td><p class="PARRAFO">Campo 
-                    que contiene el monto global de la transacción, incluido el valor 
-                    de propina concedida.</p></td>
-              </tr>
-              <tr> 
-                <td class="titletable"><p class="SUBTITULO">Interés</p></td>
-                <td><p class="PARRAFO">Contiene 
-                    la tasa de interés corriente original asociada al indicador económico 
-                    que aplica para la transacción.</p></td>
-              </tr>
-              <tr> 
-                <td class="titletable"><p class="SUBTITULO">Número 
-                    tarjeta</p></td>
-                <td><p class="PARRAFO">Campo 
-                    que contiene bien sea el número de la tarjeta a afectar con la 
-                    transacción o el número de identificación del cliente.</p></td>
-              </tr>
-            </table>
-            <p class="PARRAFO"><span class="SUBTITULO">Detalle:</span>  Si el usuario invoca la opción 
-              Detalle se despliega el siguiente formulario, con un wizard de cuatro pasos.<span
-              
-        ></p>
-           <p class="TITLE"><img src="../img/INF_006B10.PNG"710" height="655"></p>
-            .
-            <p class="PARRAFO" ><span class="SUBTITULO"><a name="Afectado_por"></a>Afectado 
-              por:</span>  </span> Aplica para las transacciones de consumo y permite visualizar 
-              los diferentes pagos que han disminuido o cancelado los diferentes saldos 
-              presentados por la transacción consultada.</p>
-            <p class="TITLE"><img src="../img/INF_006B6.PNG"453" ></p>
-            
-            <table>
-              <tr> 
-                <td class="titletable"> 
-                  <p class="SUBTITULO">Fecha</p></td>
-                <td><p class="PARRAFO">Contiene 
-                    la fecha en se aplicaron cada una de las diferentes transacciones de 
-                    pago.</p></td>
-              </tr>
-              <tr> 
-                <td  class="titletable" ><p class="SUBTITULO">Secuencia</p></td>
-                <td><p class="PARRAFO">Muestra 
-                    el número asignado por el sistema a cada transacción de 
-                    pago y que la identifica de manera exclusiva dentro del sistema.</p></td>
-              </tr>
-              <tr> 
-                <td class="titletable"><p class="SUBTITULO">Capital</p></td>
-                <td><p class="PARRAFO">Valor 
-                    que consolida los montos contenidos dentro del bloque Capital y cubiertos 
-                    por cada uno de los pagos realizados.</p></td>
-              </tr>
-              <tr> 
-                <td class="titletable"><p class="SUBTITULO">Interés</p></td>
-                <td><p class="PARRAFO">Corresponde 
-                    al valor que consolida los montos contenidos dentro del bloque Intereses 
-                    y cubiertos por cada uno de los pagos efectuados.</p></td>
-              </tr>
-            </table>
-            
-            <p class="PARRAFO"><span class="SUBTITULO">Detalle:</span>  Si el usuario invoca 
-              la opción Detalle se despliega el siguiente formulario:<span
-              
-        ></p>
-            <p class="TITLE"><img src="../img/INF_006B7.PNG"692" height="284"></p>
-            
-            <table>
-              <tr> 
-                <td class="titletable"> 
-                  <p class="SUBTITULO">Origen</p></td>
-                <td><p class="PARRAFO">Despliega 
-                    el nombre de la fuente y origen del movimiento a través del que 
-                    ingresa la transacción.</p></td>
-              </tr>
-              <tr> 
-                <td  class="titletable" ><p class="SUBTITULO">Fecha 
-                    de proceso</p></td>
-                <td><p class="PARRAFO">Contiene 
-                    la fecha en se aplicaron cada una de las diferentes transacciones de 
-                    pago.</p></td>
-              </tr>
-              <tr> 
-                <td class="titletable"><p class="SUBTITULO">Transacción</p></td>
-                <td><p class="PARRAFO">Muestra 
-                    el nombre de la transacción interna asociado en la opción 
-                    <span class="#4"><a href="MEH_003B.html" >Transacciones por empresa</a></span><span >.</p></td>
-              </tr>
-            </table>
-            <p class="PARRAFO"><span class="SUBTITULO">Capital: </span> Desglosa para cada concepto, 
-              el valor del capital que está siendo cubiertos por cada uno de los 
-              pagos realizados.</p>
-            <table>
-              <tr> 
-                <td class="titletable"><p class="SUBTITULO">Facturado</p></td>
-                <td><p class="PARRAFO">Muestra 
-                    la porción del diferido de la transacción que ha sido 
-                    cubierta mediante cada uno de los pagos efectuados.</p></td>
-              </tr>
-              <tr> 
-                <td  class="titletable" ><p class="SUBTITULO">Capital 
-                    no facturado</p></td>
-                <td><p class="PARRAFO">Indica 
-                    el valor que ha sido cubierto por cada uno de los pagos, correspondiente 
-                    al saldo de capital de la transacción que se encuentra pendiente 
-                    por cancelar o diferir.</p></td>
-              </tr>
-              <tr> 
-                <td class="titletable"><p class="SUBTITULO">Mora 
-                    total </p></td>
-                <td><p class="PARRAFO">Campo 
-                    que contiene el monto acumulado de los diferidos de la transacción 
-                    de faturaciones anteriores no cubiertos y que han sido cancelados por 
-                    cada uno de los pagos efectuados. Este campo agrupa los capitales mostrados 
-                    por altura dentro del bloque Capital en mora.</p></td>
-              </tr>
-            </table>
-            <p class="PARRAFO"><span class="SUBTITULO">Interés:</span>  Desglosa por cada 
-              concepto, el valor de los intereses que están siendo cubiertos por 
-              cada uno de los pagos realizados.</p>
-            <table>
-              <tr> 
-                <td class="titletable"><p class="SUBTITULO">Corriente</p></td>
-                <td><p class="PARRAFO">Campo 
-                    que muestra el valor cubierto por cada uno de los pagos y correspondiente 
-                    al monto resultante de la liquidación del beneficio esperado 
-                    por la entidad sobre el saldo del capital vigente de la transacción.</p></td>
-              </tr>
-              <tr> 
-                <td  class="titletable" ><p class="SUBTITULO">Mora</p></td>
-                <td><p class="PARRAFO">Indica 
-                    el valor cubierto por cada uno de los pagos y correspondiente al monto 
-                    resultante de la liquidación del beneficio adicional esperado 
-                    por la entidad sobre el saldo del capital que se encontraba en mora 
-                    de la transacción.</p></td>
-              </tr>
-              <tr> 
-                <td class="titletable"><p class="SUBTITULO">Extracontable</p></td>
-                <td><p class="PARRAFO">Se&ntilde;ala 
-                    el valor cubierto por cada uno de los pagos y correspondiente al monto 
-                    resultante de la liquidación del beneficio esperado por la entidad 
-                    sobre el saldo del capital de la transacción cuya altura de mora 
-                    superaba los 90 días.</p></td>
-              </tr>
-            </table>
-            <p class="PARRAFO"><span class="SUBTITULO">Capital en mora:</span>  Grupo de campos 
-              que permiten visualizar la descomposición del capital en los doce últimos 
-              periodos cubiertos o cancelados por cada uno de los pagos realizados.</p>
-            <table>
-              <tr> 
-                <td class="titletable" ><p class="SUBTITULO">Mes 
-                    1 ...12</p></td>
-                <td ""><p class="PARRAFO">Estos 
-                    campos contienen la porción del saldo por capital de la transacción 
-                    acorde a la altura de mora o facturaciones que hayan tenido lugar y 
-                    cuyos pagos mínimos no hayan ocurrido, valores que están 
-                    siendo cubiertos por cada uno de los pagos realados.</p></td>
-              </tr>
-            </table>
-            
-            <p class="PARRAFO" ><span class="SUBTITULO"><a name="Afecta_a" id="Afecta_a"></a>Afecta 
-              a:</span>  </span> Permite visualizar la incidencia de una transacción 
-              de pago sobre las transacciones de consumo realizadas por el cliente.</p>
-            <p class="TITLE"><img src="../img/INF_006B8.PNG"453" ></p>
-            
-            <table>
-              <tr> 
-                <td class="titletable"> 
-                  <p class="SUBTITULO">Fecha</p></td>
-                <td><p class="PARRAFO">Contiene 
-                    la fecha en se aplicaron cada una de las diferentes transacciones de 
-                    pago.</p></td>
-              </tr>
-              <tr> 
-                <td  class="titletable" ><p class="SUBTITULO">Secuencia</p></td>
-                <td><p class="PARRAFO">Muestra 
-                    el número asignado por el sistema a cada transacción de 
-                    pago y que la identifica de manera exclusiva dentro del sistema.</p></td>
-              </tr>
-              <tr> 
-                <td class="titletable"><p class="SUBTITULO">Capital</p></td>
-                <td><p class="PARRAFO">Valor 
-                    que consolida los montos contenidos dentro del bloque Capital y cubiertos 
-                    por cada uno de los pagos realizados.</p></td>
-              </tr>
-              <tr> 
-                <td class="titletable"><p class="SUBTITULO">Interés</p></td>
-                <td><p class="PARRAFO">Corresponde 
-                    al valor que consolida los montos contenidos dentro del bloque Intereses 
-                    y cubiertos por cada uno de los pagos efectuados.</p></td>
-              </tr>
-            </table>
-            
-            <p class="PARRAFO"><span class="SUBTITULO">Detalle:</span>  Si el usuario invoca 
-              la opción Detalle se despliega el siguiente formulario:<span
-              
-        ></p>
-            <p class="TITLE"><img src="../img/INF_006B9.PNG"692" ></p>
-            
-            <table>
-              <tr> 
-                <td class="titletable"> 
-                  <p class="SUBTITULO">Origen</p></td>
-                <td><p class="PARRAFO">Despliega 
-                    el nombre de la fuente y origen del movimiento a través del que 
-                    ingresa la transacción.</p></td>
-              </tr>
-              <tr> 
-                <td  class="titletable" ><p class="SUBTITULO">Fecha 
-                    de proceso</p></td>
-                <td><p class="PARRAFO">Contiene 
-                    la fecha en se aplicaron cada una de las diferentes transacciones de 
-                    pago.</p></td>
-              </tr>
-              <tr> 
-                <td class="titletable"><p class="SUBTITULO">Transacción</p></td>
-                <td><p class="PARRAFO">Muestra 
-                    el nombre de la transacción interna asociado en la opción 
-                    <a href="MEH_003B.html" >Transacciones por empresa</a>.</p></td>
-              </tr>
-            </table>
-            <p class="PARRAFO"><span class="SUBTITULO">Capital: </span> Desglosa para cada concepto, 
-              el valor del capital que está siendo cubiertos por cada uno de los 
-              pagos realizados.</p>
-            <table>
-              <tr> 
-                <td class="titletable"><p class="SUBTITULO">Facturado</p></td>
-                <td><p class="PARRAFO">Muestra 
-                    la porción del diferido, de cada una de las transacciones de 
-                    consumo involucradas, que ha sido cubierta mediante el pago efectuado.</p></td>
-              </tr>
-              <tr> 
-                <td  class="titletable" ><p class="SUBTITULO">Capital 
-                    no facturado</p></td>
-                <td><p class="PARRAFO">Contiene 
-                    el valor que ha sido cubierto por el pago, correspondiente al saldo 
-                    de capital de cada una de las transacciones, que se encuentra pendiente 
-                    por cancelar o diferir.</p></td>
-              </tr>
-              <tr> 
-                <td class="titletable"><p class="SUBTITULO">Mora 
-                    total </p></td>
-                <td><p class="PARRAFO">Indica 
-                    el monto acumulado, para cada una de las transacciones de consumo, de 
-                    los diferidos de facturaciones anteriores no cubiertos y que han sido 
-                    cancelados por el pago efectuado. Este campo agrupa los capitales mostrado 
-                    por altura dentro del bloque Capital en mora.</p></td>
-              </tr>
-            </table>
-            <p class="PARRAFO"><span class="SUBTITULO">Interés:</span>  Desglosa para 
-              cada concepto, el valor de los intereses correspondientes a cada una de las 
-              transacciones, que está siendo cubierto por el pago realizado.</p>
-            <table>
-              <tr> 
-                <td class="titletable"><p class="SUBTITULO">Corriente</p></td>
-                <td><p class="PARRAFO">Muestra 
-                    el valor cubierto por el pago, correspondiente al monto resultante de 
-                    la liquidación del beneficio esperado por la entidad sobre el 
-                    saldo del capital vigente de cada una de las transacciones.</p></td>
-              </tr>
-              <tr> 
-                <td  class="titletable" ><p class="SUBTITULO">Mora</p></td>
-                <td><p class="PARRAFO">Campo 
-                    que despliega el valor cubierto por el pago, correspondiente al monto 
-                    resultante de la liquidación del beneficio adicional esperado 
-                    por la entidad sobre el saldo del capital que se encontraba en mora 
-                    de cada una de las transacciones.</p></td>
-              </tr>
-              <tr> 
-                <td class="titletable"><p class="SUBTITULO">Extracontable</p></td>
-                <td><p class="PARRAFO">Contiene 
-                    el valor cubierto por el pago, correspondiente al monto resultante de 
-                    la liquidación del beneficio esperado por la entidad sobre el 
-                    saldo del capital de cada una de las transacciones cuya altura de mora 
-                    superaba los 90 días.</p></td>
-              </tr>
-            </table>
-            <p class="PARRAFO"><span class="SUBTITULO">Capital en mora:</span>  Grupo de campos 
-              que permiten visualizar la descomposición del capital en los doce últimos 
-              periodos cubiertos o cancelados por cada uno de los pagos realizados.</p>
-            <table>
-              <tr> 
-                <td class="titletable" ><p class="SUBTITULO">Mes 
-                    1 ...12</p></td>
-                <td><p class="PARRAFO">Estos 
-                    campos contienen la porción del saldo por capital de cada una 
-                    de las transacciones acorde a la altura de mora o facturaciones que 
-                    hayan tenido lugar y cuyos pagos mínimos no hayan ocurrido, valores 
-                    que están siendo cubiertos por el pago realizado.</p></td>
-              </tr>
-            </table>
-            
-            <p class="PARRAFO"><a href="INH_040B2.html">Fraudes</a><span
-              > | </span><a href="INH_006B5.html"></a><a href="INH_040B3.html">Pendientes</a>
-              <span
-              >| </span><a href="INH_040B4.html">Rechazo 
-              cargue</a<span
-              > | </span><a href="INH_040B5.html">Contracargos</a>
-            <a href="INH_040B6.html">Efectos 
-              al cobro</a><span
-              > | </span><a href="INH_006B9.html"></a><a href="INH_040B7.html">Intercambio</a><span
-              > | </span><a href="INH_040B8.html">Rechazo 
-              cargue convenios</a><span
-              > | </span>  <a href="INH_040B5.html"></a> 
-              <a href="INH_040B.html">Ver parámetros</a></p>
-            
-        </section>
-    <script src="../js/menu.js"></script>
-</body>
-<div id="footerContainer"></div>
-<script>
+      <div>
+
+        <p class="TITLE">Movimiento débito - Consulta de Movimientos</p>
+
+        <p class="PARRAFO">En este formulario aparecen registradas todas las
+          transacciones que han superado exitosamente las validaciones del
+          sistema. El formulario contiene el enlace Detalle y cuenta en la parte
+          superior con un botón <a href="INH_040B.html">Ver Parámetros</a> que permite regresa al formulario
+          inicial.</p>
+        <p class="TITLE"><img loading="lazy" rel="preload"  src="../img/INF_040B1.PNG"></p>
+
+        <table>
+          <tr>
+            <td class="titletable"><p class="SUBTITULO">Fecha
+                comprobante </p></td>
+            <td><p class="PARRAFO">Campo
+                con formato YYYY-MM-DD ilustra la fecha física del comprobante
+                de venta.</p></td>
+          </tr>
+          <tr>
+            <td class="titletable"><p class="SUBTITULO">Plazo</p></td>
+            <td><p class="PARRAFO">Contiene
+                el número de periodos de 30 días, solicitado por el cliente
+                o asignado por defecto, para el pago de la transacción de
+                consumo
+                o utilización.</p></td>
+          </tr>
+          <tr>
+            <td>
+              <p class="SUBTITULO">Moneda</p></td>
+            <td><p class="PARRAFO">Despliega
+                la abreviatura definida por la franquicia que identifica la <a
+                  href="NUH_005B.html">Moneda</a>
+                original de la transacción.</p></td>
+          </tr>
+          <tr>
+            <td class="titletable"><p class="SUBTITULO">Valor
+                total </p></td>
+            <td><p class="PARRAFO">Campo
+                que contiene el monto global de la transacción, incluido el
+                valor
+                de propina concedida.</p></td>
+          </tr>
+          <tr>
+            <td class="titletable"><p class="SUBTITULO">Número
+                tarjeta</p></td>
+            <td><p class="PARRAFO">Campo
+                que contiene bien sea el número de la tarjeta a afectar con la
+                transacción o el número de identificación del cliente.</p></td>
+          </tr>
+        </table>
+        <p class="PARRAFO"><span class="SUBTITULO">Detalle:</span> Si el usuario invoca la opción Detalle se despliega el siguiente formulario, en el que ningún campo es modificable:</p>
+          <p class="TITLE"><img loading="lazy" rel="preload"  src="../img/INF_006B10.PNG"></p>
+
+          <p class="PARRAFO"><a href="INH_006B5.html"></a><a
+              href="INH_040B3.html">Pendientes</a>
+            <span>| </span><a href="INH_040B4.html">Rechazo
+              cargue</a<span> | </span><a href="INH_040B5.html">Contracargos</a>
+          <span> | </span><a
+            href="INH_040B7.html">Intercambio</a>
+          | <a href="INH_040B.html">Ver Parámetros</a>
+
+        </p>
+
+      </section>
+      <script src="../js/menu.js"></script>
+    </body>
+    <div id="footerContainer"></div>
+    <script>
   fetch('footer.html')
     .then(response => response.text())
     .then(html => {
       document.getElementById('footerContainer').innerHTML = html;
     });
 </script>
-</html>
+  </html>

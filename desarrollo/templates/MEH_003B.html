@@ -14,9 +14,9 @@
   <body>
 
     <header>
-      <img class="logo" src="../img/logoBankbu_.PNG" alt="Logo de Mi Empresa">
+      <img loading="lazy" rel="preload"  class="logo" src="../img/logoBankbu_.webp" alt="Logo de Mi Empresa">
       <div id="menuBtn">
-        <img class="TITLE" src="../img/menu.PNG" alt="Botón de Menú ">
+        <img loading="lazy" rel="preload"  class="TITLE" src="../img/menu.PNG" alt="Botón de Menú ">
       </div>
     </header>
     <div id="menuContainer"></div>
@@ -33,24 +33,16 @@
 
         <p class="TITLE">Transacciones por empresa</p>
 
-        <p class="PARRAFO">Mediante esta función se definen las principales
-          características
-          de las transacciones internas y los conceptos bajo los cuales se
-          efectuarán
-          los registros contables y la información general para el cliente
-          acerca
-          de su operación con el producto.</p>
-        <p class="TITLE"><img src="../img/MEF_003E.PNG"></p>
+        <p class="PARRAFO">Mediante este formulario se definen las principales características de las transacciones internas o por empresa y los conceptos o lineamientos bajo los cuales se efectuarán los registros contables y la información general para el cliente acerca de su operación con el producto. El formulario contiene los enlaces: Actualizar, Eliminar, Adicionar y Detalle. Adicionalmente, cuenta con un filtro de búsqueda y la opción 
+          <a href="#restricciones" title="Restricciones de transacción" rel="noopener" target="_self">Restricciones de
+          transacción</a>.</p>
+        <p class="TITLE"><img loading="lazy" rel="preload"  src="../img/MEF_003E.PNG"></p>
 
-        <p class="PARRAFO">El formulario contiene los enlaces: Actualizar,
-          Eliminar, Adicionar y Detalle. Adicionalmente, cuenta con un filtro de
-          búsqueda y la opción <a href="#restricciones"
-            title="Restricciones de transacción" target="_self">Restricciones de
-            transacción</a>.</p>
+      
         <p class="PARRAFO"><span class="SUBTITULO"> Filtro: </span>
-            Se pueden realizar consultas a través de las siguientes opciones:
+          Se pueden realizar consultas a través de los siguientes criterios:
           </p>
-          <p class="TITLE"><img src="../img/MEF_003E1.PNG"></p>
+          <p class="TITLE"><img loading="lazy" rel="preload"  src="../img/MEF_003E1.PNG"></p>
 
           <table>
             <tr>
@@ -83,26 +75,19 @@
                     </td>
                   </tr>
                 </table>
-                <p class="PARRAFO"><span class="SUBTITULO">Adicionar: </span> Si
-                  el usuario invoca
-                  la opción Adicionar se despliega un wizard de dos pasos con
-                  los siguientes
-                  campos.</p>
+                <p class="PARRAFO"><span class="SUBTITULO">Adicionar: </span> Al activar ese enlace se despliega un wizard de dos pasos.</p>
 
-                <p class="PARRAFO"><span class="SUBTITULO">Primer paso del
-                    wizard:</p>
+                <p class="PARRAFO"><span class="SUBTITULO">Primer paso del wizard - General:</p>
 
-                  <p class="TITLE"><img src="../img/MEF_003E2.PNG"></p>
+                  <p class="TITLE"><img loading="lazy" rel="preload"  src="../img/MEF_003E2.PNG"></p>
                   <table>
                     <tr>
-                      <td class="titletable"><p class="SUBTITULO">Nombre
-                            transacción interna</p></td>
-                        <td><p class="PARRAFO">Campo
-                            alfanumérico de tres dígitos, obligatorio, destinado
-                            para
-                            identificar a través de un código y una breve
-                            descripción
-                            el registro de la operación.</p>
+                      <td class="titletable"><p class="SUBTITULO">Descripción
+
+                      </p></td>
+                        <td><p class="PARRAFO">Dupla de campos obligatorios, el primero numérico de hasta 5 dígitos, que debe contener el número con el que se va identificar a cada una de las transacciones internas o por empresa que se definan, mientras que, en el segundo campo alfanumérico de 30 caracteres, debe contener el nombre o breve descriptivo de dicha transacción interna.
+
+                        </p>
                         </td>
                       </tr>
                       <tr>
@@ -143,17 +128,7 @@
                                   derivada de otra o a través del
                                   establecimiento donde se realizó.</p></td>
                             </tr>
-                            <tr>
-                              <td class="titletable"><p
-                                  class="SUBTITULO">Reversar
-                                    antes de (días)</p></td>
-                                <td><p class="PARRAFO">Este
-                                    parámetro permite determinar, el plazo
-                                    máximo (en días)
-                                    para reversar una transacción a través de
-                                    una transacción
-                                    de ajuste.</p></td>
-                              </tr>
+                            
                               <tr>
                                 <td class="titletable"><p
                                     class="SUBTITULO">Consolidación
@@ -214,398 +189,426 @@
                                       <tr>
                                         <td class="titletable"><p
                                             class="SUBTITULO">Valor
-                                              transacción derivada</p></td>
-                                          <td><p class="PARRAFO">Cuando
-                                              una transacción original genera
-                                              una segunda o derivada, ésta
-                                              puede implicar un costo adicional
-                                              para el cliente y en este campo se
-                                              expresa dicho monto en valor
-                                              absoluto. Aplica siempre y cuando
-                                              al momento
-                                              de parametrizar la transacción
-                                              original no se le defina valor
-                                              alguno al campo Monto trx
-                                              derivada.</p></td>
+                                              transacción </p></td>
+                                          <td><p class="PARRAFO">Campo no obligatorio, numérico en el que la entidad puede definir un valor absoluto que el sistema deberá cargar al tarjetahabiente cuando se genere la transacción interna a la que se le asigna dicho monto.
+
+                                          </p></td>
                                         </tr>
-                                        <tr>
-                                          <td class="SUBTITULO">Saldo
-                                            a favor aplica otras monedas</td>
-                                          <td><p class="PARRAFO">En este campo
-                                              con
-                                              lista de valores adjunta puede
-                                              seleccionarse entre Si o No el
-                                              sistema
-                                              debe aplicar los saldos a favor
-                                              generados por pagos en monedas
-                                              diferentes
-                                              a la utilizada como patrón,
-                                              respetando la moneda en la cual se
-                                              generó.</td></p>
-                                        </tr>
-                                        <tr>
-                                          <td class="SUBTITULO">Identificación
-                                            tercero </td>
-                                          <td><p class="PARRAFO">El uso de este
-                                              campo
-                                              es muy específico, de acuerdo con
-                                              lo determinado en la opción <a
-                                                href="CTH_001B.html">Parámetros
-                                                contables</a>; posee lista de
-                                              valores de la que puede
-                                              seleccionarse el <a
-                                                href="NUH_008B.html">Tipo de
-                                                documento
-                                                de identificación</a> y el
-                                              número del mismo, correspondiente
-                                              a quien hace las veces de tercero,
-                                              permitiendo de esta manera el
-                                              flujo
-                                              de la información de una
-                                              transacción especial hacia una
-                                              interface.</td></p>
-                                        </tr>
-                                        <tr>
-                                          <td class="SUBTITULO">Moneda
-                                            transacción</td>
-                                          <td><p class="PARRAFO">Campo con lista
-                                              de
-                                              valores de la que dependiendo del
-                                              valor del campo Concepto Trx se
-                                              puede
-                                              seleccionar para aquellas
-                                              transacciones alternas (Ej: cuota
-                                              manejo internacional,
-                                              cuota afiliación) la <a
-                                                href="NUH_005B.html">Moneda</a>
-                                              en la cual
-                                              se expresa el valor de la
-                                              transacción derivada.</td></p>
-                                        </tr>
+                                                                             
                                       </table>
-                                      <p class="PARRAFO">El usuario tiene la
-                                        opción de Cancelar o Avanzar al segundo
-                                        paso del
-                                        wizard a través de los botones ubicados
-                                        en la parte inferior derecha
-                                        del formulario.</p>
+                                      <p class="PARRAFO">El usuario tiene la opción de Cancelar o Avanzar al segundo paso del wizard a través de los botones ubicados en la parte inferior derecha del formulario.</p>
                                       <p class="PARRAFO"><span
-                                          class="SUBTITULO">Segundo paso del
-                                          wizard:</p>
-                                        <p class="TITLE"><img
-                                            src="../img/MEF_003E3.PNG"721"></p>
+                                          class="SUBTITULO">Segundo paso del wizard - Otras condiciones:</p>
+                                        <p class="TITLE"><img loading="lazy" rel="preload" 
+                                            src="../img/MEF_003E3.PNG"></p>
+
+                                            <p class="PARRAFO"><span class="SUBTITULO">Interes corriente:</span> Conjunto de información que indica la manera como se liquidarán los intereses corrientes por concepto de esta transacción o utilización.</p>
+                                         
                                         <table>
                                           <tr>
                                             <td class="titletable"><p
-                                                class="SUBTITULO">%
-                                                  Sobre transacción
-                                                  original</p></td>
-                                              <td><p class="PARRAFO">Si
-                                                  una transacción original
-                                                  genera una segunda o derivada,
-                                                  ésta
-                                                  puede generar un costo
-                                                  adicional que está expresado
-                                                  por un porcentaje
-                                                  sobre el valor de dicha
-                                                  transacción. Este campo y el
-                                                  anterior
-                                                  (valor trx derivada) son
-                                                  mutuamente excluyentes, es
-                                                  decir, se debe definir
-                                                  una de las dos alternativas
-                                                  para determinar el costo de la
-                                                  transacción
-                                                  derivada.</p></td>
+                                                class="SUBTITULO">Cobrar día inicio
+                                              </p></td>
+                                              <td><p class="PARRAFO">Campo que permite definir el momento de inicio para la liquidación y cobro de los intereses corrientes.  Es decir, si éste comienza a ser liquidado a partir del mismo día del consumo o no.
+
+                                              </p></td>
                                             </tr>
                                             <tr>
                                               <td class="titletable"><p
-                                                  class="SUBTITULO">Transacción
-                                                    derivada </p></td>
-                                                <td><p class="PARRAFO">Cuando
-                                                    una transacción original
-                                                    genera una segunda, ésta
-                                                    debe
-                                                    ser definida para efectos de
-                                                    liquidación y registro,
-                                                    seleccionándola
-                                                    de la lista de valores
-                                                    poblada a través de esta
-                                                    misma forma o
-                                                    pantalla.</p></td>
+                                                  class="SUBTITULO">Tipo de tasa </p></td>
+                                                <td><p class="PARRAFO">Campo que permite definir, la modalidad de la tasa con la cual
+                                                   se liquidarán los intereses correspondientes a determinado consumo.  Si se selecciona 
+                                                   facturación, significa que en el momento de la facturación tomará el valor del <a href="NUH_043B.html">Indicador 
+                                                   económico</a> de esa fecha, mientras que si el parámetro indica fija, siempre tomará el valor 
+                                                   de dicho indicador a partir de su primera facturación.
+
+                                                </p></td>
                                               </tr>
                                               <tr>
                                                 <td class="titletable"><p
-                                                    class="SUBTITULO">Mínima
-                                                      para derivada</p></td>
-                                                  <td><p class="PARRAFO">En
-                                                      este campo se expresa el
-                                                      monto mínimo que debe
-                                                      tener una transacción
-                                                      original para poder
-                                                      generar una transacción
-                                                      derivada.</p></td>
+                                                    class="SUBTITULO">Modo tasa interés corriente
+
+                                                  </p></td>
+                                                  <td><p class="PARRAFO">Campo que posee lista de valores tipo combo de la que puede seleccionarse entre: Anticipada o Vencida, la manera en la que el sistema liquida los intereses corrientes.
+
+                                                  </p></td>
                                                 </tr>
                                                 <tr>
                                                   <td class="titletable"><p
-                                                      class="SUBTITULO">Afecta
-                                                        en línea
-                                                        transacción</p></td>
+                                                      class="SUBTITULO">Interés corriente desde
+
+                                                    </p></td>
                                                     <td><p
-                                                        class="PARRAFO">Conjunto
-                                                        de información que
-                                                        muestra la manera cómo
-                                                        será
-                                                        afectado el saldo del
-                                                        producto directamente,
-                                                        objeto de alguna de las
-                                                        transacciones allí
-                                                        definidas.</p>
-                                                      <p class="PARRAFO">Ajustes
-                                                        / Autorizaciones /
-                                                        Internet: Permite
-                                                        definir
-                                                        para las transacciones
-                                                        marcadas la condición de
-                                                        ser afectadas
-                                                        en línea, es decir, que
-                                                        actualizarán
-                                                        inmediatamente el
-                                                        disponible del
-                                                        producto.</p>
+                                                        class="PARRAFO">Campo que permite definir, el momento a partir del cual se cobrarán los intereses correspondientes a determinado consumo. 
+
+                                                      </p>
                                                     </td>
                                                   </tr>
                                                   <tr>
                                                     <td class="titletable"><p
-                                                        class="SUBTITULO">Permite
-                                                          pago dirigido</p></td>
+                                                        class="SUBTITULO">Interés corriente hasta
+
+                                                      </p></td>
                                                       <td><p
-                                                          class="PARRAFO">Este
-                                                          campo es obligatorio
-                                                          para las transacciones
-                                                          de naturaleza Crédito
-                                                          y <a
-                                                            href="NUH_059B.html">concepto
-                                                            de transacción</a>
-                                                          Pago, permite
-                                                          definir, una vez
-                                                          realizado el pago y de
-                                                          acuerdo con lo aquí
-                                                          definido
-                                                          la manera como será
-                                                          aplicado; asi al
-                                                          seleccionar al cubrir
-                                                          el
-                                                          pago mínimo, indica
-                                                          que del valor que
-                                                          exceda al valor mínimo
-                                                          exigible como pago,
-                                                          podrá ser aplicado a
-                                                          una tarjeta, línea
-                                                          de crédito o
-                                                          transacción
-                                                          específica. Sin
-                                                          embargo,
-                                                          si la elección es sin
-                                                          condiciones; significa
-                                                          que siempre aplicará
-                                                          (aunque sea el valor
-                                                          correspondiente al
-                                                          pago mínimo), a los
-                                                          conceptos
-                                                          a que haya sido
-                                                          dirigido el pago. Si
-                                                          el usuario no
-                                                          selecciona ninguna
-                                                          de las opciones
-                                                          anteriores debe opta
-                                                          por no permitido que
-                                                          impide dirigir
-                                                          el pago y por el
-                                                          contrario aplicará a
-                                                          los conceptos que
-                                                          afectó
-                                                          en el momento de
-                                                          generar el pago
-                                                          mínimo.</p></td>
+                                                          class="PARRAFO">Campo que permite definir, el momento hasta el cual se liquidarán los intereses originados por determinado consumo.
+
+                                                        </p></td>
                                                     </tr>
                                                     <tr>
                                                       <td class="titletable"><p
-                                                          class="SUBTITULO">Interés</p></td>
+                                                          class="SUBTITULO">Condonar primer mes
+
+                                                        </p></td>
                                                         <td><p
-                                                            class="PARRAFO">Campo
-                                                            destinado para
-                                                            definir, cuántos
-                                                            periodos hacen parte
-                                                            de los tiempos
-                                                            muertos para
-                                                            liquidar intereses a
-                                                            un consumo.</p></td>
+                                                            class="PARRAFO">Campo que permite definir si se cobran o no los intereses corrientes de esta transacción, si el cliente realiza el pago total de la deuda antes de la fecha de la siguiente facturación. Para lo cual el sistema tiene en cuenta la fecha de realización de la transacción. 
+
+                                                          </p></td>
                                                       </tr>
                                                       <tr>
                                                         <td
                                                           class="titletable"><p
-                                                            class="SUBTITULO">Facturación</span>
+                                                            class="SUBTITULO">Tasa de interés
+
+                                                          </span>
                                                           </p></td>
                                                         <td><p
-                                                            class="PARRAFO">Campo
-                                                            destinado para
-                                                            definir, cuántas
-                                                            facturaciones hacen
-                                                            parte de
-                                                            los tiempos muertos
-                                                            para hacer exigibles
-                                                            los instalamentos
-                                                            del
-                                                            consumo.</p></td>
+                                                            class="PARRAFO">Campo que posee lista de valores poblada en la opción de <a href="NUH_043B.html">Indicadores 
+                                                            económicos</a>  de la que debe seleccionarse el indicador económico con el 
+                                                            que el sistema liquidará los intereses corrientes. Puede corresponder a una fórmula,
+                                                             en cuyo caso la contiene, implícitamente. 
+
+                                                          </p></td>
+                                                      </tr>
+                                                      <tr>
+                                                        <td
+                                                          class="titletable"><p
+                                                            class="SUBTITULO">Días interés por período
+                                                          </span>
+                                                          </p></td>
+                                                        <td><p
+                                                            class="PARRAFO">Campo destinado para definir, la base (en días) para la liquidación de los intereses corrientes a determinado consumo, que pueden ser días efectivos o comerciales (meses de 30 días). 
+                                                          </p></td>
+                                                      </tr>
+                                                      <tr>
+                                                        <td
+                                                          class="titletable"><p
+                                                            class="SUBTITULO">Tipo de amortización
+
+                                                          </span>
+                                                          </p></td>
+                                                        <td><p
+                                                            class="PARRAFO">Campo que aplica para utilizaciones para las que se difiera su amortización, lo que no aplica para tarjeta débito.
+
+                                                          </p></td>
+                                                      </tr>
+                                                      <tr>
+                                                        <td
+                                                          class="titletable"><p
+                                                            class="SUBTITULO">Tasa Interés moratorio
+
+
+                                                          </span>
+                                                          </p></td>
+                                                        <td><p
+                                                            class="PARRAFO">Campo en el que se señala el indicador económico con el que el sistema liquidará los intereses de mora.  Puede corresponder a una fórmula, en cuyo caso la contiene, implícitamente, y los valores que toman sus componentes o valores individuales se definen en la opción de  
+                                                            <a href="NUH_043B.html">Indicadores 
+                                                            económicos</a>.  
+
+                                                          </p></td>
                                                       </tr>
                                                     </table>
-                                                    <p class="PARRAFO">El
-                                                      usuario tiene las opciones
-                                                      Cancelar, Atrás o Guardar;
-                                                      las cuales
-                                                      podr&agrave;n ser
-                                                      invocadas a través de los
-                                                      botones ubicados en la
-                                                      parte inferior derecha del
-                                                      formulario.</p>
-                                                    <p class="PARRAFO"><span
-                                                        class="SUBTITULO">Actualizar:</span>
-                                                      Si el usuario invoca la
-                                                      opción
-                                                      Actualizar se despliega el
-                                                      primer formulario del
-                                                      wizard, en el cual los
-                                                      únicos
-                                                      campos modificables son:
-                                                      Abreviatura,
-                                                        Naturaleza,
-                                                        Presentación extracto,
-                                                        Reversar antes de
-                                                        (días), Consolidación
-                                                        periodo, Concepto
-                                                        transacción, Genera iva,
-                                                        Tipo transacción,
-                                                        Valor transacción
-                                                        derivada, Saldo a favor
-                                                        aplica otras monedas,
-                                                        Identificación
-                                                        tercero, y Moneda
-                                                        transacción.</span>
-                                                      Adicionalmente, en el
-                                                      segundo formulario del
-                                                      wizard todos los campos
-                                                      son modificables menos
-                                                      'Mínima para derivada'.</p>
-                                                    <p class="TITLE"><img
-                                                        src="../img/MEF_003E4.PNG"758"
-                                                        height="308"></p>
-                                                    <p class="PARRAFO">El
-                                                      usuario tiene la opción de
-                                                      Cancelar o Avanzar al
-                                                      segundo paso del
-                                                      wizard, en el cual sólo se
-                                                      podrán modificar los
-                                                      campos..</p>
+                                                    <p class="TITLE"> Tratamiento </p>
+                                                    <p class="PARRAFO">Conjunto de información que de manera general define la administración de las operaciones que ingresan al producto.</p>
+                                                   <table>
+                                                    <tr>
+                                                      <td
+                                                        class="titletable"><p
+                                                          class="SUBTITULO">Guarda moneda original
 
+                                                        </span>
+                                                        </p></td>
+                                                      <td><p
+                                                          class="PARRAFO">Campo que permite definir si se conservará o no la moneda con la cual fue realizada la transacción.  Si la opción es no, la forma o pantalla activa un campo adicional, descrito a continuación.
+
+                                                        </p></td>
+                                                    </tr>
+                                                    <tr>
+                                                      <td
+                                                        class="titletable"><p
+                                                          class="SUBTITULO">Cobro moneda almacenada
+                                                        </span>
+                                                        </p></td>
+                                                      <td><p
+                                                          class="PARRAFO">Campo que permite marcar si la transacción será cobrada o no en su moneda original. Si la opción es no, la forma o pantalla activa un campo adicional, descrito a continuación.
+
+                                                        </p></td>
+                                                    </tr>
+                                                    <tr>
+                                                      <td
+                                                        class="titletable"><p
+                                                          class="SUBTITULO">Moneda almacenamiento
+
+                                                        </span>
+                                                        </p></td>
+                                                      <td><p
+                                                          class="PARRAFO">Permite determinar la moneda en la que se manejará el saldo de la transacción, seleccionando de la lista poblada mediante la <a href="NUH_005B.html">opción Monedas</a> del grupo de Parámetros generales.
+                                                        </p></td>
+                                                    </tr>
+                                                    <tr>
+                                                      <td
+                                                        class="titletable"><p
+                                                          class="SUBTITULO">Moneda de cobro
+
+                                                        </span>
+                                                        </p></td>
+                                                      <td><p
+                                                          class="PARRAFO">En el evento que el parámetro descrito anteriormente indique no, en este campo se parametriza la moneda
+                                                           base para el cobro, seleccionando de la lista poblada mediante
+                                                            la opción <A href="NUH_005B.html">Monedas</A> del grupo de Parámetros generales.
+
+                                                        </p></td>
+                                                    </tr>
+                                                  </table>
+                                                  <p class="TITLE"> Otras condiciones </p>
+                                                  <p class="PARRAFO"> Conjunto de información que asigna la forma como se administrará y se harán exigibles los consumos efectuados con determinado producto.</p>
+                                                  
+                                                  <table>
+                                                   <tr>
+                                                     <td
+                                                       class="titletable"><p
+                                                         class="SUBTITULO">Aplica forzada
+
+                                                       </span>
+                                                       </p></td>
+                                                     <td><p
+                                                         class="PARRAFO">Campo destinado para definir, en el evento de que el producto se encuentre 
+                                                         <a href="CAH_002B.html">bloqueado</a>, si 
+                                                         los consumos serán aplicados omitiendo dicho bloqueo o evaluación del cupo disponible, excepto cuando dicho
+                                                          bloqueo esté marcado para no permitir la aplicación forzada de la transacción.
+                                                       </p></td>
+                                                   </tr>
+                                                   <tr>
+                                                     <td
+                                                       class="titletable"><p
+                                                         class="SUBTITULO">Plazo por defecto
+                                                       </span>
+                                                       </p></td>
+                                                     <td><p
+                                                         class="PARRAFO">Campo en el que la entidad determina el plazo para esta transacción en el evento en que éste no sea especificado por el cliente.
+                                                       </p></td>
+                                                   </tr>
+                                                   <tr>
+                                                     <td
+                                                       class="titletable"><p
+                                                         class="SUBTITULO">Plazo máximo
+
+                                                       </span>
+                                                       </p></td>
+                                                     <td><p
+                                                         class="PARRAFO">Campo que permite definir, hasta cuanto plazo tiene un consumo para ser diferida y de esta manera hacerse exigible.
+
+                                                       </p></td>
+                                                   </tr>
+                                                   <tr>
+                                                     <td
+                                                       class="titletable"><p
+                                                         class="SUBTITULO">Valor mínimo
+
+                                                       </span>
+                                                       </p></td>
+                                                     <td><p
+                                                         class="PARRAFO">Campo que aplica para utilizaciones para las que se difiera su amortización, lo que no aplica para tarjeta débito.
+                                                       </p></td>
+                                                   </tr>
+                                                   <tr>
+                                                    <td
+                                                      class="titletable"><p
+                                                        class="SUBTITULO">Valor máximo
+
+                                                      </span>
+                                                      </p></td>
+                                                    <td><p
+                                                        class="PARRAFO">Campo en el que se asigna el monto máximo por el cual el cliente puede utilizar su producto, de acuerdo con su cupo en la línea de crédito. Valor que es tenido en cuenta por los procesos de validación del movimiento que ingresa.
+                                                      </p></td>
+                                                  </tr>
+                                                  <tr>
+                                                    <td
+                                                      class="titletable"><p
+                                                        class="SUBTITULO">% Sobre transacción original
+
+                                                      </span>
+                                                      </p></td>
+                                                    <td><p
+                                                        class="PARRAFO">Si una transacción original genera una segunda o derivada, ésta puede generar un costo adicional que está expresado por un porcentaje sobre el valor de dicha transacción. Este campo y el anterior (valor trx derivada) son mutuamente excluyentes, es decir, se debe definir una de las dos alternativas para determinar el costo de la transacción derivada.
+
+                                                      </p></td>
+                                                  </tr>
+                                                  <tr>
+                                                    <td
+                                                      class="titletable"><p
+                                                        class="SUBTITULO">Transacción derivada
+                                                      </span>
+                                                      </p></td>
+                                                    <td><p
+                                                        class="PARRAFO">Cuando una transacción original genera una segunda, ésta debe ser definida para efectos de liquidación y registro, seleccionándola de la lista de valores poblada a través de esta misma forma o pantalla.
+                                                      </p></td>
+                                                  </tr>
+                                                  <tr>
+                                                    <td
+                                                      class="titletable"><p
+                                                        class="SUBTITULO">Afecta en línea transacción
+
+
+
+                                                      </span>
+                                                      </p></td>
+                                                    <td><p
+                                                        class="PARRAFO">Conjunto de información que muestra la manera cómo será afectado el saldo del producto directamente, objeto de alguna de las transacciones allí definidas.
+
+                                                        Ajustes / Autorizaciones / Internet: Permite definir para las transacciones marcadas la condición de ser afectadas en línea, es decir, que actualizarán inmediatamente el disponible del producto.    </p></td>
+                                                  </tr>
+                                                  <tr>
+                                                    <td
+                                                      class="titletable"><p
+                                                        class="SUBTITULO">Restricción
+
+                                                      </span>
+                                                      </p></td>
+                                                    <td><p
+                                                        class="PARRAFO">	
+                                                        Campo que permite señalar, en cuál comercio 
+                                                        <a href="ESH_006B.html">Información de establecimientos</a>, 
+                                                        <a href="ESH_001B.html">grupo</a>, o 
+                                                        <a href="ESH_005B.html">cadena </a> de establecimientos, o
+                                                        <a href="ESH_002B.html">tipo</a> de servicio,
+                                                          no está permitido el uso del producto, o si no existe ningún tipo de restricción para la transacción.    </p></td>
+                                                  </tr>
+                                                 </table>
+
+
+                                                 <p class="TITLE"> Períodos de gracia </p>
+                                                  <p class="PARRAFO"> Espacio diseñado para establecer los tiempos muertos del saldo de una deuda.
+                                                  <table>
+                                                   <tr>
+                                                     <td
+                                                       class="titletable"><p
+                                                         class="SUBTITULO">Interés
+
+                                                       </span>
+                                                       </p></td>
+                                                     <td><p
+                                                         class="PARRAFO">Campo destinado para definir, cuántos periodos hacen parte de los tiempos muertos para liquidar intereses a un consumo.
+                                                       </p></td>
+                                                   </tr>
+                                                   <tr>
+                                                     <td
+                                                       class="titletable"><p
+                                                         class="SUBTITULO">Facturación
+
+                                                       </span>
+                                                       </p></td>
+                                                     <td><p
+                                                         class="PARRAFO">Campo destinado para definir, cuántas facturaciones hacen parte de los tiempos muertos para hacer exigibles los instalamentos del consumo.
+                                                        </p></td>
+                                                   </tr>
+                                                 </table>
+
+                                                 <p class="TITLE"> Genera transacción alterna para </p>
+                                                  <p class="PARRAFO"> Conjunto de información que permite identificar a través de una segunda transacción, las transacciones que se pueden desprender de una original.  Por ejemplo, una transacción internacional origina una segunda la cual define el valor de la cuota de manejo por dicha utilización.
+                                                  <table>
+                                                   <tr>
+                                                     <td
+                                                       class="titletable"><p
+                                                         class="SUBTITULO">Cuota de afiliación
+
+                                                       </span>
+                                                       </p></td>
+                                                     <td><p
+                                                         class="PARRAFO">De acuerdo con lo expuesto anteriormente, dependiendo de la transacción original evalúa si genera o no una alterna para cobro de cuota de afiliación.
+
+                                                        </p></td>
+                                                   </tr>
+                                                   <tr>
+                                                     <td
+                                                       class="titletable"><p
+                                                         class="SUBTITULO">Cuota de Seguro
+
+                                                       </span>
+                                                       </p></td>
+                                                     <td><p
+                                                         class="PARRAFO">Dependiendo de la transacción original evalúa si genera o no una alterna para cobro de cuota de seguro.
+                                                        </p></td>
+                                                   </tr>
+                                                   <tr>
+                                                    <td
+                                                      class="titletable"><p
+                                                        class="SUBTITULO">Cuota de Manejo
+
+
+                                                      </span>
+                                                      </p></td>
+                                                    <td><p
+                                                        class="PARRAFO">Dependiendo de la transacción original evalúa si genera o no una alterna para cobro de cuota de manejo.
+
+                                                       </p></td>
+                                                  </tr>
+                                                 </table>
+
+                                                    <p class="PARRAFO">El usuario tiene las opciones Cancelar, Atrás o Guardar; las cuales podrán ser invocadas a través de los botones ubicados en la parte inferior derecha del formulario.</p>
+                                                    <p class="PARRAFO"><span
+                                                      class="SUBTITULO">Actualizar:</span>
+                                                      Al activar ese enlace se despliega el primer paso del wizard, en el cual el único campo no modificable es Descripción. Mientras que, en el segundo paso del wizard todos los campos son modificables.
+                                                   </p>
+
+                                                      <p class="TITLE"><img loading="lazy" rel="preload" 
+                                                        src="../img/MEF_003E4.PNG"></p>
+                                                        <p class="TITLE"><img loading="lazy" rel="preload" 
+                                                          src="../img/MEF_003E7.PNG"></p>
                                                     <p class="PARRAFO"><span
                                                         class="SUBTITULO">Detalle:</span>
-                                                      Si el usuario
-                                                      invoca la opción Detalle
-                                                      se despliega el</span>
-                                                    siguiente formulario:
+                                                        Al invocar ese enlace se despliega el siguiente formulario, en el cual ninguno de los datos puede ser modificado:
                                                      </p>
-                                                    <p class="TITLE"><img
-                                                        src="../img/MEF_003E5.PNG"
-                                                        name="Detalle"735"
-                                                        height="695"
-                                                        id="Detalle"></p>
+                                                    <p class="TITLE"><img loading="lazy" rel="preload"  src="../img/MEF_003E5.PNG"></p>
 
                                                     <p class="TITLE"><a
                                                         name="restricciones"></a>Restricciones
                                                       de transacción</p>
-                                                    <p class="PARRAFO">A través
-                                                      de esta opción el sistema
-                                                      permite restringir la
-                                                      aplicación de la
-                                                      transacción según el tipo
-                                                      de Restricción
-                                                      parametrizado: Pueden ser
-                                                      por Establecimiento, Clase
-                                                      de servicio, Cadena y
-                                                      Grupo de
-                                                      establecimiento.</p>
+                                                    <p class="PARRAFO">Este enlace únicamente se activa para las <a href="MEH_003B.html">Transacciones por empresa</a> a las que previamente se les haya parametrizado, en el segundo paso del wizard, bloque Otras condiciones, un valor diferente a Ninguna en el campo Restricción, en caso contrario, el sistema retorna mensaje "No existen restricciones para este registro". Entonces, si la transacción tiene definida alguna clase de restricción, a través de esta opción, el sistema permite adicionar o eliminar los registros correspondientes al tipo de Restricción parametrizado, pudiendo ser por: Establecimiento, Clase de servicio, Cadena o Grupo de establecimiento.</p>
                                                     <p class="PARRAFO"><span
                                                         class="SUBTITULO">Establecimiento:</span>
-                                                      Esta opción muestra los
-                                                      establecimientos en los
-                                                      cuales esta transacción no
-                                                      puede ser aplicada. El
-                                                      formulario contiene los
-                                                      enlaces: Eliminar y
-                                                      Adicionar.</p>
-                                                    <p class="TITLE"><img
-                                                        src="../img/MEF_003E6.PNG"358"
-                                                        height="228"></p>
+                                                        En este formulario se muestran los establecimientos parametrizados por la entidad, en los cuales no puede realizarse la transacción desde la que se invoca. El formulario contiene los enlaces: Eliminar y Adicionar.</p>
+                                                    <p class="TITLE"><img loading="lazy" rel="preload" 
+                                                        src="../img/MEF_003E6.PNG"></p>
 
                                                     <p class="PARRAFO"><span
-                                                        class="SUBTITULO">Adicionar:
-                                                      </span> Si el usuario
-                                                      invoca
-                                                      la opción Adicionar se
-                                                      despliega el siguiente
-                                                      formulario:</p>
-                                                    <p class="TITLE"><img
-                                                        src="../img/MEF_003E7.PNG"391"></p>
+                                                        class="SUBTITULO">Adicionar (- Establecimiento):
+                                                      </span> Al activar ese enlace se despliega el siguiente formulario, en cuyo único campo, el sistema provee una lista de valores poblada en la opción <a href="ESH_006B.html">Información establecimientos</a>, y que permite buscar el registro o digitar el código correspondiente:</p>
+                                                    <p class="TITLE"><img loading="lazy" rel="preload" 
+                                                        src="../img/MEF_003E7.PNG"></p>
 
                                                     <p class="PARRAFO"><span
                                                         class="SUBTITULO">Clase
-                                                        de servicio:</span> Esta
-                                                      opción muestra las clases
-                                                      de servicios que
-                                                      restringen a los
-                                                      establecimientos que
-                                                      pertenecen a ellas. El
-                                                      formulario contiene los
-                                                      enlaces: Eliminar y
-                                                      Adicionar.</p>
-                                                    <p class="TITLE"><img
-                                                        src="../img/MEF_003E6a.PNG"347"
-                                                        height="264"></p>
+                                                        de servicio:</span> En este formulario se muestran las clases de servicio parametrizadas por la entidad, impidiendo de esta manera, realizarse la transacción desde la que se invoca, en los establecimientos que tengan asociada esas clases de servicio. El formulario contiene los enlaces: Eliminar y Adicionar.</p>
+                                                    <p class="TITLE"><img loading="lazy" rel="preload" 
+                                                        src="../img/MEF_003E6a.PNG"></p>
 
                                                     <p class="PARRAFO"><span
-                                                        class="SUBTITULO">Adicionar:
-                                                      </span> Si el usuario
-                                                      invoca
-                                                      la opción Adicionar se
-                                                      despliega el siguiente
-                                                      formulario:</p>
-                                                    <p class="TITLE"><img
-                                                        src="../img/MEF_003E7a.PNG"378"></p>
+                                                        class="SUBTITULO">Adicionar (- Clase de servicio):
+                                                      </span> Al activar ese enlace se despliega el siguiente formulario, en cuyo único campo, el sistema provee una lista de valores poblada en la opción <a href="ESH_002B.html">Tipos de servicio</a>, y que permite buscar el registro o digitar el código correspondiente:</p>
+                                                    <p class="TITLE"><img loading="lazy" rel="preload" 
+                                                        src="../img/MEF_003E7a.PNG"></p>
 
                                                     <p class="PARRAFO">
 
                                                       </span><span
                                                         class="SUBTITULO">Cadena:</span>
-                                                      Esta opción muestra las
-                                                      cadenas que restringen a
-                                                      los establecimientos que
-                                                      pertenecen a ellas. El
-                                                      formulario contiene los
-                                                      enlaces: Eliminar y
-                                                      Adicionar.</p>
-                                                    <p class="TITLE"><img
-                                                        src="../img/MEF_003E6b.PNG"282"></p>
-
+                                                        En este formulario se muestran las cadenas de comercios parametrizadas por la entidad, impidiendo de esta manera, realizarse la transacción -desde la que se invoca-, en los establecimientos adscritos a dichas cadenas. El formulario contiene los enlaces: Eliminar y Adicionar.</p>
+                                                    
                                                     <p class="PARRAFO"><span
-                                                        class="SUBTITULO">Adicionar:
-                                                      </span> Si el usuario
-                                                      invoca
-                                                      la opción Adicionar se
-                                                      despliega el siguiente
-                                                      formulario:</p>
-                                                    <p class="TITLE"><img
-                                                        src="../img/MEF_003E7b.PNG"322"></p>
+                                                        class="SUBTITULO">Adicionar (- Cadena):
+                                                      </span> Al activar ese enlace se despliega el siguiente formulario, en cuyo único campo, el sistema provee una lista de valores poblada en la opción <a href="ESH_005B.html">Cadenas</a>, y que permite buscar el registro o digitar el código correspondiente:</p>
+                                                    <p class="TITLE"><img loading="lazy" rel="preload" 
+                                                        src="../img/MEF_003E7b.PNG"></p>
 
                                                     <p class="PARRAFO"><span
                                                         class="SUBTITULO">Grupos
@@ -619,7 +622,7 @@
                                                       formulario contiene los
                                                       enlaces: Eliminar y
                                                       Adicionar.</p>
-                                                    <p class="TITLE"><img
+                                                    <p class="TITLE"><img loading="lazy" rel="preload" 
                                                         src="../img/MEF_003E6c.PNG"315"
                                                         height="263"></p>
 
@@ -630,7 +633,7 @@
                                                       la opción Adicionar se
                                                       despliega el siguiente
                                                       formulario:</p>
-                                                    <p class="TITLE"><img
+                                                    <p class="TITLE"><img loading="lazy" rel="preload" 
                                                         src="../img/MEF_003E7c.PNG"383"></p>
 
                                                   </section>

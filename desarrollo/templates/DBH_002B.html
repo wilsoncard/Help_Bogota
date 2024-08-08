@@ -13,9 +13,9 @@
   <body>
 
     <header>
-      <img class="logo" src="../img/logoBankbu_.PNG" alt="Logo de Mi Empresa">
+      <img loading="lazy" rel="preload"  class="logo" src="../img/logoBankbu_.webp" alt="Logo de Mi Empresa">
       <div id="menuBtn">
-        <img class="TITLE" src="../img/menu.PNG" alt="Botón de Menú ">
+        <img loading="lazy" rel="preload"  class="TITLE" src="../img/menu.PNG" alt="Botón de Menú ">
       </div>
     </header>
     <div id="menuContainer"></div>
@@ -32,17 +32,13 @@
 
         <p class="TITLE">Solicitudes masivas</p>
 
-        <p class="PARRAFO">Mediante esta opción la entidad
-          tiene la posibilidad de registrar en el sistema las solicitudes de
-          tarjetas
-          débito no personalizadas con destino a las diferentes sucursales con
-          el fin de poder atender oportunamente las necesidades de sus
-          clientes.</p>
-        <p class="PARRAFO">Al ingresar a la opción se despliega
-          un wizard de dos pasos y la primera página contiene un filtro que
-          permite
-          consultar las solicitudes por sucursal y/o producto.</p>
-        <p class="TITLE"><img src="../img/DBF_002E.PNG"></p>
+        <p class="PARRAFO">Mediante esta opción la entidad tiene la posibilidad
+          de registrar en el sistema, las solicitudes de tarjetas débito no
+          personalizadas con destino a las diferentes sucursales, con el fin de
+          poder atender oportunamente las necesidades de sus clientes. El
+          formulario cuenta con un filtro y los enlaces: Actualizar, Eliminar y
+          Adicionar.</p>
+        <p class="TITLE"><img loading="lazy" rel="preload"  src="../img/DBF_002E.PNG"></p>
 
         <p class="TITLE">Descripción de campos</p>
         <div>
@@ -50,208 +46,275 @@
             <tr>
               <td class="titletable"><p
                   class="SUBTITULO">Sucursal</p></td>
-                <td><p class="PARRAFO">Campo
-                    con lista de valores que permite seleccionar la <a
-                      href="NUH_020B.html">sucursal</a>
-                    de la entidad a la que pertenecen las solicitudes masivas
-                    que se desea
-                    consultar.</p></td>
-              </tr>
-              <tr>
-                <td class="titletable">
-                  <p class="SUBTITULO">Producto</p></td>
-                  <td><p class="PARRAFO">Este
-                      campo contiene una lista de valores que permite
-                      seleccionar el <a href="DBH_018B.html">producto
-                        débito</a> al que corresponden las solicitudes masivas
-                      a consultar.</p></td>
-                </tr>
-              </table>
-            </div>
-            <p class="PARRAFO">Una vez seleccionadas la sucursal y/o el producto
-              mediante el botón buscar se muestran en el formulario los
-              registros
-              que coincidan con los criterios ingresados y por defecto al entrar
-              a la opción
-              se muestran todas las solicitudes existentes actualmente.</p>
-            <p class="PARRAFO">El formulario posee el botón especial
-              <a href="DBH_002B.html#BL_APLICAR">Aplicar todas</a>
-              que permite procesar todas las solicitudes y enviar a la etapa de
-              <a href="PLH_008B.html">plásticos
-                en realce</a> los números de tarjetas generados para que se
-              pueda
-              hacer el realce de las tarjetas. </p>
-            <p class="TITLE"><img src="../img/DBF_002E1.PNG"682"
-                height="411"></p>
+              <td><p class="PARRAFO">Campo
+                  con lista de valores que permite seleccionar la <a
+                    href="NUH_020B.html">sucursal</a>
+                  de la entidad a la que pertenecen las solicitudes masivas
+                  que se desea
+                  consultar.</p></td>
+            </tr>
+          </table>
+        </div>
+        <p class="PARRAFO">Una vez seleccionada la sucursal, mediante el botón
+          Buscar, en el bloque inferior del formulario, se muestran los
+          registros que coincidan con la sucursal utilizada como criterio en el
+          filtro. </p>
+        <p class="TITLE"><img loading="lazy" rel="preload"  src="../img/DBF_002E1.PNG"></p>
 
-            <p class="TITLE">Descripción de campos</p>
-            <div>
-              <table>
-                <tr>
-                  <td class="titletable"><p
-                      class="SUBTITULO">Sucursal</p></td>
-                    <td><p class="PARRAFO">Campo
-                        que muestra las <a href="NUH_020B.html">sucursales</a>
-                        de la entidad a las que pertenecen las diferentes
-                        solicitudes masivas.</p></td>
-                  </tr>
-                  <tr>
-                    <td class="titletable">
-                      <p class="SUBTITULO">Producto</p></td>
-                      <td><p class="PARRAFO">Este
-                          campo despliega el <a href="DBH_018B.html">producto
-                            débito</a> que se está solicitando para la
-                          sucursal.</p></td>
-                    </tr>
-                    <tr>
-                      <td class="titletable"><p class="SUBTITULO">Fecha
-                            solicitud </p></td>
-                        <td><p class="PARRAFO">Campo
-                            en formato YYYY-MM-DD la fecha en la cual se
-                            registró en el
-                            sistema la solicitud masiva de tarjetas
-                            débito.</p></td>
-                      </tr>
-                      <tr>
-                        <td class="titletable"><p class="SUBTITULO">Solo
-                              consulta </p></td>
-                          <td><p class="PARRAFO">Este
-                              campo muestra como valor 'Normal' para indicar que
-                              la tarjeta es transaccional
-                              y emite plástico.</p></td>
-                        </tr>
-                        <tr>
-                          <td class="titletable"><p
-                              class="SUBTITULO">Cantidad
-                                solicitada </p></td>
-                            <td><p class="PARRAFO">Campo
-                                que contiene la cantidad de tarjetas que por
-                                producto se solicitan
-                                para la sucursal.</p></td>
-                          </tr>
-                          <tr>
-                            <td class="titletable"><p
-                                class="SUBTITULO">Procesada</p></td>
-                              <td><p class="PARRAFO">En
-                                  este campo se indica Si o No la solicitud ya
-                                  fue
-                                  procesada, es decir, si ya se generaron los
-                                  números de tarjetas
-                                  y enviaron a <a href="PLH_008B.html">plásticos
-                                    en realce</a>.</p></td>
-                            </tr>
-                            <tr>
-                              <td class="titletable"><p
-                                  class="SUBTITULO">Selección</p></td>
-                                <td><p class="PARRAFO">Campo
-                                    tipo check que permite marcar las
-                                    solicitudes que se desea procesar
-                                    en caso que no se desee procesar todas las
-                                    solicitudes existentes.</p></td>
-                              </tr>
-                            </table>
-                          </div>
+        <p class="TITLE">Descripción de campos</p>
+        <div>
+          <table>
+            <tr>
+              <td class="titletable"><p
+                  class="SUBTITULO">Código</p></td>
+              <td><p class="PARRAFO">Campo
+                  que muestra las <a href="NUH_020B.html">sucursales</a>
+                  de la entidad a las que pertenecen las diferentes
+                  solicitudes masivas.</p></td>
+            </tr>
+            <tr>
+              <td class="titletable"><p
+                  class="SUBTITULO">Descripción</p></td>
+              <td><p class="PARRAFO">Campo
+                  que muestra las <a href="NUH_020B.html">sucursales</a>
+                  de la entidad a las que pertenecen las diferentes
+                  solicitudes masivas.</p></td>
+            </tr>
+            <tr>
+              <td class="titletable">
+                <p class="SUBTITULO">Bin-grupo-
+                  producto</p></td>
+              <td><p class="PARRAFO">Este
+                  campo despliega el <a href="MEH_002B.html">producto
+                    débito</a> que se está solicitando para la
+                  sucursal.</p></td>
+            </tr>
+            <tr>
+              <td class="titletable">
+                <p class="SUBTITULO">Estado</p></td>
+              <td><p class="PARRAFO">Campo mediante en el que se indica si la
+                  solicitud está Pendiente o si ya fue Procesada, en este último
+                  caso, indica que ya se generaron los números de tarjetas y
+                  enviaron a <a href="PLH_008B.html">Plásticos a realzar</a> o
+                  <a href="PLH_007B.html">Realce chip</a>, dependiendo de
+                  si a nivel de <a href="MEH_002B.html">producto débito</a>, se
+                  indica si el plástico del
+                  mismo lleva o no chip.</p></td>
+            </tr>
+            <tr>
+              <td class="titletable"><p
+                  class="SUBTITULO">Cantidad
+                </p></td>
+              <td><p class="PARRAFO">Campo
+                  que contiene la cantidad de tarjetas que por
+                  producto se solicitan
+                  para la sucursal.</p></td>
+            </tr>
+            <tr>
+              <td class="titletable"><p class="SUBTITULO">Fecha
+                  solicitud </p></td>
+              <td><p class="PARRAFO">Campo
+                  en formato YYYY-MM-DD la fecha en la cual se
+                  registró en el
+                  sistema la solicitud masiva de tarjetas
+                  débito.</p></td>
+            </tr>
+            <tr>
+              <td class="titletable"><p class="SUBTITULO">Tipo de
+                  solicitud </p></td>
+              <td><p class="PARRAFO">Campo que muestra si las tarjetas masivas
+                  solicitadas son de solo Consulta o Normal, esto es que permite
+                  realizar transacciones o utilizaciones.</p></td>
+            </tr>
+            <tr>
+              <td class="titletable"><p class="SUBTITULO">Tarjeta chip </p></td>
+              <td><p class="PARRAFO">Campo en el que mediante un Si, ilustra que
+                  los plásticos solicitados llevan chip. En caso contrario queda
+                  en nulo.</p></td>
+            </tr>
 
-                          <p class="PARRAFO">El formulario cuenta con las
-                            opciones Eliminar
-                            y Adicionar.</p>
-                          <p class="PARRAFO"><span
-                              class="SUBTITULO">Adicionar:</span>
-                            Al activar ese enlace, se
-                            despliega un
-                            nuevo formulario con los siguientes campos.</p>
-                          <p class="TITLE"><img src="../img/DBF_002E2.PNG"468"
-                              height="113"></p>
+            <tr>
+              <td class="titletable"><p
+                  class="SUBTITULO">Sistema
+                  transporte</p></td>
+              <td><p class="PARRAFO">Campo que si tiene dato, informa a cual de
+                  los <a href="BBH_027B.html">Sistemas masivos de transporte
+                    público</a>
+                  están vinculados los plásticos de la solicitud.</p></td>
+            </tr>
+            <tr>
+              <td class="titletable"><p
+                  class="SUBTITULO">Contactless</p></td>
+              <td><p class="PARRAFO">Campo que si tiene dato, muestra el tipo de
+                  sistema a utilizar, esto es Tarjeta o Celular.</p></td>
+            </tr>
+            <tr>
+              <td class="titletable"><p
+                  class="SUBTITULO">Punto entrega</p></td>
+              <td><p class="PARRAFO">Campo que puede contener el código del <a
+                    href="PLH_006B.html">Punto de entrega</a> de los plásticos
+                  de la solicitud.</p></td>
+            </tr>
+            <tr>
+              <td class="titletable"><p
+                  class="SUBTITULO">Modelo
+                  teléfono</p></td>
+              <td><p class="PARRAFO">Campo que debe tener valor si en campo
+                  Contactless indica Celular.</p></td>
+            </tr>
+          </table>
+        </div>
 
-                          <p class="TITLE">Descripción de campos</p>
-                          <div>
-                            <table>
-                              <tr>
-                                <td class="titletable"><p
-                                    class="SUBTITULO">Tipo
-                                      solicitud </p></td>
-                                  <td><p class="PARRAFO">Campo
-                                      obligatorio con lista de valores que
-                                      permite seleccionar el <a
-                                        href="DBH_018B.html">producto
-                                        débito</a> del cual se está solicitando
-                                      generación
-                                      masiva de tarjetas. La lista muestra solo
-                                      aquellos productos que tienen
-                                      parametrizado que si emiten
-                                      plástico.</p></td>
-                                </tr>
-                                <tr>
-                                  <td class="titletable">
-                                    <p class="SUBTITULO">Sucursal</p></td>
-                                    <td><p class="PARRAFO">Este
-                                        campo obligatorio contiene lista de
-                                        valores de la que se selecciona
-                                        la <a href="NUH_020B.html">sucursal</a>
-                                        que solicita o para la cual van
-                                        dirigidos los plásticos a emitir
-                                        masivamente.</p></td>
-                                  </tr>
-                                  <tr>
-                                    <td>
-                                      <p class="SUBTITULO">Cantidad
-                                          solicitada </p></td>
-                                      <td><p class="PARRAFO">Campo
-                                          numérico obligatorio en el que se debe
-                                          registrar la cantidad
-                                          de tarjetas masivas
-                                          solicitadas.</p></td>
-                                    </tr>
-                                  </table>
-                                </div>
+        <p class="PARRAFO"><span
+            class="SUBTITULO">Adicionar:</span>
+          Al activar ese enlace, se despliega un nuevo formulario con los
+          siguientes campos.</p>
+        <p class="TITLE"><img loading="lazy" rel="preload"  src="../img/DBF_002E2.PNG"></p>
 
-                                <p class="PARRAFO">Como se mencionó
-                                  anteriormente, si
-                                  el actor no desea procesar todas las
-                                  solicitudes, puede marcar aquellas que
-                                  desea gestionar y mediante el botón contenido
-                                  en el wizard se desplaza
-                                  a la segunda página donde se muestran las
-                                  solicitudes seleccionadas.
-                                </p>
+        <p class="TITLE">Descripción de campos</p>
+        <div>
+          <table>
 
-                                <p class="TITLE"><img
-                                    src="../img/DBF_002E3.PNG"690"></p>
-                                <p class="PARRAFO">La segunda página contiene
-                                  una casilla
-                                  que permite seleccionar aquellas solicitudes
-                                  que ya no se desea procesar.</p>
-                                <p class="TITLE">Botones especiales</p>
-                                <p class="PARRAFO"><a
-                                    name="BL_APLICAR"></a><span
-                                    class="SUBTITULO">Aplicar
-                                      todas :</span></span>
-                                    mediante este botón se permite el
-                                    procesamiento de todas las solicitudes
-                                    masivas existentes y cuyo estado sea sin
-                                    procesar, de acuerdo con lo indicado
-                                    para la misma en el campo Procesada. Una vez
-                                    efectuado el proceso, en la opción
-                                    de <a href="PLH_008B.html">plásticos en
-                                      realce</a>
-                                    se deben mostrar los números de tarjeta
-                                    generados para permitirle al
-                                    usuario continuar con el proceso de realce
-                                    de los plásticos y su posterior
-                                    envío a cada una de las sucursales.</p>
-                                  <p class="TITLE"><img
-                                      src="../img/APLICAR_SOL_MASIVAS.PNG"39"></p>
+            <tr>
+              <td class="titletable">
+                <p class="SUBTITULO">Sucursal</p></td>
+              <td><p class="PARRAFO">Este
+                  campo obligatorio contiene lista de
+                  valores de la que se selecciona
+                  la <a href="NUH_020B.html">sucursal</a>
+                  que solicita o para la cual van
+                  dirigidos los plásticos a emitir
+                  masivamente.</p></td>
+            </tr>
+            <tr>
+              <td>
+                <p class="SUBTITULO">Bin </p></td>
+              <td><p class="PARRAFO">Campo obligatorio en el que se puede
+                  ingresar o seleccionar de la lista de valores poblada en la
+                  opción <a href="MEH_002B.html">producto débito</a> el Bin para
+                  el que se van a solicitar y
+                  gestionar tarjetas no personalizadas.</p></td>
+            </tr>
+            <tr>
+              <td>
+                <p class="SUBTITULO">Grupo </p></td>
+              <td><p class="PARRAFO">Campo obligatorio en el que se puede
+                  ingresar o seleccionar de la lista de valores poblada en la
+                  opción <a href="MEH_002B.html">producto débito</a> el Grupo
+                  para el que se van a solicitar
+                  y gestionar tarjetas no personalizadas.</p></td>
+            </tr>
+            <tr>
+              <td>
+                <p class="SUBTITULO">Producto </p></td>
+              <td><p class="PARRAFO">Campo obligatorio en el que se puede
+                  ingresar o seleccionar de la lista de valores poblada en la
+                  opción <a href="MEH_002B.html">producto débito</a> el Producto
+                  para el que se van a
+                  solicitar y gestionar tarjetas no personalizadas.</p></td>
+            </tr>
+            <tr>
+              <td>
+                <p class="SUBTITULO">Fecha solicitud </p></td>
+              <td><p class="PARRAFO">Campo obligatorio que, mediante
+                  funcionalidad de un calendario, permite indicar la fecha en la
+                  que se registra en el sistema, en formato AAAA-MM-DD, la
+                  solicitud masiva de tarjetas débito.</p></td>
+            </tr>
+            <tr>
+              <td>
+                <p class="SUBTITULO">Tipo de
+                  solicitud </p></td>
+              <td><p class="PARRAFO">Campo obligatorio que posee lista de
+                  valores tipo combo de la que se debe seleccionar entre: Normal
+                  o Consulta, lo primero indica que permite realizar
+                  transacciones o utilizaciones, la segunda solo
+                  consulta.</p></td>
+            </tr>
+            <tr>
+              <td>
+                <p class="SUBTITULO">Estado </p></td>
+              <td><p class="PARRAFO">Campo obligatorio que posee lista de
+                  valores tipo combo de la que se debe seleccionar entre:
+                  Procesada o Pendiente.</p></td>
+            </tr>
+            <tr>
+              <td>
+                <p class="SUBTITULO">Cantidad </p></td>
+              <td><p class="PARRAFO">Campo no obligatorio que contiene la
+                  cantidad de tarjetas que por producto se solicitan para la
+                  sucursal.</p></td>
+            </tr>
+            <tr>
+              <td>
+                <p class="SUBTITULO">Tarjeta chip </p></td>
+              <td><p class="PARRAFO">Campo obligatorio en el que se puede
+                  ingresar o seleccionar de la lista de valores poblada en la
+                  opción <a href="MEH_002B.html">producto débito</a> el Producto
+                  para el que se van a
+                  solicitar y gestionar tarjetas no personalizadas.</p></td>
+            </tr>
 
-                                  <div>
-                                  </section>
-                                  <script src="../js/menu.js"></script>
-                                </body>
-                                <div id="footerContainer"></div>
-                                <script>
+            <tr>
+              <td>
+                <p class="SUBTITULO">Sistema
+
+                  transporteTarjeta chip </p></td>
+              <td><p class="PARRAFO">Campo no obligatorio en el que se puede
+                  ingresar o seleccionar de la lista de valores poblada en la
+                  opción <a href="BBH_027B.html">Sistemas masivos de transporte
+                    público</a>
+                  aquel al que puedan estar vinculados los plásticos de la
+                  solicitud.</p></td>
+            </tr>
+            <tr>
+              <td>
+                <p class="SUBTITULO">Contactless</p></td>
+              <td><p class="PARRAFO">Campo no obligatorio que posee lista de
+                  valores tipo combo de la que puede seleccionarse entre:
+                  Tarjeta, Celular micro SD o Celular simcard.</p></td>
+            </tr>
+            <tr>
+              <td>
+                <p class="SUBTITULO">Punto entrega </p></td>
+              <td><p class="PARRAFO">Campo no obligatorio en el que se puede
+                  ingresar o seleccionar de la lista de valores poblada en la
+                  opción <a href="PLH_006B.html">Punto de entrega</a> asociado a
+                  los plásticos de la solicitud.</p></td>
+            </tr>
+            <tr>
+              <td>
+                <p class="SUBTITULO">Modelo
+
+                  teléfono </p></td>
+              <td><p class="PARRAFO">Campo que posee lista de valores de la que
+                  debe seleccionarse aquel que corresponda y esté relacionado
+                  con el Contactless.</p></td>
+            </tr>
+          </table>
+        </div>
+        <p class="PARRAFO">Las solicitudes aquí registradas se gestionan a
+          través de la opción <a href="DBH_005B.html">Ejecución de procesos</a> 
+          del
+          submódulo Débito.</p>
+        <p class="PARRAFO"><span class="SUBTITULO">Actualizar: </span> Al
+          activar ese enlace, se despliega un nuevo formulario en el que ninguno
+          de sus campos es modificable.
+        </p>
+
+        <p class="TITLE"><img loading="lazy" rel="preload" 
+            src="../img/DBF_002E3.PNG"></p>
+
+        <div>
+        </section>
+        <script src="../js/menu.js"></script>
+      </body>
+      <div id="footerContainer"></div>
+      <script>
   fetch('footer.html')
     .then(response => response.text())
     .then(html => {
       document.getElementById('footerContainer').innerHTML = html;
     });
 </script>
-                              </html>
+    </html>

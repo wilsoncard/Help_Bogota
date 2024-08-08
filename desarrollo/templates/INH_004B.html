@@ -1,26 +1,26 @@
 <!DOCTYPE html>
 <html lang="es">
 
-<head>
+  <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>OpencardWeb®</title>
 
     <link rel="stylesheet" href="../css/pages.css">
     <link rel="stylesheet" href="../css/style.css">
- <link rel="icon" href="../img/ACQUIRER-logo.JPG" type="image/x-icon">
-</head>
+    <link rel="icon" href="../img/ACQUIRER-logo.JPG" type="image/x-icon">
+  </head>
 
-<body>
+  <body>
 
     <header>
-        <img class="logo" src="../img/logoBankbu_.PNG" alt="Logo de Mi Empresa">
-        <div id="menuBtn">
-            <img src="../img/menu.PNG" alt="Botón de Menú ">
-        </div>
+      <img loading="lazy" rel="preload"  class="logo" src="../img/logoBankbu_.webp" alt="Logo de Mi Empresa">
+      <div id="menuBtn">
+        <img loading="lazy" rel="preload"  src="../img/menu.PNG" alt="Botón de Menú ">
+      </div>
     </header>
-      <div id="menuContainer"></div>
-  <script>
+    <div id="menuContainer"></div>
+    <script>
     fetch('menu.html')
       .then(response => response.text())
       .then(html => {
@@ -29,125 +29,428 @@
   </script>
 
     <section>
-        <div> 
- 
-            <p  class="TITLE">Captura de Movimientos oficina</p>
-                    
-            <p class="PARRAFO">A través de esta opción el sistema permite 
-              el ingreso manual del movimiento de transacciones de Pago, Avances, Pago de 
-              impuestos y Compras o consumos realizados por los clientes en los establecimientos. 
-              Adicionalmente, cuenta con la opción Detalle para la consulta de los 
-              movimientos cuando por efecto de errores en la captura o malas liquidaciones 
-              del movimiento, éste queda descuadrado, requiriendo de una autorización 
-              para ser procesado en la operación diaria. El procedimiento para capturar 
-              el movimiento es el siguiente: una vez se despliega el formulario se debe 
-              ingresar el código de la oficina o sucursal de la que se va a capturar 
-              movimiento, sumado a la transacción y la moneda, se escoge la opción adicionar y se ingresan los datos </p>
-            <p class="PARRAFO">El formulario contiene los enlaces: Eliminar, Adicionar y 
-              Detalle. Adicionalmente, cuenta con un filtro inicial de búsqueda y 
-              la opción <a href="#Comprobantes" >Comprobantes</a><span
-              style='font-size:10.0pt;font-family:Arial'></span>.</p>
-            <p class="PARRAFO"><span class="SUBTITULO">Adicionar:</span>  De acuerdo a lo 
-              que se haya seleccionado en la opción Transacción, 
-              el sistema muestra el ingreso manual del movimiento de transacciones de <a href="INH_004B1.html" >Compras</a>, 
-              <a href="INH_004B2.html" >Avances</a>, <a href="INH_004B3.html" >Impuestos</a>, 
-              y <a href="INH_004B4.html" >Pagos</a>.</p>
-            <p class="TITLE"><img src="../img/INF_004B.PNG"></p>
-            
-            <table>
-              <tr> 
-                <td  class="titletable" ><p class="SUBTITULO">Fecha 
-                    proceso </p></td>
-                <td><p class="PARRAFO">Campo 
-                    de salida o no ingresable, que contiene la fecha del sistema para la 
-                    cual se ingresa movimiento.</p></td>
-              </tr>
-              <tr> 
-                <td class="titletable"><p class="SUBTITULO">Oficina</p></td>
-                <td><p class="PARRAFO">Campo 
-                    obligatorio en el que se digita el código de la oficina para la cual se va 
-                    a capturar o supervisar (dependiendo de la opción dentro de menú) 
-                    el movimiento. Estos códigos corresponden a los definidos en 
-                    la tabla <a href="NUH_020B.html" >Estructura orgánica</a> del 
-                    Núcleo. Una vez ingresado el código, se ejecuta la consulta, 
-                    para proseguir con la captura.</p></td>
-              </tr>
-              <tr> 
-                <td  class="titletable" ><p class="SUBTITULO">Transacción<span > 
-                    </p></td>
-                <td><p class="PARRAFO">Campo obligatorio
-                    que posee lista de valores poblada en la opción <a href="NUH_027B.html" >Origen 
-                    de transacciones</a> del Núcleo de la cual se debe seleccionar 
-                    el código de la transacción correspondiente o digitar 
-                    el código válido de la misma, el sistema completará 
-                    con ceros a la izquierda. </p></td>
-              </tr>
-              <tr> 
-                <td class="titletable"><p class="SUBTITULO">Moneda<span > 
-                    </p></td>
-                <td><p class="PARRAFO">En 
-                    este campoobligatorio con lista de valores se debe seleccionar la <a href="NUH_005B.html" >Moneda</a> 
-                    que aplica para el movimiento a ingresar; el sistema despliega por defecto 
-                    la moneda definida en la opción <a href="NUH_006B.html" >Datos 
-                    de licenciamiento</a>.</p></td>
-              </tr>
-              <tr> 
-                <td  class="titletable" ><p class="SUBTITULO">Boleta 
-                    de ruta</p></td>
-                <td><p class="PARRAFO">Campo 
-                    numérico de 3 dígitos, obligatorio, corresponde a un segundo 
-                    nivel de clasificación o agrupación del movimiento a capturar 
-                    y pertenece al número consecutivo de los comprobantes de control 
-                    permitidos por cada oficina en la captura del movimiento, producto de 
-                    la operación diaria. Los rangos de estos consecutivos son determinados 
-                    previamente en la opción <a href="INH_037B.html" >Boletas de Ruta.</a></p></td>
-              </tr>
-            </table>
-            
-            <p class="PARRAFO"><span class="SUBTITULO">Detalle:</span>  Si el usuario invoca 
-              la opción Detalle se despliega el siguiente formulario. En él 
-              se puede consultar también la opción de localización, 
-              a través del globo ubicado en la parte superior derecha.<span
-              ></p>
-            <p class="PARRAFO"><span >
-            <p class="TITLE"><img src="../img/INF_004B10.PNG" ></p>
-            </span> 
-            
-            <p class="TITLE"><img src="../img/INF_004B11.PNG"  ></p>
-            <p class="PARRAFO"> 
-            <p class="PARRAFO"><a name="Comprobantes"></a><span class="SUBTITULO">Comprobantes:</span>  
-              Conjunto de datos que detallan cada uno de los vouchers o comprobantes 
-              asociados a cada consignación. Cuenta con las opciones de Actualizar 
-              y Detalle.</p>
-            <p class="TITLE"><img src="../img/INF_004B12.PNG" ></p>
-            <p class="PARRAFO"> 
-            <p class="PARRAFO"><span class="SUBTITULO" >Actualizar:</span><span > 
-               Al activar ese enlace  se despliega un formulario 
-              en el cual los únicos campos modificables son: Número tarjeta, 
-              Número comprobante, Fecha comprobante, Número autorización, 
-              Plazo, y Causal.</p>
-            <p class="TITLE"><img src="../img/INF_004B13.PNG"></p>
-            
-            <span ><p class="PARRAFO">Igualmente se pueden invocar los campos 
-            de la opción de localización, aunque ninguno de ellos es modificable.</p></p> 
-            <p class="TITLE"><img src="../img/INF_004B14.PNG"></p>
-            <p class="PARRAFO">
-          
-              
-            <p class="PARRAFO"><a href="INH_004B1.html">Compras</a> | </span><a href="INH_004B2.html">Avances</a><span style='font-size:10.0pt;font-family:Arial'> 
-              | </span><a href="INH_004B3.html">Impuestos</a> | </span><a href="INH_004B4.html">Pagos</a><span style='font-size:10.0pt;font-family:Arial'></p>
-      
-            </div>
-            
-        </section>
-    <script src="../js/menu.js"></script>
-</body>
-<div id="footerContainer"></div>
-<script>
+      <div>
+
+        <p class="TITLE">Captura de Movimientos oficina</p>
+
+        <p class="PARRAFO">A través de esta opción, el sistema permite el
+          ingreso manual del movimiento de transacciones de: <a
+            href="INH_004B4.html">Pagos</a>, <a
+            href="INH_004B2.html">Avances</a>,
+          <a href="INH_004B3.html">Impuestos</a> y Compras o consumos realizados
+          por los clientes en los
+          establecimientos. Este formulario dispone de los siguientes enlaces:
+          Compras, Avances, Pagos, Impuestos, Actualizar y Adicionar.
+          Adicionalmente, en la parte superior del formulario, cuenta con un
+          conjunto de cuatro campos que tienen una doble funcionalidad,
+          inicialmente, para definir la información de la Oficina, Número de
+          lote y Marca de la consignación, después de grabar los distintos
+          movimiento, sirven de criterio de un filtro para la búsqueda de lotes
+          de movimiento ingresado, momento en que los enlaces: Compras, Avances,
+          Pagos o Impuestos, ubicados en el bloque inferior, van a permitir
+          invocar otros formularios para ver el detalle de esos lotes. El
+          procedimiento para capturar el movimiento es el siguiente: una vez se
+          despliega el formulario, se debe ingresar: el código de la oficina o
+          sucursal de la que se va a capturar movimiento, el Número lote, y la
+          Marca, la Fecha de proceso se muestra por defecto y no es modificable.
+          A continuación, se activa el enlace Adicionar.</p>
+        <p class="TITLE"><img loading="lazy" rel="preload"  src="../img/INF_004B.PNG"></p>
+
+        <p class="PARRAFO"><span class="SUBTITULO">Adicionar (- Compras):</span>
+          Al activar ese enlace se despliega el siguiente formulario: </p>
+        <p class="TITLE"><img loading="lazy" rel="preload"  src="../img/INF_004B11.PNG"></p>
+        <p class="TITLE">Descripción de Campos – Lote (Consignación)</p>
+
+        <table>
+          <tr>
+            <td class="titletable"><p class="SUBTITULO">Fecha
+                proceso </p></td>
+            <td><p class="PARRAFO">Campo
+                de salida o no ingresable, que contiene la fecha del sistema
+                para la
+                cual se ingresa movimiento.</p></td>
+          </tr>
+          <tr>
+            <td class="titletable"><p class="SUBTITULO">Oficina</p></td>
+            <td><p class="PARRAFO">Campo
+                obligatorio en el que se digita el código de la oficina para la
+                cual se va
+                a capturar o supervisar (dependiendo de la opción dentro de
+                menú)
+                el movimiento. Estos códigos corresponden a los definidos en
+                la tabla <a href="NUH_020B.html">Estructura orgánica</a> del
+                Núcleo. Una vez ingresado el código, se ejecuta la consulta,
+                para proseguir con la captura.</p></td>
+          </tr>
+          <tr>
+            <td class="titletable"><p class="SUBTITULO">Marca</p></td>
+            <td><p class="PARRAFO">Campo
+                que posee lista de valores poblada mediante la opción <a
+                  href="NUH_033B.html">Franquicias
+                </a>del Núcleo. Si la entidad requiere generar contabilidad
+                por
+                marca o franquicia, no debe mezclar dentro del mismo lote o
+                tapa movimiento
+                de diferentes franquicias.</p></td>
+          </tr>
+          <tr>
+            <td class="titletable"><p
+                class="SUBTITULO">Número lote</p></td>
+            <td><p class="PARRAFO">Campo numérico de 3 dígitos, obligatorio,
+                corresponde al grupo o porción de movimiento a capturar, dato
+                ingresado en el formulario inicial o anterior. En este
+                formulario se hereda o muestra dicho valor.</p></td>
+          </tr>
+          <tr>
+            <td class="titletable"><p class="SUBTITULO">Nota contable </p></td>
+            <td><p class="PARRAFO">Campo numérico de 3 dígitos, no obligatorio,
+                corresponde a la porción de movimiento a capturar agrupado o
+                totalizado por montos.</p></td>
+          </tr>
+          <tr>
+            <td class="titletable"><p class="SUBTITULO">Transacción</p></td>
+            <td><p class="PARRAFO">Campo obligatorio que posee lista de valores
+                tipo combo, de la que debe seleccionarse entre: Compras,
+                Avances, Pagos o Impuestos, el tipo o clase de movimiento a
+                ingresar.</p></td>
+          </tr>
+          <tr>
+            <td class="titletable"><p class="SUBTITULO">Moneda </p></td>
+            <td><p class="PARRAFO">Campo obligatorio en el que se puede ingresar
+                o seleccionar de la lista de valores poblada en la opción Moneda
+                el código que aplica para el movimiento a ingresar.</p></td>
+          </tr>
+          <tr>
+            <td class="titletable"><p class="SUBTITULO">Cantidad</p></td>
+            <td><p class="PARRAFO">Campo obligatorio, numérico que en máximo dos
+                dígitos, debe contener el número de comprobantes de avances que
+                se van a ingresar.</p></td>
+          </tr>
+          <tr>
+            <td class="titletable"><p class="SUBTITULO">Valor</p></td>
+            <td><p class="PARRAFO">Campo numérico con capacidad para una suma
+                hasta de 16 dígitos incluidos dos decimales, contiene el monto o
+                cuantía de las operaciones efectuadas por transacción.</p></td>
+          </tr>
+        </table>
+
+        <p class="PARRAFO">Al activar el botón especial
+          Siguiente, el sistema realiza algunas validaciones, si existe alguna
+          inconsistencia le notifica al usuario, en caso contrario, despliega
+          el siguiente wizard de dos pasos, se ilustra el primero,
+          Depósito.</p>
+        <p class="PARRAFO"><span>
+            <p class="TITLE"><img loading="lazy" rel="preload"  src="../img/INF_004B10.PNG"></p>
+          </span>
+          <p class="TITLE">Descripción de Campos - Depósito</p>
+          <table>
+            <tr>
+              <td class="titletable"><p class="SUBTITULO">Fecha
+                  proceso </p></td>
+              <td><p class="PARRAFO">Campo
+                  de salida o no ingresable, que contiene la fecha del sistema
+                  para la
+                  cual se ingresa movimiento.</p></td>
+            </tr>
+            <tr>
+              <td class="titletable"><p class="SUBTITULO">Oficina</p></td>
+              <td><p class="PARRAFO">Campo de salida o no ingresable, muestra
+                  el código junto con el nombre de la oficina para la que se
+                  ingresa el movimiento..</p></td>
+            </tr>
+            <tr>
+              <td class="titletable"><p class="SUBTITULO">Marca</p></td>
+              <td><p class="PARRAFO">Campo de salida o no ingresable, muestra
+                  el código junto con el nombre de la marca de las tarjetas,
+                  asociadas al movimiento que se va a capturar o supervisar
+                  (dependiendo de la opción dentro de menú).</p></td>
+            </tr>
+            <tr>
+              <td class="titletable"><p
+                  class="SUBTITULO">Establecimiento</p></td>
+              <td><p class="PARRAFO">Campo obligatorio en el que se puede
+                  ingresar o seleccionar de la lista de valores poblada en la
+                  opción <a href="ESH_006B.html">Información de
+                    establecimientos</a> el código del
+                  comercio en cuya cuenta se debe depositar el valor neto del
+                  movimiento a ingresar.</p></td>
+            </tr>
+            <tr>
+              <td class="titletable"><p class="SUBTITULO">Tipo cuenta
+                </p></td>
+              <td><p class="PARRAFO">El sistema diligencia ese dato ilustrando
+                  si la cuenta del establecimiento corresponde a: Corriente o
+                  Ahorros.</p></td>
+            </tr>
+            <tr>
+              <td class="titletable"><p class="SUBTITULO">Número
+                  cuenta</p></td>
+              <td><p class="PARRAFO">El sistema diligencia ese dato ilustrando
+                  dicho número de la cuenta de depósitos asociada al
+                  establecimiento.</p></td>
+            </tr>
+            <tr>
+              <td class="titletable"><p class="SUBTITULO">Número
+                  consignación </p></td>
+              <td><p class="PARRAFO">Campo numérico de 7 dígitos, no
+                  obligatorio, corresponde al número que identifica cada
+                  consignación.</p></td>
+            </tr>
+            <tr>
+              <td class="titletable"><p class="SUBTITULO">Fecha
+                  consignación</p></td>
+              <td><p class="PARRAFO">Campo que mediante la funcionalidad de un
+                  calendario permite ingresar la fecha en formato DD-MM-YYYY.
+                  El sistema confronta este dato con el plazo fijado para la
+                  Marca en la opción <a href="ESH_006B.html">Información de
+                    establecimientos</a> y, en
+                  caso de no encontrar allí ese dato, lo tomará de los
+                  <a href="NUH_055B.html">Parámetros operativos</a>.</p></td>
+            </tr>
+            <tr>
+              <td class="titletable"><p class="SUBTITULO">Número
+                  comprobantes</p></td>
+              <td><p class="PARRAFO">Campo obligatorio, numérico de 5 dígitos,
+                  en el que se debe ingresar la cantidad de comprobantes que
+                  componen o integran cada consignación.</p></td>
+            </tr>
+            <tr>
+              <td class="titletable"><p
+                  class="SUBTITULO">Transacción</p></td>
+              <td><p class="PARRAFO">Campo que ilustra el código y nombre de
+                  la transacción original, acorde con la transacción
+                  seleccionada en el formulario inicial.</p></td>
+            </tr>
+            <tr>
+              <td class="titletable"><p
+                  class="SUBTITULO">Total compras</p></td>
+              <td><p class="PARRAFO">Campo numérico con capacidad para una
+                  suma hasta de 16 dígitos incluidos dos decimales, no
+                  obligatorio, que contiene el monto de los consumos
+                  efectuados en el establecimiento que consigna, no incluye
+                  los valores correspondientes a propinas, comisiones
+                  (descuento) e IVA.</p></td>
+            </tr>
+            <tr>
+              <td class="titletable"><p
+                  class="SUBTITULO">IVA</p></td>
+              <td><p class="PARRAFO">Campo numérico con capacidad para una
+                  suma hasta de 16 dígitos incluidos dos decimales, no
+                  obligatorio, que permite el ingreso del valor reportado por
+                  el establecimiento por dicho concepto.</p></td>
+            </tr>
+            <tr>
+              <td class="titletable"><p
+                  class="SUBTITULO">INC</p></td>
+              <td><p class="PARRAFO">Campo numérico con capacidad para una
+                  suma hasta de 16 dígitos incluidos dos decimales, no
+                  obligatorio, que permite el ingreso del valor reportado por
+                  el establecimiento por dicho concepto.</p></td>
+            </tr>
+            <tr>
+              <td class="titletable"><p
+                  class="SUBTITULO">Total propinas</p></td>
+              <td><p class="PARRAFO">Campo numérico con capacidad para una
+                  suma hasta de 16 dígitos incluidos dos decimales, no
+                  obligatorio, que contiene el monto total de las propinas
+                  otorgadas por los tarjetahabientes y reflejadas en los
+                  comprobantes de cada consignación.</p></td>
+            </tr>
+            <tr>
+              <td class="titletable"><p
+                  class="SUBTITULO">Total</p></td>
+              <td><p class="PARRAFO">Campo numérico con capacidad para una
+                  suma hasta de 16 dígitos incluidos dos decimales, no
+                  obligatorio, que contiene el monto total bruto o neto de los
+                  consumos efectuados, dependiendo del valor del parámetro
+                  Captura, requiere ingreso descuento definido en la opción
+                  <a href="NUH_055B.html">Parámetros operativos</a>, esto es,
+                  consumos más propinas, más
+                  IVA o consumos más propinas menos descuentos, más IVA por
+                  cada consignación.</p></td>
+            </tr>
+          </table>
+          <p class="TITLE"><img loading="lazy" rel="preload"  src="../img/INF_004B12.PNG"></p>
+
+          <p class="TITLE">Descripción de Campos - Comprobantes</p>
+
+          <table>
+            <tr>
+              <td class="titletable"><p class="SUBTITULO">Número tarjeta
+                </p></td>
+              <td><p class="PARRAFO">Campo alfanumérico de 23 dígitos, no
+                  obligatorio, en el que se digita el número de la tarjeta
+                  mediante la cual se realiza el consumo o utilización, el
+                  sistema valida el bin de la misma y asigna los ceros a la
+                  izquierda hasta completar la longitud total del
+                  campo.</p></td>
+            </tr>
+            <tr>
+              <td class="titletable"><p class="SUBTITULO">Número
+                  comprobante</p></td>
+              <td><p class="PARRAFO">Campo numérico de 7 dígitos, no
+                  obligatorio, en el que se registra el número del voucher o
+                  comprobante correspondiente al consumo.</p></td>
+            </tr>
+            <tr>
+              <td class="titletable"><p class="SUBTITULO">Fecha
+                  comprobante</p></td>
+              <td><p class="PARRAFO">Campo tipo fecha, en formato DD-MM-AAAA,
+                  debe contener la fecha física de cada uno de los comprobantes,
+                  es la base para determinar la antigüedad de los mismos y
+                  verificar que no excedan el plazo máximo para su
+                  consignación.</p></td>
+            </tr>
+            <tr>
+              <td class="titletable"><p
+                  class="SUBTITULO">Marca</p></td>
+              <td><p class="PARRAFO">Campo de salida o no ingresable, muestra el
+                  código junto con el nombre de la marca de las tarjetas,
+                  asociadas al movimiento que se va a capturar o supervisar
+                  (dependiendo de la opción dentro de menú).</p></td>
+            </tr>
+            <tr>
+              <td class="titletable"><p class="SUBTITULO">Establecimiento
+                </p></td>
+              <td><p class="PARRAFO">Campo de salida o no ingresable, muestra el
+                  código junto con el nombre del comercio en cuya cuenta se debe
+                  depositar el valor neto del movimiento a ingresar.</p></td>
+            </tr>
+            <tr>
+              <td class="titletable"><p class="SUBTITULO">Número de
+                  autorización</p></td>
+              <td><p class="PARRAFO">Campo alfanumérico de 6 dígitos, no
+                  obligatorio, en el que se registra el número de autorización
+                  de la transacción asignado por el sistema o por la
+                  franquicia</p></td>
+            </tr>
+            <tr>
+              <td class="titletable"><p class="SUBTITULO">Plazo </p></td>
+              <td><p class="PARRAFO">Campo numérico de 2 dígitos, no
+                  obligatorio, en el que se relaciona la cantidad de periodos
+                  solicitados por el tarjetahabiente en el voucher para cancelar
+                  su consumo o utilización. En caso de no digitarse el sistema
+                  tomará los valores señalados por defecto en los parámetros de
+                  <a href="MEH_003B.html">Transacciones por
+                    empresa</a>.</p></td>
+            </tr>
+            <tr>
+              <td class="titletable"><p class="SUBTITULO">Valor compra</p></td>
+              <td><p class="PARRAFO">Campo numérico con capacidad para una suma
+                  hasta de 16 dígitos incluidos 2 decimales, obligatorio, que
+                  contiene el monto bruto por cada consumo efectuado.</p></td>
+            </tr>
+            <tr>
+              <td class="titletable"><p
+                  class="SUBTITULO">IVA</p></td>
+              <td><p class="PARRAFO">Campo numérico con capacidad para una
+                  suma hasta de 16 dígitos incluidos dos decimales, no
+                  obligatorio, que permite el ingreso del valor reportado por
+                  el establecimiento por dicho concepto.</p></td>
+            </tr>
+            <tr>
+              <td class="titletable"><p
+                  class="SUBTITULO">INC</p></td>
+              <td><p class="PARRAFO">Campo numérico con capacidad para una
+                  suma hasta de 16 dígitos incluidos dos decimales, no
+                  obligatorio, que permite el ingreso del valor reportado por
+                  el establecimiento por dicho concepto.</p></td>
+            </tr>
+            <tr>
+              <td class="titletable"><p
+                  class="SUBTITULO">Valor propina</p></td>
+              <td><p class="PARRAFO">Campo numérico con capacidad para una suma
+                  hasta de 16 dígitos incluidos 2 decimales, no obligatorio, que
+                  contiene el monto de la propina concedida por el
+                  tarjetahabiente.</p></td>
+            </tr>
+            <tr>
+              <td class="titletable"><p
+                  class="SUBTITULO">Valor total</p></td>
+              <td><p class="PARRAFO">Campo numérico con capacidad para una suma
+                  hasta de 16 dígitos incluidos 2 decimales, no obligatorio, que
+                  contiene la sumatoria del monto del consumo más el valor IVA,
+                  más la propina, por cada consignación.</p></td>
+            </tr>
+          </table>
+
+          <p class="PARRAFO">Luego de capturados los datos de cada comprobante y
+            activar el botón especial ubicado en la parte inferior derecha, se
+            muestra el siguiente formulario, en el que se puede observar, además
+            de la relación de los distintos comprobantes que componen el lote
+            (consignación), en resumen, si las cifras del movimiento presentan o
+            no diferencias, el cual dispone de los enlaces: Actualizar,
+            Eliminar, Adicionar y Detalle:</p>
+          <p class="TITLE"><img loading="lazy" rel="preload"  src="../img/INF_004B13.PNG"></p>
+
+          <p class="PARRAFO"><span class="SUBTITULO">Adicionar (-
+              Comprobantes):</span> Al activar ese enlace se muestra el mismo
+            formulario, cuya funcionalidad se ya se describió más arriba como
+            Comprobantes y lo que permite es agregar la información de otro
+            comprobante que, perteneciendo a la misma consignación, aún no había
+            sido ingresado. </p>
+
+          <p class="PARRAFO"><span class="SUBTITULO">Actualizar (-
+              Comprobantes):</span> Al activar ese enlace, se despliega un
+            formulario en el que los únicos campos no modificables son: Marca y
+            Establecimiento </p>
+
+          <p class="TITLE"><img loading="lazy" rel="preload"  src="../img/INF_004B14.PNG"></p>
+
+          <p class="PARRAFO"><span class="SUBTITULO">Detalle (-
+              Comprobantes):</span> Si el usuario invoca ese enlace se muestra
+            el siguiente formulario:</p>
+
+          <p class="TITLE"><img loading="lazy" rel="preload"  src="../img/INF_004B32.PNG"></p>
+          <p class="PARRAFO">Al no evidenciarse descuadre en las cifras del lote
+            de la consignación y sus comprobantes, al activar el botón especial
+            ubicado en la parte inferior derecha, se muestra el siguiente
+            formulario, el cual dispone de los enlaces: Actualizar, Eliminar,
+            Adicionar y Detalle:</p>
+          <p class="TITLE"><img loading="lazy" rel="preload"  src="../img/INF_004B33.PNG"></p>
+
+          <p class="PARRAFO"><span class="SUBTITULO">Adicionar (- Captura
+              movimiento oficinas):</span> Al activar ese enlace se muestra el
+            mismo formulario, cuya funcionalidad se ya se describió más arriba
+            como Lote (Consignación) y lo que permite es agregar la información
+            de un nuevo grupo de comprobantes que, aún no había sido ingresado.
+          </p>
+
+          <p class="PARRAFO"><span class="SUBTITULO">Actualizar (- Captura
+              movimiento oficinas):</span> Al activar ese enlace se muestra el
+            mismo formulario, cuya funcionalidad se ya se describió más arriba
+            como Lote (Consignación) y lo que permite es modificar datos de la
+            misma o de los comprobantes que la integran. </p>
+
+          <p class="PARRAFO"><span class="SUBTITULO">Detalle (- Captura
+              movimiento oficinas):</span> Al activar ese enlace se muestra el
+            siguiente formulario, que permite la consulta de los movimientos, en
+            el evento en que por efecto de errores en la captura o malas
+            liquidaciones del movimiento, éste queda descuadrado, dado que se
+            requiere de una autorización para ser procesado en la operación
+            diaria:</p>
+
+          <p class="TITLE"><img loading="lazy" rel="preload"  src="../img/INF_004B34.PNG"></p>
+
+          <p class="PARRAFO">
+
+            <p class="PARRAFO"><a href="INH_004B2.html">Avances</a><span
+              >
+              | </span><a href="INH_004B3.html">Impuestos</a> |
+          </span><a href="INH_004B4.html">Pagos</a><span
+            ></p>
+
+        </div>
+
+      </section>
+      <script src="../js/menu.js"></script>
+    </body>
+    <div id="footerContainer"></div>
+    <script>
   fetch('footer.html')
     .then(response => response.text())
     .then(html => {
       document.getElementById('footerContainer').innerHTML = html;
     });
 </script>
-</html>
+  </html>

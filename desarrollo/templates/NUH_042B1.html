@@ -12,9 +12,9 @@
 
 <body>
   <header>
-    <img class="logo" src="../img/logoBankbu_.PNG" alt="Logo de Mi Empresa">
+    <img loading="lazy" rel="preload"  class="logo" src="../img/logoBankbu_.webp" alt="Logo de Mi Empresa">
     <div id="menuBtn">
-      <img class="TITLE" src="../img/menu.PNG" alt="Botón de Menú ">
+      <img loading="lazy" rel="preload"  class="TITLE" src="../img/menu.PNG" alt="Botón de Menú ">
     </div>
   </header>
     <div id="menuContainer"></div>
@@ -30,52 +30,24 @@
     <div>
       <p class="TITLE">Tasas de cambio (entidad)</p>
 
-      <p class="PARRAFO">Mediante esta funcionalidad se habilita la consulta y mantenimiento de la data, del tipo de cambio (monto
-        equivalente en moneda oficial respecto de otra moneda) vigente para la fecha a éste asociada, y si lo requiere
-        puede también registrar otros valores relacionados con la tasa de cambio, algunos calculados por la propia
-        entidad y otros determinados por las autoridades monetarias. Desde esta opción se define para la entidad y
-        muestra consecuentemente el <a href="NUH_023B.html">calendario</a>, perteneciente a la corporación o entidad,
-        sobre el que es posible navegar hacia atrás mostrando las monedas definidas hasta esa fecha. La forma sólo
-        permite ingresar los valores de los tipos de cambio para la fecha actual (hoy), es decir, que impide ingresar
-        valores para días anteriores o posteriores a la fecha del sistema. Esta opción dispone de un botón especial que
-        permite copiar los valores de las tasas de cambio del día anterior, si existen, para modificar luego, únicamente
-        aquellos que hayan variado, facilitando de ésta manera su actualización; debe tenerse en cuenta que para el
-        correcto funcionamiento del sistema, es necesario realizar diariamente, a primera hora, la actualización de los
-        indicadores básicos.</p>
-      <p class="TITLE"><img src="../img/WWW_001.PNG"></p>
+      <p class="PARRAFO">Mediante esta funcionalidad se habilita la consulta y mantenimiento de la data, del tipo de cambio (monto equivalente en moneda oficial 
+        respecto de otra moneda) vigente para la fecha a éste asociada. Desde esta opción se define para la entidad y muestra consecuentemente el 
+        <a href="NUH_023B.html">calendario</a>, perteneciente a la corporación o entidad, sobre el que es posible navegar hacia atrás mostrando las monedas definidas hasta esa fecha. La forma sólo permite ingresar los valores de los tipos de cambio para la fecha actual (hoy), es decir, que impide ingresar valores para días anteriores o posteriores a la fecha del sistema. Esta opción dispone de un botón especial que permite copiar los valores de las tasas de cambio del día anterior, si existen, para modificar luego, únicamente aquellos que hayan variado, facilitando de esta manera su actualización; debe tenerse en cuenta que, para el correcto funcionamiento del sistema, es necesario realizar diariamente, a primera hora, la actualización de los indicadores básicos. El formulario contiene los enlaces: Actualizar, Eliminar y Adicionar. Adicionalmente, cuenta con un filtro de búsqueda y el botón <a href="NUH_042B1.html#Boton">Copiar tasas día anterior.</a> </p>
+      <p class="TITLE"><img loading="lazy" rel="preload"  src="../img/WWW_001.PNG"></p>
 
-      <p class="PARRAFO">El formulario contiene los enlaces: Actualizar,Eliminar, Adicionar y Detalle. Adicionalmente, cuenta con un filtro de búsqueda
-        y el botón <a href="#Boton" title="Botón" target="_self">Copiar indicadores
-          del día anterior</a>.</p>
-      <p class="PARRAFO"><span class="SUBTITULO"> Filtro: </span> Se pueden
-          realizar consultas a través de las siguientes opciones: </span> 
-      </p>
-      <p class="TITLE"><img src="../img/NUF_042B.2.PNG"></p>
-
-      <table>
-        <tr>
-          <td class="titletable">
-            <p class="SUBTITULO">Fecha</span></span>
-              ingreso </p>
-          </td>
-          <td>
-            <p class="PARRAFO">Campo obligatorio que, mediante la funcionalidad de un calendario, permite definir la fecha a partir de la cual la entidad determinar el valor de asociado a dicha tasa. Por integridad de los cálculos solo permite definirle la misma fecha del día actual de proceso.</p>
-          </td>
-        </tr>
-      </table>
-
-      <p class="PARRAFO"><span class="SUBTITULO">Adicionar</span>:</span></span>Si el
-          usuario invoca la opción Adicionar se despliega un formulario con los
-          siguientes bloques:</p>
-      <p class="TITLE"><img src="../img/NUF_042B2.PNG"></p>
+     
+      <p class="PARRAFO"><span class="SUBTITULO"> Filtro: </span> Se dispone de un único criterio, Fecha ingreso, mediante la funcionalidad de un calendario, se selecciona cualquier fecha anterior a la fecha de proceso, para la que se requiera consultar los datos vigentes para ese momento y luego, activar el botón Buscar.</p>
+     
+      <p class="PARRAFO"><span class="SUBTITULO">Adicionar</span>:</span></span>Al activar ese enlace se despliega un formulario con los siguientes campos:</p>
+      <p class="TITLE"><img loading="lazy" rel="preload"  src="../img/NUF_042B2.PNG"></p>
       <table>
         <tr>
           <td class="titletable">
             <p class="SUBTITULO">Moneda</span></p>
           </td>
           <td>
-            <p class="PARRAFO">Campo en el que se puede digitar el código de la moneda o seleccionar de la lista
-              provista, aquella para la que se requiere realizar la consulta.</p>
+            <p class="PARRAFO">Campo obligatorio, que posee lista de valores poblada en la opción <a href="NUH_005B.html">Monedas</a> de
+               la que puede seleccionarse o digitarse el código de la moneda para la que se requiere definir el tipo de cambio.</p>
           </td>
         </tr>
         <tr>
@@ -83,8 +55,7 @@
             <p class="SUBTITULO">Fecha</span></span> ingreso </p>
           </td>
           <td>
-            <p class="PARRAFO">Campo en el que mediante la funcionalidad de un calendario se selecciona la fecha para la
-              que se requiere realizar la consulta. Por defecto muestra la fecha actual del sistema.</p>
+            <p class="PARRAFO">Campo en el que mediante la funcionalidad de un calendario y si bien, se puede seleccionar una fecha anterior a la de proceso, al momento de grabar el registro, este queda con la fecha de proceso. Por defecto muestra la fecha actual del sistema.</p>
           </td>
         </tr>
         <tr>
@@ -92,66 +63,17 @@
             <p class="SUBTITULO">Valor </span></span>Trm</p>
           </td>
           <td>
-            <p class="PARRAFO">Vr. Tasa representativa del mercado. Campo numérico obligatorio, que en un
-              máximo de siete enteros y dos decimales permite registrar el monto o valor en moneda oficial
-              equivalente a una unidad de la moneda con la que se está relacionando.</p>
-          </td>
-        </tr>
-        <tr>
-          <td class="titletable">
-            <p class="SUBTITULO">Valor </span></span>Tmr</p>
-          </td>
-          <td>
-            <p class="PARRAFO">Vr. Tasa más representativa del mercado. Campo numérico no obligatorio, que
-              en un máximo de siete enteros y dos decimales permite registrar el monto o valor en moneda oficial
-              equivalente a una unidad de la moneda con la que se está relacionando, el cual es calculado por la
-              entidad para uso específico.</p>
-          </td>
-        </tr>
-        <tr>
-          <td class="titletable">
-            <p class="SUBTITULO">Valor </span></span>Tmra</p>
-          </td>
-          <td>
-            <p class="PARRAFO">Vr. Tasa más representativa del mercado mes anterior. Campo numérico no
-              obligatorio, que en un máximo de siete enteros y dos decimales permite registrar el monto o valor
-              en moneda oficial del mes anterior, equivalente a una unidad de la moneda con la que se está
-              relacionando, el cual es calculado por la entidad para uso específico.</p>
-          </td>
-        </tr>
-        <tr>
-          <td class="titletable">
-            <p class="SUBTITULO">Valor </span></span>Tppc</p>
-          </td>
-          <td>
-            <p class="PARRAFO">Vr. Tasa promedio ponderada compra. Campo numérico no obligatorio, que en un
-              máximo de siete enteros y dos decimales permite registrar el monto o valor en moneda oficial
-              equivalente a una unidad de la moneda con la que se está relacionando, el cual es calculado por la
-              entidad para uso específico.</p>
-          </td>
-        </tr>
-        <tr>
-          <td class="titletable">
-            <p class="SUBTITULO">Valor </span></span>Tppv</p>
-          </td>
-          <td>
-            <p class="PARRAFO">Vr. Tasa promedio ponderada venta. Campo numérico no obligatorio, que en un
-              máximo de siete enteros y dos decimales permite registrar el monto o valor en moneda oficial
-              equivalente a una unidad de la moneda con la que se está relacionando, el cual es calculado por la
-              entidad para uso específico.</p>
+            <p class="PARRAFO">Vr. Tasa representativa del mercado. Campo numérico obligatorio, que en un máximo de siete enteros y dos decimales permite registrar el monto o valor en moneda oficial equivalente a una unidad de la moneda con la que se está relacionando.</p>
           </td>
         </tr>
       </table>
-      <p class="PARRAFO"><span class="SUBTITULO">Actualizar: </span>   Al activar ese enlace  se despliega
-        un nuevo formulario
-        en el cual los únicos campos modificables son: Valor Trm, Valor Tmr, Valor Tmra, Valor Tppc, y Valor
-        Tppv. </p>
-      <p class="TITLE"><img src="../img/NUF_042B3.PNG"></p>
+      <p class="PARRAFO"><span class="SUBTITULO">Actualizar: </span>   Al activar ese enlace se despliega un nuevo formulario en el cual el único campo modificable es Valor Trm. </p>
+      <p class="TITLE"><img loading="lazy" rel="preload"  src="../img/NUF_042B3.PNG"></p>
 
       <p class="PARRAFO"><span class="SUBTITULO"><a name="Boton"></a>Copiar tasas día anterior:</span>  Botón que permite
         replicar los valores para las diferentes tasas de cambio definidos el día anterior, si existen, y solamente
         modificar aquellos cuyos valores hayan variado. </p>
-      <p class="TITLE"><img src="../img/NUF_042B4.PNG"></p>
+      <p class="TITLE"><img loading="lazy" rel="preload"  src="../img/NUF_042B4.PNG"></p>
     </div>
   </section>
   <script src="../js/menu.js"></script>
